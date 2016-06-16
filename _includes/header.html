@@ -14,11 +14,22 @@
       </a>
 
       <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
+        <a class="page-link"><font color="gray">About</font></a>
+        <!--
+        <a class="page-link" href="{{ site.baseurl }}/blog/">Blog</a>
+        -->
+        <!--
+        <a class="page-link" href="{{ site.baseurl }}/download/">Download</a>
+        -->
+        <a class="page-link"><font color="gray">Documentation</font></a>
+        <a class="page-link"><font color="gray">Source code</font></a>
+        <a class="page-link" href="{{ site.baseurl }}/community/">Community</a>
+        <a class="page-link"
+        <a class="page-link"><font color="gray">Contributing</font></a>
+        <!--
+        <a class="page-link" href="{{ site.baseurl }}/continuing-integration/">
+          Continuing integration</a>
+        -->
       </div>
     </nav>
 
