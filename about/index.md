@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Folio
+title: About FOLIO
 ---
 
 Under construction
