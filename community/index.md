@@ -3,16 +3,31 @@ layout: page
 title: FOLIO Community
 ---
 
-## Mailing Lists
+## Collaboration Tools
 
-### FOLIO Development
+Public mailing lists for the FOLIO project are located at:
+[http://lists.openlibraryfoundation.org/](http://lists.openlibraryfoundation.org/)
 
-[okapi-dev](http://lists.indexdata.dk/mailman/listinfo/okapi-dev) -
-General FOLIO platform development.
+The bug tracking system is at: [https://issues.indexdata.com/](https://issues.indexdata.com/)
 
-[okapi-storage](http://lists.indexdata.dk/mailman/listinfo/okapi-storage) -
-FOLIO domain models and storage layer
+Source code is on GitHub: [https://github.com/sling-incubator](https://github.com/sling-incubator)
 
-[okapi-ui](http://lists.indexdata.dk/mailman/listinfo/okapi-ui) -
-FOLIO platform UI development
+## Developer Community
+
+Index Data serves as the project lead, and also selects individual contributors
+to have commit-level access to the code repositories.
+
+We strive for a welcoming, inclusive culture, and we ask that members of the
+community respect our <a href="">code of conduct</a>.
+
+## Contributing
+
+There are very many ways to contribute to FOLIO development.
+
+[Contributing guidelines]
+
+[Engaging with the issue tracker]
+
+[GitHub Flow for code contributions]
+
 
