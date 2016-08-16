@@ -1,0 +1,27 @@
+.site-header {
+    border-top: 5px solid $f-color-orange;
+    //border-top: 5px solid $f-color-purple;
+    border-bottom: 1px solid $f-color-orange;
+}
+
+.site-title {
+    &,
+    &:visited {
+        color: $f-color-orange;
+    }
+}
+
+.site-nav {
+    font-size: $small-font-size;
+    .page-link {
+        color: $f-color-purple;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $f-color-orange;
+}
+
+.site-footer {
+    border-top: 1px solid $f-color-orange;
+}
