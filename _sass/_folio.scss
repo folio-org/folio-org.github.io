@@ -25,3 +25,13 @@ h1, h2, h3, h4, h5, h6 {
 .site-footer {
     border-top: 1px solid $f-color-orange;
 }
+
+.highlighter-rouge pre.highlight {
+    background: $f-color-lighter-grey;
+}
+
+pre,
+code {
+    border: 1px solid $f-color-light-grey;
+    background-color: $f-color-lighter-grey;
+}
