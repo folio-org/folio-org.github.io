@@ -47,7 +47,9 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "folio-base",
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "folio"
 ;
