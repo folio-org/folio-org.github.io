@@ -1,9 +1,10 @@
 $base-font-family: "myriad-pro-n3", "myriad-pro", sans-serif;
 $base-font-weight: 300;
 
-$f-color-orange:   #da6a2d;
-$f-color-purple:   #38307f;
-$f-color-dgray:    #515251;
-$f-color-lgray:    #737272;
+$f-color-orange: #da6a2d;
+$f-color-purple: #38307f;
+$f-color-dark-grey: #515251;
+$f-color-light-grey: #737272;
+$f-color-lighter-grey: lighten($f-color-light-grey, 50%);
 
 //$brand-color:      $f-color-purple;
