@@ -19,3 +19,7 @@ url: "https://folio.indexdata.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+collections:
+  posts:
+    permalink: /news/:year/:month/:day/:title/
