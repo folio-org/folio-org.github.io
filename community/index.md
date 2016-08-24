@@ -10,7 +10,7 @@ Public mailing lists for the FOLIO project are located at:
 
 The bug tracking system is at: [https://issues.indexdata.com/](https://issues.indexdata.com/)
 
-Source code is on GitHub: [https://github.com/sling-incubator](https://github.com/sling-incubator)
+Source code is on GitHub: [https://github.com/folio-org](https://github.com/folio-org)
 
 ## Developer Community
 
