@@ -9,7 +9,7 @@ The discussion area and mailing lists for the FOLIO project are located at:
 [https://discuss.folio.org](https://discuss.folio.org)
 
 
-The issue/bug tracking system is at: [https://issues.indexdata.com/](https://issues.indexdata.com/)
+The issue/bug tracking system is at: [https://issues.folio.org/](https://issues.folio.org/)
 
 Source code is on GitHub: [https://github.com/folio-org](https://github.com/folio-org)
 
