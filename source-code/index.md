@@ -12,44 +12,49 @@ this page.
 
 ## Server-side
 
+Server-side elements, including _Okapi_, FOLIO "middleware" component, and additional services, frameworks and example modules.
+
 [okapi](https://github.com/folio-org/okapi) -
-Okapi API Gateway proxy/discovery/deployment service.
+Okapi API Gateway proxy/discovery/deployment service
 
-<!--
+[raml-module-builder](https://github.com/folio-org/raml-module-builder) -
+framework allowing easy module creation based on raml files
 
-[okapi-infrastructure](https://github.com/folio-org/okapi-infrastructure) -
-Okapi microservices infrastructure.
+[mod-circulation](https://github.com/folio-org/mod-circulation) -
+circulation demo based on the raml-module-builder and a set of raml and json schemas representing some of the needed circulation functionality against a mongo DB
 
-[auth_module_prototype](https://github.com/folio-org/auth_module_prototype) -
-Prototype of a JWT auth module for Okapi.
+[mod-acquistions](https://github.com/folio-org/mod-acquisitions) -
+demo acquisitions module exposing acq apis and objects based on the raml-module-builder framework against MongoDB
 
-[lsp-apis-impl](https://github.com/folio-org/lsp-apis-impl) -
-Implementation options for REST API.
+[mod-acquistions-postgres](https://github.com/folio-org/mod-acquisitions-postgres) -
+demo acquisitions module exposing acq apis and objects based on the raml-module-builder framework implemented with async postgres client
 
--->
+[mod-configuration](https://github.com/folio-org/mod-configuration) -
+demo configuration module based on the raml-module-builder and a set of raml and json schemas backed by a mongoDB async implementation
 
-[container-perf-tests](https://github.com/folio-org/container-perf-tests) -
-Vert.x application that may be faulty or demonstrate slowness of HTTP POSTs.
+[mod-auth](https://github.com/folio-org/mod-auth) -
+Prototype of a JWT auth module for FOLIO
 
-<!--
+[mod-metadata](https://github.com/folio-org/mod-metadata) -
+Initial work on a Folio metadata store and related knowledge base / cataloguing concepts
 
 ## Client-side
 
-[stripes-loader](https://github.com/folio-org/stripes-loader) -
-Module loader to enable pluggable Redux applications.
-
-[react-redux-tutorial](https://github.com/folio-org/react-redux-tutorial) -
-To-Do list tutorial, using React and Redux.
+Repositories related to Stripes, a  UI toolkit for FOLIO, still in the 
+design phase.
 
 [stripes-experiments](https://github.com/folio-org/stripes-experiments) -
 Testing ground for prototype modules that may form part of Stripes.
 
-[jsui-experiments](https://github.com/folio-org/jsui-experiments)
+[stripes-loader](https://github.com/folio-org/stripes-loader) -
+Module loader to enable pluggable Redux applications.
+
+[okapi-stripes](https://github.com/folio-org/stripes-loader) -
+server-side module for generating UIs based on Stripes
+
 
 ## Other projects
 
 [external-api-testing](https://github.com/folio-org/external-api-testing) -
 Various tests of Okapi's APIs. 
-
--->
 
