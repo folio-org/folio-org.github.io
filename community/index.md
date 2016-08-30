@@ -17,7 +17,6 @@ Source code is on GitHub: [https://github.com/folio-org](https://github.com/foli
 
 The FOLIO developer community consists of:
 
-* Index Data, which leads the development of the FOLIO platform
 * Several software engineering teams with commit access to specific
   platform components, such as Okapi
 * Contributors from the community
