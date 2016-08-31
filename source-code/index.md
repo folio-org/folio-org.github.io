@@ -6,9 +6,15 @@ title: Source Code
 The FOLIO project includes server-side and client-side platform components, and
 will grow to include library services that run on the platform.  All of the
 code is located in several repositories in the GitHub organization,
-[folio-org](https://github.com/folio-org).  We are in the process of making
-these repositories public over the next few days, and they will be linked from
-this page.
+[folio-org](https://github.com/folio-org).
+
+A good starting point for exploring the code is
+[Okapi](https://github.com/folio-org/okapi), specifically the [Okapi Guide and
+Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md), which
+introduces the concepts and architecture of the FOLIO platform, and includes
+installation instructions and examples.  Okapi is the central hub for
+applications running on the FOLIO platform and enables access to other modules
+in the architecture.
 
 ## Server-side
 
@@ -51,7 +57,6 @@ Module loader to enable pluggable Redux applications.
 
 [okapi-stripes](https://github.com/folio-org/stripes-loader) -
 server-side module for generating UIs based on Stripes
-
 
 ## Other projects
 
