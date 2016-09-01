@@ -60,9 +60,10 @@ access the functionality provided by these important core modules.
 * [Configurations API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/config.html)
 * [Item API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/items.html)
 
-Related to this is the [repository of RAML
-files](https://github.com/folio-org/raml), including JSON Schemas,
-traits and resource types centralized for re-usability.
+## Glossary
+
+We are also compiling a [FOLIO glossary](glossary.html) of terms and
+technologies used in FOLIO.
 
 
 
