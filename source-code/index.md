@@ -55,7 +55,7 @@ Testing ground for prototype modules that may form part of Stripes.
 [stripes-loader](https://github.com/folio-org/stripes-loader) -
 Module loader to enable pluggable Redux applications.
 
-[okapi-stripes](https://github.com/folio-org/stripes-loader) -
+[okapi-stripes](https://github.com/folio-org/okapi-stripes) -
 server-side module for generating UIs based on Stripes
 
 ## Other projects
