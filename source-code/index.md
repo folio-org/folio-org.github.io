@@ -3,17 +3,14 @@ layout: page
 title: Source Code
 ---
 
-The FOLIO project includes server-side and client-side platform
+The FOLIO project includes server-side and client-side 
 components, and will grow to include library services that run on the
 platform.
 [Several sample
 modules](https://github.com/folio-org/folio-sample-modules)
 exist that use this platform.
 
-All of the code is located in several repositories in the GitHub
-organization,
-[folio-org](https://github.com/folio-org),
-though third-party modules may be hosted elsewhere in future.
+Several repositories in the [folio-org GitHub organization](https://github.com/folio-org) host the core project code now.  In the future, third-party modules may be hosted elsewhere.
 
 A good starting point for understanding the FOLIO code is
 [Okapi](https://github.com/folio-org/okapi) -- specifically the [Okapi Guide and
@@ -23,13 +20,15 @@ installation instructions and examples.  Okapi is the central hub for
 applications running on the FOLIO platform and enables access to other modules
 in the architecture.
 
-The FOLIO source code is split across several repositories, all of them on
-GitHub in
-[the `folio-org` area](https://github.com/folio-org).
-These repositories each contain the code for a single well-defined element. They fall into three
-categories: server-side elements which provide services and the
-infastructure that they run on; client-side elements which provide a
-framework for using those services from a Web browser; and a few that
+The FOLIO system is made up of the code in several GitHub repositories.
+Each repository contains the code for a single well-defined element of the system. These repositories fall into three
+categories: 
+
+* _server-side elements_ that provide services and the
+infrastructure that they run on; 
+* _client-side elements_ that provide a
+framework for using those services from a Web browser; 
+* and a few that
 fall into neither of these categories.
 
 **PLEASE NOTE** that this is
@@ -38,8 +37,8 @@ a technology preview following the
 philosophy.
 **We want your feedback**, in the form of pull requests,
 [formally filed issues](https://issues.folio.org/)
-or
-[general discussion](https://folio-project.slack.com/).
+and 
+general discussion on the [Slack-based chat forum](https://folio-project.slack.com/) or the [Discuss web forum](https://discuss.folio.org).
 
 ## Server-side
 
@@ -77,16 +76,16 @@ demo configuration module based on the raml-module-builder and a set of RAML and
 Prototype of a [JWT](https://jwt.io/)-based
 authentication/authorization module. Will be superseded by a more
 capable and set of modules handling authentication by various methods,
-and generalised permissions handling.
+and generalized permissions-handling.
 
 * [mod-metadata](https://github.com/folio-org/mod-metadata) --
-Initial work on a FOLIO metadata store and related knowledge base/cataloguing concepts.
+Initial work on a FOLIO metadata store and related knowledge base/cataloging concepts.
 
 ## Client-side
 
 Since Okapi represents all the FOLIO functionality as well-behaved web
-services, UI code can of course be written using any toolkit. However,
-we will provide Stripes, a toolkit optimised for accessing Okapi-based
+services, UI code can, of course, be written using any toolkit. However,
+we will provide Stripes, a toolkit optimized for accessing Okapi-based
 services and wrapping UI functionality into convenient modules. We
 envisage that most FOLIO UI work will be done in the context of
 Stripes.
@@ -102,7 +101,7 @@ of UI components to back-end modules.
 
 * [stripes-loader](https://github.com/folio-org/stripes-loader) --
 module loader for Webpack, to enable pluggable Redux
-applications. This is repsonsible for pulling the required UI modules
+applications. This module is responsible for pulling the required UI modules
 into a given Stripes UI.
 
 * [okapi-stripes](https://github.com/folio-org/okapi-stripes) --
