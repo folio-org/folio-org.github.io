@@ -45,13 +45,15 @@ Okapi API Gateway proxy/discovery/deployment service.
 framework facilitating easy module creation based on RAML files.
 
 * [mod-circulation](https://github.com/folio-org/mod-circulation) --
-circulation demo based on the raml-module-builder and a set of RAML and JSON schemas. Represents some of the necessary circulation functionality against a Mongo DB.
+circulation demo based on the raml-module-builder and a set of RAML and JSON schemas. Represents some of the necessary circulation functionality against MongoDB.
 
 * [mod-acquistions](https://github.com/folio-org/mod-acquisitions) --
-demo acquisitions module exposing acq apis and objects based on the raml-module-builder framework against MongoDB.
+demo acquisitions module, based on the raml-module-builder framework, exposing acquisition APIs and objects against MongoDB.
 
 * [mod-acquistions-postgres](https://github.com/folio-org/mod-acquisitions-postgres) --
-demo acquisitions module exposing acq apis and objects based on the raml-module-builder framework implemented with async postgres client.
+a second demo acquisitions module, also based on the
+raml-module-builder framework and exposing acquisition APIs and
+objects, but implemented with an asynchronous Postgres client.
 
 * [mod-configuration](https://github.com/folio-org/mod-configuration) --
 demo configuration module based on the raml-module-builder and a set of raml and json schemas backed by a mongoDB async implementation.
