@@ -22,7 +22,7 @@ in building it with us.  We can use help testing, exploring, and stretching the
 platform.  You can help us shape the core of the system.
 
 What you will find here is not (yet) a library system, although it is steadily
-accruing the features of one.  Over the coming month, we will gradually be
+accruing the features of one.  Over the coming months, we will gradually be
 adding features to make this relevant to librarians and library staff, but we
 have a ways to go yet.  If you would like to explore these ideas with us,
 please join the conversation over at [folio.org](https://www.folio.org/).
