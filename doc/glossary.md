@@ -103,7 +103,7 @@ community to help with the development of FOLIO.
 
 ### PostgreSQL
 
-[PostgresSQL](https://www.posgresql.org/) (often called "postgres") is
+[PostgreSQL](https://www.postgresql.org/) (often called "postgres") is
 an open source enterprise-level relational database.
 
 ### RAML
