@@ -45,7 +45,7 @@ Okapi API Gateway proxy/discovery/deployment service.
 framework facilitating easy module creation based on RAML files.
 
 * [mod-circulation](https://github.com/folio-org/mod-circulation) --
-circulation demo based on the raml-module-builder and a set of RAML and JSON schemas. Represents some of the necessary circulation functionality against MongoDB.
+circulation demo based on the raml-module-builder and a set of RAML and JSON Schemas. Represents some of the necessary circulation functionality against MongoDB.
 
 * [mod-acquistions](https://github.com/folio-org/mod-acquisitions) --
 demo acquisitions module, based on the raml-module-builder framework, exposing acquisition APIs and objects against MongoDB.
@@ -56,13 +56,16 @@ raml-module-builder framework and exposing acquisition APIs and
 objects, but implemented with an asynchronous Postgres client.
 
 * [mod-configuration](https://github.com/folio-org/mod-configuration) --
-demo configuration module based on the raml-module-builder and a set of raml and json schemas backed by a mongoDB async implementation.
+demo configuration module based on the raml-module-builder and a set of RAML and JSON Schemas backed by a MongoDB asynchronous implementation.
 
 * [mod-auth](https://github.com/folio-org/mod-auth) --
-Prototype of a JWT auth module for FOLIO.
+Prototype of a [JWT](https://jwt.io/)-based
+authentication/authorization module. Will be superseded by a more
+capable and set of modules handling authentication by various methods,
+and generalised permissions handling.
 
 * [mod-metadata](https://github.com/folio-org/mod-metadata) --
-Initial work on a Folio metadata store and related knowledge base / cataloguing concepts.
+Initial work on a FOLIO metadata store and related knowledge base/cataloguing concepts.
 
 ## Client-side
 
