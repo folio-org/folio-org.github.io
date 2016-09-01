@@ -6,42 +6,60 @@ title: Source Code
 The FOLIO project includes server-side and client-side platform components, and
 will grow to include library services that run on the platform.  All of the
 code is located in several repositories in the GitHub organization,
-[folio-org](https://github.com/folio-org).
+[folio-org](https://github.com/folio-org),
+though third-party modules may be hosted elsewhere in future.
 
-A good starting point for exploring the code is
-[Okapi](https://github.com/folio-org/okapi), specifically the [Okapi Guide and
+A good starting point for understanding the FOLIO code is
+[Okapi](https://github.com/folio-org/okapi) -- specifically the [Okapi Guide and
 Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md), which
 introduces the concepts and architecture of the FOLIO platform, and includes
 installation instructions and examples.  Okapi is the central hub for
 applications running on the FOLIO platform and enables access to other modules
 in the architecture.
 
+The FOLIO source code is split several repositories, all of them on
+GitHub in
+[the `folio-org` area](https://github.com/folio-org).
+The fall into three
+categories: server-side elements which provide services and the
+instructure that they run on; client-side elements which provide a
+framework for using those services from a Web browser; and a few that
+fall into neither of these categories.
+
 ## Server-side
 
-Server-side elements, including _Okapi_, FOLIO "middleware" component, and additional services, frameworks and example modules.
+The key server-side element is Okapi itself, the, FOLIO middleware
+component that acts as a gateway for access to all modules, handling
+redundancy, sessions, etc. Several modules are also provided in their
+own repositories, each named `mod-`_name_: note that these are mostly
+at the proof-of-concept stage. Some of these modules are built from
+specifications in
+[RAML](http://raml.org/),
+the RESTful API Modeling Language: this process is facilitated by the
+code in the `raml-module-builder` repository.
 
-[okapi](https://github.com/folio-org/okapi) -
+* [okapi](https://github.com/folio-org/okapi) -
 Okapi API Gateway proxy/discovery/deployment service
 
-[raml-module-builder](https://github.com/folio-org/raml-module-builder) -
+* [raml-module-builder](https://github.com/folio-org/raml-module-builder) -
 framework allowing easy module creation based on raml files
 
-[mod-circulation](https://github.com/folio-org/mod-circulation) -
+* [mod-circulation](https://github.com/folio-org/mod-circulation) -
 circulation demo based on the raml-module-builder and a set of raml and json schemas representing some of the needed circulation functionality against a mongo DB
 
-[mod-acquistions](https://github.com/folio-org/mod-acquisitions) -
+* [mod-acquistions](https://github.com/folio-org/mod-acquisitions) -
 demo acquisitions module exposing acq apis and objects based on the raml-module-builder framework against MongoDB
 
-[mod-acquistions-postgres](https://github.com/folio-org/mod-acquisitions-postgres) -
+* [mod-acquistions-postgres](https://github.com/folio-org/mod-acquisitions-postgres) -
 demo acquisitions module exposing acq apis and objects based on the raml-module-builder framework implemented with async postgres client
 
-[mod-configuration](https://github.com/folio-org/mod-configuration) -
+* [mod-configuration](https://github.com/folio-org/mod-configuration) -
 demo configuration module based on the raml-module-builder and a set of raml and json schemas backed by a mongoDB async implementation
 
-[mod-auth](https://github.com/folio-org/mod-auth) -
+* [mod-auth](https://github.com/folio-org/mod-auth) -
 Prototype of a JWT auth module for FOLIO
 
-[mod-metadata](https://github.com/folio-org/mod-metadata) -
+* [mod-metadata](https://github.com/folio-org/mod-metadata) -
 Initial work on a Folio metadata store and related knowledge base / cataloguing concepts
 
 ## Client-side
@@ -49,21 +67,21 @@ Initial work on a Folio metadata store and related knowledge base / cataloguing 
 Repositories related to Stripes, a  UI toolkit for FOLIO, still in the 
 design phase.
 
-[stripes-experiments](https://github.com/folio-org/stripes-experiments) -
+* [stripes-experiments](https://github.com/folio-org/stripes-experiments) -
 Testing ground for prototype modules that may form part of Stripes.
 
-[stripes-loader](https://github.com/folio-org/stripes-loader) -
+* [stripes-loader](https://github.com/folio-org/stripes-loader) -
 Module loader to enable pluggable Redux applications.
 
-[okapi-stripes](https://github.com/folio-org/okapi-stripes) -
+* [okapi-stripes](https://github.com/folio-org/okapi-stripes) -
 server-side module for generating UIs based on Stripes
 
 ## Other projects
 
-[external-api-testing](https://github.com/folio-org/external-api-testing) -
+* [external-api-testing](https://github.com/folio-org/external-api-testing) -
 Various tests of Okapi's APIs. 
 
-[folio-sample-modules](https://github.com/folio-org/folio-sample-modules) -
+* [folio-sample-modules](https://github.com/folio-org/folio-sample-modules) -
 Various sample modules, illustrating ways to structure a module for
 use with Okapi (`hello-vertx` and `simple-vertx`) and how to make a
 client-side module (`patrons`).
