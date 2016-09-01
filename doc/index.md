@@ -16,6 +16,9 @@ API reference documentation:
 
 * [Item API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/items.html)
 
+[FOLIO Glossary](glossary.html) -
+(Incomplete) glossary of terms and technologies in the FOLIO documentation
+
 [FOLIO sample module guide](https://github.com/folio-org/folio-sample-modules) -
 Examples of Folio modules and "get started" guide
 
