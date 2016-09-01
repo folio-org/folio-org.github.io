@@ -10,11 +10,11 @@ system](https://www.folio.org/).
 At the heart of FOLIO is an open source, cloud hostable, app-store based
 application framework, designed to facilitate collaboration between disparate
 development teams.  It is also designed to enable vendors, libraries, tenants,
-and users to configure their experience to an unprecedented level. This
+and users to configure their experience to an unprecedented level.  This
 developer preview of the core SDK is focused on enabling a new approach to
-collaborating around functions and features, in which librarians and software
-developers can work together to imagine and create new kinds of library
-services.
+collaborating around functions and features.  We see FOLIO as an "innovation
+platform" in which librarians and software developers can work together to
+imagine and create new kinds of library services.
 
 Who is the platform for at this stage?  Developers with an interest in looking
 under the hood at what is coming along, or even better, developers interested
