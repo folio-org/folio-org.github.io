@@ -20,11 +20,30 @@ modules. For more information, see the
 
 ## FOLIO Technologies and Concepts
 
+### API
+
+Application programming interfaces
+([APIs](https://en.wikipedia.org/wiki/Application_programming_interface))
+are well-defined interfaces through which interactions happen.
+
 ### Docker
 
 [Docker](https://www.docker.com) is a platform for managing software
 containers. FOLIO is well-suited for deployment in a Docker
 environment.
+
+### JSON
+
+JavaScript Object Notation
+([JSON](https://en.wikipedia.org/wiki/JSON))
+is an open-standard format that uses human-readable text to transmit
+data objects consisting of attribute–value pairs.
+
+### JWT
+
+[JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token)
+is a JSON-based open standard for creating tokens that assert some number
+of claims. JWTs are authenticated and encrypted, and used by Okapi.
 
 ### Microservices
 
@@ -56,6 +75,11 @@ packages of JavaScript code, used by Stripes.
 [RESTful API Modeling Language](http://raml.org) - a language for the
 definition of HTTP-based APIs. Okapi module APIs (including the API of
 Okapi itself) are defined in RAML files and schemas.
+
+### React
+
+[React](https://facebook.github.io/react/)
+is a JavaScript library for building user interfaces.
 
 ### Vert.x
 
