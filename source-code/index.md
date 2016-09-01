@@ -22,7 +22,7 @@ GitHub in
 [the `folio-org` area](https://github.com/folio-org).
 The fall into three
 categories: server-side elements which provide services and the
-instructure that they run on; client-side elements which provide a
+infastructure that they run on; client-side elements which provide a
 framework for using those services from a Web browser; and a few that
 fall into neither of these categories.
 
@@ -47,10 +47,10 @@ framework facilitating easy module creation based on RAML files.
 * [mod-circulation](https://github.com/folio-org/mod-circulation) --
 circulation demo based on the raml-module-builder and a set of RAML and JSON Schemas. Represents some of the necessary circulation functionality against MongoDB.
 
-* [mod-acquistions](https://github.com/folio-org/mod-acquisitions) --
+* [mod-acquisitions](https://github.com/folio-org/mod-acquisitions) --
 demo acquisitions module, based on the raml-module-builder framework, exposing acquisition APIs and objects against MongoDB.
 
-* [mod-acquistions-postgres](https://github.com/folio-org/mod-acquisitions-postgres) --
+* [mod-acquisitions-postgres](https://github.com/folio-org/mod-acquisitions-postgres) --
 a second demo acquisitions module, also based on the
 raml-module-builder framework and exposing acquisition APIs and
 objects, but implemented with an asynchronous Postgres client.
@@ -69,14 +69,26 @@ Initial work on a FOLIO metadata store and related knowledge base/cataloguing co
 
 ## Client-side
 
-Repositories related to Stripes, a  UI toolkit for FOLIO, still in the 
-design phase.
+Since Okapi represents all the FOLIO functionality as well-behaved web
+services, UI code can of course be written using any toolkit. However,
+we will provide Stripes, a toolkit optimised for accessing Okapi-based
+services and wrapping UI functionality into convenient modules. We
+envisage that most FOLIO UI work will be done in the context of
+Stripes.
+
+Note that Stripes is still in the design phase, so although code
+exists and can be run, the APIs are likely to change.
 
 * [stripes-experiments](https://github.com/folio-org/stripes-experiments) --
-Testing ground for prototype modules that may form part of Stripes.
+testing ground for prototype modules that may form part of
+Stripes. Most importantly, this contains `stripes-core`, which drives
+the whole process; and `stripes-connect`, which manages the connection
+of UI components to back-end modules.
 
 * [stripes-loader](https://github.com/folio-org/stripes-loader) --
-Module loader to enable pluggable Redux applications.
+module loader for Webpack, to enable pluggable Redux
+applications. This is repsonsible for pulling the required UI modules
+into a given Stripes UI.
 
 * [okapi-stripes](https://github.com/folio-org/okapi-stripes) --
 server-side module for generating UIs based on Stripes.
