@@ -23,6 +23,7 @@ in the architecture.
 The FOLIO system is made up of the code in several GitHub repositories.
 Each repository contains the code for a single well-defined element of the system. These repositories fall into three
 categories: 
+
 * _server-side elements_ that provide services and the
 infrastructure that they run on; 
 * _client-side elements_ that provide a
