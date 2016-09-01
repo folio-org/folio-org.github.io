@@ -39,28 +39,28 @@ the RESTful API Modeling Language: this process is facilitated by the
 code in the `raml-module-builder` repository.
 
 * [okapi](https://github.com/folio-org/okapi) --
-Okapi API Gateway proxy/discovery/deployment service
+Okapi API Gateway proxy/discovery/deployment service.
 
 * [raml-module-builder](https://github.com/folio-org/raml-module-builder) --
-framework facilitating easy module creation based on RAML files
+framework facilitating easy module creation based on RAML files.
 
 * [mod-circulation](https://github.com/folio-org/mod-circulation) --
 circulation demo based on the raml-module-builder and a set of RAML and JSON schemas. Represents some of the necessary circulation functionality against a Mongo DB.
 
 * [mod-acquistions](https://github.com/folio-org/mod-acquisitions) --
-demo acquisitions module exposing acq apis and objects based on the raml-module-builder framework against MongoDB
+demo acquisitions module exposing acq apis and objects based on the raml-module-builder framework against MongoDB.
 
 * [mod-acquistions-postgres](https://github.com/folio-org/mod-acquisitions-postgres) --
-demo acquisitions module exposing acq apis and objects based on the raml-module-builder framework implemented with async postgres client
+demo acquisitions module exposing acq apis and objects based on the raml-module-builder framework implemented with async postgres client.
 
 * [mod-configuration](https://github.com/folio-org/mod-configuration) --
-demo configuration module based on the raml-module-builder and a set of raml and json schemas backed by a mongoDB async implementation
+demo configuration module based on the raml-module-builder and a set of raml and json schemas backed by a mongoDB async implementation.
 
 * [mod-auth](https://github.com/folio-org/mod-auth) --
-Prototype of a JWT auth module for FOLIO
+Prototype of a JWT auth module for FOLIO.
 
 * [mod-metadata](https://github.com/folio-org/mod-metadata) --
-Initial work on a Folio metadata store and related knowledge base / cataloguing concepts
+Initial work on a Folio metadata store and related knowledge base / cataloguing concepts.
 
 ## Client-side
 
@@ -74,7 +74,7 @@ Testing ground for prototype modules that may form part of Stripes.
 Module loader to enable pluggable Redux applications.
 
 * [okapi-stripes](https://github.com/folio-org/okapi-stripes) --
-server-side module for generating UIs based on Stripes
+server-side module for generating UIs based on Stripes.
 
 ## Other projects
 
