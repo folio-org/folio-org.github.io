@@ -42,10 +42,10 @@ code in the `raml-module-builder` repository.
 Okapi API Gateway proxy/discovery/deployment service
 
 * [raml-module-builder](https://github.com/folio-org/raml-module-builder) --
-framework allowing easy module creation based on raml files
+framework facilitating easy module creation based on RAML files
 
 * [mod-circulation](https://github.com/folio-org/mod-circulation) --
-circulation demo based on the raml-module-builder and a set of raml and json schemas representing some of the needed circulation functionality against a mongo DB
+circulation demo based on the raml-module-builder and a set of RAML and JSON schemas. Represents some of the necessary circulation functionality against a Mongo DB.
 
 * [mod-acquistions](https://github.com/folio-org/mod-acquisitions) --
 demo acquisitions module exposing acq apis and objects based on the raml-module-builder framework against MongoDB
