@@ -1,5 +1,8 @@
 This is the source for "FOLIO Developers" at folio-org.github.io
 
+To contribute changes, please make the changes in a new branch and submit a
+pull request.
+
 Local development requires [Jekyll](http://jekyllrb.com/) and
 [Bundler](http://bundler.io/).
 
