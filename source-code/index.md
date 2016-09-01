@@ -32,6 +32,16 @@ infastructure that they run on; client-side elements which provide a
 framework for using those services from a Web browser; and a few that
 fall into neither of these categories.
 
+**PLEASE NOTE** that this code is not mature. It is not yet even at
+the level of and alpha release, and should be considered a technology
+preview only, in accordance with the
+[release early, release often](https://en.wikipedia.org/wiki/Release_early,_release_often)
+philosophy.
+**We want your feedback**, in the form of pull requests,
+[formally filed issues](https://issues.folio.org/)
+or
+[general discussion](https://folio-project.slack.com/).
+
 ## Server-side
 
 The key server-side element is Okapi itself: the FOLIO middleware
