@@ -32,9 +32,8 @@ infastructure that they run on; client-side elements which provide a
 framework for using those services from a Web browser; and a few that
 fall into neither of these categories.
 
-**PLEASE NOTE** that this code is not mature. It is not yet even at
-the level of and alpha release, and should be considered a technology
-preview only, in accordance with the
+**PLEASE NOTE** that this is
+a technology preview following the
 [release early, release often](https://en.wikipedia.org/wiki/Release_early,_release_often)
 philosophy.
 **We want your feedback**, in the form of pull requests,
