@@ -23,10 +23,10 @@ installation instructions and examples.  Okapi is the central hub for
 applications running on the FOLIO platform and enables access to other modules
 in the architecture.
 
-The FOLIO source code is split several repositories, all of them on
+The FOLIO source code is split across several repositories, all of them on
 GitHub in
 [the `folio-org` area](https://github.com/folio-org).
-The fall into three
+These repositories each contain the code for a single well-defined element. They fall into three
 categories: server-side elements which provide services and the
 infastructure that they run on; client-side elements which provide a
 framework for using those services from a Web browser; and a few that
