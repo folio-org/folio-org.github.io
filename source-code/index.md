@@ -3,9 +3,15 @@ layout: page
 title: Source Code
 ---
 
-The FOLIO project includes server-side and client-side platform components, and
-will grow to include library services that run on the platform.  All of the
-code is located in several repositories in the GitHub organization,
+The FOLIO project includes server-side and client-side platform
+components, and will grow to include library services that run on the
+platform.
+[Several sample
+modules](https://github.com/folio-org/folio-sample-modules)
+exist that use this platform.
+
+All of the code is located in several repositories in the GitHub
+organization,
 [folio-org](https://github.com/folio-org),
 though third-party modules may be hosted elsewhere in future.
 
