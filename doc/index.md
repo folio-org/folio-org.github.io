@@ -8,13 +8,13 @@ Here are some links to get you started:
 
 API reference documentation:
 
-* [Patrons API documentation](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/patrons.html)
+* [Patrons API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/patrons.html)
 
-* [Bib API documentation](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/bibs.html)
+* [Bib API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/bibs.html)
 
-* [Configurations API documentation](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/config.html)
+* [Configurations API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/config.html)
 
-* [Item API documentation](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/items.html)
+* [Item API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/items.html)
 
 [FOLIO sample module guide](https://github.com/folio-org/folio-sample-modules) -
 Examples of Folio modules and "get started" guide
