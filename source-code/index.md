@@ -75,7 +75,7 @@ demo configuration module based on the raml-module-builder and a set of RAML and
 * [mod-auth](https://github.com/folio-org/mod-auth) --
 Prototype of a [JWT](https://jwt.io/)-based
 authentication/authorization module. Will be superseded by a more
-capable and set of modules handling authentication by various methods,
+capable set of modules handling authentication by various methods,
 and generalized permissions-handling.
 
 * [mod-metadata](https://github.com/folio-org/mod-metadata) --
