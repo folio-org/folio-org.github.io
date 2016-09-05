@@ -8,8 +8,11 @@ title: FOLIO Community
 The discussion area and mailing lists for the FOLIO project are located at:
 [https://discuss.folio.org](https://discuss.folio.org)
 
+Real-time chat is via Slack at
+[https://folio-project.slack.com](https://folio-project.slack.com)
+(join [here](https://su17s9g5c5.execute-api.us-east-1.amazonaws.com/production) first).
 
-The issue/bug tracking system is at: [https://issues.folio.org/](https://issues.folio.org/)
+The issue/bug tracking system is at: [https://issues.folio.org](https://issues.folio.org)
 
 Source code is on GitHub: [https://github.com/folio-org](https://github.com/folio-org)
 
