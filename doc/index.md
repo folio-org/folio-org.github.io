@@ -13,16 +13,18 @@ together.
 
 In the context of those early chapters, you may then wish to go on to:
 
-## Core Code
+## Community and contribution
 
-Most important is the
+The [community section](../community/) explains how to be involved,
+provides the contribution guidelines, lists the various collaboration tools
+and has some recommendations about when to use each.
+
+## Core code
+
+The most important technical document is the
 [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md),
-which after the introductory sections already described goes into
+which after the introductory sections already described, goes into
 detail about the Okapi API Gateway that controls a FOLIO system.
-
-The
-[contribution guidelines](https://github.com/folio-org/okapi/blob/master/CONTRIBUTING.md)
-for Okapi also pertain to FOLIO more broadly, and explain how to get involved.
 
 ## Modules
 
