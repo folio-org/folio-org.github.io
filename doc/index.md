@@ -62,7 +62,7 @@ access the functionality provided by these important core modules.
 
 ## Glossary
 
-We are also compiling a [FOLIO glossary](glossary.html) of terms and
+A [FOLIO glossary](glossary.html) of some terms and
 technologies used in FOLIO.
 
 
