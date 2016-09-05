@@ -8,7 +8,7 @@ Local development requires [Jekyll](http://jekyllrb.com/) and
 
 For Ruby, using [rbenv](https://github.com/rbenv/rbenv) and its 'ruby-build'
 plugin ensures a smooth process. In this directory, set the ruby version
-with: `rbenv local <version>` 
+with: `rbenv local <version>`
 
 Then do:
 

@@ -15,7 +15,7 @@ In the context of those early chapters, you may then wish to go on to:
 
 ## Core Code
 
-Most important is the 
+Most important is the
 [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md),
 which after the introductory sections already described goes into
 detail about the Okapi API Gateway that controls a FOLIO system.

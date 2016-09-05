@@ -3,7 +3,7 @@ layout: page
 title: Source Code
 ---
 
-The FOLIO project includes server-side and client-side 
+The FOLIO project includes server-side and client-side
 components, and will grow to include library services that run on the
 platform.
 [Several sample
@@ -22,12 +22,12 @@ in the architecture.
 
 The FOLIO system is made up of the code in several GitHub repositories.
 Each repository contains the code for a single well-defined element of the system. These repositories fall into three
-categories: 
+categories:
 
 * _server-side elements_ that provide services and the
-infrastructure that they run on; 
+infrastructure that they run on;
 * _client-side elements_ that provide a
-framework for using those services from a Web browser; 
+framework for using those services from a Web browser;
 * and a few that
 fall into neither of these categories.
 
@@ -37,7 +37,7 @@ a technology preview following the
 philosophy.
 **We want your feedback**, in the form of pull requests,
 [formally filed issues](https://issues.folio.org/)
-and 
+and
 general discussion on the [Slack-based chat forum](https://folio-project.slack.com/) or the [Discuss web forum](https://discuss.folio.org).
 
 ## Server-side
@@ -110,7 +110,7 @@ server-side module for generating UIs based on Stripes.
 ## Other projects
 
 * [external-api-testing](https://github.com/folio-org/external-api-testing) --
-Various tests of Okapi's APIs. 
+Various tests of Okapi's APIs.
 
 * [folio-sample-modules](https://github.com/folio-org/folio-sample-modules) --
 Various sample modules, illustrating ways to structure a module for
