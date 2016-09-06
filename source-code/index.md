@@ -3,14 +3,14 @@ layout: page
 title: Source Code
 ---
 
-The FOLIO project includes server-side and client-side
-components, and will grow to include library services that run on the
-platform.
-[Several sample
-modules](https://github.com/folio-org/folio-sample-modules)
-exist that use this platform.
+The FOLIO platform consists of both server-side and client-side components, and
+will grow to include library services that run on the platform as modules.
+Some sample modules are located in
+[folio-sample-modules](https://github.com/folio-org/folio-sample-modules).
 
-Several repositories in the [folio-org GitHub organization](https://github.com/folio-org) host the core project code now.  In the future, third-party modules may be hosted elsewhere.
+Several repositories in the [folio-org GitHub
+organization](https://github.com/folio-org) host the core project code.
+Third-party modules may be hosted elsewhere.
 
 A good starting point for understanding the FOLIO code is
 [Okapi](https://github.com/folio-org/okapi) -- specifically the [Okapi Guide and
@@ -31,26 +31,22 @@ framework for using those services from a Web browser;
 * and a few that
 fall into neither of these categories.
 
-**PLEASE NOTE** that this is
-a technology preview following the
-[release early, release often](https://en.wikipedia.org/wiki/Release_early,_release_often)
-philosophy.
-**We want your feedback**, in the form of pull requests,
-[formally filed issues](https://issues.folio.org/)
-and
-general discussion on the [Slack-based chat forum](https://folio-project.slack.com/) or the [Discuss web forum](https://discuss.folio.org).
+**PLEASE NOTE** that this is a technology preview following the [release early,
+release often](https://en.wikipedia.org/wiki/Release_early,_release_often)
+philosophy.  **We want your feedback**, in the form of pull requests, [filed
+issues](https://issues.folio.org/) and general discussion on the [Slack-based
+chat forum](https://folio-project.slack.com/) or the [Discuss web
+forum](https://discuss.folio.org).
 
 ## Server-side
 
-The key server-side element is Okapi itself: the FOLIO middleware
-component that acts as a gateway for access to all modules, handling
-redundancy, sessions, etc. Several modules are also provided in their
-own repositories, each named `mod-`_name_: note that these are mostly
-at the proof-of-concept stage. Some of these modules are built from
-specifications in
-[RAML](http://raml.org/),
-the RESTful API Modeling Language: this process is facilitated by the
-code in the `raml-module-builder` repository.
+The key server-side element is Okapi itself: the FOLIO middleware component
+that acts as a gateway for access to all modules, handling redundancy,
+sessions, etc.  Individual modules are provided in their own repositories, each
+named `mod-`_name_: note that these are mostly at the proof-of-concept stage.
+Some of these modules are built from specifications in
+[RAML](http://raml.org/), the RESTful API Modeling Language: this process is
+facilitated by the code in the `raml-module-builder` repository.
 
 * [okapi](https://github.com/folio-org/okapi) --
 Okapi API Gateway proxy/discovery/deployment service.
