@@ -40,7 +40,7 @@ of interest.
 
 The FOLIO user-interface toolkit is called Stripes. It is described in
 [Stripes: a modular toolkit for user
-interfaces](https://github.com/folio-org/stripes-experiments/blob/master/stripes-core/OVERVIEW.md)
+interfaces](https://github.com/folio-org/stripes-experiments/blob/master/stripes-core/doc/overview.md)
 and instruction for running a Stripes-based UI can be found in
 [the Stripes Core README file](https://github.com/folio-org/stripes-experiments/blob/master/stripes-core/README.md).
 
