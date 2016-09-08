@@ -7,15 +7,22 @@ Developers need to efficiently discuss various topics such as issues, usage quir
 Remember that other developers, the recipients of your messages, are also busy.
 They also operate in different time zones. In such busy projects, items can be easily overlooked, especially when in an inappropriate forum.
 
+We follow a variation of the Apache motto:
+**_If it didn't happen in one of the primary communication channels (Discuss, Wiki, Issues, and GitHub), it didn't happen._**
 We each need to pause and consider the best forum. There are no rules, but these guidelines can assist.
 
 As explained in the
 [collaboration tools](../community/#collaboration-tools) section,
-we have four main fora:
-[Discuss](#discuss) and mailing lists,
-[Slack](#slack) chat and messaging,
-[Issue Tracker](#issue-tracker), and
-[GitHub](#github).
+we have four primary fora:
+[Discuss](#discuss) (messaging forum),
+[Wiki](#wiki) (documents),
+[Issues](#issue-tracker) (bug and task tracking), and
+[GitHub](#github) (source code and pull requests).
+There are also secondary communication channels, including:
+[Slack](#slack) (realtime chat),
+[WebEx](#webex) (conference calls), and in-person meetings.  
+If something important occurs in a secondary channel, it must be recorded in a primary channel (Discuss, Wiki, Issues, or GitHub).
+
 
 ## General notes
 
@@ -23,7 +30,7 @@ we have four main fora:
   [FOLIO Communication Spaces](https://wiki.folio.org/display/COMMUNITY/FOLIO+Communication+Spaces).
 
 - Decisions need to be recorded in an appropriate place.
-  Sometimes that will be the Issue Tracker, sometimes as Discuss topics.
+  Sometimes that will be the Issue Tracker, sometimes as Discuss topics, sometimes it will be as a position paper on the wiki.
 
 - Use well-chosen words for topic titles and introductory sections.
   This will make it easier to later list and search.
@@ -31,6 +38,7 @@ we have four main fora:
 - Make links in each topic, e.g. between an issue tracker item and
   relevant Discuss topics. Our future selves will be thankful when
   we need to explore the reasons for a certain change.
+  Note that it is also possible to copy links from the Slack archive into
 
 - Try to search before starting a new topic. If there are duplicates,
   then link them.
@@ -61,28 +69,9 @@ we have four main fora:
 
 - When seeking input from the broadest reach of FOLIO participants.
 
-## Slack
+## Wiki
 
-[https://folio-project.slack.com](https://folio-project.slack.com)
-(join [here](https://su17s9g5c5.execute-api.us-east-1.amazonaws.com/production) first).
-
-- Real-time chat and messaging.
-
-- [TODO: Explain more about when this is ideal.]
-
-- Follow up on missed topics. This can occur when a flurry happens about
-  other topics. Also everyone is busy, and may intend to respond later.
-  So pursue topics at a later time or venue.
-
-- A place to get together to solve a particular bug,
-  or hold a brainstorming session. Try to choose a time that suits people
-  distributed around the world.
-
-- Summarise topics out to other forums for better visibility.
-
-- A place for fun banter between colleagues.
-
-- A place for heads-up type of notices.
+[https://wiki.folio.org](https://wiki.folio.org)
 
 ## Issue tracker
 
@@ -93,7 +82,7 @@ we have four main fora:
 - Also tasks that you know need to be done sometime later.
 
 - If not clear whether to add a new issue, then commence a
-  Discuss topic first, and later summarise into an Issue.
+  Discuss topic first, and later summarize into an Issue.
 
 - Describe the issue concisely in the Summary and Description fields.
   Use Comments for further detail.
@@ -125,3 +114,24 @@ we have four main fora:
   their Pull Requests or in direct response to their Commits (see
   [example](https://github.com/folio-org/okapi/commit/710e201053897609ceb667e0687f830f92f9d006)).
 
+## Slack
+
+[https://folio-project.slack.com](https://folio-project.slack.com)
+(join [here](https://su17s9g5c5.execute-api.us-east-1.amazonaws.com/production) first).
+
+- Real-time chat and messaging.
+
+- Summarize topics out to other forums for better visibility.
+  Remember that Slack is a secondary channel;  significant ideas and decisions must be recorded elsewhere (Discuss, Wiki, Issues or GitHub) for broader vetting.
+
+- Follow up on missed topics. This can occur when a flurry happens about
+  other topics. Also everyone is busy, and may intend to respond later.
+  So pursue topics at a later time or venue.
+
+- A place to get together to solve a particular bug,
+  or hold a brainstorming session. Try to choose a time that suits people
+  distributed around the world.
+
+- A place for fun banter between colleagues.
+
+- A place for heads-up type of notices.

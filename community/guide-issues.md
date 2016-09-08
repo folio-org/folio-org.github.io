@@ -5,51 +5,38 @@ title: Guidelines for FOLIO issue tracker
 
 [https://issues.folio.org](https://issues.folio.org)
 
-- Specific bugs, problems, feature requests.
-
-- Also tasks that you know need to be done sometime later.
-
-- If not clear whether to add a new issue, then commence a
-  Discuss topic first, and later summarise into an Issue.
-  See guidelines about [which forum](which-forum) to use.
-
-- Follow up in other fora for any lengthy discussion.
-  Then summarise into further issue tracker comments.
-  Provide links in both directions.
-
 ## Preparing to add an issue
 
-Describe the issue concisely in the Summary and Description fields.
-Use Comments for further detail.
-The Summary and Description are also utilized for reports, so detail is
-better in Comments.
+Describe the issue concisely in the _Summary_ and _Description_ fields.
+Use _Comments_ for further detail.
+The _Summary_ and _Description_ are also utilized for reports, so detail is
+better in _Comments_.
 
-Use the Search facility to ensure that not already reported.
+Use the Search facility to ensure that an issue is not already reported.
 
-Use a local text file to prepare, then copy-and-paste.
+To avoid issues with login timeouts, use a local text file to prepare the summary and description, then copy-and-paste.
 
-Use attachments for long log files, text listings, and images.
+Use attachments for long log files, text listings, and images.  
+Be sure information that would compromise a user's privacy is redacted from log files.
 
 ## Create issue
 
-When creating the issue, select the most relevant Project and the Issue
-Type (see [below](#issue-types)).
+When creating the issue, select the most relevant _Project_ and the _Issue
+Type_ (see [below](#issue-types) for definitions).
 If unsure which Project, then use "FOLIO".
 If unsure which Type, then use "Task".
 Someone can change these later if necessary.
+For the "Bug" issue type, use the "Configure Fields" option to add the _Environment_ field.
 
-After issue creation, use follow-up Comments for further detail.
+After issue creation, use follow-up _Comments_ for further detail.
 Attachments can be added later.
 
-For the "Bug" issue type, use the "Configure Fields" option to add the
-"Environment" field.
-
-Someone else will later determine the Assignee and the Priority, and will
-Link between relevant issues.
+Someone else will later determine the _Assignee_ and the _Priority_, and will
+link between relevant issues.
 
 ## Issue types
 
-Each Project uses a set of the following types:
+Each Project uses the following types:
 
 - **New Feature**: Explain something new, yet to be developed.
 - **Bug**: A problem which impairs or prevents proper function.
@@ -60,7 +47,7 @@ Each Project uses a set of the following types:
 ## Priority levels
 
 The priority level indicates the importance.
-These are set by someone else.
+An issue's priority is set by the project managers.
 
 - **P1**: highest priority item, drop everything else before this is resolved, reserved for critical bugfixes
 - **P2**: normal priority level, must be included in the current development cycle
@@ -76,7 +63,7 @@ We use the following workflow:
 - **Reopened**: The resolution was incorrect.
 - **Closed**: Finished.
 
-The Status does not preclude other people from assisting.
+This Status does not preclude other people from assisting.
 Please add relevant Comments.
 
 ## Linking
@@ -84,9 +71,10 @@ Please add relevant Comments.
 Other people will create tracker Links between relevant issues.
 
 Using an Issue identifier within text Comments will automatically link to
-it, e.g. `FOLIO-298`
+it, e.g. `FOLIO-298`.
+Using an issue identifier in git commit messages will also automatically link to the Issue.
 
-Provide other relevant links, for example GitHub pull requests, and
+Provide other relevant links, for example GitHub pull requests and
 Discuss topics.
 
 ## Filters
