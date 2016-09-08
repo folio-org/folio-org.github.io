@@ -46,3 +46,5 @@ There are many ways to contribute to FOLIO development:
 * [Which forum](which-forum) to use for communication:
   Issue tracker, Slack chat, Discuss discussion, GitHub pull requests.
   Some guidelines about when to use each, and some usage tips.
+
+* [Guidelines for FOLIO issue tracker](guide-issues).
