@@ -16,6 +16,8 @@ The issue/bug tracking system is at: [https://issues.folio.org](https://issues.f
 
 Source code is on GitHub: [https://github.com/folio-org](https://github.com/folio-org)
 
+See [guidelines](which-forum) about using each.
+
 ## Developer community
 
 The FOLIO developer community consists of:
@@ -37,10 +39,10 @@ There are many ways to contribute to FOLIO development:
 
 ## Guidelines
 
-* [Guidelines for Contributing Code](contrib-code.html):
+* [Guidelines for Contributing Code](contrib-code):
   GitHub Flow, feature branches, pull requests, version numbers, coding style,
   tests, etc.
 
-* [Which forum](which-forum.html) to use for communication:
+* [Which forum](which-forum) to use for communication:
   Issue tracker, Slack chat, Discuss discussion, GitHub pull requests.
   Some guidelines about when to use each, and some usage tips.
