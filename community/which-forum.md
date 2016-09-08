@@ -66,16 +66,23 @@ we have four main fora:
 [https://folio-project.slack.com](https://folio-project.slack.com)
 (join [here](https://su17s9g5c5.execute-api.us-east-1.amazonaws.com/production) first).
 
-- [TODO: Explain when this is ideal.]
+- Real-time chat and messaging.
+
+- [TODO: Explain more about when this is ideal.]
 
 - Follow up on missed topics. This can occur when a flurry happens about
   other topics. Also everyone is busy, and may intend to respond later.
   So pursue topics at a later time or venue.
 
-- Great as a brainstorming session. Try to choose a time that suits people
+- A place to get together to solve a particular bug,
+  or hold a brainstorming session. Try to choose a time that suits people
   distributed around the world.
 
 - Summarise topics out to other forums for better visibility.
+
+- A place for fun banter between colleagues.
+
+- A place for heads-up type of notices.
 
 ## Issue tracker
 
