@@ -3,7 +3,7 @@ layout: page
 title: FOLIO Community
 ---
 
-## Collaboration Tools
+## Collaboration tools
 
 The discussion area and mailing lists for the FOLIO project are located at:
 [https://discuss.folio.org](https://discuss.folio.org)
@@ -16,7 +16,9 @@ The issue/bug tracking system is at: [https://issues.folio.org](https://issues.f
 
 Source code is on GitHub: [https://github.com/folio-org](https://github.com/folio-org)
 
-## Developer Community
+See [guidelines](which-forum) about using each.
+
+## Developer community
 
 The FOLIO developer community consists of:
 
@@ -31,7 +33,18 @@ Slack or the discussion site.
 
 There are many ways to contribute to FOLIO development:
 
-* Contributing directly to the software development.  (See the
-  [Guidelines for Contributing Code](contrib-code.html).)
+* Contributing directly to the software development.
 * Engaging with the issue tracker.
 * Joining the conversation on Slack or the discussion site.
+
+## Guidelines
+
+* [Guidelines for Contributing Code](contrib-code):
+  GitHub Flow, feature branches, pull requests, version numbers, coding style,
+  tests, etc.
+
+* [Which forum](which-forum) to use for communication:
+  Issue tracker, Slack chat, Discuss discussion, GitHub pull requests.
+  Some guidelines about when to use each, and some usage tips.
+
+* [Guidelines for FOLIO issue tracker](guide-issues).
