@@ -20,7 +20,7 @@ we have four main fora:
 ## General notes
 
 - See also other notes about
-  [FOLIO Communication Spaces](https://wiki.folio.org/display/COMMUNITY/FOLIO+Communication+Spaces)
+  [FOLIO Communication Spaces](https://wiki.folio.org/display/COMMUNITY/FOLIO+Communication+Spaces).
 
 - Decisions need to be recorded in an appropriate place.
   Sometimes that will be the Issue Tracker, sometimes as Discuss topics.
@@ -90,6 +90,7 @@ we have four main fora:
 
 - Describe the issue concisely in the Summary and Description fields.
   Use Comments for further detail.
+  See [Guidelines for FOLIO issue tracker](guide-issues).
 
 - Follow up in other fora for any lengthy discussion.
   Then summarise into further issue tracker comments.

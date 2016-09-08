@@ -11,6 +11,7 @@ title: Guidelines for FOLIO issue tracker
 
 - If not clear whether to add a new issue, then commence a
   Discuss topic first, and later summarise into an Issue.
+  See guidelines about [which forum](which-forum) to use.
 
 - Follow up in other fora for any lengthy discussion.
   Then summarise into further issue tracker comments.
