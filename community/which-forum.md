@@ -12,7 +12,10 @@ We each need to pause and consider the best forum. There are no rules, but these
 As explained in the
 [collaboration tools](../community/#collaboration-tools) section,
 we have four main fora:
-**Discuss** and mailing lists, **Slack**, **Issue Tracker**, and **GitHub**.
+[Discuss](#discuss) and mailing lists,
+[Slack](#slack) chat and messaging,
+[Issue Tracker](#issue-tracker), and
+[GitHub](#github).
 
 ## General notes
 
@@ -38,6 +41,41 @@ we have four main fora:
   For example, if your feedback is about a certain GitHub commit, then
   use its comment-on-commit facility.
   Likewise with pull requests and JIRA issue tracker.
+
+## Discuss
+
+[https://discuss.folio.org](https://discuss.folio.org)
+
+- For asking questions and recording discussions.
+
+- Use the relevant categories.
+
+- For topics that need lengthy or open-ended discussion, this is
+  definitely the place.
+
+- If in doubt about which forum to commence a discussion, then using a
+  Discuss topic is the best place.
+
+- You might be subsequently asked to explicitly add an Issue Tracker item.
+  Link in both directions.
+
+- When seeking input from the broadest reach of FOLIO participants.
+
+## Slack
+
+[https://folio-project.slack.com](https://folio-project.slack.com)
+(join [here](https://su17s9g5c5.execute-api.us-east-1.amazonaws.com/production) first).
+
+- [TODO: Explain when this is ideal.]
+
+- Follow up on missed topics. This can occur when a flurry happens about
+  other topics. Also everyone is busy, and may intend to respond later.
+  So pursue topics at a later time or venue.
+
+- Great as a brainstorming session. Try to choose a time that suits people
+  distributed around the world.
+
+- Summarise topics out to other forums for better visibility.
 
 ## Issue tracker
 
@@ -79,37 +117,3 @@ we have four main fora:
   their Pull Requests or in direct response to their Commits (see
   [example](https://github.com/folio-org/okapi/commit/710e201053897609ceb667e0687f830f92f9d006)).
 
-## Discuss
-
-[https://discuss.folio.org](https://discuss.folio.org)
-
-- For asking questions and recording discussions.
-
-- Use the relevant categories.
-
-- For topics that need lengthy or open-ended discussion, this is
-  definitely the place.
-
-- If in doubt about which forum to commence a discussion, then using a
-  Discuss topic is the best place.
-
-- You might be subsequently asked to explicitly add an Issue Tracker item.
-  Link in both directions.
-
-- When seeking input from the broadest reach of FOLIO participants.
-
-## Slack
-
-[https://folio-project.slack.com](https://folio-project.slack.com)
-(join [here](https://su17s9g5c5.execute-api.us-east-1.amazonaws.com/production) first).
-
-- [TODO: Explain when this is ideal.]
-
-- Follow up on missed topics. This can occur when a flurry happens about
-  other topics. Also everyone is busy, and may intend to respond later.
-  So pursue topics at a later time or venue.
-
-- Great as a brainstorming session. Try to choose a time that suits people
-  distributed around the world.
-
-- Summarise topics out to other forums for better visibility.
