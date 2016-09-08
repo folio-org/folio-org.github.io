@@ -33,7 +33,7 @@ Use attachments for long log files, text listings, and images.
 ## Create issue
 
 When creating the issue, select the most relevant Project and the Issue
-Type (see below).
+Type (see [below](#issue-types)).
 If unsure which Project, then use "FOLIO".
 If unsure which Type, then use "Task".
 Someone can change these later if necessary.
@@ -54,7 +54,8 @@ Each Project uses a set of the following types:
 - **New Feature**: Explain something new, yet to be developed.
 - **Bug**: A problem which impairs or prevents proper function.
 - **Task**: Something else that needs to be done.
-- **Umbrella**: [TODO: Need to define this.]
+- **Umbrella**: This type is used for project management.
+  Please use one of the other types.
 
 ## Priority levels
 
