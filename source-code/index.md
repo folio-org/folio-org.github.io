@@ -33,10 +33,9 @@ fall into neither of these categories.
 
 **PLEASE NOTE** that this is a technology preview following the [release early,
 release often](https://en.wikipedia.org/wiki/Release_early,_release_often)
-philosophy.  **We want your feedback**, in the form of pull requests, [filed
-issues](https://issues.folio.org/) and general discussion on the [Slack-based
-chat forum](https://folio-project.slack.com/) or the [Discuss web
-forum](https://discuss.folio.org).
+philosophy.  **We want your feedback** in the form of pull requests and filed
+issues and general discussion via the
+[collaboration tools](../community).
 
 ## Server-side
 
