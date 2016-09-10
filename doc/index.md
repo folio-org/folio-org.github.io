@@ -42,8 +42,8 @@ of interest.
 
 The FOLIO user-interface toolkit is called Stripes. It is described in
 [Stripes: a modular toolkit for user
-interfaces](https://github.com/folio-org/stripes-experiments/blob/master/stripes-core/doc/overview.md)
-and instruction for running a Stripes-based UI can be found in
+interfaces](https://github.com/folio-org/stripes-experiments/blob/master/stripes-core/doc/overview.md).
+Instructions for running a Stripes-based UI can be found in
 [the Stripes Core README file](https://github.com/folio-org/stripes-experiments/blob/master/stripes-core/README.md).
 
 Related to this,
@@ -57,10 +57,10 @@ These API specification are automatically generated from the relevant
 [RAML](http://raml.org/) files, and specify how client modules may
 access the functionality provided by these important core modules.
 
-* [Patrons API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/patrons.html)
-* [Bib API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/bibs.html)
-* [Configurations API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/config.html)
-* [Item API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/items.html)
+- [Patrons API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/patrons.html)
+- [Bib API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/bibs.html)
+- [Configurations API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/config.html)
+- [Item API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/items.html)
 
 ## Glossary
 

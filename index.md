@@ -26,5 +26,5 @@ nascent, we expect it to evolve quickly in the coming weeks.
 
 We hope you will join FOLIO and help us shape the future of libraries!  We
 invite you to provide feedback and explore ideas with us.  Join the
-conversation over at [folio.org](https://www.folio.org/).
+conversation over at [folio.org](https://www.folio.org/)
 
