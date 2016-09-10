@@ -3,14 +3,17 @@ layout: page
 title: Which forum to use for communication
 ---
 
-Developers need to efficiently discuss various topics such as issues, usage quirks, new features, and documentation improvements.
+Developers need to efficiently discuss various topics such as issues,
+usage quirks, new features, and documentation improvements.
 Remember that other developers, the recipients of your messages, are also busy.
-They also operate in different time zones. In such busy projects, items can be easily overlooked, especially when in an inappropriate forum.
+They also operate in different time zones. In such busy projects, items can
+be easily overlooked, especially when in an inappropriate forum.
 
 We follow a variation of the Apache motto:
 **_If it didn't happen in one of the primary communication channels
-x (Discuss, Wiki, Issues, and GitHub), it didn't happen._**
-We each need to pause and consider the best forum. There are no rules, but these guidelines can assist.
+(Discuss, Wiki, Issues, and GitHub), it didn't happen._**
+We each need to pause and consider the best forum.
+There are no rules, but these guidelines can assist.
 
 As explained in the
 [collaboration tools](../community/#collaboration-tools) section,
@@ -23,8 +26,8 @@ we have four primary fora:
 There are also secondary communication channels, including:
 [Slack](#slack) (realtime chat),
 [WebEx](#webex) (conference calls), and in-person meetings.
-If something important occurs in a secondary channel, it must be recorded in a primary channel.
-
+If something important occurs in a secondary channel, it must be recorded
+in a primary channel.
 
 ## General notes
 
@@ -32,7 +35,8 @@ If something important occurs in a secondary channel, it must be recorded in a p
   [FOLIO Communication Spaces](https://wiki.folio.org/display/COMMUNITY/FOLIO+Communication+Spaces).
 
 - Decisions need to be recorded in an appropriate place.
-  Sometimes that will be the Issue Tracker, sometimes as Discuss topics, sometimes it will be as a position paper on the wiki.
+  Sometimes that will be the Issue Tracker, sometimes as Discuss topics,
+  sometimes it will be as a position paper on the wiki.
 
 - Use well-chosen words for topic titles and introductory sections.
   This will make it easier to later list and search.
@@ -127,7 +131,9 @@ special-interest group (SIG) spaces, other guidelines.
 - Real-time chat and messaging.
 
 - Summarize topics out to other forums for better visibility.
-  Remember that Slack is a secondary channel;  significant ideas and decisions must be recorded elsewhere (Discuss, Wiki, Issues or GitHub) for broader vetting.
+  Remember that Slack is a secondary channel: significant ideas and
+  decisions must be recorded elsewhere (Discuss, Wiki, Issues or GitHub)
+  for broader vetting.
 
 - Follow up on missed topics. This can occur when a flurry happens about
   other topics. Also everyone is busy, and may intend to respond later.
