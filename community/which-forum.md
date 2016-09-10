@@ -8,7 +8,8 @@ Remember that other developers, the recipients of your messages, are also busy.
 They also operate in different time zones. In such busy projects, items can be easily overlooked, especially when in an inappropriate forum.
 
 We follow a variation of the Apache motto:
-**_If it didn't happen in one of the primary communication channels (Discuss, Wiki, Issues, and GitHub), it didn't happen._**
+**_If it didn't happen in one of the primary communication channels
+x (Discuss, Wiki, Issues, and GitHub), it didn't happen._**
 We each need to pause and consider the best forum. There are no rules, but these guidelines can assist.
 
 As explained in the
@@ -18,10 +19,11 @@ we have four primary fora:
 [Wiki](#wiki) (documents),
 [Issues](#issue-tracker) (bug and task tracking), and
 [GitHub](#github) (source code and pull requests).
+
 There are also secondary communication channels, including:
 [Slack](#slack) (realtime chat),
-[WebEx](#webex) (conference calls), and in-person meetings.  
-If something important occurs in a secondary channel, it must be recorded in a primary channel (Discuss, Wiki, Issues, or GitHub).
+[WebEx](#webex) (conference calls), and in-person meetings.
+If something important occurs in a secondary channel, it must be recorded in a primary channel.
 
 
 ## General notes
@@ -72,6 +74,9 @@ If something important occurs in a secondary channel, it must be recorded in a p
 ## Wiki
 
 [https://wiki.folio.org](https://wiki.folio.org)
+
+Position papers, meeting agendas and minutes,
+special-interest group (SIG) spaces, other guidelines.
 
 ## Issue tracker
 
@@ -129,9 +134,8 @@ If something important occurs in a secondary channel, it must be recorded in a p
   So pursue topics at a later time or venue.
 
 - A place to get together to solve a particular bug,
-  or hold a brainstorming session. Try to choose a time that suits people
-  distributed around the world.
-
-- A place for fun banter between colleagues.
+  or hold a brainstorming session,
+  or to efficiently address a potential mis-understanding.
+  Try to choose a time that suits people distributed around the world.
 
 - A place for heads-up type of notices.
