@@ -25,9 +25,9 @@ See guidelines about the
 
 The FOLIO developer community consists of:
 
-* Several software engineering teams with commit access to specific
+- Several software engineering teams with commit access to specific
   platform components, such as Okapi.
-* Contributors from the community.
+- Contributors from the community.
 
 Team members can be contacted via the collaboration tools.
 
@@ -35,14 +35,14 @@ Team members can be contacted via the collaboration tools.
 
 There are many ways to contribute to FOLIO development:
 
-* Contributing directly to the software development.
-* Engaging with the issue tracker.
-* Joining the conversations.
+- Contributing directly to the software development.
+- Engaging with the issue tracker.
+- Joining the conversations.
 
 ## Guidelines
 
-* [Guidelines for Contributing Code](contrib-code):
+- [Guidelines for Contributing Code](contrib-code):
   GitHub Flow, feature branches, pull requests, version numbers, coding style,
   tests, etc.
 
-* [FOLIO Communication Spaces](https://wiki.folio.org/display/COMMUNITY/FOLIO+Communication+Spaces).
+- [FOLIO Communication Spaces](https://wiki.folio.org/display/COMMUNITY/FOLIO+Communication+Spaces).
