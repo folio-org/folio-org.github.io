@@ -25,7 +25,9 @@ we have four primary fora:
 
 There are also secondary communication channels, including:
 [Slack](#slack) (realtime chat),
-[WebEx](#webex) (conference calls), and in-person meetings.
+WebEx (conference calls,
+[FOLIO Forum](https://www.openlibraryenvironment.org/archives/category/olfforum)),
+and in-person meetings.
 If something important occurs in a secondary channel, it must be recorded
 in a primary channel.
 
