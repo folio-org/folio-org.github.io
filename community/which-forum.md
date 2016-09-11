@@ -9,9 +9,6 @@ Remember that other developers, the recipients of your messages, are also busy.
 They also operate in different time zones. In such busy projects, items can
 be easily overlooked, especially when in an inappropriate forum.
 
-We follow a variation of the Apache motto:
-**_If it didn't happen in one of the primary communication channels
-(Discuss, Wiki, Issues, and GitHub), it didn't happen._**
 We each need to pause and consider the best forum.
 There are no rules, but these guidelines can assist.
 
@@ -30,6 +27,10 @@ WebEx (conference calls,
 and in-person meetings.
 If something important occurs in a secondary channel, it must be recorded
 in a primary channel.
+
+We follow a variation of the Apache motto:
+**_If it didn't happen in one of the primary communication channels
+(Discuss, Wiki, Issues, and GitHub), it didn't happen._**
 
 ## General notes
 
@@ -151,4 +152,4 @@ special-interest group (SIG) spaces, other guidelines.
 - Distinguish different Slack teams using
   [Sidebar Themes](http://slackstyles.com/#/tag/Folio):
   "[FOLIO orange](http://slackthemes.net/#/folio_orange)" and
-  "[FOLIO purple](http://slackthemes.net/#/folio_purple)"
+  "[FOLIO purple](http://slackthemes.net/#/folio_purple)".
