@@ -44,7 +44,7 @@ in a primary channel.
 - Make links in each topic, e.g. between an issue tracker item and
   relevant Discuss topics. Our future selves will be thankful when
   we need to explore the reasons for a certain change.
-  Note that it is also possible to copy links from the Slack archive into
+  Note that it is also possible to copy links from the Slack archive.
 
 - Try to search before starting a new topic. If there are duplicates,
   then link them.
@@ -130,7 +130,7 @@ special-interest group (SIG) spaces, other guidelines.
 
 - Real-time chat and messaging.
 
-- Summarize topics out to other forums for better visibility.
+- Summarize topics out to other fora for better visibility.
   Remember that Slack is a secondary channel: significant ideas and
   decisions must be recorded elsewhere (Discuss, Wiki, Issues or GitHub)
   for broader vetting.
@@ -145,3 +145,8 @@ special-interest group (SIG) spaces, other guidelines.
   Try to choose a time that suits people distributed around the world.
 
 - A place for heads-up type of notices.
+
+- Distinguish different Slack teams using
+  [Sidebar Themes](http://slackstyles.com/#/tag/Folio):
+  "[FOLIO orange](http://slackthemes.net/#/folio_orange)" and
+  "[FOLIO purple](http://slackthemes.net/#/folio_purple)"
