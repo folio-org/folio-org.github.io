@@ -53,8 +53,9 @@ for individual FOLIO tenants.
 
 ## API reference
 
-These API specification are automatically generated from the relevant
-[RAML](http://raml.org/) files, and specify how client modules may
+These API specifications are automatically generated from the relevant
+[RAML](https://github.com/folio-org/raml)
+files, and specify how client modules may
 access the functionality provided by these important core modules.
 
 - [Patrons API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/patrons.html)

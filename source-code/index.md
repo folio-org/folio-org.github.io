@@ -80,6 +80,12 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Initial work on a FOLIO metadata store and related
   knowledge-base/cataloging concepts.
 
+- [raml](https://github.com/folio-org/raml)
+  -- Repository of RAML files, including JSON Schemas, traits and
+  resource types centralized for re-usability.
+  The [API reference](../doc/#api-reference) documentation is also
+  generated.
+
 ## Client-side
 
 Since Okapi represents all the FOLIO functionality as well-behaved web
@@ -113,6 +119,6 @@ exists and can be run, the APIs are likely to change.
 
 - [folio-sample-modules](https://github.com/folio-org/folio-sample-modules)
   -- Various sample modules, illustrating ways to structure a module for
-  use with Okapi (`hello-vertx` and `simple-vertx`) and how to make a
-  client-side module (`patrons`).
+  use with Okapi (e.g. `hello-vertx` and `simple-vertx` and `simple-perl`)
+  and how to make a client-side module (`patrons`).
 

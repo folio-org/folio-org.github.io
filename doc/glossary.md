@@ -3,6 +3,9 @@ layout: page
 title: FOLIO Glossary
 ---
 
+FOLIO is a new open source, cloud hostable, app-store based library platform,
+designed to facilitate collaboration between disparate development teams.
+
 ## FOLIO Components
 
 ### Okapi
@@ -45,6 +48,15 @@ designed to play well in the cloud.
 containers. FOLIO is well-suited for deployment in a Docker
 environment.
 
+### DRY
+
+Don't repeat yourself
+([DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)).
+
+### ECMAScript
+
+[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript)
+
 ### JSON
 
 JavaScript Object Notation
@@ -58,9 +70,13 @@ data objects consisting of attribute–value pairs.
 is a JSON-based open standard for creating tokens that assert some number
 of claims. JWTs are authenticated and encrypted, and used by Okapi.
 
+### LSP
+
+Library Services Platform (LSP).
+
 ### Markdown
 
-[Markdown](https://daringfireball.net/projects/markdown/) is a simple
+[Markdown](https://en.wikipedia.org/wiki/Markdown) is a simple
 plain text formatting syntax, used for documentation throughout the
 FOLIO code.
 
@@ -105,6 +121,11 @@ community to help with the development of FOLIO.
 
 [PostgreSQL](https://www.postgresql.org/) (often called "postgres") is
 an open source enterprise-level relational database.
+
+### PoC
+
+Proof-of-concept
+([PoC](https://en.wikipedia.org/wiki/Proof_of_concept))
 
 ### RAML
 

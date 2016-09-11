@@ -18,8 +18,7 @@ The issue/bug tracking system is at:
 Source code is on GitHub:
 [https://github.com/folio-org](https://github.com/folio-org)
 
-See guidelines about the
-[FOLIO Communication Spaces](https://wiki.folio.org/display/COMMUNITY/FOLIO+Communication+Spaces).
+See [guidelines](which-forum) about using each.
 
 ## Developer community
 
@@ -45,4 +44,8 @@ There are many ways to contribute to FOLIO development:
   GitHub Flow, feature branches, pull requests, version numbers, coding style,
   tests, etc.
 
-- [FOLIO Communication Spaces](https://wiki.folio.org/display/COMMUNITY/FOLIO+Communication+Spaces).
+- [Which forum](which-forum) to use for communication:
+  Issue tracker, Slack chat, Discuss discussion, GitHub pull requests.
+  Some guidelines about when to use each, and some usage tips.
+
+* [Guidelines for FOLIO issue tracker](guide-issues).
