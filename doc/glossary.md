@@ -3,6 +3,9 @@ layout: page
 title: FOLIO Glossary
 ---
 
+FOLIO is a new open source, cloud hostable, app-store based library platform,
+designed to facilitate collaboration between disparate development teams.
+
 ## FOLIO Components
 
 ### Okapi
