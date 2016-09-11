@@ -21,7 +21,7 @@ To avoid issues with login timeouts, use a local text file to prepare
 the summary and description, then copy-and-paste.
 
 Use attachments for long log files, text listings, and images.
-Be sure to redact information that would compromise a user's privacy,
+Be sure to redact information that would compromise a user's privacy.
 
 ## Create issue
 
@@ -65,7 +65,7 @@ An Issue Priority is set by the project managers.
 
 Note that the priority might not match the severity felt by the issue reporter.
 That is better represented by other means (such as the number of watchers or votes)
-and by providing clear Comments about your issue and the impacts.
+and by providing clear Comments about the issue and its impacts.
 
 ## Continue
 
