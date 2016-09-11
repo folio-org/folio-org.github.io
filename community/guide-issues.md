@@ -20,7 +20,7 @@ Use the Search facility to ensure that an issue is not already reported.
 To avoid issues with login timeouts, use a local text file to prepare
 the summary and description, then copy-and-paste.
 
-Use attachments for long log files, text listings, and images.  
+Use attachments for long log files, text listings, and images.
 Be sure to redact information that would compromise a user's privacy,
 
 ## Create issue
@@ -32,7 +32,8 @@ Someone can change these later if necessary.
 For the "Bug" issue type, use the "Configure Fields" option to add
 the _Environment_ field.
 
-After issue creation, use follow-up _Comments_ for further detail.
+After issue creation, use
+[follow-up _Comments_](#continue) for further detail.
 Attachments can be added later.
 
 Someone else will later determine the _Assignee_ and the _Priority_, and will
@@ -55,7 +56,7 @@ Each Project uses the following types:
 ## Priority levels
 
 The priority level indicates the importance to the dev team.
-An issue's priority is set by the project managers.
+An Issue Priority is set by the project managers.
 
 - **P1**: highest priority item, drop everything else before this is resolved, reserved for critical bugfixes
 - **P2**: normal priority level, must be included in the current development cycle
@@ -65,6 +66,18 @@ An issue's priority is set by the project managers.
 Note that the priority might not match the severity felt by the issue reporter.
 That is better represented by other means (such as the number of watchers or votes)
 and by providing clear Comments about your issue and the impacts.
+
+## Continue
+
+After creating the issue with a concise _Description_, follow up with more
+detail in additional _Comments_.
+
+When other people comment and ask for clarification, then try to respond
+promptly. We all like to keep the issue resolution process moving smoothly.
+
+If comments start to turn into a lengthy discussion, then follow up in
+other fora, and then summarise into further issue tracker Comments.
+Provide links in both directions.
 
 ## Status
 
