@@ -1,37 +1,43 @@
 .site-header {
-    //border-top: 5px solid $f-color-orange;
-    border-top: 5px solid $f-color-purple;
-    border-bottom: 1px solid $f-color-purple;
+  //border-top: 5px solid $f-color-orange;
+  border-top: 5px solid $f-color-purple;
+  border-bottom: 1px solid $f-color-purple;
 }
 
 .site-title {
-    &,
-    &:visited {
-        color: $f-color-orange;
-    }
+  &,
+  &:visited {
+    color: $f-color-orange;
+  }
 }
 
 .site-nav {
-    font-size: $small-font-size;
-    .page-link {
-        color: $f-color-purple;
-    }
+  font-size: $small-font-size;
+
+  .page-link {
+    color: $f-color-purple;
+  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: $f-color-purple;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $f-color-purple;
 }
 
 .site-footer {
-    border-top: 1px solid $f-color-orange;
+  border-top: 1px solid $f-color-orange;
 }
 
 .highlighter-rouge pre.highlight {
-    background: $f-color-lighter-grey;
+  background: $f-color-lighter-grey;
 }
 
 pre,
 code {
-    border: 1px solid $f-color-light-grey;
-    background-color: $f-color-lighter-grey;
+  border: 1px solid $f-color-light-grey;
+  background-color: $f-color-lighter-grey;
 }
