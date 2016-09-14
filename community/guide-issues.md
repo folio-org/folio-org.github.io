@@ -76,7 +76,7 @@ When other people comment and ask for clarification, then try to respond
 promptly. We all like to keep the issue resolution process moving smoothly.
 
 If comments start to turn into a lengthy discussion, then follow up in
-other fora, and then summarise into further issue tracker Comments.
+[other fora](which-forum), and then summarise into further issue tracker Comments.
 Provide links in both directions.
 
 ## Status
