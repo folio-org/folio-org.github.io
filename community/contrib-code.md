@@ -26,7 +26,7 @@ like _okapi-xxx-contribution-guidelines_):
 
     git checkout -b okapi-xxx
 
-You can commit stuff as you go, but try not push obviously broken stuff into
+You can commit stuff as you go, but try not to push obviously broken stuff into
 GitHub, not even in your development branch - that will be visible for the
 whole world, and we plan to set up automatic testing for each branch, so
 pushing a broken commit will cause some emails. But if you need to share the

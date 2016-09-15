@@ -17,11 +17,11 @@ better in _Comments_.
 
 Use the Search facility to ensure that an issue is not already reported.
 
-To avoid issues with login timeouts, use a local text file to prepare
-the summary and description, then copy-and-paste.
+Use a local text file and your familiar editor to prepare and save the
+summary, description, and comments.  When ready then copy-and-paste.
 
 Use attachments for long log files, text listings, and images.
-Be sure to redact information that would compromise a user's privacy.
+Be sure to redact information that would compromise privacy.
 
 ## Create issue
 
@@ -76,7 +76,7 @@ When other people comment and ask for clarification, then try to respond
 promptly. We all like to keep the issue resolution process moving smoothly.
 
 If comments start to turn into a lengthy discussion, then follow up in
-other fora, and then summarise into further issue tracker Comments.
+[other fora](which-forum), and then summarise into further issue tracker Comments.
 Provide links in both directions.
 
 ## Status
