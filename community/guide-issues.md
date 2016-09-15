@@ -17,11 +17,11 @@ better in _Comments_.
 
 Use the Search facility to ensure that an issue is not already reported.
 
-To avoid issues with login timeouts, use a local text file to prepare
-the summary and description, then copy-and-paste.
+Use a local text file and your familiar editor to prepare and save the
+summary, description, and comments.  When ready then copy-and-paste.
 
 Use attachments for long log files, text listings, and images.
-Be sure to redact information that would compromise a user's privacy.
+Be sure to redact information that would compromise privacy.
 
 ## Create issue
 
