@@ -3,6 +3,11 @@ layout: page
 title: Guidelines for Contributing Code
 ---
 
+## Issue tracker
+
+The FOLIO Issue Tracker is at [issues.folio.org](https://issues.folio.org/)
+and see the usage [guidelines](http://dev.folio.org/community/guide-issues).
+
 ## Git and branches
 
 For all FOLIO code repositories, we are trying to follow
