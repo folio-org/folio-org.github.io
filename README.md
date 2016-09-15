@@ -20,5 +20,13 @@ Then do:
 
 Occasionally do `bundle update` to advance the versions of dependencies.
 
+## Theme enhancements
+
 If there is a need to override any more files, then copy them from the theme.
 To find them, do: `bundle show minima`
+
+## Regenerate ToC
+
+To regenerate the Table of Contents for some files, do `make all` at this top-level.
+Then replace the ToC with its relevant output,
+e.g. `target/contrib-code-toc.md` into `community/contrib-code.md`
