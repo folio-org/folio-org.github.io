@@ -3,6 +3,23 @@ layout: page
 title: Guidelines for Contributing Code
 ---
 
+* [Issue tracker](#issue-tracker)
+* [Git and branches](#git-and-branches)
+    * [Feature branches](#feature-branches)
+    * [Requesting a merge](#requesting-a-merge)
+    * [Merging pull requests](#merging-pull-requests)
+* [Releasing](#releasing)
+* [Version numbers](#version-numbers)
+    * [API versions](#api-versions)
+    * [Implementation versions](#implementation-versions)
+    * [The simple case](#the-simple-case)
+    * [Complex cases](#complex-cases)
+    * [Dot one, not zero](#dot-one-not-zero)
+* [Coding style](#coding-style)
+* [License](#license)
+* [Tests](#tests)
+* [RAML](#raml)
+
 ## Issue tracker
 
 The FOLIO Issue Tracker is at [issues.folio.org](https://issues.folio.org/)
