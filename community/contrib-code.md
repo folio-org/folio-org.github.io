@@ -206,6 +206,9 @@ Do not release modules with a version number ending in `.0`
 
 ## Coding style
 
+Follow the coding style that is being used by each repository for each
+file type.
+
 For Java code, we basically try to adhere to Sun Java coding
 [conventions](http://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
 (that document is old and unmaintained, but seems to be good enough as it is).
@@ -215,7 +218,7 @@ There are a few exceptions:
 - We indent with two spaces only, because vert.x uses deeply nested callbacks.
 - We _don't_ use tab characters for indents, only spaces.
 
-Remember to set your IDE to remove trailing spaces on saving files,
+Remember to set your IDE and editors to remove trailing spaces on saving files,
 since those produce unnecessary diffs in Git.
 
 ## License
