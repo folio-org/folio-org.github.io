@@ -221,6 +221,8 @@ There are a few exceptions:
 Remember to set your IDE and editors to remove trailing spaces on saving files,
 since those produce unnecessary diffs in Git.
 
+For XML and JSON and RAML files, the same: two-space indent and no tabs.
+
 ## License
 
 Licensed under the Apache License, Version 2.0
