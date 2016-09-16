@@ -20,15 +20,52 @@ Source code is on GitHub:
 
 See [guidelines](which-forum) about using each.
 
-## Developer community
+## Community representatives
+
+The FOLIO community consists of many significant contributors.  Among
+them are community representatives which include:
+
+- Sebastian Hammer, Index Data
+- Christopher Spalding, EBSCO
+- Michael Winkler, OLE
+
+## Engineering teams
 
 The FOLIO developer community consists of:
 
-- Several software engineering teams with commit access to specific
-  platform components, such as Okapi.
-- Contributors from the community.
+- Index Data, which leads the technical development of the FOLIO
+  software
+- Several software engineering teams
+- Contributing developers from the community
+- Many supporting individuals whose contributions feed into and guide
+  the development process
 
-Team members can be contacted via the collaboration tools.
+Here we list the engineering roles and contacts for the various parts of
+the project.  Team members can be contacted via the collaboration tools
+listed above.
+
+### Engineering core team
+
+The engineering core team sets strategic direction for technical
+architecture in the FOLIO software:
+
+- Sebastian Hammer (project lead)
+- Nassib Nassar (technical lead)
+- Jakub Skoczen (lead architect)
+- Adam Dickmeiss
+- Vince Bareau
+- Peter Murray (community)
+
+### Subproject core team leads
+
+Several components of the FOLIO software are distinct subprojects and
+have a core team of software engineers with commit-level access to the
+source code repositories.  Each subproject has a lead developer who is
+responsible for selecting new core team members from the community:
+
+- Okapi: Jakub Skoczen
+- Stripes: Jason Skomorowski
+- Metadata: Marc Johnson
 
 ## Contributing
 
