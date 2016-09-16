@@ -56,16 +56,20 @@ architecture in the FOLIO software:
 - Vince Bareau
 - Peter Murray (community)
 
-### Subproject core team leads
+### Subproject core teams
 
 Several components of the FOLIO software are distinct subprojects and
 have a core team of software engineers with commit-level access to the
-source code repositories.  Each subproject has a lead developer who is
-responsible for selecting new core team members from the community:
+source code repositories.  Each subproject generally has a lead
+developer who is responsible for selecting new core team members from
+the community.
 
-- Okapi: Jakub Skoczen
-- Stripes: Jason Skomorowski
-- Metadata: Marc Johnson
+- okapi: Adam Dickmeiss (lead), Heikki Levanto, Jakub Skoczen, John
+  Malconian, David Crossley
+- mod-auth: Kurt Nordstrom (lead)
+- mod-metadata: Marc Johnson (lead), Ian Ibbotson, Jakub Skoczen
+- stripes-experiments: Niels Erik Nielsen, Jason Skomorowski, Mike
+  Taylor
 
 ## Contributing
 
