@@ -50,8 +50,8 @@ The engineering core team sets strategic direction for technical
 architecture in the FOLIO software:
 
 - Sebastian Hammer (project lead)
-- Nassib Nassar (technical lead)
-- Jakub Skoczen (lead architect)
+- Nassib Nassar (project lead - technical)
+- Jakub Skoczen (technical lead)
 - Adam Dickmeiss
 - Vince Bareau
 - Peter Murray (community)
