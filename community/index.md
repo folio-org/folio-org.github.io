@@ -70,6 +70,11 @@ the community.
 - mod-metadata: Marc Johnson (lead), Ian Ibbotson, Jakub Skoczen
 - stripes-experiments: Niels Erik Nielsen, Jason Skomorowski, Mike
   Taylor
+- stripes-loader: Jason Skomorowski (lead)
+- okapi-stripes: Wolfram Schneider (lead)
+- container-perf-tests: Adam Dickmeiss (lead), Jakub Skoczen
+- folio-sample-modules: Heikki Levanto (lead), Niels Erik Nielsen
+- folio-org.github.io: David Crossley (lead)
 
 ## Contributing
 
