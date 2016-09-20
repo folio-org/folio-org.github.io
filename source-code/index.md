@@ -114,9 +114,6 @@ exists and can be run, the APIs are likely to change.
 
 ## Other projects
 
-- [external-api-testing](https://github.com/folio-org/external-api-testing)
-  -- Various tests of Okapi's APIs.
-
 - [folio-sample-modules](https://github.com/folio-org/folio-sample-modules)
   -- Various sample modules, illustrating ways to structure a module for
   use with Okapi (e.g. `hello-vertx` and `simple-vertx` and `simple-perl`)
