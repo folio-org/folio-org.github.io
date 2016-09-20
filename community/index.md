@@ -68,6 +68,8 @@ the community.
   Malconian, David Crossley
 - mod-auth: Kurt Nordstrom (lead)
 - mod-metadata: Marc Johnson (lead), Ian Ibbotson, Jakub Skoczen
+- mod-acquisitions, mod-circulation, mod-configuration: shale
+- raml-module-builder, raml: shale, Adam Dickmeiss
 - stripes-experiments: Niels Erik Nielsen, Jason Skomorowski, Mike
   Taylor
 - stripes-loader: Jason Skomorowski (lead)
