@@ -151,6 +151,6 @@ special-interest group (SIG) spaces, other guidelines.
 - A place for heads-up type of notices.
 
 - Distinguish different Slack teams using
-  [Sidebar Themes](http://slackstyles.com/#/tag/Folio):
+  [Sidebar Themes](http://slackstyles.com/#/tag/FOLIO):
   "[FOLIO orange](http://slackthemes.net/#/folio_orange)" and
   "[FOLIO purple](http://slackthemes.net/#/folio_purple)".
