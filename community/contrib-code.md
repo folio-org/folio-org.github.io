@@ -223,7 +223,7 @@ since those produce unnecessary diffs in Git.
 
 For XML and JSON and RAML files, the same: two-space indent and no tabs.
 
-For JavaScript code we are implementing an automated lint facility. 
+For JavaScript code we are implementing an automated lint facility.
 
 ## License
 
