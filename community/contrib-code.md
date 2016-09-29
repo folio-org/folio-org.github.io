@@ -207,7 +207,7 @@ Do not release modules with a version number ending in `.0`
 ## Coding style
 
 Follow the coding style that is being used by each repository for each
-file type.
+file type. Some projects do provide a `.editorconfig` file.
 
 For Java code, we basically try to adhere to Sun Java coding
 [conventions](http://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
