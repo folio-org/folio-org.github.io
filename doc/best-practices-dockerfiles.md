@@ -4,7 +4,7 @@ title: Best practices for Dockerfiles
 ---
 
 Since FOLIO modules can consist of range of application and programming environments, 
-running modules as linux containers provides a nice way to avoid issues related to
+running modules as Linux containers provides a nice way to avoid issues related to
 the complexities of installing and managing a system with mixed environments.  Docker 
 is a popular container framework and has been adopted as a primary distribution 
 model for FOLIO modules.  Dockerfiles describe how to build and run an application in 
@@ -13,7 +13,7 @@ a Docker container.
 The following outlines some general best practices for adding Dockerfiles to
 a FOLIO module project.   This is by no means a comprehensive list, and, as with
 all best practices, there will always be exceptions as well as a bit of controversy 
-(Indeed, it may be less controversial to re-title this document "FOLIO Dockerfile 
+(indeed, it may be less controversial to re-title this document "FOLIO Dockerfile 
 tips").  This [best practice guide](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/) 
 from Docker also provides a good overview.
 
@@ -26,7 +26,7 @@ running quickly for prototyping and development. This type of Dockerfile should 
 'Dockerfile.build' to differentiate it from the runtime Dockerfile. 
 
 * Most FOLIO Docker images will be derived from a pre-existing base image.  If possible,
-use a existing base image from an "official repository" located on Docker Hub. 
+use an existing base image from an "official repository" located on Docker Hub. 
 Examples include the following: 
 
   [OpenJDK for Java-based modules](https://hub.docker.com/_/openjdk)  
@@ -38,7 +38,7 @@ Examples include the following:
   [Debian OS base image](https://hub.docker.com/_/debian)  
   [Alpine OS base image](https://hub.docker.com/_/alpine)  
 
-  Alpine is ideal because of its small footprint. However, it may not be compatiable 
+  Alpine is ideal because of its small footprint. However, it may not be compatible 
 with all projects.  Test your Docker image to ensure your module functions correctly. 
 
 * Utilize the "one process per container" rule whenever possible and run the 
@@ -54,7 +54,7 @@ typically accomplish this.
 
   This can become more complex depending on whether the process started in the container
 is actually coded to exit gracefully when receiving a SIGTERM. If a different signal
-should be used to gracefully stop a container process, i.e SIGQUIT or something else, 
+should be used to gracefully stop a container process, i.e. SIGQUIT or something else, 
 it should be noted somewhere in the module documentation.  
 
 * If it is necessary to run more than one process in your container,  use 'supervisord'
@@ -64,7 +64,7 @@ additional information.
 
 * It is often necessary to pass optional arguments to a module running inside a 
 container.  For example,  the FOLIO  mod-circulation module can take an optional 
-argument to run an embedded Mongo data store (generally NOT a good idea for a production
+argument to run an embedded MongoDB data store (generally NOT a good idea for a production
 module!).  
 
   ```
@@ -91,7 +91,7 @@ and include CMD with an empty array. For example:
 
   ```
 
-  Now run the container by passing in JAVA_OPTs as an environment
+  Now run the container by passing in JAVA_OPTS as an environment
   variable:
 
   ```
@@ -100,7 +100,7 @@ and include CMD with an empty array. For example:
   ```
 
   Unfortunately, mixing the shell form of ENTRYPOINT with the exec form of CMD 
-  is not possible so combining support for application options as outlined
+  is not possible, so combining support for application options as outlined
   in the previous example with support for Java options becomes much more 
   difficult.  At this point, it's probably time to start thinking about a proper
   ENTRYPOINT script.  
@@ -125,5 +125,5 @@ in order for USER to work.
 
 * The module running inside the container should log to STDOUT by default - not to a log 
 file inside the container.  By logging to STDOUT,  the developer can easily look at
-module logs when debugging and the Docker admininistrator can choose to redirect the logs 
+module logs when debugging and the Docker administrator can choose to redirect the logs 
 elsewhere according to their own site preferences. 
