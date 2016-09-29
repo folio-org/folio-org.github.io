@@ -63,8 +63,13 @@ access the functionality provided by these important core modules.
 - [Configurations API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/config.html)
 - [Item API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/items.html)
 
-## Glossary
+## Guidelines
 
-A [FOLIO glossary](glossary.html) of some terms and
-technologies used in FOLIO.
+Guidelines and best practice documents:
 
+- Other community [guidelines](../community/#guidelines):
+  Contribution; which communication forum; issue tracker; etc.
+
+- A [FOLIO glossary](glossary) of some terms and technologies used in FOLIO.
+
+- [Best practices for Dockerfiles](best-practices-dockerfiles).
