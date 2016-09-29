@@ -29,14 +29,14 @@ running quickly for prototyping and development. This type of Dockerfile should 
 use an existing base image from an "official repository" located on Docker Hub.
 Examples include the following:
 
-  [OpenJDK for Java-based modules](https://hub.docker.com/_/openjdk)
-  [Node.js-based modules](https://hub.docker.com/_/node)
-  [Python-based modules](https://hub.docker.com/_/python)
+  - [OpenJDK for Java-based modules](https://hub.docker.com/_/openjdk)
+  - [Node.js-based modules](https://hub.docker.com/_/node)
+  - [Python-based modules](https://hub.docker.com/_/python)
 
   If it is necessary to start with an OS base image, the following are good choices:
 
-  [Debian OS base image](https://hub.docker.com/_/debian)
-  [Alpine OS base image](https://hub.docker.com/_/alpine)
+  - [Debian OS base image](https://hub.docker.com/_/debian)
+  - [Alpine OS base image](https://hub.docker.com/_/alpine)
 
   Alpine is ideal because of its small footprint. However, it may not be compatible
 with all projects.  Test your Docker image to ensure your module functions correctly.
