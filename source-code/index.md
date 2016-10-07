@@ -85,6 +85,9 @@ facilitated by the code in the `raml-module-builder` repository.
   resource types centralized for re-usability.
   The [API reference](../doc/#api-reference) documentation is also
   generated.
+  This repository is the master location for the traits and resource
+  types, while each module is the master for its own schemas, examples,
+  and actual RAML files.
 
 ## Client-side
 
