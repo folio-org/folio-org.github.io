@@ -73,3 +73,5 @@ Guidelines and best practice documents:
 - A [FOLIO glossary](glossary) of some terms and technologies used in FOLIO.
 
 - [Best practices for Dockerfiles](best-practices-dockerfiles).
+
+- The FOLIO [build, test, and deployment infrastructure](automation).
