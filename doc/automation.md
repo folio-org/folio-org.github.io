@@ -1,16 +1,18 @@
-# FOLIO build, test, and deployment infrastructure
-
+---
+layout: page
+title: Build, test, and deployment infrastructure
+---
 
 ## Overview
 
-The following describes the implementation, processes, and automated workflow for
-FOLIO projects maintained in the GitHub repository at https://github.com/folio-org.
+This document describes the implementation, processes, and automated workflow for
+FOLIO projects maintained in the GitHub repository at https://github.com/folio-org
+
 The build, test, release, and deployment processes are, in large part, orchestrated and
 automated by Jenkins.  A Nexus repository is used to host FOLIO Maven artifacts and
 NPM packages, and Docker Hub is used as the Docker registry for Docker images.  AWS
 provides the infrastructure used to host Jenkins and Nexus as well permanent and
 on-demand resources for FOLIO integration testing and demos.
-
 
 ## Jenkins
 
@@ -45,7 +47,6 @@ the parent POM of the project:
     <localCheckout>true</localCheckout>
   </configuration>
 </plugin>
-
 ```
 
 These jobs are initiated manually and parameterized.  The two primary parameters
@@ -53,7 +54,6 @@ are the release version and the next development version.
 
 ```
 mvn release:clean release:prepare release:perform -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${developmentVersion}
-
 ```
 
 Together, Jenkins and Maven perform roughly the following steps to coordinate a release:
@@ -72,9 +72,7 @@ Together, Jenkins and Maven perform roughly the following steps to coordinate a 
   on GitHub.  If the any part of this process fails, no tags or commits are pushed
   to the origin repository.
 
-
 Other Jenkins automation jobs exist as well for test deployments to AWS EC2 instances.
-
 
 ## Nexus Repository Manager
 
@@ -97,7 +95,6 @@ specifying the following in the project's POM:
       <url>https://repository.folio.org/repository/maven-folio</url>
     </repository>
   </repositories>
-
 ```
 
 The URL will search both the snapshot and release repositories for the artifact
@@ -123,7 +120,6 @@ Maven 'deploy' phase should have the following specified in the project's top-le
       <layout>default</layout>
     </snapshotRepository>
   </distributionManagement>
-
 ```
 
 Node.js-based FOLIO projects can either deploy or retrieve FOLIO NPM
@@ -134,13 +130,11 @@ Typically, this can be set via the following NPM command:
 
 ```
 npm config set registry https://repository.folio.org/repository/npm-folio/
-
 ```
 
 Deployment to the FOLIO repositories requires the proper permission. Artifacts
 and packages should only be deployed to the FOLIO Maven and NPM repositories via a
 build job configured in Jenkins.
-
 
 ## Docker Hub
 
@@ -160,7 +154,6 @@ For example:
 
 ```
 docker pull folioci/mod-circulation:latest
-
 ```
 
 Images are currently tagged with the current version of the module as well as with
@@ -175,4 +168,3 @@ on Docker Hub.
 Docker Hub repository permissions are very similar to GitHub's repository permissions.
 It is possible to invite Docker Hub users to collaborate on repositories within
 the namespace on a per repository basis.
-
