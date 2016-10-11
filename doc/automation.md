@@ -6,7 +6,7 @@ title: Build, test, and deployment infrastructure
 ## Overview
 
 This document describes the implementation, processes, and automated workflow for
-FOLIO projects maintained in the GitHub repository at https://github.com/folio-org
+FOLIO projects maintained in the [folio-org GitHub](../source-code) repositories.
 
 The build, test, release, and deployment processes are, in large part, orchestrated and
 automated by Jenkins.  A Nexus repository is used to host FOLIO Maven artifacts and
@@ -53,7 +53,8 @@ These jobs are initiated manually and parameterized.  The two primary parameters
 are the release version and the next development version.
 
 ```
-mvn release:clean release:prepare release:perform -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${developmentVersion}
+mvn release:clean release:prepare release:perform \
+  -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${developmentVersion}
 ```
 
 Together, Jenkins and Maven perform roughly the following steps to coordinate a release:
