@@ -1,31 +1,31 @@
-# FOLIO Build, Test, and Deployment Infrastructure
+# FOLIO build, test, and deployment infrastructure
 
 
 ## Overview
 
-The following describes the implementation, processes, and and automated workflow for 
+The following describes the implementation, processes, and automated workflow for 
 FOLIO projects maintained in the GitHub repository at https://github.com/folio-org. 
 The build, test, release, and deployment processes are, in large part, orchestrated and 
 automated by Jenkins.  A Nexus repository is used to host FOLIO Maven artifacts and 
-NPM packages and Docker Hub is used as the Docker registry for Docker images.  AWS
-provides the infrastructure used to host Jenkins and Nexus as well permanant and 
+NPM packages, and Docker Hub is used as the Docker registry for Docker images.  AWS
+provides the infrastructure used to host Jenkins and Nexus as well permanent and 
 on-demand resources for FOLIO integration testing and demos. 
 
 
 ## Jenkins
 
 FOLIO projects are managed by the Jenkins host, https://jenkins-aws.indexdata.com 
-located at AWS.  Read access to Jenkin job configurations and build logs is available to
+located at AWS.  Read access to Jenkins job configurations and build logs is available to
 all core FOLIO developers.  Credentials are required. 
 
 A standard Jenkins build job configuration for a Github project consists roughly 
-of the following steps - a git clone of the GitHub project repository's master branch,
+of the following steps: a git clone of the GitHub project repository's master branch,
 a build step, post-build steps such as creating and publishing docker images, and 
 post-build notifications to GitHub and Slack (Index Data #bot-jenkins channel). 
 Failures and unstable build notifications are also sent via e-mail. 
 
-Each FOLIO software project may also have a separate Jenkin's job configured to 
-build GitHub pull requests.  The status of the pull request is posted back to GitHub
+Each FOLIO software project may also have a separate Jenkins job configured to 
+build GitHub pull requests.  The status of the pull request is posted back to GitHub,
 so utilizing pull requests to verify that your development branch builds properly before 
 merging with master is highly recommended. 
 
@@ -58,16 +58,16 @@ mvn release:clean release:prepare release:perform -DreleaseVersion=${releaseVers
 
 Together, Jenkins and Maven perform roughly the following steps to coordinate a release:
 
-* Local 'git checkout' of the master branch of project from GitHub. 
+* Local 'git checkout' of the master branch of the project from GitHub. 
 * Check that there are no SNAPSHOT dependencies. 
 * Run build and unit tests on current branch to ensure build is stable. 
 * Update parent and child POMs to $releaseVersion, tag the release, make local commits.
-* Update parent and child POMS to $developmentVersion and locally commit.
-* Local git checkout of release tag and perform release build and deploy Maven artifacts 
+* Update parent and child POMs to $developmentVersion and locally commit.
+* Local git checkout of release tag, and perform release build and deploy Maven artifacts 
   to Maven release repository (if specified).
 * Run any post-build steps such as building and publishing Docker images and running
   additional integration tests.
-* If all build and post-build steps complete successfully,  the last step is to have
+* If all build and post-build steps complete successfully, the last step is to have
   Jenkins push all commits and tags back to the master branch of the project repository
   on GitHub.  If the any part of this process fails, no tags or commits are pushed 
   to the origin repository.
@@ -83,7 +83,7 @@ NPM packages](https://repository.folio.org) for FOLIO projects.
 
 The hosted FOLIO Maven repositories consist of two distinct repos - a snapshot
 and release repository.  A 'mvn deploy' will automatically deploy artifacts to
-the proper respository depending on the the project version specified in the POM.
+the proper repository depending on the project version specified in the POM.
 Only Jenkins has deployment permissions to these repositories.  However, they are 
 available "read-only" to the FOLIO development community.  FOLIO Maven projects that 
 depend on Maven artifacts from other FOLIO projects can retrieve the artifacts by 
@@ -152,7 +152,7 @@ build step is successful.
 
 Presently, Docker images are published to the ['folioci' namespace on Docker Hub](https://hub.docker.com/r/folioci).  This namespace is primarily used by Jenkins for other continuous 
 integration jobs but is also open to the FOLIO development community for testing and 
-development purposes.  "Snapshot" versions of modules are pushlished after every 
+development purposes.  "Snapshot" versions of modules are published after every 
 successful Jenkins build.   To pull an image from the 'folioci' namespace, prefix the 
 module name with 'folioci'.  
 
@@ -165,7 +165,7 @@ docker pull folioci/mod-circulation:latest
 
 Images are currently tagged with the current version of the module as well as with 
 'latest' which designates the most recent version.  Alternative tagging methods may 
-include the Jenkin's build number, git commit ID, or git tag.  Similar to the Maven
+include the Jenkins build number, git commit ID, or git tag.  Similar to the Maven
 repositories, write access to the 'folioci' repositories is via Jenkins only. 
 
 A separate set of repositories on Docker Hub will be designated for "released" 
