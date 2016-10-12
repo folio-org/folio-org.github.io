@@ -114,7 +114,10 @@ When done, you probably want to delete the local branch from your own machine
 
     git branch -d okapi-xxx
 
-(TODO - Describe the automatic testing, when it is up and running)
+## Automation
+
+The FOLIO [build, test, and deployment infrastructure](http://dev.folio.org/doc/automation)
+is described separately.
 
 ## Releasing
 
