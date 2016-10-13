@@ -39,6 +39,10 @@ will be free of bugs; we are not superhuman.
 All real work should be done in feature branches. It is still OK to make a
 small trivial change directly in the master. Stuff like editing the README.
 
+People who do not have direct write permissions will need to "fork" the
+relevant repository. See the GitHub notes about
+[working with forks](https://help.github.com/articles/working-with-forks/).
+
 ### Feature branches
 
 Feature branches should be branched off from the master. The naming of those
@@ -50,7 +54,7 @@ like _okapi-xxx-contribution-guidelines_):
     git checkout -b okapi-xxx
 
 You can commit stuff as you go, but try not to push obviously broken stuff into
-GitHub, not even in your development branch - that will be visible for the
+GitHub, not even in your development branch -- that will be visible for the
 whole world, and we plan to set up automatic testing for each branch, so
 pushing a broken commit will cause some emails. But if you need to share the
 code, for example for collaborating, of course you need to push it. Naturally
@@ -70,7 +74,7 @@ will diverge further from master, and the final merge of your work
 back into master will be difficult to resolve.
 
 When you are all done, pull master in again, to make sure your branch merges
-cleanly and passes all tests. Commit the merge, and push to your branch
+cleanly and passes all tests. Commit the merge, and push to your branch:
 
     git push
 
@@ -79,11 +83,22 @@ into one, and editing the commit messages.
 
 ### Requesting a merge
 
-Go to the GitHub page, and it shows some recently pushed branches, yours should
-be there too. Next to it is a button "Compare and Pull Request". Click on that.
-It should show you that it is _able to merge_, so click on the "Create Pull
-Request" button under the comment box. Once the request is created, assign it
-to someone else.
+Go to the GitHub page, and it shows some recently pushed branches -- your one should
+be there too. Next to it is a button "New pull request". Click on that.
+
+If you are using a fork, then the process is a little different.
+Start from your fork and select "New pull request", then select your
+head fork and branch.
+
+It should show that it is _able to merge_, so click on the "Create pull
+request" button under the comment box.
+
+If your pull request is instead to seek feedback, then say in the
+description that it is not yet ready to merge. Describe the items for which
+you want assistance.
+
+After the pull request is created, assign it to someone else.
+Alternatively leave it for someone to pick up.
 
 ### Merging pull requests
 
@@ -235,7 +250,7 @@ Licensed under the Apache License, Version 2.0
 
 ## Tests
 
-We aim to write a lot of tests - each module should have at least some kind of
+We aim to write a lot of tests -- each module should have at least some kind of
 test associated with it. These can be traditional unit tests, black-box tests
 that talk through the WS API, and/or proper integration tests.
 
