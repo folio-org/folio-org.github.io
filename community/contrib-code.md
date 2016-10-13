@@ -249,6 +249,13 @@ nice and run a ```mvn install``` on your own machine before every
 
 ## RAML
 
-We keep the API specs in RAML files under `okapi-core/src/main/raml/`.
-Remember to update those if you ever change anything in the API.
+Remember to update these if you ever change anything in the API.
 And update the documentation too, of course.
+
+For Okapi, we keep the API specs in RAML files under `okapi-core/src/main/raml/`.
+
+For [server-side modules](http://dev.folio.org/source-code/#server-side),
+the [raml](https://github.com/folio-org/raml)
+repository is the master location for the traits and resource
+types, while each module is the master for its own schemas, examples,
+and actual RAML files.
