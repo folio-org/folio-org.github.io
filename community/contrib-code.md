@@ -8,6 +8,7 @@ title: Guidelines for Contributing Code
     * [Feature branches](#feature-branches)
     * [Requesting a merge](#requesting-a-merge)
     * [Merging pull requests](#merging-pull-requests)
+* [Automation](#automation)
 * [Releasing](#releasing)
 * [Version numbers](#version-numbers)
     * [API versions](#api-versions)
