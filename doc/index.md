@@ -63,6 +63,15 @@ access the functionality provided by these important core modules.
 - [Configurations API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/config.html)
 - [Item API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/items.html)
 
+The following API specifications are automatically generated from the relevant
+[mod-metadata module](https://github.com/folio-org/mod-metadata) RAML
+files, and specify how client modules may access the functionality 
+provided by this module.
+
+- [Catalogue API](http://foliodocs.s3-website-us-east-1.amazonaws.com/mod-metadata/catalogue.html)
+- [Knowledgebase API](http://foliodocs.s3-website-us-east-1.amazonaws.com/mod-metadata/knowledgebase.html)
+
+
 ## Guidelines
 
 Guidelines and best practice documents:
