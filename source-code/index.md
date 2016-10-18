@@ -76,6 +76,10 @@ facilitated by the code in the `raml-module-builder` repository.
   capable set of modules handling authentication by various methods,
   and generalized permissions-handling.
 
+- [mod-users](https://github.com/folio-org/mod-users)
+  -- Demo module to provide central user management.
+  Based on the raml-module-builder framework.
+
 - [mod-metadata](https://github.com/folio-org/mod-metadata)
   -- Initial work on a FOLIO metadata store and related
   knowledge-base/cataloging concepts.
