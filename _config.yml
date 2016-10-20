@@ -18,7 +18,7 @@ url: "http://dev.folio.org" # the base hostname & protocol for your site
 markdown: kramdown
 theme: minima
 
-exclude: [CONTRIBUTING.md, README.md, Makefile, md2toc, target, vendor]
+exclude: [Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, Makefile, md2toc, target, vendor]
 
 collections:
   posts:
