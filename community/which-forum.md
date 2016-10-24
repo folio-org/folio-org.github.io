@@ -84,7 +84,7 @@ We follow a variation of the Apache motto:
 [https://wiki.folio.org](https://wiki.folio.org)
 
 Position papers, meeting agendas and minutes,
-special-interest group (SIG) spaces, other guidelines.
+special-interest group ([SIG](https://wiki.folio.org/display/PC/Special+Interest+Groups)) spaces, other guidelines.
 
 ## Issue tracker
 
