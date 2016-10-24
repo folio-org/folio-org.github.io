@@ -130,7 +130,7 @@ special-interest group (SIG) spaces, other guidelines.
 ## Slack
 
 [https://folio-project.slack.com](https://folio-project.slack.com)
-(join [here](https://su17s9g5c5.execute-api.us-east-1.amazonaws.com/production) first).
+(join [here](https://slack-invitation.folio.org) first).
 
 - Real-time chat and messaging.
 

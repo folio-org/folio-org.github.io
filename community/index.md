@@ -10,7 +10,7 @@ The discussion area and mailing lists for the FOLIO project is via Discuss at:
 
 Real-time chat is via Slack at:
 [https://folio-project.slack.com](https://folio-project.slack.com)
-(join [here](https://su17s9g5c5.execute-api.us-east-1.amazonaws.com/production) first).
+(join [here](https://slack-invitation.folio.org) first).
 
 The issue/bug tracking system is at:
 [https://issues.folio.org](https://issues.folio.org)
