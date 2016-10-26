@@ -105,11 +105,15 @@ Stripes.
 Note that Stripes is still in the design phase, so although code
 exists and can be run, the APIs are likely to change.
 
+- [stripes-core](https://github.com/folio-org/stripes-core)
+  -- The UI framework.
+
+- [stripes-connect](https://github.com/folio-org/stripes-connect)
+  -- Manages the connection of UI components to back-end modules.
+
 - [stripes-experiments](https://github.com/folio-org/stripes-experiments)
   -- Testing ground for prototype modules that may form part of
-  Stripes. Most importantly, this contains `stripes-core`, which drives
-  the whole process; and `stripes-connect`, which manages the connection
-  of UI components to back-end modules.
+  Stripes.
 
 - [stripes-loader](https://github.com/folio-org/stripes-loader)
   -- Module loader for Webpack, to enable pluggable Redux applications.
