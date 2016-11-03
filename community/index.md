@@ -66,12 +66,11 @@ the community.
 
 - okapi: Adam Dickmeiss (lead), Heikki Levanto, Jakub Skoczen, John
   Malconian, David Crossley
-- mod-auth: Kurt Nordstrom (lead)
+- mod-auth, mod-users: Kurt Nordstrom (lead)
 - mod-metadata: Marc Johnson (lead), Ian Ibbotson, Jakub Skoczen
 - mod-acquisitions, mod-circulation, mod-configuration: shale
 - raml-module-builder, raml: shale, Adam Dickmeiss
-- stripes-experiments: Niels Erik Nielsen, Jason Skomorowski, Mike
-  Taylor
+- stripes: Niels Erik Nielsen, Jason Skomorowski, Mike Taylor
 - stripes-loader: Jason Skomorowski (lead)
 - okapi-stripes: Wolfram Schneider (lead)
 - container-perf-tests: Adam Dickmeiss (lead), Jakub Skoczen
