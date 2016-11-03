@@ -57,6 +57,8 @@ These API specifications are automatically generated from the relevant
 [RAML](https://github.com/folio-org/raml)
 files, and specify how client modules may
 access the functionality provided by these important core modules.
+(**Note:** The automated generation of these pages is being revised
+[DMOD-88](https://issues.folio.org/browse/DMOD-88)).
 
 - [Patrons API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/patrons.html)
 - [Bib API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/bibs.html)
