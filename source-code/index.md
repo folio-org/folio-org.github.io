@@ -111,9 +111,8 @@ exists and can be run, the APIs are likely to change.
 - [stripes-connect](https://github.com/folio-org/stripes-connect)
   -- Manages the connection of UI components to back-end modules.
 
-- [stripes-experiments](https://github.com/folio-org/stripes-experiments)
-  -- Testing ground for prototype modules that may form part of
-  Stripes.
+- [stripes-components](https://github.com/folio-org/stripes-components)
+  -- A component library for Stripes.
 
 - [stripes-loader](https://github.com/folio-org/stripes-loader)
   -- Module loader for Webpack, to enable pluggable Redux applications.
@@ -122,6 +121,10 @@ exists and can be run, the APIs are likely to change.
 
 - [okapi-stripes](https://github.com/folio-org/okapi-stripes)
   -- Server-side module for generating UIs based on Stripes.
+
+- [stripes-experiments](https://github.com/folio-org/stripes-experiments)
+  -- Testing ground for prototype modules that may form part of
+  Stripes.
 
 ## Other projects
 
