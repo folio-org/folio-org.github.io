@@ -133,3 +133,6 @@ exists and can be run, the APIs are likely to change.
   use with Okapi (e.g. `hello-vertx` and `simple-vertx` and `simple-perl`)
   and how to make a client-side module (`patrons`).
 
+- [folio-ansible](https://github.com/folio-org/folio-ansible)
+  -- Sample Ansible playbook and roles for FOLIO (and Vagrant).
+  Get a FOLIO installation up and running quickly.
