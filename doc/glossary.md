@@ -19,7 +19,7 @@ the [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/d
 The FOLIO UI toolkit. The Stripes toolkit provides a means of building
 web applications that expose the functionality of underlying Okapi
 modules. For more information, see the
-[Stripes GitHub repository](https://github.com/folio-org/stripes-experiments).
+[Stripes Core GitHub repository](https://github.com/folio-org/stripes-core).
 
 ## FOLIO Technologies and Concepts
 
@@ -56,13 +56,17 @@ Don't repeat yourself
 ### ECMAScript
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript)
+is the formally standardised version JavaScript.
+The Stripes Toolkit is written in
+[ES6](http://es6-features.org/),
+a modern variant that introduces several new facilities.
 
 ### JSON
 
 JavaScript Object Notation
 ([JSON](https://en.wikipedia.org/wiki/JSON))
 is an open-standard format that uses human-readable text to transmit
-data objects consisting of attribute–value pairs.
+data objects consisting of lists, collections and attribute–value pairs.
 
 ### JWT
 
@@ -119,7 +123,7 @@ community to help with the development of FOLIO.
 
 ### PostgreSQL
 
-[PostgreSQL](https://www.postgresql.org/) (often called "postgres") is
+[PostgreSQL](https://www.postgresql.org/) (often called "Postgres") is
 an open source enterprise-level relational database.
 
 ### PoC
