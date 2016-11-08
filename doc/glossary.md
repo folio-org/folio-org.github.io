@@ -6,6 +6,11 @@ title: FOLIO Glossary
 FOLIO is a new open source, cloud hostable, app-store based library platform,
 designed to facilitate collaboration between disparate development teams.
 
+This glossary defines some terms to assist developers.
+Some other relevant documents are:
+[Acronyms](https://wiki.folio.org/display/PC/Acronyms),
+[Glossary](https://wiki.folio.org/display/PC/Glossary+of+Terms).
+
 ## FOLIO Components
 
 ### Okapi
