@@ -41,10 +41,9 @@ of interest.
 ## User Interface
 
 The FOLIO user-interface toolkit is called Stripes. It is described in
-[Stripes: a modular toolkit for user
-interfaces](https://github.com/folio-org/stripes-experiments/blob/master/stripes-core/doc/overview.md).
-Instructions for running a Stripes-based UI can be found in
-[the Stripes Core README file](https://github.com/folio-org/stripes-experiments/blob/master/stripes-core/README.md).
+the [Stripes overview](https://github.com/folio-org/stripes-core/blob/master/doc/overview.md).
+Instructions for running a Stripes-based UI can be found in the
+[Stripes Core README](https://github.com/folio-org/stripes-core/blob/master/README.md).
 
 Related to this,
 [okapi-stripes](https://github.com/folio-org/okapi-stripes/blob/master/README.md)
