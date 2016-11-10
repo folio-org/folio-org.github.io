@@ -130,8 +130,7 @@ exists and can be run, the APIs are likely to change.
 
 - [folio-sample-modules](https://github.com/folio-org/folio-sample-modules)
   -- Various sample modules, illustrating ways to structure a module for
-  use with Okapi (e.g. `hello-vertx` and `simple-vertx` and `simple-perl`)
-  and how to make a client-side module (`patrons`).
+  use with Okapi (e.g. `hello-vertx` and `simple-vertx` and `simple-perl`).
 
 - [folio-ansible](https://github.com/folio-org/folio-ansible)
   -- Sample Ansible playbook and roles for FOLIO (and Vagrant).
