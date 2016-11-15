@@ -122,6 +122,9 @@ exists and can be run, the APIs are likely to change.
 - [okapi-stripes](https://github.com/folio-org/okapi-stripes)
   -- Server-side module for generating UIs based on Stripes.
 
+- [ui-okapi-console](https://github.com/folio-org/ui-okapi-console)
+  -- Stripes UI module: console for administrating Okapi.
+
 - [stripes-experiments](https://github.com/folio-org/stripes-experiments)
   -- Testing ground for prototype modules that may form part of
   Stripes.
