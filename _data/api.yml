@@ -1,0 +1,27 @@
+- name: okapi
+  directory: okapi-core/src/main/raml
+  files: [okapi]
+
+- name: mod-acquisitions
+  directory: ramls/acquisitions
+  files: [acquisitions]
+
+- name: mod-acquisitions-postgres
+  directory: ramls/acquisitions
+  files: [acquisitions]
+
+- name: mod-circulation
+  directory: ramls/circulation
+  files: [bib, items, patrons]
+
+- name: mod-configuration
+  directory: ramls/configuration
+  files: [config]
+
+- name: mod-metadata
+  directory: doc/api
+  files: [catalogue, knowledgebase]
+
+- name: mod-users
+  directory: ramls
+  files: [users]
