@@ -5,6 +5,11 @@ title: Guidelines for FOLIO issue tracker
 
 [https://issues.folio.org](https://issues.folio.org)
 
+## Sign up for an account
+
+To create issues or add comments, sign up for an account via the front page.
+(This is also used to manage accounts for wiki.folio.org)
+
 ## Preparing to add an issue
 
 Review the "[which forum](which-forum#issue-tracker)" guidelines

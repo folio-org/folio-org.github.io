@@ -79,12 +79,18 @@ We follow a variation of the Apache motto:
 
 - When seeking input from the broadest reach of FOLIO participants.
 
+- To post or comment, sign up for an account via the front page.
+
 ## Wiki
 
 [https://wiki.folio.org](https://wiki.folio.org)
 
-Position papers, meeting agendas and minutes,
-special-interest group ([SIG](https://wiki.folio.org/display/PC/Special+Interest+Groups)) spaces, other guidelines.
+- Position papers, meeting agendas and minutes, special-interest group
+  ([SIG](https://wiki.folio.org/display/PC/Special+Interest+Groups)) spaces,
+  other guidelines.
+
+- To post or comment, sign up for an account via the front page
+  (uses the same account as issues.folio.org).
 
 ## Issue tracker
 
@@ -104,6 +110,8 @@ special-interest group ([SIG](https://wiki.folio.org/display/PC/Special+Interest
 - Follow up in other fora for any lengthy discussion.
   Then summarise into further issue tracker comments.
   Provide links in both directions.
+
+- To create issues or comment, sign up for an account via the front page.
 
 ## GitHub
 
