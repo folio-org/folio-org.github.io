@@ -50,6 +50,10 @@ Related to this,
 describes a special Okapi module used to generate Stripes-based UIs
 for individual FOLIO tenants.
 
+There is an early demonstration of
+[Running a complete FOLIO system](https://github.com/folio-org/ui-okapi-console/blob/master/doc/running-a-complete-system.md),
+using the Okapi Console front-end to deploy modules and see a list of users.
+
 ## API reference
 
 These API specifications are automatically generated from the relevant
