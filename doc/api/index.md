@@ -5,7 +5,7 @@ title: API documentation
 
 This API documentation is generated from RAML files in each repository:
 
-{% assign url_aws = "http://foliodocs.s3-website-us-east-1.amazonaws.com" %}
+{% assign url_aws = "http://foliodocs.s3-website-us-east-1.amazonaws.com/api" %}
 
 <ul>
   {% for repo in site.data.api %}
