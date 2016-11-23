@@ -9,11 +9,11 @@ This API documentation is generated from RAML files in each repository:
 
 <ul>
   {% for repo in site.data.api %}
-    <li id="{{ repo.name }}"> {{ repo.name }}:
+    <li id="{{ repo[0] }}"> {{ repo[0] }}:
       <ul>
-        {% for doc in repo.files %}
+        {% for doc in repo[1].files %}
           <li>
-            <a href="{{ url_aws }}/{{ repo.name }}/{{ doc }}.html">
+            <a href="{{ url_aws }}/{{ repo[0] }}/{{ doc }}.html">
               {{ doc }}
             </a>
           </li>
