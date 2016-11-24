@@ -64,9 +64,9 @@ The priority level indicates the importance to the dev team.
 An Issue Priority is set by the project managers.
 
 - **P1**: highest priority item, drop everything else before this is resolved, reserved for critical bugfixes
-- **P2**: normal priority level, must be included in the current development cycle
-- **P3**: low priority level, item will be considered for inclusion in the next dev cycle
-- **P4**: lowest priority level, nice-to-have things that require future discussion and design
+- **P2**: high priority level, must be included in the current development cycle
+- **P3**: normal priority level, item will be considered for inclusion in the next dev cycle
+- **P4**: low priority level, nice-to-have things that require future discussion and design
 
 Note that the priority might not match the severity felt by the issue reporter.
 That is better represented by other means (such as the number of watchers or votes)
