@@ -90,7 +90,7 @@ We use the following workflow:
 
 - **Open**: Ready for the assignee to commence work on it.
 - **In Progress**: Being actively worked on at the moment by the assignee.
-- **Reopened**: The resolution was incorrect.
+- **Reopened**: The resolution was incorrect, or subsequent developments have caused the issue to resurface.
 - **Closed**: Finished.
 
 The Status does not preclude other people from assisting.
