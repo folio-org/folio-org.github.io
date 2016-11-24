@@ -66,7 +66,8 @@ what to do, namely:
 
     git push --set-upstream origin okapi-xxx
 
-Once you have done that, a simple `git push` will be sufficient.
+Once you have done that once, a simple `git push` will be sufficient
+thereafter.
 
 While developing your own branch, pull in the master every now and then, and
 resolve any conflicts that may be there. If you don't, your branch
