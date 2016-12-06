@@ -79,12 +79,15 @@ provided by this module.
 
 ## Guidelines
 
-Guidelines and best practice documents:
+Guidelines, tips, and best practice documents:
 
 - Other community [guidelines](../community/#guidelines):
   Contribution; which communication forum; issue tracker; etc.
 
 - A [FOLIO glossary](glossary) of some terms and technologies used in FOLIO.
+
+- Some tips to assist developers to configure their
+  [local workstation setup](setup).
 
 - [Best practices for Dockerfiles](best-practices-dockerfiles).
 
