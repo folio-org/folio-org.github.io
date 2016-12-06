@@ -7,6 +7,7 @@ Collection of tips to assist developers to configure their local workstation set
 
 Assume already doing other development, so know how to keep the operating system up-to-date, know its quirks, know how to use the various package managers. So this document will not go into detail about that.
 
+<!-- ../../okapi/doc/md2toc -l 2 -h 3 setup.md -->
 * [Use EditorConfig for consistent whitespace](#use-editorconfig-for-consistent-whitespace)
 * [Update git submodules](#update-git-submodules)
 

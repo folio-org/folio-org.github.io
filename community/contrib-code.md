@@ -3,6 +3,7 @@ layout: page
 title: Guidelines for Contributing Code
 ---
 
+<!-- ../../okapi/doc/md2toc -l 2 -h 3 contrib-code.md -->
 * [Issue tracker](#issue-tracker)
 * [Git and branches](#git-and-branches)
     * [Feature branches](#feature-branches)

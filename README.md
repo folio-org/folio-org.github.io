@@ -36,9 +36,8 @@ To find them, do: `bundle show minima`
 
 ## Regenerate ToC
 
-To regenerate the Table of Contents for some files, do `make all` at this top-level.
-Then replace the ToC with its relevant output,
-e.g. `target/contrib-code-toc.md` into `community/contrib-code.md`
+To regenerate the Table of Contents for some files, see instructions above its ToC.
+Then replace the ToC with the generated output.
 
 ## Deployment
 
