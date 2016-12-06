@@ -7,6 +7,9 @@ Collection of tips to assist developers to configure their local workstation set
 
 Assume already doing other development, so know how to keep the operating system up-to-date, know its quirks, know how to use the various package managers. So this document will not go into detail about that.
 
+* [Use EditorConfig for consistent whitespace](#use-editorconfig-for-consistent-whitespace)
+* [Update git submodules](#update-git-submodules)
+
 ## Use EditorConfig for consistent whitespace
 
 Many FOLIO repositories have a `.editorconfig` configuration file at their top level. This enables consistent whitespace handling.
