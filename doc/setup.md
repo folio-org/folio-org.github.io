@@ -26,7 +26,7 @@ For example, the Java text editor in Eclipse has its own configuration for `trim
 
 Some FOLIO repositories utilize "git submodules" for sections of common code.
 
-For example, each `mod-*` module and `ram-module-builder` include the "raml" repository as a git submodule as its `./raml-util` directory.
+For example, each `mod-*` module and `raml-module-builder` include the "raml" repository as a git submodule as its `./raml-util` directory.
 
 Note that when originally cloning a repository, use 'git clone --recursive ...'
 Some git clients do not. If you then have an empty "raml-util" directory, then do 'git submodule update --init'.
