@@ -155,8 +155,8 @@ master, as need be.
 
 ## Version numbers
 
-Since (almost) all component have hard seperation between interface and implementation, 
-we need to keep two kind of version numbers, one for the API, and one for the implementation code. 
+Since (almost) all component have hard seperation between interface and implementation,
+we need to keep two kind of version numbers, one for the API, and one for the implementation code.
 To make matters worse, any FOLIO module may implement several interfaces.
 
 ### API/interface versions
@@ -165,7 +165,7 @@ The API versions are two-part _major.minor_ numbers, such as `3.14`
 
 The rules are simple:
 
-- If you only add things to the interface -- e.g a new resource or method on existing resource -- 
+- If you only add things to the interface -- e.g a new resource or method on existing resource --
   you increment the minor number, because the API is backwards compatible.
 - If you remove or change anything, you must increment the major number,
   because now your API is no longer backwards compatible.
@@ -177,13 +177,13 @@ bump the API version to `4.1`
 
 ### Implementation versions
 
-We follow the rules commonly known as _semantic versioning_ http://server.org/ to version both FOLIO 
-_modules_ (aka _apps_) and any other FOLIO software components (e.g utility libraries of frameworks), 
+We follow the rules commonly known as _semantic versioning_ http://server.org/ to version both FOLIO
+_modules_ (aka _apps_) and any other FOLIO software components (e.g utility libraries of frameworks),
 so-called _non-modules_.
 
 The implementation versions are three-part part numbers: _mmajor.minor.bugfix_, such as `2.7.18`.
 
-FOLIO _modules_ may implement more than one interface so they are versioned independently from any 
+FOLIO _modules_ may implement more than one interface so they are versioned independently from any
 particular interface, they need to however follow the same rules:
 
 - For _modules_, the major part should be incremented if you implemented a backwards incompatible
@@ -191,9 +191,9 @@ particular interface, they need to however follow the same rules:
   For non-modules this may also mean any major changes with respect to functionality or implementation that don't
   nessecarilly result in interface changes, e.g migration to a new DB backend.
 
-- For _modules_ the middle part should be incremented if you implemented an addition to the API(s), 
+- For _modules_ the middle part should be incremented if you implemented an addition to the API(s),
   (the minor version of the particular API has been changed).
-  For non-modules it may also mean any additional functionality. For both the change must be backwards compatible with 
+  For non-modules it may also mean any additional functionality. For both the change must be backwards compatible with
   respect to any client code or agents.
 
 - For _modules_ the bugfix part should be incremented if you haven't changed anything in
@@ -201,10 +201,10 @@ particular interface, they need to however follow the same rules:
 
 ### Module implements one interface
 
-In the simplest case, a module implements just one interface but since we want to be able to register any functional changes to the module by 
-increasing the module's minor version number, we will keep two independent versions for the API and implementation. E.g module with version 2.71.0 
-may implement the checkout API at 3.14. When the checkout API changes to 3.15, and the module implements the change 
-the module version becomes 2.72.0. In the case where only the implementation is corrected (bugfixes with no functionality changes) 
+In the simplest case, a module implements just one interface but since we want to be able to register any functional changes to the module by
+increasing the module's minor version number, we will keep two independent versions for the API and implementation. E.g module with version 2.71.0
+may implement the checkout API at 3.14. When the checkout API changes to 3.15, and the module implements the change
+the module version becomes 2.72.0. In the case where only the implementation is corrected (bugfixes with no functionality changes)
 and the module still implements the checkout API at 3.14, the module version gets bumped to 2.71.1.
 
 ### Module implements multiple interfaces
