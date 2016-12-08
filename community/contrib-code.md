@@ -155,8 +155,8 @@ master, as need be.
 
 ## Version numbers
 
-Since (almost) all component have hard seperation between interface and implementation,
-we need to keep two kind of version numbers, one for the API, and one for the implementation code.
+Since (almost) all components have hard separation between interface and implementation,
+we need to keep two kinds of version numbers, one for the API, and one for the implementation code.
 To make matters worse, any FOLIO module may implement several interfaces.
 
 ### API/interface versions
@@ -165,8 +165,8 @@ The API versions are two-part _major.minor_ numbers, such as `3.14`
 
 The rules are simple:
 
-- If you only add things to the interface -- e.g a new resource or method on existing resource --
-  you increment the minor number, because the API is backwards compatible.
+- If you only add things to the interface -- e.g. a new resource or method on existing resources --
+  then you increment the minor number, because the API is backwards compatible.
 - If you remove or change anything, you must increment the major number,
   because now your API is no longer backwards compatible.
 
@@ -178,10 +178,10 @@ bump the API version to `4.1`
 ### Implementation versions
 
 We follow the rules commonly known as _semantic versioning_ http://server.org/ to version both FOLIO
-_modules_ (aka _apps_) and any other FOLIO software components (e.g utility libraries of frameworks),
+_modules_ (aka _apps_) and any other FOLIO software components (e.g. utility libraries of frameworks),
 so-called _non-modules_.
 
-The implementation versions are three-part part numbers: _mmajor.minor.bugfix_, such as `2.7.18`.
+The implementation versions are three-part part numbers: _major.minor.bugfix_, such as `2.7.18`.
 
 FOLIO _modules_ may implement more than one interface so they are versioned independently from any
 particular interface, they need to however follow the same rules:
@@ -189,23 +189,23 @@ particular interface, they need to however follow the same rules:
 - For _modules_, the major part should be incremented if you implemented a backwards incompatible
   change to the API(s), (this will be indicated by the major number change in the particular API).
   For non-modules this may also mean any major changes with respect to functionality or implementation that don't
-  nessecarilly result in interface changes, e.g migration to a new DB backend.
+  necessarily result in interface changes, e.g. migration to a new DB backend.
 
 - For _modules_ the middle part should be incremented if you implemented an addition to the API(s),
   (the minor version of the particular API has been changed).
-  For non-modules it may also mean any additional functionality. For both the change must be backwards compatible with
+  For non-modules it may also mean any additional functionality. For both, the change must be backwards compatible with
   respect to any client code or agents.
 
 - For _modules_ the bugfix part should be incremented if you haven't changed anything in
-  the API or added any new functionality but only fixed implementation bugs, etc. Same applies for _non-modules_.
+  the API or added any new functionality but only fixed implementation bugs, etc. The same applies for _non-modules_.
 
 ### Module implements one interface
 
-In the simplest case, a module implements just one interface but since we want to be able to register any functional changes to the module by
-increasing the module's minor version number, we will keep two independent versions for the API and implementation. E.g module with version 2.71.0
-may implement the checkout API at 3.14. When the checkout API changes to 3.15, and the module implements the change
-the module version becomes 2.72.0. In the case where only the implementation is corrected (bugfixes with no functionality changes)
-and the module still implements the checkout API at 3.14, the module version gets bumped to 2.71.1.
+In the simplest case, a module implements just one interface, but since we want to be able to register any functional changes to the module by
+increasing the module's minor version number, we will keep two independent versions for the API and implementation. For example, a module with version `2.71.0`
+may implement the checkout API at `3.14`. When the checkout API changes to `3.15`, and the module implements the change,
+the module version becomes `2.72.0`. In the case where only the implementation is corrected (bugfixes with no functionality changes)
+and the module still implements the checkout API at `3.14`, then the module version gets bumped to `2.71.1`.
 
 ### Module implements multiple interfaces
 
@@ -219,8 +219,8 @@ checkout API version `3.14` and the checkin API version `1.41` then the
 rules are still the same:
 
 - If the change doesn't follow any change to any API and is merely a bugfix, increment the last part to `2.71.1`
-- If you add new features that e.g follow the extened APIs, increment the middle part to `2.72.0`
-- If you implement any backwards incompatible change to _any_ API, or drop _any_
+- If you add new features that e.g. follow the extended APIs, increment the middle part to `2.72.0`
+- If you implement any backwards-incompatible change to _any_ API, or drop _any_
   API at all, increment the module version to `3.0.0`
 
 The most common case is probably when we need to add a new, incompatible API
@@ -231,11 +231,11 @@ the module version to `2.72.0` but mark that it provides the API versions
 ### Trailing zero for module/non-module versions
 
 Changes to major and minor version follow from adding new features or larger
-code refactorings, usually planned in advance. The bugfix version number is reserved for
+code refactoring, usually planned in advance. The bugfix version number is reserved for
 tracking changes caused by malfunction that may be hard to predict.
 
-As such every new version for a particlar major.minor series. e.g 2.71, start with bugfix
-version at set as 0, effectively 2.71.0. This indicates that no bugs have been discovered (yet)
+As such, every new version for a particular major.minor series (e.g. `2.71`) start with bugfix
+version at set as 0, effectively `2.71.0`. This indicates that no bugs have been discovered (yet)
 and no hotfix releases provided.
 
 ## Coding style
