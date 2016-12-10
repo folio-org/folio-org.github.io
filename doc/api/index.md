@@ -3,9 +3,13 @@ layout: page
 title: API documentation
 ---
 
-This API documentation is generated from RAML files in each repository:
+These API specifications are automatically generated from the relevant
+[RAML](https://github.com/folio-org/raml)
+files, and specify how client modules may
+access the functionality provided by these important core modules.
 
-{% assign url_aws = "http://foliodocs.s3-website-us-east-1.amazonaws.com/api" %}
+{% assign url_aws = "https://s3.amazonaws.com/foliodocs/api" %}
+{% assign url_github= "https://github.com/folio-org" %}
 
 <ul>
   {% for repo in site.data.api %}
@@ -16,6 +20,7 @@ This API documentation is generated from RAML files in each repository:
             <a href="{{ url_aws }}/{{ repo[0] }}/{{ doc }}.html">
               {{ doc }}
             </a>
+            (<a href="{{ url_github }}/{{ repo[0] }}/blob/master/{{ repo[1].directory }}/{{ doc }}.raml">source</a>)
           </li>
         {% endfor %}
       </ul>

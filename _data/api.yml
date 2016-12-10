@@ -3,6 +3,11 @@ okapi:
   directory: okapi-core/src/main/raml
   files: [okapi]
 
+raml-module-builder:
+  name: raml-module-builder
+  directory: domain-models-runtime/src/main/resources/raml
+  files: [admin, jobs, sample]
+
 mod-acquisitions:
   name: mod-acquisitions
   directory: ramls/acquisitions
