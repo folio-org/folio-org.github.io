@@ -56,26 +56,7 @@ using the Okapi Console front-end to deploy modules and see a list of users.
 
 ## API reference
 
-These API specifications are automatically generated from the relevant
-[RAML](https://github.com/folio-org/raml)
-files, and specify how client modules may
-access the functionality provided by these important core modules.
-(**Note:** The automated generation of these pages is being revised
-[DMOD-88](https://issues.folio.org/browse/DMOD-88).)
-
-- [Patrons API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/patrons.html)
-- [Bib API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/bibs.html)
-- [Configurations API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/config.html)
-- [Item API](http://foliodocs.s3-website-us-east-1.amazonaws.com/raml/dist/items.html)
-
-The following API specifications are automatically generated from the relevant
-[mod-metadata module](https://github.com/folio-org/mod-metadata) RAML
-files, and specify how client modules may access the functionality
-provided by this module.
-
-- [Catalogue API](http://foliodocs.s3-website-us-east-1.amazonaws.com/mod-metadata/catalogue.html)
-- [Knowledgebase API](http://foliodocs.s3-website-us-east-1.amazonaws.com/mod-metadata/knowledgebase.html)
-
+- The set of automatically generated [API documentation](api).
 
 ## Guidelines
 

@@ -3,7 +3,10 @@ layout: page
 title: API documentation
 ---
 
-This API documentation is generated from RAML files in each repository:
+These API specifications are automatically generated from the relevant
+[RAML](https://github.com/folio-org/raml)
+files, and specify how client modules may
+access the functionality provided by these important core modules.
 
 {% assign url_aws = "https://s3.amazonaws.com/foliodocs/api" %}
 
