@@ -3,13 +3,14 @@ layout: page
 title: Setup development environment
 ---
 
-Collection of tips to assist developers to configure their local workstation setup environment for FOLIO development.
+A collection of tips to assist developers to configure their local workstation setup environment for FOLIO development.
 
 Assume already doing other development, so know how to keep the operating system up-to-date, know its quirks, know how to use the various package managers. So this document will not go into detail about that.
 
 <!-- ../../okapi/doc/md2toc -l 2 -h 3 setup.md -->
 * [Use EditorConfig for consistent whitespace](#use-editorconfig-for-consistent-whitespace)
 * [Update git submodules](#update-git-submodules)
+* [Troubleshooting](#troubleshooting)
 
 ## Use EditorConfig for consistent whitespace
 
@@ -54,3 +55,7 @@ using this content:
 and make them executable: 'chmod +x post-checkout post-merge'
 
 Now subsequent updates will also update the submodules to their declared revision.
+
+## Troubleshooting
+
+See [notes](troubleshooting).
