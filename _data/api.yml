@@ -1,39 +1,55 @@
+# List of locations of RAML files.
+#
+# Used by docs/api/index.md and folio-infrastructure/generate-api-docs
+---
 okapi:
-  name: okapi
-  directory: okapi-core/src/main/raml
-  files: [okapi]
+  - label: null
+    directory: okapi-core/src/main/raml
+    files: [okapi]
+    ramlutil: null
 
 raml-module-builder:
-  name: raml-module-builder
-  directory: domain-models-runtime/src/main/resources/raml
-  files: [admin, jobs, sample]
+  - label: domain-models-runtime
+    directory: domain-models-runtime/src/main/resources/raml
+    files: [admin, jobs, sample]
+    ramlutil: raml-util
 
 mod-acquisitions:
-  name: mod-acquisitions
-  directory: ramls/acquisitions
-  files: [acquisitions]
+  - label: null
+    directory: ramls/acquisitions
+    files: [acquisitions]
+    ramlutil: raml-util
 
 mod-acquisitions-postgres:
-  name: mod-acquisitions-postgres
-  directory: ramls/acquisitions
-  files: [acquisitions]
+  - label: null
+    directory: ramls/acquisitions
+    files: [acquisitions]
+    ramlutil: raml-util
 
 mod-circulation:
-  name: mod-circulation
-  directory: ramls/circulation
-  files: [bib, items, patrons]
+  - label: null
+    directory: ramls/circulation
+    files: [bib, items, patrons]
+    ramlutil: raml-util
 
 mod-configuration:
-  name: mod-configuration
-  directory: ramls/configuration
-  files: [config]
+  - label: null
+    directory: ramls/configuration
+    files: [config]
+    ramlutil: raml-util
 
 mod-metadata:
-  name: mod-metadata
-  directory: doc/api
-  files: [catalogue, knowledgebase]
+  - label: null
+    directory: doc/api
+    files: [catalogue, inventory, knowledgebase]
+    ramlutil: doc/api/shared
+  - label: inventory-storage
+    directory: inventory-storage/ramls
+    files: [instance_storage, item_storage]
+    ramlutil: inventory-storage/raml-util
 
 mod-users:
-  name: mod-users
-  directory: ramls
-  files: [users]
+  - label: null
+    directory: ramls
+    files: [users]
+    ramlutil: raml-util

@@ -15,13 +15,17 @@ access the functionality provided by these important core modules.
   {% for repo in site.data.api %}
     <li id="{{ repo[0] }}"> {{ repo[0] }}:
       <ul>
-        {% for doc in repo[1].files %}
-          <li>
-            <a href="{{ url_aws }}/{{ repo[0] }}/{{ doc }}.html">
-              {{ doc }}
-            </a>
-            (<a href="{{ url_github }}/{{ repo[0] }}/blob/master/{{ repo[1].directory }}/{{ doc }}.raml">source</a>)
-          </li>
+        {% for docset in repo[1] %}
+          {% for doc in docset.files %}
+            <li>
+              {% if docset.label %}{{ docset.label }}:{% endif %}
+              {% capture url_doc %}{{ url_aws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}{{ doc }}{% endcapture %}
+              <a href="{{ url_doc }}.html">
+                {{ doc }}
+              </a>
+              (<a href="{{ url_github }}/{{ repo[0] }}/blob/master/{{ docset.directory }}/{{ doc }}.raml">source</a>)
+            </li>
+          {% endfor %}
         {% endfor %}
       </ul>
     </li>
