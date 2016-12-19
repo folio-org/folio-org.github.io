@@ -68,5 +68,7 @@ Guidelines, tips, and best practice documents:
 - Some tips to assist developers to configure their
   [local workstation setup](setup).
 - Some tips to assist developers to conduct [troubleshooting](troubleshooting).
+- Use [folio-ansible](https://github.com/folio-org/folio-ansible/blob/master/README.md)
+  for a quick-start FOLIO installation as a virtual machine using Vagrant and Ansible.
 - [Best practices for Dockerfiles](best-practices-dockerfiles).
 - The FOLIO [build, test, and deployment infrastructure](automation).
