@@ -235,7 +235,7 @@ code refactoring, usually planned in advance. The bugfix version number is reser
 tracking changes caused by malfunction that may be hard to predict.
 
 As such, every new version for a particular major.minor series (e.g. `2.71`) start with bugfix
-version at set as 0, effectively `2.71.0`. This indicates that no bugs have been discovered (yet)
+version set as 0, effectively `2.71.0`. This indicates that no bugs have been discovered (yet)
 and no hotfix releases provided.
 
 ## Coding style
