@@ -11,7 +11,7 @@ okapi:
 raml-module-builder:
   - label: domain-models-runtime
     directory: domain-models-runtime/src/main/resources/raml
-    files: [admin, jobs, sample]
+    files: [admin, jobs, sample, tenant]
     ramlutil: raml-util
 
 mod-acquisitions:
