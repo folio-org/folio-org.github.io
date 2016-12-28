@@ -142,5 +142,8 @@ exists and can be run, the APIs are likely to change.
   -- Sample Ansible playbook and roles for FOLIO (and Vagrant).
   Get a FOLIO installation up and running quickly.
 
+- [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
+  -- CQL (Contextual Query Language) to PostgreSQL JSON converter in Java.
+
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.

@@ -69,7 +69,7 @@ Some starting points are:
   [Part 5](http://docs.oasis-open.org/search-ws/searchRetrieve/v1.0/os/part5-cql/searchRetrieve-v1.0-os-part5-cql.html).
 - [CQL-Java](http://www.indexdata.com/cql-java).
 - The CQL parser in [YAZ](http://www.indexdata.com/yaz/doc/tools.html#cql).
-- Ongoing FOLIO work at [DMOD-80](https://issues.folio.org/browse/DMOD-80).
+- FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/cql2pgjson-java) in Java.
 
 ### Docker
 
