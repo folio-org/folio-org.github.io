@@ -5,12 +5,37 @@ title: Setup development environment
 
 A collection of tips to assist developers to configure their local workstation setup environment for FOLIO development.
 
-Assume already doing other development, so know how to keep the operating system up-to-date, know its quirks, know how to use the various package managers. So this document will not go into detail about that.
-
 <!-- ../../okapi/doc/md2toc -l 2 -h 3 setup.md -->
+* [Introduction](#introduction)
+* [Tools](#tools)
 * [Use EditorConfig for consistent whitespace](#use-editorconfig-for-consistent-whitespace)
 * [Update git submodules](#update-git-submodules)
 * [Troubleshooting](#troubleshooting)
+
+## Introduction
+
+Assume already doing other development, so know how to keep the operating system up-to-date, know its quirks, know how to use the various package managers. So this document will not go into detail about that.
+
+FOLIO modules can be developed in any suitable programming language.
+
+The [FOLIO-Sample-Modules](https://github.com/folio-org/folio-sample-modules) explains about module development.
+The various [Stripes](/doc/#user-interface) documentation explains user-interface development.
+Those also have more notes about setting up and managing the local development environment.
+
+## Tools
+
+Developers will probably want to explore the whole FOLIO system, so would need a local instance of Okapi and
+[server-side](/source-code/#server-side) modules,
+and the [client-side](/source-code/#client-side) Stripes toolkit.
+
+Note that some parts of the development environment could be handled using
+[folio-ansible](https://github.com/folio-org/folio-ansible) (virtual machines using Vagrant and Ansible).
+
+Otherwise the development environment would need the following tools:
+
+* Apache Maven (3.3+) and Java (8+) -- For building and deploying Okapi and some server-side modules.
+* Node.js (6+) -- For Stripes.
+* Docker -- Recommended method for deployment.
 
 ## Use EditorConfig for consistent whitespace
 
@@ -27,7 +52,7 @@ For example, the Java text editor in Eclipse has its own configuration for `trim
 
 Some FOLIO repositories utilize "git submodules" for sections of common code.
 
-For example, each `mod-*` module and `raml-module-builder` include the "raml" repository as a git submodule as its `./raml-util` directory.
+For example, each `mod-*` module and `raml-module-builder` include the "raml" repository as a git submodule as its `raml-util` directory.
 
 Note that when originally cloning a repository, use 'git clone --recursive ...'
 Some git clients do not. If you then have an empty "raml-util" directory, then do 'git submodule update --init'.
