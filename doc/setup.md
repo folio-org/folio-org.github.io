@@ -8,7 +8,10 @@ A collection of tips to assist developers to configure their local workstation s
 <!-- ../../okapi/doc/md2toc -l 2 -h 3 setup.md -->
 * [Introduction](#introduction)
 * [Tools](#tools)
-* [Use EditorConfig for consistent whitespace](#use-editorconfig-for-consistent-whitespace)
+* [Configuration for repository usage](#configuration-for-repository-usage)
+* [Coding style](#coding-style)
+    * [Style guidelines and configuration](#style-guidelines-and-configuration)
+    * [Use EditorConfig for consistent whitespace](#use-editorconfig-for-consistent-whitespace)
 * [Update git submodules](#update-git-submodules)
 * [Troubleshooting](#troubleshooting)
 
@@ -19,25 +22,45 @@ Assume already doing other development, so know how to keep the operating system
 FOLIO modules can be developed in any suitable programming language.
 
 The [FOLIO-Sample-Modules](https://github.com/folio-org/folio-sample-modules) explains about module development.
-The various [Stripes](/doc/#user-interface) documentation explains user-interface development.
+The various [Stripes](/doc#user-interface) documentation explains user-interface development.
 Those also have more notes about setting up and managing the local development environment.
 
 ## Tools
 
 Developers will probably want to explore the whole FOLIO system, so would need a local instance of Okapi and
-[server-side](/source-code/#server-side) modules,
-and the [client-side](/source-code/#client-side) Stripes toolkit.
+[server-side](/source-code#server-side) modules,
+and the [client-side](/source-code#client-side) Stripes toolkit.
 
 Note that some parts of the development environment could be handled using
 [folio-ansible](https://github.com/folio-org/folio-ansible) (virtual machines using Vagrant and Ansible).
 
-Otherwise the development environment would need the following tools:
+Otherwise the development environment would need the following fundamental tools:
 
 * Apache Maven (3.3+) and Java (8+) -- For building and deploying Okapi and some server-side modules.
-* Node.js (6+) -- For Stripes.
+* Node.js (6+) -- For Stripes and for some modules.
 * Docker -- Recommended method for deployment.
 
-## Use EditorConfig for consistent whitespace
+As each FOLIO component can utilise whatever suite of appropriate tools, refer to its requirements and notes to assist with setup.
+
+## Configuration for repository usage
+
+FOLIO utilizes the Nexus OSS Repository Manager to host Maven artifacts and NPM packages for FOLIO projects.
+Docker images are the primary distribution model for FOLIO modules.
+
+An overview and usage configuration details are provided, see
+[Build, test, and deployment infrastructure](automation).
+
+## Coding style
+
+### Style guidelines and configuration
+
+Refer to the [coding style](/community/contrib-code#coding-style) section of the
+[Guidelines for Contributing Code](/community/contrib-code).
+
+Some modules have linter and code-style tools implemented as part of their build process.
+Some modules provide configuration files to assist code management tools.
+
+### Use EditorConfig for consistent whitespace
 
 Many FOLIO repositories have a `.editorconfig` configuration file at their top level. This enables consistent whitespace handling.
 
