@@ -31,11 +31,13 @@ and the [client-side](/source-code/#client-side) Stripes toolkit.
 Note that some parts of the development environment could be handled using
 [folio-ansible](https://github.com/folio-org/folio-ansible) (virtual machines using Vagrant and Ansible).
 
-Otherwise the development environment would need the following tools:
+Otherwise the development environment would need the following fundamental tools:
 
 * Apache Maven (3.3+) and Java (8+) -- For building and deploying Okapi and some server-side modules.
-* Node.js (6+) -- For Stripes.
+* Node.js (6+) -- For Stripes and for some modules.
 * Docker -- Recommended method for deployment.
+
+As each FOLIO component can utilise whatever suite of appropriate tools, refer to its requirements and notes to assist with setup.
 
 ## Use EditorConfig for consistent whitespace
 
