@@ -8,6 +8,7 @@ A collection of tips to assist developers to configure their local workstation s
 <!-- ../../okapi/doc/md2toc -l 2 -h 3 setup.md -->
 * [Introduction](#introduction)
 * [Tools](#tools)
+* [Configuration for repository usage](#configuration-for-repository-usage)
 * [Coding style](#coding-style)
     * [Style guidelines and configuration](#style-guidelines-and-configuration)
     * [Use EditorConfig for consistent whitespace](#use-editorconfig-for-consistent-whitespace)
@@ -40,6 +41,14 @@ Otherwise the development environment would need the following fundamental tools
 * Docker -- Recommended method for deployment.
 
 As each FOLIO component can utilise whatever suite of appropriate tools, refer to its requirements and notes to assist with setup.
+
+## Configuration for repository usage
+
+FOLIO utilizes the Nexus OSS Repository Manager to host Maven artifacts and NPM packages for FOLIO projects.
+Docker images are the primary distribution model for FOLIO modules.
+
+An overview and usage configuration details are provided, see
+[Build, test, and deployment infrastructure](automation).
 
 ## Coding style
 
