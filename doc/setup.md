@@ -8,7 +8,9 @@ A collection of tips to assist developers to configure their local workstation s
 <!-- ../../okapi/doc/md2toc -l 2 -h 3 setup.md -->
 * [Introduction](#introduction)
 * [Tools](#tools)
-* [Use EditorConfig for consistent whitespace](#use-editorconfig-for-consistent-whitespace)
+* [Coding style](#coding-style)
+    * [Style guidelines and configuration](#style-guidelines-and-configuration)
+    * [Use EditorConfig for consistent whitespace](#use-editorconfig-for-consistent-whitespace)
 * [Update git submodules](#update-git-submodules)
 * [Troubleshooting](#troubleshooting)
 
@@ -39,7 +41,17 @@ Otherwise the development environment would need the following fundamental tools
 
 As each FOLIO component can utilise whatever suite of appropriate tools, refer to its requirements and notes to assist with setup.
 
-## Use EditorConfig for consistent whitespace
+## Coding style
+
+### Style guidelines and configuration
+
+Refer to the [coding style](/community/contrib-code#coding-style) section of the
+[Guidelines for Contributing Code](/community/contrib-code).
+
+Some modules have linter and code-style tools implemented as part of their build process.
+Some modules provide configuration files to assist code management tools.
+
+### Use EditorConfig for consistent whitespace
 
 Many FOLIO repositories have a `.editorconfig` configuration file at their top level. This enables consistent whitespace handling.
 
