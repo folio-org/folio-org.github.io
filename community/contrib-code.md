@@ -252,10 +252,11 @@ There are a few exceptions:
 - We indent with two spaces only, because vert.x uses deeply nested callbacks.
 - We _don't_ use tab characters for indents, only spaces.
 
+For XML and JSON and RAML files, the same: two-space indent and no tabs.
+
 Remember to set your IDE and editors to remove trailing spaces on saving files,
 since those produce unnecessary diffs in Git.
-
-For XML and JSON and RAML files, the same: two-space indent and no tabs.
+Refer to coding style [configuration](/doc/setup#coding-style) assistance.
 
 For JavaScript code we are implementing an automated lint facility.
 
