@@ -21,14 +21,14 @@ Assume already doing other development, so know how to keep the operating system
 FOLIO modules can be developed in any suitable programming language.
 
 The [FOLIO-Sample-Modules](https://github.com/folio-org/folio-sample-modules) explains about module development.
-The various [Stripes](/doc/#user-interface) documentation explains user-interface development.
+The various [Stripes](/doc#user-interface) documentation explains user-interface development.
 Those also have more notes about setting up and managing the local development environment.
 
 ## Tools
 
 Developers will probably want to explore the whole FOLIO system, so would need a local instance of Okapi and
-[server-side](/source-code/#server-side) modules,
-and the [client-side](/source-code/#client-side) Stripes toolkit.
+[server-side](/source-code#server-side) modules,
+and the [client-side](/source-code#client-side) Stripes toolkit.
 
 Note that some parts of the development environment could be handled using
 [folio-ansible](https://github.com/folio-org/folio-ansible) (virtual machines using Vagrant and Ansible).
