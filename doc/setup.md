@@ -8,6 +8,7 @@ A collection of tips to assist developers to configure their local workstation s
 <!-- ../../okapi/doc/md2toc -l 2 -h 3 setup.md -->
 * [Introduction](#introduction)
 * [Tools](#tools)
+    * [Minimum versions](#minimum-versions)
 * [Configuration for repository usage](#configuration-for-repository-usage)
 * [Coding style](#coding-style)
     * [Style guidelines and configuration](#style-guidelines-and-configuration)
@@ -41,6 +42,12 @@ Otherwise the development environment would need the following fundamental tools
 * Docker -- Recommended method for deployment.
 
 As each FOLIO component can utilise whatever suite of appropriate tools, refer to its requirements and notes to assist with setup.
+
+### Minimum versions
+
+Occasionally it becomes necessary to specify minimum versions of some tools:
+
+* Java: [1.8.0-101](troubleshooting#missing-certificate-authority-for-lets-encrypt)
 
 ## Configuration for repository usage
 
