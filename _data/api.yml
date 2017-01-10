@@ -9,8 +9,8 @@ okapi:
     ramlutil: null
 
 raml-module-builder:
-  - label: domain-models-runtime
-    directory: domain-models-runtime/src/main/resources/raml
+  - label: domain-models-api-interfaces
+    directory: domain-models-api-interfaces/src/main/resources/raml
     files: [admin, jobs, sample, tenant]
     ramlutil: raml-util
 
