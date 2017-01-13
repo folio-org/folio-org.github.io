@@ -3,6 +3,10 @@ layout: page
 title: FOLIO Community
 ---
 
+## Roadmap
+
+The FOLIO wiki contains the [project roadmap](https://wiki.folio.org/display/PC/FOLIO+Roadmap).
+
 ## Collaboration tools
 
 The discussion area and mailing lists for the FOLIO project is via Discuss at:
