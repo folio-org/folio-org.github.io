@@ -71,3 +71,4 @@ Guidelines, tips, and best practice documents:
   for a quick-start FOLIO installation as a virtual machine using Vagrant and Ansible.
 - [Best practices for Dockerfiles](best-practices-dockerfiles).
 - The FOLIO [build, test, and deployment infrastructure](automation).
+- A proposal for [error response formats](https://github.com/folio-org/okapi/blob/master/doc/error-formats-in-folio.md).
