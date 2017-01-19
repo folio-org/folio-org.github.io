@@ -258,6 +258,8 @@ Remember to set your IDE and editors to remove trailing spaces on saving files,
 since those produce unnecessary diffs in Git.
 Refer to coding style [configuration](/doc/setup#coding-style) assistance.
 
+For JSON key names we use camelCase.
+
 For JavaScript code we are implementing an automated lint facility.
 
 ## License
