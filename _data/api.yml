@@ -8,10 +8,16 @@ okapi:
     files: [okapi]
     ramlutil: null
 
+raml:
+  - label: shared
+    directory: ramls
+    files: [tenant]
+    ramlutil: .
+
 raml-module-builder:
   - label: domain-models-api-interfaces
     directory: domain-models-api-interfaces/src/main/resources/raml
-    files: [admin, jobs, sample, tenant]
+    files: [admin, jobs, sample]
     ramlutil: raml-util
 
 mod-acquisitions:
