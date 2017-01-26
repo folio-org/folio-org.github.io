@@ -55,7 +55,7 @@ architecture in the FOLIO software:
 
 - Sebastian Hammer (project lead)
 - Nassib Nassar (project lead - technical)
-- Jakub Skoczen (technical lead)
+- Jakub Skoczen (technical project manager)
 - Adam Dickmeiss
 - Vince Bareau
 - Peter Murray (community)
