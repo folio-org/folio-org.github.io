@@ -51,7 +51,7 @@ mod-metadata:
     ramlutil: doc/api/shared
   - label: inventory-storage
     directory: inventory-storage/ramls
-    files: [instance_storage, item_storage]
+    files: [instance-storage, item-storage]
     ramlutil: inventory-storage/raml-util
 
 mod-users:
