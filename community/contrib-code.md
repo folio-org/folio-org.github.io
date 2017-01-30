@@ -177,7 +177,8 @@ bump the API version to `4.1`
 
 ### Implementation versions
 
-We follow the rules commonly known as _semantic versioning_ http://server.org/ to version both FOLIO
+We follow the rules commonly known as [_semantic versioning_](http://semver.org/)
+to version both FOLIO
 _modules_ (aka _apps_) and any other FOLIO software components (e.g. utility libraries of frameworks),
 so-called _non-modules_.
 
