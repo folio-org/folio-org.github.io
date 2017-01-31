@@ -1,8 +1,7 @@
 ---
 layout: page
+title: Welcome to FOLIO software development
 ---
-
-## Welcome to FOLIO software development
 
 This is the home for developers building [FOLIO, a new open source library
 system](https://www.folio.org/).
