@@ -125,6 +125,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-users](https://github.com/folio-org/ui-users)
   -- Stripes UI module: administrating users.
 
+- [ui-items](https://github.com/folio-org/ui-items)
+  -- Stripes UI module: administrating bibliographic items.
+
 - [ui-okapi-console](https://github.com/folio-org/ui-okapi-console)
   -- Stripes UI module: console for administrating Okapi.
 
