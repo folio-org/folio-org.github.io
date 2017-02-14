@@ -45,9 +45,9 @@ mod-configuration:
     ramlutil: raml-util
 
 mod-metadata:
-  - label: null
-    directory: doc/api
-    files: [catalogue, inventory, knowledgebase]
+  - label: inventory
+    directory: doc/api/inventory
+    files: [inventory]
     ramlutil: doc/api/shared
   - label: inventory-storage
     directory: inventory-storage/ramls
