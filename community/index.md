@@ -22,6 +22,11 @@ The issue/bug tracking system is at:
 Source code is on GitHub:
 [https://github.com/folio-org](https://github.com/folio-org)
 
+The Wiki has many documentation resources,
+and the Special Interest Group
+([SIG](https://wiki.folio.org/display/PC/Special+Interest+Groups)) spaces:
+[https://wiki.folio.org](https://wiki.folio.org)
+
 See [guidelines](which-forum) about using each.
 
 ## Community representatives
@@ -83,11 +88,12 @@ the community.
 
 ## Contributing
 
-There are many ways to contribute to FOLIO development:
+There are many ways to contribute to FOLIO development, for example:
 
 - Contributing directly to the software development.
 - Engaging with the issue tracker.
 - Joining the conversations.
+- Participating in Special Interest Groups.
 
 ## Guidelines
 
