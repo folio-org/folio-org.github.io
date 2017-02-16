@@ -77,13 +77,23 @@ the community.
   Malconian, David Crossley
 - mod-auth, mod-users: Kurt Nordstrom (lead)
 - mod-metadata: Marc Johnson (lead), Ian Ibbotson, Jakub Skoczen
-- mod-acquisitions, mod-circulation, mod-configuration: shale
-- raml-module-builder, raml: shale, Adam Dickmeiss
-- stripes: Niels Erik Nielsen, Jason Skomorowski, Mike Taylor
+- mod-acquisitions: shale, Julian Ladisch
+- mod-circulation, mod-configuration: shale
+- raml-module-builder: shale, Adam Dickmeiss, Julian Ladisch
+- raml: shale, Adam Dickmeiss
+- stripes-core: Niels Erik Nielsen, Jason Skomorowski, Mike Taylor, John Coburn
+- stripes-components: John Coburn (lead)
+- stripes-connect: Jason Skomorowski, Mike Taylor, Niels Erik Nielsen
 - stripes-loader: Jason Skomorowski (lead)
+- stripes-sample-platform: Jason Skomorowski (lead)
 - okapi-stripes: Wolfram Schneider (lead)
+- ui-users: Mike Taylor, Niels Erik Nielsen, Jason Skomorowski, John Coburn, Matt Connolly, Jeremy Huff
+- ui-items: Mike Taylor
+- ui-okapi-console: Mike Taylor, Niels Erik Nielsen
+- cql2pgjson-java: Julian Ladisch (lead)
 - container-perf-tests: Adam Dickmeiss (lead), Jakub Skoczen
 - folio-sample-modules: Heikki Levanto (lead), Niels Erik Nielsen
+- folio-ansible: Wayne Schneider (lead), John Malconian
 - folio-org.github.io: David Crossley (lead)
 
 ## Contributing
