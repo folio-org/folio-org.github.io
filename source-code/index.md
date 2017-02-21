@@ -145,7 +145,7 @@ exists and can be run, the APIs are likely to change.
   -- Sample Ansible playbook and roles for FOLIO (and Vagrant).
   Get a FOLIO installation up and running quickly.
   Read the docs there, and follow to build the boxes.
-  The current built boxes are also avaliable to download from
+  The current built boxes are also available to download from
   [HashiCorp Atlas](https://atlas.hashicorp.com/folio).
 
 - [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
