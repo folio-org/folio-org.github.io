@@ -6,7 +6,7 @@ okapi:
   - label: null
     directory: okapi-core/src/main/raml
     files: [okapi]
-    ramlutil: null
+    ramlutil: okapi-core/src/main/raml/raml-util
 
 raml:
   - label: shared
