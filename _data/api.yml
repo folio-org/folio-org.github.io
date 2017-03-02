@@ -67,5 +67,5 @@ mod-metadata:
 mod-users:
   - label: null
     directory: ramls
-    files: [users]
+    files: [groups, users]
     ramlutil: raml-util
