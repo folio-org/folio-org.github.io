@@ -35,6 +35,10 @@ and some sample module code.
 [Follow on](https://github.com/folio-org/folio-sample-modules/blob/master/README.md#further-reading)
 to the specific documentation for each of those modules.
 
+With that background understanding, see the documentation for each
+[server-side](../source-code/#server-side)
+module, especially RAML Module Builder (RMB).
+
 ## User Interface
 
 The FOLIO user-interface toolkit is called Stripes. It is described in the
