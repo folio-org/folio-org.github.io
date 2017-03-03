@@ -28,15 +28,16 @@ detail about the Okapi API Gateway that controls a FOLIO system.
 
 ## Modules
 
-[The FOLIO-Sample-Modules
+The [FOLIO-Sample-Modules
 guide](https://github.com/folio-org/folio-sample-modules/blob/master/README.md)
 contains an explanation of FOLIO modules, a "getting started" guide,
 and some sample module code.
+[Follow on](https://github.com/folio-org/folio-sample-modules/blob/master/README.md#further-reading)
+to the specific documentation for each of those modules.
 
-The
-[_Further reading_ section of that document](https://github.com/folio-org/folio-sample-modules/blob/master/README.md#further-reading)
-contains links to other in-progress modules whose documentation may be
-of interest.
+With that background understanding, see the documentation for each
+[server-side](../source-code/#server-side)
+module, especially RAML Module Builder (RMB).
 
 ## User Interface
 
@@ -44,14 +45,27 @@ The FOLIO user-interface toolkit is called Stripes. It is described in the
 [Stripes Core README](https://github.com/folio-org/stripes-core/blob/master/README.md),
 which leads to the related documentation.
 
-Related to this,
+With that background understanding, see the documentation for each
+[client-side](../source-code/#client-side)
+module, especially the "ui-users".
+
+The
 [okapi-stripes](https://github.com/folio-org/okapi-stripes/blob/master/README.md)
-describes a special Okapi module used to generate Stripes-based UIs
+is a special Okapi module used to generate Stripes-based UIs
 for individual FOLIO tenants.
 
-There is an early demonstration of
-[Running a complete FOLIO system](https://github.com/folio-org/ui-okapi-console/blob/master/doc/running-a-complete-system.md),
-using the Okapi Console front-end to deploy modules and see a list of users.
+## Running a complete system
+
+The document
+[Running a complete FOLIO system](https://github.com/folio-org/ui-okapi-console/blob/master/doc/running-a-complete-system.md)
+explains ways to enable a development system running the Okapi gateway,
+various server-side modules, sample data, and the Stripes UI development server.
+It goes on to explain another way to configure modules using the Okapi Console front-end.
+
+Use [folio-ansible](https://github.com/folio-org/folio-ansible/blob/master/README.md)
+for a quick-start FOLIO installation as a virtual machine using Vagrant and Ansible.
+This also provides various pre-built "black boxes" including the full
+"folio-demo" and "folio-backend".
 
 ## API reference
 
@@ -67,8 +81,6 @@ Guidelines, tips, and best practice documents:
 - Some tips to assist developers to configure their
   [local workstation setup](setup).
 - Some tips to assist developers to conduct [troubleshooting](troubleshooting).
-- Use [folio-ansible](https://github.com/folio-org/folio-ansible/blob/master/README.md)
-  for a quick-start FOLIO installation as a virtual machine using Vagrant and Ansible.
 - [Best practices for Dockerfiles](best-practices-dockerfiles).
 - The FOLIO [build, test, and deployment infrastructure](automation).
 - A proposal for [error response formats](https://github.com/folio-org/okapi/blob/master/doc/error-formats-in-folio.md).

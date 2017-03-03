@@ -49,8 +49,43 @@ facilitated by the code in the `raml-module-builder` repository.
 - [okapi](https://github.com/folio-org/okapi)
   -- Okapi API Gateway proxy/discovery/deployment service.
 
+- [raml](https://github.com/folio-org/raml)
+  -- Repository of RAML files, including JSON Schemas, traits and
+  resource types centralized for re-usability.
+  The [API reference](../doc/#api-reference) documentation is also
+  generated.
+  This repository is the master location for the traits and resource
+  types, while each module is the master for its own schemas, examples,
+  and actual RAML files.
+  It is included in other repositories via a git sub-module, usually called `raml-util`.
+
 - [raml-module-builder](https://github.com/folio-org/raml-module-builder)
   -- Framework facilitating easy module creation based on RAML files.
+
+- [mod-auth](https://github.com/folio-org/mod-auth)
+  -- Prototype of a [JWT](https://jwt.io/)-based
+  authentication/authorization module. Will be superseded by a more
+  capable set of modules handling authentication by various methods,
+  and generalized permissions-handling.
+
+- [mod-users](https://github.com/folio-org/mod-users)
+  -- Demo module to provide central user management.
+  Based on the raml-module-builder framework.
+
+- [mod-users-bl](https://github.com/folio-org/mod-users-bl)
+  -- Business logic "join" module to provide simple access to all
+  user-centric data.
+
+- [mod-metadata](https://github.com/folio-org/mod-metadata)
+  -- Initial work on a FOLIO metadata store and related
+  knowledge-base/cataloging concepts.
+
+- [mod-loan-storage](https://github.com/folio-org/mod-loan-storage)
+  -- Persistent storage of loans.
+
+- [mod-configuration](https://github.com/folio-org/mod-configuration)
+  -- Demo configuration module based on the raml-module-builder and a set
+  of RAML and JSON Schemas backed by a MongoDB asynchronous implementation.
 
 - [mod-circulation](https://github.com/folio-org/mod-circulation)
   -- Circulation demo based on the raml-module-builder and a set of RAML and
@@ -65,33 +100,6 @@ facilitated by the code in the `raml-module-builder` repository.
   -- A second demo acquisitions module, also based on the
   raml-module-builder framework and exposing acquisition APIs and
   objects, but implemented with an asynchronous Postgres client.
-
-- [mod-configuration](https://github.com/folio-org/mod-configuration)
-  -- Demo configuration module based on the raml-module-builder and a set
-  of RAML and JSON Schemas backed by a MongoDB asynchronous implementation.
-
-- [mod-auth](https://github.com/folio-org/mod-auth)
-  -- Prototype of a [JWT](https://jwt.io/)-based
-  authentication/authorization module. Will be superseded by a more
-  capable set of modules handling authentication by various methods,
-  and generalized permissions-handling.
-
-- [mod-users](https://github.com/folio-org/mod-users)
-  -- Demo module to provide central user management.
-  Based on the raml-module-builder framework.
-
-- [mod-metadata](https://github.com/folio-org/mod-metadata)
-  -- Initial work on a FOLIO metadata store and related
-  knowledge-base/cataloging concepts.
-
-- [raml](https://github.com/folio-org/raml)
-  -- Repository of RAML files, including JSON Schemas, traits and
-  resource types centralized for re-usability.
-  The [API reference](../doc/#api-reference) documentation is also
-  generated.
-  This repository is the master location for the traits and resource
-  types, while each module is the master for its own schemas, examples,
-  and actual RAML files.
 
 ## Client-side
 
@@ -119,6 +127,9 @@ exists and can be run, the APIs are likely to change.
   This module is responsible for pulling the required UI modules
   into a given Stripes UI.
 
+- [stripes-logger](https://github.com/folio-org/stripes-logger)
+  -- Simple category-based logging for Stripes.
+
 - [okapi-stripes](https://github.com/folio-org/okapi-stripes)
   -- Server-side module for generating UIs based on Stripes.
 
@@ -127,6 +138,10 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-items](https://github.com/folio-org/ui-items)
   -- Stripes UI module: administrating bibliographic items.
+
+- [ui-scan](https://github.com/folio-org/ui-scan)
+  -- Stripes UI module: items check-in and check-out with simulated
+  barcode scanning.
 
 - [ui-okapi-console](https://github.com/folio-org/ui-okapi-console)
   -- Stripes UI module: console for administrating Okapi.
