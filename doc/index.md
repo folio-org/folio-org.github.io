@@ -47,16 +47,20 @@ which leads to the related documentation.
 
 With that background understanding, see the documentation for each
 [client-side](../source-code/#client-side)
-module, especially "ui-users".
+module, especially the "ui-users".
 
 The
 [okapi-stripes](https://github.com/folio-org/okapi-stripes/blob/master/README.md)
 is a special Okapi module used to generate Stripes-based UIs
 for individual FOLIO tenants.
 
-There is an early demonstration of
-[Running a complete FOLIO system](https://github.com/folio-org/ui-okapi-console/blob/master/doc/running-a-complete-system.md),
-using the Okapi Console front-end to deploy modules and see a list of users.
+## Running a complete system
+
+The document
+[Running a complete FOLIO system](https://github.com/folio-org/ui-okapi-console/blob/master/doc/running-a-complete-system.md)
+explains ways to enable a development system running the Okapi gateway,
+various server-side modules, sample data, and the Stripes UI development server.
+It goes on to explain another way to configure modules using the Okapi Console front-end.
 
 ## API reference
 
