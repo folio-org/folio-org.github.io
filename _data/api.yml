@@ -69,3 +69,9 @@ mod-users:
     directory: ramls
     files: [groups, users]
     ramlutil: raml-util
+    
+mod-loan-storage:
+  - label: null
+    directory: ramls
+    files: [loan-storage]
+    ramlutil: raml-util
