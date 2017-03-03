@@ -71,9 +71,16 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Demo module to provide central user management.
   Based on the raml-module-builder framework.
 
+- [mod-users-bl](https://github.com/folio-org/mod-users-bl)
+  -- Business logic "join" module to provide simple access to all
+  user-centric data.
+
 - [mod-metadata](https://github.com/folio-org/mod-metadata)
   -- Initial work on a FOLIO metadata store and related
   knowledge-base/cataloging concepts.
+
+- [mod-loan-storage](https://github.com/folio-org/mod-loan-storage)
+  -- Persistent storage of loans.
 
 - [mod-configuration](https://github.com/folio-org/mod-configuration)
   -- Demo configuration module based on the raml-module-builder and a set
@@ -119,6 +126,9 @@ exists and can be run, the APIs are likely to change.
   This module is responsible for pulling the required UI modules
   into a given Stripes UI.
 
+- [stripes-logger](https://github.com/folio-org/stripes-logger)
+  -- Simple category-based logging for Stripes.
+
 - [okapi-stripes](https://github.com/folio-org/okapi-stripes)
   -- Server-side module for generating UIs based on Stripes.
 
@@ -127,6 +137,10 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-items](https://github.com/folio-org/ui-items)
   -- Stripes UI module: administrating bibliographic items.
+
+- [ui-scan](https://github.com/folio-org/ui-scan)
+  -- Stripes UI module: items check-in and check-out with simulated
+  barcode scanning.
 
 - [ui-okapi-console](https://github.com/folio-org/ui-okapi-console)
   -- Stripes UI module: console for administrating Okapi.
