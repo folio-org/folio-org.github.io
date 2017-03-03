@@ -6,10 +6,11 @@ title: General troubleshooting
 A collection of general tips to assist developers to conduct troubleshooting.
 Some FOLIO repositories also have specific notes.
 
-<!-- ../../okapi/doc/md2toc -l 2 -h 3 troubleshoot.md -->
+<!-- ../../okapi/doc/md2toc -l 2 -h 3 troubleshooting.md -->
 * [Keep system tools up-to-date](#keep-system-tools-up-to-date)
 * [Missing certificate authority for Let's Encrypt](#missing-certificate-authority-for-lets-encrypt)
 * [Update git submodules](#update-git-submodules)
+* [Other troubleshooting documents](#other-troubleshooting-documents)
 
 ## Keep system tools up-to-date
 
@@ -36,3 +37,7 @@ The fix is just to replace your JDK with a sufficiently recent replacement.
 Some FOLIO repositories utilize “git submodules” for sections of common code.
 Some git clients do not handle this properly.
 See [notes](setup#update-git-submodules).
+
+## Other troubleshooting documents
+
+* [Stripes troubleshooting](https://github.com/folio-org/stripes-core/blob/master/doc/troubleshooting.md)
