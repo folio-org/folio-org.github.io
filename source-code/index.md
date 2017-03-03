@@ -57,6 +57,7 @@ facilitated by the code in the `raml-module-builder` repository.
   This repository is the master location for the traits and resource
   types, while each module is the master for its own schemas, examples,
   and actual RAML files.
+  It is included in other repositories via a git sub-module, usually called `raml-util`.
 
 - [raml-module-builder](https://github.com/folio-org/raml-module-builder)
   -- Framework facilitating easy module creation based on RAML files.
