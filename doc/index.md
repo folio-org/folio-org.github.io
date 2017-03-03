@@ -62,6 +62,11 @@ explains ways to enable a development system running the Okapi gateway,
 various server-side modules, sample data, and the Stripes UI development server.
 It goes on to explain another way to configure modules using the Okapi Console front-end.
 
+Use [folio-ansible](https://github.com/folio-org/folio-ansible/blob/master/README.md)
+for a quick-start FOLIO installation as a virtual machine using Vagrant and Ansible.
+This also provides various pre-built "black boxes" including the full
+"folio-demo" and "folio-backend".
+
 ## API reference
 
 - The set of automatically generated [API documentation](api).
@@ -76,8 +81,6 @@ Guidelines, tips, and best practice documents:
 - Some tips to assist developers to configure their
   [local workstation setup](setup).
 - Some tips to assist developers to conduct [troubleshooting](troubleshooting).
-- Use [folio-ansible](https://github.com/folio-org/folio-ansible/blob/master/README.md)
-  for a quick-start FOLIO installation as a virtual machine using Vagrant and Ansible.
 - [Best practices for Dockerfiles](best-practices-dockerfiles).
 - The FOLIO [build, test, and deployment infrastructure](automation).
 - A proposal for [error response formats](https://github.com/folio-org/okapi/blob/master/doc/error-formats-in-folio.md).
