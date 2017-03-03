@@ -49,26 +49,17 @@ facilitated by the code in the `raml-module-builder` repository.
 - [okapi](https://github.com/folio-org/okapi)
   -- Okapi API Gateway proxy/discovery/deployment service.
 
+- [raml](https://github.com/folio-org/raml)
+  -- Repository of RAML files, including JSON Schemas, traits and
+  resource types centralized for re-usability.
+  The [API reference](../doc/#api-reference) documentation is also
+  generated.
+  This repository is the master location for the traits and resource
+  types, while each module is the master for its own schemas, examples,
+  and actual RAML files.
+
 - [raml-module-builder](https://github.com/folio-org/raml-module-builder)
   -- Framework facilitating easy module creation based on RAML files.
-
-- [mod-circulation](https://github.com/folio-org/mod-circulation)
-  -- Circulation demo based on the raml-module-builder and a set of RAML and
-  JSON Schemas. Represents some of the necessary circulation functionality
-  against MongoDB.
-
-- [mod-acquisitions](https://github.com/folio-org/mod-acquisitions)
-  -- Demo acquisitions module, based on the raml-module-builder framework,
-  exposing acquisition APIs and objects against MongoDB.
-
-- [mod-acquisitions-postgres](https://github.com/folio-org/mod-acquisitions-postgres)
-  -- A second demo acquisitions module, also based on the
-  raml-module-builder framework and exposing acquisition APIs and
-  objects, but implemented with an asynchronous Postgres client.
-
-- [mod-configuration](https://github.com/folio-org/mod-configuration)
-  -- Demo configuration module based on the raml-module-builder and a set
-  of RAML and JSON Schemas backed by a MongoDB asynchronous implementation.
 
 - [mod-auth](https://github.com/folio-org/mod-auth)
   -- Prototype of a [JWT](https://jwt.io/)-based
@@ -84,14 +75,23 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Initial work on a FOLIO metadata store and related
   knowledge-base/cataloging concepts.
 
-- [raml](https://github.com/folio-org/raml)
-  -- Repository of RAML files, including JSON Schemas, traits and
-  resource types centralized for re-usability.
-  The [API reference](../doc/#api-reference) documentation is also
-  generated.
-  This repository is the master location for the traits and resource
-  types, while each module is the master for its own schemas, examples,
-  and actual RAML files.
+- [mod-configuration](https://github.com/folio-org/mod-configuration)
+  -- Demo configuration module based on the raml-module-builder and a set
+  of RAML and JSON Schemas backed by a MongoDB asynchronous implementation.
+
+- [mod-circulation](https://github.com/folio-org/mod-circulation)
+  -- Circulation demo based on the raml-module-builder and a set of RAML and
+  JSON Schemas. Represents some of the necessary circulation functionality
+  against MongoDB.
+
+- [mod-acquisitions](https://github.com/folio-org/mod-acquisitions)
+  -- Demo acquisitions module, based on the raml-module-builder framework,
+  exposing acquisition APIs and objects against MongoDB.
+
+- [mod-acquisitions-postgres](https://github.com/folio-org/mod-acquisitions-postgres)
+  -- A second demo acquisitions module, also based on the
+  raml-module-builder framework and exposing acquisition APIs and
+  objects, but implemented with an asynchronous Postgres client.
 
 ## Client-side
 
