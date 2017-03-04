@@ -42,11 +42,11 @@ mod-auth:
     files: [permissions]
     ramlutil: null
 
-mod-circulation:
-  - label: null
-    directory: ramls/circulation
-    files: [bib, items, patrons]
-    ramlutil: raml-util
+#mod-circulation:
+#  - label: null
+#    directory: ramls/circulation
+#    files: [bib, items, patrons]
+#    ramlutil: raml-util
 
 mod-configuration:
   - label: null
