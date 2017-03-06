@@ -5,9 +5,10 @@ title: Documentation
 
 Documentation for the various components of FOLIO is in continuous
 development. Since the system is composed of many separate components,
-each component is documented individually. The best place to start is
-with the early chapters of the
-[Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md),
+each component is documented individually. The best places to start are
+the [FOLIO Developer's Curriculum](http://dev.folio.org/curriculum), which
+is a series of self-paced or instructor-guided lessons, and the early chapters
+of the[Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md),
 which describe the system as a whole and explain how the parts fit
 together.
 
@@ -18,6 +19,11 @@ In the context of those early chapters, you may then wish to go on to:
 The [community section](../community/) explains how to be involved,
 provides the contribution guidelines, lists the various collaboration tools
 and has some recommendations about when to use each.
+
+## Developer's curriculum
+The [FOLIO Developer's Curriculum](http://dev.folio.org/curriculum) is a series
+of four lessons that can be followed on your own or can form the basis of an
+instructor-led workshop.
 
 ## Core code
 
