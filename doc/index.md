@@ -8,7 +8,7 @@ development. Since the system is composed of many separate components,
 each component is documented individually. The best places to start are
 the [FOLIO Developer's Curriculum](http://dev.folio.org/curriculum), which
 is a series of self-paced or instructor-guided lessons, and the early chapters
-of the[Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md),
+of the [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md),
 which describe the system as a whole and explain how the parts fit
 together.
 
