@@ -11,7 +11,7 @@ okapi:
 raml:
   - label: shared
     directory: ramls
-    files: [tenant]
+    files: [tenant, tenantPermissions]
     ramlutil: .
 
 raml-module-builder:
