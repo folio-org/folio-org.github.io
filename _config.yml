@@ -13,6 +13,7 @@ description: >
   disparate development teams.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dev.folio.org" # the base hostname & protocol for your site
+google_analytics: UA-79833310-3
 
 # Build settings
 markdown: kramdown
