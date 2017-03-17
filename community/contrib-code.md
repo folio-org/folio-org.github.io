@@ -6,17 +6,18 @@ title: Guidelines for Contributing Code
 <!-- ../../okapi/doc/md2toc -l 2 -h 3 contrib-code.md -->
 * [Issue tracker](#issue-tracker)
 * [Git and branches](#git-and-branches)
+    * [Commit messages](#commit-messages)
     * [Feature branches](#feature-branches)
     * [Requesting a merge](#requesting-a-merge)
     * [Merging pull requests](#merging-pull-requests)
 * [Automation](#automation)
 * [Releasing](#releasing)
 * [Version numbers](#version-numbers)
-    * [API versions](#api-versions)
+    * [API/interface versions](#apiinterface-versions)
     * [Implementation versions](#implementation-versions)
-    * [The simple case](#the-simple-case)
-    * [Complex cases](#complex-cases)
-    * [Dot one, not zero](#dot-one-not-zero)
+    * [Module implements one interface](#module-implements-one-interface)
+    * [Module implements multiple interfaces](#module-implements-multiple-interfaces)
+    * [Trailing zero for module/non-module versions](#trailing-zero-for-modulenon-module-versions)
 * [Coding style](#coding-style)
 * [License](#license)
 * [Tests](#tests)
@@ -43,6 +44,21 @@ small trivial change directly in the master. Stuff like editing the README.
 People who do not have direct write permissions will need to "fork" the
 relevant repository. See the GitHub notes about
 [working with forks](https://help.github.com/articles/working-with-forks/).
+
+### Commit messages
+Try to follow the commit message guidelines in
+[https://chris.beams.io/posts/git-commit/](https://chris.beams.io/posts/git-commit/).
+The key points are:
+* Separate subject from body with a blank line
+* Limit the subject line to 50 characters
+* Capitalize the subject line
+* Do not end the subject line with a period
+* Use the imperative mood in the subject line
+* Wrap the body at 72 characters
+* Use the body to explain what and why vs. how
+
+The last point is the most critical. A diff will tell you what changed, but
+only the commit message can properly tell you why.
 
 ### Feature branches
 
