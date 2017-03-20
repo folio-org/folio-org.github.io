@@ -57,8 +57,8 @@ The key points are:
 * Wrap the body at 72 characters
 * Use the body to explain what and why vs. how
 
-The last point is the most critical. A diff will tell you what changed, but
-only the commit message can properly tell you why.
+The last point is the most critical:
+> A diff will tell you what changed, but only the commit message can properly tell you why.
 
 ### Feature branches
 
