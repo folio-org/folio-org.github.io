@@ -60,6 +60,10 @@ The key points are:
 The last point is the most critical:
 > A diff will tell you what changed, but only the commit message can properly tell you why.
 
+Also consider mentioning relevant Issue identifiers (e.g. OKAPI-258).
+This assists people to follow the reasons, and enables the issue tracker to
+automatically link to the related commits.
+
 ### Feature branches
 
 Feature branches should be branched off from the master. The naming of those
