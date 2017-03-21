@@ -116,6 +116,10 @@ exists and can be run, the APIs are likely to change.
 - [stripes-core](https://github.com/folio-org/stripes-core)
   -- The UI framework.
 
+- [stripes-sample-platform](https://github.com/folio-org/stripes-sample-platform)
+  -- Configuration for a sample platform and to run a local
+  Stripes UI development server.
+
 - [stripes-connect](https://github.com/folio-org/stripes-connect)
   -- Manages the connection of UI components to back-end modules.
 
