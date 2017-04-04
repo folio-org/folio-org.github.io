@@ -39,7 +39,7 @@ mod-auth:
     ramlutil: null
   - label: permissions_module
     directory: permissions_module/ramls
-    files: [permissions]
+    files: [permissions, permission_interface]
     ramlutil: null
 
 mod-circulation:
