@@ -147,6 +147,9 @@ exists and can be run, the APIs are likely to change.
   -- Stripes UI module: items check-in and check-out with simulated
   barcode scanning.
 
+- [ui-organization](https://github.com/folio-org/ui-organization)
+  -- Stripes UI module: managing organization settings.
+
 - [ui-okapi-console](https://github.com/folio-org/ui-okapi-console)
   -- Stripes UI module: console for administrating Okapi.
 
