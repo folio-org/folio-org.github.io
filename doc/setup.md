@@ -95,7 +95,7 @@ So when an update is needed to be committed, do this:
     git submodule foreach 'git checkout master && git pull origin master'
     git commit ...
 
-Now when people update their local checkout, then some git clients do not automatically update the submodules. So they need to follow with 'git submodule update'.
+Now when people update their local checkout, then some git clients do not automatically update the submodules. If that is the case, then follow with 'git submodule update'.
 
 This part can be automated with client-side git hooks. Create the following two shell scripts:
 
