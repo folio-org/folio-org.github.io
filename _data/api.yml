@@ -60,6 +60,13 @@ mod-circulation:
       - circulation
     ramlutil: raml-util
 
+mod-circulation-storage:
+  - label: null
+    directory: ramls
+    files:
+      - loan-storage
+    ramlutil: raml-util
+
 mod-configuration:
   - label: null
     directory: ramls/configuration
@@ -95,10 +102,3 @@ mod-users-bl:
     files:
       - mod-users-bl
     ramlutil: null
-
-mod-loan-storage:
-  - label: null
-    directory: ramls
-    files:
-      - loan-storage
-    ramlutil: raml-util
