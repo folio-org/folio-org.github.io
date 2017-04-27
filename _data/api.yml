@@ -74,6 +74,13 @@ mod-configuration:
       - config
     ramlutil: raml-util
 
+mod-login:
+  - label: null
+    directory: ramls
+    files:
+      - login
+    ramlutil: null
+
 mod-metadata:
   - label: inventory
     directory: doc/api/inventory
@@ -87,6 +94,14 @@ mod-metadata:
       - item-storage
       - material-type
     ramlutil: inventory-storage/raml-util
+
+mod-permissions:
+  - label: null
+    directory: ramls
+    files:
+      - permissions
+      - permission_interface
+    ramlutil: null
 
 mod-users:
   - label: null
