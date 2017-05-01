@@ -40,19 +40,6 @@ mod-acquisitions-postgres:
       - acquisitions
     ramlutil: raml-util
 
-mod-auth:
-  - label: login_module
-    directory: login_module/ramls
-    files:
-      - login
-    ramlutil: null
-  - label: permissions_module
-    directory: permissions_module/ramls
-    files:
-      - permissions
-      - permission_interface
-    ramlutil: null
-
 mod-circulation:
   - label: null
     directory: ramls
