@@ -71,7 +71,10 @@ It goes on to explain another way to configure modules using the Okapi Console f
 Use [folio-ansible](https://github.com/folio-org/folio-ansible/blob/master/README.md)
 for a quick-start FOLIO installation as a virtual machine using Vagrant and Ansible.
 This also provides various pre-built "black boxes" including the full
-"folio-demo" and "folio-backend".
+"folio-demo" and "folio-backend-auth".
+The current built boxes are also available to download from
+[HashiCorp Atlas](https://atlas.hashicorp.com/folio).
+The list of module versions for each box is shown in its change-log.
 
 ## API reference
 
