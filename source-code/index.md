@@ -76,6 +76,12 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Business logic "join" module to provide simple access to all
   user-centric data.
 
+- [mod-inventory](https://github.com/folio-org/mod-inventory)
+  -- Provides basic physical item inventory management.
+
+- [mod-inventory-storage](https://github.com/folio-org/mod-inventory-storage)
+  -- Persistent storage to complement the inventory module.
+
 - [mod-metadata](https://github.com/folio-org/mod-metadata)
   -- Initial work on a FOLIO metadata store and related
   knowledge-base/cataloging concepts.
