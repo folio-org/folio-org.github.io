@@ -62,11 +62,14 @@ facilitated by the code in the `raml-module-builder` repository.
 - [raml-module-builder](https://github.com/folio-org/raml-module-builder)
   -- Framework facilitating easy module creation based on RAML files.
 
-- [mod-auth](https://github.com/folio-org/mod-auth)
-  -- Prototype of a [JWT](https://jwt.io/)-based
-  authentication/authorization module. Will be superseded by a more
-  capable set of modules handling authentication by various methods,
-  and generalized permissions-handling.
+- [mod-authtoken](https://github.com/folio-org/mod-authtoken)
+  -- Filtering requests based on JWT tokens.
+
+- [mod-login](https://github.com/folio-org/mod-login)
+  -- Handles username/password login.
+
+- [mod-permissions](https://github.com/folio-org/mod-permissions)
+  -- Handles permissions and permissions/user associations.
 
 - [mod-users](https://github.com/folio-org/mod-users)
   -- Demo module to provide central user management.
