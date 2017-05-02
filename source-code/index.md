@@ -72,8 +72,7 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Handles permissions and permissions/user associations.
 
 - [mod-users](https://github.com/folio-org/mod-users)
-  -- Demo module to provide central user management.
-  Based on the raml-module-builder framework.
+  -- Provides user management.
 
 - [mod-users-bl](https://github.com/folio-org/mod-users-bl)
   -- Business logic "join" module to provide simple access to all
@@ -97,7 +96,7 @@ facilitated by the code in the `raml-module-builder` repository.
 
 - [mod-configuration](https://github.com/folio-org/mod-configuration)
   -- Demo configuration module based on the raml-module-builder and a set
-  of RAML and JSON Schemas backed by a MongoDB asynchronous implementation.
+  of RAML and JSON Schemas backed by a PostgreSQL asynchronous implementation.
 
 - [mod-acquisitions](https://github.com/folio-org/mod-acquisitions)
   -- Demo acquisitions module, based on the raml-module-builder framework,
