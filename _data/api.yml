@@ -61,6 +61,23 @@ mod-configuration:
       - config
     ramlutil: raml-util
 
+mod-inventory:
+  - label: null
+    directory: doc/api/inventory
+    files:
+      - inventory
+    ramlutil: doc/api/shared
+
+mod-inventory-storage:
+  - label: null
+    directory: ramls
+    files:
+      - instance-storage
+      - item-storage
+      - loan-type
+      - material-type
+    ramlutil: raml-util
+
 mod-login:
   - label: null
     directory: ramls
