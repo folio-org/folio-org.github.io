@@ -80,17 +80,15 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Initial work on a FOLIO metadata store and related
   knowledge-base/cataloging concepts.
 
-- [mod-loan-storage](https://github.com/folio-org/mod-loan-storage)
-  -- Persistent storage of loans.
+- [mod-circulation](https://github.com/folio-org/mod-circulation)
+  -- Circulation capabilities, including loan items from the inventory.
+
+- [mod-circulation-storage](https://github.com/folio-org/mod-circulation-storage)
+  -- Persistent storage to complement the circulation module.
 
 - [mod-configuration](https://github.com/folio-org/mod-configuration)
   -- Demo configuration module based on the raml-module-builder and a set
   of RAML and JSON Schemas backed by a MongoDB asynchronous implementation.
-
-- [mod-circulation](https://github.com/folio-org/mod-circulation)
-  -- Circulation demo based on the raml-module-builder and a set of RAML and
-  JSON Schemas. Represents some of the necessary circulation functionality
-  against MongoDB.
 
 - [mod-acquisitions](https://github.com/folio-org/mod-acquisitions)
   -- Demo acquisitions module, based on the raml-module-builder framework,
