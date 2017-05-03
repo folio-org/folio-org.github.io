@@ -42,3 +42,8 @@ Then replace the ToC with the generated output.
 ## Deployment
 
 The master branch is automatically deployed as [dev.folio.org](http://dev.folio.org/)
+
+## Additional information
+
+See project [FOLIO](https://issues.folio.org/browse/FOLIO)
+at the [FOLIO issue tracker](http://dev.folio.org/community/guide-issues).
