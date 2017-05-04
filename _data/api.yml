@@ -85,20 +85,6 @@ mod-login:
       - login
     ramlutil: null
 
-mod-metadata:
-  - label: inventory
-    directory: doc/api/inventory
-    files:
-      - inventory
-    ramlutil: doc/api/shared
-  - label: inventory-storage
-    directory: inventory-storage/ramls
-    files:
-      - instance-storage
-      - item-storage
-      - material-type
-    ramlutil: inventory-storage/raml-util
-
 mod-permissions:
   - label: null
     directory: ramls
