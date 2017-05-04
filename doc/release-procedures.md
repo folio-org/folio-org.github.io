@@ -74,8 +74,8 @@ Watch Jenkins be happy, and [deploy](https://jenkins-aws.indexdata.com/job/okapi
 
 ### Add release notes to GitHub
 
-Go to the "Releases" area, e.g.
-[Okapi](https://github.com/folio-org/okapi/releases)
+Go to the "Releases" area (e.g.
+[Okapi](https://github.com/folio-org/okapi/releases)).
 Select `Draft a new release` then choose the tag of the new release and add the NEWS portion
 -- *only* the part of NEWS since previous release.
 
