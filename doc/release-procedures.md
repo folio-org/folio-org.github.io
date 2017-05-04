@@ -49,7 +49,7 @@ Take extra care with spelling and readability.
 git commit -m "Update NEWS" NEWS.md
 ```
 
-### Prepare git
+### Prepare git and perform the release
 
 Behind-the-scenes, Jenkins and Maven are assisting.
 Review the [automation](automation) steps that will coordinate the release.
@@ -65,6 +65,10 @@ Now initiate the process:
 mvn -DautoVersionSubmodules=true release:clean release:prepare release:perform \
   -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${developmentVersion}
 ```
+
+There will be two commits:
+1. Set the POM versions to be 1.2.3 and the git tag is v1.2.3
+1. Introduce the SNAPSHOT again.
 
 Watch Jenkins be happy, and [deploy](https://jenkins-aws.indexdata.com/job/okapi-release/) the artifacts.
 
