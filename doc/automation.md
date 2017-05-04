@@ -70,7 +70,7 @@ Together, Jenkins and Maven perform roughly the following steps to coordinate a 
   additional integration tests.
 * If all build and post-build steps complete successfully, the last step is to have
   Jenkins push all commits and tags back to the master branch of the project repository
-  on GitHub.  If the any part of this process fails, no tags or commits are pushed
+  on GitHub.  If any part of this process fails, no tags or commits are pushed
   to the origin repository.
 
 Other Jenkins automation jobs exist as well for test deployments to AWS EC2 instances.
