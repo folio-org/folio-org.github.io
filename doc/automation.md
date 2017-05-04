@@ -35,7 +35,7 @@ Another common Jenkins job is dedicated to code releases.  For Maven-based proje
 Maven Release Plugin is required.  To enable the release plugin, add the following to
 the parent POM of the project:
 
-```
+```xml
 <plugin>
   <groupId>org.apache.maven.plugins</groupId>
   <artifactId>maven-release-plugin</artifactId>
@@ -88,7 +88,7 @@ available "read-only" to the FOLIO development community.  FOLIO Maven projects 
 depend on Maven artifacts from other FOLIO projects can retrieve the artifacts by
 specifying the following in the project's POM:
 
-```
+```xml
   <repositories>
     <repository>
       <id>folio-nexus</id>
@@ -104,7 +104,7 @@ specified.
 FOLIO projects which need to deploy artifacts to the FOLIO Maven repository during the
 Maven 'deploy' phase should have the following specified in the project's top-level POM:
 
-```
+```xml
   <distributionManagement>
     <repository>
       <id>folio-nexus</id>
