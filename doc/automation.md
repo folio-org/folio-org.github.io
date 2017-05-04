@@ -32,7 +32,8 @@ so utilizing pull requests to verify that your development branch builds properl
 merging with master is highly recommended.
 
 Another common Jenkins job is dedicated to code releases.  For Maven-based projects, the
-Maven Release Plugin is required.  To enable the release plugin, add the following to
+[Maven Release Plugin](//maven.apache.org/maven-release/maven-release-plugin)
+is required.  To enable the release plugin, add the following to
 the parent POM of the project:
 
 ```xml
