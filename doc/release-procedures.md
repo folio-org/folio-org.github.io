@@ -11,7 +11,7 @@ This document summarises the release procedures for FOLIO projects.
     * [Ensure POM declarations](#ensure-pom-declarations)
     * [Ensure that JIRA issues are ready](#ensure-that-jira-issues-are-ready)
     * [Prepare the news document](#prepare-the-news-document)
-    * [Prepare git](#prepare-git)
+    * [Prepare git and perform the release](#prepare-git-and-perform-the-release)
     * [Add release notes to GitHub](#add-release-notes-to-github)
     * [Prepare JIRA for next release](#prepare-jira-for-next-release)
     * [Announce](#announce)
