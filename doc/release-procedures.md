@@ -58,6 +58,8 @@ Consider for example that we are going to release v1.2.3
 so gather these parameters:
 * `releaseVersion=1.2.3` -- The version to be released.
 * `developmentVersion=1.2.4` -- The next SNAPSHOT version after release version.
+If you already know that breaking changes are going to be the next release, then
+make that `1.3.0`.
 
 Now initiate the process:
 
