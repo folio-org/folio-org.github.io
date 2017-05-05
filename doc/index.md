@@ -92,4 +92,5 @@ Guidelines, tips, and best practice documents:
 - Some tips to assist developers to conduct [troubleshooting](troubleshooting).
 - [Best practices for Dockerfiles](best-practices-dockerfiles).
 - The FOLIO [build, test, and deployment infrastructure](automation).
+- [Release procedures](release-procedures).
 - A proposal for [error response formats](https://github.com/folio-org/okapi/blob/master/doc/error-formats-in-folio.md).
