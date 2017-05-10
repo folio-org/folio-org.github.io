@@ -101,10 +101,10 @@ git commit -m "Update NEWS" NEWS.md
 mvn -DautoVersionSubmodules=true release:clean release:prepare
 ```
 This command will prompt you for input including the release tag/version,
-the next, post-release SNAPSHOT version, as well as ask you to resolve
-any SNAPSHOT dependencies if you have any (Do NOT create releases with
-SNAPSHOT dependencies!).  Selecting the defaults are typically fine.  
-Your release tag should always be prefixed with 'v' (the default) and you can 
+the next post-release SNAPSHOT version, as well as ask you to resolve
+any SNAPSHOT dependencies if you have any. Do NOT create releases with
+SNAPSHOT dependencies! Selecting the defaults are typically fine.  
+Your release tag must be prefixed with 'v' (the default) and you can 
 always change the next SNAPSHOT version later if necessary.
 
 Assuming there are no build errors, you are ready to push your changes to
