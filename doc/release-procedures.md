@@ -11,7 +11,8 @@ This document summarises the release procedures for FOLIO projects.
     * [Ensure POM declarations](#ensure-pom-declarations)
     * [Ensure that JIRA issues are ready](#ensure-that-jira-issues-are-ready)
     * [Prepare the news document](#prepare-the-news-document)
-    * [Prepare git and perform the release](#prepare-git-and-perform-the-release)
+    * [Prepare and perform the source release](#prepare-and-perform-the-source-release)
+    * [Build and release artifacts ](#build-and-release-artifacts)
     * [Add release notes to GitHub](#add-release-notes-to-github)
     * [Prepare JIRA for next release](#prepare-jira-for-next-release)
     * [Announce](#announce)
@@ -21,9 +22,7 @@ This document summarises the release procedures for FOLIO projects.
 
 ## Introduction
 
-There are separate notes about the general
-[build, test, and deployment infrastructure](automation)
-and the
+There are separate notes about the
 [FOLIO version-numbering scheme](http://dev.folio.org/community/contrib-code#version-numbers).
 
 ## Maven-based modules
@@ -32,8 +31,55 @@ The procedure is outlined here for "Okapi" and is similar for other Maven-based 
 
 ### Ensure POM declarations
 
-Ensure that the parent POM declares the `maven-release-plugin` and the `distributionManagement`
-section as [described](automation).
+For Maven-based projects, the [Maven Release Plugin](//maven.apache.org/maven-release/maven-release-plugin)
+is required.  To enable the release plugin, add the following to
+the parent POM of the project:
+
+```xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-release-plugin</artifactId>
+  <version>2.5.3</version>
+  <configuration>
+    <preparationGoals>clean verify</preparationGoals>
+    <tagNameFormat>v@{project.version}</tagNameFormat>
+    <pushChanges>false</pushChanges>
+    <localCheckout>true</localCheckout>
+  </configuration>
+</plugin>
+```
+FOLIO projects which need to deploy artifacts to the FOLIO Maven repository during the
+Maven 'deploy' phase should have the following specified in the project's top-level POM:
+
+```xml
+  <distributionManagement>
+    <repository>
+      <id>folio-nexus</id>
+      <name>FOLIO Release Repository</name>
+      <url>https://repository.folio.org/repository/maven-releases/</url>
+      <uniqueVersion>false</uniqueVersion>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <id>folio-nexus</id>
+      <name>FOLIO Snapshot Repository</name>
+      <uniqueVersion>true</uniqueVersion>
+      <url>https://repository.folio.org/repository/maven-snapshots/</url>
+      <layout>default</layout>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <scm>
+    <url>https://github.com/folio-org/PROJECT_NAME</url>
+    <connection>scm:git:git://github.com/folio-org/PROJECT_NAME.git</connection>
+    <developerConnection>scm:git:git@github.com:folio-org/PROJECT_NAME.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+```
+
+Replace 'PROJECT_NAME' above with the name of the appropriate github repository.  
+Commit all changes to the POM in git. 
+
 
 ### Ensure that JIRA issues are ready
 
@@ -49,30 +95,37 @@ Take extra care with spelling and readability.
 git commit -m "Update NEWS" NEWS.md
 ```
 
-### Prepare git and perform the release
-
-Behind-the-scenes, Jenkins and Maven are assisting.
-Review the [automation](automation) steps that will coordinate the release.
-
-Consider for example that we are going to release v1.2.3
-so gather these parameters:
-* `releaseVersion=1.2.3` -- The version to be released.
-* `developmentVersion=1.2.4` -- The next SNAPSHOT version after release version.
-If you already know that breaking changes are going to be the next release, then
-make that `1.3.0`.
-
-Now initiate the process:
+### Prepare and perform the source release 
 
 ```
-mvn -DautoVersionSubmodules=true release:clean release:prepare release:perform \
-  -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${developmentVersion}
+mvn -DautoVersionSubmodules=true release:clean release:prepare
+```
+This command will prompt you for input including the release tag/version,
+the next, post-release SNAPSHOT version, as well as ask you to resolve
+any SNAPSHOT dependencies if you have any (Do NOT create releases with
+SNAPSHOT dependencies!).  Selecting the defaults are typically fine.  
+Your release tag should always be prefixed with 'v' (the default) and you can 
+always change the next SNAPSHOT version later if necessary.
+
+Assuming there are no build errors, you are ready to push your changes to
+GitHub. 
+
+```
+git push
+git push --tags
 ```
 
-There will be two commits:
-1. Set the POM versions to be 1.2.3 and the git tag is v1.2.3
-1. Introduce the SNAPSHOT again.
+### Build and release artifacts
 
-Watch Jenkins be happy, and [deploy](https://jenkins-aws.indexdata.com/job/okapi-release/) the artifacts.
+An 'artifact' in this context could either be an Maven artifact released to the FOLIO 
+Maven repository, a docker image released to Docker Hub, a Linux distribution package
+or some combination of artifacts depending on the project.  To release the artifacts 
+relevant to your project, log into the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
+Navigate to your project's folder and select the Jenkins job name with the '-release' suffix.
+For example, 'okapi-release'.   Select 'Build with Parameters' and select the release tag you
+want to release.  This will build the release artifacts and deploy them to the proper
+repositories.
+
 
 ### Add release notes to GitHub
 
