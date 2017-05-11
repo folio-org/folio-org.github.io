@@ -11,23 +11,32 @@ access the functionality provided by these important core modules.
 {% assign url_aws = "https://s3.amazonaws.com/foliodocs/api" %}
 {% assign url_github= "https://github.com/folio-org" %}
 
-<ul>
+<table>
+  <thead>
+    <tr>
+      <th title="Module">Module</th>
+      <th title="APIs and link to RAML source">APIs</th>
+      <th title="View 1: using raml2html">view-1</th>
+      <th title="View 2: using raml-fleece">view-2</th>
+    </tr>
+  </thead>
+  <tbody>
   {% for repo in site.data.api %}
-    <li id="{{ repo[0] }}"> {{ repo[0] }}:
-      <ul>
-        {% for docset in repo[1] %}
-          {% for doc in docset.files %}
-            <li>
-              {% if docset.label %}{{ docset.label }}:{% endif %}
-              {% capture url_doc %}{{ url_aws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}{{ doc }}{% endcapture %}
-              <a href="{{ url_doc }}.html">
-                {{ doc }}
-              </a>
-              (<a href="{{ url_github }}/{{ repo[0] }}/blob/master/{{ docset.directory }}/{{ doc }}.raml">source</a>)
-            </li>
-          {% endfor %}
-        {% endfor %}
-      </ul>
-    </li>
+    {% for docset in repo[1] %}
+      {% for doc in docset.files %}
+        {% capture str_id %}{{ repo[0] }}_{% if docset.label %}{{ docset.label }}{% endif %}_{{ doc }}{% endcapture %}
+        {% capture url_doc_1 %}{{ url_aws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}{{ doc }}{% endcapture %}
+        {% capture url_doc_2 %}{{ url_aws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}2/{{ doc }}{% endcapture %}
+        <tr id="{{ str_id }}">
+          <td> {{ repo[0] }} </td>
+          <td>
+            <a href="{{ url_github }}/{{ repo[0] }}/blob/master/{{ docset.directory }}/{{ doc }}.raml"> {{ doc }}</a>
+          </td>
+          <td><a href="{{ url_doc_1 }}.html">view-1</a></td>
+          <td><a href="{{ url_doc_2 }}.html">view-2</a></td>
+        </tr>
+      {% endfor %}
+    {% endfor %}
   {% endfor %}
-</ul>
+  </tbody>
+</table>
