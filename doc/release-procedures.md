@@ -81,8 +81,8 @@ Maven 'deploy' phase should have the following specified in the project's top-le
   </scm>
 ```
 
-Replace 'PROJECT_NAME' above with the name of the appropriate github repository.  
-Commit all changes to the POM in git. 
+Replace 'PROJECT_NAME' above with the name of the appropriate github repository.
+Commit all changes to the POM in git.
 
 
 ### Ensure that JIRA issues are ready
@@ -99,7 +99,7 @@ Take extra care with spelling and readability.
 git commit -m "Update NEWS" NEWS.md
 ```
 
-### Prepare and perform the source release 
+### Prepare and perform the source release
 
 ```
 mvn -DautoVersionSubmodules=true release:clean release:prepare
@@ -107,12 +107,12 @@ mvn -DautoVersionSubmodules=true release:clean release:prepare
 This command will prompt you for input including the release tag/version,
 the next post-release SNAPSHOT version, as well as ask you to resolve
 any SNAPSHOT dependencies if you have any. Do NOT create releases with
-SNAPSHOT dependencies! Selecting the defaults are typically fine.  
-Your release tag must be prefixed with 'v' (the default) and you can 
+SNAPSHOT dependencies! Selecting the defaults are typically fine.
+Your release tag must be prefixed with 'v' (the default) and you can
 always change the next SNAPSHOT version later if necessary.
 
 Assuming there are no build errors, you are ready to push your changes to
-GitHub. 
+GitHub.
 
 ```
 git push
@@ -121,9 +121,9 @@ git push --tags
 
 ### Build and release artifacts
 
-An 'artifact' in this context could either be an Maven artifact released to the FOLIO 
+An 'artifact' in this context could either be an Maven artifact released to the FOLIO
 Maven repository, a docker image released to Docker Hub, a Linux distribution package
-or some combination of artifacts depending on the project.  To release the artifacts 
+or some combination of artifacts depending on the project.  To release the artifacts
 relevant to your project, log into the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
 Navigate to your project's folder and select the Jenkins job name with the '-release' suffix.
 For example, 'okapi-release'.   Select 'Build with Parameters' and select the release tag you
