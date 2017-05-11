@@ -12,15 +12,15 @@ This document summarises the release procedures for FOLIO projects.
     * [Ensure that JIRA issues are ready](#ensure-that-jira-issues-are-ready)
     * [Prepare the news document](#prepare-the-news-document)
     * [Prepare and perform the source release](#prepare-and-perform-the-source-release)
-    * [Build and release artifacts ](#build-and-release-artifacts)
+    * [Build and release artifacts](#build-and-release-artifacts)
     * [Add release notes to GitHub](#add-release-notes-to-github)
     * [Prepare JIRA for next release](#prepare-jira-for-next-release)
     * [Announce](#announce)
     * [Other current Maven-related discussion](#other-current-maven-related-discussion)
 * [Gradle-based modules](#gradle-based-modules)
-  * [Change the release version](#change-the-release-version)
-  * [Update to unreleased version](#update-to-unreleased-version)
-  * [Trigger the release](#trigger-the-release)
+    * [Change the release version](#change-the-release-version)
+    * [Update to unreleased version](#update-to-unreleased-version)
+    * [Trigger the release](#trigger-the-release)
 * [Stripes-based modules](#stripes-based-modules)
     * [Other current Stripes-related discussion](#other-current-stripes-related-discussion)
 
@@ -161,13 +161,14 @@ Send a note to Slack if relevant.
 
 ## Gradle-based modules
 
-The procedure for [Gradle](https://gradle.org/) based modules (such as [mod-inventory](https://github.com/folio-org/mod-inventory) or [mod-circulation](https://github.com/folio-org/mod-circulation)) is very similar to [maven-based modules](#maven-based-modules).
+The procedure for [Gradle](https://gradle.org/)-based modules (such as [mod-inventory](https://github.com/folio-org/mod-inventory) or [mod-circulation](https://github.com/folio-org/mod-circulation)) is very similar to [maven-based modules](#maven-based-modules).
 
-Follow all of the steps for a maven based module, except [ensure POM declarations](#ensure-pom-declarations) and replacing [performing the release in git](#prepare-git-and-perform-the-release) with the steps outlined below.
+Follow all of the steps for a maven-based module, except [ensure POM declarations](#ensure-pom-declarations) and replacing
+[Prepare and perform the source release](#prepare-and-perform-the-source-release) with the steps outlined below.
 
 ### Change the release version
 
-Using the example of releasing version 4.4.0 of the inventory module for context, the top of the [gradle build configuration](https://github.com/folio-org/mod-inventory/blob/master/build.gradle) will look something similar to:
+Using the example of releasing version 4.4.0 of the mod-inventory module for context, the top of the [gradle build configuration](https://github.com/folio-org/mod-inventory/blob/master/build.gradle) will look something similar to:
 
 ```
 apply plugin: 'groovy'
