@@ -16,6 +16,23 @@ raml:
       - tenant
       - tenantPermissions
     ramlutil: .
+  - label: shared-mod-login
+    directory: ramls/mod-login
+    files:
+      - login
+    ramlutil: .
+  - label: shared-mod-permissions
+    directory: ramls/mod-permissions
+    files:
+      - permissions
+      - permission_interface
+    ramlutil: .
+  - label: shared-mod-users
+    directory: ramls/mod-users
+    files:
+      - groups
+      - users
+    ramlutil: .
 
 raml-module-builder:
   - label: domain-models-api-interfaces

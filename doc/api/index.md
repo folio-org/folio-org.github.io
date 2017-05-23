@@ -15,6 +15,7 @@ access the functionality provided by these important core modules.
   <thead>
     <tr>
       <th title="Module">Module</th>
+      <th title="Label">Label</th>
       <th title="APIs and link to RAML source">APIs</th>
       <th title="View 1: using raml2html">view-1</th>
       <th title="View 2: using raml-fleece">view-2</th>
@@ -29,6 +30,7 @@ access the functionality provided by these important core modules.
         {% capture url_doc_2 %}{{ url_aws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}2/{{ doc }}{% endcapture %}
         <tr id="{{ str_id }}">
           <td> {{ repo[0] }} </td>
+          <td> {{ docset.label }} </td>
           <td>
             <a href="{{ url_github }}/{{ repo[0] }}/blob/master/{{ docset.directory }}/{{ doc }}.raml"> {{ doc }}</a>
           </td>
