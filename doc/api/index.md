@@ -8,6 +8,9 @@ These API specifications are automatically generated from the relevant
 files, and specify how client modules may
 access the functionality provided by these important core modules.
 
+* view-1: Uses pop-up windows for each method and endpoint.
+* view-2: Uses one-page view to everything.
+
 {% assign url_aws = "https://s3.amazonaws.com/foliodocs/api" %}
 {% assign url_github= "https://github.com/folio-org" %}
 
