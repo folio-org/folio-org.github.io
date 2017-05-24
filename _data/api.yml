@@ -94,10 +94,3 @@ mod-inventory-storage:
       - loan-type
       - material-type
     ramlutil: raml-util
-
-mod-users-bl:
-  - label: null
-    directory: ramls
-    files:
-      - mod-users-bl
-    ramlutil: null
