@@ -95,29 +95,6 @@ mod-inventory-storage:
       - material-type
     ramlutil: raml-util
 
-mod-login:
-  - label: null
-    directory: ramls
-    files:
-      - login
-    ramlutil: null
-
-mod-permissions:
-  - label: null
-    directory: ramls
-    files:
-      - permissions
-      - permission_interface
-    ramlutil: null
-
-mod-users:
-  - label: null
-    directory: ramls
-    files:
-      - groups
-      - users
-    ramlutil: raml-util
-
 mod-users-bl:
   - label: null
     directory: ramls
