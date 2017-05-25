@@ -9,6 +9,7 @@ A collection of tips to assist developers to configure their local workstation s
 * [Introduction](#introduction)
 * [Tools](#tools)
     * [Minimum versions](#minimum-versions)
+    * [Other tools](#other-tools)
 * [Configuration for repository usage](#configuration-for-repository-usage)
 * [Coding style](#coding-style)
     * [Style guidelines and configuration](#style-guidelines-and-configuration)
@@ -48,6 +49,12 @@ As each FOLIO component can utilise whatever suite of appropriate tools, refer t
 Occasionally it becomes necessary to specify minimum versions of some tools:
 
 * Java: [1.8.0-101](troubleshooting#missing-certificate-authority-for-lets-encrypt)
+
+### Other tools
+
+* PostgreSQL -- For running an external database to support storage modules.
+This will enable faster startup and operations during development.
+Note that this is not required to be installed for running modules using the "embed_postgres" option.
 
 ## Configuration for repository usage
 

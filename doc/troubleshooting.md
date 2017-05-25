@@ -7,16 +7,34 @@ A collection of general tips to assist developers to conduct troubleshooting.
 Some FOLIO repositories also have specific notes.
 
 <!-- ../../okapi/doc/md2toc -l 2 -h 3 troubleshooting.md -->
-* [Keep system tools up-to-date](#keep-system-tools-up-to-date)
-* [Missing certificate authority for Let's Encrypt](#missing-certificate-authority-for-lets-encrypt)
-* [Update git submodules](#update-git-submodules)
 * [Other troubleshooting documents](#other-troubleshooting-documents)
+* [Keep system tools up-to-date](#keep-system-tools-up-to-date)
+* [Update git submodules](#update-git-submodules)
+* [Do development and operations as a regular user](#do-development-and-operations-as-a-regular-user)
+* [Missing certificate authority for Let's Encrypt](#missing-certificate-authority-for-lets-encrypt)
+
+## Other troubleshooting documents
+
+* [Stripes troubleshooting](https://github.com/folio-org/stripes-core/blob/master/doc/troubleshooting.md)
 
 ## Keep system tools up-to-date
 
 As [explained](setup#up-to-date) in the FOLIO setup documentation,
 keeping the operating system and tools up-to-date will generally help to
 avoid issues.
+
+## Update git submodules
+
+Some FOLIO repositories utilize “git submodules” for sections of common code.
+Some git clients do not handle this properly.
+See [notes](setup#update-git-submodules).
+
+## Do development and operations as a regular user
+
+As usual, do all development and running as a regular user, not as root.
+Otherwise there will be strange behaviour, and various facilities and
+tools might not be available.
+For example, Postgres (including the embedded one) refuses to run as root.
 
 ## Missing certificate authority for Let's Encrypt
 
@@ -31,13 +49,3 @@ repository. You will see error messages like:
 
 The fix is just to replace your JDK with a sufficiently recent replacement.
 (Or you can use OpenJDK, which has supported Let's Encrypt for longer.)
-
-## Update git submodules
-
-Some FOLIO repositories utilize “git submodules” for sections of common code.
-Some git clients do not handle this properly.
-See [notes](setup#update-git-submodules).
-
-## Other troubleshooting documents
-
-* [Stripes troubleshooting](https://github.com/folio-org/stripes-core/blob/master/doc/troubleshooting.md)
