@@ -10,6 +10,7 @@ Some FOLIO repositories also have specific notes.
 * [Other troubleshooting documents](#other-troubleshooting-documents)
 * [Keep system tools up-to-date](#keep-system-tools-up-to-date)
 * [Update git submodules](#update-git-submodules)
+* [Do development and operations as a regular user](#do-development-and-operations-as-a-regular-user)
 * [Missing certificate authority for Let's Encrypt](#missing-certificate-authority-for-lets-encrypt)
 
 ## Other troubleshooting documents
@@ -27,6 +28,13 @@ avoid issues.
 Some FOLIO repositories utilize “git submodules” for sections of common code.
 Some git clients do not handle this properly.
 See [notes](setup#update-git-submodules).
+
+## Do development and operations as a regular user
+
+As usual, do all development and running as a regular user, not as root.
+Otherwise there will be strange behaviour, and various facilities and
+tools might not be available.
+For example, Postgres (including the embedded one) refuses to run as root.
 
 ## Missing certificate authority for Let's Encrypt
 
