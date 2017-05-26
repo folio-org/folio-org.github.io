@@ -11,6 +11,7 @@ Some FOLIO repositories also have specific notes.
 * [Keep system tools up-to-date](#keep-system-tools-up-to-date)
 * [Update git submodules](#update-git-submodules)
 * [Do development and operations as a regular user](#do-development-and-operations-as-a-regular-user)
+* [Launching Vagrant on Windows](#launching-vagrant-on-windows)
 * [Missing certificate authority for Let's Encrypt](#missing-certificate-authority-for-lets-encrypt)
 
 ## Other troubleshooting documents
@@ -35,6 +36,14 @@ As usual, do all development and running as a regular user, not as root.
 Otherwise there will be strange behaviour, and various facilities and
 tools might not be available.
 For example, Postgres (including the embedded one) refuses to run as root.
+
+## Launching Vagrant on Windows
+
+If launching Vagrant from a Windows Command Prompt, be sure to use _Run As Administrator..._
+when opening the Command Prompt itself (cmd.exe).
+If you are seeing the error _"EPROTO: protocol error, symlink"_, the likely cause is that
+Vagrant was not launched with administrator privileges.
+See issue [STRIPES-344](https://issues.folio.org/browse/STRIPES-344) for details.
 
 ## Missing certificate authority for Let's Encrypt
 
