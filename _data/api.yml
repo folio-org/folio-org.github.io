@@ -32,6 +32,11 @@ raml:
       - groups
       - users
     ramlutil: .
+  - label: shared-mod-users-bl
+    directory: ramls/mod-users-bl
+    files:
+      - mod-users-bl
+    ramlutil: .
 
 raml-module-builder:
   - label: domain-models-api-interfaces
