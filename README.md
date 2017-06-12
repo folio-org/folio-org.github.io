@@ -29,6 +29,10 @@ bundle exec jekyll build
 
 Occasionally do `bundle update` to advance the versions of dependencies.
 
+## Work area - management of dev site
+
+See work/index.md
+
 ## Theme enhancements
 
 If there is a need to override any more files, then copy them from the theme.
@@ -47,3 +51,4 @@ The master branch is automatically deployed as [dev.folio.org](http://dev.folio.
 
 See project [FOLIO](https://issues.folio.org/browse/FOLIO)
 at the [FOLIO issue tracker](http://dev.folio.org/community/guide-issues).
+We use the label "devweb".
