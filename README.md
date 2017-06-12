@@ -31,7 +31,7 @@ Occasionally do `bundle update` to advance the versions of dependencies.
 
 ## Work area - management of dev site
 
-See work/index.md
+See [notes](work/README.md).
 
 ## Theme enhancements
 
