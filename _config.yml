@@ -19,7 +19,7 @@ google_analytics: UA-79833310-3
 markdown: kramdown
 theme: minima
 
-exclude: [Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, vendor]
+exclude: [Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, vendor, work]
 
 collections:
   posts:
