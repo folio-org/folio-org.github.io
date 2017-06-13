@@ -52,3 +52,5 @@ The master branch is automatically deployed as [dev.folio.org](http://dev.folio.
 See project [FOLIO](https://issues.folio.org/browse/FOLIO)
 at the [FOLIO issue tracker](http://dev.folio.org/community/guide-issues).
 We use the label "devweb".
+
+The FOLIO Slack channel #dev-website
