@@ -28,7 +28,7 @@ access the functionality provided by these important core modules.
   {% for repo in site.data.api %}
     {% for docset in repo[1] %}
       {% for doc in docset.files %}
-        {% capture str_id %}{{ repo[0] }}_{% if docset.label %}{{ docset.label }}{% endif %}_{{ doc }}{% endcapture %}
+        {% capture str_id %}{{ repo[0] }}_{% if docset.label %}{{ docset.label }}{% endif %}_{{ forloop.index }}{% endcapture %}
         {% capture url_doc_1 %}{{ url_aws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}{{ doc }}{% endcapture %}
         {% capture url_doc_2 %}{{ url_aws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}2/{{ doc }}{% endcapture %}
         <tr id="{{ str_id }}">
