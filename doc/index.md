@@ -89,6 +89,7 @@ Guidelines, tips, and best practice documents:
 - A [FOLIO glossary](glossary) of some terms and technologies used in FOLIO.
 - Some tips to assist developers to configure their
   [local workstation setup](setup).
+- [Built artifacts](artifacts) -- released and snapshot FOLIO artifacts in various formats.
 - Some tips to assist developers to conduct [troubleshooting](troubleshooting).
 - [Best practices for Dockerfiles](best-practices-dockerfiles).
 - The FOLIO [build, test, and deployment infrastructure](automation).
