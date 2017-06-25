@@ -98,7 +98,8 @@ the community.
 
 ## Contributing
 
-There are many ways to contribute to FOLIO development, for example:
+There are many ways to [contribute](/doc/#community)
+to FOLIO development, for example:
 
 - Contributing directly to the software development.
 - Engaging with the issue tracker.
@@ -117,4 +118,4 @@ There are many ways to contribute to FOLIO development, for example:
 
 - [Guidelines for FOLIO issue tracker](guide-issues).
 
-- Other [technical guidelines](../doc/#guidelines) and best practices.
+- Other [guides](/doc/#guides) and best practices.
