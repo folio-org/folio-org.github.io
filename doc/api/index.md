@@ -45,6 +45,3 @@ access the functionality provided by these important core modules.
   {% endfor %}
   </tbody>
 </table>
-<div id="bottom-spacer">
-<!-- Spacer to enable linking directly to each table row above. -->
-</div>

@@ -46,6 +46,9 @@ code {
   background-color: $f-color-lighter-grey;
 }
 
-#bottom-spacer {
-  padding-bottom: 50em;
+:target {
+  border-left: 5px solid $f-color-orange;
+}
+tr:target td:first-child {
+  border-left: 5px solid $f-color-orange;
 }
