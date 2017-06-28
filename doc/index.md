@@ -144,3 +144,5 @@ instructor-led workshop.
 - [Best practices for Dockerfiles](best-practices-dockerfiles).
 - The FOLIO [build, test, and deployment infrastructure](automation).
 - A proposal for [error response formats](https://github.com/folio-org/okapi/blob/master/doc/error-formats-in-folio.md).
+- [FOLIO UX](http://ux.folio.org/) -- user experience (UX) driven design and prototypes.
+- [FOLIOForums](https://www.openlibraryenvironment.org/archives/category/olfforum) -- upcoming events and recordings of past ones.
