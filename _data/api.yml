@@ -81,7 +81,7 @@ mod-configuration:
     directory: ramls/configuration
     files:
       - config
-    ramlutil: raml-util
+    ramlutil: ramls/raml-util
 
 mod-inventory:
   - label: null
