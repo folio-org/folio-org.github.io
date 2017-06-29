@@ -40,12 +40,12 @@ raml:
 
 raml-module-builder:
   - label: domain-models-api-interfaces
-    directory: domain-models-api-interfaces/src/main/resources/raml
+    directory: domain-models-api-interfaces/raml
     files:
       - admin
       - jobs
       - sample
-    ramlutil: raml-util
+    ramlutil: domain-models-api-interfaces/raml/raml-util
 
 mod-acquisitions:
   - label: null
