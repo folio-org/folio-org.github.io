@@ -14,6 +14,17 @@ access the functionality provided by these important core modules.
 {% assign url_aws = "https://s3.amazonaws.com/foliodocs/api" %}
 {% assign url_github= "https://github.com/folio-org" %}
 
+{% capture array_str %}
+{% for repo in site.data.api %}
+  {% assign group_size = 0 %}
+  {% for docset in repo[1] %}
+    {% assign group_size = group_size | plus: docset.files.size %}
+  {% endfor %}
+  {{ group_size }}#
+{% endfor %}
+{% endcapture %}
+{% assign group_sizes = array_str | split: "#" %}
+
 <table>
   <thead>
     <tr>
@@ -26,14 +37,20 @@ access the functionality provided by these important core modules.
   </thead>
   <tbody>
   {% for repo in site.data.api %}
+    {% capture group_span %}{{ group_sizes[forloop.index0] }}{% endcapture %}
+    {% assign item_num = 0 %}
     {% for docset in repo[1] %}
+      {% capture num_items %}{{ forloop.length }}{% endcapture %}
       {% for doc in docset.files %}
-        {% capture str_id %}{{ repo[0] }}_{% if docset.label %}{{ docset.label }}{% endif %}_{{ forloop.index }}{% endcapture %}
+        {% assign item_num = item_num | plus: 1 %}
+        {% capture row_id %}{{ repo[0] }}_{% if docset.label %}{{ docset.label }}{% endif %}_{{ forloop.index }}{% endcapture %}
         {% capture url_doc_1 %}{{ url_aws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}{{ doc }}{% endcapture %}
         {% capture url_doc_2 %}{{ url_aws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}2/{{ doc }}{% endcapture %}
-        <tr id="{{ str_id }}">
-          <td> {{ repo[0] }} </td>
-          <td> {{ docset.label }} </td>
+        <tr id="{{ row_id }}">
+          {% if item_num == 1 %}
+          <td id="{{ repo[0] }}" rowspan="{{ group_span }}"> {{ repo[0] }} </td>
+          {% endif %}
+          <td> {{ docset.label }}</td>
           <td>
             <a href="{{ url_github }}/{{ repo[0] }}/blob/master/{{ docset.directory }}/{{ doc }}.raml"> {{ doc }}</a>
           </td>
