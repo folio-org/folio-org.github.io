@@ -41,7 +41,9 @@ issues and general discussion via the
 The key server-side element is Okapi itself: the FOLIO middleware component
 that acts as a gateway for access to all modules, handling redundancy,
 sessions, etc.  Individual modules are provided in their own repositories, each
-named `mod-`_name_: note that these are mostly at the proof-of-concept stage.
+named `mod-`_name_ (note that these are mostly at the proof-of-concept stage).
+Each module has its own documentation.
+
 Some of these modules are built from specifications in
 [RAML](http://raml.org/), the RESTful API Modeling Language: this process is
 facilitated by the code in the `raml-module-builder` repository.
@@ -117,12 +119,14 @@ envisage that most FOLIO UI work will be done in the context of
 Stripes.
 
 The stripes-core [documentation roadmap](https://github.com/folio-org/stripes-core#documentation-roadmap) is the starting point.
+Each module has its own documentation.
 
 Note that Stripes is still in the design phase, so although code
 exists and can be run, the APIs are likely to change.
 
 - [stripes-core](https://github.com/folio-org/stripes-core)
   -- The UI framework.
+  Includes extensive documentation.
 
 - [stripes-sample-platform](https://github.com/folio-org/stripes-sample-platform)
   -- Configuration for a sample platform and to run a local
@@ -133,6 +137,7 @@ exists and can be run, the APIs are likely to change.
 
 - [stripes-components](https://github.com/folio-org/stripes-components)
   -- A component library for Stripes.
+  Includes documentation for each library, and guides to assist their development.
 
 - [stripes-loader](https://github.com/folio-org/stripes-loader)
   -- Module loader for Webpack, to enable pluggable Redux applications.
