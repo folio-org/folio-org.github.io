@@ -139,6 +139,9 @@ exists and can be run, the APIs are likely to change.
 - [stripes-connect](https://github.com/folio-org/stripes-connect)
   -- Manages the connection of UI components to back-end modules.
 
+- [stripes-form](https://github.com/folio-org/stripes-form)
+  -- A redux-form wrapper for Stripes.
+
 - [stripes-logger](https://github.com/folio-org/stripes-logger)
   -- Simple category-based logging for Stripes.
 
@@ -154,6 +157,10 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-organization](https://github.com/folio-org/ui-organization)
   -- Stripes UI module: managing organization settings.
+
+- [ui-developer](https://github.com/folio-org/ui-developer)
+  -- Stripes UI module: developer facilities,
+  e.g. managing local developer settings.
 
 - [stripes-loader](https://github.com/folio-org/stripes-loader)
   -- Module loader for Webpack, to enable pluggable Redux applications.
