@@ -11,19 +11,19 @@ access the functionality provided by these important core modules.
 * view-1: Uses pop-up windows for each method and endpoint.
 * view-2: Uses one-page view to everything.
 
-{% assign url_aws = "https://s3.amazonaws.com/foliodocs/api" %}
-{% assign url_github= "https://github.com/folio-org" %}
+{% assign urlAws = "https://s3.amazonaws.com/foliodocs/api" %}
+{% assign urlGithub= "https://github.com/folio-org" %}
 
-{% capture array_str %}
+{% capture arrayStr %}
 {% for repo in site.data.api %}
-  {% assign group_size = 0 %}
+  {% assign groupSize = 0 %}
   {% for docset in repo[1] %}
-    {% assign group_size = group_size | plus: docset.files.size %}
+    {% assign groupSize = groupSize | plus: docset.files.size %}
   {% endfor %}
-  {{ group_size }}#
+  {{ groupSize }}#
 {% endfor %}
 {% endcapture %}
-{% assign group_sizes = array_str | split: "#" %}
+{% assign groupSizes = arrayStr | split: "#" %}
 
 <table>
   <thead>
@@ -37,25 +37,24 @@ access the functionality provided by these important core modules.
   </thead>
   <tbody>
   {% for repo in site.data.api %}
-    {% capture group_span %}{{ group_sizes[forloop.index0] }}{% endcapture %}
-    {% assign item_num = 0 %}
+    {% capture groupSpan %}{{ groupSizes[forloop.index0] }}{% endcapture %}
+    {% assign itemNum = 0 %}
     {% for docset in repo[1] %}
-      {% capture num_items %}{{ forloop.length }}{% endcapture %}
       {% for doc in docset.files %}
-        {% assign item_num = item_num | plus: 1 %}
-        {% capture row_id %}{{ repo[0] }}_{% if docset.label %}{{ docset.label }}{% endif %}_{{ forloop.index }}{% endcapture %}
-        {% capture url_doc_1 %}{{ url_aws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}{{ doc }}{% endcapture %}
-        {% capture url_doc_2 %}{{ url_aws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}2/{{ doc }}{% endcapture %}
-        <tr id="{{ row_id }}">
-          {% if item_num == 1 %}
-          <td id="{{ repo[0] }}" rowspan="{{ group_span }}"> {{ repo[0] }} </td>
+        {% assign itemNum = itemNum | plus: 1 %}
+        {% capture rowId %}{{ repo[0] }}_{% if docset.label %}{{ docset.label }}{% endif %}_{{ forloop.index }}{% endcapture %}
+        {% capture urlDoc1 %}{{ urlAws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}{{ doc }}{% endcapture %}
+        {% capture urlDoc2 %}{{ urlAws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}2/{{ doc }}{% endcapture %}
+        <tr id="{{ rowId }}">
+          {% if itemNum == 1 %}
+          <td id="{{ repo[0] }}" rowspan="{{ groupSpan }}"> {{ repo[0] }} </td>
           {% endif %}
           <td> {{ docset.label }}</td>
           <td>
-            <a href="{{ url_github }}/{{ repo[0] }}/blob/master/{{ docset.directory }}/{{ doc }}.raml"> {{ doc }}</a>
+            <a href="{{ urlGithub }}/{{ repo[0] }}/blob/master/{{ docset.directory }}/{{ doc }}.raml"> {{ doc }}</a>
           </td>
-          <td><a href="{{ url_doc_1 }}.html">view-1</a></td>
-          <td><a href="{{ url_doc_2 }}.html">view-2</a></td>
+          <td><a href="{{ urlDoc1 }}.html">view-1</a></td>
+          <td><a href="{{ urlDoc2 }}.html">view-2</a></td>
         </tr>
       {% endfor %}
     {% endfor %}
