@@ -132,23 +132,15 @@ exists and can be run, the APIs are likely to change.
   -- Configuration for a sample platform and to run a local
   Stripes UI development server.
 
-- [stripes-connect](https://github.com/folio-org/stripes-connect)
-  -- Manages the connection of UI components to back-end modules.
-
 - [stripes-components](https://github.com/folio-org/stripes-components)
   -- A component library for Stripes.
   Includes documentation for each library, and guides to assist their development.
 
-- [stripes-loader](https://github.com/folio-org/stripes-loader)
-  -- Module loader for Webpack, to enable pluggable Redux applications.
-  This module is responsible for pulling the required UI modules
-  into a given Stripes UI.
+- [stripes-connect](https://github.com/folio-org/stripes-connect)
+  -- Manages the connection of UI components to back-end modules.
 
 - [stripes-logger](https://github.com/folio-org/stripes-logger)
   -- Simple category-based logging for Stripes.
-
-- [okapi-stripes](https://github.com/folio-org/okapi-stripes)
-  -- Server-side module for generating UIs based on Stripes.
 
 - [ui-users](https://github.com/folio-org/ui-users)
   -- Stripes UI module: administrating users.
@@ -162,6 +154,14 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-organization](https://github.com/folio-org/ui-organization)
   -- Stripes UI module: managing organization settings.
+
+- [stripes-loader](https://github.com/folio-org/stripes-loader)
+  -- Module loader for Webpack, to enable pluggable Redux applications.
+  This module is responsible for pulling the required UI modules
+  into a given Stripes UI.
+
+- [okapi-stripes](https://github.com/folio-org/okapi-stripes)
+  -- Server-side module for generating UIs based on Stripes.
 
 - [ui-okapi-console](https://github.com/folio-org/ui-okapi-console)
   -- Stripes UI module: console for administrating Okapi.
