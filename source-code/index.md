@@ -176,7 +176,7 @@ exists and can be run, the APIs are likely to change.
   Get a FOLIO installation up and running quickly.
   Read the docs there, and follow to build the boxes.
   The current built boxes are also available to download from
-  [HashiCorp Atlas](https://atlas.hashicorp.com/folio).
+  [Vagrant Cloud](https://app.vagrantup.com/folio).
 
 - [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
   -- CQL (Contextual Query Language) to PostgreSQL JSON converter in Java.

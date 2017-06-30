@@ -73,7 +73,7 @@ for a quick-start FOLIO installation as a virtual machine using Vagrant and Ansi
 This also provides various pre-built "black boxes" including
 "folio/stable" and "folio/testing".
 The current built boxes are also available to download from
-[HashiCorp Atlas](https://atlas.hashicorp.com/folio).
+[Vagrant Cloud](https://app.vagrantup.com/folio).
 The list of module versions for each box is shown in its change-log.
 
 ## Guides
@@ -93,8 +93,8 @@ The list of module versions for each box is shown in its change-log.
 
 - [Which forum](/community/which-forum) to use for communication:
   Issue tracker, Slack chat, Discuss discussion, GitHub pull requests.
-  Some guidelines about when to use each, and some usage tips.
-- [Guidelines for Contributing Code](/community/contrib-code):
+  Some guidelines about when to use each, some usage tips, and links to each.
+- [Guidelines for Contributing Code](/community/contrib-code) --
   GitHub Flow, feature branches, pull requests, version numbers, coding style,
   tests, etc.
 - A [FOLIO glossary](glossary) of some terms and technologies used in FOLIO.
