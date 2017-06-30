@@ -163,6 +163,9 @@ exists and can be run, the APIs are likely to change.
 - [okapi-stripes](https://github.com/folio-org/okapi-stripes)
   -- Server-side module for generating UIs based on Stripes.
 
+- [stripes-demo-platform](https://github.com/folio-org/stripes-demo-platform)
+  -- Stripes platform for building the demo site.
+
 - [ui-okapi-console](https://github.com/folio-org/ui-okapi-console)
   -- Stripes UI module: console for administrating Okapi.
 
@@ -185,6 +188,9 @@ exists and can be run, the APIs are likely to change.
 
 - [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
   -- CQL (Contextual Query Language) to PostgreSQL JSON converter in Java.
+
+- [ui-testing](https://github.com/folio-org/ui-testing)
+  -- Regression tests for FOLIO UI.
 
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.
