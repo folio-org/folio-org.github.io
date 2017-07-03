@@ -22,7 +22,7 @@ and has some recommendations about when to use each.
 
 ## Developer's curriculum
 The [FOLIO Developer's Curriculum](http://dev.folio.org/curriculum) is a series
-of four lessons that can be followed on your own or can form the basis of an
+of lessons that can be followed on your own or can form the basis of an
 instructor-led workshop.
 
 ## Core code
@@ -70,27 +70,79 @@ It goes on to explain another way to configure modules using the Okapi Console f
 
 Use [folio-ansible](https://github.com/folio-org/folio-ansible/blob/master/README.md)
 for a quick-start FOLIO installation as a virtual machine using Vagrant and Ansible.
-This also provides various pre-built "black boxes" including the full
-"folio-demo" and "folio-backend-auth".
+This also provides various pre-built "black boxes" including
+"folio/stable" and "folio/testing".
 The current built boxes are also available to download from
-[HashiCorp Atlas](https://atlas.hashicorp.com/folio).
+[Vagrant Cloud](https://app.vagrantup.com/folio).
 The list of module versions for each box is shown in its change-log.
 
-## API reference
+## Guides
 
-- The set of automatically generated [API documentation](api).
+<!-- ../../okapi/doc/md2toc -l 2 -h 3 index.md -->
+* [Background orientation](#background-orientation)
+* [Setup and configuration](#setup-and-configuration)
+* [Getting started](#getting-started)
+* [Reference documentation](#reference-documentation)
+* [Development tips](#development-tips)
+* [Tutorials](#tutorials)
+* [Development management](#development-management)
+* [Community](#community)
+* [Other topics](#other-topics)
 
-## Guidelines
+### Background orientation
 
-Guidelines, tips, and best practice documents:
-
-- Other community [guidelines](../community/#guidelines):
-  Contribution; which communication forum; issue tracker; etc.
+- [Which forum](/community/which-forum) to use for communication:
+  Issue tracker, Slack chat, Discuss discussion, GitHub pull requests.
+  Some guidelines about when to use each, some usage tips, and links to each.
+- [Guidelines for Contributing Code](/community/contrib-code) --
+  GitHub Flow, feature branches, pull requests, version numbers, coding style,
+  tests, etc.
 - A [FOLIO glossary](glossary) of some terms and technologies used in FOLIO.
+- [Guidelines for FOLIO issue tracker](guide-issues).
+
+### Setup and configuration
+
 - Some tips to assist developers to configure their
   [local workstation setup](setup).
-- Some tips to assist developers to conduct [troubleshooting](troubleshooting).
+- [Built artifacts](artifacts) -- released and snapshot FOLIO artifacts in various formats.
+Configurations for accessing.
+- [Source code](/source-code/) -- explanation of each repository.
+
+### Getting started
+
+- [Primer for frontend development](primer-develop-frontend).
+
+### Reference documentation
+
+- [Overiew](reference) of all technical reference documentation.
+- <span id="api-reference"/> The set of automatically generated [API documentation](api).
+
+### Development tips
+
+- Conduct [troubleshooting](troubleshooting).
+
+### Tutorials
+
+- The [FOLIO Developer's Curriculum](/curriculum/) is a series
+of lessons that can be followed on your own or can form the basis of an
+instructor-led workshop.
+
+### Development management
+
+- [Release procedures](release-procedures).
+- The [FOLIO project roadmap](https://wiki.folio.org/display/PC/FOLIO+Roadmap).
+
+### Community
+
+- [Community](/community/)
+- [Which forum](/community/which-forum) to use for communication.
+- [Special Interest Groups](https://wiki.folio.org/display/PC/Special+Interest+Groups) (SIGs).
+- [Guidelines for Contributing Code](/community/contrib-code).
+
+### Other topics
+
 - [Best practices for Dockerfiles](best-practices-dockerfiles).
 - The FOLIO [build, test, and deployment infrastructure](automation).
-- [Release procedures](release-procedures).
 - A proposal for [error response formats](https://github.com/folio-org/okapi/blob/master/doc/error-formats-in-folio.md).
+- [FOLIO UX](http://ux.folio.org/) -- user experience (UX) driven design and prototypes.
+- [FOLIOForums](https://www.openlibraryenvironment.org/archives/category/olfforum) -- upcoming events and recordings of past ones.

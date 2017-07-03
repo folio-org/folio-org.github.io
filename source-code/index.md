@@ -41,7 +41,9 @@ issues and general discussion via the
 The key server-side element is Okapi itself: the FOLIO middleware component
 that acts as a gateway for access to all modules, handling redundancy,
 sessions, etc.  Individual modules are provided in their own repositories, each
-named `mod-`_name_: note that these are mostly at the proof-of-concept stage.
+named `mod-`_name_ (note that these are mostly at the proof-of-concept stage).
+Each module has its own documentation.
+
 Some of these modules are built from specifications in
 [RAML](http://raml.org/), the RESTful API Modeling Language: this process is
 facilitated by the code in the `raml-module-builder` repository.
@@ -117,33 +119,31 @@ envisage that most FOLIO UI work will be done in the context of
 Stripes.
 
 The stripes-core [documentation roadmap](https://github.com/folio-org/stripes-core#documentation-roadmap) is the starting point.
+Each module has its own documentation.
 
 Note that Stripes is still in the design phase, so although code
 exists and can be run, the APIs are likely to change.
 
 - [stripes-core](https://github.com/folio-org/stripes-core)
   -- The UI framework.
+  Includes extensive documentation.
 
 - [stripes-sample-platform](https://github.com/folio-org/stripes-sample-platform)
   -- Configuration for a sample platform and to run a local
   Stripes UI development server.
 
+- [stripes-components](https://github.com/folio-org/stripes-components)
+  -- A component library for Stripes.
+  Includes documentation for each library, and guides to assist their development.
+
 - [stripes-connect](https://github.com/folio-org/stripes-connect)
   -- Manages the connection of UI components to back-end modules.
 
-- [stripes-components](https://github.com/folio-org/stripes-components)
-  -- A component library for Stripes.
-
-- [stripes-loader](https://github.com/folio-org/stripes-loader)
-  -- Module loader for Webpack, to enable pluggable Redux applications.
-  This module is responsible for pulling the required UI modules
-  into a given Stripes UI.
+- [stripes-form](https://github.com/folio-org/stripes-form)
+  -- A redux-form wrapper for Stripes.
 
 - [stripes-logger](https://github.com/folio-org/stripes-logger)
   -- Simple category-based logging for Stripes.
-
-- [okapi-stripes](https://github.com/folio-org/okapi-stripes)
-  -- Server-side module for generating UIs based on Stripes.
 
 - [ui-users](https://github.com/folio-org/ui-users)
   -- Stripes UI module: administrating users.
@@ -157,6 +157,21 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-organization](https://github.com/folio-org/ui-organization)
   -- Stripes UI module: managing organization settings.
+
+- [ui-developer](https://github.com/folio-org/ui-developer)
+  -- Stripes UI module: developer facilities,
+  e.g. managing local developer settings.
+
+- [stripes-loader](https://github.com/folio-org/stripes-loader)
+  -- Module loader for Webpack, to enable pluggable Redux applications.
+  This module is responsible for pulling the required UI modules
+  into a given Stripes UI.
+
+- [okapi-stripes](https://github.com/folio-org/okapi-stripes)
+  -- Server-side module for generating UIs based on Stripes.
+
+- [stripes-demo-platform](https://github.com/folio-org/stripes-demo-platform)
+  -- Stripes platform for building the demo site.
 
 - [ui-okapi-console](https://github.com/folio-org/ui-okapi-console)
   -- Stripes UI module: console for administrating Okapi.
@@ -176,10 +191,13 @@ exists and can be run, the APIs are likely to change.
   Get a FOLIO installation up and running quickly.
   Read the docs there, and follow to build the boxes.
   The current built boxes are also available to download from
-  [HashiCorp Atlas](https://atlas.hashicorp.com/folio).
+  [Vagrant Cloud](https://app.vagrantup.com/folio).
 
 - [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
   -- CQL (Contextual Query Language) to PostgreSQL JSON converter in Java.
+
+- [ui-testing](https://github.com/folio-org/ui-testing)
+  -- Regression tests for FOLIO UI.
 
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.

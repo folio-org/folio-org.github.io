@@ -129,7 +129,12 @@ look at the git log, and the code, and decide whether all is good.
 You can also look at the commit messages and code changes in GitHub.
 
 If there are small details, you can fix them yourself, commit and push to the
-branch. If there are serious issues, you can close the pull request without
+branch. Do not copy & paste the content as this loses the commit history that
+contains the attribution required by the Apache License and is used for the
+[merge check](https://git-scm.com/book/en/v2/Git-Branching-Branch-Management)
+of the `git branch` command; if needed create a new branch from pull request's branch.
+
+If there are serious issues, you can close the pull request without
 merging, with a comment explaining why you could not do it.
 
 Once all is well, you can use GitHub's interface. Just go to the

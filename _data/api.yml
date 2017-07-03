@@ -40,12 +40,12 @@ raml:
 
 raml-module-builder:
   - label: domain-models-api-interfaces
-    directory: domain-models-api-interfaces/src/main/resources/raml
+    directory: domain-models-api-interfaces/raml
     files:
       - admin
       - jobs
       - sample
-    ramlutil: raml-util
+    ramlutil: domain-models-api-interfaces/raml/raml-util
 
 mod-acquisitions:
   - label: null
@@ -73,6 +73,7 @@ mod-circulation-storage:
     directory: ramls
     files:
       - loan-storage
+      - loan-policy-storage
     ramlutil: raml-util
 
 mod-configuration:
@@ -80,7 +81,7 @@ mod-configuration:
     directory: ramls/configuration
     files:
       - config
-    ramlutil: raml-util
+    ramlutil: ramls/raml-util
 
 mod-inventory:
   - label: null

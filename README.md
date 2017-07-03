@@ -4,10 +4,10 @@ which is [dev.folio.org](http://dev.folio.org/)
 To contribute changes, please make the changes in a new branch and submit a
 pull request.
 
-Local development requires [Ruby](http://ruby-lang.org/) and
-[Bundler](http://bundler.io/).
+Local development requires [Ruby](https://www.ruby-lang.org/) and
+[Bundler](https://bundler.io/).
 The 'bundle install' step will install the relevant local
-[Jekyll](http://jekyllrb.com/).
+[Jekyll](https://jekyllrb.com/).
 
 For Ruby, using [rbenv](https://github.com/rbenv/rbenv) and its 'ruby-build'
 plugin ensures a smooth process. In this directory, set the ruby version
