@@ -98,7 +98,7 @@ The list of module versions for each box is shown in its change-log.
   GitHub Flow, feature branches, pull requests, version numbers, coding style,
   tests, etc.
 - A [FOLIO glossary](glossary) of some terms and technologies used in FOLIO.
-- [Guidelines for FOLIO issue tracker](guide-issues).
+- [Guidelines for FOLIO issue tracker](/community/guide-issues).
 
 ### Setup and configuration
 
