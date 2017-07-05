@@ -162,6 +162,9 @@ exists and can be run, the APIs are likely to change.
   -- Stripes UI module: developer facilities,
   e.g. managing local developer settings.
 
+- [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
+  -- Stripes UI plugin: User-finder.
+
 - [stripes-loader](https://github.com/folio-org/stripes-loader)
   -- Module loader for Webpack, to enable pluggable Redux applications.
   This module is responsible for pulling the required UI modules
