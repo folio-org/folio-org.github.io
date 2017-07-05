@@ -44,3 +44,10 @@ Example APT source configuration:
 ```
 deb https://repository.folio.org/packages/ubuntu xenial/
 ```
+
+## Vagrant boxes
+
+At Vagrant Cloud: [https://app.vagrantup.com/folio](https://app.vagrantup.com/folio)
+
+See [further](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md) information.
+
