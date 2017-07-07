@@ -74,6 +74,7 @@ mod-circulation-storage:
     files:
       - loan-storage
       - loan-policy-storage
+      - loan-rules-storage
     ramlutil: raml-util
 
 mod-configuration:
