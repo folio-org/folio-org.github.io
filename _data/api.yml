@@ -31,6 +31,7 @@ raml:
     files:
       - groups
       - users
+      - addressTypes
     ramlutil: .
   - label: shared-mod-users-bl
     directory: ramls/mod-users-bl
