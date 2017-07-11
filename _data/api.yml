@@ -67,7 +67,7 @@ mod-circulation:
     directory: ramls
     files:
       - circulation
-    ramlutil: raml-util
+    ramlutil: ramls/raml-util
 
 mod-circulation-storage:
   - label: null
