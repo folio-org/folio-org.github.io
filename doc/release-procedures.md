@@ -9,12 +9,12 @@ This document summarises the release procedures for FOLIO projects.
 * [Introduction](#introduction)
 * [Maven-based modules](#maven-based-modules)
     * [Ensure POM declarations](#ensure-pom-declarations)
-    * [Ensure that JIRA issues are ready](#ensure-that-jira-issues-are-ready)
+    * [Ensure that Jira issues are ready](#ensure-that-jira-issues-are-ready)
     * [Prepare the news document](#prepare-the-news-document)
     * [Prepare and perform the source release](#prepare-and-perform-the-source-release)
     * [Build and release artifacts](#build-and-release-artifacts)
     * [Add release notes to GitHub](#add-release-notes-to-github)
-    * [Prepare JIRA for next release](#prepare-jira-for-next-release)
+    * [Prepare Jira for next release](#prepare-jira-for-next-release)
     * [Announce](#announce)
     * [Other current Maven-related discussion](#other-current-maven-related-discussion)
 * [Gradle-based modules](#gradle-based-modules)
@@ -85,7 +85,7 @@ Replace 'PROJECT_NAME' above with the name of the appropriate github repository.
 Commit all changes to the POM in git.
 
 
-### Ensure that JIRA issues are ready
+### Ensure that Jira issues are ready
 
 For the issues that are associated with this release, ensure that they reflect reality,
 have the relevant `Fix Version` parameter, and are closed.
@@ -138,7 +138,7 @@ Go to the "Releases" area (e.g.
 Select `Draft a new release` then choose the tag of the new release and add the NEWS portion
 -- *only* the part of NEWS since previous release.
 
-### Prepare JIRA for next release
+### Prepare Jira for next release
 
 Use the "Admin" interface to "Manage Versions". Add the next version.
 

@@ -58,7 +58,7 @@ We follow a variation of the Apache motto:
 - Try to keep discussion focussed, and as close to the item as possible.
   For example, if your feedback is about a certain GitHub commit, then
   use its comment-on-commit facility.
-  Likewise with pull requests and JIRA issue tracker.
+  Likewise with pull requests and Jira issue tracker.
 
 ## Discuss
 
