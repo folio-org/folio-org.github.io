@@ -31,3 +31,4 @@ Configurable content, e.g. from a data file.
 * Ensure that theme source development is not stale, e.g. responds to pull requests.
 
 * Meets responsive web design.
+Consider browser window width 1024px (this is the "medium" [used](https://github.com/folio-org/stripes-components/blob/master/lib/variables.css) by the FOLIO application, and seems to be around the GitHub width too) and consider hand-held devices.
