@@ -102,8 +102,10 @@ Other people will create tracker Links between relevant issues.
 
 Using an Issue identifier within text Comments will automatically link to
 it, e.g. `FOLIO-298`.
-Using an issue identifier in git commit messages will also automatically
-link to the Issue.
+Note that it must be upper-case.
+
+Using such an issue identifier in git commit messages will also automatically
+link the Issue to the commits.
 
 Provide other relevant links, for example GitHub pull requests and
 Discuss topics.
