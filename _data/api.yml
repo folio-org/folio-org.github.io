@@ -60,7 +60,7 @@ mod-acquisitions-postgres:
     directory: ramls/acquisitions
     files:
       - acquisitions
-    ramlutil: raml-util
+    ramlutil: ramls/raml-util
 
 mod-circulation:
   - label: null
