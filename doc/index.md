@@ -130,6 +130,7 @@ instructor-led workshop.
 ### Development management
 
 - [Release procedures](release-procedures).
+- [Create a new FOLIO module and do initial setup](create-new-repo).
 - The [FOLIO project roadmap](https://wiki.folio.org/display/PC/FOLIO+Roadmap).
 
 ### Community
