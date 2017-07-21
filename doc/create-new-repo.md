@@ -3,7 +3,7 @@ layout: page
 title: Create a new FOLIO module and do initial setup
 ---
 
-These are notes to assist developers with creating a new FOIO module as a repository.
+These are notes to assist developers with creating a new FOLIO module as a repository.
 Initial setup files and configuration.
 
 Add a concise description to the GitHub repository. Consider that this will also be used elsewhere.
