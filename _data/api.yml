@@ -102,3 +102,10 @@ mod-inventory-storage:
       - loan-type
       - material-type
     ramlutil: raml-util
+
+mod-notes:
+  - label: null
+    directory: ramls
+    files:
+      - note
+    ramlutil: ramls/raml-util
