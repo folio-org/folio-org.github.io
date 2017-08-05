@@ -62,6 +62,6 @@ navbanner-position: top
 #
 # Note: If this option is set to 'yes', then make sure the file 'navbanner.md' is present (can be found in the theme folder) in the same project folder as the index.md file.
 
-use-separate-navbanner: yes
+use-separate-navbanner: no
 
 # End of file
