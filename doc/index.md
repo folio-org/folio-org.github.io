@@ -1,6 +1,12 @@
 ---
 layout: page
 title: Documentation
+menuInclude: yes
+menuLink: yes
+menuTopTitle: Doc
+menuTopIndex: 5
+menuSubTitle: "Overview"
+menuSubIndex: 1
 ---
 
 Documentation for the various components of FOLIO is in continuous

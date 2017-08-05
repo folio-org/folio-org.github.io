@@ -1,6 +1,10 @@
 ---
 layout: page
 title: Source Code
+menuInclude: yes
+menuLink: yes
+menuTopTitle: Source
+menuTopIndex: 3
 ---
 
 The FOLIO platform consists of both server-side and client-side components, and

@@ -1,6 +1,12 @@
 ---
 layout: page
 title: API documentation
+menuInclude: yes
+menuLink: yes
+menuTopTitle: Ref
+menuTopIndex: 2
+menuSubTitle: "API documentation"
+menuSubIndex: 2
 ---
 
 These API specifications are automatically generated from the relevant
