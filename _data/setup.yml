@@ -16,7 +16,7 @@
 # The secondary column must reside in the "_includes" directory and is called "secondary-column.html"
 # Front matter can specify a different file for the secondary column ("secondary-column-content").
 #
-secondary-column: left
+secondary-column: none
 
 # Controls visibility of the tertiary column
 # Values: present | none
@@ -27,7 +27,7 @@ secondary-column: left
 # The tertiary column must reside in the "_includes" directory and is called "tertiary-column.html"
 # Front matter can specify a different file for the tertiary column ("tertiary-column-content").
 #
-tertiary-column: present
+tertiary-column: none
 
 # For the number of posts visible on the home page.
 # Value: > 0
