@@ -42,7 +42,7 @@ number-of-recent-posts-in-widget: 10
 # Enables or disables the cookies warning.
 # Values: yes | no
 #
-enable-cookies-policy: yes
+enable-cookies-policy: no
 
 # Place the navbanner in the main column
 # Values: top | main
