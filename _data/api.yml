@@ -77,7 +77,7 @@ mod-circulation-storage:
       - loan-policy-storage
       - loan-rules-storage
       - request-storage
-    ramlutil: raml-util
+    ramlutil: ramls/raml-util
 
 mod-configuration:
   - label: null
