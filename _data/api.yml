@@ -88,10 +88,10 @@ mod-configuration:
 
 mod-inventory:
   - label: null
-    directory: doc/api/inventory
+    directory: ramls
     files:
       - inventory
-    ramlutil: doc/api/shared
+    ramlutil: ramls/raml-util
 
 mod-inventory-storage:
   - label: null
