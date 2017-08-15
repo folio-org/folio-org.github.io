@@ -157,9 +157,9 @@ $navbar-side-margin:					$hspacing-unit; // Only for medium and wide navbars
 $navbar-menu-item-spacing:				$hspacing-unit; // Only for medium and wide navbars
 
 // Column width specification. The secondary and tertiary column can be removed in the _config.yml file.
-$primary-column-min-width:				480px;
-$secondary-column-width: 				240px;
-$tertiary-column-width:					240px;
+$primary-column-min-width:				560px;
+$secondary-column-width: 				200px;
+$tertiary-column-width:					200px;
 
 // There should be no need to change the next 4 definitions
 $wide-min-width:						$primary-column-min-width + $secondary-column-width + $tertiary-column-width;
