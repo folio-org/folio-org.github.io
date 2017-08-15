@@ -86,10 +86,6 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-inventory-storage](https://github.com/folio-org/mod-inventory-storage)
   -- Persistent storage to complement the inventory module.
 
-- [mod-metadata](https://github.com/folio-org/mod-metadata)
-  -- Initial work on a FOLIO metadata store and related
-  knowledge-base/cataloging concepts.
-
 - [mod-circulation](https://github.com/folio-org/mod-circulation)
   -- Circulation capabilities, including loan items from the inventory.
 
@@ -99,6 +95,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-configuration](https://github.com/folio-org/mod-configuration)
   -- Demo configuration module based on the raml-module-builder and a set
   of RAML and JSON Schemas backed by a PostgreSQL asynchronous implementation.
+
+- [mod-notes](https://github.com/folio-org/mod-notes)
+  -- Notes on all types of objects.
 
 - [mod-acquisitions](https://github.com/folio-org/mod-acquisitions)
   -- Demo acquisitions module, based on the raml-module-builder framework,
@@ -142,6 +141,9 @@ exists and can be run, the APIs are likely to change.
 - [stripes-form](https://github.com/folio-org/stripes-form)
   -- A redux-form wrapper for Stripes.
 
+- [stripes-redux](https://github.com/folio-org/stripes-redux)
+  -- A collection of utility functions and middleware for redux and redux-observable.
+
 - [stripes-logger](https://github.com/folio-org/stripes-logger)
   -- Simple category-based logging for Stripes.
 
@@ -151,9 +153,14 @@ exists and can be run, the APIs are likely to change.
 - [ui-items](https://github.com/folio-org/ui-items)
   -- Stripes UI module: administrating bibliographic items.
 
-- [ui-scan](https://github.com/folio-org/ui-scan)
-  -- Stripes UI module: items check-in and check-out with simulated
-  barcode scanning.
+- [ui-requests](https://github.com/folio-org/ui-requests)
+  -- Stripes UI module: making requests on items.
+
+- [ui-checkin](https://github.com/folio-org/ui-checkin)
+  -- Stripes UI module: checking in items with simulated scans.
+
+- [ui-checkout](https://github.com/folio-org/ui-checkout)
+  -- Stripes UI module: checking out items with simulated scans.
 
 - [ui-organization](https://github.com/folio-org/ui-organization)
   -- Stripes UI module: managing organization settings.
