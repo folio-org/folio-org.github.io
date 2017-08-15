@@ -141,6 +141,9 @@ exists and can be run, the APIs are likely to change.
 - [stripes-form](https://github.com/folio-org/stripes-form)
   -- A redux-form wrapper for Stripes.
 
+- [stripes-redux](https://github.com/folio-org/stripes-redux)
+  -- A collection of utility functions and middleware for redux and redux-observable.
+
 - [stripes-logger](https://github.com/folio-org/stripes-logger)
   -- Simple category-based logging for Stripes.
 
