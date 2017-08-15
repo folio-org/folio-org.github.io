@@ -135,7 +135,7 @@ $menu-item-separator:					''; // Default = nothing
 // center     - to center the menu items in the middle of the navigation bar
 // flex-end   - to have them at the right most position possible
 // for more options, see "justif-content".
-$menu-alignment:						center;
+$menu-alignment:						flex-start;
 
 // Navigation menu coloring and sizing
 $menu-symbol-color:						$theme-color;
