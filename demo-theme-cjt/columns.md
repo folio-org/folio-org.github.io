@@ -13,4 +13,4 @@ tertiary-column: present
 
 Secondary and tertiary columns. Using default theme configuration for content.
 
-See also page-specifc [demo](/doc/api).
+See also page-specifc columns [demo](specific-columns).

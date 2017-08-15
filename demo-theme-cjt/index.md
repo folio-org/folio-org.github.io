@@ -29,14 +29,15 @@ See front-matter of each doc for menu-item inclusion and positioning. Uses CSS o
 
 ### Secondary and tertiary columns, page-specific
 
-[Secondary column](/doc/api).
-See `/doc/api/index.md` front-matter.
-See `/_includes/column-secondary-doc-api.html` configuration file
-(and `_includes/*-column.html` in the theme).
+[Secondary column](specific-columns).
+See `./specific-columns.md` front-matter.
+See `/_includes/column-secondary-specific-columns.html` configuration file.
 Tertiary column would also be available.
-Configuration for extra columns is switched off for all pages, and applied to specific pages via the front-matter.
+Configuration for extra columns is switched off for all pages, and applied to specific pages via their front-matter.
 
 Columns using [default](columns) content configuration and widgets.
+See `./columns.md` front-matter.
+See `_includes/*-column.html` in the theme.
 
 ### Content blocks
 
@@ -61,4 +62,4 @@ Auto-generated. Configured via each page front-matter.
 
 * Fix and enhance footer.
 
-* Investigate the examples that come with the theme. Copy its "pages" directory to see.
+* Investigate the examples that come with the theme. Copy its "pages" directory to see. To find sources, do `bundle show classic-jekyll-theme`

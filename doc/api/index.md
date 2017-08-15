@@ -7,8 +7,6 @@ menuTopTitle: Ref
 menuTopIndex: 2
 menuSubTitle: "API documentation"
 menuSubIndex: 2
-secondary-column: left
-secondary-column-content: column-secondary-doc-api.html
 ---
 
 These API specifications are automatically generated from the relevant
