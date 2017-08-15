@@ -66,7 +66,7 @@
                 {% if ape.menuLink == false %}
                   <p>{{ topTitle }}</p>
                 {% else %}
-                  <a href="{{ ape.url }}"><p>{{ topTitle }}</p></a>
+                  <a href="{{ ape.url | remove: ".html" }}"><p>{{ topTitle }}</p></a>
                 {% endif %}
                 {% assign pageFound == true %}
                 {% break %}
@@ -88,7 +88,7 @@
               <div class="menu-subitem">
                 <div class="menu-subitem-symbol"></div>
                 <div class="menu-subitem-title">
-                  <a href="{{ subTitle.url }}"><p>{{ subTitle.menuSubTitle }}</p></a>
+                  <a href="{{ subTitle.url | remove: ".html" }}"><p>{{ subTitle.menuSubTitle }}</p></a>
                 </div>
               </div>
             </li>
@@ -130,7 +130,7 @@
             <div class="menu-subitem">
               <div class="menu-subitem-symbol"></div>
               <div class="menu-subitem-title">
-                <a href="{{ cat.url }}"><p>{{ cat.title | capitalize }}</p></a>
+                <a href="{{ cat.url | remove: ".html" }}"><p>{{ cat.title | capitalize }}</p></a>
               </div>
             </div>
           </li>
