@@ -23,19 +23,6 @@
   line-height: $base-line-height * $base-font-size * 1.25;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $f-color-purple;
-}
-
-.site-footer {
-  border-top: 1px solid $f-color-orange;
-}
-
 .highlighter-rouge pre.highlight {
   background: $f-color-lighter-grey;
 }
