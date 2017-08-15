@@ -32,7 +32,7 @@ $grey-color-dark:				darken($grey-color, 25%);
 
 // The theme-color is the default for some of the other elements that can be colored in this theme.
 // Its value is only used in this file.
-$theme-color:							green;
+$theme-color:							$f-color-purple;
 
 // Background color or pictures (keep in mind that some of these will overlap)
 // The value set is assigned to the CSS3 'background' property. Use 'none' if no background image or color is used.
@@ -110,7 +110,7 @@ $widget-divider-color:      			$theme-color;
 $widget-divider-display:				block; //none;
 
 // Site title and menu-label coloring and sizing
-$site-title-color:						$theme-color;
+$site-title-color:						$f-color-orange;
 $narrow-site-title-font-size:			2 * $base-font-size;
 $medium-site-title-font-size:  			2.5 * $base-font-size;
 $wide-site-title-font-size:				3.5 * $base-font-size;
