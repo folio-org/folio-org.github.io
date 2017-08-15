@@ -153,9 +153,11 @@ exists and can be run, the APIs are likely to change.
 - [ui-requests](https://github.com/folio-org/ui-requests)
   -- Stripes UI module: making requests on items.
 
-- [ui-scan](https://github.com/folio-org/ui-scan)
-  -- Stripes UI module: items check-in and check-out with simulated
-  barcode scanning.
+- [ui-checkin](https://github.com/folio-org/ui-checkin)
+  -- Stripes UI module: checking in items with simulated scans.
+
+- [ui-checkout](https://github.com/folio-org/ui-checkout)
+  -- Stripes UI module: checking out items with simulated scans.
 
 - [ui-organization](https://github.com/folio-org/ui-organization)
   -- Stripes UI module: managing organization settings.
