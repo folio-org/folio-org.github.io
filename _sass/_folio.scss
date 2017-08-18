@@ -59,3 +59,9 @@ tr:target td:first-child {
   margin: 0;
   font-size: $base-font-size;
 }
+
+.page-title {
+  text-align: center;
+  margin-top: $vspacing-unit;
+  margin-bottom: $vspacing-unit;
+}
