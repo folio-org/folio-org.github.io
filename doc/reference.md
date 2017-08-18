@@ -3,7 +3,7 @@ layout: page
 title: Reference documentation
 menuInclude: yes
 menuLink: yes
-menuTopTitle: Ref
+menuTopTitle: Reference
 menuTopIndex: 2
 menuSubTitle: "Overview"
 menuSubIndex: 1

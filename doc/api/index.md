@@ -3,7 +3,7 @@ layout: page
 title: API documentation
 menuInclude: yes
 menuLink: yes
-menuTopTitle: Ref
+menuTopTitle: Reference
 menuTopIndex: 2
 menuSubTitle: "API documentation"
 menuSubIndex: 2

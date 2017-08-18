@@ -1,7 +1,7 @@
 - url: /doc/#guides
   menuInclude: yes
   menuLink: yes
-  menuTopTitle: Doc
+  menuTopTitle: Documentation
   menuTopIndex: 5
   menuSubTitle: "Guides"
   menuSubIndex: 2
@@ -9,7 +9,7 @@
 - url: /doc/#background-orientation
   menuInclude: yes
   menuLink: yes
-  menuTopTitle: Doc
+  menuTopTitle: Documentation
   menuTopIndex: 5
   menuSubTitle: "Background orientation"
   menuSubIndex: 3
@@ -17,7 +17,7 @@
 - url: /doc/#setup-and-configuration
   menuInclude: yes
   menuLink: yes
-  menuTopTitle: Doc
+  menuTopTitle: Documentation
   menuTopIndex: 5
   menuSubTitle: "Setup and configuration"
   menuSubIndex: 4
@@ -25,7 +25,7 @@
 - url: /doc/#getting-started
   menuInclude: yes
   menuLink: yes
-  menuTopTitle: Doc
+  menuTopTitle: Documentation
   menuTopIndex: 5
   menuSubTitle: "Getting started"
   menuSubIndex: 5
@@ -33,7 +33,7 @@
 - url: /doc/#reference-documentation
   menuInclude: yes
   menuLink: yes
-  menuTopTitle: Doc
+  menuTopTitle: Documentation
   menuTopIndex: 5
   menuSubTitle: "Reference documentation"
   menuSubIndex: 6
@@ -41,7 +41,7 @@
 - url: /doc/#development-tips
   menuInclude: yes
   menuLink: yes
-  menuTopTitle: Doc
+  menuTopTitle: Documentation
   menuTopIndex: 5
   menuSubTitle: "Development tips"
   menuSubIndex: 7
@@ -49,7 +49,7 @@
 - url: /doc/#tutorials
   menuInclude: yes
   menuLink: yes
-  menuTopTitle: Doc
+  menuTopTitle: Documentation
   menuTopIndex: 5
   menuSubTitle: "Tutorials"
   menuSubIndex: 8
@@ -57,7 +57,7 @@
 - url: /doc/#development-management
   menuInclude: yes
   menuLink: yes
-  menuTopTitle: Doc
+  menuTopTitle: Documentation
   menuTopIndex: 5
   menuSubTitle: "Development management"
   menuSubIndex: 9
@@ -65,7 +65,7 @@
 - url: /doc/#community
   menuInclude: yes
   menuLink: yes
-  menuTopTitle: Doc
+  menuTopTitle: Documentation
   menuTopIndex: 5
   menuSubTitle: "Community"
   menuSubIndex: 10
