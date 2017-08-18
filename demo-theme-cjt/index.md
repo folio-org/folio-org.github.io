@@ -20,12 +20,11 @@ for our branch at
 Auto-generated.
 See front-matter of each doc for menu-item inclusion and positioning. Uses CSS only.
 
-* TODO: How to include menu-items linked to sections of other docs?
-* TODO: Perhaps additional feature to include other items via Liquid processing and an `_data/nav.yml` configuration.
+Additional menu items (i.e. links to page section headings) is configured in `_data/nav-other.yml` and handled via an extension to `_includes/navbanner.html`
 
-### Top banner and navbar
+### Top FOLIO-wide navbar
 
-* TODO: Not yet added. Not sure yet if can be achieved utilising current nav features.
+The items are configured in `_includes/folio-navbar.html` and included via `_includes/navbanner.html`
 
 ### Secondary and tertiary columns, page-specific
 
@@ -60,6 +59,6 @@ Auto-generated. Configured via each page front-matter.
 
 * Investigate other theme configuration abilities.
 
-* Fix and enhance footer.
+* Enhance footer.
 
 * Investigate the examples that come with the theme. Copy its "pages" directory to see. To find sources, do `bundle show classic-jekyll-theme`
