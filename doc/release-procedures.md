@@ -13,7 +13,7 @@ This document summarises the release procedures for FOLIO projects.
     * [Prepare the news document](#prepare-the-news-document)
     * [Update any scripts and descriptors for release version](#update-any-scripts-and-descriptors-for-release-version)
     * [Prepare and perform the source release](#prepare-and-perform-the-source-release)
-    * [Update any scripts and descriptors for next developmnet release](#update-any-scripts-and-descriptors-for-next-developmnet-release)
+    * [Update any scripts and descriptors for next development release](#update-any-scripts-and-descriptors-for-next-development-release)
     * [Build and release artifacts](#build-and-release-artifacts)
     * [Add release notes to GitHub](#add-release-notes-to-github)
     * [Prepare Jira for next release](#prepare-jira-for-next-release)
@@ -132,7 +132,7 @@ git push
 git push --tags
 ```
 
-### Update any scripts and descriptors for next developmnet release
+### Update any scripts and descriptors for next development release
 Update version numbers in the same places you did earlier, but now for the
 next development version
 
