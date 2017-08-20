@@ -59,3 +59,17 @@ tr:target td:first-child {
   margin-top: $vspacing-unit;
   margin-bottom: $vspacing-unit;
 }
+
+a {
+  color: $f-link-color;
+  text-decoration: none;
+
+  &:visited {
+    color: darken($f-link-color, 15%);
+  }
+
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
