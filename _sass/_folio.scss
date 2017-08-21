@@ -24,12 +24,18 @@
 }
 
 .highlighter-rouge pre.highlight {
-  background: $f-color-lighter-grey;
+  background-color: $f-color-lighter-grey;
 }
 
-pre,
-code {
+pre {
   border: 1px solid $f-color-light-grey;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: $f-color-lighter-grey;
+}
+code {
+  padding-left: 1px;
+  padding-right: 1px;
   background-color: $f-color-lighter-grey;
 }
 
