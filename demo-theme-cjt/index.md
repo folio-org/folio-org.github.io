@@ -9,9 +9,9 @@ menuSubTitle: "Overview"
 menuSubIndex: 1
 ---
 
-Using [github.com/Balancingrock/classic-jekyll-theme](https://github.com/Balancingrock/classic-jekyll-theme)
-for our branch at
-[https://github.com/folio-org/folio-org.github.io/branches](https://github.com/folio-org/folio-org.github.io/branches)
+Investigating [github.com/Balancingrock/classic-jekyll-theme](https://github.com/Balancingrock/classic-jekyll-theme).
+See our [branch](https://github.com/folio-org/folio-org.github.io/tree/FOLIO-789-theme-cjt).
+See issue [FOLIO-789](https://issues.folio.org/browse/FOLIO-789).
 
 ## Some features
 
@@ -20,7 +20,7 @@ for our branch at
 Auto-generated.
 See front-matter of each doc for menu-item inclusion and positioning. Uses CSS only.
 
-Additional menu items (i.e. links to page section headings) is configured in `_data/nav-other.yml` and handled via an extension to `_includes/navbanner.html`
+Additional menu items (i.e. links to page section headings) are configured in `_data/nav-other.yml` and handled via an extension to `_includes/navbanner.html`
 
 ### Top FOLIO-wide navbar
 
@@ -47,6 +47,7 @@ See `_data/cblocks.yml` configuration file.
 ### Content widgets
 
 * TODO: Not yet investigated.
+* See the default ones being utilised via this [columns](columns) demo.
 
 ### Categories navigation menu
 
@@ -55,7 +56,7 @@ Auto-generated. Configured via each page front-matter.
 
 ## Some general TODO notes
 
-* The `_sass/folio*.scss` files will need tweaking. They are still as-is for the current "minima" theme. Could also be interfering in some places.
+* The `_sass/folio*.scss` files will need tweaking. They are still mostly as-is for the current "minima" theme. Could also be interfering in some places.
 
 * Investigate other theme configuration abilities.
 
