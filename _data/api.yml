@@ -76,7 +76,8 @@ mod-circulation-storage:
       - loan-storage
       - loan-policy-storage
       - loan-rules-storage
-    ramlutil: raml-util
+      - request-storage
+    ramlutil: ramls/raml-util
 
 mod-configuration:
   - label: null
@@ -87,10 +88,10 @@ mod-configuration:
 
 mod-inventory:
   - label: null
-    directory: doc/api/inventory
+    directory: ramls
     files:
       - inventory
-    ramlutil: doc/api/shared
+    ramlutil: ramls/raml-util
 
 mod-inventory-storage:
   - label: null
@@ -100,4 +101,11 @@ mod-inventory-storage:
       - item-storage
       - loan-type
       - material-type
-    ramlutil: raml-util
+    ramlutil: ramls/raml-util
+
+mod-notes:
+  - label: null
+    directory: ramls
+    files:
+      - note
+    ramlutil: ramls/raml-util
