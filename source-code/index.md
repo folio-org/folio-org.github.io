@@ -99,6 +99,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-notes](https://github.com/folio-org/mod-notes)
   -- Notes on all types of objects.
 
+- [mod-notify](https://github.com/folio-org/mod-notify)
+  -- Notifications to the users.
+
 - [mod-acquisitions](https://github.com/folio-org/mod-acquisitions)
   -- Demo acquisitions module, based on the raml-module-builder framework,
   exposing acquisition APIs and objects against MongoDB.
