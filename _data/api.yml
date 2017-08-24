@@ -109,3 +109,10 @@ mod-notes:
     files:
       - note
     ramlutil: ramls/raml-util
+
+mod-notify:
+  - label: null
+    directory: ramls
+    files:
+      - notify
+    ramlutil: ramls/raml-util
