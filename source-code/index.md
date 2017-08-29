@@ -70,6 +70,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-login](https://github.com/folio-org/mod-login)
   -- Handles username/password login.
 
+- [mod-login-saml](https://github.com/folio-org/mod-login-saml)
+  -- Handles SAML login.
+
 - [mod-permissions](https://github.com/folio-org/mod-permissions)
   -- Handles permissions and permissions/user associations.
 
@@ -164,6 +167,9 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-checkout](https://github.com/folio-org/ui-checkout)
   -- Stripes UI module: checking out items with simulated scans.
+
+- [ui-circulation](https://github.com/folio-org/ui-circulation)
+  -- Stripes UI module: Circulation.
 
 - [ui-organization](https://github.com/folio-org/ui-organization)
   -- Stripes UI module: managing organization settings.

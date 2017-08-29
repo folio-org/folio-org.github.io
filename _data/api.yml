@@ -103,6 +103,13 @@ mod-inventory-storage:
       - material-type
     ramlutil: ramls/raml-util
 
+mod-login-saml:
+  - label: null
+    directory: ramls
+    files:
+      - saml-login
+    ramlutil: null
+
 mod-notes:
   - label: null
     directory: ramls
