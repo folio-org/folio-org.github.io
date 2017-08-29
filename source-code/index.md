@@ -70,6 +70,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-login](https://github.com/folio-org/mod-login)
   -- Handles username/password login.
 
+- [mod-login-saml](https://github.com/folio-org/mod-login-saml)
+  -- Handles SAML login.
+
 - [mod-permissions](https://github.com/folio-org/mod-permissions)
   -- Handles permissions and permissions/user associations.
 
