@@ -120,6 +120,8 @@ Configurations for accessing.
 ### Development tips
 
 - Conduct [troubleshooting](troubleshooting).
+- [Regression tests for FOLIO UI](https://github.com/folio-org/ui-testing)
+The testing framework is explained. Guidelines for module developers.
 
 ### Tutorials
 
