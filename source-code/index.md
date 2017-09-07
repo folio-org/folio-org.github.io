@@ -217,6 +217,7 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-testing](https://github.com/folio-org/ui-testing)
   -- Regression tests for FOLIO UI.
+  The testing framework is explained. Guidelines for module developers.
 
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.

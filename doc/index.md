@@ -34,8 +34,7 @@ detail about the Okapi API Gateway that controls a FOLIO system.
 
 ## Modules
 
-The [FOLIO-Sample-Modules
-guide](https://github.com/folio-org/folio-sample-modules/blob/master/README.md)
+The [FOLIO-Sample-Modules guide](https://github.com/folio-org/folio-sample-modules/blob/master/README.md)
 contains an explanation of FOLIO modules, a "getting started" guide,
 and some sample module code.
 [Follow on](https://github.com/folio-org/folio-sample-modules/blob/master/README.md#further-reading)
@@ -83,6 +82,7 @@ The list of module versions for each box is shown in its change-log.
 * [Setup and configuration](#setup-and-configuration)
 * [Getting started](#getting-started)
 * [Reference documentation](#reference-documentation)
+* [Fundamental documentation](#fundamental-documentation)
 * [Development tips](#development-tips)
 * [Tutorials](#tutorials)
 * [Development management](#development-management)
@@ -110,12 +110,28 @@ Configurations for accessing.
 
 ### Getting started
 
-- [Primer for frontend development](primer-develop-frontend).
+- [Primer for back-end development](primer-develop-backend).
+- [Primer for front-end development](primer-develop-frontend).
 
 ### Reference documentation
 
 - [Overiew](reference) of all technical reference documentation.
 - <span id="api-reference"/> The set of automatically generated [API documentation](api).
+
+### Fundamental documentation
+
+- [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md).
+- [FOLIO-Sample-Modules guide](https://github.com/folio-org/folio-sample-modules/blob/master/README.md).
+- [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework.
+- Each [server-side](../source-code/#server-side) and [client-side](../source-code/#client-side)
+module's own documentation.
+- [Stripes Core README](https://github.com/folio-org/stripes-core/blob/master/README.md)
+guides to all front-end documentation.
+- [The Stripes Module Developer's Guide](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md)
+for those writing UI modules for Stripes.
+- [Regression tests for FOLIO UI](https://github.com/folio-org/ui-testing).
+The testing framework is explained. Guidelines for module developers.
+- [Permissions in Stripes and FOLIO](https://github.com/folio-org/stripes-core/blob/master/doc/permissions.md).
 
 ### Development tips
 
