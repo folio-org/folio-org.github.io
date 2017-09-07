@@ -34,8 +34,7 @@ detail about the Okapi API Gateway that controls a FOLIO system.
 
 ## Modules
 
-The [FOLIO-Sample-Modules
-guide](https://github.com/folio-org/folio-sample-modules/blob/master/README.md)
+The [FOLIO-Sample-Modules guide](https://github.com/folio-org/folio-sample-modules/blob/master/README.md)
 contains an explanation of FOLIO modules, a "getting started" guide,
 and some sample module code.
 [Follow on](https://github.com/folio-org/folio-sample-modules/blob/master/README.md#further-reading)
@@ -110,7 +109,7 @@ Configurations for accessing.
 
 ### Getting started
 
-- [Primer for frontend development](primer-develop-frontend).
+- [Primer for front-end development](primer-develop-frontend).
 
 ### Reference documentation
 
