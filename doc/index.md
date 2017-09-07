@@ -109,6 +109,7 @@ Configurations for accessing.
 
 ### Getting started
 
+- [Primer for back-end development](primer-develop-backend).
 - [Primer for front-end development](primer-develop-frontend).
 
 ### Reference documentation
