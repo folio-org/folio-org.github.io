@@ -172,7 +172,13 @@ released, and add the next version(s)
 
 ### Announce
 
-Send a note to Slack if relevant.
+Send a note to #general on Slack if relevant.
+
+### Improve this doc
+
+If you found some parts of this guide to be out of date, or hard to understand,
+now is a good time to fix that. Check out git@github.com:folio-org/folio-org.github.io.git
+and edit `doc/release-procedures.md`.
 
 ### Other current Maven-related discussion
 
