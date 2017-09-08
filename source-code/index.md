@@ -150,11 +150,17 @@ exists and can be run, the APIs are likely to change.
 - [stripes-redux](https://github.com/folio-org/stripes-redux)
   -- A collection of utility functions and middleware for redux and redux-observable.
 
+- [stripes-util-notes](https://github.com/folio-org/stripes-util-notes)
+  -- A utility module for attaching notes to entities such as users and items.
+
 - [stripes-logger](https://github.com/folio-org/stripes-logger)
   -- Simple category-based logging for Stripes.
 
 - [ui-users](https://github.com/folio-org/ui-users)
   -- Stripes UI module: administrating users.
+
+- [ui-instances](https://github.com/folio-org/ui-instances)
+  -- Stripes UI module: administrating instances.
 
 - [ui-items](https://github.com/folio-org/ui-items)
   -- Stripes UI module: administrating bibliographic items.
@@ -174,12 +180,12 @@ exists and can be run, the APIs are likely to change.
 - [ui-organization](https://github.com/folio-org/ui-organization)
   -- Stripes UI module: managing organization settings.
 
+- [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
+  -- Stripes UI plugin: User-finder.
+
 - [ui-developer](https://github.com/folio-org/ui-developer)
   -- Stripes UI module: developer facilities,
   e.g. managing local developer settings.
-
-- [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
-  -- Stripes UI plugin: User-finder.
 
 - [stripes-loader](https://github.com/folio-org/stripes-loader)
   -- Module loader for Webpack, to enable pluggable Redux applications.
