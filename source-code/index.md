@@ -74,6 +74,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-login](https://github.com/folio-org/mod-login)
   -- Handles username/password login.
 
+- [mod-login-saml](https://github.com/folio-org/mod-login-saml)
+  -- Handles SAML login.
+
 - [mod-permissions](https://github.com/folio-org/mod-permissions)
   -- Handles permissions and permissions/user associations.
 
@@ -102,6 +105,9 @@ facilitated by the code in the `raml-module-builder` repository.
 
 - [mod-notes](https://github.com/folio-org/mod-notes)
   -- Notes on all types of objects.
+
+- [mod-notify](https://github.com/folio-org/mod-notify)
+  -- Notifications to the users.
 
 - [mod-acquisitions](https://github.com/folio-org/mod-acquisitions)
   -- Demo acquisitions module, based on the raml-module-builder framework,
@@ -148,11 +154,17 @@ exists and can be run, the APIs are likely to change.
 - [stripes-redux](https://github.com/folio-org/stripes-redux)
   -- A collection of utility functions and middleware for redux and redux-observable.
 
+- [stripes-util-notes](https://github.com/folio-org/stripes-util-notes)
+  -- A utility module for attaching notes to entities such as users and items.
+
 - [stripes-logger](https://github.com/folio-org/stripes-logger)
   -- Simple category-based logging for Stripes.
 
 - [ui-users](https://github.com/folio-org/ui-users)
   -- Stripes UI module: administrating users.
+
+- [ui-instances](https://github.com/folio-org/ui-instances)
+  -- Stripes UI module: administrating instances.
 
 - [ui-items](https://github.com/folio-org/ui-items)
   -- Stripes UI module: administrating bibliographic items.
@@ -166,15 +178,18 @@ exists and can be run, the APIs are likely to change.
 - [ui-checkout](https://github.com/folio-org/ui-checkout)
   -- Stripes UI module: checking out items with simulated scans.
 
+- [ui-circulation](https://github.com/folio-org/ui-circulation)
+  -- Stripes UI module: Circulation.
+
 - [ui-organization](https://github.com/folio-org/ui-organization)
   -- Stripes UI module: managing organization settings.
+
+- [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
+  -- Stripes UI plugin: User-finder.
 
 - [ui-developer](https://github.com/folio-org/ui-developer)
   -- Stripes UI module: developer facilities,
   e.g. managing local developer settings.
-
-- [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
-  -- Stripes UI plugin: User-finder.
 
 - [stripes-loader](https://github.com/folio-org/stripes-loader)
   -- Module loader for Webpack, to enable pluggable Redux applications.
@@ -212,6 +227,7 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-testing](https://github.com/folio-org/ui-testing)
   -- Regression tests for FOLIO UI.
+  The testing framework is explained. Guidelines for module developers.
 
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Primer for frontend development
+title: Primer for front-end development
 ---
 
 Start with introduction to [user interface](/doc/#user-interface)
@@ -12,3 +12,5 @@ Eventually go via the foundation described in
 [The Stripes Module Developer's Guide](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md)
 to
 [Skeleton module](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#skeleton-module).
+
+The [Regression tests for FOLIO UI](https://github.com/folio-org/ui-testing) will assist.
