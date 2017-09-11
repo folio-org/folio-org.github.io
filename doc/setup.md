@@ -14,6 +14,7 @@ A collection of tips to assist developers to configure their local workstation s
 * [Coding style](#coding-style)
     * [Style guidelines and configuration](#style-guidelines-and-configuration)
     * [Use EditorConfig for consistent whitespace](#use-editorconfig-for-consistent-whitespace)
+* [Use .gitignore](#use-gitignore)
 * [Update git submodules](#update-git-submodules)
 * [Troubleshooting](#troubleshooting)
 
@@ -86,6 +87,40 @@ Consult its documentation for each plugin. Note that some do not handle all Edit
 In such cases refer to the documentation for the particular text editor, as it might have its own facilities.
 For example, the Java text editor in Eclipse has its own configuration for `trim_trailing_whitespace`
 (see [notes](http://stackoverflow.com/questions/14178839/is-there-a-way-to-automatically-remove-trailing-spaces-in-eclipse)).
+
+## Use .gitignore
+
+The `.gitignore` file in each repository can be minimal if each developer handles their own.
+One way is to [configure](https://git-scm.com/docs/gitignore) a user-specific global file (i.e. add `core.excludesFile` to `~/.gitconfig`).
+
+Then either use something like [gitignore.io](https://github.com/joeblau/gitignore.io),
+or just use a simple set such as the following.
+Add other specific ones for your particular operating system, text editors, and IDEs.
+
+    ## general
+    *.log
+
+    ## macos
+    *.DS_Store
+
+    ## maven
+    target/
+
+    ## gradle
+    .gradle/
+    build/
+
+    ## node
+    node_modules/
+    npm-debug.log
+
+    ## vim
+    *~
+    .*.sw?
+
+    ## folio
+    **/src/main/java/org/folio/rest/jaxrs/
+    .vertx/
 
 ## Update git submodules
 
