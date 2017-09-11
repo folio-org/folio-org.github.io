@@ -24,7 +24,8 @@ Add .editorconfig file.
 
 Add initial NEWS.md or CHANGELOG.md file.
 
-Add a basic .gitignore file. Developers will have their own ~/.gitignore_global to handle most.
+If necessary, add a basic .gitignore file.
+Developers will have [their own](setup#use-gitignore) ~/.gitignore_global to handle most.
 
 Add other configuration files. Follow similar existing repositories.
 For back-end modules: DeploymentDescriptor.json, ModuleDescriptor.json, Dockerfile, etc.
