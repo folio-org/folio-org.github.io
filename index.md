@@ -3,11 +3,6 @@ layout: page
 title: Welcome to FOLIO software development
 ---
 
-<div style="border: 3px solid red; padding: 2px;">
-Demo: This is a demonstration of a potential new theme.
-See <a href="demo-theme-cjt">demo and notes</a>.
-</div>
-
 This is the home for developers building [FOLIO, a new open source library
 system](https://www.folio.org/).
 
