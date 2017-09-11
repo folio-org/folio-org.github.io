@@ -148,7 +148,7 @@ git push
 
 ### Build and release artifacts
 
-An 'artifact' in this context could either be an Maven artifact released to the FOLIO
+An 'artifact' in this context could either be a Maven artifact released to the FOLIO
 Maven repository, a docker image released to Docker Hub, a Linux distribution package
 or some combination of artifacts depending on the project.  To release the artifacts
 relevant to your project, log into the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
@@ -168,7 +168,7 @@ Select `Draft a new release` then choose the tag of the new release and add the 
 ### Prepare Jira for next release
 
 Use the "Admin" interface to "Manage Versions". Mark the current version as
-released, and add the next version(s)
+released, and add the next version(s).
 
 ### Announce
 
