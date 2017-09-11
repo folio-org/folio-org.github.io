@@ -1,3 +1,27 @@
+- url: /source-code/#server-side
+  menuInclude: yes
+  menuLink: yes
+  menuTopTitle: Source
+  menuTopIndex: 3
+  menuSubTitle: "Server-side"
+  menuSubIndex: 2
+
+- url: /source-code/#client-side
+  menuInclude: yes
+  menuLink: yes
+  menuTopTitle: Source
+  menuTopIndex: 3
+  menuSubTitle: "Client-side"
+  menuSubIndex: 3
+
+- url: /source-code/#other-projects
+  menuInclude: yes
+  menuLink: yes
+  menuTopTitle: Source
+  menuTopIndex: 3
+  menuSubTitle: "Other projects"
+  menuSubIndex: 4
+
 - url: /doc/#guides
   menuInclude: yes
   menuLink: yes
@@ -38,13 +62,21 @@
   menuSubTitle: "Reference documentation"
   menuSubIndex: 6
 
+- url: /doc/#fundamental-documentation
+  menuInclude: yes
+  menuLink: yes
+  menuTopTitle: Documentation
+  menuTopIndex: 5
+  menuSubTitle: "Fundamental documentation"
+  menuSubIndex: 7
+
 - url: /doc/#development-tips
   menuInclude: yes
   menuLink: yes
   menuTopTitle: Documentation
   menuTopIndex: 5
   menuSubTitle: "Development tips"
-  menuSubIndex: 7
+  menuSubIndex: 8
 
 - url: /doc/#tutorials
   menuInclude: yes
@@ -52,7 +84,7 @@
   menuTopTitle: Documentation
   menuTopIndex: 5
   menuSubTitle: "Tutorials"
-  menuSubIndex: 8
+  menuSubIndex: 9
 
 - url: /doc/#development-management
   menuInclude: yes
@@ -60,7 +92,7 @@
   menuTopTitle: Documentation
   menuTopIndex: 5
   menuSubTitle: "Development management"
-  menuSubIndex: 9
+  menuSubIndex: 10
 
 - url: /doc/#community
   menuInclude: yes
@@ -68,4 +100,4 @@
   menuTopTitle: Documentation
   menuTopIndex: 5
   menuSubTitle: "Community"
-  menuSubIndex: 10
+  menuSubIndex: 11
