@@ -1,0 +1,19 @@
+- name: Source code
+  description: Description of each folio-org GitHub repository.
+  link: /source-code
+  image: /images/FOLIO_fav.png
+
+- name: API docs
+  description: The generated RAML documentation.
+  link: /doc/api
+  image: /images/FOLIO_fav.png
+
+- name: Source code
+  description: Description of each folio-org GitHub repository.
+  link: /source-code
+  image: /images/FOLIO_fav.png
+
+- name: API docs
+  description: The generated RAML documentation.
+  link: /doc/api
+  image: /images/FOLIO_fav.png

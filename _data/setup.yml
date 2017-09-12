@@ -1,0 +1,67 @@
+# Classic Jekyll Theme settings
+
+# Classic uses three columns Primary, Secondary and Tertiary.
+# The primary column is always present and cannot be manipulated.
+# The secondary column is optional and is either to the left or to the right of the primary.
+# The tertiary column is optional and if present will be opposite the secondary column in the wide display and below the secondary in the medium display.
+# In the narrow display all three columns will be below each other (if present)
+# If the tertiary column is used, the secondary column *must* also be used.
+
+# Controls the placing and visibility of the secondary column
+# Values: left | right | none
+# - left: The secondary column appears on the left side of the main column
+# - right: The secondary column appears on the right side of the main column
+# - none: There is no secondary column (note that this also inhibits the tertiary column)
+# Here the default value is defined, pages may override this in their front matter.
+# The secondary column must reside in the "_includes" directory and is called "secondary-column.html"
+# Front matter can specify a different file for the secondary column ("secondary-column-content").
+#
+secondary-column: none
+
+# Controls visibility of the tertiary column
+# Values: present | none
+# - present: The tertiary column is visible.
+# - none: There is no tertiary column.
+# The tertiary column is always on the opposite side of the main column from the secondary column.
+# Here the default value is defined, pages may override this in their front matter.
+# The tertiary column must reside in the "_includes" directory and is called "tertiary-column.html"
+# Front matter can specify a different file for the tertiary column ("tertiary-column-content").
+#
+tertiary-column: none
+
+# For the number of posts visible on the home page.
+# Value: > 0
+#
+number-of-posts-on-home-page: 5
+
+# For the number of posts titles shown in the 'recent' widget
+# Value: > 0
+#
+number-of-recent-posts-in-widget: 10
+
+# Enables or disables the cookies warning.
+# Values: yes | no
+#
+enable-cookies-policy: no
+
+# Place the navbanner in the main column
+# Values: top | main
+# - top: The navigation banner will be placed above all the columns
+# - main: The navigation banner will be placed inside the main column at the top.
+# This is the default value, it may be overriden by YAML frontmatter.
+#
+# Hint: It may be advantageous to set the $navbanner-include-banner value in the classic-jekyll-theme.scss to 'false' if this value here is set to 'true'.
+#
+navbanner-position: top
+
+# Create a separate file containing the Navigation & Banner
+# Values: yes | no
+#
+# Using a separate navbanner file will speed up jekyll compilation a lot. However it also means that the browser has to make two additional fetches: the navbanner file and the JQuery library (the later from google). However this is mitigated by the fact that both files can be cached by the browser.
+# If another JQuery library has to be used, edit the _includes/head.html file accordingly.
+#
+# Note: If this option is set to 'yes', then make sure the file 'navbanner.md' is present (can be found in the theme folder) in the same project folder as the index.md file.
+
+use-separate-navbanner: yes
+
+# End of file

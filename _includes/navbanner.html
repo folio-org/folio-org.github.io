@@ -1,0 +1,148 @@
+<!-- Title of the site is always visible -->
+<div class="navbanner-title">
+  <div class="banner-icon-container"><div class="banner-icon"></div></div>
+  <p class="site-title-text">{{ site.title }}</p>
+</div>
+
+<!-- The menu symbol will only be shown on narrow and medium layout -->
+<div class="navbanner-label">
+  <label for="menu-checkbox"><p><!-- empty but necessary! --></p></label>
+</div>
+<input type="checkbox" id="menu-checkbox">
+
+<!-- Separator between banner and navigation bar. Visibility depends on screen width. -->
+<div class="nav-top-divider"></div>
+
+  <!-- Include FOLIO top-level navigation bar -->
+  {% include folio-navbar.html %}
+
+<!-- Navigation bar visibility depends on screen width. -->
+<nav class="navbanner-menu">
+
+  <!-- Get the potential list of other nav items -->
+  {% assign nav-other = '' | split: '' %}
+  {% if site.data.nav-other %}{% assign nav-other = site.data.nav-other %}{% endif %}
+
+  <!-- Create a list of top menu item titles -->
+  {% assign topTitles = "" | split: "" %}
+  {% assign sortedPages = site.pages | concat: nav-other | where:'menuInclude', true | where_exp:'item', 'item.menuTopTitle != nil' | sort: 'menuTopIndex', 'last' %}
+  {% for ape in sortedPages %}{% assign topTitles = topTitles | push: ape.menuTopTitle %}{% endfor %}
+  {% assign topTitles = topTitles | uniq %}
+
+  <!-- Using the above list, create the menu and submenu's -->
+  <ul>
+
+    <!-- Home page -->
+    {% assign home = 'Home' %}
+    {% if site.data.text-for.tHome %}{% assign home = site.data.text-for.tHome %}{% endif %}
+    <li>
+      <div class="menu-item">
+        <div class="menu-item-symbol"></div>
+        <div class="menu-item-title"><a href="{{ site.url }}{{ site.baseurl }}"><p>{{ home }}</p></a></div>
+      </div>
+    </li>
+
+    <!-- Page menus -->
+    {% for topTitle in topTitles %}
+
+      <!-- Create a list of sub menu item titles -->
+      {% assign subTitles = site.pages | concat: nav-other | where:'menuInclude', true | where:'menuTopTitle', topTitle | where_exp:'item', 'item.menuSubTitle != nil' | sort: 'menuSubIndex', 'last' %}
+
+      <li>
+
+        <!-- Create top menu item -->
+        <input type="checkbox" id="{{ topTitle | append:'-checkbox'}}">
+        <label for="{{ topTitle | append:'-checkbox'}}">
+          <div class="menu-item-separator"><p><!-- empty but necessary --></p></div>
+          <div class="menu-item">
+            <div class="menu-item-symbol">
+            {% if subTitles.size > 0 %}
+              <p><!-- will be filled by disclosure indicator --></p>
+            {% endif %}
+            </div>
+            <div class="menu-item-title">
+            <!-- Find page to link to -->
+            {% assign pageFound = false %}
+            {% assign topItems = site.pages | concat: nav-other %}
+            {% for ape in topItems %}
+              {% if ape.menuTopTitle == topTitle and ape.menuSubTitle == nil %}
+                {% if ape.menuLink == false %}
+                  <p>{{ topTitle }}</p>
+                {% else %}
+                  <a href="{{ ape.url | remove: ".html" }}"><p>{{ topTitle }}</p></a>
+                {% endif %}
+                {% assign pageFound == true %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            {% if pageFound == false %}
+              <p>{{ topTitle }}</p>
+            {% endif %}
+            </div>
+          </div>
+        </label>
+
+        <!-- Create sub menu items -->
+        {% if subTitles.size > 0 %}
+          <ul>
+          {% for subTitle in subTitles %}
+            {% if subTitle.menuLink != false %}
+            <li>
+              <div class="menu-subitem">
+                <div class="menu-subitem-symbol"></div>
+                <div class="menu-subitem-title">
+                  <a href="{{ subTitle.url | remove: ".html" }}"><p>{{ subTitle.menuSubTitle }}</p></a>
+                </div>
+              </div>
+            </li>
+            {% else %}
+            <li>
+              <div class="menu-subitem">
+                <div class="menu-subitem-symbol"></div>
+                <div class="menu-subitem-title"><p>{{ subTitle.menuSubTitle }}</p></div>
+              </div>
+            </li>
+            {% endif %}
+          {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+
+    <!-- Categories menu -->
+    {% assign cats = site.pages | where:'layout', 'category-page' | sort:'title' %}
+    {% if cats.size > 0 %}
+      {% assign categories = 'Categories' %}
+      {% if site.data.text-for.tCategories %}{% assign categories = site.data.text-for.tCategories %}{% endif %}
+      <li>
+        <input type="checkbox" id="category-checkbox">
+        <label for="category-checkbox">
+          <div class="menu-item-separator"><p><!-- empty but necessary --></p></div>
+          <div class="menu-item">
+            <div class="menu-item-symbol">
+              <p><!-- empty but necessary! --></p>
+            </div>
+            <div class="menu-item-title">
+              <p>{{ categories }}</p>
+            </div>
+          </div>
+        </label>
+        <ul>
+        {% for cat in cats %}
+          <li>
+            <div class="menu-subitem">
+              <div class="menu-subitem-symbol"></div>
+              <div class="menu-subitem-title">
+                <a href="{{ cat.url | remove: ".html" }}"><p>{{ cat.title | capitalize }}</p></a>
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+        </ul>
+      </li>
+    {% endif %}
+  </ul>
+</nav>
+
+<!-- Separator between navigation bar and column panel. Visibility depends on screen width. -->
+<div class="nav-bottom-divider"></div>

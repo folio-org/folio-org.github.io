@@ -15,6 +15,9 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="icon" href="{{ "/images/FOLIO_fav.png" | prepend: site.baseurl }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  {% if site.data.setup.use-separate-navbanner %}
+  <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
+  {% endif %}
 {% if site.google_analytics and jekyll.environment == 'production' %}
 {% include analytics.html %}
 {% endif %}
