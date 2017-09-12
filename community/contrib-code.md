@@ -1,10 +1,6 @@
 ---
 layout: page
 title: Guidelines for Contributing Code
-menuInclude: yes
-menuLink: yes
-menuTopTitle: Contributing
-menuTopIndex: 7
 ---
 
 <!-- ../../okapi/doc/md2toc -l 2 -h 3 contrib-code.md -->

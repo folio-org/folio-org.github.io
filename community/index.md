@@ -1,12 +1,6 @@
 ---
 layout: page
 title: FOLIO Community
-menuInclude: yes
-menuLink: yes
-menuTopTitle: Community
-menuTopIndex: 6
-menuSubTitle: "Overview"
-menuSubIndex: 1
 ---
 
 ## Roadmap

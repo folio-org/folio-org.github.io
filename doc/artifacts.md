@@ -1,10 +1,6 @@
 ---
 layout: page
 title: Built artifacts
-menuInclude: yes
-menuLink: yes
-menuTopTitle: Download
-menuTopIndex: 4
 ---
 
 There are several repositories that contain snapshot and released FOLIO artifacts in various formats.

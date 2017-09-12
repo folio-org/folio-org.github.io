@@ -36,11 +36,11 @@ See [notes](work/README.md).
 ## Theme enhancements
 
 If there is a need to override any more files, then copy them from the theme.
-To find them, do: `bundle show classic-jekyll-theme`
+To find them, do: `bundle show minima`
 
 ## Regenerate ToC
 
-To regenerate the Table of Contents for some source files, see instructions above its ToC.
+To regenerate the Table of Contents for some files, see instructions above its ToC.
 Then replace the ToC with the generated output.
 
 ## Deployment

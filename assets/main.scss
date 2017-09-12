@@ -2,12 +2,13 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-// Set our variables
+// Set the variables that we need to override.
 @import "folio-base";
 
 // Import the theme.
-// It will provide its variables and rules.
-@import "classic-jekyll-theme";
+// It will set other variables that are not already set.
+// It will provide the rules.
+@import "minima";
 
 // Provide our rules.
 @import "folio";

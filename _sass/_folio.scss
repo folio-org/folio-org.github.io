@@ -1,16 +1,48 @@
-.highlighter-rouge pre.highlight {
-  background-color: $f-color-lighter-grey;
+.site-header {
+  border-top: 5px solid $f-color-purple;
+  border-bottom: 1px solid $f-color-purple;
 }
 
-pre {
-  border: 1px solid $f-color-light-grey;
-  padding-left: 2px;
-  padding-right: 2px;
-  background-color: $f-color-lighter-grey;
+.site-title {
+  &,
+  &:visited {
+    color: $f-color-orange;
+  }
 }
+
+.site-nav {
+  font-size: $small-font-size;
+
+  .page-link {
+    color: $f-color-purple;
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+  line-height: $base-line-height * $base-font-size * 1.25;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $f-color-purple;
+}
+
+.site-footer {
+  border-top: 1px solid $f-color-orange;
+}
+
+.highlighter-rouge pre.highlight {
+  background: $f-color-lighter-grey;
+}
+
+pre,
 code {
-  padding-left: 1px;
-  padding-right: 1px;
+  border: 1px solid $f-color-light-grey;
   background-color: $f-color-lighter-grey;
 }
 
@@ -32,26 +64,4 @@ th {
 }
 tr:target td:first-child {
   border-left: 5px solid $f-color-orange;
-}
-
-// Reduce vertical whitespace
-.page-title {
-  text-align: center;
-  margin-top: $vspacing-unit;
-  margin-bottom: $vspacing-unit;
-}
-
-// Set our link and visited colors
-a {
-  color: $f-link-color;
-  text-decoration: none;
-
-  &:visited {
-    color: darken($f-link-color, 15%);
-  }
-
-  &:hover {
-    color: $text-color;
-    text-decoration: underline;
-  }
 }
