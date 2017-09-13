@@ -10,8 +10,10 @@ There are several repositories that contain snapshot and released FOLIO artifact
 ## Docker images
 
 At Docker Hub:
+
 * [https://hub.docker.com/u/folioorg/](https://hub.docker.com/u/folioorg/) released versions
 * [https://hub.docker.com/r/folioci/](https://hub.docker.com/r/folioci/) snapshot versions
+
 See [Automation/Docker Hub](automation#docker-hub) for details.
 
 ## Maven artifacts
