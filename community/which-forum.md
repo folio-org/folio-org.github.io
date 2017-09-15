@@ -1,6 +1,12 @@
 ---
 layout: page
 title: Which forum to use for communication
+menuInclude: yes
+menuLink: yes
+menuTopTitle: Community
+menuTopIndex: 6
+menuSubTitle: Interaction
+menuSubIndex: 2
 ---
 
 Developers need to efficiently discuss various topics such as issues,

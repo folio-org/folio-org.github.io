@@ -1,6 +1,12 @@
 ---
 layout: page
 title: Reference documentation
+menuInclude: yes
+menuLink: yes
+menuTopTitle: Reference
+menuTopIndex: 2
+menuSubTitle: "Overview"
+menuSubIndex: 1
 ---
 
 Standards and reference documentation.
