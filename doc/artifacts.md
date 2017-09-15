@@ -13,7 +13,12 @@ There are several repositories that contain snapshot and released FOLIO artifact
 
 ## Docker images
 
-At Docker Hub: [https://hub.docker.com/u/folioorg/](https://hub.docker.com/u/folioorg/)
+At Docker Hub:
+
+* [https://hub.docker.com/u/folioorg/](https://hub.docker.com/u/folioorg/) released versions
+* [https://hub.docker.com/r/folioci/](https://hub.docker.com/r/folioci/) snapshot versions
+
+See [Automation/Docker Hub](automation#docker-hub) for details.
 
 ## Maven artifacts
 
@@ -29,6 +34,11 @@ Example POM configuration:
   </repositories>
 ```
 
+Browse at
+[https://repository.folio.org/#browse/browse/components](https://repository.folio.org/#browse/browse/components)
+and see [Automation/Nexus Repository Manager](automation#nexus-repository-manager)
+for details.
+
 ## NPM packages
 
 For Stripes and UI applications.
@@ -38,6 +48,11 @@ Example .npmrc configuration:
 ```
 @folio:registry=https://repository.folio.org/repository/npm-folio/
 ```
+
+Browse at
+[https://repository.folio.org/#browse/browse/components](https://repository.folio.org/#browse/browse/components)
+and see [Automation/Nexus Repository Manager](automation#nexus-repository-manager)
+for details.
 
 ## Debian/Ubuntu APT repository
 

@@ -124,15 +124,6 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-notify](https://github.com/folio-org/mod-notify)
   -- Notifications to the users.
 
-- [mod-acquisitions](https://github.com/folio-org/mod-acquisitions)
-  -- Demo acquisitions module, based on the raml-module-builder framework,
-  exposing acquisition APIs and objects against MongoDB.
-
-- [mod-acquisitions-postgres](https://github.com/folio-org/mod-acquisitions-postgres)
-  -- A second demo acquisitions module, also based on the
-  raml-module-builder framework and exposing acquisition APIs and
-  objects, but implemented with an asynchronous Postgres client.
-
 ## Client-side
 
 Since Okapi represents all the FOLIO functionality as well-behaved web

@@ -83,7 +83,6 @@ the community.
   Malconian, David Crossley
 - mod-auth, mod-users: Kurt Nordstrom (lead)
 - mod-metadata: Marc Johnson (lead), Ian Ibbotson, Jakub Skoczen
-- mod-acquisitions: shale, Julian Ladisch
 - mod-circulation, mod-configuration: shale
 - raml-module-builder: shale, Adam Dickmeiss, Julian Ladisch
 - raml: shale, Adam Dickmeiss
