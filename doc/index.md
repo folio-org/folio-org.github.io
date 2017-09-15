@@ -5,8 +5,49 @@ menuInclude: yes
 menuLink: yes
 menuTopTitle: Documentation
 menuTopIndex: 5
-menuSubTitle: "Overview"
+menuSubTitle: Overview
 menuSubIndex: 1
+menuSubs:
+-
+ title: Guides
+ index: 2
+ anchorId: guides
+-
+ title: Background orientation
+ index: 3
+ anchorId: background-orientation
+-
+ title: Setup and configuration
+ index: 4
+ anchorId: setup-and-configuration
+-
+ title: Getting started
+ index: 5
+ anchorId: getting-started
+-
+ title: Reference documentation
+ index: 6
+ anchorId: reference-documentation
+-
+ title: Fundamental documentation
+ index: 7
+ anchorId: fundamental-documentation
+-
+ title: Development tips
+ index: 8
+ anchorId: development-tips
+-
+ title: Tutorials
+ index: 9
+ anchorId: tutorials
+-
+ title: Development management
+ index: 10
+ anchorId: development-management
+-
+ title: Community
+ index: 11
+ anchorId: community
 ---
 
 Documentation for the various components of FOLIO is in continuous

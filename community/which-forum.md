@@ -5,7 +5,7 @@ menuInclude: yes
 menuLink: yes
 menuTopTitle: Community
 menuTopIndex: 6
-menuSubTitle: "Interaction"
+menuSubTitle: Interaction
 menuSubIndex: 2
 ---
 
