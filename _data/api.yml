@@ -48,20 +48,6 @@ raml-module-builder:
       - sample
     ramlutil: domain-models-api-interfaces/raml/raml-util
 
-mod-acquisitions:
-  - label: null
-    directory: ramls/acquisitions
-    files:
-      - acquisitions
-    ramlutil: ramls/raml-util
-
-mod-acquisitions-postgres:
-  - label: null
-    directory: ramls/acquisitions
-    files:
-      - acquisitions
-    ramlutil: ramls/raml-util
-
 mod-circulation:
   - label: null
     directory: ramls
