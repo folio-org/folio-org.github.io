@@ -29,6 +29,12 @@ bundle exec jekyll build
 
 Occasionally do `bundle update` to advance the versions of dependencies.
 
+To verify internal and external links, do:
+
+```
+./bin/htmlproofer.sh
+```
+
 ## Work area - management of dev site
 
 See [notes](work/README.md).

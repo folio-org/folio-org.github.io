@@ -21,9 +21,10 @@ Some FOLIO repositories also have specific notes.
 
 ## Keep system tools up-to-date
 
-As [explained](setup#up-to-date) in the FOLIO setup documentation,
+As [explained](setup#introduction) in the FOLIO setup documentation,
 keeping the operating system and tools up-to-date will generally help to
 avoid issues.
+See [minimum versions](setup#tools) of some tools.
 
 ## Update git submodules
 
