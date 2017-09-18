@@ -20,7 +20,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
-exclude: [Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, vendor, work]
+exclude: [bin, Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, tmp, vendor, work]
 
 collections:
   posts:
