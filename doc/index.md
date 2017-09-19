@@ -175,6 +175,7 @@ Configurations for accessing.
 module's own documentation.
 - [Stripes Core README](https://github.com/folio-org/stripes-core/blob/master/README.md)
 guides to all front-end documentation.
+- [Stripes entities: packages, modules, apps and more](https://github.com/folio-org/stripes-core/blob/master/doc/modules-apps-etc.md).
 - [The Stripes Module Developer's Guide](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md)
 for those writing UI modules for Stripes.
 - [Regression tests for FOLIO UI](https://github.com/folio-org/ui-testing).
