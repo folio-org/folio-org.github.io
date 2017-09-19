@@ -6,7 +6,7 @@ menuLink: yes
 menuTopTitle: Community
 menuTopIndex: 6
 menuSubTitle: Interaction
-menuSubIndex: 2
+menuSubIndex: 3
 ---
 
 Developers need to efficiently discuss various topics such as issues,
@@ -26,7 +26,7 @@ we have four primary forums:
 [Issues](#issue-tracker) (bug and task tracking), and
 [GitHub](#github) (source code and pull requests).
 
-There are also secondary communication channels, including:
+<span id="secondary"/> There are also secondary communication channels, including:
 [Slack](#slack) (realtime chat),
 [FOLIOForums](https://www.openlibraryenvironment.org/archives/category/olfforum),
 conference calls,

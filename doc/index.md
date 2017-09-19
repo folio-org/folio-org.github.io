@@ -140,7 +140,8 @@ The list of module versions for each box is shown in its change-log.
 
 - [Which forum](/community/which-forum) to use for communication:
   Issue tracker, Slack chat, Discuss discussion, GitHub pull requests.
-  Some guidelines about when to use each, some usage tips, and links to each.
+  Some guidelines about when to use each, and some usage tips.
+  The [concise list](/community/#collaboration-tools) of forums.
 - [Guidelines for Contributing Code](/community/contrib-code) --
   GitHub Flow, feature branches, pull requests, version numbers, coding style,
   tests, etc.
