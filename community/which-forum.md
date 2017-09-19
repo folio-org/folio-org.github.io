@@ -123,6 +123,12 @@ We follow a variation of the Apache motto:
 
 [https://github.com/folio-org](https://github.com/folio-org)
 
+- See the lists of [all repositories](/source-code) with sections for
+[server-side](/source-code/#server-side) and
+[client-side](/source-code/#client-side) and
+[other](/source-code/#other-projects) and
+projects.
+
 - As explained in
   [Guidelines for Contributing Code](contrib-code),
   use Feature Branches for any task beyond a minor text edit.
