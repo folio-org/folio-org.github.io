@@ -20,7 +20,7 @@ There are no rules, but these guidelines can assist.
 
 As explained in the
 [collaboration tools](../community/#collaboration-tools) section,
-we have four primary fora:
+we have four primary forums:
 [Discuss](#discuss) (messaging forum),
 [Wiki](#wiki) (documents),
 [Issues](#issue-tracker) (bug and task tracking), and
@@ -113,7 +113,7 @@ We follow a variation of the Apache motto:
   Use Comments for further detail.
   See [Guidelines for FOLIO issue tracker](guide-issues).
 
-- Follow up in other fora for any lengthy discussion.
+- Follow up in other forums for any lengthy discussion.
   Then summarise into further issue tracker comments.
   Provide links in both directions.
 
@@ -154,7 +154,7 @@ projects.
 
 - Real-time chat and messaging.
 
-- Summarize topics out to other fora for better visibility.
+- Summarize topics out to other forums for better visibility.
   Remember that Slack is a secondary channel: significant ideas and
   decisions must be recorded elsewhere (Discuss, Wiki, Issues or GitHub)
   for broader vetting.
