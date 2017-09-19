@@ -26,6 +26,12 @@ web applications that expose the functionality of underlying Okapi
 modules. For more information, see the
 [Stripes Core GitHub repository](https://github.com/folio-org/stripes-core).
 
+### Stripes entities
+
+The document
+[Stripes entities: packages, modules, apps and more](https://github.com/folio-org/stripes-core/blob/master/doc/modules-apps-etc.md)
+is a summary of terms used in that context, e.g. component, package, module, app, plugin.
+
 ## FOLIO Technologies and Concepts
 
 ### API
