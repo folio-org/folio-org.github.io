@@ -7,6 +7,11 @@ menuTopTitle: Community
 menuTopIndex: 6
 menuSubTitle: "Overview"
 menuSubIndex: 1
+menuSubs:
+-
+ title: Collaboration tools
+ index: 2
+ anchorId: collaboration-tools
 ---
 
 ## Roadmap
@@ -15,25 +20,80 @@ The FOLIO wiki contains the [project roadmap](https://wiki.folio.org/display/PC/
 
 ## Collaboration tools
 
-The discussion area and mailing lists for the FOLIO project is via Discuss at:
-[https://discuss.folio.org](https://discuss.folio.org)
+Some of the important forums to collaborate, discuss FOLIO, interact with other participants, and find starting points for documentation.
 
-Real-time chat is via Slack at:
-[https://folio-project.slack.com](https://folio-project.slack.com)
-(join [here](https://slack-invitation.folio.org) first).
-
-The issue/bug tracking system is at:
-[https://issues.folio.org](https://issues.folio.org)
-
-Source code is on GitHub:
-[https://github.com/folio-org](https://github.com/folio-org)
-
-The Wiki has many documentation resources,
-and the Special Interest Group
-([SIG](https://wiki.folio.org/display/PC/Special+Interest+Groups)) spaces:
-[https://wiki.folio.org](https://wiki.folio.org)
-
-See [guidelines](which-forum) about using each.
+<table>
+  <thead>
+    <tr>
+      <th>Forum</th>
+      <th width="40%">Purpose</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> <a href="https://discuss.folio.org">discuss.folio.org</a> </td>
+      <td> The discussion area and mailing lists is via Discuss. </td>
+      <td>
+        <a href="which-forum#discuss">How to</a> |
+        Join at front page
+      </td>
+    </tr>
+    <tr>
+      <td> <a href="https://wiki.folio.org">wiki.folio.org</a> </td>
+      <td>
+        Position papers, roadmaps, meeting agendas and minutes, Special Interest Group
+        (<a href="https://wiki.folio.org/display/PC/Special+Interest+Groups">SIG</a>) spaces,
+        other guidelines.
+      </td>
+      <td>
+        <a href="which-forum#wiki">How to</a> |
+        Join at front page (same account as Issues)
+      </td>
+    </tr>
+    <tr>
+      <td> <a href="http://dev.folio.org">dev.folio.org</a> </td>
+      <td> Developer documentation. Also leads to documentation at each repository. </td>
+      <td>
+        <a href="https://github.com/folio-org/folio-org.github.io/blob/master/README.md">How to</a>
+      </td>
+    </tr>
+    <tr>
+      <td> <a href="https://issues.folio.org">issues.folio.org</a> </td>
+      <td> The issue tracking and bug tracking system.
+      </td>
+      <td>
+        <a href="which-forum#issue-tracker">How to</a> |
+        Join at front page |
+        <a href="guide-issues">Guidelines</a>
+      </td>
+    </tr>
+    <tr>
+      <td> <a href="https://github.com/folio-org">github.com/folio-org</a> </td>
+      <td> The source-code repositories are via GitHub. </td>
+      <td>
+        <a href="which-forum#github">How to</a> |
+        <a href="/source-code">List of repos</a> |
+        <a href="contrib-code">Contributing</a>
+      </td>
+    </tr>
+    <tr>
+      <td> <a href="https://folio-project.slack.com">folio-project.slack.com</a> </td>
+      <td> Real-time chat is via Slack. </td>
+      <td>
+        <a href="which-forum#slack">How to</a> |
+        <a href="https://slack-invitation.folio.org">Join</a>
+      </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> Other secondary communication channels.</td>
+      <td>
+        <a href="which-forum#secondary">How to</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Community representatives
 
