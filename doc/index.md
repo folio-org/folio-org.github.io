@@ -185,6 +185,7 @@ The testing framework is explained. Guidelines for module developers.
 ### Development tips
 
 - Conduct [troubleshooting](troubleshooting).
+- Investigate SonarQube [analysis](https://sonarcloud.io/organizations/folio-org/projects).
 
 ### Tutorials
 
