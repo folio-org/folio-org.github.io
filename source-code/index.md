@@ -197,6 +197,9 @@ exists and can be run, the APIs are likely to change.
   -- Stripes UI module: developer facilities,
   e.g. managing local developer settings.
 
+- [eslint-config-stripes](https://github.com/folio-org/eslint-config-stripes)
+  -- The shared eslint configuration for stripes applications and extensions.
+
 - [stripes-loader](https://github.com/folio-org/stripes-loader)
   -- Module loader for Webpack, to enable pluggable Redux applications.
   This module is responsible for pulling the required UI modules
