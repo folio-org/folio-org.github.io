@@ -7,6 +7,8 @@ menuTopTitle: Search
 menuTopIndex: 100
 menuSubTitle: "Search dev.folio.org"
 menuSubIndex: 1
+secondary-column: right
+secondary-column-content: column-2-search.html
 ---
 
 <div class="form">
