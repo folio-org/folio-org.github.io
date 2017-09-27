@@ -16,6 +16,8 @@ jQuery(function() {
     if (debug) { console.timeEnd('Build index'); }
     var idxCount = searchData.length;
     if (debug) { console.log('Ready: idx: ' + idxCount); }
+    JsSearch.StopWordsMap.issue = false;
+    JsSearch.StopWordsMap.environment = false;
   })
   .fail(function() {
     console.log('Error with getting search data');
