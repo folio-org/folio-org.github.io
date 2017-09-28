@@ -55,3 +55,15 @@ a {
     text-decoration: underline;
   }
 }
+
+div.form {
+  display: block;
+  text-align: center;
+}
+form {
+  display: inline-block;
+  text-align: left;
+}
+form input {
+  font-size: 1.3em;
+}
