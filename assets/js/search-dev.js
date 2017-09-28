@@ -1,4 +1,4 @@
-var debug = true;
+var debug = false;
 jQuery(function() {
   window.data = $.getJSON('/search_data.json', function() {
     if (debug) { console.log('Okay'); }
