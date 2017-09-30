@@ -21,3 +21,11 @@ The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB
 Note that at this stage of the FOLIO project, only this Java-based framework is available.
 Other frameworks would be possible.
 
+So far we have only written server-side modules in Java, using Vert.x and
+Node.js. Because we use them internally, those two technologies will have
+a prominent place in the FOLIO ecosystem and, initially, it may be easiest
+to get started using them. We provide libraries and utilities that
+help with development (especially with writing standard boiler-plate code and
+scaffolding) but we hope to eventually gain a wide coverage among other
+tools and technologies (e.g. Python, Ruby, etc.). We are counting on an active
+engagement from the community to help out in this area.
