@@ -147,6 +147,7 @@ The list of module versions for each box is shown in its change-log.
   tests, etc.
 - A [FOLIO glossary](glossary) of some terms and technologies used in FOLIO.
 - [Guidelines for FOLIO issue tracker](/community/guide-issues).
+- [Search dev.folio.org](/search) and [other search and report facilities](/search-other).
 
 ### Setup and configuration
 
@@ -197,6 +198,7 @@ instructor-led workshop.
 ### Development management
 
 - [Release procedures](release-procedures).
+- [Search and report facilities](/search-other) (e.g. open pull requests needing review).
 - [Create a new FOLIO module and do initial setup](create-new-repo).
 - The [FOLIO project roadmap](https://wiki.folio.org/display/PC/FOLIO+Roadmap).
 
