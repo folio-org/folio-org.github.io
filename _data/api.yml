@@ -95,6 +95,13 @@ mod-login-saml:
     files:
       - saml-login
     ramlutil: null
+    
+mod-user-import:
+  - label: null
+    directory: ramls
+    files:
+      - import
+    ramlutil: null
 
 mod-notes:
   - label: null
