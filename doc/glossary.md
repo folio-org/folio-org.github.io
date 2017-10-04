@@ -207,6 +207,10 @@ is a JavaScript library for building user interfaces.
 JavaScript. Stripes uses React and Redux for building stateful
 JavaScript web applications.
 
+### REST
+
+Representational State Transfer architectural style, and RESTful web services, enable interaction between systems using a well-known set of stateless operations and responses.
+
 ### Solr
 
 [Apache Solr](https://en.wikipedia.org/wiki/Apache_Solr).
