@@ -3,6 +3,9 @@ layout: page
 title: Thanks from the FOLIO Project
 ---
 
+We appreciate the many individuals and organizations forming the [community](/community) that contributes to FOLIO.
+We also thank the many other open source projects that we depend upon.
+
 ## Supporting Software and Service Attribution
 
 The FOLIO Project is grateful for support from **Atlassian**.
