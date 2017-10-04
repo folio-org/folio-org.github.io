@@ -102,6 +102,9 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Business logic "join" module to provide simple access to all
   user-centric data.
 
+- [mod-user-import](https://github.com/folio-org/mod-user-import)
+  -- Importing new or already existing users into FOLIO.
+
 - [mod-inventory](https://github.com/folio-org/mod-inventory)
   -- Provides basic physical item inventory management.
 
