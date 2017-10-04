@@ -154,6 +154,9 @@ exists and can be run, the APIs are likely to change.
   -- A component library for Stripes.
   Includes documentation for each library, and guides to assist their development.
 
+- [stripes-smart-components](https://github.com/folio-org/stripes-smart-components)
+  -- A suite of smart components. Each communicates with an Okapi web-service in order to provide the facilities that it renders.
+
 - [stripes-connect](https://github.com/folio-org/stripes-connect)
   -- Manages the connection of UI components to back-end modules.
 
@@ -162,9 +165,6 @@ exists and can be run, the APIs are likely to change.
 
 - [stripes-redux](https://github.com/folio-org/stripes-redux)
   -- A collection of utility functions and middleware for redux and redux-observable.
-
-- [stripes-util-notes](https://github.com/folio-org/stripes-util-notes)
-  -- A utility module for attaching notes to entities such as users and items.
 
 - [stripes-logger](https://github.com/folio-org/stripes-logger)
   -- Simple category-based logging for Stripes.
