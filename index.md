@@ -27,4 +27,4 @@ We hope you will join FOLIO and help us shape the future of libraries!  We
 invite you to provide feedback and explore ideas with us.  Join the
 [community and conversation](community) over at [folio.org](https://www.folio.org/).
 
-The FOLIO Project is [grateful for the for the use of software and services from commercial providers](about/thanks.md) in support of this open source effort.
+The FOLIO Project is [grateful for the for the use of software and services from commercial providers](about/thanks) in support of this open source effort.
