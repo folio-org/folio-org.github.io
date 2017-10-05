@@ -13,6 +13,7 @@ A collection of tips to assist developers to configure their local workstation s
 * [Configuration for repository usage](#configuration-for-repository-usage)
 * [Coding style](#coding-style)
     * [Style guidelines and configuration](#style-guidelines-and-configuration)
+    * [Code analysis and linting](#code-analysis-and-linting)
     * [Use EditorConfig for consistent whitespace](#use-editorconfig-for-consistent-whitespace)
 * [Use .gitignore](#use-gitignore)
 * [Update git submodules](#update-git-submodules)
@@ -71,11 +72,13 @@ For developers needing to publish artifacts, an overview and usage configuration
 
 ### Style guidelines and configuration
 
-Refer to the [coding style](/community/contrib-code#coding-style) section of the
+Refer to the [coding style](/community/contrib-code#coding-style) sections of the
 [Guidelines for Contributing Code](/community/contrib-code).
 
-Some modules have linter and code-style tools implemented as part of their build process.
-Some modules provide configuration files to assist code management tools.
+### Code analysis and linting
+
+All code repositories have linter and code-style analysis facilities implemented as part of their continuous integration build process.
+The process is [explained](code-analysis), along with usage notes and configuration for running those tools locally.
 
 ### Use EditorConfig for consistent whitespace
 

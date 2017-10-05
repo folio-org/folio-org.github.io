@@ -23,6 +23,9 @@ menuTopIndex: 7
     * [Module implements multiple interfaces](#module-implements-multiple-interfaces)
     * [Trailing zero for module/non-module versions](#trailing-zero-for-modulenon-module-versions)
 * [Coding style](#coding-style)
+    * [Style conventions](#style-conventions)
+    * [Code analysis and linting](#code-analysis-and-linting)
+    * [Consistent whitespace](#consistent-whitespace)
 * [License](#license)
 * [Tests](#tests)
 * [RAML](#raml)
@@ -263,27 +266,34 @@ and no hotfix releases provided.
 
 ## Coding style
 
-Follow the coding style that is being used by each repository for each
-file type. Some projects do provide a `.editorconfig` file.
+### Style conventions
 
-For Java code, we basically try to adhere to Sun Java coding
+Follow the coding style that is being used by each repository for each file type.
+
+For JSON key names we use camelCase.
+
+For Java code we basically try to adhere to Sun Java coding
 [conventions](http://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
 (that document is old and unmaintained, but seems to be good enough as it is).
 
-There are a few exceptions:
+For JavaScript code we follow [ESLint](https://eslint.org), with some exceptions.
+
+### Code analysis and linting
+
+All code repositories have linter and code-style analysis facilities implemented as part of their continuous integration build process.
+The process is [explained](code-analysis), along with usage notes and configuration for running those tools locally.
+
+### Consistent whitespace
 
 - We indent with two spaces only, because vert.x uses deeply nested callbacks.
 - We _don't_ use tab characters for indents, only spaces.
 
 For XML and JSON and RAML files, the same: two-space indent and no tabs.
 
+Some projects do provide a `.editorconfig` file.
 Remember to set your IDE and editors to remove trailing spaces on saving files,
 since those produce unnecessary diffs in Git.
 Refer to coding style [configuration](/doc/setup#coding-style) assistance.
-
-For JSON key names we use camelCase.
-
-For JavaScript code we are implementing an automated lint facility.
 
 ## License
 
