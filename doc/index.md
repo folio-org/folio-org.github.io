@@ -187,7 +187,7 @@ The testing framework is explained. Guidelines for module developers.
 ### Development tips
 
 - Conduct [troubleshooting](troubleshooting).
-- Investigate SonarQube [analysis](https://sonarcloud.io/organizations/folio-org/projects).
+- [Code analysis and linting facilities](code-analysis) explains ESLint, SonarQube, other lint tools, and preparing for pull requests.
 
 ### Tutorials
 
