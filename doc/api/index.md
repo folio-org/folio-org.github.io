@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: defaultdev
 title: API documentation
+permalink: /doc/index/api/
 ---
 
 These API specifications are automatically generated from the relevant

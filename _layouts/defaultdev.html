@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+    {% include topnav.html %}
+    {% include topnavdev.html %}
+    <main class="page-content" aria-label="Content">
+        <div class="container">	
+          <div class="row">
+             <div style="padding-left:25px" class="col-md-12">
+		           {{ content }}
+			         <br>
+             </div>
+         </div>			
+        </div>
+    </main>
+
+    {% include footer.html %}
+    {% include js_files.html %}
+</body>
+
+</html>

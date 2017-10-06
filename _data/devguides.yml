@@ -1,0 +1,16 @@
+- title: Server Side
+  devguides:
+  - modules
+- title: Client Side
+  devguides:
+  - userinterface
+- title: System
+  devguides:
+  - runsystem
+  - automation
+- title: Release Procedures
+  devguides:  
+  - release-procedures
+  - maveng
+  - gradle
+  - stripes

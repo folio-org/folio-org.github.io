@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: defaultdev
 title: Build, test, and deployment infrastructure
 ---
 

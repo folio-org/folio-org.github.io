@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: defaultintro
 title: Welcome to FOLIO software development
 ---
 

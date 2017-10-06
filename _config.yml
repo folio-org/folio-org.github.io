@@ -13,6 +13,13 @@ description: >
   disparate development teams.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dev.folio.org" # the base hostname & protocol for your site
+foliourl: https://www.folio.org/
+wikiurl: https://wiki.folio.org/
+discussurl: https://discuss.folio.org
+issuesurl: https://issues.folio.org
+roadmapurl: https://wiki.folio.org/display/PC/FOLIO+Roadmap
+twitterurl: https://twitter.com/folio_lsp
+blogurl: https://wiki.folio.org/pages/viewrecentblogposts.action?key=PC
 google_analytics: UA-79833310-3
 
 # Build settings
@@ -21,6 +28,87 @@ theme: minima
 
 exclude: [Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, vendor, work]
 
+defaults:
+- scope:
+    path: _devguides
+    type: devguides
+  values:
+    layout: devguides
+    sectionid: devguides
+ 
+- scope:
+    path: _getstarted
+    type: getstarted
+  values:
+    layout: getstarted
+    sectionid: getstarted
+  
+- scope:
+    path: _reference
+    type: reference
+  values:
+    layout: reference
+    sectionid: reference
+
+- scope:
+    path: _source
+    type: source
+  values:
+    layout: source
+    sectionid: source
+   
+- scope:
+    path: _download
+    type: download
+  values:
+    layout: download
+    sectionid: download
+  
+- scope:
+    path: _devtools
+    type: devtools
+  values:
+    layout: devtools
+    sectionid: devtools
+    
+- scope:
+    path: _guidelines
+    type: guidelines
+  values:
+    layout: guidelines
+    sectionid: guidelines
+    
+- scope:
+    path: _tutorials
+    type: tutorials
+  values:
+    layout: tutorials
+    sectionid: tutorials 
+    
 collections:
   posts:
     permalink: /news/:year/:month/:day/:title/
+  devguides:
+    permalink: /devguides/:path/
+    output: true 
+  getstarted:
+    permalink: /getstarted/:path/
+    output: true 
+  reference:
+    permalink: /reference/:path/
+    output: true 
+  source:
+    permalink: /source/:path/
+    output: true
+  download:
+    permalink: /download/:path/
+    output: true
+  devtools:
+    permalink: /devtools/:path/
+    output: true  
+  guidelines:
+    permalink: /guidelines/:path/
+    output: true  
+  tutorials:
+    permalink: /tutorials/:path/
+    output: true  

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: defaultdev
 title: Which forum to use for communication
 ---
 
@@ -118,7 +118,7 @@ We follow a variation of the Apache motto:
 [https://github.com/folio-org](https://github.com/folio-org)
 
 - As explained in
-  [Guidelines for Contributing Code](contrib-code),
+  [Guidelines for Contributing Code](/guidelines/index/),
   use Feature Branches for any task beyond a minor text edit.
 
 - Use a descriptive name for the branch, with an Issue tracker number

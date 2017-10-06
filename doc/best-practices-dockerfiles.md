@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: defaultdev
 title: Best practices for Dockerfiles
 ---
 

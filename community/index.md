@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: defaultdev
 title: FOLIO Community
 ---
+# Community
 
 ## Roadmap
 
@@ -98,7 +99,7 @@ the community.
 
 ## Contributing
 
-There are many ways to [contribute](/doc/#community)
+There are many ways to [contribute](/index)
 to FOLIO development, for example:
 
 - Contributing directly to the software development.
@@ -108,7 +109,7 @@ to FOLIO development, for example:
 
 ## Guidelines
 
-- [Guidelines for Contributing Code](contrib-code):
+- [Guidelines for Contributing Code](/guidelines/index):
   GitHub Flow, feature branches, pull requests, version numbers, coding style,
   tests, etc.
 
@@ -116,6 +117,6 @@ to FOLIO development, for example:
   Issue tracker, Slack chat, Discuss discussion, GitHub pull requests.
   Some guidelines about when to use each, and some usage tips.
 
-- [Guidelines for FOLIO issue tracker](guide-issues).
+- [Guidelines for FOLIO issue tracker](/guidelines/index).
 
-- Other [guides](/doc/#guides) and best practices.
+- Other [guides](/devguides/index) and best practices.

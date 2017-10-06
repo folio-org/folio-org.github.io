@@ -1,0 +1,58 @@
+   <div class="header-container-page" style="background-color:#d75922">
+   <div class="container">
+    <div class="row">
+        <div class="col-sm-12"> 
+		&nbsp;<br>
+		</div>
+    </div>		
+    </div>		
+    </div>	
+<div class="navbar navbar-default navbar-secondary" style="margin-bottom: 5px">
+	 <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a href="{{ "/index/" | prepend: site.baseurl }}"><img height=18px src="{{site.baseurl}}/images/devlogo.png"></a>
+                </li>						
+			    <li {% if page.sectionid=='getstarted' %} class="active" {% endif %}>
+				  <a href="{{ "/getstarted/index/" | prepend: site.baseurl }}">Getting Started</a>
+				</li>
+				<li {% if page.sectionid=='reference' %} class="active" {% endif %}>
+				  <a href="{{ "/reference/index/" | prepend: site.baseurl }}">Reference</a>
+				</li>	
+				<li {% if page.sectionid=='source' %} class="active" {% endif %}>
+				  <a href="{{ "/source/index/" | prepend: site.baseurl }}">Code</a>
+				</li>
+			    <li {% if page.sectionid=='devguides' %} class="active" {% endif %}>
+				  <a href="{{ "/devguides/index/" | prepend: site.baseurl }}">Guides</a>
+				</li>					
+				<li {% if page.sectionid=='download' %} class="active" {% endif %}>
+				  <a href="{{ "/download/index/" | prepend: site.baseurl }}">Download</a>
+				</li>
+				<li {% if page.sectionid== 'tutorials' %} class="active" {% endif %}>
+				   <a href="{{ "/tutorials/index/" | prepend: site.baseurl }}">Tutorials</a>
+				</li>				
+				<li {% if page.sectionid=='devtools' %} class="active" {% endif %}>
+				  <a href="{{ "/devtools/index/" | prepend: site.baseurl }}">Tools</a>
+				</li>				
+				<li {% if page.sectionid=='guidelines' %} class="active" {% endif %}>
+				  <a href="{{ "/guidelines/index/" | prepend: site.baseurl }}">Guidelines</a>
+				</li>					
+            </ul>	
+           <div class="navbar-right">
+<!-- Not using right now			
+                <form class="navbar-form navbar-left">
+                    <div class="form-group has-feedback">
+                        <input id="search-box" type="text" class="form-control" placeholder="Search...">
+                        <i class="fa fa-search form-control-feedback"></i>
+                    </div>
+                </form>
+-->				
+                <ul class="nav navbar-nav">		
+
+ <!-- Not using                   <li><a href="{{ site.git_address }}"><i class="fa fa-github" aria-hidden="true"></i></a></li> -->
+				  <span><img height="22" width="22" style="margin-top: 12px; margin-right: 20px; margin-left: 15px; margin-bottom: 10px;" src="{{site.baseurl}}/images/github.png"></span>				  
+                </ul>
+            </div>
+        </div>	
+	
+	</div>
+</div>

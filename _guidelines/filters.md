@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: defaultdev
 title: Guidelines for FOLIO issue tracker
+heading: Guidelines for FOLIO issue tracker
 ---
 
 [https://issues.folio.org](https://issues.folio.org)

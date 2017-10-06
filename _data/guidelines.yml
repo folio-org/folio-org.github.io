@@ -1,0 +1,31 @@
+- title: Community Guidelines
+  guidelines:
+  - communityguidelines
+  - discuss
+  - wiki
+  - issuetracker
+  - github
+  - slack
+- title: Contributing Code
+  guidelines:
+  - contrib-code
+  - commitmessages
+  - featurebranches
+  - requestmerge
+  - mergepullrequest
+  - releasing
+- title: Versioning 
+  guidelines: 
+  - versioning
+  - apiversions
+  - implementversions
+  - moduleoneinterface
+  - modulemultipleinterface
+  - trailingzero
+- title: Coding Conventions
+  guidelines:
+  - codingstyle
+  - license
+  - testing
+  - best-practices-dockerfiles
+  - raml

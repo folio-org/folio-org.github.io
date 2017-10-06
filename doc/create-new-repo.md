@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: defaultdev
 title: Create a new FOLIO module and do initial setup
 ---
 
