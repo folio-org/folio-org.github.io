@@ -163,9 +163,6 @@ exists and can be run, the APIs are likely to change.
 - [stripes-form](https://github.com/folio-org/stripes-form)
   -- A redux-form wrapper for Stripes.
 
-- [stripes-redux](https://github.com/folio-org/stripes-redux)
-  -- A collection of utility functions and middleware for redux and redux-observable.
-
 - [stripes-logger](https://github.com/folio-org/stripes-logger)
   -- Simple category-based logging for Stripes.
 
@@ -202,11 +199,6 @@ exists and can be run, the APIs are likely to change.
 
 - [eslint-config-stripes](https://github.com/folio-org/eslint-config-stripes)
   -- The shared eslint configuration for stripes applications and extensions.
-
-- [stripes-loader](https://github.com/folio-org/stripes-loader)
-  -- Module loader for Webpack, to enable pluggable Redux applications.
-  This module is responsible for pulling the required UI modules
-  into a given Stripes UI.
 
 - [okapi-stripes](https://github.com/folio-org/okapi-stripes)
   -- Server-side module for generating UIs based on Stripes.
