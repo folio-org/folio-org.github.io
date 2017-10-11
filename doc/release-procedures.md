@@ -152,7 +152,9 @@ An 'artifact' in this context could either be a Maven artifact released to the F
 Maven repository, a docker image released to Docker Hub, a Linux distribution package
 or some combination of artifacts depending on the project.  To release the artifacts
 relevant to your project, log into the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
-Navigate to the 'Release Jobs' folder and select your module's Jenkins job name with the '-release' suffix.
+Navigate to the
+[Release Jobs](https://jenkins-aws.indexdata.com/me/my-views/view/All/job/Release_Jobs/)
+folder and select your module's Jenkins job name with the '-release' suffix.
 For example, 'okapi-release'.   Select 'Build with Parameters' and select the release tag you
 want to release.  This will build the release artifacts and deploy them to the proper
 repositories.
