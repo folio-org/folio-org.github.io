@@ -165,10 +165,9 @@ For example, 'okapi-release'.   Select 'Build with Parameters' and select the re
 want to release.  This will build the release artifacts and deploy them to the proper
 repositories.
 
-###
-Merge the release branch into master. Go to GitHub and make a pull request for
-the release branch you just pushed. Wait for all the tests to pass and merge
-the pull request.
+### Merge the release branch into master
+Go to GitHub and make a pull request for the release branch you just pushed.
+Wait for all the tests to pass and merge the pull request.
 
 ### Add release notes to GitHub
 
