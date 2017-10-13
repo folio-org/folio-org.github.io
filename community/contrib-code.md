@@ -13,6 +13,7 @@ menuTopIndex: 7
     * [Commit messages](#commit-messages)
     * [Feature branches](#feature-branches)
     * [Requesting a merge](#requesting-a-merge)
+    * [Contributor License Agreement](#contributor-license-agreement)
     * [Merging pull requests](#merging-pull-requests)
 * [Automation](#automation)
 * [Releasing](#releasing)
@@ -128,6 +129,14 @@ you want assistance.
 
 After the pull request is created, assign it to someone else.
 Alternatively leave it for someone to pick up.
+
+### Contributor License Agreement
+
+The FOLIO Project uses the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0) for its code and requires developers to acknowledge their contributions to the project using this license.  The contents of the Contributor License Agreement are stored in a Gist on GitHub:
+
+{% gist a72174fc6b18f3a66f2f9d3db1c8f127 %}
+
+See [accepting the contributor license agreement](cla-process.md) for more details.
 
 ### Merging pull requests
 
