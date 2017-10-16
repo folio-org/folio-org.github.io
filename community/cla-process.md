@@ -31,7 +31,7 @@ When a pull request is made and one of the contributors has not acknowledged the
 
 [![Pull request status check without CLA signature](../images/cla-process/1 - Pull request status check without CLA signature.png){:height="50%" width="50%"}](../images/cla-process/1 - Pull request status check without CLA signature.png){:target="_blank"}
 
-Following the ![CLA not yet signed](https://camo.githubusercontent.com/0a16aa28ccc85529801cccef17b3dfaeb79183c6/68747470733a2f2f636c612d617373697374616e742e696f2f70756c6c2f62616467652f6e6f745f7369676e6564) link leads to the CLA-Assistant page with the text of the Contributor License Agreement Displayed and a link to sign into the CLA-Assistant via GitHub.
+Following the ![CLA not yet signed](https://camo.githubusercontent.com/0a16aa28ccc85529801cccef17b3dfaeb79183c6/68747470733a2f2f636c612d617373697374616e742e696f2f70756c6c2f62616467652f6e6f745f7369676e6564) link leads to the CLA-Assistant page with the text of the Contributor License Agreement displayed and a link to sign into the CLA-Assistant via GitHub.
 
 [![Display test of CLA and ask to sign in via GitHub](../images/cla-process/2 - Display text of CLA and ask to sign in via GitHub.png){:height="50%" width="50%"}](../images/cla-process/2 - Display text of CLA and ask to sign in via GitHub.png){:target="_blank"}
 
