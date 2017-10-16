@@ -5,6 +5,8 @@ menuInclude: yes
 menuLink: yes
 menuTopTitle: Contributing
 menuTopIndex: 7
+menuSubTitle: "Guidelines for Contributing Code"
+menuSubIndex: 1
 ---
 
 <!-- ../../okapi/doc/md2toc -l 2 -h 3 contrib-code.md -->
