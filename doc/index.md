@@ -145,6 +145,7 @@ The list of module versions for each box is shown in its change-log.
 - [Guidelines for Contributing Code](/community/contrib-code) --
   GitHub Flow, feature branches, pull requests, version numbers, coding style,
   tests, etc.
+- [FOLIO Project Contributor License Agreement](/community/cla-process).
 - A [FOLIO glossary](glossary) of some terms and technologies used in FOLIO.
 - [Guidelines for FOLIO issue tracker](/community/guide-issues).
 - [Search dev.folio.org](/search) and [other search and report facilities](/search-other).
