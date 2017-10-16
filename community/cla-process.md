@@ -5,6 +5,8 @@ menuInclude: yes
 menuLink: yes
 menuTopTitle: Contributing
 menuTopIndex: 7
+menuSubTitle: "Contributor License Agreement"
+menuSubIndex: 2
 ---
 
 _NOTE: The Contributor License Agreement assistant will be enabled on all FOLIO Project repositories on Thursday, October 19, 2017._
