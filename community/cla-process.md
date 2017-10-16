@@ -20,7 +20,7 @@ The FOLIO Project uses GitHub pull requests checks to register a contributor's a
 Before a pull request can be merged, all contributors to the pull request must acknowledge their agreement with the terms.
 This acknowledgement is through each contributor signing into https://cla-assistant.io/ using their GitHub account.
 The screen captures below describe the process.
-The acknowledgement of the FOLIO CLA covers all pull requests to the [FOLIO Project GitHub Organization](https://github.org/folio-org).
+The acknowledgement of the FOLIO CLA covers all pull requests to the [FOLIO Project GitHub Organization](https://github.com/folio-org).
 A new acknowledgement will be required if the text of the CLA changes.
 
 ## Acknowledging the FOLIO Contributor License Agreement
