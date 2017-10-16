@@ -11,7 +11,7 @@ menuSubIndex: 2
 
 _NOTE: The Contributor License Agreement assistant will be enabled on all FOLIO Project repositories on Thursday, October 19, 2017._
 
-The FOLIO Project uses the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0) for its code and requires developers to acknowledge their contributions to the project using this license.
+The FOLIO Project uses the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) for its code and requires developers to acknowledge their contributions to the project using this license.
 The contents of the Contributor License Agreement (CLA) are stored in a Gist on GitHub:
 
 {% gist a72174fc6b18f3a66f2f9d3db1c8f127 %}
