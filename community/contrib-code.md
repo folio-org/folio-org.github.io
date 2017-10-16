@@ -292,7 +292,7 @@ For JavaScript code we follow [ESLint](https://eslint.org), with some exceptions
 ### Code analysis and linting
 
 All code repositories have linter and code-style analysis facilities implemented as part of their continuous integration build process.
-The process is [explained](code-analysis), along with usage notes and configuration for running those tools locally.
+The process is [explained](/doc/code-analysis), along with usage notes and configuration for running those tools locally.
 
 ### Consistent whitespace
 
