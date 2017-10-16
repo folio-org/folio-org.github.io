@@ -138,7 +138,7 @@ The FOLIO Project uses the [Apache License, Version 2.0](https://www.apache.org/
 
 {% gist a72174fc6b18f3a66f2f9d3db1c8f127 %}
 
-See [accepting the contributor license agreement](cla-process.md) for more details.
+See [accepting the contributor license agreement](cla-process) for more details.
 
 ### Merging pull requests
 
