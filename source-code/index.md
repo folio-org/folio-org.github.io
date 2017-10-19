@@ -226,6 +226,9 @@ exists and can be run, the APIs are likely to change.
   The current built boxes are also available to download from
   [Vagrant Cloud](https://app.vagrantup.com/folio).
 
+- [curriculum](https://github.com/folio-org/curriculum)
+  -- The source for the stand-alone [FOLIO Developer's Curriculum](http://dev.folio.org/curriculum).
+
 - [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
   -- CQL (Contextual Query Language) to PostgreSQL JSON converter in Java.
 
