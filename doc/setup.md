@@ -15,6 +15,7 @@ A collection of tips to assist developers to configure their local workstation s
     * [Style guidelines and configuration](#style-guidelines-and-configuration)
     * [Code analysis and linting](#code-analysis-and-linting)
     * [Use EditorConfig for consistent whitespace](#use-editorconfig-for-consistent-whitespace)
+    * [No license header](#no-license-header)
 * [Use .gitignore](#use-gitignore)
 * [Update git submodules](#update-git-submodules)
 * [Troubleshooting](#troubleshooting)
@@ -90,6 +91,12 @@ Consult its documentation for each plugin. Note that some do not handle all Edit
 In such cases refer to the documentation for the particular text editor, as it might have its own facilities.
 For example, the Java text editor in Eclipse has its own configuration for `trim_trailing_whitespace`
 (see [notes](http://stackoverflow.com/questions/14178839/is-there-a-way-to-automatically-remove-trailing-spaces-in-eclipse)).
+
+### No license header
+
+As [explained](/community/contrib-code#no-license-header), we do not use a license header in the top of each source code file.
+
+Please configure your IDE to use an empty license header. Some IDEs have a default template to remind developers to add one. We do not.
 
 ## Use .gitignore
 
