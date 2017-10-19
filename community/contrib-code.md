@@ -30,6 +30,7 @@ menuSubIndex: 1
     * [Style conventions](#style-conventions)
     * [Code analysis and linting](#code-analysis-and-linting)
     * [Consistent whitespace](#consistent-whitespace)
+    * [No license header](#no-license-header)
 * [Tests](#tests)
 * [RAML](#raml)
 
@@ -315,11 +316,18 @@ Remember to set your IDE and editors to remove trailing spaces on saving files,
 since those produce unnecessary diffs in Git.
 Refer to coding style [configuration](/doc/setup#coding-style) assistance.
 
+### No license header
+
+We do not use a license header in the top of each source code file.
+Refer to the README and LICENSE file at the top of each repository.
+See further [license](#license) information.
+See [configuration](/doc/setup#no-license-header) assistance for IDEs.
+
 ## Tests
 
 We aim to write a lot of tests -- each module should have at least some kind of
 test associated with it. These can be traditional unit tests, black-box tests
-that talk through the WS API, and/or proper integration tests.
+that talk through the WSAPI, and/or proper integration tests.
 
 When hunting down problems, it is considered good form to write a test that
 demonstrates the problem first, then a fix that makes the test pass.
