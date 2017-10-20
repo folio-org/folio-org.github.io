@@ -77,6 +77,12 @@ Some starting points are:
 - The CQL parser in [YAZ](http://www.indexdata.com/yaz/doc/tools.html#cql).
 - FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/cql2pgjson-java) in Java.
 
+A CQL example:
+```
+(username="ab*" or personal.firstName="ab*" or personal.lastName="ab*")
+and active="true" sortby personal.lastName personal.firstName barcode
+```
+
 ### Docker
 
 [Docker](https://www.docker.com) is a platform for managing software

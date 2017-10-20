@@ -5,14 +5,18 @@ menuInclude: yes
 menuLink: yes
 menuTopTitle: Contributing
 menuTopIndex: 7
+menuSubTitle: "Guidelines for Contributing Code"
+menuSubIndex: 1
 ---
 
 <!-- ../../okapi/doc/md2toc -l 2 -h 3 contrib-code.md -->
+* [License](#license)
 * [Issue tracker](#issue-tracker)
 * [Git and branches](#git-and-branches)
     * [Commit messages](#commit-messages)
     * [Feature branches](#feature-branches)
     * [Requesting a merge](#requesting-a-merge)
+    * [Contributor License Agreement](#contributor-license-agreement)
     * [Merging pull requests](#merging-pull-requests)
 * [Automation](#automation)
 * [Releasing](#releasing)
@@ -26,9 +30,18 @@ menuTopIndex: 7
     * [Style conventions](#style-conventions)
     * [Code analysis and linting](#code-analysis-and-linting)
     * [Consistent whitespace](#consistent-whitespace)
-* [License](#license)
+    * [No license header](#no-license-header)
 * [Tests](#tests)
 * [RAML](#raml)
+
+## License
+
+Copyright (C) 2017 The Open Library Foundation
+
+All software is distributed under the terms of the Apache License, Version 2.0.
+
+See the top of each repository's README document and its LICENSE file.
+See the [Contributor License Agreement](#contributor-license-agreement) section below.
 
 ## Issue tracker
 
@@ -128,6 +141,14 @@ you want assistance.
 
 After the pull request is created, assign it to someone else.
 Alternatively leave it for someone to pick up.
+
+### Contributor License Agreement
+
+The FOLIO Project uses the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) for its code and requires developers to acknowledge their contributions to the project using this license.  The contents of the Contributor License Agreement (CLA) are stored in a Gist on GitHub:
+
+{% gist a72174fc6b18f3a66f2f9d3db1c8f127 %}
+
+See [accepting the contributor license agreement](cla-process) for more details.
 
 ### Merging pull requests
 
@@ -281,7 +302,7 @@ For JavaScript code we follow [ESLint](https://eslint.org), with some exceptions
 ### Code analysis and linting
 
 All code repositories have linter and code-style analysis facilities implemented as part of their continuous integration build process.
-The process is [explained](code-analysis), along with usage notes and configuration for running those tools locally.
+The process is [explained](/doc/code-analysis), along with usage notes and configuration for running those tools locally.
 
 ### Consistent whitespace
 
@@ -295,15 +316,18 @@ Remember to set your IDE and editors to remove trailing spaces on saving files,
 since those produce unnecessary diffs in Git.
 Refer to coding style [configuration](/doc/setup#coding-style) assistance.
 
-## License
+### No license header
 
-Licensed under the Apache License, Version 2.0
+We do not use a license header in the top of each source code file.
+Refer to the README and LICENSE file at the top of each repository.
+See further [license](#license) information.
+See [configuration](/doc/setup#no-license-header) assistance for IDEs.
 
 ## Tests
 
 We aim to write a lot of tests -- each module should have at least some kind of
 test associated with it. These can be traditional unit tests, black-box tests
-that talk through the WS API, and/or proper integration tests.
+that talk through the WSAPI, and/or proper integration tests.
 
 When hunting down problems, it is considered good form to write a test that
 demonstrates the problem first, then a fix that makes the test pass.

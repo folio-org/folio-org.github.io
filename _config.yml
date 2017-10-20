@@ -19,6 +19,7 @@ google_analytics: UA-79833310-3
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-gist
 
 exclude: [bin, Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, tmp, vendor, work]
 
