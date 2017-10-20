@@ -96,7 +96,7 @@ have the relevant `Fix Version` parameter, and are closed.
 If you do not have commit access to the master branch (and even if you do), you
 can make the release on a branch.
 ```
-git checkout -b "release X.Y.Z"
+git checkout -b "release-X.Y.Z"
 ```
 
 ### Prepare the news document
