@@ -63,6 +63,7 @@ mod-circulation-storage:
       - loan-policy-storage
       - loan-rules-storage
       - request-storage
+      - fixed-due-date-schedule
     ramlutil: ramls/raml-util
 
 mod-configuration:
@@ -95,7 +96,7 @@ mod-login-saml:
     files:
       - saml-login
     ramlutil: null
-    
+
 mod-user-import:
   - label: null
     directory: ramls
