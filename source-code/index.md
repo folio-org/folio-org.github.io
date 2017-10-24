@@ -118,7 +118,7 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Persistent storage to complement the circulation module.
 
 - [mod-configuration](https://github.com/folio-org/mod-configuration)
-  -- Demo configuration module based on the raml-module-builder and a set
+  -- Configuration module based on the raml-module-builder and a set
   of RAML and JSON Schemas backed by a PostgreSQL asynchronous implementation.
 
 - [mod-notes](https://github.com/folio-org/mod-notes)
