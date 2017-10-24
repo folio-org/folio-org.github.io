@@ -127,6 +127,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-notify](https://github.com/folio-org/mod-notify)
   -- Notifications to the users.
 
+- [inventory-sample-data](https://github.com/folio-org/inventory-sample-data)
+  -- Provides scripts for data preparation and deployment, e.g. MARC.
+
 ## Client-side
 
 Since Okapi represents all the FOLIO functionality as well-behaved web
