@@ -70,18 +70,20 @@ language of the same name.
 Some starting points are:
 
 - [A Gentle Introduction to CQL](http://zing.z3950.org/cql/intro.html).
+- FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/cql2pgjson-java) in Java.
 - The [CQL-1.2](http://www.loc.gov/standards/sru/cql/) specification and context sets.
 - As [SRU](#sru) 2.0 is OASIS searchRetrieve Version 1.0, then CQL is its
   [Part 5](http://docs.oasis-open.org/search-ws/searchRetrieve/v1.0/os/part5-cql/searchRetrieve-v1.0-os-part5-cql.html).
 - [CQL-Java](http://www.indexdata.com/cql-java).
 - The CQL parser in [YAZ](http://www.indexdata.com/yaz/doc/tools.html#cql).
-- FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/cql2pgjson-java) in Java.
 
 A CQL example:
 ```
 (username="ab*" or personal.firstName="ab*" or personal.lastName="ab*")
 and active="true" sortby personal.lastName personal.firstName barcode
 ```
+
+For other relevant CQL examples see the first two items above, and the [API docs](api), and the debug output for tests in each backend module.
 
 ### Docker
 
