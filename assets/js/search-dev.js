@@ -6,10 +6,10 @@ jQuery(function() {
   .done(function(searchData) {
     if (debug) { console.log('Got JSON data'); }
     window.idx = new JsSearch.Search('id');
-    window.idx.addIndex('id');  
-    window.idx.addIndex('title');  
-    window.idx.addIndex('content');  
-    window.idx.addIndex('categories');  
+    window.idx.addIndex('id');
+    window.idx.addIndex('title');
+    window.idx.addIndex('content');
+    window.idx.addIndex('categories');
     if (debug) { console.log('Processing'); }
     if (debug) { console.time('Build index'); }
     window.idx.addDocuments(searchData);
@@ -25,7 +25,7 @@ jQuery(function() {
   .always(function() {
     if (debug) { console.log('Complete'); }
   });
- 
+
   $('#searchDev').submit(function(event) {
     event.preventDefault();
     var query = $('#searchInput').val();
