@@ -88,6 +88,7 @@ mod-inventory-storage:
       - item-storage
       - loan-type
       - material-type
+      - shelf-location
     ramlutil: ramls/raml-util
 
 mod-login-saml:
