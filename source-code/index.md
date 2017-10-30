@@ -196,6 +196,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
   -- Stripes UI plugin: User-finder.
 
+- [ui-trivial](https://github.com/folio-org/ui-trivial)
+  -- Stripes UI module: example application.
+
 - [ui-developer](https://github.com/folio-org/ui-developer)
   -- Stripes UI module: developer facilities,
   e.g. managing local developer settings.
