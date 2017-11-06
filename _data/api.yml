@@ -32,6 +32,7 @@ raml:
       - groups
       - users
       - addressTypes
+      - proxiesFor
     ramlutil: .
   - label: shared-mod-users-bl
     directory: ramls/mod-users-bl
