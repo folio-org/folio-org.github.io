@@ -169,6 +169,9 @@ exists and can be run, the APIs are likely to change.
 - [stripes-logger](https://github.com/folio-org/stripes-logger)
   -- Simple category-based logging for Stripes.
 
+- [stripes-cli](https://github.com/folio-org/stripes-cli)
+  -- Command-line interface for creating, building, and testing Stripes UI modules.
+
 - [ui-users](https://github.com/folio-org/ui-users)
   -- Stripes UI module: administrating users.
 
