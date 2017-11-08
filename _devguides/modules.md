@@ -1,7 +1,7 @@
 ---
 layout: devguides
-title: Modules
-heading: Modules
+title: Server Side
+heading: Server Side Modules
 permalink: /devguides/modules/
 ---
 

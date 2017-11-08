@@ -1,11 +1,8 @@
 <p style="font-weight: 400; margin-left: 13px; color: #38307f; font-size: 14px;">Guidelines</p>
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-          {% assign item_url = item | prepend:"/guidelines/" | append:"/" %}
-          {% assign p = site.getstarted | where:"url", item_url | first %}	  
-          <a class="list-group-item {% if item_url == page.url %}active{% endif %}" href="{{ "/guidelines/index/"  | prepend: site.baseurl }}">Overview</a>
-		  <div style="padding-bottom: 6px"></div>
 {% for section in site.data.guidelines %}
   <div class="panel panel-default">
+{% if section.title != "None" %}  
     <div class="panel-heading">
       <h4 class="panel-title">
         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{forloop.index}}" aria-expanded="false" aria-controls="collapse-{{forloop.index}}">
@@ -14,6 +11,7 @@
       </h4>
     </div>
     <div id="collapse-{{forloop.index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+{% endif %}	
       <ul class="list-group">
         {% for item in section.guidelines %}
           {% assign item_url = item | prepend:"/guidelines/" | append:"/" %}
@@ -21,7 +19,9 @@
           <a class="list-group-item {% if item_url == page.url %}active{% endif %}" href="{{ p.url  | prepend: site.baseurl }}">{{ p.title }}</a>
         {% endfor %}
       </ul>
+{% if section.title != "None" %}	  
     </div>
+{% endif %}	
   </div>
 {% endfor %}
 </div>

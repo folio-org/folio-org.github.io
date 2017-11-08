@@ -1,6 +1,9 @@
-- title: Front End
-  getstarted: 
+- title: None
+  getstarted:
+  - index
+- title: None
+  getstarted:
   - primer-develop-frontend
-- title: Back End
-  getstarted: 
+- title: None
+  getstarted:
   - primer-develop-backend

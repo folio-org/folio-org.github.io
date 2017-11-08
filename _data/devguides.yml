@@ -1,7 +1,10 @@
-- title: Server Side
+- title: None
+  devguides:
+  - index
+- title: None
   devguides:
   - modules
-- title: Client Side
+- title: None
   devguides:
   - userinterface
 - title: System

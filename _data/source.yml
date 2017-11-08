@@ -1,12 +1,15 @@
-- title: Repositories
+- title: None
+  source:
+  - index
+- title: None
   source: 
   - create-new-repo
-- title: Server Side
+- title: None
   source: 
   - serverside
-- title: Client Side  
+- title: None 
   source:
   - clientside
-- title: Examples
+- title: None
   source:
   - otherprojects

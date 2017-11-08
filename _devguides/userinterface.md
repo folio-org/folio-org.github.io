@@ -1,7 +1,7 @@
 ---
 layout: devguides
-title: User Interface
-heading: User Interface
+title: Client Side
+heading: Client Side User Interface
 permalink: /devguides/userinterface/
 ---
 
