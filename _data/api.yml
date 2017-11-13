@@ -86,7 +86,13 @@ mod-inventory-storage:
     directory: ramls
     files:
       - instance-storage
+      - instance-format
+      - instance-type
       - item-storage
+      - classification-type
+      - contributor-type
+      - creator-type
+      - identifier-type
       - loan-type
       - material-type
       - shelf-location
