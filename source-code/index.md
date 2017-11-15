@@ -175,8 +175,8 @@ exists and can be run, the APIs are likely to change.
 - [ui-users](https://github.com/folio-org/ui-users)
   -- Stripes UI module: administrating users.
 
-- [ui-instances](https://github.com/folio-org/ui-instances)
-  -- Stripes UI module: administrating instances.
+- [ui-inventory](https://github.com/folio-org/ui-inventory)
+  -- Stripes UI module: administrating locally created instances, holdings records and items.
 
 - [ui-items](https://github.com/folio-org/ui-items)
   -- Stripes UI module: administrating bibliographic items.
