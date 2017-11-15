@@ -121,11 +121,20 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Configuration module based on the raml-module-builder and a set
   of RAML and JSON Schemas backed by a PostgreSQL asynchronous implementation.
 
+- [mod-graphql](https://github.com/folio-org/mod-graphql)
+  -- Executing GraphQL queries.
+
 - [mod-notes](https://github.com/folio-org/mod-notes)
   -- Notes on all types of objects.
 
 - [mod-notify](https://github.com/folio-org/mod-notify)
   -- Notifications to the users.
+
+- [mod-orders](https://github.com/folio-org/mod-orders)
+  -- Persistent storage of order data.
+
+- [mod-vendor](https://github.com/folio-org/mod-vendor)
+  -- Persistent storage of vendor data.
 
 - [inventory-sample-data](https://github.com/folio-org/inventory-sample-data)
   -- Provides scripts for data preparation and deployment, e.g. MARC.
@@ -175,8 +184,8 @@ exists and can be run, the APIs are likely to change.
 - [ui-users](https://github.com/folio-org/ui-users)
   -- Stripes UI module: administrating users.
 
-- [ui-instances](https://github.com/folio-org/ui-instances)
-  -- Stripes UI module: administrating instances.
+- [ui-inventory](https://github.com/folio-org/ui-inventory)
+  -- Stripes UI module: administrating locally created instances, holdings records and items.
 
 - [ui-items](https://github.com/folio-org/ui-items)
   -- Stripes UI module: administrating bibliographic items.
