@@ -2,7 +2,7 @@
 layout: guidelines
 title: Overview
 heading: Guidelines
-permalink: /guidelines/index/
+permalink: /guidelines/overview/
 ---
 
 <!-- ../../okapi/doc/md2toc -l 2 -h 3 contrib-code.md -->

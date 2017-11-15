@@ -2,7 +2,7 @@
 layout: devtools
 title: Overview
 heading: Developer Tools
-permalink: /devtools/index/
+permalink: /devtools/overview/
 ---
 
 A collection of tips to assist developers to configure their local workstation setup environment for FOLIO development.

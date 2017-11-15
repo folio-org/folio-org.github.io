@@ -2,7 +2,7 @@
 layout: getstarted
 title: Overview
 heading: Getting Started
-permalink: /getstarted/index/
+permalink: /getstarted/overview/
 ---
 
 Get started with FOLIO development here.  Gain initial background and understanding.

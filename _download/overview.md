@@ -2,7 +2,7 @@
 layout: download
 title: Overview
 heading: Downloading
-permalink: /download/index/
+permalink: /download/overview/
 ---
 
 There are several repositories that contain snapshot and released FOLIO artifacts in various formats.

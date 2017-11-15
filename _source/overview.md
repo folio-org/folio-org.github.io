@@ -2,7 +2,7 @@
 layout: source
 title: Overview
 heading: Source Code
-permalink: /source/index/
+permalink: /source/overview/
 ---
 
 The FOLIO platform consists of both server-side and client-side components, and

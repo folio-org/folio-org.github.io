@@ -2,7 +2,7 @@
 layout: devguides
 title: Overview
 heading: Development Guides
-permalink: /devguides/index/
+permalink: /devguides/overview/
 ---
 
 Documentation for the various components of FOLIO is in continuous
