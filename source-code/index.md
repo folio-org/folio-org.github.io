@@ -127,6 +127,12 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-notify](https://github.com/folio-org/mod-notify)
   -- Notifications to the users.
 
+- [mod-orders](https://github.com/folio-org/mod-orders)
+  -- Persistent storage of order data.
+
+- [mod-vendor](https://github.com/folio-org/mod-vendor)
+  -- Persistent storage of vendor data.
+
 - [inventory-sample-data](https://github.com/folio-org/inventory-sample-data)
   -- Provides scripts for data preparation and deployment, e.g. MARC.
 
