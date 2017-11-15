@@ -121,6 +121,9 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Configuration module based on the raml-module-builder and a set
   of RAML and JSON Schemas backed by a PostgreSQL asynchronous implementation.
 
+- [mod-graphql](https://github.com/folio-org/mod-graphql)
+  -- Executing GraphQL queries.
+
 - [mod-notes](https://github.com/folio-org/mod-notes)
   -- Notes on all types of objects.
 
