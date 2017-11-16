@@ -125,3 +125,17 @@ mod-notify:
     files:
       - notify
     ramlutil: ramls/raml-util
+
+mod-orders:
+  - label: null
+    directory: ramls
+    files:
+      - purchase_order
+    ramlutil: ramls/raml-util
+
+mod-vendor:
+  - label: null
+    directory: ramls
+    files:
+      - vendor
+    ramlutil: raml-util
