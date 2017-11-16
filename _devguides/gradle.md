@@ -5,10 +5,10 @@ heading: Gradle Based Modules
 permalink: /devguides/gradle/
 ---
 
-The procedure for [Gradle](https://gradle.org/)-based modules (such as [mod-inventory](https://github.com/folio-org/mod-inventory) or [mod-circulation](https://github.com/folio-org/mod-circulation)) is very similar to [maven-based modules](/devguides/maven/).
+The procedure for [Gradle](https://gradle.org/)-based modules (such as [mod-inventory](https://github.com/folio-org/mod-inventory) or [mod-circulation](https://github.com/folio-org/mod-circulation)) is very similar to [maven-based modules](/devguides/maveng/).
 
-Follow all of the steps for a maven-based module, except [ensure POM declarations](/devguides/maven/#ensure-pom-declarations) and replacing
-[Prepare and perform the source release](/devguides/maven/#prepare-and-perform-the-source-release) with the steps outlined below.
+Follow all of the steps for a maven-based module, except [ensure POM declarations](/devguides/maveng/#ensure-pom-declarations) and replacing
+[Prepare and perform the source release](/devguides/maveng/#prepare-and-perform-the-source-release) with the steps outlined below.
 
 ### Change the release version
 

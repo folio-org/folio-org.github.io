@@ -95,7 +95,7 @@ To view the documentation locally:
 ## Additional information
 
 See project [FOLIO](https://issues.folio.org/browse/FOLIO)
-at the [FOLIO issue tracker](http://dev.folio.org/community/guide-issues).
+at the [FOLIO issue tracker](https://issues.folio.org/browse/FOLIO).
 
 Other FOLIO Developer documentation is at [dev.folio.org](http://dev.folio.org/)
 

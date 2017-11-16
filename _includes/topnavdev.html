@@ -11,7 +11,9 @@
 	 <div class="container">
             <ul class="nav navbar-nav">
                 <li><a href=""><img height=18px src="{{site.baseurl}}/images/devlogo.png"></a>
-                </li>						
+                </li>	
+            </ul>	
+            <ul class="nav navbar-nav navbar-right">			
 			    <li {% if page.sectionid=='getstarted' %} class="active" {% endif %}>
 				  <a href="{{ "/getstarted/overview/" | prepend: site.baseurl }}">Getting Started</a>
 				</li>
@@ -35,23 +37,11 @@
 				</li>				
 				<li {% if page.sectionid=='guidelines' %} class="active" {% endif %}>
 				  <a href="{{ "/guidelines/overview/" | prepend: site.baseurl }}">Guidelines</a>
-				</li>					
+				</li>
+				<li>
+                   <img height="22" width="22" style="margin-top: 12px; margin-right: 15px; margin-left: 10px; margin-bottom: 10px;" src="{{site.baseurl}}/images/github.png">				
+                </li>
             </ul>	
-           <div class="navbar-right">
-<!-- Not using right now			
-                <form class="navbar-form navbar-left">
-                    <div class="form-group has-feedback">
-                        <input id="search-box" type="text" class="form-control" placeholder="Search...">
-                        <i class="fa fa-search form-control-feedback"></i>
-                    </div>
-                </form>
--->				
-                <ul class="nav navbar-nav">		
-
- <!-- Not using                   <li><a href="{{ site.git_address }}"><i class="fa fa-github" aria-hidden="true"></i></a></li> -->
-				  <span><img height="22" width="22" style="margin-top: 12px; margin-right: 20px; margin-left: 15px; margin-bottom: 10px;" src="{{site.baseurl}}/images/github.png"></span>				  
-                </ul>
-            </div>
         </div>	
 	
 	</div>

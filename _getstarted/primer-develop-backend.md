@@ -5,7 +5,7 @@ heading: Primer for Back End Development
 permalink: /getstarted/primer-develop-backend/
 ---
 
-Start with introduction to [core code](/devguides/index/)
+Start with introduction to [core code](/devguides/overview/)
 and the [server-side](/source/serverside/) source code repositories.
 
 The [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md) provides the necessary background understanding.

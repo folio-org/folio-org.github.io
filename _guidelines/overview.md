@@ -62,7 +62,7 @@ Some of the important forums to collaborate, discuss FOLIO, interact with other 
       <td> The source-code repositories are via GitHub. </td>
       <td>
         <a href="/guidelines/github">How to</a> |
-        <a href="/source/index">List of repos</a> |
+        <a href="/source/overview">List of repos</a> |
         <a href="/guidelines/contrib-code">Contributing</a>
       </td>
     </tr>

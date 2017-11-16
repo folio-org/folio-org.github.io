@@ -6,7 +6,7 @@ permalink: /devguides/automation/
 ---
 
 This document describes the implementation, processes, and automated workflow for
-FOLIO projects maintained in the [folio-org GitHub](/source/index/) repositories.
+FOLIO projects maintained in the [folio-org GitHub](/source/overview/) repositories.
 The [release procedures](/devguides/release-procedures) are separately summarised.
 
 The build, test, release, and deployment processes are, in large part, orchestrated and

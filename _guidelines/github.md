@@ -8,7 +8,7 @@ permalink: /guidelines/github/
 [https://github.com/folio-org](https://github.com/folio-org)
 
 - As explained in
-  [Guidelines for Contributing Code](/guidelines/index/),
+  [Guidelines for Contributing Code](/guidelines/overview/),
   use Feature Branches for any task beyond a minor text edit.
 
 - Use a descriptive name for the branch, with an Issue tracker number
