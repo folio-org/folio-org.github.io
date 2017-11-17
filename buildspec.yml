@@ -1,0 +1,34 @@
+version: 0.2
+
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  install:
+    commands:
+       - gem install
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+  build:
+    commands:
+      - echo "******** Building Jekyll site ********"
+      - jekyll build
+      - echo "******** Uploading to S3 ********"
+      - aws s3 sync _site/ s3://dev.folio.org
+  #post_build:
+    #commands:
+      # - command
+      # - command
+#artifacts:
+  #files:
+    # - location
+    # - location
+  #discard-paths: yes
+  #base-directory: location
