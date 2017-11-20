@@ -39,6 +39,11 @@ raml:
     files:
       - mod-users-bl
     ramlutil: .
+  - label: shared-codex
+    directory: ramls/codex
+    files:
+      - codex
+    ramlutil: .
 
 raml-module-builder:
   - label: domain-models-api-interfaces
