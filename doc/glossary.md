@@ -79,8 +79,8 @@ Some starting points are:
 
 A CQL example:
 ```
-(username="ab*" or personal.firstName="ab*" or personal.lastName="ab*")
-and active="true" sortby personal.lastName personal.firstName barcode
+(username=="ab*" or personal.firstName=="ab*" or personal.lastName=="ab*")
+and active=="true" sortby personal.lastName personal.firstName barcode
 ```
 
 For other relevant CQL examples see the first two items above, and the [API docs](api), and the debug output for tests in each backend module.
