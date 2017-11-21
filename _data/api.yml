@@ -90,6 +90,7 @@ mod-inventory-storage:
   - label: null
     directory: ramls
     files:
+      - holdings-storage
       - instance-storage
       - instance-format
       - instance-type
