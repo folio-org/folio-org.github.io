@@ -20,12 +20,10 @@ phases:
     commands:
       - echo "******** Building Jekyll site ********"
       - jekyll build
+  post_build:
+    commands:
       - echo "******** Uploading to S3 ********"
-      - aws s3 sync _site/ s3://dev.folio.org
-  #post_build:
-    #commands:
-      # - command
-      # - command
+      - aws s3 sync --delete _site/ "s3://${BUCKET_NAME}"
 #artifacts:
   #files:
     # - location
