@@ -331,6 +331,49 @@ Resources:
     Metadata:
       'AWS::CloudFormation::Designer':
         id: 5dadd00b-4e5c-4378-9cbb-8c979fe4216d
+  CodeBuildServiceRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          Effect: Allow
+          Principal:
+            Service: codebuild.amazonaws.com
+          Action: 'sts:AssumeRole'
+      Policies:
+        - PolicyName: root
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Resource: '*'
+                Effect: Allow
+                Action:
+                  - 'logs:CreateLogGroup'
+                  - 'logs:CreateLogStream'
+                  - 'logs:PutLogEvents'
+                  - s3:GetObject
+                  - s3:PutObject
+                  - s3:GetObjectVersion
+  DevDocsCodeBuild:
+    Type: 'AWS::CodeBuild::Project'
+    Properties:
+      Name: DevDocJekyllBuild
+      ServiceRole: !GetAtt CodeBuildServiceRole.Arn
+      Description: Build a branch of folio-org.github.io
+      Artifacts:
+        Type: NO_ARTIFACTS
+      Environment:
+        Type: LINUX_CONTAINER
+        ComputeType: BUILD_GENERAL1_SMALL
+        Image: 'aws/codebuild/ruby:2.3.1'
+      Source:
+        Location: 'https://github.com/folio-org/folio-org.github.io.git'
+        Type: GITHUB
+  DevDocsCodeBuildCache:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      AccessControl: Private
 Parameters:
   GitHubHookUserName:
     Type: String

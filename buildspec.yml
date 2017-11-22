@@ -11,7 +11,7 @@ version: 0.2
 phases:
   install:
     commands:
-       - bundle install
+       - bundle install --path vendor/bundle
   #pre_build:
     #commands:
       # - command
@@ -30,3 +30,6 @@ phases:
     # - location
   #discard-paths: yes
   #base-directory: location
+cache:
+  paths:
+    - 'vendor/**/*'
