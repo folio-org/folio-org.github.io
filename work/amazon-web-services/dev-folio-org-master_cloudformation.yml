@@ -1,0 +1,428 @@
+AWSTemplateFormatVersion: 2010-09-09
+Metadata:
+  'AWS::CloudFormation::Designer':
+    440feda6-b280-4cad-97aa-310a1c3aeb64:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 150
+        'y': 210
+      z: 1
+      embeds: []
+      dependson:
+        - 3de6d6e7-96b5-4bf9-841e-914051d50846
+      isrelatedto:
+        - 3de6d6e7-96b5-4bf9-841e-914051d50846
+    933166eb-796d-4e80-a2d6-e9f4cb346d48:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 30
+        'y': 60
+      z: 1
+      embeds: []
+      isrelatedto:
+        - 933166eb-796d-4e80-a2d6-e9f4cb346d48
+        - db9f9a17-91ed-43f6-9538-7982158bebce
+    9f1e1657-35ee-4cec-b080-6b1514b4d643:
+      source:
+        id: e3ba48e2-ae39-48b8-8fed-0005c4238ce6
+      target:
+        id: 933166eb-796d-4e80-a2d6-e9f4cb346d48
+      z: 11
+    fdaf6a44-b32e-4c75-8a91-1756e49d0736:
+      source:
+        id: e3ba48e2-ae39-48b8-8fed-0005c4238ce6
+      target:
+        id: 440feda6-b280-4cad-97aa-310a1c3aeb64
+      z: 11
+    db9f9a17-91ed-43f6-9538-7982158bebce:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 150
+        'y': 60
+      z: 1
+      embeds: []
+      dependson:
+        - 440feda6-b280-4cad-97aa-310a1c3aeb64
+      isrelatedto:
+        - 440feda6-b280-4cad-97aa-310a1c3aeb64
+    5dd4ffbf-9fed-480a-a0f2-c863d58f159e:
+      source:
+        id: db9f9a17-91ed-43f6-9538-7982158bebce
+      target:
+        id: 440feda6-b280-4cad-97aa-310a1c3aeb64
+      z: 11
+    3de6d6e7-96b5-4bf9-841e-914051d50846:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 390
+        'y': 210
+      z: 1
+      embeds: []
+      isrelatedto:
+        - b624f20c-b645-4277-ad42-12373ed9fc75
+    b624f20c-b645-4277-ad42-12373ed9fc75:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 330
+        'y': 60
+      z: 1
+      embeds: []
+    27a38a95-180c-4816-94dd-bdd8a422a24f:
+      source:
+        id: 440feda6-b280-4cad-97aa-310a1c3aeb64
+      target:
+        id: 3de6d6e7-96b5-4bf9-841e-914051d50846
+      z: 11
+    c1c24a0e-2354-4f54-8811-84611f37f71a:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 270
+        'y': 180
+      z: 1
+      embeds: []
+      isassociatedwith:
+        - 3de6d6e7-96b5-4bf9-841e-914051d50846
+      isrelatedto:
+        - 440feda6-b280-4cad-97aa-310a1c3aeb64
+    171e46d2-f281-4e5b-bdf5-792b7de9b847:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 420
+        'y': 90
+      z: 1
+      embeds: []
+    2c48c8dd-e46f-4e1b-84f1-78691af3bebe:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 540
+        'y': 90
+      z: 1
+      embeds: []
+      isrelatedto:
+        - 171e46d2-f281-4e5b-bdf5-792b7de9b847
+    5dadd00b-4e5c-4378-9cbb-8c979fe4216d:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 660
+        'y': 90
+      z: 1
+      embeds: []
+      isrelatedto:
+        - 2c48c8dd-e46f-4e1b-84f1-78691af3bebe
+    c59d5ed8-abc2-4337-bfc1-69a2700f001e:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 540
+        'y': 160
+      z: 1
+      embeds: []
+      isassociatedwith:
+        - 171e46d2-f281-4e5b-bdf5-792b7de9b847
+Resources:
+  GitHubWebHook:
+    Type: 'AWS::SNS::Topic'
+    Properties:
+      TopicName: DevFolioOrgBuildLambda
+      DisplayName: Receive Webhook from GitHub.com/folio-org/folio-org.github.io
+      Subscription:
+        - Endpoint: !GetAtt
+            - GitHubHookLambda
+            - Arn
+          Protocol: lambda
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 440feda6-b280-4cad-97aa-310a1c3aeb64
+    DependsOn:
+      - GitHubHookLambda
+  GitHubHookUserKey:
+    Type: 'AWS::IAM::AccessKey'
+    Properties:
+      UserName: !Ref GitHubHookUser
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 933166eb-796d-4e80-a2d6-e9f4cb346d48
+  GitHubHookUser:
+    Type: 'AWS::IAM::User'
+    Properties:
+      UserName: !Ref GitHubHookUserName
+      Policies:
+        - PolicyName: GitHubHookPolicy
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action: 'sns:Publish'
+                Resource: !Ref GitHubWebHook
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: db9f9a17-91ed-43f6-9538-7982158bebce
+    DependsOn:
+      - GitHubWebHook
+  GitHubHookLambda:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      FunctionName: GitHubHookLambdaFunction
+      Runtime: python2.7
+      Handler: index.handler
+      Code:
+        ZipFile: |
+          import json, logging
+          logger = logging.getLogger(__name__)
+          def handler(event, context):
+            print json.dumps(event)
+            myEvent = event['Records'][0]['Sns']
+            try:
+              hookdata = json.loads(myEvent['Message'])
+            except Exception:
+              logger.error("Failed to decode json")
+              return {"body": json.dumps({"error": "json decode failure"}), "statusCode": 500}
+            if 'repository' not in hookdata:
+              logger.error("No repository in the hook, no processing")
+              return {"body": json.dumps({"error": "unsupported hook type; missing repository information"}), "statusCode": 501}
+            repo = hookdata['repository']['full_name']
+            print repo
+            ghevent = myEvent['MessageAttributes'].get('X-GitHub-Event', '')
+            print ghevent
+            return
+      Description: Handle GitHub WebHooks
+      Role: !GetAtt
+        - GitHubHookLambdaExecutionRole
+        - Arn
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 3de6d6e7-96b5-4bf9-841e-914051d50846
+  lambdaPermission:
+    Properties:
+      Action: 'lambda:InvokeFunction'
+      FunctionName: !GetAtt
+        - GitHubHookLambda
+        - Arn
+      Principal: sns.amazonaws.com
+      SourceArn: !Ref GitHubWebHook
+    Type: 'AWS::Lambda::Permission'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: c1c24a0e-2354-4f54-8811-84611f37f71a
+  GitHubHookLambdaExecutionRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      Path: /
+      Policies:
+        - PolicyName: CloudwatchLogs
+          PolicyDocument:
+            Statement:
+              - Action:
+                  - 'logs:CreateLogGroup'
+                  - 'logs:CreateLogStream'
+                  - 'logs:GetLogEvents'
+                  - 'logs:PutLogEvents'
+                Resource:
+                  - 'arn:aws:logs:*:*:*'
+                Effect: Allow
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action:
+              - 'sts:AssumeRole'
+            Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: b624f20c-b645-4277-ad42-12373ed9fc75
+  BucketPolicy:
+    Type: 'AWS::S3::BucketPolicy'
+    Properties:
+      PolicyDocument:
+        Id: DevSiteBranchPolicy
+        Version: 2012-10-17
+        Statement:
+          - Sid: PublicReadForGetBucketObjects
+            Effect: Allow
+            Principal: '*'
+            Action: 's3:GetObject'
+            Resource: !Join
+              - ''
+              - - 'arn:aws:s3:::'
+                - !Ref DevDocMasterBucket
+                - /*
+      Bucket: !Ref DevDocMasterBucket
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: c59d5ed8-abc2-4337-bfc1-69a2700f001e
+  DevDocMasterDistribution:
+    Type: 'AWS::CloudFront::Distribution'
+    Properties:
+      DistributionConfig:
+        Origins:
+          - CustomOriginConfig:
+              HTTPPort: '80'
+              HTTPSPort: '443'
+              OriginProtocolPolicy: http-only
+            DomainName: !Join
+              - ''
+              - - !Ref DevDocMasterBucket
+                - !FindInMap
+                  - Region2S3WebsiteSuffix
+                  - !Ref 'AWS::Region'
+                  - Suffix
+            Id: DevDocMasterBucket
+        Enabled: 'true'
+        DefaultRootObject: index.html
+        HttpVersion: http2
+        IPV6Enabled: true
+        Aliases:
+          - testing.dev.folio.org
+        DefaultCacheBehavior:
+          AllowedMethods:
+            - GET
+            - HEAD
+          TargetOriginId: DevDocMasterBucket
+          ForwardedValues:
+            QueryString: 'true'
+            Cookies:
+              Forward: none
+          ViewerProtocolPolicy: allow-all
+        PriceClass: PriceClass_All
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 2c48c8dd-e46f-4e1b-84f1-78691af3bebe
+  DevDocMasterBucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      AccessControl: PublicRead
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 171e46d2-f281-4e5b-bdf5-792b7de9b847
+  DevDocMasterRecordSet:
+    Type: 'AWS::Route53::RecordSet'
+    Properties:
+      HostedZoneName: dev.folio.org.
+      Name: testing.dev.folio.org.
+      Type: A
+      AliasTarget:
+        HostedZoneId: Z2FDTNDATAQYW2
+        DNSName: !GetAtt
+          - DevDocMasterDistribution
+          - DomainName
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 5dadd00b-4e5c-4378-9cbb-8c979fe4216d
+  CodeBuildServiceRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          Effect: Allow
+          Principal:
+            Service: codebuild.amazonaws.com
+          Action: 'sts:AssumeRole'
+      Policies:
+        - PolicyName: root
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Resource: '*'
+                Effect: Allow
+                Action:
+                  - 'logs:CreateLogGroup'
+                  - 'logs:CreateLogStream'
+                  - 'logs:PutLogEvents'
+                  - s3:GetObject
+                  - s3:PutObject
+                  - s3:GetObjectVersion
+  DevDocsCodeBuild:
+    Type: 'AWS::CodeBuild::Project'
+    Properties:
+      Name: DevDocJekyllBuild
+      ServiceRole: !GetAtt CodeBuildServiceRole.Arn
+      Description: Build a branch of folio-org.github.io
+      Artifacts:
+        Type: NO_ARTIFACTS
+      Environment:
+        Type: LINUX_CONTAINER
+        ComputeType: BUILD_GENERAL1_SMALL
+        Image: 'aws/codebuild/ruby:2.3.1'
+      Source:
+        Location: 'https://github.com/folio-org/folio-org.github.io.git'
+        Type: GITHUB
+  DevDocsCodeBuildCache:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      AccessControl: Private
+Parameters:
+  GitHubHookUserName:
+    Type: String
+    Default: GitHub_DevFolioOrg_WebHook
+Mappings:
+  Region2S3WebsiteSuffix:
+    us-east-1:
+      Suffix: .s3-website-us-east-1.amazonaws.com
+    us-west-1:
+      Suffix: .s3-website-us-west-1.amazonaws.com
+    us-west-2:
+      Suffix: .s3-website-us-west-2.amazonaws.com
+    eu-west-1:
+      Suffix: .s3-website-eu-west-1.amazonaws.com
+    ap-northeast-1:
+      Suffix: .s3-website-ap-northeast-1.amazonaws.com
+    ap-northeast-2:
+      Suffix: .s3-website-ap-northeast-2.amazonaws.com
+    ap-southeast-1:
+      Suffix: .s3-website-ap-southeast-1.amazonaws.com
+    ap-southeast-2:
+      Suffix: .s3-website-ap-southeast-2.amazonaws.com
+    ap-south-1:
+      Suffix: .s3-website-ap-south-1.amazonaws.com
+    us-east-2:
+      Suffix: .s3-website-us-east-2.amazonaws.com
+    sa-east-1:
+      Suffix: .s3-website-sa-east-1.amazonaws.com
+    cn-north-1:
+      Suffix: .s3-website.cn-north-1.amazonaws.com.cn
+    eu-central-1:
+      Suffix: .s3-website.eu-central-1.amazonaws.com
+Outputs:
+  AccessKeyGitHubHookUser:
+    Value: !Ref GitHubHookUserKey
+  SecretKeyGitHubHookUser:
+    Value: !GetAtt
+      - GitHubHookUserKey
+      - SecretAccessKey
+  MasterBucketName:
+    Value: !Ref DevDocMasterBucket
+    Description: Name of S3 bucket that holds the website of the master branch
+  MasterBucketURL:
+    Value: !Join
+      - ''
+      - - 'https://'
+        - !Ref DevDocMasterBucket
+        - !FindInMap
+          - Region2S3WebsiteSuffix
+          - !Ref 'AWS::Region'
+          - Suffix
+    Description: URL to S3 bucket that holds the website of the master branch
