@@ -192,6 +192,7 @@ Resources:
         Variables:
           DevDocStackName: !Sub "${AWS::StackName}"
           DevDocMasterBucket: !Sub "${DevDocMasterBucket}"
+          DevDocDNSName: !Sub "${DevDocDNSName}"
       Role: !GetAtt
         - GitHubHookLambdaExecutionRole
         - Arn
@@ -287,7 +288,7 @@ Resources:
         HttpVersion: http2
         IPV6Enabled: true
         Aliases:
-          - testing.dev.folio.org
+          - !Ref: DevDocDNSName
         DefaultCacheBehavior:
           AllowedMethods:
             - GET
@@ -315,8 +316,8 @@ Resources:
   DevDocMasterRecordSet:
     Type: 'AWS::Route53::RecordSet'
     Properties:
-      HostedZoneName: dev.folio.org.
-      Name: testing.dev.folio.org.
+      HostedZoneName: !Sub "testing.${DevDocDNSName}."
+      Name: !Sub "testing.${DevDocDNSName}."
       Type: A
       AliasTarget:
         HostedZoneId: Z2FDTNDATAQYW2
@@ -373,6 +374,9 @@ Parameters:
   GitHubHookUserName:
     Type: String
     Default: GitHub_DevFolioOrg_WebHook
+  DevDocDNSName:
+    Type: String
+    Default: dev.folio.org
 Mappings:
   Region2S3WebsiteSuffix:
     us-east-1:
@@ -428,3 +432,8 @@ Outputs:
           - !Ref 'AWS::Region'
           - Suffix
     Description: URL to S3 bucket that holds the website of the master branch
+  DevDocDNSName:
+    Value: !Ref DevDocDNSName
+    Description: DNS name of the developer documentation
+    Export:
+      Name: !Sub "${AWS::StackName}-DevDocDNSName"
