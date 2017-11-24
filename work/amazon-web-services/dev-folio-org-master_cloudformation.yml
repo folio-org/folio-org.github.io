@@ -183,28 +183,15 @@ Resources:
     Properties:
       FunctionName: GitHubHookLambdaFunction
       Runtime: python2.7
-      Handler: index.handler
+      Handler: GitHubHook.handler
       Code:
-        ZipFile: |
-          import json, logging
-          logger = logging.getLogger(__name__)
-          def handler(event, context):
-            print json.dumps(event)
-            myEvent = event['Records'][0]['Sns']
-            try:
-              hookdata = json.loads(myEvent['Message'])
-            except Exception:
-              logger.error("Failed to decode json")
-              return {"body": json.dumps({"error": "json decode failure"}), "statusCode": 500}
-            if 'repository' not in hookdata:
-              logger.error("No repository in the hook, no processing")
-              return {"body": json.dumps({"error": "unsupported hook type; missing repository information"}), "statusCode": 501}
-            repo = hookdata['repository']['full_name']
-            print repo
-            ghevent = myEvent['MessageAttributes'].get('X-GitHub-Event', '')
-            print ghevent
-            return
+        S3Bucket: !Ref DevDocsCodeBuildCache
+        S3Key: GitHubHook-Lambda.zip
       Description: Handle GitHub WebHooks
+      Environment:
+        Variables:
+          DevDocStackName: !Sub "${AWS::StackName}"
+          DevDocMasterBucket: !Sub "${DevDocMasterBucket}"
       Role: !GetAtt
         - GitHubHookLambdaExecutionRole
         - Arn
@@ -238,6 +225,14 @@ Resources:
                   - 'logs:PutLogEvents'
                 Resource:
                   - 'arn:aws:logs:*:*:*'
+                Effect: Allow
+        - PolicyName: ExecuteGitHubHookLambda
+          PolicyDocument:
+            Statement:
+              - Action:
+                  - 'codebuild:StartBuild'
+                Resource:
+                  - !Sub "arn:aws:codebuild:${AWS::Region}:${AWS::AccountId}:project/${DevDocsCodeBuild}"
                 Effect: Allow
       AssumeRolePolicyDocument:
         Statement:
@@ -407,6 +402,11 @@ Mappings:
     eu-central-1:
       Suffix: .s3-website.eu-central-1.amazonaws.com
 Outputs:
+  GitHubWebHookId:
+    Value: !Ref GitHubWebHook
+    Description: SNS topic to receive messages from GitHub pre-build integration
+    Export:
+      Name: !Sub "${AWS::StackName}-GitHubWebHookId"
   AccessKeyGitHubHookUser:
     Value: !Ref GitHubHookUserKey
   SecretKeyGitHubHookUser:
@@ -416,6 +416,8 @@ Outputs:
   MasterBucketName:
     Value: !Ref DevDocMasterBucket
     Description: Name of S3 bucket that holds the website of the master branch
+    Export:
+      Name: !Sub "${AWS::StackName}-MasterBucketName"
   MasterBucketURL:
     Value: !Join
       - ''
