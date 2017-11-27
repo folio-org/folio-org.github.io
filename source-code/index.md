@@ -83,6 +83,10 @@ facilitated by the code in the `raml-module-builder` repository.
 - [raml-module-builder](https://github.com/folio-org/raml-module-builder)
   -- Framework facilitating easy module creation based on RAML files.
 
+- [mod-configuration](https://github.com/folio-org/mod-configuration)
+  -- Configuration module based on the raml-module-builder and a set
+  of RAML and JSON Schemas backed by a PostgreSQL asynchronous implementation.
+
 - [mod-authtoken](https://github.com/folio-org/mod-authtoken)
   -- Filtering requests based on JWT tokens.
 
@@ -117,10 +121,6 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-circulation-storage](https://github.com/folio-org/mod-circulation-storage)
   -- Persistent storage to complement the circulation module.
 
-- [mod-configuration](https://github.com/folio-org/mod-configuration)
-  -- Configuration module based on the raml-module-builder and a set
-  of RAML and JSON Schemas backed by a PostgreSQL asynchronous implementation.
-
 - [mod-graphql](https://github.com/folio-org/mod-graphql)
   -- Executing GraphQL queries.
 
@@ -129,6 +129,12 @@ facilitated by the code in the `raml-module-builder` repository.
 
 - [mod-notify](https://github.com/folio-org/mod-notify)
   -- Notifications to the users.
+
+- [mod-codex-mock](https://github.com/folio-org/mod-codex-mock)
+  -- Codex mock module - for testing and development.
+
+- [mod-codex-mux](https://github.com/folio-org/mod-codex-mux)
+  -- Codex Multiplexer.
 
 - [mod-orders](https://github.com/folio-org/mod-orders)
   -- Persistent storage of order data.
@@ -202,6 +208,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-circulation](https://github.com/folio-org/ui-circulation)
   -- Stripes UI module: Circulation.
 
+- [ui-search](https://github.com/folio-org/ui-search)
+  -- Stripes UI module: searching, sorting, filtering and viewing records from the FOLIO Codex, an aggregation of bibliographic metadata from multiple sources.
+
 - [ui-organization](https://github.com/folio-org/ui-organization)
   -- Stripes UI module: managing organization settings.
 
@@ -244,15 +253,15 @@ exists and can be run, the APIs are likely to change.
   The current built boxes are also available to download from
   [Vagrant Cloud](https://app.vagrantup.com/folio).
 
-- [curriculum](https://github.com/folio-org/curriculum)
-  -- The source for the stand-alone [FOLIO Developer's Curriculum](http://dev.folio.org/curriculum).
-
-- [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
-  -- CQL (Contextual Query Language) to PostgreSQL JSON converter in Java.
-
 - [ui-testing](https://github.com/folio-org/ui-testing)
   -- Regression tests for FOLIO UI.
   The testing framework is explained. Guidelines for module developers.
+
+- [folio-tools](https://github.com/folio-org/folio-tools)
+  -- Various tools and support glue for FOLIO CI.
+
+- [curriculum](https://github.com/folio-org/curriculum)
+  -- The source for the stand-alone [FOLIO Developer's Curriculum](http://dev.folio.org/curriculum).
 
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.
