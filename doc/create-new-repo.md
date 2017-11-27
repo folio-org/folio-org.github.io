@@ -14,7 +14,7 @@ Disable the Issues and Wiki via Settings. We use the FOLIO resources.
 
 Copy initial files from an existing FOLIO module repository (e.g.
 [mod-notes](https://github.com/folio-org/mod-notes),
-[stripes-util-notes](https://github.com/folio-org/stripes-util-notes)).
+[stripes-smart-components](https://github.com/folio-org/stripes-smart-components)).
 The Stripes/UI/backend modules might be slightly different (e.g. CHANGELOG.md = NEWS.md).
 
 Add LICENSE and CONTRIBUTING.md and README.md files.
