@@ -11,7 +11,7 @@ version: 0.2
 phases:
   install:
     commands:
-       - bundle install --path vendor/bundle
+      - bundle install --path vendor/bundle
   #pre_build:
     #commands:
       # - command
