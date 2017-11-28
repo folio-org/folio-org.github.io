@@ -1,9 +1,18 @@
-# How dev.folio.org is hosted on AWS
+# Hosting a Jekyll-based website on AWS, with branch support
 
 ## AWS CloudFormation Configuration Files
-* [dev-folio-org-master](dev-folio-org-master_cloudformation.yml): Stack of the fundamental components for hosting dev.folio.org, including the GitHub hook user, the CloudFront distribution, and the S3 bucket hosting the master branch of the docs.
+* [website-master](website-master_cloudformation.yml): Stack of the fundamental components for hosting the website, including the GitHub hook user, the CloudFront distribution, and the S3 bucket hosting the master branch of the site.
+* [website-branch](website-branch_cloudformation.yml): Stack of the AWS components needed to host a branch of the website.
 
-## URLs with helpful information
+## Prerequisites
+Each of these are parameters to the `website-master_cloudformation.yml` file.
+In each numbered line, the CloudFormation variable name is listed at the beginning.
+1. `CloudFormationArtifacts`: S3 bucket for holding artifacts required for the CloudFormation stack (e.g. the AWS Lambda code)
+2. `WebsiteDNSName`: DNS name where the website will be located
+3. `GitHubWebsiteRepoURL`: URL to the git repository located on GitHub.com
+4. `GitHubHookUserName`: Name of the AWS IAM user that will be used on GitHub as the recipient of GitHub Webhook messages
+
+## URLs with information that was helpful in creating this CloudFront Stack
 * [Dynamic GitHub Actions with AWS Lambda | AWS Compute Blog](https://aws.amazon.com/blogs/compute/dynamic-github-actions-with-aws-lambda/)
 * [Using AWS CodePipeline and CodeBuild to update a Jekyll website](https://alexbilbie.com/2016/12/codebuild-codepipeline-update-jekyll-website/)
 * [Automated static website deployments via AWS and GitHub](https://www.dadoune.com/blog/aws-codepipeline-cloudbuild-static-s3-website/)

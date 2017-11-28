@@ -142,8 +142,8 @@ Resources:
   GitHubWebHook:
     Type: 'AWS::SNS::Topic'
     Properties:
-      TopicName: DevFolioOrgBuildLambda
-      DisplayName: Receive Webhook from GitHub.com/folio-org/folio-org.github.io
+      TopicName: WebsiteBuildLambda
+      DisplayName: Receive Webhook calls from GitHub
       Subscription:
         - Endpoint: !GetAtt
             - GitHubHookLambda
@@ -185,14 +185,14 @@ Resources:
       Runtime: python2.7
       Handler: GitHubHook.handler
       Code:
-        S3Bucket: !Ref DevDocsCodeBuildCache
+        S3Bucket: !Ref WebsiteCodeBuildCache
         S3Key: GitHubHook-Lambda.zip
       Description: Handle GitHub WebHooks
       Environment:
         Variables:
-          DevDocStackName: !Sub "${AWS::StackName}"
-          DevDocMasterBucket: !Sub "${DevDocMasterBucket}"
-          DevDocDNSName: !Sub "${DevDocDNSName}"
+          WebsitetackName: !Sub "${AWS::StackName}"
+          WebsiteMasterBucket: !Sub "${WebsiteMasterBucket}"
+          WebsiteDNSName: !Sub "${WebsiteDNSName}"
       Role: !GetAtt
         - GitHubHookLambdaExecutionRole
         - Arn
@@ -233,7 +233,7 @@ Resources:
               - Action:
                   - 'codebuild:StartBuild'
                 Resource:
-                  - !Sub "arn:aws:codebuild:${AWS::Region}:${AWS::AccountId}:project/${DevDocsCodeBuild}"
+                  - !Sub "arn:aws:codebuild:${AWS::Region}:${AWS::AccountId}:project/${WebsiteCodeBuild}"
                 Effect: Allow
       AssumeRolePolicyDocument:
         Statement:
@@ -260,13 +260,13 @@ Resources:
             Resource: !Join
               - ''
               - - 'arn:aws:s3:::'
-                - !Ref DevDocMasterBucket
+                - !Ref WebsiteMasterBucket
                 - /*
-      Bucket: !Ref DevDocMasterBucket
+      Bucket: !Ref WebsiteMasterBucket
     Metadata:
       'AWS::CloudFormation::Designer':
         id: c59d5ed8-abc2-4337-bfc1-69a2700f001e
-  DevDocMasterDistribution:
+  WebsiteMasterDistribution:
     Type: 'AWS::CloudFront::Distribution'
     Properties:
       DistributionConfig:
@@ -277,23 +277,23 @@ Resources:
               OriginProtocolPolicy: http-only
             DomainName: !Join
               - ''
-              - - !Ref DevDocMasterBucket
+              - - !Ref WebsiteMasterBucket
                 - !FindInMap
                   - Region2S3WebsiteSuffix
                   - !Ref 'AWS::Region'
                   - Suffix
-            Id: DevDocMasterBucket
+            Id: WebsiteMasterBucket
         Enabled: 'true'
         DefaultRootObject: index.html
         HttpVersion: http2
         IPV6Enabled: true
         Aliases:
-          - !Ref DevDocDNSName
+          - !Ref WebsiteDNSName
         DefaultCacheBehavior:
           AllowedMethods:
             - GET
             - HEAD
-          TargetOriginId: DevDocMasterBucket
+          TargetOriginId: WebsiteMasterBucket
           ForwardedValues:
             QueryString: 'true'
             Cookies:
@@ -303,7 +303,7 @@ Resources:
     Metadata:
       'AWS::CloudFormation::Designer':
         id: 2c48c8dd-e46f-4e1b-84f1-78691af3bebe
-  DevDocMasterBucket:
+  WebsiteMasterBucket:
     Type: 'AWS::S3::Bucket'
     Properties:
       AccessControl: PublicRead
@@ -313,16 +313,16 @@ Resources:
     Metadata:
       'AWS::CloudFormation::Designer':
         id: 171e46d2-f281-4e5b-bdf5-792b7de9b847
-  DevDocMasterRecordSet:
+  WebsiteMasterRecordSet:
     Type: 'AWS::Route53::RecordSet'
     Properties:
-      HostedZoneName: !Sub "testing.${DevDocDNSName}."
-      Name: !Sub "testing.${DevDocDNSName}."
+      HostedZoneName: !Sub "testing.${WebsiteDNSName}."
+      Name: !Sub "testing.${WebsiteDNSName}."
       Type: A
       AliasTarget:
         HostedZoneId: Z2FDTNDATAQYW2
         DNSName: !GetAtt
-          - DevDocMasterDistribution
+          - WebsiteMasterDistribution
           - DomainName
     Metadata:
       'AWS::CloudFormation::Designer':
@@ -351,12 +351,12 @@ Resources:
                   - s3:GetObject
                   - s3:PutObject
                   - s3:GetObjectVersion
-  DevDocsCodeBuild:
+  WebsiteCodeBuild:
     Type: 'AWS::CodeBuild::Project'
     Properties:
-      Name: DevDocJekyllBuild
+      Name: WebsiteJekyllBuild
       ServiceRole: !GetAtt CodeBuildServiceRole.Arn
-      Description: Build a branch of folio-org.github.io
+      Description: Build a branch of the website
       Artifacts:
         Type: NO_ARTIFACTS
       Environment:
@@ -364,19 +364,20 @@ Resources:
         ComputeType: BUILD_GENERAL1_SMALL
         Image: 'aws/codebuild/ruby:2.3.1'
       Source:
-        Location: 'https://github.com/folio-org/folio-org.github.io.git'
+        Location: !Ref GitHubWebsiteRepoURL
         Type: GITHUB
-  DevDocsCodeBuildCache:
+  WebsiteCodeBuildCache:
     Type: 'AWS::S3::Bucket'
     Properties:
       AccessControl: Private
 Parameters:
+  GitHubWebsiteRepoURL:
+    Type: String
   GitHubHookUserName:
     Type: String
-    Default: GitHub_DevFolioOrg_WebHook
-  DevDocDNSName:
+    Default: GitHub_Website_WebHook
+  WebsiteDNSName:
     Type: String
-    Default: dev.folio.org
 Mappings:
   Region2S3WebsiteSuffix:
     us-east-1:
@@ -418,7 +419,7 @@ Outputs:
       - GitHubHookUserKey
       - SecretAccessKey
   MasterBucketName:
-    Value: !Ref DevDocMasterBucket
+    Value: !Ref WebsiteMasterBucket
     Description: Name of S3 bucket that holds the website of the master branch
     Export:
       Name: !Sub "${AWS::StackName}-MasterBucketName"
@@ -426,14 +427,14 @@ Outputs:
     Value: !Join
       - ''
       - - 'https://'
-        - !Ref DevDocMasterBucket
+        - !Ref WebsiteMasterBucket
         - !FindInMap
           - Region2S3WebsiteSuffix
           - !Ref 'AWS::Region'
           - Suffix
     Description: URL to S3 bucket that holds the website of the master branch
-  DevDocDNSName:
-    Value: !Ref DevDocDNSName
+  WebsiteDNSName:
+    Value: !Ref WebsiteDNSName
     Description: DNS name of the developer documentation
     Export:
-      Name: !Sub "${AWS::StackName}-DevDocDNSName"
+      Name: !Sub "${AWS::StackName}-WebsiteDNSName"
