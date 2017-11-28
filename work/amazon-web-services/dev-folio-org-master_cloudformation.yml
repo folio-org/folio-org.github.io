@@ -288,7 +288,7 @@ Resources:
         HttpVersion: http2
         IPV6Enabled: true
         Aliases:
-          - !Ref: DevDocDNSName
+          - !Ref DevDocDNSName
         DefaultCacheBehavior:
           AllowedMethods:
             - GET
