@@ -165,6 +165,8 @@ and make them executable: 'chmod +x post-checkout post-merge'
 
 Now subsequent updates will also update the submodules to their declared revision.
 
+For Maven-based modules, add to your POM file (copy the 'git submodule update' from mod-notes) to assist all git clients to update.
+
 ## Troubleshooting
 
 See [notes](troubleshooting).
