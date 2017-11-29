@@ -28,7 +28,7 @@ Add [.editorconfig](setup#use-editorconfig-for-consistent-whitespace) file.
 Add initial NEWS.md or CHANGELOG.md file.
 
 If necessary, add a basic .gitignore file.
-Developers will have [their own](setup#use-gitignore) ~/.gitignore_global to handle most.
+Developers will have [their own ~/.gitignore_global](setup#use-gitignore) to handle most.
 
 Add other configuration files. Follow similar existing repositories.
 For back-end modules: descriptors/ModuleDescriptor-template.json, Dockerfile, etc.
