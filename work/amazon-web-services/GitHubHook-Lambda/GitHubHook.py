@@ -3,19 +3,19 @@
 """
 import os
 import string
+import base64
 import json
 import pprint
 import logging
 import urllib2
 import boto3
 import botocore
-import requests
 
 LOGGER = logging.getLogger(__name__)
 LOGGER.setLevel(logging.INFO)
 
 
-def set_github_status(repo, sha, state, target_url, description):
+def set_github_status(statuses_url, sha, state, target_url, description):
     """Send build status to GitHub
 
     Args:
@@ -29,17 +29,35 @@ def set_github_status(repo, sha, state, target_url, description):
       none
     """
     LOGGER.info('Entering set_github_status(%s, %s, %s, %s, %s)',
-          repo, sha, state, target_url, description)
+                statuses_url, sha, state, target_url, description)
     data = {
         "state": state,
         "target_url": target_url,
         "description": description,
-        "context": "website-build/" + config["overall"]["node-name"]
-    }
-    r = requests.post("https://api.github.com/repos/" + repo + "/statuses/" + sha,
-                      json=data,
-                      auth=(config["overall"]["github-username"], github_personal_access_token))
-    // Incomplete!
+        "context": "continuous-integration/website-build",
+        }
+    encoded_data = json.dumps(data)
+    LOGGER.info(encoded_data)
+    statuses_url = statuses_url.replace('{sha}', sha)
+    request = urllib2.Request(statuses_url, encoded_data)
+    request.add_header("Content-Type", 'application/json')
+    auth = base64.encodestring('%s:%s' % (os.environ['GitHubUsername'], os.environ['GitHubAccessToken'])).replace('\n', '')
+    request.add_header("Authorization", "Basic %s" % auth)
+
+    urllibhandler = urllib2.HTTPSHandler(debuglevel=1)
+    opener = urllib2.build_opener(urllibhandler)
+    urllib2.install_opener(opener)
+    try:
+        connection = urllib2.urlopen(request)
+    except urllib2.HTTPError as ex:
+        LOGGER.exception(ex)
+        raise RuntimeError('GitHub Status API Update failed: %s', ex.message)
+
+    LOGGER.info('Received status code "%s" from GitHub', connection.code)
+    if connection.code != 201:
+        raise RuntimeError('Post to GitHub Status API returned "%s", not 201', connection.code)
+    LOGGER.info('Leaving set_github_status()')
+    return
 
 
 def codebuild_start_build(branch, bucket):
@@ -56,7 +74,7 @@ def codebuild_start_build(branch, bucket):
     client = boto3.client('codebuild')
     try:
         response = client.start_build(
-            projectName='DevDocJekyllBuild',
+            projectName=os.environ['WebsiteStackName'] + '-WebsiteJekyllBuild',
             sourceVersion=branch,
             environmentVariablesOverride=[
                 {
@@ -83,7 +101,7 @@ def codebuild_start_build(branch, bucket):
     except botocore.exceptions.ClientError as ex:
         LOGGER.error('CloudBuild failed: %s', ex.response['Error']['Message'])
         raise RuntimeError('CloudBuild failed')
-    LOGGER.info('Build succeeded')
+    LOGGER.info('Build started')
     return
 
 
@@ -100,42 +118,45 @@ def normalize_name(name):
     name = name.lower()
     allowed_chars = ''.join([string.ascii_lowercase, string.digits, '-'])
     new_name = ''.join(['-' if c not in allowed_chars else c for c in name])
-    max_length = 63 - len('.' + os.environ['DevDocDNSName'])
+    max_length = 63 - len('.' + os.environ['WebsiteDNSName'])
     new_name = (new_name[:max_length]) if len(new_name) > max_length else new_name
     return new_name
+
+
+def get_stack_dns(branch_name):
+    """Create stack name string
+    """
+    return '.'.join([branch_name, os.environ['WebsiteDNSName']])
+
+
+def get_stack_name(branch_name):
+    """Create stack name string
+    """
+    return os.environ['WebsiteStackName'] + 'Branch-' + branch_name
 
 
 def create_stack(push_branch, branch_name):
     """Create a AWS CloudFormation stack for the branch
     """
     LOGGER.info('Entered create_stack(%s, %s)', push_branch, branch_name)
-    template_url = 'https://raw.githubusercontent.com/folio-org/folio-org.github.io/{}/work/amazon-web-services/dev-folio-org-branch_cloudformation.yml'.format(push_branch)  # NOQA pylint: disable=C0301
-    try:
-        template_req = urllib2.urlopen(template_url)
-        stack_template = template_req.read()
-    except urllib2.URLError, ex:
-        LOGGER.error('URLError = %s', str(ex.reason))
-        raise RuntimeError("urllib error to template")
-    except Exception:
-        import traceback
-        LOGGER.error('generic exception: %s', traceback.format_exc())
-        raise RuntimeError("generic exception getting to template")
+    template_url = 'https://s3.amazonaws.com/{}/website-branch_cloudformation.yml'.format(os.environ['WebsiteCFNArtifactsBucket'])  # NOQA pylint: disable=C0301
 
     LOGGER.info('Creating stack for %s', branch_name)
     client = boto3.client('cloudformation')
-    stack_name = 'DevDocsBranch-' + branch_name
+    stack_name = get_stack_name(branch_name)
     try:
         response = client.create_stack(
             StackName=stack_name,
-            TemplateBody=stack_template,
+            TemplateURL=template_url,
+            NotificationARNs=[os.environ['WebsiteBranchCFNNotification']],
             Parameters=[
                 {
-                    'ParameterKey': 'DevDocBranchLabel',
+                    'ParameterKey': 'WebsiteBranchLabel',
                     'ParameterValue': branch_name,
                     },
                 {
-                    'ParameterKey': 'DevDocDNSName',
-                    'ParameterValue': os.environ['DevDocDNSName'],
+                    'ParameterKey': 'WebsiteDNSName',
+                    'ParameterValue': os.environ['WebsiteDNSName'],
                     }
                 ],
             )
@@ -145,15 +166,10 @@ def create_stack(push_branch, branch_name):
         waiter = client.get_waiter('stack_create_complete')
         waiter.wait(StackName=stack_name)
     except botocore.exceptions.ClientError as ex:
-        LOGGER.error('Cloudformation failed: %s', ex.response['Error']['Message'])
+        LOGGER.exception(ex)
         raise RuntimeError('CloudFormation failed')
-
-    stack = client.describe_stacks(StackName=response['StackId'])
-    for key in stack['Stacks'][0]['Outputs']:
-        if key == 'BucketName':
-            stack_bucket = stack[key]
-    LOGGER.info('Bucket: %s.  Stack created: %s.', stack_bucket, json.dumps(stack))
-    return stack_bucket
+    LOGGER.info('Leaving create_stack()')
+    return
 
 
 def stackexistsfor(branch_name):
@@ -168,10 +184,12 @@ def stackexistsfor(branch_name):
     LOGGER.info('Testing to see if stack for branch "%s" exists', branch_name)
     client = boto3.client('cloudformation')
     try:
-        client.describe_stacks(StackName='{}.{}'.format(branch_name, os.environ('DevDocDNSName')))
+        client.describe_stacks(StackName=get_stack_name(branch_name))
     except botocore.exceptions.ClientError:
+        LOGGER.info('Not found')
         return False
     else:
+        LOGGER.info('Found!')
         return True
 
 
@@ -188,8 +206,8 @@ def handler(event, context):
     print json.dumps(event)
     my_event = event['Records'][0]['Sns']
 
-    gh_event = my_event['MessageAttributes'].get('X-GitHub-Event', '')
-    if gh_event != 'push':
+    gh_event = my_event['MessageAttributes'].get('X-Github-Event', '')
+    if gh_event['Value'] != 'push':
         LOGGER.info('Nothing to do with X-GitHub-Event: %s', gh_event)
         return
 
@@ -211,31 +229,85 @@ def handler(event, context):
     push_branch = hookdata['ref'].replace('refs/heads/', '')
     push_created = hookdata['created']
     push_deleted = hookdata['deleted']
+    statuses_url = hookdata['repository']['statuses_url']
+    sha = hookdata['after']
+    LOGGER.info("Ref: %s; Created: %s; Deleted: %s; SHA: %s", push_branch, push_created, push_deleted, sha)
 
     if push_branch == 'master':
         LOGGER.info("Received push to master branch")
-        codebuild_start_build('master', os.environ['DevDocMasterBucket'])
+        codebuild_start_build('master', os.environ['WebsiteMasterBucket'])
         return
 
     normalized_branch_name = normalize_name(push_branch)
-    if push_deleted == 'true':
+    if push_deleted:
         LOGGER.info("Received deleted branch message for %s", push_branch)
-        # Do something to delete the branch stack
+        s3 = boto3.resource('s3')
+        bucket = s3.Bucket(get_stack_dns(normalized_branch_name))
+        for obj in bucket.objects.filter():
+            s3.Object(bucket.name, obj.key).delete()
+        LOGGER.info("S3 bucket contents deleted")
 
-    if push_created == 'true':
+        cloudformation = boto3.resource('cloudformation')
+        stack = cloudformation.Stack(get_stack_name(normalized_branch_name))
+        try:
+            stack.delete()
+        except RuntimeError as ex:
+            LOGGER.exception(ex)
+            return {"body": json.dumps({"error": str(ex)}), "statusCode": 500}
+        LOGGER.info("Request to delete stack accepted")
+        return
+
+    try:
+        set_github_status(statuses_url, sha, 'pending', '', 'Branch build started')
+    except RuntimeError as ex:
+        return {"body": json.dumps({"error": str(ex)}), "statusCode": 500}
+
+    if push_created:
         LOGGER.info("Received created branch message for %s", push_branch)
         try:
-            bucket = create_stack(push_branch, normalized_branch_name)
-        except RuntimeError, err:
-            return {"body": json.dumps({"error": err}), "statusCode": 500}
+            create_stack(push_branch, normalized_branch_name)
+        except RuntimeError as ex:
+            return {"body": json.dumps({"error": str(ex)}), "statusCode": 500}
 
     if not stackexistsfor(normalized_branch_name):
         LOGGER.warning("Received push for '%s' but stack didn't exist; creating.", push_branch)
         try:
-            bucket = create_stack(push_branch, normalized_branch_name)
-        except RuntimeError, err:
-            return {"body": json.dumps({"error": err}), "statusCode": 500}
+            create_stack(push_branch, normalized_branch_name)
+        except RuntimeError as ex:
+            return {"body": json.dumps({"error": str(ex)}), "statusCode": 500}
 
+    LOGGER.info('Beginning build of %s', push_branch)
+    codebuild_start_build(push_branch, get_stack_dns(normalized_branch_name))
+    return
+
+
+def branch_cfn_handler(event, context):
+    """AWS Lambda handler for events from the branch CloudFormation stack build
+
+    Args:
+      event:
+      context:
+
+    Returns:
+      No return
+    """
+    print json.dumps(event)
+    LOGGER.info('Beginning build of %s', push_branch)
+    codebuild_start_build(push_branch, bucket)
+    return
+
+
+def codebuilder_result_handler(event, context):
+    """AWS Lambda handler for events from the CodeBuild project
+
+    Args:
+      event:
+      context:
+
+    Returns:
+      No return
+    """
+    print json.dumps(event)
     LOGGER.info('Beginning build of %s', push_branch)
     codebuild_start_build(push_branch, bucket)
     return
