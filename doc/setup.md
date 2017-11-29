@@ -139,7 +139,7 @@ Some FOLIO repositories utilize "git submodules" for sections of common code.
 For example, each `mod-*` module and `raml-module-builder` include the "raml" repository as a git submodule as its `raml-util` directory.
 
 Note that when originally cloning a repository, use 'git clone --recursive ...'
-Some git clients do not. If you then have an empty "raml-util" directory, then do 'git submodule update --init'.
+Some git clients do not. If you then have an empty "raml-util" directory, then do `git submodule update --init`
 
 Thereafter updating that submodule is deliberately not automated, so that we can ensure a stable build when we git checkout in the future.
 
@@ -164,6 +164,8 @@ using this content:
 and make them executable: 'chmod +x post-checkout post-merge'
 
 Now subsequent updates will also update the submodules to their declared revision.
+
+For Maven-based modules, add to your POM file (copy the 'git submodule update' from mod-notes) to assist all git clients to update.
 
 ## Troubleshooting
 
