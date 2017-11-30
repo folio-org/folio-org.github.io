@@ -14,30 +14,33 @@ Resources:
             Resource: !Join
               - ''
               - - 'arn:aws:s3:::'
-                - !Ref DevDocBranchBucket
+                - !Ref WebsiteBranchBucket
                 - /*
-      Bucket: !Ref DevDocBranchBucket
-  DevDocBranchBucket:
+      Bucket: !Ref WebsiteBranchBucket
+  WebsiteBranchBucket:
     Type: 'AWS::S3::Bucket'
     Properties:
-      BucketName: !Sub "${DevDocBranchLabel}.dev.folio.org"
+      BucketName: !Sub "${WebsiteBranchLabel}.${WebsiteDNSName}"
       AccessControl: PublicRead
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: error.html
-  DevDocBranchRecordSet:
+  WebsiteBranchRecordSet:
     Type: 'AWS::Route53::RecordSet'
     Properties:
-      HostedZoneName: dev.folio.org.
-      Name: !Sub "${DevDocBranchLabel}.dev.folio.org."
+      HostedZoneName: !Sub "${WebsiteDNSName}."
+      Name: !Sub "${WebsiteBranchLabel}.${WebsiteDNSName}."
       Type: A
       AliasTarget:
         HostedZoneId: !FindInMap [ RegionMap, !Ref 'AWS::Region', S3hostedzoneID]
         DNSName: !FindInMap [ RegionMap, !Ref 'AWS::Region', websiteendpoint]
 Parameters:
-  DevDocBranchLabel:
+  WebsiteBranchLabel:
     Type: String
     Description: The Git branch label
+  WebsiteDNSName:
+    Type: String
+    Default: Domain of the website
 Mappings:
   RegionMap:
     us-east-1:
@@ -66,8 +69,8 @@ Mappings:
       websiteendpoint: s3-website-sa-east-1.amazonaws.com
 Outputs:
   WebsiteURL:
-    Value: !Join ['', ['http://', !Ref 'DevDocBranchRecordSet']]
+    Value: !Join ['', ['http://', !Ref 'WebsiteBranchRecordSet']]
     Description: The URL of the newly created website
   BucketName:
-    Value: !Ref 'DevDocBranchBucket'
+    Value: !Ref 'WebsiteBranchBucket'
     Description: Name of S3 bucket to hold website content
