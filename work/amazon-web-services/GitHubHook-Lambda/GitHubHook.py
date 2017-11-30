@@ -14,8 +14,11 @@ import botocore
 LOGGER = logging.getLogger(__name__)
 LOGGER.setLevel(logging.INFO)
 
+CONST_BUCKET_NAME = 'BUCKET_NAME'
+CONST_GITHUB_STATUSES_URL = 'GITHUB_STATUSES_URL'
 
-def set_github_status(statuses_url, sha, state, target_url, description):
+
+def set_github_status(statuses_url, state, target_url, description):
     """Send build status to GitHub
 
     Args:
@@ -28,8 +31,8 @@ def set_github_status(statuses_url, sha, state, target_url, description):
     Returns:
       none
     """
-    LOGGER.info('Entering set_github_status(%s, %s, %s, %s, %s)',
-                statuses_url, sha, state, target_url, description)
+    LOGGER.info('Entering set_github_status(%s, %s, %s, %s)',
+                statuses_url, state, target_url, description)
     data = {
         "state": state,
         "target_url": target_url,
@@ -38,13 +41,12 @@ def set_github_status(statuses_url, sha, state, target_url, description):
         }
     encoded_data = json.dumps(data)
     LOGGER.info(encoded_data)
-    statuses_url = statuses_url.replace('{sha}', sha)
     request = urllib2.Request(statuses_url, encoded_data)
     request.add_header("Content-Type", 'application/json')
-    auth = base64.encodestring('%s:%s' % (os.environ['GitHubUsername'], os.environ['GitHubAccessToken'])).replace('\n', '')
+    auth = base64.encodestring('%s:%s' % (os.environ['GitHubUsername'], os.environ['GitHubAccessToken'])).replace('\n', '')  # NOQA pylint: disable=C0301
     request.add_header("Authorization", "Basic %s" % auth)
 
-    urllibhandler = urllib2.HTTPSHandler(debuglevel=1)
+    urllibhandler = urllib2.HTTPSHandler(debuglevel=0)
     opener = urllib2.build_opener(urllibhandler)
     urllib2.install_opener(opener)
     try:
@@ -60,7 +62,7 @@ def set_github_status(statuses_url, sha, state, target_url, description):
     return
 
 
-def codebuild_start_build(branch, bucket):
+def codebuild_start_build(branch, bucket, statuses_url):
     """Launch a CodeBuild start-build
 
     Args:
@@ -78,8 +80,13 @@ def codebuild_start_build(branch, bucket):
             sourceVersion=branch,
             environmentVariablesOverride=[
                 {
-                    'name': 'BUCKET_NAME',
+                    'name': CONST_BUCKET_NAME,
                     'value': bucket,
+                    'type': 'PLAINTEXT'
+                    },
+                {
+                    'name': CONST_GITHUB_STATUSES_URL,
+                    'value': statuses_url,
                     'type': 'PLAINTEXT'
                     },
                 ],
@@ -88,16 +95,6 @@ def codebuild_start_build(branch, bucket):
         if not response or not isinstance(response, dict):
             LOGGER.error('CloudBuild failed: %s', response['Error']['Message'])
             raise RuntimeError("CloudBuild Failed")
-        # flag_succeeded = False
-        # t_end = time.time() + 60 * 2
-        # while time.time() < t_end and not flag_succeeded:
-        #     time.sleep(5)
-        #     timer = client.batch_get_builds([response['build']['id']])
-        #     flag_succeeded = timer['builds'][0]['buildComplete']
-        # LOGGER.info(json.dumps(timer))
-        # if not flag_succeeded:
-        #     LOGGER.error('CloudBuild wait time exceeded. Last status: %s', json.dumps(timer))
-        #     raise RuntimeError('CloudBuild wait time exceeded')
     except botocore.exceptions.ClientError as ex:
         LOGGER.error('CloudBuild failed: %s', ex.response['Error']['Message'])
         raise RuntimeError('CloudBuild failed')
@@ -231,11 +228,13 @@ def handler(event, context):
     push_deleted = hookdata['deleted']
     statuses_url = hookdata['repository']['statuses_url']
     sha = hookdata['after']
-    LOGGER.info("Ref: %s; Created: %s; Deleted: %s; SHA: %s", push_branch, push_created, push_deleted, sha)
+    statuses_url = statuses_url.replace('{sha}', sha)
+    LOGGER.info("Ref: %s; Created: %s; Deleted: %s; statuses_url: %s",
+                push_branch, push_created, push_deleted, statuses_url)
 
     if push_branch == 'master':
         LOGGER.info("Received push to master branch")
-        codebuild_start_build('master', os.environ['WebsiteMasterBucket'])
+        codebuild_start_build('master', os.environ['WebsiteMasterBucket'], statuses_url)
         return
 
     normalized_branch_name = normalize_name(push_branch)
@@ -258,7 +257,7 @@ def handler(event, context):
         return
 
     try:
-        set_github_status(statuses_url, sha, 'pending', '', 'Branch build started')
+        set_github_status(statuses_url, 'pending', '', 'Branch build started')
     except RuntimeError as ex:
         return {"body": json.dumps({"error": str(ex)}), "statusCode": 500}
 
@@ -277,7 +276,7 @@ def handler(event, context):
             return {"body": json.dumps({"error": str(ex)}), "statusCode": 500}
 
     LOGGER.info('Beginning build of %s', push_branch)
-    codebuild_start_build(push_branch, get_stack_dns(normalized_branch_name))
+    codebuild_start_build(push_branch, get_stack_dns(normalized_branch_name), statuses_url)
     return
 
 
@@ -307,7 +306,21 @@ def codebuilder_result_handler(event, context):
     Returns:
       No return
     """
+    LOGGER.info('Entering codebuilder_result_handler()')
     print json.dumps(event)
-    LOGGER.info('Beginning build of %s', push_branch)
-    codebuild_start_build(push_branch, bucket)
+    try:
+        build_status = event['detail']['build-status']
+        build_env_vars = event['detail']['additional-information']['environment']['environment-variables']
+        for build_env_var in build_env_vars:
+            if build_env_var['name'] == CONST_BUCKET_NAME:
+                bucket_name = build_env_var['value']
+            if build_env_var['name'] == CONST_GITHUB_STATUSES_URL:
+                statuses_url = build_env_var['value']
+    except KeyError as ex:
+        LOGGER.exception(ex)
+        raise Exception('Unexpected data from CodeBuild Event')
+    reported_status = 'success' if build_status == 'SUCCEEDED' else 'failure'
+    target_url = 'http://{}.s3-website-{}.amazonaws.com'.format(
+        bucket_name, os.environ['AWS_DEFAULT_REGION'])
+    set_github_status(statuses_url, reported_status, target_url, 'Branch build finished')
     return

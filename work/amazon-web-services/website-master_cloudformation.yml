@@ -1,252 +1,4 @@
 AWSTemplateFormatVersion: 2010-09-09
-Metadata:
-  'AWS::CloudFormation::Designer':
-    440feda6-b280-4cad-97aa-310a1c3aeb64:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 150
-        'y': 210
-      z: 1
-      embeds: []
-      dependson:
-        - 3de6d6e7-96b5-4bf9-841e-914051d50846
-      isrelatedto:
-        - 3de6d6e7-96b5-4bf9-841e-914051d50846
-    933166eb-796d-4e80-a2d6-e9f4cb346d48:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 30
-        'y': 60
-      z: 1
-      embeds: []
-      isrelatedto:
-        - 933166eb-796d-4e80-a2d6-e9f4cb346d48
-        - db9f9a17-91ed-43f6-9538-7982158bebce
-    9f1e1657-35ee-4cec-b080-6b1514b4d643:
-      source:
-        id: e3ba48e2-ae39-48b8-8fed-0005c4238ce6
-      target:
-        id: 933166eb-796d-4e80-a2d6-e9f4cb346d48
-      z: 11
-    fdaf6a44-b32e-4c75-8a91-1756e49d0736:
-      source:
-        id: e3ba48e2-ae39-48b8-8fed-0005c4238ce6
-      target:
-        id: 440feda6-b280-4cad-97aa-310a1c3aeb64
-      z: 11
-    db9f9a17-91ed-43f6-9538-7982158bebce:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 150
-        'y': 60
-      z: 1
-      embeds: []
-      dependson:
-        - 440feda6-b280-4cad-97aa-310a1c3aeb64
-      isrelatedto:
-        - 440feda6-b280-4cad-97aa-310a1c3aeb64
-    5dd4ffbf-9fed-480a-a0f2-c863d58f159e:
-      source:
-        id: db9f9a17-91ed-43f6-9538-7982158bebce
-      target:
-        id: 440feda6-b280-4cad-97aa-310a1c3aeb64
-      z: 11
-    3de6d6e7-96b5-4bf9-841e-914051d50846:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 390
-        'y': 210
-      z: 1
-      embeds: []
-      isrelatedto:
-        - b624f20c-b645-4277-ad42-12373ed9fc75
-        - edcb3b5d-d51d-450b-8bb4-2102ea4e48b0
-    b624f20c-b645-4277-ad42-12373ed9fc75:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 540
-        'y': 240
-      z: 1
-      embeds: []
-      dependson:
-        - edcb3b5d-d51d-450b-8bb4-2102ea4e48b0
-      isrelatedto:
-        - edcb3b5d-d51d-450b-8bb4-2102ea4e48b0
-        - 460e37b9-5a5e-4e40-bb4f-3e3e1812de7a
-    27a38a95-180c-4816-94dd-bdd8a422a24f:
-      source:
-        id: 440feda6-b280-4cad-97aa-310a1c3aeb64
-      target:
-        id: 3de6d6e7-96b5-4bf9-841e-914051d50846
-      z: 11
-    c1c24a0e-2354-4f54-8811-84611f37f71a:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 270
-        'y': 180
-      z: 1
-      embeds: []
-      isassociatedwith:
-        - 3de6d6e7-96b5-4bf9-841e-914051d50846
-      isrelatedto:
-        - 440feda6-b280-4cad-97aa-310a1c3aeb64
-    171e46d2-f281-4e5b-bdf5-792b7de9b847:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 420
-        'y': 70
-      z: 1
-      embeds: []
-    2c48c8dd-e46f-4e1b-84f1-78691af3bebe:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 540
-        'y': 70
-      z: 1
-      embeds: []
-      isrelatedto:
-        - 171e46d2-f281-4e5b-bdf5-792b7de9b847
-    5dadd00b-4e5c-4378-9cbb-8c979fe4216d:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 690
-        'y': 240
-      z: 2
-      parent: 36aeebf0-58a6-4554-8081-118ba6eef68e
-      embeds: []
-      dependson:
-        - 36aeebf0-58a6-4554-8081-118ba6eef68e
-      isrelatedto:
-        - 2c48c8dd-e46f-4e1b-84f1-78691af3bebe
-    c59d5ed8-abc2-4337-bfc1-69a2700f001e:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 540
-        'y': 150
-      z: 1
-      embeds: []
-      isassociatedwith:
-        - 171e46d2-f281-4e5b-bdf5-792b7de9b847
-    bb638d8a-6094-4cfd-9506-079048c2e1f0:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 750
-        'y': 90
-      z: 1
-      embeds: []
-    58a62a0c-c5e9-417d-8708-ff4027244a7b:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 870
-        'y': 90
-      z: 1
-      embeds: []
-      isrelatedto:
-        - bb638d8a-6094-4cfd-9506-079048c2e1f0
-    36aeebf0-58a6-4554-8081-118ba6eef68e:
-      size:
-        width: 150
-        height: 150
-      position:
-        x: 660
-        'y': 180
-      z: 1
-      embeds:
-        - 5dadd00b-4e5c-4378-9cbb-8c979fe4216d
-    fee20551-28de-4c79-b0f8-6c754f6aa999:
-      source:
-        id: 5dadd00b-4e5c-4378-9cbb-8c979fe4216d
-      target:
-        id: 36aeebf0-58a6-4554-8081-118ba6eef68e
-      z: 2
-    b057b6c1-b7ca-46ff-be96-8e20ba857e06:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 840
-        'y': 240
-      z: 1
-      embeds: []
-      dependson:
-        - 5dadd00b-4e5c-4378-9cbb-8c979fe4216d
-    edcb3b5d-d51d-450b-8bb4-2102ea4e48b0:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 390
-        'y': 330
-      z: 1
-      embeds: []
-    531e4402-565d-4b29-9c5e-0c2ae284eb9b:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 150
-        'y': 330
-      z: 1
-      embeds: []
-      isrelatedto:
-        - edcb3b5d-d51d-450b-8bb4-2102ea4e48b0
-    99c1381c-b6d5-473a-a38c-52b3ab59d40b:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 930
-        'y': 330
-      z: 1
-      embeds: []
-      isrelatedto:
-        - edcb3b5d-d51d-450b-8bb4-2102ea4e48b0
-        - b624f20c-b645-4277-ad42-12373ed9fc75
-        - a706db49-260a-4370-ac47-a81af60d6461
-    460e37b9-5a5e-4e40-bb4f-3e3e1812de7a:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 540
-        'y': 380
-      z: 1
-      embeds: []
-      isrelatedto:
-        - 99c1381c-b6d5-473a-a38c-52b3ab59d40b
-    a706db49-260a-4370-ac47-a81af60d6461:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 930
-        'y': 230
-      z: 1
-      embeds: []
 Resources:
   GitHubWebHook:
     Type: 'AWS::SNS::Topic'
@@ -256,18 +8,14 @@ Resources:
       Subscription:
         - Endpoint: !GetAtt GitHubHookLambda.Arn
           Protocol: lambda
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 440feda6-b280-4cad-97aa-310a1c3aeb64
     DependsOn:
       - GitHubHookLambda
+
   GitHubHookUserKey:
     Type: 'AWS::IAM::AccessKey'
     Properties:
       UserName: !Ref GitHubHookUser
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 933166eb-796d-4e80-a2d6-e9f4cb346d48
+
   GitHubHookUser:
     Type: 'AWS::IAM::User'
     Properties:
@@ -280,11 +28,9 @@ Resources:
               - Effect: Allow
                 Action: 'sns:Publish'
                 Resource: !Ref GitHubWebHook
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: db9f9a17-91ed-43f6-9538-7982158bebce
     DependsOn:
       - GitHubWebHook
+
   GitHubHookLambda:
     Type: 'AWS::Lambda::Function'
     Properties:
@@ -308,9 +54,7 @@ Resources:
           WebsiteBranchCFNNotification: !Sub '${WebsiteBranchCFNNotification}'
       Timeout: 300
       Role: !GetAtt GitHubHookLambdaExecutionRole.Arn
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 3de6d6e7-96b5-4bf9-841e-914051d50846
+
   GitHubHookLambdaPermission:
     Properties:
       Action: 'lambda:InvokeFunction'
@@ -318,9 +62,7 @@ Resources:
       Principal: sns.amazonaws.com
       SourceArn: !Ref GitHubWebHook
     Type: 'AWS::Lambda::Permission'
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: c1c24a0e-2354-4f54-8811-84611f37f71a
+
   GitHubHookLambdaExecutionRole:
     Type: 'AWS::IAM::Role'
     Properties:
@@ -386,17 +128,13 @@ Resources:
     DependsOn:
       - WebsiteErrorQueue
       - WebsiteBranchCFNNotification
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: b624f20c-b645-4277-ad42-12373ed9fc75
+
   WebsiteErrorQueue:
     Type: 'AWS::SNS::Topic'
     Properties:
       TopicName: WebsiteBuildLambdaDeadLetterQueue
       DisplayName: SNS for failed activities of the Lambda and CodeBuild
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: edcb3b5d-d51d-450b-8bb4-2102ea4e48b0
+
   WebsiteMasterBucketPolicy:
     Type: 'AWS::S3::BucketPolicy'
     Properties:
@@ -414,9 +152,7 @@ Resources:
                 - !Ref WebsiteMasterBucket
                 - /*
       Bucket: !Ref WebsiteMasterBucket
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: c59d5ed8-abc2-4337-bfc1-69a2700f001e
+
   WebsiteMasterDistribution:
     Type: 'AWS::CloudFront::Distribution'
     Properties:
@@ -449,9 +185,7 @@ Resources:
               Forward: none
           ViewerProtocolPolicy: allow-all
         PriceClass: PriceClass_All
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 2c48c8dd-e46f-4e1b-84f1-78691af3bebe
+
   WebsiteMasterBucket:
     Type: 'AWS::S3::Bucket'
     Properties:
@@ -459,16 +193,12 @@ Resources:
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: error.html
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 171e46d2-f281-4e5b-bdf5-792b7de9b847
+
   WebsiteHostedZone:
     Type: 'AWS::Route53::HostedZone'
     Properties:
       Name: !Sub '${WebsiteDNSName}.'
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 36aeebf0-58a6-4554-8081-118ba6eef68e
+
   WebsiteMasterRecordSet:
     Type: 'AWS::Route53::RecordSet'
     Properties:
@@ -478,11 +208,9 @@ Resources:
         HostedZoneId: Z2FDTNDATAQYW2
         DNSName: !GetAtt WebsiteMasterDistribution.DomainName
       HostedZoneId: !Ref WebsiteHostedZone
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 5dadd00b-4e5c-4378-9cbb-8c979fe4216d
     DependsOn:
       - WebsiteHostedZone
+
   WebsiteCert:
     Type: 'AWS::CertificateManager::Certificate'
     Properties:
@@ -490,11 +218,9 @@ Resources:
       DomainValidationOptions:
         - DomainName: !Ref WebsiteDNSName
           ValidationDomain: !Ref WebsiteDNSName
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: b057b6c1-b7ca-46ff-be96-8e20ba857e06
     DependsOn:
       - WebsiteMasterRecordSet
+
   CodeBuildServiceRole:
     Type: 'AWS::IAM::Role'
     Properties:
@@ -510,18 +236,20 @@ Resources:
           PolicyDocument:
             Version: 2012-10-17
             Statement:
-              - Resource: '*'
-                Effect: Allow
-                Action:
+              - Action:
                   - 'logs:CreateLogGroup'
                   - 'logs:CreateLogStream'
                   - 'logs:PutLogEvents'
+                  - 'events:*'
                   - 's3:GetObject'
                   - 's3:PutObject'
                   - 's3:GetObjectVersion'
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: bb638d8a-6094-4cfd-9506-079048c2e1f0
+                Resource: '*'
+                Effect: Allow
+              - Action: 'sns:Publish'
+                Resource: '*'
+                Effect: Allow
+
   WebsiteCodeBuild:
     Type: 'AWS::CodeBuild::Project'
     Properties:
@@ -537,9 +265,7 @@ Resources:
       Source:
         Location: !Ref GitHubWebsiteRepoURL
         Type: GITHUB
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 58a62a0c-c5e9-417d-8708-ff4027244a7b
+
   CodeBuildFinishedRule:
     Type: 'AWS::Events::Rule'
     Properties:
@@ -558,16 +284,17 @@ Resources:
             - !Ref WebsiteCodeBuild
       State: ENABLED
       Targets:
-        - Arn: !Ref CodeBuildFinishedMessage
+        - Arn: !GetAtt CodeBuildFinishedLambda.Arn
           Id: WebsiteCodeBuildFinished
-  CodeBuildFinishedMessage:
-    Type: 'AWS::SNS::Topic'
+
+  CodeBuildEventsToInvokeLambdaPermission:
+    Type: 'AWS::Lambda::Permission'
     Properties:
-      TopicName: !Sub "${AWS::StackName}CodeBuildFinished"
-      DisplayName: SNS for when CodeBuild finishes
-      Subscription:
-        - Endpoint: !GetAtt CodeBuildFinishedLambda.Arn
-          Protocol: lambda
+      FunctionName: !Ref CodeBuildFinishedLambda
+      Action: 'lambda:InvokeFunction'
+      Principal: 'events.amazonaws.com'
+      SourceArn: !GetAtt CodeBuildFinishedRule.Arn
+
   CodeBuildFinishedLambda:
     Type: 'AWS::Lambda::Function'
     Properties:
@@ -589,7 +316,33 @@ Resources:
           GitHubUsername: !Sub '${GitHubUsername}'
           GitHubAccessToken: !Sub '${GitHubAccessToken}'
           WebsiteBranchCFNNotification: !Sub '${WebsiteBranchCFNNotification}'
-      Role: !GetAtt GitHubHookLambdaExecutionRole.Arn
+      Role: !GetAtt CodeBuildFinishedLambdaExecutionRole.Arn
+
+  CodeBuildFinishedLambdaExecutionRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      Path: /
+      Policies:
+        - PolicyName: CloudwatchLogs
+          PolicyDocument:
+            Statement:
+              - Action:
+                  - 'logs:CreateLogGroup'
+                  - 'logs:CreateLogStream'
+                  - 'logs:GetLogEvents'
+                  - 'logs:PutLogEvents'
+                Resource:
+                  - 'arn:aws:logs:*:*:*'
+                Effect: Allow
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action:
+              - 'sts:AssumeRole'
+            Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+
   CodeBuildFailedRule:
     Type: 'AWS::Events::Rule'
     Properties:
@@ -608,9 +361,7 @@ Resources:
       Targets:
         - Arn: !Ref WebsiteErrorQueue
           Id: WebsiteCodeBuildError
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 531e4402-565d-4b29-9c5e-0c2ae284eb9b
+
   WebsiteBranchCFNNotification:
     Type: 'AWS::SNS::Topic'
     Properties:
@@ -619,9 +370,7 @@ Resources:
       Subscription:
         - Endpoint: !GetAtt WebsiteBranchCNFStatus.Arn
           Protocol: lambda
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 460e37b9-5a5e-4e40-bb4f-3e3e1812de7a
+
   WebsiteBranchCNFStatus:
     Type: 'AWS::Lambda::Function'
     Properties:
@@ -643,9 +392,7 @@ Resources:
           GitHubUsername: !Sub '${GitHubUsername}'
           GitHubAccessToken: !Sub '${GitHubAccessToken}'
       Role: !GetAtt WebsiteBranchBuildLambdaExecutionRole.Arn
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 99c1381c-b6d5-473a-a38c-52b3ab59d40b
+
   WebsiteBranchBuildLambdaExecutionRole:
     Type: 'AWS::IAM::Role'
     Properties:
@@ -685,9 +432,7 @@ Resources:
             Principal:
               Service:
                 - lambda.amazonaws.com
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: a706db49-260a-4370-ac47-a81af60d6461
+
 Parameters:
   GitHubWebsiteRepoURL:
     Type: String

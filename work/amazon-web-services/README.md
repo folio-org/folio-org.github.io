@@ -25,3 +25,4 @@ In each numbered line, the CloudFormation variable name is listed at the beginni
 * [Automated static website deployments via AWS and GitHub](https://www.dadoune.com/blog/aws-codepipeline-cloudbuild-static-s3-website/)
 * [Triggering a Lambda from SNS using CloudFormation](https://iangilham.com/2016/03/22/Sns-trigger-lambda-via-cloudformation.html)
 * [Subscribing AWS Lambda Function to SNS Topic with CloudFormation](https://e5k.de/subscribing-aws-lambda-function-to-sns-topic-with-cloudformation/)
+* [Monitor your AWS CodeBuilds via Lambda and Slack – Hacker Noon](https://hackernoon.com/monitor-your-aws-codebuilds-via-lambda-and-slack-ae2c621f68f1)
