@@ -118,7 +118,7 @@ def normalize_name(name):
     new_name = ''.join(['-' if c not in allowed_chars else c for c in name])
     max_length = 63 - len('.' + os.environ['WebsiteDNSName'])
     new_name = (new_name[:max_length]) if len(new_name) > max_length else new_name
-    LOGGER.info('Leaving normalize_name() with "%s"', name)
+    LOGGER.info('Leaving normalize_name() with "%s"', new_name)
     return new_name
 
 

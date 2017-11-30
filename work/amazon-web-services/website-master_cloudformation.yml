@@ -368,7 +368,6 @@ Resources:
         - Arn: !Ref WebsiteErrorQueue
           Id: WebsiteCodeBuildError
 
-
   WebsiteBranchCFNNotification:
     Type: 'AWS::SNS::Topic'
     Properties:
