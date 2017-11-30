@@ -3,7 +3,7 @@ Resources:
   GitHubWebHook:
     Type: 'AWS::SNS::Topic'
     Properties:
-      TopicName: WebsiteBuildLambda
+      TopicName: !Sub '${AWS::StackName}-WebsiteBuildLambda'
       DisplayName: Receive Webhook calls from GitHub
       Subscription:
         - Endpoint: !GetAtt GitHubHookLambda.Arn
@@ -34,7 +34,7 @@ Resources:
   GitHubHookLambda:
     Type: 'AWS::Lambda::Function'
     Properties:
-      FunctionName: GitHubHookLambdaFunction
+      FunctionName: !Sub '${AWS::StackName}-GitHubHookLambdaFunction'
       Runtime: python2.7
       Handler: GitHubHook.handler
       Code:
@@ -132,8 +132,8 @@ Resources:
   WebsiteErrorQueue:
     Type: 'AWS::SNS::Topic'
     Properties:
-      TopicName: WebsiteBuildLambdaDeadLetterQueue
-      DisplayName: SNS for failed activities of the Lambda and CodeBuild
+      TopicName: !Sub "${AWS::StackName}-ErrorQueue"
+      DisplayName: Notification topic for failed activities of Lambdas and CodeBuild
 
   WebsiteMasterBucketPolicy:
     Type: 'AWS::S3::BucketPolicy'
@@ -247,7 +247,7 @@ Resources:
                 Resource: '*'
                 Effect: Allow
               - Action: 'sns:Publish'
-                Resource: '*'
+                Resource: !Ref WebsiteErrorQueue
                 Effect: Allow
 
   WebsiteCodeBuild:
@@ -298,7 +298,7 @@ Resources:
   CodeBuildFinishedLambda:
     Type: 'AWS::Lambda::Function'
     Properties:
-      FunctionName: !Sub "${AWS::StackName}CodeBuildFinishedLambdaFunction"
+      FunctionName: !Sub "${AWS::StackName}-CodeBuildFinishedLambdaFunction"
       Runtime: python2.7
       Handler: GitHubHook.codebuilder_result_handler
       Code:
@@ -334,6 +334,12 @@ Resources:
                 Resource:
                   - 'arn:aws:logs:*:*:*'
                 Effect: Allow
+        - PolicyName: PublishNotifications
+          PolicyDocument:
+            Statement:
+              - Action: 'sns:Publish'
+                Resource: !Ref WebsiteErrorQueue
+                Effect: Allow
       AssumeRolePolicyDocument:
         Statement:
           - Action:
@@ -362,19 +368,36 @@ Resources:
         - Arn: !Ref WebsiteErrorQueue
           Id: WebsiteCodeBuildError
 
+
   WebsiteBranchCFNNotification:
     Type: 'AWS::SNS::Topic'
     Properties:
-      TopicName: WebsiteBranchCFNNotification
+      TopicName: !Sub '${AWS::StackName}-WebsiteBranchCFNNotification'
       DisplayName: SNS for activities creating a website branch stack
       Subscription:
         - Endpoint: !GetAtt WebsiteBranchCNFStatus.Arn
           Protocol: lambda
 
+  WebsiteBranchCFNNotificationTopicPolicy:
+    Type: AWS::SNS::TopicPolicy
+    Properties:
+      PolicyDocument:
+        Id: MyTopicPolicy
+        Version: '2012-10-17'
+        Statement:
+        - Sid: My-statement-id
+          Effect: Allow
+          Principal:
+            Service: cloudformation.amazonaws.com
+          Action: sns:Publish
+          Resource: "*"
+      Topics:
+      - !Ref WebsiteBranchCFNNotification
+
   WebsiteBranchCNFStatus:
     Type: 'AWS::Lambda::Function'
     Properties:
-      FunctionName: WebsiteBranchCNFStatusFunction
+      FunctionName: !Sub '${AWS::StackName}-WebsiteBranchCNFStatusFunction'
       Runtime: python2.7
       Handler: GitHubHook.branch_cfn_handler
       Code:
@@ -421,8 +444,7 @@ Resources:
           PolicyDocument:
             Statement:
               - Action: 'sns:Publish'
-                Resource:
-                  - !Ref WebsiteErrorQueue
+                Resource: !Ref WebsiteErrorQueue
                 Effect: Allow
       AssumeRolePolicyDocument:
         Statement:
