@@ -139,9 +139,9 @@ mod-orders:
       - purchase_order
     ramlutil: ramls/raml-util
 
-mod-vendor:
+mod-vendors:
   - label: null
     directory: ramls
     files:
       - vendor
-    ramlutil: raml-util
+    ramlutil: ramls/raml-util
