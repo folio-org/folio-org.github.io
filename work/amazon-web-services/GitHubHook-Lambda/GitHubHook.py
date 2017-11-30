@@ -72,7 +72,7 @@ def codebuild_start_build(branch, bucket, statuses_url):
     Returns:
       No return
     """
-    LOGGER.info('Entered codebuild_start_build(%s, %s)', branch, bucket)
+    LOGGER.info('Entered codebuild_start_build(%s, %s, %s)', branch, bucket, statuses_url)
     client = boto3.client('codebuild')
     try:
         response = client.start_build(
@@ -99,6 +99,7 @@ def codebuild_start_build(branch, bucket, statuses_url):
         LOGGER.error('CloudBuild failed: %s', ex.response['Error']['Message'])
         raise RuntimeError('CloudBuild failed')
     LOGGER.info('Build started')
+    LOGGER.info('Leaving codebuild_start_build()')
     return
 
 
@@ -117,6 +118,7 @@ def normalize_name(name):
     new_name = ''.join(['-' if c not in allowed_chars else c for c in name])
     max_length = 63 - len('.' + os.environ['WebsiteDNSName'])
     new_name = (new_name[:max_length]) if len(new_name) > max_length else new_name
+    LOGGER.info('Leaving normalize_name() with "%s"', name)
     return new_name
 
 
@@ -160,8 +162,6 @@ def create_stack(push_branch, branch_name):
         if not response or not isinstance(response, dict) or 'StackId' not in response:
             LOGGER.error('Cloudformation failed: %s', response['Error']['Message'])
             raise RuntimeError("couldn't add branch resources")
-        waiter = client.get_waiter('stack_create_complete')
-        waiter.wait(StackName=stack_name)
     except botocore.exceptions.ClientError as ex:
         LOGGER.exception(ex)
         raise RuntimeError('CloudFormation failed')
@@ -190,8 +190,8 @@ def stackexistsfor(branch_name):
         return True
 
 
-def handler(event, context):
-    """AWS Lambda handler
+def github_hook_handler(event, context):
+    """AWS Lambda handler for receiving/processing GitHub Hook messages
 
     Args:
       event:
@@ -200,6 +200,7 @@ def handler(event, context):
     Returns:
       No return
     """
+    LOGGER.info('Entering github_hook_handler()')
     print json.dumps(event)
     my_event = event['Records'][0]['Sns']
 
@@ -275,8 +276,9 @@ def handler(event, context):
         except RuntimeError as ex:
             return {"body": json.dumps({"error": str(ex)}), "statusCode": 500}
 
-    LOGGER.info('Beginning build of %s', push_branch)
+    LOGGER.info('Invoking build lambda for %s', push_branch)
     codebuild_start_build(push_branch, get_stack_dns(normalized_branch_name), statuses_url)
+    LOGGER.info('Leaving github_hook_handler()')
     return
 
 
@@ -290,9 +292,10 @@ def branch_cfn_handler(event, context):
     Returns:
       No return
     """
+    LOGGER.info('Entering codebuilder_result_handler()')
     print json.dumps(event)
-    LOGGER.info('Beginning build of %s', push_branch)
-    codebuild_start_build(push_branch, bucket)
+    # codebuild_start_build(push_branch, bucket)
+    LOGGER.info('Leaving codebuilder_result_handler()')
     return
 
 
@@ -323,4 +326,5 @@ def codebuilder_result_handler(event, context):
     target_url = 'http://{}.s3-website-{}.amazonaws.com'.format(
         bucket_name, os.environ['AWS_DEFAULT_REGION'])
     set_github_status(statuses_url, reported_status, target_url, 'Branch build finished')
+    LOGGER.info('Leaving codebuilder_result_handler()')
     return

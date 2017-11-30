@@ -36,7 +36,7 @@ Resources:
     Properties:
       FunctionName: !Sub '${AWS::StackName}-GitHubHookLambdaFunction'
       Runtime: python2.7
-      Handler: GitHubHook.handler
+      Handler: GitHubHook.github_hook_handler
       Code:
         S3Bucket: !Ref WebsiteCFNArtifactsBucket
         S3Key: GitHubHook-Lambda.zip
