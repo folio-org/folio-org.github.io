@@ -18,6 +18,17 @@ CONST_BUCKET_NAME = 'BUCKET_NAME'
 CONST_GITHUB_STATUSES_URL = 'GITHUB_STATUSES_URL'
 
 
+def log_lambda_context(context):
+    """Log the attributes of the context object received from the Lambda invoker
+    """
+    LOGGER.info("Time remaining (ms): %s.  Log stream: %s.  Log group: %s.  Mem. limits(MB): %s",
+                context.get_remaining_time_in_millis(),
+                context.log_stream_name,
+                context.log_group_name,
+                context.memory_limit_in_mb)
+    return
+
+
 def set_github_status(statuses_url, state, target_url, description):
     """Send build status to GitHub
 
@@ -73,31 +84,28 @@ def codebuild_start_build(branch, bucket, statuses_url):
       No return
     """
     LOGGER.info('Entered codebuild_start_build(%s, %s, %s)', branch, bucket, statuses_url)
+    set_github_status(statuses_url, 'pending', '', 'Started Jekyll build')
+
     client = boto3.client('codebuild')
-    try:
-        response = client.start_build(
-            projectName=os.environ['WebsiteStackName'] + '-WebsiteJekyllBuild',
-            sourceVersion=branch,
-            environmentVariablesOverride=[
-                {
-                    'name': CONST_BUCKET_NAME,
-                    'value': bucket,
-                    'type': 'PLAINTEXT'
-                    },
-                {
-                    'name': CONST_GITHUB_STATUSES_URL,
-                    'value': statuses_url,
-                    'type': 'PLAINTEXT'
-                    },
-                ],
-            )
-        LOGGER.info('Response from codebuild.start_build: %s', pprint.pformat(response))
-        if not response or not isinstance(response, dict):
-            LOGGER.error('CloudBuild failed: %s', response['Error']['Message'])
-            raise RuntimeError("CloudBuild Failed")
-    except botocore.exceptions.ClientError as ex:
-        LOGGER.error('CloudBuild failed: %s', ex.response['Error']['Message'])
-        raise RuntimeError('CloudBuild failed')
+    response = client.start_build(
+        projectName=os.environ['WebsiteStackName'] + '-WebsiteJekyllBuild',
+        sourceVersion=branch,
+        environmentVariablesOverride=[
+            {
+                'name': CONST_BUCKET_NAME,
+                'value': bucket,
+                'type': 'PLAINTEXT'
+                },
+            {
+                'name': CONST_GITHUB_STATUSES_URL,
+                'value': statuses_url,
+                'type': 'PLAINTEXT'
+                },
+            ],
+        )
+    LOGGER.info('Response from codebuild.start_build: %s', pprint.pformat(response))
+    if not response or not isinstance(response, dict):
+        raise RuntimeError("CloudBuild Failed: {0}".format(response['Error']['Message']))
     LOGGER.info('Build started')
     LOGGER.info('Leaving codebuild_start_build()')
     return
@@ -134,37 +142,35 @@ def get_stack_name(branch_name):
     return os.environ['WebsiteStackName'] + 'Branch-' + branch_name
 
 
-def create_stack(push_branch, branch_name):
+def create_stack(push_branch, branch_name, statuses_url):
     """Create a AWS CloudFormation stack for the branch
     """
-    LOGGER.info('Entered create_stack(%s, %s)', push_branch, branch_name)
+    LOGGER.info('Entered create_stack(%s, %s, %s)', push_branch, branch_name, statuses_url)
+    set_github_status(statuses_url, 'pending', '', 'Creating AWS resources for branch')
+
     template_url = 'https://s3.amazonaws.com/{}/website-branch_cloudformation.yml'.format(os.environ['WebsiteCFNArtifactsBucket'])  # NOQA pylint: disable=C0301
 
     LOGGER.info('Creating stack for %s', branch_name)
     client = boto3.client('cloudformation')
     stack_name = get_stack_name(branch_name)
-    try:
-        response = client.create_stack(
-            StackName=stack_name,
-            TemplateURL=template_url,
-            NotificationARNs=[os.environ['WebsiteBranchCFNNotification']],
-            Parameters=[
-                {
-                    'ParameterKey': 'WebsiteBranchLabel',
-                    'ParameterValue': branch_name,
-                    },
-                {
-                    'ParameterKey': 'WebsiteDNSName',
-                    'ParameterValue': os.environ['WebsiteDNSName'],
-                    }
-                ],
-            )
-        if not response or not isinstance(response, dict) or 'StackId' not in response:
-            LOGGER.error('Cloudformation failed: %s', response['Error']['Message'])
-            raise RuntimeError("couldn't add branch resources")
-    except botocore.exceptions.ClientError as ex:
-        LOGGER.exception(ex)
-        raise RuntimeError('CloudFormation failed')
+    response = client.create_stack(
+        StackName=stack_name,
+        TemplateURL=template_url,
+        NotificationARNs=[os.environ['WebsiteBranchCFNNotification']],
+        Parameters=[
+            {
+                'ParameterKey': 'WebsiteBranchLabel',
+                'ParameterValue': branch_name,
+                },
+            {
+                'ParameterKey': 'WebsiteDNSName',
+                'ParameterValue': os.environ['WebsiteDNSName'],
+                }
+            ],
+        )
+    print json.dumps(response)
+    if not response or not isinstance(response, dict) or 'StackId' not in response:
+        raise RuntimeError("Cloudformation failed!")
     LOGGER.info('Leaving create_stack()')
     return
 
@@ -183,10 +189,10 @@ def stackexistsfor(branch_name):
     try:
         client.describe_stacks(StackName=get_stack_name(branch_name))
     except botocore.exceptions.ClientError:
-        LOGGER.info('Not found')
+        LOGGER.info('Stack for branch "%s" NOT found', branch_name)
         return False
     else:
-        LOGGER.info('Found!')
+        LOGGER.info('Stack for branch "%s" found!', branch_name)
         return True
 
 
@@ -201,28 +207,20 @@ def github_hook_handler(event, context):
       No return
     """
     LOGGER.info('Entering github_hook_handler()')
+    log_lambda_context(context)
     print json.dumps(event)
-    my_event = event['Records'][0]['Sns']
 
+    my_event = event['Records'][0]['Sns']
     gh_event = my_event['MessageAttributes'].get('X-Github-Event', '')
     if gh_event['Value'] != 'push':
         LOGGER.info('Nothing to do with X-GitHub-Event: %s', gh_event)
         return
 
-    try:
-        hookdata = json.loads(my_event['Message'])
-    except ValueError:
-        LOGGER.error("Failed to decode json")
-        return {"body": json.dumps({"error": "json decode failure"}), "statusCode": 500}
-
+    hookdata = json.loads(my_event['Message'])
     required_fields = ['ref', 'created', 'deleted']
     for field in required_fields:
         if field not in hookdata:
-            LOGGER.error("No %s in the hook, no processing", field)
-            return {
-                "body": json.dumps(
-                    {"error": "unsupported hook type; missing '{}' information"} % field),
-                "statusCode": 400}
+            raise RuntimeError("The value for _{0}_ not found in GitHub hook data".format(field))
 
     push_branch = hookdata['ref'].replace('refs/heads/', '')
     push_created = hookdata['created']
@@ -232,6 +230,7 @@ def github_hook_handler(event, context):
     statuses_url = statuses_url.replace('{sha}', sha)
     LOGGER.info("Ref: %s; Created: %s; Deleted: %s; statuses_url: %s",
                 push_branch, push_created, push_deleted, statuses_url)
+    set_github_status(statuses_url, 'pending', '', 'Started website build process')
 
     if push_branch == 'master':
         LOGGER.info("Received push to master branch")
@@ -249,32 +248,17 @@ def github_hook_handler(event, context):
 
         cloudformation = boto3.resource('cloudformation')
         stack = cloudformation.Stack(get_stack_name(normalized_branch_name))
-        try:
-            stack.delete()
-        except RuntimeError as ex:
-            LOGGER.exception(ex)
-            return {"body": json.dumps({"error": str(ex)}), "statusCode": 500}
+        stack.delete()
         LOGGER.info("Request to delete stack accepted")
         return
 
-    try:
-        set_github_status(statuses_url, 'pending', '', 'Branch build started')
-    except RuntimeError as ex:
-        return {"body": json.dumps({"error": str(ex)}), "statusCode": 500}
-
     if push_created:
         LOGGER.info("Received created branch message for %s", push_branch)
-        try:
-            create_stack(push_branch, normalized_branch_name)
-        except RuntimeError as ex:
-            return {"body": json.dumps({"error": str(ex)}), "statusCode": 500}
+        create_stack(push_branch, normalized_branch_name, statuses_url)
 
     if not stackexistsfor(normalized_branch_name):
         LOGGER.warning("Received push for '%s' but stack didn't exist; creating.", push_branch)
-        try:
-            create_stack(push_branch, normalized_branch_name)
-        except RuntimeError as ex:
-            return {"body": json.dumps({"error": str(ex)}), "statusCode": 500}
+        create_stack(push_branch, normalized_branch_name, statuses_url)
 
     LOGGER.info('Invoking build lambda for %s', push_branch)
     codebuild_start_build(push_branch, get_stack_dns(normalized_branch_name), statuses_url)
@@ -294,6 +278,8 @@ def branch_cfn_handler(event, context):
     """
     LOGGER.info('Entering codebuilder_result_handler()')
     print json.dumps(event)
+    log_lambda_context(context)
+
     # codebuild_start_build(push_branch, bucket)
     LOGGER.info('Leaving codebuilder_result_handler()')
     return
@@ -311,6 +297,8 @@ def codebuilder_result_handler(event, context):
     """
     LOGGER.info('Entering codebuilder_result_handler()')
     print json.dumps(event)
+    log_lambda_context(context)
+
     try:
         build_status = event['detail']['build-status']
         build_env_vars = event['detail']['additional-information']['environment']['environment-variables']
