@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Guidelines for FOLIO issue tracker
+secondary-column: left
+secondary-column-content: column-2-community-guide-issues.html
 ---
 
 [https://issues.folio.org](https://issues.folio.org)
