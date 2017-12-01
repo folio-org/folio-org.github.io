@@ -46,7 +46,8 @@ See the [Contributor License Agreement](#contributor-license-agreement) section 
 ## Issue tracker
 
 The FOLIO Issue Tracker is at [issues.folio.org](https://issues.folio.org/)
-and see the usage [guidelines](http://dev.folio.org/community/guide-issues).
+and see the usage [guidelines](guide-issues)
+which encourage reports of various types of issue and explain how to.
 
 ## Git and branches
 
@@ -187,7 +188,7 @@ When done, you probably want to delete the local branch from your own machine
 
 ## Automation
 
-The FOLIO [build, test, and deployment infrastructure](http://dev.folio.org/doc/automation)
+The FOLIO [build, test, and deployment infrastructure](/doc/automation)
 is described separately.
 
 ## Releasing
@@ -344,7 +345,7 @@ And update the documentation too, of course.
 
 For Okapi, we keep the API specs in RAML files under `okapi-core/src/main/raml/`.
 
-For [server-side modules](http://dev.folio.org/source-code/#server-side),
+For [server-side modules](/source-code/#server-side),
 the [raml](https://github.com/folio-org/raml)
 repository is the master location for the traits and resource
 types, while each module is the master for its own schemas, examples,
