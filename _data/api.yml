@@ -144,4 +144,6 @@ mod-vendors:
     directory: ramls
     files:
       - vendor
+      - contact_category
+      - vendor_category
     ramlutil: ramls/raml-util
