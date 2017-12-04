@@ -1,25 +1,25 @@
+<!-- Top Navigation Bar -->
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container navbar-container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-              <ul class="nav navbar-nav">
-			      <li {% if page.sectionid =='folio' %} class="active" {% endif %}><a href="{{site.foliourl}}"><img height=18px src="{{site.baseurl}}/images/logonav.png"></a>
-              </ul>
-<!-- Not using right now			
+    <div class="container">
+         <!-- Toggle for navbar - the top navigation bar -->  	
+         <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+         <a class="navbar-brand" href="{{site.foliourl}}"><img height=18px src="{{site.baseurl}}/images/logonav.png"></a>	
+		 </div>
+         <div id="navbar" class="collapse navbar-collapse">
+                <!-- Not using right now search			
                 <form class="navbar-form navbar-left">
                     <div class="form-group has-feedback">
                         <input id="search-box" type="text" class="form-control" placeholder="Search...">
                         <i class="fa fa-search form-control-feedback"></i>
                     </div>
                 </form>
--->				
+                -->				
                 <ul class="nav navbar-nav navbar-right">
                     <li {% if page.sectionid=='overview' %} class="active" {% endif %}>
                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Overview&nbsp;<span class="caret"></span></a>	
