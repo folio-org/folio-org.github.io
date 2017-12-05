@@ -118,6 +118,19 @@ mod-user-import:
       - import
     ramlutil: null
 
+mod-finance:
+  - label: null
+    directory: ramls
+    files:
+      - budget
+      - fiscal_year
+      - fund_distribution
+      - funds
+      - ledger
+      - tag
+      - transaction
+    ramlutil: ramls/raml-util
+
 mod-notes:
   - label: null
     directory: ramls

@@ -121,6 +121,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-circulation-storage](https://github.com/folio-org/mod-circulation-storage)
   -- Persistent storage to complement the circulation module.
 
+- [mod-finance](https://github.com/folio-org/mod-finance)
+  -- Persistent storage of finance-related data (i.e. funds, ledgers, transactions, etc.)
+
 - [mod-graphql](https://github.com/folio-org/mod-graphql)
   -- Executing GraphQL queries.
 
@@ -139,7 +142,7 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-orders](https://github.com/folio-org/mod-orders)
   -- Persistent storage of order data.
 
-- [mod-vendor](https://github.com/folio-org/mod-vendor)
+- [mod-vendors](https://github.com/folio-org/mod-vendors)
   -- Persistent storage of vendor data.
 
 - [inventory-sample-data](https://github.com/folio-org/inventory-sample-data)
