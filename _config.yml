@@ -16,8 +16,10 @@ url: "http://dev.folio.org" # the base hostname & protocol for your site
 google_analytics: UA-79833310-3
 
 # Build settings
+remote_theme: Balancingrock/classic-jekyll-theme@1.9.4
 markdown: kramdown
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-gist
 
