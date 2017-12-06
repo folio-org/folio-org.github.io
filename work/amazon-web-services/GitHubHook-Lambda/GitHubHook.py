@@ -240,7 +240,6 @@ def github_hook_handler(event, context):
     statuses_url = statuses_url.replace('{sha}', sha)
     LOGGER.info("Ref: %s; Created: %s; Deleted: %s; statuses_url: %s",
                 push_branch, push_created, push_deleted, statuses_url)
-    set_github_status(statuses_url, 'pending', '', 'Started website build process')
 
     if push_branch == 'master':
         LOGGER.info("Received push to master branch")
