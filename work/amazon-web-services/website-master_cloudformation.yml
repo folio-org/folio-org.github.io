@@ -56,6 +56,12 @@ Resources:
       Timeout: 300
       Role: !GetAtt GitHubHookLambdaExecutionRole.Arn
 
+  GitHubHookLambdaLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: !Sub "/aws/lambda/${GitHubHookLambda}"
+      RetentionInDays: 7
+
   GitHubHookLambdaPermission:
     Type: 'AWS::Lambda::Permission'
     Properties:
@@ -277,6 +283,12 @@ Resources:
         Location: !Ref GitHubWebsiteRepoURL
         Type: GITHUB
 
+  WebsiteCodeBuildLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: !Sub "/aws/codebuild/${WebsiteCodeBuild}"
+      RetentionInDays: 7
+
   CodeBuildFinishedRule:
     Type: 'AWS::Events::Rule'
     Properties:
@@ -328,6 +340,12 @@ Resources:
           GitHubAccessToken: !Sub '${GitHubAccessToken}'
           CloudFormationTopic: !Sub '${CloudFormationTopic}'
       Role: !GetAtt CodeBuildFinishedLambdaExecutionRole.Arn
+
+  CodeBuildFinishedLambdaLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: !Sub "/aws/lambda/${CodeBuildFinishedLambda}"
+      RetentionInDays: 7
 
   CodeBuildFinishedLambdaExecutionRole:
     Type: 'AWS::IAM::Role'
@@ -466,6 +484,12 @@ Resources:
           GitHubUsername: !Sub '${GitHubUsername}'
           GitHubAccessToken: !Sub '${GitHubAccessToken}'
       Role: !GetAtt CloudFormationStatusLambdaExecutionRole.Arn
+
+  CloudFormationStatusCompleteLambdaLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: !Sub "/aws/lambda/${CloudFormationStatusCompleteLambda}"
+      RetentionInDays: 7
 
   CloudFormationStatusLambdaPermission:
     Type: 'AWS::Lambda::Permission'
