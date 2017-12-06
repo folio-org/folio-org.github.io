@@ -3,7 +3,7 @@ Resources:
   GitHubWebHook:
     Type: 'AWS::SNS::Topic'
     Properties:
-      TopicName: WebsiteBuildLambda
+      TopicName: !Sub '${AWS::StackName}-WebsiteBuildLambda'
       DisplayName: Receive Webhook calls from GitHub
       Subscription:
         - Endpoint: !GetAtt GitHubHookLambda.Arn
@@ -34,9 +34,9 @@ Resources:
   GitHubHookLambda:
     Type: 'AWS::Lambda::Function'
     Properties:
-      FunctionName: GitHubHookLambdaFunction
+      FunctionName: !Sub '${AWS::StackName}-GitHubHookLambdaFunction'
       Runtime: python2.7
-      Handler: GitHubHook.handler
+      Handler: GitHubHook.github_hook_handler
       Code:
         S3Bucket: !Ref WebsiteCFNArtifactsBucket
         S3Key: GitHubHook-Lambda.zip
@@ -51,17 +51,24 @@ Resources:
           WebsiteCFNArtifactsBucket: !Sub '${WebsiteCFNArtifactsBucket}'
           GitHubUsername: !Sub '${GitHubUsername}'
           GitHubAccessToken: !Sub '${GitHubAccessToken}'
-          WebsiteBranchCFNNotification: !Sub '${WebsiteBranchCFNNotification}'
+          CloudFormationTopic: !Sub '${CloudFormationTopic}'
+          CloudFormationBranchRole: !GetAtt CloudFormationBranchRole.Arn
       Timeout: 300
       Role: !GetAtt GitHubHookLambdaExecutionRole.Arn
 
+  GitHubHookLambdaLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: !Sub "/aws/lambda/${GitHubHookLambda}"
+      RetentionInDays: 7
+
   GitHubHookLambdaPermission:
+    Type: 'AWS::Lambda::Permission'
     Properties:
       Action: 'lambda:InvokeFunction'
       FunctionName: !GetAtt GitHubHookLambda.Arn
       Principal: sns.amazonaws.com
       SourceArn: !Ref GitHubWebHook
-    Type: 'AWS::Lambda::Permission'
 
   GitHubHookLambdaExecutionRole:
     Type: 'AWS::IAM::Role'
@@ -114,8 +121,18 @@ Resources:
             Statement:
               - Action: 'sns:Publish'
                 Resource:
-                  - !Ref WebsiteBranchCFNNotification
+                  - !Ref CloudFormationTopic
                   - !Ref WebsiteErrorQueue
+                Effect: Allow
+        - PolicyName: AssumeRoleForCloudFormation
+          PolicyDocument:
+            Statement:
+              - Action:
+                  - 'iam:GetRole'
+                  - 'iam:PassRole'
+                Resource:
+                  - !GetAtt CloudFormationBranchRole.Arn
+                  - !GetAtt CloudFormationStatusLambdaExecutionRole.Arn
                 Effect: Allow
       AssumeRolePolicyDocument:
         Statement:
@@ -127,13 +144,13 @@ Resources:
                 - lambda.amazonaws.com
     DependsOn:
       - WebsiteErrorQueue
-      - WebsiteBranchCFNNotification
+      - CloudFormationTopic
 
   WebsiteErrorQueue:
     Type: 'AWS::SNS::Topic'
     Properties:
-      TopicName: WebsiteBuildLambdaDeadLetterQueue
-      DisplayName: SNS for failed activities of the Lambda and CodeBuild
+      TopicName: !Sub "${AWS::StackName}-ErrorQueue"
+      DisplayName: Notification topic for failed activities of Lambdas and CodeBuild
 
   WebsiteMasterBucketPolicy:
     Type: 'AWS::S3::BucketPolicy'
@@ -247,7 +264,7 @@ Resources:
                 Resource: '*'
                 Effect: Allow
               - Action: 'sns:Publish'
-                Resource: '*'
+                Resource: !Ref WebsiteErrorQueue
                 Effect: Allow
 
   WebsiteCodeBuild:
@@ -265,6 +282,12 @@ Resources:
       Source:
         Location: !Ref GitHubWebsiteRepoURL
         Type: GITHUB
+
+  WebsiteCodeBuildLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: !Sub "/aws/codebuild/${WebsiteCodeBuild}"
+      RetentionInDays: 7
 
   CodeBuildFinishedRule:
     Type: 'AWS::Events::Rule'
@@ -298,7 +321,7 @@ Resources:
   CodeBuildFinishedLambda:
     Type: 'AWS::Lambda::Function'
     Properties:
-      FunctionName: !Sub "${AWS::StackName}CodeBuildFinishedLambdaFunction"
+      FunctionName: !Sub "${AWS::StackName}-CodeBuildFinishedLambdaFunction"
       Runtime: python2.7
       Handler: GitHubHook.codebuilder_result_handler
       Code:
@@ -315,8 +338,14 @@ Resources:
           WebsiteCFNArtifactsBucket: !Sub '${WebsiteCFNArtifactsBucket}'
           GitHubUsername: !Sub '${GitHubUsername}'
           GitHubAccessToken: !Sub '${GitHubAccessToken}'
-          WebsiteBranchCFNNotification: !Sub '${WebsiteBranchCFNNotification}'
+          CloudFormationTopic: !Sub '${CloudFormationTopic}'
       Role: !GetAtt CodeBuildFinishedLambdaExecutionRole.Arn
+
+  CodeBuildFinishedLambdaLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: !Sub "/aws/lambda/${CodeBuildFinishedLambda}"
+      RetentionInDays: 7
 
   CodeBuildFinishedLambdaExecutionRole:
     Type: 'AWS::IAM::Role'
@@ -333,6 +362,12 @@ Resources:
                   - 'logs:PutLogEvents'
                 Resource:
                   - 'arn:aws:logs:*:*:*'
+                Effect: Allow
+        - PolicyName: PublishNotifications
+          PolicyDocument:
+            Statement:
+              - Action: 'sns:Publish'
+                Resource: !Ref WebsiteErrorQueue
                 Effect: Allow
       AssumeRolePolicyDocument:
         Statement:
@@ -362,21 +397,78 @@ Resources:
         - Arn: !Ref WebsiteErrorQueue
           Id: WebsiteCodeBuildError
 
-  WebsiteBranchCFNNotification:
+  CloudFormationBranchRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      Path: /
+      Policies:
+        - PolicyName: ExecuteCloudFormation
+          PolicyDocument:
+            Statement:
+              - Action:
+                  - 's3:*'
+                  - 's3:PutBucketPolicy'
+                  - 's3:PutBucketWebsite'
+                  - 's3:PutBucket*'
+                Resource: !Sub 'arn:aws:s3:::*'
+                Effect: Allow
+              - Action: 'route53:ChangeResourceRecordSets'
+                Resource: !Sub 'arn:aws:route53:::hostedzone/${WebsiteHostedZone}*'
+                Effect: Allow
+              - Action:
+                  - 'route53:ListHostedZones'
+                  - 'route53:GetChange'
+                Resource: '*'
+                Effect: Allow
+        - PolicyName: PublishNotifications
+          PolicyDocument:
+            Statement:
+              - Action: 'sns:Publish'
+                Resource: !Ref CloudFormationTopic
+                Effect: Allow
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action:
+              - 'sts:AssumeRole'
+            Effect: Allow
+            Principal:
+              Service:
+                - cloudformation.amazonaws.com
+
+  CloudFormationTopic:
     Type: 'AWS::SNS::Topic'
     Properties:
-      TopicName: WebsiteBranchCFNNotification
+      TopicName: !Sub '${AWS::StackName}-CloudFormationTopic'
       DisplayName: SNS for activities creating a website branch stack
-      Subscription:
-        - Endpoint: !GetAtt WebsiteBranchCNFStatus.Arn
-          Protocol: lambda
 
-  WebsiteBranchCNFStatus:
+  CloudFormationTopicPolicy:
+    Type: AWS::SNS::TopicPolicy
+    Properties:
+      PolicyDocument:
+        Id: Allow CloudFormation Publish to Topic
+        Version: '2012-10-17'
+        Statement:
+        - Effect: Allow
+          Principal:
+            Service: cloudformation.amazonaws.com
+          Action: sns:Publish
+          Resource: "*"
+      Topics:
+      - !Ref CloudFormationTopic
+
+  CloudFormationStatusCompleteSubscription:
+    Type: 'AWS::SNS::Subscription'
+    Properties:
+      TopicArn: !Ref CloudFormationTopic
+      Protocol: lambda
+      Endpoint: !GetAtt CloudFormationStatusCompleteLambda.Arn
+
+  CloudFormationStatusCompleteLambda:
     Type: 'AWS::Lambda::Function'
     Properties:
-      FunctionName: WebsiteBranchCNFStatusFunction
+      FunctionName: !Sub '${AWS::StackName}-CloudFormationStatusCompleteLambdaFunction'
       Runtime: python2.7
-      Handler: GitHubHook.branch_cfn_handler
+      Handler: GitHubHook.cloudformation_complete_handler
       Code:
         S3Bucket: !Ref WebsiteCFNArtifactsBucket
         S3Key: GitHubHook-Lambda.zip
@@ -391,9 +483,23 @@ Resources:
           WebsiteCFNArtifactsBucket: !Sub '${WebsiteCFNArtifactsBucket}'
           GitHubUsername: !Sub '${GitHubUsername}'
           GitHubAccessToken: !Sub '${GitHubAccessToken}'
-      Role: !GetAtt WebsiteBranchBuildLambdaExecutionRole.Arn
+      Role: !GetAtt CloudFormationStatusLambdaExecutionRole.Arn
 
-  WebsiteBranchBuildLambdaExecutionRole:
+  CloudFormationStatusCompleteLambdaLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: !Sub "/aws/lambda/${CloudFormationStatusCompleteLambda}"
+      RetentionInDays: 7
+
+  CloudFormationStatusLambdaPermission:
+    Type: 'AWS::Lambda::Permission'
+    Properties:
+      Action: 'lambda:InvokeFunction'
+      FunctionName: !GetAtt CloudFormationStatusCompleteLambda.Arn
+      Principal: sns.amazonaws.com
+      SourceArn: !Ref CloudFormationTopic
+
+  CloudFormationStatusLambdaExecutionRole:
     Type: 'AWS::IAM::Role'
     Properties:
       Path: /
@@ -409,7 +515,7 @@ Resources:
                 Resource:
                   - 'arn:aws:logs:*:*:*'
                 Effect: Allow
-        - PolicyName: ExecuteGitHubHookLambda
+        - PolicyName: ExecuteLambda
           PolicyDocument:
             Statement:
               - Action: 'codebuild:StartBuild'
@@ -417,12 +523,16 @@ Resources:
                   - !Sub >-
                     arn:aws:codebuild:${AWS::Region}:${AWS::AccountId}:project/${WebsiteCodeBuild}
                 Effect: Allow
+              - Action:
+                  - 'cloudformation:DescribeStacks'
+                Resource:
+                  - !Sub arn:aws:cloudformation:${AWS::Region}:${AWS::AccountId}:stack/${AWS::StackName}Branch*
+                Effect: Allow
         - PolicyName: PublishNotifications
           PolicyDocument:
             Statement:
               - Action: 'sns:Publish'
-                Resource:
-                  - !Ref WebsiteErrorQueue
+                Resource: !Ref WebsiteErrorQueue
                 Effect: Allow
       AssumeRolePolicyDocument:
         Statement:
