@@ -40,7 +40,13 @@ Parameters:
     Description: The Git branch label
   WebsiteDNSName:
     Type: String
-    Default: Domain of the website
+    Description: Domain of the website
+  PushBranch:
+    Type: String
+    Description: Branch which we are pushing from; held here to be used by the CF completion lambda
+  GithubStatusesUrl:
+    Type: String
+    Description: GitHub Statuses URL; held here to be used by the CF completion lambda
 Mappings:
   RegionMap:
     us-east-1:

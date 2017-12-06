@@ -14,8 +14,9 @@ import botocore
 LOGGER = logging.getLogger(__name__)
 LOGGER.setLevel(logging.INFO)
 
+CONST_PUSH_BRANCH = 'PushBranch'
 CONST_BUCKET_NAME = 'BUCKET_NAME'
-CONST_GITHUB_STATUSES_URL = 'GITHUB_STATUSES_URL'
+CONST_GITHUB_STATUSES_URL = 'GithubStatusesUrl'
 
 
 def log_lambda_context(context):
@@ -156,7 +157,8 @@ def create_stack(push_branch, branch_name, statuses_url):
     response = client.create_stack(
         StackName=stack_name,
         TemplateURL=template_url,
-        NotificationARNs=[os.environ['WebsiteBranchCFNNotification']],
+        NotificationARNs=[os.environ['CloudFormationTopic']],
+        RoleARN=os.environ['CloudFormationBranchRole'],
         Parameters=[
             {
                 'ParameterKey': 'WebsiteBranchLabel',
@@ -165,7 +167,15 @@ def create_stack(push_branch, branch_name, statuses_url):
             {
                 'ParameterKey': 'WebsiteDNSName',
                 'ParameterValue': os.environ['WebsiteDNSName'],
-                }
+                },
+            {
+                'ParameterKey': CONST_PUSH_BRANCH,
+                'ParameterValue': push_branch,
+                },
+            {
+                'ParameterKey': CONST_GITHUB_STATUSES_URL,
+                'ParameterValue': statuses_url,
+                },
             ],
         )
     print json.dumps(response)
@@ -255,33 +265,15 @@ def github_hook_handler(event, context):
     if push_created:
         LOGGER.info("Received created branch message for %s", push_branch)
         create_stack(push_branch, normalized_branch_name, statuses_url)
-
-    if not stackexistsfor(normalized_branch_name):
+        # Callback to cloudformation_complete_handler() will invoke CodeBuild
+    elif not stackexistsfor(normalized_branch_name):
         LOGGER.warning("Received push for '%s' but stack didn't exist; creating.", push_branch)
         create_stack(push_branch, normalized_branch_name, statuses_url)
-
-    LOGGER.info('Invoking build lambda for %s', push_branch)
-    codebuild_start_build(push_branch, get_stack_dns(normalized_branch_name), statuses_url)
+        # Callback to cloudformation_complete_handler() will invoke CodeBuild
+    else:
+        LOGGER.info('Invoking codebuild for %s', push_branch)
+        codebuild_start_build(push_branch, get_stack_dns(normalized_branch_name), statuses_url)
     LOGGER.info('Leaving github_hook_handler()')
-    return
-
-
-def branch_cfn_handler(event, context):
-    """AWS Lambda handler for events from the branch CloudFormation stack build
-
-    Args:
-      event:
-      context:
-
-    Returns:
-      No return
-    """
-    LOGGER.info('Entering codebuilder_result_handler()')
-    print json.dumps(event)
-    log_lambda_context(context)
-
-    # codebuild_start_build(push_branch, bucket)
-    LOGGER.info('Leaving codebuilder_result_handler()')
     return
 
 
@@ -309,10 +301,54 @@ def codebuilder_result_handler(event, context):
                 statuses_url = build_env_var['value']
     except KeyError as ex:
         LOGGER.exception(ex)
-        raise Exception('Unexpected data from CodeBuild Event')
     reported_status = 'success' if build_status == 'SUCCEEDED' else 'failure'
     target_url = 'http://{}.s3-website-{}.amazonaws.com'.format(
         bucket_name, os.environ['AWS_DEFAULT_REGION'])
     set_github_status(statuses_url, reported_status, target_url, 'Branch build finished')
     LOGGER.info('Leaving codebuilder_result_handler()')
+    return
+
+
+def cloudformation_complete_handler(event, context):
+    """AWS Lambda handler for "COMPLETED" events from CloudFormation tasks
+
+    Args:
+      event:
+      context:
+
+    Returns:
+      No return
+    """
+    LOGGER.info('Entering cloudformation_complete_handler()')
+    print json.dumps(event)
+    log_lambda_context(context)
+    my_message = event['Records'][0]['Sns']['Message']
+    my_message = my_message.replace("'", "").replace("\n\n", "'\n").rstrip()
+    cf_message = dict(item.split("=") for item in my_message.split("\n"))
+    stack_name = cf_message['StackName']
+    resource_type = cf_message['ResourceType']
+    resource_status = cf_message['ResourceStatus']
+    LOGGER.info("StackName: %s; ResourceType: %s; ResourceStatus: %s",
+                stack_name, resource_type, resource_status)
+
+    if resource_type == 'AWS::CloudFormation::Stack' and resource_status == 'CREATE_COMPLETE':
+        LOGGER.info("Reading details about the CloudFormation just completed")
+        client = boto3.client('cloudformation')
+        try:
+            stack = client.describe_stacks(StackName=stack_name)
+            stack_params = stack['Stacks'][0]['Parameters']
+            for stack_param in stack_params:
+                if stack_param['ParameterKey'] == CONST_PUSH_BRANCH:
+                    push_branch = stack_param['ParameterValue']
+                if stack_param['ParameterKey'] == CONST_GITHUB_STATUSES_URL:
+                    statuses_url = stack_param['ParameterValue']
+        except KeyError as ex:
+            LOGGER.exception(ex)
+            raise Exception('Unexpected data from CloudFormation Event')
+        except botocore.exceptions.ClientError as ex:
+            LOGGER.exception(ex)
+            raise RuntimeError("Odd...Couldn't get the stack details")
+        LOGGER.info("push_branch: %s; statuses_url: %s", push_branch, statuses_url)
+
+        codebuild_start_build(push_branch, get_stack_dns(normalize_name(push_branch)), statuses_url)
     return

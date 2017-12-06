@@ -51,17 +51,18 @@ Resources:
           WebsiteCFNArtifactsBucket: !Sub '${WebsiteCFNArtifactsBucket}'
           GitHubUsername: !Sub '${GitHubUsername}'
           GitHubAccessToken: !Sub '${GitHubAccessToken}'
-          WebsiteBranchCFNNotification: !Sub '${WebsiteBranchCFNNotification}'
+          CloudFormationTopic: !Sub '${CloudFormationTopic}'
+          CloudFormationBranchRole: !GetAtt CloudFormationBranchRole.Arn
       Timeout: 300
       Role: !GetAtt GitHubHookLambdaExecutionRole.Arn
 
   GitHubHookLambdaPermission:
+    Type: 'AWS::Lambda::Permission'
     Properties:
       Action: 'lambda:InvokeFunction'
       FunctionName: !GetAtt GitHubHookLambda.Arn
       Principal: sns.amazonaws.com
       SourceArn: !Ref GitHubWebHook
-    Type: 'AWS::Lambda::Permission'
 
   GitHubHookLambdaExecutionRole:
     Type: 'AWS::IAM::Role'
@@ -114,8 +115,18 @@ Resources:
             Statement:
               - Action: 'sns:Publish'
                 Resource:
-                  - !Ref WebsiteBranchCFNNotification
+                  - !Ref CloudFormationTopic
                   - !Ref WebsiteErrorQueue
+                Effect: Allow
+        - PolicyName: AssumeRoleForCloudFormation
+          PolicyDocument:
+            Statement:
+              - Action:
+                  - 'iam:GetRole'
+                  - 'iam:PassRole'
+                Resource:
+                  - !GetAtt CloudFormationBranchRole.Arn
+                  - !GetAtt CloudFormationStatusLambdaExecutionRole.Arn
                 Effect: Allow
       AssumeRolePolicyDocument:
         Statement:
@@ -127,7 +138,7 @@ Resources:
                 - lambda.amazonaws.com
     DependsOn:
       - WebsiteErrorQueue
-      - WebsiteBranchCFNNotification
+      - CloudFormationTopic
 
   WebsiteErrorQueue:
     Type: 'AWS::SNS::Topic'
@@ -315,7 +326,7 @@ Resources:
           WebsiteCFNArtifactsBucket: !Sub '${WebsiteCFNArtifactsBucket}'
           GitHubUsername: !Sub '${GitHubUsername}'
           GitHubAccessToken: !Sub '${GitHubAccessToken}'
-          WebsiteBranchCFNNotification: !Sub '${WebsiteBranchCFNNotification}'
+          CloudFormationTopic: !Sub '${CloudFormationTopic}'
       Role: !GetAtt CodeBuildFinishedLambdaExecutionRole.Arn
 
   CodeBuildFinishedLambdaExecutionRole:
@@ -368,37 +379,78 @@ Resources:
         - Arn: !Ref WebsiteErrorQueue
           Id: WebsiteCodeBuildError
 
-  WebsiteBranchCFNNotification:
+  CloudFormationBranchRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      Path: /
+      Policies:
+        - PolicyName: ExecuteCloudFormation
+          PolicyDocument:
+            Statement:
+              - Action:
+                  - 's3:*'
+                  - 's3:PutBucketPolicy'
+                  - 's3:PutBucketWebsite'
+                  - 's3:PutBucket*'
+                Resource: !Sub 'arn:aws:s3:::*'
+                Effect: Allow
+              - Action: 'route53:ChangeResourceRecordSets'
+                Resource: !Sub 'arn:aws:route53:::hostedzone/${WebsiteHostedZone}*'
+                Effect: Allow
+              - Action:
+                  - 'route53:ListHostedZones'
+                  - 'route53:GetChange'
+                Resource: '*'
+                Effect: Allow
+        - PolicyName: PublishNotifications
+          PolicyDocument:
+            Statement:
+              - Action: 'sns:Publish'
+                Resource: !Ref CloudFormationTopic
+                Effect: Allow
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action:
+              - 'sts:AssumeRole'
+            Effect: Allow
+            Principal:
+              Service:
+                - cloudformation.amazonaws.com
+
+  CloudFormationTopic:
     Type: 'AWS::SNS::Topic'
     Properties:
-      TopicName: !Sub '${AWS::StackName}-WebsiteBranchCFNNotification'
+      TopicName: !Sub '${AWS::StackName}-CloudFormationTopic'
       DisplayName: SNS for activities creating a website branch stack
-      Subscription:
-        - Endpoint: !GetAtt WebsiteBranchCNFStatus.Arn
-          Protocol: lambda
 
-  WebsiteBranchCFNNotificationTopicPolicy:
+  CloudFormationTopicPolicy:
     Type: AWS::SNS::TopicPolicy
     Properties:
       PolicyDocument:
-        Id: MyTopicPolicy
+        Id: Allow CloudFormation Publish to Topic
         Version: '2012-10-17'
         Statement:
-        - Sid: My-statement-id
-          Effect: Allow
+        - Effect: Allow
           Principal:
             Service: cloudformation.amazonaws.com
           Action: sns:Publish
           Resource: "*"
       Topics:
-      - !Ref WebsiteBranchCFNNotification
+      - !Ref CloudFormationTopic
 
-  WebsiteBranchCNFStatus:
+  CloudFormationStatusCompleteSubscription:
+    Type: 'AWS::SNS::Subscription'
+    Properties:
+      TopicArn: !Ref CloudFormationTopic
+      Protocol: lambda
+      Endpoint: !GetAtt CloudFormationStatusCompleteLambda.Arn
+
+  CloudFormationStatusCompleteLambda:
     Type: 'AWS::Lambda::Function'
     Properties:
-      FunctionName: !Sub '${AWS::StackName}-WebsiteBranchCNFStatusFunction'
+      FunctionName: !Sub '${AWS::StackName}-CloudFormationStatusCompleteLambdaFunction'
       Runtime: python2.7
-      Handler: GitHubHook.branch_cfn_handler
+      Handler: GitHubHook.cloudformation_complete_handler
       Code:
         S3Bucket: !Ref WebsiteCFNArtifactsBucket
         S3Key: GitHubHook-Lambda.zip
@@ -413,9 +465,17 @@ Resources:
           WebsiteCFNArtifactsBucket: !Sub '${WebsiteCFNArtifactsBucket}'
           GitHubUsername: !Sub '${GitHubUsername}'
           GitHubAccessToken: !Sub '${GitHubAccessToken}'
-      Role: !GetAtt WebsiteBranchBuildLambdaExecutionRole.Arn
+      Role: !GetAtt CloudFormationStatusLambdaExecutionRole.Arn
 
-  WebsiteBranchBuildLambdaExecutionRole:
+  CloudFormationStatusLambdaPermission:
+    Type: 'AWS::Lambda::Permission'
+    Properties:
+      Action: 'lambda:InvokeFunction'
+      FunctionName: !GetAtt CloudFormationStatusCompleteLambda.Arn
+      Principal: sns.amazonaws.com
+      SourceArn: !Ref CloudFormationTopic
+
+  CloudFormationStatusLambdaExecutionRole:
     Type: 'AWS::IAM::Role'
     Properties:
       Path: /
@@ -431,13 +491,18 @@ Resources:
                 Resource:
                   - 'arn:aws:logs:*:*:*'
                 Effect: Allow
-        - PolicyName: ExecuteGitHubHookLambda
+        - PolicyName: ExecuteLambda
           PolicyDocument:
             Statement:
               - Action: 'codebuild:StartBuild'
                 Resource:
                   - !Sub >-
                     arn:aws:codebuild:${AWS::Region}:${AWS::AccountId}:project/${WebsiteCodeBuild}
+                Effect: Allow
+              - Action:
+                  - 'cloudformation:DescribeStacks'
+                Resource:
+                  - !Sub arn:aws:cloudformation:${AWS::Region}:${AWS::AccountId}:stack/${AWS::StackName}Branch*
                 Effect: Allow
         - PolicyName: PublishNotifications
           PolicyDocument:
