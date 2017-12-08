@@ -202,7 +202,8 @@ instructor-led workshop.
 - [Release procedures](release-procedures).
 - [Search and report facilities](/search-other) (e.g. open pull requests needing review).
 - [Create a new FOLIO module and do initial setup](create-new-repo).
-- The [FOLIO project roadmap](https://wiki.folio.org/display/PC/FOLIO+Roadmap).
+- The [FOLIO Project Roadmap](https://wiki.folio.org/display/PC/FOLIO+Roadmap) including the development and milestone plan for Version 1 and the feature backlog,
+and the [FOLIO Development Process Overview](https://wiki.folio.org/display/COMMUNITY/FOLIO+Development+Process+Overview), and other important documents and resources are listed at the [Wiki](https://wiki.folio.org).
 
 ### Community
 
