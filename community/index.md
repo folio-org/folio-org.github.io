@@ -115,9 +115,10 @@ The FOLIO developer community consists of:
 - Many supporting individuals whose contributions feed into and guide
   the development process
 
-Here we list the engineering roles and contacts for the various parts of
+The following sections list the engineering roles and contacts for the various parts of
 the project.  Team members can be contacted via the collaboration tools
 listed above.
+There is also the [FOLIO Developer Directory](https://wiki.folio.org/display/COMMUNITY/FOLIO+Developer+Directory) listing some developers and their general work areas.
 
 ### Engineering core team
 

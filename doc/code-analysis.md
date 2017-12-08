@@ -31,8 +31,6 @@ See [FOLIO-858](https://issues.folio.org/browse/FOLIO-858) to encourage 'A' rati
 
 The [SonarLint](http://www.sonarlint.org) extension for IDEs will detect quality issues at an early stage.
 
-The [SonarLint for Command Line](http://www.sonarlint.org/commandline/) is also available.
-
 Use "Connected mode" to hook directly into our project rules.
 
 ### Rule customization
