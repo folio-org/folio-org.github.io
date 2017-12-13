@@ -5,7 +5,10 @@ title: Create a new FOLIO module and do initial setup
 
 These are notes to assist developers with creating a new FOLIO module as a repository.
 Initial setup files and configuration.
-The first few items can only be done by the initial creator of the repository or its owners, and should happen early. Use its "Settings" area.
+
+Take care to choose wisely for the repository name. It is disruptive to change that.
+
+The following first few items can only be done by the initial creator of the repository or its owners, and should happen early. Use its "Settings" area.
 
 Ensure that access is configured for the relevant FOLIO GitHub [Teams](https://github.com/orgs/folio-org/teams) (e.g. foliodev-core, stripes).
 
