@@ -161,8 +161,7 @@ An 'artifact' in this context could either be a Maven artifact released to the F
 Maven repository, a docker image released to Docker Hub, a Linux distribution package
 or some combination of artifacts depending on the project.  To release the artifacts
 relevant to your project, log into the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
-Navigate to the
-[Release Jobs](https://jenkins-aws.indexdata.com/me/my-views/view/All/job/Release_Jobs/)
+Navigate to your "My Views > Release Jobs"
 folder and select your module's Jenkins job name with the '-release' suffix.
 For example, 'okapi-release'.   Select 'Build with Parameters' and select the release tag you
 want to release.  This will build the release artifacts and deploy them to the proper
@@ -249,7 +248,7 @@ git push origin master
 git push origin v4.4.0
 ```
 
-Trigger the appropriate release job in Jenkins to publish the release artefacts, choosing the appropriate tag. In this example the release job is [mod-inventory-release](https://jenkins-aws.indexdata.com/view/Release%20jobs/job/mod-inventory-release/) and the parameter would be the 4.4.0 tag.
+Trigger the appropriate release job in Jenkins to publish the release artefacts, choosing the appropriate tag. In this example the release job is [mod-inventory-release](https://jenkins-aws.indexdata.com/job/Release_Jobs/job/mod-inventory-release/) and the parameter would be the 4.4.0 tag.
 
 ## Stripes-based modules
 
