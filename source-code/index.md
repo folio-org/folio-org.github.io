@@ -133,6 +133,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-notify](https://github.com/folio-org/mod-notify)
   -- Notifications to the users.
 
+- [mod-codex-inventory](https://github.com/folio-org/mod-codex-inventory)
+  -- Codex wrapper for local inventory.
+
 - [mod-codex-mock](https://github.com/folio-org/mod-codex-mock)
   -- Codex mock module - for testing and development.
 
