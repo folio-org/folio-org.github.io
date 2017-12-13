@@ -263,6 +263,9 @@ exists and can be run, the APIs are likely to change.
 - [folio-tools](https://github.com/folio-org/folio-tools)
   -- Various tools and support glue for FOLIO CI.
 
+- [okapi.rb](https://github.com/thefrontside/okapi.rb)
+  -- Ruby client to communicate with an OKAPI cluster. Also known as "okapi-cli".
+
 - [curriculum](https://github.com/folio-org/curriculum)
   -- The source for the stand-alone [FOLIO Developer's Curriculum](http://dev.folio.org/curriculum).
 

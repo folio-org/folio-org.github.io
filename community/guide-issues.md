@@ -12,7 +12,7 @@ The following guidelines assist with knowing what to report, and how to create a
 ## Sign up for an account
 
 To create issues or add comments, sign up for an account via the [front page](https://issues.folio.org).
-(This is also used to manage accounts for wiki.folio.org)
+(This is also used to manage accounts for wiki.folio.org, so same account for both.)
 
 ## Report various issues
 
