@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Reference documentation
-permalink: /doc/reference/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Reference
