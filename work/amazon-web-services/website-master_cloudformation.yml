@@ -258,6 +258,7 @@ Resources:
                   - 'logs:CreateLogStream'
                   - 'logs:PutLogEvents'
                   - 'events:*'
+                  - 's3:DeleteObject'
                   - 's3:GetObject'
                   - 's3:PutObject'
                   - 's3:GetObjectVersion'
@@ -401,12 +402,12 @@ Resources:
     Type: AWS::SNS::TopicPolicy
     Properties:
       PolicyDocument:
-        Id: Allow CodeBuild Publish to Topic
+        Id: Allow CodeBuild Publish to Topic via Events
         Version: '2012-10-17'
         Statement:
         - Effect: Allow
           Principal:
-            Service: codebuild.amazonaws.com
+            Service: events.amazonaws.com
           Action: sns:Publish
           Resource: "*"
       Topics:
