@@ -101,6 +101,7 @@ mod-inventory-storage:
       - identifier-type
       - loan-type
       - material-type
+      - platform
       - shelf-location
     ramlutil: ramls/raml-util
 
