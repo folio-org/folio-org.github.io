@@ -8,7 +8,7 @@ layout: null
     {%- if docId == "" -%}{%- assign docId = "home" -%}{%- endif -%}
     {%- if docId == "search-data-json" -%}{%- continue -%}{%- endif -%}
     {%- if docId == "assets-main-css" -%}{%- continue -%}{%- endif -%}
-    {%- if docId == "navbanner-html" -%}{%- continue -%}{%- endif -%}
+    {%- if docId == "banner-area-html" -%}{%- continue -%}{%- endif -%}
     {%- if docId == "feed-xml" -%}{%- continue -%}{%- endif -%}
     {%- if docId == "about" -%}{%- continue -%}{%- endif -%}
     {
