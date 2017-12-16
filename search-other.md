@@ -8,6 +8,11 @@ menuTopTitle: Search
 menuTopIndex: 100
 menuSubTitle: "Search other"
 menuSubIndex: 2
+menuSubs:
+-
+ title: Search dev.folio.org
+ index: 1
+ url: /search/
 ---
 
 Until we have better search and reporting facilities for remote resources, please login and use their search facilities.
