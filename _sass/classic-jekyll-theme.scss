@@ -49,7 +49,7 @@ $grey-color-dark:				darken($grey-color, 25%);
 // ---------------------------------------------------------------------------------------------------------------------
 // The theme-color is the default for some of the other elements that can be colored in this theme.
 //
-$theme-color:							green;
+$theme-color:							$f-color-purple;
 
 // Background color, picture or pattern.
 //
@@ -77,9 +77,9 @@ $background-narrow:						none;
 //
 // CSS property: Height
 //
-$add-to-banner-area-height-narrow:		0px;
-$add-to-banner-area-height-medium:		0px;
-$add-to-banner-area-height-widest:		0px;
+$add-to-banner-area-height-narrow:		27px;
+$add-to-banner-area-height-medium:		27px;
+$add-to-banner-area-height-widest:		27px;
 
 
 // *********************************************************************************************************************
@@ -99,7 +99,7 @@ $banner-enabled-widest:					true;
 //
 $banner-height-narrow:					48px;
 $banner-height-medium:					68px;
-$banner-height-widest:					135px;
+$banner-height-widest:					68px;
 
 // The background of the banner. (Not the banner-area!)
 // CSS property: Background.
@@ -118,9 +118,9 @@ $banner-background-widest:				white;
 // Controls display of the icon.
 // Note: Disabling the banner also disables the icon.
 //
-$banner-icon-enabled-narrow:			true;
-$banner-icon-enabled-medium:			true;
-$banner-icon-enabled-widest:			true;
+$banner-icon-enabled-narrow:			false;
+$banner-icon-enabled-medium:			false;
+$banner-icon-enabled-widest:			false;
 
 // The z-order of the icon. Use this to position the icon relative to the title-area and the menu-symbol.
 // CSS property: z-index
@@ -326,9 +326,9 @@ $banner-subtitle-font-widest:					18px $theme-font-family;
 // The color for the title.
 // CSS property: color
 //
-$banner-title-color-narrow:						$theme-color;
-$banner-title-color-medium:						$theme-color;
-$banner-title-color-widest:						$theme-color;
+$banner-title-color-narrow:						$f-color-orange;
+$banner-title-color-medium:						$f-color-orange;
+$banner-title-color-widest:						$f-color-orange;
 
 // The color for the subtitle.
 // CSS property: color
@@ -518,8 +518,8 @@ $menubar-height-widest:								auto;
 // Horizontally position the icon, items and item-separators in the menubar.
 // CSS property: justify-content
 //
-$menubar-justify-content-medium:					center;
-$menubar-justify-content-widest:					center;
+$menubar-justify-content-medium:					flex-start;
+$menubar-justify-content-widest:					flex-start;
 
 // Vertically position the items and item-separators in the menubar.
 // CSS property: align-items
@@ -604,8 +604,8 @@ $menubar-item-separator-line-color-narrow:			$menubar-background-narrow;
 // Padding of the menu items for the medium and wide layout
 // CSS property: padding
 //
-$menubar-item-padding-medium:						$vspacing-unit/4 $hspacing-unit;
-$menubar-item-padding-widest:						$vspacing-unit/4 $hspacing-unit;
+$menubar-item-padding-medium:						$vspacing-unit/4 $hspacing-unit/1.5;
+$menubar-item-padding-widest:						$vspacing-unit/4 $hspacing-unit/1.5;
 
 // The disclosure symbol definitions for the narrow vertical menubar.
 // Written to a <p> with the CSS :after selector.
@@ -778,9 +778,9 @@ $column-panel-background-widest:		none;
 // The width of the columns, these settings drive which layout is used, based on the browser window width.
 // Used in the mixin definitions.
 //
-$primary-column-min-width:				480px;
-$secondary-column-width: 				240px;
-$tertiary-column-width:					240px;
+$primary-column-min-width:				560px;
+$secondary-column-width: 				200px;
+$tertiary-column-width:					200px;
 
 // For the primary column.
 // CSS property: background
