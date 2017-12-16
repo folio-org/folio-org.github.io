@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Reference documentation
+permalink: /doc/reference/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Reference
@@ -13,4 +14,4 @@ Standards and reference documentation.
 
 ## API documentation
 
-- The set of automatically generated [API documentation](api).
+- The set of automatically generated [API documentation](/doc/api/).
