@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Release procedures
+permalink: /doc/release-procedures/
 ---
 
 This document summarises the release procedures for FOLIO projects.

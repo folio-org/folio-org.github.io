@@ -1,10 +1,11 @@
 ---
 layout: page
 title: FOLIO uses any programming language
+permalink: /doc/any-programming-language/
 ---
 
 The design of FOLIO architecture
-([microservices](glossary#microservices) and [REST](glossary#rest))
+([microservices](/doc/glossary#microservices) and [REST](/doc/glossary#rest))
 enables any module to be written in a programming language that the developer is comfortable with. So various programming languages and build environments can be utilized.
 
 ## Server-side
@@ -14,7 +15,7 @@ The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB
 Note that at this stage of the FOLIO project, only this Java-based framework is available.
 Other frameworks would be possible.
 
-* Be able to handle the REST interactions according to the [API](api/) and implement the lifecycle endpoints.
+* Be able to handle the REST interactions according to the [API](/doc/api/) and implement the lifecycle endpoints.
 * As [explained](https://github.com/folio-org/okapi/blob/master/doc/guide.md#chunked) in the Okapi Guide, Okapi uses HTTP 1.1 with chunked encoding to make the connections to the modules.
 
 ## Client-side
@@ -23,7 +24,7 @@ The [front-end](/source-code/#client-side) user interface code can be written us
 FOLIO provides the [Stripes](/source-code/#client-side) UI toolkit (JavaScript), optimized for accessing Okapi-based services and wrapping UI functionality into convenient modules.
 Other toolkits would be possible.
 
-* Be able to handle the REST interactions according to the [API](api/).
+* Be able to handle the REST interactions according to the [API](/doc/api/).
 * Be able to manage state and send special headers such as X-Okapi-Tenant.
 
 ## Current situation

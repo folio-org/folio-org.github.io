@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Guidelines for FOLIO issue tracker
+permalink: /community/guide-issues/
 secondary-column: left
 secondary-column-content: column-2-community-guide-issues.html
 ---
@@ -27,7 +28,7 @@ Please assist that by reporting when a particular message is not fully relevant 
 
 ## Preparing to add an issue
 
-Review the "[which forum](which-forum#issue-tracker)" guidelines
+Review the "[which forum](/community/which-forum#issue-tracker)" guidelines
 to be sure that adding an issue is the appropriate action.
 
 Describe the issue concisely in the _Summary_ and _Description_ fields.
@@ -104,7 +105,7 @@ When other people comment and ask for clarification, then try to respond
 promptly. We all like to keep the issue resolution process moving smoothly.
 
 If comments start to turn into a lengthy discussion, then follow up in
-[other forums](which-forum), and then summarise into further issue tracker Comments.
+[other forums](/community/which-forum), and then summarise into further issue tracker Comments.
 Provide links in both directions.
 
 ## Status

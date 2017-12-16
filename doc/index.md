@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Documentation
+permalink: /doc/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Documentation
@@ -63,7 +64,7 @@ In the context of those early chapters, you may then wish to go on to:
 
 ## Community and contribution
 
-The [community section](../community/) explains how to be involved,
+The [community section](/community/) explains how to be involved,
 provides the contribution guidelines, lists the various collaboration tools
 and has some recommendations about when to use each.
 
@@ -88,7 +89,7 @@ and some sample module code.
 to the specific documentation for each of those modules.
 
 With that background understanding, see the documentation for each
-[server-side](../source-code/#server-side)
+[server-side](/source-code/#server-side)
 module, especially RAML Module Builder (RMB).
 
 ## User Interface
@@ -98,7 +99,7 @@ The FOLIO user-interface toolkit is called Stripes. It is described in the
 which leads to the related documentation.
 
 With that background understanding, see the documentation for each
-[client-side](../source-code/#client-side)
+[client-side](/source-code/#client-side)
 module, especially the "ui-users".
 
 The
@@ -174,7 +175,7 @@ Configurations for accessing.
 - [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md).
 - [FOLIO-Sample-Modules guide](https://github.com/folio-org/folio-sample-modules/blob/master/README.md).
 - [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework.
-- Each [server-side](../source-code/#server-side) and [client-side](../source-code/#client-side)
+- Each [server-side](/source-code/#server-side) and [client-side](/source-code/#client-side)
 module's own documentation.
 - [Stripes Core README](https://github.com/folio-org/stripes-core/blob/master/README.md)
 guides to all front-end documentation.

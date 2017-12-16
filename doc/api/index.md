@@ -1,6 +1,7 @@
 ---
 layout: page
 title: API documentation
+permalink: /doc/api/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Reference
