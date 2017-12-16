@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Primer for front-end development
+permalink: /doc/primer-develop-frontend/
 ---
 
 Start with introduction to [user interface](/doc/#user-interface)

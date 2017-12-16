@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Search dev.folio.org
+permalink: /search/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Search

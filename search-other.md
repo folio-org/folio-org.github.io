@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Other search and report facilities
+permalink: /search-other/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Search

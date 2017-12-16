@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Source Code
+permalink: /source-code/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Source
@@ -53,7 +54,7 @@ system. These repositories fall into three categories:
 release often](https://en.wikipedia.org/wiki/Release_early,_release_often)
 philosophy.  **We want your feedback** in the form of pull requests and filed
 issues and general discussion via the
-[collaboration tools](../community).
+[collaboration tools](/community).
 
 ## Server-side
 
@@ -73,7 +74,7 @@ facilitated by the code in the `raml-module-builder` repository.
 - [raml](https://github.com/folio-org/raml)
   -- Repository of RAML files, including JSON Schemas, traits and
   resource types centralized for re-usability.
-  The [API reference](../doc/#api-reference) documentation is also
+  The [API reference](/doc/#api-reference) documentation is also
   generated.
   This repository is the master location for the traits and resource
   types, while each module is the master for its own schemas, examples,

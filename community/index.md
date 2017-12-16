@@ -1,6 +1,7 @@
 ---
 layout: page
 title: FOLIO Community
+permalink: /community/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Community

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Setup development environment
+permalink: /doc/setup/
 ---
 
 A collection of tips to assist developers to configure their local workstation setup environment for FOLIO development.
@@ -24,7 +25,7 @@ A collection of tips to assist developers to configure their local workstation s
 
 Assume already doing other development, so know how to keep the operating system up-to-date, know its quirks, know how to use the various package managers. So this document will not go into detail about that.
 
-FOLIO modules can be developed in any suitable [programming language](any-programming-language).
+FOLIO modules can be developed in any suitable [programming language](/doc/any-programming-language).
 
 The [FOLIO-Sample-Modules](https://github.com/folio-org/folio-sample-modules) explains about module development.
 The various [Stripes](/doc#user-interface) documentation explains user-interface development.
@@ -51,7 +52,7 @@ As each FOLIO component can utilise whatever suite of appropriate tools, refer t
 
 Occasionally it becomes necessary to specify minimum versions of some tools:
 
-* Java: [1.8.0-101](troubleshooting#missing-certificate-authority-for-lets-encrypt)
+* Java: [1.8.0-101](/doc/troubleshooting#missing-certificate-authority-for-lets-encrypt)
 
 ### Other tools
 
@@ -64,10 +65,10 @@ Note that this is not required to be installed for running modules using the "em
 FOLIO utilizes the Nexus OSS Repository Manager to host Maven artifacts and NPM packages for FOLIO projects.
 Docker images are the primary distribution model for FOLIO modules.
 
-See [Built artifacts](artifacts) for configuration details for accessing the released and snapshot FOLIO artifacts.
+See [Built artifacts](/doc/artifacts) for configuration details for accessing the released and snapshot FOLIO artifacts.
 
 For developers needing to publish artifacts, an overview and usage configuration details are provided, see
-[Build, test, and deployment infrastructure](automation).
+[Build, test, and deployment infrastructure](/doc/automation).
 
 ## Coding style
 
@@ -79,7 +80,7 @@ Refer to the [coding style](/community/contrib-code#coding-style) sections of th
 ### Code analysis and linting
 
 All code repositories have linter and code-style analysis facilities implemented as part of their continuous integration build process.
-The process is [explained](code-analysis), along with usage notes and configuration for running those tools locally.
+The process is [explained](/doc/code-analysis), along with usage notes and configuration for running those tools locally.
 
 ### Use EditorConfig for consistent whitespace
 
@@ -169,4 +170,4 @@ For Maven-based modules, add to your POM file (copy the 'git submodule update' f
 
 ## Troubleshooting
 
-See [notes](troubleshooting).
+See [notes](/doc/troubleshooting).

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Welcome to FOLIO software development
+permalink: /
 ---
 
 This is the home for developers building [FOLIO, a new open source library

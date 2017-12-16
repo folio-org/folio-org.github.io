@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Guidelines for Contributing Code
+permalink: /community/contrib-code/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Contributing
@@ -46,7 +47,7 @@ See the [Contributor License Agreement](#contributor-license-agreement) section 
 ## Issue tracker
 
 The FOLIO Issue Tracker is at [issues.folio.org](https://issues.folio.org/)
-and see the usage [guidelines](guide-issues)
+and see the usage [guidelines](/community/guide-issues)
 which encourage reports of various types of issue and explain how to.
 
 ## Git and branches
@@ -149,7 +150,7 @@ The FOLIO Project uses the [Apache License, Version 2.0](https://www.apache.org/
 
 {% gist a72174fc6b18f3a66f2f9d3db1c8f127 %}
 
-See [accepting the contributor license agreement](cla-process) for more details.
+See [accepting the contributor license agreement](/community/cla-process) for more details.
 
 ### Merging pull requests
 
@@ -193,7 +194,7 @@ is described separately.
 
 ## Releasing
 
-Refer to the specific [Release procedures](../doc/release-procedures).
+Refer to the specific [Release procedures](/doc/release-procedures).
 
 Later, if there are bugs in the released version, work can continue on the
 version branch, and we can release a new minor version from the branch. Some
