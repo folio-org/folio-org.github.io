@@ -1,7 +1,7 @@
 # Language customization for default theme elements
 
 # Menu item
-tHome: dev.FOLIO.org
+tHome: Home
 
 # Title on home page
 tPosts: Posts
@@ -11,6 +11,9 @@ tCategories: Categories
 
 # Title on categories page
 tCategory: Category
+
+# When no categories are present
+tNoCategories: None
 
 # Message on category page if no posts have been found
 tNoBlogpostFound: No blogposts found for this category
@@ -38,3 +41,10 @@ tCookieOk: OK
 
 # More cookie info text
 tMoreInfo: More info
+
+# Title for Older Posts widget output
+tOlderPosts: Older Posts
+
+# Month names for Older Posts widget output
+# Note: Must start with 'None' because of index starting at 0
+tMonths: [None, January, February, March, April, May, June, July, August, September, October, November, December]
