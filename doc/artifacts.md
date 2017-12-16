@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Built artifacts
+permalink: /doc/artifacts/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Download
@@ -18,7 +19,7 @@ At Docker Hub:
 * [https://hub.docker.com/u/folioorg/](https://hub.docker.com/u/folioorg/) released versions
 * [https://hub.docker.com/r/folioci/](https://hub.docker.com/r/folioci/) snapshot versions
 
-See [Automation/Docker Hub](automation#docker-hub) for details.
+See [Automation/Docker Hub](/doc/automation#docker-hub) for details.
 
 ## Maven artifacts
 
@@ -36,7 +37,7 @@ Example POM configuration:
 
 Browse at
 [https://repository.folio.org/#browse/browse/components](https://repository.folio.org/#browse/browse/components)
-and see [Automation/Nexus Repository Manager](automation#nexus-repository-manager)
+and see [Automation/Nexus Repository Manager](/doc/automation#nexus-repository-manager)
 for details.
 
 ## NPM packages
@@ -51,7 +52,7 @@ Example .npmrc configuration:
 
 Browse at
 [https://repository.folio.org/#browse/browse/components](https://repository.folio.org/#browse/browse/components)
-and see [Automation/Nexus Repository Manager](automation#nexus-repository-manager)
+and see [Automation/Nexus Repository Manager](/doc/automation#nexus-repository-manager)
 for details.
 
 ## Debian/Ubuntu APT repository
