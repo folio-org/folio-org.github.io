@@ -6,13 +6,17 @@ menuInclude: yes
 menuLink: yes
 menuTopTitle: Community
 menuTopIndex: 6
-menuSubTitle: "Overview"
+menuSubTitle: Overview
 menuSubIndex: 1
 menuSubs:
--
- title: Collaboration tools
- index: 2
- anchorId: collaboration-tools
+- title: Roadmap
+  anchorId: roadmap
+- title: Collaboration tools
+  anchorId: collaboration-tools
+- title: Community representatives
+  anchorId: community-representatives
+- title: Engineering teams
+  anchorId: engineering-teams
 ---
 
 ## Roadmap

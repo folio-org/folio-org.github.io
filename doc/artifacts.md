@@ -9,26 +9,16 @@ menuTopIndex: 4
 menuSubTitle: Overview
 menuSubIndex: 1
 menuSubs:
--
- title: Docker images
- index: 2
- anchorId: docker-images
--
- title: Maven artifacts
- index: 3
- anchorId: maven-artifacts
--
- title: NPM packages
- index: 4
- anchorId: npm-packages
--
- title: APT repository
- index: 5
- anchorId: debianubuntu-apt-repository
--
- title: Vagrant boxes
- index: 6
- anchorId: vagrant-boxes
+- title: Docker images
+  anchorId: docker-images
+- title: Maven artifacts
+  anchorId: maven-artifacts
+- title: NPM packages
+  anchorId: npm-packages
+- title: APT repository
+  anchorId: debianubuntu-apt-repository
+- title: Vagrant boxes
+  anchorId: vagrant-boxes
 ---
 
 There are several repositories that contain snapshot and released FOLIO artifacts in various formats.

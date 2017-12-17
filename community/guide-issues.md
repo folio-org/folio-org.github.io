@@ -2,6 +2,11 @@
 layout: page
 title: Guidelines for FOLIO issue tracker
 permalink: /community/guide-issues/
+menuInclude: yes
+menuLink: yes
+menuTopTitle: Contributing
+menuSubTitle: Guidelines for issue tracker
+menuSubIndex: 4
 ---
 
 [https://issues.folio.org](https://issues.folio.org)

@@ -4,10 +4,23 @@ title: Which forum to use for communication
 permalink: /community/which-forum/
 menuInclude: yes
 menuLink: yes
-menuTopTitle: Community
-menuTopIndex: 6
-menuSubTitle: Interaction
-menuSubIndex: 3
+menuTopTitle: Contributing
+menuSubs:
+- title: Which forum to use
+  index: 3
+  sub:
+  - title: General notes
+    anchorId: general-notes
+  - title: Discuss
+    anchorId: discuss
+  - title: Wiki
+    anchorId: wiki
+  - title: Issue tracker
+    anchorId: issue-tracker
+  - title: GitHub
+    anchorId: github
+  - title: Slack
+    anchorId: slack
 ---
 
 Developers need to efficiently discuss various topics such as issues,

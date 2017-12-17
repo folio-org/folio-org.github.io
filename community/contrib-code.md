@@ -5,7 +5,28 @@ permalink: /community/contrib-code/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Contributing
-menuTopIndex: 7
+menuSubs:
+- title: Guidelines for Contributing Code
+  index: 2
+  sub:
+  - title: License
+    anchorId: license
+  - title: Issue tracker
+    anchorId: issue-tracker
+  - title: Git and branches
+    anchorId: git-and-branches
+  - title: Automation
+    anchorId: automation
+  - title: Releasing
+    anchorId: releasing
+  - title: Version numbers
+    anchorId: version-numbers
+  - title: Coding style
+    anchorId: coding-style
+  - title: Tests
+    anchorId: tests
+  - title: RAML
+    anchorId: raml
 ---
 
 <!-- ../../okapi/doc/md2toc -l 2 -h 3 contrib-code.md -->
