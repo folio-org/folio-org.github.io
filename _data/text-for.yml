@@ -12,6 +12,9 @@ tCategories: Categories
 # Title on categories page
 tCategory: Category
 
+# When no categories are present
+tNoCategories: None
+
 # Message on category page if no posts have been found
 tNoBlogpostFound: No blogposts found for this category
 
@@ -25,7 +28,7 @@ tTags: Tags
 tRecent: Recent
 
 # Part title of social media widget
-tSocialMediaResources: Social Media & Resources
+tSocialMediaResources: GitHub and Twitter
 
 # Title of subscription widget
 tSubscribe: Subscribe
@@ -38,3 +41,10 @@ tCookieOk: OK
 
 # More cookie info text
 tMoreInfo: More info
+
+# Title for Older Posts widget output
+tOlderPosts: Older Posts
+
+# Month names for Older Posts widget output
+# Note: Must start with 'None' because of index starting at 0
+tMonths: [None, January, February, March, April, May, June, July, August, September, October, November, December]

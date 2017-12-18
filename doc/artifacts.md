@@ -6,11 +6,22 @@ menuInclude: yes
 menuLink: yes
 menuTopTitle: Download
 menuTopIndex: 4
+menuSubTitle: Overview
+menuSubIndex: 1
+menuSubs:
+- title: Docker images
+  anchorId: docker-images
+- title: Maven artifacts
+  anchorId: maven-artifacts
+- title: NPM packages
+  anchorId: npm-packages
+- title: APT repository
+  anchorId: debianubuntu-apt-repository
+- title: Vagrant boxes
+  anchorId: vagrant-boxes
 ---
 
 There are several repositories that contain snapshot and released FOLIO artifacts in various formats.
-
-<!-- ../../okapi/doc/md2toc -l 2 -h 3 artifacts.md -->
 
 ## Docker images
 

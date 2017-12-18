@@ -8,17 +8,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="theme-color" content="#ffffff">
+
   <title>{{ this_page_title | escape | strip}}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  {% if page.excerpt %}{% assign description = page.excerpt %}{% else %}{% assign description = site.description %}{% endif %}
+
+  <meta name="description" content="{{ description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="icon" href="{{ "/images/FOLIO_fav.png" | prepend: site.baseurl }}">
+  <link rel="icon" href="{{ "/images/FOLIO_fav.png" }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  {% if site.data.setup.use-separate-navbanner %}
+  
   <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
+  
+  <!-- Include google analytics for production build and if necessary -->
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+	{% include analytics.html %}
   {% endif %}
-{% if site.google_analytics and jekyll.environment == 'production' %}
-{% include analytics.html %}
-{% endif %}
+  
+  <!-- Include cookie consent for production build when enabled -->
+  {% if jekyll.environment == 'production' %}
+  	{% if site.data.setup.enable-cookies-policy %}
+	  {% include widgets/cookie-consent.html %}
+    {% endif %}
+  {% endif %}
+
 </head>
+

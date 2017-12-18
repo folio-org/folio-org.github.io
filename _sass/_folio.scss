@@ -1,6 +1,9 @@
 .highlighter-rouge pre.highlight {
   background-color: $f-color-lighter-grey;
 }
+code.highlighter-rouge {
+  background-color: $f-color-lighter-grey;
+}
 
 pre {
   border: 1px solid $f-color-light-grey;
@@ -34,13 +37,6 @@ tr:target td:first-child {
   border-left: 5px solid $f-color-orange;
 }
 
-// Reduce vertical whitespace
-.page-title {
-  text-align: center;
-  margin-top: $vspacing-unit;
-  margin-bottom: $vspacing-unit;
-}
-
 // Set our link and visited colors
 a {
   color: $f-link-color;
@@ -66,4 +62,9 @@ form {
 }
 form input {
   font-size: 1.3em;
+}
+nav.folio {
+  div.dropdown {
+    z-index: 9;
+  }
 }
