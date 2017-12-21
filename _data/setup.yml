@@ -27,11 +27,11 @@ secondary-column: left
 # The tertiary column must reside in the "_includes" directory and is called "tertiary-column.html"
 # Front matter can specify a different file for the tertiary column ("tertiary-column-content").
 #
-tertiary-column: present
+tertiary-column: none
 
 # A subtitle can be displayed in de banner
 #
-subtitle: "easy to use and highly customizable"
+subtitle: ""
 
 # Skip some of the build process for faster recompilation during content creation.
 # Values: yes | no
@@ -48,7 +48,7 @@ fast-content-build: no
 # - yes: Upload the image to be used as favicon to that site, create a favicon files folder called 'icons', download the generated file/folder and replace the contents of the site's icons directory with the files from realfavicongenerator.
 # - no: The folder 'icons' can be removed.
 #
-realfavicongenerator: yes
+realfavicongenerator: no
 
 # For the number of posts visible on the home page.
 # Value: > 0
