@@ -1,7 +1,7 @@
 # Language customization for default theme elements
 
 # Menu item
-tHome: dev.FOLIO.org
+tHome: Home
 
 # Title on home page
 tPosts: Posts
@@ -28,7 +28,7 @@ tTags: Tags
 tRecent: Recent
 
 # Part title of social media widget
-tSocialMediaResources: GitHub and Twitter
+tSocialMediaResources: Social Media & Resources
 
 # Title of subscription widget
 tSubscribe: Subscribe

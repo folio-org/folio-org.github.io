@@ -43,18 +43,21 @@ $grey-color-light:				lighten($grey-color, 40%);
 $grey-color-light-light:		lighten($grey-color-light, 40%);
 $grey-color-dark:				darken($grey-color, 25%);
 
+// Since Liquid is not available, it is necessary to redefine the baseurl from the _config.yml file here
+//
+$baseurl:						"/classic-jekyll-theme"; // eg: "/classic" a leading '/' is important.
 
 // *********************************************************************************************************************
 // General color and background settings
 // ---------------------------------------------------------------------------------------------------------------------
 // The theme-color is the default for some of the other elements that can be colored in this theme.
 //
-$theme-color:							$f-color-purple;
+$theme-color:							green;
 
 // Background color, picture or pattern.
 //
 // See http://www.w3schools.com/cssref/css3_pr_background.asp for a full description.
-// Example: ...-background: url("/assets/img/bckgnd.png") repeat
+// Example: ...-background: url("#{$baseurl}/assets/img/bckgnd.png") repeat
 //
 // The body panel encompasses the entire DOM.
 // CSS property: Background.
@@ -77,18 +80,18 @@ $background-narrow:						none;
 //
 // CSS property: Height
 //
-$add-to-banner-area-height-narrow:		27px;
-$add-to-banner-area-height-medium:		27px;
-$add-to-banner-area-height-widest:		27px;
+$add-to-banner-area-height-narrow:		0px;
+$add-to-banner-area-height-medium:		0px;
+$add-to-banner-area-height-widest:		0px;
 
 // See setup.yml: IF the banner-position is set to 'top' or 'main' these values should be zero (0px). If the
 // banner-position is set to 'top-fixed' then this value should be set to the height of the banner-area.
 //
 // Note: This prevents an anchored link from scrolling to a position behind the banner-area.
 //
-$anchor-top-fixed-offset-narrow:		200px;
-$anchor-top-fixed-offset-medium:		200px;
-$anchor-top-fixed-offset-widest:		200px;
+$anchor-top-fixed-offset-narrow:		0px;
+$anchor-top-fixed-offset-medium:		0px;
+$anchor-top-fixed-offset-widest:		0px;
 
 // *********************************************************************************************************************
 // Banner
@@ -107,7 +110,7 @@ $banner-enabled-widest:					true;
 //
 $banner-height-narrow:					48px;
 $banner-height-medium:					68px;
-$banner-height-widest:					68px;
+$banner-height-widest:					135px;
 
 // The background of the banner. (Not the banner-area!)
 // CSS property: Background.
@@ -126,9 +129,9 @@ $banner-background-widest:				white;
 // Controls display of the icon.
 // Note: Disabling the banner also disables the icon.
 //
-$banner-icon-enabled-narrow:			false;
-$banner-icon-enabled-medium:			false;
-$banner-icon-enabled-widest:			false;
+$banner-icon-enabled-narrow:			true;
+$banner-icon-enabled-medium:			true;
+$banner-icon-enabled-widest:			true;
 
 // The z-order of the icon. Use this to position the icon relative to the title-area and the menu-symbol.
 // CSS property: z-index
@@ -179,12 +182,12 @@ $banner-icon-padding-widest:			0px;
 // The url for the icon to be loaded into the div.
 // CSS property: content
 //
-// Example: $banner-icon-url-...: url("/assets/img/wide-icon.png");
+// Example: $banner-icon-url-...: url("#{$baseurl}/assets/img/wide-icon.png");
 // Set to 'none' if there is no banner icon.
 //
-$banner-icon-url-narrow:				url("/assets/img/cog-wheels-60x43.png");
-$banner-icon-url-medium:				url("/assets/img/cog-wheels-120x68.png");
-$banner-icon-url-widest:				url("/assets/img/cog-wheels-240x135.png");
+$banner-icon-url-narrow:				url("#{$baseurl}/assets/img/cog-wheels-60x43.png");
+$banner-icon-url-medium:				url("#{$baseurl}/assets/img/cog-wheels-120x68.png");
+$banner-icon-url-widest:				url("#{$baseurl}/assets/img/cog-wheels-240x135.png");
 
 // The background for the icon div.
 // CSS property: background
@@ -334,9 +337,9 @@ $banner-subtitle-font-widest:					18px $theme-font-family;
 // The color for the title.
 // CSS property: color
 //
-$banner-title-color-narrow:						$f-color-orange;
-$banner-title-color-medium:						$f-color-orange;
-$banner-title-color-widest:						$f-color-orange;
+$banner-title-color-narrow:						$theme-color;
+$banner-title-color-medium:						$theme-color;
+$banner-title-color-widest:						$theme-color;
 
 // The color for the subtitle.
 // CSS property: color
@@ -526,8 +529,8 @@ $menubar-height-widest:								auto;
 // Horizontally position the icon, items and item-separators in the menubar.
 // CSS property: justify-content
 //
-$menubar-justify-content-medium:					flex-start;
-$menubar-justify-content-widest:					flex-start;
+$menubar-justify-content-medium:					center;
+$menubar-justify-content-widest:					center;
 
 // Vertically position the items and item-separators in the menubar.
 // CSS property: align-items
@@ -633,8 +636,8 @@ $menubar-item-height-widest:						auto;
 // Padding of the menu entries
 // CSS property: padding
 //
-$menubar-item-padding-medium:						$vspacing-unit/4 $hspacing-unit/1.5;
-$menubar-item-padding-widest:						$vspacing-unit/4 $hspacing-unit/1.5;
+$menubar-item-padding-medium:						$vspacing-unit/4 $hspacing-unit;
+$menubar-item-padding-widest:						$vspacing-unit/4 $hspacing-unit;
 $menubar-subitem-padding-medium:					$vspacing-unit/4 $hspacing-unit;
 $menubar-subitem-padding-widest:					$vspacing-unit/4 $hspacing-unit;
 $menubar-subsubitem-padding-medium:					$vspacing-unit/4 $hspacing-unit;
@@ -757,7 +760,7 @@ $menubar-subsubitem-separator-line-color-narrow:	$menubar-background-narrow;
 // CSS property: content
 //
 $menubar-icon-url-medium:				none;
-$menubar-icon-url-widest:				none; //url("/assets/img/test-pattern-55.png");
+$menubar-icon-url-widest:				none; //url("#{$baseurl}/assets/img/test-pattern-55.png");
 
 // Height of the icon
 // CSS property: height
@@ -791,9 +794,9 @@ $column-panel-background-widest:		none;
 // The width of the columns, these settings drive which layout is used, based on the browser window width.
 // Used in the mixin definitions.
 //
-$primary-column-min-width:				560px;
-$secondary-column-width: 				200px;
-$tertiary-column-width:					200px;
+$primary-column-min-width:				480px;
+$secondary-column-width: 				240px;
+$tertiary-column-width:					240px;
 
 // For the primary column.
 // CSS property: background
@@ -816,29 +819,29 @@ $tertiary-column-background-narrow:		none;
 $tertiary-column-background-medium:		none;
 $tertiary-column-background-widest:		none;
 
-// Color for the dividers between the columns
+// Color for the separator between the columns
 // CSS property: border-right (but only the color part)
 //
-$column-divider-color-medium:			lighten($grey-color, 30%);
-$column-divider-color-widest:			lighten($grey-color, 30%);
+$column-separator-color-medium:			lighten($grey-color, 30%);
+$column-separator-color-widest:			lighten($grey-color, 30%);
 
-// Enable/disable display of the column dividers
+// Enable/disable display of the column separator
 //
 // Values: true | false
 //
-$column-divider-display:				true;
+$column-separator-display:				true;
 
-// Set the space between the top of the divider and the menubar-bottom-separator.
-// The background for the divider is the background of the column panel.
+// Set the space between the top of the separator and the menubar-bottom-separator.
+// The background for the separator is the background of the column panel.
 // CSS property: margin-top
 // 
-$column-divider-top-spacing:			$vspacing-unit;
+$column-separator-top-spacing:			$vspacing-unit;
 
-// Set the space between the bottom of the divider and the footer divider.
-// The background for the divider is the background of the column panel.
+// Set the space between the bottom of the separator and the footer separator.
+// The background for the separator is the background of the column panel.
 // CSS property: margin-bottom
 //
-$column-divider-bottom-spacing:         $vspacing-unit;
+$column-separator-bottom-spacing:		$vspacing-unit;
 
 
 // *********************************************************************************************************************
@@ -852,18 +855,18 @@ $footer-background-narrow:				none;
 $footer-background-medium:				none;
 $footer-background-widest:				none;
 
-// The footer divider is placed between the columns panel and the footer panel.
+// The footer separator is placed between the columns panel and the footer panel.
 // CSS property: border-color
 //
-$footer-divider-color-narrow:			$theme-color;
-$footer-divider-color-medium:			$theme-color;
-$footer-divider-color-widest:			$theme-color;
+$footer-separator-color-narrow:			$theme-color;
+$footer-separator-color-medium:			$theme-color;
+$footer-separator-color-widest:			$theme-color;
 
-// Enables or disables display of the footer divider
+// Enables or disables display of the footer separator
 //
 // Values: true | false
 //
-$footer-divider-display:				true;
+$footer-separator-display:				true;
 
 // The font to be used for the footer text.
 // CSS property: font
@@ -884,16 +887,16 @@ $footer-color-widest:					black;
 // Widget separators
 // ---------------------------------------------------------------------------------------------------------------------
 //
-// The color for the divider.
+// The color for the separator.
 // CSS property: border-color
 //
-$widget-divider-color:      			$theme-color;
+$widget-separator-color:      			$theme-color;
 
-// Enables or disables display of the widget dividers
+// Enables or disables display of the widget separator
 //
 // Values: true | false
 //
-$widget-divider-display:				true;
+$widget-separator-display:				true;
 
 
 // *********************************************************************************************************************
