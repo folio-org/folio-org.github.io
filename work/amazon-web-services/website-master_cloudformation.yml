@@ -180,12 +180,12 @@ Resources:
               HTTPSPort: '443'
               OriginProtocolPolicy: http-only
             DomainName: !Join
-              - ''
+              - '.'
               - - !Ref WebsiteMasterBucket
                 - !FindInMap
-                  - Region2S3WebsiteSuffix
+                  - Region2S3WebsiteEndpoint
                   - !Ref 'AWS::Region'
-                  - Suffix
+                  - S3WebsiteEndpoint
             Id: WebsiteMasterBucket
         Enabled: 'true'
         DefaultRootObject: index.html
@@ -585,33 +585,43 @@ Parameters:
       The name of an existing private S3 bucket that contains the CloudFormation
       artifacts (such as Lambda code)
 Mappings:
-  Region2S3WebsiteSuffix:
-    us-east-1:
-      Suffix: .s3-website-us-east-1.amazonaws.com
-    us-west-1:
-      Suffix: .s3-website-us-west-1.amazonaws.com
-    us-west-2:
-      Suffix: .s3-website-us-west-2.amazonaws.com
-    eu-west-1:
-      Suffix: .s3-website-eu-west-1.amazonaws.com
+  Region2S3WebsiteEndpoint:
     ap-northeast-1:
-      Suffix: .s3-website-ap-northeast-1.amazonaws.com
+      S3hostedzoneID: "Z2M4EHUR26P7ZW"
+      S3WebsiteEndpoint: "s3-website-ap-northeast-1.amazonaws.com"
     ap-northeast-2:
-      Suffix: .s3-website-ap-northeast-2.amazonaws.com
-    ap-southeast-1:
-      Suffix: .s3-website-ap-southeast-1.amazonaws.com
-    ap-southeast-2:
-      Suffix: .s3-website-ap-southeast-2.amazonaws.com
+      S3hostedzoneID: "Z3W03O7B5YMIYP"
+      S3WebsiteEndpoint: "s3-website.ap-northeast-2.amazonaws.com"
     ap-south-1:
-      Suffix: .s3-website-ap-south-1.amazonaws.com
-    us-east-2:
-      Suffix: .s3-website-us-east-2.amazonaws.com
-    sa-east-1:
-      Suffix: .s3-website-sa-east-1.amazonaws.com
-    cn-north-1:
-      Suffix: .s3-website.cn-north-1.amazonaws.com.cn
+      S3hostedzoneID: "Z11RGJOFQNVJUP"
+      S3WebsiteEndpoint: "s3-website.ap-south-1.amazonaws.com"
+    ap-southeast-1:
+      S3hostedzoneID: "Z3O0J2DXBE1FTB"
+      S3WebsiteEndpoint: "s3-website-ap-southeast-1.amazonaws.com"
+    ap-southeast-2:
+      S3hostedzoneID: "Z1WCIGYICN2BYD"
+      S3WebsiteEndpoint: "s3-website-ap-southeast-2.amazonaws.com"
     eu-central-1:
-      Suffix: .s3-website.eu-central-1.amazonaws.com
+      S3hostedzoneID: "Z21DNDUVLTQW6Q"
+      S3WebsiteEndpoint: "s3-website.eu-central-1.amazonaws.com"
+    eu-west-1:
+      S3hostedzoneID: "Z1BKCTXD74EZPE"
+      S3WebsiteEndpoint: "s3-website-eu-west-1.amazonaws.com"
+    sa-east-1:
+      S3hostedzoneID: "Z7KQH4QJS55SO"
+      S3WebsiteEndpoint: "s3-website-sa-east-1.amazonaws.com"
+    us-east-1:
+      S3hostedzoneID: "Z3AQBSTGFYJSTF"
+      S3WebsiteEndpoint: "s3-website-us-east-1.amazonaws.com"
+    us-east-2:
+      S3hostedzoneID: "Z2O1EMRO9K5GLX"
+      S3WebsiteEndpoint: "s3-website.us-east-2.amazonaws.com"
+    us-west-1:
+      S3hostedzoneID: "Z2F56UZL2M1ACD"
+      S3WebsiteEndpoint: "s3-website-us-west-1.amazonaws.com"
+    us-west-2:
+      S3hostedzoneID: "Z3BJ6K6RIION7M"
+      S3WebsiteEndpoint: "s3-website-us-west-2.amazonaws.com"
 Outputs:
   GitHubWebHookId:
     Value: !Ref GitHubWebHook
@@ -630,12 +640,11 @@ Outputs:
   MasterBucketURL:
     Value: !Join
       - ''
-      - - 'https://'
-        - !Ref WebsiteMasterBucket
+      - - !Sub 'https://${WebsiteMasterBucket}.'
         - !FindInMap
-          - Region2S3WebsiteSuffix
+          - Region2S3WebsiteEndpoint
           - !Ref 'AWS::Region'
-          - Suffix
+          - S3WebsiteEndpoint
     Description: URL to S3 bucket that holds the website of the master branch
   WebsiteDNSName:
     Value: !Ref WebsiteDNSName
