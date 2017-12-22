@@ -586,33 +586,42 @@ Parameters:
       artifacts (such as Lambda code)
 Mappings:
   Region2S3WebsiteSuffix:
-    us-east-1:
-      Suffix: .s3-website-us-east-1.amazonaws.com
-    us-west-1:
-      Suffix: .s3-website-us-west-1.amazonaws.com
-    us-west-2:
-      Suffix: .s3-website-us-west-2.amazonaws.com
-    eu-west-1:
-      Suffix: .s3-website-eu-west-1.amazonaws.com
     ap-northeast-1:
-      Suffix: .s3-website-ap-northeast-1.amazonaws.com
+      S3hostedzoneID: "Z2M4EHUR26P7ZW"
+      websiteendpoint: "s3-website-ap-northeast-1.amazonaws.com"
     ap-northeast-2:
-      Suffix: .s3-website-ap-northeast-2.amazonaws.com
-    ap-southeast-1:
-      Suffix: .s3-website-ap-southeast-1.amazonaws.com
-    ap-southeast-2:
-      Suffix: .s3-website-ap-southeast-2.amazonaws.com
+      S3hostedzoneID: "Z3W03O7B5YMIYP"
+      websiteendpoint: "s3-website.ap-northeast-2.amazonaws.com"
     ap-south-1:
-      Suffix: .s3-website-ap-south-1.amazonaws.com
-    us-east-2:
-      Suffix: .s3-website-us-east-2.amazonaws.com
-    sa-east-1:
-      Suffix: .s3-website-sa-east-1.amazonaws.com
-    cn-north-1:
-      Suffix: .s3-website.cn-north-1.amazonaws.com.cn
+      S3hostedzoneID: "Z11RGJOFQNVJUP"
+      websiteendpoint: "s3-website.ap-south-1.amazonaws.com"
+    ap-southeast-1:
+      S3hostedzoneID: "Z3O0J2DXBE1FTB"
+      websiteendpoint: "s3-website-ap-southeast-1.amazonaws.com"
+    ap-southeast-2:
+      S3hostedzoneID: "Z1WCIGYICN2BYD"
+      websiteendpoint: "s3-website-ap-southeast-2.amazonaws.com"
     eu-central-1:
-      Suffix: .s3-website.eu-central-1.amazonaws.com
-Outputs:
+      S3hostedzoneID: "Z21DNDUVLTQW6Q"
+      websiteendpoint: "s3-website.eu-central-1.amazonaws.com"
+    eu-west-1:
+      S3hostedzoneID: "Z1BKCTXD74EZPE"
+      websiteendpoint: "s3-website-eu-west-1.amazonaws.com"
+    sa-east-1:
+      S3hostedzoneID: "Z7KQH4QJS55SO"
+      websiteendpoint: "s3-website-sa-east-1.amazonaws.com"
+    us-east-1:
+      S3hostedzoneID: "Z3AQBSTGFYJSTF"
+      websiteendpoint: "s3-website-us-east-1.amazonaws.com"
+    us-east-2:
+      S3hostedzoneID: "Z2O1EMRO9K5GLX"
+      websiteendpoint: "s3-website.us-east-2.amazonaws.com"
+    us-west-1:
+      S3hostedzoneID: "Z2F56UZL2M1ACD"
+      websiteendpoint: "s3-website-us-west-1.amazonaws.com"
+    us-west-2:
+      S3hostedzoneID: "Z3BJ6K6RIION7M"
+      websiteendpoint: "s3-website-us-west-2.amazonaws.com"Outputs:
   GitHubWebHookId:
     Value: !Ref GitHubWebHook
     Description: SNS topic to receive messages from GitHub pre-build integration
@@ -630,7 +639,7 @@ Outputs:
   MasterBucketURL:
     Value: !Join
       - ''
-      - - 'https://'
+      - - 'http://'
         - !Ref WebsiteMasterBucket
         - !FindInMap
           - Region2S3WebsiteSuffix
@@ -642,3 +651,6 @@ Outputs:
     Description: DNS name of the developer documentation
     Export:
       Name: !Sub '${AWS::StackName}-WebsiteDNSName'
+  WebsiteDistributionURL:
+    Value: !Sub 'https://${WebsiteMasterDistribution.DomainName}/'
+    Description: Direct URL to the master branch CloudFront distribution
