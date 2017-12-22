@@ -262,6 +262,7 @@ Resources:
                   - 's3:GetObject'
                   - 's3:PutObject'
                   - 's3:GetObjectVersion'
+                  - 's3:PutBucketWebsite'
                 Resource: '*'
                 Effect: Allow
               - Action: 'sns:Publish'
