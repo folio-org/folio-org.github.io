@@ -43,6 +43,9 @@ $grey-color-light:				lighten($grey-color, 40%);
 $grey-color-light-light:		lighten($grey-color-light, 40%);
 $grey-color-dark:				darken($grey-color, 25%);
 
+// Since Liquid is not available, it is necessary to redefine the baseurl from the _config.yml file here
+//
+$baseurl:						"/classic-jekyll-theme"; // eg: "/classic" a leading '/' is important.
 
 // *********************************************************************************************************************
 // General color and background settings
@@ -54,7 +57,7 @@ $theme-color:							$f-color-purple;
 // Background color, picture or pattern.
 //
 // See http://www.w3schools.com/cssref/css3_pr_background.asp for a full description.
-// Example: ...-background: url("/assets/img/bckgnd.png") repeat
+// Example: ...-background: url("#{$baseurl}/assets/img/bckgnd.png") repeat
 //
 // The body panel encompasses the entire DOM.
 // CSS property: Background.
@@ -86,9 +89,9 @@ $add-to-banner-area-height-widest:		27px;
 //
 // Note: This prevents an anchored link from scrolling to a position behind the banner-area.
 //
-$anchor-top-fixed-offset-narrow:		200px;
-$anchor-top-fixed-offset-medium:		200px;
-$anchor-top-fixed-offset-widest:		200px;
+$anchor-top-fixed-offset-narrow:		48px;
+$anchor-top-fixed-offset-medium:		68px;
+$anchor-top-fixed-offset-widest:		68px;
 
 // *********************************************************************************************************************
 // Banner
@@ -179,12 +182,12 @@ $banner-icon-padding-widest:			0px;
 // The url for the icon to be loaded into the div.
 // CSS property: content
 //
-// Example: $banner-icon-url-...: url("/assets/img/wide-icon.png");
+// Example: $banner-icon-url-...: url("#{$baseurl}/assets/img/wide-icon.png");
 // Set to 'none' if there is no banner icon.
 //
-$banner-icon-url-narrow:				url("/assets/img/cog-wheels-60x43.png");
-$banner-icon-url-medium:				url("/assets/img/cog-wheels-120x68.png");
-$banner-icon-url-widest:				url("/assets/img/cog-wheels-240x135.png");
+$banner-icon-url-narrow:				url("#{$baseurl}/assets/img/cog-wheels-60x43.png");
+$banner-icon-url-medium:				url("#{$baseurl}/assets/img/cog-wheels-120x68.png");
+$banner-icon-url-widest:				url("#{$baseurl}/assets/img/cog-wheels-240x135.png");
 
 // The background for the icon div.
 // CSS property: background
@@ -757,7 +760,7 @@ $menubar-subsubitem-separator-line-color-narrow:	$menubar-background-narrow;
 // CSS property: content
 //
 $menubar-icon-url-medium:				none;
-$menubar-icon-url-widest:				none; //url("/assets/img/test-pattern-55.png");
+$menubar-icon-url-widest:				none; //url("#{$baseurl}/assets/img/test-pattern-55.png");
 
 // Height of the icon
 // CSS property: height
@@ -816,29 +819,29 @@ $tertiary-column-background-narrow:		none;
 $tertiary-column-background-medium:		none;
 $tertiary-column-background-widest:		none;
 
-// Color for the dividers between the columns
+// Color for the separator between the columns
 // CSS property: border-right (but only the color part)
 //
-$column-divider-color-medium:			lighten($grey-color, 30%);
-$column-divider-color-widest:			lighten($grey-color, 30%);
+$column-separator-color-medium:			lighten($grey-color, 30%);
+$column-separator-color-widest:			lighten($grey-color, 30%);
 
-// Enable/disable display of the column dividers
+// Enable/disable display of the column separator
 //
 // Values: true | false
 //
-$column-divider-display:				true;
+$column-separator-display:				true;
 
-// Set the space between the top of the divider and the menubar-bottom-separator.
-// The background for the divider is the background of the column panel.
+// Set the space between the top of the separator and the menubar-bottom-separator.
+// The background for the separator is the background of the column panel.
 // CSS property: margin-top
 // 
-$column-divider-top-spacing:			$vspacing-unit;
+$column-separator-top-spacing:			$vspacing-unit;
 
-// Set the space between the bottom of the divider and the footer divider.
-// The background for the divider is the background of the column panel.
+// Set the space between the bottom of the separator and the footer separator.
+// The background for the separator is the background of the column panel.
 // CSS property: margin-bottom
 //
-$column-divider-bottom-spacing:         $vspacing-unit;
+$column-separator-bottom-spacing:		$vspacing-unit;
 
 
 // *********************************************************************************************************************
@@ -852,18 +855,18 @@ $footer-background-narrow:				none;
 $footer-background-medium:				none;
 $footer-background-widest:				none;
 
-// The footer divider is placed between the columns panel and the footer panel.
+// The footer separator is placed between the columns panel and the footer panel.
 // CSS property: border-color
 //
-$footer-divider-color-narrow:			$theme-color;
-$footer-divider-color-medium:			$theme-color;
-$footer-divider-color-widest:			$theme-color;
+$footer-separator-color-narrow:			$theme-color;
+$footer-separator-color-medium:			$theme-color;
+$footer-separator-color-widest:			$theme-color;
 
-// Enables or disables display of the footer divider
+// Enables or disables display of the footer separator
 //
 // Values: true | false
 //
-$footer-divider-display:				true;
+$footer-separator-display:				true;
 
 // The font to be used for the footer text.
 // CSS property: font
@@ -884,16 +887,16 @@ $footer-color-widest:					black;
 // Widget separators
 // ---------------------------------------------------------------------------------------------------------------------
 //
-// The color for the divider.
+// The color for the separator.
 // CSS property: border-color
 //
-$widget-divider-color:      			$theme-color;
+$widget-separator-color:      			$theme-color;
 
-// Enables or disables display of the widget dividers
+// Enables or disables display of the widget separator
 //
 // Values: true | false
 //
-$widget-divider-display:				true;
+$widget-separator-display:				true;
 
 
 // *********************************************************************************************************************
