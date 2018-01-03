@@ -25,6 +25,7 @@ The Stripes/UI/backend modules might be slightly different (e.g. CHANGELOG.md = 
 Add LICENSE and CONTRIBUTING.md and README.md files.
 
 Ensure that the copyright and license statement is near the top of the README.
+Use the initial year of creation for the date.
 
 Ensure that any package.json and pom.xml etc. type of configuration file has the appropriate "licence" elements.
 
