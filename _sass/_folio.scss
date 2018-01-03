@@ -68,3 +68,10 @@ nav.folio {
     z-index: 9;
   }
 }
+/* tocbot */
+#js-toc-wrapper {
+  background-color: $f-color-lighter-grey;
+}
+a.is-active-link::before {
+  background-color: $f-color-orange;
+}
