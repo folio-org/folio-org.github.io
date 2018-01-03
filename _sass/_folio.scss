@@ -72,6 +72,12 @@ nav.folio {
 #js-toc-wrapper {
   background-color: $f-color-lighter-grey;
 }
+li.toc-list-item {
+  width: 190px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 a.is-active-link::before {
   background-color: $f-color-orange;
 }
