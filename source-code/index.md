@@ -137,17 +137,17 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-notify](https://github.com/folio-org/mod-notify)
   -- Notifications to the users.
 
+- [mod-codex-mux](https://github.com/folio-org/mod-codex-mux)
+  -- Codex Multiplexer.
+
+- [mod-codex-mock](https://github.com/folio-org/mod-codex-mock)
+  -- Codex mock module - for testing and development.
+
 - [mod-codex-ekb](https://github.com/folio-org/mod-codex-ekb)
   -- Codex wrapper for the EBSCO knowledge base.
 
 - [mod-codex-inventory](https://github.com/folio-org/mod-codex-inventory)
   -- Codex wrapper for local inventory.
-
-- [mod-codex-mock](https://github.com/folio-org/mod-codex-mock)
-  -- Codex mock module - for testing and development.
-
-- [mod-codex-mux](https://github.com/folio-org/mod-codex-mux)
-  -- Codex Multiplexer.
 
 - [mod-orders](https://github.com/folio-org/mod-orders)
   -- Persistent storage of order data.
