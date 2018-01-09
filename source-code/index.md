@@ -128,20 +128,26 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-graphql](https://github.com/folio-org/mod-graphql)
   -- Executing GraphQL queries.
 
+- [mod-kb-ebsco](https://github.com/folio-org/mod-kb-ebsco)
+  -- Broker communication with the EBSCO knowledge base.
+
 - [mod-notes](https://github.com/folio-org/mod-notes)
   -- Notes on all types of objects.
 
 - [mod-notify](https://github.com/folio-org/mod-notify)
   -- Notifications to the users.
 
-- [mod-codex-inventory](https://github.com/folio-org/mod-codex-inventory)
-  -- Codex wrapper for local inventory.
+- [mod-codex-mux](https://github.com/folio-org/mod-codex-mux)
+  -- Codex Multiplexer.
 
 - [mod-codex-mock](https://github.com/folio-org/mod-codex-mock)
   -- Codex mock module - for testing and development.
 
-- [mod-codex-mux](https://github.com/folio-org/mod-codex-mux)
-  -- Codex Multiplexer.
+- [mod-codex-ekb](https://github.com/folio-org/mod-codex-ekb)
+  -- Codex wrapper for the EBSCO knowledge base.
+
+- [mod-codex-inventory](https://github.com/folio-org/mod-codex-inventory)
+  -- Codex wrapper for local inventory.
 
 - [mod-orders](https://github.com/folio-org/mod-orders)
   -- Persistent storage of order data.
@@ -214,6 +220,9 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-circulation](https://github.com/folio-org/ui-circulation)
   -- Stripes UI module: Circulation.
+
+- [ui-eholdings](https://github.com/folio-org/ui-eholdings)
+  -- Stripes UI module: E-holdings.
 
 - [ui-search](https://github.com/folio-org/ui-search)
   -- Stripes UI module: searching, sorting, filtering and viewing records from the FOLIO Codex, an aggregation of bibliographic metadata from multiple sources.
