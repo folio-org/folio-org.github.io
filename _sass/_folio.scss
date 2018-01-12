@@ -77,6 +77,7 @@ li.toc-list-item {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 0.9em;
 }
 a.is-active-link::before {
   background-color: $f-color-orange;
