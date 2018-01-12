@@ -30,9 +30,11 @@ th {
   background-color: $f-color-lighter-grey;
 }
 
+/*
 :target {
   border-left: 5px solid $f-color-orange;
 }
+*/
 tr:target td:first-child {
   border-left: 5px solid $f-color-orange;
 }
@@ -81,4 +83,7 @@ li.toc-list-item {
 }
 a.is-active-link::before {
   background-color: $f-color-orange;
+}
+h1, h2, h3 {
+  outline: none;
 }

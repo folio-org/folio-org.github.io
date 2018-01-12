@@ -4,8 +4,10 @@
     positionFixedSelector: '#js-toc-wrapper'
   });
 $(function() {
+  $('#js-toc-wrapper').css({ "margin-top": "10em" });
   if ( $('#js-toc-wrapper ul:first li').length > 0 ) {
     $('#js-toc-wrapper ul:first').prepend('<li class="toc-list-item"><a class="toc-link" href="">Top</a></li>');
   }
+  $('h1, h2, h3').addClass('anchor');
 });
 </script>
