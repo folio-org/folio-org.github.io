@@ -89,7 +89,7 @@ banner-position: top-fixed
 # Note 2: When the drop-down menus are not used, any items in the menubar without a linked page will become useless.
 # Note 3: Setting to 'no' will result in slower compilation. If possible, setting this to 'yes' during content development will help speed up the workflow.
 #
-drop-down-menu: yes 
+drop-down-menu: no 
 
 # Controls the generation of the categories menu entry in the menu bar if the drop-down-menu option is set to 'yes'. Has no impact on the categories widget.
 # Values: yes | no
