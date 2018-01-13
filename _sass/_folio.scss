@@ -29,11 +29,21 @@ th, td {
 th {
   background-color: $f-color-lighter-grey;
 }
+table.api {
+  table-layout: fixed;
+  width: 35em;
+}
+table.api .label {
+  width: 44%;
+}
+table.api .raml {
+  width: 35%;
+}
+table.api .view {
+  width: 11%;
+}
 
 :target {
-  border-left: 5px solid $f-color-orange;
-}
-tr:target td:first-child {
   border-left: 5px solid $f-color-orange;
 }
 
