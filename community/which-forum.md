@@ -5,22 +5,8 @@ permalink: /community/which-forum/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Contributing
-menuSubs:
-- title: Which forum to use
-  index: 3
-  sub:
-  - title: General notes
-    anchorId: general-notes
-  - title: Discuss
-    anchorId: discuss
-  - title: Wiki
-    anchorId: wiki
-  - title: Issue tracker
-    anchorId: issue-tracker
-  - title: GitHub
-    anchorId: github
-  - title: Slack
-    anchorId: slack
+menuSubTitle: Which forum to use
+menuSubIndex: 3
 ---
 
 Developers need to efficiently discuss various topics such as issues,

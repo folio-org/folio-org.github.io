@@ -8,15 +8,6 @@ menuTopTitle: Community
 menuTopIndex: 6
 menuSubTitle: Overview
 menuSubIndex: 1
-menuSubs:
-- title: Roadmap
-  anchorId: roadmap
-- title: Collaboration tools
-  anchorId: collaboration-tools
-- title: Community representatives
-  anchorId: community-representatives
-- title: Engineering teams
-  anchorId: engineering-teams
 ---
 
 ## Roadmap

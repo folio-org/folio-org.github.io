@@ -5,54 +5,9 @@ permalink: /community/contrib-code/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Contributing
-menuSubs:
-- title: Guidelines for Contributing Code
-  index: 2
-  sub:
-  - title: License
-    anchorId: license
-  - title: Issue tracker
-    anchorId: issue-tracker
-  - title: Git and branches
-    anchorId: git-and-branches
-  - title: Automation
-    anchorId: automation
-  - title: Releasing
-    anchorId: releasing
-  - title: Version numbers
-    anchorId: version-numbers
-  - title: Coding style
-    anchorId: coding-style
-  - title: Tests
-    anchorId: tests
-  - title: RAML
-    anchorId: raml
+menuSubTitle: Guidelines for Contributing Code
+menuSubIndex: 2
 ---
-
-<!-- ../../okapi/doc/md2toc -l 2 -h 3 contrib-code.md -->
-* [License](#license)
-* [Issue tracker](#issue-tracker)
-* [Git and branches](#git-and-branches)
-    * [Commit messages](#commit-messages)
-    * [Feature branches](#feature-branches)
-    * [Requesting a merge](#requesting-a-merge)
-    * [Contributor License Agreement](#contributor-license-agreement)
-    * [Merging pull requests](#merging-pull-requests)
-* [Automation](#automation)
-* [Releasing](#releasing)
-* [Version numbers](#version-numbers)
-    * [API/interface versions](#apiinterface-versions)
-    * [Implementation versions](#implementation-versions)
-    * [Module implements one interface](#module-implements-one-interface)
-    * [Module implements multiple interfaces](#module-implements-multiple-interfaces)
-    * [Trailing zero for module/non-module versions](#trailing-zero-for-modulenon-module-versions)
-* [Coding style](#coding-style)
-    * [Style conventions](#style-conventions)
-    * [Code analysis and linting](#code-analysis-and-linting)
-    * [Consistent whitespace](#consistent-whitespace)
-    * [No license header](#no-license-header)
-* [Tests](#tests)
-* [RAML](#raml)
 
 ## License
 

@@ -8,19 +8,6 @@ menuTopTitle: Source
 menuTopIndex: 3
 menuSubTitle: Overview
 menuSubIndex: 1
-menuSubs:
--
-  title: Server-side
-  index: 2
-  anchorId: server-side
--
-  title: Client-side
-  index: 3
-  anchorId: client-side
--
-  title: Other projects
-  index: 4
-  anchorId: other-projects
 ---
 
 The FOLIO platform consists of both server-side and client-side components, and
