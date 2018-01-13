@@ -21,7 +21,7 @@ access the functionality provided by these important core modules.
 * view-2: Uses one-page view to everything.
 
 {% assign urlAws = "https://s3.amazonaws.com/foliodocs/api" %}
-{% assign urlGithub= "https://github.com/folio-org" %}
+{% assign urlGithub = "https://github.com/folio-org" %}
 
 {% for repo in site.data.api %}
 <h2 id="{{ repo[0] }}"> {{ repo[0] }} </h2>
@@ -35,8 +35,8 @@ access the functionality provided by these important core modules.
     </tr>
   </thead>
   <tbody>
-  {% for docset in repo[1] %}
-    {% for doc in docset.files %}
+  {%- for docset in repo[1] -%}
+    {%- for doc in docset.files -%}
       {% capture urlDoc1 %}{{ urlAws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}{{ doc }}.html{% endcapture %}
       {% capture urlDoc2 %}{{ urlAws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}2/{{ doc }}.html{% endcapture %}
       {% capture urlRaml %}{{ urlGithub }}/{{ repo[0] }}/blob/master/{{ docset.directory }}/{{ doc }}.raml{% endcapture %}
@@ -46,8 +46,8 @@ access the functionality provided by these important core modules.
       <td> <a href="{{ urlDoc1 }}">view-1</a> </td>
       <td> <a href="{{ urlDoc2 }}">view-2</a> </td>
     </tr>
-    {% endfor %}
-  {% endfor %}
+    {%- endfor -%}
+  {%- endfor %}
   </tbody>
 </table>
 {% endfor %}
