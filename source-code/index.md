@@ -149,6 +149,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-codex-inventory](https://github.com/folio-org/mod-codex-inventory)
   -- Codex wrapper for local inventory.
 
+- [mod-cataloging](https://github.com/atcult/mod-cataloging)
+  -- FOLIO metadata management / cataloging module.
+
 - [mod-orders](https://github.com/folio-org/mod-orders)
   -- Persistent storage of order data.
 
