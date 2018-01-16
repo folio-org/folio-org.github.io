@@ -25,6 +25,87 @@ plugins:
 
 exclude: [bin, Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, tmp, vendor, work]
 
+defaults:
+- scope:
+    path: _guides
+    type: guides
+  values:
+    layout: guides
+    sectionid: guides
+    
+- scope:
+    path: _getstarted
+    type: getstarted
+  values:
+    layout: getstarted
+    sectionid: getstarted 
+    
+- scope:
+    path: _reference
+    type: reference
+  values:
+    layout: reference
+    sectionid: reference
+
+- scope:
+    path: _source
+    type: source
+  values:
+    layout: source
+    sectionid: source
+
+- scope:
+    path: _download
+    type: download
+  values:
+    layout: download
+    sectionid: download  
+    
+- scope:
+    path: _tools
+    type: tools
+  values:
+    layout: tools
+    sectionid: tools
+
+- scope:
+    path: _guidelines
+    type: guidelines
+  values:
+    layout: guidelines
+    sectionid: guidelines
+    
+- scope:
+    path: _tutorials
+    type: tutorials
+  values:
+    layout: tutorials
+    sectionid: tutorials 
+    
 collections:
   posts:
     permalink: /news/:year/:month/:day/:title/
+  guides:
+    permalink: /guides/:path/
+    output: true  
+  getstarted:
+    permalink: /getstarted/:path/
+    output: true   
+  source:
+    permalink: /source/:path/
+    output: true  
+  download:
+    permalink: /download/:path/
+    output: true    
+  reference:
+    permalink: /reference/:path/
+    output: true 
+  tools:
+    permalink: /tools/:path/
+    output: true    
+  guidelines:
+    permalink: /guidelines/:path/
+    output: true  
+  tutorials:
+    permalink: /tutorials/:path/
+    output: true   

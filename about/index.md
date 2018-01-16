@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: defaultintro
 title: About FOLIO
 permalink: /about/
 ---

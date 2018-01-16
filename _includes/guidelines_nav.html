@@ -1,0 +1,19 @@
+<ul id=menu>
+<li>
+ <ul id=submenu>
+ <li><p style="padding-left: 10px; font-weight: 400; color: #38307f; font-size: 15px; text-transform: none;">Guidelines<p></li>
+{% for section in site.data.guidelines %}
+        {% for item in section.guidelines %}
+          {% assign item_url = item | prepend:"/guidelines/" | append:"/" %}
+          {% assign p = site.guidelines | where:"url", item_url | first %}
+		  {% if item_url == page.url %}
+          <div id="toc">
+          </div>		  
+		  {% else %}
+          <li><a id=subsubmenu href="{{ item_url | prepend: site.baseurl }}">{{ section.title }}</a></li>
+		  {% endif %}		  
+        {% endfor %}
+{% endfor %}
+</ul>
+</li>
+</ul>

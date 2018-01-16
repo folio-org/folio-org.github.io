@@ -1,0 +1,15 @@
+- title: Community Guidelines
+  guidelines:
+  - communityguidelines
+- title: License
+  guidelines:
+  - cla-process 
+- title: Contributing Code
+  guidelines:
+  - contrib-code
+- title: Versioning 
+  guidelines: 
+  - versioning
+- title: Coding Conventions
+  guidelines:
+  - codingconventions

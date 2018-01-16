@@ -15,7 +15,7 @@
   {% if page.excerpt %}{% assign description = page.excerpt %}{% else %}{% assign description = site.description %}{% endif %}
 
   <meta name="description" content="{{ description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500" type="text/css">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="icon" href="{{ "/images/FOLIO_fav.png" }}">

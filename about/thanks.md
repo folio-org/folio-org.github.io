@@ -1,10 +1,12 @@
 ---
-layout: page
+layout: defaultintro
 title: Thanks from the FOLIO Project
 permalink: /about/thanks/
 ---
 
-We appreciate the many individuals and organizations forming the [community](/community) that contributes to FOLIO.
+# Thanks from the FOLIO Project
+
+We appreciate the many individuals and organizations forming the [community](/guidelines/communityguidelines) that contributes to FOLIO.
 We also thank the many other open source projects that we depend upon.
 
 ## Supporting Software and Service Attribution

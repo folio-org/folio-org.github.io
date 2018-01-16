@@ -1,19 +1,9 @@
 ---
-layout: page
+layout: defaultintro
 title: Other search and report facilities
-permalink: /search-other/
-menuInclude: yes
-menuLink: yes
-menuTopTitle: Search
-menuTopIndex: 100
-menuSubTitle: "Search other"
-menuSubIndex: 2
-menuSubs:
--
- title: Search dev.folio.org
- index: 1
- url: /search/
 ---
+
+# Other Search and Report Facilities
 
 Until we have better search and reporting facilities for remote resources, please login and use their search facilities.
 

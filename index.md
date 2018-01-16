@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: defaultintro
 title: Welcome to FOLIO software development
-permalink: /
-secondary-column: none
 ---
+
+# Welcome to FOLIO software development
+
 
 This is the home for developers building [FOLIO, a new open source library
 system](https://www.folio.org/).
@@ -27,7 +28,7 @@ nascent, we expect it to evolve quickly in the coming weeks.
 
 We hope you will join FOLIO and help us shape the future of libraries!  We
 invite you to provide feedback and explore ideas with us.  Join the
-[community and conversation](community) over at [folio.org](https://www.folio.org/)
+[community and conversation](guidelines/communityguidelines) over at [folio.org](https://www.folio.org/)
 
 The FOLIO Project is [grateful](about/thanks) for the support of contributors,
 other open source projects, and commercial providers.
