@@ -23,8 +23,6 @@ menuSubs:
   anchorId: fundamental-documentation
 - title: Development tips
   anchorId: development-tips
-- title: Tutorials
-  anchorId: tutorials
 - title: Development management
   anchorId: development-management
 - title: Other topics
