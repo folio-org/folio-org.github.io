@@ -2,6 +2,9 @@
 layout: page
 title: Release procedures
 permalink: /doc/release-procedures/
+menuInclude: no
+menuLink: no
+menuTopTitle: Documentation
 ---
 
 This document summarises the release procedures for FOLIO projects.
