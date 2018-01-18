@@ -1,19 +1,13 @@
-<ul id=menu>
-<li>
- <ul id=submenu>
- <li><p style="padding-left: 10px; font-weight: 400; color: #38307f; font-size: 15px; text-transform: none;">Reference<p></li>
 {% for section in site.data.reference %}
         {% for item in section.reference %}
           {% assign item_url = item | prepend:"/reference/" | append:"/" %}
           {% assign p = site.reference | where:"url", item_url | first %}
-		  {% if item_url == page.url %}
-          <div id="toc">
-          </div>		  
+		  {% if item_url == page.url %}	
+		  <div id="js-toc-fixed" class="toc js-toc">
+	      </nav>
+		  </div>			  
 		  {% else %}
           <li><a id=subsubmenu href="{{ item_url | prepend: site.baseurl }}">{{ section.title }}</a></li>
 		  {% endif %}		  
         {% endfor %}
 {% endfor %}
-</ul>
-</li>
-</ul>

@@ -4,9 +4,6 @@
 //Import bootstrap for styling
 @import "bootstrap";
 
-//Import bootstrap for styling
-@import "jquery.tocify";
-
 // Set the variables that we need to override.
 @import "folio-base";
 
@@ -89,13 +86,11 @@ body {
    h2 {
 	font-size: 1.45em;
     font-weight: 300;
-	padding-top: 10px;
   }
   
    h3 {
 	font-size: 1.25em;
     font-weight: 300;
-	padding-top: 18px;
   }  
 }
 

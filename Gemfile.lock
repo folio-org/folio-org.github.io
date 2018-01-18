@@ -8,10 +8,6 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    classic-jekyll-theme (2.0.0)
-      jekyll (~> 3.5, >= 3.5.1)
-      jekyll-data (>= 0.4, < 2.0)
-      jekyll-feed (~> 0.8)
     colorator (1.1.0)
     colorize (0.8.1)
     concurrent-ruby (1.0.5)
@@ -86,7 +82,6 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport (= 5.1.4)
-  classic-jekyll-theme (= 2.0.0)
   colorize (= 0.8.1)
   ethon (= 0.10.1)
   jekyll (~> 3.6.2)

@@ -7,7 +7,6 @@ gem "nokogiri", "1.8.1"
 gem "colorize", "0.8.1"
 gem "ethon", "0.10.1"
 gem "jekyll-data", "1.0.0"
-gem "classic-jekyll-theme", "2.0.0"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"

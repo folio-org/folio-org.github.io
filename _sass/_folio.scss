@@ -115,19 +115,107 @@ tr:target td:first-child {
     vertical-align: unset;
     border-radius: unset;
 }
-	
-@media screen and (min-width: 992px) {
-.tocify {
-   /* position: fixed; */
-}
+
+// color for highlighting toc
+a.is-active-link::before {
+    background-color: #da6a2d;
 }
 
+// get rid of clickable outline
+.page-content h2, h1, h3 {
+    outline: none;
+}
+
+// when using top-fixed banner positioning
+// so text does not scroll underneath
+//
+.anchor {
+ padding-top: 60px; 
+ margin-top: -60px;
+}
+	
+@media screen and (max-width: 992px) {
+    #menu {
+	    position: static !important;
+//        background-color: #fff;
+//		margin-top: 50px;
+//		z-index: 1200;
+    }
+}
+	
+#menu {
+      top: 130px;
+	  width: 250px;
+	  position: fixed;
+	  list-style-type: none;
+	//  padding-left: 0px;
+	//  padding-right: 5px;
+	//  text-transform: uppercase;
+	  
+	  a {
+        padding-left: 10px;
+      }
+	  
+	  a:hover {
+		text-decoration: none;	 	
+	  }
+}
+
+#submenu {
+position: fixed;
+ // list-style-type: none;
+ // padding-left: 0px;
+}
+
+#subsubmenu {
+//       padding-left: 10px;
+//	   color: #333333;
+//	   font-weight: 400;
+//	   display:block;
+//	   width: 250px;
+//	   line-height: 27px;
+}	
+	
+	
+// Large Screen	
+@media screen and (min-width: 992px) {
+    .tocify {
+             /* position: fixed; */
+    }
+
+    // add top margin when scrolling the menu
+    .is-position-fixed {
+ //        top: 100px !important;
+    }
+}
+
+// Medium Screen
+@media screen and (max-width: 992px) and (min-width: 767px)  {
+	#js-toc-fixed {
+       background-color: #f2f2f2;
+	   z-index: 30;
+	}
+	
+   .is-position-fixed {
+       top: 150px !important;
+    }	
+}
+
+// Small Screen
 @media (max-width: 767px) {
     #toc {
         position: relative;
         width: 100%;
         margin: 0px 0px 20px 0px;
     }
+	#js-toc-fixed {
+    background-color: #f2f2f2;
+	z-index: 30;
+	}
+	
+   .is-position-fixed {
+       top: 150px !important;
+    }	
 }
 
 

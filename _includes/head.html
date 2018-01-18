@@ -17,12 +17,14 @@
   <meta name="description" content="{{ description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500" type="text/css">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.0.1/tocbot.css"> 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="icon" href="{{ "/images/FOLIO_fav.png" }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   
   <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
-  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.0.1/tocbot.min.js"></script>
+	
   <!-- Include google analytics for production build and if necessary -->
   {% if jekyll.environment == 'production' and site.google_analytics %}
 	{% include analytics.html %}
@@ -34,6 +36,7 @@
 	  {% include widgets/cookie-consent.html %}
     {% endif %}
   {% endif %}
+
 
 </head>
 

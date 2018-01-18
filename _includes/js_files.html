@@ -1,12 +1,20 @@
+
 <script>
   var baseurl = '{{ site.baseurl }}'
 </script>
 <!-- <script src="{{ "/js/jquery.js" | prepend: site.baseurl }} "></script> -->
-
+<!--
+<script>
+  tocbot.init({
+    headingSelector: 'h1, h2, h3',
+    positionFixedSelector: '#js-toc-fixed'
+  });
+  $(function() {
+     $('h1, h2, h3').addClass('anchor');
+  });
+</script>
+-->
 <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.js"></script>
-
-<script src="{{ "/js/jquery-ui.min.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/jquery.tocify.js" | prepend: site.baseurl }}"></script>
 
 <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }} "></script>
 
@@ -14,7 +22,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/js-search@1.4.2/dist/umd/js-search.min.js"></script>
 <script src="{{ "/js/search-dev.js" | prepend: site.baseurl }}"></script>
-
 
 
 
