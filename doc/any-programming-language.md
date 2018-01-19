@@ -2,9 +2,6 @@
 layout: page
 title: FOLIO uses any programming language
 permalink: /doc/any-programming-language/
-menuInclude: no
-menuLink: no
-menuTopTitle: Documentation
 ---
 
 The design of FOLIO architecture

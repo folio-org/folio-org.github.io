@@ -2,9 +2,6 @@
 layout: page
 title: Setup development environment
 permalink: /doc/setup/
-menuInclude: no
-menuLink: no
-menuTopTitle: Documentation
 ---
 
 A collection of tips to assist developers to configure their local workstation setup environment for FOLIO development.

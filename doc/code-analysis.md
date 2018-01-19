@@ -2,9 +2,6 @@
 layout: page
 title: Code analysis and linting facilities
 permalink: /doc/code-analysis/
-menuInclude: no
-menuLink: no
-menuTopTitle: Documentation
 ---
 
 All code repositories have linter and code-style analysis facilities implemented as part of their continuous integration. The pull requests will run the relevant static code analysis tools.

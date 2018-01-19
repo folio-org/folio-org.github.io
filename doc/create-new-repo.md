@@ -2,9 +2,6 @@
 layout: page
 title: Create a new FOLIO module and do initial setup
 permalink: /doc/create-new-repo/
-menuInclude: no
-menuLink: no
-menuTopTitle: Documentation
 ---
 
 These are notes to assist developers with creating a new FOLIO module as a repository.

@@ -2,9 +2,6 @@
 layout: page
 title: Build, test, and deployment infrastructure
 permalink: /doc/automation/
-menuInclude: no
-menuLink: no
-menuTopTitle: Documentation
 ---
 
 ## Overview

@@ -2,9 +2,6 @@
 layout: page
 title: Primer for back-end development
 permalink: /doc//primer-develop-backend/
-menuInclude: no
-menuLink: no
-menuTopTitle: Documentation
 ---
 
 Start with introduction to [core code](/doc/#core-code)
