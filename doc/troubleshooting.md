@@ -2,6 +2,8 @@
 layout: page
 title: General troubleshooting
 permalink: /doc/troubleshooting/
+menuInclude: no
+menuTopTitle: Documentation
 ---
 
 A collection of general tips to assist developers to conduct troubleshooting.
