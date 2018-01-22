@@ -1,19 +1,12 @@
-<ul id=menu>
-<li>
- <ul id=submenu>
- <li><p style="padding-left: 10px; font-weight: 400; color: #38307f; font-size: 15px; text-transform: none;">Tools<p></li>
 {% for section in site.data.tools %}
         {% for item in section.tools %}
           {% assign item_url = item | prepend:"/tools/" | append:"/" %}
           {% assign p = site.tools | where:"url", item_url | first %}
 		  {% if item_url == page.url %}
-          <div id="toc">
-          </div>		  
+		  <div id="js-toc-fixed" class="toc js-toc">
+		  </div>		  
 		  {% else %}
           <li><a id=subsubmenu href="{{ item_url | prepend: site.baseurl }}">{{ section.title }}</a></li>
 		  {% endif %}		  
         {% endfor %}
 {% endfor %}
-</ul>
-</li>
-</ul>

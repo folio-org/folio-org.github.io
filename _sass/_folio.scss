@@ -130,8 +130,8 @@ a.is-active-link::before {
 // so text does not scroll underneath
 //
 .anchor {
- padding-top: 60px; 
- margin-top: -60px;
+//   padding-top: 60px; 
+//   margin-top: -60px;
 }
 	
 @media screen and (max-width: 992px) {
@@ -175,7 +175,14 @@ position: fixed;
 //	   width: 250px;
 //	   line-height: 27px;
 }	
-	
+
+li.toc-list-item {
+    width: 190px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em;
+}	
 	
 // Large Screen	
 @media screen and (min-width: 992px) {
@@ -185,7 +192,7 @@ position: fixed;
 
     // add top margin when scrolling the menu
     .is-position-fixed {
- //        top: 100px !important;
+         top: 100px !important;
     }
 }
 
@@ -197,7 +204,7 @@ position: fixed;
 	}
 	
    .is-position-fixed {
-       top: 150px !important;
+//       top: 150px !important;
     }	
 }
 

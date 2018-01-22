@@ -1,10 +1,13 @@
 ---
 layout: getstarted
-title: Basics
+title: Getstarted
+heading: Getstarted
 permalink: /getstarted/gsinfo/
 ---
 
 # Basics
+
+## Introduction
 
 Get started with FOLIO development here.  Gain initial background and understanding.
 
@@ -38,6 +41,7 @@ Configurations for accessing.
 - Conduct [troubleshooting](/tools/setupdevenv/#troubleshooting).
 - [Code analysis and linting facilities](/guidelines/codingconventions/#code-analysis-and-linting) explains ESLint, SonarQube, other lint tools, and preparing for pull requests.
 - For Contextual Query Language (CQL) examples, see the [Glossary](/reference/refinfo/#folio-technologies-and-concepts), the FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/cql2pgjson-java), the [API docs](/reference/refinfo/#api-specifications), and the debug output for tests in each backend module.
+
 
 ## Tutorials
 

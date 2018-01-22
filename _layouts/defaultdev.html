@@ -4,13 +4,20 @@
 {% include head.html %}
 
 <body>
-
-    {% include topnav.html %}
-    {% include topnavdev.html %}
-    <main class="page-content" aria-label="Content">
+{% include testtopnav.html %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-8">
+<div class="container"><ul id="searchResults"></ul></div>
+        </div>
+    </div>
+</div>
+    <main>
         <div class="container">	
           <div class="row">
-             <div style="padding-left:10px" class="col-md-12">
+             <div style="padding-left:10px">
 		           {{ content }}
 			         <br>
              </div>

@@ -1,4 +1,4 @@
-<!-- Top Navigation Bar -->
+!-- Top Navigation Bar -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
          <!-- Toggle for navbar - the top navigation bar -->  	
@@ -52,6 +52,42 @@
 					   <img height="22" width="22" style="margin-top: 12px; margin-right: 0px; margin-left: 10px; margin-bottom: 10px;" src="{{site.baseurl}}/images/github.png">				
 					</li>						
                 </ul>
+				<br><br><br>
+				<hr style="background-color: #da6a2d; height: 2px">
+				<a class="navbar-brand" href=""><img height=18px src="{{site.baseurl}}/images/devlogo.png" ></a>
+				<ul class="nav navbar-nav navbar-right">
+					<li {% if page.sectionid=='getstarted' %} class="active" {% endif %}>
+					  <a href="{{ "/getstarted/gsinfo/" | prepend: site.baseurl }}">Getting Started</a>
+					</li>
+					<li {% if page.sectionid=='reference' %} class="active" {% endif %}>
+					  <a href="{{ "/reference/refinfo/" | prepend: site.baseurl }}">Reference</a>
+					</li>
+					<li {% if page.sectionid=='source' %} class="active" {% endif %}>
+					  <a href="{{ "/source/components/" | prepend: site.baseurl }}">Code</a>
+					</li>
+					<li {% if page.sectionid=='guides' %} class="active" {% endif %}>
+					  <a href="{{ "/guides/introduction/" | prepend: site.baseurl }}">Guides</a>
+					</li>					
+					<li {% if page.sectionid=='download' %} class="active" {% endif %}>
+					  <a href="{{ "/download/download-built-artifacts/" | prepend: site.baseurl }}">Download</a>
+					</li>	
+					<li {% if page.sectionid== 'tutorials' %} class="active" {% endif %}>
+					   <a href="{{ "/tutorials/foliodeveloperscurr/" | prepend: site.baseurl }}">Tutorials</a>
+					</li>				
+					<li {% if page.sectionid=='tools' %} class="active" {% endif %}>
+					  <a href="{{ "/tools/setupdevenv/" | prepend: site.baseurl }}">Tools</a>
+					</li>	
+					<li {% if page.sectionid=='guidelines' %} class="active" {% endif %}>
+					  <a href="{{ "/guidelines/communityguidelines/" | prepend: site.baseurl }}">Guidelines</a>
+					</li>
+					<li>
+                    <div class="form">
+					 <form action="get" id="searchDev">
+								<input id="searchInput" type="text" class="form-control" placeholder="Search...">
+					 </form>		
+                     </div>
+                     </li>					 
+				</ul>
         </div>
     </div>
 </nav>

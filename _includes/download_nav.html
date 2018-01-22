@@ -1,6 +1,3 @@
-<ul id=menu>
-<li>
- <ul id=submenu>
 {% for section in site.data.download %}
         {% for item in section.download %}
           {% assign item_url = item | prepend:"/download/" | append:"/" %}
@@ -13,6 +10,3 @@
 		  {% endif %}		  
         {% endfor %}
 {% endfor %}
-</ul>
-</li>
-</ul>
