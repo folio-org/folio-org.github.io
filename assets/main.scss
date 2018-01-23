@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  padding-top: 87px;
+  padding-top: 0px;
   margin-bottom: 46px;
   font-family: $base-font-family;
   font-size: 14px;
@@ -81,6 +81,7 @@ body {
     font-weight: 100;
     text-transform: uppercase;
 	letter-spacing: 0.01em;
+//	margin-top: -50px;
   }
   
    h2 {
@@ -107,7 +108,7 @@ body {
 
 ul, ol {
     margin-left: 0px;
-	padding-left: 15px;
+//	padding-left: 15px;
 }
 
 .btn {
@@ -155,4 +156,18 @@ a.list-group-item.active {
 :target {
     padding-top: 0px;
 	border-left: 0px;
+}
+
+// Padding/Styling for Responsive menu
+.navbar-collapse {
+    padding-left: 30px;
+}
+
+.navbar-nav {
+    margin-right: 0px;
+}
+
+// Pad the search in the nav bar to line it up
+.form {
+   padding-right: 30px;
 }

@@ -1,19 +1,23 @@
 ---
-layout: defaultdev
+layout: multipagedev
 ---
 
 <div class="container">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3">	
           {% include getstarted_nav.html %}
         </div>
 
         <div class="col-md-8">
+            <div class="container">
+             <p class="space">
+             <div class="container"><ul id="searchResults"></ul></div>
+            </div>		
             <div id="markdown-content-container"><div class="js-toc-content">{{ content }}</div></div>
             <br>
+			<div style="padding-bottom: 50em;"></div>
             <hr>
-          <!-- {% include section_getstarted_nav.html %} -->
+			<br>
         </div>
-
     </div>
 </div>

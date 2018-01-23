@@ -5,10 +5,15 @@ layout: defaultdev
 <div class="container">
     <div class="row">
         <div class="col-md-3">
+		 <p class="space">
           {% include reference_nav.html %}
         </div>
 
         <div class="col-md-8">
+		<div class="container">
+         <p class="space">
+			<div class="container"><ul id="searchResults"></ul></div>
+			</div>
             <div id="markdown-content-container"><div class="js-toc-content">{{ content }}</div></div>
             <br>
             <hr>

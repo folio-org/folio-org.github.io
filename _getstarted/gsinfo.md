@@ -5,9 +5,13 @@ heading: Getstarted
 permalink: /getstarted/gsinfo/
 ---
 
-# Basics
 
-## Introduction
+
+
+
+
+
+# Basics
 
 Get started with FOLIO development here.  Gain initial background and understanding.
 

@@ -4,20 +4,11 @@
 {% include head.html %}
 
 <body>
-{% include testtopnav.html %}
-<div class="container">
-    <div class="row">
-        <div class="col-md-3">
-        </div>
-        <div class="col-md-8">
-<div class="container"><ul id="searchResults"></ul></div>
-        </div>
-    </div>
-</div>
-    <main>
+{% include topnav.html %}
+    <main class="page-content" aria-label="Content">	
         <div class="container">	
-          <div class="row">
-             <div style="padding-left:10px">
+          <div class="row">		  
+             <div style="padding-left:10px" class="col-md-12">				 
 		           {{ content }}
 			         <br>
              </div>
@@ -28,5 +19,37 @@
     {% include footer.html %}
     
 </body>
+<script>
+ tocbot.init({
+    headingSelector: 'h1, h2, h3',
+    positionFixedSelector: '#js-toc-fixed'
+  });
+  
+$(function() {
+    // $('.collapse').collapse('hide');
+   // $('.list-group-item.active').parent().parent('.collapse').collapse('show');
+
+    // Markdown plain out to bootstrap style
+  //  $('#markdown-content-container table').addClass('table');
+  //  $('#markdown-content-container img').addClass('img-responsive');
+   //   $('#js-toc-fixed').css({ "margin-top": "10em" });
+  //  if ( $('#js-toc-fixed ol:first li').length > 0 ) {
+  //  $('#js-toc-fixed ol:first').prepend('<li class="toc-list-item"><a class="toc-link" href="">Top</a></li>');
+ // }
+    $('h1, h2, h3').addClass('anchor');
+});
+</script>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("submenu");
+    if (x.className === "subnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "subnav";
+    }
+}
+</script>
+
 {% include js_files.html %}
 </html>

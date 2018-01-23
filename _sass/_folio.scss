@@ -130,9 +130,12 @@ a.is-active-link::before {
 // so text does not scroll underneath
 //
 .anchor {
-//   padding-top: 60px; 
-//   margin-top: -60px;
+   padding-top: 120px; 
+   margin-top: -120px;
 }
+
+
+
 	
 @media screen and (max-width: 992px) {
     #menu {
@@ -159,23 +162,50 @@ a.is-active-link::before {
 	  a:hover {
 		text-decoration: none;	 	
 	  }
+	  
 }
+
 
 #submenu {
-position: fixed;
- // list-style-type: none;
- // padding-left: 0px;
+    position: fixed;
+    list-style-type: none;
+	
+//    .toc-link::before {
+//      background-color: #fff !important;
+//    }
+
+//	a.is-active-link::before {
+//      background-color: #da6a2d !important;
+//	  height: 18px !important;
+//    }
 }
 
+#multipage {
+	
+    .toc-link::before {
+     // background-color: #fff !important;   
+	  }
+
+	a.is-active-link::before {
+      background-color: #da6a2d !important;
+	  height: 18px !important;
+    }
+}
+
+// Styling for the page links in the left hand multi page menu
 #subsubmenu {
-//       padding-left: 10px;
-//	   color: #333333;
-//	   font-weight: 400;
-//	   display:block;
-//	   width: 250px;
-//	   line-height: 27px;
+       padding-left: 8px;
+	   color: #333333;
+       font-size: 0.9em;
+	   list-style-type: none;
+ //      border-left-style: solid;
+//	   border-left-width: 2px;
+//	    
+//	   height: 18px !important;
 }	
 
+
+// Styling for tocbot list items
 li.toc-list-item {
     width: 190px;
     white-space: nowrap;
@@ -184,45 +214,93 @@ li.toc-list-item {
     font-size: 0.9em;
 }	
 	
-// Large Screen	
-@media screen and (min-width: 992px) {
-    .tocify {
-             /* position: fixed; */
-    }
-
-    // add top margin when scrolling the menu
-    .is-position-fixed {
-         top: 100px !important;
-    }
+	
+// Styling for the collasible responsive left hand menu
+.subnav {
+  overflow: hidden;
+  margin-top: 8em;
+  background-color: #f2f2f2;
+  z-index: 900;
 }
 
-// Medium Screen
-@media screen and (max-width: 992px) and (min-width: 767px)  {
-	#js-toc-fixed {
-       background-color: #f2f2f2;
-	   z-index: 30;
-	}
+.subnav .icon {
+  display: none;
+}	
 	
-   .is-position-fixed {
-//       top: 150px !important;
-    }	
+	
+	
+	
+	
+	
+	
+// Large Screen	
+@media screen and (min-width: 992px) {
+	// One page left hand nav Styling
+	#js-toc-fixed {
+      margin-top: 8em; 
+	  position: fixed;
+	} 
+
+    // One page styling for left hand menu 
+	// add top margin when scrolling the menu
+    .is-position-fixed {
+	    position: fixed !important;
+        top: 2em !important;
+    }
+	
+	p.space {
+        margin-top: 2.5cm;
+    }
+
+	// Styling for the collasible responsive left hand menu
+	.subnav {
+	  background-color: #fff;
+	}	
 }
 
 // Small Screen
-@media (max-width: 767px) {
-    #toc {
-        position: relative;
-        width: 100%;
-        margin: 0px 0px 20px 0px;
-    }
-	#js-toc-fixed {
-    background-color: #f2f2f2;
-	z-index: 30;
-	}
-	
-   .is-position-fixed {
-       top: 150px !important;
-    }	
+@media (max-width: 991px) {
+    
+	 // For single page left nav
+	 #js-toc-fixed {
+		background-color: #f2f2f2;
+		z-index: 900;	
+		margin-top: 43px;
+		position: fixed;
+	 }
+			
+	 // Fpr single and multi page left nave
+	 // So text is not hidden at the top
+	 .anchor {
+		padding-top: 60px !important; 
+		margin-top: -60px !important;
+	 }
+		
+	  // Style the button to shrink the responsive left
+	  // hand menu  
+	  .subnav a:not(:first-child) {display: none;}
+	  .subnav a.icon {
+		float: right;
+		display: block;
+	  }  
+  
+	  // Style for when the user clicks the button to hide
+	  // the menu
+	  .subnav.responsive {position: relative;}
+	  .subnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	  }
+	  
+	  .subnav.responsive li {
+		visibility: hidden;
+	  }
+	  
+	  .subnav.responsive {
+		background-color: transparent;
+	  }
+
 }
 
 
