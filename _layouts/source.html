@@ -1,5 +1,5 @@
 ---
-layout: defaultdev
+layout: multipagedev
 ---
 
 <div class="container">
@@ -7,13 +7,17 @@ layout: defaultdev
         <div class="col-md-3">
           {% include source_nav.html %}
         </div>
-
         <div class="col-md-8">
+            <div class="container">
+             <p class="space">
+             <div class="container"><ul id="searchResults"></ul></div>
+            </div>		
             <div id="markdown-content-container"><div class="js-toc-content">{{ content }}</div></div>
             <br>
+			<div style="padding-bottom: 50em;"></div>
             <hr>
+			<br>
        <!--     {% include section_source_nav.html %}  -->
         </div>
-
     </div>
 </div>

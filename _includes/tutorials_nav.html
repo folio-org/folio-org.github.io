@@ -1,14 +1,17 @@
+<ul id=submenu class="subnav">
+ <div id=multipage>
+ <a href="javascript:void(0);" style="font-size:18px; color: #333333; text-decoration: none; background-color: #da6a2d; padding-left: 175px; padding-right: 5px;" class="icon" onclick="myFunction()">&#9776;</a>
 {% for section in site.data.tutorials %}
         {% for item in section.tutorials %}
           {% assign item_url = item | prepend:"/tutorials/" | append:"/" %}
           {% assign p = site.tutorials | where:"url", item_url | first %}
 		  {% if item_url == page.url %}	
-		  <div id="js-toc-fixed" class="toc js-toc">
+		  <div id="js-toc">
 		  </div>		  
 		  {% else %}
-          <li><a id=subsubmenu href="{{ item_url | prepend: site.baseurl }}">{{ section.title }}</a></li>
+		  <li style="border-left-style: solid; border-left-color: #EEE;"><a id=subsubmenu href="{{ item_url | prepend: site.baseurl }}">{{ section.title }}</a></li>
 		  {% endif %}		  
         {% endfor %}
 {% endfor %}
-
- 
+</div>
+</ul>

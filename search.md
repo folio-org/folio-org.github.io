@@ -6,8 +6,6 @@ menuInclude: yes
 menuLink: yes
 menuTopTitle: Search
 menuTopIndex: 100
-tertiary-column: present
-tertiary-column-content: column-2-search.html
 ---
 
 <div class="form">
