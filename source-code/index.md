@@ -122,9 +122,6 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-circulation-storage](https://github.com/folio-org/mod-circulation-storage)
   -- Persistent storage to complement the circulation module.
 
-- [mod-finance](https://github.com/folio-org/mod-finance)
-  -- Persistent storage of finance-related data (i.e. funds, ledgers, transactions, etc.)
-
 - [mod-graphql](https://github.com/folio-org/mod-graphql)
   -- Executing GraphQL queries.
 
@@ -151,6 +148,12 @@ facilitated by the code in the `raml-module-builder` repository.
 
 - [mod-cataloging](https://github.com/atcult/mod-cataloging)
   -- FOLIO metadata management / cataloging module.
+
+- [acq-models](https://github.com/folio-org/acq-models)
+  -- Shared repository for the models of the various acquisition modules.
+
+- [mod-finance](https://github.com/folio-org/mod-finance)
+  -- Persistent storage of finance-related data (i.e. funds, ledgers, transactions, etc.).
 
 - [mod-orders](https://github.com/folio-org/mod-orders)
   -- Persistent storage of order data.
@@ -232,6 +235,9 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-organization](https://github.com/folio-org/ui-organization)
   -- Stripes UI module: managing organization settings.
+
+- [ui-vendors](https://github.com/folio-org/ui-vendors)
+  -- Stripes UI module: Vendors.
 
 - [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
   -- Stripes UI plugin: User-finder.
