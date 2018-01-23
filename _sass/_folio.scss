@@ -97,3 +97,20 @@ a.is-active-link::before {
 h1, h2, h3 {
   outline: none;
 }
+@media screen and (min-width: 0px) and (max-width: $narrow-max-width) {
+  #js-toc-wrapper {
+    position: fixed;
+    right: -12em;
+    top: 50%;
+    width: 11em;
+    margin: 0;
+    padding: 0.5em 0.5em 0.5em 2.5em;
+    box-shadow: 0 1px 3px black;
+    border-radius: 3em 0.5em 0.5em 3em;
+    transition: 0.2s;
+    transform: translate(0, -50%);
+  }
+  #js-toc-wrapper:hover {
+    right: 0;
+  }
+}
