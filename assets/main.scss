@@ -7,13 +7,8 @@
 // Set the variables that we need to override.
 @import "folio-base";
 
-// Import the theme.
-// It will set other variables that are not already set.
-// It will provide the rules.
-//@import "minima";
-
+// Syntax highlighting styling
 @import "base";
-//@import "layoutmin";
 @import "syntax-highlighting";
 
 // Provide our rules.
