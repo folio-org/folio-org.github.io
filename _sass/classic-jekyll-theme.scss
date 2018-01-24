@@ -89,9 +89,9 @@ $add-to-banner-area-height-widest:		27px;
 //
 // Note: This prevents an anchored link from scrolling to a position behind the banner-area.
 //
-$anchor-top-fixed-offset-narrow:		48px;
-$anchor-top-fixed-offset-medium:		68px;
-$anchor-top-fixed-offset-widest:		68px;
+$anchor-top-fixed-offset-narrow:		50px;
+$anchor-top-fixed-offset-medium:		50px;
+$anchor-top-fixed-offset-widest:		129px;
 
 // *********************************************************************************************************************
 // Banner
@@ -529,8 +529,8 @@ $menubar-height-widest:								auto;
 // Horizontally position the icon, items and item-separators in the menubar.
 // CSS property: justify-content
 //
-$menubar-justify-content-medium:					flex-start;
-$menubar-justify-content-widest:					flex-start;
+$menubar-justify-content-medium:					center;
+$menubar-justify-content-widest:					center;
 
 // Vertically position the items and item-separators in the menubar.
 // CSS property: align-items

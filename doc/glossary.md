@@ -2,6 +2,8 @@
 layout: page
 title: FOLIO Glossary
 permalink: /doc/glossary/
+menuInclude: no
+menuTopTitle: Documentation
 ---
 
 FOLIO is a new open source, cloud hostable, app-store based library platform,

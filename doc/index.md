@@ -11,24 +11,6 @@ menuSubIndex: 1
 menuSubs:
 - title: Guides
   anchorId: guides
-- title: Background orientation
-  anchorId: background-orientation
-- title: Setup and configuration
-  anchorId: setup-and-configuration
-- title: Getting started
-  anchorId: getting-started
-- title: Reference documentation
-  anchorId: reference-documentation
-- title: Fundamental documentation
-  anchorId: fundamental-documentation
-- title: Development tips
-  anchorId: development-tips
-- title: Tutorials
-  anchorId: tutorials
-- title: Development management
-  anchorId: development-management
-- title: Other topics
-  anchorId: other-topics
 ---
 
 Documentation for the various components of FOLIO is in continuous

@@ -2,6 +2,8 @@
 layout: page
 title: Primer for front-end development
 permalink: /doc/primer-develop-frontend/
+menuInclude: no
+menuTopTitle: Documentation
 ---
 
 Start with introduction to [user interface](/doc/#user-interface)
