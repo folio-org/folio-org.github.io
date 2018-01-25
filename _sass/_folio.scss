@@ -1,27 +1,4 @@
-.site-header {
-  border-top: 5px solid $f-color-purple;
-  border-bottom: 1px solid $f-color-purple;
-}
-
-.site-title {
-  &,
-  &:visited {
-    color: $f-color-orange;
-  }
-}
-
-.site-nav {
-  font-size: $small-font-size;
-
-  .page-link {
-    color: $f-color-purple;
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 15px;
-    }
-  }
-  line-height: $base-line-height * $base-font-size * 1.25;
-}
+// Folio Styling
 
 h1,
 h2,
@@ -97,11 +74,7 @@ tr:target td:first-child {
 	width: 120px;
 }
 
-.page-content h4 {
-    font-size: 1.1em;
-    font-weight: 300;
-    padding-top: 16px; }
-	
+
 // api table label class	
 .label {
     display: table-cell;
@@ -110,7 +83,7 @@ tr:target td:first-child {
     line-height: unset;
     color: #616161;
     text-align: unset;
-    padding: unset;
+    padding: 10px 0px 0px 10px;
     white-space: unset;
     vertical-align: unset;
     border-radius: unset;
@@ -126,6 +99,16 @@ a.is-active-link::before {
     outline: none;
 }
 
+// indent lists in the normal markdown
+#markdown-content-container {
+
+	li {
+	  list-style-type: circle;
+	  margin-left: 1em;
+    }
+
+}
+
 // when using top-fixed banner positioning
 // so text does not scroll underneath
 //
@@ -134,74 +117,27 @@ a.is-active-link::before {
    margin-top: -120px;
 }
 
-
-
-	
-@media screen and (max-width: 992px) {
-    #menu {
-	    position: static !important;
-//        background-color: #fff;
-//		margin-top: 50px;
-//		z-index: 1200;
-    }
-}
-	
-#menu {
-      top: 130px;
-	  width: 250px;
-	  position: fixed;
-	  list-style-type: none;
-	//  padding-left: 0px;
-	//  padding-right: 5px;
-	//  text-transform: uppercase;
-	  
-	  a {
-        padding-left: 10px;
-      }
-	  
-	  a:hover {
-		text-decoration: none;	 	
-	  }
-	  
-}
-
-
+// For multi page left hand menu
 #submenu {
     position: fixed;
     list-style-type: none;
-	
-//    .toc-link::before {
-//      background-color: #fff !important;
-//    }
-
-//	a.is-active-link::before {
-//      background-color: #da6a2d !important;
-//	  height: 18px !important;
-//    }
 }
 
 #multipage {
-	
-    .toc-link::before {
-     // background-color: #fff !important;   
-	  }
 
 	a.is-active-link::before {
       background-color: #da6a2d !important;
 	  height: 18px !important;
     }
+
 }
 
-// Styling for the page links in the left hand multi page menu
+// Styling for the page links in the left hand menu
 #subsubmenu {
-       padding-left: 8px;
-	   color: #333333;
-       font-size: 0.9em;
-	   list-style-type: none;
- //      border-left-style: solid;
-//	   border-left-width: 2px;
-//	    
-//	   height: 18px !important;
+     padding-left: 8px;
+	 color: #333333;
+     font-size: 0.9em;
+	 list-style-type: none;	 
 }	
 
 
@@ -213,35 +149,33 @@ li.toc-list-item {
     text-overflow: ellipsis;
     font-size: 0.9em;
 }	
-	
+
+// Used for left nav that is long and goes off the screen
+.toc {
+	max-height: 400px;
+}
 	
 // Styling for the collasible responsive left hand menu
 .subnav {
   overflow: hidden;
   margin-top: 8em;
-  background-color: #f2f2f2;
+  background-color: #eeeeee;
   z-index: 900;
+	//	   background-color: #eeeeee;
+	//	   border-style: solid; 
+	//       border-color: #eeeeee; 
+	//	   border-width: 1px;
+	//       border-radius: 5px;  
 }
 
 .subnav .icon {
   display: none;
 }	
 	
-	
-	
-	
-	
-	
-	
+		
 // Large Screen	
 @media screen and (min-width: 992px) {
-	// One page left hand nav Styling
-	#js-toc-fixed {
-      margin-top: 8em; 
-	  position: fixed;
-	} 
-
-    // One page styling for left hand menu 
+     
 	// add top margin when scrolling the menu
     .is-position-fixed {
 	    position: fixed !important;
@@ -252,7 +186,7 @@ li.toc-list-item {
         margin-top: 2.5cm;
     }
 
-	// Styling for the collasible responsive left hand menu
+	// Color of left hand menu
 	.subnav {
 	  background-color: #fff;
 	}	
@@ -260,15 +194,40 @@ li.toc-list-item {
 
 // Small Screen
 @media (max-width: 991px) {
-    
-	 // For single page left nav
-	 #js-toc-fixed {
-		background-color: #f2f2f2;
-		z-index: 900;	
-		margin-top: 43px;
-		position: fixed;
-	 }
-			
+      // Position the Menu Icon
+ 	  .subnav .icon {
+         z-index: 1000;
+		 position: fixed;
+         right: 15px;
+		 top: 65px;
+      }
+	  
+ 	  p.space {
+         margin-top: 1.2cm;
+      }  	  
+	  // Visible Length of the toc is determined by the height of the screen
+      // Used for left nav that is long and goes off the screen
+	  @media (max-height: 450px) {
+        .toc {
+	          max-height: 100px;
+         }		  
+	  }
+	  
+	  @media screen and (max-height: 600px) and (min-height: 451px) {
+      .toc {
+	      max-height: 450px;
+      }	
+	  }
+	  
+	  #multipage
+	  {
+		background-color: #eeeeee;
+	    border-style: solid; 
+		border-color: #eeeeee; 
+	    border-width: 1px;
+		border-radius: 5px;
+	  }
+	  	 
 	 // Fpr single and multi page left nave
 	 // So text is not hidden at the top
 	 .anchor {
@@ -276,31 +235,30 @@ li.toc-list-item {
 		margin-top: -60px !important;
 	 }
 		
-	  // Style the button to shrink the responsive left
-	  // hand menu  
-	  .subnav a:not(:first-child) {display: none;}
+	  // Display the navigation icon
+//	  .subnav a:not(:first-child) {display: none;}
 	  .subnav a.icon {
-		float: right;
+//		float: right;
 		display: block;
 	  }  
-  
-	  // Style for when the user clicks the button to hide
-	  // the menu
-	  .subnav.responsive {position: relative;}
-	  .subnav.responsive .icon {
-		position: absolute;
-		right: 0;
-		top: 0;
-	  }
 	  
+	  // Hide the list when button clicks
 	  .subnav.responsive li {
 		visibility: hidden;
 	  }
 	  
 	  .subnav.responsive {
 		background-color: transparent;
-	  }
-
+	    #multipage
+	    {
+	       background-color: transparent;
+		   border-style: none; 
+	    }		
+	  }	 
+	  
+ 	  .subnav.responsive .toc {
+	    visibility: hidden;
+	  }    
 }
 
 

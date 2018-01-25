@@ -1,7 +1,7 @@
 ---
 layout: guidelines
-title: License
-heading: License
+title: Contributor License Agreement
+heading: Contributor License Agreement
 permalink: /guidelines/cla-process/
 ---
 

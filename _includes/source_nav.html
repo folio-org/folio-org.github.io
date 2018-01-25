@@ -1,12 +1,12 @@
-<ul id=submenu class="subnav">
+<ul id=submenu class="subnav" style="background-color: transparent;">
+<a href="javascript:void(0);" style="font-size:15px; color: #333333; text-decoration: none; background-color: #da6a2d; padding-left: 5px; padding-right: 5px; border-style: solid; border-color: #da6a2d; border-radius: 5px; border-width: 1px;" class="icon" onclick="myFunction()">MENU</a>
  <div id=multipage>
- <a href="javascript:void(0);" style="font-size:18px; color: #333333; text-decoration: none; background-color: #da6a2d; padding-left: 175px; padding-right: 5px;" class="icon" onclick="myFunction()">&#9776;</a>
 {% for section in site.data.source %}
         {% for item in section.source %}
           {% assign item_url = item | prepend:"/source/" | append:"/" %}
           {% assign p = site.source | where:"url", item_url | first %}
 		  {% if item_url == page.url %}
-		  <div id="js-toc">
+		  <div id="js-toc" class="toc">
 		  </div>		  
 		  {% else %}
 		  <li style="border-left-style: solid; border-left-color: #EEE;"><a id=subsubmenu href="{{ item_url | prepend: site.baseurl }}">{{ section.title }}</a></li>

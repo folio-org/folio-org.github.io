@@ -28,48 +28,10 @@ body {
   font-size: 14px;
 }
 
-.header-container {
-  background-color: black;
-  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../img/bg.jpg') no-repeat 50% 0;
-  color: #fff;
-
-  h1 {
-    color: #fff;
-  }
-  // background-attachment: fixed;
-  background-size: cover;
-  background-position: center 36%;
-  margin-top: -37px;
-}
-
-.navbar-container {
-  font-size: 14px;
-}
-
-.panel-title {
-    font-size: 14px;
-	font-weight: 100;
-}
-
-.list-group-item {
-    padding: 15px;
-	padding-bottom: 8px;
-	padding-top: 8px;
-	font-weight: 100;
-}
-
-.header-container-page {
-    background-color: white;
-    color: #fff;
-    background-size: cover;
-    background-position: center 36%;
-    margin-top: -52px;
-}
-
 .page-content {
   padding-top: 25px;
   padding-bottom: 20px;
-  padding-left: 15px;
+//  padding-left: 15px;
   
    h1 {
 	font-size: 1.5em;
@@ -88,69 +50,23 @@ body {
 	font-size: 1.25em;
     font-weight: 300;
   }  
+
+  h4 {
+    font-size: 1.1em;
+    font-weight: 300;
+    padding-top: 16px; }
+	  
 }
 
+// Footer Styling
 .footer-col-1 {
     width: -webkit-calc(50% - (30px / 2));
     width: calc(50% - (30px / 2));
 }
 
-.post-list-container {
-  li a.active {
-    font-weight: bold;
-  }
-}
-
 ul, ol {
     margin-left: 0px;
 //	padding-left: 15px;
-}
-
-.btn {
-    text-transform: uppercase;
-    border: none;
-    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #d75922;
-}
-
-.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-    color: #fff;
-    background-color: #d75922;
-    border-color: #d75922;
-}
-
-.panel-title > a {
-   text-decoration: none;
-   color: #555;
-}
-
-.panel-title > a:visited {
-   color: #555;
-}
-
-a.list-group-item:visited {
-   color: #555;
-}
-
-.panel-title > a:hover {
-	color: #111;
-}
-
-a.list-group-item.active {
-   color: #fff;
-}
-
-:target {
-    padding-top: 0px;
-	border-left: 0px;
 }
 
 // Padding/Styling for Responsive menu
@@ -165,4 +81,8 @@ a.list-group-item.active {
 // Pad the search in the nav bar to line it up
 .form {
    padding-right: 30px;
+}
+
+.is-collapsible {
+  max-height: 3000px;
 }
