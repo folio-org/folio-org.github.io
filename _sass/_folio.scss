@@ -40,13 +40,6 @@ th {
   background-color: $f-color-lighter-grey;
 }
 
-:target {
-  border-left: 5px solid $f-color-orange;
-}
-tr:target td:first-child {
-  border-left: 5px solid $f-color-orange;
-}
-
 .vagrant-note {
   background-image: url(../images/vagrant-icon.png);
   background-position: 10px 10px;
