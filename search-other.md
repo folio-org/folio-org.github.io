@@ -1,6 +1,7 @@
 ---
 layout: defaultintro
 title: Other search and report facilities
+permalink: /search-other/
 ---
 
 # Other Search and Report Facilities
