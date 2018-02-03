@@ -85,11 +85,11 @@ nav.folio {
   background-color: $f-color-lighter-grey;
 }
 li.toc-list-item {
-  width: 190px;
+  width: 210px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 0.9em;
+  font-size: $small-1-font-size;
 }
 a.is-active-link::before {
   background-color: $f-color-orange;
