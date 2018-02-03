@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "stripes build stripes.config.js",
+    "stripes": "stripes",
+    "start": "stripes dev stripes.config.js"
+  },
+  "dependencies": {
+    "@folio/stripes-core": "^0.0.11",
+    "@folio/users": "^0.0.1-test",
+    "@folio/trivial": "^0.0.2-test"
+  }
+}

@@ -114,3 +114,24 @@ h1, h2, h3 {
     right: 0;
   }
 }
+
+/* for Tutorials */
+.vagrant-note {
+  background-image: url(/images/vagrant-icon.png);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  border: 4px solid #2991CC;
+  margin: 10px 0 15px 0;
+  padding: 10px 15px 5px 100px;
+}
+.vagrant-on-windows-note {
+  background-image: url(/images/vagrant-on-windows-icon.png);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  border: 4px solid #0078D8;
+  margin: 10px 0 15px 0;
+  padding: 10px 15px 5px 100px;
+}
+img {
+  max-width: 100%
+}
