@@ -7,5 +7,5 @@ menuTopTitle: Tutorials
 menuTopIndex: 90
 ---
 
-* [Tutorial 1](/tutorials/tutorial-1/) -- explains foo.
-* [Tutorial 2](/tutorials/tutorial-2/) -- explains bar.
+* [FOLIO Developer Curriculum](curriculum/) -- An outline of a tutorial that can be given to a group in a workshop or followed by an individual developer in a self-paced fashion.
+

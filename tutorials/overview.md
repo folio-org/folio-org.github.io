@@ -13,7 +13,5 @@ menuSubs:
   index: 2
 ---
 
-Each tutorial explains this and that.
-Requirements for using the tutorials are these and those.
+The [Overview and preparation](/tutorials/curriculum/overview/) notes for the Curriculum will be relevant to all tutorials.
 
-See the [introduction](/tutorials/) to all tutorials.
