@@ -7,7 +7,7 @@ menuLink: yes
 menuTopTitle: Tutorials
 menuSubs:
 - title: Tutorial 2
-  index: 4
+  index: 5
   sub:
   - title: Lesson 1
     url: /tutorials/tutorial-2/lesson-1/
