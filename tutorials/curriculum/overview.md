@@ -94,15 +94,3 @@ Each time that you open a new shell terminal window, do those latter two steps t
 1. Real-world application: [set up the FOLIO Users app](../05-set-up-the-folio-users-app)
 1. [Interact with the FOLIO Stable VM](../06-vm-stable)
 
-## Run Jekyll Locally
-To view the documentation locally:
-* (once) `git clone git@github.com/folio-org/curriculum.git folio-curriculum && cd folio-curriculum && bundle install`
-* `bundle exec jekyll serve`
-* View the site locally at http://localhost:4000/curriculum/
-
-## Additional information
-
-See project [FOLIO](https://issues.folio.org/browse/FOLIO)
-at the [FOLIO issue tracker](http://dev.folio.org/community/guide-issues).
-
-Other FOLIO Developer documentation is at [dev.folio.org](http://dev.folio.org/)
