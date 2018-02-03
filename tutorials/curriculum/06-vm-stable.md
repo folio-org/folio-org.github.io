@@ -1,4 +1,11 @@
-# Interact with the FOLIO Stable VM
+---
+layout: page
+title: Interact with the FOLIO Stable VM
+permalink: /tutorials/curriculum/06-vm-stable/
+menuInclude: yes
+menuLink: yes
+menuTopTitle: Tutorials
+---
 
 The previous lessons have provided a quick overview of deploying the parts of the system, and doing some minimal configuration.
 

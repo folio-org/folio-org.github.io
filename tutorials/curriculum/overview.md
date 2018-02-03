@@ -1,4 +1,12 @@
-# FOLIO Developer Curriculum Outline
+---
+layout: page
+title: FOLIO Developer Curriculum - Overview
+permalink: /tutorials/curriculum/overview/
+menuInclude: yes
+menuLink: yes
+menuTopTitle: Tutorials
+---
+
 This is an outline of a tutorial that can be given to a group in a workshop or followed by an individual developer in a self-paced fashion.
 
 ## Goals

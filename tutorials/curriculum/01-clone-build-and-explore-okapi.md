@@ -1,4 +1,11 @@
-# Clone, Build, and Explore Okapi
+---
+layout: page
+title: Clone, Build, and Explore Okapi
+permalink: /tutorials/curriculum/01-clone-build-and-explore-okapi/
+menuInclude: yes
+menuLink: yes
+menuTopTitle: Tutorials
+---
 
 ## Clone and Install Okapi
 

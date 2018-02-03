@@ -1,4 +1,11 @@
-# Deploy test Stripes module
+---
+layout: page
+title: Deploy test Stripes module
+permalink: /tutorials/curriculum/04-deploy-test-stripes-module/
+menuInclude: yes
+menuLink: yes
+menuTopTitle: Tutorials
+---
 
 In this lesson we set aside the Okapi server (leave it running) and focus on the web-based user interface, Stripes.  The Okapi Gateway is not required for this lesson.
 

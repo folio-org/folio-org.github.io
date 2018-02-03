@@ -1,4 +1,11 @@
-# Set up the Okapi Users app
+---
+layout: page
+title: Set up the Okapi Users app
+permalink: /tutorials/curriculum/05-set-up-the-folio-users-app/
+menuInclude: yes
+menuLink: yes
+menuTopTitle: Tutorials
+---
 
 In lesson four, we deployed Stripes and demonstrated communication between the browser and the Stripes components.
 In lessons two and three, we deployed the Okapi Gateway as well as a test Okapi Module and examined the communication between them.

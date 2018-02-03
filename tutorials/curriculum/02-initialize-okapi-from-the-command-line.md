@@ -1,4 +1,11 @@
-# Initialize Okapi from the command line
+---
+layout: page
+title: Initialize Okapi from the command line
+permalink: /tutorials/curriculum/02-initialize-okapi-from-the-command-line/
+menuInclude: yes
+menuLink: yes
+menuTopTitle: Tutorials
+---
 
 ## Start the Okapi Gateway
 

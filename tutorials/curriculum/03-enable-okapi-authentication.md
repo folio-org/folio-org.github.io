@@ -1,4 +1,11 @@
-# Enable Okapi Authentication
+---
+layout: page
+title: Enable Okapi Authentication
+permalink: /tutorials/curriculum/03-enable-okapi-authentication/
+menuInclude: yes
+menuLink: yes
+menuTopTitle: Tutorials
+---
 
 All real-world uses of Okapi will need to provide authentication and authorization services.
 The Okapi Gateway itself does not handle these tasks; rather, it delegates them to one or more Okapi Modules that operates at an early phase of module requests orchestrated by the Okapi Gateway.
