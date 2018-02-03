@@ -1,4 +1,7 @@
-.highlighter-rouge pre.highlight {
+div.highlight {
+  border: 1px solid $f-color-light-grey;
+}
+.highlighter-rouge .highlight {
   background-color: $f-color-lighter-grey;
 }
 code.highlighter-rouge {
@@ -6,7 +9,6 @@ code.highlighter-rouge {
 }
 
 pre {
-  border: 1px solid $f-color-light-grey;
   padding-left: 2px;
   padding-right: 2px;
   background-color: $f-color-lighter-grey;
