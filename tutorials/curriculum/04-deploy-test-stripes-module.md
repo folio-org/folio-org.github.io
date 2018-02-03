@@ -114,23 +114,23 @@ The server will respond after the `webpack built...` message is displayed.
 
 The Stripes UI Server homepage at http://localhost:3000 looks like the figure below.
 
-![Stripes homepage](pics/01_Stripes_homepage.png)
+![Stripes homepage](/images/tutorials/curriculum/01_Stripes_homepage.png)
 
 There is one app in this basic configuration of the Stripes UI Server -- the "Trivial" app with the green icon.  Click on it to get a form:
 
-![Trivial homepage](pics/01_Trivial_homepage.png)
+![Trivial homepage](/images/tutorials/curriculum/01_Trivial_homepage.png)
 
 Type in a greeting and name of your choice and submit the form to see the reply.
 
-![Trivial reply](pics/01_Trivial_reply.png)
+![Trivial reply](/images/tutorials/curriculum/01_Trivial_reply.png)
 
 This is an example of the Stripes server component communicating with a Stripes browser component.
 We have not set up the Okapi part of the FOLIO system, so this interaction is strictly within the Stripes UI Server itself.
 
-The source for the Trivial module is in the stripes-core git repository (https://github.com/folio-org/stripes-core/tree/master/examples/trivial), with the bulk of the work in the [About.js](https://github.com/folio-org/stripes-core/blob/master/examples/trivial/About.js) file.
+The source for the Trivial module is in the git repository [ui-trivial](https://github.com/folio-org/ui-trivial), with the bulk of the work in the [About.js](https://github.com/folio-org/ui-trivial/blob/master/About.js) file.
 More details about the state of the object within the module can be seen by viewing the debugging output in the browser's JavaScript console.
 
-![Trivial reply with browser JavaScript console](pics/01_Trivial_reply_with_js_console.png)
+![Trivial reply with browser JavaScript console](/images/tutorials/curriculum/01_Trivial_reply_with_js_console.png)
 
 ## Finish
 

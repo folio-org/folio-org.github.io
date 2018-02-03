@@ -37,7 +37,7 @@ To download the VirtualBox guest:
 1. Connect to the VirtualBox guest: `vagrant ssh`
 
 Note: Do this download prior to attending a workshop.
-If also doing [Lesson 6](06_vm_stable.md) then get it ready beforehand too.
+If also doing [Lesson 6](../06-vm-stable) then get it ready beforehand too.
 
 <div class="vagrant-note" markdown="1">
 In subsequent lessons, the command lines are executed within the VirtualBox guest.
@@ -79,12 +79,12 @@ $ export FOLIO_ROOT=`pwd`
 Each time that you open a new shell terminal window, do those latter two steps to set `$FOLIO_ROOT`.
 
 ## Lessons/Steps
-1. [Clone, build and explore Okapi](01_clone_build_and_explore_okapi.md)
-1. [Initialize Okapi Gateway from the command line](02_initialize_okapi_from_the_command_line.md)
-1. [Enable Okapi Authentication](03_enable_okapi_authentication.md)
-1. [Deploy test Stripes package](04_deploy_test_stripes_module.md)
-1. Real-world application: [set up the FOLIO Users app](05_set_up_the_folio_users_app.md)
-1. [Interact with the FOLIO Stable VM](06_vm_stable.md)
+1. [Clone, build and explore Okapi](../01-clone-build-and-explore-okapi)
+1. [Initialize Okapi Gateway from the command line](../02-initialize-okapi-from-the-command-line)
+1. [Enable Okapi Authentication](../03-enable-okapi-authentication)
+1. [Deploy test Stripes package](../04-deploy-test-stripes-module)
+1. Real-world application: [set up the FOLIO Users app](../05-set-up-the-folio-users-app)
+1. [Interact with the FOLIO Stable VM](../06-vm-stable)
 
 ## Run Jekyll Locally
 To view the documentation locally:
