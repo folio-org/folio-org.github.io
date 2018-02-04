@@ -9,6 +9,10 @@ menuTopTitle: Tutorials
 
 This is an outline of a tutorial that can be given to a group in a workshop or followed by an individual developer in a self-paced fashion.
 
+<div class="attention">
+Note: This is an older tutorial. Much of it is still useful, but some parts are out-of-date.
+</div>
+
 ## Goals
 * Set up a running instance of the Stripes Development UI Server
 * Set up a running instance of Okapi Gateway

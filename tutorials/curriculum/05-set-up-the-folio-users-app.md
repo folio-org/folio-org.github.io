@@ -14,7 +14,9 @@ In this lesson five, we are connecting Stripes to the Okapi Gateway and adding t
 There are two components to the Users app: the Stripes UI component and the Okapi Module component.
 We will start first with the Stripes UI component.
 
-NOTE: The Stripes package.json is out-of-date. Also we need the deployment of all user-related backend modules.
+<div class="attention">
+Note: The Stripes package.json is out-of-date. Also we need the deployment of all user-related backend modules.
+</div>
 
 So skip ahead to the section about [Adding the mod-users module](#add-the-users-app-okapi-module-to-the-okapi-gateway).
 
