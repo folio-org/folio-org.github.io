@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Set up the Okapi Users app
+title: Set up the FOLIO Users app
 permalink: /tutorials/curriculum/05-set-up-the-folio-users-app/
 menuInclude: yes
 menuLink: yes
@@ -16,7 +16,7 @@ We will start first with the Stripes UI component.
 
 NOTE: The Stripes package.json is out-of-date. Also we need the deployment of all user-related backend modules.
 
-So skip ahead to the section about [Adding the mod-users module](#add-mod-users).
+So skip ahead to the section about [Adding the mod-users module](#add-the-users-app-okapi-module-to-the-okapi-gateway).
 
 ## Add the Users app UI component to the Stripes UI Server
 Remember in $FOLIO_ROOT/stripes-tutorial-platform we have two configuration files: `package.json` and `stripes.config.js`.
@@ -93,7 +93,7 @@ At this point you likely receive a possible error, similar to:
 If you did not receive an error message, then your Okapi Gateway is properly configured.
 The next tutorial section may be review.
 
-## <a id="add-mod-users"/>Add the Users app Okapi Module to the Okapi Gateway
+## Add the Users app Okapi Module to the Okapi Gateway
 
 ### Fetch and build the Users app Okapi Module
 

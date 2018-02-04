@@ -19,7 +19,7 @@ menuSubs:
     url: /tutorials/curriculum/03-enable-okapi-authentication/
   - title: Deploy test Stripes module
     url: /tutorials/curriculum/04-deploy-test-stripes-module/
-  - title: Set up Okapi Users app
+  - title: Set up Users app
     url: /tutorials/curriculum/05-set-up-the-folio-users-app/
   - title: Interact with Stable VM
     url: /tutorials/curriculum/06-vm-stable/
