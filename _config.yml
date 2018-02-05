@@ -18,14 +18,14 @@ github_username: folio-org
 twitter_username: folio_lsp
 
 # Build settings
-remote_theme: Balancingrock/classic-jekyll-theme@2.1.1
+remote_theme: Balancingrock/classic-jekyll-theme@2.2.0
 markdown: kramdown
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
   - jekyll-gist
 
-exclude: [bin, Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, tmp, vendor, work]
+exclude: [bin, Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, tmp, vendor, work, tutorials/curriculum/playbooks]
 
 collections:
   posts:

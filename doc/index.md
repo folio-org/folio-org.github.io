@@ -6,7 +6,7 @@ menuInclude: yes
 menuLink: yes
 menuTopTitle: Documentation
 menuTopIndex: 5
-menuSubTitle: Overview
+menuSubTitle: Documentation overview
 menuSubIndex: 1
 menuSubs:
 - title: Guides
@@ -16,7 +16,7 @@ menuSubs:
 Documentation for the various components of FOLIO is in continuous
 development. Since the system is composed of many separate components,
 each component is documented individually. The best places to start are
-the [FOLIO Developer's Curriculum](http://dev.folio.org/curriculum), which
+the [FOLIO Developer's Curriculum](/tutorials/curriculum/), which
 is a series of self-paced or instructor-guided lessons, and the early chapters
 of the [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md),
 which describe the system as a whole and explain how the parts fit
@@ -31,7 +31,7 @@ provides the contribution guidelines, lists the various collaboration tools
 and has some recommendations about when to use each.
 
 ## Developer's curriculum
-The [FOLIO Developer's Curriculum](http://dev.folio.org/curriculum) is a series
+The [FOLIO Developer's Curriculum](/tutorials/curriculum/) is a series
 of lessons that can be followed on your own or can form the basis of an
 instructor-led workshop.
 

@@ -13,6 +13,14 @@
       "Redirect": {
         "ReplaceKeyWith": "doc/api"
       }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "curriculum/"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "tutorials/curriculum/"
+      }
     }
   ]
 }

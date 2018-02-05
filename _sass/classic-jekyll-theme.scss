@@ -90,8 +90,8 @@ $add-to-banner-area-height-widest:		27px;
 // Note: This prevents an anchored link from scrolling to a position behind the banner-area.
 //
 $anchor-top-fixed-offset-narrow:		50px;
-$anchor-top-fixed-offset-medium:		50px;
-$anchor-top-fixed-offset-widest:		129px;
+$anchor-top-fixed-offset-medium:		127px;
+$anchor-top-fixed-offset-widest:		127px;
 
 // *********************************************************************************************************************
 // Banner
@@ -794,9 +794,9 @@ $column-panel-background-widest:		none;
 // The width of the columns, these settings drive which layout is used, based on the browser window width.
 // Used in the mixin definitions.
 //
-$primary-column-min-width:				560px;
-$secondary-column-width: 				200px;
-$tertiary-column-width:					200px;
+$primary-column-min-width:				520px;
+$secondary-column-width: 				220px;
+$tertiary-column-width:					220px;
 
 // For the primary column.
 // CSS property: background

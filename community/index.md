@@ -6,7 +6,7 @@ menuInclude: yes
 menuLink: yes
 menuTopTitle: Community
 menuTopIndex: 6
-menuSubTitle: Overview
+menuSubTitle: Community overview
 menuSubIndex: 1
 ---
 

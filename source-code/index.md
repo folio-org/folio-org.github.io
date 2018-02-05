@@ -6,7 +6,7 @@ menuInclude: yes
 menuLink: yes
 menuTopTitle: Source
 menuTopIndex: 3
-menuSubTitle: Overview
+menuSubTitle: Source-code overview
 menuSubIndex: 1
 ---
 
@@ -274,9 +274,6 @@ exists and can be run, the APIs are likely to change.
 
 - [okapi.rb](https://github.com/thefrontside/okapi.rb)
   -- Ruby client to communicate with an OKAPI cluster. Also known as "okapi-cli".
-
-- [curriculum](https://github.com/folio-org/curriculum)
-  -- The source for the stand-alone [FOLIO Developer's Curriculum](http://dev.folio.org/curriculum).
 
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.
