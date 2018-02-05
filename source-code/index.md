@@ -6,7 +6,7 @@ menuInclude: yes
 menuLink: yes
 menuTopTitle: Source
 menuTopIndex: 3
-menuSubTitle: Overview
+menuSubTitle: Source-code overview
 menuSubIndex: 1
 ---
 

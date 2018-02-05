@@ -6,10 +6,10 @@ menuInclude: yes
 menuTopTitle: Tutorials
 menuTopIndex: 90
 menuSubs:
-- title: Introduction
+- title: Tutorials introduction
   url: /tutorials/
   index: 1
-- title: Overview
+- title: Tutorials overview
   index: 2
 ---
 

@@ -6,7 +6,7 @@ menuInclude: yes
 menuLink: yes
 menuTopTitle: Documentation
 menuTopIndex: 5
-menuSubTitle: Overview
+menuSubTitle: Documentation overview
 menuSubIndex: 1
 menuSubs:
 - title: Guides
