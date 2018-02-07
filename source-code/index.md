@@ -148,6 +148,10 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-vendors](https://github.com/folio-org/mod-vendors)
   -- Persistent storage of vendor data.
 
+- [mod-pg-embed](https://github.com/folio-org/mod-pg-embed)
+  -- Helper module to start embedded Postgres.
+  Helper for developers that starts the "embedded" postgres server and sets up the environment so that other modules can locate the database.
+
 - [inventory-sample-data](https://github.com/folio-org/inventory-sample-data)
   -- Provides scripts for data preparation and deployment, e.g. MARC.
 
@@ -222,6 +226,9 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-organization](https://github.com/folio-org/ui-organization)
   -- Stripes UI module: managing organization settings.
+
+- [ui-finance](https://github.com/folio-org/ui-finance)
+  -- Stripes UI module: management of ledgers, funds, and budgets.
 
 - [ui-vendors](https://github.com/folio-org/ui-vendors)
   -- Stripes UI module: Vendors.
