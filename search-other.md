@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Other search and report facilities
+titleLeader: "Search |"
 permalink: /search-other/
 menuInclude: yes
 menuLink: yes

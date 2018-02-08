@@ -1,8 +1,17 @@
-{% capture this_page_title %}
-{% if page.url == '/' or page.title == nil %} {{ site.title }}
-{% else %} {{ page.title | prepend: ' | ' | prepend: site.title }}
-{% endif %}
-{% endcapture %}
+{%- assign areas = page.url | split:'/' -%}
+{%- assign len = areas.size | minus: 2 -%}
+{%- capture leader -%}
+  {%- if page.titleLeader -%}
+    {{ page.titleLeader }}
+  {%- else -%}
+    {% for i in (1..len) %}{{ areas[i] | capitalize }} | {% endfor %}
+  {%- endif -%}
+{%- endcapture -%}
+{%- capture this_page_title -%}
+{%- if page.url == '/' or page.title == nil -%} {{ site.title }}
+{%- else -%} {{ site.title }} | {{ leader }} {{ page.title }}
+{%- endif -%}
+{%- endcapture -%}
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
