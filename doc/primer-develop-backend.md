@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Primer for back-end development
-permalink: /doc//primer-develop-backend/
+permalink: /doc/primer-develop-backend/
 menuInclude: no
 menuTopTitle: Documentation
 ---
