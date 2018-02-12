@@ -203,9 +203,6 @@ exists and can be run, the APIs are likely to change.
 - [ui-inventory](https://github.com/folio-org/ui-inventory)
   -- Stripes UI module: administrating locally created instances, holdings records and items.
 
-- [ui-items](https://github.com/folio-org/ui-items)
-  -- Stripes UI module: administrating bibliographic items.
-
 - [ui-requests](https://github.com/folio-org/ui-requests)
   -- Stripes UI module: making requests on items.
 
@@ -251,9 +248,6 @@ exists and can be run, the APIs are likely to change.
 
 - [stripes-demo-platform](https://github.com/folio-org/stripes-demo-platform)
   -- Stripes platform for building the demo site.
-
-- [ui-okapi-console](https://github.com/folio-org/ui-okapi-console)
-  -- Stripes UI module: console for administrating Okapi.
 
 - [stripes-experiments](https://github.com/folio-org/stripes-experiments)
   -- Testing ground for prototype modules that may form part of
