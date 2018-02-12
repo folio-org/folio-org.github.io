@@ -249,9 +249,6 @@ exists and can be run, the APIs are likely to change.
 - [stripes-demo-platform](https://github.com/folio-org/stripes-demo-platform)
   -- Stripes platform for building the demo site.
 
-- [ui-okapi-console](https://github.com/folio-org/ui-okapi-console)
-  -- Stripes UI module: console for administrating Okapi.
-
 - [stripes-experiments](https://github.com/folio-org/stripes-experiments)
   -- Testing ground for prototype modules that may form part of
   Stripes.
