@@ -28,5 +28,9 @@ plugins:
 exclude: [bin, Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, tmp, vendor, work, tutorials/curriculum/playbooks]
 
 collections:
+  faqs:
+    permalink: /:collection/:path/
+    output: true
+    title: FAQs
   posts:
     permalink: /news/:year/:month/:day/:title/
