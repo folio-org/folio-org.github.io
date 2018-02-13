@@ -2,7 +2,7 @@
 layout: null
 ---
 [
-  {%- assign sortedPages = site.pages | sort:"title" -%}
+  {%- assign sortedPages = site.pages | concat: site.documents | sort:"title" -%}
   {%- for page in sortedPages -%}
     {%- assign docId = page.url | slugify -%}
     {%- if docId == "" -%}{%- assign docId = "home" -%}{%- endif -%}
