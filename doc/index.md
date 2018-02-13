@@ -11,6 +11,8 @@ menuSubIndex: 1
 menuSubs:
 - title: Guides
   anchorId: guides
+- title: FAQs
+  url: /faqs/
 ---
 
 Documentation for the various components of FOLIO is in continuous
