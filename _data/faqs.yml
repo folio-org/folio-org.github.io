@@ -1,0 +1,22 @@
+# List of FAQ categories
+---
+- name: orientation
+  title: Background orientation
+
+- name: setup
+  title: Setup and configuration
+
+- name: start
+  title: Getting started
+
+- name: reference
+  title: Reference documentation
+
+- name: management
+  title: Development management
+
+- name: testing
+  title: Testing
+
+- name: other
+  title: Other topics
