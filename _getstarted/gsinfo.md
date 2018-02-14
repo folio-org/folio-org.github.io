@@ -72,6 +72,8 @@ Eventually go via the foundation described in
 to
 [Skeleton module](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#skeleton-module).
 
+Then move on to creating a real module with the help of [stripes-cli](https://github.com/folio-org/stripes-cli).
+
 The [Regression tests for FOLIO UI](https://github.com/folio-org/ui-testing) will assist.
 
 # Primer Develop Back End

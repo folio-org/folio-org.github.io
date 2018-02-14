@@ -12,7 +12,7 @@ description: >
   library platform, designed to facilitate collaboration between
   disparate development teams.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://dev.folio.org" # the base hostname & protocol for your site
+url: "https://dev.folio.org" # the base hostname & protocol for your site
 foliourl: https://www.folio.org/
 roadmapurl: https://wiki.folio.org/display/PC/FOLIO+Roadmap
 discussurl: https://discuss.folio.org
@@ -27,7 +27,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-gist
-
+ 
 exclude: [bin, Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, tmp, vendor, work]
 
 defaults:
