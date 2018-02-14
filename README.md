@@ -1,5 +1,4 @@
-This is the source for "FOLIO Developers" at folio-org.github.io
-which is [dev.folio.org](http://dev.folio.org/)
+This is the source for "FOLIO Developers" at [dev.folio.org](http://dev.folio.org/)
 
 To contribute changes, please make the changes in a new branch and submit a
 pull request.
@@ -42,7 +41,6 @@ See [notes](work/README.md).
 ## Theme enhancements
 
 If there is a need to override any more files, then copy them from the theme.
-To find them, do: `bundle show classic-jekyll-theme`
 
 ## Regenerate ToC
 
@@ -52,6 +50,8 @@ Then replace the ToC with the generated output.
 ## Deployment
 
 The master branch is automatically deployed as [dev.folio.org](http://dev.folio.org/)
+
+Other branches are re-built upon push of changes. Follow the GitHub link from the branch's continuous-integration details.
 
 ## Additional information
 
