@@ -3,8 +3,8 @@ This is the source for "FOLIO Developers" at [dev.folio.org](https://dev.folio.o
 To contribute changes, please make the changes in a new branch and submit a
 pull request.
 
-Local development requires [Ruby](https://www.ruby-lang.org/) and
-[Bundler](https://bundler.io/).
+Local development requires [curl](https://curl.haxx.se/) and
+[Ruby](https://www.ruby-lang.org/) and [Bundler](https://bundler.io/).
 The 'bundle install' step will install the relevant local
 [Jekyll](https://jekyllrb.com/).
 
