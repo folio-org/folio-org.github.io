@@ -9,7 +9,9 @@
 		  <div id="js-toc" class="toc">
 		  </div>			
 		  {% else %}
-          <li style="border-left-style: solid; border-left-color: #EEE;"><a id=subsubmenu href="{{ item_url | prepend: site.baseurl }}">{{ section.title }}</a></li>
+		    {% if p.faqOrder == NULL %}
+               <li style="border-left-style: solid; border-left-color: #EEE;"><a id=subsubmenu href="{{ item_url | prepend: site.baseurl }}">{{ section.title }}</a></li>
+			 {% endif %}
 		  {% endif %}		  
         {% endfor %}
 {% endfor %}

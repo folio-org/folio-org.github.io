@@ -1,3 +1,17 @@
-- title: Getting Started
+- title: Basics
   getstarted:
   - gsinfo
+- title: Frequently Asked Questions
+  getstarted:
+  - faqs
+  - faqs/how-to-become-familiar
+  - faqs/explain-permissions-system
+  - faqs/explain-release-procedures
+  - faqs/how-to-configure-api-doc-generation
+  - faqs/how-to-create-doc-faq
+  - faqs/how-to-establish-development-setup
+  - faqs/how-to-get-started
+  - faqs/how-to-test-prior-to-commit
+  - faqs/where-is-api-documentation
+  - faqs/where-is-project-roadmap
+ 
