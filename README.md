@@ -42,11 +42,6 @@ See [notes](work/README.md).
 
 If there is a need to override any more files, then copy them from the theme.
 
-## Regenerate ToC
-
-To regenerate the Table of Contents for some source files, see instructions above its ToC.
-Then replace the ToC with the generated output.
-
 ## Deployment
 
 The master branch is automatically deployed as [dev.folio.org](https://dev.folio.org/)

@@ -8,21 +8,6 @@ menuTopTitle: Documentation
 
 A collection of tips to assist developers to configure their local workstation setup environment for FOLIO development.
 
-<!-- ../../okapi/doc/md2toc -l 2 -h 3 setup.md -->
-* [Introduction](#introduction)
-* [Tools](#tools)
-    * [Minimum versions](#minimum-versions)
-    * [Other tools](#other-tools)
-* [Configuration for repository usage](#configuration-for-repository-usage)
-* [Coding style](#coding-style)
-    * [Style guidelines and configuration](#style-guidelines-and-configuration)
-    * [Code analysis and linting](#code-analysis-and-linting)
-    * [Use EditorConfig for consistent whitespace](#use-editorconfig-for-consistent-whitespace)
-    * [No license header](#no-license-header)
-* [Use .gitignore](#use-gitignore)
-* [Update git submodules](#update-git-submodules)
-* [Troubleshooting](#troubleshooting)
-
 ## Introduction
 
 Assume already doing other development, so know how to keep the operating system up-to-date, know its quirks, know how to use the various package managers. So this document will not go into detail about that.

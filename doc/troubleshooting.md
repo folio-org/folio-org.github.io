@@ -9,14 +9,6 @@ menuTopTitle: Documentation
 A collection of general tips to assist developers to conduct troubleshooting.
 Some FOLIO repositories also have specific notes.
 
-<!-- ../../okapi/doc/md2toc -l 2 -h 3 troubleshooting.md -->
-* [Other troubleshooting documents](#other-troubleshooting-documents)
-* [Keep system tools up-to-date](#keep-system-tools-up-to-date)
-* [Update git submodules](#update-git-submodules)
-* [Do development and operations as a regular user](#do-development-and-operations-as-a-regular-user)
-* [Launching Vagrant on Windows](#launching-vagrant-on-windows)
-* [Missing certificate authority for Let's Encrypt](#missing-certificate-authority-for-lets-encrypt)
-
 ## Other troubleshooting documents
 
 * [Stripes troubleshooting](https://github.com/folio-org/stripes-core/blob/master/doc/troubleshooting.md)
