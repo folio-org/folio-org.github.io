@@ -8,30 +8,6 @@ menuTopTitle: Documentation
 
 This document summarises the release procedures for FOLIO projects.
 
-<!-- ../../okapi/doc/md2toc -l 2 -h 3 release-procedures.md -->
-* [Introduction](#introduction)
-* [Maven-based modules](#maven-based-modules)
-    * [Ensure POM declarations](#ensure-pom-declarations)
-    * [Ensure that Jira issues are ready](#ensure-that-jira-issues-are-ready)
-    * [Make a release branch](#make-a-release-branch)
-    * [Prepare the news document](#prepare-the-news-document)
-    * [Update any scripts and descriptors for release version](#update-any-scripts-and-descriptors-for-release-version)
-    * [Prepare and perform the source release](#prepare-and-perform-the-source-release)
-    * [Update any scripts and descriptors for next development release](#update-any-scripts-and-descriptors-for-next-development-release)
-    * [Build and release artifacts](#build-and-release-artifacts)
-    * [Merge the release branch into master](#merge-the-release-branch-into-master)
-    * [Add release notes to GitHub](#add-release-notes-to-github)
-    * [Prepare Jira for next release](#prepare-jira-for-next-release)
-    * [Announce](#announce)
-    * [Improve this doc](#improve-this-doc)
-    * [Other current Maven-related discussion](#other-current-maven-related-discussion)
-* [Gradle-based modules](#gradle-based-modules)
-    * [Change the release version](#change-the-release-version)
-    * [Update to unreleased version](#update-to-unreleased-version)
-    * [Trigger the release](#trigger-the-release)
-* [Stripes-based modules](#stripes-based-modules)
-    * [Other current Stripes-related discussion](#other-current-stripes-related-discussion)
-
 ## Introduction
 
 There are separate notes about the

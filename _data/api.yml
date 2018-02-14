@@ -1,6 +1,6 @@
 # List of locations of RAML files.
 #
-# Used by docs/api/index.md and folio-infrastructure/generate-api-docs
+# Used by docs/api/index.md and folio-tools/generate-api-docs
 ---
 okapi:
   - label: null

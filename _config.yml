@@ -12,7 +12,7 @@ description: >
   library platform, designed to facilitate collaboration between
   disparate development teams.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://dev.folio.org" # the base hostname & protocol for your site
+url: "https://dev.folio.org" # the base hostname & protocol for your site
 google_analytics: UA-79833310-3
 github_username: folio-org
 twitter_username: folio_lsp

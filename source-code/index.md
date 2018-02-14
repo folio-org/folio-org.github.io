@@ -266,6 +266,9 @@ exists and can be run, the APIs are likely to change.
   The current built boxes are also available to download from
   [Vagrant Cloud](https://app.vagrantup.com/folio).
 
+- [folio-install](https://github.com/folio-org/folio-install)
+  -- Runbooks for FOLIO installation.
+
 - [ui-testing](https://github.com/folio-org/ui-testing)
   -- Regression tests for FOLIO UI.
   The testing framework is explained. Guidelines for module developers.

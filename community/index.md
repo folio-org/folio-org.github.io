@@ -48,7 +48,7 @@ Some of the important forums to collaborate, discuss FOLIO, interact with other 
       </td>
     </tr>
     <tr>
-      <td> <a href="http://dev.folio.org">dev.folio.org</a> </td>
+      <td> <a href="/">dev.folio.org</a> </td>
       <td> Developer documentation. Also leads to documentation at each repository. </td>
       <td>
         <a href="https://github.com/folio-org/folio-org.github.io/blob/master/README.md">How to</a>
