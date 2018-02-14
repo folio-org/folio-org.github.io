@@ -7,4 +7,4 @@ categories: news
 
 Welcome to the "FOLIO Developer" web site at [dev.folio.org][folio-dev]
 
-[folio-dev]: http://dev.folio.org/
+[folio-dev]: https://dev.folio.org/

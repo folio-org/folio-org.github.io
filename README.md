@@ -1,4 +1,4 @@
-This is the source for "FOLIO Developers" at [dev.folio.org](http://dev.folio.org/)
+This is the source for "FOLIO Developers" at [dev.folio.org](https://dev.folio.org/)
 
 To contribute changes, please make the changes in a new branch and submit a
 pull request.
@@ -49,14 +49,14 @@ Then replace the ToC with the generated output.
 
 ## Deployment
 
-The master branch is automatically deployed as [dev.folio.org](http://dev.folio.org/)
+The master branch is automatically deployed as [dev.folio.org](https://dev.folio.org/)
 
 Other branches are re-built upon push of changes. Follow the GitHub link from the branch's continuous-integration details.
 
 ## Additional information
 
 See project [FOLIO](https://issues.folio.org/browse/FOLIO)
-at the [FOLIO issue tracker](http://dev.folio.org/community/guide-issues).
+at the [FOLIO issue tracker](https://dev.folio.org/community/guide-issues).
 We use the label "devweb".
 
 The FOLIO Slack channel #dev-website
