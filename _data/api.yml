@@ -117,7 +117,7 @@ mod-user-import:
     directory: ramls
     files:
       - import
-    ramlutil: null
+    ramlutil: ramls/raml-util
 
 mod-finance:
   - label: null
