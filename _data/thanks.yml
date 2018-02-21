@@ -1,0 +1,41 @@
+- name: Cornell University
+  url: https://cornell.edu
+  image: /images/thanks-logos/cornell.png
+  width: 150
+  height: 146
+
+- name: Texas A&M University
+  url: https://tamu.edu
+  image: /images/thanks-logos/tamu.png
+  width: 150
+  height: 150
+
+- name: The University of Chicago
+  url: https://uchicago.edu
+  image: /images/thanks-logos/uchicago.png
+  width: 150
+  height: 150
+
+- name: Index Data
+  url: http://indexdata.com
+  image: /images/thanks-logos/indexdata.gif
+  width: 89
+  height: 117
+
+- name: EBSCO Information Services
+  url: https://ebsco.com
+  image: /images/thanks-logos/ebsco.png
+  width: 150
+  height: 73
+
+- name: Qulto
+  url: https://qulto.eu
+  image: /images/thanks-logos/qulto.png
+  width: 200
+  height: 70
+
+- name: The Frontside
+  url: https://frontside.io
+  image: /images/thanks-logos/frontside.svg
+  width: 150
+  height: 150
