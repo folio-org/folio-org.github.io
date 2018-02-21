@@ -38,7 +38,8 @@ There are separate notes about the
 
 The procedure is outlined here for "Okapi" and is similar for other Maven-based modules.
 
-### Ensure POM declarations
+### Once: Ensure POM declarations
+(You only need to do this once for a project. On subsequent releases you can skip this point)
 
 For Maven-based projects, the [Maven Release Plugin](//maven.apache.org/maven-release/maven-release-plugin)
 is required.  To enable the release plugin, add the following to
@@ -111,7 +112,7 @@ Take extra care with spelling and readability.
 git commit -m "Update NEWS" NEWS.md
 ```
 
-### Update any scripts and descriptors for release version
+### Optional: Update any scripts and descriptors for release version
 
 Update version numbers in places that maven will not do automatically, to the
 version you are about to release. That could be ModuleDescriptors, LaunchDescriptors,
@@ -146,7 +147,7 @@ git push
 git push --tags
 ```
 
-### Update any scripts and descriptors for next development release
+### Optional: Update any scripts and descriptors for next development release
 Update version numbers in the same places you did earlier, but now for the
 next development version
 
@@ -154,6 +155,8 @@ next development version
 git commit -a -m "Towards version X.Y.Q-SNAPSHOT"
 git push
 ```
+(If the push fails, you should have been on a release branch. It is not too late
+to switch now! `git checkout -b "release-X.Y.Z"`)
 
 ### Build and release artifacts
 
@@ -166,7 +169,8 @@ Navigate to the
 folder and select your module's Jenkins job name with the '-release' suffix.
 For example, 'okapi-release'.   Select 'Build with Parameters' and select the release tag you
 want to release.  This will build the release artifacts and deploy them to the proper
-repositories.
+repositories. (If you do not see the 'Build with Parameters' menu point, check that
+you have logged in!)
 
 ### Merge the release branch into master
 Go to GitHub and make a pull request for the release branch you just pushed.
