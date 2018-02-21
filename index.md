@@ -31,3 +31,11 @@ invite you to provide feedback and explore ideas with us.  Join the
 
 The FOLIO Project is [grateful](about/thanks) for the support of contributors,
 other open source projects, and commercial providers.
+
+{% assign shortlist = site.data.thanks | sample: 4 %}
+<div class="text-centered">
+{% assign thanks = shortlist | shuffle %}
+{% for item in thanks %}
+  <a href="{{ item.url }}" title="{{ item.name }}"><img src="{{ item.image }}" alt="logo" width="{{ item.width }}" height="{{ item.height }}"/></a>
+{% endfor %}
+</div>
