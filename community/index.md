@@ -1,17 +1,13 @@
 ---
 layout: page
 title: FOLIO Community
+permalink: /community/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Community
 menuTopIndex: 6
-menuSubTitle: "Overview"
+menuSubTitle: Community overview
 menuSubIndex: 1
-menuSubs:
--
- title: Collaboration tools
- index: 2
- anchorId: collaboration-tools
 ---
 
 ## Roadmap
@@ -52,7 +48,7 @@ Some of the important forums to collaborate, discuss FOLIO, interact with other 
       </td>
     </tr>
     <tr>
-      <td> <a href="http://dev.folio.org">dev.folio.org</a> </td>
+      <td> <a href="/">dev.folio.org</a> </td>
       <td> Developer documentation. Also leads to documentation at each repository. </td>
       <td>
         <a href="https://github.com/folio-org/folio-org.github.io/blob/master/README.md">How to</a>
@@ -115,9 +111,10 @@ The FOLIO developer community consists of:
 - Many supporting individuals whose contributions feed into and guide
   the development process
 
-Here we list the engineering roles and contacts for the various parts of
+The following sections list the engineering roles and contacts for the various parts of
 the project.  Team members can be contacted via the collaboration tools
 listed above.
+There is also the [FOLIO Developer Directory](https://wiki.folio.org/display/COMMUNITY/FOLIO+Developer+Directory) listing some developers and their general work areas.
 
 ### Engineering core team
 

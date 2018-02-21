@@ -1,0 +1,30 @@
+---
+# Ansible playbook for Lesson 4
+- hosts: localhost
+  tasks:
+    - name: Create platform package.json
+      copy: src=files/04_package.json dest={{ folio_root }}/stripes-tutorial-platform/package.json
+      notify: Rebuild Stripes
+
+    - name: Create platform stripes.config.js
+      copy: src=files/04_stripes.config.js dest={{ folio_root }}/stripes-tutorial-platform/stripes.config.js
+
+    - name: Clone mod-users git repository
+      git: repo=https://github.com/folio-org/mod-users dest={{ folio_root }}/mod-users
+      register: mod_users_clone
+
+    - name: Force Maven build if repository updated
+      file: path={{ folio_root }}/mod-users/install.log state=absent
+      when: mod_users_clone.changed
+
+    - name: Build mod-users
+      shell: mvn clean install > install.log
+      args:
+        chdir: "{{ folio_root }}/mod-users"
+        creates: "{{ folio_root }}/mod-users/install.log"
+
+  handlers:
+    - name: Rebuild Stripes
+      command: yarn install
+      args:
+        chdir: "{{ folio_root }}/stripes-tutorial-platform"

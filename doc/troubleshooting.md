@@ -1,18 +1,13 @@
 ---
 layout: page
 title: General troubleshooting
+permalink: /doc/troubleshooting/
+menuInclude: no
+menuTopTitle: Documentation
 ---
 
 A collection of general tips to assist developers to conduct troubleshooting.
 Some FOLIO repositories also have specific notes.
-
-<!-- ../../okapi/doc/md2toc -l 2 -h 3 troubleshooting.md -->
-* [Other troubleshooting documents](#other-troubleshooting-documents)
-* [Keep system tools up-to-date](#keep-system-tools-up-to-date)
-* [Update git submodules](#update-git-submodules)
-* [Do development and operations as a regular user](#do-development-and-operations-as-a-regular-user)
-* [Launching Vagrant on Windows](#launching-vagrant-on-windows)
-* [Missing certificate authority for Let's Encrypt](#missing-certificate-authority-for-lets-encrypt)
 
 ## Other troubleshooting documents
 
@@ -21,16 +16,16 @@ Some FOLIO repositories also have specific notes.
 
 ## Keep system tools up-to-date
 
-As [explained](setup#introduction) in the FOLIO setup documentation,
+As [explained](/doc/setup#introduction) in the FOLIO setup documentation,
 keeping the operating system and tools up-to-date will generally help to
 avoid issues.
-See [minimum versions](setup#tools) of some tools.
+See [minimum versions](/doc/setup#tools) of some tools.
 
 ## Update git submodules
 
 Some FOLIO repositories utilize “git submodules” for sections of common code.
 Some git clients do not handle this properly.
-See [notes](setup#update-git-submodules).
+See [notes](/doc/setup#update-git-submodules).
 
 ## Do development and operations as a regular user
 

@@ -1,59 +1,24 @@
 ---
 layout: page
 title: Documentation
+permalink: /doc/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Documentation
 menuTopIndex: 5
-menuSubTitle: Overview
+menuSubTitle: Documentation overview
 menuSubIndex: 1
 menuSubs:
--
- title: Guides
- index: 2
- anchorId: guides
--
- title: Background orientation
- index: 3
- anchorId: background-orientation
--
- title: Setup and configuration
- index: 4
- anchorId: setup-and-configuration
--
- title: Getting started
- index: 5
- anchorId: getting-started
--
- title: Reference documentation
- index: 6
- anchorId: reference-documentation
--
- title: Fundamental documentation
- index: 7
- anchorId: fundamental-documentation
--
- title: Development tips
- index: 8
- anchorId: development-tips
--
- title: Tutorials
- index: 9
- anchorId: tutorials
--
- title: Development management
- index: 10
- anchorId: development-management
--
- title: Community
- index: 11
- anchorId: community
+- title: Guides
+  anchorId: guides
+- title: FAQs
+  url: /faqs/
 ---
 
 Documentation for the various components of FOLIO is in continuous
 development. Since the system is composed of many separate components,
 each component is documented individually. The best places to start are
-the [FOLIO Developer's Curriculum](http://dev.folio.org/curriculum), which
+the [FOLIO Developer's Curriculum](/tutorials/curriculum/), which
 is a series of self-paced or instructor-guided lessons, and the early chapters
 of the [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md),
 which describe the system as a whole and explain how the parts fit
@@ -63,12 +28,12 @@ In the context of those early chapters, you may then wish to go on to:
 
 ## Community and contribution
 
-The [community section](../community/) explains how to be involved,
+The [community section](/community/) explains how to be involved,
 provides the contribution guidelines, lists the various collaboration tools
 and has some recommendations about when to use each.
 
 ## Developer's curriculum
-The [FOLIO Developer's Curriculum](http://dev.folio.org/curriculum) is a series
+The [FOLIO Developer's Curriculum](/tutorials/curriculum/) is a series
 of lessons that can be followed on your own or can form the basis of an
 instructor-led workshop.
 
@@ -88,7 +53,7 @@ and some sample module code.
 to the specific documentation for each of those modules.
 
 With that background understanding, see the documentation for each
-[server-side](../source-code/#server-side)
+[server-side](/source-code/#server-side)
 module, especially RAML Module Builder (RMB).
 
 ## User Interface
@@ -98,7 +63,7 @@ The FOLIO user-interface toolkit is called Stripes. It is described in the
 which leads to the related documentation.
 
 With that background understanding, see the documentation for each
-[client-side](../source-code/#client-side)
+[client-side](/source-code/#client-side)
 module, especially the "ui-users".
 
 The
@@ -174,7 +139,7 @@ Configurations for accessing.
 - [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md).
 - [FOLIO-Sample-Modules guide](https://github.com/folio-org/folio-sample-modules/blob/master/README.md).
 - [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework.
-- Each [server-side](../source-code/#server-side) and [client-side](../source-code/#client-side)
+- Each [server-side](/source-code/#server-side) and [client-side](/source-code/#client-side)
 module's own documentation.
 - [Stripes Core README](https://github.com/folio-org/stripes-core/blob/master/README.md)
 guides to all front-end documentation.
@@ -189,6 +154,7 @@ The testing framework is explained. Guidelines for module developers.
 
 - Conduct [troubleshooting](troubleshooting).
 - [Code analysis and linting facilities](code-analysis) explains ESLint, SonarQube, other lint tools, and preparing for pull requests.
+- For Contextual Query Language (CQL) examples, see the [Glossary](glossary#cql), the FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/cql2pgjson-java), the [API docs](api), and the debug output for tests in each backend module.
 
 ### Tutorials
 
@@ -201,7 +167,8 @@ instructor-led workshop.
 - [Release procedures](release-procedures).
 - [Search and report facilities](/search-other) (e.g. open pull requests needing review).
 - [Create a new FOLIO module and do initial setup](create-new-repo).
-- The [FOLIO project roadmap](https://wiki.folio.org/display/PC/FOLIO+Roadmap).
+- The [FOLIO Project Roadmap](https://wiki.folio.org/display/PC/FOLIO+Roadmap) including the development and milestone plan for Version 1 and the feature backlog,
+and the [FOLIO Development Process Overview](https://wiki.folio.org/display/COMMUNITY/FOLIO+Development+Process+Overview), and other important documents and resources are listed at the [Wiki](https://wiki.folio.org).
 
 ### Community
 
@@ -216,4 +183,4 @@ instructor-led workshop.
 - The FOLIO [build, test, and deployment infrastructure](automation).
 - A proposal for [error response formats](https://github.com/folio-org/okapi/blob/master/doc/error-formats-in-folio.md).
 - [FOLIO UX](http://ux.folio.org/) -- user experience (UX) driven design and prototypes.
-- [FOLIOForums](https://www.openlibraryenvironment.org/archives/category/olfforum) -- upcoming events and recordings of past ones.
+- [Events and presentations](events).

@@ -1,30 +1,18 @@
 ---
 layout: page
 title: Setup development environment
+permalink: /doc/setup/
+menuInclude: no
+menuTopTitle: Documentation
 ---
 
 A collection of tips to assist developers to configure their local workstation setup environment for FOLIO development.
-
-<!-- ../../okapi/doc/md2toc -l 2 -h 3 setup.md -->
-* [Introduction](#introduction)
-* [Tools](#tools)
-    * [Minimum versions](#minimum-versions)
-    * [Other tools](#other-tools)
-* [Configuration for repository usage](#configuration-for-repository-usage)
-* [Coding style](#coding-style)
-    * [Style guidelines and configuration](#style-guidelines-and-configuration)
-    * [Code analysis and linting](#code-analysis-and-linting)
-    * [Use EditorConfig for consistent whitespace](#use-editorconfig-for-consistent-whitespace)
-    * [No license header](#no-license-header)
-* [Use .gitignore](#use-gitignore)
-* [Update git submodules](#update-git-submodules)
-* [Troubleshooting](#troubleshooting)
 
 ## Introduction
 
 Assume already doing other development, so know how to keep the operating system up-to-date, know its quirks, know how to use the various package managers. So this document will not go into detail about that.
 
-FOLIO modules can be developed in any suitable [programming language](any-programming-language).
+FOLIO modules can be developed in any suitable [programming language](/doc/any-programming-language).
 
 The [FOLIO-Sample-Modules](https://github.com/folio-org/folio-sample-modules) explains about module development.
 The various [Stripes](/doc#user-interface) documentation explains user-interface development.
@@ -51,7 +39,7 @@ As each FOLIO component can utilise whatever suite of appropriate tools, refer t
 
 Occasionally it becomes necessary to specify minimum versions of some tools:
 
-* Java: [1.8.0-101](troubleshooting#missing-certificate-authority-for-lets-encrypt)
+* Java: [1.8.0-101](/doc/troubleshooting#missing-certificate-authority-for-lets-encrypt)
 
 ### Other tools
 
@@ -64,10 +52,10 @@ Note that this is not required to be installed for running modules using the "em
 FOLIO utilizes the Nexus OSS Repository Manager to host Maven artifacts and NPM packages for FOLIO projects.
 Docker images are the primary distribution model for FOLIO modules.
 
-See [Built artifacts](artifacts) for configuration details for accessing the released and snapshot FOLIO artifacts.
+See [Built artifacts](/doc/artifacts) for configuration details for accessing the released and snapshot FOLIO artifacts.
 
 For developers needing to publish artifacts, an overview and usage configuration details are provided, see
-[Build, test, and deployment infrastructure](automation).
+[Build, test, and deployment infrastructure](/doc/automation).
 
 ## Coding style
 
@@ -79,7 +67,7 @@ Refer to the [coding style](/community/contrib-code#coding-style) sections of th
 ### Code analysis and linting
 
 All code repositories have linter and code-style analysis facilities implemented as part of their continuous integration build process.
-The process is [explained](code-analysis), along with usage notes and configuration for running those tools locally.
+The process is [explained](/doc/code-analysis), along with usage notes and configuration for running those tools locally.
 
 ### Use EditorConfig for consistent whitespace
 
@@ -139,7 +127,7 @@ Some FOLIO repositories utilize "git submodules" for sections of common code.
 For example, each `mod-*` module and `raml-module-builder` include the "raml" repository as a git submodule as its `raml-util` directory.
 
 Note that when originally cloning a repository, use 'git clone --recursive ...'
-Some git clients do not. If you then have an empty "raml-util" directory, then do 'git submodule update --init'.
+Some git clients do not. If you then have an empty "raml-util" directory, then do `git submodule update --init`
 
 Thereafter updating that submodule is deliberately not automated, so that we can ensure a stable build when we git checkout in the future.
 
@@ -165,6 +153,8 @@ and make them executable: 'chmod +x post-checkout post-merge'
 
 Now subsequent updates will also update the submodules to their declared revision.
 
+For Maven-based modules, add to your POM file (copy the 'git submodule update' from mod-notes) to assist all git clients to update.
+
 ## Troubleshooting
 
-See [notes](troubleshooting).
+See [notes](/doc/troubleshooting).

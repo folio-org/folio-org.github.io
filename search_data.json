@@ -2,18 +2,27 @@
 layout: null
 ---
 [
-  {%- assign sortedPages = site.pages | sort:"title" -%}
+  {%- assign sortedPages = site.pages | concat: site.documents | sort:"title" -%}
   {%- for page in sortedPages -%}
     {%- assign docId = page.url | slugify -%}
     {%- if docId == "" -%}{%- assign docId = "home" -%}{%- endif -%}
     {%- if docId == "search-data-json" -%}{%- continue -%}{%- endif -%}
     {%- if docId == "assets-main-css" -%}{%- continue -%}{%- endif -%}
-    {%- if docId == "navbanner-html" -%}{%- continue -%}{%- endif -%}
+    {%- if docId == "banner-area-html" -%}{%- continue -%}{%- endif -%}
     {%- if docId == "feed-xml" -%}{%- continue -%}{%- endif -%}
     {%- if docId == "about" -%}{%- continue -%}{%- endif -%}
+    {%- assign areas = page.url | split:'/' -%}
+    {%- assign len = areas.size | minus: 2 -%}
+    {%- capture leader -%}
+      {%- if page.titleLeader -%}
+        {{ page.titleLeader | append:' ' }}
+      {%- else -%} 
+        {% for i in (1..len) %}{{ areas[i] | capitalize }} | {% endfor %}
+      {%- endif -%}
+    {%- endcapture -%}
     {
       "id": "{{ docId }}",
-      "title": "{{ page.title | xml_escape }}",
+      "title": "{{ leader | remove:'Doc |' }}{{ page.title | xml_escape }}",
       "content": "{{ page.content | strip_html | escape | remove: '\' |  split: ' ' | join: ' ' }}",
       "url": "{{ page.url | xml_escape | remove: '.html' }}",
       "author": "{{ page.author | xml_escape }}",

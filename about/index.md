@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About FOLIO
+permalink: /about/
 ---
 
 ## Presentations

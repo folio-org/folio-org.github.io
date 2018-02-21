@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Which forum to use for communication
+permalink: /community/which-forum/
 menuInclude: yes
 menuLink: yes
-menuTopTitle: Community
-menuTopIndex: 6
-menuSubTitle: Interaction
+menuTopTitle: Contributing
+menuSubTitle: Which forum to use
 menuSubIndex: 3
 ---
 
@@ -19,7 +19,7 @@ We each need to pause and consider the best forum.
 There are no rules, but these guidelines can assist.
 
 As explained in the
-[collaboration tools](../community/#collaboration-tools) section,
+[collaboration tools](/community/#collaboration-tools) section,
 we have four primary forums:
 [Discuss](#discuss) (messaging forum),
 [Wiki](#wiki) (documents),
@@ -102,16 +102,16 @@ We follow a variation of the Apache motto:
 
 [https://issues.folio.org](https://issues.folio.org)
 
-- Specific bugs, problems, feature requests.
+- Specific bugs, problems, feature requests, obscure messages or behaviour.
 
 - Also tasks that you know need to be done sometime later.
 
 - If not clear whether to add a new issue, then commence a
-  Discuss topic first, and later summarize into an Issue.
+  Discuss topic or ask via Slack, and later summarize into an Issue.
 
 - Describe the issue concisely in the Summary and Description fields.
   Use Comments for further detail.
-  See [Guidelines for FOLIO issue tracker](guide-issues).
+  See [Guidelines for FOLIO issue tracker](/community/guide-issues) for notes about what to report and how to do so.
 
 - Follow up in other forums for any lengthy discussion.
   Then summarise into further issue tracker comments.
@@ -126,11 +126,10 @@ We follow a variation of the Apache motto:
 - See the lists of [all repositories](/source-code) with sections for
 [server-side](/source-code/#server-side) and
 [client-side](/source-code/#client-side) and
-[other](/source-code/#other-projects) and
-projects.
+[other](/source-code/#other-projects) projects.
 
 - As explained in
-  [Guidelines for Contributing Code](contrib-code),
+  [Guidelines for Contributing Code](/community/contrib-code),
   use Feature Branches for any task beyond a minor text edit.
 
 - Use a descriptive name for the branch, with an Issue tracker number

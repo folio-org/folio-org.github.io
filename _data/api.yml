@@ -1,6 +1,6 @@
 # List of locations of RAML files.
 #
-# Used by docs/api/index.md and folio-infrastructure/generate-api-docs
+# Used by docs/api/index.md and folio-tools/generate-api-docs
 ---
 okapi:
   - label: null
@@ -32,21 +32,27 @@ raml:
       - groups
       - users
       - addressTypes
+      - proxiesFor
     ramlutil: .
   - label: shared-mod-users-bl
     directory: ramls/mod-users-bl
     files:
       - mod-users-bl
     ramlutil: .
+  - label: shared-codex
+    directory: ramls/codex
+    files:
+      - codex
+    ramlutil: .
 
 raml-module-builder:
   - label: domain-models-api-interfaces
-    directory: domain-models-api-interfaces/raml
+    directory: domain-models-api-interfaces/ramls
     files:
       - admin
       - jobs
       - sample
-    ramlutil: domain-models-api-interfaces/raml/raml-util
+    ramlutil: domain-models-api-interfaces/ramls/raml-util
 
 mod-circulation:
   - label: null
@@ -84,10 +90,19 @@ mod-inventory-storage:
   - label: null
     directory: ramls
     files:
+      - holdings-storage
       - instance-storage
+      - instance-format
+      - instance-type
       - item-storage
+      - classification-type
+      - contributor-type
+      - contributor-name-type
+      - identifier-type
       - loan-type
       - material-type
+      - platform
+      - shelf-location
     ramlutil: ramls/raml-util
 
 mod-login-saml:
@@ -102,7 +117,20 @@ mod-user-import:
     directory: ramls
     files:
       - import
-    ramlutil: null
+    ramlutil: ramls/raml-util
+
+mod-finance:
+  - label: null
+    directory: ramls
+    files:
+      - budget
+      - fiscal_year
+      - fund_distribution
+      - funds
+      - ledger
+      - tag
+      - transaction
+    ramlutil: ramls/raml-util
 
 mod-notes:
   - label: null
@@ -116,4 +144,20 @@ mod-notify:
     directory: ramls
     files:
       - notify
+    ramlutil: ramls/raml-util
+
+mod-orders:
+  - label: null
+    directory: ramls
+    files:
+      - purchase_order
+    ramlutil: ramls/raml-util
+
+mod-vendors:
+  - label: null
+    directory: ramls
+    files:
+      - vendor
+      - contact_category
+      - vendor_category
     ramlutil: ramls/raml-util

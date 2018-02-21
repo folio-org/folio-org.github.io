@@ -1,9 +1,25 @@
-.highlighter-rouge pre.highlight {
+div.highlight {
+  border: 1px solid $f-color-light-grey;
+}
+.highlighter-rouge .highlight {
+  background-color: $f-color-lighter-grey;
+}
+code.highlighter-rouge {
   background-color: $f-color-lighter-grey;
 }
 
+/*
+  The "overflow-x: auto" does not work well with "banner-position: top-fixed" ".anchor"
+  and when a pre code block is immediately before a "h*" heading.
+*/
+.highlight {
+  overflow-x: unset;
+}
 pre {
-  border: 1px solid $f-color-light-grey;
+  white-space: pre-wrap;
+}
+
+pre {
   padding-left: 2px;
   padding-right: 2px;
   background-color: $f-color-lighter-grey;
@@ -12,6 +28,14 @@ code {
   padding-left: 1px;
   padding-right: 1px;
   background-color: $f-color-lighter-grey;
+}
+
+.attention {
+  border-color: $f-color-attention;
+  border-style: solid;
+  border-width: 1px 1px 1px 3px;
+  padding-left: 2px;
+  padding-right: 1px;
 }
 
 table {
@@ -26,20 +50,25 @@ th, td {
 th {
   background-color: $f-color-lighter-grey;
 }
+table.api {
+  table-layout: fixed;
+  width: 35em;
+}
+table.api .label {
+  width: 44%;
+}
+table.api .raml {
+  width: 35%;
+}
+table.api .view {
+  width: 11%;
+}
 
+/*
 :target {
   border-left: 5px solid $f-color-orange;
 }
-tr:target td:first-child {
-  border-left: 5px solid $f-color-orange;
-}
-
-// Reduce vertical whitespace
-.page-title {
-  text-align: center;
-  margin-top: $vspacing-unit;
-  margin-bottom: $vspacing-unit;
-}
+*/
 
 // Set our link and visited colors
 a {
@@ -66,4 +95,64 @@ form {
 }
 form input {
   font-size: 1.3em;
+}
+nav.folio {
+  div.dropdown {
+    z-index: 9;
+  }
+}
+/* tocbot */
+#js-toc-wrapper {
+  background-color: $f-color-lighter-grey;
+}
+li.toc-list-item {
+  width: 210px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: $small-1-font-size;
+}
+a.is-active-link::before {
+  background-color: $f-color-orange;
+}
+h1, h2, h3 {
+  outline: none;
+}
+@media screen and (min-width: 0px) and (max-width: $narrow-max-width) {
+  #js-toc-wrapper {
+    position: fixed;
+    right: -12em;
+    top: 50%;
+    width: 11em;
+    margin: 0;
+    padding: 0.5em 0.5em 0.5em 2.5em;
+    box-shadow: 0 1px 3px black;
+    border-radius: 3em 0.5em 0.5em 3em;
+    transition: 0.2s;
+    transform: translate(0, -50%);
+  }
+  #js-toc-wrapper:hover {
+    right: 0;
+  }
+}
+
+/* for Tutorials */
+.vagrant-note {
+  background-image: url(/images/vagrant-icon.png);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  border: 4px solid #2991CC;
+  margin: 10px 0 15px 0;
+  padding: 10px 15px 5px 100px;
+}
+.vagrant-on-windows-note {
+  background-image: url(/images/vagrant-on-windows-icon.png);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  border: 4px solid #0078D8;
+  margin: 10px 0 15px 0;
+  padding: 10px 15px 5px 100px;
+}
+img {
+  max-width: 100%
 }

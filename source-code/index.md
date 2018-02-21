@@ -1,25 +1,13 @@
 ---
 layout: page
 title: Source Code
+permalink: /source-code/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Source
 menuTopIndex: 3
-menuSubTitle: Overview
+menuSubTitle: Source-code overview
 menuSubIndex: 1
-menuSubs:
--
-  title: Server-side
-  index: 2
-  anchorId: server-side
--
-  title: Client-side
-  index: 3
-  anchorId: client-side
--
-  title: Other projects
-  index: 4
-  anchorId: other-projects
 ---
 
 The FOLIO platform consists of both server-side and client-side components, and
@@ -53,7 +41,7 @@ system. These repositories fall into three categories:
 release often](https://en.wikipedia.org/wiki/Release_early,_release_often)
 philosophy.  **We want your feedback** in the form of pull requests and filed
 issues and general discussion via the
-[collaboration tools](../community).
+[collaboration tools](/community).
 
 ## Server-side
 
@@ -73,7 +61,7 @@ facilitated by the code in the `raml-module-builder` repository.
 - [raml](https://github.com/folio-org/raml)
   -- Repository of RAML files, including JSON Schemas, traits and
   resource types centralized for re-usability.
-  The [API reference](../doc/#api-reference) documentation is also
+  The [API reference](/doc/#api-reference) documentation is also
   generated.
   This repository is the master location for the traits and resource
   types, while each module is the master for its own schemas, examples,
@@ -82,6 +70,10 @@ facilitated by the code in the `raml-module-builder` repository.
 
 - [raml-module-builder](https://github.com/folio-org/raml-module-builder)
   -- Framework facilitating easy module creation based on RAML files.
+
+- [mod-configuration](https://github.com/folio-org/mod-configuration)
+  -- Configuration module based on the raml-module-builder and a set
+  of RAML and JSON Schemas backed by a PostgreSQL asynchronous implementation.
 
 - [mod-authtoken](https://github.com/folio-org/mod-authtoken)
   -- Filtering requests based on JWT tokens.
@@ -117,15 +109,51 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-circulation-storage](https://github.com/folio-org/mod-circulation-storage)
   -- Persistent storage to complement the circulation module.
 
-- [mod-configuration](https://github.com/folio-org/mod-configuration)
-  -- Demo configuration module based on the raml-module-builder and a set
-  of RAML and JSON Schemas backed by a PostgreSQL asynchronous implementation.
+- [mod-graphql](https://github.com/folio-org/mod-graphql)
+  -- Executing GraphQL queries.
+
+- [mod-kb-ebsco](https://github.com/folio-org/mod-kb-ebsco)
+  -- Broker communication with the EBSCO knowledge base.
 
 - [mod-notes](https://github.com/folio-org/mod-notes)
   -- Notes on all types of objects.
 
 - [mod-notify](https://github.com/folio-org/mod-notify)
   -- Notifications to the users.
+
+- [mod-codex-mux](https://github.com/folio-org/mod-codex-mux)
+  -- Codex Multiplexer.
+
+- [mod-codex-mock](https://github.com/folio-org/mod-codex-mock)
+  -- Codex mock module - for testing and development.
+
+- [mod-codex-ekb](https://github.com/folio-org/mod-codex-ekb)
+  -- Codex wrapper for the EBSCO knowledge base.
+
+- [mod-codex-inventory](https://github.com/folio-org/mod-codex-inventory)
+  -- Codex wrapper for local inventory.
+
+- [mod-cataloging](https://github.com/atcult/mod-cataloging)
+  -- FOLIO metadata management / cataloging module.
+
+- [acq-models](https://github.com/folio-org/acq-models)
+  -- Shared repository for the models of the various acquisition modules.
+
+- [mod-finance](https://github.com/folio-org/mod-finance)
+  -- Persistent storage of finance-related data (i.e. funds, ledgers, transactions, etc.).
+
+- [mod-orders](https://github.com/folio-org/mod-orders)
+  -- Persistent storage of order data.
+
+- [mod-vendors](https://github.com/folio-org/mod-vendors)
+  -- Persistent storage of vendor data.
+
+- [mod-pg-embed](https://github.com/folio-org/mod-pg-embed)
+  -- Helper module to start embedded Postgres.
+  Helper for developers that starts the "embedded" postgres server and sets up the environment so that other modules can locate the database.
+
+- [inventory-sample-data](https://github.com/folio-org/inventory-sample-data)
+  -- Provides scripts for data preparation and deployment, e.g. MARC.
 
 ## Client-side
 
@@ -166,14 +194,14 @@ exists and can be run, the APIs are likely to change.
 - [stripes-logger](https://github.com/folio-org/stripes-logger)
   -- Simple category-based logging for Stripes.
 
+- [stripes-cli](https://github.com/folio-org/stripes-cli)
+  -- Command-line interface for creating, building, and testing Stripes UI modules.
+
 - [ui-users](https://github.com/folio-org/ui-users)
   -- Stripes UI module: administrating users.
 
-- [ui-instances](https://github.com/folio-org/ui-instances)
-  -- Stripes UI module: administrating instances.
-
-- [ui-items](https://github.com/folio-org/ui-items)
-  -- Stripes UI module: administrating bibliographic items.
+- [ui-inventory](https://github.com/folio-org/ui-inventory)
+  -- Stripes UI module: administrating locally created instances, holdings records and items.
 
 - [ui-requests](https://github.com/folio-org/ui-requests)
   -- Stripes UI module: making requests on items.
@@ -187,11 +215,26 @@ exists and can be run, the APIs are likely to change.
 - [ui-circulation](https://github.com/folio-org/ui-circulation)
   -- Stripes UI module: Circulation.
 
+- [ui-eholdings](https://github.com/folio-org/ui-eholdings)
+  -- Stripes UI module: E-holdings.
+
+- [ui-search](https://github.com/folio-org/ui-search)
+  -- Stripes UI module: searching, sorting, filtering and viewing records from the FOLIO Codex, an aggregation of bibliographic metadata from multiple sources.
+
 - [ui-organization](https://github.com/folio-org/ui-organization)
   -- Stripes UI module: managing organization settings.
 
+- [ui-finance](https://github.com/folio-org/ui-finance)
+  -- Stripes UI module: management of ledgers, funds, and budgets.
+
+- [ui-vendors](https://github.com/folio-org/ui-vendors)
+  -- Stripes UI module: Vendors.
+
 - [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
   -- Stripes UI plugin: User-finder.
+
+- [ui-trivial](https://github.com/folio-org/ui-trivial)
+  -- Stripes UI module: example application.
 
 - [ui-developer](https://github.com/folio-org/ui-developer)
   -- Stripes UI module: developer facilities,
@@ -205,9 +248,6 @@ exists and can be run, the APIs are likely to change.
 
 - [stripes-demo-platform](https://github.com/folio-org/stripes-demo-platform)
   -- Stripes platform for building the demo site.
-
-- [ui-okapi-console](https://github.com/folio-org/ui-okapi-console)
-  -- Stripes UI module: console for administrating Okapi.
 
 - [stripes-experiments](https://github.com/folio-org/stripes-experiments)
   -- Testing ground for prototype modules that may form part of
@@ -226,15 +266,18 @@ exists and can be run, the APIs are likely to change.
   The current built boxes are also available to download from
   [Vagrant Cloud](https://app.vagrantup.com/folio).
 
-- [curriculum](https://github.com/folio-org/curriculum)
-  -- The source for the stand-alone [FOLIO Developer's Curriculum](http://dev.folio.org/curriculum).
-
-- [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
-  -- CQL (Contextual Query Language) to PostgreSQL JSON converter in Java.
+- [folio-install](https://github.com/folio-org/folio-install)
+  -- Runbooks for FOLIO installation.
 
 - [ui-testing](https://github.com/folio-org/ui-testing)
   -- Regression tests for FOLIO UI.
   The testing framework is explained. Guidelines for module developers.
+
+- [folio-tools](https://github.com/folio-org/folio-tools)
+  -- Various tools and support glue for FOLIO CI.
+
+- [okapi.rb](https://github.com/thefrontside/okapi.rb)
+  -- Ruby client to communicate with an OKAPI cluster. Also known as "okapi-cli".
 
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.

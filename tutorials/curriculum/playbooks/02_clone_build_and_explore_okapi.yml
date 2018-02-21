@@ -1,0 +1,17 @@
+---
+# Ansible playbook for Lesson 2
+- hosts: localhost
+  tasks:
+    - name: Clone Okapi git repository
+      git: repo=https://github.com/folio-org/okapi dest={{ folio_root }}/okapi
+      register: okapi_clone
+
+    - name: Force Maven build if repository updated
+      file: path={{ folio_root }}/okapi/install.log state=absent
+      when: okapi_clone.changed
+
+    - name: Build Okapi
+      shell: mvn clean install > install.log
+      args:
+        chdir: "{{ folio_root }}/okapi"
+        creates: "{{ folio_root }}/okapi/install.log"

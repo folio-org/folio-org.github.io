@@ -1,0 +1,100 @@
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  BucketPolicy:
+    Type: 'AWS::S3::BucketPolicy'
+    Properties:
+      PolicyDocument:
+        Id: DevSiteBranchPolicy
+        Version: 2012-10-17
+        Statement:
+          - Sid: PublicReadForGetBucketObjects
+            Effect: Allow
+            Principal: '*'
+            Action: 's3:GetObject'
+            Resource: !Join
+              - ''
+              - - 'arn:aws:s3:::'
+                - !Ref WebsiteBranchBucket
+                - /*
+      Bucket: !Ref WebsiteBranchBucket
+  WebsiteBranchBucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: !Sub "${WebsiteBranchLabel}.${WebsiteDNSName}"
+      AccessControl: PublicRead
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
+  WebsiteBranchRecordSet:
+    Type: 'AWS::Route53::RecordSet'
+    Properties:
+      HostedZoneName: !Sub "${WebsiteDNSName}."
+      Name: !Sub "${WebsiteBranchLabel}.${WebsiteDNSName}."
+      Type: A
+      AliasTarget:
+        HostedZoneId: !FindInMap [ Region2S3WebsiteEndpoint, !Ref 'AWS::Region', S3hostedzoneID]
+        DNSName: !FindInMap [ Region2S3WebsiteEndpoint, !Ref 'AWS::Region', S3WebsiteEndpoint]
+Parameters:
+  WebsiteBranchLabel:
+    Type: String
+    Description: The Git branch label
+  WebsiteDNSName:
+    Type: String
+    Description: Domain of the website
+  PushBranch:
+    Type: String
+    Description: Branch which we are pushing from; held here to be used by the CF completion lambda
+  GithubStatusesUrl:
+    Type: String
+    Description: GitHub Statuses URL; held here to be used by the CF completion lambda
+Mappings:
+  Region2S3WebsiteEndpoint:
+    ap-northeast-1:
+      S3hostedzoneID: "Z2M4EHUR26P7ZW"
+      S3WebsiteEndpoint: "s3-website-ap-northeast-1.amazonaws.com"
+    ap-northeast-2:
+      S3hostedzoneID: "Z3W03O7B5YMIYP"
+      S3WebsiteEndpoint: "s3-website.ap-northeast-2.amazonaws.com"
+    ap-south-1:
+      S3hostedzoneID: "Z11RGJOFQNVJUP"
+      S3WebsiteEndpoint: "s3-website.ap-south-1.amazonaws.com"
+    ap-southeast-1:
+      S3hostedzoneID: "Z3O0J2DXBE1FTB"
+      S3WebsiteEndpoint: "s3-website-ap-southeast-1.amazonaws.com"
+    ap-southeast-2:
+      S3hostedzoneID: "Z1WCIGYICN2BYD"
+      S3WebsiteEndpoint: "s3-website-ap-southeast-2.amazonaws.com"
+    eu-central-1:
+      S3hostedzoneID: "Z21DNDUVLTQW6Q"
+      S3WebsiteEndpoint: "s3-website.eu-central-1.amazonaws.com"
+    eu-west-1:
+      S3hostedzoneID: "Z1BKCTXD74EZPE"
+      S3WebsiteEndpoint: "s3-website-eu-west-1.amazonaws.com"
+    sa-east-1:
+      S3hostedzoneID: "Z7KQH4QJS55SO"
+      S3WebsiteEndpoint: "s3-website-sa-east-1.amazonaws.com"
+    us-east-1:
+      S3hostedzoneID: "Z3AQBSTGFYJSTF"
+      S3WebsiteEndpoint: "s3-website-us-east-1.amazonaws.com"
+    us-east-2:
+      S3hostedzoneID: "Z2O1EMRO9K5GLX"
+      S3WebsiteEndpoint: "s3-website.us-east-2.amazonaws.com"
+    us-west-1:
+      S3hostedzoneID: "Z2F56UZL2M1ACD"
+      S3WebsiteEndpoint: "s3-website-us-west-1.amazonaws.com"
+    us-west-2:
+      S3hostedzoneID: "Z3BJ6K6RIION7M"
+      S3WebsiteEndpoint: "s3-website-us-west-2.amazonaws.com"
+Outputs:
+  WebsiteURL:
+    Value: !Join
+      - ''
+      - - !Sub 'http://${WebsiteBranchRecordSet}.'
+        - !FindInMap
+          - Region2S3WebsiteEndpoint
+          - !Ref 'AWS::Region'
+          - S3WebsiteEndpoint
+    Description: The URL of the newly created website
+  BucketName:
+    Value: !Ref 'WebsiteBranchBucket'
+    Description: Name of S3 bucket to hold website content

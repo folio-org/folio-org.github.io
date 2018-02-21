@@ -1,0 +1,36 @@
+version: 0.2
+
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  install:
+    commands:
+      - bundle install --path vendor/bundle
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+  build:
+    commands:
+      - echo "******** Building Jekyll site ********"
+      - jekyll build
+  post_build:
+    commands:
+      - echo "******** Uploading to S3 ********"
+      - aws s3 sync --delete _site/ "s3://${BUCKET_NAME}"
+      - aws s3api put-bucket-website --bucket "${BUCKET_NAME}" --website-configuration file://s3-website-config.json
+#artifacts:
+  #files:
+    # - location
+    # - location
+  #discard-paths: yes
+  #base-directory: location
+cache:
+  paths:
+    - 'vendor/**/*'

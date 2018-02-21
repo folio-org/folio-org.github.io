@@ -12,17 +12,25 @@ description: >
   library platform, designed to facilitate collaboration between
   disparate development teams.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://dev.folio.org" # the base hostname & protocol for your site
+url: "https://dev.folio.org" # the base hostname & protocol for your site
 google_analytics: UA-79833310-3
+github_username: folio-org
+twitter_username: folio_lsp
 
 # Build settings
+remote_theme: Balancingrock/classic-jekyll-theme@2.2.0
 markdown: kramdown
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-gist
 
-exclude: [bin, Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, tmp, vendor, work]
+exclude: [bin, Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, tmp, vendor, work, tutorials/curriculum/playbooks]
 
 collections:
+  faqs:
+    permalink: /:collection/:path/
+    output: true
+    title: FAQs
   posts:
     permalink: /news/:year/:month/:day/:title/

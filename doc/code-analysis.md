@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Code analysis and linting facilities
+permalink: /doc/code-analysis/
+menuInclude: no
+menuTopTitle: Documentation
 ---
 
 All code repositories have linter and code-style analysis facilities implemented as part of their continuous integration. The pull requests will run the relevant static code analysis tools.
@@ -30,8 +33,6 @@ See [FOLIO-858](https://issues.folio.org/browse/FOLIO-858) to encourage 'A' rati
 ### Local use
 
 The [SonarLint](http://www.sonarlint.org) extension for IDEs will detect quality issues at an early stage.
-
-The [SonarLint for Command Line](http://www.sonarlint.org/commandline/) is also available.
 
 Use "Connected mode" to hook directly into our project rules.
 

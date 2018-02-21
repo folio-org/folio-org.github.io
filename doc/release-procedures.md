@@ -1,38 +1,17 @@
 ---
 layout: page
 title: Release procedures
+permalink: /doc/release-procedures/
+menuInclude: no
+menuTopTitle: Documentation
 ---
 
 This document summarises the release procedures for FOLIO projects.
 
-<!-- ../../okapi/doc/md2toc -l 2 -h 3 release-procedures.md -->
-* [Introduction](#introduction)
-* [Maven-based modules](#maven-based-modules)
-    * [Ensure POM declarations](#ensure-pom-declarations)
-    * [Ensure that Jira issues are ready](#ensure-that-jira-issues-are-ready)
-    * [Make a release branch](#make-a-release-branch)
-    * [Prepare the news document](#prepare-the-news-document)
-    * [Update any scripts and descriptors for release version](#update-any-scripts-and-descriptors-for-release-version)
-    * [Prepare and perform the source release](#prepare-and-perform-the-source-release)
-    * [Update any scripts and descriptors for next development release](#update-any-scripts-and-descriptors-for-next-development-release)
-    * [Build and release artifacts](#build-and-release-artifacts)
-    * [Merge the release branch into master](#merge-the-release-branch-into-master)
-    * [Add release notes to GitHub](#add-release-notes-to-github)
-    * [Prepare Jira for next release](#prepare-jira-for-next-release)
-    * [Announce](#announce)
-    * [Improve this doc](#improve-this-doc)
-    * [Other current Maven-related discussion](#other-current-maven-related-discussion)
-* [Gradle-based modules](#gradle-based-modules)
-    * [Change the release version](#change-the-release-version)
-    * [Update to unreleased version](#update-to-unreleased-version)
-    * [Trigger the release](#trigger-the-release)
-* [Stripes-based modules](#stripes-based-modules)
-    * [Other current Stripes-related discussion](#other-current-stripes-related-discussion)
-
 ## Introduction
 
 There are separate notes about the
-[FOLIO version-numbering scheme](http://dev.folio.org/community/contrib-code#version-numbers).
+[FOLIO version-numbering scheme](/community/contrib-code#version-numbers).
 
 ## Maven-based modules
 
@@ -164,8 +143,7 @@ An 'artifact' in this context could either be a Maven artifact released to the F
 Maven repository, a docker image released to Docker Hub, a Linux distribution package
 or some combination of artifacts depending on the project.  To release the artifacts
 relevant to your project, log into the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
-Navigate to the
-[Release Jobs](https://jenkins-aws.indexdata.com/me/my-views/view/All/job/Release_Jobs/)
+Navigate to your "My Views > Release Jobs"
 folder and select your module's Jenkins job name with the '-release' suffix.
 For example, 'okapi-release'.   Select 'Build with Parameters' and select the release tag you
 want to release.  This will build the release artifacts and deploy them to the proper
@@ -253,7 +231,7 @@ git push origin master
 git push origin v4.4.0
 ```
 
-Trigger the appropriate release job in Jenkins to publish the release artefacts, choosing the appropriate tag. In this example the release job is [mod-inventory-release](https://jenkins-aws.indexdata.com/view/Release%20jobs/job/mod-inventory-release/) and the parameter would be the 4.4.0 tag.
+Trigger the appropriate release job in Jenkins to publish the release artefacts, choosing the appropriate tag. In this example the release job is [mod-inventory-release](https://jenkins-aws.indexdata.com/job/Release_Jobs/job/mod-inventory-release/) and the parameter would be the 4.4.0 tag.
 
 ## Stripes-based modules
 

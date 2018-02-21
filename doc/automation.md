@@ -1,13 +1,16 @@
 ---
 layout: page
 title: Build, test, and deployment infrastructure
+permalink: /doc/automation/
+menuInclude: no
+menuTopTitle: Documentation
 ---
 
 ## Overview
 
 This document describes the implementation, processes, and automated workflow for
-FOLIO projects maintained in the [folio-org GitHub](../source-code) repositories.
-The [release procedures](release-procedures) are separately summarised.
+FOLIO projects maintained in the [folio-org GitHub](/source-code) repositories.
+The [release procedures](/doc/release-procedures) are separately summarised.
 
 The build, test, release, and deployment processes are, in large part, orchestrated and
 automated by Jenkins.  A Nexus repository is used to host FOLIO Maven artifacts and

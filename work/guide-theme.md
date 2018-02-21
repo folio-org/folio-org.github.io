@@ -6,7 +6,7 @@ These are some notes to assist with deciding whether an improved theme meets our
 * Currently using "github-pages". So follow whatever constraints that that imposes.
 (This could change in the future.)
 
-* Currently using "minima" theme.
+* Currently using theme "classic-jekyll-theme".
 
 * If current theme cannot meet our needs for improved navigation (perhaps by adding some supporting tools for navigation, and tweaking the current theme) then find a better theme.
 
@@ -22,7 +22,7 @@ The top row would link to other important FOLIO spaces (i.e. enable cohesion acr
 The second row would link to important dev.f.o spaces.
 
 * Ability for non-obtrusive side-bar navigation, e.g. sliding toggleable.
-Configurable content, e.g. from a data file.
+Configurable content, e.g. from data files and frontmatter.
 
 * Ability for multiple columns in a section when required.
 

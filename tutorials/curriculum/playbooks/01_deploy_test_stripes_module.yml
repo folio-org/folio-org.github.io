@@ -1,0 +1,27 @@
+---
+# Ansible playbook for Lesson 1
+- hosts: localhost
+  tasks:
+    - name: Set @folio:registry
+      shell: yarn config set @folio:registry https://repository.folio.org/repository/npm-folio/ && touch .set_folioregistry_ansible
+      args:
+        creates: .set_folioregistry_ansible
+      notify: Rebuild Stripes
+
+    - name: Set up Stripes platform
+      file: path={{ folio_root }}/stripes-tutorial-platform state=directory
+      notify: Rebuild Stripes
+
+    - name: Create platform package.json
+      copy: src=files/01_package.json dest={{ folio_root }}/stripes-tutorial-platform/package.json
+      notify: Rebuild Stripes
+
+    - name: Create platform stripes.config.js
+      copy: src=files/01_stripes.config.js dest={{ folio_root }}/stripes-tutorial-platform/stripes.config.js
+
+  handlers:
+    - name: Rebuild Stripes
+      command: yarn install
+      args:
+        chdir: "{{ folio_root }}/stripes-tutorial-platform"
+

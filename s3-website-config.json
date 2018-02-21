@@ -1,0 +1,26 @@
+{
+  "ErrorDocument": {
+    "Key": "error.html"
+  },
+  "IndexDocument": {
+    "Suffix": "index.html"
+  },
+  "RoutingRules": [
+    {
+      "Condition": {
+        "KeyPrefixEquals": "api"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "doc/api"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "curriculum/"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "tutorials/curriculum/"
+      }
+    }
+  ]
+}

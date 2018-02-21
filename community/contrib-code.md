@@ -1,42 +1,17 @@
 ---
 layout: page
 title: Guidelines for Contributing Code
+permalink: /community/contrib-code/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Contributing
-menuTopIndex: 7
-menuSubTitle: "Guidelines for Contributing Code"
-menuSubIndex: 1
+menuSubTitle: Guidelines for Contributing Code
+menuSubIndex: 2
 ---
-
-<!-- ../../okapi/doc/md2toc -l 2 -h 3 contrib-code.md -->
-* [License](#license)
-* [Issue tracker](#issue-tracker)
-* [Git and branches](#git-and-branches)
-    * [Commit messages](#commit-messages)
-    * [Feature branches](#feature-branches)
-    * [Requesting a merge](#requesting-a-merge)
-    * [Contributor License Agreement](#contributor-license-agreement)
-    * [Merging pull requests](#merging-pull-requests)
-* [Automation](#automation)
-* [Releasing](#releasing)
-* [Version numbers](#version-numbers)
-    * [API/interface versions](#apiinterface-versions)
-    * [Implementation versions](#implementation-versions)
-    * [Module implements one interface](#module-implements-one-interface)
-    * [Module implements multiple interfaces](#module-implements-multiple-interfaces)
-    * [Trailing zero for module/non-module versions](#trailing-zero-for-modulenon-module-versions)
-* [Coding style](#coding-style)
-    * [Style conventions](#style-conventions)
-    * [Code analysis and linting](#code-analysis-and-linting)
-    * [Consistent whitespace](#consistent-whitespace)
-    * [No license header](#no-license-header)
-* [Tests](#tests)
-* [RAML](#raml)
 
 ## License
 
-Copyright (C) 2017 The Open Library Foundation
+Copyright (C) 2015-2018 The Open Library Foundation
 
 All software is distributed under the terms of the Apache License, Version 2.0.
 
@@ -46,7 +21,8 @@ See the [Contributor License Agreement](#contributor-license-agreement) section 
 ## Issue tracker
 
 The FOLIO Issue Tracker is at [issues.folio.org](https://issues.folio.org/)
-and see the usage [guidelines](http://dev.folio.org/community/guide-issues).
+and see the usage [guidelines](/community/guide-issues)
+which encourage reports of various types of issue and explain how to.
 
 ## Git and branches
 
@@ -148,7 +124,7 @@ The FOLIO Project uses the [Apache License, Version 2.0](https://www.apache.org/
 
 {% gist a72174fc6b18f3a66f2f9d3db1c8f127 %}
 
-See [accepting the contributor license agreement](cla-process) for more details.
+See [accepting the contributor license agreement](/community/cla-process) for more details.
 
 ### Merging pull requests
 
@@ -187,12 +163,12 @@ When done, you probably want to delete the local branch from your own machine
 
 ## Automation
 
-The FOLIO [build, test, and deployment infrastructure](http://dev.folio.org/doc/automation)
+The FOLIO [build, test, and deployment infrastructure](/doc/automation)
 is described separately.
 
 ## Releasing
 
-Refer to the specific [Release procedures](../doc/release-procedures).
+Refer to the specific [Release procedures](/doc/release-procedures).
 
 Later, if there are bugs in the released version, work can continue on the
 version branch, and we can release a new minor version from the branch. Some
@@ -344,7 +320,7 @@ And update the documentation too, of course.
 
 For Okapi, we keep the API specs in RAML files under `okapi-core/src/main/raml/`.
 
-For [server-side modules](http://dev.folio.org/source-code/#server-side),
+For [server-side modules](/source-code/#server-side),
 the [raml](https://github.com/folio-org/raml)
 repository is the master location for the traits and resource
 types, while each module is the master for its own schemas, examples,
