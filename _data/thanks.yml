@@ -4,7 +4,7 @@
   width: 150
   height: 146
 
-- name: Texas A&M University
+- name: Texas A&amp;M University
   url: https://tamu.edu
   image: /images/thanks-logos/tamu.png
   width: 150
@@ -37,5 +37,35 @@
 - name: The Frontside
   url: https://frontside.io
   image: /images/thanks-logos/frontside.svg
+  width: 150
+  height: 150
+
+- name: hbz GBV
+  url: https://www.ole-germany.org
+  image: /images/thanks-logos/hbz-gbv-vzg.jpg
+  width: 300
+  height: 76
+
+- name: Knowledge Integration
+  url: https://k-int.com
+  image: /images/thanks-logos/k-int.png
+  width: 395
+  height: 59
+
+- name: Samh&#230;ng
+  url: http://samhaeng.com
+  image: /images/thanks-logos/samhaeng.png
+  width: 150
+  height: 150
+
+- name: atCult
+  url: http://atcult.it
+  image: /images/thanks-logos/atcult.png
+  width: 150
+  height: 150
+
+- name: Stacks Inc.
+  url: https://www.stacksdiscovery.com
+  image: /images/thanks-logos/stacks.png
   width: 150
   height: 150
