@@ -7,18 +7,6 @@ permalink: /about/thanks/
 We appreciate the many individuals and organizations forming the [community](/community) that contributes to FOLIO.
 We also thank the many other open source projects that we depend upon.
 
-## Participating organizations
-
-These are some of the participating organizations.
-There is also the [FOLIO Developer Directory](https://wiki.folio.org/display/COMMUNITY/FOLIO+Developer+Directory) listing some developers and their general work areas.
-
-<div class="text-centered">
-{% assign thanks = site.data.thanks | shuffle %}
-{% for item in thanks %}
-  <a href="{{ item.url }}" title="{{ item.name }}"><img src="{{ item.image }}" alt="logo" width="{{ item.width }}" height="{{ item.height }}"/></a>
-{% endfor %}
-</div>
-
 ## Supporting Software and Service Attribution
 
 The FOLIO Project is grateful for support from **Atlassian**.
