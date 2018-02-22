@@ -39,3 +39,5 @@ other open source projects, and commercial providers.
   <a href="{{ item.url }}" title="{{ item.name }}"><img src="{{ item.image }}" alt="logo" width="{{ item.width }}" height="{{ item.height }}"/></a>
 {% endfor %}
 </div>
+
+and [more](about/thanks).
