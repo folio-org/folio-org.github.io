@@ -193,7 +193,7 @@ and edit `doc/release-procedures.md`.
 
 The procedure for [Gradle](https://gradle.org/)-based modules (such as [mod-inventory](https://github.com/folio-org/mod-inventory) or [mod-circulation](https://github.com/folio-org/mod-circulation)) is very similar to [maven-based modules](#maven-based-modules).
 
-Follow all of the steps for a maven-based module, except [ensure POM declarations](#ensure-pom-declarations) and replacing
+Follow all of the steps for a maven-based module, except [ensure POM declarations](#once-ensure-pom-declarations) and replacing
 [Prepare and perform the source release](#prepare-and-perform-the-source-release) with the steps outlined below.
 
 ### Change the release version
