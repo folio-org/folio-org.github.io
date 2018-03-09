@@ -39,10 +39,9 @@ If necessary, add a basic .gitignore file.
 Developers will have [their own ~/.gitignore_global](/doc/setup#use-gitignore) to handle most.
 
 Add other configuration files. Follow similar existing repositories.
-For back-end modules: descriptors/ModuleDescriptor-template.json, Dockerfile, etc.
+For back-end modules: descriptors/ModuleDescriptor-template.json, Dockerfile, Jenkinsfile, etc.
 For front-end modules: package.json, .eslintrc, etc.
 
 Open a Jira issue, so that the project is integrated into Jenkins, the correct permissions are set on the repo, and an appropriate Jira project can be created (if applicable). Add the label 'ci'.
-
-
-
+There is one example at [FOLIO-949](https://issues.folio.org/browse/FOLIO-949).
+Suggest a short name for the Jira project.
