@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="340 219 797 296" width="797" height="296">
+  <defs>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="12" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dadada"/>
+      <stop offset=".688354" stop-color="silver"/>
+      <stop offset="1" stop-color="#a5a5a5"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(546 297) scale(40)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dadada"/>
+      <stop offset=".688354" stop-color="silver"/>
+      <stop offset="1" stop-color="#a5a5a5"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient_2" gradientTransform="translate(850 297) scale(40)"/>
+    <font-face font-family="Helvetica" font-size="13" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="12" panose-1="2 0 5 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="-1e3" x-height="517" cap-height="714" ascent="957.0007" descent="-212.99744" font-style="italic" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue-Italic"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.7.1 
+    <dc:date>2018-02-07 20:29:04 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_22">
+        <path d="M 663 277 L 773 277 C 782.9411 277 791 285.05887 791 295 L 791 295 C 791 304.94113 782.9411 313 773 313 L 663 313 C 653.0589 313 645 304.94113 645 295 L 645 295 C 645 285.05887 653.0589 277 663 277 Z" fill="white"/>
+        <path d="M 663 277 L 773 277 C 782.9411 277 791 285.05887 791 295 L 791 295 C 791 304.94113 782.9411 313 773 313 L 663 313 C 653.0589 313 645 304.94113 645 295 L 645 295 C 645 285.05887 653.0589 277 663 277 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(650 281)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="26.6709" y="11">folio-snapshot</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="14.972656" y="25">.aws.indexdata.com</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <path d="M 359 277 L 469 277 C 478.9411 277 487 285.05887 487 295 L 487 295 C 487 304.94113 478.9411 313 469 313 L 359 313 C 349.05887 313 341 304.94113 341 295 L 341 295 C 341 285.05887 349.05887 277 359 277 Z" fill="white"/>
+        <path d="M 359 277 L 469 277 C 478.9411 277 487 285.05887 487 295 L 487 295 C 487 304.94113 478.9411 313 469 313 L 359 313 C 349.05887 313 341 304.94113 341 295 L 341 295 C 341 285.05887 349.05887 277 359 277 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(346 281)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="33.67285" y="11">folio-testing</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="14.972656" y="25">.aws.indexdata.com</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <path d="M 967 277 L 1077 277 C 1086.9411 277 1095 285.05887 1095 295 L 1095 295 C 1095 304.94113 1086.9411 313 1077 313 L 967 313 C 957.0589 313 949 304.94113 949 295 L 949 295 C 949 285.05887 957.0589 277 967 277 Z" fill="white"/>
+        <path d="M 967 277 L 1077 277 C 1086.9411 277 1095 285.05887 1095 295 L 1095 295 C 1095 304.94113 1086.9411 313 1077 313 L 967 313 C 957.0589 313 949 304.94113 949 295 L 949 295 C 949 285.05887 957.0589 277 967 277 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(954 281)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="7.332031" y="11">folio-snapshot-stable</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="14.972656" y="25">.aws.indexdata.com</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <text transform="translate(346 333.496)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="11">• Built automatically at 01:00 UTC</tspan>
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="25.336">• Most recent checked in code</tspan>
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="39.671997">• Not guaranteed to work</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(650 333.328)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="11">• Built automatically at 03:00 UTC</tspan>
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="25.336">• Most recent checked in UI code</tspan>
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="39.671997">  paired with matching API backend</tspan>
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="54.007996">• Will probably work</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(954 333.328)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="11">• Built automatically</tspan>
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="25.336">• Latest UI and backend versions</tspan>
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="39.671997">  that pass regression test suite</tspan>
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="54.007996">• Most likely works</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <path d="M 546 307 L 546 287 L 566 287 L 566 277 L 586 297 L 566 317 L 566 307 Z" fill="url(#Obj_Gradient)"/>
+        <path d="M 546 307 L 546 287 L 566 287 L 566 277 L 586 297 L 566 317 L 566 307 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_15">
+        <path d="M 850 307 L 850 287 L 870 287 L 870 277 L 890 297 L 870 317 L 870 307 Z" fill="url(#Obj_Gradient_2)"/>
+        <path d="M 850 307 L 850 287 L 870 287 L 870 277 L 890 297 L 870 317 L 870 307 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_14">
+        <path d="M 394.7999 237.99993 C 394.7999 238 413 220 413 220 L 341 220 L 341 255.99993 C 341 255.99993 413 256 412.99986 256 Z" fill="#ffc0c0"/>
+        <path d="M 394.7999 237.99993 C 394.7999 238 413 220 413 220 L 341 220 L 341 255.99993 C 341 255.99993 413 256 412.99986 256 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(343 230)" fill="black">
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="0" y="13">Stripes</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <path d="M 406 238 L 426.25 256 L 487 256 L 487 220 L 426.25 220 Z" fill="#ffc0c0"/>
+        <path d="M 406 238 L 426.25 256 L 487 256 L 487 220 L 426.25 220 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(408 230)" fill="black">
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="21.52002" y="13">Okapi</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <path d="M 698.7999 237.99993 C 698.7999 238 717 220 717 220 L 645 220 L 645 255.99993 C 645 255.99993 717 256 716.99986 256 Z" fill="#ffc0c0"/>
+        <path d="M 698.7999 237.99993 C 698.7999 238 717 220 717 220 L 645 220 L 645 255.99993 C 645 255.99993 717 256 716.99986 256 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(647 230)" fill="black">
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="0" y="13">Stripes</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <path d="M 710 238 L 730.25 256 L 791 256 L 791 220 L 730.25 220 Z" fill="#c0ffff"/>
+        <path d="M 710 238 L 730.25 256 L 791 256 L 791 220 L 730.25 220 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(712 230)" fill="black">
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="21.52002" y="13">Okapi</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 1002.7999 237.99993 C 1002.7999 238 1021 220 1021 220 L 949 220 L 949 255.99993 C 949 255.99993 1021 256 1020.9999 256 Z" fill="#ffffc0"/>
+        <path d="M 1002.7999 237.99993 C 1002.7999 238 1021 220 1021 220 L 949 220 L 949 255.99993 C 949 255.99993 1021 256 1020.9999 256 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(951 230)" fill="black">
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="0" y="13">Stripes</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 1014 238 L 1034.25 256 L 1095 256 L 1095 220 L 1034.25 220 Z" fill="#ffffc0"/>
+        <path d="M 1014 238 L 1034.25 256 L 1095 256 L 1095 220 L 1034.25 220 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1016 230)" fill="black">
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="21.52002" y="13">Okapi</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 346 425 L 435 425 C 437.7614 425 440 427.2386 440 430 L 440 443.2174 C 440 445.9788 437.7614 448.2174 435 448.2174 L 346 448.2174 C 343.23858 448.2174 341 445.9788 341 443.2174 L 341 430 C 341 427.2386 343.23858 425 346 425 Z" fill="#ffc0c0"/>
+        <path d="M 346 425 L 435 425 C 437.7614 425 440 427.2386 440 430 L 440 443.2174 C 440 445.9788 437.7614 448.2174 435 448.2174 L 346 448.2174 C 343.23858 448.2174 341 445.9788 341 443.2174 L 341 430 C 341 427.2386 343.23858 425 346 425 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(346 429.6087)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="26.163086" y="11">Master</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 346 457.8913 L 435 457.8913 C 437.7614 457.8913 440 460.1299 440 462.8913 L 440 476.1087 C 440 478.8701 437.7614 481.1087 435 481.1087 L 346 481.1087 C 343.23858 481.1087 341 478.8701 341 476.1087 L 341 462.8913 C 341 460.1299 343.23858 457.8913 346 457.8913 Z" fill="#c0ffff"/>
+        <path d="M 346 457.8913 L 435 457.8913 C 437.7614 457.8913 440 460.1299 440 462.8913 L 440 476.1087 C 440 478.8701 437.7614 481.1087 435 481.1087 L 346 481.1087 C 343.23858 481.1087 341 478.8701 341 476.1087 L 341 462.8913 C 341 460.1299 343.23858 457.8913 346 457.8913 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(346 462.5)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="19.146484" y="11">Snapshot</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 346 490.7826 L 435 490.7826 C 437.7614 490.7826 440 493.0212 440 495.7826 L 440 509 C 440 511.7614 437.7614 514 435 514 L 346 514 C 343.23858 514 341 511.7614 341 509 L 341 495.7826 C 341 493.0212 343.23858 490.7826 346 490.7826 Z" fill="#ffffc0"/>
+        <path d="M 346 490.7826 L 435 490.7826 C 437.7614 490.7826 440 493.0212 440 495.7826 L 440 509 C 440 511.7614 437.7614 514 435 514 L 346 514 C 343.23858 514 341 511.7614 341 509 L 341 495.7826 C 341 493.0212 343.23858 490.7826 346 490.7826 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(346 495.3913)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="27.487305" y="11">Stable</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(452 429.4407)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="11">Tip of development (also known as </tspan>
+          <tspan font-family="Helvetica Neue" font-size="12" font-style="italic" font-weight="400" fill="black" y="11">‘master’</tspan>
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" y="11">)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(452 462.332)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="11">Latest backend modules that meet the API requirements of the front end</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(452 495.2233)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="11">Full integration and regression test suite passed</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -18,6 +18,20 @@ NPM packages, and Docker Hub is used as the Docker registry for Docker images.  
 provides the infrastructure used to host Jenkins and Nexus as well permanent and
 on-demand resources for FOLIO integration testing and demos.
 
+## Software Build Pipeline
+<img src="/images/FOLIO-Software-Build-pipeline.png" alt="FOLIO Software Build Pipeline" srcset="/images/FOLIO-Software-Build-pipeline.svg">
+<!-- Peter Murray has the source of this SVG as an OmniGraffle file -->
+
+The project is using a continuous integration -- or CI -- system (described below) that builds new versions of the software whenever a developer makes a change as well as on a timed basis.
+The CI system automatically builds three environments every night that are used for various purposes by the developers, the product owners, and the testers.
+In order to fully understand this diagram, keep in mind that there are two parts to FOLIO -- the part called “Stripes” which is the software running in the browser and the part called “Okapi” which is running on the server.
+The ‘folio-testing’ version is the latest versions of both of these parts.
+Because it is the latest version of both parts, there may be a mismatch between the API needed by Stripes and the API offered by Okapi.
+The ‘folio-snapshot’ version takes this mismatch into account; the Okapi part may not be the latest version, but it is the version that Stripes says it needs even if that version is older.
+The ‘folio-snapshot-stable’ version is the same as ‘folio-snapshot’ with additional automated integration and regression tests performed that ensure the pieces fit together well.
+This is the version that will be used by acceptance testers to verify that users stories are completed.
+
+
 ## Jenkins
 
 FOLIO projects are managed by the Jenkins host, https://jenkins-aws.indexdata.com
