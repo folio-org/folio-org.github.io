@@ -23,12 +23,22 @@ on-demand resources for FOLIO integration testing and demos.
 <!-- Peter Murray has the source of this SVG as an OmniGraffle file -->
 
 The project is using a continuous integration -- or CI -- system (described below) that builds new versions of the software whenever a developer makes a change as well as on a timed basis.
-The CI system automatically builds three environments every night that are used for various purposes by the developers, the product owners, and the testers.
+The CI system automatically builds environments that are used for various purposes by the developers, the product owners, and the testers.
 In order to fully understand this diagram, keep in mind that there are two parts to FOLIO -- the part called “Stripes” which is the software running in the browser and the part called “Okapi” which is running on the server.
-The ‘folio-testing’ version is the latest versions of both of these parts.
-Because it is the latest version of both parts, there may be a mismatch between the API needed by Stripes and the API offered by Okapi.
-The ‘folio-snapshot’ version takes this mismatch into account; the Okapi part may not be the latest version, but it is the version that Stripes says it needs even if that version is older.
-The ‘folio-snapshot-stable’ version is the same as ‘folio-snapshot’ with additional automated integration and regression tests performed that ensure the pieces fit together well.
+
+### `folio-testing.aws.indexdata.com`
+The frontend (Stripes) is built every hour from the latest master branch of the UI code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/stripes-testing/).)
+The backend (Okapi) is built every day at about 01:00 UTC from the latest master branch of the backend code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend01/).)
+There is no attempt to verify that the frontend dependencies are met by the backend modules, so there may be errors caused by that mismatch.
+
+### `folio-snapshot.aws.indexdata.com`
+This server is built every day at about 03:00 UTC.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot/).)
+It consists of the master branch of the frontend at that time paired with the latest version of backend modules that meet the dependency requirements of the frontend.
+There may still be errors because of API differences that aren't covered by the dependency requirements.
+
+### `folio-snapshot-stable.aws.indexdata.com`
+After `folio-snapshot` is built, the CI system runs a suite of integration and regression tests.
+If those tests pass, the `folio-snapshot-stable` alias is updated to point to this latest `folio-snapshot` version.
 This is the version that will be used by acceptance testers to verify that users stories are completed.
 
 
