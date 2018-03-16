@@ -24,18 +24,21 @@ FOLIO projects are managed by the Jenkins host, https://jenkins-aws.indexdata.co
 located at AWS.  Read access to Jenkins job configurations and build logs is available to
 all core FOLIO developers.  Credentials are required.
 
-A standard Jenkins build job configuration for a Github project consists roughly
+A standard Jenkins build job configuration for a GitHub project consists roughly
 of the following steps: a git clone of the GitHub project repository's master branch,
 a build step, post-build steps such as creating and publishing docker images, and
-post-build notifications to GitHub and Slack (Index Data #bot-jenkins channel).
+post-build notifications to GitHub and Slack (#folio-ci channel).
 Failures and unstable build notifications are also sent via e-mail.
 
-Each FOLIO software project may also have a separate Jenkins job configured to
-build GitHub pull requests.  The status of the pull request is posted back to GitHub,
-so utilizing pull requests to verify that your development branch builds properly before
-merging with master is highly recommended.
+Each FOLIO software project will also have a separate Jenkins job configured to
+build branches and pull requests.  The status of these is posted back to GitHub and Slack.
+Utilizing pull requests to verify that your development branch builds properly before
+merging with master is required.
 
-Another common Jenkins job is dedicated to code releases.  For Maven-based projects, the
+Another common Jenkins job is dedicated to code releases.
+The following notes are a summary. More detail is at [release procedures](/doc/release-procedures).
+
+For Maven-based projects, the
 [Maven Release Plugin](//maven.apache.org/maven-release/maven-release-plugin)
 is required.  To enable the release plugin, add the following to
 the parent POM of the project:
