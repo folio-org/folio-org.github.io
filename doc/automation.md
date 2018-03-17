@@ -20,7 +20,7 @@ on-demand resources for FOLIO integration testing and demos.
 
 ## Software Build Pipeline
 <img src="/images/FOLIO-Software-Build-pipeline.png" alt="FOLIO Software Build Pipeline" srcset="/images/FOLIO-Software-Build-pipeline.svg">
-<!-- Peter Murray has the source of this SVG as an OmniGraffle file -->
+<!-- The source of this SVG is an OmniGraffle file in work/graphic-source/ -->
 
 The project is using a continuous integration -- or CI -- system (described below) that builds new versions of the software whenever a developer makes a change, as well as on a timed basis.
 The CI system automatically builds environments that are used for various purposes by the developers, the product owners, and the testers.
