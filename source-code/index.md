@@ -109,6 +109,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-circulation-storage](https://github.com/folio-org/mod-circulation-storage)
   -- Persistent storage to complement the circulation module.
 
+- [mod-calendar](https://github.com/folio-org/mod-calendar)
+  -- Provide calendar functionality.
+
 - [mod-feesfines](https://github.com/folio-org/mod-feesfines)
   -- Provide central management for fees and fines.
 
@@ -209,6 +212,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-requests](https://github.com/folio-org/ui-requests)
   -- Stripes UI module: making requests on items.
 
+- [ui-calendar](https://github.com/folio-org/ui-calendar)
+  -- Stripes UI module: institutional calendar functions.
+
 - [ui-checkin](https://github.com/folio-org/ui-checkin)
   -- Stripes UI module: checking in items with simulated scans.
 
@@ -279,8 +285,14 @@ exists and can be run, the APIs are likely to change.
 - [folio-tools](https://github.com/folio-org/folio-tools)
   -- Various tools and support glue for FOLIO CI.
 
+- [okapi-cli](https://github.com/folio-org/okapi-cli)
+  -- Okapi command-line interface.
+
 - [okapi.rb](https://github.com/thefrontside/okapi.rb)
-  -- Ruby client to communicate with an OKAPI cluster. Also known as "okapi-cli".
+  -- Ruby client to communicate with an Okapi cluster. Also known as "okapi-cli".
+
+- [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
+  -- [CQL](/doc/glossary/#cql) (Contextual Query Language) to PostgreSQL JSON converter in Java.
 
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.
