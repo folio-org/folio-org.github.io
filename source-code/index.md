@@ -291,5 +291,8 @@ exists and can be run, the APIs are likely to change.
 - [okapi.rb](https://github.com/thefrontside/okapi.rb)
   -- Ruby client to communicate with an Okapi cluster. Also known as "okapi-cli".
 
+- [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
+  -- [CQL](/doc/glossary/#cql) (Contextual Query Language) to PostgreSQL JSON converter in Java.
+
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.
