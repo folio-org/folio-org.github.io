@@ -289,7 +289,7 @@ exists and can be run, the APIs are likely to change.
   -- Okapi command-line interface.
 
 - [okapi.rb](https://github.com/thefrontside/okapi.rb)
-  -- Ruby client to communicate with an Okapi cluster. Also known as "okapi-cli".
+  -- Ruby client to communicate with an Okapi cluster.
 
 - [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
   -- [CQL](/doc/glossary/#cql) (Contextual Query Language) to PostgreSQL JSON converter in Java.
