@@ -222,6 +222,10 @@ JavaScript web applications.
 
 Representational State Transfer architectural style, and RESTful web services, enable interaction between systems using a well-known set of stateless operations and responses.
 
+### RMB
+
+The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework, is a special FOLIO module that abstracts much functionality and enables the developer to focus on implementing business functions.
+
 ### Solr
 
 [Apache Solr](https://en.wikipedia.org/wiki/Apache_Solr).

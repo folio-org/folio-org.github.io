@@ -9,13 +9,16 @@ menuTopTitle: Documentation
 These are notes to assist developers with creating a new FOLIO module as a repository.
 Initial setup files and configuration.
 
-Take care to choose wisely for the repository name. It is disruptive to change that.
+If the "New" button is not available to you at [github.com/folio-org](https://github.com/folio-org) then [contact](/community/#collaboration-tools) FOLIO infrastructure (e.g. via the issue tracker or the #support channel).
+Otherwise follow the GitHub prompts to create a new repository, and if needed to then import an existing repository.
+
+Take care to choose wisely for the repository name. It can be disruptive to change that.
 
 The following first few items can only be done by the initial creator of the repository or its owners, and should happen early. Use its "Settings" area.
 
-Ensure that access is configured for the relevant FOLIO GitHub [Teams](https://github.com/orgs/folio-org/teams) (e.g. foliodev-core, stripes).
+Disable the Issues and Wiki via Settings. We use the FOLIO resources instead.
 
-Disable the Issues and Wiki via Settings. We use the FOLIO resources.
+Ensure that access is configured for the relevant FOLIO GitHub [Teams](https://github.com/orgs/folio-org/teams) (e.g. foliodev-core, stripes).
 
 Add a concise description to the GitHub repository. Consider that this will also be used elsewhere.
 
