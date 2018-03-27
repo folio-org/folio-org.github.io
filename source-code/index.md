@@ -115,6 +115,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-feesfines](https://github.com/folio-org/mod-feesfines)
   -- Provide central management for fees and fines.
 
+- [mod-glint](https://github.com/folio-org/mod-glint)
+  -- Wrapper for running a Glint server as an Okapi module.
+
 - [mod-graphql](https://github.com/folio-org/mod-graphql)
   -- Executing GraphQL queries.
 
@@ -224,6 +227,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-circulation](https://github.com/folio-org/ui-circulation)
   -- Stripes UI module: Circulation.
 
+- [ui-datasets](https://github.com/folio-org/ui-datasets)
+  -- Stripes UI module: FOLIO Datasets based on Glint.
+
 - [ui-eholdings](https://github.com/folio-org/ui-eholdings)
   -- Stripes UI module: E-holdings.
 
@@ -289,7 +295,7 @@ exists and can be run, the APIs are likely to change.
   -- Okapi command-line interface.
 
 - [okapi.rb](https://github.com/thefrontside/okapi.rb)
-  -- Ruby client to communicate with an Okapi cluster. Also known as "okapi-cli".
+  -- Ruby client to communicate with an Okapi cluster.
 
 - [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
   -- [CQL](/doc/glossary/#cql) (Contextual Query Language) to PostgreSQL JSON converter in Java.
