@@ -224,6 +224,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-circulation](https://github.com/folio-org/ui-circulation)
   -- Stripes UI module: Circulation.
 
+- [ui-datasets](https://github.com/folio-org/ui-datasets)
+  -- Stripes UI module: FOLIO Datasets based on Glint.
+
 - [ui-eholdings](https://github.com/folio-org/ui-eholdings)
   -- Stripes UI module: E-holdings.
 
