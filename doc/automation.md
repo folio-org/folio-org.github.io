@@ -28,7 +28,7 @@ In order to fully understand this diagram, keep in mind that there are two parts
 
 ### folio-testing
 
-http://folio-testing.aws.indexdata.com/
+[http://folio-testing.aws.indexdata.com/](http://folio-testing.aws.indexdata.com/)
 
 The frontend (Stripes) is built every hour from the latest master branch of the UI code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/stripes-testing/).)
 The backend (Okapi) is built every day at about 01:00 UTC from the latest master branch of the backend code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend01/).)
@@ -36,7 +36,7 @@ There is no attempt to verify that the frontend dependencies are met by the back
 
 ### folio-snapshot
 
-http://folio-snapshot.aws.indexdata.com/
+[http://folio-snapshot.aws.indexdata.com/](http://folio-snapshot.aws.indexdata.com/)
 
 This server is built every day at about 03:00 UTC.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot/).)
 It consists of the master branch of the frontend at that time paired with the latest version of backend modules that meet the dependency requirements of the frontend.
@@ -44,7 +44,7 @@ There may still be errors because of API differences that aren't covered by the 
 
 ### folio-snapshot-stable
 
-http://folio-snapshot-stable.aws.indexdata.com/
+[http://folio-snapshot-stable.aws.indexdata.com/](http://folio-snapshot-stable.aws.indexdata.com/)
 
 After `folio-snapshot` is built, the CI system runs a suite of integration and regression tests.
 If those tests pass, the `folio-snapshot-stable` alias is updated to point to this latest `folio-snapshot` version.
