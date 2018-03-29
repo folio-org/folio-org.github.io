@@ -6,7 +6,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $f-color-purple;
+  color: $f-color-blue;
 }
 
 .site-footer {
@@ -63,8 +63,9 @@ th {
 }
 
 .form-control {
-    margin-top: 7px;
+    margin-top: 8px;
 	width: 120px;
+	font-size: 13px;
 }
 
 
@@ -92,6 +93,23 @@ a.is-active-link::before {
     outline: none;
 }
 
+
+// arrows
+i {
+  border: solid #f8f8f8;
+  border-width: 0 0.1em 0.1em 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 2px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+	margin-top: -50px;
+}
+
+
 // indent lists in the normal markdown
 #markdown-content-container {
 
@@ -106,8 +124,8 @@ a.is-active-link::before {
 // so text does not scroll underneath
 //
 .anchor {
-   padding-top: 120px; 
-   margin-top: -120px;
+   padding-top: 110px; 
+   margin-top: -110px;
 }
 
 // For multi page left hand menu
@@ -151,7 +169,7 @@ li.toc-list-item {
 // Styling for the collasible responsive left hand menu
 .subnav {
   overflow: hidden;
-  margin-top: 8em;
+  margin-top: 10em;
   background-color: #eeeeee;
   z-index: 900;
 	//	   background-color: #eeeeee;
@@ -165,7 +183,31 @@ li.toc-list-item {
   display: none;
 }	
 	
-		
+// divider lines in secondary navigation	
+.divider-vertical {
+      padding-top: 1.3em;
+}	
+
+// styling for the nav bar	
+.nav > li > a {
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+}
+
+.primary-nav {
+    color: #f8f8f8 !important;
+}	
+	
+// Style the top nav color	
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #777;
+}	
+
+// The length of the mobile secondary nav
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 400px;
+}
+
 // Large Screen	
 @media screen and (min-width: 992px) {
      
@@ -192,24 +234,30 @@ li.toc-list-item {
          z-index: 1000;
 		 position: fixed;
          right: 15px;
-		 top: 65px;
+		 top: 110px;
       }
 	  
  	  p.space {
-         margin-top: 1.2cm;
+         margin-top: 2.5cm;
       }  	  
 	  // Visible Length of the toc is determined by the height of the screen
       // Used for left nav that is long and goes off the screen
 	  @media (max-height: 450px) {
         .toc {
 	          max-height: 100px;
-         }		  
+         }	
+		.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+			max-height: 150px;
+		}		 
 	  }
 	  
 	  @media screen and (max-height: 600px) and (min-height: 451px) {
-      .toc {
+       .toc {
 	      max-height: 450px;
-      }	
+       }	
+	  	.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+			max-height: 150px;
+		}
 	  }
 	  
 	  #multipage
@@ -223,10 +271,10 @@ li.toc-list-item {
 	  	 
 	 // Fpr single and multi page left nave
 	 // So text is not hidden at the top
-	 .anchor {
-		padding-top: 60px !important; 
-		margin-top: -60px !important;
-	 }
+//	 .anchor {
+//		padding-top: 60px !important; 
+//		margin-top: -60px !important;
+//	 }
 		
 	  // Display the navigation icon
 //	  .subnav a:not(:first-child) {display: none;}
@@ -251,7 +299,23 @@ li.toc-list-item {
 	  
  	  .subnav.responsive .toc {
 	    visibility: hidden;
-	  }    
+	  }
+
+	 // No vertical divider in responsive 
+     .divider-vertical {
+        display: none !important;
+     }	
+
+	 // Color for responsive drop downs
+     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #f8f8f8;
+     }	 
+}
+
+@media (max-width: 767px) {
+    .divider-vertical {
+        display: none !important;
+     }
 }
 
 
