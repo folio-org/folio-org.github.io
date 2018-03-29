@@ -169,6 +169,8 @@ We follow a variation of the Apache motto:
 
 - A place for heads-up type of notices.
 
+- Use some identifying avatar or photo, indicate your timezone, and enhance your profile notes.
+
 - Distinguish different Slack teams using
   [Sidebar Themes](http://slackstyles.com/#/tag/FOLIO):
   "[FOLIO orange](http://slackthemes.net/#/folio_orange)" and
