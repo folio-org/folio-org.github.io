@@ -18,9 +18,12 @@ npm install -g raml-cop
 
 Do that again occasionally to keep it up-to-date. Its package.json is well-configured so that it regularly updates its dependencies, especially raml-1-parser etc.
 
-## Typical usage
+## Usage
 
 Run it on any RAML file (e.g. `raml-cop ramls/loan-storage.raml`) or on multiple files with `raml-cop ramls/*.raml`
+
+There is a shell script to facilitate raml-cop for any repository.
+Copy [mod-notes/lint-raml-cop.sh](https://github.com/folio-org/mod-notes/blob/master/lint-raml-cop.sh)
 
 ## Messages
 
