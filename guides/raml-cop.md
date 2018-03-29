@@ -25,6 +25,17 @@ Run it on any RAML file (e.g. `raml-cop ramls/loan-storage.raml`) or on multiple
 There is a shell script to facilitate raml-cop for any repository.
 Copy [mod-notes/lint-raml-cop.sh](https://github.com/folio-org/mod-notes/blob/master/lint-raml-cop.sh)
 
+That can also be run via a git pre-commit hook.
+
+```shell
+if git diff --cached --name-only | grep --quiet "/ramls/"
+then
+  exit 0
+else
+  ${GIT_DIR}/../lint-raml-cop.sh
+fi
+```
+
 ## Messages
 
 The warning and error messages can sometimes be obscure.

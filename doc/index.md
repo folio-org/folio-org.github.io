@@ -159,7 +159,7 @@ The testing framework is explained. Guidelines for module developers.
 
 ### Tutorials
 
-- The [FOLIO Developer's Curriculum](/curriculum/) is a series
+- The [FOLIO Developer's Curriculum](/tutorials/curriculum/) is a series
 of lessons that can be followed on your own or can form the basis of an
 instructor-led workshop.
 
