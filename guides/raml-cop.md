@@ -23,7 +23,7 @@ Do that again occasionally to keep it up-to-date. Its package.json is well-confi
 Run it on any RAML file (e.g. `raml-cop ramls/loan-storage.raml`) or on multiple files with `raml-cop ramls/*.raml`
 
 There is a shell script to facilitate raml-cop for any repository.
-Copy [mod-notes/lint-raml-cop.sh](https://github.com/folio-org/mod-notes/blob/master/lint-raml-cop.sh)
+Copy [mod-notes/scripts/lint-raml-cop.sh](https://github.com/folio-org/mod-notes/blob/master/scripts/lint-raml-cop.sh)
 
 That can also be run via a git pre-commit hook.
 
@@ -32,7 +32,7 @@ if git diff --cached --name-only | grep --quiet "/ramls/"
 then
   exit 0
 else
-  ${GIT_DIR}/../lint-raml-cop.sh
+  ${GIT_DIR}/../scripts/lint-raml-cop.sh
 fi
 ```
 
