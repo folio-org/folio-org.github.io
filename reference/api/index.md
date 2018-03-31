@@ -1,13 +1,13 @@
 ---
 layout: page
 title: API documentation
-permalink: /doc/api/
+permalink: /reference/api/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Reference
 menuTopIndex: 2
 menuSubTitle: "API documentation"
-menuSubIndex: 2
+menuSubIndex: 3
 ---
 
 ## Introduction

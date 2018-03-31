@@ -111,7 +111,7 @@ The list of module versions for each box is shown in its change-log.
   GitHub Flow, feature branches, pull requests, version numbers, coding style,
   tests, etc.
 - [FOLIO Project Contributor License Agreement](/community/cla-process).
-- A [FOLIO glossary](glossary) of some terms and technologies used in FOLIO.
+- A [FOLIO glossary](/reference/glossary) of some terms and technologies used in FOLIO.
 - [Guidelines for FOLIO issue tracker](/community/guide-issues).
 - [Search dev.folio.org](/search) and [other search and report facilities](/search-other).
 
@@ -131,8 +131,8 @@ Configurations for accessing.
 
 ### Reference documentation
 
-- [Overiew](reference) of all technical reference documentation.
-- <span id="api-reference"/> The set of automatically generated [API documentation](api).
+- [Overiew](/reference/) of all technical reference documentation.
+- <span id="api-reference"/> The set of automatically generated [API documentation](/reference/api/).
 
 ### Fundamental documentation
 
@@ -154,7 +154,7 @@ The testing framework is explained. Guidelines for module developers.
 
 - Conduct [troubleshooting](troubleshooting).
 - [Code analysis and linting facilities](code-analysis) explains ESLint, SonarQube, other lint tools, and preparing for pull requests.
-- For Contextual Query Language (CQL) examples, see the [Glossary](glossary#cql), the FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/cql2pgjson-java), the [API docs](api), and the debug output for tests in each backend module.
+- For Contextual Query Language (CQL) examples, see the [Glossary](/reference/glossary/#cql), the FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/cql2pgjson-java), the [API docs](/reference/api/), and the debug output for tests in each backend module.
 - Use [raml-cop](/guides/raml-cop/) to assess RAMLs, schema, and examples. A guide to its use with some explanations of its messages.
 
 ### Tutorials

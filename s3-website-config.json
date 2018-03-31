@@ -11,7 +11,23 @@
         "KeyPrefixEquals": "api"
       },
       "Redirect": {
-        "ReplaceKeyWith": "doc/api"
+        "ReplaceKeyWith": "reference/api"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "doc/api"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "reference/api"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "doc/glossary"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "reference/glossary"
       }
     },
     {

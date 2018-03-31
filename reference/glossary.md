@@ -1,9 +1,11 @@
 ---
 layout: page
 title: FOLIO Glossary
-permalink: /doc/glossary/
-menuInclude: no
-menuTopTitle: Documentation
+permalink: /reference/glossary/
+menuInclude: yes
+menuTopTitle: Reference
+menuSubTitle: Glossary
+menuSubIndex: 4
 ---
 
 FOLIO is a new open source, cloud hostable, app-store based library platform,
@@ -86,7 +88,7 @@ A CQL example:
 and active=="true" sortby personal.lastName personal.firstName barcode
 ```
 
-For other relevant CQL examples see the first two items above, and the [API docs](/doc/api), and the debug output for tests in each backend module.
+For other relevant CQL examples see the first two items above, and the [API docs](/reference/api/), and the debug output for tests in each backend module.
 
 ### Docker
 
