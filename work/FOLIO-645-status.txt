@@ -9,7 +9,7 @@ x : Not needed
 ? : Yes, but has issues
 
 A Needs to move
-B
+B Done move
 C
 D Needs redirection
 E Rewrite rule done
@@ -43,7 +43,7 @@ community/which-forum.md                        Y     Y                         
                                                 A B C D E F G H I J K L M N O    Z
 ----------------------------------------------------------------------------------
 doc/any-programming-language.md                 -     Y
-doc/api/index.md                                Y     Y   -                      reference/api/index.md
+doc/api/index.md                                Y Y   Y Y - Y                    reference/api/index.md
 doc/artifacts.md                                *     Y                          downloads/artifacts.md
                                                                                  downloads/index.md
 doc/automation.md                               -                                guides/automations.md
@@ -51,20 +51,21 @@ doc/best-practices-dockerfiles.md               -                               
 doc/code-analysis.md                            -                                guides/code-analysis.md
 doc/create-new-repo.md                          -     Y                          guidelines/create-new-repo.md
 doc/events.md                                   -                                events.md
-doc/glossary.md                                 Y                                reference/glossary.md
+doc/glossary.md                                 Y Y   Y Y - Y                    reference/glossary.md
 doc/index.md                                    -
     split some into other new docs:                                              guides/overview.md
     the #guides links go to /guides/                                             guides/index.md
     the #fundamental to new doc                                                  start/fundamental.md
 doc/primer-develop-backend.md                   Y                                start/primer-develop-backend.md
 doc/primer-develop-frontend.md                  Y                                start/primer-develop-frontend.md
-doc/reference.md                                Y                                reference/index.md
+doc/reference.md                                Y Y         Y Y                  reference/index.md
+    new doc                                                 Y Y                  reference/overview.md
 doc/release-procedures.md                       -     Y                          guidelines/release-procedures.md
 doc/setup.md                                    -     Y                          guides/developer-setup.md
 doc/troubleshooting.md                          -     Y
 error.md                                        N           Y
 faqs/index.md                                   N           Y
-guides/index.md                                 N           ?
+guides/index.md                                 N           ? Y
 guides/raml-cop.md                              N           Y
 index.md                                        N           Y Y
 search-other.md                                 N           Y
