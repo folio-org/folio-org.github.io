@@ -77,3 +77,10 @@ tutorials/index.md                              N           Y
 ----------------------------------------------------------------------------------
                                                 A B C D E F G H I J K L M N O    Z
 ----------------------------------------------------------------------------------
+
+* Re-arranging "Documentation" into "Guides" and "Guidelines".
+* Re-arranging "Community" and "Contributing" into "Guidelines".
+* Adding "Start"
+
+Now:  Reference | Source | Download | Documentation | Community | Contributing | Tutorials | Search
+Then: Start | Reference | Source | Guides | Download | Tutorials | Guidelines | Community | Search
