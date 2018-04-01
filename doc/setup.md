@@ -12,7 +12,7 @@ A collection of tips to assist developers to configure their local workstation s
 
 Assume already doing other development, so know how to keep the operating system up-to-date, know its quirks, know how to use the various package managers. So this document will not go into detail about that.
 
-FOLIO modules can be developed in any suitable [programming language](/doc/any-programming-language).
+FOLIO modules can be developed in any suitable [programming language](/guides/any-programming-language).
 
 The [FOLIO-Sample-Modules](https://github.com/folio-org/folio-sample-modules) explains about module development.
 The various [Stripes](/doc#user-interface) documentation explains user-interface development.

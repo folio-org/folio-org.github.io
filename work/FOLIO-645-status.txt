@@ -42,7 +42,7 @@ community/which-forum.md                        Y     Y                         
 ----------------------------------------------------------------------------------
                                                 A B C D E F G H I J K L M N O    Z
 ----------------------------------------------------------------------------------
-doc/any-programming-language.md                 -     Y
+doc/any-programming-language.md                 Y Y   Y Y - Y                    guides/any-programming-language.md
 doc/api/index.md                                Y Y   Y Y - Y                    reference/api/index.md
 doc/artifacts.md                                Y Y   Y Y - Y                    downloads/artifacts.md
                                                             Y Y                  downloads/index.md
