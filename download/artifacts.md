@@ -1,13 +1,16 @@
 ---
 layout: page
 title: Built artifacts
-permalink: /doc/artifacts/
+permalink: /download/artifacts/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Download
-menuTopIndex: 4
-menuSubTitle: Overview
-menuSubIndex: 1
+menuSubs:
+- title: Download introduction
+  url: /download/
+  index: 1
+- title: Built artifacts
+  index: 2
 ---
 
 There are several repositories that contain snapshot and released FOLIO artifacts in various formats.

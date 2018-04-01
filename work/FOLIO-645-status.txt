@@ -44,9 +44,9 @@ community/which-forum.md                        Y     Y                         
 ----------------------------------------------------------------------------------
 doc/any-programming-language.md                 -     Y
 doc/api/index.md                                Y Y   Y Y - Y                    reference/api/index.md
-doc/artifacts.md                                *     Y                          downloads/artifacts.md
-                                                                                 downloads/index.md
-doc/automation.md                               -                                guides/automations.md
+doc/artifacts.md                                Y Y   Y Y - Y                    downloads/artifacts.md
+                                                            Y Y                  downloads/index.md
+doc/automation.md                               -                                guides/automation.md
 doc/best-practices-dockerfiles.md               -                                guides/best-practices-dockerfiles.md
 doc/code-analysis.md                            -                                guides/code-analysis.md
 doc/create-new-repo.md                          -     Y                          guidelines/create-new-repo.md
@@ -84,3 +84,4 @@ tutorials/index.md                              N           Y
 
 Now:  Reference | Source | Download | Documentation | Community | Contributing | Tutorials | Search
 Then: Start | Reference | Source | Guides | Download | Tutorials | Guidelines | Community | Search
+

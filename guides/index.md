@@ -119,7 +119,7 @@ The list of module versions for each box is shown in its change-log.
 
 - Some tips to assist developers to configure their
   [local workstation setup](setup).
-- [Built artifacts](artifacts) -- released and snapshot FOLIO artifacts in various formats.
+- [Built artifacts](/download/artifacts/) -- released and snapshot FOLIO artifacts in various formats.
 Configurations for accessing.
 - [Source code](/source-code/) -- explanation of each repository.
 

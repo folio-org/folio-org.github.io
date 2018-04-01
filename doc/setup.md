@@ -52,7 +52,7 @@ Note that this is not required to be installed for running modules using the "em
 FOLIO utilizes the Nexus OSS Repository Manager to host Maven artifacts and NPM packages for FOLIO projects.
 Docker images are the primary distribution model for FOLIO modules.
 
-See [Built artifacts](/doc/artifacts) for configuration details for accessing the released and snapshot FOLIO artifacts.
+See [Built artifacts](/download/artifacts/) for configuration details for accessing the released and snapshot FOLIO artifacts.
 
 For developers needing to publish artifacts, an overview and usage configuration details are provided, see
 [Build, test, and deployment infrastructure](/doc/automation).
