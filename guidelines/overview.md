@@ -12,7 +12,16 @@ menuSubs:
   index: 2
 ---
 
+## Background orientation
+
+- [Which forum](/guidelines/which-forum/) to use for communication:
+  Issue tracker, Slack chat, Discuss discussion, GitHub pull requests.
+  Some guidelines about when to use each, and some usage tips.
+  The [concise list](/community/#collaboration-tools) of forums.
+- [Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/).
+
 ## Development management
 
 - [Release procedures](/guidelines/release-procedures/).
+- [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/).
 

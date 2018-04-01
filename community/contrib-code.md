@@ -21,7 +21,7 @@ See the [Contributor License Agreement](#contributor-license-agreement) section 
 ## Issue tracker
 
 The FOLIO Issue Tracker is at [issues.folio.org](https://issues.folio.org/)
-and see the usage [guidelines](/community/guide-issues)
+and see the usage [guidelines](/guidelines/issue-tracker/)
 which encourage reports of various types of issue and explain how to.
 
 ## Git and branches

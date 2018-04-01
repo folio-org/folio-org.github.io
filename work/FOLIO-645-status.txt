@@ -39,9 +39,9 @@ guidelines/overview.md                          N           Y Y Y               
 community/cla-process.md                        Y     Y                          guidelines/cla-process.md
 community/contrib-code.md                       Y     Y                          guidelines/contribution.md
     split some into other new docs
-community/guide-issues.md                       Y     Y                          guidelines/guide-issues.md
+community/guide-issues.md                       Y     Y Y - Y                    guidelines/issue-tracker.md
 community/index.md                              N
-community/which-forum.md                        Y     Y                          guidelines/which-forum.md
+community/which-forum.md                        Y Y         Y                    guidelines/which-forum.md
 ----------------------------------------------------------------------------------
                                                 A B C D E F G H I J K L M N O    Z
 ----------------------------------------------------------------------------------
@@ -52,7 +52,7 @@ doc/artifacts.md                                Y Y   Y Y - Y                   
 doc/automation.md                               -                                guides/automation.md
 doc/best-practices-dockerfiles.md               -                                guides/best-practices-dockerfiles.md
 doc/code-analysis.md                            -                                guides/code-analysis.md
-doc/create-new-repo.md                          -     Y                          guidelines/create-new-repo.md
+doc/create-new-repo.md                          Y Y   Y Y - Y                    guidelines/create-new-repo.md
 doc/events.md                                   -                                events.md
 doc/glossary.md                                 Y Y   Y Y - Y                    reference/glossary.md
 doc/index.md                                    -

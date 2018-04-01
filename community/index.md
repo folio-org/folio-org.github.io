@@ -31,7 +31,7 @@ Some of the important forums to collaborate, discuss FOLIO, interact with other 
       <td> <a href="https://discuss.folio.org">discuss.folio.org</a> </td>
       <td> The discussion area and mailing lists is via Discuss. </td>
       <td>
-        <a href="which-forum#discuss">How to</a> |
+        <a href="/guidelines/which-forum#discuss">How to</a> |
         Join at front page
       </td>
     </tr>
@@ -43,7 +43,7 @@ Some of the important forums to collaborate, discuss FOLIO, interact with other 
         other guidelines.
       </td>
       <td>
-        <a href="which-forum#wiki">How to</a> |
+        <a href="/guidelines/which-forum#wiki">How to</a> |
         Join at front page (same account as Issues)
       </td>
     </tr>
@@ -59,16 +59,16 @@ Some of the important forums to collaborate, discuss FOLIO, interact with other 
       <td> The issue tracking and bug tracking system.
       </td>
       <td>
-        <a href="which-forum#issue-tracker">How to</a> |
+        <a href="/guidelines/which-forum#issue-tracker">How to</a> |
         Join at front page |
-        <a href="guide-issues">Guidelines</a>
+        <a href="/guidelines/issue-tracker/">Guidelines</a>
       </td>
     </tr>
     <tr>
       <td> <a href="https://github.com/folio-org">github.com/folio-org</a> </td>
       <td> The source-code repositories are via GitHub. </td>
       <td>
-        <a href="which-forum#github">How to</a> |
+        <a href="/guidelines/which-forum#github">How to</a> |
         <a href="/source-code">List of repos</a> |
         <a href="contrib-code">Contributing</a>
       </td>
@@ -77,7 +77,7 @@ Some of the important forums to collaborate, discuss FOLIO, interact with other 
       <td> <a href="https://folio-project.slack.com">folio-project.slack.com</a> </td>
       <td> Real-time chat is via Slack. </td>
       <td>
-        <a href="which-forum#slack">How to</a> |
+        <a href="/guidelines/which-forum#slack">How to</a> |
         <a href="https://slack-invitation.folio.org">Join</a>
       </td>
     </tr>
@@ -85,7 +85,7 @@ Some of the important forums to collaborate, discuss FOLIO, interact with other 
       <td> </td>
       <td> Other secondary communication channels.</td>
       <td>
-        <a href="which-forum#secondary">How to</a>
+        <a href="/guidelines/which-forum#secondary">How to</a>
       </td>
     </tr>
   </tbody>
@@ -174,10 +174,10 @@ to FOLIO development, for example:
   GitHub Flow, feature branches, pull requests, version numbers, coding style,
   tests, etc.
 
-- [Which forum](which-forum) to use for communication:
+- [Which forum](/guidelines/which-forum/) to use for communication:
   Issue tracker, Slack chat, Discuss discussion, GitHub pull requests.
   Some guidelines about when to use each, and some usage tips.
 
-- [Guidelines for FOLIO issue tracker](guide-issues).
+- [Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/).
 
 - Other [guides](/doc/#guides) and best practices.

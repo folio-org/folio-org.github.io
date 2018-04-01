@@ -1,12 +1,9 @@
 ---
 layout: page
 title: Guidelines for FOLIO issue tracker
-permalink: /community/guide-issues/
-menuInclude: yes
-menuLink: yes
-menuTopTitle: Contributing
-menuSubTitle: Guidelines for issue tracker
-menuSubIndex: 4
+permalink: /guidelines/issue-tracker/
+menuInclude: no
+menuTopTitle: Guidelines
 ---
 
 [https://issues.folio.org](https://issues.folio.org)
@@ -31,7 +28,7 @@ Please assist that by reporting when a particular message is not fully relevant 
 
 ## Preparing to add an issue
 
-Review the "[which forum](/community/which-forum#issue-tracker)" guidelines
+Review the "[which forum](/guidelines/which-forum#issue-tracker)" guidelines
 to be sure that adding an issue is the appropriate action.
 
 Describe the issue concisely in the _Summary_ and _Description_ fields.
@@ -108,7 +105,7 @@ When other people comment and ask for clarification, then try to respond
 promptly. We all like to keep the issue resolution process moving smoothly.
 
 If comments start to turn into a lengthy discussion, then follow up in
-[other forums](/community/which-forum), and then summarise into further issue tracker Comments.
+[other forums](/guidelines/which-forum/), and then summarise into further issue tracker Comments.
 Provide links in both directions.
 
 ## Status

@@ -24,6 +24,14 @@
     },
     {
       "Condition": {
+        "KeyPrefixEquals": "community/guide-issues"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "guidelines/issue-tracker"
+      }
+    },
+    {
+      "Condition": {
         "KeyPrefixEquals": "doc/any-programming-language"
       },
       "Redirect": {
@@ -36,6 +44,14 @@
       },
       "Redirect": {
         "ReplaceKeyWith": "download/artifacts"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "doc/create-new-repo"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "guidelines/create-new-repo"
       }
     },
     {

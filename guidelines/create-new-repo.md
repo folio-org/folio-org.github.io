@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Create a new FOLIO module and do initial setup
-permalink: /doc/create-new-repo/
+permalink: /guidelines/create-new-repo/
 menuInclude: no
-menuTopTitle: Documentation
+menuTopTitle: Guidelines
 ---
 
 These are notes to assist developers with creating a new FOLIO module as a repository.

@@ -2,7 +2,7 @@
 layout: page
 title: Release procedures
 permalink: /guidelines/release-procedures/
-menuInclude: yes
+menuInclude: no
 menuTopTitle: Guidelines
 ---
 

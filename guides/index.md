@@ -103,7 +103,7 @@ The list of module versions for each box is shown in its change-log.
 
 ### Background orientation
 
-- [Which forum](/community/which-forum) to use for communication:
+- [Which forum](/guidelines/which-forum/) to use for communication:
   Issue tracker, Slack chat, Discuss discussion, GitHub pull requests.
   Some guidelines about when to use each, and some usage tips.
   The [concise list](/community/#collaboration-tools) of forums.
@@ -112,7 +112,7 @@ The list of module versions for each box is shown in its change-log.
   tests, etc.
 - [FOLIO Project Contributor License Agreement](/community/cla-process).
 - A [FOLIO glossary](/reference/glossary) of some terms and technologies used in FOLIO.
-- [Guidelines for FOLIO issue tracker](/community/guide-issues).
+- [Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/).
 - [Search dev.folio.org](/search) and [other search and report facilities](/search-other).
 
 ### Setup and configuration
@@ -167,14 +167,14 @@ instructor-led workshop.
 
 - [Release procedures](/guidelines/release-procedures/).
 - [Search and report facilities](/search-other) (e.g. open pull requests needing review).
-- [Create a new FOLIO module and do initial setup](create-new-repo).
+- [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/).
 - The [FOLIO Project Roadmap](https://wiki.folio.org/display/PC/FOLIO+Roadmap) including the development and milestone plan for Version 1 and the feature backlog,
 and the [FOLIO Development Process Overview](https://wiki.folio.org/display/COMMUNITY/FOLIO+Development+Process+Overview), and other important documents and resources are listed at the [Wiki](https://wiki.folio.org).
 
 ### Community
 
 - [Community](/community/)
-- [Which forum](/community/which-forum) to use for communication.
+- [Which forum](/guidelines/which-forum/) to use for communication.
 - [Special Interest Groups](https://wiki.folio.org/display/PC/Special+Interest+Groups) (SIGs).
 - [Guidelines for Contributing Code](/community/contrib-code).
 
