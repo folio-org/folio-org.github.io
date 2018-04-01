@@ -5,7 +5,7 @@ permalink: /source-code/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Source
-menuTopIndex: 3
+menuTopIndex: 4
 menuSubTitle: Source-code overview
 menuSubIndex: 1
 ---

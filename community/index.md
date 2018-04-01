@@ -5,7 +5,7 @@ permalink: /community/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Community
-menuTopIndex: 6
+menuTopIndex: 9
 menuSubTitle: Community overview
 menuSubIndex: 1
 ---

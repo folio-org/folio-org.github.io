@@ -5,7 +5,7 @@ permalink: /community/cla-process/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Contributing
-menuTopIndex: 7
+menuTopIndex: 10
 menuSubTitle: "Contributor License Agreement"
 menuSubIndex: 1
 ---
