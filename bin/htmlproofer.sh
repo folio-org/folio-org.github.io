@@ -5,7 +5,7 @@ set -e
 DEST="_site"
 
 # Comma-separated string of regex patterns
-IGNORE="/dev\.folio\.org/"
+IGNORE="/localhost:/"
 
 export NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
