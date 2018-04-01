@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Setup development environment
-permalink: /doc/setup/
+permalink: /guides/developer-setup/
 menuInclude: no
-menuTopTitle: Documentation
+menuTopTitle: Guides
 ---
 
 A collection of tips to assist developers to configure their local workstation setup environment for FOLIO development.
@@ -55,7 +55,7 @@ Docker images are the primary distribution model for FOLIO modules.
 See [Built artifacts](/download/artifacts/) for configuration details for accessing the released and snapshot FOLIO artifacts.
 
 For developers needing to publish artifacts, an overview and usage configuration details are provided, see
-[Build, test, and deployment infrastructure](/doc/automation).
+[Build, test, and deployment infrastructure](/guides/automation/).
 
 ## Coding style
 
@@ -67,7 +67,7 @@ Refer to the [coding style](/guidelines/contributing#coding-style) sections of t
 ### Code analysis and linting
 
 All code repositories have linter and code-style analysis facilities implemented as part of their continuous integration build process.
-The process is [explained](/doc/code-analysis), along with usage notes and configuration for running those tools locally.
+The process is [explained](/guides/code-analysis), along with usage notes and configuration for running those tools locally.
 
 ### Use EditorConfig for consistent whitespace
 

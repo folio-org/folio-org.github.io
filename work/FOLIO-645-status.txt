@@ -37,6 +37,7 @@ about/thanks.md                                 N           Y
 guidelines/index.md                             N           Y Y Y                guidelines/index.md
 guidelines/overview.md                          N           Y Y Y                guidelines/overview.md
 community/cla-process.md                        Y Y   Y Y - Y                    guidelines/cla-process.md
+    does this need adjust at GitHub CLA?
 community/contrib-code.md                       Y Y   Y Y - Y                    guidelines/contributing.md
     split some into other new docs
 community/guide-issues.md                       Y Y   Y Y - Y                    guidelines/issue-tracker.md
@@ -49,9 +50,9 @@ doc/any-programming-language.md                 Y Y   Y Y - Y                   
 doc/api/index.md                                Y Y   Y Y - Y                    reference/api/index.md
 doc/artifacts.md                                Y Y   Y Y - Y                    downloads/artifacts.md
                                                             Y Y                  downloads/index.md
-doc/automation.md                               -                                guides/automation.md
-doc/best-practices-dockerfiles.md               -                                guides/best-practices-dockerfiles.md
-doc/code-analysis.md                            -                                guides/code-analysis.md
+doc/automation.md                               Y Y   Y Y - Y Y                  guides/automation.md
+doc/best-practices-dockerfiles.md               Y Y         Y                    guides/best-practices-dockerfiles.md
+doc/code-analysis.md                            Y Y         Y                    guides/code-analysis.md
 doc/create-new-repo.md                          Y Y   Y Y - Y                    guidelines/create-new-repo.md
 doc/events.md                                   -                                events.md
 doc/glossary.md                                 Y Y   Y Y - Y                    reference/glossary.md
@@ -65,7 +66,7 @@ start/index.md                                  N           Y Y Y               
 doc/reference.md                                Y Y         Y Y                  reference/index.md
 reference/overview.md                                       Y Y Y                reference/overview.md
 doc/release-procedures.md                       Y Y   Y Y - Y                    guidelines/release-procedures.md
-doc/setup.md                                    -     Y                          guides/developer-setup.md
+doc/setup.md                                    Y Y   Y     Y                    guides/developer-setup.md
 doc/troubleshooting.md                          -     Y
 error.md                                        N           Y
 faqs/index.md                                   N           Y

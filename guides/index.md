@@ -118,7 +118,7 @@ The list of module versions for each box is shown in its change-log.
 ### Setup and configuration
 
 - Some tips to assist developers to configure their
-  [local workstation setup](setup).
+  [local workstation setup](developer-setup).
 - [Built artifacts](/download/artifacts/) -- released and snapshot FOLIO artifacts in various formats.
 Configurations for accessing.
 - [Source code](/source-code/) -- explanation of each repository.
@@ -181,7 +181,7 @@ and the [FOLIO Development Process Overview](https://wiki.folio.org/display/COMM
 ### Other topics
 
 - [Best practices for Dockerfiles](best-practices-dockerfiles).
-- The FOLIO [build, test, and deployment infrastructure](automation).
+- The FOLIO [build, test, and deployment infrastructure](automation/).
 - A proposal for [error response formats](https://github.com/folio-org/okapi/blob/master/doc/error-formats-in-folio.md).
 - [FOLIO UX](http://ux.folio.org/) -- user experience (UX) driven design and prototypes.
 - [Events and presentations](events).

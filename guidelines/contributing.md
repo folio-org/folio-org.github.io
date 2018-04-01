@@ -160,7 +160,7 @@ When done, you probably want to delete the local branch from your own machine
 
 ## Automation
 
-The FOLIO [build, test, and deployment infrastructure](/doc/automation)
+The FOLIO [build, test, and deployment infrastructure](/guides/automation/)
 is described separately.
 
 ## Releasing
@@ -275,26 +275,26 @@ For JavaScript code we follow [ESLint](https://eslint.org), with some exceptions
 ### Code analysis and linting
 
 All code repositories have linter and code-style analysis facilities implemented as part of their continuous integration build process.
-The process is [explained](/doc/code-analysis), along with usage notes and configuration for running those tools locally.
+The process is [explained](/guides/code-analysis), along with usage notes and configuration for running those tools locally.
 
 ### Consistent whitespace
 
 - We indent with two spaces only, because vert.x uses deeply nested callbacks.
-- We _don't_ use tab characters for indents, only spaces.
+- We _do not_ use tab characters for indents, only spaces.
 
 For XML and JSON and RAML files, the same: two-space indent and no tabs.
 
 Some projects do provide a `.editorconfig` file.
 Remember to set your IDE and editors to remove trailing spaces on saving files,
 since those produce unnecessary diffs in Git.
-Refer to coding style [configuration](/doc/setup#coding-style) assistance.
+Refer to coding style [configuration](/guides/developer-setup#coding-style) assistance.
 
 ### No license header
 
 We do not use a license header in the top of each source code file.
 Refer to the README and LICENSE file at the top of each repository.
 See further [license](#license) information.
-See [configuration](/doc/setup#no-license-header) assistance for IDEs.
+See [configuration](/guides/developer-setup#no-license-header) assistance for IDEs.
 
 ## Tests
 

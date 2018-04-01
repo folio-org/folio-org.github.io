@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Build, test, and deployment infrastructure
-permalink: /doc/automation/
+permalink: /guides/automation/
 menuInclude: no
-menuTopTitle: Documentation
+menuTopTitle: Guides
 ---
 
 ## Overview

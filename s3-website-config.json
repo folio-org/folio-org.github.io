@@ -56,6 +56,14 @@
     },
     {
       "Condition": {
+        "KeyPrefixEquals": "doc/automation"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "guides/automation"
+      }
+    },
+    {
+      "Condition": {
         "KeyPrefixEquals": "doc/artifacts"
       },
       "Redirect": {

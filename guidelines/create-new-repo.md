@@ -34,12 +34,12 @@ Use the initial year of creation for the date.
 
 Ensure that any package.json and pom.xml etc. type of configuration file has the appropriate "licence" elements.
 
-Add [.editorconfig](/doc/setup#use-editorconfig-for-consistent-whitespace) file.
+Add [.editorconfig](/guides/developer-setup#use-editorconfig-for-consistent-whitespace) file.
 
 Add initial NEWS.md or CHANGELOG.md file.
 
 If necessary, add a basic .gitignore file.
-Developers will have [their own ~/.gitignore_global](/doc/setup#use-gitignore) to handle most.
+Developers will have [their own ~/.gitignore_global](/guides/developer-setup#use-gitignore) to handle most.
 
 Add other configuration files. Follow similar existing repositories.
 For back-end modules: descriptors/ModuleDescriptor-template.json, Dockerfile, Jenkinsfile, etc.
