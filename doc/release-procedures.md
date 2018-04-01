@@ -38,7 +38,7 @@ the parent POM of the project:
 </plugin>
 ```
 FOLIO projects which need to deploy artifacts to the FOLIO Maven repository during the
-Maven 'deploy' phase should have the following specified in the project's top-level POM:
+Maven 'deploy' phase will have the following specified in the project's top-level POM:
 
 ```xml
   <distributionManagement>
@@ -66,7 +66,7 @@ Maven 'deploy' phase should have the following specified in the project's top-le
   </scm>
 ```
 
-Replace 'PROJECT_NAME' above with the name of the appropriate github repository.
+Replace 'PROJECT_NAME' above with the name of the appropriate GitHub repository.
 Commit all changes to the POM in git.
 
 
@@ -173,7 +173,7 @@ Send a note to #general on Slack if relevant.
 ### Improve this doc
 
 If you found some parts of this guide to be out of date, or hard to understand,
-now is a good time to fix that. Check out git@github.com:folio-org/folio-org.github.io.git
+now is a good time to fix that. Check out the repository [folio-org/folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
 and edit `doc/release-procedures.md`.
 
 ### Other current Maven-related discussion
