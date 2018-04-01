@@ -16,6 +16,7 @@ E Rewrite rule done
 F Fixed links in other docs
 G Finished this re-structure phase
 H Needs enhanced content ASAP
+I Is new doc
 Z New location
 ----------------------------------------------------------------------------------
                                                 A B C D E F G H I J K L M N O    Z
@@ -33,6 +34,8 @@ _faqs/where-is-project-roadmap.md               N           Y
 _posts/ (not yet utilised)                      N           Y
 about/index.md                                  N           Y
 about/thanks.md                                 N           Y
+guidelines/index.md                             N           Y Y Y                guidelines/index.md
+guidelines/overview.md                          N           Y Y Y                guidelines/overview.md
 community/cla-process.md                        Y     Y                          guidelines/cla-process.md
 community/contrib-code.md                       Y     Y                          guidelines/contribution.md
     split some into other new docs
@@ -58,10 +61,10 @@ doc/index.md                                    -
     the #fundamental to new doc                                                  start/fundamental.md
 doc/primer-develop-backend.md                   Y Y         Y                    start/primer-develop-backend.md
 doc/primer-develop-frontend.md                  Y Y         Y                    start/primer-develop-frontend.md
-    new doc                                                 Y Y                  start/index.md
+start/index.md                                  N           Y Y Y                start/index.md
 doc/reference.md                                Y Y         Y Y                  reference/index.md
-    new doc                                                 Y Y                  reference/overview.md
-doc/release-procedures.md                       -     Y                          guidelines/release-procedures.md
+reference/overview.md                                       Y Y Y                reference/overview.md
+doc/release-procedures.md                       Y Y   Y Y - Y                    guidelines/release-procedures.md
 doc/setup.md                                    -     Y                          guides/developer-setup.md
 doc/troubleshooting.md                          -     Y
 error.md                                        N           Y

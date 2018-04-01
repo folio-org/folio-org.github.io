@@ -165,7 +165,7 @@ instructor-led workshop.
 
 ### Development management
 
-- [Release procedures](release-procedures).
+- [Release procedures](/guidelines/release-procedures/).
 - [Search and report facilities](/search-other) (e.g. open pull requests needing review).
 - [Create a new FOLIO module and do initial setup](create-new-repo).
 - The [FOLIO Project Roadmap](https://wiki.folio.org/display/PC/FOLIO+Roadmap) including the development and milestone plan for Version 1 and the feature backlog,

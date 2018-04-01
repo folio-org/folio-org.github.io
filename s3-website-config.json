@@ -48,6 +48,14 @@
     },
     {
       "Condition": {
+        "KeyPrefixEquals": "doc/release-procedures"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "guidelines/release-procedures"
+      }
+    },
+    {
+      "Condition": {
         "KeyPrefixEquals": "curriculum/"
       },
       "Redirect": {

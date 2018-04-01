@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Release procedures
-permalink: /doc/release-procedures/
-menuInclude: no
-menuTopTitle: Documentation
+permalink: /guidelines/release-procedures/
+menuInclude: yes
+menuTopTitle: Guidelines
 ---
 
 This document summarises the release procedures for FOLIO projects.

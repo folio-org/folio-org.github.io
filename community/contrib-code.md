@@ -168,7 +168,7 @@ is described separately.
 
 ## Releasing
 
-Refer to the specific [Release procedures](/doc/release-procedures).
+Refer to the specific [Release procedures](/guidelines/release-procedures/).
 
 Later, if there are bugs in the released version, work can continue on the
 version branch, and we can release a new minor version from the branch. Some
