@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Primer for front-end development
-permalink: /doc/primer-develop-frontend/
-menuInclude: no
-menuTopTitle: Documentation
+permalink: /start/primer-develop-frontend/
+menuInclude: yes
+menuTopTitle: Start
+menuSubTitle: Primer front-end
+menuSubIndex: 4
 ---
 
 Start with introduction to [user interface](/doc/#user-interface)

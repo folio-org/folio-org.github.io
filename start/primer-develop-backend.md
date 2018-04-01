@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Primer for back-end development
-permalink: /doc/primer-develop-backend/
-menuInclude: no
-menuTopTitle: Documentation
+permalink: /start/primer-develop-backend/
+menuInclude: yes
+menuTopTitle: Start
+menuSubTitle: Primer back-end
+menuSubIndex: 3
 ---
 
 Start with introduction to [core code](/doc/#core-code)

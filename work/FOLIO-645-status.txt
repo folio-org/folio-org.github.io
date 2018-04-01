@@ -56,8 +56,9 @@ doc/index.md                                    -
     split some into other new docs:                                              guides/overview.md
     the #guides links go to /guides/                                             guides/index.md
     the #fundamental to new doc                                                  start/fundamental.md
-doc/primer-develop-backend.md                   Y                                start/primer-develop-backend.md
-doc/primer-develop-frontend.md                  Y                                start/primer-develop-frontend.md
+doc/primer-develop-backend.md                   Y Y         Y                    start/primer-develop-backend.md
+doc/primer-develop-frontend.md                  Y Y         Y                    start/primer-develop-frontend.md
+    new doc                                                 Y Y                  start/index.md
 doc/reference.md                                Y Y         Y Y                  reference/index.md
     new doc                                                 Y Y                  reference/overview.md
 doc/release-procedures.md                       -     Y                          guidelines/release-procedures.md

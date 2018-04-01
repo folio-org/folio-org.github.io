@@ -125,9 +125,9 @@ Configurations for accessing.
 
 ### Getting started
 
-- [FOLIO uses any programming language](any-programming-language).
-- [Primer for back-end development](primer-develop-backend).
-- [Primer for front-end development](primer-develop-frontend).
+- [FOLIO uses any programming language](any-programming-language/).
+- [Primer for back-end development](/start/primer-develop-backend/).
+- [Primer for front-end development](/start/primer-develop-frontend/).
 
 ### Reference documentation
 
