@@ -11,7 +11,7 @@ This document summarises the release procedures for FOLIO projects.
 ## Introduction
 
 There are separate notes about the
-[FOLIO version-numbering scheme](/community/contrib-code#version-numbers).
+[FOLIO version-numbering scheme](/guidelines/contributing#version-numbers).
 
 ## Maven-based modules
 

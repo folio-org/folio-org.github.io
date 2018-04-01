@@ -13,4 +13,4 @@ The front-end modules (i.e. stripes-* and ui-*) follow the
 [Stripes release procedure](https://github.com/folio-org/stripes-core/blob/master/doc/release-procedure.md).
 
 There are separate notes about the
-[FOLIO version-numbering scheme](/community/contrib-code#version-numbers).
+[FOLIO version-numbering scheme](/guidelines/contributing#version-numbers).

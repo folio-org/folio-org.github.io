@@ -70,7 +70,7 @@ Some of the important forums to collaborate, discuss FOLIO, interact with other 
       <td>
         <a href="/guidelines/which-forum#github">How to</a> |
         <a href="/source-code">List of repos</a> |
-        <a href="contrib-code">Contributing</a>
+        <a href="/guidelines/contributing">Contributing</a>
       </td>
     </tr>
     <tr>
@@ -170,7 +170,7 @@ to FOLIO development, for example:
 
 ## Guidelines
 
-- [Guidelines for Contributing Code](contrib-code):
+- [Guidelines for Contributing Code](/guidelines/contributing/):
   GitHub Flow, feature branches, pull requests, version numbers, coding style,
   tests, etc.
 

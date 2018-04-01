@@ -19,6 +19,10 @@ menuSubs:
   Some guidelines about when to use each, and some usage tips.
   The [concise list](/community/#collaboration-tools) of forums.
 - [Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/).
+- [Guidelines for Contributing Code](/guidelines/contributing/) --
+  GitHub Flow, feature branches, pull requests, version numbers, coding style,
+  tests, etc.
+- [FOLIO Project Contributor License Agreement](/guidelines/cla-process/).
 
 ## Development management
 

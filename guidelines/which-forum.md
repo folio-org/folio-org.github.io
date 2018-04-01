@@ -126,7 +126,7 @@ We follow a variation of the Apache motto:
 [other](/source-code/#other-projects) projects.
 
 - As explained in
-  [Guidelines for Contributing Code](/community/contrib-code),
+  [Guidelines for Contributing Code](/guidelines/contributing/),
   use Feature Branches for any task beyond a minor text edit.
 
 - Use a descriptive name for the branch, with an Issue tracker number

@@ -36,10 +36,10 @@ about/index.md                                  N           Y
 about/thanks.md                                 N           Y
 guidelines/index.md                             N           Y Y Y                guidelines/index.md
 guidelines/overview.md                          N           Y Y Y                guidelines/overview.md
-community/cla-process.md                        Y     Y                          guidelines/cla-process.md
-community/contrib-code.md                       Y     Y                          guidelines/contribution.md
+community/cla-process.md                        Y Y   Y Y - Y                    guidelines/cla-process.md
+community/contrib-code.md                       Y Y   Y Y - Y                    guidelines/contributing.md
     split some into other new docs
-community/guide-issues.md                       Y     Y Y - Y                    guidelines/issue-tracker.md
+community/guide-issues.md                       Y Y   Y Y - Y                    guidelines/issue-tracker.md
 community/index.md                              N
 community/which-forum.md                        Y Y         Y                    guidelines/which-forum.md
 ----------------------------------------------------------------------------------

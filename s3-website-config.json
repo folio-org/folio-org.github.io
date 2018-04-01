@@ -24,6 +24,22 @@
     },
     {
       "Condition": {
+        "KeyPrefixEquals": "community/cla-process"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "guidelines/cla-process"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "community/contrib-code"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "guidelines/contributing"
+      }
+    },
+    {
+      "Condition": {
         "KeyPrefixEquals": "community/guide-issues"
       },
       "Redirect": {

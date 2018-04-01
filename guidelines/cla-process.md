@@ -1,13 +1,9 @@
 ---
 layout: page
 title: FOLIO Project Contributor License Agreement
-permalink: /community/cla-process/
-menuInclude: yes
-menuLink: yes
-menuTopTitle: Contributing
-menuTopIndex: 10
-menuSubTitle: "Contributor License Agreement"
-menuSubIndex: 1
+permalink: /guidelines/cla-process/
+menuInclude: no
+menuTopTitle: Guidelines
 ---
 
 The FOLIO Project uses the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) for its code and requires developers to acknowledge their contributions to the project using this license.

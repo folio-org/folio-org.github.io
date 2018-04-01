@@ -107,10 +107,10 @@ The list of module versions for each box is shown in its change-log.
   Issue tracker, Slack chat, Discuss discussion, GitHub pull requests.
   Some guidelines about when to use each, and some usage tips.
   The [concise list](/community/#collaboration-tools) of forums.
-- [Guidelines for Contributing Code](/community/contrib-code) --
+- [Guidelines for Contributing Code](/guidelines/contributing/) --
   GitHub Flow, feature branches, pull requests, version numbers, coding style,
   tests, etc.
-- [FOLIO Project Contributor License Agreement](/community/cla-process).
+- [FOLIO Project Contributor License Agreement](/guidelines/cla-process).
 - A [FOLIO glossary](/reference/glossary) of some terms and technologies used in FOLIO.
 - [Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/).
 - [Search dev.folio.org](/search) and [other search and report facilities](/search-other).
@@ -176,7 +176,7 @@ and the [FOLIO Development Process Overview](https://wiki.folio.org/display/COMM
 - [Community](/community/)
 - [Which forum](/guidelines/which-forum/) to use for communication.
 - [Special Interest Groups](https://wiki.folio.org/display/PC/Special+Interest+Groups) (SIGs).
-- [Guidelines for Contributing Code](/community/contrib-code).
+- [Guidelines for Contributing Code](/guidelines/contributing/).
 
 ### Other topics
 

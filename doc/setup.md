@@ -61,8 +61,8 @@ For developers needing to publish artifacts, an overview and usage configuration
 
 ### Style guidelines and configuration
 
-Refer to the [coding style](/community/contrib-code#coding-style) sections of the
-[Guidelines for Contributing Code](/community/contrib-code).
+Refer to the [coding style](/guidelines/contributing#coding-style) sections of the
+[Guidelines for Contributing Code](/guidelines/contributing).
 
 ### Code analysis and linting
 
@@ -82,7 +82,7 @@ For example, the Java text editor in Eclipse has its own configuration for `trim
 
 ### No license header
 
-As [explained](/community/contrib-code#no-license-header), we do not use a license header in the top of each source code file.
+As [explained](/guidelines/contributing#no-license-header), we do not use a license header in the top of each source code file.
 
 Please configure your IDE to use an empty license header. Some IDEs have a default template to remind developers to add one. We do not.
 
