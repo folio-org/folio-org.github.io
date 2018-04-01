@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Reference documentation
+title: Reference overview
 permalink: /reference/overview/
 menuInclude: yes
-menuLink: yes
 menuTopTitle: Reference
 menuSubs:
 - title: Reference introduction
@@ -17,4 +16,4 @@ Standards and reference documentation.
 
 ## API documentation
 
-- The set of automatically generated [API documentation](api/).
+- The set of automatically generated [API documentation](/reference/api/).
