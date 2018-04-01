@@ -2,7 +2,7 @@
 layout: page
 title: Frequently asked questions
 permalink: /faqs/
-menuTopTitle: Documentation
+menuLink: no
 ---
 
 {% for type in site.data.faqs %}
