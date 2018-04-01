@@ -54,7 +54,7 @@ doc/automation.md                               Y Y   Y Y - Y Y                 
 doc/best-practices-dockerfiles.md               Y Y         Y                    guides/best-practices-dockerfiles.md
 doc/code-analysis.md                            Y Y         Y                    guides/code-analysis.md
 doc/create-new-repo.md                          Y Y   Y Y - Y                    guidelines/create-new-repo.md
-doc/events.md                                   -                                events.md
+doc/events.md                                   Y Y         Y                    community/events.md
 doc/glossary.md                                 Y Y   Y Y - Y                    reference/glossary.md
 doc/index.md                                    -
     split some into other new docs:                                              guides/overview.md
@@ -67,7 +67,7 @@ doc/reference.md                                Y Y         Y Y                 
 reference/overview.md                                       Y Y Y                reference/overview.md
 doc/release-procedures.md                       Y Y   Y Y - Y                    guidelines/release-procedures.md
 doc/setup.md                                    Y Y   Y     Y                    guides/developer-setup.md
-doc/troubleshooting.md                          -     Y
+doc/troubleshooting.md                          Y Y         Y                    guides/troubleshooting.md
 error.md                                        N           Y
 faqs/index.md                                   N           Y
 guides/index.md                                 N           ? Y

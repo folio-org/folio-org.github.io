@@ -1,9 +1,9 @@
 ---
 layout: page
 title: General troubleshooting
-permalink: /doc/troubleshooting/
+permalink: /guides/troubleshooting/
 menuInclude: no
-menuTopTitle: Documentation
+menuTopTitle: Guides
 ---
 
 A collection of general tips to assist developers to conduct troubleshooting.

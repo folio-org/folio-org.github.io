@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Events and presentations
-permalink: /doc/events/
-menuInclude: no
-menuTopTitle: Documentation
+permalink: /community/events/
+menuInclude: yes
+menuTopTitle: Community
+menuSubTitle: Events and presentations
+menuSubIndex: 2
 ---
 
 [FOLIOForums](https://www.openlibraryenvironment.org/archives/category/olfforum) -- upcoming events and forums, and recordings of past ones.

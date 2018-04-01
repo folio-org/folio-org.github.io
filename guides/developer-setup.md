@@ -39,7 +39,7 @@ As each FOLIO component can utilise whatever suite of appropriate tools, refer t
 
 Occasionally it becomes necessary to specify minimum versions of some tools:
 
-* Java: [1.8.0-101](/doc/troubleshooting#missing-certificate-authority-for-lets-encrypt)
+* Java: [1.8.0-101](/guides/troubleshooting#missing-certificate-authority-for-lets-encrypt)
 
 ### Other tools
 
@@ -158,4 +158,4 @@ For Maven-based modules, add to your POM file (copy the 'git submodule update' f
 
 ## Troubleshooting
 
-See [notes](/doc/troubleshooting).
+See [notes](/guides/troubleshooting/).
