@@ -160,7 +160,7 @@ the community.
 
 ## Contributing
 
-There are many ways to [contribute](/doc/#community)
+There are many ways to [contribute](/guides/#community)
 to FOLIO development, for example:
 
 - Contributing directly to the software development.
@@ -180,4 +180,4 @@ to FOLIO development, for example:
 
 - [Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/).
 
-- Other [guides](/doc/#guides) and best practices.
+- Other [guides](/guides/) and best practices.

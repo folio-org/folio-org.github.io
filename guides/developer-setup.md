@@ -15,7 +15,7 @@ Assume already doing other development, so know how to keep the operating system
 FOLIO modules can be developed in any suitable [programming language](/guides/any-programming-language).
 
 The [FOLIO-Sample-Modules](https://github.com/folio-org/folio-sample-modules) explains about module development.
-The various [Stripes](/doc#user-interface) documentation explains user-interface development.
+The various [Stripes](/guides#user-interface) documentation explains user-interface development.
 Those also have more notes about setting up and managing the local development environment.
 
 ## Tools

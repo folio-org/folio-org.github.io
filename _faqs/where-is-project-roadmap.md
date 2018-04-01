@@ -7,4 +7,4 @@ categories: management
 faqOrder: 2
 ---
 
-The [Development management](/doc/#development-management) section leads to the FOLIO Roadmap and other process documentation.
+The [Development management](/guides/#development-management) section leads to the FOLIO Roadmap and other process documentation.

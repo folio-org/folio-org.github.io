@@ -8,7 +8,7 @@ menuSubTitle: Primer back-end
 menuSubIndex: 3
 ---
 
-Start with introduction to [core code](/doc/#core-code)
+Start with introduction to [core code](/guides/#core-code)
 and the [server-side](/source-code/#server-side) source code repositories.
 
 The [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md) provides the necessary background understanding.
