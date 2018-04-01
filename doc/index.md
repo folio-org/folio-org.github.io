@@ -2,7 +2,7 @@
 layout: page
 title: Documentation
 permalink: /doc/
-menuInclude: yes
+menuInclude: no
 menuLink: yes
 menuTopTitle: Documentation
 menuTopIndex: 5
