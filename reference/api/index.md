@@ -5,8 +5,8 @@ permalink: /reference/api/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Reference
-menuSubTitle: "API documentation"
-menuSubIndex: 3
+menuSubTitle: API documentation
+menuSubIndex: 2
 ---
 
 ## Introduction
