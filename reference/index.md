@@ -11,6 +11,5 @@ menuSubIndex: 1
 
 Standards and reference documentation.
 
-## API documentation
-
 - The set of automatically generated [API documentation](/reference/api/).
+- A [FOLIO glossary](/reference/glossary/) of some terms and technologies used in FOLIO.
