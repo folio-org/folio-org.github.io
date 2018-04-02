@@ -125,9 +125,7 @@ Configurations for accessing.
 
 ### Getting started
 
-- [FOLIO uses any programming language](any-programming-language/).
-- [Primer for back-end development](/start/primer-develop-backend/).
-- [Primer for front-end development](/start/primer-develop-frontend/).
+Refer to the [Start](/start/) section.
 
 ### Reference documentation
 
@@ -136,19 +134,7 @@ Configurations for accessing.
 
 ### Fundamental documentation
 
-- [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md).
-- [FOLIO-Sample-Modules guide](https://github.com/folio-org/folio-sample-modules/blob/master/README.md).
-- [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework.
-- Each [server-side](/source-code/#server-side) and [client-side](/source-code/#client-side)
-module's own documentation.
-- [Stripes Core README](https://github.com/folio-org/stripes-core/blob/master/README.md)
-guides to all front-end documentation.
-- [Stripes entities: packages, modules, apps and more](https://github.com/folio-org/stripes-core/blob/master/doc/modules-apps-etc.md).
-- [The Stripes Module Developer's Guide](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md)
-for those writing UI modules for Stripes.
-- [Regression tests for FOLIO UI](https://github.com/folio-org/ui-testing).
-The testing framework is explained. Guidelines for module developers.
-- [Permissions in Stripes and FOLIO](https://github.com/folio-org/stripes-core/blob/master/doc/permissions.md).
+These are listed in the [Start](/start/) section.
 
 ### Development tips
 
