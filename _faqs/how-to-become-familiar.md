@@ -2,7 +2,7 @@
 layout: page
 title: How to become familiar with the project
 titleLeader: "FAQ |"
-menuTopTitle: Documentation
+menuTopTitle: Guides
 categories: orientation
 faqOrder: 1
 ---

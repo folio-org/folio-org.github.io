@@ -2,7 +2,7 @@
 layout: page
 title: How to establish the local development environment
 titleLeader: "FAQ |"
-menuTopTitle: Documentation
+menuTopTitle: Guides
 categories: setup
 faqOrder: 1
 ---

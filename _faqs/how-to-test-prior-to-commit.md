@@ -2,7 +2,7 @@
 layout: page
 title: How to run tests prior to commit
 titleLeader: "FAQ |"
-menuTopTitle: Documentation
+menuTopTitle: Guides
 categories: testing
 faqOrder: 1
 ---
