@@ -5,7 +5,7 @@ permalink: /start/primer-develop-backend/
 menuInclude: yes
 menuTopTitle: Start
 menuSubTitle: Primer back-end
-menuSubIndex: 3
+menuSubIndex: 2
 ---
 
 Start with introduction to [core code](/guides/#core-code)
