@@ -56,13 +56,14 @@ doc/code-analysis.md                            Y Y         Y                   
 doc/create-new-repo.md                          Y Y   Y Y - Y                    guidelines/create-new-repo.md
 doc/events.md                                   Y Y         Y                    community/events.md
 doc/glossary.md                                 Y Y   Y Y - Y                    reference/glossary.md
-doc/index.md                                    -
-    split some into other new docs:                                              guides/overview.md
-    the #guides links go to /guides/                                             guides/index.md
-    the #fundamental to new doc                                                  start/fundamental.md
+doc/index.md                                    Y           Y Y                  guides/index.md
+    moved to guides/index.md leaving a skel                 Y                    doc/index.md
+    later split some into other new docs        -
+    #fundamental-documentation moved to                     Y                    start/index.md
+    #background-orientation moved to                        Y                    guidelines/index.md
 doc/primer-develop-backend.md                   Y Y         Y                    start/primer-develop-backend.md
 doc/primer-develop-frontend.md                  Y Y         Y                    start/primer-develop-frontend.md
-start/index.md                                  N           Y Y Y                start/index.md
+start/index.md                                  N           Y   Y                start/index.md
 doc/reference.md                                Y Y         Y Y                  reference/index.md
 reference/overview.md                                       Y Y Y                reference/overview.md
 doc/release-procedures.md                       Y Y   Y Y - Y                    guidelines/release-procedures.md
@@ -70,12 +71,12 @@ doc/setup.md                                    Y Y   Y     Y                   
 doc/troubleshooting.md                          Y Y         Y                    guides/troubleshooting.md
 error.md                                        N           Y
 faqs/index.md                                   N           Y
-guides/index.md                                 N           ? Y
+guides/index.md                                 N           - Y
 guides/raml-cop.md                              N           Y
 index.md                                        N           Y Y
 search-other.md                                 N           Y
 search.md                                       N           Y
-source-code/index.md                            N           ?
+source-code/index.md                            N           -
     perhaps split into three pages
 tutorials/curriculum/index.md                   N           Y
 tutorials/index.md                              N           Y
