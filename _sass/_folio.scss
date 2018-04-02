@@ -170,13 +170,9 @@ li.toc-list-item {
 .subnav {
   overflow: hidden;
   margin-top: 10em;
-  background-color: #eeeeee;
+//  background-color: #eeeeee;
   z-index: 900;
-	//	   background-color: #eeeeee;
-	//	   border-style: solid; 
-	//       border-color: #eeeeee; 
-	//	   border-width: 1px;
-	//       border-radius: 5px;  
+  background-color: transparent;
 }
 
 .subnav .icon {
@@ -194,10 +190,7 @@ li.toc-list-item {
     padding-left: 0.75em;
 }
 
-.primary-nav {
-    color: #f8f8f8 !important;
-}	
-	
+		
 // Style the top nav color	
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: #777;
@@ -206,6 +199,62 @@ li.toc-list-item {
 // The length of the mobile secondary nav
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
     max-height: 400px;
+}
+
+// Menu button for toc
+.toc-menu {
+    font-size: 15px;
+    color: #333333 !important;
+    text-decoration: none !important;
+    background-color: #da6a2d;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-style: solid;
+    border-color: #da6a2d;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+// toc left vertical line for page elements
+.pg-li-border {
+    border-left-style: solid; 
+	border-left-color: #EEE;
+}
+
+// top navigation color
+.top-nav {
+    color: #f8f8f8 !important;
+}
+
+// ext link image
+.ext-lnk {
+     margin-left: 1px; 
+	 margin-bottom: 3px;
+}
+
+// secondary nav 
+.sec-nav {
+     background-color: #f8f8f8;
+}
+
+// top nav responsive
+.top-nav-res {
+	max-height: 200px;
+}
+
+// Pages without a side menu
+.content-blk {
+    padding-left:30px; 
+	padding-right: 30px;
+}
+
+.content-blk-b {
+    border-top: 1px solid #da6a2d;
+	border-bottom: 1px solid #da6a2d;
+	
+	h2 {
+	  padding-left: 16px;
+	}
 }
 
 // Large Screen	
@@ -223,7 +272,7 @@ li.toc-list-item {
 
 	// Color of left hand menu
 	.subnav {
-	  background-color: #fff;
+	//  background-color: #fff;
 	}	
 }
 
