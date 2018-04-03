@@ -8,4 +8,4 @@ faqOrder: 2
 permalink: /getstarted/faqs/where-is-project-roadmap/
 ---
 
-The [Development management](/doc/#development-management) section leads to the FOLIO Roadmap and other process documentation.
+The [Development management](/getstarted/gsinfo/#development-management) section leads to the FOLIO Roadmap and other process documentation.

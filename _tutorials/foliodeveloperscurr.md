@@ -1313,8 +1313,8 @@ Remember that the Okapi service is forwarded through port 9130, so we can intera
 Save the following script as `run-basic.sh` in your work directory. It provides a basic interaction with Okapi.
 
 Expand this later to do some other queries.
-The [API docs](/reference/refinfo/#api-specifications) will be useful.
-The [CQL docs](/reference/refinfo/#glossary) will explain the Contextual Query Language (CQL) used by FOLIO.
+The [API docs](/reference/apispecifications) will be useful.
+The [CQL docs](/reference/glossary) will explain the Contextual Query Language (CQL) used by FOLIO.
 
 So start talking, do: `./run-basic.sh`
 

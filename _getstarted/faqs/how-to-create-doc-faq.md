@@ -16,4 +16,4 @@ These are defined in the file `_data/faqs.yml`
 
 Adjust the `faqOrder` in its frontmatter.
 
-The list of [all FAQs](/faqs/) is automatically generated.
+The list of [all FAQs](/getstarted/faqs/) is automatically generated.

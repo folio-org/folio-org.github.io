@@ -87,7 +87,7 @@ A CQL example:
 and active=="true" sortby personal.lastName personal.firstName barcode
 ```
 
-For other relevant CQL examples see the first two items above, and the [API docs](/reference/refinfo/#api-specifications), and the debug output for tests in each backend module.
+For other relevant CQL examples see the first two items above, and the [API docs](/reference/apispecifications), and the debug output for tests in each backend module.
 
 ### Docker
 
@@ -222,6 +222,10 @@ JavaScript web applications.
 ### REST
 
 Representational State Transfer architectural style, and RESTful web services, enable interaction between systems using a well-known set of stateless operations and responses.
+
+### RMB
+
+The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework, is a special FOLIO module that abstracts much functionality and enables the developer to focus on implementing business functions.
 
 ### Solr
 

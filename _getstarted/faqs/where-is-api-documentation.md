@@ -8,7 +8,7 @@ faqOrder: 1
 permalink: /getstarted/faqs/where-is-api-documentation/
 ---
 
-All [API documentation](/doc/api/) is available on-line.
+All [API documentation](/reference/apispecifications) is available on-line.
 This is automatically generated from each back-end module's source RAML files, and from the shared RAML repository.
 
 Each back-end module also enables local access and interaction with its API documentation.

@@ -8,5 +8,5 @@ faqOrder: 1
 permalink: /getstarted/faqs/how-to-become-familiar/
 ---
 
-Familiarise with the project via the [Background orientation](/doc/#background-orientation) section.
+Familiarise with the project via the [Background orientation](/getstarted/gsinfo) section.
 This includes notes about the various discussion forums, the issue tracker, GitHub, the Wiki, and guidelines for contribution.

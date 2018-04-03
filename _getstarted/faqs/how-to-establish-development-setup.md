@@ -8,4 +8,4 @@ faqOrder: 1
 permalink: /getstarted/faqs/how-to-establish-development-setup/
 ---
 
-Establish the development environment via the [Setup and configuration](/doc/#setup-and-configuration) section.
+Establish the development environment via the [Setup and configuration](/getstarted/gsinfo/#setup-and-configuration) section.

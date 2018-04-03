@@ -17,7 +17,7 @@ Get started with FOLIO development here.  Gain initial background and understand
   GitHub Flow, feature branches, pull requests, version numbers, coding style,
   tests, etc.
 - [FOLIO Project Contributor License Agreement](/guidelines/cla-process).
-- A [FOLIO glossary](/reference/refinfo/#glossary) of some terms and technologies used in FOLIO.
+- A [FOLIO glossary](/reference/glossary) of some terms and technologies used in FOLIO.
 - [Guidelines for FOLIO issue tracker](/guidelines/communityguidelines/#issue-tracker).
 - [other search and report facilities](/search-other).
 
@@ -31,15 +31,15 @@ Configurations for accessing.
 
 ## Reference Documentation
 
-- [Overview](/reference/refinfo) of all technical reference documentation.
-- <span id="api-reference"/> The set of automatically generated [API documentation](/reference/refinfo/#api-specifications).
+- [Overview](/reference/apispecifications) of all technical reference documentation.
+- <span id="api-reference"/> The set of automatically generated [API documentation](/reference/apispecifications).
 
 ## Development Tips
 
 - Conduct [troubleshooting](/tools/setupdevenv/#troubleshooting).
 - [Code analysis and linting facilities](/guidelines/codingconventions/#code-analysis-and-linting) explains ESLint, SonarQube, other lint tools, and preparing for pull requests.
-- For Contextual Query Language (CQL) examples, see the [Glossary](/reference/refinfo/#folio-technologies-and-concepts), the FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/cql2pgjson-java), the [API docs](/reference/refinfo/#api-specifications), and the debug output for tests in each backend module.
-
+- For Contextual Query Language (CQL) examples, see the [Glossary](/reference/glossary/#folio-technologies-and-concepts), the FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/cql2pgjson-java), the [API docs](/reference/apispecifications), and the debug output for tests in each backend module.
+- Use [raml-cop](/guides/raml-cop/) to assess RAMLs, schema, and examples. A guide to its use with some explanations of its messages.
 
 ## Tutorials
 
@@ -85,7 +85,7 @@ The [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/d
 
 The [FOLIO-Sample-Modules guide](https://github.com/folio-org/folio-sample-modules/blob/master/README.md) further explains what is a server-side module and how to develop one. Importantly, these examples show that any [programming language](/source/components/#any-programming-language) is possible.
 
-The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework, is a special module that abstracts much functionality and enables the developer to focus on implementing business functions. Define the APIs and objects in RAML files and schema files, then the RMB generates code and provides tools to help implement the module.
+The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework, is a special FOLIO module that abstracts much functionality and enables the developer to focus on implementing business functions. Define the APIs and objects in RAML files and schema files, then the RMB generates code and provides tools to help implement the module.
 (Note that at this stage of the FOLIO project, only this Java-based framework is available.)
 
 # Community
@@ -101,4 +101,4 @@ The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB
 - The FOLIO [build, test, and deployment infrastructure](/guides/system/#automation).
 - A proposal for [error response formats](https://github.com/folio-org/okapi/blob/master/doc/error-formats-in-folio.md).
 - [FOLIO UX](http://ux.folio.org/) -- user experience (UX) driven design and prototypes.
-- [FOLIOForums](https://www.openlibraryenvironment.org/archives/category/olfforum) -- upcoming events and recordings of past ones.
+- [Events and presentations](/about/events).

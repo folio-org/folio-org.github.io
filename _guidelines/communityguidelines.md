@@ -473,6 +473,8 @@ Create your own filters. Use one as a base, then twiddle and Save As.
 
 - A place for heads-up type of notices.
 
+- Use some identifying avatar or photo, indicate your timezone, and enhance your profile notes.
+
 - Distinguish different Slack teams using
   [Sidebar Themes](http://slackstyles.com/#/tag/FOLIO):
   "[FOLIO orange](http://slackthemes.net/#/folio_orange)" and
