@@ -100,6 +100,8 @@ mod-inventory-storage:
       - contributor-name-type
       - identifier-type
       - loan-type
+      - location
+      - locationunit      
       - material-type
       - platform
       - shelf-location
@@ -117,8 +119,15 @@ mod-user-import:
     directory: ramls
     files:
       - import
-    ramlutil: null
+    ramlutil: ramls/raml-util
 
+mod-calendar:
+  - label: null
+    directory: ramls
+    files:
+      - calendar
+    ramlutil: null
+    
 mod-finance:
   - label: null
     directory: ramls
@@ -132,6 +141,18 @@ mod-finance:
       - transaction
     ramlutil: ramls/raml-util
 
+mod-feesfines:
+  - label: null
+    directory: ramls
+    files:
+      - accounts
+      - chargeitem
+      - feefineactions
+      - feefinehistory
+      - feefines
+      - owners
+    ramlutil: ramls/raml-util    
+    
 mod-notes:
   - label: null
     directory: ramls

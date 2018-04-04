@@ -7,3 +7,6 @@
 - title: Release Procedures
   guides:
   - release-procedures
+- title: raml-cop
+  guides:
+  - raml-cop  

@@ -1,7 +1,7 @@
-<ul id=submenu class="subnav" style="background-color: transparent;">
-<a href="javascript:void(0);" style="font-size:15px; color: #333333; text-decoration: none; background-color: #da6a2d; padding-left: 5px; padding-right: 5px; border-style: solid; border-color: #da6a2d; border-radius: 5px; border-width: 1px;" class="icon" onclick="myFunction()">MENU</a>
+<ul id=submenu class="subnav">
+ <a href="javascript:void(0);" class="toc-menu icon" onclick="myFunction()">MENU</a>
  <div id=multipage>
-{% for section in site.data.tools %}
+ {% for section in site.data.tools %}
         {% for item in section.tools %}
           {% assign item_url = item | prepend:"/tools/" | append:"/" %}
           {% assign p = site.tools | where:"url", item_url | first %}
@@ -10,9 +10,9 @@
 		  </div>		  
 		  {% else %}
           <li><a id=subsubmenu href="{{ item_url | prepend: site.baseurl }}">{{ section.title }}</a></li>
-		  <li style="border-left-style: solid; border-left-color: #EEE;"><a id=subsubmenu href="{{ item_url | prepend: site.baseurl }}">{{ section.title }}</a></li>
+		  <li class="pg-li-border"><a id=subsubmenu href="{{ item_url | prepend: site.baseurl }}">{{ section.title }}</a></li>
 		  {% endif %}		  
         {% endfor %}
-{% endfor %}
+ {% endfor %}
  </div>
 </ul>

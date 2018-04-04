@@ -45,7 +45,7 @@ issues and general discussion via the
 ## Any Programming Language
 
 The design of FOLIO architecture
-([microservices](/reference/refinfo/#folio-technologies-and-concepts) and [REST](/reference/refinfo/#folio-technologies-and-concepts))
+([microservices](/reference/glossary/#folio-technologies-and-concepts) and [REST](/reference/glossary/#folio-technologies-and-concepts))
 enables any module to be written in a programming language that the developer is comfortable with. So various programming languages and build environments can be utilized.
 
 ### Server-side
@@ -55,7 +55,7 @@ The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB
 Note that at this stage of the FOLIO project, only this Java-based framework is available.
 Other frameworks would be possible.
 
-* Be able to handle the REST interactions according to the [API](/reference/refinfo/#api-specifications) and implement the lifecycle endpoints.
+* Be able to handle the REST interactions according to the [API](/reference/apispecifications) and implement the lifecycle endpoints.
 * As [explained](https://github.com/folio-org/okapi/blob/master/doc/guide.md#chunked) in the Okapi Guide, Okapi uses HTTP 1.1 with chunked encoding to make the connections to the modules.
 
 ### Client-side
@@ -64,7 +64,7 @@ The [front-end](/source/components/#client-side-1) user interface code can be wr
 FOLIO provides the [Stripes](/source/components/#client-side-1) UI toolkit (JavaScript), optimized for accessing Okapi-based services and wrapping UI functionality into convenient modules.
 Other toolkits would be possible.
 
-* Be able to handle the REST interactions according to the [API](/reference/refinfo/#api-specifications).
+* Be able to handle the REST interactions according to the [API](/reference/apispecifications).
 * Be able to manage state and send special headers such as X-Okapi-Tenant.
 
 ### Current situation
@@ -83,13 +83,16 @@ engagement from the community to help out in this area.
 These are notes to assist developers with creating a new FOLIO module as a repository.
 Initial setup files and configuration.
 
-Take care to choose wisely for the repository name. It is disruptive to change that.
+If the "New" button is not available to you at [github.com/folio-org](https://github.com/folio-org) then [contact](/guidelines/communityguidelines) FOLIO infrastructure (e.g. via the issue tracker or the #support channel).
+Otherwise follow the GitHub prompts to create a new repository, and if needed to then import an existing repository.
+
+Take care to choose wisely for the repository name. It can be disruptive to change that.
 
 The following first few items can only be done by the initial creator of the repository or its owners, and should happen early. Use its "Settings" area.
 
-Ensure that access is configured for the relevant FOLIO GitHub [Teams](https://github.com/orgs/folio-org/teams) (e.g. foliodev-core, stripes).
+Disable the Issues and Wiki via Settings. We use the FOLIO resources instead.
 
-Disable the Issues and Wiki via Settings. We use the FOLIO resources.
+Ensure that access is configured for the relevant FOLIO GitHub [Teams](https://github.com/orgs/folio-org/teams) (e.g. foliodev-core, stripes).
 
 Add a concise description to the GitHub repository. Consider that this will also be used elsewhere.
 
@@ -113,10 +116,12 @@ If necessary, add a basic .gitignore file.
 Developers will have [their own ~/.gitignore_global](/tools/setupdevenv/#use-gitignore) to handle most.
 
 Add other configuration files. Follow similar existing repositories.
-For back-end modules: descriptors/ModuleDescriptor-template.json, Dockerfile, etc.
+For back-end modules: descriptors/ModuleDescriptor-template.json, Dockerfile, Jenkinsfile, etc.
 For front-end modules: package.json, .eslintrc, etc.
 
 Open a Jira issue, so that the project is integrated into Jenkins, the correct permissions are set on the repo, and an appropriate Jira project can be created (if applicable). Add the label 'ci'.
+There is one example at [FOLIO-949](https://issues.folio.org/browse/FOLIO-949).
+Suggest a short name for the Jira project.
 
 ## Server Side
 
@@ -136,7 +141,7 @@ facilitated by the code in the `raml-module-builder` repository.
 - [raml](https://github.com/folio-org/raml)
   -- Repository of RAML files, including JSON Schemas, traits and
   resource types centralized for re-usability.
-  The [API reference](/doc/#api-reference) documentation is also
+  The [API reference](/reference/#apispecifications) documentation is also
   generated.
   This repository is the master location for the traits and resource
   types, while each module is the master for its own schemas, examples,
@@ -184,6 +189,15 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-circulation-storage](https://github.com/folio-org/mod-circulation-storage)
   -- Persistent storage to complement the circulation module.
 
+- [mod-calendar](https://github.com/folio-org/mod-calendar)
+  -- Provide calendar functionality.
+
+- [mod-feesfines](https://github.com/folio-org/mod-feesfines)
+  -- Provide central management for fees and fines.
+
+- [mod-glint](https://github.com/folio-org/mod-glint)
+  -- Wrapper for running a Glint server as an Okapi module.  
+  
 - [mod-graphql](https://github.com/folio-org/mod-graphql)
   -- Executing GraphQL queries.
   
@@ -222,6 +236,10 @@ facilitated by the code in the `raml-module-builder` repository.
 
 - [mod-vendors](https://github.com/folio-org/mod-vendors)
   -- Persistent storage of vendor data.
+
+- [mod-pg-embed](https://github.com/folio-org/mod-pg-embed)
+  -- Helper module to start embedded Postgres.
+  Helper for developers that starts the "embedded" postgres server and sets up the environment so that other modules can locate the database.
 
 - [inventory-sample-data](https://github.com/folio-org/inventory-sample-data)
   -- Provides scripts for data preparation and deployment, e.g. MARC.
@@ -274,12 +292,12 @@ exists and can be run, the APIs are likely to change.
 - [ui-inventory](https://github.com/folio-org/ui-inventory)
   -- Stripes UI module: administrating locally created instances, holdings records and items.
 
-- [ui-items](https://github.com/folio-org/ui-items)
-  -- Stripes UI module: administrating bibliographic items.
-
 - [ui-requests](https://github.com/folio-org/ui-requests)
   -- Stripes UI module: making requests on items.
 
+- [ui-calendar](https://github.com/folio-org/ui-calendar)
+  -- Stripes UI module: institutional calendar functions.  
+  
 - [ui-checkin](https://github.com/folio-org/ui-checkin)
   -- Stripes UI module: checking in items with simulated scans.
 
@@ -289,6 +307,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-circulation](https://github.com/folio-org/ui-circulation)
   -- Stripes UI module: Circulation.
   
+- [ui-datasets](https://github.com/folio-org/ui-datasets)
+  -- Stripes UI module: FOLIO Datasets based on Glint. 
+  
 - [ui-eholdings](https://github.com/folio-org/ui-eholdings)
   -- Stripes UI module: E-holdings. 
 
@@ -297,6 +318,9 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-organization](https://github.com/folio-org/ui-organization)
   -- Stripes UI module: managing organization settings.
+
+- [ui-finance](https://github.com/folio-org/ui-finance)
+  -- Stripes UI module: management of ledgers, funds, and budgets.
 
 - [ui-vendors](https://github.com/folio-org/ui-vendors)
   -- Stripes UI module: Vendors.  
@@ -320,9 +344,6 @@ exists and can be run, the APIs are likely to change.
 - [stripes-demo-platform](https://github.com/folio-org/stripes-demo-platform)
   -- Stripes platform for building the demo site.
 
-- [ui-okapi-console](https://github.com/folio-org/ui-okapi-console)
-  -- Stripes UI module: console for administrating Okapi.
-
 - [stripes-experiments](https://github.com/folio-org/stripes-experiments)
   -- Testing ground for prototype modules that may form part of
   Stripes.
@@ -340,6 +361,9 @@ exists and can be run, the APIs are likely to change.
   The current built boxes are also available to download from
   [Vagrant Cloud](https://app.vagrantup.com/folio).
 
+- [folio-install](https://github.com/folio-org/folio-install)
+  -- Runbooks for FOLIO installation.
+
 - [ui-testing](https://github.com/folio-org/ui-testing)
   -- Regression tests for FOLIO UI.
   The testing framework is explained. Guidelines for module developers.
@@ -347,11 +371,14 @@ exists and can be run, the APIs are likely to change.
 - [folio-tools](https://github.com/folio-org/folio-tools)
   -- Various tools and support glue for FOLIO CI.
 
-- [okapi.rb](https://github.com/thefrontside/okapi.rb)
-  -- Ruby client to communicate with an OKAPI cluster. Also known as "okapi-cli".
+- [okapi-cli](https://github.com/folio-org/okapi-cli)
+  -- Okapi command-line interface. 
 
-- [curriculum](https://github.com/folio-org/curriculum)
-  -- The source for the stand-alone [FOLIO Developer's Curriculum](http://dev.folio.org/curriculum).
+- [okapi.rb](https://github.com/thefrontside/okapi.rb)
+  -- Ruby client to communicate with an Okapi cluster.
+
+- [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
+  -- [CQL](/reference/glossary/#cql) (Contextual Query Language) to PostgreSQL JSON converter in Java.  
 
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.

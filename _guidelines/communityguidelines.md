@@ -47,7 +47,7 @@ Some of the important forums to collaborate, discuss FOLIO, interact with other 
       </td>
     </tr>
     <tr>
-      <td> <a href="http://dev.folio.org">dev.folio.org</a> </td>
+      <td> <a href="https://dev.folio.org">dev.folio.org</a> </td>
       <td> Developer documentation. Also leads to documentation at each repository. </td>
       <td>
         <a href="https://github.com/folio-org/folio-org.github.io/blob/master/README.md">How to</a>
@@ -472,6 +472,8 @@ Create your own filters. Use one as a base, then twiddle and Save As.
   Try to choose a time that suits people distributed around the world.
 
 - A place for heads-up type of notices.
+
+- Use some identifying avatar or photo, indicate your timezone, and enhance your profile notes.
 
 - Distinguish different Slack teams using
   [Sidebar Themes](http://slackstyles.com/#/tag/FOLIO):

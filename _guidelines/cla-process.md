@@ -10,6 +10,8 @@ permalink: /guidelines/cla-process/
 The FOLIO Project uses the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) for its code and requires developers to acknowledge their contributions to the project using this license.
 The contents of the Contributor License Agreement (CLA) are stored in a Gist on GitHub:
 
+{% gist a72174fc6b18f3a66f2f9d3db1c8f127 %}
+
 The FOLIO Project uses GitHub pull requests checks to register a contributor's acknowledgement of the license agreement.
 Before a pull request can be merged, all contributors to the pull request must acknowledge their agreement with the terms.
 This acknowledgement is through each contributor signing into https://cla-assistant.io/ using their GitHub account.

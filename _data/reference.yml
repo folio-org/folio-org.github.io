@@ -1,3 +1,6 @@
-- title: Reference
+- title: API Specifications
   reference:
-  - refinfo
+  - apispecifications
+- title: Glossary
+  reference:
+  - glossary

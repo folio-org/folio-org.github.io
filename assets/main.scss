@@ -25,20 +25,19 @@ body {
   padding-top: 0px;
   margin-bottom: 46px;
   font-family: $base-font-family;
-  font-size: 14px;
+  font-size: 12px;
+  letter-spacing: 0.05em;
 }
 
 .page-content {
   padding-top: 25px;
   padding-bottom: 20px;
-//  padding-left: 15px;
   
    h1 {
 	font-size: 1.5em;
     font-weight: 100;
     text-transform: uppercase;
 	letter-spacing: 0.01em;
-//	margin-top: -50px;
   }
   
    h2 {
@@ -54,7 +53,8 @@ body {
   h4 {
     font-size: 1.1em;
     font-weight: 300;
-    padding-top: 16px; }
+    padding-top: 16px; 
+  }
 	  
 }
 
@@ -66,7 +66,6 @@ body {
 
 ul, ol {
     margin-left: 0px;
-//	padding-left: 15px;
 }
 
 // Padding/Styling for Responsive menu
@@ -80,7 +79,7 @@ ul, ol {
 
 // Pad the search in the nav bar to line it up
 .form {
-   padding-right: 30px;
+   padding-right: 15px;
 }
 
 .is-collapsible {

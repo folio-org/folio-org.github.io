@@ -6,7 +6,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $f-color-purple;
+  color: $f-color-blue;
 }
 
 .site-footer {
@@ -63,8 +63,9 @@ th {
 }
 
 .form-control {
-    margin-top: 7px;
+    margin-top: 8px;
 	width: 120px;
+	font-size: 13px;
 }
 
 
@@ -92,6 +93,23 @@ a.is-active-link::before {
     outline: none;
 }
 
+
+// arrows
+i {
+  border: solid #f8f8f8;
+  border-width: 0 0.1em 0.1em 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 2px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+	margin-top: -50px;
+}
+
+
 // indent lists in the normal markdown
 #markdown-content-container {
 
@@ -106,8 +124,8 @@ a.is-active-link::before {
 // so text does not scroll underneath
 //
 .anchor {
-   padding-top: 120px; 
-   margin-top: -120px;
+   padding-top: 110px; 
+   margin-top: -110px;
 }
 
 // For multi page left hand menu
@@ -151,21 +169,112 @@ li.toc-list-item {
 // Styling for the collasible responsive left hand menu
 .subnav {
   overflow: hidden;
-  margin-top: 8em;
-  background-color: #eeeeee;
+  margin-top: 10em;
+//  background-color: #eeeeee;
   z-index: 900;
-	//	   background-color: #eeeeee;
-	//	   border-style: solid; 
-	//       border-color: #eeeeee; 
-	//	   border-width: 1px;
-	//       border-radius: 5px;  
+  background-color: transparent;
 }
 
 .subnav .icon {
   display: none;
 }	
 	
+// divider lines in secondary navigation	
+.divider-vertical {
+      padding-top: 1.3em;
+}	
+
+// styling for the nav bar	
+.nav > li > a {
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+}
+
 		
+// Style the top nav color	
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #777;
+}	
+
+// The length of the mobile secondary nav
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 400px;
+}
+
+// Menu button for toc
+.toc-menu {
+    font-size: 15px;
+    color: #333333 !important;
+    text-decoration: none !important;
+    background-color: #da6a2d;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-style: solid;
+    border-color: #da6a2d;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+// toc left vertical line for page elements
+.pg-li-border {
+    border-left-style: solid; 
+	border-left-color: #EEE;
+}
+
+// top navigation color
+.top-nav {
+    color: #f8f8f8 !important;
+}
+
+// ext link image
+.ext-lnk {
+     margin-left: 1px; 
+	 margin-bottom: 3px;
+}
+
+// secondary nav 
+.sec-nav {
+     background-color: #f8f8f8;
+}
+
+// top nav responsive
+.top-nav-res {
+	max-height: 200px;
+}
+
+// Pages without a side menu
+.content-blk {
+    padding-left:30px; 
+	padding-right: 30px;
+}
+
+.content-blk-b {
+    border-top: 1px solid #da6a2d;
+	border-bottom: 1px solid #da6a2d;
+	
+	h2 {
+	  padding-left: 16px;
+	}
+}
+
+// Video styling
+.scaling-iframe-wrapper-hd {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    overflow: hidden;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.scaling-iframe-wrapper-hd iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 // Large Screen	
 @media screen and (min-width: 992px) {
      
@@ -181,7 +290,7 @@ li.toc-list-item {
 
 	// Color of left hand menu
 	.subnav {
-	  background-color: #fff;
+	//  background-color: #fff;
 	}	
 }
 
@@ -192,24 +301,30 @@ li.toc-list-item {
          z-index: 1000;
 		 position: fixed;
          right: 15px;
-		 top: 65px;
+		 top: 110px;
       }
 	  
  	  p.space {
-         margin-top: 1.2cm;
+         margin-top: 2.5cm;
       }  	  
 	  // Visible Length of the toc is determined by the height of the screen
       // Used for left nav that is long and goes off the screen
 	  @media (max-height: 450px) {
         .toc {
 	          max-height: 100px;
-         }		  
+         }	
+		.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+			max-height: 150px;
+		}		 
 	  }
 	  
 	  @media screen and (max-height: 600px) and (min-height: 451px) {
-      .toc {
+       .toc {
 	      max-height: 450px;
-      }	
+       }	
+	  	.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+			max-height: 150px;
+		}
 	  }
 	  
 	  #multipage
@@ -223,10 +338,10 @@ li.toc-list-item {
 	  	 
 	 // Fpr single and multi page left nave
 	 // So text is not hidden at the top
-	 .anchor {
-		padding-top: 60px !important; 
-		margin-top: -60px !important;
-	 }
+//	 .anchor {
+//		padding-top: 60px !important; 
+//		margin-top: -60px !important;
+//	 }
 		
 	  // Display the navigation icon
 //	  .subnav a:not(:first-child) {display: none;}
@@ -251,7 +366,23 @@ li.toc-list-item {
 	  
  	  .subnav.responsive .toc {
 	    visibility: hidden;
-	  }    
+	  }
+
+	 // No vertical divider in responsive 
+     .divider-vertical {
+        display: none !important;
+     }	
+
+	 // Color for responsive drop downs
+     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #f8f8f8;
+     }	 
+}
+
+@media (max-width: 767px) {
+    .divider-vertical {
+        display: none !important;
+     }
 }
 
 

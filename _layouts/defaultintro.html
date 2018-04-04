@@ -3,7 +3,7 @@
 
 {% include head.html %}
 
-<body style="padding-top: 20px;">
+<body>
 {% include topnav.html %}
     <main class="page-content" aria-label="Content">
             <div class="container">
@@ -12,43 +12,48 @@
             </div>	
         <div class="container">	
           <div class="row">
-             <div style="padding-left:25px" class="col-md-12">
+             <div class="content-blk col-md-12">
 		           {{ content }}
 			         <br>
              </div>
           </div>		   
         </div>
-        <div class="jumbotron" style="border-top: 1px solid #da6a2d;border-bottom: 1px solid #da6a2d">	
+        <div class="content-blk-b jumbotron">	
 		   <div class="container">
 	           <div class="row">
 	              <div class="col-sm-8">
-	                 <h2 style="padding-left:12px">FOLIO COMMUNITY PARTNERS</h1><br>
+	                 <h2>FOLIO COMMUNITY PARTNERS</h2><br>
 	              </div>
 	           </div>	
                <div class="row">
                   <div class="col-sm-4">
-		             <p style="padding:10px 50px 35px 0px" class="text-right">
+		             <p class="text-right">
 			            <img src="{{site.baseurl}}/images/texas.png" width="200" height="200">
 		             </p>
                   </div>
                   <div class="col-sm-4">
-		             <p style="padding:10px 50px 35px 0px" class="text-center">
+		             <p class="text-center">
 			            <img src="{{site.baseurl}}/images/cornell.png" width="200" height="200">
 		             </p>		
                   </div>
                   <div class="col-sm-4">
-		            <p style="padding:10px 50px 35px 0px" class="text-left">
+		            <p class="text-left">
 			           <img src="{{site.baseurl}}/images/chicago.png" width="200" height="200">
 		            </p>		
                   </div>	
                </div>
 	        </div>
 	    </div>
-  		<div class="container">  	
-	        <ul class="contact-list">
-                <li style="list-style: none;">&copy; 2017 The Open Library Foundation</li>
-            </ul>
-		</div>
+		<div class="container">
+		  <br>
+            <div class="footer-col-wrapper">
+              <div class="footer-col footer-col-1">
+                <div class="contact-list">
+                  &nbsp;&nbsp;&copy; 2018 The Open Library Foundation</li>
+                </div>
+              </div>
+            </div>
+        </div>		
     </main>
     {% include js_files.html %}
 </body>
