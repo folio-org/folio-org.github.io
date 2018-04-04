@@ -5,7 +5,7 @@ permalink: /source-code/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Source
-menuTopIndex: 3
+menuTopIndex: 4
 menuSubTitle: Source-code overview
 menuSubIndex: 1
 ---
@@ -61,7 +61,7 @@ facilitated by the code in the `raml-module-builder` repository.
 - [raml](https://github.com/folio-org/raml)
   -- Repository of RAML files, including JSON Schemas, traits and
   resource types centralized for re-usability.
-  The [API reference](/doc/#api-reference) documentation is also
+  The [API reference](/reference/api/) documentation is also
   generated.
   This repository is the master location for the traits and resource
   types, while each module is the master for its own schemas, examples,
@@ -298,7 +298,7 @@ exists and can be run, the APIs are likely to change.
   -- Ruby client to communicate with an Okapi cluster.
 
 - [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
-  -- [CQL](/doc/glossary/#cql) (Contextual Query Language) to PostgreSQL JSON converter in Java.
+  -- [CQL](/reference/glossary/#cql) (Contextual Query Language) to PostgreSQL JSON converter in Java.
 
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.

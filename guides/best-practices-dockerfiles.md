@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Best practices for Dockerfiles
-permalink: /doc/best-practices-dockerfiles/
+permalink: /guides/best-practices-dockerfiles/
 menuInclude: no
-menuTopTitle: Documentation
+menuTopTitle: Guides
 ---
 
 Since FOLIO modules can consist of range of application and programming environments,

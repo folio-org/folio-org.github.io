@@ -1,12 +1,9 @@
 ---
 layout: page
 title: Guidelines for Contributing Code
-permalink: /community/contrib-code/
-menuInclude: yes
-menuLink: yes
-menuTopTitle: Contributing
-menuSubTitle: Guidelines for Contributing Code
-menuSubIndex: 2
+permalink: /guidelines/contributing/
+menuInclude: no
+menuTopTitle: Guidelines
 ---
 
 ## License
@@ -21,7 +18,7 @@ See the [Contributor License Agreement](#contributor-license-agreement) section 
 ## Issue tracker
 
 The FOLIO Issue Tracker is at [issues.folio.org](https://issues.folio.org/)
-and see the usage [guidelines](/community/guide-issues)
+and see the usage [guidelines](/guidelines/issue-tracker/)
 which encourage reports of various types of issue and explain how to.
 
 ## Git and branches
@@ -124,7 +121,7 @@ The FOLIO Project uses the [Apache License, Version 2.0](https://www.apache.org/
 
 {% gist a72174fc6b18f3a66f2f9d3db1c8f127 %}
 
-See [accepting the contributor license agreement](/community/cla-process) for more details.
+See [accepting the contributor license agreement](/guidelines/cla-process) for more details.
 
 ### Merging pull requests
 
@@ -163,12 +160,12 @@ When done, you probably want to delete the local branch from your own machine
 
 ## Automation
 
-The FOLIO [build, test, and deployment infrastructure](/doc/automation)
+The FOLIO [build, test, and deployment infrastructure](/guides/automation/)
 is described separately.
 
 ## Releasing
 
-Refer to the specific [Release procedures](/doc/release-procedures).
+Refer to the specific [Release procedures](/guidelines/release-procedures/).
 
 Later, if there are bugs in the released version, work can continue on the
 version branch, and we can release a new minor version from the branch. Some
@@ -278,26 +275,26 @@ For JavaScript code we follow [ESLint](https://eslint.org), with some exceptions
 ### Code analysis and linting
 
 All code repositories have linter and code-style analysis facilities implemented as part of their continuous integration build process.
-The process is [explained](/doc/code-analysis), along with usage notes and configuration for running those tools locally.
+The process is [explained](/guides/code-analysis), along with usage notes and configuration for running those tools locally.
 
 ### Consistent whitespace
 
 - We indent with two spaces only, because vert.x uses deeply nested callbacks.
-- We _don't_ use tab characters for indents, only spaces.
+- We _do not_ use tab characters for indents, only spaces.
 
 For XML and JSON and RAML files, the same: two-space indent and no tabs.
 
 Some projects do provide a `.editorconfig` file.
 Remember to set your IDE and editors to remove trailing spaces on saving files,
 since those produce unnecessary diffs in Git.
-Refer to coding style [configuration](/doc/setup#coding-style) assistance.
+Refer to coding style [configuration](/guides/developer-setup#coding-style) assistance.
 
 ### No license header
 
 We do not use a license header in the top of each source code file.
 Refer to the README and LICENSE file at the top of each repository.
 See further [license](#license) information.
-See [configuration](/doc/setup#no-license-header) assistance for IDEs.
+See [configuration](/guides/developer-setup#no-license-header) assistance for IDEs.
 
 ## Tests
 

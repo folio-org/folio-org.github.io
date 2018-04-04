@@ -1,12 +1,9 @@
 ---
 layout: page
 title: Which forum to use for communication
-permalink: /community/which-forum/
-menuInclude: yes
-menuLink: yes
-menuTopTitle: Contributing
-menuSubTitle: Which forum to use
-menuSubIndex: 3
+permalink: /guidelines/which-forum/
+menuInclude: no
+menuTopTitle: Guidelines
 ---
 
 Developers need to efficiently discuss various topics such as issues,
@@ -111,7 +108,7 @@ We follow a variation of the Apache motto:
 
 - Describe the issue concisely in the Summary and Description fields.
   Use Comments for further detail.
-  See [Guidelines for FOLIO issue tracker](/community/guide-issues) for notes about what to report and how to do so.
+  See [Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/) for notes about what to report and how to do so.
 
 - Follow up in other forums for any lengthy discussion.
   Then summarise into further issue tracker comments.
@@ -129,7 +126,7 @@ We follow a variation of the Apache motto:
 [other](/source-code/#other-projects) projects.
 
 - As explained in
-  [Guidelines for Contributing Code](/community/contrib-code),
+  [Guidelines for Contributing Code](/guidelines/contributing/),
   use Feature Branches for any task beyond a minor text edit.
 
 - Use a descriptive name for the branch, with an Issue tracker number

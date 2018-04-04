@@ -4,7 +4,6 @@ title: Tutorials overview
 permalink: /tutorials/overview/
 menuInclude: yes
 menuTopTitle: Tutorials
-menuTopIndex: 90
 menuSubs:
 - title: Tutorials introduction
   url: /tutorials/

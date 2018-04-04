@@ -2,7 +2,7 @@
 layout: page
 title: How to create a new FAQ document
 titleLeader: "FAQ |"
-menuTopTitle: Documentation
+menuTopTitle: Guides
 categories: management other
 faqOrder: 100
 ---

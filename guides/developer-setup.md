@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Setup development environment
-permalink: /doc/setup/
+permalink: /guides/developer-setup/
 menuInclude: no
-menuTopTitle: Documentation
+menuTopTitle: Guides
 ---
 
 A collection of tips to assist developers to configure their local workstation setup environment for FOLIO development.
@@ -12,10 +12,10 @@ A collection of tips to assist developers to configure their local workstation s
 
 Assume already doing other development, so know how to keep the operating system up-to-date, know its quirks, know how to use the various package managers. So this document will not go into detail about that.
 
-FOLIO modules can be developed in any suitable [programming language](/doc/any-programming-language).
+FOLIO modules can be developed in any suitable [programming language](/guides/any-programming-language).
 
 The [FOLIO-Sample-Modules](https://github.com/folio-org/folio-sample-modules) explains about module development.
-The various [Stripes](/doc#user-interface) documentation explains user-interface development.
+The various [Stripes](/guides#user-interface) documentation explains user-interface development.
 Those also have more notes about setting up and managing the local development environment.
 
 ## Tools
@@ -39,7 +39,7 @@ As each FOLIO component can utilise whatever suite of appropriate tools, refer t
 
 Occasionally it becomes necessary to specify minimum versions of some tools:
 
-* Java: [1.8.0-101](/doc/troubleshooting#missing-certificate-authority-for-lets-encrypt)
+* Java: [1.8.0-101](/guides/troubleshooting#missing-certificate-authority-for-lets-encrypt)
 
 ### Other tools
 
@@ -52,22 +52,22 @@ Note that this is not required to be installed for running modules using the "em
 FOLIO utilizes the Nexus OSS Repository Manager to host Maven artifacts and NPM packages for FOLIO projects.
 Docker images are the primary distribution model for FOLIO modules.
 
-See [Built artifacts](/doc/artifacts) for configuration details for accessing the released and snapshot FOLIO artifacts.
+See [Built artifacts](/download/artifacts/) for configuration details for accessing the released and snapshot FOLIO artifacts.
 
 For developers needing to publish artifacts, an overview and usage configuration details are provided, see
-[Build, test, and deployment infrastructure](/doc/automation).
+[Build, test, and deployment infrastructure](/guides/automation/).
 
 ## Coding style
 
 ### Style guidelines and configuration
 
-Refer to the [coding style](/community/contrib-code#coding-style) sections of the
-[Guidelines for Contributing Code](/community/contrib-code).
+Refer to the [coding style](/guidelines/contributing#coding-style) sections of the
+[Guidelines for Contributing Code](/guidelines/contributing).
 
 ### Code analysis and linting
 
 All code repositories have linter and code-style analysis facilities implemented as part of their continuous integration build process.
-The process is [explained](/doc/code-analysis), along with usage notes and configuration for running those tools locally.
+The process is [explained](/guides/code-analysis), along with usage notes and configuration for running those tools locally.
 
 ### Use EditorConfig for consistent whitespace
 
@@ -82,7 +82,7 @@ For example, the Java text editor in Eclipse has its own configuration for `trim
 
 ### No license header
 
-As [explained](/community/contrib-code#no-license-header), we do not use a license header in the top of each source code file.
+As [explained](/guidelines/contributing#no-license-header), we do not use a license header in the top of each source code file.
 
 Please configure your IDE to use an empty license header. Some IDEs have a default template to remind developers to add one. We do not.
 
@@ -158,4 +158,4 @@ For Maven-based modules, add to your POM file (copy the 'git submodule update' f
 
 ## Troubleshooting
 
-See [notes](/doc/troubleshooting).
+See [notes](/guides/troubleshooting/).

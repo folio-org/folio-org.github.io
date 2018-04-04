@@ -2,14 +2,13 @@
 layout: page
 title: How to get started with FOLIO development
 titleLeader: "FAQ |"
-menuTopTitle: Documentation
+menuTopTitle: Guides
 categories: start
 faqOrder: 1
 ---
 
-Familiarise with the project via the [Background orientation](/doc/#background-orientation) section.
-Establish the development environment via the [Setup and configuration](/doc/#setup-and-configuration) section.
+Familiarise with the project via the [Background orientation](/guidelines/#background-orientation) section of the [Guidelines](/guidelines/).
 
-Follow the [Fundamental documentation](/doc/#fundamental-documentation) section which provides some important starting points.
+Establish the development environment via the [Setup and configuration](/guides/#setup-and-configuration) section of the [Guides](/guides/).
 
-The [Getting started](/doc/#getting-started) section will then assist to commence new modules.
+The [Getting started](/start/) section introduces the fundamental documentation which provides some important starting points for background understanding, and assists with commencing new modules.

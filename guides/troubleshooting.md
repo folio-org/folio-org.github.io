@@ -1,9 +1,9 @@
 ---
 layout: page
 title: General troubleshooting
-permalink: /doc/troubleshooting/
+permalink: /guides/troubleshooting/
 menuInclude: no
-menuTopTitle: Documentation
+menuTopTitle: Guides
 ---
 
 A collection of general tips to assist developers to conduct troubleshooting.
@@ -16,16 +16,16 @@ Some FOLIO repositories also have specific notes.
 
 ## Keep system tools up-to-date
 
-As [explained](/doc/setup#introduction) in the FOLIO setup documentation,
+As [explained](/guides/developer-setup#introduction) in the FOLIO setup documentation,
 keeping the operating system and tools up-to-date will generally help to
 avoid issues.
-See [minimum versions](/doc/setup#tools) of some tools.
+See [minimum versions](/guides/developer-setup#tools) of some tools.
 
 ## Update git submodules
 
 Some FOLIO repositories utilize “git submodules” for sections of common code.
 Some git clients do not handle this properly.
-See [notes](/doc/setup#update-git-submodules).
+See [notes](/guides/developer-setup#update-git-submodules).
 
 ## Do development and operations as a regular user
 
