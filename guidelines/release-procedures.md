@@ -144,10 +144,10 @@ Maven repository, a docker image released to Docker Hub, a Linux distribution pa
 or some combination of artifacts depending on the project.  To release the artifacts
 relevant to your project, log into the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
 
-Navigate to [https://jenkins-aws.indexdata.com/job/folio-org/], find your project,
+Navigate to [https://jenkins-aws.indexdata.com/job/folio-org/](https://jenkins-aws.indexdata.com/job/folio-org/), find your project,
 and select the tab with Tags. Find your version tag, probably at the end of the
-list, and click on it. (Or, you can go directly to it via something like
-[https://jenkins-aws.indexdata.com/job/folio-org/job/okapi/view/tags/job/v9.0.1/]).
+list, and click on it. Or, you can go directly to it via something like
+[https://jenkins-aws.indexdata.com/job/folio-org/job/okapi/view/tags/job/v9.0.1/][(https://jenkins-aws.indexdata.com/job/folio-org/job/okapi/view/tags/job/v9.0.1/).
 Click on the "Build Now" in the left side menu.
 
 Some projects still use the old procedure, like this: Navigate to your "My Views > Release Jobs"
