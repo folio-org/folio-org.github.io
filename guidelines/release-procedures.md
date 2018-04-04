@@ -147,7 +147,7 @@ relevant to your project, log into the [FOLIO Jenkins system](https://jenkins-aw
 Navigate to [https://jenkins-aws.indexdata.com/job/folio-org/](https://jenkins-aws.indexdata.com/job/folio-org/), find your project,
 and select the tab with Tags. Find your version tag, probably at the end of the
 list, and click on it. Or, you can go directly to it via something like
-[https://jenkins-aws.indexdata.com/job/folio-org/job/okapi/view/tags/job/v9.0.1/][(https://jenkins-aws.indexdata.com/job/folio-org/job/okapi/view/tags/job/v9.0.1/).
+[https://jenkins-aws.indexdata.com/job/folio-org/job/okapi/view/tags/job/v2.9.4/](https://jenkins-aws.indexdata.com/job/folio-org/job/okapi/view/tags/job/v2.9.4/)
 Click on the "Build Now" in the left side menu.
 
 Some projects still use the old procedure, like this: Navigate to your "My Views > Release Jobs"
@@ -155,7 +155,7 @@ folder and select your module's Jenkins job name with the '-release' suffix.
 For example, 'okapi-release'.   Select 'Build with Parameters' and select the release tag you
 want to release.  This will build the release artifacts and deploy them to the proper
 repositories. (If you do not see the 'Build with Parameters' menu point, check that
-you have logged in!)
+you have logged in! Or if you should be using the new procedure, above)
 
 ### Merge the release branch into master
 Go to GitHub and make a pull request for the release branch you just pushed.
