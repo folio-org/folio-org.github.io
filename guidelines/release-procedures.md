@@ -150,6 +150,9 @@ want to release.  This will build the release artifacts and deploy them to the p
 repositories. (If you do not see the 'Build with Parameters' menu point, check that
 you have logged in!)
 
+(It looks like some projects no longer need this step, but start the build automatically.
+TODO - Check what is going on, and document it right!)
+
 ### Merge the release branch into master
 Go to GitHub and make a pull request for the release branch you just pushed.
 Wait for all the tests to pass and merge the pull request.
@@ -169,6 +172,12 @@ released, and add the next version(s).
 ### Announce
 
 Send a note to #general on Slack if relevant.
+
+### Check SonarQube warnings
+
+Something like https://sonarcloud.io/dashboard?id=org.folio.okapi%3Aokapi. You should
+have done this when merging your stuff into master, but SQ does not seem to run
+at that point (TODO: Check if is supposed to, and fix)
 
 ### Improve this doc
 
