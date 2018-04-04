@@ -143,15 +143,19 @@ An 'artifact' in this context could either be a Maven artifact released to the F
 Maven repository, a docker image released to Docker Hub, a Linux distribution package
 or some combination of artifacts depending on the project.  To release the artifacts
 relevant to your project, log into the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
-Navigate to your "My Views > Release Jobs"
+
+Navigate to [https://jenkins-aws.indexdata.com/job/folio-org/], find your project,
+and select the tab with Tags. Find your version tag, probably at the end of the
+list, and click on it. (Or, you can go directly to it via something like
+[https://jenkins-aws.indexdata.com/job/folio-org/job/okapi/view/tags/job/v9.0.1/]).
+Click on the "Build Now" in the left side menu.
+
+Some projects still use the old procedure, like this: Navigate to your "My Views > Release Jobs"
 folder and select your module's Jenkins job name with the '-release' suffix.
 For example, 'okapi-release'.   Select 'Build with Parameters' and select the release tag you
 want to release.  This will build the release artifacts and deploy them to the proper
 repositories. (If you do not see the 'Build with Parameters' menu point, check that
 you have logged in!)
-
-(It looks like some projects no longer need this step, but start the build automatically.
-TODO - Check what is going on, and document it right!)
 
 ### Merge the release branch into master
 Go to GitHub and make a pull request for the release branch you just pushed.
@@ -175,7 +179,7 @@ Send a note to #general on Slack if relevant.
 
 ### Check SonarQube warnings
 
-Something like https://sonarcloud.io/dashboard?id=org.folio.okapi%3Aokapi. You should
+Something like [https://sonarcloud.io/dashboard?id=org.folio.okapi%3Aokapi]. You should
 have done this when merging your stuff into master, but SQ does not seem to run
 at that point (TODO: Check if is supposed to, and fix)
 
