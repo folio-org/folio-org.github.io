@@ -104,6 +104,7 @@ mod-inventory-storage:
       - locationunit
       - material-type
       - platform
+      - service-point
       - shelf-location
     ramlutil: ramls/raml-util
 
