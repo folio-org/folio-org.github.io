@@ -99,6 +99,12 @@ form input {
 .menubar-icon {
   display: none;
 }
+div.item {
+  p.home {
+    color: $f-color-orange;
+    font-weight: bold;
+  }
+}
 nav.folio {
   background-color: $f-color-orange;
   div.item {
