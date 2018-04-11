@@ -115,9 +115,9 @@ $banner-height-widest:					68px;
 // The background of the banner. (Not the banner-area!)
 // CSS property: Background.
 //
-$banner-background-narrow:				white;
-$banner-background-medium:				white;
-$banner-background-widest:				white;
+$banner-background-narrow:				$f-color-orange;
+$banner-background-medium:				$f-color-orange;
+$banner-background-widest:				$f-color-orange;
 
 
 // *********************************************************************************************************************
@@ -337,9 +337,9 @@ $banner-subtitle-font-widest:					18px $theme-font-family;
 // The color for the title.
 // CSS property: color
 //
-$banner-title-color-narrow:						$f-color-orange;
-$banner-title-color-medium:						$f-color-orange;
-$banner-title-color-widest:						$f-color-orange;
+$banner-title-color-narrow:						$f-color-purple;
+$banner-title-color-medium:						$f-color-purple;
+$banner-title-color-widest:						$f-color-purple;
 
 // The color for the subtitle.
 // CSS property: color

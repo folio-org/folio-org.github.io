@@ -97,6 +97,10 @@ form input {
   font-size: 1.3em;
 }
 nav.folio {
+  background-color: $f-color-orange;
+  div.item {
+    background-color: $f-color-orange;
+  }
   div.dropdown {
     z-index: 9;
   }
