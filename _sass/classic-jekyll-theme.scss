@@ -529,8 +529,8 @@ $menubar-height-widest:								auto;
 // Horizontally position the icon, items and item-separators in the menubar.
 // CSS property: justify-content
 //
-$menubar-justify-content-medium:					center;
-$menubar-justify-content-widest:					center;
+$menubar-justify-content-medium:					flex-end;
+$menubar-justify-content-widest:					flex-end;
 
 // Vertically position the items and item-separators in the menubar.
 // CSS property: align-items
