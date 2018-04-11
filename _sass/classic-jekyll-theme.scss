@@ -90,8 +90,8 @@ $add-to-banner-area-height-widest:		27px;
 // Note: This prevents an anchored link from scrolling to a position behind the banner-area.
 //
 $anchor-top-fixed-offset-narrow:		50px;
-$anchor-top-fixed-offset-medium:		127px;
-$anchor-top-fixed-offset-widest:		127px;
+$anchor-top-fixed-offset-medium:		54px;
+$anchor-top-fixed-offset-widest:		54px;
 
 // *********************************************************************************************************************
 // Banner
@@ -101,8 +101,8 @@ $anchor-top-fixed-offset-widest:		127px;
 // inside the DOM of the 'banner' class).
 //
 $banner-enabled-narrow:					true;
-$banner-enabled-medium:					true;
-$banner-enabled-widest:					true;
+$banner-enabled-medium:					false;
+$banner-enabled-widest:					false;
 
 // The height of the banner. (Not the banner-area!)
 // Always set a fixed value ('auto' and percentages don't work)
@@ -209,8 +209,8 @@ $banner-icon-background-widest:			none;
 // Values: true | false
 //
 $banner-title-enabled-narrow:					true;
-$banner-title-enabled-medium:					true;
-$banner-title-enabled-widest:					true;
+$banner-title-enabled-medium:					false;
+$banner-title-enabled-widest:					false;
 
 // Controls display of the subtitle.
 // Note: Disabling the banner also disables the subtitle.
@@ -219,7 +219,7 @@ $banner-title-enabled-widest:					true;
 //
 $banner-subtitle-enabled-narrow:				false;
 $banner-subtitle-enabled-medium:				false;
-$banner-subtitle-enabled-widest:				true;
+$banner-subtitle-enabled-widest:				false;
 
 // The z-order of the title-area. Use this to position the title-area relative to the icon and the menu-symbol.
 // CSS property: z-index
@@ -361,7 +361,7 @@ $banner-subtitle-color-widest:					lighten(black, 50%);
 // Note: This does NOT control visibility of the menubar!
 //
 $banner-menu-symbol-enabled-narrow:				true;
-$banner-menu-symbol-enabled-medium:				true;
+$banner-menu-symbol-enabled-medium:				false;
 $banner-menu-symbol-enabled-widest:				false;
 
 // The z-order of the menu symbol. Use this to position the menu symbol relative to the title-area and the icon.
