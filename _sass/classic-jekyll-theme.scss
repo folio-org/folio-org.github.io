@@ -759,8 +759,8 @@ $menubar-subsubitem-separator-line-color-narrow:	$menubar-background-narrow;
 // The icon (image)
 // CSS property: content
 //
-$menubar-icon-url-medium:				none;
-$menubar-icon-url-widest:				none; //url("#{$baseurl}/assets/img/test-pattern-55.png");
+$menubar-icon-url-medium:				url("#{$baseurl}/images/test-22x22.png");
+$menubar-icon-url-widest:				url("#{$baseurl}/images/test-22x22.png");
 
 // Height of the icon
 // CSS property: height
@@ -777,8 +777,8 @@ $menubar-icon-width-widest:				auto;
 // Padding for the icon or to insert some extra padding (indent) before the first item.
 // CSS property: padding
 //
-$menubar-icon-padding-medium:			0px;
-$menubar-icon-padding-widest:			0px;
+$menubar-icon-padding-medium:			0 35vw 0 0;
+$menubar-icon-padding-widest:			0 50vw 0 0;
 
 
 // *********************************************************************************************************************

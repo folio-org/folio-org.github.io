@@ -96,6 +96,9 @@ form {
 form input {
   font-size: 1.3em;
 }
+.menubar-icon {
+  display: none;
+}
 nav.folio {
   background-color: $f-color-orange;
   div.item {
@@ -103,6 +106,9 @@ nav.folio {
   }
   div.dropdown {
     z-index: 9;
+  }
+  .menubar-icon {
+    display: block;
   }
 }
 /* tocbot */
