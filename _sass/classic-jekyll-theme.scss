@@ -130,7 +130,7 @@ $banner-background-widest:				$f-color-orange;
 // Controls display of the icon.
 // Note: Disabling the banner also disables the icon.
 //
-$banner-icon-enabled-narrow:			true;
+$banner-icon-enabled-narrow:			false;
 $banner-icon-enabled-medium:			false;
 $banner-icon-enabled-widest:			false;
 
@@ -760,8 +760,10 @@ $menubar-subsubitem-separator-line-color-narrow:	$menubar-background-narrow;
 // The icon (image)
 // CSS property: content
 //
-$menubar-icon-url-medium:				url("#{$baseurl}/images/test-30x30.png");
-$menubar-icon-url-widest:				url("#{$baseurl}/images/test-30x30.png");
+//$menubar-icon-url-medium:				url("#{$baseurl}/images/test-30x30.png");
+$menubar-icon-url-medium:				none;
+//$menubar-icon-url-widest:				url("#{$baseurl}/images/test-30x30.png");
+$menubar-icon-url-widest:				none;
 
 // Height of the icon
 // CSS property: height
