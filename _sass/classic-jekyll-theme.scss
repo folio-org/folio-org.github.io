@@ -185,9 +185,9 @@ $banner-icon-padding-widest:			0px;
 // Example: $banner-icon-url-...: url("#{$baseurl}/assets/img/wide-icon.png");
 // Set to 'none' if there is no banner icon.
 //
-$banner-icon-url-narrow:				url("#{$baseurl}/images/test-22x22.png");
-$banner-icon-url-medium:				url("#{$baseurl}/assets/img/cog-wheels-120x68.png");
-$banner-icon-url-widest:				url("#{$baseurl}/assets/img/cog-wheels-240x135.png");
+$banner-icon-url-narrow:				url("#{$baseurl}/images/test-30x30.png");
+$banner-icon-url-medium:				none;
+$banner-icon-url-widest:				none;
 
 // The background for the icon div.
 // CSS property: background
@@ -759,8 +759,8 @@ $menubar-subsubitem-separator-line-color-narrow:	$menubar-background-narrow;
 // The icon (image)
 // CSS property: content
 //
-$menubar-icon-url-medium:				url("#{$baseurl}/images/test-22x22.png");
-$menubar-icon-url-widest:				url("#{$baseurl}/images/test-22x22.png");
+$menubar-icon-url-medium:				url("#{$baseurl}/images/test-30x30.png");
+$menubar-icon-url-widest:				url("#{$baseurl}/images/test-30x30.png");
 
 // Height of the icon
 // CSS property: height
