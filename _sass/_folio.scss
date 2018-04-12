@@ -7,7 +7,10 @@ div.highlight {
 code.highlighter-rouge {
   background-color: $f-color-lighter-grey;
 }
-
+// Handle left-right jump when no scrollbar on short pages.
+html {
+  overflow-y: scroll;
+}
 /*
   The "overflow-x: auto" does not work well with "banner-position: top-fixed" ".anchor"
   and when a pre code block is immediately before a "h*" heading.
