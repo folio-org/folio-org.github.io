@@ -80,9 +80,10 @@ $background-narrow:						none;
 //
 // CSS property: Height
 //
-$add-to-banner-area-height-narrow:		27px;
-$add-to-banner-area-height-medium:		27px;
-$add-to-banner-area-height-widest:		27px;
+// FOLIO note: accommodate the height of our extra navbar and separator
+$add-to-banner-area-height-narrow:		37px;
+$add-to-banner-area-height-medium:		37px;
+$add-to-banner-area-height-widest:		37px;
 
 // See setup.yml: IF the banner-position is set to 'top' or 'main' these values should be zero (0px). If the
 // banner-position is set to 'top-fixed' then this value should be set to the height of the banner-area.
@@ -90,8 +91,8 @@ $add-to-banner-area-height-widest:		27px;
 // Note: This prevents an anchored link from scrolling to a position behind the banner-area.
 //
 $anchor-top-fixed-offset-narrow:		50px;
-$anchor-top-fixed-offset-medium:		54px;
-$anchor-top-fixed-offset-widest:		54px;
+$anchor-top-fixed-offset-medium:		75px;
+$anchor-top-fixed-offset-widest:		75px;
 
 // *********************************************************************************************************************
 // Banner
@@ -562,9 +563,9 @@ $menubar-box-shadow-widest:							none;
 // The font to be used for the text of an entry
 // CSS property: font
 //
-$menubar-item-font-narrow:							$theme-font-size $theme-font-family;
-$menubar-item-font-medium:							$theme-font-size $theme-font-family;
-$menubar-item-font-widest:							$theme-font-size $theme-font-family;
+$menubar-item-font-narrow:							$small-1-font-size $theme-font-family;
+$menubar-item-font-medium:							$small-1-font-size $theme-font-family;
+$menubar-item-font-widest:							$small-1-font-size $theme-font-family;
 $menubar-subitem-font-medium:						$small-1-font-size $theme-font-family;
 $menubar-subitem-font-widest:						$small-1-font-size $theme-font-family;
 $menubar-subsubitem-font-medium:					$menubar-subitem-font-medium;
@@ -636,8 +637,8 @@ $menubar-item-height-widest:						auto;
 // Padding of the menu entries
 // CSS property: padding
 //
-$menubar-item-padding-medium:						$vspacing-unit/4 $hspacing-unit/1.5;
-$menubar-item-padding-widest:						$vspacing-unit/4 $hspacing-unit/1.5;
+$menubar-item-padding-medium:						$vspacing-unit/1.5 $hspacing-unit/1.5;
+$menubar-item-padding-widest:						$vspacing-unit/1.5 $hspacing-unit/1.5;
 $menubar-subitem-padding-medium:					$vspacing-unit/4 $hspacing-unit;
 $menubar-subitem-padding-widest:					$vspacing-unit/4 $hspacing-unit;
 $menubar-subsubitem-padding-medium:					$vspacing-unit/4 $hspacing-unit;
