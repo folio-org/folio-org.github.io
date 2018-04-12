@@ -80,17 +80,17 @@ $background-narrow:						none;
 //
 // CSS property: Height
 //
-// FOLIO note: accommodate the height of our extra navbar and separator
-$add-to-banner-area-height-narrow:		37px;
-$add-to-banner-area-height-medium:		37px;
-$add-to-banner-area-height-widest:		37px;
+$add-to-banner-area-height-narrow:		0px;
+// FOLIO note: accommodate the height of our extra navbar
+$add-to-banner-area-height-medium:		36px;
+$add-to-banner-area-height-widest:		36px;
 
 // See setup.yml: IF the banner-position is set to 'top' or 'main' these values should be zero (0px). If the
 // banner-position is set to 'top-fixed' then this value should be set to the height of the banner-area.
 //
 // Note: This prevents an anchored link from scrolling to a position behind the banner-area.
 //
-$anchor-top-fixed-offset-narrow:		50px;
+$anchor-top-fixed-offset-narrow:		36px;
 $anchor-top-fixed-offset-medium:		75px;
 $anchor-top-fixed-offset-widest:		75px;
 
@@ -109,7 +109,7 @@ $banner-enabled-widest:					false;
 // Always set a fixed value ('auto' and percentages don't work)
 // CSS property: Height
 //
-$banner-height-narrow:					48px;
+$banner-height-narrow:					36px;
 $banner-height-medium:					68px;
 $banner-height-widest:					68px;
 
