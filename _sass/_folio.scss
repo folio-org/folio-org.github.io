@@ -7,7 +7,10 @@ div.highlight {
 code.highlighter-rouge {
   background-color: $f-color-lighter-grey;
 }
-
+// Handle left-right jump when no scrollbar on short pages.
+html {
+  overflow-y: scroll;
+}
 /*
   The "overflow-x: auto" does not work well with "banner-position: top-fixed" ".anchor"
   and when a pre code block is immediately before a "h*" heading.
@@ -96,9 +99,25 @@ form {
 form input {
   font-size: 1.3em;
 }
+.menubar-icon {
+  display: none;
+}
+div.item {
+  p.home {
+    color: $f-color-orange;
+    font-weight: bold;
+  }
+}
 nav.folio {
+  background-color: $f-color-orange;
+  div.item {
+    background-color: $f-color-orange;
+  }
   div.dropdown {
     z-index: 9;
+  }
+  .menubar-icon {
+    display: block;
   }
 }
 /* tocbot */

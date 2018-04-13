@@ -45,7 +45,7 @@ $grey-color-dark:				darken($grey-color, 25%);
 
 // Since Liquid is not available, it is necessary to redefine the baseurl from the _config.yml file here
 //
-$baseurl:						"/classic-jekyll-theme"; // eg: "/classic" a leading '/' is important.
+$baseurl:						""; // eg: "/classic" a leading '/' is important.
 
 // *********************************************************************************************************************
 // General color and background settings
@@ -80,18 +80,19 @@ $background-narrow:						none;
 //
 // CSS property: Height
 //
-$add-to-banner-area-height-narrow:		27px;
-$add-to-banner-area-height-medium:		27px;
-$add-to-banner-area-height-widest:		27px;
+$add-to-banner-area-height-narrow:		0px;
+// FOLIO note: accommodate the height of our extra navbar
+$add-to-banner-area-height-medium:		36px;
+$add-to-banner-area-height-widest:		36px;
 
 // See setup.yml: IF the banner-position is set to 'top' or 'main' these values should be zero (0px). If the
 // banner-position is set to 'top-fixed' then this value should be set to the height of the banner-area.
 //
 // Note: This prevents an anchored link from scrolling to a position behind the banner-area.
 //
-$anchor-top-fixed-offset-narrow:		50px;
-$anchor-top-fixed-offset-medium:		127px;
-$anchor-top-fixed-offset-widest:		127px;
+$anchor-top-fixed-offset-narrow:		36px;
+$anchor-top-fixed-offset-medium:		75px;
+$anchor-top-fixed-offset-widest:		75px;
 
 // *********************************************************************************************************************
 // Banner
@@ -101,23 +102,23 @@ $anchor-top-fixed-offset-widest:		127px;
 // inside the DOM of the 'banner' class).
 //
 $banner-enabled-narrow:					true;
-$banner-enabled-medium:					true;
-$banner-enabled-widest:					true;
+$banner-enabled-medium:					false;
+$banner-enabled-widest:					false;
 
 // The height of the banner. (Not the banner-area!)
 // Always set a fixed value ('auto' and percentages don't work)
 // CSS property: Height
 //
-$banner-height-narrow:					48px;
+$banner-height-narrow:					36px;
 $banner-height-medium:					68px;
 $banner-height-widest:					68px;
 
 // The background of the banner. (Not the banner-area!)
 // CSS property: Background.
 //
-$banner-background-narrow:				white;
-$banner-background-medium:				white;
-$banner-background-widest:				white;
+$banner-background-narrow:				$f-color-orange;
+$banner-background-medium:				$f-color-orange;
+$banner-background-widest:				$f-color-orange;
 
 
 // *********************************************************************************************************************
@@ -185,9 +186,9 @@ $banner-icon-padding-widest:			0px;
 // Example: $banner-icon-url-...: url("#{$baseurl}/assets/img/wide-icon.png");
 // Set to 'none' if there is no banner icon.
 //
-$banner-icon-url-narrow:				url("#{$baseurl}/assets/img/cog-wheels-60x43.png");
-$banner-icon-url-medium:				url("#{$baseurl}/assets/img/cog-wheels-120x68.png");
-$banner-icon-url-widest:				url("#{$baseurl}/assets/img/cog-wheels-240x135.png");
+$banner-icon-url-narrow:				url("#{$baseurl}/images/test-30x30.png");
+$banner-icon-url-medium:				none;
+$banner-icon-url-widest:				none;
 
 // The background for the icon div.
 // CSS property: background
@@ -209,8 +210,8 @@ $banner-icon-background-widest:			none;
 // Values: true | false
 //
 $banner-title-enabled-narrow:					true;
-$banner-title-enabled-medium:					true;
-$banner-title-enabled-widest:					true;
+$banner-title-enabled-medium:					false;
+$banner-title-enabled-widest:					false;
 
 // Controls display of the subtitle.
 // Note: Disabling the banner also disables the subtitle.
@@ -219,7 +220,7 @@ $banner-title-enabled-widest:					true;
 //
 $banner-subtitle-enabled-narrow:				false;
 $banner-subtitle-enabled-medium:				false;
-$banner-subtitle-enabled-widest:				true;
+$banner-subtitle-enabled-widest:				false;
 
 // The z-order of the title-area. Use this to position the title-area relative to the icon and the menu-symbol.
 // CSS property: z-index
@@ -337,9 +338,9 @@ $banner-subtitle-font-widest:					18px $theme-font-family;
 // The color for the title.
 // CSS property: color
 //
-$banner-title-color-narrow:						$f-color-orange;
-$banner-title-color-medium:						$f-color-orange;
-$banner-title-color-widest:						$f-color-orange;
+$banner-title-color-narrow:						$f-color-purple;
+$banner-title-color-medium:						$f-color-purple;
+$banner-title-color-widest:						$f-color-purple;
 
 // The color for the subtitle.
 // CSS property: color
@@ -361,7 +362,7 @@ $banner-subtitle-color-widest:					lighten(black, 50%);
 // Note: This does NOT control visibility of the menubar!
 //
 $banner-menu-symbol-enabled-narrow:				true;
-$banner-menu-symbol-enabled-medium:				true;
+$banner-menu-symbol-enabled-medium:				false;
 $banner-menu-symbol-enabled-widest:				false;
 
 // The z-order of the menu symbol. Use this to position the menu symbol relative to the title-area and the icon.
@@ -461,9 +462,9 @@ $menubar-top-separator-enabled-widest:			true;
 // The height of the seperator.
 // CSS property: height
 //
-$menubar-top-separator-height-narrow:			2px;
-$menubar-top-separator-height-medium:			2px;
-$menubar-top-separator-height-widest:			2px;
+$menubar-top-separator-height-narrow:			1px;
+$menubar-top-separator-height-medium:			1px;
+$menubar-top-separator-height-widest:			1px;
 
 // The background of the separator
 // CSS property: background
@@ -489,9 +490,9 @@ $menubar-bottom-separator-enabled-widest:		true;
 // The height of the seperator.
 // CSS property: height
 //
-$menubar-bottom-separator-height-narrow:		2px;
-$menubar-bottom-separator-height-medium:		2px;
-$menubar-bottom-separator-height-widest:		2px;
+$menubar-bottom-separator-height-narrow:		1px;
+$menubar-bottom-separator-height-medium:		1px;
+$menubar-bottom-separator-height-widest:		1px;
 
 // The background of the separator
 // CSS property: background
@@ -529,8 +530,8 @@ $menubar-height-widest:								auto;
 // Horizontally position the icon, items and item-separators in the menubar.
 // CSS property: justify-content
 //
-$menubar-justify-content-medium:					center;
-$menubar-justify-content-widest:					center;
+$menubar-justify-content-medium:					flex-end;
+$menubar-justify-content-widest:					flex-end;
 
 // Vertically position the items and item-separators in the menubar.
 // CSS property: align-items
@@ -562,9 +563,9 @@ $menubar-box-shadow-widest:							none;
 // The font to be used for the text of an entry
 // CSS property: font
 //
-$menubar-item-font-narrow:							$theme-font-size $theme-font-family;
-$menubar-item-font-medium:							$theme-font-size $theme-font-family;
-$menubar-item-font-widest:							$theme-font-size $theme-font-family;
+$menubar-item-font-narrow:							$small-1-font-size $theme-font-family;
+$menubar-item-font-medium:							$small-1-font-size $theme-font-family;
+$menubar-item-font-widest:							$small-1-font-size $theme-font-family;
 $menubar-subitem-font-medium:						$small-1-font-size $theme-font-family;
 $menubar-subitem-font-widest:						$small-1-font-size $theme-font-family;
 $menubar-subsubitem-font-medium:					$menubar-subitem-font-medium;
@@ -636,8 +637,8 @@ $menubar-item-height-widest:						auto;
 // Padding of the menu entries
 // CSS property: padding
 //
-$menubar-item-padding-medium:						$vspacing-unit/4 $hspacing-unit/1.5;
-$menubar-item-padding-widest:						$vspacing-unit/4 $hspacing-unit/1.5;
+$menubar-item-padding-medium:						$vspacing-unit/1.5 $hspacing-unit/1.5;
+$menubar-item-padding-widest:						$vspacing-unit/1.5 $hspacing-unit/1.5;
 $menubar-subitem-padding-medium:					$vspacing-unit/4 $hspacing-unit;
 $menubar-subitem-padding-widest:					$vspacing-unit/4 $hspacing-unit;
 $menubar-subsubitem-padding-medium:					$vspacing-unit/4 $hspacing-unit;
@@ -759,8 +760,10 @@ $menubar-subsubitem-separator-line-color-narrow:	$menubar-background-narrow;
 // The icon (image)
 // CSS property: content
 //
+//$menubar-icon-url-medium:				url("#{$baseurl}/images/test-30x30.png");
 $menubar-icon-url-medium:				none;
-$menubar-icon-url-widest:				none; //url("#{$baseurl}/assets/img/test-pattern-55.png");
+//$menubar-icon-url-widest:				url("#{$baseurl}/images/test-30x30.png");
+$menubar-icon-url-widest:				none;
 
 // Height of the icon
 // CSS property: height
@@ -777,8 +780,8 @@ $menubar-icon-width-widest:				auto;
 // Padding for the icon or to insert some extra padding (indent) before the first item.
 // CSS property: padding
 //
-$menubar-icon-padding-medium:			0px;
-$menubar-icon-padding-widest:			0px;
+$menubar-icon-padding-medium:			0 35vw 0 0;
+$menubar-icon-padding-widest:			0 50vw 0 0;
 
 
 // *********************************************************************************************************************
