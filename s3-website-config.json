@@ -11,7 +11,87 @@
         "KeyPrefixEquals": "api"
       },
       "Redirect": {
-        "ReplaceKeyWith": "doc/api"
+        "ReplaceKeyWith": "reference/api"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "doc/api"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "reference/api"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "community/cla-process"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "guidelines/cla-process"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "community/contrib-code"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "guidelines/contributing"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "community/guide-issues"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "guidelines/issue-tracker"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "doc/any-programming-language"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "guides/any-programming-language"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "doc/automation"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "guides/automation"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "doc/artifacts"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "download/artifacts"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "doc/create-new-repo"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "guidelines/create-new-repo"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "doc/glossary"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "reference/glossary"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "doc/release-procedures"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "guidelines/release-procedures"
       }
     },
     {

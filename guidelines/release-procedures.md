@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Release procedures
-permalink: /doc/release-procedures/
+permalink: /guidelines/release-procedures/
 menuInclude: no
-menuTopTitle: Documentation
+menuTopTitle: Guidelines
 ---
 
 This document summarises the release procedures for FOLIO projects.
@@ -11,7 +11,7 @@ This document summarises the release procedures for FOLIO projects.
 ## Introduction
 
 There are separate notes about the
-[FOLIO version-numbering scheme](/community/contrib-code#version-numbers).
+[FOLIO version-numbering scheme](/guidelines/contributing#version-numbers).
 
 ## Maven-based modules
 
@@ -143,12 +143,19 @@ An 'artifact' in this context could either be a Maven artifact released to the F
 Maven repository, a docker image released to Docker Hub, a Linux distribution package
 or some combination of artifacts depending on the project.  To release the artifacts
 relevant to your project, log into the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
-Navigate to your "My Views > Release Jobs"
+
+Navigate to [https://jenkins-aws.indexdata.com/job/folio-org/](https://jenkins-aws.indexdata.com/job/folio-org/), find your project,
+and select the tab with Tags. Find your version tag, probably at the end of the
+list, and click on it. Or, you can go directly to it via something like
+[https://jenkins-aws.indexdata.com/job/folio-org/job/okapi/view/tags/job/v2.9.4/](https://jenkins-aws.indexdata.com/job/folio-org/job/okapi/view/tags/job/v2.9.4/)
+Click on the "Build Now" in the left side menu.
+
+Some projects still use the old procedure, like this: Navigate to your "My Views > Release Jobs"
 folder and select your module's Jenkins job name with the '-release' suffix.
 For example, 'okapi-release'.   Select 'Build with Parameters' and select the release tag you
 want to release.  This will build the release artifacts and deploy them to the proper
 repositories. (If you do not see the 'Build with Parameters' menu point, check that
-you have logged in!)
+you have logged in! Or if you should be using the new procedure, above)
 
 ### Merge the release branch into master
 Go to GitHub and make a pull request for the release branch you just pushed.
@@ -169,6 +176,12 @@ released, and add the next version(s).
 ### Announce
 
 Send a note to #general on Slack if relevant.
+
+### Check SonarQube warnings
+
+Something like [https://sonarcloud.io/dashboard?id=org.folio.okapi%3Aokapi]. You should
+have done this when merging your stuff into master, but SQ does not seem to run
+at that point (TODO: Check if is supposed to, and fix)
 
 ### Improve this doc
 

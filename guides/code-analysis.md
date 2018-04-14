@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Code analysis and linting facilities
-permalink: /doc/code-analysis/
+permalink: /guides/code-analysis/
 menuInclude: no
-menuTopTitle: Documentation
+menuTopTitle: Guides
 ---
 
 All code repositories have linter and code-style analysis facilities implemented as part of their continuous integration. The pull requests will run the relevant static code analysis tools.
@@ -52,7 +52,7 @@ section of _The Stripes Module Developer's Guide_ explains ESLint usage, how to 
 
 These are not included in continuous integration, but are certainly useful as local tools.
 
-For RAML-using server-side projects use [raml-cop](https://github.com/thebinarypenguin/raml-cop) to validate RAML/Schema and examples.
+For RAML-using server-side projects, use [raml-cop](/guides/raml-cop/) to assess RAML and schema and examples.
 
 For JSON files, [jq](https://github.com/stedolan/jq) is useful for validation, pretty-printing and linting, and for many JSON processing and viewing tasks.
 

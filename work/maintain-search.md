@@ -10,6 +10,7 @@ Use 'jq' to display and validate the JSON:
 ```
 cat _site/search_data.json | jq
 cat _site/search_data.json | jq '.[].id'
+cat _site/search_data.json | jq '.[].title'
 du -sh _site/search_data.json
 ```
 

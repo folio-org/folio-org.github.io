@@ -1,0 +1,93 @@
+Assist the re-structuring
+
+---------------------
+Legend:
+
+- : Not assessed
+x : Not needed
+* : Needs investigation
+? : Yes, but has issues
+
+A Needs to move
+B Done move
+C
+D Needs redirection
+E Rewrite rule done
+F Fixed links in other docs
+G Finished this re-structure phase
+H Needs enhanced content ASAP
+I Is new doc
+Z New location
+----------------------------------------------------------------------------------
+                                                A B C D E F G H I J K L M N O    Z
+----------------------------------------------------------------------------------
+_faqs/explain-permissions-system.md             N           Y
+_faqs/explain-release-procedures.md             N           Y
+_faqs/how-to-become-familiar.md                 N           Y
+_faqs/how-to-configure-api-doc-generation.md    N           Y
+_faqs/how-to-create-doc-faq.md                  N           Y
+_faqs/how-to-establish-development-setup.md     N           Y
+_faqs/how-to-get-started.md                     N           Y
+_faqs/how-to-test-prior-to-commit.md            N           Y
+_faqs/where-is-api-documentation.md             N           Y
+_faqs/where-is-project-roadmap.md               N           Y
+_posts/ (not yet utilised)                      N           Y
+about/index.md                                  N           Y
+about/thanks.md                                 N           Y
+guidelines/index.md                             N           Y Y Y                guidelines/index.md
+guidelines/overview.md                          N           Y Y Y                guidelines/overview.md
+community/cla-process.md                        Y Y   Y Y - Y                    guidelines/cla-process.md
+    does this need adjust at GitHub CLA?
+community/contrib-code.md                       Y Y   Y Y - Y                    guidelines/contributing.md
+    split some into other new docs
+community/guide-issues.md                       Y Y   Y Y - Y                    guidelines/issue-tracker.md
+community/index.md                              N
+community/which-forum.md                        Y Y         Y                    guidelines/which-forum.md
+----------------------------------------------------------------------------------
+                                                A B C D E F G H I J K L M N O    Z
+----------------------------------------------------------------------------------
+doc/any-programming-language.md                 Y Y   Y Y - Y                    guides/any-programming-language.md
+doc/api/index.md                                Y Y   Y Y - Y                    reference/api/index.md
+doc/artifacts.md                                Y Y   Y Y - Y                    downloads/artifacts.md
+                                                            Y Y                  downloads/index.md
+doc/automation.md                               Y Y   Y Y - Y Y                  guides/automation.md
+doc/best-practices-dockerfiles.md               Y Y         Y                    guides/best-practices-dockerfiles.md
+doc/code-analysis.md                            Y Y         Y                    guides/code-analysis.md
+doc/create-new-repo.md                          Y Y   Y Y - Y                    guidelines/create-new-repo.md
+doc/events.md                                   Y Y         Y                    community/events.md
+doc/glossary.md                                 Y Y   Y Y - Y                    reference/glossary.md
+doc/index.md                                    Y           Y Y                  guides/index.md
+    moved to guides/index.md leaving a skel                 Y                    doc/index.md
+    later split some into other new docs        -
+    #fundamental-documentation moved to                     Y                    start/index.md
+    #background-orientation moved to                        Y                    guidelines/index.md
+doc/primer-develop-backend.md                   Y Y         Y                    start/primer-develop-backend.md
+doc/primer-develop-frontend.md                  Y Y         Y                    start/primer-develop-frontend.md
+start/index.md                                  N           Y   Y                start/index.md
+doc/reference.md                                Y Y         Y Y                  reference/index.md
+reference/overview.md                                       Y Y Y                reference/overview.md
+doc/release-procedures.md                       Y Y   Y Y - Y                    guidelines/release-procedures.md
+doc/setup.md                                    Y Y   Y     Y                    guides/developer-setup.md
+doc/troubleshooting.md                          Y Y         Y                    guides/troubleshooting.md
+error.md                                        N           Y
+faqs/index.md                                   N           Y
+guides/index.md                                 N           - Y
+guides/raml-cop.md                              N           Y
+index.md                                        N           Y Y
+search-other.md                                 N           Y
+search.md                                       N           Y
+source-code/index.md                            N           -
+    perhaps split into three pages
+tutorials/curriculum/index.md                   N           Y
+tutorials/index.md                              N           Y
+----------------------------------------------------------------------------------
+                                                A B C D E F G H I J K L M N O    Z
+----------------------------------------------------------------------------------
+
+* Re-arranging "Documentation" into "Guides" and "Guidelines".
+* Re-arranging "Community" and "Contributing" into "Guidelines".
+* Adding "Start"
+
+Now:  Reference | Source | Download | Documentation | Community | Contributing | Tutorials | Search
+Then: Start | Reference | Source | Guides | Download | Tutorials | Guidelines | Community | Search
+
