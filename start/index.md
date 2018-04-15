@@ -14,7 +14,8 @@ Follow at least the [background orientation](/guidelines/#background-orientation
 section of the [Guidelines](/guidelines/).
 That will introduce the resources available and the forums to enable interaction with the community.
 
-After perusing the fundamental docs, these primers for development of [back-end](primer-develop-backend/) (server-side) and [front-end](primer-develop-frontend/) (client-side) modules will guide through the next stage.
+After perusing the fundamental documentation, the primers will guide through the next stage.
+
 Bearing in mind that [FOLIO uses any programming language](/guides/any-programming-language/) browse the repositories to gain insights from modules that handle similar facilities to your intention.
 
 ## Fundamental documentation
@@ -32,6 +33,11 @@ for those writing UI modules for Stripes.
 - [Regression tests for FOLIO UI](https://github.com/folio-org/ui-testing).
 The testing framework is explained. Guidelines for module developers.
 - [Permissions in Stripes and FOLIO](https://github.com/folio-org/stripes-core/blob/master/doc/permissions.md).
+
+## Primer documentation
+
+* [Back-end](primer-develop-backend/) (server-side) modules.
+* [Front-end](primer-develop-frontend/) (client-side) modules.
 
 ## Further information
 
