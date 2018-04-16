@@ -25,7 +25,7 @@ Run it on any RAML file (e.g. `raml-cop ramls/loan-storage.raml`) or on multiple
 There is a shell script to facilitate raml-cop for any repository.
 Copy [mod-notes/scripts/lint-raml-cop.sh](https://github.com/folio-org/mod-notes/blob/master/scripts/lint-raml-cop.sh)
 
-That can also be run via a git pre-commit hook.
+That can also be run via a git pre-commit hook:
 
 ```shell
 if git diff --cached --name-only | grep --quiet "/ramls/"
@@ -35,6 +35,8 @@ else
   ${GIT_DIR}/../scripts/lint-raml-cop.sh
 fi
 ```
+
+The [Primer for RAML and JSON Schema](/start/primer-raml/) provides some general guidance.
 
 ## Messages
 

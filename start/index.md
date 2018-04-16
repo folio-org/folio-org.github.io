@@ -38,6 +38,7 @@ The testing framework is explained. Guidelines for module developers.
 
 * [Back-end](primer-develop-backend/) (server-side) modules.
 * [Front-end](primer-develop-frontend/) (client-side) modules.
+* [RAML and JSON Schema](primer-raml/).
 
 ## Further information
 
