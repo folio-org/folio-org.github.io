@@ -3,7 +3,7 @@ layout: page
 title: Use raml-cop to assess RAML, schema, and examples
 permalink: /guides/raml-cop/
 menuInclude: no
-menuTopTitle: Documentation
+menuTopTitle: Guides
 ---
 
 For RAML-using server-side projects, use [raml-cop](https://github.com/thebinarypenguin/raml-cop) to assess the RAML and schema and examples.
