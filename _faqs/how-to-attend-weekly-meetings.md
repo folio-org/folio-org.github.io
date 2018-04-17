@@ -16,3 +16,5 @@ We use Zoom Conferencing. Get [ready](https://support.zoom.us/) and test beforeh
 
 The meeting times and Zoom links for each room are listed in the [FOLIO Core Team Calendar](https://calendar.google.com/).
 
+The respective Slack chat [channels](/guidelines/which-forum/#slack) are utilised for support notes. The meeting room links are also pinned there.
+
