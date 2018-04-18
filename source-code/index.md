@@ -194,6 +194,9 @@ exists and can be run, the APIs are likely to change.
 - [stripes-smart-components](https://github.com/folio-org/stripes-smart-components)
   -- A suite of smart components. Each communicates with an Okapi web-service in order to provide the facilities that it renders.
 
+- [stripes-util](https://github.com/folio-org/stripes-util)
+  -- A library of utility functions to support Stripes modules.
+
 - [stripes-connect](https://github.com/folio-org/stripes-connect)
   -- Manages the connection of UI components to back-end modules.
 
