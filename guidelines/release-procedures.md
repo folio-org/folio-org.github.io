@@ -190,7 +190,7 @@ at that point (TODO: Check if is supposed to, and fix)
 
 If you found some parts of this guide to be out of date, or hard to understand,
 now is a good time to fix that. Check out the repository [folio-org/folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
-and edit `doc/release-procedures.md`.
+and edit `guidelines/release-procedures.md`
 
 ### Other current Maven-related discussion
 
