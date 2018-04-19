@@ -15,7 +15,7 @@ The [release procedures](/guidelines/release-procedures/) are separately summari
 The build, test, release, and deployment processes are, in large part, orchestrated and
 automated by Jenkins.  A Nexus repository is used to host FOLIO Maven artifacts and
 NPM packages, and Docker Hub is used as the Docker registry for Docker images.  AWS
-provides the infrastructure used to host Jenkins and Nexus as well permanent and
+provides the infrastructure used to host Jenkins and Nexus, as well as permanent and
 on-demand resources for FOLIO integration testing and demos.
 
 ## Software Build Pipeline
@@ -56,7 +56,7 @@ This is the version that will be used by acceptance testers to verify that users
 FOLIO projects are managed by the Jenkins host, https://jenkins-aws.indexdata.com
 located at AWS.  Read access to Jenkins job configurations and build logs is available to
 all core FOLIO developers.
-Jenkins credentials utilize the Github authentication, so ensure that you are logged in to GitHub to enable access to Jenkins.
+Jenkins credentials utilize the Github authentication, so ensure that you are logged in to GitHub to then enable log in to Jenkins.
 
 A standard Jenkins build job configuration for a GitHub project consists roughly
 of the following steps: a git clone of the GitHub project repository's master branch,
