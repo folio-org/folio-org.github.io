@@ -161,6 +161,10 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Helper module to start embedded Postgres.
   Helper for developers that starts the "embedded" postgres server and sets up the environment so that other modules can locate the database.
 
+- [data-loader](https://github.com/folio-org/data-loader)
+  -- RMB-based module used to load test data.
+  Currently supports loading binary MARC records into the mod-inventory-storage instance table.
+
 - [inventory-sample-data](https://github.com/folio-org/inventory-sample-data)
   -- Provides scripts for data preparation and deployment, e.g. MARC.
 
