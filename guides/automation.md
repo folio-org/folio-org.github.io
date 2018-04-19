@@ -67,17 +67,10 @@ Each FOLIO software project will also have a separate Jenkins job configured to
 build branches and pull requests.  The status of these is posted back to GitHub and Slack.
 Utilizing pull requests to verify that your development branch builds properly before
 merging with master is required.
-<<<<<<< HEAD:doc/automation.md
-
-Another common Jenkins job is dedicated to code releases.
-The following notes are a summary. More detail is at [release procedures](/doc/release-procedures).
-
-=======
 
 Another common Jenkins job is dedicated to code releases.
 The following notes are a summary. More detail is at [release procedures](/guidelines/release-procedures/).
 
->>>>>>> master:guides/automation.md
 For Maven-based projects, the
 [Maven Release Plugin](//maven.apache.org/maven-release/maven-release-plugin)
 is required.  To enable the release plugin, add the following to
