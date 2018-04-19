@@ -18,7 +18,7 @@ github_username: folio-org
 twitter_username: folio_lsp
 
 # Build settings
-remote_theme: Balancingrock/classic-jekyll-theme@d4ac9cb
+remote_theme: Balancingrock/classic-jekyll-theme@08e9ad4
 markdown: kramdown
 plugins:
   - jekyll-remote-theme

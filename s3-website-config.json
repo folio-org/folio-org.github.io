@@ -96,6 +96,14 @@
     },
     {
       "Condition": {
+        "KeyPrefixEquals": "doc/troubleshooting"
+      },
+      "Redirect": {
+        "ReplaceKeyWith": "guides/troubleshooting"
+      }
+    },
+    {
+      "Condition": {
         "KeyPrefixEquals": "curriculum/"
       },
       "Redirect": {

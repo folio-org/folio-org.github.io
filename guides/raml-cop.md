@@ -3,7 +3,7 @@ layout: page
 title: Use raml-cop to assess RAML, schema, and examples
 permalink: /guides/raml-cop/
 menuInclude: no
-menuTopTitle: Documentation
+menuTopTitle: Guides
 ---
 
 For RAML-using server-side projects, use [raml-cop](https://github.com/thebinarypenguin/raml-cop) to assess the RAML and schema and examples.
@@ -25,7 +25,7 @@ Run it on any RAML file (e.g. `raml-cop ramls/loan-storage.raml`) or on multiple
 There is a shell script to facilitate raml-cop for any repository.
 Copy [mod-notes/scripts/lint-raml-cop.sh](https://github.com/folio-org/mod-notes/blob/master/scripts/lint-raml-cop.sh)
 
-That can also be run via a git pre-commit hook.
+That can also be run via a git pre-commit hook:
 
 ```shell
 if git diff --cached --name-only | grep --quiet "/ramls/"
@@ -35,6 +35,8 @@ else
   ${GIT_DIR}/../scripts/lint-raml-cop.sh
 fi
 ```
+
+The [Primer for RAML and JSON Schema](/start/primer-raml/) provides some general guidance.
 
 ## Messages
 
