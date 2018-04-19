@@ -145,7 +145,7 @@ or some combination of artifacts depending on the project.
 
 To release the artifacts
 relevant to your project, connect to the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
-Jenkins credentials utilize the Github authentication, so ensure that you are logged in to GitHub to enable access to Jenkins.
+Jenkins credentials utilize the Github authentication for FOLIO core developers, so ensure that you are logged in to GitHub to enable access to Jenkins.
 
 Navigate to [https://jenkins-aws.indexdata.com/job/folio-org/](https://jenkins-aws.indexdata.com/job/folio-org/), find your project,
 and select the tab with Tags. Find your version tag, probably at the end of the
