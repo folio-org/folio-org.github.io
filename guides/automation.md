@@ -15,7 +15,7 @@ The [release procedures](/guidelines/release-procedures/) are separately summari
 The build, test, release, and deployment processes are, in large part, orchestrated and
 automated by Jenkins.  A Nexus repository is used to host FOLIO Maven artifacts and
 NPM packages, and Docker Hub is used as the Docker registry for Docker images.  AWS
-provides the infrastructure used to host Jenkins and Nexus as well permanent and
+provides the infrastructure used to host Jenkins and Nexus, as well as permanent and
 on-demand resources for FOLIO integration testing and demos.
 
 ## Software Build Pipeline
@@ -30,7 +30,7 @@ In order to fully understand this diagram, keep in mind that there are two parts
 
 [http://folio-testing.aws.indexdata.com/](http://folio-testing.aws.indexdata.com/)
 
-The frontend (Stripes) is built every hour from the latest master branch of the UI code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/stripes-testing/).)
+The frontend (Stripes) is rebuilt every hour from the latest master branch of the UI code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/stripes-testing/).)
 The backend (Okapi) is built every day at about 01:00 UTC from the latest master branch of the backend code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend01/).)
 There is no attempt to verify that the frontend dependencies are met by the backend modules, so there may be errors caused by that mismatch.
 
@@ -55,7 +55,8 @@ This is the version that will be used by acceptance testers to verify that users
 
 FOLIO projects are managed by the Jenkins host, https://jenkins-aws.indexdata.com
 located at AWS.  Read access to Jenkins job configurations and build logs is available to
-all core FOLIO developers.  Credentials are required.
+all core FOLIO developers.
+Jenkins credentials utilize the Github authentication, so ensure that you are logged in to GitHub to then enable log in to Jenkins.
 
 A standard Jenkins build job configuration for a GitHub project consists roughly
 of the following steps: a git clone of the GitHub project repository's master branch,
@@ -64,7 +65,7 @@ post-build notifications to GitHub and Slack (#folio-ci channel).
 Failures and unstable build notifications are also sent via e-mail.
 
 Each FOLIO software project will also have a separate Jenkins job configured to
-build branches and pull requests.  The status of these is posted back to GitHub and Slack.
+rebuild branches and build pull requests.  The status of these is posted back to GitHub and Slack.
 Utilizing pull requests to verify that your development branch builds properly before
 merging with master is required.
 

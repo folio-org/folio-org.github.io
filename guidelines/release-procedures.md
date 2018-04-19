@@ -11,7 +11,8 @@ This document summarises the release procedures for FOLIO projects.
 ## Introduction
 
 There are separate notes about the
-[FOLIO version-numbering scheme](/guidelines/contributing#version-numbers).
+[FOLIO version-numbering scheme](/guidelines/contributing/#version-numbers)
+and the [Build, test, and deployment infrastructure](/guides/automation/).
 
 ## Maven-based modules
 
@@ -141,8 +142,11 @@ to switch now! `git checkout -b "release-X.Y.Z"`)
 
 An 'artifact' in this context could either be a Maven artifact released to the FOLIO
 Maven repository, a docker image released to Docker Hub, a Linux distribution package
-or some combination of artifacts depending on the project.  To release the artifacts
-relevant to your project, log into the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
+or some combination of artifacts depending on the project.
+
+To release the artifacts
+relevant to your project, connect to the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
+Jenkins credentials utilize the Github authentication for FOLIO core developers, so ensure that you are logged in to GitHub to then enable log in to Jenkins.
 
 Navigate to [https://jenkins-aws.indexdata.com/job/folio-org/](https://jenkins-aws.indexdata.com/job/folio-org/), find your project,
 and select the tab with Tags. Find your version tag, probably at the end of the
@@ -187,7 +191,7 @@ at that point (TODO: Check if is supposed to, and fix)
 
 If you found some parts of this guide to be out of date, or hard to understand,
 now is a good time to fix that. Check out the repository [folio-org/folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
-and edit `doc/release-procedures.md`.
+and edit `guidelines/release-procedures.md`
 
 ### Other current Maven-related discussion
 
