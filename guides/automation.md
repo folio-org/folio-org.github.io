@@ -55,7 +55,8 @@ This is the version that will be used by acceptance testers to verify that users
 
 FOLIO projects are managed by the Jenkins host, https://jenkins-aws.indexdata.com
 located at AWS.  Read access to Jenkins job configurations and build logs is available to
-all core FOLIO developers.  Credentials are required.
+all core FOLIO developers.
+Jenkins credentials utilize the Github authentication, so ensure that you are logged in to GitHub to enable access to Jenkins.
 
 A standard Jenkins build job configuration for a GitHub project consists roughly
 of the following steps: a git clone of the GitHub project repository's master branch,

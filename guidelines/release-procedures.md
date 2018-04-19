@@ -141,8 +141,11 @@ to switch now! `git checkout -b "release-X.Y.Z"`)
 
 An 'artifact' in this context could either be a Maven artifact released to the FOLIO
 Maven repository, a docker image released to Docker Hub, a Linux distribution package
-or some combination of artifacts depending on the project.  To release the artifacts
-relevant to your project, log into the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
+or some combination of artifacts depending on the project.
+
+To release the artifacts
+relevant to your project, connect to the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
+Jenkins credentials utilize the Github authentication, so ensure that you are logged in to GitHub to enable access to Jenkins.
 
 Navigate to [https://jenkins-aws.indexdata.com/job/folio-org/](https://jenkins-aws.indexdata.com/job/folio-org/), find your project,
 and select the tab with Tags. Find your version tag, probably at the end of the
