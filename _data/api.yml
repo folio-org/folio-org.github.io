@@ -168,6 +168,13 @@ mod-notify:
       - notify
     ramlutil: ramls/raml-util
 
+mod-tags:
+  - label: null
+    directory: ramls
+    files:
+      - tags
+    ramlutil: ramls/raml-util
+
 mod-orders:
   - label: null
     directory: ramls
