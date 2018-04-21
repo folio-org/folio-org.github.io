@@ -154,6 +154,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-orders](https://github.com/folio-org/mod-orders)
   -- Persistent storage of order data.
 
+- [mod-tags](https://github.com/folio-org/mod-tags)
+  -- Central list of tags that can be assigned to various objects.
+
 - [mod-vendors](https://github.com/folio-org/mod-vendors)
   -- Persistent storage of vendor data.
 
