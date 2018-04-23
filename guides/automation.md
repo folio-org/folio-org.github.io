@@ -69,6 +69,10 @@ rebuild branches and build pull requests.  The status of these is posted back to
 Utilizing pull requests to verify that your development branch builds properly before
 merging with master is required.
 
+Occasionally there might be a need to trigger Jenkins to re-run a job. 
+So log in to Jenkins as described above, and find the relevant Automation job.
+If you have the permissions to do so, then the job can be initiated.
+
 Another common Jenkins job is dedicated to code releases.
 The following notes are a summary. More detail is at [release procedures](/guidelines/release-procedures/).
 
