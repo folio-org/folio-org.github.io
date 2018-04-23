@@ -174,21 +174,20 @@ mod-tags:
     files:
       - tags
     ramlutil: ramls/raml-util
-    
+
 mod-rtac:
   - label: null
     directory: ramls
     files:
       - rtac
     ramlutil: ramls/raml-util
-    
+
 mod-data-loader:
   - label: null
     directory: ramls
     files:
       - loader
     ramlutil: ramls/raml-util
-    
 
 mod-orders:
   - label: null
