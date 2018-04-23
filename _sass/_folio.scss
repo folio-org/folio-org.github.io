@@ -102,12 +102,6 @@ form input {
 .menubar-icon {
   display: none;
 }
-div.item {
-  p.home {
-    color: $f-color-orange;
-    font-weight: bold;
-  }
-}
 nav.folio {
   background-color: $f-color-orange;
   div.item {
@@ -118,6 +112,13 @@ nav.folio {
   }
   .menubar-icon {
     display: block;
+  }
+}
+// The Home menu item
+.menubar:not(.folio) {
+  div:nth-of-type(2) > div > div > a > p {
+    color: $f-color-orange;
+    font-weight: bold;
   }
 }
 /* tocbot */
