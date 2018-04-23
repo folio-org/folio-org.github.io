@@ -175,7 +175,7 @@ mod-tags:
       - tags
     ramlutil: ramls/raml-util
     
-mod-rtac
+mod-rtac:
   - label: null
     directory: ramls
     files:
