@@ -3,9 +3,8 @@
   font-size: 12px;
   letter-spacing: 0.05em;
   background-color: #4c7ea5;
-  color: #f8f8f8 !important;
+  color: #f8f8f8;
   min-height: 50px;
-  margin-bottom: 17px;
   border: 1px solid transparent;
   margin-right: auto;
   margin-left: auto;
@@ -42,55 +41,49 @@
   text-decoration: none;
 }
 
-.arrow {
-  border: solid #f8f8f8 !important;
-  border-width: 0 0.1em 0.1em 0 !important;
-  display: inline-block !important;
-  padding: 3px !important;
-  margin: 2px !important;
+.projectwide-navbar-dropdown {
+  display: inline-block;
 }
-
-.down {
-  -webkit-transform: rotate(45deg);
-  margin-top: -50px;
-  transform: rotate(45deg);
+.projectwide-navbar-dropdown-button {
+  padding: 0px 10px;
+  position:relative;
+  cursor:pointer;
+  transition:background .3s ease;
 }
-
-.projectwide-navbar-right > li > .dropdown-menu {
-  margin-top: 0;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 160px;
-  padding: 5px 0;
-  margin: 2px 0 0;
-  list-style: none;
-  font-size: 12px;
-  text-align: left;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  background-clip: padding-box;
+.projectwide-navbar-dropdown ul.active {
+  visibility:visible;
+  transition:all .3s ease;
+  transform:scaleY(1);
+  color:#333;
 }
-
-.projectwide-navbar-right > li > .dropdown-menu > li {
-  font-size: 12px;
+.projectwide-navbar-dropdown ul {
+  visibility:hidden;
+  overflow:hidden;
+  color:#fff;
+  transform-origin:top;
+  padding:0;
+  list-style:none;
+  transform:scaleY(0);
+  position:absolute;
+  left:0;
+  margin-top:13px;
+  top:100%;
+  min-width:90%;
+  transition:all .3s ease;
+  background-color: #4c7ea5;
+  border: 6px solid #4c7ea5;
+  margin-left: -13px; /* border above plus padding below */
 }
-
-.dropdown-menu > li > a {
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: normal;
-  line-height: 1.428571429;
-  color: #333333;
-  white-space: nowrap;
+.projectwide-navbar-dropdown a {
+  background-color: #4c7ea5;
+  padding:8px 10px 8px 15px;
+  box-sizing:border-box;
+  cursor:pointer;
+  transition:background .2s ease;
+  position:relative;
+}
+.projectwide-navbar-dropdown a:hover {
+  background:#f6f6f6;
+  color: #4c7ea5;
+  transition:background .2s ease;
 }
