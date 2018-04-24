@@ -154,6 +154,10 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-orders](https://github.com/folio-org/mod-orders)
   -- Persistent storage of order data.
 
+- [mod-rtac](https://github.com/folio-org/mod-rtac)
+  -- Real Time Availability Check.
+  Enable third party discovery services to check for FOLIO inventory availability.
+
 - [mod-tags](https://github.com/folio-org/mod-tags)
   -- Central list of tags that can be assigned to various objects.
 
@@ -164,7 +168,7 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Helper module to start embedded Postgres.
   Helper for developers that starts the "embedded" postgres server and sets up the environment so that other modules can locate the database.
 
-- [data-loader](https://github.com/folio-org/data-loader)
+- [mod-data-loader](https://github.com/folio-org/mod-data-loader)
   -- RMB-based module used to load test data.
   Currently supports loading binary MARC records into the mod-inventory-storage instance table.
 
