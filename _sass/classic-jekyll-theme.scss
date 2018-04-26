@@ -102,8 +102,8 @@ $anchor-top-fixed-offset-widest:		75px;
 // inside the DOM of the 'banner' class).
 //
 $banner-enabled-narrow:					true;
-$banner-enabled-medium:					false;
-$banner-enabled-widest:					false;
+$banner-enabled-medium:					true;
+$banner-enabled-widest:					true;
 
 // The height of the banner. (Not the banner-area!)
 // Always set a fixed value ('auto' and percentages don't work)
@@ -209,7 +209,7 @@ $banner-icon-background-widest:			none;
 //
 // Values: true | false
 //
-$banner-title-enabled-narrow:					true;
+$banner-title-enabled-narrow:					false;
 $banner-title-enabled-medium:					false;
 $banner-title-enabled-widest:					false;
 
