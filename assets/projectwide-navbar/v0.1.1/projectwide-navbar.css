@@ -1,0 +1,218 @@
+#projectwide-navbar {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #4c7ea5;
+  color: #f8f8f8;
+  font-size: 48px;
+  min-height: 50px;
+  border: 1px solid transparent;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.projectwide-navbar-skip-link {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+}
+
+a.projectwide-navbar-skip-link:active,
+a.projectwide-navbar-skip-link:focus,
+a.projectwide-navbar-skip-link:hover {
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+#projectwide-navbar .projectwide-navbar-logo {
+  display: none;
+}
+
+#projectwide-navbar a {
+  color: #f8f8f8;
+  display: block;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  position: relative;
+  text-decoration: none;
+}
+
+#projectwide-navbar ul {
+  margin: 0;
+  padding: 0;
+}
+
+#projectwide-navbar .projectwide-navbar-mainmenu {
+  display: none;
+}
+
+#projectwide-navbar-topmenu:checked + .projectwide-navbar-mainmenu {
+  display: block;
+}
+
+#projectwide-navbar input[type="checkbox"],
+#projectwide-navbar ul span.projectwide-navbar-dropicon {
+  display: none;
+}
+
+#projectwide-navbar li,
+#projectwide-navbar-togglemenu,
+#projectwide-navbar .projectwide-navbar-submenu {
+  border-style: solid;
+  border-color: rgba(0, 0, 0, .05);
+}
+
+#projectwide-navbar li,
+#projectwide-navbar-togglemenu {
+  border-width: 0 0 1px;
+}
+
+#projectwide-navbar .projectwide-navbar-submenu {
+  background-color: #4c7ea5;
+  border-width: 1px 1px 0;
+  margin: 0 1em;
+}
+
+#projectwide-navbar li,
+#projectwide-navbar-togglemenu,
+#projectwide-navbar a {
+  position: relative;
+  display: block;
+  color: white;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .125);
+}
+
+#projectwide-navbar-togglemenu {
+  background: transparent;
+}
+
+#projectwide-navbar-togglemenu,
+#projectwide-navbar a {
+  padding: 1em 1.5em;
+}
+
+#projectwide-navbar a {
+  transition: all .125s ease-in-out;
+  -webkit-transition: all .125s ease-in-out;
+}
+
+/* .projectwide-navbar-mainmenu a:hover {
+  background-color: white;
+  color: #4c7ea5;
+} */
+
+#projectwide-navbar .projectwide-navbar-submenu {
+  display: none;
+}
+
+#projectwide-navbar input[type="checkbox"]:checked + .projectwide-navbar-submenu {
+  display: block;
+}
+
+#projectwide-navbar .projectwide-navbar-submenu a:hover {
+  color: #444;
+}
+
+#projectwide-navbar-togglemenu .projectwide-navbar-dropicon,
+#projectwide-navbar li label.projectwide-navbar-dropicon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#projectwide-navbar label.projectwide-navbar-dropicon,
+#projectwide-navbar-togglemenu span.projectwide-navbar-dropicon {
+  padding: 1em;
+  font-size: 1em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .125);
+  text-shadow: 0 0 0 transparent;
+  color: rgba(255, 255, 255, .75);
+}
+
+@media only screen and (min-device-width: 700px) {
+  #projectwide-navbar {
+    font-size: 12px;
+    letter-spacing: 0.05em;
+  }
+
+  #projectwide-navbar .projectwide-navbar-logo {
+    display: block;
+    float: left;
+    padding: 16.5px 15px;
+    font-size: 24px;
+    line-height: 17px;
+  }
+
+  #projectwide-navbar .projectwide-navbar-themenu {
+    float: right;
+  }
+
+  #projectwide-navbar .projectwide-navbar-mainmenu {
+    margin: 7px 0 0 0;
+    display: block;
+  }
+
+  #projectwide-navbar-togglemenu,
+  #projectwide-navbar label.projectwide-navbar-dropicon {
+    display: none;
+  }
+
+  #projectwide-navbar ul span.projectwide-navbar-dropicon {
+    display: inline-block;
+  }
+
+  #projectwide-navbar li {
+    float: left;
+    border-width: 0 1px 0 0;
+  }
+
+  #projectwide-navbar .projectwide-navbar-submenu li {
+    float: none;
+    border: 4px solid #4c7ea5;
+  }
+
+  #projectwide-navbar .projectwide-navbar-submenu li a:hover{
+    background: white;
+    color: #4c7ea5;
+  }
+
+  #projectwide-navbar .projectwide-navbar-submenu {
+    border-width: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 12em;
+    z-index: 3000;
+  }
+
+  #projectwide-navbar .projectwide-navbar-submenu,
+  #projectwide-navbar input[type="checkbox"]:checked + .projectwide-navbar-submenu {
+    display: none;
+  }
+
+  #projectwide-navbar .projectwide-navbar-submenu .projectwide-navbar-submenu {
+    top: 0;
+    left: 100%;
+  }
+
+ #projectwide-navbar .projectwide-navbar-submenu .projectwide-navbar-dropicon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+  }
+
+  #projectwide-navbar li:hover > input[type="checkbox"] + .projectwide-navbar-submenu {
+    display: block;
+  }
+}
