@@ -38,9 +38,9 @@ To verify internal and external links, do:
 
 See [notes](work/README.md).
 
-## Theme enhancements
+## Theme
 
-If there is a need to override any more files, then copy them from the theme.
+See [theme guide](work/guide-theme.md).
 
 ## Deployment
 
