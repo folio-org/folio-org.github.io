@@ -9,6 +9,8 @@
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  width: 100%;
+  z-index: 10;
 }
 
 .projectwide-navbar-skip-link {
@@ -154,6 +156,7 @@ a.projectwide-navbar-skip-link:hover {
 
   #projectwide-navbar .projectwide-navbar-themenu {
     float: right;
+    padding-right: 8px;
   }
 
   #projectwide-navbar .projectwide-navbar-mainmenu {
