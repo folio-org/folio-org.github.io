@@ -3,6 +3,8 @@ This is the source for "FOLIO Developers" at [dev.folio.org](https://dev.folio.o
 To contribute changes, please make the changes in a new branch and submit a
 pull request.
 
+## Software requirements
+
 Local development requires [curl](https://curl.haxx.se/) and
 [Ruby](https://www.ruby-lang.org/) and [Bundler](https://bundler.io/).
 The 'bundle install' step will install the relevant local
@@ -28,6 +30,16 @@ bundle exec jekyll build
 
 Occasionally do `bundle update` to advance the versions of dependencies.
 
+## Docker
+
+Instead of installing the requirements you may run
+```
+docker-compose up
+```
+to use the [Jekyll Docker image](https://github.com/envygeeks/jekyll-docker).
+
+## Link checker
+
 To verify internal and external links, do:
 
 ```
@@ -38,9 +50,9 @@ To verify internal and external links, do:
 
 See [notes](work/README.md).
 
-## Theme enhancements
+## Theme
 
-If there is a need to override any more files, then copy them from the theme.
+See [theme guide](work/guide-theme.md).
 
 ## Deployment
 

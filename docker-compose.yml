@@ -1,0 +1,13 @@
+version: "3"
+services:
+  site:
+    container_name: jekyll-dev.folio.org
+    command: jekyll serve --force_polling
+    image: jekyll/jekyll:latest
+    volumes:
+      - $PWD:/srv/jekyll
+      - $HOME/.cache/bundle:/usr/local/bundle
+    ports:
+      - 4000:4000
+      - 35729:35729
+
