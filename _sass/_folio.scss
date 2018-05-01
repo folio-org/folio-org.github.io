@@ -7,9 +7,6 @@
   @include widest-layout { height: $banner-height-widest; }
   display: flex;
 }
-#projectwide-navbar {
-  width: 100%;
-}
 // end folio-navbar
 div.highlight {
   border: 1px solid $f-color-light-grey;
