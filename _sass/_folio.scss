@@ -10,7 +10,6 @@
   }
   @include medium-layout { height: $banner-height-medium; }
   @include widest-layout { height: $banner-height-widest; }
-  display: flex;
 }
 // end folio-navbar
 div.highlight {
