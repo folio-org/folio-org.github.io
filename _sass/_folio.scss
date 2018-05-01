@@ -2,7 +2,12 @@
 .folio-navbar-container {
   // Sizing: This is an overlay container over the entire banner
   @extend .overlay;
-  @include narrow-layout { height: $banner-height-narrow; }
+  @include narrow-layout {
+    height: $banner-height-narrow;
+    #projectwide-navbar {
+      z-index: 0;
+    }
+  }
   @include medium-layout { height: $banner-height-medium; }
   @include widest-layout { height: $banner-height-widest; }
   display: flex;
