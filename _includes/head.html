@@ -25,9 +25,9 @@
 
   <meta name="description" content="{{ description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
+  <link rel="stylesheet" href="/assets/projectwide-navbar/v0.1.1/projectwide-navbar.css">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.2.0/dist/tocbot.css">
-  <link rel="stylesheet" href="/assets/projectwide-navbar/v0.1.1/projectwide-navbar.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="icon" href="{{ "/images/FOLIO_fav.png" }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
