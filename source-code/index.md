@@ -115,7 +115,7 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-feesfines](https://github.com/folio-org/mod-feesfines)
   -- Provide central management for fees and fines.
 
-- [mod-glint](https://github.com/folio-org/mod-glint)
+- [mod-datasets](https://github.com/folio-org/mod-datasets)
   -- Wrapper for running a Glint server as an Okapi module.
 
 - [mod-graphql](https://github.com/folio-org/mod-graphql)
