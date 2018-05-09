@@ -74,50 +74,7 @@ So log in to Jenkins as described above, and find the relevant Automation job.
 If you have the permissions to do so, then the job can be initiated.
 
 Another common Jenkins job is dedicated to code releases.
-The following notes are a summary. More detail is at [release procedures](/guidelines/release-procedures/).
-
-For Maven-based projects, the
-[Maven Release Plugin](//maven.apache.org/maven-release/maven-release-plugin)
-is required.  To enable the release plugin, add the following to
-the parent POM of the project:
-
-```xml
-<plugin>
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-release-plugin</artifactId>
-  <version>2.5.3</version>
-  <configuration>
-    <preparationGoals>clean verify</preparationGoals>
-    <tagNameFormat>v@{project.version}</tagNameFormat>
-    <pushChanges>false</pushChanges>
-    <localCheckout>true</localCheckout>
-  </configuration>
-</plugin>
-```
-
-These jobs are initiated manually and parameterized.  The two primary parameters
-are the release version and the next development version.
-
-```
-mvn release:clean release:prepare release:perform \
-  -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${developmentVersion}
-```
-
-Together, Jenkins and Maven perform roughly the following steps to coordinate a release:
-
-* Local 'git checkout' of the master branch of the project from GitHub.
-* Check that there are no SNAPSHOT dependencies.
-* Run build and unit tests on current branch to ensure build is stable.
-* Update parent and child POMs to $releaseVersion, tag the release, make local commits.
-* Update parent and child POMs to $developmentVersion and locally commit.
-* Local git checkout of release tag, and perform release build and deploy Maven artifacts
-  to Maven release repository (if specified).
-* Run any post-build steps such as building and publishing Docker images and running
-  additional integration tests.
-* If all build and post-build steps complete successfully, the last step is to have
-  Jenkins push all commits and tags back to the master branch of the project repository
-  on GitHub.  If any part of this process fails, no tags or commits are pushed
-  to the origin repository.
+See [release procedures](/guidelines/release-procedures/).
 
 Other Jenkins automation jobs exist as well for test deployments to AWS EC2 instances.
 
