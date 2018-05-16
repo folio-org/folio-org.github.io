@@ -144,18 +144,14 @@ An 'artifact' in this context could either be a Maven artifact released to the F
 Maven repository, a docker image released to Docker Hub, a Linux distribution package
 or some combination of artifacts depending on the project.
 
-The remainder of this section applies only to the Okapi and RMB projects.
-For all other backend modules the artifact releases are triggered manually from the Tags tab in the GitHub "Releases" section of each project.
+After preparing the release as explained above, the next step is done via the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
+Jenkins credentials utilize the Github authentication for FOLIO core developers, so ensure that you are logged in to GitHub to then enable login to Jenkins.
 
-For Okapi and RMB, to release the artifacts
-connect to the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
-Jenkins credentials utilize the Github authentication for FOLIO core developers, so ensure that you are logged in to GitHub to then enable log in to Jenkins.
+For Okapi and RMB, select the [Release Jobs](https://jenkins-aws.indexdata.com/job/Release_Jobs/) folder, then follow to the relevant job (e.g.
+[okapi-release](https://jenkins-aws.indexdata.com/job/Release_Jobs/job/okapi-release/)). Select the new release version to trigger it.
 
-Navigate to [https://jenkins-aws.indexdata.com/job/folio-org/](https://jenkins-aws.indexdata.com/job/folio-org/), find your project,
-and select the tab with Tags. Find your version tag, probably at the end of the
-list, and click on it. Or, you can go directly to it via something like
-[https://jenkins-aws.indexdata.com/job/folio-org/job/okapi/view/tags/job/v2.9.4/](https://jenkins-aws.indexdata.com/job/folio-org/job/okapi/view/tags/job/v2.9.4/)
-Click on the "Build Now" in the left side menu.
+For all other modules, select the [Github folio-org](https://jenkins-aws.indexdata.com/job/folio-org/) folder, then follow to the relevant job (e.g.
+[mod-circulation](https://jenkins-aws.indexdata.com/job/folio-org/job/mod-circulation/) and select the "Tags" tab. Select the new release version to trigger it.
 
 ### Merge the release branch into master
 Go to GitHub and make a pull request for the release branch you just pushed.
