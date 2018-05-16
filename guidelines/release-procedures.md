@@ -186,25 +186,8 @@ If you found some parts of this guide to be out of date, or hard to understand,
 now is a good time to fix that. Check out the repository [folio-org/folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
 and edit `guidelines/release-procedures.md`
 
-### Other current Maven-related discussion
-
-* [OKAPI-287](https://issues.folio.org/browse/OKAPI-287)
-  -- Document release procedure
-* [OKAPI-265](https://issues.folio.org/browse/OKAPI-265)
-  -- Versions in Jira / fix-versions in particular
-* [FOLIO-551](https://issues.folio.org/browse/FOLIO-551)
-  -- FOLIO release artifacts via Jenkins
-* [FOLIO-317](https://issues.folio.org/browse/FOLIO-317)
-  -- Identify and implement FOLIO software release process
-* [OKAPI-293](https://issues.folio.org/browse/OKAPI-293)
-  -- Maven build fails when building from release distributions
-
 ## Stripes-based modules
 
 All Stripes modules (i.e. stripes-* and ui-*) follow the
 [Stripes release procedure](https://github.com/folio-org/stripes-core/blob/master/doc/release-procedure.md).
 
-### Other current Stripes-related discussion
-
-* [STRIPES-309](https://issues.folio.org/browse/STRIPES-309)
-  -- Align git-repos, NPM-packages and Jira projects for Stripes and UI modules.
