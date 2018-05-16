@@ -174,15 +174,9 @@ released, and add the next version(s).
 
 Send a note to #general on Slack if relevant.
 
-### Check SonarQube warnings
-
-Something like [https://sonarcloud.io/dashboard?id=org.folio.okapi%3Aokapi]. You should
-have done this when merging your stuff into master, but SQ does not seem to run
-at that point (TODO: Check if is supposed to, and fix)
-
 ### Improve this doc
 
-If you found some parts of this guide to be out of date, or hard to understand,
+If you found some parts of this guide to be out-of-date, or hard to understand,
 now is a good time to fix that. Check out the repository [folio-org/folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
 and edit `guidelines/release-procedures.md`
 
