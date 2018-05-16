@@ -144,18 +144,15 @@ An 'artifact' in this context could either be a Maven artifact released to the F
 Maven repository, a docker image released to Docker Hub, a Linux distribution package
 or some combination of artifacts depending on the project.
 
-The remainder of this section applies only to the Okapi and RMB projects.
-For all other backend modules the artifact releases are triggered manually from the Tags tab in the GitHub "Releases" section of each project.
+After preparing the release as explained above, the next step is done via the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
+Jenkins credentials utilize the Github authentication for FOLIO core developers, so ensure that you are logged in to GitHub to then enable login to Jenkins.
 
-For Okapi and RMB, to release the artifacts
-connect to the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
-Jenkins credentials utilize the Github authentication for FOLIO core developers, so ensure that you are logged in to GitHub to then enable log in to Jenkins.
+For all modules except Okapi and RMB, select the [Github folio-org](https://jenkins-aws.indexdata.com/job/folio-org/) folder, then follow to the relevant job (e.g.
+[mod-circulation](https://jenkins-aws.indexdata.com/job/folio-org/job/mod-circulation/)) and select the "Tags" tab. Select the new release version tag, then the "Build Now" link in the left-hand panel to trigger it.
 
-Navigate to [https://jenkins-aws.indexdata.com/job/folio-org/](https://jenkins-aws.indexdata.com/job/folio-org/), find your project,
-and select the tab with Tags. Find your version tag, probably at the end of the
-list, and click on it. Or, you can go directly to it via something like
-[https://jenkins-aws.indexdata.com/job/folio-org/job/okapi/view/tags/job/v2.9.4/](https://jenkins-aws.indexdata.com/job/folio-org/job/okapi/view/tags/job/v2.9.4/)
-Click on the "Build Now" in the left side menu.
+For Okapi and RMB, select the [Release Jobs](https://jenkins-aws.indexdata.com/job/Release_Jobs/) folder, then follow to the relevant job (e.g.
+[okapi-release](https://jenkins-aws.indexdata.com/job/Release_Jobs/job/okapi-release/)).
+Select the "Build with Parameters" link in the left-hand panel, then choose the new release tag from the list, and then "Build" to trigger it.
 
 ### Merge the release branch into master
 Go to GitHub and make a pull request for the release branch you just pushed.
@@ -177,81 +174,14 @@ released, and add the next version(s).
 
 Send a note to #general on Slack if relevant.
 
-### Check SonarQube warnings
-
-Something like [https://sonarcloud.io/dashboard?id=org.folio.okapi%3Aokapi]. You should
-have done this when merging your stuff into master, but SQ does not seem to run
-at that point (TODO: Check if is supposed to, and fix)
-
 ### Improve this doc
 
-If you found some parts of this guide to be out of date, or hard to understand,
+If you found some parts of this guide to be out-of-date, or hard to understand,
 now is a good time to fix that. Check out the repository [folio-org/folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
 and edit `guidelines/release-procedures.md`
-
-### Other current Maven-related discussion
-
-* [OKAPI-287](https://issues.folio.org/browse/OKAPI-287)
-  -- Document release procedure
-* [OKAPI-265](https://issues.folio.org/browse/OKAPI-265)
-  -- Versions in Jira / fix-versions in particular
-* [FOLIO-551](https://issues.folio.org/browse/FOLIO-551)
-  -- FOLIO release artifacts via Jenkins
-* [FOLIO-317](https://issues.folio.org/browse/FOLIO-317)
-  -- Identify and implement FOLIO software release process
-* [OKAPI-293](https://issues.folio.org/browse/OKAPI-293)
-  -- Maven build fails when building from release distributions
-
-## Gradle-based modules
-
-The procedure for [Gradle](https://gradle.org/)-based modules (such as [mod-inventory](https://github.com/folio-org/mod-inventory) or [mod-circulation](https://github.com/folio-org/mod-circulation)) is very similar to [maven-based modules](#maven-based-modules).
-
-Follow all of the steps for a maven-based module, except [ensure POM declarations](#once-ensure-pom-declarations) and replacing
-[Prepare and perform the source release](#prepare-and-perform-the-source-release) with the steps outlined below.
-
-### Change the release version
-
-Using the example of releasing version 4.4.0 of the mod-inventory module for context, the top of the [gradle build configuration](https://github.com/folio-org/mod-inventory/blob/master/build.gradle) will look something similar to:
-
-```
-apply plugin: 'groovy'
-apply plugin: 'application'
-
-mainClassName = "org.folio.inventory.Launcher"
-version = "4.3.1-SNAPSHOT"
-```
-
-Change the version to "4.4.0" and commit the change using a message similar to "Release v4.4.0".
-
-Create tag representing the release, using a command similar to:
-
-```
-git tag -a v4.4.0
-```
-
-Describing the changes in this release (similar to those put in the [news](#prepare-the-news-document)) in the annotation of the tag.
-
-### Update to unreleased version
-
-Change the version again to an unreleased snapshot version. In this example it could be "4.4.1-SNAPSHOT" which is the next possible version (or "4.5.0-SNAPSHOT" if the next changes are going to provide new functionality) and commit the change using a message similar to "Increment version number to unreleased version (4.4.1)".
-
-### Trigger the release
-
-Push the changes using commands similar to:
-
-```
-git push origin master
-git push origin v4.4.0
-```
-
-Trigger the appropriate release job in Jenkins to publish the release artefacts, choosing the appropriate tag. In this example the release job is [mod-inventory-release](https://jenkins-aws.indexdata.com/job/Release_Jobs/job/mod-inventory-release/) and the parameter would be the 4.4.0 tag.
 
 ## Stripes-based modules
 
 All Stripes modules (i.e. stripes-* and ui-*) follow the
 [Stripes release procedure](https://github.com/folio-org/stripes-core/blob/master/doc/release-procedure.md).
 
-### Other current Stripes-related discussion
-
-* [STRIPES-309](https://issues.folio.org/browse/STRIPES-309)
-  -- Align git-repos, NPM-packages and Jira projects for Stripes and UI modules.
