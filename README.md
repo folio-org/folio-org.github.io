@@ -50,10 +50,6 @@ To verify internal and external links, do:
 
 See [notes](work/README.md).
 
-## Theme
-
-See [theme guide](work/guide-theme.md).
-
 ## Deployment
 
 The master branch is automatically deployed as [dev.folio.org](https://dev.folio.org/)
