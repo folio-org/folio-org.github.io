@@ -13,10 +13,8 @@ and the [client-side](/source-code/#client-side) source code repositories.
 
 That leads to the Stripes [Documentation Roadmap](https://github.com/folio-org/stripes-core/blob/master/README.md#documentation-roadmap) and overview of the main docs, and necessary background understanding.
 
-Eventually go via the foundation described in
-[The Stripes Module Developer's Guide](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md)
-to
-[Skeleton module](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#skeleton-module).
+The foundation described in
+[The Stripes Module Developer's Guide](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md) is necessary for developing UI modules using Stripes.
 
 Then move on to creating a real module with the help of [stripes-cli](https://github.com/folio-org/stripes-cli).
 
