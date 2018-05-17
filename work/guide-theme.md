@@ -1,14 +1,9 @@
-# Guidelines for theme
+# Guidelines for choosing a theme
 
 Currently Jekyll is used to generate the site.
 These are some notes to assist with deciding whether an improved theme meets our needs.
 
-* Currently using "github-pages". So follow whatever constraints that that imposes.
-(This could change in the future.)
-
-* Currently using theme "classic-jekyll-theme", see documentation at https://balancingrock.github.io/classic-jekyll-theme/ .
-
-* If there is a need to override any more files, then copy them from the theme.
+* Currently using theme "classic-jekyll-theme".
 
 * If current theme cannot meet our needs for improved navigation (perhaps by adding some supporting tools for navigation, and tweaking the current theme) then find a better theme.
 

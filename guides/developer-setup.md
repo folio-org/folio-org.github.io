@@ -30,7 +30,7 @@ Note that some parts of the development environment could be handled using
 Otherwise the development environment would need the following fundamental tools:
 
 * Apache Maven (3.3+) and Java (8+) -- For building and deploying Okapi and some server-side modules.
-* Node.js (6+) -- For Stripes and for some modules.
+* Node.js ([Active LTS version](https://github.com/nodejs/Release#release-schedule)) -- For Stripes and for some modules, and for ui-testing.
 * Docker -- Recommended method for deployment.
 
 As each FOLIO component can utilise whatever suite of appropriate tools, refer to its requirements and notes to assist with setup.
@@ -40,12 +40,14 @@ As each FOLIO component can utilise whatever suite of appropriate tools, refer t
 Occasionally it becomes necessary to specify minimum versions of some tools:
 
 * Java: [1.8.0-101](/guides/troubleshooting#missing-certificate-authority-for-lets-encrypt)
+* Node.js: 8.11.1 for ui-testing
 
 ### Other tools
 
 * PostgreSQL -- For running an external database to support storage modules.
 This will enable faster startup and operations during development.
 Note that this is not required to be installed for running modules using the "embed_postgres" option.
+* curl -- Many modules provide examples as curl requests. Alternatyively those examples could be used with Postman via "import".
 
 ## Configuration for repository usage
 

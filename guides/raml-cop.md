@@ -36,6 +36,8 @@ else
 fi
 ```
 
+Integrate with editors such as "Sublime Text".
+
 The [Primer for RAML and JSON Schema](/start/primer-raml/) provides some general guidance.
 
 ## Messages
