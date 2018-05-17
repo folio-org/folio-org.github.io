@@ -47,6 +47,7 @@ Occasionally it becomes necessary to specify minimum versions of some tools:
 * PostgreSQL -- For running an external database to support storage modules.
 This will enable faster startup and operations during development.
 Note that this is not required to be installed for running modules using the "embed_postgres" option.
+* curl -- Many modules provide examples as curl requests. Alternatyively those examples could be used with Postman via "import".
 
 ## Configuration for repository usage
 
