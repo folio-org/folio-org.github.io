@@ -180,7 +180,7 @@ mod-kb-ebsco:
     directory: ramls
     files:
       - eholdings
-    ramlutil: ramls/raml-util
+    ramlutil: null
 
 mod-rtac:
   - label: null
