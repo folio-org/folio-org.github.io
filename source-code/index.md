@@ -314,5 +314,9 @@ exists and can be run, the APIs are likely to change.
 - [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
   -- [CQL](/reference/glossary/#cql) (Contextual Query Language) to PostgreSQL JSON converter in Java.
 
+- [edge-rtac](https://github.com/folio-org/edge-rtac)
+  -- "edge" API for RTAC (Real Time Availability Check).
+  To interface with FOLIO for 3rd party discovery services to determine holdings availability.
+
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.
