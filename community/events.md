@@ -17,5 +17,5 @@ Many FOLIO recordings and presentations are available at the Open Library Founda
 [channel](https://www.youtube.com/channel/UC4Vs5mb1qgOXPZgso1LESUw) at YouTube.
 
 <div class="widget">
-{%- include widgets/youtube-player.html video='pmIwrci19gk' -%}
+{%- include widgets/youtube-player.html video='2AlFc38T_uw' -%}
 </div>
