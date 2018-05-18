@@ -40,7 +40,6 @@ As each FOLIO component can utilise whatever suite of appropriate tools, refer t
 Occasionally it becomes necessary to specify minimum versions of some tools:
 
 * Java: [1.8.0-101](/guides/troubleshooting#missing-certificate-authority-for-lets-encrypt)
-* Node.js: 8.11.1 for ui-testing
 
 ### Other tools
 
