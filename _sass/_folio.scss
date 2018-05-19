@@ -147,7 +147,7 @@ li.toc-list-item {
 a.is-active-link::before {
   background-color: $f-color-orange;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
   outline: none;
 }
 @media screen and (min-width: 0px) and (max-width: $narrow-max-width) {
