@@ -250,6 +250,10 @@ pattern.
 
 The Node.js module bundler, used to deploy Stripes modules.
 
+### WSAPI
+
+A generic term for Web Services Application Programming Interface (see [API](#api) above).
+
 ### Z39.50
 
 [Z39.50](https://en.wikipedia.org/wiki/Z39.50)
