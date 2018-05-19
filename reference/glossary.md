@@ -130,6 +130,10 @@ JavaScript Object Notation
 is an open-standard format that uses human-readable text to transmit
 data objects consisting of lists, collections and attribute–value pairs.
 
+#### JSON Schema
+
+Vocabularies that [define](/start/primer-raml/) the format of JSON instances.
+
 #### JWT
 
 [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token)
@@ -213,7 +217,7 @@ Proof-of-concept
 
 [RESTful API Modeling Language](http://raml.org) - a language for the
 definition of HTTP-based APIs. Okapi module APIs (including the API of
-Okapi itself) are defined in RAML files and schemas.
+Okapi itself) are [defined](/start/primer-raml/) in RAML files and JSON Schema files.
 
 #### RDA
 
