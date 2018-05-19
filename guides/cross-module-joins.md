@@ -6,7 +6,7 @@ menuInclude: no
 menuTopTitle: Guides
 ---
 
-Joins between different modules cannot be created at the SQL level, because you don't even know what other modules exist in the system, and you have no way of discovering what their tables and fields are even if you do know.
+Database joins between different modules cannot be created at the SQL level, because you don't even know what other modules exist in the system, and you have no way of discovering what their tables and fields are even if you do know.
 A module's implementation details can change, and are shielded behind their reliable API, so all modules must be called via their well-known [APIs](/reference/api/).
 
 For back-end modules that utilise the RAML Module Builder framework, see the RMB documentation section
