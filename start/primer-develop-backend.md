@@ -18,4 +18,6 @@ The [FOLIO-Sample-Modules guide](https://github.com/folio-org/folio-sample-modul
 The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework, is a special FOLIO module that abstracts much functionality and enables the developer to focus on implementing business functions. Define the APIs and objects in RAML files and schema files, then the RMB generates code and provides tools to help implement the module.
 (Note that at this stage of the FOLIO project, only this Java-based framework is available.)
 
+[Conduct cross-module joins via their APIs](/guides/cross-module-joins/).
+
 The [Primer for RAML and JSON Schema](/start/primer-raml/) provides some guidance.

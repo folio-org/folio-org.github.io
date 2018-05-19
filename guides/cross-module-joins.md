@@ -1,0 +1,14 @@
+---
+layout: page
+title: Conduct cross-module joins via their APIs
+permalink: /guides/cross-module-joins/
+menuInclude: no
+menuTopTitle: Guides
+---
+
+Database joins between different modules cannot be created at the SQL level, because you don't even know what other modules exist in the system, and you have no way of discovering what their tables and fields are even if you do know.
+A module's implementation details can change, and are shielded behind their reliable API, so all modules must be called via their well-known [APIs](/reference/api/).
+
+For back-end modules that utilise the RAML Module Builder framework, see the RMB documentation section
+"[Querying multiple modules via HTTP](https://github.com/folio-org/raml-module-builder/blob/master/README.md#querying-multiple-modules-via-http)".
+
