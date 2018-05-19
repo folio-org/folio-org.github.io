@@ -188,6 +188,10 @@ JavaScript code.
 The Node.js Node Package Manager - a mechanism for distributing
 packages of JavaScript code, used by Stripes.
 
+#### Okapi gateway
+
+See [Okapi](#okapi) explained above.
+
 #### OLE
 
 The [Open Library Environment](https://www.openlibraryenvironment.org/)
@@ -246,6 +250,10 @@ Search/Retrieve via URL
 ([SRU](http://www.loc.gov/standards/sru/)).
 Version "[SRU 2.0](http://www.loc.gov/standards/sru/sru-2-0.html)"
 is "searchRetrieve Version 1.0, OASIS Standard".
+
+#### Stripes toolkit
+
+See [Stripes](#stripes) and the various [Stripes entities](#stripes-entities) explained above.
 
 #### Vert.x
 
