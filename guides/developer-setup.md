@@ -124,36 +124,32 @@ Add other specific ones for your particular operating system, text editors, and 
 
 ## Update git submodules
 
-Some FOLIO repositories utilize "git submodules" for sections of common code.
+Some FOLIO repositories utilize "[git submodules](https://git-scm.com/docs/gitmodules)" for sections of common code.
 
-For example, each `mod-*` module and `raml-module-builder` include the "raml" repository as a git submodule as its `raml-util` directory.
+For example, each `mod-*` module (and `raml-module-builder` itself) include the "raml" repository as a git submodule as its `ramls/raml-util` directory.
+(See [notes](/start/primer-raml/).)
 
-Note that when originally cloning a repository, use 'git clone --recursive ...'
+Note that when originally cloning a repository, use 'git clone --recursive ...' which should automatically include any submodules.
+
 Some git clients do not. If you then have an empty "raml-util" directory, then do `git submodule update --init`
 
 Thereafter updating that submodule is deliberately not automated, so that we can ensure a stable build when we git checkout in the future.
 
 So when an update is needed to be committed, do this:
 
-    cd mod-configuration (for example)
-    git submodule foreach 'git checkout master && git pull origin master'
-    git commit ...
+```
+cd ramls/raml-util
+git checkout master
+git pull
+cd ../..
+git add ramls/raml-util
+./scripts/lint-raml-cop.sh
+mvn clean install
+git commit ...
+```
 
-Now when people update their local checkout, then some git clients do not automatically update the submodules. If that is the case, then follow with 'git submodule update'.
-
-This part can be automated with client-side git hooks. Create the following two shell scripts:
-
-    mod-configuration/.git/hooks/post-checkout
-    mod-configuration/.git/hooks/post-merge
-
-using this content:
-
-    #!/bin/sh
-    git submodule update
-
-and make them executable: 'chmod +x post-checkout post-merge'
-
-Now subsequent updates will also update the submodules to their declared revision.
+Now when people update their local checkout, then some git clients do not automatically update the submodules. If that is the case for your client, then follow with 'git submodule update'.
+If needed, then that could be automated with [githooks](https://git-scm.com/docs/githooks).
 
 For Maven-based modules, add to your POM file (copy the 'git submodule update' from mod-notes) to assist all git clients to update.
 

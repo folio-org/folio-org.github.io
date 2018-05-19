@@ -21,7 +21,7 @@ The RMB README section entitled [Design the RAML files](https://github.com/folio
 As explained there, use the shared git submodule at `ramls/raml-util`
 
 When using RMB, it is important to further emphasise some items.
-Pay attention to the "$ref" used to reference and link JSON Schema, and to their declaration in the RAML files.
+Pay attention to the "$ref" used to reference and link JSON Schema, and to the declaration in the RAML files of all schema that are used.
 At this stage RAML files must have at least two endpoints.
 
 [Use raml-cop to assess RAML, schema, and examples](/guides/raml-cop/).
