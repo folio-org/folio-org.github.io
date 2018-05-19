@@ -137,9 +137,16 @@ Thereafter updating that submodule is deliberately not automated, so that we can
 
 So when an update is needed to be committed, do this:
 
-    cd mod-configuration (for example)
-    git submodule foreach 'git checkout master && git pull origin master'
-    git commit ...
+```
+cd ramls/raml-util
+git checkout master
+git pull
+cd ../..
+git add ramls/raml-util
+./scripts/lint-raml-cop.sh
+mvn clean install
+git commit ...
+```
 
 Now when people update their local checkout, then some git clients do not automatically update the submodules. If that is the case for your client, then follow with 'git submodule update'.
 If needed, then that could be automated with [githooks](https://git-scm.com/docs/githooks).
