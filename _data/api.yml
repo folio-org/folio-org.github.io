@@ -194,6 +194,8 @@ mod-data-loader:
     directory: ramls
     files:
       - loader
+    excludes:
+      - inventory
     ramlutil: ramls/inventory/raml-util
 
 mod-orders:
