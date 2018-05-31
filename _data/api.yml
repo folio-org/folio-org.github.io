@@ -44,6 +44,11 @@ raml:
     files:
       - codex
     ramlutil: .
+  - label: tagged-record-example
+    directory: ramls/tagged-record-example
+    files:
+      - users
+    ramlutil: .
 
 raml-module-builder:
   - label: domain-models-api-interfaces
