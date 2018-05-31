@@ -185,6 +185,8 @@ mod-kb-ebsco:
     directory: ramls
     files:
       - eholdings
+    excludes:
+      - types
     ramlutil: ramls/raml-util
 
 mod-rtac:
