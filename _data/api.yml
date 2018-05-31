@@ -44,6 +44,11 @@ raml:
     files:
       - codex
     ramlutil: .
+  - label: tagged-record-example
+    directory: ramls/tagged-record-example
+    files:
+      - users
+    ramlutil: .
 
 raml-module-builder:
   - label: domain-models-api-interfaces
@@ -180,6 +185,8 @@ mod-kb-ebsco:
     directory: ramls
     files:
       - eholdings
+    excludes:
+      - types
     ramlutil: ramls/raml-util
 
 mod-rtac:
