@@ -195,6 +195,13 @@ mod-rtac:
     files:
       - rtac
     ramlutil: ramls/raml-util
+    
+mod-patron:
+  - label: null
+    directory: ramls
+    files:
+      - patron
+    ramlutil: ramls/raml-util
 
 mod-data-loader:
   - label: null
