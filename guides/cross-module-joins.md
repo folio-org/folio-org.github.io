@@ -11,6 +11,10 @@ A module's implementation details can change, and are shielded behind their reli
 
 FOLIO's microservice-like architecture facilitates [Decentralized Data Management and Polyglot Persistence](https://www.martinfowler.com/articles/microservices.html#DecentralizedDataManagement).
 
+There are many examples for doing joins on the API level.
+As one example, the "User Detail" screen shows Loans and other information gathered from various services.
+Follow the code at [ui-users](https://github.com/folio-org/ui-users).
+
 For back-end modules that utilise the RAML Module Builder framework, see the RMB documentation section
 "[Querying multiple modules via HTTP](https://github.com/folio-org/raml-module-builder/blob/master/README.md#querying-multiple-modules-via-http)".
 The framework blocks access from other modules by using a separate PostgreSQL role per module.
