@@ -154,6 +154,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-orders](https://github.com/folio-org/mod-orders)
   -- Persistent storage of order data.
 
+- [mod-patron](https://github.com/folio-org/mod-patron)
+  -- Allow 3rd party discovery services to perform FOLIO patron actions via the discovery service's UI.
+
 - [mod-rtac](https://github.com/folio-org/mod-rtac)
   -- Real Time Availability Check.
   Enable third party discovery services to check for FOLIO inventory availability.
@@ -244,6 +247,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-datasets](https://github.com/folio-org/ui-datasets)
   -- Stripes UI module: FOLIO Datasets based on Glint.
 
+- [ui-orders](https://github.com/folio-org/ui-orders)
+  -- Stripes UI module: Orders.
+
 - [ui-eholdings](https://github.com/folio-org/ui-eholdings)
   -- Stripes UI module: E-holdings.
 
@@ -313,6 +319,9 @@ exists and can be run, the APIs are likely to change.
 
 - [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
   -- [CQL](/reference/glossary/#cql) (Contextual Query Language) to PostgreSQL JSON converter in Java.
+
+- [edge-common](https://github.com/folio-org/edge-common)
+  -- Common/Shared library for Edge APIs.
 
 - [edge-rtac](https://github.com/folio-org/edge-rtac)
   -- "edge" API for RTAC (Real Time Availability Check).
