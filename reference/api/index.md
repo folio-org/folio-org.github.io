@@ -38,12 +38,13 @@ access the functionality provided by these important core modules.
     {%- for doc in docset.files -%}
       {% capture urlDoc1 %}{{ urlAws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}{{ doc }}.html{% endcapture %}
       {% capture urlDoc2 %}{{ urlAws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}2/{{ doc }}.html{% endcapture %}
+      {% capture view2 %}{% unless docset.version1 %}<a href="{{ urlDoc2 }}">view-2</a>{% endunless %}{% endcapture %}
       {% capture urlRaml %}{{ urlGithub }}/{{ repo[0] }}/blob/master/{{ docset.directory }}/{{ doc }}.raml{% endcapture %}
     <tr>
       <td> {{ docset.label }} </td>
       <td> <a href="{{ urlRaml }}">{{ doc }}</a> </td>
       <td> <a href="{{ urlDoc1 }}">view-1</a> </td>
-      <td> <a href="{{ urlDoc2 }}">view-2</a> </td>
+      <td> {{ view2 }} </td>
     </tr>
     {%- endfor -%}
   {%- endfor %}

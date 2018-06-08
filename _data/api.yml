@@ -183,6 +183,7 @@ mod-tags:
 mod-kb-ebsco:
   - label: null
     directory: ramls
+    version1: true
     files:
       - eholdings
     excludes:
