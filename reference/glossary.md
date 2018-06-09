@@ -259,6 +259,12 @@ is "searchRetrieve Version 1.0, OASIS Standard".
 
 See [Stripes](#stripes) and the various [Stripes entities](#stripes-entities) explained above.
 
+#### UUID
+
+Universally unique identifier, a 128-bit number, see
+[UUID at Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+and [How to check for a valid UUID](/guides/uuids/).
+
 #### Vert.x
 
 [Vert.x](http://vertx.io) is a toolkit for building scalable, reactive
