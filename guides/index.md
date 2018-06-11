@@ -133,6 +133,7 @@ These are listed in the [Start](/start/) section.
 - For Contextual Query Language (CQL) examples, see the [Glossary](/reference/glossary/#cql), the FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/cql2pgjson-java), the [API docs](/reference/api/), and the debug output for tests in each backend module.
 - Use [raml-cop](/guides/raml-cop/) to assess RAMLs, schema, and examples. A guide to its use with some explanations of its messages.
 - [Conduct cross-module joins via their APIs](cross-module-joins).
+- [How to check for a valid UUID](uuids).
 
 ### Tutorials
 
