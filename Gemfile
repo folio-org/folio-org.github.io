@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 3.8"
-gem "jekyll-remote-theme"
+gem "jekyll-remote-theme", "0.2.4"
 gem "jekyll-data"
 
 group :jekyll_plugins do
