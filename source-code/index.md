@@ -320,6 +320,9 @@ exists and can be run, the APIs are likely to change.
 - [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
   -- [CQL](/reference/glossary/#cql) (Contextual Query Language) to PostgreSQL JSON converter in Java.
 
+- [folio-graphiql](https://github.com/folio-org/folio-graphiql)
+  -- Explore Okapi's GraphQL endpoint.
+
 - [edge-common](https://github.com/folio-org/edge-common)
   -- Common/Shared library for Edge APIs.
 
