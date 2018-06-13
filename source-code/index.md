@@ -326,6 +326,9 @@ exists and can be run, the APIs are likely to change.
 - [edge-common](https://github.com/folio-org/edge-common)
   -- Common/Shared library for Edge APIs.
 
+- [edge-patron](https://github.com/folio-org/edge-patron)
+  -- Edge API to interface with FOLIO for 3rd party discovery services to allow patrons to perform self-service actions.
+
 - [edge-rtac](https://github.com/folio-org/edge-rtac)
   -- "edge" API for RTAC (Real Time Availability Check).
   To interface with FOLIO for 3rd party discovery services to determine holdings availability.
