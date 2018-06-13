@@ -13,6 +13,8 @@ but it excludes the Nil UUID `00000000-0000-0000-0000-000000000000` that usually
 NullObject to be used for the Null Object Pattern.
 
 A UUID has the form xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx where the version M must be [1-5]
-and the variant N must be [89abAB]; see
+and the variant N must be [89abAB]
+
+See
 [UUID at Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
