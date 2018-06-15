@@ -12,3 +12,5 @@ Familiarise with the project via the [Background orientation](/guidelines/#backg
 Establish the development environment via the [Setup and configuration](/guides/#setup-and-configuration) section of the [Guides](/guides/).
 
 The [Getting started](/start/) section introduces the fundamental documentation which provides some important starting points for background understanding, and assists with commencing new modules.
+
+There are some tips for [Finding tasks to assist and contribute](/guides/find-tasks/).

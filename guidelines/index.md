@@ -26,6 +26,8 @@ The whole community and the project will benefit by being more consistent, effic
 - [Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/).
 - [Search dev.folio.org](/search) and [other search and report facilities](/search-other).
 
+See other orientation [guides](/guides/#background-orientation).
+
 ## Development management
 
 - [Release procedures](/guidelines/release-procedures/).
