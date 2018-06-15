@@ -105,6 +105,10 @@ The list of module versions for each box is shown in its change-log.
 
 Refer to the [Guidelines](/guidelines/#background-orientation) section.
 
+Other orientation guides:
+
+* [Navigation of commits and CI via GitHub and Jenkins](navigate-commits/).
+
 ### Setup and configuration
 
 - Some tips to assist developers to configure their
