@@ -107,7 +107,8 @@ Refer to the [Guidelines](/guidelines/#background-orientation) section.
 
 Other orientation guides:
 
-* [Navigation of commits and CI via GitHub and Jenkins](navigate-commits/).
+- [Navigation of commits and CI via GitHub and Jenkins](navigate-commits/).
+- [Search dev.folio.org](/search) and [other search and report facilities](/search-other).
 
 ### Setup and configuration
 
