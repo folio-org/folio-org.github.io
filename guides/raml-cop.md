@@ -12,7 +12,9 @@ The [Primer for RAML and JSON Schema](/start/primer-raml/) provides some general
 
 ## Installation
 
-Install it globally to enable use on any project.
+Clone the "folio-tools" repository, and use its "lint-raml" scripts (see below).
+
+Or install raml-cop globally to enable basic use on any project.
 
 ```shell
 npm install -g raml-cop
