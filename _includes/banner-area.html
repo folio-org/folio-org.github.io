@@ -15,6 +15,7 @@ The conditional part for 'top-fixed' is present to make sure that the content of
 If changes are made to this file that increase the height of the banner-area that is placed outside the DOM, the HTML code can compensate for the height increase by specifying a height for the add-to-banner-area-height class.
 
 -->{%- endcomment -%}
+{% include projectwide-navbar.html %}
 
 {%- if site.data.setup.banner-position == 'top-fixed' -%}
 	{%- assign banner-classes = 'banner-area banner-area-outside-dom' -%}
@@ -28,9 +29,6 @@ If changes are made to this file that increase the height of the banner-area tha
 	<div class="icon-container">
 		{% include banner-icon.html %}
 	</div>
-        <div class="folio-navbar-container">
-          {% include projectwide-navbar.html %}
-        </div>
 	<div class="title-area-container">
 		{% include banner-title-area.html %}
 	</div>
