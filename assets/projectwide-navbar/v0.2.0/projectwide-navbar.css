@@ -4,13 +4,7 @@
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #4c7ea5;
   color: #f8f8f8;
-  font-size: 1.5em;
   min-height: 50px;
-  border: 1px solid transparent;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   width: 100%;
   z-index: 10;
 }

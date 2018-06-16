@@ -89,9 +89,9 @@ $add-to-banner-area-height-widest:		0px;
 //
 // Note: This prevents an anchored link from scrolling to a position behind the banner-area.
 //
-$anchor-top-fixed-offset-narrow:		102px;
-$anchor-top-fixed-offset-medium:		90px;
-$anchor-top-fixed-offset-widest:		90px;
+$anchor-top-fixed-offset-narrow:		0px;
+$anchor-top-fixed-offset-medium:		0px;
+$anchor-top-fixed-offset-widest:		0px;
 
 // *********************************************************************************************************************
 // Banner
@@ -102,7 +102,7 @@ $anchor-top-fixed-offset-widest:		90px;
 //
 $banner-enabled-narrow:					true;
 $banner-enabled-medium:					true;
-$banner-enabled-widest:					true;
+$banner-enabled-widest:					false;
 
 // The height of the banner. (Not the banner-area!)
 // Always set a fixed value ('auto' and percentages don't work)
@@ -115,7 +115,7 @@ $banner-height-widest:					52px;
 // The background of the banner. (Not the banner-area!)
 // CSS property: Background.
 //
-$banner-background-narrow:				$f-color-blue-light;
+$banner-background-narrow:				$f-color-orange;
 $banner-background-medium:				$f-color-orange;
 $banner-background-widest:				$f-color-orange;
 
@@ -754,7 +754,7 @@ $menubar-subsubitem-separator-line-color-narrow:	$menubar-background-narrow;
 // Before the items and item separators are loaded into the menubar, a menubar icon can be loaded.
 // The file _included/menubar-icon.html can be used for complex icons, or the icon can be assigned here.
 // The menubar icon can also be used to provide some padding before the home item in the menubar.
-// Note that the menubar icon is not shown in the narrow layout. 
+// Note that the menubar icon is not shown in the narrow layout.
 //
 // The icon (image)
 // CSS property: content
@@ -836,7 +836,7 @@ $column-separator-display:				true;
 // Set the space between the top of the separator and the menubar-bottom-separator.
 // The background for the separator is the background of the column panel.
 // CSS property: margin-top
-// 
+//
 $column-separator-top-spacing:			$vspacing-unit;
 
 // Set the space between the bottom of the separator and the footer separator.
@@ -992,7 +992,7 @@ $vmenu-subitem-disclosure-symbol-open:					'\021E9';
 
 // The width of the disclosure symbol.
 // CSS property: width
-// 
+//
 $vmenu-subitem-disclosure-area-width-medium:			1.2em;
 $vmenu-subitem-disclosure-area-width-widest:			1.2em;
 
