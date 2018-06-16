@@ -1,8 +1,9 @@
+/* for FOLIO Topnav v0.2.0 */
+
 #projectwide-navbar {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #4c7ea5;
   color: #f8f8f8;
-  font-size: 48px;
   min-height: 50px;
   border: 1px solid transparent;
   margin-right: auto;
