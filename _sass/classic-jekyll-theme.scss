@@ -115,9 +115,9 @@ $banner-height-widest:					51px;
 // The background of the banner. (Not the banner-area!)
 // CSS property: Background.
 //
-$banner-background-narrow:				$f-color-orange;
-$banner-background-medium:				$f-color-orange;
-$banner-background-widest:				$f-color-orange;
+$banner-background-narrow:				$f-color-blue-light;
+$banner-background-medium:				$f-color-blue-light;
+$banner-background-widest:				$f-color-blue-light;
 
 
 // *********************************************************************************************************************
@@ -337,9 +337,9 @@ $banner-subtitle-font-widest:					18px $theme-font-family;
 // The color for the title.
 // CSS property: color
 //
-$banner-title-color-narrow:						$f-color-purple;
-$banner-title-color-medium:						$f-color-purple;
-$banner-title-color-widest:						$f-color-purple;
+$banner-title-color-narrow:						$f-color-white;
+$banner-title-color-medium:						$f-color-white;
+$banner-title-color-widest:						$f-color-white;
 
 // The color for the subtitle.
 // CSS property: color
@@ -434,7 +434,7 @@ $banner-menu-symbol-code-widest:				'\02261';
 // The color of the menu symbol.
 // CSS property: color
 //
-$banner-menu-symbol-color-narrow:				$theme-color;
+$banner-menu-symbol-color-narrow:				$f-color-white;
 $banner-menu-symbol-color-medium:				$theme-color;
 $banner-menu-symbol-color-widest:				$theme-color;
 
