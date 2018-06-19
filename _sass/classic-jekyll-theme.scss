@@ -102,7 +102,7 @@ $anchor-top-fixed-offset-widest:		0px;
 //
 $banner-enabled-narrow:					true;
 $banner-enabled-medium:					true;
-$banner-enabled-widest:					false;
+$banner-enabled-widest:					true;
 
 // The height of the banner. (Not the banner-area!)
 // Always set a fixed value ('auto' and percentages don't work)
@@ -208,9 +208,9 @@ $banner-icon-background-widest:			none;
 //
 // Values: true | false
 //
-$banner-title-enabled-narrow:					false;
-$banner-title-enabled-medium:					false;
-$banner-title-enabled-widest:					false;
+$banner-title-enabled-narrow:					true;
+$banner-title-enabled-medium:					true;
+$banner-title-enabled-widest:					true;
 
 // Controls display of the subtitle.
 // Note: Disabling the banner also disables the subtitle.
