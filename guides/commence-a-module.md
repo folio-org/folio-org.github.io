@@ -46,6 +46,8 @@ This is a typical directory layout, excluding the general boilerplate files and 
 │   └── docker-entrypoint.sh
 ├── ramls
 │   └── raml-util
+├── reference-data
+│   └── vendor-categories
 ├── sample-data
 │   └── vendors
 ├── src
@@ -74,10 +76,19 @@ The `ramls` directory holds the RAML and Schema and examples files specific to t
 Normally there will also be the `ramls/raml-util` shared files as a git submodule of the [raml](https://github.com/folio-org/raml) repository.
 Some modules only have a `raml-util` because their files are all located in the shared space.
 
+## Reference data {#be-reference-data}
+
+The optional `reference-data` directory can hold data required for [sample data](#be-sample-data) to refer to.
+For example, if the vendors in your sample data refer to vendor categories by UUID, the vendor categories (with their UUIDs) could be defined in the `reference-data/vendor-categories` directory, in the format expected by the module's relevant endpoint for POSTing the data.
+This makes it easy to write a script to load the reference data using the module's web service API.
+
 ## Sample data {#be-sample-data}
 
 The `sample-data` directory holds sample data specific for this module.
-It will be in the format expected by the module's relevant endpoint for POSTing the data.
+It should be in the format expected by the module's relevant endpoint for POSTing the data.
+This makes it easy to write a script to load the sample data using the module's web service API.
+
+If the sample data refers to [reference data](#be-reference-data), those data can be defined in the `reference-data` directory.
 
 # Front-end modules
 
