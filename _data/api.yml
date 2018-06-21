@@ -153,6 +153,7 @@ mod-feesfines:
     files:
       - accounts
       - chargeitem
+      - comments
       - feefineactions
       - feefinehistory
       - feefines
