@@ -228,3 +228,17 @@ mod-vendors:
       - contact_category
       - vendor_category
     ramlutil: ramls/raml-util
+
+edge-patron:
+  - label: null
+    directory: ramls
+    files:
+      - edge-patron
+    ramlutil: null
+
+edge-rtac:
+  - label: null
+    directory: ramls
+    files:
+      - edge-rtac
+    ramlutil: null
