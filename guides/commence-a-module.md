@@ -16,7 +16,8 @@ The continuous integration and deployment will be easier to establish and be rel
 
 See also the guidelines to [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/).
 
-Of course any module might need extra directories and files, but the following are the essential ones.
+The essential directories and files are explained below for [back-end](#back-end-modules) and [front-end](#front-end-modules) modules.
+Of course any module might need extras.
 
 # General
 
@@ -63,7 +64,7 @@ The `Jenkinsfile` declares specific build steps for the continuous integration p
 
 ## Descriptors {#back-end-descriptors}
 
-The `descriptors` directory holds the template Descriptor files. For a Maven-based system, the pom.xml will have tasks to replace tokens with this module's `artifactId` and `version` and produce the descriptors into the `target` directory.
+The `descriptors` directory holds the template Descriptor files. For a Maven-based system, the pom.xml will have tasks to replace tokens with this module's `artifactId` and `version` to generate the descriptors into the `target` directory.
 
 ## Documentation {#back-end-doc}
 
@@ -99,5 +100,82 @@ The [stripes-cli](https://github.com/folio-org/stripes-cli/blob/master/doc/user-
 
 The `CHANGELOG.md` lists the main changes for each release. Follow the layout of other front-end modules.
 
-TODO: Add the typical structure.
+## Structure {#front-end-structure}
+
+This is a typical directory layout, excluding the general boilerplate files and the usual JavaScript and CSS files:
+
+```
+├── Jenkinsfile
+├── data
+│   ├── various
+├── icons
+│   ├── app.png
+│   └── app.svg
+├── lib
+│   ├── various
+├── package.json
+├── settings
+│   ├── various
+├── sound
+│   ├── checkout_error.m4a
+│   └── checkout_success.m4a
+├── test
+│   └── ui-testing
+├── translations
+    └── ui-users
+        ├── de.json
+        ├── en.json
+        └── hu.json
+```
+
+## Jenkinsfile {#front-end-jenkinsfile}
+
+The `Jenkinsfile` declares specific build steps for the continuous integration process.
+
+## package.json {#front-end-packagejson}
+
+See the "[Stripes application metadata bundles](https://github.com/folio-org/stripes-core/blob/master/doc/app-metadata.md)"
+document which explains the specification for standard and extension fields.
+
+## Descriptors {#frontend-end-descriptors}
+
+The Stripes Core will generate the ModuleDescriptor.json for this UI module from its package.json file.
+
+## Data {#front-end-data}
+
+The optional `data` directory holds data specific to this app.
+
+## Icons {#front-end-icons}
+
+The `icons` directory holds icon files specific to this app.
+Some icons are provided by Stripes itself.
+
+See the [Icons](https://github.com/folio-org/stripes-core/blob/master/doc/app-metadata.md#icons)
+section of the "Stripes application metadata bundles" document.
+
+## Lib {#front-end-lib}
+
+The `lib` directory holds local libraries specific to this app.
+
+## Settings {#front-end-Settings}
+
+The `settings` directory holds settings specific to this app.
+
+## Sound {#front-end-Sound}
+
+The optional `sound` directory holds sound files specific to this app.
+
+## Test {#front-end-test}
+
+The `test` directory holds the ui-testing facilities specific to this app.
+
+See the [ui-testing](https://github.com/folio-org/ui-testing) documentation.
+
+## Translations {#front-end-translations}
+
+The `translations` directory holds the locale data for this app.
+The various `stripes-components` are separately handled.
+
+See the "[I18n best practices](https://github.com/folio-org/stripes-core/blob/master/doc/i18n.md)" document, and facilities provided by Stripes Core.
+
 
