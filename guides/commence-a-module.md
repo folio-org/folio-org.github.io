@@ -77,6 +77,8 @@ The `ramls` directory holds the RAML and Schema and examples files specific to t
 Normally there will also be the `ramls/raml-util` shared files as a git submodule of the [raml](https://github.com/folio-org/raml) repository.
 Some modules only have a `raml-util` because their files are all located in the shared space.
 
+See the [Primer for RAML and JSON Schema](/start/primer-raml/).
+
 ## Reference data {#back-end-reference-data}
 
 The optional `reference-data` directory can hold data required for [sample data](#back-end-sample-data) to refer to.
