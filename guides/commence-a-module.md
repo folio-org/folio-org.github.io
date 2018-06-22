@@ -98,6 +98,8 @@ Follow the [ui-users](https://github.com/folio-org/ui-users) as an example.
 
 The [stripes-cli](https://github.com/folio-org/stripes-cli/blob/master/doc/user-guide.md#app-development) will generate an initial skeleton UI app module structure named with the `ui-` prefix.
 
+[The Stripes Module Developer's Guide](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md) explains what is expected of a UI module.
+
 The `CHANGELOG.md` lists the main changes for each release. Follow the layout of other front-end modules.
 
 ## Structure {#front-end-structure}
@@ -136,6 +138,9 @@ The `Jenkinsfile` declares specific build steps for the continuous integration p
 
 See the "[Stripes application metadata bundles](https://github.com/folio-org/stripes-core/blob/master/doc/app-metadata.md)"
 document which explains the specification for standard and extension fields.
+
+The "Modules" section of the [The Stripes Module Developer's Guide](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#modules) explains the `stripes` section of the configuration, including the `pluginType`, the `route` to address this module, the `okapiInterfaces` for any back-end module dependencies, and the optional `permissionsets`.
+The [Explain the FOLIO permissions system](/faqs/explain-permissions-system/) FAQ will assist.
 
 ## Descriptors {#frontend-end-descriptors}
 
