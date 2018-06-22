@@ -29,7 +29,7 @@ Follow the [mod-notes](https://github.com/folio-org/mod-notes) as an example.
 
 The `NEWS.md` lists the main changes for each release. Follow the layout of other back-end modules.
 
-## Structure {#be-structure}
+## Structure {#back-end-structure}
 
 This is a typical directory layout, excluding the general boilerplate files and build system files (e.g. `pom.xml` and `target` for Maven-based modules):
 
@@ -53,42 +53,42 @@ This is a typical directory layout, excluding the general boilerplate files and 
 ├── src
 ```
 
-## Docker {#be-docker}
+## Docker {#back-end-docker}
 
 The `Dockerfile` and `docker` directory with its `docker-entrypoint.sh` file.
 
-## Jenkinsfile {#be-jenkinsfile}
+## Jenkinsfile {#back-end-jenkinsfile}
 
 The `Jenkinsfile` declares specific build steps for the continuous integration process.
 
-## Descriptors {#be-descriptors}
+## Descriptors {#back-end-descriptors}
 
 The `descriptors` directory holds the template Descriptor files. For a Maven-based system, the pom.xml will have tasks to replace tokens with this module's `artifactId` and `version` and produce the descriptors into the `target` directory.
 
-## Documentation {#be-doc}
+## Documentation {#back-end-doc}
 
-The `doc` directory hold additional documentation beyond the standard top-level README.md file.
+The `doc` directory holds additional documentation beyond the standard top-level README.md file.
 Usually in Markdown format.
 
-## RAMLs {#be-ramls}
+## RAMLs {#back-end-ramls}
 
 The `ramls` directory holds the RAML and Schema and examples files specific to this module.
 Normally there will also be the `ramls/raml-util` shared files as a git submodule of the [raml](https://github.com/folio-org/raml) repository.
 Some modules only have a `raml-util` because their files are all located in the shared space.
 
-## Reference data {#be-reference-data}
+## Reference data {#back-end-reference-data}
 
-The optional `reference-data` directory can hold data required for [sample data](#be-sample-data) to refer to.
+The optional `reference-data` directory can hold data required for [sample data](#back-end-sample-data) to refer to.
 For example, if the vendors in your sample data refer to vendor categories by UUID, the vendor categories (with their UUIDs) could be defined in the `reference-data/vendor-categories` directory, in the format expected by the module's relevant endpoint for POSTing the data.
 This makes it easy to write a script to load the reference data using the module's web service API.
 
-## Sample data {#be-sample-data}
+## Sample data {#back-end-sample-data}
 
 The `sample-data` directory holds sample data specific for this module.
 It should be in the format expected by the module's relevant endpoint for POSTing the data.
 This makes it easy to write a script to load the sample data using the module's web service API.
 
-If the sample data refers to [reference data](#be-reference-data), those data can be defined in the `reference-data` directory.
+If the sample data refers to [reference data](#back-end-reference-data), those data can be defined in the `reference-data` directory.
 
 # Front-end modules
 
