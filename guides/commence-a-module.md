@@ -14,7 +14,7 @@ Using consistent structure and configuration will assist the development.
 All developers can know what to expect.
 The continuous integration and deployment will be easier to establish and be reliable.
 
-See also the guidelines to [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/).
+See also the guidelines to [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/), as well as the [Getting started](/start/) fundamental documentation and primers.
 
 The essential directories and files are explained below for [back-end](#back-end-modules) and [front-end](#front-end-modules) modules.
 Of course any module might need extras.

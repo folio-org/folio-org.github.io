@@ -18,4 +18,6 @@ The foundation described in
 
 Then move on to creating a real module with the help of [stripes-cli](https://github.com/folio-org/stripes-cli).
 
+The [Commence a module - structure and configuration](/guides/commence-a-module/) guide explains a consistent layout for a front-end module.
+
 The [Regression tests for FOLIO UI](https://github.com/folio-org/ui-testing) will assist.
