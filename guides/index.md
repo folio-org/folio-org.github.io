@@ -122,6 +122,8 @@ Configurations for accessing.
 
 Refer to the [Start](/start/) section.
 
+- The [Commence a module - structure and configuration](/guides/commence-a-module/) guide explains a consistent layout for back-end and front-end modules.
+
 ### Reference documentation
 
 - [Overiew](/reference/) of all technical reference documentation.
