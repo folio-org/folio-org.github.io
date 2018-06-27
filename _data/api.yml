@@ -75,6 +75,8 @@ mod-circulation-storage:
       - loan-rules-storage
       - request-storage
       - fixed-due-date-schedule
+      - cancellation-reason
+      - staff-slips
     ramlutil: ramls/raml-util
 
 mod-configuration:
@@ -224,6 +226,7 @@ mod-orders:
     directory: ramls
     files:
       - purchase_order
+      - po_line
     ramlutil: ramls/raml-util
 
 mod-vendors:
