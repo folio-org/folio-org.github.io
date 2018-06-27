@@ -134,7 +134,7 @@ mod-calendar:
     directory: ramls
     files:
       - calendar
-    ramlutil: null
+    ramlutil: ramls/raml-util
 
 mod-finance:
   - label: null
