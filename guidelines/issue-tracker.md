@@ -33,14 +33,16 @@ to be sure that adding an issue is the appropriate action.
 
 Describe the issue concisely in the _Summary_ and _Description_ fields.
 Use _Comments_ for further detail.
-The _Summary_ and _Description_ are also utilized for reports, so detail is
-better in _Comments_.
+The _Summary_ and _Description_ are also utilized for reports and for every notification email, so detail is better in _Comments_.
 
 Use the Search facility to ensure that an issue is not already reported,
 or has perhaps resurfaced and so can be further described.
 
 Use a local text file and your familiar editor to prepare and save the
-summary, description, and comments.  When ready then copy-and-paste.
+summary, description, and comments. When ready then copy-and-paste.
+
+Jira uses a particular markup language for special formatting, and is different to GitHub etc.
+There is a link to Jira help via its "Add Comment" screen.
 
 Be careful not to speculate too much about the causes of the issue.
 
@@ -128,10 +130,10 @@ Using an Issue identifier within text Comments will automatically link to
 it, e.g. `FOLIO-298`.
 Note that it must be upper-case.
 
-Using such an issue identifier in git commit messages will also automatically
+Using such an issue identifier in git commit messages and pull request titles, will also automatically
 link the Issue to the commits.
 
-Provide other relevant links, for example GitHub pull requests and
+Provide other relevant bi-directional links, for example GitHub pull requests and
 Discuss topics.
 
 ## Filters and search
