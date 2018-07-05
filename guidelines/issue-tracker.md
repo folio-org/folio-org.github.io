@@ -38,16 +38,16 @@ The _Summary_ and _Description_ are also utilized for reports and for every noti
 Use the Search facility to ensure that an issue is not already reported,
 or has perhaps resurfaced and so can be further described.
 
+Be careful not to speculate too much about the causes of the issue.
+
+Provide the facts, describe your actions, the expected results, and actual results as clearly as possible.
+That time spent does help everyone.
+
 Use a local text file and your familiar editor to prepare and save the
 summary, description, and comments. When ready then copy-and-paste.
 
 Jira uses a particular markup language for special formatting, and is different to GitHub etc.
 There is a link to Jira help via its "Add Comment" screen.
-
-Be careful not to speculate too much about the causes of the issue.
-
-Provide the facts, describe your actions, the expected results, and actual results as clearly as possible.
-That time spent does help everyone.
 
 Use attachments for long log files, text listings, and images.
 Be sure to redact information that would compromise privacy.
