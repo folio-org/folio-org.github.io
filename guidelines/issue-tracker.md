@@ -67,6 +67,11 @@ After issue creation, use
 [follow-up _Comments_](#continue) for further detail.
 Attachments can be added later.
 
+Unfortunately Watchers cannot be added on issue creation.
+So use the technique of a concise Description when creating, then immediately add Watchers, then follow-up Comments will notify them.
+Another workaround is to add people using the "@mention" facility (type "@" then any part of their name).
+They can then choose to add themself as a Watcher.
+
 Someone else will later determine the _Assignee_ and the _Priority_, and will
 link between relevant issues.
 
