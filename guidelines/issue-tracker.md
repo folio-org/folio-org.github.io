@@ -148,3 +148,5 @@ For example, the "Added recently"
 and "Updated recently" filters help to be aware of recent action.
 
 Create your own filters. Use one as a base, then twiddle and Save As.
+
+There are some example filters at [Manage notifications to keep abreast](/guides/manage-notifications/).
