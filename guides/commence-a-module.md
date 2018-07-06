@@ -23,6 +23,8 @@ Of course any module might need extras.
 
 All modules will have the normal boilerplate files such as README.md, LICENSE, CONTRIBUTING.md, etc.
 
+Module documentation is kept with the relevant repository, while broad and project-wide documentation is here at the dev.folio.org site.
+
 # Back-end modules
 
 Server-side modules include all those named `mod-*`.
@@ -41,8 +43,7 @@ This is a typical directory layout, excluding the general boilerplate files and 
 │   ├── DeploymentDescriptor-template.json
 │   └── ModuleDescriptor-template.json
 ├── doc
-│   ├── index.md
-│   └── guide.md
+│   ├── various.md
 ├── docker
 │   └── docker-entrypoint.sh
 ├── ramls
@@ -68,7 +69,7 @@ The `descriptors` directory holds the template Descriptor files. For a Maven-bas
 
 ## Documentation {#back-end-doc}
 
-The `doc` directory holds additional documentation beyond the standard top-level README.md file.
+The optional `doc` directory holds additional documentation beyond the standard top-level README.md file.
 Usually in Markdown format.
 
 ## RAMLs {#back-end-ramls}
@@ -112,6 +113,8 @@ This is a typical directory layout, excluding the general boilerplate files and 
 ├── Jenkinsfile
 ├── data
 │   ├── various
+├── doc
+│   ├── various.md
 ├── icons
 │   ├── app.png
 │   └── app.svg
@@ -151,6 +154,11 @@ The Stripes Core will generate the ModuleDescriptor.json for this UI module from
 ## Data {#front-end-data}
 
 The optional `data` directory holds data specific to this app.
+
+## Documentation {#front-end-doc}
+
+The optional `doc` directory holds additional documentation beyond the standard top-level README.md file.
+Usually in Markdown format.
 
 ## Icons {#front-end-icons}
 

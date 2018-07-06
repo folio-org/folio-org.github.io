@@ -135,6 +135,7 @@ These are listed in the [Start](/start/) section.
 
 ### Development tips
 
+- [Manage notifications to keep abreast](manage-notifications/).
 - Conduct [troubleshooting](troubleshooting).
 - [Code analysis and linting facilities](code-analysis) explains ESLint, SonarQube, other lint tools, and preparing for pull requests.
 - For Contextual Query Language (CQL) examples, see the [Glossary](/reference/glossary/#cql), the FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/cql2pgjson-java), the [API docs](/reference/api/), and the debug output for tests in each backend module.
