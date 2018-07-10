@@ -237,6 +237,13 @@ mod-vendors:
       - contact_category
       - vendor_category
     ramlutil: ramls/raml-util
+    
+mod-gobi:
+  - label: null
+    directory: ramls
+    files:
+      - gobi
+    ramlutil: ramls/raml-util
 
 edge-patron:
   - label: null
