@@ -191,6 +191,6 @@ See the [ui-testing](https://github.com/folio-org/ui-testing) documentation.
 The `translations` directory holds the locale data for this app.
 The various `stripes-components` are separately handled.
 
-See the "[I18n best practices](https://github.com/folio-org/stripes-core/blob/master/doc/i18n.md)" document, and facilities provided by Stripes Core.
+See the "[I18n best practices](https://github.com/folio-org/stripes-core/blob/master/doc/i18n.md)" internationalization documentation, and facilities provided by Stripes Core.
 
 

@@ -11,7 +11,8 @@ menuSubIndex: 1
 
 Take some time to become familiar. Please do not jump the gun -- it will be beneficial to have a solid understanding.
 Follow at least the [background orientation](/guidelines/#background-orientation)
-section of the [Guidelines](/guidelines/).
+section of the [Guidelines](/guidelines/)
+and the [Guides](/guides/#background-orientation).
 That will introduce the resources available and the forums to enable interaction with the community.
 
 After perusing the fundamental documentation, the primers will guide through the next stage.
