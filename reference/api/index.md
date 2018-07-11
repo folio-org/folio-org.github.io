@@ -11,9 +11,8 @@ menuSubIndex: 2
 
 ## Introduction
 
-These API specifications are automatically generated from the relevant
-[RAML](https://github.com/folio-org/raml)
-files, and specify how client modules may
+These API specifications are automatically generated from each repository's
+RAML files, and specify how client modules may
 access the functionality provided by these important core modules.
 
 * view-1: Uses pop-up windows for each method and endpoint.
@@ -21,16 +20,24 @@ access the functionality provided by these important core modules.
 
 {% assign urlAws = "https://s3.amazonaws.com/foliodocs/api" %}
 {% assign urlGithub = "https://github.com/folio-org" %}
+{% assign noteRaml = 'This is the shared RAML.' %}
 
 {% for repo in site.data.api %}
 <h2 id="{{ repo[0] }}"> {{ repo[0] }} </h2>
-<table class="api">
+{% if repo[0] == 'raml' %}<p>{{ noteRaml }}</p>{% endif %}
+{% if repo[0] == 'raml' %}
+<table class="api apilabel">
   <thead>
     <tr>
       <th class="label" title="Label">Label</th>
+{% else %}
+<table class="api">
+  <thead>
+    <tr>
+{% endif %}
       <th class="raml" title="APIs and link to RAML source">APIs</th>
-      <th class="view" title="View 1: using raml2html">view-1</th>
-      <th class="view" title="View 2: using raml-fleece">view-2</th>
+      <th class="view" title="View 1: using raml2html"></th>
+      <th class="view" title="View 2: using raml-fleece"></th>
     </tr>
   </thead>
   <tbody>
@@ -41,13 +48,19 @@ access the functionality provided by these important core modules.
       {% capture view2 %}{% unless docset.version1 %}<a href="{{ urlDoc2 }}">view-2</a>{% endunless %}{% endcapture %}
       {% capture urlRaml %}{{ urlGithub }}/{{ repo[0] }}/blob/master/{{ docset.directory }}/{{ doc }}.raml{% endcapture %}
     <tr>
+{% if repo[0] == 'raml' %}
       <td> {{ docset.label }} </td>
+{% endif %}
       <td> <a href="{{ urlRaml }}">{{ doc }}</a> </td>
-      <td> <a href="{{ urlDoc1 }}">view-1</a> </td>
-      <td> {{ view2 }} </td>
+      <td class="view"> <a href="{{ urlDoc1 }}">view-1</a> </td>
+      <td class="view"> {{ view2 }} </td>
     </tr>
     {%- endfor -%}
   {%- endfor %}
   </tbody>
 </table>
 {% endfor %}
+
+## Configuration {#configure-api-docs}
+
+See [explanation](/faqs/how-to-configure-api-doc-generation/) for how to configure the generation of API documentation of each back-end module.

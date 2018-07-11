@@ -1,6 +1,8 @@
 # List of locations of RAML files.
 #
-# Used by docs/api/index.md and folio-tools/generate-api-docs
+# Used by reference/api/index.md and folio-tools/generate-api-docs and folio-tools/lint-raml
+#
+# Leave the two tables (raml-module-builder, raml) at the bottom.
 ---
 okapi:
   - label: null
@@ -8,56 +10,6 @@ okapi:
     files:
       - okapi
     ramlutil: okapi-core/src/main/raml/raml-util
-
-raml:
-  - label: shared
-    directory: ramls
-    files:
-      - tenant
-    ramlutil: .
-  - label: shared-mod-login
-    directory: ramls/mod-login
-    files:
-      - login
-    ramlutil: .
-  - label: shared-mod-permissions
-    directory: ramls/mod-permissions
-    files:
-      - tenantPermissions
-      - permissions
-    ramlutil: .
-  - label: shared-mod-users
-    directory: ramls/mod-users
-    files:
-      - groups
-      - users
-      - addressTypes
-      - proxiesFor
-    ramlutil: .
-  - label: shared-mod-users-bl
-    directory: ramls/mod-users-bl
-    files:
-      - mod-users-bl
-    ramlutil: .
-  - label: shared-codex
-    directory: ramls/codex
-    files:
-      - codex
-    ramlutil: .
-  - label: tagged-record-example
-    directory: ramls/tagged-record-example
-    files:
-      - users
-    ramlutil: .
-
-raml-module-builder:
-  - label: domain-models-api-interfaces
-    directory: domain-models-api-interfaces/ramls
-    files:
-      - admin
-      - jobs
-      - sample
-    ramlutil: domain-models-api-interfaces/ramls/raml-util
 
 mod-circulation:
   - label: null
@@ -237,7 +189,7 @@ mod-vendors:
       - contact_category
       - vendor_category
     ramlutil: ramls/raml-util
-    
+
 mod-gobi:
   - label: null
     directory: ramls
@@ -266,4 +218,58 @@ edge-orders:
       - edge-orders
     ramlutil: null
 
+# Leave the following two tables (raml-module-builder, raml) at the bottom.
+
+raml-module-builder:
+  - label: domain-models-api-interfaces
+    directory: domain-models-api-interfaces/ramls
+    files:
+      - admin
+      - jobs
+      - sample
+    ramlutil: domain-models-api-interfaces/ramls/raml-util
+
+raml:
+  - label: shared
+    directory: ramls
+    files:
+      - tenant
+    ramlutil: .
+  - label: shared-mod-login
+    directory: ramls/mod-login
+    files:
+      - login
+    ramlutil: .
+  - label: shared-mod-permissions
+    directory: ramls/mod-permissions
+    files:
+      - tenantPermissions
+      - permissions
+    ramlutil: .
+  - label: shared-mod-users
+    directory: ramls/mod-users
+    files:
+      - groups
+      - users
+      - addressTypes
+      - proxiesFor
+    ramlutil: .
+  - label: shared-mod-users-bl
+    directory: ramls/mod-users-bl
+    files:
+      - mod-users-bl
+    ramlutil: .
+  - label: shared-codex
+    directory: ramls/codex
+    files:
+      - codex
+    ramlutil: .
+  - label: tagged-record-example
+    directory: ramls/tagged-record-example
+    files:
+      - users
+    ramlutil: .
+
+# Leave the previous two tables (raml-module-builder, raml) at the bottom.
+# Place other entries above those.
 
