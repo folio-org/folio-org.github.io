@@ -25,13 +25,19 @@ access the functionality provided by these important core modules.
 {% for repo in site.data.api %}
 <h2 id="{{ repo[0] }}"> {{ repo[0] }} </h2>
 {% if repo[0] == 'raml' %}<p>{{ noteRaml }}</p>{% endif %}
-<table class="api">
+{% if repo[0] == 'raml' %}
+<table class="api apilabel">
   <thead>
     <tr>
       <th class="label" title="Label">Label</th>
+{% else %}
+<table class="api">
+  <thead>
+    <tr>
+{% endif %}
       <th class="raml" title="APIs and link to RAML source">APIs</th>
-      <th class="view" title="View 1: using raml2html">view-1</th>
-      <th class="view" title="View 2: using raml-fleece">view-2</th>
+      <th class="view" title="View 1: using raml2html"></th>
+      <th class="view" title="View 2: using raml-fleece"></th>
     </tr>
   </thead>
   <tbody>
@@ -42,10 +48,12 @@ access the functionality provided by these important core modules.
       {% capture view2 %}{% unless docset.version1 %}<a href="{{ urlDoc2 }}">view-2</a>{% endunless %}{% endcapture %}
       {% capture urlRaml %}{{ urlGithub }}/{{ repo[0] }}/blob/master/{{ docset.directory }}/{{ doc }}.raml{% endcapture %}
     <tr>
+{% if repo[0] == 'raml' %}
       <td> {{ docset.label }} </td>
+{% endif %}
       <td> <a href="{{ urlRaml }}">{{ doc }}</a> </td>
-      <td> <a href="{{ urlDoc1 }}">view-1</a> </td>
-      <td> {{ view2 }} </td>
+      <td class="view"> <a href="{{ urlDoc1 }}">view-1</a> </td>
+      <td class="view"> {{ view2 }} </td>
     </tr>
     {%- endfor -%}
   {%- endfor %}
