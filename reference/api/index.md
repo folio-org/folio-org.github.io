@@ -11,9 +11,8 @@ menuSubIndex: 2
 
 ## Introduction
 
-These API specifications are automatically generated from the relevant
-[RAML](https://github.com/folio-org/raml)
-files, and specify how client modules may
+These API specifications are automatically generated from each repository's
+RAML files, and specify how client modules may
 access the functionality provided by these important core modules.
 
 * view-1: Uses pop-up windows for each method and endpoint.
@@ -53,3 +52,7 @@ access the functionality provided by these important core modules.
   </tbody>
 </table>
 {% endfor %}
+
+## Configuration {#configure-api-docs}
+
+See [explanation](/faqs/how-to-configure-api-doc-generation/) for how to configure the generation of API documentation of each back-end module.
