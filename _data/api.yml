@@ -1,6 +1,6 @@
 # List of locations of RAML files.
 #
-# Used by docs/api/index.md and folio-tools/generate-api-docs and folio-tools/lint-raml
+# Used by reference/api/index.md and folio-tools/generate-api-docs and folio-tools/lint-raml
 #
 # Leave the two tables (raml-module-builder, raml) at the bottom.
 ---

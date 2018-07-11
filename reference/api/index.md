@@ -20,7 +20,7 @@ access the functionality provided by these important core modules.
 
 {% assign urlAws = "https://s3.amazonaws.com/foliodocs/api" %}
 {% assign urlGithub = "https://github.com/folio-org" %}
-{% assign noteRaml = 'This is the shared RAML. Refer to the relevant table above, as each module uses a certain version of this as their "raml-util" directory.' %}
+{% assign noteRaml = 'This is the shared RAML.' %}
 
 {% for repo in site.data.api %}
 <h2 id="{{ repo[0] }}"> {{ repo[0] }} </h2>
