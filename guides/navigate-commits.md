@@ -26,5 +26,5 @@ At the project's Jenkins build output page, follow the links to each of its Pipe
 There are some additional facilities available after login to Jenkins.
 Jenkins credentials utilize the Github authentication for FOLIO core developers, so ensure that you are logged in to GitHub to then enable login to Jenkins.
 
-For the merge to master, an additional set of processes will operate, as specified in the project's top-level Jenkinsfile.
+For the merge to master, an additional set of processes will operate, as specified in the project's top-level [Jenkinsfile](/guides/jenkinsfile/).
 
