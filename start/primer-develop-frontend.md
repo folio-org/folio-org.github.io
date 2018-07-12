@@ -16,7 +16,8 @@ That leads to the Stripes [Documentation Roadmap](https://github.com/folio-org/s
 The foundation described in
 [The Stripes Module Developer's Guide](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md) is necessary for developing UI modules using Stripes.
 
-Then move on to creating a real module with the help of [stripes-cli](https://github.com/folio-org/stripes-cli).
+Then move on to creating a real module with the help of [stripes-cli](https://github.com/folio-org/stripes-cli)
+and in particular the [App development](https://github.com/folio-org/stripes-cli/blob/master/doc/user-guide.md#app-development) section.
 
 The [Commence a module - structure and configuration](/guides/commence-a-module/) guide explains a consistent layout for a front-end module.
 
