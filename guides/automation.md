@@ -53,7 +53,7 @@ This is the version that will be used by acceptance testers to verify that users
 
 ## Jenkins
 
-FOLIO projects are managed by the Jenkins host [https://jenkins-aws.indexdata.com]
+FOLIO projects are managed by the Jenkins host [https://jenkins-aws.indexdata.com](https://jenkins-aws.indexdata.com)
 located at AWS.  Read access to Jenkins job configurations and build logs is available to
 all core FOLIO developers.
 Jenkins credentials utilize the Github authentication, so ensure that you are logged in to GitHub to then enable log in to Jenkins.
@@ -66,8 +66,12 @@ a build step, post-build steps such as creating and publishing docker images, an
 post-build notifications to GitHub and Slack (#folio-ci channel).
 Failures and unstable build notifications are also sent via e-mail.
 
+Those extra build steps are configured in the project's repository in a file called `Jenkinsfile`
+which is separately [explained](/guides/jenkinsfile/).
+
 Each FOLIO software project will also have a separate Jenkins job configured to
 rebuild branches and build pull requests.  The status of these is posted back to GitHub and Slack.
+
 Utilizing pull requests to verify that your development branch builds properly before
 merging with master is required.
 
