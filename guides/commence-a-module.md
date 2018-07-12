@@ -61,11 +61,13 @@ The `Dockerfile` and `docker` directory with its `docker-entrypoint.sh` file.
 
 ## Jenkinsfile {#back-end-jenkinsfile}
 
-The `Jenkinsfile` declares specific build steps for the continuous integration process.
+The `Jenkinsfile` declares specific build steps for the continuous integration [process](/guides/automation/#jenkins).
+See [explanation](/guides/jenkinsfile/).
 
 ## Descriptors {#back-end-descriptors}
 
 The `descriptors` directory holds the template Descriptor files. For a Maven-based system, the pom.xml will have tasks to replace tokens with this module's `artifactId` and `version` to generate the descriptors into the `target` directory.
+See example at [mod-notes/pom.xml](https://github.com/folio-org/mod-notes/blob/master/pom.xml) and the 'filter-descriptor-inputs' and 'rename-descriptor-outputs' tasks.
 
 ## Documentation {#back-end-doc}
 
@@ -137,7 +139,8 @@ This is a typical directory layout, excluding the general boilerplate files and 
 
 ## Jenkinsfile {#front-end-jenkinsfile}
 
-The `Jenkinsfile` declares specific build steps for the continuous integration process.
+The `Jenkinsfile` declares specific build steps for the continuous integration [process](/guides/automation/#jenkins).
+See [explanation](/guides/jenkinsfile).
 
 ## package.json {#front-end-packagejson}
 
@@ -189,6 +192,8 @@ See the [ui-testing](https://github.com/folio-org/ui-testing) documentation.
 ## Translations {#front-end-translations}
 
 The `translations` directory holds the locale data for this app.
+As shown in the example listing, the files are within a sub-directory with the same name as the git repository of this module.
+
 The various `stripes-components` are separately handled.
 
 See the "[I18n best practices](https://github.com/folio-org/stripes-core/blob/master/doc/i18n.md)" internationalization documentation, and facilities provided by Stripes Core.

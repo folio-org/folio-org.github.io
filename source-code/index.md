@@ -167,6 +167,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-vendors](https://github.com/folio-org/mod-vendors)
   -- Persistent storage of vendor data.
 
+- [mod-gobi](https://github.com/folio-org/mod-gobi)
+  -- Allows GOBI® (Global Online Bibliographic Information) initiated orders to be fulfilled by FOLIO.
+
 - [mod-pg-embed](https://github.com/folio-org/mod-pg-embed)
   -- Helper module to start embedded Postgres.
   Helper for developers that starts the "embedded" postgres server and sets up the environment so that other modules can locate the database.
@@ -326,11 +329,15 @@ exists and can be run, the APIs are likely to change.
 - [edge-common](https://github.com/folio-org/edge-common)
   -- Common/Shared library for Edge APIs.
 
+- [edge-orders](https://github.com/folio-org/edge-orders)
+  -- Edge API to interface with FOLIO for 3rd party ordering services and FOLIO.
+  Initially GOBI.
+
 - [edge-patron](https://github.com/folio-org/edge-patron)
   -- Edge API to interface with FOLIO for 3rd party discovery services to allow patrons to perform self-service actions.
 
 - [edge-rtac](https://github.com/folio-org/edge-rtac)
-  -- "edge" API for RTAC (Real Time Availability Check).
+  -- Edge API for RTAC (Real Time Availability Check).
   To interface with FOLIO for 3rd party discovery services to determine holdings availability.
 
 - [folio-perf-test](https://github.com/folio-org/folio-perf-test)
