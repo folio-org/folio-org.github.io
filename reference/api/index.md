@@ -11,7 +11,7 @@ menuSubIndex: 2
 
 ## Introduction
 
-These API specifications are automatically generated from each repository's
+These API specifications are [automatically](#configure-api-docs) generated from each repository's
 RAML files, and specify how client modules may
 access the functionality provided by these important core modules.
 
