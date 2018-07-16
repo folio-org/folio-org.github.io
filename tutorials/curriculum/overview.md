@@ -11,6 +11,7 @@ This is an outline of a tutorial that can be given to a group in a workshop or f
 
 <div class="attention">
 Note: This is an older tutorial. Much of it is still useful, but some parts are out-of-date.
+See [FOLIO-1348](https://issues.folio.org/browse/FOLIO-1348).
 </div>
 
 ## Goals

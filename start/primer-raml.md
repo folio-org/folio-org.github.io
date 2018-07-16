@@ -5,7 +5,7 @@ permalink: /start/primer-raml/
 menuInclude: yes
 menuTopTitle: Start
 menuSubTitle: Primer RAML/Schema
-menuSubIndex: 3
+menuSubIndex: 5
 ---
 
 As explained in the [Primer for back-end development](/start/primer-develop-backend/) the _RAML Module Builder (RMB)_ framework can be utilised to ease development. One of its abilities is to generate Java classes from the RAML and Schema.
