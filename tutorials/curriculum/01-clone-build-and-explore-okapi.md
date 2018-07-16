@@ -74,6 +74,7 @@ Note that the `-i` command line option tells `curl` to output the response heade
 
 ```shell
 $ curl -i -w '\n' http://localhost:8080/testb
+
   HTTP/1.1 200 OK
   Content-Type: text/plain
   Content-Length: 8
@@ -85,6 +86,7 @@ Next make a HTTP POST request (using `-X POST`) and send the string `Testing Oka
 
 ```shell
 $ curl -i -w '\n' -X POST -d "Testing Okapi" http://localhost:8080/testb
+
   HTTP/1.1 200 OK
   Content-Type: text/plain
   Transfer-Encoding: chunked
@@ -103,6 +105,7 @@ For example, send an HTTP GET request with an `X-my-header: blah` header (using 
 
 ```shell
 $ curl -i -w '\n' -X GET -H 'X-my-header: blah' http://localhost:8080/testb
+
   HTTP/1.1 200 OK
   Content-Type: text/plain
   Content-Length: 12
@@ -117,6 +120,7 @@ If we add an 'X-stop-here' header, the module returns the `X-Okapi-Stop` header 
 $ curl -i -w '\n' -X GET -H 'X-my-header: blah' \
     -H 'X-stop-here: because I said so.' \
     http://localhost:8080/testb
+
   HTTP/1.1 200 OK
   Content-Type: text/plain
   X-Okapi-Stop: because I said so.

@@ -135,7 +135,8 @@ As part of that build process, the mod-user ModuleDescriptor and DeploymentDescr
 ```shell
 $ cd $FOLIO_ROOT
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
-   -d @mod-users/target/ModuleDescriptor.json http://localhost:9130/_/proxy/modules
+   -d @mod-users/target/ModuleDescriptor.json \
+   http://localhost:9130/_/proxy/modules
 
   HTTP/1.1 100 Continue
 
@@ -156,7 +157,8 @@ You will also need to deploy the module with a Deployment Descriptor:
 
 ```shell
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
-  -d @mod-users/target/DeploymentDescriptor.json http://localhost:9130/_/discovery/modules
+   -d @mod-users/target/DeploymentDescriptor.json \
+   http://localhost:9130/_/discovery/modules
 
   HTTP/1.1 201 Created
   Content-Type: application/json
@@ -185,7 +187,8 @@ $ cat > okapi-enable-users.json <<END
 }
 END
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
-   -d @okapi-enable-users.json http://localhost:9130/_/proxy/tenants/testlib/modules
+   -d @okapi-enable-users.json \
+   http://localhost:9130/_/proxy/tenants/testlib/modules
 
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -246,7 +249,8 @@ $ cat > User001.json <<END
 END
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
     -H 'X-Okapi-Token: dummyJwt.eyJzdWIiOiJzZWIiLCJ0ZW5hbnQiOm51bGx9.sig' \
-    -H 'X-Okapi-Tenant: testlib' -d @User000.json http://localhost:9130/users
+    -H 'X-Okapi-Tenant: testlib' -d @User000.json \
+    http://localhost:9130/users
 
 HTTP/1.1 201 Created
 X-Okapi-Trace: POST test-auth-3.4.1 http://localhost:9132/users : 202 5008us
@@ -288,7 +292,8 @@ Transfer-Encoding: chunked
 
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
     -H 'X-Okapi-Token: dummyJwt.eyJzdWIiOiJzZWIiLCJ0ZW5hbnQiOm51bGx9.sig' \
-    -H 'X-Okapi-Tenant: testlib' -d @User001.json http://localhost:9130/users
+    -H 'X-Okapi-Tenant: testlib' -d @User001.json \
+    http://localhost:9130/users
 
 HTTP/1.1 201 Created
 X-Okapi-Trace: POST test-auth-3.4.1 http://localhost:9132/users : 202 2245us
