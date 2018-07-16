@@ -130,7 +130,7 @@ $ mvn install
 
 ### Register and Deploy the Users app Okapi Module
 
-As part of that build process, the mod-user ModuleDescriptor and DeploymentDescriptor were generated into the "target" directory. They can be used to register and deploy the Users app Okapi Module.
+As part of that build process, the mod-users ModuleDescriptor and DeploymentDescriptor were generated into the "target" directory. They can be used to register and deploy the Users app Okapi Module.
 
 ```shell
 $ cd $FOLIO_ROOT
@@ -142,14 +142,15 @@ $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
 
   HTTP/1.1 201 Created
   Content-Type: application/json
-  Location: /_/proxy/modules/mod-users-14.2.2-SNAPSHOT
-  X-Okapi-Trace: POST okapi-2.0.1-SNAPSHOT /_/proxy/modules : 201 4863us
-  Content-Length: 5699
+  Location: /_/proxy/modules/mod-users-15.1.0-SNAPSHOT
+  X-Okapi-Trace: POST okapi-2.16.2-SNAPSHOT /_/proxy/modules : 201 17253us
+  Content-Length: 7526
 
   {
-    "id" : "mod-users-14.2.2-SNAPSHOT",
+    "id" : "mod-users-15.1.0-SNAPSHOT",
     "name" : "users",
-   [...]
+   ...
+   ...
   }
 ```
 
@@ -162,13 +163,13 @@ $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
 
   HTTP/1.1 201 Created
   Content-Type: application/json
-  Location: /_/discovery/modules/mod-users-14.2.2-SNAPSHOT/localhost-9133
-  X-Okapi-Trace: POST okapi-2.0.1-SNAPSHOT /_/discovery/modules : 201
-  Content-Length: 258
+  Location: /_/discovery/modules/mod-users-15.1.0-SNAPSHOT/cfa31663-b4d5-4072-8159-7f51db65fa49
+  X-Okapi-Trace: POST okapi-2.16.2-SNAPSHOT /_/discovery/modules : 201 14247975us
+  Content-Length: 280
 
   {
-    "instId" : "localhost-9133",
-    "srvcId" : "mod-users-14.2.2-SNAPSHOT",
+    "instId" : "cfa31663-b4d5-4072-8159-7f51db65fa49",
+    "srvcId" : "mod-users-15.1.0-SNAPSHOT",
     "nodeId" : "localhost",
     "url" : "http://localhost:9133",
     "descriptor" : {
@@ -183,7 +184,7 @@ Finally, you'll need to enable the Okapi Users app module for the test tenant:
 ```shell
 $ cat > okapi-enable-users.json <<END
 {
-  "id" : "mod-users-14.2.2-SNAPSHOT"
+  "id" : "mod-users-15.1.0-SNAPSHOT"
 }
 END
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
@@ -192,12 +193,12 @@ $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
 
 HTTP/1.1 201 Created
 Content-Type: application/json
-Location: /_/proxy/tenants/testlib/modules/mod-users-14.2.2-SNAPSHOT
-X-Okapi-Trace: POST okapi-2.0.1-SNAPSHOT /_/proxy/tenants/testlib/modules : 201
+Location: /_/proxy/tenants/testlib/modules/mod-users-15.1.0-SNAPSHOT
+X-Okapi-Trace: POST okapi-2.16.2-SNAPSHOT /_/proxy/tenants/testlib/modules : 201 1713441us
 Content-Length: 40
 
 {
-  "id" : "mod-users-14.2.2-SNAPSHOT"
+  "id" : "mod-users-15.1.0-SNAPSHOT"
 }
 ```
 
@@ -266,7 +267,7 @@ x-okapi-permissions-required: users.item.post
 x-okapi-module-permissions: {}
 x-okapi-user-id: seb
 x-okapi-token: dummyJwt.eyJzdWIiOiJzZWIiLCJ0ZW5hbnQiOm51bGx9.sig
-X-Okapi-Trace: POST mod-users-14.2.2-SNAPSHOT http://localhost:9133/users : 201 250116us
+X-Okapi-Trace: POST mod-users-15.1.0-SNAPSHOT http://localhost:9133/users : 201 315514us
 Transfer-Encoding: chunked
 
 {
@@ -309,7 +310,7 @@ x-okapi-permissions-required: users.item.post
 x-okapi-module-permissions: {}
 x-okapi-user-id: seb
 x-okapi-token: dummyJwt.eyJzdWIiOiJzZWIiLCJ0ZW5hbnQiOm51bGx9.sig
-X-Okapi-Trace: POST mod-users-14.2.2-SNAPSHOT http://localhost:9133/users : 201 11408us
+X-Okapi-Trace: POST mod-users-15.1.0-SNAPSHOT http://localhost:9133/users : 201 315514us
 Transfer-Encoding: chunked
 
 {
@@ -343,5 +344,6 @@ $ curl -i -X GET -H "Content-Type:application/json" \
     http://localhost:9130/users
 ```
 
-A more useful set of users is available when using the Vagrant boxes.
+A more useful set of users is available when using the Vagrant boxes,
+(e.g. folio-stable) as shown in the neext lesson.
 
