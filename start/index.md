@@ -17,7 +17,7 @@ That will introduce the resources available and the forums to enable interaction
 
 After perusing the fundamental documentation, the primers will guide through the next stage.
 
-Bearing in mind that [FOLIO uses any programming language](/guides/any-programming-language/) browse the repositories to gain insights from modules that handle similar facilities to your intention.
+Bearing in mind that [FOLIO uses any programming language](/guides/any-programming-language/) browse the [repositories](/source-code/) to gain insights from modules that handle similar facilities to your intention.
 
 ## Fundamental documentation
 
@@ -44,5 +44,6 @@ The testing framework is explained. Guidelines for module developers.
 
 ## Further information
 
+* [Overview](overview/) high-level summary of "getting started" points for a new developer.
 * [Guides](/guides/) to various topics, especially at this stage the [Setup and configuration](/guides/#setup-and-configuration) and  [Development tips](/guides/#development-tips) sections.
 * [Guidelines](/guidelines/) for various procedures.

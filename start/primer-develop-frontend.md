@@ -5,7 +5,7 @@ permalink: /start/primer-develop-frontend/
 menuInclude: yes
 menuTopTitle: Start
 menuSubTitle: Primer front-end
-menuSubIndex: 3
+menuSubIndex: 4
 ---
 
 Start with introduction to [user interface](/guides/#user-interface)

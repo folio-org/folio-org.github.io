@@ -1,0 +1,100 @@
+---
+layout: page
+title: Overview for a new developer
+permalink: /start/overview/
+menuInclude: yes
+menuTopTitle: Start
+menuSubTitle: Overview
+menuSubIndex: 2
+---
+
+This is a high-level summary of "getting started" points for a new developer.
+
+Note that each document has text that summarises, explains, and guides to other relevant documentation. So just following the links listed below is not sufficient. The order of the links is a loose sequence to becoming involved, setting up, and getting started (however note that many documents refer to each other and there is no strict sequence).
+
+[Getting started](/start/).
+The main introduction and starting point.
+
+[Guidelines overview : Background orientation](/guidelines/#background-orientation)
+and
+[Guides : Background orientation](/guides/#background-orientation)
+and the other sections of those documents.
+
+[Which forum to use for communication](/guidelines/which-forum/).
+
+[Search dev.folio.org and other searches](/search/).
+
+[Frequently asked questions](/faqs/).
+
+[Guidelines for Contributing Code](/guidelines/contributing/).
+
+[Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/).
+
+[FOLIO Glossary](/reference/glossary/).
+
+[FOLIO uses any programming language](/guides/any-programming-language/).
+
+[Guides : Setup and configuration](/guides/#setup-and-configuration).
+
+[Guides : Setup development environment](/guides/developer-setup/).
+
+[folio-ansible](https://github.com/folio-org/folio-ansible)
+-- Development environment virtual machines.
+ANd see more about that topic below.
+
+[Source Code](/source-code/).
+Overview descriptions and links to all repositories.
+As explained there, each separate module also has a README with specific documentation.
+Module documentation is kept with the relevant repository, while broad and project-wide documentation is here at the dev.folio.org site.
+
+[API documentation](/reference/api/).
+
+[Fundamental documentation](/start/#fundamental-documentation).
+This section links to some of the main other technical documentation starting points, which also link to related documentation.
+
+[Primer documentation](/start/#primer-documentation).
+These are concise documents to summarise and steer through getting started and lead to other getting started documentation.
+
+[Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md).
+The guide also has an accompanying shell script to run the examples to explain
+and demonstrate a local Okapi instance.
+The related [Securing Okapi](https://github.com/folio-org/okapi/blob/master/doc/guide.md#securing-okapi) explains and demonstrates the auth system.
+
+[Folio-Sample-Modules](https://github.com/folio-org/folio-sample-modules)
+
+[Tutorials : Curriculum](/tutorials/curriculum/)
+
+[RAML Module Builder (RMB) framework](https://github.com/folio-org/raml-module-builder).
+
+[mod-notes](https://github.com/folio-org/mod-notes) is
+used in various documentation as a back-end exemplar.
+Also its run.sh script to run a basic local system. 
+
+[Stripes Core](https://github.com/folio-org/stripes-core/blob/master/README.md).
+The "Documentation roadmap" links to other related Stripes and UI development documentation.
+
+[Stripes entities: packages, modules, apps and more](https://github.com/folio-org/stripes-core/blob/master/doc/modules-apps-etc.md).
+
+[The Stripes Module Developer's Guide](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md).
+
+[Stripes: quick start](https://github.com/folio-org/stripes-core/blob/master/doc/quick-start.md).
+
+[Stripes CLI](https://github.com/folio-org/stripes-cli)
+and its [Stripes CLI User Guide](https://github.com/folio-org/stripes-cli/blob/master/doc/user-guide.md).
+
+[Commence a module - structure and configuration](/guides/commence-a-module/).
+Explains a module directory layout and configuration, and links to relevant documentation.
+
+Overview of the FOLIO [automation](/guides/automation/) and continuous integration (CI/CD).
+The [software build pipeline](/guides/automation/#software-build-pipeline)
+and [Jenkins](/guides/automation/#jenkins).
+
+Developers will need some way to run a local instance and script test queries against it. The [folio-ansible](https://github.com/folio-org/folio-ansible) will assist. Other documentation about this topic is scant. Some links to useful bits:
+[Tutorials : Curriculum : Interact with the FOLIO Stable VM](/tutorials/curriculum/06-vm-stable/);
+the [mod-notes](https://github.com/folio-org/mod-notes) run.sh script;
+the [okapi-cli](https://github.com/folio-org/okapi-cli);
+the [stripes-cli](https://github.com/folio-org/stripes-cli).
+
+[FAQ : How to run tests prior to commit](/faqs/how-to-test-prior-to-commit/).
+
+[Guides : Finding tasks to assist and contribute](/guides/find-tasks/).
