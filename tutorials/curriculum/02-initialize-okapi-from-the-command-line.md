@@ -128,6 +128,7 @@ To deploy the module, this JSON is POSTed to the `/_/proxy/modules` core service
 ```shell
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
    -d @okapi-proxy-test-basic.json http://localhost:9130/_/proxy/modules
+
   HTTP/1.1 201 Created
   Content-Type: application/json
   Location: /_/proxy/modules/test-basic-1.0.0
@@ -166,6 +167,7 @@ First, let's query the discovery service for a list of nodes it knows about in t
 
 ```shell
 $ curl -i -w '\n' -X GET http://localhost:9130/_/discovery/nodes
+
   HTTP/1.1 200 OK
   Content-Type: application/json
   Content-Length: 67
@@ -193,7 +195,9 @@ Then post this document to the `/_/discovery` core service:
 
 ```shell
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
-   -d @okapi-deploy-test-basic.json http://localhost:9130/_/discovery/modules
+   -d @okapi-deploy-test-basic.json \
+   http://localhost:9130/_/discovery/modules
+
  HTTP/1.1 201 Created
  Content-Type: application/json
  Location: /_/discovery/modules/test-basic-1.0.0/localhost-9131
@@ -223,6 +227,7 @@ One important note: in our developer instance, we can access the _okapi-test-mod
 
 ```shell
 $ curl -i -w '\n' -X GET http://localhost:9131/testb
+
   HTTP/1.1 200 OK
   Content-Type: text/plain
   Content-Length: 8
@@ -239,6 +244,7 @@ Let's try that now:
 
 ```shell
 $ curl -i -w '\n' -X GET http://localhost:9130/testb
+
   HTTP/1.1 403 Forbidden
   Content-Type: text/plain
   Content-Length: 14
@@ -258,7 +264,9 @@ $ cat > okapi-tenant.json <<END
 }
 END
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
-   -d @okapi-tenant.json http://localhost:9130/_/proxy/tenants
+   -d @okapi-tenant.json \
+   http://localhost:9130/_/proxy/tenants
+
   HTTP/1.1 201 Created
   Content-Type: application/json
   Location: /_/proxy/tenants/testlib
@@ -280,7 +288,9 @@ $ cat > okapi-enable-basic.json <<END
 }
 END
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
-   -d @okapi-enable-basic.json http://localhost:9130/_/proxy/tenants/testlib/modules
+   -d @okapi-enable-basic.json \
+   http://localhost:9130/_/proxy/tenants/testlib/modules
+
   HTTP/1.1 201 Created
   Content-Type: application/json
   Location: /_/proxy/tenants/testlib/modules/test-basic-1.0.0
@@ -322,7 +332,9 @@ Note the log line that says an `X-Okapi-Tenant: testlib` header is being added t
 We, too, must also add an `X-Okapi-Tenant` header when sending a request to an Okapi Module:
 
 ```shell
-$ curl -i -w '\n' -X GET -H 'X-Okapi-Tenant: testlib' http://localhost:9130/testb
+$ curl -i -w '\n' -X GET -H 'X-Okapi-Tenant: testlib' \
+   http://localhost:9130/testb
+
   HTTP/1.1 200 OK
   Content-Type: text/plain
   X-Okapi-Trace: GET - Okapi test module http://localhost:9131/testb : 200 12629us

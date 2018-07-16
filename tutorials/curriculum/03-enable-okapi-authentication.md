@@ -37,6 +37,7 @@ This can be demonstrated by using this curl command in a second terminal window 
 $ curl -i -w '\n' -X POST -H 'X-Okapi-Tenant: blah' \
     -d '{"username": "seb", "password": "seb-password"}' \
     http://localhost:9020/authn/login
+
   HTTP/1.1 200 OK
   Content-Type: application/json
   X-Okapi-Token: dummyJwt.eyJzdWIiOiJzZWIiLCJ0ZW5hbnQiOm51bGx9.sig
@@ -53,6 +54,7 @@ Another path supplied by _okapi-test-auth-module_ is `/check`; it checks an _X-O
 $ curl -i -w '\n' -X GET -H 'X-Okapi-Tenant: blah' \
     -H 'X-Okapi-Token: dummyJwt.eyJzdWIiOiJzZWIiLCJ0ZW5hbnQiOm51bGx9.sig' \
     http://localhost:9020/check
+
   HTTP/1.1 202 Accepted
   X-Okapi-Token: dummyJwt.eyJzdWIiOiJzZWIiLCJ0ZW5hbnQiOm51bGx9.sig
   X-Okapi-Module-Tokens: {}
@@ -89,13 +91,17 @@ If you completed the previous lesson, these JSON documents are in the `$FOLIO_RO
 ```shell
 $ cd $FOLIO_ROOT
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
-   -d @okapi-proxy-test-basic.json http://localhost:9130/_/proxy/modules
+   -d @okapi-proxy-test-basic.json \
+   http://localhost:9130/_/proxy/modules
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
-   -d @okapi-deploy-test-basic.json http://localhost:9130/_/discovery/modules
+   -d @okapi-deploy-test-basic.json \
+   http://localhost:9130/_/discovery/modules
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
-   -d @okapi-tenant.json http://localhost:9130/_/proxy/tenants
+   -d @okapi-tenant.json \
+   http://localhost:9130/_/proxy/tenants
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
-   -d @okapi-enable-basic.json http://localhost:9130/_/proxy/tenants/testlib/modules
+   -d @okapi-enable-basic.json \
+   http://localhost:9130/_/proxy/tenants/testlib/modules
 ```
 
 ### Okapi Auth Module ModuleDescriptor
@@ -131,7 +137,8 @@ $ cat > okapi-proxy-test-module-auth.json <<END
   }
 END
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
-   -d @okapi-proxy-test-module-auth.json http://localhost:9130/_/proxy/modules
+   -d @okapi-proxy-test-module-auth.json \
+   http://localhost:9130/_/proxy/modules
 ```
 
 The significant difference is a new dictionary called `filters`.
@@ -156,7 +163,8 @@ $ cat > okapi-deploy-test-module-auth.json <<END
   }
 END
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
-   -d @okapi-deploy-test-module-auth.json http://localhost:9130/_/discovery/modules
+   -d @okapi-deploy-test-module-auth.json \
+   http://localhost:9130/_/discovery/modules
 ```
 
 ### Enable Okapi Auth Module on tenant
@@ -168,7 +176,8 @@ $ cat > okapi-enable-auth.json <<END
   }
 END
 $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
-   -d @okapi-enable-auth.json http://localhost:9130/_/proxy/tenants/testlib/modules
+   -d @okapi-enable-auth.json \
+   http://localhost:9130/_/proxy/tenants/testlib/modules
 ```
 
 ### Demonstrating the Impact of the Okapi Auth Module
@@ -176,7 +185,8 @@ $ curl -i -w '\n' -X POST -H 'Content-type: application/json' \
 If we now send the same test request from the end of the previous lesson to the _Okapi-test-module_, we see a different response from the Okapi Gateway.
 
 ```shell
-$ curl -i -w '\n' -X GET -H 'X-Okapi-Tenant: testlib' http://localhost:9130/testb
+$ curl -i -w '\n' -X GET -H 'X-Okapi-Tenant: testlib' \
+   http://localhost:9130/testb
 
   HTTP/1.1 401 Unauthorized
   Content-Type: text/plain
