@@ -68,7 +68,7 @@ The related [Securing Okapi](https://github.com/folio-org/okapi/blob/master/doc/
 
 [mod-notes](https://github.com/folio-org/mod-notes) is
 used in various documentation as a back-end exemplar.
-Also its run.sh script to run a basic local system. 
+Also its run.sh script to run a basic local system.
 
 [Stripes Core](https://github.com/folio-org/stripes-core/blob/master/README.md).
 The "Documentation roadmap" links to other related Stripes and UI development documentation.
