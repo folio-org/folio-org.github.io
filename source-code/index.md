@@ -262,6 +262,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-organization](https://github.com/folio-org/ui-organization)
   -- Stripes UI module: managing organization settings.
 
+- [ui-tags](https://github.com/folio-org/ui-tags)
+  -- Stripes UI module: managing tag settings.
+
 - [ui-finance](https://github.com/folio-org/ui-finance)
   -- Stripes UI module: management of ledgers, funds, and budgets.
 

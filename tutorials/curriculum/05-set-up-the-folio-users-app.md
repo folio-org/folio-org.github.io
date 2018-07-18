@@ -16,7 +16,7 @@ We will start first with the Stripes UI component.
 
 <div class="attention">
 Note: The Stripes package.json is out-of-date. Also it might need the deployment of all user-related backend modules.
-See [FOLIO-1348](https://issues.folio.org/browse/FOLIO-1348).
+See <a href="https://issues.folio.org/browse/FOLIO-1348">FOLIO-1348</a>.
 </div>
 
 So skip ahead to the section about [Adding the mod-users module](#add-the-users-app-okapi-module-to-the-okapi-gateway).

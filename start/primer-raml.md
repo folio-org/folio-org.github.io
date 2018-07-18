@@ -16,7 +16,7 @@ and by other non-RMB modules.
 
 The RMB README section entitled [Design the RAML files](https://github.com/folio-org/raml-module-builder#step-6-design-the-raml-files) provides some RMB-specific guidance, as well as general assistance.
 
-The mod-graphql [Autogeneration of GraphQL schemas and resolvers](https://github.com/folio-org/mod-graphql/tree/master/src/autogen) document explains the RAML and Schema files. 
+The mod-graphql [Autogeneration of GraphQL schemas and resolvers](https://github.com/folio-org/mod-graphql/tree/master/src/autogen) document explains the RAML and Schema files.
 
 The RMB README has an example and commentary.
 

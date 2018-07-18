@@ -122,6 +122,7 @@ Configurations for accessing.
 
 Refer to the [Start](/start/) section.
 
+- [Overview](/start/overview/) high-level summary of "getting started" points for a new developer -- an on-boarding guide.
 - The [Commence a module - structure and configuration](/guides/commence-a-module/) guide explains a consistent layout for back-end and front-end modules.
 
 ### Reference documentation

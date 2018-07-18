@@ -12,6 +12,8 @@ This is a high-level summary of "getting started" points for a new developer.
 
 Note that each document has text that summarises, explains, and guides to other relevant documentation. So just following the links listed below is not sufficient. The order of the links is a loose sequence to becoming involved, setting up, and getting started (however note that many documents refer to each other and there is no strict sequence).
 
+## Background orientation
+
 [Getting started](/start/).
 The main introduction and starting point.
 
@@ -21,6 +23,7 @@ and
 and the other sections of those documents.
 
 [Which forum to use for communication](/guidelines/which-forum/).
+An overview of the [collaboration tools](/community/#collaboration-tools), how to register and participate.
 
 [Search dev.folio.org and other searches](/search/).
 
@@ -32,6 +35,22 @@ and the other sections of those documents.
 
 [FOLIO Glossary](/reference/glossary/).
 
+There are regular developer-related [news, events, and presentations](/community/events/).
+
+Add yourself to the
+[FOLIO Developer Directory](https://wiki.folio.org/display/COMMUNITY/FOLIO+Developer+Directory).
+As requested in the [Slack forum guidelines](/guidelines/which-forum/#slack) please also improve your Slack identity information.
+
+Become familiar with the general FOLIO web site.
+Note that there is a common FOLIO-wide project navigation bar at the <a href="">top</a> of each of the various web sites.
+Use its "Overview" menu to reach the "Community" section which provides other avenues to the starting points, and to subscribe to the monthly email newsletter for "Community updates".
+
+For developers associated with the [OLE](/reference/glossary/#ole) partner institutions, become familiar with the [Open Library Environment](https://openlibraryenvironment.org/) web site, and follow some additional [OLE on-boarding](https://wiki.folio.org/display/COMMUNITY/On-boarding+Developers) steps.
+
+For groups of developers from other institutions, contact the [FOLIO Product Council](https://wiki.folio.org/display/PC/FOLIO+Product+Council).
+
+## Setup and configuration
+
 [FOLIO uses any programming language](/guides/any-programming-language/).
 
 [Guides : Setup and configuration](/guides/#setup-and-configuration).
@@ -40,12 +59,14 @@ and the other sections of those documents.
 
 [folio-ansible](https://github.com/folio-org/folio-ansible)
 -- Development environment virtual machines.
-ANd see more about that topic below.
+And see more about that topic below.
 
 [Source Code](/source-code/).
 Overview descriptions and links to all repositories.
 As explained there, each separate module also has a README with specific documentation.
 Module documentation is kept with the relevant repository, while broad and project-wide documentation is here at the dev.folio.org site.
+
+## General documentation
 
 [API documentation](/reference/api/).
 
@@ -68,10 +89,10 @@ The related [Securing Okapi](https://github.com/folio-org/okapi/blob/master/doc/
 
 [mod-notes](https://github.com/folio-org/mod-notes) is
 used in various documentation as a back-end exemplar.
-Also its run.sh script to run a basic local system. 
+Also its run.sh script to run a basic local system.
 
 [Stripes Core](https://github.com/folio-org/stripes-core/blob/master/README.md).
-The "Documentation roadmap" links to other related Stripes and UI development documentation.
+Its "Documentation roadmap" links to other related Stripes and UI development documentation.
 
 [Stripes entities: packages, modules, apps and more](https://github.com/folio-org/stripes-core/blob/master/doc/modules-apps-etc.md).
 
@@ -86,10 +107,10 @@ and its [Stripes CLI User Guide](https://github.com/folio-org/stripes-cli/blob/m
 Explains a module directory layout and configuration, and links to relevant documentation.
 
 Overview of the FOLIO [automation](/guides/automation/) and continuous integration (CI/CD).
-The [software build pipeline](/guides/automation/#software-build-pipeline)
-and [Jenkins](/guides/automation/#jenkins).
+The [software build pipeline](/guides/automation/#software-build-pipeline) with explanatory graphic and links to each of the continuously built systems for demonstrations and further testing.
+Overview of FOLIO [Jenkins](/guides/automation/#jenkins).
 
-Developers will need some way to run a local instance and script test queries against it. The [folio-ansible](https://github.com/folio-org/folio-ansible) will assist. Other documentation about this topic is scant. Some links to useful bits:
+Developers will need some way to run a local instance and to script test queries against it. The [folio-ansible](https://github.com/folio-org/folio-ansible) will assist. Other documentation about this topic is scant. Some links to useful bits:
 [Tutorials : Curriculum : Interact with the FOLIO Stable VM](/tutorials/curriculum/06-vm-stable/);
 the [mod-notes](https://github.com/folio-org/mod-notes) run.sh script;
 the [okapi-cli](https://github.com/folio-org/okapi-cli);
@@ -98,3 +119,7 @@ the [stripes-cli](https://github.com/folio-org/stripes-cli).
 [FAQ : How to run tests prior to commit](/faqs/how-to-test-prior-to-commit/).
 
 [Guides : Finding tasks to assist and contribute](/guides/find-tasks/).
+
+So welcome on board FOLIO as a new developer.
+Please help to guide us all.
+
