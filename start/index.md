@@ -44,6 +44,6 @@ The testing framework is explained. Guidelines for module developers.
 
 ## Further information
 
-* [Overview](overview/) high-level summary of "getting started" points for a new developer.
+* [Overview](overview/) high-level summary of "getting started" points for a new developer -- an on-boarding guide.
 * [Guides](/guides/) to various topics, especially at this stage the [Setup and configuration](/guides/#setup-and-configuration) and  [Development tips](/guides/#development-tips) sections.
 * [Guidelines](/guidelines/) for various procedures.
