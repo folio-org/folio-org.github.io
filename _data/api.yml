@@ -177,8 +177,25 @@ mod-orders:
   - label: null
     directory: ramls
     files:
-      - purchase_order
+      - adjustment
+      - alert
+      - claim
+      - cost
+      - details
+      - eresource
+      - fund_distribution
+      - license
+      - location
+      - order_format
+      - order_type
+      - physical
       - po_line
+      - purchase_order
+      - receipt_status
+      - renewal
+      - source
+      - vendor
+      - workflow_status
     ramlutil: ramls/raml-util
 
 mod-vendors:
