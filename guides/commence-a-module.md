@@ -165,7 +165,7 @@ Usually in Markdown format.
 
 ## Icons {#front-end-icons}
 
-The `icons` directory holds icon files specific to this app.
+The optional `icons` directory holds icon files specific to this app.
 Some icons are provided by Stripes itself.
 
 See the [Icons](https://github.com/folio-org/stripes-core/blob/master/doc/app-metadata.md#icons)
@@ -173,7 +173,9 @@ section of the "Stripes application metadata bundles" document.
 
 ## Lib {#front-end-lib}
 
-The `lib` directory holds local libraries specific to this app.
+The optional `lib` directory holds local libraries specific to this app.
+
+Some modules just have all of their code in the top-level directory.
 
 ## Settings {#front-end-Settings}
 
