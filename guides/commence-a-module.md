@@ -14,7 +14,9 @@ Using consistent structure and configuration will assist the development.
 All developers can know what to expect.
 The continuous integration and deployment will be easier to establish and be reliable.
 
-See also the guidelines to [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/), as well as the [Getting started](/start/) fundamental documentation and primers.
+See also the guidelines to [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/).
+
+Be familiar with the [Getting started](/start/) fundamental documentation and primers.
 
 The essential directories and files are explained below for [back-end](#back-end-modules) and [front-end](#front-end-modules) modules.
 Of course any module might need extras.
@@ -28,9 +30,9 @@ Module documentation is kept with the relevant repository, while broad and proje
 # Back-end modules
 
 Server-side modules include all those named `mod-*`.
-Follow the [mod-notes](https://github.com/folio-org/mod-notes) as an example.
+Follow the structure and files of [mod-notes](https://github.com/folio-org/mod-notes) as an example.
 
-The `NEWS.md` lists the main changes for each release. Follow the layout of other back-end modules.
+The `NEWS.md` lists the main changes for each release. Follow how the other back-end modules use this file.
 
 ## Structure {#back-end-structure}
 
@@ -99,13 +101,13 @@ If the sample data refers to [reference data](#back-end-reference-data), those d
 # Front-end modules
 
 Client-side modules include all those named `stripes-*` and `ui-*`.
-Follow the [ui-users](https://github.com/folio-org/ui-users) as an example.
+Follow the structure and files of [ui-users](https://github.com/folio-org/ui-users) as an example.
 
 The [stripes-cli](https://github.com/folio-org/stripes-cli/blob/master/doc/user-guide.md#app-development) will generate an initial skeleton UI app module structure named with the `ui-` prefix.
 
 [The Stripes Module Developer's Guide](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md) explains what is expected of a UI module.
 
-The `CHANGELOG.md` lists the main changes for each release. Follow the layout of other front-end modules.
+The `CHANGELOG.md` lists the main changes for each release. Follow how the other front-end modules use this file.
 
 ## Structure {#front-end-structure}
 
