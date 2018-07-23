@@ -66,27 +66,6 @@ With that background understanding, see the documentation for each
 [client-side](/source-code/#client-side)
 module, especially the "ui-users".
 
-The
-[okapi-stripes](https://github.com/folio-org/okapi-stripes/blob/master/README.md)
-is a special Okapi module used to generate Stripes-based UIs
-for individual FOLIO tenants.
-
-## Running a complete system
-
-The document
-[Running a complete FOLIO system](https://github.com/folio-org/ui-okapi-console/blob/master/doc/running-a-complete-system.md)
-explains ways to enable a development system running the Okapi gateway,
-various server-side modules, sample data, and the Stripes UI development server.
-It goes on to explain another way to configure modules using the Okapi Console front-end.
-
-Use [folio-ansible](https://github.com/folio-org/folio-ansible/blob/master/README.md)
-for a quick-start FOLIO installation as a virtual machine using Vagrant and Ansible.
-This also provides various pre-built "black boxes" including
-"folio/stable" and "folio/testing".
-The current built boxes are also available to download from
-[Vagrant Cloud](https://app.vagrantup.com/folio).
-The list of module versions for each box is shown in its change-log.
-
 ## Guides
 
 <!-- ../../okapi/doc/md2toc -l 2 -h 3 index.md -->
@@ -123,6 +102,7 @@ Configurations for accessing.
 Refer to the [Start](/start/) section.
 
 - [Overview](/start/overview/) high-level summary of "getting started" points for a new developer -- an on-boarding guide.
+- Having followed that getting started documentation and understanding the fundamentatal documentation, then follow [Running a local FOLIO system](/guides/run-local-folio/).
 - The [Commence a module - structure and configuration](/guides/commence-a-module/) guide explains a consistent layout for back-end and front-end modules.
 
 ### Reference documentation

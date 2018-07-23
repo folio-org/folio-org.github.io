@@ -189,7 +189,7 @@ JavaScript code.
 
 #### NPM
 
-The Node.js Node Package Manager - a mechanism for distributing
+[npm](https://www.npmjs.com) is the Node.js Node Package Manager - a mechanism for distributing
 packages of JavaScript code, used by Stripes.
 
 #### Okapi gateway
@@ -279,6 +279,10 @@ The Node.js module bundler, used to deploy Stripes modules.
 #### WSAPI
 
 A generic term for Web Services Application Programming Interface (see [API](#api) above).
+
+#### Yarn
+
+[Yarn](https://yarnpkg.com) is a package manager for Node.js and JavaScript.
 
 #### Z39.50
 
