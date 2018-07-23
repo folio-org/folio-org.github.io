@@ -110,11 +110,7 @@ Overview of the FOLIO [automation](/guides/automation/) and continuous integrati
 The [software build pipeline](/guides/automation/#software-build-pipeline) with explanatory graphic and links to each of the continuously built systems for demonstrations and further testing.
 Overview of FOLIO [Jenkins](/guides/automation/#jenkins).
 
-Developers will need some way to run a local instance and to script test queries against it. The [folio-ansible](https://github.com/folio-org/folio-ansible) will assist. Other documentation about this topic is scant. Some links to useful bits:
-[Tutorials : Curriculum : Interact with the FOLIO Stable VM](/tutorials/curriculum/06-vm-stable/);
-the [mod-notes](https://github.com/folio-org/mod-notes) run.sh script;
-the [okapi-cli](https://github.com/folio-org/okapi-cli);
-the [stripes-cli](https://github.com/folio-org/stripes-cli).
+Developers will need some way to [run a local FOLIO instance](/guides/run-local-folio/) and to script test queries against it.
 
 [FAQ : How to run tests prior to commit](/faqs/how-to-test-prior-to-commit/).
 

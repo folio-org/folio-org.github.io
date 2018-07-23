@@ -118,6 +118,7 @@ Configurations for accessing.
 Refer to the [Start](/start/) section.
 
 - [Overview](/start/overview/) high-level summary of "getting started" points for a new developer -- an on-boarding guide.
+- Having followed that getting started documentation and understanding the fundamentatal documentation, then follow [Running a local FOLIO system](/guides/run-local-folio/).
 - The [Commence a module - structure and configuration](/guides/commence-a-module/) guide explains a consistent layout for back-end and front-end modules.
 
 ### Reference documentation
