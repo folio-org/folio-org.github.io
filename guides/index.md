@@ -66,11 +66,6 @@ With that background understanding, see the documentation for each
 [client-side](/source-code/#client-side)
 module, especially the "ui-users".
 
-The
-[okapi-stripes](https://github.com/folio-org/okapi-stripes/blob/master/README.md)
-is a special Okapi module used to generate Stripes-based UIs
-for individual FOLIO tenants.
-
 ## Running a complete system
 
 The document
