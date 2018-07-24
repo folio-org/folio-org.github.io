@@ -47,6 +47,13 @@ mod-login:
     ramlutil: null
     shared: ramls/mod-login
 
+mod-login-saml:
+  - label: null
+    directory: ramls
+    files:
+      - saml-login
+    ramlutil: null
+
 mod-circulation:
   - label: null
     directory: ramls
@@ -102,13 +109,6 @@ mod-inventory-storage:
       - service-point
       - shelf-location
     ramlutil: ramls/raml-util
-
-mod-login-saml:
-  - label: null
-    directory: ramls
-    files:
-      - saml-login
-    ramlutil: null
 
 mod-user-import:
   - label: null
