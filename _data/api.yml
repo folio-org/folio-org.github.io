@@ -22,6 +22,31 @@ mod-users:
     ramlutil: null
     shared: ramls/mod-users
 
+mod-users-bl:
+  - label: null
+    directory: raml/ramls/mod-users-bl
+    files:
+      - mod-users-bl
+    ramlutil: null
+    shared: ramls/mod-users-bl
+
+mod-permissions:
+  - label: null
+    directory: raml-util/ramls/mod-permissions
+    files:
+      - tenantPermissions
+      - permissions
+    ramlutil: null
+    shared: ramls/mod-permissions
+
+mod-login:
+  - label: null
+    directory: raml-util/ramls/mod-login
+    files:
+      - login
+    ramlutil: null
+    shared: ramls/mod-login
+
 mod-circulation:
   - label: null
     directory: ramls
@@ -91,6 +116,30 @@ mod-user-import:
     files:
       - import
     ramlutil: ramls/raml-util
+
+mod-codex-ekb:
+  - label: null
+    directory: ramls/raml-util/ramls/codex
+    files:
+      - codex
+    ramlutil: null
+    shared: ramls/codex
+
+mod-codex-inventory:
+  - label: null
+    directory: ramls/raml-util/ramls/codex
+    files:
+      - codex
+    ramlutil: null
+    shared: ramls/codex
+
+mod-codex-mux:
+  - label: null
+    directory: ramls/raml-util/ramls/codex
+    files:
+      - codex
+    ramlutil: null
+    shared: ramls/codex
 
 mod-calendar:
   - label: null
