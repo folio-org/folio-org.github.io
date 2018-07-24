@@ -11,6 +11,17 @@ okapi:
       - okapi
     ramlutil: okapi-core/src/main/raml/raml-util
 
+mod-users:
+  - label: null
+    directory: raml-util/ramls/mod-users
+    files:
+      - groups
+      - users
+      - addressTypes
+      - proxiesFor
+    ramlutil: null
+    shared: ramls/mod-users
+
 mod-circulation:
   - label: null
     directory: ramls
