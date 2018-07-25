@@ -44,7 +44,9 @@ the [mod-notes](https://github.com/folio-org/mod-notes) run.sh script;
 the [mod-inventory running](https://github.com/folio-org/mod-inventory#running) scripts;
 the script provided in [Lesson-06 Interact with the FOLIO Stable VM](/tutorials/curriculum/06-vm-stable/);
 the [folio-ansible](https://github.com/folio-org/folio-ansible/) roles and tasks;
-the [folio-test-env](https://github.com/folio-org/folio-test-env) (see the upcoming branch).
+the [folio-test-env](https://github.com/folio-org/folio-test-env).
+Although these other documents are intended for a production installation, they do have useful parts which assist with running a local system:
+[FOLIO deployment: single server](https://github.com/folio-org/folio-install/blob/master/single-server.md) and [Securing Okapi Installation](https://github.com/folio-org/okapi/blob/master/doc/securing.md).
 
 Follow the [Stripes: quick start](https://github.com/folio-org/stripes-core/blob/master/doc/quick-start.md) for the Stripes UI development server.
 As explained there, the default will use released modules. It can be configured to use your local development versions.
