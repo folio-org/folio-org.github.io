@@ -14,9 +14,11 @@ There are details about each event and additional materials such as slide-decks.
 Events are also listed at the FOLIO Trello [board](https://trello.com/b/A27ucwg8/events)
 and at the [FOLIO News](https://www.folio.org/news/) page.
 
-Many FOLIO recordings and presentations are available at the Open Library Foundation video
-[channel](https://www.youtube.com/channel/UC4Vs5mb1qgOXPZgso1LESUw) at YouTube.
+Many FOLIO recordings and presentations are available at the Open Library Foundation video YouTube
+[channel](https://www.youtube.com/channel/UC4Vs5mb1qgOXPZgso1LESUw/videos?sort=dd&view=0&flow=grid)
+(sorted by most recent).
 
+One recent example:
 <div class="widget">
 {%- include widgets/youtube-player.html video='2AlFc38T_uw' -%}
 </div>
