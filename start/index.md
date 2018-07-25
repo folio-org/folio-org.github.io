@@ -14,6 +14,7 @@ Follow at least the [background orientation](/guidelines/#background-orientation
 section of the [Guidelines](/guidelines/)
 and the [Guides](/guides/#background-orientation).
 That will introduce the resources available and the forums to enable interaction with the community.
+The [getting started overview](overview/) is the high-level summary of all "getting started" points for a new developer.
 
 After perusing the fundamental documentation, the primers will guide through the next stage.
 
@@ -44,6 +45,5 @@ The testing framework is explained. Guidelines for module developers.
 
 ## Further information
 
-* [Overview](overview/) high-level summary of "getting started" points for a new developer -- an on-boarding guide.
 * [Guides](/guides/) to various topics, especially at this stage the [Setup and configuration](/guides/#setup-and-configuration) and  [Development tips](/guides/#development-tips) sections.
 * [Guidelines](/guidelines/) for various procedures.

@@ -24,6 +24,7 @@ the platform.  You can help us shape the core of the system.
 This website brings together the documentation and links that software
 developers will need to participate in FOLIO.  Though the website is still
 nascent, we expect it to evolve quickly in the coming weeks.
+Commence with the [getting started](/start/) section.
 
 We hope you will join FOLIO and help us shape the future of libraries!  We
 invite you to provide feedback and explore ideas with us.  Join the
