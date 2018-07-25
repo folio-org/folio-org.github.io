@@ -3,8 +3,8 @@ layout: page
 title: Explain DB schema and performance issues
 titleLeader: "FAQ |"
 menuTopTitle: Guides
-categories: orientation
-faqOrder: 10
+categories: development-tips
+faqOrder: 2
 ---
 
 *Q.* Data is stored in the database in [a form of JSON in JSONB](https://www.postgresql.org/docs/current/static/datatype-json.html) fields within relational tables. At the same time framework generates queries like this
