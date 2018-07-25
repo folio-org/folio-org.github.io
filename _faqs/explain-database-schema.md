@@ -10,10 +10,10 @@ faqOrder: 2
 *Q.* Data is stored in the database in [a form of JSON in JSONB](https://www.postgresql.org/docs/current/static/datatype-json.html) fields within relational tables. At the same time framework generates queries like this
 
     SELECT  diku_mod_users.count_estimate_smart(
-      'SELECT jsonb, id FROM diku_mod_users.users  WHERE (jsonb->>''id'') =  ''ba6baf95-bf14-4020-b44c-0cad269fb5c9''   ') AS count,  
+      'SELECT jsonb, id FROM diku_mod_users.users  WHERE (jsonb->>''id'') =  ''ba6baf95-bf14-4020-b44c-0cad269fb5c9''   ') AS count,
            jsonb,
            id
-     FROM diku_mod_users.users  
+     FROM diku_mod_users.users
     WHERE (jsonb->>'id') =  'ba6baf95-bf14-4020-b44c-0cad269fb5c9'
 
 And though this is a single row query it leads to a “full table scan” at the database level, which obviously has a great impact on performance. Also, I noticed that there were different values in `json.id` and `id` field and that confused me. And as for me, it doesn’t make sense to count rows in this case. Also joins will have a very bad performance because tables do not have foreign keys nor indexes for them.
@@ -24,7 +24,7 @@ As a side note, there is massive work currently being done on [`cql2pgjson`](htt
 
 *Q.* Framework does not cache prepared statements and does not use binding for SQL statements. This also has a huge impact on performance. And potentially there is a chance of SQL injection attacks if SQL binding is not used.
 
-*A.* There are some prepared statements (saving and updating) but not for all and this should be addressed. (Creating issues and pull requests to fix any such occurences are welcome!)  However, note that the `cql2pgjson` module creates the entire `where` clause (this is our preferred method of work - using cql) - so in _most_ cases this is how the database is accessed [cql input ->> cql processed into an sql where clause (includes some validation) ->> where clause used to build full query].
+*A.* There are some prepared statements (saving and updating) but not for all and this should be addressed. (Creating issues and pull requests to fix any such occurrences are welcome!)  However, note that the `cql2pgjson` module creates the entire `where` clause (this is our preferred method of work - using cql) - so in _most_ cases this is how the database is accessed [cql input ->> cql processed into an SQL where clause (includes some validation) ->> where clause used to build full query].
 
 *Q.* All data in the databases in folio-stable has quite simple tabular form and I would prefer to redesign tables to the natural relational form and have in JSONB just additional information like user’s addresses and so on. Or maybe it makes sense to move back to [MongoDB](https://www.mongodb.com/).
 
