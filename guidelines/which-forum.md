@@ -150,6 +150,9 @@ We follow a variation of the Apache motto:
 
 - Real-time chat and messaging.
 
+- Use some identifying avatar or photo, indicate your timezone, and enhance your profile notes.
+  In such a busy project this assists knowing a little about each other and enables the chat to be more easily followed.
+
 - Summarize topics out to other forums for better visibility.
   Remember that Slack is a secondary channel: significant ideas and
   decisions must be recorded elsewhere (Discuss, Wiki, Issues or GitHub)
@@ -166,10 +169,19 @@ We follow a variation of the Apache motto:
 
 - A place for heads-up type of notices.
 
-- Use some identifying avatar or photo, indicate your timezone, and enhance your profile notes.
-  In such a busy project this assists knowing a little about each other and enables the chat to be more easily followed.
+- There are now many channels. Browse the list to review and join any appropriate ones.
+  Some are not public, so you will need to be invited.
+  Some relevant channels for developers are:
+  - `#support` -- Any topic needing assistance.
+  - `#general` -- Community-wide general stuff. Use other channels for development topics.
+  - `#development` -- The main development area.
+  - `#stripes` -- Specific discussion for front-end development.
+  - `#folio-ci` -- Notifications from the Jenkins CI. See usage [notes](/guides/navigate-commits/). Mute this channel and visit when needed.
 
-- Distinguish different Slack teams using
+- Use `@mentions` with care. This is especially important on broad channels such as `#general`, as using `@channel` there will send notifications to many hundreds of people.
+
+- Distinguish different Slack workspaces using
   [Sidebar Themes](http://slackstyles.com/#/tag/FOLIO):
-  "[FOLIO orange](http://slackthemes.net/#/folio_orange)" and
+  "[FOLIO orange](http://slackthemes.net/#/folio_orange)" or
   "[FOLIO purple](http://slackthemes.net/#/folio_purple)".
+

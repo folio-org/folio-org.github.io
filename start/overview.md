@@ -4,11 +4,11 @@ title: Overview for a new developer
 permalink: /start/overview/
 menuInclude: yes
 menuTopTitle: Start
-menuSubTitle: Overview
+menuSubTitle: New developer overview
 menuSubIndex: 2
 ---
 
-This is a high-level summary of "getting started" points for a new developer.
+This is a high-level summary of "getting started" points for a new developer -- the on-boarding guide.
 
 Note that each document has text that summarises, explains, and guides to other relevant documentation. So just following the links listed below is not sufficient. The order of the links is a loose sequence to becoming involved, setting up, and getting started (however note that many documents refer to each other and there is no strict sequence).
 
@@ -66,7 +66,7 @@ Overview descriptions and links to all repositories.
 As explained there, each separate module also has a README with specific documentation.
 Module documentation is kept with the relevant repository, while broad and project-wide documentation is here at the dev.folio.org site.
 
-## General documentation
+## Development documentation
 
 [API documentation](/reference/api/).
 
@@ -114,7 +114,21 @@ Developers will need some way to [run a local FOLIO instance](/guides/run-local-
 
 [FAQ : How to run tests prior to commit](/faqs/how-to-test-prior-to-commit/).
 
+## Getting help and helping
+
+Having followed this guide to get started, you will now be familiar with some of the available resources and forums.
+Being a self starter is surely admirable. Please do use the [search](/search/) facilities for this site and for GitHub, and for searching the [issue tracker](/guidelines/issue-tracker/#filters-and-search), and for [Slack](/guidelines/which-forum/#slack).
+
+Spending some time listening to the Slack channels and visiting each user's profiles, you will begin to know who is who. Otherwise ask, and someone will direct you.
+
+We are all your friends, and we were also getting started once. People are pleased to be able to assist.
+
+Contacting developers directly via Slack is sometimes appropriate. Other times it will be better to raise your topic on the channels, where various people can help and others can listen and learn.
+
 [Guides : Finding tasks to assist and contribute](/guides/find-tasks/).
+
+As you followed the various documentation, there were probably some areas that were not quite clear. Please help to improve that.
+We can make it more efficient for everybody.
 
 So welcome on board FOLIO as a new developer.
 Please help to guide us all.
