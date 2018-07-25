@@ -12,6 +12,9 @@
 - name: reference
   title: Reference documentation
 
+- name: development-tips
+  title: Development tips
+
 - name: management
   title: Development management
 
