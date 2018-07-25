@@ -4,11 +4,11 @@ title: Overview for a new developer
 permalink: /start/overview/
 menuInclude: yes
 menuTopTitle: Start
-menuSubTitle: Overview
+menuSubTitle: New developer overview
 menuSubIndex: 2
 ---
 
-This is a high-level summary of "getting started" points for a new developer.
+This is a high-level summary of "getting started" points for a new developer -- the on-boarding guide.
 
 Note that each document has text that summarises, explains, and guides to other relevant documentation. So just following the links listed below is not sufficient. The order of the links is a loose sequence to becoming involved, setting up, and getting started (however note that many documents refer to each other and there is no strict sequence).
 
