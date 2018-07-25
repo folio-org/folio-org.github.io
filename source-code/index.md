@@ -262,6 +262,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-organization](https://github.com/folio-org/ui-organization)
   -- Stripes UI module: managing organization settings.
 
+- [ui-myprofile](https://github.com/folio-org/ui-myprofile)
+  -- Stripes UI module: managing user profile settings.
+
 - [ui-tags](https://github.com/folio-org/ui-tags)
   -- Stripes UI module: managing tag settings.
 
