@@ -150,6 +150,9 @@ We follow a variation of the Apache motto:
 
 - Real-time chat and messaging.
 
+- Use some identifying avatar or photo, indicate your timezone, and enhance your profile notes.
+  In such a busy project this assists knowing a little about each other and enables the chat to be more easily followed.
+
 - Summarize topics out to other forums for better visibility.
   Remember that Slack is a secondary channel: significant ideas and
   decisions must be recorded elsewhere (Discuss, Wiki, Issues or GitHub)
@@ -165,9 +168,6 @@ We follow a variation of the Apache motto:
   Try to choose a time that suits people distributed around the world.
 
 - A place for heads-up type of notices.
-
-- Use some identifying avatar or photo, indicate your timezone, and enhance your profile notes.
-  In such a busy project this assists knowing a little about each other and enables the chat to be more easily followed.
 
 - Distinguish different Slack teams using
   [Sidebar Themes](http://slackstyles.com/#/tag/FOLIO):
