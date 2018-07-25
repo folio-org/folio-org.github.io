@@ -169,7 +169,19 @@ We follow a variation of the Apache motto:
 
 - A place for heads-up type of notices.
 
-- Distinguish different Slack teams using
+- There are now many channels. Browse the list to review and join any appropriate ones.
+  Some are not public, so you will need to be invited.
+  Some relevant channels for developers are:
+  - `#support` -- Any topic needing assistance.
+  - `#general` -- Community-wide general stuff. Use other channels for development topics.
+  - `#development` -- The main development area.
+  - `#stripes` -- Specific discussion for front-end development.
+  - `#folio-ci` -- Notifications from the Jenkins CI. See usage [notes](/guides/navigate-commits/). Mute this channel and visit when needed.
+
+- Use `@mentions` with care. This is especially important on broad channels such as `#general`, as using `@channel` there will send notifications to many hundreds of people.
+
+- Distinguish different Slack workspaces using
   [Sidebar Themes](http://slackstyles.com/#/tag/FOLIO):
-  "[FOLIO orange](http://slackthemes.net/#/folio_orange)" and
+  "[FOLIO orange](http://slackthemes.net/#/folio_orange)" or
   "[FOLIO purple](http://slackthemes.net/#/folio_purple)".
+
