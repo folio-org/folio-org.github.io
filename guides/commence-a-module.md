@@ -25,6 +25,8 @@ Of course any module might need extras.
 
 All modules will have the [normal boilerplate files](/guidelines/create-new-repo/) such as README.md, LICENSE, CONTRIBUTING.md, etc.
 
+The [Naming conventions](/guidelines/naming-conventions/) guidelines apply.
+
 Module documentation is kept with the relevant repository, while broad and project-wide documentation is here at the dev.folio.org site.
 
 # Back-end modules
