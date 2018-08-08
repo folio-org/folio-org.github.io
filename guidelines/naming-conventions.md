@@ -24,6 +24,8 @@ Each module has its own git repository. The name uses the following scheme with 
 
 Some back-end modules are paired. For example `mod-inventory` is the business logic module, while `mod-inventory-storage` is the associated storage module.
 
+The [version number](/guidelines/contributing/#version-numbers) of a module uses semantic versioning.
+
 ## Permissions
 
 These are explained at [Permissions in Stripes and FOLIO](https://github.com/folio-org/stripes-core/blob/master/doc/permissions.md) (with some further links via this [FAQ](/faqs/explain-permissions-system/)).
