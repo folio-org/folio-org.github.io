@@ -12,7 +12,7 @@ This document declares the naming conventions, which enable consistency.
 
 Note that some early modules did not follow some aspects of these naming schemes.
 
-Choose names carefully, as there are various ramifications to change later.
+Choose names carefully, as there are various ramifications to later changing that.
 
 ## Module names
 
@@ -48,9 +48,36 @@ Some examples:
 * mod-inventory-storage defines `contributorNameTypes`
 * All modules use `totalRecords` and `id` and `metadata`
 
+## Interfaces
+
+The back-end modules define each
+[interface](https://github.com/folio-org/okapi/blob/master/doc/guide.md#architecture)
+that they provide, in their ModuleDescriptor.
+Each module can define more than one interface.
+Normally an interface is defined by only one module, but Okapi does allow different modules to provide the same interface by using
+[multiple interfaces](https://github.com/folio-org/okapi/blob/master/doc/guide.md#multiple-interfaces).
+
+The name of an interface (its `id`) uses dash-separated strings.
+It is normally the same as the set of `pathPattern`s for which it provides handlers.
+
+Some examples:
+
+* mod-inventory-storage provides various interfaces including `item-storage` and `loan-types` and others.
+
+The [version number](/guidelines/contributing/#version-numbers) of an interface uses the first two portions of semantic versioning.
+There does not need to be any correlation between the module version and the version of the interfaces it implements.
+
+The back-end modules can also provide
+[system interfaces](https://github.com/folio-org/okapi/blob/master/doc/guide.md#system-interfaces).
+These Okapi interface names start with underscore, e.g. the Tenant Interface `_tenant`
+
 ## API endpoints
 
+The back-end modules define their routes and API endpoints in their [RAML files](/reference/api/),
+and declare the endpoints as the pathPatterns in the interfaces defined by their ModuleDescriptor.
+
 Endpoints use dash-separated strings, with URI parameters as camelCase.
+There is no trailing slash.
 
 Some examples:
 
