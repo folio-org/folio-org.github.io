@@ -39,7 +39,7 @@ Some examples:
 * mod-inventory-storage declares `inventory-storage.loan-types.collection.get`
 * ui-users declares `ui-users.view`
 
-## Schema 
+## Schema
 
 JSON key names use camelCase.
 
@@ -55,4 +55,8 @@ Endpoints use dash-separated strings, with URI parameters as camelCase.
 Some examples:
 
 * mod-inventory-storage declares `/contributor-name-types/{contributorNameTypeId}`
+
+The special prefix `/_` is used to to distinguish the routing for the core endpoints of
+[Okapi internal web services](https://github.com/folio-org/okapi/blob/master/doc/guide.md#okapis-own-web-services)
+from the extension points provided by modules, e.g. `/_/proxy`
 
