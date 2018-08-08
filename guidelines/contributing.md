@@ -258,6 +258,10 @@ As such, every new version for a particular major.minor series (e.g. `2.71`) sta
 version set as 0, effectively `2.71.0`. This indicates that no bugs have been discovered (yet)
 and no hotfix releases provided.
 
+## Naming conventions
+
+There are guidelines for [Naming conventions](/guidelines/naming-conventions/) of modules, permissions, endpoints, etc.
+
 ## Coding style
 
 ### Style conventions
