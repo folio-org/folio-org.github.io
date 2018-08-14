@@ -37,6 +37,10 @@ The document
 [Stripes entities: packages, modules, apps and more](https://github.com/folio-org/stripes-core/blob/master/doc/modules-apps-etc.md)
 is a summary of terms used in that context, e.g. component, package, module, app, plugin.
 
+### Platform, LSP Base, LSP Extended
+
+The "FOLIO Platform" and the "FOLIO LSP Base" and the "FOLIO LSP Extended Apps" are [defined](https://wiki.folio.org/display/TC/Definition+of+the+FOLIO+Platform%2C+LSP+Base+and+LSP+Extended+Apps).
+
 ## FOLIO Technologies and Concepts
 
 ### Terms A-F
