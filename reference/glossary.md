@@ -98,6 +98,10 @@ For other relevant CQL examples see the first two items above, and the [API docs
 containers. FOLIO is well-suited for deployment in a Docker
 environment.
 
+#### DoD
+
+Definition of Done (DoD).
+
 #### DRY
 
 Don't repeat yourself
