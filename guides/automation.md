@@ -41,6 +41,7 @@ There is no attempt to verify that the frontend dependencies are met by the back
 This server is built every day at about 03:00 UTC.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot/).)
 It consists of the master branch of the frontend at that time paired with the latest version of backend modules that meet the dependency requirements of the frontend.
 There may still be errors because of API differences that aren't covered by the dependency requirements.
+The folio-snapshot is an alias for folio-snapshot-latest.
 
 ### folio-snapshot-stable
 
