@@ -248,6 +248,10 @@ The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB
 
 [Apache Solr](https://en.wikipedia.org/wiki/Apache_Solr).
 
+### SPA
+
+FOLIO is a single-page application ([SPA](https://en.wikipedia.org/wiki/Single-page_application)).
+
 #### SRU
 
 Search/Retrieve via URL
