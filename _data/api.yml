@@ -10,6 +10,7 @@ okapi:
     files:
       - okapi
     ramlutil: okapi-core/src/main/raml/raml-util
+    rmb: false
 
 mod-users:
   - label: null
@@ -209,6 +210,7 @@ mod-kb-ebsco:
     excludes:
       - types
     ramlutil: ramls/raml-util
+    rmb: false
 
 mod-rtac:
   - label: null
@@ -280,6 +282,7 @@ edge-patron:
     files:
       - edge-patron
     ramlutil: null
+    rmb: false
 
 edge-rtac:
   - label: null
@@ -287,6 +290,7 @@ edge-rtac:
     files:
       - edge-rtac
     ramlutil: null
+    rmb: false
 
 edge-orders:
   - label: null
@@ -294,6 +298,7 @@ edge-orders:
     files:
       - edge-orders
     ramlutil: null
+    rmb: false
 
 # Leave the following two tables (raml-module-builder, raml) at the bottom.
 
