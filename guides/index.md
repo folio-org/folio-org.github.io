@@ -123,6 +123,7 @@ These are listed in the [Start](/start/) section.
 - Use [raml-cop](/guides/raml-cop/) to assess RAMLs, schema, and examples. A guide to its use with some explanations of its messages.
 - [Conduct cross-module joins via their APIs](cross-module-joins).
 - [How to check for a valid UUID](uuids).
+- [Accessible Routing in FOLIO](https://github.com/folio-org/stripes-components/blob/master/docs/patterns/AccessibleRouting.md) explains assisted navigation.
 
 ### Tutorials
 
