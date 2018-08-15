@@ -22,6 +22,8 @@ Each module has its own git repository. The name uses the following scheme with 
 * `ui-` prefix for front-end UI modules (e.g. ui-users).
 * `stripes-` prefix for Stripes modules (e.g. stripes-core).
 
+Most module names will be in the plural sense, e.g. mod-notes, especially when responsible for collections of items.
+
 Some back-end modules are paired. For example `mod-inventory` is the business logic module, while `mod-inventory-storage` is the associated storage module.
 
 The [version number](/guidelines/contributing/#version-numbers) of a module uses semantic versioning.
