@@ -25,6 +25,7 @@ Each module has its own git repository. The name uses the following scheme with 
 Most module names will be in the plural sense, e.g. mod-notes, especially when responsible for collections of items.
 
 Some back-end modules are paired. For example `mod-inventory` is the business logic module, while `mod-inventory-storage` is the associated storage module.
+Having such a stem name, enables dividing a module into more layers.
 
 The [version number](/guidelines/contributing/#version-numbers) of a module uses semantic versioning.
 
