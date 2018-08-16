@@ -152,6 +152,9 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Persistent storage of finance-related data (i.e. funds, ledgers, transactions, etc.).
 
 - [mod-orders](https://github.com/folio-org/mod-orders)
+  -- Orders business logic.
+
+- [mod-orders-storage](https://github.com/folio-org/mod-orders-storage)
   -- Persistent storage of order data.
 
 - [mod-patron](https://github.com/folio-org/mod-patron)
@@ -166,6 +169,12 @@ facilitated by the code in the `raml-module-builder` repository.
 
 - [mod-vendors](https://github.com/folio-org/mod-vendors)
   -- Persistent storage of vendor data.
+
+- [mod-erm](https://github.com/folio-org/mod-erm)
+  -- Electronic resource management (ERM)
+
+- [mod-licenses](https://github.com/folio-org/mod-licenses)
+  -- Upload, manage and analyze licenses.
 
 - [mod-gobi](https://github.com/folio-org/mod-gobi)
   -- Allows GOBI® (Global Online Bibliographic Information) initiated orders to be fulfilled by FOLIO.
@@ -253,8 +262,17 @@ exists and can be run, the APIs are likely to change.
 - [ui-orders](https://github.com/folio-org/ui-orders)
   -- Stripes UI module: Orders.
 
+- [ui-receiving](https://github.com/folio-org/ui-receiving)
+  -- Stripes UI module: Receiving.
+
 - [ui-eholdings](https://github.com/folio-org/ui-eholdings)
   -- Stripes UI module: E-holdings.
+
+- [ui-erm](https://github.com/folio-org/ui-erm)
+  -- Stripes UI module: Electronic resource management (ERM).
+
+- [ui-licenses](https://github.com/folio-org/ui-licenses)
+  -- Stripes UI module: Upload, manage and analyze licenses.
 
 - [ui-search](https://github.com/folio-org/ui-search)
   -- Stripes UI module: searching, sorting, filtering and viewing records from the FOLIO Codex, an aggregation of bibliographic metadata from multiple sources.
@@ -348,6 +366,9 @@ exists and can be run, the APIs are likely to change.
 
 - [folio-perf-test](https://github.com/folio-org/folio-perf-test)
   -- Jenkins pipeline to test FOLIO performance.
+
+- [folio-api-tests](https://github.com/folio-org/folio-api-tests)
+  -- Postman collections for backend modules.
 
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.
