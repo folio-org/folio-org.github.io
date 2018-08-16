@@ -21,7 +21,7 @@ It is also possible to utilise a box in conjunction with local development versi
 ## Prebuilt Vagrant boxes
 
 See the [explanations](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md) for each of the available boxes.
-The main ones of interest at this stage are: folio/testing-backend, folio-testing, and folio/snapshot
+The main ones of interest at this stage are: folio/testing-backend, folio/testing, and folio/snapshot
 (and the upcoming release to replace the old "stable" boxes).
 
 The guide to [Software Build Pipeline](/guides/automation/#software-build-pipeline) further explains the process, what time of day each is built, and links to the public interfaces.

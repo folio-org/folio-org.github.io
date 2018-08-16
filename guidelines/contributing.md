@@ -177,6 +177,7 @@ master, as need be.
 Since (almost) all components have hard separation between interface and implementation,
 we need to keep two kinds of version numbers, one for the API, and one for the implementation code.
 To make matters worse, any FOLIO module may implement several interfaces.
+The Okapi Guide futher describes its handling of [Versioning and Dependencies](https://github.com/folio-org/okapi/blob/master/doc/guide.md#versioning-and-dependencies).
 
 ### API/interface versions
 
@@ -229,7 +230,8 @@ and the module still implements the checkout API at `3.14`, then the module vers
 
 ### Module implements multiple interfaces
 
-A module can implement more than one interface, and more than one major version
+A module can implement [more](https://github.com/folio-org/okapi/blob/master/doc/guide.md#multiple-interfaces)
+than one interface, and more than one major version
 of any of them. In that case the version numbering is necessarily more complex.
 Again, there does not have to be any correlation between the module version and the
 version of the interfaces it implements.
@@ -257,6 +259,10 @@ tracking changes caused by malfunction that may be hard to predict.
 As such, every new version for a particular major.minor series (e.g. `2.71`) start with bugfix
 version set as 0, effectively `2.71.0`. This indicates that no bugs have been discovered (yet)
 and no hotfix releases provided.
+
+## Naming conventions
+
+There are guidelines for [Naming conventions](/guidelines/naming-conventions/) of modules, permissions, endpoints, etc.
 
 ## Coding style
 

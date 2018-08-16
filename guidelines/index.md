@@ -28,6 +28,11 @@ The whole community and the project will benefit by being more consistent, effic
 
 See other orientation [guides](/guides/#background-orientation).
 
+## Development
+
+- [Guidelines for Contributing Code](contributing/).
+- [Naming conventions](naming-conventions/).
+
 ## Development management
 
 - [Release procedures](/guidelines/release-procedures/).
