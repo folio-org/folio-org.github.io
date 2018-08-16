@@ -119,6 +119,10 @@ The Stripes Toolkit is written in
 [ES6](http://es6-features.org/),
 a modern variant that introduces several new facilities.
 
+#### ERM
+
+Electronic resource management ([ERM](https://en.wikipedia.org/wiki/Electronic_resource_management)).
+
 #### FRBR
 
 Functional Requirements for Bibliographic Records
