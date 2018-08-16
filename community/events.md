@@ -29,7 +29,7 @@ Many FOLIO recordings and presentations are available at the Open Library Founda
 
 Some other presentations (sorted by most recent). Note that some might be out-of-date and maybe still useful.
 
-* [Stripes overview](https://epam-my.sharepoint.com/personal/tetyana_afanasyeva_epam_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftetyana%5Fafanasyeva%5Fepam%5Fcom%2FDocuments%2FShared%20with%20Everyone%2FTaras%20Spashchenko%2C%20Victor%20Soroka1%2C%20Ol%2E%20%2E%20%2E%20%2D%20Wednesday%2C%20August%2015%2C%202018%204%2E32%2E10%20PM%2Emp4&parent=%2Fpersonal%2Ftetyana%5Fafanasyeva%5Fepam%5Fcom%2FDocuments%2FShared%20with%20Everyone&slrid=4736859e-903f-6000-6804-d253bd31c5d5)
+* <a id="stripes-coburn-2018-08"></a> [Stripes overview](https://epam-my.sharepoint.com/personal/tetyana_afanasyeva_epam_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftetyana%5Fafanasyeva%5Fepam%5Fcom%2FDocuments%2FShared%20with%20Everyone%2FTaras%20Spashchenko%2C%20Victor%20Soroka1%2C%20Ol%2E%20%2E%20%2E%20%2D%20Wednesday%2C%20August%2015%2C%202018%204%2E32%2E10%20PM%2Emp4&parent=%2Fpersonal%2Ftetyana%5Fafanasyeva%5Fepam%5Fcom%2FDocuments%2FShared%20with%20Everyone&slrid=4736859e-903f-6000-6804-d253bd31c5d5)
 presentation conducted by John Coburn to introduce the folijet EPAM team (2018 August).
 
 ## Preparation materials
