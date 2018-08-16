@@ -235,6 +235,13 @@ mod-data-loader:
       - inventory
     ramlutil: ramls/inventory/raml-util
 
+mod-orders:
+  - label: null
+    directory: ramls
+    files:
+      - order
+    ramlutil: ramls/raml-util
+
 mod-orders-storage:
   - label: null
     directory: ramls
