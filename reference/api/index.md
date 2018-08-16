@@ -73,6 +73,9 @@ See [explanation](/faqs/how-to-configure-api-doc-generation/) for how to configu
 
 ## Usage notes
 
-`*` denotes that this is a shared set of RAML files.
+* The asterisk `*` denotes that this is a shared set of RAML files.
 The generated documents are for this module's current raml-util, but the link to the source RAML file is to the master of the shared
 "[raml](#raml)" repository.
+
+* Since August 2018 the generated documents are saved for each software version.
+So for [mod-inventory-storage](#mod-inventory-storage) amend the URL of the generated documents to add the version number (major.minor), e.g. `mod-inventory-storage/12.5/...`

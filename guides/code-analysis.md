@@ -30,6 +30,9 @@ and in some cases configuring the code lines to avoid certain tests.
 
 See [FOLIO-858](https://issues.folio.org/browse/FOLIO-858) to encourage 'A' ratings.
 
+See [FOLIO-1049](https://issues.folio.org/browse/FOLIO-1049) to encourage 'A' ratings,
+80% test coverage, and less than 3% duplicated lines.
+
 ### Local use
 
 The [SonarLint](http://www.sonarlint.org) extension for IDEs will detect quality issues at an early stage.

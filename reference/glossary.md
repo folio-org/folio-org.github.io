@@ -37,6 +37,10 @@ The document
 [Stripes entities: packages, modules, apps and more](https://github.com/folio-org/stripes-core/blob/master/doc/modules-apps-etc.md)
 is a summary of terms used in that context, e.g. component, package, module, app, plugin.
 
+### Platform, LSP Base, LSP Extended
+
+The "FOLIO Platform" and the "FOLIO LSP Base" and the "FOLIO LSP Extended Apps" are [defined](https://wiki.folio.org/display/TC/Definition+of+the+FOLIO+Platform%2C+LSP+Base+and+LSP+Extended+Apps).
+
 ## FOLIO Technologies and Concepts
 
 ### Terms A-F
@@ -98,6 +102,10 @@ For other relevant CQL examples see the first two items above, and the [API docs
 containers. FOLIO is well-suited for deployment in a Docker
 environment.
 
+#### DoD
+
+Definition of Done (DoD).
+
 #### DRY
 
 Don't repeat yourself
@@ -110,6 +118,10 @@ is the formally standardised version JavaScript.
 The Stripes Toolkit is written in
 [ES6](http://es6-features.org/),
 a modern variant that introduces several new facilities.
+
+#### ERM
+
+Electronic resource management ([ERM](https://en.wikipedia.org/wiki/Electronic_resource_management)).
 
 #### FRBR
 
@@ -247,6 +259,10 @@ The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB
 #### Solr
 
 [Apache Solr](https://en.wikipedia.org/wiki/Apache_Solr).
+
+### SPA
+
+FOLIO is a single-page application ([SPA](https://en.wikipedia.org/wiki/Single-page_application)).
 
 #### SRU
 
