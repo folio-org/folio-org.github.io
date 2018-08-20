@@ -25,11 +25,12 @@ mod-users:
 
 mod-users-bl:
   - label: null
-    directory: raml/ramls/mod-users-bl
+    directory: ramls
     files:
       - mod-users-bl
-    ramlutil: null
-    shared: ramls/mod-users-bl
+    excludes:
+      - raml
+    ramlutil: ramls/raml
 
 mod-permissions:
   - label: null
