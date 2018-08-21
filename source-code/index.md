@@ -179,6 +179,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-gobi](https://github.com/folio-org/mod-gobi)
   -- Allows GOBI® (Global Online Bibliographic Information) initiated orders to be fulfilled by FOLIO.
 
+- [mod-audit](https://github.com/folio-org/mod-audit)
+  -- Implements Okapi PRE and POST filters to capture audit data.
+
 - [mod-pg-embed](https://github.com/folio-org/mod-pg-embed)
   -- Helper module to start embedded Postgres.
   Helper for developers that starts the "embedded" postgres server and sets up the environment so that other modules can locate the database.
@@ -294,6 +297,9 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
   -- Stripes UI plugin: User-finder.
+
+- [ui-plugin-find-instance](https://github.com/folio-org/ui-plugin-find-instance)
+  -- Stripes UI plugin: Instance-finder.
 
 - [ui-trivial](https://github.com/folio-org/ui-trivial)
   -- Stripes UI module: example application.
