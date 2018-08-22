@@ -44,7 +44,7 @@ Some of the important forums to collaborate, discuss FOLIO, interact with other 
       </td>
       <td>
         <a href="/guidelines/which-forum#wiki">How to</a> |
-        Join at front page (same account as Issues)
+        Join at Issues front page (same account as Issues)
       </td>
     </tr>
     <tr>
