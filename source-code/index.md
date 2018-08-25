@@ -292,14 +292,20 @@ exists and can be run, the APIs are likely to change.
 - [ui-finance](https://github.com/folio-org/ui-finance)
   -- Stripes UI module: management of ledgers, funds, and budgets.
 
+- [ui-servicepoints](https://github.com/folio-org/ui-servicepoints)
+  -- Stripes UI module: Service Points handler.
+
 - [ui-vendors](https://github.com/folio-org/ui-vendors)
   -- Stripes UI module: Vendors.
 
 - [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
-  -- Stripes UI plugin: User-finder.
+  -- Stripes UI plugin: User finder.
 
 - [ui-plugin-find-instance](https://github.com/folio-org/ui-plugin-find-instance)
-  -- Stripes UI plugin: Instance-finder.
+  -- Stripes UI plugin: Instance finder.
+
+- [ui-plugin-find-vendor](https://github.com/folio-org/ui-plugin-find-vendor)
+  -- Stripes UI plugin: Vendor finder.
 
 - [ui-trivial](https://github.com/folio-org/ui-trivial)
   -- Stripes UI module: example application.

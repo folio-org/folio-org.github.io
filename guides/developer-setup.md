@@ -49,6 +49,9 @@ Occasionally it becomes necessary to specify minimum versions of some tools:
 
 * curl -- Many modules provide examples as curl requests. Alternatively those examples could be used with Postman via "import".
 
+* Clone the [folio-tools](https://github.com/folio-org/folio-tools) repository parallel to your other clones.
+This provides various helper tools, for example the "lint-raml" to [use raml-cop to assess RAML, schema, and examples](/guides/raml-cop/).
+
 ## Configuration for repository usage
 
 FOLIO utilizes the Nexus OSS Repository Manager to host Maven artifacts and NPM packages for FOLIO projects.
