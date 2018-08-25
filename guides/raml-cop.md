@@ -22,6 +22,9 @@ npm install -g raml-cop
 
 Do that again occasionally to keep it up-to-date. Its package.json is well-configured so that it regularly updates its dependencies, especially raml-1-parser etc.
 
+(**NOTE**: 2018-08-25: For raml-1.0 need to [downgrade](https://issues.folio.org/browse/RMB-227) its raml-1-parser.
+The lint-raml below has already done that.)
+
 Integrate raml-cop with editors such as "Sublime Text".
 
 ## Usage
@@ -31,6 +34,7 @@ For basic use, run it on any RAML file (e.g. `raml-cop ramls/loan-storage.raml`)
 There are also processing tools to assist RAML and schema maintenance for any FOLIO repository.
 See the [folio-tools/lint-raml](https://github.com/folio-org/folio-tools/tree/master/lint-raml) directory.
 The scripts utilise raml-cop and some also conduct other tests.
+Use the Python script in preference.
 
 Those can also be run via a git pre-commit hook, e.g.:
 
