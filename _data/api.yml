@@ -168,10 +168,8 @@ mod-feesfines:
     directory: ramls
     files:
       - accounts
-      - chargeitem
       - comments
       - feefineactions
-      - feefinehistory
       - feefines
       - owners
       - payments
@@ -247,11 +245,15 @@ mod-orders-storage:
   - label: null
     directory: ramls
     files:
+      - acquisition_method
+      - activation_status
       - adjustment
       - alert
       - claim
       - cost
+      - currency
       - details
+      - encumbrance
       - eresource
       - fund_distribution
       - license
@@ -263,8 +265,9 @@ mod-orders-storage:
       - purchase_order
       - receipt_status
       - renewal
+      - reporting_code
       - source
-      - vendor
+      - vendor_detail
       - workflow_status
     ramlutil: ramls/raml-util
 
