@@ -27,8 +27,9 @@ See an example at
 ```
 buildMvn {
   publishModDescriptor = 'yes'
-  publishAPI = 'yes'
   mvnDeploy = 'yes'
+  publishAPI = 'yes'
+  runLintRamlCop = 'yes'
 
   doDocker = {
     buildJavaDocker {
@@ -50,6 +51,9 @@ It will be published to the FOLIO Module Descriptor registry.
 
 * `publishAPI` -- Generate and publish [API documentation](/reference/api/) from the module's
 [RAML](/guides/commence-a-module/#back-end-ramls) and Schema files.
+(Default: 'no')
+
+ * `runLintRamlCop` -- Run "[raml-cop](/guides/raml-cop/)" on back-end modules that have declared [RAML](/guides/commence-a-module/#back-end-ramls) in api.yml
 (Default: 'no')
 
 If we are creating and deploying a Docker image as part of the module's artifacts, specify

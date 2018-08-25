@@ -84,6 +84,10 @@ The `ramls` directory holds the RAML and Schema and examples files specific to t
 Normally there will also be the `ramls/raml-util` shared files as a git submodule of the [raml](https://github.com/folio-org/raml) repository.
 Some modules only have a `raml-util` because their files are all located in the shared space.
 
+Add an entry to the API docs [configuration](/faqs/how-to-configure-api-doc-generation/).
+Then set the Jenkinsfile [configuration](/guides/jenkinsfile/) `publishAPI` parameter
+and `runLintRamlCop` parameter, to enable these during continuous integration.
+
 See the [Primer for RAML and JSON Schema](/start/primer-raml/).
 
 ## Reference data {#back-end-reference-data}

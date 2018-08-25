@@ -34,7 +34,7 @@ For basic use, run it on any RAML file (e.g. `raml-cop ramls/loan-storage.raml`)
 There are also processing tools to assist RAML and schema maintenance for any FOLIO repository.
 See the [folio-tools/lint-raml](https://github.com/folio-org/folio-tools/tree/master/lint-raml) directory.
 The scripts utilise raml-cop and some also conduct other tests.
-Use the Python script in preference.
+Use the Python script in preference -- that is the one used during CI via the `runLintRamlCop` [Jenkinsfile](/guides/jenkinsfile) parameter.
 
 Those can also be run via a git pre-commit hook, e.g.:
 
