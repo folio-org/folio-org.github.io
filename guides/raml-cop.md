@@ -96,5 +96,5 @@ Need to use the actual pathname to the schema file located one directory above.
 >       "$ref": "../resultInfo.schema"
 ```
 
-Note: Do not use references with two sets of dot-dots.
+Note: For pre-RMBv20 do not use references with two sets of dot-dots.
 
