@@ -22,9 +22,6 @@ npm install -g raml-cop
 
 Do that again occasionally to keep it up-to-date. Its package.json is well-configured so that it regularly updates its dependencies, especially raml-1-parser etc.
 
-(**NOTE**: 2018-08-25: For raml-1.0 need to [downgrade](https://issues.folio.org/browse/RMB-227) its raml-1-parser.
-The lint-raml below has already done that.)
-
 Integrate raml-cop with editors such as "Sublime Text".
 
 ## Usage
@@ -99,5 +96,5 @@ Need to use the actual pathname to the schema file located one directory above.
 >       "$ref": "../resultInfo.schema"
 ```
 
-Note: Do not use references with two sets of dot-dots.
+Note: For pre-RMBv20 do not use references with two sets of dot-dots.
 
