@@ -109,6 +109,7 @@ mod-inventory-storage:
       - material-type
       - platform
       - service-point
+      - service-points-user
       - shelf-location
     ramlutil: ramls/raml-util
 
@@ -346,11 +347,6 @@ raml:
       - users
       - addressTypes
       - proxiesFor
-    ramlutil: .
-  - label: shared-mod-users-bl
-    directory: ramls/mod-users-bl
-    files:
-      - mod-users-bl
     ramlutil: .
   - label: shared-codex
     directory: ramls/codex
