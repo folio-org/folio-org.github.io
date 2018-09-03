@@ -261,6 +261,7 @@ mod-orders-storage:
       - location
       - order_format
       - order_type
+      - payment_status
       - physical
       - po_line
       - purchase_order
@@ -317,6 +318,7 @@ edge-orders:
 raml-module-builder:
   - label: domain-models-api-interfaces
     directory: domain-models-api-interfaces/ramls
+    version1: true
     files:
       - admin
       - jobs
