@@ -85,6 +85,14 @@ See [release procedures](/guidelines/release-procedures/).
 
 Other Jenkins automation jobs exist as well for test deployments to AWS EC2 instances.
 
+## Monitoring and performance
+
+Various facilities are available:
+
+* [Performance report](https://jenkins-aws.indexdata.com/job/Automation/job/folio-perf-test/) to monitor throughput, response times, error rates, etc.
+The tests are configured in the [folio-perf-test](https://github.com/folio-org/folio-perf-test) repository, and utilise Apache JMeter.
+Runs once per day.
+
 ## Nexus Repository Manager
 
 FOLIO utilizes the Nexus OSS Repository Manager to host [Maven artifacts and
