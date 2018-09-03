@@ -88,11 +88,15 @@ Add an entry to the API docs [configuration](/faqs/how-to-configure-api-doc-gene
 Then set the Jenkinsfile [configuration](/guides/jenkinsfile/) `publishAPI` parameter
 and `runLintRamlCop` parameter, to enable these during continuous integration.
 
+The reference [API documentation](/reference/api/) is generated from these files. Provide a clear "description" field for each endpoint.
+
 See the [Primer for RAML and JSON Schema](/start/primer-raml/).
 
 ## API schema {#back-end-api-schema}
 
 The `ramls` directory holds the related schema files.
+
+The reference [API documentation](/reference/api/) is generated from these files. Provide a clear "description" field for each of the schema properties.
 
 ## Database schema {#back-end-database-schema}
 
