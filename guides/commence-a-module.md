@@ -90,6 +90,13 @@ and `runLintRamlCop` parameter, to enable these during continuous integration.
 
 See the [Primer for RAML and JSON Schema](/start/primer-raml/).
 
+## Database schema {#back-end-database-schema}
+
+The DB schema defines this module's tables, indexes, joins, etc.
+It is located at `src/main/resources/templates/db_scripts/schema.json`
+
+When SQL scripts are necessary, they are also stored in that `db_scripts` directory.
+
 ## Reference data {#back-end-reference-data}
 
 The optional `reference-data` directory can hold data required for [sample data](#back-end-sample-data) to refer to.
