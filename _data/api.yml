@@ -201,6 +201,13 @@ mod-tags:
       - tags
     ramlutil: ramls/raml-util
 
+mod-template-engine:
+  - label: null
+    directory: ramls
+    files:
+      - template-engine
+    ramlutil: ramls/raml-util
+
 mod-kb-ebsco:
   - label: null
     directory: ramls
