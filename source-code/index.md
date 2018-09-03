@@ -167,6 +167,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-tags](https://github.com/folio-org/mod-tags)
   -- Central list of tags that can be assigned to various objects.
 
+- [mod-template-engine](https://github.com/folio-org/mod-template-engine)
+  -- Stores templates and generates files by using them.
+
 - [mod-vendors](https://github.com/folio-org/mod-vendors)
   -- Persistent storage of vendor data.
 
@@ -319,6 +322,9 @@ exists and can be run, the APIs are likely to change.
 
 - [okapi-stripes](https://github.com/folio-org/okapi-stripes)
   -- Server-side module for generating UIs based on Stripes.
+
+- [platform-core](https://github.com/folio-org/platform-core)
+  -- Stripes platform: Core.
 
 - [stripes-demo-platform](https://github.com/folio-org/stripes-demo-platform)
   -- Stripes platform for building the demo site.
