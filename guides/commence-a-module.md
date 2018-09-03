@@ -90,6 +90,10 @@ and `runLintRamlCop` parameter, to enable these during continuous integration.
 
 See the [Primer for RAML and JSON Schema](/start/primer-raml/).
 
+## API schema {#back-end-api-schema}
+
+The `ramls` directory holds the related schema files.
+
 ## Database schema {#back-end-database-schema}
 
 The DB schema defines this module's tables, indexes, joins, etc.
