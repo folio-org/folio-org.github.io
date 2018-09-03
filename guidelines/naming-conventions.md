@@ -14,6 +14,8 @@ Note that some early modules did not follow some aspects of these naming schemes
 
 Choose names carefully, as there are various ramifications to later changing that.
 
+The guide to [commence a new module](/guides/commence-a-module/) explains a typical directory layout and standard filenames.
+
 ## Module names
 
 Each module has its own git repository. The name uses the following scheme with a consistent prefix and dash-separated words:
