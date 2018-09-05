@@ -84,6 +84,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-login-saml](https://github.com/folio-org/mod-login-saml)
   -- Handles SAML login.
 
+- [mod-password-validator](https://github.com/folio-org/mod-password-validator)
+  -- Performs password validation and stores validation rules for specified tenant.
+
 - [mod-permissions](https://github.com/folio-org/mod-permissions)
   -- Handles permissions and permissions/user associations.
 
