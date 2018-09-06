@@ -17,7 +17,7 @@ This document summarises the release procedures for FOLIO projects.
  * [jenkins](https://jenkins-aws.indexdata.com/job/folio-org/) Log in!
  * [GitHub](https://github.com/folio-org): Merge release branch to master. Release notes!
  * [Jira](https://issues.folio.org): Mark as released. Add next versions.
- * Announce on #general
+ * [Slack](https://folio-project.slack.com/) Announce on `#general`
 
 ## Introduction
 
