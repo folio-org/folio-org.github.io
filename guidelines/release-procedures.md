@@ -8,6 +8,19 @@ menuTopTitle: Guidelines
 
 This document summarises the release procedures for FOLIO projects.
 
+## TL;DR;
+```
+git checkout -b "release-X.Y.Z"
+vi NEWS.md
+git commit -m "Update NEWS" NEWS.md
+mvn -DautoVersionSubmodules=true release:clean release:prepare
+git push && git push --tags
+[jenkins](https://jenkins-aws.indexdata.com/job/folio-org/) Log in!
+Merge release branch to master
+Release notes in GitHub and Jira, add new versions
+Announce on #general
+```
+
 ## Introduction
 
 There are separate notes about the
@@ -123,8 +136,7 @@ Assuming there are no build errors, then you are ready to push your changes to
 GitHub.
 
 ```
-git push
-git push --tags
+git push && git push --tags
 ```
 
 ### Optional: Update any scripts and descriptors for next development release
