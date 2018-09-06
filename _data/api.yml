@@ -303,6 +303,13 @@ mod-gobi:
       - gobi
     ramlutil: ramls/raml-util
 
+mod-audit-storage:
+  - label: null
+    directory: ramls
+    files:
+      - audit-data
+    ramlutil: ramls/raml-util
+
 edge-patron:
   - label: null
     directory: ramls
