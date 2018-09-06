@@ -16,8 +16,8 @@ git commit -m "Update NEWS" NEWS.md
 mvn -DautoVersionSubmodules=true release:clean release:prepare
 git push && git push --tags
 [jenkins](https://jenkins-aws.indexdata.com/job/folio-org/) Log in!
-Merge release branch to master
-Release notes in GitHub and Jira, add new versions
+[GitHub](https://github.com/folio-org): Merge release branch to master. Release notes!
+[Jira](https://issues.folio.org): Mark as released. Add next versions.
 Announce on #general
 ```
 
