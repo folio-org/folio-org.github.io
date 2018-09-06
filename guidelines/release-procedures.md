@@ -8,18 +8,16 @@ menuTopTitle: Guidelines
 
 This document summarises the release procedures for FOLIO projects.
 
-## TL;DR;
-```
-git checkout -b "release-X.Y.Z"
-vi NEWS.md
-git commit -m "Update NEWS" NEWS.md
-mvn -DautoVersionSubmodules=true release:clean release:prepare
-git push && git push --tags
-[jenkins](https://jenkins-aws.indexdata.com/job/folio-org/) Log in!
-[GitHub](https://github.com/folio-org): Merge release branch to master. Release notes!
-[Jira](https://issues.folio.org): Mark as released. Add next versions.
-Announce on #general
-```
+## Quick summary
+ * `git checkout -b "release-X.Y.Z"`
+ * `vi NEWS.md`
+ * `git commit -m "Update NEWS" NEWS.md`
+ * `mvn -DautoVersionSubmodules=true release:clean release:prepare`
+ * `git push && git push --tags`
+ * [jenkins](https://jenkins-aws.indexdata.com/job/folio-org/) Log in!
+ * [GitHub](https://github.com/folio-org): Merge release branch to master. Release notes!
+ * [Jira](https://issues.folio.org): Mark as released. Add next versions.
+ * Announce on #general
 
 ## Introduction
 
