@@ -309,7 +309,7 @@ mod-gobi:
       - gobi
     ramlutil: ramls/raml-util
 
-mod-audit-storage:
+mod-audit:
   - label: null
     directory: ramls
     files:
