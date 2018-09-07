@@ -8,7 +8,18 @@ menuTopTitle: Guidelines
 
 This document summarises the release procedures for FOLIO projects.
 
-## Quick summary
+## Introduction
+
+There are separate notes about the
+[FOLIO version-numbering scheme](/guidelines/contributing/#version-numbers)
+and the [Build, test, and deployment infrastructure](/guides/automation/).
+
+## Maven-based modules
+
+The procedure is outlined here for "Okapi" and is similar for other back-end Maven-based modules.
+
+### Quick summary {#summary-mvn}
+
  * `git checkout -b "release-X.Y.Z"`
  * `vi NEWS.md`
  * `git commit -m "Update NEWS" NEWS.md`
@@ -19,15 +30,7 @@ This document summarises the release procedures for FOLIO projects.
  * [Jira](https://issues.folio.org): Mark as released. Add next versions.
  * [Slack](https://folio-project.slack.com/) Announce on `#general`
 
-## Introduction
-
-There are separate notes about the
-[FOLIO version-numbering scheme](/guidelines/contributing/#version-numbers)
-and the [Build, test, and deployment infrastructure](/guides/automation/).
-
-## Maven-based modules
-
-The procedure is outlined here for "Okapi" and is similar for other back-end Maven-based modules.
+Refer to the following sections for more detail.
 
 ### Once: Ensure POM declarations
 
