@@ -188,6 +188,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-audit](https://github.com/folio-org/mod-audit)
   -- Implements Okapi PRE and POST filters to capture audit data.
 
+- [mod-audit-storage](https://github.com/folio-org/mod-audit-storage)
+  -- Storage module for Audit data.
+
 - [mod-pg-embed](https://github.com/folio-org/mod-pg-embed)
   -- Helper module to start embedded Postgres.
   Helper for developers that starts the "embedded" postgres server and sets up the environment so that other modules can locate the database.
