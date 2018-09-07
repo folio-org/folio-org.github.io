@@ -96,6 +96,10 @@ and active=="true" sortby personal.lastName personal.firstName barcode
 
 For other relevant CQL examples see the first two items above, and the [API docs](/reference/api/), and the debug output for tests in each backend module.
 
+#### CRUD
+
+The basic functions of persistent storage: Create, Read, Update, Delete ([CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)).
+
 #### Docker
 
 [Docker](https://www.docker.com) is a platform for managing software
