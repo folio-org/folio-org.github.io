@@ -8,6 +8,9 @@ menuTopTitle: Guidelines
 
 This document summarises the release procedures for FOLIO projects.
 
+* [Maven-based modules](#maven-based-modules)
+* [Stripes and UI modules](https://github.com/folio-org/stripes-core/blob/master/doc/release-procedure.md)
+
 ## Introduction
 
 There are separate notes about the
