@@ -2,6 +2,8 @@
 #
 # Used by reference/api/index.md and folio-tools/generate-api-docs and folio-tools/lint-raml
 #
+# https://dev.folio.org/faqs/how-to-configure-api-doc-generation/
+#
 # Leave the two tables (raml-module-builder, raml) at the bottom.
 ---
 okapi:
