@@ -147,6 +147,7 @@ mod-codex-inventory:
 
 mod-codex-mux:
   - label: null
+    version1: true
     directory: ramls/raml-util/ramls/codex
     files:
       - codex
@@ -191,6 +192,7 @@ mod-feesfines:
 
 mod-notes:
   - label: null
+    version1: true
     directory: ramls
     files:
       - note
@@ -198,6 +200,7 @@ mod-notes:
 
 mod-notify:
   - label: null
+    version1: true
     directory: ramls
     files:
       - notify
@@ -205,6 +208,7 @@ mod-notify:
 
 mod-tags:
   - label: null
+    version1: true
     directory: ramls
     files:
       - tags
@@ -219,8 +223,8 @@ mod-template-engine:
 
 mod-kb-ebsco:
   - label: null
-    directory: ramls
     version1: true
+    directory: ramls
     files:
       - eholdings
     excludes:
@@ -340,8 +344,8 @@ edge-orders:
 
 raml-module-builder:
   - label: domain-models-api-interfaces
-    directory: domain-models-api-interfaces/ramls
     version1: true
+    directory: domain-models-api-interfaces/ramls
     files:
       - admin
       - jobs
