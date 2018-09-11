@@ -15,11 +15,9 @@ There are two components to the Users app: the Stripes UI component and the Okap
 We will start first with the Stripes UI component.
 
 <div class="attention">
-Note: The Stripes package.json is out-of-date. Also it might need the deployment of all user-related backend modules.
+Note: The contents of this page may be out of date.
 See <a href="https://issues.folio.org/browse/FOLIO-1348">FOLIO-1348</a>.
 </div>
-
-So skip ahead to the section about [Adding the mod-users module](#add-the-users-app-okapi-module-to-the-okapi-gateway).
 
 ## Add the Users app UI component to the Stripes UI Server
 Remember in $FOLIO_ROOT/stripes-tutorial-platform we have two configuration files: `package.json` and `stripes.config.js`.
@@ -36,8 +34,8 @@ The revised file should look like:
     "start": "stripes dev stripes.config.js"
   },
   "dependencies": {
-    "@folio/stripes-core": "^1.6.0",
-    "@folio/users": "^2.2.0",
+    "@folio/stripes-core": "^2.11.0",
+    "@folio/users": "^2.13.0",
     "@folio/trivial": "^0.0.2-test"
   }
 }
@@ -349,4 +347,3 @@ $ curl -i -X GET -H "Content-Type:application/json" \
 
 A more useful set of users is available when using the Vagrant boxes,
 (e.g. folio-stable) as shown in the neext lesson.
-
