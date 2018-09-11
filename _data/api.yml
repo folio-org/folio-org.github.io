@@ -24,6 +24,16 @@ mod-users:
       - proxiesFor
     ramlutil: null
     shared: ramls/mod-users
+# 201809: Upcoming new config to replace the above entry
+#mod-users:
+#  - label: null
+#    directory: ramls
+#    files:
+#      - groups
+#      - users
+#      - addressTypes
+#      - proxiesFor
+#    ramlutil: ramls/raml-util
 
 mod-users-bl:
   - label: null
@@ -42,6 +52,14 @@ mod-permissions:
       - permissions
     ramlutil: null
     shared: ramls/mod-permissions
+# 201809: Upcoming new config to replace the above entry
+#mod-permissions:
+#  - label: null
+#    directory: ramls
+#    files:
+#      - tenantPermissions
+#      - permissions
+#    ramlutil: ramls/raml-util
 
 mod-login:
   - label: null
@@ -50,6 +68,13 @@ mod-login:
       - login
     ramlutil: null
     shared: ramls/mod-login
+# 201809: Upcoming new config to replace the above entry
+#mod-login:
+#  - label: null
+#    directory: ramls
+#    files:
+#      - login
+#    ramlutil: ramls/raml-util
 
 mod-login-saml:
   - label: null
@@ -139,6 +164,7 @@ mod-codex-ekb:
 
 mod-codex-inventory:
   - label: null
+    version1: true
     directory: ramls/raml-util/ramls/codex
     files:
       - codex
