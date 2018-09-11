@@ -19,8 +19,6 @@ Note: The contents of this page may be out of date.
 See <a href="https://issues.folio.org/browse/FOLIO-1348">FOLIO-1348</a>.
 </div>
 
-So skip ahead to the section about [Adding the mod-users module](#add-the-users-app-okapi-module-to-the-okapi-gateway).
-
 ## Add the Users app UI component to the Stripes UI Server
 Remember in $FOLIO_ROOT/stripes-tutorial-platform we have two configuration files: `package.json` and `stripes.config.js`.
 Each will need changes to add the Users app.
