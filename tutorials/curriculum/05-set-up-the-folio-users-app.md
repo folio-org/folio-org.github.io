@@ -15,7 +15,7 @@ There are two components to the Users app: the Stripes UI component and the Okap
 We will start first with the Stripes UI component.
 
 <div class="attention">
-Note: The Stripes package.json is out-of-date. Also it might need the deployment of all user-related backend modules.
+Note: The contents of this page may be out of date.
 See <a href="https://issues.folio.org/browse/FOLIO-1348">FOLIO-1348</a>.
 </div>
 
