@@ -36,8 +36,8 @@ The revised file should look like:
     "start": "stripes dev stripes.config.js"
   },
   "dependencies": {
-    "@folio/stripes-core": "^1.6.0",
-    "@folio/users": "^2.2.0",
+    "@folio/stripes-core": "^2.11.0",
+    "@folio/users": "^2.13.0",
     "@folio/trivial": "^0.0.2-test"
   }
 }
@@ -349,4 +349,3 @@ $ curl -i -X GET -H "Content-Type:application/json" \
 
 A more useful set of users is available when using the Vagrant boxes,
 (e.g. folio-stable) as shown in the neext lesson.
-
