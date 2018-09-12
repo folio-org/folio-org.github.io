@@ -18,3 +18,48 @@ The quality of the generated documentation depends on its input.
 
 Some RAML issues can cause the CI system to fail.
 It is available to run locally by cloning [folio-tools](https://github.com/folio-org/folio-tools).
+
+## Configuration file format
+
+Each RAML-related repository has an entry in the [api.yml](https://github.com/folio-org/folio-org.github.io/blob/master/_data/api.yml) file.
+A typical one is `mod-circulation-storage`.
+To add a new entry, copy the "default" one shown at the top.
+
+The order of entries in this file is the order of display at the [API documentation](/reference/api/).
+
+### label
+
+Usually an entry has one set of documents, so the `label` is null.
+Otherwise use this to add a text label to distinguish each set.
+
+### directory
+
+The filesystem path of the directory holding the RAML files.
+Relative to the top-level of the repository.
+Usually this will be "ramls".
+
+### files
+
+The basename of the set of files to be processed.
+The order is the order of display in the table.
+
+Files that are not listed here will still be processed to generate their documentation.
+However they will only be shown in the table if they are listed here, as the website documentation system needs to know.
+
+### ramlutil
+
+The filesystem path of the directory holding the shared "raml-util" git submodule.
+Relative to the top-level of the repository.
+Usually this will be "ramls/raml-util".
+
+### excludes
+
+The system will search for RAML files in and below the specific `directory`.
+Use this field to specify directories that must not be traversed.
+The default exclusions are `["raml-util", "rtypes", "traits", "node_modules"]` and the additional excludes are appended.
+
+### version1
+
+Set `version1` to `true` if this is known to be RAML-1.0 version.
+Default is false.
+This enables the API docs table to exclude the "view-2" column as explained in the [usage notes](/reference/api/#usage-notes).
