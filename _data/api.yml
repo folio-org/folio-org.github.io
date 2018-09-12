@@ -6,6 +6,15 @@
 #
 # Leave the two tables (raml-module-builder, raml) at the bottom.
 ---
+# default: This is the standard configuration.
+# It is used by the CI jobs if config is missing.
+default:
+  - label: null
+    directory: ramls
+    files:
+      - dummy
+    ramlutil: ramls/raml-util
+
 okapi:
   - label: null
     directory: okapi-core/src/main/raml
@@ -132,6 +141,7 @@ mod-inventory-storage:
       - instance-storage
       - instance-format
       - instance-type
+      - instance-relationship-type
       - item-storage
       - classification-type
       - contributor-type

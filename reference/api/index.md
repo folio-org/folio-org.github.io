@@ -24,6 +24,7 @@ See [usage notes](#usage-notes) below.
 {% assign noteRaml = 'This is the shared RAML repository. Refer to the relevant table above, as each module uses a certain version of this as their "raml-util" directory.' %}
 
 {% for repo in site.data.api %}
+{% if repo[0] == 'default' %} {% continue %} {% endif %}
 <h2 id="{{ repo[0] }}"> {{ repo[0] }} </h2>
 {% if repo[0] == 'raml' %}<p>{{ noteRaml }}</p>{% endif %}
 {% if repo[0] == 'raml' %}
