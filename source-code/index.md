@@ -186,10 +186,7 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Allows GOBI® (Global Online Bibliographic Information) initiated orders to be fulfilled by FOLIO.
 
 - [mod-audit](https://github.com/folio-org/mod-audit)
-  -- Implements Okapi PRE and POST filters to capture audit data.
-
-- [mod-audit-storage](https://github.com/folio-org/mod-audit-storage)
-  -- Storage module for Audit data.
+  -- Manage audit data.
 
 - [mod-pg-embed](https://github.com/folio-org/mod-pg-embed)
   -- Helper module to start embedded Postgres.
