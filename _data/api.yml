@@ -141,6 +141,7 @@ mod-inventory-storage:
       - instance-storage
       - instance-format
       - instance-type
+      - instance-relationship-type
       - item-storage
       - classification-type
       - contributor-type
