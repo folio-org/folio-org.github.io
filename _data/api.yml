@@ -25,24 +25,14 @@ okapi:
 
 mod-users:
   - label: null
-    directory: raml-util/ramls/mod-users
+    version1: true
+    directory: ramls
     files:
       - groups
       - users
       - addressTypes
       - proxiesFor
-    ramlutil: null
-    shared: ramls/mod-users
-# 201809: Upcoming new config to replace the above entry
-#mod-users:
-#  - label: null
-#    directory: ramls
-#    files:
-#      - groups
-#      - users
-#      - addressTypes
-#      - proxiesFor
-#    ramlutil: ramls/raml-util
+    ramlutil: ramls/raml-util
 
 mod-users-bl:
   - label: null
