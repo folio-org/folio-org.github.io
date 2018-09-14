@@ -380,24 +380,11 @@ raml:
     files:
       - tenant
     ramlutil: .
-  - label: shared-mod-login
-    directory: ramls/mod-login
-    files:
-      - login
-    ramlutil: .
   - label: shared-mod-permissions
     directory: ramls/mod-permissions
     files:
       - tenantPermissions
       - permissions
-    ramlutil: .
-  - label: shared-mod-users
-    directory: ramls/mod-users
-    files:
-      - groups
-      - users
-      - addressTypes
-      - proxiesFor
     ramlutil: .
   - label: shared-codex
     directory: ramls/codex
