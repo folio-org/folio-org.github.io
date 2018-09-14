@@ -62,18 +62,10 @@ mod-permissions:
 
 mod-login:
   - label: null
-    directory: raml-util/ramls/mod-login
+    directory: ramls
     files:
       - login
-    ramlutil: null
-    shared: ramls/mod-login
-# 201809: Upcoming new config to replace the above entry
-#mod-login:
-#  - label: null
-#    directory: ramls
-#    files:
-#      - login
-#    ramlutil: ramls/raml-util
+    ramlutil: ramls/raml-util
 
 mod-login-saml:
   - label: null
