@@ -188,9 +188,10 @@ mod-finance:
     directory: ramls
     files:
       - budget
+      - encumbrance
       - fiscal_year
+      - fund
       - fund_distribution
-      - funds
       - ledger
       - tag
       - transaction
