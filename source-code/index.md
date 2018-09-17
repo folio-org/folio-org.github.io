@@ -188,6 +188,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-audit](https://github.com/folio-org/mod-audit)
   -- Manage audit data.
 
+- [mod-audit-filter](https://github.com/folio-org/mod-audit-filter)
+  -- Implements Okapi PRE and POST filters to capture audit data.
+
 - [mod-pg-embed](https://github.com/folio-org/mod-pg-embed)
   -- Helper module to start embedded Postgres.
   Helper for developers that starts the "embedded" postgres server and sets up the environment so that other modules can locate the database.
@@ -217,10 +220,6 @@ exists and can be run, the APIs are likely to change.
 - [stripes-core](https://github.com/folio-org/stripes-core)
   -- The UI framework.
   Includes extensive documentation.
-
-- [stripes-sample-platform](https://github.com/folio-org/stripes-sample-platform)
-  -- Configuration for a sample platform and to run a local
-  Stripes UI development server.
 
 - [stripes-components](https://github.com/folio-org/stripes-components)
   -- A component library for Stripes.
@@ -326,11 +325,24 @@ exists and can be run, the APIs are likely to change.
 - [okapi-stripes](https://github.com/folio-org/okapi-stripes)
   -- Server-side module for generating UIs based on Stripes.
 
+- [platform-complete](https://github.com/folio-org/platform-complete)
+  -- Stripes platform: Complete.
+
 - [platform-core](https://github.com/folio-org/platform-core)
   -- Stripes platform: Core.
 
+- [folio-testing-platform](https://github.com/folio-org/folio-testing-platform)
+  -- Stripes platform: Testing.
+
+- [stripes-sample-platform](https://github.com/folio-org/stripes-sample-platform)
+  -- Configuration for a sample platform and to run a local
+  Stripes UI development server.
+
 - [stripes-demo-platform](https://github.com/folio-org/stripes-demo-platform)
   -- Stripes platform for building the demo site.
+
+- [stripes-testing](https://github.com/folio-org/stripes-testing)
+  -- Toolkit for running tests against Stripes UI modules and platforms.
 
 - [stripes-experiments](https://github.com/folio-org/stripes-experiments)
   -- Testing ground for prototype modules that may form part of
