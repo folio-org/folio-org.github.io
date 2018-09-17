@@ -48,20 +48,22 @@ This is a typical directory layout, excluding the general boilerplate files and 
 │   └── ModuleDescriptor-template.json
 ├── doc
 │   ├── various.md
-├── docker
-│   └── docker-entrypoint.sh
 ├── ramls
 │   └── raml-util
 ├── reference-data
-│   └── vendor-categories
+│   └── instance-types
+│   └── loan-types
+│   └── ...
 ├── sample-data
-│   └── vendors
+│   └── instances
+│   └── items
+│   └── ...
 ├── src
 ```
 
-## Docker {#back-end-docker}
+## Dockerfile {#back-end-dockerfile}
 
-The `Dockerfile` and `docker` directory with its `docker-entrypoint.sh` file.
+The `Dockerfile`.
 
 ## Jenkinsfile {#back-end-jenkinsfile}
 
@@ -118,6 +120,8 @@ It should be in the format expected by the module's relevant endpoint for POSTin
 This makes it easy to write a script to load the sample data using the module's web service API.
 
 If the sample data refers to [reference data](#back-end-reference-data), those data can be defined in the `reference-data` directory.
+
+See example data at [mod-inventory-storage](https://github.com/folio-org/mod-inventory-storage).
 
 # Front-end modules
 
