@@ -48,8 +48,6 @@ This is a typical directory layout, excluding the general boilerplate files and 
 │   └── ModuleDescriptor-template.json
 ├── doc
 │   ├── various.md
-├── docker
-│   └── docker-entrypoint.sh
 ├── ramls
 │   └── raml-util
 ├── reference-data
@@ -59,9 +57,9 @@ This is a typical directory layout, excluding the general boilerplate files and 
 ├── src
 ```
 
-## Docker {#back-end-docker}
+## Dockerfile {#back-end-dockerfile}
 
-The `Dockerfile` and `docker` directory with its `docker-entrypoint.sh` file.
+The `Dockerfile`.
 
 ## Jenkinsfile {#back-end-jenkinsfile}
 
