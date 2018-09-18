@@ -23,17 +23,36 @@ The procedure is outlined here for "Okapi" and is similar for other back-end Mav
 
 ### Quick summary {#summary-mvn}
 
- * `git checkout -b "release-X.Y.Z"`
+ * `git checkout -b "tmp-release-X.Y.Z"`
  * `vi NEWS.md`
  * `git commit -m "Update NEWS" NEWS.md`
  * `mvn -DautoVersionSubmodules=true release:clean release:prepare`
  * `git push && git push --tags`
  * [jenkins](https://jenkins-aws.indexdata.com/job/folio-org/) Log in!
- * [GitHub](https://github.com/folio-org): Merge release branch to master. Release notes!
+ * [GitHub](https://github.com/folio-org): Merge temporary release branch to master. Release notes!
  * [Jira](https://issues.folio.org): Mark as released. Add next versions.
  * [Slack](https://folio-project.slack.com/) Announce on `#general`
 
+`tmp-release-X.Y.Z` is a temporary branch needed because master is usually protected
+from straight commits. It should be removed after the release.
+If you are working on an unprotected bug fix branch you don't need a temporary branch.
+
 Refer to the following sections for more detail.
+
+### Bug fix releases
+
+Generally we want bug fix releases to occur in separate branches with *only* bug fixes (not to be confused with
+temporary release branches). For this purpose, we must create a long-lived release branch. We propose naming scheme
+`b` followed by the major and minor versions. Eg `b2.17` which will include all bug fixes for version 2.17, eg
+2.17.1 , 2.17.2, .. In order to avoid lowering down the version in the pom file, you can branch off the
+bug fix branch at the point of `[maven-release-plugin] prepare release  .. ` . For example at the point of `2.17.0`
+but before the pom file specifies `2.18.0-SNAPSHOT`.
+
+### Major / minor releases
+
+Note that `master` represent *both* new features and bug fixes. If there are important new features to be added
+while holding back incompatible releases, a feature branch `b2` could be created, but it is probably not worth the effort
+except in very special cases.
 
 ### Once: Ensure POM declarations
 
@@ -94,11 +113,15 @@ Commit all changes to the POM file.
 For the issues that are associated with this release, ensure that they reflect reality,
 have the relevant `Fix Version` parameter, and are closed.
 
-### Make a release branch
+In Jira you'll generally have at most 3 unreleased versions.. Next major, next minor and next bug fix release.
+Unreleased versions should be *removed*. It is natural that there will be some versions that are not
+released anyway.
+
+### Make a temporary release branch
 If you do not have commit access to the master branch (and even if you do), you
 can make the release on a branch.
 ```
-git checkout -b "release-X.Y.Z"
+git checkout -b "tmp-release-X.Y.Z"
 ```
 
 ### Prepare the news document
@@ -109,6 +132,11 @@ Take extra care with spelling and readability.
 ```
 git commit -m "Update NEWS" NEWS.md
 ```
+
+Only the release manager should ever have to write to the NEWS file. With Jira versions and Git log,
+he/she can decide what happened in this branch.
+
+(if everybody writes to NEWS along the way, there will be a conflict for ALL merges)
 
 ### Optional: Update any scripts and descriptors for release version
 
@@ -171,7 +199,7 @@ For Okapi and RMB, select the [Release Jobs](https://jenkins-aws.indexdata.com/j
 [okapi-release](https://jenkins-aws.indexdata.com/job/Release_Jobs/job/okapi-release/)).
 Select the "Build with Parameters" link in the left-hand panel, then choose the new release tag from the list, and then "Build" to trigger it.
 
-### Merge the release branch into master
+### Merge the temporary release branch into master
 Go to GitHub and make a pull request for the release branch you just pushed.
 Wait for all the tests to pass and merge the pull request.
 
