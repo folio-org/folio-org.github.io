@@ -97,16 +97,14 @@ Maven 'deploy' phase will have the following specified in the project's top-leve
   </distributionManagement>
 
   <scm>
-    <url>https://github.com/folio-org/PROJECT_NAME</url>
-    <connection>scm:git:git://github.com/folio-org/PROJECT_NAME.git</connection>
-    <developerConnection>scm:git:git@github.com:folio-org/PROJECT_NAME.git</developerConnection>
+    <url>https://github.com/folio-org/${artifactId}</url>
+    <connection>scm:git:git://github.com/folio-org/${artifactId}.git</connection>
+    <developerConnection>scm:git:git@github.com:folio-org/${artifactId}.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 ```
 
-Replace 'PROJECT_NAME' above with the name of the appropriate GitHub repository.
 Commit all changes to the POM file.
-
 
 ### Ensure that Jira issues are ready
 
