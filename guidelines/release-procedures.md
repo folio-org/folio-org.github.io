@@ -28,10 +28,10 @@ The procedure is outlined here for "Okapi" and is similar for other back-end Mav
  * `git commit -m "Update NEWS" NEWS.md`
  * `mvn -DautoVersionSubmodules=true release:clean release:prepare`
  * `git push && git push --tags`
- * [jenkins](https://jenkins-aws.indexdata.com/job/folio-org/) Log in!
+ * [Jenkins](https://jenkins-aws.indexdata.com/job/folio-org/): Log in!
  * [GitHub](https://github.com/folio-org): Merge temporary release branch to master. Release notes!
  * [Jira](https://issues.folio.org): Mark as released. Add next versions.
- * [Slack](https://folio-project.slack.com/) Announce on `#general`
+ * [Slack](https://folio-project.slack.com/): Announce on `#general`
 
 `tmp-release-X.Y.Z` is a temporary branch needed because master is usually protected
 from straight commits. It should be removed after the release.
@@ -42,7 +42,7 @@ Refer to the following sections for more detail.
 ### Bug fix releases
 
 Generally we want bug fix releases to occur in separate branches with *only* bug fixes (not to be confused with
-temporary release branches). For this purpose, we must create a long-lived release branch. We propose naming scheme
+temporary release branches). For this purpose, we must create a long-lived release branch. We use the naming scheme
 `b` followed by the major and minor versions, for example `b2.17` which will include all bug fixes for version 2.17
 (so for 2.17.1 and 2.17.2 and ...). In order to avoid lowering down the version in the pom file, you can branch off the
 bug fix branch at the point of `[maven-release-plugin] prepare release  .. ` . For example at the point of `2.17.0`
@@ -97,16 +97,14 @@ Maven 'deploy' phase will have the following specified in the project's top-leve
   </distributionManagement>
 
   <scm>
-    <url>https://github.com/folio-org/PROJECT_NAME</url>
-    <connection>scm:git:git://github.com/folio-org/PROJECT_NAME.git</connection>
-    <developerConnection>scm:git:git@github.com:folio-org/PROJECT_NAME.git</developerConnection>
+    <url>https://github.com/folio-org/${artifactId}</url>
+    <connection>scm:git:git://github.com/folio-org/${artifactId}.git</connection>
+    <developerConnection>scm:git:git@github.com:folio-org/${artifactId}.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 ```
 
-Replace 'PROJECT_NAME' above with the name of the appropriate GitHub repository.
 Commit all changes to the POM file.
-
 
 ### Ensure that Jira issues are ready
 
@@ -192,12 +190,8 @@ or some combination of artifacts depending on the project.
 After preparing the release as explained above, the next step is done via the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
 Jenkins credentials utilize the Github authentication for FOLIO core developers, so ensure that you are logged in to GitHub to then enable login to Jenkins.
 
-For all modules except Okapi and RMB, select the [Github folio-org](https://jenkins-aws.indexdata.com/job/folio-org/) folder, then follow to the relevant job (e.g.
+Select the [Github folio-org](https://jenkins-aws.indexdata.com/job/folio-org/) folder, then follow to the relevant job (e.g.
 [mod-circulation](https://jenkins-aws.indexdata.com/job/folio-org/job/mod-circulation/)) and select the "Tags" tab. Select the new release version tag, then the "Build Now" link in the left-hand panel to trigger it.
-
-For Okapi and RMB, select the [Release Jobs](https://jenkins-aws.indexdata.com/job/Release_Jobs/) folder, then follow to the relevant job (e.g.
-[okapi-release](https://jenkins-aws.indexdata.com/job/Release_Jobs/job/okapi-release/)).
-Select the "Build with Parameters" link in the left-hand panel, then choose the new release tag from the list, and then "Build" to trigger it.
 
 ### Merge the temporary release branch into master
 Go to GitHub and make a pull request for the release branch you just pushed.

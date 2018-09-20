@@ -96,3 +96,15 @@ The special prefix `/_` is used to to distinguish the routing for the core endpo
 [Okapi internal web services](https://github.com/folio-org/okapi/blob/master/doc/guide.md#okapis-own-web-services)
 from the extension points provided by modules, e.g. `/_/proxy`
 
+## Release branches and tags
+
+Each release is tagged in git, with a name beginning with `v` and followed by the version number -- for example, `v2.3.5`.
+
+There are long-lived release branches, with a name beginning with `b` and followed by the major and minor version number -- for example, `b2.17`.
+
+See further information for
+[front-end](https://github.com/folio-org/stripes-core/blob/master/doc/release-procedure.md#version-numbers-branches-and-tags)
+and
+[back-end](/guidelines/release-procedures/#bug-fix-releases)
+modules.
+
