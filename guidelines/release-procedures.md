@@ -192,12 +192,8 @@ or some combination of artifacts depending on the project.
 After preparing the release as explained above, the next step is done via the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
 Jenkins credentials utilize the Github authentication for FOLIO core developers, so ensure that you are logged in to GitHub to then enable login to Jenkins.
 
-For all modules except Okapi and RMB, select the [Github folio-org](https://jenkins-aws.indexdata.com/job/folio-org/) folder, then follow to the relevant job (e.g.
+Select the [Github folio-org](https://jenkins-aws.indexdata.com/job/folio-org/) folder, then follow to the relevant job (e.g.
 [mod-circulation](https://jenkins-aws.indexdata.com/job/folio-org/job/mod-circulation/)) and select the "Tags" tab. Select the new release version tag, then the "Build Now" link in the left-hand panel to trigger it.
-
-For Okapi and RMB, select the [Release Jobs](https://jenkins-aws.indexdata.com/job/Release_Jobs/) folder, then follow to the relevant job (e.g.
-[okapi-release](https://jenkins-aws.indexdata.com/job/Release_Jobs/job/okapi-release/)).
-Select the "Build with Parameters" link in the left-hand panel, then choose the new release tag from the list, and then "Build" to trigger it.
 
 ### Merge the temporary release branch into master
 Go to GitHub and make a pull request for the release branch you just pushed.
