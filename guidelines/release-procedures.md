@@ -28,10 +28,10 @@ The procedure is outlined here for "Okapi" and is similar for other back-end Mav
  * `git commit -m "Update NEWS" NEWS.md`
  * `mvn -DautoVersionSubmodules=true release:clean release:prepare`
  * `git push && git push --tags`
- * [jenkins](https://jenkins-aws.indexdata.com/job/folio-org/) Log in!
+ * [Jenkins](https://jenkins-aws.indexdata.com/job/folio-org/): Log in!
  * [GitHub](https://github.com/folio-org): Merge temporary release branch to master. Release notes!
  * [Jira](https://issues.folio.org): Mark as released. Add next versions.
- * [Slack](https://folio-project.slack.com/) Announce on `#general`
+ * [Slack](https://folio-project.slack.com/): Announce on `#general`
 
 `tmp-release-X.Y.Z` is a temporary branch needed because master is usually protected
 from straight commits. It should be removed after the release.
@@ -42,7 +42,7 @@ Refer to the following sections for more detail.
 ### Bug fix releases
 
 Generally we want bug fix releases to occur in separate branches with *only* bug fixes (not to be confused with
-temporary release branches). For this purpose, we must create a long-lived release branch. We propose naming scheme
+temporary release branches). For this purpose, we must create a long-lived release branch. We use the naming scheme
 `b` followed by the major and minor versions, for example `b2.17` which will include all bug fixes for version 2.17
 (so for 2.17.1 and 2.17.2 and ...). In order to avoid lowering down the version in the pom file, you can branch off the
 bug fix branch at the point of `[maven-release-plugin] prepare release  .. ` . For example at the point of `2.17.0`
