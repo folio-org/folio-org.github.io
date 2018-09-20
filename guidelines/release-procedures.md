@@ -43,15 +43,15 @@ Refer to the following sections for more detail.
 
 Generally we want bug fix releases to occur in separate branches with *only* bug fixes (not to be confused with
 temporary release branches). For this purpose, we must create a long-lived release branch. We propose naming scheme
-`b` followed by the major and minor versions. Eg `b2.17` which will include all bug fixes for version 2.17, eg
-2.17.1 , 2.17.2, .. In order to avoid lowering down the version in the pom file, you can branch off the
+`b` followed by the major and minor versions, for example `b2.17` which will include all bug fixes for version 2.17
+(so for 2.17.1 and 2.17.2 and ...). In order to avoid lowering down the version in the pom file, you can branch off the
 bug fix branch at the point of `[maven-release-plugin] prepare release  .. ` . For example at the point of `2.17.0`
 but before the pom file specifies `2.18.0-SNAPSHOT`.
 
 ### Major / minor releases
 
-Note that `master` represent *both* new features and bug fixes. If there are important new features to be added
-while holding back incompatible releases, a feature branch `b2` could be created, but it is probably not worth the effort
+Note that `master` represents *both* new features and bug fixes. If there are important new features to be added
+while holding back incompatible releases, then a feature branch `b2` could be created, but it is probably not worth the effort
 except in very special cases.
 
 ### Once: Ensure POM declarations
@@ -113,7 +113,7 @@ Commit all changes to the POM file.
 For the issues that are associated with this release, ensure that they reflect reality,
 have the relevant `Fix Version` parameter, and are closed.
 
-In Jira you'll generally have at most 3 unreleased versions.. Next major, next minor and next bug fix release.
+In Jira you'll generally have at most 3 unreleased versions: Next major, next minor and next bug fix release.
 Unreleased versions should be *removed*. It is natural that there will be some versions that are not
 released anyway.
 
@@ -133,10 +133,10 @@ Take extra care with spelling and readability.
 git commit -m "Update NEWS" NEWS.md
 ```
 
-Only the release manager should ever have to write to the NEWS file. With Jira versions and Git log,
-he/she can decide what happened in this branch.
+Only the release manager should ever need to write to the NEWS file. Using Jira versions and Git log,
+they can decide what happened in this branch.
 
-(if everybody writes to NEWS along the way, there will be a conflict for ALL merges)
+(If everybody writes to NEWS along the way, there will be a conflict for ALL merges.)
 
 ### Optional: Update any scripts and descriptors for release version
 
