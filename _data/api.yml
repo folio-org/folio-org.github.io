@@ -79,6 +79,7 @@ mod-password-validator:
     directory: ramls
     files:
       - password-validator
+      - validator-registry
     ramlutil: ramls/raml-util
 
 mod-circulation:
