@@ -92,6 +92,7 @@ Various facilities are available:
 * [Performance report](https://jenkins-aws.indexdata.com/job/Automation/job/folio-perf-test/) to monitor throughput, response times, error rates, etc.
 The tests are configured in the [folio-perf-test](https://github.com/folio-org/folio-perf-test) repository, and utilise Apache JMeter.
 Runs once per day.
+* [FOLIO Environment Dashboard](https://dashboard.folio.ebsco.com/).
 
 ## Nexus Repository Manager
 
