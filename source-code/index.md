@@ -191,6 +191,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-audit-filter](https://github.com/folio-org/mod-audit-filter)
   -- Implements Okapi PRE and POST filters to capture audit data.
 
+- [mod-rmb-template](https://github.com/folio-org/mod-rmb-template)
+  -- A Maven archetype to commence a new RMB-based module.
+
 - [mod-pg-embed](https://github.com/folio-org/mod-pg-embed)
   -- Helper module to start embedded Postgres.
   Helper for developers that starts the "embedded" postgres server and sets up the environment so that other modules can locate the database.
@@ -266,6 +269,9 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-datasets](https://github.com/folio-org/ui-datasets)
   -- Stripes UI module: FOLIO Datasets based on Glint.
+
+- [ui-cataload](https://github.com/folio-org/ui-cataload)
+  -- Stripes UI module: Managing batch data loader.
 
 - [ui-orders](https://github.com/folio-org/ui-orders)
   -- Stripes UI module: Orders.

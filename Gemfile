@@ -6,6 +6,5 @@ gem "jekyll-data"
 
 group :jekyll_plugins do
   gem "html-proofer"
-  gem "jekyll-feed", "~> 0.6"
   gem "jekyll-gist"
 end

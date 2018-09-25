@@ -120,7 +120,8 @@ These are listed in the [Start](/start/) section.
 - Conduct [troubleshooting](troubleshooting).
 - [Code analysis and linting facilities](code-analysis) explains ESLint, SonarQube, other lint tools, and preparing for pull requests.
 - For Contextual Query Language (CQL) examples, see the [Glossary](/reference/glossary/#cql), the FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/cql2pgjson-java), the [API docs](/reference/api/), and the debug output for tests in each backend module.
-- Use [raml-cop](/guides/raml-cop/) to assess RAMLs, schema, and examples. A guide to its use with some explanations of its messages.
+- Use [raml-cop](raml-cop/) to assess RAMLs, schema, and examples. A guide to its use with some explanations of its messages.
+- [Describe schema and properties](describe-schema/).
 - [Conduct cross-module joins via their APIs](cross-module-joins).
 - [How to check for a valid UUID](uuids).
 - [Accessible Routing in FOLIO](https://github.com/folio-org/stripes-components/blob/master/docs/patterns/AccessibleRouting.md) explains assisted navigation.

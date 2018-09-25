@@ -23,12 +23,15 @@ The RMB README has an example and commentary.
 As explained there, use the shared git submodule at `ramls/raml-util` and follow the ideal [directory structure](/guides/commence-a-module/#back-end-ramls).
 
 When using RMB, it is important to further emphasise some items.
-Pay attention to the "$ref" used to reference and link JSON Schema, and to the declaration in the RAML files of all schema that are used.
-At this stage RAML files must have at least two endpoints.
+Pay attention to the "$ref" used to reference and link JSON Schema.
+For RAML-0.8 and RMB prior to v20, there must be at least two endpoints, and all schema that are used must be declared in the RAML file.
 
 [Use raml-cop to assess RAML, schema, and examples](/guides/raml-cop/).
 A script is provided, to find files and run it.
-It can also be integrated with editors.
+That script is also utilised by the continuous-integration.
+The raml-cop can also be integrated with editors.
+
+[Describe schema and properties](/guides/describe-schema/).
 
 Investigate the other raml-using [server-side](/source-code/#server-side) modules.
 The [mod-notes](https://github.com/folio-org/mod-notes) is a compact exemplar.
