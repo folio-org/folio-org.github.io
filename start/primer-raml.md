@@ -28,7 +28,10 @@ At this stage RAML files must have at least two endpoints.
 
 [Use raml-cop to assess RAML, schema, and examples](/guides/raml-cop/).
 A script is provided, to find files and run it.
-It can also be integrated with editors.
+That script is also utilised by the continuous-integration.
+The raml-cop can also be integrated with editors.
+
+[Describe schema and properties](/guides/describe-schema/).
 
 Investigate the other raml-using [server-side](/source-code/#server-side) modules.
 The [mod-notes](https://github.com/folio-org/mod-notes) is a compact exemplar.
