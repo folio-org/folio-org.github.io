@@ -48,8 +48,6 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-data (1.0.0)
       jekyll (~> 3.3)
-    jekyll-feed (0.11.0)
-      jekyll (~> 3.3)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
     jekyll-remote-theme (0.2.4)
@@ -107,7 +105,6 @@ DEPENDENCIES
   html-proofer
   jekyll (~> 3.8)
   jekyll-data
-  jekyll-feed (~> 0.6)
   jekyll-gist
   jekyll-remote-theme (= 0.2.4)
 
