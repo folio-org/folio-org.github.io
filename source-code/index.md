@@ -267,6 +267,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-datasets](https://github.com/folio-org/ui-datasets)
   -- Stripes UI module: FOLIO Datasets based on Glint.
 
+- [ui-cataload](https://github.com/folio-org/ui-cataload)
+  -- Stripes UI module: Managing batch data loader.
+
 - [ui-orders](https://github.com/folio-org/ui-orders)
   -- Stripes UI module: Orders.
 
