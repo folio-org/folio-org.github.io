@@ -191,6 +191,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-audit-filter](https://github.com/folio-org/mod-audit-filter)
   -- Implements Okapi PRE and POST filters to capture audit data.
 
+- [mod-rmb-template](https://github.com/folio-org/mod-rmb-template)
+  -- A Maven archetype to commence a new RMB-based module.
+
 - [mod-pg-embed](https://github.com/folio-org/mod-pg-embed)
   -- Helper module to start embedded Postgres.
   Helper for developers that starts the "embedded" postgres server and sets up the environment so that other modules can locate the database.

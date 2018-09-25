@@ -22,6 +22,9 @@ The [Commence a module - structure and configuration](/guides/commence-a-module/
 The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework, is a special FOLIO module that abstracts much functionality and enables the developer to focus on implementing business functions. Define the APIs and objects in RAML files and schema files, then the RMB generates code and provides tools to help implement the module.
 (Note that at this stage of the FOLIO project, only this Java-based framework is available.)
 
+The [mod-rmb-template](https://github.com/folio-org/mod-rmb-template)
+provides a Maven archetype to commence a new RMB-based module.
+
 [Conduct cross-module joins via their APIs](/guides/cross-module-joins/).
 
 The [Primer for RAML and JSON Schema](/start/primer-raml/) provides some guidance.
