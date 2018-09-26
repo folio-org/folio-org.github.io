@@ -173,6 +173,12 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-template-engine](https://github.com/folio-org/mod-template-engine)
   -- Stores templates and generates files by using them.
 
+- [mod-data-import](https://github.com/folio-org/mod-data-import)
+  -- Data import.
+
+- [mod-data-import-storage](https://github.com/folio-org/mod-data-import-storage)
+  -- Persistent storage to complement the data import module.
+
 - [mod-vendors](https://github.com/folio-org/mod-vendors)
   -- Persistent storage of vendor data.
 
@@ -270,7 +276,7 @@ exists and can be run, the APIs are likely to change.
 - [ui-datasets](https://github.com/folio-org/ui-datasets)
   -- Stripes UI module: FOLIO Datasets based on Glint.
 
-- [ui-cataload](https://github.com/folio-org/ui-cataload)
+- [ui-data-import](https://github.com/folio-org/ui-data-import)
   -- Stripes UI module: Managing batch data loader.
 
 - [ui-orders](https://github.com/folio-org/ui-orders)

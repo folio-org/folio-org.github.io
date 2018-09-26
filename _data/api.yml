@@ -270,6 +270,20 @@ mod-patron:
       - patron
     ramlutil: ramls/raml-util
 
+mod-data-import:
+  - label: null
+    directory: ramls
+    files:
+      - dataImportPing
+    ramlutil: ramls/raml-util
+
+mod-data-import-storage:
+  - label: null
+    directory: ramls
+    files:
+      - data-import-storage
+    ramlutil: ramls/raml-util
+
 mod-data-loader:
   - label: null
     directory: ramls
