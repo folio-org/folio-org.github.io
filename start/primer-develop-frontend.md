@@ -23,4 +23,6 @@ and in particular the [App development](https://github.com/folio-org/stripes-cli
 
 The [Commence a module - structure and configuration](/guides/commence-a-module/) guide explains a consistent layout for a front-end module.
 
-The [Regression tests for FOLIO UI](https://github.com/folio-org/ui-testing) will assist.
+The guide to [User experience design](/guides/user-experience-design/) provides guidelines and tools for building accessible apps.
+
+Refer to [How to run tests prior to commit](/faqs/how-to-test-prior-to-commit/) for brief explanation and links to testing facilities.

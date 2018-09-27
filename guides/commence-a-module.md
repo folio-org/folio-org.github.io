@@ -215,9 +215,9 @@ The optional `sound` directory holds sound files specific to this app.
 
 ## Test {#front-end-test}
 
-The `test` directory holds the ui-testing facilities specific to this app.
+The `test` directory holds the UI testing facilities specific to this app.
 
-See the [ui-testing](https://github.com/folio-org/ui-testing) documentation.
+Refer to [How to run tests prior to commit](/faqs/how-to-test-prior-to-commit/) for brief explanation and links to testing facilities.
 
 ## Translations {#front-end-translations}
 
@@ -227,5 +227,4 @@ As shown in the example listing, the files are within a sub-directory with the s
 The various `stripes-components` are separately handled.
 
 See the "[I18n best practices](https://github.com/folio-org/stripes-core/blob/master/doc/i18n.md)" internationalization documentation, and facilities provided by Stripes Core.
-
 

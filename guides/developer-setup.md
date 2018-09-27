@@ -30,7 +30,7 @@ Note that some parts of the development environment could be handled using
 Otherwise the development environment would need the following fundamental tools:
 
 * Apache Maven (3.3+) and Java (8+) -- For building and deploying Okapi and some server-side modules.
-* Node.js ([Active LTS version](https://github.com/nodejs/Release#release-schedule)) -- For Stripes and for some modules, and for ui-testing.
+* Node.js ([Active LTS version](https://github.com/nodejs/Release#release-schedule)) -- For Stripes and for some modules, and for UI testing.
 * Docker -- Recommended method for deployment.
 * PostgreSQL (9.6) -- For running an external database to support storage modules.
 This will enable faster startup and operations during development.

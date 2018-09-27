@@ -17,4 +17,12 @@ Some modules have additional local tests -- see their README document.
 
 See [Code analysis and linting facilities](/guides/code-analysis/).
 
-The [Regression tests for FOLIO UI](https://github.com/folio-org/ui-testing) explains the overall testing framework. It also shows how tests can be run from each UI module. Ensure a well-configured Stripes (see [Creating a new development setup for Stripes](https://github.com/folio-org/stripes-core/blob/master/doc/new-development-setup.md)). Ensure an up-to-date [Pre-built Vagrant box](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md).
+The integration tests and regression tests for FOLIO UI are explained at 
+[platform-core](https://github.com/folio-org/platform-core)
+and
+[stripes-testing](https://github.com/folio-org/stripes-testing)
+along with the ability to run specific tests.
+
+(The deprecated repository ui-testing [Regression tests for FOLIO UI](https://github.com/folio-org/ui-testing) might still be useful while tests and documentation are moved to those places.)
+
+When running local tests, ensure a well-configured Stripes (see [Creating a new development setup for Stripes](https://github.com/folio-org/stripes-core/blob/master/doc/new-development-setup.md)). Ensure an up-to-date [Pre-built Vagrant box](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md).

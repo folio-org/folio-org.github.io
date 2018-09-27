@@ -32,7 +32,7 @@ guides to all front-end documentation.
 - [Stripes entities: packages, modules, apps and more](https://github.com/folio-org/stripes-core/blob/master/doc/modules-apps-etc.md).
 - [The Stripes Module Developer's Guide](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md)
 for those writing UI modules for Stripes.
-- [Regression tests for FOLIO UI](https://github.com/folio-org/ui-testing).
+- [How to run tests prior to commit](/faqs/how-to-test-prior-to-commit/)
 The testing framework is explained. Guidelines for module developers.
 - [Permissions in Stripes and FOLIO](https://github.com/folio-org/stripes-core/blob/master/doc/permissions.md).
 
