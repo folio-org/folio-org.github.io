@@ -264,7 +264,7 @@ The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB
 
 [Apache Solr](https://en.wikipedia.org/wiki/Apache_Solr).
 
-### SPA
+#### SPA
 
 FOLIO is a single-page application ([SPA](https://en.wikipedia.org/wiki/Single-page_application)).
 
@@ -285,12 +285,23 @@ Universally unique identifier, a 128-bit number, see
 [UUID at Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier)
 and [How to check for a valid UUID](/guides/uuids/).
 
+#### UX
+
+User experience ([UX](https://en.wikipedia.org/wiki/User_experience)).
+
+See [User experience design](/guides/user-experience-design/)
+and the [FOLIO UX](https://ux.folio.org/) documentation site.
+
 #### Vert.x
 
 [Vert.x](http://vertx.io) is a toolkit for building scalable, reactive
 applications on the JVM. Vert.x is particularly suitable for
 developing applications using the microservices architectural
 pattern.
+
+#### WCAG
+
+Web Content Accessibility Guidelines ([WCAG](https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines)).
 
 #### Webpack
 
