@@ -124,6 +124,7 @@ These are listed in the [Start](/start/) section.
 - [Describe schema and properties](describe-schema/).
 - [Conduct cross-module joins via their APIs](cross-module-joins).
 - [How to check for a valid UUID](uuids).
+- [User experience design](user-experience-design/).
 - [Accessible Routing in FOLIO](https://github.com/folio-org/stripes-components/blob/master/docs/patterns/AccessibleRouting.md) explains assisted navigation.
 
 ### Tutorials
@@ -152,5 +153,4 @@ and the [FOLIO Development Process Overview](https://wiki.folio.org/display/COMM
 - [Best practices for Dockerfiles](best-practices-dockerfiles).
 - The FOLIO [build, test, and deployment infrastructure](automation/).
 - A proposal for [error response formats](https://github.com/folio-org/okapi/blob/master/doc/error-formats-in-folio.md).
-- [FOLIO UX](http://ux.folio.org/) -- user experience (UX) driven design and prototypes.
 - [Events and presentations](/community/events/).
