@@ -376,10 +376,6 @@ exists and can be run, the APIs are likely to change.
 - [folio-install](https://github.com/folio-org/folio-install)
   -- Runbooks for FOLIO installation, including [step-by-step instructions for a single-server deployment](https://github.com/folio-org/folio-install/blob/master/single-server.md).
 
-- [ui-testing](https://github.com/folio-org/ui-testing)
-  -- Regression tests for FOLIO UI.
-  The testing framework is explained. Guidelines for module developers.
-
 - [folio-tools](https://github.com/folio-org/folio-tools)
   -- Various tools and support glue for FOLIO CI.
 
