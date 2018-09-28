@@ -152,6 +152,9 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Shared repository for the models of the various acquisition modules.
 
 - [mod-finance](https://github.com/folio-org/mod-finance)
+  -- Finance business logic.
+
+- [mod-finance-storage](https://github.com/folio-org/mod-finance-storage)
   -- Persistent storage of finance-related data (i.e. funds, ledgers, transactions, etc.).
 
 - [mod-orders](https://github.com/folio-org/mod-orders)

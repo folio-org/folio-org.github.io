@@ -184,7 +184,7 @@ mod-calendar:
       - calendar
     ramlutil: ramls/raml-util
 
-mod-finance:
+mod-finance-storage:
   - label: null
     directory: ramls
     files:
@@ -194,7 +194,6 @@ mod-finance:
       - fund
       - fund_distribution
       - ledger
-      - tag
       - transaction
     ramlutil: ramls/raml-util
 
