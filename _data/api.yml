@@ -271,6 +271,7 @@ mod-patron:
 
 mod-data-import:
   - label: null
+    version1: true
     directory: ramls
     files:
       - dataImportPing
