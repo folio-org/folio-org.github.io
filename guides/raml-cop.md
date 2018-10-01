@@ -33,17 +33,6 @@ See the [folio-tools/lint-raml](https://github.com/folio-org/folio-tools/tree/ma
 The scripts utilise raml-cop and some also conduct other tests.
 Use the Python script in preference -- that is the one used during CI via the `runLintRamlCop` [Jenkinsfile](/guides/jenkinsfile) parameter.
 
-Those can also be run via a git pre-commit hook, e.g.:
-
-```shell
-if git diff --cached --name-only | grep --quiet "/ramls/"
-then
-  exit 0
-else
-  ${GIT_DIR}/../../folio-tools/lint-raml/lint-raml-cop.sh mod-notes
-fi
-```
-
 ## Messages
 
 The warning and error messages can sometimes be obscure.
