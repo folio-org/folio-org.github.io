@@ -31,22 +31,16 @@ For basic use, run it on any RAML file (e.g. `raml-cop ramls/loan-storage.raml`)
 There are also processing tools to assist RAML and schema maintenance for any FOLIO repository.
 See the [folio-tools/lint-raml](https://github.com/folio-org/folio-tools/tree/master/lint-raml) directory.
 The scripts utilise raml-cop and some also conduct other tests.
-Use the Python script in preference -- that is the one used during CI via the `runLintRamlCop` [Jenkinsfile](/guides/jenkinsfile) parameter.
+Use the Python script in preference -- that is the one used during continuous-integration (CI) via the `runLintRamlCop` [Jenkinsfile](/guides/jenkinsfile) parameter.
 
-Those can also be run via a git pre-commit hook, e.g.:
+The CI job detects some issues before running 'raml-cop'. This helps to explain subsequent messages.
 
-```shell
-if git diff --cached --name-only | grep --quiet "/ramls/"
-then
-  exit 0
-else
-  ${GIT_DIR}/../../folio-tools/lint-raml/lint-raml-cop.sh mod-notes
-fi
-```
+It also does some assessment of JSON Schema files, e.g. to encourage
+[Describe schema and properties](/guides/describe-schema/).
 
 ## Messages
 
-The warning and error messages can sometimes be obscure.
+The warning and error messages from its raml-1-parser can sometimes be obscure.
 See some examples below.
 
 Heed the warning messages. They can often be more than that label implies. Some issues can mask others, so it is wise to fix them all.
@@ -58,7 +52,7 @@ The line-numbers are zero-based, so the actual line-number is one more than repo
 ### Example has additional properties
 
 ```shell
-$ raml-cop ramls/configuration/config.raml
+raml-cop ramls/configuration/config.raml
 [ramls/raml-util/rtypes/collection.raml:19:29] WARNING Content is not valid according to schema: Additional properties not allowed: updatedDate,updatedBy
 ```
 
@@ -70,10 +64,27 @@ That line 20 is:
 
 So in the config.raml file, investigate each "exampleCollection", and compare its example with its schema.
 
+### Example has missing required properties
+
+```shell
+raml-cop ramls/calendar.raml
+[ramls/raml-util/rtypes/collection.raml:17:25] WARNING Content is not valid according to schema: Missing required property: openings
+```
+
+That line 18 is:
+
+```
+                example: <<exampleCollection>>
+```
+
+So in the RAML file, investigate each "exampleCollection", and compare its example with its schema.
+
+In this case the schema had the incorrect name for the required property.
+
 ### Fix pathname to resultInfo.schema
 
 ```shell
-$ raml-cop ramls/codex/codex.raml
+raml-cop ramls/codex/codex.raml
 [ramls/codex/codex.raml:11:4] WARNING Can not parse JSON example: Unexpected end of JSON input
 [ramls/codex/codex.raml:11:4] WARNING Can not parse JSON example: Unexpected end of JSON input
 [rtypes/collection-get.raml:17:16] WARNING Can not parse JSON example: Unexpected end of JSON input

@@ -354,6 +354,7 @@ mod-gobi:
 
 mod-audit:
   - label: null
+    version1: true
     directory: ramls
     files:
       - audit-data
