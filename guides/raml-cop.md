@@ -35,6 +35,9 @@ Use the Python script in preference -- that is the one used during continuous-in
 
 The CI job detects some issues before running 'raml-cop'. This helps to explain subsequent messages.
 
+It also does some assessment of JSON Schema files, e.g. to encourage
+[Describe schema and properties](/guides/describe-schema/).
+
 ## Messages
 
 The warning and error messages from its raml-1-parser can sometimes be obscure.

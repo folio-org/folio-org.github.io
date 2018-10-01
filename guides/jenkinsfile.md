@@ -53,7 +53,8 @@ It will be published to the FOLIO Module Descriptor registry.
 [RAML](/guides/commence-a-module/#back-end-ramls) and Schema files.
 (Default: 'no')
 
- * `runLintRamlCop` -- Run "[raml-cop](/guides/raml-cop/)" on back-end modules that have declared [RAML](/guides/commence-a-module/#back-end-ramls) in api.yml
+* `runLintRamlCop` -- Run "[raml-cop](/guides/raml-cop/)" (and other tests) on back-end modules that have declared [RAML](/guides/commence-a-module/#back-end-ramls) in api.yml configuration.
+Also assists with [Describe schema and properties](/guides/describe-schema/).
 (Default: 'no')
 
 If we are creating and deploying a Docker image as part of the module's artifacts, specify
