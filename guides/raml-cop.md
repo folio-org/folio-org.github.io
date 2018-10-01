@@ -64,6 +64,23 @@ That line 20 is:
 
 So in the config.raml file, investigate each "exampleCollection", and compare its example with its schema.
 
+### Example has missing required properties
+
+```shell
+raml-cop ramls/calendar.raml
+[ramls/raml-util/rtypes/collection.raml:17:25] WARNING Content is not valid according to schema: Missing required property: openings
+```
+
+That line 18 is:
+
+```
+                example: <<exampleCollection>>
+```
+
+So in the RAML file, investigate each "exampleCollection", and compare its example with its schema.
+
+In this case the schema had the incorrect name for the required property.
+
 ### Fix pathname to resultInfo.schema
 
 ```shell
