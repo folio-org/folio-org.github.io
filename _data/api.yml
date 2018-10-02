@@ -282,11 +282,11 @@ mod-data-import:
       - dataImportPing
     ramlutil: ramls/raml-util
 
-mod-data-import-storage:
+mod-source-record-storage:
   - label: null
     directory: ramls
     files:
-      - data-import-storage
+      - source-record-storage
     ramlutil: ramls/raml-util
 
 mod-data-loader:
