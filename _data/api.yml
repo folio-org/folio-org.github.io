@@ -289,6 +289,14 @@ mod-source-record-storage:
       - source-record-storage
     ramlutil: ramls/raml-util
 
+mod-source-record-manager:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - source-record-manager-ping
+    ramlutil: ramls/raml-util
+
 mod-data-loader:
   - label: null
     directory: ramls
