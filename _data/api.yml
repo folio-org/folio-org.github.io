@@ -120,6 +120,7 @@ mod-inventory:
 
 mod-inventory-storage:
   - label: null
+    version1: true
     directory: ramls
     files:
       - holdings-storage
