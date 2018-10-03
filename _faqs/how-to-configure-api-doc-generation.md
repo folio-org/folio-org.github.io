@@ -56,10 +56,16 @@ Usually this will be "ramls/raml-util".
 
 The system will search for RAML files in and below the specific `directory`.
 Use this field to specify directories that must not be traversed.
-The default exclusions are `["raml-util", "rtypes", "traits", "node_modules"]` and the additional excludes are appended.
+The default exclusions are `["raml-util", "rtypes", "traits", "node_modules"]` and these additional excludes are appended.
 
 ### version1
 
 Set `version1` to `true` if this is known to be RAML-1.0 version.
 Default is false.
 This enables the API docs table to exclude the "view-2" column as explained in the [usage notes](/reference/api/#usage-notes).
+
+### schemasDirectory
+
+For some non-standard layouts, the [Describe schema and properties](/guides/describe-schema/) component of the [lint-raml-cop](/guides/raml-cop/) CI job needs to be provided this pathname to the JSON schemas.
+Otherwise it searches under the "ramls" [directory](#directory).
+
