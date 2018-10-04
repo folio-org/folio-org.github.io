@@ -131,10 +131,10 @@ mod-inventory-storage:
       - instance-relationship-type
       - instance-status
       - item-storage
-      - cataloging-level
       - classification-type
       - contributor-type
       - contributor-name-type
+      - electronic-access-relationship
       - identifier-type
       - loan-type
       - location
