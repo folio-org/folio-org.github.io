@@ -106,6 +106,7 @@ mod-circulation-storage:
 
 mod-configuration:
   - label: null
+    version1: true
     directory: ramls/configuration
     files:
       - config
@@ -114,6 +115,7 @@ mod-configuration:
 
 mod-inventory:
   - label: null
+    version1: true
     directory: ramls
     files:
       - inventory
