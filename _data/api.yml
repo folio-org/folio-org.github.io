@@ -37,6 +37,7 @@ mod-users:
 mod-users-bl:
   - label: null
     directory: ramls
+    version1: true
     files:
       - mod-users-bl
     excludes:
