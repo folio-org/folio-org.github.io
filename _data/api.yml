@@ -65,6 +65,7 @@ mod-permissions:
 
 mod-login:
   - label: null
+    version1: true
     directory: ramls
     files:
       - login
