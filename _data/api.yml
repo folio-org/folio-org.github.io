@@ -46,14 +46,15 @@ mod-users-bl:
 
 mod-permissions:
   - label: null
-    directory: raml-util/ramls/mod-permissions
+    version1: true
+    directory: ramls/raml-util/ramls/mod-permissions
     files:
       - tenantPermissions
       - permissions
     ramlutil: null
-    schemasDirectory: raml-util/schemas/mod-permissions
+    schemasDirectory: ramls/raml-util/schemas/mod-permissions
     shared: ramls/mod-permissions
-# 201809: Upcoming new config to replace the above entry
+# 201810: Upcoming new config stage 2, to replace the above entry
 #mod-permissions:
 #  - label: null
 #    directory: ramls
