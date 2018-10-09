@@ -390,6 +390,14 @@ mod-audit:
       - audit-data
     ramlutil: ramls/raml-util
 
+edge-oai-pmh:
+  - label: null
+    directory: ramls
+    files:
+      - edge-oai-pmh
+    ramlutil: null
+    rmb: false
+
 edge-patron:
   - label: null
     directory: ramls
