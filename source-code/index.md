@@ -203,9 +203,6 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-oai-pmh](https://github.com/folio-org/mod-oai-pmh)
   -- Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH).
 
-- [edge-oai-pmh](https://github.com/folio-org/edge-oai-pmh)
-  -- Edge API for Metadata Harvesting.
-
 - [mod-audit](https://github.com/folio-org/mod-audit)
   -- Manage audit data.
 
@@ -228,6 +225,23 @@ facilitated by the code in the `raml-module-builder` repository.
 
 - [inventory-sample-data](https://github.com/folio-org/inventory-sample-data)
   -- Provides scripts for data preparation and deployment, e.g. MARC.
+
+- [edge-common](https://github.com/folio-org/edge-common)
+  -- Common/Shared library for Edge APIs.
+
+- [edge-oai-pmh](https://github.com/folio-org/edge-oai-pmh)
+  -- Edge API for Metadata Harvesting.
+
+- [edge-orders](https://github.com/folio-org/edge-orders)
+  -- Edge API to interface with FOLIO for 3rd party ordering services and FOLIO.
+  Initially GOBI.
+
+- [edge-patron](https://github.com/folio-org/edge-patron)
+  -- Edge API to interface with FOLIO for 3rd party discovery services to allow patrons to perform self-service actions.
+
+- [edge-rtac](https://github.com/folio-org/edge-rtac)
+  -- Edge API for RTAC (Real Time Availability Check).
+  To interface with FOLIO for 3rd party discovery services to determine holdings availability.
 
 ## Client-side
 
@@ -414,20 +428,6 @@ exists and can be run, the APIs are likely to change.
 
 - [folio-graphiql](https://github.com/folio-org/folio-graphiql)
   -- Explore Okapi's GraphQL endpoint.
-
-- [edge-common](https://github.com/folio-org/edge-common)
-  -- Common/Shared library for Edge APIs.
-
-- [edge-orders](https://github.com/folio-org/edge-orders)
-  -- Edge API to interface with FOLIO for 3rd party ordering services and FOLIO.
-  Initially GOBI.
-
-- [edge-patron](https://github.com/folio-org/edge-patron)
-  -- Edge API to interface with FOLIO for 3rd party discovery services to allow patrons to perform self-service actions.
-
-- [edge-rtac](https://github.com/folio-org/edge-rtac)
-  -- Edge API for RTAC (Real Time Availability Check).
-  To interface with FOLIO for 3rd party discovery services to determine holdings availability.
 
 - [folio-perf-test](https://github.com/folio-org/folio-perf-test)
   -- Jenkins pipeline to test FOLIO performance.
