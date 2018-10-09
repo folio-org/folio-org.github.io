@@ -207,6 +207,7 @@ mod-finance-storage:
       - ledger
       - transaction
     ramlutil: ramls/raml-util
+    schemasDirectory: ramls/acq-models/mod-finance/schemas
 
 mod-feesfines:
   - label: null
@@ -328,6 +329,7 @@ mod-orders:
     files:
       - order
     ramlutil: ramls/raml-util
+    schemasDirectory: ramls/acq-models/mod-orders-storage/schemas
 
 mod-orders-storage:
   - label: null
@@ -359,6 +361,7 @@ mod-orders-storage:
       - vendor_detail
       - workflow_status
     ramlutil: ramls/raml-util
+    schemasDirectory: ramls/acq-models/mod-orders-storage/schemas
 
 mod-vendors:
   - label: null
@@ -368,12 +371,15 @@ mod-vendors:
       - contact_category
       - vendor_category
     ramlutil: ramls/raml-util
+    schemasDirectory: ramls/acq-models/mod-vendors/schemas
 
 mod-gobi:
   - label: null
     directory: ramls
     files:
       - gobi
+    excludes:
+      - acq-models
     ramlutil: ramls/raml-util
 
 mod-audit:
