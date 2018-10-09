@@ -127,6 +127,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-kb-ebsco](https://github.com/folio-org/mod-kb-ebsco)
   -- Broker communication with the EBSCO knowledge base.
 
+- [mod-kb-ebsco-java](https://github.com/folio-org/mod-kb-ebsco-java)
+  -- Broker communication with the EBSCO knowledge base.
+
 - [mod-notes](https://github.com/folio-org/mod-notes)
   -- Notes on all types of objects.
 
@@ -197,11 +200,17 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-gobi](https://github.com/folio-org/mod-gobi)
   -- Allows GOBI® (Global Online Bibliographic Information) initiated orders to be fulfilled by FOLIO.
 
+- [mod-oai-pmh](https://github.com/folio-org/mod-oai-pmh)
+  -- Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH).
+
 - [mod-audit](https://github.com/folio-org/mod-audit)
   -- Manage audit data.
 
 - [mod-audit-filter](https://github.com/folio-org/mod-audit-filter)
   -- Implements Okapi PRE and POST filters to capture audit data.
+
+- [mod-aes](https://github.com/folio-org/mod-aes)
+  -- Provide asynchronous event service (AES).
 
 - [mod-rmb-template](https://github.com/folio-org/mod-rmb-template)
   -- A Maven archetype to commence a new RMB-based module.
@@ -216,6 +225,23 @@ facilitated by the code in the `raml-module-builder` repository.
 
 - [inventory-sample-data](https://github.com/folio-org/inventory-sample-data)
   -- Provides scripts for data preparation and deployment, e.g. MARC.
+
+- [edge-common](https://github.com/folio-org/edge-common)
+  -- Common/Shared library for Edge APIs.
+
+- [edge-oai-pmh](https://github.com/folio-org/edge-oai-pmh)
+  -- Edge API for Metadata Harvesting.
+
+- [edge-orders](https://github.com/folio-org/edge-orders)
+  -- Edge API to interface with FOLIO for 3rd party ordering services and FOLIO.
+  Initially GOBI.
+
+- [edge-patron](https://github.com/folio-org/edge-patron)
+  -- Edge API to interface with FOLIO for 3rd party discovery services to allow patrons to perform self-service actions.
+
+- [edge-rtac](https://github.com/folio-org/edge-rtac)
+  -- Edge API for RTAC (Real Time Availability Check).
+  To interface with FOLIO for 3rd party discovery services to determine holdings availability.
 
 ## Client-side
 
@@ -257,6 +283,9 @@ exists and can be run, the APIs are likely to change.
 
 - [stripes-cli](https://github.com/folio-org/stripes-cli)
   -- Command-line interface for creating, building, and testing Stripes UI modules.
+
+- [stripes](https://github.com/folio-org/stripes)
+  -- The Stripes Framework.
 
 - [ui-users](https://github.com/folio-org/ui-users)
   -- Stripes UI module: administrating users.
@@ -320,6 +349,9 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-vendors](https://github.com/folio-org/ui-vendors)
   -- Stripes UI module: Vendors.
+
+- [ui-audit](https://github.com/folio-org/ui-audit)
+  -- Stripes UI module: Viewing audit trails.
 
 - [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
   -- Stripes UI plugin: User finder.
@@ -396,20 +428,6 @@ exists and can be run, the APIs are likely to change.
 
 - [folio-graphiql](https://github.com/folio-org/folio-graphiql)
   -- Explore Okapi's GraphQL endpoint.
-
-- [edge-common](https://github.com/folio-org/edge-common)
-  -- Common/Shared library for Edge APIs.
-
-- [edge-orders](https://github.com/folio-org/edge-orders)
-  -- Edge API to interface with FOLIO for 3rd party ordering services and FOLIO.
-  Initially GOBI.
-
-- [edge-patron](https://github.com/folio-org/edge-patron)
-  -- Edge API to interface with FOLIO for 3rd party discovery services to allow patrons to perform self-service actions.
-
-- [edge-rtac](https://github.com/folio-org/edge-rtac)
-  -- Edge API for RTAC (Real Time Availability Check).
-  To interface with FOLIO for 3rd party discovery services to determine holdings availability.
 
 - [folio-perf-test](https://github.com/folio-org/folio-perf-test)
   -- Jenkins pipeline to test FOLIO performance.

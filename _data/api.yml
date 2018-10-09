@@ -261,10 +261,20 @@ mod-kb-ebsco:
     directory: ramls
     files:
       - eholdings
-    excludes:
-      - types
     ramlutil: ramls/raml-util
     rmb: false
+
+mod-kb-ebsco-java:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - eholdings
+      - packages
+      - providers
+      - resources
+      - titles
+    ramlutil: ramls/raml-util
 
 mod-rtac:
   - label: null
