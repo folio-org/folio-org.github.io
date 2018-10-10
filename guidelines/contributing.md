@@ -158,6 +158,21 @@ When done, you probably want to delete the local branch from your own machine
 
     git branch -d okapi-xxx
 
+### git bisect finding a merge commit
+
+`git bisect` helps to find a commit that has introduced a bug
+([git bisect manual](https://git-scm.com/docs/git-bisect)).
+When bisectioning the commits within a feature branch of a pull request should be
+skipped because it is unknown whether they build successfully.  Ori from Smartly published
+"[Git Bisect Debugging with Feature Branches](https://blog.smart.ly/2015/02/03/git-bisect-debugging-with-feature-branches/)"
+with this code snippet that skips those feature branch commits:
+
+    git bisect start master 75369f4a4c026772242368d870872562a3b693cb
+
+    for rev in $(git rev-list 75369f4a4c026772242368d870872562a3b693cb..master --merges --first-parent); do
+        git rev-list $rev^2 --not $rev^
+    done | xargs git bisect skip
+
 ## Automation
 
 The FOLIO [build, test, and deployment infrastructure](/guides/automation/)
