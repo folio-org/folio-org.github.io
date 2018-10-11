@@ -106,10 +106,12 @@ The reference [API documentation](/reference/api/) is generated from these files
 
 ## Database schema {#back-end-database-schema}
 
-The DB schema defines this module's tables, indexes, joins, etc.
+For RMB-based modules the DB schema defines this module's tables, indexes, joins, etc.
 It is located at `src/main/resources/templates/db_scripts/schema.json`
 
 When SQL scripts are necessary, they are also stored in that `db_scripts` directory.
+
+See further information about the "Tenant API" in the [RMB README](https://github.com/folio-org/raml-module-builder#tenant-api).
 
 ## Reference data {#back-end-reference-data}
 
