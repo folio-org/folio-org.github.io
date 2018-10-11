@@ -93,7 +93,9 @@ We follow a variation of the Apache motto:
   other guidelines.
 
 - To post or comment, sign up for an account via the Issue tracker front page.
-  (The Wiki uses the same account as issues.folio.org and reset password happens there too).
+  (The Wiki uses the same account as issues.folio.org and reset password happens there too.)
+
+- Assistance with Wiki [search](/search-other/#folio-wiki).
 
 ## Issue tracker
 
