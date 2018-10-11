@@ -162,7 +162,7 @@ When done, you probably want to delete the local branch from your own machine
 
 `git bisect` helps to find a commit that has introduced a bug
 ([git bisect manual](https://git-scm.com/docs/git-bisect)).
-When bisectioning the commits within a feature branch of a pull request should be
+When bisecting, the commits within a feature branch of a pull request should be
 skipped because it is unknown whether they build successfully.  Ori from Smartly published
 "[Git Bisect Debugging with Feature Branches](https://blog.smart.ly/2015/02/03/git-bisect-debugging-with-feature-branches/)"
 with this code snippet that skips those feature branch commits:
