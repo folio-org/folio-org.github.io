@@ -118,6 +118,8 @@ We follow a variation of the Apache motto:
 
 - To create issues or comment, sign up for an account via the front page.
 
+- Assistance with Jira [search](/search-other/#folio-issue-tracker).
+
 ## GitHub
 
 [https://github.com/folio-org](https://github.com/folio-org)

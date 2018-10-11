@@ -42,3 +42,10 @@ Some example searches at FOLIO Wiki:
 Refer to specific
 [Confluence search help](https://confluence.atlassian.com/doc/confluence-search-syntax-158720.html).
 
+## FOLIO Issue Tracker
+
+See assistance with [filters and search](/guidelines/issue-tracker/#filters-and-search).
+
+Refer to specific
+[Jira search help](https://confluence.atlassian.com/jirasoftwarecloud/advanced-searching-764478330.html).
+
