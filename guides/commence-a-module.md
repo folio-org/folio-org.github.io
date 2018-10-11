@@ -34,6 +34,9 @@ Module documentation is kept with the relevant repository, while broad and proje
 Server-side modules include all those named `mod-*`.
 Follow the structure and files of [mod-notes](https://github.com/folio-org/mod-notes) as an example.
 
+The [mod-rmb-template](https://github.com/folio-org/mod-rmb-template)
+provides a Maven archetype to commence a new RMB-based module.
+
 The `NEWS.md` lists the main changes for each release. Follow how the other back-end modules use this file.
 
 ## Structure {#back-end-structure}
