@@ -34,6 +34,9 @@ Module documentation is kept with the relevant repository, while broad and proje
 Server-side modules include all those named `mod-*`.
 Follow the structure and files of [mod-notes](https://github.com/folio-org/mod-notes) as an example.
 
+The [mod-rmb-template](https://github.com/folio-org/mod-rmb-template)
+provides a Maven archetype to commence a new RMB-based module.
+
 The `NEWS.md` lists the main changes for each release. Follow how the other back-end modules use this file.
 
 ## Structure {#back-end-structure}
@@ -103,10 +106,12 @@ The reference [API documentation](/reference/api/) is generated from these files
 
 ## Database schema {#back-end-database-schema}
 
-The DB schema defines this module's tables, indexes, joins, etc.
+For RMB-based modules the DB schema defines this module's tables, indexes, joins, etc.
 It is located at `src/main/resources/templates/db_scripts/schema.json`
 
 When SQL scripts are necessary, they are also stored in that `db_scripts` directory.
+
+See further information about the "Tenant API" in the [RMB README](https://github.com/folio-org/raml-module-builder#tenant-api).
 
 ## Reference data {#back-end-reference-data}
 

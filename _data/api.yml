@@ -161,6 +161,7 @@ mod-user-import:
 
 mod-codex-ekb:
   - label: null
+    version1: true
     directory: ramls/raml-util/ramls/codex
     files:
       - codex
@@ -301,6 +302,7 @@ mod-data-import:
 
 mod-source-record-storage:
   - label: null
+    version1: true
     directory: ramls
     files:
       - source-record-storage
@@ -392,6 +394,7 @@ mod-audit:
 
 edge-oai-pmh:
   - label: null
+    version1: true
     directory: ramls
     files:
       - edge-oai-pmh
