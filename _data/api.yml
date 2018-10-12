@@ -392,6 +392,15 @@ mod-audit:
       - audit-data
     ramlutil: ramls/raml-util
 
+mod-oai-pmh:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - oai-pmh
+    ramlutil: ramls/raml-util
+    rmb: false
+
 edge-oai-pmh:
   - label: null
     version1: true
