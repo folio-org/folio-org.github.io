@@ -399,7 +399,6 @@ mod-oai-pmh:
     files:
       - oai-pmh
     ramlutil: ramls/raml-util
-    rmb: false
 
 edge-oai-pmh:
   - label: null
