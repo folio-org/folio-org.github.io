@@ -136,6 +136,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-notify](https://github.com/folio-org/mod-notify)
   -- Notifications to the users.
 
+- [mod-sender](https://github.com/folio-org/mod-sender)
+  -- Intermediary for sending prepared messages through appropriate delivery channels.
+
 - [mod-codex-mux](https://github.com/folio-org/mod-codex-mux)
   -- Codex Multiplexer.
 
