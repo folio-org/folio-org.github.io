@@ -242,6 +242,14 @@ mod-notify:
       - notify
     ramlutil: ramls/raml-util
 
+mod-sender:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - sender
+    ramlutil: ramls/raml-util
+
 mod-tags:
   - label: null
     version1: true
