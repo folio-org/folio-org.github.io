@@ -212,18 +212,20 @@ mod-finance-storage:
 
 mod-feesfines:
   - label: null
+    version1: true
     directory: ramls
     files:
       - accounts
       - comments
       - feefineactions
       - feefines
+      - manualblocks
       - owners
       - payments
       - refunds
       - transfers
       - transfertypes
-      - waives
+      - waiver
     ramlutil: ramls/raml-util
 
 mod-notes:
