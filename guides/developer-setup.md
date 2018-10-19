@@ -147,7 +147,6 @@ git checkout master
 git pull
 cd ../..
 git add ramls/raml-util
-./scripts/lint-raml-cop.sh
 mvn clean install
 git commit ...
 ```
