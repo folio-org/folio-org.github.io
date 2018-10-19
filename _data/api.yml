@@ -345,31 +345,22 @@ mod-orders-storage:
   - label: null
     directory: ramls
     files:
-      - acquisition_method
-      - activation_status
       - adjustment
       - alert
       - claim
       - cost
-      - currency
       - details
-      - encumbrance
       - eresource
       - fund_distribution
       - license
       - location
-      - order_format
-      - order_type
-      - payment_status
       - physical
       - po_line
       - purchase_order
-      - receipt_status
       - renewal
       - reporting_code
       - source
       - vendor_detail
-      - workflow_status
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-orders-storage/schemas
 
