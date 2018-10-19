@@ -438,5 +438,13 @@ exists and can be run, the APIs are likely to change.
 - [folio-api-tests](https://github.com/folio-org/folio-api-tests)
   -- Postman collections for backend modules.
 
+- [ldp](https://github.com/folio-org/ldp)
+  -- Library Data Platform.
+
+- [rfcs](https://github.com/folio-org/rfcs)
+  -- RFCs for changes to the FOLIO platform.
+  "Request for Comment" for "substantial" changes.
+  Co-ordinated through the [FOLIO Technical Council](https://wiki.folio.org/display/TC/Technical+Council).
+
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.
