@@ -261,8 +261,11 @@ Each module has its own documentation.
 Note that Stripes is still in the design phase, so although code
 exists and can be run, the APIs are likely to change.
 
+- [stripes](https://github.com/folio-org/stripes)
+  -- The Stripes Framework.
+
 - [stripes-core](https://github.com/folio-org/stripes-core)
-  -- The UI framework.
+  -- The core of the Stripes/UI framework.
   Includes extensive documentation.
 
 - [stripes-components](https://github.com/folio-org/stripes-components)
@@ -286,9 +289,6 @@ exists and can be run, the APIs are likely to change.
 
 - [stripes-cli](https://github.com/folio-org/stripes-cli)
   -- Command-line interface for creating, building, and testing Stripes UI modules.
-
-- [stripes](https://github.com/folio-org/stripes)
-  -- The Stripes Framework.
 
 - [ui-users](https://github.com/folio-org/ui-users)
   -- Stripes UI module: administrating users.
@@ -437,6 +437,14 @@ exists and can be run, the APIs are likely to change.
 
 - [folio-api-tests](https://github.com/folio-org/folio-api-tests)
   -- Postman collections for backend modules.
+
+- [ldp](https://github.com/folio-org/ldp)
+  -- Library Data Platform.
+
+- [rfcs](https://github.com/folio-org/rfcs)
+  -- RFCs for changes to the FOLIO platform.
+  "Request for Comment" for "substantial" changes.
+  Co-ordinated through the [FOLIO Technical Council](https://wiki.folio.org/display/TC/Technical+Council).
 
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.
