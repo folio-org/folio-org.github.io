@@ -323,7 +323,7 @@ mod-source-record-manager:
     version1: true
     directory: ramls
     files:
-      - source-record-manager-ping
+      - metadata-provider
     ramlutil: ramls/raml-util
 
 mod-data-loader:
