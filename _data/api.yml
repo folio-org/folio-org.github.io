@@ -80,9 +80,7 @@ mod-users-bl:
     version1: true
     files:
       - mod-users-bl
-    excludes:
-      - raml
-    ramlutil: ramls/raml
+    ramlutil: ramls/raml-util
 
 mod-patron:
   - label: null
