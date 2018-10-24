@@ -90,6 +90,9 @@ So the documentation relates only to the current master branch.
 * Since August 2018 the generated documents are saved for each software version.
 So for [mod-inventory-storage](#mod-inventory-storage) amend the URL of the generated documents to add the version number (major.minor), e.g. `mod-inventory-storage/12.5/...`
 
+* The order of the list is loose functional groups.
+The "batches" is a [temporary](https://issues.folio.org/browse/FOLIO-1592) way to enable better Table-of-Contents.
+
 * For repositories that are now using RAML-1.0 version, the "view-2" presentation is not available because the software that is used to generate that view only supports RAML-0.8 version.
 
 * The asterisk `*` denotes that this is a shared set of RAML files.

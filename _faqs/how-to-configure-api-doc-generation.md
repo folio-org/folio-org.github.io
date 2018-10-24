@@ -22,6 +22,7 @@ It is available to run locally by cloning [folio-tools](https://github.com/folio
 
 Each RAML-related repository has an entry in the [api.yml](https://github.com/folio-org/folio-org.github.io/blob/master/_data/api.yml) file.
 The order of entries in this file is the order of display at the [API documentation](/reference/api/).
+The order is loose functional groups.
 
 When your new project repository has its initial "ramls" directory established, there will be no configuration for it.
 That is okay, as the CI jobs will attempt to use the default [structure](/guides/commence-a-module/#back-end-ramls).
@@ -78,7 +79,7 @@ The default exclusions are `["raml-util", "rtypes", "traits", "node_modules"]` a
 ### version1
 
 Set `version1` to `true` if this is known to be RAML-1.0 version.
-Default is `false`, or this property can be omitted.
+Default is `false`, or this property can be omitted to denote that.
 This enables the API docs table to exclude the "view-2" column as explained in the [usage notes](/reference/api/#usage-notes).
 
 ### schemasDirectory
@@ -88,7 +89,7 @@ Otherwise it searches under the "ramls" [directory](#directory), which might cau
 
 ### rmb
 
-The default is `true`, or this property can be omitted.
+The default is `true`, or this property can be omitted to denote that.
 
 Setting this to `false` enables the `lint-raml-cop` CI job to avoid some RMB-specific extra tests.
 
