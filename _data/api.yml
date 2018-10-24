@@ -338,6 +338,14 @@ mod-sender:
       - sender
     ramlutil: ramls/raml-util
 
+mod-email:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - email
+    ramlutil: ramls/raml-util
+
 mod-template-engine:
   - label: null
     directory: ramls
