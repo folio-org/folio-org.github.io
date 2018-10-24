@@ -1,8 +1,14 @@
-# List of locations of RAML files.
+# List of locations of RAML files in each raml-related repository.
 #
-# Used by reference/api/index.md and folio-tools/generate-api-docs and folio-tools/lint-raml
+# Used by various facilities:
+# reference/api/index.md
+# folio-tools/generate-api-docs
+# folio-tools/lint-raml
+# mod-graphql
 #
 # https://dev.folio.org/faqs/how-to-configure-api-doc-generation/
+#
+# The list order is loose functional groups.
 #
 # Leave the two tables (raml-module-builder, raml) at the bottom.
 ---
@@ -15,13 +21,47 @@ default:
       - dummy
     ramlutil: ramls/raml-util
 
-okapi:
+mod-login:
   - label: null
-    directory: okapi-core/src/main/raml
+    version1: true
+    directory: ramls
     files:
-      - okapi
-    ramlutil: okapi-core/src/main/raml/raml-util
-    rmb: false
+      - login
+    ramlutil: ramls/raml-util
+
+mod-login-saml:
+  - label: null
+    directory: ramls
+    files:
+      - saml-login
+    ramlutil: null
+
+mod-permissions:
+  - label: null
+    version1: true
+    directory: ramls/raml-util/ramls/mod-permissions
+    files:
+      - tenantPermissions
+      - permissions
+    ramlutil: null
+    schemasDirectory: ramls/raml-util/schemas/mod-permissions
+    shared: ramls/mod-permissions
+# 201810: Upcoming new config stage 2, to replace the above entry
+#mod-permissions:
+#  - label: null
+#    directory: ramls
+#    files:
+#      - tenantPermissions
+#      - permissions
+#    ramlutil: ramls/raml-util
+
+mod-password-validator:
+  - label: null
+    directory: ramls
+    files:
+      - password-validator
+      - validator-registry
+    ramlutil: ramls/raml-util
 
 mod-users:
   - label: null
@@ -44,47 +84,50 @@ mod-users-bl:
       - raml
     ramlutil: ramls/raml
 
-mod-permissions:
+mod-patron:
   - label: null
-    version1: true
-    directory: ramls/raml-util/ramls/mod-permissions
-    files:
-      - tenantPermissions
-      - permissions
-    ramlutil: null
-    schemasDirectory: ramls/raml-util/schemas/mod-permissions
-    shared: ramls/mod-permissions
-# 201810: Upcoming new config stage 2, to replace the above entry
-#mod-permissions:
-#  - label: null
-#    directory: ramls
-#    files:
-#      - tenantPermissions
-#      - permissions
-#    ramlutil: ramls/raml-util
-
-mod-login:
-  - label: null
-    version1: true
     directory: ramls
     files:
-      - login
+      - patron
     ramlutil: ramls/raml-util
 
-mod-login-saml:
+edge-patron:
   - label: null
     directory: ramls
     files:
-      - saml-login
+      - edge-patron
     ramlutil: null
+    rmb: false
 
-mod-password-validator:
+mod-codex-ekb:
   - label: null
-    directory: ramls
+    version1: true
+    directory: ramls/raml-util/ramls/codex
     files:
-      - password-validator
-      - validator-registry
-    ramlutil: ramls/raml-util
+      - codex
+    ramlutil: null
+    schemasDirectory: ramls/raml-util/schemas/codex
+    shared: ramls/codex
+
+mod-codex-inventory:
+  - label: null
+    version1: true
+    directory: ramls/raml-util/ramls/codex
+    files:
+      - codex
+    ramlutil: null
+    schemasDirectory: ramls/raml-util/schemas/codex
+    shared: ramls/codex
+
+mod-codex-mux:
+  - label: null
+    version1: true
+    directory: ramls/raml-util/ramls/codex
+    files:
+      - codex
+    ramlutil: null
+    schemasDirectory: ramls/raml-util/schemas/codex
+    shared: ramls/codex
 
 mod-circulation:
   - label: null
@@ -105,15 +148,6 @@ mod-circulation-storage:
       - cancellation-reason
       - staff-slips
     ramlutil: ramls/raml-util
-
-mod-configuration:
-  - label: null
-    version1: true
-    directory: ramls/configuration
-    files:
-      - config
-    ramlutil: ramls/raml-util
-    schemasDirectory: ramls/_schemas
 
 mod-inventory:
   - label: null
@@ -152,48 +186,51 @@ mod-inventory-storage:
       - statistical-code-type
     ramlutil: ramls/raml-util
 
-mod-user-import:
+mod-kb-ebsco:
   - label: null
+    version1: true
     directory: ramls
     files:
-      - import
+      - eholdings
+    ramlutil: ramls/raml-util
+    rmb: false
+
+mod-kb-ebsco-java:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - eholdings
+      - packages
+      - providers
+      - resources
+      - titles
     ramlutil: ramls/raml-util
 
-mod-codex-ekb:
+mod-oai-pmh:
   - label: null
     version1: true
-    directory: ramls/raml-util/ramls/codex
+    directory: ramls
     files:
-      - codex
-    ramlutil: null
-    schemasDirectory: ramls/raml-util/schemas/codex
-    shared: ramls/codex
+      - oai-pmh
+    ramlutil: ramls/raml-util
 
-mod-codex-inventory:
+edge-oai-pmh:
   - label: null
     version1: true
-    directory: ramls/raml-util/ramls/codex
+    directory: ramls
     files:
-      - codex
+      - edge-oai-pmh
     ramlutil: null
-    schemasDirectory: ramls/raml-util/schemas/codex
-    shared: ramls/codex
+    rmb: false
 
-mod-codex-mux:
-  - label: null
-    version1: true
-    directory: ramls/raml-util/ramls/codex
-    files:
-      - codex
-    ramlutil: null
-    schemasDirectory: ramls/raml-util/schemas/codex
-    shared: ramls/codex
-
-mod-calendar:
+mod-gobi:
   - label: null
     directory: ramls
     files:
-      - calendar
+      - gobi
+    excludes:
+      - acq-models
     ramlutil: ramls/raml-util
 
 mod-finance-storage:
@@ -209,6 +246,55 @@ mod-finance-storage:
       - transaction
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-finance/schemas
+
+mod-orders:
+  - label: null
+    directory: ramls
+    files:
+      - order
+    ramlutil: ramls/raml-util
+    schemasDirectory: ramls/acq-models/mod-orders-storage/schemas
+
+mod-orders-storage:
+  - label: null
+    directory: ramls
+    files:
+      - adjustment
+      - alert
+      - claim
+      - cost
+      - details
+      - eresource
+      - fund_distribution
+      - license
+      - location
+      - physical
+      - po_line
+      - purchase_order
+      - renewal
+      - reporting_code
+      - source
+      - vendor_detail
+    ramlutil: ramls/raml-util
+    schemasDirectory: ramls/acq-models/mod-orders-storage/schemas
+
+edge-orders:
+  - label: null
+    directory: ramls
+    files:
+      - edge-orders
+    ramlutil: null
+    rmb: false
+
+mod-vendors:
+  - label: null
+    directory: ramls
+    files:
+      - vendor
+      - contact_category
+      - vendor_category
+    ramlutil: ramls/raml-util
+    schemasDirectory: ramls/acq-models/mod-vendors/schemas
 
 mod-feesfines:
   - label: null
@@ -252,6 +338,20 @@ mod-sender:
       - sender
     ramlutil: ramls/raml-util
 
+mod-template-engine:
+  - label: null
+    directory: ramls
+    files:
+      - template-engine
+    ramlutil: ramls/raml-util
+
+mod-calendar:
+  - label: null
+    directory: ramls
+    files:
+      - calendar
+    ramlutil: ramls/raml-util
+
 mod-tags:
   - label: null
     version1: true
@@ -260,46 +360,11 @@ mod-tags:
       - tags
     ramlutil: ramls/raml-util
 
-mod-template-engine:
+mod-user-import:
   - label: null
     directory: ramls
     files:
-      - template-engine
-    ramlutil: ramls/raml-util
-
-mod-kb-ebsco:
-  - label: null
-    version1: true
-    directory: ramls
-    files:
-      - eholdings
-    ramlutil: ramls/raml-util
-    rmb: false
-
-mod-kb-ebsco-java:
-  - label: null
-    version1: true
-    directory: ramls
-    files:
-      - eholdings
-      - packages
-      - providers
-      - resources
-      - titles
-    ramlutil: ramls/raml-util
-
-mod-rtac:
-  - label: null
-    directory: ramls
-    files:
-      - rtac
-    ramlutil: ramls/raml-util
-
-mod-patron:
-  - label: null
-    directory: ramls
-    files:
-      - patron
+      - import
     ramlutil: ramls/raml-util
 
 mod-data-import:
@@ -307,8 +372,17 @@ mod-data-import:
     version1: true
     directory: ramls
     files:
-      - dataImportPing
+      - dataImport
     ramlutil: ramls/raml-util
+
+mod-data-loader:
+  - label: null
+    directory: ramls
+    files:
+      - loader
+    excludes:
+      - inventory
+    ramlutil: ramls/inventory/raml-util
 
 mod-source-record-storage:
   - label: null
@@ -326,97 +400,12 @@ mod-source-record-manager:
       - metadata-provider
     ramlutil: ramls/raml-util
 
-mod-data-loader:
+mod-rtac:
   - label: null
     directory: ramls
     files:
-      - loader
-    excludes:
-      - inventory
-    ramlutil: ramls/inventory/raml-util
-
-mod-orders:
-  - label: null
-    directory: ramls
-    files:
-      - order
+      - rtac
     ramlutil: ramls/raml-util
-    schemasDirectory: ramls/acq-models/mod-orders-storage/schemas
-
-mod-orders-storage:
-  - label: null
-    directory: ramls
-    files:
-      - adjustment
-      - alert
-      - claim
-      - cost
-      - details
-      - eresource
-      - fund_distribution
-      - license
-      - location
-      - physical
-      - po_line
-      - purchase_order
-      - renewal
-      - reporting_code
-      - source
-      - vendor_detail
-    ramlutil: ramls/raml-util
-    schemasDirectory: ramls/acq-models/mod-orders-storage/schemas
-
-mod-vendors:
-  - label: null
-    directory: ramls
-    files:
-      - vendor
-      - contact_category
-      - vendor_category
-    ramlutil: ramls/raml-util
-    schemasDirectory: ramls/acq-models/mod-vendors/schemas
-
-mod-gobi:
-  - label: null
-    directory: ramls
-    files:
-      - gobi
-    excludes:
-      - acq-models
-    ramlutil: ramls/raml-util
-
-mod-audit:
-  - label: null
-    version1: true
-    directory: ramls
-    files:
-      - audit-data
-    ramlutil: ramls/raml-util
-
-mod-oai-pmh:
-  - label: null
-    version1: true
-    directory: ramls
-    files:
-      - oai-pmh
-    ramlutil: ramls/raml-util
-
-edge-oai-pmh:
-  - label: null
-    version1: true
-    directory: ramls
-    files:
-      - edge-oai-pmh
-    ramlutil: null
-    rmb: false
-
-edge-patron:
-  - label: null
-    directory: ramls
-    files:
-      - edge-patron
-    ramlutil: null
-    rmb: false
 
 edge-rtac:
   - label: null
@@ -426,12 +415,29 @@ edge-rtac:
     ramlutil: null
     rmb: false
 
-edge-orders:
+mod-audit:
   - label: null
+    version1: true
     directory: ramls
     files:
-      - edge-orders
-    ramlutil: null
+      - audit-data
+    ramlutil: ramls/raml-util
+
+mod-configuration:
+  - label: null
+    version1: true
+    directory: ramls/configuration
+    files:
+      - config
+    ramlutil: ramls/raml-util
+    schemasDirectory: ramls/_schemas
+
+okapi:
+  - label: null
+    directory: okapi-core/src/main/raml
+    files:
+      - okapi
+    ramlutil: okapi-core/src/main/raml/raml-util
     rmb: false
 
 # Leave the following two tables (raml-module-builder, raml) at the bottom.
@@ -473,5 +479,4 @@ raml:
     schemasDirectory: schemas/tagged-record-example
 
 # Leave the previous two tables (raml-module-builder, raml) at the bottom.
-# Place other entries above those.
 
