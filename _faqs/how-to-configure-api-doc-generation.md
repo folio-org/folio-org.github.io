@@ -87,6 +87,12 @@ This enables the API docs table to exclude the "view-2" column as explained in t
 For some non-standard layouts, the [Describe schema and properties](/guides/describe-schema/) component of the [lint-raml-cop](/guides/raml-cop/) CI job needs to be provided this pathname to the JSON schemas.
 Otherwise it searches under the "ramls" [directory](#directory), which might cause it to discover additional files.
 
+### multiple
+
+To assist mod-graphql to handle interfaceType=multiple rather than reading ModuleDescriptor.
+Set `multiple` to `true` if this module provides the "multiple" interface.
+Default is `false`, or this property can be omitted to denote that.
+
 ### rmb
 
 The default is `true`, or this property can be omitted to denote that.
