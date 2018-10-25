@@ -477,6 +477,7 @@ raml:
     files:
       - tenant
     ramlutil: .
+    shared: ramls
   - label: shared-mod-permissions
     directory: ramls/mod-permissions
     files:
@@ -484,6 +485,7 @@ raml:
       - permissions
     ramlutil: .
     schemasDirectory: schemas/mod-permissions
+    shared: ramls/mod-permissions
     multiple: true
   - label: shared-codex
     directory: ramls/codex
@@ -491,6 +493,7 @@ raml:
       - codex
     ramlutil: .
     schemasDirectory: schemas/codex
+    shared: ramls/codex
     multiple: true
   - label: tagged-record-example
     directory: ramls/tagged-record-example
@@ -498,6 +501,7 @@ raml:
       - users
     ramlutil: .
     schemasDirectory: schemas/tagged-record-example
+    shared: ramls/tagged-record-example
     multiple: true
 
 # Leave the previous two tables (raml-module-builder, raml) at the bottom.

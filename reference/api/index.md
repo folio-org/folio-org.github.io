@@ -58,7 +58,7 @@ See [usage notes](#usage-notes) below.
       {% capture urlDoc2 %}{{ urlAws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}2/{{ doc }}.html{% endcapture %}
       {% capture view2 %}{% unless docset.version1 %}<a href="{{ urlDoc2 }}">view-2</a>{% endunless %}{% endcapture %}
       {% if docset.shared %}
-        {% capture urlRaml %}{{ urlGithub }}/raml/blob/master/{{ docset.shared }}/{{ doc }}.raml{% endcapture %}
+        {% capture urlRaml %}{{ urlGithub }}/raml/blob/HEAD/{{ docset.shared }}/{{ doc }}.raml{% endcapture %}
       {% else %}
         {% capture urlRaml %}{{ urlGithub }}/{{ repo[0] }}/blob/master/{{ docset.directory }}/{{ doc }}.raml{% endcapture %}
       {% endif %}
@@ -96,5 +96,5 @@ The "batches" is a [temporary](https://issues.folio.org/browse/FOLIO-1592) way t
 * For repositories that are now using RAML-1.0 version, the "view-2" presentation is not available because the software that is used to generate that view only supports RAML-0.8 version.
 
 * The asterisk `*` denotes that this is a shared set of RAML files.
-The generated documents are for this module's current raml-util, but the link to the source RAML file is to the master of the shared
+The generated documents are for this module's current raml-util, but the link to the source RAML file is to the head of the default branch of the shared
 "[raml](#raml)" repository.
