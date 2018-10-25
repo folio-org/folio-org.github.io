@@ -473,12 +473,14 @@ raml-module-builder:
 
 raml:
   - label: shared
+    version1: true
     directory: ramls
     files:
       - tenant
     ramlutil: .
     shared: ramls
   - label: shared-mod-permissions
+    version1: true
     directory: ramls/mod-permissions
     files:
       - tenantPermissions
@@ -488,6 +490,7 @@ raml:
     shared: ramls/mod-permissions
     multiple: true
   - label: shared-codex
+    version1: true
     directory: ramls/codex
     files:
       - codex
@@ -496,6 +499,7 @@ raml:
     shared: ramls/codex
     multiple: true
   - label: tagged-record-example
+    version1: true
     directory: ramls/tagged-record-example
     files:
       - users
