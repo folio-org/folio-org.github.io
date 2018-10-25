@@ -484,18 +484,21 @@ raml:
       - permissions
     ramlutil: .
     schemasDirectory: schemas/mod-permissions
+    multiple: true
   - label: shared-codex
     directory: ramls/codex
     files:
       - codex
     ramlutil: .
     schemasDirectory: schemas/codex
+    multiple: true
   - label: tagged-record-example
     directory: ramls/tagged-record-example
     files:
       - users
     ramlutil: .
     schemasDirectory: schemas/tagged-record-example
+    multiple: true
 
 # Leave the previous two tables (raml-module-builder, raml) at the bottom.
 
