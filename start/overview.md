@@ -91,14 +91,14 @@ The related [Securing Okapi](https://github.com/folio-org/okapi/blob/master/doc/
 used in various documentation as a back-end exemplar.
 Also its run.sh script to run a basic local system.
 
-[Stripes Core](https://github.com/folio-org/stripes-core/blob/master/README.md).
-Its "Documentation roadmap" links to other related Stripes and UI development documentation.
+[Stripes](https://github.com/folio-org/stripes/blob/master/README.md).
+It contains links to other related Stripes and UI development documentation.
 
-[Stripes entities: packages, modules, apps and more](https://github.com/folio-org/stripes-core/blob/master/doc/modules-apps-etc.md).
+[Stripes entities: packages, modules, apps and more](https://github.com/folio-org/stripes/blob/master/doc/modules-apps-etc.md).
 
-[The Stripes Module Developer's Guide](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md).
+[The Stripes Module Developer's Guide](https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md).
 
-[Stripes: quick start](https://github.com/folio-org/stripes-core/blob/master/doc/quick-start.md).
+[Stripes: quick start](https://github.com/folio-org/stripes/blob/master/doc/quick-start.md).
 
 [Stripes CLI](https://github.com/folio-org/stripes-cli)
 and its [Stripes CLI User Guide](https://github.com/folio-org/stripes-cli/blob/master/doc/user-guide.md).

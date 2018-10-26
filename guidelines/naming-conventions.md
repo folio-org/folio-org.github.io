@@ -103,7 +103,7 @@ Each release is tagged in git, with a name beginning with `v` and followed by th
 There are long-lived release branches, with a name beginning with `b` and followed by the major and minor version number -- for example, `b2.17`.
 
 See further information for
-[front-end](https://github.com/folio-org/stripes-core/blob/master/doc/release-procedure.md#version-numbers-branches-and-tags)
+[front-end](https://github.com/folio-org/stripes/blob/master/doc/release-procedure.md#version-numbers-branches-and-tags)
 and
 [back-end](/guidelines/release-procedures/#bug-fix-releases)
 modules.

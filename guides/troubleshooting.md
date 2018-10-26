@@ -11,7 +11,7 @@ Some FOLIO repositories also have specific notes.
 
 ## Other troubleshooting documents
 
-* [Stripes troubleshooting](https://github.com/folio-org/stripes-core/blob/master/doc/troubleshooting.md)
+* [Stripes troubleshooting](https://github.com/folio-org/stripes/blob/master/doc/troubleshooting.md)
 * [Vagrant boxes troubleshooting](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md#troubleshootingknown-issues)
 
 ## Keep system tools up-to-date

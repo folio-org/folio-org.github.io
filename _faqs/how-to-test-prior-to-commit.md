@@ -25,4 +25,4 @@ along with the ability to run specific tests.
 
 (The deprecated repository ui-testing [Regression tests for FOLIO UI](https://github.com/folio-org/ui-testing) might still be useful while tests and documentation are moved to those places.)
 
-When running local tests, ensure a well-configured Stripes (see [Creating a new development setup for Stripes](https://github.com/folio-org/stripes-core/blob/master/doc/new-development-setup.md)). Ensure an up-to-date [Pre-built Vagrant box](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md).
+When running local tests, ensure a well-configured Stripes (see [Creating a new development setup for Stripes](https://github.com/folio-org/stripes/blob/master/doc/new-development-setup.md)). Ensure an up-to-date [Pre-built Vagrant box](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md).
