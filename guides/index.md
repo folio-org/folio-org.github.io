@@ -59,7 +59,7 @@ module, especially RAML Module Builder (RMB).
 ## User Interface
 
 The FOLIO user-interface toolkit is called Stripes. It is described in the
-[Stripes Core README](https://github.com/folio-org/stripes-core/blob/master/README.md),
+[Stripes README](https://github.com/folio-org/stripes/blob/master/README.md),
 which leads to the related documentation.
 
 With that background understanding, see the documentation for each

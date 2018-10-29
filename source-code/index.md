@@ -255,18 +255,17 @@ services and wrapping UI functionality into convenient modules. We
 envisage that most FOLIO UI work will be done in the context of
 Stripes.
 
-The stripes-core [documentation roadmap](https://github.com/folio-org/stripes-core#documentation-roadmap) is the starting point.
+The stripes [documentation](https://github.com/folio-org/stripes/blob/master/README.md) is the starting point.
 Each module has its own documentation.
 
 Note that Stripes is still in the design phase, so although code
 exists and can be run, the APIs are likely to change.
 
 - [stripes](https://github.com/folio-org/stripes)
-  -- The Stripes Framework.
+  -- The Stripes Framework. Includes extensive documentation.
 
 - [stripes-core](https://github.com/folio-org/stripes-core)
   -- The core of the Stripes/UI framework.
-  Includes extensive documentation.
 
 - [stripes-components](https://github.com/folio-org/stripes-components)
   -- A component library for Stripes.

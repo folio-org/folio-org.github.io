@@ -29,12 +29,12 @@ the [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/d
 The FOLIO UI toolkit. The Stripes toolkit provides a means of building
 web applications that expose the functionality of underlying Okapi
 modules. For more information, see the
-[Stripes Core GitHub repository](https://github.com/folio-org/stripes-core).
+[Stripes GitHub repository](https://github.com/folio-org/stripes).
 
 ### Stripes entities
 
 The document
-[Stripes entities: packages, modules, apps and more](https://github.com/folio-org/stripes-core/blob/master/doc/modules-apps-etc.md)
+[Stripes entities: packages, modules, apps and more](https://github.com/folio-org/stripes/blob/master/doc/modules-apps-etc.md)
 is a summary of terms used in that context, e.g. component, package, module, app, plugin.
 
 ### Platform, LSP Base, LSP Extended

@@ -27,10 +27,10 @@ Bearing in mind that [FOLIO uses any programming language](/guides/any-programmi
 - [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework.
 - Each [server-side](/source-code/#server-side) and [client-side](/source-code/#client-side)
 module's own documentation.
-- [Stripes Core README](https://github.com/folio-org/stripes-core/blob/master/README.md)
+- [Stripes README](https://github.com/folio-org/stripes/blob/master/README.md)
 guides to all front-end documentation.
-- [Stripes entities: packages, modules, apps and more](https://github.com/folio-org/stripes-core/blob/master/doc/modules-apps-etc.md).
-- [The Stripes Module Developer's Guide](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md)
+- [Stripes entities: packages, modules, apps and more](https://github.com/folio-org/stripes/blob/master/doc/modules-apps-etc.md).
+- [The Stripes Module Developer's Guide](https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md)
 for those writing UI modules for Stripes.
 - [How to run tests prior to commit](/faqs/how-to-test-prior-to-commit/)
 The testing framework is explained. Guidelines for module developers.

@@ -48,7 +48,7 @@ Regarding "Quality Profile" see issue [FOLIO-864](https://issues.folio.org/brows
 
 ## ESLint for client-side projects
 
-The [Code quality](https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#code-quality)
+The [Code quality](https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#code-quality)
 section of _The Stripes Module Developer's Guide_ explains ESLint usage, how to run it prior to commit, and how to disable some lines.
 
 ## RAML and Schema
