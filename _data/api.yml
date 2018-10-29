@@ -357,6 +357,14 @@ mod-email:
       - email
     ramlutil: ramls/raml-util
 
+mod-event-config:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - event_config
+    ramlutil: ramls/raml-util
+
 mod-template-engine:
   - label: null
     directory: ramls
