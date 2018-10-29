@@ -139,6 +139,12 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-sender](https://github.com/folio-org/mod-sender)
   -- Intermediary for sending prepared messages through appropriate delivery channels.
 
+- [mod-email](https://github.com/folio-org/mod-email)
+  -- Provides functionality for sending notifications.
+
+- [mod-event-config](https://github.com/folio-org/mod-event-config)
+  -- Provides functionality for the notification events.
+
 - [mod-codex-mux](https://github.com/folio-org/mod-codex-mux)
   -- Codex Multiplexer.
 
@@ -382,6 +388,9 @@ exists and can be run, the APIs are likely to change.
 
 - [platform-core](https://github.com/folio-org/platform-core)
   -- Stripes platform: Core.
+
+- [platform-erm](https://github.com/folio-org/platform-erm)
+  -- Stripes platform: ERM.
 
 - [folio-testing-platform](https://github.com/folio-org/folio-testing-platform)
   -- Stripes platform: Testing.
