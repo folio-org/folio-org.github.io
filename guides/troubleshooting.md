@@ -44,7 +44,8 @@ See issue [STRIPES-344](https://issues.folio.org/browse/STRIPES-344) for details
 
 ## Missing certificate authority for Let's Encrypt
 
-If you are using a version of the Oracle JDK prior to `1.8.0_101`
+If using OpenJDK, then it has been supporting Let's Encrypt for some time.
+However if using a version of the Oracle JDK prior to `1.8.0_101`
 then the [Let's Encrypt](https://letsencrypt.org/)
 certificate authority is not in the Java trust store
 ([see notes](https://stackoverflow.com/questions/34110426/does-java-support-lets-encrypt-certificate)).

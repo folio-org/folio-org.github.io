@@ -42,7 +42,7 @@ As each FOLIO component can utilise whatever suite of appropriate tools, refer t
 
 Occasionally it becomes necessary to specify minimum versions of some tools:
 
-* Java: [1.8.0-101](/guides/troubleshooting#missing-certificate-authority-for-lets-encrypt)
+* Java: [8u101](/guides/troubleshooting#missing-certificate-authority-for-lets-encrypt) or higher.
 * Postgres: [9.6.1](https://github.com/folio-org/mod-circulation-storage/pull/73)
 
 ### Other tools
