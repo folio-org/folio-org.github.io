@@ -33,7 +33,7 @@ Before attending the workshop, participants must meet these requirements.
 When in doubt, using the VirtualBox guest machine is recommended.
 
 ### On-Machine
-* [Java 8 JDK 1.8.0-101](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or higher
+* Java: [8u101](/guides/troubleshooting#missing-certificate-authority-for-lets-encrypt) or higher.
 * Maven 3.3.9 or higher
 * Node.js 6.x or higher
 * [Yarn](https://yarnpkg.com/en/) package manager v0.20.3 or higher
