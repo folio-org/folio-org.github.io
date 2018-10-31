@@ -76,8 +76,6 @@ See [usage notes](#usage-notes) below.
 </table>
 {% endfor %}
 
-**NOTE:** 2018-10-24: That last set of generated documents are old. Jenkins needs to be [re-instated](https://issues.folio.org/browse/FOLIO-1598) on the default branch to generate these docs.
-
 ## Further information
 
 ### Configuration {#configure-api-docs}
