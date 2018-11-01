@@ -165,9 +165,7 @@ This is a typical directory layout, excluding the general boilerplate files and 
 │   └── ui-testing
 ├── translations
     └── ui-users
-        ├── de.json
         ├── en.json
-        └── hu.json
 ```
 
 ## Jenkinsfile {#front-end-jenkinsfile}
@@ -231,5 +229,7 @@ As shown in the example listing, the files are within a sub-directory with the s
 
 The various `stripes-components` are separately handled.
 
-See the "[I18n best practices](https://github.com/folio-org/stripes/blob/master/doc/i18n.md)" internationalization documentation, and facilities provided by Stripes Core.
+See the "[i18n best practices](https://github.com/folio-org/stripes/blob/master/doc/i18n.md)" internationalization and localization documentation, and facilities provided by Stripes Core.
+
+As explained there, the `en.json` file provides the default keys and strings. The files for other languages are automatically generated and merged by Lokalise, with the assistance of human translators.
 
