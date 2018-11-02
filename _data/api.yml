@@ -235,6 +235,16 @@ edge-oai-pmh:
     ramlutil: null
     rmb: false
 
+mod-erm-usage:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - aggregatorsettings
+      - counterreports
+      - usagedataproviders
+    ramlutil: ramls/raml-util
+
 mod-gobi:
   - label: null
     directory: ramls
