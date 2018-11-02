@@ -274,7 +274,9 @@ Note that Stripes is still in the design phase, so although code
 exists and can be run, the APIs are likely to change.
 
 - [stripes](https://github.com/folio-org/stripes)
-  -- The Stripes Framework. Includes extensive documentation.
+  -- The Stripes Framework.
+  UI framework for building front-end FOLIO modules.
+  Includes extensive documentation.
 
 - [stripes-core](https://github.com/folio-org/stripes-core)
   -- The core of the Stripes/UI framework.
