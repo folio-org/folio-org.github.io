@@ -203,6 +203,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-erm](https://github.com/folio-org/mod-erm)
   -- Electronic resource management (ERM)
 
+- [mod-erm-usage](https://github.com/folio-org/mod-erm-usage)
+  -- Gather and store ERM usage statistics.
+
 - [mod-licenses](https://github.com/folio-org/mod-licenses)
   -- Upload, manage and analyze licenses.
 
@@ -247,6 +250,9 @@ facilitated by the code in the `raml-module-builder` repository.
 
 - [edge-patron](https://github.com/folio-org/edge-patron)
   -- Edge API to interface with FOLIO for 3rd party discovery services to allow patrons to perform self-service actions.
+
+- [edge-resolver](https://github.com/folio-org/edge-resolver)
+  -- Edge API to bridge the gap between external reporting and analytics systems and FOLIO by allowing these systems to resolve FOLIO UUIDs, such as a FOLIO user id, thereby acquiring a richer set of data.
 
 - [edge-rtac](https://github.com/folio-org/edge-rtac)
   -- Edge API for RTAC (Real Time Availability Check).
@@ -322,6 +328,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-data-import](https://github.com/folio-org/ui-data-import)
   -- Stripes UI module: Managing batch data loader.
 
+- [ui-marccat](https://github.com/folio-org/ui-marccat)
+  -- Stripes UI module: searching, sorting, filtering, viewing, editing and creating BIB record.
+
 - [ui-orders](https://github.com/folio-org/ui-orders)
   -- Stripes UI module: Orders.
 
@@ -333,6 +342,9 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-erm](https://github.com/folio-org/ui-erm)
   -- Stripes UI module: Electronic resource management (ERM).
+
+- [ui-erm-usage](https://github.com/folio-org/ui-erm-usage)
+  -- Stripes UI module: Managing ERM usage statistics.
 
 - [ui-licenses](https://github.com/folio-org/ui-licenses)
   -- Stripes UI module: Upload, manage and analyze licenses.
