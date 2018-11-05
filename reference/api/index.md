@@ -13,28 +13,35 @@ menuSubIndex: 2
 
 These API specifications are [automatically](#configure-api-docs) generated from each repository's
 RAML files, and specify how client modules may
-access the functionality provided by these important core modules.
+access the functionality provided by these modules.
 See [usage notes](#usage-notes) below.
 
 * view-1: Uses pop-up windows for each method and endpoint.
 * view-2: Uses one-page view to everything.
 
+This list of modules is sorted into loose functional groups.
+
 {% assign urlAws = "https://s3.amazonaws.com/foliodocs/api" %}
 {% assign urlGithub = "https://github.com/folio-org" %}
-{% assign noteRaml = 'This is the shared RAML repository. Refer to the relevant table above, as each module uses a certain version of this as their "raml-util" directory.' %}
+{% assign noteRaml = 'This is the shared RAML repository. Each module uses a certain version of this as their "raml-util" directory.' %}
 {% assign counterBatch = 1 %}
 
-<h2 id="batch-{{ counterBatch }}"> Batch {{ counterBatch }} </h2>
-{% for repo in site.data.api %}
-{% if repo[0] == 'default' %} {% continue %} {% endif %}
-{% assign remainder = forloop.index | modulo:7 %}
-{% if remainder == 0 %}
-  {% assign counterBatch = counterBatch | plus:1 %}
-  <h2 id="batch-{{ counterBatch }}"> Batch {{ counterBatch }} </h2>
-{% endif %}
-<h3 id="{{ repo[0] }}"> {{ repo[0] }} </h3>
-{% if repo[0] == 'raml' %}<p>{{ noteRaml }}</p>{% endif %}
-{% if repo[0] == 'raml' %}
+{% for group in site.data.apigroup %}
+  {% assign theGroup = group[0] %}
+  <h2 id="{{ theGroup }}"> {{ group[1].title }} </h2>
+  <p> {{ group[1].description }} </p>
+  {%- for module in group[1].modules -%}
+    <h3 id="{{ module }}"> {{ module }} </h3>
+    {% assign theRepo = '' %}
+    {% for repo in site.data.api %}
+      {% if repo[0] == module %}
+        {% assign theRepo = repo %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+{% if theRepo == '' %}<p> No entry for {{ module }} in api.yml </p>{% endif %}
+{% if module == 'raml' %}<p>{{ noteRaml }}</p>{% endif %}
+{% if module == 'raml' %}
 <table class="api apilabel">
   <thead>
     <tr>
@@ -45,25 +52,25 @@ See [usage notes](#usage-notes) below.
     <tr>
 {% endif %}
       <th class="raml" title="APIs and link to RAML source">
-        APIs {% if repo[1][0].shared %} <a href="#usage-notes"> * </a>{% endif %}
+        APIs {% if theRepo[1][0].shared %} <a href="#usage-notes"> * </a>{% endif %}
       </th>
       <th class="view" title="View 1: using raml2html"></th>
       <th class="view" title="View 2: using raml-fleece"></th>
     </tr>
   </thead>
   <tbody>
-  {%- for docset in repo[1] -%}
+  {%- for docset in theRepo[1] -%}
     {%- for doc in docset.files -%}
-      {% capture urlDoc1 %}{{ urlAws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}{{ doc }}.html{% endcapture %}
-      {% capture urlDoc2 %}{{ urlAws }}/{{ repo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}2/{{ doc }}.html{% endcapture %}
+      {% capture urlDoc1 %}{{ urlAws }}/{{ theRepo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}{{ doc }}.html{% endcapture %}
+      {% capture urlDoc2 %}{{ urlAws }}/{{ theRepo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}2/{{ doc }}.html{% endcapture %}
       {% capture view2 %}{% unless docset.version1 %}<a href="{{ urlDoc2 }}">view-2</a>{% endunless %}{% endcapture %}
       {% if docset.shared %}
         {% capture urlRaml %}{{ urlGithub }}/raml/blob/HEAD/{{ docset.shared }}/{{ doc }}.raml{% endcapture %}
       {% else %}
-        {% capture urlRaml %}{{ urlGithub }}/{{ repo[0] }}/blob/master/{{ docset.directory }}/{{ doc }}.raml{% endcapture %}
+        {% capture urlRaml %}{{ urlGithub }}/{{ theRepo[0] }}/blob/master/{{ docset.directory }}/{{ doc }}.raml{% endcapture %}
       {% endif %}
     <tr>
-{% if repo[0] == 'raml' %}
+{% if theRepo[0] == 'raml' %}
       <td> {{ docset.label }} </td>
 {% endif %}
       <td> <a href="{{ urlRaml }}">{{ doc }}</a> </td>
@@ -74,6 +81,7 @@ See [usage notes](#usage-notes) below.
   {%- endfor %}
   </tbody>
 </table>
+  {% endfor %}
 {% endfor %}
 
 ## Further information
@@ -89,9 +97,6 @@ So the documentation relates only to the current master branch.
 
 * Since August 2018 the generated documents are saved for each software version.
 So for [mod-inventory-storage](#mod-inventory-storage) amend the URL of the generated documents to add the version number (major.minor), e.g. `mod-inventory-storage/12.5/...`
-
-* The order of the list is loose functional groups.
-The "batches" is a [temporary](https://issues.folio.org/browse/FOLIO-1592) way to enable better Table-of-Contents.
 
 * For repositories that are now using RAML-1.0 version, the "view-2" presentation is not available because the software that is used to generate that view only supports RAML-0.8 version.
 
