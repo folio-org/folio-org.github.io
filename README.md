@@ -59,7 +59,7 @@ Other branches are re-built upon push of changes. Follow the GitHub link from th
 ## Additional information
 
 See project [FOLIO](https://issues.folio.org/browse/FOLIO)
-at the [FOLIO issue tracker](https://dev.folio.org/community/guide-issues).
+at the [FOLIO issue tracker](https://dev.folio.org/guidelines/issue-tracker/).
 We use the label "devweb".
 
 The FOLIO Slack channel #dev-website
