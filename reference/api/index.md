@@ -13,7 +13,7 @@ menuSubIndex: 2
 
 These API specifications are [automatically](#configure-api-docs) generated from each repository's
 RAML files, and specify how client modules may
-access the functionality provided by these important core modules.
+access the functionality provided by these modules.
 See [usage notes](#usage-notes) below.
 
 * view-1: Uses pop-up windows for each method and endpoint.
