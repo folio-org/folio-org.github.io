@@ -1,0 +1,90 @@
+# List of groups used to categorise apidocs. See api.yml for further information.
+---
+login:
+  title: Login
+  description: Handling the login process.
+  modules:
+    - mod-login
+    - mod-login-saml
+    - mod-password-validator
+    - mod-permissions
+users:
+  title: Users
+  description: Information about users.
+  modules:
+    - mod-users-bl
+    - mod-users
+    - mod-patron
+    - edge-patron
+    - mod-feesfines
+codex:
+  title: Codex
+  description: The FOLIO Codex.
+  modules:
+    - mod-codex-mux
+    - mod-codex-inventory
+    - mod-codex-ekb
+    - mod-codex-mux
+inventory:
+  title: Inventory and circulation
+  description: Inventory instances, items, and circulation.
+  modules:
+    - mod-circulation
+    - mod-circulation-storage
+    - mod-inventory
+    - mod-inventory-storage
+    - mod-kb-ebsco
+    - mod-kb-ebsco-java
+    - mod-oai-pmh
+    - edge-oai-pmh
+    - mod-erm-usage
+finance:
+  title: Finance and orders
+  description: Finance, orders, vendors.
+  modules:
+    - mod-finance-storage
+    - mod-orders
+    - mod-orders-storage
+    - edge-orders
+    - mod-gobi
+    - mod-vendors
+notifications:
+  title: Notifications
+  description: Assembling and sending notifications.
+  modules:
+    - mod-notify
+    - mod-event-config
+    - mod-email
+    - mod-sender
+data-import:
+  title: Data import
+  description: Importing and loading various data.
+  modules:
+    - mod-data-import
+    - mod-data-loader
+    - mod-source-record-manager
+    - mod-source-record-storage
+    - mod-user-import
+utilities:
+  title: Utilities and tools
+  description: Notes, tags, calendar, etc.
+  modules:
+    - mod-notes
+    - mod-tags
+    - mod-calendar
+    - mod-template-engine
+infrastructure:
+  title: Infrastructure
+  description: Gateway, raml-util, RMB, monitoring, etc.
+  modules:
+    - okapi
+    - raml
+    - raml-module-builder
+    - mod-configuration
+    - mod-audit
+    - mod-rtac
+    - edge-rtac
+other:
+  title: Other
+  description: Not yet grouped.
+  modules:
