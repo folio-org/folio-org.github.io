@@ -20,9 +20,10 @@ It is available to run locally by cloning [folio-tools](https://github.com/folio
 
 ## Add or update configuration
 
-Each RAML-related repository has an entry in the [api.yml](https://github.com/folio-org/folio-org.github.io/blob/master/_data/api.yml) file.
-The order of entries in this file is the order of display at the [API documentation](/reference/api/).
-The order is loose functional groups.
+### Main api.yml
+
+Each RAML-related repository has an entry in the main [api.yml](https://github.com/folio-org/folio-org.github.io/blob/master/_data/api.yml) file.
+(See also the supporting [Groups](#groups-apigroupyml) below.)
 
 When your new project repository has its initial "ramls" directory established, there will be no configuration for it.
 That is okay, as the CI jobs will attempt to use the default [structure](/guides/commence-a-module/#back-end-ramls).
@@ -38,12 +39,24 @@ For example: `yq '.' _data/api.yml`
 The configuration entry can be tested by locally running the
 `runLintRamlCop` CI job (i.e. [folio-tools/lint-raml](https://github.com/folio-org/folio-tools/tree/master/lint-raml)).
 
-Send a pull request for the [api.yml](https://github.com/folio-org/folio-org.github.io/blob/master/_data/api.yml) file.
+Send a pull request for the [api.yml](https://github.com/folio-org/folio-org.github.io/blob/master/_data/api.yml) file (and the [Groups](#groups-apigroupyml) file if needed).
 
 Occasionally the set of files to be published may need to be updated.
 As explained in the "[files](#files)" section below, this is a manual task for the time being.
 
+### Groups apigroup.yml
+
+The [apigroup.yml](https://github.com/folio-org/folio-org.github.io/blob/master/_data/apigroup.yml)
+file assists the website to provide the navigation Table-of-Contents.
+
+Add new modules to the relevant group.
+
+The order of entries in this file is the order of display at the [API documentation](/reference/api/).
+
 ## Configuration file format
+
+This section explains the format of the main `api.yml` configuration file.
+(The format of the other `apigroup.yml` file is self-explanatory.)
 
 ### label
 

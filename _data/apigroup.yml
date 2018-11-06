@@ -24,7 +24,7 @@ codex:
     - mod-codex-mux
     - mod-codex-inventory
     - mod-codex-ekb
-    - mod-codex-mux
+    - mod-codex-mock
 inventory:
   title: Inventory and circulation
   description: Inventory instances, items, and circulation.
