@@ -19,19 +19,26 @@ See [usage notes](#usage-notes) below.
 * view-1: Uses pop-up windows for each method and endpoint.
 * view-2: Uses one-page view to everything.
 
-This list of modules is sorted into loose functional groups.
+This list of modules is sorted into functional groups.
 
 {% assign urlAws = "https://s3.amazonaws.com/foliodocs/api" %}
 {% assign urlGithub = "https://github.com/folio-org" %}
 {% assign noteRaml = 'This is the shared RAML repository. Each module uses a certain version of this as their "raml-util" directory.' %}
-{% assign counterBatch = 1 %}
+{% assign moduleIdEntries = "" | split: ',' %}
 
 {% for group in site.data.apigroup %}
-  {% assign theGroup = group[0] %}
-  <h2 id="{{ theGroup }}"> {{ group[1].title }} </h2>
+  {% assign groupId = group[0] %}
+  <h2 id="{{ groupId }}"> {{ group[1].title }} </h2>
   <p> {{ group[1].description }} </p>
   {%- for module in group[1].modules -%}
-    <h3 id="{{ module }}"> {{ module }} </h3>
+    {%- assign moduleId = module -%}
+    {%- assign hasModuleId = moduleIdEntries | where_exp: "item", "item == moduleId" | size %}
+    {%- if hasModuleId > 0 -%}
+      {%- assign moduleIdNum = hasModuleId | plus: 1 -%}
+      {%- assign moduleId = moduleId | append: "-" | append: moduleIdNum  -%}
+    {%- endif -%}
+    {%- assign moduleIdEntries = moduleIdEntries | push: module -%}
+    <h3 id="{{ moduleId }}"> {{ module }} </h3>
     {% assign theRepo = '' %}
     {% for repo in site.data.api %}
       {% if repo[0] == module %}
