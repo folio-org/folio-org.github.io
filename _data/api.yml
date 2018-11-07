@@ -496,6 +496,7 @@ raml:
     files:
       - tenant
     ramlutil: .
+    schemasDirectory: schemas
     shared: ramls
   - label: shared-mod-permissions
     version1: true
