@@ -10,14 +10,17 @@ Each property of an API schema has a "description" field.
 These are utilised to explain the purpose of the properties and enable their use.
 Each schema also has a top-level description explaining the overall purpose.
 
-Refer to an example at [mod-circulation-storage](https://github.com/folio-org/mod-circulation-storage/blob/master/ramls/loan.json)
+Refer to some examples:
+* [mod-circulation-storage loan.json](https://github.com/folio-org/mod-circulation-storage/blob/master/ramls/loan.json)
 and its generated [documentation](https://s3.amazonaws.com/foliodocs/api/mod-circulation-storage/loan-storage.html#loan_storage_loans__loanId__get) (select the "Response" tab).
+* [mod-inventory-storage instance.json](https://github.com/folio-org/mod-inventory-storage/blob/master/ramls/instance.json)
+and its generated [documentation](https://s3.amazonaws.com/foliodocs/api/mod-inventory-storage/instance-storage.html#instance_storage_instances__instanceid__get) (select the "Response" tab).
 
 Library subject-matter experts can also assist to improve these descriptions.
 
 Add a "description" for each of the property elements within a "properties" object. Note that there may also be nested properties objects.
 
-Some properties might have supporting attributes such as "pattern" for a UUID, "enum" to enumerate the allowed values, "format, "default", etc. and the "required" section of the schema.
+Some properties might have supporting attributes such as "pattern" for a UUID, "enum" to enumerate the allowed values, "format, "default", "uniqueItems", etc. and the "required" sections of the schema.
 When adding new properties, utilise these from the start.
 
 For existing properties, if those are not already present, then define such constraints in prose in the description. They can later be formalised, perhaps as a new interface version.
