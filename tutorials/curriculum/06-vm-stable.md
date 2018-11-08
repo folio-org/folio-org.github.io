@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Interact with the FOLIO Stable VM
+title: Interact with a FOLIO stable VM
 permalink: /tutorials/curriculum/06-vm-stable/
 menuInclude: yes
 menuLink: yes
