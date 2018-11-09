@@ -21,7 +21,7 @@ menuSubs:
     url: /tutorials/curriculum/04-deploy-test-stripes-module/
   - title: Set up Users app
     url: /tutorials/curriculum/05-set-up-the-folio-users-app/
-  - title: Interact with Stable VM
+  - title: Interact with a stable VM
     url: /tutorials/curriculum/06-vm-stable/
 ---
 

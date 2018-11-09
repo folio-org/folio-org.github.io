@@ -346,4 +346,4 @@ $ curl -i -X GET -H "Content-Type:application/json" \
 ```
 
 A more useful set of users is available when using the Vagrant boxes,
-(e.g. folio-stable) as shown in the neext lesson.
+as shown in the next lesson.

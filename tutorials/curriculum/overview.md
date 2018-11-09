@@ -97,5 +97,5 @@ Each time that you open a new shell terminal window, do those latter two steps t
 1. [Enable Okapi Authentication](../03-enable-okapi-authentication)
 1. [Deploy test Stripes package](../04-deploy-test-stripes-module)
 1. Real-world application: [set up the FOLIO Users app](../05-set-up-the-folio-users-app)
-1. [Interact with the FOLIO Stable VM](../06-vm-stable)
+1. [Interact with a FOLIO stable VM](../06-vm-stable)
 
