@@ -215,6 +215,12 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-oai-pmh](https://github.com/folio-org/mod-oai-pmh)
   -- Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH).
 
+- [mod-workflow](https://github.com/folio-org/mod-workflow)
+  -- Workflow proof-of-concept. With related modules:
+  [mod-camunda](https://github.com/folio-org/mod-camunda),
+  [spring-module-core](https://github.com/folio-org/spring-module-core),
+  [mod-spring-sample](https://github.com/folio-org/mod-spring-sample).
+
 - [mod-audit](https://github.com/folio-org/mod-audit)
   -- Manage audit data.
 
