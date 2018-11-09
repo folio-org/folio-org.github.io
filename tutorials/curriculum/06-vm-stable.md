@@ -72,7 +72,7 @@ The [CQL docs](/reference/glossary/#cql) will explain the Contextual Query Langu
 So start talking, do: `./run-basic.sh`
 
 ```shell
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Run some queries.
 
@@ -83,7 +83,7 @@ PATH_TMP="/tmp/folio-demo"
 H_TENANT="-HX-Okapi-Tenant:diku"
 H_JSON="-HContent-type:application/json"
 
-echo Ensuring that Okapi can be reached ...
+echo Ensure that Okapi can be reached ...
 $CURL $OKAPIURL/_/proxy/tenants
 STATUS=$?
 if [ $STATUS != 0 ]; then
@@ -92,7 +92,7 @@ if [ $STATUS != 0 ]; then
 fi
 echo
 
-echo Doing login and getting our token ...
+echo Do login and obtain our token ...
 cat >$PATH_TMP-login-credentials.json << END
 {
   "userId": "diku_admin",
@@ -105,8 +105,8 @@ $CURL $H_TENANT $H_JSON --progress-bar \
   -d@$PATH_TMP-login-credentials.json \
   $OKAPIURL/authn/login > $PATH_TMP-login-response.json
 
-echo Extracting the token header from the response ...
-H_TOKEN=-H`grep -i x-okapi-token "$PATH_TMP-login-response.json" | sed 's/ //' `
+echo Extract the token header from the response ...
+H_TOKEN=-H$(grep -i x-okapi-token "$PATH_TMP-login-response.json" | sed 's/ //')
 
 # echo Received a token $H_TOKEN
 echo
