@@ -14,7 +14,7 @@ It has all the necessary modules deployed, and users and items already loaded.
 
 If you still have the VirtualBox guest running from the previous lessons, then change to the folio-curriculum directory and do: `vagrant halt; cd ..`
 
-# Start the VM
+## Start the VM
 
 Do this step prior to attending a workshop, as it will take some time.
 
@@ -27,7 +27,7 @@ Prepare the box. It will sit beside your other halted folio-curriculum box.
 
 The [folio-ansible](https://github.com/folio-org/folio-ansible) notes explain the purpose of the various boxes, [show](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md) how to explore a system, view the Okapi logs and Stripes logs, find the box version information and release notes, and [troubleshooting](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md#troubleshootingknown-issues) notes.
 
-# Follow the log files
+## Follow the log files
 
 Open a couple more shell terminal windows to follow the Okapi and Stripes log files.
 
@@ -45,7 +45,7 @@ $ vagrant ssh
 $ docker logs stripes_stripes_1 --follow
 ```
 
-# Interact via web browser
+## Interact via web browser
 
 Remember that the Stripes service is forwarded through port 3000, so we can interact with it from the host machine using the local web browser.
 
@@ -57,7 +57,7 @@ The Settings section shows the system information and software versions for the 
 
 Browse and view the Users and Inventory sections.
 
-# Interact via curl
+## Interact via curl
 
 Open a couple more shell terminal windows to send requests via command-line clients.
 
@@ -118,4 +118,14 @@ echo
 
 echo Finished.
 ```
+
+## Interact via Stripes CLI
+
+The [Stripes CLI](https://github.com/folio-org/stripes-cli) command-line interface is an important tool for both front-end and back-end developers.
+
+For example, after installation and basic configuration, use it for concisely 
+[Observing Okapi requests](https://github.com/folio-org/stripes-cli/blob/master/doc/user-guide.md#observing-okapi-requests) to show what endpoints are called.
+
+Of course there is much more that Stripes CLI can assist with your development.
+Invest some time to become familiar.
 
