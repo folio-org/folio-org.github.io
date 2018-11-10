@@ -471,6 +471,7 @@ mod-configuration:
 
 okapi:
   - label: null
+    version1: true
     directory: okapi-core/src/main/raml
     files:
       - okapi
