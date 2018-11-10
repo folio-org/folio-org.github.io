@@ -102,7 +102,8 @@ See the [Primer for RAML and JSON Schema](/start/primer-raml/).
 The `ramls` directory holds the related schema files.
 
 The reference [API documentation](/reference/api/) is generated from these files.
-[Provide](/guides/describe-schema/) a clear "description" field for each of the schema properties.
+
+For each of the schema properties, as early as possible [provide](/guides/describe-schema/) a clear description and define the constraints.
 
 ## Database schema {#back-end-database-schema}
 

@@ -200,7 +200,7 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-vendors](https://github.com/folio-org/mod-vendors)
   -- Persistent storage of vendor data.
 
-- [mod-erm](https://github.com/folio-org/mod-erm)
+- [mod-agreements](https://github.com/folio-org/mod-agreements)
   -- Electronic resource management (ERM)
 
 - [mod-erm-usage](https://github.com/folio-org/mod-erm-usage)
@@ -214,6 +214,12 @@ facilitated by the code in the `raml-module-builder` repository.
 
 - [mod-oai-pmh](https://github.com/folio-org/mod-oai-pmh)
   -- Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH).
+
+- [mod-workflow](https://github.com/folio-org/mod-workflow)
+  -- Workflow proof-of-concept. With related modules:
+  [mod-camunda](https://github.com/folio-org/mod-camunda),
+  [spring-module-core](https://github.com/folio-org/spring-module-core),
+  [mod-spring-sample](https://github.com/folio-org/mod-spring-sample).
 
 - [mod-audit](https://github.com/folio-org/mod-audit)
   -- Manage audit data.
@@ -342,7 +348,7 @@ exists and can be run, the APIs are likely to change.
 - [ui-eholdings](https://github.com/folio-org/ui-eholdings)
   -- Stripes UI module: E-holdings.
 
-- [ui-erm](https://github.com/folio-org/ui-erm)
+- [ui-agreements](https://github.com/folio-org/ui-agreements)
   -- Stripes UI module: Electronic resource management (ERM).
 
 - [ui-erm-usage](https://github.com/folio-org/ui-erm-usage)
