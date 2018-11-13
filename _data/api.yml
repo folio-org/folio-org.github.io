@@ -176,17 +176,20 @@ mod-inventory-storage:
     directory: ramls
     files:
       - holdings-storage
+      - holdings-type
       - instance-storage
       - instance-format
       - instance-type
       - instance-relationship-type
       - instance-status
       - item-storage
+      - call-number-type
       - classification-type
       - contributor-type
       - contributor-name-type
       - electronic-access-relationship
       - identifier-type
+      - ill-policy
       - loan-type
       - location
       - locationunit
