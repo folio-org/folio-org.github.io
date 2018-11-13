@@ -183,6 +183,7 @@ mod-inventory-storage:
       - instance-relationship-type
       - instance-status
       - item-storage
+      - alternative-title-type
       - call-number-type
       - classification-type
       - contributor-type
@@ -501,6 +502,8 @@ raml:
     version1: true
     directory: ramls
     files:
+      - jsonSchemas
+      - ramls
       - tenant
     ramlutil: .
     schemasDirectory: schemas
