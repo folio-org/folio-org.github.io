@@ -142,6 +142,7 @@ mod-codex-mock:
 
 mod-circulation:
   - label: null
+    version1: true
     directory: ramls
     files:
       - circulation
@@ -149,6 +150,7 @@ mod-circulation:
 
 mod-circulation-storage:
   - label: null
+    version1: true
     directory: ramls
     files:
       - loan-storage
@@ -174,17 +176,20 @@ mod-inventory-storage:
     directory: ramls
     files:
       - holdings-storage
+      - holdings-type
       - instance-storage
       - instance-format
       - instance-type
       - instance-relationship-type
       - instance-status
       - item-storage
+      - call-number-type
       - classification-type
       - contributor-type
       - contributor-name-type
       - electronic-access-relationship
       - identifier-type
+      - ill-policy
       - loan-type
       - location
       - locationunit
@@ -377,6 +382,7 @@ mod-event-config:
 
 mod-template-engine:
   - label: null
+    version1: true
     directory: ramls
     files:
       - template-engine
