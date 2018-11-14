@@ -131,7 +131,6 @@ mod-codex-mux:
 
 mod-codex-mock:
   - label: null
-    version1: true
     directory: ramls/raml-util/ramls/codex
     files:
       - codex
