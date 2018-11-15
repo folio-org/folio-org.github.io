@@ -176,12 +176,14 @@ mod-inventory-storage:
     files:
       - holdings-storage
       - holdings-type
+      - holdings-note-type
       - instance-storage
       - instance-format
       - instance-type
       - instance-relationship-type
       - instance-status
       - item-storage
+      - item-note-type
       - alternative-title-type
       - call-number-type
       - classification-type
@@ -219,6 +221,7 @@ mod-kb-ebsco-java:
       - eholdings
       - packages
       - providers
+      - proxies
       - resources
       - titles
     ramlutil: ramls/raml-util
