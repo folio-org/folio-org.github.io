@@ -157,8 +157,8 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-codex-inventory](https://github.com/folio-org/mod-codex-inventory)
   -- Codex wrapper for local inventory.
 
-- [mod-cataloging](https://github.com/atcult/mod-cataloging)
-  -- FOLIO metadata management / cataloging module.
+- [mod-marccat](https://github.com/folio-org/mod-marccat)
+  -- Metadata management and cataloging (MARCcat).
 
 - [acq-models](https://github.com/folio-org/acq-models)
   -- Shared repository for the models of the various acquisition modules.
