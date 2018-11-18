@@ -201,6 +201,7 @@ mod-inventory-storage:
       - service-point
       - service-points-user
       - shelf-location
+      - statistical-code
       - statistical-code-type
     ramlutil: ramls/raml-util
 
