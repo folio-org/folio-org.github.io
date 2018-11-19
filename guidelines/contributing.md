@@ -140,7 +140,7 @@ merging, with a comment explaining why you could not do it.
 
 Once all is well, you can use GitHub's interface. Just go to the
 conversation tab, and click on _Merge Pull Request_ (don't squash, don't rebase,
-[learn why](https://git-scm.com/book/en/v2/Git-Branching-Rebasing#The-Perils-of-Rebasing)).
+[learn why](https://git-scm.com/book/en/v2/Git-Branching-Rebasing#_rebase_peril)).
 Edit the comment if
 necessary, and click on _Confirm Merge_. GitHub should tell you that the
 _Pull request successfully merged and closed_. Next to it is a button to
