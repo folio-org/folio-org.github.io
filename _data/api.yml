@@ -16,6 +16,7 @@
 # It is used by the CI jobs if config is missing.
 default:
   - label: null
+    version1: true
     directory: ramls
     files:
       - dummy
@@ -488,8 +489,6 @@ okapi:
     ramlutil: okapi-core/src/main/raml/raml-util
     rmb: false
 
-# Leave the following two tables (raml-module-builder, raml) at the bottom.
-
 raml-module-builder:
   - label: domain-models-api-interfaces
     version1: true
@@ -540,5 +539,21 @@ raml:
     shared: ramls/tagged-record-example
     multiple: true
 
-# Leave the previous two tables (raml-module-builder, raml) at the bottom.
+acq-models:
+  - label: null
+    version1: true
+    directory: .
+    ramlutil: null
+    schemasDirectory: .
+    schemasOnly: true
+    rmb: false
+
+data-import-raml-storage:
+  - label: null
+    version1: true
+    directory: .
+    ramlutil: raml-util
+    schemasDirectory: schemas
+    schemasOnly: true
+    rmb: false
 
