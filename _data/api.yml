@@ -421,7 +421,9 @@ mod-data-import:
     directory: ramls
     files:
       - dataImport
-    ramlutil: ramls/raml-util
+    excludes:
+      - raml-storage
+    ramlutil: ramls/raml-storage/raml-util
 
 mod-data-loader:
   - label: null

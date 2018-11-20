@@ -197,6 +197,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-source-record-manager](https://github.com/folio-org/mod-source-record-manager)
   -- Source record manager.
 
+- [data-import-raml-storage](https://github.com/folio-org/data-import-raml-storage)
+  -- Shared repository for the schemas of various data-import modules.
+
 - [mod-vendors](https://github.com/folio-org/mod-vendors)
   -- Persistent storage of vendor data.
 
@@ -467,7 +470,10 @@ exists and can be run, the APIs are likely to change.
   -- Postman collections for backend modules.
 
 - [ldp](https://github.com/folio-org/ldp)
-  -- Library Data Platform.
+  -- Library Data Platform (LDP).
+
+- [ldp-analytics](https://github.com/folio-org/ldp-analytics)
+  -- Reports, queries and other data analysis code for the [LDP](https://github.com/folio-org/ldp).
 
 - [rfcs](https://github.com/folio-org/rfcs)
   -- RFCs for changes to the FOLIO platform.
