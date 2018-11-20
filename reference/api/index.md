@@ -61,16 +61,16 @@ This list of modules is sorted into functional groups.
       <th class="raml" title="APIs and link to RAML source">
         APIs {% if theRepo[1][0].shared %} <a href="#usage-notes"> * </a>{% endif %}
       </th>
-      <th class="view" title="View 1: using raml2html"></th>
-      <th class="view" title="View 2: using raml-fleece"></th>
+      <th class="view" title="View 1: using raml2html default"></th>
+      <th class="view" title="View 2: using raml2html plain"></th>
     </tr>
   </thead>
   <tbody>
   {%- for docset in theRepo[1] -%}
     {%- for doc in docset.files -%}
       {% capture urlDoc1 %}{{ urlAws }}/{{ theRepo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}{{ doc }}.html{% endcapture %}
-      {% capture urlDoc2 %}{{ urlAws }}/{{ theRepo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}2/{{ doc }}.html{% endcapture %}
-      {% capture view2 %}{% unless docset.version1 %}<a href="{{ urlDoc2 }}">view-2</a>{% endunless %}{% endcapture %}
+      {% capture urlDoc2 %}{{ urlAws }}/{{ theRepo[0] }}/{% if docset.label %}{{ docset.label }}/{% endif %}p/{{ doc }}.html{% endcapture %}
+      {% capture view2 %}{% if docset.version1 %}<a href="{{ urlDoc2 }}">view-2</a>{% endif %}{% endcapture %}
       {% if docset.shared %}
         {% capture urlRaml %}{{ urlGithub }}/raml/blob/HEAD/{{ docset.shared }}/{{ doc }}.raml{% endcapture %}
       {% else %}
@@ -105,7 +105,9 @@ So the documentation relates only to the current master branch.
 * Since August 2018 the generated documents are saved for each software version.
 So for [mod-inventory-storage](#mod-inventory-storage) amend the URL of the generated documents to add the version number (major.minor), e.g. `mod-inventory-storage/12.5/...`
 
-* For repositories that are now using RAML-1.0 version, the "view-2" presentation is not available because the software that is used to generate that view only supports RAML-0.8 version.
+* For repositories that are still using RAML-0.8 version, the "view-2" presentation is empty because the software that is used to generate that view only supports RAML-1.0 version.
+
+* NOTE: 2018-11-20: The "view-2" using the "plain" theme is available after each module's next merge to master.
 
 * The asterisk `*` denotes that this is a shared set of RAML files.
 The generated documents are for this module's current raml-util, but the link to the source RAML file is to the head of the default branch of the shared
