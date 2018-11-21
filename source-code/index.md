@@ -175,6 +175,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-orders-storage](https://github.com/folio-org/mod-orders-storage)
   -- Persistent storage of order data.
 
+- [mod-receiving](https://github.com/folio-org/mod-receiving)
+  -- Business logic for receiving and checking-in materials that have been ordered.
+
 - [mod-patron](https://github.com/folio-org/mod-patron)
   -- Allow 3rd party discovery services to perform FOLIO patron actions via the discovery service's UI.
 
