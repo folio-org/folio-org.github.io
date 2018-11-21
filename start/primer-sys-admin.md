@@ -18,6 +18,7 @@ and the [Securing Okapi](https://github.com/folio-org/okapi/blob/master/doc/guid
 The [folio-install](https://github.com/folio-org/folio-install) repository provides an initial collection of runbooks for FOLIO installation, such as
 [FOLIO deployment: single server](https://github.com/folio-org/folio-install/blob/master/single-server.md) (step-by-step instructions for setting up Okapi and Stripes on a single host with vagrant, PostgreSQL, nginx).
 
-The [Systems Operations and Management SIG](https://wiki.folio.org/display/SYSOPS/Systems+Operations+and+Management+SIG+Home) (the SysOps special interest group).
+The [Systems Operations and Management SIG](https://wiki.folio.org/display/SYSOPS/Systems+Operations+and+Management+SIG+Home) (SysOps special interest group)
+has various notes about deployment environments, orchestration, hosting environments, data migration, and notes about test installations by SIG members.
 
 The [Slack](/guidelines/which-forum/#slack) `#devops` channel.
