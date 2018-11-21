@@ -232,5 +232,7 @@ The various `stripes-components` are separately handled.
 
 See the "[i18n best practices](https://github.com/folio-org/stripes/blob/master/doc/i18n.md)" internationalization and localization documentation, and facilities provided by Stripes Core.
 
-As explained there, the `en.json` file provides the default keys and strings. The files for other languages are automatically generated and merged by Lokalise, with the assistance of human translators.
+As explained there, the `en.json` file provides the default keys and strings.
+There is no need for other placeholder files.
+The files for other languages are automatically generated and merged by Lokalise, with the assistance of human translators.
 
