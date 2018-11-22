@@ -13,7 +13,7 @@ In this lesson we set aside the Okapi server (leave it running) and focus on the
 (Note: the output of commands is artificially indented from the command line to call out the command lines.)
 ```
 $ yarn config set @folio:registry https://repository.folio.org/repository/npm-folio/
-  yarn config v0.20.3
+  yarn config v1.12.3
   success Set "@folio:registry" to "https://repository.folio.org/repository/npm-folio/".
   ✨  Done in 0.04s.
 ```
@@ -48,8 +48,9 @@ $ cat > package.json <<END
     "start": "stripes dev stripes.config.js"
   },
   "dependencies": {
-    "@folio/stripes-core": "^0.0.11",
-    "@folio/trivial": "^0.0.2-test"
+    "@folio/stripes": "^1.0.0",
+    "@folio/trivial": "^1.2.0",
+    "react": "^16.3.0"
   }
 }
 END
@@ -82,7 +83,7 @@ Download/update Stripes along with its dependencies and modules, and link them t
 
 ```bash
 $ yarn install
-  yarn install v0.20.3
+  yarn install v1.12.3
   info No lockfile found.
   warning No license field
   [1/4] 🔍  Resolving packages...
@@ -100,7 +101,7 @@ After the Stripes UI Server is built, run it using the `yarn start` command:
 
 ```bash
 $ yarn start
-  yarn start v0.20.3
+  yarn start v1.12.3
   $ stripes dev stripes.config.js
   Listening at http://localhost:3000
   webpack built 554cedd72fbedc2f7499 in 7890ms
