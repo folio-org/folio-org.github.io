@@ -122,6 +122,11 @@ The server will respond after the `webpack built...` message is displayed.
 
 The Stripes UI Server homepage at http://localhost:3000 looks like the figure below.
 
+<div class="attention">
+Note: These screenshots need to be updated.
+See <a href="https://issues.folio.org/browse/FOLIO-1349">FOLIO-1349</a>.
+</div>
+
 ![Stripes homepage](/images/tutorials/curriculum/01_Stripes_homepage.png)
 
 There is one app in this basic configuration of the Stripes UI Server -- the "Trivial" app with the green icon.  Click on it to get a form:
