@@ -145,6 +145,6 @@ More details about the state of the object within the module can be seen by view
 
 ![Trivial reply with browser JavaScript console](/images/tutorials/curriculum/01_Trivial_reply_with_js_console.png)
 
-## Finish
+## Finish basic Stripes
 
 Now stop this basic Stripes server. Do `Control-C` to exit it.
