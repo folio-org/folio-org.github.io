@@ -12,5 +12,7 @@ The back-end modules follow the general [procedure](/guidelines/release-procedur
 The front-end modules (i.e. stripes-* and ui-*) follow the
 [Stripes release procedure](https://github.com/folio-org/stripes/blob/master/doc/release-procedure.md).
 
+[Regular FOLIO releases](/guides/regular-releases/).
+
 There are separate notes about the
 [FOLIO version-numbering scheme](/guidelines/contributing#version-numbers).

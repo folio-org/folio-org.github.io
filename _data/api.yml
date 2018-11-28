@@ -198,7 +198,6 @@ mod-inventory-storage:
       - locationunit
       - material-type
       - mode-of-issuance
-      - platform
       - service-point
       - service-points-user
       - shelf-location
@@ -288,6 +287,7 @@ mod-orders:
 
 mod-orders-storage:
   - label: null
+    version1: true
     directory: ramls
     files:
       - adjustment

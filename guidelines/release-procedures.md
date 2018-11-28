@@ -23,6 +23,8 @@ The procedure is outlined here for "Okapi" and is similar for other back-end Mav
 
 ### Quick summary {#summary-mvn}
 
+(However follow this complete document for its important information.)
+
  * `git checkout -b "tmp-release-X.Y.Z"`
  * `vi NEWS.md`
  * `git commit -m "Update NEWS" NEWS.md`
@@ -44,9 +46,9 @@ Refer to the following sections for more detail.
 Generally we want bug fix releases to occur in separate branches with *only* bug fixes (not to be confused with
 temporary release branches). For this purpose, we must create a long-lived release branch. We use the naming scheme
 `b` followed by the major and minor versions, for example `b2.17` which will include all bug fixes for version 2.17
-(so for 2.17.1 and 2.17.2 and ...). In order to avoid lowering down the version in the pom file, you can branch off the
-bug fix branch at the point of `[maven-release-plugin] prepare release  .. ` . For example at the point of `2.17.0`
-but before the pom file specifies `2.18.0-SNAPSHOT`.
+(so for 2.17.1 and 2.17.2). In order to avoid lowering down the version in the pom file, you can branch off the
+bug fix branch at the point of `[maven-release-plugin] prepare release  .. `
+(for example at the point of `2.17.0` but before the pom file specifies `2.18.0-SNAPSHOT`).
 
 ### Major / minor releases
 
@@ -155,12 +157,18 @@ git commit -a -m "Towards version X.Y.Z"
 ```
 mvn -DautoVersionSubmodules=true release:clean release:prepare
 ```
+
+(If not yet comfortable, then add the parameter `-DdryRun=true`)
+
 This command will prompt you for input including the release tag/version,
 the next post-release SNAPSHOT version, as well as ask you to resolve
 any SNAPSHOT dependencies if you have any. Do NOT create releases with
-SNAPSHOT dependencies! Selecting the defaults are typically fine.
+SNAPSHOT dependencies! Selecting the defaults are mostly fine.
 Your release tag must be prefixed with 'v' (the default) and you can
 always change the next SNAPSHOT version later if necessary.
+
+For the question about the next post-release "new development version", rather than accepting the default which suggests increment of "patch" version, instead specify the next "minor" version.
+For example `2.18.0-SNAPSHOT` rather than `2.17.1-SNAPSHOT`
 
 Assuming there are no build errors, then you are ready to push your changes to
 GitHub.
@@ -175,7 +183,7 @@ Update version numbers in the same places you did earlier, but now for the
 next development version:
 
 ```
-git commit -a -m "Towards version X.Y.Q-SNAPSHOT"
+git commit -a -m "Towards version X.Y.0-SNAPSHOT"
 git push
 ```
 (If the push fails, you should have been on a release branch. It is not too late
