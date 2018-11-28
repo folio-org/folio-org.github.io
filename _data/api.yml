@@ -198,7 +198,6 @@ mod-inventory-storage:
       - locationunit
       - material-type
       - mode-of-issuance
-      - platform
       - service-point
       - service-points-user
       - shelf-location
