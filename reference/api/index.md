@@ -59,7 +59,7 @@ This list of modules is sorted into functional groups.
     <tr>
 {% endif %}
       <th class="raml" title="APIs and link to RAML source">
-        APIs {% if theRepo[1][0].shared %} <a href="#usage-notes"> * </a>{% endif %}
+        Source {% if theRepo[1][0].shared %} <a href="#usage-notes"> * </a>{% endif %}
       </th>
       <th class="view" title="View 1: using raml2html default"></th>
       <th class="view" title="View 2: using raml2html plain"></th>
@@ -80,7 +80,7 @@ This list of modules is sorted into functional groups.
 {% if theRepo[0] == 'raml' %}
       <td> {{ docset.label }} </td>
 {% endif %}
-      <td> <a href="{{ urlRaml }}">{{ doc }}</a> </td>
+      <td> <a href="{{ urlRaml }}">{{ doc }}.raml</a> </td>
       <td class="view"> <a href="{{ urlDoc1 }}">view-1</a> </td>
       <td class="view"> {{ view2 }} </td>
     </tr>
