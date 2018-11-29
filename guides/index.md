@@ -121,6 +121,7 @@ These are listed in the [Start](/start/) section.
 - [Code analysis and linting facilities](code-analysis) explains ESLint, SonarQube, other lint tools, and preparing for pull requests.
 - For Contextual Query Language (CQL) examples, see the [Glossary](/reference/glossary/#cql), the FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/cql2pgjson-java), the [API docs](/reference/api/), and the debug output for tests in each backend module.
 - Use [raml-cop](raml-cop/) to assess RAMLs, schema, and examples. A guide to its use with some explanations of its messages.
+- [Conduct API testing](api-testing/) using Postman collections and Newman against a running module.
 - [Describe schema and properties](describe-schema/).
 - [Conduct cross-module joins via their APIs](cross-module-joins).
 - [How to check for a valid UUID](uuids).
@@ -139,6 +140,7 @@ instructor-led workshop.
 - [Regular FOLIO releases](regular-releases/).
 - [Search and report facilities](/search-other) (e.g. open pull requests needing review).
 - [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/).
+- [Maintain tidy repositories](tidy-repository/).
 - The [FOLIO Project Roadmap](https://wiki.folio.org/display/PC/FOLIO+Roadmap) including the development and milestone plan for Version 1 and the feature backlog,
 and the [FOLIO Development Process Overview](https://wiki.folio.org/display/COMMUNITY/FOLIO+Development+Process+Overview), and other important documents and resources are listed at the [Wiki](https://wiki.folio.org).
 
