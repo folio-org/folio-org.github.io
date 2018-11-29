@@ -46,22 +46,23 @@ This is a typical directory layout, excluding the general boilerplate files and 
 ```
 ├── Dockerfile
 ├── Jenkinsfile
-├── descriptors
+├── descriptors/
 │   ├── DeploymentDescriptor-template.json
 │   └── ModuleDescriptor-template.json
-├── doc
+├── doc/
 │   ├── various.md
-├── ramls
-│   └── raml-util
-├── reference-data
-│   └── instance-types
-│   └── loan-types
-│   └── ...
-├── sample-data
-│   └── instances
-│   └── items
-│   └── ...
-├── src
+├── ramls/
+│   ├── various-schema.json
+│   └── raml-util/
+├── reference-data/
+│   └── instance-types/
+│   └── loan-types/
+│   └── .../
+├── sample-data/
+│   └── instances/
+│   └── items/
+│   └── .../
+├── src/
 ```
 
 ## Dockerfile {#back-end-dockerfile}
@@ -147,25 +148,25 @@ This is a typical directory layout, excluding the general boilerplate files and 
 
 ```
 ├── Jenkinsfile
-├── data
+├── data/
 │   ├── various
-├── doc
+├── doc/
 │   ├── various.md
-├── icons
+├── icons/
 │   ├── app.png
 │   └── app.svg
-├── lib
+├── lib/
 │   ├── various
 ├── package.json
-├── settings
+├── settings/
 │   ├── various
-├── sound
+├── sound/
 │   ├── checkout_error.m4a
 │   └── checkout_success.m4a
-├── test
-│   └── ui-testing
-├── translations
-    └── ui-users
+├── test/
+│   └── ui-testing/
+├── translations/
+    └── ui-users/
         ├── en.json
 ```
 
