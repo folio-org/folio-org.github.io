@@ -279,6 +279,7 @@ mod-finance-storage:
 
 mod-orders:
   - label: null
+    version1: true
     directory: ramls
     files:
       - order
@@ -395,6 +396,7 @@ mod-template-engine:
 
 mod-calendar:
   - label: null
+    version1: true
     directory: ramls
     files:
       - calendar
