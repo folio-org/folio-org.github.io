@@ -147,6 +147,7 @@ mod-circulation:
     files:
       - circulation
     ramlutil: ramls/raml-util
+    rmb: false
 
 mod-circulation-storage:
   - label: null
@@ -169,6 +170,7 @@ mod-inventory:
     files:
       - inventory
     ramlutil: ramls/raml-util
+    rmb: false
 
 mod-inventory-storage:
   - label: null
