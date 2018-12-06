@@ -210,7 +210,10 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Electronic resource management (ERM)
 
 - [mod-erm-usage](https://github.com/folio-org/mod-erm-usage)
-  -- Gather and store ERM usage statistics.
+  -- Store ERM usage statistics and access data to these statistics.
+
+- [mod-erm-usage-harvester](https://github.com/folio-org/mod-erm-usage-harvester)
+  -- Harvest ERM usage statistics.
 
 - [mod-licenses](https://github.com/folio-org/mod-licenses)
   -- Upload, manage and analyze licenses.
