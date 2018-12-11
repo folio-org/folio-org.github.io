@@ -466,6 +466,9 @@ exists and can be run, the APIs are likely to change.
 - [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
   -- [CQL](/reference/glossary/#cql) (Contextual Query Language) to PostgreSQL JSON converter in Java.
 
+- [Net-Z3950-FOLIO](https://github.com/folio-org/Net-Z3950-FOLIO)
+  -- A Z39.50 server for FOLIO bibliographic data.
+
 - [folio-graphiql](https://github.com/folio-org/folio-graphiql)
   -- Explore Okapi's GraphQL endpoint.
 
