@@ -294,6 +294,7 @@ mod-orders-storage:
       - location
       - orders
       - physical
+      - pieces
       - po_line
       - purchase_order
       - renewal
