@@ -40,21 +40,11 @@ mod-login-saml:
 mod-permissions:
   - label: null
     version1: true
-    directory: ramls/raml-util/ramls/mod-permissions
+    directory: ramls
     files:
       - tenantPermissions
       - permissions
-    ramlutil: null
-    schemasDirectory: ramls/raml-util/schemas/mod-permissions
-    shared: ramls/mod-permissions
-# 201810: Upcoming new config stage 2, to replace the above entry
-#mod-permissions:
-#  - label: null
-#    directory: ramls
-#    files:
-#      - tenantPermissions
-#      - permissions
-#    ramlutil: ramls/raml-util
+    ramlutil: ramls/raml-util
 
 mod-password-validator:
   - label: null
@@ -304,6 +294,7 @@ mod-orders-storage:
       - location
       - orders
       - physical
+      - pieces
       - po_line
       - purchase_order
       - renewal
