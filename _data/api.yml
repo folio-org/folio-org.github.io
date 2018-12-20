@@ -523,16 +523,6 @@ raml:
     ramlutil: .
     schemasDirectory: schemas
     shared: ramls
-  - label: shared-mod-permissions
-    version1: true
-    directory: ramls/mod-permissions
-    files:
-      - tenantPermissions
-      - permissions
-    ramlutil: .
-    schemasDirectory: schemas/mod-permissions
-    shared: ramls/mod-permissions
-    multiple: true
   - label: shared-codex
     version1: true
     directory: ramls/codex
