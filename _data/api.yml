@@ -451,6 +451,16 @@ mod-source-record-manager:
       - raml-storage
     ramlutil: ramls/raml-storage/raml-util
 
+mod-marccat:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - marccat
+    excludes:
+      - mod-marccat
+    ramlutil: ramls/raml-storage/raml-util
+
 mod-rtac:
   - label: null
     directory: ramls
