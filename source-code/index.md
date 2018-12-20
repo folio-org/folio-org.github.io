@@ -472,6 +472,9 @@ exists and can be run, the APIs are likely to change.
 - [folio-graphiql](https://github.com/folio-org/folio-graphiql)
   -- Explore Okapi's GraphQL endpoint.
 
+- [folio-isbn-util](https://github.com/folio-org/folio-isbn-util)
+  -- ISBN number converter utilities.
+
 - [folio-perf-test](https://github.com/folio-org/folio-perf-test)
   -- Jenkins pipeline to test FOLIO performance.
 
