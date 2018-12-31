@@ -459,7 +459,6 @@ mod-marccat:
       - marccat
     excludes:
       - raml-storage
-      - mod-marccat
     ramlutil: ramls/raml-storage/raml-util
     rmb: false
 
