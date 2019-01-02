@@ -316,9 +316,27 @@ mod-vendors:
   - label: null
     directory: ramls
     files:
+      - account
+      - address
+      - agreement
+      - alias
+      - category
+      - contact_person
+      - edi
+      - edi_ftp
+      - edi_job
+      - email
+      - interface
+      - phone_number
+      - url
       - vendor
-      - contact_category
+      - vendor_address
       - vendor_category
+      - vendor_contact_person
+      - vendor_email
+      - vendor_phone
+      - vendor_type
+      - vendor_url
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-vendors/schemas
 
