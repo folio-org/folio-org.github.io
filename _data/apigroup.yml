@@ -37,6 +37,7 @@ inventory:
     - mod-kb-ebsco-java
     - mod-oai-pmh
     - edge-oai-pmh
+    - mod-marccat
     - mod-erm-usage
 finance:
   title: Finance and orders
