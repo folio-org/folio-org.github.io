@@ -48,6 +48,7 @@ mod-permissions:
 
 mod-password-validator:
   - label: null
+    version1: true
     directory: ramls
     files:
       - password-validator
