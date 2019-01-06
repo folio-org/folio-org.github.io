@@ -475,6 +475,9 @@ exists and can be run, the APIs are likely to change.
 - [folio-isbn-util](https://github.com/folio-org/folio-isbn-util)
   -- ISBN number converter utilities.
 
+- [data-import-utils](https://github.com/folio-org/data-import-utils)
+  -- Library with common utilities for data-import modules.
+
 - [folio-perf-test](https://github.com/folio-org/folio-perf-test)
   -- Jenkins pipeline to test FOLIO performance.
 
