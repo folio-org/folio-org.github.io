@@ -298,7 +298,6 @@ mod-orders-storage:
       - pieces
       - po_line
       - purchase_order
-      - renewal
       - reporting_code
       - source
       - vendor_detail
