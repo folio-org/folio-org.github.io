@@ -390,11 +390,14 @@ exists and can be run, the APIs are likely to change.
 - [ui-audit](https://github.com/folio-org/ui-audit)
   -- Stripes UI module: Viewing audit trails.
 
-- [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
-  -- Stripes UI plugin: User finder.
+- [ui-plugin-find-agreement](https://github.com/folio-org/ui-plugin-find-agreement)
+  -- Stripes UI plugin: ERM agreement finder.
 
 - [ui-plugin-find-instance](https://github.com/folio-org/ui-plugin-find-instance)
   -- Stripes UI plugin: Instance finder.
+
+- [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
+  -- Stripes UI plugin: User finder.
 
 - [ui-plugin-find-vendor](https://github.com/folio-org/ui-plugin-find-vendor)
   -- Stripes UI plugin: Vendor finder.
