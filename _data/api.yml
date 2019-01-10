@@ -297,6 +297,7 @@ mod-orders-storage:
       - physical
       - pieces
       - po_line
+      - po_number
       - purchase_order
       - reporting_code
       - source
