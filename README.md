@@ -60,6 +60,7 @@ Other branches are re-built upon push of changes. Follow the GitHub link from th
 
 See project [FOLIO](https://issues.folio.org/browse/FOLIO)
 at the [FOLIO issue tracker](https://dev.folio.org/guidelines/issue-tracker/).
-We use the label "devweb".
+We use the label "devweb" for items that relate to the software and facilities for building the website.
+We use the label "devdoc" for items that relate to documentation content.
 
 The FOLIO Slack channel #dev-website
