@@ -299,6 +299,7 @@ mod-orders-storage:
       - po_line
       - po_number
       - purchase_order
+      - receiving_history
       - reporting_code
       - source
       - vendor_detail
