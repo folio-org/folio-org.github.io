@@ -1,8 +1,8 @@
 version: 0.2
 
-#env:
-  #variables:
-     # key: "value"
+env:
+  variables:
+     JEKYLL_ENV: "production"
      # key: "value"
   #parameter-store:
      # key: "value"
@@ -23,7 +23,7 @@ phases:
   post_build:
     commands:
       - echo "******** Uploading to S3 ********"
-      - aws s3 sync --delete _site/ "s3://${BUCKET_NAME}"
+      - aws s3 sync --delete --size-only --cache-control max-age=7201 _site/ "s3://${BUCKET_NAME}"
       - aws s3api put-bucket-website --bucket "${BUCKET_NAME}" --website-configuration file://s3-website-config.json
 #artifacts:
   #files:
