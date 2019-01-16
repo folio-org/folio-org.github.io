@@ -32,7 +32,9 @@ Some other presentations (sorted by most recent). Note that some might be out-of
 
 * <a id="stripes-coburn-2018-08"></a> [Stripes overview](https://drive.google.com/open?id=1ZofmC94wgg6Vw5JirymW7Kt1ycqVU4E1)
 presentation conducted by John Coburn to introduce the folijet EPAM team.
-Onboarding overview of Stripes, the front-end framework of FOLIO. (2018 August).
+Onboarding overview of Stripes, the front-end framework of FOLIO.
+The accompanying [slides](https://drive.google.com/open?id=1SV6scBsmmukIwrTlAo-L17AWR73kpeFL6S6UmoJzync).
+(2018 August)
 
 ## Preparation materials
 
