@@ -21,34 +21,61 @@ and the [Build, test, and deployment infrastructure](/guides/automation/).
 
 The procedure is outlined here for "Okapi" and is similar for other back-end Maven-based modules.
 
-### Quick summary {#summary-mvn}
+### Quick summary major/feature release {#summary-mvn}
 
 (However follow this complete document for its important information.)
 
- * `git checkout -b "tmp-release-X.Y.Z"`
- * `vi NEWS.md`
- * `git commit -m "Update NEWS" NEWS.md`
- * `mvn -DautoVersionSubmodules=true release:clean release:prepare`
- * `git push && git push --tags`
- * [Jenkins](https://jenkins-aws.indexdata.com/job/folio-org/): Log in!
- * [GitHub](https://github.com/folio-org): Merge temporary release branch to master. Release notes!
- * [Jira](https://issues.folio.org): Mark as released. Add next versions.
- * [Slack](https://folio-project.slack.com/): Announce on `#general`
+In this example we are releasing `X.Y.0` of a module.
 
-`tmp-release-X.Y.Z` is a temporary branch needed because master is usually protected
-from straight commits. It should be removed after the release.
-If you are working on an unprotected bug fix branch you don't need a temporary branch.
+```
+ git checkout -b tmp-release-X.Y.0
+ vi NEWS.md
+ git commit -m "Update NEWS" NEWS.md
+ mvn -DautoVersionSubmodules=true release:clean release:prepare # Supply next feature (X.Y+1.0-SNAPSHOT)
+ git push && git push --tags
+```
+Log in to Jenkins and run your jobs at [Jenkins](https://jenkins-aws.indexdata.com/job/folio-org/).
 
-Refer to the following sections for more detail.
+[GitHub](https://github.com/folio-org): Merge temporary release branch `tmp-release-X.Y.0` to master.
+
+[Jira](https://issues.folio.org): Mark as released. Add next versions.
+
+[Slack](https://folio-project.slack.com/): Announce on `#general
+
+Create a long-lived branch for that major/feature version:
+```
+ git checkout -b bX.Y vX.Y.0
+ mvn --batch-mode release:update-versions
+ git commit -a -m "release branch"
+ git push && git push --tags
+```
+
+### Quick summary bug fix release
+
+Make a bug fix on the release for the `X.Y`-series:
+
+```
+ git checkout bX.Y
+ vi NEWS.md
+ git commit -m "Update NEWS" NEWS.md
+ mvn --batch-mode -DautoVersionSubmodules=true release:clean release:prepare
+ git push
+```
+
+Log in to Jenkins and run your jobs at [Jenkins](https://jenkins-aws.indexdata.com/job/folio-org/).
+
+[Jira](https://issues.folio.org): Mark as released. Add next versions.
+
+[Slack](https://folio-project.slack.com/): Announce on `#general
 
 ### Bug fix releases
 
 Generally we want bug fix releases to occur in separate branches with *only* bug fixes (not to be confused with
 temporary release branches). For this purpose, we must create a long-lived release branch. We use the naming scheme
 `b` followed by the major and minor versions, for example `b2.17` which will include all bug fixes for version 2.17
-(so for 2.17.1 and 2.17.2). In order to avoid lowering down the version in the pom file, you can branch off the
-bug fix branch at the point of `[maven-release-plugin] prepare release  .. `
-(for example at the point of `2.17.0` but before the pom file specifies `2.18.0-SNAPSHOT`).
+(so for v2.17.1 and v2.17.2).
+
+The bug fix release can be created as follows. Thus, it happens ONCE after a feature/major release has been performed.
 
 ### Major / minor releases
 
