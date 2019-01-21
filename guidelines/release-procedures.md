@@ -45,7 +45,7 @@ Log in to Jenkins and run your jobs at [Jenkins](https://jenkins-aws.indexdata.c
 Create a long-lived branch for that major/feature version:
 ```
  git checkout -b bX.Y vX.Y.0
- mvn --batch-mode release:update-versions
+ mvn versions:set -DnewVersion=X.Y.1-SNAPSHOT
  git commit -a -m "release branch"
  git push && git push --tags
 ```
