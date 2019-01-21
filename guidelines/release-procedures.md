@@ -40,7 +40,7 @@ Log in to Jenkins and run your jobs at [Jenkins](https://jenkins-aws.indexdata.c
 
 [Jira](https://issues.folio.org): Mark as released. Add next versions.
 
-[Slack](https://folio-project.slack.com/): Announce on `#general
+[Slack](https://folio-project.slack.com/): Announce on `#general`
 
 Create a long-lived branch for that major/feature version:
 ```
@@ -66,7 +66,7 @@ Log in to Jenkins and run your jobs at [Jenkins](https://jenkins-aws.indexdata.c
 
 [Jira](https://issues.folio.org): Mark as released. Add next versions.
 
-[Slack](https://folio-project.slack.com/): Announce on `#general
+[Slack](https://folio-project.slack.com/): Announce on `#general`
 
 ### Bug fix releases
 
