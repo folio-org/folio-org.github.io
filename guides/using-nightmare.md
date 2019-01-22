@@ -64,16 +64,16 @@ yarn test-int
 
 ## Some hints
 
-In tests, you should use **CSS** selectors instead of **[data-test...]** attributes, cause these attributes will be stripped from the production build and therefore are unavailable when the integration tests run against folio-testing or folio-snapshot.
+In tests, you should use **CSS** selectors instead of **[data-test...]** attributes, because these attributes will be stripped from the production build and therefore are unavailable when the integration tests run against folio-testing or folio-snapshot.
 
-Always check the current state of the back-end, cause some dependencies may cause unexpected behavior. (the possible way is to destroy and restart vagrant before running tests)
+Always check the current state of the back-end, because some dependencies may cause unexpected behavior. (the possible way is to destroy and restart vagrant before running tests)
 
 Follow the operation by:
 * providing the **--show** option:
  ```code
 yarn test-int --show
 ```
-* adding **show: true** property in nightmare config or particular scenario (as it shown in the screenshot):
+* adding **show: true** property in nightmare config or particular scenario (as shown in the screenshot):
 ![Image](/images/nightmare/nightmare-code-example.png "code-example")
 
 
