@@ -14,7 +14,7 @@ Under the covers it uses Electron, which is similar to PhantomJS but roughly twi
 
 ## Run an existing scenario
 
-All scenarios are stored in the platform-core module and easiest way to run tests is to clone this repository, install dependencies and run tests. 
+All scenarios are stored in the platform-core module and easiest way to run tests is to clone this repository, install dependencies and run tests.
 
 ##### The important thing - to run tests it is needed to checkout on the _snapshot_ branch, as far as I understood only this branch is currently up to date.
 ```code
@@ -50,7 +50,7 @@ I want to demonstrate you flow of running test for new branch:
 1. clone module (or modules) where we have added changes (and checkout branch with new feature)
 
 1. After that, we should install dependencies for our modules. So we should run yarn in the folder where we have modules and **package.json** file.
-So you should install dependencies in a folder similar to what we have in the screenshot (In this case I have made changes in the **ui-circulation** module, so I have cloned this module) :                            
+So you should install dependencies in a folder similar to what we have in the screenshot (In this case I have made changes in the **ui-circulation** module, so I have cloned this module) :
 ![Image](./../images/nightmare/nightmare-folder-example.png "folder-example")
 1. After that we can go to the platform-core directory and run tests:
 ```code
@@ -68,7 +68,7 @@ yarn test-int --show
 ```
 * adding **show: true** property in nightmare config or particular scenario (as it shown in the screenshot):
 ![Image](./../images/nightmare/nightmare-code-example.png "code-example")
-             
+
 
 ## Useful links
 * https://github.com/folio-org/platform-core
