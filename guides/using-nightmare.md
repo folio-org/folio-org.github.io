@@ -14,11 +14,16 @@ Under the covers it uses Electron, which is similar to PhantomJS but roughly twi
 
 ## Run an existing scenario
 
-All scenarios are stored in the platform-core module and easiest way to run tests is to clone this repository, install dependencies and run tests.
+Follow the [platform-core](https://github.com/folio-org/platform-core) README which explains how to run integration tests.
+ 
+So clone that repository, install dependencies and run tests.
 
-##### The important thing - to run tests it is needed to checkout on the _snapshot_ branch, as far as I understood only this branch is currently up to date.
+As explained there, this needs a running Okapi.
+That can be achieved by downloading a [Prebuilt Vagrant box](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md#prebuilt-vagrant-boxes).
+Alternatively use the `--url` option.
+
 ```code
-git clone git@github.com:folio-org/platform-core.git
+git clone https://github.com/folio-org/platform-core
 cd platform-core
 git checkout snapshot
 yarn
@@ -59,9 +64,11 @@ yarn test-int
 
 ## Some hints
 
-1. In tests, you should use **CSS** selectors instead of **[data-test...]** attributes, cause these attributes will be stripped from the production build and therefore are unavailable when the integration tests run against folio-testing or folio-snapshot.
-1. Always check the current state of the back-end, cause some dependencies may cause unexpected behavior. (the possible way is to destroy and restart vagrant before running tests)
-1. You can check out what is going on by:
+In tests, you should use **CSS** selectors instead of **[data-test...]** attributes, cause these attributes will be stripped from the production build and therefore are unavailable when the integration tests run against folio-testing or folio-snapshot.
+
+Always check the current state of the back-end, cause some dependencies may cause unexpected behavior. (the possible way is to destroy and restart vagrant before running tests)
+
+Follow the operation by:
 * providing the **--show** option:
  ```code
 yarn test-int --show
