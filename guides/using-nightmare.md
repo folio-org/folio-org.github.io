@@ -56,7 +56,7 @@ I want to demonstrate you flow of running test for new branch:
 
 1. After that, we should install dependencies for our modules. So we should run yarn in the folder where we have modules and **package.json** file.
 So you should install dependencies in a folder similar to what we have in the screenshot (In this case I have made changes in the **ui-circulation** module, so I have cloned this module) :
-![Image](./../images/nightmare/nightmare-folder-example.png "folder-example")
+![Image](/images/nightmare/nightmare-folder-example.png "folder-example")
 1. After that we can go to the platform-core directory and run tests:
 ```code
 yarn test-int
@@ -74,7 +74,7 @@ Follow the operation by:
 yarn test-int --show
 ```
 * adding **show: true** property in nightmare config or particular scenario (as it shown in the screenshot):
-![Image](./../images/nightmare/nightmare-code-example.png "code-example")
+![Image](/images/nightmare/nightmare-code-example.png "code-example")
 
 
 ## Useful links
