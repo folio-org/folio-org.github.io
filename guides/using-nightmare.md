@@ -1,16 +1,19 @@
-# Personal Nightmare
-(This wiki is based on the personal experience of [Oleksandr Antonenko][authorProfile].)
+---
+layout: page
+title: Using Nightmare for UI testing
+permalink: /guides/using-nightmare/
+menuInclude: no
+menuTopTitle: Guides
+---
 
-  [authorProfile]: https://github.com/OleksandrAntonenko1
-
-## Intro:
 Nightmare is a high-level browser automation library from Segment.
 
 The goal is to expose a few simple methods that mimic user actions (like goto, type and click), with an API that feels synchronous for each block of scripting, rather than deeply nested callbacks. It was originally designed for automating tasks across sites that don't have APIs, but is most often used for UI testing and crawling.
 
 Under the covers it uses Electron, which is similar to PhantomJS but roughly twice as fast and more modern.
 
-## How to run a particular scenario (loan_renewal) for the current state of the platform:
+## Run an existing scenario
+
 All scenarios are stored in the platform-core module and easiest way to run tests is to clone this repository, install dependencies and run tests. 
 
 ##### The important thing - to run tests it is needed to checkout on the _snapshot_ branch, as far as I understood only this branch is currently up to date.
@@ -21,7 +24,9 @@ git checkout snapshot
 yarn
 yarn test-int --run WD:loan_renewal
 ```
-## How to test local changes for UI modules:
+
+## Test local changes
+
 I want to demonstrate you flow of running test for new branch:
 
 1. Let's create a new directory and go there.
@@ -51,7 +56,9 @@ So you should install dependencies in a folder similar to what we have in the sc
 ```code
 yarn test-int
 ```
-## Some hints:
+
+## Some hints
+
 1. In tests, you should use **CSS** selectors instead of **[data-test...]** attributes, cause these attributes will be stripped from the production build and therefore are unavailable when the integration tests run against folio-testing or folio-snapshot.
 1. Always check the current state of the back-end, cause some dependencies may cause unexpected behavior. (the possible way is to destroy and restart vagrant before running tests)
 1. You can check out what is going on by:
@@ -63,7 +70,7 @@ yarn test-int --show
 ![Image](./../images/nightmare/nightmare-code-example.png "code-example")
              
 
-## Useful links:
+## Useful links
 * https://github.com/folio-org/platform-core
 * https://github.com/segmentio/nightmare
 
