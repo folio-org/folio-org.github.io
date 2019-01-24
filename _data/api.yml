@@ -250,6 +250,7 @@ mod-erm-usage:
 
 mod-gobi:
   - label: null
+    version1: true
     directory: ramls
     files:
       - gobi
