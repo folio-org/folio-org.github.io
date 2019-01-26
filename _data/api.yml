@@ -318,6 +318,7 @@ edge-orders:
 
 mod-vendors:
   - label: null
+    version1: true
     directory: ramls
     files:
       - account
@@ -334,13 +335,8 @@ mod-vendors:
       - phone_number
       - url
       - vendor
-      - vendor_address
-      - vendor_category
       - vendor_contact_person
-      - vendor_email
-      - vendor_phone
       - vendor_type
-      - vendor_url
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-vendors/schemas
 
