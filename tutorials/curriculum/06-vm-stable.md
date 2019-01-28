@@ -21,7 +21,7 @@ Do this step prior to attending a workshop, as it will take some time.
 Prepare the box. It will sit beside your other halted folio-curriculum box.
 
 1. Make a clean directory and change into it: `mkdir folio-stable && cd folio-stable`
-1. Initialise the Vagrantfile: `vagrant init --minimal folio/Q3-2018`
+1. Initialise the Vagrantfile: `vagrant init --minimal folio/Q4-2018`
 1. Launch the VirtualBox guest: `vagrant up`
 1. Connect to the VirtualBox guest: `vagrant ssh`
 
