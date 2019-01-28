@@ -113,7 +113,7 @@ echo
 
 echo Test 1: Find some users
 $CURL $H_TENANT $H_TOKEN \
-  $OKAPIURL/users?query=personal.lastName==ab*+sortBy+username
+  $OKAPIURL/users?query=personal.lastName==a*+sortBy+username
 echo
 
 echo Finished.
