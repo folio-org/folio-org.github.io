@@ -47,7 +47,7 @@ Create a long-lived branch for that major/feature version:
  git checkout -b bX.Y vX.Y.0
  mvn versions:set -DnewVersion=X.Y.1-SNAPSHOT
  git commit -a -m "release branch"
- git push && git push --tags
+ git push
 ```
 
 ### Quick summary bug fix release
@@ -59,7 +59,7 @@ Make a bug fix on the release for the `X.Y`-series:
  vi NEWS.md
  git commit -m "Update NEWS" NEWS.md
  mvn --batch-mode -DautoVersionSubmodules=true release:clean release:prepare
- git push
+ git push && git push --tags
 ```
 
 Log in to Jenkins and run your jobs at [Jenkins](https://jenkins-aws.indexdata.com/job/folio-org/).
