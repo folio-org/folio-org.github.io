@@ -475,6 +475,9 @@ exists and can be run, the APIs are likely to change.
 - [folio-graphiql](https://github.com/folio-org/folio-graphiql)
   -- Explore Okapi's GraphQL endpoint.
 
+- [folio-di-support](https://github.com/folio-org/folio-di-support)
+  -- Dependency Injection support for FOLIO backend modules.
+
 - [folio-isbn-util](https://github.com/folio-org/folio-isbn-util)
   -- ISBN number converter utilities.
 
