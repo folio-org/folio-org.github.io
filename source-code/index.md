@@ -194,6 +194,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-data-import](https://github.com/folio-org/mod-data-import)
   -- Data import.
 
+- [mod-data-import-converter-storage](https://github.com/folio-org/mod-data-import-converter-storage)
+  -- Data import converter storage.
+
 - [mod-source-record-storage](https://github.com/folio-org/mod-source-record-storage)
   -- Persistent source record storage. Complements the data import module.
 
@@ -474,6 +477,9 @@ exists and can be run, the APIs are likely to change.
 
 - [folio-graphiql](https://github.com/folio-org/folio-graphiql)
   -- Explore Okapi's GraphQL endpoint.
+
+- [folio-di-support](https://github.com/folio-org/folio-di-support)
+  -- Dependency Injection support for FOLIO backend modules.
 
 - [folio-isbn-util](https://github.com/folio-org/folio-isbn-util)
   -- ISBN number converter utilities.
