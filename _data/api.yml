@@ -439,6 +439,16 @@ mod-data-import:
       - raml-storage
     ramlutil: ramls/raml-storage/raml-util
 
+mod-data-import-converter-storage:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - data-import-converter-storage
+    excludes:
+      - raml-storage
+    ramlutil: ramls/raml-storage/raml-util
+
 mod-data-loader:
   - label: null
     directory: ramls

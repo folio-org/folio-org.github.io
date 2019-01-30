@@ -62,6 +62,7 @@ data-import:
   description: Importing and loading various data.
   modules:
     - mod-data-import
+    - mod-data-import-converter-storage
     - mod-data-loader
     - mod-source-record-manager
     - mod-source-record-storage
