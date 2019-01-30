@@ -194,6 +194,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-data-import](https://github.com/folio-org/mod-data-import)
   -- Data import.
 
+- [mod-data-import-converter-storage](https://github.com/folio-org/mod-data-import-converter-storage)
+  -- Data import converter storage.
+
 - [mod-source-record-storage](https://github.com/folio-org/mod-source-record-storage)
   -- Persistent source record storage. Complements the data import module.
 
