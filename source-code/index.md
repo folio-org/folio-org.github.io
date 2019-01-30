@@ -396,6 +396,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-plugin-find-agreement](https://github.com/folio-org/ui-plugin-find-agreement)
   -- Stripes UI plugin: ERM agreement finder.
 
+- [ui-plugin-find-erm-usage-data-provider](https://github.com/folio-org/ui-plugin-find-erm-usage-data-provider)
+  -- Stripes UI plugin: ERM usage data provider finder.
+
 - [ui-plugin-find-instance](https://github.com/folio-org/ui-plugin-find-instance)
   -- Stripes UI plugin: Instance finder.
 
