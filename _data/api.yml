@@ -354,7 +354,7 @@ mod-feesfines:
       - payments
       - refunds
       - transfers
-      - transfertypes
+      - transfer-criteria
       - waiver
     ramlutil: ramls/raml-util
 
