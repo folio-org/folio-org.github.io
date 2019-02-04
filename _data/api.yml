@@ -299,6 +299,7 @@ mod-orders-storage:
       - physical
       - pieces
       - po_line
+      - po_line_number
       - po_number
       - purchase_order
       - receiving_history
