@@ -327,7 +327,7 @@ mod-vendors:
       - agreement
       - alias
       - category
-      - contact_person
+      - contact
       - edi
       - edi_ftp
       - edi_job
@@ -336,7 +336,6 @@ mod-vendors:
       - phone_number
       - url
       - vendor
-      - vendor_contact_person
       - vendor_type
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-vendors/schemas
