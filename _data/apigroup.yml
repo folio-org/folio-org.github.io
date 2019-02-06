@@ -38,6 +38,10 @@ inventory:
     - mod-oai-pmh
     - edge-oai-pmh
     - mod-marccat
+erm:
+  title: Resource management
+  description: ERM, licenses, usage statistics.
+  modules:
     - mod-erm-usage
 finance:
   title: Finance and orders
