@@ -43,6 +43,7 @@ erm:
   description: ERM, licenses, usage statistics.
   modules:
     - mod-erm-usage
+    - mod-erm-usage-harvester
 finance:
   title: Finance and orders
   description: Finance, orders, vendors.

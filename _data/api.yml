@@ -248,6 +248,14 @@ mod-erm-usage:
       - usagedataproviders
     ramlutil: ramls/raml-util
 
+mod-erm-usage-harvester:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - harvester
+    ramlutil: ramls/raml-util
+
 mod-gobi:
   - label: null
     version1: true
