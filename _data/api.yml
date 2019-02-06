@@ -280,6 +280,14 @@ mod-finance-storage:
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-finance/schemas
 
+mod-licenses:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - licenses
+    ramlutil: null
+
 mod-orders:
   - label: null
     version1: true
