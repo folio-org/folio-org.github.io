@@ -248,6 +248,14 @@ mod-erm-usage:
       - usagedataproviders
     ramlutil: ramls/raml-util
 
+mod-erm-usage-harvester:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - harvester
+    ramlutil: ramls/raml-util
+
 mod-gobi:
   - label: null
     version1: true
@@ -271,6 +279,14 @@ mod-finance-storage:
       - transaction
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-finance/schemas
+
+mod-licenses:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - licenses
+    ramlutil: null
 
 mod-orders:
   - label: null
