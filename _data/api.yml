@@ -149,6 +149,7 @@ mod-circulation-storage:
       - loan-policy-storage
       - loan-rules-storage
       - request-storage
+      - request-policy-storage
       - fixed-due-date-schedule
       - cancellation-reason
       - patron-notice-policy
