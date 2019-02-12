@@ -575,6 +575,7 @@ raml:
     directory: ramls/codex
     files:
       - codex
+      - codex-packages
     ramlutil: .
     schemasDirectory: schemas/codex
     shared: ramls/codex
