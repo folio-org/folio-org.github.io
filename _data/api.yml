@@ -346,9 +346,6 @@ mod-vendors:
       - alias
       - category
       - contact
-      - edi
-      - edi_ftp
-      - edi_job
       - email
       - interface
       - phone_number
