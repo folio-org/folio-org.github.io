@@ -145,9 +145,9 @@ mod-circulation-storage:
     version1: true
     directory: ramls
     files:
+      - circulation-rules-storage
       - loan-storage
       - loan-policy-storage
-      - loan-rules-storage
       - request-storage
       - request-policy-storage
       - fixed-due-date-schedule
