@@ -514,6 +514,7 @@ mod-rtac:
 
 edge-rtac:
   - label: null
+    version1: true
     directory: ramls
     files:
       - edge-rtac
