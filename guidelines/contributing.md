@@ -34,9 +34,39 @@ will be free of bugs; we are not superhuman.
 All real work should be done in feature branches. It is still OK to make a
 small trivial change directly in the master. Stuff like editing the README.
 
-People who do not have direct write permissions will need to "fork" the
-relevant repository. See the GitHub notes about
+## Fork GitHub repository
+
+Most people have write permission to only the few
+[https://github.com/folio-org](https://github.com/folio-org)
+repositories they regularly work on. For contributions to any other repository you
+will need to "fork" it to your personal GitHub account, see the GitHub notes about
 [working with forks](https://help.github.com/articles/working-with-forks/).
+
+The starting point is the cloned folio-org repository as `origin` on your local
+machine and looks like this:
+
+    git remote -v
+    origin  https://github.com/folio-org/folio-ansible (fetch)
+    origin  https://github.com/folio-org/folio-ansible (push)
+
+These are the steps to convert it to a triangular workflow:
+
+    git remote rename origin upstream
+    git remote add origin https://github.com/YOUR_USERNAME/folio-ansible
+    git config remote.pushdefault origin
+    git config push.default current
+
+This is the result:
+
+    git remote -v
+    origin  https://github.com/YOUR_USERNAME/folio-ansible (fetch)
+    origin  https://github.com/YOUR_USERNAME/folio-ansible (push)
+    upstream        https://github.com/folio-org/folio-ansible (fetch)
+    upstream        https://github.com/folio-org/folio-ansible (push)
+
+Now `fetch` and `pull` will use the folio-org `upstream` repository. A `push`
+will use your personal `origin` fork from where you can create the pull request.
+A maintainer will merge it to the `upstream` repository.
 
 ### Commit messages
 Try to follow the commit message guidelines in
