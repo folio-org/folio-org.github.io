@@ -329,6 +329,7 @@ mod-orders-storage:
 
 edge-orders:
   - label: null
+    version1: true
     directory: ramls
     files:
       - edge-orders
