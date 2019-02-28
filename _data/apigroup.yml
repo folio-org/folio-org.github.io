@@ -50,6 +50,7 @@ finance:
   description: Finance, orders, vendors.
   modules:
     - mod-finance-storage
+    - mod-invoice
     - mod-orders
     - mod-orders-storage
     - edge-orders
