@@ -200,6 +200,14 @@ mod-inventory-storage:
       - statistical-code-type
     ramlutil: ramls/raml-util
 
+mod-invoice:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - invoice
+    ramlutil: ramls/raml-util
+
 mod-kb-ebsco:
   - label: null
     version1: true
