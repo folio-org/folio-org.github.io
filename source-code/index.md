@@ -245,10 +245,6 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-rmb-template](https://github.com/folio-org/mod-rmb-template)
   -- A Maven archetype to commence a new RMB-based module.
 
-- [mod-pg-embed](https://github.com/folio-org/mod-pg-embed)
-  -- Helper module to start embedded Postgres.
-  Helper for developers that starts the "embedded" postgres server and sets up the environment so that other modules can locate the database.
-
 - [mod-data-loader](https://github.com/folio-org/mod-data-loader)
   -- RMB-based module used to load test data.
   Currently supports loading binary MARC records into the mod-inventory-storage instance table.
