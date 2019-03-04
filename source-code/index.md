@@ -245,10 +245,6 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-rmb-template](https://github.com/folio-org/mod-rmb-template)
   -- A Maven archetype to commence a new RMB-based module.
 
-- [mod-pg-embed](https://github.com/folio-org/mod-pg-embed)
-  -- Helper module to start embedded Postgres.
-  Helper for developers that starts the "embedded" postgres server and sets up the environment so that other modules can locate the database.
-
 - [mod-data-loader](https://github.com/folio-org/mod-data-loader)
   -- RMB-based module used to load test data.
   Currently supports loading binary MARC records into the mod-inventory-storage instance table.
@@ -305,6 +301,9 @@ exists and can be run, the APIs are likely to change.
 
 - [stripes-smart-components](https://github.com/folio-org/stripes-smart-components)
   -- A suite of smart components. Each communicates with an Okapi web-service in order to provide the facilities that it renders.
+
+- [stripes-erm-components](https://github.com/folio-org/stripes-erm-components)
+  -- Stripes components that are specific to use cases that arise in ERM-related modules.
 
 - [stripes-util](https://github.com/folio-org/stripes-util)
   -- A library of utility functions to support Stripes modules.
@@ -402,6 +401,10 @@ exists and can be run, the APIs are likely to change.
 - [ui-plugin-find-instance](https://github.com/folio-org/ui-plugin-find-instance)
   -- Stripes UI plugin: Instance finder.
 
+- [ui-plugin-find-license](https://github.com/folio-org/ui-plugin-find-license)
+  -- Stripes UI plugin: License finder.
+  UI Widget to lookup or create licenses.
+
 - [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
   -- Stripes UI plugin: User finder.
 
@@ -486,6 +489,9 @@ exists and can be run, the APIs are likely to change.
 
 - [folio-isbn-util](https://github.com/folio-org/folio-isbn-util)
   -- ISBN number converter utilities.
+
+- [folio-holdingsiq-client](https://github.com/folio-org/folio-holdingsiq-client)
+  -- Client library to HoldingsIQ API.
 
 - [data-import-utils](https://github.com/folio-org/data-import-utils)
   -- Library with common utilities for data-import modules.
