@@ -302,6 +302,9 @@ exists and can be run, the APIs are likely to change.
 - [stripes-smart-components](https://github.com/folio-org/stripes-smart-components)
   -- A suite of smart components. Each communicates with an Okapi web-service in order to provide the facilities that it renders.
 
+- [stripes-erm-components](https://github.com/folio-org/stripes-erm-components)
+  -- Stripes components that are specific to use cases that arise in ERM-related modules.
+
 - [stripes-util](https://github.com/folio-org/stripes-util)
   -- A library of utility functions to support Stripes modules.
 
@@ -397,6 +400,10 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-plugin-find-instance](https://github.com/folio-org/ui-plugin-find-instance)
   -- Stripes UI plugin: Instance finder.
+
+- [ui-plugin-find-license](https://github.com/folio-org/ui-plugin-find-license)
+  -- Stripes UI plugin: License finder.
+  UI Widget to lookup or create licenses.
 
 - [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
   -- Stripes UI plugin: User finder.
