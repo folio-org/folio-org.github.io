@@ -124,6 +124,7 @@ These are listed in the [Start](/start/) section.
 - [Conduct API testing](api-testing/) using Postman collections and Newman against a running module.
 - [Describe schema and properties](describe-schema/).
 - [Conduct cross-module joins via their APIs](cross-module-joins).
+- [Working with dates and times](dates-and-times/).
 - [How to check for a valid UUID](uuids).
 - [User experience design](user-experience-design/).
 - [Accessible Routing in FOLIO](https://github.com/folio-org/stripes-components/blob/master/docs/patterns/AccessibleRouting.md) explains assisted navigation.
