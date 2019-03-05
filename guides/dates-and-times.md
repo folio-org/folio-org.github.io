@@ -9,7 +9,7 @@ menuTopTitle: Guides
 This document describes the general principles regarding how FOLIO operates with international date and time values.
 
 FOLIO uses [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) as the standard to represent date and time format (i.e. a profile of ISO 8601).
-For example: `2019-01-21T22:00:00.000+0000`
+For example: `2019-01-21T22:00:00.000+00:00`
 
 Dates and times are stored with the back-end modules as UTC.
 The APIs assume UTC on input, and store and return timestamps in UTC.
