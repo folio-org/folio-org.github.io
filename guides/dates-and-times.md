@@ -17,7 +17,7 @@ The APIs assume UTC on input, and store and return timestamps in UTC.
 The i18n document [explains](https://github.com/folio-org/stripes/blob/master/doc/i18n.md#dates-and-times) how they are formatted for display by front-end modules.
 When comparing or manipulating dates, it is safest to operate in UTC mode and leave display formatting to internationalization helpers.
 
-With datetime properties in the JSON Schemas, the **type** "string" and **format** "date-time" should be used.
+With datetime properties in the JSON Schemas, use the **type** "string" and **format** "date-time".
 For example:
 
 ```
@@ -28,7 +28,7 @@ For example:
 }
 ```
 
-With datetime query parameters in RAML types, the **type** "datetime" or "date-only" should be used.
+With datetime query parameters in RAML 1.0 types, use the **type** "datetime" or "date-only".
 For example:
 
 ```
