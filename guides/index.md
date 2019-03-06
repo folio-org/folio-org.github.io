@@ -151,6 +151,8 @@ and the [FOLIO Development Process Overview](https://wiki.folio.org/display/COMM
 For people assisting with the FOLIO development operations infrastructure (DevOps) there are various notes.
 For example regarding operation, enhancement, and configuration of Jenkins continuous integration.
 
+- [DevOps introduction](devops-introduction/).
+
 ### Community
 
 - [Community](/community/)
