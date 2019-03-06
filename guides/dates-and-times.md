@@ -43,8 +43,6 @@ requestedDate:
   description: "Requested date example"
 ```
 
-In both cases (JSON schema and query parameter) the values deserialize to java.util.Date class.
-
 To respect the tenant chosen timezone on the back-end, use direct call to mod-configuration.
 FOLIO uses the [tz database](https://en.wikipedia.org/wiki/Tz_database) to specify timezone for a tenant.
 Default value is "UTC".
