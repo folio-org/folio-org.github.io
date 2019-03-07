@@ -10,11 +10,13 @@ Each property of an API schema has a "description" field.
 These are utilised to explain the purpose of the properties and enable their use.
 Each schema also has a top-level description explaining the overall purpose.
 
-Refer to some examples:
+Refer to some examples.
+The first link is the source file.
+The second link is the generated API documentation, displays one place where that schema is used.
 * [mod-circulation-storage loan.json](https://github.com/folio-org/mod-circulation-storage/blob/master/ramls/loan.json)
-and its generated [documentation](https://s3.amazonaws.com/foliodocs/api/mod-circulation-storage/loan-storage.html#loan_storage_loans__loanId__get) (select the "Response" tab).
-* [mod-inventory-storage instance.json](https://github.com/folio-org/mod-inventory-storage/blob/master/ramls/instance.json)
-and its generated [documentation](https://s3.amazonaws.com/foliodocs/api/mod-inventory-storage/instance-storage.html#instance_storage_instances__instanceid__get) (select the "Response" tab).
+and generated [documentation](https://s3.amazonaws.com/foliodocs/api/mod-circulation-storage/p/loan-storage.html#loan_storage_loans__loanid__get).
+* [mod-circulation request.json](https://github.com/folio-org/mod-circulation/blob/master/ramls/request.json)
+and generated [documentation](https://s3.amazonaws.com/foliodocs/api/mod-circulation/p/circulation.html#circulation_requests__requestid__get).
 
 Library subject-matter experts can also assist to improve these descriptions.
 
