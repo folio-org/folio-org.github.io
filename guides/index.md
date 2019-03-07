@@ -77,6 +77,7 @@ module, especially the "ui-users".
 * [Development tips](#development-tips)
 * [Tutorials](#tutorials)
 * [Development management](#development-management)
+* [Development operations](#development-operations)
 * [Community](#community)
 * [Other topics](#other-topics)
 
@@ -144,6 +145,14 @@ instructor-led workshop.
 - [Maintain tidy repositories](tidy-repository/).
 - The [FOLIO Project Roadmap](https://wiki.folio.org/display/PC/FOLIO+Roadmap) including the development and milestone plan for Version 1 and the feature backlog,
 and the [FOLIO Development Process Overview](https://wiki.folio.org/display/COMMUNITY/FOLIO+Development+Process+Overview), and other important documents and resources are listed at the [Wiki](https://wiki.folio.org).
+
+### Development operations
+
+For people assisting with the FOLIO development operations infrastructure (DevOps) there are various notes.
+For example regarding operation, enhancement, and configuration of Jenkins continuous integration.
+
+- [DevOps introduction](devops-introduction/).
+- [Verify task acceptance criteria](devops-verify-task-acceptance/).
 
 ### Community
 
