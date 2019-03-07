@@ -398,6 +398,7 @@ mod-notify:
     directory: ramls
     files:
       - notify
+      - patron-notice
     ramlutil: ramls/raml-util
 
 mod-sender:
