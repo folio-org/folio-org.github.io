@@ -86,8 +86,6 @@ If our changes are related to actions taken only during Pull Requests, we could 
 Mark the PR title to ensure that people are aware to not merge this.
 When finished with testing, the PRs are closed (and not merged).
 
-TODO: Add note about re-run when need to make changes to the jenkins-pipeline-libs branch.
-
 There are limitations to this approach, however. For example, actions that occur only when building on a repository's master branch, or when performing release builds for modules.
 These are often more difficult to test, since testing on a module's master branch might introduce problems into that branch.
 

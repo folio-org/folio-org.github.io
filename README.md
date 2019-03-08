@@ -48,7 +48,8 @@ To verify internal and external links, do:
 
 ## Work area - management of dev site
 
-See [notes](work/README.md).
+See [notes](work/README.md) about the operation and management.
+(Despite the name of this repository, it is not built using the GitHub tools.)
 
 ## Deployment
 

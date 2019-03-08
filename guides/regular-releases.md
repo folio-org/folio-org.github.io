@@ -10,7 +10,7 @@ The main set of FOLIO modules are coordinated to form a regular release.
 At this stage it happens on a quarterly basis.
 
 Each has a dedicated Slack [channel](/guidelines/which-forum/#slack)
-(e.g. `#release-q4-2018`). There are various planning documents pinned there.
+(e.g. `#release-q1-2019`). There are various planning documents pinned there.
 
 The cut-off dates for module releases that are to be included, are also listed in those spreadsheets.
 
