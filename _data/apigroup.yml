@@ -51,6 +51,7 @@ finance:
   modules:
     - mod-finance-storage
     - mod-invoice
+    - mod-invoice-storage
     - mod-orders
     - mod-orders-storage
     - edge-orders
