@@ -210,6 +210,14 @@ mod-invoice:
       - invoice
     ramlutil: ramls/raml-util
 
+mod-invoice-storage:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - invoice
+    ramlutil: ramls/raml-util
+
 mod-kb-ebsco:
   - label: null
     version1: true
