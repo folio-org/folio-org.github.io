@@ -322,26 +322,15 @@ mod-orders-storage:
     version1: true
     directory: ramls
     files:
-      - adjustment
       - alert
-      - claim
-      - cost
-      - details
-      - eresource
-      - fund_distribution
-      - license
-      - location
       - orders
-      - physical
       - pieces
-      - po_line
-      - po_line_number
-      - po_number
-      - purchase_order
-      - receiving_history
-      - reporting_code
-      - source
-      - vendor_detail
+      - po-line
+      - po-line-number
+      - po-number
+      - purchase-order
+      - receiving-history
+      - reporting-code
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-orders-storage/schemas
 
