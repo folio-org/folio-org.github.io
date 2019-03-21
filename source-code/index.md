@@ -169,6 +169,12 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-finance-storage](https://github.com/folio-org/mod-finance-storage)
   -- Persistent storage of finance-related data (i.e. funds, ledgers, transactions, etc.).
 
+- [mod-invoice](https://github.com/folio-org/mod-invoice)
+  -- Invoice business logic.
+
+- [mod-invoice-storage](https://github.com/folio-org/mod-invoice-storage)
+  -- Persistent storage of invoice data.
+
 - [mod-orders](https://github.com/folio-org/mod-orders)
   -- Orders business logic.
 
@@ -271,6 +277,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [edge-rtac](https://github.com/folio-org/edge-rtac)
   -- Edge API for RTAC (Real Time Availability Check).
   To interface with FOLIO for 3rd party discovery services to determine holdings availability.
+
+- [edge-sip2](https://github.com/folio-org/edge-sip2)
+  -- Edge API to bridge the gap between self service circulation and patron services stations and FOLIO by allowing these systems to issue requests and receive responses in Standard Interchange Protocol v2 (SIP2).
 
 ## Client-side
 
