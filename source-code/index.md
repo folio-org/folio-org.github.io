@@ -278,6 +278,9 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Edge API for RTAC (Real Time Availability Check).
   To interface with FOLIO for 3rd party discovery services to determine holdings availability.
 
+- [edge-sip2](https://github.com/folio-org/edge-sip2)
+  -- Edge API to bridge the gap between self service circulation and patron services stations and FOLIO by allowing these systems to issue requests and receive responses in Standard Interchange Protocol v2 (SIP2).
+
 ## Client-side
 
 Since Okapi represents all the FOLIO functionality as well-behaved web
