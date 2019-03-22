@@ -129,6 +129,7 @@ These are listed in the [Start](/start/) section.
 - [How to check for a valid UUID](uuids).
 - [User experience design](user-experience-design/).
 - [Accessible Routing in FOLIO](https://github.com/folio-org/stripes-components/blob/master/docs/patterns/AccessibleRouting.md) explains assisted navigation.
+- [Performance optimization](performance-optimization/).
 
 ### Tutorials
 
