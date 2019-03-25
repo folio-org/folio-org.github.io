@@ -22,7 +22,7 @@ Bearing in mind that [FOLIO uses any programming language](/guides/any-programmi
 
 ## Fundamental documentation
 
-- [Definition of the Ituri Platform, FOLIO LSP Base and FOLIO LSP Extended Apps](https://wiki.folio.org/x/kozc)
+- [Definition of the Okapi-Stripes Platform, FOLIO LSP Base and FOLIO LSP Extended Apps](https://wiki.folio.org/x/kozc)
 - [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md).
 - [FOLIO-Sample-Modules guide](https://github.com/folio-org/folio-sample-modules/blob/master/README.md).
 - [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework.
