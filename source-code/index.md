@@ -221,6 +221,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-erm-usage](https://github.com/folio-org/mod-erm-usage)
   -- Store ERM usage statistics and access data to these statistics.
 
+- [mod-erm-usage-counter](https://github.com/folio-org/mod-erm-usage-counter)
+  -- Library containing models and clients for COUNTER/SUSHI standard.
+
 - [mod-erm-usage-harvester](https://github.com/folio-org/mod-erm-usage-harvester)
   -- Harvest ERM usage statistics.
 
