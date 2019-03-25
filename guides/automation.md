@@ -26,6 +26,8 @@ The project is using a continuous integration -- or CI -- system (described belo
 The CI system automatically builds environments that are used for various purposes by the developers, the product owners, and the testers.
 In order to fully understand this diagram, keep in mind that there are two parts to FOLIO -- the part called “Stripes” which is the software running in the browser and the part called “Okapi” which is running on the server.
 
+The Okapi backend is secured during the CI process. For more information on securing Okapi see the [guide on securing Okapi](https://github.com/folio-org/okapi/blob/master/doc/securing.md). Default settings for securing okapi are in the okapi-secure Ansible role's [defaults](https://github.com/folio-org/folio-ansible/blob/master/roles/okapi-secure/defaults/main.yml) file.
+
 ### folio-testing
 
 [http://folio-testing.aws.indexdata.com/](http://folio-testing.aws.indexdata.com/)
