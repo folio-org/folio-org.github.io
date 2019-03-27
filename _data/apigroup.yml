@@ -45,6 +45,7 @@ erm:
     - mod-erm-usage
     - mod-erm-usage-harvester
     - mod-licenses
+    - mod-finc-config
 finance:
   title: Finance and orders
   description: Finance, orders, vendors.

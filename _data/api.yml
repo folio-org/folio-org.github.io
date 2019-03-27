@@ -276,6 +276,16 @@ mod-erm-usage-harvester:
       - start
     ramlutil: ramls/raml-util
 
+mod-finc-config:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - finc-tenant
+      - metadataSources
+      - metadataCollections
+    ramlutil: ramls/raml-util
+
 mod-gobi:
   - label: null
     version1: true
