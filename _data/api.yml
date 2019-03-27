@@ -237,6 +237,7 @@ mod-kb-ebsco-java:
       - providers
       - proxies
       - resources
+      - tags
       - titles
     ramlutil: ramls/raml-util
 
@@ -274,6 +275,16 @@ mod-erm-usage-harvester:
     files:
       - harvester
       - start
+    ramlutil: ramls/raml-util
+
+mod-finc-config:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - finc-tenant
+      - metadataSources
+      - metadataCollections
     ramlutil: ramls/raml-util
 
 mod-gobi:
