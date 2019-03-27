@@ -237,6 +237,7 @@ mod-kb-ebsco-java:
       - providers
       - proxies
       - resources
+      - tags
       - titles
     ramlutil: ramls/raml-util
 
