@@ -6,7 +6,7 @@ menuInclude: no
 menuTopTitle: Guides
 ---
 
-Each property of an API schema has a "description" field.
+Each property of an API schema has a "description" attribute.
 These are utilised to explain the purpose of the properties and enable their use.
 Each schema also has a top-level description explaining the overall purpose.
 
@@ -30,15 +30,46 @@ When adding new properties, utilise these from the start.
 
 For existing properties, if those are not already present, then define such constraints in prose in the description. They can later be formalised, probably as a new interface version.
 
-Note that some existing descriptions are too minimal or are missing.
+Even when those supporting attributes are utilised, then it is still beneficial to provide a thorough "description". Ensure that it remains synchronised with any supporting attributes.
 
-Some important properties would require very informative descriptions.
+All of the properties should be well-documented, but it is specifically data properties, wherein the module is acting as a database, that require thorough description and specification. Consider the needs of facilities such as data reporting and data migration, where these teams require full knowledge of the data.
 
-Use the schema property description to declare controlled vocabularies and where to find reference data.
+Documentation for each property should include:
+* A description of what it means
+* The precise domain of the property (range of values, controlled vocabulary, etc.)
+* Whether it is required or optional
+* Where to find referenced data, if the property is a foreign key
+* Any other constraints on the data, e.g. only unique values
 
-The schema descriptions can be long text, but not use markup.
+Some examples:
 
-The relevant RAML files that utilise the schema can provide valid examples, and describe other constraints.
+```
+Property name:      username
+Purpose:            The user's login name.  This also serves as a unique,
+                    human-readable identifier for the user.
+Domain:             String of alphanumeric Unicode characters, beginning
+                    with an alphabetic character.  Maximum of 16 characters.
+Required:           Yes
+References:         N/A
+Other constraints:  Unique, but may be reused after the user is deleted.
+
+```
+
+and
+
+```
+Property name:      patronGroup
+Purpose:            The patron group that the user belongs to.
+Domain:             UUID
+Required:           Yes
+References:         "User Groups" /groups/{groupId} (e.g. mod-users)
+Other constraints:  None
+
+```
+
+The schema property "description" can only be a single long text string, and can not use markup. So just concatenate the relevant information.
+
+The relevant RAML files that utilise the schema can provide valid examples. They can also provide additional [RAML documentation node](https://github.com/raml-org/raml-spec/blob/master/versions/raml-10/raml-10.md#user-documentation) entries, which can utilise Markdown (either in-line or via included files). In this way other constraints be described, also with links to supporting resources.
 
 To contribute updates, either send a pull-request with the changes or add to a Jira issue tracker.
 
