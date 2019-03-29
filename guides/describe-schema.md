@@ -7,7 +7,6 @@ menuTopTitle: Guides
 ---
 
 Each property of an API schema has a "description" field.
-
 These are utilised to explain the purpose of the properties and enable their use.
 Each schema also has a top-level description explaining the overall purpose.
 
@@ -29,21 +28,17 @@ Add a "description" for each of the property elements within a "properties" obje
 Some properties might have supporting attributes such as "pattern" for a UUID, "enum" to enumerate the allowed values, "format, "default", "uniqueItems", etc. and the "required" sections of the schema.
 When adding new properties, utilise these from the start.
 
-For existing properties, if those are not already present, then define such constraints in prose in the description. They can later be formalised, perhaps as a new interface version.
+For existing properties, if those are not already present, then define such constraints in prose in the description. They can later be formalised, probably as a new interface version.
 
 Note that some existing descriptions are too minimal or are missing.
 
 Some important properties would require very informative descriptions.
-See guidance at [FOLIO-1568](https://issues.folio.org/browse/FOLIO-1568) and related tickets.
 
 Use the schema property description to declare controlled vocabularies and where to find reference data.
 
 The schema descriptions can be long text, but not use markup.
 
 The relevant RAML files that utilise the schema can provide valid examples, and describe other constraints.
-
-See other guidance at [FOLIO-1447](https://issues.folio.org/browse/FOLIO-1447)
-and [FOLIO-1551](https://issues.folio.org/browse/FOLIO-1551).
 
 To contribute updates, either send a pull-request with the changes or add to a Jira issue tracker.
 
