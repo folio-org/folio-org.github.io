@@ -24,9 +24,14 @@ on-demand resources for FOLIO integration testing and demos.
 
 The project is using a continuous integration -- or CI -- system (described below) that builds new versions of the software whenever a developer makes a change, as well as on a timed basis.
 The CI system automatically builds environments that are used for various purposes by the developers, the product owners, and the testers.
+
 In order to fully understand this diagram, keep in mind that there are two parts to FOLIO -- the part called “Stripes” which is the software running in the browser and the part called “Okapi” which is running on the server.
 
 The Okapi backend is secured during the CI process. For more information on securing Okapi see the [guide on securing Okapi](https://github.com/folio-org/okapi/blob/master/doc/securing.md). Default settings for securing okapi are in the okapi-secure Ansible role's [defaults](https://github.com/folio-org/folio-ansible/blob/master/roles/okapi-secure/defaults/main.yml) file.
+
+Another part that is not indicated in this diagram are various "edge" modules, which bridge the gap between some specific third-party services and FOLIO (e.g. RTAC, OAI-PMH).
+On these FOLIO reference systems, the set of edge services are accessed via port 8000.
+The API key is explained at [edge-common](https://github.com/folio-org/edge-common#security) and the institutional user is `diku`.
 
 ### folio-testing
 
