@@ -31,7 +31,8 @@ The Okapi backend is secured during the CI process. For more information on secu
 
 Another part that is not indicated in this diagram are various "edge" modules, which bridge the gap between some specific third-party services and FOLIO (e.g. RTAC, OAI-PMH).
 On these FOLIO reference systems, the set of edge services are accessed via port 8000.
-The API key is explained at [edge-common](https://github.com/folio-org/edge-common#security) and the institutional user is `diku`.
+The API key is explained at [edge-common](https://github.com/folio-org/edge-common#security).
+The edge APIs are deployed such that any API key generated with the tenant diku and institutional user diku will work (ephemeral secure store is being used which ignores the salt portion of the key).
 
 ### folio-testing
 
