@@ -398,6 +398,7 @@ mod-notes:
     directory: ramls
     files:
       - note
+      - types
     ramlutil: ramls/raml-util
 
 mod-notify:
