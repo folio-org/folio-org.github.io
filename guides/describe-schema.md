@@ -21,6 +21,9 @@ and generated [documentation](https://s3.amazonaws.com/foliodocs/api/mod-circula
 * [mod-circulation request.json](https://github.com/folio-org/mod-circulation/blob/master/ramls/request.json)
 and generated [documentation](https://s3.amazonaws.com/foliodocs/api/mod-circulation/p/circulation.html#circulation_requests__requestid__get).
 
+(NOTE: Those examples are demonstrating the general task of documentation.
+These will be updated when [FOLIO-1925](https://issues.folio.org/browse/FOLIO-1925) is completed to provide actual examples following this documentation.)
+
 Library subject-matter experts and developers, please assist to improve all schema descriptions.
 
 Add a "description" for each of the property elements within a "properties" object. Note that there may also be nested properties objects.
