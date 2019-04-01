@@ -109,3 +109,12 @@ Need to use the actual pathname to the schema file located one directory above.
 
 Note: For pre-RMBv20 do not use references with two sets of dot-dots.
 
+### No empty optional required section
+
+If a JSON Schema does not have any properties that are required, then do not use an empty "required" array. Instead simply remove that optional "required" element.
+Otherwise the raml-1-parser will try to be helpful with a message such as this:
+
+```
+[ramls/note.json:0:0] WARNING Invalid JSON schema: Remote reference didn't compile successfully: https://__/APPENDED_PROTOCOL/__/.../ramls/userDisplayInfo.json#
+```
+
