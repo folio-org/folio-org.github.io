@@ -12,7 +12,7 @@ The following guidelines assist with knowing what to report, and how to create a
 
 ## Sign up for an account
 
-To create issues or add comments, sign up for an account via the [front page](https://issues.folio.org).
+To create issue tickets or add comments, sign up for an account via the [front page](https://issues.folio.org).
 (This is also used to manage accounts for wiki.folio.org, so same account for both.)
 
 ## Report various issues
@@ -43,8 +43,9 @@ Be careful not to speculate too much about the causes of the issue.
 Provide the facts, describe your actions, the expected results, and actual results as clearly as possible.
 That time spent does help everyone.
 
-Use a local text file and your familiar editor to prepare and save the
-summary, description, and comments. When ready then copy-and-paste.
+Use a local plain text file and your familiar text editor to prepare and save the summary, description, and comments.
+This technique also helps to reduce the amount of notifications.
+When ready then copy-and-paste.
 
 Jira uses a particular markup language for special formatting, and is different to GitHub etc.
 There is a link to Jira help via its "Add Comment" screen.
@@ -59,6 +60,8 @@ Type_ (see [below](#issue-types) for definitions).
 Each individual [source code](/source-code) repository's README document has a link to its particular issue tracker Project.
 If unsure which Project, then use "FOLIO".
 Someone can change these later if necessary.
+
+Select the appropriate "Development Team".
 
 For the "Bug" issue type, use the "Configure Fields" option to add
 the _Environment_ field.

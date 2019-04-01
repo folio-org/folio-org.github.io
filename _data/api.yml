@@ -398,6 +398,7 @@ mod-notes:
     directory: ramls
     files:
       - note
+      - types
     ramlutil: ramls/raml-util
 
 mod-notify:
@@ -593,6 +594,7 @@ raml:
     directory: ramls/codex
     files:
       - codex
+      - codex-instances-sources
       - codex-packages
     ramlutil: .
     schemasDirectory: schemas/codex
