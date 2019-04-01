@@ -15,7 +15,10 @@ of development environments at this time -- Java-based Maven projects and Nodejs
 
 The files and main parameters are explained below for
 [back-end](#back-end-modules) and [front-end](#front-end-modules) modules.
+
 Each parameter can be omitted to accept the default.
+
+The values are: `true` or `false` (or the old syntax `'yes'` or `'no'`).
 
 # Back-end modules
 
@@ -26,15 +29,15 @@ See an example at
 
 ```
 buildMvn {
-  publishModDescriptor = 'yes'
-  mvnDeploy = 'yes'
-  publishAPI = 'yes'
-  runLintRamlCop = 'yes'
+  publishModDescriptor = true
+  mvnDeploy = true
+  publishAPI = true
+  runLintRamlCop = true
 
   doDocker = {
     buildJavaDocker {
-      publishMaster = 'yes'
-      healthChk = 'yes'
+      publishMaster = true
+      healthChk = true
       healthChkCmd = 'curl -sS --fail -o /dev/null http://localhost:8081/apidocs/ || exit 1'
     }
   }
@@ -81,9 +84,9 @@ and
 
 ```
 buildNPM {
-  publishModDescriptor = 'yes'
-  runLint = 'yes'
-  runTest = 'yes'
+  publishModDescriptor = true
+  runLint = true
+  runTest = true
   runTestOptions = '--karma.singleRun --karma.browsers=ChromeDocker'
   runRegression = 'partial'
 }
