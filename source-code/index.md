@@ -389,6 +389,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-myprofile](https://github.com/folio-org/ui-myprofile)
   -- Stripes UI module: managing user profile settings.
 
+- [ui-notes](https://github.com/folio-org/ui-notes)
+  -- Stripes UI module: notes helper.
+
 - [ui-tags](https://github.com/folio-org/ui-tags)
   -- Stripes UI module: managing tag settings.
 
