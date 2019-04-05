@@ -216,7 +216,9 @@ mod-invoice-storage:
     directory: ramls
     files:
       - invoice
+      - invoice-line-number
     ramlutil: ramls/raml-util
+    schemasDirectory: ramls/acq-models/mod-invoice-storage/schemas
 
 mod-kb-ebsco:
   - label: null
