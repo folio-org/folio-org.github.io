@@ -357,7 +357,7 @@ edge-orders:
     ramlutil: null
     rmb: false
 
-mod-vendors:
+mod-organizations-storage:
   - label: null
     version1: true
     directory: ramls
