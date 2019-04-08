@@ -217,6 +217,7 @@ mod-invoice-storage:
     files:
       - invoice
       - invoice-line-number
+      - invoice-number
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-invoice-storage/schemas
 
