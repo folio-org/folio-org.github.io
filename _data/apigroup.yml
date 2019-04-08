@@ -56,8 +56,8 @@ finance:
     - mod-orders
     - mod-orders-storage
     - edge-orders
+    - mod-organizations-storage
     - mod-gobi
-    - mod-vendors
 notifications:
   title: Notifications
   description: Assembling and sending notifications.
