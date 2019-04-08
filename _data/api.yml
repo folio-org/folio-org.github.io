@@ -217,6 +217,7 @@ mod-invoice-storage:
     files:
       - invoice
       - invoice-line-number
+      - invoice-number
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-invoice-storage/schemas
 
@@ -356,7 +357,7 @@ edge-orders:
     ramlutil: null
     rmb: false
 
-mod-vendors:
+mod-organizations-storage:
   - label: null
     version1: true
     directory: ramls
