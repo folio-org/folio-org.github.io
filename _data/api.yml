@@ -362,20 +362,16 @@ mod-organizations-storage:
     version1: true
     directory: ramls
     files:
-      - account
       - address
-      - agreement
-      - alias
       - category
       - contact
       - email
       - interface
+      - organization
       - phone_number
       - url
-      - vendor
-      - vendor_type
     ramlutil: ramls/raml-util
-    schemasDirectory: ramls/acq-models/mod-vendors/schemas
+    schemasDirectory: ramls/acq-models/mod-orgs/schemas
 
 mod-feesfines:
   - label: null
