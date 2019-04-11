@@ -212,8 +212,8 @@ facilitated by the code in the `raml-module-builder` repository.
 - [data-import-raml-storage](https://github.com/folio-org/data-import-raml-storage)
   -- Shared repository for the schemas of various data-import modules.
 
-- [mod-vendors](https://github.com/folio-org/mod-vendors)
-  -- Persistent storage of vendor data.
+- [mod-organizations-storage](https://github.com/folio-org/mod-organizations-storage)
+  -- Persistent storage of organizations data.
 
 - [mod-agreements](https://github.com/folio-org/mod-agreements)
   -- Electronic resource management (ERM)
@@ -401,8 +401,8 @@ exists and can be run, the APIs are likely to change.
 - [ui-servicepoints](https://github.com/folio-org/ui-servicepoints)
   -- Stripes UI module: Service Points handler.
 
-- [ui-vendors](https://github.com/folio-org/ui-vendors)
-  -- Stripes UI module: Vendors.
+- [ui-organizations](https://github.com/folio-org/ui-organizations)
+  -- Stripes UI module: Organizations.
 
 - [ui-audit](https://github.com/folio-org/ui-audit)
   -- Stripes UI module: Viewing audit trails.
@@ -419,6 +419,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-plugin-find-license](https://github.com/folio-org/ui-plugin-find-license)
   -- Stripes UI plugin: License finder.
   UI Widget to lookup or create licenses.
+
+- [ui-plugin-find-organization](https://github.com/folio-org/ui-plugin-find-organization)
+  -- Stripes UI plugin: Organization finder.
 
 - [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
   -- Stripes UI plugin: User finder.
