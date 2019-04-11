@@ -627,3 +627,24 @@ data-import-raml-storage:
     schemasOnly: true
     rmb: false
 
+# Deprecated
+mod-vendors:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - account
+      - address
+      - agreement
+      - alias
+      - category
+      - contact
+      - email
+      - interface
+      - phone_number
+      - url
+      - vendor
+      - vendor_type
+    ramlutil: ramls/raml-util
+    schemasDirectory: ramls/acq-models/mod-vendors/schemas
+

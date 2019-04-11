@@ -99,3 +99,8 @@ other:
   title: Other
   description: Not yet grouped.
   modules:
+deprecated:
+  title: Deprecated
+  description: Some old ones that have been renamed.
+  modules:
+    - mod-vendors
