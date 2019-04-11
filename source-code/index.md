@@ -426,9 +426,6 @@ exists and can be run, the APIs are likely to change.
 - [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
   -- Stripes UI plugin: User finder.
 
-- [ui-plugin-find-vendor](https://github.com/folio-org/ui-plugin-find-vendor)
-  -- Stripes UI plugin: Vendor finder.
-
 - [ui-trivial](https://github.com/folio-org/ui-trivial)
   -- Stripes UI module: example application.
 
