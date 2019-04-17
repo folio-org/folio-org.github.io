@@ -302,6 +302,7 @@ mod-gobi:
 
 mod-finance-storage:
   - label: null
+    version1: true
     directory: ramls
     files:
       - budget
