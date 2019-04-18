@@ -277,7 +277,9 @@ The CI stages are defined in its [Jenkinsfile](https://github.com/folio-org/plat
 The front-end UI modules are declared in
 [package.json](https://github.com/folio-org/platform-core/blob/master/package.json) (and installed via 'yarn install') and are declared in the tenant configuration
 [stripes.config.js](https://github.com/folio-org/platform-core/blob/master/stripes.config.js) file.
-The 'yarn build-module-descriptors' script processes those and generates a temporary directory of ModuleDescriptors.
+Note that the versions are pinned in package.json (rather than using a comparator) which enables the Renovate bot to discover newer releases ([configured](https://github.com/folio-org/platform-core/blob/master/renovate.json) for platform release branches as "patch" and for master as "minor,patch").
+
+The 'yarn build-module-descriptors' stripes-cli [command](https://github.com/folio-org/stripes-cli/blob/master/doc/commands.md#mod-descriptor-command) processes those declared modules and generates a temporary directory of ModuleDescriptors.
 Then a CI script processes those MDs to generate the "stripes-install.json" file.
 
 Then additional modules that are declared in [install-extras.json](https://github.com/folio-org/platform-core/blob/master/install-extras.json) (see explanation below) are appended to that generated [stripes-install.json](https://github.com/folio-org/platform-core/blob/master/stripes-install.json) file.
