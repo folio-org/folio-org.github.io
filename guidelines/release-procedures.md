@@ -312,8 +312,6 @@ So declare that module version in the `install-extras.json` file.
 
 Some example PRs:
 
-* [update calendar to v2.1.2](https://github.com/folio-org/platform-core/pull/272)
--- edits package.json
 * [add mod-user-import](https://github.com/folio-org/platform-complete/pull/35)
--- edits install-extras.json
+-- edits `install-extras.json` to add a back-end module that does not get included as a UI dependency.
 
