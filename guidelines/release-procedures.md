@@ -296,6 +296,8 @@ The link to the built platform "instance" and the link to the "UI Tests" are app
 
 To update the version of a module, these steps must be completed.
 
+* Ensure that the module is already being processed on the snapshot branch of the relevant platform.
+
 * If a new `ui-` module is to be added, then declare it in `package.json` and `stripes.install.js` files.
 
 * If a further version constraint is needed, then adjust the `package.json` file.
