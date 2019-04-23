@@ -10,6 +10,7 @@ This document summarises the release procedures for FOLIO projects.
 
 * [Maven-based modules](#maven-based-modules)
 * [Stripes and UI modules](https://github.com/folio-org/stripes/blob/master/doc/release-procedure.md)
+* [Add to platforms](#add-to-platforms)
 
 ## Introduction
 
@@ -244,18 +245,73 @@ Select `Draft a new release` then choose the tag of the new release and add the 
 Use the Jira "Admin" interface of your project to "Manage Versions". Mark the current version as
 released, and add the next version(s).
 
+### Update platforms if bugfix
+
+If this was a bugfix release, and the platforms need to be updated while waiting for a related UI release, then refer to the [Add to platforms](#add-to-platforms) section below.
+
 ### Announce
 
 Send a note to #general on Slack if relevant.
 
-### Improve this doc
-
-If you found some parts of this guide to be out-of-date, or hard to understand,
-now is a good time to fix that. Check out the repository [folio-org/folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
-and edit `guidelines/release-procedures.md`
-
 ## Stripes-based modules
 
-All Stripes modules (i.e. stripes-* and ui-*) follow the
+All Stripes modules (i.e. `stripes-*` and `ui-*`) follow the
 [Stripes release procedure](https://github.com/folio-org/stripes/blob/master/doc/release-procedure.md).
+
+## Add to platforms
+
+### Introduction {#introduction-platform}
+
+This section explains how to update module versions in the platforms (e.g. [platform-core](https://github.com/folio-org/platform-core), [platform-complete](https://github.com/folio-org/platform-complete), etc.) after a new version of a module has been released following the instructions above.
+It also explains the related continuous integration process to assist background understanding.
+
+Note that the UI integration tests are now executed on the PR, and that the tests must be passing in order for the module release to be accepted to the FOLIO release.
+
+The [Platform edit steps](#platform-edit-steps) defined below are **mandatory** for module maintainers as part of their role in release management.
+
+### Continuous integration
+
+This is the CI process for a pull-request to master branch or a release branch of a platform. Consider platform-core for example.
+The CI stages are defined in its [Jenkinsfile](https://github.com/folio-org/platform-core/blob/master/Jenkinsfile).
+
+The front-end UI modules are declared in
+[package.json](https://github.com/folio-org/platform-core/blob/master/package.json) (and installed via 'yarn install') and are declared in the tenant configuration
+[stripes.config.js](https://github.com/folio-org/platform-core/blob/master/stripes.config.js) file.
+Note that the versions are pinned in package.json (rather than using a comparator) which enables the Renovate bot to discover newer releases ([configured](https://github.com/folio-org/platform-core/blob/master/renovate.json) for platform release branches as "patch" and for master as "minor,patch").
+
+The 'yarn build-module-descriptors' stripes-cli [command](https://github.com/folio-org/stripes-cli/blob/master/doc/commands.md#mod-descriptor-command) processes those declared modules and generates a temporary directory of ModuleDescriptors.
+Then a CI script processes those MDs to generate the "stripes-install.json" file.
+
+Then additional modules that are declared in [install-extras.json](https://github.com/folio-org/platform-core/blob/master/install-extras.json) (see explanation below) are appended to that generated [stripes-install.json](https://github.com/folio-org/platform-core/blob/master/stripes-install.json) file.
+
+Then the final stripes-install.json is posted to Okapi `/_/proxy/tenants/diku/install?simulate=true&preRelease=false` to resolve all of the related dependencies, and the output is captured into the [install.json](https://github.com/folio-org/platform-core/blob/master/install.json) file.
+
+Then that "install.json" file is processed to extract the "mod-" ones into the [okapi-install.json](https://github.com/folio-org/platform-core/blob/master/okapi-install.json) file.
+
+After a successful build, the generated artifacts (yarn.lock, install.json, okapi-install.json, stripes-install.json) are committed with message "[CI SKIP] Updating install files on branch".
+
+The link to the built platform "instance" and the link to the "UI Tests" are appended to the PR GitHub page. Note that these will expire after some short time.
+
+### Platform edit steps
+
+To update the version of a module, these steps must be completed.
+
+* Ensure that the module is already being processed on the snapshot branch of the relevant platform.
+
+* If a new `ui-` module is to be added, then declare it in `package.json` and `stripes.install.js` files.
+
+* If a further version constraint is needed, then adjust the `package.json` file.
+
+* As explained in the CI process, Okapi resolves other module dependencies based on those declared UI modules.
+If a certain module is not provided by that mechanism (e.g. mod-codex-inventory) then declare it in the `install-extras.json` file.
+
+* Occasionally there is a bugfix release, and the platform needs to be updated while waiting for a related UI release.
+So declare that module version in the `install-extras.json` file.
+
+* Submit the PR and ensure proper processing.
+
+Some example PRs:
+
+* [add mod-user-import](https://github.com/folio-org/platform-complete/pull/35)
+-- edits `install-extras.json` to add a back-end module that does not get included as a UI dependency.
 

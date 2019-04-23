@@ -118,6 +118,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-feesfines](https://github.com/folio-org/mod-feesfines)
   -- Provide central management for fees and fines.
 
+- [mod-finc-config](https://github.com/folio-org/mod-finc-config)
+  -- Knowledge base for amsl's finc-config module.
+
 - [mod-datasets](https://github.com/folio-org/mod-datasets)
   -- Wrapper for running a Glint server as an Okapi module.
 
@@ -398,6 +401,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-finance](https://github.com/folio-org/ui-finance)
   -- Stripes UI module: management of ledgers, funds, and budgets.
 
+- [ui-finc-config](https://github.com/folio-org/ui-finc-config)
+  -- Stripes UI module: amsl's finc-config.
+
 - [ui-servicepoints](https://github.com/folio-org/ui-servicepoints)
   -- Stripes UI module: Service Points handler.
 
@@ -406,6 +412,9 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-audit](https://github.com/folio-org/ui-audit)
   -- Stripes UI module: Viewing audit trails.
+
+- [ui-plugin-create-item](https://github.com/folio-org/ui-plugin-create-item)
+  -- Stripes UI plugin: Create item.
 
 - [ui-plugin-find-agreement](https://github.com/folio-org/ui-plugin-find-agreement)
   -- Stripes UI plugin: ERM agreement finder.
