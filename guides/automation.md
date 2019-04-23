@@ -91,6 +91,8 @@ If you have the permissions to do so, then the job can be initiated.
 Another common Jenkins job is dedicated to code releases.
 See [release procedures](/guidelines/release-procedures/).
 
+Also refer to the [explanation](/guidelines/release-procedures/#add-to-platforms) of Jenkins handling of PRs for Stripes Platforms, and the use of Renovate bot.
+
 Other Jenkins automation jobs exist as well for test deployments to AWS EC2 instances.
 
 ## Monitoring and performance
