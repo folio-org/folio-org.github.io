@@ -397,6 +397,7 @@ mod-notes:
     version1: true
     directory: ramls
     files:
+      - link
       - note
       - types
     ramlutil: ramls/raml-util
