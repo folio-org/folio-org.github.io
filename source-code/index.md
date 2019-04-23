@@ -407,6 +407,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-audit](https://github.com/folio-org/ui-audit)
   -- Stripes UI module: Viewing audit trails.
 
+- [ui-plugin-create-item](https://github.com/folio-org/ui-plugin-create-item)
+  -- Stripes UI plugin: Create item.
+
 - [ui-plugin-find-agreement](https://github.com/folio-org/ui-plugin-find-agreement)
   -- Stripes UI plugin: ERM agreement finder.
 
