@@ -28,6 +28,7 @@ The CI system automatically builds environments that are used for various purpos
 In order to fully understand this diagram, keep in mind that there are two parts to FOLIO -- the part called “Stripes” which is the software running in the browser and the part called “Okapi” which is running on the server.
 
 The Okapi backend is secured during the CI process. For more information on securing Okapi see the [guide on securing Okapi](https://github.com/folio-org/okapi/blob/master/doc/securing.md). Default settings for securing okapi are in the okapi-secure Ansible role's [defaults](https://github.com/folio-org/folio-ansible/blob/master/roles/okapi-secure/defaults/main.yml) file.
+Direct access is via URLs such as [https://folio-testing-okapi.aws.indexdata.com](https://folio-testing-okapi.aws.indexdata.com/)
 
 Another part that is not indicated in this diagram are various "edge" modules, which bridge the gap between some specific third-party services and FOLIO (e.g. RTAC, OAI-PMH).
 On these FOLIO reference systems, the set of edge services are accessed via port 8000.
