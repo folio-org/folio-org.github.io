@@ -75,18 +75,18 @@ Contextual Query Language
 ([CQL](https://en.wikipedia.org/wiki/Contextual_Query_Language)).
 It was previously known as Common Query Language,
 and that is not to be confused with the
-[OGC](http://docs.geoserver.org/latest/en/user/tutorials/cql/cql_tutorial.html)
+[OGC](https://docs.geoserver.org/latest/en/user/tutorials/cql/cql_tutorial.html)
 language of the same name.
 
 Some starting points are:
 
 - [A Gentle Introduction to CQL](http://zing.z3950.org/cql/intro.html).
 - FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/cql2pgjson-java) in Java.
-- The [CQL-1.2](http://www.loc.gov/standards/sru/cql/) specification and context sets.
+- The [CQL-1.2](https://www.loc.gov/standards/sru/cql/) specification and context sets.
 - As [SRU](#sru) 2.0 is OASIS searchRetrieve Version 1.0, then CQL is its
-  [Part 5](http://docs.oasis-open.org/search-ws/searchRetrieve/v1.0/os/part5-cql/searchRetrieve-v1.0-os-part5-cql.html).
-- [CQL-Java](http://www.indexdata.com/cql-java).
-- The CQL parser in [YAZ](http://www.indexdata.com/yaz/doc/tools.html#cql).
+  [Part 5](https://docs.oasis-open.org/search-ws/searchRetrieve/v1.0/os/part5-cql/searchRetrieve-v1.0-os-part5-cql.html).
+- [CQL-Java](https://www.indexdata.com/resources/software/cql-java/).
+- The CQL parser in [YAZ](https://software.indexdata.com/yaz/doc/tools.html#cql).
 
 A CQL example:
 ```
@@ -118,7 +118,7 @@ Don't repeat yourself
 #### ECMAScript
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript)
-is the formally standardised version JavaScript.
+is the formally standardised version of JavaScript.
 The Stripes Toolkit is written in
 [ES6](http://es6-features.org/),
 a modern variant that introduces several new facilities.
@@ -133,6 +133,10 @@ Functional Requirements for Bibliographic Records
 ([FRBR](https://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records)).
 
 ### Terms G-M
+
+#### HOC
+
+"Higher-order components" are a pattern for re-use of component logic with [React](#react).
 
 #### ILS
 
@@ -231,7 +235,7 @@ Proof-of-concept
 
 #### RAML
 
-[RESTful API Modeling Language](http://raml.org) - a language for the
+[RESTful API Modeling Language](https://raml.org) - a language for the
 definition of HTTP-based APIs. Okapi module APIs (including the API of
 Okapi itself) are [defined](/start/primer-raml/) in RAML files and JSON Schema files.
 
@@ -246,9 +250,14 @@ Resource Description and Access
 is a JavaScript library for building user interfaces.
 
 #### Redux
-[Redux](http://redux.js.org) is a state container for
+[Redux](https://redux.js.org) is a state container for
 JavaScript. Stripes uses React and Redux for building stateful
 JavaScript web applications.
+
+#### Reference environments
+
+Continuously built FOLIO systems to exhibit the state of development.
+These are linked and their automation is explained at [Software build pipeline](/guides/automation/#software-build-pipeline).
 
 #### REST
 
@@ -271,8 +280,8 @@ FOLIO is a single-page application ([SPA](https://en.wikipedia.org/wiki/Single-p
 #### SRU
 
 Search/Retrieve via URL
-([SRU](http://www.loc.gov/standards/sru/)).
-Version "[SRU 2.0](http://www.loc.gov/standards/sru/sru-2-0.html)"
+([SRU](https://loc.gov/standards/sru/)).
+Version "[SRU 2.0](https://loc.gov/standards/sru/sru-2-0.html)"
 is "searchRetrieve Version 1.0, OASIS Standard".
 
 #### Stripes toolkit
@@ -294,7 +303,7 @@ and the [FOLIO UX](https://ux.folio.org/) documentation site.
 
 #### Vert.x
 
-[Vert.x](http://vertx.io) is a toolkit for building scalable, reactive
+[Vert.x](https://vertx.io) is a toolkit for building scalable, reactive
 applications on the JVM. Vert.x is particularly suitable for
 developing applications using the microservices architectural
 pattern.
@@ -321,4 +330,4 @@ A generic term for Web Services Application Programming Interface (see [API](#ap
 refers to ANSI/NISO standard Z39.50, and ISO standard 23950
 "Information Retrieval (Z39.50): Application Service Definition and Protocol Specification".
 The Library of Congress is the
-[Z39.50 Maintenance Agency](http://www.loc.gov/z3950/agency/).
+[Z39.50 Maintenance Agency](https://loc.gov/z3950/agency/).
