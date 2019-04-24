@@ -118,7 +118,7 @@ Don't repeat yourself
 #### ECMAScript
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript)
-is the formally standardised version JavaScript.
+is the formally standardised version of JavaScript.
 The Stripes Toolkit is written in
 [ES6](http://es6-features.org/),
 a modern variant that introduces several new facilities.
@@ -133,6 +133,10 @@ Functional Requirements for Bibliographic Records
 ([FRBR](https://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records)).
 
 ### Terms G-M
+
+#### HOC
+
+"Higher-order components" are a pattern for re-use of component logic with [React](#react).
 
 #### ILS
 
