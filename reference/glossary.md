@@ -254,6 +254,11 @@ is a JavaScript library for building user interfaces.
 JavaScript. Stripes uses React and Redux for building stateful
 JavaScript web applications.
 
+#### Reference environments
+
+Continuously built FOLIO systems to exhibit the state of development.
+These are linked and their automation is explained at [Software build pipeline](/guides/automation/#software-build-pipeline).
+
 #### REST
 
 Representational State Transfer architectural style, and RESTful web services, enable interaction between systems using a well-known set of stateless operations and responses.
