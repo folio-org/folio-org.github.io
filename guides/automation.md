@@ -23,7 +23,7 @@ on-demand resources for FOLIO integration testing and demos.
 <!-- The source of this SVG is an OmniGraffle file in work/graphic-source/ -->
 
 The project is using a continuous integration -- or CI -- system (described below) that builds new versions of the software whenever a developer makes a change, as well as on a timed basis.
-The CI system automatically builds environments that are used for various purposes by the developers, the product owners, and the testers.
+The CI system automatically builds reference environments that are used for various purposes by the developers, the product owners, and the testers.
 
 In order to fully understand this diagram, keep in mind that there are two parts to FOLIO -- the part called “Stripes” which is the software running in the browser and the part called “Okapi” which is running on the server.
 
@@ -31,9 +31,14 @@ The Okapi backend is secured during the CI process. For more information on secu
 Direct access is via URLs such as [https://folio-testing-okapi.aws.indexdata.com](https://folio-testing-okapi.aws.indexdata.com/)
 
 Another part that is not indicated in this diagram are various "edge" modules, which bridge the gap between some specific third-party services and FOLIO (e.g. RTAC, OAI-PMH).
-On these FOLIO reference systems, the set of edge services are accessed via port 8000.
+On these FOLIO reference environments, the set of edge services are accessed via port 8000.
 The API key is explained at [edge-common](https://github.com/folio-org/edge-common#security).
 The edge APIs are deployed such that any API key generated with the tenant diku and institutional user diku will work (ephemeral secure store is being used which ignores the salt portion of the key).
+
+### Reference environments
+
+Each environment listed below is based on the [platform-complete](https://github.com/folio-org/platform-complete) Stripes Platform.
+There is also one based on [platform-core](https://github.com/folio-org/platform-core), so adjust the link to include `-core` (e.g. `folio-testing` to `folio-testing-core`).
 
 ### folio-testing
 
