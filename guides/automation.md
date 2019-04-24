@@ -36,7 +36,7 @@ The edge APIs are deployed such that any API key generated with the tenant diku 
 
 ### folio-testing
 
-[http://folio-testing.aws.indexdata.com/](http://folio-testing.aws.indexdata.com/)
+[https://folio-testing.aws.indexdata.com/](https://folio-testing.aws.indexdata.com/)
 
 The frontend (Stripes) is rebuilt every two hours from the latest master branch of the UI code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-stripes/).)
 The backend (Okapi) is built every day at about 01:00 UTC from the latest master branch of the backend code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend/).)
