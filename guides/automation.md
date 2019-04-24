@@ -23,23 +23,29 @@ on-demand resources for FOLIO integration testing and demos.
 <!-- The source of this SVG is an OmniGraffle file in work/graphic-source/ -->
 
 The project is using a continuous integration -- or CI -- system (described below) that builds new versions of the software whenever a developer makes a change, as well as on a timed basis.
-The CI system automatically builds environments that are used for various purposes by the developers, the product owners, and the testers.
+The CI system automatically builds reference environments that are used for various purposes by the developers, the product owners, and the testers.
 
 In order to fully understand this diagram, keep in mind that there are two parts to FOLIO -- the part called “Stripes” which is the software running in the browser and the part called “Okapi” which is running on the server.
 
 The Okapi backend is secured during the CI process. For more information on securing Okapi see the [guide on securing Okapi](https://github.com/folio-org/okapi/blob/master/doc/securing.md). Default settings for securing okapi are in the okapi-secure Ansible role's [defaults](https://github.com/folio-org/folio-ansible/blob/master/roles/okapi-secure/defaults/main.yml) file.
+Direct access is via URLs such as [https://folio-testing-okapi.aws.indexdata.com](https://folio-testing-okapi.aws.indexdata.com/)
 
 Another part that is not indicated in this diagram are various "edge" modules, which bridge the gap between some specific third-party services and FOLIO (e.g. RTAC, OAI-PMH).
-On these FOLIO reference systems, the set of edge services are accessed via port 8000.
+On these FOLIO reference environments, the set of edge services are accessed via port 8000.
 The API key is explained at [edge-common](https://github.com/folio-org/edge-common#security).
 The edge APIs are deployed such that any API key generated with the tenant diku and institutional user diku will work (ephemeral secure store is being used which ignores the salt portion of the key).
 
+### Reference environments
+
+Each environment listed below is based on the [platform-complete](https://github.com/folio-org/platform-complete) Stripes Platform.
+There is also one based on [platform-core](https://github.com/folio-org/platform-core), so adjust the link to include `-core` (e.g. `folio-testing` to `folio-testing-core`).
+
 ### folio-testing
 
-[http://folio-testing.aws.indexdata.com/](http://folio-testing.aws.indexdata.com/)
+[https://folio-testing.aws.indexdata.com/](https://folio-testing.aws.indexdata.com/)
 
-The frontend (Stripes) is rebuilt every hour from the latest master branch of the UI code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/stripes-testing/).)
-The backend (Okapi) is built every day at about 01:00 UTC from the latest master branch of the backend code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend01/).)
+The frontend (Stripes) is rebuilt every two hours from the latest master branch of the UI code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-stripes/).)
+The backend (Okapi) is built every day at about 01:00 UTC from the latest master branch of the backend code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend/).)
 There is no attempt to verify that the frontend dependencies are met by the backend modules, so there may be errors caused by that mismatch.
 
 ### folio-snapshot
@@ -59,6 +65,12 @@ After `folio-snapshot` is built, the CI system runs a suite of integration and r
 If those tests pass, the `folio-snapshot-stable` alias is updated to point to this latest `folio-snapshot` version.
 This is the version that will be used by acceptance testers to verify that users stories are completed.
 
+### folio-release
+
+[https://folio-release.aws.indexdata.com/](https://folio-release.aws.indexdata.com/)
+
+This is an environment for the most recent FOLIO Release.
+It can also be reached at the respective release name (e.g. `folio-q1-2019` or `folio-bellis`).
 
 ## Jenkins
 

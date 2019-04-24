@@ -14,7 +14,7 @@ The contents of the Contributor License Agreement (CLA) are stored in a Gist on 
 
 {% gist a72174fc6b18f3a66f2f9d3db1c8f127 %}
 
-The FOLIO Project uses GitHub pull requests checks to register a contributor's acknowledgement of the license agreement.
+The FOLIO Project uses GitHub pull request (PR) status checks to register a contributor's acknowledgement of the license agreement.
 Before a pull request can be merged, all contributors to the pull request must acknowledge their agreement with the terms.
 This acknowledgement is through each contributor signing into https://cla-assistant.io/ using their GitHub account.
 The screen captures below describe the process.
@@ -42,3 +42,16 @@ After a few seconds, the contributor is redirected to the GitHub pull request pa
 [![Pull request status check with CLA signature](/images/cla-process/4 - Pull request status check with CLA signature.png){:height="50%" width="50%"}](/images/cla-process/4 - Pull request status check with CLA signature.png){:target="_blank"}
 
 NOTE: All contributors must acknowledge the CLA before the CLA-Assistant pull request check will pass.
+
+## Fix a stuck status check
+
+Occasionally there is a glitch, whereby this status check fails to register, even though the contributor has already acknowledged their CLA. Being a required status check, this results in hold-ups with the PR.
+
+One cause is when GitHub [status](https://www.githubstatus.com/) is reporting problems with its notifications API, which the CLA agent uses to check PRs.
+
+The status check can be manually re-run using a URL of the form:
+
+```
+https://cla-assistant.io/check/folio-org/<repo>?pullRequest=<pr-number>
+```
+
