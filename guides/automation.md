@@ -65,6 +65,12 @@ After `folio-snapshot` is built, the CI system runs a suite of integration and r
 If those tests pass, the `folio-snapshot-stable` alias is updated to point to this latest `folio-snapshot` version.
 This is the version that will be used by acceptance testers to verify that users stories are completed.
 
+### folio-release
+
+[https://folio-release.aws.indexdata.com/](https://folio-release.aws.indexdata.com/)
+
+This is an environment for the most recent FOLIO Release.
+It can also be reached at the respective release name (e.g. `folio-q1-2019` or `folio-bellis`).
 
 ## Jenkins
 
