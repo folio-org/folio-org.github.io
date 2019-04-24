@@ -29,7 +29,7 @@ Do not remove or rename the old git repository, nor remove its release branches.
 
 Its artifacts are still required for past releases, and there may be a need to do bugfix releases.
 
-Also it will still be configured in [folio-ansible](https://github.com/folio-org/folio-ansible) roles for creating various reference environments.
+Also it will still be configured, using the old module name, in [folio-ansible](https://github.com/folio-org/folio-ansible) roles for creating various reference environments.
 
 ## Create repository, do git clone
 
@@ -61,6 +61,7 @@ At GitHub use the "[archive and read-only](https://help.github.com/en/articles/a
 
 This will disable push access and pull-requests.
 It leaves the teams configured, and can be reversed if needed.
+This also enables scripts to avoid "archived" repositories.
 
 Modify the GitHub repository "Description" field to prepend the text: `** DEPRECATED ** `
 
@@ -68,7 +69,7 @@ Other [deprecation](#deprecate-old-repository) steps can be finished later.
 
 ## Configure GitHub Settings
 
-The usual Settings, branch protection, required status checks, and access for relevant teams.
+The [usual](/guidelines/create-new-repo/) Settings, branch protection, required status checks, and access for relevant teams.
 
 For guidance, follow the settings of the old one.
 
@@ -80,11 +81,11 @@ Update git project configuration (pom.xml or package.json), descriptors, permiss
 
 ## Restore Jenkinsfile
 
-When ready restore Jenkinsfile, perhaps still disabling some stages.
+When all old project name strings have been rectified, then restore Jenkinsfile, perhaps still disabling some stages.
 
 Among other things, this gets the initial base Sonar coverage scan.
 
-This will need temporarily loosening of the GitHub Settings, to push directly to master branch.
+This will need temporary loosening of the GitHub Settings, to push directly to master branch.
 
 ## Adjust Lokalise configuration
 
@@ -109,13 +110,13 @@ Follow the [release procedures for platforms](/guidelines/release-procedures/#ad
 
 ## Prepare Jira project
 
-Prepare Jira "project". Sometimes best to create new one, and re-key relevant issues. Othertimes best to rename.
+Prepare Jira "project". Sometimes best to create new one, and re-key relevant issues. Other times best to rename.
 
 ## Adjust website API docs configuration
 
 Configure apidocs if this is a RAML-related back-end module.
 
-The "lint-raml" and "generate-api-docs" will operate properly without configuration, but the web site relies on it.
+The "lint-raml" and "generate-api-docs" CI jobs will operate properly without configuration, but the web site relies on it.
 
 Follow the apidocs [configuration](https://dev.folio.org/reference/api/#configure-api-docs) documentation.
 
