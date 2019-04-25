@@ -8,10 +8,7 @@ menuSubTitle: Events and presentations
 menuSubIndex: 2
 ---
 
-[FOLIOForums](https://www.openlibraryenvironment.org/archives/category/olfforum) are facilitated by [The Open Library Environment (OLE)](https://www.openlibraryenvironment.org) which provides notice of upcoming events and forums, and recordings of past ones.
-There are details about each event and additional materials such as slide-decks.
-
-Events are also listed at the FOLIO Trello [board](https://trello.com/b/A27ucwg8/events),
+Events are listed at the FOLIO Trello [board](https://trello.com/b/A27ucwg8/events),
 at the [FOLIO News](https://www.folio.org/about/news-events/),
 and the [FOLIO Blog](https://www.folio.org/blog/).
 The latter includes the weekly project updates.
@@ -19,11 +16,12 @@ The latter includes the weekly project updates.
 Many FOLIO recordings and presentations are available at the Open Library Foundation video YouTube
 [channel](https://www.youtube.com/channel/UC4Vs5mb1qgOXPZgso1LESUw/videos?sort=dd&view=0&flow=grid)
 (sorted by most recent).
+These include FOLIO Forums, monthly Sprint Reviews, and various special topics.
 
 ## One recent example
 
 <div class="widget">
-{%- include widgets/youtube-player.html video='2AlFc38T_uw' -%}
+{%- include widgets/youtube-player.html video='hnP_y0tOIik' -%}
 </div>
 
 ## Selected others
