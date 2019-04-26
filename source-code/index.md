@@ -49,10 +49,10 @@ The key server-side element is Okapi itself: the FOLIO middleware component
 that acts as a gateway for access to all modules, handling redundancy,
 sessions, etc.  Individual modules are provided in their own repositories, each
 named `mod-`_name_ (note that these are mostly at the proof-of-concept stage).
-Each module has its own documentation.
+Each back-end module has its own documentation.
 
 Some of these modules are built from specifications in
-[RAML](http://raml.org/), the RESTful API Modeling Language: this process is
+[RAML](https://raml.org/), the RESTful API Modeling Language: this process is
 facilitated by the code in the `raml-module-builder` repository.
 
 - [okapi](https://github.com/folio-org/okapi)
@@ -264,6 +264,8 @@ facilitated by the code in the `raml-module-builder` repository.
 - [inventory-sample-data](https://github.com/folio-org/inventory-sample-data)
   -- Provides scripts for data preparation and deployment, e.g. MARC.
 
+<a id="edge"></a>
+
 - [edge-common](https://github.com/folio-org/edge-common)
   -- Common/Shared library for Edge APIs.
 
@@ -297,7 +299,7 @@ envisage that most FOLIO UI work will be done in the context of
 Stripes.
 
 The stripes [documentation](https://github.com/folio-org/stripes/blob/master/README.md) is the starting point.
-Each module has its own documentation.
+Each front-end module has its own documentation.
 
 Note that Stripes is still in the design phase, so although code
 exists and can be run, the APIs are likely to change.
