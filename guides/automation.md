@@ -45,12 +45,12 @@ There is also one based on [platform-core](https://github.com/folio-org/platform
 [https://folio-testing.aws.indexdata.com/](https://folio-testing.aws.indexdata.com/)
 
 The frontend (Stripes) is rebuilt every two hours from the latest master branch of the UI code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-stripes/).)
-The backend (Okapi) is built every day at about 01:00 UTC from the latest master branch of the backend code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend/).)
+The backend (Okapi + modules) is built every day at about 01:00 UTC from the latest master branch of the backend code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend/).)
 There is no attempt to verify that the frontend dependencies are met by the backend modules, so there may be errors caused by that mismatch.
 
 ### folio-snapshot
 
-[http://folio-snapshot.aws.indexdata.com/](http://folio-snapshot.aws.indexdata.com/)
+[https://folio-snapshot.aws.indexdata.com/](https://folio-snapshot.aws.indexdata.com/)
 
 This server is built every day at about 03:00 UTC.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot/).)
 It consists of the master branch of the frontend at that time paired with the latest version of backend modules that meet the dependency requirements of the frontend.
@@ -59,7 +59,7 @@ The folio-snapshot is an alias for folio-snapshot-latest.
 
 ### folio-snapshot-stable
 
-[http://folio-snapshot-stable.aws.indexdata.com/](http://folio-snapshot-stable.aws.indexdata.com/)
+[https://folio-snapshot-stable.aws.indexdata.com/](https://folio-snapshot-stable.aws.indexdata.com/)
 
 After `folio-snapshot` is built, the CI system runs a suite of integration and regression tests.
 If those tests pass, the `folio-snapshot-stable` alias is updated to point to this latest `folio-snapshot` version.
@@ -69,8 +69,14 @@ This is the version that will be used by acceptance testers to verify that users
 
 [https://folio-release.aws.indexdata.com/](https://folio-release.aws.indexdata.com/)
 
-This is an environment for the most recent FOLIO Release.
-It can also be reached at the respective release name (e.g. `folio-q1-2019` or `folio-bellis`).
+This build uses the latest compatible releases of each module.
+
+### folio-bellis
+
+[https://folio-bellis.aws.indexdata.com/](https://folio-bellis.aws.indexdata.com/)
+
+This is an environment for the most recent past FOLIO Release Q1 2019 Bellis.
+It can also be reached at the name `folio-q1-2019`.
 
 ## Jenkins
 
