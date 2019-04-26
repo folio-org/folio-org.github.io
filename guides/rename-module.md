@@ -79,6 +79,16 @@ Replace all mention of the old project name.
 
 Update git project configuration (pom.xml or package.json), descriptors, permissions in ModuleDescriptor, source code, project name in RAML files and JSON schemas, readme, other project description, etc.
 
+In the ModuleDescriptor, utilise the "[replaces](https://github.com/folio-org/okapi/blob/master/okapi-core/src/main/raml/ModuleDescriptor.json)" feature, e.g.
+
+```
+{
+ "id" : "new-module-1.2.0"
+ "replaces": [ "old-module" ]
+},
+...
+```
+
 ## Restore Jenkinsfile
 
 When all old project name strings have been rectified, then restore Jenkinsfile, perhaps still disabling some stages.
