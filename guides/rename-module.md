@@ -31,6 +31,10 @@ Its artifacts are still required for past releases, and there may be a need to d
 
 Also it will still be configured, using the old module name, in [folio-ansible](https://github.com/folio-org/folio-ansible) roles for creating various reference environments.
 
+## Create spaces at Docker Hub
+
+For back-end modules, [create new spaces](/download/artifacts/#docker-images) at Docker Hub.
+
 ## Create repository, do git clone
 
 Create a new, completely empty GitHub repository.
@@ -54,10 +58,6 @@ Push to master of the new repository:
 ```
 git push https://github.com/folio-org/mod-new
 ```
-
-## Create spaces at Docker Hub
-
-For back-end modules, [create new spaces](/download/artifacts/#docker-images) at Docker Hub.
 
 ## Archive old repository
 
