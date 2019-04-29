@@ -43,7 +43,11 @@ git clone --recursive --single-branch --no-tags \
   https://github.com/folio-org/mod-old
 ```
 
-Remove Jenkinsfile, so that artifacts are not deployed yet.
+Remove Jenkinsfile, so that artifacts are not deployed yet:
+
+```
+git mv Jenkinsfile Jenkinsfile-disabled
+```
 
 Push to master of the new repository:
 
@@ -60,7 +64,7 @@ For back-end modules, [create new spaces](/download/artifacts/#docker-images) at
 At GitHub use the "[archive and read-only](https://help.github.com/en/articles/about-archiving-repositories)" Setting.
 
 This will disable push access and pull-requests.
-It leaves the teams configured, and can be reversed if needed.
+It leaves the teams configured, and can be temporarily reversed if needed.
 This also enables scripts to avoid "archived" repositories.
 
 Modify the GitHub repository "Description" field to prepend the text: `** DEPRECATED ** `
@@ -96,6 +100,7 @@ When all old project name strings have been rectified, then restore Jenkinsfile,
 Among other things, this gets the initial base Sonar coverage scan.
 
 This will need temporary loosening of the GitHub Settings, to push directly to master branch.
+Otherwise doing it in a pull request will report failure messages in the Sonar stage, because there is no base scan (subsequent PRs would be okay).
 
 ## Adjust Lokalise configuration
 
