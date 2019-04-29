@@ -15,7 +15,7 @@ If the "New" button is not available to you at [github.com/folio-org](https://gi
 
 Otherwise follow the GitHub prompts to create a new repository, and if needed to then import an existing repository.
 
-Take care to choose wisely for the [repository name](/guidelines/naming-conventions/#module-names). It can be disruptive to change that.
+Take care to choose wisely for the [module name](/guidelines/naming-conventions/#module-names). It will be disruptive to [change that](/guides/rename-module/).
 
 The following first few items can only be done by the initial creator of the repository or its owners, and should happen early. Use its "Settings" area.
 (If the "Settings" tab is not available to you, then see the "support" advice above.)
