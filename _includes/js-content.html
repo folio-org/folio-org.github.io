@@ -4,8 +4,8 @@
     positionFixedSelector: '#js-toc-wrapper'
   });
 $(function() {
-  if ( $('#js-toc-wrapper ol:first li').length > 0 ) {
-    $('#js-toc-wrapper ol:first').prepend('<li class="toc-list-item"><a class="toc-link" href="">Top</a></li>');
+  if ( $('#js-toc-wrapper ol').first().length > 0 ) {
+    $('#js-toc-wrapper ol').first().prepend('<li class="toc-list-item"><a class="toc-link" href="">Top</a></li>');
     $('footer').append('<div id="folio-spacer"></div>');
   }
   else {

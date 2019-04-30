@@ -12,7 +12,7 @@ menuSubIndex: 1
 
 ## Roadmap
 
-The FOLIO wiki contains the [project roadmap](https://wiki.folio.org/display/PC/FOLIO+Roadmap).
+The FOLIO wiki contains the [project roadmap](/guides/#roadmap).
 
 ## Collaboration tools
 
