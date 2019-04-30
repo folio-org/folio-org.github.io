@@ -339,6 +339,7 @@ mod-orders-storage:
     files:
       - alert
       - orders
+      - order-lines
       - pieces
       - po-line
       - po-line-number
