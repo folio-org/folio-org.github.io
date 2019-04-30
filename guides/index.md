@@ -145,7 +145,7 @@ instructor-led workshop.
 - [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/).
 - [Rename a module](rename-module/).
 - [Maintain tidy repositories](tidy-repository/).
-- The [FOLIO Project Roadmap](https://wiki.folio.org/display/PC/FOLIO+Roadmap) including the development and milestone plan for Version 1 and the feature backlog,
+- <a id="roadmap"></a>The [overview](https://www.folio.org/platform/) and the [FOLIO Project Roadmap](https://wiki.folio.org/display/PC/FOLIO+Roadmap) including the development and milestone plan for Version 1 and the feature backlog,
 and the [FOLIO Development Process Overview](https://wiki.folio.org/display/COMMUNITY/FOLIO+Development+Process+Overview), and other important documents and resources are listed at the [Wiki](https://wiki.folio.org).
 
 ### Development operations
