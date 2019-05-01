@@ -31,6 +31,20 @@ Its artifacts are still required for past releases, and there may be a need to d
 
 Also it will still be configured, using the old module name, in [folio-ansible](https://github.com/folio-org/folio-ansible) roles for creating various reference environments.
 
+## Archive old repository
+
+Modify the GitHub repository "Description" field to prepend the text: `** DEPRECATED ** `
+
+Deal with any outstanding pull requests.
+
+At GitHub use the "[archive and read-only](https://help.github.com/en/articles/about-archiving-repositories)" Setting.
+
+This will disable push access and pull requests.
+It leaves the teams configured, and can be temporarily reversed if needed.
+This also enables scripts to avoid "archived" repositories.
+
+Other [deprecation](#deprecate-old-repository) steps can be finished later.
+
 ## Create spaces at Docker Hub
 
 For back-end modules, [create new spaces](/download/artifacts/#docker-images) at Docker Hub.
@@ -51,6 +65,7 @@ Remove Jenkinsfile, so that artifacts are not deployed yet:
 
 ```
 git mv Jenkinsfile Jenkinsfile-disabled
+... and commit
 ```
 
 Push to master of the new repository:
@@ -59,21 +74,11 @@ Push to master of the new repository:
 git push https://github.com/folio-org/mod-new
 ```
 
-## Archive old repository
-
-At GitHub use the "[archive and read-only](https://help.github.com/en/articles/about-archiving-repositories)" Setting.
-
-This will disable push access and pull-requests.
-It leaves the teams configured, and can be temporarily reversed if needed.
-This also enables scripts to avoid "archived" repositories.
-
-Modify the GitHub repository "Description" field to prepend the text: `** DEPRECATED ** `
-
-Other [deprecation](#deprecate-old-repository) steps can be finished later.
-
 ## Configure GitHub Settings
 
-The [usual](/guidelines/create-new-repo/) Settings, branch protection, required status checks, and access for relevant teams.
+The [usual](/guidelines/create-new-repo/) Settings, access for relevant teams, branch protection, required status checks, etc.
+
+The actual status checks can only be enabled after the first pull request.
 
 For guidance, follow the settings of the old one.
 
