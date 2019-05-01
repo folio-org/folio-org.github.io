@@ -33,13 +33,15 @@ Also it will still be configured, using the old module name, in [folio-ansible](
 
 ## Archive old repository
 
+Modify the GitHub repository "Description" field to prepend the text: `** DEPRECATED ** `
+
+Deal with any outstanding pull requests.
+
 At GitHub use the "[archive and read-only](https://help.github.com/en/articles/about-archiving-repositories)" Setting.
 
-This will disable push access and pull-requests.
+This will disable push access and pull requests.
 It leaves the teams configured, and can be temporarily reversed if needed.
 This also enables scripts to avoid "archived" repositories.
-
-Modify the GitHub repository "Description" field to prepend the text: `** DEPRECATED ** `
 
 Other [deprecation](#deprecate-old-repository) steps can be finished later.
 
