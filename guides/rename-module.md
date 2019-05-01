@@ -65,6 +65,7 @@ Remove Jenkinsfile, so that artifacts are not deployed yet:
 
 ```
 git mv Jenkinsfile Jenkinsfile-disabled
+... and commit
 ```
 
 Push to master of the new repository:
@@ -75,7 +76,9 @@ git push https://github.com/folio-org/mod-new
 
 ## Configure GitHub Settings
 
-The [usual](/guidelines/create-new-repo/) Settings, branch protection, required status checks, and access for relevant teams.
+The [usual](/guidelines/create-new-repo/) Settings, access for relevant teams, branch protection, required status checks, etc.
+
+The actual status checks can only be enabled after the first pull request.
 
 For guidance, follow the settings of the old one.
 
