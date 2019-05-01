@@ -109,8 +109,13 @@ Otherwise doing it in a pull request will report failure messages in the Sonar s
 
 ## Adjust Lokalise configuration
 
-See some temporary [notes](https://discuss.folio.org/t/renamed-the-vendor-app-to-organizations-app-and-the-consequences-for-translators/2397)
-and [FOLIO-1968](https://issues.folio.org/browse/FOLIO-1968).
+Ideally, before Archiving the old repository, perform one more `lokalisepush.py` run to capture any remaining translations under the old name.
+If this hasn't been done, then follow these steps.
+
+1. Add the git repo to Lokalise (as one normally would), substituting these instructions for the pull request configuration.
+1. Before adding `en.json` to pull request configuration, add all non-`en.json` files and set to their corresponding languages.
+1. Make a pull request in Lokalise to add all non-`en.json` files to Lokalise.
+1. Remove all non-`en.json` files from the Lokalise pull request configuration and add `en.json`.  Continue as normal.
 
 ## Add to reference environments
 
@@ -171,4 +176,3 @@ Do another visit to the main project resources.
 Announce that the new project is ready. Celebrate.
 
 Consider clarifications and other items to enhance this document.
-
