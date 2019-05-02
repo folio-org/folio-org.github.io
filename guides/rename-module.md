@@ -71,6 +71,7 @@ git mv Jenkinsfile Jenkinsfile-disabled
 Push to master of the new repository:
 
 ```
+git status
 git push https://github.com/folio-org/mod-new
 ```
 

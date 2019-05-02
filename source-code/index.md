@@ -388,8 +388,8 @@ exists and can be run, the APIs are likely to change.
 - [ui-search](https://github.com/folio-org/ui-search)
   -- Stripes UI module: searching, sorting, filtering and viewing records from the FOLIO Codex, an aggregation of bibliographic metadata from multiple sources.
 
-- [ui-organization](https://github.com/folio-org/ui-organization)
-  -- Stripes UI module: managing organization settings.
+- [ui-tenant-settings](https://github.com/folio-org/ui-tenant-settings)
+  -- Stripes UI module: managing tenant settings.
 
 - [ui-myprofile](https://github.com/folio-org/ui-myprofile)
   -- Stripes UI module: managing user profile settings.
