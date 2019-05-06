@@ -37,6 +37,9 @@ Modify the GitHub repository "Description" field to prepend the text: `** DEPREC
 
 Deal with any outstanding pull requests.
 
+Ideally perform one more `lokalisepush.py` run to capture any remaining translations under this old repository name.
+Otherwise follow-up when [configuring Lokalise](#adjust-lokalise-configuration) for the new repository.
+
 At GitHub use the "[archive and read-only](https://help.github.com/en/articles/about-archiving-repositories)" Setting.
 
 This will disable push access and pull requests.
@@ -111,9 +114,9 @@ Otherwise doing it in a pull request will report failure messages in the Sonar s
 ## Adjust Lokalise configuration
 
 Ideally, before Archiving the old repository, perform one more `lokalisepush.py` run to capture any remaining translations under the old name.
-If this hasn't been done, then follow these steps.
+If this had not been done, then follow these steps while [configuring Lokalise](/guidelines/create-new-repo/#configure-lokalise) for the new repository.
 
-1. Add the git repo to Lokalise (as one normally would), substituting these instructions for the pull request configuration.
+1. Add the new git repo to Lokalise (as one normally would), substituting these instructions for the pull request configuration.
 1. Before adding `en.json` to pull request configuration, add all non-`en.json` files and set to their corresponding languages.
 1. Make a pull request in Lokalise to add all non-`en.json` files to Lokalise.
 1. Remove all non-`en.json` files from the Lokalise pull request configuration and add `en.json`.  Continue as normal.
