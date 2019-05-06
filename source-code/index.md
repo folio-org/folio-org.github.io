@@ -254,9 +254,6 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-aes](https://github.com/folio-org/mod-aes)
   -- Provide asynchronous event service (AES).
 
-- [mod-rmb-template](https://github.com/folio-org/mod-rmb-template)
-  -- A Maven archetype to commence a new RMB-based module.
-
 - [mod-data-loader](https://github.com/folio-org/mod-data-loader)
   -- RMB-based module used to load test data.
   Currently supports loading binary MARC records into the mod-inventory-storage instance table.
@@ -541,6 +538,13 @@ exists and can be run, the APIs are likely to change.
   -- RFCs for changes to the FOLIO platform.
   "Request for Comment" for "substantial" changes.
   Co-ordinated through the [FOLIO Technical Council](https://wiki.folio.org/display/TC/Technical+Council).
+
+- [mod-rmb-template](https://github.com/folio-org/mod-rmb-template)
+  -- A Maven archetype to commence a new RMB-based module.
+
+- [ui-app-template](https://github.com/folio-org/ui-app-template)
+  -- Stripes UI app module template.
+  For use via [stripes-cli](https://github.com/folio-org/stripes-cli/blob/master/doc/user-guide.md#app-development) to commence a new UI module.
 
 - [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
   -- The source for this dev.folio.org website.
