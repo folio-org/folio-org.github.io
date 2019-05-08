@@ -41,7 +41,7 @@ Log in to Jenkins and run your jobs at [Jenkins](https://jenkins-aws.indexdata.c
 
 [Jira](https://issues.folio.org): Mark as released. Add next versions.
 
-[Slack](https://folio-project.slack.com/): Announce on `#general`
+[Slack](https://folio-project.slack.com/): Announce on `#releases`
 
 Create a long-lived branch for that major/feature version:
 ```
@@ -67,7 +67,7 @@ Log in to Jenkins and run your jobs at [Jenkins](https://jenkins-aws.indexdata.c
 
 [Jira](https://issues.folio.org): Mark as released. Add next versions.
 
-[Slack](https://folio-project.slack.com/): Announce on `#general`
+[Slack](https://folio-project.slack.com/): Announce on `#releases`
 
 ### Bug fix releases
 
@@ -251,7 +251,7 @@ If this was a bugfix release, and the platforms need to be updated while waiting
 
 ### Announce
 
-Send a note to #general on Slack if relevant.
+Send a note to #releases on Slack if relevant.
 
 ## Stripes-based modules
 
