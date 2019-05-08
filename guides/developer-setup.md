@@ -94,8 +94,8 @@ Please configure your IDE to use an empty license header. Some IDEs have a defau
 ## Use .gitignore
 
 The `.gitignore` file in each repository can be minimal if each developer handles their own.
-One way is to [configure](https://git-scm.com/docs/gitignore) your own user-specific global file (i.e. add `core.excludesFile` to `~/.gitconfig`).
 
+One way is to [configure](https://git-scm.com/docs/gitignore) your own user-specific global file (i.e. add `core.excludesFile` to `~/.gitconfig`).
 Then either use something like [gitignore.io](https://github.com/joeblau/gitignore.io),
 or just use a simple set such as the following.
 Add other specific ones for your particular operating system, text editors, and IDEs.
@@ -122,9 +122,6 @@ Add other specific ones for your particular operating system, text editors, and 
 
     ## folio
     .vertx/
-    # Until each mod-* has addressed RMB-130:
-    **/src/main/java/org/folio/rest/jaxrs/
-    **/src/main/java/org/folio/rest/client/
 
 ## Update git submodules
 
