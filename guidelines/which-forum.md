@@ -179,6 +179,9 @@ We follow a variation of the Apache motto:
   - `#support` -- Any topic needing assistance.
   - `#general` -- Community-wide general stuff. Use other channels for development topics.
   - `#development` -- The main development area.
+  - `#releases` -- Discussion of quarterly release preparation, and announcement of regular module releases.
+  - `#hosted-reference-envs` -- Issues with the [reference environments](/guides/automation/#software-build-pipeline) automated builds.
+  - `#raml-module-builder` -- Specific discussion for RMB development.
   - `#stripes` -- Specific discussion for front-end development.
   - `#folio-ci` -- Notifications from the Jenkins CI. See usage [notes](/guides/navigate-commits/). Mute this channel and visit when needed.
 
