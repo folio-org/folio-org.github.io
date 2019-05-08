@@ -25,7 +25,7 @@ we have four primary forums:
 
 <span id="secondary"/> There are also secondary communication channels, including:
 [Slack](#slack) (realtime chat),
-[FOLIOForums](https://www.openlibraryenvironment.org/archives/category/olfforum),
+[FOLIO Forums](/community/events/),
 conference calls,
 Twitter [@folio_lsp](https://twitter.com/folio_lsp),
 and in-person meetings.
