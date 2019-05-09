@@ -218,6 +218,7 @@ mod-invoice-storage:
       - invoice
       - invoice-line-number
       - invoice-number
+      - voucher
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-invoice-storage/schemas
 
