@@ -427,6 +427,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-plugin-find-instance](https://github.com/folio-org/ui-plugin-find-instance)
   -- Stripes UI plugin: Instance finder.
 
+- [ui-plugin-find-interface](https://github.com/folio-org/ui-plugin-find-interface)
+  -- Stripes UI plugin: Find an interface.
+
 - [ui-plugin-find-license](https://github.com/folio-org/ui-plugin-find-license)
   -- Stripes UI plugin: License finder.
   UI Widget to lookup or create licenses.
@@ -518,6 +521,9 @@ exists and can be run, the APIs are likely to change.
 
 - [folio-holdingsiq-client](https://github.com/folio-org/folio-holdingsiq-client)
   -- Client library to HoldingsIQ API.
+
+- [folio-service-tools](https://github.com/folio-org/folio-service-tools)
+  -- Library with general purpose classes to help with FOLIO backend service development.
 
 - [data-import-utils](https://github.com/folio-org/data-import-utils)
   -- Library with common utilities for data-import modules.
