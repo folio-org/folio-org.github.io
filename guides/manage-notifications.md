@@ -46,6 +46,8 @@ Then filter it at the client side:
 $MAILDIR/folio-jira-issues-me/
 ```
 
+Some email clients have less powerful filters. These can be assisted by not having spaces in your Jira username, e.g. rather than "`Julius Caesar`" use "`Julius-Caesar`" or some such.
+
 # Other Jira filters
 
 Keep a wide browser window open with a search that excludes specific projects and provides an overview of everything else recently updated. Use "List View". Keep track of the time that you last assessed the list, and adjust the "updated" time period to match that.
