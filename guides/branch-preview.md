@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Branch Preview Mode for UI Modules
-permalink: /guides/branch_preview/
+permalink: /guides/branch-preview/
 menuInclude: no
 menuTopTitle: Guides
 ---
