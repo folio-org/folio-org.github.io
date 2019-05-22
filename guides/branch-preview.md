@@ -6,9 +6,6 @@ menuInclude: no
 menuTopTitle: Guides
 ---
 
-
-# Branch Preview Mode for UI Modules
-
 Branch preview mode allows developers, product owners, and other interested parties to "preview"
 changes to FOLIO UI components on a live FOLIO system before committing them to the master 
 branch. 
