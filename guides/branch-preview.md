@@ -46,8 +46,9 @@ in all cases is 'admin'.
 * Tenant modules are enabled and reference and sample data for select modules are loaded 
 for the tenant. 
 
-* The stripes webpack is distributed to an S3 web service.  An AWS S3 URL to the UI is provided.  
+* The stripes webpack is distributed to an S3 web service.
 The UI is configured for the correct tenant and Okapi instance. 
+An AWS S3 URL to the UI is appended to the pull request.  
 
 All steps above happen more or less sequentially, so if a step fails for whatever reason, the
 build is marked as 'FAILED'.  
