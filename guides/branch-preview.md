@@ -10,7 +10,7 @@ menuTopTitle: Guides
 # Branch Preview Mode for UI Modules
 
 Branch preview mode allows developers, product owners, and other interested parties to "preview"
-changes to FOLIO UI components on a live FOLIO system before commmitting them to the master 
+changes to FOLIO UI components on a live FOLIO system before committing them to the master 
 branch. 
 
 ## How it works
@@ -18,7 +18,7 @@ branch.
 A FOLIO backend system is built daily from the master branch of the following FOLIO 'platform'
 Github repositories:
 
-https://github.com/folio-org/platform-core (The FOLIO "plaform-core" distribution)  
+https://github.com/folio-org/platform-core (The FOLIO "platform-core" distribution)  
 https://github.com/folio-org/platform-complete (The FOLIO "platform-complete" distribution)  
 
 These systems contain only the latest releases of Okapi and backend FOLIO modules that are 
