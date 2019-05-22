@@ -8,7 +8,7 @@ menuTopTitle: Tutorials
 ---
 <div class="attention">
 Note: This is an older tutorial. Much of it is still useful, but some parts are out-of-date.
-In particular, you may see errors in the browser council.
+In particular, you may see errors in the browser console.
 See <a href="https://issues.folio.org/browse/FOLIO-2035">FOLIO-2035</a>.
 </div>
 
