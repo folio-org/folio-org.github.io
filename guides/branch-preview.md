@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Branch Preview Mode for UI Modules
+title: Branch preview mode for UI modules
 permalink: /guides/branch-preview/
 menuInclude: no
 menuTopTitle: Guides
@@ -50,7 +50,7 @@ An AWS S3 URL to the UI is appended to the pull request.
 All steps above happen more or less sequentially, so if a step fails for whatever reason, the
 build is marked as 'FAILED'.  
 
-## Current Limitations
+## Current limitations
 
 * The UI module must have an interface that is compatible with the existing set of released 
 modules. If a UI module requires a newer version of an interface from a backend
@@ -68,7 +68,7 @@ by initiating a PR build via FOLIO Jenkins.
 
 * When a PR is closed all AWS S3 resources associated with the PR are removed. 
 
-## Enabling Branch Preview Mode
+## Enabling branch preview mode
 
 To enable branch preview mode for a UI module,  the 'stripesPlatform' parameter must
 be configured in the repository's Jenkinsfile.  
