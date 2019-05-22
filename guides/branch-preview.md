@@ -12,16 +12,15 @@ branch.
 
 ## How it works
 
-A FOLIO backend system is built daily from the master branch of the following FOLIO 'platform'
-Github repositories:
-
-https://github.com/folio-org/platform-core (The FOLIO "platform-core" distribution)  
-https://github.com/folio-org/platform-complete (The FOLIO "platform-complete" distribution)  
+A FOLIO backend system is built daily from the master branch of these "platform"
+GitHub repositories:
+[FOLIO "platform-core" distribution](https://github.com/folio-org/platform-core) and
+[FOLIO "platform-complete" distribution](https://github.com/folio-org/platform-complete).
 
 These systems contain only the latest releases of Okapi and backend FOLIO modules that are 
 included in either of the FOLIO platforms listed above. 
 
-When a Github PR is opened for an existing branch on,  the following "preview" related
+When a GitHub PR is opened for an existing branch on,  the following "preview" related
 processes occur in addition to existing quality gates (unit tests, Sonarqube, etc). 
 
 * Code from the UI module's branch is merged into a either platform-core or platform-complete. 
