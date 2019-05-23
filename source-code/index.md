@@ -504,7 +504,7 @@ exists and can be run, the APIs are likely to change.
 - [okapi.rb](https://github.com/thefrontside/okapi.rb)
   -- Ruby client to communicate with an Okapi cluster.
 
-- [cql2pgjson-java](https://github.com/folio-org/cql2pgjson-java)
+- [cql2pgjson-java](https://github.com/folio-org/raml-module-builder/tree/master/cql2pgjson)
   -- [CQL](/reference/glossary/#cql) (Contextual Query Language) to PostgreSQL JSON converter in Java.
 
 - [Net-Z3950-FOLIO](https://github.com/folio-org/Net-Z3950-FOLIO)

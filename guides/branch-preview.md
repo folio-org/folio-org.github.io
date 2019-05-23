@@ -12,6 +12,8 @@ Branch preview mode allows developers, product owners, and other interested part
 changes to FOLIO UI components on a live FOLIO system before committing them to the master
 branch.
 
+**NOTE:** This is a proof-of-concept, applying to selected UI modules: ui-users and ui-requests.
+
 ## How it works
 
 A FOLIO backend system is built daily from the master branch of these "platform"
@@ -91,6 +93,8 @@ Note: Only 'platform-core' and branch 'master'  is supported at this time.
 
 Additionally, if UI integration tests exist for a UI module,  these tests will also
 run during the PR build iteration when 'runRegression' is set to true.
+
+## Feedback
 
 Please post any issues or additional questions to the #devops channel on FOLIO Slack.
 
