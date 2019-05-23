@@ -6,6 +6,11 @@ menuInclude: yes
 menuLink: yes
 menuTopTitle: Tutorials
 ---
+<div class="attention">
+Note: This is an older tutorial. Much of it is still useful, but some parts are out-of-date.
+In particular, you may see errors in the browser console.
+See <a href="https://issues.folio.org/browse/FOLIO-2035">FOLIO-2035</a>.
+</div>
 
 In lesson four, we deployed Stripes and demonstrated communication between the browser and the Stripes components.
 In lessons two and three, we deployed the Okapi Gateway as well as a test Okapi Module and examined the communication between them.
@@ -344,4 +349,3 @@ The lessons so far have demonstrated how all of the pieces work together.
 
 Move on to the next [Lesson 6](../06-vm-stable/) which uses a quarterly release of FOLIO as a Vagrant box,
 with all necessary modules enabled, and a more useful set of users and other data loaded.
-
