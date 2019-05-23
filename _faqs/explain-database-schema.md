@@ -22,9 +22,9 @@ And though this is a single row query it leads to a “full table scan” at the
 
 As a side note, there is massive work currently being done on [`cql2pgjson`](https://github.com/folio-org/cql2pgjson-java) internals which should make querying much much faster so stay tuned for that.
 
-*Q.* Why exist both id and jsonb->>'id' in each table?
+*Q.* Why exist both `id` and `jsonb->>'id'` in each table?
 
-*A.* id is the PRIMARY KEY. PRIMARY KEY (and UNIQUE) and the foreign key constraint REFERENCES only work on a column, not on an expression like jsonb->>'id'. To ensure consistency a trigger copies id into jsonb->>'id' on each insert and update.
+*A.* id is the PRIMARY KEY. The PRIMARY KEY (and UNIQUE) and the foreign key constraint REFERENCES only work on a column, not on an expression like `jsonb->>'id'`. To ensure consistency a trigger copies `id` into `jsonb->>'id'` on each insert and update.
 
 *Q.* Framework does not cache prepared statements and does not use binding for SQL statements. This also has a huge impact on performance. And potentially there is a chance of SQL injection attacks if SQL binding is not used.
 
