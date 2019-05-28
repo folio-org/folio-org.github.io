@@ -15,6 +15,12 @@ and [here](https://github.com/folio-org/okapi/blob/master/doc/guide.md#example-4
 The MD adheres to the [ModuleDescriptor.json](https://github.com/folio-org/okapi/blob/master/okapi-core/src/main/raml/ModuleDescriptor.json) schema.
 Follow "mod-notes" as an example.
 
+For back-end modules, a template is maintained. This is usually at `./descriptors/ModuleDescriptor-template.json` and is transformed by the module's build process into the `target/ModuleDescriptor.json` file.
+
+For front-end UI modules, the `ModuleDescriptor.json` is generated from various information maintained in the `package.json` file.
+
+As part of the continuous integration process, each ModuleDescriptor.json is published to the FOLIO Registry at `https://folio-registry.aws.indexdata.com/`
+
 ```
 TODO: Provide brief explanations of each main section.
 ```
