@@ -475,10 +475,6 @@ exists and can be run, the APIs are likely to change.
 - [stripes-testing](https://github.com/folio-org/stripes-testing)
   -- Toolkit for running tests against Stripes UI modules and platforms.
 
-- [stripes-experiments](https://github.com/folio-org/stripes-experiments)
-  -- Testing ground for prototype modules that may form part of
-  Stripes.
-
 ## Other projects
 
 - [folio-sample-modules](https://github.com/folio-org/folio-sample-modules)
