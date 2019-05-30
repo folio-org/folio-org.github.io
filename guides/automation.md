@@ -18,7 +18,8 @@ NPM packages, and Docker Hub is used as the Docker registry for Docker images.  
 provides the infrastructure used to host Jenkins and Nexus, as well as permanent and
 on-demand resources for FOLIO integration testing and demos.
 
-## Software Build Pipeline
+## Software build pipeline
+
 <img src="/images/FOLIO-Software-Build-pipeline.png" alt="FOLIO Software Build Pipeline" srcset="/images/FOLIO-Software-Build-pipeline.svg">
 <!-- The source of this SVG is an OmniGraffle file in work/graphic-source/ -->
 
@@ -35,7 +36,7 @@ On these FOLIO reference environments, the set of edge services are accessed via
 The API key is explained at [edge-common](https://github.com/folio-org/edge-common#security).
 The edge APIs are deployed such that any API key generated with the tenant diku and institutional user diku will work (ephemeral secure store is being used which ignores the salt portion of the key).
 
-### Reference environments
+## Reference environments
 
 Each environment listed below is based on the [platform-complete](https://github.com/folio-org/platform-complete) Stripes Platform.
 There is also one based on [platform-core](https://github.com/folio-org/platform-core), so adjust the link to include `-core` (e.g. `folio-testing` to `folio-testing-core`).
