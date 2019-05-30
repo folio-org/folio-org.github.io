@@ -33,7 +33,9 @@ Also it will still be configured, using the old module name, in [folio-ansible](
 
 ## Archive old repository
 
-Modify the GitHub repository "Description" field to prepend the text: `** DEPRECATED ** `
+Limit the access to the old repository so that no further changes can happen while it is cloned to become the new one.
+
+Modify the GitHub repository "Description" field to prepend the text: `** DEPRECATED: Renamed to xxxx ** `
 
 Deal with any outstanding pull requests.
 
@@ -46,8 +48,6 @@ This will disable push access and pull requests.
 It leaves the teams configured, and can be temporarily reversed if needed.
 This also enables scripts to avoid "archived" repositories.
 
-Other [deprecation](#deprecate-old-repository) steps can be finished later.
-
 ## Create spaces at Docker Hub
 
 For back-end modules, [create new spaces](/download/artifacts/#docker-images) at Docker Hub.
@@ -56,7 +56,8 @@ For back-end modules, [create new spaces](/download/artifacts/#docker-images) at
 
 Create a new, completely empty GitHub repository.
 
-Clone the relevant parts (without release tags) of the old one:
+Clone the relevant parts (without release tags) of the old one.
+This procedure will also retain the git history.
 
 ```
 mkdir temp; cd temp
@@ -156,16 +157,6 @@ In the `_data/apigroup.yml` file, move the old one to the "deprecated" section a
 ## Adjust website source list
 
 Edit the list of all [modules](/source-code/).
-
-## Deprecate old repository
-
-Do further deprecation steps, e.g. adjust old README to explain the move.
-
-At GitHub this will require temporarily reversing the "archived" Setting.
-
-```
-TODO: Link to new guides/deprecate-repository/ FOLIO-1710
-```
 
 ## Remove from reference environments
 
