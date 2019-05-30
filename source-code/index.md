@@ -400,6 +400,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-finance](https://github.com/folio-org/ui-finance)
   -- Stripes UI module: management of ledgers, funds, and budgets.
 
+- [ui-invoice](https://github.com/folio-org/ui-invoice)
+  -- Stripes UI module: management of invoices.
+
 - [ui-finc-config](https://github.com/folio-org/ui-finc-config)
   -- Stripes UI module: amsl's finc-config.
 
@@ -474,10 +477,6 @@ exists and can be run, the APIs are likely to change.
 
 - [stripes-testing](https://github.com/folio-org/stripes-testing)
   -- Toolkit for running tests against Stripes UI modules and platforms.
-
-- [stripes-experiments](https://github.com/folio-org/stripes-experiments)
-  -- Testing ground for prototype modules that may form part of
-  Stripes.
 
 ## Other projects
 
