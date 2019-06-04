@@ -77,6 +77,7 @@ mod-users-bl:
 mod-patron:
   - label: null
     directory: ramls
+    version1: true
     files:
       - patron
     ramlutil: ramls/raml-util
@@ -152,6 +153,7 @@ mod-circulation-storage:
       - loan-policy-storage
       - request-storage
       - request-policy-storage
+      - scheduled-notice-storage
       - fixed-due-date-schedule
       - cancellation-reason
       - patron-notice-policy
