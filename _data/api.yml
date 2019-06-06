@@ -348,7 +348,7 @@ mod-orders-storage:
       - alert
       - orders
       - order-lines
-      - order_invoice_relationship
+      - order-invoice-relns
       - pieces
       - po-line
       - po-line-number
