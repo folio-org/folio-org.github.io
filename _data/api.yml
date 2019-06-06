@@ -166,6 +166,7 @@ mod-inventory:
     directory: ramls
     files:
       - inventory
+      - inventory-batch
     ramlutil: ramls/raml-util
     rmb: false
 
