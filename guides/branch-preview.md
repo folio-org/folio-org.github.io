@@ -27,6 +27,28 @@ included in either of the FOLIO platforms listed above.
 When a GitHub PR is opened for an existing branch on,  the following "preview" related
 processes occur in addition to existing quality gates (unit tests, SonarQube, etc).
 
+* The base set of backend FOLIO modules used in the PR are derived from releases specified in
+the master branch of platform-core and platform-complete (see 'install.json').  However, 
+there are cases where, in order to adequately test new functionality in a frontend module, 
+replacing a released module with an unreleased version may be necessary to include in the PR.  
+This can be accomplished by specifying the backend module you want to substitute for the 
+released module in a file called '.pr-custom-deps.json' located in the top-level directory of 
+your module's repo.  This is a json-formatted file that contains the 'id' of the module you 
+want to include and the 'action' you want Okapi to take with the module for your tenant - 
+'enable' or 'disable'.  The following example will deploy and enable snapshot versions of 
+mod-users-bl and mod-users in place of the default released modules:
+
+    [ 
+      {
+        "id" : "mod-users-bl-4.5.0-SNAPSHOT.62",
+         "action" : "enable"
+      },
+      {
+        "id" : "mod-users-15.6.0-SNAPSHOT.76",
+        "action" : "enable"
+      }
+    ]
+
 * Code from the UI module's branch is merged into either platform-core or platform-complete.
 Essentially replacing the released version of the module.
 
@@ -50,8 +72,8 @@ for the tenant.
 The UI is configured for the correct tenant and Okapi instance.
 An AWS S3 URL to the UI is appended to the pull request.
 
-All of the above steps happen more or less sequentially, so if a step fails for whatever reason, the
-build is marked as 'FAILED'.
+All of the above steps happen more or less sequentially, so if a step fails for whatever reason,
+the build is marked as 'FAILED'.
 
 ## Current limitations
 
