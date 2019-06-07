@@ -96,6 +96,7 @@ mod-codex-ekb:
     directory: ramls/raml-util/ramls/codex
     files:
       - codex
+      - codex-instances-sources
       - codex-packages
     ramlutil: null
     schemasDirectory: ramls/raml-util/schemas/codex
@@ -119,6 +120,7 @@ mod-codex-mux:
     directory: ramls/raml-util/ramls/codex
     files:
       - codex
+      - codex-instances-sources
       - codex-packages
     ramlutil: null
     schemasDirectory: ramls/raml-util/schemas/codex
