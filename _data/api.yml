@@ -143,6 +143,7 @@ mod-circulation:
     directory: ramls
     files:
       - circulation
+      - requests-reports
     ramlutil: ramls/raml-util
     rmb: false
 
