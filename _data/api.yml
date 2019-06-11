@@ -68,22 +68,23 @@ mod-users:
 
 mod-users-bl:
   - label: null
-    directory: ramls
     version1: true
+    directory: ramls
     files:
       - mod-users-bl
     ramlutil: ramls/raml-util
 
 mod-patron:
   - label: null
-    directory: ramls
     version1: true
+    directory: ramls
     files:
       - patron
     ramlutil: ramls/raml-util
 
 edge-patron:
   - label: null
+    version1: true
     directory: ramls
     files:
       - edge-patron
