@@ -516,6 +516,7 @@ mod-source-record-storage:
     directory: ramls
     files:
       - source-record-storage
+      - source-record-storage-batch
     excludes:
       - raml-storage
     ramlutil: ramls/raml-storage/raml-util
