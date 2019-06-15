@@ -79,12 +79,11 @@ This is the version that will be used by acceptance testers to verify that users
 
 This build uses the latest compatible releases of each module.
 
-### folio-bellis
+### folio-clover
 
-[https://folio-bellis.aws.indexdata.com/](https://folio-bellis.aws.indexdata.com/)
+[https://folio-clover.aws.indexdata.com/](https://folio-clover.aws.indexdata.com/)
 
-This is an environment for the most recent past FOLIO Release Q1 2019 Bellis.
-It can also be reached at the name `folio-q1-2019`.
+This is an environment for the most recent FOLIO Release Q2 2019 Clover.
 
 ## Jenkins
 
