@@ -19,8 +19,8 @@ A typical strategy for a module development is to keep doing the normal work in 
 
 Hold off feature branches that are not to be included in the release.
 
-At the specified dates, the platforms (with the lists of versions of modules) are tagged and branched to form the quarterly release.
-The platform-core and platform-complete are branched, and declare the specific versions of each module.
+At the specified dates, the platforms (with the lists of the specific release versions of modules) are tagged and branched to form the quarterly release.
+The FOLIO Release is built daily as part of the [reference environments](/guides/automation/#reference-environments).
 
 For a module that is released to be part of a quarterly release, use a longer-term [branch](/guidelines/release-procedures/#bug-fix-releases) to track the bug fixes.
 So this is an anticipated bug free and "stable" branch.
