@@ -5,7 +5,7 @@ permalink: /reference/glossary/
 menuInclude: yes
 menuTopTitle: Reference
 menuSubTitle: Glossary
-menuSubIndex: 3
+menuSubIndex: 4
 ---
 
 FOLIO is a new open source, cloud hostable, app-store based library platform,
