@@ -170,3 +170,10 @@ For example regarding operation, enhancement, and configuration of Jenkins conti
 - The FOLIO [build, test, and deployment infrastructure](automation/).
 - A proposal for [error response formats](https://github.com/folio-org/okapi/blob/master/doc/error-formats-in-folio.md).
 - [Events and presentations](/community/events/).
+
+## FAQs
+
+- [Frequently asked questions](/faqs/).
+
+Brief explanations of various topics.
+
