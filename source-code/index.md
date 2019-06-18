@@ -415,6 +415,8 @@ exists and can be run, the APIs are likely to change.
 - [ui-audit](https://github.com/folio-org/ui-audit)
   -- Stripes UI module: Viewing audit trails.
 
+<a id="ui-plugin"></a>
+
 - [ui-plugin-create-item](https://github.com/folio-org/ui-plugin-create-item)
   -- Stripes UI plugin: Create item.
 
@@ -439,6 +441,9 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-plugin-find-organization](https://github.com/folio-org/ui-plugin-find-organization)
   -- Stripes UI plugin: Organization finder.
+
+- [ui-plugin-find-po-line](https://github.com/folio-org/ui-plugin-find-po-line)
+  -- Stripes UI plugin: Display, filter and select PO lines.
 
 - [ui-plugin-find-user](https://github.com/folio-org/ui-plugin-find-user)
   -- Stripes UI plugin: User finder.
