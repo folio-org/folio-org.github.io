@@ -74,6 +74,14 @@ This phase normally takes about 10 minutes, but sometimes reaches a timeout of a
 If those tests pass, the `folio-snapshot-stable` alias is updated to point to this latest `folio-snapshot` version.
 This is the version that will be used by acceptance testers to verify that users stories are completed.
 
+### folio-snapshot-load
+
+[https://folio-snapshot-load.aws.indexdata.com/](https://folio-snapshot-load.aws.indexdata.com/)
+
+When doing any substantial test data loading, then use this rather than the other systems.
+This the same as "folio-snapshot".
+The server is built every day, to finish about 02:00 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot-load/).)
+
 ### folio-release
 
 [https://folio-release.aws.indexdata.com/](https://folio-release.aws.indexdata.com/)
