@@ -52,15 +52,15 @@ For example:<br/>
 
 [https://folio-testing.aws.indexdata.com/](https://folio-testing.aws.indexdata.com/)
 
-The frontend (Stripes) is rebuilt every two hours from the latest master branch of the UI code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-stripes/).)
-The backend (Okapi + modules) is built every day at about 01:00 UTC from the latest master branch of the backend code.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend/).)
+The frontend (Stripes) is rebuilt every even two hours from the latest master branch of the UI code, to finish about 5 minutes past. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-stripes/).)
+The backend (Okapi + modules) is built every day from the latest master branch of the backend code, to finish about 01:45 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend/).)
 There is no attempt to verify that the frontend dependencies are met by the backend modules, so there may be errors caused by that mismatch.
 
 ### folio-snapshot
 
 [https://folio-snapshot.aws.indexdata.com/](https://folio-snapshot.aws.indexdata.com/)
 
-This server is built every day at about 03:00 UTC.  (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot/).)
+Built every day, to finish about 03:50 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot/).)
 It consists of the master branch of the frontend at that time paired with the latest version of backend modules that meet the dependency requirements of the frontend.
 There may still be errors because of API differences that aren't covered by the dependency requirements.
 The folio-snapshot is an alias for folio-snapshot-latest.
@@ -70,20 +70,31 @@ The folio-snapshot is an alias for folio-snapshot-latest.
 [https://folio-snapshot-stable.aws.indexdata.com/](https://folio-snapshot-stable.aws.indexdata.com/)
 
 After `folio-snapshot` is built, the CI system runs a suite of integration and regression tests.
+This phase normally takes about 10 minutes, but sometimes reaches a timeout of about 1 hour.
 If those tests pass, the `folio-snapshot-stable` alias is updated to point to this latest `folio-snapshot` version.
 This is the version that will be used by acceptance testers to verify that users stories are completed.
+
+### folio-snapshot-load
+
+[https://folio-snapshot-load.aws.indexdata.com/](https://folio-snapshot-load.aws.indexdata.com/)
+
+When doing any substantial test data loading, then use this rather than the other systems.
+This the same as "folio-snapshot".
+The server is built every day, to finish about 02:00 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot-load/).)
 
 ### folio-release
 
 [https://folio-release.aws.indexdata.com/](https://folio-release.aws.indexdata.com/)
 
 This build uses the latest compatible releases of each module.
+Built every day, to finish about 01:30 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-release/).)
 
 ### folio-clover
 
 [https://folio-clover.aws.indexdata.com/](https://folio-clover.aws.indexdata.com/)
 
 This is an environment for the most recent FOLIO Release Q2 2019 Clover.
+Built every day, to finish about 02:00 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-q2.2-2019-release/).)
 
 ## Jenkins
 
