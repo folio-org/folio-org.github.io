@@ -351,6 +351,7 @@ mod-orders-storage:
     version1: true
     directory: ramls
     files:
+      - acquisitions-unit
       - alert
       - orders
       - order-lines
