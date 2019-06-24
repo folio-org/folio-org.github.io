@@ -342,6 +342,7 @@ mod-orders:
     version1: true
     directory: ramls
     files:
+      - acquisitions-units
       - order
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-orders-storage/schemas
