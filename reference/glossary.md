@@ -223,6 +223,11 @@ is a community of academic and research libraries collaborating to
 build open source library management tools. OLE has joined the FOLIO
 community to help with the development of FOLIO.
 
+#### PC
+
+The [FOLIO Product Council](https://wiki.folio.org/display/PC/)
+and its [Charter](https://wiki.folio.org/display/PC/FOLIO+Product+Council+Charge)
+
 #### PostgreSQL
 
 [PostgreSQL](https://www.postgresql.org/) (often called "Postgres") is
@@ -287,6 +292,11 @@ is "searchRetrieve Version 1.0, OASIS Standard".
 #### Stripes toolkit
 
 See [Stripes](#stripes) and the various [Stripes entities](#stripes-entities) explained above.
+
+#### TC
+
+The [FOLIO Technical Council](https://wiki.folio.org/display/TC/)
+and its [Charter](https://wiki.folio.org/display/TC/Tech+Council+Charter).
 
 #### UUID
 

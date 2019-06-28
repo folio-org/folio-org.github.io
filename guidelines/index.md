@@ -36,5 +36,7 @@ See other orientation [guides](/guides/#background-orientation).
 ## Development management
 
 - [Release procedures](/guidelines/release-procedures/).
+- FOLIO Technical Council ([TC](/reference/glossary/#tc))
+and FOLIO Product Council ([PC](/reference/glossary/#pc)).
 - [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/).
 
