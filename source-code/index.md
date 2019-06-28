@@ -406,6 +406,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-finc-config](https://github.com/folio-org/ui-finc-config)
   -- Stripes UI module: amsl's finc-config.
 
+- [ui-finc-select](https://github.com/folio-org/ui-finc-select)
+  -- Stripes UI module: enable the selection of metadata sources and collections for the finc user community.
+
 - [ui-servicepoints](https://github.com/folio-org/ui-servicepoints)
   -- Stripes UI module: Service Points handler.
 
