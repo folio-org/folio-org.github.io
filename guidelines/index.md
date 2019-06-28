@@ -38,5 +38,9 @@ See other orientation [guides](/guides/#background-orientation).
 - [Release procedures](/guidelines/release-procedures/).
 - FOLIO Technical Council ([TC](/reference/glossary/#tc))
 and FOLIO Product Council ([PC](/reference/glossary/#pc)).
+- Each FOLIO Development [Team](https://wiki.folio.org/display/FOLIJET/Folio+Development+Team+Home)
+has their "Definition of Ready ([DoR](/reference/glossary/#dor))"
+and "Definition of Done ([DoD](/reference/glossary/#dod))"
+to manage the development process.
 - [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/).
 

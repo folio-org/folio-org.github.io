@@ -109,6 +109,14 @@ environment.
 #### DoD
 
 Definition of Done (DoD).
+Criteria to decide when a feature is deemed finished, and its issue tracker tickets are closed.
+Refer to the [management](/guidelines/#development-management) notes for each FOLIO Development Team.
+
+#### DoR
+
+Definition of Ready (DoR).
+Criteria to decide when a feature is well-described and is deemed ready to be scheduled to undertake the work.
+Refer to the [management](/guidelines/#development-management) notes for each FOLIO Development Team.
 
 #### DRY
 
