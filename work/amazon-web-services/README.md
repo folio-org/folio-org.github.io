@@ -1,5 +1,7 @@
 # Hosting a Jekyll-based website on AWS, with branch support
 
+(Note: This is outdated. See [FOLIO-1692](https://issues.folio.org/browse/FOLIO-1692).)
+
 ## AWS CloudFormation Configuration Files
 * [website-master](website-master_cloudformation.yml): Stack of the fundamental components for hosting the website, including the GitHub hook user, the CloudFront distribution, and the S3 bucket hosting the master branch of the site.
 * [website-branch](website-branch_cloudformation.yml): Stack of the AWS components needed to host a branch of the website.

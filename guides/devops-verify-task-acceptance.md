@@ -63,14 +63,14 @@ Most of these functions are stored in a Jenkins "shared library" in the reposito
 Work is performed in a feature branch of the jenkins-pipeline-libs repository.
 
 Consider an example: Changes to the pipeline that builds, tests, and deploys Node/NPM modules.
-So make a test branch `folio-1775-foo-bar` in jenkins-pipeline-libs and push it.
+So make a test branch (e.g. `folio-1775-foo-bar`) in jenkins-pipeline-libs and push it.
 
 ### Testing {#pipelines-testing}
 
 Select a relevant module repository for testing: in this case NPM-based.
 Good candidate modules might be stripes-components or ui-users.
 
-Create branches for each these modules called `folio-1775-foo-bar-test`.
+Create branches for each these modules (e.g. `folio-1775-testing-foo-bar`).
 
 Add the following line to the top of each Jenkinsfile, to point to the branch of jenkins-pipeline-libs that is being tested.
 
@@ -93,5 +93,5 @@ These are often more difficult to test, since testing on a module's master branc
 
 When satisfied, make a PR in jenkins-pipeline-libs.
 
-After merging, follow some subsequent Jenkins builds to be double sure.
+After merging, follow some subsequent Jenkins builds to make absolutely sure.
 
