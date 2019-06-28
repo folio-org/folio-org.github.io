@@ -64,4 +64,4 @@ at the [FOLIO issue tracker](https://dev.folio.org/guidelines/issue-tracker/).
 We use the label "devweb" for items that relate to the software and facilities for building the website.
 We use the label "devdoc" for items that relate to documentation content.
 
-The FOLIO Slack channel #dev-website
+The FOLIO [Slack](https://dev.folio.org/guidelines/which-forum/#slack) channel #dev-website
