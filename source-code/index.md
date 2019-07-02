@@ -316,6 +316,9 @@ exists and can be run, the APIs are likely to change.
 - [stripes-smart-components](https://github.com/folio-org/stripes-smart-components)
   -- A suite of smart components. Each communicates with an Okapi web-service in order to provide the facilities that it renders.
 
+- [stripes-acq-components](https://github.com/folio-org/stripes-acq-components)
+  -- Stripes components that are specific to use cases that arise in Acquisitions-related modules.
+
 - [stripes-erm-components](https://github.com/folio-org/stripes-erm-components)
   -- Stripes components that are specific to use cases that arise in ERM-related modules.
 
