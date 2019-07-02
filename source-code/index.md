@@ -382,6 +382,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-erm-usage](https://github.com/folio-org/ui-erm-usage)
   -- Stripes UI module: Managing ERM usage statistics.
 
+- [ui-local-kb-admin](https://github.com/folio-org/ui-local-kb-admin)
+  -- Stripes UI module: Manage the local KB for ERM.
+
 - [ui-licenses](https://github.com/folio-org/ui-licenses)
   -- Stripes UI module: Upload, manage and analyze licenses.
 
