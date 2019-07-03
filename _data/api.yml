@@ -187,6 +187,7 @@ mod-inventory-storage:
       - instance-storage
       - instance-format
       - instance-type
+      - instance-note-type
       - instance-relationship-type
       - instance-status
       - item-storage
