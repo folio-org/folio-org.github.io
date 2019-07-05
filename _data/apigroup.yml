@@ -93,6 +93,7 @@ infrastructure:
     - raml-module-builder
     - mod-configuration
     - mod-audit
+    - mod-pubsub
     - mod-rtac
     - edge-rtac
 other:

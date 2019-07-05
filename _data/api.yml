@@ -55,6 +55,14 @@ mod-password-validator:
       - validator-registry
     ramlutil: ramls/raml-util
 
+mod-pubsub:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - pubSub
+    ramlutil: ramls/raml-util
+
 mod-users:
   - label: null
     version1: true
