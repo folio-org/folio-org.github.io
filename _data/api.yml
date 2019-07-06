@@ -181,6 +181,7 @@ mod-inventory:
       - inventory
       - inventory-batch
       - inventory-config
+      - isbn
     ramlutil: ramls/raml-util
     rmb: false
 
