@@ -214,6 +214,7 @@ mod-inventory-storage:
       - locationunit
       - material-type
       - mode-of-issuance
+      - nature-of-content-term
       - service-point
       - service-points-user
       - shelf-location
