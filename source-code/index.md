@@ -367,6 +367,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-marccat](https://github.com/folio-org/ui-marccat)
   -- Stripes UI module: searching, sorting, filtering, viewing, editing and creating BIB record.
 
+- [ui-acquisition-units](https://github.com/folio-org/ui-acquisition-units)
+  -- Stripes UI module: Management of Acquisition unit records.
+
 - [ui-orders](https://github.com/folio-org/ui-orders)
   -- Stripes UI module: Orders.
 
