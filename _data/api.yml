@@ -236,6 +236,7 @@ mod-invoice-storage:
     version1: true
     directory: ramls
     files:
+      - acquisitions-unit-assignments
       - invoice
       - invoice-line-number
       - invoice-number
