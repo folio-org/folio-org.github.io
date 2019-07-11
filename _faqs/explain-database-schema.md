@@ -28,7 +28,7 @@ As a side note, there is massive work currently being done on [`cql2pgjson`](htt
 
 *Q.* Framework does not cache prepared statements and does not use binding for SQL statements. This also has a huge impact on performance. And potentially there is a chance of SQL injection attacks if SQL binding is not used.
 
-*A.* There are some prepared statements (saving and updating) but not for all and this should be addressed. (Creating issues and pull requests to fix any such occurrences are welcome!)  However, note that the `cql2pgjson` module creates the entire `where` clause (this is our preferred method of work - using cql) - so in _most_ cases this is how the database is accessed [cql input ->> cql processed into an SQL where clause (includes some validation) ->> where clause used to build full query].
+*A.* There are some prepared statements (saving and updating) but not for all and this should be addressed. (Creating issues and pull requests to fix any such occurrences are welcome!)  However, note that the `cql2pgjson` module creates the entire `where` clause (this is our preferred method of work - using [CQL](/reference/glossary/#cql)) - so in _most_ cases this is how the database is accessed [cql input ->> cql processed into an SQL where clause (includes some validation) ->> where clause used to build full query].
 
 *Q.* All data in the databases in folio-stable has quite simple tabular form and I would prefer to redesign tables to the natural relational form and have in JSONB just additional information like user’s addresses and so on. Or maybe it makes sense to move back to [MongoDB](https://www.mongodb.com/).
 
