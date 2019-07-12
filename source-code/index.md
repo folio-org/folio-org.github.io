@@ -148,6 +148,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-event-config](https://github.com/folio-org/mod-event-config)
   -- Provides functionality for the notification events.
 
+- [mod-pubsub](https://github.com/folio-org/mod-pubsub)
+  -- Publisher-subscriber module to provide event-driven approach.
+
 - [mod-codex-mux](https://github.com/folio-org/mod-codex-mux)
   -- Codex Multiplexer.
 
