@@ -310,6 +310,9 @@ mod-finc-config:
     directory: ramls
     files:
       - finc-tenant
+      - fincSelectFiles
+      - fincSelectFilters
+      - fincSelectFilterFiles
       - fincConfigMetadataCollections
       - fincConfigMetadataSources
       - fincSelectMetadataCollections
