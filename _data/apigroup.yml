@@ -66,6 +66,7 @@ notifications:
     - mod-event-config
     - mod-email
     - mod-sender
+    - mod-pubsub
 data-import:
   title: Data import
   description: Importing and loading various data.
@@ -93,7 +94,6 @@ infrastructure:
     - raml-module-builder
     - mod-configuration
     - mod-audit
-    - mod-pubsub
     - mod-rtac
     - edge-rtac
 other:
