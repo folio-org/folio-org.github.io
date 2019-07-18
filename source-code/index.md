@@ -473,9 +473,6 @@ exists and can be run, the APIs are likely to change.
 - [eslint-config-stripes](https://github.com/folio-org/eslint-config-stripes)
   -- The shared eslint configuration for stripes applications and extensions.
 
-- [okapi-stripes](https://github.com/folio-org/okapi-stripes)
-  -- Server-side module for generating UIs based on Stripes.
-
 - [platform-complete](https://github.com/folio-org/platform-complete)
   -- Stripes platform: Complete.
 
