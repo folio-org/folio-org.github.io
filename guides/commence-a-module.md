@@ -108,6 +108,11 @@ The reference [API documentation](/reference/api/) is generated from these files
 
 For each of the schema properties, as early as possible [provide](/guides/describe-schema/) a clear description and define the constraints.
 
+Take care with linking to schema files:
+In our schemas, the value of "$ref" in the parent schema is a relative pathname to the child schema.
+In the RAML files, the "type" is declared as a symbolic name for use elsewhere in the RAML file.
+Its declared value is the path to the schema, relative to that RAML file.
+
 ## Database schema {#back-end-database-schema}
 
 For RMB-based modules the DB schema defines this module's tables, indexes, joins, etc.
