@@ -62,9 +62,9 @@ Add other configuration files. Follow similar existing repositories.
 For back-end modules: descriptors/ModuleDescriptor-template.json, Dockerfile, Jenkinsfile, etc.
 For front-end modules: package.json, .eslintrc, etc.
 
-Open a Jira issue, so that the project is integrated into Jenkins, the correct permissions are set on the repo, and an appropriate Jira project can be created (if applicable). Add the label 'ci'.
-There is one example at [FOLIO-949](https://issues.folio.org/browse/FOLIO-949).
-Suggest a short name for the Jira project.
+Open Jira tickets, so that the project is integrated into Jenkins, the correct permissions are set on the repo, and an appropriate Jira project can be created (if applicable).
+There is one example at [FOLIO-2113](https://issues.folio.org/browse/FOLIO-2113).
+Specify "Development Team: Core: Platform" and "Labels: platform-backlog devops" to be prioritized and scheduled.
 
 In the bottom "Further information" section of the README, add a link to your project issue tracker.
 
