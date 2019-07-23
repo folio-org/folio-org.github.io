@@ -76,3 +76,7 @@ then add the new module to Lokalise to enable the [translators](/faqs/explain-i1
 Configuration of the new repository can only be done by people with appropriate access.
 See the folio-infrastructure lokalise-push [procedure](https://github.com/folio-org/folio-infrastructure/tree/master/lokalise-push).
 
+## Next steps
+
+When a new module has been fully established and its artifacts are being deployed, follow the guides to [install](/faqs/how-to-install-new-module/) it to platform and reference environments for snapshot and testing builds.
+
