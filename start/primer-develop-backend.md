@@ -17,7 +17,8 @@ The [FOLIO-Sample-Modules guide](https://github.com/folio-org/folio-sample-modul
 
 Then see the guide to [Running a local FOLIO system](/guides/run-local-folio/) for guidance to establish your local FOLIO work environment.
 
-The [Commence a module - structure and configuration](/guides/commence-a-module/) guide explains a consistent layout for a back-end module.
+The [Commence a module - structure and configuration](/guides/commence-a-module/) guide explains a consistent layout for a back-end module,
+together with the guidelines to [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/).
 
 The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework, is a special FOLIO module that abstracts much functionality and enables the developer to focus on implementing business functions. Define the APIs and objects in RAML files and schema files, then the RMB generates code and provides tools to help implement the module.
 (Note that at this stage of the FOLIO project, only this Java-based framework is available.)

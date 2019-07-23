@@ -143,7 +143,8 @@ instructor-led workshop.
 - [Release procedures](/guidelines/release-procedures/).
 - [Regular FOLIO releases](regular-releases/).
 - [Search and report facilities](/search-other) (e.g. open pull requests needing review).
-- [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/).
+- [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/)
+and when ready [install](/faqs/how-to-install-new-module/) it to platform and reference environments for snapshot and testing builds.
 - [Rename a module](rename-module/).
 - [Maintain tidy repositories](tidy-repository/).
 - <a id="roadmap"></a>The [overview](https://www.folio.org/platform/) and the [FOLIO Project Roadmap](https://wiki.folio.org/display/PC/FOLIO+Roadmap) including the development and milestone plan for Version 1 and the feature backlog,

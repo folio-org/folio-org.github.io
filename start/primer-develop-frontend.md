@@ -23,7 +23,8 @@ Then follow [Creating a new development setup for Stripes](https://github.com/fo
 Then move on to creating a real module with the help of [stripes-cli](https://github.com/folio-org/stripes-cli)
 and in particular the [App development](https://github.com/folio-org/stripes-cli/blob/master/doc/user-guide.md#app-development) section.
 
-The [Commence a module - structure and configuration](/guides/commence-a-module/) guide explains a consistent layout for a front-end module.
+The [Commence a module - structure and configuration](/guides/commence-a-module/) guide explains a consistent layout for a front-end module,
+together with the guidelines to [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/).
 
 The guide to [User experience design](/guides/user-experience-design/) provides guidelines and tools for building accessible apps.
 
