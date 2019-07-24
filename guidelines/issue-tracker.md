@@ -44,7 +44,7 @@ Provide the facts, describe your actions, the expected results, and actual resul
 That time spent does help everyone.
 
 Use a local plain text file and your familiar text editor to prepare and save the summary, description, and comments.
-This technique also helps to reduce the amount of notifications.
+This technique also helps to reduce the amount of notifications from minor edits.
 When ready then copy-and-paste.
 
 Jira uses a particular markup language for special formatting, and is different to GitHub etc.
@@ -57,11 +57,12 @@ Be sure to redact information that would compromise privacy.
 
 When creating the issue, select the most relevant _Project_ and the _Issue
 Type_ (see [below](#issue-types) for definitions).
-Each individual [source code](/source-code) repository's README document has a link to its particular issue tracker Project.
+Each individual [source code](/source-code) repository README document has a link to its particular issue tracker Project.
 If unsure which Project, then use "FOLIO".
 Someone can change these later if necessary.
 
 Select the appropriate "Development Team".
+If not sure, then just choose one. Other people can re-allocate.
 
 For the "Bug" issue type, use the "Configure Fields" option to add
 the _Environment_ field.
@@ -75,7 +76,7 @@ So use the technique of a concise Description when creating, then immediately ad
 Another workaround is to add people using the "@mention" facility (type "@" then any part of their name).
 They can then choose to add themself as a Watcher.
 
-Someone else will later determine the _Assignee_ and the _Priority_, and will
+Someone else will later determine the _Assignee_ and the _Priority_ and the _Sprint_ and will
 link between relevant issues.
 
 ## Issue types
@@ -88,7 +89,7 @@ Each Project uses the following _Issue Types_:
 - **Task**: Some job that needs to be done, usually not directly related to
   product code changes.
 - **Sub-task**: We try to avoid this, and instead use other types,
-  and then Link between issues.
+  and then Link between issues. (Note that sub-task tickets cannot be added to Sprints.)
 - **Umbrella**: This type is used for project management.
   Please use one of the other types.
 
@@ -103,7 +104,7 @@ An Issue Priority is set by the project managers.
 - **P4**: low priority level, nice-to-have things that require future discussion and design
 
 Note that the priority might not match the severity felt by the issue reporter.
-That is better represented by other means (such as the number of watchers or votes)
+That is better represented by other means (such as the number of watchers)
 and by providing clear Comments about the issue and its impacts.
 
 ## Continue
@@ -120,11 +121,16 @@ Provide links in both directions.
 
 ## Status
 
-We use the following workflow:
+We generally use the following workflow.
+Also refer to each development team's Definition of Done ([DoD](/reference/glossary/#dod)).
 
+- **Draft**: In preparation, e.g. the Description is not yet ready.
 - **Open**: Ready for the assignee to commence work on it.
 - **In Progress**: Being actively worked on at the moment by the assignee.
 - **Reopened**: The resolution was incorrect, or subsequent developments have caused the issue to resurface.
+- **Blocked**: Another issue is impeding progress.
+- **In Code Review**: Being assessed by development collaborators.
+- **In Review**: When appropriate, this indicates readiness for formal review by testers.
 - **Closed**: Finished.
 
 The Status does not preclude other people from assisting.
