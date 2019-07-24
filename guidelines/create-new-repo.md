@@ -6,16 +6,26 @@ menuInclude: no
 menuTopTitle: Guidelines
 ---
 
-These are notes to assist developers with creating a new FOLIO module as a repository.
-Initial setup files and configuration.
+## Introduction
+
+These are notes to assist developers with creating a new FOLIO module as a repository,
+preparing initial setup files, and configuration.
+
+## Choose module name
+
+Take care to choose wisely for the [module name](/guidelines/naming-conventions/#module-names). It will be disruptive to [change that](/guides/rename-module/).
+
+## Devops assistance
+
+Open Jira tickets, so that the project is integrated into Jenkins, the correct permissions are set on the repo, and an appropriate Jira project can be created (if applicable).
+There is one example at [FOLIO-2113](https://issues.folio.org/browse/FOLIO-2113).
+Specify "Development Team: Core: Platform" and "Labels: platform-backlog devops" to be prioritized and scheduled.
 
 ## Configuration at GitHub
 
 If the "New" button is not available to you at [github.com/folio-org](https://github.com/folio-org) then [contact](/community/#collaboration-tools) FOLIO infrastructure (e.g. via the issue tracker or the #support channel).
 
 Otherwise follow the GitHub prompts to create a new repository, and if needed to then import an existing repository.
-
-Take care to choose wisely for the [module name](/guidelines/naming-conventions/#module-names). It will be disruptive to [change that](/guides/rename-module/).
 
 The following first few items can only be done by the initial creator of the repository or its owners, and should happen early. Use its "Settings" area.
 (If the "Settings" tab is not available to you, then see the "support" advice above.)
@@ -51,6 +61,8 @@ Use the initial year of creation for the date.
 
 Ensure that any package.json and pom.xml etc. type of configuration file has the appropriate "licence" elements.
 
+In the bottom "Further information" section of the README, add a link to your project issue tracker.
+
 Add [.editorconfig](/guides/developer-setup#use-editorconfig-for-consistent-whitespace) file.
 
 Add initial NEWS.md or CHANGELOG.md file.
@@ -58,15 +70,25 @@ Add initial NEWS.md or CHANGELOG.md file.
 If necessary, add a basic .gitignore file.
 Developers will have [their own ~/.gitignore_global](/guides/developer-setup#use-gitignore) to handle most.
 
-Add other configuration files. Follow similar existing repositories.
+## Add specific configuration files
+
+Follow similar existing repositories.
+
+The [Commence a module - structure and configuration](/guides/commence-a-module/) guide explains a consistent layout and explains each type of file (so not repeated here).
+
+### Backend specific
+
 For back-end modules: descriptors/ModuleDescriptor-template.json, Dockerfile, Jenkinsfile, etc.
-For front-end modules: package.json, .eslintrc, etc.
 
-Open Jira tickets, so that the project is integrated into Jenkins, the correct permissions are set on the repo, and an appropriate Jira project can be created (if applicable).
-There is one example at [FOLIO-2113](https://issues.folio.org/browse/FOLIO-2113).
-Specify "Development Team: Core: Platform" and "Labels: platform-backlog devops" to be prioritized and scheduled.
+Get all of the source files and other configuration files established first.
+Then add the Jenkinsfile to initiate the CI processing.
+**Note:**
+Its Jenkinsfile needs to be committed directly to master branch.
+If it is done via a pull-request then that will fail, as the initial base Sonar scan has not yet run.
 
-In the bottom "Further information" section of the README, add a link to your project issue tracker.
+### Frontend specific
+
+For front-end modules: package.json, .eslintrc, Jenkinsfile, etc.
 
 ## Configure Lokalise
 

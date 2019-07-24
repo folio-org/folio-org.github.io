@@ -120,19 +120,29 @@ It is located at `src/main/resources/templates/db_scripts/schema.json`
 
 When SQL scripts are necessary, they are also stored in that `db_scripts` directory.
 
-See further information about the "Tenant API" in the [RMB README](https://github.com/folio-org/raml-module-builder#tenant-api).
+See further information in the "[Tenant API](https://github.com/folio-org/raml-module-builder#tenant-api)" section of the RMB README document.
 
 ## Reference data {#back-end-reference-data}
 
 The optional `reference-data` directory can hold data required for [sample data](#back-end-sample-data) to refer to.
 For example, if the vendors in your sample data refer to vendor categories by UUID, the vendor categories (with their UUIDs) could be defined in the `reference-data/vendor-categories` directory, in the format expected by the module's relevant endpoint for POSTing the data.
-This makes it easy to write a script to load the reference data using the module's web service API.
+
+Loading reference-data and sample-data is achieved during the tenant initialisation phase.
+Refer to the "[Tenant API](https://github.com/folio-org/raml-module-builder#tenant-api)" section of the RMB README document.
+Refer to the "[Tenant Interface](https://github.com/folio-org/okapi/blob/master/doc/guide.md#tenant-interface)"
+and "[Tenant Parameters](https://github.com/folio-org/okapi/blob/master/doc/guide.md#tenant-parameters)"
+and "[Install modules per tenant](https://github.com/folio-org/okapi/blob/master/doc/guide.md#install-modules-per-tenant)"
+sections of the Okapi Guide.
+
+For example:
+```
+... proxy/tenants/diku/install ... tenantParameters=loadSample%3Dtrue%2CloadReference%3Dtrue
+```
 
 ## Sample data {#back-end-sample-data}
 
 The `sample-data` directory holds sample data specific for this module.
 It should be in the format expected by the module's relevant endpoint for POSTing the data.
-This makes it easy to write a script to load the sample data using the module's web service API.
 
 If the sample data refers to [reference data](#back-end-reference-data), those data can be defined in the `reference-data` directory.
 
