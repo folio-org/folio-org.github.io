@@ -277,7 +277,11 @@ The CI stages are defined in its [Jenkinsfile](https://github.com/folio-org/plat
 The front-end UI modules are declared in
 [package.json](https://github.com/folio-org/platform-core/blob/master/package.json) (and installed via 'yarn install') and are declared in the tenant configuration
 [stripes.config.js](https://github.com/folio-org/platform-core/blob/master/stripes.config.js) file.
-Note that the versions are pinned in package.json (rather than using a comparator) which enables the Renovate bot to discover newer releases ([configured](https://github.com/folio-org/platform-core/blob/master/renovate.json) for platform release branches as "patch" and for master as "minor,patch").
+
+Note that the versions are pinned in package.json (rather than using a comparator).
+
+That enables the Renovate bot to discover newer releases ([configured](https://github.com/folio-org/platform-core/blob/master/renovate.json) for platform release branches as "patch" and for master as "minor,patch").
+It will automatically create pull-requests to those platform branches for each release that it detects.
 
 The 'yarn build-module-descriptors' stripes-cli [command](https://github.com/folio-org/stripes-cli/blob/master/doc/commands.md#mod-descriptor-command) processes those declared modules and generates a temporary directory of ModuleDescriptors.
 Then a CI script processes those MDs to generate the "stripes-install.json" file.
@@ -296,6 +300,7 @@ The link to the built platform "instance" and the link to the "UI Tests" are app
 ### Platform edit steps
 
 To update the version of a module, these steps must be completed.
+Be sure to understand the process [explained](#introduction-platform) above.
 
 * Ensure that the module is already being processed on the [snapshot and testing](/faqs/how-to-install-new-module/) reference environments.
 
