@@ -50,6 +50,7 @@ finance:
   title: Finance and orders
   description: Finance, orders, vendors.
   modules:
+    - mod-finance
     - mod-finance-storage
     - mod-invoice
     - mod-invoice-storage

@@ -331,6 +331,16 @@ mod-gobi:
       - acq-models
     ramlutil: ramls/raml-util
 
+mod-finance:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - finance
+    excludes:
+      - acq-models
+    ramlutil: ramls/raml-util
+
 mod-finance-storage:
   - label: null
     version1: true
