@@ -336,10 +336,9 @@ mod-finance:
     version1: true
     directory: ramls
     files:
-      - finance
-    excludes:
-      - acq-models
+      - funds
     ramlutil: ramls/raml-util
+    schemasDirectory: ramls/acq-models/mod-finance/schemas
 
 mod-finance-storage:
   - label: null
