@@ -378,7 +378,6 @@ mod-orders-storage:
     directory: ramls
     files:
       - acquisitions-unit
-      - acquisitions-unit-assignments
       - alert
       - orders
       - order-lines
