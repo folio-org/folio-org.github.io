@@ -134,9 +134,9 @@ Some FOLIO repositories utilize "[git submodules](https://git-scm.com/docs/gitmo
 For example, each `mod-*` module (and `raml-module-builder` itself) include the "raml" repository as a git submodule as its `ramls/raml-util` directory.
 (See [notes](/start/primer-raml/).)
 
-Note that when originally cloning a repository, use 'git clone --recursive ...' which should automatically include any submodules.
+Note that when originally cloning a repository, use '`git clone --recursive ...`' which should automatically include any submodules.
 
-Some git clients do not. If you then have an empty "raml-util" directory, then do 'git submodule update --init'
+Some git clients do not. If you then have an empty "raml-util" directory, then do '`git submodule update --init`'
 
 Thereafter upgrading that submodule (i.e. moving the git pointer of the referenced repository) is deliberately not automated, so that we can ensure a stable build when we git checkout in the future.
 
@@ -157,7 +157,7 @@ If needed, then that could be automated with [githooks](https://git-scm.com/docs
 
 For Maven-based modules, add to your POM file (copy the 'git submodule update' from mod-notes) to assist all git clients to update.
 
-Note that when locally testing an upgrade of a git submodule, then do 'git add ramls/raml-util' before running 'mvn'.
+Note that when locally testing an upgrade of a git submodule, then do '`git add ramls/raml-util`' before running 'mvn'.
 Otherwise it will helpfully restore the referenced git pointer.
 
 ## Troubleshooting
