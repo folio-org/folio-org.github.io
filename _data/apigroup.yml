@@ -48,7 +48,7 @@ erm:
     - mod-finc-config
 finance:
   title: Finance and orders
-  description: Finance, orders, vendors.
+  description: Finance, orders, organizations.
   modules:
     - mod-finance
     - mod-finance-storage

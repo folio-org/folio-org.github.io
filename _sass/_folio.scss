@@ -55,22 +55,26 @@ th {
 }
 table.api {
   table-layout: fixed;
-  width: 20em;
+  width: 25em;
 }
 table.apilabel {
-  width: 35em;
-}
-table.api .label {
-  width: 44%;
-  text-align: left;
-}
-table.api .raml {
-  width: 35%;
-  text-align: left;
+  width: 25em;
 }
 table.api .view {
-  width: 11%;
+  width: 15%;
   text-align: center;
+}
+table.api .raml {
+  width: 70%;
+  text-align: left;
+}
+table.apilabel .label {
+  width: 20%;
+  text-align: left;
+}
+table.apilabel .raml {
+  width: 50%;
+  text-align: left;
 }
 
 /*
