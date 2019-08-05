@@ -36,4 +36,6 @@ The accompanying [slides](https://drive.google.com/open?id=1SV6scBsmmukIwrTlAo-L
 
 ## Preparation materials
 
-[FOLIO Graphics and Branding Resources](https://wiki.folio.org/display/OUTREACH/FOLIO+Graphics+and+Branding+Resources)
+* [FOLIO Graphics and Branding Resources](https://wiki.folio.org/display/OUTREACH/FOLIO+Graphics+and+Branding+Resources)
+* [FOLIO Resources](https://www.folio.org/about/resources/) then select "Branding" in left-hand column.
+
