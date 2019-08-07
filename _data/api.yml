@@ -63,6 +63,14 @@ mod-pubsub:
       - pubSub
     ramlutil: ramls/raml-util
 
+mod-pub-sub-poc:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - publish
+    ramlutil: ramls/raml-util
+
 mod-users:
   - label: null
     version1: true
