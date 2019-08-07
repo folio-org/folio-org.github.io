@@ -151,6 +151,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-pubsub](https://github.com/folio-org/mod-pubsub)
   -- Publisher-subscriber module to provide event-driven approach.
 
+- [mod-pub-sub-poc](https://github.com/folio-org/mod-pub-sub-poc)
+  -- PoC for PubSub.
+
 - [mod-codex-mux](https://github.com/folio-org/mod-codex-mux)
   -- Codex Multiplexer.
 
@@ -333,6 +336,9 @@ exists and can be run, the APIs are likely to change.
 
 - [stripes-form](https://github.com/folio-org/stripes-form)
   -- A redux-form wrapper for Stripes.
+
+- [stripes-final-form](https://github.com/folio-org/stripes-final-form)
+  -- A Final Form Wrapper for Stripes.
 
 - [stripes-logger](https://github.com/folio-org/stripes-logger)
   -- Simple category-based logging for Stripes.
