@@ -236,6 +236,13 @@ community to help with the development of FOLIO.
 The [FOLIO Product Council](https://wiki.folio.org/display/PC/)
 and its [Charter](https://wiki.folio.org/display/PC/FOLIO+Product+Council+Charge)
 
+#### PO
+
+Each FOLIO Product Owner (PO) represents the business or user community, and is responsible for working with this group to determine what features will be in the product release.
+Refer to the overview of [Product Owners](https://wiki.folio.org/display/COMMUNITY/Product+Owners)
+including explanation of "What is a Product Owner", getting involved and getting started,
+and the [Directory of Product Owners by Area of Focus](https://wiki.folio.org/display/COMMUNITY/Directory+of+Product+Owners+by+Area+of+Focus).
+
 #### PostgreSQL
 
 [PostgreSQL](https://www.postgresql.org/) (often called "Postgres") is
