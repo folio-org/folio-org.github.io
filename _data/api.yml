@@ -169,6 +169,7 @@ mod-circulation-storage:
     version1: true
     directory: ramls
     files:
+      - anonymize-storage-loans
       - circulation-rules-storage
       - loan-storage
       - loan-policy-storage
