@@ -34,7 +34,7 @@ will be free of bugs; we are not superhuman.
 All real work should be done in feature branches. It is still OK to make a
 small trivial change directly in the master. Stuff like editing the README.
 
-## Fork GitHub repository
+### Fork GitHub repository
 
 Most people have write permission to only the few
 [https://github.com/folio-org](https://github.com/folio-org)
