@@ -31,10 +31,9 @@ merged into master should be of such good quality that at any time a snapshot
 from master passes all tests, and can be deployed. That is not to say that it
 will be free of bugs; we are not superhuman.
 
-All real work should be done in feature branches. It is still OK to make a
-small trivial change directly in the master. Stuff like editing the README.
+All work is done in feature branches, and merged to master via pull requests.
 
-## Fork GitHub repository
+### Fork GitHub repository
 
 Most people have write permission to only the few
 [https://github.com/folio-org](https://github.com/folio-org)
@@ -99,13 +98,13 @@ like _okapi-xxx-contribution-guidelines_):
 
 You can commit stuff as you go, but try not to push obviously broken stuff into
 GitHub, not even in your development branch -- that will be visible for the
-whole world, and we plan to set up automatic testing for each branch, so
+whole world, and there is automatic CI testing for each branch so
 pushing a broken commit will cause some emails. But if you need to share the
 code, for example for collaborating, of course you need to push it. Naturally
 you will write decent commit messages explaining what you have done.
 
 The first time you want to push your branch to GitHub, you may encounter an
-error _The current branch okapi-xxx has no upstream branch_. Git tells you
+error "_The current branch okapi-xxx has no upstream branch_". Git tells you
 what to do, namely:
 
     git push --set-upstream origin okapi-xxx
@@ -129,13 +128,13 @@ into one, and editing the commit messages.
 ### Requesting a merge
 
 Go to the GitHub page, and it shows some recently pushed branches -- your one should
-be there too. Next to it is a button "New pull request". Click on that.
+be there too. Next to it is a button "New pull request". Select that.
 
 If you are using a fork, then the process is a little different.
 Start from your fork and select "New pull request", then select your
 head fork and branch.
 
-It should show that it is _able to merge_, so click on the "Create pull
+It should show that it is _able to merge_, so select the "Create pull
 request" button under the comment box.
 
 If your pull request is instead to seek feedback, then say in the
@@ -144,14 +143,6 @@ you want assistance.
 
 After the pull request is created, assign it to someone else.
 Alternatively leave it for someone to pick up.
-
-### Contributor License Agreement
-
-The FOLIO Project uses the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) for its code and requires developers to acknowledge their contributions to the project using this license.  The contents of the Contributor License Agreement (CLA) are stored in a Gist on GitHub:
-
-{% gist a72174fc6b18f3a66f2f9d3db1c8f127 %}
-
-See [accepting the contributor license agreement](/guidelines/cla-process) for more details.
 
 ### Merging pull requests
 
@@ -169,12 +160,12 @@ If there are serious issues, you can close the pull request without
 merging, with a comment explaining why you could not do it.
 
 Once all is well, you can use GitHub's interface. Just go to the
-conversation tab, and click on _Merge Pull Request_ (don't squash, don't rebase,
+conversation tab, and select "_Merge Pull Request_" (don't squash, don't rebase,
 [learn why](https://git-scm.com/book/en/v2/Git-Branching-Rebasing#_rebase_peril)).
 Edit the comment if
-necessary, and click on _Confirm Merge_. GitHub should tell you that the
-_Pull request successfully merged and closed_. Next to it is a button to
-_Delete the Branch_. For a simple feature branch, you might as well delete
+necessary, and select "_Confirm Merge_". GitHub should tell you that the
+"_Pull request successfully merged and closed_". Next to it is a button to
+"_Delete the Branch_". For a simple feature branch, you might as well delete
 it now, it has served its purpose. But if you think there is more work that
 should be done in this branch, of course you don't delete it.
 
@@ -202,6 +193,14 @@ with this code snippet that skips those feature branch commits:
     for rev in $(git rev-list 75369f4a4c026772242368d870872562a3b693cb..master --merges --first-parent); do
         git rev-list $rev^2 --not $rev^
     done | xargs git bisect skip
+
+## Contributor License Agreement
+
+The FOLIO Project uses the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) for its code and requires developers to acknowledge their contributions to the project using this license.  The contents of the Contributor License Agreement (CLA) are stored in a Gist on GitHub:
+
+{% gist a72174fc6b18f3a66f2f9d3db1c8f127 %}
+
+See [accepting the contributor license agreement](/guidelines/cla-process) for more details.
 
 ## Automation
 
@@ -357,7 +356,7 @@ When hunting down problems, it is considered good form to write a test that
 demonstrates the problem first, then a fix that makes the test pass.
 
 We have a Jenkins test system that gets invoked when you push something
-to master, and/or make a pull request. It should flag any errors, but be
+to a branch, and/or make a pull request. It should flag any errors, but be
 nice and run a ```mvn install``` on your own machine before every
 ```git commit```
 
