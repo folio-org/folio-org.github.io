@@ -144,14 +144,6 @@ you want assistance.
 After the pull request is created, assign it to someone else.
 Alternatively leave it for someone to pick up.
 
-### Contributor License Agreement
-
-The FOLIO Project uses the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) for its code and requires developers to acknowledge their contributions to the project using this license.  The contents of the Contributor License Agreement (CLA) are stored in a Gist on GitHub:
-
-{% gist a72174fc6b18f3a66f2f9d3db1c8f127 %}
-
-See [accepting the contributor license agreement](/guidelines/cla-process) for more details.
-
 ### Merging pull requests
 
 When someone has assigned a pull request to you, check out the branch, and
@@ -201,6 +193,14 @@ with this code snippet that skips those feature branch commits:
     for rev in $(git rev-list 75369f4a4c026772242368d870872562a3b693cb..master --merges --first-parent); do
         git rev-list $rev^2 --not $rev^
     done | xargs git bisect skip
+
+## Contributor License Agreement
+
+The FOLIO Project uses the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) for its code and requires developers to acknowledge their contributions to the project using this license.  The contents of the Contributor License Agreement (CLA) are stored in a Gist on GitHub:
+
+{% gist a72174fc6b18f3a66f2f9d3db1c8f127 %}
+
+See [accepting the contributor license agreement](/guidelines/cla-process) for more details.
 
 ## Automation
 
