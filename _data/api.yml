@@ -209,6 +209,7 @@ mod-inventory-storage:
       - instance-note-type
       - instance-relationship-type
       - instance-status
+      - item-damaged-statuses
       - item-storage
       - item-note-type
       - alternative-title-type
