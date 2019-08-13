@@ -6,7 +6,7 @@ menuInclude: no
 menuTopTitle: Guides
 ---
 
-This guide assists to keep abreast of notifications, and especially to keep up-to-date with topics that are directly relevant to us.
+This guide assists to keep abreast of notifications, and especially to keep up-to-date with topics that are directly relevant to us personally.
 
 ## GitHub email with mentions
 
@@ -61,4 +61,21 @@ The current sprint:
 ```
 labels in (sprint41) AND (project in (FOLIO) OR labels in (core, ci)) ORDER BY assignee ASC, updated DESC
 ```
+
+## Jira in-app notifications
+
+Notifications about tickets that are relevant to each user can also be displayed in the web browser.
+
+We use the [Bug Watcher Notifications](https://marketplace.atlassian.com/apps/1210865/bug-watcher-notifications?hosting=server&tab=overview).
+That page also leads to their documentation and their issue tracker.
+
+At your Jira "User profile" (at top-right) there are two new options:
+* Watches: For your user general preferences configuration.
+* Notifications: Opens a dedicated page for detail and management of current notifications.
+
+The notification panel shows in the far top-right.
+Setting your preferences from the default "email-only" to "in-app" causes notifications to also be listed here.
+
+Defining your own notification schemes (which over-ride the system scheme) is done per-user on a per-project basis.
+To do so, visit each relevant "Project" and use the left-hand sidebar for "Add-ons : Watches".
 
