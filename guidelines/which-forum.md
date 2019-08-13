@@ -6,6 +6,8 @@ menuInclude: no
 menuTopTitle: Guidelines
 ---
 
+## Introduction
+
 Developers need to efficiently discuss various topics such as issues,
 usage quirks, new features, and documentation improvements.
 Remember that other developers, the recipients of your messages, are also busy.
