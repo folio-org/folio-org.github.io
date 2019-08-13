@@ -8,7 +8,7 @@ menuTopTitle: Guides
 
 This guide assists to keep abreast of notifications, and especially to keep up-to-date with topics that are directly relevant to us.
 
-# GitHub email with mentions
+## GitHub email with mentions
 
 Use mail filters to partition the GitHub email notifications. Add another mail filter to copy ones that mention you into another special folder.
 
@@ -19,7 +19,7 @@ Use mail filters to partition the GitHub email notifications. Add another mail f
 $MAILDIR/folio-github-issues-me/
 ```
 
-# Jira email with mentions
+## Jira email with mentions
 
 Use mail filters to partition the Jira email notifications. Add another mail filter to copy ones that mention you into another special folder.
 
@@ -48,7 +48,7 @@ $MAILDIR/folio-jira-issues-me/
 
 Some email clients have less powerful filters. These can be assisted by not having spaces in your Jira username, e.g. rather than "`Julius Caesar`" use "`Julius-Caesar`" or some such.
 
-# Other Jira filters
+## Other Jira filters
 
 Keep a wide browser window open with a search that excludes specific projects and provides an overview of everything else recently updated. Use "List View". Keep track of the time that you last assessed the list, and adjust the "updated" time period to match that.
 

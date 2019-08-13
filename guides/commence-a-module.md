@@ -8,7 +8,7 @@ menuTopTitle: Guides
 
 This guide explains how to commence a new module, including its structure, directory layout, configuration for continuous integration, sample data, etc.
 
-# Introduction
+## Introduction
 
 Using consistent structure and configuration will assist the development.
 All developers can know what to expect.
@@ -21,7 +21,7 @@ Be familiar with the [Getting started](/start/) fundamental documentation and pr
 The essential directories and files are explained below for [back-end](#back-end-modules) and [front-end](#front-end-modules) modules.
 Of course any module might need extras.
 
-# General
+## General
 
 All modules will have the [normal boilerplate files](/guidelines/create-new-repo/) such as README.md, LICENSE, CONTRIBUTING.md, etc.
 
@@ -29,7 +29,7 @@ The [Naming conventions](/guidelines/naming-conventions/) guidelines apply.
 
 Module documentation is kept with the relevant repository, while broad and project-wide documentation is here at the dev.folio.org site.
 
-# Back-end modules
+## Back-end modules
 
 Server-side modules include all those named `mod-*`.
 Follow the structure and files of [mod-notes](https://github.com/folio-org/mod-notes) as an example.
@@ -39,7 +39,7 @@ provides a Maven archetype to commence a new RMB-based module.
 
 The `NEWS.md` lists the main changes for each release. Follow how the other back-end modules use this file.
 
-## Structure {#back-end-structure}
+### Structure {#back-end-structure}
 
 This is a typical directory layout, excluding the general boilerplate files and build system files (e.g. `pom.xml` and `target` for Maven-based modules):
 
@@ -65,28 +65,28 @@ This is a typical directory layout, excluding the general boilerplate files and 
 ├── src/
 ```
 
-## Dockerfile {#back-end-dockerfile}
+### Dockerfile {#back-end-dockerfile}
 
 The `Dockerfile`.
 
-## Jenkinsfile {#back-end-jenkinsfile}
+### Jenkinsfile {#back-end-jenkinsfile}
 
 The `Jenkinsfile` declares specific build steps for the continuous integration [process](/guides/automation/#jenkins).
 See [explanation](/guides/jenkinsfile/).
 
-## Descriptors {#back-end-descriptors}
+### Descriptors {#back-end-descriptors}
 
 The `descriptors` directory holds the template Descriptor files. For a Maven-based system, the pom.xml will have tasks to replace tokens with this module's `artifactId` and `version` to generate the descriptors into the `target` directory.
 See example at [mod-notes/pom.xml](https://github.com/folio-org/mod-notes/blob/master/pom.xml) and the 'filter-descriptor-inputs' and 'rename-descriptor-outputs' tasks.
 
 Refer to [Guides ModuleDescriptor](/guides/module-descriptor/).
 
-## Documentation {#back-end-doc}
+### Documentation {#back-end-doc}
 
 The optional `doc` directory holds additional documentation beyond the standard top-level README.md file.
 Usually in Markdown format.
 
-## RAMLs {#back-end-ramls}
+### RAMLs {#back-end-ramls}
 
 The `ramls` directory holds the RAML and Schema and examples files specific to this module.
 Normally there will also be the `ramls/raml-util` shared files as a git submodule of the [raml](https://github.com/folio-org/raml) repository.
@@ -100,7 +100,7 @@ The reference [API documentation](/reference/api/) is generated from these files
 
 See the [Primer for RAML and JSON Schema](/start/primer-raml/).
 
-## API schema {#back-end-api-schema}
+### API schema {#back-end-api-schema}
 
 The `ramls` directory holds the related schema files.
 
@@ -113,7 +113,7 @@ In our schemas, the value of "$ref" in the parent schema is a relative pathname 
 In the RAML files, the "type" is declared as a symbolic name for use elsewhere in the RAML file.
 Its declared value is the path to the schema, relative to that RAML file.
 
-## Database schema {#back-end-database-schema}
+### Database schema {#back-end-database-schema}
 
 For RMB-based modules the DB schema defines this module's tables, indexes, joins, etc.
 It is located at `src/main/resources/templates/db_scripts/schema.json`
@@ -122,7 +122,7 @@ When SQL scripts are necessary, they are also stored in that `db_scripts` direct
 
 See further information in the "[Tenant API](https://github.com/folio-org/raml-module-builder#tenant-api)" section of the RMB README document.
 
-## Reference data {#back-end-reference-data}
+### Reference data {#back-end-reference-data}
 
 The optional `reference-data` directory can hold data required for [sample data](#back-end-sample-data) to refer to.
 For example, if the vendors in your sample data refer to vendor categories by UUID, the vendor categories (with their UUIDs) could be defined in the `reference-data/vendor-categories` directory, in the format expected by the module's relevant endpoint for POSTing the data.
@@ -139,7 +139,7 @@ For example:
 ... proxy/tenants/diku/install ... tenantParameters=loadSample%3Dtrue%2CloadReference%3Dtrue
 ```
 
-## Sample data {#back-end-sample-data}
+### Sample data {#back-end-sample-data}
 
 The `sample-data` directory holds sample data specific for this module.
 It should be in the format expected by the module's relevant endpoint for POSTing the data.
@@ -148,7 +148,7 @@ If the sample data refers to [reference data](#back-end-reference-data), those d
 
 See example data at [mod-inventory-storage](https://github.com/folio-org/mod-inventory-storage).
 
-# Front-end modules
+## Front-end modules
 
 Client-side modules include all those named `stripes-*` and `ui-*`.
 Follow the structure and files of [ui-users](https://github.com/folio-org/ui-users) as an example.
@@ -159,7 +159,7 @@ The [stripes-cli](https://github.com/folio-org/stripes-cli/blob/master/doc/user-
 
 The `CHANGELOG.md` lists the main changes for each release. Follow how the other front-end modules use this file.
 
-## Structure {#front-end-structure}
+### Structure {#front-end-structure}
 
 This is a typical directory layout, excluding the general boilerplate files and the usual JavaScript and CSS files:
 
@@ -187,12 +187,12 @@ This is a typical directory layout, excluding the general boilerplate files and 
         ├── en.json
 ```
 
-## Jenkinsfile {#front-end-jenkinsfile}
+### Jenkinsfile {#front-end-jenkinsfile}
 
 The `Jenkinsfile` declares specific build steps for the continuous integration [process](/guides/automation/#jenkins).
 See [explanation](/guides/jenkinsfile).
 
-## package.json {#front-end-packagejson}
+### package.json {#front-end-packagejson}
 
 See the "[Stripes application metadata bundles](https://github.com/folio-org/stripes-core/blob/master/doc/app-metadata.md)"
 document which explains the specification for standard and extension fields.
@@ -200,20 +200,20 @@ document which explains the specification for standard and extension fields.
 The "Modules" section of the [The Stripes Module Developer's Guide](https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#modules) explains the `stripes` section of the configuration, including the `pluginType`, the `route` to address this module, the `okapiInterfaces` for any back-end module dependencies, and the optional `permissionsets`.
 The [Explain the FOLIO permissions system](/faqs/explain-permissions-system/) FAQ will assist.
 
-## Descriptors {#frontend-end-descriptors}
+### Descriptors {#frontend-end-descriptors}
 
 The Stripes Core will generate the ModuleDescriptor.json for this UI module from its package.json file.
 
-## Data {#front-end-data}
+### Data {#front-end-data}
 
 The optional `data` directory holds data specific to this app.
 
-## Documentation {#front-end-doc}
+### Documentation {#front-end-doc}
 
 The optional `doc` directory holds additional documentation beyond the standard top-level README.md file.
 Usually in Markdown format.
 
-## Icons {#front-end-icons}
+### Icons {#front-end-icons}
 
 The optional `icons` directory holds icon files specific to this app.
 Some icons are provided by Stripes itself.
@@ -221,27 +221,27 @@ Some icons are provided by Stripes itself.
 See the [Icons](https://github.com/folio-org/stripes-core/blob/master/doc/app-metadata.md#icons)
 section of the "Stripes application metadata bundles" document.
 
-## Lib {#front-end-lib}
+### Lib {#front-end-lib}
 
 The optional `lib` directory holds local libraries specific to this app.
 
 Some modules just have all of their code in the top-level directory.
 
-## Settings {#front-end-Settings}
+### Settings {#front-end-Settings}
 
 The `settings` directory holds settings specific to this app.
 
-## Sound {#front-end-Sound}
+### Sound {#front-end-Sound}
 
 The optional `sound` directory holds sound files specific to this app.
 
-## Test {#front-end-test}
+### Test {#front-end-test}
 
 The `test` directory holds the UI testing facilities specific to this app.
 
 Refer to [How to run tests prior to commit](/faqs/how-to-test-prior-to-commit/) for brief explanation and links to testing facilities.
 
-## Translations {#front-end-translations}
+### Translations {#front-end-translations}
 
 The `translations` directory holds the locale data for this app.
 As shown in the example listing, the files are within a sub-directory with the same name as the git repository of this module.

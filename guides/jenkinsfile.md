@@ -6,6 +6,8 @@ menuInclude: no
 menuTopTitle: Guides
 ---
 
+## Introduction
+
 Each project's git repository [structure](/guides/commence-a-module/) has a top-level file called `Jenkinsfile`
 which is utilized by the continuous integration [process](/guides/automation/#jenkins)
 to enable each project to specify certain additional build steps.
@@ -20,7 +22,7 @@ Each parameter can be omitted to accept the default.
 
 The values are: `true` or `false` (or the old syntax `'yes'` or `'no'`).
 
-# Back-end modules
+## Back-end modules
 
 A typical Maven-based, server-side FOLIO module Jenkinsfile configuration might look like
 the following.
@@ -74,7 +76,7 @@ If we are creating and deploying a Docker image as part of the module's artifact
 command is run *inside* the container and typically tests a REST endpoint to determine the
 health of the application running inside the container.
 
-# Front-end modules
+## Front-end modules
 
 A typical Stripes or UI module Jenkinsfile configuration might look like the following.
 See two examples at
@@ -115,7 +117,7 @@ specific to the UI module. Option 'none' will disable regression testing.
 * `stripesPlatform` -- Specify which Stripes platform.
 (Default: 'none', so build in "app" context.)
 
-# Further information
+## Further information
 
 There are other options available to 'buildNPM', 'buildMvn', and 'buildJavaDocker' for certain
 corner cases. Please ask for assistance.
