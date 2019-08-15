@@ -322,7 +322,6 @@ mod-finc-config:
       - finc-tenant
       - fincSelectFiles
       - fincSelectFilters
-      - fincSelectFilterFiles
       - fincConfigMetadataCollections
       - fincConfigMetadataSources
       - fincSelectMetadataCollections
