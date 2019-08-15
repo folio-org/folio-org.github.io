@@ -71,8 +71,8 @@ This document defines the checklists for creating and reviewing various types of
 ## External requests / dependencies checklist
 
 Use this when changes are made to a dependent interface, either when:
-* New features (e.g. new properties) of that interface are used,
-* Requests are added to, or removed from, the implementation of an endpoint,
+* New features (e.g. new properties) of that interface are used;
+* Requests are added to, or removed from, the implementation of an endpoint;
 * Changes are needed for a breaking compatibility change in the interface.
 
 Checklist:
