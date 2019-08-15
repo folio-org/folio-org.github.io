@@ -125,10 +125,31 @@ cleanly and passes all tests. Commit the merge, and push to your branch:
 You may also want to `git rebase` your branch, compressing multiple commits
 into one, and editing the commit messages.
 
-### Requesting a merge
+### git bisect finding a merge commit
 
-Go to the GitHub page, and it shows some recently pushed branches -- your one should
-be there too. Next to it is a button "New pull request". Select that.
+`git bisect` helps to find a commit that has introduced a bug
+([git bisect manual](https://git-scm.com/docs/git-bisect)).
+When bisecting, the commits within a feature branch of a pull request should be
+skipped because it is unknown whether they build successfully.  Ori from Smartly published
+"[Git Bisect Debugging with Feature Branches](https://blog.smart.ly/2015/02/03/git-bisect-debugging-with-feature-branches/)"
+with this code snippet that skips those feature branch commits:
+
+    git bisect start master 75369f4a4c026772242368d870872562a3b693cb
+
+    for rev in $(git rev-list 75369f4a4c026772242368d870872562a3b693cb..master --merges --first-parent); do
+        git rev-list $rev^2 --not $rev^
+    done | xargs git bisect skip
+
+## Requesting a merge
+
+Go to the relevant repository's GitHub page at the "Branches" tab.
+It shows some recently pushed branches -- your one should be there too.
+Ensure that the initial branch does build in the CI before proceeding.
+
+Consider the items in the relevant [Pull requests checklists](/guidelines/pull-requests-checklists/) before proceeding.
+
+When ready, next to your branch is a button "New pull request". Select that.
+Provide a clear title for the PR, including a Jira ticket number, as explained in those checklists.
 
 If you are using a fork, then the process is a little different.
 Start from your fork and select "New pull request", then select your
@@ -138,20 +159,25 @@ It should show that it is _able to merge_, so select the "Create pull
 request" button under the comment box.
 
 If your pull request is instead to seek feedback, then say in the
-description that it is not yet ready to merge. Describe the items for which
-you want assistance.
+description and title that it is not yet ready to merge.
+Describe the items for which you want assistance.
 
-After the pull request is created, assign it to someone else.
-Alternatively leave it for someone to pick up.
+After the pull request is created, add yourself as the first assignee.
+Some repositories have explicit "code owners" which will be automatically invited to review.
+If needed, then invite other specific reviewers.
 
-### Merging pull requests
+TODO: Briefly describe, and link to upcoming "Pull request code review" section.
 
-When someone has assigned a pull request to you, check out the branch, and
+## Merging pull requests
+
+When someone has assigned a pull request to you or requested your review, check out the branch, and
 look at the git log, and the code, and decide whether all is good.
 You can also look at the commit messages and code changes in GitHub.
 
+Consider the items in the relevant [Pull requests checklists](/guidelines/pull-requests-checklists/).
+
 If there are small details, you can fix them yourself, commit and push to the
-branch. Do not copy & paste the content as this loses the commit history that
+branch. Do not copy-and-paste the content as this loses the commit history that
 contains the attribution required by the Apache License and is used for the
 [merge check](https://git-scm.com/book/en/v2/Git-Branching-Branch-Management)
 of the `git branch` command; if needed create a new branch from pull request's branch.
@@ -178,21 +204,6 @@ command line, if you prefer.
 When done, you probably want to delete the local branch from your own machine
 
     git branch -d okapi-xxx
-
-### git bisect finding a merge commit
-
-`git bisect` helps to find a commit that has introduced a bug
-([git bisect manual](https://git-scm.com/docs/git-bisect)).
-When bisecting, the commits within a feature branch of a pull request should be
-skipped because it is unknown whether they build successfully.  Ori from Smartly published
-"[Git Bisect Debugging with Feature Branches](https://blog.smart.ly/2015/02/03/git-bisect-debugging-with-feature-branches/)"
-with this code snippet that skips those feature branch commits:
-
-    git bisect start master 75369f4a4c026772242368d870872562a3b693cb
-
-    for rev in $(git rev-list 75369f4a4c026772242368d870872562a3b693cb..master --merges --first-parent); do
-        git rev-list $rev^2 --not $rev^
-    done | xargs git bisect skip
 
 ## Contributor License Agreement
 
@@ -221,7 +232,7 @@ master, as need be.
 Since (almost) all components have hard separation between interface and implementation,
 we need to keep two kinds of version numbers, one for the API, and one for the implementation code.
 To make matters worse, any FOLIO module may implement several interfaces.
-The Okapi Guide futher describes its handling of [Versioning and Dependencies](https://github.com/folio-org/okapi/blob/master/doc/guide.md#versioning-and-dependencies).
+The Okapi Guide further describes its handling of [Versioning and Dependencies](https://github.com/folio-org/okapi/blob/master/doc/guide.md#versioning-and-dependencies).
 
 ### API/interface versions
 
