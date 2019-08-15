@@ -127,8 +127,14 @@ into one, and editing the commit messages.
 
 ### Requesting a merge
 
-Go to the GitHub page, and it shows some recently pushed branches -- your one should
-be there too. Next to it is a button "New pull request". Select that.
+Go to the relevant repository's GitHub page at the "Branches" tab.
+It shows some recently pushed branches -- your one should be there too.
+Ensure that the initial branch does build in the CI before proceeding.
+
+Consider the items in the relevant [Pull requests checklists](/guidelines/pull-requests-checklists/) before proceeding.
+
+When ready, next to your branch is a button "New pull request". Select that.
+Provide a clear title for the PR, including a Jira ticket number, as explained in those checklists.
 
 If you are using a fork, then the process is a little different.
 Start from your fork and select "New pull request", then select your
@@ -138,20 +144,25 @@ It should show that it is _able to merge_, so select the "Create pull
 request" button under the comment box.
 
 If your pull request is instead to seek feedback, then say in the
-description that it is not yet ready to merge. Describe the items for which
-you want assistance.
+description and title that it is not yet ready to merge.
+Describe the items for which you want assistance.
 
-After the pull request is created, assign it to someone else.
-Alternatively leave it for someone to pick up.
+After the pull request is created, add yourself as the first assignee.
+Some repositories have explicit "code owners" which will be automatically invited to review.
+If needed, then invite other specific reviewers.
+
+TODO: Briefly describe, and link to upcoming "Pull request code review" section.
 
 ### Merging pull requests
 
-When someone has assigned a pull request to you, check out the branch, and
+When someone has assigned a pull request to you or requested your review, check out the branch, and
 look at the git log, and the code, and decide whether all is good.
 You can also look at the commit messages and code changes in GitHub.
 
+Consider the items in the relevant [Pull requests checklists](/guidelines/pull-requests-checklists/).
+
 If there are small details, you can fix them yourself, commit and push to the
-branch. Do not copy & paste the content as this loses the commit history that
+branch. Do not copy-and-paste the content as this loses the commit history that
 contains the attribution required by the Apache License and is used for the
 [merge check](https://git-scm.com/book/en/v2/Git-Branching-Branch-Management)
 of the `git branch` command; if needed create a new branch from pull request's branch.
@@ -221,7 +232,7 @@ master, as need be.
 Since (almost) all components have hard separation between interface and implementation,
 we need to keep two kinds of version numbers, one for the API, and one for the implementation code.
 To make matters worse, any FOLIO module may implement several interfaces.
-The Okapi Guide futher describes its handling of [Versioning and Dependencies](https://github.com/folio-org/okapi/blob/master/doc/guide.md#versioning-and-dependencies).
+The Okapi Guide further describes its handling of [Versioning and Dependencies](https://github.com/folio-org/okapi/blob/master/doc/guide.md#versioning-and-dependencies).
 
 ### API/interface versions
 
