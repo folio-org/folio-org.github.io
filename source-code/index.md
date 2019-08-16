@@ -206,6 +206,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-template-engine](https://github.com/folio-org/mod-template-engine)
   -- Stores templates and generates files by using them.
 
+- [mod-custom-fields](https://github.com/folio-org/mod-custom-fields)
+  -- Store and maintain custom fields.
+
 - [mod-data-import](https://github.com/folio-org/mod-data-import)
   -- Data import.
 
