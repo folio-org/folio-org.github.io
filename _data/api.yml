@@ -597,6 +597,14 @@ edge-rtac:
     ramlutil: null
     rmb: false
 
+mod-custom-fields:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - custom-fields
+    ramlutil: ramls/raml-util
+
 mod-audit:
   - label: null
     version1: true
