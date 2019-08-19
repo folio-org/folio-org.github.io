@@ -32,6 +32,7 @@ See other orientation [guides](/guides/#background-orientation).
 
 - [Guidelines for Contributing Code](contributing/).
 - [Naming conventions](naming-conventions/).
+- [Development, design, and review processes](development-design-review/).
 - [Pull requests checklists](pull-requests-checklists/).
 
 ## Development management

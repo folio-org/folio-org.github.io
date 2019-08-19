@@ -146,7 +146,8 @@ Go to the relevant repository's GitHub page at the "Branches" tab.
 It shows some recently pushed branches -- your one should be there too.
 Ensure that the initial branch does build in the CI before proceeding.
 
-Consider the items in the relevant [Pull requests checklists](/guidelines/pull-requests-checklists/) before proceeding.
+Consider the items in the relevant [Pull requests checklists](/guidelines/pull-requests-checklists/) before proceeding,
+and refer to the [Development, design, and review processes](/guidelines/development-design-review/).
 
 When ready, next to your branch is a button "New pull request". Select that.
 Provide a clear title for the PR, including a Jira ticket number, as explained in those checklists.
@@ -165,8 +166,6 @@ Describe the items for which you want assistance.
 After the pull request is created, add yourself as the first assignee.
 Some repositories have explicit "code owners" which will be automatically invited to review.
 If needed, then invite other specific reviewers.
-
-TODO: Briefly describe, and link to upcoming "Pull request code review" section.
 
 ## Merging pull requests
 

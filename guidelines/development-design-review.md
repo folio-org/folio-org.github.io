@@ -14,7 +14,7 @@ This section explains the general development, technical design, and review proc
 * [Development roles](#development-roles)
 * [Development process](#development-process)
 
-Separate documents pertain to:
+Other separate documents pertain to:
 * [Pull requests checklists](/guidelines/pull-requests-checklists/)
 * [Release procedures](/guidelines/release-procedures/)
 
@@ -122,7 +122,7 @@ Examples of when to do this:
 ### Pull request code review
 
 * Developer submits a pull request for the module
-  * Developers should check the change against the criteria in any checklist or definition of done defined for the module
+  * Developers should first verify the changes against the criteria in any [checklist](/guidelines/pull-requests-checklists/) and [definition of done](/reference/glossary/#dod) defined for the module
   * Issue is marked in code review
   * Pull request maintainer is added as first assignee
 * Code owners are automatically invited to review
