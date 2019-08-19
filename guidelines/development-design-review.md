@@ -37,7 +37,7 @@ In order to scale the design and code review process, FOLIO has established the 
 
 ### Technical Lead (TL)
 
-Teams should have at least one technical lead who is responsible for guiding the technical work conducted within that team. Some teams have specialist leads for back end and front end work.
+Teams should have at least one technical lead who is responsible for guiding the technical work conducted within that team. Some teams have specialist leads for back-end and front-end work.
 
 They are the first point of contact for technical design questions or for identification of debt or architecturally significant decisions.
 
@@ -45,13 +45,13 @@ Technical leads are likely members of the code owners for multiple modules, in o
 
 Technical leads are also members of the technical design owners.
 
-They may also be a lead maintainers for some modules.
+They may also be a lead maintainer for some modules.
 
 ### Code Owner (CO)
 
 Code owners are collectively responsible for technical aspects of a specific area of the project, for example, a module or shared library.
 
-Code owners are expected to review pull requests as part of their day to day work on FOLIO.
+Code owners are expected to review pull requests as part of their day-to-day work on FOLIO.
 
 Code owners are made up of technical leads and senior developers from multiple teams, including frequent contributors to an area.
 
@@ -63,9 +63,9 @@ The technical design owners are responsible for guiding consistent technical dec
 
 The group is responsible for ensuring design consistency and raising concern about technical debt or architecturally significant decisions with the Technical Council. This includes reviewing technical proposals for new features at the design stage.
 
-This group consists of technical leads, selected senior developers and architects, and will meet periodically.
+This group consists of technical leads, selected senior developers and architects. It will meet periodically.
 
-#### Outstanding Decisions
+#### Outstanding decisions
 
 * How often should this group meet?
 * How to decide on topics for the agenda?
@@ -73,7 +73,7 @@ This group consists of technical leads, selected senior developers and architect
 
 ### Technical Council (TC)
 
-The technical council is responsible for providing technical oversight across the whole of FOLIO.
+The Technical Council is responsible for providing technical oversight across the whole of FOLIO.
 
 They are responsible for FOLIO Architectural Blueprint and the RFC process.
 
@@ -91,13 +91,13 @@ They are responsible for FOLIO Architectural Blueprint and the RFC process.
 
 ### Refinement
 
-During refinement a team works with the relevant product owners to gain an understanding of upcoming work and split it up the work into estimated UI and backend issues.
+During refinement a team works with the relevant Product Owners to gain an understanding of upcoming work and split up the work into estimated UI and backend issues.
 
 This process should involve some discussion around design and technical issues. Where possible these should be documented on the issue and followed up by the technical lead.
 
 ### Sprint planning
 
-The team works with the relevant product owners to decide on the work that will be attempted during the next sprint.
+The team works with the relevant Product Owners to decide on the work that will be attempted during the next sprint.
 
 The selected work should reflect what the team believes is possible within the sprint, including routine activities that team members are responsible for.
 
@@ -111,7 +111,7 @@ If there are unresolved questions from refinement, these should be addressed as 
 
 #### Questions during development
 
-The developer assigned to the work should endeavour to raise any questions they have about the work, with the relevant product owner or technical lead, as soon as possible.
+The developer assigned to the work should endeavour to raise any questions that they have about the work, with the relevant product owner or technical lead, as soon as possible.
 
 Examples of when to do this:
 * The desired behaviour seems unclear, contradictory, or inconsistent with existing behaviour
@@ -123,7 +123,7 @@ Examples of when to do this:
 
 * Developer submits a pull request for the module
   * Developers should first verify the changes against the criteria in any [checklist](/guidelines/pull-requests-checklists/) and [definition of done](/reference/glossary/#dod) defined for the module
-  * Issue is marked in code review
+  * Issue is marked as "In code review"
   * Pull request maintainer is added as first assignee
 * Code owners are automatically invited to review
 * Additional specific reviewers should be invited
@@ -136,10 +136,10 @@ Examples of when to do this:
   * This may trigger an additional round of reviews, if the changes for a merge are significant, at the discretion of the code owners
 * Pull request is merged
 * A fix version is assigned to the JIRA issue
-* Issue is closed or marked for review by a product owner or tester
+* Issue is closed or marked for review by a Product Owner or tester
   * Backend issues that are not testable via the UI are typically closed
-  * Other issues should typically be marked in review
-* Developer checks if the master build is successful
+  * Other issues should typically be marked as "In review"
+* Developer ensures that the master build is successful
 
 #### Service Level Agreement
 
@@ -151,13 +151,13 @@ Pull requests should have an initial review within 48 hours (this is an initial 
 
 The group will then try to identify an initial reviewer.
 
-#### Outstanding Decisions
+#### Outstanding decisions
 
 * Can the stale review dismissal feature be used for when significant changes happen after a review?
 * Can the required reviews feature be used to control the minimum number of reviews required to allow a merge (to a protected master branch)?
 * How do we notify developers of a pull request about a broken build?
 * Should updating a branch to be mergeable be done via merging or rebasing and forcing an update?
-* What universal criteria should apply to all pull requests (e.g. summary information, code coverage etc)
+* What universal criteria should apply to all pull requests (e.g. summary information, code coverage etc.)
 * Additional guidance around related areas, e.g. the contents of pull requests
 * What is the expected time frame for reviews to be performed?
 * Who performs the review when there are multiple reviewers available? Of course, the more eyes on code the better, but if two reviewers are reviewing the same PR, unbeknownst to each other, while another PR is waiting, that might not be a good thing. Should we "assign" ourselves to the PR to indicate we are reviewing?
@@ -170,23 +170,23 @@ Some changes involve design decisions, for example, introducing a new API or sig
 
 In order to make FOLIO APIs and modules as consistent as possible, some of these decisions may benefit from input across teams, from the technical design owners.
 
-#### Outstanding Decisions
+#### Outstanding decisions
 
 * Criteria for raising design decisions to the technical design owners
 * Process for raising and reviewing these decisions
-* Criteria for informing the technical council
+* Criteria for informing the Technical Council
 
 ### Technical debt
 
-The Technical Council maintains a list of technical debt within FOLIO. As part of conducting development, a developer or reviewer might identify debt to be addressed in future.
+The Technical Council maintains a list of technical debt within FOLIO. As part of conducting development, a developer or reviewer might identify debt to be addressed in the future.
 
 This debt might already exist or the change might be introducing it.
 
-#### Outstanding Decisions
+#### Outstanding decisions
 
 * Guidance for what could be debt
 * Should this decision be made via the technical design owners?
-* Process for informing the technical council of debt
+* Process for informing the Technical Council of debt
 
 ### Architectural impact
 
@@ -195,5 +195,5 @@ Some design decisions might have an architectural impact. This might mean that t
 #### Outstanding decisions
 
 * Guidance for what decisions are considered architectural
-* Process for informing the technical council e.g. raising an RFC
+* Process for informing the Technical Council, e.g. raising an RFC
 
