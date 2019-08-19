@@ -135,6 +135,10 @@ The Stripes Toolkit is written in
 [ES6](http://es6-features.org/),
 a modern variant that introduces several new facilities.
 
+#### EKS
+
+Amazon Elastic Kubernetes Service ([Amazon EKS](https://aws.amazon.com/eks/)).
+
 #### ERM
 
 Electronic resource management ([ERM](https://en.wikipedia.org/wiki/Electronic_resource_management)).
