@@ -69,11 +69,11 @@ This group consists of technical leads, selected senior developers and architect
 
 * How often should this group meet?
 * How to decide on topics for the agenda?
-* How should front end and back end audiences be managed?
+* How should front-end and back-end audiences be managed?
 
 ### Technical Council (TC)
 
-The Technical Council is responsible for providing technical oversight across the whole of FOLIO.
+The [Technical Council](/reference/glossary/#tc) is responsible for providing technical oversight across the whole of FOLIO.
 
 They are responsible for FOLIO Architectural Blueprint and the RFC process.
 
@@ -91,7 +91,7 @@ They are responsible for FOLIO Architectural Blueprint and the RFC process.
 
 ### Refinement
 
-During refinement a team works with the relevant Product Owners to gain an understanding of upcoming work and split up the work into estimated UI and backend issues.
+During refinement a team works with the relevant Product Owners ([PO](/reference/glossary/#po)) to gain an understanding of upcoming work and split up the work into estimated UI and backend issues.
 
 This process should involve some discussion around design and technical issues. Where possible these should be documented on the issue and followed up by the technical lead.
 
@@ -147,7 +147,7 @@ It is important that pull requests are reviewed in a timely manner in order to n
 
 Pull requests should have an initial review within 48 hours (this is an initial threshold to experiment). If no reviewer has allocated themselves within that time, the maintainer should:
 * Comment on the pull request, including the code owners team
-* Raise the topic on the #pull-requests channel on Slack
+* Raise the topic on the #pull-requests channel on [Slack](/guidelines/which-forum/#slack)
 
 The group will then try to identify an initial reviewer.
 
