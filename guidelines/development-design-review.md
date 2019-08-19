@@ -37,25 +37,25 @@ In order to scale the design and code review process, FOLIO has established the 
 
 ### Technical Lead (TL)
 
-Teams should have at least one technical lead who is responsible for guiding the technical work conducted within that team. Some teams have specialist leads for back-end and front-end work.
+Teams should have at least one Technical Lead who is responsible for guiding the technical work conducted within that team. Some teams have specialist leads for back-end and front-end work.
 
 They are the first point of contact for technical design questions or for identification of debt or architecturally significant decisions.
 
-Technical leads are likely members of the code owners for multiple modules, in order to help with reviews and expedite urgent changes.
+Technical leads are likely members of the Code Owners for multiple modules, in order to help with reviews and expedite urgent changes.
 
-Technical leads are also members of the technical design owners.
+Technical leads are also members of the Technical Design Owners.
 
-They may also be a lead maintainer for some modules.
+They may also be a Lead Maintainer for some modules.
 
 ### Code Owner (CO)
 
-Code owners are collectively responsible for technical aspects of a specific area of the project, for example, a module or shared library.
+Code Owners are collectively responsible for technical aspects of a specific area of the project, for example, a module or shared library.
 
-Code owners are expected to review pull requests as part of their day-to-day work on FOLIO.
+Code Owners are expected to review pull requests as part of their day-to-day work on FOLIO.
 
-Code owners are made up of technical leads and senior developers from multiple teams, including frequent contributors to an area.
+Code Owners are made up of Technical Leads and senior developers from multiple teams, including frequent contributors to an area.
 
-Code owners are defined by a CODEOWNERS file in the GitHub repository for that area.
+Code Owners are defined by a CODEOWNERS file in the GitHub repository for that area.
 
 ### Lead Maintainer (LM)
 
@@ -66,11 +66,11 @@ The Lead Maintainer should also be a Code Owner for the repository.
 
 ### Technical Design Owners (TDO)
 
-The technical design owners are responsible for guiding consistent technical decisions across areas of the system.
+The Technical Design Owners are responsible for guiding consistent technical decisions across areas of the system.
 
 The group is responsible for ensuring design consistency and raising concern about technical debt or architecturally significant decisions with the Technical Council. This includes reviewing technical proposals for new features at the design stage.
 
-This group consists of technical leads, selected senior developers and architects. It will meet periodically.
+This group consists of Technical Leads, selected senior developers and architects. It will meet periodically.
 
 #### Outstanding decisions
 
@@ -100,7 +100,7 @@ They are responsible for FOLIO Architectural Blueprint and the RFC process.
 
 During refinement a team works with the relevant Product Owners ([PO](/reference/glossary/#po)) to gain an understanding of upcoming work and split up the work into estimated UI and backend issues.
 
-This process should involve some discussion around design and technical issues. Where possible these should be documented on the issue and followed up by the technical lead.
+This process should involve some discussion around design and technical issues. Where possible these should be documented on the issue and followed up by the Technical Lead.
 
 ### Sprint planning
 
@@ -118,7 +118,7 @@ If there are unresolved questions from refinement, these should be addressed as 
 
 #### Questions during development
 
-The developer assigned to the work should endeavour to raise any questions that they have about the work, with the relevant product owner or technical lead, as soon as possible.
+The developer assigned to the work should endeavour to raise any questions that they have about the work, with the relevant Product Owner or Technical Lead, as soon as possible.
 
 Examples of when to do this:
 * The desired behaviour seems unclear, contradictory, or inconsistent with existing behaviour
@@ -132,15 +132,15 @@ Examples of when to do this:
   * Developers should first verify the changes against the criteria in any [checklist](/guidelines/pull-requests-checklists/) and [definition of done](/reference/glossary/#dod) defined for the module
   * Issue is marked as "In code review"
   * Pull request maintainer is added as first assignee
-* Code owners are automatically invited to review
+* Code Owners are automatically invited to review
 * Additional specific reviewers should be invited
-* Reviewers (code owners and anyone else invited to review the change) provide feedback on the pull request
+* Reviewers (Code Owners and anyone else invited to review the change) provide feedback on the pull request
   * Reviewer should add themselves as a subsequent assignee when they start reviewing, to indicate their intention to conduct a review
 * Pull request maintainer collaborates with reviewers to address feedback
   * When feedback is addressed, comments should be resolved
-* At least one approval (from a code owner) is needed for authority to merge the pull request (teams may choose to require more)
+* At least one approval (from a Code Owner) is needed for authority to merge the pull request (teams may choose to require more)
 * Branch is updated with any changes from master
-  * This may trigger an additional round of reviews, if the changes for a merge are significant, at the discretion of the code owners
+  * This may trigger an additional round of reviews, if the changes for a merge are significant, at the discretion of the Code Owners
 * Pull request is merged
 * A fix version is assigned to the JIRA issue
 * Issue is closed or marked for review by a Product Owner or tester
@@ -153,7 +153,7 @@ Examples of when to do this:
 It is important that pull requests are reviewed in a timely manner in order to not hold up development work.
 
 Pull requests should have an initial review within 48 hours (this is an initial threshold to experiment). If no reviewer has allocated themselves within that time, the maintainer should:
-* Comment on the pull request, including the code owners team
+* Comment on the pull request, including the Code Owners team
 * Raise the topic on the #pull-requests channel on [Slack](/guidelines/which-forum/#slack)
 
 The group will then try to identify an initial reviewer.
@@ -175,11 +175,11 @@ The group will then try to identify an initial reviewer.
 
 Some changes involve design decisions, for example, introducing a new API or significant changes to internal structure.
 
-In order to make FOLIO APIs and modules as consistent as possible, some of these decisions may benefit from input across teams, from the technical design owners.
+In order to make FOLIO APIs and modules as consistent as possible, some of these decisions may benefit from input across teams, from the Technical Design Owners.
 
 #### Outstanding decisions
 
-* Criteria for raising design decisions to the technical design owners
+* Criteria for raising design decisions to the Technical Design Owners
 * Process for raising and reviewing these decisions
 * Criteria for informing the Technical Council
 
@@ -192,7 +192,7 @@ This debt might already exist or the change might be introducing it.
 #### Outstanding decisions
 
 * Guidance for what could be debt
-* Should this decision be made via the technical design owners?
+* Should this decision be made via the Technical Design Owners?
 * Process for informing the Technical Council of debt
 
 ### Architectural impact
