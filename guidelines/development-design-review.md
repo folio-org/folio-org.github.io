@@ -57,6 +57,13 @@ Code owners are made up of technical leads and senior developers from multiple t
 
 Code owners are defined by a CODEOWNERS file in the GitHub repository for that area.
 
+### Lead Maintainer (LM)
+
+Each GitHub repository should be assigned a Lead Maintainer.
+They are responsible for executing the [release procedures](/guidelines/release-procedures/) for that area.
+
+The Lead Maintainer should also be a Code Owner for the repository.
+
 ### Technical Design Owners (TDO)
 
 The technical design owners are responsible for guiding consistent technical decisions across areas of the system.
