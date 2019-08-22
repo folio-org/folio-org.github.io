@@ -96,6 +96,10 @@ and active=="true" sortby personal.lastName personal.firstName barcode
 
 For other relevant CQL examples see the first two items above, and the [API docs](/reference/api/), and the debug output for tests in each backend module.
 
+#### CO
+
+[Code Owner](/guidelines/development-design-review/#code-owner-co).
+
 #### CRUD
 
 The basic functions of persistent storage: Create, Read, Update, Delete ([CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)).
@@ -130,6 +134,10 @@ is the formally standardised version of JavaScript.
 The Stripes Toolkit is written in
 [ES6](http://es6-features.org/),
 a modern variant that introduces several new facilities.
+
+#### EKS
+
+Amazon Elastic Kubernetes Service ([Amazon EKS](https://aws.amazon.com/eks/)).
 
 #### ERM
 
@@ -167,6 +175,10 @@ Vocabularies that [define](/start/primer-raml/) the format of JSON instances.
 [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token)
 is a JSON-based open standard for creating tokens that assert some number
 of claims. JWTs are authenticated and encrypted, and used by Okapi.
+
+#### LM
+
+[Lead Maintainer](/guidelines/development-design-review/#lead-maintainer-lm).
 
 #### LSP
 
@@ -312,6 +324,14 @@ See [Stripes](#stripes) and the various [Stripes entities](#stripes-entities) ex
 
 The [FOLIO Technical Council](https://wiki.folio.org/display/TC/)
 and its [Charter](https://wiki.folio.org/display/TC/Tech+Council+Charter).
+
+#### TDO
+
+[Technical Design Owners](/guidelines/development-design-review/#technical-design-owners-tdo).
+
+#### TL
+
+[Technical Lead](/guidelines/development-design-review/#technical-lead-tl).
 
 #### UUID
 

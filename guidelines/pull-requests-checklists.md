@@ -10,6 +10,8 @@ menuTopTitle: Guidelines
 
 This document defines the checklists for creating and reviewing various types of pull-request (PR).
 
+Also refer to [Development, design, and review processes](/guidelines/development-design-review/).
+
 ## Backend pull request checklist
 
 * Do the changes meet the intended purpose described in the feature or story?

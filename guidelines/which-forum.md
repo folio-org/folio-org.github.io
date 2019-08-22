@@ -182,6 +182,7 @@ We follow a variation of the Apache motto:
   - `#general` -- Community-wide general stuff. Use other channels for development topics.
   - `#development` -- The main development area.
   - `#releases` -- Discussion of quarterly release preparation, and announcement of regular module releases.
+  - `#pull-requests` -- A place to request reviews on pull requests.
   - `#hosted-reference-envs` -- Issues with the [reference environments](/guides/automation/#software-build-pipeline) automated builds.
   - `#raml-module-builder` -- Specific discussion for RMB development.
   - `#stripes` -- Specific discussion for front-end development.
