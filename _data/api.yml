@@ -569,6 +569,16 @@ mod-source-record-manager:
       - raml-storage
     ramlutil: ramls/raml-storage/raml-util
 
+mod-courses:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - courses
+      - roles
+      - schedules
+    ramlutil: ramls/raml-util
+
 mod-marccat:
   - label: null
     version1: true

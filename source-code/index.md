@@ -166,6 +166,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-codex-inventory](https://github.com/folio-org/mod-codex-inventory)
   -- Codex wrapper for local inventory.
 
+- [mod-courses](https://github.com/folio-org/mod-courses)
+  -- CRUD storage module to support the Course Reserves functionality.
+
 - [mod-marccat](https://github.com/folio-org/mod-marccat)
   -- Metadata management and cataloging (MARCcat).
 
@@ -375,6 +378,9 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-data-import](https://github.com/folio-org/ui-data-import)
   -- Stripes UI module: Managing batch data loader.
+
+- [ui-courses](https://github.com/folio-org/ui-courses)
+  -- Stripes UI module: Course reserves.
 
 - [ui-marccat](https://github.com/folio-org/ui-marccat)
   -- Stripes UI module: searching, sorting, filtering, viewing, editing and creating BIB record.
