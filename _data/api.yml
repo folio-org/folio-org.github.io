@@ -575,8 +575,6 @@ mod-courses:
     directory: ramls
     files:
       - courses
-      - roles
-      - schedules
     ramlutil: ramls/raml-util
 
 mod-marccat:
