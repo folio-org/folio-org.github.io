@@ -576,17 +576,24 @@ $menubar-subsubitem-font-widest:					$menubar-subitem-font-widest;
 $menubar-item-color-narrow:							$theme-color;
 $menubar-item-color-medium:							$theme-color;
 $menubar-item-color-widest:							$theme-color;
-$menubar-item-hover-color-narrow:					black;
-$menubar-item-hover-color-medium:					black;
-$menubar-item-hover-color-widest:					black;
+$menubar-item-color-hover-narrow:					black;
+$menubar-item-color-hover-medium:					black;
+$menubar-item-color-hover-widest:					black;
+$menubar-item-color-selected-narrow:				$theme-color;
+$menubar-item-color-selected-medium:				$theme-color;
+$menubar-item-color-selected-widest:				$theme-color;
 $menubar-subitem-color-medium:						$theme-color;
 $menubar-subitem-color-widest:						$theme-color;
-$menubar-subitem-hover-color-medium:				black;
-$menubar-subitem-hover-color-widest:				black;
+$menubar-subitem-color-hover-medium:				black;
+$menubar-subitem-color-hover-widest:				black;
+$menubar-subitem-color-selected-medium:				$theme-color;
+$menubar-subitem-color-selected-widest:				$theme-color;
 $menubar-subsubitem-color-medium:					$menubar-subitem-color-medium;
 $menubar-subsubitem-color-widest:					$menubar-subitem-color-widest;
-$menubar-subsubitem-hover-color-medium:				$menubar-subitem-hover-color-medium;
-$menubar-subsubitem-hover-color-widest:				$menubar-subitem-hover-color-widest;
+$menubar-subsubitem-color-hover-medium:				$menubar-subitem-color-hover-medium;
+$menubar-subsubitem-color-hover-widest:				$menubar-subitem-color-hover-widest;
+$menubar-subsubitem-color-selected-medium:			$menubar-subitem-color-selected-medium;
+$menubar-subsubitem-color-selected-widest:			$menubar-subitem-color-selected-widest;
 
 // The background & hover background & active-page background to be used for an entry
 // The selected background is used when an item is visible and the page that is linked to is visible.
@@ -754,7 +761,7 @@ $menubar-subsubitem-separator-line-color-narrow:	$menubar-background-narrow;
 // Before the items and item separators are loaded into the menubar, a menubar icon can be loaded.
 // The file _included/menubar-icon.html can be used for complex icons, or the icon can be assigned here.
 // The menubar icon can also be used to provide some padding before the home item in the menubar.
-// Note that the menubar icon is not shown in the narrow layout.
+// Note that the menubar icon is not shown in the narrow layout. 
 //
 // The icon (image)
 // CSS property: content
@@ -836,7 +843,7 @@ $column-separator-display:				true;
 // Set the space between the top of the separator and the menubar-bottom-separator.
 // The background for the separator is the background of the column panel.
 // CSS property: margin-top
-//
+// 
 $column-separator-top-spacing:			$vspacing-unit;
 
 // Set the space between the bottom of the separator and the footer separator.
@@ -992,7 +999,7 @@ $vmenu-subitem-disclosure-symbol-open:					'\021E9';
 
 // The width of the disclosure symbol.
 // CSS property: width
-//
+// 
 $vmenu-subitem-disclosure-area-width-medium:			1.2em;
 $vmenu-subitem-disclosure-area-width-widest:			1.2em;
 
