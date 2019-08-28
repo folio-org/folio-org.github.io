@@ -20,15 +20,9 @@ Then do:
 bundle install --path vendor/bundle
 ```
 
-```
-bundle exec jekyll serve --port 5000
-```
-
-```
-bundle exec jekyll build
-```
-
-Occasionally do `bundle update` to advance the versions of dependencies.
+Occasionally a site maintainer will have updated dependencies,
+and there will be changes to the `Gemfile.lock` file.
+Do `bundle install` again.
 
 ## Docker
 
@@ -38,6 +32,23 @@ docker-compose up
 ```
 to use the [Jekyll Docker image](https://github.com/envygeeks/jekyll-docker).
 
+## Local development
+
+To view and edit documents on your local machine, run the local Jekyll server:
+
+```
+bundle exec jekyll serve --port 5000
+```
+
+Then visit `localhost:5000` with the browser, and proceed to the page of interest.
+
+Edit the relevant Markdown source document, and save it.
+The server will automatically re-generate that particular page.
+Now refresh the web browser to view its changes.
+
+When finally ready with your set of changes, commit and push the branch to GitHub.
+See [deployment](#deployment) notes below.
+
 ## Link checker
 
 To verify internal and external links, do:
@@ -45,6 +56,8 @@ To verify internal and external links, do:
 ```
 ./bin/htmlproofer.sh
 ```
+
+This will re-generate the whole site, then report any broken links.
 
 ## Work area - management of dev site
 

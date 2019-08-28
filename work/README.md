@@ -2,6 +2,7 @@
 
 Some notes to assist with management of the dev.folio.org site.
 
+* [Maintenance of dependencies](maintain-dependencies.md)
 * [Maintenance of theme](maintain-theme.md)
 * [Maintenance of search facilities](maintain-search.md)
 * The site is built and deployed on every push to master or a branch.
