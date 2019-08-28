@@ -20,7 +20,9 @@ Then do:
 bundle install --path vendor/bundle
 ```
 
-Occasionally do `bundle update` to advance the versions of dependencies.
+Occasionally a site maintainer will have updated dependencies,
+and there will be changes to the `Gemfile.lock` file.
+Do `bundle install` again.
 
 ## Docker
 
@@ -41,7 +43,7 @@ bundle exec jekyll serve --port 5000
 Then visit `localhost:5000` with the browser, and proceed to the page of interest.
 
 Edit the relevant Markdown source document, and save it.
-The server will regenerate that particular page.
+The server will automatically re-generate that particular page.
 Now refresh the web browser to view its changes.
 
 When finally ready with your set of changes, commit and push the branch to GitHub.
