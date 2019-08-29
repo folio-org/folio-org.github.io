@@ -477,6 +477,7 @@ mod-email:
     directory: ramls
     files:
       - email
+      - delayedTasks
     ramlutil: ramls/raml-util
 
 mod-event-config:
