@@ -148,17 +148,17 @@ git checkout master
 git pull
 cd ../..
 git add ramls/raml-util
-mvn clean install
+  now do RAML validation
+  and run maven
 git commit ...
 ```
 
-Now when people update their local checkout, then some git clients do not automatically update the submodules. If that is the case for your client, then follow with 'git submodule update'.
-If needed, then that could be automated with [githooks](https://git-scm.com/docs/githooks).
-
-For Maven-based modules, add to your POM file (copy the 'git submodule update' from mod-notes) to assist all git clients to update.
-
 Note that when locally testing an upgrade of a git submodule, then do '`git add ramls/raml-util`' before running 'mvn'.
 Otherwise it will helpfully restore the referenced git pointer.
+
+Now when people update their local checkout, then some git clients do not automatically update the submodules. If that is the case for your client, then follow with 'git submodule update'.
+
+For Maven-based modules, add to your POM file (copy the 'git submodule update' from mod-notes) to assist all git clients to update.
 
 ## Troubleshooting
 
