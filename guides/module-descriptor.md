@@ -86,3 +86,34 @@ Note that these installations have a small amount of data and low activity load.
 
 * `databaseConnection` -- Whether this module utilises a database.
 
+## LaunchDescriptor properties
+
+### Introduction {#ld-introduction}
+
+The LaunchDescriptor is introduced in the Okapi Guide
+(e.g. at sections [Deployment and Discovery](https://github.com/folio-org/okapi/blob/master/doc/guide.md#deployment-and-discovery)
+and [Deployment](https://github.com/folio-org/okapi/blob/master/doc/guide.md#deployment)
+and [Auto-deployment](https://github.com/folio-org/okapi/blob/master/doc/guide.md#auto-deployment)).
+
+The LD adheres to the [LaunchDescriptor.json](https://github.com/folio-org/okapi/blob/master/okapi-core/src/main/raml/LaunchDescriptor.json) schema.
+
+As explained in the Okapi Guide, the LaunchDescriptor can be a separate descriptor, or be part of the ModuleDescriptor.
+The LaunchDescriptor can utilise various methods for [deployment](https://github.com/folio-org/okapi/blob/master/doc/guide.md#deployment).
+
+For the suite of [back-end modules](/source-code/#server-side) that are hosted at folio-org, each one has a LaunchDescriptor for Docker, and the LD is included in the module's ModuleDescriptor file.
+This enables ready default deployment.
+
+The properties correlate with that used by [folio-ansible](https://github.com/folio-org/folio-ansible/tree/master/group_vars) for the FOLIO [reference environments](/guides/automation/#reference-environments).
+Note that these installations have a small amount of data and low activity load.
+
+### General LD properties
+
+Each main property is briefly described in the
+[LaunchDescriptor.json](https://github.com/folio-org/okapi/blob/master/okapi-core/src/main/raml/LaunchDescriptor.json) schema.
+
+The following sub-sections explain some properties in more detail ...
+
+```
+TODO: Provide brief explanations of some sections.
+```
+
