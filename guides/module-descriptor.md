@@ -56,11 +56,24 @@ z-schema --pedanticCheck \
 
 As part of the continuous integration process, each ModuleDescriptor.json is published to the FOLIO Registry at `https://folio-registry.aws.indexdata.com/`
 
-## MD properties
+## ModuleDescriptor properties
+
+### Introduction {#md-introduction}
+
+Refer to the general [introduction](#introduction) above.
+
+### General MD properties
+
+Each main property is briefly described in the
+[ModuleDescriptor.json](https://github.com/folio-org/okapi/blob/master/okapi-core/src/main/raml/ModuleDescriptor.json) schema.
+
+The following sub-sections explain some properties in more detail ...
 
 ```
-TODO: Provide brief explanations of each main section.
+TODO: Provide brief explanations of some sections.
 ```
+
+### metadata
 
 The "metadata" section provides some additional items.
 These are used to assist the generation of a documentation snippet for Docker Hub,
@@ -68,7 +81,7 @@ and to configure folio-ansible.
 Currently only two items:
 
 * `containerMemory` -- A hint about the minimum amount of memory required to run this module.
-The values correlate with that used by [folio-ansible](https://github.com/folio-org/folio-ansible/tree/master/group_vars) for the [reference environments](/guides/automation/#reference-environments).
+The values correlate with that used by [folio-ansible](https://github.com/folio-org/folio-ansible/tree/master/group_vars) for the FOLIO [reference environments](/guides/automation/#reference-environments).
 Note that these installations have a small amount of data and low activity load.
 
 * `databaseConnection` -- Whether this module utilises a database.
