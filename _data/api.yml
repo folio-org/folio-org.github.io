@@ -311,6 +311,7 @@ mod-erm-usage-harvester:
     directory: ramls
     files:
       - harvester
+      - periodic
       - start
     ramlutil: ramls/raml-util
 
