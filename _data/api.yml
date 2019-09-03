@@ -354,10 +354,10 @@ mod-finance-storage:
     directory: ramls
     files:
       - budget
-      - encumbrance
       - fiscal_year
       - fund
       - fund_distribution
+      - group
       - ledger
       - transaction
     ramlutil: ramls/raml-util
