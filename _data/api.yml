@@ -311,6 +311,7 @@ mod-erm-usage-harvester:
     directory: ramls
     files:
       - harvester
+      - periodic
       - start
     ramlutil: ramls/raml-util
 
@@ -354,10 +355,10 @@ mod-finance-storage:
     directory: ramls
     files:
       - budget
-      - encumbrance
       - fiscal_year
       - fund
       - fund_distribution
+      - group
       - ledger
       - transaction
     ramlutil: ramls/raml-util
