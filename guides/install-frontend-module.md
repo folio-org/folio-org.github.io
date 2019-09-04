@@ -19,7 +19,7 @@ There is a separate procedure to [install a new back-end module](/guides/install
 
 ## Verify MD and required interfaces
 
-First ensure that this new module's ModuleDescriptor is deployed, and that any required interfaces are already available.
+First ensure that this new module's [ModuleDescriptor](/guides/module-descriptor/) is deployed, and that any required interfaces are available.
 
 For example, consider the `ui-users` module.
 Obtain its MD and extract the "requires" section:
