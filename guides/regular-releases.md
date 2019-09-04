@@ -8,6 +8,8 @@ menuTopTitle: Guides
 
 The main set of FOLIO modules are coordinated to form a regular release.
 At this stage it happens on a quarterly basis.
+
+Refer to the [Releases](https://wiki.folio.org/display/REL/) area of the Wiki.
 The approximates dates and descriptive names (e.g. bellis, clover, daisy) for upcoming releases are listed at [FOLIO Development Timeline Dates](https://wiki.folio.org/display/RPT/FOLIO+Development+Timeline+Dates).
 
 The preparation for each release has a dedicated Slack [channel](/guidelines/which-forum/#slack)

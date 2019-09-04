@@ -14,11 +14,13 @@ Note that some early modules did not follow some aspects of these naming schemes
 
 Choose names carefully, as there are various ramifications to later changing that.
 
+In most cases (except when camelCase is required) use hyphenation to join words in a name, i.e. hyphen-separated strings (sometimes referred to as dash-separated).
+
 The guide to [commence a new module](/guides/commence-a-module/) explains a typical directory layout and standard filenames.
 
 ## Module names
 
-Each module has its own git repository. The name uses the following scheme with a consistent prefix and dash-separated words:
+Each module has its own git repository. The name uses the following scheme with a consistent prefix and hyphen-separated words:
 
 * `mod-` prefix for back-end modules (e.g. mod-users, mod-inventory-storage).
 * `ui-` prefix for front-end UI modules (e.g. ui-users).
@@ -37,7 +39,7 @@ These are explained at [Permissions in Stripes and FOLIO](https://github.com/fol
 
 Permissions are defined in each module's ModuleDescriptor.
 
-The naming scheme is a faceted dot-separated string, with the delimited terms as dash-separated words.
+The naming scheme is a faceted dot-separated string, with the delimited terms as hyphen-separated words.
 The first portion is the exact name of the responsible module (back-end modules drop the `mod-` prefix).
 
 Some examples:
@@ -64,7 +66,7 @@ Each module can define more than one interface.
 Normally an interface is defined by only one module, but Okapi does allow different modules to provide the same interface by using
 [multiple interfaces](https://github.com/folio-org/okapi/blob/master/doc/guide.md#multiple-interfaces).
 
-The name of an interface (its `id`) uses dash-separated strings.
+The name of an interface (its `id`) uses hyphen-separated strings.
 It is normally the same as the set of `pathPattern`s for which it provides handlers.
 
 Some examples:
@@ -85,7 +87,7 @@ These Okapi interface names start with underscore, e.g. the Tenant Interface `_t
 The back-end modules define their routes and API endpoints in their [RAML files](/reference/api/),
 and declare the endpoints as the pathPatterns in the interfaces defined by their ModuleDescriptor.
 
-Endpoints use dash-separated strings, with URI parameters as camelCase.
+Endpoints use hyphen-separated strings, with URI parameters as camelCase.
 There is no trailing slash.
 
 Some examples:
