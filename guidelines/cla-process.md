@@ -45,7 +45,10 @@ NOTE: All contributors must acknowledge the CLA before the CLA-Assistant pull re
 
 ## Fix a stuck status check
 
-Occasionally there is a glitch, whereby this status check fails to register, even though the contributor has already acknowledged their CLA. Being a required status check, this results in hold-ups with the PR.
+Occasionally there is a glitch, whereby this status check fails to register, even though the contributor has already acknowledged their CLA.
+The message on the GitHub PR will be something like: "Waiting for status to be reported".
+
+Being a required status check, this results in hold-ups with the PR.
 
 One cause is when GitHub [status](https://www.githubstatus.com/) is reporting problems with its notifications API, which the CLA agent uses to check PRs.
 

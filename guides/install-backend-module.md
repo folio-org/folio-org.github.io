@@ -16,7 +16,7 @@ There is a separate procedure to [install a new front-end module](/guides/instal
 
 ## Verify MD and required interfaces
 
-First ensure that this new module's ModuleDescriptor is deployed, and that any required interfaces are available.
+First ensure that this new module's [ModuleDescriptor](/guides/module-descriptor/) is deployed, includes the Docker-based LaunchDescriptor, and that any required interfaces are available.
 
 For example, consider the `mod-notes` module.
 Obtain its MD and extract the "requires" section:
@@ -37,6 +37,7 @@ curl -s -S -w'\n' \
 ```
 
 If there is a non-empty result for each of the required interfaces, then ready to proceed.
+If not, then investigate further and consult the relevant back-end module developers.
 
 ## Declare new module
 

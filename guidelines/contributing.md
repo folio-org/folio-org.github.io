@@ -86,6 +86,13 @@ Also consider mentioning relevant Issue identifiers (e.g. OKAPI-258).
 This assists people to follow the reasons, and enables the issue tracker to
 automatically link to the related commits.
 
+### Retain git commit history
+
+Make every effort to not lose the history.
+The commit history is important for various reasons, not only that it shows the development track of resources, but also that it contains the attribution required by the Apache License.
+
+For example when there is a need to rename a file, be sure to use 'git mv ...' to move the file content and its history, rather than simple filesystem rename or copy-and-remove commands.
+
 ### Feature branches
 
 Feature branches should be branched off from the master. The naming of those
