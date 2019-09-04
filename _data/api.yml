@@ -355,9 +355,10 @@ mod-finance-storage:
     directory: ramls
     files:
       - budget
-      - fiscal_year
+      - fiscal-year
       - fund
-      - fund_distribution
+      - fund-distribution
+      - fund-type
       - group
       - ledger
       - transaction
