@@ -437,6 +437,7 @@ mod-feesfines:
       - feefineactions
       - feefines
       - manualblocks
+      - overdue-fine-policy
       - owners
       - payments
       - refunds
