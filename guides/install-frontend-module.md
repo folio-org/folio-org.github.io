@@ -40,6 +40,7 @@ curl -s -S -w'\n' \
 ```
 
 If there is a non-empty result for each of the required interfaces, then ready to proceed.
+If not, then investigate further and consult the relevant [back-end module](/guides/install-backend-module/) developers.
 
 ## Declare new module
 
