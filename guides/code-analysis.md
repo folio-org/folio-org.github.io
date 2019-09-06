@@ -53,12 +53,19 @@ section of _The Stripes Module Developer's Guide_ explains ESLint usage, how to 
 
 ## RAML and Schema
 
-For RAML-using server-side projects, [raml-cop](/guides/raml-cop/) assesses RAML and schema and examples.
+For RAML-using server-side projects, [lint-raml](/guides/raml-cop/) assesses RAML and schema and examples.
+Those CI jobs utilise underlying tools such as
+[raml-cop](/guides/raml-cop/) and
+[raml-1-parser](https://github.com/raml-org/raml-js-parser-2) and
+[z-schema](https://github.com/zaggino/z-schema).
 
 ## Other lint tools
 
-These are not included in continuous integration, but are certainly useful as local tools.
+These tools are not directly included in continuous integration, but are certainly also useful as local tools.
 
-For JSON files, [jq](https://github.com/stedolan/jq) is useful for validation, pretty-printing and linting, and for many JSON processing and viewing tasks.
+For JSON files, [jq](https://github.com/stedolan/jq) is useful for general validation, pretty-printing and linting, and for many JSON processing and viewing tasks.
+
+JSON Schema validator such as [z-schema](https://github.com/zaggino/z-schema).
+See example use for local maintenance of [ModuleDescriptors](/guides/module-descriptor).
 
 

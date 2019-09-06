@@ -204,6 +204,8 @@ The [Explain the FOLIO permissions system](/faqs/explain-permissions-system/) FA
 
 The Stripes Core will generate the ModuleDescriptor.json for this UI module from its package.json file.
 
+Refer to [Guides ModuleDescriptor](/guides/module-descriptor/).
+
 ### Data {#front-end-data}
 
 The optional `data` directory holds data specific to this app.
