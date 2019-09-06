@@ -10,7 +10,7 @@ menuTopTitle: Guides
 
 This guide provides an overview of the ModuleDescriptor.
 
-The ModuleDescriptor is introduced in the Okapi Guide
+The ModuleDescriptor (MD) is introduced in the Okapi Guide
 (e.g. [here](https://github.com/folio-org/okapi/blob/master/doc/guide.md#what-are-modules)
 and [here](https://github.com/folio-org/okapi/blob/master/doc/guide.md#example-4-complete-moduledescriptor)).
 
@@ -79,7 +79,7 @@ The "metadata" section enables some additional items.
 The MD schema enables any JSON object.
 
 **NOTE:** 20190901: The following items are currently used to assist the generation of a documentation snippet for Docker Hub.
-These will soon be replaced with information from the new LaunchDescriptor.
+These will soon be replaced with information from the new LaunchDescriptor ([FOLIO-2237](https://issues.folio.org/browse/FOLIO-2237)).
 
 Currently only two items are used:
 
@@ -93,7 +93,7 @@ Note that these installations have a small amount of data and low activity load.
 
 ### Introduction {#ld-introduction}
 
-The LaunchDescriptor is introduced in the Okapi Guide
+The LaunchDescriptor (LD) is introduced in the Okapi Guide
 (e.g. at sections [Deployment and Discovery](https://github.com/folio-org/okapi/blob/master/doc/guide.md#deployment-and-discovery)
 and [Deployment](https://github.com/folio-org/okapi/blob/master/doc/guide.md#deployment)
 and [Auto-deployment](https://github.com/folio-org/okapi/blob/master/doc/guide.md#auto-deployment)).
@@ -103,11 +103,17 @@ The LD adheres to the [LaunchDescriptor.json](https://github.com/folio-org/okapi
 As explained in the Okapi Guide, the LaunchDescriptor can be a separate descriptor, or be part of the ModuleDescriptor.
 The LaunchDescriptor can utilise various methods for [deployment](https://github.com/folio-org/okapi/blob/master/doc/guide.md#deployment).
 
-For the suite of [back-end modules](/source-code/#server-side) that are hosted at folio-org, each one has a LaunchDescriptor for Docker, and the LD is included in the module's ModuleDescriptor file.
-This enables ready default deployment.
+### Default LD Docker properties
 
-The properties correlate with that used by [folio-ansible](https://github.com/folio-org/folio-ansible/tree/master/group_vars) for the FOLIO [reference environments](/guides/automation/#reference-environments).
-Note that these installations have a small amount of data and low activity load.
+For the suite of [back-end modules](/source-code/#server-side) that are hosted at folio-org, each one has a LaunchDescriptor for Docker, and the LD is included in the module's ModuleDescriptor file.
+
+This enables ready default deployment.
+Each module's LD settings are used directly in the FOLIO [reference environments](/guides/automation/#reference-environments).
+Note that those installations have a small amount of data and low activity load.
+Other installations would probably adjust or replace these LDs.
+
+**Note:** 20190905:
+Please await the initial roll-out of these new LaunchDescriptors, as this roll-out needs to be co-ordinated ([FOLIO-2234](https://issues.folio.org/browse/FOLIO-2234) for the core modules, and [FOLIO-2235](https://issues.folio.org/browse/FOLIO-2235) for the non-core modules).
 
 ### General LD properties
 
@@ -116,7 +122,91 @@ Each main property is briefly described in the
 
 The following sub-sections explain some properties in more detail ...
 
-```
-TODO: Provide brief explanations of some sections.
+### dockerCMD
+
+Optional. Over-ride the CMD of Dockerfile. An array of string items.
+
+Example LDs that use this:
+[mod-login](https://github.com/folio-org/mod-login/blob/master/descriptors/ModuleDescriptor-template.json)
+
+### memory
+
+Limit each container's memory usage.
+
+All LDs must have the memory setting.
+
+The setting must be expressed as bytes.
+
+### HostPort binding
+
+Okapi will map the "%p" value to the relevant port for this container.
+
+### env  {#docker-env}
+
+The default environment for deployment.
+
+This is an array of items, each with properties: name (required), value, description.
+
+All LDs for Java-based modules must have the base [JAVA_OPTIONS](#env-java_options) setting.
+
+If the module uses a database, then it must provide the standard set of "DB_" [database settings](#env-db-environment) shown in the example.
+
+Whatever other needed environment variables can be defined here.
+
+### env JAVA_OPTIONS
+
+This environment variable must at least have the setting as shown in the [example](#example-launchdescriptors), which enables Java 10+ to set the specified [memory](#memory) for the container.
+
+Other necessary options can be appended.
+
+### env DB environment
+
+If the module uses a database, then it must provide the standard set of "DB_" settings shown in the [example](#example-launchdescriptors).
+
+Some need explanation:
+* `DB_HOST` keyword "postgres" is automatically mapped by the relevant system.
+* `DB_DATABASE` is "okapi_modules" used by all modules.
+
+
+### Example LaunchDescriptors
+
+The following example is for
+[mod-notes](https://github.com/folio-org/mod-notes/blob/master/descriptors/ModuleDescriptor-template.json)
+which does use a database.
+
+```json
+  "launchDescriptor": {
+    "dockerImage": "${artifactId}:${version}",
+    "dockerPull": false,
+    "dockerArgs": {
+      "HostConfig": {
+        "Memory": 268435456,
+        "PortBindings": { "8081/tcp": [ { "HostPort": "%p" } ] }
+      }
+    },
+    "env": [
+      { "name": "JAVA_OPTIONS",
+        "value": "-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap" },
+      { "name": "DB_HOST", "value": "postgres" },
+      { "name": "DB_PORT", "value": "5432" },
+      { "name": "DB_USERNAME", "value": "folio_admin" },
+      { "name": "DB_PASSWORD", "value": "folio_admin" },
+      { "name": "DB_DATABASE", "value": "okapi_modules" },
+      { "name": "DB_QUERYTIMEOUT", "value": "60000" },
+      { "name": "DB_CHARSET", "value": "UTF-8" },
+      { "name": "DB_MAXPOOLSIZE", "value": "5" }
+    ]
+  }
 ```
 
+Other examples:
+(TODO: actually yet to be deployed.)
+
+* [mod-users](https://github.com/folio-org/mod-users/blob/master/descriptors/ModuleDescriptor-template.json)
+  has greater memory allocation.
+* [mod-login](https://github.com/folio-org/mod-login/blob/master/descriptors/ModuleDescriptor-template.json)
+  uses the dockerCMD.
+* [mod-circulation](https://github.com/folio-org/mod-circulation/blob/master/descriptors/ModuleDescriptor-template.json)
+  does not use a database.
+* [mod-agreements](https://github.com/folio-org/mod-agreements/blob/master/service/src/main/okapi/ModuleDescriptor-template.json)
+  has additional environment variables.
