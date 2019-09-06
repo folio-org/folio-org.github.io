@@ -355,6 +355,7 @@ mod-finance-storage:
     directory: ramls
     files:
       - budget
+      - finance-storage
       - fiscal-year
       - fund
       - fund-distribution
