@@ -355,6 +355,7 @@ mod-finance-storage:
     directory: ramls
     files:
       - budget
+      - finance-storage
       - fiscal-year
       - fund
       - fund-distribution
@@ -393,6 +394,7 @@ mod-orders-storage:
       - orders
       - order-lines
       - order-invoice-relns
+      - order-templates
       - pieces
       - po-line
       - po-line-number
