@@ -394,6 +394,7 @@ mod-orders-storage:
       - orders
       - order-lines
       - order-invoice-relns
+      - order-templates
       - pieces
       - po-line
       - po-line-number
