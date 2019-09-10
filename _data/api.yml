@@ -439,6 +439,7 @@ mod-feesfines:
       - comments
       - feefineactions
       - feefines
+      - lost-item-fee-policy
       - manualblocks
       - overdue-fine-policy
       - owners
