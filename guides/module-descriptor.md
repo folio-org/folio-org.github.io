@@ -129,7 +129,7 @@ Optional. Over-ride the CMD of Dockerfile. An array of string items.
 Example LDs that use this:
 [mod-login](https://github.com/folio-org/mod-login/blob/master/descriptors/ModuleDescriptor-template.json)
 
-### memory
+### Memory
 
 Limit each container's memory usage.
 
@@ -137,11 +137,20 @@ All LDs must have the memory setting.
 
 The setting must be expressed as bytes.
 
+During this transition phase (see [FOLIO-2242](https://issues.folio.org/browse/FOLIO-2242))
+ this container memory must be set to approximately 133.3...% of the '-Xmx' heap size setting in the
+folio-ansible [group_vars](https://github.com/folio-org/folio-ansible/blob/master/group_vars/snapshot)
+(see [FOLIO-2250](https://issues.folio.org/browse/FOLIO-2250)).
+So for example:
+* -Xmx256m = 357913941
+* -Xmx384m = 536870912
+* -Xmx512m = 715827883
+
 ### HostPort binding
 
 Okapi will map the "%p" value to the relevant port for this container.
 
-### env  {#docker-env}
+### env {#docker-env}
 
 The default environment for deployment.
 
@@ -180,7 +189,7 @@ which does use a database.
     "dockerPull": false,
     "dockerArgs": {
       "HostConfig": {
-        "Memory": 268435456,
+        "Memory": 357913941,
         "PortBindings": { "8081/tcp": [ { "HostPort": "%p" } ] }
       }
     },
