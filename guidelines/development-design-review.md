@@ -138,6 +138,7 @@ Examples of when to do this:
   * Reviewer should add themselves as a subsequent assignee when they start reviewing, to indicate their intention to conduct a review
 * Pull request maintainer collaborates with reviewers to address feedback
   * When feedback is addressed, comments should be resolved
+  * Click on "Re-request review" if a reviewer that already gave feedback should come back for the latest changes. This is most relevant if the reviewer requested changes and now should approve them.
 * At least one approval (from a Code Owner) is needed for authority to merge the pull request (teams may choose to require more)
 * Branch is updated with any changes from master
   * This may trigger an additional round of reviews, if the changes for a merge are significant, at the discretion of the Code Owners
