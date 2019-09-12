@@ -195,7 +195,8 @@ which does use a database.
     },
     "env": [
       { "name": "JAVA_OPTIONS",
-        "value": "-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap" },
+        "value": "-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"
+      },
       { "name": "DB_HOST", "value": "postgres" },
       { "name": "DB_PORT", "value": "5432" },
       { "name": "DB_USERNAME", "value": "folio_admin" },
@@ -209,13 +210,14 @@ which does use a database.
 ```
 
 Other examples:
-(TODO: actually yet to be deployed.)
 
 * [mod-users](https://github.com/folio-org/mod-users/blob/master/descriptors/ModuleDescriptor-template.json)
-  has greater memory allocation.
+  -- has greater memory allocation.
 * [mod-login](https://github.com/folio-org/mod-login/blob/master/descriptors/ModuleDescriptor-template.json)
-  uses the dockerCMD.
+  -- uses the dockerCMD.
 * [mod-circulation](https://github.com/folio-org/mod-circulation/blob/master/descriptors/ModuleDescriptor-template.json)
-  does not use a database.
+  -- does not use a database.
 * [mod-agreements](https://github.com/folio-org/mod-agreements/blob/master/service/src/main/okapi/ModuleDescriptor-template.json)
-  has additional environment variables.
+  -- has additional environment variables.
+  (TODO: actually yet to be deployed.)
+
