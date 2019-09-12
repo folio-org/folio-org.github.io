@@ -345,6 +345,7 @@ mod-finance:
     version1: true
     directory: ramls
     files:
+      - fund-types
       - funds
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-finance/schemas
