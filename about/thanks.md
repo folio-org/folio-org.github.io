@@ -17,5 +17,5 @@ The FOLIO Project is grateful for support from **BrowserStack**.
 [BrowserStack](https://www.browserstack.com) enables the FOLIO Project front end developers to automate the tests of changes to user interface code across a variety of browsers.
 The project also uses BrowserStack to ensure the proper flow of user interface elements around translated strings of various lengths.
 
-<a href="https://lokalise.co/"><img src="/images/lokalise.png" alt="Lokalise logo" width="220" height="90" /></a><br />
-The FOLIO project is grateful for support from **Lokalise**.  Translators use [Lokalise](https://lokalise.co) to manage the [i18n](/faqs/explain-i18n/) workflow of creating localized strings for the FOLIO user interface and integrating that work into the FOLIO Project apps.
+<a href="https://lokalise.com/"><img src="/images/lokalise.png" alt="Lokalise logo" width="220" height="90" /></a><br />
+The FOLIO project is grateful for support from **Lokalise**.  Translators use [Lokalise](https://lokalise.com) to manage the [i18n](/faqs/explain-i18n/) workflow of creating localized strings for the FOLIO user interface and integrating that work into the FOLIO Project apps.
