@@ -125,6 +125,7 @@ These are listed in the [Start](/start/) section.
 - Use [raml-cop](raml-cop/) to assess RAMLs, schema, and examples. A guide to its use with some explanations of its messages.
 - [Conduct API testing](api-testing/) using Postman collections and Newman against a running module.
 - [Describe schema and properties](describe-schema/).
+- Explain [ModuleDescriptors](module-descriptor/) and default [LaunchDescriptors](module-descriptor/#launchdescriptor-properties).
 - [Conduct cross-module joins via their APIs](cross-module-joins).
 - [Working with dates and times](dates-and-times/).
 - [How to check for a valid UUID](uuids).

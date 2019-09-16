@@ -156,11 +156,13 @@ The default environment for deployment.
 
 This is an array of items, each with properties: name (required), value, description.
 
-All LDs for Java-based modules must have the base [JAVA_OPTIONS](#env-java_options) setting.
+All LDs for Java-based modules must have the base [`JAVA_OPTIONS`](#env-java_options) setting.
 
-If the module uses a database, then it must provide the standard set of "DB_" [database settings](#env-db-environment) shown in the example.
+If the module uses a database, then it must provide the standard set of `DB_` [database settings](#env-db-environment) shown in the example.
 
-Whatever other needed environment variables can be defined here.
+Other environment variables can also be documented here.
+Their default values would need to make sense in the FOLIO [reference environments](/guides/automation/#reference-environments) where these LaunchDescriptors will be used as-is.
+The defaults also need to make sense in a cluster.
 
 ### env JAVA_OPTIONS
 
@@ -170,7 +172,7 @@ Other necessary options can be appended.
 
 ### env DB environment
 
-If the module uses a database, then it must provide the standard set of "DB_" settings shown in the [example](#example-launchdescriptors).
+If the module uses a database, then it must provide the standard set of `DB_` settings shown in the [example](#example-launchdescriptors).
 
 Some need explanation:
 * `DB_HOST` keyword "postgres" is automatically mapped by the relevant system.
@@ -219,5 +221,5 @@ Other examples:
   -- does not use a database.
 * [mod-agreements](https://github.com/folio-org/mod-agreements/blob/master/service/src/main/okapi/ModuleDescriptor-template.json)
   -- has additional environment variables.
-  (TODO: actually yet to be deployed.)
+  (TODO: actually yet to be deployed [FOLIO-2261](https://issues.folio.org/browse/FOLIO-2261).)
 
