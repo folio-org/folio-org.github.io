@@ -345,6 +345,7 @@ mod-finance:
     version1: true
     directory: ramls
     files:
+      - budgets
       - fund-types
       - funds
     ramlutil: ramls/raml-util
