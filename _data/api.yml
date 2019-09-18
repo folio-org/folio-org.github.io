@@ -363,6 +363,7 @@ mod-finance-storage:
       - fund-distribution
       - fund-type
       - group
+      - group_fund_fy
       - ledger
       - transaction
     ramlutil: ramls/raml-util
