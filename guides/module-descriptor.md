@@ -112,6 +112,8 @@ Each module's LD settings are used directly in the FOLIO [reference environments
 Note that those installations have a small amount of data and low activity load.
 Other installations would probably adjust or replace these LDs.
 
+For a back-end module to [be included](/guides/install-backend-module/) in the reference environments, it must have such a LaunchDescriptor.
+
 **Note:** 20190905:
 Please await the initial roll-out of these new LaunchDescriptors, as this roll-out needs to be co-ordinated ([FOLIO-2234](https://issues.folio.org/browse/FOLIO-2234) for the core modules, and [FOLIO-2235](https://issues.folio.org/browse/FOLIO-2235) for the non-core modules).
 
@@ -160,7 +162,7 @@ All LDs for Java-based modules must have the base [`JAVA_OPTIONS`](#env-java_opt
 
 If the module uses a database, then it must provide the standard set of `DB_` [database settings](#env-db-environment) shown in the example.
 
-Other environment variables can also be documented here.
+Other environment variables can also be documented here (see [examples](#example-launchdescriptors)).
 Their default values would need to make sense in the FOLIO [reference environments](/guides/automation/#reference-environments) where these LaunchDescriptors will be used as-is.
 The defaults also need to make sense in a cluster.
 
@@ -213,13 +215,12 @@ which does use a database.
 
 Other examples:
 
+* [mod-circulation](https://github.com/folio-org/mod-circulation/blob/master/descriptors/ModuleDescriptor-template.json)
+  -- does not use a database.
 * [mod-users](https://github.com/folio-org/mod-users/blob/master/descriptors/ModuleDescriptor-template.json)
   -- has greater memory allocation.
 * [mod-login](https://github.com/folio-org/mod-login/blob/master/descriptors/ModuleDescriptor-template.json)
   -- uses the dockerCMD.
-* [mod-circulation](https://github.com/folio-org/mod-circulation/blob/master/descriptors/ModuleDescriptor-template.json)
-  -- does not use a database.
-* [mod-agreements](https://github.com/folio-org/mod-agreements/blob/master/service/src/main/okapi/ModuleDescriptor-template.json)
+* [mod-source-record-storage](https://github.com/folio-org/mod-source-record-storage/blob/master/descriptors/ModuleDescriptor-template.json)
   -- has additional environment variables.
-  (TODO: actually yet to be deployed [FOLIO-2261](https://issues.folio.org/browse/FOLIO-2261).)
 
