@@ -112,6 +112,8 @@ Each module's LD settings are used directly in the FOLIO [reference environments
 Note that those installations have a small amount of data and low activity load.
 Other installations would probably adjust or replace these LDs.
 
+For a back-end module to [be included](/guides/install-backend-module/) in the reference environments, it must have such a LaunchDescriptor.
+
 **Note:** 20190905:
 Please await the initial roll-out of these new LaunchDescriptors, as this roll-out needs to be co-ordinated ([FOLIO-2234](https://issues.folio.org/browse/FOLIO-2234) for the core modules, and [FOLIO-2235](https://issues.folio.org/browse/FOLIO-2235) for the non-core modules).
 
