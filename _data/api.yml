@@ -159,6 +159,7 @@ mod-circulation:
     directory: ramls
     files:
       - circulation
+      - loan-anonymization
       - request-move
       - requests-reports
     ramlutil: ramls/raml-util
