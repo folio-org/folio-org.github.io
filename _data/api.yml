@@ -178,6 +178,7 @@ mod-circulation-storage:
       - scheduled-notice-storage
       - fixed-due-date-schedule
       - cancellation-reason
+      - patron-action-session
       - patron-notice-policy
       - staff-slips
     ramlutil: ramls/raml-util
