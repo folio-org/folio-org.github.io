@@ -91,12 +91,12 @@ The server is built every day, to finish about 02:00 UTC. (See [Jenkins job](htt
 This build uses the latest compatible releases of each module.
 Built every day, to finish about 01:30 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-release/).)
 
-### folio-clover
+### folio-daisy
 
-[https://folio-clover.aws.indexdata.com/](https://folio-clover.aws.indexdata.com/)
+[https://folio-daisy.aws.indexdata.com/](https://folio-daisy.aws.indexdata.com/)
 
-This is an environment for the most recent FOLIO Release Q2 2019 Clover.
-Built every day, to finish about 02:00 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-q2.2-2019-release/).)
+This is an environment for the most recent FOLIO Release Q3 2019 Daisy.
+Built every day, to finish about 03:30 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-q3.2-2019-release/).)
 
 ## Jenkins
 
