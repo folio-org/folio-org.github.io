@@ -33,7 +33,7 @@ Now ensure that each interface is available, e.g.:
 
 ```
 curl -s -S -w'\n' \
-  'https://folio-snapshot-okapi.aws.indexdata.com/_/proxy/modules?latest=1&provide=users%3D15.0'
+  'https://folio-snapshot-okapi.aws.indexdata.com/_/proxy/tenants/diku/modules?latest=1&provide=users%3D15.0'
 ```
 
 If there is a non-empty result for each of the required interfaces, then ready to proceed.
