@@ -105,7 +105,12 @@ The LaunchDescriptor can utilise various methods for [deployment](https://github
 
 ### Default LD Docker properties
 
-For the suite of [back-end modules](/source-code/#server-side) that are hosted at folio-org, each one has a LaunchDescriptor for Docker, and the LD is included in the module's ModuleDescriptor file.
+For the suite of [back-end modules](/source-code/#server-side) that are hosted in the folio-org GitHub organization, each one has a LaunchDescriptor for Docker, and the LD is included in the module's ModuleDescriptor file.
+
+<div class="attention">
+The `env` section of the `launchDescriptor` properties in the ModuleDescriptor file contains an enumeration of variables (such as DB_USERNAME and JAVA_OPTIONS) and sample values.
+It is considered best practice to override these values in the Launch Descriptors created for production environments.
+</div>
 
 This enables ready default deployment.
 Each module's LD settings are used directly in the FOLIO [reference environments](/guides/automation/#reference-environments).
@@ -223,4 +228,3 @@ Other examples:
   -- uses the dockerCMD.
 * [mod-source-record-storage](https://github.com/folio-org/mod-source-record-storage/blob/master/descriptors/ModuleDescriptor-template.json)
   -- has additional environment variables.
-
