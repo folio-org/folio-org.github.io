@@ -28,7 +28,8 @@ The CI system automatically builds reference environments that are used for vari
 
 In order to fully understand this diagram, keep in mind that there are two parts to FOLIO -- the part called “Stripes” which is the software running in the browser and the part called “Okapi” which is running on the server.
 
-The Okapi backend is secured during the CI process. For more information on securing Okapi see the [guide on securing Okapi](https://github.com/folio-org/okapi/blob/master/doc/securing.md). Default settings for securing okapi are in the okapi-secure Ansible role's [defaults](https://github.com/folio-org/folio-ansible/blob/master/roles/okapi-secure/defaults/main.yml) file.
+The Okapi backend is secured during the CI process. For more information on securing Okapi see the [folio-install](https://github.com/folio-org/folio-install/blob/master/runbooks/single-server/README.md#secure-the-okapi-api-supertenant) and the [guide on securing Okapi](https://github.com/folio-org/okapi/blob/master/doc/securing.md).
+Default settings for securing okapi are in the okapi-secure Ansible role's [defaults](https://github.com/folio-org/folio-ansible/blob/master/roles/okapi-secure/defaults/main.yml) file.
 Direct access is via URLs such as [https://folio-testing-okapi.aws.indexdata.com](https://folio-testing-okapi.aws.indexdata.com/)
 
 Another part that is not indicated in this diagram are various "edge" modules, which bridge the gap between some specific third-party services and FOLIO (e.g. RTAC, OAI-PMH).
@@ -40,6 +41,7 @@ The edge APIs are deployed such that any API key generated with the tenant diku 
 
 Each environment listed below is based on the [platform-complete](https://github.com/folio-org/platform-complete) Stripes Platform.
 Each also has one based on [platform-core](https://github.com/folio-org/platform-core), so adjust the link to include `-core` (e.g. `folio-testing` to `folio-testing-core`).
+Similarly okapi can be accessed via `folio-testing-okapi` (and see notes in the previous section).
 
 If an error message (in the 5** series) is shown for the entry point of these sites, then that probably means that it is in the process of being rebuilt (see its "Jenkins job" link).
 
