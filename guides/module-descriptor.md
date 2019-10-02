@@ -115,7 +115,7 @@ Note that those installations have a small amount of data and low activity load.
 Other installations would probably adjust or replace these LDs.
 
 <div class="attention">
-The `env` section of the `launchDescriptor` properties in the ModuleDescriptor file contains an enumeration of variables (such as DB_USERNAME and JAVA_OPTIONS) and sample values.
+The "env" section of the "launchDescriptor" properties contains an enumeration of variables (such as DB_USERNAME and JAVA_OPTIONS) and sample values.
 It is considered best practice to override these values in the Launch Descriptors created for production environments.
 </div>
 
