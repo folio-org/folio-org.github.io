@@ -78,17 +78,6 @@ TODO: Provide brief explanations of some sections.
 The "metadata" section enables some additional items.
 The MD schema enables any JSON object.
 
-**NOTE:** 20190901: The following items are currently used to assist the generation of a documentation snippet for Docker Hub.
-These will soon be replaced with information from the new LaunchDescriptor ([FOLIO-2237](https://issues.folio.org/browse/FOLIO-2237)).
-
-Currently only two items are used:
-
-* `containerMemory` -- A hint about the minimum amount of memory required to run this module.
-The values correlate with that used by [folio-ansible](https://github.com/folio-org/folio-ansible/tree/master/group_vars) for the FOLIO [reference environments](/guides/automation/#reference-environments).
-Note that these installations have a small amount of data and low activity load.
-
-* `databaseConnection` -- Whether this module utilises a database.
-
 ## LaunchDescriptor properties
 
 ### Introduction {#ld-introduction}
