@@ -78,17 +78,6 @@ TODO: Provide brief explanations of some sections.
 The "metadata" section enables some additional items.
 The MD schema enables any JSON object.
 
-**NOTE:** 20190901: The following items are currently used to assist the generation of a documentation snippet for Docker Hub.
-These will soon be replaced with information from the new LaunchDescriptor ([FOLIO-2237](https://issues.folio.org/browse/FOLIO-2237)).
-
-Currently only two items are used:
-
-* `containerMemory` -- A hint about the minimum amount of memory required to run this module.
-The values correlate with that used by [folio-ansible](https://github.com/folio-org/folio-ansible/tree/master/group_vars) for the FOLIO [reference environments](/guides/automation/#reference-environments).
-Note that these installations have a small amount of data and low activity load.
-
-* `databaseConnection` -- Whether this module utilises a database.
-
 ## LaunchDescriptor properties
 
 ### Introduction {#ld-introduction}
@@ -107,20 +96,17 @@ The LaunchDescriptor can utilise various methods for [deployment](https://github
 
 For the suite of [back-end modules](/source-code/#server-side) that are hosted in the folio-org GitHub organization, each one has a LaunchDescriptor for Docker, and the LD is included in the module's ModuleDescriptor file.
 
-<div class="attention">
-The `env` section of the `launchDescriptor` properties in the ModuleDescriptor file contains an enumeration of variables (such as DB_USERNAME and JAVA_OPTIONS) and sample values.
-It is considered best practice to override these values in the Launch Descriptors created for production environments.
-</div>
+For a back-end module to [be included](/guides/install-backend-module/) in the reference environments, it must have such a LaunchDescriptor.
 
 This enables ready default deployment.
 Each module's LD settings are used directly in the FOLIO [reference environments](/guides/automation/#reference-environments).
 Note that those installations have a small amount of data and low activity load.
 Other installations would probably adjust or replace these LDs.
 
-For a back-end module to [be included](/guides/install-backend-module/) in the reference environments, it must have such a LaunchDescriptor.
-
-**Note:** 20190905:
-Please await the initial roll-out of these new LaunchDescriptors, as this roll-out needs to be co-ordinated ([FOLIO-2234](https://issues.folio.org/browse/FOLIO-2234) for the core modules, and [FOLIO-2235](https://issues.folio.org/browse/FOLIO-2235) for the non-core modules).
+<div class="attention">
+The "env" section of the "launchDescriptor" properties contains an enumeration of variables (such as DB_USERNAME and JAVA_OPTIONS) and sample values.
+It is considered best practice to override these values in the Launch Descriptors created for production environments.
+</div>
 
 ### General LD properties
 
