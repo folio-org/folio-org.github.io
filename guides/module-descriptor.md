@@ -119,9 +119,6 @@ The "env" section of the "launchDescriptor" properties contains an enumeration o
 It is considered best practice to override these values in the Launch Descriptors created for production environments.
 </div>
 
-**Note:** 20190905:
-Please await the initial roll-out of these new LaunchDescriptors, as this roll-out needs to be co-ordinated ([FOLIO-2234](https://issues.folio.org/browse/FOLIO-2234) for the core modules, and [FOLIO-2235](https://issues.folio.org/browse/FOLIO-2235) for the non-core modules).
-
 ### General LD properties
 
 Each main property is briefly described in the
