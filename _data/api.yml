@@ -578,6 +578,7 @@ mod-source-record-manager:
     directory: ramls
     files:
       - change-manager
+      - mapping-rules-provider
       - metadata-provider
     excludes:
       - raml-storage
