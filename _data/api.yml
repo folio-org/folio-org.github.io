@@ -578,6 +578,7 @@ mod-source-record-manager:
     directory: ramls
     files:
       - change-manager
+      - mapping-rules-provider
       - metadata-provider
     excludes:
       - raml-storage
@@ -733,4 +734,3 @@ mod-vendors:
       - vendor_type
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-vendors/schemas
-
