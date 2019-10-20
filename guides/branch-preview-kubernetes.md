@@ -14,7 +14,7 @@ branch. This can be acheived by opening a pull request against platform-core and
 
 **NOTE:** This is a proof-of-concept applying only to modules included in platform-core
 
-### How it works
+## How it works
 
 Opening a pull request against platform-core triggers a build of a FOLIO tenant on a Kubernetes cluster dedicated to CI. The tenant will be built using the modules specified in the `okapi-install.json` `install-extras.json` files on the branch of platform-core where the PR is issued from. A stripes bundle for the tenant is built based on what is specified in the `package.json` file and deployed to Amazon s3. Jenkins will mark up the pull reuqest with a link to the frontend.
 
