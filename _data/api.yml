@@ -350,8 +350,10 @@ mod-finance:
     directory: ramls
     files:
       - budgets
+      - fiscal-years
       - fund-types
       - funds
+      - ledgers
       - group-fund-fiscal-year
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-finance/schemas
