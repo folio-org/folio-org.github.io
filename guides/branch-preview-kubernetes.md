@@ -50,7 +50,7 @@ For example, to build a preview system using unmerged code for ui users on a bra
 ```
     ...
     "@folio/tenant-settings": "2.13.1",
-    "@folio/users": "git+https://github.com/folio-org/ui-marccat.git#my-feature-branch",
+    "@folio/users": "git+https://github.com/folio-org/ui-users.git#my-feature-branch",
     "react": "~16.8.6",
     ...
 ```
