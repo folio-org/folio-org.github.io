@@ -175,9 +175,10 @@ mod-circulation-storage:
       - circulation-rules-storage
       - loan-storage
       - loan-policy-storage
+      - request-policy-storage
       - request-preference-storage
       - request-storage
-      - request-policy-storage
+      - request-storage-batch
       - scheduled-notice-storage
       - fixed-due-date-schedule
       - cancellation-reason
