@@ -113,7 +113,9 @@ It is considered best practice to override these values in the Launch Descriptor
 Each main property is briefly described in the
 [LaunchDescriptor.json](https://github.com/folio-org/okapi/blob/master/okapi-core/src/main/raml/LaunchDescriptor.json) schema.
 
-The following sub-sections explain some properties in more detail ...
+The following sub-sections explain some properties in more detail.
+
+Refer to the [example](#example-launchdescriptors) below.
 
 ### dockerCMD
 
@@ -130,14 +132,10 @@ All LDs must have the memory setting.
 
 The setting must be expressed as bytes.
 
-During this transition phase (see [FOLIO-2242](https://issues.folio.org/browse/FOLIO-2242))
- this container memory must be set to approximately 133.3...% of the '-Xmx' heap size setting in the
-folio-ansible [group_vars](https://github.com/folio-org/folio-ansible/blob/master/group_vars/snapshot)
-(see [FOLIO-2250](https://issues.folio.org/browse/FOLIO-2250)).
-So for example:
-* -Xmx256m = 357913941
-* -Xmx384m = 536870912
-* -Xmx512m = 715827883
+As noted above, this memory level is appropriate for running a basic system such as the "folio-snapshot" reference environment. So this default container memory setting should be as low as possible.
+
+NOTE: 20191024: During this transition phase this container memory was temporarily raised (see [FOLIO-2250](https://issues.folio.org/browse/FOLIO-2250)).
+Module developers: please determine the lowest possible container memory allocation, and adjust your setting (see [FOLIO-2315](https://issues.folio.org/browse/FOLIO-2315)).
 
 ### HostPort binding
 
