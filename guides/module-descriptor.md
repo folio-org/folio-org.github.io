@@ -75,7 +75,7 @@ TODO: Provide brief explanations of some sections.
 
 ### metadata
 
-The "metadata" section enables some additional items.
+The "metadata" section enables some additional descriptive items.
 The MD schema enables any JSON object.
 
 ## LaunchDescriptor properties
