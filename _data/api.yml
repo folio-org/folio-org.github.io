@@ -371,6 +371,7 @@ mod-finance-storage:
       - fund-distribution
       - fund-type
       - group
+      - group-budgets
       - group_fund_fy
       - ledger
       - transaction
