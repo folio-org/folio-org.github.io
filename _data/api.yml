@@ -160,6 +160,7 @@ mod-circulation:
     files:
       - circulation
       - end-patron-action-session
+      - inventory-reports
       - loan-anonymization
       - request-move
       - requests-reports
