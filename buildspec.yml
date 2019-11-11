@@ -10,8 +10,6 @@ env:
 
 phases:
   install:
-    runtime-versions:
-      ruby: 2.6
     commands:
       - gem install bundler
       - bundle install --path vendor/bundle
