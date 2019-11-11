@@ -10,6 +10,8 @@ env:
 
 phases:
   install:
+    runtime-versions:
+      ruby: 2.6
     commands:
       - bundle install --path vendor/bundle
   #pre_build:
