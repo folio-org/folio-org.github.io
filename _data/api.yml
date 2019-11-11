@@ -160,6 +160,7 @@ mod-circulation:
     files:
       - circulation
       - end-patron-action-session
+      - inventory-reports
       - loan-anonymization
       - request-move
       - requests-reports
@@ -354,8 +355,9 @@ mod-finance:
       - fiscal-years
       - fund-types
       - funds
-      - ledgers
       - group-fund-fiscal-year
+      - groups
+      - ledgers
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-finance/schemas
 
