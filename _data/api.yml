@@ -160,6 +160,7 @@ mod-circulation:
     files:
       - circulation
       - end-patron-action-session
+      - inventory-reports
       - loan-anonymization
       - request-move
       - requests-reports
@@ -175,9 +176,10 @@ mod-circulation-storage:
       - circulation-rules-storage
       - loan-storage
       - loan-policy-storage
+      - request-policy-storage
       - request-preference-storage
       - request-storage
-      - request-policy-storage
+      - request-storage-batch
       - scheduled-notice-storage
       - fixed-due-date-schedule
       - cancellation-reason
@@ -350,9 +352,12 @@ mod-finance:
     directory: ramls
     files:
       - budgets
+      - fiscal-years
       - fund-types
       - funds
       - group-fund-fiscal-year
+      - groups
+      - ledgers
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-finance/schemas
 
@@ -368,6 +373,7 @@ mod-finance-storage:
       - fund-distribution
       - fund-type
       - group
+      - group-budgets
       - group_fund_fy
       - ledger
       - transaction

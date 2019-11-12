@@ -13,7 +13,7 @@ The [Jenkinsfile](/guides/jenkinsfile/#back-end-modules) for each back-end modul
 The configuration metadata for all raml-related back-end modules is manually managed at the [api.yml](https://github.com/folio-org/folio-org.github.io/blob/master/_data/api.yml) file.
 This configuration is utilised by both this `publishAPI` and the `runLintRamlCop` CI jobs, and by this website.
 
-Please ensure that the module's RAMLs can be processed. The guide [Use raml-cop to assess RAML, schema, and examples](/guides/raml-cop/) will assist.
+Please ensure that the module's RAMLs can be processed without error. The guide [Use raml-cop to assess RAML, schema, and examples](/guides/raml-cop/) will assist.
 The quality of the generated documentation depends on its input.
 Some RAML issues can cause the CI system to fail.
 It is available to run locally by cloning [folio-tools](https://github.com/folio-org/folio-tools).
@@ -26,11 +26,11 @@ Each RAML-related repository has an entry in the main [api.yml](https://github.c
 (See also the supporting [Groups](#groups-apigroupyml) below.)
 
 When your new project repository has its initial "ramls" directory established, there will be no configuration for it.
-That is okay, as the CI jobs will attempt to use the default [structure](/guides/commence-a-module/#back-end-ramls).
+That is okay, as the CI jobs will attempt to use the default [structure](/guides/commence-a-module/#back-end-ramls) and will automatically discover the files to be processed.
 
 The configuration is also needed for this website to produce the table in its [API documentation](/reference/api/).
 
-To add a new entry, copy the "default" entry shown at the top of that file.
+To add a new entry for a new module, copy the "default" entry shown at the top of that file.
 Follow the configuration of other similar modules.
 
 Prior to commit, ensure proper YAML format.
@@ -74,8 +74,8 @@ Usually this will be "ramls".
 The basename of the set of files to be processed.
 The order is the order of display in the table.
 
-Files that are not listed here will still be processed by the CI jobs.
-However they will only be shown in the table if they are listed here, as the website documentation system needs to know.
+RAML files that are not listed here will still be automatically discovered and processed by the CI jobs.
+However they will only be shown in the table if they are configured here, as the website documentation system needs to know.
 
 ### ramlutil
 
@@ -107,6 +107,8 @@ Set `multiple` to `true` if this module provides the "multiple" interface.
 Default is `false`, or this property can be omitted to denote that.
 
 ### rmb
+
+This property denotes that the module is based on the RAML Module Builder.
 
 The default is `true`, or this property can be omitted to denote that.
 

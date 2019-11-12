@@ -20,8 +20,11 @@ These include FOLIO Forums, monthly Sprint Reviews, and various special topics.
 
 ## One recent example
 
+FOLIO Roadmap Update (Daisy release) and Demonstration of ERM Apps
+(see [introduction](https://discuss.folio.org/t/folio-roadmap-update-daisy-release-and-demonstration-of-erm-apps/2640)).
+
 <div class="widget">
-{%- include widgets/youtube-player.html video='SVHU5nS-2fY' -%}
+{%- include widgets/youtube-player.html video='1QBaafg4n50' -%}
 </div>
 
 ## Selected others
