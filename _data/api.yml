@@ -208,6 +208,7 @@ mod-inventory-storage:
       - holdings-storage
       - holdings-type
       - holdings-note-type
+      - hrid-settings-storage
       - instance-storage
       - instance-storage-batch
       - instance-format
