@@ -377,6 +377,7 @@ mod-finance-storage:
       - group_fund_fy
       - ledger
       - transaction
+      - transaction-summary
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-finance/schemas
 
