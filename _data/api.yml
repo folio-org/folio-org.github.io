@@ -208,6 +208,7 @@ mod-inventory-storage:
       - holdings-storage
       - holdings-type
       - holdings-note-type
+      - hrid-settings-storage
       - instance-storage
       - instance-storage-batch
       - instance-format
@@ -742,3 +743,4 @@ mod-vendors:
       - vendor_type
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-vendors/schemas
+
