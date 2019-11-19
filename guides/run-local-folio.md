@@ -27,6 +27,49 @@ The guide to [Software Build Pipeline](/guides/automation/#software-build-pipeli
 
 The [Primer for front-end development](/start/primer-develop-frontend/) leads to some guides for establishing a front-end developer's environment.
 
+## Local module as Docker container
+
+Testing a back-end module as a Docker container using a Vagrant VM.
+This might be a useful technique for testing memory management and other settings for a containerized back-end module.
+
+* Bring up a FOLIO Vagrant VM (e.g. 'folio/testing') as normal with `vagrant up` and log in with `vagrant ssh`
+
+* Clone the module repository and build the backend module.
+
+```
+git clone --recursive https://github.com/folio-org/mod-marccat
+cd mod-marccat
+mvn clean install
+```
+
+* Build the Docker image from the repository's Dockerfile.
+
+```
+sudo docker build -t mod-marccat .
+```
+
+* Edit the module descriptor in the module's `target` directory. In the `launchDescriptor` object, change the `dockerImage` key to reflect the name of the container built in the previous step (in this example: `mod-marccat`).
+Make any other changes you want to test to the container or environment settings.
+Note that in the Vagrant VMs, database connection settings are overridden by system settings.
+
+* Post the updated module descriptor to Okapi.
+
+```
+curl -w '\n' -D - -X POST -d @target/ModuleDescriptor.json http://localhost:9130/_/proxy/modules
+```
+
+* Deploy the module and enable it for the tenant, using the module ID in the module descriptor (in this example: `mod-marccat-2.2.5-SNAPSHOT`).
+Note that for this example, all of the module's requirements are already satisfied by the installed FOLIO system in the VM.
+You may need to check the module's dependency graph first.
+
+```
+curl -w '\n' -D - -X POST -d '[{"id": "mod-marccat-2.2.5-SNAPSHOT", "action": "enable"}]' "http://localhost:9130/_/proxy/tenants/diku/install?deploy=true&tenantParameters=loadReference%3dtrue%2cloadSample%3dtrue"
+```
+
+The module should now be up and running for your tenant in a container.
+If there are issues, check the Okapi log at `/var/log/folio/okapi/okapi.log`
+or check the [container module log](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md#viewing-backend-module-logs) itself using `docker logs`.
+
 ## Deploy via local Okapi and Stripes
 
 Another way is to run directly on the host machine.
