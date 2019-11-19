@@ -175,6 +175,11 @@ This is now being applied to all modules. See [FOLIO-2358](https://issues.folio.
 
 Other necessary options can be appended (e.g. -XX:+PrintFlagsFinal).
 
+See one [explanation](https://stackoverflow.com/questions/53451103/java-using-much-more-memory-than-heap-size-or-size-correctly-docker-memory-limi/53624438#53624438) of Java memory footprint, monitoring, and profiling.
+
+Also [note](https://medium.com/adorsys/usecontainersupport-to-the-rescue-e77d6cfea712) that
+"setting -Xmx and -Xms disables the automatic heap sizing".
+
 ### env DB environment
 
 If the module uses a database, then it must provide the standard set of `DB_` settings shown in the [example](#example-launchdescriptors).
@@ -227,3 +232,32 @@ Other examples:
 * [mod-login](https://github.com/folio-org/mod-login/blob/master/descriptors/ModuleDescriptor-template.json)
   -- uses the dockerCMD.
 
+## Testing the modifications
+
+Use [jq](https://stedolan.github.io/jq/):
+
+```
+jq '.' descriptors/ModuleDescriptor-template.json
+```
+Use [z-schema](https://github.com/zaggino/z-schema):
+
+```
+z-schema --pedanticCheck \
+  ../okapi/okapi-core/src/main/raml/ModuleDescriptor.json \
+  descriptors/ModuleDescriptor-template.json
+```
+
+Deploy the module as a Docker container with a local FOLIO Vagrant VM (e.g. folio/testing).
+See [instructions](/guides/run-local-folio/#local-module-as-docker-container).
+
+Inspect the container, and gather some crude statistics:
+
+```
+vagrant ssh
+sudo docker ps  # and find your container ID
+sudo docker stats [CONTAINER...]
+sudo docker exec -it CONTAINER bash
+pmap -x 1
+```
+
+See other monitoring notes [above](#env-java_options).
