@@ -67,7 +67,7 @@ This is a typical directory layout, excluding the general boilerplate files and 
 
 ### Dockerfile {#back-end-dockerfile}
 
-The `Dockerfile`.
+The `Dockerfile`. See [explanation](/guides/module-descriptor/#dockerfile).
 
 ### Jenkinsfile {#back-end-jenkinsfile}
 

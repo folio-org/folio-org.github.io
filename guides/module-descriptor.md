@@ -166,7 +166,7 @@ The defaults also need to make sense in a cluster.
 
 This environment variable must at least have the setting as shown in the [example](#example-launchdescriptors), which enables Java to configure the specified [memory](#memory) for the container.
 
-The module's Dockerfile needs to use a base image that has the feature "UseContainerSupport" -- which was backported to Java 8 (8u191+). Use that in conjunction with "MaxRAMPercentage".
+<a id="dockerfile"></a>The module's Dockerfile needs to use a base image that has the feature "UseContainerSupport" -- which was backported to Java 8 (8u191+). Use that in conjunction with "MaxRAMPercentage".
 
 Use the [folioci/alpine-jre-openjdk8:latest](https://hub.docker.com/r/folioci/alpine-jre-openjdk8/tags)
 
