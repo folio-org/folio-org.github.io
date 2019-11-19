@@ -16,7 +16,8 @@ A complete system includes the Okapi gateway, the main back-end modules (especia
 sample data for tenants and users and items, and the Stripes UI development server configured for various client-side modules.
 
 Some of the regularly updated [Prebuilt Vagrant boxes](#prebuilt-vagrant-boxes) do provide a complete system to download as a virtual machine.
-It is also possible to utilise a box in conjunction with local development versions of the relevant parts.
+It is also possible to utilise a box in conjunction with local development versions of the relevant parts
+(refer to [Running backend modules on your host system](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md#running-backend-modules-on-your-host-system)).
 
 ## Prebuilt Vagrant boxes
 
