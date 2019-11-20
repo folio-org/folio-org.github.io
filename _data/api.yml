@@ -362,6 +362,7 @@ mod-finance:
       - group-fund-fiscal-year
       - groups
       - ledgers
+      - transaction
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-finance/schemas
 
