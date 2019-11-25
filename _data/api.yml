@@ -363,6 +363,7 @@ mod-finance:
       - groups
       - ledgers
       - transaction
+      - transaction-summary
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-finance/schemas
 
@@ -747,3 +748,4 @@ mod-vendors:
       - vendor_type
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-vendors/schemas
+
