@@ -132,10 +132,17 @@ All LDs must have the memory setting.
 
 The setting must be expressed as bytes.
 
-As noted above, this memory level is appropriate for running a basic system such as the "folio-snapshot" reference environment. So this default container memory setting should be as low as possible.
+Take care to have the correct number of digits, typically nine.
 
-NOTE: 20191024: During this transition phase this container memory was temporarily raised (see [FOLIO-2250](https://issues.folio.org/browse/FOLIO-2250)).
+As noted above, this memory level is appropriate for running a basic system such as the "folio-snapshot-load" reference environment and the Vagrant VMs. So this default container memory setting should be as low as possible.
+
+NOTE: 20191118:
 Module developers: please determine the lowest possible container memory allocation, and adjust your setting (see [FOLIO-2315](https://issues.folio.org/browse/FOLIO-2315)).
+
+With the new directions for LaunchDescriptors and Dockerfiles
+(see [FOLIO-2358](https://issues.folio.org/browse/FOLIO-2358)),
+and as shown in the [example](#example-launchdescriptors) below,
+two-thirds of the memory allocation will be reserved for heap space.
 
 ### HostPort binding
 
@@ -157,9 +164,21 @@ The defaults also need to make sense in a cluster.
 
 ### env JAVA_OPTIONS
 
-This environment variable must at least have the setting as shown in the [example](#example-launchdescriptors), which enables Java 10+ to set the specified [memory](#memory) for the container.
+This environment variable must at least have the setting as shown in the [example](#example-launchdescriptors), which enables Java to configure the specified [memory](#memory) for the container.
 
-Other necessary options can be appended.
+<a id="dockerfile"></a>The module's Dockerfile needs to use a base image that has the feature "UseContainerSupport" -- which was backported to Java 8 (8u191+). Use that in conjunction with "MaxRAMPercentage".
+
+Use the [folioci/alpine-jre-openjdk8:latest](https://hub.docker.com/r/folioci/alpine-jre-openjdk8/tags)
+
+NOTE: 20191118:
+This is now being applied to all modules. See [FOLIO-2358](https://issues.folio.org/browse/FOLIO-2358).
+
+Other necessary options can be appended (e.g. -XX:+PrintFlagsFinal).
+
+See one [explanation](https://stackoverflow.com/questions/53451103/java-using-much-more-memory-than-heap-size-or-size-correctly-docker-memory-limi/53624438#53624438) of Java memory footprint, monitoring, and profiling.
+
+Also [note](https://medium.com/adorsys/usecontainersupport-to-the-rescue-e77d6cfea712) that
+"setting -Xmx and -Xms disables the automatic heap sizing".
 
 ### env DB environment
 
@@ -176,6 +195,8 @@ The following example is for
 [mod-notes](https://github.com/folio-org/mod-notes/blob/master/descriptors/ModuleDescriptor-template.json)
 which does use a database.
 
+As explained [above](#env-java_options), this form needs the new folio docker image.
+
 ```json
   "launchDescriptor": {
     "dockerImage": "${artifactId}:${version}",
@@ -188,7 +209,7 @@ which does use a database.
     },
     "env": [
       { "name": "JAVA_OPTIONS",
-        "value": "-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"
+        "value": "-XX:MaxRAMPercentage=66.0"
       },
       { "name": "DB_HOST", "value": "postgres" },
       { "name": "DB_PORT", "value": "5432" },
@@ -210,5 +231,33 @@ Other examples:
   -- has greater memory allocation.
 * [mod-login](https://github.com/folio-org/mod-login/blob/master/descriptors/ModuleDescriptor-template.json)
   -- uses the dockerCMD.
-* [mod-source-record-storage](https://github.com/folio-org/mod-source-record-storage/blob/master/descriptors/ModuleDescriptor-template.json)
-  -- has additional environment variables.
+
+## Testing the modifications
+
+Use [jq](https://stedolan.github.io/jq/):
+
+```
+jq '.' descriptors/ModuleDescriptor-template.json
+```
+Use [z-schema](https://github.com/zaggino/z-schema):
+
+```
+z-schema --pedanticCheck \
+  ../okapi/okapi-core/src/main/raml/ModuleDescriptor.json \
+  descriptors/ModuleDescriptor-template.json
+```
+
+Deploy the module as a Docker container with a local FOLIO Vagrant VM (e.g. folio/testing).
+See [instructions](/guides/run-local-folio/#local-module-as-docker-container).
+
+Inspect the container, and gather some crude statistics:
+
+```
+vagrant ssh
+sudo docker ps  # and find your container ID
+sudo docker stats [CONTAINER...]
+sudo docker exec -it CONTAINER bash
+pmap -x 1
+```
+
+See other monitoring notes [above](#env-java_options).
