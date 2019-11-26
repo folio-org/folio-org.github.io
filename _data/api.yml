@@ -359,6 +359,7 @@ mod-finance:
       - fiscal-years
       - fund-types
       - funds
+      - group-fiscal-year-summaries
       - group-fund-fiscal-year
       - groups
       - ledgers
