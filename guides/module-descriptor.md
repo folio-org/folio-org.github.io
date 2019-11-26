@@ -134,7 +134,7 @@ The setting must be expressed as bytes.
 
 Take care to have the correct number of digits, typically nine.
 
-As noted above, this memory level is appropriate for running a basic system such as the "folio-snapshot" reference environment. So this default container memory setting should be as low as possible.
+As noted above, this memory level is appropriate for running a basic system such as the "folio-snapshot-load" reference environment and the Vagrant VMs. So this default container memory setting should be as low as possible.
 
 NOTE: 20191118:
 Module developers: please determine the lowest possible container memory allocation, and adjust your setting (see [FOLIO-2315](https://issues.folio.org/browse/FOLIO-2315)).
