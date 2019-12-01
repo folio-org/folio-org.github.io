@@ -162,6 +162,7 @@ mod-circulation:
       - end-patron-action-session
       - inventory-reports
       - loan-anonymization
+      - pick-slips
       - request-move
       - requests-reports
     ramlutil: ramls/raml-util
