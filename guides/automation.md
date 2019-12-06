@@ -58,7 +58,10 @@ There is no attempt to verify that the frontend dependencies are met by the back
 [https://folio-snapshot.aws.indexdata.com/](https://folio-snapshot.aws.indexdata.com/)
 
 Built every day, to finish about 03:50 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot/).)
-It consists of the master branch of each frontend module at that time, paired with the latest version of backend modules that meet the dependency requirements of the frontend.
+
+The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
+
+This build consists of the master branch of each frontend module at that time, paired with the latest version of backend modules that meet the dependency requirements of the frontend.
 There may still be errors because of API differences that aren't covered by the dependency requirements.
 The folio-snapshot is an alias for folio-snapshot-latest.
 
