@@ -91,6 +91,7 @@ Built every day, to finish about 01:30 UTC. (See [Jenkins job](https://jenkins-a
 [https://folio-daisy.aws.indexdata.com/](https://folio-daisy.aws.indexdata.com/)
 
 This is an environment for the most recent FOLIO Release Q3 2019 Daisy.
+Each nightly rebuild will pick up any hotfix updates that may have been released.
 Built every day, to finish about 03:30 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-q3.2-2019-release/).)
 
 ### Other notes
