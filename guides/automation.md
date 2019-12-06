@@ -83,8 +83,13 @@ The server is built every day, to finish about 02:00 UTC. (See [Jenkins job](htt
 
 [https://folio-release.aws.indexdata.com/](https://folio-release.aws.indexdata.com/)
 
-This build uses the latest compatible releases of each module.
 Built every day, to finish about 01:30 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-release/).)
+
+The set of frontend modules are those listed in the "master" branch of the Stripes Platform.
+The set of backend modules are those determined as dependencies of the frontend (plus some explicit extras).
+
+This build uses the latest compatible releases of each module, i.e. using only released versions of the software (no snapshots).
+It is a running preview of released code, leading up to the next quarterly release.
 
 ### folio-daisy
 
