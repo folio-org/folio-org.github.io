@@ -49,8 +49,14 @@ If an error message (in the 5** series) is shown for the entry point of these si
 
 [https://folio-testing.aws.indexdata.com/](https://folio-testing.aws.indexdata.com/)
 
-The frontend (Stripes) is rebuilt every even two hours from the latest master branch of the UI code, to finish about 10 minutes past. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-stripes/).)
-The backend (Okapi + modules) is built every day from the latest master branch of each backend module, to finish about 01:45 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend/).)
+The frontend (Stripes) is rebuilt every even two hours, to finish about 10 minutes past. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-stripes/).)
+The backend (Okapi + modules) is built every day, to finish about 01:45 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend/).)
+
+The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
+The frontend build consists of the master branch of each frontend module at that time.
+
+The set of backend modules is a list explicitly declared in folio-ansible.
+The backend build consists of the master branch of each backend module at that time.
 There is no attempt to verify that the frontend dependencies are met by the backend modules, so there may be errors caused by that mismatch.
 
 ### folio-snapshot
@@ -58,7 +64,10 @@ There is no attempt to verify that the frontend dependencies are met by the back
 [https://folio-snapshot.aws.indexdata.com/](https://folio-snapshot.aws.indexdata.com/)
 
 Built every day, to finish about 03:50 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot/).)
-It consists of the master branch of each frontend module at that time, paired with the latest version of backend modules that meet the dependency requirements of the frontend.
+
+The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
+
+This build consists of the master branch of each frontend module at that time, paired with the latest version of backend modules that meet the dependency requirements of the frontend.
 There may still be errors because of API differences that aren't covered by the dependency requirements.
 The folio-snapshot is an alias for folio-snapshot-latest.
 
@@ -83,14 +92,20 @@ The server is built every day, to finish about 02:00 UTC. (See [Jenkins job](htt
 
 [https://folio-release.aws.indexdata.com/](https://folio-release.aws.indexdata.com/)
 
-This build uses the latest compatible releases of each module.
 Built every day, to finish about 01:30 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-release/).)
+
+The set of frontend modules are those listed in the "master" branch of the Stripes Platform.
+The set of backend modules are those determined as dependencies of the frontend (plus some explicit extras).
+
+This build uses the latest compatible releases of each module, i.e. using only released versions of the software (no snapshots).
+It is a running preview of released code, leading up to the next quarterly release.
 
 ### folio-daisy
 
 [https://folio-daisy.aws.indexdata.com/](https://folio-daisy.aws.indexdata.com/)
 
 This is an environment for the most recent FOLIO Release Q3 2019 Daisy.
+Each nightly rebuild will pick up any hotfix updates that may have been released.
 Built every day, to finish about 03:30 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-q3.2-2019-release/).)
 
 ### Other notes
