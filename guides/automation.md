@@ -50,11 +50,14 @@ If an error message (in the 5** series) is shown for the entry point of these si
 [https://folio-testing.aws.indexdata.com/](https://folio-testing.aws.indexdata.com/)
 
 The frontend (Stripes) is rebuilt every even two hours, to finish about 10 minutes past (see Jenkins job: [folio-testing-stripes](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-stripes/)).
-The backend (Okapi + modules) is built every day, to finish about 01:45 UTC (see Jenkins job: [folio-testing-backend](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend/)).
-
 The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
 The frontend build consists of the master branch of each frontend module at that time.
 
+The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish about 25 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
+If successful, then this will regenerate the yarn.lock file of the Platform, to be utilised by the abovementioned folio-testing-stripes bundle job.
+So if there is an urgent need to rebuild "folio-testing" outside of normal automation, so as to include a new snapshot of a UI module, then this build needs to be re-run before the bundle build is re-run.
+
+The backend (Okapi + modules) is built every day, to finish about 01:45 UTC (see Jenkins job: [folio-testing-backend](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend/)).
 The set of backend modules is a list explicitly declared in folio-ansible.
 The backend build consists of the master branch of each backend module at that time.
 There is no attempt to verify that the frontend dependencies are met by the backend modules, so there may be errors caused by that mismatch.
