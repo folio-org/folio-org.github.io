@@ -52,12 +52,12 @@ Remember that there are other people utilising these systems.
 
 [https://folio-testing.aws.indexdata.com/](https://folio-testing.aws.indexdata.com/)
 
-The frontend (Stripes) is rebuilt every even two hours, to finish about 10 minutes past (see Jenkins job: [folio-testing-stripes](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-stripes/)).
+The frontend (Stripes) bundle is rebuilt every even two hours, to finish about 10 minutes past (see Jenkins job: [folio-testing-stripes](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-stripes/)).
 The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
 The frontend build consists of the master branch of each frontend module at that time.
 
 The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish about 25 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
-If successful, then this will regenerate the yarn.lock file of the Platform, to be utilised by the abovementioned folio-testing-stripes bundle job.
+If successful, then this will regenerate the yarn.lock file of the Platform, to be utilised by the abovementioned "folio-testing-stripes" bundle job.
 So if there is an urgent need to rebuild "folio-testing" outside of normal automation, so as to include a new snapshot of a UI module, then this build needs to be re-run before the bundle build is re-run.
 
 The backend (Okapi + modules) is built every day, to finish about 01:45 UTC (see Jenkins job: [folio-testing-backend](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend/)).
@@ -72,6 +72,10 @@ There is no attempt to verify that the frontend dependencies are met by the back
 Built every day, to finish about 03:50 UTC (see Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot/)).
 
 The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
+
+The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish about 25 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
+If successful, then this will regenerate the yarn.lock file of the Platform, to be utilised by the abovementioned "folio-snapshot" job.
+So if there is an urgent need to rebuild "folio-snapshot" outside of normal automation, so as to include a new snapshot of a UI module, then this build needs to be re-run before the "folio-snapshot" build is re-run.
 
 This build consists of the master branch of each frontend module at that time, paired with the latest version of backend modules that meet the dependency requirements of the frontend.
 There may still be errors because of API differences that aren't covered by the dependency requirements.
