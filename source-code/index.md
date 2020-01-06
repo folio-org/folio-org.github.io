@@ -127,9 +127,6 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-graphql](https://github.com/folio-org/mod-graphql)
   -- Executing GraphQL queries.
 
-- [mod-kb-ebsco](https://github.com/folio-org/mod-kb-ebsco)
-  -- Broker communication with the EBSCO knowledge base.
-
 - [mod-kb-ebsco-java](https://github.com/folio-org/mod-kb-ebsco-java)
   -- Broker communication with the EBSCO knowledge base.
 

@@ -33,7 +33,6 @@ inventory:
     - mod-circulation-storage
     - mod-inventory
     - mod-inventory-storage
-    - mod-kb-ebsco
     - mod-kb-ebsco-java
     - mod-oai-pmh
     - edge-oai-pmh
