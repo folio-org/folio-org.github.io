@@ -266,15 +266,6 @@ mod-invoice-storage:
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-invoice-storage/schemas
 
-mod-kb-ebsco:
-  - label: null
-    version1: true
-    directory: ramls
-    files:
-      - eholdings
-    ramlutil: ramls/raml-util
-    rmb: false
-
 mod-kb-ebsco-java:
   - label: null
     version1: true
