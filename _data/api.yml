@@ -266,20 +266,12 @@ mod-invoice-storage:
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-invoice-storage/schemas
 
-mod-kb-ebsco:
-  - label: null
-    version1: true
-    directory: ramls
-    files:
-      - eholdings
-    ramlutil: ramls/raml-util
-    rmb: false
-
 mod-kb-ebsco-java:
   - label: null
     version1: true
     directory: ramls
     files:
+      - custom-labels
       - eholdings
       - packages
       - providers
@@ -405,6 +397,7 @@ mod-orders:
     files:
       - acquisitions-units
       - order
+      - titles
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-orders-storage/schemas
 
@@ -426,6 +419,7 @@ mod-orders-storage:
       - purchase-order
       - receiving-history
       - reporting-code
+      - titles
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-orders-storage/schemas
 
@@ -751,4 +745,3 @@ mod-vendors:
       - vendor_type
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-vendors/schemas
-

@@ -15,6 +15,8 @@ NullObject to be used for the Null Object Pattern.
 A UUID has the form xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx where the version M must be [1-5]
 and the variant N must be [89abAB]
 
-See
+The shared `raml-util` repository has [schemas/uuid.schema](https://github.com/folio-org/raml/blob/raml1.0/schemas/uuid.schema) for UUID verification.
+
+See also
 [UUID at Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 

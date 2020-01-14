@@ -45,16 +45,22 @@ Similarly okapi can be accessed via `folio-testing-okapi` (and see notes in the 
 
 If an error message (in the 5** series) is shown for the entry point of these sites, then that probably means that it is in the process of being rebuilt (see its "Jenkins job" link).
 
+If there is a need to re-run a build outside of the normal automation, then co-ordinate that on the Slack channel #hosted-reference-envs.
+Remember that there are other people utilising these systems.
+
 ### folio-testing
 
 [https://folio-testing.aws.indexdata.com/](https://folio-testing.aws.indexdata.com/)
 
-The frontend (Stripes) is rebuilt every even two hours, to finish about 10 minutes past. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-stripes/).)
-The backend (Okapi + modules) is built every day, to finish about 01:45 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend/).)
-
+The frontend (Stripes) bundle is rebuilt every even two hours, to finish about 10 minutes past (see Jenkins job: [folio-testing-stripes](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-stripes/)).
 The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
 The frontend build consists of the master branch of each frontend module at that time.
 
+The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish about 25 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
+If successful, then this will regenerate the yarn.lock file of the Platform, to be utilised by the abovementioned "folio-testing-stripes" bundle job.
+So if there is an urgent need to rebuild "folio-testing" outside of normal automation, so as to include a new snapshot of a UI module, then this build needs to be re-run before the bundle build is re-run.
+
+The backend (Okapi + modules) is built every day, to finish about 01:45 UTC (see Jenkins job: [folio-testing-backend](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend/)).
 The set of backend modules is a list explicitly declared in folio-ansible.
 The backend build consists of the master branch of each backend module at that time.
 There is no attempt to verify that the frontend dependencies are met by the backend modules, so there may be errors caused by that mismatch.
@@ -63,9 +69,13 @@ There is no attempt to verify that the frontend dependencies are met by the back
 
 [https://folio-snapshot.aws.indexdata.com/](https://folio-snapshot.aws.indexdata.com/)
 
-Built every day, to finish about 03:50 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot/).)
+Built every day, to finish about 03:50 UTC (see Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot/)).
 
 The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
+
+The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish about 25 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
+If successful, then this will regenerate the yarn.lock file of the Platform, to be utilised by the abovementioned "folio-snapshot" job.
+So if there is an urgent need to rebuild "folio-snapshot" outside of normal automation, so as to include a new snapshot of a UI module, then this build needs to be re-run before the "folio-snapshot" build is re-run.
 
 This build consists of the master branch of each frontend module at that time, paired with the latest version of backend modules that meet the dependency requirements of the frontend.
 There may still be errors because of API differences that aren't covered by the dependency requirements.
@@ -86,13 +96,13 @@ This is the version that will be used by acceptance testers to verify that users
 
 When doing any substantial test data loading, then use this rather than the other systems.
 This the same as "folio-snapshot".
-The server is built every day, to finish about 02:00 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot-load/).)
+The server is built every day, to finish about 02:00 UTC (see Jenkins job: [folio-snapshot-load](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot-load/)).
 
 ### folio-release
 
 [https://folio-release.aws.indexdata.com/](https://folio-release.aws.indexdata.com/)
 
-Built every day, to finish about 01:30 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-release/).)
+Built every day, to finish about 01:25 UTC (see Jenkins job: [folio-release](https://jenkins-aws.indexdata.com/job/Automation/job/folio-release/)).
 
 The set of frontend modules are those listed in the "master" branch of the Stripes Platform.
 The set of backend modules are those determined as dependencies of the frontend (plus some explicit extras).
@@ -100,13 +110,13 @@ The set of backend modules are those determined as dependencies of the frontend 
 This build uses the latest compatible releases of each module, i.e. using only released versions of the software (no snapshots).
 It is a running preview of released code, leading up to the next quarterly release.
 
-### folio-daisy
+### folio-edelweiss
 
-[https://folio-daisy.aws.indexdata.com/](https://folio-daisy.aws.indexdata.com/)
+[https://folio-edelweiss.dev.folio.org/](https://folio-edelweiss.dev.folio.org/)
 
-This is an environment for the most recent FOLIO Release Q3 2019 Daisy.
+This is an environment for the most recent FOLIO Release Q4 2019 Edelweiss.
 Each nightly rebuild will pick up any hotfix updates that may have been released.
-Built every day, to finish about 03:30 UTC. (See [Jenkins job](https://jenkins-aws.indexdata.com/job/Automation/job/folio-q3.2-2019-release/).)
+Built every day, to finish about 01:25 UTC (see Jenkins job: [folio-q4-2019-release](https://jenkins-aws.indexdata.com/job/Automation/job/folio-q4-2019-release/)).
 
 ### Other notes
 
