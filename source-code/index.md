@@ -212,6 +212,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-custom-fields](https://github.com/folio-org/mod-custom-fields)
   -- Store and maintain custom fields.
 
+- [mod-data-export](https://github.com/folio-org/mod-data-export)
+  -- Export inventory instance records in binary MARC format.
+
 - [mod-data-import](https://github.com/folio-org/mod-data-import)
   -- Data import.
 
