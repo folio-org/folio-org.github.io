@@ -190,6 +190,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-orders-storage](https://github.com/folio-org/mod-orders-storage)
   -- Persistent storage of order data.
 
+- [mod-ncip](https://github.com/folio-org/mod-ncip)
+  -- NISO Circulation Interchange Protocol (NCIP).
+
 - [mod-receiving](https://github.com/folio-org/mod-receiving)
   -- Business logic for receiving and checking-in materials that have been ordered.
 
@@ -208,6 +211,9 @@ facilitated by the code in the `raml-module-builder` repository.
 
 - [mod-custom-fields](https://github.com/folio-org/mod-custom-fields)
   -- Store and maintain custom fields.
+
+- [mod-data-export](https://github.com/folio-org/mod-data-export)
+  -- Export inventory instance records in binary MARC format.
 
 - [mod-data-import](https://github.com/folio-org/mod-data-import)
   -- Data import.
@@ -274,6 +280,9 @@ facilitated by the code in the `raml-module-builder` repository.
 
 - [edge-common](https://github.com/folio-org/edge-common)
   -- Common/Shared library for Edge APIs.
+
+- [edge-ncip](https://github.com/folio-org/edge-ncip)
+  -- Edge API for mod-ncip.
 
 - [edge-oai-pmh](https://github.com/folio-org/edge-oai-pmh)
   -- Edge API for Metadata Harvesting.
