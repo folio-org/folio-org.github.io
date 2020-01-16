@@ -159,6 +159,7 @@ mod-circulation:
     directory: ramls
     files:
       - circulation
+      - declare-item-lost
       - end-patron-action-session
       - inventory-reports
       - loan-anonymization
@@ -579,6 +580,7 @@ mod-source-record-storage:
     files:
       - source-record-storage
       - source-record-storage-batch
+      - source-record-storage-handlers
     excludes:
       - raml-storage
     ramlutil: ramls/raml-storage/raml-util
