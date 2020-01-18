@@ -159,6 +159,7 @@ mod-circulation:
     directory: ramls
     files:
       - circulation
+      - circulation-rules
       - declare-item-lost
       - end-patron-action-session
       - inventory-reports
