@@ -159,6 +159,7 @@ mod-circulation:
     directory: ramls
     files:
       - circulation
+      - circulation-rules
       - declare-item-lost
       - end-patron-action-session
       - inventory-reports
@@ -591,6 +592,7 @@ mod-source-record-manager:
     directory: ramls
     files:
       - change-manager
+      - change-manager-handlers
       - mapping-rules-provider
       - metadata-provider
     excludes:
@@ -747,3 +749,4 @@ mod-vendors:
       - vendor_type
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-vendors/schemas
+
