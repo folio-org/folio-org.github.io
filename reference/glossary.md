@@ -299,6 +299,10 @@ Representational State Transfer architectural style, and RESTful web services, e
 
 The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework, is a special FOLIO module that abstracts much functionality and enables the developer to focus on implementing business functions.
 
+#### SO
+
+SysOps
+
 ### Terms S-Z
 
 #### Solr
@@ -376,3 +380,33 @@ refers to ANSI/NISO standard Z39.50, and ISO standard 23950
 "Information Retrieval (Z39.50): Application Service Definition and Protocol Specification".
 The Library of Congress is the
 [Z39.50 Maintenance Agency](https://loc.gov/z3950/agency/).
+
+## FOLIO Special Interest Groups (SIGs)
+
+#### RA
+
+Resource Access
+
+#### RM
+
+Resource Management
+
+#### MM
+
+Metadata Management
+
+#### UM
+
+User Management
+
+#### CO
+
+Community Outreach
+
+#### DM
+
+Data Migration
+
+#### LDP
+
+Library Data Platform - Reporting
