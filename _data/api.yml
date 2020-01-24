@@ -359,6 +359,7 @@ mod-finance:
       - group-fund-fiscal-year
       - groups
       - ledgers
+      - release-encumbrance
       - transaction
       - transaction-summary
     ramlutil: ramls/raml-util
