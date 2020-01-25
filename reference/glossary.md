@@ -41,6 +41,44 @@ is a summary of terms used in that context, e.g. component, package, module, app
 
 The "Okapi-Stripes Platform" and the "FOLIO LSP Base" and the "FOLIO LSP Extended Apps" are [defined](https://wiki.folio.org/x/kozc).
 
+## FOLIO Special Interest Groups (SIGs) {#sigs}
+
+For further information about SIGs and how to participate, refer to [Special Interest Groups](https://wiki.folio.org/display/PC/Special+Interest+Groups).
+
+Some abbreviations are provided below. Note that there are other SIGs besides these.
+
+### CO {#sig-co}
+
+Community Outreach
+
+### DM {#sig-dm}
+
+Data Migration
+
+### LDP {#sig-ldp}
+
+Library Data Platform - Reporting
+
+### MM {#sig-mm}
+
+Metadata Management
+
+### RA {#sig-ra}
+
+Resource Access
+
+### RM {#sig-rm}
+
+Resource Management
+
+### SO {#sig-so}
+
+SysOps
+
+### UM {#sig-um}
+
+User Management
+
 ## FOLIO Technologies and Concepts
 
 ### Terms A-F
@@ -103,6 +141,11 @@ For other relevant CQL examples see the first two items above, and the [API docs
 #### CRUD
 
 The basic functions of persistent storage: Create, Read, Update, Delete ([CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)).
+
+#### DevOps
+
+Combining software development and information technology operations:
+[DevOps](https://en.wikipedia.org/wiki/DevOps).
 
 #### Docker
 
@@ -175,6 +218,10 @@ Vocabularies that [define](/start/primer-raml/) the format of JSON instances.
 [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token)
 is a JSON-based open standard for creating tokens that assert some number
 of claims. JWTs are authenticated and encrypted, and used by Okapi.
+
+#### LDP
+
+Library Data Platform ([LDP](https://github.com/folio-org/ldp)) is an open source platform for reporting and analytics in libraries.
 
 #### LM
 
@@ -299,10 +346,6 @@ Representational State Transfer architectural style, and RESTful web services, e
 
 The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework, is a special FOLIO module that abstracts much functionality and enables the developer to focus on implementing business functions.
 
-#### SO
-
-SysOps
-
 ### Terms S-Z
 
 #### Solr
@@ -323,6 +366,11 @@ is "searchRetrieve Version 1.0, OASIS Standard".
 #### Stripes toolkit
 
 See [Stripes](#stripes) and the various [Stripes entities](#stripes-entities) explained above.
+
+#### SysOps
+
+System operators, systems administrators of multi-user computer systems:
+[Sysop](https://en.wikipedia.org/wiki/Sysop).
 
 #### TC
 
@@ -378,35 +426,9 @@ A generic term for Web Services Application Programming Interface (see [API](#ap
 [Z39.50](https://en.wikipedia.org/wiki/Z39.50)
 refers to ANSI/NISO standard Z39.50, and ISO standard 23950
 "Information Retrieval (Z39.50): Application Service Definition and Protocol Specification".
+
 The Library of Congress is the
 [Z39.50 Maintenance Agency](https://loc.gov/z3950/agency/).
 
-## FOLIO Special Interest Groups (SIGs)
+See [z2folio - the Z39.50-to-FOLIO gateway](https://github.com/folio-org/Net-Z3950-FOLIO).
 
-#### RA
-
-Resource Access
-
-#### RM
-
-Resource Management
-
-#### MM
-
-Metadata Management
-
-#### UM
-
-User Management
-
-#### CO
-
-Community Outreach
-
-#### DM
-
-Data Migration
-
-#### LDP
-
-Library Data Platform - Reporting
