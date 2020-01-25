@@ -142,6 +142,11 @@ For other relevant CQL examples see the first two items above, and the [API docs
 
 The basic functions of persistent storage: Create, Read, Update, Delete ([CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)).
 
+#### DevOps
+
+Combining software development and information technology operations:
+[DevOps](https://en.wikipedia.org/wiki/DevOps).
+
 #### Docker
 
 [Docker](https://www.docker.com) is a platform for managing software
@@ -361,6 +366,11 @@ is "searchRetrieve Version 1.0, OASIS Standard".
 #### Stripes toolkit
 
 See [Stripes](#stripes) and the various [Stripes entities](#stripes-entities) explained above.
+
+#### SysOps
+
+System operators, systems administrators of multi-user computer systems:
+[Sysop](https://en.wikipedia.org/wiki/Sysop).
 
 #### TC
 
