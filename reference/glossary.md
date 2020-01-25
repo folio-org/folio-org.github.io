@@ -41,7 +41,11 @@ is a summary of terms used in that context, e.g. component, package, module, app
 
 The "Okapi-Stripes Platform" and the "FOLIO LSP Base" and the "FOLIO LSP Extended Apps" are [defined](https://wiki.folio.org/x/kozc).
 
-## FOLIO Special Interest Groups (SIGs)
+## FOLIO Special Interest Groups (SIGs) {#sigs}
+
+For further information about SIGs and how to participate, refer to [Special Interest Groups](https://wiki.folio.org/display/PC/Special+Interest+Groups).
+
+Some abbreviations are provided below. Note that there are other SIGs besides these.
 
 ### CO {#sig-co}
 
