@@ -41,6 +41,36 @@ is a summary of terms used in that context, e.g. component, package, module, app
 
 The "Okapi-Stripes Platform" and the "FOLIO LSP Base" and the "FOLIO LSP Extended Apps" are [defined](https://wiki.folio.org/x/kozc).
 
+## FOLIO Special Interest Groups (SIGs)
+
+### RA
+
+Resource Access
+
+### RM
+
+Resource Management
+
+### MM
+
+Metadata Management
+
+### UM
+
+User Management
+
+### CO
+
+Community Outreach
+
+### DM
+
+Data Migration
+
+### LDP
+
+Library Data Platform - Reporting
+
 ## FOLIO Technologies and Concepts
 
 ### Terms A-F
@@ -381,32 +411,3 @@ refers to ANSI/NISO standard Z39.50, and ISO standard 23950
 The Library of Congress is the
 [Z39.50 Maintenance Agency](https://loc.gov/z3950/agency/).
 
-## FOLIO Special Interest Groups (SIGs)
-
-#### RA
-
-Resource Access
-
-#### RM
-
-Resource Management
-
-#### MM
-
-Metadata Management
-
-#### UM
-
-User Management
-
-#### CO
-
-Community Outreach
-
-#### DM
-
-Data Migration
-
-#### LDP
-
-Library Data Platform - Reporting
