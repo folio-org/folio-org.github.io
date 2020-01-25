@@ -43,22 +43,6 @@ The "Okapi-Stripes Platform" and the "FOLIO LSP Base" and the "FOLIO LSP Extende
 
 ## FOLIO Special Interest Groups (SIGs)
 
-### RA
-
-Resource Access
-
-### RM
-
-Resource Management
-
-### MM
-
-Metadata Management
-
-### UM
-
-User Management
-
 ### CO
 
 Community Outreach
@@ -70,6 +54,26 @@ Data Migration
 ### LDP
 
 Library Data Platform - Reporting
+
+### MM
+
+Metadata Management
+
+### RA
+
+Resource Access
+
+### RM
+
+Resource Management
+
+#### SO
+
+SysOps
+
+### UM
+
+User Management
 
 ## FOLIO Technologies and Concepts
 
@@ -328,10 +332,6 @@ Representational State Transfer architectural style, and RESTful web services, e
 #### RMB
 
 The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework, is a special FOLIO module that abstracts much functionality and enables the developer to focus on implementing business functions.
-
-#### SO
-
-SysOps
 
 ### Terms S-Z
 
