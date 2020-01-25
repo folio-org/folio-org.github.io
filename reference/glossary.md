@@ -43,35 +43,35 @@ The "Okapi-Stripes Platform" and the "FOLIO LSP Base" and the "FOLIO LSP Extende
 
 ## FOLIO Special Interest Groups (SIGs)
 
-### CO
+### CO {#sig-co}
 
 Community Outreach
 
-### DM
+### DM {#sig-dm}
 
 Data Migration
 
-### LDP
+### LDP {#sig-ldp}
 
 Library Data Platform - Reporting
 
-### MM
+### MM {#sig-mm}
 
 Metadata Management
 
-### RA
+### RA {#sig-ra}
 
 Resource Access
 
-### RM
+### RM {#sig-rm}
 
 Resource Management
 
-#### SO
+### SO {#sig-so}
 
 SysOps
 
-### UM
+### UM {#sig-um}
 
 User Management
 
