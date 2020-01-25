@@ -412,6 +412,9 @@ A generic term for Web Services Application Programming Interface (see [API](#ap
 [Z39.50](https://en.wikipedia.org/wiki/Z39.50)
 refers to ANSI/NISO standard Z39.50, and ISO standard 23950
 "Information Retrieval (Z39.50): Application Service Definition and Protocol Specification".
+
 The Library of Congress is the
 [Z39.50 Maintenance Agency](https://loc.gov/z3950/agency/).
+
+See [z2folio - the Z39.50-to-FOLIO gateway](https://github.com/folio-org/Net-Z3950-FOLIO).
 
