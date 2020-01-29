@@ -337,6 +337,9 @@ exists and can be run, the APIs are likely to change.
 - [stripes-acq-components](https://github.com/folio-org/stripes-acq-components)
   -- Stripes components that are specific to use cases that arise in Acquisitions-related modules.
 
+- [stripes-data-transfer-components](https://github.com/folio-org/stripes-data-transfer-components)
+  -- Stripes components that are specific to use cases that arise in ui-data-import and ui-data-export modules.
+
 - [stripes-erm-components](https://github.com/folio-org/stripes-erm-components)
   -- Stripes components that are specific to use cases that arise in ERM-related modules.
 
