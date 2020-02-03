@@ -69,12 +69,13 @@ notifications:
     - mod-pubsub
     - mod-pub-sub-poc
 data-import:
-  title: Data import
-  description: Importing and loading various data.
+  title: Data import and export
+  description: Importing and loading and exporting various data.
   modules:
     - mod-data-import
     - mod-data-import-converter-storage
     - mod-data-loader
+    - mod-data-export
     - mod-source-record-manager
     - mod-source-record-storage
     - mod-user-import

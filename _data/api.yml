@@ -575,6 +575,14 @@ mod-data-loader:
       - inventory
     ramlutil: ramls/inventory/raml-util
 
+mod-data-export:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - dataExport
+    ramlutil: ramls/raml-util
+
 mod-source-record-storage:
   - label: null
     version1: true
