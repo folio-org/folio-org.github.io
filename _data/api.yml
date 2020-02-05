@@ -273,6 +273,7 @@ mod-kb-ebsco-java:
     version1: true
     directory: ramls
     files:
+      - access-types
       - custom-labels
       - eholdings
       - packages
