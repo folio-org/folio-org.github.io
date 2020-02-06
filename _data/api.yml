@@ -160,6 +160,7 @@ mod-circulation:
     files:
       - circulation
       - circulation-rules
+      - claim-item-returned
       - declare-item-lost
       - end-patron-action-session
       - inventory-reports
