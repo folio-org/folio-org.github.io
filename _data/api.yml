@@ -160,6 +160,7 @@ mod-circulation:
     files:
       - circulation
       - circulation-rules
+      - claim-item-returned
       - declare-item-lost
       - end-patron-action-session
       - inventory-reports
@@ -759,4 +760,3 @@ mod-vendors:
       - vendor_type
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-vendors/schemas
-
