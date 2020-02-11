@@ -9,14 +9,14 @@ menuTopTitle: Guides
 ## Introduction
 
 Branch preview mode allows developers, product owners, and other interested parties to "preview"
-changes to FOLIO components on a live FOLIO system before merging them to the master branch. It's particularly useful for UI developers to either test or demonstrate feature branch code, but can also be used by backend developers to test module API features in the context of a FOLIO build.  The process includes a full or partial FOLIO build of either platform-complete or platform-core using the master branch of each of those repositories as a baseline for the build when a PR is opened.  Developers can substitute backend module feature branches or the master branch for released modules in the baseline in order to complement frontend module dependencies and other backend dependencies. 
+changes to FOLIO components on a live FOLIO system before merging them to the master branch. It's particularly useful for UI developers to either test or demonstrate feature branch code, but can also be used by backend developers to test module API features in the context of a FOLIO build.  The process includes a full or partial FOLIO build of either platform-complete or platform-core using the master branch of each of those repositories as a baseline for the build when a PR is opened.  Developers can substitute backend module feature branches or the master branch for released modules in the baseline in order to complement frontend module dependencies and other backend dependencies.
 
 
 ## How it works
 
 The following steps describe the process of creating a FOLIO preview build based on
 platform-core that consists of a frontend module feature branch and a backend module feature
-branch.  In this example we are including branch builds of mod-tags and ui-tags. 
+branch.  In this example we are including branch builds of mod-tags and ui-tags.
 
 **Step 1**
 
@@ -88,7 +88,7 @@ Edit 'package.json'.  Specify the branch of ui-tags we want to include in the bu
 '''
 
 
-Open a pull request against platform-core master branch.  This triggers a build of a FOLIO tenant on a Kubernetes cluster dedicated to CI. The tenant will be built using the modules specified in the 'okapi-install.json'.  If any modules are optionally specified in '.pr-custom-deps.json', they will replace the modules in 'okapi-install.json'.  A stripes bundle for the tenant is built based on what is specified in the `package.json` file and deployed to an Amazon s3 bucket. Jenkins will mark up the pull request with a link to the stripes bundle and the tenant admin user name.  The password is always 'admin'. 
+Open a pull request against platform-core master branch.  This triggers a build of a FOLIO tenant on a Kubernetes cluster dedicated to CI. The tenant will be built using the modules specified in the 'okapi-install.json'.  If any modules are optionally specified in '.pr-custom-deps.json', they will replace the modules in 'okapi-install.json'.  A stripes bundle for the tenant is built based on what is specified in the `package.json` file and deployed to an Amazon s3 bucket. Jenkins will mark up the pull request with a link to the stripes bundle and the tenant admin user name.  The password is always 'admin'.
 
 
 **Notes**
@@ -98,7 +98,7 @@ retained on the Kubernetes cluster.  A preview cannot be built using older depen
 
 * There can be multiple build iterations for each PR.  A new tenant will be created for each iteration.  However, only one Stripes bundle is retained - the one produced from the latest build iteration.
 
-* The FOLIO PR preview tenant and AWS S3 bucket will remain available until the PR is closed.  
+* The FOLIO PR preview tenant and AWS S3 bucket will remain available until the PR is closed.
 
-* When closing platform PR, DO NOT MERGE, and remove the test branch. 
+* When closing platform PR, DO NOT MERGE, and remove the test branch.
 
