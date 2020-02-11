@@ -261,6 +261,7 @@ mod-invoice-storage:
     version1: true
     directory: ramls
     files:
+      - batch-group
       - invoice
       - invoice-line-number
       - invoice-number
