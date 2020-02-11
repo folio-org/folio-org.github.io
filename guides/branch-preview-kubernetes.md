@@ -18,7 +18,7 @@ The following steps describe the process of creating a FOLIO preview build based
 platform-core that consists of a frontend module feature branch and a backend module feature
 branch.  In this example we are including branch builds of mod-tags and ui-tags.
 
-**Step 1**
+### Step 1
 
 Edit the 'Jenkinsfile' for the backend module branch.  Add the 'doKubeDeploy' and
 'publishPreview' parameters.  Example Jenkinsfile configuration:
@@ -48,7 +48,7 @@ module and deploy to a FOLIO kubernetes cluster.  Branch build artifacts are ver
 POM_VERSION-PR_NUMBER.JENKINS_BUILD_NUMBER.   For example,  mod-tags-0.6.0-SNAPSHOT.35.1
 If build is successful, proceed to the next step.
 
-**Step 2**
+### Step 2
 
 Clone https://github.com/folio-org/platform-core.  Create a branch and create a file
 called '.pr-custom-deps.json' in the top-level directory of the checkout.  This is a json
@@ -91,7 +91,7 @@ Edit 'package.json'.  Specify the branch of ui-tags we want to include in the bu
 Open a pull request against platform-core master branch.  This triggers a build of a FOLIO tenant on a Kubernetes cluster dedicated to CI. The tenant will be built using the modules specified in the 'okapi-install.json'.  If any modules are optionally specified in '.pr-custom-deps.json', they will replace the modules in 'okapi-install.json'.  A stripes bundle for the tenant is built based on what is specified in the `package.json` file and deployed to an Amazon s3 bucket. Jenkins will mark up the pull request with a link to the stripes bundle and the tenant admin user name.  The password is always 'admin'.
 
 
-**Notes**
+## Notes
 
 * Only the latest three releases and two snapshots (master branch) of backend modules are
 retained on the Kubernetes cluster.  A preview cannot be built using older dependencies.
