@@ -159,6 +159,9 @@ mod-circulation:
     directory: ramls
     files:
       - circulation
+      - circulation-rules
+      - claim-item-returned
+      - declare-item-lost
       - end-patron-action-session
       - inventory-reports
       - loan-anonymization
@@ -271,6 +274,7 @@ mod-kb-ebsco-java:
     version1: true
     directory: ramls
     files:
+      - access-types
       - custom-labels
       - eholdings
       - packages
@@ -357,6 +361,7 @@ mod-finance:
       - group-fund-fiscal-year
       - groups
       - ledgers
+      - release-encumbrance
       - transaction
       - transaction-summary
     ramlutil: ramls/raml-util
@@ -572,6 +577,14 @@ mod-data-loader:
       - inventory
     ramlutil: ramls/inventory/raml-util
 
+mod-data-export:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - dataExport
+    ramlutil: ramls/raml-util
+
 mod-source-record-storage:
   - label: null
     version1: true
@@ -579,6 +592,7 @@ mod-source-record-storage:
     files:
       - source-record-storage
       - source-record-storage-batch
+      - source-record-storage-handlers
     excludes:
       - raml-storage
     ramlutil: ramls/raml-storage/raml-util
@@ -589,6 +603,7 @@ mod-source-record-manager:
     directory: ramls
     files:
       - change-manager
+      - change-manager-handlers
       - mapping-rules-provider
       - metadata-provider
     excludes:
