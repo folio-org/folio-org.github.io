@@ -9,7 +9,7 @@ menuTopTitle: Guides
 ## Introduction
 
 Branch preview mode allows developers, product owners, and other interested parties to "preview"
-changes to FOLIO components on a live FOLIO system before merging them to the master branch. It's particularly useful for UI developers to either test or demonstrate feature branch code, but can also be used by backend developers to test module API features in the context of a FOLIO build.  The process includes a full or partial FOLIO build of either platform-complete or platform-core using the master branch of each of those repositories as a baseline for the build when a PR is opened.  Developers can substitute backend module feature branches or the master branch for released modules in the baseline in order to complement frontend module dependencies and other backend dependencies.
+changes to FOLIO components on a live FOLIO system before merging them to the master branch. It is particularly useful for UI developers to either test or demonstrate feature branch code, but can also be used by backend developers to test module API features in the context of a FOLIO build.  The process includes a full or partial FOLIO build of either platform-complete or platform-core using the master branch of each of those repositories as a baseline for the build when a PR is opened.  Developers can substitute backend module feature branches or the master branch for released modules in the baseline in order to complement frontend module dependencies and other backend dependencies.
 
 
 ## How it works
@@ -46,13 +46,13 @@ buildMvn {
 Open PR for backend module branch.   This will initiate a branch build of the backend
 module and deploy to a FOLIO kubernetes cluster.  Branch build artifacts are versioned as
 `POM_VERSION-PR_NUMBER.JENKINS_BUILD_NUMBER` (for example: `mod-tags-0.6.0-SNAPSHOT.35.1`).
-If build is successful, proceed to the next step.
+If build is successful, then proceed to the next step.
 
 ### Step 2
 
 Clone https://github.com/folio-org/platform-core.  Create a branch and create a file
 called `.pr-custom-deps.json` in the top-level directory of the checkout.  This is a JSON
-list that includes the modules we are substituting for the default released modules currently
+list that includes the modules that we are substituting for the default released modules currently
 specified on master.
 
 Example `.pr-custom-deps.json` file:
@@ -60,13 +60,13 @@ Example `.pr-custom-deps.json` file:
 ```
 [
   {
-   "id" : "mod-tags-0.6.0-SNAPSHOT.35.1",
-   "action" : "enable"
+   "id": "mod-tags-0.6.0-SNAPSHOT.35.1",
+   "action": "enable"
   }
 ]
 ```
 
-Edit the `package.json` file.  Specify the branch of ui-tags we want to include in the build.
+Edit the `package.json` file.  Specify the branch of ui-tags that we want to include in the build.
 
 ```
 "dependencies": {
@@ -87,7 +87,7 @@ Edit the `package.json` file.  Specify the branch of ui-tags we want to include 
     ...
 ```
 
-Open a pull request against platform-core master branch.  This triggers a build of a FOLIO tenant on a Kubernetes cluster dedicated to CI. The tenant will be built using the modules specified in the `okapi-install.json` file.  If any modules are optionally specified in the `.pr-custom-deps.json` file, they will replace the modules in the `okapi-install.json` file.  A stripes bundle for the tenant is built based on what is specified in the `package.json` file and deployed to an Amazon s3 bucket. Jenkins will mark up the pull request with a link to the stripes bundle and the tenant admin user name.  The password is always 'admin'.
+Open a pull request against platform-core master branch.  This triggers a build of a FOLIO tenant on a Kubernetes cluster dedicated to CI. The tenant will be built using the modules specified in the `okapi-install.json` file.  If any modules are optionally specified in the `.pr-custom-deps.json` file, they will replace the modules in the `okapi-install.json` file.  A stripes bundle for the tenant is built based on what is specified in the `package.json` file, and is deployed to an Amazon s3 bucket. Jenkins will mark up the pull request with a link to the stripes bundle and the tenant admin user name.  The password is always 'admin'.
 
 
 ## Notes
@@ -95,9 +95,9 @@ Open a pull request against platform-core master branch.  This triggers a build 
 * Only the latest three releases and two snapshots (master branch) of backend modules are
 retained on the Kubernetes cluster.  A preview cannot be built using older dependencies.
 
-* There can be multiple build iterations for each PR.  A new tenant will be created for each iteration.  However, only one Stripes bundle is retained - the one produced from the latest build iteration.
+* There can be multiple build iterations for each PR.  A new tenant will be created for each iteration.  However, only one Stripes bundle is retained -- the one produced from the latest build iteration.
 
 * The FOLIO PR preview tenant and AWS S3 bucket will remain available until the PR is closed.
 
-* When closing platform PR, DO NOT MERGE, and remove the test branch.
+* When closing platform PR, **DO NOT MERGE**. Also remove the test branch.
 
