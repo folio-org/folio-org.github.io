@@ -9,115 +9,96 @@ menuTopTitle: Guides
 ## Introduction
 
 Branch preview mode allows developers, product owners, and other interested parties to "preview"
-changes to FOLIO components on a live FOLIO system before merging them to the master
-branch. This can be achieved by opening a pull request against platform-core and specifying preview artifacts in the package.json and okapi-install.json files for front and back-end modules respectively.
+changes to FOLIO components on a live FOLIO system before merging them to the master branch. It's particularly useful for UI developers to either test or demonstrate feature branch code, but can also be used by backend developers to test module API features in the context of a FOLIO build.  The process includes a full or partial FOLIO build of either platform-complete or platform-core using the master branch of each of those repositories as a baseline for the build when a PR is opened.  Developers can substitute backend module feature branches or the master branch for released modules in the baseline in order to complement frontend module dependencies and other backend dependencies. 
 
-**NOTE:** This is a proof-of-concept applying only to modules included in platform-core
 
 ## How it works
 
-Opening a pull request against platform-core triggers a build of a FOLIO tenant on a Kubernetes cluster dedicated to CI. The tenant will be built using the modules specified in the `okapi-install.json` and `install-extras.json` files on the branch of platform-core where the PR is issued from. A stripes bundle for the tenant is built based on what is specified in the `package.json` file and deployed to Amazon s3. Jenkins will mark up the pull request with a link to the front-end.
+The following steps describe the process of creating a FOLIO preview build based on
+platform-core that consists of a frontend module feature branch and a backend module feature
+branch.  In this example we are including branch builds of mod-tags and ui-tags. 
 
-The following steps make up a PR preview build:
+**Step 1**
 
-* A tenant is created on the Kubernetes FOLIO system for each build iteration of the PR. The tenant
-naming convention is "`GITHUB_PROJECT NAME_ + PR_NUMBER_ + JENKINS_BUILD_NUMBER`".
-For example, PR 64 for ui-users would create a tenant called 'ui_users_64_1'.  The tenant
-admin user for the tenant is the same as the tenant name + 'admin'.  For example, the tenant
-admin user for tenant, ui_users_64_1, would be 'ui_users_64_1_admin'. The tenant admin password
-in all cases is 'admin'.
+Edit the 'Jenkinsfile' for the backend module branch.  Add the 'doKubeDeploy' and
+'publishPreview' parameters.  Example Jenkinsfile configuration:
 
-* Tenant modules are enabled, and reference and sample data for select modules are loaded
-for the tenant.
-
-* The stripes webpack is distributed to an S3 web service.
-The UI is configured for the correct tenant and Okapi instance.
-An AWS S3 URL to the UI is appended to the pull request.
-
-All of the above steps happen more or less sequentially, so if a step fails for whatever reason,
-the build is marked as 'FAILED'.
-
-### Triggering a pull request on platform-core
-
-*Instructions for triggering a PR go here (any required changes to Jenkinsfile to activate)*
-
-### Including front-end preview artifacts in a pull request to platform core
-
-In order to build a preview system using front-end code that has not been merged to master, edit the `package.json` file on a branch of platform-core and edit the version of the module you would like to preview replacing the version number with a pointer to a github branch.
-
-For example, to build a preview system using unmerged code for ui users on a branch called "my-feature-branch", the entry for `@folio/users` in `package.json` might look like this:
-
-```
-    ...
-    "@folio/tenant-settings": "2.13.1",
-    "@folio/users": "git+https://github.com/folio-org/ui-users.git#my-feature-branch",
-    "react": "~16.8.6",
-    ...
-```
-
-### Publishing back-end preview artifacts
-
-It may be desirable to create a preview build that includes changes to back-end modules that have not been merged into master. To achieve this, open a pull request on the back-end module or modules with the publishPreview variable set to true in the main config, and in the docker configuration. A Jenkinsfile for a typical back-end module might look like this:
-
-```
+'''
 buildMvn {
-  publishModDescriptor = 'yes'
-  publishAPI = 'yes'
-  mvnDeploy = 'yes'
-  runLintRamlCop = 'yes'
-  publishPreview = 'yes'
+  publishModDescriptor = true
+  publishAPI = true
+  mvnDeploy = true
+  runLintRamlCop = true
+  doKubeDeploy = true     <---- Add this
+  publishPreview = true   <---- Add this
 
   doDocker = {
     buildJavaDocker {
-      publishMaster = 'yes'
-      publishPreview = 'yes'
-      healthChk = 'yes'
+      publishMaster = true
+      publishPreview = true  <---- Add this
+      healthChk = true
       healthChkCmd = 'curl -sS --fail -o /dev/null  http://localhost:8081/apidocs/ || exit 1'
     }
   }
 }
-```
+'''
 
-Making these changes will achieve the following:
-* If the docker build is successful, the image will be deployed temporarily to an internal docker registry at repository.folio.org. The image will be tagged with the version number, the pr number, and the build number. For example, mod-users-15.6.1-SNAPSHOT.11.2 where “15.6.1-SNAPSHOT” is the version, 11 is the PR number, and 2 is the build number.
-* A modified ModuleDescriptor will be posted to okapi-preview.ci.folio.org
-* The module will be deployed to the preview CI kubernetes namespace.
+Open PR for backend module branch.   This will initiate a branch build of the backend
+module and deploy to a FOLIO kubernetes cluster.  Branch build artifacts are versioned
+POM_VERSION-PR_NUMBER.JENKINS_BUILD_NUMBER.   For example,  mod-tags-0.6.0-SNAPSHOT.35.1
+If build is successful, proceed to the next step.
 
-### Including back-end preview artifacts in a platform
+**Step 2**
 
-Preview builds are driven by pull requests against platform-core or platform-complete. To include a preview artifact, update the okapi-install.json file and replace the id of the module you would like to preview with the preview version. The preview version is the module’s regular version number, with the pr and build numbers appended (mod-name-version.pr.build.) For example:
+Clone https://github.com/folio-org/platform-core.  Create a branch and create a file
+called '.pr-custom-deps.json' in the top-level directory of the checkout.  This is a json
+list that includes the modules we are substituting for the default released modules currently
+specified on master.
 
-...
-{
-  "id": "mod-users-SNAPSHOT-15.6.1",
-  "action": "enable"
-},...
+Example .pr-custom-deps.json file:
 
-should be replaced with:
+'''
+[
+  {
+   "id" : "mod-tags-0.6.0-SNAPSHOT.35.1",
+   "action" : "enable"
+  }
+]
+'''
 
-...
-{
-  "id": "mod-users-SNAPSHOT-15.6.1.11.2",
-  "action": "enable"
-},...
+Edit 'package.json'.  Specify the branch of ui-tags we want to include in the build.
 
-Bear in mind that the ModuleDescriptor for this preview artifact is not published to the folio-registry, and is only available on okapi-preview.ci.folio.org.
+'''
+"dependencies": {
+    "@folio/calendar": "2.7.2",
+    "@folio/checkin": "1.10.1",
+    "@folio/checkout": "2.0.1",
+    "@folio/circulation": "1.12.0",
+    "@folio/developer": "1.11.0",
+    "@folio/inventory": "1.13.3",
+    "@folio/myprofile": "1.8.0",
+    "@folio/plugin-find-instance": "1.6.0",
+    "@folio/plugin-find-user": "1.9.1",
+    "@folio/requests": "1.14.3",
+    "@folio/search": "1.10.0",
+    "@folio/servicepoints": "1.4.2",
+    "@folio/stripes": "2.12.1",
+    "@folio/tags": "folio-org/ui-tags#pr-preview-test", <--- HERE
+    ...
+'''
 
 
-## Current limitations
-
-* Only modules included in platform-core are currently deployed to Kubernetes on build. This means previews can only be built for modules included in platform-core.
-
-* Only the latest three releases and two snapshots of back-end modules are retained in Kubernetes. A preview cannot be built using older dependencies.
-
-* There can be multiple build iterations for each PR.  A new tenant will be created for each
-iteration. However, only one Stripes bundle is retained -- the one produced from the
-latest build iteration.
-
-* When a PR is closed, then all AWS S3 resources associated with the PR are removed.
+Open a pull request against platform-core master branch.  This triggers a build of a FOLIO tenant on a Kubernetes cluster dedicated to CI. The tenant will be built using the modules specified in the 'okapi-install.json'.  If any modules are optionally specified in '.pr-custom-deps.json', they will replace the modules in 'okapi-install.json'.  A stripes bundle for the tenant is built based on what is specified in the `package.json` file and deployed to an Amazon s3 bucket. Jenkins will mark up the pull request with a link to the stripes bundle and the tenant admin user name.  The password is always 'admin'. 
 
 
-## Feedback
+**Notes**
 
-Please post any issues or additional questions to the #devops channel on FOLIO Slack.
+* Only the latest three releases and two snapshots (master branch) of backend modules are
+retained on the Kubernetes cluster.  A preview cannot be built using older dependencies.
+
+* There can be multiple build iterations for each PR.  A new tenant will be created for each iteration.  However, only one Stripes bundle is retained - the one produced from the latest build iteration.
+
+* The FOLIO PR preview tenant and AWS S3 bucket will remain available until the PR is closed.  
+
+* When closing platform PR, DO NOT MERGE, and remove the test branch. 
 
