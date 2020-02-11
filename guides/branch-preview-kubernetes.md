@@ -23,7 +23,7 @@ branch.  In this example we are including branch builds of mod-tags and ui-tags.
 Edit the 'Jenkinsfile' for the backend module branch.  Add the 'doKubeDeploy' and
 'publishPreview' parameters.  Example Jenkinsfile configuration:
 
-'''
+```
 buildMvn {
   publishModDescriptor = true
   publishAPI = true
@@ -41,34 +41,34 @@ buildMvn {
     }
   }
 }
-'''
+```
 
 Open PR for backend module branch.   This will initiate a branch build of the backend
-module and deploy to a FOLIO kubernetes cluster.  Branch build artifacts are versioned
-POM_VERSION-PR_NUMBER.JENKINS_BUILD_NUMBER.   For example,  mod-tags-0.6.0-SNAPSHOT.35.1
+module and deploy to a FOLIO kubernetes cluster.  Branch build artifacts are versioned as
+`POM_VERSION-PR_NUMBER.JENKINS_BUILD_NUMBER` (for example: `mod-tags-0.6.0-SNAPSHOT.35.1`).
 If build is successful, proceed to the next step.
 
 ### Step 2
 
 Clone https://github.com/folio-org/platform-core.  Create a branch and create a file
-called '.pr-custom-deps.json' in the top-level directory of the checkout.  This is a json
+called `.pr-custom-deps.json` in the top-level directory of the checkout.  This is a JSON
 list that includes the modules we are substituting for the default released modules currently
 specified on master.
 
-Example .pr-custom-deps.json file:
+Example `.pr-custom-deps.json` file:
 
-'''
+```
 [
   {
    "id" : "mod-tags-0.6.0-SNAPSHOT.35.1",
    "action" : "enable"
   }
 ]
-'''
+```
 
-Edit 'package.json'.  Specify the branch of ui-tags we want to include in the build.
+Edit the `package.json` file.  Specify the branch of ui-tags we want to include in the build.
 
-'''
+```
 "dependencies": {
     "@folio/calendar": "2.7.2",
     "@folio/checkin": "1.10.1",
@@ -85,10 +85,9 @@ Edit 'package.json'.  Specify the branch of ui-tags we want to include in the bu
     "@folio/stripes": "2.12.1",
     "@folio/tags": "folio-org/ui-tags#pr-preview-test", <--- HERE
     ...
-'''
+```
 
-
-Open a pull request against platform-core master branch.  This triggers a build of a FOLIO tenant on a Kubernetes cluster dedicated to CI. The tenant will be built using the modules specified in the 'okapi-install.json'.  If any modules are optionally specified in '.pr-custom-deps.json', they will replace the modules in 'okapi-install.json'.  A stripes bundle for the tenant is built based on what is specified in the `package.json` file and deployed to an Amazon s3 bucket. Jenkins will mark up the pull request with a link to the stripes bundle and the tenant admin user name.  The password is always 'admin'.
+Open a pull request against platform-core master branch.  This triggers a build of a FOLIO tenant on a Kubernetes cluster dedicated to CI. The tenant will be built using the modules specified in the `okapi-install.json` file.  If any modules are optionally specified in the `.pr-custom-deps.json` file, they will replace the modules in the `okapi-install.json` file.  A stripes bundle for the tenant is built based on what is specified in the `package.json` file and deployed to an Amazon s3 bucket. Jenkins will mark up the pull request with a link to the stripes bundle and the tenant admin user name.  The password is always 'admin'.
 
 
 ## Notes
