@@ -219,6 +219,11 @@ Vocabularies that [define](/start/primer-raml/) the format of JSON instances.
 is a JSON-based open standard for creating tokens that assert some number
 of claims. JWTs are authenticated and encrypted, and used by Okapi.
 
+#### Kubernetes
+
+[Kubernetes](https://en.wikipedia.org/wiki/Kubernetes) (k8s) is a
+"platform for automating deployment, scaling, and operations of application containers across clusters of hosts".
+
 #### LDP
 
 Library Data Platform ([LDP](https://github.com/folio-org/ldp)) is an open source platform for reporting and analytics in libraries.
