@@ -79,6 +79,7 @@ mod-users:
       - groups
       - users
       - addressTypes
+      - patron-block-conditions
       - proxiesFor
     ramlutil: ramls/raml-util
 
