@@ -19,3 +19,6 @@ The project also uses BrowserStack to ensure the proper flow of user interface e
 
 <a href="https://lokalise.com/"><img src="/images/lokalise.png" alt="Lokalise logo" width="220" height="90" /></a><br />
 The FOLIO project is grateful for support from **Lokalise**.  Translators use [Lokalise](https://lokalise.com) to manage the [i18n](/faqs/explain-i18n/) workflow of creating localized strings for the FOLIO user interface and integrating that work into the FOLIO Project apps.
+
+<a href="https://aws.amazon.com/opensource/"><img src="/images/aws-open-source.jpg" alt="AWS Open Source logo" width="250" height="141" /></a><br />
+The FOLIO project is grateful for support from **Amazon Web Services** under the <a href="https://aws.amazon.com/blogs/opensource/aws-promotional-credits-open-source-projects/">AWS Promotional Credits for Open Source Projects</a> program.  The FOLIO project uses AWS for its continuous integration pipeline and its hosted reference environments.  The continuous integration pipeline enables developers to test their work before adding their changes to the project's code repositories, and the hosted reference environments allow the subject matter experts to provide feedback for features as they develop.
