@@ -385,6 +385,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-datasets](https://github.com/folio-org/ui-datasets)
   -- Stripes UI module: FOLIO Datasets based on Glint.
 
+- [ui-data-export](https://github.com/folio-org/ui-data-export)
+  -- Stripes UI module: Managing data export.
+
 - [ui-data-import](https://github.com/folio-org/ui-data-import)
   -- Stripes UI module: Managing batch data loader.
 
@@ -467,6 +470,9 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-plugin-find-erm-usage-data-provider](https://github.com/folio-org/ui-plugin-find-erm-usage-data-provider)
   -- Stripes UI plugin: ERM usage data provider finder.
+
+- [ui-plugin-find-finc-metadata-source](https://github.com/folio-org/ui-plugin-find-finc-metadata-source)
+  -- Stripes UI plugin: finc metadata sources finder.
 
 - [ui-plugin-find-import-profile](https://github.com/folio-org/ui-plugin-find-import-profile)
   -- Stripes UI plugin: Data Import profiles finder.
