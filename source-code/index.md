@@ -385,6 +385,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-datasets](https://github.com/folio-org/ui-datasets)
   -- Stripes UI module: FOLIO Datasets based on Glint.
 
+- [ui-data-export](https://github.com/folio-org/ui-data-export)
+  -- Stripes UI module: Managing data export.
+
 - [ui-data-import](https://github.com/folio-org/ui-data-import)
   -- Stripes UI module: Managing batch data loader.
 
