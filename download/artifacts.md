@@ -39,7 +39,7 @@ Example POM configuration:
 ```
 
 Browse at
-[https://repository.folio.org/#browse/browse/components](https://repository.folio.org/#browse/browse/components)
+[https://repository.folio.org/#browse/browse](https://repository.folio.org/#browse/browse)
 and see [Automation/Nexus Repository Manager](/guides/automation#nexus-repository-manager)
 for details.
 
