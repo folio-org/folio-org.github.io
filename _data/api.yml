@@ -263,6 +263,7 @@ mod-invoice-storage:
     directory: ramls
     files:
       - batch-group
+      - batch-voucher
       - batch-voucher-export-configuration
       - invoice
       - invoice-line-number
