@@ -253,6 +253,7 @@ mod-invoice:
     version1: true
     directory: ramls
     files:
+      - batch-group
       - invoice
       - voucher
     ramlutil: ramls/raml-util
