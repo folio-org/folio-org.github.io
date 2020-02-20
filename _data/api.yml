@@ -178,6 +178,7 @@ mod-circulation-storage:
     directory: ramls
     files:
       - anonymize-storage-loans
+      - check-in-storage
       - circulation-rules-storage
       - loan-storage
       - loan-policy-storage
@@ -253,6 +254,7 @@ mod-invoice:
     version1: true
     directory: ramls
     files:
+      - batch-group
       - invoice
       - voucher
     ramlutil: ramls/raml-util
@@ -263,6 +265,7 @@ mod-invoice-storage:
     directory: ramls
     files:
       - batch-group
+      - batch-voucher
       - batch-voucher-export-configuration
       - invoice
       - invoice-line-number
