@@ -80,6 +80,7 @@ mod-users:
       - users
       - addressTypes
       - patron-block-conditions
+      - patron-block-limits
       - proxiesFor
     ramlutil: ramls/raml-util
 
