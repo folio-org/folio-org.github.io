@@ -9,7 +9,7 @@ faqOrder: 2
 
 See also [CQL in the Glossary](/reference/glossary/#cql) for further CQL information.
 
-## CQL's exact match operator: ==
+## Exact match operator: == {#exact}
 
 The CQL query `field == "abc xyz"` matches `abc xyz` only. It does not match either `The abc xyz` or `xyz abc` or `abc xyz.` or `abc, xyz`.
 
@@ -19,7 +19,7 @@ The CQL query `field == "abc xyz*"` has the SQL equivalent `table.field LIKE 'ab
 
 The CQL query `field == "*abc xyz*"` has the SQL equivalent `table.field LIKE '%abc xyz%'`. This matches `abc xyz` and `abc xyz.` and `abc xyzq` and `abc xyz qqq` and `The abc xyz` and `The abc xyzq` and `The abc xyz qqq`. It does not match either `xyz abc` or `abc, xyz`. This is left and right truncation.
 
-## CQL's word match operators: =, adj, all, any
+## Word match operators: =, adj, all, any {#word}
 
 The four word match operators ignore punctuation and whitespace, and they match against words. Truncation of a word is possible using the \* wildcard, but only on the right, not on the left.
 
