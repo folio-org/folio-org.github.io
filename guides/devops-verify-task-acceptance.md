@@ -21,7 +21,7 @@ It explains how they are tested and verified for completeness and success, befor
 This scenario involves changes or new Ansible-related features to the
 [folio-ansible](https://github.com/folio-org/folio-ansible)
 or
-[folio-infrastructure](https://github.com/folio-org/folio-infrastructure)
+[folio-infrastructure](https://github.com/folio-org-priv/folio-infrastructure)
 repositories.
 
 These two repos consist of playbooks and roles that automate the provisioning of various FOLIO instances and services.

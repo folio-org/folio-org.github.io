@@ -22,7 +22,7 @@ Some are private, therefore only for people with relevant permissions.
 * [folio-ansible](https://github.com/folio-org/folio-ansible)
   -- Sample Ansible playbook and roles for FOLIO (and Vagrant).
 
-* [folio-infrastructure](https://github.com/folio-org/folio-infrastructure)
+* [folio-infrastructure](https://github.com/folio-org-priv/folio-infrastructure)
   -- Various infrastructure bits related to FOLIO.
 
 * [folio-tools](https://github.com/folio-org/folio-tools)
