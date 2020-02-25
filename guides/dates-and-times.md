@@ -10,7 +10,7 @@ This document describes the general principles regarding how FOLIO operates with
 
 FOLIO uses [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) as the standard to represent date and time format (i.e. a profile of ISO 8601).
 
-To support tenants that have locations and users in different time zones FOLIO plans to support [user-level time zone setting](https://issues.folio.org/browse/UXPROD-510).
+To support tenants that have locations and users in different time zones, FOLIO plans to support [user-level time zone setting](https://issues.folio.org/browse/UXPROD-510).
 
 ## Back-end APIs
 

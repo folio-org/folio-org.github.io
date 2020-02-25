@@ -51,8 +51,11 @@ The message on the GitHub PR will be something like: "Waiting for status to be r
 Being a required status check, this results in hold-ups with the PR.
 
 One cause is when GitHub [status](https://www.githubstatus.com/) is reporting problems with its notifications API, which the CLA agent uses to check PRs.
+Another cause might be the busy agent facility.
 
-The status check can be manually re-run using a URL of the form:
+However, be patient. Sometimes it is just slow, and doing manual refresh might not help.
+
+If it is truly seized, then the status check can be manually refreshed using a URL of the form:
 
 ```
 https://cla-assistant.io/check/folio-org/<repo>?pullRequest=<pr-number>
