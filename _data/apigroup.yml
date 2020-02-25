@@ -67,7 +67,6 @@ notifications:
     - mod-email
     - mod-sender
     - mod-pubsub
-    - mod-pub-sub-poc
 data-import:
   title: Data import and export
   description: Importing and loading and exporting various data.
