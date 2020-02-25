@@ -412,6 +412,7 @@ mod-orders-storage:
     files:
       - acquisitions-unit
       - alert
+      - configuration
       - orders
       - order-lines
       - order-invoice-relns
