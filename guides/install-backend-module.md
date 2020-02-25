@@ -47,9 +47,9 @@ Its properties will specify the memory allocation, whether this module utilises 
 
 ## Declare new module
 
-Prepare the Jira ticket to guide the process, and request that the new back-end module be enabled for the snapshot and testing. Specify "Development Team: Core: Platform" and "Labels: platform-backlog devops" to be prioritized and scheduled.
+Prepare the Jira ticket to guide the process, and request that the new back-end module be enabled for the snapshot and testing. Specify "Development Team: FOLIO DevOps" to be prioritized and scheduled.
 
-The Devops team will configure the module and conduct various configuration tests.
+The DevOps team will configure the module and conduct various configuration tests.
 
 ## Verify deployment
 
