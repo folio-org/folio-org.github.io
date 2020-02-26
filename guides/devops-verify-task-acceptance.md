@@ -8,7 +8,7 @@ menuTopTitle: Guides
 
 ## Introduction
 
-This document describes some common FOLIO DevOps related scenarios for the continuous integration and continuous deployment (CI/CD) related infrastructure.
+This document describes some common [FOLIO DevOps](/guides/devops-introduction/) related scenarios for the continuous integration and continuous deployment (CI/CD) related infrastructure.
 It explains how they are tested and verified for completeness and success, before the changes are "rolled out" into production.
 
 * [Ansible-related features](#ansible-related-features)
