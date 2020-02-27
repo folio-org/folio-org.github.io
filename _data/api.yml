@@ -248,6 +248,7 @@ mod-invoice:
     directory: ramls
     files:
       - batch-group
+      - batch-voucher-export-configuration
       - invoice
       - voucher
     ramlutil: ramls/raml-util
