@@ -52,7 +52,7 @@ The sequence must have the new module declared after the modules that provide it
 Also note that for the "snapshot" files, the module is declared in the main section.
 If the module is not to be pulled in by a front-end UI module, then it needs to be also declared in the "`add_modules`" section.
 Often that is the case because the development of a UI module is not yet ready to require it.
-(This section could later be tidied, when that is finally happening.)
+(This `group_vars` section could later be tidied, when that is finally happening.)
 
 Push the branch.
 
@@ -68,7 +68,7 @@ The sequence must have the new module declared after any modules that provide it
 
 Add testing configuration for the Jenkins jobs ...
 
-Add to the Jenkinsfiles to refer to the folio-infrastructure branch:
+Add to the Jenkinsfiles to refer to the folio-infrastructure branch:<br/>
 Replace `*/master` with `refs/heads/folio-2467-refenvs-ncip`
 
 ```
@@ -127,15 +127,15 @@ curl -s -S \
   | jq -r '.[] | select(.id | match("mod-"))[]' | sort
 ```
 
-Could also do ssh login to the AWS instance (search the output for "ec2-" to get the DNS name)
-and verify the module's docker logs.
+Do ssh login to the AWS instance (search the Jenkins build output for "ec2-" to get the DNS name)
+and confirm that the module's docker logs are not spewing errors.
 
 Could also verify via the front-end "Settings : Software versions" page (e.g.
 [folio-testing-test.aws.indexdata.com](https://folio-testing-test.aws.indexdata.com/settings/about)
 or
 [folio-snapshot-test.aws.indexdata.com](https://folio-snapshot-test.aws.indexdata.com/settings/about)).
-However remember that an automated job might be in-process to rebuild its front-end
-(as explained at the [reference environments](/guides/automation/#reference-environments).
+However remember that an automated job might be in-process to rebuild its front-end,
+as explained at the [reference environments](/guides/automation/#reference-environments).
 
 ## Do pull requests
 
