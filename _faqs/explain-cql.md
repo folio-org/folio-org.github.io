@@ -11,13 +11,84 @@ See also [CQL in the Glossary](/reference/glossary/#cql) for further CQL informa
 
 ## Exact match operator: == {#exact}
 
-The CQL query `field == "abc xyz"` matches `abc xyz` only. It does not match either `The abc xyz` or `xyz abc` or `abc xyz.` or `abc, xyz`.
+### Exact match examples 1 {#exact-examples-1}
 
-The SQL equivalent are `table.field = 'abc xyz'` and `table.field LIKE 'abc xyz'` (both are the same).
+Consider the CQL query:
+```
+field == "abc xyz"
+```
 
-The CQL query `field == "abc xyz*"` has the SQL equivalent `table.field LIKE 'abc xyz%'`. This matches `abc xyz` and `abc xyz.` and `abc xyzq` and `abc xyz qqq`. It does not match either `The abc xyz` or `xyz abc` or `abc, xyz`. This is a left bounded match with right truncation.
+It does match only:
+```
+abc xyz
+```
 
-The CQL query `field == "*abc xyz*"` has the SQL equivalent `table.field LIKE '%abc xyz%'`. This matches `abc xyz` and `abc xyz.` and `abc xyzq` and `abc xyz qqq` and `The abc xyz` and `The abc xyzq` and `The abc xyz qqq`. It does not match either `xyz abc` or `abc, xyz`. This is left and right truncation.
+It does not match:
+```
+The abc xyz
+xyz abc
+abc xyz.
+abc, xyz
+```
+
+This has the SQL equivalents (both are the same):<br/>
+`table.field = 'abc xyz'`<br/>
+`table.field LIKE 'abc xyz'`
+
+### Exact match examples 2 {#exact-examples-2}
+
+Consider the CQL query:
+```
+field == "abc xyz*"
+```
+
+This is a left bounded match with right truncation.
+
+It does match:
+```
+abc xyz
+abc xyz.
+abc xyzq
+abc xyz qqq
+```
+
+It does not match:
+```
+The abc xyz
+xyz abc
+abc, xyz
+```
+
+This has the SQL equivalent:<br/>
+`table.field LIKE 'abc xyz%'`
+
+### Exact match examples 3 {#exact-examples-3}
+
+Consider the CQL query:
+```
+field == "*abc xyz*"
+```
+This is left and right truncation.
+
+It does match:
+```
+abc xyz
+abc xyz.
+abc xyzq
+abc xyz qqq
+The abc xyz
+The abc xyzq
+The abc xyz qqq
+```
+
+It does not match:
+```
+xyz abc
+abc, xyz
+```
+
+This has the SQL equivalent:<br/>
+`table.field LIKE '%abc xyz%'`
 
 ## Word match operators: =, adj, all, any {#word}
 
@@ -33,13 +104,127 @@ It is implemented using [PostgreSQL's `to_tsvector @@ to_tsquery` full text sear
 
 `=` is a synonym for `adj`.
 
-Each of the CQL queries `field all "abc"`, `field any "abc"`, `field adj "abc"`, `field = "abc"` has the SQL equivalent `to_tsvector('simple', table.jsonb->>'field') @@ to_tsquery('simple', 'abc')`. Each matches `abc` and `The abc xyz` and `?abc!xyz`. Each does not match `abcd`.
+### Word match examples 1 {#word-examples-1}
 
-The CQL query `field all "abc xyz"` has the SQL equivalent `to_tsvector('simple', table.jsonb->>'field') @@ to_tsquery('simple', 'abc & xyz')`. It matches `abc xyz` and `xyz abc` and `The abc xyz qqq` and `abc, xyz.`. It does not match `abc xyzq`.
+Consider each of the CQL queries:
+```
+field all "abc"
+field any "abc"
+field adj "abc"
+field = "abc"
+```
 
-The CQL query `field any "abc xyz"` has the SQL equivalent `to_tsvector('simple', table.jsonb->>'field') @@ to_tsquery('simple', 'abc | xyz')`. It matches `abc` and `xyz` and `abc xyzq` and `abc xyz` and `abc, xyz.` and `xyz abc` and `The abc xyz qqq`. It does not match either `xyzq` or `qqq`.
+Each does match:
+```
+abc
+The abc xyz
+?abc!xyz
+```
 
-The CQL query `field = "abc xyz"` has the SQL equivalent `to_tsvector('simple', table.jsonb->>'field') @@ to_tsquery('simple', 'abc <-> xyz')`. It matches `abc xyz` and `The abc xyz qqq` and `abc, xyz.`. It does not match either `abc` or `xyz` or `xyz abc` or `abc xyzq`.
+Each does not match:
+```
+abcd
+```
 
-The CQL query `field = "abc*"` has the SQL equivalent `to_tsvector('simple', table.jsonb->>'field') @@ to_tsquery('simple', 'abc:*')`. It matches `abc` and `abcdef` and `The abcdef xyz` and `The!abcdef?xyz` and `xyz abc`. It does not match `xyzabc`.
+These have the SQL equivalent:<br/>
+`to_tsvector('simple', table.jsonb->>'field') @@ to_tsquery('simple', 'abc')`
+
+### Word match examples 2 {#word-examples-2}
+
+Consider the CQL query:
+```
+field all "abc xyz"
+```
+
+It does match:
+```
+abc xyz
+xyz abc
+The abc xyz qqq
+abc, xyz.
+```
+
+It does not match:
+```
+abc xyzq
+```
+
+This has the SQL equivalent:<br/>
+`to_tsvector('simple', table.jsonb->>'field') @@ to_tsquery('simple', 'abc & xyz')`
+
+### Word match examples 3 {#word-examples-3}
+
+Consider the CQL query:
+```
+field any "abc xyz"
+```
+
+It does match:
+```
+abc
+xyz
+abc xyzq
+abc xyz
+abc, xyz.
+xyz abc
+The abc xyz qqq
+```
+
+It does not match:
+```
+xyzq
+qqq
+```
+
+This has the SQL equivalent:<br/>
+`to_tsvector('simple', table.jsonb->>'field') @@ to_tsquery('simple', 'abc | xyz')`
+
+### Word match examples 4 {#word-examples-4}
+
+Consider the CQL query:
+```
+field = "abc xyz"
+```
+
+It does match:
+```
+abc xyz
+The abc xyz qqq
+abc, xyz.
+```
+
+It does not match:
+```
+abc
+xyz
+xyz abc
+abc xyzq
+```
+
+This has the SQL equivalent:<br/>
+`to_tsvector('simple', table.jsonb->>'field') @@ to_tsquery('simple', 'abc <-> xyz')`
+
+### Word match examples 5 {#word-examples-5}
+
+Consider the CQL query:
+```
+field = "abc*"
+```
+
+It does match:
+```
+abc
+abcdef
+The abcdef xyz
+The!abcdef?xyz
+xyz abc
+```
+
+It does not match:
+```
+xyzabc
+```
+
+This has the SQL equivalent:<br/>
+`to_tsvector('simple', table.jsonb->>'field') @@ to_tsquery('simple', 'abc:*')`
 
