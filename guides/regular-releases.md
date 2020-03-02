@@ -9,8 +9,11 @@ menuTopTitle: Guides
 The main set of FOLIO modules are coordinated to form a regular release.
 At this stage it happens on a quarterly basis.
 
-Refer to the [Releases](https://wiki.folio.org/display/REL/) area of the Wiki.
 The approximate dates and descriptive names (e.g. Daisy, Edelweiss, FameFlower) for upcoming releases are listed at [FOLIO Development Timeline Dates](https://wiki.folio.org/display/RPT/FOLIO+Apps+and+LDP+Release+Dates+Disambiguation+Table).
+
+Refer to the [community release notes](https://wiki.folio.org/display/COMMUNITY/Release+Notes).
+
+Refer to the [Releases](https://wiki.folio.org/display/REL/) area of the Wiki for co-ordination of the next release.
 
 The preparation for each release has a dedicated Slack [channel](/guidelines/which-forum/#slack)
 (`#releases`). There are various planning documents pinned there.
