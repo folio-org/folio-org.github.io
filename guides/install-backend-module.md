@@ -45,6 +45,12 @@ Ensure that this new module's [ModuleDescriptor](/guides/module-descriptor/) inc
 
 Its properties will specify the memory allocation, whether this module utilises a database, and can document other environment variables, etc.
 
+## Ensure local Docker
+
+Ensure that the module will operate with a local Vagrant VM.
+
+Follow the guide to verify [Local module as Docker container](/guides/run-local-folio/#local-module-as-docker-container).
+
 ## Declare new module
 
 Prepare the Jira ticket to guide the process, and request that the new back-end module be enabled for the snapshot and testing. Specify "Development Team: FOLIO DevOps" to be prioritized and scheduled.

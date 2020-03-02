@@ -9,7 +9,13 @@ faqOrder: 2
 
 See also [CQL in the Glossary](/reference/glossary/#cql) for further CQL information.
 
+See explanations and examples below for
+[Exact match operator](#exact) and [Word match operators](#word).
+
 ## Exact match operator: == {#exact}
+
+The CQL "exact match" operator (`==`) is used to exactly match the specified search term.
+Truncation is enabled using the \* wildcard, either on the right end or on the left end.
 
 ### Exact match examples 1 {#exact-examples-1}
 
@@ -92,7 +98,8 @@ This has the SQL equivalent:<br/>
 
 ## Word match operators: =, adj, all, any {#word}
 
-The four word match operators ignore punctuation and whitespace, and they match against words. Truncation of a word is possible using the \* wildcard, but only on the right, not on the left.
+The four word match operators ignore punctuation and whitespace, and they match against words.
+Truncation of a word is possible using the \* wildcard, but only on the right, not on the left.
 
 It is implemented using [PostgreSQL's `to_tsvector @@ to_tsquery` full text search](https://www.postgresql.org/docs/current/functions-textsearch.html).
 
