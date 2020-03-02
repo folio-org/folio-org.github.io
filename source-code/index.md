@@ -468,6 +468,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-plugin-find-erm-usage-data-provider](https://github.com/folio-org/ui-plugin-find-erm-usage-data-provider)
   -- Stripes UI plugin: ERM usage data provider finder.
 
+- [ui-plugin-find-finc-metadata-collection](https://github.com/folio-org/ui-plugin-find-finc-metadata-collection)
+  -- Stripes UI plugin: finc metadata collection finder.
+
 - [ui-plugin-find-finc-metadata-source](https://github.com/folio-org/ui-plugin-find-finc-metadata-source)
   -- Stripes UI plugin: finc metadata sources finder.
 
