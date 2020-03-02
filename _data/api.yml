@@ -209,6 +209,7 @@ mod-inventory-storage:
       - holdings-type
       - holdings-note-type
       - hrid-settings-storage
+      - instance-preceding-succeeding-titles
       - instance-storage
       - instance-storage-batch
       - instance-format
@@ -248,6 +249,7 @@ mod-invoice:
     directory: ramls
     files:
       - batch-group
+      - batch-voucher-export-configuration
       - invoice
       - voucher
     ramlutil: ramls/raml-util
