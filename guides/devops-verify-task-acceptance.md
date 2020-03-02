@@ -8,7 +8,7 @@ menuTopTitle: Guides
 
 ## Introduction
 
-This document describes some common FOLIO DevOps related scenarios for the continuous integration and continuous deployment (CI/CD) related infrastructure.
+This document describes some common [FOLIO DevOps](/guides/devops-introduction/) related scenarios for the continuous integration and continuous deployment (CI/CD) related infrastructure.
 It explains how they are tested and verified for completeness and success, before the changes are "rolled out" into production.
 
 * [Ansible-related features](#ansible-related-features)
@@ -21,7 +21,7 @@ It explains how they are tested and verified for completeness and success, befor
 This scenario involves changes or new Ansible-related features to the
 [folio-ansible](https://github.com/folio-org/folio-ansible)
 or
-[folio-infrastructure](https://github.com/folio-org/folio-infrastructure)
+[folio-infrastructure](https://github.com/folio-org-priv/folio-infrastructure)
 repositories.
 
 These two repos consist of playbooks and roles that automate the provisioning of various FOLIO instances and services.

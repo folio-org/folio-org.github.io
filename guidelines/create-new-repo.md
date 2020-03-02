@@ -96,7 +96,7 @@ For UI modules, when the new repository is ready, and its [translations](/guides
 then add the new module to Lokalise to enable the [translators](/faqs/explain-i18n/) to operate.
 
 Configuration of the new repository can only be done by people with appropriate access.
-See the folio-infrastructure lokalise-push [procedure](https://github.com/folio-org/folio-infrastructure/tree/master/lokalise-push).
+See the folio-infrastructure lokalise-push [procedure](https://github.com/folio-org-priv/folio-infrastructure/tree/master/lokalise-push).
 
 ## Next steps
 
