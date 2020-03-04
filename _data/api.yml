@@ -566,6 +566,7 @@ mod-data-import-converter-storage:
     directory: ramls
     files:
       - data-import-converter-storage
+      - form-configs-storage
     excludes:
       - raml-storage
     ramlutil: ramls/raml-storage/raml-util
