@@ -268,6 +268,11 @@ software is designed to serve multiple tenants, with appropriate
 security provisions and data separation. FOLIO is designed from the
 ground up to operate in a multitenant environment.
 
+#### MVP
+
+Market-Viable Platform (MVP).
+Refer to the [FOLIO Implementation Group](https://wiki.folio.org/display/COHORT2019/FOLIO+Implementation+Group).
+
 ### Terms N-R
 
 #### NCIP

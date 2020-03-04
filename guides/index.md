@@ -159,7 +159,8 @@ For people assisting with the FOLIO development operations infrastructure (DevOp
 For example regarding operation, enhancement, and configuration of Jenkins continuous integration.
 
 - [DevOps introduction](devops-introduction/).
-- [Verify task acceptance criteria](devops-verify-task-acceptance/).
+- [DevOps - Verify task acceptance criteria](devops-verify-task-acceptance/).
+- [DevOps - Install a new back-end module to reference environments](devops-install-backend-module/).
 
 ### Community
 
