@@ -249,6 +249,7 @@ mod-invoice:
     directory: ramls
     files:
       - batch-group
+      - batch-voucher
       - batch-voucher-export-configuration
       - invoice
       - voucher
