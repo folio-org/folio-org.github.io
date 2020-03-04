@@ -402,6 +402,7 @@ mod-orders:
     directory: ramls
     files:
       - acquisitions-units
+      - configuration
       - order
       - titles
     ramlutil: ramls/raml-util
