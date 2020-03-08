@@ -209,6 +209,7 @@ mod-inventory-storage:
       - holdings-type
       - holdings-note-type
       - hrid-settings-storage
+      - instance-bulk
       - instance-preceding-succeeding-titles
       - instance-storage
       - instance-storage-batch
@@ -263,6 +264,7 @@ mod-invoice-storage:
       - batch-group
       - batch-voucher
       - batch-voucher-export-configuration
+      - batch-voucher-exports
       - invoice
       - invoice-line-number
       - invoice-number
