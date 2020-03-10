@@ -47,6 +47,17 @@ Technical leads are also members of the Technical Design Owners.
 
 They may also be a Lead Maintainer for some modules.
 
+The technical lead from each team is responsible for reviewing pull requests created by their team, regardless of the repository involved.
+This duty may be delegated to a qualified member of their team, e.g. a backend/frontend lead.
+However, the responsibility ultimately lies with the tech lead.
+
+To help reduce the burden of PR reviews on lead maintainers, the technical leads are responsible for capturing feature level design on the wiki for purposes of knowledge sharing and eliciting early feedback from other tech leads and maintainers.
+
+Technical leads must have a succession plan with sufficient overlap for knowledge transfer.
+The onboarding and handoff process for a tech lead's successor must ensure that the new lead understands their responsibilities and duties.
+It must also include updating [team documentation](https://wiki.folio.org/display/FOLIJET/Folio+Development+Team+Home)
+to reflect new members and any role changes.
+
 ### Code Owner (CO)
 
 Code Owners are collectively responsible for technical aspects of a specific area of the project, for example, a module or shared library.
@@ -60,7 +71,8 @@ Code Owners are defined by a CODEOWNERS file in the GitHub repository for that a
 ### Lead Maintainer (LM)
 
 Each GitHub repository should be assigned a Lead Maintainer.
-They are responsible for executing the [release procedures](/guidelines/release-procedures/) for that area.
+They are responsible for executing the [release procedures](/guidelines/release-procedures/) for that area,
+as well as understanding the code and ensuring best practices are followed.
 
 The Lead Maintainer should also be a Code Owner for the repository.
 
@@ -148,16 +160,19 @@ Examples of when to do this:
   * Backend issues that are not testable via the UI are typically closed
   * Other issues should typically be marked as "In review"
 * Developer ensures that the master build is successful
+* Issues discovered after a PR has been merged will be resolved by the lead maintainer and relevant technical leads during retrospectives and/or out-of-band discussions.
 
 #### Service Level Agreement
 
 It is important that pull requests are reviewed in a timely manner in order to not hold up development work.
 
-Pull requests should have an initial review within 48 hours (this is an initial threshold to experiment). If no reviewer has allocated themselves within that time, the maintainer should:
-* Comment on the pull request, including the Code Owners team
-* Raise the topic on the #pull-requests channel on [Slack](/guidelines/which-forum/#slack)
+Pull requests should have an initial review within 48 hours (this is an initial threshold to experiment). If no reviewer has allocated themselves within that time, the maintainer should contact their technical lead.
 
-The group will then try to identify an initial reviewer.
+If additional review is desired, the maintainer might elicit help via:
+* Commenting on the pull request, including the Code Owners team
+* Raising the topic on the #pull-requests channel on [Slack](/guidelines/which-forum/#slack)
+
+The group will then try to identify additional reviewers.
 
 #### Outstanding decisions
 
