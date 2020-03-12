@@ -19,7 +19,7 @@ Take care to choose wisely for the [module name](/guidelines/naming-conventions/
 
 Open Jira tickets, so that the project is integrated into Jenkins, the correct permissions are set on the repo, and an appropriate Jira project can be created (if applicable).
 There is one example at [FOLIO-2113](https://issues.folio.org/browse/FOLIO-2113).
-Specify "Development Team: Core: Platform" and "Labels: platform-backlog devops" to be prioritized and scheduled.
+Specify "Development Team: FOLIO DevOps" to be prioritized and scheduled.
 
 ## Configuration at GitHub
 
