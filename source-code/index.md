@@ -166,6 +166,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-marccat](https://github.com/folio-org/mod-marccat)
   -- Metadata management and cataloging (MARCcat).
 
+- [mod-quick-marc](https://github.com/folio-org/mod-quick-marc)
+  -- Backend for quickMARC editor.
+
 - [acq-models](https://github.com/folio-org/acq-models)
   -- Shared repository for the models of the various acquisition modules.
 
@@ -393,6 +396,9 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-marccat](https://github.com/folio-org/ui-marccat)
   -- Stripes UI module: searching, sorting, filtering, viewing, editing and creating BIB record.
+
+- [ui-quick-marc](https://github.com/folio-org/ui-quick-marc)
+  -- Stripes UI module: quickMARC editor.
 
 - [ui-acquisition-units](https://github.com/folio-org/ui-acquisition-units)
   -- Stripes UI module: Management of Acquisition unit records.
