@@ -590,6 +590,7 @@ mod-data-export:
     directory: ramls
     files:
       - dataExport
+      - dataExport-FileDefinition
     ramlutil: ramls/raml-util
 
 mod-source-record-storage:
