@@ -90,7 +90,10 @@ Edit the `package.json` file.  Specify the branch of ui-tags that we want to inc
     ...
 ```
 
-Open a pull request against platform-core master branch.  This triggers a build of a FOLIO tenant on a Kubernetes cluster dedicated to CI. The tenant will be built using the modules specified in the `okapi-install.json` file.  If any modules are optionally specified in the `.pr-custom-deps.json` file, they will replace the modules in the `okapi-install.json` file.  A stripes bundle for the tenant is built based on what is specified in the `package.json` file, and is deployed to an Amazon s3 bucket.
+Open a pull request against platform-core master branch.
+Emphasise **DO NOT MERGE** in the PR title, or label, or both.
+
+This PR triggers a build of a FOLIO tenant on a Kubernetes cluster dedicated to CI. The tenant will be built using the modules specified in the `okapi-install.json` file.  If any modules are optionally specified in the `.pr-custom-deps.json` file, they will replace the modules in the `okapi-install.json` file.  A stripes bundle for the tenant is built based on what is specified in the `package.json` file, and is deployed to an Amazon s3 bucket.
 
 Jenkins will mark up the pull request with a link to the stripes bundle and the tenant admin user name.  The password is always 'admin'.
 The developers, testers, and POs can utilise that to verify the build.
