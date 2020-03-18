@@ -130,6 +130,8 @@ For example:<br/>
 [https://folio-snapshot-stable.aws.indexdata.com/stripes-install.json](https://folio-snapshot-stable.aws.indexdata.com/stripes-install.json)<br/>
 [https://folio-snapshot-stable.aws.indexdata.com/yarn.lock](https://folio-snapshot-stable.aws.indexdata.com/yarn.lock)
 
+The [FTP CI test server](/guides/ftp-ci-server/) is available to verify FTP operations for various applications, e.g. Acquisitions.
+
 ## Jenkins
 
 FOLIO projects are managed by the Jenkins host [https://jenkins-aws.indexdata.com](https://jenkins-aws.indexdata.com)
