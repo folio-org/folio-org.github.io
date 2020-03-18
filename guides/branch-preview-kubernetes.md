@@ -95,6 +95,12 @@ Open a pull request against platform-core master branch.  This triggers a build 
 Jenkins will mark up the pull request with a link to the stripes bundle and the tenant admin user name.  The password is always 'admin'.
 The developers, testers, and POs can utilise that to verify the build.
 
+### Step 3
+
+If changes are needed, then modify the backend or frontend module branch.
+If the backend module is updated, then modify its snapshot number in the platform `.pr-custom-deps.json` file.
+
+Re-run the PR, which will provide a new verification link and a new tenant admin user name.
 
 ## Notes
 
