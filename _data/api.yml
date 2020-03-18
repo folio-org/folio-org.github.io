@@ -262,6 +262,7 @@ mod-invoice:
       - batch-group
       - batch-voucher
       - batch-voucher-export-configuration
+      - batch-voucher-exports
       - invoice
       - voucher
     ramlutil: ramls/raml-util
