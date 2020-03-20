@@ -9,7 +9,7 @@ menuTopTitle: Guides
 The main set of FOLIO modules are coordinated to form a regular release.
 At this stage it happens on a quarterly basis.
 
-The approximate dates and descriptive names (e.g. Daisy, Edelweiss, FameFlower) for upcoming releases are listed at [FOLIO Development Timeline Dates](https://wiki.folio.org/display/RPT/FOLIO+Apps+and+LDP+Release+Dates+Disambiguation+Table).
+The approximate dates and descriptive names (e.g. Edelweiss, FameFlower, Goldenrod) for upcoming releases are listed at [FOLIO Development Timeline Dates](https://wiki.folio.org/display/RPT/FOLIO+Apps+and+LDP+Release+Dates+Disambiguation+Table).
 
 Refer to the [community release notes](https://wiki.folio.org/display/COMMUNITY/Release+Notes).
 
