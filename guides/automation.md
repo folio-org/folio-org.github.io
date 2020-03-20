@@ -110,13 +110,13 @@ The set of backend modules are those determined as dependencies of the frontend 
 This build uses the latest compatible releases of each module, i.e. using only released versions of the software (no snapshots).
 It is a running preview of released code, leading up to the next quarterly release.
 
-### folio-edelweiss
+### folio-fameflower
 
-[https://folio-edelweiss.dev.folio.org/](https://folio-edelweiss.dev.folio.org/)
+[https://folio-fameflower.dev.folio.org/](https://folio-fameflower.dev.folio.org/)
 
-This is an environment for the most recent FOLIO Release Q4 2019 Edelweiss.
+This is an environment for the most recent FOLIO Release Q1 2020 FameFlower.
 Each nightly rebuild will pick up any hotfix updates that may have been released.
-Built every day, to finish about 01:25 UTC (see Jenkins job: [folio-q4-2019-release](https://jenkins-aws.indexdata.com/job/Automation/job/folio-q4-2019-release/)).
+Built every day, to finish about 01:55 UTC (see Jenkins job: [folio-q1-2020-release](https://jenkins-aws.indexdata.com/job/Automation/job/folio-q1-2020-release/)).
 
 ### Other notes
 
@@ -129,6 +129,8 @@ For example:<br/>
 [https://folio-snapshot-stable.aws.indexdata.com/okapi-install.json](https://folio-snapshot-stable.aws.indexdata.com/okapi-install.json)<br/>
 [https://folio-snapshot-stable.aws.indexdata.com/stripes-install.json](https://folio-snapshot-stable.aws.indexdata.com/stripes-install.json)<br/>
 [https://folio-snapshot-stable.aws.indexdata.com/yarn.lock](https://folio-snapshot-stable.aws.indexdata.com/yarn.lock)
+
+The [FTP CI test server](/guides/ftp-ci-server/) is available to verify FTP operations for various applications, e.g. Acquisitions.
 
 ## Jenkins
 
