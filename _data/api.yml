@@ -393,7 +393,6 @@ mod-finance-storage:
       - finance-storage
       - fiscal-year
       - fund
-      - fund-distribution
       - fund-type
       - group
       - group-budgets
