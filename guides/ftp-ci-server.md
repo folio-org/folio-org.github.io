@@ -12,12 +12,11 @@ There is a File Transfer Protocol (FTP) server available for use with applicatio
 [reference environments](/guides/automation/#reference-environments).
 
 * Domain name: `ftp.ci.folio.org`
-* Username: `folio`
-* Password: ######## (contact DevOps)
+* Username: `folio` Password: `Ffx29%pu`
 
 The data store is short-lived and there is automatic [cleanup](#cleanup) after a certain age.
 
-Both plain [ftp](#ftp) and [sftp](#sftp) clients can be utilised.
+Both [sftp](#sftp) clients and plain [ftp](#ftp) clients can be utilised.
 
 There is only one user (`folio`).
 
@@ -86,7 +85,7 @@ curl -k "ftp://ftp.ci.folio.org/files/newdir/" --ftp-create-dirs \
 
 A cron job will automatically remove old files.
 
-The current setting is after 60 days.
+The current setting is after 7 days.
 
 Contact FOLIO DevOps if there is a need to vary that in special circumstances.
 
