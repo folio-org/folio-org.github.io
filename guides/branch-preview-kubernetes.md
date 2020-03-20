@@ -9,7 +9,9 @@ menuTopTitle: Guides
 ## Introduction
 
 Branch preview mode allows developers, product owners, and other interested parties to "preview"
-changes to FOLIO components on a live FOLIO system before merging them to the master branch. It is particularly useful for UI developers to either test or demonstrate feature branch code, but can also be used by backend developers to test module API features in the context of a FOLIO build.  The process includes a full or partial FOLIO build of either platform-complete or platform-core using the master branch of each of those repositories as a baseline for the build when a PR is opened.  Developers can substitute backend module feature branches or the master branch for released modules in the baseline in order to complement frontend module dependencies and other backend dependencies.
+changes to FOLIO components on a live FOLIO system before merging them to the master branch. It is particularly useful for UI developers to either test or demonstrate feature branch code, but can also be used by backend developers to test module API features in the context of a FOLIO build.
+
+The process includes a full or partial FOLIO build of either platform-complete or platform-core using the master branch of each of those repositories as a baseline for the build when a PR is opened.  Developers can substitute backend module feature branches or the master branch for released modules in the baseline in order to complement frontend module dependencies and other backend dependencies.
 
 
 ## How it works
@@ -50,7 +52,8 @@ If build is successful, then proceed to the next step.
 
 ### Step 2
 
-Clone https://github.com/folio-org/platform-core.  Create a branch and create a file
+Clone the [https://github.com/folio-org/platform-core](https://github.com/folio-org/platform-core) repository.
+Create a branch, and create a file
 called `.pr-custom-deps.json` in the top-level directory of the checkout.  This is a JSON
 list that includes the modules that we are substituting for the default released modules currently
 specified on master.
@@ -87,8 +90,20 @@ Edit the `package.json` file.  Specify the branch of ui-tags that we want to inc
     ...
 ```
 
-Open a pull request against platform-core master branch.  This triggers a build of a FOLIO tenant on a Kubernetes cluster dedicated to CI. The tenant will be built using the modules specified in the `okapi-install.json` file.  If any modules are optionally specified in the `.pr-custom-deps.json` file, they will replace the modules in the `okapi-install.json` file.  A stripes bundle for the tenant is built based on what is specified in the `package.json` file, and is deployed to an Amazon s3 bucket. Jenkins will mark up the pull request with a link to the stripes bundle and the tenant admin user name.  The password is always 'admin'.
+Open a pull request against platform-core master branch.
+Emphasise **DO NOT MERGE** in the PR title, or label, or both.
 
+This PR triggers a build of a FOLIO tenant on a Kubernetes cluster dedicated to CI. The tenant will be built using the modules specified in the `okapi-install.json` file.  If any modules are optionally specified in the `.pr-custom-deps.json` file, they will replace the modules in the `okapi-install.json` file.  A stripes bundle for the tenant is built based on what is specified in the `package.json` file, and is deployed to an Amazon s3 bucket.
+
+Jenkins will mark up the pull request with a link to the stripes bundle and the tenant admin user name.  The password is always 'admin'.
+The developers, testers, and POs can utilise that to verify the build.
+
+### Step 3
+
+If changes are needed, then modify the backend or frontend module branch.
+If the backend module is updated, then modify its snapshot number in the platform `.pr-custom-deps.json` file.
+
+Re-run the PR, which will provide a new verification link and a new tenant admin user name.
 
 ## Notes
 

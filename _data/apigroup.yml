@@ -87,6 +87,7 @@ utilities:
     - mod-calendar
     - mod-template-engine
     - mod-custom-fields
+    - mod-quick-marc
 infrastructure:
   title: Infrastructure
   description: Gateway, raml-util, RMB, monitoring, etc.

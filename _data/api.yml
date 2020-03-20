@@ -246,6 +246,16 @@ mod-inventory-storage:
       - statistical-code-type
     ramlutil: ramls/raml-util
 
+mod-quick-marc:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - records-editor
+    excludes:
+      - raml-storage
+    ramlutil: ramls/raml-storage/raml-util
+
 mod-invoice:
   - label: null
     version1: true
@@ -254,6 +264,7 @@ mod-invoice:
       - batch-group
       - batch-voucher
       - batch-voucher-export-configuration
+      - batch-voucher-exports
       - invoice
       - voucher
     ramlutil: ramls/raml-util
