@@ -114,9 +114,9 @@ It is a running preview of released code, leading up to the next quarterly relea
 
 [https://folio-fameflower.dev.folio.org/](https://folio-fameflower.dev.folio.org/)
 
-This is an environment for the most recent FOLIO Release Q1 2020 FameFlower.
+This is an environment for the most recent FOLIO Release Q1 2020 Fameflower.
 Each nightly rebuild will pick up any hotfix updates that may have been released.
-Built every day, to finish about 01:55 UTC (see Jenkins job: [folio-q1-2020-release](https://jenkins-aws.indexdata.com/job/Automation/job/folio-q1-2020-release/)).
+NOTE: Not yet automated (see Jenkins job: [folio-q1-2020-release](https://jenkins-aws.indexdata.com/job/Automation/job/folio-q1-2020-release/)).
 
 ### Other notes
 
