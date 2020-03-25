@@ -436,6 +436,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-notes](https://github.com/folio-org/ui-notes)
   -- Stripes UI module: notes helper.
 
+- [ui-oai-pmh](https://github.com/folio-org/ui-oai-pmh)
+  -- Stripes UI module: managing OAI PMH settings.
+
 - [ui-tags](https://github.com/folio-org/ui-tags)
   -- Stripes UI module: managing tag settings.
 
