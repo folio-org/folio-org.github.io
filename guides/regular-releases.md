@@ -9,16 +9,15 @@ menuTopTitle: Guides
 The main set of FOLIO modules are coordinated to form a regular release.
 At this stage it happens on a quarterly basis.
 
-The approximate dates and descriptive names (e.g. Edelweiss, FameFlower, Goldenrod) for upcoming releases are listed at [FOLIO Development Timeline Dates](https://wiki.folio.org/display/RPT/FOLIO+Apps+and+LDP+Release+Dates+Disambiguation+Table).
-
-Refer to the [community release notes](https://wiki.folio.org/display/COMMUNITY/Release+Notes).
-
 Refer to the [Releases](https://wiki.folio.org/display/REL/) area of the Wiki for co-ordination of the next release.
+The approximate dates and descriptive names (e.g. Edelweiss, Fameflower, Goldenrod) for upcoming releases are also listed there.
 
 The preparation for each release has a dedicated Slack [channel](/guidelines/which-forum/#slack)
 (`#releases`). There are various planning documents pinned there.
 
 The cut-off dates for module releases that are to be included, are also listed in those spreadsheets.
+
+Refer to the [community release notes](https://wiki.folio.org/display/COMMUNITY/Release+Notes).
 
 A typical strategy for a module development is to keep doing the normal work in feature branches and merging to master until its final release and cut-off date.
 
