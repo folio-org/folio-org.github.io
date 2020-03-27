@@ -133,7 +133,7 @@ We follow a variation of the Apache motto:
 
 - As explained in
   [Guidelines for Contributing Code](/guidelines/contributing/),
-  use Feature Branches for any task beyond a minor text edit.
+  use Feature Branches for any task.
 
 - Use a descriptive name for the branch, with an Issue tracker number
   if relevant, e.g. "folio-293-which-forum".
