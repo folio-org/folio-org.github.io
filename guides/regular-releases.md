@@ -6,7 +6,7 @@ menuInclude: no
 menuTopTitle: Guides
 ---
 
-The main set of FOLIO modules are coordinated to form a regular release.
+The main set of FOLIO modules are co-ordinated to form a regular release.
 At this stage it happens on a quarterly basis.
 
 Refer to the [Releases](https://wiki.folio.org/display/REL/) area of the Wiki for co-ordination of the next release.
@@ -17,7 +17,9 @@ The preparation for each release has a dedicated Slack [channel](/guidelines/whi
 
 The cut-off dates for module releases that are to be included, are also listed in those spreadsheets.
 
-Refer to the [community release notes](https://wiki.folio.org/display/COMMUNITY/Release+Notes).
+Refer to the [community release notes](https://wiki.folio.org/display/COMMUNITY/Release+Notes)
+and important upgrade considerations.
+Follow the [process](https://wiki.folio.org/pages/viewpage.action?pageId=36572486) for maintenance of those documents.
 
 A typical strategy for a module development is to keep doing the normal work in feature branches and merging to master until its final release and cut-off date.
 
