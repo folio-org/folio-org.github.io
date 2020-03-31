@@ -18,7 +18,7 @@ The preparation for each release has a dedicated Slack [channel](/guidelines/whi
 The cut-off dates for module releases that are to be included, are also listed in those spreadsheets.
 
 Refer to the [community release notes](https://wiki.folio.org/display/COMMUNITY/Release+Notes)
-and important upgrade considerations.
+for important upgrade considerations.
 Follow the [process](https://wiki.folio.org/pages/viewpage.action?pageId=36572486) for maintenance of those documents.
 
 A typical strategy for a module development is to keep doing the normal work in feature branches and merging to master until its final release and cut-off date.
