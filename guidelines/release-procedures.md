@@ -11,6 +11,7 @@ This document summarises the release procedures for FOLIO projects.
 * [Maven-based modules](#maven-based-modules)
 * [Stripes and UI modules](https://github.com/folio-org/stripes/blob/master/doc/release-procedure.md)
 * [Add to platforms](#add-to-platforms)
+* [Regular releases](#regular-releases)
 
 ## Introduction
 
@@ -253,7 +254,7 @@ If this was a bugfix release, and the platforms need to be updated while waiting
 
 ### Announce
 
-Send a note to #releases on Slack if relevant.
+Send a note to #releases channel on Slack.
 
 ## Stripes-based modules
 
@@ -325,4 +326,14 @@ Some example PRs:
 
 * [add mod-user-import](https://github.com/folio-org/platform-complete/pull/35)
 -- edits `install-extras.json` to add a back-end module that does not get included as a UI dependency.
+
+## Regular releases
+
+In addition to the normal release steps explained above, there are some additional steps at the time of [Regular FOLIO releases](/guides/regular-releases/).
+
+Be aware of the upcoming release dates and cut-off times.
+
+Follow the module co-ordination spreadsheets, and keep the information entries for your modules up-to-date.
+
+Ensure the accuracy of any "community release notes" for your modules.
 

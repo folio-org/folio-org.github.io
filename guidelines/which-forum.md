@@ -133,13 +133,14 @@ We follow a variation of the Apache motto:
 
 - As explained in
   [Guidelines for Contributing Code](/guidelines/contributing/),
-  use Feature Branches for any task beyond a minor text edit.
+  use Feature Branches for any task.
 
 - Use a descriptive name for the branch, with an Issue tracker number
   if relevant, e.g. "folio-293-which-forum".
 
 - In the Pull Request, describe your main changes. Also say whether
   it is now ready to merge, or that you are seeking feedback.
+  Follow the guidelines [Development, design, and review processes](/guidelines/development-design-review/).
 
 - To seek feedback on your work, use additional comments on your
   Pull Request. If the specific attention of certain people is needed,
