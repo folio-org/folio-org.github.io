@@ -14,7 +14,8 @@ designed to facilitate collaboration between disparate development teams.
 This glossary defines some terms to assist developers.
 Some other relevant documents are:
 [Acronyms](https://wiki.folio.org/display/PC/Acronyms),
-[Glossary](https://wiki.folio.org/display/PC/Glossary+of+Terms).
+[Glossary](https://wiki.folio.org/display/PC/Glossary+of+Terms),
+[Glossary](https://wiki.folio.org/display/FOLIOtips/Glossary).
 
 ## FOLIO Components
 
