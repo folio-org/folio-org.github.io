@@ -18,3 +18,6 @@ Follow that module's README introduction and documentation. At the end there sho
 See if it has any open issues that you could assist with, either by fixing it and sending a pull request, or even by adding issue comments about your further investigation.
 
 The [Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/#report-various-issues) encourage to report various issues.
+
+The FOLIO Technical Council has a list of current [Technical Skills in Demand](https://wiki.folio.org/display/TC/Technical+Skills+in+Demand).
+

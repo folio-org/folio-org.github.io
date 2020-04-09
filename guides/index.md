@@ -133,6 +133,8 @@ These are listed in the [Start](/start/) section.
 - [User experience design](user-experience-design/).
 - [Accessible Routing in FOLIO](https://github.com/folio-org/stripes-components/blob/master/docs/patterns/AccessibleRouting.md) explains assisted navigation.
 - [FOLIO App Information, Tips, and Tricks](https://wiki.folio.org/display/FOLIOtips/).
+  Provides overview information for each individual app.
+  Includes [Settings](https://wiki.folio.org/display/FOLIOtips/Settings) documentation for each individual app.
 - [Performance optimization](performance-optimization/).
 
 ### Tutorials
@@ -146,6 +148,7 @@ instructor-led workshop.
 - [Release procedures](/guidelines/release-procedures/).
 - [Regular FOLIO releases](regular-releases/).
 - [Search and report facilities](/search-other) (e.g. open pull requests needing review).
+- [Technical Designs and Decisions](https://wiki.folio.org/display/DD/). Wiki space to document feature-level designs and decisions.
 - [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/)
 and when ready [install](/faqs/how-to-install-new-module/) it to platform and reference environments for snapshot and testing builds.
 - [Rename a module](rename-module/).
