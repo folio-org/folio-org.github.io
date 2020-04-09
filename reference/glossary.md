@@ -248,6 +248,10 @@ Library Services Platform (LSP).
 plain text formatting syntax, used for documentation throughout the
 FOLIO code.
 
+#### MFHD
+
+MARC 21 Format for Holdings Data ([MFHD](https://www.loc.gov/marc/holdings/)).
+
 #### MongoDB
 
 [MongoDB](https://www.mongodb.com/) is an open source, schemaless
