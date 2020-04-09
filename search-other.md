@@ -37,7 +37,8 @@ Some example searches at FOLIO Wiki:
 * [All updates within the last month](https://wiki.folio.org/dosearchsite.action?cql=lastmodified+%3E%3D+now(%27-1M%27))
 * [FOLIO Codex Metadata Model](https://wiki.folio.org/dosearchsite.action?queryString=codex)
 * [Calendars](https://wiki.folio.org/dosearchsite.action?queryString=calendars)
-* [Technical Council (TC)](https://wiki.folio.org/dosearchsite.action?queryString="technical+council")
+* [Technical Council (TC)](https://wiki.folio.org/dosearchsite.action?queryString="technical+council") for phrase: "technical council"
+* [MARC/SRS](https://wiki.folio.org/dosearchsite.action?queryString=MARC+AND+SRS+AND+%22source+record%22) for boolean and phrase: MARC AND SRS AND "source record"
 
 Refer to specific
 [Confluence search help](https://confluence.atlassian.com/doc/confluence-search-syntax-158720.html).
