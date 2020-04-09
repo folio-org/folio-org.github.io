@@ -133,6 +133,8 @@ These are listed in the [Start](/start/) section.
 - [User experience design](user-experience-design/).
 - [Accessible Routing in FOLIO](https://github.com/folio-org/stripes-components/blob/master/docs/patterns/AccessibleRouting.md) explains assisted navigation.
 - [FOLIO App Information, Tips, and Tricks](https://wiki.folio.org/display/FOLIOtips/).
+  Provides overview information for each individual app.
+  Includes [Settings](https://wiki.folio.org/display/FOLIOtips/Settings) documentation for each individual app.
 - [Performance optimization](performance-optimization/).
 
 ### Tutorials
