@@ -294,6 +294,7 @@ mod-kb-ebsco-java:
       - access-types
       - custom-labels
       - eholdings
+      - kb-credentials
       - packages
       - providers
       - proxies
