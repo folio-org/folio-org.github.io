@@ -14,7 +14,8 @@ designed to facilitate collaboration between disparate development teams.
 This glossary defines some terms to assist developers.
 Some other relevant documents are:
 [Acronyms](https://wiki.folio.org/display/PC/Acronyms),
-[Glossary](https://wiki.folio.org/display/PC/Glossary+of+Terms).
+[Glossary](https://wiki.folio.org/display/PC/Glossary+of+Terms),
+[Glossary](https://wiki.folio.org/display/FOLIOtips/Glossary).
 
 ## FOLIO Components
 
@@ -248,6 +249,10 @@ Library Services Platform (LSP).
 plain text formatting syntax, used for documentation throughout the
 FOLIO code.
 
+#### MFHD
+
+MARC 21 Format for Holdings Data ([MFHD](https://www.loc.gov/marc/holdings/)).
+
 #### MongoDB
 
 [MongoDB](https://www.mongodb.com/) is an open source, schemaless
@@ -366,6 +371,10 @@ The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB
 #### SPA
 
 FOLIO is a single-page application ([SPA](https://en.wikipedia.org/wiki/Single-page_application)).
+
+#### SRS
+
+FOLIO Source Record Storage (SRS).
 
 #### SRU
 

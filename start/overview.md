@@ -51,6 +51,8 @@ For developers associated with the [EPAM](https://wiki.folio.org/display/FOLIJET
 
 For groups of developers from other institutions, contact the [FOLIO Product Council](https://wiki.folio.org/display/PC/FOLIO+Product+Council).
 
+The FOLIO Technical Council has a list of current [Technical Skills in Demand](https://wiki.folio.org/display/TC/Technical+Skills+in+Demand).
+
 ## Setup and configuration
 
 [FOLIO uses any programming language](/guides/any-programming-language/).

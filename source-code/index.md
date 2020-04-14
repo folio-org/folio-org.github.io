@@ -222,10 +222,10 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Data import converter storage.
 
 - [mod-source-record-storage](https://github.com/folio-org/mod-source-record-storage)
-  -- Persistent source record storage. Complements the data import module.
+  -- Persistent source record storage (SRS). Complements the data import module.
 
 - [mod-source-record-manager](https://github.com/folio-org/mod-source-record-manager)
-  -- Source record manager.
+  -- Source record manager (SRM).
 
 - [data-import-raml-storage](https://github.com/folio-org/data-import-raml-storage)
   -- Shared repository for the schemas of various data-import modules.
@@ -234,7 +234,7 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Persistent storage of organizations data.
 
 - [mod-agreements](https://github.com/folio-org/mod-agreements)
-  -- Electronic resource management (ERM)
+  -- Electronic resource management (ERM).
 
 - [mod-erm-usage](https://github.com/folio-org/mod-erm-usage)
   -- Store ERM usage statistics and access data to these statistics.
@@ -435,6 +435,9 @@ exists and can be run, the APIs are likely to change.
 
 - [ui-notes](https://github.com/folio-org/ui-notes)
   -- Stripes UI module: notes helper.
+
+- [ui-oai-pmh](https://github.com/folio-org/ui-oai-pmh)
+  -- Stripes UI module: managing OAI PMH settings.
 
 - [ui-tags](https://github.com/folio-org/ui-tags)
   -- Stripes UI module: managing tag settings.
