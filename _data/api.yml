@@ -153,6 +153,7 @@ mod-circulation:
     version1: true
     directory: ramls
     files:
+      - change-due-date
       - circulation
       - circulation-rules
       - claim-item-returned
@@ -291,6 +292,7 @@ mod-kb-ebsco-java:
     version1: true
     directory: ramls
     files:
+      - assigned-users
       - access-types
       - custom-labels
       - eholdings
