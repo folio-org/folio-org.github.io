@@ -56,6 +56,7 @@ finance:
     - mod-orders
     - mod-orders-storage
     - edge-orders
+    - mod-organizations
     - mod-organizations-storage
     - mod-gobi
 notifications:

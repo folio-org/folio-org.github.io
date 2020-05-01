@@ -459,6 +459,15 @@ edge-orders:
     ramlutil: null
     rmb: false
 
+mod-organizations:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+    excludes:
+      - acq-models
+    ramlutil: ramls/raml-util
+
 mod-organizations-storage:
   - label: null
     version1: true
