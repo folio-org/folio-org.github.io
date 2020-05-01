@@ -199,6 +199,9 @@ facilitated by the code in the `raml-module-builder` repository.
 - [mod-patron](https://github.com/folio-org/mod-patron)
   -- Allow 3rd party discovery services to perform FOLIO patron actions via the discovery service's UI.
 
+- [mod-patron-blocks](https://github.com/folio-org/mod-patron-blocks)
+  -- Automated patron blocks.
+
 - [mod-rtac](https://github.com/folio-org/mod-rtac)
   -- Real Time Availability Check.
   Enable third party discovery services to check for FOLIO inventory availability.
@@ -418,6 +421,9 @@ exists and can be run, the APIs are likely to change.
 - [ui-erm-usage](https://github.com/folio-org/ui-erm-usage)
   -- Stripes UI module: Managing ERM usage statistics.
 
+- [ui-ldp](https://github.com/folio-org/ui-ldp)
+  -- Management Console for the Library Data Platform ([LDP](https://github.com/folio-org/ldp)).
+
 - [ui-local-kb-admin](https://github.com/folio-org/ui-local-kb-admin)
   -- Stripes UI module: Manage the local KB for ERM.
 
@@ -574,6 +580,9 @@ exists and can be run, the APIs are likely to change.
 - [folio-isbn-util](https://github.com/folio-org/folio-isbn-util)
   -- ISBN number converter utilities.
 
+- [folio-liquibase-util](https://github.com/folio-org/folio-liquibase-util)
+  -- Liquibase utilities.
+
 - [folio-holdingsiq-client](https://github.com/folio-org/folio-holdingsiq-client)
   -- Client library to HoldingsIQ API.
 
@@ -586,6 +595,9 @@ exists and can be run, the APIs are likely to change.
 - [folio-perf-test](https://github.com/folio-org/folio-perf-test)
   -- Jenkins pipeline to test FOLIO performance.
 
+- [perf-testing](https://github.com/folio-org/perf-testing)
+  -- Tools and performance testing scripts (carrier-io).
+
 - [folio-api-tests](https://github.com/folio-org/folio-api-tests)
   -- Postman collections for backend modules.
 
@@ -594,6 +606,12 @@ exists and can be run, the APIs are likely to change.
 
 - [ldp-analytics](https://github.com/folio-org/ldp-analytics)
   -- Reports, queries and other data analysis code for the [LDP](https://github.com/folio-org/ldp).
+
+- [ldp-realtime](https://github.com/folio-org/ldp-realtime)
+  -- Real-time querying for the [LDP](https://github.com/folio-org/ldp).
+
+- [ldp-erm-doc](https://github.com/folio-org/ldp-erm-doc)
+  -- ERM reporting data dictionaries.
 
 - [rfcs](https://github.com/folio-org/rfcs)
   -- RFCs for changes to the FOLIO platform.

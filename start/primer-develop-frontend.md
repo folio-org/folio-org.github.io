@@ -12,6 +12,9 @@ Start with introduction to [user interface](/guides/#user-interface)
 and the [client-side](/source-code/#client-side) source code repositories.
 
 That leads to the Stripes [documentation](https://github.com/folio-org/stripes/blob/master/README.md) and overview of the main docs, and necessary background understanding.
+That overview leads to various other documentation, including the
+[stripes-components](https://github.com/folio-org/stripes-components) and
+[stripes-smart-components](https://github.com/folio-org/stripes-smart-components) which have documentation in the "lib" directory of each component.
 
 The foundation described in
 [The Stripes Module Developer's Guide](https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md) is necessary for developing UI modules using Stripes.

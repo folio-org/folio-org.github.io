@@ -10,7 +10,7 @@ The main set of FOLIO modules are co-ordinated to form a regular release.
 At this stage it happens on a quarterly basis.
 
 Refer to the [Releases](https://wiki.folio.org/display/REL/) area of the Wiki for co-ordination of the next release.
-The approximate dates and descriptive names (e.g. Edelweiss, Fameflower, Goldenrod) for upcoming releases are also listed there.
+The approximate dates and descriptive flower-based names (e.g. Edelweiss, Fameflower, Goldenrod) for upcoming releases are also listed there.
 
 The preparation for each release has a dedicated Slack [channel](/guidelines/which-forum/#slack)
 (`#releases`). There are various planning documents pinned there.

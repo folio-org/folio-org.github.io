@@ -102,7 +102,7 @@ The server is built every day, to finish about 02:00 UTC (see Jenkins job: [foli
 
 [https://folio-release.aws.indexdata.com/](https://folio-release.aws.indexdata.com/)
 
-Built every day, to finish about 01:25 UTC (see Jenkins job: [folio-release](https://jenkins-aws.indexdata.com/job/Automation/job/folio-release/)).
+Built every day, to finish about 01:40 UTC (see Jenkins job: [folio-release](https://jenkins-aws.indexdata.com/job/Automation/job/folio-release/)).
 
 The set of frontend modules are those listed in the "master" branch of the Stripes Platform.
 The set of backend modules are those determined as dependencies of the frontend (plus some explicit extras).
@@ -116,7 +116,7 @@ It is a running preview of released code, leading up to the next quarterly relea
 
 This is an environment for the most recent FOLIO Release Q1 2020 Fameflower.
 Each nightly rebuild will pick up any hotfix updates that may have been released.
-NOTE: Not yet automated (see Jenkins job: [folio-q1-2020-release](https://jenkins-aws.indexdata.com/job/Automation/job/folio-q1-2020-release/)).
+The server is built every day, to finish about 03:20 UTC (see Jenkins job: [folio-q1-2020-release](https://jenkins-aws.indexdata.com/job/Automation/job/folio-q1-2020-release/)).
 
 ### Other notes
 
