@@ -238,6 +238,11 @@ Library Data Platform ([LDP](https://github.com/folio-org/ldp)) is an open sourc
 
 Library Services Platform (LSP).
 
+#### LTI
+
+Learning Tools Interoperability
+([LTI](https://en.wikipedia.org/wiki/Learning_Tools_Interoperability)).
+
 #### MARC
 
 [MARC](https://en.wikipedia.org/wiki/MARC_standards)
