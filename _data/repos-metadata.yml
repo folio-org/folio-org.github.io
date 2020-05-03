@@ -1,0 +1,78 @@
+# List of repositories to provide documentation linkage metadata.
+#
+# Assists with automated creation of a cross-reference index.
+# The documentation URLs are starting points for further exploration.
+#
+# Note that there is a limited set of metadata items:
+#
+# name: This is the name of the GitHub repository, e.g. ui-users
+#   urlUserTips: URL of the most relevant FOLIOtips Wiki page.
+#   urlAppSettings: URL of the most relevant FOLIOtips/Settings Wiki page.
+#   furtherDescription: Additional text supplement the repo GitHub Description.
+#   urlsOther: Array of other doc URLs.
+#
+# Other metadata is automatically gleaned from other sources.
+# See https://dev.folio.org/source-code/xref/#further-information
+#
+---
+ui-users:
+  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Users
+  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Users
+  urlsOther:
+    - https://wiki.folio.org/display/FOLIOtips/Users+App+-+Creating+Fees+and+Fines
+
+ui-orders:
+  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Orders
+  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Orders
+
+edge-common:
+  urlsOther:
+    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-commonFramework
+
+edge-oai-pmh:
+  urlsOther:
+    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-oai-pmh
+
+edge-orders:
+  urlsOther:
+    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-orders
+
+edge-patron:
+  urlsOther:
+    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-patron
+
+edge-rtac:
+  urlsOther:
+    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-rtac
+
+edge-sip2:
+  urlsOther:
+    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-sip2
+
+edge-ncip:
+  urlsOther:
+    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-ncip
+
+stripes-components:
+  urlsOther:
+    - https://github.com/folio-org/stripes-components#links-to-documentation-of-specific-components-and-utilities
+    - https://github.com/folio-org/stripes-components/tree/master/lib
+
+stripes-smart-components:
+  urlsOther:
+    - https://github.com/folio-org/stripes-smart-components/tree/master/lib
+
+okapi:
+  urlsOther:
+    - https://github.com/folio-org/okapi/blob/master/doc/guide.md
+    - https://github.com/folio-org/okapi/blob/master/doc/index.md
+
+raml-module-builder:
+  urlsOther:
+    - https://github.com/folio-org/raml-module-builder/blob/master/doc/upgrading.md
+    - https://github.com/folio-org/raml-module-builder/blob/master/DB-schema-migration.md
+
+raml:
+  furtherDescription: This repository is the master location for the traits and resource types, while each module is the master for its own schemas, examples, and actual RAML files. It is included in other repositories via a git sub-module, usually called ramls/raml-util
+  urlsOther:
+    - https://dev.folio.org/reference/api/#raml

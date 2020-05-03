@@ -1,0 +1,17 @@
+---
+ui:
+  title: Frontend ui repos
+stripes:
+  title: Stripes repos
+platform:
+  title: Stripes platform repos
+backend-mod:
+  title: Backend mod repos
+backend-edge:
+  title: Backend edge repos
+backend-infrastructure:
+  title: Backend infrastructure repos
+raml-shared:
+  title: Shared RAML repos
+other:
+  title: Other repos
