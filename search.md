@@ -19,6 +19,6 @@ tertiary-column-content: column-2-search.html
 
 <ul id="searchResults"></ul>
 
-<script src="https://cdn.jsdelivr.net/npm/js-search@1.4.3/dist/umd/js-search.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-search@2.0.0/dist/umd/js-search.min.js"></script>
 <script src="/assets/js/search-dev.js"></script>
 
