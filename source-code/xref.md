@@ -12,24 +12,88 @@ menuSubIndex: 2
 
 List of modules and links to some related documentation.
 
-Last [gathered](#further-information) date:
-{{ site.data.repos.metadata.generatedDateTime | date_to_long_string }}
-
 {% assign urlGithub = "https://github.com/folio-org" %}
 {% assign urlApiBase = "https://dev.folio.org/reference/api" %}
+{% assign countTotal = site.data.repos.repos | size %}
+{% assign alpha = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" | split:"," %}
+{% assign numPerSection = 15 %}
+
+Last [gathered](#further-information) date:
+{{ site.data.repos.metadata.generatedDateTime | date_to_long_string }}
+({{ countTotal }} repositories).
 
 {% for group in site.data.repos-group %}
-  {% assign groupId = group[0] %}
-  {% assign repos = site.data.repos.repos | where:"repoType",groupId %}
+  {%- assign groupId = group[0] -%}
+  {%- assign groupStem = group[1].stem -%}
+  {%- assign repos = site.data.repos.repos | where:"repoType",groupId -%}
+  {%- assign countSection = repos | size -%}
   <h2 id="{{ groupId }}"> {{ group[1].title }} </h2>
-  {% for repo in repos %}
+  <p> {{ countSection }} repositories. </p>
+  {%- assign numSubSections = countSection | divided_by:numPerSection -%}
+  {%- assign remainder = countSection | modulo:numPerSection -%}
+  {%- if remainder > 0 and countSection > numPerSection -%}
+    {%- assign numSubSections = numSubSections | plus:1 -%}
+  {%- endif -%}
+  {%- if numSubSections == 1 -%}
+    {%- assign numSubSections = 0 -%}
+  {%- endif -%}
+  {%- comment -%} Build the arrays for subsection headings {%- endcomment -%}
+  {%- assign headingsString = "" -%}
+  {%- assign headingIdsString = "" -%}
+  {%- if numSubSections > 0 -%}
+    {%- assign numAlphasPerSubSection = 26 | divided_by:numSubSections -%}
+    {%- assign alphaNum = 0 -%}
+    {%- for i in (1..numSubSections) -%}
+      {%- assign alphaBegin = alpha[alphaNum] -%}
+      {%- assign alphaNum = alphaNum | plus:numAlphasPerSubSection -%}
+      {%- if alphaNum > 25 -%}
+        {%- assign alphaNum = 25 -%}
+      {%- endif -%}
+      {%- assign alphaEnd = alpha[alphaNum] -%}
+      {%- assign heading = "" | append:alphaBegin | append:"-" | append:alphaEnd | append:"," -%}
+      {%- assign headingsString = headingsString | append: heading -%}
+      {%- assign headingId = groupStem | append:alphaBegin | append:"-" | append:alphaEnd | downcase | append:"," -%}
+      {%- assign headingIdsString = headingIdsString | append: headingId -%}
+      {%- assign alphaNum = alphaNum | plus:1 -%}
+    {%- endfor -%}
+    {%- assign headings = headingsString | split:"," -%}
+    {%- assign headingIds = headingIdsString | split:"," -%}
+    {%- comment -%} Output the first sub-section heading. {%- endcomment -%}
+    {%- assign subSectionNum = 0 -%}
+    <h3 id="{{ headingIds[subSectionNum] }}"> {{ headings[subSectionNum] }} </h3>
+  {%- endif -%}
+  {%- for repo in repos -%}
     {%- assign repoName = repo.name -%}
     {%- assign metadata = site.data.repos-metadata[repoName] -%}
-    <h3 id="{{ repoName }}"> {{ repoName }} </h3>
+    {%- if numSubSections > 0 -%}
+      {%- comment -%} If repoName begins with char of next sub-section, then output sub-section heading. {%- endcomment -%}
+      {%- assign sectionChar = headingIds[subSectionNum] | slice:-1,1 | upcase -%}
+      {%- assign repoNameAlpha = repoName | remove_first:groupStem -%}
+      {%- assign repoNameChar = repoNameAlpha | slice:0 | upcase -%}
+      {%- assign charNum = 0 -%}
+      {%- for char in alpha -%}
+        {%- if char == sectionChar -%}
+          {%- assign sectionCharNum = charNum -%}
+        {%- endif -%}
+        {%- if char == repoNameChar -%}
+          {%- assign repoNameCharNum = charNum -%}
+        {%- endif -%}
+        {%- assign charNum = charNum | plus:1 -%}
+      {%- endfor -%}
+      {%- if repoNameCharNum > sectionCharNum -%}
+        {%- assign subSectionNum = subSectionNum | plus:1 -%}
+        <h3 id="{{ headingIds[subSectionNum] }}"> {{ headings[subSectionNum] }} </h3>
+      {%- endif -%}
+    {%- endif -%}
+    {%- if numSubSections > 0 -%}
+      <h4 id="{{ repoName }}"> {{ repoName }} </h4>
+    {%- else -%}
+      <h3 id="{{ repoName }}"> {{ repoName }} </h3>
+    {%- endif -%}
     {%- if repo.description -%}
-      {% capture desc %}{{ repo.description }}{% endcapture %}
-    {% else %}
-      {% capture desc %}[Not provided]{% endcapture %}
+      {%- capture desc -%}{{ repo.description }}{%- endcapture -%}
+    {%- else -%}
+      {%- capture desc -%}[Not provided]{%- endcapture -%}
     {%- endif -%}
     <p> Description: {{ desc }} </p>
     {%- if metadata.furtherDescription -%}
@@ -38,7 +102,7 @@ Last [gathered](#further-information) date:
     {%- capture urlRepo -%}{{ urlGithub }}/{{ repoName }}{%- endcapture -%}
     <p> GitHub README: <a href="{{ urlRepo }}">{{ urlRepo }}</a> </p>
     {%- if repo.docDirName -%}
-      {% capture urlGhDocs %}{{ urlGithub }}/{{ repoName }}/tree/master/{{ repo.docDirName }}{%- endcapture -%}
+      {%- capture urlGhDocs -%}{{ urlGithub }}/{{ repoName }}/tree/master/{{ repo.docDirName }}{%- endcapture -%}
       <p> GitHub other documentation: <a href="{{ urlGhDocs }}">{{ urlGhDocs }}</a> </p>
     {%- endif -%}
     {%- if metadata -%}
@@ -62,8 +126,8 @@ Last [gathered](#further-information) date:
       {%- capture urlApi -%}{{ urlApiBase }}/#{{ repoName }}{%- endcapture -%}
       <p> API documentation: <a href="{{ urlApi }}">{{ urlApi }}</a> </p>
     {%- endif -%}
-  {% endfor %}
-{% endfor %}
+  {%- endfor -%}
+{%- endfor -%}
 
 ## Further information
 
