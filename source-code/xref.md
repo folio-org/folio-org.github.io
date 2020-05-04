@@ -14,6 +14,7 @@ List of modules and links to some related documentation.
 
 {% assign urlGithub = "https://github.com/folio-org" %}
 {% assign urlApiBase = "https://dev.folio.org/reference/api" %}
+{% assign urlApiBaseLocal = "/reference/api" %}
 {% assign countTotal = site.data.repos.repos | size %}
 {% assign alpha = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" | split:"," %}
 {% assign numPerSection = 15 %}
@@ -124,7 +125,8 @@ Last [gathered](#further-information) date:
       {%- capture urlGhRaml -%}{{ urlGithub }}/{{ repoName }}/tree/master/{{ repo.ramlDirName }}{%- endcapture -%}
       <p> GitHub RAMLs directory: <a href="{{ urlGhRaml }}">{{ urlGhRaml }}</a> </p>
       {%- capture urlApi -%}{{ urlApiBase }}/#{{ repoName }}{%- endcapture -%}
-      <p> API documentation: <a href="{{ urlApi }}">{{ urlApi }}</a> </p>
+      {%- capture urlApiLocal -%}{{ urlApiBaseLocal }}/#{{ repoName }}{%- endcapture -%}
+      <p> API documentation: <a href="{{ urlApiLocal }}">{{ urlApi }}</a> </p>
     {%- endif -%}
   {%- endfor -%}
 {%- endfor -%}
