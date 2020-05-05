@@ -1,0 +1,29 @@
+---
+ui:
+  title: Frontend ui repos
+  stem: ui-
+ui-plugin:
+  title: Frontend ui plugin repos
+  stem: ui-plugin-
+stripes:
+  title: Stripes repos
+  stem: stripes-
+platform:
+  title: Stripes platform repos
+  stem: platform-
+backend-mod:
+  title: Backend mod repos
+  stem: mod-
+backend-edge:
+  title: Backend edge repos
+  stem: edge-
+backend-infrastructure:
+  title: Backend infrastructure repos
+raml-shared:
+  title: Shared RAML repos
+ldp:
+  title: Library Data Platform repos
+  stem: ldp-
+other:
+  title: Other repos
+  stem: other-

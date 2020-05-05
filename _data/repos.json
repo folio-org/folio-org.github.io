@@ -1,0 +1,1206 @@
+{
+  "metadata": {
+    "generatedDateTime": "2020-05-05T02:42:03.869441+00:00"
+  },
+  "repos": [
+    {
+      "description": "Central repository for the acquisition models",
+      "docDirName": null,
+      "name": "acq-models",
+      "repoType": "raml-shared"
+    },
+    {
+      "description": "The library to handle events from data-import",
+      "docDirName": null,
+      "name": "data-import-processing-core",
+      "repoType": "other"
+    },
+    {
+      "description": "Repository for data-import json schemas centralized for reusability",
+      "docDirName": null,
+      "name": "data-import-raml-storage",
+      "repoType": "raml-shared"
+    },
+    {
+      "description": "Library with common utilities for data-import modules",
+      "docDirName": null,
+      "name": "data-import-utils",
+      "repoType": "other"
+    },
+    {
+      "description": "a shared library/framework for edge APIs",
+      "docDirName": null,
+      "name": "edge-common",
+      "ramlDirName": null,
+      "repoType": "backend-edge"
+    },
+    {
+      "description": "Edge API for mod-ncip",
+      "docDirName": null,
+      "name": "edge-ncip",
+      "ramlDirName": null,
+      "repoType": "backend-edge"
+    },
+    {
+      "description": "Edge API for Metadata Harvesting",
+      "docDirName": null,
+      "name": "edge-oai-pmh",
+      "ramlDirName": "ramls",
+      "repoType": "backend-edge"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "edge-orders",
+      "ramlDirName": "ramls",
+      "repoType": "backend-edge"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "edge-patron",
+      "ramlDirName": "ramls",
+      "repoType": "backend-edge"
+    },
+    {
+      "description": "UUID resolver",
+      "docDirName": null,
+      "name": "edge-resolver",
+      "ramlDirName": null,
+      "repoType": "backend-edge"
+    },
+    {
+      "description": " Edge API for RTAC (RealTime Availability Check)",
+      "docDirName": null,
+      "name": "edge-rtac",
+      "ramlDirName": "ramls",
+      "repoType": "backend-edge"
+    },
+    {
+      "description": "3M Standard Interchange Protocol (SIP) support in FOLIO",
+      "docDirName": null,
+      "name": "edge-sip2",
+      "ramlDirName": null,
+      "repoType": "backend-edge"
+    },
+    {
+      "description": "Stripes's .eslintrc as an extensible shared config",
+      "docDirName": null,
+      "name": "eslint-config-stripes",
+      "repoType": "other"
+    },
+    {
+      "description": "Ansible playbook for FOLIO",
+      "docDirName": "doc",
+      "name": "folio-ansible",
+      "repoType": "other"
+    },
+    {
+      "description": "FOLIO postman collections for backend modules",
+      "docDirName": null,
+      "name": "folio-api-tests",
+      "repoType": "other"
+    },
+    {
+      "description": "Dependency Injection support for FOLIO backend modules",
+      "docDirName": null,
+      "name": "folio-di-support",
+      "repoType": "other"
+    },
+    {
+      "description": "Serves up GraphiQL for use with FOLIO",
+      "docDirName": null,
+      "name": "folio-graphiql",
+      "repoType": "other"
+    },
+    {
+      "description": "Client library to HoldingsIQ API",
+      "docDirName": null,
+      "name": "folio-holdingsiq-client",
+      "repoType": "other"
+    },
+    {
+      "description": "Runbooks for FOLIO installation",
+      "docDirName": null,
+      "name": "folio-install",
+      "repoType": "other"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "folio-integration-tests",
+      "repoType": "other"
+    },
+    {
+      "description": "ISBN number converter utilities",
+      "docDirName": null,
+      "name": "folio-isbn-util",
+      "repoType": "other"
+    },
+    {
+      "description": "Liquibase utilities",
+      "docDirName": null,
+      "name": "folio-liquibase-util",
+      "repoType": "other"
+    },
+    {
+      "description": "Website for FOLIO open source development",
+      "docDirName": null,
+      "name": "folio-org.github.io",
+      "repoType": "other"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "folio-perf-test",
+      "repoType": "other"
+    },
+    {
+      "description": "Examples of FOLIO modules",
+      "docDirName": "doc",
+      "name": "folio-sample-modules",
+      "repoType": "other"
+    },
+    {
+      "description": "Library with general purpose classes to help with FOLIO backend service development",
+      "docDirName": null,
+      "name": "folio-service-tools",
+      "repoType": "other"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "folio-test-env",
+      "repoType": "other"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "folio-testing-platform",
+      "repoType": "other"
+    },
+    {
+      "description": "Various tools and support glue for FOLIO CI",
+      "docDirName": null,
+      "name": "folio-tools",
+      "repoType": "other"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "inventory-sample-data",
+      "repoType": "other"
+    },
+    {
+      "description": "Shared library for Jenkins Pipeline",
+      "docDirName": null,
+      "name": "jenkins-pipeline-libs",
+      "repoType": "other"
+    },
+    {
+      "description": "Library Data Platform: an open source platform for reporting and analytics in libraries",
+      "docDirName": "doc",
+      "name": "ldp",
+      "repoType": "ldp"
+    },
+    {
+      "description": "Report queries and other data analysis code for the Library Data Platform",
+      "docDirName": null,
+      "name": "ldp-analytics",
+      "repoType": "ldp"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "ldp-erm-doc",
+      "repoType": "ldp"
+    },
+    {
+      "description": "Old version of the Library Data Platform",
+      "docDirName": null,
+      "name": "ldp-old",
+      "repoType": "ldp"
+    },
+    {
+      "description": "Proof of concept code for the Library Data Platform",
+      "docDirName": null,
+      "name": "ldp-prototype",
+      "repoType": "ldp"
+    },
+    {
+      "description": "Real-time querying for the Library Data Platform",
+      "docDirName": null,
+      "name": "ldp-realtime",
+      "repoType": "ldp"
+    },
+    {
+      "description": "Test data generator for the Library Data Platform",
+      "docDirName": "doc",
+      "name": "ldp-testdata",
+      "repoType": "ldp"
+    },
+    {
+      "description": "Integration tests for the Library Data Platform",
+      "docDirName": null,
+      "name": "ldp-tests",
+      "repoType": "ldp"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "ldp-tmp-drill",
+      "repoType": "ldp"
+    },
+    {
+      "description": "Provide asynchronous event service (AES)",
+      "docDirName": null,
+      "name": "mod-aes",
+      "ramlDirName": null,
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "A FOLIO Module for handling the server side work needed for the ERM system",
+      "docDirName": "doc",
+      "name": "mod-agreements",
+      "ramlDirName": null,
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Module for managing audit data",
+      "docDirName": null,
+      "name": "mod-audit",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Module for implementing Okapi Pre and Post filters to capture audit data",
+      "docDirName": null,
+      "name": "mod-audit-filter",
+      "ramlDirName": null,
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Module for filtering requests based on JWT tokens",
+      "docDirName": null,
+      "name": "mod-authtoken",
+      "ramlDirName": null,
+      "repoType": "backend-mod"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "mod-calendar",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "mod-camunda",
+      "ramlDirName": null,
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "FOLIO mod-circulation",
+      "docDirName": "doc",
+      "name": "mod-circulation",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "FOLIO mod-circulation-storage",
+      "docDirName": null,
+      "name": "mod-circulation-storage",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "mod-codex-ekb",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Codex wrapper for local inventory",
+      "docDirName": null,
+      "name": "mod-codex-inventory",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Codex mock module - for testing and development",
+      "docDirName": null,
+      "name": "mod-codex-mock",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Codex Multiplexer backend module",
+      "docDirName": null,
+      "name": "mod-codex-mux",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Configuration module based on the raml-module-builder and a set of raml and json schemas backed by a postgresdb async implementation",
+      "docDirName": null,
+      "name": "mod-configuration",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Backend CRUD storage module to support the Course Reserves functionality",
+      "docDirName": null,
+      "name": "mod-courses",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Store and maintain custom fields",
+      "docDirName": null,
+      "name": "mod-custom-fields",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Exporting inventory records",
+      "docDirName": null,
+      "name": "mod-data-export",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "mod-data-import",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Data import converter storage",
+      "docDirName": null,
+      "name": "mod-data-import-converter-storage",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "RMB based module used to load test data",
+      "docDirName": null,
+      "name": "mod-data-loader",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Glint server module wrapper for FOLIO",
+      "docDirName": null,
+      "name": "mod-datasets",
+      "ramlDirName": null,
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Provides functionality for sending notifications",
+      "docDirName": null,
+      "name": "mod-email",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Store ERM usage statistics and access data to these statistics",
+      "docDirName": null,
+      "name": "mod-erm-usage",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Library containing models and clients for COUNTER/SUSHI standard",
+      "docDirName": null,
+      "name": "mod-erm-usage-counter",
+      "ramlDirName": null,
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Harvest ERM usage statistics",
+      "docDirName": null,
+      "name": "mod-erm-usage-harvester",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Provides functionality for the notification events",
+      "docDirName": null,
+      "name": "mod-event-config",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Provide central management for fees and fines",
+      "docDirName": null,
+      "name": "mod-feesfines",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Finance business logic",
+      "docDirName": null,
+      "name": "mod-finance",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "CRUD module to manage finance-data (i.e. ledgers, funds, budgets, etc.)",
+      "docDirName": null,
+      "name": "mod-finance-storage",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Knowledge base for amsl's finc-config module",
+      "docDirName": null,
+      "name": "mod-finc-config",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "mod-gobi",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "FOLIO module for executing GraphQL queries",
+      "docDirName": "doc",
+      "name": "mod-graphql",
+      "ramlDirName": null,
+      "repoType": "backend-mod"
+    },
+    {
+      "description": null,
+      "docDirName": "doc",
+      "name": "mod-inventory",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "mod-inventory-storage",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Invoice business logic",
+      "docDirName": null,
+      "name": "mod-invoice",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Persistent storage of invoice data",
+      "docDirName": null,
+      "name": "mod-invoice-storage",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Broker communication with the EBSCO knowledge base (Java)",
+      "docDirName": null,
+      "name": "mod-kb-ebsco-java",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Library Data Platform service for FOLIO",
+      "docDirName": null,
+      "name": "mod-ldp",
+      "ramlDirName": null,
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "FOLIO service module - licenses",
+      "docDirName": "docs",
+      "name": "mod-licenses",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Module to handle username/password login",
+      "docDirName": null,
+      "name": "mod-login",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "FOLIO SAML login module",
+      "docDirName": null,
+      "name": "mod-login-saml",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "FOLIO metadata management / marccat module",
+      "docDirName": null,
+      "name": "mod-marccat",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "NISO Circulation Interchange Protocol (NCIP)  support in FOLIO",
+      "docDirName": "docs",
+      "name": "mod-ncip",
+      "ramlDirName": null,
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Notes on all types of objects",
+      "docDirName": null,
+      "name": "mod-notes",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Notifications to the users",
+      "docDirName": null,
+      "name": "mod-notify",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Backend Module implementing the OAI-PMH metadata harvesting protocol",
+      "docDirName": null,
+      "name": "mod-oai-pmh",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Orders business logic module",
+      "docDirName": null,
+      "name": "mod-orders",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Storage (CRUD) module for Orders",
+      "docDirName": null,
+      "name": "mod-orders-storage",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Organizations business logic module",
+      "docDirName": null,
+      "name": "mod-organizations",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Persistent storage of organizations data",
+      "docDirName": null,
+      "name": "mod-organizations-storage",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Performs password validation and stores validation rules for specified tenant",
+      "docDirName": null,
+      "name": "mod-password-validator",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "mod-patron",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Module to handle permissions and permissions/user associations",
+      "docDirName": null,
+      "name": "mod-permissions",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Publisher-subscriber module to provide event-driven approach",
+      "docDirName": null,
+      "name": "mod-pubsub",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Backend for quickMARC editor",
+      "docDirName": null,
+      "name": "mod-quick-marc",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "mod-receiving",
+      "ramlDirName": null,
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Maven archetype used to generate an RMB-based module",
+      "docDirName": null,
+      "name": "mod-rmb-template",
+      "repoType": "other"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "mod-rtac",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Sending messages through delivery channels",
+      "docDirName": null,
+      "name": "mod-sender",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "mod-source-record-manager",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Persistent source record storage",
+      "docDirName": null,
+      "name": "mod-source-record-storage",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Okapi Spring module example",
+      "docDirName": null,
+      "name": "mod-spring-sample",
+      "ramlDirName": null,
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Central list of tags that can be assigned to various objects",
+      "docDirName": null,
+      "name": "mod-tags",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Stores templates and generates files by using them",
+      "docDirName": null,
+      "name": "mod-template-engine",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "mod-user-import",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Domain Model to Manage Users",
+      "docDirName": null,
+      "name": "mod-users",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Business logic \"join\" module to provide simple access to all user-centric data",
+      "docDirName": null,
+      "name": "mod-users-bl",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "mod-workflow",
+      "ramlDirName": null,
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "A Z39.50 server for FOLIO bibliographic data",
+      "docDirName": null,
+      "name": "Net-Z3950-FOLIO",
+      "repoType": "other"
+    },
+    {
+      "description": "Okapi  core and modules",
+      "docDirName": "doc",
+      "name": "okapi",
+      "ramlDirName": "okapi-core/src/main/raml",
+      "repoType": "backend-infrastructure"
+    },
+    {
+      "description": "Okapi command-line interface",
+      "docDirName": null,
+      "name": "okapi-cli",
+      "repoType": "other"
+    },
+    {
+      "description": "Experimental Debian Packaging Repo for Okapi",
+      "docDirName": "doc",
+      "name": "okapi-debian",
+      "repoType": "other"
+    },
+    {
+      "description": "Repository that houses tools and performance testing scripts",
+      "docDirName": null,
+      "name": "perf-testing",
+      "repoType": "other"
+    },
+    {
+      "description": "Complete set of Stripes modules for FOLIO",
+      "docDirName": null,
+      "name": "platform-complete",
+      "repoType": "platform"
+    },
+    {
+      "description": "Core set of Stripes modules for FOLIO",
+      "docDirName": null,
+      "name": "platform-core",
+      "repoType": "platform"
+    },
+    {
+      "description": "FOLIO Stripes platform for ERM modules",
+      "docDirName": null,
+      "name": "platform-erm",
+      "repoType": "platform"
+    },
+    {
+      "description": "Repository of RAML files, including JSON schemas, traits and resource types centralized for re-usability",
+      "docDirName": null,
+      "name": "raml",
+      "repoType": "raml-shared"
+    },
+    {
+      "description": "Framework allowing easy module creation based on RAML files",
+      "docDirName": "doc",
+      "name": "raml-module-builder",
+      "ramlDirName": "domain-models-api-interfaces/ramls",
+      "repoType": "backend-infrastructure"
+    },
+    {
+      "description": "RFCs for changes to the FOLIO platform",
+      "docDirName": null,
+      "name": "rfcs",
+      "repoType": "other"
+    },
+    {
+      "description": "Spring module core libraries for Spring development with Okapi",
+      "docDirName": null,
+      "name": "spring-module-core",
+      "repoType": "other"
+    },
+    {
+      "description": "UI framework for building front-end FOLIO modules",
+      "docDirName": "doc",
+      "name": "stripes",
+      "repoType": "stripes"
+    },
+    {
+      "description": "Stripes components that are specific to use cases that arise in Acquisitions-related modules",
+      "docDirName": null,
+      "name": "stripes-acq-components",
+      "repoType": "stripes"
+    },
+    {
+      "description": "Command line interface for creating, building, and testing Stripes UI modules.",
+      "docDirName": "doc",
+      "name": "stripes-cli",
+      "repoType": "stripes"
+    },
+    {
+      "description": "A component library for Stripes",
+      "docDirName": "docs",
+      "name": "stripes-components",
+      "repoType": "stripes"
+    },
+    {
+      "description": "Declarative REST data access for React components, part of the FOLIO project",
+      "docDirName": "doc",
+      "name": "stripes-connect",
+      "repoType": "stripes"
+    },
+    {
+      "description": "The core of Stripes, an opinionated and modular platform for React components consuming REST data and the UI framework for the FOLIO project",
+      "docDirName": "doc",
+      "name": "stripes-core",
+      "repoType": "stripes"
+    },
+    {
+      "description": "Stripes components that are specific to use cases that arise in ui-data-import and ui-data-export modules",
+      "docDirName": null,
+      "name": "stripes-data-transfer-components",
+      "repoType": "stripes"
+    },
+    {
+      "description": "Stripes platform for building the demo site",
+      "docDirName": null,
+      "name": "stripes-demo-platform",
+      "repoType": "stripes"
+    },
+    {
+      "description": "Stripes components that are specific to use cases that arise in ERM-related modules",
+      "docDirName": null,
+      "name": "stripes-erm-components",
+      "repoType": "stripes"
+    },
+    {
+      "description": "A Final Form Wrapper for Stripes",
+      "docDirName": null,
+      "name": "stripes-final-form",
+      "repoType": "stripes"
+    },
+    {
+      "description": "A redux-form wrapper for Stripes",
+      "docDirName": null,
+      "name": "stripes-form",
+      "repoType": "stripes"
+    },
+    {
+      "description": "Configuration for a sample platform and to run a local Stripes UI development server",
+      "docDirName": null,
+      "name": "stripes-sample-platform",
+      "repoType": "stripes"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "stripes-smart-components",
+      "repoType": "stripes"
+    },
+    {
+      "description": null,
+      "docDirName": "doc",
+      "name": "stripes-testing",
+      "repoType": "stripes"
+    },
+    {
+      "description": "A library of utility functions to support Stripes modules",
+      "docDirName": null,
+      "name": "stripes-util",
+      "repoType": "stripes"
+    },
+    {
+      "description": "Stripes UI module: Management of Acquisition unit records",
+      "docDirName": null,
+      "name": "ui-acquisition-units",
+      "repoType": "ui"
+    },
+    {
+      "description": "Stripes front end module for ERM module",
+      "docDirName": null,
+      "name": "ui-agreements",
+      "repoType": "ui"
+    },
+    {
+      "description": "Stripes UI app module template",
+      "docDirName": null,
+      "name": "ui-app-template",
+      "repoType": "other"
+    },
+    {
+      "description": "Stripes UI module: Viewing audit trails",
+      "docDirName": null,
+      "name": "ui-audit",
+      "repoType": "ui"
+    },
+    {
+      "description": "FOLIO institutional calendar UI module",
+      "docDirName": null,
+      "name": "ui-calendar",
+      "repoType": "ui"
+    },
+    {
+      "description": "Stripes UI for checking in items with simulated scans",
+      "docDirName": null,
+      "name": "ui-checkin",
+      "repoType": "ui"
+    },
+    {
+      "description": "Stripes UI for checking out items with simulated scans",
+      "docDirName": null,
+      "name": "ui-checkout",
+      "repoType": "ui"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "ui-circulation",
+      "repoType": "ui"
+    },
+    {
+      "description": "Course reserves UI for FOLIO",
+      "docDirName": "doc",
+      "name": "ui-courses",
+      "repoType": "ui"
+    },
+    {
+      "description": "UI module: data export managing",
+      "docDirName": null,
+      "name": "ui-data-export",
+      "repoType": "ui"
+    },
+    {
+      "description": "UI module: managing batch loader feature",
+      "docDirName": null,
+      "name": "ui-data-import",
+      "repoType": "ui"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "ui-datasets",
+      "repoType": "ui"
+    },
+    {
+      "description": "Stripes UI module: developer facilities",
+      "docDirName": null,
+      "name": "ui-developer",
+      "repoType": "ui"
+    },
+    {
+      "description": "FOLIO eholdings App",
+      "docDirName": "docs",
+      "name": "ui-eholdings",
+      "repoType": "ui"
+    },
+    {
+      "description": "Stripes UI for managing ERM usage statistics",
+      "docDirName": "docs",
+      "name": "ui-erm-usage",
+      "repoType": "ui"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "ui-finance",
+      "repoType": "ui"
+    },
+    {
+      "description": "UI finc-config module ",
+      "docDirName": null,
+      "name": "ui-finc-config",
+      "repoType": "ui"
+    },
+    {
+      "description": "finc-select UI module ",
+      "docDirName": null,
+      "name": "ui-finc-select",
+      "repoType": "ui"
+    },
+    {
+      "description": "UI module for administrating instances",
+      "docDirName": null,
+      "name": "ui-inventory",
+      "repoType": "ui"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "ui-invoice",
+      "repoType": "ui"
+    },
+    {
+      "description": "LDP Management Console",
+      "docDirName": null,
+      "name": "ui-ldp",
+      "repoType": "ui"
+    },
+    {
+      "description": "FOLIO front end module for licenses",
+      "docDirName": null,
+      "name": "ui-licenses",
+      "repoType": "ui"
+    },
+    {
+      "description": "FOLIO App Module to manage the local KB for ERM",
+      "docDirName": null,
+      "name": "ui-local-kb-admin",
+      "repoType": "ui"
+    },
+    {
+      "description": "UI module for searching, sorting, filtering, viewing, editing and creating BIB record",
+      "docDirName": null,
+      "name": "ui-marccat",
+      "repoType": "ui"
+    },
+    {
+      "description": "UI module: managing user profile settings",
+      "docDirName": null,
+      "name": "ui-myprofile",
+      "repoType": "ui"
+    },
+    {
+      "description": "FOLIO Notes Helper App ",
+      "docDirName": null,
+      "name": "ui-notes",
+      "repoType": "ui"
+    },
+    {
+      "description": "Stripes UI for oai-pmh",
+      "docDirName": null,
+      "name": "ui-oai-pmh",
+      "repoType": "ui"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "ui-orders",
+      "repoType": "ui"
+    },
+    {
+      "description": "UI module for managing organization records",
+      "docDirName": null,
+      "name": "ui-organizations",
+      "repoType": "ui"
+    },
+    {
+      "description": "Stripes UI plugin: Create item",
+      "docDirName": null,
+      "name": "ui-plugin-create-item",
+      "repoType": "ui-plugin"
+    },
+    {
+      "description": "A Stripes UI plugin for editing markdown",
+      "docDirName": null,
+      "name": "ui-plugin-example",
+      "repoType": "ui-plugin"
+    },
+    {
+      "description": "ERM-agreement-finder plugin for Stripes",
+      "docDirName": null,
+      "name": "ui-plugin-find-agreement",
+      "repoType": "ui-plugin"
+    },
+    {
+      "description": "Stripes UI plugin: Find a contact",
+      "docDirName": null,
+      "name": "ui-plugin-find-contact",
+      "repoType": "ui-plugin"
+    },
+    {
+      "description": "ERM-Usage-Data-Provider-finder plugin for Stripes ",
+      "docDirName": null,
+      "name": "ui-plugin-find-erm-usage-data-provider",
+      "repoType": "ui-plugin"
+    },
+    {
+      "description": "Finder plugin for finc metadata collections",
+      "docDirName": null,
+      "name": "ui-plugin-find-finc-metadata-collection",
+      "repoType": "ui-plugin"
+    },
+    {
+      "description": "Finder plugin for finc metadata sources",
+      "docDirName": null,
+      "name": "ui-plugin-find-finc-metadata-source",
+      "repoType": "ui-plugin"
+    },
+    {
+      "description": "UI Plugin that implements UI Data Import profiles search and pick",
+      "docDirName": null,
+      "name": "ui-plugin-find-import-profile",
+      "repoType": "ui-plugin"
+    },
+    {
+      "description": "Instance-finder plugin for Stripes",
+      "docDirName": null,
+      "name": "ui-plugin-find-instance",
+      "repoType": "ui-plugin"
+    },
+    {
+      "description": "Stripes UI plugin: Find an interface",
+      "docDirName": null,
+      "name": "ui-plugin-find-interface",
+      "repoType": "ui-plugin"
+    },
+    {
+      "description": "UI Widget to lookup or create licenses",
+      "docDirName": null,
+      "name": "ui-plugin-find-license",
+      "repoType": "ui-plugin"
+    },
+    {
+      "description": "Organization-finder plugin for Stripes",
+      "docDirName": null,
+      "name": "ui-plugin-find-organization",
+      "repoType": "ui-plugin"
+    },
+    {
+      "description": "Stripes UI plugin: Display, filter and select PO lines",
+      "docDirName": null,
+      "name": "ui-plugin-find-po-line",
+      "repoType": "ui-plugin"
+    },
+    {
+      "description": "User-finder plugin for Stripes",
+      "docDirName": null,
+      "name": "ui-plugin-find-user",
+      "repoType": "ui-plugin"
+    },
+    {
+      "description": "Stripes UI for quickMARC editor",
+      "docDirName": null,
+      "name": "ui-quick-marc",
+      "repoType": "ui"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "ui-receiving",
+      "repoType": "ui"
+    },
+    {
+      "description": "Stripes UI module for making requests on items",
+      "docDirName": null,
+      "name": "ui-requests",
+      "repoType": "ui"
+    },
+    {
+      "description": null,
+      "docDirName": "doc",
+      "name": "ui-search",
+      "repoType": "ui"
+    },
+    {
+      "description": "Service Points handler module for Stripes",
+      "docDirName": null,
+      "name": "ui-servicepoints",
+      "repoType": "ui"
+    },
+    {
+      "description": "UI module for managing tag settings",
+      "docDirName": null,
+      "name": "ui-tags",
+      "repoType": "ui"
+    },
+    {
+      "description": "Stripes UI module: managing tenant settings",
+      "docDirName": null,
+      "name": "ui-tenant-settings",
+      "repoType": "ui"
+    },
+    {
+      "description": null,
+      "docDirName": "doc",
+      "name": "ui-testing",
+      "repoType": "ui"
+    },
+    {
+      "description": "Stripes UI module: administrating users",
+      "docDirName": null,
+      "name": "ui-users",
+      "repoType": "ui"
+    }
+  ]
+}
