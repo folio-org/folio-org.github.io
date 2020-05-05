@@ -23,7 +23,7 @@ This list of modules is sorted into functional groups.
 
 {% assign urlAws = "https://s3.amazonaws.com/foliodocs/api" %}
 {% assign urlGithub = "https://github.com/folio-org" %}
-{% assign urlSourceXref = "/source-code/xref/" %}
+{% assign urlSourceXref = "/source-code/map/" %}
 {% assign noteRaml = 'This is the shared RAML repository. Each module uses a certain version of this as their "raml-util" directory.' %}
 {% assign moduleIdEntries = "" | split: ',' %}
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Source Code
+title: Source-code overview
 permalink: /source-code/
 menuInclude: yes
 menuLink: yes
