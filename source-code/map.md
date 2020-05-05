@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Source-code index
-permalink: /source-code/xref/
+permalink: /source-code/map/
 menuInclude: yes
 menuTopTitle: Source
-menuSubTitle: Source code index
+menuSubTitle: Source-code index
 menuSubIndex: 2
 ---
 
@@ -153,6 +153,6 @@ The YAML structure is explained in the head of that file.
 The tool "[yq](https://github.com/kislyuk/yq)" is useful for verifying YAML files (e.g. do `yq '.' repos-metadata.yml`).
 
 Behind the scenes of this page
-[source-code/xref.md](https://raw.githubusercontent.com/folio-org/folio-org.github.io/master/source-code/xref.md)
+[source-code/map.md](https://raw.githubusercontent.com/folio-org/folio-org.github.io/master/source-code/map.md)
 the Jekyll Liquid program assembles and presents this page.
 
