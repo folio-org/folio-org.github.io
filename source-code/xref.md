@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Source code index
+title: Source-code index
 permalink: /source-code/xref/
 menuInclude: yes
 menuTopTitle: Source
@@ -10,7 +10,8 @@ menuSubIndex: 2
 
 ## Introduction
 
-List of modules and links to some related documentation.
+List of FOLIO modules hosted at the [folio-org GitHub organization](https://github.com/folio-org), with links to some related documentation.
+Also refer to the [Source-code overiew](/source-code/).
 
 {% assign urlGithub = "https://github.com/folio-org" %}
 {% assign urlApiBase = "https://dev.folio.org/reference/api" %}
@@ -135,8 +136,9 @@ Last [gathered](#further-information) date:
 
 Explanation about how the index is assembled and maintained:
 
-Details of each repository that is hosted at FOLIO GitHub are gathered automatically.
-This is done occasionally as a FOLIO DevOps infrastructure
+Details of each repository that is hosted at FOLIO GitHub are gathered automatically
+(including information such as type of repository; does it have a "docs" directory; if backend, then does it have a "ramls" directory).
+This collection is done occasionally as a FOLIO DevOps infrastructure
 [job](https://github.com/folio-org-priv/folio-infrastructure/tree/master/verify-repo-config).
 It is not yet automated, but is initiated manually.
 The resulting JSON file is committed as the
@@ -145,6 +147,7 @@ The resulting JSON file is committed as the
 The data file
 [\_data/repos-metadata.yml](https://github.com/folio-org/folio-org.github.io/tree/master/_data/repos-metadata.yml)
 contains additional metadata about some specific repositories.
+This information includes extra documentation links, beyond that gathered in the above-mentioned repos.json file (note that such links are intended as starting points, not to list every piece of documentation here).
 Please send pull-requests to add documentation links for your repository.
 The YAML structure is explained in the head of that file.
 The tool "[yq](https://github.com/kislyuk/yq)" is useful for verifying YAML files (e.g. do `yq '.' repos-metadata.yml`).
