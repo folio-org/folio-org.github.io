@@ -14,4 +14,7 @@ cat _site/search_data.json | jq '.[].title'
 du -sh _site/search_data.json
 ```
 
+Also ensure when adding new Liquid-based content, that there is no raw Liquid program content (`{%`) in the data file.
+This is a sign that something is amiss, and the real content would be missing from the search system.
+
 See FOLIO-860, FOLIO-859, FOLIO-871
