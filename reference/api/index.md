@@ -74,10 +74,12 @@ This list of modules is sorted into functional groups.
       {% capture view2 %}{% if docset.version1 %}<a href="{{ urlDoc2 }}">view-2</a>{% endif %}{% endcapture %}
       {% if docset.shared %}
         {% capture urlRaml %}{{ urlGithub }}/raml/blob/HEAD/{{ docset.shared }}/{{ doc }}.raml{% endcapture %}
+        {% capture rowId %}{{ theRepo[0] }}-{{ docset.label }}-{{ doc }}{% endcapture %}
       {% else %}
         {% capture urlRaml %}{{ urlGithub }}/{{ theRepo[0] }}/blob/master/{{ docset.directory }}/{{ doc }}.raml{% endcapture %}
+        {% capture rowId %}{{ theRepo[0] }}-{{ doc }}{% endcapture %}
       {% endif %}
-    <tr>
+    <tr id="{{ rowId }}">
 {% if theRepo[0] == 'raml' %}
       <td> {{ docset.label }} </td>
 {% endif %}
