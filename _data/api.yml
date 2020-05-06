@@ -720,7 +720,6 @@ raml-module-builder:
     directory: domain-models-api-interfaces/ramls
     files:
       - admin
-      - jobs
       - sample
     ramlutil: domain-models-api-interfaces/ramls/raml-util
 
