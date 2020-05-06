@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Source-code index
+title: Source-code map
 permalink: /source-code/map/
 menuInclude: yes
 menuTopTitle: Source
-menuSubTitle: Source-code index
+menuSubTitle: Source-code map
 menuSubIndex: 2
 ---
 
