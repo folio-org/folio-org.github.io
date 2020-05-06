@@ -93,6 +93,13 @@ mod-patron:
       - patron
     ramlutil: ramls/raml-util
 
+mod-patron-blocks:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+    ramlutil: ramls/raml-util
+
 edge-patron:
   - label: null
     version1: true
