@@ -16,6 +16,7 @@ users:
     - mod-users
     - mod-patron
     - edge-patron
+    - mod-patron-blocks
     - mod-feesfines
 codex:
   title: Codex
