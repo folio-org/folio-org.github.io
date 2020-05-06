@@ -616,6 +616,13 @@
       "repoType": "backend-mod"
     },
     {
+      "description": "FOLIO module for automated patron blocks",
+      "docDirName": null,
+      "name": "mod-patron-blocks",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
       "description": "Module to handle permissions and permissions/user associations",
       "docDirName": null,
       "name": "mod-permissions",
