@@ -93,6 +93,13 @@ mod-patron:
       - patron
     ramlutil: ramls/raml-util
 
+mod-patron-blocks:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+    ramlutil: ramls/raml-util
+
 edge-patron:
   - label: null
     version1: true
@@ -720,7 +727,6 @@ raml-module-builder:
     directory: domain-models-api-interfaces/ramls
     files:
       - admin
-      - jobs
       - sample
     ramlutil: domain-models-api-interfaces/ramls/raml-util
 
@@ -794,3 +800,4 @@ mod-vendors:
       - vendor_type
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-vendors/schemas
+
