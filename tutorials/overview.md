@@ -5,14 +5,15 @@ permalink: /tutorials/overview/
 menuInclude: yes
 menuTopTitle: Tutorials
 menuSubs:
-- title: Tutorials Introduction
+- title: Tutorials introduction
   url: /tutorials/
   index: 1
 - title: Single Server Deployment
   url: "https://github.com/folio-org/folio-install/blob/master/runbooks/single-server"
   link: yes
-  index: 3
+  index: 10
   anchorId: folio-deployment-single-server
 ---
 
-The [Overview and preparation](/tutorials/curriculum/overview/) notes for the Curriculum will be relevant to all tutorials.
+The [Overview and preparation](/tutorials/folio-vm/overview/) notes for the FOLIO VM tutorial will be relevant to various tutorials.
+
