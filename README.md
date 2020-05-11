@@ -68,7 +68,7 @@ See [notes](work/README.md) about the operation and management.
 
 The master branch is automatically deployed as [dev.folio.org](https://dev.folio.org/)
 
-Other branches are re-built upon push of changes. Follow the GitHub link from the branch's continuous-integration details.
+Other branches are re-built upon push of changes. Follow the GitHub link from the branch's continuous-integration details to view the generated branch site.
 
 ## Additional information
 
