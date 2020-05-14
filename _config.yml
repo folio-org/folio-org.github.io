@@ -24,7 +24,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-gist
 
-exclude: [bin, Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, tmp, vendor, work, tutorials/curriculum/playbooks]
+exclude: [bin, Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, tmp, vendor, work]
 
 collections:
   faqs:
