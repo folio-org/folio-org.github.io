@@ -16,13 +16,14 @@ A complete system includes the Okapi gateway, the main back-end modules (especia
 sample data for tenants and users and items, and the Stripes UI development server configured for various client-side modules.
 
 Some of the regularly updated [Prebuilt Vagrant boxes](#prebuilt-vagrant-boxes) do provide a complete system to download as a virtual machine.
+(See [Tutorials : Using a FOLIO virtual machine](/tutorials/folio-vm/).)
 It is also possible to utilise a box in conjunction with local development versions of the relevant parts
 (refer to [Running backend modules on your host system](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md#running-backend-modules-on-your-host-system)).
 
 ## Prebuilt Vagrant boxes
 
 See the [explanations](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md) for each of the available boxes.
-The main ones of interest at this stage are: folio/testing-backend, folio/testing, folio/snapshot, and quarterly releases.
+The main ones of interest at this stage are: folio/testing-backend, folio/testing, folio/snapshot, and folio/snapshot-core
 
 The guide to [Software Build Pipeline](/guides/automation/#software-build-pipeline) further explains the process, what time of day each is built, and links to the public interfaces.
 
@@ -85,7 +86,7 @@ For guidance follow some other developers and their local deployment facilities:
 Okapi's [doc/okapi-examples.sh](https://github.com/folio-org/okapi/blob/master/doc/okapi-examples.sh) script and Guide;
 the [mod-notes](https://github.com/folio-org/mod-notes) run.sh script;
 the [mod-inventory running](https://github.com/folio-org/mod-inventory#running) scripts;
-the script provided in [Lesson-06 Interact with a FOLIO stable VM](/tutorials/curriculum/06-vm-stable/);
+the scripts provided in [Tutorials : Using a FOLIO virtual machine](/tutorials/folio-vm/);
 the [folio-ansible](https://github.com/folio-org/folio-ansible/) roles and tasks;
 the [folio-test-env](https://github.com/folio-org/folio-test-env).
 Although these other documents are intended for a production installation, they do have useful parts which assist with running a local system:
