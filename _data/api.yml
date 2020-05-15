@@ -625,6 +625,7 @@ mod-data-export:
     files:
       - dataExport
       - dataExport-FileDefinition
+      - dataExport-mappingProfiles
     ramlutil: ramls/raml-util
 
 mod-source-record-storage:
