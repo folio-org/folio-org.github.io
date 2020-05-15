@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-05-05T02:42:03.869441+00:00"
+    "generatedDateTime": "2020-05-11T01:20:24.915909+00:00"
   },
   "repos": [
     {
@@ -612,6 +612,13 @@
       "description": null,
       "docDirName": null,
       "name": "mod-patron",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "FOLIO module for automated patron blocks",
+      "docDirName": null,
+      "name": "mod-patron-blocks",
       "ramlDirName": "ramls",
       "repoType": "backend-mod"
     },

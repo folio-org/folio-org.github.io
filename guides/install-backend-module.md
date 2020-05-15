@@ -19,7 +19,7 @@ There is a separate procedure to [install a new front-end module](/guides/instal
 First ensure that this new module's [ModuleDescriptor](/guides/module-descriptor/) is deployed and that any required interfaces are available.
 
 For example, consider the `mod-notes` module.
-Obtain its MD and extract the "requires" section:
+Obtain its MD from the registry and extract the "requires" section:
 
 ```
 curl -s -S -w'\n' \

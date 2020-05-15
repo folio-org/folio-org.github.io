@@ -74,10 +74,12 @@ This list of modules is sorted into functional groups.
       {% capture view2 %}{% if docset.version1 %}<a href="{{ urlDoc2 }}">view-2</a>{% endif %}{% endcapture %}
       {% if docset.shared %}
         {% capture urlRaml %}{{ urlGithub }}/raml/blob/HEAD/{{ docset.shared }}/{{ doc }}.raml{% endcapture %}
+        {% capture rowId %}{{ theRepo[0] }}-{{ docset.label }}-{{ doc }}{% endcapture %}
       {% else %}
         {% capture urlRaml %}{{ urlGithub }}/{{ theRepo[0] }}/blob/master/{{ docset.directory }}/{{ doc }}.raml{% endcapture %}
+        {% capture rowId %}{{ theRepo[0] }}-{{ doc }}{% endcapture %}
       {% endif %}
-    <tr>
+    <tr id="{{ rowId }}">
 {% if theRepo[0] == 'raml' %}
       <td> {{ docset.label }} </td>
 {% endif %}
@@ -115,3 +117,8 @@ So for [mod-inventory-storage](#mod-inventory-storage) amend the URL of the gene
 * The asterisk `*` denotes that this is a shared set of RAML files.
 The generated documents are for this module's current raml-util, but the link to the source RAML file is to the head of the default branch of the shared
 "[raml](#raml)" repository.
+
+* Each section of this page can be directly linked to (e.g. [#mod-notes](#mod-notes)).
+Similarly each row of a module's RAMLs (e.g. [#mod-notes-types](#mod-notes-types)).
+
+* See assistance for [How to determine which module handles which interface and endpoint](/faqs/how-to-which-module-which-interface-endpoint/).

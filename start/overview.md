@@ -87,7 +87,8 @@ The related [Securing Okapi](https://github.com/folio-org/okapi/blob/master/doc/
 
 [Folio-Sample-Modules](https://github.com/folio-org/folio-sample-modules)
 
-[Tutorials : Curriculum](/tutorials/curriculum/)
+[Tutorials : Using a FOLIO virtual machine](/tutorials/folio-vm/)
+-- Explains how to utilise a FOLIO virtual machine (VM).
 
 [RAML Module Builder (RMB) framework](https://github.com/folio-org/raml-module-builder).
 
