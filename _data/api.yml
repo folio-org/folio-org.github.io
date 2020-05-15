@@ -471,6 +471,7 @@ mod-organizations:
     version1: true
     directory: ramls
     files:
+      - organizations
     excludes:
       - acq-models
     ramlutil: ramls/raml-util
@@ -624,6 +625,7 @@ mod-data-export:
     files:
       - dataExport
       - dataExport-FileDefinition
+      - dataExport-mappingProfiles
     ramlutil: ramls/raml-util
 
 mod-source-record-storage:
