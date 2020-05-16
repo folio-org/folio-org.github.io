@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-05-11T01:20:24.915909+00:00"
+    "generatedDateTime": "2020-05-15T03:02:51.085373+00:00"
   },
   "repos": [
     {
@@ -126,7 +126,7 @@
       "repoType": "other"
     },
     {
-      "description": null,
+      "description": "The set of integration tests, based on karate framework",
       "docDirName": null,
       "name": "folio-integration-tests",
       "repoType": "other"
