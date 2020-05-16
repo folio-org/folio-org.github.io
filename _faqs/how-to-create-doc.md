@@ -3,8 +3,8 @@ layout: page
 title: How to create a new document
 titleLeader: "FAQ |"
 menuTopTitle: Guides
-categories: management other
-faqOrder: 99
+categories: devdoc
+faqOrder: 1
 ---
 
 ## Introduction

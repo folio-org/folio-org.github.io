@@ -21,6 +21,10 @@
 - name: testing
   title: Testing
 
+- name: devdoc
+  title: Developer documentation
+  description: Managing and creating documentation for this dev.folio.org site.
+
 - name: other
   title: Other topics
   description: Not yet categorised.
