@@ -10,7 +10,7 @@ faqOrder: 3
 ## Introduction
 
 To add a new document to this dev.folio.org site, follow these guidelines.
-There are separate guidelines for creating a [new FAQ](/faqs/how-to-create-doc-faq/).
+There are separate guidelines for creating a [new FAQ](/faqs/how-to-create-doc-faq/) and a [new Tutorial](/faqs/how-to-create-doc-tutorial/).
 
 After understanding how to be set up for [editing and publishing](#about-editing-and-publishing), then move on the [preparation](#preparation) and creation of a new document.
 
