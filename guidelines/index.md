@@ -46,3 +46,5 @@ and "Definition of Done ([DoD](/reference/glossary/#dod))"
 to manage the development process.
 - [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/).
 
+<div class="folio-spacer-content"></div>
+

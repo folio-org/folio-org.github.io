@@ -50,3 +50,5 @@ See assistance with [filters and search](/guidelines/issue-tracker/#filters-and-
 Refer to specific
 [Jira search help](https://confluence.atlassian.com/jirasoftwarecloud/advanced-searching-764478330.html).
 
+<div class="folio-spacer-content"></div>
+
