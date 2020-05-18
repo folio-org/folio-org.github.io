@@ -4,7 +4,7 @@ title: How to create a new document
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: devdoc
-faqOrder: 1
+faqOrder: 3
 ---
 
 ## Introduction
