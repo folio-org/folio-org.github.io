@@ -177,3 +177,5 @@ For example regarding operation, enhancement, and configuration of Jenkins conti
 
 Brief explanations of various topics.
 
+<div class="folio-spacer-content"></div>
+

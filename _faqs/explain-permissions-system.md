@@ -4,7 +4,7 @@ title: Explain the FOLIO permissions system
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: development-tips
-faqOrder: 1
+faqOrder: 2
 ---
 
 See these documents:

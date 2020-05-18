@@ -24,6 +24,8 @@ ui-agreements:
 
 ui-calendar:
   urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Calendar
+  urlsOther:
+    - https://github.com/folio-org/ui-calendar/blob/master/GUIDE.md
 
 ui-checkin:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Check+in

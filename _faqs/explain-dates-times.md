@@ -4,7 +4,7 @@ title: Explain international date and time handling
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: development-tips
-faqOrder: 4
+faqOrder: 6
 ---
 
 Dates and times are stored with the back-end modules as UTC.

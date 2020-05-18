@@ -3,7 +3,7 @@ layout: page
 title: How to create a new FAQ document
 titleLeader: "FAQ |"
 menuTopTitle: Guides
-categories: management other
+categories: management devdoc other
 faqOrder: 100
 ---
 
@@ -12,6 +12,8 @@ There are separate guidelines for creating a new [regular document](/faqs/how-to
 
 Copy an existing file in the [\_faqs](https://github.com/folio-org/folio-org.github.io/tree/master/_faqs) directory.
 Follow the established filename convention and titles scheme.
+The filename forms the URL of the FAQ page.
+Choose carefully, so as to not break URLs in the future.
 
 Allocate one or more `categories` in its frontmatter.
 These are defined in the file `_data/faqs.yml`
