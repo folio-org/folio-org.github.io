@@ -22,7 +22,7 @@ It will be more productive to be familiar before starting a new document.
 Refer to the [README](https://github.com/folio-org/folio-org.github.io) for this git repository (which is the source for this dev.folio.org website). That also has general explanation about how the site operates.
 There are also various notes in the "[Work area - management of dev site](https://github.com/folio-org/folio-org.github.io#work-area---management-of-dev-site)".
 
-As is normal, contributors that do not have write access to this repository will [fork](http://localhost:5000/guidelines/contributing/#fork-github-repository) and branch and send pull-requests.
+As is normal, contributors that do not have write access to this repository will [fork](/guidelines/contributing/#fork-github-repository) and branch and send pull-requests.
 Others will directly use feature branches (as master branch is protected) and send pull requests.
 
 See how to [configure](/guides/developer-setup/#use-editorconfig-for-consistent-whitespace) your text editor.
@@ -40,16 +40,29 @@ When ready, create the pull-request as normal. After merge, the dev.folio.org si
 
 ## Preparation
 
-Decide a clear topic for the document.
-This will assist with devising a suitable title and [permalink](#copy).
+Decide the most [appropriate location](/faqs/where-is-developer-documentation-located/) for the documentation.
+If it concerns a [specific module](/source-code/map/) then it may be more appropriate to add to that module's local documentation.
 
-Plan the internal sections of the new document.
+If the new documentation is more appropriate at dev.folio.org, then continue here.
+
+First do some background planning.
+
+Do [search](/search/) first. It might be suitable to add another section to an existing document.
+
+Also search the issue tracker, as someone may have already proposed a similar document.
+Generally the documentation tickets use the Jira Label [devdoc](https://issues.folio.org/issues/?jql=labels%3Ddevdoc).
+Consider adding a new ticket to facilitate your document development, or to suggest others.
 
 Decide the type of document:
 [Guidelines](/guidelines/) (various procedures that should/must be followed),
 [Guides](/guides/) (assistance with other topics),
 [Tutorials](/tutorials/) (each tutorial is a set of related documents),
 or [FAQs](/faqs/).
+
+Decide a clear topic for the document.
+This will assist with devising a suitable title and [permalink](#copy).
+
+Plan the internal sections of the new document.
 
 ## Learn
 
