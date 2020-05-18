@@ -4,7 +4,7 @@ title: How to determine which module handles which interface and endpoint
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: development-tips
-faqOrder: 6
+faqOrder: 8
 ---
 
 This is not a easy topic in the new FOLIO multi-module system.

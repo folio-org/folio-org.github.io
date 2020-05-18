@@ -4,7 +4,7 @@ title: Explain CQL string matching
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: development-tips
-faqOrder: 2
+faqOrder: 3
 ---
 
 See also [CQL in the Glossary](/reference/glossary/#cql) for further CQL information.
