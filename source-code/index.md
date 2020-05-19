@@ -27,7 +27,7 @@ A good starting point for understanding the FOLIO code is
 [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md), which
 introduces the concepts and architecture of the FOLIO platform, and includes
 installation instructions and examples.  Okapi is the central hub for
-applications running on the FOLIO platform and enables access to other modules
+applications running on the FOLIO platform and enable access to other modules
 in the architecture.
 
 The FOLIO system is made up of the code in several GitHub repositories.
@@ -35,7 +35,7 @@ Each repository contains the code for a single well-defined element of the
 system. These repositories fall into three categories:
 
 - _server-side elements_ that provide services and the
-  infrastructure that they run on;
+  the infrastructure that they run on;
 - _client-side elements_ that provide a
   framework for using those services from a Web browser;
 - and a few that fall into neither of these categories.
@@ -50,9 +50,9 @@ issues and general discussion via the
 
 The key server-side element is Okapi itself: the FOLIO middleware component
 that acts as a gateway for access to all modules, handling redundancy,
-sessions, etc.  Individual modules are provided in their own repositories, each
+sessions, etc.  Individual modules are provided in their repositories, each
 named `mod-`_name_ (note that these are mostly at the proof-of-concept stage).
-Each back-end module has its own documentation.
+Each back-end module has its documentation.
 
 Some of these modules are built from specifications in
 [RAML](https://raml.org/), the RESTful API Modeling Language: this process is
@@ -62,12 +62,10 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Okapi API Gateway proxy/discovery/deployment service.
 
 - [raml](https://github.com/folio-org/raml)
-  -- Repository of RAML files, including JSON Schemas, traits and
-  resource types centralized for re-usability.
-  The [API reference](/reference/api/) documentation is also
+  -- Repository of RAML files, including JSON Schemas, traits and resource types centralized for re-usability.
+  The [API Reference](/reference/api/) documentation is also
   generated.
-  This repository is the master location for the traits and resource
-  types, while each module is the master for its own schemas, examples,
+  This repository is the master location for the traits and resource types, while each module is the master for its schemas, examples,
   and actual RAML files.
   It is included in other repositories via a git sub-module, usually called `raml-util`.
 
@@ -173,7 +171,7 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Backend for quickMARC editor.
 
 - [acq-models](https://github.com/folio-org/acq-models)
-  -- Shared repository for the models of the various acquisition modules.
+  -- a Shared repository for the models of the various acquisition modules.
 
 - [mod-finance](https://github.com/folio-org/mod-finance)
   -- Finance business logic.
@@ -206,8 +204,8 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Automated patron blocks.
 
 - [mod-rtac](https://github.com/folio-org/mod-rtac)
-  -- Real Time Availability Check.
-  Enable third party discovery services to check for FOLIO inventory availability.
+  -- Real-Time Availability Check.
+  Enable third-party discovery services to check for FOLIO inventory availability.
 
 - [mod-tags](https://github.com/folio-org/mod-tags)
   -- Central list of tags that can be assigned to various objects.
@@ -304,11 +302,11 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Edge API to bridge the gap between external reporting and analytics systems and FOLIO by allowing these systems to resolve FOLIO UUIDs, such as a FOLIO user id, thereby acquiring a richer set of data.
 
 - [edge-rtac](https://github.com/folio-org/edge-rtac)
-  -- Edge API for RTAC (Real Time Availability Check).
+  -- Edge API for RTAC (Real-Time Availability Check).
   To interface with FOLIO for 3rd party discovery services to determine holdings availability.
 
 - [edge-sip2](https://github.com/folio-org/edge-sip2)
-  -- Edge API to bridge the gap between self service circulation and patron services stations and FOLIO by allowing these systems to issue requests and receive responses in Standard Interchange Protocol v2 (SIP2).
+  -- Edge API to bridge the gap between self-service circulation and patron services stations and FOLIO by allowing these systems to issue requests and receive responses in Standard Interchange Protocol v2 (SIP2).
 
 ## Client-side
 
@@ -320,7 +318,7 @@ envisage that most FOLIO UI work will be done in the context of
 Stripes.
 
 The stripes [documentation](https://github.com/folio-org/stripes/blob/master/README.md) is the starting point.
-Each front-end module has its own documentation.
+Each front-end module has its documentation.
 
 Note that Stripes is still in the design phase, so although code
 exists and can be run, the APIs are likely to change.
@@ -338,10 +336,10 @@ exists and can be run, the APIs are likely to change.
   Includes documentation for each library, and guides to assist their development.
 
 - [stripes-smart-components](https://github.com/folio-org/stripes-smart-components)
-  -- A suite of smart components. Each communicates with an Okapi web-service in order to provide the facilities that it renders.
+  -- A suite of smart components. Each communicates with an Okapi web-service to provide the facilities that it renders.
 
 - [stripes-acq-components](https://github.com/folio-org/stripes-acq-components)
-  -- Stripes components that are specific to use cases that arise in Acquisitions-related modules.
+  -- Stripes components that are specific to use cases that arise in Acquisition-related modules.
 
 - [stripes-data-transfer-components](https://github.com/folio-org/stripes-data-transfer-components)
   -- Stripes components that are specific to use cases that arise in ui-data-import and ui-data-export modules.
@@ -553,7 +551,7 @@ exists and can be run, the APIs are likely to change.
   -- Sample Ansible playbook and roles for FOLIO (and Vagrant).
   Get a FOLIO installation up and running quickly.
   Read the docs there, and follow to build the boxes.
-  The current built boxes are also available to download from
+  The currently built boxes are also available to download from
   [Vagrant Cloud](https://app.vagrantup.com/folio).
 
 - [folio-install](https://github.com/folio-org/folio-install)
@@ -590,7 +588,7 @@ exists and can be run, the APIs are likely to change.
   -- Client library to HoldingsIQ API.
 
 - [folio-service-tools](https://github.com/folio-org/folio-service-tools)
-  -- Library with general purpose classes to help with FOLIO backend service development.
+  -- Library with general-purpose classes to help with FOLIO backend service development.
 
 - [data-import-utils](https://github.com/folio-org/data-import-utils)
   -- Library with common utilities for data-import modules.

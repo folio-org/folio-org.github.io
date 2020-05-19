@@ -16,7 +16,7 @@ The whole community and the project will benefit by being more consistent, effic
 
 - [Which forum](/guidelines/which-forum/) to use for communication:
   Issue tracker, Slack chat, Discuss discussion, GitHub pull requests.
-  Some guidelines about when to use each, and some usage tips.
+  Some guidelines about when to use each, and some useful tips.
   The [concise list](/community/#collaboration-tools) of forums.
 - [Guidelines for Contributing Code](/guidelines/contributing/) --
   GitHub Flow, feature branches, pull requests, version numbers, coding style,
