@@ -220,3 +220,5 @@ Some design decisions might have an architectural impact. This might mean that t
 * Guidance for what decisions are considered architectural
 * Process for informing the Technical Council, e.g. raising an RFC
 
+<div class="folio-spacer-content"></div>
+

@@ -175,11 +175,12 @@ This is a typical directory layout, excluding the general boilerplate files and 
 ├── lib/
 │   ├── various
 ├── package.json
-├── settings/
-│   ├── various
 ├── sound/
 │   ├── checkout_error.m4a
 │   └── checkout_success.m4a
+├── src/
+│   ├── various js and css files
+│   └── settings/
 ├── test/
 │   └── ui-testing/
 ├── translations/
@@ -231,11 +232,15 @@ Some modules just have all of their code in the top-level directory.
 
 ### Settings {#front-end-Settings}
 
-The `settings` directory holds settings specific to this app.
+The `src/settings` directory holds settings specific to this app.
 
 ### Sound {#front-end-Sound}
 
 The optional `sound` directory holds sound files specific to this app.
+
+### src {#front-end-src}
+
+The source files for this module.
 
 ### Test {#front-end-test}
 
