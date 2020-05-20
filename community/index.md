@@ -149,9 +149,9 @@ the community.
 - stripes-loader: Jason Skomorowski (lead)
 - stripes-sample-platform: Jason Skomorowski (lead)
 - okapi-stripes: Wolfram Schneider (lead)
-- UI-users: Mike Taylor, Niels Erik Nielsen, Jason Skomorowski, John Coburn, Matt Connolly, Jeremy Huff
-- UI-items: Mike Taylor
-- UI-okapi-console: Mike Taylor, Niels Erik Nielsen
+- ui-users: Mike Taylor, Niels Erik Nielsen, Jason Skomorowski, John Coburn, Matt Connolly, Jeremy Huff
+- ui-items: Mike Taylor
+- ui-okapi-console: Mike Taylor, Niels Erik Nielsen
 - cql2pgjson-java: Julian Ladisch (lead)
 - container-perf-tests: Adam Dickmeiss (lead), Jakub Skoczen
 - folio-sample-modules: Heikki Levanto (lead), Niels Erik Nielsen

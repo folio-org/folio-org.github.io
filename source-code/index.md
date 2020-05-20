@@ -35,7 +35,7 @@ Each repository contains the code for a single well-defined element of the
 system. These repositories fall into three categories:
 
 - _server-side elements_ that provide services and the
-  the infrastructure that they run on;
+  infrastructure that they run on;
 - _client-side elements_ that provide a
   framework for using those services from a Web browser;
 - and a few that fall into neither of these categories.
@@ -62,10 +62,12 @@ facilitated by the code in the `raml-module-builder` repository.
   -- Okapi API Gateway proxy/discovery/deployment service.
 
 - [raml](https://github.com/folio-org/raml)
-  -- Repository of RAML files, including JSON Schemas, traits and resource types centralized for re-usability.
-  The [API Reference](/reference/api/) documentation is also
+  -- Repository of RAML files, including JSON Schemas, traits and
+  resource types centralized for re-usability.
+  The [API reference](/reference/api/) documentation is also
   generated.
-  This repository is the master location for the traits and resource types, while each module is the master for its schemas, examples,
+  This repository is the master location for the traits and resource
+  types, while each module is the master for its own schemas, examples,
   and actual RAML files.
   It is included in other repositories via a git sub-module, usually called `raml-util`.
 
