@@ -118,7 +118,7 @@ There is also the [FOLIO Developer Directory](https://wiki.folio.org/display/COM
 
 ### Engineering core team
 
-The engineering core team sets strategic direction for technical
+The engineering core team sets the strategic direction for technical
 architecture in the FOLIO software:
 
 - Sebastian Hammer (project lead)
@@ -163,7 +163,7 @@ the community.
 There are many ways to [contribute](/guides/#community)
 to FOLIO development, for example:
 
-- Contributing directly to the software development.
+- Contributing directly to software development.
 - Engaging with the issue tracker.
 - Joining the conversations.
 - Participating in Special Interest Groups.
@@ -176,7 +176,7 @@ to FOLIO development, for example:
 
 - [Which forum](/guidelines/which-forum/) to use for communication:
   Issue tracker, Slack chat, Discuss discussion, GitHub pull requests.
-  Some guidelines about when to use each, and some usage tips.
+  Some guidelines about when to use each, and some useful tips.
 
 - [Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/).
 
