@@ -60,5 +60,8 @@ The DevOps team will configure the module and conduct various configuration test
 ## Verify deployment
 
 After merge, await the scheduled build of the folio-snapshot and folio-testing [reference environments](/guides/automation/#reference-environments).
+
 Visit the [Software versions](https://folio-snapshot.aws.indexdata.com/settings/about) page of each to verify that the new module is present.
+
+<div class="folio-spacer-content"></div>
 

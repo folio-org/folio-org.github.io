@@ -4,7 +4,7 @@ title: Explain internationalization and localization
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: development-tips
-faqOrder: 3
+faqOrder: 5
 ---
 
 The [translations](/guides/commence-a-module/#front-end-translations) section of the "Commence a module" guide explains the setup for a new front-end module.

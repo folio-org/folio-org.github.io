@@ -4,7 +4,7 @@ title: Explain DB schema and performance issues
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: development-tips
-faqOrder: 2
+faqOrder: 4
 ---
 
 *Q.* Data is stored in the database in [a form of JSON in JSONB](https://www.postgresql.org/docs/current/static/datatype-json.html) fields within relational tables. Why do some queries and joins result in a "full table scan"?
