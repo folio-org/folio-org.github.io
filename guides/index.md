@@ -96,8 +96,8 @@ Configurations for accessing.
 
 Refer to the [Start](/start/) section.
 
-- [Overview](/start/overview/) high-level summary of "getting started" points for a new developer -- an on-boarding guide.
-- Having followed that getting started documentation and understanding the fundamentatal documentation, then follow [Running a local FOLIO system](/guides/run-local-folio/).
+- [Overview](/start/overview/) high-level summary of "getting started" points for a new developer -- an onboarding guide.
+- Having followed that getting started documentation and understanding the fundamental documentation, then follow [Running a local FOLIO system](/guides/run-local-folio/).
 - The [Commence a module - structure and configuration](/guides/commence-a-module/) guide explains a consistent layout for back-end and front-end modules.
 
 ### Reference documentation
@@ -127,7 +127,7 @@ These are listed in the [Start](/start/) section.
 - [User experience design](user-experience-design/).
 - [Accessible Routing in FOLIO](https://github.com/folio-org/stripes-components/blob/master/docs/patterns/AccessibleRouting.md) explains assisted navigation.
 - [FOLIO App Information, Tips, and Tricks](https://wiki.folio.org/display/FOLIOtips/).
-  Provides overview information for each individual app.
+  Provides overview information for each app.
   Includes [Settings](https://wiki.folio.org/display/FOLIOtips/Settings) documentation for each individual app.
 - [Performance optimization](performance-optimization/).
 
@@ -150,7 +150,7 @@ and the [FOLIO Development Process Overview](https://wiki.folio.org/display/COMM
 
 ### Development operations
 
-For people assisting with the FOLIO development operations infrastructure (DevOps) there are various notes.
+For people assisting with the FOLIO development operations infrastructure (DevOps), there are various notes.
 For example regarding operation, enhancement, and configuration of Jenkins continuous integration.
 
 - [DevOps introduction](devops-introduction/).
