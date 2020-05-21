@@ -355,6 +355,8 @@ mod-finc-config:
     directory: ramls
     files:
       - finc-tenant
+      - fincConfigFiles
+      - fincConfigFilters
       - fincSelectFiles
       - fincSelectFilters
       - fincConfigMetadataCollections
