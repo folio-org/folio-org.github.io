@@ -14,7 +14,8 @@ See explanations and examples below for
 
 ## Exact match operator: == {#exact}
 
-The CQL "exact match" operator (`==`) is used to exactly match the specified search term.
+The CQL "exact match" operator (`==`) is used to exactly match the specified search term –
+it is case sensitive and respect accents.
 Truncation is enabled using the \* wildcard, either on the right end or on the left end.
 
 ### Exact match examples 1 {#exact-examples-1}
