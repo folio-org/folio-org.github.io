@@ -8,12 +8,17 @@ menuTopTitle: Guides
 
 The main set of FOLIO modules are co-ordinated to form a regular release.
 At this stage it happens on a quarterly basis.
+(The normal [release procedure guidelines](/guidelines/release-procedures) still apply for individual module releases.)
 
-Refer to the [Releases](https://wiki.folio.org/display/REL/) area of the Wiki for co-ordination of the next release.
-The approximate dates and descriptive flower-based names (e.g. Edelweiss, Fameflower, Goldenrod) for upcoming releases are also listed there.
+Refer to the [Releases](https://wiki.folio.org/display/REL/) area of the Wiki for co-ordination of the next regular release, and for followup bugfix and hotfix release processes.
+The approximate dates and descriptive flower-based names (e.g. Edelweiss, Fameflower, Goldenrod) for upcoming releases are also listed there, along with calendars and milestone deadlines to assist planning.
 
-The preparation for each release has a dedicated Slack [channel](/guidelines/which-forum/#slack)
-(`#releases`). There are various planning documents pinned there.
+The wiki page [Release process in Jira](https://wiki.folio.org/display/REL/Release+process+in+Jira) explains the use of the special issue tracker process to manage release related activities, and to track interface versions and RMB versions.
+There is also a "Release board" to assess the current state.
+
+The preparation for each release has a dedicated [Slack channel](/guidelines/which-forum/#slack)
+(`#releases`). There are various planning documents and spreadsheets pinned there.
+Notification of each individual module release is sent to this channel, as well as other important announcements and co-ordination.
 
 The cut-off dates for module releases that are to be included, are also listed in those spreadsheets.
 
