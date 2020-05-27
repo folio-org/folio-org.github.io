@@ -369,6 +369,11 @@ The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB
 
 ### Terms S-Z
 
+#### SEC
+
+The [FOLIO Security Team](https://wiki.folio.org/display/SEC)
+is the group is charged with overseeing the process related to identification and resolution of security vulnerabilities reported against FOLIO.
+
 #### Solr
 
 [Apache Solr](https://en.wikipedia.org/wiki/Apache_Solr).
