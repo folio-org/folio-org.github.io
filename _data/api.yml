@@ -337,6 +337,7 @@ mod-erm-usage:
     files:
       - aggregatorsettings
       - counterreports
+      - files
       - usagedataproviders
     ramlutil: ramls/raml-util
 
