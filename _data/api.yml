@@ -72,8 +72,6 @@ mod-users:
       - groups
       - users
       - addressTypes
-      - patron-block-conditions
-      - patron-block-limits
       - proxiesFor
     ramlutil: ramls/raml-util
 
@@ -98,6 +96,9 @@ mod-patron-blocks:
     version1: true
     directory: ramls
     files:
+      - eventHandlers
+      - patron-block-conditions
+      - patron-block-limits
     ramlutil: ramls/raml-util
 
 edge-patron:
