@@ -45,7 +45,7 @@ Become familiar with the general FOLIO web site.
 Note that there is a common FOLIO-wide project navigation bar at the <a href="">top</a> of each of the various web sites.
 Use its "Overview" menu to reach the "Community" section which provides other avenues to the starting points, and to subscribe to the monthly email newsletter for "Community updates".
 
-For developers associated with the [OLE](/reference/glossary/#ole) partner institutions, become familiar with the [Open Library Environment](https://openlibraryenvironment.org/) web site, and follow some additional [OLE on-boarding](https://wiki.folio.org/display/COMMUNITY/On-boarding+Developers) steps.
+For developers associated with the [OLE](/reference/glossary/#ole) partner institutions, become familiar with the [Open Library Environment](https://openlibraryenvironment.org/) web site, and follow some additional [OLE on-boarding](https://wiki.folio.org/display/COMMUNITY/Getting+Started+for+Developers) steps.
 
 For developers associated with the [EPAM](https://wiki.folio.org/display/FOLIJET/Folio+Development+Team+Home) teams, refer to various getting started and management documentation at that wiki area.
 

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-05-15T03:02:51.085373+00:00"
+    "generatedDateTime": "2020-05-29T04:51:09.217746+00:00"
   },
   "repos": [
     {
@@ -144,7 +144,7 @@
       "repoType": "other"
     },
     {
-      "description": "Website for FOLIO open source development",
+      "description": "Website for FOLIO open source development dev.folio.org",
       "docDirName": null,
       "name": "folio-org.github.io",
       "repoType": "other"
@@ -1141,6 +1141,12 @@
       "description": "Organization-finder plugin for Stripes",
       "docDirName": null,
       "name": "ui-plugin-find-organization",
+      "repoType": "ui-plugin"
+    },
+    {
+      "description": "Stripes plugin to find packages and titles",
+      "docDirName": null,
+      "name": "ui-plugin-find-package-title",
       "repoType": "ui-plugin"
     },
     {
