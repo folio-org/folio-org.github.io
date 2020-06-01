@@ -374,11 +374,6 @@ The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB
 The [FOLIO Security Team](https://wiki.folio.org/display/SEC)
 is the group is charged with overseeing the process related to identification and resolution of security vulnerabilities reported against FOLIO.
 
-#### SK
-
-Surrogate Key ([SK](https://en.wikipedia.org/wiki/Surrogate_key)).
-These keys are used by the FOLIO [LDP](#ldp) to link its relational database tables.
-
 #### Solr
 
 [Apache Solr](https://en.wikipedia.org/wiki/Apache_Solr).
