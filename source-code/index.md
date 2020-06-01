@@ -38,8 +38,11 @@ system. These repositories fall into three categories:
 
 **PLEASE NOTE** that this is a technology preview following the [release early,
 release often](https://en.wikipedia.org/wiki/Release_early,_release_often)
-philosophy.  **We want your feedback** in the form of pull requests and filed
-issues and general discussion via the
+philosophy.
+
+**We want your feedback** in the form of pull requests and filed issues
+(the README of each module has a link to its issue tracker)
+and general discussion via the
 [collaboration tools](/community).
 
 ## Server-side

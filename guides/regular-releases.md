@@ -26,6 +26,9 @@ Refer to the [community release notes](https://wiki.folio.org/display/COMMUNITY/
 for important upgrade considerations.
 Follow the [process](https://wiki.folio.org/pages/viewpage.action?pageId=36572486) for maintenance of those documents.
 
+The quality assurance state of each module is listed at the
+[FOLIO Quality Dashboard](https://wiki.folio.org/display/DQA/FOLIO+Quality+Dashboard).
+
 A typical strategy for a module development is to keep doing the normal work in feature branches and merging to master until its final release and cut-off date.
 
 Hold off feature branches that are not to be included in the release.
