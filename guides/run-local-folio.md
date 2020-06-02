@@ -36,7 +36,7 @@ This might be a useful technique for testing memory management and other setting
 
 * Bring up a FOLIO Vagrant VM (e.g. 'folio/testing') as normal with `vagrant up` and log in with `vagrant ssh`
 
-* Clone the module repository and build the backend module.
+* Clone the module repository and build the backend module:
 
 ```
 git clone --recursive https://github.com/folio-org/mod-marccat
@@ -44,17 +44,17 @@ cd mod-marccat
 mvn clean install
 ```
 
-* Build the Docker image from the repository's Dockerfile.
+* Build the Docker image from the repository's Dockerfile:
 
 ```
 sudo docker build -t mod-marccat .
 ```
 
-* Edit the module descriptor in the module's `target` directory. In the `launchDescriptor` object, change the `dockerImage` key to reflect the name of the container built in the previous step (in this example: `mod-marccat`).
+* Edit the module descriptor in the module's `target` directory. In the `launchDescriptor` object, change the `dockerImage` key to reflect the name of the container built in the previous step (in this example: `"mod-marccat"`).
 Make any other changes you want to test to the container or environment settings.
 Note that in the Vagrant VMs, database connection settings are overridden by system settings.
 
-* Post the updated module descriptor to Okapi.
+* Post the updated module descriptor to Okapi:
 
 ```
 curl -w '\n' -D - -X POST -d @target/ModuleDescriptor.json http://localhost:9130/_/proxy/modules
@@ -62,7 +62,7 @@ curl -w '\n' -D - -X POST -d @target/ModuleDescriptor.json http://localhost:9130
 
 * Deploy the module and enable it for the tenant, using the module ID in the module descriptor (in this example: `mod-marccat-2.2.5-SNAPSHOT`).
 Note that for this example, all of the module's requirements are already satisfied by the installed FOLIO system in the VM.
-You may need to check the module's dependency graph first.
+You may need to check the module's [dependency graph](/tutorials/folio-vm/04-local-development/#module-dependency-graph) first.
 
 ```
 curl -w '\n' -D - -X POST -d '[{"id": "mod-marccat-2.2.5-SNAPSHOT", "action": "enable"}]' "http://localhost:9130/_/proxy/tenants/diku/install?deploy=true&tenantParameters=loadReference%3dtrue%2cloadSample%3dtrue"
