@@ -163,6 +163,7 @@ mod-circulation:
     files:
       - change-due-date
       - circulation
+      - circulation-event-handlers
       - circulation-rules
       - claim-item-returned
       - declare-item-lost
