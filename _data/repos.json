@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-05-29T04:51:09.217746+00:00"
+    "generatedDateTime": "2020-06-01T04:43:06.367937+00:00"
   },
   "repos": [
     {
@@ -150,7 +150,7 @@
       "repoType": "other"
     },
     {
-      "description": null,
+      "description": "Jenkins pipelines to test FOLIO performance and integration",
       "docDirName": null,
       "name": "folio-perf-test",
       "repoType": "other"
@@ -204,51 +204,21 @@
       "repoType": "ldp"
     },
     {
-      "description": "Report queries and other data analysis code for the Library Data Platform",
+      "description": "FOLIO reports and analytics for LDP databases",
       "docDirName": null,
       "name": "ldp-analytics",
       "repoType": "ldp"
     },
     {
-      "description": null,
+      "description": "ERM schema documentation",
       "docDirName": null,
       "name": "ldp-erm-doc",
-      "repoType": "ldp"
-    },
-    {
-      "description": "Old version of the Library Data Platform",
-      "docDirName": null,
-      "name": "ldp-old",
-      "repoType": "ldp"
-    },
-    {
-      "description": "Proof of concept code for the Library Data Platform",
-      "docDirName": null,
-      "name": "ldp-prototype",
       "repoType": "ldp"
     },
     {
       "description": "Real-time querying for the Library Data Platform",
       "docDirName": null,
       "name": "ldp-realtime",
-      "repoType": "ldp"
-    },
-    {
-      "description": "Test data generator for the Library Data Platform",
-      "docDirName": "doc",
-      "name": "ldp-testdata",
-      "repoType": "ldp"
-    },
-    {
-      "description": "Integration tests for the Library Data Platform",
-      "docDirName": null,
-      "name": "ldp-tests",
-      "repoType": "ldp"
-    },
-    {
-      "description": null,
-      "docDirName": null,
-      "name": "ldp-tmp-drill",
       "repoType": "ldp"
     },
     {
