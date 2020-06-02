@@ -113,9 +113,10 @@ Follow the results of this build run via its `Console Output` and full log.
 The AWS instance will be removed and rebuilt.
 It takes approximately 20-25 minutes.
 
-If not success, then try to interpret the log.
+If not success, then try to interpret the Jenkins log.
 Some "Find in page" searches are a bit helpful
 (e.g. "failed:" and "fatal:" and "Missing dependency:").
+In some cases, may need to ssh to the instance and inspect the Okapi logfile.
 
 ## Verify the testing build
 
