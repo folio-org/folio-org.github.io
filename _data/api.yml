@@ -96,6 +96,7 @@ mod-patron-blocks:
     version1: true
     directory: ramls
     files:
+      - automated-patron-blocks
       - eventHandlers
       - patron-block-conditions
       - patron-block-limits
