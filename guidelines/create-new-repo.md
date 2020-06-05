@@ -35,7 +35,7 @@ Do this as soon as possible, so that issues are created in the FOLIO issue track
 
 Ensure that access is configured for the relevant FOLIO GitHub [Teams](https://github.com/orgs/folio-org/teams).
 
-Add a concise Description to the GitHub repository. Consider that this will also be used elsewhere. This Description is near the top of your GitHub front page.
+Add a concise Description to the GitHub repository. Consider that this will also be utilised elsewhere. This Description is near the top of your GitHub front page.
 (If the "Edit" button is not available to you, then see the "support" advice above.)
 
 ## Add initial files
@@ -54,12 +54,12 @@ Compare initial files with an existing FOLIO module repository (e.g.
 [ui-users](https://github.com/folio-org/ui-users)).
 The Stripes/UI/backend modules might be slightly different (e.g. CHANGELOG.md = NEWS.md).
 
-Add LICENSE and CONTRIBUTING.md and README.md files.
+Add the required LICENSE and CONTRIBUTING.md and README.md files.
 
-Ensure that the copyright and license statement is near the top of the README.
+Ensure that the required copyright and license statement is near the top of the README.
 Use the initial year of creation for the date.
 
-Ensure that any package.json and pom.xml etc. type of configuration file has the appropriate "licence" elements.
+Ensure that any package.json and pom.xml etc. type of configuration file has the appropriate required "licence" elements.
 
 In the bottom "Further information" section of the README, add a link to your project issue tracker.
 
@@ -80,8 +80,9 @@ The [Commence a module - structure and configuration](/guides/commence-a-module/
 
 For back-end modules: descriptors/ModuleDescriptor-template.json, Dockerfile, Jenkinsfile, etc.
 
-Get all of the source files and other configuration files established first.
+Get the initial source files and other configuration files added first.
 Then add the Jenkinsfile to initiate the CI processing.
+Do this early so that CI can assist.
 **Note:**
 Its Jenkinsfile needs to be committed directly to master branch.
 If it is done via a pull-request then that will fail, as the initial base Sonar scan has not yet run.
@@ -101,4 +102,6 @@ See the folio-infrastructure lokalise-push [procedure](https://github.com/folio-
 ## Next steps
 
 When a new module has been fully established and its artifacts are being deployed, follow the guides to [install](/faqs/how-to-install-new-module/) it to platform and reference environments for snapshot and testing builds.
+
+<div class="folio-spacer-content"></div>
 
