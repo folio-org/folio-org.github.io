@@ -21,9 +21,6 @@ backend-infrastructure:
   title: Backend infrastructure repos
 raml-shared:
   title: Shared RAML repos
-ldp:
-  title: Library Data Platform repos
-  stem: ldp-
 other:
   title: Other repos
   stem: other-
