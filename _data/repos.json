@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-06-01T04:43:06.367937+00:00"
+    "generatedDateTime": "2020-06-17T01:06:30.341100+00:00"
   },
   "repos": [
     {
@@ -90,6 +90,12 @@
       "repoType": "other"
     },
     {
+      "description": "FOLIO reports and analytics",
+      "docDirName": null,
+      "name": "folio-analytics",
+      "repoType": "other"
+    },
+    {
       "description": "Ansible playbook for FOLIO",
       "docDirName": "doc",
       "name": "folio-ansible",
@@ -111,6 +117,12 @@
       "description": "Serves up GraphiQL for use with FOLIO",
       "docDirName": null,
       "name": "folio-graphiql",
+      "repoType": "other"
+    },
+    {
+      "description": "Helm charts modules repository",
+      "docDirName": null,
+      "name": "folio-helm",
       "repoType": "other"
     },
     {
@@ -186,6 +198,12 @@
       "repoType": "other"
     },
     {
+      "description": "Shared library for generating MARC records on-the-fly",
+      "docDirName": null,
+      "name": "generate-marc-utils",
+      "repoType": "other"
+    },
+    {
       "description": null,
       "docDirName": null,
       "name": "inventory-sample-data",
@@ -196,30 +214,6 @@
       "docDirName": null,
       "name": "jenkins-pipeline-libs",
       "repoType": "other"
-    },
-    {
-      "description": "Library Data Platform: an open source platform for reporting and analytics in libraries",
-      "docDirName": "doc",
-      "name": "ldp",
-      "repoType": "ldp"
-    },
-    {
-      "description": "FOLIO reports and analytics for LDP databases",
-      "docDirName": null,
-      "name": "ldp-analytics",
-      "repoType": "ldp"
-    },
-    {
-      "description": "ERM schema documentation",
-      "docDirName": null,
-      "name": "ldp-erm-doc",
-      "repoType": "ldp"
-    },
-    {
-      "description": "Real-time querying for the Library Data Platform",
-      "docDirName": null,
-      "name": "ldp-realtime",
-      "repoType": "ldp"
     },
     {
       "description": "Provide asynchronous event service (AES)",
@@ -478,13 +472,6 @@
       "docDirName": null,
       "name": "mod-kb-ebsco-java",
       "ramlDirName": "ramls",
-      "repoType": "backend-mod"
-    },
-    {
-      "description": "Library Data Platform service for FOLIO",
-      "docDirName": null,
-      "name": "mod-ldp",
-      "ramlDirName": null,
       "repoType": "backend-mod"
     },
     {
@@ -766,6 +753,12 @@
       "repoType": "backend-infrastructure"
     },
     {
+      "description": "ERM schema documentation",
+      "docDirName": null,
+      "name": "reporting-erm-doc",
+      "repoType": "other"
+    },
+    {
       "description": "RFCs for changes to the FOLIO platform",
       "docDirName": null,
       "name": "rfcs",
@@ -952,6 +945,12 @@
       "repoType": "ui"
     },
     {
+      "description": "Stripes App for ERM Comparison",
+      "docDirName": null,
+      "name": "ui-erm-comparison",
+      "repoType": "ui"
+    },
+    {
       "description": "Stripes UI for managing ERM usage statistics",
       "docDirName": "docs",
       "name": "ui-erm-usage",
@@ -985,12 +984,6 @@
       "description": null,
       "docDirName": null,
       "name": "ui-invoice",
-      "repoType": "ui"
-    },
-    {
-      "description": "LDP Management Console",
-      "docDirName": null,
-      "name": "ui-ldp",
       "repoType": "ui"
     },
     {
@@ -1063,6 +1056,12 @@
       "description": "Stripes UI plugin: Find a contact",
       "docDirName": null,
       "name": "ui-plugin-find-contact",
+      "repoType": "ui-plugin"
+    },
+    {
+      "description": "ERM-eresource-finder plugin for Stripes",
+      "docDirName": null,
+      "name": "ui-plugin-find-eresource",
       "repoType": "ui-plugin"
     },
     {
@@ -1171,12 +1170,6 @@
       "description": "Stripes UI module: managing tenant settings",
       "docDirName": null,
       "name": "ui-tenant-settings",
-      "repoType": "ui"
-    },
-    {
-      "description": null,
-      "docDirName": "doc",
-      "name": "ui-testing",
       "repoType": "ui"
     },
     {
