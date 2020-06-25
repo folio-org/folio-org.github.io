@@ -96,9 +96,7 @@ Refer to the map for all
 
 Various other FOLIO projects that do not fit the above classifications are listed separately.
 
-Refer to the map for all
-[Library Data Platform (LDP) repos](map/#ldp) and the various
-[Other repos](map/#other).
+Refer to the map for the various [Other repos](map/#other).
 
 <div class="folio-spacer-content"></div>
 

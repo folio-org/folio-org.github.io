@@ -228,7 +228,7 @@ of claims. JWTs are authenticated and encrypted, and used by Okapi.
 
 #### LDP
 
-Library Data Platform ([LDP](/source-code/map#ldp)) is an open source platform for reporting and analytics in libraries.
+Library Data Platform ([LDP](https://github.com/library-data-platform)) is an open source platform for reporting and analytics in libraries.
 
 #### LM
 
