@@ -641,9 +641,12 @@ mod-source-record-storage:
     version1: true
     directory: ramls
     files:
-      - source-record-storage
       - source-record-storage-batch
       - source-record-storage-handlers
+      - source-record-storage-records
+      - source-record-storage-snapshots
+      - source-record-storage-source-records
+      - source-record-storage-test-records
     excludes:
       - raml-storage
     ramlutil: ramls/raml-storage/raml-util
