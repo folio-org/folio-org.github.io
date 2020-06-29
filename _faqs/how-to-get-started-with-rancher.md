@@ -11,7 +11,7 @@ faqOrder: 9
 Rancher is a Kubernetes management tool.
 FOLIO rancher main URL https://rancher.dev.folio.org
 Default dev cluster: "folio-eks-2-us-west-2".
-Basic Okapi URL: https://<Project name>.ci.folio.org:80
+Basic Okapi URL: `https://<Project name>.ci.folio.org:80`
 
 ## Logging in
 You need to be a member of a FOLIO organization Team to have access to Rancher.
