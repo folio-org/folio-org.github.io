@@ -8,26 +8,26 @@ faqOrder: 9
 ---
 
 ## Introduction
-Rancher is Kubernetes managment tool.
+Rancher is a Kubernetes management tool.
 FOLIO rancher main URL https://rancher.dev.folio.org
-Default dev. cluster: "folio-eks-2-us-west-2".
+Default dev cluster: "folio-eks-2-us-west-2".
 Basic Okapi URL: https://<Project name>.ci.folio.org:80
 
 ## Logging in
-You have to be a member of FOLIO organzition Team to have access to Rancher.
-Go to main Rancher URL and log-in with GitHub account.
-Select thet default Cluster and your Project.
+You need to be a member of a FOLIO organization Team to have access to Rancher.
+Go to the main Rancher URL and login with GitHub account.
+Select the default Cluster and your Project.
 
 ## Project description
-Every project has own Postgres, Okapi, pre-installed core backends modules (and Stripes UI - under consruction).
-Also every Project runs Prometeuth and Kafka.
+Every project has own Postgres, Okapi, pre-installed core backend modules (and Stripes UI - under construction).
+Also every Project runs Prometheus and Kafka.
 FOLIO modules are installed from [FOLIO Helm repository](https://github.com/folio-org/folio-helm).
 Postgres and Kafka are installed from Bitnami Helm repository.
 
 ## Running and building modules
 By default backend modules are pulled from DockerHub/folioci repository with a 'latest' tag.
 But you can build your own module and automatically deploy it with Rancher pipeline and Helm.
-Please use [this pipeline](https://github.com/folio-org/mod-pubsub/blob/master/.rancher-pipeline.yml) for get started.
+Please use [this pipeline](https://github.com/folio-org/mod-pubsub/blob/master/.rancher-pipeline.yml) to get started.
 
 ## Registering modules in Okapi
 Module registration runs automatically after install or upgrade procedure.
@@ -40,8 +40,8 @@ Default steps for module registration:
 * Enabling module for tenant
 
 ## Environment variables
-Environment variables storing in Kubernetes secrets (Workload -> Secrets) and installed byr default to every Project.
+Environment variables storing in Kubernetes secrets (Workload -> Secrets) and installed by default to every Project.
 
-## Limitatons
+## Limitations
 No Okapi securing provided.
-Stripes UI deployment is under constuction.
+Stripes UI deployment is under construction.
