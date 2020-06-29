@@ -208,6 +208,7 @@ mod-inventory:
       - inventory-batch
       - inventory-config
       - inventory-event-handlers
+      - inventory-move
       - isbn
     ramlutil: ramls/raml-util
     rmb: false
