@@ -3,8 +3,8 @@ layout: page
 title: How to get started with Rancher environment
 titleLeader: "FAQ |"
 menuTopTitle: Guides
-categories: devdoc
-faqOrder: 15
+categories: development-tips
+faqOrder: 9
 ---
 
 ## Introduction
