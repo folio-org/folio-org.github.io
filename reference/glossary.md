@@ -119,7 +119,7 @@ language of the same name.
 
 Some starting points are:
 
-- [A Gentle Introduction to CQL](http://zing.z3950.org/cql/intro.html).
+- [A Gentle Introduction to CQL](http://zing.z3950.org/cql/intro.html) (incomplete, outdated, explains features not supported by FOLIO).
 - FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/raml-module-builder#cql-contextual-query-language) (CQL2PgJSON).
 - FOLIO FAQ [Explain CQL string matching](/faqs/explain-cql/)
 - The [CQL-1.2](https://www.loc.gov/standards/sru/cql/) specification and context sets.
@@ -134,7 +134,7 @@ A CQL example:
 and active=="true" sortby personal.lastName personal.firstName barcode
 ```
 
-For other relevant CQL examples see the first two items above, and the [API docs](/reference/api/), and the debug output for tests in each backend module.
+For other relevant CQL examples see the FOLIO items above, and the [API docs](/reference/api/), and the debug output for tests in each backend module.
 
 #### CO
 
