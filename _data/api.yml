@@ -69,6 +69,7 @@ mod-users:
     version1: true
     directory: ramls
     files:
+      - departments
       - groups
       - users
       - addressTypes
