@@ -69,6 +69,7 @@ mod-users:
     version1: true
     directory: ramls
     files:
+      - departments
       - groups
       - users
       - addressTypes
@@ -361,6 +362,8 @@ mod-finc-config:
     directory: ramls
     files:
       - finc-tenant
+      - fincConfigEZBCredentials
+      - fincSelectEZBCredentials
       - fincConfigFiles
       - fincConfigFilters
       - fincSelectFiles
