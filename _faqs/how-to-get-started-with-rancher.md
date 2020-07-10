@@ -76,6 +76,14 @@ Last step after modules registration is to apply perrmissions to modules to admi
 ## Environment variables
 Environment variables for database and backend modules are stored in Kubernetes secrets (Workload -> Secrets) and installed by default to every Project.
 
+## Deployment tips
+Some backend modules built on SpringBoot and requires more CPU to start.
+To deploy that applications, such as `mod-agreements` or `mod-licenses` you need to override CPU and memory parameters.
+Add 'answers' to module deployment:
+  ```
+  resources.limits.cpu = "500m"
+  ```
+
 ## Limitations
 No Okapi securing is provided.
 Build Stripes UI module in Rancher is not possible due to Project resource limits.
