@@ -390,7 +390,6 @@ mod-finance:
     version1: true
     directory: ramls
     files:
-      - awaiting-payment
       - budgets
       - exchange-rate
       - fiscal-years
