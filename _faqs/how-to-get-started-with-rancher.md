@@ -37,6 +37,7 @@ Please create you own branch and modify `.rancher-pipeline.yml` to your needs [a
 Recomendations about min. requirements to pipeline namespace to pass successful build:
   * Limit mCPU - 4500
   * Limit memory - 5000 Mb
+
 Note! Stripes UI module is installed by default and cannot be built inside Rancher pipeline.
 
 ## Registering modules in Okapi
@@ -52,17 +53,25 @@ Default steps for module registration:
 
 Also you can use docker commands to do registration manually:
   * Registering particular module (backend or UI module)
-    `docker run --rm -e TENANT_ID=diku -e OKAPI_URL=https://<project name>-okapi.ci.folio.org -e MODULE_NAME=<module name> docker.dev.folio.org/folio-okapi-registration`
+    ```
+    docker run --rm -e TENANT_ID=diku -e OKAPI_URL=https://<project name>-okapi.ci.folio.org -e MODULE_NAME=<module name> docker.dev.folio.org/folio-okapi-registration
+    ```
   * Registering all modules (backend and UI from 'platform-complete' list)
-    `docker run --rm -e TENANT_ID=diku -e OKAPI_URL=https://<project name>-okapi.ci.folio.org -e MODULE_NAME='' docker.dev.folio.org/folio-okapi-registration`
-    * Registering all UI modules only
-      `docker run --rm -e TENANT_ID=diku -e OKAPI_URL=https://<project name>-okapi.ci.folio.org -e MODULE_NAME='deployStripes' docker.dev.folio.org/folio-okapi-registration`
+    ```
+    docker run --rm -e TENANT_ID=diku -e OKAPI_URL=https://<project name>-okapi.ci.folio.org -e MODULE_NAME='' docker.dev.folio.org/folio-okapi-registration
+    ```
+  * Registering all UI modules only
+    ```
+    docker run --rm -e TENANT_ID=diku -e OKAPI_URL=https://<project name>-okapi.ci.folio.org -e MODULE_NAME='deployStripes' docker.dev.folio.org/folio-okapi-registration
+    ```
 
 ## Setting up modules permissions
 Last step after modules registration is to apply perrmissions to modules to admin user.
 
   * Applying permissions to all installed modules to `diku_admin`
-    `docker run --rm -e TENANT_ID=diku -e ADMIN_USER=diku_admin -e ADMIN_PASSWORD=admin -e OKAPI_URL=https://<project name>-okapi.ci.folio.org docker.dev.folio.org/bootstrap-superuser`
+    ```
+    docker run --rm -e TENANT_ID=diku -e ADMIN_USER=diku_admin -e ADMIN_PASSWORD=admin -e OKAPI_URL=https://<project name>-okapi.ci.folio.org docker.dev.folio.org/bootstrap-superuser
+    ```
 
 ## Environment variables
 Environment variables for database and backend modules are stored in Kubernetes secrets (Workload -> Secrets) and installed by default to every Project.
