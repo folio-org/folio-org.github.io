@@ -69,6 +69,7 @@ mod-users:
     version1: true
     directory: ramls
     files:
+      - departments
       - groups
       - users
       - addressTypes
@@ -389,7 +390,6 @@ mod-finance:
     version1: true
     directory: ramls
     files:
-      - awaiting-payment
       - budgets
       - exchange-rate
       - fiscal-years
