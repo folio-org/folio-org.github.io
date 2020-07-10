@@ -7,19 +7,29 @@ categories: development-tips
 faqOrder: 3
 ---
 
-See also [CQL in the Glossary](/reference/glossary/#cql) for further CQL information.
+See also [CQL in the Glossary](/reference/glossary/#cql) and RAML Module Builder's
+[CQL](https://github.com/folio-org/raml-module-builder#cql-relations),
+[CQL2PgJSON](https://github.com/folio-org/raml-module-builder#cql2pgjson-multi-field-index),
+and [Post Tenant (schema.json)](https://github.com/folio-org/raml-module-builder#the-post-tenant-api)
+documentation sections for further CQL information.
 
 See explanations and examples below for
-[Exact match operator](#exact) and [Word match operators](#word).
+[Field match operator](#field) and [Word match operators](#word).
 
-## Exact match operator: == {#exact}
+## Field match operator: == {#field}{#exact}
 
-The CQL "exact match" operator (`==`) is used to exactly match the specified search term --
-it is case sensitive and respects accents.
+The CQL "exact match" operator (`==`) is used to match against a complete field.
 
 Truncation is enabled using the \* wildcard, either on the right end or on the left end.
 
-### Exact match examples 1 {#exact-examples-1}
+If the `==` search is to be accelerated, then create a B-tree database index by
+adding an `"index"` or `"uniqueIndex"` entry for the field in `schema.json`
+as explained in
+[RAML Module Builder Post Tenant API documentation](https://github.com/folio-org/raml-module-builder#the-post-tenant-api).
+
+Only right end truncation is supported by B-tree database indexes.
+
+### Field match examples 1 {#field-examples-1}{#exact-examples-1}
 
 Consider the CQL query:
 ```
@@ -43,7 +53,7 @@ This has the SQL equivalents (both are the same):<br/>
 `table.field = 'abc xyz'`<br/>
 `table.field LIKE 'abc xyz'`
 
-### Exact match examples 2 {#exact-examples-2}
+### Field match examples 2 {#field-examples-2}{#exact-examples-2}
 
 Consider the CQL query:
 ```
@@ -70,7 +80,7 @@ abc, xyz
 This has the SQL equivalent:<br/>
 `table.field LIKE 'abc xyz%'`
 
-### Exact match examples 3 {#exact-examples-3}
+### Field match examples 3 {#field-examples-3}{#exact-examples-3}
 
 Consider the CQL query:
 ```
@@ -98,6 +108,9 @@ abc, xyz
 This has the SQL equivalent:<br/>
 `table.field LIKE '%abc xyz%'`
 
+Note that this is slow on large datasets because b-tree database indexes
+support only right truncation.
+
 ## Word match operators: =, adj, all, any {#word}
 
 The four word match operators ignore punctuation and whitespace, and they match against words.
@@ -113,6 +126,13 @@ It is implemented using [PostgreSQL's `to_tsvector @@ to_tsquery` full text sear
 `adj` matches if all words of the query string exist consecutively in that order, there may be any whitespace and punctuation in between.
 
 `=` is a synonym for `adj`.
+
+If a word match search is to be accelerated, then create a full text database index by
+adding a `"fullTextIndex"` entry for the field in `schema.json`
+as explained in
+[RAML Module Builder Post Tenant API documentation](https://github.com/folio-org/raml-module-builder#the-post-tenant-api).
+
+Only right end truncation is supported by word match operators and full text database indexes.
 
 ### Word match examples 1 {#word-examples-1}
 
