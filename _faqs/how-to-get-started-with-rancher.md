@@ -13,6 +13,7 @@ Rancher is a Kubernetes management tool.
 * FOLIO rancher main URL: [https://rancher.dev.folio.org](https://rancher.dev.folio.org)
 * Project UI URL: `https://<Project name>.ci.folio.org`
 * Basic Okapi URL: `https://<Project name>-okapi.ci.folio.org`
+* PgAdmin4 URL: `https://<Project name>-pgadmin.ci.folio.org` (login as user 'chart@example.local' or 'user@folio.org' password 'SuperSecret')
 
 ## Logging in
 To have access to Rancher, you need to be a member of a FOLIO organization Team in GitHub. Check [here Gitgub Folio teams](https://github.com/orgs/folio-org/teams).
@@ -62,7 +63,7 @@ Also you can use docker commands to do registration manually:
     ```
   * Registering all UI modules only
     ```
-    docker run --rm -e TENANT_ID=diku -e OKAPI_URL=https://<project name>-okapi.ci.folio.org -e MODULE_NAME='deployStripes' docker.dev.folio.org/folio-okapi-registration
+    docker run --rm -e TENANT_ID=diku -e OKAPI_URL=https://<project name>-okapi.ci.folio.org -e MODULE_NAME='platform-complete' docker.dev.folio.org/folio-okapi-registration
     ```
 
 ## Setting up modules permissions
