@@ -411,6 +411,7 @@ mod-finance-storage:
     directory: ramls
     files:
       - budget
+      - expense_class
       - finance-storage
       - fiscal-year
       - fund
