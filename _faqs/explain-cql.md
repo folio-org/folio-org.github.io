@@ -16,7 +16,7 @@ documentation sections for further CQL information.
 See explanations and examples below for
 [Field match operator](#field) and [Word match operators](#word).
 
-## Field match operator: == {#field}{#exact}
+## Field match operator: == {#field}
 
 The CQL "exact match" operator (`==`) is used to match against a complete field.
 
@@ -29,7 +29,7 @@ as explained in
 
 Only right end truncation is supported by B-tree database indexes.
 
-### Field match examples 1 {#field-examples-1}{#exact-examples-1}
+### Field match examples 1 {#field-examples-1}
 
 Consider the CQL query:
 ```
@@ -53,7 +53,7 @@ This has the SQL equivalents (both are the same):<br/>
 `table.field = 'abc xyz'`<br/>
 `table.field LIKE 'abc xyz'`
 
-### Field match examples 2 {#field-examples-2}{#exact-examples-2}
+### Field match examples 2 {#field-examples-2}
 
 Consider the CQL query:
 ```
@@ -80,7 +80,7 @@ abc, xyz
 This has the SQL equivalent:<br/>
 `table.field LIKE 'abc xyz%'`
 
-### Field match examples 3 {#field-examples-3}{#exact-examples-3}
+### Field match examples 3 {#field-examples-3}
 
 Consider the CQL query:
 ```
