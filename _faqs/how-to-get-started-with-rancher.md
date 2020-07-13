@@ -34,7 +34,7 @@ All modules can be managed in `App` menu in Rancher. You can add new module or u
 ## Building own backend modules
 You can build your own module and automatically deploy it with Rancher pipeline and Helm.
 Please create you own branch and modify `.rancher-pipeline.yml` to your needs [as in this pipeline](https://github.com/folio-org/mod-pubsub/blob/master/.rancher-pipeline.yml) to get started. Go to Workloads -> Pipelines, run pipeline for that branch and Rancher will deploy new version of that module.
-Recomendations about min. requirements to pipeline namespace to pass successful build:
+Recomendations about min. requirements to pipeline namespace to pass build successfully:
   * Limit mCPU - 4500
   * Limit memory - 5000 Mb
 
@@ -77,11 +77,12 @@ Last step after modules registration is to apply perrmissions to modules to admi
 Environment variables for database and backend modules are stored in Kubernetes secrets (Workload -> Secrets) and installed by default to every Project.
 
 ## Deployment tips
-Some backend modules built on SpringBoot and requires more CPU to start.
-To deploy that applications, such as `mod-agreements` or `mod-licenses` you need to override CPU and memory parameters.
+Some backend modules are based on SpringBoot and requires more CPU to start.
+To deploy that applications, such as `mod-agreements` or `mod-licenses`, you need to override CPU and memory parameters.
 Add 'answers' to module deployment:
   ```
   resources.limits.cpu = "500m"
+  resources.limits.memory = "400Mi"
   ```
 
 ## Limitations
