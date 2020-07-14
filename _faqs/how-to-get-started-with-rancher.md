@@ -44,7 +44,7 @@ Note! Stripes UI module is installed by default and cannot be built inside Ranch
 ## Registering modules in Okapi
 Module registration runs automatically after the install or upgrade procedure.
 Helm uses post-install and post-upgrade hooks to run module registration job for each module.
-Helm gets ModuleDescriptors from the [FOLIO Registry](http://folio-registry.aws.indexdata.com) - it gets the latest master branch snapshot descriptor.
+Helm gets ModuleDescriptors from the FOLIO Registry (`http://folio-registry.aws.indexdata.com`) -- it gets the latest master branch snapshot descriptor.
 
 Default steps for module registration:
   * Pushing module descriptor
