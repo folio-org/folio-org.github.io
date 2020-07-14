@@ -28,14 +28,14 @@ FOLIO modules are installed from the [FOLIO Helm repository](https://github.com/
 Postgres and Kafka are installed from the Bitnami Helm repository.
 
 ## Running modules
-All Project have installed Folio Helm repository (`Catalog` in Rancher) witch contains all backend modules.
+All Project have installed Folio Helm repository (`Catalog` in Rancher) which contains all backend modules.
 By default the backend modules are pulled from [DockerHub/folioci](https://hub.docker.com/u/folioci) repository with a 'latest' tag.
 All modules can be managed in `App` menu in Rancher. You can add new module or upgrade one there.
 
 ## Building own backend modules
 You can build your own module and automatically deploy it with Rancher pipeline and Helm.
 Please create you own branch and modify `.rancher-pipeline.yml` to your needs [as in this pipeline](https://github.com/folio-org/mod-pubsub/blob/master/.rancher-pipeline.yml) to get started. Go to Workloads -> Pipelines, run pipeline for that branch and Rancher will deploy new version of that module.
-Recomendations about min. requirements to pipeline namespace to pass build successfully:
+Recommendations about minimum requirements to pipeline namespace to pass build successfully:
   * Limit mCPU - 4500
   * Limit memory - 5000 Mb
 
@@ -67,7 +67,7 @@ Also you can use docker commands to do registration manually:
     ```
 
 ## Setting up modules permissions
-Last step after modules registration is to apply perrmissions to modules to admin user.
+Last step after modules registration is to apply permissions to modules to admin user.
 
   * Applying permissions to all installed modules to `diku_admin`
     ```
