@@ -28,7 +28,7 @@ FOLIO modules are installed from the [FOLIO Helm repository](https://github.com/
 Postgres and Kafka are installed from the Bitnami Helm repository.
 
 ## Running modules
-All Project have installed Folio Helm repository (`Catalog` in Rancher) witch contains all backend modules.
+All Project installed from Folio Helm repository (`Catalog` in Rancher) witch contains all backend modules.
 By default the backend modules are pulled from [DockerHub/folioci](https://hub.docker.com/u/folioci) repository with a 'latest' tag.
 All modules can be managed in `App` menu in Rancher. You can add new module or upgrade one there.
 
@@ -83,7 +83,7 @@ To deploy that applications, such as `mod-agreements` or `mod-licenses`, you nee
 Add 'answers' to module deployment:
   ```
   resources.limits.cpu = "500m"
-  resources.limits.memory = "400Mi"
+  resources.limits.memory = "600Mi"
   ```
 
 ## Limitations
