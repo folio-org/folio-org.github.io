@@ -53,7 +53,7 @@ Follow the guide to verify [Local module as Docker container](/guides/run-local-
 
 ## Declare new module
 
-Prepare the Jira ticket to guide the process, and request that the new back-end module be enabled for the snapshot and testing.
+Prepare the Jira ticket to guide the process, and request that the new backend module be enabled for the snapshot and testing.
 Also clarify if this module needs to be included in the "core" set of modules.
 
 Specify "Development Team: FOLIO DevOps" to be prioritized and scheduled.
