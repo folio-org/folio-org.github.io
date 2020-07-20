@@ -79,18 +79,25 @@ The [Commence a module - structure and configuration](/guides/commence-a-module/
 
 ### Backend specific
 
-For back-end modules: descriptors/ModuleDescriptor-template.json, Dockerfile, Jenkinsfile, etc.
+For back-end modules: descriptors/ModuleDescriptor-template.json, Dockerfile, POM, Jenkinsfile, etc.
 
-Get the initial source files and other configuration files added first.
+Get the initial basic source files and other configuration files added first.
 Then add the Jenkinsfile to initiate the CI processing.
 Do this early so that CI can assist.
 **Note:**
 Its Jenkinsfile needs to be committed directly to master branch.
-If it is done via a pull-request then that will fail, as the initial base Sonar scan has not yet run.
+If it is done via a pull-request then that will fail, as the initial base Sonar scan for master branch has not yet run.
 
 ### Frontend specific
 
 For front-end modules: package.json, .eslintrc, Jenkinsfile, etc.
+
+Get the initial basic source files and other configuration files added first.
+Also add the Jenkinsfile to initiate the CI processing.
+Do this early so that CI can assist.
+**Note:**
+The Jenkinfile setting "`runSonarqube = true`" needs to be committed directly to master branch.
+If it is done via a pull-request then that will fail, as the initial base Sonar scan for master branch has not yet run.
 
 ## Configure Lokalise
 
