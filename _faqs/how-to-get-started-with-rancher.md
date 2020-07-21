@@ -14,6 +14,7 @@ Rancher is a Kubernetes management tool.
 * Project UI URL: `https://<Project name>.ci.folio.org`
 * Basic Okapi URL: `https://<Project name>-okapi.ci.folio.org`
 * PgAdmin4 URL: `https://<Project name>-pgadmin.ci.folio.org` (login as user 'chart@example.local' or 'user@folio.org' password 'SuperSecret')
+* Logs: https://logs.ci.folio.org/
 
 ## Logging in
 To have access to Rancher, you need to be a member of a FOLIO organization [Team in GitHub](https://github.com/orgs/folio-org/teams).
@@ -29,25 +30,23 @@ FOLIO modules are installed from the [FOLIO Helm repository](https://github.com/
 Postgres and Kafka are installed from the Bitnami Helm repository.
 
 ## Running modules
-<<<<<<< HEAD
-All Project installed from Folio Helm repository (`Catalog` in Rancher) witch contains all backend modules.
-=======
-All Projects have installed FOLIO Helm repository (`Catalog` in Rancher) which contains all backend modules.
->>>>>>> 6b7fc8170867d156fc44e92da3773d89cb194eab
+All Projects installed FOLIO Helm repository (`Catalog` in Rancher) which contains all backend modules, UI, pgadmin.
 By default the backend modules are pulled from [DockerHub/folioci](https://hub.docker.com/u/folioci) repository with a 'latest' tag.
+UI module is pulled from `docker.dev.folio.org` repository with own project latest tag `<project>-latest`.
 All modules can be managed in the `App` menu in Rancher, where new modules can be added or existing ones can be upgraded.
 
-## Building own backend modules
+## Building Backend modules
 You can build your own module, and automatically deploy it with Rancher pipeline and Helm.
 To get started, create your own branch and modify `.rancher-pipeline.yml` to your needs (for example [as in this pipeline](https://github.com/folio-org/mod-pubsub/blob/master/.rancher-pipeline.yml)).
 
 Go to Workloads -> Pipelines, run pipeline for that branch, and then Rancher will deploy the new version of that module.
 
-Recommendations about minimum requirements for pipeline namespace to enable successful build:
-  * Limit mCPU - 4500
-  * Limit memory - 5000 Mb
+## Building Frontend
+Modify [sample pipeline](https://github.com/folio-org/platform-complete/blob/stripes-pipeline-unam/.rancher-pipeline.yml) and start build.
 
-**Note:** The Stripes Platform is installed by default and cannot be built inside Rancher pipeline.
+Recommendations about minimum requirements for pipeline namespace to enable successful build:
+  * Limit mCPU - 4500m
+  * Limit memory - 12000Mi
 
 ## Registering modules in Okapi
 Module registration runs automatically after the install or upgrade procedure.
@@ -96,6 +95,5 @@ Add 'answers' to module deployment:
 
 ## Limitations
 * No Okapi securing is provided.
-* Building Stripes UI module in Rancher is not possible due to Project resource limits.
 
 <div class="folio-spacer-content"></div>
