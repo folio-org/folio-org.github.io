@@ -392,6 +392,7 @@ mod-finance:
     files:
       - budgets
       - exchange-rate
+      - expense-classes
       - fiscal-years
       - fund-types
       - funds
@@ -411,6 +412,7 @@ mod-finance-storage:
     directory: ramls
     files:
       - budget
+      - budget_expense_class
       - expense_class
       - finance-storage
       - fiscal-year

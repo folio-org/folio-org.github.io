@@ -22,7 +22,7 @@ This is the [relevant guide](/guides/install-backend-module/) that they would ha
 Still, we need to follow it again.
 There are tips not repeated here, and it defines verification steps that would be wise to re-follow before committing to infrastructure configuration.
 
-Investigate the module README in case there are other special requirements.
+Investigate the module README and LaunchDescriptor in case there are other special requirements.
 
 ## Overview
 
