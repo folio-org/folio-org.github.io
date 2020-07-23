@@ -98,7 +98,7 @@ Add 'answers' to module deployment:
 ### System wide Q&A
 
 Q: How are the modules included by default in a project determined? for example, is it based upon a particular revision of a branch of a platform?  
-  A: It is based on latest FolioCi images from `master` branches. These modules are not upgrading automatically in Rancher and project team members have to do in manually in `App` menu
+  + A: It is based on latest FolioCi images from `master` branches. These modules are not upgrading automatically in Rancher and project team members have to do in manually in `App` menu
 
 Q: Are there any projects present at the moment, I could not find any in the list for the default cluster? How is a new project created?  
   A: New Project are available for authorized GitHub team members. Project deployed with Terraform already, including core backends, UI, secrets, Folio Helm Catalog etc.
