@@ -98,89 +98,89 @@ Add 'answers' to module deployment:
 ### System wide Q&A
 
 Q: How are the modules included by default in a project determined? for example, is it based upon a particular revision of a branch of a platform?  
-  + A: It is based on latest FolioCi images from `master` branches. These modules are not upgrading automatically in Rancher and project team members have to do in manually in `App` menu
+  + It is based on latest FolioCi images from `master` branches. These modules are not upgrading automatically in Rancher and project team members have to do in manually in `App` menu
 
 Q: Are there any projects present at the moment, I could not find any in the list for the default cluster? How is a new project created?  
-  A: New Project are available for authorized GitHub team members. Project deployed with Terraform already, including core backends, UI, secrets, Folio Helm Catalog etc.
+  + New Project are available for authorized GitHub team members. Project deployed with Terraform already, including core backends, UI, secrets, Folio Helm Catalog etc.
 
 Q: What is meant by module in this context? Does this 'Catalog' contain one entry for each module family (e.g. mod-inventory-storage) or one per version of a module (e.g. mod-inventory-storage 19.2.1)  
-  A: Catalog contains module family. Module version not defined in Helm and pulling from `http://folio-registry.aws.indexdata.com` during install or upgrade
+  + Catalog contains module family. Module version not defined in Helm and pulling from `http://folio-registry.aws.indexdata.com` during install or upgrade
 
 Q: Is this the `Apps` menu item at the top of the page? And when accessed from within a project it is specific to that project?  
-  A: `App` menu is accessible to every Project member. Folio Helm repository shared for all Projects and contains complete Folio backends list
+  + `App` menu is accessible to every Project member. Folio Helm repository shared for all Projects and contains complete Folio backends list
 
 Q: Create your own branch of what, the Helm repository or the module repository?  
-  A: Module repository. Helm repository is managed by DevOps
+  + Module repository. Helm repository is managed by DevOps
 
 Q: The linked rancher configuration includes a tag `docker.dev.folio.org/mod-pubsub:folijet-latest`. Does this mean that every custom module version is published to an FOLIO local docker repository and needs to be uniquely named to avoid conflicts?  
-  A: You should add/change any tag you want before module building to avoid conflicts
+  + You should add/change any tag you want before module building to avoid conflicts
 
 Q: Is this specific to a project or across the whole Rancher cluster? Are these the two separate menu items Workloads and Pipelines under the Resources menu?  
-  A: All these menu same for all Projects, but contains only Project specific pipelines and Workloads
+  + All these menu same for all Projects, but contains only Project specific pipelines and Workloads
 
 Q: What are the install or upgrade procedures (I haven't noticed them outlined elsewhere in the document)?  
-  A: "Upgrade" button in the right corner of application. "Launch" button to start new one. Please read Rancher guides to find more information
+  + "Upgrade" button in the right corner of application. "Launch" button to start new one. Please read Rancher guides to find more information
 
 Q: Is this the case for versions of modules built from a branch? If so, what if the branch contains updated descriptors, are those ignored?  
-  A: You should prepare and register custom Module Descriptor in that case
+  + You should prepare and register custom Module Descriptor in that case
 
 Q: How are these Docker commands run? Are they executed from the Rancher UI?  
-  A: They could be run on developer local machine
+  + They could be run on developer local machine
 
 Q: Does this mean that each project is an isolated environment and can have separate tenants within it (that each could have different modules installed)?  
-  A: Exactly
+  + Exactly
 
 ### Backend Q&A
 
 Q: How to build, deploy and register a particular branch of a backend module (e.g mod-users/feature-x ) for diku tenant?  
-  A: If you need replace a running module or add new one, go to Workloads→Pipelines, select 'mod-users' repository, call `Run`, select 'feature-x' branch and start building process
+  + If you need replace a running module or add new one, go to Workloads→Pipelines, select 'mod-users' repository, call `Run`, select 'feature-x' branch and start building process
 
 Q: How to provision another tenant?  
-  A: Override 'tenantId' in module deployment, for example, in `App` menu add 'answer' to deployment properties `postJob.tenantId = mytenant`. After module deployed, helm starts a registration job with new tenant name
+  + Override 'tenantId' in module deployment, for example, in `App` menu add 'answer' to deployment properties `postJob.tenantId = mytenant`. After module deployed, helm starts a registration job with new tenant name
 
 Q: How to build, deploy and register a particular branch of a backend module (e.g mod-users/feature-x ) for a tenant other than diku?  
-  A: Change pipeline and add new answer parameter in Deploy stage (`postJob.tenantId = mytenant`)
+  + Change pipeline and add new answer parameter in Deploy stage (`postJob.tenantId = mytenant`)
 
 Q: How can I CRUD pipelines available via Rancher?  
-  A: It is available for Rancher admin users only
+  + It is available for Rancher admin users only
 
 Q: How can I understand what branch and build number has been deployed for a module just by looking at Rancher UI?  
-  A: You have to change pipeline and add Build number to image tag. Rancher pipeline has variable  ${CICD_EXECUTION_SEQUENCE} for that
+  + You have to change pipeline and add Build number to image tag. Rancher pipeline has variable  ${CICD_EXECUTION_SEQUENCE} for that
 
 Q: How to deploy more than on branch of given module?  (mod-users/feature-x and mod-users/feature-y)?  
-  A: If you need to setup new version of a module next to existing one, you have to change pipeline source and remove deploy step and change image tag, run pipeline, go to 'App' menu and deploy built image with new name, for example 'mod-users2'. After that you should prepare new DeploymentDescriptor, ModuleDescriptor and register that module with new tenant and another module version manually
+  + If you need to setup new version of a module next to existing one, you have to change pipeline source and remove deploy step and change image tag, run pipeline, go to 'App' menu and deploy built image with new name, for example 'mod-users2'. After that you should prepare new DeploymentDescriptor, ModuleDescriptor and register that module with new tenant and another module version manually
 
 Q: What does the deploy step do?  
-  A: Deploy step in pipeline overrides `image.repository` and `image.tag` values and starts module install/upgrade procedure in `App` menu with new docker image
+  + Deploy step in pipeline overrides `image.repository` and `image.tag` values and starts module install/upgrade procedure in `App` menu with new docker image
 
 Q: How prepare new DeploymentDescriptor, ModuleDescriptor and register is done, by making API requests directly to the Okapi deployed in your project?  
-  A: Yes, use [Okapi manual](https://github.com/folio-org/okapi/blob/master/doc/guide.md) to find out more about that
+  + Yes, use [Okapi manual](https://github.com/folio-org/okapi/blob/master/doc/guide.md) to find out more about that
 
 Q: How to deploy (with I believe includes proxy registration, discovery registration and tenant enablement) a custom module version that has changes to the module descriptor?  
-  A: You should prepare new descriptors and do registration manually
+  + You should prepare new descriptors and do registration manually
 
 Q: How does that module version get deployed in order for it to be registered?  
-  A: Module version pulling from [Folio registry](http://folio-registry.aws.indexdata.com)
+  + Module version pulling from [Folio registry](http://folio-registry.aws.indexdata.com)
 
 Q: How to deploy coordinated breaking compatibility changes across multiple modules? For example, 1 UI, 1 BL, and 1 Storage modules should be updated together?  
-  A: You have to deploy/register modules in Rancher with appropriate order or use bulk registration command from this documentation
+  + You have to deploy/register modules in Rancher with appropriate order or use bulk registration command from this documentation
 
 Q: As I understand it, a deployment in the Rancher based projects will also enable a module version for a tenant. Is that the case? If so, this will break if that would cause compatibility rules to be broken  
-  A: Okapi does not allow to break compatibility rules
+  + Okapi does not allow to break compatibility rules
 
 Q: How can multiple instances of the same module version be deployed and registered with Okapi  
-  A: Okapi does not allow to register same version of one module. And does not allow to enable more than one module for one tenant. You have to change module version and register another tenant in that case
+  + Okapi does not allow to register same version of one module. And does not allow to enable more than one module for one tenant. You have to change module version and register another tenant in that case
 
 ### UI Q&A
 
 Q: How to build, deploy and register a UI bundle which includes a particular branch of a front-end module (e.g ui-users/feature-A )?  
-  A: Clone 'platform-core' or 'platform-complete' repository, in 'package.json' file, add/change "@folio/ui-users": "git://github.com/folio-org/ui-users.git#feature-A", build and deploy docker image into the Rancher
+  + Clone 'platform-core' or 'platform-complete' repository, in 'package.json' file, add/change "@folio/ui-users": "git://github.com/folio-org/ui-users.git#feature-A", build and deploy docker image into the Rancher
 
 Q: How to run more than one bundle (e.g. one with ui-users/feature-A an one with ui-users/feature-B ) for the same tenant?  
-  A: Deploy two or more UI bundle images. Do override Ingress URL for each bundle utilizing `answers`
+  + Deploy two or more UI bundle images. Do override Ingress URL for each bundle utilizing `answers`
 
 Q: What is the Ingress URL?  
-  A: URL to access modules outside Rancher. You can assign such endpoint with that rules
+  + URL to access modules outside Rancher. You can assign such endpoint with that rules
   ```
   ingress.enabled = true
   ingress.hosts[0].host = <project_name>-myendpoint.ci.folio.org
@@ -189,38 +189,38 @@ Q: What is the Ingress URL?
   Always use `*.ci.folio.org` domain name template!
 
 Q: How to run 2 bundles (e.g. one with ui-users/feature-A an one with ui-users/feature-B ) for 2 different tenants?  
-  A: Deploy two or more UI bundle images. Do override Ingress URL for each bundle. Use bulk registration command from documentation to register another tenants
+  + Deploy two or more UI bundle images. Do override Ingress URL for each bundle. Use bulk registration command from documentation to register another tenants
 
 ### Environment Q&A
 Q: How to do a soft reset of the whole system (start from scratch without DevOps help)?  
-  A: Wipe out Postgres data with script (do not delete Okapi system tables), restart Okapi, use bulk registration command
+  + Wipe out Postgres data with script (do not delete Okapi system tables), restart Okapi, use bulk registration command
 
 Q: How to do a hard reset of the whole system (DevOps)?  
-  A: Recreate Project with Terraform
+  + Recreate Project with Terraform
 
 Q: Is there a way to move the whole of the system onto the latest in one step?  
-  A: DevOps script 'recreate_modules.sh' in Terraform folder
+  + DevOps script 'recreate_modules.sh' in Terraform folder
 
 Q: How can I provision previous release system? For example, Fameflower. That would be important for schema updates testing.  
-  A: It is very hard to implement. Needs a lot of manual job of deployment and registration
+  + It is very hard to implement. Needs a lot of manual job of deployment and registration
 
 Q: Can I create my private container registry and point Helm charts to it instead of folio-ci?  
-  A: That is the main approach to build and deploy UI modules now
+  + That is the main approach to build and deploy UI modules now
 
 Q: Can I have 2 FOLIO systems within 1 Rancher project?  
-  A: It is very hard to implement. Better solution is to create a new Cluster for now
+  + It is very hard to implement. Better solution is to create a new Cluster for now
 
 Q: I forgot that I was not using a system for a while. Is it going to be automatically deleted after predefined expiration interval?  
-  A: It can be performed by Terraform and Jenkins job. Not implemented
+  + It can be performed by Terraform and Jenkins job. Not implemented
 
 Q: I stopped using the system for today. Can I suspend it until tomorrow so it doesn't burn AWS resources?  
-  A: You can switch all ReplicasCount for all modules to 0
+  + You can switch all ReplicasCount for all modules to 0
 
 Q: Who can do that? How is it done?  
-  A: It can be done in `Resources->Worklods` menu. Select desired Kubernetes Pod and use `+` and `-` buttons
+  + It can be done in `Resources->Worklods` menu. Select desired Kubernetes Pod and use `+` and `-` buttons
 
 Q: How do developers access the logs?  
-  A: Developer can use `View logs` in `Workloads` menu in every Kubernetes Pod. Or use `https://logs.ci.folio.org` aggregator
+  + Developer can use `View logs` in `Workloads` menu in every Kubernetes Pod. Or use `https://logs.ci.folio.org` aggregator
 
 ## Limitations
 * No Okapi securing is provided.
