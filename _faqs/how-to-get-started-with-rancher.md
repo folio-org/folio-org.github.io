@@ -219,6 +219,9 @@ Q: I stopped using the system for today. Can I suspend it until tomorrow so it d
 Q: Who can do that? How is it done?
   A: It can be done in `Resources->Worklods` menu. Select desired Kubernetes Pod and use `+` and `-` buttons
 
+Q: How do developers access the logs?
+  A: Developer can use `View logs` in `Workloads` menu in every Kubernetes Pod. Or use `https://logs.ci.folio.org` aggregator
+
 ## Limitations
 * No Okapi securing is provided.
 
