@@ -325,6 +325,7 @@ mod-oai-pmh:
     directory: ramls
     files:
       - oai-pmh
+      - oai-pmh-set
     ramlutil: ramls/raml-util
 
 edge-oai-pmh:
