@@ -101,6 +101,7 @@ mod-patron-blocks:
       - eventHandlers
       - patron-block-conditions
       - patron-block-limits
+      - user-summary
     ramlutil: ramls/raml-util
 
 edge-patron:
@@ -324,6 +325,7 @@ mod-oai-pmh:
     directory: ramls
     files:
       - oai-pmh
+      - oai-pmh-set
     ramlutil: ramls/raml-util
 
 edge-oai-pmh:
