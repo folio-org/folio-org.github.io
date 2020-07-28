@@ -101,6 +101,7 @@ mod-patron-blocks:
       - eventHandlers
       - patron-block-conditions
       - patron-block-limits
+      - user-summary
     ramlutil: ramls/raml-util
 
 edge-patron:
