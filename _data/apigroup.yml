@@ -106,6 +106,7 @@ other:
   description: Not yet grouped.
   modules:
     - mod-courses
+    - edge-lti-courses
 deprecated:
   title: Deprecated
   description: Some old ones that have been renamed.
