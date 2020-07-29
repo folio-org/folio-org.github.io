@@ -708,6 +708,15 @@ edge-rtac:
     ramlutil: null
     rmb: false
 
+edge-lti-courses:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - edge-lti-courses
+    ramlutil: null
+    rmb: false
+
 mod-custom-fields:
   - label: null
     version1: true

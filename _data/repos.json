@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-07-16T01:41:37.281838+00:00"
+    "generatedDateTime": "2020-07-29T01:03:03.000764+00:00"
   },
   "repos": [
     {
@@ -32,6 +32,13 @@
       "docDirName": null,
       "name": "edge-common",
       "ramlDirName": null,
+      "repoType": "backend-edge"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "edge-lti-courses",
+      "ramlDirName": "ramls",
       "repoType": "backend-edge"
     },
     {
@@ -1005,6 +1012,12 @@
       "repoType": "ui"
     },
     {
+      "description": "FOLIO UI module to configure settings for the Course Reserves LTI Tool",
+      "docDirName": null,
+      "name": "ui-lti-courses",
+      "repoType": "ui"
+    },
+    {
       "description": "UI module for searching, sorting, filtering, viewing, editing and creating BIB record",
       "docDirName": null,
       "name": "ui-marccat",
@@ -1039,6 +1052,12 @@
       "docDirName": null,
       "name": "ui-organizations",
       "repoType": "ui"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "ui-plugin-create-inventory-records",
+      "repoType": "ui-plugin"
     },
     {
       "description": "Stripes UI plugin: Create item",
