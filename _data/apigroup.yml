@@ -46,6 +46,12 @@ erm:
     - mod-erm-usage-harvester
     - mod-licenses
     - mod-finc-config
+course-reserves:
+  title: Course reserves
+  description: Education courses and the items that have been reserved to them.
+  modules:
+    - mod-courses
+    - edge-lti-courses
 finance:
   title: Finance and orders
   description: Finance, orders, organizations.
@@ -105,8 +111,6 @@ other:
   title: Other
   description: Not yet grouped.
   modules:
-    - mod-courses
-    - edge-lti-courses
 deprecated:
   title: Deprecated
   description: Some old ones that have been renamed.
