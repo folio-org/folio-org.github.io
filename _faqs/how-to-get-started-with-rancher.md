@@ -45,9 +45,17 @@ Go to Workloads -> Pipelines, run pipeline for that branch, and then Rancher wil
 ## Building Frontend
 Modify [sample pipeline](https://github.com/folio-org/platform-complete/blob/stripes-pipeline-unam/.rancher-pipeline.yml) and start build.
 
-Recommendations about minimum requirements for pipeline Namespace to enable successful build:
-  * Limit mCPU - 4500m
-  * Limit memory - 12000Mi
+Here is default answers for Frontend Bundle Application deployment:
+  ```
+    resources.limits.cpu = 200m
+    resources.limits.memory = 500Mi
+    image.tag = <project_name>-latest
+    ingress.enabled = true
+    ingress.hosts[0].host = <project_name>.ci.folio.org
+    ingress.hosts[0].paths[0] = /
+ ```
+
+In `package.json` set `--max-old-space-size=8192` to build options.
 
 ## Registering modules in Okapi
 Module registration runs automatically after the install or upgrade procedure.
@@ -218,7 +226,7 @@ Q: I stopped using the system for today. Can I suspend it until tomorrow so it d
   + You can switch all ReplicasCount for all modules to zero.
 
 Q: Who can do that? How is it done?
-  + It can be done in the `Resources->Worklods` menu. Select the desired Kubernetes Pod and use `+` and `-` buttons.
+  + It can be done in the `Resources->Workloads` menu. Select the desired Kubernetes Pod and use `+` and `-` buttons.
 
 Q: How do developers access the logs?
   + Developers can use `View logs` in `Workloads` menu in every Kubernetes Pod. Or use `https://logs.ci.folio.org` aggregator.
