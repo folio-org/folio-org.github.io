@@ -643,6 +643,7 @@ mod-data-export:
       - dataExport-FileDefinition
       - dataExport-jobProfile
       - dataExport-mappingProfiles
+      - dataExport-transformationFields
     ramlutil: ramls/raml-util
 
 mod-source-record-storage:
