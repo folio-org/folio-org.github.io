@@ -36,7 +36,7 @@ Now ensure that each interface is available, e.g.:
 
 ```
 curl -s -S -w'\n' \
-  'https://folio-snapshot-okapi.aws.indexdata.com/_/proxy/tenants/diku/modules?latest=1&provide=users%3D15.0'
+  'https://folio-snapshot-okapi.dev.folio.org/_/proxy/tenants/diku/modules?latest=1&provide=users%3D15.0'
 ```
 
 If there is a non-empty result for each of the required interfaces, then ready to proceed.
@@ -56,7 +56,7 @@ Push the new branch and ensure that it builds. Send pull request against "snapsh
 
 After merge, await the scheduled build of the folio-snapshot and folio-testing [reference environments](/guides/automation/#reference-environments).
 
-Visit the [Software versions](https://folio-snapshot.aws.indexdata.com/settings/about) page of each to verify that the new module is present.
+Visit the [Software versions](https://folio-snapshot.dev.folio.org/settings/about) page of each to verify that the new module is present.
 
 <div class="folio-spacer-content"></div>
 
