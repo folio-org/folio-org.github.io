@@ -124,7 +124,7 @@ After success, then ensure that the new back-end module is in place:
 
 ```
 curl -s -S \
-  https://folio-testing-test-okapi.aws.indexdata.com/_/proxy/tenants/diku/modules \
+  https://folio-testing-test-okapi.dev.folio.org/_/proxy/tenants/diku/modules \
   | jq -r '.[] | select(.id | match("mod-"))[]' | sort
 ```
 
@@ -132,9 +132,9 @@ Do ssh login to the AWS instance (search the Jenkins build output for "ec2-" to 
 and confirm that the module's docker logs are not spewing errors.
 
 Could also verify via the front-end "Settings : Software versions" page (e.g.
-[folio-testing-test.aws.indexdata.com](https://folio-testing-test.aws.indexdata.com/settings/about)
+[folio-testing-test.dev.folio.org](https://folio-testing-test.dev.folio.org/settings/about)
 or
-[folio-snapshot-test.aws.indexdata.com](https://folio-snapshot-test.aws.indexdata.com/settings/about)).
+[folio-snapshot-test.dev.folio.org](https://folio-snapshot-test.dev.folio.org/settings/about)).
 However remember that an automated job might be in-process to rebuild its front-end,
 as explained at the [reference environments](/guides/automation/#reference-environments).
 
@@ -169,7 +169,7 @@ Remember that folio-snapshot-load will be the same as folio-snapshot.
 
 ```
 curl -s -S \
-  https://folio-testing-okapi.aws.indexdata.com/_/proxy/tenants/diku/modules \
+  https://folio-testing-okapi.dev.folio.org/_/proxy/tenants/diku/modules \
   | jq -r '.[] | select(.id | match("mod-"))[]' | sort
 ```
 

@@ -39,7 +39,7 @@ This will list the "resource path to interface mapper" for all of the modules co
 
 For example:
 
-[https://folio-snapshot.aws.indexdata.com/settings/developer/okapi-paths](https://folio-snapshot.aws.indexdata.com/settings/developer/okapi-paths)
+[https://folio-snapshot.dev.folio.org/settings/developer/okapi-paths](https://folio-snapshot.dev.folio.org/settings/developer/okapi-paths)
 
 Developers will also find other gems at the Developer Settings area.
 
