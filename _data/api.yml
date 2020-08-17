@@ -620,6 +620,7 @@ mod-data-import-converter-storage:
     directory: ramls
     files:
       - data-import-converter-storage
+      - field-protection-settings
       - form-configs-storage
     excludes:
       - raml-storage
