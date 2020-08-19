@@ -344,6 +344,7 @@ mod-erm-usage:
     files:
       - aggregatorsettings
       - counterreports
+      - customreports
       - files
       - usagedataproviders
     ramlutil: ramls/raml-util
@@ -619,6 +620,7 @@ mod-data-import-converter-storage:
     directory: ramls
     files:
       - data-import-converter-storage
+      - field-protection-settings
       - form-configs-storage
     excludes:
       - raml-storage
@@ -642,6 +644,7 @@ mod-data-export:
       - dataExport-FileDefinition
       - dataExport-jobProfile
       - dataExport-mappingProfiles
+      - dataExport-transformationFields
     ramlutil: ramls/raml-util
 
 mod-source-record-storage:
