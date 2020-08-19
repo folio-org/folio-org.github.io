@@ -121,13 +121,13 @@ Q: Create your own branch of what, the Helm repository or the module repository?
   + The module repository. The FOLIO Helm repository is managed by the FOLIO DevOps team.
 
 Q: The linked rancher configuration includes a tag `docker.dev.folio.org/mod-pubsub:folijet-latest`. Does this mean that every custom module version is published to a FOLIO local docker repository and needs to be uniquely named to avoid conflicts?
-  + Add/change any tag that is needed, before the module building to avoid conflicts.
+  + Add/change any tag that is needed before the module building to avoid conflicts.
 
 Q: Is this specific to a project or across the whole Rancher cluster? Are these the two separate menu items Workloads and Pipelines under the Resources menu?
   + All these menus are the same for all Projects, but contain only Project specific pipelines and Workloads.
 
 Q: What are the install or upgrade procedures (they are not outlined elsewhere in this document)?
-  + The "Upgrade" button is in the right-hand corner of the application. Use the "Launch" button to start a new one. Please read the Rancher guides for more information.
+  + The "Upgrade" button is in the right-hand corner of the application. Use the "Launch" button to start a new one. Please read the Rancher guidelines for more information.
 
 Q: Is this the case for versions of modules built from a branch? If so, what happens if the branch contains updated descriptors, are those ignored?
   + In that case, prepare and register a custom ModuleDescriptor.
@@ -210,8 +210,15 @@ Q: How to do a hard reset of the whole system (DevOps)?
 Q: Is there a way to move the whole of the system onto the latest in one step?
   + DevOps script 'recreate_modules.sh' in the Terraform folder.
 
-Q: How can a previous release system be provisioned (for example, Fameflower)? That would be important for testing of schema updates.
-  + It is very hard to implement. Needs a lot of manual jobs of deployment and registration.
+Q: How can a previous release system be provisioned (for example, Goldenrod release https://github.com/folio-org/platform-complete/tree/q2-2020)? That would be important for testing of schema updates.
+  + Override repository and tag for each backend module and do upgrade:
+    ```
+    image.repository = folioorg/<MODULE_NAME>
+    image.tag = <MODULE_VERSION>
+    ```
+    Registration Post job will register Descriptor with this version.
+    Rebuild and install UI with needed version.
+    Better idea is to ask DevOps to perform it with Terraform.
 
 Q: Can I create my private container registry and point Helm charts to it instead of folioci?
   + That is currently the main approach to build and deploy UI modules.
