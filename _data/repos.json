@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-07-29T01:03:03.000764+00:00"
+    "generatedDateTime": "2020-08-18T01:15:26.516278+00:00"
   },
   "repos": [
     {
@@ -699,7 +699,7 @@
     },
     {
       "description": "A Z39.50 server for FOLIO bibliographic data",
-      "docDirName": null,
+      "docDirName": "doc",
       "name": "Net-Z3950-FOLIO",
       "repoType": "other"
     },
@@ -919,6 +919,12 @@
       "description": null,
       "docDirName": null,
       "name": "ui-circulation",
+      "repoType": "ui"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "ui-circulation-log",
       "repoType": "ui"
     },
     {
