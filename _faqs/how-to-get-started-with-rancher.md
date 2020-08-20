@@ -223,7 +223,7 @@ Q: How to do a hard reset of the whole system (DevOps)?
 Q: Is there a way to move the whole of the system onto the latest in one step?
   + DevOps script 'recreate_modules.sh' in the Terraform folder.
 
-Q: How can a previous release system be provisioned (for example, Goldenrod release https://github.com/folio-org/platform-complete/tree/q2-2020)? That would be important for testing of schema updates.
+Q: How can a previous release system be provisioned (for example, [Goldenrod release](https://github.com/folio-org/platform-complete/tree/q2-2020))? That would be important for testing of schema updates.
   + Override repository and tag for each backend module and do upgrade:
     ```
     image.repository = folioorg/<MODULE_NAME>
