@@ -324,8 +324,8 @@ mod-oai-pmh:
     version1: true
     directory: ramls
     files:
+      - folio-set
       - oai-pmh
-      - oai-pmh-set
     ramlutil: ramls/raml-util
 
 edge-oai-pmh:
