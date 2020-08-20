@@ -103,16 +103,16 @@ Add 'answers' to module deployment:
   ```
 
 ## S3 Storage
-Each development team has been provided with a dedicated S3 bucket that can be used for additional storage.   The name of 
-each team's S3 bucket is the name of the team prepended with 'folio-'.  For example,  'folio-folijet'.  Each bucket is 
-read/write from any K8s pod running in the dev environment.  Additional credentials are not required.   Each bucket is 
-also public read-only. To share and access an object in the S3 environment outside of the dev-environment, the object 
-must be explicitly included in the URL. For example, to download the README.md file in the folijet team bucket, the following URL 
+Each development team has been provided with a dedicated S3 bucket that can be used for additional storage.   The name of
+each team's S3 bucket is the name of the team prepended with 'folio-'.  For example,  'folio-folijet'.  Each bucket is
+read/write from any K8s pod running in the dev environment.  Additional credentials are not required.   Each bucket is
+also public read-only. To share and access an object in the S3 environment outside of the dev-environment, the object
+must be explicitly included in the URL. For example, to download the README.md file in the folijet team bucket, the following URL
 would be used:
 
-   ``` 
+   ```
    http://folio-folijet.s3.amazonaws.com/README.md
-   ```   
+   ```
 
 ## Questions and answers
 
