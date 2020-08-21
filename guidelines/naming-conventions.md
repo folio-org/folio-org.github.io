@@ -12,7 +12,7 @@ This document declares the naming conventions, which enable consistency.
 
 Note that some early modules did not follow some aspects of these naming schemes.
 
-Choose names carefully, as there are various ramifications to later changing that.
+Choose all names carefully, as there are various ramifications to later changing that.
 
 In most cases (except when camelCase is required) use hyphenation to join words in a name, i.e. hyphen-separated strings (sometimes referred to as dash-separated).
 
@@ -20,11 +20,17 @@ The guide to [commence a new module](/guides/commence-a-module/) explains a typi
 
 ## Module names
 
-Each module has its own git repository. The name uses the following scheme with a consistent prefix and hyphen-separated words:
+Each module has its own git repository.
 
-* `mod-` prefix for back-end modules (e.g. mod-users, mod-inventory-storage).
-* `ui-` prefix for front-end UI modules (e.g. ui-users).
-* `stripes-` prefix for Stripes modules (e.g. stripes-core).
+Take care to choose wisely for the module/repository name. It will be disruptive to [change that](/guides/rename-module/).
+
+The name uses the following scheme with a consistent prefix and hyphen-separated words:
+
+* `mod-` prefix for [back-end modules](/source-code/map/#backend-mod) (e.g. mod-users, mod-inventory-storage).
+* `ui-` prefix for [front-end UI modules](/source-code/map/#ui) (e.g. ui-users).
+* `ui-plugin-` prefix for [front-end UI plugin modules](/source-code/map/#ui-plugin) (e.g. ui-plugin-find-instance).
+* `stripes-` prefix for [Stripes modules](/source-code/map/#stripes) (e.g. stripes-core).
+* `folio-` prefix for [utility library modules](/source-code/map/#other) (e.g. folio-isbn-util).
 
 Most module names will be in the plural sense, e.g. mod-notes, especially when responsible for collections of items.
 
