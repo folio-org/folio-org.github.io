@@ -325,6 +325,7 @@ mod-oai-pmh:
     directory: ramls
     files:
       - folio-set
+      - folio-set-filtering-conditions
       - oai-pmh
     ramlutil: ramls/raml-util
 
