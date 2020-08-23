@@ -642,10 +642,10 @@ mod-data-export:
     directory: ramls
     files:
       - dataExport
-      - dataExport-FileDefinition
-      - dataExport-jobProfile
-      - dataExport-mappingProfiles
-      - dataExport-transformationFields
+      - dataExport-file-definition
+      - dataExport-job-profile
+      - dataExport-mapping-profiles
+      - dataExport-transformation-fields
     ramlutil: ramls/raml-util
 
 mod-source-record-storage:
