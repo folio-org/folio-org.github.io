@@ -94,7 +94,6 @@ utilities:
     - mod-tags
     - mod-calendar
     - mod-template-engine
-    - mod-custom-fields
     - mod-quick-marc
 infrastructure:
   title: Infrastructure
@@ -111,8 +110,10 @@ other:
   title: Other
   description: Not yet grouped.
   modules:
+    - folio-custom-fields
 deprecated:
   title: Deprecated
   description: Some old ones that have been renamed.
   modules:
+    - mod-custom-fields
     - mod-vendors
