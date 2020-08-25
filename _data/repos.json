@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-08-18T01:15:26.516278+00:00"
+    "generatedDateTime": "2020-08-25T07:59:27.066287+00:00"
   },
   "repos": [
     {
@@ -112,6 +112,12 @@
       "description": "FOLIO postman collections for backend modules",
       "docDirName": null,
       "name": "folio-api-tests",
+      "repoType": "other"
+    },
+    {
+      "description": "Store and maintain custom fields",
+      "docDirName": null,
+      "name": "folio-custom-fields",
       "repoType": "other"
     },
     {
@@ -324,13 +330,6 @@
       "description": "Backend CRUD storage module to support the Course Reserves functionality",
       "docDirName": null,
       "name": "mod-courses",
-      "ramlDirName": "ramls",
-      "repoType": "backend-mod"
-    },
-    {
-      "description": "Store and maintain custom fields",
-      "docDirName": null,
-      "name": "mod-custom-fields",
       "ramlDirName": "ramls",
       "repoType": "backend-mod"
     },
