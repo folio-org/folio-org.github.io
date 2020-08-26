@@ -324,8 +324,9 @@ mod-oai-pmh:
     version1: true
     directory: ramls
     files:
+      - folio-set
+      - folio-set-filtering-conditions
       - oai-pmh
-      - oai-pmh-set
     ramlutil: ramls/raml-util
 
 edge-oai-pmh:
@@ -620,6 +621,7 @@ mod-data-import-converter-storage:
     directory: ramls
     files:
       - data-import-converter-storage
+      - field-protection-settings
       - form-configs-storage
     excludes:
       - raml-storage
@@ -640,10 +642,10 @@ mod-data-export:
     directory: ramls
     files:
       - dataExport
-      - dataExport-FileDefinition
-      - dataExport-jobProfile
-      - dataExport-mappingProfiles
-      - dataExport-transformationFields
+      - dataExport-file-definition
+      - dataExport-job-profile
+      - dataExport-mapping-profiles
+      - dataExport-transformation-fields
     ramlutil: ramls/raml-util
 
 mod-source-record-storage:
@@ -719,7 +721,7 @@ edge-lti-courses:
     ramlutil: null
     rmb: false
 
-mod-custom-fields:
+folio-custom-fields:
   - label: null
     version1: true
     directory: ramls
@@ -813,6 +815,14 @@ data-import-raml-storage:
     rmb: false
 
 # Deprecated
+mod-custom-fields:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - custom-fields
+    ramlutil: ramls/raml-util
+
 mod-vendors:
   - label: null
     version1: true

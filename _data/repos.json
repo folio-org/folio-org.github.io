@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-07-29T01:03:03.000764+00:00"
+    "generatedDateTime": "2020-08-25T07:59:27.066287+00:00"
   },
   "repos": [
     {
@@ -112,6 +112,12 @@
       "description": "FOLIO postman collections for backend modules",
       "docDirName": null,
       "name": "folio-api-tests",
+      "repoType": "other"
+    },
+    {
+      "description": "Store and maintain custom fields",
+      "docDirName": null,
+      "name": "folio-custom-fields",
       "repoType": "other"
     },
     {
@@ -324,13 +330,6 @@
       "description": "Backend CRUD storage module to support the Course Reserves functionality",
       "docDirName": null,
       "name": "mod-courses",
-      "ramlDirName": "ramls",
-      "repoType": "backend-mod"
-    },
-    {
-      "description": "Store and maintain custom fields",
-      "docDirName": null,
-      "name": "mod-custom-fields",
       "ramlDirName": "ramls",
       "repoType": "backend-mod"
     },
@@ -699,7 +698,7 @@
     },
     {
       "description": "A Z39.50 server for FOLIO bibliographic data",
-      "docDirName": null,
+      "docDirName": "doc",
       "name": "Net-Z3950-FOLIO",
       "repoType": "other"
     },
@@ -919,6 +918,12 @@
       "description": null,
       "docDirName": null,
       "name": "ui-circulation",
+      "repoType": "ui"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "ui-circulation-log",
       "repoType": "ui"
     },
     {

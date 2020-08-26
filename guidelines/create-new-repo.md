@@ -96,7 +96,7 @@ Get the initial basic source files and other configuration files added first.
 Also add the Jenkinsfile to initiate the CI processing.
 Do this early so that CI can assist.
 **Note:**
-The Jenkinfile setting "`runSonarqube = true`" needs to be committed directly to master branch.
+The Jenkinsfile setting "`runSonarqube = true`" needs to be committed directly to master branch.
 If it is done via a pull-request then that will fail, as the initial base Sonar scan for master branch has not yet run.
 
 ## Configure Lokalise

@@ -156,7 +156,7 @@ In the `_data/apigroup.yml` file, move the old one to the "deprecated" section a
 
 ## Adjust website source list
 
-Edit the list of all [modules](/source-code/).
+Update the list of all [modules](/source-code/map/).
 
 ## Remove from reference environments
 
