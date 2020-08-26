@@ -35,6 +35,7 @@ In this example we are releasing `X.Y.0` of a module.
  git commit -m "Update NEWS" NEWS.md
  mvn -DautoVersionSubmodules=true release:clean release:prepare # Supply next feature (X.Y+1.0-SNAPSHOT)
  git push && git push --tags
+ mvn release:clean
 ```
 Log in to Jenkins and run your jobs at [Jenkins](https://jenkins-aws.indexdata.com/job/folio-org/).
 
@@ -202,10 +203,11 @@ For the question about the next post-release "new development version", rather t
 For example `2.18.0-SNAPSHOT` rather than `2.17.1-SNAPSHOT`
 
 Assuming there are no build errors, then you are ready to push your changes to
-GitHub.
+GitHub and delete the release.properties and pom.xml.releaseBackup files.
 
 ```
 git push && git push --tags
+mvn release:clean
 ```
 
 ### Optional: Update any scripts and descriptors for next development release
