@@ -119,7 +119,7 @@ would be used:
 ### System wide Q&A
 
 Q: How are the modules determined that are included by default in a project? For example, is it based upon a particular revision of a branch of a platform?
-  + It is based on the latest `folioci` images from `master` branches. These modules are not upgraded automatically in Rancher, so the project team members need to do it manually in the ``App` menu.
+  + It is based on the latest `folioci` images from `master` branches. These modules are not upgraded automatically in Rancher, so the project team members need to do it manually in the `App` menu.
 
 Q: Are there any projects present at the moment. None could be found in the list for the default cluster? How is a new project created?
   + New Projects are available for authorized GitHub team members. Projects are already deployed with Terraform, including core backends, UI, secrets, FOLIO Helm Catalog etc.
