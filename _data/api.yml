@@ -816,14 +816,6 @@ data-import-raml-storage:
     rmb: false
 
 # Deprecated
-mod-custom-fields:
-  - label: null
-    version1: true
-    directory: ramls
-    files:
-      - custom-fields
-    ramlutil: ramls/raml-util
-
 mod-vendors:
   - label: null
     version1: true
