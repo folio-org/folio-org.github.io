@@ -235,6 +235,7 @@ mod-inventory-storage:
       - instance-status
       - instance-sync
       - instance-type
+      - inventory-hierarchy
       - item-damaged-statuses
       - item-storage
       - item-sync
