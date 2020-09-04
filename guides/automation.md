@@ -52,7 +52,7 @@ Remember that there are other people utilising these systems.
 
 [https://folio-testing.dev.folio.org/](https://folio-testing.dev.folio.org/)
 
-The frontend (Stripes) bundle is rebuilt every even two hours, to finish about 10 minutes past (see Jenkins job: [folio-testing-stripes](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-stripes/)).
+The frontend (Stripes) bundle is rebuilt every even two hours, to finish about 10 minutes past (see Jenkins job: [folio-testing-stripes](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-testing-stripes/)).
 The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
 The frontend build consists of the master branch of each frontend module at that time.
 
@@ -60,7 +60,7 @@ The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish a
 If successful, then this will regenerate the yarn.lock file of the Platform, to be utilised by the abovementioned "folio-testing-stripes" bundle job.
 So if there is an urgent need to rebuild "folio-testing" outside of normal automation, so as to include a new snapshot of a UI module, then this build needs to be re-run before the bundle build is re-run.
 
-The backend (Okapi + modules) is built every day, to finish about 01:45 UTC (see Jenkins job: [folio-testing-backend](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-backend/)).
+The backend (Okapi + modules) is built every day, to finish about 01:45 UTC (see Jenkins job: [folio-testing-backend](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-testing-backend/)).
 The set of backend modules is a list explicitly declared in folio-ansible.
 The backend build consists of the master branch of each backend module at that time.
 There is no attempt to verify that the frontend dependencies are met by the backend modules, so there may be errors caused by that mismatch.
@@ -69,7 +69,7 @@ There is no attempt to verify that the frontend dependencies are met by the back
 
 [https://folio-snapshot.dev.folio.org/](https://folio-snapshot.dev.folio.org/)
 
-Built every day, to finish about 03:50 UTC (see Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot/)).
+Built every day, to finish about 03:50 UTC (see Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot/)).
 
 The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
 
@@ -96,7 +96,7 @@ This is the version that will be used by acceptance testers to verify that users
 
 When doing any substantial test data loading, then use this rather than the other systems.
 This the same as "folio-snapshot".
-The server is built every day, to finish about 02:00 UTC (see Jenkins job: [folio-snapshot-load](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot-load/)).
+The server is built every day, to finish about 01:55 UTC (see Jenkins job: [folio-snapshot-load](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-load/)).
 
 ### folio-goldenrod
 
@@ -104,7 +104,7 @@ The server is built every day, to finish about 02:00 UTC (see Jenkins job: [foli
 
 This is an environment for the most recent FOLIO Release Q2 2020 Goldenrod.
 Each nightly rebuild will pick up any hotfix updates that may have been released.
-The server is built every day, to finish about 03:20 UTC (see Jenkins job: [folio-q2-2020-release](https://jenkins-aws.indexdata.com/job/Automation/job/folio-q2-2020-release/)).
+The server is built every day, to finish about 03:20 UTC (see Jenkins job: [folio-q2-2020-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-q2-2020-release/)).
 
 ### Other notes
 
@@ -159,7 +159,7 @@ Other Jenkins automation jobs exist as well for test deployments to AWS EC2 inst
 
 Various facilities are available:
 
-* [Performance report](https://jenkins-aws.indexdata.com/job/Automation/job/folio-perf-test/) to monitor throughput, response times, error rates, etc.
+* [Performance report](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-perf-test/) to monitor throughput, response times, error rates, etc.
 The tests are configured in the [folio-perf-test](https://github.com/folio-org/folio-perf-test) repository, and utilise Apache JMeter.
 Runs once per day.
 * [FOLIO Environment Dashboard](https://dashboard.folio.ebsco.com/).

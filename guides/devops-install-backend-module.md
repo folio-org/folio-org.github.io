@@ -93,10 +93,10 @@ Push the branch.
 ## Jenkins testing configuration
 
 Do [login](/guides/automation/#jenkins) to Jenkins, and modify the configuration for the
-[`folio-testing-test`](https://jenkins-aws.indexdata.com/job/Automation/job/folio-testing-test/) build.
+[`folio-testing-test`](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-testing-test/) build.
 That is the most important test build, due to the explicit order of modules.
 
-The [`folio-snapshot-test`](https://jenkins-aws.indexdata.com/job/Automation/job/folio-snapshot-test/)
+The [`folio-snapshot-test`](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-test/)
 build could also be used, but here only explaining one of them.
 
 So, select the `Configure` link in the top-left panel.
@@ -162,7 +162,7 @@ First merge to folio-ansible, then to folio-infrastructure.
 
 Following the merges, might want to re-run the folio-testing-test build using this now-deployed configuration to ensure no glitches.
 
-Now await the scheduled [automated builds](https://jenkins-aws.indexdata.com/job/Automation/).
+Now await the scheduled [automated builds](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/).
 
 Verify the results of each backend build, as done above.
 Remember that folio-snapshot-load will be the same as folio-snapshot.
