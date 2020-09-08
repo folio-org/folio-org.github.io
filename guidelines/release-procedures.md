@@ -229,9 +229,9 @@ Maven repository, a docker image released to Docker Hub, a Linux distribution pa
 or some combination of artifacts depending on the project.
 
 After preparing the release as explained above, the next step is done via the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
-Jenkins credentials utilize the Github authentication for FOLIO core developers, so ensure that you are logged in to GitHub to then enable login to Jenkins.
+Jenkins credentials utilize the GitHub authentication for FOLIO core developers, so ensure that you are logged in to GitHub to then enable login to Jenkins.
 
-Select the [Github folio-org](https://jenkins-aws.indexdata.com/job/folio-org/) folder, then follow to the relevant job (e.g.
+Select the [GitHub folio-org](https://jenkins-aws.indexdata.com/job/folio-org/) folder, then follow to the relevant job (e.g.
 [mod-circulation](https://jenkins-aws.indexdata.com/job/folio-org/job/mod-circulation/)) and select the "Tags" tab. Select the new release version tag, then the "Build Now" link in the left-hand panel to trigger it.
 
 ### Merge the temporary release branch into master
@@ -339,8 +339,8 @@ As with new UI modules, ensure that the module has already been added and tested
 
 * A new major or minor release needs to be added to a release branch of the platform to either 'package.json' or 'install-extras.json' files.
 
-Before opening any new pull requests in either platform repository, create your own local branch of the master or release branch and push the branch to the appropriate platform repository.
-Pushing the local branch to Github is mandatory before issuing a new PR -- so ensure that you have commit privileges.
+Before opening any new pull requests in either platform repository, create your own local branch of the master or release branch, and push the branch to the appropriate platform repository.
+Pushing the local branch to GitHub is mandatory before issuing a new PR -- so ensure that you have commit privileges.
 
 As explained [above](#continuous-integration), during the CI process Okapi resolves other module dependencies based on those declared UI modules, and on modules that are listed in the 'install-extras.json' file.
 So not every backend module will be listed in the 'install-extras.json' file.
