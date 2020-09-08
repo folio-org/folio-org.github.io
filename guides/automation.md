@@ -30,7 +30,7 @@ In order to fully understand this diagram, keep in mind that there are two parts
 
 The Okapi backend is secured during the CI process. For more information on securing Okapi see the [folio-install](https://github.com/folio-org/folio-install/blob/master/runbooks/single-server/README.md#secure-the-okapi-api-supertenant) and the [guide on securing Okapi](https://github.com/folio-org/okapi/blob/master/doc/securing.md).
 Default settings for securing okapi are in the okapi-secure Ansible role's [defaults](https://github.com/folio-org/folio-ansible/blob/master/roles/okapi-secure/defaults/main.yml) file.
-Direct access is via URLs such as `https://folio-testing-okapi.dev.folio.org`
+Direct access is via URLs such as `https://folio-snapshot-okapi.dev.folio.org`
 
 Another part that is not indicated in this diagram are various "edge" modules, which bridge the gap between some specific third-party services and FOLIO (e.g. RTAC, OAI-PMH).
 On these FOLIO reference environments, the set of edge services are accessed via port 8000.
@@ -40,8 +40,8 @@ The edge APIs are deployed such that any API key generated with the tenant diku 
 ## Reference environments
 
 Each environment listed below is based on the [platform-complete](https://github.com/folio-org/platform-complete) Stripes Platform.
-Each also has one based on [platform-core](https://github.com/folio-org/platform-core), so adjust the link to include `-core` (e.g. `folio-testing` to `folio-testing-core`).
-Similarly okapi can be accessed via `folio-testing-okapi` (and see notes in the previous section).
+Each also has one based on [platform-core](https://github.com/folio-org/platform-core), so adjust the link to include `-core` (e.g. `folio-snapshot` to `folio-snapshot-core`).
+Similarly okapi can be accessed via `folio-snapshot-okapi` (and see notes in the previous section).
 
 If an error message (in the 5** series) is shown for the entry point of these sites, then that probably means that it is in the process of being rebuilt (see its "Jenkins job" link).
 
@@ -52,7 +52,7 @@ Remember that there are other people utilising these systems.
 
 [https://folio-testing.dev.folio.org/](https://folio-testing.dev.folio.org/)
 
-The frontend (Stripes) bundle is rebuilt every even two hours, to finish about 10 minutes past (see Jenkins job: [folio-testing-stripes](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-testing-stripes/)).
+The frontend (Stripes) bundle is rebuilt every even two hours, to finish about 5 minutes past (see Jenkins job: [folio-testing-stripes](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-testing-stripes/)).
 The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
 The frontend build consists of the master branch of each frontend module at that time.
 
@@ -60,7 +60,7 @@ The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish a
 If successful, then this will regenerate the yarn.lock file of the Platform, to be utilised by the abovementioned "folio-testing-stripes" bundle job.
 So if there is an urgent need to rebuild "folio-testing" outside of normal automation, so as to include a new snapshot of a UI module, then this build needs to be re-run before the bundle build is re-run.
 
-The backend (Okapi + modules) is built every day, to finish about 01:45 UTC (see Jenkins job: [folio-testing-backend](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-testing-backend/)).
+The backend (Okapi + modules) is built every day, to finish about 03:30 UTC (see Jenkins job: [folio-testing-backend](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-testing-backend/)).
 The set of backend modules is a list explicitly declared in folio-ansible.
 The backend build consists of the master branch of each backend module at that time.
 There is no attempt to verify that the frontend dependencies are met by the backend modules, so there may be errors caused by that mismatch.
@@ -69,7 +69,7 @@ There is no attempt to verify that the frontend dependencies are met by the back
 
 [https://folio-snapshot.dev.folio.org/](https://folio-snapshot.dev.folio.org/)
 
-Built every day, to finish about 03:50 UTC (see Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot/)).
+Built every day, to finish about 01:50 UTC (see Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot/)).
 
 The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
 
@@ -86,7 +86,7 @@ The folio-snapshot is an alias for folio-snapshot-latest.
 [https://folio-snapshot-stable.dev.folio.org/](https://folio-snapshot-stable.dev.folio.org/)
 
 After `folio-snapshot` is built, the CI system runs a suite of integration and regression tests.
-This phase normally takes about 10 minutes, but sometimes reaches a timeout of about 1 hour.
+This phase normally takes about 15 minutes, but sometimes reaches a timeout of about 1 hour.
 If those tests pass, the `folio-snapshot-stable` alias is updated to point to this latest `folio-snapshot` version.
 This is the version that will be used by acceptance testers to verify that users stories are completed.
 
@@ -96,15 +96,15 @@ This is the version that will be used by acceptance testers to verify that users
 
 When doing any substantial test data loading, then use this rather than the other systems.
 This the same as "folio-snapshot".
-The server is built every day, to finish about 01:55 UTC (see Jenkins job: [folio-snapshot-load](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-load/)).
+The server is built every day, to finish about 02:30 UTC (see Jenkins job: [folio-snapshot-load](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-load/)).
 
 ### folio-goldenrod
 
 [https://folio-goldenrod.dev.folio.org/](https://folio-goldenrod.dev.folio.org/)
 
 This is an environment for the most recent FOLIO Release Q2 2020 Goldenrod.
-Each nightly rebuild will pick up any hotfix updates that may have been released.
-The server is built every day, to finish about 03:20 UTC (see Jenkins job: [folio-q2-2020-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-q2-2020-release/)).
+Each rebuild will pick up any hotfix updates that may have been released.
+The server is built every Sunday, to finish about 01:45 UTC (see Jenkins job: [folio-q2-2020-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-q2-2020-release/)).
 
 ### Other notes
 
