@@ -52,7 +52,7 @@
         <path d="M 619 277 L 729 277 C 738.9411 277 747 285.05887 747 295 L 747 295 C 747 304.94113 738.9411 313 729 313 L 619 313 C 609.0589 313 601 304.94113 601 295 L 601 295 C 601 285.05887 609.0589 277 619 277 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(606 281)" fill="black">
           <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="26.6709" y="11">folio-snapshot</tspan>
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="14.972656" y="25">.aws.indexdata.com</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="32.1" y="25">.dev.folio.org</tspan>
         </text>
       </g>
       <g id="Graphic_21">
@@ -60,7 +60,7 @@
         <path d="M 359 277 L 469 277 C 478.9411 277 487 285.05887 487 295 L 487 295 C 487 304.94113 478.9411 313 469 313 L 359 313 C 349.05887 313 341 304.94113 341 295 L 341 295 C 341 285.05887 349.05887 277 359 277 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(346 281)" fill="black">
           <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="33.67285" y="11">folio-testing</tspan>
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="14.972656" y="25">.aws.indexdata.com</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="32.1" y="25">.dev.folio.org</tspan>
         </text>
       </g>
       <g id="Graphic_20">
@@ -68,7 +68,7 @@
         <path d="M 879 277 L 989 277 C 998.9411 277 1007 285.05887 1007 295 L 1007 295 C 1007 304.94113 998.9411 313 989 313 L 879 313 C 869.0589 313 861 304.94113 861 295 L 861 295 C 861 285.05887 869.0589 277 879 277 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(866 281)" fill="black">
           <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="7.332031" y="11">folio-snapshot-stable</tspan>
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="14.972656" y="25">.aws.indexdata.com</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="32.1" y="25">.dev.folio.org</tspan>
         </text>
       </g>
       <g id="Graphic_16">
