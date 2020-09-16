@@ -736,6 +736,7 @@ mod-audit:
     directory: ramls
     files:
       - audit-data
+      - mod-audit-handlers
       - circulation-logs
     ramlutil: ramls/raml-util
 
