@@ -220,6 +220,7 @@ mod-inventory-storage:
     version1: true
     directory: ramls
     files:
+      - holdings-sources
       - holdings-storage
       - holdings-sync
       - holdings-type
