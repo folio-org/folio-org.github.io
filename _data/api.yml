@@ -420,7 +420,6 @@ mod-finance-storage:
       - budget
       - budget_expense_class
       - expense_class
-      - finance-storage
       - fiscal-year
       - fund
       - fund-type
