@@ -263,6 +263,14 @@ mod-inventory-storage:
       - statistical-code-type
     ramlutil: ramls/raml-util
 
+mod-inventory-update:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - inventory-update
+    ramlutil: ramls/raml-util
+
 mod-quick-marc:
   - label: null
     version1: true
