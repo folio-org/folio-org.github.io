@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-09-10T17:41:01.687741+00:00"
+    "generatedDateTime": "2020-09-30T01:01:49.127442+00:00"
   },
   "repos": [
     {
@@ -456,6 +456,13 @@
       "description": null,
       "docDirName": null,
       "name": "mod-inventory-storage",
+      "ramlDirName": "ramls",
+      "repoType": "backend-mod"
+    },
+    {
+      "description": "Provides different update schemes for populating a FOLIO Inventory Storage",
+      "docDirName": null,
+      "name": "mod-inventory-update",
       "ramlDirName": "ramls",
       "repoType": "backend-mod"
     },
