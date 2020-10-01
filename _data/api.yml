@@ -524,6 +524,7 @@ mod-feesfines:
     directory: ramls
     files:
       - accounts
+      - accounts-bulk
       - comments
       - feefineactions
       - feefines
