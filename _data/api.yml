@@ -654,6 +654,7 @@ mod-data-export:
       - dataExport
       - dataExport-file-definition
       - dataExport-job-profile
+      - dataExport-logs
       - dataExport-mapping-profiles
       - dataExport-transformation-fields
     ramlutil: ramls/raml-util
