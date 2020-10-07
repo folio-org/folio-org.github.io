@@ -712,6 +712,7 @@ mod-rtac:
     directory: ramls
     files:
       - rtac
+      - rtac-batch
     ramlutil: ramls/raml-util
 
 edge-rtac:
