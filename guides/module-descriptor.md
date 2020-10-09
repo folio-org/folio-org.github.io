@@ -237,12 +237,26 @@ Use [jq](https://stedolan.github.io/jq/):
 ```
 jq '.' descriptors/ModuleDescriptor-template.json
 ```
+
 Use [z-schema](https://github.com/zaggino/z-schema):
 
 ```
+yarn global add z-schema
+cd mod-notes
 z-schema --pedanticCheck \
   ../okapi/okapi-core/src/main/raml/ModuleDescriptor.json \
   descriptors/ModuleDescriptor-template.json
+```
+
+Or use [ajv](https://github.com/ajv-validator/ajv):
+
+```
+yarn global add ajv-cli
+cd mod-notes
+ajv validate \
+  -s ../okapi/okapi-core/src/main/raml/ModuleDescriptor.json \
+  -r "../okapi/okapi-core/src/main/raml/*.json" \
+  -d descriptors/ModuleDescriptor-template.json
 ```
 
 Deploy the module as a Docker container with a local FOLIO Vagrant VM (e.g. folio/testing).
