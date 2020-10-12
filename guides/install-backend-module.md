@@ -27,17 +27,10 @@ curl -s -S -w'\n' \
   | jq '.[].requires'
 ```
 
-That shows that it requires various interfaces, including `users 15.0`
+That shows that it requires various interfaces, including "`users 15.1`" and "`configuration 2.0`".
 
-Now ensure that each interface is available, e.g.:
-
-```
-curl -s -S -w'\n' \
-  'https://folio-snapshot-okapi.dev.folio.org/_/proxy/tenants/diku/modules?latest=1&provide=users%3D15.0'
-```
-
-If there is a non-empty result for each of the required interfaces, then ready to proceed.
-If not, then investigate further and consult the relevant back-end module developers.
+Now ensure that each needed interface version is available.
+One method is to visit the [https://folio-snapshot.dev.folio.org/settings/about](https://folio-snapshot.dev.folio.org/settings/about) page.
 
 ## Ensure LaunchDescriptor
 
