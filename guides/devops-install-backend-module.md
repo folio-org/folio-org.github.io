@@ -9,12 +9,18 @@ menuTopTitle: Guides
 ## Introduction
 
 This document describes procedures for people assisting with [FOLIO DevOps](/guides/devops-introduction/)
-to add a new back-end module to the folio-ansible configuration, and make it available in the folio-snapshot and folio-testing [reference environments](/guides/automation/#reference-environments).
+to add a new back-end module to the folio-ansible configuration,
+and make it available in the folio-snapshot and folio-testing [reference environments](/guides/automation/#reference-environments),
+and make it available in the Vagrant box VMs for snapshot and testing.
 
 The developers responsible for that module would have already ensured that the module is ready,
 its repository is [established](/guidelines/create-new-repo/),
 and is operating in FOLIO CI.
 They would have added a Jira ticket, assigned to our team so that we can schedule and track the work.
+
+Note: The configuration for "folio-testing" and the "testing" VMs is still as explained below.
+The configuration for the "snapshot" VMs is [still](https://issues.folio.org/browse/FOLIO-2799) as explained below.
+However, as explained in the guide linked in the next section, developers can now add their new module to the "snapshot" branch of the platforms.
 
 ## Verification and preparation
 
@@ -76,7 +82,7 @@ CI/jenkins/Jenkinsfile.folio-testing-test-build
 CI/jenkins/Jenkinsfile.folio-snapshot-test-build
 ```
 
-Add git submodule to refer to the folio-ansible branch.
+Refer the git submodule to the folio-ansible branch.
 Take care, as this is a tab-delimited file.
 
 Edit the `.gitmodules` file:
@@ -115,12 +121,15 @@ It takes approximately 20-25 minutes.
 
 If not success, then try to interpret the Jenkins log.
 Some "Find in page" searches are a bit helpful
-(e.g. "failed:" and "fatal:" and "Missing dependency:").
+(e.g. "failed:" and "fatal:" and "Missing dependency:" and 
+"Connection refused:" and "Incompatible version" and
+"Invalid URL path requested" and "no such image:").
 In some cases, may need to ssh to the instance and inspect the Okapi logfile.
 
 ## Verify the testing build
 
-After success, then ensure that the new back-end module is in place:
+After success, then ensure that the new back-end module is in place.
+(Example 'curl' of course needs token and tenant headers.)
 
 ```
 curl -s -S \
