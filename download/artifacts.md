@@ -60,12 +60,19 @@ for details.
 
 ## Debian/Ubuntu APT repository
 
-Currently only Okapi packages for Ubuntu Xenial.
+Okapi packages before version 4 are available for Ubuntu Xenial.
 
 Example APT source configuration:
 
 ```
 deb https://repository.folio.org/packages/ubuntu xenial/
+```
+
+Okapi version 4 and later are available for Ununtu Focal Fossa:
+
+
+```
+deb https://repository.folio.org/packages/ubuntu focal/
 ```
 
 ## Vagrant boxes
