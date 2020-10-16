@@ -68,7 +68,7 @@ Example APT source configuration:
 deb https://repository.folio.org/packages/ubuntu xenial/
 ```
 
-Okapi version 4 and later are available for Ununtu Focal Fossa:
+Okapi version 4 and later are available for Ubuntu Focal Fossa:
 
 
 ```
