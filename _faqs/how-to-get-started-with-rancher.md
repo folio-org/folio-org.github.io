@@ -17,6 +17,9 @@ Useful links:
 * PgAdmin4 URL: `https://<Project name>-pgadmin.ci.folio.org` (login as user 'chart@example.local' or 'user@folio.org' password 'SuperSecret')
 * Logs: https://logs.ci.folio.org/
 
+Before commencing become familiar with this FAQ.
+Some teams also provide [further general instructions](/guides/run-local-folio/#scratch-environments-rancher-docker).
+
 ## Logging in
 To have access to Rancher, you need to be a member of a FOLIO organization [Team in GitHub](https://github.com/orgs/folio-org/teams).
 Go to the main Rancher URL and login with GitHub account.
