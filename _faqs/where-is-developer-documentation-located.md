@@ -12,7 +12,7 @@ This FAQ explains some principles for finding and creating developer documentati
 ## Module documentation
 
 FOLIO has many separate modules, each handling a certain facility.
-The main principle is that each group of developers will manage their documentation along with its source code.
+The main principle is that each group of developers will manage their documentation along with its [source code](/source-code/map/).
 This is the location where its developers have ready access to facilitate revision control, and peer review, and care for their documentation.
 This also enables the documentation to be distributed together with each module version.
 
@@ -24,6 +24,8 @@ The front-page README for each module will provide an overview, and link to furt
 
 Each README will also link to their issue tracker project.
 So search there for in-progress documentation and suggestions.
+
+Each module's developers can [increase visibility of module documentation](/guides/visibility-module-docs/).
 
 ## dev.folio.org
 
