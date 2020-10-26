@@ -8,11 +8,11 @@
 # name: This is the name of the GitHub repository, e.g. ui-users
 #   urlUserTips: URL of the most relevant FOLIOtips Wiki page.
 #   urlAppSettings: URL of the most relevant FOLIOtips/Settings Wiki page.
-#   furtherDescription: Additional text supplement the repo GitHub Description.
+#   furtherDescription: Additional text to supplement repo GitHub About.
 #   urlsOther: Array of other doc URLs.
 #
 # Other metadata is automatically gleaned from other sources.
-# See https://dev.folio.org/source-code/xref/#further-information
+# See https://dev.folio.org/source-code/map/#further-information
 #
 ---
 ui-acquisition-units:
