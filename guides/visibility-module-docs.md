@@ -72,7 +72,7 @@ Note that such links are intended as starting points, not to list every piece of
 Please send pull-requests to add documentation links for your repository.
 
 The YAML structure is explained in the head of that file.
-The tool "[yq](https://github.com/kislyuk/yq)" is useful for verifying YAML files (e.g. do `yq '.' repos-metadata.yml`
+The tool "[yq](https://github.com/kislyuk/yq)" is useful for verifying YAML files, e.g. do `yq '.' repos-metadata.yml`
 
 ```
 # name: This is the name of the GitHub repository, e.g. ui-users
