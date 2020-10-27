@@ -9,7 +9,7 @@ menuTopTitle: Guides
 ## Introduction
 
 There are many individual modules hosted at FOLIO GitHub.
-The [Source-code map](/source/map/) lists every module, and links to its relevant related documentation.
+The [Source-code map](/source-code/map/) lists every module, and links to its relevant related documentation.
 
 This enables all developers to easily discover the information that they need, to be able to work with each module.
 
@@ -84,7 +84,7 @@ The tool "[yq](https://github.com/kislyuk/yq)" is useful for verifying YAML file
 
 ## Improvements needed
 
-If the FOLIO Wiki "[FOLIOtips](https://wiki.folio.org/display/FOLIOtips)" and "[FOLIOtips/Settings](https://wiki.folio.org/display/FOLIOtips/Settings)" index pages reliably used the module name (e.g. Tags for ui-tags) then the bot could automatically link, and so those attributes could be removed from the "[Additional metadata](#additional-metdata)" file.
+If the FOLIO Wiki "[FOLIOtips](https://wiki.folio.org/display/FOLIOtips)" and "[FOLIOtips/Settings](https://wiki.folio.org/display/FOLIOtips/Settings)" index pages reliably used the module name (e.g. Tags for ui-tags) then the bot could automatically link, and so those attributes could be removed from the "[Additional metadata](#additional-metadata)" file.
 
 Eventually there might be "App store" categories that could be use to cross-link such information.
 
