@@ -99,6 +99,13 @@ Do this early so that CI can assist.
 The Jenkinsfile setting "`runSonarqube = true`" needs to be committed directly to master branch.
 If it is done via a pull-request then that will fail, as the initial base Sonar scan for master branch has not yet run.
 
+## Module documentation
+
+As explained in the FAQ [Where is developer documentation located](/faqs/where-is-developer-documentation-located/), one of the principles of FOLIO module development is that module documentation is managed along with its source code.
+
+Consider the guide to [increase visibility of module documentation](/guides/visibility-module-docs/)
+which provides some tips for module developers to improve the discoverability and usability of their module documentation.
+
 ## Configure Lokalise
 
 For UI modules, when the new repository is ready, and its [translations](/guides/commence-a-module/#front-end-translations) directory is configured as explained,
