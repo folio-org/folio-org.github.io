@@ -83,8 +83,10 @@ Refer to explanation of [ModuleDescriptors](/guides/module-descriptor/) and defa
 
 ### Documentation {#back-end-doc}
 
-The optional `doc` directory holds additional documentation beyond the standard top-level README.md file.
+The optional `docs` (or `doc`) directory holds additional documentation beyond the standard top-level README.md file.
 Usually in Markdown format.
+
+Consider the guide to [increase visibility of module documentation](/guides/visibility-module-docs/).
 
 ### RAMLs {#back-end-ramls}
 
@@ -213,8 +215,10 @@ The optional `data` directory holds data specific to this app.
 
 ### Documentation {#front-end-doc}
 
-The optional `doc` directory holds additional documentation beyond the standard top-level README.md file.
+The optional `doc` (or `docs`) directory holds additional documentation beyond the standard top-level README.md file.
 Usually in Markdown format.
+
+Consider the guide to [increase visibility of module documentation](/guides/visibility-module-docs/).
 
 ### Icons {#front-end-icons}
 
