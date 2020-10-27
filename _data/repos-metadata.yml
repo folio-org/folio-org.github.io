@@ -88,6 +88,9 @@ ui-myprofile:
 ui-notes:
   urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Notes
 
+ui-oai-pmh:
+  urlUserTips: https://wiki.folio.org/display/FOLIOtips/OAI-PMH
+
 ui-orders:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Orders
   urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Orders
@@ -95,6 +98,9 @@ ui-orders:
 ui-organizations:
   urlUserTips: https://wiki.folio.org/pages/viewpage.action?pageId=14457393
   urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Organizations
+
+ui-quick-marc:
+  urlUserTips: https://wiki.folio.org/display/FOLIOtips/quickMARC
 
 ui-receiving:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Receiving
