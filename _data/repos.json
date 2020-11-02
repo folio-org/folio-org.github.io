@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-10-23T01:41:19.408171+00:00"
+    "generatedDateTime": "2020-11-02T06:55:41.942930+00:00"
   },
   "repos": [
     {
@@ -1373,7 +1373,7 @@
       "description": null,
       "docDirName": null,
       "name": "ui-remote-storage",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {

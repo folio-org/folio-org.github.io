@@ -57,7 +57,7 @@ Especially utilise the first couple of sentences to provide a concise explanatio
 
 The bot could (TODO: not yet happening) gather the first 200 characters.
 
-Note that if a template was used to generate the initial project content (e.g. using stripes-cli) then the boilerplate content needs to be replace at various parts of the initial README.
+Note that if a template was used to generate the initial project content (e.g. using stripes-cli) then the boilerplate content needs to be replaced at various parts of the initial README.
 
 ## Additional metadata
 
@@ -86,7 +86,7 @@ The tool "[yq](https://github.com/kislyuk/yq)" is useful for verifying YAML file
 
 If the FOLIO Wiki "[FOLIOtips](https://wiki.folio.org/display/FOLIOtips)" and "[FOLIOtips/Settings](https://wiki.folio.org/display/FOLIOtips/Settings)" index pages reliably used the module name (e.g. Tags for ui-tags) then the bot could automatically link, and so those attributes could be removed from the "[Additional metadata](#additional-metadata)" file.
 
-Eventually there might be "App store" categories that could be use to cross-link such information.
+Eventually there might be "App store" categories that could be used to cross-link such information.
 
 Gather the first 200 characters of the Introduction section of each repository README page.
 
