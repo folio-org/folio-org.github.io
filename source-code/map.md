@@ -11,7 +11,7 @@ menuSubIndex: 2
 ## Introduction
 
 List of FOLIO modules hosted at the [folio-org GitHub organization](https://github.com/folio-org), with links to some related documentation.
-Also refer to the [Source-code overiew](/source-code/).
+Also refer to the [Source-code overview](/source-code/).
 
 {% assign urlGithub = "https://github.com/folio-org" %}
 {% assign urlApiBase = "https://dev.folio.org/reference/api" %}
