@@ -24,6 +24,9 @@ At Docker Hub:
 
 See [Automation/Docker Hub](/guides/automation#docker-hub) for details.
 
+Docker images are the primary distribution model for FOLIO modules.
+To run the images you will need the Docker Engine or Docker Desktop runtime.
+
 ## Maven artifacts
 
 Example POM configuration:
