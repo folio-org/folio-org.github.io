@@ -70,6 +70,7 @@ This information includes extra documentation links, beyond that automatically g
 Note that such links are intended as starting points, not to list every piece of documentation here.
 
 Please send pull-requests to add documentation links for your repository.
+Alternatively add a Jira ticket and assign to the DevOps Team.
 
 The YAML structure is explained in the head of that file.
 The tool "[yq](https://github.com/kislyuk/yq)" is useful for verifying YAML files, e.g. do `yq '.' repos-metadata.yml`
@@ -89,6 +90,9 @@ If the FOLIO Wiki "[FOLIOtips](https://wiki.folio.org/display/FOLIOtips)" and "[
 Eventually there might be "App store" categories that could be used to cross-link such information.
 
 Gather the first 200 characters of the Introduction section of each repository README page.
+
+Fully automate the regular gathering of the repos.json metadata.
+This could then also gather other information.
 
 ## Assemble source-code map
 
