@@ -91,15 +91,6 @@ Some of the important forums to collaborate, discuss FOLIO, interact with other 
   </tbody>
 </table>
 
-## Community representatives
-
-The FOLIO community consists of many significant contributors.  Among
-them are community representatives which include:
-
-- Sebastian Hammer, Index Data
-- Christopher Spalding, EBSCO
-- Michael Winkler, OLE
-
 ## Engineering teams
 
 The FOLIO developer community consists of:
