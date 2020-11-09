@@ -234,7 +234,7 @@ module.  If a Dockerfile is present, Jenkins will create a Docker image for the 
 and publish the image to a repository on Docker Hub as a post-build step if the previous
 build step is successful.
 
-Docker images are published to the ['folioci' namespace on Docker Hub](https://hub.docker.com/r/folioci).
+Docker images are published to the ['folioci' namespace on Docker Hub](https://hub.docker.com/u/folioci).
 This namespace is primarily used by Jenkins for other continuous
 integration jobs but is also open to the FOLIO development community for testing and
 development purposes.  "Snapshot" versions of modules are published after every
@@ -253,7 +253,7 @@ include the Jenkins build number, git commit ID, or git tag.  Similar to the Mav
 repositories, write access to the 'folioci' repositories is via Jenkins only.
 
 A separate set of repositories on Docker Hub are designated for "released"
-versions of modules: the ['folioorg' namespace](https://hub.docker.com/r/folioorg).
+versions of modules: the ['folioorg' namespace](https://hub.docker.com/u/folioorg).
 
 Docker Hub repository permissions are very similar to GitHub's repository permissions.
 It is possible to invite Docker Hub users to collaborate on repositories within
