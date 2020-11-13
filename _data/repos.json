@@ -1,30 +1,41 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-09-30T01:01:49.127442+00:00"
+    "generatedDateTime": "2020-11-02T06:55:41.942930+00:00"
   },
   "repos": [
     {
       "description": "Central repository for the acquisition models",
       "docDirName": null,
       "name": "acq-models",
+      "repoLanguageHint": "other",
       "repoType": "raml-shared"
     },
     {
       "description": "The library to handle events from data-import",
       "docDirName": null,
       "name": "data-import-processing-core",
+      "repoLanguageHint": "java",
       "repoType": "other"
     },
     {
       "description": "Repository for data-import json schemas centralized for reusability",
       "docDirName": null,
       "name": "data-import-raml-storage",
+      "repoLanguageHint": "other",
       "repoType": "raml-shared"
     },
     {
       "description": "Library with common utilities for data-import modules",
       "docDirName": null,
       "name": "data-import-utils",
+      "repoLanguageHint": "java",
+      "repoType": "other"
+    },
+    {
+      "description": "FOLIO Documentation",
+      "docDirName": null,
+      "name": "docs",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
@@ -32,6 +43,7 @@
       "docDirName": null,
       "name": "edge-common",
       "ramlDirName": null,
+      "repoLanguageHint": "java",
       "repoType": "backend-edge"
     },
     {
@@ -39,6 +51,7 @@
       "docDirName": null,
       "name": "edge-lti-courses",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-edge"
     },
     {
@@ -46,6 +59,7 @@
       "docDirName": null,
       "name": "edge-ncip",
       "ramlDirName": null,
+      "repoLanguageHint": "java",
       "repoType": "backend-edge"
     },
     {
@@ -53,6 +67,7 @@
       "docDirName": null,
       "name": "edge-oai-pmh",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-edge"
     },
     {
@@ -60,6 +75,7 @@
       "docDirName": null,
       "name": "edge-orders",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-edge"
     },
     {
@@ -67,6 +83,7 @@
       "docDirName": null,
       "name": "edge-patron",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-edge"
     },
     {
@@ -74,6 +91,7 @@
       "docDirName": null,
       "name": "edge-resolver",
       "ramlDirName": null,
+      "repoLanguageHint": "java",
       "repoType": "backend-edge"
     },
     {
@@ -81,6 +99,7 @@
       "docDirName": null,
       "name": "edge-rtac",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-edge"
     },
     {
@@ -88,144 +107,168 @@
       "docDirName": null,
       "name": "edge-sip2",
       "ramlDirName": null,
+      "repoLanguageHint": "java",
       "repoType": "backend-edge"
     },
     {
       "description": "Stripes's .eslintrc as an extensible shared config",
       "docDirName": null,
       "name": "eslint-config-stripes",
+      "repoLanguageHint": "node",
       "repoType": "other"
     },
     {
       "description": "FOLIO reports and analytics",
       "docDirName": null,
       "name": "folio-analytics",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "Ansible playbook for FOLIO",
       "docDirName": "doc",
       "name": "folio-ansible",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "FOLIO postman collections for backend modules",
       "docDirName": null,
       "name": "folio-api-tests",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "Store and maintain custom fields",
       "docDirName": null,
       "name": "folio-custom-fields",
+      "repoLanguageHint": "java",
       "repoType": "other"
     },
     {
       "description": "Dependency Injection support for FOLIO backend modules",
       "docDirName": null,
       "name": "folio-di-support",
+      "repoLanguageHint": "java",
       "repoType": "other"
     },
     {
       "description": "Serves up GraphiQL for use with FOLIO",
       "docDirName": null,
       "name": "folio-graphiql",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "Helm charts modules repository",
       "docDirName": null,
       "name": "folio-helm",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "Client library to HoldingsIQ API",
       "docDirName": null,
       "name": "folio-holdingsiq-client",
+      "repoLanguageHint": "java",
       "repoType": "other"
     },
     {
       "description": "Runbooks for FOLIO installation",
       "docDirName": null,
       "name": "folio-install",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "The set of integration tests, based on karate framework",
       "docDirName": null,
       "name": "folio-integration-tests",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "ISBN number converter utilities",
       "docDirName": null,
       "name": "folio-isbn-util",
+      "repoLanguageHint": "java",
       "repoType": "other"
     },
     {
       "description": "Liquibase utilities",
       "docDirName": null,
       "name": "folio-liquibase-util",
+      "repoLanguageHint": "java",
       "repoType": "other"
     },
     {
       "description": "Website for FOLIO open source development dev.folio.org",
       "docDirName": null,
       "name": "folio-org.github.io",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "Jenkins pipelines to test FOLIO performance and integration",
       "docDirName": null,
       "name": "folio-perf-test",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "Examples of FOLIO modules",
       "docDirName": "doc",
       "name": "folio-sample-modules",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "Library with general purpose classes to help with FOLIO backend service development",
       "docDirName": null,
       "name": "folio-service-tools",
+      "repoLanguageHint": "java",
       "repoType": "other"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "folio-test-env",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "folio-testing-platform",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "Various tools and support glue for FOLIO CI",
       "docDirName": null,
       "name": "folio-tools",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "Shared library for generating MARC records on-the-fly",
       "docDirName": null,
       "name": "generate-marc-utils",
+      "repoLanguageHint": "java",
       "repoType": "other"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "inventory-sample-data",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "Shared library for Jenkins Pipeline",
       "docDirName": null,
       "name": "jenkins-pipeline-libs",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
@@ -233,6 +276,7 @@
       "docDirName": null,
       "name": "mod-aes",
       "ramlDirName": null,
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -240,6 +284,7 @@
       "docDirName": "doc",
       "name": "mod-agreements",
       "ramlDirName": null,
+      "repoLanguageHint": "gradle",
       "repoType": "backend-mod"
     },
     {
@@ -247,6 +292,7 @@
       "docDirName": null,
       "name": "mod-audit",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -254,6 +300,7 @@
       "docDirName": null,
       "name": "mod-audit-filter",
       "ramlDirName": null,
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -261,6 +308,7 @@
       "docDirName": null,
       "name": "mod-authtoken",
       "ramlDirName": null,
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -268,6 +316,7 @@
       "docDirName": null,
       "name": "mod-calendar",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -275,6 +324,7 @@
       "docDirName": null,
       "name": "mod-camunda",
       "ramlDirName": null,
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -282,6 +332,7 @@
       "docDirName": "doc",
       "name": "mod-circulation",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -289,6 +340,7 @@
       "docDirName": null,
       "name": "mod-circulation-storage",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -296,6 +348,7 @@
       "docDirName": null,
       "name": "mod-codex-ekb",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -303,6 +356,7 @@
       "docDirName": null,
       "name": "mod-codex-inventory",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -310,6 +364,7 @@
       "docDirName": null,
       "name": "mod-codex-mock",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -317,6 +372,7 @@
       "docDirName": null,
       "name": "mod-codex-mux",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -324,6 +380,7 @@
       "docDirName": null,
       "name": "mod-configuration",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -331,6 +388,7 @@
       "docDirName": null,
       "name": "mod-courses",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -338,6 +396,7 @@
       "docDirName": null,
       "name": "mod-data-export",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -345,6 +404,7 @@
       "docDirName": null,
       "name": "mod-data-import",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -352,6 +412,7 @@
       "docDirName": null,
       "name": "mod-data-import-converter-storage",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -359,6 +420,7 @@
       "docDirName": null,
       "name": "mod-data-loader",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -366,6 +428,7 @@
       "docDirName": null,
       "name": "mod-datasets",
       "ramlDirName": null,
+      "repoLanguageHint": "other",
       "repoType": "backend-mod"
     },
     {
@@ -373,6 +436,7 @@
       "docDirName": null,
       "name": "mod-email",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -380,6 +444,7 @@
       "docDirName": null,
       "name": "mod-erm-usage",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -387,6 +452,7 @@
       "docDirName": null,
       "name": "mod-erm-usage-counter",
       "ramlDirName": null,
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -394,6 +460,7 @@
       "docDirName": null,
       "name": "mod-erm-usage-harvester",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -401,6 +468,7 @@
       "docDirName": null,
       "name": "mod-event-config",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -408,6 +476,7 @@
       "docDirName": null,
       "name": "mod-feesfines",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -415,6 +484,7 @@
       "docDirName": null,
       "name": "mod-finance",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -422,6 +492,7 @@
       "docDirName": null,
       "name": "mod-finance-storage",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -429,6 +500,7 @@
       "docDirName": null,
       "name": "mod-finc-config",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -436,6 +508,7 @@
       "docDirName": null,
       "name": "mod-gobi",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -443,6 +516,7 @@
       "docDirName": "doc",
       "name": "mod-graphql",
       "ramlDirName": null,
+      "repoLanguageHint": "node",
       "repoType": "backend-mod"
     },
     {
@@ -450,6 +524,7 @@
       "docDirName": "doc",
       "name": "mod-inventory",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -457,6 +532,7 @@
       "docDirName": null,
       "name": "mod-inventory-storage",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -464,6 +540,7 @@
       "docDirName": null,
       "name": "mod-inventory-update",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -471,6 +548,7 @@
       "docDirName": null,
       "name": "mod-invoice",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -478,6 +556,7 @@
       "docDirName": null,
       "name": "mod-invoice-storage",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -485,6 +564,7 @@
       "docDirName": null,
       "name": "mod-kb-ebsco-java",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -492,6 +572,7 @@
       "docDirName": "docs",
       "name": "mod-licenses",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "gradle",
       "repoType": "backend-mod"
     },
     {
@@ -499,6 +580,7 @@
       "docDirName": null,
       "name": "mod-login",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -506,6 +588,7 @@
       "docDirName": null,
       "name": "mod-login-saml",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -513,6 +596,7 @@
       "docDirName": null,
       "name": "mod-marccat",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -520,6 +604,7 @@
       "docDirName": "docs",
       "name": "mod-ncip",
       "ramlDirName": null,
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -527,6 +612,7 @@
       "docDirName": null,
       "name": "mod-notes",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -534,6 +620,7 @@
       "docDirName": null,
       "name": "mod-notify",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -541,6 +628,7 @@
       "docDirName": null,
       "name": "mod-oai-pmh",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -548,6 +636,7 @@
       "docDirName": null,
       "name": "mod-orders",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -555,6 +644,7 @@
       "docDirName": null,
       "name": "mod-orders-storage",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -562,6 +652,7 @@
       "docDirName": null,
       "name": "mod-organizations",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -569,6 +660,7 @@
       "docDirName": null,
       "name": "mod-organizations-storage",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -576,6 +668,7 @@
       "docDirName": null,
       "name": "mod-password-validator",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -583,6 +676,7 @@
       "docDirName": null,
       "name": "mod-patron",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -590,6 +684,7 @@
       "docDirName": null,
       "name": "mod-patron-blocks",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -597,6 +692,7 @@
       "docDirName": null,
       "name": "mod-permissions",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -604,6 +700,7 @@
       "docDirName": null,
       "name": "mod-pubsub",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -611,6 +708,7 @@
       "docDirName": null,
       "name": "mod-quick-marc",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -618,12 +716,14 @@
       "docDirName": null,
       "name": "mod-receiving",
       "ramlDirName": null,
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
       "description": "Maven archetype used to generate an RMB-based module",
       "docDirName": null,
       "name": "mod-rmb-template",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
@@ -631,6 +731,7 @@
       "docDirName": null,
       "name": "mod-rtac",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -638,6 +739,7 @@
       "docDirName": null,
       "name": "mod-sender",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -645,6 +747,7 @@
       "docDirName": null,
       "name": "mod-source-record-manager",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -652,6 +755,7 @@
       "docDirName": null,
       "name": "mod-source-record-storage",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -659,6 +763,7 @@
       "docDirName": null,
       "name": "mod-spring-sample",
       "ramlDirName": null,
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -666,6 +771,7 @@
       "docDirName": null,
       "name": "mod-tags",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -673,6 +779,7 @@
       "docDirName": null,
       "name": "mod-template-engine",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -680,6 +787,7 @@
       "docDirName": null,
       "name": "mod-user-import",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -687,6 +795,7 @@
       "docDirName": null,
       "name": "mod-users",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -694,6 +803,7 @@
       "docDirName": null,
       "name": "mod-users-bl",
       "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
@@ -701,12 +811,14 @@
       "docDirName": null,
       "name": "mod-workflow",
       "ramlDirName": null,
+      "repoLanguageHint": "java",
       "repoType": "backend-mod"
     },
     {
       "description": "A Z39.50 server for FOLIO bibliographic data",
       "docDirName": "doc",
       "name": "Net-Z3950-FOLIO",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
@@ -714,48 +826,56 @@
       "docDirName": "doc",
       "name": "okapi",
       "ramlDirName": "okapi-core/src/main/raml",
+      "repoLanguageHint": "java",
       "repoType": "backend-infrastructure"
     },
     {
       "description": "Okapi command-line interface",
       "docDirName": null,
       "name": "okapi-cli",
+      "repoLanguageHint": "java",
       "repoType": "other"
     },
     {
       "description": "Experimental Debian Packaging Repo for Okapi",
       "docDirName": "doc",
       "name": "okapi-debian",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "Repository that houses tools and performance testing scripts",
       "docDirName": null,
       "name": "perf-testing",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "Complete set of Stripes modules for FOLIO",
       "docDirName": null,
       "name": "platform-complete",
+      "repoLanguageHint": "other",
       "repoType": "platform"
     },
     {
       "description": "Core set of Stripes modules for FOLIO",
       "docDirName": null,
       "name": "platform-core",
+      "repoLanguageHint": "other",
       "repoType": "platform"
     },
     {
       "description": "FOLIO Stripes platform for ERM modules",
       "docDirName": null,
       "name": "platform-erm",
+      "repoLanguageHint": "other",
       "repoType": "platform"
     },
     {
       "description": "Repository of RAML files, including JSON schemas, traits and resource types centralized for re-usability",
       "docDirName": null,
       "name": "raml",
+      "repoLanguageHint": "other",
       "repoType": "raml-shared"
     },
     {
@@ -763,462 +883,546 @@
       "docDirName": "doc",
       "name": "raml-module-builder",
       "ramlDirName": "domain-models-api-interfaces/ramls",
+      "repoLanguageHint": "java",
       "repoType": "backend-infrastructure"
     },
     {
       "description": "ERM schema documentation",
       "docDirName": null,
       "name": "reporting-erm-doc",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "RFCs for changes to the FOLIO platform",
       "docDirName": null,
       "name": "rfcs",
+      "repoLanguageHint": "other",
       "repoType": "other"
     },
     {
       "description": "Spring module core libraries for Spring development with Okapi",
       "docDirName": null,
       "name": "spring-module-core",
+      "repoLanguageHint": "java",
       "repoType": "other"
     },
     {
       "description": "UI framework for building front-end FOLIO modules",
       "docDirName": "doc",
       "name": "stripes",
+      "repoLanguageHint": "node",
       "repoType": "stripes"
     },
     {
       "description": "Stripes components that are specific to use cases that arise in Acquisitions-related modules",
       "docDirName": null,
       "name": "stripes-acq-components",
+      "repoLanguageHint": "node",
       "repoType": "stripes"
     },
     {
       "description": "Command line interface for creating, building, and testing Stripes UI modules.",
       "docDirName": "doc",
       "name": "stripes-cli",
+      "repoLanguageHint": "node",
       "repoType": "stripes"
     },
     {
       "description": "A component library for Stripes",
       "docDirName": "docs",
       "name": "stripes-components",
+      "repoLanguageHint": "node",
       "repoType": "stripes"
     },
     {
       "description": "Declarative REST data access for React components, part of the FOLIO project",
       "docDirName": "doc",
       "name": "stripes-connect",
+      "repoLanguageHint": "node",
       "repoType": "stripes"
     },
     {
       "description": "The core of Stripes, an opinionated and modular platform for React components consuming REST data and the UI framework for the FOLIO project",
       "docDirName": "doc",
       "name": "stripes-core",
+      "repoLanguageHint": "node",
       "repoType": "stripes"
     },
     {
       "description": "Stripes components that are specific to use cases that arise in ui-data-import and ui-data-export modules",
       "docDirName": null,
       "name": "stripes-data-transfer-components",
+      "repoLanguageHint": "node",
       "repoType": "stripes"
     },
     {
       "description": "Stripes platform for building the demo site",
       "docDirName": null,
       "name": "stripes-demo-platform",
+      "repoLanguageHint": "other",
       "repoType": "stripes"
     },
     {
       "description": "Stripes components that are specific to use cases that arise in ERM-related modules",
       "docDirName": null,
       "name": "stripes-erm-components",
+      "repoLanguageHint": "node",
       "repoType": "stripes"
     },
     {
       "description": "A Final Form Wrapper for Stripes",
       "docDirName": null,
       "name": "stripes-final-form",
+      "repoLanguageHint": "node",
       "repoType": "stripes"
     },
     {
       "description": "A redux-form wrapper for Stripes",
       "docDirName": null,
       "name": "stripes-form",
+      "repoLanguageHint": "node",
       "repoType": "stripes"
     },
     {
       "description": "Configuration for a sample platform and to run a local Stripes UI development server",
       "docDirName": null,
       "name": "stripes-sample-platform",
+      "repoLanguageHint": "other",
       "repoType": "stripes"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "stripes-smart-components",
+      "repoLanguageHint": "node",
       "repoType": "stripes"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "stripes-template-editor",
+      "repoLanguageHint": "node",
       "repoType": "stripes"
     },
     {
       "description": null,
       "docDirName": "doc",
       "name": "stripes-testing",
+      "repoLanguageHint": "node",
       "repoType": "stripes"
     },
     {
       "description": "A library of utility functions to support Stripes modules",
       "docDirName": null,
       "name": "stripes-util",
+      "repoLanguageHint": "node",
       "repoType": "stripes"
     },
     {
       "description": "Stripes UI module: Management of Acquisition unit records",
       "docDirName": null,
       "name": "ui-acquisition-units",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "Stripes front end module for ERM module",
       "docDirName": null,
       "name": "ui-agreements",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "Stripes UI app module template",
       "docDirName": null,
       "name": "ui-app-template",
+      "repoLanguageHint": "node",
       "repoType": "other"
     },
     {
       "description": "Stripes UI module: Viewing audit trails",
       "docDirName": null,
       "name": "ui-audit",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "FOLIO institutional calendar UI module",
       "docDirName": null,
       "name": "ui-calendar",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "Stripes UI for checking in items with simulated scans",
       "docDirName": null,
       "name": "ui-checkin",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "Stripes UI for checking out items with simulated scans",
       "docDirName": null,
       "name": "ui-checkout",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-circulation",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-circulation-log",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "Course reserves UI for FOLIO",
       "docDirName": "doc",
       "name": "ui-courses",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "UI module: data export managing",
       "docDirName": null,
       "name": "ui-data-export",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "UI module: managing batch loader feature",
       "docDirName": null,
       "name": "ui-data-import",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-datasets",
+      "repoLanguageHint": "other",
       "repoType": "ui"
     },
     {
       "description": "Stripes UI module: developer facilities",
       "docDirName": null,
       "name": "ui-developer",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "FOLIO eholdings App",
       "docDirName": "docs",
       "name": "ui-eholdings",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "Stripes App for ERM Comparison",
       "docDirName": null,
       "name": "ui-erm-comparisons",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "Stripes UI for managing ERM usage statistics",
       "docDirName": "docs",
       "name": "ui-erm-usage",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-finance",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "UI finc-config module ",
       "docDirName": null,
       "name": "ui-finc-config",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "finc-select UI module ",
       "docDirName": null,
       "name": "ui-finc-select",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "UI module for administrating instances",
       "docDirName": null,
       "name": "ui-inventory",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-invoice",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "FOLIO front end module for licenses",
       "docDirName": null,
       "name": "ui-licenses",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "FOLIO App Module to manage the local KB for ERM",
       "docDirName": null,
       "name": "ui-local-kb-admin",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "FOLIO UI module to configure settings for the Course Reserves LTI Tool",
       "docDirName": null,
       "name": "ui-lti-courses",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "UI module for searching, sorting, filtering, viewing, editing and creating BIB record",
       "docDirName": null,
       "name": "ui-marccat",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "UI module: managing user profile settings",
       "docDirName": null,
       "name": "ui-myprofile",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "FOLIO Notes Helper App ",
       "docDirName": null,
       "name": "ui-notes",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "Stripes UI for oai-pmh",
       "docDirName": null,
       "name": "ui-oai-pmh",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-orders",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "UI module for managing organization records",
       "docDirName": null,
       "name": "ui-organizations",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-plugin-create-inventory-records",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin"
     },
     {
       "description": "Stripes UI plugin: Create item",
       "docDirName": null,
       "name": "ui-plugin-create-item",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin"
     },
     {
       "description": "A Stripes UI plugin for editing markdown",
       "docDirName": null,
       "name": "ui-plugin-example",
+      "repoLanguageHint": "other",
       "repoType": "ui-plugin"
     },
     {
       "description": "ERM-agreement-finder plugin for Stripes",
       "docDirName": null,
       "name": "ui-plugin-find-agreement",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin"
     },
     {
       "description": "Stripes UI plugin: Find a contact",
       "docDirName": null,
       "name": "ui-plugin-find-contact",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin"
     },
     {
       "description": "ERM-eresource-finder plugin for Stripes",
       "docDirName": null,
       "name": "ui-plugin-find-eresource",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin"
     },
     {
       "description": "ERM-Usage-Data-Provider-finder plugin for Stripes ",
       "docDirName": null,
       "name": "ui-plugin-find-erm-usage-data-provider",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin"
     },
     {
       "description": "Finder plugin for finc metadata collections",
       "docDirName": null,
       "name": "ui-plugin-find-finc-metadata-collection",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin"
     },
     {
       "description": "Finder plugin for finc metadata sources",
       "docDirName": null,
       "name": "ui-plugin-find-finc-metadata-source",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin"
     },
     {
       "description": "UI Plugin that implements UI Data Import profiles search and pick",
       "docDirName": null,
       "name": "ui-plugin-find-import-profile",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin"
     },
     {
       "description": "Instance-finder plugin for Stripes",
       "docDirName": null,
       "name": "ui-plugin-find-instance",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin"
     },
     {
       "description": "Stripes UI plugin: Find an interface",
       "docDirName": null,
       "name": "ui-plugin-find-interface",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin"
     },
     {
       "description": "UI Widget to lookup or create licenses",
       "docDirName": null,
       "name": "ui-plugin-find-license",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin"
     },
     {
       "description": "Organization-finder plugin for Stripes",
       "docDirName": null,
       "name": "ui-plugin-find-organization",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin"
     },
     {
       "description": "Stripes plugin to find packages and titles",
       "docDirName": null,
       "name": "ui-plugin-find-package-title",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin"
     },
     {
       "description": "Stripes UI plugin: Display, filter and select PO lines",
       "docDirName": null,
       "name": "ui-plugin-find-po-line",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin"
     },
     {
       "description": "User-finder plugin for Stripes",
       "docDirName": null,
       "name": "ui-plugin-find-user",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin"
     },
     {
       "description": "Stripes UI for quickMARC editor",
       "docDirName": null,
       "name": "ui-quick-marc",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-receiving",
+      "repoLanguageHint": "node",
+      "repoType": "ui"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "ui-remote-storage",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "Stripes UI module for making requests on items",
       "docDirName": null,
       "name": "ui-requests",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": null,
       "docDirName": "doc",
       "name": "ui-search",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "Service Points handler module for Stripes",
       "docDirName": null,
       "name": "ui-servicepoints",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "UI module for managing tag settings",
       "docDirName": null,
       "name": "ui-tags",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "Stripes UI module: managing tenant settings",
       "docDirName": null,
       "name": "ui-tenant-settings",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "Stripes UI module: administrating users",
       "docDirName": null,
       "name": "ui-users",
+      "repoLanguageHint": "node",
       "repoType": "ui"
     },
     {
       "description": "Yakbak proxy for reading/writing tapes of network interactions",
       "docDirName": null,
       "name": "yakbak-proxy",
+      "repoLanguageHint": "other",
       "repoType": "other"
     }
   ]

@@ -72,6 +72,17 @@ The module should now be up and running for your tenant in a container.
 If there are issues, check the Okapi log at `/var/log/folio/okapi/okapi.log`
 or check the [container module log](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md#viewing-backend-module-logs) itself using `docker logs`.
 
+## Scratch environments, Rancher, Docker
+
+Each development team can utilise their specific "scratch environment".
+This enables a developer to use local git clones of backend repositories, building and publishing Docker images, then using their team's scratch environment via Rancher to manage Kubernetes (K8s) to interact with a complete FOLIO system.
+
+Refer to the FAQ [How to get started with Rancher environment](/faqs/how-to-get-started-with-rancher/).
+
+As explained, each FOLIO team has their own scratch environment.
+For example, the Core Functional team Wiki [article](https://wiki.folio.org/display/FOLIJET/Back-end+module+development+using+the+scratch+environment+and+Rancher) guides their team.
+Their instructions would generally apply to other teams.
+
 ## Deploy via local Okapi and Stripes
 
 Another way is to run directly on the host machine.

@@ -57,7 +57,15 @@ To verify internal and external links, do:
 ./bin/htmlproofer.sh
 ```
 
+or
+
+```
+rake proof
+```
+
 This will re-generate the whole site, then report any broken links.
+
+Note that verification of GitHub links is disabled.
 
 ## Work area - management of dev site
 

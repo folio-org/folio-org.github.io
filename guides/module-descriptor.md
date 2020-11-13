@@ -24,7 +24,8 @@ For back-end modules, a template is [maintained](/guides/commence-a-module/#back
 This is usually at `./descriptors/ModuleDescriptor-template.json` and is transformed by the module's build process into the `target/ModuleDescriptor.json` file.
 See example at [mod-notes](https://github.com/folio-org/mod-notes/blob/master/descriptors/ModuleDescriptor-template.json).
 
-To validate changes, utilise a JSON Schema validator such as [z-schema](https://github.com/zaggino/z-schema):
+To validate changes, utilise a JSON Schema validator such as 'z-schema' or 'ajv'
+(see [detailed notes](#testing-the-modifications) futher below):
 
 ```
 cd mod-notes
@@ -41,7 +42,8 @@ that is [maintained](/guides/commence-a-module/#frontend-end-descriptors) in the
 See example at [ui-users](https://github.com/folio-org/ui-users/blob/master/package.json).
 
 To validate changes, first use [stripes-cli](https://github.com/folio-org/stripes-cli/blob/master/doc/user-guide.md) to generate the MD.
-Then utilise a JSON Schema validator such as [z-schema](https://github.com/zaggino/z-schema):
+Then utilise a JSON Schema validator such as 'z-schema' or 'ajv'
+(see [detailed notes](#testing-the-modifications) futher below):
 
 ```
 cd ui-users
@@ -237,12 +239,26 @@ Use [jq](https://stedolan.github.io/jq/):
 ```
 jq '.' descriptors/ModuleDescriptor-template.json
 ```
+
 Use [z-schema](https://github.com/zaggino/z-schema):
 
 ```
+yarn global add z-schema
+cd mod-notes
 z-schema --pedanticCheck \
   ../okapi/okapi-core/src/main/raml/ModuleDescriptor.json \
   descriptors/ModuleDescriptor-template.json
+```
+
+Or use [ajv](https://github.com/ajv-validator/ajv):
+
+```
+yarn global add ajv-cli
+cd mod-notes
+ajv validate \
+  -s ../okapi/okapi-core/src/main/raml/ModuleDescriptor.json \
+  -r "../okapi/okapi-core/src/main/raml/*.json" \
+  -d descriptors/ModuleDescriptor-template.json
 ```
 
 Deploy the module as a Docker container with a local FOLIO Vagrant VM (e.g. folio/testing).

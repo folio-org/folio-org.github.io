@@ -20,9 +20,12 @@ There are several repositories that contain snapshot and released FOLIO artifact
 At Docker Hub:
 
 * [https://hub.docker.com/u/folioorg/](https://hub.docker.com/u/folioorg/) released versions
-* [https://hub.docker.com/r/folioci/](https://hub.docker.com/r/folioci/) snapshot versions
+* [https://hub.docker.com/u/folioci/](https://hub.docker.com/u/folioci/) snapshot versions
 
 See [Automation/Docker Hub](/guides/automation#docker-hub) for details.
+
+Docker images are the primary distribution model for FOLIO modules.
+To run the images you will need the Docker Engine or Docker Desktop runtime.
 
 ## Maven artifacts
 
@@ -60,12 +63,19 @@ for details.
 
 ## Debian/Ubuntu APT repository
 
-Currently only Okapi packages for Ubuntu Xenial.
+Okapi packages before version 4 are available for Ubuntu Xenial.
 
 Example APT source configuration:
 
 ```
 deb https://repository.folio.org/packages/ubuntu xenial/
+```
+
+Okapi version 4 and later are available for Ubuntu Focal Fossa:
+
+
+```
+deb https://repository.folio.org/packages/ubuntu focal/
 ```
 
 ## Vagrant boxes
