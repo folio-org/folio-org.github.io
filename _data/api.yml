@@ -530,6 +530,7 @@ mod-feesfines:
       - feefines
       - lost-item-fee-policy
       - manualblocks
+      - manual-block-templates
       - overdue-fine-policy
       - owners
       - payments
