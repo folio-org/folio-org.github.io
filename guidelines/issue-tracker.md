@@ -53,6 +53,8 @@ There is a link to Jira help via its "Add Comment" screen.
 Use attachments for long log files, text listings, and images.
 Be sure to redact information that would compromise privacy.
 
+When filing bug reports from Maven and unit test output, always use Maven non-interactive (option `-B,--batch-mode`) to avoid control characters in output.
+
 ## Create issue
 
 When creating the issue, select the most relevant _Project_ and the _Issue
