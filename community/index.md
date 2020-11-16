@@ -14,6 +14,10 @@ menuSubIndex: 1
 
 The FOLIO wiki contains the [project roadmap](/guides/#roadmap).
 
+## Code of Conduct
+
+Refer to the Wiki [FOLIO Code of Conduct](https://wiki.folio.org/display/COMMUNITY/FOLIO+Code+of+Conduct).
+
 ## Collaboration tools
 
 Some of the important forums to collaborate, discuss FOLIO, interact with other participants, and find starting points for documentation.
