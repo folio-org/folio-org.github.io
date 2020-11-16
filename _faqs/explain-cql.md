@@ -12,6 +12,7 @@ See also [CQL in the Glossary](/reference/glossary/#cql) and RAML Module Builder
 [CQL2PgJSON](https://github.com/folio-org/raml-module-builder#cql2pgjson-multi-field-index),
 and [Post Tenant (schema.json)](https://github.com/folio-org/raml-module-builder#the-post-tenant-api)
 documentation sections for further CQL information.
+The Wiki [FOLIOtips/Searching](https://wiki.folio.org/display/FOLIOtips/Searching) has notes about search indexes, and example CQL syntax search queries.
 
 See explanations and examples below for
 [Field match operator](#field) and [Word match operators](#word).
