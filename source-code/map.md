@@ -102,6 +102,10 @@ See [usage notes](#usage-notes) below.
     {%- if metadata.furtherDescription -%}
         <p> {{ metadata.furtherDescription }} </p>
     {%- endif -%}
+    {%- if repo.snippetIntro -%}
+      {%- capture intro -%}{{ repo.snippetIntro }}{%- endcapture -%}
+      <div> {{ intro }} </div>
+    {%- endif -%}
     {%- capture urlRepo -%}{{ urlGithub }}/{{ repoName }}{%- endcapture -%}
     <p> GitHub README: <a href="{{ urlRepo }}">{{ urlRepo }}</a> </p>
     {%- if repo.docDirName -%}

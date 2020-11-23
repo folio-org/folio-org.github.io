@@ -51,11 +51,11 @@ and [ui-search](/source-code/map/#ui-search).
 
 ## The README introduction
 
-Provide an "Introduction" or "Overview" as the first sub-section of the repository's top-level README page.
+Provide an "Introduction" or "Overview" section of the repository's top-level README page.
 
 Especially utilise the first couple of sentences to provide a concise explanation of the features of the repository.
 
-The bot could (TODO: not yet happening) gather the first 200 characters.
+The bot gathers the first paragraph of such a section.
 
 Note that if a template was used to generate the initial project content (e.g. using stripes-cli) then the boilerplate content needs to be replaced at various parts of the initial README.
 
