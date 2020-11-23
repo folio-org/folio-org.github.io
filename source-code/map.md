@@ -151,7 +151,7 @@ Use the "Branches/Tags" menu at the left-hand of its breadcrumb trail.
 If a "DB schema" link is shown, then use this to assist construction of
 [CQL search queries](/faqs/explain-cql/).
 
-It shows which tables are available, the database indexes and their and types (e.g. fullTextIndex, uniqueIndex, etc.) along with details of those indexes (e.g. caseSensitive, removeAccents, etc.).
+It shows which tables are available, the database indexes and their types (e.g. fullTextIndex, uniqueIndex, etc.) along with details of those indexes (e.g. caseSensitive, removeAccents, etc.).
 
 ## Further information
 
