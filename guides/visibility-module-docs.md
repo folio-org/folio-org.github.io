@@ -89,8 +89,6 @@ If the FOLIO Wiki "[FOLIOtips](https://wiki.folio.org/display/FOLIOtips)" and "[
 
 Eventually there might be "App store" categories that could be used to cross-link such information.
 
-Gather the first 200 characters of the Introduction section of each repository README page.
-
 Fully automate the regular gathering of the repos.json metadata.
 This could then also gather other information.
 
