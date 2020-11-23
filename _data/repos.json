@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-11-15T22:33:33.408803+00:00"
+    "generatedDateTime": "2020-11-22T23:39:28.692344+00:00"
   },
   "repos": [
     {
@@ -314,6 +314,9 @@
     {
       "description": null,
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-calendar",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -338,6 +341,9 @@
     {
       "description": "FOLIO mod-circulation-storage",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-circulation-storage",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -346,6 +352,9 @@
     {
       "description": null,
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-codex-ekb",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -354,6 +363,9 @@
     {
       "description": "Codex wrapper for local inventory",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-codex-inventory",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -362,6 +374,9 @@
     {
       "description": "Codex mock module - for testing and development",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-codex-mock",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -370,6 +385,9 @@
     {
       "description": "Codex Multiplexer backend module",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-codex-mux",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -378,6 +396,9 @@
     {
       "description": "Configuration module based on the raml-module-builder and a set of raml and json schemas backed by a postgresdb async implementation",
       "docDirName": null,
+      "hasDbSchema": "blob/master/mod-configuration-server/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-configuration",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -386,6 +407,9 @@
     {
       "description": "Backend CRUD storage module to support the Course Reserves functionality",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-courses",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -394,6 +418,9 @@
     {
       "description": "Exporting inventory records",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-data-export",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -402,6 +429,9 @@
     {
       "description": null,
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-data-import",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -418,6 +448,9 @@
     {
       "description": "RMB based module used to load test data",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-data-loader",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -434,6 +467,9 @@
     {
       "description": "Provides functionality for sending notifications",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-email",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -466,6 +502,9 @@
     {
       "description": "Provides functionality for the notification events",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-event-config",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -474,6 +513,9 @@
     {
       "description": "Provide central management for fees and fines",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-feesfines",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -482,6 +524,9 @@
     {
       "description": "Finance business logic",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-finance",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -490,6 +535,9 @@
     {
       "description": "CRUD module to manage finance-data (i.e. ledgers, funds, budgets, etc.)",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-finance-storage",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -498,6 +546,9 @@
     {
       "description": "Knowledge base for amsl's finc-config module",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-finc-config",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -506,6 +557,9 @@
     {
       "description": null,
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-gobi",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -530,6 +584,9 @@
     {
       "description": null,
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-inventory-storage",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -538,6 +595,9 @@
     {
       "description": "Provides different update schemes for populating a FOLIO Inventory Storage",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-inventory-update",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -546,6 +606,9 @@
     {
       "description": "Invoice business logic",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-invoice",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -554,6 +617,9 @@
     {
       "description": "Persistent storage of invoice data",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-invoice-storage",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -562,6 +628,9 @@
     {
       "description": "Broker communication with the EBSCO knowledge base (Java)",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-kb-ebsco-java",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -578,6 +647,9 @@
     {
       "description": "Module to handle username/password login",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-login",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -586,6 +658,9 @@
     {
       "description": "FOLIO SAML login module",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-login-saml",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -594,6 +669,9 @@
     {
       "description": "FOLIO metadata management / marccat module",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-marccat",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -610,6 +688,9 @@
     {
       "description": "Notes on all types of objects",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-notes",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -618,6 +699,9 @@
     {
       "description": "Notifications to the users",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-notify",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -626,6 +710,9 @@
     {
       "description": "Backend Module implementing the OAI-PMH metadata harvesting protocol",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-oai-pmh",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -634,6 +721,9 @@
     {
       "description": "Orders business logic module",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-orders",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -642,6 +732,9 @@
     {
       "description": "Storage (CRUD) module for Orders",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-orders-storage",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -650,6 +743,9 @@
     {
       "description": "Organizations business logic module",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-organizations",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -658,6 +754,9 @@
     {
       "description": "Persistent storage of organizations data",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-organizations-storage",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -666,6 +765,9 @@
     {
       "description": "Performs password validation and stores validation rules for specified tenant",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-password-validator",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -674,6 +776,9 @@
     {
       "description": null,
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-patron",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -682,6 +787,9 @@
     {
       "description": "FOLIO module for automated patron blocks",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-patron-blocks",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -690,6 +798,9 @@
     {
       "description": "Module to handle permissions and permissions/user associations",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-permissions",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -706,6 +817,9 @@
     {
       "description": "Backend for quickMARC editor",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-quick-marc",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -729,6 +843,9 @@
     {
       "description": null,
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-rtac",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -737,6 +854,9 @@
     {
       "description": "Sending messages through delivery channels",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-sender",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -769,6 +889,9 @@
     {
       "description": "Central list of tags that can be assigned to various objects",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-tags",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -777,6 +900,9 @@
     {
       "description": "Stores templates and generates files by using them",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-template-engine",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -785,6 +911,9 @@
     {
       "description": null,
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-user-import",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -793,6 +922,9 @@
     {
       "description": "Domain Model to Manage Users",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-users",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -801,6 +933,9 @@
     {
       "description": "Business logic \"join\" module to provide simple access to all user-centric data",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-users-bl",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -851,6 +986,13 @@
       "repoType": "other"
     },
     {
+      "description": "The personal data disclosure form template and related tools/scripts",
+      "docDirName": null,
+      "name": "personal-data-disclosure",
+      "repoLanguageHint": "other",
+      "repoType": "other"
+    },
+    {
       "description": "Complete set of Stripes modules for FOLIO",
       "docDirName": null,
       "name": "platform-complete",
@@ -881,6 +1023,9 @@
     {
       "description": "Framework allowing easy module creation based on RAML files",
       "docDirName": "doc",
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "raml-module-builder",
       "ramlDirName": "domain-models-api-interfaces/ramls",
       "repoLanguageHint": "java",
