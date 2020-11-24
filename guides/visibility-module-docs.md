@@ -51,9 +51,9 @@ and [ui-search](/source-code/map/#ui-search).
 
 ## The README introduction
 
-Provide an "Introduction" or "Overview" section of the repository's top-level README page.
+Provide an "Introduction" section (or "Overview" or "Purpose" or "Goal") of the repository's top-level README Markdown page.
 
-Especially utilise the first couple of sentences to provide a concise explanation of the features of the repository.
+Especially utilise the first couple of sentences to provide a concise explanation of the features of the module.
 
 The bot gathers the first paragraph of such a section.
 
