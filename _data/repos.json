@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-11-23T05:24:50.028389+00:00"
+    "generatedDateTime": "2020-11-24T07:12:09.081189+00:00"
   },
   "repos": [
     {
@@ -25,7 +25,7 @@
       "name": "data-import-raml-storage",
       "repoLanguageHint": "other",
       "repoType": "raml-shared",
-      "snippetIntro": "<p>This repository contains json schemas and examples for entities involved in data-import flow. It is utilized as a git submodule ('raml-storage' directory) in each of the following repositories: * <a href='https://github.com/folio-org/mod-source-record-storage'>mod-source-record-storage</a></p>"
+      "snippetIntro": "<p>This repository contains json schemas and examples for entities involved in data-import flow. It is utilized as a git submodule ('raml-storage' directory) in each of the following repositories:</p>"
     },
     {
       "description": "Library with common utilities for data-import modules",
@@ -210,7 +210,7 @@
       "name": "folio-integration-tests",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": "<p>This project is the set of integration tests based on <a href='https://github.com/intuit/karate'>karate framework</a> ## Running integration tests</p>"
+      "snippetIntro": "<p>This project is the set of integration tests based on <a href='https://github.com/intuit/karate'>karate framework</a></p>"
     },
     {
       "description": "ISBN number converter utilities",
@@ -381,7 +381,7 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "<p>FOLIO compatible circulation capabilities, including loan items from the inventory.</p>"
     },
     {
       "description": "FOLIO mod-circulation-storage",
@@ -393,7 +393,7 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "<p>FOLIO compatible persistent storage of loans, loan policies, circulation rules, requests, and fixed due date schedules</p>"
     },
     {
       "description": null,
@@ -453,7 +453,7 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This project is built using the raml-module-builder, using the PostgreSQL async client to implement some basic configuration APIs. It is highly recommended to read the <a href='https://github.com/folio-org/raml-module-builder/blob/master/README.md'>raml-module-builder README</a> since there are many features that the mod-configuration module inherits from the raml-module-builder framework.</p>"
+      "snippetIntro": "<p>Configuration module based on the raml-module-builder and a set of raml and json schemas backed by a PostgreSQL async implementation</p>"
     },
     {
       "description": "Backend CRUD storage module to support the Course Reserves functionality",
@@ -648,7 +648,7 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "<p>FOLIO compatible inventory module.</p>"
     },
     {
       "description": null,
@@ -660,7 +660,7 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "<p>FOLIO compatible inventory storage module.</p>"
     },
     {
       "description": "Provides different update schemes for populating a FOLIO Inventory Storage",
@@ -672,7 +672,7 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "<p>Mod-inventory-update is an Okapi service that can be put in front of mod-inventory-storage (Inventory Storage) for populating the storage with Instances, holdings and items according to one of multiple different update schemes.</p>"
     },
     {
       "description": "Invoice business logic",
