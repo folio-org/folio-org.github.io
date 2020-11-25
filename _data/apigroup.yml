@@ -32,6 +32,7 @@ inventory:
   modules:
     - mod-circulation
     - mod-circulation-storage
+    - mod-copycat
     - mod-inventory
     - mod-inventory-storage
     - mod-inventory-update

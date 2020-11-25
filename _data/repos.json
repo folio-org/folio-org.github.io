@@ -456,6 +456,18 @@
       "snippetIntro": "<p>Configuration module based on the raml-module-builder and a set of raml and json schemas backed by a PostgreSQL async implementation</p>"
     },
     {
+      "description": "Backend module for importing records from remote systems for copy cataloging",
+      "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
+      "name": "mod-copycat",
+      "ramlDirName": "ramls",
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p><a href='https://github.com/folio-org/mod-copycat'>mod-copycat</a> is a FOLIO  module that assists in Copy cataloging. It imports records from remote systems using Z39.50.</p>"
+    },
+    {
       "description": "Backend CRUD storage module to support the Course Reserves functionality",
       "docDirName": null,
       "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
