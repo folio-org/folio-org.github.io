@@ -201,6 +201,14 @@ mod-circulation-storage:
       - staff-slips
     ramlutil: ramls/raml-util
 
+mod-copycat:
+  - label: null
+    version1: true
+    directory: ramls
+    files:
+      - copycat
+    ramlutil: ramls/raml-util
+
 mod-inventory:
   - label: null
     version1: true
