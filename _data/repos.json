@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-11-02T06:55:41.942930+00:00"
+    "generatedDateTime": "2020-11-24T07:12:09.081189+00:00"
   },
   "repos": [
     {
@@ -8,35 +8,40 @@
       "docDirName": null,
       "name": "acq-models",
       "repoLanguageHint": "other",
-      "repoType": "raml-shared"
+      "repoType": "raml-shared",
+      "snippetIntro": ""
     },
     {
       "description": "The library to handle events from data-import",
       "docDirName": null,
       "name": "data-import-processing-core",
       "repoLanguageHint": "java",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>Core infrastructure for event processing for the DataImport.</p>"
     },
     {
       "description": "Repository for data-import json schemas centralized for reusability",
       "docDirName": null,
       "name": "data-import-raml-storage",
       "repoLanguageHint": "other",
-      "repoType": "raml-shared"
+      "repoType": "raml-shared",
+      "snippetIntro": "<p>This repository contains json schemas and examples for entities involved in data-import flow. It is utilized as a git submodule ('raml-storage' directory) in each of the following repositories:</p>"
     },
     {
       "description": "Library with common utilities for data-import modules",
       "docDirName": null,
       "name": "data-import-utils",
       "repoLanguageHint": "java",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>Utilities for DataImport modules.</p>"
     },
     {
       "description": "FOLIO Documentation",
       "docDirName": null,
       "name": "docs",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>This is the documentation for FOLIO apps. If working with this Hugo site locally, be sure to execute <code>git submodule update --init --recursive</code> before attempting to build with Hugo for the first time.</p>"
     },
     {
       "description": "a shared library/framework for edge APIs",
@@ -44,7 +49,8 @@
       "name": "edge-common",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-edge"
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>Common/Shared library for Edge APIs.</p>"
     },
     {
       "description": null,
@@ -52,7 +58,8 @@
       "name": "edge-lti-courses",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-edge"
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>The purpose of this edge module is to connect LMS such as Sakai and Blackboard (LTI Platforms) to Folio via the <a href='https://www.imsglobal.org/lti-advantage-overview'>LTI Advantage</a> protocol for the purposes of sharing the course reserves stored in Folio.</p>"
     },
     {
       "description": "Edge API for mod-ncip",
@@ -60,7 +67,8 @@
       "name": "edge-ncip",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-edge"
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>Edge API for mod-ncip</p>"
     },
     {
       "description": "Edge API for Metadata Harvesting",
@@ -68,7 +76,8 @@
       "name": "edge-oai-pmh",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-edge"
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>Edge API for Metadata Harvesting (<a href='http://www.openarchives.org/OAI/openarchivesprotocol.html'>OAI-PMH Version 2.0</a>)</p>"
     },
     {
       "description": null,
@@ -76,7 +85,8 @@
       "name": "edge-orders",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-edge"
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between 3rd party purchasing systems/vendors and FOLIO.  More specifically, the initial implementation was built with EBSCO's GOBI (Global Online Bibliographic Interface) service in mind.</p>"
     },
     {
       "description": null,
@@ -84,7 +94,8 @@
       "name": "edge-patron",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-edge"
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>Edge API to interface with FOLIO for 3rd party discovery services to allow patrons to perform self-service actions (place holds, renewals, etc)</p>"
     },
     {
       "description": "UUID resolver",
@@ -92,7 +103,8 @@
       "name": "edge-resolver",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-edge"
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between external reporting and analytics systems and FOLIO by allowing these systems to resolve FOLIO UUIDs, such as a FOLIO user id, thereby acquiring a richer set of data.</p>"
     },
     {
       "description": " Edge API for RTAC (RealTime Availability Check)",
@@ -100,7 +112,8 @@
       "name": "edge-rtac",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-edge"
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>Edge API to interface with FOLIO for 3rd party discovery services to determine holdings availability.</p>"
     },
     {
       "description": "3M Standard Interchange Protocol (SIP) support in FOLIO",
@@ -108,168 +121,192 @@
       "name": "edge-sip2",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-edge"
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between self service circulation and patron services stations and FOLIO by allowing these systems to issue requests and receive responses in Standard Interchange Protocol v2 (SIP2). These requests will be serviced by FOLIO APIs and the responses will be based on FOLIO results for all supported (TBD) SIP2 commands.</p>"
     },
     {
       "description": "Stripes's .eslintrc as an extensible shared config",
       "docDirName": null,
       "name": "eslint-config-stripes",
       "repoLanguageHint": "node",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "description": "FOLIO reports and analytics",
       "docDirName": null,
       "name": "folio-analytics",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>This repository contains reports and other analytics developed for FOLIO and designed to run on the <a href='https://github.com/folio-org/ldp'>Library Data Platform</a>.  At present most of the content here consists of SQL reports developed by the FOLIO reporting community and based on the requirements of <a href='https://www.folio.org/community/support/'>FOLIO partner libraries</a>.  For more information about FOLIO reporting, see the <a href='https://wiki.folio.org/display/RPT/'>FOLIO Reporting Special Interest Group</a>.</p>"
     },
     {
       "description": "Ansible playbook for FOLIO",
       "docDirName": "doc",
       "name": "folio-ansible",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "description": "FOLIO postman collections for backend modules",
       "docDirName": null,
       "name": "folio-api-tests",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "description": "Store and maintain custom fields",
       "docDirName": null,
       "name": "folio-custom-fields",
       "repoLanguageHint": "java",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>The FOLIO module to store and maintain custom fields. The folio-custom-fields is designed to be a library that any module can add and use to store custom fields definitions as well as their values.</p>"
     },
     {
       "description": "Dependency Injection support for FOLIO backend modules",
       "docDirName": null,
       "name": "folio-di-support",
       "repoLanguageHint": "java",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>Dependency Injection support for FOLIO backend modules</p>"
     },
     {
       "description": "Serves up GraphiQL for use with FOLIO",
       "docDirName": null,
       "name": "folio-graphiql",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "description": "Helm charts modules repository",
       "docDirName": null,
       "name": "folio-helm",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>FOLIO Helm charts modules repository.</p>"
     },
     {
       "description": "Client library to HoldingsIQ API",
       "docDirName": null,
       "name": "folio-holdingsiq-client",
       "repoLanguageHint": "java",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>This is a client library to RM API</p>"
     },
     {
       "description": "Runbooks for FOLIO installation",
       "docDirName": null,
       "name": "folio-install",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>A collection of runbooks for FOLIO installation.</p>"
     },
     {
       "description": "The set of integration tests, based on karate framework",
       "docDirName": null,
       "name": "folio-integration-tests",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>This project is the set of integration tests based on <a href='https://github.com/intuit/karate'>karate framework</a></p>"
     },
     {
       "description": "ISBN number converter utilities",
       "docDirName": null,
       "name": "folio-isbn-util",
       "repoLanguageHint": "java",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>ISBN number converter utilities.</p>"
     },
     {
       "description": "Liquibase utilities",
       "docDirName": null,
       "name": "folio-liquibase-util",
       "repoLanguageHint": "java",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>Liquibase schema migration utilities.</p>"
     },
     {
       "description": "Website for FOLIO open source development dev.folio.org",
       "docDirName": null,
       "name": "folio-org.github.io",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "description": "Jenkins pipelines to test FOLIO performance and integration",
       "docDirName": null,
       "name": "folio-perf-test",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "description": "Examples of FOLIO modules",
       "docDirName": "doc",
       "name": "folio-sample-modules",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>This project contains examples of FOLIO modules (currently a server-side Vert.x-based module, but more, e.g. a UI/front-end module will come later), and some general information about writing, packaging and describing modules.</p>"
     },
     {
       "description": "Library with general purpose classes to help with FOLIO backend service development",
       "docDirName": null,
       "name": "folio-service-tools",
       "repoLanguageHint": "java",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>Library with general purpose classes to help with FOLIO backend service development and testing</p>"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "folio-test-env",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p><a href='https://github.com/folio-org/folio-test-env/blob/master/TESTING.md'>Basic instructions</a> and bootstrap files for setting up a test instance of FOLIO.</p>"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "folio-testing-platform",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "description": "Various tools and support glue for FOLIO CI",
       "docDirName": null,
       "name": "folio-tools",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "description": "Shared library for generating MARC records on-the-fly",
       "docDirName": null,
       "name": "generate-marc-utils",
       "repoLanguageHint": "java",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>Shared library for generating MARC records on-the-fly</p>"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "inventory-sample-data",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "description": "Shared library for Jenkins Pipeline",
       "docDirName": null,
       "name": "jenkins-pipeline-libs",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "description": "Provide asynchronous event service (AES)",
@@ -277,7 +314,8 @@
       "name": "mod-aes",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>The mod-aes module implements FOLIO asynchronous event service (AES). Currently, it acts as a filter to capture traffic as JSON messages. It then routes the messages to different Kafka topic according to JSON path based routing rules that are stored in mod-config.</p>"
     },
     {
       "description": "A FOLIO Module for handling the server side work needed for the ERM system",
@@ -285,7 +323,8 @@
       "name": "mod-agreements",
       "ramlDirName": null,
       "repoLanguageHint": "gradle",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Mod-Agreements is a FOLIO module to manage agreements which control an institutions access to resources. Normally, this will be  subscribed access to packages of electronic resources, although the aim is to make the affordances offered by mod-agreements as general as possible.</p>"
     },
     {
       "description": "Module for managing audit data",
@@ -293,7 +332,8 @@
       "name": "mod-audit",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>The mod-audit module provides API to access and modify audit data.</p>"
     },
     {
       "description": "Module for implementing Okapi Pre and Post filters to capture audit data",
@@ -301,7 +341,8 @@
       "name": "mod-audit-filter",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>The audit-filter module implements Okapi PRE and POST filters to capture audit data. It then calls mod-audit to persist the data.</p>"
     },
     {
       "description": "Module for filtering requests based on JWT tokens",
@@ -309,15 +350,20 @@
       "name": "mod-authtoken",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>This module is responsible for filtering all proxy traffic and checking for a valid token. In addition, it is responsible for retrieving the permissions for a given user and making decisions regarding access based on user permissions and defined requirements for a given path. It provides a token creation endpoint that privileged modules (such as Authentication) may make use of.</p>"
     },
     {
       "description": null,
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-calendar",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Module to provide calendar functionalities for FOLIO systems.</p>"
     },
     {
       "description": null,
@@ -325,7 +371,8 @@
       "name": "mod-camunda",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": ""
     },
     {
       "description": "FOLIO mod-circulation",
@@ -333,79 +380,116 @@
       "name": "mod-circulation",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>FOLIO compatible circulation capabilities, including loan items from the inventory.</p>"
     },
     {
       "description": "FOLIO mod-circulation-storage",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-circulation-storage",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>FOLIO compatible persistent storage of loans, loan policies, circulation rules, requests, and fixed due date schedules</p>"
     },
     {
       "description": null,
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-codex-ekb",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Codex wrapper for the EBSCO knowledge base.</p>"
     },
     {
       "description": "Codex wrapper for local inventory",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-codex-inventory",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Codex Wrapper for Inventory</p>"
     },
     {
       "description": "Codex mock module - for testing and development",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-codex-mock",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Codex mock module - for testing and development</p>"
     },
     {
       "description": "Codex Multiplexer backend module",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-codex-mux",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Codex Multiplexer backend module</p>"
     },
     {
       "description": "Configuration module based on the raml-module-builder and a set of raml and json schemas backed by a postgresdb async implementation",
       "docDirName": null,
+      "hasDbSchema": "blob/master/mod-configuration-server/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-configuration",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Configuration module based on the raml-module-builder and a set of raml and json schemas backed by a PostgreSQL async implementation</p>"
     },
     {
       "description": "Backend CRUD storage module to support the Course Reserves functionality",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-courses",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Backend CRUD storage module to support the Course Reserves functionality</p>"
     },
     {
       "description": "Exporting inventory records",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-data-export",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>FOLIO data export module.</p>"
     },
     {
       "description": null,
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-data-import",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>FOLIO data import module.</p>"
     },
     {
       "description": "Data import converter storage",
@@ -413,15 +497,20 @@
       "name": "mod-data-import-converter-storage",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Data Import Converter Storage.</p>"
     },
     {
       "description": "RMB based module used to load test data",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-data-loader",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>RMB-based module used to load test data.</p>"
     },
     {
       "description": "Glint server module wrapper for FOLIO",
@@ -429,15 +518,20 @@
       "name": "mod-datasets",
       "ramlDirName": null,
       "repoLanguageHint": "other",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": ""
     },
     {
       "description": "Provides functionality for sending notifications",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-email",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>The module provides the role of delivering messages using SMTP server to send email. This module use <code>mod-configuration</code> to get connection parameters.</p>"
     },
     {
       "description": "Store ERM usage statistics and access data to these statistics",
@@ -445,7 +539,8 @@
       "name": "mod-erm-usage",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": ""
     },
     {
       "description": "Library containing models and clients for COUNTER/SUSHI standard",
@@ -453,7 +548,8 @@
       "name": "mod-erm-usage-counter",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Models, Clients and Utilities for COUNTER/SUSHI standard</p>"
     },
     {
       "description": "Harvest ERM usage statistics",
@@ -461,55 +557,80 @@
       "name": "mod-erm-usage-harvester",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Module for harvesting counter reports.</p>"
     },
     {
       "description": "Provides functionality for the notification events",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-event-config",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>The module provides information describing the notification events. The event configuration describes the event name, delivery channels, and contain references to templates for each delivery channel.</p>"
     },
     {
       "description": "Provide central management for fees and fines",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-feesfines",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Module to provide central feesfines management for FOLIO systems.</p>"
     },
     {
       "description": "Finance business logic",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-finance",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>This is the user-facing, business logic module for finances, which is comprised of this module and mod-finance-storage.</p>"
     },
     {
       "description": "CRUD module to manage finance-data (i.e. ledgers, funds, budgets, etc.)",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-finance-storage",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>This RMB-module is responsible for the persistence of finance-related data (i.e. funds, ledgers, transactions, etc.)</p>"
     },
     {
       "description": "Knowledge base for amsl's finc-config module",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-finc-config",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Backend module for finc-config and finc-select.</p>"
     },
     {
       "description": null,
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-gobi",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>GOBI\u00ae (Global Online Bibliographic Information) is the leading web-based acquisitions tool for finding, ordering and managing e-books and print books for libraries. This module allows GOBI initiated orders to be fulfilled by FOLIO.</p>"
     },
     {
       "description": "FOLIO module for executing GraphQL queries",
@@ -517,7 +638,8 @@
       "name": "mod-graphql",
       "ramlDirName": null,
       "repoLanguageHint": "node",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p><code>mod-graphql</code> is a <a href='https://github.com/folio-org/okapi/blob/master/doc/guide.md#architecture'>FOLIO module</a>, written in Node.js, that provides a <a href='https://graphql.org/'>GraphQL</a> service by HTTP POST to <code>/graphql/</code>. It can be interrogated using any GraphQL client library, such as <a href='https://github.com/apollographql/apollo-client/'>Apollo</a>, and the graph it provides is auto-generated from the API description files (<a href='https://raml.org/'>RAML</a> and <a href='https://json-schema.org/'>JSON Schema</a>) of the modules that it's providing the GraphQL API for.</p>"
     },
     {
       "description": null,
@@ -525,47 +647,68 @@
       "name": "mod-inventory",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>FOLIO compatible inventory module.</p>"
     },
     {
       "description": null,
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-inventory-storage",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>FOLIO compatible inventory storage module.</p>"
     },
     {
       "description": "Provides different update schemes for populating a FOLIO Inventory Storage",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-inventory-update",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Mod-inventory-update is an Okapi service that can be put in front of mod-inventory-storage (Inventory Storage) for populating the storage with Instances, holdings and items according to one of multiple different update schemes.</p>"
     },
     {
       "description": "Invoice business logic",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-invoice",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>This is the Invoice business logic module.</p>"
     },
     {
       "description": "Persistent storage of invoice data",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-invoice-storage",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>This is the Invoice storage module.</p>"
     },
     {
       "description": "Broker communication with the EBSCO knowledge base (Java)",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-kb-ebsco-java",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Broker communication with the EBSCO knowledge base (Java)</p>"
     },
     {
       "description": "FOLIO service module - licenses",
@@ -573,31 +716,44 @@
       "name": "mod-licenses",
       "ramlDirName": "ramls",
       "repoLanguageHint": "gradle",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>FOLIO service module - licenses.</p>"
     },
     {
       "description": "Module to handle username/password login",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-login",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>This module is responsible for verifying the user's identity and issuing a valid JWT that can be used for system access. The implementation of this module may vary (username/password, SAML, OAuth, etc.), and it is possible for more than one Authentication module to exist in a running system. The default implementation uses a simple username and password for authentication.</p>"
     },
     {
       "description": "FOLIO SAML login module",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-login-saml",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>This module provides SAML2 SSO functionality for FOLIO.</p>"
     },
     {
       "description": "FOLIO metadata management / marccat module",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-marccat",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>FOLIO Cataloguing module.</p>"
     },
     {
       "description": "NISO Circulation Interchange Protocol (NCIP)  support in FOLIO",
@@ -605,95 +761,140 @@
       "name": "mod-ncip",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>NISO Circulation Interchange Protocol (NCIP)  support in FOLIO</p>"
     },
     {
       "description": "Notes on all types of objects",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-notes",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Notes on all types of objects</p>"
     },
     {
       "description": "Notifications to the users",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-notify",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Notifications to the users</p>"
     },
     {
       "description": "Backend Module implementing the OAI-PMH metadata harvesting protocol",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-oai-pmh",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Backend Module implementing the Open Archives Initiative Protocol for Metadata Harvesting (<a href='http://www.openarchives.org/OAI/openarchivesprotocol.html'>OAI-PMH Version 2.0</a>), but providing more RESTful API than described in the specification.  At the core places the /oai/records endpoint which accepts verb name as main parameter which defines what type of request is and which handler should ve invoked for processing the request.</p>"
     },
     {
       "description": "Orders business logic module",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-orders",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>This is the Orders business logic module.</p>"
     },
     {
       "description": "Storage (CRUD) module for Orders",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-orders-storage",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>This is the Orders storage module.</p>"
     },
     {
       "description": "Organizations business logic module",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-organizations",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>This is the Organizations business logic module.</p>"
     },
     {
       "description": "Persistent storage of organizations data",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-organizations-storage",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>This is the Organizations storage module.</p>"
     },
     {
       "description": "Performs password validation and stores validation rules for specified tenant",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-password-validator",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>The module provides a default rule set for a tenant and functionality to manage them via REST API and also allows to use a validation flow for a user password.</p>"
     },
     {
       "description": null,
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-patron",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Microservice to allow 3rd party discovery services to perform FOLIO patron actions via the discovery service's UI.</p>"
     },
     {
       "description": "FOLIO module for automated patron blocks",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-patron-blocks",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>FOLIO module for automated patron blocks</p>"
     },
     {
       "description": "Module to handle permissions and permissions/user associations",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-permissions",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>This module stores permissions and associations between permissions and users. It also maintains a hierarchy of permissions and sub-permissions, allowing for permissions to act as roles, rather than simple bits. It is used primarily by the Authtoken module, though it is possible that some Authentication implementations may have reason to make calls to the Permissions module as well.</p>"
     },
     {
       "description": "Publisher-subscriber module to provide event-driven approach",
@@ -701,15 +902,20 @@
       "name": "mod-pubsub",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>The mod-pubsub module is responsible for maintaining the registration of EventTypes and for coordinating distribution of Events to the appropriate Subscribers.  Folio modules may publish Events and/or subscribe to Events of specific EventTypes. It is the responsibility of Publisher modules to define the EventTypes that they will provide,  which is accomplished through the use of an EventDescriptor. Note that it is possible for multiple Publishers to register for the same EventType.  However, the EventType may only be defined once. Subscribing modules will register themselves to specific EvenTypes by providing a URI that will be invoked by the event manager when pushing events of matching EvenTypes.  Event subscription is done on a per tenant basis.</p>"
     },
     {
       "description": "Backend for quickMARC editor",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-quick-marc",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>API for quickMARC - in-app editor for MARC records in SRS.</p>"
     },
     {
       "description": null,
@@ -717,30 +923,40 @@
       "name": "mod-receiving",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Backend module with business logic for receiving receive and checking-in materials that have been  ordered.</p>"
     },
     {
       "description": "Maven archetype used to generate an RMB-based module",
       "docDirName": null,
       "name": "mod-rmb-template",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>This is a Maven archetype used to generate an RMB-based server-side module. Install this locally if you wish to build such a module.</p>"
     },
     {
       "description": null,
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-rtac",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Microservice to allow 3rd party discovery services to determine the availability of FOLIO inventory.</p>"
     },
     {
       "description": "Sending messages through delivery channels",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-sender",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Sending messages through delivery channels</p>"
     },
     {
       "description": null,
@@ -748,7 +964,8 @@
       "name": "mod-source-record-manager",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>FOLIO source record manager module.</p>"
     },
     {
       "description": "Persistent source record storage",
@@ -756,7 +973,8 @@
       "name": "mod-source-record-storage",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>FOLIO compatible source record storage module.</p>"
     },
     {
       "description": "Okapi Spring module example",
@@ -764,47 +982,68 @@
       "name": "mod-spring-sample",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": ""
     },
     {
       "description": "Central list of tags that can be assigned to various objects",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-tags",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Central list of tags that can be assigned to various objects. Tags are simple strings like 'urgent', or 'important'. These are kept as an array of string values in the various objects that use them. This module provides a centralized repository of allowed values, which can be used for populating pull-down lists etc. The coupling is intentionally rather weak, it will be up to the UI to enforce the use of authorized tags, or not, as each library will want, and/or insert new tags into this module when the user uses a new one.</p>"
     },
     {
       "description": "Stores templates and generates files by using them",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-template-engine",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>This module is responsible for storing templates and generating text, html, xml, doc, docx etc from the template. Generated payload is described by meta information which contains info about format, size and date. Supports localization of templates.</p>"
     },
     {
       "description": null,
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-user-import",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>This module is responsible for importing new or already existing users into FOLIO.</p>"
     },
     {
       "description": "Domain Model to Manage Users",
       "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
       "name": "mod-users",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Module to provide central user management for FOLIO systems.</p>"
     },
     {
       "description": "Business logic \"join\" module to provide simple access to all user-centric data",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "mod-users-bl",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Business logic 'join' module to provide simple access to all user-centric data.</p>"
     },
     {
       "description": null,
@@ -812,14 +1051,16 @@
       "name": "mod-workflow",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-mod"
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Introduction ...  ## Additional information</p>"
     },
     {
       "description": "A Z39.50 server for FOLIO bibliographic data",
       "docDirName": "doc",
       "name": "Net-Z3950-FOLIO",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p><a href='https://github.com/folio-org/Net-Z3950-FOLIO/blob/master/bin/z2folio'><code>z2folio</code></a> is a Z39.50 server for FOLIO bibliographic and holdings data, supporting record retrieval in USMARC, OPAC, XML and JSON formats. The functionality is all provided by <a href='https://github.com/folio-org/Net-Z3950-FOLIO/blob/master/lib/Net/Z3950/FOLIO.pm'>the <code>Net::Z3950::FOLIO</code> library</a>, which is also part of this distribution. It is written in Perl, and follows standard Perl-module conventions.</p>"
     },
     {
       "description": "Okapi  core and modules",
@@ -827,603 +1068,700 @@
       "name": "okapi",
       "ramlDirName": "okapi-core/src/main/raml",
       "repoLanguageHint": "java",
-      "repoType": "backend-infrastructure"
+      "repoType": "backend-infrastructure",
+      "snippetIntro": ""
     },
     {
       "description": "Okapi command-line interface",
       "docDirName": null,
       "name": "okapi-cli",
       "repoLanguageHint": "java",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>Okapi command-line interface (yet another one)</p>"
     },
     {
       "description": "Experimental Debian Packaging Repo for Okapi",
       "docDirName": "doc",
       "name": "okapi-debian",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "description": "Repository that houses tools and performance testing scripts",
       "docDirName": null,
       "name": "perf-testing",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>Carrier is an open source continuous performance testing toolkit. It consists of tools and practices to integrate non-functional tests into delivery pipeline and organize effective feedback loop.</p>"
+    },
+    {
+      "description": "The personal data disclosure form template and related tools/scripts",
+      "docDirName": null,
+      "name": "personal-data-disclosure",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": "<p>The purpose of this repository is to provide a personal data disclosure form template and related tools/scripts.  Each module will specialize and store this form in the top level of their git repository.  The form is a mechanism to disclose the types of personal data stored by each module.  This information enables those hosting FOLIO to better manage and comply with various privacy laws and restrictions, e.g. GDPR, etc.</p>"
     },
     {
       "description": "Complete set of Stripes modules for FOLIO",
       "docDirName": null,
       "name": "platform-complete",
       "repoLanguageHint": "other",
-      "repoType": "platform"
+      "repoType": "platform",
+      "snippetIntro": "<p>This is the 'complete' Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes-core</code> and of any Stripes modules you wish to make available as part of this platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>"
     },
     {
       "description": "Core set of Stripes modules for FOLIO",
       "docDirName": null,
       "name": "platform-core",
       "repoLanguageHint": "other",
-      "repoType": "platform"
+      "repoType": "platform",
+      "snippetIntro": "<p>This is the 'core' Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes-core</code> and of any Stripes modules you wish to make available as part of the 'core' platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>"
     },
     {
       "description": "FOLIO Stripes platform for ERM modules",
       "docDirName": null,
       "name": "platform-erm",
       "repoLanguageHint": "other",
-      "repoType": "platform"
+      "repoType": "platform",
+      "snippetIntro": "<p>This is the ERM Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes-core</code> and of any Stripes modules you wish to make available as part of the ERM platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>"
     },
     {
       "description": "Repository of RAML files, including JSON schemas, traits and resource types centralized for re-usability",
       "docDirName": null,
       "name": "raml",
       "repoLanguageHint": "other",
-      "repoType": "raml-shared"
+      "repoType": "raml-shared",
+      "snippetIntro": "<p>Repository of RAML traits and resource type files.</p>"
     },
     {
       "description": "Framework allowing easy module creation based on RAML files",
       "docDirName": "doc",
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "raml-module-builder",
       "ramlDirName": "domain-models-api-interfaces/ramls",
       "repoLanguageHint": "java",
-      "repoType": "backend-infrastructure"
+      "repoType": "backend-infrastructure",
+      "snippetIntro": "<p>This documentation includes information about the Raml-Module-Builder (RMB) framework and examples of how to use it.</p>"
     },
     {
       "description": "ERM schema documentation",
       "docDirName": null,
       "name": "reporting-erm-doc",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "description": "RFCs for changes to the FOLIO platform",
       "docDirName": null,
       "name": "rfcs",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<ul>\n<li>Folio RFCs are stored as MarkDown documents as part of the GitHub RFC Repo.</li>\n</ul>"
     },
     {
       "description": "Spring module core libraries for Spring development with Okapi",
       "docDirName": null,
       "name": "spring-module-core",
       "repoLanguageHint": "java",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>Spring module core libraries for Spring development with Okapi.</p>"
     },
     {
       "description": "UI framework for building front-end FOLIO modules",
       "docDirName": "doc",
       "name": "stripes",
       "repoLanguageHint": "node",
-      "repoType": "stripes"
+      "repoType": "stripes",
+      "snippetIntro": "<p>Stripes is a toolkit for building single-page web applications that FOLIO UI modules can run in.  In addition to being the home of Stripes <a href='https://github.com/folio-org/stripes/blob/master/doc/stripes-framework.md'>framework</a>, this repository serves as a hub for shared Stripes documentation.</p>"
     },
     {
       "description": "Stripes components that are specific to use cases that arise in Acquisitions-related modules",
       "docDirName": null,
       "name": "stripes-acq-components",
       "repoLanguageHint": "node",
-      "repoType": "stripes"
+      "repoType": "stripes",
+      "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>"
     },
     {
       "description": "Command line interface for creating, building, and testing Stripes UI modules.",
       "docDirName": "doc",
       "name": "stripes-cli",
       "repoLanguageHint": "node",
-      "repoType": "stripes"
+      "repoType": "stripes",
+      "snippetIntro": "<p>Stripes CLI is a command line interface to facilitate the creation, development, building, and testing of Stripes UI modules.</p>"
     },
     {
       "description": "A component library for Stripes",
       "docDirName": "docs",
       "name": "stripes-components",
       "repoLanguageHint": "node",
-      "repoType": "stripes"
+      "repoType": "stripes",
+      "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>"
     },
     {
       "description": "Declarative REST data access for React components, part of the FOLIO project",
       "docDirName": "doc",
       "name": "stripes-connect",
       "repoLanguageHint": "node",
-      "repoType": "stripes"
+      "repoType": "stripes",
+      "snippetIntro": "<p>Stripes Connect provides essentially one service: the ability to upgrade a regular React component into a Connected Component. This is done by importing the <code>connect()</code> method from <code>stripes-connect</code>, defining a data manifest, and exporting not the React component itself but the result of wrapping it in a call to <code>connect()</code>:</p>"
     },
     {
       "description": "The core of Stripes, an opinionated and modular platform for React components consuming REST data and the UI framework for the FOLIO project",
       "docDirName": "doc",
       "name": "stripes-core",
       "repoLanguageHint": "node",
-      "repoType": "stripes"
+      "repoType": "stripes",
+      "snippetIntro": "<p>Stripes is a toolkit for building single-page web applications that FOLIO UI modules can run in. UI modules are made up of <a href='https://facebook.github.io/react/'>React</a> components, some of which will be connected to back-end services provided by <a href='https://github.com/folio-org/okapi'>Okapi</a>. Each module has a 'type' which indicates how it functions within the application. At the moment, the only 'type' is 'app' which provides a top-level component to render into a large content area.</p>"
     },
     {
       "description": "Stripes components that are specific to use cases that arise in ui-data-import and ui-data-export modules",
       "docDirName": null,
       "name": "stripes-data-transfer-components",
       "repoLanguageHint": "node",
-      "repoType": "stripes"
+      "repoType": "stripes",
+      "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>"
     },
     {
       "description": "Stripes platform for building the demo site",
       "docDirName": null,
       "name": "stripes-demo-platform",
       "repoLanguageHint": "other",
-      "repoType": "stripes"
+      "repoType": "stripes",
+      "snippetIntro": ""
     },
     {
       "description": "Stripes components that are specific to use cases that arise in ERM-related modules",
       "docDirName": null,
       "name": "stripes-erm-components",
       "repoLanguageHint": "node",
-      "repoType": "stripes"
+      "repoType": "stripes",
+      "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>"
     },
     {
       "description": "A Final Form Wrapper for Stripes",
       "docDirName": null,
       "name": "stripes-final-form",
       "repoLanguageHint": "node",
-      "repoType": "stripes"
+      "repoType": "stripes",
+      "snippetIntro": ""
     },
     {
       "description": "A redux-form wrapper for Stripes",
       "docDirName": null,
       "name": "stripes-form",
       "repoLanguageHint": "node",
-      "repoType": "stripes"
+      "repoType": "stripes",
+      "snippetIntro": ""
     },
     {
       "description": "Configuration for a sample platform and to run a local Stripes UI development server",
       "docDirName": null,
       "name": "stripes-sample-platform",
       "repoLanguageHint": "other",
-      "repoType": "stripes"
+      "repoType": "stripes",
+      "snippetIntro": ""
     },
     {
       "description": null,
       "docDirName": null,
       "name": "stripes-smart-components",
       "repoLanguageHint": "node",
-      "repoType": "stripes"
+      "repoType": "stripes",
+      "snippetIntro": "<p>A suite of smart components. Each communicates with an Okapi web-service in order to provide the facilities that it renders.</p>"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "stripes-template-editor",
       "repoLanguageHint": "node",
-      "repoType": "stripes"
+      "repoType": "stripes",
+      "snippetIntro": "<p>This is a NPM module to aid with embedding the Quill editor in <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> applications for building templates with token substitution.</p>"
     },
     {
       "description": null,
       "docDirName": "doc",
       "name": "stripes-testing",
       "repoLanguageHint": "node",
-      "repoType": "stripes"
+      "repoType": "stripes",
+      "snippetIntro": "<p>stripes-testing is a toolkit for building integration tests against Stripes UI modules and platforms. There are no tests in this repository; instead they exist in the platforms they exercise (e.g. platform-core). Tests that operate only a single app (unit tests) should be written with the <a href='https://github.com/folio-org/stripes/blob/master/doc/bigtest.md'>BigTest</a> toolkit instead.</p>"
     },
     {
       "description": "A library of utility functions to support Stripes modules",
       "docDirName": null,
       "name": "stripes-util",
       "repoLanguageHint": "node",
-      "repoType": "stripes"
+      "repoType": "stripes",
+      "snippetIntro": "<p>A library of utility functions to support Stripes modules.</p>"
     },
     {
       "description": "Stripes UI module: Management of Acquisition unit records",
       "docDirName": null,
       "name": "ui-acquisition-units",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>The ui-acquisition-units repo is used for the management of Acquisition unit records in FOLIO. It includes summary information and details regarding the Acquisition unit interaction and preferences.</p>"
     },
     {
       "description": "Stripes front end module for ERM module",
       "docDirName": null,
       "name": "ui-agreements",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>The Agreements UI Module, or <code>ui-agreements</code>, is a Stripes UI module used for management of various E-resource tasks including handling agreements and viewing available E-resources.</p>"
     },
     {
       "description": "Stripes UI app module template",
       "docDirName": null,
       "name": "ui-app-template",
       "repoLanguageHint": "node",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run <strong>uiAppName</strong> and start your development.</p>"
     },
     {
       "description": "Stripes UI module: Viewing audit trails",
       "docDirName": null,
       "name": "ui-audit",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>Stripes UI module- Audit app  visually conveys the idea of examining past activity, organized by different points of view: user; resource; circulation etc</p>"
     },
     {
       "description": "FOLIO institutional calendar UI module",
       "docDirName": null,
       "name": "ui-calendar",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for institutional calendar functions.</p>"
     },
     {
       "description": "Stripes UI for checking in items with simulated scans",
       "docDirName": null,
       "name": "ui-checkin",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for checking items in with simulated scans of barcodes</p>"
     },
     {
       "description": "Stripes UI for checking out items with simulated scans",
       "docDirName": null,
       "name": "ui-checkout",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for checking items out with simulated scans of patron card and item barcode.</p>"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-circulation",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for Circulation management.</p>"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-circulation-log",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-circulation-log and start your development.</p>"
     },
     {
       "description": "Course reserves UI for FOLIO",
       "docDirName": "doc",
       "name": "ui-courses",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>The Course Reserves UI Module, or <code>ui-courses</code>, is a Stripes UI module used for maintaining information about courses, and associated course reserves with them. (A 'Stripes UI module' is an NPM module that adheres to certain conventions that allow it to function within the <a href='https://github.com/folio-org/stripes/blob/master/README.md'>Stripes UI framework</a> that is part of FOLIO.)</p>"
     },
     {
       "description": "UI module: data export managing",
       "docDirName": null,
       "name": "ui-data-export",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>Application for data export functionality.</p>"
     },
     {
       "description": "UI module: managing batch loader feature",
       "docDirName": null,
       "name": "ui-data-import",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>Application for Data Import functionality</p>"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-datasets",
       "repoLanguageHint": "other",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": ""
     },
     {
       "description": "Stripes UI module: developer facilities",
       "docDirName": null,
       "name": "ui-developer",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for managing developer settings. This will not be included in production deployments.</p>"
     },
     {
       "description": "FOLIO eholdings App",
       "docDirName": "docs",
       "name": "ui-eholdings",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>The <code>ui-eholdings</code> module adds the ability to manage electronic holdings in FOLIO. The first supported knowledge base is from EBSCO.</p>"
     },
     {
       "description": "Stripes App for ERM Comparison",
       "docDirName": null,
       "name": "ui-erm-comparisons",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>The ERM comparisons module, or <code>ui-erm-comparisons</code>, is a Stripes UI module used for comparison of 'Agreement' and/or 'Package' objects defined by the <code>ui-agreements</code> (Agreements) module.</p>"
     },
     {
       "description": "Stripes UI for managing ERM usage statistics",
       "docDirName": "docs",
       "name": "ui-erm-usage",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>The ERM-Usage UI Module, or <code>ui-erm-usage</code>, is a Stripes UI module for managing usage statistics. It allows to enter credentials for accessing usage data providers. These credentials are used by the backend module <a href='https://github.com/folio-org/mod-erm-usage'>mod-erm-usage</a> to harvest usage statistics periodically.</p>"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-finance",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>The ui-finance allows for the management of ledgers, funds, and budgets in FOLIO. It includes a dashboard that provides a snapshot of your account totals for the current fiscal year across ledgers and funds.</p>"
     },
     {
       "description": "UI finc-config module ",
       "docDirName": null,
       "name": "ui-finc-config",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for administrating metadata sources and collections for the finc user community.</p>"
     },
     {
       "description": "finc-select UI module ",
       "docDirName": null,
       "name": "ui-finc-select",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for the selection of metadata sources and collections for the finc user community.</p>"
     },
     {
       "description": "UI module for administrating instances",
       "docDirName": null,
       "name": "ui-inventory",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for administrating locally created instances, holdings records and items.</p>"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-invoice",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-invoice and start your development.</p>"
     },
     {
       "description": "FOLIO front end module for licenses",
       "docDirName": null,
       "name": "ui-licenses",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>The Licenses UI Module, or <code>ui-licenses</code>, is a Stripes UI module used for management of licenses</p>"
     },
     {
       "description": "FOLIO App Module to manage the local KB for ERM",
       "docDirName": null,
       "name": "ui-local-kb-admin",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>The Local KB admin UI Module, or <code>ui-local-kb-admin</code>, is a Stripes UI module used for management of the local KB used for ERM tasks handled by the <code>ui-agreements</code> (Agreements) module.</p>"
     },
     {
       "description": "FOLIO UI module to configure settings for the Course Reserves LTI Tool",
       "docDirName": null,
       "name": "ui-lti-courses",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a Folio Stripes settings module that provides a front-end for configuring various things for the <a href='https://github.com/doytch/edge-lti-courses'>edge-lti-courses Edge module</a> that uses the <a href='https://www.imsglobal.org/spec/lti/v1p3/'>LTI 1.3 standard</a> to connect Learning Management Systems (LMSs) such as Sakai, Canvas, or Blackboard to Folio's Course Reserves app.</p>"
     },
     {
       "description": "UI module for searching, sorting, filtering, viewing, editing and creating BIB record",
       "docDirName": null,
       "name": "ui-marccat",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>The MARCcat UI Module, or <code>ui-marccat</code>, is a Stripes UI module used for searching, sorting, filtering, viewing, editing and creating BIB record. (A 'Stripes UI module' is an NPM module that adheres to certain conventions that allow it to function within the <a href='https://github.com/folio-org/stripes/blob/master/README.md'>Stripes UI framework</a> that is part of FOLIO.)</p>"
     },
     {
       "description": "UI module: managing user profile settings",
       "docDirName": null,
       "name": "ui-myprofile",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for managing user profile settings. This exists only to provide a settings section: there is no app.</p>"
     },
     {
       "description": "FOLIO Notes Helper App ",
       "docDirName": null,
       "name": "ui-notes",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for dealing with the notes.</p>"
     },
     {
       "description": "Stripes UI for oai-pmh",
       "docDirName": null,
       "name": "ui-oai-pmh",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for OAI-PMH management.</p>"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-orders",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-orders and start your development.</p>"
     },
     {
       "description": "UI module for managing organization records",
       "docDirName": null,
       "name": "ui-organizations",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>The ui-organizations allows for the management of Organization records in FOLIO. It includes summary information, contact information and other details regarding the organization interaction and preferences.</p>"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-plugin-create-inventory-records",
       "repoLanguageHint": "node",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>create-inventory-records</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='create-inventory-records'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": "Stripes UI plugin: Create item",
       "docDirName": null,
       "name": "ui-plugin-create-item",
       "repoLanguageHint": "node",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>create-item</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='create-item'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": "A Stripes UI plugin for editing markdown",
       "docDirName": null,
       "name": "ui-plugin-example",
       "repoLanguageHint": "other",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This source module contains the code for several <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI plugins. They exists only to test the plugin support, and do <em>not</em> provide useful functionality.</p>"
     },
     {
       "description": "ERM-agreement-finder plugin for Stripes",
       "docDirName": null,
       "name": "ui-plugin-find-agreement",
       "repoLanguageHint": "node",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-agreement</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-agreement'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": "Stripes UI plugin: Find a contact",
       "docDirName": null,
       "name": "ui-plugin-find-contact",
       "repoLanguageHint": "node",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-contact</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-contact'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": "ERM-eresource-finder plugin for Stripes",
       "docDirName": null,
       "name": "ui-plugin-find-eresource",
       "repoLanguageHint": "node",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-eresource</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-eresource'&gt;</code> element. See <a href='https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": "ERM-Usage-Data-Provider-finder plugin for Stripes ",
       "docDirName": null,
       "name": "ui-plugin-find-erm-usage-data-provider",
       "repoLanguageHint": "node",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-erm-usage-data-provider</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-erm-usage-data-provider'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": "Finder plugin for finc metadata collections",
       "docDirName": null,
       "name": "ui-plugin-find-finc-metadata-collection",
       "repoLanguageHint": "node",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-plugin-find-finc-metadata-collection and start your development.</p>"
     },
     {
       "description": "Finder plugin for finc metadata sources",
       "docDirName": null,
       "name": "ui-plugin-find-finc-metadata-source",
       "repoLanguageHint": "node",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-plugin-find-finc-metadata-source and start your development.</p>"
     },
     {
       "description": "UI Plugin that implements UI Data Import profiles search and pick",
       "docDirName": null,
       "name": "ui-plugin-find-import-profile",
       "repoLanguageHint": "node",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-import-profile</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-import-profile'&gt;</code> element.  See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": "Instance-finder plugin for Stripes",
       "docDirName": null,
       "name": "ui-plugin-find-instance",
       "repoLanguageHint": "node",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-instance</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-instance'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": "Stripes UI plugin: Find an interface",
       "docDirName": null,
       "name": "ui-plugin-find-interface",
       "repoLanguageHint": "node",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-interface</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-interface'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": "UI Widget to lookup or create licenses",
       "docDirName": null,
       "name": "ui-plugin-find-license",
       "repoLanguageHint": "node",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-license</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-license'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": "Organization-finder plugin for Stripes",
       "docDirName": null,
       "name": "ui-plugin-find-organization",
       "repoLanguageHint": "node",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-organization</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-organization'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": "Stripes plugin to find packages and titles",
       "docDirName": null,
       "name": "ui-plugin-find-package-title",
       "repoLanguageHint": "node",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-package-title</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-package-title'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": "Stripes UI plugin: Display, filter and select PO lines",
       "docDirName": null,
       "name": "ui-plugin-find-po-line",
       "repoLanguageHint": "node",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-po-line</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-po-line'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": "User-finder plugin for Stripes",
       "docDirName": null,
       "name": "ui-plugin-find-user",
       "repoLanguageHint": "node",
-      "repoType": "ui-plugin"
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-user</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-user'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": "Stripes UI for quickMARC editor",
       "docDirName": null,
       "name": "ui-quick-marc",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>quick-marc</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='quick-marc'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-receiving",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-receiving and start your development.</p>"
     },
     {
       "description": null,
       "docDirName": null,
       "name": "ui-remote-storage",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-remote-storage and start your development.</p>"
     },
     {
       "description": "Stripes UI module for making requests on items",
       "docDirName": null,
       "name": "ui-requests",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for making requests on items.</p>"
     },
     {
       "description": null,
       "docDirName": "doc",
       "name": "ui-search",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>The Search UI Module, or <code>ui-search</code>, is a Stripes UI module used for searching, sorting, filtering and viewing records from <a href='https://www.openlibraryenvironment.org/archives/411'>the FOLIO Codex</a>, an aggregation of bibliographic metadata from multiple sources.</p>"
     },
     {
       "description": "Service Points handler module for Stripes",
       "docDirName": null,
       "name": "ui-servicepoints",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This package include a Stripes handler module called <code>servicepoints</code> which will be executed during stripes-core initialization.</p>"
     },
     {
       "description": "UI module for managing tag settings",
       "docDirName": null,
       "name": "ui-tags",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for Tags management.</p>"
     },
     {
       "description": "Stripes UI module: managing tenant settings",
       "docDirName": null,
       "name": "ui-tenant-settings",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for managing organization settings. This exists only to provide a settings section: there is no app.</p>"
     },
     {
       "description": "Stripes UI module: administrating users",
       "docDirName": null,
       "name": "ui-users",
       "repoLanguageHint": "node",
-      "repoType": "ui"
+      "repoType": "ui",
+      "snippetIntro": "<p>The Users UI Module, or <code>ui-users</code>, is a Stripes UI module used for searching, sorting, filtering, viewing, editing and creating users. (A 'Stripes UI module' is an NPM module that adheres to certain conventions that allow it to function within the <a href='https://github.com/folio-org/stripes-core/blob/master/README.md'>Stripes UI framework</a> that is part of FOLIO.)</p>"
     },
     {
       "description": "Yakbak proxy for reading/writing tapes of network interactions",
       "docDirName": null,
       "name": "yakbak-proxy",
       "repoLanguageHint": "other",
-      "repoType": "other"
+      "repoType": "other",
+      "snippetIntro": "<p><code>yakbak-proxy</code> is a simple Web proxy implemented using <a href='https://github.com/flickr/yakbak'><code>yakbak</code></a>. It accepts incoming HTTP connections and proxies them through the nominated server, keeping a record ('tapes') of all requests and their corresponding responses. Then later you can run the same client against the same proxy server, and it will re-use the tapes. This is especially useful for testing a Web UI away from its corresponding back-end.</p>"
     }
   ]
 }

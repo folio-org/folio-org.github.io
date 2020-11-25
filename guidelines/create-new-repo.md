@@ -35,7 +35,7 @@ Do this as soon as possible, so that issues are created in the FOLIO issue track
 
 Ensure that access is configured for the relevant FOLIO GitHub [Teams](https://github.com/orgs/folio-org/teams).
 
-Add a concise Description to the GitHub repository. Consider that this will also be utilised elsewhere. This Description is near the top of your GitHub front page.
+Add a concise "About" description to the GitHub repository. Consider that this will also be utilised elsewhere. This description is near the top-right of your GitHub front page.
 (If the "Edit" button is not available to you, then see the "support" advice above.)
 
 ## Add initial files
@@ -53,6 +53,8 @@ Compare initial files with an existing FOLIO module repository (e.g.
 [mod-notes](https://github.com/folio-org/mod-notes),
 [ui-users](https://github.com/folio-org/ui-users)).
 The Stripes/UI/backend modules might be slightly different (e.g. CHANGELOG.md = NEWS.md).
+
+Add the required [PERSONAL_DATA_DISCLOSURE.md](https://github.com/folio-org/personal-data-disclosure) form.
 
 Add the required LICENSE and CONTRIBUTING.md and README.md files.
 
