@@ -443,6 +443,8 @@ mod-finance-storage:
       - group-budgets
       - group_fund_fy
       - ledger
+      - ledger_rollover
+      - ledger_rollover_progress
       - transaction
       - transaction-summary
     ramlutil: ramls/raml-util
