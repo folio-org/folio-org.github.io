@@ -464,8 +464,16 @@ mod-orders:
     directory: ramls
     files:
       - acquisitions-units
+      - check-in
       - configuration
       - order
+      - order-lines
+      - order-templates
+      - pieces
+      - po-number
+      - receive
+      - receiving-history
+      - rollover
       - titles
     ramlutil: ramls/raml-util
     schemasDirectory: ramls/acq-models/mod-orders-storage/schemas
