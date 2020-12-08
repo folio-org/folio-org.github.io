@@ -342,6 +342,7 @@ mod-oai-pmh:
     version1: true
     directory: ramls
     files:
+      - cleanup-job
       - folio-set
       - folio-set-filtering-conditions
       - oai-pmh
