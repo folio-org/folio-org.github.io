@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-11-24T07:12:09.081189+00:00"
+    "generatedDateTime": "2020-12-02T00:16:11.793059+00:00"
   },
   "repos": [
     {
@@ -261,6 +261,14 @@
       "snippetIntro": "<p>Library with general purpose classes to help with FOLIO backend service development and testing</p>"
     },
     {
+      "description": "This is a library (jar) that contains the basic functionality and main dependencies required for development FOLIO modules using Spring framework.",
+      "docDirName": null,
+      "name": "folio-spring-base",
+      "repoLanguageHint": "java",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
       "description": null,
       "docDirName": null,
       "name": "folio-test-env",
@@ -457,13 +465,13 @@
     },
     {
       "description": "Backend module for importing records from remote systems for copy cataloging",
-      "docDirName": null,
+      "docDirName": "doc",
       "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
       "hintRmb": true,
       "isRmb": true,
       "name": "mod-copycat",
       "ramlDirName": "ramls",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p><a href='https://github.com/folio-org/mod-copycat'>mod-copycat</a> is a FOLIO  module that assists in Copy cataloging. It imports records from remote systems using Z39.50.</p>"
     },
@@ -939,6 +947,15 @@
       "snippetIntro": "<p>Backend module with business logic for receiving receive and checking-in materials that have been  ordered.</p>"
     },
     {
+      "description": null,
+      "docDirName": null,
+      "name": "mod-remote-storage",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Backend module for remote storages</p>"
+    },
+    {
       "description": "Maven archetype used to generate an RMB-based module",
       "docDirName": null,
       "name": "mod-rmb-template",
@@ -992,6 +1009,15 @@
       "description": "Okapi Spring module example",
       "docDirName": null,
       "name": "mod-spring-sample",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": ""
+    },
+    {
+      "description": "The blueprint module that could be used as a template for folio spring based backend modules.",
+      "docDirName": null,
+      "name": "mod-spring-template",
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
