@@ -264,6 +264,7 @@ mod-inventory-storage:
       - mode-of-issuance
       - nature-of-content-term
       - oai-pmh-view
+      - record-bulk
       - service-point
       - service-points-user
       - shelf-location
