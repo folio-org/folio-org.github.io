@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-12-02T00:16:11.793059+00:00"
+    "generatedDateTime": "2020-12-08T22:49:22.799218+00:00"
   },
   "repos": [
     {
@@ -976,6 +976,15 @@
       "snippetIntro": "<p>Microservice to allow 3rd party discovery services to determine the availability of FOLIO inventory.</p>"
     },
     {
+      "description": null,
+      "docDirName": null,
+      "name": "mod-search",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": ""
+    },
+    {
       "description": "Sending messages through delivery channels",
       "docDirName": null,
       "hasDbSchema": null,
@@ -1264,14 +1273,6 @@
       "repoLanguageHint": "node",
       "repoType": "stripes",
       "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>"
-    },
-    {
-      "description": "Stripes platform for building the demo site",
-      "docDirName": null,
-      "name": "stripes-demo-platform",
-      "repoLanguageHint": "other",
-      "repoType": "stripes",
-      "snippetIntro": ""
     },
     {
       "description": "Stripes components that are specific to use cases that arise in ERM-related modules",
