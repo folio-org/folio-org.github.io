@@ -21,6 +21,7 @@ The mod-graphql [Autogeneration of GraphQL schemas and resolvers](https://github
 The RMB README has an example and commentary.
 
 As explained there, use the shared git submodule at `ramls/raml-util` and follow the ideal [directory structure](/guides/commence-a-module/#back-end-ramls).
+See notes about thereafter [updating](/guides/developer-setup/#update-git-submodules) submodules.
 
 When using RMB, it is important to further emphasise some items.
 Pay attention to the "$ref" used to reference and link the [JSON Schema](/guides/commence-a-module/#back-end-api-schema).

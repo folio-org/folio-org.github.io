@@ -91,11 +91,11 @@ Consider the guide to [increase visibility of module documentation](/guides/visi
 ### RAMLs {#back-end-ramls}
 
 The `ramls` directory holds the RAML and Schema and examples files specific to this module.
-Normally there will also be the `ramls/raml-util` shared files as a git submodule of the [raml](https://github.com/folio-org/raml) repository.
-Some modules only have a `raml-util` because their files are all located in the shared space.
+Normally there will also be the [git submodule](https://git-scm.com/docs/git-submodule) at `ramls/raml-util` being the shared files of the [raml](https://github.com/folio-org/raml) repository.
 
-Add an entry to the API docs [configuration](/faqs/how-to-configure-api-doc-generation/).
-Then set the Jenkinsfile [configuration](/guides/jenkinsfile/) `publishAPI` parameter
+Some modules only have a `ramls/raml-util` and not other files, because their files are all located in that shared space.
+
+Set the Jenkinsfile [configuration](/guides/jenkinsfile/) `publishAPI` parameter
 and `runLintRamlCop` parameter, to enable these during continuous integration.
 
 The reference [API documentation](/reference/api/) is generated from these files. Provide a clear "description" field for each endpoint.
