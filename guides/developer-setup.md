@@ -154,7 +154,7 @@ git commit ...
 ```
 
 Note that when locally testing an upgrade of a git submodule, then do '`git add ramls/raml-util`' before running 'mvn'.
-Otherwise it will helpfully restore the referenced git pointer.
+Otherwise it will helpfully restore the referenced git pointer (which is not wanted).
 
 Now when people update their local checkout, then some git clients do not automatically update the submodules. If that is the case for your client, then follow with 'git submodule update'.
 
