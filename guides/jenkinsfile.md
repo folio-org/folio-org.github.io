@@ -34,8 +34,12 @@ buildMvn {
   publishModDescriptor = true
   mvnDeploy = true
   publishAPI = true
-  runLintRamlCop = true
-  buildNode =  'jenkins-agent-java11'
+  runLintRamlCop = true // Deprecated. See doApiLint.
+  buildNode = 'jenkins-agent-java11'
+
+  doApiLint = true
+  apiTypes = 'RAML'
+  apiDirectories = 'ramls'
 
   doDocker = {
     buildJavaDocker {
@@ -50,18 +54,23 @@ buildMvn {
 * `publishModDescriptor` -- Maven-based modules will generate the ModuleDescriptor.json file as
 [explained](/guides/commence-a-module/#back-end-descriptors).
 It will be published to the FOLIO Module Descriptor registry.
-(Default: 'no')
+(Default: false)
 
 * `mvnDeploy` -- Deploy Maven artifacts to FOLIO Maven repository.
-(Default: 'no')
+(Default: false)
 
 * `publishAPI` -- Generate and publish [API documentation](/reference/api/) from the module's
 [RAML](/guides/commence-a-module/#back-end-ramls) and Schema files.
-(Default: 'no')
+(Default: false)
 
 * `runLintRamlCop` -- Run "[raml-cop](/guides/raml-cop/)" (and other tests) on back-end modules that have declared [RAML](/guides/commence-a-module/#back-end-ramls) in api.yml configuration.
 Also assists with [Describe schema and properties](/guides/describe-schema/).
-(Default: 'no')
+(Default: false)
+(Deprecated. See doApiLint.)
+
+* `doApiLint` -- Run "[api-lint](/guides/api-lint/)" to assess API definitions, schema, and examples -- both [RAML](/guides/commence-a-module/#back-end-ramls) and OpenAPI (OAS).
+See [explanation](/guides/api-lint/#usage) of required and optional parameters.
+(Default: false)
 
 If we are creating and deploying a Docker image as part of the module's artifacts, specify
 'doDocker' with 'buildJavaDocker' and the following options:
@@ -71,7 +80,7 @@ If we are creating and deploying a Docker image as part of the module's artifact
 (Default: 'yes')
 
 * `healthChk` -- Perform a container healthcheck during build.  See 'healthChkCmd'.
-(Default: 'no')
+(Default: false)
 
 * `healthChkCmd` -- Use the specified command to perform container health check.   The
 command is run *inside* the container and typically tests a REST endpoint to determine the
@@ -97,15 +106,15 @@ buildNPM {
 
 * `publishModDescriptor` -- If a FOLIO Module Descriptor is defined in its [package.json](/guides/commence-a-module/#front-end-packagejson)
 then the ModuleDescriptor.json will be generated and published to the FOLIO Module Descriptor registry.
-(Default: 'no')
+(Default: false)
 
 * `runLint` -- Execute 'yarn lint' as part of the build.  Ensure a 'lint' run script is
 defined in package.json before enabling this option.
-(Default: 'no')
+(Default: false)
 
 * `runTest` -- Execute 'yarn test' as part of the build.  Ensure a 'test' run script is
 defined in package.json.  'test' is typically used for unit tests.
-(Default: 'no')
+(Default: false)
 
 * `runTestOptions` -- Provide 'yarn test' with additional options.
 The example shows options for karma-based testing.
