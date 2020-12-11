@@ -55,11 +55,15 @@ section of _The Stripes Module Developer's Guide_ explains ESLint usage, how to 
 
 ## RAML and Schema
 
-For RAML-using server-side projects, [lint-raml](/guides/raml-cop/) assesses RAML and schema and examples.
-Those CI jobs utilise underlying tools such as
-[raml-cop](/guides/raml-cop/) and
-[raml-1-parser](https://github.com/raml-org/raml-js-parser-2) and
-[z-schema](https://github.com/zaggino/z-schema).
+For RAML-using server-side projects, [api-lint](/guides/api-lint/) assesses RAML API definitions and schema and examples.
+
+The tools can be used in FOLIO CI, and locally prior to commit.
+
+## OpenAPI and Schema
+
+For OpenAPI-using server-side projects, [api-lint](/guides/api-lint/) assesses OAS API definitions and schema and examples.
+
+The tools can be used in FOLIO CI, and locally prior to commit.
 
 ## Other lint tools
 

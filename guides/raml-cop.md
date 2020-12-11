@@ -6,6 +6,9 @@ menuInclude: no
 menuTopTitle: Guides
 ---
 
+**Note**: This tool is deprecated, but still available.
+Use [api-lint](/guides/api-lint/) instead.
+
 For RAML-using server-side projects, use [raml-cop](https://github.com/thebinarypenguin/raml-cop) to assess the RAML and schema and examples.
 
 The [Primer for RAML and JSON Schema](/start/primer-raml/) provides some general guidance.
