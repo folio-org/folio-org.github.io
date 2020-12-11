@@ -22,7 +22,7 @@ Notification of each individual module release is sent to this channel, as well 
 
 The cut-off dates for module releases that are to be included, are also listed in those spreadsheets.
 
-Refer to the [community release notes](https://wiki.folio.org/display/REL/Release+Notes+Summary)
+Refer to the [Cross Release Statistics](https://wiki.folio.org/display/REL/Cross+Release+Statistics)
 for important upgrade considerations.
 Follow the [process](https://wiki.folio.org/pages/viewpage.action?pageId=36572486) for maintenance of those documents.
 
