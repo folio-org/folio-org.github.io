@@ -548,6 +548,7 @@ mod-feesfines:
       - accounts-bulk
       - comments
       - feefineactions
+      - feefine-reports
       - feefines
       - lost-item-fee-policy
       - manualblocks
