@@ -70,6 +70,7 @@ python3 ../folio-tools/api-lint/api_lint.py \
 ### Node
 
 The node script can also be used stand-alone to process a single file.
+
 See usage notes with: `node amf.js --help`
 
 ### Jenkinsfile
@@ -89,4 +90,14 @@ Examples:
 
 * [mod-tags](https://github.com/folio-org/mod-tags/blob/master/Jenkinsfile)
   -- RAML
+
+## Interpretation of messages
+
+When errors are encountered, then a summary of conformance "Violations" and "Warnings" is presented at the top, followed by detail about each.
+The detail includes the location of the relevant file and the line number of the problem.
+
+Note that if there are only warnings but no violations, then nothing is presented.
+
+Note that this `api-lint` tool is more thorough than our previous CI tool (based on raml-cop and its underlying raml-1-parser).
+So projects might find new violations being reported.
 
