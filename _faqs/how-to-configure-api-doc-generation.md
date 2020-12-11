@@ -13,7 +13,8 @@ The [Jenkinsfile](/guides/jenkinsfile/#back-end-modules) for each back-end modul
 The configuration metadata for all raml-related back-end modules is manually managed at the [api.yml](https://github.com/folio-org/folio-org.github.io/blob/master/_data/api.yml) file.
 This configuration is utilised by both this `publishAPI` and the `runLintRamlCop` CI jobs, and by this website.
 
-Please ensure that the module's RAMLs can be processed without error. The guide [Use raml-cop to assess RAML, schema, and examples](/guides/raml-cop/) will assist.
+Please ensure that the module's RAMLs can be processed without error.
+The guide [Assess API definitions, schema, and examples](/guides/api-lint/) will assist.
 The quality of the generated documentation depends on its input.
 Some RAML issues can cause the CI system to fail.
 It is available to run locally by cloning [folio-tools](https://github.com/folio-org/folio-tools).

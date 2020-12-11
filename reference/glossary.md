@@ -311,6 +311,11 @@ is a community of academic and research libraries collaborating to
 build open source library management tools. OLE has joined the FOLIO
 community to help with the development of FOLIO.
 
+#### OAS
+
+The OpenAPI Specification ([OAS](https://en.wikipedia.org/wiki/OpenAPI_Specification)) for describing RESTful web services.
+(Originally part of Swagger.)
+
 #### PC
 
 The [FOLIO Product Council](https://wiki.folio.org/display/PC/)

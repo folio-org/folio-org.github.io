@@ -20,14 +20,30 @@ Developers could wade through that, making an educated guess.
 
 ## ModuleDescriptors
 
-Or developers could confirm that a certain [back-end module](/source-code/map/#backend-mod) provides a certain interface which handles a set of endpoints. Again an educated guess.
+Or developers could confirm that a certain [back-end module](/source-code/map/#backend-mod) provides a certain interface which handles a set of endpoints.
 Obtain its ModuleDescriptor from the registry and extract the "provides" section.
 For example:
 
 ```
 curl -s -S -w'\n' \
-  'http://folio-registry.aws.indexdata.com/_/proxy/modules?filter=mod-notes&latest=1&full=true' \
+  'http://folio-registry.aws.indexdata.com/_/proxy/modules?filter=mod-inventory-storage&latest=1&full=true' \
   | jq '.[].provides'
+```
+
+Registry queries such as the following will assist investigation ...
+
+Requires an old interface:
+
+```
+curl -s -S -w'\n' \
+  'http://folio-registry.aws.indexdata.com/_/proxy/modules?latest=1&require=instance-bulk%3D0.1'
+```
+
+Provides a newer interface:
+
+```
+curl -s -S -w'\n' \
+  'http://folio-registry.aws.indexdata.com/_/proxy/modules?latest=1&provide=inventory-record-bulk'
 ```
 
 ## UI Developer Settings
