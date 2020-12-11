@@ -22,6 +22,8 @@ That utilises the AML Modeling Framework [AMF](https://github.com/aml-org/amf), 
 
 ## Usage
 
+For use during FOLIO CI builds, refer to the Jenkinsfile [configuration](#jenkinsfile) below.
+
 For local use, clone the "[folio-tools](https://github.com/folio-org/folio-tools)" repository parallel to clones of back-end project repositories, and use its [api-lint](https://github.com/folio-org/folio-tools/tree/master/api-lint) facilities.
 Refer to that document for local installation instructions.
 
