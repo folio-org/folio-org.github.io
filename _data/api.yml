@@ -424,6 +424,7 @@ mod-finance:
       - group-fund-fiscal-year
       - groups
       - ledger_rollover
+      - ledger_rollover_progress
       - ledgers
       - release-encumbrance
       - transaction
@@ -548,6 +549,7 @@ mod-feesfines:
       - accounts-bulk
       - comments
       - feefineactions
+      - feefine-reports
       - feefines
       - lost-item-fee-policy
       - manualblocks
