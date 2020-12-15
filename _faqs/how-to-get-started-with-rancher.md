@@ -8,6 +8,9 @@ faqOrder: 9
 ---
 
 ## Introduction
+
+Each development team has access to a "developer scratch environment" to ensure that their changes are ready to be finalised.
+
 Rancher is a Kubernetes management tool.
 Useful links:
 
