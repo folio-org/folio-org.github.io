@@ -73,11 +73,11 @@ See [explanation](/guides/api-lint/#usage) of required and optional parameters.
 (Default: false)
 
 If we are creating and deploying a Docker image as part of the module's artifacts, specify
-'doDocker' with 'buildJavaDocker' and the following options:
+'doDocker' with 'buildJavaDocker' (for Spring-based modules instead use the 'buildDocker') and the following options:
 
 * `publishMaster` -- Publish image to 'folioci' Docker repository on Docker Hub when building
 'master' branch.
-(Default: 'yes')
+(Default: true)
 
 * `healthChk` -- Perform a container healthcheck during build.  See 'healthChkCmd'.
 (Default: false)
