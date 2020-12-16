@@ -27,7 +27,7 @@ When using RMB, it is important to further emphasise some items.
 Pay attention to the "$ref" used to reference and link the [JSON Schema](/guides/commence-a-module/#back-end-api-schema).
 For RAML-0.8 and RMB prior to v20, there must be at least two endpoints, and all schema that are used must be declared in the RAML file.
 
-Use "[api-lint](/guides/api-lint/)" to assess API definitions, schema, and examples.
+Use "[api-lint](/guides/api-lint/)" to assess API descriptions, schema, and examples.
 A script is provided, to find files and run it.
 That script is also utilised by the continuous-integration.
 

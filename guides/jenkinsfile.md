@@ -68,7 +68,7 @@ Also assists with [Describe schema and properties](/guides/describe-schema/).
 (Default: false)
 (Deprecated. See doApiLint.)
 
-* `doApiLint` -- Run "[api-lint](/guides/api-lint/)" to assess API definitions, schema, and examples -- both [RAML](/guides/commence-a-module/#back-end-ramls) and OpenAPI (OAS).
+* `doApiLint` -- Run "[api-lint](/guides/api-lint/)" to assess API descriptions, schema, and examples -- both [RAML](/guides/commence-a-module/#back-end-ramls) and OpenAPI (OAS).
 See [explanation](/guides/api-lint/#usage) of required and optional parameters.
 (Default: false)
 
