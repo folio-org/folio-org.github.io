@@ -447,6 +447,7 @@ mod-finance-storage:
       - group_fund_fy
       - ledger
       - ledger_rollover
+      - ledger-rollover-errors
       - ledger_rollover_progress
       - transaction
       - transaction-summary
