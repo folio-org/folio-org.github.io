@@ -423,6 +423,7 @@ mod-finance:
       - group-fund-fiscal-year
       - groups
       - ledger_rollover
+      - ledger-rollover-errors
       - ledger_rollover_progress
       - ledgers
       - release-encumbrance
