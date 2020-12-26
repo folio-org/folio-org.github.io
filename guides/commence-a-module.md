@@ -79,6 +79,8 @@ See [explanation](/guides/jenkinsfile/).
 The `descriptors` directory holds the template Descriptor files. For a Maven-based system, the pom.xml will have tasks to replace tokens with this module's `artifactId` and `version` to generate the descriptors into the `target` directory.
 See example at [mod-notes/pom.xml](https://github.com/folio-org/mod-notes/blob/master/pom.xml) and the 'filter-descriptor-inputs' and 'rename-descriptor-outputs' tasks.
 
+Note that Spring-based modules use replacement tokens of the form `"@artifactId@-@version@"` instead of the normal `"${artifactId}-${version}"`.
+
 Refer to explanation of [ModuleDescriptors](/guides/module-descriptor/) and default [LaunchDescriptors](/guides/module-descriptor/#launchdescriptor-properties).
 
 ### Documentation {#back-end-doc}

@@ -50,7 +50,7 @@ Occasionally it becomes necessary to specify minimum versions of some tools:
 * curl -- Many modules provide examples as curl requests. Alternatively those examples could be used with Postman via "import".
 
 * Clone the [folio-tools](https://github.com/folio-org/folio-tools) repository parallel to your other clones.
-This provides various helper tools, for example the "api-lint" to [Assess API definitions, schema, and examples](/guides/api-lint/) -- both RAML and OpenAPI (OAS).
+This provides various helper tools, for example the "api-lint" to [Assess API descriptions, schema, and examples](/guides/api-lint/) -- both RAML and OpenAPI (OAS).
 
 ## Workstation capability
 

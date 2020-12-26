@@ -14,7 +14,7 @@ The configuration metadata for all raml-related back-end modules is manually man
 This configuration is utilised by both this `publishAPI` and the `runLintRamlCop` CI jobs, and by this website.
 
 Please ensure that the module's RAMLs can be processed without error.
-The guide [Assess API definitions, schema, and examples](/guides/api-lint/) will assist.
+The guide [Assess API descriptions, schema, and examples](/guides/api-lint/) will assist.
 The quality of the generated documentation depends on its input.
 Some RAML issues can cause the CI system to fail.
 It is available to run locally by cloning [folio-tools](https://github.com/folio-org/folio-tools).

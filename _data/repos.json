@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-12-08T22:49:22.799218+00:00"
+    "generatedDateTime": "2020-12-22T04:02:42.679785+00:00"
   },
   "repos": [
     {
@@ -51,6 +51,15 @@
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
       "snippetIntro": "<p>Common/Shared library for Edge APIs.</p>"
+    },
+    {
+      "description": "Bridge the gap between Dematic remote storage provider and FOLIO",
+      "docDirName": null,
+      "name": "edge-dematic",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between Dematic remote storage provider and FOLIO.</p>"
     },
     {
       "description": null,
@@ -982,7 +991,7 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "<p>FOLIO search project.</p>"
     },
     {
       "description": "Sending messages through delivery channels",
@@ -1337,6 +1346,14 @@
       "repoLanguageHint": "node",
       "repoType": "stripes",
       "snippetIntro": "<p>A library of utility functions to support Stripes modules.</p>"
+    },
+    {
+      "description": "Stripes Vendor Dll",
+      "docDirName": null,
+      "name": "stripes-vendor-dll",
+      "repoLanguageHint": "node",
+      "repoType": "stripes",
+      "snippetIntro": ""
     },
     {
       "description": "Stripes UI module: Management of Acquisition unit records",

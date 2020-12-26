@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Assess API definitions, schema, and examples
+title: Assess API descriptions, schema, and examples
 permalink: /guides/api-lint/
 menuInclude: no
 menuTopTitle: Guides
@@ -8,7 +8,7 @@ menuTopTitle: Guides
 
 ## Introduction
 
-For server-side projects that utilise RAML or OpenAPI (OAS), use the tool `api-lint` to assess the API definition files and schema and examples.
+For server-side projects that utilise RAML or OpenAPI (OAS), use the tool `api-lint` to assess the API description files and schema and examples.
 
 The tool is available for use during FOLIO Continuous Integration builds, and also for local use prior to commit.
 
@@ -16,7 +16,7 @@ For [RAML-using](/start/primer-raml/) projects, this new "api-lint" tool is pref
 
 ## Procedure
 
-Each discovered API definition file is provided to the nodejs script.
+Each discovered API description file is provided to the nodejs script.
 
 That utilises the AML Modeling Framework [AMF](https://github.com/aml-org/amf), specifically the `amf-client-js` library, to parse and validate the definition.
 
@@ -29,11 +29,11 @@ Refer to that document for local installation instructions.
 
 ### Python
 
-The Python script will search the configured directories to find relevant API definition files, and will then call the node script to process each file.
+The Python script will search the configured directories to find relevant API description files, and will then call the node script to process each file.
 
 Where the main options are:
 
-* `-t,--types` -- The type of API definition files to search for.
+* `-t,--types` -- The type of API description files to search for.
   Required. Space-separated list.
   One or more of: `RAML OAS`
 * `-d,--directories` -- The list of directories to be searched.
