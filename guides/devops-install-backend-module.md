@@ -19,8 +19,8 @@ and is operating in FOLIO CI.
 They would have added a Jira ticket, assigned to our team so that we can schedule and track the work.
 
 Note: The configuration for "folio-testing" and the "testing" VMs is still as explained below.
-The configuration for the "snapshot" VMs is [still](https://issues.folio.org/browse/FOLIO-2799) as explained below.
 However, as explained in the guide linked in the next section, developers can now add their new module to the "snapshot" branch of the platforms.
+However, the configuration for the "snapshot" VMs is [still](https://issues.folio.org/browse/FOLIO-2799) as explained below, if they added to the platform install-extras.json file rather than via the normal dependency graph.
 
 ## Verification and preparation
 
@@ -45,6 +45,7 @@ Make a branch in [folio-ansible](https://github.com/folio-org/folio-ansible),
 e.g. `folio-2467-refenvs-ncip`
 
 Add the module to the `group_vars/snapshot` and `group_vars/testing` files.
+(Note: For snapshot, see notes above in the [Introduction](#introduction) section.)
 
 If this is also a "core" module, then it will also be added to the corresponding `-core` files.
 
