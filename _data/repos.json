@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-12-30T02:19:01.923996+00:00"
+    "generatedDateTime": "2021-01-04T23:29:14.331088+00:00"
   },
   "repos": [
     {
@@ -872,9 +872,6 @@
     {
       "description": "Performs password validation and stores validation rules for specified tenant",
       "docDirName": null,
-      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
-      "hintRmb": true,
-      "isRmb": true,
       "name": "mod-password-validator",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",

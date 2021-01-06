@@ -20,7 +20,7 @@ They would have added a Jira ticket, assigned to our team so that we can schedul
 
 Note: The configuration for "folio-testing" and the "testing" VMs is still as explained below.
 However, as explained in the guide linked in the next section, developers can now add their new module to the "snapshot" branch of the platforms.
-However, the configuration for the "snapshot" VMs is [still](https://issues.folio.org/browse/FOLIO-2799) as explained below, if they added to the platform install-extras.json file rather than via the normal dependency graph.
+However, the configuration for the "snapshot" VMs is [still](https://issues.folio.org/browse/FOLIO-2799) as explained below.
 
 ## Verification and preparation
 
