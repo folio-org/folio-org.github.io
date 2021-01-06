@@ -27,10 +27,12 @@ agent {
 }
 ```
 
-## Using Java 8
+## Using deprecated Java 8
 
 Otherwise the default is currently Java 8:
 
 * In Jenkinsfile, no configuration is needed
 * In Dockerfile, use: `FROM folioci/alpine-jre-openjdk8:latest`
+
+**Note:** All FOLIO modules should no longer use the deprecated Java 8 facilities ([FOLIO-2926](https://issues.folio.org/browse/FOLIO-2926))
 
