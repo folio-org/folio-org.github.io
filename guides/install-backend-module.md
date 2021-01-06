@@ -48,7 +48,12 @@ Follow the guide to verify [Local module as Docker container](/guides/run-local-
 
 ### Configure platforms
 
-Add the new back-end module to the `install-extras.json` file of the "snapshot" branch of the relevant platform.
+The normal process is that a UI module will require interfaces that are provided by back-end modules (declared in the "okapiInterfaces" section of their package.json file).
+With this, the relevant back-end modules are automatically included.
+
+However sometimes the front-end and back-end are not yet ready for each other.
+
+Temporarily add the new back-end module to the `install-extras.json` file of the "snapshot" branch of the relevant platform.
 (Note that "core" modules are added to both platform-core and platform-complete.)
 
 After the back-end development is eventually ready, then a front-end module will require this module.

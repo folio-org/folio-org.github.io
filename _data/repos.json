@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2020-12-22T04:02:42.679785+00:00"
+    "generatedDateTime": "2021-01-04T23:29:14.331088+00:00"
   },
   "repos": [
     {
@@ -284,14 +284,6 @@
       "repoLanguageHint": "other",
       "repoType": "other",
       "snippetIntro": "<p><a href='https://github.com/folio-org/folio-test-env/blob/master/TESTING.md'>Basic instructions</a> and bootstrap files for setting up a test instance of FOLIO.</p>"
-    },
-    {
-      "description": null,
-      "docDirName": null,
-      "name": "folio-testing-platform",
-      "repoLanguageHint": "other",
-      "repoType": "other",
-      "snippetIntro": ""
     },
     {
       "description": "Various tools and support glue for FOLIO CI",
@@ -868,9 +860,6 @@
     {
       "description": "Performs password validation and stores validation rules for specified tenant",
       "docDirName": null,
-      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
-      "hintRmb": true,
-      "isRmb": true,
       "name": "mod-password-validator",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
