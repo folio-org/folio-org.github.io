@@ -429,18 +429,6 @@
       "snippetIntro": "<p>Codex Wrapper for Inventory</p>"
     },
     {
-      "description": "Codex mock module - for testing and development",
-      "docDirName": null,
-      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
-      "hintRmb": true,
-      "isRmb": true,
-      "name": "mod-codex-mock",
-      "ramlDirName": "ramls",
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>Codex mock module - for testing and development</p>"
-    },
-    {
       "description": "Codex Multiplexer backend module",
       "docDirName": null,
       "hasDbSchema": null,

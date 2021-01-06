@@ -149,16 +149,6 @@ mod-codex-mux:
     schemasDirectory: ramls/raml-util/schemas/codex
     shared: ramls/codex
 
-mod-codex-mock:
-  - label: null
-    directory: ramls/raml-util/ramls/codex
-    files:
-      - codex
-    ramlutil: null
-    schemasDirectory: ramls/raml-util/schemas/codex
-    shared: ramls/codex
-    multiple: true
-
 mod-circulation:
   - label: null
     version1: true
