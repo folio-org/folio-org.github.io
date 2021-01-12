@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-01-04T23:29:14.331088+00:00"
+    "generatedDateTime": "2021-01-12T00:24:48.530105+00:00"
   },
   "repos": [
     {
@@ -753,18 +753,6 @@
       "snippetIntro": "<p>This module provides SAML2 SSO functionality for FOLIO.</p>"
     },
     {
-      "description": "FOLIO metadata management / marccat module",
-      "docDirName": null,
-      "hasDbSchema": null,
-      "hintRmb": true,
-      "isRmb": null,
-      "name": "mod-marccat",
-      "ramlDirName": "ramls",
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>FOLIO Cataloguing module.</p>"
-    },
-    {
       "description": "NISO Circulation Interchange Protocol (NCIP)  support in FOLIO",
       "docDirName": "docs",
       "name": "mod-ncip",
@@ -1043,7 +1031,7 @@
       "snippetIntro": "<p>This module is responsible for storing templates and generating text, html, xml, doc, docx etc from the template. Generated payload is described by meta information which contains info about format, size and date. Supports localization of templates.</p>"
     },
     {
-      "description": null,
+      "description": "Import new or already existing users",
       "docDirName": null,
       "hasDbSchema": null,
       "hintRmb": true,
@@ -1330,7 +1318,7 @@
       "name": "stripes-vendor-dll",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": ""
+      "snippetIntro": "<p>Stripes Vendor Dll is a tool which can be used to create a <a href='https://webpack.js.org/plugins/dll-plugin/'>DLL bundle</a>. The bundle currently includes all 3rd party dependencies (react, moment, etc) found in <a href='https://github.com/folio-org/stripes/blob/master/package.json'>stripes</a> plus couple additional stripes dependencies (stripes-components, stripes-connect,stripes-logger,stripes-util).</p>"
     },
     {
       "description": "Stripes UI module: Management of Acquisition unit records",
@@ -1531,14 +1519,6 @@
       "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>This is a Folio Stripes settings module that provides a front-end for configuring various things for the <a href='https://github.com/doytch/edge-lti-courses'>edge-lti-courses Edge module</a> that uses the <a href='https://www.imsglobal.org/spec/lti/v1p3/'>LTI 1.3 standard</a> to connect Learning Management Systems (LMSs) such as Sakai, Canvas, or Blackboard to Folio's Course Reserves app.</p>"
-    },
-    {
-      "description": "UI module for searching, sorting, filtering, viewing, editing and creating BIB record",
-      "docDirName": null,
-      "name": "ui-marccat",
-      "repoLanguageHint": "node",
-      "repoType": "ui",
-      "snippetIntro": "<p>The MARCcat UI Module, or <code>ui-marccat</code>, is a Stripes UI module used for searching, sorting, filtering, viewing, editing and creating BIB record. (A 'Stripes UI module' is an NPM module that adheres to certain conventions that allow it to function within the <a href='https://github.com/folio-org/stripes/blob/master/README.md'>Stripes UI framework</a> that is part of FOLIO.)</p>"
     },
     {
       "description": "UI module: managing user profile settings",
