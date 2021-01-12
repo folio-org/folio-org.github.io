@@ -79,9 +79,6 @@ ui-local-kb-admin:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Local+KB+Admin
   urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Local+KB+admin
 
-ui-marccat:
-  urlUserTips: https://wiki.folio.org/display/FOLIOtips/MARCcat
-
 ui-myprofile:
   urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+My+profile
 
@@ -147,6 +144,10 @@ edge-sip2:
 edge-ncip:
   urlsOther:
     - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-ncip
+
+stripes-smart-components:
+  urlsOther:
+    - https://github.com/folio-org/stripes/blob/master/ROADMAP.md
 
 stripes-components:
   urlsOther:

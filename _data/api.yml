@@ -710,17 +710,6 @@ mod-courses:
       - courses
     ramlutil: ramls/raml-util
 
-mod-marccat:
-  - label: null
-    version1: true
-    directory: ramls
-    files:
-      - marccat
-    excludes:
-      - raml-storage
-    ramlutil: ramls/raml-storage/raml-util
-    rmb: false
-
 mod-rtac:
   - label: null
     version1: true

@@ -38,7 +38,6 @@ inventory:
     - mod-kb-ebsco-java
     - mod-oai-pmh
     - edge-oai-pmh
-    - mod-marccat
 erm:
   title: Resource management
   description: ERM, licenses, usage statistics.
