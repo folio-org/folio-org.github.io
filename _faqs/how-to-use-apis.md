@@ -25,7 +25,7 @@ The [OkapiCLI.py](https://gitlab.lrz.de/bib-public/okapiclient) is a command-lin
 
 ## Stripes CLI
 
-The [stripes-cli](https://github.com/folio-org/stripes-cli) is a command-line interface written in JavaScript that can connect to back-end APIs and help front-end developers that use FOLIOs User Interface framework Stripes.
+The [stripes-cli](https://github.com/folio-org/stripes-cli) is a command-line interface written in JavaScript that can connect to back-end APIs and help front-end developers that use FOLIO's User Interface framework Stripes.
 
 ## Postman
 
