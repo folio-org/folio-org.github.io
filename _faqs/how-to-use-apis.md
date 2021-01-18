@@ -13,19 +13,19 @@ To connect to the APIs there are several software options:
 
 ## curl
 
-The [Okapi Guide](https://github.com/folio-org/okapi/blob/master/doc/guide.md) has detailed examples and explanations how to use APIs with command line tool `curl`.
+The [Okapi Guide](https://github.com/folio-org/okapi/blob/master/doc/guide.md) has detailed examples and explanations how to use APIs with command-line tool `curl`.
 
 ## Okapi CLI
 
-The [okapi-cli](https://github.com/folio-org/okapi-cli) is a command line interface written in Java.
+The [okapi-cli](https://github.com/folio-org/okapi-cli) is a command-line interface written in Java.
 
 ## OkapiClient
 
-The [OkapiCLI.py](https://gitlab.lrz.de/bib-public/okapiclient) is a command line interface written in Python.
+The [OkapiCLI.py](https://gitlab.lrz.de/bib-public/okapiclient) is a command-line interface written in Python.
 
 ## Stripes CLI
 
-The [stripes-cli](https://github.com/folio-org/stripes-cli) is a command line interface written in JavaScript that can connect to back-end APIs and help front-end developers that use FOLIOs User Interface framework Stripes.
+The [stripes-cli](https://github.com/folio-org/stripes-cli) is a command-line interface written in JavaScript that can connect to back-end APIs and help front-end developers that use FOLIOs User Interface framework Stripes.
 
 ## Postman
 
