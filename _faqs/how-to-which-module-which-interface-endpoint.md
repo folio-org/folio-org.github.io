@@ -18,9 +18,19 @@ There is the set of [API documentation](/reference/api/) which is automatically 
 Developers could wade through that, making an educated guess.
 (There are tickets in the Issue tracker to improve that aspect of the API documentation, but not happening yet.)
 
-## ModuleDescriptors
+## Registry of ModuleDescriptors
 
-Or developers could confirm that a certain [back-end module](/source-code/map/#backend-mod) provides a certain interface which handles a set of endpoints.
+Use the FOLIO Registry to search for modules that provide or require certain interfaces.
+
+This is particularly useful for developers who are about to make breaking changes, to determine which modules they are going to affect.
+
+The API documentation for Okapi [explains](https://s3.amazonaws.com/foliodocs/api/okapi/p/okapi.html#proxy_modules_get) the query parameters.
+
+Registry queries such as the following will assist investigation ...
+
+### Interfaces provided by module
+
+Confirm that a certain [back-end module](/source-code/map/#backend-mod) implements a certain interface which handles a set of endpoints.
 Obtain its ModuleDescriptor from the registry and extract the "provides" section.
 For example:
 
@@ -30,16 +40,14 @@ curl -s -S -w'\n' \
   | jq '.[].provides'
 ```
 
-Registry queries such as the following will assist investigation ...
-
-Requires an old interface:
+### Requires an old interface
 
 ```
 curl -s -S -w'\n' \
   'http://folio-registry.aws.indexdata.com/_/proxy/modules?latest=1&require=instance-bulk%3D0.1'
 ```
 
-Provides a newer interface:
+### Provides a newer interface
 
 ```
 curl -s -S -w'\n' \
