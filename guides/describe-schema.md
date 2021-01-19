@@ -10,8 +10,7 @@ Each property of an API schema has a "description" attribute.
 These are utilised to explain the purpose of the properties and enable their use.
 Each schema also has a top-level description explaining the overall purpose.
 
-The [API documentation](/reference/api/) is generated from these schema descriptions and the RAML files that refer to them.
-Each back-end module that is listed there has those source files in their "ramls" directory.
+The [API documentation](/reference/api/) is generated from these schema and the API Description files that refer to them.
 
 Refer to some examples.
 The first link is the source JSON Schema file.
@@ -72,12 +71,12 @@ Other constraints:  None
 
 The schema property "description" can only be a single long text string, and can not use markup. So just concatenate the relevant information.
 
-The relevant RAML files that utilise the schema can provide valid examples. They can also provide additional [RAML documentation node](https://github.com/raml-org/raml-spec/blob/master/versions/raml-10/raml-10.md#user-documentation) entries, which can utilise Markdown (either in-line or via included files). In this way other constraints be described, also with links to supporting resources.
+The relevant API Description files that utilise the schema can provide valid examples. RAML files can also provide additional [RAML documentation node](https://github.com/raml-org/raml-spec/blob/master/versions/raml-10/raml-10.md#user-documentation) entries, which can utilise Markdown either in-line or via included files (e.g. [mod-courses](/reference/api/#mod-courses)). In this way other constraints be described, also with links to supporting resources.
 
 To contribute updates, either send a pull-request with the changes or add to a Jira issue tracker.
 
-The continuous-integration facility assesses the JSON Schema files of all RAML-using back-end modules to determine any missing descriptions.
+The continuous-integration facility assesses the JSON Schema files of all RAML-using and OpenAPI-using back-end modules to determine any missing descriptions.
 At GitHub, detected issues are listed on the front page of each pull-request.
 For any branch or pull-request build, follow the "details" link via the coloured checkmark through to Jenkins.
-Then see "Artifacts" at the top-right for the "LintRamlSchemaReport".
-The analysis can also be [run locally](/guides/raml-cop/).
+Then see "Artifacts" at the top-right for the processing report.
+The analysis can also be [run locally](https://github.com/folio-org/folio-tools/tree/master/api-schema-lint).
