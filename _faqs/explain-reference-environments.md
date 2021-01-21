@@ -4,7 +4,7 @@ title: Explain continuously built reference environments
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: reference
-faqOrder: 3
+faqOrder: 4
 ---
 
 The set of [reference environments](/guides/automation/#reference-environments) are described and linked.
