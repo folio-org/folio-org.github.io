@@ -684,6 +684,7 @@ mod-source-record-storage:
       - source-record-storage-records
       - source-record-storage-snapshots
       - source-record-storage-source-records
+      - source-record-storage-stream
       - source-record-storage-test-records
     excludes:
       - raml-storage
