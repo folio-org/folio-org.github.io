@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-01-12T00:24:48.530105+00:00"
+    "generatedDateTime": "2021-01-20T04:30:30.978410+00:00"
   },
   "repos": [
     {
@@ -55,6 +55,8 @@
     {
       "description": "Bridge the gap between Dematic remote storage provider and FOLIO",
       "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
       "name": "edge-dematic",
       "ramlDirName": null,
       "repoLanguageHint": "java",
@@ -272,6 +274,7 @@
     {
       "description": "This is a library (jar) that contains the basic functionality and main dependencies required for development FOLIO modules using Spring framework.",
       "docDirName": null,
+      "hintOas": true,
       "name": "folio-spring-base",
       "repoLanguageHint": "java",
       "repoType": "other",
@@ -848,6 +851,8 @@
     {
       "description": "Performs password validation and stores validation rules for specified tenant",
       "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
       "name": "mod-password-validator",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -923,6 +928,8 @@
     {
       "description": null,
       "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
       "name": "mod-remote-storage",
       "ramlDirName": null,
       "repoLanguageHint": "java",
@@ -952,6 +959,7 @@
     {
       "description": null,
       "docDirName": null,
+      "hintOas": true,
       "name": "mod-search",
       "ramlDirName": null,
       "repoLanguageHint": "java",
@@ -1000,6 +1008,8 @@
     {
       "description": "The blueprint module that could be used as a template for folio spring based backend modules.",
       "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
       "name": "mod-spring-template",
       "ramlDirName": null,
       "repoLanguageHint": "java",
@@ -1487,6 +1497,14 @@
       "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for administrating locally created instances, holdings records and items.</p>"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "ui-inventory-es",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module which is the cope of ui-invetoru for the ElasticSearch POC.</p>"
     },
     {
       "description": null,
