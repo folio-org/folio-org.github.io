@@ -10,7 +10,8 @@ menuTopTitle: Guidelines
 
 This document defines the checklists for creating and reviewing various types of pull-request (PR).
 
-Also refer to [Development, design, and review processes](/guidelines/development-design-review/).
+Also refer to [Development, design, and review processes](/guidelines/development-design-review/)
+and to the additional Wiki [Pull Request Guidelines](https://wiki.folio.org/display/DD/Pull+Request+Guidelines).
 
 ## Backend pull request checklist
 
@@ -23,7 +24,9 @@ Also refer to [Development, design, and review processes](/guidelines/developmen
 * Does the change alter or remove existing requests to other modules, or introduce new requests? (If yes, refer to external requests / dependencies [checklist](#external-requests--dependencies-checklist).)
 * Do the automated checks pass (e.g. tests, sonar, lint)?
 * Does each PR title reference a Jira issue for the correct project (at the beginning of the title)?
-  * Does that issue have a "Fix Version"?
+  * See the additional requirements at Wiki [Pull Request Guidelines](https://wiki.folio.org/display/DD/Pull+Request+Guidelines).
+  * Note that the Jira ticket identifier must be upper-case with no spaces (e.g. `FOLIO-2951`).
+  * Does that Jira ticket have a "Fix Version"?
 * Should the implementation version change (link to guidance)?
 * Are any of the library dependencies a snapshot or pre-release version?
 
