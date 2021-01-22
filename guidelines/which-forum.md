@@ -141,6 +141,7 @@ We follow a variation of the Apache motto:
 - In the Pull Request, describe your main changes. Also say whether
   it is now ready to merge, or that you are seeking feedback.
   Follow the guidelines [Development, design, and review processes](/guidelines/development-design-review/).
+  Ensure that the PR title refers to the relevant Jira ticket identifiers as explained in the requirements of [Pull requests checklists](/guidelines/pull-requests-checklists/).
 
 - To seek feedback on your work, use additional comments on your
   Pull Request. If the specific attention of certain people is needed,
