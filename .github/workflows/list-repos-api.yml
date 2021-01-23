@@ -1,0 +1,22 @@
+name: list-repos-api.yml
+
+# When there is a change to _data/repos.json file
+# then list the repos that are API-related.
+
+on:
+  push:
+    branches: [ workflows-prep ]
+#    paths:
+#      - '_data/repos.json'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Extract repo names
+      uses: awesome-global-contributions/action-yq@v1.0.2
+      with:
+        file: .github/workflows/list-repos-api.sh
