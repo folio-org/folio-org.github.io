@@ -5,9 +5,9 @@ name: list-repos-api.yml
 
 on:
   push:
-    branches: [ workflows-prep ]
-#    paths:
-#      - '_data/repos.json'
+    branches: [ master ]
+    paths:
+      - '_data/repos.json'
 
 jobs:
   build:
