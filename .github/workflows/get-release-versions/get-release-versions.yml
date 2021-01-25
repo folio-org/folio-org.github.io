@@ -1,0 +1,32 @@
+name: get-release-versions
+
+# Get okapi-install.json from platform-complete release branch
+# and ensure version tags.
+
+on:
+  push:
+    branches: [ folio-2976-wf-get-releases ]
+
+jobs:
+  job_1:
+    name: Extract and upload
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+
+    - name: Install dependencies
+      run: |
+        echo "Report python version:"
+        python -V
+        python -m pip install --upgrade pip
+        pip install -r .github/workflows/get-release-versions/requirements.txt
+
+    - name: Run script
+      run: python .github/workflows/get-release-versions/get_release_versions.py -b q3-2020 -l debug
