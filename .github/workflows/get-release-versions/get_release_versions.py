@@ -10,6 +10,7 @@ import json
 import logging
 import os
 import pprint
+import re
 import sys
 
 import requests
@@ -56,6 +57,7 @@ def get_versions(branch):
     """Gets the configuration and assesses the versions."""
     url_config = "https://raw.githubusercontent.com/folio-org/platform-complete/{}/okapi-install.json".format(branch)
     exit_code = 0 # Continue processing to detect various issues, then return the result.
+    mod_re = re.compile(r"^(.+)-([0-9.]+)$")
     try:
         http_response = requests.get(url_config)
         http_response.raise_for_status()
@@ -73,7 +75,14 @@ def get_versions(branch):
             logger.error("Trouble loading JSON: %s", err)
             return 2
     for mod in data:
-        print(mod['id'])
+        match = re.search(mod_re, mod['id'])
+        if match:
+            mod_name = match.group(1)
+            mod_version = match.group(2)
+            logger.debug("%s %s", mod_name, mod_version)
+        else:
+            logger.error("Could not determine module version: %s", mod['id'])
+            exit_code = 1
     return exit_code
 
 def main():
