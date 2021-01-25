@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-01-20T04:30:30.978410+00:00"
+    "generatedDateTime": "2021-01-24T23:35:23.964401+00:00"
   },
   "repos": [
     {
@@ -630,7 +630,7 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Backend module for finc-config and finc-select.</p>"
+      "snippetIntro": "<p>Backend module for both ui-finc-config and ui-finc-select.</p>"
     },
     {
       "description": null,
@@ -960,6 +960,7 @@
       "description": null,
       "docDirName": null,
       "hintOas": true,
+      "isSpringway": true,
       "name": "mod-search",
       "ramlDirName": null,
       "repoLanguageHint": "java",
@@ -977,6 +978,15 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>Sending messages through delivery channels</p>"
+    },
+    {
+      "description": "FOLIO Backend Module for cross-app connectivity",
+      "docDirName": null,
+      "name": "mod-service-interaction",
+      "ramlDirName": null,
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": ""
     },
     {
       "description": null,
@@ -1409,6 +1419,14 @@
       "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>The Course Reserves UI Module, or <code>ui-courses</code>, is a Stripes UI module used for maintaining information about courses, and associated course reserves with them. (A 'Stripes UI module' is an NPM module that adheres to certain conventions that allow it to function within the <a href='https://github.com/folio-org/stripes/blob/master/README.md'>Stripes UI framework</a> that is part of FOLIO.)</p>"
+    },
+    {
+      "description": "A stripes app to display/customise FOLIO widgets",
+      "docDirName": null,
+      "name": "ui-dashboard",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": ""
     },
     {
       "description": "UI module: data export managing",
