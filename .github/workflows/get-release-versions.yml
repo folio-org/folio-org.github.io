@@ -37,7 +37,7 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Apply automatic changes
-        branch: tmp-release-versions
+        branch: ongoing-release-versions
         file_pattern: _data/*.json
     - name: Run if changes have been detected
       if: steps.auto-commit-action.outputs.changes_detected == 'true'
