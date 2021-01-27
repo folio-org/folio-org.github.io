@@ -34,7 +34,7 @@ jobs:
       run: python .github/workflows/get-release-versions/get_release_versions.py -b q3-2020 -l debug
 
     - name: Commit push and pr
-      uses: golfzaptw/action-commit-push-pr@v1
+      uses: golfzaptw/action-commit-push-pr@v1.0.2
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PREFIX_BRANCHES: 'tmp-release-versions'
