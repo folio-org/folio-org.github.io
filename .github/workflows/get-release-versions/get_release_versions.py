@@ -12,6 +12,7 @@ import os
 import pprint
 import re
 import sys
+from time import sleep
 
 import requests
 import github3
@@ -56,7 +57,9 @@ def get_options():
 def get_versions(branch):
     """Gets the configuration and assesses the versions."""
     url_config = "https://raw.githubusercontent.com/folio-org/platform-complete/{}/okapi-install.json".format(branch)
+    delay = 5 # sleep between api requests
     exit_code = 0 # Continue processing to detect various issues, then return the result.
+    repos_count = 0
     mod_re = re.compile(r"^(.+)-([0-9.]+)$")
     try:
         http_response = requests.get(url_config)
@@ -74,7 +77,15 @@ def get_versions(branch):
         except Exception as err:
             logger.error("Trouble loading JSON: %s", err)
             return 2
+    token_name = "ALL_REPOS_READ_ONLY"
+    token = os.environ.get(token_name)
+    if not token:
+        logger.critical("Missing environment: %s", token_name)
+        return 2
+    else:
+        github = github3.login(token=token)
     for mod in data:
+        repos_count += 1
         match = re.search(mod_re, mod['id'])
         if match:
             mod_name = match.group(1)
@@ -83,6 +94,26 @@ def get_versions(branch):
         else:
             logger.error("Could not determine module version: %s", mod['id'])
             exit_code = 1
+            continue
+        tag_name = "v" + mod_version
+        flag_tag_found = False
+        repo_short = github.repository("folio-org", mod_name)
+        tags = repo_short.tags(10)
+        for tag in tags:
+            logger.debug("  name=%s sha=%s", tag.name, tag.commit.sha)
+            if tag_name in tag.name:
+                release_obj = repo_short.release_from_tag(tag.name)
+                logger.debug("  name=%s published_at=%s target_commitish=%s", release_obj.name, release_obj.published_at, release_obj.target_commitish)
+                flag_tag_found = True
+                break
+        if not flag_tag_found:
+            logger.error("Could not determine release tag: %s", mod['id'])
+        # FIXME: testing
+        if repos_count == 3:
+            break
+        logger.debug("Sleeping %s seconds", delay)
+        sleep(delay)
+    logger.debug("Assessed %s repos.", repos_count)
     return exit_code
 
 def main():

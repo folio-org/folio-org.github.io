@@ -29,4 +29,6 @@ jobs:
         pip install -r .github/workflows/get-release-versions/requirements.txt
 
     - name: Run script
+      env:
+        ALL_REPOS_READ_ONLY: ${{ secrets.ALL_REPOS_READ_ONLY }}
       run: python .github/workflows/get-release-versions/get_release_versions.py -b q3-2020 -l debug
