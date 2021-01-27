@@ -42,3 +42,4 @@ jobs:
         COMMIT_MESSAGE: 'Update data file'
         TITLE_PR: 'Update release versions data'
         BODY_PR: ''
+
