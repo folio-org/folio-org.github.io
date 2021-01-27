@@ -134,7 +134,8 @@ def main():
     """Obtain okapi-install.json from platform-complete release branch and verify tags."""
     branch = get_options()
     (exit_code, repos_json) = get_versions(branch)
-    output_pn = "releases-backend-{}.json".format(branch)
+    os.makedirs("_data", exist_ok=True)
+    output_pn = os.path.join("_data", "releases-backend-{}.json".format(branch))
     with open(output_pn, "w") as output_fh:
         output_fh.write(json.dumps(repos_json, sort_keys=True, indent=2, separators=(",", ": ")))
         output_fh.write("\n")
