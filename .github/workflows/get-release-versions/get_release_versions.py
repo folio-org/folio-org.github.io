@@ -123,7 +123,7 @@ def get_versions(branch):
             exit_code = 1
         repos_json['repos'].append(repos_json_packet)
         # FIXME: testing
-        if repos_count == 3:
+        if repos_count == 4:
             break
         logger.debug("Sleeping %s seconds", delay)
         sleep(delay)
