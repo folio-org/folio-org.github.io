@@ -32,3 +32,13 @@ jobs:
       env:
         ALL_REPOS_READ_ONLY: ${{ secrets.ALL_REPOS_READ_ONLY }}
       run: python .github/workflows/get-release-versions/get_release_versions.py -b q3-2020 -l debug
+
+    - name: Commit push and pr
+      uses: golfzaptw/action-commit-push-pr@v1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PREFIX_BRANCHES: 'tmp-release-versions'
+        DEFAULT_BRANCHES: 'master'
+        COMMIT_MESSAGE: 'Update data file'
+        TITLE_PR: 'Update release versions data'
+        BODY_PR: ''
