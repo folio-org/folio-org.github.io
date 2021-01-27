@@ -8,6 +8,7 @@ if sys.version_info[0] < 3:
 import argparse
 import json
 import logging
+from operator import itemgetter
 import os
 import pprint
 import re
@@ -60,6 +61,10 @@ def get_versions(branch):
     delay = 5 # sleep between api requests
     exit_code = 0 # Continue processing to detect various issues, then return the result.
     repos_count = 0
+    repos_json = {}
+    repos_json["metadata"] = {}
+    repos_json["metadata"]["branch"] = branch
+    repos_json["repos"] = []
     mod_re = re.compile(r"^(.+)-([0-9.]+)$")
     try:
         http_response = requests.get(url_config)
@@ -84,7 +89,7 @@ def get_versions(branch):
         return 2
     else:
         github = github3.login(token=token)
-    for mod in data:
+    for mod in sorted(data, key=itemgetter('id')):
         repos_count += 1
         match = re.search(mod_re, mod['id'])
         if match:
@@ -95,31 +100,44 @@ def get_versions(branch):
             logger.error("Could not determine module version: %s", mod['id'])
             exit_code = 1
             continue
+        repos_json_packet = {}
+        repos_json_packet['name'] = mod_name
         tag_name = "v" + mod_version
         flag_tag_found = False
         repo_short = github.repository("folio-org", mod_name)
         tags = repo_short.tags(10)
         for tag in tags:
-            logger.debug("  name=%s sha=%s", tag.name, tag.commit.sha)
+            logger.debug("  tag_name=%s sha=%s", tag.name, tag.commit.sha)
             if tag_name in tag.name:
                 release_obj = repo_short.release_from_tag(tag.name)
-                logger.debug("  name=%s published_at=%s target_commitish=%s", release_obj.name, release_obj.published_at, release_obj.target_commitish)
+                logger.debug("  release_name=%s published_at=%s target_commitish=%s", release_obj.name, release_obj.published_at, release_obj.target_commitish)
+                repos_json_packet['releaseTag'] = tag.name
+                repos_json_packet['releaseName'] = release_obj.name
+                release_date = release_obj.published_at.isoformat(sep='T')
+                repos_json_packet['releaseDate'] = release_date
+                repos_json_packet['releaseTarget'] = release_obj.target_commitish
                 flag_tag_found = True
                 break
         if not flag_tag_found:
             logger.error("Could not determine release tag: %s", mod['id'])
+            exit_code = 1
+        repos_json['repos'].append(repos_json_packet)
         # FIXME: testing
         if repos_count == 3:
             break
         logger.debug("Sleeping %s seconds", delay)
         sleep(delay)
     logger.debug("Assessed %s repos.", repos_count)
-    return exit_code
+    return exit_code, repos_json
 
 def main():
     """Obtain okapi-install.json from platform-complete release branch and verify tags."""
     branch = get_options()
-    exit_code = get_versions(branch)
+    (exit_code, repos_json) = get_versions(branch)
+    output_pn = "releases-backend-{}.json".format(branch)
+    with open(output_pn, "w") as output_fh:
+        output_fh.write(json.dumps(repos_json, sort_keys=True, indent=2, separators=(",", ": ")))
+        output_fh.write("\n")
     logging.shutdown()
     return exit_code
 
