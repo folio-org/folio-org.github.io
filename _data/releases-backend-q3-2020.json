@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "branch": "q3-2020"
+  },
+  "repos": [
+    {
+      "name": "mod-agreements",
+      "releaseDate": "2020-11-06T16:00:28+00:00",
+      "releaseName": "Version 3.0.1",
+      "releaseTag": "v3.0.1",
+      "releaseTarget": "release/3.0.x"
+    },
+    {
+      "name": "mod-audit",
+      "releaseDate": "2020-11-20T14:39:26+00:00",
+      "releaseName": "v1.0.4",
+      "releaseTag": "v1.0.4",
+      "releaseTarget": "master"
+    },
+    {
+      "name": "mod-authtoken",
+      "releaseDate": "2020-09-30T18:51:35+00:00",
+      "releaseName": "v2.6.0",
+      "releaseTag": "v2.6.0",
+      "releaseTarget": "master"
+    }
+  ]
+}
