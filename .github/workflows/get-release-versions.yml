@@ -33,3 +33,16 @@ jobs:
         ALL_REPOS_READ_ONLY: ${{ secrets.ALL_REPOS_READ_ONLY }}
       run: python .github/workflows/get-release-versions/get_release_versions.py -b q3-2020 -l debug
 
+    - name: Commit changes, if any
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Apply automatic changes
+        branch: tmp-release-versions
+        file_pattern: _data/*.json
+    - name: Run if changes have been detected
+      if: steps.auto-commit-action.outputs.changes_detected == 'true'
+      run: echo "Changes were committed."
+    - name: Run if no changes have been detected
+      if: steps.auto-commit-action.outputs.changes_detected == 'false'
+      run: echo "There were no changes."
+
