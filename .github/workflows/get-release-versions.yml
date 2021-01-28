@@ -46,4 +46,3 @@ jobs:
     - name: Run if no changes have been detected
       if: ${{ steps.auto-commit-action.outputs.changes_detected == 'false' }}
       run: echo "There were no changes."
-
