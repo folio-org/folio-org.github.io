@@ -103,7 +103,7 @@ def get_versions(branch):
         if match:
             mod_name = match.group(1)
             mod_version = match.group(2)
-            logger.debug("%s %s", mod_name, mod_version)
+            logger.info("Assessing %s %s", mod_name, mod_version)
         else:
             logger.error("Could not determine module version: %s", mod['id'])
             exit_code = 1
