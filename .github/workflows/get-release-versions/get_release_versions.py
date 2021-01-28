@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
 
+"""
+Obtain okapi-install.json from platform-complete release branch and verify tags.
+Store JSON summary.
+
+   Returns:
+       0: Success.
+       1: One or more failures with processing.
+       2: Configuration issues.
+"""
+
 # pylint: disable=C0413
 import sys
 if sys.version_info[0] < 3:
@@ -10,9 +20,7 @@ import json
 import logging
 from operator import itemgetter
 import os
-import pprint
 import re
-import sys
 from time import sleep
 
 import requests
@@ -84,11 +92,11 @@ def get_versions(branch):
             return 2
     token_name = "ALL_REPOS_READ_ONLY"
     token = os.environ.get(token_name)
-    if not token:
+    if token:
+        github = github3.login(token=token)
+    else:
         logger.critical("Missing environment: %s", token_name)
         return 2
-    else:
-        github = github3.login(token=token)
     for mod in sorted(data, key=itemgetter('id')):
         repos_count += 1
         match = re.search(mod_re, mod['id'])
@@ -110,7 +118,6 @@ def get_versions(branch):
             logger.debug("  tag_name=%s sha=%s", tag.name, tag.commit.sha)
             if tag_name in tag.name:
                 release_obj = repo_short.release_from_tag(tag.name)
-                logger.debug("  release_name=%s published_at=%s target_commitish=%s", release_obj.name, release_obj.published_at, release_obj.target_commitish)
                 repos_json_packet['releaseTag'] = tag.name
                 repos_json_packet['releaseName'] = release_obj.name
                 release_date = release_obj.published_at.isoformat(sep='T')
@@ -122,16 +129,12 @@ def get_versions(branch):
             logger.error("Could not determine release tag: %s", mod['id'])
             exit_code = 1
         repos_json['repos'].append(repos_json_packet)
-        # FIXME: testing
-        if repos_count == 4:
-            break
         logger.debug("Sleeping %s seconds", delay)
         sleep(delay)
     logger.debug("Assessed %s repos.", repos_count)
     return exit_code, repos_json
 
 def main():
-    """Obtain okapi-install.json from platform-complete release branch and verify tags."""
     branch = get_options()
     (exit_code, repos_json) = get_versions(branch)
     os.makedirs("_data", exist_ok=True)

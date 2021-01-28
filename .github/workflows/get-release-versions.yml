@@ -2,6 +2,7 @@ name: get-release-versions
 
 # Get okapi-install.json from platform-complete release branch
 # and ensure version tags.
+# If changes then push to branch ongoing-release-versions
 
 on:
   push:
@@ -23,7 +24,6 @@ jobs:
 
     - name: Install dependencies
       run: |
-        echo "Report python version:"
         python -V
         python -m pip install --upgrade pip
         pip install -r .github/workflows/get-release-versions/requirements.txt
