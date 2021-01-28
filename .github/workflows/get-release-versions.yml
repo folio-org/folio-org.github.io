@@ -31,7 +31,7 @@ jobs:
     - name: Run script
       env:
         ALL_REPOS_READ_ONLY: ${{ secrets.ALL_REPOS_READ_ONLY }}
-      run: python .github/workflows/get-release-versions/get_release_versions.py -b q3-2020 -l debug
+      run: python .github/workflows/get-release-versions/get_release_versions.py -b q3-2020 -l info
 
     - name: Commit changes, if any
       id: auto-commit-action
