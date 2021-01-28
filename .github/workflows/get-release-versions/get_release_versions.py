@@ -131,7 +131,7 @@ def get_versions(branch):
         repos_json['repos'].append(repos_json_packet)
         logger.debug("Sleeping %s seconds", delay)
         sleep(delay)
-    logger.debug("Assessed %s repos.", repos_count)
+    logger.info("Assessed %s repos.", repos_count)
     return exit_code, repos_json
 
 def main():
