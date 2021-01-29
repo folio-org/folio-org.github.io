@@ -5,8 +5,8 @@ name: get-release-versions
 # If changes then push to branch ongoing-release-versions
 
 on:
-  push:
-    branches: [ folio-2976-wf-get-releases ]
+  schedule:
+    - cron: '35 01 * * SAT'
 
 jobs:
   job_1:
