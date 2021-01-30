@@ -1,6 +1,5 @@
 This is the source for "FOLIO Developers" at [dev.folio.org](https://dev.folio.org/)
 
-
 To contribute changes, please make the changes in a new branch and submit a
 pull request.
 
