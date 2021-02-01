@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-01-24T23:35:23.964401+00:00"
+    "generatedDateTime": "2021-01-31T23:10:30.222846+00:00"
   },
   "repos": [
     {
@@ -144,12 +144,12 @@
       "snippetIntro": ""
     },
     {
-      "description": "FOLIO reports and analytics",
+      "description": "FOLIO reporting/analytic queries",
       "docDirName": null,
       "name": "folio-analytics",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": "<p>This repository contains reports and other analytics developed for FOLIO and designed to run on the <a href='https://github.com/folio-org/ldp'>Library Data Platform</a>.  At present most of the content here consists of SQL reports developed by the FOLIO reporting community and based on the requirements of <a href='https://www.folio.org/community/support/'>FOLIO partner libraries</a>.  For more information about FOLIO reporting, see the <a href='https://wiki.folio.org/display/RPT/'>FOLIO Reporting Special Interest Group</a>.</p>"
+      "snippetIntro": "<p>This repository contains reports and other analytics developed for FOLIO and designed to run on the <a href='https://github.com/library-data-platform/ldp'>Library Data Platform</a>.  At present most of the content here consists of SQL reports developed by the FOLIO reporting community and based on the requirements of <a href='https://www.folio.org/community/support/'>FOLIO partner libraries</a>.  In addition to report development, FOLIO has a <a href='https://wiki.folio.org/display/RPT/'>Reporting Special Interest Group</a> that discusses reporting requirements and other related topics.</p>"
     },
     {
       "description": "Ansible playbook for FOLIO",
@@ -368,6 +368,17 @@
     {
       "description": null,
       "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-bursar-export",
+      "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": ""
+    },
+    {
+      "description": null,
+      "docDirName": null,
       "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
       "hintRmb": true,
       "isRmb": true,
@@ -381,7 +392,7 @@
       "description": null,
       "docDirName": null,
       "name": "mod-camunda",
-      "ramlDirName": null,
+      "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": ""
@@ -490,6 +501,26 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>FOLIO data export module.</p>"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "name": "mod-data-export-spring",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": ""
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "name": "mod-data-export-worker",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": ""
     },
     {
       "description": null,
@@ -908,8 +939,10 @@
       "description": "Backend for quickMARC editor",
       "docDirName": null,
       "hasDbSchema": null,
+      "hintOas": true,
       "hintRmb": true,
       "isRmb": null,
+      "isSpringway": true,
       "name": "mod-quick-marc",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
@@ -1339,6 +1372,14 @@
       "repoLanguageHint": "node",
       "repoType": "stripes",
       "snippetIntro": "<p>Stripes Vendor Dll is a tool which can be used to create a <a href='https://webpack.js.org/plugins/dll-plugin/'>DLL bundle</a>. The bundle currently includes all 3rd party dependencies (react, moment, etc) found in <a href='https://github.com/folio-org/stripes/blob/master/package.json'>stripes</a> plus couple additional stripes dependencies (stripes-components, stripes-connect,stripes-logger,stripes-util).</p>"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "stripes-webpack",
+      "repoLanguageHint": "node",
+      "repoType": "stripes",
+      "snippetIntro": "<p>Stripes Webpack contains webpack config files used for building and serving Folio bundles via <a href='https://github.com/folio-org/stripes-cli'>stripes-cli</a>.</p>"
     },
     {
       "description": "Stripes UI module: Management of Acquisition unit records",

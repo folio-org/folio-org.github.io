@@ -18,7 +18,7 @@ Take care to choose wisely for the [module name](/guidelines/naming-conventions/
 ## Devops assistance
 
 Open Jira tickets, so that the project is integrated into Jenkins, the correct permissions are set on the repo, and an appropriate Jira project can be created (if applicable).
-There is one example at [FOLIO-2113](https://issues.folio.org/browse/FOLIO-2113).
+There is one example at [FOLIO-2892](https://issues.folio.org/browse/FOLIO-2892).
 Specify "Development Team: FOLIO DevOps" to be prioritized and scheduled.
 
 ## Configuration at GitHub
