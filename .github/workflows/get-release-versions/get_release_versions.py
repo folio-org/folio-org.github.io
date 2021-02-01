@@ -119,6 +119,7 @@ def get_versions(branch):
             if tag_name in tag.name:
                 release_obj = repo_short.release_from_tag(tag.name)
                 repos_json_packet['releaseTag'] = tag.name
+                repos_json_packet['releaseSha'] = tag.commit.sha
                 repos_json_packet['releaseName'] = release_obj.name
                 release_date = release_obj.published_at.isoformat(sep='T')
                 repos_json_packet['releaseDate'] = release_date
