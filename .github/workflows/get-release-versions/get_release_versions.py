@@ -26,7 +26,7 @@ from time import sleep
 import requests
 import github3
 
-SCRIPT_VERSION = "1.0.0"
+SCRIPT_VERSION = "1.0.1"
 
 LOGLEVELS = {
     "debug": logging.DEBUG,
@@ -103,13 +103,16 @@ def get_versions(branch):
         if match:
             mod_name = match.group(1)
             mod_version = match.group(2)
-            logger.info("Assessing %s %s", mod_name, mod_version)
         else:
             logger.error("Could not determine module version: %s", mod['id'])
             exit_code = 1
             continue
+        #if not mod_name in ['mod-notes', 'mod-oai-pmh']: # testing
+            #continue
+        logger.info("Assessing %s %s", mod_name, mod_version)
         repos_json_packet = {}
         repos_json_packet['name'] = mod_name
+        repos_json_packet['version'] = mod_version
         tag_name = "v" + mod_version
         flag_tag_found = False
         repo_short = github.repository("folio-org", mod_name)
@@ -127,8 +130,12 @@ def get_versions(branch):
                 flag_tag_found = True
                 break
         if not flag_tag_found:
-            logger.error("Could not determine release tag: %s", mod['id'])
-            exit_code = 1
+            logger.warning("Could not determine release tag: %s", mod['id'])
+            repos_json_packet['releaseTag'] = None
+            repos_json_packet['releaseSha'] = None
+            repos_json_packet['releaseName'] = None
+            repos_json_packet['releaseDate'] = None
+            repos_json_packet['releaseTarget'] = None
         repos_json['repos'].append(repos_json_packet)
         logger.debug("Sleeping %s seconds", delay)
         sleep(delay)
