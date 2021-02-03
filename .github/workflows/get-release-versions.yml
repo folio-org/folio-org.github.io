@@ -6,7 +6,7 @@ name: get-release-versions
 
 on:
   schedule:
-    - cron: '15 00 * * *'
+    - cron: '20 04 * * *'
 
 jobs:
   job_1:
@@ -15,6 +15,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.PAT_PUSH }}
 
     - name: Setup python
       uses: actions/setup-python@v2
