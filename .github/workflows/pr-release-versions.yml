@@ -6,8 +6,8 @@ name: pr-release-versions
 on:
   push:
     branches: [ ongoing-release-versions ]
-    paths:
-      - '_data/releases-*.json'
+#    paths:
+#      - '_data/releases-*.json'
 
 jobs:
   create-pr:
