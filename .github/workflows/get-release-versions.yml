@@ -6,7 +6,7 @@ name: get-release-versions
 
 on:
   schedule:
-    - cron: '20 04 * * *'
+    - cron: '20 00 * * *'
 
 jobs:
   job_1:
