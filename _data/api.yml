@@ -651,15 +651,6 @@ mod-data-import-converter-storage:
       - raml-storage
     ramlutil: ramls/raml-storage/raml-util
 
-mod-data-loader:
-  - label: null
-    directory: ramls
-    files:
-      - loader
-    excludes:
-      - inventory
-    ramlutil: ramls/inventory/raml-util
-
 mod-data-export:
   - label: null
     version1: true
