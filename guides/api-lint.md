@@ -90,6 +90,8 @@ Examples:
 
 * [mod-tags](https://github.com/folio-org/mod-tags/blob/master/Jenkinsfile)
   -- RAML
+* [mod-search](https://github.com/folio-org/mod-search/blob/master/Jenkinsfile)
+  -- OAS
 
 ## Interpretation of messages
 
