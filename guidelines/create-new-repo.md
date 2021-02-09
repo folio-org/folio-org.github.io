@@ -19,11 +19,11 @@ Take care to choose wisely for the [module name](/guidelines/naming-conventions/
 
 Open Jira tickets, so that the project is integrated into Jenkins, the correct permissions are set on the repo, and an appropriate Jira project can be created (if applicable).
 There is one example at [FOLIO-2892](https://issues.folio.org/browse/FOLIO-2892).
-Specify "Development Team: FOLIO DevOps" to be prioritized and scheduled.
+Specify "Development Team: FOLIO DevOps" (our team will prioritize and schedule).
 
 ## Configuration at GitHub
 
-If the "New" button is not available to you at [github.com/folio-org](https://github.com/folio-org) then [contact](/community/#collaboration-tools) FOLIO infrastructure (e.g. via the issue tracker or the #support channel).
+If the "New" button is not available to you at [github.com/folio-org](https://github.com/folio-org) then [contact](/community/#collaboration-tools) FOLIO infrastructure (e.g. via the issue tracker).
 
 Otherwise follow the GitHub prompts to create a new repository, and if needed to then import an existing repository.
 
