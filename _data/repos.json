@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-02-05T01:40:58.996048+00:00"
+    "generatedDateTime": "2021-02-09T01:50:56.443388+00:00"
   },
   "repos": [
     {
@@ -140,9 +140,9 @@
       "docDirName": null,
       "name": "edge-search-srs",
       "ramlDirName": null,
-      "repoLanguageHint": "java",
+      "repoLanguageHint": "other",
       "repoType": "backend-edge",
-      "snippetIntro": "<p>Microservice to allow 3rd party discovery services to perform FOLIO patron actions via the discovery service's UI.</p>"
+      "snippetIntro": ""
     },
     {
       "description": "3M Standard Interchange Protocol (SIP) support in FOLIO",
@@ -945,15 +945,6 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>API for quickMARC - in-app editor for MARC records in SRS.</p>"
-    },
-    {
-      "description": null,
-      "docDirName": null,
-      "name": "mod-receiving",
-      "ramlDirName": null,
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>Backend module with business logic for receiving receive and checking-in materials that have been  ordered.</p>"
     },
     {
       "description": "Backend module for remote storage.",
