@@ -21,7 +21,7 @@ jobs:
       uses: repo-sync/pull-request@v2
       with:
         destination_branch: "master"
-        pr_title: "Update data for release versions"
+        pr_title: "Auto: Update data for release versions"
         pr_body: "Automated PR via workflow get-release-versions"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: output-url

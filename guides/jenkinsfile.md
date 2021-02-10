@@ -119,6 +119,9 @@ defined in package.json.  'test' is typically used for unit tests.
 * `runTestOptions` -- Provide 'yarn test' with additional options.
 The example shows options for karma-based testing.
 
+* `sonarScanDirs` -- List of directories (comma-separated string) that the Sonarqube scanner should scan.
+(Default: './src')
+
 * `runRegression` -- Execute the UI regression test suite from 'ui-testing' against a real
 FOLIO backend. Option 'full' will execute the full test suite. Option 'partial' will execute only tests
 specific to the UI module. Option 'none' will disable regression testing.

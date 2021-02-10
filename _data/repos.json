@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-01-31T23:10:30.222846+00:00"
+    "generatedDateTime": "2021-02-09T01:50:56.443388+00:00"
   },
   "repos": [
     {
@@ -51,6 +51,15 @@
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
       "snippetIntro": "<p>Common/Shared library for Edge APIs.</p>"
+    },
+    {
+      "description": "Integrate a direct single record import via OCLC Connexion",
+      "docDirName": null,
+      "name": "edge-connexion",
+      "ramlDirName": null,
+      "repoLanguageHint": "other",
+      "repoType": "backend-edge",
+      "snippetIntro": ""
     },
     {
       "description": "Bridge the gap between Dematic remote storage provider and FOLIO",
@@ -125,6 +134,15 @@
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
       "snippetIntro": "<p>Edge API to interface with FOLIO for 3rd party discovery services to determine holdings availability.</p>"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "edge-search-srs",
+      "ramlDirName": null,
+      "repoLanguageHint": "other",
+      "repoType": "backend-edge",
+      "snippetIntro": ""
     },
     {
       "description": "3M Standard Interchange Protocol (SIP) support in FOLIO",
@@ -348,15 +366,6 @@
       "snippetIntro": "<p>The mod-audit module provides API to access and modify audit data.</p>"
     },
     {
-      "description": "Module for implementing Okapi Pre and Post filters to capture audit data",
-      "docDirName": null,
-      "name": "mod-audit-filter",
-      "ramlDirName": null,
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>The audit-filter module implements Okapi PRE and POST filters to capture audit data. It then calls mod-audit to persist the data.</p>"
-    },
-    {
       "description": "Module for filtering requests based on JWT tokens",
       "docDirName": null,
       "name": "mod-authtoken",
@@ -542,18 +551,6 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>Data Import Converter Storage.</p>"
-    },
-    {
-      "description": "RMB based module used to load test data",
-      "docDirName": null,
-      "hasDbSchema": null,
-      "hintRmb": true,
-      "isRmb": null,
-      "name": "mod-data-loader",
-      "ramlDirName": "ramls",
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>RMB-based module used to load test data.</p>"
     },
     {
       "description": "Glint server module wrapper for FOLIO",
@@ -950,16 +947,7 @@
       "snippetIntro": "<p>API for quickMARC - in-app editor for MARC records in SRS.</p>"
     },
     {
-      "description": null,
-      "docDirName": null,
-      "name": "mod-receiving",
-      "ramlDirName": null,
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>Backend module with business logic for receiving receive and checking-in materials that have been  ordered.</p>"
-    },
-    {
-      "description": null,
+      "description": "Backend module for remote storage.",
       "docDirName": null,
       "hintOas": true,
       "isSpringway": true,
@@ -1017,7 +1005,7 @@
       "docDirName": null,
       "name": "mod-service-interaction",
       "ramlDirName": null,
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "gradle",
       "repoType": "backend-mod",
       "snippetIntro": ""
     },
@@ -1243,7 +1231,7 @@
       "name": "spring-module-core",
       "repoLanguageHint": "java",
       "repoType": "other",
-      "snippetIntro": "<p>Spring module core libraries for Spring development with Okapi.</p>"
+      "snippetIntro": "<p>Spring module core libraries for Spring development with FOLIO.</p>"
     },
     {
       "description": "UI framework for building front-end FOLIO modules",
