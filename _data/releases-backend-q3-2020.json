@@ -302,12 +302,12 @@
     },
     {
       "name": "mod-oai-pmh",
-      "releaseDate": null,
-      "releaseName": null,
-      "releaseSha": null,
-      "releaseTag": null,
-      "releaseTarget": null,
-      "version": "3.2.8"
+      "releaseDate": "2020-11-12T17:05:26+00:00",
+      "releaseName": "v3.2.4",
+      "releaseSha": "8bc656661f989c4e01aa1ce334fc92f033b6c520",
+      "releaseTag": "v3.2.4",
+      "releaseTarget": "master",
+      "version": "3.2.4"
     },
     {
       "name": "mod-orders",
