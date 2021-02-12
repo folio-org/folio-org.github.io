@@ -316,8 +316,11 @@ mod-kb-ebsco-java:
     files:
       - assigned-users
       - access-types
+      - costperuse
+      - currencies
       - custom-labels
       - eholdings
+      - export
       - kb-credentials
       - packages
       - providers
@@ -325,6 +328,7 @@ mod-kb-ebsco-java:
       - resources
       - tags
       - titles
+      - uc
     ramlutil: ramls/raml-util
 
 mod-oai-pmh:
