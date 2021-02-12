@@ -1,0 +1,50 @@
+name: get-release-versions
+
+# Get okapi-install.json from platform-complete release branch
+# and ensure version tags.
+# If changes then push to branch ongoing-release-versions
+
+on:
+  schedule:
+    - cron: '20 00 * * *'
+
+jobs:
+  job_1:
+    name: Extract and upload
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.PAT_PUSH }}
+
+    - name: Setup python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+
+    - name: Install dependencies
+      run: |
+        python -V
+        python -m pip install --upgrade pip
+        pip install -r .github/workflows/get-release-versions/requirements.txt
+
+    - name: Run script
+      env:
+        ALL_REPOS_READ_ONLY: ${{ secrets.ALL_REPOS_READ_ONLY }}
+      run: python .github/workflows/get-release-versions/get_release_versions.py -b q3-2020 -l info
+
+    - name: Commit changes, if any
+      id: auto-commit-action
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Apply automatic changes
+        branch: ongoing-release-versions
+        file_pattern: _data/*.json
+    - name: Run if changes have been detected
+      if: ${{ steps.auto-commit-action.outputs.changes_detected == 'true' }}
+      run: echo "Changes were committed."
+    - name: Run if no changes have been detected
+      if: ${{ steps.auto-commit-action.outputs.changes_detected == 'false' }}
+      run: echo "There were no changes."

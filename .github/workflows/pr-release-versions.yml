@@ -1,0 +1,29 @@
+name: pr-release-versions
+
+# If there is a change to this branch then create PR.
+# Changes would have been pushed here by get-release-versions
+
+on:
+  push:
+    branches: [ ongoing-release-versions ]
+    paths:
+      - '_data/releases-*.json'
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: pull-request
+      id: open-pr
+      uses: repo-sync/pull-request@v2
+      with:
+        destination_branch: "master"
+        pr_title: "Auto: Update data for release versions"
+        pr_body: "Automated PR via workflow get-release-versions"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: output-url
+      run: echo ${{steps.open-pr.outputs.pr_url}}
+

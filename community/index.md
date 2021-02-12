@@ -95,6 +95,10 @@ Some of the important forums to collaborate, discuss FOLIO, interact with other 
   </tbody>
 </table>
 
+## Governance Model
+
+Refer to the Wiki [FOLIO Governance Model](https://wiki.folio.org/display/COMMUNITY/FOLIO+Governance+Model).
+
 ## Engineering teams
 
 The FOLIO developer community consists of:

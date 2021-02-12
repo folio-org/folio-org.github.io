@@ -14,9 +14,19 @@ There is a separate procedure to [install a new front-end module](/guides/instal
 
 (After the new module has been operating in snapshot and testing environments, and an initial release is ready to be made, then instead follow the [release procedures](/guidelines/release-procedures/#add-to-platforms).)
 
+## Avoid typical mistakes
+
+Before proceeding, ensure that the backend module does not make some of the typical mistakes that cause disruption.
+
+Note that this is not an exhaustive list.
+
+* The port numbers are matching -- the same in ModuleDescriptor, Dockerfile, and in program code and configuration.
+* The module version number (e.g. in Maven POM) is a semantic version number and snapshot designator, i.e. in mainline branch it should be `x.y.z-SNAPSHOT`. Avoid common mistakes like `x.y-SNAPSHOT` or `x.y.z` with no appended `-SNAPSHOT`.
+* Other ...
+
 ## Verify MD and required interfaces
 
-First ensure that this new module's [ModuleDescriptor](/guides/module-descriptor/) is deployed and that any required interfaces are available.
+Ensure that this new module's [ModuleDescriptor](/guides/module-descriptor/) is deployed and that any required interfaces are available.
 
 For example, consider the `mod-notes` module.
 Obtain its MD from the registry and extract the "requires" section:

@@ -81,7 +81,6 @@ data-import:
   modules:
     - mod-data-import
     - mod-data-import-converter-storage
-    - mod-data-loader
     - mod-data-export
     - mod-source-record-manager
     - mod-source-record-storage

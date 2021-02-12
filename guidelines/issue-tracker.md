@@ -142,12 +142,12 @@ Please add relevant Comments.
 
 Other people will create tracker Links between relevant issues.
 
-Using an Issue identifier within text Comments will automatically link to
-it, e.g. `FOLIO-298`.
-Note that it must be upper-case.
+Using an Issue identifier within Jira text Comments will automatically link to
+it, e.g. `FOLIO-298`. Note that it must be upper-case with no spaces.
 
 Using such an issue identifier in git commit messages and pull request titles, will also automatically
 link the Issue to the commits.
+Refer to [Pull requests checklists](/guidelines/pull-requests-checklists) requirements for using Jira ticket identifiers in pull-requests and commit messages.
 
 Provide other relevant bi-directional links, for example GitHub pull requests and
 Discuss topics.
@@ -158,6 +158,6 @@ Various issue Filters are available via the "Issues : Search" menu.
 For example, the "Added recently"
 and "Updated recently" filters help to be aware of recent action.
 
-Create your own filters. Use one as a base, then twiddle and Save As.
+Create your own filters. Use one as a base, then adjust and Save As.
 
 There are some example filters at [Manage notifications to keep abreast](/guides/manage-notifications/).
