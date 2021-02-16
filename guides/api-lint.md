@@ -104,4 +104,5 @@ Note that if there are only warnings but no violations, then nothing is presente
 
 Note that this `api-lint` tool is more thorough than our previous CI tool (based on raml-cop and its underlying raml-1-parser).
 So projects might find new violations being reported.
+(See some migration issues at [FOLIO-3017](https://issues.folio.org/browse/FOLIO-3017).)
 
