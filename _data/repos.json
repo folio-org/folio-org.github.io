@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-02-09T01:50:56.443388+00:00"
+    "generatedDateTime": "2021-02-15T23:05:29.581778+00:00"
   },
   "repos": [
     {
@@ -138,11 +138,13 @@
     {
       "description": null,
       "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
       "name": "edge-search-srs",
       "ramlDirName": null,
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": ""
+      "snippetIntro": "<p>Microservice provides wide-search capabilities of marc records  in the mod-source-record-storage(SRS) for 3rd party discovery services</p>"
     },
     {
       "description": "3M Standard Interchange Protocol (SIP) support in FOLIO",
@@ -383,7 +385,7 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "<p>Module to provide feesfines export data by scheduling.</p>"
     },
     {
       "description": null,
@@ -1516,6 +1518,14 @@
     {
       "description": null,
       "docDirName": null,
+      "name": "ui-export-manager",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": ""
+    },
+    {
+      "description": null,
+      "docDirName": null,
       "name": "ui-finance",
       "repoLanguageHint": "node",
       "repoType": "ui",
@@ -1624,6 +1634,14 @@
       "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>The ui-organizations allows for the management of Organization records in FOLIO. It includes summary information, contact information and other details regarding the organization interaction and preferences.</p>"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "ui-plugin-bursar-export",
+      "repoLanguageHint": "node",
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>bursar-export</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='bursar-export'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": null,
