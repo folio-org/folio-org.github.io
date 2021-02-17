@@ -1,4 +1,4 @@
-name: list-repos-api.yml
+name: list-repos-api
 
 # When there is a change to _data/repos.json file
 # then list the repos that are API-related.
