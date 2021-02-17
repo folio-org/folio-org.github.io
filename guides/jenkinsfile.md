@@ -63,14 +63,15 @@ It will be published to the FOLIO Module Descriptor registry.
 [RAML](/guides/commence-a-module/#back-end-ramls) and Schema files.
 (Default: false)
 
-* `runLintRamlCop` -- Run "[raml-cop](/guides/raml-cop/)" (and other tests) on back-end modules that have declared [RAML](/guides/commence-a-module/#back-end-ramls) in api.yml configuration.
+* `doApiLint` -- Run "[api-lint](/guides/api-lint/)" to assess API descriptions, schema, and examples -- both [RAML](/guides/commence-a-module/#back-end-ramls) and OpenAPI (OAS).
+See [explanation](/guides/api-lint/#usage) of required and optional parameters.
+Also assists with [Describe schema and properties](/guides/describe-schema/).
+(Default: false)
+
+* `runLintRamlCop` -- Deprecated -- Run "[raml-cop](/guides/raml-cop/)" (and other tests) on back-end modules that have declared [RAML](/guides/commence-a-module/#back-end-ramls) in api.yml configuration.
 Also assists with [Describe schema and properties](/guides/describe-schema/).
 (Default: false)
 (Deprecated. See doApiLint.)
-
-* `doApiLint` -- Run "[api-lint](/guides/api-lint/)" to assess API descriptions, schema, and examples -- both [RAML](/guides/commence-a-module/#back-end-ramls) and OpenAPI (OAS).
-See [explanation](/guides/api-lint/#usage) of required and optional parameters.
-(Default: false)
 
 If we are creating and deploying a Docker image as part of the module's artifacts, specify
 'doDocker' with 'buildJavaDocker' (for Spring-based modules instead use the 'buildDocker') and the following options:
