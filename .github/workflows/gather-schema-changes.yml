@@ -1,0 +1,51 @@
+name: gather-schema-changes
+
+# Use the data file prepared by workflow get-release-versions.
+# For each module, compare its changes for API schema and DB schema
+# between latest release and current mainline.
+
+on:
+  schedule:
+    - cron: '20 03 * * 1,4'
+
+jobs:
+  job_1:
+    name: Compare and publish
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+
+    - name: Install Python dependencies
+      run: |
+        python -V
+        python -m pip install --upgrade pip
+        pip install -r .github/workflows/gather-schema-changes/requirements.txt
+
+    - name: Install other dependencies
+      run: brew install jd
+
+    - name: Run script
+      run: python .github/workflows/gather-schema-changes/gather_schema_changes.py -b q3-2020 -l info
+
+    - name: Add media type
+      run: echo -e 'text/plain\tdiff' | sudo tee -a /etc/mime.types
+
+    - name: Publish to S3
+      uses: sai-sharan/aws-s3-sync-action@v0.1.0
+      with:
+        access_key: ${{ secrets.S3_ACCESS_KEY }}
+        secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+        region: 'us-east-1'
+        source: 'schemadiff'
+        destination_bucket: 'foliodocs'
+        destination_prefix: 'schemadiff'
+        delete: false
+        quiet: true
+
