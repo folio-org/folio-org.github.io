@@ -63,6 +63,11 @@ It will be published to the FOLIO Module Descriptor registry.
 [RAML](/guides/commence-a-module/#back-end-ramls) and Schema files.
 (Default: false)
 
+* `doUploadApidocs` -- If the module generates API documentation during its Maven phase, then upload to S3.
+Uploads all docs found in the "`target/apidocs`" directory.
+Note: This is additional to "`publishAPI`" and is not yet linked in to the [API documentation](/reference/api/). More explanation at [FOLIO-3008](https://issues.folio.org/browse/FOLIO-3008).
+(Default: false)
+
 * `doApiLint` -- Run "[api-lint](/guides/api-lint/)" to assess API descriptions, schema, and examples -- both [RAML](/guides/commence-a-module/#back-end-ramls) and OpenAPI (OAS).
 See [explanation](/guides/api-lint/#usage) of required and optional parameters.
 Also assists with [Describe schema and properties](/guides/describe-schema/).
@@ -135,4 +140,6 @@ specific to the UI module. Option 'none' will disable regression testing.
 
 There are other options available to 'buildNPM', 'buildMvn', and 'buildJavaDocker' for certain
 corner cases. Please ask for assistance.
+
+<div class="folio-spacer-content"></div>
 
