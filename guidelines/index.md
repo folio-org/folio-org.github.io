@@ -47,5 +47,25 @@ to manage the development process.
 - [Team versus module responsibility matrix](https://wiki.folio.org/display/REL/Team+vs+module+responsibility+matrix).
 - [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/).
 
-<div class="folio-spacer-content"></div>
+## Other statements and policies
+
+### Code of Conduct
+
+Refer to the Wiki [FOLIO Code of Conduct](https://wiki.folio.org/display/COMMUNITY/FOLIO+Code+of+Conduct).
+
+### Acceptable Use Policy
+
+Refer to the Wiki [FOLIO Acceptable Use Policy](https://wiki.folio.org/display/SEC/FOLIO+Acceptable+Use+Policy).
+
+### Safe Harbor Statement
+
+As an open source project, FOLIO ([folio.org](https://folio.org)) relies on contributions from the community and this includes discovering defects and potential security flaws. 
+
+As a result FOLIO may refrain from bringing any legal action against anyone who makes a good faith effort to use or test FOLIO in accordance with our [Acceptable Use Policy](https://wiki.folio.org/display/SEC/FOLIO+Acceptable+Use+Policy). More specifically, we may, in our sole discretion, waive any restrictions in our Acceptable Use Policy for the limited purpose of your security research for the betterment of the FOLIO project. This may include any claim under the DMCA for circumventing technological measures to protect the services and applications eligible under this policy. 
+
+We understand that FOLIO software will be installed on various organizations’ systems and will be interconnected with third-party systems and services. While we can authorize your research on FOLIO’s systems and services, and promise that FOLIO may refrain from bringing or threatening litigation against you for your efforts under this policy, we cannot authorize efforts on any other organization’s systems or on third-party products or guarantee they won’t pursue legal action against you. 
+
+Please contact us at `security@folio.org` before engaging in conduct that may be inconsistent with or unaddressed by this policy. We reserve the sole right to make the determination of whether a violation of this policy is accidental or in good faith, and proactive contact to us before engaging in any action is a significant factor in that decision. If in doubt, ask us first!
+
+And, you are expected, as always, to comply with all laws applicable to you.
 
