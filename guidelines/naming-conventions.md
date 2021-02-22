@@ -27,6 +27,7 @@ Take care to choose wisely for the module/repository name. It will be disruptive
 The name uses the following scheme with a consistent prefix and hyphen-separated words:
 
 * `mod-` prefix for [back-end modules](/source-code/map/#backend-mod) (e.g. mod-users, mod-inventory-storage).
+* `edge-` prefix for [back-end modules](/source-code/map/#backend-edge) that connect to systems external to FOLIO (in particular, endpoints for standard protocols like NCIP)
 * `ui-` prefix for [front-end UI modules](/source-code/map/#ui) (e.g. ui-users).
 * `ui-plugin-` prefix for [front-end UI plugin modules](/source-code/map/#ui-plugin) (e.g. ui-plugin-find-instance).
 * `stripes-` prefix for [Stripes modules](/source-code/map/#stripes) (e.g. stripes-core).
