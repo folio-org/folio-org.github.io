@@ -20,11 +20,11 @@ These include FOLIO Forums, monthly Sprint Reviews, and various special topics.
 
 ## One recent example
 
-FOLIO Forum: Reporting Community Update on Building Reports
-(see [introduction](https://discuss.folio.org/t/folio-forum-reporting-community-update-on-building-reports/2893)).
+FOLIO Forum: Getting Started with FOLIO Reporting 1.0
+(see [introduction](https://discuss.folio.org/t/folio-forum-getting-started-with-folio-reporting-1-0/3024)).
 
 <div class="widget">
-{%- include widgets/youtube-player.html video='PvjKd1wrufA' -%}
+{%- include widgets/youtube-player.html video='kRz34WsZxFk' -%}
 </div>
 
 ## Selected others
