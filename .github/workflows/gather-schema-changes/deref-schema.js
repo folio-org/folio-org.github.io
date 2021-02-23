@@ -7,7 +7,13 @@ const inPath = path.resolve(__dirname, inFn)
 const outFn = process.argv[3];
 const outPath = path.resolve(__dirname, outFn)
 
-RefParser.dereference(inPath, (err, schema) => {
+const parserOptions = {
+  "dereference": {
+    "circular": "ignore"
+  }
+};
+
+RefParser.dereference(inPath, parserOptions, (err, schema) => {
   if (err) {
     process.exitCode = 1
     console.error(err);
