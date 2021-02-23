@@ -21,6 +21,7 @@ import fnmatch
 import json
 import logging
 import os
+import pprint
 from shutil import make_archive
 from shutil import move
 from shutil import copytree
@@ -29,8 +30,9 @@ import tempfile
 
 import requests
 import sh
+import yaml
 
-SCRIPT_VERSION = "1.1.0"
+SCRIPT_VERSION = "1.2.0"
 
 LOGLEVELS = {
     "debug": logging.DEBUG,
@@ -119,6 +121,21 @@ def get_repo_details(repos, repo_name):
             break
     return repo_details
 
+def configure_excludes():
+    """Configure the excluded directories and excluded files."""
+    # FIXME: If apiExcludes in module's Jenkinsfile, then exclude them too
+    exclude_dirs_list = ["raml-util", "raml-storage", "acq-models",
+        "rtypes", "traits", "bindings", "examples", "_examples"
+        "node_modules", ".git"]
+    exclude_files = []
+    exclude_dirs = set(exclude_dirs_list)
+    #logger.debug("Excluding directories for os.walk: %s", exclude_dirs)
+    return exclude_dirs, exclude_files
+
+def construct_raml_include(loader, node):
+    "Add a special construct for YAML loader"
+    return loader.construct_yaml_str(node)
+
 def prepare_s3_publish(branch):
     """Prepares the generated files for publish to S3.
     A Github workflow action follows to do the actual publish.
@@ -189,9 +206,10 @@ def show_api_diff(repo_name, version, release_sha, api_directory, branch):
                         errors.append(msg)
                         return status, errors, files
                     else:
+                        (exclude_dirs, exclude_files) = configure_excludes()
                         logger.debug("Determining api schema diffs ...")
-                        schemas_release = find_api_schemas(release_api_dir)
-                        schemas_main = find_api_schemas(main_api_dir)
+                        schemas_release = find_api_schemas(release_api_dir, exclude_dirs, exclude_files)
+                        schemas_main = find_api_schemas(main_api_dir, exclude_dirs, exclude_files)
                         (schemas_common, schemas_old, schemas_new) = list_common_schemas(
                             release_api_dir, main_api_dir, schemas_release, schemas_main)
                         files_list = process_api_schemas(
@@ -209,24 +227,66 @@ def show_api_diff(repo_name, version, release_sha, api_directory, branch):
                                 file_record['fileName'] = schema_fn
                                 file_record['state'] = 'added'
                                 files.append(file_record)
+                        schemas_parent_release = find_api_schemas_parent(release_api_dir, exclude_dirs, exclude_files)
+                        schemas_parent_main = find_api_schemas_parent(main_api_dir, exclude_dirs, exclude_files)
+                        (schemas_common, schemas_old, schemas_new) = list_common_schemas(
+                            release_api_dir, main_api_dir, schemas_parent_release, schemas_parent_main)
+                        #logger.debug("schemas_common_parent=%s", schemas_common)
     return status, errors, files
 
-def find_api_schemas(api_dir):
+def find_api_schemas(api_dir, exclude_dirs, exclude_files):
     """Locate the list of relevant schemas."""
-    exclude_dirs_list = ["raml-util", "raml-storage", "acq-models",
-        "rtypes", "traits", "bindings", "examples",
-        "node_modules", ".git"]
-    exclude_files = []
-    # FIXME: If apiExcludes in Jenkinsfile then exclude them too
-    exclude_dirs = set(exclude_dirs_list)
-    #logger.debug("Excluding directories for os.walk: %s", exclude_dirs)
     schema_files = []
     for root, dirs, files in os.walk(api_dir, topdown=True):
         dirs[:] = [d for d in dirs if d not in exclude_dirs]
-        for extension in ("*.json", "*.schema"):
+        for extension in ["*.json", "*.schema"]:
             for schema_fn in fnmatch.filter(files, extension):
                 if not schema_fn in exclude_files:
                     schema_files.append(os.path.join(root, schema_fn))
+    return sorted(schema_files)
+
+def find_api_schemas_parent(api_dir, exclude_dirs, exclude_files):
+    """Locate the list of relevant parent schemas.
+    These are declared in the api description files.
+    """
+    api_files = []
+    schema_files = set()
+    for root, dirs, files in os.walk(api_dir, topdown=True):
+        dirs[:] = [d for d in dirs if d not in exclude_dirs]
+        for extension in ["*.raml"]:
+            for api_fn in fnmatch.filter(files, extension):
+                if not api_fn in exclude_files:
+                    api_files.append(os.path.join(root, api_fn))
+    logger.debug("api_files=%s", api_files)
+    # get the declared RAML "types"
+    for api_fn in api_files:
+        api_subdir, api_fn_local = os.path.split(os.path.relpath(api_fn, start=api_dir))
+        with open(api_fn) as input_fh:
+            try:
+                content = yaml.safe_load(input_fh)
+            except yaml.YAMLError as err:
+                logger.critical("Trouble parsing as YAML file '%s': %s", api_fn, err)
+            else:
+                try:
+                    types = content["types"]
+                except KeyError:
+                    #logger.debug("No types were declared in '%s'", api_fn)
+                    pass
+                else:
+                    for decl in types:
+                        type_fn = types[decl]
+                        if isinstance(type_fn, str):
+                            type_pn = os.path.normpath(os.path.join(api_dir, api_subdir, type_fn))
+                            # The "types" can be other than schema.
+                            file_root, file_extension = os.path.splitext(type_pn)
+                            if not file_extension in [".json", ".schema"]:
+                                continue
+                            if not os.path.exists(type_pn):
+                                logger.warning("Missing schema file '%s'. Declared in the RAML types section.", type_fn)
+                            else:
+                                #FIXME: need to weed out "raml-util" etc. paths
+                                schema_files.add(type_pn)
+                                logger.debug("type_fn=%s", type_pn)
     return sorted(schema_files)
 
 def list_common_schemas(release_api_dir, main_api_dir, schemas_release, schemas_main):
@@ -341,12 +401,16 @@ def main():
     json_versions = get_config_data(url_versions)
     json_repos = get_config_data(url_repos)
     global DATE_TIME
+    # The yaml parser gags on the "!include".
+    # http://stackoverflow.com/questions/13280978/pyyaml-errors-on-in-a-string
+    yaml.add_constructor(u"!include", construct_raml_include, Loader=yaml.SafeLoader)
     for mod in json_versions['repos']:
         repo_name = mod['name']
         DATE_TIME = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')
         #test_repos = ['mod-notes', 'mod-configuration']
-        #if not repo_name in test_repos: # testing
-            #continue
+        test_repos = ['mod-notes']
+        if not repo_name in test_repos: # testing
+            continue
         logger.info("Assessing %s %s", repo_name, mod['version'])
         summary_json = {}
         summary_json["metadata"] = {}
