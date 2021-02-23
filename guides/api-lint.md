@@ -95,6 +95,13 @@ Examples:
 * [mod-quick-marc](https://github.com/folio-org/mod-quick-marc/blob/master/Jenkinsfile)
   -- both RAML and OAS
 
+## Reports
+
+At GitHub, detected issues are listed on the front page of each pull-request.
+For any branch or pull-request build, follow the "details" link via the coloured checkmark (or orange dot while building) through to Jenkins.
+Then see "Artifacts" at the top-right for the processing report.
+Or follow across to Jenkins "classic" view, and find the report in the left-hand panel.
+
 ## Interpretation of messages
 
 When errors are encountered, then a summary of conformance "Violations" and "Warnings" is presented at the top, followed by detail about each.
