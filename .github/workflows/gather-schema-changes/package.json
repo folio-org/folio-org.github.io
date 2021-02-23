@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "json-schema-ref-parser": "^9.0.0"
+  }
+}
