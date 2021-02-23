@@ -231,7 +231,22 @@ def show_api_diff(repo_name, version, release_sha, api_directory, branch):
                         schemas_parent_main = find_api_schemas_parent(main_api_dir, exclude_dirs, exclude_files)
                         (schemas_common, schemas_old, schemas_new) = list_common_schemas(
                             release_api_dir, main_api_dir, schemas_parent_release, schemas_parent_main)
-                        #logger.debug("schemas_common_parent=%s", schemas_common)
+                        dereference_schemas(schemas_common, release_api_dir, main_api_dir)
+                        files_list = process_api_parent_schemas(
+                            schemas_common, release_api_dir, main_api_dir, output_dir, version)
+                        files.extend(files_list)
+                        if schemas_old:
+                            for schema_fn in schemas_old:
+                                file_record = {}
+                                file_record['fileName'] = os.path.join("parents", schema_fn)
+                                file_record['state'] = 'removed'
+                                files.append(file_record)
+                        if schemas_new:
+                            for schema_fn in schemas_new:
+                                file_record = {}
+                                file_record['fileName'] = os.path.join("parents", schema_fn)
+                                file_record['state'] = 'added'
+                                files.append(file_record)
     return status, errors, files
 
 def find_api_schemas(api_dir, exclude_dirs, exclude_files):
@@ -257,7 +272,7 @@ def find_api_schemas_parent(api_dir, exclude_dirs, exclude_files):
             for api_fn in fnmatch.filter(files, extension):
                 if not api_fn in exclude_files:
                     api_files.append(os.path.join(root, api_fn))
-    logger.debug("api_files=%s", api_files)
+    #logger.debug("api_files=%s", api_files)
     # get the declared RAML "types"
     for api_fn in api_files:
         api_subdir, api_fn_local = os.path.split(os.path.relpath(api_fn, start=api_dir))
@@ -286,7 +301,6 @@ def find_api_schemas_parent(api_dir, exclude_dirs, exclude_files):
                             else:
                                 #FIXME: need to weed out "raml-util" etc. paths
                                 schema_files.add(type_pn)
-                                logger.debug("type_fn=%s", type_pn)
     return sorted(schema_files)
 
 def list_common_schemas(release_api_dir, main_api_dir, schemas_release, schemas_main):
@@ -322,11 +336,64 @@ def process_api_schemas(common_schemas, release_api_dir, main_api_dir, output_di
                 store_diff_result(output_dir, output_fn, result, version, "api")
     return files
 
+def process_api_parent_schemas(common_schemas, release_api_dir, main_api_dir, output_dir, version):
+    """Process the set of common dereferenced API parent schemas.
+       Store the diff result of each.
+       Return the summary of files that were detected as modified.
+    """
+    files = []
+    for schema_fn in common_schemas:
+        file_record = {}
+        release_pn = os.path.normpath(os.path.join(release_api_dir, "derefparents", schema_fn))
+        main_pn = os.path.normpath(os.path.join(main_api_dir, "derefparents", schema_fn))
+        if not (os.path.exists(release_pn) and os.path.exists(main_pn)):
+            logger.warning("Missing dereferenced input files for '%s'", schema_fn)
+            continue
+        (status, result) = do_jd(release_pn, main_pn)
+        if status:
+            if result != "":
+                file_record['fileName'] = os.path.join("parents", schema_fn)
+                file_record['state'] = 'modified'
+                files.append(file_record)
+                output_fn = os.path.splitext(schema_fn)[0]
+                store_diff_result(output_dir, output_fn, result, version, "apiparents")
+    return files
+
+def dereference_schemas(schemas, release_api_dir, main_api_dir):
+    """
+    Dereference the parent schema files to resolve the $ref child schema.
+    """
+    script_pn = os.path.join(sys.path[0], "deref-schema.js")
+    release_parent_dir = os.path.join(release_api_dir, "derefparents")
+    os.makedirs(release_parent_dir, exist_ok=True)
+    main_parent_dir = os.path.join(main_api_dir, "derefparents")
+    os.makedirs(main_parent_dir, exist_ok=True)
+    for schema_fn in schemas:
+        release_input_pn = os.path.normpath(os.path.join(release_api_dir, schema_fn))
+        release_output_pn = os.path.normpath(os.path.join(release_parent_dir, schema_fn))
+        os.makedirs(os.path.split(release_output_pn)[0], exist_ok=True)
+        try:
+            sh.node(script_pn, release_input_pn, release_output_pn)
+        except sh.ErrorReturnCode as err:
+            logger.warning("Trouble doing node: %s", err.stderr.decode())
+        main_input_pn = os.path.normpath(os.path.join(main_api_dir, schema_fn))
+        main_output_pn = os.path.normpath(os.path.join(main_parent_dir, schema_fn))
+        os.makedirs(os.path.split(main_output_pn)[0], exist_ok=True)
+        try:
+            sh.node(script_pn, main_input_pn, main_output_pn)
+        except sh.ErrorReturnCode as err:
+            logger.warning("Trouble doing node: %s", err.stderr.decode())
+        sleep(1)
+
 def store_diff_result(output_dir, output_fn, result, version, store_type):
     """Store the result from jd, and the summary file."""
     (storage_dir_pn, storage_fn) = os.path.split(output_fn)
     if store_type == "api":
         storage_dir = os.path.join(output_dir, "api", storage_dir_pn)
+        os.makedirs(storage_dir, exist_ok=True)
+        storage_pn = os.path.join(storage_dir, storage_fn)
+    elif store_type == "apiparents":
+        storage_dir = os.path.join(output_dir, "api", "parents", storage_dir_pn)
         os.makedirs(storage_dir, exist_ok=True)
         storage_pn = os.path.join(storage_dir, storage_fn)
     else:
