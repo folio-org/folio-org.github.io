@@ -29,8 +29,9 @@ import tempfile
 
 import requests
 import sh
+import yaml
 
-SCRIPT_VERSION = "1.1.0"
+SCRIPT_VERSION = "1.2.0"
 
 LOGLEVELS = {
     "debug": logging.DEBUG,
@@ -119,6 +120,21 @@ def get_repo_details(repos, repo_name):
             break
     return repo_details
 
+def configure_excludes():
+    """Configure the excluded directories and excluded files."""
+    # FIXME: If apiExcludes in module's Jenkinsfile, then exclude them too
+    exclude_dirs_list = ["raml-util", "raml-storage", "acq-models",
+        "rtypes", "traits", "bindings", "examples", "_examples"
+        "node_modules", ".git"]
+    exclude_files = []
+    exclude_dirs = set(exclude_dirs_list)
+    #logger.debug("Excluding directories for os.walk: %s", exclude_dirs)
+    return exclude_dirs, exclude_files
+
+def construct_raml_include(loader, node):
+    "Add a special construct for YAML loader"
+    return loader.construct_yaml_str(node)
+
 def prepare_s3_publish(branch):
     """Prepares the generated files for publish to S3.
     A Github workflow action follows to do the actual publish.
@@ -134,7 +150,6 @@ def do_jd(file_1_pn, file_2_pn):
     """Compare the JSON files using 'jd'"""
     status = True
     result = ""
-    #logger.debug("Doing jd: %s %s ...", file_1_pn, file_2_pn)
     try:
         result = sh.jd(file_1_pn, file_2_pn).stdout.decode().strip()
     except sh.ErrorReturnCode as err:
@@ -153,7 +168,6 @@ def show_api_diff(repo_name, version, release_sha, api_directory, branch):
     output_dir = os.path.abspath(os.path.join("schemadiff", branch, repo_name))
     output_api_dir = os.path.join(output_dir, "api")
     os.makedirs(output_api_dir, exist_ok=True)
-    #logger.debug("Doing git clone ...")
     url_git = "https://github.com/folio-org/{}".format(repo_name)
     with tempfile.TemporaryDirectory() as temp_dir_1:
         release_dir = os.path.join(temp_dir_1, repo_name)
@@ -189,9 +203,9 @@ def show_api_diff(repo_name, version, release_sha, api_directory, branch):
                         errors.append(msg)
                         return status, errors, files
                     else:
-                        logger.debug("Determining api schema diffs ...")
-                        schemas_release = find_api_schemas(release_api_dir)
-                        schemas_main = find_api_schemas(main_api_dir)
+                        (exclude_dirs, exclude_files) = configure_excludes()
+                        schemas_release = find_api_schemas(release_api_dir, exclude_dirs, exclude_files)
+                        schemas_main = find_api_schemas(main_api_dir, exclude_dirs, exclude_files)
                         (schemas_common, schemas_old, schemas_new) = list_common_schemas(
                             release_api_dir, main_api_dir, schemas_release, schemas_main)
                         files_list = process_api_schemas(
@@ -209,24 +223,78 @@ def show_api_diff(repo_name, version, release_sha, api_directory, branch):
                                 file_record['fileName'] = schema_fn
                                 file_record['state'] = 'added'
                                 files.append(file_record)
+                        schemas_parent_release = find_api_schemas_parent(release_api_dir, exclude_dirs, exclude_files)
+                        schemas_parent_main = find_api_schemas_parent(main_api_dir, exclude_dirs, exclude_files)
+                        (schemas_common, schemas_old, schemas_new) = list_common_schemas(
+                            release_api_dir, main_api_dir, schemas_parent_release, schemas_parent_main)
+                        dereference_schemas(schemas_common, release_api_dir, main_api_dir)
+                        files_list = process_api_parent_schemas(
+                            schemas_common, release_api_dir, main_api_dir, output_dir, version)
+                        files.extend(files_list)
+                        if schemas_old:
+                            for schema_fn in schemas_old:
+                                file_record = {}
+                                file_record['fileName'] = os.path.join("parents", schema_fn)
+                                file_record['state'] = 'removed'
+                                files.append(file_record)
+                        if schemas_new:
+                            for schema_fn in schemas_new:
+                                file_record = {}
+                                file_record['fileName'] = os.path.join("parents", schema_fn)
+                                file_record['state'] = 'added'
+                                files.append(file_record)
     return status, errors, files
 
-def find_api_schemas(api_dir):
+def find_api_schemas(api_dir, exclude_dirs, exclude_files):
     """Locate the list of relevant schemas."""
-    exclude_dirs_list = ["raml-util", "raml-storage", "acq-models",
-        "rtypes", "traits", "bindings", "examples",
-        "node_modules", ".git"]
-    exclude_files = []
-    # FIXME: If apiExcludes in Jenkinsfile then exclude them too
-    exclude_dirs = set(exclude_dirs_list)
-    #logger.debug("Excluding directories for os.walk: %s", exclude_dirs)
     schema_files = []
     for root, dirs, files in os.walk(api_dir, topdown=True):
         dirs[:] = [d for d in dirs if d not in exclude_dirs]
-        for extension in ("*.json", "*.schema"):
+        for extension in ["*.json", "*.schema"]:
             for schema_fn in fnmatch.filter(files, extension):
                 if not schema_fn in exclude_files:
                     schema_files.append(os.path.join(root, schema_fn))
+    return sorted(schema_files)
+
+def find_api_schemas_parent(api_dir, exclude_dirs, exclude_files):
+    """Locate the list of relevant parent schemas.
+    These are declared in the api description files.
+    """
+    api_files = []
+    schema_files = set()
+    for root, dirs, files in os.walk(api_dir, topdown=True):
+        dirs[:] = [d for d in dirs if d not in exclude_dirs]
+        for extension in ["*.raml"]:
+            for api_fn in fnmatch.filter(files, extension):
+                if not api_fn in exclude_files:
+                    api_files.append(os.path.join(root, api_fn))
+    # get the declared RAML "types"
+    for api_fn in api_files:
+        api_subdir = os.path.split(os.path.relpath(api_fn, start=api_dir))[0]
+        with open(api_fn) as input_fh:
+            try:
+                content = yaml.safe_load(input_fh)
+            except yaml.YAMLError as err:
+                logger.critical("Trouble parsing as YAML file '%s': %s", api_fn, err)
+            else:
+                try:
+                    types = content["types"]
+                except KeyError:
+                    pass
+                else:
+                    for decl in types:
+                        type_fn = types[decl]
+                        if isinstance(type_fn, str):
+                            type_pn = os.path.normpath(os.path.join(api_dir, api_subdir, type_fn))
+                            # The "types" can be other than schema.
+                            file_extension = os.path.splitext(type_pn)[1]
+                            if not file_extension in [".json", ".schema"]:
+                                continue
+                            if not os.path.exists(type_pn):
+                                logger.warning("Missing schema file '%s'. Declared in the RAML types section.", type_fn)
+                            else:
+                                #FIXME: Do we need to weed out "raml-util" etc. paths?
+                                schema_files.add(type_pn)
     return sorted(schema_files)
 
 def list_common_schemas(release_api_dir, main_api_dir, schemas_release, schemas_main):
@@ -262,6 +330,55 @@ def process_api_schemas(common_schemas, release_api_dir, main_api_dir, output_di
                 store_diff_result(output_dir, output_fn, result, version, "api")
     return files
 
+def process_api_parent_schemas(common_schemas, release_api_dir, main_api_dir, output_dir, version):
+    """Process the set of common dereferenced API parent schemas.
+       Store the diff result of each.
+       Return the summary of files that were detected as modified.
+    """
+    files = []
+    for schema_fn in common_schemas:
+        file_record = {}
+        release_pn = os.path.normpath(os.path.join(release_api_dir, "derefparents", schema_fn))
+        main_pn = os.path.normpath(os.path.join(main_api_dir, "derefparents", schema_fn))
+        if not (os.path.exists(release_pn) and os.path.exists(main_pn)):
+            logger.warning("Missing dereferenced input files for '%s'", schema_fn)
+            continue
+        (status, result) = do_jd(release_pn, main_pn)
+        if status:
+            if result != "":
+                file_record['fileName'] = os.path.join("parents", schema_fn)
+                file_record['state'] = 'modified'
+                files.append(file_record)
+                output_fn = os.path.splitext(schema_fn)[0]
+                store_diff_result(output_dir, output_fn, result, version, "apiparents")
+    return files
+
+def dereference_schemas(schemas, release_api_dir, main_api_dir):
+    """
+    Dereference the parent schema files to resolve the $ref child schema.
+    """
+    script_pn = os.path.join(sys.path[0], "deref-schema.js")
+    release_parent_dir = os.path.join(release_api_dir, "derefparents")
+    os.makedirs(release_parent_dir, exist_ok=True)
+    main_parent_dir = os.path.join(main_api_dir, "derefparents")
+    os.makedirs(main_parent_dir, exist_ok=True)
+    for schema_fn in schemas:
+        release_input_pn = os.path.normpath(os.path.join(release_api_dir, schema_fn))
+        release_output_pn = os.path.normpath(os.path.join(release_parent_dir, schema_fn))
+        os.makedirs(os.path.split(release_output_pn)[0], exist_ok=True)
+        try:
+            sh.node(script_pn, release_input_pn, release_output_pn)
+        except sh.ErrorReturnCode as err:
+            logger.warning("Trouble doing node: %s", err.stderr.decode())
+        main_input_pn = os.path.normpath(os.path.join(main_api_dir, schema_fn))
+        main_output_pn = os.path.normpath(os.path.join(main_parent_dir, schema_fn))
+        os.makedirs(os.path.split(main_output_pn)[0], exist_ok=True)
+        try:
+            sh.node(script_pn, main_input_pn, main_output_pn)
+        except sh.ErrorReturnCode as err:
+            logger.warning("Trouble doing node: %s", err.stderr.decode())
+        sleep(1)
+
 def store_diff_result(output_dir, output_fn, result, version, store_type):
     """Store the result from jd, and the summary file."""
     (storage_dir_pn, storage_fn) = os.path.split(output_fn)
@@ -269,12 +386,15 @@ def store_diff_result(output_dir, output_fn, result, version, store_type):
         storage_dir = os.path.join(output_dir, "api", storage_dir_pn)
         os.makedirs(storage_dir, exist_ok=True)
         storage_pn = os.path.join(storage_dir, storage_fn)
+    elif store_type == "apiparents":
+        storage_dir = os.path.join(output_dir, "api", "parents", storage_dir_pn)
+        os.makedirs(storage_dir, exist_ok=True)
+        storage_pn = os.path.join(storage_dir, storage_fn)
     else:
         storage_dir = output_dir
         storage_pn = os.path.join(storage_dir, output_fn)
     storage_diff_pn = os.path.join(storage_dir, "{}-{}.diff".format(storage_pn, version))
     storage_txt_pn = os.path.join(storage_dir, "{}-{}.txt".format(storage_pn, version))
-    #logger.debug("Storing file %s", storage_txt_pn)
     with open(storage_diff_pn, "w") as output_fh:
         output_fh.write(result)
         output_fh.write("\n")
@@ -341,10 +461,14 @@ def main():
     json_versions = get_config_data(url_versions)
     json_repos = get_config_data(url_repos)
     global DATE_TIME
+    # The yaml parser gags on the "!include".
+    # http://stackoverflow.com/questions/13280978/pyyaml-errors-on-in-a-string
+    yaml.add_constructor(u"!include", construct_raml_include, Loader=yaml.SafeLoader)
     for mod in json_versions['repos']:
         repo_name = mod['name']
         DATE_TIME = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')
         #test_repos = ['mod-notes', 'mod-configuration']
+        #test_repos = ['mod-notes']
         #if not repo_name in test_repos: # testing
             #continue
         logger.info("Assessing %s %s", repo_name, mod['version'])
