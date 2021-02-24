@@ -5,10 +5,8 @@ name: gather-schema-changes
 # between latest release and current mainline.
 
 on:
-  push:
-    branches: [ folio-2976-wf-schema-changes-3 ]
-#  schedule:
-#    - cron: '20 03 * * 1,4'
+  schedule:
+    - cron: '20 03 * * 1,4'
 
 jobs:
   job_1:
