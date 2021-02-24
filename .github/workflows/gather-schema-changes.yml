@@ -46,15 +46,15 @@ jobs:
     - name: Add media type
       run: echo -e 'text/plain\tdiff' | sudo tee -a /etc/mime.types
 
-#    - name: Publish to S3
-#      uses: sai-sharan/aws-s3-sync-action@v0.1.0
-#      with:
-#        access_key: ${{ secrets.S3_ACCESS_KEY }}
-#        secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
-#        region: 'us-east-1'
-#        source: 'schemadiff'
-#        destination_bucket: 'foliodocs'
-#        destination_prefix: 'schemadiff'
-#        delete: false
-#        quiet: true
+    - name: Publish to S3
+      uses: sai-sharan/aws-s3-sync-action@v0.1.0
+      with:
+        access_key: ${{ secrets.S3_ACCESS_KEY }}
+        secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+        region: 'us-east-1'
+        source: 'schemadiff'
+        destination_bucket: 'foliodocs'
+        destination_prefix: 'schemadiff'
+        delete: false
+        quiet: true
 

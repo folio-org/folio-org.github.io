@@ -468,9 +468,9 @@ def main():
         repo_name = mod['name']
         DATE_TIME = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')
         #test_repos = ['mod-notes', 'mod-configuration']
-        test_repos = ['mod-notes']
-        if not repo_name in test_repos: # testing
-            continue
+        #test_repos = ['mod-notes']
+        #if not repo_name in test_repos: # testing
+            #continue
         logger.info("Assessing %s %s", repo_name, mod['version'])
         summary_json = {}
         summary_json["metadata"] = {}
