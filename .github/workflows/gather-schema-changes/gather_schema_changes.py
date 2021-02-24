@@ -21,7 +21,6 @@ import fnmatch
 import json
 import logging
 import os
-import pprint
 from shutil import make_archive
 from shutil import move
 from shutil import copytree
@@ -151,7 +150,6 @@ def do_jd(file_1_pn, file_2_pn):
     """Compare the JSON files using 'jd'"""
     status = True
     result = ""
-    #logger.debug("Doing jd: %s %s ...", file_1_pn, file_2_pn)
     try:
         result = sh.jd(file_1_pn, file_2_pn).stdout.decode().strip()
     except sh.ErrorReturnCode as err:
@@ -170,7 +168,6 @@ def show_api_diff(repo_name, version, release_sha, api_directory, branch):
     output_dir = os.path.abspath(os.path.join("schemadiff", branch, repo_name))
     output_api_dir = os.path.join(output_dir, "api")
     os.makedirs(output_api_dir, exist_ok=True)
-    #logger.debug("Doing git clone ...")
     url_git = "https://github.com/folio-org/{}".format(repo_name)
     with tempfile.TemporaryDirectory() as temp_dir_1:
         release_dir = os.path.join(temp_dir_1, repo_name)
@@ -207,7 +204,6 @@ def show_api_diff(repo_name, version, release_sha, api_directory, branch):
                         return status, errors, files
                     else:
                         (exclude_dirs, exclude_files) = configure_excludes()
-                        logger.debug("Determining api schema diffs ...")
                         schemas_release = find_api_schemas(release_api_dir, exclude_dirs, exclude_files)
                         schemas_main = find_api_schemas(main_api_dir, exclude_dirs, exclude_files)
                         (schemas_common, schemas_old, schemas_new) = list_common_schemas(
@@ -272,10 +268,9 @@ def find_api_schemas_parent(api_dir, exclude_dirs, exclude_files):
             for api_fn in fnmatch.filter(files, extension):
                 if not api_fn in exclude_files:
                     api_files.append(os.path.join(root, api_fn))
-    #logger.debug("api_files=%s", api_files)
     # get the declared RAML "types"
     for api_fn in api_files:
-        api_subdir, api_fn_local = os.path.split(os.path.relpath(api_fn, start=api_dir))
+        api_subdir = os.path.split(os.path.relpath(api_fn, start=api_dir))[0]
         with open(api_fn) as input_fh:
             try:
                 content = yaml.safe_load(input_fh)
@@ -285,7 +280,6 @@ def find_api_schemas_parent(api_dir, exclude_dirs, exclude_files):
                 try:
                     types = content["types"]
                 except KeyError:
-                    #logger.debug("No types were declared in '%s'", api_fn)
                     pass
                 else:
                     for decl in types:
@@ -293,13 +287,13 @@ def find_api_schemas_parent(api_dir, exclude_dirs, exclude_files):
                         if isinstance(type_fn, str):
                             type_pn = os.path.normpath(os.path.join(api_dir, api_subdir, type_fn))
                             # The "types" can be other than schema.
-                            file_root, file_extension = os.path.splitext(type_pn)
+                            file_extension = os.path.splitext(type_pn)[1]
                             if not file_extension in [".json", ".schema"]:
                                 continue
                             if not os.path.exists(type_pn):
                                 logger.warning("Missing schema file '%s'. Declared in the RAML types section.", type_fn)
                             else:
-                                #FIXME: need to weed out "raml-util" etc. paths
+                                #FIXME: Do we need to weed out "raml-util" etc. paths?
                                 schema_files.add(type_pn)
     return sorted(schema_files)
 
@@ -401,7 +395,6 @@ def store_diff_result(output_dir, output_fn, result, version, store_type):
         storage_pn = os.path.join(storage_dir, output_fn)
     storage_diff_pn = os.path.join(storage_dir, "{}-{}.diff".format(storage_pn, version))
     storage_txt_pn = os.path.join(storage_dir, "{}-{}.txt".format(storage_pn, version))
-    #logger.debug("Storing file %s", storage_txt_pn)
     with open(storage_diff_pn, "w") as output_fh:
         output_fh.write(result)
         output_fh.write("\n")
