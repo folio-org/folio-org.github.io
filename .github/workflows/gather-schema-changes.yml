@@ -14,6 +14,8 @@ jobs:
   job_1:
     name: Compare and publish
     runs-on: ubuntu-latest
+    env:
+      WF_HOME: ".github/workflows/gather-schema-changes"
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -28,7 +30,7 @@ jobs:
       run: |
         python -V
         python -m pip install --upgrade pip
-        pip install -r .github/workflows/gather-schema-changes/requirements.txt
+        pip install -r $WF_HOME/requirements.txt
 
     - name: Install yarn dependencies
       run: |
@@ -39,7 +41,7 @@ jobs:
       run: brew install jd
 
     - name: Run script
-      run: python .github/workflows/gather-schema-changes/gather_schema_changes.py -b q3-2020 -l info
+      run: python $WF_HOME/gather_schema_changes.py -b q3-2020 -l info
 
     - name: Add media type
       run: echo -e 'text/plain\tdiff' | sudo tee -a /etc/mime.types
