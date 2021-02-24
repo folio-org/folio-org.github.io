@@ -31,7 +31,9 @@ jobs:
         pip install -r .github/workflows/gather-schema-changes/requirements.txt
 
     - name: Install yarn dependencies
-      run: yarn install
+      run: |
+        yarn --cwd $WF_HOME install
+        yarn --cwd $WF_HOME list --pattern @apidevtools
 
     - name: Install other dependencies
       run: brew install jd
