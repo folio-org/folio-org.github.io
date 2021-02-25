@@ -62,8 +62,6 @@ If the module is not to be pulled in by a front-end UI module via a platform, th
 Often that is the case because the development of a UI module is not yet ready to require it.
 (This `group_vars` section could later be tidied, when that is finally happening.)
 
-Push the branch.
-
 ## Branch folio-infrastructure
 
 Make a branch in [folio-infrastructure](https://github.com/folio-org-priv/folio-infrastructure),
@@ -98,7 +96,7 @@ Edit the `.gitmodules` file:
         branch = folio-2467-refenvs-ncip  # <<< add this line <<<
 ```
 
-Push the branch.
+Push the folio-ansible branch and the folio-infrastructure branch.
 
 ## Jenkins testing configuration
 
@@ -150,6 +148,12 @@ or
 [folio-snapshot-test.dev.folio.org](https://folio-snapshot-test.dev.folio.org/settings/about)).
 However remember that an automated job might be in-process to rebuild its front-end,
 as explained at the [reference environments](/guides/automation/#reference-environments).
+
+## Add to snapshot platform
+
+There is a [separate procedure](/guides/install-backend-module/#configure-platforms) for adding a backend module to the "snapshot" branch of the Stripes Platform (e.g. to [platform-complete](https://github.com/folio-org/platform-complete/tree/snapshot)).
+
+Before doing that, the successful build of "folio-testing-test" (described in the preceeding sections) will provide some comfort.
 
 ## Do pull requests
 
