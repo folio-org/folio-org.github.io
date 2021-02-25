@@ -18,10 +18,6 @@ its repository is [established](/guidelines/create-new-repo/),
 and is operating in FOLIO CI.
 They would have added a Jira ticket, assigned to our team so that we can schedule and track the work.
 
-Note: The configuration for "folio-testing" and the "testing" VMs is still as explained below.
-However, as explained in the guide linked in the next section, developers can now add their new module to the "snapshot" branch of the platforms.
-However, the configuration for the "snapshot" VMs is [still](https://issues.folio.org/browse/FOLIO-2799) as explained below.
-
 ## Verification and preparation
 
 This is the [relevant guide](/guides/install-backend-module/) that they would have followed.
@@ -44,10 +40,15 @@ Follow the daily backend builds to verify.
 Make a branch in [folio-ansible](https://github.com/folio-org/folio-ansible),
 e.g. `folio-2467-refenvs-ncip`
 
-Add the module to the `group_vars/snapshot` and `group_vars/testing` files.
-(Note: For snapshot, see notes above in the [Introduction](#introduction) section.)
+Add the module to the `group_vars/testing` and `group_vars/snapshot` files.
+These files assist with building the VMs, and currently provide special configuration for some modules.
+
+Always add new modules to `group_vars/testing`.
+
+Only add module entries to `group_vars/snapshot` if they need special configuration to over-ride LaunchDescriptor settings. 
 
 If this is also a "core" module, then it will also be added to the corresponding `-core` files.
+Normally only added to the main "complete" environments.
 
 Follow the format for the entries of other modules.
 
@@ -57,7 +58,7 @@ However, the "testing" files have explicit order.
 The sequence must have the new module declared after the modules that provide its interfaces (see [verification](#verification-and-preparation) step above).
 
 Also note that for the "snapshot" files, the module is declared in the main section.
-If the module is not to be pulled in by a front-end UI module, then it needs to be also declared in the "`add_modules`" section.
+If the module is not to be pulled in by a front-end UI module via a platform, then it needs to be also declared in the "`add_modules`" section.
 Often that is the case because the development of a UI module is not yet ready to require it.
 (This `group_vars` section could later be tidied, when that is finally happening.)
 
@@ -68,9 +69,11 @@ Push the branch.
 Make a branch in [folio-infrastructure](https://github.com/folio-org-priv/folio-infrastructure),
 e.g. `folio-2467-refenvs-ncip`
 
-Add to `CI/ansible/testing-add-modules.yml` for both sections: Register and Deploy.
-Follow the format for the entries of other modules.
+Add to `CI/ansible/testing-add-modules.yml` file.
+The purpose of this file is to declare modules (e.g. mod-ldp) that are not added to a VM (see the previous [section](#branch-folio-ansible)) but do need to be added to the folio-testing reference environment.
 
+Add the entry to both sections: Register and Deploy.
+Follow the format for the entries of other modules.
 The sequence must have the new module declared after any modules that provide its interfaces (see [verification](#verification-and-preparation) step above).
 
 Add testing configuration for the Jenkins jobs ...
