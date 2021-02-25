@@ -32,7 +32,11 @@ curl -s -S -w'\n' \
 
 That shows that it requires various interfaces, including `users 15.0`
 
-Now ensure that each interface is available, e.g.:
+Now ensure that each needed interface version is available.
+One method is to visit the [https://folio-snapshot.dev.folio.org/settings/about](https://folio-snapshot.dev.folio.org/settings/about) page.
+
+Another way is to conduct a curl query for each of the required interfaces.
+(Example 'curl' of course needs token and tenant headers.)
 
 ```
 curl -s -S -w'\n' \
