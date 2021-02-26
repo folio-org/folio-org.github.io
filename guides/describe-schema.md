@@ -76,7 +76,10 @@ The relevant API Description files that utilise the schema can provide valid exa
 To contribute updates, either send a pull-request with the changes or add to a Jira issue tracker.
 
 The continuous-integration facility assesses the JSON Schema files of all RAML-using and OpenAPI-using back-end modules to determine any missing descriptions.
+
 At GitHub, detected issues are listed on the front page of each pull-request.
-For any branch or pull-request build, follow the "details" link via the coloured checkmark through to Jenkins.
+For any branch or pull-request build, follow the "details" link via the coloured checkmark (or orange dot while building) through to Jenkins.
 Then see "Artifacts" at the top-right for the processing report.
-The analysis can also be [run locally](https://github.com/folio-org/folio-tools/tree/master/api-schema-lint).
+Or follow across to Jenkins "classic" view, and find the report in the left-hand panel.
+
+The analysis can also be run locally with the [api-schema-lint](https://github.com/folio-org/folio-tools/tree/master/api-schema-lint) tool.

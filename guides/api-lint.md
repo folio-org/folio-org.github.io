@@ -95,6 +95,13 @@ Examples:
 * [mod-quick-marc](https://github.com/folio-org/mod-quick-marc/blob/master/Jenkinsfile)
   -- both RAML and OAS
 
+## Reports
+
+At GitHub, detected issues are listed on the front page of each pull-request.
+For any branch or pull-request build, follow the "details" link via the coloured checkmark (or orange dot while building) through to Jenkins.
+Then see "Artifacts" at the top-right for the processing report.
+Or follow across to Jenkins "classic" view, and find the report in the left-hand panel.
+
 ## Interpretation of messages
 
 When errors are encountered, then a summary of conformance "Violations" and "Warnings" is presented at the top, followed by detail about each.
@@ -104,4 +111,5 @@ Note that if there are only warnings but no violations, then nothing is presente
 
 Note that this `api-lint` tool is more thorough than our previous CI tool (based on raml-cop and its underlying raml-1-parser).
 So projects might find new violations being reported.
+(See some migration issues at [FOLIO-3017](https://issues.folio.org/browse/FOLIO-3017).)
 
