@@ -66,13 +66,16 @@ Before proceeding, verify that the module is ready to be added, including the ab
 
 Prepare the Jira ticket to guide the process, and request that the new backend module be enabled for the snapshot and testing reference environments.
 
-If there are [special requirements](#document-special-requirements), then provide a link to those at the module README.
+If there are [special requirements](#document-special-requirements), then provide a link to that section of the module README.
 
 Clarify if this module needs to be included in the "core" set of modules.
 Normally modules are only added to the "complete" set.
 
 Specify "Development Team: FOLIO DevOps" and the pseudo-sprint "DevOps Requests".
 Do not assign it. Our team will prioritize and schedule.
+
+**Note:** Plan for plenty of time for this phase. Our team will already have a full Sprint.
+So it will likely be the next Sprint.
 
 The DevOps team will configure the module and conduct various configuration tests.
 
