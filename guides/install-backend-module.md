@@ -76,28 +76,6 @@ Do not assign it. Our team will prioritize and schedule.
 
 The DevOps team will configure the module and conduct various configuration tests.
 
-The remainder of this document is notes to [assist](/guides/devops-install-backend-module/) DevOps people.
-
-## Declare new module
-
-### Configure platforms
-
-The normal process is that a UI module will require interfaces that are provided by back-end modules (declared in the "okapiInterfaces" section of their package.json file).
-With this, the relevant back-end modules are automatically included.
-
-However sometimes the front-end and back-end are not yet ready for each other.
-
-Temporarily add the new back-end module to the `install-extras.json` file of the "snapshot" branch of the relevant platform.
-(Note that "core" modules are added to both platform-core and platform-complete.)
-
-After the back-end development is eventually ready, then a front-end module will require this module.
-When that happens, then the backend module will be automatically included via the normal process, so it can then be removed from this `install-extras.json` file.
-
-However some back-end modules are never required by front-end modules.
-In these cases they are always configured in that file.
-
-After merge to the "snapshot" branch of the platform, then await the scheduled build of the [folio-snapshot reference environment](/guides/automation/#folio-snapshot) (and as noted there, the dependent platform build to succeed).
-
 ## Verify deployment
 
 After merge, await the scheduled build of the folio-snapshot and folio-testing [reference environments](/guides/automation/#reference-environments).
