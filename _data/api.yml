@@ -154,6 +154,7 @@ mod-circulation:
     version1: true
     directory: ramls
     files:
+      - age-to-lost-background-processes
       - change-due-date
       - circulation
       - circulation-event-handlers
