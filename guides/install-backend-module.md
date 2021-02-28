@@ -48,11 +48,16 @@ Ensure that this new module's [ModuleDescriptor](/guides/module-descriptor/) inc
 
 Its properties will specify the memory allocation, whether this module utilises a database, and can document other environment variables, etc.
 
-## Document special requirements
+## Prepare special requirements
 
 If there are special requirements beyond those declared in the default LaunchDescriptor, then document those in the module README.
 
 Remember that there are other systems operators, as well as FOLIO DevOps, that need to know how to install the module.
+
+Also prepare beforehand if there are special requirements for FOLIO infrastructure, additional to what is already provided.
+Add Jira tickets (as described below) to completely explain the services that the new module requires.
+Do not expect us to know,
+Allow sufficient time to establish these.
 
 ## Ensure local Docker
 
