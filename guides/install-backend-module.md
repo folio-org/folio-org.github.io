@@ -56,14 +56,16 @@ Remember that there are other systems operators, as well as FOLIO DevOps, that n
 
 Also prepare beforehand if there are special requirements for FOLIO infrastructure, additional to what is already provided.
 Add Jira tickets (as described below) to completely explain the services that the new module requires.
-Do not expect us to know,
+Do not expect us to know.
 Allow sufficient time to establish these.
 
-## Ensure local Docker
+## Ensure recent local VM
 
-Ensure that the module will operate with a local Vagrant VM.
+Ensure that the module will operate with a **recent** local Vagrant VM.
 
-Follow the guide to verify [Local module as Docker container](/guides/run-local-folio/#local-module-as-docker-container).
+Follow the guide to verify [Deploy a module](/tutorials/folio-vm/04-local-development/#deploy-a-module).
+
+That procedure will verify that the most recent published module is ready to be installed in the reference environments.
 
 ## Request add new module
 
