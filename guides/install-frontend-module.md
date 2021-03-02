@@ -17,9 +17,23 @@ There is a separate procedure to [install a new back-end module](/guides/install
 
 (After the new module has been operating in snapshot and testing environments, and an initial release is ready to be made, then instead follow the [release procedures](/guidelines/release-procedures/#add-to-platforms).)
 
+## Require backend only when ready
+
+The normal process is that a UI module will require interfaces that are provided by back-end modules (declared in the "okapiInterfaces" section of their package.json file).
+With this, the relevant back-end modules are automatically included.
+
+A UI module could be added, and deliberately not yet require the interfaces of its companion backend module.
+
+However do not later require those interfaces, until that backend module has [completed their addition](/guides/install-backend-module/) to reference environments.
+
+Otherwise the addition of the frontend module will automatically pull in the backend module before it is ready, and disrupt the daily reference environment builds.
+
 ## Verify MD and required interfaces
 
-First ensure that this new module's [ModuleDescriptor](/guides/module-descriptor/) is deployed, and that any required interfaces are available.
+Ensure that this new module's [ModuleDescriptor](/guides/module-descriptor/) is deployed to the FOLIO Module Registry.
+
+Then verify that all required interfaces are available.
+(The Jenkins build of your Platform branch will do this anyway.)
 
 For example, consider the `ui-users` module.
 Obtain its MD and extract the "requires" section:
@@ -32,7 +46,11 @@ curl -s -S -w'\n' \
 
 That shows that it requires various interfaces, including `users 15.0`
 
-Now ensure that each interface is available, e.g.:
+Now ensure that each needed interface version is available.
+One method is to visit the [https://folio-snapshot.dev.folio.org/settings/about](https://folio-snapshot.dev.folio.org/settings/about) page.
+
+Another way is to conduct a curl query for each of the required interfaces.
+(Example 'curl' of course needs token and tenant headers.)
 
 ```
 curl -s -S -w'\n' \
