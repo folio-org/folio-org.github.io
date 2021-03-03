@@ -48,6 +48,10 @@ Ensure that this new module's [ModuleDescriptor](/guides/module-descriptor/) inc
 
 Its properties will specify the memory allocation, whether this module utilises a database, and can document other environment variables, etc.
 
+## Ensure module health endpoint
+
+The module must provide the [module health check](/guidelines/naming-conventions/#api-endpoints) endpoint to enable verification of the module deployment.
+
 ## Prepare special requirements
 
 If there are special requirements beyond those declared in the default LaunchDescriptor, then document those in the module README.
@@ -62,6 +66,7 @@ Allow sufficient time to establish these.
 ## Ensure recent local VM
 
 Ensure that the module will operate with a **recent** local Vagrant VM.
+If the new module does not yet depend on others, then `folio/snapshot-core` VM would be easiest.
 
 Follow the guide to verify [Deploy a module](/tutorials/folio-vm/04-local-development/#deploy-a-module).
 
@@ -73,7 +78,7 @@ Before proceeding, verify that the module is ready to be added, including the ab
 
 Prepare the Jira ticket to guide the process, and request that the new backend module be enabled for the snapshot and testing reference environments.
 
-If there are [special requirements](#document-special-requirements), then provide a link to that section of the module README.
+If there are [special requirements](#prepare-special-requirements), then provide a link to that section of the module README.
 
 Clarify if this module needs to be included in the "core" set of modules.
 Normally modules are only added to the "complete" set.
