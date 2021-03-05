@@ -33,8 +33,9 @@ The [Primer for front-end development](/start/primer-develop-frontend/) leads to
 
 Testing a back-end module as a Docker container using a Vagrant VM.
 This might be a useful technique for testing memory management and other settings for a containerized back-end module.
+Also in preparation to [add to reference environments](/guides/install-backend-module/#ensure-local-docker).
 
-* Bring up a FOLIO Vagrant VM (e.g. 'folio/testing') as normal with `vagrant up` and log in with `vagrant ssh`
+* Bring up a FOLIO Vagrant VM (e.g. 'folio/testing' or 'folio/snapshot-core') as normal with `vagrant up` and log in with `vagrant ssh`
 
 * Clone the module repository and build the backend module:
 
@@ -65,7 +66,9 @@ Note that for this example, all of the module's requirements are already satisfi
 You may need to check the module's [dependency graph](/tutorials/folio-vm/04-local-development/#module-dependency-graph) first.
 
 ```
-curl -w '\n' -D - -X POST -d '[{"id": "mod-marccat-2.2.5-SNAPSHOT", "action": "enable"}]' "http://localhost:9130/_/proxy/tenants/diku/install?deploy=true&tenantParameters=loadReference%3dtrue%2cloadSample%3dtrue"
+curl -w '\n' -D - -X POST \
+  -d '[{"id": "mod-marccat-2.2.5-SNAPSHOT", "action": "enable"}]' \
+  "http://localhost:9130/_/proxy/tenants/diku/install?deploy=true&tenantParameters=loadReference%3dtrue%2cloadSample%3dtrue"
 ```
 
 The module should now be up and running for your tenant in a container.

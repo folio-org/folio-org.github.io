@@ -38,7 +38,7 @@ TENANT="depgraph"
 
 OKAPIURL="http://localhost:9130"
 CMD_CURL="curl"
-CURL="$CMD_CURL -w\n -D - "
+CURL="$CMD_CURL -w '\n' -D - "
 PATH_TMP="/tmp/folio-depgraph"
 
 H_TENANT="-HX-Okapi-Tenant:$TENANT"
@@ -77,4 +77,48 @@ ${CMD_CURL} -s -S $H_JSON -X POST \
   "$OKAPIURL/_/proxy/tenants/$TENANT/install?simulate=true"
 echo
 ```
+
+## Deploy a module
+
+First verify the [Module dependency graph](#module-dependency-graph).
+
+If that step is not done, then still need to get the updated ModuleDescriptors from the registry.
+These will be the ModuleDescriptors that have been published since this VM was constructed.
+
+```
+curl -w '\n' -HContent-type:application/json -X POST \
+  -d '{ "urls": [ "http://folio-registry.aws.indexdata.com" ] }' \
+  http://localhost:9130/_/proxy/pull/modules
+```
+
+Now, assuming that this VM has the required module dependencies, proceed to enable and deploy the module.
+
+Here installing "mod-courses" for the default tenant "diku", which we know has the dependencies already satisfied.
+If not sure then "simulate" first.
+
+```
+curl -w '\n' -HContent-type:application/json -X POST \
+  -d '[ { "id": "mod-courses", "action": "enable" } ]' \
+  http://localhost:9130/_/proxy/tenants/diku/install?simulate=true
+```
+
+No errors, so proceed for real:
+
+```
+curl -w '\n' -HContent-type:application/json -X POST \
+  -d '[ { "id": "mod-courses", "action": "enable" } ]' \
+  http://localhost:9130/_/proxy/tenants/diku/install?deploy=true
+```
+
+The Okapi logfile would have said on which port the module was deployed (e.g. 9160).
+So do a health check.
+Of course this needs to be run from within the VM, as that is not one of the forwarded ports.
+
+```
+vagrant ssh
+curl -w '\n' http://localhost:9160/admin/health
+```
+
+From the host machine, conduct some queries as explained in the module API documentation ([mod-courses](https://dev.folio.org/reference/api/#mod-courses)).
+As explained in the previous lesson, need to [login first](../03-interact/#interact-via-curl).
 

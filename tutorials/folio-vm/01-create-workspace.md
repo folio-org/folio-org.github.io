@@ -38,6 +38,7 @@ vagrant up
 
 The output will show the VM starting.
 When the command prompt is returned, then the system will be ready to inspect.
+However wait a few minutes, because Okapi will still be starting modules.
 
 Some ports of the guest will be forwarded to the host, so the FOLIO system can be reached from the outside.
 

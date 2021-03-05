@@ -1,8 +1,16 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-02-15T23:05:29.581778+00:00"
+    "generatedDateTime": "2021-03-02T23:06:35.629125+00:00"
   },
   "repos": [
+    {
+      "description": "GitHub Actions Workflow Templates",
+      "docDirName": null,
+      "name": ".github",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
     {
       "description": "Central repository for the acquisition models",
       "docDirName": null,
@@ -57,9 +65,9 @@
       "docDirName": null,
       "name": "edge-connexion",
       "ramlDirName": null,
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": ""
+      "snippetIntro": "<p><a href='https://github.com/folio-org/edge-connexion'>edge-connexion</a> is a FOLIO module for importing records to a FOLIO instance via <a href='https://www.oclc.org/en/connexion.html'>OCLC Connexion</a></p>"
     },
     {
       "description": "Bridge the gap between Dematic remote storage provider and FOLIO",
@@ -164,7 +172,7 @@
       "snippetIntro": ""
     },
     {
-      "description": "FOLIO reporting/analytic queries",
+      "description": "FOLIO reporting and analytic queries",
       "docDirName": null,
       "name": "folio-analytics",
       "repoLanguageHint": "other",
@@ -517,21 +525,23 @@
       "description": null,
       "docDirName": null,
       "hintOas": true,
+      "isSpringway": true,
       "name": "mod-data-export-spring",
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "<p>API for Data Export Spring module.</p>"
     },
     {
       "description": null,
       "docDirName": null,
       "hintOas": true,
+      "isSpringway": true,
       "name": "mod-data-export-worker",
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "<p>API for Data Export Worker module.</p>"
     },
     {
       "description": null,
@@ -562,6 +572,17 @@
       "repoLanguageHint": "other",
       "repoType": "backend-mod",
       "snippetIntro": ""
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-ebsconet",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Backend module for integration with Ebsconet external systems</p>"
     },
     {
       "description": "Provides functionality for sending notifications",
@@ -1142,14 +1163,6 @@
       "repoLanguageHint": "java",
       "repoType": "other",
       "snippetIntro": "<p>Okapi command-line interface (yet another one)</p>"
-    },
-    {
-      "description": "Experimental Debian Packaging Repo for Okapi",
-      "docDirName": "doc",
-      "name": "okapi-debian",
-      "repoLanguageHint": "other",
-      "repoType": "other",
-      "snippetIntro": ""
     },
     {
       "description": "Repository that houses tools and performance testing scripts",

@@ -63,14 +63,20 @@ It will be published to the FOLIO Module Descriptor registry.
 [RAML](/guides/commence-a-module/#back-end-ramls) and Schema files.
 (Default: false)
 
-* `runLintRamlCop` -- Run "[raml-cop](/guides/raml-cop/)" (and other tests) on back-end modules that have declared [RAML](/guides/commence-a-module/#back-end-ramls) in api.yml configuration.
-Also assists with [Describe schema and properties](/guides/describe-schema/).
+* `doUploadApidocs` -- If the module generates API documentation during its Maven phase, then upload to S3.
+Uploads all docs found in the "`target/apidocs`" directory.
+Note: This is additional to "`publishAPI`" and is not yet linked in to the [API documentation](/reference/api/). More explanation at [FOLIO-3008](https://issues.folio.org/browse/FOLIO-3008).
 (Default: false)
-(Deprecated. See doApiLint.)
 
 * `doApiLint` -- Run "[api-lint](/guides/api-lint/)" to assess API descriptions, schema, and examples -- both [RAML](/guides/commence-a-module/#back-end-ramls) and OpenAPI (OAS).
 See [explanation](/guides/api-lint/#usage) of required and optional parameters.
+Also assists with [Describe schema and properties](/guides/describe-schema/).
 (Default: false)
+
+* `runLintRamlCop` -- Deprecated -- Run "[raml-cop](/guides/raml-cop/)" (and other tests) on back-end modules that have declared [RAML](/guides/commence-a-module/#back-end-ramls) in api.yml configuration.
+Also assists with [Describe schema and properties](/guides/describe-schema/).
+(Default: false)
+(Deprecated. See doApiLint.)
 
 If we are creating and deploying a Docker image as part of the module's artifacts, specify
 'doDocker' with 'buildJavaDocker' (for Spring-based modules instead use the 'buildDocker') and the following options:
@@ -134,4 +140,6 @@ specific to the UI module. Option 'none' will disable regression testing.
 
 There are other options available to 'buildNPM', 'buildMvn', and 'buildJavaDocker' for certain
 corner cases. Please ask for assistance.
+
+<div class="folio-spacer-content"></div>
 

@@ -154,6 +154,7 @@ mod-circulation:
     version1: true
     directory: ramls
     files:
+      - age-to-lost-background-processes
       - change-due-date
       - circulation
       - circulation-event-handlers
@@ -234,6 +235,7 @@ mod-inventory-storage:
       - instance-sync
       - instance-type
       - inventory-hierarchy
+      - inventory-view
       - item-damaged-statuses
       - item-storage
       - item-sync
