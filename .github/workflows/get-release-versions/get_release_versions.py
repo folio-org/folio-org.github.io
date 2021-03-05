@@ -120,7 +120,11 @@ def get_versions(branch):
         for tag in tags:
             logger.debug("  tag_name=%s sha=%s", tag.name, tag.commit.sha)
             if tag_name in tag.name:
-                release_obj = repo_short.release_from_tag(tag.name)
+                try:
+                    release_obj = repo_short.release_from_tag(tag.name)
+                except github3.exceptions.NotFoundError as err:
+                    logger.warning("Could not get release GH object for tag '%s': %s", tag_name, mod['id'])
+                    break
                 repos_json_packet['releaseTag'] = tag.name
                 repos_json_packet['releaseSha'] = tag.commit.sha
                 repos_json_packet['releaseName'] = release_obj.name
