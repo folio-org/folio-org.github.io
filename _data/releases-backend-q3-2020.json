@@ -77,12 +77,12 @@
     },
     {
       "name": "mod-codex-mux",
-      "releaseDate": "2020-11-03T18:53:35+00:00",
-      "releaseName": "v2.9.2",
-      "releaseSha": "22abb24ab4dd943024e9343d7cc1e49fa881c4d1",
-      "releaseTag": "v2.9.2",
-      "releaseTarget": "master",
-      "version": "2.9.2"
+      "releaseDate": null,
+      "releaseName": null,
+      "releaseSha": null,
+      "releaseTag": null,
+      "releaseTarget": null,
+      "version": "2.9.3"
     },
     {
       "name": "mod-configuration",
@@ -437,12 +437,12 @@
     },
     {
       "name": "mod-tags",
-      "releaseDate": "2020-11-03T18:34:54+00:00",
-      "releaseName": "v0.7.2",
-      "releaseSha": "86f10b28cd5a28b2397027f5bb9ed1d3eaf1e42b",
-      "releaseTag": "v0.7.2",
-      "releaseTarget": "master",
-      "version": "0.7.2"
+      "releaseDate": null,
+      "releaseName": null,
+      "releaseSha": null,
+      "releaseTag": null,
+      "releaseTarget": null,
+      "version": "0.7.3"
     },
     {
       "name": "mod-template-engine",
