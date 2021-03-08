@@ -91,7 +91,7 @@ These Okapi interface names start with underscore, e.g. the Tenant Interface `_t
 
 ## API endpoints
 
-The back-end modules define their routes and API endpoints in their [RAML files](/reference/api/),
+The back-end modules define their routes and API endpoints in their [API descriptions](/reference/api/),
 and declare the endpoints as the pathPatterns in the interfaces defined by their ModuleDescriptor.
 
 Endpoints use hyphen-separated strings, with URI parameters as camelCase.
@@ -100,6 +100,8 @@ There is no trailing slash.
 Some examples:
 
 * mod-inventory-storage declares `/contributor-name-types/{contributorNameTypeId}`
+
+All backend modules are required to provide the [module health check](https://wiki.folio.org/display/DD/Back+End+Module+Health+Check+Protocol) `/admin/health` endpoint.
 
 The special prefix `/_` is used to to distinguish the routing for the core endpoints of
 [Okapi internal web services](https://github.com/folio-org/okapi/blob/master/doc/guide.md#okapis-own-web-services)

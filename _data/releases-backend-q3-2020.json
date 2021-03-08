@@ -311,12 +311,12 @@
     },
     {
       "name": "mod-orders",
-      "releaseDate": "2020-11-18T12:54:19+00:00",
-      "releaseName": "v11.1.2",
-      "releaseSha": "3163289ae0ac8f7423d3b75defe676d28b924b38",
-      "releaseTag": "v11.1.2",
+      "releaseDate": "2021-03-05T09:56:19+00:00",
+      "releaseName": "v11.1.3",
+      "releaseSha": "0eee9ac161f378e1b9bc1b7bd12993887ae097d8",
+      "releaseTag": "v11.1.3",
       "releaseTarget": "master",
-      "version": "11.1.2"
+      "version": "11.1.3"
     },
     {
       "name": "mod-orders-storage",

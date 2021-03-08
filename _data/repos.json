@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-02-22T23:29:30.074905+00:00"
+    "generatedDateTime": "2021-03-02T23:06:35.629125+00:00"
   },
   "repos": [
     {
@@ -65,9 +65,9 @@
       "docDirName": null,
       "name": "edge-connexion",
       "ramlDirName": null,
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": ""
+      "snippetIntro": "<p><a href='https://github.com/folio-org/edge-connexion'>edge-connexion</a> is a FOLIO module for importing records to a FOLIO instance via <a href='https://www.oclc.org/en/connexion.html'>OCLC Connexion</a></p>"
     },
     {
       "description": "Bridge the gap between Dematic remote storage provider and FOLIO",
