@@ -20,8 +20,8 @@ Before proceeding, ensure that the backend module does not make some of the typi
 
 Note that this is not an exhaustive list.
 
-* The port numbers are matching -- the same in ModuleDescriptor, Dockerfile, and in program code and configuration.
 * The module version number (e.g. in Maven POM) is a semantic version number and snapshot designator, i.e. in mainline branch it should be `x.y.z-SNAPSHOT`. Avoid common mistakes like `x.y-SNAPSHOT` or `x.y.z` with no appended `-SNAPSHOT`.
+* The port numbers are matching -- the same in ModuleDescriptor, Dockerfile, and in program code and configuration.
 * Other ...
 
 ## Verify MD and required interfaces
