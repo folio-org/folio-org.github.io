@@ -278,9 +278,7 @@ mod-quick-marc:
     directory: ramls
     files:
       - records-editor
-    excludes:
-      - raml-storage
-    ramlutil: ramls/raml-storage/raml-util
+    ramlutil: null
 
 mod-invoice:
   - label: null
