@@ -46,7 +46,7 @@ H_JSON="-HContent-type:application/json"
 
 echo "Pulling updated ModuleDescriptors from registry ..."
 $CURL $H_JSON -X POST \
-  -d '{ "urls": [ "http://folio-registry.aws.indexdata.com" ] }' \
+  -d '{ "urls": [ "https://folio-registry.dev.folio.org" ] }' \
   $OKAPIURL/_/proxy/pull/modules
 
 echo
@@ -87,7 +87,7 @@ These will be the ModuleDescriptors that have been published since this VM was c
 
 ```
 curl -w '\n' -HContent-type:application/json -X POST \
-  -d '{ "urls": [ "http://folio-registry.aws.indexdata.com" ] }' \
+  -d '{ "urls": [ "https://folio-registry.dev.folio.org" ] }' \
   http://localhost:9130/_/proxy/pull/modules
 ```
 
