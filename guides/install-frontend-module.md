@@ -40,7 +40,7 @@ Obtain its MD and extract the "requires" section:
 
 ```
 curl -s -S -w'\n' \
-  'http://folio-registry.aws.indexdata.com/_/proxy/modules?filter=folio_users&latest=1&full=true' \
+  'https://folio-registry.dev.folio.org/_/proxy/modules?filter=folio_users&latest=1&full=true' \
   | jq '.[].requires'
 ```
 

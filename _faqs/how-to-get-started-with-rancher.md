@@ -66,7 +66,7 @@ In `package.json` set `--max-old-space-size=8192` to build options.
 ## Registering modules in Okapi
 Module registration runs automatically after the install or upgrade procedure.
 Helm uses post-install and post-upgrade hooks to run the module registration job for each module.
-Helm gets ModuleDescriptors from the FOLIO Registry (`http://folio-registry.aws.indexdata.com`) -- it gets the latest `snapshot` descriptor.
+Helm gets ModuleDescriptors from the FOLIO Registry (`https://folio-registry.dev.folio.org`) -- it gets the latest `snapshot` descriptor.
 
 Default steps for module registration:
   * Pushing module descriptor
@@ -131,7 +131,7 @@ Q: Are there any projects present at the moment. None could be found in the list
   + New Projects are available for authorized GitHub team members. Projects are already deployed with Terraform, including core backends, UI, secrets, FOLIO Helm Catalog etc.
 
 Q: What is meant by module in this context? Does this 'Catalog' contain one entry for each module family (e.g.` mod-inventory-storage`) or one per version of a module (e.g. `mod-inventory-storage-19.2.1`)?
-  + Catalog contains the module family. Module versions are not defined in Helm, and are pulled from `http://folio-registry.aws.indexdata.com` during install or upgrade.
+  + Catalog contains the module family. Module versions are not defined in Helm, and are pulled from `https://folio-registry.dev.folio.org` during install or upgrade.
 
 Q: Is this the `Apps` menu item at the top of the page? When it is accessed from within a project, is it specific to that project?
   + The `App` menu is accessible to every Project member. The FOLIO Helm repository is shared for all Projects, and contains the complete FOLIO backends list.
@@ -187,7 +187,7 @@ Q: How to do deployment (which includes proxy registration, discovery registrati
   + Prepare new descriptors and do the registration manually.
 
 Q: How does that module version get deployed, in order for it to be registered?
-  + Module version pulling from the FOLIO registry (`http://folio-registry.aws.indexdata.com`).
+  + Module version pulling from the FOLIO registry (`https://folio-registry.dev.folio.org`).
 
 Q: How to deploy coordinated breaking compatibility changes across multiple modules? For example, one UI and one business-logic module and one storage module should be updated together?
   + The deploy/register of modules in Rancher needs to be done in the appropriate order. Or use the bulk registration command from this documentation.
