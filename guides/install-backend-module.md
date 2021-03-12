@@ -40,7 +40,7 @@ curl -s -S -w'\n' \
 
 That shows that it requires various interfaces, including "`users 15.1`" and "`configuration 2.0`".
 
-Now ensure that each needed interface version is available.
+Now ensure that each needed interface version is [available](/faqs/how-to-which-module-which-interface-endpoint/).
 One method is to visit the [https://folio-snapshot.dev.folio.org/settings/about](https://folio-snapshot.dev.folio.org/settings/about) page.
 
 ## Ensure LaunchDescriptor
