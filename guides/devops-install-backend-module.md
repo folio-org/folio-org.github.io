@@ -41,7 +41,7 @@ Make a branch in [folio-ansible](https://github.com/folio-org/folio-ansible),
 e.g. `folio-2467-refenvs-ncip`
 
 Add the module to the `group_vars/testing` and `group_vars/snapshot` files.
-These files assist with building the VMs, and currently provide special configuration for some modules.
+These files also assist with building the VMs, and currently provide special configuration for some modules.
 
 Always add new modules to `group_vars/testing`.
 
