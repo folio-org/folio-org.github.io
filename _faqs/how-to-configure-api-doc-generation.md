@@ -13,6 +13,8 @@ The [Jenkinsfile](/guides/jenkinsfile/#back-end-modules) for each back-end modul
 The configuration metadata for all raml-related back-end modules is manually managed at the [api.yml](https://github.com/folio-org/folio-org.github.io/blob/master/_data/api.yml) file.
 This configuration is utilised by both this `publishAPI` and the `runLintRamlCop` CI jobs, and by this website.
 
+**NOTE**: This configuration is gradually being phased out, as projects start to use `doApiLint` and `doApiDoc` (see [Jenkinsfile](/guides/jenkinsfile/#back-end-modules)).
+
 Please ensure that the module's RAMLs can be processed without error.
 The guide [Assess API descriptions, schema, and examples](/guides/api-lint/) will assist.
 The quality of the generated documentation depends on its input.

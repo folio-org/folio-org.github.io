@@ -56,7 +56,7 @@ z-schema --pedanticCheck \
 
 ## Registry of ModuleDescriptors
 
-As part of the continuous integration process, each ModuleDescriptor.json is published to the FOLIO Registry at `https://folio-registry.aws.indexdata.com/`
+As part of the continuous integration process, each ModuleDescriptor.json is published to the FOLIO Registry at `https://folio-registry.dev.folio.org/`
 
 Refer to [explanation](/faqs/how-to-which-module-which-interface-endpoint/) of how to conduct registry queries to determine modules which require and provide certain interfaces.
 

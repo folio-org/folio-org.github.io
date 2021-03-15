@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-03-02T23:06:35.629125+00:00"
+    "generatedDateTime": "2021-03-11T22:21:48.153895+00:00"
   },
   "repos": [
     {
@@ -495,7 +495,7 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p><a href='https://github.com/folio-org/mod-copycat'>mod-copycat</a> is a FOLIO  module that assists in Copy cataloging. It imports records from remote systems using Z39.50.</p>"
+      "snippetIntro": "<p><a href='https://github.com/folio-org/mod-copycat'>mod-copycat</a> is a FOLIO  module that assists in Copy cataloging. It can import records from remote systems using Z39.50 or a straight MARC record can be provided.</p>"
     },
     {
       "description": "Backend CRUD storage module to support the Course Reserves functionality",
@@ -967,7 +967,7 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>API for quickMARC - in-app editor for MARC records in SRS.</p>"
+      "snippetIntro": "<p>Spring-based module that provides API for quickMARC - in-app editor for MARC records in SRS.</p>"
     },
     {
       "description": "Backend module for remote storage.",
