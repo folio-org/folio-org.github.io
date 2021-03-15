@@ -220,15 +220,34 @@ Node.js-based FOLIO projects can either deploy or retrieve FOLIO NPM
 dependencies by adding the location of the FOLIO NPM repository to their
 NPM settings.
 
-Typically, this can be set via the following NPM command:
+Typically, this can be set via one of the following NPM commands:
 
 ```
 npm config set registry https://repository.folio.org/repository/npm-folio/
 ```
 
+```
+npm config set registry https://repository.folio.org/repository/npm-folioci/
+```
+
 Deployment to the FOLIO repositories requires the proper permission. Artifacts
 and packages should only be deployed to the FOLIO Maven and NPM repositories via a
 build job configured in Jenkins.
+
+`npm-folio` is where the formal release artefacts of UI modules are published to.
+These are used to build the official distributions of FOLIO e.g. 2020 Q3 - Honeysuckle.
+These artefacts are produced by dedicated release builds.
+
+`npm-folioci` is where the pre-release artefacts are published to. They are sometimes
+referred to as “tip-of-master” because any time a PR is merged to the master branch of
+a UI module, a new artifact is automatically published to npm-folioci.
+These are used for building the hosted reference environments for testing purposes e.g.
+https://folio-snapshot.dev.folio.org/ . These artefacts are produced by the
+mainline (usually named master) builds for each module.
+
+Most developers are working on pre-release versions of the software and so want to
+check it works with other pre-release versions of other libraries/modules rather
+than the last formally released version which could be a few months old.
 
 ## Docker Hub
 
