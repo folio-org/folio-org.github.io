@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-03-11T22:21:48.153895+00:00"
+    "generatedDateTime": "2021-03-23T00:49:53.427582+00:00"
   },
   "repos": [
     {
@@ -52,6 +52,15 @@
       "snippetIntro": "<p>This is the documentation for FOLIO apps. If working with this Hugo site locally, be sure to execute <code>git submodule update --init --recursive</code> before attempting to build with Hugo for the first time.</p>"
     },
     {
+      "description": null,
+      "docDirName": null,
+      "name": "edge-api-utils",
+      "ramlDirName": null,
+      "repoLanguageHint": "other",
+      "repoType": "backend-edge",
+      "snippetIntro": ""
+    },
+    {
       "description": "a shared library/framework for edge APIs",
       "docDirName": null,
       "name": "edge-common",
@@ -59,6 +68,16 @@
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
       "snippetIntro": "<p>Common/Shared library for Edge APIs.</p>"
+    },
+    {
+      "description": "A shared library/framework for edge APIs for spring way modules",
+      "docDirName": null,
+      "isSpringway": true,
+      "name": "edge-common-spring",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>This is a shared library/framework for edge APIs for spring way modules. This module is a port of <a href='https://github.com/folio-org/edge-common'>edge-common</a>, and main goal is feature parity with that framework.  From a hosting/SysOps perspective, edge modules developed with this framework should be indistinguishable from those developed using edge-common.</p>"
     },
     {
       "description": "Integrate a direct single record import via OCLC Connexion",
