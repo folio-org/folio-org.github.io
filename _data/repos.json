@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-03-23T00:49:53.427582+00:00"
+    "generatedDateTime": "2021-03-28T00:06:32.515986+00:00"
   },
   "repos": [
     {
@@ -56,9 +56,9 @@
       "docDirName": null,
       "name": "edge-api-utils",
       "ramlDirName": null,
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": ""
+      "snippetIntro": "<p>The purpose of this edge API utils is the combine classes/utilities/constants shared by both modules: edge-common and edge-common-spring.</p>"
     },
     {
       "description": "a shared library/framework for edge APIs",
@@ -219,7 +219,7 @@
       "docDirName": null,
       "name": "folio-custom-fields",
       "repoLanguageHint": "java",
-      "repoType": "other",
+      "repoType": "raml-shared",
       "snippetIntro": "<p>The FOLIO module to store and maintain custom fields. The folio-custom-fields is designed to be a library that any module can add and use to store custom fields definitions as well as their values.</p>"
     },
     {
