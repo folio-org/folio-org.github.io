@@ -126,7 +126,7 @@ def get_json_contents(url):
 
 def store_config(output_json):
     """Store this JSON output."""
-    output_dir = "IG-data"
+    output_dir = "_data"
     os.makedirs(output_dir, exist_ok=True)
     output_pn = os.path.join(output_dir, "config-apidocs.json")
     with open(output_pn, "w") as output_fh:
