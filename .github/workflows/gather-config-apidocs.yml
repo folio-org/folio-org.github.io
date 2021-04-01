@@ -2,12 +2,12 @@ name: gather-config-apidocs
 
 # Gather configuration files which were deployed by CI api-doc
 # to that module's S3 space.
-# If module yet doing that, then utilise its old api.yml configuration.
+# If module not yet doing that, then utilise its old api.yml configuration.
 # If changes then push to branch ongoing-config-apidocs
 
 on:
-  push:
-    branches: [ folio-2922-gather-config-apidocs ]
+  schedule:
+    - cron: '19 55 * * *'
 
 jobs:
   job_1:
