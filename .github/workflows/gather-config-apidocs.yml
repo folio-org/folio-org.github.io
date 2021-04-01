@@ -1,0 +1,49 @@
+name: gather-config-apidocs
+
+# Gather configuration files which were deployed by CI api-doc
+# to that module's S3 space.
+# If module not yet doing that, then utilise its old api.yml configuration.
+# If changes then push to branch ongoing-config-apidocs
+
+on:
+  schedule:
+    - cron: '15 00 * * *'
+
+jobs:
+  job_1:
+    name: Extract and upload
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.PAT_PUSH }}
+
+    - name: Setup python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+
+    - name: Install dependencies
+      run: |
+        python -V
+        python -m pip install --upgrade pip
+        pip install -r .github/workflows/gather-config-apidocs/requirements.txt
+
+    - name: Run script
+      run: python .github/workflows/gather-config-apidocs/gather_config_apidocs.py -l info
+
+    - name: Commit changes, if any
+      id: auto-commit-action
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Apply automatic changes
+        branch: ongoing-config-apidocs
+        file_pattern: _data/config-apidocs.json
+    - name: Run if changes have been detected
+      if: ${{ steps.auto-commit-action.outputs.changes_detected == 'true' }}
+      run: echo "Changes were committed."
+    - name: Run if no changes have been detected
+      if: ${{ steps.auto-commit-action.outputs.changes_detected == 'false' }}
+      run: echo "There were no changes."
