@@ -92,6 +92,7 @@ utilities:
     - mod-notes
     - mod-tags
     - mod-calendar
+    - mod-search
     - mod-template-engine
     - mod-quick-marc
 infrastructure:
