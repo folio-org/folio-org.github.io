@@ -103,15 +103,16 @@ infrastructure:
     - raml-module-builder
     - mod-configuration
     - mod-audit
-    - mod-rtac
-    - edge-rtac
 other:
   title: Other
   description: Not yet grouped.
   modules:
     - folio-custom-fields
+    - acq-models
+    - data-import-raml-storage
+    - mod-rtac
+    - edge-rtac
 deprecated:
   title: Deprecated
   description: Some old ones that have been renamed.
   modules:
-    - mod-vendors
