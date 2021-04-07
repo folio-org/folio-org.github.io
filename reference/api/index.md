@@ -11,8 +11,8 @@ menuSubIndex: 2
 
 ## Introduction
 
-These API specifications are [automatically](#configure-api-docs) generated from each repository's
-RAML files, and specify how client modules may
+This API documentaton is automatically generated from each repository's
+API description files, and specify how client modules may
 access the functionality provided by these modules.
 See [usage notes](#usage-notes) below.
 
@@ -174,10 +174,6 @@ Note: This display is not yet automated, so please notify via [FOLIO-3028](https
 {% endfor %}
 
 ## Further information
-
-### Configuration {#configure-api-docs}
-
-See [explanation](/faqs/how-to-configure-api-doc-generation/) for how to configure the generation of API documentation of each back-end module.
 
 ### Usage notes
 
