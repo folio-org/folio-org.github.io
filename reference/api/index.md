@@ -19,7 +19,8 @@ See [usage notes](#usage-notes) below.
 * view-1: Generated from RAML. Uses pop-up windows for each method and endpoint.
 * view-2: Generated from RAML. Plain. Uses one-page view to everything.
 * view-3: Uploaded from the module's code build.
-* view-4: Generated from OAS.
+* view-4: Generated from OpenAPI OAS.
+* [Explain](#explain-views) views.
 
 This list of modules is sorted into functional groups.
 
@@ -182,6 +183,16 @@ So the documentation does not relate to feature development branches.
 
 * To find documentation for each software version, amend the URL of each generated document view to add the version number (major.minor).<br/>
 For example [mod-notes](#mod-notes), do `mod-notes/2.11/...`
+
+* <a id="explain-views"></a>Each "view" of the documentation is generated from the same source API description file, but using different presentation software.
+  * view-1: Generated from RAML. Uses pop-up windows for each method and endpoint.
+    * Via [raml2html](https://github.com/raml2html/raml2html) with default theme.
+  * view-2: Generated from RAML. Plain. Uses one-page view to everything.
+    * Via [raml2html](https://github.com/raml2html/raml2html) with [plain theme](https://github.com/folio-org/raml2html-plain-theme/tree/folio-589).
+  * view-3: Uploaded from the module's code build.
+    * Via CI [doUploadApidocs](/guides/jenkinsfile/).
+  * view-4: Generated from OpenAPI OAS.
+    * Via Redocly [ReDoc](https://github.com/Redocly/redoc).
 
 * The asterisk `*` denotes that this is a shared set of RAML files.
 The generated documents are for this module's current raml-util, but the link to the source RAML file is to the head of the default branch of the shared
