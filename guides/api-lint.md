@@ -75,7 +75,7 @@ See usage notes with: `node amf.js --help`
 
 ### Jenkinsfile
 
-To use "api-lint" with FOLIO Continuous Integration, add this configuration to the project's Jenkinsfile:
+To use "api-lint" with FOLIO Continuous Integration, add this configuration to the project's [Jenkinsfile](/guides/jenkinsfile/):
 
 ```
 buildMvn {
@@ -85,6 +85,9 @@ buildMvn {
   apiDirectories = 'ramls' // Required. Space-separated list
   apiExcludes = 'types.raml' // Optional. Space-separated list
 ```
+
+**Note:** This tool replaces the deprecated "lint-raml" (runLintRamlCop) facility.
+Do not use both.
 
 Examples:
 
