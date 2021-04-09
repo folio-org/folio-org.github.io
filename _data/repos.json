@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-03-28T00:06:32.515986+00:00"
+    "generatedDateTime": "2021-04-06T23:18:01.926636+00:00"
   },
   "repos": [
     {
@@ -59,6 +59,17 @@
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
       "snippetIntro": "<p>The purpose of this edge API utils is the combine classes/utilities/constants shared by both modules: edge-common and edge-common-spring.</p>"
+    },
+    {
+      "description": "Bridge the gap between CaiaSoft remote storage provider and FOLIO",
+      "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "edge-caiasoft",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between CaiaSoft remote storage provider and FOLIO.</p>"
     },
     {
       "description": "a shared library/framework for edge APIs",
@@ -191,7 +202,7 @@
       "snippetIntro": ""
     },
     {
-      "description": "FOLIO reporting and analytic queries",
+      "description": "FOLIO reporting/analytics",
       "docDirName": null,
       "name": "folio-analytics",
       "repoLanguageHint": "other",
@@ -722,6 +733,18 @@
       "repoLanguageHint": "node",
       "repoType": "backend-mod",
       "snippetIntro": "<p><code>mod-graphql</code> is a <a href='https://github.com/folio-org/okapi/blob/master/doc/guide.md#architecture'>FOLIO module</a>, written in Node.js, that provides a <a href='https://graphql.org/'>GraphQL</a> service by HTTP POST to <code>/graphql/</code>. It can be interrogated using any GraphQL client library, such as <a href='https://github.com/apollographql/apollo-client/'>Apollo</a>, and the graph it provides is auto-generated from the API description files (<a href='https://raml.org/'>RAML</a> and <a href='https://json-schema.org/'>JSON Schema</a>) of the modules that it's providing the GraphQL API for.</p>"
+    },
+    {
+      "description": "Performs connection to INN-Reach service and data processing",
+      "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
+      "name": "mod-inn-reach",
+      "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>The module provides an access to INN-Reach.</p>"
     },
     {
       "description": null,
@@ -1578,6 +1601,14 @@
       "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for the selection of metadata sources and collections for the finc user community.</p>"
+    },
+    {
+      "description": null,
+      "docDirName": null,
+      "name": "ui-inn-reach",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-inn-reach and start your development.</p>"
     },
     {
       "description": "UI module for administrating instances",
