@@ -138,42 +138,6 @@ This list of modules is sorted into functional groups.
   {% endfor %}
 {% endfor %}
 
-## Uploaded
-
-This is a temporary list of modules that are recently using the new method to upload additional API documentation that is build-generated (see [FOLIO-3008](https://issues.folio.org/browse/FOLIO-3008) and Jenkinsfile [configuration](/guides/jenkinsfile/)).
-Note: This display is not yet automated, so please notify via [FOLIO-3028](https://issues.folio.org/browse/FOLIO-3028) whenever new modules publish such documentation.
-
-{% for repo in site.data.api-uploaded %}
-  {%- assign moduleId = repo[0] -%}
-<h3 id="{{ moduleId }}"> {{ moduleId }} </h3>
-<table class="api">
-  <thead>
-    <tr>
-      <th class="raml" title="APIs and link to source">
-        Source
-      </th>
-      <th class="view" title="View 1"></th>
-      <th class="view" title="View 2"></th>
-      <th class="view" title="View 3: build-generated"></th>
-    </tr>
-  </thead>
-  <tbody>
-    {%- for doc in repo[1].files -%}
-      {% capture rowId %}{{ moduleId }}-{{ doc }}{% endcapture %}
-      {% capture urlSource %}{{ urlGithub }}/{{ moduleId }}/blob/master/{{ repo[1].directory }}/{{ doc }}.yaml{% endcapture %}
-      {% capture urlDoc3 %}{{ urlAws }}/{{ moduleId }}/u/{{ doc }}.html{% endcapture %}
-      {% capture view3 %}<a href="{{ urlDoc3 }}">view-3</a>{% endcapture %}
-      <tr id="{{ rowId }}">
-        <td> <a href="{{ urlSource }}">{{ doc }}.yaml</a> </td>
-        <td> &nbsp; </td>
-        <td> &nbsp; </td>
-        <td> {{ view3 }} </td>
-      </tr>
-    {%- endfor -%}
-  </tbody>
-</table>
-{% endfor %}
-
 ## Further information
 
 ### Usage notes
@@ -190,7 +154,7 @@ For example [mod-notes](#mod-notes), do `mod-notes/2.11/...`
   * view-2: Generated from RAML. Plain. Uses one-page view to everything.
     * Via [raml2html](https://github.com/raml2html/raml2html) with [plain theme](https://github.com/folio-org/raml2html-plain-theme/tree/folio-589).
   * view-3: Uploaded from the module's code build.
-    * Via CI [doUploadApidocs](/guides/jenkinsfile/).
+    * Via CI [doUploadApidocs](/guides/jenkinsfile/#do-upload-apidocs).
   * view-4: Generated from OpenAPI OAS.
     * Via Redocly [ReDoc](https://github.com/Redocly/redoc).
 
