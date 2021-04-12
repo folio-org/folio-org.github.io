@@ -76,7 +76,7 @@ This list of modules is sorted into functional groups.
   <p>{{ noteRaml }}</p>
     {% endif %}
     {% unless theRepo.metadata.apiTypes %}
-  <p class="attention note-small-2"> Module should now be using "api-doc" CI tool. <a href="#usage-notes"> * </a> </p>
+  <p class="attention note-small-2"> Module should now be using "<a href="#explain-api-doc">api-doc</a>" CI facilty. </p>
     {% endunless %}
     {% if theRepo == '' %}
   <p class="attention note-small-2"> No entry for {{ module }} in config-apidocs.json </p>
@@ -157,6 +157,8 @@ For example [mod-notes](#mod-notes), do `mod-notes/2.11/...`
     * Via CI [doUploadApidocs](/guides/jenkinsfile/#do-upload-apidocs).
   * view-4: Generated from OpenAPI OAS.
     * Via Redocly [ReDoc](https://github.com/Redocly/redoc).
+
+* <a id="explain-api-doc"></a>All back-end modules should now be using the new CI job "[api-doc](/guides/api-doc)" ("`doApiDoc`"). The old "`publishAPI`" facility is now deprecated.
 
 * The asterisk `*` denotes that this is a shared set of RAML files.
 The generated documents are for this module's current raml-util, but the link to the source RAML file is to the head of the default branch of the shared
