@@ -72,7 +72,7 @@ Also assists with [Describe schema and properties](/guides/describe-schema/).
 * Note: The `doApiLint` and `doApiDoc` both utilise supporting parameters (e.g. `apiTypes` and `apiDirectories`).
 See their [description](/guides/api-lint/).
 
-* `doUploadApidocs` -- If the module also generates API documentation during its Maven phase, then upload to S3.
+* <a id="do-upload-apidocs"></a>`doUploadApidocs` -- If the module also generates API documentation during its CI Maven phase, then upload to S3.
 Uploads all docs found in the "`target/apidocs`" directory.
 Note: This is additional to "`doApiDoc`".
 More explanation at [FOLIO-3008](https://issues.folio.org/browse/FOLIO-3008).
