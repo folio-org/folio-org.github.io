@@ -150,15 +150,17 @@ For example [mod-notes](#mod-notes), do `mod-notes/2.11/...`
 
 * <a id="explain-views"></a>Each "view" of the documentation is generated from the same source API description file, but using different presentation software.
   * view-1: Generated from RAML. Uses pop-up windows for each method and endpoint.
-    * Via [raml2html](https://github.com/raml2html/raml2html) with default theme.
+    * via [raml2html](https://github.com/raml2html/raml2html) with default theme.
   * view-2: Generated from RAML. Plain. Uses one-page view to everything.
-    * Via [raml2html](https://github.com/raml2html/raml2html) with [plain theme](https://github.com/folio-org/raml2html-plain-theme/tree/folio-589).
+    * via [raml2html](https://github.com/raml2html/raml2html) with [plain theme](https://github.com/folio-org/raml2html-plain-theme/tree/folio-589).
   * view-3: Uploaded from the module's code build.
-    * Via CI [doUploadApidocs](/guides/jenkinsfile/#do-upload-apidocs).
+    * via CI [doUploadApidocs](/guides/jenkinsfile/#do-upload-apidocs).
   * view-4: Generated from OpenAPI OAS.
-    * Via Redocly [ReDoc](https://github.com/Redocly/redoc).
+    * via Redocly [ReDoc](https://github.com/Redocly/redoc).
 
-* <a id="explain-api-doc"></a>All back-end modules should now be using the new CI job "[api-doc](/guides/api-doc)" ("`doApiDoc`"). The old "`publishAPI`" facility is now deprecated.
+* <a id="explain-api-doc"></a>Modules should now be using the new CI job "[api-doc](/guides/api-doc)" ("`doApiDoc`"). The old "`publishAPI`" facility is now deprecated.
+
+* <a id="explain-api-lint"></a>Modules should now be using the new CI job "[api-lint](/guides/api-lint)" ("`doApiLint`"). The old "`runLintRamlCop`" facility is now deprecated.
 
 * The asterisk `*` denotes that this is a shared set of RAML files.
 The generated documents are for this module's current raml-util, but the link to the source RAML file is to the head of the default branch of the shared
