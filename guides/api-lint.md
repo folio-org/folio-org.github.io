@@ -20,6 +20,9 @@ Each discovered API description file is provided to the nodejs script.
 
 That utilises the AML Modeling Framework [AMF](https://github.com/aml-org/amf), specifically the `amf-client-js` library, to parse and validate the definition.
 
+Note: Some modules might find new violations being reported.
+Refer to [Interpretation of messages](#interpretation-of-messages) below.
+
 ## Usage
 
 For use during FOLIO CI builds, refer to the Jenkinsfile [configuration](#jenkinsfile) below.
