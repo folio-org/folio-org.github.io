@@ -935,17 +935,21 @@
     "config": {
       "oas": [],
       "raml": [
-        "ramls/jsonSchemas.raml",
-        "ramls/ramls.raml",
-        "ramls/tenant.raml",
-        "ramls/codex/codex.raml",
         "ramls/codex/codex-instances-sources.raml",
         "ramls/codex/codex-packages.raml",
-        "ramls/tagged-record-example/users.raml"
+        "ramls/codex/codex.raml",
+        "ramls/jsonSchemas.raml",
+        "ramls/ramls.raml",
+        "ramls/tagged-record-example/users.raml",
+        "ramls/tenant.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "raml"
   },
   {
@@ -957,7 +961,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "raml-module-builder"
   }
 ]
