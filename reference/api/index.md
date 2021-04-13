@@ -29,6 +29,7 @@ This list of modules is sorted into functional groups.
 {% assign urlSourceXref = "/source-code/map/" %}
 {% assign noteRaml = 'This is the shared RAML repository. Each module uses a certain version of this as their "raml-util" directory.' %}
 {% assign noteSchemaOnly = 'Has only schema and no API descriptions.' %}
+{% assign noteReferRamlUtil = 'Refer to the <a href="#raml">raml</a> (raml-util) repository.' %}
 {% assign moduleIdEntries = "" | split: ',' %}
 
 {% for group in site.data.apigroup %}
@@ -62,6 +63,11 @@ This list of modules is sorted into functional groups.
         {% else %}
           {% assign hasApi = true %}
         {% endif %}
+        {% if theRepo.name contains 'mod-codex-' %}
+          {% assign isRamlUtilOnly = true %}
+        {% else %}
+          {% assign isRamlUtilOnly = false %}
+        {% endif %}
         {%- assign urlSourceXrefLocal = urlSourceXref | append:"#" | append:moduleId -%}
         {% break %}
       {% endif %}
@@ -69,6 +75,11 @@ This list of modules is sorted into functional groups.
     {% comment %}FIXME: Indenting the <p> caused to display it as preformatted{% endcomment %}
     {% if hasApi == false %}
   <p>{{ noteSchemaOnly }}</p>
+  <p> <a href="{{ urlSourceXrefLocal }}">Documentation</a> for {{ moduleId }}. </p>
+      {%- continue %}
+    {% endif %}
+    {% if isRamlUtilOnly %}
+  <p>{{ noteReferRamlUtil }}</p>
   <p> <a href="{{ urlSourceXrefLocal }}">Documentation</a> for {{ moduleId }}. </p>
       {%- continue %}
     {% endif %}
