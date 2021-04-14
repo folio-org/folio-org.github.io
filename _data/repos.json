@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-04-06T23:18:01.926636+00:00"
+    "generatedDateTime": "2021-04-12T23:42:21.272243+00:00"
   },
   "repos": [
     {
@@ -49,7 +49,7 @@
       "name": "docs",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": "<p>This is the documentation for FOLIO apps. If working with this Hugo site locally, be sure to execute <code>git submodule update --init --recursive</code> before attempting to build with Hugo for the first time.</p>"
+      "snippetIntro": "<p>This is the documentation for FOLIO apps. If working with this Hugo site locally, be sure to execute</p>"
     },
     {
       "description": null,
@@ -109,6 +109,16 @@
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
       "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between Dematic remote storage provider and FOLIO.</p>"
+    },
+    {
+      "description": "A Spring based shared library/framework for edge APIs to INN-REACH system.",
+      "docDirName": null,
+      "hintOas": true,
+      "name": "edge-inn-reach",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-edge",
+      "snippetIntro": ""
     },
     {
       "description": null,
@@ -735,13 +745,10 @@
       "snippetIntro": "<p><code>mod-graphql</code> is a <a href='https://github.com/folio-org/okapi/blob/master/doc/guide.md#architecture'>FOLIO module</a>, written in Node.js, that provides a <a href='https://graphql.org/'>GraphQL</a> service by HTTP POST to <code>/graphql/</code>. It can be interrogated using any GraphQL client library, such as <a href='https://github.com/apollographql/apollo-client/'>Apollo</a>, and the graph it provides is auto-generated from the API description files (<a href='https://raml.org/'>RAML</a> and <a href='https://json-schema.org/'>JSON Schema</a>) of the modules that it's providing the GraphQL API for.</p>"
     },
     {
-      "description": "Performs connection to INN-Reach service and data processing",
+      "description": "Implements INN-Reach service client",
       "docDirName": null,
-      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
-      "hintRmb": true,
-      "isRmb": true,
       "name": "mod-inn-reach",
-      "ramlDirName": "ramls",
+      "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>The module provides an access to INN-Reach.</p>"
@@ -1721,6 +1728,14 @@
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
       "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>create-item</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='create-item'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+    },
+    {
+      "description": "Stripes plugin module for displaying graphs of eUsage",
+      "docDirName": null,
+      "name": "ui-plugin-eusage-reports",
+      "repoLanguageHint": "node",
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>eusage-reports</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='eusage-reports'&gt;</code> element. See <a href='https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": "A Stripes UI plugin for editing markdown",
