@@ -15,6 +15,7 @@ That leads to the Stripes [documentation](https://github.com/folio-org/stripes/b
 That overview leads to various other documentation, including the
 [stripes-components](https://github.com/folio-org/stripes-components) and
 [stripes-smart-components](https://github.com/folio-org/stripes-smart-components) which have documentation in the "lib" directory of each component.
+Also consider that for some Stripes components, it might be suitable to use a [Stripes plugin](https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#plugins).
 
 The foundation described in
 [The Stripes Module Developer's Guide](https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md) is necessary for developing UI modules using Stripes.

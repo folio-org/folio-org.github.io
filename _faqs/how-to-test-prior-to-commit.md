@@ -15,6 +15,9 @@ Each back-end module has unit tests (e.g. `mvn clean test`).
 
 Some modules have additional local tests -- see their README document.
 
+The Wiki page [ERM Unit Testing in RTL/Jest](https://wiki.folio.org/pages/viewpage.action?pageId=54887207) is a guide for writing unit tests for the UI modules within ERM, using RTL (React testing library) and the Jest test runner.
+The notes there will also be useful for other modules.
+
 See [Code analysis and linting facilities](/guides/code-analysis/).
 
 The integration tests and regression tests for FOLIO UI are explained at 

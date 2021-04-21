@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-04-12T23:42:21.272243+00:00"
+    "generatedDateTime": "2021-04-19T23:59:10.846679+00:00"
   },
   "repos": [
     {
@@ -114,11 +114,12 @@
       "description": "A Spring based shared library/framework for edge APIs to INN-REACH system.",
       "docDirName": null,
       "hintOas": true,
+      "isSpringway": true,
       "name": "edge-inn-reach",
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": ""
+      "snippetIntro": "<p>A Spring based shared library/framework for edge APIs to INN-REACH system.</p>"
     },
     {
       "description": null,
@@ -427,17 +428,6 @@
     {
       "description": null,
       "docDirName": null,
-      "hintOas": true,
-      "isSpringway": true,
-      "name": "mod-bursar-export",
-      "ramlDirName": "ramls",
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>Module to provide feesfines export data by scheduling.</p>"
-    },
-    {
-      "description": null,
-      "docDirName": null,
       "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
       "hintRmb": true,
       "isRmb": true,
@@ -664,6 +654,15 @@
       "snippetIntro": "<p>Module for harvesting counter reports.</p>"
     },
     {
+      "description": null,
+      "docDirName": null,
+      "name": "mod-eusage-reports",
+      "ramlDirName": null,
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p><a href='https://github.com/folio-org/mod-eusage-reports'>mod-eusage-reports</a> is a backend module for parsing and storing relationships between COUNTER report lines and KB items and for storing access statistics (access numbers and cost) for specific periods.</p>"
+    },
+    {
       "description": "Provides functionality for the notification events",
       "docDirName": null,
       "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
@@ -747,6 +746,8 @@
     {
       "description": "Implements INN-Reach service client",
       "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
       "name": "mod-inn-reach",
       "ramlDirName": null,
       "repoLanguageHint": "java",
