@@ -96,6 +96,8 @@ Examples:
 
 * [mod-tags](https://github.com/folio-org/mod-tags/blob/master/Jenkinsfile)
   -- RAML
+* [mod-eusage-reports](https://github.com/folio-org/mod-eusage-reports/blob/master/Jenkinsfile)
+  -- OAS
 * [mod-search](https://github.com/folio-org/mod-search/blob/master/Jenkinsfile)
   -- OAS
 * [mod-quick-marc](https://github.com/folio-org/mod-quick-marc/blob/master/Jenkinsfile)
