@@ -111,9 +111,10 @@ other:
     - folio-custom-fields
     - acq-models
     - data-import-raml-storage
+    - mod-eusage-reports
     - mod-rtac
     - edge-rtac
 deprecated:
   title: Deprecated
-  description: Some old ones that have been renamed.
+  description: Some old ones that have been renamed recently.
   modules:

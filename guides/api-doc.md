@@ -82,6 +82,8 @@ Examples:
 
 * [mod-notes](https://github.com/folio-org/mod-notes/blob/master/Jenkinsfile)
   -- RAML
+* [mod-eusage-reports](https://github.com/folio-org/mod-eusage-reports/blob/master/Jenkinsfile)
+  -- OAS
 * [mod-quick-marc](https://github.com/folio-org/mod-quick-marc/blob/master/Jenkinsfile)
   -- both RAML and OAS
 
