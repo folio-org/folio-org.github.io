@@ -1,16 +1,8 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-04-19T23:59:10.846679+00:00"
+    "generatedDateTime": "2021-04-27T00:40:56.026404+00:00"
   },
   "repos": [
-    {
-      "description": "GitHub Actions Workflow Templates",
-      "docDirName": null,
-      "name": ".github",
-      "repoLanguageHint": "other",
-      "repoType": "other",
-      "snippetIntro": ""
-    },
     {
       "description": "Central repository for the acquisition models",
       "docDirName": null,
@@ -655,10 +647,11 @@
     },
     {
       "description": null,
-      "docDirName": null,
+      "docDirName": "doc",
+      "hintOas": true,
       "name": "mod-eusage-reports",
       "ramlDirName": null,
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p><a href='https://github.com/folio-org/mod-eusage-reports'>mod-eusage-reports</a> is a backend module for parsing and storing relationships between COUNTER report lines and KB items and for storing access statistics (access numbers and cost) for specific periods.</p>"
     },
@@ -1667,6 +1660,14 @@
       "snippetIntro": "<p>This is a Folio Stripes settings module that provides a front-end for configuring various things for the <a href='https://github.com/doytch/edge-lti-courses'>edge-lti-courses Edge module</a> that uses the <a href='https://www.imsglobal.org/spec/lti/v1p3/'>LTI 1.3 standard</a> to connect Learning Management Systems (LMSs) such as Sakai, Canvas, or Blackboard to Folio's Course Reserves app.</p>"
     },
     {
+      "description": "MARC Authorities module",
+      "docDirName": null,
+      "name": "ui-marc-authorities",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a UI module for administrating authority records.</p>"
+    },
+    {
       "description": "UI module: managing user profile settings",
       "docDirName": null,
       "name": "ui-myprofile",
@@ -1857,6 +1858,14 @@
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
       "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-user</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-user'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+    },
+    {
+      "description": "A FOLIO registry to allow frontend apps to register resources and draw information about other modules's resources.",
+      "docDirName": null,
+      "name": "ui-plugin-resource-registry",
+      "repoLanguageHint": "node",
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This module returns an instance of a registry class, which allows a frontend app to register a resource at startup.</p>"
     },
     {
       "description": "Stripes UI for quickMARC editor",
