@@ -1,7 +1,0 @@
-# Temporary data file to enable display of uploaded API documentation
-# that was generated during build-time and uploaded. FOLIO-3028
-#
-mod-search:
-  directory: src/main/resources/swagger.api
-  files:
-    - mod-search

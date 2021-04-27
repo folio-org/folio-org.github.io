@@ -1,16 +1,8 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-04-06T23:18:01.926636+00:00"
+    "generatedDateTime": "2021-04-27T00:40:56.026404+00:00"
   },
   "repos": [
-    {
-      "description": "GitHub Actions Workflow Templates",
-      "docDirName": null,
-      "name": ".github",
-      "repoLanguageHint": "other",
-      "repoType": "other",
-      "snippetIntro": ""
-    },
     {
       "description": "Central repository for the acquisition models",
       "docDirName": null,
@@ -49,7 +41,7 @@
       "name": "docs",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": "<p>This is the documentation for FOLIO apps. If working with this Hugo site locally, be sure to execute <code>git submodule update --init --recursive</code> before attempting to build with Hugo for the first time.</p>"
+      "snippetIntro": "<p>This is the documentation for FOLIO apps. If working with this Hugo site locally, be sure to execute</p>"
     },
     {
       "description": null,
@@ -109,6 +101,17 @@
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
       "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between Dematic remote storage provider and FOLIO.</p>"
+    },
+    {
+      "description": "A Spring based shared library/framework for edge APIs to INN-REACH system.",
+      "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "edge-inn-reach",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>A Spring based shared library/framework for edge APIs to INN-REACH system.</p>"
     },
     {
       "description": null,
@@ -417,17 +420,6 @@
     {
       "description": null,
       "docDirName": null,
-      "hintOas": true,
-      "isSpringway": true,
-      "name": "mod-bursar-export",
-      "ramlDirName": "ramls",
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>Module to provide feesfines export data by scheduling.</p>"
-    },
-    {
-      "description": null,
-      "docDirName": null,
       "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
       "hintRmb": true,
       "isRmb": true,
@@ -654,6 +646,16 @@
       "snippetIntro": "<p>Module for harvesting counter reports.</p>"
     },
     {
+      "description": null,
+      "docDirName": "doc",
+      "hintOas": true,
+      "name": "mod-eusage-reports",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p><a href='https://github.com/folio-org/mod-eusage-reports'>mod-eusage-reports</a> is a backend module for parsing and storing relationships between COUNTER report lines and KB items and for storing access statistics (access numbers and cost) for specific periods.</p>"
+    },
+    {
       "description": "Provides functionality for the notification events",
       "docDirName": null,
       "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
@@ -735,13 +737,12 @@
       "snippetIntro": "<p><code>mod-graphql</code> is a <a href='https://github.com/folio-org/okapi/blob/master/doc/guide.md#architecture'>FOLIO module</a>, written in Node.js, that provides a <a href='https://graphql.org/'>GraphQL</a> service by HTTP POST to <code>/graphql/</code>. It can be interrogated using any GraphQL client library, such as <a href='https://github.com/apollographql/apollo-client/'>Apollo</a>, and the graph it provides is auto-generated from the API description files (<a href='https://raml.org/'>RAML</a> and <a href='https://json-schema.org/'>JSON Schema</a>) of the modules that it's providing the GraphQL API for.</p>"
     },
     {
-      "description": "Performs connection to INN-Reach service and data processing",
+      "description": "Implements INN-Reach service client",
       "docDirName": null,
-      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
-      "hintRmb": true,
-      "isRmb": true,
+      "hintOas": true,
+      "isSpringway": true,
       "name": "mod-inn-reach",
-      "ramlDirName": "ramls",
+      "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>The module provides an access to INN-Reach.</p>"
@@ -1659,6 +1660,14 @@
       "snippetIntro": "<p>This is a Folio Stripes settings module that provides a front-end for configuring various things for the <a href='https://github.com/doytch/edge-lti-courses'>edge-lti-courses Edge module</a> that uses the <a href='https://www.imsglobal.org/spec/lti/v1p3/'>LTI 1.3 standard</a> to connect Learning Management Systems (LMSs) such as Sakai, Canvas, or Blackboard to Folio's Course Reserves app.</p>"
     },
     {
+      "description": "MARC Authorities module",
+      "docDirName": null,
+      "name": "ui-marc-authorities",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a UI module for administrating authority records.</p>"
+    },
+    {
       "description": "UI module: managing user profile settings",
       "docDirName": null,
       "name": "ui-myprofile",
@@ -1721,6 +1730,14 @@
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
       "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>create-item</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='create-item'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+    },
+    {
+      "description": "Stripes plugin module for displaying graphs of eUsage",
+      "docDirName": null,
+      "name": "ui-plugin-eusage-reports",
+      "repoLanguageHint": "node",
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>eusage-reports</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='eusage-reports'&gt;</code> element. See <a href='https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "description": "A Stripes UI plugin for editing markdown",
@@ -1841,6 +1858,14 @@
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
       "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-user</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-user'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+    },
+    {
+      "description": "A FOLIO registry to allow frontend apps to register resources and draw information about other modules's resources.",
+      "docDirName": null,
+      "name": "ui-plugin-resource-registry",
+      "repoLanguageHint": "node",
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This module returns an instance of a registry class, which allows a frontend app to register a resource at startup.</p>"
     },
     {
       "description": "Stripes UI for quickMARC editor",
