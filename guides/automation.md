@@ -102,13 +102,13 @@ When doing any substantial test data loading, then use this rather than the othe
 This the same as "folio-snapshot".
 The server is built every day, to finish about 02:39 UTC (see Jenkins job: [folio-snapshot-load](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-load/)).
 
-### folio-honeysuckle
+### folio-iris
 
-[https://folio-honeysuckle.dev.folio.org/](https://folio-honeysuckle.dev.folio.org/)
+[https://folio-iris.dev.folio.org/](https://folio-iris.dev.folio.org/)
 
-This is an environment for the most recent FOLIO Release Q3 2020 Honeysuckle.
+This is an environment for the most recent FOLIO Release R1 2021 Iris.
 Each rebuild will pick up any hotfix updates that may have been released.
-The server is built every Sunday, to finish about 04:07 UTC (see Jenkins job: [folio-q3-2020-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-q3-2020-release/)).
+The server is built every Sunday, to finish about 01:20 UTC (see Jenkins job: [folio-r1-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r1-2021-release/)).
 
 ### Other notes
 
