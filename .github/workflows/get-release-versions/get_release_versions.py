@@ -26,7 +26,7 @@ from time import sleep
 import requests
 import github3
 
-SCRIPT_VERSION = "1.0.1"
+SCRIPT_VERSION = "1.0.2"
 
 LOGLEVELS = {
     "debug": logging.DEBUG,
@@ -74,6 +74,9 @@ def get_versions(branch):
     repos_json["metadata"]["branch"] = branch
     repos_json["repos"] = []
     mod_re = re.compile(r"^(.+)-([0-9.]+)$")
+    map_repos = {
+        "mod-z3950": "Net-Z3950-FOLIO"
+    }
     try:
         http_response = requests.get(url_config)
         http_response.raise_for_status()
@@ -107,15 +110,21 @@ def get_versions(branch):
             logger.error("Could not determine module version: %s", mod['id'])
             exit_code = 1
             continue
-        #if not mod_name in ['mod-notes', 'mod-oai-pmh']: # testing
+        #if not mod_name in ['mod-notes']: # testing
+        #if not mod_name in ['mod-notes', 'mod-graphql', 'mod-z3950']: # testing
             #continue
         logger.info("Assessing %s %s", mod_name, mod_version)
+        try:
+            repo_name = map_repos[mod_name]
+        except KeyError:
+            repo_name = mod_name
         repos_json_packet = {}
         repos_json_packet['name'] = mod_name
         repos_json_packet['version'] = mod_version
+        repos_json_packet['nameRepo'] = repo_name
         tag_name = "v" + mod_version
         flag_tag_found = False
-        repo_short = github.repository("folio-org", mod_name)
+        repo_short = github.repository("folio-org", repo_name)
         tags = repo_short.tags(10)
         for tag in tags:
             logger.debug("  tag_name=%s sha=%s", tag.name, tag.commit.sha)
