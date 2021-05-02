@@ -31,7 +31,7 @@ import requests
 import sh
 import yaml
 
-SCRIPT_VERSION = "1.2.0"
+SCRIPT_VERSION = "1.2.1"
 
 LOGLEVELS = {
     "debug": logging.DEBUG,
@@ -157,7 +157,7 @@ def do_jd(file_1_pn, file_2_pn):
         status = False
     return status, result
 
-def show_api_diff(repo_name, version, release_sha, api_directory, branch):
+def show_api_diff(repo_name, mod_name, version, release_sha, api_directory, branch):
     """Show API schema differences.
     Clones the repo mainline and release to temporary directories.
     Compares each between release and mainline.
@@ -165,7 +165,7 @@ def show_api_diff(repo_name, version, release_sha, api_directory, branch):
     status = True
     errors = []
     files = []
-    output_dir = os.path.abspath(os.path.join("schemadiff", branch, repo_name))
+    output_dir = os.path.abspath(os.path.join("schemadiff", branch, mod_name))
     output_api_dir = os.path.join(output_dir, "api")
     os.makedirs(output_api_dir, exist_ok=True)
     url_git = "https://github.com/folio-org/{}".format(repo_name)
@@ -405,12 +405,12 @@ def store_diff_result(output_dir, output_fn, result, version, store_type):
         output_fh.write(result)
         output_fh.write("\n")
 
-def show_db_diff(repo_name, version, release_sha, branch, db_fn):
+def show_db_diff(repo_name, mod_name, version, release_sha, branch, db_fn):
     """Show DB schema differences."""
     status = True
     errors = []
     file_record = {}
-    output_dir = os.path.join("schemadiff", branch, repo_name)
+    output_dir = os.path.join("schemadiff", branch, mod_name)
     os.makedirs(output_dir, exist_ok=True)
     url_base = "https://raw.githubusercontent.com/folio-org/{}".format(repo_name)
     # remove leading "blob/master/"
@@ -443,9 +443,9 @@ def show_db_diff(repo_name, version, release_sha, branch, db_fn):
                 errors.append("Trouble with jd detecting JSON diff for DB schema")
     return status, errors, file_record
 
-def store_summary(summary_json, branch, repo_name):
+def store_summary(summary_json, branch, mod_name):
     """Store this module's processing summary JSON."""
-    output_dir = os.path.join("schemadiff", branch, repo_name)
+    output_dir = os.path.join("schemadiff", branch, mod_name)
     os.makedirs(output_dir, exist_ok=True)
     output_fn = os.path.join(output_dir, "summary.json")
     with open(output_fn, "w") as output_fh:
@@ -459,33 +459,37 @@ def main():
     url_versions = os.path.join(url_base, "releases-backend-{}.json".format(branch))
     url_repos = os.path.join(url_base, "repos.json")
     json_versions = get_config_data(url_versions)
+    # For local testing:
+    #with open("_data/releases-backend-{}.json".format(branch), 'r') as json_fh:
+        #json_versions = json.load(json_fh)
     json_repos = get_config_data(url_repos)
     global DATE_TIME
     # The yaml parser gags on the "!include".
     # http://stackoverflow.com/questions/13280978/pyyaml-errors-on-in-a-string
     yaml.add_constructor(u"!include", construct_raml_include, Loader=yaml.SafeLoader)
     for mod in json_versions['repos']:
-        repo_name = mod['name']
+        mod_name = mod['name']
+        repo_name = mod['nameRepo']
         DATE_TIME = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')
-        #test_repos = ['mod-notes', 'mod-configuration']
-        #test_repos = ['mod-notes']
-        #if not repo_name in test_repos: # testing
+        #test_modules = ['mod-notes', 'mod-configuration']
+        #test_modules = ['mod-notes', 'mod-z3950']
+        #if not mod_name in test_modules: # testing
             #continue
-        logger.info("Assessing %s %s", repo_name, mod['version'])
+        logger.info("Assessing %s %s", mod_name, mod['version'])
         summary_json = {}
         summary_json["metadata"] = {}
-        summary_json["metadata"]["moduleName"] = repo_name
+        summary_json["metadata"]["moduleName"] = mod_name
         summary_json["metadata"]["moduleVersion"] = mod['version']
         summary_json["metadata"]["dateProcessed"] = DATE_TIME
         summary_json["processingErrors"] = []
         summary_json["filesModified"] = []
         if not mod['releaseTag']:
             msg = "Missing release Tag"
-            logger.warning("%s: %s", repo_name, msg)
+            logger.warning("%s: %s", mod_name, msg)
             summary_json["processingErrors"].append(msg)
-            store_summary(summary_json, branch, repo_name)
+            store_summary(summary_json, branch, mod_name)
             continue
-        repo_details = get_repo_details(json_repos, repo_name)
+        repo_details = get_repo_details(json_repos, mod_name)
         try:
             has_db_schema = repo_details['hasDbSchema']
         except KeyError:
@@ -493,9 +497,9 @@ def main():
         else:
             if has_db_schema: #FIXME: repos.json sometimes has null property
                 (status, errors, file_record) = show_db_diff(
-                    repo_name, mod['version'], mod['releaseSha'], branch, has_db_schema)
+                    repo_name, mod_name, mod['version'], mod['releaseSha'], branch, has_db_schema)
                 if status:
-                    logger.debug("%s: has DbSchema", repo_name)
+                    logger.debug("%s: has DbSchema", mod_name)
                     summary_json["filesModified"].append(file_record)
                 else:
                     summary_json["processingErrors"].extend(errors)
@@ -505,14 +509,14 @@ def main():
             pass
         else:
             if ramls_dir: #FIXME: repos.json sometimes has null property
-                logger.debug("%s: has RAML", repo_name)
+                logger.debug("%s: has RAML", mod_name)
                 (status, errors, files) = show_api_diff(
-                    repo_name, mod['version'], mod['releaseSha'], ramls_dir, branch)
+                    repo_name, mod_name, mod['version'], mod['releaseSha'], ramls_dir, branch)
                 if status:
                     summary_json["filesModified"].extend(files)
                 else:
                     summary_json["processingErrors"].extend(errors)
-        store_summary(summary_json, branch, repo_name)
+        store_summary(summary_json, branch, mod_name)
         sleep(3)
     status = prepare_s3_publish(branch)
     logging.shutdown()
