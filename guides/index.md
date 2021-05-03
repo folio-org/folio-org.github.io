@@ -119,6 +119,7 @@ These are listed in the [Start](/start/) section.
 - [Branch preview mode for UI modules](branch-preview/).
 - For Contextual Query Language (CQL) examples, see the [Glossary](/reference/glossary/#cql), the FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/raml-module-builder#cql-contextual-query-language), the [API docs](/reference/api/), and the debug output for tests in each backend module.
 - Use "[api-lint](/guides/api-lint/)" to assess API descriptions, schema, and examples -- both RAML and OpenAPI (OAS).
+- Use "[api-doc](/guides/api-doc/)" to generate API documentation from API descriptions, schema, and examples -- both RAML and OpenAPI (OAS).
 - [Conduct API testing](api-testing/) using Postman collections and Newman against a running module.
 - [Describe schema and properties](describe-schema/).
 - Explain [ModuleDescriptors](module-descriptor/) and default [LaunchDescriptors](module-descriptor/#launchdescriptor-properties).

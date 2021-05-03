@@ -66,16 +66,7 @@ Many other people utilise these systems.
 See Slack #hosted-reference-envs channel.
 People need to ask there and allow time for others to be aware.
 
-To determine the cause of failed builds, search the Jenkins output for terms such as:
-
-`failed:` |
-`Connection refused:` |
-`fatal:` |
-`Incompatible version` |
-`Missing dependency:` |
-`Invalid URL path requested` |
-`no such image:`
-
+To determine the cause of failed builds, search the [Jenkins output logfile](/faqs/how-to-investigate-jenkins-logs/).
 Remember that the cause might be in the earlier build of "Pipeline build-platform-complete-snapshot" etc.
 
 ## Developer scratch environments

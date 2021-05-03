@@ -25,15 +25,15 @@ and to the additional Wiki [Pull Request Guidelines](https://wiki.folio.org/disp
 * Do the automated checks pass (e.g. tests, sonar, lint)?
 * Does each PR title reference a Jira issue for the correct project (at the beginning of the title)?
   * See the additional requirements at Wiki [Pull Request Guidelines](https://wiki.folio.org/display/DD/Pull+Request+Guidelines).
-  * Note that the Jira ticket identifier must be upper-case with no spaces (e.g. `FOLIO-2951`).
+  * Note that the Jira ticket identifier slug must be upper-case with no spaces (e.g. `FOLIO-2951`).
   * Does that Jira ticket have a "Fix Version"?
 * Should the implementation version change (link to guidance)?
 * Are any of the library dependencies a snapshot or pre-release version?
 
 ## Interface change checklist
 
-* Do the RAML checks pass (e.g. [lint-raml-cop](/guides/raml-cop/))?
-* Do the JSON Schema checks pass (e.g. [lint-raml-schema](/guides/describe-schema/))?
+* Do the API description checks pass (e.g. [api-lint](/guides/api-lint/))?
+* Do the JSON Schema checks pass (e.g. [api-schema-lint](/guides/describe-schema/))?
 * Has the interface version been updated?
   * In the ModuleDescriptor?
   * In the interface definition?
