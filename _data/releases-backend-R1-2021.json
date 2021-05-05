@@ -266,11 +266,11 @@
     {
       "name": "mod-graphql",
       "nameRepo": "mod-graphql",
-      "releaseDate": null,
-      "releaseName": null,
-      "releaseSha": null,
-      "releaseTag": null,
-      "releaseTarget": null,
+      "releaseDate": "2021-05-04T14:23:15+00:00",
+      "releaseName": "v1.6.0",
+      "releaseSha": "5c69163bd7deb9782e7b7893dec149d330ab7abe",
+      "releaseTag": "v1.6.0",
+      "releaseTarget": "master",
       "version": "1.6.0"
     },
     {
@@ -606,11 +606,11 @@
     {
       "name": "mod-z3950",
       "nameRepo": "Net-Z3950-FOLIO",
-      "releaseDate": null,
-      "releaseName": null,
-      "releaseSha": null,
-      "releaseTag": null,
-      "releaseTarget": null,
+      "releaseDate": "2021-05-04T14:21:03+00:00",
+      "releaseName": "v2.0.0",
+      "releaseSha": "a91a61f39d60edd21f0d708bc92bb59d4effcafe",
+      "releaseTag": "v2.0.0",
+      "releaseTarget": "master",
       "version": "2.0.0"
     }
   ]
