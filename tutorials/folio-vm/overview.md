@@ -16,7 +16,7 @@ menuTopTitle: Tutorials
 * [Vagrant](https://www.vagrantup.com/) -- Recent version.
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads) --
 Determine the version of VirtualBox to [match](https://www.vagrantup.com/docs/virtualbox) your version of `vagrant`.
-* [curl](https://curl.haxx.se) -- Only curl commands are shown in this tutorial. (Those could be [utilised](https://learning.postman.com/docs/postman/collections/importing-and-exporting-data/) via [Postman](https://postman.com/).)
+* [curl](https://curl.haxx.se) -- Only curl commands are shown in this tutorial. (Those could be [utilised](https://learning.postman.com/docs/postman/collections/importing-and-exporting-data/) via [Postman](https://postman.com/). Easier to use [command line tools](/faqs/how-to-use-apis/) exist.)
 
 ## Background
 
