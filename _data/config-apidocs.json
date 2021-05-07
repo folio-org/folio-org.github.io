@@ -309,8 +309,6 @@
     "config": {
       "oas": [
         "src/main/resources/openapi/eusage-reports-1.0.yaml",
-        "src/main/resources/openapi/headers/okapi-tenant.yaml",
-        "src/main/resources/openapi/headers/okapi-token.yaml",
         "src/main/resources/openapi/tenant-2.0.yaml"
       ],
       "raml": [],
