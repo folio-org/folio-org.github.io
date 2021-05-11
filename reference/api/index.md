@@ -175,7 +175,7 @@ For example [mod-notes](#mod-notes), do `mod-notes/2.11/...`
 
 * <a id="explain-gather-config"></a>For modules that are now using the "api-doc" CI facility, there is an automated daily workflow "[gather-config-apidocs](https://github.com/folio-org/folio-org.github.io/actions/workflows/gather-config-apidocs.yml)" which collects configuration changes.
 So there will be a delay for new (or deleted) entries to be listed in their table.
-Updates do happen automatically.
+Updates to the actual generated API documents for each module do [happen](#usage-notes) automatically, being deployed during their “merge to main branch” phase.
 
 * The asterisk `*` denotes that this is a shared set of RAML files.
 The generated documents are for this module's current raml-util, but the link to the source RAML file is to the head of the default branch of the shared
