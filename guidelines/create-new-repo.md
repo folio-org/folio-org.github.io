@@ -34,6 +34,7 @@ Disable the Issues and Wiki via Settings. We use the FOLIO resources instead.
 Do this as soon as possible, so that issues are created in the FOLIO issue tracker.
 
 Ensure that access is configured for the relevant FOLIO GitHub [Teams](https://github.com/orgs/folio-org/teams).
+Note that front-end module repositories also need the "bots" Team (with Write access) to enable the "[translations](/guides/commence-a-module/#front-end-translations)" facility.
 
 Add a concise "About" description to the GitHub repository. Consider that this will also be utilised elsewhere. This description is near the top-right of your GitHub front page.
 (If the "Edit" button is not available to you, then see the "support" advice above.)
