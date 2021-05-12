@@ -7,7 +7,7 @@ name: gather-config-apidocs
 
 on:
   schedule:
-    - cron: '15 00 * * *'
+    - cron: '05 00 * * *'
 
 jobs:
   job_1:
