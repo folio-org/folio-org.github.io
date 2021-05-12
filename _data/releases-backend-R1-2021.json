@@ -266,12 +266,12 @@
     {
       "name": "mod-graphql",
       "nameRepo": "mod-graphql",
-      "releaseDate": "2021-05-04T14:23:15+00:00",
-      "releaseName": "v1.6.0",
-      "releaseSha": "5c69163bd7deb9782e7b7893dec149d330ab7abe",
-      "releaseTag": "v1.6.0",
+      "releaseDate": "2021-05-11T14:52:11+00:00",
+      "releaseName": "v1.8.0",
+      "releaseSha": "de36aacf8bd615e45f1b13c65a0912c13373a277",
+      "releaseTag": "v1.8.0",
       "releaseTarget": "master",
-      "version": "1.6.0"
+      "version": "1.8.0"
     },
     {
       "name": "mod-inventory",
@@ -346,12 +346,12 @@
     {
       "name": "mod-login-saml",
       "nameRepo": "mod-login-saml",
-      "releaseDate": "2021-03-09T16:37:12+00:00",
-      "releaseName": "",
-      "releaseSha": "4c7a5da34151dd4a1503e9430d28cf2d4e5537a9",
-      "releaseTag": "v2.1.0",
+      "releaseDate": "2021-05-11T16:06:41+00:00",
+      "releaseName": "v2.1.1",
+      "releaseSha": "04d80f9e938c8d834257d109bb98cbf6f77c9e75",
+      "releaseTag": "v2.1.1",
       "releaseTarget": "master",
-      "version": "2.1.0"
+      "version": "2.1.1"
     },
     {
       "name": "mod-ncip",
@@ -466,12 +466,12 @@
     {
       "name": "mod-permissions",
       "nameRepo": "mod-permissions",
-      "releaseDate": "2021-03-25T23:54:53+00:00",
-      "releaseName": "v5.13.1",
-      "releaseSha": "9701af7ef7c5ac099a049d2781acf3a6a3760555",
-      "releaseTag": "v5.13.1",
+      "releaseDate": "2021-05-11T14:22:25+00:00",
+      "releaseName": "v5.13.2",
+      "releaseSha": "8c5a34baf0e5e9dcccd81e1fadf5967748a342fc",
+      "releaseTag": "v5.13.2",
       "releaseTarget": "master",
-      "version": "5.13.1"
+      "version": "5.13.2"
     },
     {
       "name": "mod-pubsub",
@@ -606,12 +606,12 @@
     {
       "name": "mod-z3950",
       "nameRepo": "Net-Z3950-FOLIO",
-      "releaseDate": "2021-05-04T14:21:03+00:00",
-      "releaseName": "v2.0.0",
-      "releaseSha": "a91a61f39d60edd21f0d708bc92bb59d4effcafe",
-      "releaseTag": "v2.0.0",
+      "releaseDate": "2021-05-06T16:03:56+00:00",
+      "releaseName": "v2.1.0",
+      "releaseSha": "e808c9142e127b564aebc6caf4defc88e97939cd",
+      "releaseTag": "v2.1.0",
       "releaseTarget": "master",
-      "version": "2.0.0"
+      "version": "2.1.0"
     }
   ]
 }
