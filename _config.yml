@@ -23,6 +23,7 @@ markdown: kramdown
 plugins:
   - jekyll-remote-theme
   - jekyll-gist
+  - jekyll-feed
 
 exclude: [bin, Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, tmp, vendor, work]
 
