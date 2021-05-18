@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-05-11T12:47:22.198039+00:00"
+    "generatedDateTime": "2021-05-17T23:07:06.556899+00:00"
   },
   "repos": [
     {
@@ -883,6 +883,15 @@
       "snippetIntro": "<p>Notifications to the users</p>"
     },
     {
+      "description": "Bounded Context Deailing with Open Access Publishing",
+      "docDirName": null,
+      "name": "mod-oa",
+      "ramlDirName": null,
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": ""
+    },
+    {
       "description": "Backend Module implementing the OAI-PMH metadata harvesting protocol",
       "docDirName": null,
       "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
@@ -1691,6 +1700,14 @@
       "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for dealing with the notes.</p>"
+    },
+    {
+      "description": "UX module for Open Access Management",
+      "docDirName": null,
+      "name": "ui-oa",
+      "repoLanguageHint": "other",
+      "repoType": "ui",
+      "snippetIntro": ""
     },
     {
       "description": "Stripes UI for oai-pmh",
