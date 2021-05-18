@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-04-27T00:40:56.026404+00:00"
+    "generatedDateTime": "2021-05-11T12:47:22.198039+00:00"
   },
   "repos": [
     {
@@ -1024,6 +1024,15 @@
       "snippetIntro": "<p>Backend module for remote storages</p>"
     },
     {
+      "description": "EXPLORATORY MODULE : Backend Module to provide data synchronisation with arbitrary sources - initially focussed on LASER resources into Subscriptions and Agreements for Leipzig but with wider scope if we get it right.",
+      "docDirName": null,
+      "name": "mod-remote-sync",
+      "ramlDirName": null,
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": ""
+    },
+    {
       "description": "Maven archetype used to generate an RMB-based module",
       "docDirName": null,
       "name": "mod-rmb-template",
@@ -1890,6 +1899,14 @@
       "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-remote-storage and start your development.</p>"
+    },
+    {
+      "description": "Exploratory Front End App : support systems librarians syncing data from external data sources",
+      "docDirName": null,
+      "name": "ui-remote-sync",
+      "repoLanguageHint": "other",
+      "repoType": "ui",
+      "snippetIntro": ""
     },
     {
       "description": "Stripes UI module for making requests on items",

@@ -26,7 +26,7 @@ from time import sleep
 import requests
 import yaml
 
-SCRIPT_VERSION = "1.0.0"
+SCRIPT_VERSION = "1.1.0"
 
 LOGLEVELS = {
     "debug": logging.DEBUG,
@@ -165,22 +165,10 @@ def report_summary(json_apidocs, json_old_config):
 def list_api_modules(json_repos):
     """Produce a list of API-related modules."""
     list_modules = set()
+    repo_types = ["backend-mod", "backend-edge", "backend-infrastructure", "raml-shared"]
     for mod in sorted(json_repos["repos"], key=itemgetter('name')):
-        if "raml-shared" in mod["repoType"]:
+        if mod["repoType"] in repo_types:
             list_modules.add(mod["name"])
-        try:
-            is_api = mod["hintOas"]
-        except KeyError:
-            pass
-        else:
-            list_modules.add(mod["name"])
-        try:
-            is_api = mod["ramlDirName"]
-        except KeyError:
-            pass
-        else:
-            if is_api: #FIXME: repos.json sometimes has null property
-                list_modules.add(mod["name"])
     LOGGER.info("Assessing %s repos that are potentially API-related ...", len(list_modules))
     return sorted(list_modules)
 

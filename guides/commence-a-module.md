@@ -267,3 +267,5 @@ As explained there, the `en.json` file provides the default keys and strings.
 There is no need for other placeholder files.
 The files for other languages are automatically generated and merged by Lokalise, with the assistance of human translators.
 
+<div class="folio-spacer-content"></div>
+
