@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.2"
-gem "jekyll-remote-theme", "0.2.4"
+gem "jekyll-remote-theme"
 gem "kramdown-parser-gfm"
 gem "jekyll-data"
 gem "jekyll-feed"
