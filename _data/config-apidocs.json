@@ -447,6 +447,21 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/swagger.api/inn-reach.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "mod-inn-reach"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/inventory.raml",
