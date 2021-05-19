@@ -112,6 +112,7 @@ other:
     - acq-models
     - data-import-raml-storage
     - mod-eusage-reports
+    - mod-inn-reach
     - mod-rtac
     - edge-rtac
 deprecated:

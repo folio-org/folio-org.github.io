@@ -36,7 +36,7 @@ end
 
 task :doctor do
   puts "Doing jekyll doctor ..."
-  'bundle exec jekyll doctor'
+  sh 'bundle exec jekyll doctor'
 end
 
 task :default => [:proof]
