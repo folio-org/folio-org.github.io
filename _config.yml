@@ -20,11 +20,14 @@ twitter_username: folio_lsp
 # Build settings
 remote_theme: Balancingrock/classic-jekyll-theme@2.5.0
 markdown: kramdown
+sass:
+  sourcemap: never
 plugins:
   - jekyll-remote-theme
   - jekyll-gist
+  - jekyll-feed
 
-exclude: [bin, Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, tmp, vendor, work]
+exclude: [bin, CONTRIBUTING.md, README.md, tmp, work]
 
 collections:
   faqs:

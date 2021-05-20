@@ -1,7 +1,7 @@
 *~
 _site
 .sass-cache
-.jekyll-metadata
+.jekyll-cache
 .ruby-version
 .bundle
 tmp/
