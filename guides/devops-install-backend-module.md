@@ -41,7 +41,7 @@ Make a branch in [folio-ansible](https://github.com/folio-org/folio-ansible),
 e.g. `folio-2467-refenvs-ncip`
 
 Add the module to the `group_vars/testing` and `group_vars/snapshot` files.
-These files assist with building the VMs, and currently provide special configuration for some modules.
+These files also assist with building the VMs, and currently provide special configuration for some modules.
 
 Always add new modules to `group_vars/testing`.
 
@@ -118,11 +118,7 @@ Follow the results of this build run via its `Console Output` and full log.
 The AWS instance will be removed and rebuilt.
 It takes approximately 20-25 minutes.
 
-If not success, then try to interpret the Jenkins log.
-Some "Find in page" searches are a bit helpful
-(e.g. "failed:" and "fatal:" and "Missing dependency:" and
-"Connection refused:" and "Incompatible version" and
-"Invalid URL path requested" and "no such image:").
+If not success, then try to interpret the [Jenkins output logfile](/faqs/how-to-investigate-jenkins-logs/).
 In some cases, may need to ssh to the instance and inspect the Okapi logfile.
 
 ## Verify the testing build

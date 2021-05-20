@@ -17,5 +17,5 @@ and the upcoming [lighter-weight core VM](https://issues.folio.org/browse/FOLIO-
 
 Such API tests are an important way to test because they interact directly with the running module and so circumvent the additional layers of user-interface type of tests.
 
-The [lint-raml](/guides/raml-cop/) is useful to statically verify RAML files and schemas and a small set of samples. These API tests operate as real-life testing.
+The [api-lint](/guides/api-lint/) tool is useful to statically verify API description files and schemas and a small set of samples. These API tests operate as real-life testing.
 

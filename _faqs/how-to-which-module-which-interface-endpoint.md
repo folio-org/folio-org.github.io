@@ -36,7 +36,7 @@ For example:
 
 ```
 curl -s -S -w'\n' \
-  'http://folio-registry.aws.indexdata.com/_/proxy/modules?filter=mod-inventory-storage&latest=1&full=true' \
+  'https://folio-registry.dev.folio.org/_/proxy/modules?filter=mod-inventory-storage&latest=1&full=true' \
   | jq '.[].provides'
 ```
 
@@ -44,14 +44,14 @@ curl -s -S -w'\n' \
 
 ```
 curl -s -S -w'\n' \
-  'http://folio-registry.aws.indexdata.com/_/proxy/modules?latest=1&require=instance-bulk%3D0.1'
+  'https://folio-registry.dev.folio.org/_/proxy/modules?latest=1&require=instance-bulk%3D0.1'
 ```
 
 ### Provides a newer interface
 
 ```
 curl -s -S -w'\n' \
-  'http://folio-registry.aws.indexdata.com/_/proxy/modules?latest=1&provide=inventory-record-bulk'
+  'https://folio-registry.dev.folio.org/_/proxy/modules?latest=1&provide=inventory-record-bulk'
 ```
 
 ## UI Developer Settings

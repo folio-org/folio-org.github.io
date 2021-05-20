@@ -15,6 +15,10 @@ To connect to the APIs there are several software options:
 
 The [Okapi Guide](https://github.com/folio-org/okapi/blob/master/doc/guide.md) has detailed examples and explanations how to use APIs with command-line tool `curl`.
 
+## okapi-curl
+
+The [okapi-curl](https://github.com/MikeTaylor/okapi-curl) is a shell script that wraps curl.
+
 ## Okapi CLI
 
 The [okapi-cli](https://github.com/folio-org/okapi-cli) is a command-line interface written in Java.

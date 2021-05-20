@@ -97,8 +97,8 @@ Normally there will also be the [git submodule](https://git-scm.com/docs/git-sub
 
 Some modules only have a `ramls/raml-util` and not other files, because their files are all located in that shared space.
 
-Set the Jenkinsfile [configuration](/guides/jenkinsfile/) `publishAPI` parameter
-and `runLintRamlCop` parameter, to enable these during continuous integration.
+Set the Jenkinsfile [configuration](/guides/jenkinsfile/) `doApiLint` parameter
+and `doApiDoc` parameter, to enable these during continuous integration.
 
 The reference [API documentation](/reference/api/) is generated from these files. Provide a clear "description" field for each endpoint.
 
@@ -266,4 +266,6 @@ See the "[i18n best practices](https://github.com/folio-org/stripes/blob/master/
 As explained there, the `en.json` file provides the default keys and strings.
 There is no need for other placeholder files.
 The files for other languages are automatically generated and merged by Lokalise, with the assistance of human translators.
+
+<div class="folio-spacer-content"></div>
 

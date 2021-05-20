@@ -20,6 +20,9 @@ Each discovered API description file is provided to the nodejs script.
 
 That utilises the AML Modeling Framework [AMF](https://github.com/aml-org/amf), specifically the `amf-client-js` library, to parse and validate the definition.
 
+Note: Some modules might find new violations being reported.
+Refer to [Interpretation of messages](#interpretation-of-messages) below.
+
 ## Usage
 
 For use during FOLIO CI builds, refer to the Jenkinsfile [configuration](#jenkinsfile) below.
@@ -75,7 +78,7 @@ See usage notes with: `node amf.js --help`
 
 ### Jenkinsfile
 
-To use "api-lint" with FOLIO Continuous Integration, add this configuration to the project's Jenkinsfile:
+To use "api-lint" with FOLIO Continuous Integration, add this configuration to the project's [Jenkinsfile](/guides/jenkinsfile/):
 
 ```
 buildMvn {
@@ -86,10 +89,15 @@ buildMvn {
   apiExcludes = 'types.raml' // Optional. Space-separated list
 ```
 
+**Note:** This tool replaces the deprecated "lint-raml" (runLintRamlCop) facility.
+Do not use both.
+
 Examples:
 
 * [mod-tags](https://github.com/folio-org/mod-tags/blob/master/Jenkinsfile)
   -- RAML
+* [mod-eusage-reports](https://github.com/folio-org/mod-eusage-reports/blob/master/Jenkinsfile)
+  -- OAS
 * [mod-search](https://github.com/folio-org/mod-search/blob/master/Jenkinsfile)
   -- OAS
 * [mod-quick-marc](https://github.com/folio-org/mod-quick-marc/blob/master/Jenkinsfile)

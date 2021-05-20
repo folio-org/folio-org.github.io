@@ -58,7 +58,7 @@ The set of frontend modules are those listed in the "snapshot" branch of the Str
 The frontend build consists of the master branch of each frontend module at that time.
 This build follows automatically directly after the "folio-testing-backend" build.
 
-The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish about 25 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
+The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish about 47 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
 If successful, then this will regenerate the yarn.lock file of the Platform, to be utilised by the abovementioned "folio-testing-stripes" bundle job.
 So if there is an urgent need to rebuild "folio-testing" outside of normal automation, so as to include a new snapshot of a UI module, then this build needs to have run before the bundle build is re-run.
 View the later part of the "Console output" of its most recent run, to ensure that the module versions are as expected.
@@ -72,11 +72,11 @@ There is no attempt to verify that the frontend dependencies are met by the back
 
 [https://folio-snapshot.dev.folio.org/](https://folio-snapshot.dev.folio.org/)
 
-Built every day, to finish about 01:55 UTC (see Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot/)).
+Built every day, to finish about 01:58 UTC (see Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot/)).
 
 The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
 
-The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish about 30 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
+The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish about 47 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
 If successful, then this will regenerate the yarn.lock and install files of the Platform, to be utilised by the abovementioned "folio-snapshot" job.
 So if there is an urgent need to rebuild "folio-snapshot" outside of normal automation, so as to include a new snapshot of a module, then this build needs to have run before the "folio-snapshot" build is re-run.
 View the later part of the "Console output" of its most recent run, to ensure that the module versions are as expected.
@@ -100,15 +100,15 @@ This is the version that will be used by acceptance testers to verify that users
 
 When doing any substantial test data loading, then use this rather than the other systems.
 This the same as "folio-snapshot".
-The server is built every day, to finish about 02:35 UTC (see Jenkins job: [folio-snapshot-load](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-load/)).
+The server is built every day, to finish about 02:39 UTC (see Jenkins job: [folio-snapshot-load](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-load/)).
 
-### folio-honeysuckle
+### folio-iris
 
-[https://folio-honeysuckle.dev.folio.org/](https://folio-honeysuckle.dev.folio.org/)
+[https://folio-iris.dev.folio.org/](https://folio-iris.dev.folio.org/)
 
-This is an environment for the most recent FOLIO Release Q3 2020 Honeysuckle.
+This is an environment for the most recent FOLIO Release R1 2021 Iris.
 Each rebuild will pick up any hotfix updates that may have been released.
-The server is built every Sunday, to finish about 02:20 UTC (see Jenkins job: [folio-q3-2020-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-q3-2020-release/)).
+The server is built every Sunday, to finish about 01:20 UTC (see Jenkins job: [folio-r1-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r1-2021-release/)).
 
 ### Other notes
 
@@ -220,15 +220,34 @@ Node.js-based FOLIO projects can either deploy or retrieve FOLIO NPM
 dependencies by adding the location of the FOLIO NPM repository to their
 NPM settings.
 
-Typically, this can be set via the following NPM command:
+Typically, this can be set via one of the following NPM commands:
 
 ```
 npm config set registry https://repository.folio.org/repository/npm-folio/
 ```
 
+```
+npm config set registry https://repository.folio.org/repository/npm-folioci/
+```
+
 Deployment to the FOLIO repositories requires the proper permission. Artifacts
 and packages should only be deployed to the FOLIO Maven and NPM repositories via a
 build job configured in Jenkins.
+
+`npm-folio` is where the formal release artefacts of UI modules are published to.
+These are used to build the official distributions of FOLIO e.g. 2020 Q3 - Honeysuckle.
+These artefacts are produced by dedicated release builds.
+
+`npm-folioci` is where the pre-release artefacts are published to. They are sometimes
+referred to as “tip-of-master” because any time a PR is merged to the master branch of
+a UI module, a new artifact is automatically published to npm-folioci.
+These are used for building the hosted reference environments for testing purposes e.g.
+https://folio-snapshot.dev.folio.org/ . These artefacts are produced by the
+mainline (usually named master) builds for each module.
+
+Most developers are working on pre-release versions of the software and so want to
+check it works with other pre-release versions of other libraries/modules rather
+than the last formally released version which could be a few months old.
 
 ## Docker Hub
 

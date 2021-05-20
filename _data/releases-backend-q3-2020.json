@@ -221,12 +221,12 @@
     },
     {
       "name": "mod-invoice",
-      "releaseDate": "2020-11-18T11:07:27+00:00",
-      "releaseName": "v4.1.2",
-      "releaseSha": "82fa13639f8fdbf096f7eba78fda429468738b24",
-      "releaseTag": "v4.1.2",
+      "releaseDate": "2021-03-10T09:30:52+00:00",
+      "releaseName": "v4.1.3",
+      "releaseSha": "146ba38a6ec6c6eaeb27b132c37bd0f08df8e059",
+      "releaseTag": "v4.1.3",
       "releaseTarget": "master",
-      "version": "4.1.2"
+      "version": "4.1.3"
     },
     {
       "name": "mod-invoice-storage",

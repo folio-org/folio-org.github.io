@@ -33,11 +33,12 @@ See an example at
 buildMvn {
   publishModDescriptor = true
   mvnDeploy = true
-  publishAPI = true
-  runLintRamlCop = true // Deprecated. See doApiLint.
+  publishAPI = false // Deprecated. See doApiDoc.
+  runLintRamlCop = false // Deprecated. See doApiLint.
   buildNode = 'jenkins-agent-java11'
 
   doApiLint = true
+  doApiDoc = true
   apiTypes = 'RAML'
   apiDirectories = 'ramls'
 
@@ -59,24 +60,34 @@ It will be published to the FOLIO Module Descriptor registry.
 * `mvnDeploy` -- Deploy Maven artifacts to FOLIO Maven repository.
 (Default: false)
 
-* `publishAPI` -- Generate and publish [API documentation](/reference/api/) from the module's
-[RAML](/guides/commence-a-module/#back-end-ramls) and Schema files.
-(Default: false)
-
-* `doUploadApidocs` -- If the module generates API documentation during its Maven phase, then upload to S3.
-Uploads all docs found in the "`target/apidocs`" directory.
-Note: This is additional to "`publishAPI`" and is not yet linked in to the [API documentation](/reference/api/). More explanation at [FOLIO-3008](https://issues.folio.org/browse/FOLIO-3008).
-(Default: false)
-
 * `doApiLint` -- Run "[api-lint](/guides/api-lint/)" to assess API descriptions, schema, and examples -- both [RAML](/guides/commence-a-module/#back-end-ramls) and OpenAPI (OAS).
 See [explanation](/guides/api-lint/#usage) of required and optional parameters.
 Also assists with [Describe schema and properties](/guides/describe-schema/).
+(Default: false)
+
+* `doApiDoc` -- Run "[api-doc](/guides/api-doc/)" to generate and publish [API documentation](/reference/api/) from the module's
+[RAML](/guides/commence-a-module/#back-end-ramls) or OpenAPI (OAS) files, and Schema files.
+(Default: false)
+
+* Note: The `doApiLint` and `doApiDoc` both utilise supporting parameters (e.g. `apiTypes` and `apiDirectories`).
+See their [description](/guides/api-lint/).
+
+* <a id="do-upload-apidocs"></a>`doUploadApidocs` -- If the module also generates API documentation during its CI Maven phase, then upload to S3.
+Uploads all docs found in the "`target/apidocs`" directory.
+Note: This is additional to "`doApiDoc`".
+More explanation at [FOLIO-3008](https://issues.folio.org/browse/FOLIO-3008).
+Example: [mod-search](https://github.com/folio-org/mod-search/blob/master/Jenkinsfile).
 (Default: false)
 
 * `runLintRamlCop` -- Deprecated -- Run "[raml-cop](/guides/raml-cop/)" (and other tests) on back-end modules that have declared [RAML](/guides/commence-a-module/#back-end-ramls) in api.yml configuration.
 Also assists with [Describe schema and properties](/guides/describe-schema/).
 (Default: false)
 (Deprecated. See doApiLint.)
+
+* `publishAPI` -- Deprecated -- Generate and publish [API documentation](/reference/api/) from the module's
+[RAML](/guides/commence-a-module/#back-end-ramls) and Schema files.
+(Default: false)
+(Deprecated. See doApiDoc.)
 
 If we are creating and deploying a Docker image as part of the module's artifacts, specify
 'doDocker' with 'buildJavaDocker' (for Spring-based modules instead use the 'buildDocker') and the following options:

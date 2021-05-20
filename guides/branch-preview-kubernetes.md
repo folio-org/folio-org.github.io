@@ -28,9 +28,7 @@ Edit the 'Jenkinsfile' for the backend module branch.  Add the 'doKubeDeploy' an
 ```
 buildMvn {
   publishModDescriptor = true
-  publishAPI = true
   mvnDeploy = true
-  runLintRamlCop = true
   doKubeDeploy = true     <---- Add this
   publishPreview = true   <---- Add this
 

@@ -41,6 +41,11 @@ code {
   padding-right: 1px;
 }
 
+.note-small-2 {
+  font-size: $small-2-font-size;
+  width: 40%;
+}
+
 table {
   border-collapse: collapse;
 }
@@ -55,7 +60,7 @@ th {
 }
 table.api {
   table-layout: fixed;
-  width: 25em;
+  width: 30em;
 }
 table.apilabel {
   width: 25em;
@@ -110,6 +115,9 @@ form input {
   font-size: 1.3em;
 }
 .menubar-icon {
+  display: none;
+}
+.page-meta {
   display: none;
 }
 nav.folio {
