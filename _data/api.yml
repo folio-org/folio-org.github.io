@@ -675,7 +675,6 @@ mod-source-record-storage:
     directory: ramls
     files:
       - source-record-storage-batch
-      - source-record-storage-handlers
       - source-record-storage-records
       - source-record-storage-snapshots
       - source-record-storage-source-records
@@ -691,7 +690,6 @@ mod-source-record-manager:
     directory: ramls
     files:
       - change-manager
-      - change-manager-handlers
       - mapping-rules-provider
       - metadata-provider
     excludes:
