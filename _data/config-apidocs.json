@@ -870,7 +870,6 @@
       "oas": [],
       "raml": [
         "ramls/change-manager.raml",
-        "ramls/change-manager-handlers.raml",
         "ramls/mapping-rules-provider.raml",
         "ramls/metadata-provider.raml"
       ],
@@ -884,7 +883,6 @@
       "oas": [],
       "raml": [
         "ramls/source-record-storage-batch.raml",
-        "ramls/source-record-storage-handlers.raml",
         "ramls/source-record-storage-records.raml",
         "ramls/source-record-storage-snapshots.raml",
         "ramls/source-record-storage-source-records.raml",
