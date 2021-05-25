@@ -219,6 +219,7 @@ mod-inventory-storage:
     version1: true
     directory: ramls
     files:
+      - bound-with-part
       - holdings-sources
       - holdings-storage
       - holdings-sync
