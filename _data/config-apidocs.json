@@ -481,6 +481,7 @@
       "oas": [],
       "raml": [
         "ramls/alternative-title-type.raml",
+        "ramls/bound-with-part.raml",
         "ramls/call-number-type.raml",
         "ramls/classification-type.raml",
         "ramls/contributor-name-type.raml",
