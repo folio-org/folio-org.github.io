@@ -4,16 +4,6 @@
   },
   "repos": [
     {
-      "name": "mod-aes",
-      "nameRepo": "mod-aes",
-      "releaseDate": "2021-04-16T14:56:58+00:00",
-      "releaseName": "v0.0.4",
-      "releaseSha": "6fd6740d9ef9b67b11f1820ec94df0d4df0fd969",
-      "releaseTag": "v0.0.4",
-      "releaseTarget": "master",
-      "version": "0.0.4"
-    },
-    {
       "name": "mod-agreements",
       "nameRepo": "mod-agreements",
       "releaseDate": "2021-03-31T09:59:59+00:00",
