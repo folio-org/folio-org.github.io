@@ -526,12 +526,12 @@
     {
       "name": "mod-source-record-manager",
       "nameRepo": "mod-source-record-manager",
-      "releaseDate": "2021-05-22T12:00:26+00:00",
-      "releaseName": "3.0.6",
-      "releaseSha": "2605d6dbbbb08c1187b40943c2bd6f56ba2c3089",
-      "releaseTag": "v3.0.6",
+      "releaseDate": "2021-05-28T13:00:29+00:00",
+      "releaseName": "3.0.7",
+      "releaseSha": "d16d999dc68734430d0d1d0cd13de6441c8b56e8",
+      "releaseTag": "v3.0.7",
       "releaseTarget": "master",
-      "version": "3.0.6"
+      "version": "3.0.7"
     },
     {
       "name": "mod-source-record-storage",
