@@ -233,6 +233,8 @@ Other examples:
   -- has greater memory allocation.
 * [mod-login](https://github.com/folio-org/mod-login/blob/master/descriptors/ModuleDescriptor-template.json)
   -- uses the dockerCMD.
+* [mod-search](https://github.com/folio-org/mod-search/blob/master/descriptors/ModuleDescriptor-template.json)
+  -- has additional env properties.
 
 ## Testing the modifications
 
