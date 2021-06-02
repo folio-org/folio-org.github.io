@@ -166,6 +166,9 @@ Other environment variables can also be documented here (see [examples](#example
 Their default values would need to make sense in the FOLIO [reference environments](/guides/automation/#reference-environments) where these LaunchDescriptors will be used as-is.
 The defaults also need to make sense in a cluster.
 
+Clearly describe the env items using those available properties (name, value, description).
+This is necessary information for DevOps to be able to utilise the module.
+
 ### env JAVA_OPTIONS
 
 This environment variable must at least have the setting as shown in the [example](#example-launchdescriptors), which enables Java to configure the specified [memory](#memory) for the container.
@@ -190,6 +193,11 @@ Some need explanation:
 * `DB_HOST` keyword "postgres" is automatically mapped by the relevant system.
 * `DB_DATABASE` is "okapi_modules" used by all modules.
 
+### Docker Hub README
+
+As part of the CI stage "Docker Build", various information will be gleaned from the LaunchDescriptor to generate a README and deploy to Docker Hub.
+
+As explained [above](#docker-env), clearly describe the "env" items.
 
 ### Example LaunchDescriptors
 
@@ -225,16 +233,20 @@ As explained [above](#env-java_options), this form needs the new folio docker im
   }
 ```
 
-Other examples:
+Other LaunchDescriptor examples:
 
 * [mod-circulation](https://github.com/folio-org/mod-circulation/blob/master/descriptors/ModuleDescriptor-template.json)
   -- does not use a database.
+  [DH readme](https://hub.docker.com/r/folioorg/mod-circulation).
 * [mod-users](https://github.com/folio-org/mod-users/blob/master/descriptors/ModuleDescriptor-template.json)
   -- has greater memory allocation.
+  [DH readme](https://hub.docker.com/r/folioorg/mod-users).
 * [mod-login](https://github.com/folio-org/mod-login/blob/master/descriptors/ModuleDescriptor-template.json)
   -- uses the dockerCMD.
+  [DH readme](https://hub.docker.com/r/folioorg/mod-login).
 * [mod-search](https://github.com/folio-org/mod-search/blob/master/descriptors/ModuleDescriptor-template.json)
   -- has additional env properties.
+  [DH readme](https://hub.docker.com/r/folioorg/mod-search).
 
 ## Testing the modifications
 

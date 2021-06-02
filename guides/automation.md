@@ -256,6 +256,7 @@ should include a Dockerfile that describes how to build a runtime Docker image f
 module.  If a Dockerfile is present, Jenkins will create a Docker image for the module
 and publish the image to a repository on Docker Hub as a post-build step if the previous
 build step is successful.
+That CI stage also deploys a Docker Hub README [generated](/guides/module-descriptor#docker-hub-readme) from the LaunchDescriptor.
 
 Docker images are published to the ['folioci' namespace on Docker Hub](https://hub.docker.com/u/folioci).
 This namespace is primarily used by Jenkins for other continuous
