@@ -486,8 +486,6 @@ mod-orders-storage:
       - acquisitions-unit
       - alert
       - configuration
-      - orders
-      - order-lines
       - order-invoice-relns
       - order-templates
       - pieces
