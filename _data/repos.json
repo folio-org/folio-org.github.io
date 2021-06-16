@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-06-01T23:53:08.631080+00:00"
+    "generatedDateTime": "2021-06-06T22:41:17.888642+00:00"
   },
   "repos": [
     {
@@ -1091,7 +1091,7 @@
       "ramlDirName": null,
       "repoLanguageHint": "gradle",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "<p>Mod-Service-Interaction is a FOLIO Backend Module for cross-app connectivity.</p>"
     },
     {
       "description": null,
