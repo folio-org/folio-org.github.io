@@ -895,13 +895,17 @@
   },
   {
     "config": {
-      "oas": [],
-      "raml": [
-        "ramls/tags.raml"
+      "oas": [
+        "src/main/resources/swagger.api/tags.yml"
       ],
+      "raml": [],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
     "name": "mod-tags"
   },
   {
