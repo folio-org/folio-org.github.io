@@ -617,14 +617,6 @@ mod-calendar:
       - calendar
     ramlutil: ramls/raml-util
 
-mod-tags:
-  - label: null
-    version1: true
-    directory: ramls
-    files:
-      - tags
-    ramlutil: ramls/raml-util
-
 mod-user-import:
   - label: null
     version1: true
