@@ -138,6 +138,11 @@ See [usage notes](#usage-notes) below.
       {%- capture urlApiLocal -%}{{ urlApiBaseLocal }}/#{{ repoName }}{%- endcapture -%}
       <p> API documentation: <a href="{{ urlApiLocal }}">{{ urlApi }}</a> </p>
     {%- endif -%}
+    {%- if repo.hintOas -%}
+      {%- capture urlApi -%}{{ urlApiBase }}/#{{ repoName }}{%- endcapture -%}
+      {%- capture urlApiLocal -%}{{ urlApiBaseLocal }}/#{{ repoName }}{%- endcapture -%}
+      <p> API documentation: <a href="{{ urlApiLocal }}">{{ urlApi }}</a> </p>
+    {%- endif -%}
   {%- endfor -%}
 {%- endfor -%}
 
