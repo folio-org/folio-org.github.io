@@ -753,14 +753,18 @@
   },
   {
     "config": {
-      "oas": [],
-      "raml": [
-        "ramls/password-validator.raml",
-        "ramls/validator-registry.raml"
+      "oas": [
+        "src/main/resources/swagger.api/password-validator.yaml",
+        "src/main/resources/swagger.api/validator-registry.yaml"
       ],
+      "raml": [],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
     "name": "mod-password-validator"
   },
   {
