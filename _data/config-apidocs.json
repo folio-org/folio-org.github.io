@@ -707,9 +707,7 @@
         "ramls/alert.raml",
         "ramls/configuration.raml",
         "ramls/order-invoice-relns.raml",
-        "ramls/order-lines.raml",
         "ramls/order-templates.raml",
-        "ramls/orders.raml",
         "ramls/pieces.raml",
         "ramls/po-line.raml",
         "ramls/po-line-number.raml",
@@ -755,14 +753,18 @@
   },
   {
     "config": {
-      "oas": [],
-      "raml": [
-        "ramls/password-validator.raml",
-        "ramls/validator-registry.raml"
+      "oas": [
+        "src/main/resources/swagger.api/password-validator.yaml",
+        "src/main/resources/swagger.api/validator-registry.yaml"
       ],
+      "raml": [],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
     "name": "mod-password-validator"
   },
   {
@@ -897,13 +899,17 @@
   },
   {
     "config": {
-      "oas": [],
-      "raml": [
-        "ramls/tags.raml"
+      "oas": [
+        "src/main/resources/swagger.api/tags.yml"
       ],
+      "raml": [],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
     "name": "mod-tags"
   },
   {
