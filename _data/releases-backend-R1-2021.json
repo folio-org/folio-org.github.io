@@ -106,12 +106,12 @@
     {
       "name": "mod-copycat",
       "nameRepo": "mod-copycat",
-      "releaseDate": "2021-04-23T13:33:53+00:00",
+      "releaseDate": "2021-06-14T13:22:57+00:00",
       "releaseName": "",
-      "releaseSha": "0584ba45744ad28a3659e3dc08a55bac24718611",
-      "releaseTag": "v1.0.3",
+      "releaseSha": "b6e188ddab2a13af711ba8c52db3dbbb46090478",
+      "releaseTag": "v1.0.4",
       "releaseTarget": "b1.0",
-      "version": "1.0.3"
+      "version": "1.0.4"
     },
     {
       "name": "mod-courses",
@@ -386,12 +386,12 @@
     {
       "name": "mod-orders",
       "nameRepo": "mod-orders",
-      "releaseDate": "2021-04-14T09:42:18+00:00",
-      "releaseName": "v12.0.1",
-      "releaseSha": "069e823174af6a73bdeb4d442ae9e1e0bb8d4e08",
-      "releaseTag": "v12.0.1",
+      "releaseDate": "2021-06-16T15:53:32+00:00",
+      "releaseName": "v12.0.2",
+      "releaseSha": "88d12841942de439404e6f85487da49f25be85cf",
+      "releaseTag": "v12.0.2",
       "releaseTarget": "master",
-      "version": "12.0.1"
+      "version": "12.0.2"
     },
     {
       "name": "mod-orders-storage",
