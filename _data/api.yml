@@ -47,15 +47,6 @@ mod-permissions:
       - permissions
     ramlutil: ramls/raml-util
 
-mod-password-validator:
-  - label: null
-    version1: true
-    directory: ramls
-    files:
-      - password-validator
-      - validator-registry
-    ramlutil: ramls/raml-util
-
 mod-pubsub:
   - label: null
     version1: true
