@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-06-06T22:41:17.888642+00:00"
+    "generatedDateTime": "2021-06-16T23:50:34.331050+00:00"
   },
   "repos": [
     {
@@ -957,7 +957,7 @@
       "hintOas": true,
       "isSpringway": true,
       "name": "mod-password-validator",
-      "ramlDirName": "ramls",
+      "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>The module provides a default rule set for a tenant and functionality to manage them via REST API and also allows to use a validation flow for a user password.</p>"
@@ -1134,11 +1134,10 @@
     {
       "description": "Central list of tags that can be assigned to various objects",
       "docDirName": null,
-      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
-      "hintRmb": true,
-      "isRmb": true,
+      "hintOas": true,
+      "isSpringway": true,
       "name": "mod-tags",
-      "ramlDirName": "ramls",
+      "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>Central list of tags that can be assigned to various objects. Tags are simple strings like 'urgent', or 'important'. These are kept as an array of string values in the various objects that use them. This module provides a centralized repository of allowed values, which can be used for populating pull-down lists etc. The coupling is intentionally rather weak, it will be up to the UI to enforce the use of authorized tags, or not, as each library will want, and/or insert new tags into this module when the user uses a new one.</p>"
@@ -1759,7 +1758,7 @@
     },
     {
       "description": "Stripes plugin module for displaying graphs of eUsage",
-      "docDirName": null,
+      "docDirName": "doc",
       "name": "ui-plugin-eusage-reports",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
