@@ -136,21 +136,21 @@
     {
       "name": "mod-data-export-spring",
       "nameRepo": "mod-data-export-spring",
-      "releaseDate": null,
-      "releaseName": null,
-      "releaseSha": null,
-      "releaseTag": null,
-      "releaseTarget": null,
+      "releaseDate": "2021-06-18T08:02:47+00:00",
+      "releaseName": "1.0.5",
+      "releaseSha": "02a7258dbd79f0d3d8a3c7f5224ecb45d4186b98",
+      "releaseTag": "v1.0.5",
+      "releaseTarget": "master",
       "version": "1.0.5"
     },
     {
       "name": "mod-data-export-worker",
       "nameRepo": "mod-data-export-worker",
-      "releaseDate": null,
-      "releaseName": null,
-      "releaseSha": null,
-      "releaseTag": null,
-      "releaseTarget": null,
+      "releaseDate": "2021-06-18T08:03:53+00:00",
+      "releaseName": "1.0.7",
+      "releaseSha": "4fa27deb6891531959f602e5faf3024f3a690bd2",
+      "releaseTag": "v1.0.7",
+      "releaseTarget": "master",
       "version": "1.0.7"
     },
     {
@@ -266,12 +266,12 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2021-05-21T15:08:59+00:00",
-      "releaseName": "16.3.2",
-      "releaseSha": "e46f9bd3d288930df51208c0ed7dc6c85ea2c0a0",
-      "releaseTag": "v16.3.2",
+      "releaseDate": "2021-06-18T15:51:07+00:00",
+      "releaseName": "v16.3.3",
+      "releaseSha": "736e1c47e9f7d12e23629d480c57341c959f78c3",
+      "releaseTag": "v16.3.3",
       "releaseTarget": "master",
-      "version": "16.3.2"
+      "version": "16.3.3"
     },
     {
       "name": "mod-inventory-storage",
@@ -286,12 +286,12 @@
     {
       "name": "mod-invoice",
       "nameRepo": "mod-invoice",
-      "releaseDate": "2021-06-02T11:06:42+00:00",
-      "releaseName": "v5.0.4",
-      "releaseSha": "2bdf81885dcde1516e71e0bd7bfae200d2bca48d",
-      "releaseTag": "v5.0.4",
+      "releaseDate": "2021-06-18T09:32:49+00:00",
+      "releaseName": "v5.0.5",
+      "releaseSha": "9b45bb7c710fc0ccaeafe22dc30ba5e547b93431",
+      "releaseTag": "v5.0.5",
       "releaseTarget": "master",
-      "version": "5.0.4"
+      "version": "5.0.5"
     },
     {
       "name": "mod-invoice-storage",
@@ -526,12 +526,12 @@
     {
       "name": "mod-source-record-manager",
       "nameRepo": "mod-source-record-manager",
-      "releaseDate": "2021-05-28T13:00:29+00:00",
-      "releaseName": "3.0.7",
-      "releaseSha": "d16d999dc68734430d0d1d0cd13de6441c8b56e8",
-      "releaseTag": "v3.0.7",
+      "releaseDate": "2021-06-18T15:23:23+00:00",
+      "releaseName": "3.0.8",
+      "releaseSha": "a181d2f929cd69f7927313fb2478c69f8f9d0b56",
+      "releaseTag": "v3.0.8",
       "releaseTarget": "master",
-      "version": "3.0.7"
+      "version": "3.0.8"
     },
     {
       "name": "mod-source-record-storage",
