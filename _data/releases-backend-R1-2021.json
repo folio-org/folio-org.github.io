@@ -566,12 +566,12 @@
     {
       "name": "mod-user-import",
       "nameRepo": "mod-user-import",
-      "releaseDate": "2021-01-20T14:15:40+00:00",
-      "releaseName": "",
-      "releaseSha": "4b0bed306059ed03851dfe1379b2d1dff1f5c50c",
-      "releaseTag": "v3.3.2",
+      "releaseDate": "2021-06-23T14:18:52+00:00",
+      "releaseName": "v3.6.1",
+      "releaseSha": "8bcac4f6729b2032569915ae8124b71053dfa538",
+      "releaseTag": "v3.6.1",
       "releaseTarget": "master",
-      "version": "3.3.2"
+      "version": "3.6.1"
     },
     {
       "name": "mod-users",
