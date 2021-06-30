@@ -138,7 +138,7 @@
       "nameRepo": "mod-data-export-spring",
       "releaseDate": "2021-06-18T08:02:47+00:00",
       "releaseName": "1.0.5",
-      "releaseSha": "02a7258dbd79f0d3d8a3c7f5224ecb45d4186b98",
+      "releaseSha": "05f468772ef7fd920d3ebe7ad679bf54690fd91e",
       "releaseTag": "v1.0.5",
       "releaseTarget": "master",
       "version": "1.0.5"
@@ -148,7 +148,7 @@
       "nameRepo": "mod-data-export-worker",
       "releaseDate": "2021-06-18T08:03:53+00:00",
       "releaseName": "1.0.7",
-      "releaseSha": "4fa27deb6891531959f602e5faf3024f3a690bd2",
+      "releaseSha": "e0942d7d176d62ac920781305f2d4b7edfd01f93",
       "releaseTag": "v1.0.7",
       "releaseTarget": "master",
       "version": "1.0.7"
