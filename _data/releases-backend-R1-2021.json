@@ -436,12 +436,12 @@
     {
       "name": "mod-patron",
       "nameRepo": "mod-patron",
-      "releaseDate": "2021-03-15T16:40:15+00:00",
-      "releaseName": "v.4.4.0",
-      "releaseSha": "dc2f362585212a5cb5b2573bcf126a276fd4ea41",
-      "releaseTag": "v4.4.0",
+      "releaseDate": "2021-06-30T14:46:13+00:00",
+      "releaseName": "v4.4.1",
+      "releaseSha": "1d263a9044c87b3c9499c14f006d774f027f86ee",
+      "releaseTag": "v4.4.1",
       "releaseTarget": "master",
-      "version": "4.4.0"
+      "version": "4.4.1"
     },
     {
       "name": "mod-patron-blocks",
