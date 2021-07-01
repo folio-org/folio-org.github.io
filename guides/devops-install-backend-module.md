@@ -77,7 +77,7 @@ The sequence must have the new module declared after any modules that provide it
 Add testing configuration for the Jenkins jobs ...
 
 Add to the Jenkinsfiles to refer to the folio-infrastructure branch:<br/>
-Replace `*/master` with `refs/heads/folio-2467-refenvs-ncip`
+Set `BRANCH_TO_BUILD` variable to be `refs/heads/folio-2467-refenvs-ncip`
 
 ```
 CI/jenkins/Jenkinsfile.folio-testing-test-build
