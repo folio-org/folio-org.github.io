@@ -26,7 +26,7 @@ from time import sleep
 import requests
 import yaml
 
-SCRIPT_VERSION = "1.1.0"
+SCRIPT_VERSION = "1.2.0"
 
 LOGLEVELS = {
     "debug": logging.DEBUG,
@@ -194,10 +194,17 @@ def inspect_s3(mod_name):
             LOGGER.info("%s: Found config-doc.json", mod_name)
     return items_upload, json_config
 
-def assemble_config_packet(mod_name, json_config, items_upload, old_config):
+def get_repo_details(json_repos, mod_name):
+    """Gets the details for a repository."""
+    for mod in json_repos["repos"]:
+        if mod["name"] == mod_name:
+            return mod
+
+def assemble_config_packet(mod_name, mod_org, json_config, items_upload, old_config):
     """Assemble a JSON config entry."""
     json_packet = {}
     json_packet["name"] = mod_name
+    json_packet["org"] = mod_org
     json_packet["metadata"] = {}
     json_packet["config"] = {}
     json_packet["config"]["raml"] = []
@@ -236,9 +243,10 @@ def main():
             old_config = json_old_config[mod_name]
         except KeyError:
             old_config = {}
+        repo_details = get_repo_details(json_repos, mod_name)
         (items_upload, json_config) = inspect_s3(mod_name)
         if json_config or items_upload or old_config:
-            config_packet = assemble_config_packet(mod_name, json_config, items_upload, old_config)
+            config_packet = assemble_config_packet(mod_name, repo_details["org"], json_config, items_upload, old_config)
             json_apidocs.append(config_packet)
         sleep(delay)
     store_config(json_apidocs)
