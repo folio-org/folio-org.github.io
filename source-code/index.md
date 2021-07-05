@@ -16,7 +16,7 @@ Various repositories in the [folio-org GitHub
 organization](https://github.com/folio-org) host the core project code.
 Third-party modules may be hosted elsewhere.
 
-The [Source-code map](/source-code/map/) enables navigation to all of the modules hosted at folio-org.
+The [Source-code map](/source-code/map/) enables navigation to details of modules.
 
 A good starting point for understanding the FOLIO code is
 [Okapi](https://github.com/folio-org/okapi) -- specifically the
