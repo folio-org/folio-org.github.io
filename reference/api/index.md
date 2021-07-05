@@ -25,7 +25,7 @@ See [usage notes](#usage-notes) below.
 This list of modules is sorted into functional groups.
 
 {% assign urlAws = "https://s3.amazonaws.com/foliodocs/api" %}
-{% assign urlGithub = "https://github.com/folio-org" %}
+{% assign urlGithub = "https://github.com" %}
 {% assign urlSourceXref = "/source-code/map/" %}
 {% assign noteRaml = 'This is the shared RAML repository. Each module uses a certain version of this as their "raml-util" directory.' %}
 {% assign noteSchemaOnly = 'Has only schema and no API descriptions.' %}
@@ -104,7 +104,7 @@ This list of modules is sorted into functional groups.
   </thead>
   <tbody>
     {%- for file in theRepo.config.raml -%}
-      {% capture urlSource %}{{ urlGithub }}/{{ theRepo.name }}/blob/master/{{ file }}{% endcapture %}
+      {% capture urlSource %}{{ urlGithub }}/{{ theRepo.org }}/{{ theRepo.name }}/blob/master/{{ file }}{% endcapture %}
       {% capture fileName %}{{ file | split: "/" | last | replace_first: ".raml", "" }}{% endcapture %}
       {% capture rowId %}{{ theRepo.name }}-{{ fileName }}{% endcapture %}
       {% capture subdir %}{% if hasTypeRaml == "true" %}r/{% endif %}{% endcapture %}
@@ -131,7 +131,7 @@ This list of modules is sorted into functional groups.
     </tr>
     {%- endfor -%}
     {%- for file in theRepo.config.oas -%}
-      {% capture urlSource %}{{ urlGithub }}/{{ theRepo.name }}/blob/master/{{ file }}{% endcapture %}
+      {% capture urlSource %}{{ urlGithub }}/{{ theRepo.org }}/{{ theRepo.name }}/blob/master/{{ file }}{% endcapture %}
       {% capture fileName %}{{ file | split: "/" | last | replace_first: ".yaml", "" | replace_first: ".yml", "" }}{% endcapture %}
       {% capture rowId %}{{ theRepo.name }}-{{ fileName }}{% endcapture %}
       {% capture urlDocU %}{{ urlAws }}/{{ theRepo.name }}/s/{{ fileName }}.html{% endcapture %}
