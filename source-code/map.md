@@ -10,10 +10,10 @@ menuSubIndex: 2
 
 ## Introduction
 
-List of FOLIO modules hosted at the [folio-org GitHub organization](https://github.com/folio-org), with links to some related documentation.
+List of FOLIO modules hosted at GitHub, with links to some related documentation.
 Also refer to the [Source-code overview](/source-code/).
 
-{% assign urlGithub = "https://github.com/folio-org" %}
+{% assign urlGithub = "https://github.com" %}
 {% assign urlApiBase = "https://dev.folio.org/reference/api" %}
 {% assign urlApiBaseLocal = "/reference/api" %}
 {% assign countTotal = site.data.repos.repos | size %}
@@ -106,10 +106,10 @@ See [usage notes](#usage-notes) below.
       {%- capture intro -%}{{ repo.snippetIntro }}{%- endcapture -%}
       <div> {{ intro }} </div>
     {%- endif -%}
-    {%- capture urlRepo -%}{{ urlGithub }}/{{ repoName }}{%- endcapture -%}
+    {%- capture urlRepo -%}{{ urlGithub }}/{{ repo.org }}/{{ repoName }}{%- endcapture -%}
     <p> GitHub README: <a href="{{ urlRepo }}">{{ urlRepo }}</a> </p>
     {%- if repo.docDirName -%}
-      {%- capture urlGhDocs -%}{{ urlGithub }}/{{ repoName }}/tree/master/{{ repo.docDirName }}{%- endcapture -%}
+      {%- capture urlGhDocs -%}{{ urlGithub }}/{{ repo.org }}/{{ repoName }}/tree/master/{{ repo.docDirName }}{%- endcapture -%}
       <p> GitHub other documentation: <a href="{{ urlGhDocs }}">{{ urlGhDocs }}</a> </p>
     {%- endif -%}
     {%- if metadata -%}
@@ -128,11 +128,11 @@ See [usage notes](#usage-notes) below.
       {%- endif -%}
     {%- endif -%}
     {%- if repo.hasDbSchema -%}
-      {%- capture urlDbSchema -%}{{ urlGithub }}/{{ repoName }}/{{ repo.hasDbSchema }}{%- endcapture -%}
+      {%- capture urlDbSchema -%}{{ urlGithub }}/{{ repo.org }}/{{ repoName }}/{{ repo.hasDbSchema }}{%- endcapture -%}
       <p> GitHub DB schema: <a href="{{ urlDbSchema }}">{{ urlDbSchema }}</a> </p>
     {%- endif -%}
     {%- if repo.ramlDirName -%}
-      {%- capture urlGhRaml -%}{{ urlGithub }}/{{ repoName }}/tree/master/{{ repo.ramlDirName }}{%- endcapture -%}
+      {%- capture urlGhRaml -%}{{ urlGithub }}/{{ repo.org }}/{{ repoName }}/tree/master/{{ repo.ramlDirName }}{%- endcapture -%}
       <p> GitHub RAMLs directory: <a href="{{ urlGhRaml }}">{{ urlGhRaml }}</a> </p>
       {%- capture urlApi -%}{{ urlApiBase }}/#{{ repoName }}{%- endcapture -%}
       {%- capture urlApiLocal -%}{{ urlApiBaseLocal }}/#{{ repoName }}{%- endcapture -%}
