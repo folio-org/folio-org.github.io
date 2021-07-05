@@ -660,6 +660,17 @@
       "snippetIntro": ""
     },
     {
+      "defaultBranch": "master",
+      "description": "Okapi module providing directory and locator services",
+      "docDirName": "doc",
+      "name": "mod-directory",
+      "org": "openlibraryenvironment",
+      "ramlDirName": "ramls",
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Mod-Directory is a service intiailly proposed for use in resource sharing environments but offering services to any library scenario that involves documenting and using service interactions between peers.  It's purpose is to provide a bounded context for the storage, retrieval and update of directory service information which underpins inter-library services. This directory contains, but is not restricted to</p>"
+    },
+    {
       "description": null,
       "docDirName": null,
       "hintOas": true,
@@ -899,6 +910,17 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>Broker communication with the EBSCO knowledge base (Java)</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "LDP query builder server-side module for FOLIO/ReShare",
+      "docDirName": null,
+      "name": "mod-ldp",
+      "org": "library-data-platform",
+      "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p><code>mod-ldp</code> is a FOLIO module that mediates access to the <a href='https://github.com/library-data-platform/ldp'>Library Data Platform</a> (LDP). It removes the need to deal directly with a relational database by providing a simple WSAPI that can be used by UI code such as <a href='https://github.com/library-data-platform/ui-ldp'><code>ui-ldp</code></a>.</p>"
     },
     {
       "description": "FOLIO service module - licenses",
