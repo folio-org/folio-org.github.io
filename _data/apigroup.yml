@@ -113,6 +113,7 @@ other:
     - data-import-raml-storage
     - mod-eusage-reports
     - mod-inn-reach
+    - mod-ldp
     - mod-rtac
     - edge-rtac
 deprecated:
