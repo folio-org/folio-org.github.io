@@ -168,5 +168,7 @@ Refer to tips for module developers to [increase visibility of module documentat
 
 [Explanation](/guides/visibility-module-docs/#assemble-source-code-map) about how this map is assembled and maintained.
 
+For additional modules that are hosted at other GitHub organizations, see explanation of how to [be included](/guides/visibility-module-docs/#additional-module-repositories) in the listing.
+
 <div class="folio-spacer-content"></div>
 
