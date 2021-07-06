@@ -8,8 +8,8 @@ menuTopTitle: Guides
 
 ## Introduction
 
-There are many individual modules hosted at FOLIO GitHub.
-The [Source-code map](/source-code/map/) lists every module, and links to its relevant related documentation.
+There are many individual FOLIO modules hosted at GitHub.
+The [Source-code map](/source-code/map/) lists each relevant module, and links to its related documentation.
 
 This enables all developers to easily discover the information that they need, to be able to work with each module.
 
@@ -94,8 +94,6 @@ This could then also gather other information.
 
 ## Assemble source-code map
 
-Note: This section is intended for FOLIO DevOps people.
-
 Explanation about how the [Source-code map](/source-code/map/) index is assembled and maintained:
 
 Details of each repository that is hosted at FOLIO GitHub are gathered automatically
@@ -115,4 +113,12 @@ Behind the scenes of the page
 the Jekyll Liquid program assembles and presents this page.
 
 Use the [Link checker](https://github.com/folio-org/folio-org.github.io/#link-checker) to verify internal and external links.
+
+### Additional module repositories
+
+For module repositories that are hosted at "[folio-org](https://github.com/folio-org)" GitHub organization, the repositories are automatically discovered as explained in the previous section.
+
+For relevant module repositories that are hosted at other GitHub organizations, their details are listed in the "[`_data/repos-additional.json`](https://github.com/folio-org/folio-org.github.io/blob/master/_data/repos-additional.json)" data file.
+
+To modify, please send a pull request, or raise a Jira ticket in the "FOLIO" project for the FOLIO DevOps team.
 
