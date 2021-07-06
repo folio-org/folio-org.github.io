@@ -119,6 +119,35 @@ would be used:
    ```
    http://folio-folijet.s3.amazonaws.com/README.md
    ```
+### Manage scratch environment 
+To create , update or delete your environment in Rancher, use the following pipeline: https://jenkins-aws.indexdata.com/job/scratch_environment/job/manage-scratch-environment
+   1-	Choose your team Name
+   2-	Choose what action you want to perform
+     - Create : to create new environment in rancher
+     -Update : to update your environment 
+     -Delete: Be Careful! This action will completely delete the environment from Rancher
+### Build backend module 
+You can build any backend module from specific branch . Use the following pipeline : https://jenkins-aws.indexdata.com/job/scratch_environment/job/BUILD-BACKEND
+  1-	Choose the module you want to build
+  2-	Choose what branch you want to build the module from and run the pipeline 
+  3-	Go to the console , in the end you will find the full image name with the proper tag 
+  4-	Go to your environment in Rancher –> Apps –> the module you built 
+  5-	Click on upgrade 
+  6-	In Answers add the following :
+     -	Variable : image.repository        value :  docker.dev.folio.org/module_name 
+     -	Variable : image.tag              value:  the tag you got from the build
+  7-	Click on upgrade 
+### Build UI module
+To build UI from specific branch , use the following pipeline : https://jenkins-aws.indexdata.com/job/scratch_environment/job/BUILD-UI/
+   1-	Choose your team name
+   2-	Choose the branch you want to build from and run the pipeline
+The tag for the image is : docker.dev.folio.org/platform-complete:team_name-build number 
+   3-	Go to Rancher -> Apps -> platform-complete
+   4-	Click on … then upgrade 
+   5-	Add the following variables in Answers Section
+     -	image.repository docker.dev.folio.org/platform-complete
+     -	image.tag        team_name-build number 
+   6-click on Upgrade 
 
 ## Questions and answers
 
