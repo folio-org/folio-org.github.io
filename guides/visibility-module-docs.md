@@ -96,7 +96,7 @@ This could then also gather other information.
 
 Explanation about how the [Source-code map](/source-code/map/) index is assembled and maintained:
 
-Details of each repository that is hosted at FOLIO GitHub are gathered automatically
+Details of each relevant FOLIO-related repository that is hosted at GitHub are gathered automatically
 (including information such as type of repository; does it have a "docs" directory; if backend, then does it have a "ramls" directory).
 This collection is done occasionally as a FOLIO DevOps infrastructure
 [job](https://github.com/folio-org-priv/folio-infrastructure/tree/master/verify-repo-config).
@@ -110,7 +110,7 @@ contains additional metadata about some specific repositories.
 
 Behind the scenes of the page
 "[`source-code/map.md`](https://raw.githubusercontent.com/folio-org/folio-org.github.io/master/source-code/map.md)"
-the Jekyll Liquid program assembles and presents this page.
+the Jekyll Liquid program assembles and presents the page.
 
 Use the [Link checker](https://github.com/folio-org/folio-org.github.io/#link-checker) to verify internal and external links.
 
