@@ -121,8 +121,8 @@ would be used:
    ```
 ### Manage scratch environment 
 To create , update or delete your environment in Rancher, use the following pipeline: https://jenkins-aws.indexdata.com/job/scratch_environment/job/manage-scratch-environment
-   1-	Choose your team Name
-   2-	Choose what action you want to perform
+  1-	Choose your team Name
+  2-	Choose what action you want to perform
      - Create : to create new environment in rancher
      -Update : to update your environment 
      -Delete: Be Careful! This action will completely delete the environment from Rancher
