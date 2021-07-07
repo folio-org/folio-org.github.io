@@ -122,11 +122,12 @@ would be used:
 
 ## Manage scratch environment
 To create , update or delete your environment in Rancher, use the following pipeline: https://jenkins-aws.indexdata.com/job/scratch_environment/job/manage-scratch-environment
-  1. Choose your team Name.
+
+* Choose your team Name:
 
   ![](/images/rancher-scratch-env.png)
 
-  2. Choose what action you want to perform.
+* Choose what action you want to perform:
 
 ![](/images/rancher-Action.png)
 
@@ -136,46 +137,48 @@ To create , update or delete your environment in Rancher, use the following pipe
 
 ## Build backend module from branch
 You can build any backend module from specific branch . Use the following pipeline : https://jenkins-aws.indexdata.com/job/scratch_environment/job/BUILD-BACKEND
-  1. Choose the module you want to build
-  2. Choose what branch you want to build the module from and run the pipeline
-  3. Go to the console , in the end you will find the full image name with the proper tag.
+
+* Choose the module you want to build
+* Choose what branch you want to build the module from and run the pipeline
+* Go to the console , in the end you will find the full image name with the proper tag:
 
 ![](/images/rancher-tag.png)
 
-  4. Go to your environment in Rancher –> Apps –> the module you built
-  5. Click on upgrade.
+* Go to your environment in Rancher –> Apps –> the module you built
+* Click on upgrade.
 
 ![](/images/rancher-upgrade.png)
 
-  6. In Answers add the following :
-     - Variable : image.repository        value :  docker.dev.folio.org/module_name
-     - Variable : image.tag              value:  the tag you got from the build
+* In Answers add the following:
+  - Variable : image.repository        value :  docker.dev.folio.org/module_name
+  - Variable : image.tag              value:  the tag you got from the build
 
 ![](/images/rancher-variables.png)
 
-  7. Click on upgrade
+* Click on upgrade
 
 ## Build UI module from branch
 To build UI from specific branch , use the following pipeline : https://jenkins-aws.indexdata.com/job/scratch_environment/job/BUILD-UI/
-   1. Choose your team name
-   2. Choose the branch you want to build from and run the pipeline
+
+* Choose your team name
+* Choose the branch you want to build from and run the pipeline
 
 ![](/images/rancher-UI-choose-branch.png)
 
 The tag for the image is : docker.dev.folio.org/platform-complete:team_name-build number
 
-   3. Go to Rancher -> Apps -> platform-complete
-   4. Click on … then upgrade
+* Go to Rancher -> Apps -> platform-complete
+* Click on … then upgrade
 
 ![](/images/rancher-UI-upgrade.png)
 
-   5. Add the following variables in Answers Section
+* Add the following variables in Answers Section:
      - image.repository docker.dev.folio.org/platform-complete
      - image.tag        team_name-build number
 
 ![](/images/rancher-UI-tag.png)
 
-   6. Click on Upgrade
+* Click on Upgrade
 
 ## Questions and answers
 
