@@ -177,7 +177,7 @@ We follow a variation of the Apache motto:
 
 - A place for heads-up type of notices.
 
-- There are now many channels. Browse the list to review and join any appropriate ones.
+- There are now many channels. Browse the list, via the Slack application, to review and join any appropriate ones.
   Some are not public, so you will need to be invited.
   Some relevant channels for developers are:
   - `#support` -- Any topic needing assistance.
@@ -188,6 +188,8 @@ We follow a variation of the Apache motto:
   - `#hosted-reference-envs` -- Issues with the [reference environments](/guides/automation/#software-build-pipeline) automated builds.
   - `#raml-module-builder` -- Specific discussion for RMB development.
   - `#stripes` -- Specific discussion for front-end development.
+  - `#devops` -- Assistance with FOLIO infrastructure, requests to add new GitHub Team members, etc.
+  - `#scratch-environments` -- Assistance with the team-specific [Rancher developer scratch environments](/faqs/how-to-get-started-with-rancher/).
   - `#folio-ci` -- Notifications from the Jenkins CI. See usage [notes](/guides/navigate-commits/). Mute this channel and visit when needed.
 
 - Use `@mentions` with care. This is especially important on broad channels such as `#general`, as using `@channel` there will send notifications to many hundreds of people.
