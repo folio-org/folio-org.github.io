@@ -119,7 +119,8 @@ would be used:
    ```
    http://folio-folijet.s3.amazonaws.com/README.md
    ```
-### Manage scratch environment 
+
+## Manage scratch environment 
 To create , update or delete your environment in Rancher, use the following pipeline: https://jenkins-aws.indexdata.com/job/scratch_environment/job/manage-scratch-environment
   1.	Choose your team Name.
 
@@ -132,7 +133,8 @@ To create , update or delete your environment in Rancher, use the following pipe
      - Create : to create new environment in rancher
      -Update : to update your environment 
      -Delete: Be Careful! This action will completely delete the environment from Rancher
-### Build backend module from specific branch
+
+## Build backend module from branch
 You can build any backend module from specific branch . Use the following pipeline : https://jenkins-aws.indexdata.com/job/scratch_environment/job/BUILD-BACKEND
   1.	Choose the module you want to build
   2.	Choose what branch you want to build the module from and run the pipeline 
@@ -152,7 +154,8 @@ You can build any backend module from specific branch . Use the following pipeli
   ![](https://github.com/folio-org/folio-org.github.io/blob/rancher-documentation/images/rancher-variables.png)
 
   7.	Click on upgrade 
-### Build UI module from specific branch
+
+## Build UI module from branch
 To build UI from specific branch , use the following pipeline : https://jenkins-aws.indexdata.com/job/scratch_environment/job/BUILD-UI/
    1.	Choose your team name
    2.	Choose the branch you want to build from and run the pipeline
