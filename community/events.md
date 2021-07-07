@@ -20,17 +20,19 @@ These include FOLIO Forums, monthly Sprint Reviews, and various special topics.
 
 ## One recent example
 
-FOLIO Forum: Getting Started with FOLIO Reporting 1.0
-(see [introduction](https://discuss.folio.org/t/folio-forum-getting-started-with-folio-reporting-1-0/3024)).
+FOLIO Forum: Fundamentals of the FOLIO Community
+(see [introduction](https://discuss.folio.org/t/folio-forum-fundamentals-of-the-folio-community/3102).
 
 <div class="widget">
-{%- include widgets/youtube-player.html video='kRz34WsZxFk' -%}
+{%- include widgets/youtube-player.html video='imOEbCbE5EU' -%}
 </div>
 
 ## Selected others
 
 Some other presentations (sorted by most recent). Note that some might be out-of-date and maybe still useful.
 
+* The [FOLIO Forum: Fundamentals of the FOLIO Community](https://discuss.folio.org/t/folio-forum-fundamentals-of-the-folio-community/3102)
+and other presentations in the [FOLIO Member Onboarding](https://www.youtube.com/hashtag/foliomemberonboarding) series.
 * <a id="stripes-coburn-2018-08"></a> [Stripes overview](https://drive.google.com/open?id=1ZofmC94wgg6Vw5JirymW7Kt1ycqVU4E1)
 presentation conducted by John Coburn to introduce the folijet EPAM team.
 Onboarding overview of Stripes, the front-end framework of FOLIO.
