@@ -128,12 +128,11 @@ To create , update or delete your environment in Rancher, use the following pipe
   ![](/images/rancher-scratch-env.png)
 
 * Choose what action you want to perform:
+  - Create: to create new environment in rancher
+  - Update: to update your environment
+  - Delete: **Be Careful!** This action will completely delete the environment from Rancher
 
 ![](/images/rancher-Action.png)
-
-     - Create : to create new environment in rancher
-     -Update : to update your environment
-     -Delete: Be Careful! This action will completely delete the environment from Rancher
 
 ## Build backend module from branch
 You can build any backend module from specific branch . Use the following pipeline : https://jenkins-aws.indexdata.com/job/scratch_environment/job/BUILD-BACKEND
@@ -150,8 +149,10 @@ You can build any backend module from specific branch . Use the following pipeli
 ![](/images/rancher-upgrade.png)
 
 * In Answers add the following:
-  - Variable : image.repository        value :  docker.dev.folio.org/module_name
-  - Variable : image.tag              value:  the tag you got from the build
+  - Variable: `image.repository`
+    - Value: `docker.dev.folio.org/module_name`
+  - Variable: `image.tag`
+    - Value: the tag you got from the build
 
 ![](/images/rancher-variables.png)
 
@@ -173,8 +174,10 @@ The tag for the image is : docker.dev.folio.org/platform-complete:team_name-buil
 ![](/images/rancher-UI-upgrade.png)
 
 * Add the following variables in Answers Section:
-     - image.repository docker.dev.folio.org/platform-complete
-     - image.tag        team_name-build number
+  - Variable: `image.repository`
+    - Value: `docker.dev.folio.org/platform-complete`
+  - Variable: `image.tag`
+    - Value: `team_name-build` number
 
 ![](/images/rancher-UI-tag.png)
 
