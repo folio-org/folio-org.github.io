@@ -124,11 +124,11 @@ would be used:
 To create , update or delete your environment in Rancher, use the following pipeline: https://jenkins-aws.indexdata.com/job/scratch_environment/job/manage-scratch-environment
   1.	Choose your team Name.
 
-  ![](https://github.com/folio-org/folio-org.github.io/blob/rancher-documentation/images/rancher-scratch-env.png)
+  ![](/images/rancher-scratch-env.png)
 
   2.	Choose what action you want to perform.
 
-  ![](https://github.com/folio-org/folio-org.github.io/blob/rancher-documentation/images/rancher-Action.png)
+![](/images/rancher-Action.png)
 
      - Create : to create new environment in rancher
      -Update : to update your environment 
@@ -140,18 +140,18 @@ You can build any backend module from specific branch . Use the following pipeli
   2.	Choose what branch you want to build the module from and run the pipeline 
   3.	Go to the console , in the end you will find the full image name with the proper tag.
 
-![](https://github.com/folio-org/folio-org.github.io/blob/rancher-documentation/images/rancher-tag.png)
+![](/images/rancher-tag.png)
 
   4.	Go to your environment in Rancher –> Apps –> the module you built 
   5.	Click on upgrade.
 
-![](https://github.com/folio-org/folio-org.github.io/blob/rancher-documentation/images/rancher-upgrade.png)
+![](/images/rancher-upgrade.png)
 
   6.	In Answers add the following :
      -	Variable : image.repository        value :  docker.dev.folio.org/module_name 
      -	Variable : image.tag              value:  the tag you got from the build
 
-  ![](https://github.com/folio-org/folio-org.github.io/blob/rancher-documentation/images/rancher-variables.png)
+![](/images/rancher-variables.png)
 
   7.	Click on upgrade 
 
@@ -160,20 +160,20 @@ To build UI from specific branch , use the following pipeline : https://jenkins-
    1.	Choose your team name
    2.	Choose the branch you want to build from and run the pipeline
 
-  ![](https://github.com/folio-org/folio-org.github.io/blob/rancher-documentation/images/rancher-UI-choose-branch.png)
+![](/images/rancher-UI-choose-branch.png)
 
 The tag for the image is : docker.dev.folio.org/platform-complete:team_name-build number 
 
    3.	Go to Rancher -> Apps -> platform-complete
    4.	Click on … then upgrade 
 
-![](https://github.com/folio-org/folio-org.github.io/blob/rancher-documentation/images/rancher-UI-upgrade.png)
+![](/images/rancher-UI-upgrade.png)
 
    5.	Add the following variables in Answers Section
      -	image.repository docker.dev.folio.org/platform-complete
      -	image.tag        team_name-build number 
 
-   ![](https://github.com/folio-org/folio-org.github.io/blob/rancher-documentation/images/rancher-UI-tag.png)
+![](/images/rancher-UI-tag.png)
 
    6. Click on Upgrade 
 
