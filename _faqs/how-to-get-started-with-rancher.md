@@ -121,55 +121,69 @@ would be used:
    ```
 
 ## Manage scratch environment
-To create , update or delete your environment in Rancher, use the following pipeline: https://jenkins-aws.indexdata.com/job/scratch_environment/job/manage-scratch-environment
+To create, update or delete your environment in Rancher, use this Jenkins pipeline:<br/>
+<https://jenkins-aws.indexdata.com/job/scratch_environment/job/manage-scratch-environment/>
 
+* Ensure that you are logged in to Jenkins
+* Select "Build with Parameters"
 * Choose your team Name:
 
-  ![](/images/rancher-scratch-env.png)
+![](/images/rancher-scratch-env.png)
 
-* Choose what action you want to perform:
+* Choose which action that you want to perform:
   - Create: to create new environment in rancher
   - Update: to update your environment
   - Delete: **Be Careful!** This action will completely delete the environment from Rancher
 
 ![](/images/rancher-Action.png)
 
-## Build backend module from branch
-You can build any backend module from specific branch . Use the following pipeline : https://jenkins-aws.indexdata.com/job/scratch_environment/job/BUILD-BACKEND
+* Then select "Build"
 
-* Choose the module you want to build
-* Choose what branch you want to build the module from and run the pipeline
-* Go to the console , in the end you will find the full image name with the proper tag:
+## Build backend module from branch
+Any backend module can be built from a specific branch. Use this Jenkins pipeline:<br/>
+<https://jenkins-aws.indexdata.com/job/scratch_environment/job/BUILD-BACKEND/>
+
+* Ensure that you are logged in to Jenkins
+* Select "Build with Parameters"
+* Choose the module that you want to build
+* Choose which branch that you want to build the module from
+* Then select "Build"
+* Select "Console Output"
+* Near the end, find the full image name with the proper tag:
 
 ![](/images/rancher-tag.png)
 
-* Go to your environment in Rancher –> Apps –> the module you built
-* Click on upgrade.
+* Go to your environment in Rancher –> Apps –> the module that you built
+* Select the vertical ellipsis &#8942; and then "Upgrade"
 
 ![](/images/rancher-upgrade.png)
 
-* In Answers add the following:
+* In the "Answers" section, add the following:
   - Variable: `image.repository`
     - Value: `docker.dev.folio.org/module_name`
   - Variable: `image.tag`
-    - Value: the tag you got from the build
+    - Value: the tag obtained from the build
 
 ![](/images/rancher-variables.png)
 
-* Click on upgrade
+* Select "Upgrade"
 
 ## Build UI module from branch
-To build UI from specific branch , use the following pipeline : https://jenkins-aws.indexdata.com/job/scratch_environment/job/BUILD-UI/
+To build UI from a specific branch, use this Jenkins pipeline:<br/>
+<https://jenkins-aws.indexdata.com/job/scratch_environment/job/BUILD-UI/>
 
+* Ensure that you are logged in to Jenkins
+* Select "Build with Parameters"
 * Choose your team name
-* Choose the branch you want to build from and run the pipeline
+* Choose the branch that you want to build from
+* Then select "Build"
 
 ![](/images/rancher-UI-choose-branch.png)
 
-The tag for the image is : docker.dev.folio.org/platform-complete:team_name-build number
+The tag for the image is: docker.dev.folio.org/platform-complete:`team_name-build` number
 
 * Go to Rancher -> Apps -> platform-complete
-* Click on … then upgrade
+* Select the vertical ellipsis &#8942; and then "Upgrade"
 
 ![](/images/rancher-UI-upgrade.png)
 
@@ -181,7 +195,7 @@ The tag for the image is : docker.dev.folio.org/platform-complete:team_name-buil
 
 ![](/images/rancher-UI-tag.png)
 
-* Click on Upgrade
+* Select "Upgrade"
 
 ## Questions and answers
 
