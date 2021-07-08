@@ -25,7 +25,7 @@ Refer to that document for local installation instructions.
 
 The Python script will search the configured directories to find relevant API description files, and will process each file to generate the API documentation representation.
 
-Where the main options are:
+<a id="properties"></a>Where the main options are:
 
 * `-t,--types` -- The type of API description files to search for.
   Required. Space-separated list.
@@ -37,7 +37,7 @@ Where the main options are:
   By default it excludes certain well-known directories (such as `raml-util`).
   Use the option `--loglevel debug` to report what is being excluded.
 
-See help for the full list:
+See help for the full list (including the default output directory):
 
 ```
 python3 ../folio-tools/api-doc/api_doc.py --help
@@ -46,10 +46,20 @@ python3 ../folio-tools/api-doc/api_doc.py --help
 Example for RAML:
 
 ```
-cd $GH_FOLIO/mod-notes
+cd $GH_FOLIO/mod-courses
 python3 ../folio-tools/api-doc/api_doc.py \
   -t RAML \
   -d ramls
+```
+
+Example for OAS:
+
+```
+cd $GH_FOLIO/mod-eusage-reports
+python3 ../folio-tools/api-doc/api_doc.py \
+  -t OAS \
+  -d src/main/resources/openapi \
+  -e headers
 ```
 
 Example for both RAML and OpenAPI (OAS), i.e. when preparing for transition:
@@ -63,7 +73,12 @@ python3 ../folio-tools/api-doc/api_doc.py \
 
 ### Jenkinsfile
 
-To use "api-doc" with FOLIO Continuous Integration, add this configuration to the project's [Jenkinsfile](/guides/jenkinsfile/):
+To use "api-doc" with FOLIO Continuous Integration, add the following configuration to the project's [Jenkinsfile](/guides/jenkinsfile/).
+
+Note that the project should also use "[api-lint](/guides/api-lint/)" which utilises the same configuration for the [properties](#properties) apiTypes, apiDirectories, etc.)
+Also see [upgrade notes](/guides/api-lint/#jenkinsfile-for-raml) there.
+
+#### Jenkinsfile for RAML
 
 ```
 buildMvn {
@@ -80,9 +95,29 @@ Do not use both.
 
 Examples:
 
-* [mod-notes](https://github.com/folio-org/mod-notes/blob/master/Jenkinsfile)
+* [mod-courses](https://github.com/folio-org/mod-courses/blob/master/Jenkinsfile)
   -- RAML
+  * Its [uprade PR](https://github.com/folio-org/mod-courses/pull/122). See each commit which explained each step.
+* [mod-quick-marc](https://github.com/folio-org/mod-quick-marc/blob/master/Jenkinsfile)
+  -- both RAML and OAS
+
+#### Jenkinsfile for OAS
+
+```
+buildMvn {
+...
+  doApiDoc = true
+  doApiLint = true
+  apiTypes = 'OAS' // Required. Space-separated list: RAML OAS
+  apiDirectories = 'src/main/resources/openapi' // Required. Space-separated list
+  apiExcludes = 'headers' // Optional. Space-separated list
+```
+
+Examples:
+
 * [mod-eusage-reports](https://github.com/folio-org/mod-eusage-reports/blob/master/Jenkinsfile)
+  -- OAS
+* [mod-search](https://github.com/folio-org/mod-search/blob/master/Jenkinsfile)
   -- OAS
 * [mod-quick-marc](https://github.com/folio-org/mod-quick-marc/blob/master/Jenkinsfile)
   -- both RAML and OAS

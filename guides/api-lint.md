@@ -12,7 +12,7 @@ For server-side projects that utilise RAML or OpenAPI (OAS), use the tool `api-l
 
 The tool is available for use during FOLIO Continuous Integration builds, and also for local use prior to commit.
 
-For [RAML-using](/start/primer-raml/) projects, this new "api-lint" tool is preferred. The previous tool "[lint-raml](/guides/raml-cop/)" is still available. However its behind-the-scenes technology is outdated.
+For [RAML-using](/start/primer-raml/) projects, this new "api-lint" tool is preferred. The previous tool "[lint-raml](/guides/raml-cop/)" (runLintRamlCop) is still available, but is deprecated. Its behind-the-scenes technology is outdated.
 
 ## Procedure
 
@@ -34,7 +34,7 @@ Refer to that document for local installation instructions.
 
 The Python script will search the configured directories to find relevant API description files, and will then call the node script to process each file.
 
-Where the main options are:
+<a id="properties"></a>Where the main options are:
 
 * `-t,--types` -- The type of API description files to search for.
   Required. Space-separated list.
@@ -55,10 +55,19 @@ python3 ../folio-tools/api-lint/api_lint.py --help
 Example for RAML:
 
 ```
-cd $GH_FOLIO/mod-notes
+cd $GH_FOLIO/mod-courses
 python3 ../folio-tools/api-lint/api_lint.py \
   -t RAML \
   -d ramls
+```
+
+Example for OAS:
+
+```
+cd $GH_FOLIO/mod-eusage-reports
+python3 ../folio-tools/api-lint/api_lint.py \
+  -t OAS \
+  -d src/main/resources/openapi
 ```
 
 Example for both RAML and OpenAPI (OAS), i.e. when preparing for transition:
@@ -78,7 +87,11 @@ See usage notes with: `node amf.js --help`
 
 ### Jenkinsfile
 
-To use "api-lint" with FOLIO Continuous Integration, add this configuration to the project's [Jenkinsfile](/guides/jenkinsfile/):
+To use "api-lint" with FOLIO Continuous Integration, add the following configuration to the project's [Jenkinsfile](/guides/jenkinsfile/).
+
+Note that the project should also use "[api-doc](/guides/api-doc/)" which utilises the same configuration for the [properties](#properties) apiTypes, apiDirectories, etc.)
+
+#### Jenkinsfile for RAML
 
 ```
 buildMvn {
@@ -92,10 +105,29 @@ buildMvn {
 **Note:** This tool replaces the deprecated "lint-raml" (runLintRamlCop) facility.
 Do not use both.
 
+**Note:** For RAML-using projects that are upgrading from the old CI facility, be aware that this new api-lint tool is more thorough. Refer to the ticket linked in the "[Interpretation of messages](#interpretation-of-messages)" section below.
+
 Examples:
 
-* [mod-tags](https://github.com/folio-org/mod-tags/blob/master/Jenkinsfile)
+* [mod-courses](https://github.com/folio-org/mod-courses/blob/master/Jenkinsfile)
   -- RAML
+  * Its [uprade PR](https://github.com/folio-org/mod-courses/pull/122). See each commit which explained each step.
+* [mod-quick-marc](https://github.com/folio-org/mod-quick-marc/blob/master/Jenkinsfile)
+  -- both RAML and OAS
+
+#### Jenkinsfile for OAS
+
+```
+buildMvn {
+...
+  doApiLint = true
+  apiTypes = 'OAS' // Required. Space-separated list: RAML OAS
+  apiDirectories = 'src/main/resources/openapi' // Required. Space-separated list
+  apiExcludes = 'headers' // Optional. Space-separated list
+```
+
+Examples:
+
 * [mod-eusage-reports](https://github.com/folio-org/mod-eusage-reports/blob/master/Jenkinsfile)
   -- OAS
 * [mod-search](https://github.com/folio-org/mod-search/blob/master/Jenkinsfile)
