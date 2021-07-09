@@ -67,7 +67,8 @@ Example for OAS:
 cd $GH_FOLIO/mod-eusage-reports
 python3 ../folio-tools/api-lint/api_lint.py \
   -t OAS \
-  -d src/main/resources/openapi
+  -d src/main/resources/openapi \
+  -e headers
 ```
 
 Example for both RAML and OpenAPI (OAS), i.e. when preparing for transition:
