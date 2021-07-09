@@ -32,9 +32,8 @@ Otherwise the development environment would need the following fundamental tools
 * Apache Maven (3.3+) and Java (8+) -- For building and deploying Okapi and some server-side modules.
 * Node.js ([Active LTS version](https://github.com/nodejs/Release#release-schedule)) -- For Stripes and for some modules, and for UI testing.
 * Docker -- Recommended method for deployment.
-* PostgreSQL (10) -- For running an external database to support storage modules.
+* PostgreSQL (12) -- For running an external database to support storage modules.
 This will enable faster startup and operations during development.
-Note that this is not required to be installed for running modules using the default "embed_postgres" option.
 
 As each FOLIO component can utilise whatever suite of appropriate tools, refer to its requirements and notes to assist with setup.
 
@@ -43,7 +42,7 @@ As each FOLIO component can utilise whatever suite of appropriate tools, refer t
 Occasionally it becomes necessary to specify minimum versions of some tools:
 
 * Java: [8u101](/guides/troubleshooting#missing-certificate-authority-for-lets-encrypt) or higher.
-* Postgres: [10.0](https://github.com/folio-org/raml-module-builder#postgresql-integration) or higher, but below 11 because of reduced platform support of postgresql-embedded ([postgresql-embedded supported versions](https://github.com/yandex-qatools/postgresql-embedded/commit/15685611972bacd8ba61dd7f11d4dbdcb3ba8dc1), [PostgreSQL Database Download](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)).
+* Postgres: [12](https://github.com/folio-org/raml-module-builder#postgresql-integration).
 
 ### Other tools
 
