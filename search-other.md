@@ -39,6 +39,8 @@ Some example searches at FOLIO Wiki:
 * [Calendars](https://wiki.folio.org/dosearchsite.action?queryString=calendars)
 * [Technical Council (TC)](https://wiki.folio.org/dosearchsite.action?queryString="technical+council") for phrase: "technical council"
 * [MARC/SRS](https://wiki.folio.org/dosearchsite.action?queryString=MARC+AND+SRS+AND+%22source+record%22) for boolean and phrase: MARC AND SRS AND "source record"
+* Constrain search to the [Individual Apps: Information, Tips, and Tricks](https://wiki.folio.org/display/FOLIOtips/Individual+Apps%3A+Information%2C+Tips%2C+and+Tricks) area for words: [source record storage](https://wiki.folio.org/dosearchsite.action?cql=siteSearch+~+%22ancestorIds%3A14457366+AND+source+record+storage%22+and+space+%3D+%22FOLIOtips%22&queryString=ancestorIds%3A14457366+AND+source+record+storage)
+or for phrase: ["source record storage"](https://wiki.folio.org/dosearchsite.action?cql=siteSearch+~+%22ancestorIds%3A14457366+AND+%5C%22source+record+storage%5C%22%22+and+space+%3D+%22FOLIOtips%22&queryString=ancestorIds%3A14457366+AND+%22source+record+storage%22)
 
 Refer to specific
 [Confluence search help](https://confluence.atlassian.com/doc/confluence-search-syntax-158720.html).
