@@ -142,7 +142,8 @@ These are listed in the [Start](/start/) section.
 - [Release procedures](/guidelines/release-procedures/).
 - [Regular FOLIO releases](regular-releases/).
 - [Search and report facilities](/search-other) (e.g. open pull requests needing review).
-- [Technical Designs and Decisions](https://wiki.folio.org/display/DD/). Wiki space to document feature-level designs and decisions.
+- [Technical Designs and Decisions](https://wiki.folio.org/display/DD/). Wiki space to document feature-level designs and decisions:
+[Decision log](https://wiki.folio.org/display/DD/Decision+log).
 - [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/)
 and when ready [install](/faqs/how-to-install-new-module/) it to platform and reference environments for snapshot and testing builds.
 - [Rename a module](rename-module/).
