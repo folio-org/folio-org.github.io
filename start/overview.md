@@ -37,6 +37,9 @@ An overview of the [collaboration tools](/community/#collaboration-tools), how t
 
 There are regular developer-related [news, events, and presentations](/community/events/).
 
+The [FOLIO Forum: Fundamentals of the FOLIO Community](https://discuss.folio.org/t/folio-forum-fundamentals-of-the-folio-community/3102)
+and other presentations in the [FOLIO Member Onboarding](https://www.youtube.com/hashtag/foliomemberonboarding) series.
+
 Add yourself to the
 [FOLIO Developer Directory](https://wiki.folio.org/display/COMMUNITY/FOLIO+Developer+Directory).
 As requested in the [Slack forum guidelines](/guidelines/which-forum/#slack) please also improve your Slack identity information.
