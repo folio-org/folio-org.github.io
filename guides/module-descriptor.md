@@ -173,7 +173,7 @@ This is necessary information for DevOps to be able to utilise the module.
 
 This environment variable must at least have the setting as shown in the [example](#example-launchdescriptors), which enables Java to configure the specified [memory](#memory) for the container.
 
-<a id="dockerfile"></a>The module's Dockerfile needs to use a base image that has the feature "UseContainerSupport" (which was also backported to Java 8 8u191+). Use that feature in conjunction with "MaxRAMPercentage".
+<a id="dockerfile"></a>The module's Dockerfile needs to use a base image that has the feature "UseContainerSupport". Use that feature in conjunction with "MaxRAMPercentage".
 
 Note that all Java-based modules should now be [using Java 11](/faqs/how-to-specify-backend-java-ci/).
 Use the [folioci/alpine-jre-openjdk11:latest](https://hub.docker.com/r/folioci/alpine-jre-openjdk11/tags)
