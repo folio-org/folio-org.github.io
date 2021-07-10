@@ -32,7 +32,7 @@ See [notes](/guides/developer-setup#update-git-submodules).
 As usual, do all development and running as a regular user, not as root.
 Otherwise there will be strange behaviour, and various facilities and
 tools might not be available.
-For example, Postgres (including the embedded one) refuses to run as root.
+For example, Postgres refuses to run as root.
 
 ## Launching Vagrant on Windows
 
