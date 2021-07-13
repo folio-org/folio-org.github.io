@@ -1,0 +1,22 @@
+[
+  {
+    "org": "openlibraryenvironment",
+    "repos": [
+      "platform-rs",
+      "mod-directory",
+      "mod-rs",
+      "ui-directory",
+      "ui-request",
+      "ui-rs",
+      "ui-supply",
+      "ui-update"
+    ]
+  },
+  {
+    "org": "library-data-platform",
+    "repos": [
+      "mod-ldp",
+      "ui-ldp"
+    ]
+  }
+]

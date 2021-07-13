@@ -6,7 +6,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "acq-models"
+    "name": "acq-models",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -15,7 +16,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "data-import-raml-storage"
+    "name": "data-import-raml-storage",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -26,7 +28,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "edge-lti-courses"
+    "name": "edge-lti-courses",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -37,7 +40,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "edge-oai-pmh"
+    "name": "edge-oai-pmh",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -48,7 +52,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "edge-orders"
+    "name": "edge-orders",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -59,7 +64,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "edge-patron"
+    "name": "edge-patron",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -70,7 +76,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "edge-rtac"
+    "name": "edge-rtac",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -81,7 +88,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "folio-custom-fields"
+    "name": "folio-custom-fields",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -94,7 +102,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-audit"
+    "name": "mod-audit",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -105,7 +114,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-calendar"
+    "name": "mod-calendar",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -128,7 +138,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-circulation"
+    "name": "mod-circulation",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -153,7 +164,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-circulation-storage"
+    "name": "mod-circulation-storage",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -166,7 +178,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-codex-ekb"
+    "name": "mod-codex-ekb",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -177,7 +190,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-codex-inventory"
+    "name": "mod-codex-inventory",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -190,7 +204,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-codex-mux"
+    "name": "mod-codex-mux",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -201,7 +216,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-configuration"
+    "name": "mod-configuration",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -212,7 +228,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-copycat"
+    "name": "mod-copycat",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -227,7 +244,8 @@
         "RAML"
       ]
     },
-    "name": "mod-courses"
+    "name": "mod-courses",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -243,7 +261,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-data-export"
+    "name": "mod-data-export",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -254,7 +273,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-data-import"
+    "name": "mod-data-import",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -267,7 +287,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-data-import-converter-storage"
+    "name": "mod-data-import-converter-storage",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -279,7 +300,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-email"
+    "name": "mod-email",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -294,7 +316,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-erm-usage"
+    "name": "mod-erm-usage",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -307,7 +330,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-erm-usage-harvester"
+    "name": "mod-erm-usage-harvester",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -323,7 +347,8 @@
         "OAS"
       ]
     },
-    "name": "mod-eusage-reports"
+    "name": "mod-eusage-reports",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -334,7 +359,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-event-config"
+    "name": "mod-event-config",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -360,7 +386,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-feesfines"
+    "name": "mod-feesfines",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -386,7 +413,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-finance"
+    "name": "mod-finance",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -411,7 +439,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-finance-storage"
+    "name": "mod-finance-storage",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -432,7 +461,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-finc-config"
+    "name": "mod-finc-config",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -443,7 +473,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-gobi"
+    "name": "mod-gobi",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -458,7 +489,8 @@
         "OAS"
       ]
     },
-    "name": "mod-inn-reach"
+    "name": "mod-inn-reach",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -474,7 +506,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-inventory"
+    "name": "mod-inventory",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -528,7 +561,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-inventory-storage"
+    "name": "mod-inventory-storage",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -539,7 +573,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-inventory-update"
+    "name": "mod-inventory-update",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -555,7 +590,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-invoice"
+    "name": "mod-invoice",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -574,7 +610,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-invoice-storage"
+    "name": "mod-invoice-storage",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -599,7 +636,24 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-kb-ebsco-java"
+    "name": "mod-kb-ebsco-java",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [],
+      "raml": [
+        "ramls/ldp.raml"
+      ],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
+    "name": "mod-ldp",
+    "org": "library-data-platform"
   },
   {
     "config": {
@@ -609,8 +663,13 @@
       ],
       "upload": []
     },
-    "metadata": {},
-    "name": "mod-licenses"
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
+    "name": "mod-licenses",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -621,7 +680,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-login"
+    "name": "mod-login",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -632,7 +692,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-login-saml"
+    "name": "mod-login-saml",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -649,7 +710,8 @@
         "RAML"
       ]
     },
-    "name": "mod-notes"
+    "name": "mod-notes",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -661,7 +723,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-notify"
+    "name": "mod-notify",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -675,7 +738,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-oai-pmh"
+    "name": "mod-oai-pmh",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -697,7 +761,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-orders"
+    "name": "mod-orders",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -707,9 +772,7 @@
         "ramls/alert.raml",
         "ramls/configuration.raml",
         "ramls/order-invoice-relns.raml",
-        "ramls/order-lines.raml",
         "ramls/order-templates.raml",
-        "ramls/orders.raml",
         "ramls/pieces.raml",
         "ramls/po-line.raml",
         "ramls/po-line-number.raml",
@@ -722,7 +785,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-orders-storage"
+    "name": "mod-orders-storage",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -733,7 +797,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-organizations"
+    "name": "mod-organizations",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -751,19 +816,25 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-organizations-storage"
+    "name": "mod-organizations-storage",
+    "org": "folio-org"
   },
   {
     "config": {
-      "oas": [],
-      "raml": [
-        "ramls/password-validator.raml",
-        "ramls/validator-registry.raml"
+      "oas": [
+        "src/main/resources/swagger.api/password-validator.yaml",
+        "src/main/resources/swagger.api/validator-registry.yaml"
       ],
+      "raml": [],
       "upload": []
     },
-    "metadata": {},
-    "name": "mod-password-validator"
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "mod-password-validator",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -774,7 +845,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-patron"
+    "name": "mod-patron",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -789,7 +861,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-patron-blocks"
+    "name": "mod-patron-blocks",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -801,7 +874,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-permissions"
+    "name": "mod-permissions",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -812,7 +886,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-pubsub"
+    "name": "mod-pubsub",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -830,7 +905,8 @@
         "OAS"
       ]
     },
-    "name": "mod-quick-marc"
+    "name": "mod-quick-marc",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -842,7 +918,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-rtac"
+    "name": "mod-rtac",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -853,7 +930,8 @@
       ]
     },
     "metadata": {},
-    "name": "mod-search"
+    "name": "mod-search",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -864,7 +942,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-sender"
+    "name": "mod-sender",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -877,7 +956,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-source-record-manager"
+    "name": "mod-source-record-manager",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -893,18 +973,24 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-source-record-storage"
+    "name": "mod-source-record-storage",
+    "org": "folio-org"
   },
   {
     "config": {
-      "oas": [],
-      "raml": [
-        "ramls/tags.raml"
+      "oas": [
+        "src/main/resources/swagger.api/tags.yml"
       ],
+      "raml": [],
       "upload": []
     },
-    "metadata": {},
-    "name": "mod-tags"
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "mod-tags",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -915,7 +1001,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-template-engine"
+    "name": "mod-template-engine",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -925,8 +1012,13 @@
       ],
       "upload": []
     },
-    "metadata": {},
-    "name": "mod-user-import"
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
+    "name": "mod-user-import",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -941,7 +1033,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-users"
+    "name": "mod-users",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -952,7 +1045,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "mod-users-bl"
+    "name": "mod-users-bl",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -963,7 +1057,8 @@
       "upload": []
     },
     "metadata": {},
-    "name": "okapi"
+    "name": "okapi",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -984,7 +1079,8 @@
         "RAML"
       ]
     },
-    "name": "raml"
+    "name": "raml",
+    "org": "folio-org"
   },
   {
     "config": {
@@ -1000,6 +1096,7 @@
         "RAML"
       ]
     },
-    "name": "raml-module-builder"
+    "name": "raml-module-builder",
+    "org": "folio-org"
   }
 ]
