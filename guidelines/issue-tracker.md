@@ -161,3 +161,6 @@ and "Updated recently" filters help to be aware of recent action.
 Create your own filters. Use one as a base, then adjust and Save As.
 
 There are some example filters at [Manage notifications to keep abreast](/guides/manage-notifications/).
+
+<div class="folio-spacer-content"></div>
+
