@@ -386,12 +386,12 @@
     {
       "name": "mod-orders",
       "nameRepo": "mod-orders",
-      "releaseDate": "2021-06-16T21:28:43+00:00",
-      "releaseName": "v12.0.3",
-      "releaseSha": "2261373b62270d3dfbb0cd138c2f5c4bc11e7427",
-      "releaseTag": "v12.0.3",
+      "releaseDate": "2021-07-14T08:03:20+00:00",
+      "releaseName": "v12.0.4",
+      "releaseSha": "65d27557b0f57e7b1c1b1357695cf5a6664c4f3c",
+      "releaseTag": "v12.0.4",
       "releaseTarget": "master",
-      "version": "12.0.3"
+      "version": "12.0.4"
     },
     {
       "name": "mod-orders-storage",
