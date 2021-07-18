@@ -486,12 +486,12 @@
     {
       "name": "mod-remote-storage",
       "nameRepo": "mod-remote-storage",
-      "releaseDate": "2021-06-30T16:22:47+00:00",
-      "releaseName": "v1.0.5",
-      "releaseSha": "d3dc6e8790a7f6ded796bba744d95784471f185e",
-      "releaseTag": "v1.0.5",
-      "releaseTarget": "tmp-release-1.0.5",
-      "version": "1.0.5"
+      "releaseDate": "2021-07-16T12:22:42+00:00",
+      "releaseName": "v1.0.6",
+      "releaseSha": "2b40d16396f3438a5bdb310fd8b6246db3243813",
+      "releaseTag": "v1.0.6",
+      "releaseTarget": "master",
+      "version": "1.0.6"
     },
     {
       "name": "mod-rtac",
