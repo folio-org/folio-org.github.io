@@ -136,22 +136,22 @@
     {
       "name": "mod-data-export-spring",
       "nameRepo": "mod-data-export-spring",
-      "releaseDate": "2021-06-18T08:02:47+00:00",
-      "releaseName": "1.0.5",
-      "releaseSha": "05f468772ef7fd920d3ebe7ad679bf54690fd91e",
-      "releaseTag": "v1.0.5",
+      "releaseDate": "2021-07-16T12:18:41+00:00",
+      "releaseName": "1.0.6",
+      "releaseSha": "457e8ecb16a048a8281cfd857d2ad51b9224c20e",
+      "releaseTag": "v1.0.6",
       "releaseTarget": "master",
-      "version": "1.0.5"
+      "version": "1.0.6"
     },
     {
       "name": "mod-data-export-worker",
       "nameRepo": "mod-data-export-worker",
-      "releaseDate": "2021-06-18T08:03:53+00:00",
-      "releaseName": "1.0.7",
-      "releaseSha": "e0942d7d176d62ac920781305f2d4b7edfd01f93",
-      "releaseTag": "v1.0.7",
+      "releaseDate": "2021-07-16T12:43:50+00:00",
+      "releaseName": "1.0.8",
+      "releaseSha": "fdade2739cfb6bf5b0c4884c8b7e7f33fe97af76",
+      "releaseTag": "v1.0.8",
       "releaseTarget": "master",
-      "version": "1.0.7"
+      "version": "1.0.8"
     },
     {
       "name": "mod-data-import",
@@ -486,12 +486,12 @@
     {
       "name": "mod-remote-storage",
       "nameRepo": "mod-remote-storage",
-      "releaseDate": "2021-06-30T16:22:47+00:00",
-      "releaseName": "v1.0.5",
-      "releaseSha": "d3dc6e8790a7f6ded796bba744d95784471f185e",
-      "releaseTag": "v1.0.5",
-      "releaseTarget": "tmp-release-1.0.5",
-      "version": "1.0.5"
+      "releaseDate": "2021-07-16T12:22:42+00:00",
+      "releaseName": "v1.0.6",
+      "releaseSha": "2b40d16396f3438a5bdb310fd8b6246db3243813",
+      "releaseTag": "v1.0.6",
+      "releaseTarget": "master",
+      "version": "1.0.6"
     },
     {
       "name": "mod-rtac",
