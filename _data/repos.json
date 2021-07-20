@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-07-06T02:50:54.080168+00:00"
+    "generatedDateTime": "2021-07-19T23:23:50.354875+00:00"
   },
   "repos": [
     {
@@ -150,7 +150,7 @@
     {
       "defaultBranch": "master",
       "description": null,
-      "docDirName": null,
+      "docDirName": "docs",
       "name": "edge-lti-courses",
       "org": "folio-org",
       "ramlDirName": "ramls",
@@ -2357,16 +2357,6 @@
     },
     {
       "defaultBranch": "master",
-      "description": "A FOLIO registry to allow frontend apps to register resources and draw information about other modules's resources.",
-      "docDirName": null,
-      "name": "ui-plugin-resource-registry",
-      "org": "folio-org",
-      "repoLanguageHint": "node",
-      "repoType": "ui-plugin",
-      "snippetIntro": "<p>This module returns an instance of a registry class, which allows a frontend app to register a resource at startup.</p>"
-    },
-    {
-      "defaultBranch": "master",
       "description": "Stripes UI for quickMARC editor",
       "docDirName": null,
       "name": "ui-quick-marc",
@@ -2454,6 +2444,16 @@
       "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>This package include a Stripes handler module called <code>servicepoints</code> which will be executed during stripes-core initialization.</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Frontend registry for Stripes",
+      "docDirName": null,
+      "name": "ui-stripes-registry",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "<p>Frontend registry for Stripes</p>"
     },
     {
       "defaultBranch": "master",
