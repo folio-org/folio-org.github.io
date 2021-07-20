@@ -246,12 +246,12 @@
     {
       "name": "mod-gobi",
       "nameRepo": "mod-gobi",
-      "releaseDate": "2021-03-19T10:35:22+00:00",
-      "releaseName": "v2.0.0",
-      "releaseSha": "541b2ad1a1f153c7793c35ea2825f911b9279f75",
-      "releaseTag": "v2.0.0",
+      "releaseDate": "2021-07-19T09:03:34+00:00",
+      "releaseName": "v2.0.1",
+      "releaseSha": "79a0a82275ce3bff7fe269348e63608ae3ecd18a",
+      "releaseTag": "v2.0.1",
       "releaseTarget": "master",
-      "version": "2.0.0"
+      "version": "2.0.1"
     },
     {
       "name": "mod-graphql",
@@ -276,12 +276,12 @@
     {
       "name": "mod-inventory-storage",
       "nameRepo": "mod-inventory-storage",
-      "releaseDate": "2021-04-28T12:39:29+00:00",
-      "releaseName": "v20.2.1",
-      "releaseSha": "0ca7dcb6740e5a8f20182a4be16244c670c1683d",
-      "releaseTag": "v20.2.1",
+      "releaseDate": "2021-07-19T15:00:39+00:00",
+      "releaseName": "v20.2.2",
+      "releaseSha": "36a92f4042b778dbe6946769b559918bad7339ef",
+      "releaseTag": "v20.2.2",
       "releaseTarget": "master",
-      "version": "20.2.1"
+      "version": "20.2.2"
     },
     {
       "name": "mod-invoice",
@@ -596,12 +596,12 @@
     {
       "name": "mod-z3950",
       "nameRepo": "Net-Z3950-FOLIO",
-      "releaseDate": "2021-05-06T16:03:56+00:00",
-      "releaseName": "v2.1.0",
-      "releaseSha": "e808c9142e127b564aebc6caf4defc88e97939cd",
-      "releaseTag": "v2.1.0",
+      "releaseDate": "2021-07-19T17:13:16+00:00",
+      "releaseName": "v2.3.0",
+      "releaseSha": "4f6b5575ae257a9085d9b334ed27749c6d896bda",
+      "releaseTag": "v2.3.0",
       "releaseTarget": "master",
-      "version": "2.1.0"
+      "version": "2.3.0"
     }
   ]
 }
