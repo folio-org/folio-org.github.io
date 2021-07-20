@@ -457,6 +457,7 @@ mod-orders:
       - acquisitions-units
       - check-in
       - configuration
+      - holding-summary
       - order
       - order-lines
       - order-templates
