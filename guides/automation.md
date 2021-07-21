@@ -136,7 +136,7 @@ The [FTP CI test server](/guides/ftp-ci-server/) is available to verify FTP oper
 FOLIO projects are managed by the Jenkins host [https://jenkins-aws.indexdata.com](https://jenkins-aws.indexdata.com)
 located at AWS.  Read access to Jenkins job configurations and build logs is available to
 all core FOLIO developers.
-Jenkins credentials utilize the Github authentication, so ensure that you are logged in to GitHub to then enable log in to Jenkins.
+Jenkins credentials utilize the Github authentication, so ensure that you are logged in to GitHub to then enable login to Jenkins.
 
 See [Navigation of commits and CI via GitHub and Jenkins](/guides/navigate-commits/).
 
