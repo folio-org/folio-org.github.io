@@ -115,10 +115,12 @@ and its [Stripes CLI User Guide](https://github.com/folio-org/stripes-cli/blob/m
 Explains a module directory layout and configuration, and links to relevant documentation.
 
 Overview of the FOLIO [automation](/guides/automation/) and continuous integration (CI/CD).
-The [software build pipeline](/guides/automation/#software-build-pipeline) with explanatory graphic and links to each of the continuously built systems for demonstrations and further testing.
+The [software build pipeline](/guides/automation/#software-build-pipeline) with explanatory graphic and links to each of the continuously built FOLIO [reference environments](/guides/automation/#reference-environments) for demonstrations and further testing.
 Overview of FOLIO [Jenkins](/guides/automation/#jenkins).
 
 Developers will need some way to [run a local FOLIO instance](/guides/run-local-folio/) and to script test queries against it.
+
+Become familiar with your team's Rancher "[developer scratch environment](/faqs/how-to-get-started-with-rancher/)".
 
 [FAQ : How to run tests prior to commit](/faqs/how-to-test-prior-to-commit/).
 
