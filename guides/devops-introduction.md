@@ -69,6 +69,8 @@ People need to ask there and allow time for others to be aware.
 To determine the cause of failed builds, search the [Jenkins output logfile](/faqs/how-to-investigate-jenkins-logs/).
 Remember that the cause might be in the earlier build of "Pipeline build-platform-complete-snapshot" etc.
 
+Encourage developers to utilise the [facility](/faqs/how-to-obtain-refenv-logs/) to obtain reference environment module logs, rather than asking us to do it for them.
+
 ## Developer scratch environments
 
 Refer to the overview of [How to get started with Rancher environment](/faqs/how-to-get-started-with-rancher/) and Helm.
@@ -94,5 +96,28 @@ The "Manage roles" cannot have multiple patterns, but can handle a broader regex
 Do not add the outer double-quotes.
 The "Add" button is way to the right-hand side.
 
-<div class="folio-spacer-content"></div>
+## Jira developer access
+
+Developers can create their own Jira [accounts](/community/#collaboration-tools).
+
+Occasionally a project manager (see [team matrix](https://wiki.folio.org/display/REL/Team+vs+module+responsibility+matrix)) will request special access to maintain the "Fix Version/s" settings.
+
+Visit the Jira admin "User management" and filter to find the relevant user.
+Add the Group "external-core-collaborators".
+(They might also need "ui-project-admins" or "project-admins". TODO: Clarify.)
+
+## Jira add new project
+
+Project managers will sometimes ask us to add a new Jira Project.
+They should provide the name and key.
+
+Visit the Jira [Browse projects](https://issues.folio.org/secure/BrowseProjects.jspa?selectedCategory=all&selectedProjectType=all) section to ensure that the name and key is sensible.
+
+Via the Jira top navigation "Projects" tab, select "Create project".
+At the bottom of the screen, select "Create with shared configuration".
+
+Select "Choose a project" option "Library Apps (LIBAPP)". Then "Next" to add the details.
+
+After project creation, visit the new project. Select "Project settings" at the bottom of the sidebar.
+Then select "Details" and add its GitHub URL.
 
