@@ -748,6 +748,7 @@
         "ramls/acquisitions-units.raml",
         "ramls/check-in.raml",
         "ramls/configuration.raml",
+        "ramls/holding-summary.raml",
         "ramls/order.raml",
         "ramls/order-lines.raml",
         "ramls/order-templates.raml",
