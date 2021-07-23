@@ -246,11 +246,11 @@
     {
       "name": "mod-gobi",
       "nameRepo": "mod-gobi",
-      "releaseDate": "2021-07-19T09:03:34+00:00",
-      "releaseName": "v2.0.1",
-      "releaseSha": "79a0a82275ce3bff7fe269348e63608ae3ecd18a",
-      "releaseTag": "v2.0.1",
-      "releaseTarget": "master",
+      "releaseDate": null,
+      "releaseName": null,
+      "releaseSha": null,
+      "releaseTag": null,
+      "releaseTarget": null,
       "version": "2.0.1"
     },
     {
@@ -286,12 +286,12 @@
     {
       "name": "mod-invoice",
       "nameRepo": "mod-invoice",
-      "releaseDate": "2021-07-15T10:44:36+00:00",
-      "releaseName": "v5.0.6",
-      "releaseSha": "56ed7d4c3f589ab39c1b8d171607fe0034dafa73",
-      "releaseTag": "v5.0.6",
+      "releaseDate": "2021-07-22T06:15:18+00:00",
+      "releaseName": "v5.0.7",
+      "releaseSha": "5b8aa24807756c3ab5c864ce32b9a50067d9597f",
+      "releaseTag": "v5.0.7",
       "releaseTarget": "master",
-      "version": "5.0.6"
+      "version": "5.0.7"
     },
     {
       "name": "mod-invoice-storage",
