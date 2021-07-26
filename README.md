@@ -13,12 +13,13 @@ The 'bundle install' step will install the relevant local
 
 For Ruby, using [rbenv](https://github.com/rbenv/rbenv) and its 'ruby-build'
 plugin ensures a smooth process. In this directory, set the ruby version
-with: `rbenv local <version>`
+with: `rbenv local 2.6.8`
 
 Then do:
 
 ```
-bundle install --path vendor/bundle
+bundle config set --local path 'vendor/bundle'
+bundle install
 ```
 
 Occasionally a site maintainer will have updated dependencies,

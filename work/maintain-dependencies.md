@@ -3,7 +3,7 @@
 Occasionally advance the versions of general dependencies
 ([FOLIO-1276](https://issues.folio.org/browse/FOLIO-1276)).
 
-Do `bundle update` which will install the new versions
+Do `bundle update --all` which will install the new versions
 and will update the `Gemfile.lock` file.
 
 Verify that the local site still renders properly.
