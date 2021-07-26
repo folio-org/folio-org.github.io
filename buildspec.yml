@@ -14,7 +14,8 @@ phases:
       ruby: 2.6
     commands:
       - gem install bundler
-      - bundle install --path vendor/bundle
+      - bundle config set --local path 'vendor/bundle'
+      - bundle install
   #pre_build:
     #commands:
       # - command
