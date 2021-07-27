@@ -893,6 +893,7 @@
   {
     "config": {
       "oas": [
+        "src/main/resources/swagger.api/records-editor-async.yaml",
         "src/main/resources/swagger.api/records-editor.yaml"
       ],
       "raml": [
