@@ -147,11 +147,11 @@
       "name": "mod-data-export-worker",
       "nameRepo": "mod-data-export-worker",
       "releaseDate": "2021-07-16T12:43:50+00:00",
-      "releaseName": "1.0.8",
-      "releaseSha": "fdade2739cfb6bf5b0c4884c8b7e7f33fe97af76",
-      "releaseTag": "v1.0.8",
+      "releaseName": "1.0.9",
+      "releaseSha": "94c345337000f822bf8b1f164e22b534ed64755f",
+      "releaseTag": "v1.0.9",
       "releaseTarget": "master",
-      "version": "1.0.8"
+      "version": "1.0.9"
     },
     {
       "name": "mod-data-import",
