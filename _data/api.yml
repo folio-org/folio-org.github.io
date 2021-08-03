@@ -402,6 +402,7 @@ mod-finance:
       - budgets
       - exchange-rate
       - expense-classes
+      - finance-fund-codes-expense-classes
       - fiscal-years
       - fund-types
       - funds
