@@ -66,6 +66,8 @@ ui-finance:
 ui-inventory:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Inventory
   urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Inventory
+  urlsOther:
+    - https://wiki.folio.org/display/FOLIOtips/Single+Record+Import
 
 ui-invoice:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Invoices
