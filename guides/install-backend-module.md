@@ -23,6 +23,8 @@ Note that this is not an exhaustive list.
 * The module version number (e.g. in Maven POM) is a semantic version number and snapshot designator, i.e. in mainline branch it should be `x.y.z-SNAPSHOT`. Avoid common mistakes like `x.y-SNAPSHOT` or `x.y.z` with no appended `-SNAPSHOT`.
 * The port numbers are matching -- the same in ModuleDescriptor, Dockerfile, and in program code and configuration.
 * For Spring Way modules, the default port is 8080. FOLIO does not care which port. However if the module is going to use a different port, then be sure to also declare that `server:port` in its `application.yaml` file.
+* For Spring Way modules, the replacement tokens in Descriptors use delimiters "@" rather than the normal "$".
+* Ensure that the ModuleDescriptor is generated from its template and that tokens are replaced. For Maven-based modules, the POM will have configuration to "filter-descriptor-inputs" and "rename-descriptor-outputs".
 * Other ...
 
 ## Verify MD and required interfaces
