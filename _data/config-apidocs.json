@@ -396,6 +396,7 @@
         "ramls/budgets.raml",
         "ramls/exchange-rate.raml",
         "ramls/expense-classes.raml",
+        "ramls/finance-fund-codes-expense-classes.raml",
         "ramls/fiscal-years.raml",
         "ramls/fund-types.raml",
         "ramls/funds.raml",
