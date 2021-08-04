@@ -25,8 +25,17 @@ vagrant ssh
 
 ### Okapi log
 
-The Okapi logfile is at<br/>
-`/var/log/folio/okapi/okapi.log`
+Get the container name of the Okapi module:
+
+```
+docker ps | grep okapi
+```
+
+View this module's logs:
+
+```
+docker logs --follow <container_name>
+```
 
 ### Stripes log
 
