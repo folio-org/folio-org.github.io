@@ -201,23 +201,23 @@ The tag for the image is: docker.dev.folio.org/platform-complete:`team_name-buil
 
 ## Create Elasticsearch index snapshot
 
-To create Elasticsearch index snapshot for Rancher performance testing cluster,  go to your Rancher environment,choose your performance testing cluster ( perf-ekes-team_name) :
-* Find your Elasticsearch hostaname , username and password : in Rancher test environment select your project name ( Team name ) ->Secrets.
+To create Elasticsearch index snapshot for Rancher performance testing cluster,  go to your Rancher environment, choose your performance testing cluster (`perf-ekes-team_name`):
+* Find your Elasticsearch hostname, username, and password. In Rancher test environment, select your project name ( Team name ) ->Secrets.
  ![](/images/secrets.png)
-* scroll down and find Namespace:team_name and click on db-connect-modules,Select the verticial ellipsics then : edit
+* Scroll down and find `Namespace:team_name` and select the vertical ellipsis for `db-connect-modules`, and then choose `Edit`
 ![](/images/dbconnectmodules.png)
-* Copy the value of  ELASTICSEARCH_HOST , ELASTICSEARCH_USERNAME and ELASTICSEARCH_PASSWORD.
+* Copy the value of `ELASTICSEARCH_HOST`, `ELASTICSEARCH_USERNAME`, and `ELASTICSEARCH_PASSWORD`.
 ![](/images/elasticsearch.png)
-* Ask the Devops administrator to create repository for you . ( The repository is attached to persistent aws S3 bucket )
-* go to project name ( Team name ) -> Resources -> Workloads -> ubuntu , select the verticial ellipsics choose : Execute Shell
+* Ask the DevOps administrator to create the repository for you. (The repository is attached to persistent AWS S3 bucket.)
+* Go to project name ( Team name ) -> Resources -> Workloads -> ubuntu, select the vertical ellipsis, and choose: `Execute Shell`
 ![](/images/executeshell.png)
 
 ### Create a snapshot
- `curl -XPUT 'ElASTICSEARCH_HOST/_snapshot/repository-name/snapshot-name -u ELASTICSEARCH_USERNAME:ELASTICSEARCH_PASSWORD`
+ `curl -XPUT 'ELASTICSEARCH_HOST/_snapshot/repository-name/snapshot-name -u ELASTICSEARCH_USERNAME:ELASTICSEARCH_PASSWORD`
 ### Restore a snapshot
- `curl -XPOST 'ElASTICSEARCH_HOST /_snapshot/repository-name/snapshot-name/_restore' -u ELASTICSEARCH_USERNAM:ELASTICSEARCH_PASSWORD`
-### Restore specific index
- `curl -XPOST 'ElASTICSEARCH_HOST/_snapshot/repository-name/snapshot-name/_restore' -d '{"indices": "my-index"}' -H 'Content-Type: application/json' -u ELASTICSEARCH_USERNAM:ELASTICSEARCH_PASSWORD`
+ `curl -XPOST 'ELASTICSEARCH_HOST/_snapshot/repository-name/snapshot-name/_restore' -u ELASTICSEARCH_USERNAME:ELASTICSEARCH_PASSWORD`
+### Restore a specific index
+ `curl -XPOST 'ELASTICSEARCH_HOST/_snapshot/repository-name/snapshot-name/_restore' -d '{"indices": "my-index"}' -H 'Content-Type: application/json' -u ELASTICSEARCH_USERNAME:ELASTICSEARCH_PASSWORD`
 
 ## Questions and answers
 
