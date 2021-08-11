@@ -199,8 +199,9 @@ The tag for the image is: docker.dev.folio.org/platform-complete:`team_name-buil
 
 * Select "Upgrade"
 
-## Create Index snapshot in Elasticsearch for Rancher performance testing cluster
-To create Elasticsearch snapshot go to your Rancher environment,choose your performance testing cluster ( perf-ekes-team_name) :
+## Create Elasticsearch index snapshot
+
+To create Elasticsearch index snapshot for Rancher performance testing cluster,  go to your Rancher environment,choose your performance testing cluster ( perf-ekes-team_name) :
 * Find your Elasticsearch hostaname , username and password : in Rancher test environment select your project name ( Team name ) ->Secrets.
  ![](/images/secrets.png)
 * scroll down and find Namespace:team_name and click on db-connect-modules,Select the verticial ellipsics then : edit
@@ -210,11 +211,12 @@ To create Elasticsearch snapshot go to your Rancher environment,choose your perf
 * Ask the Devops administrator to create repository for you . ( The repository is attached to persistent aws S3 bucket )
 * go to project name ( Team name ) -> Resources -> Workloads -> ubuntu , select the verticial ellipsics choose : Execute Shell
 ![](/images/executeshell.png)
-# To create snapshot run the following command :
+
+### Create a snapshot
  `curl -XPUT 'ElASTICSEARCH_HOST/_snapshot/repository-name/snapshot-name -u ELASTICSEARCH_USERNAME:ELASTICSEARCH_PASSWORD`
-# To restore a snapshot, run the following command:
+### Restore a snapshot
  `curl -XPOST 'ElASTICSEARCH_HOST /_snapshot/repository-name/snapshot-name/_restore' -u ELASTICSEARCH_USERNAM:ELASTICSEARCH_PASSWORD`
-# To restore specific index run the following command :
+### Restore specific index
  `curl -XPOST 'ElASTICSEARCH_HOST/_snapshot/repository-name/snapshot-name/_restore' -d '{"indices": "my-index"}' -H 'Content-Type: application/json' -u ELASTICSEARCH_USERNAM:ELASTICSEARCH_PASSWORD`
 
 ## Questions and answers
