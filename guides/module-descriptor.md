@@ -247,6 +247,9 @@ Other LaunchDescriptor examples:
 * [mod-search](https://github.com/folio-org/mod-search/blob/master/descriptors/ModuleDescriptor-template.json)
   -- has additional env properties.
   [DH readme](https://hub.docker.com/r/folioorg/mod-search).
+* [mod-remote-storage](https://github.com/folio-org/mod-remote-storage/blob/master/descriptors/ModuleDescriptor-template.json)
+  -- has additional env properties for Apache Kafka.
+  [DH readme](https://hub.docker.com/r/folioorg/mod-remote-storage).
 
 ## Testing the modifications
 
