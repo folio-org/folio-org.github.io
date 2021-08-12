@@ -236,12 +236,12 @@
     {
       "name": "mod-finance-storage",
       "nameRepo": "mod-finance-storage",
-      "releaseDate": "2021-07-30T13:33:02+00:00",
-      "releaseName": "v7.0.5",
-      "releaseSha": "81e6b421bc7800587fba1f5a28ca52dac10e6c5d",
-      "releaseTag": "v7.0.5",
-      "releaseTarget": "b7.0",
-      "version": "7.0.5"
+      "releaseDate": "2021-08-11T12:02:43+00:00",
+      "releaseName": "v7.0.6",
+      "releaseSha": "4eec7c5b7cad1558091821228f4ec3e926106650",
+      "releaseTag": "v7.0.6",
+      "releaseTarget": "master",
+      "version": "7.0.6"
     },
     {
       "name": "mod-gobi",
