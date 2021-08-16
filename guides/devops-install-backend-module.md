@@ -144,17 +144,18 @@ as explained at the [reference environments](/guides/automation/#reference-envir
 
 This is the separate procedure for adding a backend module to the "snapshot" branch of the Stripes Platform (e.g. to [platform-complete](https://github.com/folio-org/platform-complete/tree/snapshot)).
 
-Before doing this, the successful build of "folio-testing-test" (described in the preceeding sections) will provide some comfort, but it is not a thorough test.
+Before doing this, the successful build of "folio-testing-test" (described in the preceding sections) will provide some comfort, but it is not a thorough test.
 Of course, it it fails then there is no point doing this section.
 
 ### Platform explanation
 
 The normal process is that a UI module will require interfaces that are provided by back-end modules (declared in the "okapiInterfaces" section of their package.json file).
 With this, the relevant back-end modules are automatically included.
+(See separate procedure to [install a new front-end module](/guides/install-frontend-module/).)
 
 However often the front-end and back-end are not yet ready for each other.
 
-Temporarily add the new back-end module to the `install-extras.json` file of the "snapshot" branch of the relevant platform.
+If so, then temporarily add the new back-end module to the `install-extras.json` file of the "snapshot" branch of the relevant platform.
 (Note that "core" modules are added to both platform-core and platform-complete.)
 
 After the back-end development is eventually ready, then a front-end module will require this module.
@@ -167,7 +168,7 @@ In these cases they are always configured in that file.
 
 If approaching the daily [reference environment](https://dev.folio.org/guides/automation/#reference-environments) build times, then the timing of this task can be difficult.
 
-The [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/) Jenkins build happens every hour, starting at about 20 minutes past and taking 10 minutes.
+The [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/) Jenkins build happens every hour, starting at about 20 minutes past and taking 30 minutes.
 This will regenerate the yarn.lock and install files of the Platform, and automatically merge them.
 
 So there will be a short window to prepare the branch and pull-request builds, then merge to "snapshot" branch, then its branch build.
