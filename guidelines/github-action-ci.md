@@ -52,6 +52,9 @@ The final step is to rename the `Jenkinsfile` into `Jenkinsfile.deprecated` whic
 
 Once the set-up and configuration is done, the wokflow can be merged with the default branch and tested.
 
+## Note
+
+Some repositories have the Jenkins CI pipeline set as a required status check for pr_merges. That needs to be removed to configure the Github Workflow sucessfully.
 
 <div class="folio-spacer-content"></div>
 
