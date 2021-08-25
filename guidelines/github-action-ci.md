@@ -45,7 +45,7 @@ For repositories where `COMPILE_TRANSLATION_FILES` are set to true the following
 
 
 
-## Replacing the Jenkings pipeline
+## Replacing the Jenkins pipeline
 
 The final step is to rename the `Jenkinsfile` into `Jenkinsfile.deprecated` which will stop the Jenkins pipeline to run parallely with the GitHub Action to remove the risk of publishing duplicate artifacts.
 
