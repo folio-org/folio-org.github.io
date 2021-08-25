@@ -12,6 +12,8 @@ These are notes to assist developers with configuring Github Action based CI wor
 
 ## Setting up the workflow
 
+### Part I : Configuring For UI and Stripes based repositories
+
 The workflow can be set up by following these steps
 - From the repository navigate to the `Actions`
 - On clicking the `New Workflow` button two NPM based workflows can be found developed by FOLIO organization. Make sure the select ONLY the workflows developed by FOLIO. The two NPM based workflows are
@@ -43,7 +45,6 @@ For repositories where `COMPILE_TRANSLATION_FILES` are set to true the following
 
 
 
-
 ## Replacing the Jenkings pipeline
 
 The final step is to rename the `Jenkinsfile` into `Jenkinsfile.deprecated` which will stop the Jenkins pipeline to run parallely with the GitHub Action to remove the risk of publishing duplicate artifacts.
@@ -52,7 +53,7 @@ The final step is to rename the `Jenkinsfile` into `Jenkinsfile.deprecated` whic
 
 Once the set-up and configuration is done, the wokflow can be merged with the default branch and tested.
 
-## Note
+### Note
 
 Some repositories have the Jenkins CI pipeline set as a required status check for pr_merges. That needs to be removed to configure the Github Workflow sucessfully.
 
