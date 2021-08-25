@@ -17,17 +17,17 @@ These are notes to assist developers with configuring Github Action based CI wor
 The workflow can be set up by following these steps
 - From the repository navigate to the `Actions`
 - On clicking the `New Workflow` button two NPM based workflows can be found developed by FOLIO organization. Make sure the select ONLY the workflows developed by FOLIO. The two NPM based workflows are
-    - FOLIO NPM Workflow
-    - FOLIO NPM Release Workflow
+    - **FOLIO NPM Workflow**
+    - **FOLIO NPM Release Workflow**
 - Once the workflow is set up it needs to be configured according to the repository needs
 
 ### Configuring the new Workflow
 
 The workflow has 4 `environment variables` which need to be configured according the needs of the particular repositories. These are:
-- YARN_TEST_OPTIONS (options to pass to 'yarn test')
-- SQ_ROOT_DIR (root SQ directory to scan relative to top-level directory)
-- PUBLISH_MOD_DESCRIPTOR (boolean 'true' or 'false')
-- COMPILE_TRANSLATION_FILES (boolean 'true' or 'false')
+- **YARN_TEST_OPTIONS** (options to pass to 'yarn test')
+- **SQ_ROOT_DIR** (root SQ directory to scan relative to top-level directory)
+- **PUBLISH_MOD_DESCRIPTOR** (boolean 'true' or 'false')
+- **COMPILE_TRANSLATION_FILES** (boolean 'true' or 'false')
 
 They can be configured using the Jenkinsfile.
 
