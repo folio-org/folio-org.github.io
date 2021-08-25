@@ -21,7 +21,7 @@ The workflow can be set up by following these steps
     - FOLIO NPM Release Workflow
 - Once the workflow is set up it needs to be configured according to the repository needs
 
-## Configuring the new Workflow
+### Configuring the new Workflow
 
 The workflow has 4 `environment variables` which need to be configured according the needs of the particular repositories. These are:
 - YARN_TEST_OPTIONS (options to pass to 'yarn test')
