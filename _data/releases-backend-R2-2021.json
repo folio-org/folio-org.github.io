@@ -264,6 +264,16 @@
       "version": "2.1.1"
     },
     {
+      "name": "mod-graphql",
+      "nameRepo": "mod-graphql",
+      "releaseDate": "2021-06-03T14:53:00+00:00",
+      "releaseName": "v1.9.0",
+      "releaseSha": "bd3354b88aa4a2e59f67fb3dc21ae4e5fb671e1a",
+      "releaseTag": "v1.9.0",
+      "releaseTarget": "master",
+      "version": "1.9.0"
+    },
+    {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
       "releaseDate": "2021-08-04T14:29:49+00:00",
@@ -602,6 +612,16 @@
       "releaseTag": "v7.0.0",
       "releaseTarget": "master",
       "version": "7.0.0"
+    },
+    {
+      "name": "mod-z3950",
+      "nameRepo": "Net-Z3950-FOLIO",
+      "releaseDate": "2021-08-24T15:11:23+00:00",
+      "releaseName": "v2.4.0",
+      "releaseSha": "9c7effbe680c0b2c256a590b2e76e6242fc26e28",
+      "releaseTag": "v2.4.0",
+      "releaseTarget": "master",
+      "version": "2.4.0"
     }
   ]
 }
