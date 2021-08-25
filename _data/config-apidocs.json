@@ -573,7 +573,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-inventory-update",
     "org": "folio-org"
   },
@@ -1059,7 +1063,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "okapi",
     "org": "folio-org"
   },
