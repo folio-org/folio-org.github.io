@@ -36,6 +36,13 @@ In the `scripts` attribute of the `package.json` the following command needs to 
 
 This triggers the module descriptor build process.
 
+For repositories where `COMPILE_TRANSLATION_FILES` are set to true the following changes should be made to the `package.json`
+- In the `scripts` attribute the following command needs to be added
+    - `"formatjs-compile": "formatjs compile-folder --ast --format simple ./translations/ui-users ./translations/users/compiled"`
+- Add `"@formatjs/cli": "^4.2.20",` as a devDependency
+
+
+
 
 ## Replacing the Jenkings pipeline
 
@@ -44,7 +51,6 @@ The final step is to rename the `Jenkinsfile` into `Jenkinsfile.deprecated` whic
 ## Final Steps
 
 Once the set-up and configuration is done, the wokflow can be merged with the default branch and tested.
-
 
 
 <div class="folio-spacer-content"></div>
