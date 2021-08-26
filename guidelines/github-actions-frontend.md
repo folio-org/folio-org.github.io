@@ -1,29 +1,31 @@
 ---
 layout: page
-title: Configure the GithubAction CI pipeline for UI and Stripes repositories
-permalink: /guidelines/github-action-ci/
+title: Configure GitHub Actions CI pipeline for frontend repositories
+permalink: /guidelines/github-actions-frontend/
 menuInclude: no
 menuTopTitle: Guidelines
 ---
 
 ## Introduction
 
-These are notes to assist developers with configuring GitHub Actions based CI workflows to replace the currently used Jenkins pipeline.
+These instructions assist developers with configuring GitHub Actions based CI workflows to replace the currently used Jenkins pipeline.
 
-## Setting up the workflow
+This document is for existing and new front-end UI and Stripes repositories.
 
-### Part I : Configuring For UI and Stripes based repositories
+## Setting up the workflows
 
-The workflow can be set up by following these steps:
-- From the repository navigate to the `Actions`
+### Add FOLIO workflows
+
+The workflows are established by following these steps:
+- From the repository GitHub page, navigate to the `Actions` tab.
 - On clicking the `New Workflow` button, two NPM based workflows are shown which are developed by FOLIO organization. Make sure to select ONLY those workflows developed by FOLIO. The two NPM based workflows are:
     - **FOLIO NPM Workflow**
     - **FOLIO NPM Release Workflow**
-- Once the workflows are added, they need to be configured according to the repository needs.
+- Once the workflows are added, they need to be configured according to the repository requirements.
 
-### Configuring the new Workflow
+### Configuration
 
-Each workflow has four environment variables which need to be configured according the requirements of the particular repository. These are:
+Each workflow has four environment variables which need to be configured according to the requirements of the particular repository. These are:
 - **`YARN_TEST_OPTIONS`** -- options to pass to 'yarn test'
 - **`SQ_ROOT_DIR`** -- root SQ directory to scan relative to top-level directory
 - **`PUBLISH_MOD_DESCRIPTOR`** -- boolean 'true' or 'false'
@@ -39,9 +41,10 @@ This triggers the ModuleDescriptor build process.
 For repositories where `COMPILE_TRANSLATION_FILES` are set to true, the following changes need to be made to the `package.json` file:
 - In the `scripts` attribute, the following command needs to be added:
     - `"formatjs-compile": "formatjs compile-folder --ast --format simple ./translations/ui-users ./translations/users/compiled"`
+    - Of course, those "translations" need to be for this particular repository.
 - Add `"@formatjs/cli": "^4.2.20",` as a devDependency
 
-## Replace Jenkins pipeline
+## Disable Jenkins pipeline
 
 The Jenkins pipeline needs to be disabled, to prevent it running in parallel with GitHub Action workflows and so publishing duplicate artifacts.
 
@@ -51,7 +54,7 @@ Do: `git mv Jenkinsfile Jenkinsfile.deprecated`
 
 ### Merge to mainline
 
-After the set-up and configuration is done, the workflow can be merged with the default branch and tested.
+After the set-up and configuration is done, the workflow can be merged with the default branch and verified.
 
 ### Required status checks
 
