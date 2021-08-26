@@ -16,7 +16,7 @@ These are notes to assist developers with configuring Github Action based CI wor
 
 The workflow can be set up by following these steps
 - From the repository navigate to the `Actions`
-- On clicking the `New Workflow` button two NPM based workflows can be found developed by FOLIO organization. Make sure the select ONLY the workflows developed by FOLIO. The two NPM based workflows are
+- On clicking the `New Workflow` button two NPM based workflows can be found developed by FOLIO organization. Make sure to select ONLY the workflows developed by FOLIO. The two NPM based workflows are
     - **FOLIO NPM Workflow**
     - **FOLIO NPM Release Workflow**
 - Once the workflow is set up it needs to be configured according to the repository needs
@@ -36,14 +36,12 @@ For the repositories which have `PUBLISH_MOD_DESCRIPTOR` variable set as true, a
 In the `scripts` attribute of the `package.json` the following command needs to be added
 - `"build-mod-descriptor": "stripes mod descriptor --full --strict | jq '.[]' > module-descriptor.json ",`
 
-This triggers the module descriptor build process.
+This triggers the ModuleDescriptor build process.
 
 For repositories where `COMPILE_TRANSLATION_FILES` are set to true the following changes should be made to the `package.json`
 - In the `scripts` attribute the following command needs to be added
     - `"formatjs-compile": "formatjs compile-folder --ast --format simple ./translations/ui-users ./translations/users/compiled"`
 - Add `"@formatjs/cli": "^4.2.20",` as a devDependency
-
-
 
 ## Replacing the Jenkins pipeline
 
@@ -51,11 +49,11 @@ The final step is to rename the `Jenkinsfile` into `Jenkinsfile.deprecated` whic
 
 ## Final Steps
 
-Once the set-up and configuration is done, the wokflow can be merged with the default branch and tested.
+Once the set-up and configuration is done, the workflow can be merged with the default branch and tested.
 
 ### Note
 
-Some repositories have the Jenkins CI pipeline set as a required status check for pr_merges. That needs to be removed to configure the Github Workflow sucessfully.
+Some repositories have the Jenkins CI pipeline set as a required status check for pr_merges. That needs to be removed to configure the Github Workflow successfully.
 
 <div class="folio-spacer-content"></div>
 
