@@ -41,17 +41,23 @@ For repositories where `COMPILE_TRANSLATION_FILES` are set to true, the followin
     - `"formatjs-compile": "formatjs compile-folder --ast --format simple ./translations/ui-users ./translations/users/compiled"`
 - Add `"@formatjs/cli": "^4.2.20",` as a devDependency
 
-## Replacing the Jenkins pipeline
+## Replace Jenkins pipeline
 
-The final step is to rename the `Jenkinsfile` into `Jenkinsfile.deprecated` which will stop the Jenkins pipeline to run parallely with the GitHub Action to remove the risk of publishing duplicate artifacts.
+The Jenkins pipeline needs to be disabled, to prevent it running in parallel with GitHub Action workflows and so publishing duplicate artifacts.
 
-## Final Steps
+Do: `git mv Jenkinsfile Jenkinsfile.deprecated`
 
-Once the set-up and configuration is done, the workflow can be merged with the default branch and tested.
+## Final steps
 
-### Note
+### Merge to mainline
 
-Some repositories have the Jenkins CI pipeline set as a required status check for pr_merges. That needs to be removed to configure the Github Workflow successfully.
+After the set-up and configuration is done, the workflow can be merged with the default branch and tested.
+
+### Required status checks
+
+Most repositories have the Jenkins CI pipeline configured as a "Required status check" (`jenkins/pr_merge`). That needs to be removed to configure the GitHub Workflow successfully.
+
+At the tab: "Settings > Branches > Branch protection rules" edit the current rule.
 
 <div class="folio-spacer-content"></div>
 
