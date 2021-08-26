@@ -30,6 +30,7 @@ Each workflow has four environment variables which need to be configured accordi
 - **`SQ_ROOT_DIR`** -- root SQ directory to scan relative to top-level directory
 - **`PUBLISH_MOD_DESCRIPTOR`** -- boolean 'true' or 'false'
 - **`COMPILE_TRANSLATION_FILES`** -- boolean 'true' or 'false'
+- **`DEFAULT_BRANCH`** -- set the default branch 'master' or 'main'
 
 For the repositories which have `PUBLISH_MOD_DESCRIPTOR` variable set as true, an extra step needs to be performed.
 
