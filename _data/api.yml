@@ -674,6 +674,7 @@ mod-source-record-manager:
     directory: ramls
     files:
       - change-manager
+      - mapping-metadata-provider
       - mapping-rules-provider
       - metadata-provider
     excludes:
