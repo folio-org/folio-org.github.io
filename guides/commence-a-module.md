@@ -90,23 +90,35 @@ Usually in Markdown format.
 
 Consider the guide to [increase visibility of module documentation](/guides/visibility-module-docs/).
 
-### RAMLs {#back-end-ramls}
+### API descriptions
 
-The `ramls` directory holds the RAML and Schema and examples files specific to this module.
-Normally there will also be the [git submodule](https://git-scm.com/docs/git-submodule) at `ramls/raml-util` being the shared files of the [raml](https://github.com/folio-org/raml) repository.
+Back-end repositories will provide API descriptions. These will either be RAML or OpenAPI (OAS).
 
-Some modules only have a `ramls/raml-util` and not other files, because their files are all located in that shared space.
+The reference [API documentation](/reference/api/) is generated from these files. Provide a clear "description" field for each endpoint.
 
 Set the Jenkinsfile [configuration](/guides/jenkinsfile/) `doApiLint` parameter
 and `doApiDoc` parameter, to enable these during continuous integration.
 
-The reference [API documentation](/reference/api/) is generated from these files. Provide a clear "description" field for each endpoint.
+#### RAMLs {#back-end-ramls}
+
+The top-level `ramls` directory holds the RAML and Schema and examples files specific to this module.
+Normally there will also be the [git submodule](https://git-scm.com/docs/git-submodule) at `ramls/raml-util` being the shared files of the [raml](https://github.com/folio-org/raml) repository.
+
+Some modules only have a `ramls/raml-util` and not other files, because their files are all located in that shared space.
+
+Configure the CI jobs `doApiLint` and `doApiDoc` as explained above.
 
 See the [Primer for RAML and JSON Schema](/start/primer-raml/).
 
-### API schema {#back-end-api-schema}
+#### OpenAPI (OAS) {#back-end-oas}
 
-The `ramls` directory holds the related schema files.
+The relevant `openapi` directory holds the API description OAS and Schema and examples files specific to this module.
+
+Configure the CI jobs `doApiLint` and `doApiDoc` as explained above.
+
+#### API schema {#back-end-api-schema}
+
+The [API descriptions](#api-descriptions) will refer to their related schema files.
 
 The reference [API documentation](/reference/api/) is generated from these files.
 

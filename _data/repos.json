@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-08-02T04:03:00.017239+00:00"
+    "generatedDateTime": "2021-08-10T21:44:27.930796+00:00"
   },
   "repos": [
     {
@@ -1101,9 +1101,9 @@
       "name": "mod-oa",
       "org": "folio-org",
       "ramlDirName": null,
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "gradle",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "<p>Bounded Context Deailing with Open Access Publishing</p>"
     },
     {
       "defaultBranch": "master",
@@ -1671,7 +1671,7 @@
       "docDirName": "doc",
       "name": "stripes-core",
       "org": "folio-org",
-      "repoLanguageHint": "node",
+      "repoLanguageHint": "other",
       "repoType": "stripes",
       "snippetIntro": "<p>Stripes is a toolkit for building single-page web applications that FOLIO UI modules can run in. UI modules are made up of <a href='https://facebook.github.io/react/'>React</a> components, some of which will be connected to back-end services provided by <a href='https://github.com/folio-org/okapi'>Okapi</a>. Each module has a 'type' which indicates how it functions within the application. At the moment, the only 'type' is 'app' which provides a top-level component to render into a large content area.</p>"
     },
@@ -2131,9 +2131,9 @@
       "docDirName": null,
       "name": "ui-oa",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": ""
+      "snippetIntro": "<p>UX module for Open Access Management</p>"
     },
     {
       "defaultBranch": "master",

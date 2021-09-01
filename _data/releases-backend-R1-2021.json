@@ -46,12 +46,12 @@
     {
       "name": "mod-circulation",
       "nameRepo": "mod-circulation",
-      "releaseDate": "2021-06-15T13:25:16+00:00",
-      "releaseName": "v20.1.7",
-      "releaseSha": "6b7448940687948c72b7304f7c71d30acc6defab",
-      "releaseTag": "v20.1.7",
+      "releaseDate": "2021-08-09T15:43:09+00:00",
+      "releaseName": "v20.1.8",
+      "releaseSha": "f993e27b09b59e0c3f04172ad179edf0106961d4",
+      "releaseTag": "v20.1.8",
       "releaseTarget": "master",
-      "version": "20.1.7"
+      "version": "20.1.8"
     },
     {
       "name": "mod-circulation-storage",
@@ -116,12 +116,12 @@
     {
       "name": "mod-courses",
       "nameRepo": "mod-courses",
-      "releaseDate": "2021-04-26T16:57:59+00:00",
-      "releaseName": "v1.2.2",
-      "releaseSha": "89272cd2b2a9d47035234e032c280b301ba07e71",
-      "releaseTag": "v1.2.2",
+      "releaseDate": "2021-06-19T12:47:59+00:00",
+      "releaseName": "v1.2.3",
+      "releaseSha": "8bc43fac89024c8a2db7befcb88cbf9fa39e9de7",
+      "releaseTag": "v1.2.3",
       "releaseTarget": "master",
-      "version": "1.2.2"
+      "version": "1.2.3"
     },
     {
       "name": "mod-data-export",
@@ -236,12 +236,12 @@
     {
       "name": "mod-finance-storage",
       "nameRepo": "mod-finance-storage",
-      "releaseDate": "2021-07-30T13:33:02+00:00",
-      "releaseName": "v7.0.5",
-      "releaseSha": "81e6b421bc7800587fba1f5a28ca52dac10e6c5d",
-      "releaseTag": "v7.0.5",
-      "releaseTarget": "b7.0",
-      "version": "7.0.5"
+      "releaseDate": "2021-08-11T12:02:43+00:00",
+      "releaseName": "v7.0.6",
+      "releaseSha": "4eec7c5b7cad1558091821228f4ec3e926106650",
+      "releaseTag": "v7.0.6",
+      "releaseTarget": "master",
+      "version": "7.0.6"
     },
     {
       "name": "mod-gobi",
@@ -386,12 +386,12 @@
     {
       "name": "mod-orders",
       "nameRepo": "mod-orders",
-      "releaseDate": "2021-07-14T08:03:20+00:00",
-      "releaseName": "v12.0.4",
-      "releaseSha": "65d27557b0f57e7b1c1b1357695cf5a6664c4f3c",
-      "releaseTag": "v12.0.4",
+      "releaseDate": "2021-08-05T17:02:44+00:00",
+      "releaseName": "v12.0.5",
+      "releaseSha": "5365e7b57b54b215b4a1307b62c657c5d135d2c9",
+      "releaseTag": "v12.0.5",
       "releaseTarget": "master",
-      "version": "12.0.4"
+      "version": "12.0.5"
     },
     {
       "name": "mod-orders-storage",
