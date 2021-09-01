@@ -8,6 +8,7 @@ name: gather-config-apidocs
 on:
   schedule:
     - cron: '05 00 * * *'
+  workflow_dispatch:
 
 jobs:
   job_1:
