@@ -25,3 +25,6 @@ The FOLIO project is grateful for support from **Amazon Web Services** under the
 
 <a href="https://www.docker.com/community/open-source/application"><img src="/images/docker-logo.png" alt="Docker logo" width="250" height="64"></a><br>
 The FOLIO project is grateful for support from **Docker** under the <a href="https://www.docker.com/community/open-source/application">Docker Open Source Community</a> program.  Docker images are the primary distribution model for FOLIO modules. To run the images you will need the Docker Engine or Docker Desktop runtime.
+
+<a href="https://www.algolia.com/for-open-source/"><img src="/images/logo-algolia-nebula-blue-full.png" alt="Algolia logo" width="257" height="64"></a><br>
+The FOLIO project is grateful for the support from **Algolia** under the [Algolia for Open Source](https://www.algolia.com/for-open-source/) program.  Algolia powers the [FOLIO Documentation](https://docs.folio.org/) search feature with a results display that makes use of the documentation structure.
