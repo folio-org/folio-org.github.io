@@ -149,6 +149,15 @@ This list of modules is sorted into functional groups.
   {% endfor %}
 {% endfor %}
 
+## Missing API documentation
+
+The following list of modules are missing the configuration for generating their API documentation.
+
+{% for moduleId in site.data.api-missing %}
+<h3 id="{{ moduleId }}"> {{ moduleId }} </h3>
+<p class="attention note-small-2"> Module should be using "<a href="#explain-api-doc">api-doc</a>" CI facilty. </p>
+{% endfor %}
+
 ## Further information
 
 ### Usage notes
