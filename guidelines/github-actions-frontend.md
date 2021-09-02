@@ -12,7 +12,18 @@ These instructions assist developers with configuring GitHub Actions based CI wo
 
 This document is for existing and new front-end UI and Stripes repositories.
 
+## Disable Jenkins pipeline
+
+The Jenkins pipeline needs to be disabled as a first step, to prevent it running in parallel with GitHub Action workflows and so publishing duplicate artifacts.
+
+Do: `git mv Jenkinsfile Jenkinsfile.deprecated`
+
+
 ## Setting up the workflows
+
+#### Please note that a separate branch and pull request is created for each selected workflow. There are two separate workflows
+- #### One for snapshot artifacts
+- #### One for release atifacts
 
 ### Add FOLIO workflows
 
@@ -30,7 +41,6 @@ Each workflow has four environment variables which need to be configured accordi
 - **`SQ_ROOT_DIR`** -- root SQ directory to scan relative to top-level directory
 - **`PUBLISH_MOD_DESCRIPTOR`** -- boolean 'true' or 'false'
 - **`COMPILE_TRANSLATION_FILES`** -- boolean 'true' or 'false'
-- **`DEFAULT_BRANCH`** -- set the default branch 'master' or 'main'
 
 For the repositories which have `PUBLISH_MOD_DESCRIPTOR` variable set as true, an extra step needs to be performed.
 
@@ -45,23 +55,22 @@ For repositories where `COMPILE_TRANSLATION_FILES` are set to true, the followin
     - Of course, those "translations" need to be for this particular repository.
 - Add `"@formatjs/cli": "^4.2.20",` as a devDependency
 
-## Disable Jenkins pipeline
 
-The Jenkins pipeline needs to be disabled, to prevent it running in parallel with GitHub Action workflows and so publishing duplicate artifacts.
-
-Do: `git mv Jenkinsfile Jenkinsfile.deprecated`
 
 ## Final steps
+
+
+### Required status checks
+
+Most repositories have the Jenkins CI pipeline configured as a "Required status check" (`jenkins/pr_merge`). That needs to be removed  and the new Github CI workflow needs to be added to configure the GitHub Workflow successfully. It can be done in the following way
+
+- At the tab: "Settings > Branches > Branch protection rules" edit the current rule.
+- Remove the jenkins continuous intergrattion rule
+- Add **`github-actions-ci`** as new required status check.
 
 ### Merge to mainline
 
 After the set-up and configuration is done, the workflow can be merged with the default branch and verified.
-
-### Required status checks
-
-Most repositories have the Jenkins CI pipeline configured as a "Required status check" (`jenkins/pr_merge`). That needs to be removed to configure the GitHub Workflow successfully.
-
-At the tab: "Settings > Branches > Branch protection rules" edit the current rule.
 
 <div class="folio-spacer-content"></div>
 
