@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-08-10T21:44:27.930796+00:00"
+    "generatedDateTime": "2021-09-01T23:31:30.775332+00:00"
   },
   "repos": [
     {
@@ -370,6 +370,16 @@
     },
     {
       "defaultBranch": "master",
+      "description": "Library with transport layer's utilities for interaction with Kafka ",
+      "docDirName": null,
+      "name": "folio-kafka-wrapper",
+      "org": "folio-org",
+      "repoLanguageHint": "java",
+      "repoType": "other",
+      "snippetIntro": "<p>Utilities for data import modules interaction with Kafka</p>"
+    },
+    {
+      "defaultBranch": "master",
       "description": "Liquibase utilities",
       "docDirName": null,
       "name": "folio-liquibase-util",
@@ -421,7 +431,7 @@
     {
       "defaultBranch": "master",
       "description": "This is a library (jar) that contains the basic functionality and main dependencies required for development FOLIO modules using Spring framework.",
-      "docDirName": null,
+      "docDirName": "doc",
       "hintOas": true,
       "name": "folio-spring-base",
       "org": "folio-org",
@@ -1426,6 +1436,20 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>This module is responsible for storing templates and generating text, html, xml, doc, docx etc from the template. Generated payload is described by meta information which contains info about format, size and date. Supports localization of templates.</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "FOLIO Translations Management API",
+      "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
+      "name": "mod-translations",
+      "org": "folio-org",
+      "ramlDirName": "ramls",
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Each FOLIO installation has lists of controlled vocabulary terms (for instance, \u201cFormats\u201d and \u201cResource types\u201d in Inventory, \u201cPatron Groups\u201d and \u201cRefund Reasons\u201d in Users \u2014 see <a href='https://issues.folio.org/browse/FOLIO-2802'>FOLIO-2802</a> for a more complete list).  In installations that use more than one language, these terms do not display translated values when the locale of the session is changed.</p>"
     },
     {
       "defaultBranch": "master",
@@ -2484,6 +2508,16 @@
       "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for managing organization settings. This exists only to provide a settings section: there is no app.</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "FOLIO Translations Management App",
+      "docDirName": "docs",
+      "name": "ui-translations",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "<p>Each FOLIO installation has lists of controlled vocabulary terms (for instance, \u201cFormats\u201d and \u201cResource types\u201d in Inventory, \u201cPatron Groups\u201d and \u201cRefund Reasons\u201d in Users \u2014 see <a href='https://issues.folio.org/browse/FOLIO-2802'>FOLIO-2802</a> for a more complete list).  In installations that use more than one language, these terms do not display translated values when the locale of the session is changed.<br /> So we need a mechanism for translating and managing the translations of the controlled vocabulary terms in the Settings app and all stripes apps that contain controlled vocabularies so that translators can perform the translation work of the controlled vocabulary terms.</p>"
     },
     {
       "defaultBranch": "master",

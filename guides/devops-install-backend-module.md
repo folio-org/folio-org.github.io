@@ -24,6 +24,9 @@ This is the [relevant guide](/guides/install-backend-module/) that they would ha
 Still, we need to follow it again.
 There are tips not repeated here, and it defines verification steps that would be wise to re-follow before committing to infrastructure configuration.
 
+If they have not indicated on their Jira ticket that they have verified that the module will install on a local VM, then remind them to follow the [Ensure recent local VM](/guides/install-backend-module/#ensure-recent-local-vm) instructions.
+Otherwise it could be a huge waste of your time.
+
 Investigate the module README and LaunchDescriptor in case there are other special requirements.
 
 ## Overview

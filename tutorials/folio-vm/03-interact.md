@@ -9,6 +9,8 @@ menuTopTitle: Tutorials
 
 This lesson shows some ways to interact with this FOLIO VM.
 
+(**Note**: As explained in [Lesson 1](/tutorials/folio-vm/01-create-workspace/), if the VM is recently launched then wait a few minutes, because Okapi will still be starting modules.)
+
 ## Interact via web browser
 
 Remember that the Stripes service is forwarded through port 3000, so we can interact with it from the host machine using the local web browser.
