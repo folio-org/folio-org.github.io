@@ -114,7 +114,8 @@ curl -w '\n' -HContent-type:application/json -X POST \
   http://localhost:9130/_/proxy/tenants/diku/install?deploy=true
 ```
 
-The Okapi logfile would have said on which port the module was deployed (e.g. 9160).
+The [Okapi logfile](/tutorials/folio-vm/02-system-overview/#okapi-log)
+would have said on which port the module was deployed (e.g. 9160).
 So do a health check.
 Of course this needs to be run from within the VM, as that is not one of the forwarded ports.
 
