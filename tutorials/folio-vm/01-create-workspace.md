@@ -66,11 +66,7 @@ In a terminal window on the host, connect to the VirtualBox guest:
 vagrant ssh
 ```
 
-Briefly inspect the Okapi logfile.
-
-```
-tail /var/log/folio/okapi/okapi.log
-```
+Briefly inspect the [Okapi logfile](/tutorials/folio-vm/02-system-overview/#okapi-log).
 
 Okay, that is enough fun.
 Now we are going to get out, and show how to halt and update the box.
