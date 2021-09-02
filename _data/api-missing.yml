@@ -1,0 +1,13 @@
+# List of repos that have API descriptions, but not yet configured api-doc.
+# FOLIO-3231
+---
+edge-caiasoft:
+edge-dematic:
+edge-inn-reach:
+edge-search-srs:
+folio-spring-base:
+mod-data-export-spring:
+mod-data-export-worker:
+mod-ebsconet:
+mod-remote-storage:
+mod-translations:
