@@ -27,6 +27,8 @@ To determine dependencies of a certain module, following this technique.
 
 Create a new tenant with nothing installed, then simulate installation of the module in question, to show what other modules that it would require to be installed.
 
+(**Note**: As explained in [Lesson 1](/tutorials/folio-vm/01-create-workspace/), if the VM is recently launched then wait a few minutes, because Okapi will still be starting modules.)
+
 ```shell
 #!/usr/bin/env bash
 
@@ -85,6 +87,8 @@ First verify the [Module dependency graph](#module-dependency-graph).
 If that step is not done, then still need to get the updated ModuleDescriptors from the registry.
 These will be the ModuleDescriptors that have been published since this VM was constructed.
 
+(**Note**: As explained in [Lesson 1](/tutorials/folio-vm/01-create-workspace/), if the VM is recently launched then wait a few minutes, because Okapi will still be starting modules.)
+
 ```
 curl -w '\n' -HContent-type:application/json -X POST \
   -d '{ "urls": [ "https://folio-registry.dev.folio.org" ] }' \
@@ -110,7 +114,8 @@ curl -w '\n' -HContent-type:application/json -X POST \
   http://localhost:9130/_/proxy/tenants/diku/install?deploy=true
 ```
 
-The Okapi logfile would have said on which port the module was deployed (e.g. 9160).
+The [Okapi logfile](/tutorials/folio-vm/02-system-overview/#okapi-log)
+would have said on which port the module was deployed (e.g. 9160).
 So do a health check.
 Of course this needs to be run from within the VM, as that is not one of the forwarded ports.
 

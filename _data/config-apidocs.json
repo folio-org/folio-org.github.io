@@ -957,6 +957,7 @@
       "oas": [],
       "raml": [
         "ramls/change-manager.raml",
+        "ramls/mapping-metadata-provider.raml",
         "ramls/mapping-rules-provider.raml",
         "ramls/metadata-provider.raml"
       ],
