@@ -21,9 +21,9 @@ Do: `git mv Jenkinsfile Jenkinsfile.deprecated`
 
 ## Setting up the workflows
 
-#### Please note that a separate branch and pull request is created for each selected workflow. There are two separate workflows
-- #### One for snapshot artifacts
-- #### One for release atifacts
+**Note**: A separate branch and pull request is created for each selected workflow. There are two separate workflows:
+- One for snapshot artifacts
+- One for release atifacts
 
 ### Add FOLIO workflows
 
