@@ -23,7 +23,7 @@ Do: `git mv Jenkinsfile Jenkinsfile.deprecated`
 
 **Note**: A separate branch and pull request is created for each selected workflow. There are two separate workflows:
 - One for snapshot artifacts
-- One for release atifacts
+- One for release artifacts
 
 ### Add FOLIO workflows
 
@@ -65,7 +65,7 @@ For repositories where `COMPILE_TRANSLATION_FILES` are set to true, the followin
 Most repositories have the Jenkins CI pipeline configured as a "Required status check" (`jenkins/pr_merge`). That needs to be removed  and the new Github CI workflow needs to be added to configure the GitHub Workflow successfully. It can be done in the following way
 
 - At the tab: "Settings > Branches > Branch protection rules" edit the current rule.
-- Remove the jenkins continuous intergrattion rule
+- Remove the Jenkins continuous integration rule
 - Add **`github-actions-ci`** as new required status check.
 
 ### Merge to mainline
