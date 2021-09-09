@@ -12,18 +12,18 @@ These instructions assist developers with configuring GitHub Actions based CI wo
 
 This document is for existing and new front-end UI and Stripes repositories.
 
-## Disable Jenkins pipeline
-
-The Jenkins pipeline needs to be disabled as a first step, to prevent it running in parallel with GitHub Action workflows and so publishing duplicate artifacts.
-
-Do: `git mv Jenkinsfile Jenkinsfile.deprecated`
-
 
 ## Setting up the workflows
 
 **Note**: A separate branch and pull request is created for each selected workflow. There are two separate workflows:
 - One for snapshot artifacts
 - One for release artifacts
+
+### Disable Jenkins pipeline
+
+Once the branches are created Jenkins pipeline needs to be disabled as a first step, to prevent it running in parallel with the GitHub Action workflows and so publishing duplicate artifacts.
+
+Do: `git mv Jenkinsfile Jenkinsfile.deprecated`
 
 ### Add FOLIO workflows
 
