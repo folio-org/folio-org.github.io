@@ -21,7 +21,7 @@ This document is for existing and new front-end UI and Stripes repositories.
 
 ### Disable Jenkins pipeline
 
-Once the first pull request is crreated with one of the workflows the Jenkins pipeline needs to be disabled as a first step, to prevent it running in parallel with the GitHub Action workflows and so publishing duplicate artifacts.
+Once the first pull request is created with one of the workflows the Jenkins pipeline needs to be disabled as a first step, to prevent it running in parallel with the GitHub Action workflows and so publishing duplicate artifacts.
 
 Do: `git mv Jenkinsfile Jenkinsfile.deprecated`
 
