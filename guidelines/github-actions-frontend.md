@@ -13,21 +13,13 @@ These instructions assist developers with configuring GitHub Actions based CI wo
 This document is for existing and new front-end UI and Stripes repositories.
 For new modules, get the source code and other files in place before adding these workflows.
 
-## Setting up the workflows
+## Overview
 
-**Note**: A separate branch and pull request is created for each selected workflow. There are two separate workflows:
+A separate branch and pull request is created for each selected workflow. There are two separate workflows:
 1. Snapshot artifacts (FOLIO NPM Workflow)
 2. Release artifacts (FOLIO NPM Release Workflow)
 
-### Disable Jenkins pipeline
-
-When the first pull request is created with the first workflow, then the Jenkins pipeline needs to be disabled as a first step. This prevents it running in parallel with the GitHub Action workflows and so publishing duplicate artifacts.
-
-Do: `git mv Jenkinsfile Jenkinsfile.deprecated`
-
-After these CI workflows are successfully operating, then that file can be removed.
-
-### Add FOLIO workflows
+## Add FOLIO workflows
 
 The workflows are established by following these steps:
 - From the repository GitHub page, navigate to the `Actions` tab.
@@ -36,7 +28,15 @@ The workflows are established by following these steps:
     2. **FOLIO NPM Release Workflow**
 - Once the workflows are added, they need to be configured according to the repository requirements.
 
-### Configuration
+## Disable Jenkins pipeline
+
+When the first pull request is created with the first workflow, then the Jenkins pipeline needs to be disabled as a first step. This prevents it running in parallel with the GitHub Action workflows and so publishing duplicate artifacts.
+
+Do: `git mv Jenkinsfile Jenkinsfile.deprecated`
+
+After these CI workflows are successfully operating, then that file can be removed.
+
+## Configuration
 
 Each workflow has four environment variables which need to be configured according to the requirements of the particular repository. These are:
 - **`YARN_TEST_OPTIONS`** -- options to pass to 'yarn test'
@@ -57,7 +57,7 @@ For repositories where `COMPILE_TRANSLATION_FILES` are set to true, the followin
     - Of course, those "translations" need to be for this particular repository.
 - Add `"@formatjs/cli": "^4.2.20",` as a devDependency
 
-### Required status checks
+## Required status checks
 
 Most repositories have the Jenkins CI pipeline configured as a "Required status check" (`jenkins/pr_merge`). That needs to be removed and the new GitHub CI workflow needs to be added to configure the GitHub Workflow successfully. It can be done in the following way:
 
@@ -65,7 +65,7 @@ Most repositories have the Jenkins CI pipeline configured as a "Required status 
 - Remove the Jenkins continuous integration rule.
 - Add **`github-actions-ci`** as new required status check.
 
-### Merge to mainline
+## Merge to mainline
 
 After the set-up and configuration is done, the workflow can be merged with the default branch and verified.
 
