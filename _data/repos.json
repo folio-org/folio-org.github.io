@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-09-01T23:31:30.775332+00:00"
+    "generatedDateTime": "2021-09-10T06:09:20.698664+00:00"
   },
   "repos": [
     {
@@ -2208,16 +2208,6 @@
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
       "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>create-inventory-records</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='create-inventory-records'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
-    },
-    {
-      "defaultBranch": "master",
-      "description": "Stripes UI plugin: Create item",
-      "docDirName": null,
-      "name": "ui-plugin-create-item",
-      "org": "folio-org",
-      "repoLanguageHint": "node",
-      "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>create-item</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='create-item'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "defaultBranch": "master",
