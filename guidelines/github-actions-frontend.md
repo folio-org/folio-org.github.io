@@ -54,7 +54,7 @@ This triggers the ModuleDescriptor build process.
 For repositories where `COMPILE_TRANSLATION_FILES` are set to true, the following changes need to be made to the `package.json` file:
 - In the `scripts` attribute, the following command needs to be added:
     - `"formatjs-compile": "formatjs compile-folder --ast --format simple ./translations/ui-users ./translations/users/compiled"`
-    - Of course, those "translations" need to be for this particular repository.
+    - Of course, those "translations" need to follow the [name and layout](/guides/commence-a-module/#front-end-translations) for this particular repository.
 - Add `"@formatjs/cli": "^4.2.20",` as a devDependency
 
 ## Required status checks
