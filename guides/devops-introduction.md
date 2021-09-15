@@ -83,6 +83,8 @@ Developers need access to GitHub repositories and Jenkins.
 
 ### GitHub team access
 
+Refer to FAQ [How to request GitHub user or team access](/faqs/how-to-request-github-access/).
+
 Note that we try to steer clear of managing GitHub access for individuals.
 Instead allocate access for a whole [Team](https://github.com/orgs/folio-org/teams) to a repository.
 
@@ -90,9 +92,7 @@ When enabling a team, then also add it to the "Security and analysis" section, s
 
 ### GitHub new developer
 
-For new developers, we ask that a project manager (see [Team vs module responsibility matrix](https://wiki.folio.org/display/REL/Team+vs+module+responsibility+matrix)) or at least a known existing developer, makes this request.
-They need to either request on the #devops channel, or raise a Jira ticket (especially with a group of new people, e.g. [FOLIO-2880](https://issues.folio.org/browse/FOLIO-2880).)
-They need to provide the GitHub username of the new developer, so that we can be absolutely sure that we are inviting the correct person.
+Refer to FAQ [How to request GitHub user or team access](/faqs/how-to-request-github-access/).
 
 ### Jenkins access
 
