@@ -231,6 +231,7 @@ mod-inventory-storage:
       - inventory-view
       - item-damaged-statuses
       - item-storage
+      - item-storage-dereferenced
       - item-sync
       - item-note-type
       - alternative-title-type
