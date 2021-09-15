@@ -17,6 +17,7 @@ Select "Build with Parameters" from its left-hand panel.
 * Declare the list of modules for which to gather their logs.
 * Declare the Slack channel or Slack user to notify about the retrieval URL.
 For example notify yourself, or another person, or notify your team channel.
+* To notify a Slack user, specify the Slack "member ID" which can be found in the Slack user's profile (under "More"). For example `@U999FOOBAR`
 
 **Note**: Please do not use the default `#hosted-reference-envs` which is a channel where lots of people need to pay attention.
 Unless of course you are going to immediately follow with an explanation about a broken automated build.

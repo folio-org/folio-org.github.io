@@ -176,12 +176,12 @@
     {
       "name": "mod-ebsconet",
       "nameRepo": "mod-ebsconet",
-      "releaseDate": "2021-07-20T16:52:35+00:00",
-      "releaseName": "v1.0.1",
-      "releaseSha": "11792bf9067dbe35d772675ba5124f2d3b3a0f49",
-      "releaseTag": "v1.0.1",
+      "releaseDate": "2021-09-10T13:35:28+00:00",
+      "releaseName": "v1.0.2",
+      "releaseSha": "a51e7773cbe4ceea070fb42cb75887953317e02a",
+      "releaseTag": "v1.0.2",
       "releaseTarget": "master",
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     {
       "name": "mod-email",
@@ -276,22 +276,22 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2021-08-04T14:29:49+00:00",
-      "releaseName": "v17.0.4",
-      "releaseSha": "18fd86c1486560c4181a02a043776b1a8ad7efc3",
-      "releaseTag": "v17.0.4",
+      "releaseDate": "2021-09-10T10:39:47+00:00",
+      "releaseName": "v17.0.5",
+      "releaseSha": "f2f66c88a5dbfb671cd8921bbe51af38c037b66b",
+      "releaseTag": "v17.0.5",
       "releaseTarget": "master",
-      "version": "17.0.4"
+      "version": "17.0.5"
     },
     {
       "name": "mod-inventory-storage",
       "nameRepo": "mod-inventory-storage",
-      "releaseDate": "2021-08-16T12:38:58+00:00",
-      "releaseName": "v21.0.3",
-      "releaseSha": "eb561e07647b39243cab7e5d3abdc8eb7b6011ac",
-      "releaseTag": "v21.0.3",
+      "releaseDate": "2021-09-06T21:22:02+00:00",
+      "releaseName": "v21.0.4",
+      "releaseSha": "a7bcf13f872ce660b1b6d01345f10b2ab059c69f",
+      "releaseTag": "v21.0.4",
       "releaseTarget": "master",
-      "version": "21.0.3"
+      "version": "21.0.4"
     },
     {
       "name": "mod-invoice",
@@ -456,12 +456,12 @@
     {
       "name": "mod-patron-blocks",
       "nameRepo": "mod-patron-blocks",
-      "releaseDate": "2021-08-04T10:52:52+00:00",
-      "releaseName": "v1.3.1",
-      "releaseSha": "ff7e6b9d021908b4326952b4e1dd5d99d6fb677c",
-      "releaseTag": "v1.3.1",
+      "releaseDate": "2021-09-03T12:16:05+00:00",
+      "releaseName": "v1.3.2",
+      "releaseSha": "75aa098fd48be7676359f93e01fb168884890c4a",
+      "releaseTag": "v1.3.2",
       "releaseTarget": "master",
-      "version": "1.3.1"
+      "version": "1.3.2"
     },
     {
       "name": "mod-permissions",
@@ -556,12 +556,12 @@
     {
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
-      "releaseDate": "2021-08-04T13:31:56+00:00",
-      "releaseName": "5.1.4",
-      "releaseSha": "7323dd8f9e5f99dd1a34754b98b8ab7c5fa0300e",
-      "releaseTag": "v5.1.4",
+      "releaseDate": "2021-09-09T16:02:19+00:00",
+      "releaseName": "5.1.6",
+      "releaseSha": "841b6210d8e4629887c999c7eedf8f662120161f",
+      "releaseTag": "v5.1.6",
       "releaseTarget": "master",
-      "version": "5.1.4"
+      "version": "5.1.6"
     },
     {
       "name": "mod-tags",
