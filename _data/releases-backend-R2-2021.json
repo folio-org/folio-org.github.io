@@ -166,12 +166,12 @@
     {
       "name": "mod-data-import-converter-storage",
       "nameRepo": "mod-data-import-converter-storage",
-      "releaseDate": "2021-07-30T14:30:24+00:00",
-      "releaseName": "1.11.2",
-      "releaseSha": "bd9f0530018f6995c8b14dbe065870c72765ab5e",
-      "releaseTag": "v1.11.2",
+      "releaseDate": "2021-09-13T16:42:59+00:00",
+      "releaseName": "1.11.3",
+      "releaseSha": "dcab100997f3c0cd1b4f8b7df8486b864d652692",
+      "releaseTag": "v1.11.3",
       "releaseTarget": "master",
-      "version": "1.11.2"
+      "version": "1.11.3"
     },
     {
       "name": "mod-ebsconet",
