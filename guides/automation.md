@@ -110,12 +110,12 @@ This is an environment for the most recent FOLIO Release R1 2021 Iris.
 Each rebuild will pick up any hotfix updates that may have been released.
 The server is built every Sunday, to finish about 01:20 UTC (see Jenkins job: [folio-r1-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r1-2021-release/)).
 
-### folio-honeysuckle
+### folio-juniper
 
-[https://folio-honeysuckle.dev.folio.org/](https://folio-honeysuckle.dev.folio.org/)
+[https://folio-juniper.dev.folio.org/](https://folio-juniper.dev.folio.org/)
 
-This is an environment for the previous FOLIO Release Q3 2020 Honeysuckle.
-The server is built every Sunday, to finish about 04:05 UTC (see Jenkins job: [folio-q3-2020-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-q3-2020-release/)).
+This is an environment for the previous FOLIO Release R2 2021 Honeysuckle.
+The server is built every Sunday, to finish about 04:05 UTC (see Jenkins job: [folio-r2-2020-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r2-2021-release/)).
 
 ### Other notes
 
