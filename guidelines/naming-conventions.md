@@ -28,9 +28,10 @@ The name uses the following scheme with a consistent prefix and hyphen-separated
 
 * `mod-` prefix for [back-end modules](/source-code/map/#backend-mod) (e.g. mod-users, mod-inventory-storage).
 * `edge-` prefix for [back-end modules](/source-code/map/#backend-edge) that connect to systems external to FOLIO (in particular, endpoints for standard protocols like NCIP)
+* `stripes-` prefix for [Stripes modules](/source-code/map/#stripes) (e.g. stripes-core).
 * `ui-` prefix for [front-end UI modules](/source-code/map/#ui) (e.g. ui-users).
 * `ui-plugin-` prefix for [front-end UI plugin modules](/source-code/map/#ui-plugin) (e.g. ui-plugin-find-instance).
-* `stripes-` prefix for [Stripes modules](/source-code/map/#stripes) (e.g. stripes-core).
+* `ui-handler-` prefix for [front-end UI handler modules](/source-code/map/#ui-handler) (e.g. ui-handler-stripes-registry) that consume, i.e. handle, events such as LOGIN and LOGOUT published by stripes-core.
 * `folio-` prefix for [utility library modules](/source-code/map/#other) (e.g. folio-isbn-util).
 
 Most module names will be in the plural sense, e.g. mod-notes, especially when responsible for collections of items.
