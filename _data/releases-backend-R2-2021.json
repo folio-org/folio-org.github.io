@@ -446,12 +446,12 @@
     {
       "name": "mod-patron",
       "nameRepo": "mod-patron",
-      "releaseDate": "2021-07-22T20:52:22+00:00",
-      "releaseName": "",
-      "releaseSha": "7e2dc667ec54e9fd7214322f60939bd1ea6bd801",
-      "releaseTag": "v4.5.1",
+      "releaseDate": "2021-09-15T13:54:35+00:00",
+      "releaseName": "v4.5.2",
+      "releaseSha": "f88f7e1740644ff26a09754a7aaed4f9c8219c2f",
+      "releaseTag": "v4.5.2",
       "releaseTarget": "master",
-      "version": "4.5.1"
+      "version": "4.5.2"
     },
     {
       "name": "mod-patron-blocks",
