@@ -5,16 +5,6 @@
   "repos": [
     {
       "defaultBranch": "master",
-      "description": "A Z39.50 server for FOLIO bibliographic data",
-      "docDirName": "doc",
-      "name": "Net-Z3950-FOLIO",
-      "org": "folio-org",
-      "repoLanguageHint": "other",
-      "repoType": "other",
-      "snippetIntro": "<p><a href='https://github.com/folio-org/Net-Z3950-FOLIO/blob/master/bin/z2folio'><code>z2folio</code></a> is a Z39.50 server for FOLIO bibliographic and holdings data, supporting record retrieval in USMARC, OPAC, XML and JSON formats. The functionality is all provided by <a href='https://github.com/folio-org/Net-Z3950-FOLIO/blob/master/lib/Net/Z3950/FOLIO.pm'>the <code>Net::Z3950::FOLIO</code> library</a>, which is also part of this distribution. It is written in Perl, and follows standard Perl-module conventions.</p>"
-    },
-    {
-      "defaultBranch": "master",
       "description": "Central repository for the acquisition models",
       "docDirName": null,
       "name": "acq-models",
@@ -1503,6 +1493,16 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>Introduction ...  ## Additional information</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "A Z39.50 server for FOLIO bibliographic data",
+      "docDirName": "doc",
+      "name": "Net-Z3950-FOLIO",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": "<p><a href='https://github.com/folio-org/Net-Z3950-FOLIO/blob/master/bin/z2folio'><code>z2folio</code></a> is a Z39.50 server for FOLIO bibliographic and holdings data, supporting record retrieval in USMARC, OPAC, XML and JSON formats. The functionality is all provided by <a href='https://github.com/folio-org/Net-Z3950-FOLIO/blob/master/lib/Net/Z3950/FOLIO.pm'>the <code>Net::Z3950::FOLIO</code> library</a>, which is also part of this distribution. It is written in Perl, and follows standard Perl-module conventions.</p>"
     },
     {
       "defaultBranch": "master",
