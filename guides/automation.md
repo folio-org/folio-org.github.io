@@ -87,15 +87,6 @@ This folio-snapshot build consists of the master branch of each frontend module 
 There may still be errors because of API differences that aren't covered by the dependency requirements.
 The folio-snapshot is an alias for folio-snapshot-latest.
 
-### folio-snapshot-stable
-
-[https://folio-snapshot-stable.dev.folio.org/](https://folio-snapshot-stable.dev.folio.org/)
-
-After `folio-snapshot` is built, the CI system runs a suite of integration and regression tests.
-This phase normally takes about 15 minutes, but sometimes reaches a timeout of about 1 hour.
-If those tests pass, the `folio-snapshot-stable` alias is updated to point to this latest `folio-snapshot` version.
-This is the version that will be used by acceptance testers to verify that users stories are completed.
-
 ### folio-snapshot-load
 
 [https://folio-snapshot-load.dev.folio.org/](https://folio-snapshot-load.dev.folio.org/)
