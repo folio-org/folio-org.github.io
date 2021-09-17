@@ -40,8 +40,10 @@ The edge APIs are deployed such that any API key generated with the tenant diku 
 ## Reference environments
 
 Each environment listed below is based on the [platform-complete](https://github.com/folio-org/platform-complete) Stripes Platform.
+<!-- Awaiting platform-minimal:
 Each also has one based on [platform-core](https://github.com/folio-org/platform-core), so adjust the link to include `-core` (e.g. `folio-snapshot` to `folio-snapshot-core`).
-Similarly okapi can be accessed via `folio-snapshot-okapi` (and see notes in the previous section).
+Similarly okapi can be accessed via `folio-snapshot-core-okapi` (and see notes in the previous section).
+-->
 
 If an error message (in the 5** series) is shown for the entry point of these sites, then that probably means that it is in the process of being rebuilt (see its "Jenkins job" link).
 
