@@ -18,7 +18,7 @@ Also refer to the [Source-code overview](/source-code/).
 {% assign urlApiBaseLocal = "/reference/api" %}
 {% assign countTotal = site.data.repos.repos | size %}
 {% assign alpha = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" | split:"," %}
-{% assign numPerSection = 15 %}
+{% assign numPerSection = 20 %}
 
 Last [gathered](#further-information) date:
 {{ site.data.repos.metadata.generatedDateTime | date_to_long_string }}
@@ -34,6 +34,12 @@ See [usage notes](#usage-notes) below.
   <p> {{ countSection }} repositories. </p>
   {%- assign numSubSections = countSection | divided_by:numPerSection -%}
   {%- assign remainder = countSection | modulo:numPerSection -%}
+<!--
+  <p> Debug ToC:
+   numSubSections:{{ numSubSections }} |
+   remainder:{{ remainder }}
+  </p>
+-->
   {%- if remainder > 0 and countSection > numPerSection -%}
     {%- assign numSubSections = numSubSections | plus:1 -%}
   {%- endif -%}
@@ -65,6 +71,12 @@ See [usage notes](#usage-notes) below.
     {%- assign subSectionNum = 0 -%}
     <h3 id="{{ headingIds[subSectionNum] }}"> {{ headings[subSectionNum] }} </h3>
   {%- endif -%}
+<!--
+  <p> Debug ToC:
+   numSubSections:{{ numSubSections }} |
+   numAlphasPerSubSection:{{ numAlphasPerSubSection }}
+  </p>
+-->
   {%- for repo in repos -%}
     {%- assign repoName = repo.name -%}
     {%- assign metadata = site.data.repos-metadata[repoName] -%}

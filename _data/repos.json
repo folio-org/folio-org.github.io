@@ -1,18 +1,8 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-09-10T06:09:20.698664+00:00"
+    "generatedDateTime": "2021-09-19T14:54:23.258452+00:00"
   },
   "repos": [
-    {
-      "defaultBranch": "master",
-      "description": "A Z39.50 server for FOLIO bibliographic data",
-      "docDirName": "doc",
-      "name": "Net-Z3950-FOLIO",
-      "org": "folio-org",
-      "repoLanguageHint": "other",
-      "repoType": "other",
-      "snippetIntro": "<p><a href='https://github.com/folio-org/Net-Z3950-FOLIO/blob/master/bin/z2folio'><code>z2folio</code></a> is a Z39.50 server for FOLIO bibliographic and holdings data, supporting record retrieval in USMARC, OPAC, XML and JSON formats. The functionality is all provided by <a href='https://github.com/folio-org/Net-Z3950-FOLIO/blob/master/lib/Net/Z3950/FOLIO.pm'>the <code>Net::Z3950::FOLIO</code> library</a>, which is also part of this distribution. It is written in Perl, and follows standard Perl-module conventions.</p>"
-    },
     {
       "defaultBranch": "master",
       "description": "Central repository for the acquisition models",
@@ -266,7 +256,10 @@
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": "<p>This repository contains reports and other analytics developed for FOLIO and designed to run on the <a href='https://github.com/library-data-platform/ldp'>Library Data Platform</a>.  At present most of the content here consists of SQL reports developed by the FOLIO reporting community and based on the requirements of <a href='https://www.folio.org/community/support/'>FOLIO partner libraries</a>.  In addition to report development, FOLIO has a <a href='https://wiki.folio.org/display/RPT/'>Reporting Special Interest Group</a> that discusses reporting requirements and other related topics.</p>"
+      "snippetIntro": "<p>This repository contains reports and other analytics developed for FOLIO and designed to run on the <a href='https://github.com/library-data-platform/ldp'>Library Data Platform</a>.  At present most of the content here consists of SQL reports developed by the FOLIO reporting community and based on the requirements of <a href='https://www.folio.org/community/support/'>FOLIO partner libraries</a>.  In addition to report development, FOLIO has a <a href='https://wiki.folio.org/display/RPT/'>Reporting Special Interest Group</a> that discusses reporting requirements and other related topics.</p>",
+      "workflows": [
+        "ci.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -396,7 +389,15 @@
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "gather-config-apidocs.yml",
+        "gather-schema-changes.yml",
+        "get-release-versions.yml",
+        "list-repos-api.yml",
+        "pr-config-apidocs.yml",
+        "pr-release-versions.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1020,7 +1021,7 @@
       "description": "LDP query builder server-side module for FOLIO/ReShare",
       "docDirName": null,
       "name": "mod-ldp",
-      "org": "library-data-platform",
+      "org": "folio-org",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
@@ -1088,7 +1089,14 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Notes on all types of objects</p>"
+      "snippetIntro": "<p>Notes on all types of objects</p>",
+      "workflows": [
+        "api-lint.yml",
+        "test-depend.yml"
+      ],
+      "workflowsFolio": [
+        "api-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1141,7 +1149,10 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This is the Orders business logic module.</p>"
+      "snippetIntro": "<p>This is the Orders business logic module.</p>",
+      "workflows": [
+        "buildMaven.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1506,6 +1517,16 @@
     },
     {
       "defaultBranch": "master",
+      "description": "A Z39.50 server for FOLIO bibliographic data",
+      "docDirName": "doc",
+      "name": "Net-Z3950-FOLIO",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": "<p><a href='https://github.com/folio-org/Net-Z3950-FOLIO/blob/master/bin/z2folio'><code>z2folio</code></a> is a Z39.50 server for FOLIO bibliographic and holdings data, supporting record retrieval in USMARC, OPAC, XML and JSON formats. The functionality is all provided by <a href='https://github.com/folio-org/Net-Z3950-FOLIO/blob/master/lib/Net/Z3950/FOLIO.pm'>the <code>Net::Z3950::FOLIO</code> library</a>, which is also part of this distribution. It is written in Perl, and follows standard Perl-module conventions.</p>"
+    },
+    {
+      "defaultBranch": "master",
       "description": "Okapi  core and modules",
       "docDirName": "doc",
       "name": "okapi",
@@ -1607,7 +1628,10 @@
       "ramlDirName": "domain-models-api-interfaces/ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-infrastructure",
-      "snippetIntro": "<p>This documentation includes information about the Raml-Module-Builder (RMB) framework and examples of how to use it.</p>"
+      "snippetIntro": "<p>This documentation includes information about the Raml-Module-Builder (RMB) framework and examples of how to use it.</p>",
+      "workflows": [
+        "codeql-analysis.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1647,7 +1671,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": "<p>Stripes is a toolkit for building single-page web applications that FOLIO UI modules can run in.  In addition to being the home of Stripes <a href='https://github.com/folio-org/stripes/blob/master/doc/stripes-framework.md'>framework</a>, this repository serves as a hub for shared Stripes documentation.</p>"
+      "snippetIntro": "<p>Stripes is a toolkit for building single-page web applications that FOLIO UI modules can run in.  In addition to being the home of Stripes <a href='https://github.com/folio-org/stripes/blob/master/doc/stripes-framework.md'>framework</a>, this repository serves as a hub for shared Stripes documentation.</p>",
+      "workflows": [
+        "buildNPM-release.yml",
+        "buildnpm.yml"
+      ],
+      "workflowsFolio": [
+        "buildNPM-release.yml",
+        "buildnpm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1677,7 +1709,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>"
+      "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>",
+      "workflows": [
+        "buildnpm-release.yml",
+        "buildnpm.yml"
+      ],
+      "workflowsFolio": [
+        "buildnpm-release.yml",
+        "buildnpm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1687,7 +1727,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": "<p>Stripes Connect provides essentially one service: the ability to upgrade a regular React component into a Connected Component. This is done by importing the <code>connect()</code> method from <code>stripes-connect</code>, defining a data manifest, and exporting not the React component itself but the result of wrapping it in a call to <code>connect()</code>:</p>"
+      "snippetIntro": "<p>Stripes Connect provides essentially one service: the ability to upgrade a regular React component into a Connected Component. This is done by importing the <code>connect()</code> method from <code>stripes-connect</code>, defining a data manifest, and exporting not the React component itself but the result of wrapping it in a call to <code>connect()</code>:</p>",
+      "workflows": [
+        "buildnpm-release.yml",
+        "buildnpm.yml"
+      ],
+      "workflowsFolio": [
+        "buildnpm-release.yml",
+        "buildnpm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1695,9 +1743,17 @@
       "docDirName": "doc",
       "name": "stripes-core",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": "<p>Stripes is a toolkit for building single-page web applications that FOLIO UI modules can run in. UI modules are made up of <a href='https://facebook.github.io/react/'>React</a> components, some of which will be connected to back-end services provided by <a href='https://github.com/folio-org/okapi'>Okapi</a>. Each module has a 'type' which indicates how it functions within the application. At the moment, the only 'type' is 'app' which provides a top-level component to render into a large content area.</p>"
+      "snippetIntro": "<p>Stripes is a toolkit for building single-page web applications that FOLIO UI modules can run in. UI modules are made up of <a href='https://facebook.github.io/react/'>React</a> components, some of which will be connected to back-end services provided by <a href='https://github.com/folio-org/okapi'>Okapi</a>. Each module has a 'type' which indicates how it functions within the application. At the moment, the only 'type' is 'app' which provides a top-level component to render into a large content area.</p>",
+      "workflows": [
+        "buildNPM-release.yml",
+        "buildNPM.yml"
+      ],
+      "workflowsFolio": [
+        "buildNPM-release.yml",
+        "buildNPM.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1727,7 +1783,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "buildNPM-release.yml",
+        "buildnpm.yml"
+      ],
+      "workflowsFolio": [
+        "buildNPM-release.yml",
+        "buildnpm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1737,7 +1801,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "buildNPM-release.yml",
+        "buildNPM.yml"
+      ],
+      "workflowsFolio": [
+        "buildNPM-release.yml",
+        "buildNPM.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1745,7 +1817,7 @@
       "docDirName": null,
       "name": "stripes-sample-platform",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "node",
       "repoType": "stripes",
       "snippetIntro": ""
     },
@@ -1757,7 +1829,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": "<p>A suite of smart components. Each communicates with an Okapi web-service in order to provide the facilities that it renders.</p>"
+      "snippetIntro": "<p>A suite of smart components. Each communicates with an Okapi web-service in order to provide the facilities that it renders.</p>",
+      "workflows": [
+        "buildNPM-release.yml",
+        "buildnpm.yml"
+      ],
+      "workflowsFolio": [
+        "buildNPM-release.yml",
+        "buildnpm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1787,7 +1867,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": "<p>A library of utility functions to support Stripes modules.</p>"
+      "snippetIntro": "<p>A library of utility functions to support Stripes modules.</p>",
+      "workflows": [
+        "buildNPM-release.yml",
+        "buildnpm.yml"
+      ],
+      "workflowsFolio": [
+        "buildNPM-release.yml",
+        "buildnpm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1945,7 +2033,7 @@
       "docDirName": null,
       "name": "ui-datasets",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": ""
     },
@@ -1965,7 +2053,7 @@
       "docDirName": "doc",
       "name": "ui-directory",
       "org": "openlibraryenvironment",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-directory and start your development.</p>"
     },
@@ -2041,6 +2129,16 @@
     },
     {
       "defaultBranch": "master",
+      "description": "Frontend registry for Stripes",
+      "docDirName": null,
+      "name": "ui-handler-stripes-registry",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui-handler",
+      "snippetIntro": "<p>Frontend registry for Stripes</p>"
+    },
+    {
+      "defaultBranch": "master",
       "description": null,
       "docDirName": null,
       "name": "ui-inn-reach",
@@ -2084,7 +2182,7 @@
       "description": "LDP query builder UI for FOLIO/ReShare",
       "docDirName": null,
       "name": "ui-ldp",
-      "org": "library-data-platform",
+      "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>LDP query builder UI for FOLIO/ReShare.</p>"
@@ -2177,7 +2275,13 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-orders and start your development.</p>"
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-orders and start your development.</p>",
+      "workflows": [
+        "buildNPM.yml"
+      ],
+      "workflowsFolio": [
+        "buildNPM.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2225,7 +2329,7 @@
       "docDirName": null,
       "name": "ui-plugin-example",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "node",
       "repoType": "ui-plugin",
       "snippetIntro": "<p>This source module contains the code for several <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI plugins. They exists only to test the plugin support, and do <em>not</em> provide useful functionality.</p>"
     },
@@ -2405,7 +2509,7 @@
       "docDirName": null,
       "name": "ui-remote-sync",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": ""
     },
@@ -2415,7 +2519,7 @@
       "docDirName": null,
       "name": "ui-request",
       "org": "openlibraryenvironment",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": ""
     },
@@ -2435,7 +2539,7 @@
       "docDirName": null,
       "name": "ui-rs",
       "org": "openlibraryenvironment",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module! Follow the instructions below to run ui-rs and start your development.</p>"
     },
@@ -2461,21 +2565,11 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Frontend registry for Stripes",
-      "docDirName": null,
-      "name": "ui-stripes-registry",
-      "org": "folio-org",
-      "repoLanguageHint": "node",
-      "repoType": "ui",
-      "snippetIntro": "<p>Frontend registry for Stripes</p>"
-    },
-    {
-      "defaultBranch": "master",
       "description": "ReShare app to supply resources for ILL",
       "docDirName": null,
       "name": "ui-supply",
       "org": "openlibraryenvironment",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": ""
     },
@@ -2527,7 +2621,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>The Users UI Module, or <code>ui-users</code>, is a Stripes UI module used for searching, sorting, filtering, viewing, editing and creating users. (A 'Stripes UI module' is an NPM module that adheres to certain conventions that allow it to function within the <a href='https://github.com/folio-org/stripes-core/blob/master/README.md'>Stripes UI framework</a> that is part of FOLIO.)</p>"
+      "snippetIntro": "<p>The Users UI Module, or <code>ui-users</code>, is a Stripes UI module used for searching, sorting, filtering, viewing, editing and creating users. (A 'Stripes UI module' is an NPM module that adheres to certain conventions that allow it to function within the <a href='https://github.com/folio-org/stripes-core/blob/master/README.md'>Stripes UI framework</a> that is part of FOLIO.)</p>",
+      "workflows": [
+        "buildnpm.yml",
+        "buildnpmrelease.yml"
+      ],
+      "workflowsFolio": [
+        "buildnpm.yml",
+        "buildnpmrelease.yml"
+      ]
     },
     {
       "defaultBranch": "master",

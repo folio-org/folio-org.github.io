@@ -40,8 +40,10 @@ The edge APIs are deployed such that any API key generated with the tenant diku 
 ## Reference environments
 
 Each environment listed below is based on the [platform-complete](https://github.com/folio-org/platform-complete) Stripes Platform.
+<!-- Awaiting platform-minimal:
 Each also has one based on [platform-core](https://github.com/folio-org/platform-core), so adjust the link to include `-core` (e.g. `folio-snapshot` to `folio-snapshot-core`).
-Similarly okapi can be accessed via `folio-snapshot-okapi` (and see notes in the previous section).
+Similarly okapi can be accessed via `folio-snapshot-core-okapi` (and see notes in the previous section).
+-->
 
 If an error message (in the 5** series) is shown for the entry point of these sites, then that probably means that it is in the process of being rebuilt (see its "Jenkins job" link).
 
@@ -85,15 +87,6 @@ This folio-snapshot build consists of the master branch of each frontend module 
 There may still be errors because of API differences that aren't covered by the dependency requirements.
 The folio-snapshot is an alias for folio-snapshot-latest.
 
-### folio-snapshot-stable
-
-[https://folio-snapshot-stable.dev.folio.org/](https://folio-snapshot-stable.dev.folio.org/)
-
-After `folio-snapshot` is built, the CI system runs a suite of integration and regression tests.
-This phase normally takes about 15 minutes, but sometimes reaches a timeout of about 1 hour.
-If those tests pass, the `folio-snapshot-stable` alias is updated to point to this latest `folio-snapshot` version.
-This is the version that will be used by acceptance testers to verify that users stories are completed.
-
 ### folio-snapshot-load
 
 [https://folio-snapshot-load.dev.folio.org/](https://folio-snapshot-load.dev.folio.org/)
@@ -102,20 +95,20 @@ When doing any substantial test data loading, then use this rather than the othe
 This the same as "folio-snapshot".
 The server is built every day, to finish about 02:39 UTC (see Jenkins job: [folio-snapshot-load](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-load/)).
 
+### folio-juniper
+
+[https://folio-juniper.dev.folio.org/](https://folio-juniper.dev.folio.org/)
+
+This is an environment for the latest FOLIO Release R2 2021 Juniper.
+The server is built every Sunday, to finish about 04:05 UTC (see Jenkins job: [folio-r2-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r2-2021-release/)).
+
 ### folio-iris
 
 [https://folio-iris.dev.folio.org/](https://folio-iris.dev.folio.org/)
 
-This is an environment for the most recent FOLIO Release R1 2021 Iris.
+This is an environment for the previous FOLIO Release R1 2021 Iris.
 Each rebuild will pick up any hotfix updates that may have been released.
 The server is built every Sunday, to finish about 01:20 UTC (see Jenkins job: [folio-r1-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r1-2021-release/)).
-
-### folio-honeysuckle
-
-[https://folio-honeysuckle.dev.folio.org/](https://folio-honeysuckle.dev.folio.org/)
-
-This is an environment for the previous FOLIO Release Q3 2020 Honeysuckle.
-The server is built every Sunday, to finish about 04:05 UTC (see Jenkins job: [folio-q3-2020-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-q3-2020-release/)).
 
 ### Other notes
 
