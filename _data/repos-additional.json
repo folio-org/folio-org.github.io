@@ -15,8 +15,6 @@
   {
     "org": "library-data-platform",
     "repos": [
-      "mod-ldp",
-      "ui-ldp"
     ]
   }
 ]
