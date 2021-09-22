@@ -206,12 +206,12 @@
     {
       "name": "mod-erm-usage-harvester",
       "nameRepo": "mod-erm-usage-harvester",
-      "releaseDate": "2021-07-12T18:23:49+00:00",
+      "releaseDate": "2021-09-21T10:32:54+00:00",
       "releaseName": "",
-      "releaseSha": "23f651572e57074ac220c50295c849601318d53c",
-      "releaseTag": "v3.1.1",
+      "releaseSha": "cac4f1267cb435fed0e4b27fc8f43614b70b9128",
+      "releaseTag": "v3.1.2",
       "releaseTarget": "master",
-      "version": "3.1.1"
+      "version": "3.1.2"
     },
     {
       "name": "mod-event-config",
