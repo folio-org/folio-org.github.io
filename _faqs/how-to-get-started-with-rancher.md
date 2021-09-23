@@ -109,6 +109,7 @@ Add 'answers' to module deployment:
   resources.limits.cpu = 500m
   resources.limits.memory = 600Mi
   ```
+If you notice that pods restarting a lot, it may be that they are running out of memory. Usually increasing the `resources.limits.memory` will fix this.
 
 ## S3 Storage
 Each development team has been provided with a dedicated S3 bucket that can be used for additional storage.   The name of
@@ -218,6 +219,42 @@ To create Elasticsearch index snapshot for Rancher performance testing cluster, 
  `curl -XPOST 'ELASTICSEARCH_HOST/_snapshot/repository-name/snapshot-name/_restore' -u ELASTICSEARCH_USERNAME:ELASTICSEARCH_PASSWORD`
 ### Restore a specific index
  `curl -XPOST 'ELASTICSEARCH_HOST/_snapshot/repository-name/snapshot-name/_restore' -d '{"indices": "my-index"}' -H 'Content-Type: application/json' -u ELASTICSEARCH_USERNAME:ELASTICSEARCH_PASSWORD`
+
+## Running FAT karate tests
+
+To be able to run karate tests as they are currently defined in the [FOLIO integration tests repo](https://github.com/folio-org/folio-integration-tests) complete the following two steps:
+1. Add a user with the username of `testing_admin` and the password of `admin` to the supertenant. Ask for help on the Slack #devops channel if you need help with this.
+2. Secure the supertenant.
+
+Securing the supertenant happens when you enable mod-authtoken on the supertenant. The operation can also be reversed so that you can unsecure the supertenant, which may be neccessary to install addtional modules, for example. To unsecure the supertenant, disable mod-authtoken for the supertenant.
+
+To secure the supertenant, create a file called enable.json with the following contents:
+
+```
+[
+  {
+    "id": "mod-authtoken",
+    "action": "enable"
+  }
+]
+```
+
+Then use this file in the body of your POST request in a curl command like the following:
+
+```
+curl -X POST -H "X-Okapi-Token: $token" -H "Content-Type: application/json" -d @enable.json $okapi/_/proxy/tenants/supertenant/install
+```
+Note that the above command assumes that `$token` and `$okapi` have been exported to your environment.
+
+To unsecure the supertenant repeat the process, perhaps creating another file, but this time have the `action` in your file be `disable`.
+
+Once you have created the special user and secured the supertenant, modify your karate tests to point to the okapi endpoint in your rancher project. Currently this can be done by editing the karate-config.js file.
+
+### When things go wrong
+If your tests exhibit unpredictable behavior (tests fail in seemingly random ways), your pods may be CPU starved due to the defaults being too low from [folio-helm](https://github.com/folio-org/folio-helm). One way to fix this is to remove `resources.limits.cpu` and `resources.requests.cpu` by editing a pod's yaml file in rancher. Be sure to set namespace-wide CPU limit so as to not abuse other team's CPU allocation since the cluster is shared.
+
+You can set a namespace-wide CPU by clicking on the option to edit namespace above your workloads:
+![](/images/edit-namespace-cpu-limits.png)
 
 ## Questions and answers
 
