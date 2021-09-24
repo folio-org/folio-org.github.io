@@ -286,12 +286,12 @@
     {
       "name": "mod-inventory-storage",
       "nameRepo": "mod-inventory-storage",
-      "releaseDate": "2021-09-06T21:22:02+00:00",
-      "releaseName": "v21.0.4",
-      "releaseSha": "a7bcf13f872ce660b1b6d01345f10b2ab059c69f",
-      "releaseTag": "v21.0.4",
+      "releaseDate": "2021-08-16T12:38:58+00:00",
+      "releaseName": "v21.0.3",
+      "releaseSha": "eb561e07647b39243cab7e5d3abdc8eb7b6011ac",
+      "releaseTag": "v21.0.3",
       "releaseTarget": "master",
-      "version": "21.0.4"
+      "version": "21.0.3"
     },
     {
       "name": "mod-invoice",
@@ -406,12 +406,12 @@
     {
       "name": "mod-orders-storage",
       "nameRepo": "mod-orders-storage",
-      "releaseDate": "2021-07-20T13:34:40+00:00",
-      "releaseName": "v13.0.2",
-      "releaseSha": "19d67d7f148bd347ca2c87dcd203c258238c62c6",
-      "releaseTag": "v13.0.2",
+      "releaseDate": "2021-09-23T07:57:16+00:00",
+      "releaseName": "v13.0.3",
+      "releaseSha": "bd90bbc854a03f82a5c486570be9a9ae8395f559",
+      "releaseTag": "v13.0.3",
       "releaseTarget": "master",
-      "version": "13.0.2"
+      "version": "13.0.3"
     },
     {
       "name": "mod-organizations",
