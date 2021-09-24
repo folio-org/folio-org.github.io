@@ -220,15 +220,13 @@ To create Elasticsearch index snapshot for Rancher performance testing cluster, 
 ### Restore a specific index
  `curl -XPOST 'ELASTICSEARCH_HOST/_snapshot/repository-name/snapshot-name/_restore' -d '{"indices": "my-index"}' -H 'Content-Type: application/json' -u ELASTICSEARCH_USERNAME:ELASTICSEARCH_PASSWORD`
 
-## Running karate integration tests
+## Running Karate integration tests
 
-To be able to run the karate tests as they are currently defined in the [FOLIO integration tests repo](https://github.com/folio-org/folio-integration-tests) complete the following two steps:
+You can run Karate integration tests against your Rancher environment. Examples of Karate tests you can run are the [FOLIO integration tests](https://github.com/folio-org/folio-integration-tests). To run the folio integration tests complete the following two steps:
 1. Add a user with the username of `testing_admin` and the password of `admin` to the supertenant. Ask for help on the Slack #devops channel if you need it.
 2. Secure the supertenant.
 
-Securing the supertenant happens when you enable mod-authtoken on the supertenant. You can reverse the operation unsecure the supertenant, which may make it easier to install addtional modules, for example. To unsecure the supertenant, disable mod-authtoken for the supertenant.
-
-To secure the supertenant, create a file called enable.json with the following contents:
+Securing the supertenant happens when you enable mod-authtoken on the supertenant. To secure the supertenant, create a file called enable.json with the following contents:
 
 ```
 [
@@ -246,9 +244,9 @@ curl -X POST -H "X-Okapi-Token: $token" -H "Content-Type: application/json" -d @
 ```
 Note that the above command assumes that `$token` and `$okapi` have been exported to your environment.
 
-To unsecure the supertenant repeat the process, perhaps creating another file, but this time have the `action` in your file be `disable`.
+To unsecure the supertenant repeat the process, perhaps creating another file, but this time have the `action` in your file be `disable`. Unsecuring the supertenant makes it easier to install additional modules.
 
-Once you have created the special admin user and secured the supertenant, modify your karate tests to point to the okapi endpoint in your rancher project. Currently this can be done by editing the karate-config.js file in your project.
+Once you have created the special admin user and secured the supertenant, modify your Karate tests to point to the okapi endpoint in your Rancher project. Currently this can be done by editing the karate-config.js file in your project.
 
 ## Questions and answers
 
