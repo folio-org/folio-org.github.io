@@ -222,7 +222,7 @@ To create Elasticsearch index snapshot for Rancher performance testing cluster, 
 
 ## Running Karate integration tests
 
-You can run Karate integration tests against your Rancher environment. Examples of Karate tests you can run are the [FOLIO integration tests](https://github.com/folio-org/folio-integration-tests). To run the folio integration tests complete the following two steps:
+You can run Karate integration tests against your Rancher environment. Examples of Karate tests you can run are the [FOLIO integration tests](https://github.com/folio-org/folio-integration-tests). To run the FOLIO integration tests complete the following two steps:
 1. Add a user with the username of `testing_admin` and the password of `admin` to the supertenant. Ask for help on the Slack #devops channel if you need it.
 2. Secure the supertenant.
 
