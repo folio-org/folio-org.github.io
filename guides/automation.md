@@ -100,7 +100,7 @@ The server is built every day, to finish about 02:45 UTC (see Jenkins job: [foli
 [https://folio-juniper.dev.folio.org/](https://folio-juniper.dev.folio.org/)
 
 This is an environment for the latest FOLIO Release R2 2021 Juniper.
-The server is built every Sunday, to finish about 12:55 UTC (see Jenkins job: [folio-r2-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r2-2021-release/)).
+The server is built every Sunday, to finish about 02:55 UTC (see Jenkins job: [folio-r2-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r2-2021-release/)).
 
 ### folio-iris
 
