@@ -26,5 +26,5 @@ The repository probably has [coding style](/guidelines/contributing/#coding-styl
 
 At GitHub keep the "branches" area tidy. Of course some may need to remain, but many branches can be deleted after their pull requests have been merged.
 
-Follow-up with outstanding pull requests.
+Follow-up with [outstanding pull requests](/search-other/#github).
 

@@ -8,7 +8,7 @@ menuTopTitle: Guidelines
 
 ## Introduction
 
-This document defines the checklists for creating and reviewing various types of pull-request (PR).
+This document defines the checklists for creating and reviewing various types of [pull-request](/search-other/#github) (PR).
 
 Also refer to [Development, design, and review processes](/guidelines/development-design-review/)
 and to the additional Wiki [Pull Request Guidelines](https://wiki.folio.org/display/DD/Pull+Request+Guidelines).
