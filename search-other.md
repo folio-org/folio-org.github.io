@@ -24,6 +24,8 @@ Some example searches at GitHub:
 
 * [Open pull requests for all repositories](https://github.com/search?q=org%3Afolio-org+is%3Apr+is%3Aopen)
 * [Pull requests not yet reviewed for all repositories](https://github.com/search?q=org%3Afolio-org+is%3Apr+is%3Aopen+review%3Anone)
+* Each developer also has their own area at GitHub for "[Review requests](https://github.com/pulls/review-requested)" that they have been asked to do.
+Please ensure that yours is clean.
 * [Search Markdown documents in all repositories](https://github.com/search?type=code&amp;q=RMB+org%3Afolio-org+language%3Amarkdown) for term: RMB
 * [Search Markdown documents in stripes](https://github.com/search?type=code&amp;q=smart+component+repo%3Afolio-org/stripes+language%3Amarkdown) for term: smart component
 
