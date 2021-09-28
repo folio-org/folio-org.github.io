@@ -32,7 +32,7 @@ Creating documentation can be fiddly.
 Develop your branch locally.
 View via the local Jekyll server.
 When ready then push the branch.
-As noted in the README, every push to the repository will cause AWS to rebuild your branch.
+As noted in the README, every push to the repository will cause AWS to rebuild your branch, so best to accumulate commits and push a batch.
 
 (It might be possible to make edits via GitHub, but as noted above, any substantial documentation work is best done locally.)
 

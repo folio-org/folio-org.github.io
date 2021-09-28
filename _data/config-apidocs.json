@@ -544,6 +544,7 @@
         "ramls/item-damaged-statuses.raml",
         "ramls/item-note-type.raml",
         "ramls/item-storage.raml",
+        "ramls/item-storage-dereferenced.raml",
         "ramls/item-sync.raml",
         "ramls/loan-type.raml",
         "ramls/location.raml",
@@ -658,7 +659,7 @@
       ]
     },
     "name": "mod-ldp",
-    "org": "library-data-platform"
+    "org": "folio-org"
   },
   {
     "config": {

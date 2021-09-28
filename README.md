@@ -6,7 +6,7 @@ pull request.
 
 ## Software requirements
 
-Local development requires [curl](https://curl.haxx.se/) and
+Local development requires
 [Ruby](https://www.ruby-lang.org/) and [Bundler](https://bundler.io/).
 The 'bundle install' step will install the relevant local
 [Jekyll](https://jekyllrb.com/).
@@ -54,12 +54,6 @@ See [deployment](#deployment) notes below.
 ## Link checker
 
 To verify internal and external links, do:
-
-```
-./bin/htmlproofer.sh
-```
-
-or
 
 ```
 rake proof

@@ -67,6 +67,8 @@ Ensure that any package.json and pom.xml etc. type of configuration file has the
 
 In the bottom "Further information" section of the README, add a link to your project issue tracker.
 
+Refer to the Wiki [FOLIO Code of Conduct](https://wiki.folio.org/display/COMMUNITY/FOLIO+Code+of+Conduct).
+
 Add [.editorconfig](/guides/developer-setup#use-editorconfig-for-consistent-whitespace) file.
 
 Add initial NEWS.md or CHANGELOG.md file.

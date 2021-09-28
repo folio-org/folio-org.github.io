@@ -29,7 +29,7 @@ Do not remove or rename the old git repository, nor remove its release branches.
 
 Its artifacts are still required for past releases, and there may be a need to do bugfix releases.
 
-Also it will still be configured, using the old module name, in [folio-ansible](https://github.com/folio-org/folio-ansible) roles for creating various reference environments.
+Also it will still be configured, using the old module name, in [folio-ansible](https://github.com/folio-org/folio-ansible) roles for creating various reference environments, and in platform-complete.
 
 ## Archive old repository
 
@@ -41,6 +41,8 @@ Deal with any outstanding pull requests.
 
 For front-end modules, ideally perform one more `lokalisepush.py` run to capture any remaining translations under this old repository name.
 Otherwise follow-up when [configuring Lokalise](#adjust-lokalise-configuration) for the new repository.
+
+Take note of the Settings for branch protection and teams.
 
 At GitHub use the "[archive and read-only](https://help.github.com/en/articles/about-archiving-repositories)" Setting.
 
@@ -91,9 +93,9 @@ For guidance, follow the settings of the old one.
 
 Replace all mention of the old project name.
 
-Update git project configuration (pom.xml or package.json), descriptors, permissions in ModuleDescriptor, source code, project name in RAML files and JSON schemas, readme, other project description, etc.
+Update git project configuration (pom.xml or package.json), descriptors, permissions in ModuleDescriptor, translations, source code, project name in RAML files and JSON schemas, readme, other project description, etc.
 
-In the ModuleDescriptor, utilise the "[replaces](https://github.com/folio-org/okapi/blob/master/okapi-core/src/main/raml/ModuleDescriptor.json)" feature, e.g.
+For back-end modules: In the ModuleDescriptor, utilise the "[replaces](https://github.com/folio-org/okapi/blob/master/okapi-core/src/main/raml/ModuleDescriptor.json#L17)" feature, e.g.
 
 ```
 {
@@ -107,9 +109,14 @@ In the ModuleDescriptor, utilise the "[replaces](https://github.com/folio-org/ok
 
 When all old project name strings have been rectified, then restore Jenkinsfile, perhaps still disabling some stages.
 
+```
+git mv Jenkinsfile-disabled Jenkinsfile
+... and commit
+```
+
 Among other things, this gets the initial base Sonar coverage scan.
 
-This will need temporary loosening of the GitHub Settings, to push directly to master branch.
+This will need temporary loosening of the GitHub Settings for branch protection, to push directly to master branch.
 Otherwise doing it in a pull request will report failure messages in the Sonar stage, because there is no base scan (subsequent PRs would be okay).
 
 ## Adjust Lokalise configuration
@@ -144,11 +151,13 @@ Prepare Jira "project". Sometimes best to create new one, and re-key relevant is
 
 ## Adjust website API docs configuration
 
-Configure apidocs if this is a RAML-related back-end module.
+Configure apidocs if this is an old-configured RAML-related back-end module.
+
+(**Note**: Please migrate to the new CI [configuration](/reference/api/#explain-api-doc). Then we do not need this extra stuff.)
 
 The "lint-raml" and "generate-api-docs" CI jobs will operate properly without configuration, but the web site relies on it.
 
-Follow the apidocs [configuration](https://dev.folio.org/reference/api/#configure-api-docs) documentation.
+Follow the apidocs [configuration](/faqs/how-to-configure-api-doc-generation/) documentation.
 
 Add a new entry for the new module to the `_data/api.yml` file. Leave the old one as-is.
 
