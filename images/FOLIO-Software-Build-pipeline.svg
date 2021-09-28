@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="340 219 668 206" width="668" height="206">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="340 219 508 176" width="508" height="176">
   <defs>
     <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
       <font-face-src>
@@ -63,22 +63,6 @@
           <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="32.1" y="25">.dev.folio.org</tspan>
         </text>
       </g>
-      <g id="Graphic_20">
-        <path d="M 879 277 L 989 277 C 998.9411 277 1007 285.05887 1007 295 L 1007 295 C 1007 304.94113 998.9411 313 989 313 L 879 313 C 869.0589 313 861 304.94113 861 295 L 861 295 C 861 285.05887 869.0589 277 879 277 Z" fill="white"/>
-        <path d="M 879 277 L 989 277 C 998.9411 277 1007 285.05887 1007 295 L 1007 295 C 1007 304.94113 998.9411 313 989 313 L 879 313 C 869.0589 313 861 304.94113 861 295 L 861 295 C 861 285.05887 869.0589 277 879 277 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(866 281)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="7.332031" y="11">folio-snapshot-stable</tspan>
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="32.1" y="25">.dev.folio.org</tspan>
-        </text>
-      </g>
-      <g id="Graphic_16">
-        <path d="M 524 307 L 524 287 L 544 287 L 544 277 L 564 297 L 544 317 L 544 307 Z" fill="url(#Obj_Gradient)"/>
-        <path d="M 524 307 L 524 287 L 544 287 L 544 277 L 564 297 L 544 317 L 544 307 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-      </g>
-      <g id="Graphic_15">
-        <path d="M 784 307 L 784 287 L 804 287 L 804 277 L 824 297 L 804 317 L 804 307 Z" fill="url(#Obj_Gradient_2)"/>
-        <path d="M 784 307 L 784 287 L 804 287 L 804 277 L 824 297 L 804 317 L 804 307 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-      </g>
       <g id="Graphic_14">
         <path d="M 394.7999 237.99993 C 394.7999 238 413 220 413 220 L 341 220 L 341 255.99993 C 341 255.99993 413 256 412.99986 256 Z" fill="#ffc0c0"/>
         <path d="M 394.7999 237.99993 C 394.7999 238 413 220 413 220 L 341 220 L 341 255.99993 C 341 255.99993 413 256 412.99986 256 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
@@ -111,27 +95,11 @@
           <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="17.190918" y="29">(Okapi)</tspan>
         </text>
       </g>
-      <g id="Graphic_10">
-        <path d="M 914.7999 237.99993 C 914.7999 238 933 220 933 220 L 861 220 L 861 255.99993 C 861 255.99993 933 256 932.9999 256 Z" fill="#ffffc0"/>
-        <path d="M 914.7999 237.99993 C 914.7999 238 933 220 933 220 L 861 220 L 861 255.99993 C 861 255.99993 933 256 932.9999 256 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(863 222)" fill="black">
-          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="0" y="13">Frontend </tspan>
-          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="0" y="29">(Stripes)</tspan>
-        </text>
-      </g>
-      <g id="Graphic_9">
-        <path d="M 926 238 L 946.25 256 L 1007 256 L 1007 220 L 946.25 220 Z" fill="#ffffc0"/>
-        <path d="M 926 238 L 946.25 256 L 1007 256 L 1007 220 L 946.25 220 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(928 222)" fill="black">
-          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="13.20459" y="13">Backend </tspan>
-          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="17.190918" y="29">(Okapi)</tspan>
-        </text>
-      </g>
       <g id="Graphic_8">
         <path d="M 346 334.8913 L 435 334.8913 C 437.7614 334.8913 440 337.1299 440 339.8913 L 440 353.1087 C 440 355.8701 437.7614 358.1087 435 358.1087 L 346 358.1087 C 343.23858 358.1087 341 355.8701 341 353.1087 L 341 339.8913 C 341 337.1299 343.23858 334.8913 346 334.8913 Z" fill="#ffc0c0"/>
         <path d="M 346 334.8913 L 435 334.8913 C 437.7614 334.8913 440 337.1299 440 339.8913 L 440 353.1087 C 440 355.8701 437.7614 358.1087 435 358.1087 L 346 358.1087 C 343.23858 358.1087 341 355.8701 341 353.1087 L 341 339.8913 C 341 337.1299 343.23858 334.8913 346 334.8913 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(346 339.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="26.163086" y="11">Master</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="22.163086" y="11">Mainline</tspan>
         </text>
       </g>
       <g id="Graphic_7">
@@ -141,28 +109,15 @@
           <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="19.146484" y="11">Snapshot</tspan>
         </text>
       </g>
-      <g id="Graphic_6">
-        <path d="M 346 400.6739 L 435 400.6739 C 437.7614 400.6739 440 402.9125 440 405.6739 L 440 418.8913 C 440 421.65273 437.7614 423.8913 435 423.8913 L 346 423.8913 C 343.23858 423.8913 341 421.65273 341 418.8913 L 341 405.6739 C 341 402.9125 343.23858 400.6739 346 400.6739 Z" fill="#ffffc0"/>
-        <path d="M 346 400.6739 L 435 400.6739 C 437.7614 400.6739 440 402.9125 440 405.6739 L 440 418.8913 C 440 421.65273 437.7614 423.8913 435 423.8913 L 346 423.8913 C 343.23858 423.8913 341 421.65273 341 418.8913 L 341 405.6739 C 341 402.9125 343.23858 400.6739 346 400.6739 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(346 405.2826)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="27.487305" y="11">Stable</tspan>
-        </text>
-      </g>
       <g id="Graphic_5">
         <text transform="translate(452 339.332)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="11">Tip of development (also known as </tspan>
-          <tspan font-family="Helvetica Neue" font-size="12" font-style="italic" font-weight="400" fill="black" y="11">‘master’</tspan>
-          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" y="11">)</tspan>
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="11">Tip of development -- also known as </tspan>
+          <tspan font-family="Helvetica Neue" font-size="12" font-style="italic" font-weight="400" fill="black" y="11">'mainline'</tspan>
         </text>
       </g>
       <g id="Graphic_4">
         <text transform="translate(452 372.2233)" fill="black">
           <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="11">Latest backend modules that meet the API requirements of the frontend</tspan>
-        </text>
-      </g>
-      <g id="Graphic_3">
-        <text transform="translate(452 405.1146)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="0" y="11">Full integration and regression test suite passed</tspan>
         </text>
       </g>
     </g>
