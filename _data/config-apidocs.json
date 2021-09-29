@@ -530,6 +530,7 @@
         "ramls/identifier-type.raml",
         "ramls/ill-policy.raml",
         "ramls/instance-format.raml",
+        "ramls/instance-iteration.raml",
         "ramls/instance-note-type.raml",
         "ramls/instance-preceding-succeeding-titles.raml",
         "ramls/instance-reindex.raml",
