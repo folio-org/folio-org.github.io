@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-09-19T14:54:23.258452+00:00"
+    "generatedDateTime": "2021-09-28T12:38:03.020354+00:00"
   },
   "repos": [
     {
@@ -817,7 +817,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": null,
+      "description": "Parsing and storing relationships between COUNTER report lines and KB items, and for storing access statistics (access numbers and cost) for specific periods",
       "docDirName": "doc",
       "hintOas": true,
       "name": "mod-eusage-reports",
@@ -825,7 +825,7 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p><a href='https://github.com/folio-org/mod-eusage-reports'>mod-eusage-reports</a> is a backend module for parsing and storing relationships between COUNTER report lines and KB items and for storing access statistics (access numbers and cost) for specific periods.</p>"
+      "snippetIntro": "<p><a href='https://github.com/folio-org/mod-eusage-reports'>mod-eusage-reports</a> is a backend module for parsing and storing relationships between COUNTER report lines and KB items, and for storing access statistics (access numbers and cost) for specific periods.</p>"
     },
     {
       "defaultBranch": "master",
@@ -1628,10 +1628,7 @@
       "ramlDirName": "domain-models-api-interfaces/ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-infrastructure",
-      "snippetIntro": "<p>This documentation includes information about the Raml-Module-Builder (RMB) framework and examples of how to use it.</p>",
-      "workflows": [
-        "codeql-analysis.yml"
-      ]
+      "snippetIntro": "<p>This documentation includes information about the Raml-Module-Builder (RMB) framework and examples of how to use it.</p>"
     },
     {
       "defaultBranch": "master",
