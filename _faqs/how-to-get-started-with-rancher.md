@@ -109,7 +109,11 @@ Add 'answers' to module deployment:
   resources.limits.cpu = 500m
   resources.limits.memory = 600Mi
   ```
-If you notice a pod restarting a lot, it may be that it is running out of memory. Usually increasing the `resources.limits.memory` in its yaml via rancher will fix this.
+If you notice a pod restarting a lot, it may be that it is running out of memory. Usually increasing the `resources.limits.memory` in its yaml via Rancher will fix this. The pod limits on CPU may also be too low to allow your cluster to run reliably. If things go wrong, consider increasing `resources.limits.cpu` for a given pod. You may also consider removing the pod-level `resources.limits.cpu` limit and set a limit for your namespace instead, so as to not deplete other teams' resources on the cluster.
+
+You can set a namespace limit in the Edit menu item in the Rancher UI:
+
+![](/images/edit-namespace-cpu-limits.png)
 
 ## S3 Storage
 Each development team has been provided with a dedicated S3 bucket that can be used for additional storage.   The name of
