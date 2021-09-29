@@ -96,12 +96,12 @@
     {
       "name": "mod-configuration",
       "nameRepo": "mod-configuration",
-      "releaseDate": "2021-05-27T14:06:34+00:00",
-      "releaseName": "",
-      "releaseSha": "111ea245050a07d04aeff5426ca916ab0e122968",
-      "releaseTag": "v5.7.0",
+      "releaseDate": "2021-09-28T17:27:42+00:00",
+      "releaseName": "v5.7.1",
+      "releaseSha": "c1d592bfa915b0d278d2aa5751aee66c071bb73d",
+      "releaseTag": "v5.7.1",
       "releaseTarget": "master",
-      "version": "5.7.0"
+      "version": "5.7.1"
     },
     {
       "name": "mod-copycat",
@@ -126,12 +126,12 @@
     {
       "name": "mod-data-export",
       "nameRepo": "mod-data-export",
-      "releaseDate": null,
-      "releaseName": null,
-      "releaseSha": null,
-      "releaseTag": null,
-      "releaseTarget": null,
-      "version": "4.1.0"
+      "releaseDate": "2021-09-28T14:11:51+00:00",
+      "releaseName": "v4.1.1",
+      "releaseSha": "d5fa0ab71d0c9f39fb704e630d069c92a00c5ff0",
+      "releaseTag": "v4.1.1",
+      "releaseTarget": "master",
+      "version": "4.1.1"
     },
     {
       "name": "mod-data-export-spring",
@@ -276,22 +276,22 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2021-09-10T10:39:47+00:00",
-      "releaseName": "v17.0.5",
-      "releaseSha": "f2f66c88a5dbfb671cd8921bbe51af38c037b66b",
-      "releaseTag": "v17.0.5",
+      "releaseDate": "2021-09-28T09:55:38+00:00",
+      "releaseName": "v17.0.6",
+      "releaseSha": "b061eeb5bf8ae75c41d576a4119eff67569e2b14",
+      "releaseTag": "v17.0.6",
       "releaseTarget": "master",
-      "version": "17.0.5"
+      "version": "17.0.6"
     },
     {
       "name": "mod-inventory-storage",
       "nameRepo": "mod-inventory-storage",
-      "releaseDate": "2021-09-06T21:22:02+00:00",
-      "releaseName": "v21.0.4",
-      "releaseSha": "a7bcf13f872ce660b1b6d01345f10b2ab059c69f",
-      "releaseTag": "v21.0.4",
+      "releaseDate": "2021-08-16T12:38:58+00:00",
+      "releaseName": "v21.0.3",
+      "releaseSha": "eb561e07647b39243cab7e5d3abdc8eb7b6011ac",
+      "releaseTag": "v21.0.3",
       "releaseTarget": "master",
-      "version": "21.0.4"
+      "version": "21.0.3"
     },
     {
       "name": "mod-invoice",
@@ -406,12 +406,12 @@
     {
       "name": "mod-orders-storage",
       "nameRepo": "mod-orders-storage",
-      "releaseDate": "2021-07-20T13:34:40+00:00",
-      "releaseName": "v13.0.2",
-      "releaseSha": "19d67d7f148bd347ca2c87dcd203c258238c62c6",
-      "releaseTag": "v13.0.2",
+      "releaseDate": "2021-09-23T07:57:16+00:00",
+      "releaseName": "v13.0.3",
+      "releaseSha": "bd90bbc854a03f82a5c486570be9a9ae8395f559",
+      "releaseTag": "v13.0.3",
       "releaseTarget": "master",
-      "version": "13.0.2"
+      "version": "13.0.3"
     },
     {
       "name": "mod-organizations",
