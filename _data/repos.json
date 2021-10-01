@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-09-28T12:38:03.020354+00:00"
+    "generatedDateTime": "2021-10-01T06:05:22.795984+00:00"
   },
   "repos": [
     {
@@ -410,6 +410,15 @@
       "snippetIntro": ""
     },
     {
+      "defaultBranch": "main",
+      "description": "Non-LDP reporting solution for FOLIO",
+      "docDirName": null,
+      "name": "folio-reporting",
+      "org": "bywatersolutions",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
       "defaultBranch": "master",
       "description": "Examples of FOLIO modules",
       "docDirName": "doc",
@@ -487,6 +496,24 @@
       "name": "jenkins-pipeline-libs",
       "org": "folio-org",
       "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "main",
+      "description": "LDLite is a lightweight reporting tool for Okapi-based services",
+      "docDirName": null,
+      "name": "ldlite",
+      "org": "library-data-platform",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "main",
+      "description": "An open-source analytics platform for libraries",
+      "docDirName": "doc",
+      "name": "ldp",
+      "org": "library-data-platform",
       "repoType": "other",
       "snippetIntro": ""
     },
@@ -1607,6 +1634,15 @@
       "snippetIntro": "<p>This is the Resource SHaring Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes-core</code> and of any Stripes modules you wish to make available as part of the Resource Sharing platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>"
     },
     {
+      "defaultBranch": "main",
+      "description": "Simple Python object-oriented interface for getting records from FOLIO",
+      "docDirName": null,
+      "name": "pokapi",
+      "org": "caltechlibrary",
+      "repoType": "other",
+      "snippetIntro": "<p>The <a href='https://www.folio.org'>FOLIO</a> platform is a <a href='https://www.niso.org/sites/default/files/stories/2017-09/FE_Grant_Future_Library_Systems_%20isqv24no4.pdf'>library services platform</a>.  The Caltech Library uses a hosted solution by <a href='https://www.ebsco.com'>EBSCO</a> for its <a href='https://www.library.caltech.edu/libsearch'>library catalog</a>.   To make writing interfaces and automation scripts in Python easier, the Caltech Library <a href='https://www.library.caltech.edu/staff?&amp;field_directory_department%5B0%5D=754'>Digital Library Development team</a> are developing Pokapi (<em>Python Okapi Interface</em>), a Python package that provides an object-oriented interface to accessing FOLIO data via the <a href='https://github.com/folio-org/okapi/blob/master/doc/guide.md'>Okapi API</a>. It currently provides a simple object structure based mostly on FOLIO <em>instance</em> records.</p>"
+    },
+    {
       "defaultBranch": "raml1.0",
       "description": "Repository of RAML files, including JSON schemas, traits and resource types centralized for re-usability",
       "docDirName": null,
@@ -1933,6 +1969,16 @@
       "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>Stripes UI module- Audit app  visually conveys the idea of examining past activity, organized by different points of view: user; resource; circulation etc</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "ui-bulk-edit",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-bulk-edit and start your development.</p>"
     },
     {
       "defaultBranch": "master",
