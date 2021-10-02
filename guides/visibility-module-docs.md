@@ -120,5 +120,10 @@ For module repositories that are hosted at "[folio-org](https://github.com/folio
 
 For relevant module repositories that are hosted at other GitHub organizations, their details are listed in the "[`_data/repos-additional.json`](https://github.com/folio-org/folio-org.github.io/blob/master/_data/repos-additional.json)" data file.
 
-To modify, please send a pull request, or raise a Jira ticket in the "FOLIO" project for the FOLIO DevOps team.
+To modify the list, use one of these methods, and be explicit about each repository to be included:
+* Send a pull request for that data file.
+* Raise a new ticket at the [Jira](/guidelines/which-forum/#issue-tracker) issue tracker, for the "FOLIO" project, and for "Development Team" FOLIO DevOps.
+* Ask in one of the [Slack forums](/guidelines/which-forum/#slack).
+
+<div class="folio-spacer-content"></div>
 

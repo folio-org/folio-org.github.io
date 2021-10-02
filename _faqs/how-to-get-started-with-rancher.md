@@ -109,6 +109,11 @@ Add 'answers' to module deployment:
   resources.limits.cpu = 500m
   resources.limits.memory = 600Mi
   ```
+If you notice a pod restarting a lot, it may be that it is running out of memory. Usually increasing the `resources.limits.memory` in its yaml via Rancher will fix this. The pod limits on CPU may also be too low to allow your cluster to run reliably. If things go wrong, consider increasing `resources.limits.cpu` for a given pod. You may also consider removing the pod-level `resources.limits.cpu` limit and set a limit for your namespace instead, so as to not deplete other teams' resources on the cluster.
+
+You can set a namespace limit in the Edit menu item in the Rancher UI:
+
+![](/images/edit-namespace-cpu-limits.png)
 
 ## S3 Storage
 Each development team has been provided with a dedicated S3 bucket that can be used for additional storage.   The name of
@@ -218,6 +223,34 @@ To create Elasticsearch index snapshot for Rancher performance testing cluster, 
  `curl -XPOST 'ELASTICSEARCH_HOST/_snapshot/repository-name/snapshot-name/_restore' -u ELASTICSEARCH_USERNAME:ELASTICSEARCH_PASSWORD`
 ### Restore a specific index
  `curl -XPOST 'ELASTICSEARCH_HOST/_snapshot/repository-name/snapshot-name/_restore' -d '{"indices": "my-index"}' -H 'Content-Type: application/json' -u ELASTICSEARCH_USERNAME:ELASTICSEARCH_PASSWORD`
+
+## Running Karate integration tests
+
+You can run Karate integration tests against your Rancher environment. Examples of Karate tests you can run are the [FOLIO integration tests](https://github.com/folio-org/folio-integration-tests). To run the FOLIO integration tests complete the following two steps:
+1. Add a user with the username of `testing_admin` and the password of `admin` to the supertenant. Ask for help on the Slack #devops channel if you need it.
+2. Secure the supertenant.
+
+Securing the supertenant happens when you enable mod-authtoken on the supertenant. To secure the supertenant, create a file called enable.json with the following contents:
+
+```
+[
+  {
+    "id": "mod-authtoken",
+    "action": "enable"
+  }
+]
+```
+
+Then use this file in the body of your POST request in a curl command like the following:
+
+```
+curl -X POST -H "X-Okapi-Token: $token" -H "Content-Type: application/json" -d @enable.json $okapi/_/proxy/tenants/supertenant/install
+```
+Note that the above command assumes that `$token` and `$okapi` have been exported to your environment.
+
+To unsecure the supertenant repeat the process, perhaps creating another file, but this time have the `action` in your file be `disable`. Unsecuring the supertenant makes it easier to install additional modules.
+
+Once you have created the special admin user and secured the supertenant, modify your Karate tests to point to the okapi endpoint in your Rancher project. Currently this can be done by editing the karate-config.js file in your project.
 
 ## Questions and answers
 
