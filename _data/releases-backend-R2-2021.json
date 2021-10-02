@@ -286,12 +286,12 @@
     {
       "name": "mod-inventory-storage",
       "nameRepo": "mod-inventory-storage",
-      "releaseDate": "2021-08-16T12:38:58+00:00",
-      "releaseName": "v21.0.3",
-      "releaseSha": "eb561e07647b39243cab7e5d3abdc8eb7b6011ac",
-      "releaseTag": "v21.0.3",
+      "releaseDate": "2021-10-01T09:24:36+00:00",
+      "releaseName": "v21.0.8",
+      "releaseSha": "182d2dbc4e769c73df07b450bc0902cee152349c",
+      "releaseTag": "v21.0.8",
       "releaseTarget": "master",
-      "version": "21.0.3"
+      "version": "21.0.8"
     },
     {
       "name": "mod-invoice",
