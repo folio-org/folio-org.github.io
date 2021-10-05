@@ -466,12 +466,12 @@
     {
       "name": "mod-permissions",
       "nameRepo": "mod-permissions",
-      "releaseDate": "2021-05-27T13:59:34+00:00",
-      "releaseName": "",
-      "releaseSha": "8c8f9afa84967eba20e4b3b7ca5a07f0e2818645",
-      "releaseTag": "v5.14.0",
+      "releaseDate": "2021-10-04T09:20:18+00:00",
+      "releaseName": "v5.14.2",
+      "releaseSha": "ec83fd3bb96566cd841c1234e198996b1aa23962",
+      "releaseTag": "v5.14.2",
       "releaseTarget": "master",
-      "version": "5.14.0"
+      "version": "5.14.2"
     },
     {
       "name": "mod-pubsub",
