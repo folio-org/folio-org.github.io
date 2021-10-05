@@ -95,7 +95,7 @@ The last step after modules registration is to apply permissions for modules to 
 
   * Applying permissions for all installed modules to `diku_admin`
     ```
-    docker run --rm -e TENANT_ID=diku -e ADMIN_USER=diku_admin -e ADMIN_PASSWORD=admin -e OKAPI_URL=https://<project name>-okapi.ci.folio.org docker.dev.folio.org/bootstrap-superuser
+    docker run --rm -e TENANT_ID=diku -e ADMIN_USER=diku_admin -e ADMIN_PASSWORD=admin -e OKAPI_URL=https://<project name>-okapi.ci.folio.org folioci/bootstrap-superuser
     ```
 
 ## Environment variables
