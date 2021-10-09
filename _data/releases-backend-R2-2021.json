@@ -156,12 +156,12 @@
     {
       "name": "mod-data-import",
       "nameRepo": "mod-data-import",
-      "releaseDate": "2021-10-05T08:29:52+00:00",
-      "releaseName": "2.1.3",
-      "releaseSha": "f1cd3b480a555257ccc588047299d4b14a6bee9c",
-      "releaseTag": "v2.1.3",
+      "releaseDate": "2021-10-08T13:15:38+00:00",
+      "releaseName": "2.1.4",
+      "releaseSha": "df1aaffb5174d7435af63a555734bc71788d633b",
+      "releaseTag": "v2.1.4",
       "releaseTarget": "master",
-      "version": "2.1.3"
+      "version": "2.1.4"
     },
     {
       "name": "mod-data-import-converter-storage",
@@ -296,12 +296,12 @@
     {
       "name": "mod-invoice",
       "nameRepo": "mod-invoice",
-      "releaseDate": "2021-08-17T18:43:19+00:00",
-      "releaseName": "v5.1.5",
-      "releaseSha": "8290443330bdb9ba1f24d31cb0585b9656025ad1",
-      "releaseTag": "v5.1.5",
+      "releaseDate": "2021-10-08T15:31:35+00:00",
+      "releaseName": "v5.1.6",
+      "releaseSha": "7ae16b6570095958ee757893db09139e4cba7245",
+      "releaseTag": "v5.1.6",
       "releaseTarget": "master",
-      "version": "5.1.5"
+      "version": "5.1.6"
     },
     {
       "name": "mod-invoice-storage",
