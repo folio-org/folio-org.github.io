@@ -36,3 +36,4 @@ collections:
     title: FAQs
   posts:
     permalink: /news/:year/:month/:day/:title/
+  remote:
