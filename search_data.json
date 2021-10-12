@@ -4,6 +4,7 @@ layout: null
 [
   {%- assign sortedPages = site.pages | concat: site.documents | sort:"title" -%}
   {%- for page in sortedPages -%}
+    {%- if page.path contains '_remote/' -%}{%- continue -%}{%- endif -%}
     {%- assign docId = page.url | slugify -%}
     {%- if docId == "" -%}{%- assign docId = "home" -%}{%- endif -%}
     {%- if docId == "search-data-json" -%}{%- continue -%}{%- endif -%}
@@ -29,6 +30,20 @@ layout: null
       "url": "{{ page.url | xml_escape | remove: '.html' }}",
       "author": "{{ page.author | xml_escape }}",
       "categories": "{%- for category in page.categories -%}{{ category }}{%- unless forloop.last -%}, {%- endunless -%}{%- endfor -%}"
+    },
+  {%- endfor -%}
+  {%- for page in site.remote -%}
+    {%- assign remoteId = page.path | slugify | remove: '-md' -%}
+    {%- assign remoteTitle = page.path | remove: '_remote/' -%}
+    {%- assign remoteRepo = remoteTitle | split: "/" | first -%}
+    {%- assign remotePath = remoteTitle | split: "/" | slice: 1, 5 | join: '/' -%}
+    {
+      "id": "{{ remoteId }}",
+      "title": "Remote &gt;&gt; {{ remoteTitle }}",
+      "content": "{{ page.content | strip_html | escape | remove: '\' |  split: ' ' | join: ' ' }}",
+      "url": "https://github.com/folio-org/{{ remoteRepo  }}/blob/master/{{ remotePath }}",
+      "author": "{{ page.author | xml_escape }}",
+      "categories": ""
     }
     {%- unless forloop.last -%},{%- endunless -%}
   {%- endfor -%}
