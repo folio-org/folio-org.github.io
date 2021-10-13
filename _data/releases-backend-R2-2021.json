@@ -156,12 +156,12 @@
     {
       "name": "mod-data-import",
       "nameRepo": "mod-data-import",
-      "releaseDate": "2021-08-02T17:25:48+00:00",
-      "releaseName": "2.1.2",
-      "releaseSha": "67a4de67111bd6a21985389f6b0f2ac5e73c99c1",
-      "releaseTag": "v2.1.2",
+      "releaseDate": "2021-10-08T13:15:38+00:00",
+      "releaseName": "2.1.4",
+      "releaseSha": "df1aaffb5174d7435af63a555734bc71788d633b",
+      "releaseTag": "v2.1.4",
       "releaseTarget": "master",
-      "version": "2.1.2"
+      "version": "2.1.4"
     },
     {
       "name": "mod-data-import-converter-storage",
@@ -286,22 +286,22 @@
     {
       "name": "mod-inventory-storage",
       "nameRepo": "mod-inventory-storage",
-      "releaseDate": "2021-10-01T09:24:36+00:00",
-      "releaseName": "v21.0.8",
-      "releaseSha": "182d2dbc4e769c73df07b450bc0902cee152349c",
-      "releaseTag": "v21.0.8",
+      "releaseDate": "2021-10-05T10:41:56+00:00",
+      "releaseName": "v21.0.9",
+      "releaseSha": "99d472fe0cd55e805b5e33de1cf45a89f900a5cc",
+      "releaseTag": "v21.0.9",
       "releaseTarget": "master",
-      "version": "21.0.8"
+      "version": "21.0.9"
     },
     {
       "name": "mod-invoice",
       "nameRepo": "mod-invoice",
-      "releaseDate": "2021-08-17T18:43:19+00:00",
-      "releaseName": "v5.1.5",
-      "releaseSha": "8290443330bdb9ba1f24d31cb0585b9656025ad1",
-      "releaseTag": "v5.1.5",
+      "releaseDate": "2021-10-08T15:31:35+00:00",
+      "releaseName": "v5.1.6",
+      "releaseSha": "7ae16b6570095958ee757893db09139e4cba7245",
+      "releaseTag": "v5.1.6",
       "releaseTarget": "master",
-      "version": "5.1.5"
+      "version": "5.1.6"
     },
     {
       "name": "mod-invoice-storage",
@@ -466,12 +466,12 @@
     {
       "name": "mod-permissions",
       "nameRepo": "mod-permissions",
-      "releaseDate": "2021-05-27T13:59:34+00:00",
-      "releaseName": "",
-      "releaseSha": "8c8f9afa84967eba20e4b3b7ca5a07f0e2818645",
-      "releaseTag": "v5.14.0",
+      "releaseDate": "2021-10-04T09:20:18+00:00",
+      "releaseName": "v5.14.2",
+      "releaseSha": "ec83fd3bb96566cd841c1234e198996b1aa23962",
+      "releaseTag": "v5.14.2",
       "releaseTarget": "master",
-      "version": "5.14.0"
+      "version": "5.14.2"
     },
     {
       "name": "mod-pubsub",
@@ -586,22 +586,22 @@
     {
       "name": "mod-user-import",
       "nameRepo": "mod-user-import",
-      "releaseDate": "2021-06-23T14:18:52+00:00",
-      "releaseName": "v3.6.1",
-      "releaseSha": "8bcac4f6729b2032569915ae8124b71053dfa538",
-      "releaseTag": "v3.6.1",
+      "releaseDate": "2021-10-06T13:51:08+00:00",
+      "releaseName": "v3.6.2",
+      "releaseSha": "365d4dba47a3d74292ebb7d4bb953cdfcf307145",
+      "releaseTag": "v3.6.2",
       "releaseTarget": "master",
-      "version": "3.6.1"
+      "version": "3.6.2"
     },
     {
       "name": "mod-users",
       "nameRepo": "mod-users",
-      "releaseDate": "2021-06-16T12:21:39+00:00",
-      "releaseName": "18.0.0",
-      "releaseSha": "0af7b9f2db92dc7200e8757254ec0a13183c95a4",
-      "releaseTag": "v18.0.0",
-      "releaseTarget": "MODUSERS-257-release-18-0-0",
-      "version": "18.0.0"
+      "releaseDate": "2021-10-04T19:16:44+00:00",
+      "releaseName": "v18.0.1",
+      "releaseSha": "104a0b0f9c6ff5da1fa5c8d6ecd71c9dca4c7d01",
+      "releaseTag": "v18.0.1",
+      "releaseTarget": "master",
+      "version": "18.0.1"
     },
     {
       "name": "mod-users-bl",

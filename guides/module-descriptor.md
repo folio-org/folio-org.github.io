@@ -236,19 +236,19 @@ As explained [above](#env-java_options), this form needs the new folio docker im
 Other LaunchDescriptor examples:
 
 * [mod-circulation](https://github.com/folio-org/mod-circulation/blob/master/descriptors/ModuleDescriptor-template.json)
-  -- does not use a database.
+  -- Does not use a database.
   [DH readme](https://hub.docker.com/r/folioorg/mod-circulation).
 * [mod-users](https://github.com/folio-org/mod-users/blob/master/descriptors/ModuleDescriptor-template.json)
-  -- has greater memory allocation.
+  -- Has greater memory allocation.
   [DH readme](https://hub.docker.com/r/folioorg/mod-users).
 * [mod-login](https://github.com/folio-org/mod-login/blob/master/descriptors/ModuleDescriptor-template.json)
-  -- uses the dockerCMD.
+  -- Uses the dockerCMD.
   [DH readme](https://hub.docker.com/r/folioorg/mod-login).
 * [mod-search](https://github.com/folio-org/mod-search/blob/master/descriptors/ModuleDescriptor-template.json)
-  -- has additional env properties.
+  -- Has additional env properties. Is Spring-based.
   [DH readme](https://hub.docker.com/r/folioorg/mod-search).
 * [mod-remote-storage](https://github.com/folio-org/mod-remote-storage/blob/master/descriptors/ModuleDescriptor-template.json)
-  -- has additional env properties for Apache Kafka.
+  -- Has additional env properties for Apache Kafka. Is Spring-based.
   [DH readme](https://hub.docker.com/r/folioorg/mod-remote-storage).
 
 ## Testing the modifications

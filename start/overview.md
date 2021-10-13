@@ -50,7 +50,7 @@ Use its "Overview" menu to reach the "Community" section which provides other av
 
 For developers associated with the [OLE](/reference/glossary/#ole) partner institutions, become familiar with the [Open Library Environment](https://openlibraryenvironment.org/) web site, and follow some additional [OLE on-boarding](https://wiki.folio.org/display/COMMUNITY/Getting+Started+for+Developers) steps.
 
-For developers associated with the [EPAM](https://wiki.folio.org/display/FOLIJET/Folio+Development+Team+Home) teams, refer to various getting started and management documentation at that wiki area.
+For developers associated with the [EPAM](https://wiki.folio.org/display/FOLIJET/Folio+Development+Teams+Home) teams, refer to various getting started and management documentation at that wiki area.
 
 For groups of developers from other institutions, contact the [FOLIO Product Council](https://wiki.folio.org/display/PC/FOLIO+Product+Council).
 
