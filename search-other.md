@@ -59,7 +59,7 @@ Refer to specific
 
 Other notes about Search facilities in the "FOLIO" apps:
 
-* [FOLIOtips/Searching](https://wiki.folio.org/display/FOLIOtips/Searching) has notes about search indexes, and example [CQL](/reference/glossary/#cql) syntax search queries.
+* [FOLIOtips/Searching](https://wiki.folio.org/pages/viewpage.action?pageId=33948019) has notes about search indexes, and example [CQL](/reference/glossary/#cql) syntax search queries.
 * [Proposal](https://wiki.folio.org/display/DD/Search): full-text search with Elastic.
 
 <div class="folio-spacer-content"></div>
