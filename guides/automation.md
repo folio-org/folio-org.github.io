@@ -60,7 +60,7 @@ The set of frontend modules are those listed in the "snapshot" branch of the Str
 The frontend build consists of the master branch of each frontend module at that time.
 This build follows automatically directly after the "folio-testing-backend" build.
 
-The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish about 47 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
+The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish about 50 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
 If successful, then this will regenerate the yarn.lock file of the Platform, to be utilised by the abovementioned "folio-testing-stripes" bundle job.
 So if there is an urgent need to rebuild "folio-testing" outside of normal automation, so as to include a new snapshot of a UI module, then this build needs to have run before the bundle build is re-run.
 View the later part of the "Console output" of its most recent run, to ensure that the module versions are as expected.
@@ -78,7 +78,7 @@ Built every day, to finish about 02:00 UTC (see Jenkins job: [folio-snapshot](ht
 
 The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
 
-The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish about 47 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
+The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish about 50 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
 If successful, then this will regenerate the yarn.lock and install files of the Platform, to be utilised by the abovementioned "folio-snapshot" job.
 So if there is an urgent need to rebuild "folio-snapshot" outside of normal automation, so as to include a new snapshot of a module, then this build needs to have run before the "folio-snapshot" build is re-run.
 View the later part of the "Console output" of its most recent run, to ensure that the module versions are as expected.

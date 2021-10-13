@@ -195,7 +195,7 @@ We follow a variation of the Apache motto:
 - Use `@mentions` with care. This is especially important on broad channels such as `#general`, as using `@channel` there will send notifications to many hundreds of people.
 
 - Distinguish different Slack workspaces using
-  [Sidebar Themes](http://slackstyles.com/#/tag/FOLIO):
+  Sidebar Themes:
   "[FOLIO orange](http://slackthemes.net/#/folio_orange)" or
   "[FOLIO purple](http://slackthemes.net/#/folio_purple)".
 

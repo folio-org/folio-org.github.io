@@ -55,7 +55,7 @@ To help reduce the burden of PR reviews on lead maintainers, the technical leads
 
 Technical leads must have a succession plan with sufficient overlap for knowledge transfer.
 The onboarding and handoff process for a tech lead's successor must ensure that the new lead understands their responsibilities and duties.
-It must also include updating [team documentation](https://wiki.folio.org/display/FOLIJET/Folio+Development+Team+Home)
+It must also include updating [team documentation](https://wiki.folio.org/display/FOLIJET/Folio+Development+Teams+Home)
 to reflect new members and any role changes.
 
 ### Code Owner (CO)
