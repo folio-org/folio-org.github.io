@@ -59,6 +59,12 @@ To verify internal and external links, do:
 rake proof
 ```
 
+or
+
+```
+bin/htmlproofer.sh
+```
+
 This will re-generate the whole site, then report any broken links.
 
 Note that verification of GitHub links is disabled.
