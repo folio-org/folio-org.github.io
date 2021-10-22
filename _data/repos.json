@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-10-07T05:50:15.603126+00:00"
+    "generatedDateTime": "2021-10-22T00:36:55.563648+00:00"
   },
   "repos": [
     {
@@ -447,7 +447,7 @@
       "org": "folio-org",
       "repoLanguageHint": "java",
       "repoType": "other",
-      "snippetIntro": ""
+      "snippetIntro": "<p>This is a library (jar) that contains the basic functionality and main dependencies required for development of FOLIO modules using Spring framework (also known as 'Spring Way').</p>"
     },
     {
       "defaultBranch": "master",
@@ -517,7 +517,8 @@
       "repoType": "other",
       "snippetIntro": "",
       "workflows": [
-        "ccpp.yml"
+        "build-ldp.yml",
+        "release-ldp.yml"
       ]
     },
     {
@@ -563,6 +564,19 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>This module is responsible for filtering all proxy traffic and checking for a valid token. In addition, it is responsible for retrieving the permissions for a given user and making decisions regarding access based on user permissions and defined requirements for a given path. It provides a token creation endpoint that privileged modules (such as Authentication) may make use of.</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-bulk-edit",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Microservice provides capabilities for simultaneous editing of many entities</p>"
     },
     {
       "defaultBranch": "master",
@@ -1349,7 +1363,10 @@
       "org": "openlibraryenvironment",
       "ramlDirName": "ramls",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "gradle.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1744,8 +1761,12 @@
       "repoType": "stripes",
       "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>",
       "workflows": [
-        "buildnpm-release.yml",
-        "buildnpm.yml"
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
       ]
     },
     {
@@ -2174,6 +2195,16 @@
       "repoLanguageHint": "node",
       "repoType": "ui-handler",
       "snippetIntro": "<p>Frontend registry for Stripes</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Stripes UI for managing UB Leipzig users and contracts",
+      "docDirName": null,
+      "name": "ui-idm-connect",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-idm-connect and start your development.</p>"
     },
     {
       "defaultBranch": "master",
@@ -2654,7 +2685,6 @@
       "repoType": "ui",
       "snippetIntro": "<p>The Users UI Module, or <code>ui-users</code>, is a Stripes UI module used for searching, sorting, filtering, viewing, editing and creating users. (A 'Stripes UI module' is an NPM module that adheres to certain conventions that allow it to function within the <a href='https://github.com/folio-org/stripes-core/blob/master/README.md'>Stripes UI framework</a> that is part of FOLIO.)</p>",
       "workflows": [
-        "build-npm-fork.yml",
         "build-npm-release.yml",
         "build-npm.yml"
       ],
