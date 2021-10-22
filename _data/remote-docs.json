@@ -30,5 +30,7 @@
   "https://raw.githubusercontent.com/folio-org/ui-courses/master/doc/testing-with-cypress.md",
   "https://raw.githubusercontent.com/folio-org/ui-plugin-eusage-reports/master/doc/testing-with-jest-and-rtl.md",
   "https://raw.githubusercontent.com/folio-org/ui-plugin-eusage-reports/master/doc/updating-stripes-bundle-on-thor-server.md",
-  "https://raw.githubusercontent.com/folio-org/Net-Z3950-FOLIO/master/README.md"
+  "https://raw.githubusercontent.com/folio-org/Net-Z3950-FOLIO/master/README.md",
+  "https://raw.githubusercontent.com/folio-org/Net-Z3950-FOLIO/master/doc/capabilities.md",
+  "https://raw.githubusercontent.com/folio-org/Net-Z3950-FOLIO/master/doc/source-code-overview.md"
 ]
