@@ -77,19 +77,19 @@ exit
 
 ## Halt and rest
 
-Now put the system to rest with `vagrant halt`
+Now put the system to rest with '`vagrant halt`'
 
-When ready to recommence, simply do `vagrant up`
+When ready to recommence, simply do '`vagrant up`'
 
 ## Update the box
 
 As explained in the [background overview](../overview/#background) section, the FOLIO VMs are rebuilt each day with the current state of development.
 
 The local system does not need to be updated every day, but when desired then do:<br/>
-`vagrant box update`
-(followed by `vagrant destroy` to disable the old default machine).
+'`vagrant halt`' and then '`vagrant box update`'
+(followed by '`vagrant destroy`' to disable the old default machine).
 
-The Vagrant box can then be launched again with `vagrant up`
+The Vagrant box can then be launched again with '`vagrant up`'
 
 ---
 Next lesson: [VM system overview](../02-system-overview/)
