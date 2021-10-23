@@ -21,7 +21,7 @@ The notes there will also be useful for other modules.
 See [Code analysis and linting facilities](/guides/code-analysis/).
 
 The integration tests and regression tests for FOLIO UI are explained at 
-[platform-core](https://github.com/folio-org/platform-core)
+[platform-complete](https://github.com/folio-org/platform-complete)
 and
 [stripes-testing](https://github.com/folio-org/stripes-testing)
 along with the ability to run specific tests.

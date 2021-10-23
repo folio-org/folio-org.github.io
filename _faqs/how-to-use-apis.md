@@ -9,6 +9,8 @@ faqOrder: 3
 
 The on-line [API documentation](/reference/api/) explains the data that modules expect and return on their APIs.
 
+Get help in the [FOLIO Slack](/guidelines/which-forum/#slack) #learning-apis channel.
+
 To connect to the APIs there are several software options:
 
 ## curl
@@ -33,5 +35,11 @@ The [stripes-cli](https://github.com/folio-org/stripes-cli) is a command-line in
 
 ## Postman
 
-The [folio-api-tests Github repository](https://github.com/folio-org/folio-api-tests) contains Postman collections for the APIs of some FOLIO modules. Use them with Postman or Newman. Get help in the [FOLIO Slack](https://wiki.folio.org/display/COMMUNITY/FOLIO+Communication+Spaces#FOLIOCommunicationSpaces-slackSlack) #postman channel.
+The [folio-api-tests Github repository](https://github.com/folio-org/folio-api-tests) contains Postman collections for the APIs of some FOLIO modules. Use them with Postman or Newman.
+
+## Insomnia
+
+[Insomnia](https://insomnia.rest/).
+
+<div class="folio-spacer-content"></div>
 
