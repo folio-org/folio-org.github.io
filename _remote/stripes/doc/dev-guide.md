@@ -219,10 +219,10 @@ Although `react-router` encourages it, nesting `<Route>` components throughout t
 To help facilitate, `stripes-core` exports a wrapper for `<Route>` which will pass children of a route into the component responsible for rendering it. For example, in this JSX, `<SettingsLayout>` would be passed the children of the the `<Route>` that points to it which it could then into an appropriate part of the layout it provides:
 
 ```
-<Route path="/settings" component=SettingsLayout>
+<Route path="/settings" component={SettingsLayout}>
   <Switch>
-    <Route path="/settings/foo" component=FooSettings/>
-    <Route path="/settings/bar" component=BarSettings/>
+    <Route path="/settings/foo" component={FooSettings}/>
+    <Route path="/settings/bar" component={BarSettings}/>
   </Switch>
 </Route>
 ```
@@ -281,7 +281,7 @@ The Stripes object contains the following elements:
 
 * `locale` -- a short string specifying the prevailing locale, e.g. `en-US`. This should be consulted when rendering dates with `toLocaleDateString`, etc.
 
-* `bindings` -- an object specifying key-bindings for actions that can be activated by hot-keys. The keys of the object are action names such as `stripesHome` and `pageDown`, and the corresponding values are key-combination specifications as defined by [the Mousetrap library](https://github.com/ccampbell/mousetrap), such as `command+up`. At startup, Stripes loads these bindings from the configuration module and applies them to all components making up the Stripes application: it is up to the individual modules to link the action-names with actual code using a `<HotKeys handlers=someObject>` wrapper -- see [below](#enabling-hot-keys).
+* `bindings` -- an object specifying key-bindings for actions that can be activated by hot-keys. The keys of the object are action names such as `stripesHome` and `pageDown`, and the corresponding values are key-combination specifications as defined by [the Mousetrap library](https://github.com/ccampbell/mousetrap), such as `command+up`. At startup, Stripes loads these bindings from the configuration module and applies them to all components making up the Stripes application: it is up to the individual modules to link the action-names with actual code using a `<HotKeys handlers={someObject}>` wrapper -- see [below](#enabling-hot-keys).
 
 * `setLocale` -- a function by which client code can change the prevailing locale: `stripes.setLocale('en-US')`. (Simply assigning to `stripes.locale` will not work.)
 
@@ -355,22 +355,22 @@ The top-level component of each module is automatically connected, so that it ca
 Because connecting is a non-trivial operation, it is best to do this once in the constructor of the containing component rather than inline in its `render` method where it will be activated many times. The standard idiom is:
 
 ```js
-import  stripesShape  from '@folio/stripes-core/src/Stripes';
+import { stripesShape } from '@folio/stripes-core/src/Stripes';
 import Child from './Child';
 
-class Parent extends React.Component 
-  static propTypes = 
+class Parent extends React.Component {
+  static propTypes = {
     stripes: stripesShape.isRequired,
-  ;
+  };
 
-  constructor(props) 
+  constructor(props) {
     this.connectedChild = props.stripes.connect(Child);
-  
+  }
 
-  render(props) 
-    return <div><Stuff /><connectedChild props=...props /></div>;
-  
-
+  render(props) {
+    return <div><Stuff /><connectedChild props={...props} /></div>;
+  }
+}
 
 export default Parent;
 
@@ -381,14 +381,14 @@ export default Parent;
 Along with the `path` of an Okapi-type resource, it is also possible to specify `params`, which are built into a complete URL. For example, consider a manifest like the following:
 
 ```
-    patronGroups: 
+    patronGroups: {
       type: 'okapi',
       path: 'groups',
-      params: 
+      params: {
         query: 'cql.allRecords=1 sortby group',
         limit: '40',
-      ,
-    ,
+      },
+    },
 ```
 
 This will be compiled into an access URL like `/groups?query=cql.allRecords=1+sortby+group&limit=40`. Specifying params individually is more flexible and less error-prone than constructing such URLs by hand.
@@ -413,20 +413,20 @@ this.transitionToParams = values => this.props.parentMutator.query.update(values
 ```
 That method is used in many places, for example, to change the `sort` parameter to the value of the `sortOrder` variable:
 ```
-this.transitionToParams( sort: sortOrder );
+this.transitionToParams({ sort: sortOrder });
 ```
 And with the special `_path` parameter to change the path when a single record is selected for display. In this case, the base-route is taken from the component's properties (and ultimately from the `stripes.route` property of the package file), and the ID of the record to display is drawn from the event metadata:
 ```
-this.transitionToParams( _path: `$this.props.baseRoute/view/$meta.id` );
+this.transitionToParams({ _path: `${this.props.baseRoute}/view/${meta.id}` });
 ```
 
 Access to the anointed resource can be obtained by declaring it in the manifest of a connected component:
 ```
-static manifest = Object.freeze(
-  query: 
+static manifest = Object.freeze({
+  query: {
     // You can declare the specific query parameters here
-  
-);
+  }
+});
 
 ```
 More often, a high-level component will pass a reference to the resource into lower-level components that use it. In the example above, modules using the `<SearchAndSort>` utility component will pass in their stripes-connect resources and mutators as the `parentResources` and `parentMutator` properties, as seen in the definition of the `transitionToParams` utility function above.
@@ -442,7 +442,7 @@ However, in order to prevent misleading the user, or provoking inevitable author
 
 #### The permissions structure
 
-The permissions are provided to the top-level component of each module as the `users.perms` element of the `stripes` property; it is the responsibility of that component to make the `stripes` object available to other components -- either by passing it as a property (`<SubComponent ... stripes=this.props.stripes>` or by installing it in the React context.
+The permissions are provided to the top-level component of each module as the `users.perms` element of the `stripes` property; it is the responsibility of that component to make the `stripes` object available to other components -- either by passing it as a property (`<SubComponent ... stripes={this.props.stripes}>` or by installing it in the React context.
 
 The `perms` structure is a JavaScript object whose keys are the names of the permissions that the user has, and whose values are the corresponding human-readable descriptions. For example, the `users.read` permission might have the descriptions "Can search users and view brief profiles".
 
@@ -461,7 +461,7 @@ When guarding small elements, such as a "New user" button that should appear onl
 
 ```js
 <IfPermission perm="users.create">
-  <Button fullWidth onClick=this.onClickAddNewUser>New user</Button>
+  <Button fullWidth onClick={this.onClickAddNewUser}>New user</Button>
 </IfPermission>
 ```
 
@@ -513,14 +513,14 @@ This mapping can most easily be managed by means of the editor in the `ui-organi
 
 In order to actually use the mapped keys, the action-names must be mapped to code fragments, and this is the responsibility of the individual modules. Mappings are passed as the `handlers` argument to a `<HotKeys>` wrapper component, which is provided by [the `react-hotkeys` library](https://github.com/chrisui/react-hotkeys). For example, consider this code from the hot-keys testing page in `ui-developer`:
 ```
-import  HotKeys  from '@folio/stripes-components/lib/HotKeys';
+import { HotKeys } from '@folio/stripes-components/lib/HotKeys';
 // ...
-const handlers = 
-  stripesHome: () =>  props.history.push('/'); ,
-  stripesAbout: () =>  props.history.push('/about'); ,
-;
+const handlers = {
+  stripesHome: () => { props.history.push('/'); },
+  stripesAbout: () => { props.history.push('/about'); },
+};
 // ...
-<HotKeys handlers=handlers noWrapper>
+<HotKeys handlers={handlers} noWrapper>
   // ... elements which, when focussed, support the hot-keys
 </HotKeys>
 ```
@@ -605,7 +605,7 @@ Handlers are invoked in two situations: when core events occur, and when module-
 The handler is defined as:
 
 ```
-static eventHandler(event, stripes, data)  ... 
+static eventHandler(event, stripes, data) { ... }
 
 ```
 
@@ -635,7 +635,7 @@ To do this, the `<HandlerManager>` component, provided by stripes-core, may be u
 So for example:
 
 ```
-<HandlerManager event="ui-agreements-extension" stripes=this.props.stripes />
+<HandlerManager event="ui-agreements-extension" stripes={this.props.stripes} />
 ```
 will render the components returned by the event handlers of all handler modules that respond to the `"ui-agreements-extension"` event.
 
@@ -676,22 +676,22 @@ A module's translations must be provided within a `translations` directory found
 The translations themselves, within these files, have short, faceted keys, and their values are the strings that are to appear in the UI. The name of the module is automatically prepended to the translation keys. For example, in the User module's `translations` directory, the `en.json`, file contains:
 
 ```
-
+{
   "search": "Search",
   "loans.title": "Loans",
   "loans.openLoans": "open loans",
   "loans.closedLoans": "closed loans"
-
+}
 ```
 and the `de.json`, file contains:
 
 ```
-
+{
   "search": "Suche",
   "loans.title": "Ausleihen",
   "loans.openLoans": "Offene Ausleihen",
   "loans.closedLoans": "Abgeschlossene Ausleihen"
-
+}
 ```
 
 These files provide English and German translations for four strings, whose keys are `ui-users.search`, `ui-users.loans.title`, `ui-users.loans.openLoans` and `ui-users.loans.closedLoans`.
@@ -705,7 +705,7 @@ Translations are used by referencing their keys in code, at which point the loca
 
 In HTML, [the React component `<FormattedMessage>`](https://github.com/yahoo/react-intl/wiki/Components#formattedmessage), which is provided by the react-intl library. The translation key must be provided as the `id` parameter: for example, `<FormattedMessage id="ui-users.loans.title" />` will render "Loans" if the prevailing locale's language is English, and "Ausleihen" if it is German.
 
-In JavaScript, the Stripes object furnishes an internationalization object as its `intl` property, and [its `formatmessage` function](https://github.com/yahoo/react-intl/wiki/API#formatmessage) can be used. It must be passed an object whose `id` property is a translation key: for example, `stripes.intl.formatMessage( id: 'ui-users.search' )` will yield "Search" if the prevailing locale's language is English, and "Suche" if it is German.
+In JavaScript, the Stripes object furnishes an internationalization object as its `intl` property, and [its `formatmessage` function](https://github.com/yahoo/react-intl/wiki/API#formatmessage) can be used. It must be passed an object whose `id` property is a translation key: for example, `stripes.intl.formatMessage({ id: 'ui-users.search' })` will yield "Search" if the prevailing locale's language is English, and "Suche" if it is German.
 
 
 #### Using core translations
@@ -714,7 +714,7 @@ In addition to the translations that it provides itself, a module may use transl
 
 For example, if the `stripes-core/translations/stripes-core/*.json` files define a property as `"common.search": "Search"`, then the translation can be done like so:
 ```
-<Button label=stripes.intl.formatMessage( id: 'stripes-core.common.search' ) />
+<Button label={stripes.intl.formatMessage({ id: 'stripes-core.common.search' })} />
 ```
 
 #### Translating permission names
@@ -745,9 +745,9 @@ runScripts = [
 
 By default, the build process will collect translations for all languages found in each module.  Sometimes it is desireable to build a tenant with only a specific set of languages.  To filter the languages for a tenant, set the `languages` property in the `config` section of the tenant's `stripes.config.js` file.  The value should be an array of desired two-letter codes.  For example:
 ```
-config: 
+config: {
   languages: ['en', 'de'],
-,
+},
 ```
 In addition to limiting the number of translations processed during the build, specifying `languages` will also prompt the build to filter out third-party language assets for `react-intl` and `moment`.  This will reduce the quantity and size of build files emitted.
 
@@ -793,12 +793,12 @@ That is all. The stripes-connect library issues the necessary requests, handles 
 
 A manifest is provided by each connected component class in a UI module. It is a class-level static constant. For example:
 
-	static manifest = Object.freeze(
-	  user: 
+	static manifest = Object.freeze({
+	  user: {
 	    type: 'okapi',
-	    path: 'users/:userid',
-	  ,
-	);
+	    path: 'users/:{userid}',
+	  },
+	});
 
 (This manifest declares a single resource, called `user`, which is connected to an Okapi service at a path that depends on the `userid` part of the path in the UI's URL.)
 
@@ -862,24 +862,24 @@ In general, Stripes modules should never need to access the Redux store that is 
 This store is available as `store` on the Stripes object, and its state is available via the `getState` method. So:
 
 ```js
-class Users extends React.Component 
-  static contextTypes = 
+class Users extends React.Component {
+  static contextTypes = {
     store: PropTypes.object,
-  ;
+  };
 
-  postCreds(username, creds) 
+  postCreds(username, creds) {
     const okapi = context.store.getState().okapi;
-    fetch(url, 
+    fetch(url, {
       method: 'POST',
-      headers: Object.assign(, 
+      headers: Object.assign({}, {
         'X-Okapi-Tenant': okapi.tenant,
         'X-Okapi-Token': okapi.token,
         'Content-Type': 'application/json'
-      ),
+      }),
       body: JSON.stringify(creds),
-    );
-  
-
+    });
+  }
+}
 ```
 
 Note that this code does _not_ access the stripes-connect data within the Redux store: so far, no situation has been found where that is necessary or desirable. Instead, it accesses internal data about the present session. (Arguably, that data should be made available in the Stripes object; but really, module code should not need to use this at all.)
