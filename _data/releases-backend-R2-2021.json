@@ -46,12 +46,12 @@
     {
       "name": "mod-circulation",
       "nameRepo": "mod-circulation",
-      "releaseDate": "2021-08-18T16:10:34+00:00",
-      "releaseName": "v22.0.4",
-      "releaseSha": "1388a32ef3fb59e1cb69dc975cfae09602d7fbcc",
-      "releaseTag": "v22.0.4",
+      "releaseDate": "2021-10-21T14:44:06+00:00",
+      "releaseName": "v22.0.5",
+      "releaseSha": "71e6090ac5e9e20f1bbcff0ca8b0757799be657c",
+      "releaseTag": "v22.0.5",
       "releaseTarget": "master",
-      "version": "22.0.4"
+      "version": "22.0.5"
     },
     {
       "name": "mod-circulation-storage",
@@ -296,12 +296,12 @@
     {
       "name": "mod-invoice",
       "nameRepo": "mod-invoice",
-      "releaseDate": "2021-10-08T15:31:35+00:00",
-      "releaseName": "v5.1.6",
-      "releaseSha": "7ae16b6570095958ee757893db09139e4cba7245",
-      "releaseTag": "v5.1.6",
+      "releaseDate": "2021-10-21T14:18:37+00:00",
+      "releaseName": "v5.1.7",
+      "releaseSha": "953852a66a2f592fd5aa3ec8862de69773c2987d",
+      "releaseTag": "v5.1.7",
       "releaseTarget": "master",
-      "version": "5.1.6"
+      "version": "5.1.7"
     },
     {
       "name": "mod-invoice-storage",
