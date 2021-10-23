@@ -14,13 +14,13 @@ This lesson will establish the local workspace, and explain how to launch the bo
 Make a fresh directory and change into it:
 
 ```
-mkdir vm-snapshot-core && cd vm-snapshot-core
+mkdir vm-release-core && cd vm-release-core
 ```
 
 Initialise the Vagrantfile:
 
 ```
-vagrant init --minimal folio/snapshot-core
+vagrant init --minimal folio/release-core
 ```
 
 That setup was a once-off task.
