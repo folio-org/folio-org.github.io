@@ -16,7 +16,8 @@ menuTopTitle: Tutorials
 * [Vagrant](https://www.vagrantup.com/) -- Recent version.
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads) --
 Determine the version of VirtualBox to [match](https://www.vagrantup.com/docs/virtualbox) your version of `vagrant`.
-* [curl](https://curl.haxx.se) -- Only curl commands are shown in this tutorial. (Those could be [utilised](https://learning.postman.com/docs/postman/collections/importing-and-exporting-data/) via [Postman](https://postman.com/). Easier to use [command-line tools](/faqs/how-to-use-apis/) exist.)
+* [curl](https://curl.haxx.se) -- Only curl commands are shown in this tutorial.
+Easier-to-use interactive and command-line tools are available (see FAQ [How to use APIs](/faqs/how-to-use-apis/)).
 
 ## Background
 
@@ -25,7 +26,8 @@ Each night the FOLIO [reference environments](/guides/automation/#reference-envi
 The continuous integration also constructs various Vagrant boxes.
 These are [available](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md#prebuilt-vagrant-boxes) to download for local use, providing a ready-to-run self-contained operating system environment and up-to-date FOLIO instance.
 
-This tutorial will only focus on the `folio/snapshot-core` VM.
+This tutorial will only focus on the `folio/release-core` VM
+(i.e. the most recent "[flower release](/guides/regular-releases/)").
 
 ## Troubleshooting and known issues
 
