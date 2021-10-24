@@ -3223,7 +3223,7 @@ curl http://localhost:9130/_/proxy/tenants/testlib/timers
 The first entry fires a timer every 20 seconds. Disable it with:
 
 ```
-curl -XPATCH -d'{"id":"test-timer_0","routingEntry":{"delay":"0"}}' \
+curl -XPATCH -d'{"id":"test-timer_0","routingEntry":{"delay":"0"' \
     http://localhost:9130/_/proxy/tenants/testlib/timers
 ```
 
@@ -3241,7 +3241,7 @@ add Java parameter `-Dvertx.metrics.options.enabled=true` first.
 
 More Java parameters are needed to configure which backends to use
 * `-DinfluxDbOptions='{"uri": "http://localhost:8086", "db":"folio"}'` - Send metrics to InfluxDB
-* `-DprometheusOptions='{"embeddedServerOptions": {"port": 9930}}'` - Expose `<server>:9930/metrics` for Prometheus
+* `-DprometheusOptions='{"embeddedServerOptions": {"port": 9930'` - Expose `<server>:9930/metrics` for Prometheus
 * `-DjmxMetricsOptions='{"domain": "org.folio"}'` - JMX
 
 Another Java parameter can be used to filter metrics
@@ -3251,7 +3251,7 @@ A full example with all backends enabled and filter parameter configured:
 
     java -Dvertx.metrics.options.enabled=true \
       -DinfluxDbOptions='{"uri": "http://localhost:8086", "db":"folio"}' \
-      -DprometheusOptions='{"embeddedServerOptions": {"port": 9930}}' \
+      -DprometheusOptions='{"embeddedServerOptions": {"port": 9930' \
       -DjmxMetricsOptions='{"domain": "org.folio"}' \
       -DmetricsPrefixFilter=org.folio \
       -jar okapi-core/target/okapi-core-fat.jar dev
