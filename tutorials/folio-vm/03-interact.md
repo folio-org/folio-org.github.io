@@ -98,11 +98,21 @@ echo "Finished."
 
 The [Stripes CLI](https://github.com/folio-org/stripes-cli) command-line interface is an important tool for both front-end and back-end developers.
 
-For example, after installation and basic configuration, use it for concisely
+For example, after its installation and basic configuration, use it for concisely
 [Observing Okapi requests](https://github.com/folio-org/stripes-cli/blob/master/doc/user-guide.md#observing-okapi-requests) to show what endpoints are called.
 
 Of course there is much more that Stripes CLI can assist with your development.
 Invest some time to become familiar.
+
+## Load more data
+
+Some sample data is already loaded with the default system.
+
+There are various facilites to load more data via each app.
+For example follow the links from documentation for
+[ui-users](/source-code/map/#ui-users) and
+[ui-inventory](/source-code/map/#ui-inventory) and
+[ui-data-import](/source-code/map/#ui-data-import) etc.
 
 ---
 Next lesson: [Conduct local development](../04-local-development/)
