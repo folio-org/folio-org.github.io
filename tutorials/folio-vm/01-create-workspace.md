@@ -83,13 +83,23 @@ When ready to recommence, simply do '`vagrant up`'
 
 ## Update the box
 
-As explained in the [background overview](../overview/#background) section, the FOLIO VMs are rebuilt each day with the current state of development.
+As explained in the [background overview](../overview/#background) section, the FOLIO VMs are regularly rebuilt with the current state of development.
 
 The local system does not need to be updated every day, but when desired then do:<br/>
 '`vagrant halt`' and then '`vagrant box update`'
 (followed by '`vagrant destroy`' to disable the old default machine).
 
 The Vagrant box can then be launched again with '`vagrant up`'
+
+## Destroy when finished
+
+When finished with exploration, do '`vagrant destroy`' to reclaim disk space and keep your vagrant tidy.
+
+When ready to use it again, then do '`vagrant up`' again.
+Of course, if you had done additional configuration to the default system or loaded extra data or other modules, then that would need to be repeated.
+
+For further assistance with Vagrant and management of virtual environments, see the HashiCorp Learn tutorials.
+For example additional [notes](https://learn.hashicorp.com/tutorials/vagrant/getting-started-teardown) about suspend, halt, destroy.
 
 ---
 Next lesson: [VM system overview](../02-system-overview/)
