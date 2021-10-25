@@ -16,7 +16,9 @@ menuTopTitle: Tutorials
 * [Vagrant](https://www.vagrantup.com/) -- Recent version.
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads) --
 Determine the version of VirtualBox to [match](https://www.vagrantup.com/docs/virtualbox) your version of `vagrant`.
-* [curl](https://curl.haxx.se) -- Only curl commands are shown in this tutorial.
+* [curl](https://curl.haxx.se) -- Only 'curl' commands are shown in this tutorial.
+To use curl to interact with Okapi from outside the VM, of course curl is needed on the host system.
+Note that Vagrant has a packaged curl, so that can be used from within the VM.
 Easier-to-use interactive and command-line tools are available (see FAQ [How to use APIs](/faqs/how-to-use-apis/)).
 
 ## Background
@@ -27,7 +29,8 @@ The continuous integration also constructs various Vagrant boxes.
 These are [available](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md#prebuilt-vagrant-boxes) to download for local use, providing a ready-to-run self-contained operating system environment and up-to-date FOLIO instance.
 
 This tutorial will only focus on the `folio/release-core` VM
-(i.e. the most recent "[flower release](/guides/regular-releases/)").
+(i.e. for the most recent "[flower release](/guides/regular-releases/)").
+If your host machine has sufficient resources available (e.g. memory) then it would be possible to use the `folio/release` VM instead, which has the full set of FOLIO apps.
 
 ## Troubleshooting and known issues
 
