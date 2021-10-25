@@ -5,6 +5,9 @@ ui:
 ui-plugin:
   title: Frontend ui plugin repos
   stem: ui-plugin-
+ui-handler:
+  title: Frontend ui handler repos
+  stem: ui-handler-
 stripes:
   title: Stripes repos
   stem: stripes-

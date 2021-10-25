@@ -217,6 +217,7 @@ mod-inventory-storage:
       - holdings-type
       - holdings-note-type
       - hrid-settings-storage
+      - instance-iteration
       - instance-preceding-succeeding-titles
       - instance-reindex
       - instance-storage
@@ -231,6 +232,7 @@ mod-inventory-storage:
       - inventory-view
       - item-damaged-statuses
       - item-storage
+      - item-storage-dereferenced
       - item-sync
       - item-note-type
       - alternative-title-type

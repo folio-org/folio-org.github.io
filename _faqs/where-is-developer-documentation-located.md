@@ -58,10 +58,12 @@ Developers can readily find this additional documentation via the [Source-code m
 
 ## Search
 
-Use the dev.folio.org [Search](/search/) facility to local documentation on this site.
+Use the dev.folio.org [Search](/search/) facility to find local documentation on this site.
 
 There are also notes for [Other search and report facilities](/search-other/) and example searches for finding specific module documentation at GitHub.
 Example searches are also provided for the FOLIO Wiki and the FOLIO Issue Tracker.
+
+Note that the dev.folio.org [Search](/search/) facility also indexes a specific [set](https://github.com/folio-org/folio-org.github.io/blob/master/_data/remote-docs.json) of important other documents. The search results will show these prepended with "`Remote >>`" to link directly to the remote content.
 
 <div class="folio-spacer-content"></div>
 

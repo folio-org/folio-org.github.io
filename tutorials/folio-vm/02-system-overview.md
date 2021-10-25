@@ -34,7 +34,7 @@ docker ps | grep okapi
 View this module's logs:
 
 ```
-docker logs --follow <container_name>
+docker logs --follow <container_id>
 ```
 
 ### Stripes log
@@ -64,7 +64,7 @@ docker ps | grep inventory
 View this module's logs:
 
 ```
-docker logs <container_name>
+docker logs <container_id>
 ```
 
 ---
