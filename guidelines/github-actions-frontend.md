@@ -69,7 +69,7 @@ Most repositories have the Jenkins CI pipeline configured as a "Required status 
 
 After the set-up and configuration is done, the workflow can be merged with the default branch and verified.
 
-## Running GitHub Actions from Forked Repositories
+## Forked repositories
 
 The workflows cannot be run sucessfully directly from forked repositories. There are organisational level secrets required to run CI steps such as `Run SonarCloud scan` and GA doesn't provide access to these secrets causing the workflow to fail.
 
