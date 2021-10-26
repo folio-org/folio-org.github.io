@@ -26,7 +26,9 @@ Easier-to-use interactive and command-line tools are available (see FAQ [How to 
 Each night the FOLIO [reference environments](/guides/automation/#reference-environments) are rebuilt using the current state of development.
 
 The continuous integration also constructs various Vagrant boxes.
-These are [available](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md#prebuilt-vagrant-boxes) to download for local use, providing a ready-to-run self-contained operating system environment and up-to-date FOLIO instance.
+These are [available](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md#prebuilt-vagrant-boxes) for local use, providing a ready-to-run self-contained operating system environment and up-to-date FOLIO instance.
+(Note that that link is only for explaining the various boxes.
+The first Lesson of this Tutorial will establish one for local use.)
 
 This tutorial will only focus on the `folio/release-core` VM
 (i.e. for the most recent "[flower release](/guides/regular-releases/)").
