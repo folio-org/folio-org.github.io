@@ -7,7 +7,7 @@ menuLink: yes
 menuTopTitle: Tutorials
 ---
 
-This lesson will establish the local workspace, and explain how to launch the box and shut it down, and how to keep it up-to-date.
+This lesson will establish the local workspace, explain how to launch the box, how to know when it is ready for interaction, how to shut it down, and how to keep it up-to-date.
 
 ## Create local workspace
 
@@ -37,26 +37,13 @@ vagrant up
 ```
 
 The output will show the VM starting.
+(If this is the first launch then the box will be downloaded, which will take some time.)
 When the command prompt is returned, then the system will be ready to inspect.
-**However wait a few minutes** because Okapi will still be starting modules.
 
-Some ports of the guest will be forwarded to the host, so the FOLIO system can be reached from the outside.
+**However wait a while** before attempting to interact, because Okapi will still be starting modules.
 
+Some ports of the guest will be forwarded to the host, so that the FOLIO system can be reached from the outside.
 Okapi will be listening on localhost port 9130, and the Stripes development server will be on localhost port 3000.
-
-## Quick visit
-
-Use the local web browser to login to the UI at `localhost:3000`<br/>
-The default administrative user is `diku_admin/admin`
-
-Inspect the Settings page to find the version of Okapi, and the installed modules:<br/>
-`http://localhost:3000/settings/about`
-
-Send an initial request directly to Okapi:
-
-```
-curl -s -S -w'\n' http://localhost:9130/_/version
-```
 
 ## Connect to the guest
 
@@ -66,16 +53,30 @@ In a terminal window on the host, connect to the VirtualBox guest:
 vagrant ssh
 ```
 
-Briefly inspect the [Okapi logfile](/tutorials/folio-vm/02-system-overview/#okapi-log).
+Follow the [Okapi logfile](/tutorials/folio-vm/02-system-overview/#okapi-log)
+to determine when the system is ready for interaction.
+
+When Okapi pauses occasionally and shows bursts of "Timer" tasks, then it should be ready for interaction.
+
+## Quick visit to UI
+
+Use the local web browser to login to the user interface at `localhost:3000`<br/>
+The default administrative user is `diku_admin/admin`
+
+Inspect the Settings page to find the version of Okapi, and the installed modules:<br/>
+`http://localhost:3000/settings/about`
+
+**Note**: If errors are presented, then you probably did not wait long enough.
+Do logout, wait, and then log in again.
+
+## Halt and rest
 
 Okay, that is enough fun.
 Now we are going to get out, and show how to halt and update the box.
 
-```
-exit
-```
+Do '`Ctrl-C`' to stop following the logfile.
 
-## Halt and rest
+Get out of the VM guest and return to the host. Do '`exit`'
 
 Now put the system to rest with '`vagrant halt`'
 
