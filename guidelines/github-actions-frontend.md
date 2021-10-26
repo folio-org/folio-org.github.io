@@ -71,14 +71,15 @@ After the set-up and configuration is done, the workflow can be merged with the 
 
 ## Forked repositories
 
-The workflows cannot be run sucessfully directly from forked repositories. There are organisational level secrets required to run CI steps such as `Run SonarCloud scan` and GA doesn't provide access to these secrets causing the workflow to fail.
+The workflows cannot be run successfully directly from forked repositories. There are organisation-level secrets required to run CI steps such as `Run SonarCloud scan`.
+The GitHub Actions do not provide access to these secrets, thereby causing the workflow to fail.
 
-To run the workflow and merge the PR following steps need to be followed :
+To run the workflow and merge the PR, the following steps need to be followed:
 - `git fetch $remote_branch`
 - `git checkout $branch`
 - `git push head origin`
 
-The above steps can be only peformed by someone who has write access to the target repository, so the PR author should add a **reviewer** to the PR who can then merge the PR.
+The above steps can be only performed by someone who has write access to the target repository, so the PR author should add a **reviewer** to the PR who can then merge the PR.
 
 <div class="folio-spacer-content"></div>
 
