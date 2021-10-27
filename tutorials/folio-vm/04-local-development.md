@@ -27,7 +27,7 @@ To determine dependencies of a certain module, following this technique.
 
 Create a new tenant with nothing installed, then simulate installation of the module in question, to show what other modules that it would require to be installed.
 
-(**Note**: As explained in [Lesson 1](/tutorials/folio-vm/01-create-workspace/), if the VM is recently launched then wait a few minutes, because Okapi will still be starting modules.)
+(**Note**: As explained in [Lesson 1](/tutorials/folio-vm/01-create-workspace/), if the VM is recently launched then **wait a while** because Okapi will still be starting modules.)
 
 ```shell
 #!/usr/bin/env bash
@@ -87,7 +87,7 @@ First verify the [Module dependency graph](#module-dependency-graph).
 If that step is not done, then still need to get the updated ModuleDescriptors from the registry.
 These will be the ModuleDescriptors that have been published since this VM was constructed.
 
-(**Note**: As explained in [Lesson 1](/tutorials/folio-vm/01-create-workspace/), if the VM is recently launched then wait a few minutes, because Okapi will still be starting modules.)
+(**Note**: As explained in [Lesson 1](/tutorials/folio-vm/01-create-workspace/), if the VM is recently launched then **wait a while** because Okapi will still be starting modules.)
 
 ```
 curl -w '\n' -HContent-type:application/json -X POST \
