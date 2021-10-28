@@ -21,6 +21,54 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/swagger.api/edge-caiasoft.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "edge-caiasoft",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/swagger.api/edge-dematic.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "edge-dematic",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/swagger.api/edge-inn-reach.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "edge-inn-reach",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/edge-lti-courses.raml"
@@ -266,6 +314,23 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/swagger.api/export-configs.yaml",
+        "src/main/resources/swagger.api/jobs.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "mod-data-export-spring",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/dataImport.raml"
@@ -288,6 +353,22 @@
     },
     "metadata": {},
     "name": "mod-data-import-converter-storage",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/swagger.api/ebsconet.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "mod-ebsconet",
     "org": "folio-org"
   },
   {
@@ -915,6 +996,22 @@
       ]
     },
     "name": "mod-quick-marc",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/swagger.api/remote-storage.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "mod-remote-storage",
     "org": "folio-org"
   },
   {
