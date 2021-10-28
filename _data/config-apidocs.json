@@ -141,6 +141,22 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/swagger.api/tenant.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "folio-spring-base",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/audit-data.raml",
