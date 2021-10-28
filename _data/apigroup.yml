@@ -81,10 +81,23 @@ data-import:
   modules:
     - mod-data-import
     - mod-data-import-converter-storage
+    - mod-data-export-spring
     - mod-data-export
     - mod-source-record-manager
     - mod-source-record-storage
     - mod-user-import
+remote-integration:
+  title: Remote integration
+  description: Integration with remote services.
+  modules:
+    - edge-caiasoft
+    - edge-dematic
+    - mod-ebsconet
+    - mod-inn-reach
+    - edge-inn-reach
+    - mod-remote-storage
+    - mod-rtac
+    - edge-rtac
 utilities:
   title: Utilities and tools
   description: Notes, tags, calendar, etc.
@@ -112,10 +125,7 @@ other:
     - acq-models
     - data-import-raml-storage
     - mod-eusage-reports
-    - mod-inn-reach
     - mod-ldp
-    - mod-rtac
-    - edge-rtac
 deprecated:
   title: Deprecated
   description: Some old ones that have been renamed recently.
