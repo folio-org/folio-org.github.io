@@ -81,15 +81,21 @@ data-import:
   modules:
     - mod-data-import
     - mod-data-import-converter-storage
+    - mod-data-export-spring
     - mod-data-export
     - mod-source-record-manager
     - mod-source-record-storage
     - mod-user-import
 remote-integration:
   title: Remote integration
-  description: Integration with remote services
+  description: Integration with remote services.
   modules:
+    - edge-caiasoft
+    - edge-dematic
+    - mod-ebsconet
     - mod-inn-reach
+    - edge-inn-reach
+    - mod-remote-storage
     - mod-rtac
     - edge-rtac
 utilities:
