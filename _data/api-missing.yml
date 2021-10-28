@@ -2,7 +2,6 @@
 # FOLIO-3231
 ---
 edge-search-srs:
-folio-spring-base:
 mod-bulk-edit:
 mod-data-export-worker:
 mod-translations:

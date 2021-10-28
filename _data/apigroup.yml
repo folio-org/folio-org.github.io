@@ -122,6 +122,7 @@ other:
   description: Not yet grouped.
   modules:
     - folio-custom-fields
+    - folio-spring-base
     - acq-models
     - data-import-raml-storage
     - mod-eusage-reports

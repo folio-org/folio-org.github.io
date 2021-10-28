@@ -446,7 +446,7 @@
       "name": "folio-spring-base",
       "org": "folio-org",
       "repoLanguageHint": "java",
-      "repoType": "other",
+      "repoType": "raml-shared",
       "snippetIntro": "<p>This is a library (jar) that contains the basic functionality and main dependencies required for development of FOLIO modules using Spring framework (also known as 'Spring Way').</p>"
     },
     {
