@@ -46,12 +46,12 @@
     {
       "name": "mod-circulation",
       "nameRepo": "mod-circulation",
-      "releaseDate": "2021-08-18T16:10:34+00:00",
-      "releaseName": "v22.0.4",
-      "releaseSha": "1388a32ef3fb59e1cb69dc975cfae09602d7fbcc",
-      "releaseTag": "v22.0.4",
+      "releaseDate": "2021-10-21T14:44:06+00:00",
+      "releaseName": "v22.0.5",
+      "releaseSha": "71e6090ac5e9e20f1bbcff0ca8b0757799be657c",
+      "releaseTag": "v22.0.5",
       "releaseTarget": "master",
-      "version": "22.0.4"
+      "version": "22.0.5"
     },
     {
       "name": "mod-circulation-storage",
@@ -116,12 +116,12 @@
     {
       "name": "mod-courses",
       "nameRepo": "mod-courses",
-      "releaseDate": "2021-07-28T20:04:22+00:00",
-      "releaseName": "v1.4.0",
-      "releaseSha": "81ca7dbd061d67a3c40e5b9b8cdce8db871798ef",
-      "releaseTag": "v1.4.0",
+      "releaseDate": "2021-10-08T18:44:57+00:00",
+      "releaseName": "v1.4.1",
+      "releaseSha": "11760a18b1ce638699bfd83600b091f42b66ac9c",
+      "releaseTag": "v1.4.1",
       "releaseTarget": "master",
-      "version": "1.4.0"
+      "version": "1.4.1"
     },
     {
       "name": "mod-data-export",
@@ -296,12 +296,12 @@
     {
       "name": "mod-invoice",
       "nameRepo": "mod-invoice",
-      "releaseDate": "2021-10-08T15:31:35+00:00",
-      "releaseName": "v5.1.6",
-      "releaseSha": "7ae16b6570095958ee757893db09139e4cba7245",
-      "releaseTag": "v5.1.6",
+      "releaseDate": "2021-10-21T14:18:37+00:00",
+      "releaseName": "v5.1.7",
+      "releaseSha": "953852a66a2f592fd5aa3ec8862de69773c2987d",
+      "releaseTag": "v5.1.7",
       "releaseTarget": "master",
-      "version": "5.1.6"
+      "version": "5.1.7"
     },
     {
       "name": "mod-invoice-storage",
@@ -496,12 +496,12 @@
     {
       "name": "mod-remote-storage",
       "nameRepo": "mod-remote-storage",
-      "releaseDate": "2021-09-20T17:23:46+00:00",
-      "releaseName": "v1.3.2",
-      "releaseSha": "60749d66bb4f8ad951d442b08129c91d233fa56a",
-      "releaseTag": "v1.3.2",
+      "releaseDate": "2021-10-26T14:44:38+00:00",
+      "releaseName": "v1.3.3",
+      "releaseSha": "9a82f143452d905e4c61606008e3b8333ef3ca57",
+      "releaseTag": "v1.3.3",
       "releaseTarget": "master",
-      "version": "1.3.2"
+      "version": "1.3.3"
     },
     {
       "name": "mod-rtac",
@@ -556,12 +556,12 @@
     {
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
-      "releaseDate": "2021-09-09T16:02:19+00:00",
-      "releaseName": "5.1.6",
-      "releaseSha": "841b6210d8e4629887c999c7eedf8f662120161f",
-      "releaseTag": "v5.1.6",
+      "releaseDate": "2021-10-28T15:57:46+00:00",
+      "releaseName": "5.1.7",
+      "releaseSha": "949d1243801d6e4090a93f12c34c22bf79beea61",
+      "releaseTag": "v5.1.7",
       "releaseTarget": "master",
-      "version": "5.1.6"
+      "version": "5.1.7"
     },
     {
       "name": "mod-tags",

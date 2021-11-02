@@ -938,11 +938,14 @@ Note: for this example to work it is important that the current directory
 of the Okapi is the top-level directory `.../okapi`.
 
 ```
-java -jar okapi-core/target/okapi-core-fat.jar dev
+java -Dtrace_headers=true -jar okapi-core/target/okapi-core-fat.jar dev
 ```
 
 The `dev` command tells to run it in development mode, which makes it start
 with a known clean state without any modules or tenants defined.
+
+Setting `trace_headers` to `true` makes Okapi return HTTP header
+`X-Okapi-Trace` with information about modules involved in a call.
 
 Okapi lists its PID (process ID) and says `API Gateway started`.  That
 means it is running, and listening on the default port which happens
@@ -2846,6 +2849,13 @@ leave it unmodified (default).
   Maximum number of iterations for deployment - before
   giving up (readiness check). Defaults to 60. A value, `n`, corresponds to roughly `n*n*0.2` seconds.
   This value, if set, overrides the `waitIterations` in the launch descriptor.
+* `trace_headers`: Controls whether Okapi adds X-Okapi-Trace headers. The
+ value is a boolean - `true` for enable, `false` for disable. Default is `false`.
+This property appeared in Okapi 4.10.0; trace header was always enabled
+before 4.10.0.
+* `enable_system_auth`: Controls whether Okapi checks token by calling Auth module
+when invoking system interfaces such as `_tenant`.
+The value is a boolean - `true` for enable, `false` for disable.  Default is `true`.
 
 #### Command
 
@@ -3213,7 +3223,7 @@ curl http://localhost:9130/_/proxy/tenants/testlib/timers
 The first entry fires a timer every 20 seconds. Disable it with:
 
 ```
-curl -XPATCH -d'{"id":"test-timer_0","routingEntry":{"delay":"0"}}' \
+curl -XPATCH -d'{"id":"test-timer_0","routingEntry":{"delay":"0"' \
     http://localhost:9130/_/proxy/tenants/testlib/timers
 ```
 
@@ -3231,7 +3241,7 @@ add Java parameter `-Dvertx.metrics.options.enabled=true` first.
 
 More Java parameters are needed to configure which backends to use
 * `-DinfluxDbOptions='{"uri": "http://localhost:8086", "db":"folio"}'` - Send metrics to InfluxDB
-* `-DprometheusOptions='{"embeddedServerOptions": {"port": 9930}}'` - Expose `<server>:9930/metrics` for Prometheus
+* `-DprometheusOptions='{"embeddedServerOptions": {"port": 9930'` - Expose `<server>:9930/metrics` for Prometheus
 * `-DjmxMetricsOptions='{"domain": "org.folio"}'` - JMX
 
 Another Java parameter can be used to filter metrics
@@ -3241,7 +3251,7 @@ A full example with all backends enabled and filter parameter configured:
 
     java -Dvertx.metrics.options.enabled=true \
       -DinfluxDbOptions='{"uri": "http://localhost:8086", "db":"folio"}' \
-      -DprometheusOptions='{"embeddedServerOptions": {"port": 9930}}' \
+      -DprometheusOptions='{"embeddedServerOptions": {"port": 9930' \
       -DjmxMetricsOptions='{"domain": "org.folio"}' \
       -DmetricsPrefixFilter=org.folio \
       -jar okapi-core/target/okapi-core-fat.jar dev
