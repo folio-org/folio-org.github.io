@@ -556,12 +556,12 @@
     {
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
-      "releaseDate": "2021-09-09T16:02:19+00:00",
-      "releaseName": "5.1.6",
-      "releaseSha": "841b6210d8e4629887c999c7eedf8f662120161f",
-      "releaseTag": "v5.1.6",
+      "releaseDate": "2021-10-28T15:57:46+00:00",
+      "releaseName": "5.1.7",
+      "releaseSha": "949d1243801d6e4090a93f12c34c22bf79beea61",
+      "releaseTag": "v5.1.7",
       "releaseTarget": "master",
-      "version": "5.1.6"
+      "version": "5.1.7"
     },
     {
       "name": "mod-tags",
