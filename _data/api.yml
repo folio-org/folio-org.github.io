@@ -211,6 +211,7 @@ mod-inventory-storage:
     directory: ramls
     files:
       - authorities
+      - authority-note-type
       - bound-with-part
       - holdings-sources
       - holdings-storage
