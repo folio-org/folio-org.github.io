@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-10-22T00:36:55.563648+00:00"
+    "generatedDateTime": "2021-11-08T23:05:22.101576+00:00"
   },
   "repos": [
     {
@@ -244,9 +244,13 @@
       "docDirName": null,
       "name": "eslint-config-stripes",
       "org": "folio-org",
-      "repoLanguageHint": "node",
+      "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "main",
@@ -426,7 +430,10 @@
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": "<p>This project contains examples of FOLIO modules (currently a server-side Vert.x-based module, but more, e.g. a UI/front-end module will come later), and some general information about writing, packaging and describing modules.</p>"
+      "snippetIntro": "<p>This project contains examples of FOLIO modules (currently a server-side Vert.x-based module, but more, e.g. a UI/front-end module will come later), and some general information about writing, packaging and describing modules.</p>",
+      "workflows": [
+        "hello-vertx.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -967,6 +974,20 @@
     },
     {
       "defaultBranch": "master",
+      "description": "Manage walk-in contracts",
+      "docDirName": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
+      "hintRmb": true,
+      "isRmb": true,
+      "name": "mod-idm-connect",
+      "org": "folio-org",
+      "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>The module manages walk-in contracts. It is tailored to the specific requirements at Leipzig University Library. You may not find this module useful in different environments.</p>"
+    },
+    {
+      "defaultBranch": "master",
       "description": "Implements INN-Reach service client",
       "docDirName": null,
       "hintOas": true,
@@ -993,6 +1014,19 @@
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-inventory-pronto",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
       "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
       "hintRmb": true,
       "isRmb": true,
@@ -1001,7 +1035,10 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>FOLIO compatible inventory storage module.</p>"
+      "snippetIntro": "<p>FOLIO compatible inventory storage module.</p>",
+      "workflows": [
+        "mac.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1749,7 +1786,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": "<p>Stripes CLI is a command line interface to facilitate the creation, development, building, and testing of Stripes UI modules.</p>"
+      "snippetIntro": "<p>Stripes CLI is a command line interface to facilitate the creation, development, building, and testing of Stripes UI modules.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1907,7 +1952,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": "<p>stripes-testing is a toolkit for building integration tests against Stripes UI modules and platforms. There are no tests in this repository; instead they exist in the platforms they exercise (e.g. platform-core). Tests that operate only a single app (unit tests) should be written with the <a href='https://github.com/folio-org/stripes/blob/master/doc/bigtest.md'>BigTest</a> toolkit instead.</p>"
+      "snippetIntro": "<p>stripes-testing is a toolkit for building integration tests against Stripes UI modules and platforms. There are no tests in this repository; instead they exist in the platforms they exercise (e.g. platform-core). Tests that operate only a single app (unit tests) should be written with the <a href='https://github.com/folio-org/stripes/blob/master/doc/bigtest.md'>BigTest</a> toolkit instead.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1945,7 +1998,25 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": "<p>Stripes Webpack contains webpack config files used for building and serving Folio bundles via <a href='https://github.com/folio-org/stripes-cli'>stripes-cli</a>.</p>"
+      "snippetIntro": "<p>Stripes Webpack contains webpack config files used for building and serving Folio bundles via <a href='https://github.com/folio-org/stripes-cli'>stripes-cli</a>.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": "FOLIO Technical Council Documents",
+      "docDirName": null,
+      "name": "tech-council",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
@@ -1973,9 +2044,13 @@
       "docDirName": null,
       "name": "ui-app-template",
       "org": "folio-org",
-      "repoLanguageHint": "node",
+      "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run <strong>uiAppName</strong> and start your development.</p>"
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run <strong>uiAppName</strong> and start your development.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2005,7 +2080,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for institutional calendar functions.</p>"
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for institutional calendar functions.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2015,7 +2098,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for checking items in with simulated scans of barcodes</p>"
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for checking items in with simulated scans of barcodes</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2025,7 +2116,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for checking items out with simulated scans of patron card and item barcode.</p>"
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for checking items out with simulated scans of patron card and item barcode.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2035,7 +2134,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for Circulation management.</p>"
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for Circulation management.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2105,7 +2212,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for managing developer settings. This will not be included in production deployments.</p>"
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for managing developer settings. This will not be included in production deployments.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2224,7 +2339,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for administrating locally created instances, holdings records and items.</p>"
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for administrating locally created instances, holdings records and items.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2304,7 +2427,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for managing user profile settings. This exists only to provide a settings section: there is no app.</p>"
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for managing user profile settings. This exists only to provide a settings section: there is no app.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2377,7 +2508,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>create-inventory-records</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='create-inventory-records'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>create-inventory-records</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='create-inventory-records'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2477,7 +2616,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-instance</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-instance'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-instance</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-instance'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2537,7 +2684,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-user</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-user'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-user</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-user'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2596,7 +2751,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for making requests on items.</p>"
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for making requests on items.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2615,7 +2778,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>The Search UI Module, or <code>ui-search</code>, is a Stripes UI module used for searching, sorting, filtering and viewing records from <a href='https://www.openlibraryenvironment.org/archives/411'>the FOLIO Codex</a>, an aggregation of bibliographic metadata from multiple sources.</p>"
+      "snippetIntro": "<p>The Search UI Module, or <code>ui-search</code>, is a Stripes UI module used for searching, sorting, filtering and viewing records from <a href='https://www.openlibraryenvironment.org/archives/411'>the FOLIO Codex</a>, an aggregation of bibliographic metadata from multiple sources.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2625,7 +2796,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This package include a Stripes handler module called <code>servicepoints</code> which will be executed during stripes-core initialization.</p>"
+      "snippetIntro": "<p>This package include a Stripes handler module called <code>servicepoints</code> which will be executed during stripes-core initialization.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2644,7 +2823,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for Tags management.</p>"
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for Tags management.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2654,7 +2841,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for managing organization settings. This exists only to provide a settings section: there is no app.</p>"
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for managing organization settings. This exists only to provide a settings section: there is no app.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
