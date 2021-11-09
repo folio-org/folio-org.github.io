@@ -46,12 +46,12 @@
     {
       "name": "mod-circulation",
       "nameRepo": "mod-circulation",
-      "releaseDate": "2021-10-21T14:44:06+00:00",
-      "releaseName": "v22.0.5",
-      "releaseSha": "71e6090ac5e9e20f1bbcff0ca8b0757799be657c",
-      "releaseTag": "v22.0.5",
+      "releaseDate": "2021-11-05T14:35:45+00:00",
+      "releaseName": "v22.0.6",
+      "releaseSha": "7f6c9502323323365349df05f19221e35e982d71",
+      "releaseTag": "v22.0.6",
       "releaseTarget": "master",
-      "version": "22.0.5"
+      "version": "22.0.6"
     },
     {
       "name": "mod-circulation-storage",
@@ -96,12 +96,12 @@
     {
       "name": "mod-configuration",
       "nameRepo": "mod-configuration",
-      "releaseDate": "2021-09-28T17:27:42+00:00",
-      "releaseName": "v5.7.1",
-      "releaseSha": "c1d592bfa915b0d278d2aa5751aee66c071bb73d",
-      "releaseTag": "v5.7.1",
+      "releaseDate": "2021-11-08T09:11:49+00:00",
+      "releaseName": "v5.7.2",
+      "releaseSha": "babf45c3b85287d51bfdbeafaedf1b2fe1ab65dd",
+      "releaseTag": "v5.7.2",
       "releaseTarget": "master",
-      "version": "5.7.1"
+      "version": "5.7.2"
     },
     {
       "name": "mod-copycat",
