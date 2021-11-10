@@ -576,6 +576,22 @@
   },
   {
     "config": {
+      "oas": [],
+      "raml": [
+        "ramls/idm-connect.raml"
+      ],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
+    "name": "mod-idm-connect",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [
         "src/main/resources/swagger.api/inn-reach.yaml"
       ],
