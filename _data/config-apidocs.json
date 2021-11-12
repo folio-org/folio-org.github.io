@@ -593,7 +593,9 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/swagger.api/inn-reach.yaml"
+        "src/main/resources/swagger.api/circulation.yaml",
+        "src/main/resources/swagger.api/contribution.yaml",
+        "src/main/resources/swagger.api/settings.yaml"
       ],
       "raml": [],
       "upload": []
