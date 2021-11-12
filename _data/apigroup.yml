@@ -93,6 +93,7 @@ remote-integration:
     - edge-caiasoft
     - edge-dematic
     - mod-ebsconet
+    - mod-idm-connect
     - mod-inn-reach
     - edge-inn-reach
     - mod-remote-storage
