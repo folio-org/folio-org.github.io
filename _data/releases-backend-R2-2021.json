@@ -276,12 +276,12 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2021-09-28T09:55:38+00:00",
-      "releaseName": "v17.0.6",
-      "releaseSha": "b061eeb5bf8ae75c41d576a4119eff67569e2b14",
-      "releaseTag": "v17.0.6",
+      "releaseDate": "2021-11-15T20:13:39+00:00",
+      "releaseName": "v17.0.7",
+      "releaseSha": "5d39afe512f2b209d6d8bc6dd66593fe983635fe",
+      "releaseTag": "v17.0.7",
       "releaseTarget": "master",
-      "version": "17.0.6"
+      "version": "17.0.7"
     },
     {
       "name": "mod-inventory-storage",
