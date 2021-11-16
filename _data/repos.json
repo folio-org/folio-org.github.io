@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-11-08T23:05:22.101576+00:00"
+    "generatedDateTime": "2021-11-15T22:50:34.949822+00:00"
   },
   "repos": [
     {
@@ -2597,6 +2597,16 @@
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
       "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-plugin-find-finc-metadata-source and start your development.</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Stripes UI plugin: Display, filter and select funds",
+      "docDirName": null,
+      "name": "ui-plugin-find-fund",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-fund</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-fund'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "defaultBranch": "master",
