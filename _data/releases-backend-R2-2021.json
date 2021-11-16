@@ -116,12 +116,12 @@
     {
       "name": "mod-courses",
       "nameRepo": "mod-courses",
-      "releaseDate": "2021-10-08T18:44:57+00:00",
-      "releaseName": "v1.4.1",
-      "releaseSha": "11760a18b1ce638699bfd83600b091f42b66ac9c",
-      "releaseTag": "v1.4.1",
+      "releaseDate": "2021-11-11T13:08:06+00:00",
+      "releaseName": "v1.4.2",
+      "releaseSha": "8c9e44083055f432c0d1ff75c7e65ef973710682",
+      "releaseTag": "v1.4.2",
       "releaseTarget": "master",
-      "version": "1.4.1"
+      "version": "1.4.2"
     },
     {
       "name": "mod-data-export",
@@ -276,12 +276,12 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2021-09-28T09:55:38+00:00",
-      "releaseName": "v17.0.6",
-      "releaseSha": "b061eeb5bf8ae75c41d576a4119eff67569e2b14",
-      "releaseTag": "v17.0.6",
+      "releaseDate": "2021-11-15T20:13:39+00:00",
+      "releaseName": "v17.0.7",
+      "releaseSha": "5d39afe512f2b209d6d8bc6dd66593fe983635fe",
+      "releaseTag": "v17.0.7",
       "releaseTarget": "master",
-      "version": "17.0.6"
+      "version": "17.0.7"
     },
     {
       "name": "mod-inventory-storage",
