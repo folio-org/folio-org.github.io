@@ -169,7 +169,7 @@ So the documentation does not relate to feature development branches.
 
 #### Versioned API Docs
 
-To find documentation for each software version, amend the URL of each generated document view to add the version number (major.minor).<br/>
+To find documentation for each software version, amend the URL of each generated document view to add the version number (major.minor).\
 For example [mod-notes](#mod-notes), do `mod-notes/2.11/...`
 
 #### Explain "views" {#explain-views}
