@@ -19,7 +19,7 @@ Remember that the Stripes service is forwarded through port 3000, so we can inte
 
 Admin login: diku_admin/admin
 
-The Settings section shows the system information and software versions for the interfaces, services, and dependencies:<br/>
+The Settings section shows the system information and software versions for the interfaces, services, and dependencies:\
 `http://localhost:3000/settings/about`
 
 Browse and view the Users and Inventory sections.

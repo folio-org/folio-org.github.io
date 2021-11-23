@@ -115,7 +115,7 @@ Do not use links that start with `../foo` which will not function.
 
 ## Line breaks
 
-If a line-break is required within a content paragraph, then use the html `<br/>` element.
+If a line-break is required within a content paragraph, then use the [Markdown line-break](/faqs/how-to-use-editorconfig/#markdown-line-break) (line termination with backslash).
 
 ## Verify links
 

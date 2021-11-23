@@ -296,12 +296,12 @@
     {
       "name": "mod-invoice",
       "nameRepo": "mod-invoice",
-      "releaseDate": "2021-11-02T16:52:48+00:00",
-      "releaseName": "v5.1.8",
-      "releaseSha": "cd49bdf0016cb41246077481c3ef59e3e441668c",
-      "releaseTag": "v5.1.8",
+      "releaseDate": "2021-11-17T14:17:05+00:00",
+      "releaseName": "v5.1.9",
+      "releaseSha": "ec56f37d88ee0bbfa438b2ac1214e0d34ef2ff46",
+      "releaseTag": "v5.1.9",
       "releaseTarget": "master",
-      "version": "5.1.8"
+      "version": "5.1.9"
     },
     {
       "name": "mod-invoice-storage",
@@ -406,12 +406,12 @@
     {
       "name": "mod-orders-storage",
       "nameRepo": "mod-orders-storage",
-      "releaseDate": "2021-09-23T07:57:16+00:00",
-      "releaseName": "v13.0.3",
-      "releaseSha": "bd90bbc854a03f82a5c486570be9a9ae8395f559",
-      "releaseTag": "v13.0.3",
+      "releaseDate": "2021-11-22T15:23:59+00:00",
+      "releaseName": "v13.0.4",
+      "releaseSha": "a07baea08f0de2b2babdbff16399b7d027352b94",
+      "releaseTag": "v13.0.4",
       "releaseTarget": "master",
-      "version": "13.0.3"
+      "version": "13.0.4"
     },
     {
       "name": "mod-organizations",
@@ -556,12 +556,12 @@
     {
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
-      "releaseDate": "2021-10-28T15:57:46+00:00",
-      "releaseName": "5.1.7",
-      "releaseSha": "949d1243801d6e4090a93f12c34c22bf79beea61",
-      "releaseTag": "v5.1.7",
+      "releaseDate": "2021-11-18T20:49:27+00:00",
+      "releaseName": "5.1.8",
+      "releaseSha": "ff558456bad99287435951b325f0a53301af2e6a",
+      "releaseTag": "v5.1.8",
       "releaseTarget": "master",
-      "version": "5.1.7"
+      "version": "5.1.8"
     },
     {
       "name": "mod-tags",
