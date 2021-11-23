@@ -69,7 +69,7 @@ In the bottom "Further information" section of the README, add a link to your pr
 
 Refer to the Wiki [FOLIO Code of Conduct](https://wiki.folio.org/display/COMMUNITY/FOLIO+Code+of+Conduct).
 
-Add [.editorconfig](/guides/developer-setup#use-editorconfig-for-consistent-whitespace) file.
+Add [.editorconfig](/faqs/how-to-use-editorconfig/) configuration file.
 
 Add initial NEWS.md or CHANGELOG.md file.
 
