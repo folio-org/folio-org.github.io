@@ -50,8 +50,8 @@ abc xyz.
 abc, xyz
 ```
 
-This has the SQL equivalents (both are the same):<br/>
-`table.field = 'abc xyz'`<br/>
+This has the SQL equivalents (both are the same):\
+`table.field = 'abc xyz'`\
 `table.field LIKE 'abc xyz'`
 
 ### Field match examples 2 {#field-examples-2}
@@ -78,7 +78,7 @@ xyz abc
 abc, xyz
 ```
 
-This has the SQL equivalent:<br/>
+This has the SQL equivalent:\
 `table.field LIKE 'abc xyz%'`
 
 ### Field match examples 3 {#field-examples-3}
@@ -106,7 +106,7 @@ xyz abc
 abc, xyz
 ```
 
-This has the SQL equivalent:<br/>
+This has the SQL equivalent:\
 `table.field LIKE '%abc xyz%'`
 
 Note that this is slow on large datasets because b-tree database indexes
@@ -157,7 +157,7 @@ Each does not match:
 abcd
 ```
 
-These have the SQL equivalent:<br/>
+These have the SQL equivalent:\
 `to_tsvector('simple', table.jsonb->>'field') @@ to_tsquery('simple', 'abc')`
 
 ### Word match examples 2 {#word-examples-2}
@@ -180,7 +180,7 @@ It does not match:
 abc xyzq
 ```
 
-This has the SQL equivalent:<br/>
+This has the SQL equivalent:\
 `to_tsvector('simple', table.jsonb->>'field') @@ to_tsquery('simple', 'abc & xyz')`
 
 ### Word match examples 3 {#word-examples-3}
@@ -207,7 +207,7 @@ xyzq
 qqq
 ```
 
-This has the SQL equivalent:<br/>
+This has the SQL equivalent:\
 `to_tsvector('simple', table.jsonb->>'field') @@ to_tsquery('simple', 'abc | xyz')`
 
 ### Word match examples 4 {#word-examples-4}
@@ -232,7 +232,7 @@ xyz abc
 abc xyzq
 ```
 
-This has the SQL equivalent:<br/>
+This has the SQL equivalent:\
 `to_tsvector('simple', table.jsonb->>'field') @@ to_tsquery('simple', 'abc <-> xyz')`
 
 ### Word match examples 5 {#word-examples-5}
@@ -256,6 +256,6 @@ It does not match:
 xyzabc
 ```
 
-This has the SQL equivalent:<br/>
+This has the SQL equivalent:\
 `to_tsvector('simple', table.jsonb->>'field') @@ to_tsquery('simple', 'abc:*')`
 
