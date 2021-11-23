@@ -59,10 +59,10 @@ curl -s -S -w'\n' \
 The best facility at this stage of the project is provided by the [ui-developer](/source-code/map/#ui-developer) module.
 
 Do login to the relevant running FOLIO system, and visit the "Settings : Developer : Okapi paths" page.
-This will list the "resource path to interface mapper" for all of the modules configured for that FOLIO instance.<br/>
+This will list the "resource path to interface mapper" for all of the modules configured for that FOLIO instance.\
 For example: [https://folio-snapshot.dev.folio.org/settings/developer/okapi-paths](https://folio-snapshot.dev.folio.org/settings/developer/okapi-paths)
 
-Also the "resource path to permission-set mapper" shows which permissions are needed in order to access a certain endpoint:<br/>
+Also the "resource path to permission-set mapper" shows which permissions are needed in order to access a certain endpoint:\
 [https://folio-snapshot.dev.folio.org/settings/developer/can-i-use](https://folio-snapshot.dev.folio.org/settings/developer/can-i-use)
 
 Developers will also find other gems at the Developer Settings area.

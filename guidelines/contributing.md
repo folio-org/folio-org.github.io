@@ -351,7 +351,7 @@ The process is [explained](/guides/code-analysis), along with usage notes and co
 
 For XML and JSON and RAML files, the same: two-space indent and no tabs.
 
-Some projects do provide a `.editorconfig` file.
+Some projects do [provide](/faqs/how-to-use-editorconfig/) a `.editorconfig` file.
 Remember to set your IDE and editors to remove trailing spaces on saving files,
 since those produce unnecessary diffs in Git.
 Refer to coding style [configuration](/guides/developer-setup#coding-style) assistance.
