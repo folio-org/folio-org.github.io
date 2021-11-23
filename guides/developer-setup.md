@@ -79,14 +79,7 @@ The process is [explained](/guides/code-analysis), along with usage notes and co
 
 ### Use EditorConfig for consistent whitespace
 
-Many FOLIO repositories have a `.editorconfig` configuration file at their top level. This enables consistent whitespace handling.
-
-Refer to [EditorConfig.org](http://editorconfig.org) which explains that some text editors have native support, whereas others need a plugin.
-
-Consult its documentation for each plugin. Note that some do not handle all EditorConfig properties.
-In such cases refer to the documentation for the particular text editor, as it might have its own facilities.
-For example, the Java text editor in Eclipse has its own configuration for `trim_trailing_whitespace`
-(see [notes](http://stackoverflow.com/questions/14178839/is-there-a-way-to-automatically-remove-trailing-spaces-in-eclipse)).
+Many FOLIO repositories have a `.editorconfig` [configuration](/faqs/how-to-use-editorconfig/) file at their top level. This enables consistent whitespace handling and assists with consistent [coding-style](/guidelines/contributing/#coding-style).
 
 ### No license header
 

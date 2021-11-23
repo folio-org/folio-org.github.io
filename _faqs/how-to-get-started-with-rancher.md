@@ -128,7 +128,7 @@ would be used:
    ```
 
 ## Manage scratch environment
-To create, update or delete your environment in Rancher, use this Jenkins pipeline:<br/>
+To create, update or delete your environment in Rancher, use this Jenkins pipeline:\
 <https://jenkins-aws.indexdata.com/job/scratch_environment/job/manage-scratch-environment/>
 
 * Ensure that you are logged in to Jenkins
@@ -147,7 +147,7 @@ To create, update or delete your environment in Rancher, use this Jenkins pipeli
 * Then select "Build"
 
 ## Build backend module from branch
-Any backend module can be built from a specific branch. Use this Jenkins pipeline:<br/>
+Any backend module can be built from a specific branch. Use this Jenkins pipeline:\
 <https://jenkins-aws.indexdata.com/job/scratch_environment/job/BUILD-BACKEND/>
 
 * Ensure that you are logged in to Jenkins
@@ -176,7 +176,7 @@ Any backend module can be built from a specific branch. Use this Jenkins pipelin
 * Select "Upgrade"
 
 ## Build UI module from branch
-To build UI from a specific branch, use this Jenkins pipeline:<br/>
+To build UI from a specific branch, use this Jenkins pipeline:\
 <https://jenkins-aws.indexdata.com/job/scratch_environment/job/BUILD-UI/>
 
 * Ensure that you are logged in to Jenkins

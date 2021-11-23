@@ -60,10 +60,10 @@ When Okapi pauses occasionally and shows bursts of "Timer" tasks, then it should
 
 ## Quick visit to UI
 
-Use the local web browser to login to the user interface at `localhost:3000`<br/>
+Use the local web browser to login to the user interface at `localhost:3000`\
 The default administrative user is `diku_admin/admin`
 
-Inspect the Settings page to find the version of Okapi, and the installed modules:<br/>
+Inspect the Settings page to find the version of Okapi, and the installed modules:\
 `http://localhost:3000/settings/about`
 
 **Note**: If errors are presented, then you probably did not wait long enough.
@@ -86,7 +86,7 @@ When ready to recommence, simply do '`vagrant up`'
 
 As explained in the [background overview](../overview/#background) section, the FOLIO VMs are regularly rebuilt with the current state of development.
 
-The local system does not need to be updated every day, but when desired then do:<br/>
+The local system does not need to be updated every day, but when desired then do:\
 '`vagrant halt`' and then '`vagrant box update`'
 (followed by '`vagrant destroy`' to disable the old default machine).
 

@@ -196,7 +196,7 @@ Modules should now be using the new CI job "[api-lint](/guides/api-lint)" ("`doA
 
 For modules that are now using the "api-doc" CI facility, there is an automated daily workflow "[gather-config-apidocs](https://github.com/folio-org/folio-org.github.io/actions/workflows/gather-config-apidocs.yml)" which collects configuration changes.
 So there will be a delay for new (or deleted) entries to be listed in their table.
-Updates to the actual generated API documents for each module do [happen](#usage-notes) automatically, being deployed during their “merge to main branch” phase.
+Updates to the actual generated API documents for each module do [happen](#generated-during-ci) automatically, being deployed during their “merge to main branch” phase.
 
 #### Linking to API Docs tables {#explain-link-api-docs}
 
