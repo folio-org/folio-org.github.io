@@ -124,6 +124,7 @@ other:
   modules:
     - folio-custom-fields
     - folio-spring-base
+    - folio-vertx-lib
     - acq-models
     - data-import-raml-storage
     - mod-eusage-reports
