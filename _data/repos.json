@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-11-15T22:50:34.949822+00:00"
+    "generatedDateTime": "2021-11-24T02:42:42.646307+00:00"
   },
   "repos": [
     {
@@ -432,7 +432,7 @@
       "repoType": "other",
       "snippetIntro": "<p>This project contains examples of FOLIO modules (currently a server-side Vert.x-based module, but more, e.g. a UI/front-end module will come later), and some general information about writing, packaging and describing modules.</p>",
       "workflows": [
-        "hello-vertx.yml"
+        "simple.yml"
       ]
     },
     {
@@ -475,6 +475,17 @@
       "repoLanguageHint": "other",
       "repoType": "other",
       "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": "FOLIO modules library utility",
+      "docDirName": null,
+      "hintOas": true,
+      "name": "folio-vertx-lib",
+      "org": "folio-org",
+      "repoLanguageHint": "java",
+      "repoType": "raml-shared",
+      "snippetIntro": "<p><a href='https://github.com/folio-org/folio-vertx-lib'>folio-vertx-lib</a> is a library for developing FOLIO modules based on Vert.x. This is a library, not a framework, with utilities in no particular order:</p>"
     },
     {
       "defaultBranch": "master",

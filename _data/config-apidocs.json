@@ -157,6 +157,22 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/openapi/tenant-2.0.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "folio-vertx-lib",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/audit-data.raml",
@@ -433,8 +449,7 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/openapi/eusage-reports-1.0.yaml",
-        "src/main/resources/openapi/tenant-2.0.yaml"
+        "src/main/resources/openapi/eusage-reports-1.0.yaml"
       ],
       "raml": [],
       "upload": []
