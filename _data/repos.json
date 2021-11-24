@@ -484,7 +484,7 @@
       "name": "folio-vertx-lib",
       "org": "folio-org",
       "repoLanguageHint": "java",
-      "repoType": "other",
+      "repoType": "raml-shared",
       "snippetIntro": "<p><a href='https://github.com/folio-org/folio-vertx-lib'>folio-vertx-lib</a> is a library for developing FOLIO modules based on Vert.x. This is a library, not a framework, with utilities in no particular order:</p>"
     },
     {
