@@ -461,6 +461,7 @@ mod-orders:
     version1: true
     directory: ramls
     files:
+      - acquisition_method
       - acquisitions-units
       - check-in
       - configuration
@@ -482,6 +483,7 @@ mod-orders-storage:
     version1: true
     directory: ramls
     files:
+      - acquisition_method
       - acquisitions-unit
       - alert
       - configuration
