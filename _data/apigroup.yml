@@ -93,6 +93,7 @@ remote-integration:
     - edge-caiasoft
     - edge-dematic
     - mod-ebsconet
+    - mod-idm-connect
     - mod-inn-reach
     - edge-inn-reach
     - mod-remote-storage
@@ -123,6 +124,7 @@ other:
   modules:
     - folio-custom-fields
     - folio-spring-base
+    - folio-vertx-lib
     - acq-models
     - data-import-raml-storage
     - mod-eusage-reports

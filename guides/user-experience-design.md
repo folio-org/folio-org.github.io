@@ -16,7 +16,7 @@ Some starting points are:
 * [Prototypes](https://ux.folio.org/docs/prototypes/)
 -- The UX lifecycle of using FOLIO.
 
-* [Guidelines](https://ux.folio.org/docs/guidelines/)
+* [Guidelines](https://ux.folio.org/docs/all-guidelines/)
 -- FOLIO design guidelines. Standards for consistency and unified experience.
 Includes detailed information about how to design an app, what layout and component to choose from, what type of patterns are available, component links to Storybook and direct to the relevant stripes-components at GitHub.
 

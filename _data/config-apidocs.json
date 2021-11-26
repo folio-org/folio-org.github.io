@@ -157,6 +157,22 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/openapi/tenant-2.0.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "folio-vertx-lib",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/audit-data.raml",
@@ -433,8 +449,7 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/openapi/eusage-reports-1.0.yaml",
-        "src/main/resources/openapi/tenant-2.0.yaml"
+        "src/main/resources/openapi/eusage-reports-1.0.yaml"
       ],
       "raml": [],
       "upload": []
@@ -576,8 +591,26 @@
   },
   {
     "config": {
+      "oas": [],
+      "raml": [
+        "ramls/idm-connect.raml"
+      ],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
+    "name": "mod-idm-connect",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [
-        "src/main/resources/swagger.api/inn-reach.yaml"
+        "src/main/resources/swagger.api/circulation.yaml",
+        "src/main/resources/swagger.api/contribution.yaml",
+        "src/main/resources/swagger.api/settings.yaml"
       ],
       "raml": [],
       "upload": []
@@ -613,6 +646,7 @@
       "raml": [
         "ramls/alternative-title-type.raml",
         "ramls/authorities.raml",
+        "ramls/authority-note-type.raml",
         "ramls/bound-with-part.raml",
         "ramls/call-number-type.raml",
         "ramls/classification-type.raml",

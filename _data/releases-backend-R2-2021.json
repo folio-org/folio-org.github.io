@@ -46,12 +46,12 @@
     {
       "name": "mod-circulation",
       "nameRepo": "mod-circulation",
-      "releaseDate": "2021-10-21T14:44:06+00:00",
-      "releaseName": "v22.0.5",
-      "releaseSha": "71e6090ac5e9e20f1bbcff0ca8b0757799be657c",
-      "releaseTag": "v22.0.5",
+      "releaseDate": "2021-11-05T14:35:45+00:00",
+      "releaseName": "v22.0.6",
+      "releaseSha": "7f6c9502323323365349df05f19221e35e982d71",
+      "releaseTag": "v22.0.6",
       "releaseTarget": "master",
-      "version": "22.0.5"
+      "version": "22.0.6"
     },
     {
       "name": "mod-circulation-storage",
@@ -96,12 +96,12 @@
     {
       "name": "mod-configuration",
       "nameRepo": "mod-configuration",
-      "releaseDate": "2021-09-28T17:27:42+00:00",
-      "releaseName": "v5.7.1",
-      "releaseSha": "c1d592bfa915b0d278d2aa5751aee66c071bb73d",
-      "releaseTag": "v5.7.1",
+      "releaseDate": "2021-11-08T09:11:49+00:00",
+      "releaseName": "v5.7.2",
+      "releaseSha": "babf45c3b85287d51bfdbeafaedf1b2fe1ab65dd",
+      "releaseTag": "v5.7.2",
       "releaseTarget": "master",
-      "version": "5.7.1"
+      "version": "5.7.2"
     },
     {
       "name": "mod-copycat",
@@ -116,12 +116,12 @@
     {
       "name": "mod-courses",
       "nameRepo": "mod-courses",
-      "releaseDate": "2021-10-08T18:44:57+00:00",
-      "releaseName": "v1.4.1",
-      "releaseSha": "11760a18b1ce638699bfd83600b091f42b66ac9c",
-      "releaseTag": "v1.4.1",
+      "releaseDate": "2021-11-11T13:08:06+00:00",
+      "releaseName": "v1.4.2",
+      "releaseSha": "8c9e44083055f432c0d1ff75c7e65ef973710682",
+      "releaseTag": "v1.4.2",
       "releaseTarget": "master",
-      "version": "1.4.1"
+      "version": "1.4.2"
     },
     {
       "name": "mod-data-export",
@@ -276,12 +276,12 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2021-09-28T09:55:38+00:00",
-      "releaseName": "v17.0.6",
-      "releaseSha": "b061eeb5bf8ae75c41d576a4119eff67569e2b14",
-      "releaseTag": "v17.0.6",
+      "releaseDate": "2021-11-15T20:13:39+00:00",
+      "releaseName": "v17.0.7",
+      "releaseSha": "5d39afe512f2b209d6d8bc6dd66593fe983635fe",
+      "releaseTag": "v17.0.7",
       "releaseTarget": "master",
-      "version": "17.0.6"
+      "version": "17.0.7"
     },
     {
       "name": "mod-inventory-storage",
@@ -296,12 +296,12 @@
     {
       "name": "mod-invoice",
       "nameRepo": "mod-invoice",
-      "releaseDate": "2021-11-02T16:52:48+00:00",
-      "releaseName": "v5.1.8",
-      "releaseSha": "cd49bdf0016cb41246077481c3ef59e3e441668c",
-      "releaseTag": "v5.1.8",
+      "releaseDate": "2021-11-17T14:17:05+00:00",
+      "releaseName": "v5.1.9",
+      "releaseSha": "ec56f37d88ee0bbfa438b2ac1214e0d34ef2ff46",
+      "releaseTag": "v5.1.9",
       "releaseTarget": "master",
-      "version": "5.1.8"
+      "version": "5.1.9"
     },
     {
       "name": "mod-invoice-storage",
@@ -406,12 +406,12 @@
     {
       "name": "mod-orders-storage",
       "nameRepo": "mod-orders-storage",
-      "releaseDate": "2021-09-23T07:57:16+00:00",
-      "releaseName": "v13.0.3",
-      "releaseSha": "bd90bbc854a03f82a5c486570be9a9ae8395f559",
-      "releaseTag": "v13.0.3",
+      "releaseDate": "2021-11-22T15:23:59+00:00",
+      "releaseName": "v13.0.4",
+      "releaseSha": "a07baea08f0de2b2babdbff16399b7d027352b94",
+      "releaseTag": "v13.0.4",
       "releaseTarget": "master",
-      "version": "13.0.3"
+      "version": "13.0.4"
     },
     {
       "name": "mod-organizations",
@@ -556,12 +556,12 @@
     {
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
-      "releaseDate": "2021-10-28T15:57:46+00:00",
-      "releaseName": "5.1.7",
-      "releaseSha": "949d1243801d6e4090a93f12c34c22bf79beea61",
-      "releaseTag": "v5.1.7",
+      "releaseDate": "2021-11-18T20:49:27+00:00",
+      "releaseName": "5.1.8",
+      "releaseSha": "ff558456bad99287435951b325f0a53301af2e6a",
+      "releaseTag": "v5.1.8",
       "releaseTarget": "master",
-      "version": "5.1.7"
+      "version": "5.1.8"
     },
     {
       "name": "mod-tags",

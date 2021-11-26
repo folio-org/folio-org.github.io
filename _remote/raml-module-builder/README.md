@@ -48,6 +48,7 @@ See the file ["LICENSE"](LICENSE) for more information.
 * [CQL (Contextual Query Language)](#cql-contextual-query-language)
     * [CQL2PgJSON: CQL to PostgreSQL JSON converter](#cql2pgjson-cql-to-postgresql-json-converter)
     * [CQL2PgJSON: Usage](#cql2pgjson-usage)
+    * [CQL: Field names](#field-names)
     * [CQL: Relations](#cql-relations)
     * [CQL: Modifiers](#cql-modifiers)
     * [CQL: Matching, comparing and sorting numbers](#cql-matching-comparing-and-sorting-numbers)
@@ -285,12 +286,12 @@ and other [modules](https://dev.folio.org/source-code/#server-side) (not all do 
 
 ## Get started with a sample working module
 
-The [mod-notify](https://github.com/folio-org/mod-notify)
+The [mod-organizations-storage](https://github.com/folio-org/mod-organizations-storage)
 is a full example which uses the RMB. Clone it, and then investigate:
 
 ```
-$ git clone --recursive https://github.com/folio-org/mod-notify.git
-$ cd mod-notify
+$ git clone --recursive https://github.com/folio-org/mod-organizations-storage.git
+$ cd mod-organizations-storage
 $ mvn clean install
 ```
 
@@ -299,7 +300,7 @@ These are also displayed as local [API documentation](#documentation-of-the-apis
 
 - Open the pom.xml file - notice the jars in the `dependencies` section as well as the `plugins` section. The `ramls` directory is declared in the pom.xml and passed to the interface and POJO generating tool via a maven exec plugin. The tool generates source files into the `target/generated-sources/raml-jaxrs` directory. The generated interfaces are implemented within the project in the `org.folio.rest.impl` package.
 
-- Investigate the `src/main/java/org/folio/rest/impl/NotificationsResourceImpl.java` class. Notice that there is a function representing each endpoint that is declared in the RAML file. The appropriate parameters (as described in the RAML) are passed as parameters to these functions so that no parameter parsing is needed by the developer. Notice that the class contains all the code for the entire module. All handling of URLs, validations, objects, etc. is all either in the RMB jars, or generated for this module by the RMB at build time.
+- Investigate the `src/main/java/org/folio/rest/impl/OrganizationsAPI.java` class. Notice that there is a function representing each endpoint that is declared in the RAML file. The appropriate parameters (as described in the RAML) are passed as parameters to these functions so that no parameter parsing is needed by the developer. Notice that the class contains all the code for the entire module. All handling of URLs, validations, objects, etc. is all either in the RMB jars, or generated for this module by the RMB at build time.
 
 - **IMPORTANT NOTE:** Every interface implementation - by any module -
   must reside in package `org.folio.rest.impl`. This is the package that is
@@ -309,7 +310,7 @@ These are also displayed as local [API documentation](#documentation-of-the-apis
 Now run the module in standalone mode:
 
 ```
-$ java -jar target/mod-notify-fat.jar
+$ java -jar target/mod-organizations-storage-fat.jar
 ```
 
 Now send some requests using '[curl](https://curl.haxx.se)' or '[httpie](https://httpie.org)'
@@ -359,6 +360,7 @@ RMB implementing modules expect a set of environment variables to be passed in a
  - DB_QUERYTIMEOUT
  - DB_CHARSET
  - DB_MAXPOOLSIZE
+ - DB_MAXSHAREDPOOLSIZE
  - DB_CONNECTIONRELEASEDELAY
  - DB_EXPLAIN_QUERY_THRESHOLD
 
@@ -368,7 +370,9 @@ Environment variables with periods/dots in their names are deprecated in RMB bec
 
 See the [Vert.x Async PostgreSQL Client Configuration documentation](https://vertx.io/docs/vertx-mysql-postgresql-client/java/#_configuration) for the details.
 
-The environment variable `DB_MAXPOOLSIZE` sets the maximum number of concurrent connections for a tenant that one module instance opens. They are only opened if needed. If all connections for a tenant are in use further requests for that tenant will wait until one connnection becomes free. Other tenants and other instances of a module are unaffected. The default is 4.
+The environment variable `DB_MAXPOOLSIZE` sets the maximum number of concurrent connections for a tenant that one module instance opens. They are only opened if needed. If all connections for a tenant are in use further requests for that tenant will wait until one connection becomes free. Other tenants and other instances of a module are unaffected. The default is 4.
+
+The environment variable `DB_MAXSHAREDPOOLSIZE` sets the maximum number of concurrent connections that one module instance opens. They are only opened if needed. If all connections are in use further requests will wait until one connection becomes free. This way one tenant may block other tenants. If the variable is set `DB_MAXPOOLSIZE` is ignored and all connections are shared across tenants.
 
 The environment variable `DB_CONNECTIONRELEASEDELAY` sets the delay in milliseconds after which an idle connection is closed. A connection becomes idle if the query ends, it is not idle if it is waiting for a response. Use 0 to keep idle connections open forever. RMB's default is one minute (60000 ms).
 
@@ -521,7 +525,7 @@ for example implementations.
 
 It is beneficial at this stage to take some time to design and prepare the RAML files for the project.
 Investigate the other FOLIO modules for guidance.
-The [mod-notify](https://github.com/folio-org/mod-notify) is an exemplar.
+The [mod-notify](https://github.com/folio-org/mod-notify/tree/master/ramls) is an exemplar.
 
 Remove the temporary copy of the "ramls" directory from Step 1, and replace with your own.
 
@@ -983,6 +987,10 @@ where = cql2pgJson.cql2pgJson( "users.user_data.name=Miller" );
 where = cql2pgJson.cql2pgJson( "users.group_data.name==Students" );
 where = cql2pgJson.cql2pgJson( "name=Miller" ); // implies users.user_data
 ```
+
+### CQL: Field names
+
+The field names (keys in JSON) are case sensitive. This is against the CQL specification of index names.
 
 ### CQL: Relations
 
@@ -2384,7 +2392,12 @@ public class Vendors {
 
 `org.folio.rest.persist.PgUtil` has default implementations that should be used if possible.
 
-This example shows how to use advanced features that go beyond that.
+Example: [mod-organizations-storage OrganizationsAPI.java](https://github.com/folio-org/mod-organizations-storage/blob/v4.1.0/src/main/java/org/folio/rest/impl/OrganizationsAPI.java)
+
+You need to add `@Validate` to each implementing method so that RMB validates the input against the schema,
+for example required properties, no additional properties, property type, or regexp pattern.
+
+This example shows how to use advanced features that go beyond the default PgUtil implementation.
 
 ```java
   @Validate
