@@ -884,6 +884,7 @@
     "config": {
       "oas": [],
       "raml": [
+        "ramls/acquisition_method.raml",
         "ramls/acquisitions-units.raml",
         "ramls/check-in.raml",
         "ramls/configuration.raml",
@@ -908,6 +909,7 @@
     "config": {
       "oas": [],
       "raml": [
+        "ramls/acquisition_method.raml",
         "ramls/acquisitions-unit.raml",
         "ramls/alert.raml",
         "ramls/configuration.raml",
