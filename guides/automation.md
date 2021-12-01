@@ -47,9 +47,13 @@ Similarly okapi can be accessed via `folio-snapshot-core-okapi` (and see notes i
 
 If an error message (in the 5** series) is shown for the entry point of these sites, then that probably means that it is in the process of being rebuilt (see its "Jenkins job" link).
 
-If there is a need to re-run a build outside of the normal automation, then co-ordinate that on the Slack channel #hosted-reference-envs
+### Off-schedule rebuilds
+
+If there is an urgent need to re-run a build outside of the normal automation schedule (explained below),
+then co-ordinate that on the Slack channel #hosted-reference-envs
 (remember that there are other people utilising these systems).
-Also, as explained below, before doing this wait for the automated build of the “snapshot” branch of the Stripes Platform and ensure that the expected module versions are included.
+Also, as explained below, before doing this wait for the automated build of the “snapshot” branch of the Stripes Platform and ensure that the expected module versions are included
+in that build's [install.json](https://github.com/folio-org/platform-complete/blob/snapshot/install.json) file.
 
 ### folio-testing
 
