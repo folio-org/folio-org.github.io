@@ -98,8 +98,6 @@ Examples:
 * [mod-courses](https://github.com/folio-org/mod-courses/blob/master/Jenkinsfile)
   -- RAML
   * Its [uprade PR](https://github.com/folio-org/mod-courses/pull/122). See each commit which explained each step.
-* [mod-quick-marc](https://github.com/folio-org/mod-quick-marc/blob/master/Jenkinsfile)
-  -- both RAML and OAS
 
 #### Jenkinsfile for OAS
 
@@ -119,6 +117,4 @@ Examples:
   -- OAS
 * [mod-search](https://github.com/folio-org/mod-search/blob/master/Jenkinsfile)
   -- OAS
-* [mod-quick-marc](https://github.com/folio-org/mod-quick-marc/blob/master/Jenkinsfile)
-  -- both RAML and OAS
 
