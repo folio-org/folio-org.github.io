@@ -135,7 +135,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "folio-custom-fields",
     "org": "folio-org"
   },
@@ -307,7 +311,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-copycat",
     "org": "folio-org"
   },
@@ -646,6 +654,7 @@
       "raml": [
         "ramls/alternative-title-type.raml",
         "ramls/authorities.raml",
+        "ramls/authorities-reindex.raml",
         "ramls/authority-note-type.raml",
         "ramls/bound-with-part.raml",
         "ramls/call-number-type.raml",
@@ -818,7 +827,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-login",
     "org": "folio-org"
   },
@@ -830,7 +843,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-login-saml",
     "org": "folio-org"
   },
@@ -1037,14 +1054,11 @@
         "src/main/resources/swagger.api/records-editor-async.yaml",
         "src/main/resources/swagger.api/records-editor.yaml"
       ],
-      "raml": [
-        "ramls/records-editor.raml"
-      ],
+      "raml": [],
       "upload": []
     },
     "metadata": {
       "apiTypes": [
-        "RAML",
         "OAS"
       ]
     },
@@ -1082,13 +1096,19 @@
   },
   {
     "config": {
-      "oas": [],
+      "oas": [
+        "src/main/resources/swagger.api/mod-search.yaml"
+      ],
       "raml": [],
       "upload": [
         "mod-search.html"
       ]
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
     "name": "mod-search",
     "org": "folio-org"
   },
@@ -1160,7 +1180,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-template-engine",
     "org": "folio-org"
   },
@@ -1192,7 +1216,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-users",
     "org": "folio-org"
   },
@@ -1204,7 +1232,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-users-bl",
     "org": "folio-org"
   },

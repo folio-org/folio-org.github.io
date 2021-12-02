@@ -271,14 +271,6 @@ mod-inventory-update:
       - inventory-update
     ramlutil: ramls/raml-util
 
-mod-quick-marc:
-  - label: null
-    version1: true
-    directory: ramls
-    files:
-      - records-editor
-    ramlutil: null
-
 mod-invoice:
   - label: null
     version1: true
