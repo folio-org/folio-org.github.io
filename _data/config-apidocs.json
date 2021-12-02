@@ -1054,14 +1054,11 @@
         "src/main/resources/swagger.api/records-editor-async.yaml",
         "src/main/resources/swagger.api/records-editor.yaml"
       ],
-      "raml": [
-        "ramls/records-editor.raml"
-      ],
+      "raml": [],
       "upload": []
     },
     "metadata": {
       "apiTypes": [
-        "RAML",
         "OAS"
       ]
     },
