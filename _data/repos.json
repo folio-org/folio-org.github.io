@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-11-24T02:42:42.646307+00:00"
+    "generatedDateTime": "2021-12-01T23:53:09.255077+00:00"
   },
   "repos": [
     {
@@ -485,7 +485,7 @@
       "org": "folio-org",
       "repoLanguageHint": "java",
       "repoType": "raml-shared",
-      "snippetIntro": "<p><a href='https://github.com/folio-org/folio-vertx-lib'>folio-vertx-lib</a> is a library for developing FOLIO modules based on Vert.x. This is a library, not a framework, with utilities in no particular order:</p>"
+      "snippetIntro": "<p><a href='https://github.com/folio-org/folio-vertx-lib'>folio-vertx-lib</a> is a library for developing FOLIO modules based on Vert.x. This is a library, not a framework, with utilities such as:</p>"
     },
     {
       "defaultBranch": "master",
@@ -1212,7 +1212,10 @@
       "ramlDirName": null,
       "repoLanguageHint": "gradle",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Bounded Context Deailing with Open Access Publishing</p>"
+      "snippetIntro": "<p>Bounded Context Deailing with Open Access Publishing</p>",
+      "workflows": [
+        "gradle.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1364,7 +1367,7 @@
       "isSpringway": true,
       "name": "mod-quick-marc",
       "org": "folio-org",
-      "ramlDirName": "ramls",
+      "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>Spring-based module that provides API for quickMARC - in-app editor for MARC records in SRS.</p>"

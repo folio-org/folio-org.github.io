@@ -162,7 +162,7 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/openapi/tenant-2.0.yaml"
+        "core/src/main/resources/openapi/tenant-2.0.yaml"
       ],
       "raml": [],
       "upload": []
@@ -1054,14 +1054,11 @@
         "src/main/resources/swagger.api/records-editor-async.yaml",
         "src/main/resources/swagger.api/records-editor.yaml"
       ],
-      "raml": [
-        "ramls/records-editor.raml"
-      ],
+      "raml": [],
       "upload": []
     },
     "metadata": {
       "apiTypes": [
-        "RAML",
         "OAS"
       ]
     },
