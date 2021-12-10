@@ -362,7 +362,6 @@ mod-erm-usage-harvester:
     files:
       - harvester
       - periodic
-      - start
     ramlutil: ramls/raml-util
 
 mod-finc-config:
