@@ -445,8 +445,7 @@
       "oas": [],
       "raml": [
         "ramls/harvester.raml",
-        "ramls/periodic.raml",
-        "ramls/start.raml"
+        "ramls/periodic.raml"
       ],
       "upload": []
     },
