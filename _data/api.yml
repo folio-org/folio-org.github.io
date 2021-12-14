@@ -811,6 +811,15 @@ data-import-raml-storage:
     schemasOnly: true
     rmb: false
 
+folio-export-common:
+  - label: null
+    version1: true
+    directory: .
+    ramlutil: null
+    schemasDirectory: .
+    schemasOnly: true
+    rmb: false
+
 # Deprecated
 mod-vendors:
   - label: null

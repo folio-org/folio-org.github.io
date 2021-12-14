@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-12-01T23:53:09.255077+00:00"
+    "generatedDateTime": "2021-12-14T00:13:59.778619+00:00"
   },
   "repos": [
     {
@@ -304,6 +304,16 @@
       "repoLanguageHint": "java",
       "repoType": "other",
       "snippetIntro": "<p>Dependency Injection support for FOLIO backend modules</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "The common resources library for mod-data-export-spring and mod-data-export-worker",
+      "docDirName": null,
+      "name": "folio-export-common",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "raml-shared",
+      "snippetIntro": "<p>This is the central repository for the models for <a href='https://github.com/folio-org/mod-data-export-spring'>mod-data-export-spring</a>  and <a href='https://github.com/folio-org/mod-data-export-worker'>mod-data-export-worker</a> modules.</p>"
     },
     {
       "defaultBranch": "master",

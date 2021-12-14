@@ -122,13 +122,14 @@ other:
   title: Other
   description: Not yet grouped.
   modules:
+    - mod-eusage-reports
+    - mod-ldp
     - folio-custom-fields
     - folio-spring-base
     - folio-vertx-lib
     - acq-models
     - data-import-raml-storage
-    - mod-eusage-reports
-    - mod-ldp
+    - folio-export-common
 deprecated:
   title: Deprecated
   description: Some old ones that have been renamed recently.
