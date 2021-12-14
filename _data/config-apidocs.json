@@ -145,6 +145,16 @@
   },
   {
     "config": {
+      "oas": [],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {},
+    "name": "folio-export-common",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [
         "src/main/resources/swagger.api/tenant.yaml"
       ],
