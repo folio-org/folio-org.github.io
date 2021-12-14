@@ -476,12 +476,12 @@
     {
       "name": "mod-pubsub",
       "nameRepo": "mod-pubsub",
-      "releaseDate": "2021-08-02T16:54:54+00:00",
-      "releaseName": "2.3.3",
-      "releaseSha": "fed64e0d47ca93d0bb9840ddea2d9b6aad192d52",
-      "releaseTag": "v2.3.3",
+      "releaseDate": "2021-12-09T08:45:47+00:00",
+      "releaseName": "v2.3.4",
+      "releaseSha": "0d340666b8ca1e417b0f1403e808cc6655511fb1",
+      "releaseTag": "v2.3.4",
       "releaseTarget": "master",
-      "version": "2.3.3"
+      "version": "2.3.4"
     },
     {
       "name": "mod-quick-marc",
