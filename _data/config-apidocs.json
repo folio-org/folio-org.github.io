@@ -162,7 +162,7 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/openapi/tenant-2.0.yaml"
+        "core/src/main/resources/openapi/tenant-2.0.yaml"
       ],
       "raml": [],
       "upload": []
@@ -445,8 +445,7 @@
       "oas": [],
       "raml": [
         "ramls/harvester.raml",
-        "ramls/periodic.raml",
-        "ramls/start.raml"
+        "ramls/periodic.raml"
       ],
       "upload": []
     },
