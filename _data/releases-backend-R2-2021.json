@@ -26,12 +26,12 @@
     {
       "name": "mod-authtoken",
       "nameRepo": "mod-authtoken",
-      "releaseDate": "2021-05-27T14:02:23+00:00",
+      "releaseDate": "2021-12-15T09:03:14+00:00",
       "releaseName": "",
-      "releaseSha": "37c13085b2ece1abb6f39bed3772d044bb7ef11b",
-      "releaseTag": "v2.8.0",
+      "releaseSha": "ce182e34fe24f0581ce7668319c051dec4d29f09",
+      "releaseTag": "v2.8.1",
       "releaseTarget": "master",
-      "version": "2.8.0"
+      "version": "2.8.1"
     },
     {
       "name": "mod-calendar",
@@ -106,12 +106,12 @@
     {
       "name": "mod-copycat",
       "nameRepo": "mod-copycat",
-      "releaseDate": "2021-06-25T17:47:52+00:00",
+      "releaseDate": "2021-12-15T08:42:49+00:00",
       "releaseName": "",
-      "releaseSha": "2c3db5eee75a9e0dd9ae28e963b59e423bbe058a",
-      "releaseTag": "v1.1.1",
+      "releaseSha": "012b53cd20d1b6cf541c85f906b063edd5169b92",
+      "releaseTag": "v1.1.2",
       "releaseTarget": "master",
-      "version": "1.1.1"
+      "version": "1.1.2"
     },
     {
       "name": "mod-courses",
