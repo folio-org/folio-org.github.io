@@ -119,6 +119,10 @@ ui-users:
   urlsOther:
     - https://wiki.folio.org/display/FOLIOtips/Users+App+-+Creating+Fees+and+Fines
 
+mod-search:
+  urlsOther:
+    - https://github.com/folio-org/mod-search/blob/master/DEVELOPMENT.md
+
 edge-common:
   urlsOther:
     - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-commonFramework
