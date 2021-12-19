@@ -87,11 +87,13 @@ and make a pull request to this package.
 
 ### Table of Contents
 
+#### Stripes-components
 - [`Accordion`](#accordion)
 - [`AutoSuggest`](#autosuggest)
 - [`Avatar`](#avatar)
 - [`Badge`](#badge)
 - [`Button`](#button)
+- [`ButtonGroup`](#buttongroup)
 - [`Checkbox`](#checkbox)
 - [`Dropdown`](#dropdown)
 - [`Datepicker`](#datepicker) ([`Calendar Widget`](#calendar-widget))
@@ -106,9 +108,16 @@ and make a pull request to this package.
 - [`RichTextEditor`](#richtexteditor)
 - [`SearchField`](#searchField)
 - [`Select`](#select)
+- [`Selection`](#selection)
 - [`TextArea`](#textarea)
 - [`TextField`](#textfield)
 - [`Tooltip`](#tooltip)
+
+#### Stripes-smart-components
+-[`AddressList`](#addresslist)
+-[`AddressEdit`](#addressedit)
+-['EditableList'](#editablelist)
+-['EditableListRow'](#editablelistrow)
 
 #### Accordion
 
@@ -150,6 +159,65 @@ Accordion('Categories').exists();
   pane set. So for example `Accordion('Users').has({ index: 2 })`
   would assert that the "Users" accordion was 3rd in its accordion
   set.
+
+#### AddressList
+Renders a fieldgroup of common address form fields.
+
+Related: [AddressEdit](#addressedit), [AddressView](#addressview)
+
+##### Synopsis
+
+```js
+import { AddressList } from '@folio/stripes-testing';
+
+// expand collapsed address list
+AddressList().toggleMore();
+
+// add address to address list...
+AddressList().addAddress();
+
+// assert that Address list displays 2 addresses
+AddressList().has({ count: 3});
+```
+
+##### actions
+
+- `toggleMore`: clicks the expansions 
+- `clickEdit`: _number_ - clicks the edit button at the given index
+- `addAddress`: clicks the add button, exposes a new address form
+- `deleteAddress`: _number_ - deletes the address at a given index
+
+##### filters
+
+count: number of visible address views in the list
+
+#### AddressEdit
+
+##### Synopsis
+
+```js
+import { AddressEdit } from '@folio/stripes-testing';
+
+// find address form at index 1
+AddressEdit({ index: 1 });
+
+// find address form with validation errors
+AddressEdit({ error: true });
+
+// save the values (click the save button on the address form)
+AddressEdit().save()
+```
+
+##### Actions
+
+- `save` - Clicks the save button
+- `cancel` - Clicks the cancel button
+- `delete` - Clicks the delete button
+
+##### Filters
+
+- `index`: _number_ - filters by index.
+- `error`: _boolean_ - whether or not the form contains an error.
 
 #### AutoSuggest
 
@@ -479,6 +547,57 @@ Dropdown('Menu').exists();
 - `visible`: _boolean_ = `true` if the dropdown is visible
 - `label`: _string_ = the user identifying text of this
   dropdown. This is the same value as the locator.
+
+#### EditableList
+
+Editable table component.
+
+##### Synopsis
+
+```js
+import { EditableList, ColumnHeader, TextField } from '@folio/stripes-testing';
+
+// Assert that a particular column is present
+EditableList().find(ColumnHeader('name')).exists();
+
+// Assert that editing is disabled on rows
+EditableList().has({ editDisabled: true });
+
+// Fill in a value...
+EditableListRow().find(TextField(including('name'))).fillIn('test');
+```
+##### Filters
+
+- `rowCount`: _number_ the number of rows in the table (includes editable rows)
+- `addDisabled`: _boolean_ Whether or not the add button is disabled
+- `editDisabled`: _boolean_ Whether or not the row-level edit buttons are disabled
+- `deleteDisabled`: _boolean_ Whether or not the row-level delete buttons are disabled
+- `addButton`: _boolean_ Whether or not the Add button is present.
+- `editButtons`: _boolean_ Whether or not the Edit buttons are present.
+- `deleteButtons`: _boolean_ Whether or not the Delete buttons are present.
+
+##### Actions
+- `add`: clicks the add button, addint an item to the list.
+
+#### EditableListRow
+For use within the Editable list...
+
+```
+// Fill in a value...
+EditableListRow().find(TextField(including('name'))).fillIn('test');
+```
+
+##### Filters
+
+- `index`: _number_ the number of the row - 0-based. Defaults to 0.
+- `saveDisabled`: _boolean_ Whether or not the save button is disabled.
+
+##### Actions
+
+- `edit`: clicks the edit button on a non-edit row, activating edit mode.
+- `delete`: clicks the delete button on a non-edit row.
+- `cancel`: clicks the cancel button on a row in edit mode.
+- `save`: clicks the save button on a row in edit mode.
 
 #### IconButton
 
