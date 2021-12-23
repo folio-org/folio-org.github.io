@@ -36,22 +36,22 @@
     {
       "name": "mod-calendar",
       "nameRepo": "mod-calendar",
-      "releaseDate": "2021-06-11T12:17:05+00:00",
-      "releaseName": "v1.12.0",
-      "releaseSha": "079b29e68ca30a3140d9993256da262c86f336f4",
-      "releaseTag": "v1.12.0",
+      "releaseDate": "2021-12-22T09:43:32+00:00",
+      "releaseName": "v1.12.1",
+      "releaseSha": "297d90cf7bbb3999a55b8f4b4453bd565c22faf9",
+      "releaseTag": "v1.12.1",
       "releaseTarget": "master",
-      "version": "1.12.0"
+      "version": "1.12.1"
     },
     {
       "name": "mod-circulation",
       "nameRepo": "mod-circulation",
-      "releaseDate": "2021-11-05T14:35:45+00:00",
-      "releaseName": "v22.0.6",
-      "releaseSha": "7f6c9502323323365349df05f19221e35e982d71",
-      "releaseTag": "v22.0.6",
+      "releaseDate": "2021-12-22T11:28:03+00:00",
+      "releaseName": "v22.0.7",
+      "releaseSha": "601ffc49cd5167d6b7e4e067c737a0993a217a99",
+      "releaseTag": "v22.0.7",
       "releaseTarget": "master",
-      "version": "22.0.6"
+      "version": "22.0.7"
     },
     {
       "name": "mod-circulation-storage",
@@ -146,12 +146,12 @@
     {
       "name": "mod-data-export-worker",
       "nameRepo": "mod-data-export-worker",
-      "releaseDate": "2021-12-20T12:29:00+00:00",
-      "releaseName": "v1.1.7",
-      "releaseSha": "8a83cab96aacf7d498ab9e1aa4c23282f7663f4e",
-      "releaseTag": "v1.1.7",
+      "releaseDate": "2021-12-22T11:48:45+00:00",
+      "releaseName": "v1.1.8",
+      "releaseSha": "ffc77265c282c1ca7c0d99ace279a1e4115eead2",
+      "releaseTag": "v1.1.8",
       "releaseTarget": "master",
-      "version": "1.1.7"
+      "version": "1.1.8"
     },
     {
       "name": "mod-data-import",
@@ -346,12 +346,12 @@
     {
       "name": "mod-login-saml",
       "nameRepo": "mod-login-saml",
-      "releaseDate": "2021-12-17T08:04:28+00:00",
+      "releaseDate": "2021-12-22T11:14:20+00:00",
       "releaseName": "",
-      "releaseSha": "d20751a388289089f9a947773f2a7ce8229d027b",
-      "releaseTag": "v2.3.1",
+      "releaseSha": "2ccb9cccb021aafa88581a66854deccce08ed6d8",
+      "releaseTag": "v2.3.2",
       "releaseTarget": "master",
-      "version": "2.3.1"
+      "version": "2.3.2"
     },
     {
       "name": "mod-ncip",
@@ -456,12 +456,12 @@
     {
       "name": "mod-patron-blocks",
       "nameRepo": "mod-patron-blocks",
-      "releaseDate": "2021-09-03T12:16:05+00:00",
-      "releaseName": "v1.3.2",
-      "releaseSha": "75aa098fd48be7676359f93e01fb168884890c4a",
-      "releaseTag": "v1.3.2",
+      "releaseDate": "2021-12-22T12:07:02+00:00",
+      "releaseName": "v1.3.3",
+      "releaseSha": "04ceea0fae9d6eefd85c6192533af91f92b049d8",
+      "releaseTag": "v1.3.3",
       "releaseTarget": "master",
-      "version": "1.3.2"
+      "version": "1.3.3"
     },
     {
       "name": "mod-permissions",
