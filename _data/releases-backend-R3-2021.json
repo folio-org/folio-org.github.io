@@ -496,12 +496,12 @@
     {
       "name": "mod-permissions",
       "nameRepo": "mod-permissions",
-      "releaseDate": "2021-12-17T07:57:32+00:00",
+      "releaseDate": "2021-12-23T11:57:40+00:00",
       "releaseName": "",
-      "releaseSha": "be323dc5cb6c877235fa424a3f11614d3547ce8b",
-      "releaseTag": "v5.14.3",
+      "releaseSha": "ae9eca880c131386c6bc3879546a7197632b2a32",
+      "releaseTag": "v5.14.4",
       "releaseTarget": "master",
-      "version": "5.14.3"
+      "version": "5.14.4"
     },
     {
       "name": "mod-pubsub",
@@ -516,12 +516,12 @@
     {
       "name": "mod-quick-marc",
       "nameRepo": "mod-quick-marc",
-      "releaseDate": "2021-12-16T13:51:25+00:00",
-      "releaseName": "v2.2.2",
-      "releaseSha": "504ed2247b965139333104ed0586d43d995b7ef7",
-      "releaseTag": "v2.2.2",
-      "releaseTarget": "master",
-      "version": "2.2.2"
+      "releaseDate": "2022-01-10T09:50:20+00:00",
+      "releaseName": "v2.2.3",
+      "releaseSha": "b3cdf7c5ce9bf1f50cf1be1fddb5f43daead1e02",
+      "releaseTag": "v2.2.3",
+      "releaseTarget": "release/2021_R3_v2.2.0_kiwi",
+      "version": "2.2.3"
     },
     {
       "name": "mod-remote-storage",
