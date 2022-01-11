@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-12-20T21:24:59.540646+00:00"
+    "generatedDateTime": "2022-01-04T02:50:52.099952+00:00"
   },
   "repos": [
     {
@@ -21,7 +21,10 @@
       "org": "folio-org",
       "repoLanguageHint": "java",
       "repoType": "other",
-      "snippetIntro": "<p>Core infrastructure for event processing for the DataImport.</p>"
+      "snippetIntro": "<p>Core infrastructure for event processing for the DataImport.</p>",
+      "workflows": [
+        "build-dependants.yml"
+      ]
     },
     {
       "defaultBranch": "master",
