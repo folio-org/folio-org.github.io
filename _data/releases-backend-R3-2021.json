@@ -586,12 +586,12 @@
     {
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
-      "releaseDate": "2021-12-15T14:50:48+00:00",
-      "releaseName": "5.2.6",
-      "releaseSha": "e4d23d9b378d66e044c2749344c1b4dae177a31d",
-      "releaseTag": "v5.2.6",
-      "releaseTarget": "master",
-      "version": "5.2.6"
+      "releaseDate": "2022-01-13T17:50:11+00:00",
+      "releaseName": "v5.2.7",
+      "releaseSha": "93bb9f4ab08505f9e9808de9581de7f81b170376",
+      "releaseTag": "v5.2.7",
+      "releaseTarget": "release/2021_R3_v5.2.0_kiwi",
+      "version": "5.2.7"
     },
     {
       "name": "mod-tags",
