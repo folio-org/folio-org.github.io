@@ -45,6 +45,8 @@ The Python script will search the configured directories to find relevant API de
   Optional. Space-separated list.
   By default it excludes certain well-known directories (such as `raml-util`).
   Use the option `--loglevel debug` to report what is being excluded.
+* `-w,--warnings` -- Cause "warnings" to fail the workflow, in the absence of "violations".
+  Optional. By default, if there are no "violations", then the workflow is successful and so any "warnings" would not be displayed.
 
 See help for the full list:
 
@@ -94,6 +96,8 @@ Note that the project should also use "[api-doc](/guides/api-doc/)" which utilis
 
 #### Jenkinsfile for RAML
 
+These properties correlate with the described script [options](#python).
+
 ```
 buildMvn {
 ...
@@ -101,6 +105,7 @@ buildMvn {
   apiTypes = 'RAML' // Required. Space-separated list: RAML OAS
   apiDirectories = 'ramls' // Required. Space-separated list
   apiExcludes = 'types.raml' // Optional. Space-separated list
+  apiWanings = false // Optional. true|false
 ```
 
 **Note:** This tool replaces the deprecated "lint-raml" (runLintRamlCop) facility.
@@ -116,6 +121,8 @@ Examples:
 
 #### Jenkinsfile for OAS
 
+These properties correlate with the described script [options](#python).
+
 ```
 buildMvn {
 ...
@@ -123,6 +130,7 @@ buildMvn {
   apiTypes = 'OAS' // Required. Space-separated list: RAML OAS
   apiDirectories = 'src/main/resources/openapi' // Required. Space-separated list
   apiExcludes = 'headers' // Optional. Space-separated list
+  apiWanings = false // Optional. true|false
 ```
 
 Examples:
