@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2021-12-14T00:13:59.778619+00:00"
+    "generatedDateTime": "2022-01-17T02:14:28.315449+00:00"
   },
   "repos": [
     {
@@ -21,7 +21,10 @@
       "org": "folio-org",
       "repoLanguageHint": "java",
       "repoType": "other",
-      "snippetIntro": "<p>Core infrastructure for event processing for the DataImport.</p>"
+      "snippetIntro": "<p>Core infrastructure for event processing for the DataImport.</p>",
+      "workflows": [
+        "build-dependants.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -282,6 +285,17 @@
       "name": "folio-api-tests",
       "org": "folio-org",
       "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Core OpenApi Folio schema",
+      "docDirName": null,
+      "hintOas": true,
+      "name": "folio-core-schema",
+      "org": "folio-org",
+      "repoLanguageHint": "java",
       "repoType": "other",
       "snippetIntro": ""
     },
@@ -592,19 +606,6 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>This module is responsible for filtering all proxy traffic and checking for a valid token. In addition, it is responsible for retrieving the permissions for a given user and making decisions regarding access based on user permissions and defined requirements for a given path. It provides a token creation endpoint that privileged modules (such as Authentication) may make use of.</p>"
-    },
-    {
-      "defaultBranch": "master",
-      "description": null,
-      "docDirName": null,
-      "hintOas": true,
-      "isSpringway": true,
-      "name": "mod-bulk-edit",
-      "org": "folio-org",
-      "ramlDirName": null,
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>Microservice provides capabilities for simultaneous editing of many entities</p>"
     },
     {
       "defaultBranch": "master",
@@ -1454,7 +1455,7 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>FOLIO search project.</p>"
+      "snippetIntro": "<p>This module provides a search functionality for instance and authorities via REST API. It uses <a href='https://www.loc.gov/standards/sru/cql/'>The Contextual Query Language</a> as a formal language to query records using filters, boolean conditions, etc.</p>"
     },
     {
       "defaultBranch": "master",

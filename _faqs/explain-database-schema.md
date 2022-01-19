@@ -42,7 +42,7 @@ faqOrder: 4
 
 *Q.* Can modules share PostgreSQL extensions securely?
 
-*A.* A module must load a PostgreSQL extension using `CREATE EXTENSION IF NOT EXISTS extension_name WITH SCHEMA public`. Using schema public is required for sharing the extension, because an extension can be loaded only once per database. Loading the extension's objects into a module specific database blocks all other modules from using the extension. Using schema public is secure because schema public is not in the `search_path`. For details see [CREATE EXTENSION](https://www.postgresql.org/docs/current/sql-createextension.html) and [Schema Usage Patterns](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATTERNS) in the PostgreSQL documentation.
+*A.* A module must load a PostgreSQL extension using `CREATE EXTENSION IF NOT EXISTS extension_name WITH SCHEMA public`. Using schema public is required for sharing the extension, because an extension can be loaded only once per database. Loading the extension's objects into a module specific database schema blocks all other modules from using the extension. Using schema public is secure because schema public is not in the `search_path`. For details see [CREATE EXTENSION](https://www.postgresql.org/docs/current/sql-createextension.html) and [Schema Usage Patterns](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATTERNS) in the PostgreSQL documentation.
 
 *Q.* All data in the databases in folio-stable has quite simple tabular form and I would prefer to redesign tables to the natural relational form and have in JSONB just additional information like user’s addresses and so on. Or maybe it makes sense to move back to [MongoDB](https://www.mongodb.com/).
 

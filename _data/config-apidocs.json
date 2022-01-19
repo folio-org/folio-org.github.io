@@ -75,7 +75,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "edge-lti-courses",
     "org": "folio-org"
   },
@@ -207,7 +211,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-calendar",
     "org": "folio-org"
   },
@@ -217,9 +225,9 @@
       "raml": [
         "ramls/age-to-lost-background-processes.raml",
         "ramls/change-due-date.raml",
-        "ramls/circulation.raml",
         "ramls/circulation-event-handlers.raml",
         "ramls/circulation-rules.raml",
+        "ramls/circulation.raml",
         "ramls/claim-item-returned.raml",
         "ramls/declare-item-lost.raml",
         "ramls/end-patron-action-session.raml",
@@ -231,7 +239,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-circulation",
     "org": "folio-org"
   },
@@ -250,14 +262,18 @@
         "ramls/patron-notice-policy.raml",
         "ramls/request-policy-storage.raml",
         "ramls/request-preference-storage.raml",
-        "ramls/request-storage.raml",
         "ramls/request-storage-batch.raml",
+        "ramls/request-storage.raml",
         "ramls/scheduled-notice-storage.raml",
         "ramls/staff-slips.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-circulation-storage",
     "org": "folio-org"
   },
@@ -309,7 +325,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-configuration",
     "org": "folio-org"
   },
