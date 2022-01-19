@@ -42,7 +42,7 @@ Some example searches at FOLIO Wiki:
 * [entity management BIBFRAME](https://wiki.folio.org/dosearchsite.action?queryString=entity+management+BIBFRAME) for any words: entity management BIBFRAME
 * [entity management BIBFRAME](https://wiki.folio.org/dosearchsite.action?queryString=entity+AND+management+AND+BIBFRAME) for all words: entity AND management AND BIBFRAME
 * [MARC/SRS](https://wiki.folio.org/dosearchsite.action?queryString=MARC+AND+SRS+AND+%22source+record%22) for boolean and phrase: MARC AND SRS AND "source record"
-* Constrain search to the [Individual Apps: Information, Tips, and Tricks](https://wiki.folio.org/display/FOLIOtips/Individual+Apps%3A+Information%2C+Tips%2C+and+Tricks) area for words: [source record storage](https://wiki.folio.org/dosearchsite.action?cql=siteSearch+~+%22ancestorIds%3A14457366+AND+source+record+storage%22+and+space+%3D+%22FOLIOtips%22&queryString=ancestorIds%3A14457366+AND+source+record+storage)
+* Constrain search to the [Individual Apps: Information, Tips, and Tricks](https://wiki.folio.org/display/FOLIOtips/Individual+Apps+-+Information%2C+Tips%2C+and+Tricks) area for words: [source record storage](https://wiki.folio.org/dosearchsite.action?cql=siteSearch+~+%22ancestorIds%3A14457366+AND+source+record+storage%22+and+space+%3D+%22FOLIOtips%22&queryString=ancestorIds%3A14457366+AND+source+record+storage)
 or for phrase: ["source record storage"](https://wiki.folio.org/dosearchsite.action?cql=siteSearch+~+%22ancestorIds%3A14457366+AND+%5C%22source+record+storage%5C%22%22+and+space+%3D+%22FOLIOtips%22&queryString=ancestorIds%3A14457366+AND+%22source+record+storage%22)
 
 Refer to specific
