@@ -407,7 +407,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-data-import",
     "org": "folio-org"
   },
@@ -450,7 +454,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-email",
     "org": "folio-org"
   },
@@ -466,7 +474,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-erm-usage",
     "org": "folio-org"
   },
@@ -479,7 +491,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-erm-usage-harvester",
     "org": "folio-org"
   },
@@ -507,7 +523,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-event-config",
     "org": "folio-org"
   },
@@ -515,8 +535,8 @@
     "config": {
       "oas": [],
       "raml": [
-        "ramls/accounts.raml",
         "ramls/accounts-bulk.raml",
+        "ramls/accounts.raml",
         "ramls/comments.raml",
         "ramls/feefine-reports.raml",
         "ramls/feefineactions.raml",
@@ -534,7 +554,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-feesfines",
     "org": "folio-org"
   },
@@ -622,7 +646,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-gobi",
     "org": "folio-org"
   },
