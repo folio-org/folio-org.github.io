@@ -479,6 +479,7 @@ mod-orders-storage:
       - acquisitions-unit
       - alert
       - configuration
+      - export_history
       - order-invoice-relns
       - order-templates
       - pieces
