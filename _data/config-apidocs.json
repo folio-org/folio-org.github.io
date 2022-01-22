@@ -581,12 +581,16 @@
         "ramls/ledger_rollover_progress.raml",
         "ramls/ledgers.raml",
         "ramls/release-encumbrance.raml",
-        "ramls/transaction.raml",
-        "ramls/transaction-summary.raml"
+        "ramls/transaction-summary.raml",
+        "ramls/transaction.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-finance",
     "org": "folio-org"
   },
@@ -598,21 +602,25 @@
         "ramls/budget_expense_class.raml",
         "ramls/expense_class.raml",
         "ramls/fiscal-year.raml",
-        "ramls/fund.raml",
         "ramls/fund-type.raml",
-        "ramls/group.raml",
+        "ramls/fund.raml",
         "ramls/group-budgets.raml",
+        "ramls/group.raml",
         "ramls/group_fund_fy.raml",
-        "ramls/ledger.raml",
         "ramls/ledger-rollover-errors.raml",
+        "ramls/ledger.raml",
         "ramls/ledger_rollover.raml",
         "ramls/ledger_rollover_progress.raml",
-        "ramls/transaction.raml",
-        "ramls/transaction-summary.raml"
+        "ramls/transaction-summary.raml",
+        "ramls/transaction.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-finance-storage",
     "org": "folio-org"
   },
@@ -786,15 +794,19 @@
       "oas": [],
       "raml": [
         "ramls/batch-group.raml",
-        "ramls/batch-voucher.raml",
         "ramls/batch-voucher-export-configuration.raml",
         "ramls/batch-voucher-exports.raml",
+        "ramls/batch-voucher.raml",
         "ramls/invoice.raml",
         "ramls/voucher.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-invoice",
     "org": "folio-org"
   },
@@ -803,18 +815,22 @@
       "oas": [],
       "raml": [
         "ramls/batch-group.raml",
-        "ramls/batch-voucher.raml",
         "ramls/batch-voucher-export-configuration.raml",
         "ramls/batch-voucher-exports.raml",
-        "ramls/invoice.raml",
+        "ramls/batch-voucher.raml",
         "ramls/invoice-line-number.raml",
         "ramls/invoice-number.raml",
-        "ramls/voucher.raml",
-        "ramls/voucher-number.raml"
+        "ramls/invoice.raml",
+        "ramls/voucher-number.raml",
+        "ramls/voucher.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-invoice-storage",
     "org": "folio-org"
   },
@@ -987,6 +1003,7 @@
         "ramls/acquisitions-unit.raml",
         "ramls/alert.raml",
         "ramls/configuration.raml",
+        "ramls/export_history.raml",
         "ramls/order-invoice-relns.raml",
         "ramls/order-templates.raml",
         "ramls/pieces.raml",
