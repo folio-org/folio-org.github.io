@@ -91,7 +91,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "edge-oai-pmh",
     "org": "folio-org"
   },
@@ -103,7 +107,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "edge-orders",
     "org": "folio-org"
   },
@@ -951,7 +959,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-notify",
     "org": "folio-org"
   },
@@ -960,13 +972,17 @@
       "oas": [],
       "raml": [
         "ramls/cleanup-job.raml",
-        "ramls/folio-set.raml",
         "ramls/folio-set-filtering-conditions.raml",
+        "ramls/folio-set.raml",
         "ramls/oai-pmh.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-oai-pmh",
     "org": "folio-org"
   },
@@ -1029,7 +1045,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-organizations",
     "org": "folio-org"
   },
@@ -1048,7 +1068,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-organizations-storage",
     "org": "folio-org"
   },
