@@ -135,7 +135,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "edge-rtac",
     "org": "folio-org"
   },
@@ -934,17 +938,15 @@
   },
   {
     "config": {
-      "oas": [],
-      "raml": [
-        "ramls/link.raml",
-        "ramls/note.raml",
-        "ramls/types.raml"
+      "oas": [
+        "src/main/resources/swagger.api/notes.yml"
       ],
+      "raml": [],
       "upload": []
     },
     "metadata": {
       "apiTypes": [
-        "RAML"
+        "OAS"
       ]
     },
     "name": "mod-notes",
@@ -1117,7 +1119,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-patron-blocks",
     "org": "folio-org"
   },
@@ -1183,12 +1189,16 @@
     "config": {
       "oas": [],
       "raml": [
-        "ramls/rtac.raml",
-        "ramls/rtac-batch.raml"
+        "ramls/rtac-batch.raml",
+        "ramls/rtac.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-rtac",
     "org": "folio-org"
   },
@@ -1218,7 +1228,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-sender",
     "org": "folio-org"
   },
