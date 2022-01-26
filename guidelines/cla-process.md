@@ -46,7 +46,8 @@ NOTE: All contributors must acknowledge the CLA before the CLA-Assistant pull re
 ## Fix a stuck status check
 
 Occasionally there is a glitch, whereby this status check fails to register, even though the contributor has already acknowledged their CLA.
-The message on the GitHub PR will be something like: "Waiting for status to be reported".
+The message on the GitHub PR will be something like:\
+"license/cla Expected — Waiting for status to be reported".
 
 Being a required status check, this results in hold-ups with the PR.
 
@@ -55,7 +56,8 @@ Another cause might be the busy agent facility.
 
 However, be patient. Sometimes it is just slow, and doing manual refresh might not help.
 
-If it is truly seized, then the status check can be manually refreshed using a URL of the form:
+If it is truly seized, then the status check can be manually refreshed using a URL of the following form.
+Replace the `<repo>` with the repository name, and the `<pr-number>` with the pull-request number.
 
 ```
 https://cla-assistant.io/check/folio-org/<repo>?pullRequest=<pr-number>
