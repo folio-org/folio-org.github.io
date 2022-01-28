@@ -254,6 +254,7 @@ mod-inventory-storage:
       - nature-of-content-term
       - oai-pmh-view
       - record-bulk
+      - related-instance-type
       - service-point
       - service-points-user
       - shelf-location
