@@ -170,7 +170,7 @@ So the documentation does not relate to feature development branches.
 #### Versioned API Docs
 
 To find documentation for each software version, amend the URL of each generated document view to add the version number (major.minor).\
-For example [mod-notes](#mod-notes), do `mod-notes/2.11/...`
+For example [mod-circulation](#mod-circulation), do `mod-circulation/22.0/...`
 
 #### Explain "views" {#explain-views}
 
@@ -200,8 +200,8 @@ Updates to the actual generated API documents for each module do [happen](#gener
 
 #### Linking to API Docs tables {#explain-link-api-docs}
 
-* Each section of this page can be directly linked to (e.g. [#mod-notes](#mod-notes)).
-Similarly each row of a module's documentation (e.g. [#mod-notes-types](#mod-notes-types)).
+* Each section of this page can be directly linked to (e.g. [#mod-circulation](#mod-circulation)).
+Similarly each row of a module's documentation (e.g. [#mod-circulation-change-due-date](#mod-circulation-change-due-date)).
 
 #### Which module/interface/endpoint {#module-interface-endpoint}
 

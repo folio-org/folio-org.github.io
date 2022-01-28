@@ -91,7 +91,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "edge-oai-pmh",
     "org": "folio-org"
   },
@@ -103,7 +107,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "edge-orders",
     "org": "folio-org"
   },
@@ -127,7 +135,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "edge-rtac",
     "org": "folio-org"
   },
@@ -581,12 +593,16 @@
         "ramls/ledger_rollover_progress.raml",
         "ramls/ledgers.raml",
         "ramls/release-encumbrance.raml",
-        "ramls/transaction.raml",
-        "ramls/transaction-summary.raml"
+        "ramls/transaction-summary.raml",
+        "ramls/transaction.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-finance",
     "org": "folio-org"
   },
@@ -598,21 +614,25 @@
         "ramls/budget_expense_class.raml",
         "ramls/expense_class.raml",
         "ramls/fiscal-year.raml",
-        "ramls/fund.raml",
         "ramls/fund-type.raml",
-        "ramls/group.raml",
+        "ramls/fund.raml",
         "ramls/group-budgets.raml",
+        "ramls/group.raml",
         "ramls/group_fund_fy.raml",
-        "ramls/ledger.raml",
         "ramls/ledger-rollover-errors.raml",
+        "ramls/ledger.raml",
         "ramls/ledger_rollover.raml",
         "ramls/ledger_rollover_progress.raml",
-        "ramls/transaction.raml",
-        "ramls/transaction-summary.raml"
+        "ramls/transaction-summary.raml",
+        "ramls/transaction.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-finance-storage",
     "org": "folio-org"
   },
@@ -786,15 +806,19 @@
       "oas": [],
       "raml": [
         "ramls/batch-group.raml",
-        "ramls/batch-voucher.raml",
         "ramls/batch-voucher-export-configuration.raml",
         "ramls/batch-voucher-exports.raml",
+        "ramls/batch-voucher.raml",
         "ramls/invoice.raml",
         "ramls/voucher.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-invoice",
     "org": "folio-org"
   },
@@ -803,18 +827,22 @@
       "oas": [],
       "raml": [
         "ramls/batch-group.raml",
-        "ramls/batch-voucher.raml",
         "ramls/batch-voucher-export-configuration.raml",
         "ramls/batch-voucher-exports.raml",
-        "ramls/invoice.raml",
+        "ramls/batch-voucher.raml",
         "ramls/invoice-line-number.raml",
         "ramls/invoice-number.raml",
-        "ramls/voucher.raml",
-        "ramls/voucher-number.raml"
+        "ramls/invoice.raml",
+        "ramls/voucher-number.raml",
+        "ramls/voucher.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-invoice-storage",
     "org": "folio-org"
   },
@@ -910,17 +938,15 @@
   },
   {
     "config": {
-      "oas": [],
-      "raml": [
-        "ramls/link.raml",
-        "ramls/note.raml",
-        "ramls/types.raml"
+      "oas": [
+        "src/main/resources/swagger.api/notes.yml"
       ],
+      "raml": [],
       "upload": []
     },
     "metadata": {
       "apiTypes": [
-        "RAML"
+        "OAS"
       ]
     },
     "name": "mod-notes",
@@ -935,7 +961,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-notify",
     "org": "folio-org"
   },
@@ -944,13 +974,17 @@
       "oas": [],
       "raml": [
         "ramls/cleanup-job.raml",
-        "ramls/folio-set.raml",
         "ramls/folio-set-filtering-conditions.raml",
+        "ramls/folio-set.raml",
         "ramls/oai-pmh.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-oai-pmh",
     "org": "folio-org"
   },
@@ -987,6 +1021,7 @@
         "ramls/acquisitions-unit.raml",
         "ramls/alert.raml",
         "ramls/configuration.raml",
+        "ramls/export_history.raml",
         "ramls/order-invoice-relns.raml",
         "ramls/order-templates.raml",
         "ramls/pieces.raml",
@@ -1012,7 +1047,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-organizations",
     "org": "folio-org"
   },
@@ -1031,7 +1070,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-organizations-storage",
     "org": "folio-org"
   },
@@ -1076,7 +1119,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-patron-blocks",
     "org": "folio-org"
   },
@@ -1142,12 +1189,16 @@
     "config": {
       "oas": [],
       "raml": [
-        "ramls/rtac.raml",
-        "ramls/rtac-batch.raml"
+        "ramls/rtac-batch.raml",
+        "ramls/rtac.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-rtac",
     "org": "folio-org"
   },
@@ -1177,7 +1228,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-sender",
     "org": "folio-org"
   },

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-01-17T02:14:28.315449+00:00"
+    "generatedDateTime": "2022-01-26T06:34:15.135845+00:00"
   },
   "repos": [
     {
@@ -1182,13 +1182,12 @@
     {
       "defaultBranch": "master",
       "description": "Notes on all types of objects",
-      "docDirName": null,
-      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
-      "hintRmb": true,
-      "isRmb": true,
+      "docDirName": "docs",
+      "hintOas": true,
+      "isSpringway": true,
       "name": "mod-notes",
       "org": "folio-org",
-      "ramlDirName": "ramls",
+      "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>Notes on all types of objects</p>",
@@ -1641,7 +1640,10 @@
       "ramlDirName": "okapi-core/src/main/raml",
       "repoLanguageHint": "java",
       "repoType": "backend-infrastructure",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "snyk.yml"
+      ]
     },
     {
       "defaultBranch": "master",
