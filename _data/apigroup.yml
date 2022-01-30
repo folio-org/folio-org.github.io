@@ -35,6 +35,7 @@ inventory:
     - mod-inventory
     - mod-inventory-storage
     - mod-inventory-update
+    - mod-shared-index
     - mod-kb-ebsco-java
     - mod-oai-pmh
     - edge-oai-pmh

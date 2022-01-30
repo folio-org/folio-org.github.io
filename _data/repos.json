@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-01-26T06:34:15.135845+00:00"
+    "generatedDateTime": "2022-01-28T21:56:39.568256+00:00"
   },
   "repos": [
     {
@@ -1480,6 +1480,18 @@
       "repoLanguageHint": "gradle",
       "repoType": "backend-mod",
       "snippetIntro": "<p>Mod-Service-Interaction is a FOLIO Backend Module for cross-app connectivity.</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Consortial index of bibliographical records and shareable items",
+      "docDirName": "doc",
+      "hintOas": true,
+      "name": "mod-shared-index",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>A service that generates an index of bibliographic records and items for the purpose of consortial re-sharing. The index is made as simple as possible in order to be optimized for fast loading.</p>"
     },
     {
       "defaultBranch": "master",
