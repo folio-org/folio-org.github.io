@@ -1239,6 +1239,22 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/openapi/shared-index-1.0.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "mod-shared-index",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/change-manager.raml",
