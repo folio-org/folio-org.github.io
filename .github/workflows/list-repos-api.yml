@@ -8,6 +8,7 @@ on:
     branches: [ master ]
     paths:
       - '_data/repos.json'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,6 +18,4 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Extract repo names
-      uses: awesome-global-contributions/action-yq@v1.0.2
-      with:
-        file: .github/workflows/list-repos-api.sh
+      run: .github/workflows/list-repos-api.sh
