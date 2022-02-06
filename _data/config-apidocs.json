@@ -211,7 +211,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-audit",
     "org": "folio-org"
   },
@@ -773,6 +777,7 @@
         "ramls/nature-of-content-term.raml",
         "ramls/oai-pmh-view.raml",
         "ramls/record-bulk.raml",
+        "ramls/related-instance-type.raml",
         "ramls/service-point.raml",
         "ramls/service-points-user.raml",
         "ramls/shelf-location.raml",
@@ -1234,6 +1239,22 @@
       ]
     },
     "name": "mod-sender",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/openapi/shared-index-1.0.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "mod-shared-index",
     "org": "folio-org"
   },
   {
