@@ -25,6 +25,7 @@ from shutil import make_archive
 from shutil import move
 from shutil import copytree
 from time import sleep
+from werkzeug.utils import secure_filename
 import tempfile
 
 import requests
@@ -111,6 +112,20 @@ def get_url_contents(url):
         contents = json.loads(http_response.text)
     return status, contents
 
+def validate_filename(filename):
+    "Returns filename if it is valid on all operating systems, otherwise raises ValueError"
+    cleaned_filename = secure_filename(filename)
+    if cleaned_filename == filename:
+        return cleaned_filename
+    raise ValueError('Invalid filename: "{}", valid filename: "{}"'.format(filename, cleaned_filename))
+
+def validate_filepath(filepath):
+    "Returns filepath if it is valid on all operating system, otherwises raises ValueError"
+    cleaned_filepath = '/'.join(secure_filename(filename) for filename in filepath.split('/'))
+    if cleaned_filepath == filepath:
+        return cleaned_filepath
+    raise ValueError('Invalid filepath: "{}", valid filepath: "{}"'.format(filepath, cleaned_filepath))
+
 def get_repo_details(repos, repo_name):
     """Gets the details for the specified repository."""
     repo_details = {}
@@ -169,7 +184,7 @@ def show_api_diff(repo_name, mod_name, version, release_sha, api_directory, bran
     output_api_dir = os.path.join(output_dir, "api")
     os.makedirs(output_api_dir, exist_ok=True)
     url_git = "https://github.com/folio-org/{}".format(repo_name)
-    with tempfile.TemporaryDirectory() as temp_dir_1:
+    with tempfile.TemporaryDirectory(suffix='tmp') as temp_dir_1:
         release_dir = os.path.join(temp_dir_1, repo_name)
         release_api_dir = os.path.join(release_dir, api_directory)
         try:
@@ -181,9 +196,13 @@ def show_api_diff(repo_name, mod_name, version, release_sha, api_directory, bran
             errors.append(msg)
             return status, errors, files
         else:
-            with tempfile.TemporaryDirectory() as temp_dir_2:
-                main_dir = os.path.join(temp_dir_2, repo_name)
-                main_api_dir = os.path.join(main_dir, api_directory)
+            with tempfile.TemporaryDirectory(suffix='tmp') as temp_dir_2:
+                # validate_pathname prevents path traversal vulnerability.
+                # Security scanners like snyk.io notice that json_versions is fetched from a URL
+                # and therefore is external (=dangerous) data.
+                # CWE-23: https://cwe.mitre.org/data/definitions/23.html
+                main_dir = validate_filepath(os.path.join(temp_dir_2, repo_name))
+                main_api_dir = validate_filepath(os.path.join(main_dir, api_directory))
                 copytree(release_dir, main_dir)
                 try:
                     sh.git.checkout(release_sha, _cwd=release_dir)
@@ -468,18 +487,23 @@ def main():
     # http://stackoverflow.com/questions/13280978/pyyaml-errors-on-in-a-string
     yaml.add_constructor(u"!include", construct_raml_include, Loader=yaml.SafeLoader)
     for mod in json_versions['repos']:
-        mod_name = mod['name']
-        repo_name = mod['nameRepo']
+        logger.info("Assessing %s %s", mod['name'], mod['version'])
+        # validate_filename prevents path traversal vulnerability.
+        # Security scanners like snyk.io notice that json_versions is fetched from a URL
+        # and therefore is external (=dangerous) data.
+        # CWE-23: https://cwe.mitre.org/data/definitions/23.html
+        mod_name = validate_filename(mod['name'])
+        repo_name = validate_filename(mod['nameRepo'])
+        version = validate_filename(mod['version'])
         DATE_TIME = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')
         #test_modules = ['mod-notes', 'mod-configuration']
         #test_modules = ['mod-notes', 'mod-z3950']
         #if not mod_name in test_modules: # testing
             #continue
-        logger.info("Assessing %s %s", mod_name, mod['version'])
         summary_json = {}
         summary_json["metadata"] = {}
         summary_json["metadata"]["moduleName"] = mod_name
-        summary_json["metadata"]["moduleVersion"] = mod['version']
+        summary_json["metadata"]["moduleVersion"] = version
         summary_json["metadata"]["dateProcessed"] = DATE_TIME
         summary_json["processingErrors"] = []
         summary_json["filesModified"] = []
@@ -497,7 +521,7 @@ def main():
         else:
             if has_db_schema: #FIXME: repos.json sometimes has null property
                 (status, errors, file_record) = show_db_diff(
-                    repo_name, mod_name, mod['version'], mod['releaseSha'], branch, has_db_schema)
+                    repo_name, mod_name, version, mod['releaseSha'], branch, has_db_schema)
                 if status:
                     logger.debug("%s: has DbSchema", mod_name)
                     summary_json["filesModified"].append(file_record)
@@ -510,8 +534,13 @@ def main():
         else:
             if ramls_dir: #FIXME: repos.json sometimes has null property
                 logger.debug("%s: has RAML", mod_name)
+                # validate_filepath prevents path traversal vulnerability.
+                # Security scanners like snyk.io notice that json_repos is fetched from a URL
+                # and therefore is external (=dangerous) data.
+                # CWE-23: https://cwe.mitre.org/data/definitions/23.html
+                ramls_dir = validate_filepath(ramls_dir)
                 (status, errors, files) = show_api_diff(
-                    repo_name, mod_name, mod['version'], mod['releaseSha'], ramls_dir, branch)
+                    repo_name, mod_name, version, mod['releaseSha'], ramls_dir, branch)
                 if status:
                     summary_json["filesModified"].extend(files)
                 else:
