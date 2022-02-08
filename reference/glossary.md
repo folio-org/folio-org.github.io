@@ -224,6 +224,10 @@ Vocabularies that [define](/start/primer-raml/) the format of JSON instances.
 is a JSON-based open standard for creating tokens that assert some number
 of claims. JWTs are authenticated and encrypted, and used by Okapi.
 
+#### Kafka
+
+[Apache Kafka](https://kafka.apache.org/) is a distributed event streaming platform.
+
 #### Kubernetes
 
 [Kubernetes](https://en.wikipedia.org/wiki/Kubernetes) (k8s) is a
@@ -458,6 +462,10 @@ A generic term for Web Services Application Programming Interface (see [API](#ap
 #### Yarn
 
 [Yarn](https://yarnpkg.com) is a package manager for Node.js and JavaScript.
+
+#### ZooKeeper
+
+[Apache ZooKeeper](https://zookeeper.apache.org/) is a service for highly reliable distributed coordination.
 
 #### Z39.50
 
