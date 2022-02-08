@@ -32,7 +32,7 @@ import requests
 import sh
 import yaml
 
-SCRIPT_VERSION = "1.2.1"
+SCRIPT_VERSION = "1.3.0"
 
 LOGLEVELS = {
     "debug": logging.DEBUG,
@@ -162,11 +162,13 @@ def prepare_s3_publish(branch):
     return status
 
 def do_jd(file_1_pn, file_2_pn):
-    """Compare the JSON files using 'jd'"""
+    """Compare the JSON files using 'jd'
+    exit values: 0=same 1=diff 2=exception
+    """
     status = True
     result = ""
     try:
-        result = sh.jd(file_1_pn, file_2_pn).stdout.decode().strip()
+        result = sh.jd(file_1_pn, file_2_pn, _ok_code=[0,1]).stdout.decode().strip()
     except sh.ErrorReturnCode as err:
         logger.error("Trouble doing jd: %s", err.stderr.decode())
         status = False
