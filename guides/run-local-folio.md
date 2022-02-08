@@ -93,6 +93,12 @@ Another way is to run directly on the host machine.
 Follow the Guide to [start](https://github.com/folio-org/okapi/blob/master/doc/guide.md#running-okapi-itself)
 Okapi in its clean state.
 
+Use [folio-local-run](https://github.com/adamdickmeiss/folio-local-run) which enables debugging and testing new functionality, and verifying integration with other modules.
+Builds the set of modules from source.
+Explains installing and configuring the requirements PostgreSQL, Elasticsearch, Apache Kafka, Apache ZooKeeper.
+
+The [folio-tools/infrastructure/local](https://github.com/folio-org/folio-tools/tree/master/infrastructure/local) is another way to install those requirements, using Docker Compose.
+
 Develop a [suite](#sending-queries) of 'curl' commands to create a test tenant and then deploy the main initial backend modules and your own additional modules.
 Generate and load user sample data.
 

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-01-28T21:56:39.568256+00:00"
+    "generatedDateTime": "2022-02-06T02:30:53.854860+00:00"
   },
   "repos": [
     {
@@ -263,10 +263,7 @@
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": "<p>This repository contains reports and other analytics developed for FOLIO and designed to run on the <a href='https://github.com/library-data-platform/ldp'>Library Data Platform</a>.  At present most of the content here consists of SQL reports developed by the FOLIO reporting community and based on the requirements of <a href='https://www.folio.org/community/support/'>FOLIO partner libraries</a>.  In addition to report development, FOLIO has a <a href='https://wiki.folio.org/display/RPT/'>Reporting Special Interest Group</a> that discusses reporting requirements and other related topics.</p>",
-      "workflows": [
-        "ci.yml"
-      ]
+      "snippetIntro": "<p>This repository contains reports and other analytics developed for FOLIO and designed to run on the <a href='https://github.com/library-data-platform/ldp'>Library Data Platform</a>.  At present most of the content here consists of SQL reports developed by the FOLIO reporting community and based on the requirements of <a href='https://www.folio.org/community/support/'>FOLIO partner libraries</a>.  In addition to report development, FOLIO has a <a href='https://wiki.folio.org/display/RPT/'>Reporting Special Interest Group</a> that discusses reporting requirements and other related topics.</p>"
     },
     {
       "defaultBranch": "master",
@@ -1402,7 +1399,7 @@
       "name": "mod-remote-sync",
       "org": "folio-org",
       "ramlDirName": null,
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "gradle",
       "repoType": "backend-mod",
       "snippetIntro": ""
     },
