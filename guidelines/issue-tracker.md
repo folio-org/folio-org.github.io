@@ -135,6 +135,8 @@ Also refer to each development team's Definition of Done ([DoD](/reference/gloss
 - **In Review**: When appropriate, this indicates readiness for formal review by testers.
 - **Closed**: Finished.
 
+(Also refer to [clarification](https://wiki.folio.org/display/PO/JIRA+status) of [Product Owners](/reference/glossary#po) use of the Status field.)
+
 The Status does not preclude other people from assisting.
 Please add relevant Comments.
 
