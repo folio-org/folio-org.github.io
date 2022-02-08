@@ -202,6 +202,12 @@ Functional Requirements for Bibliographic Records
 
 "Higher-order components" are a pattern for re-use of component logic with [React](#react).
 
+#### HRID
+
+Human-readable identifier (HRID) is an additional unique identifier available on some records.
+Also known as eye-readble identifier.
+Not to be confused with the [UUID](#uuid) of a holdings record (which may also have a HRID).
+
 #### ILS
 
 Integrated Library System
