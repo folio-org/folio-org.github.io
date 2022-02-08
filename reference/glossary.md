@@ -202,6 +202,12 @@ Functional Requirements for Bibliographic Records
 
 "Higher-order components" are a pattern for re-use of component logic with [React](#react).
 
+#### HRID
+
+Human-readable identifier (HRID) is an additional unique identifier available on some records.
+Also known as eye-readble identifier.
+Not to be confused with the [UUID](#uuid) of a holdings record (which may also have a HRID).
+
 #### ILS
 
 Integrated Library System
@@ -223,6 +229,10 @@ Vocabularies that [define](/start/primer-raml/) the format of JSON instances.
 [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token)
 is a JSON-based open standard for creating tokens that assert some number
 of claims. JWTs are authenticated and encrypted, and used by Okapi.
+
+#### Kafka
+
+[Apache Kafka](https://kafka.apache.org/) is a distributed event streaming platform.
 
 #### Kubernetes
 
@@ -377,6 +387,12 @@ The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB
 
 ### Terms S-Z
 
+#### SDLC
+
+Software Development Life Cycle (SDLC)
+[Software development process](https://en.wikipedia.org/wiki/Software_development_process).
+Also abbreviated as DLC.
+
 #### SEC
 
 The [FOLIO Security Team](https://wiki.folio.org/display/SEC)
@@ -458,6 +474,10 @@ A generic term for Web Services Application Programming Interface (see [API](#ap
 #### Yarn
 
 [Yarn](https://yarnpkg.com) is a package manager for Node.js and JavaScript.
+
+#### ZooKeeper
+
+[Apache ZooKeeper](https://zookeeper.apache.org/) is a service for highly reliable distributed coordination.
 
 #### Z39.50
 

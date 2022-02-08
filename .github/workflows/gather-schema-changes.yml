@@ -7,6 +7,7 @@ name: gather-schema-changes
 on:
   schedule:
     - cron: '20 03 * * 1,4'
+  workflow_dispatch:
 
 jobs:
   job_1:
