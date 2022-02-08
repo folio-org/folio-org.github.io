@@ -381,6 +381,12 @@ The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB
 
 ### Terms S-Z
 
+#### SDLC
+
+Software Development Life Cycle (SDLC)
+[Software development process](https://en.wikipedia.org/wiki/Software_development_process).
+Also abbreviated as DLC.
+
 #### SEC
 
 The [FOLIO Security Team](https://wiki.folio.org/display/SEC)
