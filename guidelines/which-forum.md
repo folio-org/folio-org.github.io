@@ -136,7 +136,7 @@ We follow a variation of the Apache motto:
   use Feature Branches for any task.
 
 - Use a descriptive name for the branch, with an Issue tracker number
-  if relevant, e.g. "folio-293-which-forum".
+  if relevant, e.g. "FOLIO-293-which-forum".
 
 - In the Pull Request, describe your main changes. Also say whether
   it is now ready to merge, or that you are seeking feedback.
