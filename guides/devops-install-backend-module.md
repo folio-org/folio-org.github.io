@@ -41,7 +41,7 @@ Follow the daily backend builds to verify.
 ## Branch folio-ansible
 
 Make a branch in [folio-ansible](https://github.com/folio-org/folio-ansible),
-e.g. `folio-2467-refenvs-ncip`
+e.g. `FOLIO-2467-refenvs-ncip`
 
 Add the module to the `group_vars/testing` and `group_vars/snapshot` files.
 These files also assist with building the VMs, and currently provide special configuration for some modules.
@@ -68,7 +68,7 @@ Often that is the case because the development of a UI module is not yet ready t
 ## Branch folio-infrastructure
 
 Make a branch in [folio-infrastructure](https://github.com/folio-org-priv/folio-infrastructure),
-e.g. `folio-2467-refenvs-ncip`
+e.g. `FOLIO-2467-refenvs-ncip`
 
 Add to `CI/ansible/testing-add-modules.yml` file.
 The purpose of this file is to declare modules (e.g. mod-ldp) that are not added to a VM (see the previous [section](#branch-folio-ansible)) but do need to be added to the folio-testing reference environment.
@@ -80,7 +80,7 @@ The sequence must have the new module declared after any modules that provide it
 Add testing configuration for the Jenkins jobs ...
 
 Add to the Jenkinsfiles to refer to the folio-infrastructure branch:\
-Set `BRANCH_TO_BUILD` variable to be `refs/heads/folio-2467-refenvs-ncip`
+Set `BRANCH_TO_BUILD` variable to be `refs/heads/FOLIO-2467-refenvs-ncip`
 
 ```
 CI/jenkins/Jenkinsfile.folio-testing-test-build
@@ -96,7 +96,7 @@ Edit the `.gitmodules` file:
 [submodule "CI/ansible/folio-ansible"]
         path = CI/ansible/folio-ansible
         url = https://github.com/folio-org/folio-ansible
-        branch = folio-2467-refenvs-ncip  # <<< add this line <<<
+        branch = FOLIO-2467-refenvs-ncip  # <<< add this line <<<
 ```
 
 Push the folio-ansible branch and the folio-infrastructure branch.
@@ -108,7 +108,7 @@ Do [login](/guides/automation/#jenkins) to Jenkins, and modify the configuration
 That is the most important test build, due to the explicit order of modules.
 
 So, select the `Configure` link in the top-left panel.
-Then in the section "Pipeline : Pipeline script from SCM : Branches to build" replace "Branch specifier" from `*/master` to `refs/heads/folio-2467-refenvs-ncip` and then "Save".
+Then in the section "Pipeline : Pipeline script from SCM : Branches to build" replace "Branch specifier" from `*/master` to `refs/heads/FOLIO-2467-refenvs-ncip` and then "Save".
 
 ## Run folio-testing-test build
 
