@@ -296,12 +296,12 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2021-12-21T11:11:21+00:00",
-      "releaseName": "v18.0.6",
-      "releaseSha": "6d15c26d4b5ca02d70557734e7348727b17caf32",
-      "releaseTag": "v18.0.6",
+      "releaseDate": "2022-02-09T12:59:49+00:00",
+      "releaseName": "v18.0.7",
+      "releaseSha": "a5405b25db31fe3f76af4fb5c17d13e32ffd7f4a",
+      "releaseTag": "v18.0.7",
       "releaseTarget": "master",
-      "version": "18.0.6"
+      "version": "18.0.7"
     },
     {
       "name": "mod-inventory-storage",
@@ -376,12 +376,12 @@
     {
       "name": "mod-login-saml",
       "nameRepo": "mod-login-saml",
-      "releaseDate": "2022-01-11T14:11:42+00:00",
+      "releaseDate": "2022-02-09T10:37:12+00:00",
       "releaseName": "",
-      "releaseSha": "e149fd32f3e163786d7e6301953ba0662e236388",
-      "releaseTag": "v2.4.0",
+      "releaseSha": "9196a52a6f9468d8090dec7ff95808d99d00cd1b",
+      "releaseTag": "v2.4.1",
       "releaseTarget": "master",
-      "version": "2.4.0"
+      "version": "2.4.1"
     },
     {
       "name": "mod-ncip",
@@ -506,12 +506,12 @@
     {
       "name": "mod-pubsub",
       "nameRepo": "mod-pubsub",
-      "releaseDate": "2021-12-18T21:59:07+00:00",
-      "releaseName": "v2.4.2",
-      "releaseSha": "520a7c5f2a21770ec9aae6a964a1ca337877d416",
-      "releaseTag": "v2.4.2",
+      "releaseDate": "2022-02-08T16:10:59+00:00",
+      "releaseName": "v2.4.3",
+      "releaseSha": "2481073ac7c9a4ee33ec3cfab735f085646cb945",
+      "releaseTag": "v2.4.3",
       "releaseTarget": "master",
-      "version": "2.4.2"
+      "version": "2.4.3"
     },
     {
       "name": "mod-quick-marc",
