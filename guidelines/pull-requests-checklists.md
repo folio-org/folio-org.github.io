@@ -26,6 +26,7 @@ and to the additional Wiki [Pull Request Guidelines](https://wiki.folio.org/disp
 * Does each PR title reference a Jira issue for the correct project (at the beginning of the title)?
   * See the additional requirements at Wiki [Pull Request Guidelines](https://wiki.folio.org/display/DD/Pull+Request+Guidelines).
   * Note that the Jira ticket identifier slug must be upper-case with no spaces (e.g. `FOLIO-2951`).
+This enables automated [linking](/guidelines/issue-tracker/#linking) from Jira.
   * Does that Jira ticket have a "Fix Version"?
 * Should the implementation version change (link to guidance)?
 * Are any of the library dependencies a snapshot or pre-release version?
