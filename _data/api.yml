@@ -553,16 +553,6 @@ mod-feesfines:
       - waiver
     ramlutil: ramls/raml-util
 
-mod-notes:
-  - label: null
-    version1: true
-    directory: ramls
-    files:
-      - link
-      - note
-      - types
-    ramlutil: ramls/raml-util
-
 mod-notify:
   - label: null
     version1: true
