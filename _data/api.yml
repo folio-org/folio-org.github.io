@@ -210,6 +210,7 @@ mod-inventory-storage:
     version1: true
     directory: ramls
     files:
+      - async-migration
       - authorities
       - authorities-reindex
       - authority-note-type
@@ -550,16 +551,6 @@ mod-feesfines:
       - transfers
       - transfer-criteria
       - waiver
-    ramlutil: ramls/raml-util
-
-mod-notes:
-  - label: null
-    version1: true
-    directory: ramls
-    files:
-      - link
-      - note
-      - types
     ramlutil: ramls/raml-util
 
 mod-notify:

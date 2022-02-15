@@ -402,6 +402,16 @@ is the group is charged with overseeing the process related to identification an
 
 [Apache Solr](https://en.wikipedia.org/wiki/Apache_Solr).
 
+#### Slug
+
+A human-readable identifier with keywords and alpha-numeric characters. Whitespace is replaced by a hyphen or an underscore character. Punctuation and accented characters are removed, thereby avoiding the need for special encoding.
+
+Used for friendly URLs and reliable identifiers.
+
+See Wikipedia [Slug](https://en.wikipedia.org/wiki/Clean_URL#Slug) and [etymology](https://en.wikipedia.org/wiki/Slug_(publishing)).
+
+To "slugify" is to translate a string into a slug by replacing such characters.
+
 #### SPA
 
 FOLIO is a single-page application ([SPA](https://en.wikipedia.org/wiki/Single-page_application)).
