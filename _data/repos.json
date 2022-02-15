@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-02-06T02:30:53.854860+00:00"
+    "generatedDateTime": "2022-02-14T21:25:33.527840+00:00"
   },
   "repos": [
     {
@@ -1027,7 +1027,10 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>FOLIO compatible inventory module.</p>"
+      "snippetIntro": "<p>FOLIO compatible inventory module.</p>",
+      "workflows": [
+        "macos.yml"
+      ]
     },
     {
       "defaultBranch": "master",
