@@ -46,7 +46,7 @@ buildMvn {
     buildJavaDocker {
       publishMaster = true
       healthChk = true
-      healthChkCmd = 'curl -sS --fail -o /dev/null http://localhost:8081/apidocs/ || exit 1'
+      healthChkCmd = 'wget --no-verbose --tries=1 --spider http://localhost:8081/admin/health || exit 1'
     }
   }
 }
@@ -101,7 +101,9 @@ If we are creating and deploying a Docker image as part of the module's artifact
 
 * `healthChkCmd` -- Use the specified command to perform container health check.   The
 command is run *inside* the container and typically tests a REST endpoint to determine the
-health of the application running inside the container.
+health of the application running inside the container.  Prefer `wget` over `curl` as Alpine
+by default ships without `curl` but with [BusyBox](https://www.busybox.net/about.html), a
+multi-call binary that contains `wget` with reduced number of options.
 
 ## Front-end modules
 

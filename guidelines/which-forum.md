@@ -136,12 +136,14 @@ We follow a variation of the Apache motto:
   use Feature Branches for any task.
 
 - Use a descriptive name for the branch, with an Issue tracker number
-  if relevant, e.g. "folio-293-which-forum".
+  if relevant, e.g. "FOLIO-293-which-forum".
 
 - In the Pull Request, describe your main changes. Also say whether
   it is now ready to merge, or that you are seeking feedback.
   Follow the guidelines [Development, design, and review processes](/guidelines/development-design-review/).
-  Ensure that the PR title refers to the relevant Jira ticket identifiers as explained in the requirements of [Pull requests checklists](/guidelines/pull-requests-checklists/).
+
+-  Ensure that the PR title refers to the relevant Jira ticket identifiers as explained in the requirements of [Pull requests checklists](/guidelines/pull-requests-checklists/)
+and in the [Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/#linking).
 
 - To seek feedback on your work, use additional comments on your
   Pull Request. If the specific attention of certain people is needed,

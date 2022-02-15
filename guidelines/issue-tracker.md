@@ -145,11 +145,15 @@ Please add relevant Comments.
 Other people will create tracker Links between relevant issues.
 
 Using an Issue identifier within Jira text Comments will automatically link to
-it, e.g. `FOLIO-298`. Note that it must be upper-case with no spaces.
+it, e.g. `FOLIO-298`. Note that it must be upper-case with no spaces, i.e. include the hyphen.
 
-Using such an issue identifier in git commit messages and pull request titles, will also automatically
+Using such an issue identifier slug in git commit messages and pull request titles, will also automatically
 link the Issue to the commits.
-Refer to [Pull requests checklists](/guidelines/pull-requests-checklists) requirements for using Jira ticket identifiers in pull-requests and commit messages.
+Refer to [Pull requests checklists](/guidelines/pull-requests-checklists) requirements for using Jira ticket identifier slugs in the titles of pull-requests and relevant commit messages.
+
+Note that Jira will automatically scan GitHub to find pull-request titles, branches, and commits that include such properly formed identifiers.
+Links are displayed in the "Development" panel on the right-hand side of a Jira ticket.
+That automated discovery is not immediate, and can take 60+ minutes.
 
 Provide other relevant bi-directional links, for example GitHub pull requests and
 Discuss topics.
