@@ -734,6 +734,7 @@
       "oas": [],
       "raml": [
         "ramls/alternative-title-type.raml",
+        "ramls/async-migration.raml",
         "ramls/authorities.raml",
         "ramls/authorities-reindex.raml",
         "ramls/authority-note-type.raml",
