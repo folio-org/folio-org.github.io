@@ -6,12 +6,12 @@
     {
       "name": "mod-agreements",
       "nameRepo": "mod-agreements",
-      "releaseDate": "2021-11-12T16:35:03+00:00",
-      "releaseName": "Version 5.0.6",
-      "releaseSha": "740df5deabc5a4a223141e5fe64233f8d3d9a0bf",
-      "releaseTag": "v5.0.6",
+      "releaseDate": "2022-02-21T14:28:00+00:00",
+      "releaseName": "Version 5.0.7",
+      "releaseSha": "00a1d3f66b93b623ed5061783fabef1d9334bd38",
+      "releaseTag": "v5.0.7",
       "releaseTarget": "release_5.0.x",
-      "version": "5.0.6"
+      "version": "5.0.7"
     },
     {
       "name": "mod-audit",
