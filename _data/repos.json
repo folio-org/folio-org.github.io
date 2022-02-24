@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-02-14T21:25:33.527840+00:00"
+    "generatedDateTime": "2022-02-23T00:02:41.574866+00:00"
   },
   "repos": [
     {
@@ -517,6 +517,16 @@
       "repoLanguageHint": "java",
       "repoType": "other",
       "snippetIntro": "<p>Shared library for generating MARC records on-the-fly</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "helm chart to greenmail",
+      "docDirName": null,
+      "name": "greenmail-helm",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
@@ -1066,9 +1076,6 @@
       "defaultBranch": "master",
       "description": "Provides different update schemes for populating a FOLIO Inventory Storage",
       "docDirName": null,
-      "hasDbSchema": null,
-      "hintRmb": true,
-      "isRmb": null,
       "name": "mod-inventory-update",
       "org": "folio-org",
       "ramlDirName": "ramls",
@@ -1369,7 +1376,7 @@
     {
       "defaultBranch": "master",
       "description": "Backend for quickMARC editor",
-      "docDirName": null,
+      "docDirName": "doc",
       "hasDbSchema": null,
       "hintOas": true,
       "hintRmb": true,
@@ -1397,7 +1404,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "EXPLORATORY MODULE : Backend Module to provide data synchronisation with arbitrary sources - initially focussed on LASER resources into Subscriptions and Agreements for Leipzig but with wider scope if we get it right.",
+      "description": "Pluggable data synchronisation with arbitrary sources - initially focussed on LASER resources into Subscriptions and Agreements. Funded by European Regional Development Fund (EFRE)",
       "docDirName": null,
       "name": "mod-remote-sync",
       "org": "folio-org",
@@ -1542,7 +1549,7 @@
     {
       "defaultBranch": "master",
       "description": "Central list of tags that can be assigned to various objects",
-      "docDirName": null,
+      "docDirName": "doc",
       "hintOas": true,
       "isSpringway": true,
       "name": "mod-tags",
@@ -1724,7 +1731,7 @@
       "name": "platform-rs",
       "org": "openlibraryenvironment",
       "repoType": "platform",
-      "snippetIntro": "<p>This is the Resource SHaring Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes-core</code> and of any Stripes modules you wish to make available as part of the Resource Sharing platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>"
+      "snippetIntro": "<p>This is the Resource Sharing Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes-core</code> and of any Stripes modules you wish to make available as part of the Resource Sharing platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>"
     },
     {
       "defaultBranch": "main",
@@ -2278,7 +2285,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>The <code>ui-eholdings</code> module adds the ability to manage electronic holdings in FOLIO. The first supported knowledge base is from EBSCO.</p>"
+      "snippetIntro": "<p>The <code>ui-eholdings</code> module adds the ability to manage electronic holdings in FOLIO. The first supported knowledge base is from EBSCO.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2456,7 +2471,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a UI module for administrating authority records.</p>"
+      "snippetIntro": "<p>This is a UI module for administrating authority records.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2514,10 +2537,7 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-orders and start your development.</p>",
-      "workflows": [
-        "buildNPM.yml"
-      ]
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-orders and start your development.</p>"
     },
     {
       "defaultBranch": "master",
