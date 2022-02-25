@@ -28,3 +28,4 @@ At GitHub keep the "branches" area tidy. Of course some may need to remain, but 
 
 Follow-up with [outstanding pull requests](/search-other/#github).
 
+If a repository is no longer maintained add a warning to its README and set it into archive (= read-only) state, see [GitHub Docs - Archiving Repositories](https://docs.github.com/en/repositories/archiving-a-github-repository/archiving-repositories) and [FOLIO-1838](https://issues.folio.org/browse/FOLIO-1838) for details.
