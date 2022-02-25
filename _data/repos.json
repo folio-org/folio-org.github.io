@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-02-23T00:02:41.574866+00:00"
+    "generatedDateTime": "2022-02-24T23:43:37.216186+00:00"
   },
   "repos": [
     {
@@ -863,7 +863,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Store ERM usage statistics and access data to these statistics",
+      "description": "Store ERM usage statistics and access data to these statistics. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "mod-erm-usage",
       "org": "folio-org",
@@ -874,7 +874,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Library containing models and clients for COUNTER/SUSHI standard",
+      "description": "Library containing models and clients for COUNTER/SUSHI standard. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "mod-erm-usage-counter",
       "org": "folio-org",
@@ -885,7 +885,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Harvest ERM usage statistics",
+      "description": "Harvest ERM usage statistics. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "mod-erm-usage-harvester",
       "org": "folio-org",
@@ -964,7 +964,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Knowledge base for amsl's finc-config module",
+      "description": "Knowledge base for amsl's finc-config module. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
       "hintRmb": true,
@@ -1003,7 +1003,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Manage walk-in contracts",
+      "description": "Manage walk-in contracts. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
       "hintRmb": true,
@@ -1696,6 +1696,16 @@
     },
     {
       "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "pipelines-shared-library",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
       "description": "Complete set of Stripes modules for FOLIO",
       "docDirName": null,
       "name": "platform-complete",
@@ -2307,7 +2317,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Stripes UI for managing ERM usage statistics",
+      "description": "Stripes UI for managing ERM usage statistics. Funded by European Regional Development Fund (EFRE).",
       "docDirName": "docs",
       "name": "ui-erm-usage",
       "org": "folio-org",
@@ -2337,7 +2347,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "UI finc-config module ",
+      "description": "UI finc-config module. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "ui-finc-config",
       "org": "folio-org",
@@ -2347,7 +2357,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "finc-select UI module ",
+      "description": "finc-select UI module. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "ui-finc-select",
       "org": "folio-org",
@@ -2367,7 +2377,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Stripes UI for managing UB Leipzig users and contracts",
+      "description": "Stripes UI for managing UB Leipzig users and contracts. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "ui-idm-connect",
       "org": "folio-org",
@@ -2629,7 +2639,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "ERM-Usage-Data-Provider-finder plugin for Stripes ",
+      "description": "ERM-Usage-Data-Provider-finder plugin for Stripes. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "ui-plugin-find-erm-usage-data-provider",
       "org": "folio-org",
@@ -2639,7 +2649,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Finder plugin for finc metadata collections",
+      "description": "Finder plugin for finc metadata collections. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "ui-plugin-find-finc-metadata-collection",
       "org": "folio-org",
@@ -2649,7 +2659,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Finder plugin for finc metadata sources",
+      "description": "Finder plugin for finc metadata sources. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "ui-plugin-find-finc-metadata-source",
       "org": "folio-org",
