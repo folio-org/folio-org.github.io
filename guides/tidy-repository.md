@@ -23,6 +23,7 @@ Minimise documentation where possible, for example by linking directly to specif
 Run a documentation link verifier occasionally, e.g. [markdown-link-check](https://github.com/tcort/markdown-link-check).
 
 The repository probably has [coding style](/guidelines/contributing/#coding-style) configuration files (`.editorconfig` `.eslintrc`) to partially assist. However some developers might not have text-editors configured, so code style may need to be tidied.
+Usually do such changes in a totally separate pull request.
 
 At GitHub keep the "branches" area tidy. Of course some may need to remain, but many branches can be deleted after their pull requests have been merged.
 
