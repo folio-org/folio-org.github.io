@@ -42,13 +42,9 @@ Deal with any outstanding pull requests.
 For front-end modules, ideally perform one more `lokalisepush.py` run to capture any remaining translations under this old repository name.
 Otherwise follow-up when [configuring Lokalise](#adjust-lokalise-configuration) for the new repository.
 
-Take note of the Settings for branch protection and teams.
+Take note of the Settings for branch protection and teams, which will be applied to the new repository.
 
-At GitHub use the "[archive and read-only](https://help.github.com/en/articles/about-archiving-repositories)" Setting.
-
-This will disable push access and pull requests.
-It leaves the teams configured, and can be temporarily reversed if needed.
-This also enables scripts to avoid "archived" repositories.
+Now follow the full procedure [How to archive a GitHub repository](/faqs/how-to-archive-repository/).
 
 ## Create spaces at Docker Hub
 
