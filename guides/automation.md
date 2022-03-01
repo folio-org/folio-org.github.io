@@ -49,10 +49,11 @@ If an error message (in the 5** series) is shown for the entry point of these si
 
 ### Off-schedule rebuilds
 
-If there is an urgent need to re-run a build outside of the normal automation schedule (explained below),
+DevOps will not accept requests for manual rebuilds of either environment unless special or unusual circumstances dictate otherwise.
+
+If there is an **urgent** need to re-run a build outside of the normal automation schedule (explained below),
 then co-ordinate that on the Slack channel #hosted-reference-envs
 (remember that there are other people utilising these systems).
-The least disruptive is probably "folio-snapshot-load".
 
 Also, as explained below, before doing this wait for the automated hourly build of the “snapshot” branch of the Stripes Platform and ensure that the expected module versions are included
 in that build's [install.json](https://github.com/folio-org/platform-complete/blob/snapshot/install.json) file.
