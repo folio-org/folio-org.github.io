@@ -7,7 +7,7 @@ menuTopTitle: Guides
 ---
 
 The main set of FOLIO modules are co-ordinated to form a regular release.
-At this stage it happens on a quarterly basis.
+At this stage it happens on an approximate quarterly basis.
 (The normal [release procedure guidelines](/guidelines/release-procedures) still apply for individual module releases.)
 
 Refer to the [Releases](https://wiki.folio.org/display/REL/) area of the Wiki for co-ordination of the next regular release, and for followup bugfix and hotfix release processes.
