@@ -55,6 +55,12 @@ The environments are completely torn-down and rebuilt again.
 
 If an error message (in the 5** series) is shown for the entry point of these sites, then that probably means that it is in the process of being rebuilt (see its "Jenkins job" link).
 
+### Developer scratch environments
+
+Team-specific testing and development does not happen on these reference environments.
+Instead use the dedicated Rancher [scratch environments](/faqs/how-to-get-started-with-rancher/).
+These can be configured and scaled specifically to meet the needs of particular teams and POs, e.g. to allow for large datasets, etc.
+
 ### Off-schedule rebuilds
 
 DevOps will not accept requests for manual rebuilds of either environment unless special or unusual circumstances dictate otherwise.
@@ -71,7 +77,7 @@ Correlate the "build number" with that shown in the output log of the project's 
 
 [https://folio-snapshot.dev.folio.org/](https://folio-snapshot.dev.folio.org/)
 
-Built every day, to finish about 02:00 UTC (see Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot/)).
+The server is built every day, to finish about 02:00 UTC (see Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot/)).
 
 The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
 
