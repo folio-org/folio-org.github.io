@@ -8,8 +8,8 @@ DEST="_site"
 IGNORE="/dev\.folio\.org/,/localhost:/"
 IGNORE+=",/folio-org\/jenkins-pipeline-libs/"
 IGNORE+=",/folio-org-priv\/folio-infrastructure/"
-IGNORE+=",/folio-testing-okapi\.aws/"
-IGNORE+=",/folio-testing-test.*\/settings/"
+IGNORE+=",/folio-snapshot-okapi\.dev/"
+IGNORE+=",/folio-snapshot-test.*\/settings/"
 
 # Ignore some known broken ones
 IGNORE+=",/#mod-vendors/"

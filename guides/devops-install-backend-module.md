@@ -10,7 +10,7 @@ menuTopTitle: Guides
 
 This document describes procedures for people assisting with [FOLIO DevOps](/guides/devops-introduction/)
 to add a new back-end module to the folio-ansible configuration,
-and make it available in the folio-snapshot and folio-testing [reference environments](/guides/automation/#reference-environments),
+and make it available in the folio-snapshot [reference environments](/guides/automation/#reference-environments),
 and make it available in the Vagrant box VMs for snapshot and testing.
 
 The developers responsible for that module would have already ensured that the module is ready,
@@ -211,7 +211,6 @@ Following the merges, might want to re-run the folio-testing-test build using th
 Now await the scheduled [automated builds](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/).
 
 Verify the results of each backend build, as done above.
-Remember that folio-snapshot-load will be the same as folio-snapshot.
 
 ```
 curl -s -S \
