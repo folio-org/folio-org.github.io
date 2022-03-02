@@ -256,6 +256,7 @@ mod-inventory-storage:
       - oai-pmh-view
       - record-bulk
       - related-instance-type
+      - related-instances
       - service-point
       - service-points-user
       - shelf-location

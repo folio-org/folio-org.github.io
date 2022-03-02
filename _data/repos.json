@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-02-24T23:43:37.216186+00:00"
+    "generatedDateTime": "2022-03-01T00:22:36.412674+00:00"
   },
   "repos": [
     {
@@ -334,7 +334,10 @@
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "main.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1310,7 +1313,7 @@
     {
       "defaultBranch": "master",
       "description": "Performs password validation and stores validation rules for specified tenant",
-      "docDirName": null,
+      "docDirName": "doc",
       "hintOas": true,
       "isSpringway": true,
       "name": "mod-password-validator",
