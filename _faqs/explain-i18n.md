@@ -15,6 +15,6 @@ The Wiki page [How To translate FOLIO](https://wiki.folio.org/display/I18N/How+T
 
 The FAQ for [dates and times](/faqs/explain-dates-times/) explains the storage and display.
 
-Note: When using the hosted testing environments, please avoid changing the locale of the entire tenant (in the "Settings -> Organization -> Language and localization" menu at the `/settings/organization/locale` URL path).
-Changes here affect all users that are performing tests on the hosted testing environments.
-There is a temporary, session-based locale switch in the developer settings ("Settings -> Developer -> Session locale" at the `/settings/developer/locale` path).
+Note: When using the hosted [reference environments](/guides/automation/#reference-environments), please avoid changing the locale of the entire tenant (in the "Settings -> Organization -> Language and localization" menu at the `/settings/organization/locale` URL path).
+Changes here affect all users that are performing tests on the reference environments.
+Instead, use the temporary session-based locale switch in the developer settings ("Settings -> Developer -> Session locale" at the `/settings/developer/locale` path).

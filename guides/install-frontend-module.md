@@ -15,7 +15,7 @@ The procedure explained below will install the new frontend module to the platfo
 
 There is a separate procedure to [install a new back-end module](/guides/install-backend-module/).
 
-(After the new module has been operating in snapshot and testing environments, and an initial release is ready to be made, then instead follow the [release procedures](/guidelines/release-procedures/#add-to-platforms).)
+(After the new module has been operating in snapshot reference environments, and an initial release is ready to be made, then instead follow the [release procedures](/guidelines/release-procedures/#add-to-platforms).)
 
 ## Require backend only when ready
 

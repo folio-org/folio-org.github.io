@@ -23,7 +23,7 @@ It is also possible to utilise a box in conjunction with local development versi
 ## Prebuilt Vagrant boxes
 
 See the [explanations](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md) for each of the available boxes.
-The main ones of interest at this stage are: folio/testing-backend, folio/testing, folio/snapshot, and folio/release
+The main ones of interest at this stage are: folio/snapshot, and folio/release
 
 The guide to [Software Build Pipeline](/guides/automation/#software-build-pipeline) further explains the process, what time of day each is built, and links to the public interfaces.
 
@@ -35,7 +35,7 @@ Testing a back-end module as a Docker container using a Vagrant VM.
 This might be a useful technique for testing memory management and other settings for a containerized back-end module.
 Also in preparation to [add to reference environments](/guides/install-backend-module/#ensure-local-docker).
 
-* Bring up a FOLIO Vagrant VM (e.g. 'folio/testing-backend' or 'folio/release-core') as normal with `vagrant up` and log in with `vagrant ssh`
+* Bring up a FOLIO Vagrant VM (e.g. 'folio/snapshot' or 'folio/release') as normal with `vagrant up` and log in with `vagrant ssh`
 
 * Clone the module repository and build the backend module:
 
