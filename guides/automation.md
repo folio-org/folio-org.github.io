@@ -94,7 +94,7 @@ There may still be errors because of API differences that aren't covered by the 
 
 This is constructed in the same manner as "folio-snapshot", but approximately 12-hours later.
 
-The server is built every day, to finish about 14:40 UTC (see Jenkins job: [folio-snapshot-2](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-2/)).
+The server is built every day, to finish about 14:00 UTC (see Jenkins job: [folio-snapshot-2](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-2/)).
 
 The folio-snapshot-latest is an alias for folio-snapshot-2.
 
