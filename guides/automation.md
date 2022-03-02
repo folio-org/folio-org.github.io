@@ -39,75 +39,76 @@ The edge APIs are deployed such that any API key generated with the tenant diku 
 
 ## Reference environments
 
+### Explanation
+
 Each environment listed below is based on the [platform-complete](https://github.com/folio-org/platform-complete) Stripes Platform.
 <!-- Awaiting platform-minimal:
 Each also has one based on [platform-core](https://github.com/folio-org/platform-core), so adjust the link to include `-core` (e.g. `folio-snapshot` to `folio-snapshot-core`).
 Similarly okapi can be accessed via `folio-snapshot-core-okapi` (and see notes in the previous section).
 -->
 
+The folio-snapshot and folio-snapshot-2 are constructed identically every 24 hours, with a 12-hour offset.
+
+There are two [flower release](/guides/regular-releases/) environments (the current and the previous) which are rebuilt weekly on a Sunday.
+
+The environments are completely torn-down and rebuilt again.
+
 If an error message (in the 5** series) is shown for the entry point of these sites, then that probably means that it is in the process of being rebuilt (see its "Jenkins job" link).
+
+### Developer scratch environments
+
+Team-specific testing and development does not happen on these reference environments.
+Instead use the dedicated Rancher [scratch environments](/faqs/how-to-get-started-with-rancher/).
+These can be configured and scaled specifically to meet the needs of particular teams and POs, e.g. to allow for large datasets, etc.
 
 ### Off-schedule rebuilds
 
-If there is an urgent need to re-run a build outside of the normal automation schedule (explained below),
+DevOps will not accept requests for manual rebuilds of either environment unless special or unusual circumstances dictate otherwise.
+
+If there is an **urgent** need to re-run a build outside of the normal automation schedule (explained below),
 then co-ordinate that on the Slack channel #hosted-reference-envs
 (remember that there are other people utilising these systems).
-The least disruptive is probably "folio-snapshot-load".
 
 Also, as explained below, before doing this wait for the automated hourly build of the “snapshot” branch of the Stripes Platform and ensure that the expected module versions are included
 in that build's [install.json](https://github.com/folio-org/platform-complete/blob/snapshot/install.json) file.
 Correlate the "build number" with that shown in the output log of the project's "Publish module descriptor" stage.
 
-### folio-testing
-
-[https://folio-testing.dev.folio.org/](https://folio-testing.dev.folio.org/)
-
-The frontend (Stripes) bundle is rebuilt every even two hours, to finish about 5 minutes past (see Jenkins job: [folio-testing-stripes](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-testing-stripes/)).
-The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
-The frontend build consists of the master branch of each frontend module at that time.
-This build follows automatically directly after the "folio-testing-backend" build.
-
-The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish about 50 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
-If successful, then this will regenerate the yarn.lock file of the Platform, to be utilised by the abovementioned "folio-testing-stripes" bundle job.
-So if there is an urgent need to [rebuild](#off-schedule-rebuilds) "folio-testing" outside of normal automation, so as to include a new snapshot of a UI module, then this build needs to have run before the bundle build is re-run.
-View the later part of the "Console output" of its most recent run, to ensure that the module versions are as expected.
-
-The backend (Okapi + modules) is built every day, to finish about 03:35 UTC (see Jenkins job: [folio-testing-backend](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-testing-backend/)).
-The set of backend modules is a list explicitly declared in folio-ansible.
-The backend build consists of the master branch of each backend module at that time.
-There is no attempt to verify that the frontend dependencies are met by the backend modules, so there may be errors caused by that mismatch.
-
 ### folio-snapshot
 
 [https://folio-snapshot.dev.folio.org/](https://folio-snapshot.dev.folio.org/)
 
-Built every day, to finish about 02:00 UTC (see Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot/)).
+The server is built every day, to finish about 02:00 UTC.\
+(See Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot/) which starts about 01:24 UTC.).
 
 The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
 
 The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish about 50 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
 If successful, then this will regenerate the yarn.lock and install files of the Platform, to be utilised by the abovementioned "folio-snapshot" job.
 So if there is an urgent need to [rebuild](#off-schedule-rebuilds) "folio-snapshot" outside of normal automation, so as to include a new snapshot of a module, then this build needs to have run before the "folio-snapshot" build is re-run.
-View the later part of the "Console output" of its most recent run, to ensure that the module versions are as expected.
 
-This folio-snapshot build consists of the master branch of each frontend module at that time, paired with the latest version of backend modules that meet the dependency requirements of the frontend.
+The folio-snapshot builds consist of the master branch of each frontend module at that time, paired with the latest version of backend modules that meet the dependency requirements of the frontend.
 There may still be errors because of API differences that aren't covered by the dependency requirements.
-The folio-snapshot is an alias for folio-snapshot-latest.
 
-### folio-snapshot-load
+### folio-snapshot-2
 
-[https://folio-snapshot-load.dev.folio.org/](https://folio-snapshot-load.dev.folio.org/)
+[https://folio-snapshot-2.dev.folio.org/](https://folio-snapshot-2.dev.folio.org/)
 
-When doing any substantial test data loading, then use this rather than the other systems.
-This the same as "folio-snapshot".
-The server is built every day, to finish about 02:45 UTC (see Jenkins job: [folio-snapshot-load](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-load/)).
+This is constructed in the same manner as "folio-snapshot", but approximately 12-hours later.
+
+The server is built every day, to finish about 14:00 UTC.\
+(See Jenkins job: [folio-snapshot-2](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-2/) which starts about 13:21 UTC.)
+
+The folio-snapshot-latest is an alias for folio-snapshot-2.
 
 ### folio-kiwi
 
 [https://folio-kiwi.dev.folio.org/](https://folio-kiwi.dev.folio.org/)
 
 This is an environment for the latest FOLIO Release R3 2021 Kiwi.
-The server is built every Sunday, to finish about 04:10 UTC (see Jenkins job: [folio-r3-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r3-2021-release/)).
+Each rebuild will pick up any hotfix updates that may have been released.
+
+The server is built every Sunday, to finish about 04:10 UTC.\
+(See Jenkins job: [folio-r3-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r3-2021-release/) which starts about 03:35 UTC.).
 
 ### folio-juniper
 
@@ -115,7 +116,9 @@ The server is built every Sunday, to finish about 04:10 UTC (see Jenkins job: [f
 
 This is an environment for the previous FOLIO Release R2 2021 Juniper.
 Each rebuild will pick up any hotfix updates that may have been released.
-The server is built every Sunday, to finish about 02:55 UTC (see Jenkins job: [folio-r2-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r2-2021-release/)).
+
+The server is built every Sunday, to finish about 02:55 UTC.\
+(See Jenkins job: [folio-r2-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r2-2021-release/) which starts about 02:19 UTC.).
 
 ### Other notes
 

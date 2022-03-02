@@ -23,8 +23,8 @@ task :proof do
       /localhost:/,
       /folio-org\/jenkins-pipeline-libs/,
       /folio-org-priv\/folio-infrastructure/,
-      /folio-testing-okapi\.aws/,
-      /folio-testing-test.*\/settings/,
+      /folio-snapshot-okapi\.dev/,
+      /folio-snapshot-test.*\/settings/,
       /#mod-vendors/,
       /api\/mod-codex-mock/,
       # ignore github. 429 rate-limit error. FOLIO-2597
