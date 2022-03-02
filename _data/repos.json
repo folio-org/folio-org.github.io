@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-02-14T21:25:33.527840+00:00"
+    "generatedDateTime": "2022-03-01T00:22:36.412674+00:00"
   },
   "repos": [
     {
@@ -334,7 +334,10 @@
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "main.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -517,6 +520,16 @@
       "repoLanguageHint": "java",
       "repoType": "other",
       "snippetIntro": "<p>Shared library for generating MARC records on-the-fly</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "helm chart to greenmail",
+      "docDirName": null,
+      "name": "greenmail-helm",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
@@ -853,7 +866,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Store ERM usage statistics and access data to these statistics",
+      "description": "Store ERM usage statistics and access data to these statistics. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "mod-erm-usage",
       "org": "folio-org",
@@ -864,7 +877,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Library containing models and clients for COUNTER/SUSHI standard",
+      "description": "Library containing models and clients for COUNTER/SUSHI standard. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "mod-erm-usage-counter",
       "org": "folio-org",
@@ -875,7 +888,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Harvest ERM usage statistics",
+      "description": "Harvest ERM usage statistics. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "mod-erm-usage-harvester",
       "org": "folio-org",
@@ -954,7 +967,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Knowledge base for amsl's finc-config module",
+      "description": "Knowledge base for amsl's finc-config module. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
       "hintRmb": true,
@@ -993,7 +1006,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Manage walk-in contracts",
+      "description": "Manage walk-in contracts. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
       "hintRmb": true,
@@ -1066,9 +1079,6 @@
       "defaultBranch": "master",
       "description": "Provides different update schemes for populating a FOLIO Inventory Storage",
       "docDirName": null,
-      "hasDbSchema": null,
-      "hintRmb": true,
-      "isRmb": null,
       "name": "mod-inventory-update",
       "org": "folio-org",
       "ramlDirName": "ramls",
@@ -1303,7 +1313,7 @@
     {
       "defaultBranch": "master",
       "description": "Performs password validation and stores validation rules for specified tenant",
-      "docDirName": null,
+      "docDirName": "doc",
       "hintOas": true,
       "isSpringway": true,
       "name": "mod-password-validator",
@@ -1369,7 +1379,7 @@
     {
       "defaultBranch": "master",
       "description": "Backend for quickMARC editor",
-      "docDirName": null,
+      "docDirName": "doc",
       "hasDbSchema": null,
       "hintOas": true,
       "hintRmb": true,
@@ -1397,7 +1407,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "EXPLORATORY MODULE : Backend Module to provide data synchronisation with arbitrary sources - initially focussed on LASER resources into Subscriptions and Agreements for Leipzig but with wider scope if we get it right.",
+      "description": "Pluggable data synchronisation with arbitrary sources - initially focussed on LASER resources into Subscriptions and Agreements. Funded by European Regional Development Fund (EFRE)",
       "docDirName": null,
       "name": "mod-remote-sync",
       "org": "folio-org",
@@ -1542,7 +1552,7 @@
     {
       "defaultBranch": "master",
       "description": "Central list of tags that can be assigned to various objects",
-      "docDirName": null,
+      "docDirName": "doc",
       "hintOas": true,
       "isSpringway": true,
       "name": "mod-tags",
@@ -1689,6 +1699,16 @@
     },
     {
       "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "pipelines-shared-library",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
       "description": "Complete set of Stripes modules for FOLIO",
       "docDirName": null,
       "name": "platform-complete",
@@ -1724,7 +1744,7 @@
       "name": "platform-rs",
       "org": "openlibraryenvironment",
       "repoType": "platform",
-      "snippetIntro": "<p>This is the Resource SHaring Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes-core</code> and of any Stripes modules you wish to make available as part of the Resource Sharing platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>"
+      "snippetIntro": "<p>This is the Resource Sharing Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes-core</code> and of any Stripes modules you wish to make available as part of the Resource Sharing platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>"
     },
     {
       "defaultBranch": "main",
@@ -2278,7 +2298,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>The <code>ui-eholdings</code> module adds the ability to manage electronic holdings in FOLIO. The first supported knowledge base is from EBSCO.</p>"
+      "snippetIntro": "<p>The <code>ui-eholdings</code> module adds the ability to manage electronic holdings in FOLIO. The first supported knowledge base is from EBSCO.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2292,7 +2320,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Stripes UI for managing ERM usage statistics",
+      "description": "Stripes UI for managing ERM usage statistics. Funded by European Regional Development Fund (EFRE).",
       "docDirName": "docs",
       "name": "ui-erm-usage",
       "org": "folio-org",
@@ -2322,7 +2350,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "UI finc-config module ",
+      "description": "UI finc-config module. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "ui-finc-config",
       "org": "folio-org",
@@ -2332,7 +2360,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "finc-select UI module ",
+      "description": "finc-select UI module. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "ui-finc-select",
       "org": "folio-org",
@@ -2352,7 +2380,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Stripes UI for managing UB Leipzig users and contracts",
+      "description": "Stripes UI for managing UB Leipzig users and contracts. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "ui-idm-connect",
       "org": "folio-org",
@@ -2456,7 +2484,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a UI module for administrating authority records.</p>"
+      "snippetIntro": "<p>This is a UI module for administrating authority records.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2514,10 +2550,7 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-orders and start your development.</p>",
-      "workflows": [
-        "buildNPM.yml"
-      ]
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-orders and start your development.</p>"
     },
     {
       "defaultBranch": "master",
@@ -2609,7 +2642,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "ERM-Usage-Data-Provider-finder plugin for Stripes ",
+      "description": "ERM-Usage-Data-Provider-finder plugin for Stripes. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "ui-plugin-find-erm-usage-data-provider",
       "org": "folio-org",
@@ -2619,7 +2652,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Finder plugin for finc metadata collections",
+      "description": "Finder plugin for finc metadata collections. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "ui-plugin-find-finc-metadata-collection",
       "org": "folio-org",
@@ -2629,7 +2662,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Finder plugin for finc metadata sources",
+      "description": "Finder plugin for finc metadata sources. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
       "name": "ui-plugin-find-finc-metadata-source",
       "org": "folio-org",

@@ -328,12 +328,12 @@ The link to the built platform "instance" and the link to the "UI Tests" are app
 This section explains how and when to manage modules in the platforms (e.g. [platform-core](https://github.com/folio-org/platform-core), [platform-complete](https://github.com/folio-org/platform-complete), etc.) after a new version of a module has been released.
 There are cases when Renovate will not update modules automatically, so changes to the platform will need to be done manually.  These cases include the following:
 
-* A new UI module needs to be included in the platform.  Before adding a new module to the platform, ensure that the module has already been added and tested on the snapshot branch and included in the  [snapshot and testing](/faqs/how-to-install-new-module/) reference environments.
+* A new UI module needs to be included in the platform.  Before adding a new module to the platform, ensure that the module has already been added and tested on the snapshot branch and included in the  [snapshot](/faqs/how-to-install-new-module/) reference environments.
 Add the new UI module and specify the version in 'package.json'.  Add the module to 'stripes.config.js' (if appropriate).
 
 * A new backend module needs to be included in the platform, and it is NOT a dependency of any of the UI modules that are listed in the platform's package.json file.
 In these cases, the module should be added to the 'install-extras.json' file.
-As with new UI modules, ensure that the module has already been added and tested on the snapshot branch and included in the  [snapshot and testing](/faqs/how-to-install-new-module/) reference environments.
+As with new UI modules, ensure that the module has already been added and tested on the snapshot branch and included in the  [snapshot](/faqs/how-to-install-new-module/) reference environments.
 
 * A new major release needs to be added to the master branch of the platform to either 'package.json' or 'install-extras.json' files.
 

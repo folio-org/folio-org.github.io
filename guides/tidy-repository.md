@@ -23,8 +23,11 @@ Minimise documentation where possible, for example by linking directly to specif
 Run a documentation link verifier occasionally, e.g. [markdown-link-check](https://github.com/tcort/markdown-link-check).
 
 The repository probably has [coding style](/guidelines/contributing/#coding-style) configuration files (`.editorconfig` `.eslintrc`) to partially assist. However some developers might not have text-editors configured, so code style may need to be tidied.
+Usually do such changes in a totally separate pull request.
 
 At GitHub keep the "branches" area tidy. Of course some may need to remain, but many branches can be deleted after their pull requests have been merged.
 
 Follow-up with [outstanding pull requests](/search-other/#github).
+
+If a repository is no longer maintained, and a decision has been made to archive the repository, then follow FAQ [How to archive a GitHub repository](/faqs/how-to-archive-repository/).
 

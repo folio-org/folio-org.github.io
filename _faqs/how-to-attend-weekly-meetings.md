@@ -4,7 +4,7 @@ title: How to attend weekly team meetings
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: management
-faqOrder: 4
+faqOrder: 5
 ---
 
 On specific days each week, online conference call meetings are held by the various core teams and some special interest groups.

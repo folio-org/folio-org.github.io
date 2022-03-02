@@ -11,6 +11,7 @@ menuTopTitle: Guides
 For server-side projects that utilise RAML or OpenAPI (OAS), use the tool `api-lint` to assess the API description files and schema and examples.
 
 The tool is available for use during FOLIO Continuous Integration builds, and also for local use prior to commit.
+Currently RAML 1.0 and OAS 3.0 are handled.
 
 For [RAML-using](/start/primer-raml/) projects, this new "api-lint" tool is preferred. The previous tool "[lint-raml](/guides/raml-cop/)" (runLintRamlCop) is still available, but is deprecated. Its behind-the-scenes technology is outdated.
 
@@ -147,12 +148,27 @@ For any branch or pull-request build, follow the "details" link via the coloured
 Then see "Artifacts" at the top-right for the processing report.
 Or follow across to Jenkins "classic" view, and find the report in the left-hand panel.
 
+## Ensure valid JSON Schema
+
+While api-lint can detect many issues with broken JSON Schema, it is advisable to ensure that the schema are valid locally before pushing changes to CI.
+Otherwise the messages from api-lint can be confusing.
+
+There are many schema validation tools. One such is
+[z-schema](https://github.com/zaggino/z-schema):
+
+```
+for f in schema/*.json; do z-schema --pedanticCheck $f; done
+```
+
+Of course it is also advisable to follow on to verify the API descriptions locally with api-lint before pushing to continuous integration.
+
 ## Interpretation of messages
 
 When errors are encountered, then a summary of conformance "Violations" and "Warnings" is presented at the top, followed by detail about each.
 The detail includes the location of the relevant file and the line number of the problem.
 
 Note that if there are only warnings but no violations, then nothing is presented.
+Use the `--warnings` option described above.
 
 Note that this `api-lint` tool is more thorough than our previous CI tool (based on raml-cop and its underlying raml-1-parser).
 So projects might find new violations being reported.
