@@ -416,12 +416,12 @@
     {
       "name": "mod-oai-pmh",
       "nameRepo": "mod-oai-pmh",
-      "releaseDate": "2021-12-17T12:51:00+00:00",
-      "releaseName": "v3.6.2",
-      "releaseSha": "5f893f519bd2c3c90aa628e4010e34f1146672de",
-      "releaseTag": "v3.6.2",
+      "releaseDate": "2022-02-28T12:02:27+00:00",
+      "releaseName": "v3.7.0",
+      "releaseSha": "971552882093129dd168320688e7ffd81379a525",
+      "releaseTag": "v3.7.0",
       "releaseTarget": "master",
-      "version": "3.6.2"
+      "version": "3.7.0"
     },
     {
       "name": "mod-orders",
@@ -576,12 +576,12 @@
     {
       "name": "mod-source-record-manager",
       "nameRepo": "mod-source-record-manager",
-      "releaseDate": "2022-02-09T20:22:28+00:00",
-      "releaseName": "3.2.8",
-      "releaseSha": "2dbecd573bdf7141105447656887316856635cbb",
-      "releaseTag": "v3.2.8",
+      "releaseDate": "2022-02-24T14:59:25+00:00",
+      "releaseName": "3.2.9",
+      "releaseSha": "39dbd59ed3035211f4916eb0f712d0a65266546a",
+      "releaseTag": "v3.2.9",
       "releaseTarget": "master",
-      "version": "3.2.8"
+      "version": "3.2.9"
     },
     {
       "name": "mod-source-record-storage",

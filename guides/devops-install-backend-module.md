@@ -10,8 +10,8 @@ menuTopTitle: Guides
 
 This document describes procedures for people assisting with [FOLIO DevOps](/guides/devops-introduction/)
 to add a new back-end module to the folio-ansible configuration,
-and make it available in the folio-snapshot and folio-testing [reference environments](/guides/automation/#reference-environments),
-and make it available in the Vagrant box VMs for snapshot and testing.
+and make it available in the folio-snapshot [reference environments](/guides/automation/#reference-environments),
+and make it available in the Vagrant box VMs for snapshot.
 
 The developers responsible for that module would have already ensured that the module is ready,
 its repository is [established](/guidelines/create-new-repo/),
@@ -50,9 +50,6 @@ Always add new modules to `group_vars/testing`.
 
 Only add module entries to `group_vars/snapshot` if they need special configuration to over-ride LaunchDescriptor settings, or to provide other additional settings.
 
-If this is also a "core" module, then it will also be added to the corresponding `-core` files.
-Normally only added to the main "complete" environments.
-
 Follow the format for the entries of other modules.
 
 Note that the "snapshot" files are alphabetically sorted, as Okapi handles those.
@@ -83,7 +80,6 @@ Add to the Jenkinsfiles to refer to the folio-infrastructure branch:\
 Set `BRANCH_TO_BUILD` variable to be `refs/heads/FOLIO-2467-refenvs-ncip`
 
 ```
-CI/jenkins/Jenkinsfile.folio-testing-test-build
 CI/jenkins/Jenkinsfile.folio-snapshot-test-build
 ```
 
@@ -104,13 +100,12 @@ Push the folio-ansible branch and the folio-infrastructure branch.
 ## Jenkins testing configuration
 
 Do [login](/guides/automation/#jenkins) to Jenkins, and modify the configuration for the
-[`folio-testing-test`](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-testing-test/) build.
-That is the most important test build, due to the explicit order of modules.
+[`folio-snapshot-test`](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-test/) build.
 
 So, select the `Configure` link in the top-left panel.
 Then in the section "Pipeline : Pipeline script from SCM : Branches to build" replace "Branch specifier" from `*/master` to `refs/heads/FOLIO-2467-refenvs-ncip` and then "Save".
 
-## Run folio-testing-test build
+## Run folio-snapshot-test build
 
 If there have been master changes for folio-ansible and folio-infrastructure since branching, then do merge master to branch, and deal with conflicts.
 
@@ -119,35 +114,34 @@ Now run the test build. Select the `Build with Parameters` link in the top-left 
 Follow the results of this build run via its `Console Output` and full log.
 
 The AWS instance will be removed and rebuilt.
-It takes approximately 20-25 minutes.
+It takes approximately 35-40 minutes.
 
 If not success, then try to interpret the [Jenkins output logfile](/faqs/how-to-investigate-jenkins-logs/).
 In some cases, may need to ssh to the instance and inspect the Okapi logfile.
 
-## Verify the testing build
+## Verify the test build
 
 After success, then ensure that the new back-end module is in place.
 (Example 'curl' of course needs token and tenant headers.)
 
 ```
 curl -s -S \
-  https://folio-testing-test-okapi.dev.folio.org/_/proxy/tenants/diku/modules \
+  https://folio-snapshot-test-okapi.dev.folio.org/_/proxy/tenants/diku/modules \
   | jq -r '.[] | select(.id | match("mod-"))[]' | sort
 ```
 
 Do ssh login to the AWS instance (search the Jenkins build output for "ec2-" to get the DNS name)
-and confirm that the module's docker logs are not spewing errors.
+and confirm that the module's docker logs are not spewing errors,
+and that its docker has not terminated.
 
 Could also verify via the front-end "Settings : Software versions" page (e.g.
-[folio-testing-test.dev.folio.org](https://folio-testing-test.dev.folio.org/settings/about)).
-However remember that an automated job might be in-process to rebuild its front-end,
-as explained at the [reference environments](/guides/automation/#reference-environments).
+[folio-snapshot-test.dev.folio.org](https://folio-snapshot-test.dev.folio.org/settings/about)).
 
 ## Add to snapshot platform
 
 This is the separate procedure for adding a backend module to the "snapshot" branch of the Stripes Platform (e.g. to [platform-complete](https://github.com/folio-org/platform-complete/tree/snapshot)).
 
-Before doing this, the successful build of "folio-testing-test" (described in the preceding sections) will provide some comfort, but it is not a thorough test.
+Before doing this, the successful build of "folio-snapshot-test" (described in the preceding sections) will provide some comfort, but it is not a thorough test.
 Of course, it it fails then there is no point doing this section.
 
 ### Platform explanation
@@ -180,7 +174,7 @@ After the next "build-platform-complete-snapshot" run, then verify that the new 
 
 ### Run folio-snapshot-test build
 
-Run and verify the [`folio-snapshot-test`](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-test/) build, as [explained above](#run-folio-testing-test-build) for the "folio-testing-test" build.
+Run and verify the [`folio-snapshot-test`](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-test/) build, as [explained above](#run-folio-snapshot-test-build).
 
 If there is trouble, then revert the addition to the Platform, and investigate and report the issues.
 
@@ -190,7 +184,7 @@ Now that there is happiness, prepare and merge the pull-requests to folio-ansibl
 
 First be sure to remove all test configuration ...
 
-* At the Jenkins interface for "folio-testing-test" and "folio-snapshot-test", revisit its `Configure` page and revert the "Branch specifier" to be `*/master`
+* At the Jenkins interface for "folio-snapshot-test", revisit its `Configure` page and revert the "Branch specifier" to be `*/master`
 (which also signals to other DevOps that you have finished with the test builds).
 * In the "folio-infrastructure" branch, remove the testing configuration in the Jenkinsfiles
 and the gitmodules file.
@@ -206,20 +200,19 @@ First merge to folio-ansible, then to folio-infrastructure.
 
 ## Inspect build results
 
-Following the merges, might want to re-run the folio-testing-test build using this now-deployed configuration to ensure no glitches.
+Following the merges, might want to re-run the folio-snapshot-test build using this now-deployed configuration to ensure no glitches.
 
-Now await the scheduled [automated builds](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/).
+Now await the scheduled [automated build](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/).
 
-Verify the results of each backend build, as done above.
-Remember that folio-snapshot-load will be the same as folio-snapshot.
+Verify the results of the backend build, as done above.
 
 ```
 curl -s -S \
-  https://folio-testing-okapi.dev.folio.org/_/proxy/tenants/diku/modules \
+  https://folio-snapshot-okapi.dev.folio.org/_/proxy/tenants/diku/modules \
   | jq -r '.[] | select(.id | match("mod-"))[]' | sort
 ```
 
-To inspect via the front-end, note that the folio-testing-stripes build will automatically follow folio-testing-backend for example.
+Inspect via the front-end.
 
 ## Followup
 
