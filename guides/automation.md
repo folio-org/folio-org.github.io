@@ -77,7 +77,8 @@ Correlate the "build number" with that shown in the output log of the project's 
 
 [https://folio-snapshot.dev.folio.org/](https://folio-snapshot.dev.folio.org/)
 
-The server is built every day, to finish about 02:00 UTC (see Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot/)).
+The server is built every day, to finish about 02:00 UTC.\
+(See Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot/) which starts about 01:24 UTC.).
 
 The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
 
@@ -94,7 +95,8 @@ There may still be errors because of API differences that aren't covered by the 
 
 This is constructed in the same manner as "folio-snapshot", but approximately 12-hours later.
 
-The server is built every day, to finish about 14:00 UTC (see Jenkins job: [folio-snapshot-2](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-2/)).
+The server is built every day, to finish about 14:00 UTC.\
+(See Jenkins job: [folio-snapshot-2](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-2/) which starts about 13:21 UTC.)
 
 The folio-snapshot-latest is an alias for folio-snapshot-2.
 
@@ -103,7 +105,10 @@ The folio-snapshot-latest is an alias for folio-snapshot-2.
 [https://folio-kiwi.dev.folio.org/](https://folio-kiwi.dev.folio.org/)
 
 This is an environment for the latest FOLIO Release R3 2021 Kiwi.
-The server is built every Sunday, to finish about 04:10 UTC (see Jenkins job: [folio-r3-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r3-2021-release/)).
+Each rebuild will pick up any hotfix updates that may have been released.
+
+The server is built every Sunday, to finish about 04:10 UTC.\
+(See Jenkins job: [folio-r3-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r3-2021-release/) which starts about 03:35 UTC.).
 
 ### folio-juniper
 
@@ -111,7 +116,9 @@ The server is built every Sunday, to finish about 04:10 UTC (see Jenkins job: [f
 
 This is an environment for the previous FOLIO Release R2 2021 Juniper.
 Each rebuild will pick up any hotfix updates that may have been released.
-The server is built every Sunday, to finish about 02:55 UTC (see Jenkins job: [folio-r2-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r2-2021-release/)).
+
+The server is built every Sunday, to finish about 02:55 UTC.\
+(See Jenkins job: [folio-r2-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r2-2021-release/) which starts about 02:19 UTC.).
 
 ### Other notes
 
