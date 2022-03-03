@@ -30,7 +30,7 @@ The workflows are established by following these steps:
 
 ## Disable Jenkins pipeline
 
-When the first pull request is created with the first workflow, then the Jenkins pipeline needs to be disabled as a first step. This prevents it running in parallel with the GitHub Action workflows and so publishing duplicate artifacts.
+Before pushing the branch for the first workflow, the Jenkins pipeline needs to be disabled as a first step. This is very important, as it prevents running Jenkins in parallel with the GitHub Action workflows and so publishing duplicate artifacts.
 
 Do: `git mv Jenkinsfile Jenkinsfile.deprecated`
 
