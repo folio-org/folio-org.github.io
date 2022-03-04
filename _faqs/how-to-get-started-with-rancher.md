@@ -23,9 +23,11 @@ Useful links:
 Before commencing become familiar with this FAQ.
 Some teams also provide [further general instructions](/guides/run-local-folio/#scratch-environments-rancher-docker).
 
-For assistance, use the [Slack channel](/guidelines/which-forum/#slack) `#scratch-environments` and your team-specific channel.
-To raise Jira tickets, use the project key `RANCHER` and the "Development Team" [Kitfox](https://wiki.folio.org/display/FOLIJET/Kitfox+Team+DevOps+-+Dev+Support),
-and see that wiki page for further resources regarding Rancher scratch environments.
+For general assistance, use the [Slack channel](/guidelines/which-forum/#slack) `#scratch-environments` and your team-specific channel.
+
+To raise Jira tickets related to scratch environments, refer to the [FAQ](/faqs/how-to-raise-devops-ticket/#rancher-scratch-environments).
+
+The [Kitfox](https://wiki.folio.org/display/FOLIJET/Kitfox+Team+DevOps+-+Dev+Support) DevOps team wiki page has further resources regarding Rancher scratch environments.
 
 ## Logging in
 To have access to Rancher, you need to be a member of a FOLIO organization [Team in GitHub](https://github.com/orgs/folio-org/teams).
@@ -215,7 +217,7 @@ To create Elasticsearch index snapshot for Rancher performance testing cluster, 
 ![](/images/dbconnectmodules.png)
 * Copy the value of `ELASTICSEARCH_HOST`, `ELASTICSEARCH_USERNAME`, and `ELASTICSEARCH_PASSWORD`.
 ![](/images/elasticsearch.png)
-* Ask the DevOps administrator to create the repository for you. (The repository is attached to persistent AWS S3 bucket.)
+* Ask the Kitfox DevOps administrator to create the repository for you. (The repository is attached to persistent AWS S3 bucket.)
 * Go to project name ( Team name ) -> Resources -> Workloads -> ubuntu, select the vertical ellipsis, and choose: `Execute Shell`
 ![](/images/executeshell.png)
 
@@ -271,7 +273,7 @@ Q: Is this the `Apps` menu item at the top of the page? When it is accessed from
   + The `App` menu is accessible to every Project member. The FOLIO Helm repository is shared for all Projects, and contains the complete FOLIO backends list.
 
 Q: Create your own branch of what, the Helm repository or the module repository?
-  + The module repository. The FOLIO Helm repository is managed by the FOLIO DevOps team.
+  + The module repository. The FOLIO Helm repository is managed by the Kitfox DevOps team.
 
 Q: The linked rancher configuration includes a tag `docker.dev.folio.org/mod-pubsub:folijet-latest`. Does this mean that every custom module version is published to a FOLIO local docker repository and needs to be uniquely named to avoid conflicts?
   + Add/change any tag that is needed before the module building to avoid conflicts.
@@ -354,14 +356,14 @@ Q: How to run two bundles (e.g. one with `ui-users/feature-A` and one with `ui-u
 
 ### Environment Q&A
 
-Q: How to do a soft reset of the whole system (i.e. start from scratch without DevOps help)?
+Q: How to do a soft reset of the whole system (i.e. start from scratch without Kitfox DevOps help)?
   + Wipe out Postgres data with a script (do not delete Okapi system tables), restart Okapi, use the bulk registration command.
 
-Q: How to do a hard reset of the whole system (DevOps)?
+Q: How to do a hard reset of the whole system (Kitfox DevOps)?
   + Recreate Project with Terraform.
 
 Q: Is there a way to move the whole of the system onto the latest in one step?
-  + DevOps script 'recreate_modules.sh' in the Terraform folder.
+  + Kitfox DevOps script 'recreate_modules.sh' in the Terraform folder.
 
 Q: How can a previous release system be provisioned (for example, [Goldenrod release](https://github.com/folio-org/platform-complete/tree/q2-2020))? That would be important for testing of schema updates.
   + Override repository and tag for each backend module and do upgrade:
@@ -371,7 +373,7 @@ Q: How can a previous release system be provisioned (for example, [Goldenrod rel
     ```
     Registration Post job will register Descriptor with this version.
     Rebuild and install UI with needed version.
-    Better idea is to ask DevOps to perform it with Terraform.
+    Better idea is to ask Kitfox DevOps to perform it with Terraform.
 
 Q: Can I create my private container registry and point Helm charts to it instead of folioci?
   + That is currently the main approach to build and deploy UI modules.
