@@ -23,9 +23,11 @@ Useful links:
 Before commencing become familiar with this FAQ.
 Some teams also provide [further general instructions](/guides/run-local-folio/#scratch-environments-rancher-docker).
 
-For assistance, use the [Slack channel](/guidelines/which-forum/#slack) `#scratch-environments` and your team-specific channel.
-To raise Jira tickets, use the project key `RANCHER` and the "Development Team" [Kitfox](https://wiki.folio.org/display/FOLIJET/Kitfox+Team+DevOps+-+Dev+Support),
-and see that wiki page for further resources regarding Rancher scratch environments.
+For general assistance, use the [Slack channel](/guidelines/which-forum/#slack) `#scratch-environments` and your team-specific channel.
+
+To raise Jira tickets related to scratch environments, refer to the [FAQ](/faqs/how-to-raise-devops-ticket/#rancher-scratch-environments).
+
+The [Kitfox](https://wiki.folio.org/display/FOLIJET/Kitfox+Team+DevOps+-+Dev+Support) DevOps team wiki page has further resources regarding Rancher scratch environments.
 
 ## Logging in
 To have access to Rancher, you need to be a member of a FOLIO organization [Team in GitHub](https://github.com/orgs/folio-org/teams).

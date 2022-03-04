@@ -4,7 +4,7 @@ title: How to archive a GitHub repository
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: management
-faqOrder: 3
+faqOrder: 4
 ---
 
 ## Introduction
