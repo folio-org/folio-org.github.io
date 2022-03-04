@@ -15,15 +15,17 @@ preparing initial setup files, and configuration.
 
 Take care to choose wisely for the [module name](/guidelines/naming-conventions/#module-names). It will be disruptive to [change that](/guides/rename-module/).
 
-## Devops assistance
+## DevOps assistance
 
-Open Jira tickets, so that the project is integrated into Jenkins, the correct permissions are set on the repo, and an appropriate Jira project can be created (if applicable).
+Most setup can be done by your development team, following this document.
+
+If assistance is needed then [raise a FOLIO DevOps Jira ticket](/faqs/how-to-raise-devops-ticket/#general-folio-devops)
+so that the correct permissions are set on the repo, and an appropriate Jira project can be created (if applicable).
 There is one example at [FOLIO-2892](https://issues.folio.org/browse/FOLIO-2892).
-Specify "Development Team: FOLIO DevOps" (our team will prioritize and schedule).
 
 ## Configuration at GitHub
 
-If the "New" button is not available to you at [github.com/folio-org](https://github.com/folio-org) then [contact](/community/#collaboration-tools) FOLIO infrastructure (e.g. via the issue tracker).
+If the "New" button is not available to you at [github.com/folio-org](https://github.com/folio-org) then [contact](/community/#collaboration-tools) FOLIO DevOps.
 
 Otherwise follow the GitHub prompts to create a new repository, and if needed to then import an existing repository.
 
@@ -31,7 +33,7 @@ The following first few items can only be done by the initial creator of the rep
 (If the "Settings" tab is not available to you, then see the "support" advice above.)
 
 Disable the Issues and Wiki via Settings. We use the FOLIO resources instead.
-Do this as soon as possible, so that issues are created in the FOLIO issue tracker.
+Do this as soon as possible, so that issues are created in the relevant project's FOLIO issue tracker.
 
 Ensure that access is configured for the relevant FOLIO GitHub [Teams](https://github.com/orgs/folio-org/teams).
 Note that front-end module repositories also need the "bots" Team (with Write access) to enable the "[translations](/guides/commence-a-module/#front-end-translations)" facility.

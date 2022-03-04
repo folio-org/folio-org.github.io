@@ -21,7 +21,7 @@ Create a Jira ticket so that people are aware of what happened to the repository
 Certain operations will require Admin access to the repository.
 Ask at Slack #devops channel.
 
-Alternatively, set the "Development team" for the Jira ticket to be "FOLIO DevOps", and then that team will handle it.
+If more complex then [raise a FOLIO DevOps Jira ticket](/faqs/how-to-raise-devops-ticket/#general-folio-devops).
 Explain in the ticket what needs to happen, e.g. provide text for the README notice.
 
 ## Ensure not in a Platform

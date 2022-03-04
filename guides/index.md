@@ -147,7 +147,9 @@ These are listed in the [Start](/start/) section.
 - [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/)
 and when ready [install](/faqs/how-to-install-new-module/) it to platform and reference environments for snapshot and testing builds.
 - [Rename a module](rename-module/).
+- [Archive a GitHub repository](/faqs/how-to-archive-repository/).
 - [Increase visibility of module documentation](visibility-module-docs/).
+- [Raise a FOLIO DevOps Jira ticket](/faqs/how-to-raise-devops-ticket/#general-folio-devops).
 - [Maintain tidy repositories](tidy-repository/).
 - <a id="roadmap"></a>The [overview](https://www.folio.org/platform/) and the [FOLIO Project Roadmap Process](https://wiki.folio.org/display/PC/FOLIO+Roadmap+Process) including the development and milestone plan for Version 1 and the feature backlog,
 and the [FOLIO Vision, Strategic Objectives and Initiatives](https://wiki.folio.org/pages/viewpage.action?pageId=52134787),
