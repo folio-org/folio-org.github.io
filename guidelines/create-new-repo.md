@@ -123,7 +123,7 @@ See the folio-infrastructure lokalise-push [procedure](https://github.com/folio-
 
 ## Next steps
 
-When a new module has been fully established and its artifacts are being deployed, follow the guides to [install](/faqs/how-to-install-new-module/) it to platform and reference environments for snapshot and testing builds.
+When a new module has been fully established and its artifacts are being deployed, follow the guides to [install](/faqs/how-to-install-new-module/) it to platform and reference environments for snapshot builds.
 
 <div class="folio-spacer-content"></div>
 
