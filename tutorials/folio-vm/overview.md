@@ -30,9 +30,19 @@ These are [available](https://github.com/folio-org/folio-ansible/blob/master/doc
 (Note that that link is only for explaining the various boxes.
 The first Lesson of this Tutorial will establish one for local use.)
 
-This tutorial will only focus on the `folio/release-core` VM
-(i.e. for the most recent "[flower release](/guides/regular-releases/)").
-If your host machine has sufficient resources available (e.g. memory) then it would be possible to use the `folio/release` VM instead, which has the full set of FOLIO apps.
+<a id="old-vm"></a>This tutorial will only focus on the `folio/release-core` VM.
+If your host machine has sufficient resources available (e.g. memory) then it would be possible to use the `folio/release`
+(i.e. for the most recent "[flower release](/guides/regular-releases/)")
+or the `folio/snapshot` VM instead, which have the full set of FOLIO apps.
+
+<div class="attention">
+Note: Due to the discontinuation of snapshot-core
+(<a href="https://issues.folio.org/browse/FOLIO-3292">FOLIO-3292</a>)
+and the platform-minimal has not yet happened
+(<a href="https://issues.folio.org/browse/FOLIO-3253">FOLIO-3253</a>),
+this tutorial still refers to "release-core".
+That is for the Juniper R2-2021 release -- subsequent flower releases do not have a release-core.
+</div>
 
 ## Troubleshooting and known issues
 

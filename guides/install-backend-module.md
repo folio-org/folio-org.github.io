@@ -69,7 +69,9 @@ Allow sufficient time to establish these.
 ## Ensure recent local VM
 
 Ensure that the module will operate with a **recent** local Vagrant VM.
+<!-- Await platform-minimal FOLIO-3253
 If the new module does not yet depend on others, then `folio/release-core` VM would be easiest.
+-->
 
 Follow the guide to verify [Deploy a module](/tutorials/folio-vm/04-local-development/#deploy-a-module).
 
