@@ -12,7 +12,7 @@ When the initial development of a new back-end (server-side) module is [establis
 
 There is a separate procedure to [install a new front-end module](/guides/install-frontend-module/).
 
-(After the new module has been operating in snapshot and testing environments, and an initial release is ready to be made, then instead follow the [release procedures](/guidelines/release-procedures/#add-to-platforms).)
+(After the new module has been operating in snapshot reference environments, and an initial release is ready to be made, then instead follow the [release procedures](/guidelines/release-procedures/#add-to-platforms).)
 
 ## Avoid typical mistakes
 
@@ -69,7 +69,9 @@ Allow sufficient time to establish these.
 ## Ensure recent local VM
 
 Ensure that the module will operate with a **recent** local Vagrant VM.
+<!-- Await platform-minimal FOLIO-3253
 If the new module does not yet depend on others, then `folio/release-core` VM would be easiest.
+-->
 
 Follow the guide to verify [Deploy a module](/tutorials/folio-vm/04-local-development/#deploy-a-module).
 
@@ -79,15 +81,11 @@ That procedure will verify that the most recent published module is ready to be 
 
 Before proceeding, verify that the module is ready to be added, including the above-mentioned steps.
 
-Prepare the Jira ticket to guide the process, and request that the new backend module be enabled for the snapshot and testing reference environments.
+Prepare the Jira ticket to guide the process, and request that the new backend module be enabled for the snapshot reference environments.
 
 If there are [special requirements](#prepare-special-requirements), then provide a link to that section of the module README.
 
-Clarify if this module needs to be included in the "core" set of modules.
-Normally modules are only added to the "complete" set.
-
-Specify "Development Team: FOLIO DevOps" and the pseudo-sprint "DevOps Requests".
-Do not assign it. Our team will prioritize and schedule.
+[Raise a FOLIO DevOps Jira ticket](/faqs/how-to-raise-devops-ticket/#general-folio-devops).
 
 **Note:** Plan for plenty of time for this phase. Our team will already have a full Sprint.
 So it will likely be the next Sprint.

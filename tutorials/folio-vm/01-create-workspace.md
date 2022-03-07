@@ -28,6 +28,26 @@ That setup was a once-off task.
 Any file that is placed in this directory on the host system
 will be shared on the guest at the /vagrant mount point.
 
+## Configure Vagrantfile
+
+<div class="attention">
+Note: As <a href="/tutorials/folio-vm/overview/#old-vm">explained</a>
+in the Overview, the "release-core" VM is out-of-date.
+</div>
+
+If you decide to use a larger VM instead, then modify the instructions in the [previous section](#create-local-workspace).
+Also modify the generated Vagrantfile to enable more memory (perhaps 24 MiB):
+
+```
+Vagrant.configure("2") do |config|
+  config.vm.box = "folio/snapshot"
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = 24576
+    vb.cpus = 2
+  end
+end
+```
+
 ## Launch the guest
 
 Launch the VirtualBox guest:
