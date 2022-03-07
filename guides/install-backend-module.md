@@ -12,7 +12,7 @@ When the initial development of a new back-end (server-side) module is [establis
 
 There is a separate procedure to [install a new front-end module](/guides/install-frontend-module/).
 
-(After the new module has been operating in snapshot and testing environments, and an initial release is ready to be made, then instead follow the [release procedures](/guidelines/release-procedures/#add-to-platforms).)
+(After the new module has been operating in snapshot reference environments, and an initial release is ready to be made, then instead follow the [release procedures](/guidelines/release-procedures/#add-to-platforms).)
 
 ## Avoid typical mistakes
 
@@ -79,7 +79,7 @@ That procedure will verify that the most recent published module is ready to be 
 
 Before proceeding, verify that the module is ready to be added, including the above-mentioned steps.
 
-Prepare the Jira ticket to guide the process, and request that the new backend module be enabled for the snapshot and testing reference environments.
+Prepare the Jira ticket to guide the process, and request that the new backend module be enabled for the snapshot reference environments.
 
 If there are [special requirements](#prepare-special-requirements), then provide a link to that section of the module README.
 

@@ -145,7 +145,7 @@ These are listed in the [Start](/start/) section.
 - [Technical Designs and Decisions](https://wiki.folio.org/display/DD/). Wiki space to document feature-level designs and decisions:
 [Decision log](https://wiki.folio.org/display/DD/Decision+log).
 - [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/)
-and when ready [install](/faqs/how-to-install-new-module/) it to platform and reference environments for snapshot and testing builds.
+and when ready [install](/faqs/how-to-install-new-module/) it to platform and reference environments for snapshot builds.
 - [Rename a module](rename-module/).
 - [Archive a GitHub repository](/faqs/how-to-archive-repository/).
 - [Increase visibility of module documentation](visibility-module-docs/).
