@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-03-01T00:22:36.412674+00:00"
+    "generatedDateTime": "2022-03-06T02:56:12.202153+00:00"
   },
   "repos": [
     {
@@ -553,7 +553,7 @@
     },
     {
       "defaultBranch": "main",
-      "description": "LDLite is a lightweight reporting tool for Okapi-based services",
+      "description": "LDLite is a client-side reporting tool for Okapi-based services",
       "docDirName": null,
       "name": "ldlite",
       "org": "library-data-platform",
@@ -2784,7 +2784,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>quick-marc</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='quick-marc'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>quick-marc</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='quick-marc'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",

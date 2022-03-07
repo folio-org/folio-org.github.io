@@ -70,7 +70,7 @@ This information includes extra documentation links, beyond that automatically g
 Note that such links are intended as starting points, not to list every piece of documentation here.
 
 Please send pull-requests to add documentation links for your repository.
-Alternatively add a Jira ticket and assign to the DevOps Team.
+Alternatively [raise a FOLIO DevOps Jira ticket](/faqs/how-to-raise-devops-ticket/#general-folio-devops).
 
 The YAML structure is explained in the head of that file.
 The tool "[yq](https://github.com/kislyuk/yq)" is useful for verifying YAML files, e.g. do `yq '.' repos-metadata.yml`
@@ -122,7 +122,7 @@ For relevant module repositories that are hosted at other GitHub organizations, 
 
 To modify the list, use one of these methods, and be explicit about each repository to be included:
 * Send a pull request for that data file.
-* Raise a new ticket at the [Jira](/guidelines/which-forum/#issue-tracker) issue tracker, for the "FOLIO" project, and for "Development Team" FOLIO DevOps.
+* [Raise a FOLIO DevOps Jira ticket](/faqs/how-to-raise-devops-ticket/#general-folio-devops).
 * Ask in one of the [Slack forums](/guidelines/which-forum/#slack).
 
 <div class="folio-spacer-content"></div>
