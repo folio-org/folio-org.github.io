@@ -1091,6 +1091,7 @@
         "ramls/email.raml",
         "ramls/interface.raml",
         "ramls/organization.raml",
+        "ramls/organization_type.raml",
         "ramls/phone_number.raml",
         "ramls/url.raml"
       ],
@@ -1162,7 +1163,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-permissions",
     "org": "folio-org"
   },
