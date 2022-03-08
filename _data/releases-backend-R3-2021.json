@@ -136,22 +136,22 @@
     {
       "name": "mod-data-export-spring",
       "nameRepo": "mod-data-export-spring",
-      "releaseDate": "2021-12-20T12:33:08+00:00",
-      "releaseName": "v1.2.1",
-      "releaseSha": "ca0aefafd0a8a7f6a18a802c6c58494666f3ad25",
-      "releaseTag": "v1.2.1",
+      "releaseDate": "2022-03-04T15:29:55+00:00",
+      "releaseName": "v1.2.2",
+      "releaseSha": "b234d953d84e1be554a5c2766f74b4e660010af7",
+      "releaseTag": "v1.2.2",
       "releaseTarget": "master",
-      "version": "1.2.1"
+      "version": "1.2.2"
     },
     {
       "name": "mod-data-export-worker",
       "nameRepo": "mod-data-export-worker",
-      "releaseDate": "2021-12-22T11:47:45+00:00",
-      "releaseName": "v1.2.2",
-      "releaseSha": "a0cdf95e904ee91816bd294b4952ce3a9fc9b7ca",
-      "releaseTag": "v1.2.2",
+      "releaseDate": "2022-03-04T15:29:52+00:00",
+      "releaseName": "v1.2.3",
+      "releaseSha": "53c90c02dead3a43879add890cfaf9be79744b6d",
+      "releaseTag": "v1.2.3",
       "releaseTarget": "master",
-      "version": "1.2.2"
+      "version": "1.2.3"
     },
     {
       "name": "mod-data-import",
@@ -216,12 +216,12 @@
     {
       "name": "mod-eusage-reports",
       "nameRepo": "mod-eusage-reports",
-      "releaseDate": "2021-12-16T10:56:12+00:00",
+      "releaseDate": "2022-03-05T06:50:57+00:00",
       "releaseName": "",
-      "releaseSha": "16bb5faf4eb9489eca20efac345b35f559e1bb39",
-      "releaseTag": "v1.0.4",
+      "releaseSha": "c14470bc9ff0b74b84a4e983241a584826a47882",
+      "releaseTag": "v1.0.5",
       "releaseTarget": "master",
-      "version": "1.0.4"
+      "version": "1.0.5"
     },
     {
       "name": "mod-event-config",
@@ -346,12 +346,12 @@
     {
       "name": "mod-ldp",
       "nameRepo": "mod-ldp",
-      "releaseDate": "2021-10-29T19:02:19+00:00",
-      "releaseName": "v1.0.1",
-      "releaseSha": "cdb65b7df72ed4b1409a0c4c754a0b059d61ef1b",
-      "releaseTag": "v1.0.1",
+      "releaseDate": "2022-03-03T21:58:37+00:00",
+      "releaseName": "v1.0.2",
+      "releaseSha": "05b89e8265d5c6991ecc179cb5220ef882a2c550",
+      "releaseTag": "v1.0.2",
       "releaseTarget": "master",
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     {
       "name": "mod-licenses",
