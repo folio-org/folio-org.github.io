@@ -526,6 +526,7 @@ mod-organizations-storage:
       - email
       - interface
       - organization
+      - organization_type
       - phone_number
       - url
     ramlutil: ramls/raml-util
