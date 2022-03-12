@@ -376,12 +376,12 @@
     {
       "name": "mod-login-saml",
       "nameRepo": "mod-login-saml",
-      "releaseDate": "2022-02-09T10:37:12+00:00",
+      "releaseDate": "2022-03-10T16:33:02+00:00",
       "releaseName": "",
-      "releaseSha": "9196a52a6f9468d8090dec7ff95808d99d00cd1b",
-      "releaseTag": "v2.4.1",
+      "releaseSha": "0e40d527dd74ddfe7d989a42eaa3b6d642b2f2ed",
+      "releaseTag": "v2.4.2",
       "releaseTarget": "master",
-      "version": "2.4.1"
+      "version": "2.4.2"
     },
     {
       "name": "mod-ncip",
