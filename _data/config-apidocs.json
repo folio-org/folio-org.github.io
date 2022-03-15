@@ -123,7 +123,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "edge-patron",
     "org": "folio-org"
   },
@@ -1130,7 +1134,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-patron",
     "org": "folio-org"
   },
@@ -1179,7 +1187,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-pubsub",
     "org": "folio-org"
   },
