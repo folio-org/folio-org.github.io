@@ -1,8 +1,6 @@
 This is the source for "FOLIO Developers" at [dev.folio.org](https://dev.folio.org/)
 
-
-To contribute changes, please make the changes in a new branch and submit a
-pull request.
+To contribute changes, please refer to FAQs regarding [Developer documentation](https://dev.folio.org/faqs/#developer-documentation).
 
 ## Software requirements
 
@@ -33,6 +31,8 @@ Instead of installing the requirements you may run
 docker-compose up
 ```
 to use the [Jekyll Docker image](https://github.com/envygeeks/jekyll-docker).
+
+Our Gemfile defines the version of Jekyll that we use.
 
 ## Local development
 
@@ -82,10 +82,7 @@ Other branches are re-built upon push of changes. Follow the GitHub link from th
 
 ## Additional information
 
-See project [FOLIO](https://issues.folio.org/browse/FOLIO)
-at the [FOLIO issue tracker](https://dev.folio.org/guidelines/issue-tracker/).
-We use the label "devweb" for items that relate to the software and facilities for building the website.
-We use the label "devdoc" for items that relate to documentation content.
+Refer to FAQs regarding [Developer documentation](https://dev.folio.org/faqs/#developer-documentation) and [Raising Jira tickets](https://dev.folio.org/faqs/how-to-contribute-devdoc/#raising-jira-tickets).
 
 The FOLIO [Slack](https://dev.folio.org/guidelines/which-forum/#slack) channel #dev-website
 

@@ -33,8 +33,6 @@ See an example at
 buildMvn {
   publishModDescriptor = true
   mvnDeploy = true
-  publishAPI = false // Deprecated. See doApiDoc.
-  runLintRamlCop = false // Deprecated. See doApiLint.
   buildNode = 'jenkins-agent-java11'
 
   doApiLint = true

@@ -92,7 +92,7 @@ echo
 #echo Received a token: $H_TOKEN
 
 echo "Test 1: Find some users"
-$CURL $H_TENANT $H_TOKEN \
+$CURL $H_TENANT $H_JSON $H_TOKEN \
   "$OKAPIURL/users?query=personal.lastName==a*+sortBy+username"
 echo
 
