@@ -4,7 +4,7 @@ title: How to create a new Tutorial set of documents
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: devdoc
-faqOrder: 4
+faqOrder: 5
 ---
 
 To add a new [Tutorial](/tutorials/) to this dev.folio.org site, follow these guidelines.

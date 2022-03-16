@@ -41,9 +41,8 @@ There are also automatically-generated indexes,
 such as the set of all [API documentation](/reference/api/)
 and the [Source-code map](/source-code/map/) of modules.
 
-To create new or updated documentation for dev.folio.org, refer to the guides for
-[general documentation](/faqs/how-to-create-doc/) and
-[FAQs](/faqs/how-to-create-doc-faq/).
+To contribute new or updated documentation for dev.folio.org, or raise Jira tickets, refer to the FAQs for
+[Developer documentation](/faqs/#developer-documentation).
 
 ## wiki.folio.org
 

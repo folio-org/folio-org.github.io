@@ -4,13 +4,14 @@ title: How to create a new document
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: devdoc
-faqOrder: 3
+faqOrder: 4
 ---
 
 ## Introduction
 
 To add a new document to this dev.folio.org site, follow these guidelines.
-There are separate guidelines for creating a [new FAQ](/faqs/how-to-create-doc-faq/) and a [new Tutorial](/faqs/how-to-create-doc-tutorial/).
+There are separate guidelines for creating a [new FAQ](/faqs/how-to-create-doc-faq/) and a [new Tutorial](/faqs/how-to-create-doc-tutorial/),
+and for general [contributions](/faqs/how-to-contribute-devdoc/) and edits to existing material.
 
 After understanding how to be set up for [editing and publishing](#about-editing-and-publishing), then move on the [preparation](#preparation) and creation of a new document.
 
@@ -25,7 +26,7 @@ There are also various notes in the "[Work area - management of dev site](https:
 As is normal, contributors that do not have write access to this repository will [fork](/guidelines/contributing/#fork-github-repository) and branch and send pull-requests.
 Others will directly use feature branches (as master branch is protected) and send pull requests.
 
-See how to [configure](/guides/developer-setup/#use-editorconfig-for-consistent-whitespace) your text editor.
+See how to [configure](/guides/developer-setup/#use-editorconfig-for-consistent-whitespace) your text editor with the `.editorconfig` configuration.
 
 It is best to establish your local Jekyll setup as explained in the [README](https://github.com/folio-org/folio-org.github.io).
 Creating documentation can be fiddly.
@@ -47,11 +48,12 @@ If the new documentation is more appropriate at dev.folio.org, then continue her
 
 First do some background planning.
 
-Do [search](/search/) first. It might be suitable to add another section to an existing document.
+Do [search](/search/) first. It might be suitable to add another section to an [existing](/faqs/how-to-contribute-devdoc/#editing-existing-docs) document.
 
 Also search the issue tracker, as someone may have already proposed a similar document.
 Generally the documentation tickets use the Jira Label [devdoc](https://issues.folio.org/issues/?jql=labels%3Ddevdoc).
 Consider adding a new ticket to facilitate your document development, or to suggest others.
+Refer to notes for [raising Jira tickets](/faqs/how-to-contribute-devdoc/#raising-jira-tickets).
 
 Decide the type of document:
 [Guidelines](/guidelines/) (various procedures that should/must be followed),
@@ -97,7 +99,7 @@ For example, see the [source](https://raw.githubusercontent.com/folio-org/folio-
 
 ## Navigation
 
-If the document has internal sections, then the [Table of contents](#table-of-contents) is automatically generated into the left-handle panel.
+If the document has internal sections, then the [Table of contents](#table-of-contents) is automatically generated into the left-hand panel.
 
 Above that in the left-hand panel is the menu for navigation of this particular area of the site.
 
@@ -123,7 +125,7 @@ Do [verify](https://github.com/folio-org/folio-org.github.io#link-checker) inter
 
 ## Verify search
 
-Ensure that the new document can be discovered via the local [Search](/search/) system.
+Ensure that the new content can be discovered via the local [Search](/search/) system.
 
 See the [notes](https://github.com/folio-org/folio-org.github.io/blob/master/work/maintain-search.md) in the work area.
 
