@@ -28,6 +28,8 @@ Set the "Sprint" field to be "DevOps Requests".
 
 Do not set "Priority" or "Assignee" or "Labels" or a specific "Sprint". Those will be handled and scheduled by the team.
 
+For tickets related to the [FOLIO Developers](/) website, do follow the above-mentioned instructions and the additional specific [notes](/faqs/how-to-contribute-devdoc/#raising-jira-tickets).
+
 ## Rancher scratch environments
 
 The "Kitfox" team attends to the Rancher developer scratch environments.
