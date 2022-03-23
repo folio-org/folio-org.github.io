@@ -23,7 +23,7 @@ Useful links:
 Before commencing become familiar with this FAQ.
 Some teams also provide [further general instructions](/guides/run-local-folio/#scratch-environments-rancher-docker).
 
-For general assistance, use the [Slack channel](/guidelines/which-forum/#slack) `#scratch-environments` and your team-specific channel.
+For general assistance use the [Slack channel](/guidelines/which-forum/#slack) `#scratch-environments` and help via your team-specific channel.
 
 To raise Jira tickets related to scratch environments, refer to the [FAQ](/faqs/how-to-raise-devops-ticket/#rancher-scratch-environments).
 
@@ -231,7 +231,8 @@ To create Elasticsearch index snapshot for Rancher performance testing cluster, 
 ## Running Karate integration tests
 
 You can run Karate integration tests against your Rancher environment. Examples of Karate tests you can run are the [FOLIO integration tests](https://github.com/folio-org/folio-integration-tests). To run the FOLIO integration tests complete the following two steps:
-1. Add a user with the username of `testing_admin` and the password of `admin` to the supertenant. Ask for help on the Slack #devops channel if you need it.
+1. Add a user with the username of `testing_admin` and the password of `admin` to the supertenant.
+Refer to the [Introduction](#introduction) section if assistance is needed.
 2. Secure the supertenant.
 
 Securing the supertenant happens when you enable mod-authtoken on the supertenant. To secure the supertenant, create a file called enable.json with the following contents:

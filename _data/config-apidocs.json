@@ -123,7 +123,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "edge-patron",
     "org": "folio-org"
   },
@@ -677,7 +681,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-finc-config",
     "org": "folio-org"
   },
@@ -754,8 +762,8 @@
       "raml": [
         "ramls/alternative-title-type.raml",
         "ramls/async-migration.raml",
-        "ramls/authorities.raml",
         "ramls/authorities-reindex.raml",
+        "ramls/authorities.raml",
         "ramls/authority-note-type.raml",
         "ramls/bound-with-part.raml",
         "ramls/call-number-type.raml",
@@ -778,16 +786,16 @@
         "ramls/instance-reindex.raml",
         "ramls/instance-relationship-type.raml",
         "ramls/instance-status.raml",
-        "ramls/instance-storage.raml",
         "ramls/instance-storage-batch.raml",
+        "ramls/instance-storage.raml",
         "ramls/instance-sync.raml",
         "ramls/instance-type.raml",
         "ramls/inventory-hierarchy.raml",
         "ramls/inventory-view.raml",
         "ramls/item-damaged-statuses.raml",
         "ramls/item-note-type.raml",
-        "ramls/item-storage.raml",
         "ramls/item-storage-dereferenced.raml",
+        "ramls/item-storage.raml",
         "ramls/item-sync.raml",
         "ramls/loan-type.raml",
         "ramls/location.raml",
@@ -802,12 +810,16 @@
         "ramls/service-point.raml",
         "ramls/service-points-user.raml",
         "ramls/shelf-location.raml",
-        "ramls/statistical-code.raml",
-        "ramls/statistical-code-type.raml"
+        "ramls/statistical-code-type.raml",
+        "ramls/statistical-code.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-inventory-storage",
     "org": "folio-org"
   },
@@ -1130,7 +1142,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-patron",
     "org": "folio-org"
   },
@@ -1179,7 +1195,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-pubsub",
     "org": "folio-org"
   },
