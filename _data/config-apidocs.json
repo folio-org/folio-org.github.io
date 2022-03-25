@@ -405,16 +405,20 @@
     "config": {
       "oas": [],
       "raml": [
-        "ramls/dataExport.raml",
         "ramls/dataExport-file-definition.raml",
         "ramls/dataExport-job-profile.raml",
         "ramls/dataExport-logs.raml",
         "ramls/dataExport-mapping-profiles.raml",
-        "ramls/dataExport-transformation-fields.raml"
+        "ramls/dataExport-transformation-fields.raml",
+        "ramls/dataExport.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-data-export",
     "org": "folio-org"
   },
