@@ -416,12 +416,12 @@
     {
       "name": "mod-oai-pmh",
       "nameRepo": "mod-oai-pmh",
-      "releaseDate": "2022-02-28T12:02:27+00:00",
-      "releaseName": "v3.7.0",
-      "releaseSha": "971552882093129dd168320688e7ffd81379a525",
-      "releaseTag": "v3.7.0",
+      "releaseDate": "2022-03-24T07:17:28+00:00",
+      "releaseName": "v3.7.1",
+      "releaseSha": "256ff06f99153912348af06c399a1e16fd8f1653",
+      "releaseTag": "v3.7.1",
       "releaseTarget": "master",
-      "version": "3.7.0"
+      "version": "3.7.1"
     },
     {
       "name": "mod-orders",
