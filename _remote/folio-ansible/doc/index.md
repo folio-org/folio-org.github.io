@@ -35,7 +35,7 @@ used to generate prebuilt Vagrant boxes, available on
 [Vagrant Cloud](https://app.vagrantup.com/folio):
 
 * [folio/release](https://app.vagrantup.com/folio/boxes/release) -- a
-  full-stack FOLIO system with stable releases of front- and
+  full-stack FOLIO system with stable releases of frontend and
   backend modules. All components should interoperate correctly.
   This is the most recent "[flower release](https://dev.folio.org/guides/regular-releases/)".
 
@@ -43,15 +43,6 @@ used to generate prebuilt Vagrant boxes, available on
   -- a full-stack FOLIO system, built from the most recent working
   commits to frontend components and the matching releases of the
   backend modules.
-
-* [folio/testing](https://app.vagrantup.com/folio/boxes/testing) --
-  a full-stack FOLIO system, with the very latest releases of front- and
-  backend modules. Absolutely _not_ guaranteed to interoperate
-  correctly.
-
-* [folio/testing-backend](https://app.vagrantup.com/folio/boxes/testing-backend)
-  -- a backend FOLIO system, with the very latest releases of backend
-  modules. Absolutely _not_ guaranteed to interoperate correctly.
 
 * [folio/minimal](https://app.vagrantup.com/folio/boxes/minimal)
   -- a minimal FOLIO system with just Okapi and no modules or sample data
@@ -63,7 +54,10 @@ modules are enabled for the sample tenant, "diku".
 To try out any of these boxes, create an empty directory, `cd` into
 it, and initialize a Vagrantfile, e.g.:
 
-    $ vagrant init --minimal folio/testing-backend
+    $ vagrant init --minimal folio/snapshot
+
+Note: The VM will require the allocation of more memory.
+Refer to [notes](https://dev.folio.org/tutorials/folio-vm/01-create-workspace/#configure-vagrantfile).
 
 If you have downloaded a previous version of the box, then from
 time-to-time it will need to be updated with `vagrant box update`
@@ -79,8 +73,8 @@ provides further introduction to using these boxes.
 However, as explained there, wait a while before attempting to interact
 because Okapi will still be starting modules.
 
-Okapi will be listening on localhost port 9130. On the `release`,
-`snapshot`, and `testing` boxes, there will be an nginx server with a
+Okapi will be listening on localhost port 9130. On the `release` and
+`snapshot` boxes, there will be an nginx server with a
 FOLIO UI bundle listening on localhost port 3000, and another nginx
 server proxying edge modules on port 8000.
 
@@ -168,7 +162,7 @@ the private network IP as its `X-Okapi-URL` header. To set this up:
 
 ```
 Vagrant.configure("2") do |config|
-  config.vm.box = "folio/snapshot-backend-core"
+  config.vm.box = "folio/snapshot"
   config.vm.network "private_network", ip: "192.168.56.101"
 end
 ```
@@ -245,7 +239,7 @@ Stripes needs the Okapi URL for accessing the backend. Use this `Vagrantfile` to
 configure it:
 
     Vagrant.configure("2") do |config|
-      config.vm.box = "folio/testing"
+      config.vm.box = "folio/snapshot"
 
       config.vm.provision "shell", env: {
         "OKAPI" => "http://example.com:9130"
@@ -359,9 +353,9 @@ Docker container and restart it:
 
 The Vagrantfile in this project contains various target definitions, for example:
 
-* `build_testing_backend` -- a target to build the `testing-backend` box
+* `build_snapshot` -- a target to build the `snapshot` box
    for packaging.
-* `testing-backend` -- This target pulls the folio/testing-backend
+* `snapshot` -- This target pulls the folio/snapshot
    Vagrant box hosted on Vagrant Cloud.
 
 Similar targets are provided for the various boxes [described](#prebuilt-vagrant-boxes) above, and others.
