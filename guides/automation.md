@@ -64,6 +64,7 @@ These can be configured and scaled specifically to meet the needs of particular 
 ### Off-schedule rebuilds
 
 DevOps will not accept requests for manual rebuilds of either environment unless special or unusual circumstances dictate otherwise.
+If a team needs to confirm an updated module, then await the next scheduled 12-hourly run.
 
 If there is an **urgent** need to re-run a build outside of the normal automation schedule (explained below),
 then co-ordinate that on the Slack channel #hosted-reference-envs
