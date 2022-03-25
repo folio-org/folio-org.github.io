@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-03-15T23:37:34.637598+00:00"
+    "generatedDateTime": "2022-03-24T23:38:26.501704+00:00"
   },
   "repos": [
     {
@@ -610,6 +610,7 @@
       "defaultBranch": "master",
       "description": "Module for filtering requests based on JWT tokens",
       "docDirName": null,
+      "hintOas": true,
       "name": "mod-authtoken",
       "org": "folio-org",
       "ramlDirName": null,
@@ -1453,7 +1454,7 @@
     {
       "defaultBranch": "master",
       "description": null,
-      "docDirName": null,
+      "docDirName": "doc",
       "hintOas": true,
       "isSpringway": true,
       "name": "mod-search",
@@ -1577,12 +1578,9 @@
       "defaultBranch": "master",
       "description": "FOLIO Translations Management API",
       "docDirName": null,
-      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
-      "hintRmb": true,
-      "isRmb": true,
       "name": "mod-translations",
       "org": "folio-org",
-      "ramlDirName": "ramls",
+      "ramlDirName": null,
       "repoLanguageHint": "other",
       "repoType": "backend-mod",
       "snippetIntro": "<p>Each FOLIO installation has lists of controlled vocabulary terms (for instance, \u201cFormats\u201d and \u201cResource types\u201d in Inventory, \u201cPatron Groups\u201d and \u201cRefund Reasons\u201d in Users \u2014 see <a href='https://issues.folio.org/browse/FOLIO-2802'>FOLIO-2802</a> for a more complete list).  In installations that use more than one language, these terms do not display translated values when the locale of the session is changed.</p>"
@@ -2957,7 +2955,7 @@
     {
       "defaultBranch": "master",
       "description": "FOLIO Translations Management App",
-      "docDirName": "docs",
+      "docDirName": null,
       "name": "ui-translations",
       "org": "folio-org",
       "repoLanguageHint": "node",
