@@ -1310,7 +1310,7 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/openapi/shared-index-1.0.yaml"
+        "server/src/main/resources/openapi/shared-index-1.0.yaml"
       ],
       "raml": [],
       "upload": []
