@@ -112,6 +112,8 @@ Behind the scenes of the page
 "[`source-code/map.md`](https://raw.githubusercontent.com/folio-org/folio-org.github.io/master/source-code/map.md)"
 the Jekyll Liquid program assembles and presents the page.
 
+When User docs are available for the next flower release, then adjust the "`versionUserDocs`" variable in the `source-code/map.md` file.
+
 Use the [Link checker](https://github.com/folio-org/folio-org.github.io/#link-checker) to verify internal and external links.
 
 ### Additional module repositories
