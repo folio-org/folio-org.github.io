@@ -13,6 +13,7 @@ menuSubIndex: 2
 List of FOLIO modules hosted at GitHub, with links to some related documentation.
 Also refer to the [Source-code overview](/source-code/).
 
+{% assign versionUserDocs = "juniper" %}
 {% assign urlGithub = "https://github.com" %}
 {% assign urlApiBase = "https://dev.folio.org/reference/api" %}
 {% assign urlApiBaseLocal = "/reference/api" %}
@@ -130,6 +131,10 @@ See [usage notes](#usage-notes) below.
       {%- endif -%}
       {%- if metadata.urlAppSettings -%}
         <p> App settings: <a href="{{ metadata.urlAppSettings }}">{{ metadata.urlAppSettings }}</a> </p>
+      {%- endif -%}
+      {%- if metadata.spaceUserDocs -%}
+        {%- capture urlUserDocs -%}https://{{ versionUserDocs }}.docs.folio.org/docs/{{ metadata.spaceUserDocs }}{%- endcapture -%}
+        <p> User docs: <a href="{{ urlUserDocs }}">{{ urlUserDocs }}</a> </p>
       {%- endif -%}
       {%- if metadata.urlsOther -%}
         <p> Other documentation:<br/>
