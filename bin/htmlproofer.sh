@@ -10,6 +10,8 @@ IGNORE+=",/folio-org\/jenkins-pipeline-libs/"
 IGNORE+=",/folio-org-priv\/folio-infrastructure/"
 IGNORE+=",/folio-snapshot-okapi\.dev/"
 IGNORE+=",/folio-snapshot-test.*\/settings/"
+IGNORE+=",/github\.com\/search/"
+IGNORE+=",/github\.com\/pulls\/review-requested/"
 
 # Ignore some known broken ones
 IGNORE+=",/#mod-vendors/"

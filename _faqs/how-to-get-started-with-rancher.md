@@ -117,7 +117,7 @@ If you notice a pod restarting a lot, it may be that it is running out of memory
 
 You can set a namespace limit in the Edit menu item in the Rancher UI:
 
-![](/images/edit-namespace-cpu-limits.png)
+![set namespace cpu limits](/images/edit-namespace-cpu-limits.png)
 
 ## S3 Storage
 Each development team has been provided with a dedicated S3 bucket that can be used for additional storage.   The name of
@@ -139,14 +139,14 @@ To create, update or delete your environment in Rancher, use this Jenkins pipeli
 * Select "Build with Parameters"
 * Choose your team Name:
 
-![](/images/rancher-scratch-env.png)
+![choose team name](/images/rancher-scratch-env.png)
 
 * Choose which action that you want to perform:
   - Create: to create new environment in rancher
   - Update: to update your environment
   - Delete: **Be Careful!** This action will completely delete the environment from Rancher
 
-![](/images/rancher-Action.png)
+![choose action create environment](/images/rancher-Action.png)
 
 * Then select "Build"
 
@@ -162,12 +162,12 @@ Any backend module can be built from a specific branch. Use this Jenkins pipelin
 * Select "Console Output"
 * Near the end, find the full image name with the proper tag:
 
-![](/images/rancher-tag.png)
+![choose image name tag](/images/rancher-tag.png)
 
 * Go to your environment in Rancher –> Apps –> the module that you built
 * Select the vertical ellipsis &#8942; and then "Upgrade"
 
-![](/images/rancher-upgrade.png)
+![choose upgrade](/images/rancher-upgrade.png)
 
 * In the "Answers" section, add the following:
   - Variable: `image.repository`
@@ -175,7 +175,7 @@ Any backend module can be built from a specific branch. Use this Jenkins pipelin
   - Variable: `image.tag`
     - Value: the tag obtained from the build
 
-![](/images/rancher-variables.png)
+![add answers variables](/images/rancher-variables.png)
 
 * Select "Upgrade"
 
@@ -189,14 +189,14 @@ To build UI from a specific branch, use this Jenkins pipeline:\
 * Choose the branch that you want to build from
 * Then select "Build"
 
-![](/images/rancher-UI-choose-branch.png)
+![choose branch to build from](/images/rancher-UI-choose-branch.png)
 
 The tag for the image is: docker.dev.folio.org/platform-complete:`team_name-build` number
 
 * Go to Rancher -> Apps -> platform-complete
 * Select the vertical ellipsis &#8942; and then "Upgrade"
 
-![](/images/rancher-UI-upgrade.png)
+![choose upgrade ui](/images/rancher-UI-upgrade.png)
 
 * Add the following variables in Answers Section:
   - Variable: `image.repository`
@@ -204,7 +204,7 @@ The tag for the image is: docker.dev.folio.org/platform-complete:`team_name-buil
   - Variable: `image.tag`
     - Value: `team_name-build` number
 
-![](/images/rancher-UI-tag.png)
+![add answers variables](/images/rancher-UI-tag.png)
 
 * Select "Upgrade"
 
@@ -212,14 +212,14 @@ The tag for the image is: docker.dev.folio.org/platform-complete:`team_name-buil
 
 To create Elasticsearch index snapshot for Rancher performance testing cluster,  go to your Rancher environment, choose your performance testing cluster (`perf-ekes-team_name`):
 * Find your Elasticsearch hostname, username, and password. In Rancher test environment, select your project name ( Team name ) ->Secrets.
- ![](/images/secrets.png)
+ ![elasticsearch select secrets](/images/secrets.png)
 * Scroll down and find `Namespace:team_name` and select the vertical ellipsis for `db-connect-modules`, and then choose `Edit`
-![](/images/dbconnectmodules.png)
+![elasticsearch select db-connect-modules secrets](/images/dbconnectmodules.png)
 * Copy the value of `ELASTICSEARCH_HOST`, `ELASTICSEARCH_USERNAME`, and `ELASTICSEARCH_PASSWORD`.
-![](/images/elasticsearch.png)
+![elasticsearch set db-connect-modules secrets](/images/elasticsearch.png)
 * Ask the Kitfox DevOps administrator to create the repository for you. (The repository is attached to persistent AWS S3 bucket.)
 * Go to project name ( Team name ) -> Resources -> Workloads -> ubuntu, select the vertical ellipsis, and choose: `Execute Shell`
-![](/images/executeshell.png)
+![choose execute shell](/images/executeshell.png)
 
 ### Create a snapshot
  `curl -XPUT 'ELASTICSEARCH_HOST/_snapshot/repository-name/snapshot-name -u ELASTICSEARCH_USERNAME:ELASTICSEARCH_PASSWORD`
