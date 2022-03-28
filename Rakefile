@@ -27,6 +27,8 @@ task :proof do
       /folio-snapshot-test.*\/settings/,
       /#mod-vendors/,
       /api\/mod-codex-mock/,
+      /github\.com\/search/,
+      /github\.com\/pulls\/review-requested/,
       # ignore github. 429 rate-limit error. FOLIO-2597
       /github\.com\/folio-org/,
     ]
