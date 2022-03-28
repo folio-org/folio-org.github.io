@@ -40,8 +40,12 @@ ui-circulation:
   urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Circulation
   spaceUserDocs: access/
 
+ui-circulation-log:
+  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Circulation+log
+  spaceUserDocs: access/circulation-log/circ_log/
+
 ui-courses:
-  urlUserTips: https://wiki.folio.org/pages/viewpage.action?pageId=36569951
+  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Courses
   urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Courses
   spaceUserDocs: access/courses/courses/
 
@@ -86,6 +90,7 @@ ui-invoice:
   spaceUserDocs: acquisitions/invoices/
 
 ui-ldp:
+  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Reporting+in+FOLIO
   spaceUserDocs: reporting/
 
 ui-licenses:
@@ -98,8 +103,15 @@ ui-local-kb-admin:
   urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Local+KB+admin
   spaceUserDocs: erm/local-kb-admin/
 
+ui-lti-courses:
+  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Course+Reserves+-+LTI+connectivity
+  spaceUserDocs: access/courses/courses/
+
 ui-myprofile:
   urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+My+profile
+
+ui-ncip:
+  urlUserTips: https://wiki.folio.org/display/FOLIOtips/NCIP
 
 ui-notes:
   urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Notes
@@ -129,6 +141,9 @@ ui-requests:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Requests
   spaceUserDocs: access/requests/requests/
 
+ui-remote-storage:
+  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Remote+storage
+
 ui-search:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Codex+search
 
@@ -144,7 +159,7 @@ ui-users:
 
 mod-search:
   urlsOther:
-    - https://github.com/folio-org/mod-search/blob/master/DEVELOPMENT.md
+    - https://github.com/folio-org/mod-search/blob/master/doc/development.md
 
 edge-common:
   urlsOther:
