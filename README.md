@@ -34,6 +34,11 @@ to use the [Jekyll Docker image](https://github.com/envygeeks/jekyll-docker).
 
 Our Gemfile defines the version of Jekyll that we use.
 
+## Updating dependencies
+
+Update the pinned dependency versions in Gemfile.lock by running
+`docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/jekyll:latest bundle update`
+
 ## Local development
 
 To view and edit documents on your local machine, run the local Jekyll server:
