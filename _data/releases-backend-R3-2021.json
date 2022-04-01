@@ -96,12 +96,12 @@
     {
       "name": "mod-configuration",
       "nameRepo": "mod-configuration",
-      "releaseDate": "2022-02-09T17:48:52+00:00",
+      "releaseDate": "2022-03-29T15:27:00+00:00",
       "releaseName": "",
-      "releaseSha": "722dcec28073a51cc436a61d435501cf57612708",
-      "releaseTag": "v5.7.5",
+      "releaseSha": "2d1fe536d14f40d8f9ebc9d011ce07656c831c56",
+      "releaseTag": "v5.7.6",
       "releaseTarget": "master",
-      "version": "5.7.5"
+      "version": "5.7.6"
     },
     {
       "name": "mod-copycat",
