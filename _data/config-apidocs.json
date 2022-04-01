@@ -301,7 +301,8 @@
         "ramls/request-storage-batch.raml",
         "ramls/request-storage.raml",
         "ramls/scheduled-notice-storage.raml",
-        "ramls/staff-slips.raml"
+        "ramls/staff-slips.raml",
+        "ramls/tlr-feature-toggle-job.raml"
       ],
       "upload": []
     },
