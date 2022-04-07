@@ -1,3 +1,6 @@
+# Note: This data file is deprecated.
+# See https://dev.folio.org/reference/api/#explain-gather-config
+
 # List of locations of RAML files in each raml-related repository.
 #
 # Used by various facilities:
