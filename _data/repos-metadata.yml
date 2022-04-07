@@ -161,6 +161,10 @@ mod-search:
   urlsOther:
     - https://github.com/folio-org/mod-search/blob/master/doc/development.md
 
+mod-source-record-manager:
+  urlsOther:
+    - https://github.com/folio-org/mod-source-record-manager/tree/master/mod-source-record-manager-server/src/main/resources/rules
+
 edge-common:
   urlsOther:
     - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-commonFramework
