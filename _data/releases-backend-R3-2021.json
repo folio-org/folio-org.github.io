@@ -516,12 +516,12 @@
     {
       "name": "mod-quick-marc",
       "nameRepo": "mod-quick-marc",
-      "releaseDate": "2022-02-17T10:49:30+00:00",
-      "releaseName": "v2.2.4",
-      "releaseSha": "8d5d5fb67a6e7b1a36e5c56d9e3f4fd5d260ea61",
-      "releaseTag": "v2.2.4",
+      "releaseDate": "2022-04-06T13:31:31+00:00",
+      "releaseName": "v2.2.5",
+      "releaseSha": "c1717dcbb5314a95325a4b1d641243494c18d544",
+      "releaseTag": "v2.2.5",
       "releaseTarget": "release/v2.2",
-      "version": "2.2.4"
+      "version": "2.2.5"
     },
     {
       "name": "mod-remote-storage",
@@ -576,12 +576,12 @@
     {
       "name": "mod-source-record-manager",
       "nameRepo": "mod-source-record-manager",
-      "releaseDate": "2022-02-24T14:59:25+00:00",
-      "releaseName": "3.2.9",
-      "releaseSha": "39dbd59ed3035211f4916eb0f712d0a65266546a",
-      "releaseTag": "v3.2.9",
-      "releaseTarget": "master",
-      "version": "3.2.9"
+      "releaseDate": "2022-04-06T14:30:13+00:00",
+      "releaseName": "v3.2.10",
+      "releaseSha": "f978c9719ef305e8cebaca3186bcb1280f9e9d79",
+      "releaseTag": "v3.2.10",
+      "releaseTarget": "release/2021_R3_v3.2.0_Kiwi",
+      "version": "3.2.10"
     },
     {
       "name": "mod-source-record-storage",
