@@ -181,6 +181,7 @@ mod-circulation-storage:
       - patron-action-session
       - patron-notice-policy
       - staff-slips
+      - tlr-feature-toggle-job.raml
     ramlutil: ramls/raml-util
 
 mod-copycat:
