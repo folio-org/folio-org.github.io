@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-03-24T23:38:26.501704+00:00"
+    "generatedDateTime": "2022-04-06T00:25:29.644598+00:00"
   },
   "repos": [
     {
@@ -1492,7 +1492,7 @@
     {
       "defaultBranch": "master",
       "description": "Consortial index of bibliographical records and shareable items",
-      "docDirName": "doc",
+      "docDirName": null,
       "hintOas": true,
       "name": "mod-shared-index",
       "org": "folio-org",
@@ -1710,7 +1710,10 @@
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "platform",
-      "snippetIntro": "<p>This is the 'complete' Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes-core</code> and of any Stripes modules you wish to make available as part of this platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>"
+      "snippetIntro": "<p>This is the 'complete' Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes-core</code> and of any Stripes modules you wish to make available as part of this platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>",
+      "workflows": [
+        "spring-cve-2022-22965.yml"
+      ]
     },
     {
       "defaultBranch": "master",
