@@ -485,7 +485,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-data-import-converter-storage",
     "org": "folio-org"
   },
