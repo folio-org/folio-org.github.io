@@ -576,12 +576,12 @@
     {
       "name": "mod-source-record-manager",
       "nameRepo": "mod-source-record-manager",
-      "releaseDate": "2022-04-06T14:30:13+00:00",
-      "releaseName": "v3.2.10",
-      "releaseSha": "f978c9719ef305e8cebaca3186bcb1280f9e9d79",
-      "releaseTag": "v3.2.10",
+      "releaseDate": "2022-04-08T15:10:45+00:00",
+      "releaseName": "v3.2.11",
+      "releaseSha": "6a0a9399db96557683fe86e8a734019054e818d0",
+      "releaseTag": "v3.2.11",
       "releaseTarget": "release/2021_R3_v3.2.0_Kiwi",
-      "version": "3.2.10"
+      "version": "3.2.11"
     },
     {
       "name": "mod-source-record-storage",
