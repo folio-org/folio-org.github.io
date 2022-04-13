@@ -29,7 +29,7 @@ Some are private, therefore only for people with relevant permissions.
   -- Various tools and support glue for FOLIO CI.
 
 * [folio-org.github.io](https://github.com/folio-org/folio-org.github.io)
-  -- The source for "FOLIO Developers" website at [dev.folio.org](https://dev.folio.org/)
+  -- The source-code repository for this "FOLIO Developers" website at [dev.folio.org](/)
 
 ## Starting points and tips
 
