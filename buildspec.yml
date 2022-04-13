@@ -6,12 +6,11 @@ env:
      # key: "value"
   #parameter-store:
      # key: "value"
-     # key: "value"
 
 phases:
   install:
     runtime-versions:
-      ruby: 2.6
+      ruby: 2.7
     commands:
       - gem install bundler
       - bundle config set --local path 'vendor/bundle'
