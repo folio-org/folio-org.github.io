@@ -174,14 +174,16 @@ For example [mod-circulation](#mod-circulation), do `mod-circulation/22.0/...`
 
 #### Explain "views" {#explain-views}
 
-Each "view" of the documentation is generated from the same source API description file, but using different presentation software.
-  * view-1: Generated from RAML. Uses pop-up windows for each method and endpoint.
+For each module, the "views" of its documentation are generated from the same source API description file, but using different presentation software.
+Some modules use RAML (so `view-1` and `view-2`), others use OpenAPI OAS (so `view-4`).
+
+  * `view-1`: Generated from RAML. Uses pop-up windows for each method and endpoint.
     * via [raml2html](https://github.com/raml2html/raml2html) with default theme.
-  * view-2: Generated from RAML. Plain. Uses one-page view to everything.
+  * `view-2`: Generated from RAML. Plain. Uses one-page view to everything.
     * via [raml2html](https://github.com/raml2html/raml2html) with [plain theme](https://github.com/folio-org/raml2html-plain-theme/tree/folio-589).
-  * view-3: Uploaded from the module's code build.
+  * `view-3`: Uploaded from the module's code build.
     * via CI [doUploadApidocs](/guides/jenkinsfile/#do-upload-apidocs).
-  * view-4: Generated from OpenAPI OAS.
+  * `view-4`: Generated from OpenAPI OAS.
     * via Redocly [ReDoc](https://github.com/Redocly/redoc).
 
 #### Encourage use api-doc {#explain-api-doc}

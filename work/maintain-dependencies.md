@@ -20,5 +20,11 @@ If there are new versions of [js-search](https://github.com/bvaughn/js-search)
 then update the `_includes/head.html` file.
 Verify [Search](maintain-search.md).
 
+If there are new versions of [JQuery](https://jquery.com/)
+then update the `_includes/head.html` file.
+Our site has minimal use.
+
+Investigate the ramifications of changes with those dependencies and with Jekyll versions.
+
 See other notes about [Maintenance of theme](maintain-theme.md).
 
