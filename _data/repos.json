@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-04-06T00:25:29.644598+00:00"
+    "generatedDateTime": "2022-04-18T22:59:29.284936+00:00"
   },
   "repos": [
     {
@@ -1132,7 +1132,7 @@
     {
       "defaultBranch": "master",
       "description": "LDP query builder server-side module for FOLIO/ReShare",
-      "docDirName": null,
+      "docDirName": "doc",
       "name": "mod-ldp",
       "org": "folio-org",
       "ramlDirName": "ramls",
