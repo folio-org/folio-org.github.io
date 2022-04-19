@@ -124,6 +124,6 @@ vagrant ssh
 curl -w '\n' http://localhost:9160/admin/health
 ```
 
-From the host machine, conduct some queries as explained in the module API documentation ([mod-courses](https://dev.folio.org/reference/api/#mod-courses)).
+From the host machine, conduct some queries as explained in the module API documentation ([mod-courses](/reference/api/#mod-courses)).
 As explained in the previous lesson, need to [login first](../03-interact/#interact-via-curl).
 
