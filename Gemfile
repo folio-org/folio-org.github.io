@@ -1,11 +1,13 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.2"
-gem "nokogiri", ">= 1.13.4"
 gem "jekyll-remote-theme"
 gem "kramdown-parser-gfm"
 gem "jekyll-data"
 gem "jekyll-feed"
+# nokogiri is required by html-proofer.
+# If we get a security alert, but not updated upstream, then declare it here.
+gem "nokogiri", ">= 1.13.4"
 
 group :jekyll_plugins do
   gem "html-proofer"

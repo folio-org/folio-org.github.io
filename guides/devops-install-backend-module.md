@@ -163,7 +163,7 @@ In these cases they are always configured in that file.
 
 ### Platform configuration
 
-If approaching the daily [reference environment](https://dev.folio.org/guides/automation/#reference-environments) build times, then the timing of this task can be difficult.
+If approaching the daily [reference environment](/guides/automation/#reference-environments) build times, then the timing of this task can be difficult.
 
 The [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/) Jenkins build happens every hour, starting at about 20 minutes past and taking 30 minutes.
 This will regenerate the yarn.lock and install files of the Platform, and automatically merge them.
