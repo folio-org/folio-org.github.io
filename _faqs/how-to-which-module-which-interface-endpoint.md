@@ -14,7 +14,7 @@ Jump to the current best facility, the [UI Developer Settings](#ui-developer-set
 
 ## API documentation
 
-There is the set of [API documentation](/reference/api/) which is automatically generated from each separate back-end module's RAML files and JSON Schemas.
+There is the set of [API documentation](/reference/api/) which is automatically generated from each separate back-end module's API description files and JSON Schemas.
 Developers could wade through that, making an educated guess.
 (There are tickets in the Issue tracker to improve that aspect of the API documentation, but not happening yet.)
 
@@ -63,7 +63,8 @@ This will list the "resource path to interface mapper" for all of the modules co
 For example: [https://folio-snapshot.dev.folio.org/settings/developer/okapi-paths](https://folio-snapshot.dev.folio.org/settings/developer/okapi-paths)
 
 Also the "resource path to permission-set mapper" shows which permissions are needed in order to access a certain endpoint:\
-[https://folio-snapshot.dev.folio.org/settings/developer/can-i-use](https://folio-snapshot.dev.folio.org/settings/developer/can-i-use)
+[https://folio-snapshot.dev.folio.org/settings/developer/can-i-use](https://folio-snapshot.dev.folio.org/settings/developer/can-i-use)\
+The paths which match the search will then link to the relevant module and to its section of the API documentation.
 
 Developers will also find other gems at the Developer Settings area.
 
