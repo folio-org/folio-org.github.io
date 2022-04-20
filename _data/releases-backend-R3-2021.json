@@ -616,12 +616,12 @@
     {
       "name": "mod-user-import",
       "nameRepo": "mod-user-import",
-      "releaseDate": "2022-02-16T21:22:12+00:00",
-      "releaseName": "",
-      "releaseSha": "2dd37112d8a84488ef190bf7721869ce6e1d5df0",
-      "releaseTag": "v3.6.4",
+      "releaseDate": "2022-04-15T20:26:27+00:00",
+      "releaseName": "3.6.5",
+      "releaseSha": "70151a22be21ac1b1550d08adfe8e837fef84d8f",
+      "releaseTag": "v3.6.5",
       "releaseTarget": "master",
-      "version": "3.6.4"
+      "version": "3.6.5"
     },
     {
       "name": "mod-users",
