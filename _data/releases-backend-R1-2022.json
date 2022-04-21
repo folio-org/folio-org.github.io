@@ -1,0 +1,667 @@
+{
+  "metadata": {
+    "branch": "R1-2022"
+  },
+  "repos": [
+    {
+      "name": "mod-agreements",
+      "nameRepo": "mod-agreements",
+      "releaseDate": "2022-03-14T14:35:03+00:00",
+      "releaseName": "Version 5.1.1",
+      "releaseSha": "bf82951b8817a970998caff15c649a9c40abbcf5",
+      "releaseTag": "v5.1.1",
+      "releaseTarget": "release/5.1.x",
+      "version": "5.1.1"
+    },
+    {
+      "name": "mod-audit",
+      "nameRepo": "mod-audit",
+      "releaseDate": "2022-02-23T15:04:05+00:00",
+      "releaseName": "v2.3.0",
+      "releaseSha": "b895de35b66abf1d11e7e921b454a1d7fdca487e",
+      "releaseTag": "v2.3.0",
+      "releaseTarget": "master",
+      "version": "2.3.0"
+    },
+    {
+      "name": "mod-authtoken",
+      "nameRepo": "mod-authtoken",
+      "releaseDate": "2021-12-14T16:40:10+00:00",
+      "releaseName": "",
+      "releaseSha": "476667ff1c4aa19e349a058d0ad15f6c69f466a6",
+      "releaseTag": "v2.9.1",
+      "releaseTarget": "master",
+      "version": "2.9.1"
+    },
+    {
+      "name": "mod-calendar",
+      "nameRepo": "mod-calendar",
+      "releaseDate": "2022-02-22T16:45:24+00:00",
+      "releaseName": "v1.14.0",
+      "releaseSha": "ab81f04628c6e24e79939a71adde6704e853099f",
+      "releaseTag": "v1.14.0",
+      "releaseTarget": "master",
+      "version": "1.14.0"
+    },
+    {
+      "name": "mod-circulation",
+      "nameRepo": "mod-circulation",
+      "releaseDate": "2022-04-15T15:22:56+00:00",
+      "releaseName": "v23.0.8",
+      "releaseSha": "0cec3d091f9d0d694b05bd6423379d62299e34a9",
+      "releaseTag": "v23.0.8",
+      "releaseTarget": "master",
+      "version": "23.0.8"
+    },
+    {
+      "name": "mod-circulation-storage",
+      "nameRepo": "mod-circulation-storage",
+      "releaseDate": "2022-02-22T18:39:07+00:00",
+      "releaseName": "v14.0.0",
+      "releaseSha": "9563d6e5cc8ac15e1e4529d2bf42e987138b1e8d",
+      "releaseTag": "v14.0.0",
+      "releaseTarget": "master",
+      "version": "14.0.0"
+    },
+    {
+      "name": "mod-codex-ekb",
+      "nameRepo": "mod-codex-ekb",
+      "releaseDate": "2021-12-16T12:20:05+00:00",
+      "releaseName": "v1.9.1",
+      "releaseSha": "87ff2ae49c7a58fcda2ee61127e786f459c41a8b",
+      "releaseTag": "v1.9.1",
+      "releaseTarget": "master",
+      "version": "1.9.1"
+    },
+    {
+      "name": "mod-codex-inventory",
+      "nameRepo": "mod-codex-inventory",
+      "releaseDate": "2022-02-22T17:12:44+00:00",
+      "releaseName": "v2.2.0",
+      "releaseSha": "8cf83009f7333265100c7d6f469717ee4e5d03dd",
+      "releaseTag": "v2.2.0",
+      "releaseTarget": "master",
+      "version": "2.2.0"
+    },
+    {
+      "name": "mod-codex-mux",
+      "nameRepo": "mod-codex-mux",
+      "releaseDate": "2021-12-16T12:29:58+00:00",
+      "releaseName": "v2.11.1",
+      "releaseSha": "71289a032365b7db367fc56c4994833ca256f3a4",
+      "releaseTag": "v2.11.1",
+      "releaseTarget": "master",
+      "version": "2.11.1"
+    },
+    {
+      "name": "mod-configuration",
+      "nameRepo": "mod-configuration",
+      "releaseDate": "2022-03-29T15:27:00+00:00",
+      "releaseName": "",
+      "releaseSha": "2d1fe536d14f40d8f9ebc9d011ce07656c831c56",
+      "releaseTag": "v5.7.6",
+      "releaseTarget": "master",
+      "version": "5.7.6"
+    },
+    {
+      "name": "mod-copycat",
+      "nameRepo": "mod-copycat",
+      "releaseDate": "2022-03-28T10:54:06+00:00",
+      "releaseName": "",
+      "releaseSha": "c8f790dc66e5012d06c8a3c1f11f7faaf471e1d8",
+      "releaseTag": "v1.2.1",
+      "releaseTarget": "master",
+      "version": "1.2.1"
+    },
+    {
+      "name": "mod-courses",
+      "nameRepo": "mod-courses",
+      "releaseDate": "2021-12-17T21:30:33+00:00",
+      "releaseName": "v1.4.3",
+      "releaseSha": "18f4368815c964a899aebdbe1ffb2f5158fd63bc",
+      "releaseTag": "v1.4.3",
+      "releaseTarget": "master",
+      "version": "1.4.3"
+    },
+    {
+      "name": "mod-data-export",
+      "nameRepo": "mod-data-export",
+      "releaseDate": "2022-04-06T12:23:50+00:00",
+      "releaseName": "v4.4.2",
+      "releaseSha": "4fc73d0cee4c39c3c231a512dde8adb51f5fb629",
+      "releaseTag": "v4.4.2",
+      "releaseTarget": "master",
+      "version": "4.4.2"
+    },
+    {
+      "name": "mod-data-export-spring",
+      "nameRepo": "mod-data-export-spring",
+      "releaseDate": "2022-04-18T07:59:37+00:00",
+      "releaseName": "v1.3.4",
+      "releaseSha": "917863f103ad7d7b3913fba99dc1c69e8e3af434",
+      "releaseTag": "v1.3.4",
+      "releaseTarget": "master",
+      "version": "1.3.4"
+    },
+    {
+      "name": "mod-data-export-worker",
+      "nameRepo": "mod-data-export-worker",
+      "releaseDate": "2022-04-10T12:14:06+00:00",
+      "releaseName": "v1.3.3",
+      "releaseSha": "67ba45911ba17936c1bdc18dcc741fa9a9f4bfbc",
+      "releaseTag": "v1.3.3",
+      "releaseTarget": "master",
+      "version": "1.3.3"
+    },
+    {
+      "name": "mod-data-import",
+      "nameRepo": "mod-data-import",
+      "releaseDate": "2022-04-03T20:23:40+00:00",
+      "releaseName": "2.4.2",
+      "releaseSha": "4cb6051642483aac579091e641e4da951bc83795",
+      "releaseTag": "v2.4.2",
+      "releaseTarget": "master",
+      "version": "2.4.2"
+    },
+    {
+      "name": "mod-data-import-converter-storage",
+      "nameRepo": "mod-data-import-converter-storage",
+      "releaseDate": "2022-04-04T10:59:14+00:00",
+      "releaseName": "1.13.3",
+      "releaseSha": "668f4254ad0ceb6e41e166ed152be39d6a469fd3",
+      "releaseTag": "v1.13.3",
+      "releaseTarget": "master",
+      "version": "1.13.3"
+    },
+    {
+      "name": "mod-ebsconet",
+      "nameRepo": "mod-ebsconet",
+      "releaseDate": "2022-03-03T10:37:01+00:00",
+      "releaseName": "v1.2.0",
+      "releaseSha": "18f56a0f5fef770ac4e3db1e17c3855fefe7eda5",
+      "releaseTag": "v1.2.0",
+      "releaseTarget": "master",
+      "version": "1.2.0"
+    },
+    {
+      "name": "mod-email",
+      "nameRepo": "mod-email",
+      "releaseDate": "2022-02-22T17:10:06+00:00",
+      "releaseName": "v1.13.0",
+      "releaseSha": "068d637674bb043b610011912cd5524ba2a77863",
+      "releaseTag": "v1.13.0",
+      "releaseTarget": "master",
+      "version": "1.13.0"
+    },
+    {
+      "name": "mod-erm-usage",
+      "nameRepo": "mod-erm-usage",
+      "releaseDate": "2022-03-02T10:40:39+00:00",
+      "releaseName": "",
+      "releaseSha": "f12682c86025654119e78e016a4ab0c7fa6802d6",
+      "releaseTag": "v4.3.0",
+      "releaseTarget": "master",
+      "version": "4.3.0"
+    },
+    {
+      "name": "mod-erm-usage-harvester",
+      "nameRepo": "mod-erm-usage-harvester",
+      "releaseDate": "2022-04-08T07:43:47+00:00",
+      "releaseName": "",
+      "releaseSha": "caa71f76578ee5a582430e50ec98a93f2f19dd08",
+      "releaseTag": "v4.0.1",
+      "releaseTarget": "master",
+      "version": "4.0.1"
+    },
+    {
+      "name": "mod-eusage-reports",
+      "nameRepo": "mod-eusage-reports",
+      "releaseDate": "2022-03-05T06:52:33+00:00",
+      "releaseName": "",
+      "releaseSha": "94e24689cbf4276f86bde936d431b3af045241c1",
+      "releaseTag": "v1.1.1",
+      "releaseTarget": "master",
+      "version": "1.1.1"
+    },
+    {
+      "name": "mod-event-config",
+      "nameRepo": "mod-event-config",
+      "releaseDate": "2022-02-23T18:18:28+00:00",
+      "releaseName": "v2.2.0",
+      "releaseSha": "c1e09a588404d83b6470fd5e1979700af397315a",
+      "releaseTag": "v2.2.0",
+      "releaseTarget": "master",
+      "version": "2.2.0"
+    },
+    {
+      "name": "mod-feesfines",
+      "nameRepo": "mod-feesfines",
+      "releaseDate": "2022-04-12T11:07:44+00:00",
+      "releaseName": "v17.1.1",
+      "releaseSha": "40b416ece6c11c0b9e97e5987307a816cf193296",
+      "releaseTag": "v17.1.1",
+      "releaseTarget": "master",
+      "version": "17.1.1"
+    },
+    {
+      "name": "mod-finance",
+      "nameRepo": "mod-finance",
+      "releaseDate": "2022-04-08T16:05:16+00:00",
+      "releaseName": "v4.4.1",
+      "releaseSha": "4b9051eb0d55e19532af502092ba8ee53947f10a",
+      "releaseTag": "v4.4.1",
+      "releaseTarget": "master",
+      "version": "4.4.1"
+    },
+    {
+      "name": "mod-finance-storage",
+      "nameRepo": "mod-finance-storage",
+      "releaseDate": "2022-04-12T15:34:20+00:00",
+      "releaseName": "v8.1.2",
+      "releaseSha": "b9422df25ad3e6e29663ab44a4457ab84b7e74d2",
+      "releaseTag": "v8.1.2",
+      "releaseTarget": "master",
+      "version": "8.1.2"
+    },
+    {
+      "name": "mod-gobi",
+      "nameRepo": "mod-gobi",
+      "releaseDate": "2022-03-03T11:04:18+00:00",
+      "releaseName": "v2.3.0",
+      "releaseSha": "c17c2991b2eaab7c6374c3ca67c2b85d6b7be492",
+      "releaseTag": "v2.3.0",
+      "releaseTarget": "master",
+      "version": "2.3.0"
+    },
+    {
+      "name": "mod-graphql",
+      "nameRepo": "mod-graphql",
+      "releaseDate": "2021-06-03T14:53:00+00:00",
+      "releaseName": "v1.9.0",
+      "releaseSha": "bd3354b88aa4a2e59f67fb3dc21ae4e5fb671e1a",
+      "releaseTag": "v1.9.0",
+      "releaseTarget": "master",
+      "version": "1.9.0"
+    },
+    {
+      "name": "mod-inn-reach",
+      "nameRepo": "mod-inn-reach",
+      "releaseDate": "2021-12-15T12:01:05+00:00",
+      "releaseName": "v1.0.2",
+      "releaseSha": "2e56064eee4957079aa7f968c42decad7bfb77ce",
+      "releaseTag": "v1.0.2",
+      "releaseTarget": "master",
+      "version": "1.0.2"
+    },
+    {
+      "name": "mod-inventory",
+      "nameRepo": "mod-inventory",
+      "releaseDate": "2022-04-15T07:42:33+00:00",
+      "releaseName": "v18.1.6",
+      "releaseSha": "d3f829b608bd95f403f58fabb0c67b53f0a22b18",
+      "releaseTag": "v18.1.6",
+      "releaseTarget": "master",
+      "version": "18.1.6"
+    },
+    {
+      "name": "mod-inventory-storage",
+      "nameRepo": "mod-inventory-storage",
+      "releaseDate": "2022-03-30T11:05:07+00:00",
+      "releaseName": "v23.0.2",
+      "releaseSha": "f8331c1e0307ce2a6da925cbf8931ee63cc79550",
+      "releaseTag": "v23.0.2",
+      "releaseTarget": "master",
+      "version": "23.0.2"
+    },
+    {
+      "name": "mod-inventory-update",
+      "nameRepo": "mod-inventory-update",
+      "releaseDate": "2022-03-10T13:07:18+00:00",
+      "releaseName": "",
+      "releaseSha": "24a5e53d7b12f2314e5071fb780eb73103371a55",
+      "releaseTag": "v2.0.2",
+      "releaseTarget": "master",
+      "version": "2.0.2"
+    },
+    {
+      "name": "mod-invoice",
+      "nameRepo": "mod-invoice",
+      "releaseDate": "2022-04-08T17:55:31+00:00",
+      "releaseName": "v5.3.2",
+      "releaseSha": "03fab51dad8ab3f95f6c9806fed768bede4a8745",
+      "releaseTag": "v5.3.2",
+      "releaseTarget": "master",
+      "version": "5.3.2"
+    },
+    {
+      "name": "mod-invoice-storage",
+      "nameRepo": "mod-invoice-storage",
+      "releaseDate": "2022-03-03T09:26:13+00:00",
+      "releaseName": "v5.3.0",
+      "releaseSha": "eb2dbb285c1a1516eb2049313c5e057edb950e8a",
+      "releaseTag": "v5.3.0",
+      "releaseTarget": "master",
+      "version": "5.3.0"
+    },
+    {
+      "name": "mod-kb-ebsco-java",
+      "nameRepo": "mod-kb-ebsco-java",
+      "releaseDate": "2022-03-19T09:22:43+00:00",
+      "releaseName": "v3.10.1",
+      "releaseSha": "92cbd8cd96af75cfc0b8adfbd364b3abfb2b8d73",
+      "releaseTag": "v3.10.1",
+      "releaseTarget": "release/v3.10",
+      "version": "3.10.1"
+    },
+    {
+      "name": "mod-ldp",
+      "nameRepo": "mod-ldp",
+      "releaseDate": "2022-03-03T21:58:37+00:00",
+      "releaseName": "v1.0.2",
+      "releaseSha": "05b89e8265d5c6991ecc179cb5220ef882a2c550",
+      "releaseTag": "v1.0.2",
+      "releaseTarget": "master",
+      "version": "1.0.2"
+    },
+    {
+      "name": "mod-licenses",
+      "nameRepo": "mod-licenses",
+      "releaseDate": "2022-03-14T14:34:58+00:00",
+      "releaseName": "Version 4.1.1",
+      "releaseSha": "029766b85b842dba1ab78d597fb32d5d1138b2cc",
+      "releaseTag": "v4.1.1",
+      "releaseTarget": "release_4.1.x",
+      "version": "4.1.1"
+    },
+    {
+      "name": "mod-login",
+      "nameRepo": "mod-login",
+      "releaseDate": "2022-02-18T12:04:32+00:00",
+      "releaseName": "",
+      "releaseSha": "14263f34f8270cfc57e9e3b921b3517ea76f8cc4",
+      "releaseTag": "v7.6.0",
+      "releaseTarget": "master",
+      "version": "7.6.0"
+    },
+    {
+      "name": "mod-login-saml",
+      "nameRepo": "mod-login-saml",
+      "releaseDate": "2022-04-14T16:18:31+00:00",
+      "releaseName": "",
+      "releaseSha": "6912487027a3e833f46d9683f31f8015200a0755",
+      "releaseTag": "v2.4.4",
+      "releaseTarget": "master",
+      "version": "2.4.4"
+    },
+    {
+      "name": "mod-ncip",
+      "nameRepo": "mod-ncip",
+      "releaseDate": "2022-02-25T16:16:28+00:00",
+      "releaseName": "v1.10.0",
+      "releaseSha": "ea7910bdb4f27c935d59b8edd6d89418356db220",
+      "releaseTag": "v1.10.0",
+      "releaseTarget": "master",
+      "version": "1.10.0"
+    },
+    {
+      "name": "mod-notes",
+      "nameRepo": "mod-notes",
+      "releaseDate": "2022-02-28T11:48:42+00:00",
+      "releaseName": "",
+      "releaseSha": "e65d86cdc997947bf804f4f52989c607aa951a6f",
+      "releaseTag": "v3.0.0",
+      "releaseTarget": "master",
+      "version": "3.0.0"
+    },
+    {
+      "name": "mod-notify",
+      "nameRepo": "mod-notify",
+      "releaseDate": "2022-02-23T09:51:32+00:00",
+      "releaseName": "v2.10.0",
+      "releaseSha": "4a736be992847355a20cbc3dafe006d22aee6c07",
+      "releaseTag": "v2.10.0",
+      "releaseTarget": "master",
+      "version": "2.10.0"
+    },
+    {
+      "name": "mod-oai-pmh",
+      "nameRepo": "mod-oai-pmh",
+      "releaseDate": "2022-03-24T07:17:28+00:00",
+      "releaseName": "v3.7.1",
+      "releaseSha": "256ff06f99153912348af06c399a1e16fd8f1653",
+      "releaseTag": "v3.7.1",
+      "releaseTarget": "master",
+      "version": "3.7.1"
+    },
+    {
+      "name": "mod-orders",
+      "nameRepo": "mod-orders",
+      "releaseDate": "2022-04-11T06:24:41+00:00",
+      "releaseName": "v12.3.2",
+      "releaseSha": "b1e947af9c217795356e1dd6a3fe94d17466bb52",
+      "releaseTag": "v12.3.2",
+      "releaseTarget": "master",
+      "version": "12.3.2"
+    },
+    {
+      "name": "mod-orders-storage",
+      "nameRepo": "mod-orders-storage",
+      "releaseDate": "2022-04-08T16:55:34+00:00",
+      "releaseName": "v13.2.2",
+      "releaseSha": "c25c6d49dcfe504693b18ee10de33f2c958b3641",
+      "releaseTag": "v13.2.2",
+      "releaseTarget": "master",
+      "version": "13.2.2"
+    },
+    {
+      "name": "mod-organizations",
+      "nameRepo": "mod-organizations",
+      "releaseDate": "2022-03-03T07:47:57+00:00",
+      "releaseName": "v1.4.0",
+      "releaseSha": "935281ee548c0d20a070984d92460544aa62d181",
+      "releaseTag": "v1.4.0",
+      "releaseTarget": "master",
+      "version": "1.4.0"
+    },
+    {
+      "name": "mod-organizations-storage",
+      "nameRepo": "mod-organizations-storage",
+      "releaseDate": "2022-03-03T07:35:55+00:00",
+      "releaseName": "v4.2.0",
+      "releaseSha": "ad1d80b98f780177f71733c1d5684acaf2bc386f",
+      "releaseTag": "v4.2.0",
+      "releaseTarget": "master",
+      "version": "4.2.0"
+    },
+    {
+      "name": "mod-password-validator",
+      "nameRepo": "mod-password-validator",
+      "releaseDate": "2022-02-28T15:58:47+00:00",
+      "releaseName": "",
+      "releaseSha": "123a4c3ab6afd3997d42a77e35f25e9b3d84e865",
+      "releaseTag": "v2.3.0",
+      "releaseTarget": "master",
+      "version": "2.3.0"
+    },
+    {
+      "name": "mod-patron",
+      "nameRepo": "mod-patron",
+      "releaseDate": "2022-04-05T09:13:48+00:00",
+      "releaseName": "v5.2.2",
+      "releaseSha": "f3b6a9fc2447ecc157fc199bcb7a56937f774434",
+      "releaseTag": "v5.2.2",
+      "releaseTarget": "master",
+      "version": "5.2.2"
+    },
+    {
+      "name": "mod-patron-blocks",
+      "nameRepo": "mod-patron-blocks",
+      "releaseDate": "2022-04-12T12:24:38+00:00",
+      "releaseName": "v1.5.2",
+      "releaseSha": "a1a25fcb3d7c3bc2daee606119022fe40a061863",
+      "releaseTag": "v1.5.2",
+      "releaseTarget": "master",
+      "version": "1.5.2"
+    },
+    {
+      "name": "mod-permissions",
+      "nameRepo": "mod-permissions",
+      "releaseDate": "2022-04-07T16:51:39+00:00",
+      "releaseName": "",
+      "releaseSha": "6795b71f7c243f3a0337eddf8d5391482a6f12d7",
+      "releaseTag": "v6.0.4",
+      "releaseTarget": "master",
+      "version": "6.0.4"
+    },
+    {
+      "name": "mod-pubsub",
+      "nameRepo": "mod-pubsub",
+      "releaseDate": "2022-02-22T15:44:29+00:00",
+      "releaseName": "v2.5.0",
+      "releaseSha": "e0cfd1e2aed2e6a49750f6108d0cb49178f6bb4c",
+      "releaseTag": "v2.5.0",
+      "releaseTarget": "master",
+      "version": "2.5.0"
+    },
+    {
+      "name": "mod-quick-marc",
+      "nameRepo": "mod-quick-marc",
+      "releaseDate": "2022-04-05T09:21:09+00:00",
+      "releaseName": "v2.3.3",
+      "releaseSha": "6a5f59c7373eb3bf97efdb809176442398075586",
+      "releaseTag": "v2.3.3",
+      "releaseTarget": "release/v2.3",
+      "version": "2.3.3"
+    },
+    {
+      "name": "mod-remote-storage",
+      "nameRepo": "mod-remote-storage",
+      "releaseDate": "2022-02-28T11:00:51+00:00",
+      "releaseName": "v1.5.0",
+      "releaseSha": "3bfede584ab6376a03a8bcfd143aea7963454fc2",
+      "releaseTag": "v1.5.0",
+      "releaseTarget": "master",
+      "version": "1.5.0"
+    },
+    {
+      "name": "mod-rtac",
+      "nameRepo": "mod-rtac",
+      "releaseDate": "2022-03-31T20:19:30+00:00",
+      "releaseName": "v3.2.1",
+      "releaseSha": "91f7d9dc29b719824e599b502873e127b2c6cd42",
+      "releaseTag": "v3.2.1",
+      "releaseTarget": "master",
+      "version": "3.2.1"
+    },
+    {
+      "name": "mod-search",
+      "nameRepo": "mod-search",
+      "releaseDate": "2022-04-07T13:10:53+00:00",
+      "releaseName": "1.6.4",
+      "releaseSha": "949b131fa45e75d5620f7cf0cd8034c31ac87396",
+      "releaseTag": "v1.6.4",
+      "releaseTarget": "master",
+      "version": "1.6.4"
+    },
+    {
+      "name": "mod-sender",
+      "nameRepo": "mod-sender",
+      "releaseDate": "2022-02-23T10:54:17+00:00",
+      "releaseName": "v1.7.0",
+      "releaseSha": "4ddf928697c4e2934dac45acf24182e60e86eeba",
+      "releaseTag": "v1.7.0",
+      "releaseTarget": "master",
+      "version": "1.7.0"
+    },
+    {
+      "name": "mod-service-interaction",
+      "nameRepo": "mod-service-interaction",
+      "releaseDate": "2021-06-15T10:34:24+00:00",
+      "releaseName": "",
+      "releaseSha": "beaeab37a8ac4b14c6b7986db8117bc0d419fb58",
+      "releaseTag": "v1.0.0",
+      "releaseTarget": "release/1.0.x",
+      "version": "1.0.0"
+    },
+    {
+      "name": "mod-source-record-manager",
+      "nameRepo": "mod-source-record-manager",
+      "releaseDate": "2022-04-08T09:04:16+00:00",
+      "releaseName": "3.3.8",
+      "releaseSha": "9a3915b623b0704cff7319cbf386fcba0b5f1072",
+      "releaseTag": "v3.3.8",
+      "releaseTarget": "master",
+      "version": "3.3.8"
+    },
+    {
+      "name": "mod-source-record-storage",
+      "nameRepo": "mod-source-record-storage",
+      "releaseDate": "2022-04-04T13:47:17+00:00",
+      "releaseName": "5.3.2",
+      "releaseSha": "950a1220d6e281e60f63534f9c98211ccb833e4c",
+      "releaseTag": "v5.3.2",
+      "releaseTarget": "master",
+      "version": "5.3.2"
+    },
+    {
+      "name": "mod-tags",
+      "nameRepo": "mod-tags",
+      "releaseDate": "2022-04-08T11:32:54+00:00",
+      "releaseName": "v1.1.2",
+      "releaseSha": "279e42d9bf37452aef10e1aeebc60a2dbeb692f8",
+      "releaseTag": "v1.1.2",
+      "releaseTarget": "release/v1.1",
+      "version": "1.1.2"
+    },
+    {
+      "name": "mod-template-engine",
+      "nameRepo": "mod-template-engine",
+      "releaseDate": "2022-02-22T19:06:47+00:00",
+      "releaseName": "v1.16.0",
+      "releaseSha": "82b18dc594202ff761935fb96b59c8d6ff83c69b",
+      "releaseTag": "v1.16.0",
+      "releaseTarget": "master",
+      "version": "1.16.0"
+    },
+    {
+      "name": "mod-user-import",
+      "nameRepo": "mod-user-import",
+      "releaseDate": "2022-04-15T20:26:27+00:00",
+      "releaseName": "3.6.5",
+      "releaseSha": "70151a22be21ac1b1550d08adfe8e837fef84d8f",
+      "releaseTag": "v3.6.5",
+      "releaseTarget": "master",
+      "version": "3.6.5"
+    },
+    {
+      "name": "mod-users",
+      "nameRepo": "mod-users",
+      "releaseDate": "2022-02-22T16:26:41+00:00",
+      "releaseName": "v18.2.0",
+      "releaseSha": "bbce7fefa176dfe6efdb193d13c6fb33fc4e3be7",
+      "releaseTag": "v18.2.0",
+      "releaseTarget": "master",
+      "version": "18.2.0"
+    },
+    {
+      "name": "mod-users-bl",
+      "nameRepo": "mod-users-bl",
+      "releaseDate": "2022-03-29T10:25:58+00:00",
+      "releaseName": "v7.2.1",
+      "releaseSha": "2f4679a82c2a871ff9486634bfa9a6850cd92171",
+      "releaseTag": "v7.2.1",
+      "releaseTarget": "master",
+      "version": "7.2.1"
+    },
+    {
+      "name": "mod-z3950",
+      "nameRepo": "Net-Z3950-FOLIO",
+      "releaseDate": "2021-08-24T15:11:23+00:00",
+      "releaseName": "v2.4.0",
+      "releaseSha": "9c7effbe680c0b2c256a590b2e76e6242fc26e28",
+      "releaseTag": "v2.4.0",
+      "releaseTarget": "master",
+      "version": "2.4.0"
+    }
+  ]
+}
