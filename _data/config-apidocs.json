@@ -1339,7 +1339,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-source-record-manager",
     "org": "folio-org"
   },
