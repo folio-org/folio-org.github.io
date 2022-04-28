@@ -1002,6 +1002,22 @@
   {
     "config": {
       "oas": [
+        "server/src/main/resources/openapi/meta-storage-1.0.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "mod-meta-storage",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
         "src/main/resources/swagger.api/notes.yml"
       ],
       "raml": [],
@@ -1310,22 +1326,6 @@
       ]
     },
     "name": "mod-sender",
-    "org": "folio-org"
-  },
-  {
-    "config": {
-      "oas": [
-        "server/src/main/resources/openapi/shared-index-1.0.yaml"
-      ],
-      "raml": [],
-      "upload": []
-    },
-    "metadata": {
-      "apiTypes": [
-        "OAS"
-      ]
-    },
-    "name": "mod-shared-index",
     "org": "folio-org"
   },
   {
