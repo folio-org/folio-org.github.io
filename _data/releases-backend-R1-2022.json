@@ -476,12 +476,12 @@
     {
       "name": "mod-password-validator",
       "nameRepo": "mod-password-validator",
-      "releaseDate": "2022-02-28T15:58:47+00:00",
+      "releaseDate": "2022-04-25T19:19:34+00:00",
       "releaseName": "",
-      "releaseSha": "123a4c3ab6afd3997d42a77e35f25e9b3d84e865",
-      "releaseTag": "v2.3.0",
+      "releaseSha": "06f5e43b4d72b0efe6b62a26bcb57b3a1d30a8d3",
+      "releaseTag": "v2.3.1",
       "releaseTarget": "master",
-      "version": "2.3.0"
+      "version": "2.3.1"
     },
     {
       "name": "mod-patron",
