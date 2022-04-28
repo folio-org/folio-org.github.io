@@ -39,6 +39,8 @@ ui-checkout:
 ui-circulation:
   urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Circulation
   spaceUserDocs: access/
+  urlsOther:
+    - https://wiki.folio.org/display/FOLIOtips/Example+Circulation+Rules+from+Adopters
 
 ui-circulation-log:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Circulation+log
@@ -156,6 +158,10 @@ ui-users:
   spaceUserDocs: users/
   urlsOther:
     - https://wiki.folio.org/display/FOLIOtips/Users+App+-+Creating+Fees+and+Fines
+
+mod-circulation:
+  urlsOther:
+    - https://github.com/folio-org/mod-circulation/blob/master/doc/circulationrules.md
 
 mod-search:
   urlsOther:

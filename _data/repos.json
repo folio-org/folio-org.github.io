@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-04-18T22:59:29.284936+00:00"
+    "generatedDateTime": "2022-04-27T23:46:33.014096+00:00"
   },
   "repos": [
     {
@@ -582,7 +582,7 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>The mod-aes module implements FOLIO asynchronous event service (AES). Currently, it acts as a filter to capture traffic as JSON messages. It then routes the messages to different Kafka topic according to JSON path based routing rules that are stored in mod-config.</p>"
+      "snippetIntro": "<p>The mod-aes module implements FOLIO asynchronous event service (AES). Currently, it acts as a filter to capture traffic as JSON messages. It then routes the messages to different Kafka topic according to JSON path based routing rules that are stored in mod-configuration.</p>"
     },
     {
       "defaultBranch": "master",
@@ -1181,6 +1181,18 @@
     },
     {
       "defaultBranch": "master",
+      "description": "Meta Storage",
+      "docDirName": null,
+      "hintOas": true,
+      "name": "mod-meta-storage",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>A service that generates an index of bibliographic records and items for the purpose of consortial re-sharing. The index is made as simple as possible in order to be optimized for fast loading.</p>"
+    },
+    {
+      "defaultBranch": "master",
       "description": "NISO Circulation Interchange Protocol (NCIP)  support in FOLIO",
       "docDirName": "docs",
       "name": "mod-ncip",
@@ -1488,18 +1500,6 @@
       "repoLanguageHint": "gradle",
       "repoType": "backend-mod",
       "snippetIntro": "<p>Mod-Service-Interaction is a FOLIO Backend Module for cross-app connectivity.</p>"
-    },
-    {
-      "defaultBranch": "master",
-      "description": "Consortial index of bibliographical records and shareable items",
-      "docDirName": null,
-      "hintOas": true,
-      "name": "mod-shared-index",
-      "org": "folio-org",
-      "ramlDirName": null,
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>A service that generates an index of bibliographic records and items for the purpose of consortial re-sharing. The index is made as simple as possible in order to be optimized for fast loading.</p>"
     },
     {
       "defaultBranch": "master",
