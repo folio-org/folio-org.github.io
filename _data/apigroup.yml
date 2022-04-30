@@ -6,6 +6,7 @@ login:
   modules:
     - mod-login
     - mod-login-saml
+    - mod-authtoken
     - mod-password-validator
     - mod-permissions
 users:
@@ -35,7 +36,7 @@ inventory:
     - mod-inventory
     - mod-inventory-storage
     - mod-inventory-update
-    - mod-shared-index
+    - mod-meta-storage
     - mod-kb-ebsco-java
     - mod-oai-pmh
     - edge-oai-pmh
