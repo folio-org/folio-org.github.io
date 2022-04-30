@@ -1055,7 +1055,8 @@
         "ramls/cleanup-job.raml",
         "ramls/folio-set-filtering-conditions.raml",
         "ramls/folio-set.raml",
-        "ramls/oai-pmh.raml"
+        "ramls/oai-pmh.raml",
+        "ramls/request-metadata.raml"
       ],
       "upload": []
     },
