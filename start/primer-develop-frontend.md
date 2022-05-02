@@ -13,8 +13,10 @@ and the [client-side](/source-code/#client-side) source code repositories.
 
 That leads to the Stripes [documentation](https://github.com/folio-org/stripes/blob/master/README.md) and overview of the main docs, and necessary background understanding.
 That overview leads to various other documentation, including the
-[stripes-components](https://github.com/folio-org/stripes-components) and
-[stripes-smart-components](https://github.com/folio-org/stripes-smart-components) which have documentation in the "lib" directory of each component.
+[stripes-components](https://github.com/folio-org/stripes-components) 
+(with its accompanying [Storybook](https://folio-org.github.io/stripes-components) generated documentation)
+and
+[stripes-smart-components](https://github.com/folio-org/stripes-smart-components) -- both have documentation in their "lib" directory for each component.
 Also consider that for some Stripes components, it might be suitable to use a [Stripes plugin](https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#plugins).
 
 The foundation described in
