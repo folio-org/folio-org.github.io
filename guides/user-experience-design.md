@@ -18,7 +18,7 @@ Some starting points are:
 
 * [Guidelines](https://ux.folio.org/docs/all-guidelines/)
 -- FOLIO design guidelines. Standards for consistency and unified experience.
-Includes detailed information about how to design an app, what layout and component to choose from, what type of patterns are available, component links to Storybook and direct to the relevant stripes-components at GitHub.
+Includes detailed information about how to design an app, what layout and component to choose from, what type of patterns are available, component links to [Storybook](https://folio-org.github.io/stripes-components/) and direct to the relevant [stripes-components](/source-code/map#stripes-components) at GitHub.
 
 * [Accessibility checklist](https://ux.folio.org/docs/guidelines/accessibility/)
 -- Ensure that your FOLIO app, component, and patterns are accessible and continue to meet "Web Content Accessibility Guidelines ([WCAG](/reference/glossary/#wcag))".

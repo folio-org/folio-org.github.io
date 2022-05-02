@@ -202,11 +202,13 @@ edge-ncip:
 stripes-smart-components:
   urlsOther:
     - https://github.com/folio-org/stripes/blob/master/ROADMAP.md
+    - https://github.com/folio-org/stripes-smart-components/tree/master/lib
 
 stripes-components:
   urlsOther:
     - https://github.com/folio-org/stripes-components#links-to-documentation-of-specific-components-and-utilities
     - https://github.com/folio-org/stripes-components/tree/master/lib
+    - https://folio-org.github.io/stripes-components/
 
 stripes-smart-components:
   urlsOther:
