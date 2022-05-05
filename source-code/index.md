@@ -36,7 +36,7 @@ system. These repositories fall into three categories:
   framework for using those services from a Web browser;
 - and some that fall into neither of these categories.
 
-**PLEASE NOTE** that this is a technology preview following the [release early,
+FOLIO follows the [release early,
 release often](https://en.wikipedia.org/wiki/Release_early,_release_often)
 philosophy.
 
@@ -52,12 +52,13 @@ that acts as a gateway for access to all modules, handling redundancy,
 sessions, etc.
 
 Individual back-end modules are provided in their separate repositories, each
-named following the "`mod-`_name_" convention.
+named following the "`mod-`_name_" [convention](/guidelines/naming-conventions/#module-names).
 Each back-end module has its own documentation.
 
 Many of these modules are built from specifications in
 [RAML](https://raml.org/), the RESTful API Modeling Language: this process is
 facilitated by the code in the [raml-module-builder](map/#raml-module-builder) (RMB -- Framework facilitating easy module creation based on RAML files).
+Various other modules utilise API descriptions as OpenAPI Specification ([OAS](/reference/glossary/#oas)).
 
 Refer to the map for all
 [Backend infrastructure repos](map/#backend-infrastructure) and
