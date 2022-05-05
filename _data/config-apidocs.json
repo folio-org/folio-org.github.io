@@ -1077,9 +1077,9 @@
         "ramls/check-in.raml",
         "ramls/configuration.raml",
         "ramls/holding-summary.raml",
-        "ramls/order.raml",
         "ramls/order-lines.raml",
         "ramls/order-templates.raml",
+        "ramls/order.raml",
         "ramls/pieces.raml",
         "ramls/po-number.raml",
         "ramls/receive.raml",
@@ -1089,7 +1089,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-orders",
     "org": "folio-org"
   },
