@@ -96,12 +96,12 @@
     {
       "name": "mod-configuration",
       "nameRepo": "mod-configuration",
-      "releaseDate": "2022-03-29T15:27:00+00:00",
+      "releaseDate": "2022-04-26T09:36:40+00:00",
       "releaseName": "",
-      "releaseSha": "2d1fe536d14f40d8f9ebc9d011ce07656c831c56",
-      "releaseTag": "v5.7.6",
+      "releaseSha": "abb69f6ce8df92cc97c460966d8ee18bf5eb7d0c",
+      "releaseTag": "v5.7.7",
       "releaseTarget": "master",
-      "version": "5.7.6"
+      "version": "5.7.7"
     },
     {
       "name": "mod-copycat",
@@ -296,12 +296,12 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2022-04-15T07:42:33+00:00",
-      "releaseName": "v18.1.6",
-      "releaseSha": "d3f829b608bd95f403f58fabb0c67b53f0a22b18",
-      "releaseTag": "v18.1.6",
+      "releaseDate": "2022-05-02T18:37:34+00:00",
+      "releaseName": "",
+      "releaseSha": "d8acc5a131916b6455c2b6aa2b1f48374798154f",
+      "releaseTag": "v18.1.7",
       "releaseTarget": "master",
-      "version": "18.1.6"
+      "version": "18.1.7"
     },
     {
       "name": "mod-inventory-storage",
@@ -386,12 +386,12 @@
     {
       "name": "mod-login-saml",
       "nameRepo": "mod-login-saml",
-      "releaseDate": "2022-04-14T16:18:31+00:00",
+      "releaseDate": "2022-05-02T08:31:42+00:00",
       "releaseName": "",
-      "releaseSha": "6912487027a3e833f46d9683f31f8015200a0755",
-      "releaseTag": "v2.4.4",
+      "releaseSha": "cdd1feab8b9144617096985c74d1ba70b45084fe",
+      "releaseTag": "v2.4.5",
       "releaseTarget": "master",
-      "version": "2.4.4"
+      "version": "2.4.5"
     },
     {
       "name": "mod-ncip",
@@ -496,12 +496,12 @@
     {
       "name": "mod-patron-blocks",
       "nameRepo": "mod-patron-blocks",
-      "releaseDate": "2022-04-12T12:24:38+00:00",
-      "releaseName": "v1.5.2",
-      "releaseSha": "a1a25fcb3d7c3bc2daee606119022fe40a061863",
-      "releaseTag": "v1.5.2",
+      "releaseDate": "2022-05-04T10:09:39+00:00",
+      "releaseName": "v1.5.3",
+      "releaseSha": "c8d89b9c9f0ac96f53341db51cdb66ef0299ddc2",
+      "releaseTag": "v1.5.3",
       "releaseTarget": "master",
-      "version": "1.5.2"
+      "version": "1.5.3"
     },
     {
       "name": "mod-permissions",
@@ -646,12 +646,12 @@
     {
       "name": "mod-users-bl",
       "nameRepo": "mod-users-bl",
-      "releaseDate": "2022-03-29T10:25:58+00:00",
-      "releaseName": "v7.2.1",
-      "releaseSha": "2f4679a82c2a871ff9486634bfa9a6850cd92171",
-      "releaseTag": "v7.2.1",
+      "releaseDate": "2022-05-04T13:18:20+00:00",
+      "releaseName": "",
+      "releaseSha": "48bfcfff360662f230f3e21dbe001250c7db61d9",
+      "releaseTag": "v7.2.4",
       "releaseTarget": "master",
-      "version": "7.2.1"
+      "version": "7.2.4"
     },
     {
       "name": "mod-z3950",
