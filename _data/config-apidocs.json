@@ -1002,6 +1002,22 @@
   {
     "config": {
       "oas": [
+        "server/src/main/resources/openapi/meta-storage-1.0.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "mod-meta-storage",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
         "src/main/resources/swagger.api/notes.yml"
       ],
       "raml": [],
@@ -1039,7 +1055,8 @@
         "ramls/cleanup-job.raml",
         "ramls/folio-set-filtering-conditions.raml",
         "ramls/folio-set.raml",
-        "ramls/oai-pmh.raml"
+        "ramls/oai-pmh.raml",
+        "ramls/request-metadata.raml"
       ],
       "upload": []
     },
@@ -1060,9 +1077,9 @@
         "ramls/check-in.raml",
         "ramls/configuration.raml",
         "ramls/holding-summary.raml",
-        "ramls/order.raml",
         "ramls/order-lines.raml",
         "ramls/order-templates.raml",
+        "ramls/order.raml",
         "ramls/pieces.raml",
         "ramls/po-number.raml",
         "ramls/receive.raml",
@@ -1072,7 +1089,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-orders",
     "org": "folio-org"
   },
@@ -1310,22 +1331,6 @@
       ]
     },
     "name": "mod-sender",
-    "org": "folio-org"
-  },
-  {
-    "config": {
-      "oas": [
-        "server/src/main/resources/openapi/shared-index-1.0.yaml"
-      ],
-      "raml": [],
-      "upload": []
-    },
-    "metadata": {
-      "apiTypes": [
-        "OAS"
-      ]
-    },
-    "name": "mod-shared-index",
     "org": "folio-org"
   },
   {
