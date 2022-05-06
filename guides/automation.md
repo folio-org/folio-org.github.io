@@ -101,6 +101,16 @@ The server is built every day, to finish about 14:00 UTC.\
 
 The folio-snapshot-latest is an alias for folio-snapshot-2.
 
+### folio-lotus
+
+[https://folio-lotus.dev.folio.org/](https://folio-lotus.dev.folio.org/)
+
+This is an environment for the previous FOLIO Release R1 2022 Lotus.
+Each rebuild will pick up any hotfix updates that may have been released.
+
+The server is built every Sunday, to finish about 02:55 UTC.\
+(See Jenkins job: [folio-r1-2022-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r1-2022-release/) which starts about 02:19 UTC.).
+
 ### folio-kiwi
 
 [https://folio-kiwi.dev.folio.org/](https://folio-kiwi.dev.folio.org/)
@@ -110,16 +120,6 @@ Each rebuild will pick up any hotfix updates that may have been released.
 
 The server is built every Sunday, to finish about 04:10 UTC.\
 (See Jenkins job: [folio-r3-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r3-2021-release/) which starts about 03:35 UTC.).
-
-### folio-juniper
-
-[https://folio-juniper.dev.folio.org/](https://folio-juniper.dev.folio.org/)
-
-This is an environment for the previous FOLIO Release R2 2021 Juniper.
-Each rebuild will pick up any hotfix updates that may have been released.
-
-The server is built every Sunday, to finish about 02:55 UTC.\
-(See Jenkins job: [folio-r2-2021-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r2-2021-release/) which starts about 02:19 UTC.).
 
 ### Other notes
 
