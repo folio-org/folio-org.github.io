@@ -105,7 +105,7 @@ The folio-snapshot-latest is an alias for folio-snapshot-2.
 
 [https://folio-lotus.dev.folio.org/](https://folio-lotus.dev.folio.org/)
 
-This is an environment for the previous FOLIO Release R1 2022 Lotus.
+This is an environment for the latest FOLIO Release R1 2022 Lotus.
 Each rebuild will pick up any hotfix updates that may have been released.
 
 The server is built every Sunday, to finish about 02:55 UTC.\
@@ -115,7 +115,7 @@ The server is built every Sunday, to finish about 02:55 UTC.\
 
 [https://folio-kiwi.dev.folio.org/](https://folio-kiwi.dev.folio.org/)
 
-This is an environment for the latest FOLIO Release R3 2021 Kiwi.
+This is an environment for the previous FOLIO Release R3 2021 Kiwi.
 Each rebuild will pick up any hotfix updates that may have been released.
 
 The server is built every Sunday, to finish about 04:10 UTC.\
