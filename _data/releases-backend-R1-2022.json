@@ -284,16 +284,6 @@
       "version": "1.9.0"
     },
     {
-      "name": "mod-inn-reach",
-      "nameRepo": "mod-inn-reach",
-      "releaseDate": "2021-12-15T12:01:05+00:00",
-      "releaseName": "v1.0.2",
-      "releaseSha": "2e56064eee4957079aa7f968c42decad7bfb77ce",
-      "releaseTag": "v1.0.2",
-      "releaseTarget": "master",
-      "version": "1.0.2"
-    },
-    {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
       "releaseDate": "2022-05-02T18:37:34+00:00",
@@ -506,12 +496,12 @@
     {
       "name": "mod-permissions",
       "nameRepo": "mod-permissions",
-      "releaseDate": "2022-04-07T16:51:39+00:00",
+      "releaseDate": "2022-05-06T17:28:22+00:00",
       "releaseName": "",
-      "releaseSha": "6795b71f7c243f3a0337eddf8d5391482a6f12d7",
-      "releaseTag": "v6.0.4",
+      "releaseSha": "83c841e8b2b6eaa0ed5603be912776daa31903a7",
+      "releaseTag": "v6.0.5",
       "releaseTarget": "master",
-      "version": "6.0.4"
+      "version": "6.0.5"
     },
     {
       "name": "mod-pubsub",
