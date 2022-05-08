@@ -1482,7 +1482,6 @@
         "ramls/codex/codex.raml",
         "ramls/jsonSchemas.raml",
         "ramls/ramls.raml",
-        "ramls/tagged-record-example/users.raml",
         "ramls/tenant.raml"
       ],
       "upload": []
