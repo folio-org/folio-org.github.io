@@ -108,8 +108,8 @@ The folio-snapshot-latest is an alias for folio-snapshot-2.
 This is an environment for the latest FOLIO Release R1 2022 Lotus.
 Each rebuild will pick up any hotfix updates that may have been released.
 
-The server is built every Sunday, to finish about 02:55 UTC.\
-(See Jenkins job: [folio-r1-2022-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r1-2022-release/) which starts about 02:19 UTC.).
+The server is built every Sunday, to finish about 02:00 UTC.\
+(See Jenkins job: [folio-r1-2022-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r1-2022-release/) which starts about 01:28 UTC.).
 
 ### folio-kiwi
 
