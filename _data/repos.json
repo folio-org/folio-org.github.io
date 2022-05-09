@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-04-29T23:31:04.893481+00:00"
+    "generatedDateTime": "2022-05-08T23:47:50.861444+00:00"
   },
   "repos": [
     {
@@ -849,7 +849,10 @@
       "org": "openlibraryenvironment",
       "ramlDirName": "ramls",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Mod-Directory is a service intiailly proposed for use in resource sharing environments but offering services to any library scenario that involves documenting and using service interactions between peers.  It's purpose is to provide a bounded context for the storage, retrieval and update of directory service information which underpins inter-library services. This directory contains, but is not restricted to</p>"
+      "snippetIntro": "<p>Mod-Directory is a service intiailly proposed for use in resource sharing environments but offering services to any library scenario that involves documenting and using service interactions between peers.  It's purpose is to provide a bounded context for the storage, retrieval and update of directory service information which underpins inter-library services. This directory contains, but is not restricted to</p>",
+      "workflows": [
+        "gradle.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1448,7 +1451,10 @@
       "ramlDirName": null,
       "repoLanguageHint": "gradle",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "build.yml"
+      ]
     },
     {
       "defaultBranch": "master",
