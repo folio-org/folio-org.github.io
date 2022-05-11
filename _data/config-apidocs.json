@@ -830,8 +830,6 @@
         "ramls/nature-of-content-term.raml",
         "ramls/oai-pmh-view.raml",
         "ramls/record-bulk.raml",
-        "ramls/related-instance-type.raml",
-        "ramls/related-instances.raml",
         "ramls/service-point.raml",
         "ramls/service-points-user.raml",
         "ramls/shelf-location.raml",
@@ -931,7 +929,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-kb-ebsco-java",
     "org": "folio-org"
   },
@@ -1428,6 +1430,7 @@
         "ramls/addressTypes.raml",
         "ramls/departments.raml",
         "ramls/groups.raml",
+        "ramls/patronpin.raml",
         "ramls/proxiesFor.raml",
         "ramls/users.raml"
       ],
