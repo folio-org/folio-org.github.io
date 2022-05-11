@@ -506,12 +506,12 @@
     {
       "name": "mod-pubsub",
       "nameRepo": "mod-pubsub",
-      "releaseDate": "2022-02-22T15:44:29+00:00",
-      "releaseName": "v2.5.0",
-      "releaseSha": "e0cfd1e2aed2e6a49750f6108d0cb49178f6bb4c",
-      "releaseTag": "v2.5.0",
+      "releaseDate": "2022-05-09T16:35:03+00:00",
+      "releaseName": "",
+      "releaseSha": "e943d5b1655fc20779f99747f637cdfb9d4b837e",
+      "releaseTag": "v2.5.1",
       "releaseTarget": "master",
-      "version": "2.5.0"
+      "version": "2.5.1"
     },
     {
       "name": "mod-quick-marc",
