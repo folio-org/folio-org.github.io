@@ -396,12 +396,12 @@
     {
       "name": "mod-notes",
       "nameRepo": "mod-notes",
-      "releaseDate": "2022-02-28T11:48:42+00:00",
-      "releaseName": "",
-      "releaseSha": "e65d86cdc997947bf804f4f52989c607aa951a6f",
-      "releaseTag": "v3.0.0",
-      "releaseTarget": "master",
-      "version": "3.0.0"
+      "releaseDate": "2022-05-10T09:04:51+00:00",
+      "releaseName": "v3.0.1",
+      "releaseSha": "8655f668f8479f3b81d284c0630a3ffcfc4f6d99",
+      "releaseTag": "v3.0.1",
+      "releaseTarget": "release/3.0",
+      "version": "3.0.1"
     },
     {
       "name": "mod-notify",
@@ -466,12 +466,12 @@
     {
       "name": "mod-password-validator",
       "nameRepo": "mod-password-validator",
-      "releaseDate": "2022-04-25T19:19:34+00:00",
-      "releaseName": "",
-      "releaseSha": "06f5e43b4d72b0efe6b62a26bcb57b3a1d30a8d3",
-      "releaseTag": "v2.3.1",
-      "releaseTarget": "master",
-      "version": "2.3.1"
+      "releaseDate": "2022-05-10T13:14:12+00:00",
+      "releaseName": "v2.3.2",
+      "releaseSha": "88f75c52f25a396b0e71592dac77509d60821522",
+      "releaseTag": "v2.3.2",
+      "releaseTarget": "release/v2.3",
+      "version": "2.3.2"
     },
     {
       "name": "mod-patron",
@@ -506,12 +506,12 @@
     {
       "name": "mod-pubsub",
       "nameRepo": "mod-pubsub",
-      "releaseDate": "2022-02-22T15:44:29+00:00",
-      "releaseName": "v2.5.0",
-      "releaseSha": "e0cfd1e2aed2e6a49750f6108d0cb49178f6bb4c",
-      "releaseTag": "v2.5.0",
+      "releaseDate": "2022-05-09T16:35:03+00:00",
+      "releaseName": "",
+      "releaseSha": "e943d5b1655fc20779f99747f637cdfb9d4b837e",
+      "releaseTag": "v2.5.1",
       "releaseTarget": "master",
-      "version": "2.5.0"
+      "version": "2.5.1"
     },
     {
       "name": "mod-quick-marc",
