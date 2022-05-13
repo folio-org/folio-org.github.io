@@ -24,6 +24,13 @@ Each module has its own git repository.
 
 Take care to choose wisely for the module/repository name. It will be disruptive to [change that](/guides/rename-module/).
 
+Note that the repository name is normally the same as the module name.
+The module name can be different, but that can lead to trouble.
+
+Back-end modules do have a limit of 31 bytes for the module name,
+and must be composed of only lowercase letters, digits, and hyphens.
+Other restrictions for back-end module names are specified at the Wiki [Tenant ID and Module Name Restrictions](https://wiki.folio.org/display/DD/Tenant+Id+and+Module+Name+Restrictions).
+
 The name uses the following scheme with a consistent prefix and hyphen-separated words:
 
 * `mod-` prefix for [back-end modules](/source-code/map/#backend-mod) (e.g. mod-users, mod-inventory-storage).
