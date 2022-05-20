@@ -26,14 +26,14 @@ _where the `callNumber` is the name of field for browsing, `F` is the anchor val
 
 #### Approach
 
-_Numeric representation of `effectiveShelvingOrder` is used to narrow down the number of results in response. It
+_Numeric representation of `items.effectiveShelvingOrder` is used to narrow down the number of results in response. It
 increases the response time significantly because by default there is no other way to sort instances in the index by
 effective shelving key. This can be explained by the structure of the instance record. For Elasticsearch it contains all
 fields from the instance and corresponding items\holding as inner arrays. This results in fields
-like `effectiveShelvingOrder` to store multiple values. For correct browsing one of the values must be chosen every time
-depending on the user input. Script-based sorting solves this problem because the right value from the array can be
-chosen by the binary search algorithm from the core `Collections` class. Sorting of items before indexing operation
-reduces the overall complexity of script sorting._
+like `items.effectiveShelvingOrder` to store multiple values. For correct browsing one of the values must be chosen
+every time depending on the user input. Script-based sorting solves this problem because the right value from the array
+can be chosen by the binary search algorithm from the core `Collections` class. Sorting of items before indexing
+operation reduces the overall complexity of script sorting._
 
 The implemented solution contains two parts:
 
@@ -70,12 +70,71 @@ The implemented solution contains two parts:
 This algorithm helps in the runtime to reduce the number of records for Script-Based Sorting for Elasticsearch. It
 consists of the following parts:
 
-- Cleaning the input value by removing the invalid characters (only A-Z letters, digits, dot, slash and space are
-  allowed)
-- For each value the unique integer value is generated:
+- Cleaning the input string by removing the invalid characters (see [supported character](#supported-characters)). Only
+  52 characters can be supported without overflowing result long value.
+- Input string is trimmed to size equal to 10 (it's the maximum amount of characters without overflowing result long
+  value)
+- For each value the unique long value is generated:
   - only 10 first characters can be used, then the long value will be overflowed
-  - space is equal to 0, `.` is 1, `/` is 2, `0` is 3 and `A` is 14, 'Z' is 39
-  - Each value is calculated by following formula (`{integer value} * 39 ^ (10 - {character position}`)
+  - all unsupported value are removed from string
+  - Each character value is calculated by following formula (`{integer value} * 52 ^ (10 - {character position}`)
+
+#### Supported characters:
+
+| Char value | Num value |
+|:----------:|:---------:|
+|            |     0     |
+|     #      |     1     |
+|     $      |     2     |
+|     +      |     3     |
+|     ,      |     4     |
+|     -      |     5     |
+|     .      |     6     |
+|     /      |     7     |
+|     0      |     8     |
+|     1      |     9     |
+|     2      |    10     |
+|     3      |    11     |
+|     4      |    12     |
+|     5      |    13     |
+|     6      |    14     |
+|     7      |    15     |
+|     8      |    16     |
+|     9      |    17     |
+|     :      |    18     |
+|     ;      |    19     |
+|     =      |    20     |
+|     ?      |    21     |
+|     @      |    22     |
+|     A      |    23     |
+|     B      |    24     |
+|     C      |    25     |
+|     D      |    26     |
+|     E      |    27     |
+|     F      |    28     |
+|     G      |    29     |
+|     H      |    30     |
+|     I      |    31     |
+|     J      |    32     |
+|     K      |    33     |
+|     L      |    34     |
+|     M      |    35     |
+|     N      |    36     |
+|     O      |    37     |
+|     P      |    38     |
+|     Q      |    39     |
+|     R      |    40     |
+|     S      |    41     |
+|     T      |    42     |
+|     U      |    43     |
+|     V      |    44     |
+|     W      |    45     |
+|     X      |    46     |
+|     Y      |    47     |
+|     Z      |    48     |
+|     \      |    49     |
+|     _      |    50     |
+|     ~      |    51     |
 
 #### Call-Number Browsing Optimization
 
@@ -116,3 +175,6 @@ _Let's assume that the Elasticsearch index provided to `mod-search` following in
 - _If a user is browsing by query `callNumber > CZ`  and size equal to 100, then the service won't return the upper
   boundary because size exceeds the sum of instances after `CZ`. The Interval `C-D` is ignored because the anchor
   value is larger than the `key`, and only an open interval `D -` can be considered.
+
+An optimization can be disabled by passing environment variable to `mod-search` container:
+`CN_BROWSE_OPTIMIZATION_ENABLED = false`

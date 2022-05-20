@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Rename a module
+title: Rename a module repository
 permalink: /guides/rename-module/
 menuInclude: no
 menuTopTitle: Guides
 ---
 
-Even though people take care to use an [appropriate name](/guidelines/naming-conventions/#module-names) for a module when it is [commenced](/guidelines/create-new-repo/), it does sometimes become necessary to change the name.
+Even though people take care to use an [appropriate name](/guidelines/naming-conventions/#module-names) for a module and its repository when it is [commenced](/guidelines/create-new-repo/), it does sometimes become necessary to change the name.
 
 Renaming is often difficult and has various ramifications, so please consider carefully.
 
