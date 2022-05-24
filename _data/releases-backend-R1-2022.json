@@ -16,12 +16,12 @@
     {
       "name": "mod-audit",
       "nameRepo": "mod-audit",
-      "releaseDate": "2022-02-23T15:04:05+00:00",
-      "releaseName": "v2.3.0",
-      "releaseSha": "b895de35b66abf1d11e7e921b454a1d7fdca487e",
-      "releaseTag": "v2.3.0",
+      "releaseDate": "2022-05-23T10:38:50+00:00",
+      "releaseName": "v2.4.0",
+      "releaseSha": "1790243973f7e76382e95de6ed299fa7fc445125",
+      "releaseTag": "v2.4.0",
       "releaseTarget": "master",
-      "version": "2.3.0"
+      "version": "2.4.0"
     },
     {
       "name": "mod-authtoken",
@@ -286,12 +286,12 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2022-05-02T18:37:34+00:00",
-      "releaseName": "",
-      "releaseSha": "d8acc5a131916b6455c2b6aa2b1f48374798154f",
-      "releaseTag": "v18.1.7",
+      "releaseDate": "2022-05-23T12:06:05+00:00",
+      "releaseName": "v18.1.8",
+      "releaseSha": "efd294f481f584f34f7f230e6cb05b9239b9e198",
+      "releaseTag": "v18.1.8",
       "releaseTarget": "master",
-      "version": "18.1.7"
+      "version": "18.1.8"
     },
     {
       "name": "mod-inventory-storage",
