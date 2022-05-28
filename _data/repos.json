@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-05-08T23:47:50.861444+00:00"
+    "generatedDateTime": "2022-05-24T02:15:35.884268+00:00"
   },
   "repos": [
     {
@@ -1735,7 +1735,7 @@
     {
       "defaultBranch": "master",
       "description": "Complete set of Stripes modules for FOLIO",
-      "docDirName": null,
+      "docDirName": "doc",
       "name": "platform-complete",
       "org": "folio-org",
       "repoLanguageHint": "other",
@@ -1772,7 +1772,7 @@
       "name": "platform-rs",
       "org": "openlibraryenvironment",
       "repoType": "platform",
-      "snippetIntro": "<p>This is the Resource Sharing Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes-core</code> and of any Stripes modules you wish to make available as part of the Resource Sharing platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>"
+      "snippetIntro": "<p>This is the Resource Sharing Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes</code> and of any Stripes modules you wish to make available as part of the Resource Sharing platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>"
     },
     {
       "defaultBranch": "main",
@@ -1882,6 +1882,16 @@
         "build-npm-release.yml",
         "build-npm.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": "A Number Generator UI Component",
+      "docDirName": null,
+      "name": "stripes-component-number-generator",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "stripes",
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
@@ -2921,6 +2931,16 @@
         "build-npm-release.yml",
         "build-npm.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "ui-service-interaction",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
