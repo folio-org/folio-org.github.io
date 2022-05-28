@@ -32,6 +32,7 @@ the [full-text queries](https://www.elastic.co/guide/en/elasticsearch/reference/
 | searchFields         | Contains a list of generated fields for the resource events (for example, It can be contain ISBN normalized values or generating subset of field values).                                                                                                                                       |
 | indexMappings        | Object with additional index mappings for resource (It can be helpful for `copy_to` functionality of Elasticsearch                                                                                                                                                                              |
 | mappingSource        | It's used to include or exclude some field from storing those values in `_source` object in Elasticsearch. Mainly, it's used to reduce the size per index. See also: [_source field](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-source-field.html#include-exclude) |
+| reindexSupported     | Indicates if the resource could be reindexed                                                                                                                                                                                                                                                    |
 
 #### Supported field description types
 
