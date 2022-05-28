@@ -27,13 +27,13 @@ The values are: `true` or `false` (or the old syntax `'yes'` or `'no'`).
 A typical Maven-based, server-side FOLIO module Jenkinsfile configuration might look like
 the following.
 See an example at
-[mod-notes/Jenkinsfile](https://github.com/folio-org/mod-notes/blob/master/Jenkinsfile)
+[mod-courses/Jenkinsfile](https://github.com/folio-org/mod-courses/blob/master/Jenkinsfile)
 
 ```
 buildMvn {
+  buildNode = 'jenkins-agent-java11'
   publishModDescriptor = true
   mvnDeploy = true
-  buildNode = 'jenkins-agent-java11'
 
   doApiLint = true
   doApiDoc = true
@@ -50,6 +50,9 @@ buildMvn {
 }
 ```
 
+* `buildNode` -- The Jenkins node to run the CI build.
+The default is `'jenkins-agent-java11'` if not specified.
+The other available option is `'jenkins-agent-java17'`.
 * `publishModDescriptor` -- Maven-based modules will generate the ModuleDescriptor.json file as
 [explained](/guides/commence-a-module/#back-end-descriptors).
 It will be published to the FOLIO Module Descriptor registry.
@@ -106,13 +109,14 @@ multi-call binary that contains `wget` with reduced number of options.
 ## Front-end modules
 
 A typical Stripes or UI module Jenkinsfile configuration might look like the following.
-See two examples at
-[ui-users/Jenkinsfile](https://github.com/folio-org/ui-users/blob/master/Jenkinsfile)
-and
-[stripes-components/Jenkinsfile](https://github.com/folio-org/stripes-components/blob/master/Jenkinsfile)
+See an example at
+[ui-courses/Jenkinsfile](https://github.com/folio-org/ui-courses/blob/master/Jenkinsfile).
+
+(**Note**: Front-end modules are gradually being migrated to use GitHub Actions Workflows. So for those, Jenkinsfile is not relevant.)
 
 ```
 buildNPM {
+  buildNode = 'jenkins-agent-java11'
   publishModDescriptor = true
   runLint = true
   runTest = true
@@ -121,6 +125,10 @@ buildNPM {
 }
 ```
 
+* `buildNode` -- The Jenkins node to run the CI build.
+The default is `'jenkins-agent-java11'` if not specified (this utlises Node.js v14).
+The other available option is `'jenkins-agent-java17'` (this utlises Node.js LTS v16).
+Of course the CI does not use Java for front-end modules, but that is the naming convention for the build nodes.
 * `publishModDescriptor` -- If a FOLIO Module Descriptor is defined in its [package.json](/guides/commence-a-module/#front-end-packagejson)
 then the ModuleDescriptor.json will be generated and published to the FOLIO Module Descriptor registry.
 (Default: false)
