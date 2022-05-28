@@ -14,7 +14,7 @@ Giraffe is a tool for creating visualizations of Okapi logs such as call graphs.
 
 Process a snippet of Okapi logfile. Highlight response times that meet a specified threshold.
 
-[https://github.com/folio-labs/giraffe](https://github.com/folio-labs/giraffe)
+[https://github.com/library-data-platform/giraffe](https://github.com/library-data-platform/giraffe)
 
 ## DB schema
 
