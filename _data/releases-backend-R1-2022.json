@@ -146,12 +146,12 @@
     {
       "name": "mod-data-export-worker",
       "nameRepo": "mod-data-export-worker",
-      "releaseDate": "2022-05-19T14:29:44+00:00",
-      "releaseName": "v1.3.4",
-      "releaseSha": "182602ec1e5d71bf85b0eea3c96f42030fdd24bd",
-      "releaseTag": "v1.3.4",
+      "releaseDate": "2022-05-30T06:34:18+00:00",
+      "releaseName": "v1.3.5",
+      "releaseSha": "cb9769515d2c014f8a6089fec8ad438ce185df97",
+      "releaseTag": "v1.3.5",
       "releaseTarget": "master",
-      "version": "1.3.4"
+      "version": "1.3.5"
     },
     {
       "name": "mod-data-import",
