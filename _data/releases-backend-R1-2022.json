@@ -286,12 +286,12 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2022-05-23T12:06:05+00:00",
-      "releaseName": "v18.1.8",
-      "releaseSha": "efd294f481f584f34f7f230e6cb05b9239b9e198",
-      "releaseTag": "v18.1.8",
+      "releaseDate": "2022-06-02T11:27:52+00:00",
+      "releaseName": "v18.1.9",
+      "releaseSha": "9dc285729338a59c33c227b4a4f9986afa701dea",
+      "releaseTag": "v18.1.9",
       "releaseTarget": "master",
-      "version": "18.1.8"
+      "version": "18.1.9"
     },
     {
       "name": "mod-inventory-storage",
@@ -416,12 +416,12 @@
     {
       "name": "mod-oai-pmh",
       "nameRepo": "mod-oai-pmh",
-      "releaseDate": "2022-03-24T07:17:28+00:00",
-      "releaseName": "v3.7.1",
-      "releaseSha": "256ff06f99153912348af06c399a1e16fd8f1653",
-      "releaseTag": "v3.7.1",
+      "releaseDate": "2022-05-30T15:07:39+00:00",
+      "releaseName": "v3.8.0",
+      "releaseSha": "6fccbdcaba00f0017844f4cf13ed8c67fa38af97",
+      "releaseTag": "v3.8.0",
       "releaseTarget": "master",
-      "version": "3.7.1"
+      "version": "3.8.0"
     },
     {
       "name": "mod-orders",
@@ -586,12 +586,12 @@
     {
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
-      "releaseDate": "2022-04-04T13:47:17+00:00",
-      "releaseName": "5.3.2",
-      "releaseSha": "950a1220d6e281e60f63534f9c98211ccb833e4c",
-      "releaseTag": "v5.3.2",
+      "releaseDate": "2022-06-02T10:56:21+00:00",
+      "releaseName": "5.3.3",
+      "releaseSha": "67bb70da6ea7756a7e20b34509abe9a1c035065b",
+      "releaseTag": "v5.3.3",
       "releaseTarget": "master",
-      "version": "5.3.2"
+      "version": "5.3.3"
     },
     {
       "name": "mod-tags",
