@@ -296,11 +296,11 @@
     {
       "name": "mod-inventory-storage",
       "nameRepo": "mod-inventory-storage",
-      "releaseDate": null,
-      "releaseName": null,
-      "releaseSha": null,
-      "releaseTag": null,
-      "releaseTarget": null,
+      "releaseDate": "2022-06-08T11:28:26+00:00",
+      "releaseName": "v23.0.5",
+      "releaseSha": "84b9be56c390830bcafb3a1fa030cf8c121c27a1",
+      "releaseTag": "v23.0.5",
+      "releaseTarget": "master",
       "version": "23.0.5"
     },
     {
