@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-05-24T02:15:35.884268+00:00"
+    "generatedDateTime": "2022-06-13T23:54:06.994417+00:00"
   },
   "repos": [
     {
@@ -197,17 +197,6 @@
     },
     {
       "defaultBranch": "master",
-      "description": "UUID resolver",
-      "docDirName": null,
-      "name": "edge-resolver",
-      "org": "folio-org",
-      "ramlDirName": null,
-      "repoLanguageHint": "java",
-      "repoType": "backend-edge",
-      "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between external reporting and analytics systems and FOLIO by allowing these systems to resolve FOLIO UUIDs, such as a FOLIO user id, thereby acquiring a richer set of data.</p>"
-    },
-    {
-      "defaultBranch": "master",
       "description": " Edge API for RTAC (RealTime Availability Check)",
       "docDirName": null,
       "name": "edge-rtac",
@@ -222,7 +211,6 @@
       "description": null,
       "docDirName": null,
       "hintOas": true,
-      "isSpringway": true,
       "name": "edge-search-srs",
       "org": "folio-org",
       "ramlDirName": null,
@@ -1694,16 +1682,6 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Okapi command-line interface",
-      "docDirName": null,
-      "name": "okapi-cli",
-      "org": "folio-org",
-      "repoLanguageHint": "java",
-      "repoType": "other",
-      "snippetIntro": "<p>Okapi command-line interface (yet another one)</p>"
-    },
-    {
-      "defaultBranch": "master",
       "description": "Repository that houses tools and performance testing scripts",
       "docDirName": null,
       "name": "perf-testing",
@@ -1782,6 +1760,16 @@
       "org": "caltechlibrary",
       "repoType": "other",
       "snippetIntro": "<p>The <a href='https://www.folio.org'>FOLIO</a> platform is a <a href='https://www.niso.org/sites/default/files/stories/2017-09/FE_Grant_Future_Library_Systems_%20isqv24no4.pdf'>library services platform</a>.  The Caltech Library uses a hosted solution by <a href='https://www.ebsco.com'>EBSCO</a> for its <a href='https://www.library.caltech.edu/libsearch'>library catalog</a>.   To make writing interfaces and automation scripts in Python easier, the Caltech Library <a href='https://www.library.caltech.edu/staff?&amp;field_directory_department%5B0%5D=754'>Digital Library Development team</a> are developing Pokapi (<em>Python Okapi Interface</em>), a Python package that provides an object-oriented interface to accessing FOLIO data via the <a href='https://github.com/folio-org/okapi/blob/master/doc/guide.md'>Okapi API</a>. It currently provides a simple object structure based mostly on FOLIO <em>instance</em> records.</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "psql-dump-helm",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "raml1.0",
