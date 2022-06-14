@@ -1133,8 +1133,8 @@
         "ramls/order-invoice-relns.raml",
         "ramls/order-templates.raml",
         "ramls/pieces.raml",
-        "ramls/po-line.raml",
         "ramls/po-line-number.raml",
+        "ramls/po-line.raml",
         "ramls/po-number.raml",
         "ramls/purchase-order.raml",
         "ramls/receiving-history.raml",
@@ -1143,7 +1143,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-orders-storage",
     "org": "folio-org"
   },
