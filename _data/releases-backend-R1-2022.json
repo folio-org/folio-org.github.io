@@ -56,12 +56,12 @@
     {
       "name": "mod-circulation-storage",
       "nameRepo": "mod-circulation-storage",
-      "releaseDate": "2022-02-22T18:39:07+00:00",
-      "releaseName": "v14.0.0",
-      "releaseSha": "9563d6e5cc8ac15e1e4529d2bf42e987138b1e8d",
-      "releaseTag": "v14.0.0",
+      "releaseDate": "2022-06-14T15:32:19+00:00",
+      "releaseName": "v14.0.1",
+      "releaseSha": "d182f9c6e3f7874f1cc9901e72d408112acb18aa",
+      "releaseTag": "v14.0.1",
       "releaseTarget": "master",
-      "version": "14.0.0"
+      "version": "14.0.1"
     },
     {
       "name": "mod-codex-ekb",
