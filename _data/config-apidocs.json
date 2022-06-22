@@ -287,6 +287,7 @@
     "config": {
       "oas": [],
       "raml": [
+        "ramls/actual-cost-record-storage.raml",
         "ramls/anonymize-storage-loans.raml",
         "ramls/cancellation-reason.raml",
         "ramls/check-in-storage.raml",
