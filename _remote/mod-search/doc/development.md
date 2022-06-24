@@ -256,3 +256,34 @@ assertThatThrownBy(() -> service.doExceptionalOperation())
 
 The module uses [Testcontainers](https://www.testcontainers.org/) to run Elasticsearch, Apache Kafka and PostgreSQL
 in embedded mode. It is required to have Docker installed and available on the host where the tests are executed.
+
+### Local environment testing
+Run `docker-compose up` in a project root folder.
+This will build local mod-search image and bring it up along with all necessary infrastructure:
+ - elasticsearch along with dashboards (kibana analogue from opensearch)
+ - kafka along with zookeeper
+ - postgres
+ - wiremock server for mocking external api calls (for example authorization)
+ - 
+Also you should invoke
+```shell
+curl --location --request POST 'http://localhost:8081/_/tenant' \
+--header 'Content-Type: application/json' \
+--header 'x-okapi-tenant: test' \
+--header 'x-okapi-url: http://api-mock:8080' \
+--data-raw '{
+  "purge": "false"
+}
+```
+to post some tenant in order to bring up kafka listeners and get indices created.
+
+To rebuild mod-search image you should:
+ - bring down existing containers by running `docker-compose down`
+ - run `docker-compose build mod-search` to build new mod-search image
+ - run `docker-compose up` to bring up infrastructure
+
+Hosts/ports of containers to access functionality:
+ - `http://localhost:5601/` - dashboards UI for elastic monitoring, data modification through dev console
+ - `localhost` - host, `5010` - port for remote JVM debug
+ - `http://localhost:8081` - for calling mod-search REST api. Note that header `x-okapi-url: http://api-mock:8080` should be added to request for apis that take okapi url from headers
+ - `localhost:29092` - for kafka interaction. If you are sending messages to kafka from java application with `spring-kafka` then this host shoulb be added to `spring.kafka.bootstrap-servers` property of `application.yml`

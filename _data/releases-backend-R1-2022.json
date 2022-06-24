@@ -376,12 +376,12 @@
     {
       "name": "mod-login-saml",
       "nameRepo": "mod-login-saml",
-      "releaseDate": "2022-05-02T08:31:42+00:00",
+      "releaseDate": "2022-06-17T15:17:26+00:00",
       "releaseName": "",
-      "releaseSha": "cdd1feab8b9144617096985c74d1ba70b45084fe",
-      "releaseTag": "v2.4.5",
+      "releaseSha": "bc6f646aa181518276ac06e4716a94850ff6d3a1",
+      "releaseTag": "v2.4.6",
       "releaseTarget": "master",
-      "version": "2.4.5"
+      "version": "2.4.6"
     },
     {
       "name": "mod-ncip",
@@ -396,12 +396,12 @@
     {
       "name": "mod-notes",
       "nameRepo": "mod-notes",
-      "releaseDate": "2022-05-19T12:52:59+00:00",
-      "releaseName": "v3.0.3",
-      "releaseSha": "bf5db5a9c3a858fdbd7ad91becadab1b1d7222c7",
-      "releaseTag": "v3.0.3",
+      "releaseDate": "2022-06-21T13:44:58+00:00",
+      "releaseName": "v3.0.4",
+      "releaseSha": "4b56555e2ae05cec9cb9b2ddddf5784db4051977",
+      "releaseTag": "v3.0.4",
       "releaseTarget": "master",
-      "version": "3.0.3"
+      "version": "3.0.4"
     },
     {
       "name": "mod-notify",
