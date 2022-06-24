@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-06-13T23:54:06.994417+00:00"
+    "generatedDateTime": "2022-06-24T01:13:23.017602+00:00"
   },
   "repos": [
     {
@@ -47,7 +47,7 @@
       "snippetIntro": "<p>Utilities for DataImport modules.</p>"
     },
     {
-      "defaultBranch": "master",
+      "defaultBranch": "main",
       "description": "FOLIO Documentation",
       "docDirName": null,
       "name": "docs",
@@ -2314,7 +2314,15 @@
       "name": "ui-directory",
       "org": "openlibraryenvironment",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-directory and start your development.</p>"
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-directory and start your development.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2393,6 +2401,24 @@
       "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for the selection of metadata sources and collections for the finc user community.</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Stripes UI module: managing GOBI settings",
+      "docDirName": null,
+      "name": "ui-gobi-settings",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "<p>The ui-gobi-settings repo is used for the management of GOBI integration settings in FOLIO.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2873,7 +2899,15 @@
       "name": "ui-request",
       "org": "openlibraryenvironment",
       "repoType": "ui",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2900,7 +2934,15 @@
       "name": "ui-rs",
       "org": "openlibraryenvironment",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module! Follow the instructions below to run ui-rs and start your development.</p>"
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module! Follow the instructions below to run ui-rs and start your development.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2955,7 +2997,15 @@
       "name": "ui-supply",
       "org": "openlibraryenvironment",
       "repoType": "ui",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -3010,7 +3060,15 @@
       "name": "ui-update",
       "org": "openlibraryenvironment",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-scan and start your development.</p>"
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-scan and start your development.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
