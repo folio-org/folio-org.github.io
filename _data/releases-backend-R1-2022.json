@@ -46,32 +46,32 @@
     {
       "name": "mod-circulation",
       "nameRepo": "mod-circulation",
-      "releaseDate": "2022-05-30T14:32:12+00:00",
-      "releaseName": "",
-      "releaseSha": "ce131a07caf772e6c384eceba5d9e2979d448554",
-      "releaseTag": "v23.0.9",
+      "releaseDate": "2022-06-27T16:21:07+00:00",
+      "releaseName": "v23.0.10",
+      "releaseSha": "844f06b716c9e77e51c59c0d06d9ab88336e8a97",
+      "releaseTag": "v23.0.10",
       "releaseTarget": "master",
-      "version": "23.0.9"
+      "version": "23.0.10"
     },
     {
       "name": "mod-circulation-storage",
       "nameRepo": "mod-circulation-storage",
-      "releaseDate": "2022-06-14T15:32:19+00:00",
-      "releaseName": "v14.0.1",
-      "releaseSha": "d182f9c6e3f7874f1cc9901e72d408112acb18aa",
-      "releaseTag": "v14.0.1",
+      "releaseDate": "2022-06-27T11:19:57+00:00",
+      "releaseName": "v14.0.2",
+      "releaseSha": "d35e3a36e864ed1ee51d9efd1decb5ebd56b22d3",
+      "releaseTag": "v14.0.2",
       "releaseTarget": "master",
-      "version": "14.0.1"
+      "version": "14.0.2"
     },
     {
       "name": "mod-codex-ekb",
       "nameRepo": "mod-codex-ekb",
-      "releaseDate": "2021-12-16T12:20:05+00:00",
-      "releaseName": "v1.9.1",
-      "releaseSha": "87ff2ae49c7a58fcda2ee61127e786f459c41a8b",
-      "releaseTag": "v1.9.1",
-      "releaseTarget": "master",
-      "version": "1.9.1"
+      "releaseDate": null,
+      "releaseName": null,
+      "releaseSha": null,
+      "releaseTag": null,
+      "releaseTarget": null,
+      "version": "1.9.2"
     },
     {
       "name": "mod-codex-inventory",
@@ -86,12 +86,12 @@
     {
       "name": "mod-codex-mux",
       "nameRepo": "mod-codex-mux",
-      "releaseDate": "2021-12-16T12:29:58+00:00",
-      "releaseName": "v2.11.1",
-      "releaseSha": "71289a032365b7db367fc56c4994833ca256f3a4",
-      "releaseTag": "v2.11.1",
-      "releaseTarget": "master",
-      "version": "2.11.1"
+      "releaseDate": null,
+      "releaseName": null,
+      "releaseSha": null,
+      "releaseTag": null,
+      "releaseTarget": null,
+      "version": "2.11.2"
     },
     {
       "name": "mod-configuration",
