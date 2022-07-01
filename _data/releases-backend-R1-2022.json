@@ -66,11 +66,11 @@
     {
       "name": "mod-codex-ekb",
       "nameRepo": "mod-codex-ekb",
-      "releaseDate": null,
-      "releaseName": null,
-      "releaseSha": null,
-      "releaseTag": null,
-      "releaseTarget": null,
+      "releaseDate": "2022-06-30T21:06:52+00:00",
+      "releaseName": "",
+      "releaseSha": "46212b45d25aba1297f85c1434fb03121e4eb290",
+      "releaseTag": "v1.9.2",
+      "releaseTarget": "master",
       "version": "1.9.2"
     },
     {
@@ -86,11 +86,11 @@
     {
       "name": "mod-codex-mux",
       "nameRepo": "mod-codex-mux",
-      "releaseDate": null,
-      "releaseName": null,
-      "releaseSha": null,
-      "releaseTag": null,
-      "releaseTarget": null,
+      "releaseDate": "2022-06-30T21:11:57+00:00",
+      "releaseName": "",
+      "releaseSha": "570e3f8c8fb3bafd2cbbfc54a98cfd0e9cb15cd2",
+      "releaseTag": "v2.11.2",
+      "releaseTarget": "master",
       "version": "2.11.2"
     },
     {
