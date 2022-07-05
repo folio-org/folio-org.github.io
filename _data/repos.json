@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-06-24T01:13:23.017602+00:00"
+    "generatedDateTime": "2022-07-04T04:15:39.411709+00:00"
   },
   "repos": [
     {
@@ -830,7 +830,7 @@
       "snippetIntro": ""
     },
     {
-      "defaultBranch": "master",
+      "defaultBranch": "main",
       "description": "Okapi module providing directory and locator services",
       "docDirName": "doc",
       "name": "mod-directory",

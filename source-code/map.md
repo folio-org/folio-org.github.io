@@ -122,7 +122,7 @@ See [usage notes](#usage-notes) below.
     {%- capture urlRepo -%}{{ urlGithub }}/{{ repo.org }}/{{ repoName }}{%- endcapture -%}
     <p> GitHub README: <a href="{{ urlRepo }}">{{ urlRepo }}</a> </p>
     {%- if repo.docDirName -%}
-      {%- capture urlGhDocs -%}{{ urlGithub }}/{{ repo.org }}/{{ repoName }}/tree/master/{{ repo.docDirName }}{%- endcapture -%}
+      {%- capture urlGhDocs -%}{{ urlGithub }}/{{ repo.org }}/{{ repoName }}/tree/{{ repo.defaultBranch }}/{{ repo.docDirName }}{%- endcapture -%}
       <p> GitHub other documentation: <a href="{{ urlGhDocs }}">{{ urlGhDocs }}</a> </p>
     {%- endif -%}
     {%- if metadata -%}
@@ -149,7 +149,7 @@ See [usage notes](#usage-notes) below.
       <p> GitHub DB schema: <a href="{{ urlDbSchema }}">{{ urlDbSchema }}</a> </p>
     {%- endif -%}
     {%- if repo.ramlDirName -%}
-      {%- capture urlGhRaml -%}{{ urlGithub }}/{{ repo.org }}/{{ repoName }}/tree/master/{{ repo.ramlDirName }}{%- endcapture -%}
+      {%- capture urlGhRaml -%}{{ urlGithub }}/{{ repo.org }}/{{ repoName }}/tree/{{ repo.defaultBranch }}/{{ repo.ramlDirName }}{%- endcapture -%}
       <p> GitHub RAMLs directory: <a href="{{ urlGhRaml }}">{{ urlGhRaml }}</a> </p>
       {%- capture urlApi -%}{{ urlApiBase }}/#{{ repoName }}{%- endcapture -%}
       {%- capture urlApiLocal -%}{{ urlApiBaseLocal }}/#{{ repoName }}{%- endcapture -%}
