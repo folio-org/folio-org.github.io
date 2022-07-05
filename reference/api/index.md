@@ -52,6 +52,8 @@ This list of modules is sorted into functional groups.
     {% for repo in site.data.config-apidocs %}
       {% if repo.name == module %}
         {% assign theRepo = repo %}
+        {%- assign repoData = site.data.repos.repos | find: "name", theRepo.name -%}
+        {%- assign defaultBranch = repoData.defaultBranch -%}
         {%- capture hasTypeRaml -%}
           {% for apiType in theRepo.metadata.apiTypes %}{% if apiType == "RAML" %}true{% endif %}{% endfor %}
         {%- endcapture -%}
@@ -104,7 +106,7 @@ This list of modules is sorted into functional groups.
   </thead>
   <tbody>
     {%- for file in theRepo.config.raml -%}
-      {% capture urlSource %}{{ urlGithub }}/{{ theRepo.org }}/{{ theRepo.name }}/blob/master/{{ file }}{% endcapture %}
+      {% capture urlSource %}{{ urlGithub }}/{{ theRepo.org }}/{{ theRepo.name }}/blob/{{ defaultBranch }}/{{ file }}{% endcapture %}
       {% capture fileName %}{{ file | split: "/" | last | replace_first: ".raml", "" }}{% endcapture %}
       {% capture rowId %}{{ theRepo.name }}-{{ fileName }}{% endcapture %}
       {% capture subdir %}{% if hasTypeRaml == "true" %}r/{% endif %}{% endcapture %}
@@ -131,7 +133,7 @@ This list of modules is sorted into functional groups.
     </tr>
     {%- endfor -%}
     {%- for file in theRepo.config.oas -%}
-      {% capture urlSource %}{{ urlGithub }}/{{ theRepo.org }}/{{ theRepo.name }}/blob/master/{{ file }}{% endcapture %}
+      {% capture urlSource %}{{ urlGithub }}/{{ theRepo.org }}/{{ theRepo.name }}/blob/{{ defaultBranch }}/{{ file }}{% endcapture %}
       {% capture fileName %}{{ file | split: "/" | last | replace_first: ".yaml", "" | replace_first: ".yml", "" }}{% endcapture %}
       {% capture rowId %}{{ theRepo.name }}-{{ fileName }}{% endcapture %}
       {% capture urlDocU %}{{ urlAws }}/{{ theRepo.name }}/s/{{ fileName }}.html{% endcapture %}
