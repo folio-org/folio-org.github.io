@@ -346,12 +346,12 @@
     {
       "name": "mod-ldp",
       "nameRepo": "mod-ldp",
-      "releaseDate": "2022-03-03T21:58:37+00:00",
-      "releaseName": "v1.0.2",
-      "releaseSha": "05b89e8265d5c6991ecc179cb5220ef882a2c550",
-      "releaseTag": "v1.0.2",
+      "releaseDate": "2022-07-05T21:35:02+00:00",
+      "releaseName": "v1.0.4",
+      "releaseSha": "93dd5aabe91782a5ee5d5f862845e0fa58fb6d65",
+      "releaseTag": "v1.0.4",
       "releaseTarget": "master",
-      "version": "1.0.2"
+      "version": "1.0.4"
     },
     {
       "name": "mod-licenses",
@@ -376,12 +376,12 @@
     {
       "name": "mod-login-saml",
       "nameRepo": "mod-login-saml",
-      "releaseDate": "2022-06-17T15:17:26+00:00",
+      "releaseDate": "2022-07-04T12:25:02+00:00",
       "releaseName": "",
-      "releaseSha": "bc6f646aa181518276ac06e4716a94850ff6d3a1",
-      "releaseTag": "v2.4.6",
+      "releaseSha": "fe646a1aa9a00a04ee5e1a8a2e0ba56919d85f7c",
+      "releaseTag": "v2.4.8",
       "releaseTarget": "master",
-      "version": "2.4.6"
+      "version": "2.4.8"
     },
     {
       "name": "mod-ncip",
@@ -426,12 +426,12 @@
     {
       "name": "mod-orders",
       "nameRepo": "mod-orders",
-      "releaseDate": "2022-06-01T16:21:01+00:00",
-      "releaseName": "v12.3.3",
-      "releaseSha": "50dbb19ef404e9721e381c51f8774f69ba53ff00",
-      "releaseTag": "v12.3.3",
+      "releaseDate": "2022-07-05T13:00:48+00:00",
+      "releaseName": "v12.3.5",
+      "releaseSha": "c468b62bb396b58ba1eb4ed27e22b940da9c0d03",
+      "releaseTag": "v12.3.5",
       "releaseTarget": "master",
-      "version": "12.3.3"
+      "version": "12.3.5"
     },
     {
       "name": "mod-orders-storage",
