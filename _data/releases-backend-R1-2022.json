@@ -256,12 +256,12 @@
     {
       "name": "mod-finance-storage",
       "nameRepo": "mod-finance-storage",
-      "releaseDate": "2022-05-18T14:46:46+00:00",
-      "releaseName": "v8.1.4",
-      "releaseSha": "211c022f6160c2b97e910ab2fbae786d8b9fefc7",
-      "releaseTag": "v8.1.4",
+      "releaseDate": "2022-07-06T14:52:04+00:00",
+      "releaseName": "v8.1.5",
+      "releaseSha": "9a45cadd40da43820b0181e1065c1f6e55593dd6",
+      "releaseTag": "v8.1.5",
       "releaseTarget": "master",
-      "version": "8.1.4"
+      "version": "8.1.5"
     },
     {
       "name": "mod-gobi",
@@ -346,12 +346,12 @@
     {
       "name": "mod-ldp",
       "nameRepo": "mod-ldp",
-      "releaseDate": "2022-07-05T21:35:02+00:00",
-      "releaseName": "v1.0.4",
-      "releaseSha": "93dd5aabe91782a5ee5d5f862845e0fa58fb6d65",
-      "releaseTag": "v1.0.4",
+      "releaseDate": "2022-07-06T15:32:14+00:00",
+      "releaseName": "v1.0.5",
+      "releaseSha": "4d887496340f08dc8e7f04cb105989d295eb918d",
+      "releaseTag": "v1.0.5",
       "releaseTarget": "master",
-      "version": "1.0.4"
+      "version": "1.0.5"
     },
     {
       "name": "mod-licenses",
