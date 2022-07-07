@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-07-04T04:15:39.411709+00:00"
+    "generatedDateTime": "2022-07-06T23:42:18.857464+00:00"
   },
   "repos": [
     {
@@ -72,7 +72,6 @@
       "description": "Bridge the gap between CaiaSoft remote storage provider and FOLIO",
       "docDirName": null,
       "hintOas": true,
-      "isSpringway": true,
       "name": "edge-caiasoft",
       "org": "folio-org",
       "ramlDirName": null,
@@ -1851,7 +1850,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>"
+      "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1943,7 +1950,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>"
+      "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2027,7 +2042,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": "<p>This is a NPM module to aid with embedding the Quill editor in <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> applications for building templates with token substitution.</p>"
+      "snippetIntro": "<p>This is a NPM module to aid with embedding the Quill editor in <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> applications for building templates with token substitution.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2073,7 +2096,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": "<p>Stripes Vendor Dll is a tool which can be used to create a <a href='https://webpack.js.org/plugins/dll-plugin/'>DLL bundle</a>. The bundle currently includes all 3rd party dependencies (react, moment, etc) found in <a href='https://github.com/folio-org/stripes/blob/master/package.json'>stripes</a> plus couple additional stripes dependencies (stripes-components, stripes-connect,stripes-logger,stripes-util).</p>"
+      "snippetIntro": "<p>Stripes Vendor Dll is a tool which can be used to create a <a href='https://webpack.js.org/plugins/dll-plugin/'>DLL bundle</a>. The bundle currently includes all 3rd party dependencies (react, moment, etc) found in <a href='https://github.com/folio-org/stripes/blob/master/package.json'>stripes</a> plus couple additional stripes dependencies (stripes-components, stripes-connect,stripes-logger,stripes-util).</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2111,7 +2142,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>The ui-acquisition-units repo is used for the management of Acquisition unit records in FOLIO. It includes summary information and details regarding the Acquisition unit interaction and preferences.</p>"
+      "snippetIntro": "<p>The ui-acquisition-units repo is used for the management of Acquisition unit records in FOLIO. It includes summary information and details regarding the Acquisition unit interaction and preferences.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2121,7 +2160,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>The Agreements UI Module, or <code>ui-agreements</code>, is a Stripes UI module used for management of various E-resource tasks including handling agreements and viewing available E-resources.</p>"
+      "snippetIntro": "<p>The Agreements UI Module, or <code>ui-agreements</code>, is a Stripes UI module used for management of various E-resource tasks including handling agreements and viewing available E-resources.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2237,7 +2284,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-circulation-log and start your development.</p>"
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-circulation-log and start your development.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2247,7 +2302,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>The Course Reserves UI Module, or <code>ui-courses</code>, is a Stripes UI module used for maintaining information about courses, and associated course reserves with them. (A 'Stripes UI module' is an NPM module that adheres to certain conventions that allow it to function within the <a href='https://github.com/folio-org/stripes/blob/master/README.md'>Stripes UI framework</a> that is part of FOLIO.)</p>"
+      "snippetIntro": "<p>The Course Reserves UI Module, or <code>ui-courses</code>, is a Stripes UI module used for maintaining information about courses, and associated course reserves with them. (A 'Stripes UI module' is an NPM module that adheres to certain conventions that allow it to function within the <a href='https://github.com/folio-org/stripes/blob/master/README.md'>Stripes UI framework</a> that is part of FOLIO.)</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2257,7 +2320,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2360,7 +2431,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>The ERM-Usage UI Module, or <code>ui-erm-usage</code>, is a Stripes UI module for managing usage statistics. It allows to enter credentials for accessing usage data providers. These credentials are used by the backend module <a href='https://github.com/folio-org/mod-erm-usage'>mod-erm-usage</a> to harvest usage statistics periodically.</p>"
+      "snippetIntro": "<p>The ERM-Usage UI Module, or <code>ui-erm-usage</code>, is a Stripes UI module for managing usage statistics. It allows to enter credentials for accessing usage data providers. These credentials are used by the backend module <a href='https://github.com/folio-org/mod-erm-usage'>mod-erm-usage</a> to harvest usage statistics periodically.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2370,7 +2449,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2390,7 +2477,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for administrating metadata sources and collections for the finc user community.</p>"
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for administrating metadata sources and collections for the finc user community.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2428,7 +2523,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-handler",
-      "snippetIntro": "<p>Frontend registry for Stripes</p>"
+      "snippetIntro": "<p>Frontend registry for Stripes</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2438,7 +2541,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-idm-connect and start your development.</p>"
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-idm-connect and start your development.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2448,7 +2559,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-inn-reach and start your development.</p>"
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-inn-reach and start your development.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2476,7 +2595,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module which is the cope of ui-invetoru for the ElasticSearch POC.</p>"
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module which is the cope of ui-invetoru for the ElasticSearch POC.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2491,7 +2618,7 @@
     {
       "defaultBranch": "master",
       "description": "LDP query builder UI for FOLIO/ReShare",
-      "docDirName": null,
+      "docDirName": "doc",
       "name": "ui-ldp",
       "org": "folio-org",
       "repoLanguageHint": "node",
@@ -2526,7 +2653,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a Folio Stripes settings module that provides a front-end for configuring various things for the <a href='https://github.com/doytch/edge-lti-courses'>edge-lti-courses Edge module</a> that uses the <a href='https://www.imsglobal.org/spec/lti/v1p3/'>LTI 1.3 standard</a> to connect Learning Management Systems (LMSs) such as Sakai, Canvas, or Blackboard to Folio's Course Reserves app.</p>"
+      "snippetIntro": "<p>This is a Folio Stripes settings module that provides a front-end for configuring various things for the <a href='https://github.com/doytch/edge-lti-courses'>edge-lti-courses Edge module</a> that uses the <a href='https://www.imsglobal.org/spec/lti/v1p3/'>LTI 1.3 standard</a> to connect Learning Management Systems (LMSs) such as Sakai, Canvas, or Blackboard to Folio's Course Reserves app.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2590,7 +2725,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>UX module for Open Access Management</p>"
+      "snippetIntro": "<p>UX module for Open Access Management</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2620,7 +2763,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>The ui-organizations allows for the management of Organization records in FOLIO. It includes summary information, contact information and other details regarding the organization interaction and preferences.</p>"
+      "snippetIntro": "<p>The ui-organizations allows for the management of Organization records in FOLIO. It includes summary information, contact information and other details regarding the organization interaction and preferences.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2970,7 +3121,7 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": ""
+      "snippetIntro": "<p>FOLIO UI Module for service-interaction</p>"
     },
     {
       "defaultBranch": "master",
