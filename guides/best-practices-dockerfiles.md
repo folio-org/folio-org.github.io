@@ -46,7 +46,7 @@ with all projects.  Test your Docker image to ensure your module functions corre
 
 * Run `apk upgrade` (or `apt-get upgrade`) in the Dockerfile.  This fixes known
 vulnerabilities and is needed because base images don't get upgraded when a fix for
-a dependencies is available.
+a dependency is available.
 [Security Updates in Docker](https://pythonspeed.com/articles/security-updates-in-docker/)
 explains why the recommendation was different a few years ago.
 
