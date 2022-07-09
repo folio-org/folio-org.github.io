@@ -95,7 +95,7 @@ The related [Securing Okapi](https://github.com/folio-org/okapi/blob/master/doc/
 
 [RAML Module Builder (RMB) framework](https://github.com/folio-org/raml-module-builder).
 
-[FOLIO Spring Base library](https://github.com/folio-org/raml-module-builder).
+[FOLIO Spring Base library](https://github.com/folio-org/folio-spring-base).
 
 [mod-notes](https://github.com/folio-org/mod-notes) is
 used in various documentation as a back-end exemplar.
