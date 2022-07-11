@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-07-06T23:42:18.857464+00:00"
+    "generatedDateTime": "2022-07-11T00:07:59.396861+00:00"
   },
   "repos": [
     {
@@ -1562,7 +1562,7 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "<p>This is the blueprint module that should be used as a template for FOLIO Spring-based backend modules. It provides the initial configuration and common data schemas used by the FOLIO platform.</p>"
     },
     {
       "defaultBranch": "master",
@@ -2202,7 +2202,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-bulk-edit and start your development.</p>"
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-bulk-edit and start your development.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2743,7 +2751,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for OAI-PMH management.</p>"
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for OAI-PMH management.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2781,7 +2797,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>bursar-export</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='bursar-export'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>bursar-export</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='bursar-export'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2809,7 +2833,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>eusage-reports</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='eusage-reports'&gt;</code> element. See <a href='https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>eusage-reports</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='eusage-reports'&gt;</code> element. See <a href='https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2829,7 +2861,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-agreement</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-agreement'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-agreement</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-agreement'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2839,7 +2879,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-contact</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-contact'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-contact</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-contact'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2859,7 +2907,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-erm-usage-data-provider</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-erm-usage-data-provider'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-erm-usage-data-provider</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-erm-usage-data-provider'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2869,7 +2925,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-plugin-find-finc-metadata-collection and start your development.</p>"
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-plugin-find-finc-metadata-collection and start your development.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2879,7 +2943,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-plugin-find-finc-metadata-source and start your development.</p>"
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-plugin-find-finc-metadata-source and start your development.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2889,7 +2961,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-fund</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-fund'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-fund</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-fund'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2899,7 +2979,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-import-profile</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-import-profile'&gt;</code> element.  See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-import-profile</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-import-profile'&gt;</code> element.  See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2927,7 +3015,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-interface</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-interface'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-interface</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-interface'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
