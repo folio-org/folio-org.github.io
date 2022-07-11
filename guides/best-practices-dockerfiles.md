@@ -44,6 +44,12 @@ Examples include the following:
   Alpine is ideal because of its small footprint. However, it may not be compatible
 with all projects.  Test your Docker image to ensure your module functions correctly.
 
+* Run `apk upgrade` (or `apt-get upgrade`) in the Dockerfile.  This fixes known
+vulnerabilities and is needed because base images don't get upgraded when a fix for
+a dependency is available.
+[Security Updates in Docker](https://pythonspeed.com/articles/security-updates-in-docker/)
+explains why the recommendation was different a few years ago.
+
 * Utilize the "one process per container" rule whenever possible and run the
 process as PID 1 to ensure that the process responds properly to a SIGTERM sent by
 'docker stop'.  Using the exec form of the CMD or ENTRYPOINT instruction will
