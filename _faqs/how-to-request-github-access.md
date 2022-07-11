@@ -9,7 +9,7 @@ faqOrder: 2
 
 ## GitHub new developer
 
-For new developers, we ask that a project manager (see [Team vs module responsibility matrix](https://wiki.folio.org/display/REL/Team+vs+module+responsibility+matrix)) or at least a known existing developer, makes this request.
+For new developers (i.e. not yet a [member](https://github.com/orgs/folio-org/people) of "folio-org" organization) we ask that a project manager (see [Team vs module responsibility matrix](https://wiki.folio.org/display/REL/Team+vs+module+responsibility+matrix)) or at least a known existing developer, makes this request.
 
 They need to either request on the #devops Slack channel, or [raise a FOLIO DevOps Jira ticket](/faqs/how-to-raise-devops-ticket/#general-folio-devops) (especially with a group of new people, e.g. [FOLIO-2880](https://issues.folio.org/browse/FOLIO-2880).)
 
@@ -22,9 +22,16 @@ The new developer will need to follow the email and accept the invitation.
 
 ## GitHub team access
 
-Note that we try to steer clear of managing GitHub access for individuals.
-Instead allocate access for a whole [Team](https://github.com/orgs/folio-org/teams) to a repository.
+Note that we try to steer clear of managing GitHub access for individuals,
+and instead allocate access for a whole GitHub [Team](https://github.com/orgs/folio-org/teams) to a repository.
 
 Please clearly specify which team and which repository. It is more efficient for DevOps when you provide links to the team and repos.
+
+## Manage members for teams
+
+The GitHub [Teams](https://github.com/orgs/folio-org/teams) each have a member who has the "Maintainer" role for that team.
+They can add or remove existing members.
+
+If a team member leaves the FOLIO organization and will not further participate, then please contact DevOps as explained above, to remove their access.
 
 <div class="folio-spacer-content"></div>
