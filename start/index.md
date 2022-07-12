@@ -44,6 +44,7 @@ The testing framework is explained. Guidelines for module developers.
 
 * [Back-end](primer-develop-backend/) (server-side) modules.
 * [Front-end](primer-develop-frontend/) (client-side) modules.
+* [OpenAPI and JSON Schema](primer-oas/).
 * [RAML and JSON Schema](primer-raml/).
 * [System administration](primer-sys-admin/) and deployment.
 

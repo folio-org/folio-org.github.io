@@ -112,9 +112,11 @@ See the [Primer for RAML and JSON Schema](/start/primer-raml/).
 
 #### OpenAPI (OAS) {#back-end-oas}
 
-The relevant `openapi` directory holds the API description OAS and Schema and examples files specific to this module.
+The relevant `openapi` directory (e.g. "`src/main/resources/openapi`" or "`src/main/resources/swagger.api`" etc.) holds the API description OAS and Schema and examples files specific to this module.
 
 Configure the CI jobs `doApiLint` and `doApiDoc` as explained above.
+
+See the [Primer for OpenAPI (OAS) and JSON Schema](/start/primer-oas/).
 
 #### API schema {#back-end-api-schema}
 

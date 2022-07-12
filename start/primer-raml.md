@@ -5,10 +5,12 @@ permalink: /start/primer-raml/
 menuInclude: yes
 menuTopTitle: Start
 menuSubTitle: Primer RAML/Schema
-menuSubIndex: 5
+menuSubIndex: 6
 ---
 
 As explained in the [Primer for back-end development](/start/primer-develop-backend/) the _RAML Module Builder (RMB)_ framework can be utilised to ease development. One of its abilities is to generate Java classes from the RAML and Schema.
+
+FOLIO uses [RAML](/reference/glossary/#raml) version 1.0
 
 RAML and schema files are also utilised in other ways,
 for example the Okapi [Web service](https://github.com/folio-org/okapi/blob/master/doc/guide.md#web-service) and [Tenant interface](https://github.com/folio-org/okapi/blob/master/doc/guide.md#tenant-interface), the [mod-graphql](https://github.com/folio-org/mod-graphql/tree/master/src/autogen),
@@ -29,9 +31,12 @@ For RAML-0.8 and RMB prior to v20, there must be at least two endpoints, and all
 
 Use "[api-lint](/guides/api-lint/)" to assess API descriptions, schema, and examples.
 A script is provided, to find files and run it.
-That script is also utilised by the continuous-integration.
+That script can be run locally, and is also utilised by the continuous-integration.
 
 [Describe schema and properties](/guides/describe-schema/).
+
+Use "[api-doc](/guides/api-doc/)" to generate documentation from the API descriptions, schema, and examples.
+That script can be run locally, and is also utilised by the continuous-integration to build the [FOLIO API documentation](/reference/api/).
 
 Investigate the other RAML-using [server-side](/source-code/#server-side) modules.
 
