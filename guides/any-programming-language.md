@@ -18,11 +18,11 @@ to provide consistency in FOLIO and to minimize the use of alternative tech stac
 
 The [back-end](/source-code/#server-side) modules can utilize any language.
 
-Frameworks abstract much functionality and enable the developer to focus on implementing business functions. Define the APIs and objects in RAML or OpenAPI files and schema files, then the framework generates code and provides tools to help implement the module. Frameworks currently in use:
+Frameworks and libraries abstract much functionality and enable the developer to focus on implementing business functions. Define the APIs and objects in RAML or OpenAPI files and schema files, then the framework generates code and provides tools to help implement the module. Frameworks and libraries currently in use:
 
 * [raml-module-builder](https://github.com/folio-org/raml-module-builder) (RMB) for RAML files and Vert.x
 * [folio-vertx-lib](https://github.com/folio-org/folio-vertx-lib) for OpenAPI files and Vert.x
-* [Spring Way](https://docs.google.com/presentation/d/1YgDCBimLTQ1ou-fPhvyKbWpVkec3Goa8lyJJe2hcLHk/edit) for OpenAPI files and Spring based Java
+* [Spring Way](https://docs.google.com/presentation/d/1YgDCBimLTQ1ou-fPhvyKbWpVkec3Goa8lyJJe2hcLHk/edit) and [folio-spring-base](https://github.com/folio-org/folio-spring-base) for OpenAPI files and Spring based Java
 
 Key requirements for server-side modules:
 
