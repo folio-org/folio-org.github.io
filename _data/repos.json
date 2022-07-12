@@ -489,7 +489,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "FOLIO modules library utility",
+      "description": "Lightweight FOLIO module development library for Vert.x that supports OpenAPI",
       "docDirName": null,
       "hintOas": true,
       "name": "folio-vertx-lib",
