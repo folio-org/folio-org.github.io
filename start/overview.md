@@ -97,6 +97,8 @@ The related [Securing Okapi](https://github.com/folio-org/okapi/blob/master/doc/
 
 [FOLIO Spring Base library](https://github.com/folio-org/folio-spring-base).
 
+[FOLIO Vert.x library](https://github.com/folio-org/folio-vertx-lib).
+
 [mod-notes](https://github.com/folio-org/mod-notes) is
 used in various documentation as a back-end exemplar.
 Also its run.sh script to run a basic local system.

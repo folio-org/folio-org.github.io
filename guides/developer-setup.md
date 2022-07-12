@@ -136,7 +136,7 @@ So when an upgrade is needed to be committed, do this:
 
 ```
 cd ramls/raml-util
-git checkout master
+git checkout raml1.0
 git pull
 cd ../..
 git add ramls/raml-util

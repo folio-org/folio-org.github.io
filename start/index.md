@@ -27,6 +27,7 @@ Bearing in mind that [FOLIO uses any programming language](/guides/any-programmi
 - [Modularity in FOLIO: Principles, Techniques and Tools](https://doi.org/10.23974/ijol.2021.vol6.2.208).
 - [FOLIO-Sample-Modules guide](https://github.com/folio-org/folio-sample-modules/blob/master/README.md).
 - [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework.
+- [FOLIO Vert.x library](https://github.com/folio-org/folio-vertx-lib).
 - [FOLIO Spring Base library](https://github.com/folio-org/folio-spring-base).
 - Each [server-side](/source-code/#server-side) and [client-side](/source-code/#client-side)
 module's own documentation.
@@ -43,6 +44,7 @@ The testing framework is explained. Guidelines for module developers.
 
 * [Back-end](primer-develop-backend/) (server-side) modules.
 * [Front-end](primer-develop-frontend/) (client-side) modules.
+* [OpenAPI and JSON Schema](primer-oas/).
 * [RAML and JSON Schema](primer-raml/).
 * [System administration](primer-sys-admin/) and deployment.
 
