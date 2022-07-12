@@ -475,6 +475,8 @@ applications on the JVM. Vert.x is particularly suitable for
 developing applications using the microservices architectural
 pattern.
 
+Some FOLIO modules are developed using the lightweight [folio-vertx-lib](https://github.com/folio-org/folio-vertx-lib) library.
+
 #### WCAG
 
 Web Content Accessibility Guidelines ([WCAG](https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines)).
