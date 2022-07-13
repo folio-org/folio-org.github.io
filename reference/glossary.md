@@ -398,10 +398,6 @@ Also abbreviated as DLC.
 The [FOLIO Security Team](https://wiki.folio.org/display/SEC)
 is the group is charged with overseeing the process related to identification and resolution of security vulnerabilities reported against FOLIO.
 
-#### Solr
-
-[Apache Solr](https://en.wikipedia.org/wiki/Apache_Solr).
-
 #### Slug
 
 A human-readable identifier with keywords and alpha-numeric characters. Whitespace is replaced by a hyphen or an underscore character. Punctuation and accented characters are removed, thereby avoiding the need for special encoding.
@@ -412,9 +408,19 @@ See Wikipedia [Slug](https://en.wikipedia.org/wiki/Clean_URL#Slug) and [etymolog
 
 To "slugify" is to translate a string into a slug by replacing such characters.
 
+#### Solr
+
+[Apache Solr](https://en.wikipedia.org/wiki/Apache_Solr).
+
 #### SPA
 
 FOLIO is a single-page application ([SPA](https://en.wikipedia.org/wiki/Single-page_application)).
+
+#### Spring
+
+[Spring](https://spring.io/) is an application framework for the Java platform.
+
+Some FOLIO modules are developed using the [folio-spring-base](https://github.com/folio-org/folio-spring-base) library and the Spring Way.
 
 #### SRS
 
@@ -468,6 +474,8 @@ and the [FOLIO UX](https://ux.folio.org/) documentation site.
 applications on the JVM. Vert.x is particularly suitable for
 developing applications using the microservices architectural
 pattern.
+
+Some FOLIO modules are developed using the lightweight [folio-vertx-lib](https://github.com/folio-org/folio-vertx-lib) library.
 
 #### WCAG
 

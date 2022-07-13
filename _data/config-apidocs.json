@@ -337,7 +337,11 @@
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-codex-inventory",
     "org": "folio-org"
   },

@@ -5,7 +5,7 @@ permalink: /start/primer-sys-admin/
 menuInclude: yes
 menuTopTitle: Start
 menuSubTitle: Primer system admin
-menuSubIndex: 6
+menuSubIndex: 7
 ---
 
 This is an initial guide to available sysadmin and deployment resources.
