@@ -27,7 +27,7 @@ This list of modules is sorted into functional groups.
 {% assign urlAws = "https://s3.amazonaws.com/foliodocs/api" %}
 {% assign urlGithub = "https://github.com" %}
 {% assign urlSourceXref = "/source-code/map/" %}
-{% assign noteRaml = 'This is the shared RAML repository. Each module uses a certain version of this as their "raml-util" directory.' %}
+{% assign noteRaml = 'This is the shared RAML repository. Each RAML-using module has a certain version of this as a git submodule in their "ramls/raml-util" directory.' %}
 {% assign noteSchemaOnly = 'Has only schema and no API descriptions.' %}
 {% assign noteReferRamlUtil = 'Refer to the <a href="#raml">raml</a> (raml-util) repository.' %}
 {% assign moduleIdEntries = "" | split: ',' %}
