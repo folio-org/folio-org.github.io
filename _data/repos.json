@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-07-11T00:07:59.396861+00:00"
+    "generatedDateTime": "2022-07-15T05:10:16.925194+00:00"
   },
   "repos": [
     {
@@ -1968,7 +1968,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>"
+      "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2192,7 +2200,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>Stripes UI module- Audit app  visually conveys the idea of examining past activity, organized by different points of view: user; resource; circulation etc</p>"
+      "snippetIntro": "<p>Stripes UI module- Audit app  visually conveys the idea of examining past activity, organized by different points of view: user; resource; circulation etc</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2475,7 +2491,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>The ui-finance allows for the management of ledgers, funds, and budgets in FOLIO. It includes a dashboard that provides a snapshot of your account totals for the current fiscal year across ledgers and funds.</p>"
+      "snippetIntro": "<p>The ui-finance allows for the management of ledgers, funds, and budgets in FOLIO. It includes a dashboard that provides a snapshot of your account totals for the current fiscal year across ledgers and funds.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2621,7 +2645,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-invoice and start your development.</p>"
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-invoice and start your development.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2641,7 +2673,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>The Licenses UI Module, or <code>ui-licenses</code>, is a Stripes UI module used for management of licenses</p>"
+      "snippetIntro": "<p>The Licenses UI Module, or <code>ui-licenses</code>, is a Stripes UI module used for management of licenses</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -3033,7 +3073,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-license</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-license'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-license</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-license'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -3043,7 +3091,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-organization</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-organization'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-organization</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-organization'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -3071,7 +3127,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-po-line</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-po-line'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-po-line</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-po-line'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -3117,7 +3181,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-receiving and start your development.</p>"
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-receiving and start your development.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -3127,7 +3199,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-remote-storage and start your development.</p>"
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-remote-storage and start your development.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -3137,7 +3217,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
