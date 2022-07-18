@@ -31,6 +31,10 @@ Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 
 This is a library (jar) that contains the basic functionality and main dependencies required for development of FOLIO modules using Spring framework (also known as "Spring Way").
 
+Please find a step-by-step guide on how to create a new FOLIO Spring based module at https://github.com/folio-org/mod-spring-template
+
+An example of the module based on folio-spring-base could be found at https://github.com/folio-org/folio-sample-modules/tree/master/mod-spring-petstore
+
 ## Execution Context
 
 [FolioExecutionContext](src/main/java/org/folio/spring/FolioExecutionContext.java) is used to store
