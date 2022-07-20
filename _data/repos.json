@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-07-15T05:10:16.925194+00:00"
+    "generatedDateTime": "2022-07-19T01:39:06.944720+00:00"
   },
   "repos": [
     {
@@ -1891,7 +1891,7 @@
     {
       "defaultBranch": "master",
       "description": "A component library for Stripes",
-      "docDirName": "docs",
+      "docDirName": null,
       "name": "stripes-components",
       "org": "folio-org",
       "repoLanguageHint": "node",
@@ -2902,6 +2902,24 @@
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
       "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-agreement</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-agreement'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Stripes plugin to find Authority records",
+      "docDirName": null,
+      "name": "ui-plugin-find-authority",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-authority</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-authority'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
       "workflows": [
         "build-npm-release.yml",
         "build-npm.yml"
