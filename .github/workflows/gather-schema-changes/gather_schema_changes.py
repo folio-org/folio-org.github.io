@@ -32,7 +32,7 @@ import requests
 import sh
 import yaml
 
-SCRIPT_VERSION = "1.3.0"
+SCRIPT_VERSION = "1.4.0"
 
 LOGLEVELS = {
     "debug": logging.DEBUG,
@@ -69,8 +69,7 @@ def get_options():
     logger.info("Using version: %s", SCRIPT_VERSION)
 
     # Ensure that commands are available
-    bin_extra_dirs = "/home/linuxbrew/.linuxbrew/bin"
-    if not sh.which("jd", bin_extra_dirs):
+    if not sh.which("jd"):
         logger.critical("'jd' is not available.")
         sys.exit(2)
     return args.branch

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-07-19T01:39:06.944720+00:00"
+    "generatedDateTime": "2022-07-22T23:41:04.986724+00:00"
   },
   "repos": [
     {
@@ -804,7 +804,7 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>FOLIO data import module.</p>"
+      "snippetIntro": "<p>mod-data-import is responsible for uploading files (see <a href='https://github.com/folio-org/mod-data-import/blob/master/FileUploadApi.md'>documentation for file uploading</a>), initial handling and sending records for further processing (see <a href='https://github.com/folio-org/mod-data-import/blob/master/FileProcessingApi.md'>documentation for file processing</a>).</p>"
     },
     {
       "defaultBranch": "master",
@@ -1744,6 +1744,16 @@
     },
     {
       "defaultBranch": "master",
+      "description": "Minimal set of back-end and front-end modules for FOLIO",
+      "docDirName": null,
+      "name": "platform-minimal",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "platform",
+      "snippetIntro": "<p>This is the 'minimal' Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the versions of <code>@folio/stripes</code>, <code>@folio/stripes</code>, the shared dependencies they rely on, and a utility for generating module descriptors for each Stripes module.</p>"
+    },
+    {
+      "defaultBranch": "master",
       "description": "Stripes platform for Resource Sharing App",
       "docDirName": null,
       "name": "platform-rs",
@@ -1847,6 +1857,24 @@
       "description": "Stripes components that are specific to use cases that arise in Acquisitions-related modules",
       "docDirName": null,
       "name": "stripes-acq-components",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "stripes",
+      "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Stripes components that are specific to use cases that arise in Authority-related modules",
+      "docDirName": null,
+      "name": "stripes-authority-components",
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
@@ -2445,7 +2473,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>The ERM comparisons module, or <code>ui-erm-comparisons</code>, is a Stripes UI module used for comparison of 'Agreement' and/or 'Package' objects defined by the <code>ui-agreements</code> (Agreements) module.</p>"
+      "snippetIntro": "<p>The ERM comparisons module, or <code>ui-erm-comparisons</code>, is a Stripes UI module used for comparison of 'Agreement' and/or 'Package' objects defined by the <code>ui-agreements</code> (Agreements) module.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2663,7 +2699,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>LDP query builder UI for FOLIO/ReShare.</p>"
+      "snippetIntro": "<p>LDP query builder UI for FOLIO/ReShare.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2691,7 +2735,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>The Local KB admin UI Module, or <code>ui-local-kb-admin</code>, is a Stripes UI module used for management of the local KB used for ERM tasks handled by the <code>ui-agreements</code> (Agreements) module.</p>"
+      "snippetIntro": "<p>The Local KB admin UI Module, or <code>ui-local-kb-admin</code>, is a Stripes UI module used for management of the local KB used for ERM tasks handled by the <code>ui-agreements</code> (Agreements) module.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2955,7 +3007,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-eresource</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-eresource'&gt;</code> element. See <a href='https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-eresource</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-eresource'&gt;</code> element. See <a href='https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
