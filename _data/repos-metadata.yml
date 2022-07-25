@@ -73,6 +73,8 @@ ui-erm-usage:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/eUsage
   urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+eUsage
   spaceUserDocs: erm/eusage/
+  urlsOther:
+    - https://wiki.folio.org/display/ERMSIG/eUsage+documentation
 
 ui-finance:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Finance
@@ -158,6 +160,10 @@ ui-users:
   spaceUserDocs: users/
   urlsOther:
     - https://wiki.folio.org/display/FOLIOtips/Users+App+-+Creating+Fees+and+Fines
+
+ui-plugin-eusage-reports:
+  urlsOther:
+    - https://wiki.folio.org/display/ERMSIG/eUsage+Reports+Documentation
 
 mod-circulation:
   urlsOther:
