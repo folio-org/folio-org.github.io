@@ -110,7 +110,7 @@ multi-call binary that contains `wget` with reduced number of options.
 
 A typical Stripes or UI module Jenkinsfile configuration might look like the following.
 See an example at
-[ui-courses/Jenkinsfile](https://github.com/folio-org/ui-courses/blob/master/Jenkinsfile).
+[ui-orders/Jenkinsfile](https://github.com/folio-org/ui-orders/blob/master/Jenkinsfile).
 
 (**Note**: Front-end modules are gradually being migrated to use GitHub Actions Workflows. So for those, Jenkinsfile is not relevant.)
 
