@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How to specify which Java build image for CI
+title: How to specify which Jenkins build image for CI
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: development-tips
@@ -8,6 +8,8 @@ faqOrder: 11
 ---
 
 Back-end Java-based modules can specify which build image to use during the Jenkins continuous integration builds.
+
+For front-end modules that still use Jenkins build rather than GitHub Workflows, the buildNode provides the relevant Nodejs version.
 
 ## Using Java 17
 
@@ -39,6 +41,20 @@ agent {
   }
 }
 ```
+
+## Node version for front-end
+
+For the few front-end projects that still use Jenkins build rather than GitHub Workflows, the buildNode provides the relevant Nodejs version:
+
+For projects that now use Nodejs 16:
+
+* In [Jenkinsfile](/guides/jenkinsfile/), declare this in the "buildNPM" section:\
+  `buildNode = 'jenkins-agent-java17'`
+
+For projects that still use Nodejs 14:
+
+* In [Jenkinsfile](/guides/jenkinsfile/), declare this in the "buildNPM" section:\
+  `buildNode = 'jenkins-agent-java11'`
 
 ## Using deprecated Java 8
 

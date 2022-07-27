@@ -89,21 +89,23 @@ The [Commence a module - structure and configuration](/guides/commence-a-module/
 For back-end modules: descriptors/ModuleDescriptor-template.json, Dockerfile, POM, Jenkinsfile, etc.
 
 Get the initial basic source files and other configuration files added first.
+
 Then add the Jenkinsfile to initiate the CI processing.
 Do this early so that CI can assist.
 **Note:**
-Its Jenkinsfile needs to be committed directly to master branch.
+The Jenkinsfile needs to be committed directly to master branch.
 If it is done via a pull-request then that will fail, as the initial base Sonar scan for master branch has not yet run.
 
 ### Frontend specific
 
-For front-end modules: package.json, .eslintrc, Jenkinsfile, etc.
+For front-end modules: package.json, .eslintrc, GitHub Workflows, etc.
 
 Get the initial basic source files and other configuration files added first.
-Also add the Jenkinsfile to initiate the CI processing.
-Do this early so that CI can assist.
+
+New front-end repositories will use GitHub Actions Workflows (see our [document](/guidelines/github-actions-frontend/)).
+
 **Note:**
-The Jenkinsfile setting "`runSonarqube = true`" needs to be committed directly to master branch.
+The Workflows need to be committed directly to master branch.
 If it is done via a pull-request then that will fail, as the initial base Sonar scan for master branch has not yet run.
 
 ## Module documentation
