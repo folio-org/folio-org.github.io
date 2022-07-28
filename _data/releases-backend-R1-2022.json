@@ -126,12 +126,12 @@
     {
       "name": "mod-data-export",
       "nameRepo": "mod-data-export",
-      "releaseDate": "2022-04-06T12:23:50+00:00",
-      "releaseName": "v4.4.2",
-      "releaseSha": "4fc73d0cee4c39c3c231a512dde8adb51f5fb629",
-      "releaseTag": "v4.4.2",
+      "releaseDate": "2022-07-27T12:09:09+00:00",
+      "releaseName": "v4.4.3",
+      "releaseSha": "112520d00a1fa35bba468384406a655882dea1db",
+      "releaseTag": "v4.4.3",
       "releaseTarget": "master",
-      "version": "4.4.2"
+      "version": "4.4.3"
     },
     {
       "name": "mod-data-export-spring",
