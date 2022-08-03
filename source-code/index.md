@@ -58,7 +58,10 @@ Each back-end module has its own documentation.
 Many of these modules are built from specifications in
 [RAML](https://raml.org/), the RESTful API Modeling Language: this process is
 facilitated by the code in the [raml-module-builder](map/#raml-module-builder) (RMB -- Framework facilitating easy module creation based on RAML files).
-Various other modules utilise API descriptions as OpenAPI Specification ([OAS](/reference/glossary/#oas)).
+Please pay attention that RAML Module Builder is no longer being extended with new functionality and is in maintenance mode only.
+
+Newly created modules utilise API descriptions as OpenAPI Specification ([OAS](/reference/glossary/#oas)).
+[FOLIO Spring-Way](/spring-way/#spring-way) with OpenAPI Specification is the preferred way to create new modules in FOLIO.
 
 Refer to the map for all
 [Backend infrastructure repos](map/#backend-infrastructure) and

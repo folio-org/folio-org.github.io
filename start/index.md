@@ -26,7 +26,7 @@ Bearing in mind that [FOLIO uses any programming language](/guides/any-programmi
 - [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md).
 - [Modularity in FOLIO: Principles, Techniques and Tools](https://doi.org/10.23974/ijol.2021.vol6.2.208).
 - [FOLIO-Sample-Modules guide](https://github.com/folio-org/folio-sample-modules/blob/master/README.md).
-- [FOLIO Spring-Way](/spring/#spring-way).
+- [FOLIO Spring-Way](/spring-way/#spring-way).
 - [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework. Please pay attention that RAML Module Builder is no longer being extended with new functionality and is in maintenance mode only.
   - [FOLIO Vert.x library](https://github.com/folio-org/folio-vertx-lib).
 - Each [server-side](/source-code/#server-side) and [client-side](/source-code/#client-side)
