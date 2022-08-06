@@ -126,12 +126,12 @@
     {
       "name": "mod-data-export",
       "nameRepo": "mod-data-export",
-      "releaseDate": "2022-04-06T12:23:50+00:00",
-      "releaseName": "v4.4.2",
-      "releaseSha": "4fc73d0cee4c39c3c231a512dde8adb51f5fb629",
-      "releaseTag": "v4.4.2",
+      "releaseDate": "2022-07-27T12:09:09+00:00",
+      "releaseName": "v4.4.3",
+      "releaseSha": "112520d00a1fa35bba468384406a655882dea1db",
+      "releaseTag": "v4.4.3",
       "releaseTarget": "master",
-      "version": "4.4.2"
+      "version": "4.4.3"
     },
     {
       "name": "mod-data-export-spring",
@@ -576,22 +576,22 @@
     {
       "name": "mod-source-record-manager",
       "nameRepo": "mod-source-record-manager",
-      "releaseDate": "2022-04-08T09:04:16+00:00",
-      "releaseName": "3.3.8",
-      "releaseSha": "9a3915b623b0704cff7319cbf386fcba0b5f1072",
-      "releaseTag": "v3.3.8",
+      "releaseDate": "2022-07-31T18:21:30+00:00",
+      "releaseName": "3.3.9",
+      "releaseSha": "c6f1b7430f1f1bb34b1f6249578681af43b29afe",
+      "releaseTag": "v3.3.9",
       "releaseTarget": "master",
-      "version": "3.3.8"
+      "version": "3.3.9"
     },
     {
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
-      "releaseDate": "2022-06-02T10:56:21+00:00",
-      "releaseName": "5.3.3",
-      "releaseSha": "67bb70da6ea7756a7e20b34509abe9a1c035065b",
-      "releaseTag": "v5.3.3",
+      "releaseDate": "2022-07-31T17:54:06+00:00",
+      "releaseName": "5.3.4",
+      "releaseSha": "01db68b968c60cae230d28ccd95de7b63bd2656c",
+      "releaseTag": "v5.3.4",
       "releaseTarget": "master",
-      "version": "5.3.3"
+      "version": "5.3.4"
     },
     {
       "name": "mod-tags",
