@@ -845,6 +845,7 @@
         "ramls/instance-preceding-succeeding-titles.raml",
         "ramls/instance-reindex.raml",
         "ramls/instance-relationship-type.raml",
+        "ramls/instance-set.raml",
         "ramls/instance-status.raml",
         "ramls/instance-storage-batch.raml",
         "ramls/instance-storage.raml",
