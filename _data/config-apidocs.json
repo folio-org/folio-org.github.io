@@ -753,6 +753,7 @@
     "config": {
       "oas": [],
       "raml": [
+        "ramls/gobi-mappings.raml",
         "ramls/gobi.raml"
       ],
       "upload": []
