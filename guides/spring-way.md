@@ -1,13 +1,9 @@
 ---
 layout: page
 title: Spring-Way overview
-permalink: /spring-way/
-menuInclude: yes
-menuLink: yes
-menuTopTitle: Spring-Way
-menuTopIndex: 4
-menuSubTitle: Spring-Way overview
-menuSubIndex: 1
+permalink: /guides/spring-way/
+menuInclude: no
+menuTopTitle: Guides
 ---
 ## Spring-Way
 

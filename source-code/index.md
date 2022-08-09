@@ -55,13 +55,11 @@ Individual back-end modules are provided in their separate repositories, each
 named following the "`mod-`_name_" [convention](/guidelines/naming-conventions/#module-names).
 Each back-end module has its own documentation.
 
-Many of these modules are built from specifications in
-[RAML](https://raml.org/), the RESTful API Modeling Language: this process is
-facilitated by the code in the [raml-module-builder](map/#raml-module-builder) (RMB -- Framework facilitating easy module creation based on RAML files).
-Please pay attention that RAML Module Builder is no longer being extended with new functionality and is in maintenance mode only.
+It is highly recommended that modules be developed using an API-first methodology. An API declaration is first created around which code is then implemented. The recommended format for API declaration is the OpenAPI Specification [OAS](/reference/glossary/#oas). (Previously [RAML](https://raml.org/) was used, but its use is now deprecated.)
 
-Newly created modules utilise API descriptions as OpenAPI Specification ([OAS](/reference/glossary/#oas)).
-[FOLIO Spring-Way](/spring-way/#spring-way) with OpenAPI Specification is the preferred way to create new modules in FOLIO.
+To facilitate development, the [FOLIO Spring-Way Framework](/guides/spring-way) is available to generate code from an OpenAPI specification. Please note that the RAML Module Builder Framework [raml-module-builder](map/#raml-module-builder) - which does not support OpenAPI - is no longer being extended with new functionality and is in maintenance mode only.
+
+For those preferring not to use a framework, the [FOLIO Vert.x library](https://github.com/folio-org/folio-vertx-lib) is also able to process OpenAPI specifications.
 
 Refer to the map for all
 [Backend infrastructure repos](map/#backend-infrastructure) and
