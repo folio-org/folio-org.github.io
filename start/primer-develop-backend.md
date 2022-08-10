@@ -33,4 +33,4 @@ The [folio-vertx-lib](https://github.com/folio-org/folio-vertx-lib) is a lightwe
 
 [Conduct cross-module joins via their APIs](/guides/cross-module-joins/).
 
-The [Primer for RAML and JSON Schema](/start/primer-raml/) provides some guidance.
+The [Primer for OpenAPI (OAS) and JSON Schema](/start/primer-oas/) provides some guidance.
