@@ -313,21 +313,21 @@ JavaScript code.
 [npm](https://www.npmjs.com) is the Node.js Node Package Manager - a mechanism for distributing
 packages of JavaScript code, used by Stripes.
 
-#### Okapi gateway
-
-See [Okapi](#okapi) explained above.
-
-#### OLE
-
-The [Open Library Environment](https://www.openlibraryenvironment.org/)
-is a community of academic and research libraries collaborating to
-build open source library management tools. OLE has joined the FOLIO
-community to help with the development of FOLIO.
-
 #### OAS
 
 The OpenAPI Specification ([OAS](https://en.wikipedia.org/wiki/OpenAPI_Specification)) for describing RESTful web services.
 (Originally part of Swagger.)
+
+#### Okapi gateway
+
+See [Okapi](#okapi) explained above.
+
+#### OLF
+
+The [Open Library Foundation](https://www.openlibraryfoundation.org/)
+is an independent not-for-profit organization to ensure the availability, accessibility and sustainability of open source and open access projects for and by libraries.
+See [Newsroom](https://openlibraryfoundation.org/newsroom/).
+OLF has joined the FOLIO community to help with the development of FOLIO.
 
 #### PC
 
