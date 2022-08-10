@@ -57,9 +57,7 @@ Each back-end module has its own documentation.
 
 It is highly recommended that modules be developed using an API-first methodology. An API declaration is first created around which code is then implemented. The recommended format for API declaration is the OpenAPI Specification [OAS](/reference/glossary/#oas). (Previously [RAML](https://raml.org/) was used, but its use is now deprecated.)
 
-To facilitate development, the [FOLIO Spring-Way Framework](/guides/spring-way) is available to generate code from an OpenAPI specification. Please note that the RAML Module Builder Framework [raml-module-builder](map/#raml-module-builder) - which does not support OpenAPI - is no longer being extended with new functionality and is in maintenance mode only.
-
-For those preferring not to use a framework, the [FOLIO Vert.x library](https://github.com/folio-org/folio-vertx-lib) is also able to process OpenAPI specifications.
+Refer to the introduction of the [various bases](/guides/#back-end-module-bases) that facilitate development of back-end modules.
 
 Refer to the map for all
 [Backend infrastructure repos](map/#backend-infrastructure) and
