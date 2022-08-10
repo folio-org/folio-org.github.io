@@ -485,6 +485,10 @@ Web Content Accessibility Guidelines ([WCAG](https://en.wikipedia.org/wiki/Web_C
 
 The Node.js module bundler, used to deploy Stripes modules.
 
+#### WOLFcon
+
+The World Open Library Foundation Conference ([WOLFcon](https://openlibraryfoundation.org/about/wolfcon/)).
+
 #### WSAPI
 
 A generic term for Web Services Application Programming Interface (see [API](#api) above).
