@@ -708,6 +708,7 @@
         "ramls/group_fund_fy.raml",
         "ramls/ledger-rollover-errors.raml",
         "ramls/ledger.raml",
+        "ramls/ledger_rollover-budgets.raml",
         "ramls/ledger_rollover.raml",
         "ramls/ledger_rollover_progress.raml",
         "ramls/transaction-summary.raml",
@@ -753,6 +754,7 @@
     "config": {
       "oas": [],
       "raml": [
+        "ramls/gobi-mappings.raml",
         "ramls/gobi.raml"
       ],
       "upload": []
@@ -845,6 +847,7 @@
         "ramls/instance-preceding-succeeding-titles.raml",
         "ramls/instance-reindex.raml",
         "ramls/instance-relationship-type.raml",
+        "ramls/instance-set.raml",
         "ramls/instance-status.raml",
         "ramls/instance-storage-batch.raml",
         "ramls/instance-storage.raml",
