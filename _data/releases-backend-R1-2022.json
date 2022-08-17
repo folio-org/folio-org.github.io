@@ -216,12 +216,12 @@
     {
       "name": "mod-eusage-reports",
       "nameRepo": "mod-eusage-reports",
-      "releaseDate": "2022-03-05T06:52:33+00:00",
+      "releaseDate": "2022-08-12T05:03:14+00:00",
       "releaseName": "",
-      "releaseSha": "94e24689cbf4276f86bde936d431b3af045241c1",
-      "releaseTag": "v1.1.1",
+      "releaseSha": "de627b4dfe29afd5b047e8cdac36368e74fa347b",
+      "releaseTag": "v1.1.2",
       "releaseTarget": "master",
-      "version": "1.1.1"
+      "version": "1.1.2"
     },
     {
       "name": "mod-event-config",
@@ -236,12 +236,12 @@
     {
       "name": "mod-feesfines",
       "nameRepo": "mod-feesfines",
-      "releaseDate": "2022-06-08T16:59:33+00:00",
-      "releaseName": "",
-      "releaseSha": "63372fc8164d4936552a841f0aea6a82ccf27573",
-      "releaseTag": "v17.1.2",
+      "releaseDate": "2022-08-10T09:45:47+00:00",
+      "releaseName": "v17.1.3",
+      "releaseSha": "9fd768a7b89eef9587d0f7b98163971a05ca4bf4",
+      "releaseTag": "v17.1.3",
       "releaseTarget": "master",
-      "version": "17.1.2"
+      "version": "17.1.3"
     },
     {
       "name": "mod-finance",

@@ -48,7 +48,7 @@ to the specific documentation for each of those modules.
 
 With that background understanding, see the documentation for each
 [server-side](/source-code/#server-side)
-module, especially RAML Module Builder (RMB).
+module.
 
 ## User Interface
 
@@ -125,7 +125,7 @@ For back-end module development there are various options. These are introduced 
 
 Some more detail is provided via other introductory documentation:
 
-* The [Spring Way](/guides/spring-way/) is the recommended approach for development of FOLIO modules using the Spring framework and Spring projects and OpenAPI ([OAS](/start/primer-oas/)).
+* The [FOLIO Spring-Way Framework](/guides/spring-way/) is the recommended approach for development of FOLIO modules using the Spring framework and Spring projects and OpenAPI ([OAS](/start/primer-oas/)).
 * The [FOLIO Vert.x library](/guides/folio-vertx-lib/) is a lightweight FOLIO module development library for Vert.x that supports OpenAPI ([OAS](/start/primer-oas/)). It is the recommended library for development of FOLIO modules with Vert.x OpenAPI.
 * The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework, is a special FOLIO module using [RAML](/start/primer-raml/) that abstracts much functionality and enables the developer to focus on implementing business functions. It also exposes a Vert.x based runtime library. **Note**: RAML Module Builder is no longer being extended with new functionality and is in maintenance mode only.
 

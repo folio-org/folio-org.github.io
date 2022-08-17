@@ -55,10 +55,9 @@ Individual back-end modules are provided in their separate repositories, each
 named following the "`mod-`_name_" [convention](/guidelines/naming-conventions/#module-names).
 Each back-end module has its own documentation.
 
-Many of these modules are built from specifications in
-[RAML](https://raml.org/), the RESTful API Modeling Language: this process is
-facilitated by the code in the [raml-module-builder](map/#raml-module-builder) (RMB -- Framework facilitating easy module creation based on RAML files).
-Various other modules utilise API descriptions as OpenAPI Specification ([OAS](/reference/glossary/#oas)).
+It is highly recommended that modules be developed using an API-first methodology. An API declaration is first created around which code is then implemented. The recommended format for API declaration is the OpenAPI Specification [OAS](/reference/glossary/#oas). (Previously [RAML](https://raml.org/) was used, but its use is now deprecated.)
+
+Refer to the introduction of the [various bases](/guides/#back-end-module-bases) that facilitate development of back-end modules.
 
 Refer to the map for all
 [Backend infrastructure repos](map/#backend-infrastructure) and
