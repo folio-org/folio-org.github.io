@@ -754,6 +754,7 @@
     "config": {
       "oas": [],
       "raml": [
+        "ramls/gobi-custom-mappings.raml",
         "ramls/gobi-mappings.raml",
         "ramls/gobi.raml"
       ],
