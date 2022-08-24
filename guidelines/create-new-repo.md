@@ -63,7 +63,7 @@ Add the required LICENSE and CONTRIBUTING.md and README.md files.
 
 Ensure that the required copyright and license statement is near the top of the README.
 Use the initial year of creation for the date.
-(In subsequent years it will become a range.)
+(In subsequent years it will become a [date range](https://issues.folio.org/browse/FOLIO-1021).)
 
 Ensure that any package.json and pom.xml etc. type of configuration file has the appropriate required "licence" elements.
 
