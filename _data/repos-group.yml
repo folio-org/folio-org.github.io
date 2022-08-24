@@ -23,7 +23,7 @@ backend-edge:
 backend-infrastructure:
   title: Backend infrastructure repos
 raml-shared:
-  title: Shared RAML repos
+  title: Shared API repos
 other:
   title: Other repos
   stem: other-
