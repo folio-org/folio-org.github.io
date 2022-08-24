@@ -107,6 +107,7 @@ utilities:
   title: Utilities and tools
   description: Notes, tags, calendar, etc.
   modules:
+    - mod-entities-links
     - mod-notes
     - mod-tags
     - mod-calendar

@@ -88,7 +88,7 @@ If there are [special requirements](#prepare-special-requirements), then provide
 [Raise a FOLIO DevOps Jira ticket](/faqs/how-to-raise-devops-ticket/#general-folio-devops).
 
 **Note:** Plan for plenty of time for this phase. Our team will already have a full Sprint.
-So it will likely be the next Sprint.
+So it will likely be a subsequent Sprint.
 
 The DevOps team will configure the module and conduct various configuration tests.
 
