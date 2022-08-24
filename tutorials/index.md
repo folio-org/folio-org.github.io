@@ -8,4 +8,4 @@ menuTopIndex: 7
 ---
 
 * [Using a FOLIO virtual machine](folio-vm) -- Explains how to utilise a FOLIO virtual machine (VM).
-* [FOLIO deployment: single server](https://github.com/folio-org/folio-install/blob/master/runbooks/single-server) -- Step-by-step instructions for setting up Okapi and Stripes on a single host.  (Vagrant-specific instructions offered as well.)
+* [FOLIO deployment: single server](https://docs.folio.org/docs/getting-started/installation/) -- Step-by-step instructions for setting up Okapi and Stripes on a single host.  (Vagrant-specific instructions offered as well.)

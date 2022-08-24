@@ -9,7 +9,7 @@ menuSubs:
   url: /tutorials/
   index: 1
 - title: Single Server Deployment
-  url: "https://github.com/folio-org/folio-install/blob/master/runbooks/single-server"
+  url: "https://docs.folio.org/docs/getting-started/installation/"
   link: yes
   index: 10
   anchorId: folio-deployment-single-server

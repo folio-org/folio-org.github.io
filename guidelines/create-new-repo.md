@@ -41,12 +41,12 @@ Note that front-end module repositories also need the "bots" Team (with Write ac
 Add a concise "About" description to the GitHub repository. Consider that this will also be utilised elsewhere. This description is near the top-right of your GitHub front page.
 (If the "Edit" button is not available to you, then see the "support" advice above.)
 
+Note: The configuration of "branch protection" and its "required checks" can only be done after there has been an initial pull-request (and must be done within one week of its opening).
+
 ## Add initial files
 
-There are facilities to assist with starting a new module.
-For front-end modules see [stripes-cli](https://github.com/folio-org/stripes-cli).
-For back-end RMB-based modules see [mod-rmb-template](https://github.com/folio-org/mod-rmb-template).
-Otherwise follow the structure of a relevant existing module.
+There are various [module development bases](/guides/#module-development-bases) and facilities to assist with starting a new module.
+Also follow the structure of a relevant well-configured existing module.
 
 Follow the [Naming conventions](/guidelines/naming-conventions/) guidelines.
 
@@ -63,7 +63,7 @@ Add the required LICENSE and CONTRIBUTING.md and README.md files.
 
 Ensure that the required copyright and license statement is near the top of the README.
 Use the initial year of creation for the date.
-(In subsequent years it will become a range.)
+(In subsequent years it will become a [date range](https://issues.folio.org/browse/FOLIO-1021).)
 
 Ensure that any package.json and pom.xml etc. type of configuration file has the appropriate required "licence" elements.
 

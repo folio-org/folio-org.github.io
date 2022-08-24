@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-08-10T00:34:42.374547+00:00"
+    "generatedDateTime": "2022-08-24T00:51:43.998753+00:00"
   },
   "repos": [
     {
@@ -867,6 +867,19 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>The module provides the role of delivering messages using SMTP server to send email. This module use <code>mod-configuration</code> to get connection parameters.</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": "doc",
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-entities-links",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>This module provides a storing and processing functionality for links between entities.</p>"
     },
     {
       "defaultBranch": "master",

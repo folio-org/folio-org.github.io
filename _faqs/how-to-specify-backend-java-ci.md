@@ -17,6 +17,7 @@ For projects that use Java 17:
 
 * In [Jenkinsfile](/guides/jenkinsfile/), declare this in the "buildMvn" section:\
   `buildNode = 'jenkins-agent-java17'`
+* In [Jenkinsfile](/guides/jenkinsfile/), declare the mandatory module heath check endpoint via the Docker command `healthChkCmd` to use 'wget'. (There is no 'curl' available on the base image.) 
 * In Dockerfile, use:\
   `FROM folioci/alpine-jre-openjdk17:latest`
 
