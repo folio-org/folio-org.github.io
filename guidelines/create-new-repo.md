@@ -45,10 +45,8 @@ Note: The configuration of "branch protection" and its "required checks" can onl
 
 ## Add initial files
 
-There are facilities to assist with starting a new module.
-For front-end modules see [stripes-cli](https://github.com/folio-org/stripes-cli).
-For back-end RMB-based modules see [mod-rmb-template](https://github.com/folio-org/mod-rmb-template).
-Otherwise follow the structure of a relevant existing module.
+There are various [module development bases](/guides/#module-development-bases) and facilities to assist with starting a new module.
+Also follow the structure of a relevant well-configured existing module.
 
 Follow the [Naming conventions](/guidelines/naming-conventions/) guidelines.
 
