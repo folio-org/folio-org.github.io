@@ -563,6 +563,22 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/swagger.api/mod-entities-links.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "mod-entities-links",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/aggregatorsettings.raml",
