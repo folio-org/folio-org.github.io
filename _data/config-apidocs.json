@@ -563,6 +563,22 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/swagger.api/mod-entities-links.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "mod-entities-links",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/aggregatorsettings.raml",
@@ -754,6 +770,7 @@
     "config": {
       "oas": [],
       "raml": [
+        "ramls/gobi-custom-mappings.raml",
         "ramls/gobi-mappings.raml",
         "ramls/gobi.raml"
       ],
@@ -827,6 +844,7 @@
         "ramls/authorities-reindex.raml",
         "ramls/authorities.raml",
         "ramls/authority-note-type.raml",
+        "ramls/authority-source-file.raml",
         "ramls/bound-with-part.raml",
         "ramls/call-number-type.raml",
         "ramls/classification-type.raml",

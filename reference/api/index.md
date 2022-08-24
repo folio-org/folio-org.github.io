@@ -172,7 +172,7 @@ So the documentation does not relate to feature development branches.
 #### Versioned API Docs
 
 To find documentation for each software version, amend the URL of each generated document view to add the version number (major.minor).\
-For example [mod-circulation](#mod-circulation), do `mod-circulation/22.0/...`
+For example [mod-circulation](#mod-circulation), do `mod-circulation/23.1/...`
 
 #### Explain "views" {#explain-views}
 
