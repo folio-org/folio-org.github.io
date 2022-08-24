@@ -41,6 +41,8 @@ Note that front-end module repositories also need the "bots" Team (with Write ac
 Add a concise "About" description to the GitHub repository. Consider that this will also be utilised elsewhere. This description is near the top-right of your GitHub front page.
 (If the "Edit" button is not available to you, then see the "support" advice above.)
 
+Note: The configuration of "branch protection" and its "required checks" can only be done after there has been an initial pull-request (and must be done within one week of its opening).
+
 ## Add initial files
 
 There are facilities to assist with starting a new module.
