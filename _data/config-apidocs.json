@@ -5,6 +5,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {},
     "name": "acq-models",
     "org": "folio-org"
@@ -15,6 +16,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {},
     "name": "data-import-raml-storage",
     "org": "folio-org"
@@ -27,6 +29,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -43,6 +46,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -59,6 +63,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -75,6 +80,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -91,6 +97,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -107,6 +114,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -123,6 +131,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -139,6 +148,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -155,6 +165,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -169,6 +180,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {},
     "name": "folio-export-common",
     "org": "folio-org"
@@ -181,6 +193,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -197,6 +210,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -215,6 +229,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -231,6 +246,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -247,6 +263,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -275,6 +292,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -307,6 +325,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -325,6 +344,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -341,6 +361,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -359,6 +380,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -375,6 +397,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -391,6 +414,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -407,6 +431,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -428,6 +453,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -445,6 +471,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -466,6 +493,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -486,6 +514,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -502,6 +531,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -520,6 +550,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -536,6 +567,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -553,6 +585,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -569,6 +602,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -589,6 +623,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -606,6 +641,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -622,6 +658,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -638,6 +675,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -669,6 +707,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -701,6 +740,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -732,6 +772,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -758,6 +799,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -776,6 +818,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -792,6 +835,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -810,6 +854,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -831,6 +876,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {},
     "name": "mod-inventory",
     "org": "folio-org"
@@ -894,6 +940,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -910,6 +957,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -931,6 +979,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -955,6 +1004,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -985,6 +1035,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1001,6 +1052,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1017,6 +1069,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1033,6 +1086,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1049,6 +1103,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1065,6 +1120,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -1081,6 +1137,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -1098,6 +1155,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1118,6 +1176,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1147,6 +1206,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1177,6 +1237,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1193,6 +1254,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1217,6 +1279,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1234,6 +1297,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -1250,6 +1314,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1270,6 +1335,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1287,6 +1353,48 @@
       ],
       "upload": []
     },
+    "endpoints": [
+      {
+        "apiDescription": "ramls/tenantPermissions.raml",
+        "methods": "post",
+        "path": "/_/tenantpermissions"
+      },
+      {
+        "apiDescription": "ramls/permissions.raml",
+        "methods": "get post",
+        "path": "/perms/permissions"
+      },
+      {
+        "apiDescription": "ramls/permissions.raml",
+        "methods": "delete get put",
+        "path": "/perms/permissions/{id}"
+      },
+      {
+        "apiDescription": "ramls/permissions.raml",
+        "methods": "post",
+        "path": "/perms/purge-deprecated"
+      },
+      {
+        "apiDescription": "ramls/permissions.raml",
+        "methods": "get post",
+        "path": "/perms/users"
+      },
+      {
+        "apiDescription": "ramls/permissions.raml",
+        "methods": "delete get put",
+        "path": "/perms/users/{id}"
+      },
+      {
+        "apiDescription": "ramls/permissions.raml",
+        "methods": "get post",
+        "path": "/perms/users/{id}/permissions"
+      },
+      {
+        "apiDescription": "ramls/permissions.raml",
+        "methods": "delete",
+        "path": "/perms/users/{id}/permissions/{permissionname}"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1303,6 +1411,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1320,6 +1429,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -1336,6 +1446,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -1353,6 +1464,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1371,6 +1483,7 @@
         "mod-search.html"
       ]
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -1387,6 +1500,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1406,6 +1520,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1427,6 +1542,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1443,6 +1559,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -1459,6 +1576,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1475,6 +1593,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1496,6 +1615,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1512,6 +1632,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1528,6 +1649,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1549,6 +1671,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1566,6 +1689,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
