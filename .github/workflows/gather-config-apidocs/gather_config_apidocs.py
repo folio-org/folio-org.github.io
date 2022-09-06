@@ -26,7 +26,7 @@ from time import sleep
 import requests
 import yaml
 
-SCRIPT_VERSION = "1.2.0"
+SCRIPT_VERSION = "1.3.0"
 
 LOGLEVELS = {
     "debug": logging.DEBUG,
@@ -210,12 +210,19 @@ def assemble_config_packet(mod_name, mod_org, json_config, items_upload, old_con
     json_packet["config"]["raml"] = []
     json_packet["config"]["oas"] = []
     json_packet["config"]["upload"] = []
+    json_packet["endpoints"] = []
     if json_config:
         json_packet["metadata"]["apiTypes"] = json_config["metadata"]["apiTypes"]
         if "RAML" in json_config["metadata"]["apiTypes"]:
             json_packet["config"]["raml"] = json_config["config"]["raml"]["files"]
         if "OAS" in json_config["metadata"]["apiTypes"]:
             json_packet["config"]["oas"] = json_config["config"]["oas"]["files"]
+        try:
+            json_config["endpoints"]
+        except KeyError:
+            pass
+        else:
+            json_packet["endpoints"] = json_config["endpoints"]
     elif old_config:
         files = []
         for docset in old_config:
