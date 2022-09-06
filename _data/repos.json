@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-08-24T00:51:43.998753+00:00"
+    "generatedDateTime": "2022-09-06T00:17:12.432260+00:00"
   },
   "repos": [
     {
@@ -1066,19 +1066,6 @@
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
-      "hintOas": true,
-      "isSpringway": true,
-      "name": "mod-inventory-pronto",
-      "org": "folio-org",
-      "ramlDirName": null,
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": ""
-    },
-    {
-      "defaultBranch": "master",
-      "description": null,
-      "docDirName": null,
       "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
       "hintRmb": true,
       "isRmb": true,
@@ -1504,7 +1491,10 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This module provides a search functionality for instance and authorities via REST API. It uses <a href='https://www.loc.gov/standards/sru/cql/'>The Contextual Query Language</a> as a formal language to query records using filters, boolean conditions, etc.</p>"
+      "snippetIntro": "<p>This module provides a search functionality for instance and authorities via REST API. It uses <a href='https://www.loc.gov/standards/sru/cql/'>The Contextual Query Language</a> as a formal language to query records using filters, boolean conditions, etc.</p>",
+      "workflows": [
+        "elasticsearch.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -3411,6 +3401,24 @@
       "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>The Search UI Module, or <code>ui-search</code>, is a Stripes UI module used for searching, sorting, filtering and viewing records from <a href='https://www.openlibraryenvironment.org/archives/411'>the FOLIO Codex</a>, an aggregation of bibliographic metadata from multiple sources.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": "UX Module for Serials Management",
+      "docDirName": null,
+      "name": "ui-serials-management",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "",
       "workflows": [
         "build-npm-release.yml",
         "build-npm.yml"
