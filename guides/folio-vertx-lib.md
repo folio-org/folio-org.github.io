@@ -27,7 +27,7 @@ Some FOLIO modules that use this library:
 
 ## Further documentation
 
-Refer to the [folio-vertx-lib README](https://github.com/folio-org/folio-vertx-lib) and [starter example](https://github.com/folio-org/folio-vertx-lib/tree/master/example).
+The [folio-vertx-lib README](https://github.com/folio-org/folio-vertx-lib) explains the facilities and demonstrates its exemplar module [mod-example](https://github.com/folio-org/folio-vertx-lib/tree/master/mod-example) which can be used to commence a new project.
 
 <div class="folio-spacer-content"></div>
 
