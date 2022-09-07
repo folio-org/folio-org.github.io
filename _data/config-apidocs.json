@@ -114,7 +114,28 @@
       ],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "ramls/edge-orders.raml",
+        "methods": "get",
+        "path": "/admin/health"
+      },
+      {
+        "apiDescription": "ramls/edge-orders.raml",
+        "methods": "post",
+        "path": "/orders"
+      },
+      {
+        "apiDescription": "ramls/edge-orders.raml",
+        "methods": "get put",
+        "path": "/orders/order-lines/{id}"
+      },
+      {
+        "apiDescription": "ramls/edge-orders.raml",
+        "methods": "get post",
+        "path": "/orders/validate"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -431,7 +452,128 @@
       ],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/copyrightstatuses"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/copyrightstatuses/{status_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/courselistings"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/courselistings/{listing_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/courselistings/{listing_id}/courses"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/courselistings/{listing_id}/courses/{course_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/courselistings/{listing_id}/instructors"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/courselistings/{listing_id}/instructors/{instructor_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/courselistings/{listing_id}/reserves"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/courselistings/{listing_id}/reserves/{reserve_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/courses"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/courses/{course_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/coursetypes"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/coursetypes/{type_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/departments"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/departments/{department_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/processingstatuses"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/processingstatuses/{status_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/reserves"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/reserves/{reserve_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/roles"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/roles/{role_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/terms"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/terms/{term_id}"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -602,7 +744,13 @@
       "raml": [],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+        "methods": "put",
+        "path": "/links/instances/{instanceId}"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -1520,7 +1668,58 @@
       ],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "ramls/mapping-metadata-provider.raml",
+        "methods": "get",
+        "path": "/mapping-metadata/{jobExecutionId}"
+      },
+      {
+        "apiDescription": "ramls/mapping-rules-provider.raml",
+        "methods": "get put",
+        "path": "/mapping-rules/{recordType}"
+      },
+      {
+        "apiDescription": "ramls/mapping-rules-provider.raml",
+        "methods": "put",
+        "path": "/mapping-rules/{recordType}/restore"
+      },
+      {
+        "apiDescription": "ramls/metadata-provider.raml",
+        "methods": "get",
+        "path": "/metadata-provider/jobExecutions"
+      },
+      {
+        "apiDescription": "ramls/metadata-provider.raml",
+        "methods": "get",
+        "path": "/metadata-provider/jobExecutions/jobProfiles"
+      },
+      {
+        "apiDescription": "ramls/metadata-provider.raml",
+        "methods": "get",
+        "path": "/metadata-provider/jobExecutions/users"
+      },
+      {
+        "apiDescription": "ramls/metadata-provider.raml",
+        "methods": "get",
+        "path": "/metadata-provider/jobLogEntries/{jobExecutionId}"
+      },
+      {
+        "apiDescription": "ramls/metadata-provider.raml",
+        "methods": "get",
+        "path": "/metadata-provider/jobLogEntries/{jobExecutionId}/records/{recordId}"
+      },
+      {
+        "apiDescription": "ramls/metadata-provider.raml",
+        "methods": "get",
+        "path": "/metadata-provider/jobSummary/{jobExecutionId}"
+      },
+      {
+        "apiDescription": "ramls/metadata-provider.raml",
+        "methods": "get",
+        "path": "/metadata-provider/journalRecords/{jobExecutionId}"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
