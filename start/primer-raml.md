@@ -36,7 +36,7 @@ That script can be run locally, and is also utilised by the continuous-integrati
 [Describe schema and properties](/guides/describe-schema/).
 
 Use "[api-doc](/guides/api-doc/)" to generate documentation from the API descriptions, schema, and examples.
-That script can be run locally, and is also utilised by the continuous-integration to build the [FOLIO API documentation](/reference/api/).
+That script can be run locally, and is also utilised by the continuous-integration to build the [FOLIO API documentation](/reference/api/) and the associated list of [endpoints](/reference/api/endpoints/).
 
 Investigate the other RAML-using [server-side](/source-code/#server-side) modules.
 

@@ -75,7 +75,7 @@ Module documentation is kept with the relevant repository, while broad and proje
 
 ## Development documentation
 
-[API documentation](/reference/api/).
+[API documentation](/reference/api/) and the associated list of [endpoints](/reference/api/endpoints/).
 
 [Fundamental documentation](/start/#fundamental-documentation).
 This section links to some of the main other technical documentation starting points, which also link to related documentation.

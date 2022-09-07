@@ -8,6 +8,7 @@ faqOrder: 3
 ---
 
 The on-line [API documentation](/reference/api/) explains the data that modules expect and return on their APIs.
+The associated list of [endpoints](/reference/api/endpoints/) will also assist.
 
 Get help in the [FOLIO Slack](/guidelines/which-forum/#slack) #learning-apis channel.
 
@@ -36,6 +37,10 @@ The [stripes-cli](https://github.com/folio-org/stripes-cli) is a command-line in
 ## Postman
 
 The [folio-api-tests Github repository](https://github.com/folio-org/folio-api-tests) contains Postman collections for the APIs of some FOLIO modules. Use them with Postman or Newman.
+
+## HTTPie
+
+[HTTPie](https://httpie.io/) has a command-line tool and also a user interface.
 
 ## Insomnia
 

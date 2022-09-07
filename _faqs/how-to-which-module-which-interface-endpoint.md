@@ -14,9 +14,7 @@ Jump to the current best facility, the [UI Developer Settings](#ui-developer-set
 
 ## API documentation
 
-There is the set of [API documentation](/reference/api/) which is automatically generated from each separate back-end module's API description files and JSON Schemas.
-Developers could wade through that, making an educated guess.
-(There are tickets in the Issue tracker to improve that aspect of the API documentation, but not happening yet.)
+There is the set of [API documentation](/reference/api/), and the associated list of [endpoints](/reference/api/endpoints/), which is automatically generated from each separate back-end module's API description files and JSON Schemas.
 
 ## Registry of ModuleDescriptors
 
