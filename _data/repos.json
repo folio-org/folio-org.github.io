@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-09-06T00:17:12.432260+00:00"
+    "generatedDateTime": "2022-09-08T00:42:51.913732+00:00"
   },
   "repos": [
     {
@@ -1184,18 +1184,6 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Consortial storage of bibliographical records and shareable items",
-      "docDirName": null,
-      "hintOas": true,
-      "name": "mod-meta-storage",
-      "org": "folio-org",
-      "ramlDirName": null,
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>A service that provides a clustering storage of metadata for the purpose of consortial re-sharing. Optimized for fast storage and retrieval performance.</p>"
-    },
-    {
-      "defaultBranch": "master",
       "description": "Thin wrapper for Metadb server",
       "docDirName": null,
       "name": "mod-metadb-storage",
@@ -1442,6 +1430,18 @@
       "workflows": [
         "build.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Consortial storage of bibliographical records and shareable items",
+      "docDirName": null,
+      "hintOas": true,
+      "name": "mod-reservoir",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>A service that provides a clustering storage of metadata for the purpose of consortial re-sharing. Optimized for fast storage and retrieval performance.</p>"
     },
     {
       "defaultBranch": "master",
