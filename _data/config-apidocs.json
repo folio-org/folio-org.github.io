@@ -5,6 +5,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {},
     "name": "acq-models",
     "org": "folio-org"
@@ -15,6 +16,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {},
     "name": "data-import-raml-storage",
     "org": "folio-org"
@@ -27,6 +29,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -43,6 +46,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -59,6 +63,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -75,6 +80,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -91,6 +97,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -107,6 +114,28 @@
       ],
       "upload": []
     },
+    "endpoints": [
+      {
+        "apiDescription": "ramls/edge-orders.raml",
+        "methods": "get",
+        "path": "/admin/health"
+      },
+      {
+        "apiDescription": "ramls/edge-orders.raml",
+        "methods": "post",
+        "path": "/orders"
+      },
+      {
+        "apiDescription": "ramls/edge-orders.raml",
+        "methods": "get put",
+        "path": "/orders/order-lines/{id}"
+      },
+      {
+        "apiDescription": "ramls/edge-orders.raml",
+        "methods": "get post",
+        "path": "/orders/validate"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -123,6 +152,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -139,6 +169,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -155,6 +186,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -169,6 +201,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {},
     "name": "folio-export-common",
     "org": "folio-org"
@@ -181,6 +214,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -197,6 +231,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -215,6 +250,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -231,6 +267,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -247,6 +284,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -275,6 +313,193 @@
       ],
       "upload": []
     },
+    "endpoints": [
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "post",
+        "path": "/circulation/check-in-by-barcode"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "post",
+        "path": "/circulation/check-out-by-barcode"
+      },
+      {
+        "apiDescription": "ramls/end-patron-action-session.raml",
+        "methods": "post",
+        "path": "/circulation/end-patron-action-session"
+      },
+      {
+        "apiDescription": "ramls/circulation-event-handlers.raml",
+        "methods": "post",
+        "path": "/circulation/handlers//loan-related-fee-fine-closed"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "delete get post",
+        "path": "/circulation/loans"
+      },
+      {
+        "apiDescription": "ramls/change-due-date.raml",
+        "methods": "post",
+        "path": "/circulation/loans/{id}/change-due-date"
+      },
+      {
+        "apiDescription": "ramls/claim-item-returned.raml",
+        "methods": "post",
+        "path": "/circulation/loans/{id}/claim-item-returned"
+      },
+      {
+        "apiDescription": "ramls/claim-item-returned.raml",
+        "methods": "post",
+        "path": "/circulation/loans/{id}/declare-claimed-returned-item-as-missing"
+      },
+      {
+        "apiDescription": "ramls/declare-item-lost.raml",
+        "methods": "post",
+        "path": "/circulation/loans/{id}/declare-item-lost"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "delete get put",
+        "path": "/circulation/loans/{loanId}"
+      },
+      {
+        "apiDescription": "ramls/pick-slips.raml",
+        "methods": "get",
+        "path": "/circulation/pick-slips/{servicePointId}"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "post",
+        "path": "/circulation/renew-by-barcode"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "post",
+        "path": "/circulation/renew-by-id"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "delete get post",
+        "path": "/circulation/requests"
+      },
+      {
+        "apiDescription": "ramls/requests-reports.raml",
+        "methods": "get",
+        "path": "/circulation/requests-reports/hold-shelf-clearance/{servicePointId}"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "post",
+        "path": "/circulation/requests/instances"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "get",
+        "path": "/circulation/requests/queue/instance/{instanceId}"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "post",
+        "path": "/circulation/requests/queue/instance/{instanceId}/reorder"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "get",
+        "path": "/circulation/requests/queue/item/{itemId}"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "post",
+        "path": "/circulation/requests/queue/item/{itemId}/reorder"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "delete get put",
+        "path": "/circulation/requests/{requestId}"
+      },
+      {
+        "apiDescription": "ramls/request-move.raml",
+        "methods": "post",
+        "path": "/circulation/requests/{requestId}/move"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get put",
+        "path": "/circulation/rules"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/loan-policy"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/loan-policy-all"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/lost-item-policy"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/lost-item-policy-all"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/notice-policy"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/notice-policy-all"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/overdue-fine-policy"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/overdue-fine-policy-all"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/request-policy"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/request-policy-all"
+      },
+      {
+        "apiDescription": "ramls/age-to-lost-background-processes.raml",
+        "methods": "post",
+        "path": "/circulation/scheduled-age-to-lost"
+      },
+      {
+        "apiDescription": "ramls/age-to-lost-background-processes.raml",
+        "methods": "post",
+        "path": "/circulation/scheduled-age-to-lost-fee-charging"
+      },
+      {
+        "apiDescription": "ramls/inventory-reports.raml",
+        "methods": "get",
+        "path": "/inventory-reports/items-in-transit"
+      },
+      {
+        "apiDescription": "ramls/loan-anonymization.raml",
+        "methods": "post",
+        "path": "/loan-anonymization/by-user/{userId}"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -307,6 +532,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -325,6 +551,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -341,6 +568,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -359,6 +587,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -375,6 +604,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -391,6 +621,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -407,6 +638,128 @@
       ],
       "upload": []
     },
+    "endpoints": [
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/copyrightstatuses"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/copyrightstatuses/{status_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/courselistings"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/courselistings/{listing_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/courselistings/{listing_id}/courses"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/courselistings/{listing_id}/courses/{course_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/courselistings/{listing_id}/instructors"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/courselistings/{listing_id}/instructors/{instructor_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/courselistings/{listing_id}/reserves"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/courselistings/{listing_id}/reserves/{reserve_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/courses"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/courses/{course_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/coursetypes"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/coursetypes/{type_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/departments"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/departments/{department_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/processingstatuses"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/processingstatuses/{status_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/reserves"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/reserves/{reserve_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/roles"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/roles/{role_id}"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get post",
+        "path": "/coursereserves/terms"
+      },
+      {
+        "apiDescription": "ramls/courses.raml",
+        "methods": "delete get put",
+        "path": "/coursereserves/terms/{term_id}"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -428,6 +781,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -445,6 +799,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -466,6 +821,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -486,6 +842,78 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [
+      {
+        "apiDescription": "src/main/resources/swagger.api/order-export.yaml",
+        "methods": "get",
+        "path": "/order-stub"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bursar-export.yaml",
+        "methods": "get",
+        "path": "/stub"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/circulation-log.yaml",
+        "methods": "get",
+        "path": "/stub"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/e-holdings.yaml",
+        "methods": "get",
+        "path": "/stub"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "get",
+        "path": "/{jobId}/errors"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "post",
+        "path": "/{jobId}/item-content-update/upload"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "get",
+        "path": "/{jobId}/preview/items"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "get",
+        "path": "/{jobId}/preview/updated-items/download"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "get",
+        "path": "/{jobId}/preview/updated-users/download"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "get",
+        "path": "/{jobId}/preview/users"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "post",
+        "path": "/{jobId}/roll-back"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "post",
+        "path": "/{jobId}/start"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "post",
+        "path": "/{jobId}/upload"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "post",
+        "path": "/{jobId}/user-content-update/upload"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -502,6 +930,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -520,6 +949,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -536,6 +966,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -553,6 +984,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -569,6 +1001,13 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+        "methods": "put",
+        "path": "/links/instances/{instanceId}"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -589,6 +1028,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -606,6 +1046,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -622,6 +1063,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -638,6 +1080,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -669,6 +1112,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -701,6 +1145,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -732,6 +1177,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -758,6 +1204,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -776,6 +1223,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -792,6 +1240,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -810,6 +1259,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -831,6 +1281,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {},
     "name": "mod-inventory",
     "org": "folio-org"
@@ -894,6 +1345,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -910,6 +1362,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -931,6 +1384,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -955,6 +1409,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -985,6 +1440,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1001,6 +1457,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1017,6 +1474,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1033,6 +1491,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1049,6 +1508,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1060,27 +1520,12 @@
   {
     "config": {
       "oas": [
-        "server/src/main/resources/openapi/meta-storage-1.0.yaml"
-      ],
-      "raml": [],
-      "upload": []
-    },
-    "metadata": {
-      "apiTypes": [
-        "OAS"
-      ]
-    },
-    "name": "mod-meta-storage",
-    "org": "folio-org"
-  },
-  {
-    "config": {
-      "oas": [
         "src/main/resources/swagger.api/notes.yml"
       ],
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -1098,6 +1543,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1118,6 +1564,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1147,6 +1594,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1177,6 +1625,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1193,6 +1642,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1217,6 +1667,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1234,6 +1685,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -1250,6 +1702,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1270,6 +1723,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1287,6 +1741,48 @@
       ],
       "upload": []
     },
+    "endpoints": [
+      {
+        "apiDescription": "ramls/tenantPermissions.raml",
+        "methods": "post",
+        "path": "/_/tenantpermissions"
+      },
+      {
+        "apiDescription": "ramls/permissions.raml",
+        "methods": "get post",
+        "path": "/perms/permissions"
+      },
+      {
+        "apiDescription": "ramls/permissions.raml",
+        "methods": "delete get put",
+        "path": "/perms/permissions/{id}"
+      },
+      {
+        "apiDescription": "ramls/permissions.raml",
+        "methods": "post",
+        "path": "/perms/purge-deprecated"
+      },
+      {
+        "apiDescription": "ramls/permissions.raml",
+        "methods": "get post",
+        "path": "/perms/users"
+      },
+      {
+        "apiDescription": "ramls/permissions.raml",
+        "methods": "delete get put",
+        "path": "/perms/users/{id}"
+      },
+      {
+        "apiDescription": "ramls/permissions.raml",
+        "methods": "get post",
+        "path": "/perms/users/{id}/permissions"
+      },
+      {
+        "apiDescription": "ramls/permissions.raml",
+        "methods": "delete",
+        "path": "/perms/users/{id}/permissions/{permissionname}"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1303,6 +1799,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1320,6 +1817,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -1336,12 +1834,141 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
       ]
     },
     "name": "mod-remote-storage",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "server/src/main/resources/openapi/reservoir.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "endpoints": [
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get",
+        "path": "/reservoir/clusters"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get",
+        "path": "/reservoir/clusters/{clusterId}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get post",
+        "path": "/reservoir/config/matchkeys"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "delete get put",
+        "path": "/reservoir/config/matchkeys/{id}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "put",
+        "path": "/reservoir/config/matchkeys/{id}/initialize"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get",
+        "path": "/reservoir/config/matchkeys/{id}/stats"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get post",
+        "path": "/reservoir/config/modules"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "delete get put",
+        "path": "/reservoir/config/modules/{id}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "put",
+        "path": "/reservoir/config/modules/{id}/reload"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "delete get put",
+        "path": "/reservoir/config/oai"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "delete get",
+        "path": "/reservoir/config/sources/{id}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "post",
+        "path": "/reservoir/ingest-jobs"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "delete get put",
+        "path": "/reservoir/ingest-jobs/{id}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get",
+        "path": "/reservoir/oai"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get post",
+        "path": "/reservoir/pmh-clients"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "delete get put",
+        "path": "/reservoir/pmh-clients/{id}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "post",
+        "path": "/reservoir/pmh-clients/{id}/start"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get",
+        "path": "/reservoir/pmh-clients/{id}/status"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "post",
+        "path": "/reservoir/pmh-clients/{id}/stop"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "delete get put",
+        "path": "/reservoir/records"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get",
+        "path": "/reservoir/records/{globalId}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get post",
+        "path": "/reservoir/sources"
+      }
+    ],
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "mod-reservoir",
     "org": "folio-org"
   },
   {
@@ -1353,6 +1980,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1371,6 +1999,7 @@
         "mod-search.html"
       ]
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -1387,6 +2016,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1406,6 +2036,58 @@
       ],
       "upload": []
     },
+    "endpoints": [
+      {
+        "apiDescription": "ramls/mapping-metadata-provider.raml",
+        "methods": "get",
+        "path": "/mapping-metadata/{jobExecutionId}"
+      },
+      {
+        "apiDescription": "ramls/mapping-rules-provider.raml",
+        "methods": "get put",
+        "path": "/mapping-rules/{recordType}"
+      },
+      {
+        "apiDescription": "ramls/mapping-rules-provider.raml",
+        "methods": "put",
+        "path": "/mapping-rules/{recordType}/restore"
+      },
+      {
+        "apiDescription": "ramls/metadata-provider.raml",
+        "methods": "get",
+        "path": "/metadata-provider/jobExecutions"
+      },
+      {
+        "apiDescription": "ramls/metadata-provider.raml",
+        "methods": "get",
+        "path": "/metadata-provider/jobExecutions/jobProfiles"
+      },
+      {
+        "apiDescription": "ramls/metadata-provider.raml",
+        "methods": "get",
+        "path": "/metadata-provider/jobExecutions/users"
+      },
+      {
+        "apiDescription": "ramls/metadata-provider.raml",
+        "methods": "get",
+        "path": "/metadata-provider/jobLogEntries/{jobExecutionId}"
+      },
+      {
+        "apiDescription": "ramls/metadata-provider.raml",
+        "methods": "get",
+        "path": "/metadata-provider/jobLogEntries/{jobExecutionId}/records/{recordId}"
+      },
+      {
+        "apiDescription": "ramls/metadata-provider.raml",
+        "methods": "get",
+        "path": "/metadata-provider/jobSummary/{jobExecutionId}"
+      },
+      {
+        "apiDescription": "ramls/metadata-provider.raml",
+        "methods": "get",
+        "path": "/metadata-provider/journalRecords/{jobExecutionId}"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1427,6 +2109,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1443,6 +2126,7 @@
       "raml": [],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -1459,6 +2143,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1475,6 +2160,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1496,6 +2182,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1512,6 +2199,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1528,6 +2216,163 @@
       ],
       "upload": []
     },
+    "endpoints": [
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get post",
+        "path": "/_/deployment/modules"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get",
+        "path": "/_/deployment/modules/{instance_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/discovery/health"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/discovery/health/{service_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/discovery/health/{service_id}/{instance_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get post",
+        "path": "/_/discovery/modules"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get",
+        "path": "/_/discovery/modules/{service_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get",
+        "path": "/_/discovery/modules/{service_id}/{instance_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/discovery/nodes"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get put",
+        "path": "/_/discovery/nodes/{node_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get post",
+        "path": "/_/env"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get",
+        "path": "/_/env/{id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/invoke/tenant/{id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "post",
+        "path": "/_/proxy/cleanup/modules"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/proxy/health"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "post",
+        "path": "/_/proxy/import/modules"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get post",
+        "path": "/_/proxy/modules"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get",
+        "path": "/_/proxy/modules/{module_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "post",
+        "path": "/_/proxy/pull/modules"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get post",
+        "path": "/_/proxy/tenants"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get put",
+        "path": "/_/proxy/tenants/{tenant_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get post",
+        "path": "/_/proxy/tenants/{tenant_id}/install"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get",
+        "path": "/_/proxy/tenants/{tenant_id}/install/{install_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/proxy/tenants/{tenant_id}/interfaces"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/proxy/tenants/{tenant_id}/interfaces/{interface_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get post",
+        "path": "/_/proxy/tenants/{tenant_id}/modules"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get post",
+        "path": "/_/proxy/tenants/{tenant_id}/modules/{module_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get patch",
+        "path": "/_/proxy/tenants/{tenant_id}/timers"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get patch",
+        "path": "/_/proxy/tenants/{tenant_id}/timers/{timer_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "post",
+        "path": "/_/proxy/tenants/{tenant_id}/upgrade"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/version"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1549,6 +2394,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1566,6 +2412,7 @@
       ],
       "upload": []
     },
+    "endpoints": [],
     "metadata": {
       "apiTypes": [
         "RAML"

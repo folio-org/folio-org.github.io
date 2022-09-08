@@ -36,10 +36,10 @@ inventory:
     - mod-inventory
     - mod-inventory-storage
     - mod-inventory-update
-    - mod-meta-storage
     - mod-kb-ebsco-java
     - mod-oai-pmh
     - edge-oai-pmh
+    - mod-reservoir
 erm:
   title: Resource management
   description: ERM, licenses, usage statistics.
