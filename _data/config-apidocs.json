@@ -1520,134 +1520,6 @@
   {
     "config": {
       "oas": [
-        "server/src/main/resources/openapi/meta-storage-1.0.yaml"
-      ],
-      "raml": [],
-      "upload": []
-    },
-    "endpoints": [
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "get",
-        "path": "/meta-storage/clusters"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "get",
-        "path": "/meta-storage/clusters/{clusterId}"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "get post",
-        "path": "/meta-storage/config/matchkeys"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "delete get put",
-        "path": "/meta-storage/config/matchkeys/{id}"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "put",
-        "path": "/meta-storage/config/matchkeys/{id}/initialize"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "get",
-        "path": "/meta-storage/config/matchkeys/{id}/stats"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "get post",
-        "path": "/meta-storage/config/modules"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "delete get put",
-        "path": "/meta-storage/config/modules/{id}"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "put",
-        "path": "/meta-storage/config/modules/{id}/reload"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "delete get put",
-        "path": "/meta-storage/config/oai"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "delete get",
-        "path": "/meta-storage/config/sources/{id}"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "post",
-        "path": "/meta-storage/ingest-jobs"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "delete get put",
-        "path": "/meta-storage/ingest-jobs/{id}"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "get",
-        "path": "/meta-storage/oai"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "get post",
-        "path": "/meta-storage/pmh-clients"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "delete get put",
-        "path": "/meta-storage/pmh-clients/{id}"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "post",
-        "path": "/meta-storage/pmh-clients/{id}/start"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "get",
-        "path": "/meta-storage/pmh-clients/{id}/status"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "post",
-        "path": "/meta-storage/pmh-clients/{id}/stop"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "delete get put",
-        "path": "/meta-storage/records"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "get",
-        "path": "/meta-storage/records/{globalId}"
-      },
-      {
-        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
-        "methods": "get post",
-        "path": "/meta-storage/sources"
-      }
-    ],
-    "metadata": {
-      "apiTypes": [
-        "OAS"
-      ]
-    },
-    "name": "mod-meta-storage",
-    "org": "folio-org"
-  },
-  {
-    "config": {
-      "oas": [
         "src/main/resources/swagger.api/notes.yml"
       ],
       "raml": [],
@@ -1969,6 +1841,134 @@
       ]
     },
     "name": "mod-remote-storage",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "server/src/main/resources/openapi/reservoir.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "endpoints": [
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get",
+        "path": "/reservoir/clusters"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get",
+        "path": "/reservoir/clusters/{clusterId}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get post",
+        "path": "/reservoir/config/matchkeys"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "delete get put",
+        "path": "/reservoir/config/matchkeys/{id}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "put",
+        "path": "/reservoir/config/matchkeys/{id}/initialize"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get",
+        "path": "/reservoir/config/matchkeys/{id}/stats"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get post",
+        "path": "/reservoir/config/modules"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "delete get put",
+        "path": "/reservoir/config/modules/{id}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "put",
+        "path": "/reservoir/config/modules/{id}/reload"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "delete get put",
+        "path": "/reservoir/config/oai"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "delete get",
+        "path": "/reservoir/config/sources/{id}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "post",
+        "path": "/reservoir/ingest-jobs"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "delete get put",
+        "path": "/reservoir/ingest-jobs/{id}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get",
+        "path": "/reservoir/oai"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get post",
+        "path": "/reservoir/pmh-clients"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "delete get put",
+        "path": "/reservoir/pmh-clients/{id}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "post",
+        "path": "/reservoir/pmh-clients/{id}/start"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get",
+        "path": "/reservoir/pmh-clients/{id}/status"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "post",
+        "path": "/reservoir/pmh-clients/{id}/stop"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "delete get put",
+        "path": "/reservoir/records"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get",
+        "path": "/reservoir/records/{globalId}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+        "methods": "get post",
+        "path": "/reservoir/sources"
+      }
+    ],
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ]
+    },
+    "name": "mod-reservoir",
     "org": "folio-org"
   },
   {
