@@ -313,7 +313,193 @@
       ],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "post",
+        "path": "/circulation/check-in-by-barcode"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "post",
+        "path": "/circulation/check-out-by-barcode"
+      },
+      {
+        "apiDescription": "ramls/end-patron-action-session.raml",
+        "methods": "post",
+        "path": "/circulation/end-patron-action-session"
+      },
+      {
+        "apiDescription": "ramls/circulation-event-handlers.raml",
+        "methods": "post",
+        "path": "/circulation/handlers//loan-related-fee-fine-closed"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "delete get post",
+        "path": "/circulation/loans"
+      },
+      {
+        "apiDescription": "ramls/change-due-date.raml",
+        "methods": "post",
+        "path": "/circulation/loans/{id}/change-due-date"
+      },
+      {
+        "apiDescription": "ramls/claim-item-returned.raml",
+        "methods": "post",
+        "path": "/circulation/loans/{id}/claim-item-returned"
+      },
+      {
+        "apiDescription": "ramls/claim-item-returned.raml",
+        "methods": "post",
+        "path": "/circulation/loans/{id}/declare-claimed-returned-item-as-missing"
+      },
+      {
+        "apiDescription": "ramls/declare-item-lost.raml",
+        "methods": "post",
+        "path": "/circulation/loans/{id}/declare-item-lost"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "delete get put",
+        "path": "/circulation/loans/{loanId}"
+      },
+      {
+        "apiDescription": "ramls/pick-slips.raml",
+        "methods": "get",
+        "path": "/circulation/pick-slips/{servicePointId}"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "post",
+        "path": "/circulation/renew-by-barcode"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "post",
+        "path": "/circulation/renew-by-id"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "delete get post",
+        "path": "/circulation/requests"
+      },
+      {
+        "apiDescription": "ramls/requests-reports.raml",
+        "methods": "get",
+        "path": "/circulation/requests-reports/hold-shelf-clearance/{servicePointId}"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "post",
+        "path": "/circulation/requests/instances"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "get",
+        "path": "/circulation/requests/queue/instance/{instanceId}"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "post",
+        "path": "/circulation/requests/queue/instance/{instanceId}/reorder"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "get",
+        "path": "/circulation/requests/queue/item/{itemId}"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "post",
+        "path": "/circulation/requests/queue/item/{itemId}/reorder"
+      },
+      {
+        "apiDescription": "ramls/circulation.raml",
+        "methods": "delete get put",
+        "path": "/circulation/requests/{requestId}"
+      },
+      {
+        "apiDescription": "ramls/request-move.raml",
+        "methods": "post",
+        "path": "/circulation/requests/{requestId}/move"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get put",
+        "path": "/circulation/rules"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/loan-policy"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/loan-policy-all"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/lost-item-policy"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/lost-item-policy-all"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/notice-policy"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/notice-policy-all"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/overdue-fine-policy"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/overdue-fine-policy-all"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/request-policy"
+      },
+      {
+        "apiDescription": "ramls/circulation-rules.raml",
+        "methods": "get",
+        "path": "/circulation/rules/request-policy-all"
+      },
+      {
+        "apiDescription": "ramls/age-to-lost-background-processes.raml",
+        "methods": "post",
+        "path": "/circulation/scheduled-age-to-lost"
+      },
+      {
+        "apiDescription": "ramls/age-to-lost-background-processes.raml",
+        "methods": "post",
+        "path": "/circulation/scheduled-age-to-lost-fee-charging"
+      },
+      {
+        "apiDescription": "ramls/inventory-reports.raml",
+        "methods": "get",
+        "path": "/inventory-reports/items-in-transit"
+      },
+      {
+        "apiDescription": "ramls/loan-anonymization.raml",
+        "methods": "post",
+        "path": "/loan-anonymization/by-user/{userId}"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -656,7 +842,78 @@
       "raml": [],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "src/main/resources/swagger.api/order-export.yaml",
+        "methods": "get",
+        "path": "/order-stub"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bursar-export.yaml",
+        "methods": "get",
+        "path": "/stub"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/circulation-log.yaml",
+        "methods": "get",
+        "path": "/stub"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/e-holdings.yaml",
+        "methods": "get",
+        "path": "/stub"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "get",
+        "path": "/{jobId}/errors"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "post",
+        "path": "/{jobId}/item-content-update/upload"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "get",
+        "path": "/{jobId}/preview/items"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "get",
+        "path": "/{jobId}/preview/updated-items/download"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "get",
+        "path": "/{jobId}/preview/updated-users/download"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "get",
+        "path": "/{jobId}/preview/users"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "post",
+        "path": "/{jobId}/roll-back"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "post",
+        "path": "/{jobId}/start"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "post",
+        "path": "/{jobId}/upload"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "post",
+        "path": "/{jobId}/user-content-update/upload"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -1268,7 +1525,118 @@
       "raml": [],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "get",
+        "path": "/meta-storage/clusters"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "get",
+        "path": "/meta-storage/clusters/{clusterId}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "get post",
+        "path": "/meta-storage/config/matchkeys"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "delete get put",
+        "path": "/meta-storage/config/matchkeys/{id}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "put",
+        "path": "/meta-storage/config/matchkeys/{id}/initialize"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "get",
+        "path": "/meta-storage/config/matchkeys/{id}/stats"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "get post",
+        "path": "/meta-storage/config/modules"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "delete get put",
+        "path": "/meta-storage/config/modules/{id}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "put",
+        "path": "/meta-storage/config/modules/{id}/reload"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "delete get put",
+        "path": "/meta-storage/config/oai"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "delete get",
+        "path": "/meta-storage/config/sources/{id}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "post",
+        "path": "/meta-storage/ingest-jobs"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "delete get put",
+        "path": "/meta-storage/ingest-jobs/{id}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "get",
+        "path": "/meta-storage/oai"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "get post",
+        "path": "/meta-storage/pmh-clients"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "delete get put",
+        "path": "/meta-storage/pmh-clients/{id}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "post",
+        "path": "/meta-storage/pmh-clients/{id}/start"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "get",
+        "path": "/meta-storage/pmh-clients/{id}/status"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "post",
+        "path": "/meta-storage/pmh-clients/{id}/stop"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "delete get put",
+        "path": "/meta-storage/records"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "get",
+        "path": "/meta-storage/records/{globalId}"
+      },
+      {
+        "apiDescription": "server/src/main/resources/openapi/meta-storage-1.0.yaml",
+        "methods": "get post",
+        "path": "/meta-storage/sources"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -1848,7 +2216,163 @@
       ],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get post",
+        "path": "/_/deployment/modules"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get",
+        "path": "/_/deployment/modules/{instance_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/discovery/health"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/discovery/health/{service_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/discovery/health/{service_id}/{instance_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get post",
+        "path": "/_/discovery/modules"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get",
+        "path": "/_/discovery/modules/{service_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get",
+        "path": "/_/discovery/modules/{service_id}/{instance_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/discovery/nodes"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get put",
+        "path": "/_/discovery/nodes/{node_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get post",
+        "path": "/_/env"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get",
+        "path": "/_/env/{id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/invoke/tenant/{id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "post",
+        "path": "/_/proxy/cleanup/modules"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/proxy/health"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "post",
+        "path": "/_/proxy/import/modules"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get post",
+        "path": "/_/proxy/modules"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get",
+        "path": "/_/proxy/modules/{module_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "post",
+        "path": "/_/proxy/pull/modules"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get post",
+        "path": "/_/proxy/tenants"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get put",
+        "path": "/_/proxy/tenants/{tenant_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get post",
+        "path": "/_/proxy/tenants/{tenant_id}/install"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get",
+        "path": "/_/proxy/tenants/{tenant_id}/install/{install_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/proxy/tenants/{tenant_id}/interfaces"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/proxy/tenants/{tenant_id}/interfaces/{interface_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get post",
+        "path": "/_/proxy/tenants/{tenant_id}/modules"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "delete get post",
+        "path": "/_/proxy/tenants/{tenant_id}/modules/{module_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get patch",
+        "path": "/_/proxy/tenants/{tenant_id}/timers"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get patch",
+        "path": "/_/proxy/tenants/{tenant_id}/timers/{timer_id}"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "post",
+        "path": "/_/proxy/tenants/{tenant_id}/upgrade"
+      },
+      {
+        "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+        "methods": "get",
+        "path": "/_/version"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
