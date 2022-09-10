@@ -54,31 +54,31 @@ Listed endpoints count: {{ endpointList.size }}
     </tr>
   </thead>
   <tbody>
-{% assign endpointListSorted = endpointList | sort %}
-{% for item in endpointListSorted %}
-  {% assign pieces = item | split: "|" %}
-  {% assign methods = pieces[1] | split: ' ' %}
-  {% capture file_name %}{{ pieces[3] | split: "/" | last | replace_first: ".raml", "" | replace_first: ".yaml", ""}}{% endcapture %}
-  {% assign api_type = "oas" %}
-  {% assign directory = "s" %}
+{% assign endpointListSorted = endpointList | sort -%}
+{% for item in endpointListSorted -%}
+  {% assign pieces = item | split: "|" -%}
+  {% assign methods = pieces[1] | split: ' ' -%}
+  {% capture file_name %}{{ pieces[3] | split: "/" | last | replace_first: ".raml", "" | replace_first: ".yaml", ""}}{% endcapture -%}
+  {% assign api_type = "oas" -%}
+  {% assign directory = "s" -%}
   {% if pieces[3] contains ".raml" %}
     {% assign api_type = "raml" %}
     {% assign directory = "p" %}
   {% endif %}
-  {% capture anchor %}{{ pieces[2] }}: {{ pieces[3] }}{% endcapture %}
-  {% capture href %}{{ urlApiXref }}#{{ pieces[2] }}-{{ file_name }}{% endcapture %}
-  {% capture link %}<a href="{{ href }}">{{ anchor }}</a>{% endcapture %}
+  {% capture anchor %}{{ pieces[2] }}: {{ pieces[3] }}{% endcapture -%}
+  {% capture href %}{{ urlApiXref }}#{{ pieces[2] }}-{{ file_name }}{% endcapture -%}
+  {% capture link %}<a href="{{ href }}">{{ anchor }}</a>{% endcapture -%}
   {%- capture method_links -%}
-    {% for method in methods %}
-      {% if method contains ":" %}
-        {% assign method_parts = method | split: ':' %}
-        {% if method_parts[1] != "null" %}
+    {% for method in methods -%}
+      {% if method contains ":" -%}
+        {% assign method_parts = method | split: ':' -%}
+        {% if method_parts[1] != "null" -%}
           <a href="{{ urlS3Base }}{{ pieces[2] }}/{{ directory }}/{{ file_name }}.html#{{ method_parts[1] }}">{{ method_parts[0] }}</a>
-        {% else %}
+        {%- else %}
           {{ method_parts[0] }}
-        {% endif %}
+        {% endif -%}
       {% else %}
-        {{ method }}
+        {{- method -}}
       {% endif %}
     {% endfor %}
   {%- endcapture -%}
