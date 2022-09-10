@@ -358,187 +358,187 @@
     "endpoints": [
       {
         "apiDescription": "ramls/circulation.raml",
-        "methods": "post",
+        "methods": "post:circulation_check_in_by_barcode_post",
         "path": "/circulation/check-in-by-barcode"
       },
       {
         "apiDescription": "ramls/circulation.raml",
-        "methods": "post",
+        "methods": "post:circulation_check_out_by_barcode_post",
         "path": "/circulation/check-out-by-barcode"
       },
       {
         "apiDescription": "ramls/end-patron-action-session.raml",
-        "methods": "post",
+        "methods": "post:circulation_end_patron_action_session_post",
         "path": "/circulation/end-patron-action-session"
       },
       {
         "apiDescription": "ramls/circulation-event-handlers.raml",
-        "methods": "post",
+        "methods": "post:circulation_handlers__loan_related_fee_fine_closed_post",
         "path": "/circulation/handlers//loan-related-fee-fine-closed"
       },
       {
         "apiDescription": "ramls/circulation.raml",
-        "methods": "delete get post",
+        "methods": "delete:circulation_loans_delete get:circulation_loans_get post:circulation_loans_post",
         "path": "/circulation/loans"
       },
       {
         "apiDescription": "ramls/change-due-date.raml",
-        "methods": "post",
+        "methods": "post:circulation_loans__id__change_due_date_post",
         "path": "/circulation/loans/{id}/change-due-date"
       },
       {
         "apiDescription": "ramls/claim-item-returned.raml",
-        "methods": "post",
+        "methods": "post:circulation_loans__id__claim_item_returned_post",
         "path": "/circulation/loans/{id}/claim-item-returned"
       },
       {
         "apiDescription": "ramls/claim-item-returned.raml",
-        "methods": "post",
+        "methods": "post:circulation_loans__id__declare_claimed_returned_item_as_missing_post",
         "path": "/circulation/loans/{id}/declare-claimed-returned-item-as-missing"
       },
       {
         "apiDescription": "ramls/declare-item-lost.raml",
-        "methods": "post",
+        "methods": "post:circulation_loans__id__declare_item_lost_post",
         "path": "/circulation/loans/{id}/declare-item-lost"
       },
       {
         "apiDescription": "ramls/circulation.raml",
-        "methods": "delete get put",
+        "methods": "delete:circulation_loans__loanid__delete get:circulation_loans__loanid__get put:circulation_loans__loanid__put",
         "path": "/circulation/loans/{loanId}"
       },
       {
         "apiDescription": "ramls/pick-slips.raml",
-        "methods": "get",
+        "methods": "get:circulation_pick_slips__servicepointid__get",
         "path": "/circulation/pick-slips/{servicePointId}"
       },
       {
         "apiDescription": "ramls/circulation.raml",
-        "methods": "post",
+        "methods": "post:circulation_renew_by_barcode_post",
         "path": "/circulation/renew-by-barcode"
       },
       {
         "apiDescription": "ramls/circulation.raml",
-        "methods": "post",
+        "methods": "post:circulation_renew_by_id_post",
         "path": "/circulation/renew-by-id"
       },
       {
         "apiDescription": "ramls/circulation.raml",
-        "methods": "delete get post",
+        "methods": "delete:circulation_requests_delete get:circulation_requests_get post:circulation_requests_post",
         "path": "/circulation/requests"
       },
       {
         "apiDescription": "ramls/requests-reports.raml",
-        "methods": "get",
+        "methods": "get:circulation_requests_reports_hold_shelf_clearance__servicepointid__get",
         "path": "/circulation/requests-reports/hold-shelf-clearance/{servicePointId}"
       },
       {
         "apiDescription": "ramls/circulation.raml",
-        "methods": "post",
+        "methods": "post:circulation_requests_instances_post",
         "path": "/circulation/requests/instances"
       },
       {
         "apiDescription": "ramls/circulation.raml",
-        "methods": "get",
+        "methods": "get:circulation_requests_queue_instance__instanceid__get",
         "path": "/circulation/requests/queue/instance/{instanceId}"
       },
       {
         "apiDescription": "ramls/circulation.raml",
-        "methods": "post",
+        "methods": "post:circulation_requests_queue_instance__instanceid__reorder_post",
         "path": "/circulation/requests/queue/instance/{instanceId}/reorder"
       },
       {
         "apiDescription": "ramls/circulation.raml",
-        "methods": "get",
+        "methods": "get:circulation_requests_queue_item__itemid__get",
         "path": "/circulation/requests/queue/item/{itemId}"
       },
       {
         "apiDescription": "ramls/circulation.raml",
-        "methods": "post",
+        "methods": "post:circulation_requests_queue_item__itemid__reorder_post",
         "path": "/circulation/requests/queue/item/{itemId}/reorder"
       },
       {
         "apiDescription": "ramls/circulation.raml",
-        "methods": "delete get put",
+        "methods": "delete:circulation_requests__requestid__delete get:circulation_requests__requestid__get put:circulation_requests__requestid__put",
         "path": "/circulation/requests/{requestId}"
       },
       {
         "apiDescription": "ramls/request-move.raml",
-        "methods": "post",
+        "methods": "post:circulation_requests__requestid__move_post",
         "path": "/circulation/requests/{requestId}/move"
       },
       {
         "apiDescription": "ramls/circulation-rules.raml",
-        "methods": "get put",
+        "methods": "get:circulation_rules_get put:circulation_rules_put",
         "path": "/circulation/rules"
       },
       {
         "apiDescription": "ramls/circulation-rules.raml",
-        "methods": "get",
+        "methods": "get:circulation_rules_loan_policy_get",
         "path": "/circulation/rules/loan-policy"
       },
       {
         "apiDescription": "ramls/circulation-rules.raml",
-        "methods": "get",
+        "methods": "get:circulation_rules_loan_policy_all_get",
         "path": "/circulation/rules/loan-policy-all"
       },
       {
         "apiDescription": "ramls/circulation-rules.raml",
-        "methods": "get",
+        "methods": "get:circulation_rules_lost_item_policy_get",
         "path": "/circulation/rules/lost-item-policy"
       },
       {
         "apiDescription": "ramls/circulation-rules.raml",
-        "methods": "get",
+        "methods": "get:circulation_rules_lost_item_policy_all_get",
         "path": "/circulation/rules/lost-item-policy-all"
       },
       {
         "apiDescription": "ramls/circulation-rules.raml",
-        "methods": "get",
+        "methods": "get:circulation_rules_notice_policy_get",
         "path": "/circulation/rules/notice-policy"
       },
       {
         "apiDescription": "ramls/circulation-rules.raml",
-        "methods": "get",
+        "methods": "get:circulation_rules_notice_policy_all_get",
         "path": "/circulation/rules/notice-policy-all"
       },
       {
         "apiDescription": "ramls/circulation-rules.raml",
-        "methods": "get",
+        "methods": "get:circulation_rules_overdue_fine_policy_get",
         "path": "/circulation/rules/overdue-fine-policy"
       },
       {
         "apiDescription": "ramls/circulation-rules.raml",
-        "methods": "get",
+        "methods": "get:circulation_rules_overdue_fine_policy_all_get",
         "path": "/circulation/rules/overdue-fine-policy-all"
       },
       {
         "apiDescription": "ramls/circulation-rules.raml",
-        "methods": "get",
+        "methods": "get:circulation_rules_request_policy_get",
         "path": "/circulation/rules/request-policy"
       },
       {
         "apiDescription": "ramls/circulation-rules.raml",
-        "methods": "get",
+        "methods": "get:circulation_rules_request_policy_all_get",
         "path": "/circulation/rules/request-policy-all"
       },
       {
         "apiDescription": "ramls/age-to-lost-background-processes.raml",
-        "methods": "post",
+        "methods": "post:circulation_scheduled_age_to_lost_post",
         "path": "/circulation/scheduled-age-to-lost"
       },
       {
         "apiDescription": "ramls/age-to-lost-background-processes.raml",
-        "methods": "post",
+        "methods": "post:circulation_scheduled_age_to_lost_fee_charging_post",
         "path": "/circulation/scheduled-age-to-lost-fee-charging"
       },
       {
         "apiDescription": "ramls/inventory-reports.raml",
-        "methods": "get",
+        "methods": "get:inventory_reports_items_in_transit_get",
         "path": "/inventory-reports/items-in-transit"
       },
       {
         "apiDescription": "ramls/loan-anonymization.raml",
-        "methods": "post",
+        "methods": "post:loan_anonymization_by_user__userid__post",
         "path": "/loan-anonymization/by-user/{userId}"
       }
     ],
@@ -1201,7 +1201,63 @@
       "raml": [],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+        "methods": "get:operation/getReportData",
+        "path": "/eusage-reports/report-data"
+      },
+      {
+        "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+        "methods": "post:operation/postFromAgreement",
+        "path": "/eusage-reports/report-data/from-agreement"
+      },
+      {
+        "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+        "methods": "get:operation/getReportStatus",
+        "path": "/eusage-reports/report-data/status/{id}"
+      },
+      {
+        "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+        "methods": "get:operation/getReportPackages",
+        "path": "/eusage-reports/report-packages"
+      },
+      {
+        "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+        "methods": "get:operation/getReportTitles post:operation/postReportTitles",
+        "path": "/eusage-reports/report-titles"
+      },
+      {
+        "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+        "methods": "post:operation/postFromCounter",
+        "path": "/eusage-reports/report-titles/from-counter"
+      },
+      {
+        "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+        "methods": "get:operation/getCostPerUse",
+        "path": "/eusage-reports/stored-reports/cost-per-use"
+      },
+      {
+        "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+        "methods": "get:operation/getReqsByDateOfUse",
+        "path": "/eusage-reports/stored-reports/reqs-by-date-of-use"
+      },
+      {
+        "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+        "methods": "get:operation/getReqsByPubYear",
+        "path": "/eusage-reports/stored-reports/reqs-by-pub-year"
+      },
+      {
+        "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+        "methods": "get:operation/getUseOverTime",
+        "path": "/eusage-reports/stored-reports/use-over-time"
+      },
+      {
+        "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+        "methods": "get:operation/getTitleData",
+        "path": "/eusage-reports/title-data"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -2325,42 +2381,42 @@
     "endpoints": [
       {
         "apiDescription": "ramls/tenantPermissions.raml",
-        "methods": "post",
+        "methods": "post:tenantpermissions_post",
         "path": "/_/tenantpermissions"
       },
       {
         "apiDescription": "ramls/permissions.raml",
-        "methods": "get post",
+        "methods": "get:perms_permissions_get post:perms_permissions_post",
         "path": "/perms/permissions"
       },
       {
         "apiDescription": "ramls/permissions.raml",
-        "methods": "delete get put",
+        "methods": "delete:perms_permissions__id__delete get:perms_permissions__id__get put:perms_permissions__id__put",
         "path": "/perms/permissions/{id}"
       },
       {
         "apiDescription": "ramls/permissions.raml",
-        "methods": "post",
+        "methods": "post:perms_purge_deprecated_post",
         "path": "/perms/purge-deprecated"
       },
       {
         "apiDescription": "ramls/permissions.raml",
-        "methods": "get post",
+        "methods": "get:perms_users_get post:perms_users_post",
         "path": "/perms/users"
       },
       {
         "apiDescription": "ramls/permissions.raml",
-        "methods": "delete get put",
+        "methods": "delete:perms_users__id__delete get:perms_users__id__get put:perms_users__id__put",
         "path": "/perms/users/{id}"
       },
       {
         "apiDescription": "ramls/permissions.raml",
-        "methods": "get post",
+        "methods": "get:perms_users__id__permissions_get post:perms_users__id__permissions_post",
         "path": "/perms/users/{id}/permissions"
       },
       {
         "apiDescription": "ramls/permissions.raml",
-        "methods": "delete",
+        "methods": "delete:perms_users__id__permissions__permissionname__delete",
         "path": "/perms/users/{id}/permissions/{permissionname}"
       }
     ],
