@@ -80,7 +80,38 @@
       ],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "ramls/edge-lti-courses.raml",
+        "methods": "get",
+        "path": "/admin/health"
+      },
+      {
+        "apiDescription": "ramls/edge-lti-courses.raml",
+        "methods": "get",
+        "path": "/lti-courses/.well-known/jwks.json"
+      },
+      {
+        "apiDescription": "ramls/edge-lti-courses.raml",
+        "methods": "post",
+        "path": "/lti-courses/externalIdLaunches/{apiKeyPath}"
+      },
+      {
+        "apiDescription": "ramls/edge-lti-courses.raml",
+        "methods": "post",
+        "path": "/lti-courses/launches/{apiKeyPath}"
+      },
+      {
+        "apiDescription": "ramls/edge-lti-courses.raml",
+        "methods": "get",
+        "path": "/lti-courses/oidc-login-init/{apiKeyPath}"
+      },
+      {
+        "apiDescription": "ramls/edge-lti-courses.raml",
+        "methods": "post",
+        "path": "/lti-courses/registrarIdLaunches/{apiKeyPath}"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -214,7 +245,18 @@
       "raml": [],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "src/main/resources/swagger.api/tenant.yaml",
+        "methods": "post",
+        "path": "/_/tenant"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/tenant.yaml",
+        "methods": "delete get",
+        "path": "/_/tenant/{operationId}"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -781,7 +823,88 @@
       ],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "ramls/dataExport.raml",
+        "methods": "post",
+        "path": "/data-export/clean-up-files"
+      },
+      {
+        "apiDescription": "ramls/dataExport.raml",
+        "methods": "post",
+        "path": "/data-export/expire-jobs"
+      },
+      {
+        "apiDescription": "ramls/dataExport.raml",
+        "methods": "post",
+        "path": "/data-export/export"
+      },
+      {
+        "apiDescription": "ramls/dataExport-file-definition.raml",
+        "methods": "post",
+        "path": "/data-export/file-definitions"
+      },
+      {
+        "apiDescription": "ramls/dataExport-file-definition.raml",
+        "methods": "get",
+        "path": "/data-export/file-definitions/{fileDefinitionId}"
+      },
+      {
+        "apiDescription": "ramls/dataExport-file-definition.raml",
+        "methods": "post",
+        "path": "/data-export/file-definitions/{fileDefinitionId}/upload"
+      },
+      {
+        "apiDescription": "ramls/dataExport.raml",
+        "methods": "get",
+        "path": "/data-export/job-executions"
+      },
+      {
+        "apiDescription": "ramls/dataExport.raml",
+        "methods": "delete",
+        "path": "/data-export/job-executions/{id}"
+      },
+      {
+        "apiDescription": "ramls/dataExport.raml",
+        "methods": "get",
+        "path": "/data-export/job-executions/{jobExecutionId}/download/{exportFileId}"
+      },
+      {
+        "apiDescription": "ramls/dataExport-job-profile.raml",
+        "methods": "get post",
+        "path": "/data-export/job-profiles"
+      },
+      {
+        "apiDescription": "ramls/dataExport-job-profile.raml",
+        "methods": "delete get put",
+        "path": "/data-export/job-profiles/{id}"
+      },
+      {
+        "apiDescription": "ramls/dataExport-logs.raml",
+        "methods": "get",
+        "path": "/data-export/logs"
+      },
+      {
+        "apiDescription": "ramls/dataExport-mapping-profiles.raml",
+        "methods": "get post",
+        "path": "/data-export/mapping-profiles"
+      },
+      {
+        "apiDescription": "ramls/dataExport-mapping-profiles.raml",
+        "methods": "delete get put",
+        "path": "/data-export/mapping-profiles/{id}"
+      },
+      {
+        "apiDescription": "ramls/dataExport.raml",
+        "methods": "post",
+        "path": "/data-export/quick-export"
+      },
+      {
+        "apiDescription": "ramls/dataExport-transformation-fields.raml",
+        "methods": "get",
+        "path": "/data-export/transformation-fields"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -871,12 +994,27 @@
       {
         "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
         "methods": "post",
+        "path": "/{jobId}/holdings-content-update/upload"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "post",
         "path": "/{jobId}/item-content-update/upload"
       },
       {
         "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
         "methods": "get",
+        "path": "/{jobId}/preview/holdings"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "get",
         "path": "/{jobId}/preview/items"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "get",
+        "path": "/{jobId}/preview/updated-holdings/download"
       },
       {
         "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
@@ -1112,7 +1250,248 @@
       ],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "ramls/accounts.raml",
+        "methods": "get post",
+        "path": "/accounts"
+      },
+      {
+        "apiDescription": "ramls/accounts-bulk.raml",
+        "methods": "post",
+        "path": "/accounts-bulk/cancel"
+      },
+      {
+        "apiDescription": "ramls/accounts-bulk.raml",
+        "methods": "post",
+        "path": "/accounts-bulk/check-pay"
+      },
+      {
+        "apiDescription": "ramls/accounts-bulk.raml",
+        "methods": "post",
+        "path": "/accounts-bulk/check-refund"
+      },
+      {
+        "apiDescription": "ramls/accounts-bulk.raml",
+        "methods": "post",
+        "path": "/accounts-bulk/check-transfer"
+      },
+      {
+        "apiDescription": "ramls/accounts-bulk.raml",
+        "methods": "post",
+        "path": "/accounts-bulk/check-waive"
+      },
+      {
+        "apiDescription": "ramls/accounts-bulk.raml",
+        "methods": "post",
+        "path": "/accounts-bulk/pay"
+      },
+      {
+        "apiDescription": "ramls/accounts-bulk.raml",
+        "methods": "post",
+        "path": "/accounts-bulk/refund"
+      },
+      {
+        "apiDescription": "ramls/accounts-bulk.raml",
+        "methods": "post",
+        "path": "/accounts-bulk/transfer"
+      },
+      {
+        "apiDescription": "ramls/accounts-bulk.raml",
+        "methods": "post",
+        "path": "/accounts-bulk/waive"
+      },
+      {
+        "apiDescription": "ramls/accounts.raml",
+        "methods": "delete get put",
+        "path": "/accounts/{accountId}"
+      },
+      {
+        "apiDescription": "ramls/accounts.raml",
+        "methods": "post",
+        "path": "/accounts/{accountId}/cancel"
+      },
+      {
+        "apiDescription": "ramls/accounts.raml",
+        "methods": "post",
+        "path": "/accounts/{accountId}/check-pay"
+      },
+      {
+        "apiDescription": "ramls/accounts.raml",
+        "methods": "post",
+        "path": "/accounts/{accountId}/check-refund"
+      },
+      {
+        "apiDescription": "ramls/accounts.raml",
+        "methods": "post",
+        "path": "/accounts/{accountId}/check-transfer"
+      },
+      {
+        "apiDescription": "ramls/accounts.raml",
+        "methods": "post",
+        "path": "/accounts/{accountId}/check-waive"
+      },
+      {
+        "apiDescription": "ramls/accounts.raml",
+        "methods": "post",
+        "path": "/accounts/{accountId}/pay"
+      },
+      {
+        "apiDescription": "ramls/accounts.raml",
+        "methods": "post",
+        "path": "/accounts/{accountId}/refund"
+      },
+      {
+        "apiDescription": "ramls/accounts.raml",
+        "methods": "post",
+        "path": "/accounts/{accountId}/transfer"
+      },
+      {
+        "apiDescription": "ramls/accounts.raml",
+        "methods": "post",
+        "path": "/accounts/{accountId}/waive"
+      },
+      {
+        "apiDescription": "ramls/comments.raml",
+        "methods": "get post",
+        "path": "/comments"
+      },
+      {
+        "apiDescription": "ramls/comments.raml",
+        "methods": "delete get put",
+        "path": "/comments/{commentId}"
+      },
+      {
+        "apiDescription": "ramls/feefine-reports.raml",
+        "methods": "post",
+        "path": "/feefine-reports/cash-drawer-reconciliation"
+      },
+      {
+        "apiDescription": "ramls/feefine-reports.raml",
+        "methods": "post",
+        "path": "/feefine-reports/cash-drawer-reconciliation/sources"
+      },
+      {
+        "apiDescription": "ramls/feefine-reports.raml",
+        "methods": "post",
+        "path": "/feefine-reports/financial-transactions-detail"
+      },
+      {
+        "apiDescription": "ramls/feefine-reports.raml",
+        "methods": "post",
+        "path": "/feefine-reports/refund"
+      },
+      {
+        "apiDescription": "ramls/feefines.raml",
+        "methods": "get post",
+        "path": "/feefines"
+      },
+      {
+        "apiDescription": "ramls/feefines.raml",
+        "methods": "delete get put",
+        "path": "/feefines/{feefineId}"
+      },
+      {
+        "apiDescription": "ramls/lost-item-fee-policy.raml",
+        "methods": "get post",
+        "path": "/lost-item-fees-policies"
+      },
+      {
+        "apiDescription": "ramls/lost-item-fee-policy.raml",
+        "methods": "delete get put",
+        "path": "/lost-item-fees-policies/{lostItemFeePolicyId}"
+      },
+      {
+        "apiDescription": "ramls/manual-block-templates.raml",
+        "methods": "get post",
+        "path": "/manual-block-templates"
+      },
+      {
+        "apiDescription": "ramls/manual-block-templates.raml",
+        "methods": "delete get put",
+        "path": "/manual-block-templates/{id}"
+      },
+      {
+        "apiDescription": "ramls/manualblocks.raml",
+        "methods": "get post",
+        "path": "/manualblocks"
+      },
+      {
+        "apiDescription": "ramls/manualblocks.raml",
+        "methods": "delete get put",
+        "path": "/manualblocks/{manualblockId}"
+      },
+      {
+        "apiDescription": "ramls/overdue-fine-policy.raml",
+        "methods": "get post",
+        "path": "/overdue-fines-policies"
+      },
+      {
+        "apiDescription": "ramls/overdue-fine-policy.raml",
+        "methods": "delete get put",
+        "path": "/overdue-fines-policies/{overdueFinePolicyId}"
+      },
+      {
+        "apiDescription": "ramls/owners.raml",
+        "methods": "get post",
+        "path": "/owners"
+      },
+      {
+        "apiDescription": "ramls/owners.raml",
+        "methods": "delete get put",
+        "path": "/owners/{ownerId}"
+      },
+      {
+        "apiDescription": "ramls/payments.raml",
+        "methods": "get post",
+        "path": "/payments"
+      },
+      {
+        "apiDescription": "ramls/payments.raml",
+        "methods": "delete get put",
+        "path": "/payments/{paymentId}"
+      },
+      {
+        "apiDescription": "ramls/refunds.raml",
+        "methods": "get post",
+        "path": "/refunds"
+      },
+      {
+        "apiDescription": "ramls/refunds.raml",
+        "methods": "delete get put",
+        "path": "/refunds/{refundId}"
+      },
+      {
+        "apiDescription": "ramls/transfer-criteria.raml",
+        "methods": "get post",
+        "path": "/transfer-criterias"
+      },
+      {
+        "apiDescription": "ramls/transfer-criteria.raml",
+        "methods": "delete get put",
+        "path": "/transfer-criterias/{transferCriteriaId}"
+      },
+      {
+        "apiDescription": "ramls/transfers.raml",
+        "methods": "get post",
+        "path": "/transfers"
+      },
+      {
+        "apiDescription": "ramls/transfers.raml",
+        "methods": "delete get put",
+        "path": "/transfers/{transferId}"
+      },
+      {
+        "apiDescription": "ramls/waiver.raml",
+        "methods": "get post",
+        "path": "/waives"
+      },
+      {
+        "apiDescription": "ramls/waiver.raml",
+        "methods": "delete get put",
+        "path": "/waives/{waiveId}"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1177,7 +1556,173 @@
       ],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "ramls/budget_expense_class.raml",
+        "methods": "get post",
+        "path": "/finance-storage/budget-expense-classes"
+      },
+      {
+        "apiDescription": "ramls/budget_expense_class.raml",
+        "methods": "delete get put",
+        "path": "/finance-storage/budget-expense-classes/{id}"
+      },
+      {
+        "apiDescription": "ramls/budget.raml",
+        "methods": "get post",
+        "path": "/finance-storage/budgets"
+      },
+      {
+        "apiDescription": "ramls/budget.raml",
+        "methods": "delete get put",
+        "path": "/finance-storage/budgets/{id}"
+      },
+      {
+        "apiDescription": "ramls/expense_class.raml",
+        "methods": "get post",
+        "path": "/finance-storage/expense-classes"
+      },
+      {
+        "apiDescription": "ramls/expense_class.raml",
+        "methods": "delete get put",
+        "path": "/finance-storage/expense-classes/{id}"
+      },
+      {
+        "apiDescription": "ramls/fiscal-year.raml",
+        "methods": "get post",
+        "path": "/finance-storage/fiscal-years"
+      },
+      {
+        "apiDescription": "ramls/fiscal-year.raml",
+        "methods": "delete get put",
+        "path": "/finance-storage/fiscal-years/{id}"
+      },
+      {
+        "apiDescription": "ramls/fund-type.raml",
+        "methods": "get post",
+        "path": "/finance-storage/fund-types"
+      },
+      {
+        "apiDescription": "ramls/fund-type.raml",
+        "methods": "delete get put",
+        "path": "/finance-storage/fund-types/{id}"
+      },
+      {
+        "apiDescription": "ramls/fund.raml",
+        "methods": "get post",
+        "path": "/finance-storage/funds"
+      },
+      {
+        "apiDescription": "ramls/fund.raml",
+        "methods": "delete get put",
+        "path": "/finance-storage/funds/{id}"
+      },
+      {
+        "apiDescription": "ramls/group-budgets.raml",
+        "methods": "get",
+        "path": "/finance-storage/group-budgets"
+      },
+      {
+        "apiDescription": "ramls/group_fund_fy.raml",
+        "methods": "get post",
+        "path": "/finance-storage/group-fund-fiscal-years"
+      },
+      {
+        "apiDescription": "ramls/group_fund_fy.raml",
+        "methods": "delete get put",
+        "path": "/finance-storage/group-fund-fiscal-years/{id}"
+      },
+      {
+        "apiDescription": "ramls/group.raml",
+        "methods": "get post",
+        "path": "/finance-storage/groups"
+      },
+      {
+        "apiDescription": "ramls/group.raml",
+        "methods": "delete get put",
+        "path": "/finance-storage/groups/{id}"
+      },
+      {
+        "apiDescription": "ramls/transaction-summary.raml",
+        "methods": "post",
+        "path": "/finance-storage/invoice-transaction-summaries"
+      },
+      {
+        "apiDescription": "ramls/transaction-summary.raml",
+        "methods": "delete get put",
+        "path": "/finance-storage/invoice-transaction-summaries/{id}"
+      },
+      {
+        "apiDescription": "ramls/ledger_rollover.raml",
+        "methods": "get post",
+        "path": "/finance-storage/ledger-rollovers"
+      },
+      {
+        "apiDescription": "ramls/ledger_rollover-budgets.raml",
+        "methods": "get",
+        "path": "/finance-storage/ledger-rollovers-budgets"
+      },
+      {
+        "apiDescription": "ramls/ledger_rollover-budgets.raml",
+        "methods": "get",
+        "path": "/finance-storage/ledger-rollovers-budgets/{id}"
+      },
+      {
+        "apiDescription": "ramls/ledger-rollover-errors.raml",
+        "methods": "get post",
+        "path": "/finance-storage/ledger-rollovers-errors"
+      },
+      {
+        "apiDescription": "ramls/ledger-rollover-errors.raml",
+        "methods": "delete get put",
+        "path": "/finance-storage/ledger-rollovers-errors/{id}"
+      },
+      {
+        "apiDescription": "ramls/ledger_rollover_progress.raml",
+        "methods": "get post",
+        "path": "/finance-storage/ledger-rollovers-progress"
+      },
+      {
+        "apiDescription": "ramls/ledger_rollover_progress.raml",
+        "methods": "delete get put",
+        "path": "/finance-storage/ledger-rollovers-progress/{id}"
+      },
+      {
+        "apiDescription": "ramls/ledger_rollover.raml",
+        "methods": "delete get put",
+        "path": "/finance-storage/ledger-rollovers/{id}"
+      },
+      {
+        "apiDescription": "ramls/ledger.raml",
+        "methods": "get post",
+        "path": "/finance-storage/ledgers"
+      },
+      {
+        "apiDescription": "ramls/ledger.raml",
+        "methods": "delete get put",
+        "path": "/finance-storage/ledgers/{id}"
+      },
+      {
+        "apiDescription": "ramls/transaction-summary.raml",
+        "methods": "post",
+        "path": "/finance-storage/order-transaction-summaries"
+      },
+      {
+        "apiDescription": "ramls/transaction-summary.raml",
+        "methods": "delete get put",
+        "path": "/finance-storage/order-transaction-summaries/{id}"
+      },
+      {
+        "apiDescription": "ramls/transaction.raml",
+        "methods": "get post",
+        "path": "/finance-storage/transactions"
+      },
+      {
+        "apiDescription": "ramls/transaction.raml",
+        "methods": "delete get put",
+        "path": "/finance-storage/transactions/{id}"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1223,7 +1768,43 @@
       ],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "ramls/gobi.raml",
+        "methods": "post",
+        "path": "/gobi/orders"
+      },
+      {
+        "apiDescription": "ramls/gobi-custom-mappings.raml",
+        "methods": "get post",
+        "path": "/gobi/orders/custom-mappings"
+      },
+      {
+        "apiDescription": "ramls/gobi-custom-mappings.raml",
+        "methods": "delete get put",
+        "path": "/gobi/orders/custom-mappings/{orderType}"
+      },
+      {
+        "apiDescription": "ramls/gobi-mappings.raml",
+        "methods": "get",
+        "path": "/gobi/orders/mappings/fields"
+      },
+      {
+        "apiDescription": "ramls/gobi-mappings.raml",
+        "methods": "get",
+        "path": "/gobi/orders/mappings/translators"
+      },
+      {
+        "apiDescription": "ramls/gobi-mappings.raml",
+        "methods": "get",
+        "path": "/gobi/orders/mappings/types"
+      },
+      {
+        "apiDescription": "ramls/gobi.raml",
+        "methods": "get post",
+        "path": "/gobi/validate"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -1999,7 +2580,108 @@
         "mod-search.html"
       ]
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/authorities"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/browse/authorities"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/browse/call-numbers/instances"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/browse/contributors/instances"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/browse/subjects/instances"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get post",
+        "path": "/config/features"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "delete put",
+        "path": "/config/features/{featureId}"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get post",
+        "path": "/config/languages"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "delete put",
+        "path": "/config/languages/{code}"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/holdings/ids"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "post",
+        "path": "/index/indices"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "post",
+        "path": "/index/inventory/reindex"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "post",
+        "path": "/index/mappings"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "post",
+        "path": "/index/records"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/instances"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/instances/ids"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "post",
+        "path": "/resources/jobs"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/resources/jobs/{jobId}"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/resources/jobs/{jobId}/ids"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/{recordType}/facets"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -2109,7 +2791,63 @@
       ],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "ramls/source-record-storage-batch.raml",
+        "methods": "put",
+        "path": "/source-storage/batch/parsed-records"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-batch.raml",
+        "methods": "post",
+        "path": "/source-storage/batch/records"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-batch.raml",
+        "methods": "post",
+        "path": "/source-storage/batch/verified-records"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-test-records.raml",
+        "methods": "post",
+        "path": "/source-storage/populate-test-marc-records"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-snapshots.raml",
+        "methods": "get post",
+        "path": "/source-storage/snapshots"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-snapshots.raml",
+        "methods": "delete get put",
+        "path": "/source-storage/snapshots/{jobExecutionId}"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-source-records.raml",
+        "methods": "get post",
+        "path": "/source-storage/source-records"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-source-records.raml",
+        "methods": "get",
+        "path": "/source-storage/source-records/{id}"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-stream.raml",
+        "methods": "post",
+        "path": "/source-storage/stream/marc-record-identifiers"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-stream.raml",
+        "methods": "get",
+        "path": "/source-storage/stream/records"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-stream.raml",
+        "methods": "get",
+        "path": "/source-storage/stream/source-records"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
