@@ -245,7 +245,18 @@
       "raml": [],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "src/main/resources/swagger.api/tenant.yaml",
+        "methods": "post",
+        "path": "/_/tenant"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/tenant.yaml",
+        "methods": "delete get",
+        "path": "/_/tenant/{operationId}"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -983,12 +994,27 @@
       {
         "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
         "methods": "post",
+        "path": "/{jobId}/holdings-content-update/upload"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "post",
         "path": "/{jobId}/item-content-update/upload"
       },
       {
         "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
         "methods": "get",
+        "path": "/{jobId}/preview/holdings"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "get",
         "path": "/{jobId}/preview/items"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+        "methods": "get",
+        "path": "/{jobId}/preview/updated-holdings/download"
       },
       {
         "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
@@ -1742,7 +1768,43 @@
       ],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "ramls/gobi.raml",
+        "methods": "post",
+        "path": "/gobi/orders"
+      },
+      {
+        "apiDescription": "ramls/gobi-custom-mappings.raml",
+        "methods": "get post",
+        "path": "/gobi/orders/custom-mappings"
+      },
+      {
+        "apiDescription": "ramls/gobi-custom-mappings.raml",
+        "methods": "delete get put",
+        "path": "/gobi/orders/custom-mappings/{orderType}"
+      },
+      {
+        "apiDescription": "ramls/gobi-mappings.raml",
+        "methods": "get",
+        "path": "/gobi/orders/mappings/fields"
+      },
+      {
+        "apiDescription": "ramls/gobi-mappings.raml",
+        "methods": "get",
+        "path": "/gobi/orders/mappings/translators"
+      },
+      {
+        "apiDescription": "ramls/gobi-mappings.raml",
+        "methods": "get",
+        "path": "/gobi/orders/mappings/types"
+      },
+      {
+        "apiDescription": "ramls/gobi.raml",
+        "methods": "get post",
+        "path": "/gobi/validate"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
@@ -2518,7 +2580,108 @@
         "mod-search.html"
       ]
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/authorities"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/browse/authorities"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/browse/call-numbers/instances"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/browse/contributors/instances"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/browse/subjects/instances"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get post",
+        "path": "/config/features"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "delete put",
+        "path": "/config/features/{featureId}"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get post",
+        "path": "/config/languages"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "delete put",
+        "path": "/config/languages/{code}"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/holdings/ids"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "post",
+        "path": "/index/indices"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "post",
+        "path": "/index/inventory/reindex"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "post",
+        "path": "/index/mappings"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "post",
+        "path": "/index/records"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/instances"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/instances/ids"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "post",
+        "path": "/resources/jobs"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/resources/jobs/{jobId}"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/resources/jobs/{jobId}/ids"
+      },
+      {
+        "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+        "methods": "get",
+        "path": "/{recordType}/facets"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "OAS"
@@ -2628,7 +2791,63 @@
       ],
       "upload": []
     },
-    "endpoints": [],
+    "endpoints": [
+      {
+        "apiDescription": "ramls/source-record-storage-batch.raml",
+        "methods": "put",
+        "path": "/source-storage/batch/parsed-records"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-batch.raml",
+        "methods": "post",
+        "path": "/source-storage/batch/records"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-batch.raml",
+        "methods": "post",
+        "path": "/source-storage/batch/verified-records"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-test-records.raml",
+        "methods": "post",
+        "path": "/source-storage/populate-test-marc-records"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-snapshots.raml",
+        "methods": "get post",
+        "path": "/source-storage/snapshots"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-snapshots.raml",
+        "methods": "delete get put",
+        "path": "/source-storage/snapshots/{jobExecutionId}"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-source-records.raml",
+        "methods": "get post",
+        "path": "/source-storage/source-records"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-source-records.raml",
+        "methods": "get",
+        "path": "/source-storage/source-records/{id}"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-stream.raml",
+        "methods": "post",
+        "path": "/source-storage/stream/marc-record-identifiers"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-stream.raml",
+        "methods": "get",
+        "path": "/source-storage/stream/records"
+      },
+      {
+        "apiDescription": "ramls/source-record-storage-stream.raml",
+        "methods": "get",
+        "path": "/source-storage/stream/source-records"
+      }
+    ],
     "metadata": {
       "apiTypes": [
         "RAML"
