@@ -1,10 +1,395 @@
 [
   {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "get:deployment_modules_get post:deployment_modules_post",
+    "name": "okapi",
+    "path": "/_/deployment/modules"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "delete:deployment_modules__instance_id__delete get:deployment_modules__instance_id__get",
+    "name": "okapi",
+    "path": "/_/deployment/modules/{instance_id}"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "get:discovery_health_get",
+    "name": "okapi",
+    "path": "/_/discovery/health"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "get:discovery_health__service_id__get",
+    "name": "okapi",
+    "path": "/_/discovery/health/{service_id}"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "get:discovery_health__service_id___instance_id__get",
+    "name": "okapi",
+    "path": "/_/discovery/health/{service_id}/{instance_id}"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "delete:discovery_modules_delete get:discovery_modules_get post:discovery_modules_post",
+    "name": "okapi",
+    "path": "/_/discovery/modules"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "delete:discovery_modules__service_id__delete get:discovery_modules__service_id__get",
+    "name": "okapi",
+    "path": "/_/discovery/modules/{service_id}"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "delete:discovery_modules__service_id___instance_id__delete get:discovery_modules__service_id___instance_id__get",
+    "name": "okapi",
+    "path": "/_/discovery/modules/{service_id}/{instance_id}"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "get:discovery_nodes_get",
+    "name": "okapi",
+    "path": "/_/discovery/nodes"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "get:discovery_nodes__node_id__get put:discovery_nodes__node_id__put",
+    "name": "okapi",
+    "path": "/_/discovery/nodes/{node_id}"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "get:env_get post:env_post",
+    "name": "okapi",
+    "path": "/_/env"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "delete:env__id__delete get:env__id__get",
+    "name": "okapi",
+    "path": "/_/env/{id}"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "get:invoke_tenant__id__get",
+    "name": "okapi",
+    "path": "/_/invoke/tenant/{id}"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "post:proxy_cleanup_modules_post",
+    "name": "okapi",
+    "path": "/_/proxy/cleanup/modules"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "get:proxy_health_get",
+    "name": "okapi",
+    "path": "/_/proxy/health"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "post:proxy_import_modules_post",
+    "name": "okapi",
+    "path": "/_/proxy/import/modules"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "get:proxy_modules_get post:proxy_modules_post",
+    "name": "okapi",
+    "path": "/_/proxy/modules"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "delete:proxy_modules__module_id__delete get:proxy_modules__module_id__get",
+    "name": "okapi",
+    "path": "/_/proxy/modules/{module_id}"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "post:proxy_pull_modules_post",
+    "name": "okapi",
+    "path": "/_/proxy/pull/modules"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "get:proxy_tenants_get post:proxy_tenants_post",
+    "name": "okapi",
+    "path": "/_/proxy/tenants"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "delete:proxy_tenants__tenant_id__delete get:proxy_tenants__tenant_id__get put:proxy_tenants__tenant_id__put",
+    "name": "okapi",
+    "path": "/_/proxy/tenants/{tenant_id}"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "delete:proxy_tenants__tenant_id__install_delete get:proxy_tenants__tenant_id__install_get post:proxy_tenants__tenant_id__install_post",
+    "name": "okapi",
+    "path": "/_/proxy/tenants/{tenant_id}/install"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "delete:proxy_tenants__tenant_id__install__install_id__delete get:proxy_tenants__tenant_id__install__install_id__get",
+    "name": "okapi",
+    "path": "/_/proxy/tenants/{tenant_id}/install/{install_id}"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "get:proxy_tenants__tenant_id__interfaces_get",
+    "name": "okapi",
+    "path": "/_/proxy/tenants/{tenant_id}/interfaces"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "get:proxy_tenants__tenant_id__interfaces__interface_id__get",
+    "name": "okapi",
+    "path": "/_/proxy/tenants/{tenant_id}/interfaces/{interface_id}"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "delete:proxy_tenants__tenant_id__modules_delete get:proxy_tenants__tenant_id__modules_get post:proxy_tenants__tenant_id__modules_post",
+    "name": "okapi",
+    "path": "/_/proxy/tenants/{tenant_id}/modules"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "delete:proxy_tenants__tenant_id__modules__module_id__delete get:proxy_tenants__tenant_id__modules__module_id__get post:proxy_tenants__tenant_id__modules__module_id__post",
+    "name": "okapi",
+    "path": "/_/proxy/tenants/{tenant_id}/modules/{module_id}"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "get:proxy_tenants__tenant_id__timers_get patch:proxy_tenants__tenant_id__timers_patch",
+    "name": "okapi",
+    "path": "/_/proxy/tenants/{tenant_id}/timers"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "get:proxy_tenants__tenant_id__timers__timer_id__get patch:proxy_tenants__tenant_id__timers__timer_id__patch",
+    "name": "okapi",
+    "path": "/_/proxy/tenants/{tenant_id}/timers/{timer_id}"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "post:proxy_tenants__tenant_id__upgrade_post",
+    "name": "okapi",
+    "path": "/_/proxy/tenants/{tenant_id}/upgrade"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/tenant.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "folio-spring-base",
+    "path": "/_/tenant"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/tenant.yaml",
+    "apiType": "oas",
+    "methods": "delete:null get:null",
+    "name": "folio-spring-base",
+    "path": "/_/tenant/{operationId}"
+  },
+  {
     "apiDescription": "ramls/tenantPermissions.raml",
     "apiType": "raml",
     "methods": "post:tenantpermissions_post",
     "name": "mod-permissions",
     "path": "/_/tenantpermissions"
+  },
+  {
+    "apiDescription": "okapi-core/src/main/raml/okapi.raml",
+    "apiType": "raml",
+    "methods": "get:version_get",
+    "name": "okapi",
+    "path": "/_/version"
+  },
+  {
+    "apiDescription": "ramls/accounts.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts"
+  },
+  {
+    "apiDescription": "ramls/accounts-bulk.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts-bulk/cancel"
+  },
+  {
+    "apiDescription": "ramls/accounts-bulk.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts-bulk/check-pay"
+  },
+  {
+    "apiDescription": "ramls/accounts-bulk.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts-bulk/check-refund"
+  },
+  {
+    "apiDescription": "ramls/accounts-bulk.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts-bulk/check-transfer"
+  },
+  {
+    "apiDescription": "ramls/accounts-bulk.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts-bulk/check-waive"
+  },
+  {
+    "apiDescription": "ramls/accounts-bulk.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts-bulk/pay"
+  },
+  {
+    "apiDescription": "ramls/accounts-bulk.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts-bulk/refund"
+  },
+  {
+    "apiDescription": "ramls/accounts-bulk.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts-bulk/transfer"
+  },
+  {
+    "apiDescription": "ramls/accounts-bulk.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts-bulk/waive"
+  },
+  {
+    "apiDescription": "ramls/accounts.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-feesfines",
+    "path": "/accounts/{accountId}"
+  },
+  {
+    "apiDescription": "ramls/accounts.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts/{accountId}/cancel"
+  },
+  {
+    "apiDescription": "ramls/accounts.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts/{accountId}/check-pay"
+  },
+  {
+    "apiDescription": "ramls/accounts.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts/{accountId}/check-refund"
+  },
+  {
+    "apiDescription": "ramls/accounts.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts/{accountId}/check-transfer"
+  },
+  {
+    "apiDescription": "ramls/accounts.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts/{accountId}/check-waive"
+  },
+  {
+    "apiDescription": "ramls/accounts.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts/{accountId}/pay"
+  },
+  {
+    "apiDescription": "ramls/accounts.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts/{accountId}/refund"
+  },
+  {
+    "apiDescription": "ramls/accounts.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts/{accountId}/transfer"
+  },
+  {
+    "apiDescription": "ramls/accounts.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/accounts/{accountId}/waive"
+  },
+  {
+    "apiDescription": "ramls/edge-lti-courses.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "edge-lti-courses",
+    "path": "/admin/health"
+  },
+  {
+    "apiDescription": "ramls/edge-orders.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "edge-orders",
+    "path": "/admin/health"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
@@ -42,6 +427,265 @@
     "path": "/browse/subjects/instances"
   },
   {
+    "apiDescription": "ramls/circulation.raml",
+    "apiType": "raml",
+    "methods": "post:circulation_check_in_by_barcode_post",
+    "name": "mod-circulation",
+    "path": "/circulation/check-in-by-barcode"
+  },
+  {
+    "apiDescription": "ramls/circulation.raml",
+    "apiType": "raml",
+    "methods": "post:circulation_check_out_by_barcode_post",
+    "name": "mod-circulation",
+    "path": "/circulation/check-out-by-barcode"
+  },
+  {
+    "apiDescription": "ramls/end-patron-action-session.raml",
+    "apiType": "raml",
+    "methods": "post:circulation_end_patron_action_session_post",
+    "name": "mod-circulation",
+    "path": "/circulation/end-patron-action-session"
+  },
+  {
+    "apiDescription": "ramls/circulation-event-handlers.raml",
+    "apiType": "raml",
+    "methods": "post:circulation_handlers__loan_related_fee_fine_closed_post",
+    "name": "mod-circulation",
+    "path": "/circulation/handlers//loan-related-fee-fine-closed"
+  },
+  {
+    "apiDescription": "ramls/circulation.raml",
+    "apiType": "raml",
+    "methods": "delete:circulation_loans_delete get:circulation_loans_get post:circulation_loans_post",
+    "name": "mod-circulation",
+    "path": "/circulation/loans"
+  },
+  {
+    "apiDescription": "ramls/change-due-date.raml",
+    "apiType": "raml",
+    "methods": "post:circulation_loans__id__change_due_date_post",
+    "name": "mod-circulation",
+    "path": "/circulation/loans/{id}/change-due-date"
+  },
+  {
+    "apiDescription": "ramls/claim-item-returned.raml",
+    "apiType": "raml",
+    "methods": "post:circulation_loans__id__claim_item_returned_post",
+    "name": "mod-circulation",
+    "path": "/circulation/loans/{id}/claim-item-returned"
+  },
+  {
+    "apiDescription": "ramls/claim-item-returned.raml",
+    "apiType": "raml",
+    "methods": "post:circulation_loans__id__declare_claimed_returned_item_as_missing_post",
+    "name": "mod-circulation",
+    "path": "/circulation/loans/{id}/declare-claimed-returned-item-as-missing"
+  },
+  {
+    "apiDescription": "ramls/declare-item-lost.raml",
+    "apiType": "raml",
+    "methods": "post:circulation_loans__id__declare_item_lost_post",
+    "name": "mod-circulation",
+    "path": "/circulation/loans/{id}/declare-item-lost"
+  },
+  {
+    "apiDescription": "ramls/circulation.raml",
+    "apiType": "raml",
+    "methods": "delete:circulation_loans__loanid__delete get:circulation_loans__loanid__get put:circulation_loans__loanid__put",
+    "name": "mod-circulation",
+    "path": "/circulation/loans/{loanId}"
+  },
+  {
+    "apiDescription": "ramls/pick-slips.raml",
+    "apiType": "raml",
+    "methods": "get:circulation_pick_slips__servicepointid__get",
+    "name": "mod-circulation",
+    "path": "/circulation/pick-slips/{servicePointId}"
+  },
+  {
+    "apiDescription": "ramls/circulation.raml",
+    "apiType": "raml",
+    "methods": "post:circulation_renew_by_barcode_post",
+    "name": "mod-circulation",
+    "path": "/circulation/renew-by-barcode"
+  },
+  {
+    "apiDescription": "ramls/circulation.raml",
+    "apiType": "raml",
+    "methods": "post:circulation_renew_by_id_post",
+    "name": "mod-circulation",
+    "path": "/circulation/renew-by-id"
+  },
+  {
+    "apiDescription": "ramls/circulation.raml",
+    "apiType": "raml",
+    "methods": "delete:circulation_requests_delete get:circulation_requests_get post:circulation_requests_post",
+    "name": "mod-circulation",
+    "path": "/circulation/requests"
+  },
+  {
+    "apiDescription": "ramls/requests-reports.raml",
+    "apiType": "raml",
+    "methods": "get:circulation_requests_reports_hold_shelf_clearance__servicepointid__get",
+    "name": "mod-circulation",
+    "path": "/circulation/requests-reports/hold-shelf-clearance/{servicePointId}"
+  },
+  {
+    "apiDescription": "ramls/circulation.raml",
+    "apiType": "raml",
+    "methods": "post:circulation_requests_instances_post",
+    "name": "mod-circulation",
+    "path": "/circulation/requests/instances"
+  },
+  {
+    "apiDescription": "ramls/circulation.raml",
+    "apiType": "raml",
+    "methods": "get:circulation_requests_queue_instance__instanceid__get",
+    "name": "mod-circulation",
+    "path": "/circulation/requests/queue/instance/{instanceId}"
+  },
+  {
+    "apiDescription": "ramls/circulation.raml",
+    "apiType": "raml",
+    "methods": "post:circulation_requests_queue_instance__instanceid__reorder_post",
+    "name": "mod-circulation",
+    "path": "/circulation/requests/queue/instance/{instanceId}/reorder"
+  },
+  {
+    "apiDescription": "ramls/circulation.raml",
+    "apiType": "raml",
+    "methods": "get:circulation_requests_queue_item__itemid__get",
+    "name": "mod-circulation",
+    "path": "/circulation/requests/queue/item/{itemId}"
+  },
+  {
+    "apiDescription": "ramls/circulation.raml",
+    "apiType": "raml",
+    "methods": "post:circulation_requests_queue_item__itemid__reorder_post",
+    "name": "mod-circulation",
+    "path": "/circulation/requests/queue/item/{itemId}/reorder"
+  },
+  {
+    "apiDescription": "ramls/circulation.raml",
+    "apiType": "raml",
+    "methods": "delete:circulation_requests__requestid__delete get:circulation_requests__requestid__get put:circulation_requests__requestid__put",
+    "name": "mod-circulation",
+    "path": "/circulation/requests/{requestId}"
+  },
+  {
+    "apiDescription": "ramls/request-move.raml",
+    "apiType": "raml",
+    "methods": "post:circulation_requests__requestid__move_post",
+    "name": "mod-circulation",
+    "path": "/circulation/requests/{requestId}/move"
+  },
+  {
+    "apiDescription": "ramls/circulation-rules.raml",
+    "apiType": "raml",
+    "methods": "get:circulation_rules_get put:circulation_rules_put",
+    "name": "mod-circulation",
+    "path": "/circulation/rules"
+  },
+  {
+    "apiDescription": "ramls/circulation-rules.raml",
+    "apiType": "raml",
+    "methods": "get:circulation_rules_loan_policy_get",
+    "name": "mod-circulation",
+    "path": "/circulation/rules/loan-policy"
+  },
+  {
+    "apiDescription": "ramls/circulation-rules.raml",
+    "apiType": "raml",
+    "methods": "get:circulation_rules_loan_policy_all_get",
+    "name": "mod-circulation",
+    "path": "/circulation/rules/loan-policy-all"
+  },
+  {
+    "apiDescription": "ramls/circulation-rules.raml",
+    "apiType": "raml",
+    "methods": "get:circulation_rules_lost_item_policy_get",
+    "name": "mod-circulation",
+    "path": "/circulation/rules/lost-item-policy"
+  },
+  {
+    "apiDescription": "ramls/circulation-rules.raml",
+    "apiType": "raml",
+    "methods": "get:circulation_rules_lost_item_policy_all_get",
+    "name": "mod-circulation",
+    "path": "/circulation/rules/lost-item-policy-all"
+  },
+  {
+    "apiDescription": "ramls/circulation-rules.raml",
+    "apiType": "raml",
+    "methods": "get:circulation_rules_notice_policy_get",
+    "name": "mod-circulation",
+    "path": "/circulation/rules/notice-policy"
+  },
+  {
+    "apiDescription": "ramls/circulation-rules.raml",
+    "apiType": "raml",
+    "methods": "get:circulation_rules_notice_policy_all_get",
+    "name": "mod-circulation",
+    "path": "/circulation/rules/notice-policy-all"
+  },
+  {
+    "apiDescription": "ramls/circulation-rules.raml",
+    "apiType": "raml",
+    "methods": "get:circulation_rules_overdue_fine_policy_get",
+    "name": "mod-circulation",
+    "path": "/circulation/rules/overdue-fine-policy"
+  },
+  {
+    "apiDescription": "ramls/circulation-rules.raml",
+    "apiType": "raml",
+    "methods": "get:circulation_rules_overdue_fine_policy_all_get",
+    "name": "mod-circulation",
+    "path": "/circulation/rules/overdue-fine-policy-all"
+  },
+  {
+    "apiDescription": "ramls/circulation-rules.raml",
+    "apiType": "raml",
+    "methods": "get:circulation_rules_request_policy_get",
+    "name": "mod-circulation",
+    "path": "/circulation/rules/request-policy"
+  },
+  {
+    "apiDescription": "ramls/circulation-rules.raml",
+    "apiType": "raml",
+    "methods": "get:circulation_rules_request_policy_all_get",
+    "name": "mod-circulation",
+    "path": "/circulation/rules/request-policy-all"
+  },
+  {
+    "apiDescription": "ramls/age-to-lost-background-processes.raml",
+    "apiType": "raml",
+    "methods": "post:circulation_scheduled_age_to_lost_post",
+    "name": "mod-circulation",
+    "path": "/circulation/scheduled-age-to-lost"
+  },
+  {
+    "apiDescription": "ramls/age-to-lost-background-processes.raml",
+    "apiType": "raml",
+    "methods": "post:circulation_scheduled_age_to_lost_fee_charging_post",
+    "name": "mod-circulation",
+    "path": "/circulation/scheduled-age-to-lost-fee-charging"
+  },
+  {
+    "apiDescription": "ramls/comments.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-feesfines",
+    "path": "/comments"
+  },
+  {
+    "apiDescription": "ramls/comments.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-feesfines",
+    "path": "/comments/{commentId}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
     "methods": "get:null post:null",
@@ -68,6 +712,685 @@
     "methods": "delete:null put:null",
     "name": "mod-search",
     "path": "/config/languages/{code}"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null post:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/copyrightstatuses"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/copyrightstatuses/{status_id}"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null post:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/courselistings"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/courselistings/{listing_id}"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null post:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/courselistings/{listing_id}/courses"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/courselistings/{listing_id}/courses/{course_id}"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null post:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/courselistings/{listing_id}/instructors"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/courselistings/{listing_id}/instructors/{instructor_id}"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null post:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/courselistings/{listing_id}/reserves"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/courselistings/{listing_id}/reserves/{reserve_id}"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null post:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/courses"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/courses/{course_id}"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null post:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/coursetypes"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/coursetypes/{type_id}"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null post:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/departments"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/departments/{department_id}"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null post:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/processingstatuses"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/processingstatuses/{status_id}"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null post:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/reserves"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/reserves/{reserve_id}"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null post:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/roles"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/roles/{role_id}"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null post:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/terms"
+  },
+  {
+    "apiDescription": "ramls/courses.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-courses",
+    "path": "/coursereserves/terms/{term_id}"
+  },
+  {
+    "apiDescription": "ramls/dataExport.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-data-export",
+    "path": "/data-export/clean-up-files"
+  },
+  {
+    "apiDescription": "ramls/dataExport.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-data-export",
+    "path": "/data-export/expire-jobs"
+  },
+  {
+    "apiDescription": "ramls/dataExport.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-data-export",
+    "path": "/data-export/export"
+  },
+  {
+    "apiDescription": "ramls/dataExport-file-definition.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-data-export",
+    "path": "/data-export/file-definitions"
+  },
+  {
+    "apiDescription": "ramls/dataExport-file-definition.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-data-export",
+    "path": "/data-export/file-definitions/{fileDefinitionId}"
+  },
+  {
+    "apiDescription": "ramls/dataExport-file-definition.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-data-export",
+    "path": "/data-export/file-definitions/{fileDefinitionId}/upload"
+  },
+  {
+    "apiDescription": "ramls/dataExport.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-data-export",
+    "path": "/data-export/job-executions"
+  },
+  {
+    "apiDescription": "ramls/dataExport.raml",
+    "apiType": "raml",
+    "methods": "delete:null",
+    "name": "mod-data-export",
+    "path": "/data-export/job-executions/{id}"
+  },
+  {
+    "apiDescription": "ramls/dataExport.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-data-export",
+    "path": "/data-export/job-executions/{jobExecutionId}/download/{exportFileId}"
+  },
+  {
+    "apiDescription": "ramls/dataExport-job-profile.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-data-export",
+    "path": "/data-export/job-profiles"
+  },
+  {
+    "apiDescription": "ramls/dataExport-job-profile.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-data-export",
+    "path": "/data-export/job-profiles/{id}"
+  },
+  {
+    "apiDescription": "ramls/dataExport-logs.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-data-export",
+    "path": "/data-export/logs"
+  },
+  {
+    "apiDescription": "ramls/dataExport-mapping-profiles.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-data-export",
+    "path": "/data-export/mapping-profiles"
+  },
+  {
+    "apiDescription": "ramls/dataExport-mapping-profiles.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-data-export",
+    "path": "/data-export/mapping-profiles/{id}"
+  },
+  {
+    "apiDescription": "ramls/dataExport.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-data-export",
+    "path": "/data-export/quick-export"
+  },
+  {
+    "apiDescription": "ramls/dataExport-transformation-fields.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-data-export",
+    "path": "/data-export/transformation-fields"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getReportData",
+    "name": "mod-eusage-reports",
+    "path": "/eusage-reports/report-data"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/postFromAgreement",
+    "name": "mod-eusage-reports",
+    "path": "/eusage-reports/report-data/from-agreement"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getReportStatus",
+    "name": "mod-eusage-reports",
+    "path": "/eusage-reports/report-data/status/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getReportPackages",
+    "name": "mod-eusage-reports",
+    "path": "/eusage-reports/report-packages"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getReportTitles post:operation/postReportTitles",
+    "name": "mod-eusage-reports",
+    "path": "/eusage-reports/report-titles"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/postFromCounter",
+    "name": "mod-eusage-reports",
+    "path": "/eusage-reports/report-titles/from-counter"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getCostPerUse",
+    "name": "mod-eusage-reports",
+    "path": "/eusage-reports/stored-reports/cost-per-use"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getReqsByDateOfUse",
+    "name": "mod-eusage-reports",
+    "path": "/eusage-reports/stored-reports/reqs-by-date-of-use"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getReqsByPubYear",
+    "name": "mod-eusage-reports",
+    "path": "/eusage-reports/stored-reports/reqs-by-pub-year"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getUseOverTime",
+    "name": "mod-eusage-reports",
+    "path": "/eusage-reports/stored-reports/use-over-time"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getTitleData",
+    "name": "mod-eusage-reports",
+    "path": "/eusage-reports/title-data"
+  },
+  {
+    "apiDescription": "ramls/feefine-reports.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/feefine-reports/cash-drawer-reconciliation"
+  },
+  {
+    "apiDescription": "ramls/feefine-reports.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/feefine-reports/cash-drawer-reconciliation/sources"
+  },
+  {
+    "apiDescription": "ramls/feefine-reports.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/feefine-reports/financial-transactions-detail"
+  },
+  {
+    "apiDescription": "ramls/feefine-reports.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-feesfines",
+    "path": "/feefine-reports/refund"
+  },
+  {
+    "apiDescription": "ramls/feefines.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-feesfines",
+    "path": "/feefines"
+  },
+  {
+    "apiDescription": "ramls/feefines.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-feesfines",
+    "path": "/feefines/{feefineId}"
+  },
+  {
+    "apiDescription": "ramls/budget_expense_class.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/budget-expense-classes"
+  },
+  {
+    "apiDescription": "ramls/budget_expense_class.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/budget-expense-classes/{id}"
+  },
+  {
+    "apiDescription": "ramls/budget.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/budgets"
+  },
+  {
+    "apiDescription": "ramls/budget.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/budgets/{id}"
+  },
+  {
+    "apiDescription": "ramls/expense_class.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/expense-classes"
+  },
+  {
+    "apiDescription": "ramls/expense_class.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/expense-classes/{id}"
+  },
+  {
+    "apiDescription": "ramls/fiscal-year.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/fiscal-years"
+  },
+  {
+    "apiDescription": "ramls/fiscal-year.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/fiscal-years/{id}"
+  },
+  {
+    "apiDescription": "ramls/fund-type.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/fund-types"
+  },
+  {
+    "apiDescription": "ramls/fund-type.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/fund-types/{id}"
+  },
+  {
+    "apiDescription": "ramls/fund.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/funds"
+  },
+  {
+    "apiDescription": "ramls/fund.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/funds/{id}"
+  },
+  {
+    "apiDescription": "ramls/group-budgets.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/group-budgets"
+  },
+  {
+    "apiDescription": "ramls/group_fund_fy.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/group-fund-fiscal-years"
+  },
+  {
+    "apiDescription": "ramls/group_fund_fy.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/group-fund-fiscal-years/{id}"
+  },
+  {
+    "apiDescription": "ramls/group.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/groups"
+  },
+  {
+    "apiDescription": "ramls/group.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/groups/{id}"
+  },
+  {
+    "apiDescription": "ramls/transaction-summary.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/invoice-transaction-summaries"
+  },
+  {
+    "apiDescription": "ramls/transaction-summary.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/invoice-transaction-summaries/{id}"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/ledger-rollovers"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover-budgets.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/ledger-rollovers-budgets"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover-budgets.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/ledger-rollovers-budgets/{id}"
+  },
+  {
+    "apiDescription": "ramls/ledger-rollover-errors.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/ledger-rollovers-errors"
+  },
+  {
+    "apiDescription": "ramls/ledger-rollover-errors.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/ledger-rollovers-errors/{id}"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover_progress.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/ledger-rollovers-progress"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover_progress.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/ledger-rollovers-progress/{id}"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/ledger-rollovers/{id}"
+  },
+  {
+    "apiDescription": "ramls/ledger.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/ledgers"
+  },
+  {
+    "apiDescription": "ramls/ledger.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/ledgers/{id}"
+  },
+  {
+    "apiDescription": "ramls/transaction-summary.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/order-transaction-summaries"
+  },
+  {
+    "apiDescription": "ramls/transaction-summary.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/order-transaction-summaries/{id}"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/transactions"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/transactions/{id}"
+  },
+  {
+    "apiDescription": "ramls/gobi.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-gobi",
+    "path": "/gobi/orders"
+  },
+  {
+    "apiDescription": "ramls/gobi-custom-mappings.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-gobi",
+    "path": "/gobi/orders/custom-mappings"
+  },
+  {
+    "apiDescription": "ramls/gobi-custom-mappings.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-gobi",
+    "path": "/gobi/orders/custom-mappings/{orderType}"
+  },
+  {
+    "apiDescription": "ramls/gobi-mappings.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-gobi",
+    "path": "/gobi/orders/mappings/fields"
+  },
+  {
+    "apiDescription": "ramls/gobi-mappings.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-gobi",
+    "path": "/gobi/orders/mappings/translators"
+  },
+  {
+    "apiDescription": "ramls/gobi-mappings.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-gobi",
+    "path": "/gobi/orders/mappings/types"
+  },
+  {
+    "apiDescription": "ramls/gobi.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-gobi",
+    "path": "/gobi/validate"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
@@ -119,6 +1442,244 @@
     "path": "/instances/ids"
   },
   {
+    "apiDescription": "ramls/inventory-reports.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_reports_items_in_transit_get",
+    "name": "mod-circulation",
+    "path": "/inventory-reports/items-in-transit"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
+    "methods": "put:null",
+    "name": "mod-entities-links",
+    "path": "/links/instances/{instanceId}"
+  },
+  {
+    "apiDescription": "ramls/loan-anonymization.raml",
+    "apiType": "raml",
+    "methods": "post:loan_anonymization_by_user__userid__post",
+    "name": "mod-circulation",
+    "path": "/loan-anonymization/by-user/{userId}"
+  },
+  {
+    "apiDescription": "ramls/lost-item-fee-policy.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-feesfines",
+    "path": "/lost-item-fees-policies"
+  },
+  {
+    "apiDescription": "ramls/lost-item-fee-policy.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-feesfines",
+    "path": "/lost-item-fees-policies/{lostItemFeePolicyId}"
+  },
+  {
+    "apiDescription": "ramls/edge-lti-courses.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "edge-lti-courses",
+    "path": "/lti-courses/.well-known/jwks.json"
+  },
+  {
+    "apiDescription": "ramls/edge-lti-courses.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "edge-lti-courses",
+    "path": "/lti-courses/externalIdLaunches/{apiKeyPath}"
+  },
+  {
+    "apiDescription": "ramls/edge-lti-courses.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "edge-lti-courses",
+    "path": "/lti-courses/launches/{apiKeyPath}"
+  },
+  {
+    "apiDescription": "ramls/edge-lti-courses.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "edge-lti-courses",
+    "path": "/lti-courses/oidc-login-init/{apiKeyPath}"
+  },
+  {
+    "apiDescription": "ramls/edge-lti-courses.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "edge-lti-courses",
+    "path": "/lti-courses/registrarIdLaunches/{apiKeyPath}"
+  },
+  {
+    "apiDescription": "ramls/manual-block-templates.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-feesfines",
+    "path": "/manual-block-templates"
+  },
+  {
+    "apiDescription": "ramls/manual-block-templates.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-feesfines",
+    "path": "/manual-block-templates/{id}"
+  },
+  {
+    "apiDescription": "ramls/manualblocks.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-feesfines",
+    "path": "/manualblocks"
+  },
+  {
+    "apiDescription": "ramls/manualblocks.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-feesfines",
+    "path": "/manualblocks/{manualblockId}"
+  },
+  {
+    "apiDescription": "ramls/mapping-metadata-provider.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-source-record-manager",
+    "path": "/mapping-metadata/{jobExecutionId}"
+  },
+  {
+    "apiDescription": "ramls/mapping-rules-provider.raml",
+    "apiType": "raml",
+    "methods": "get:null put:null",
+    "name": "mod-source-record-manager",
+    "path": "/mapping-rules/{recordType}"
+  },
+  {
+    "apiDescription": "ramls/mapping-rules-provider.raml",
+    "apiType": "raml",
+    "methods": "put:null",
+    "name": "mod-source-record-manager",
+    "path": "/mapping-rules/{recordType}/restore"
+  },
+  {
+    "apiDescription": "ramls/metadata-provider.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-source-record-manager",
+    "path": "/metadata-provider/jobExecutions"
+  },
+  {
+    "apiDescription": "ramls/metadata-provider.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-source-record-manager",
+    "path": "/metadata-provider/jobExecutions/jobProfiles"
+  },
+  {
+    "apiDescription": "ramls/metadata-provider.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-source-record-manager",
+    "path": "/metadata-provider/jobExecutions/users"
+  },
+  {
+    "apiDescription": "ramls/metadata-provider.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-source-record-manager",
+    "path": "/metadata-provider/jobLogEntries/{jobExecutionId}"
+  },
+  {
+    "apiDescription": "ramls/metadata-provider.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-source-record-manager",
+    "path": "/metadata-provider/jobLogEntries/{jobExecutionId}/records/{recordId}"
+  },
+  {
+    "apiDescription": "ramls/metadata-provider.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-source-record-manager",
+    "path": "/metadata-provider/jobSummary/{jobExecutionId}"
+  },
+  {
+    "apiDescription": "ramls/metadata-provider.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-source-record-manager",
+    "path": "/metadata-provider/journalRecords/{jobExecutionId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/order-export.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/order-stub"
+  },
+  {
+    "apiDescription": "ramls/edge-orders.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "edge-orders",
+    "path": "/orders"
+  },
+  {
+    "apiDescription": "ramls/edge-orders.raml",
+    "apiType": "raml",
+    "methods": "get:null put:null",
+    "name": "edge-orders",
+    "path": "/orders/order-lines/{id}"
+  },
+  {
+    "apiDescription": "ramls/edge-orders.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "edge-orders",
+    "path": "/orders/validate"
+  },
+  {
+    "apiDescription": "ramls/overdue-fine-policy.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-feesfines",
+    "path": "/overdue-fines-policies"
+  },
+  {
+    "apiDescription": "ramls/overdue-fine-policy.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-feesfines",
+    "path": "/overdue-fines-policies/{overdueFinePolicyId}"
+  },
+  {
+    "apiDescription": "ramls/owners.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-feesfines",
+    "path": "/owners"
+  },
+  {
+    "apiDescription": "ramls/owners.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-feesfines",
+    "path": "/owners/{ownerId}"
+  },
+  {
+    "apiDescription": "ramls/payments.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-feesfines",
+    "path": "/payments"
+  },
+  {
+    "apiDescription": "ramls/payments.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-feesfines",
+    "path": "/payments/{paymentId}"
+  },
+  {
     "apiDescription": "ramls/permissions.raml",
     "apiType": "raml",
     "methods": "get:perms_permissions_get post:perms_permissions_post",
@@ -168,6 +1729,174 @@
     "path": "/perms/users/{id}/permissions/{permissionname}"
   },
   {
+    "apiDescription": "ramls/refunds.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-feesfines",
+    "path": "/refunds"
+  },
+  {
+    "apiDescription": "ramls/refunds.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-feesfines",
+    "path": "/refunds/{refundId}"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/clusters"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/clusters/{clusterId}"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "get:null post:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/config/matchkeys"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/config/matchkeys/{id}"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "put:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/config/matchkeys/{id}/initialize"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/config/matchkeys/{id}/stats"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "get:null post:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/config/modules"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/config/modules/{id}"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "put:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/config/modules/{id}/reload"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/config/oai"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "delete:null get:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/config/sources/{id}"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/ingest-jobs"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/ingest-jobs/{id}"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/oai"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "get:null post:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/pmh-clients"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/pmh-clients/{id}"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/pmh-clients/{id}/start"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/pmh-clients/{id}/status"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/pmh-clients/{id}/stop"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/records"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/records/{globalId}"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "get:null post:null",
+    "name": "mod-reservoir",
+    "path": "/reservoir/sources"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
     "methods": "post:null",
@@ -187,6 +1916,237 @@
     "methods": "get:null",
     "name": "mod-search",
     "path": "/resources/jobs/{jobId}/ids"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-batch.raml",
+    "apiType": "raml",
+    "methods": "put:null",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/batch/parsed-records"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-batch.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/batch/records"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-batch.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/batch/verified-records"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-test-records.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/populate-test-marc-records"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-snapshots.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/snapshots"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-snapshots.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/snapshots/{jobExecutionId}"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-source-records.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/source-records"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-source-records.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/source-records/{id}"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-stream.raml",
+    "apiType": "raml",
+    "methods": "post:null",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/stream/marc-record-identifiers"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-stream.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/stream/records"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-stream.raml",
+    "apiType": "raml",
+    "methods": "get:null",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/stream/source-records"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bursar-export.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/stub"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation-log.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/stub"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/e-holdings.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/stub"
+  },
+  {
+    "apiDescription": "ramls/transfer-criteria.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-feesfines",
+    "path": "/transfer-criterias"
+  },
+  {
+    "apiDescription": "ramls/transfer-criteria.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-feesfines",
+    "path": "/transfer-criterias/{transferCriteriaId}"
+  },
+  {
+    "apiDescription": "ramls/transfers.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-feesfines",
+    "path": "/transfers"
+  },
+  {
+    "apiDescription": "ramls/transfers.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-feesfines",
+    "path": "/transfers/{transferId}"
+  },
+  {
+    "apiDescription": "ramls/waiver.raml",
+    "apiType": "raml",
+    "methods": "get:null post:null",
+    "name": "mod-feesfines",
+    "path": "/waives"
+  },
+  {
+    "apiDescription": "ramls/waiver.raml",
+    "apiType": "raml",
+    "methods": "delete:null get:null put:null",
+    "name": "mod-feesfines",
+    "path": "/waives/{waiveId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/errors"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/holdings-content-update/upload"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/item-content-update/upload"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/preview/holdings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/preview/items"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/preview/updated-holdings/download"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/preview/updated-items/download"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/preview/updated-users/download"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/preview/users"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/roll-back"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/start"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/upload"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/user-content-update/upload"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
