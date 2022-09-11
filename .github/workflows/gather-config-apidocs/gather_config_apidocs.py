@@ -26,7 +26,7 @@ from time import sleep
 import requests
 import yaml
 
-SCRIPT_VERSION = "1.3.0"
+SCRIPT_VERSION = "1.4.0"
 
 LOGLEVELS = {
     "debug": logging.DEBUG,
@@ -128,8 +128,37 @@ def store_config(output_json):
     """Store this JSON output."""
     output_dir = "_data"
     os.makedirs(output_dir, exist_ok=True)
+    # Create a special list of endpoints, and remove from main list.
+    output_2_pn = os.path.join(output_dir, "config-api-endpoints.json")
+    endpoints_list = []
+    for config in output_json:
+        endpoints = config["endpoints"]
+        for endpoint in endpoints:
+            ep = {}
+            ep["apiDescription"] = endpoint["apiDescription"]
+            file_extension = os.path.splitext(endpoint["apiDescription"])[1]
+            if file_extension in [".yaml", ".yml"]:
+                ep["apiType"] = "oas"
+            else:
+                ep["apiType"] = "raml"
+            if ":" in endpoint["methods"]:
+                ep["methods"] = endpoint["methods"]
+            else:
+                methods_fixed = []
+                for method in endpoint["methods"].split():
+                    method_fixed = method + ":null"
+                    methods_fixed.append(method_fixed)
+                ep["methods"] = " ".join(methods_fixed)
+            ep["name"] = config["name"]
+            ep["path"] = endpoint["path"]
+            endpoints_list.append(ep)
+        del config["endpoints"]
+    endpoints_sorted = sorted(endpoints_list, key=lambda x : x["path"].lower())
+    with open(output_2_pn, mode="w", encoding="utf-8") as output_fh:
+        output_fh.write(json.dumps(endpoints_sorted, sort_keys=True, indent=2, separators=(",", ": ")))
+        output_fh.write("\n")
     output_pn = os.path.join(output_dir, "config-apidocs.json")
-    with open(output_pn, "w") as output_fh:
+    with open(output_pn, mode="w", encoding="utf-8") as output_fh:
         output_fh.write(json.dumps(output_json, sort_keys=True, indent=2, separators=(",", ": ")))
         output_fh.write("\n")
 
