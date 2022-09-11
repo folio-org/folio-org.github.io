@@ -1,0 +1,198 @@
+[
+  {
+    "apiDescription": "ramls/tenantPermissions.raml",
+    "apiType": "raml",
+    "methods": "post:tenantpermissions_post",
+    "name": "mod-permissions",
+    "path": "/_/tenantpermissions"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-search",
+    "path": "/authorities"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-search",
+    "path": "/browse/authorities"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-search",
+    "path": "/browse/call-numbers/instances"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-search",
+    "path": "/browse/contributors/instances"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-search",
+    "path": "/browse/subjects/instances"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "get:null post:null",
+    "name": "mod-search",
+    "path": "/config/features"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "delete:null put:null",
+    "name": "mod-search",
+    "path": "/config/features/{featureId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "get:null post:null",
+    "name": "mod-search",
+    "path": "/config/languages"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "delete:null put:null",
+    "name": "mod-search",
+    "path": "/config/languages/{code}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-search",
+    "path": "/holdings/ids"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-search",
+    "path": "/index/indices"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-search",
+    "path": "/index/inventory/reindex"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-search",
+    "path": "/index/mappings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-search",
+    "path": "/index/records"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-search",
+    "path": "/instances"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-search",
+    "path": "/instances/ids"
+  },
+  {
+    "apiDescription": "ramls/permissions.raml",
+    "apiType": "raml",
+    "methods": "get:perms_permissions_get post:perms_permissions_post",
+    "name": "mod-permissions",
+    "path": "/perms/permissions"
+  },
+  {
+    "apiDescription": "ramls/permissions.raml",
+    "apiType": "raml",
+    "methods": "delete:perms_permissions__id__delete get:perms_permissions__id__get put:perms_permissions__id__put",
+    "name": "mod-permissions",
+    "path": "/perms/permissions/{id}"
+  },
+  {
+    "apiDescription": "ramls/permissions.raml",
+    "apiType": "raml",
+    "methods": "post:perms_purge_deprecated_post",
+    "name": "mod-permissions",
+    "path": "/perms/purge-deprecated"
+  },
+  {
+    "apiDescription": "ramls/permissions.raml",
+    "apiType": "raml",
+    "methods": "get:perms_users_get post:perms_users_post",
+    "name": "mod-permissions",
+    "path": "/perms/users"
+  },
+  {
+    "apiDescription": "ramls/permissions.raml",
+    "apiType": "raml",
+    "methods": "delete:perms_users__id__delete get:perms_users__id__get put:perms_users__id__put",
+    "name": "mod-permissions",
+    "path": "/perms/users/{id}"
+  },
+  {
+    "apiDescription": "ramls/permissions.raml",
+    "apiType": "raml",
+    "methods": "get:perms_users__id__permissions_get post:perms_users__id__permissions_post",
+    "name": "mod-permissions",
+    "path": "/perms/users/{id}/permissions"
+  },
+  {
+    "apiDescription": "ramls/permissions.raml",
+    "apiType": "raml",
+    "methods": "delete:perms_users__id__permissions__permissionname__delete",
+    "name": "mod-permissions",
+    "path": "/perms/users/{id}/permissions/{permissionname}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-search",
+    "path": "/resources/jobs"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-search",
+    "path": "/resources/jobs/{jobId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-search",
+    "path": "/resources/jobs/{jobId}/ids"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-search",
+    "path": "/{recordType}/facets"
+  }
+]
