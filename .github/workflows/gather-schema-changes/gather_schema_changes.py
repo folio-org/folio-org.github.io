@@ -291,7 +291,7 @@ def find_api_schemas_parent(api_dir, exclude_dirs, exclude_files):
     # get the declared RAML "types"
     for api_fn in api_files:
         api_subdir = os.path.split(os.path.relpath(api_fn, start=api_dir))[0]
-        with open(api_fn) as input_fh:
+        with open(api_fn, mode="r", encoding="utf-8") as input_fh:
             try:
                 content = yaml.safe_load(input_fh)
             except yaml.YAMLError as err:
@@ -415,10 +415,10 @@ def store_diff_result(output_dir, output_fn, result, version, store_type):
         storage_pn = os.path.join(storage_dir, output_fn)
     storage_diff_pn = os.path.join(storage_dir, "{}-{}.diff".format(storage_pn, version))
     storage_txt_pn = os.path.join(storage_dir, "{}-{}.txt".format(storage_pn, version))
-    with open(storage_diff_pn, "w") as output_fh:
+    with open(storage_diff_pn, mode="w", encoding="utf-8") as output_fh:
         output_fh.write(result)
         output_fh.write("\n")
-    with open(storage_txt_pn, "w") as output_fh:
+    with open(storage_txt_pn, mode="w", encoding="utf-8") as output_fh:
         output_fh.write("Comparison version: {}\n".format(version))
         output_fh.write("Comparison date: {}\n".format(DATE_TIME))
         output_fh.write("----\n")
@@ -468,7 +468,7 @@ def store_summary(summary_json, branch, mod_name):
     output_dir = os.path.join("schemadiff", branch, mod_name)
     os.makedirs(output_dir, exist_ok=True)
     output_fn = os.path.join(output_dir, "summary.json")
-    with open(output_fn, "w") as output_fh:
+    with open(output_fn, mode="w", encoding="utf-8") as output_fh:
         output_fh.write(json.dumps(summary_json, sort_keys=True, indent=2, separators=(",", ": ")))
         output_fh.write("\n")
 
@@ -480,7 +480,7 @@ def main():
     url_repos = os.path.join(url_base, "repos.json")
     json_versions = get_config_data(url_versions)
     # For local testing:
-    #with open("_data/releases-backend-{}.json".format(branch), 'r') as json_fh:
+    #with open("_data/releases-backend-{}.json".format(branch), mode="r", encoding="utf-8") as json_fh:
         #json_versions = json.load(json_fh)
     json_repos = get_config_data(url_repos)
     global DATE_TIME
