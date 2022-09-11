@@ -2,70 +2,70 @@
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "get:deploymentmodules_get post:deploymentmodules_post",
+    "methods": "get:deployment_modules_get post:deployment_modules_post",
     "name": "okapi",
     "path": "/_/deployment/modules"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "delete:deploymentmodules__instance_id__delete get:deploymentmodules__instance_id__get",
+    "methods": "delete:deployment_modules__instance_id__delete get:deployment_modules__instance_id__get",
     "name": "okapi",
     "path": "/_/deployment/modules/{instance_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "get:discoveryhealth_get",
+    "methods": "get:discovery_health_get",
     "name": "okapi",
     "path": "/_/discovery/health"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "get:discoveryhealth__service_id__get",
+    "methods": "get:discovery_health__service_id__get",
     "name": "okapi",
     "path": "/_/discovery/health/{service_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "get:discoveryhealth__service_id___instance_id__get",
+    "methods": "get:discovery_health__service_id___instance_id__get",
     "name": "okapi",
     "path": "/_/discovery/health/{service_id}/{instance_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "delete:discoverymodules_delete get:discoverymodules_get post:discoverymodules_post",
+    "methods": "delete:discovery_modules_delete get:discovery_modules_get post:discovery_modules_post",
     "name": "okapi",
     "path": "/_/discovery/modules"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "delete:discoverymodules__service_id__delete get:discoverymodules__service_id__get",
+    "methods": "delete:discovery_modules__service_id__delete get:discovery_modules__service_id__get",
     "name": "okapi",
     "path": "/_/discovery/modules/{service_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "delete:discoverymodules__service_id___instance_id__delete get:discoverymodules__service_id___instance_id__get",
+    "methods": "delete:discovery_modules__service_id___instance_id__delete get:discovery_modules__service_id___instance_id__get",
     "name": "okapi",
     "path": "/_/discovery/modules/{service_id}/{instance_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "get:discoverynodes_get",
+    "methods": "get:discovery_nodes_get",
     "name": "okapi",
     "path": "/_/discovery/nodes"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "get:discoverynodes__node_id__get put:discoverynodes__node_id__put",
+    "methods": "get:discovery_nodes__node_id__get put:discovery_nodes__node_id__put",
     "name": "okapi",
     "path": "/_/discovery/nodes/{node_id}"
   },
@@ -79,133 +79,133 @@
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "delete:env_id__delete get:env_id__get",
+    "methods": "delete:env__id__delete get:env__id__get",
     "name": "okapi",
     "path": "/_/env/{id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "get:invoketenant__id__get",
+    "methods": "get:invoke_tenant__id__get",
     "name": "okapi",
     "path": "/_/invoke/tenant/{id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "post:proxycleanup_modules_post",
+    "methods": "post:proxy_cleanup_modules_post",
     "name": "okapi",
     "path": "/_/proxy/cleanup/modules"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "get:proxyhealth_get",
+    "methods": "get:proxy_health_get",
     "name": "okapi",
     "path": "/_/proxy/health"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "post:proxyimport_modules_post",
+    "methods": "post:proxy_import_modules_post",
     "name": "okapi",
     "path": "/_/proxy/import/modules"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "get:proxymodules_get post:proxymodules_post",
+    "methods": "get:proxy_modules_get post:proxy_modules_post",
     "name": "okapi",
     "path": "/_/proxy/modules"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "delete:proxymodules__module_id__delete get:proxymodules__module_id__get",
+    "methods": "delete:proxy_modules__module_id__delete get:proxy_modules__module_id__get",
     "name": "okapi",
     "path": "/_/proxy/modules/{module_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "post:proxypull_modules_post",
+    "methods": "post:proxy_pull_modules_post",
     "name": "okapi",
     "path": "/_/proxy/pull/modules"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "get:proxytenants_get post:proxytenants_post",
+    "methods": "get:proxy_tenants_get post:proxy_tenants_post",
     "name": "okapi",
     "path": "/_/proxy/tenants"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "delete:proxytenants__tenant_id__delete get:proxytenants__tenant_id__get put:proxytenants__tenant_id__put",
+    "methods": "delete:proxy_tenants__tenant_id__delete get:proxy_tenants__tenant_id__get put:proxy_tenants__tenant_id__put",
     "name": "okapi",
     "path": "/_/proxy/tenants/{tenant_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "delete:proxytenants__tenant_id__install_delete get:proxytenants__tenant_id__install_get post:proxytenants__tenant_id__install_post",
+    "methods": "delete:proxy_tenants__tenant_id__install_delete get:proxy_tenants__tenant_id__install_get post:proxy_tenants__tenant_id__install_post",
     "name": "okapi",
     "path": "/_/proxy/tenants/{tenant_id}/install"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "delete:proxytenants__tenant_id__install__install_id__delete get:proxytenants__tenant_id__install__install_id__get",
+    "methods": "delete:proxy_tenants__tenant_id__install__install_id__delete get:proxy_tenants__tenant_id__install__install_id__get",
     "name": "okapi",
     "path": "/_/proxy/tenants/{tenant_id}/install/{install_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "get:proxytenants__tenant_id__interfaces_get",
+    "methods": "get:proxy_tenants__tenant_id__interfaces_get",
     "name": "okapi",
     "path": "/_/proxy/tenants/{tenant_id}/interfaces"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "get:proxytenants__tenant_id__interfaces__interface_id__get",
+    "methods": "get:proxy_tenants__tenant_id__interfaces__interface_id__get",
     "name": "okapi",
     "path": "/_/proxy/tenants/{tenant_id}/interfaces/{interface_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "delete:proxytenants__tenant_id__modules_delete get:proxytenants__tenant_id__modules_get post:proxytenants__tenant_id__modules_post",
+    "methods": "delete:proxy_tenants__tenant_id__modules_delete get:proxy_tenants__tenant_id__modules_get post:proxy_tenants__tenant_id__modules_post",
     "name": "okapi",
     "path": "/_/proxy/tenants/{tenant_id}/modules"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "delete:proxytenants__tenant_id__modules__module_id__delete get:proxytenants__tenant_id__modules__module_id__get post:proxytenants__tenant_id__modules__module_id__post",
+    "methods": "delete:proxy_tenants__tenant_id__modules__module_id__delete get:proxy_tenants__tenant_id__modules__module_id__get post:proxy_tenants__tenant_id__modules__module_id__post",
     "name": "okapi",
     "path": "/_/proxy/tenants/{tenant_id}/modules/{module_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "get:proxytenants__tenant_id__timers_get patch:proxytenants__tenant_id__timers_patch",
+    "methods": "get:proxy_tenants__tenant_id__timers_get patch:proxy_tenants__tenant_id__timers_patch",
     "name": "okapi",
     "path": "/_/proxy/tenants/{tenant_id}/timers"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "get:proxytenants__tenant_id__timers__timer_id__get patch:proxytenants__tenant_id__timers__timer_id__patch",
+    "methods": "get:proxy_tenants__tenant_id__timers__timer_id__get patch:proxy_tenants__tenant_id__timers__timer_id__patch",
     "name": "okapi",
     "path": "/_/proxy/tenants/{tenant_id}/timers/{timer_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
-    "methods": "post:proxytenants__tenant_id__upgrade_post",
+    "methods": "post:proxy_tenants__tenant_id__upgrade_post",
     "name": "okapi",
     "path": "/_/proxy/tenants/{tenant_id}/upgrade"
   },
