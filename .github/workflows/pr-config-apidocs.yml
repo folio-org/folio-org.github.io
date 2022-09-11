@@ -8,6 +8,7 @@ on:
     branches: [ ongoing-config-apidocs ]
     paths:
       - '_data/config-apidocs.json'
+      - '_data/config-api-endpoints.json'
 
 jobs:
   create-pr:
