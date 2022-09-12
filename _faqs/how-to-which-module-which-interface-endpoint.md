@@ -10,13 +10,9 @@ faqOrder: 8
 This is not a easy topic in the new FOLIO multi-module system.
 Techniques for gathering and navigating the relevant information are under development.
 
-Jump to the current best facility, the [UI Developer Settings](#ui-developer-settings).
-
 ## API documentation
 
-There is the set of [API documentation](/reference/api/) which is automatically generated from each separate back-end module's API description files and JSON Schemas.
-Developers could wade through that, making an educated guess.
-(There are tickets in the Issue tracker to improve that aspect of the API documentation, but not happening yet.)
+There is the set of [API documentation](/reference/api/), and the associated list of [endpoints](/reference/api/endpoints/), which is automatically generated from each separate back-end module's API description files and JSON Schemas.
 
 ## Registry of ModuleDescriptors
 
@@ -56,7 +52,7 @@ curl -s -S -w'\n' \
 
 ## UI Developer Settings
 
-The best facility at this stage of the project is provided by the [ui-developer](/source-code/map/#ui-developer) module.
+Some facilities are provided by the [ui-developer](/source-code/map/#ui-developer) module.
 
 Do login to the relevant running FOLIO system, and visit the "Settings : Developer : Okapi paths" page.
 This will list the "resource path to interface mapper" for all of the modules configured for that FOLIO instance.\
