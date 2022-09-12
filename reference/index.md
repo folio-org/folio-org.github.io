@@ -11,11 +11,11 @@ menuSubs:
 - title: Reference environments
   url: /guides/automation/
   anchorId: reference-environments
-  index: 3
+  index: 4
 ---
 
 Standards and reference documentation.
 
-- The set of automatically generated [API documentation](/reference/api/).
+- The set of automatically generated [API documentation](/reference/api/) and list of [endpoints](/reference/api/endpoints/).
 - The [reference environments](/guides/automation/#reference-environments) resulting from the continuous integration automated [builds](/guides/automation/#software-build-pipeline).
 - A [FOLIO glossary](/reference/glossary/) of some terms and technologies used in FOLIO.

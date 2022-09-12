@@ -105,7 +105,7 @@ Refer to the [Start](/start/) section.
 ### Reference documentation
 
 - [Overiew](/reference/) of all technical reference documentation.
-- <span id="api-reference"/> The set of automatically generated [API documentation](/reference/api/).
+- <span id="api-reference"/> The set of automatically generated [API documentation](/reference/api/) and the associated list of [endpoints](/reference/api/endpoints/).
 
 ### Fundamental documentation
 
