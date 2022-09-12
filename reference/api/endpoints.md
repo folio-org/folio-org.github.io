@@ -25,25 +25,14 @@ See [Further information](#further-information).
 
 {% assign urlApiXref = "/reference/api/" %}
 {% assign urlS3Base = "https://s3.amazonaws.com/foliodocs/api/" %}
-{% assign endpointList = "" | split: ',' %}
-{% assign missingList = "" | split: ',' %}
-{% assign presentCount = 0 %}
+{% assign moduleList = "" | split: ',' %}
+{% assign moduleCount = 0 %}
 
-{% for repo in site.data.config-apidocs %}
-  {% if repo.endpoints.size > 0 %}
-    {% assign presentCount = presentCount | plus: 1 %}
-    {% for endpoint in repo.endpoints %}
-      {%- capture item -%}
-        {{ endpoint.path }}|{{ endpoint.methods }}|{{ repo.name }}|{{ endpoint.apiDescription }}
-      {%- endcapture -%}
-      {% assign endpointList = endpointList | push: item %}
-    {% endfor %}
-  {% else %}
-    {% assign missingList = missingList | push: repo.name %}
-  {% endif %}
+{% for repo in site.data.config-apidocs -%}
+  {% assign moduleCount = moduleCount | plus: 1 %}
 {% endfor %}
 
-Listed endpoints count: {{ endpointList.size }}
+Listed endpoints count: {{ site.data.config-api-endpoints.size }}
 
 <table>
   <thead>
@@ -54,37 +43,30 @@ Listed endpoints count: {{ endpointList.size }}
     </tr>
   </thead>
   <tbody>
-{% assign endpointListSorted = endpointList | sort -%}
-{% for item in endpointListSorted -%}
-  {% assign pieces = item | split: "|" -%}
-  {% assign methods = pieces[1] | split: ' ' -%}
-  {% capture file_name %}{{ pieces[3] | split: "/" | last | replace_first: ".raml", "" | replace_first: ".yaml", ""}}{% endcapture -%}
-  {% assign api_type = "oas" -%}
+{% for item in site.data.config-api-endpoints -%}
+  {% assign moduleList = moduleList | push: item.name %}
+  {% assign methods = item.methods | split: ' ' -%}
+  {% capture file_name %}{{ item.apiDescription | split: "/" | last | replace_first: ".raml", "" | replace_first: ".yaml", ""}}{% endcapture -%}
   {% assign directory = "s" -%}
-  {% if pieces[3] contains ".raml" %}
-    {% assign api_type = "raml" %}
+  {% if item.apiType == "raml" %}
     {% assign directory = "p" %}
   {% endif %}
-  {% capture anchor %}{{ pieces[2] }}: {{ pieces[3] }}{% endcapture -%}
-  {% capture href %}{{ urlApiXref }}#{{ pieces[2] }}-{{ file_name }}{% endcapture -%}
+  {% capture anchor %}{{ item.name }}: {{ item.apiDescription }}{% endcapture -%}
+  {% capture href %}{{ urlApiXref }}#{{ item.name }}-{{ file_name }}{% endcapture -%}
   {% capture link %}<a href="{{ href }}">{{ anchor }}</a>{% endcapture -%}
   {%- capture method_links -%}
     {% for method in methods -%}
-      {% if method contains ":" -%}
-        {% assign method_parts = method | split: ':' -%}
-        {% if method_parts[1] != "null" -%}
-          <a href="{{ urlS3Base }}{{ pieces[2] }}/{{ directory }}/{{ file_name }}.html#{{ method_parts[1] }}">{{ method_parts[0] }}</a>
-        {%- else %}
-          {{ method_parts[0] }}
-        {% endif -%}
+      {% assign method_parts = method | split: ':' -%}
+      {% if method_parts[1] != "null" %}
+        <a href="{{ urlS3Base }}{{ item.name }}/{{ directory }}/{{ file_name }}.html#{{ method_parts[1] }}">{{ method_parts[0] }}</a>
       {% else %}
-        {{- method -}}
-      {% endif %}
+        {{ method_parts[0] }}
+      {% endif -%}
     {% endfor %}
   {%- endcapture -%}
   <tr>
     <td> {{ method_links }} </td>
-    <td> {{ pieces[0] }} </td>
+    <td> {{ item.path }} </td>
     <td> {{ link }} </td>
   </tr>
 {% endfor %}
@@ -98,8 +80,10 @@ A daily Workflow [assembles](/reference/api/#explain-gather-config) the publishe
 
 This facility was first available 2022-09-06. The endpoints for some modules will be missing until they have a new merge to their mainline branch.
 
+{% assign presentCount = moduleList | uniq | size %}
+{% assign missingCount = moduleCount | minus: presentCount %}
 Present modules count: {{ presentCount }} \
-Missing modules count: {{ missingList.size }}
+Missing modules count: {{ missingCount }}
 
 Links in the "Methods" column were added on 2022-09-10. Links will appear after modules have a new merge to their mainline branch.
 For OpenAPI-based modules, if such links are still missing, then that is because the API description has omitted the "`operationId`" property for that method.
