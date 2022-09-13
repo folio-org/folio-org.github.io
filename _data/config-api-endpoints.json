@@ -408,7 +408,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/searchAuthorities",
     "name": "mod-search",
     "path": "/authorities"
   },
@@ -471,28 +471,28 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/browseAuthorities",
     "name": "mod-search",
     "path": "/browse/authorities"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/browseInstancesByCallNumber",
     "name": "mod-search",
     "path": "/browse/call-numbers/instances"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/browseInstancesByContributor",
     "name": "mod-search",
     "path": "/browse/contributors/instances"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/browseInstancesBySubject",
     "name": "mod-search",
     "path": "/browse/subjects/instances"
   },
@@ -786,28 +786,28 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null post:null",
+    "methods": "get:operation/getAllFeatures post:operation/saveFeatureConfiguration",
     "name": "mod-search",
     "path": "/config/features"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "delete:null put:null",
+    "methods": "delete:operation/deleteFeatureConfigurationById put:operation/updateFeatureConfiguration",
     "name": "mod-search",
     "path": "/config/features/{featureId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null post:null",
+    "methods": "get:operation/getAllLanguageConfigs post:operation/createLanguageConfig",
     "name": "mod-search",
     "path": "/config/languages"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "delete:null put:null",
+    "methods": "delete:operation/deleteLanguageConfig put:operation/updateLanguageConfig",
     "name": "mod-search",
     "path": "/config/languages/{code}"
   },
@@ -1605,233 +1605,555 @@
   {
     "apiDescription": "ramls/budget_expense_class.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_budget_expense_classes_get post:finance_storage_budget_expense_classes_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/budget-expense-classes"
   },
   {
     "apiDescription": "ramls/budget_expense_class.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_budget_expense_classes__id__delete get:finance_storage_budget_expense_classes__id__get put:finance_storage_budget_expense_classes__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/budget-expense-classes/{id}"
   },
   {
     "apiDescription": "ramls/budget.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_budgets_get post:finance_storage_budgets_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/budgets"
   },
   {
     "apiDescription": "ramls/budget.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_budgets__id__delete get:finance_storage_budgets__id__get put:finance_storage_budgets__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/budgets/{id}"
   },
   {
     "apiDescription": "ramls/expense_class.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_expense_classes_get post:finance_storage_expense_classes_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/expense-classes"
   },
   {
     "apiDescription": "ramls/expense_class.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_expense_classes__id__delete get:finance_storage_expense_classes__id__get put:finance_storage_expense_classes__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/expense-classes/{id}"
   },
   {
     "apiDescription": "ramls/fiscal-year.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_fiscal_years_get post:finance_storage_fiscal_years_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/fiscal-years"
   },
   {
     "apiDescription": "ramls/fiscal-year.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_fiscal_years__id__delete get:finance_storage_fiscal_years__id__get put:finance_storage_fiscal_years__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/fiscal-years/{id}"
   },
   {
     "apiDescription": "ramls/fund-type.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_fund_types_get post:finance_storage_fund_types_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/fund-types"
   },
   {
     "apiDescription": "ramls/fund-type.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_fund_types__id__delete get:finance_storage_fund_types__id__get put:finance_storage_fund_types__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/fund-types/{id}"
   },
   {
     "apiDescription": "ramls/fund.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_funds_get post:finance_storage_funds_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/funds"
   },
   {
     "apiDescription": "ramls/fund.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_funds__id__delete get:finance_storage_funds__id__get put:finance_storage_funds__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/funds/{id}"
   },
   {
     "apiDescription": "ramls/group-budgets.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:finance_storage_group_budgets_get",
     "name": "mod-finance-storage",
     "path": "/finance-storage/group-budgets"
   },
   {
     "apiDescription": "ramls/group_fund_fy.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_group_fund_fiscal_years_get post:finance_storage_group_fund_fiscal_years_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/group-fund-fiscal-years"
   },
   {
     "apiDescription": "ramls/group_fund_fy.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_group_fund_fiscal_years__id__delete get:finance_storage_group_fund_fiscal_years__id__get put:finance_storage_group_fund_fiscal_years__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/group-fund-fiscal-years/{id}"
   },
   {
     "apiDescription": "ramls/group.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_groups_get post:finance_storage_groups_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/groups"
   },
   {
     "apiDescription": "ramls/group.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_groups__id__delete get:finance_storage_groups__id__get put:finance_storage_groups__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/groups/{id}"
   },
   {
     "apiDescription": "ramls/transaction-summary.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:finance_storage_invoice_transaction_summaries_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/invoice-transaction-summaries"
   },
   {
     "apiDescription": "ramls/transaction-summary.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_invoice_transaction_summaries__id__delete get:finance_storage_invoice_transaction_summaries__id__get put:finance_storage_invoice_transaction_summaries__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/invoice-transaction-summaries/{id}"
   },
   {
     "apiDescription": "ramls/ledger_rollover.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_ledger_rollovers_get post:finance_storage_ledger_rollovers_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers"
   },
   {
     "apiDescription": "ramls/ledger_rollover-budgets.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:finance_storage_ledger_rollovers_budgets_get",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers-budgets"
   },
   {
     "apiDescription": "ramls/ledger_rollover-budgets.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:finance_storage_ledger_rollovers_budgets__id__get",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers-budgets/{id}"
   },
   {
     "apiDescription": "ramls/ledger-rollover-errors.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_ledger_rollovers_errors_get post:finance_storage_ledger_rollovers_errors_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers-errors"
   },
   {
     "apiDescription": "ramls/ledger-rollover-errors.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_ledger_rollovers_errors__id__delete get:finance_storage_ledger_rollovers_errors__id__get put:finance_storage_ledger_rollovers_errors__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers-errors/{id}"
   },
   {
     "apiDescription": "ramls/ledger_rollover_progress.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_ledger_rollovers_progress_get post:finance_storage_ledger_rollovers_progress_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers-progress"
   },
   {
     "apiDescription": "ramls/ledger_rollover_progress.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_ledger_rollovers_progress__id__delete get:finance_storage_ledger_rollovers_progress__id__get put:finance_storage_ledger_rollovers_progress__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers-progress/{id}"
   },
   {
     "apiDescription": "ramls/ledger_rollover.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_ledger_rollovers__id__delete get:finance_storage_ledger_rollovers__id__get put:finance_storage_ledger_rollovers__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers/{id}"
   },
   {
     "apiDescription": "ramls/ledger.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_ledgers_get post:finance_storage_ledgers_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledgers"
   },
   {
     "apiDescription": "ramls/ledger.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_ledgers__id__delete get:finance_storage_ledgers__id__get put:finance_storage_ledgers__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledgers/{id}"
   },
   {
     "apiDescription": "ramls/transaction-summary.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:finance_storage_order_transaction_summaries_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/order-transaction-summaries"
   },
   {
     "apiDescription": "ramls/transaction-summary.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_order_transaction_summaries__id__delete get:finance_storage_order_transaction_summaries__id__get put:finance_storage_order_transaction_summaries__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/order-transaction-summaries/{id}"
   },
   {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_transactions_get post:finance_storage_transactions_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/transactions"
   },
   {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_transactions__id__delete get:finance_storage_transactions__id__get put:finance_storage_transactions__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/transactions/{id}"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "post:finance_allocations_post",
+    "name": "mod-finance",
+    "path": "/finance/allocations"
+  },
+  {
+    "apiDescription": "ramls/budgets.raml",
+    "apiType": "raml",
+    "methods": "get:finance_budgets_get post:finance_budgets_post",
+    "name": "mod-finance",
+    "path": "/finance/budgets"
+  },
+  {
+    "apiDescription": "ramls/budgets.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_budgets__id__delete get:finance_budgets__id__get put:finance_budgets__id__put",
+    "name": "mod-finance",
+    "path": "/finance/budgets/{id}"
+  },
+  {
+    "apiDescription": "ramls/budgets.raml",
+    "apiType": "raml",
+    "methods": "get:finance_budgets__id__expense_classes_totals_get",
+    "name": "mod-finance",
+    "path": "/finance/budgets/{id}/expense-classes-totals"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "post:finance_credits_post",
+    "name": "mod-finance",
+    "path": "/finance/credits"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "put:finance_credits__id__put",
+    "name": "mod-finance",
+    "path": "/finance/credits/{id}"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "post:finance_encumbrances_post",
+    "name": "mod-finance",
+    "path": "/finance/encumbrances"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_encumbrances__id__delete put:finance_encumbrances__id__put",
+    "name": "mod-finance",
+    "path": "/finance/encumbrances/{id}"
+  },
+  {
+    "apiDescription": "ramls/exchange-rate.raml",
+    "apiType": "raml",
+    "methods": "get:finance_exchange_rate_get",
+    "name": "mod-finance",
+    "path": "/finance/exchange-rate"
+  },
+  {
+    "apiDescription": "ramls/expense-classes.raml",
+    "apiType": "raml",
+    "methods": "get:finance_expense_classes_get post:finance_expense_classes_post",
+    "name": "mod-finance",
+    "path": "/finance/expense-classes"
+  },
+  {
+    "apiDescription": "ramls/expense-classes.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_expense_classes__id__delete get:finance_expense_classes__id__get put:finance_expense_classes__id__put",
+    "name": "mod-finance",
+    "path": "/finance/expense-classes/{id}"
+  },
+  {
+    "apiDescription": "ramls/fiscal-years.raml",
+    "apiType": "raml",
+    "methods": "get:finance_fiscal_years_get post:finance_fiscal_years_post",
+    "name": "mod-finance",
+    "path": "/finance/fiscal-years"
+  },
+  {
+    "apiDescription": "ramls/fiscal-years.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_fiscal_years__id__delete get:finance_fiscal_years__id__get put:finance_fiscal_years__id__put",
+    "name": "mod-finance",
+    "path": "/finance/fiscal-years/{id}"
+  },
+  {
+    "apiDescription": "ramls/finance-fund-codes-expense-classes.raml",
+    "apiType": "raml",
+    "methods": "get:finance_fund_codes_expense_classes_get",
+    "name": "mod-finance",
+    "path": "/finance/fund-codes-expense-classes"
+  },
+  {
+    "apiDescription": "ramls/fund-types.raml",
+    "apiType": "raml",
+    "methods": "get:finance_fund_types_get post:finance_fund_types_post",
+    "name": "mod-finance",
+    "path": "/finance/fund-types"
+  },
+  {
+    "apiDescription": "ramls/fund-types.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_fund_types__id__delete get:finance_fund_types__id__get put:finance_fund_types__id__put",
+    "name": "mod-finance",
+    "path": "/finance/fund-types/{id}"
+  },
+  {
+    "apiDescription": "ramls/funds.raml",
+    "apiType": "raml",
+    "methods": "get:finance_funds_get post:finance_funds_post",
+    "name": "mod-finance",
+    "path": "/finance/funds"
+  },
+  {
+    "apiDescription": "ramls/funds.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_funds__id__delete get:finance_funds__id__get put:finance_funds__id__put",
+    "name": "mod-finance",
+    "path": "/finance/funds/{id}"
+  },
+  {
+    "apiDescription": "ramls/funds.raml",
+    "apiType": "raml",
+    "methods": "get:finance_funds__id__budget_get",
+    "name": "mod-finance",
+    "path": "/finance/funds/{id}/budget"
+  },
+  {
+    "apiDescription": "ramls/funds.raml",
+    "apiType": "raml",
+    "methods": "get:finance_funds__id__expense_classes_get",
+    "name": "mod-finance",
+    "path": "/finance/funds/{id}/expense-classes"
+  },
+  {
+    "apiDescription": "ramls/group-fiscal-year-summaries.raml",
+    "apiType": "raml",
+    "methods": "get:finance_group_fiscal_year_summaries_get",
+    "name": "mod-finance",
+    "path": "/finance/group-fiscal-year-summaries"
+  },
+  {
+    "apiDescription": "ramls/group-fund-fiscal-year.raml",
+    "apiType": "raml",
+    "methods": "get:finance_group_fund_fiscal_years_get post:finance_group_fund_fiscal_years_post",
+    "name": "mod-finance",
+    "path": "/finance/group-fund-fiscal-years"
+  },
+  {
+    "apiDescription": "ramls/group-fund-fiscal-year.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_group_fund_fiscal_years__id__delete",
+    "name": "mod-finance",
+    "path": "/finance/group-fund-fiscal-years/{id}"
+  },
+  {
+    "apiDescription": "ramls/groups.raml",
+    "apiType": "raml",
+    "methods": "get:finance_groups_get post:finance_groups_post",
+    "name": "mod-finance",
+    "path": "/finance/groups"
+  },
+  {
+    "apiDescription": "ramls/groups.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_groups__id__delete get:finance_groups__id__get put:finance_groups__id__put",
+    "name": "mod-finance",
+    "path": "/finance/groups/{id}"
+  },
+  {
+    "apiDescription": "ramls/groups.raml",
+    "apiType": "raml",
+    "methods": "get:finance_groups__id__expense_classes_totals_get",
+    "name": "mod-finance",
+    "path": "/finance/groups/{id}/expense-classes-totals"
+  },
+  {
+    "apiDescription": "ramls/transaction-summary.raml",
+    "apiType": "raml",
+    "methods": "post:finance_invoice_transaction_summaries_post",
+    "name": "mod-finance",
+    "path": "/finance/invoice-transaction-summaries"
+  },
+  {
+    "apiDescription": "ramls/transaction-summary.raml",
+    "apiType": "raml",
+    "methods": "put:finance_invoice_transaction_summaries__id__put",
+    "name": "mod-finance",
+    "path": "/finance/invoice-transaction-summaries/{id}"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledger_rollovers_get post:finance_ledger_rollovers_post",
+    "name": "mod-finance",
+    "path": "/finance/ledger-rollovers"
+  },
+  {
+    "apiDescription": "ramls/ledger-rollover-errors.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledger_rollovers_errors_get",
+    "name": "mod-finance",
+    "path": "/finance/ledger-rollovers-errors"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover_progress.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledger_rollovers_progress_get post:finance_ledger_rollovers_progress_post",
+    "name": "mod-finance",
+    "path": "/finance/ledger-rollovers-progress"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover_progress.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledger_rollovers_progress__id__get put:finance_ledger_rollovers_progress__id__put",
+    "name": "mod-finance",
+    "path": "/finance/ledger-rollovers-progress/{id}"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledger_rollovers__id__get",
+    "name": "mod-finance",
+    "path": "/finance/ledger-rollovers/{id}"
+  },
+  {
+    "apiDescription": "ramls/ledgers.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledgers_get post:finance_ledgers_post",
+    "name": "mod-finance",
+    "path": "/finance/ledgers"
+  },
+  {
+    "apiDescription": "ramls/ledgers.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_ledgers__id__delete get:finance_ledgers__id__get put:finance_ledgers__id__put",
+    "name": "mod-finance",
+    "path": "/finance/ledgers/{id}"
+  },
+  {
+    "apiDescription": "ramls/ledgers.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledgers__id__current_fiscal_year_get",
+    "name": "mod-finance",
+    "path": "/finance/ledgers/{id}/current-fiscal-year"
+  },
+  {
+    "apiDescription": "ramls/transaction-summary.raml",
+    "apiType": "raml",
+    "methods": "post:finance_order_transaction_summaries_post",
+    "name": "mod-finance",
+    "path": "/finance/order-transaction-summaries"
+  },
+  {
+    "apiDescription": "ramls/transaction-summary.raml",
+    "apiType": "raml",
+    "methods": "put:finance_order_transaction_summaries__id__put",
+    "name": "mod-finance",
+    "path": "/finance/order-transaction-summaries/{id}"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "post:finance_payments_post",
+    "name": "mod-finance",
+    "path": "/finance/payments"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "put:finance_payments__id__put",
+    "name": "mod-finance",
+    "path": "/finance/payments/{id}"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "post:finance_pending_payments_post",
+    "name": "mod-finance",
+    "path": "/finance/pending-payments"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "put:finance_pending_payments__id__put",
+    "name": "mod-finance",
+    "path": "/finance/pending-payments/{id}"
+  },
+  {
+    "apiDescription": "ramls/release-encumbrance.raml",
+    "apiType": "raml",
+    "methods": "post:finance_release_encumbrance__id__post",
+    "name": "mod-finance",
+    "path": "/finance/release-encumbrance/{id}"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "get:finance_transactions_get",
+    "name": "mod-finance",
+    "path": "/finance/transactions"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "get:finance_transactions__id__get",
+    "name": "mod-finance",
+    "path": "/finance/transactions/{id}"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "post:finance_transfers_post",
+    "name": "mod-finance",
+    "path": "/finance/transfers"
   },
   {
     "apiDescription": "ramls/gobi.raml",
@@ -1948,7 +2270,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/getHoldingIds",
     "name": "mod-search",
     "path": "/holdings/ids"
   },
@@ -1990,28 +2312,28 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/createIndices",
     "name": "mod-search",
     "path": "/index/indices"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/reindexInventoryRecords",
     "name": "mod-search",
     "path": "/index/inventory/reindex"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/updateMappings",
     "name": "mod-search",
     "path": "/index/mappings"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/indexRecords",
     "name": "mod-search",
     "path": "/index/records"
   },
@@ -2179,14 +2501,14 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/searchInstances",
     "name": "mod-search",
     "path": "/instances"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/getInstanceIds",
     "name": "mod-search",
     "path": "/instances/ids"
   },
@@ -2963,21 +3285,21 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/submitIdsJob",
     "name": "mod-search",
     "path": "/resources/jobs"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/getIdsJob",
     "name": "mod-search",
     "path": "/resources/jobs/{jobId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/getResourceIds",
     "name": "mod-search",
     "path": "/resources/jobs/{jobId}/ids"
   },
@@ -3285,7 +3607,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/getFacets",
     "name": "mod-search",
     "path": "/{recordType}/facets"
   }
