@@ -392,11 +392,81 @@
     "path": "/admin/health"
   },
   {
+    "apiDescription": "ramls/alternative-title-type.raml",
+    "apiType": "raml",
+    "methods": "get:alternative_title_types_get post:alternative_title_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/alternative-title-types"
+  },
+  {
+    "apiDescription": "ramls/alternative-title-type.raml",
+    "apiType": "raml",
+    "methods": "delete:alternative_title_types__id__delete get:alternative_title_types__id__get put:alternative_title_types__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/alternative-title-types/{id}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
     "methods": "get:null",
     "name": "mod-search",
     "path": "/authorities"
+  },
+  {
+    "apiDescription": "ramls/authority-note-type.raml",
+    "apiType": "raml",
+    "methods": "get:authority_note_types_get post:authority_note_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/authority-note-types"
+  },
+  {
+    "apiDescription": "ramls/authority-note-type.raml",
+    "apiType": "raml",
+    "methods": "delete:authority_note_types__id__delete get:authority_note_types__id__get put:authority_note_types__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/authority-note-types/{id}"
+  },
+  {
+    "apiDescription": "ramls/authority-source-file.raml",
+    "apiType": "raml",
+    "methods": "get:authority_source_files_get post:authority_source_files_post",
+    "name": "mod-inventory-storage",
+    "path": "/authority-source-files"
+  },
+  {
+    "apiDescription": "ramls/authority-source-file.raml",
+    "apiType": "raml",
+    "methods": "delete:authority_source_files__id__delete get:authority_source_files__id__get patch:authority_source_files__id__patch put:authority_source_files__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/authority-source-files/{id}"
+  },
+  {
+    "apiDescription": "ramls/authorities.raml",
+    "apiType": "raml",
+    "methods": "delete:authority_storage_authorities_delete get:authority_storage_authorities_get post:authority_storage_authorities_post",
+    "name": "mod-inventory-storage",
+    "path": "/authority-storage/authorities"
+  },
+  {
+    "apiDescription": "ramls/authorities.raml",
+    "apiType": "raml",
+    "methods": "delete:authority_storage_authorities__authorityid__delete get:authority_storage_authorities__authorityid__get put:authority_storage_authorities__authorityid__put",
+    "name": "mod-inventory-storage",
+    "path": "/authority-storage/authorities/{authorityId}"
+  },
+  {
+    "apiDescription": "ramls/authorities-reindex.raml",
+    "apiType": "raml",
+    "methods": "post:authority_storage_reindex_post",
+    "name": "mod-inventory-storage",
+    "path": "/authority-storage/reindex"
+  },
+  {
+    "apiDescription": "ramls/authorities-reindex.raml",
+    "apiType": "raml",
+    "methods": "delete:authority_storage_reindex__id__delete get:authority_storage_reindex__id__get",
+    "name": "mod-inventory-storage",
+    "path": "/authority-storage/reindex/{id}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
@@ -425,6 +495,20 @@
     "methods": "get:null",
     "name": "mod-search",
     "path": "/browse/subjects/instances"
+  },
+  {
+    "apiDescription": "ramls/call-number-type.raml",
+    "apiType": "raml",
+    "methods": "get:call_number_types_get post:call_number_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/call-number-types"
+  },
+  {
+    "apiDescription": "ramls/call-number-type.raml",
+    "apiType": "raml",
+    "methods": "delete:call_number_types__id__delete get:call_number_types__id__get put:call_number_types__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/call-number-types/{id}"
   },
   {
     "apiDescription": "ramls/circulation.raml",
@@ -672,6 +756,20 @@
     "path": "/circulation/scheduled-age-to-lost-fee-charging"
   },
   {
+    "apiDescription": "ramls/classification-type.raml",
+    "apiType": "raml",
+    "methods": "get:classification_types_get post:classification_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/classification-types"
+  },
+  {
+    "apiDescription": "ramls/classification-type.raml",
+    "apiType": "raml",
+    "methods": "delete:classification_types__classificationtypeid__delete get:classification_types__classificationtypeid__get put:classification_types__classificationtypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/classification-types/{classificationTypeId}"
+  },
+  {
     "apiDescription": "ramls/comments.raml",
     "apiType": "raml",
     "methods": "get:comments_get post:comments_post",
@@ -712,6 +810,34 @@
     "methods": "delete:null put:null",
     "name": "mod-search",
     "path": "/config/languages/{code}"
+  },
+  {
+    "apiDescription": "ramls/contributor-name-type.raml",
+    "apiType": "raml",
+    "methods": "get:contributor_name_types_get post:contributor_name_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/contributor-name-types"
+  },
+  {
+    "apiDescription": "ramls/contributor-name-type.raml",
+    "apiType": "raml",
+    "methods": "delete:contributor_name_types__contributornametypeid__delete get:contributor_name_types__contributornametypeid__get put:contributor_name_types__contributornametypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/contributor-name-types/{contributorNameTypeId}"
+  },
+  {
+    "apiDescription": "ramls/contributor-type.raml",
+    "apiType": "raml",
+    "methods": "get:contributor_types_get post:contributor_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/contributor-types"
+  },
+  {
+    "apiDescription": "ramls/contributor-type.raml",
+    "apiType": "raml",
+    "methods": "delete:contributor_types__contributortypeid__delete get:contributor_types__contributortypeid__get put:contributor_types__contributortypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/contributor-types/{contributorTypeId}"
   },
   {
     "apiDescription": "ramls/courses.raml",
@@ -992,6 +1118,370 @@
     "methods": "get:data_export_transformation_fields_get",
     "name": "mod-data-export",
     "path": "/data-export/transformation-fields"
+  },
+  {
+    "apiDescription": "ramls/access-types.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_access_types_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/access-types"
+  },
+  {
+    "apiDescription": "ramls/access-types.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_access_types__id__get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/access-types/{id}"
+  },
+  {
+    "apiDescription": "ramls/eholdings.raml",
+    "apiType": "raml",
+    "methods": "delete:eholdings_cache_delete",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/cache"
+  },
+  {
+    "apiDescription": "ramls/currencies.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_currencies_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/currencies"
+  },
+  {
+    "apiDescription": "ramls/custom-labels.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_custom_labels_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/custom-labels"
+  },
+  {
+    "apiDescription": "ramls/kb-credentials.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials_get post:eholdings_kb_credentials_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials"
+  },
+  {
+    "apiDescription": "ramls/kb-credentials.raml",
+    "apiType": "raml",
+    "methods": "delete:eholdings_kb_credentials__id__delete get:eholdings_kb_credentials__id__get patch:eholdings_kb_credentials__id__patch put:eholdings_kb_credentials__id__put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}"
+  },
+  {
+    "apiDescription": "ramls/access-types.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials__id__access_types_get post:eholdings_kb_credentials__id__access_types_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/access-types"
+  },
+  {
+    "apiDescription": "ramls/access-types.raml",
+    "apiType": "raml",
+    "methods": "delete:eholdings_kb_credentials__id__access_types__accesstypeid__delete get:eholdings_kb_credentials__id__access_types__accesstypeid__get put:eholdings_kb_credentials__id__access_types__accesstypeid__put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/access-types/{accessTypeId}"
+  },
+  {
+    "apiDescription": "ramls/custom-labels.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials__id__custom_labels_get put:eholdings_kb_credentials__id__custom_labels_put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/custom-labels"
+  },
+  {
+    "apiDescription": "ramls/kb-credentials.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials__id__key_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/key"
+  },
+  {
+    "apiDescription": "ramls/proxies.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials__id__proxy_types_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/proxy-types"
+  },
+  {
+    "apiDescription": "ramls/proxies.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials__id__root_proxy_get put:eholdings_kb_credentials__id__root_proxy_put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/root-proxy"
+  },
+  {
+    "apiDescription": "ramls/uc.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials__id__uc_get patch:eholdings_kb_credentials__id__uc_patch post:eholdings_kb_credentials__id__uc_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/uc"
+  },
+  {
+    "apiDescription": "ramls/uc.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials__id__uc_key_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/uc/key"
+  },
+  {
+    "apiDescription": "ramls/assigned-users.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials__id__users_get post:eholdings_kb_credentials__id__users_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/users"
+  },
+  {
+    "apiDescription": "ramls/assigned-users.raml",
+    "apiType": "raml",
+    "methods": "delete:eholdings_kb_credentials__id__users__userid__delete",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/users/{userId}"
+  },
+  {
+    "apiDescription": "ramls/eholdings.raml",
+    "apiType": "raml",
+    "methods": "post:eholdings_loading_kb_credentials_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/loading/kb-credentials"
+  },
+  {
+    "apiDescription": "ramls/eholdings.raml",
+    "apiType": "raml",
+    "methods": "post:eholdings_loading_kb_credentials__id__post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/loading/kb-credentials/{id}"
+  },
+  {
+    "apiDescription": "ramls/eholdings.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_loading_kb_credentials__id__status_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/loading/kb-credentials/{id}/status"
+  },
+  {
+    "apiDescription": "ramls/packages.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_packages_get post:eholdings_packages_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/packages"
+  },
+  {
+    "apiDescription": "ramls/packages.raml",
+    "apiType": "raml",
+    "methods": "post:eholdings_packages_bulk_fetch_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/packages/bulk/fetch"
+  },
+  {
+    "apiDescription": "ramls/packages.raml",
+    "apiType": "raml",
+    "methods": "delete:eholdings_packages__packageid__delete get:eholdings_packages__packageid__get put:eholdings_packages__packageid__put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/packages/{packageId}"
+  },
+  {
+    "apiDescription": "ramls/costperuse.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_packages__packageid__costperuse_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/packages/{packageId}/costperuse"
+  },
+  {
+    "apiDescription": "ramls/packages.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_packages__packageid__resources_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/packages/{packageId}/resources"
+  },
+  {
+    "apiDescription": "ramls/costperuse.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_packages__packageid__resources_costperuse_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/packages/{packageId}/resources/costperuse"
+  },
+  {
+    "apiDescription": "ramls/export.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_packages__packageid__resources_costperuse_export_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/packages/{packageId}/resources/costperuse/export"
+  },
+  {
+    "apiDescription": "ramls/packages.raml",
+    "apiType": "raml",
+    "methods": "put:eholdings_packages__packageid__tags_put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/packages/{packageId}/tags"
+  },
+  {
+    "apiDescription": "ramls/providers.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_providers_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/providers"
+  },
+  {
+    "apiDescription": "ramls/providers.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_providers__providerid__get put:eholdings_providers__providerid__put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/providers/{providerId}"
+  },
+  {
+    "apiDescription": "ramls/providers.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_providers__providerid__packages_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/providers/{providerId}/packages"
+  },
+  {
+    "apiDescription": "ramls/providers.raml",
+    "apiType": "raml",
+    "methods": "put:eholdings_providers__providerid__tags_put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/providers/{providerId}/tags"
+  },
+  {
+    "apiDescription": "ramls/proxies.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_proxy_types_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/proxy-types"
+  },
+  {
+    "apiDescription": "ramls/resources.raml",
+    "apiType": "raml",
+    "methods": "post:eholdings_resources_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/resources"
+  },
+  {
+    "apiDescription": "ramls/resources.raml",
+    "apiType": "raml",
+    "methods": "post:eholdings_resources_bulk_fetch_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/resources/bulk/fetch"
+  },
+  {
+    "apiDescription": "ramls/resources.raml",
+    "apiType": "raml",
+    "methods": "delete:eholdings_resources__resourceid__delete get:eholdings_resources__resourceid__get put:eholdings_resources__resourceid__put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/resources/{resourceId}"
+  },
+  {
+    "apiDescription": "ramls/costperuse.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_resources__resourceid__costperuse_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/resources/{resourceId}/costperuse"
+  },
+  {
+    "apiDescription": "ramls/resources.raml",
+    "apiType": "raml",
+    "methods": "put:eholdings_resources__resourceid__tags_put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/resources/{resourceId}/tags"
+  },
+  {
+    "apiDescription": "ramls/proxies.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_root_proxy_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/root-proxy"
+  },
+  {
+    "apiDescription": "ramls/eholdings.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_status_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/status"
+  },
+  {
+    "apiDescription": "ramls/tags.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_tags_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/tags"
+  },
+  {
+    "apiDescription": "ramls/tags.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_tags_summary_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/tags/summary"
+  },
+  {
+    "apiDescription": "ramls/titles.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_titles_get post:eholdings_titles_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/titles"
+  },
+  {
+    "apiDescription": "ramls/titles.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_titles__titleid__get put:eholdings_titles__titleid__put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/titles/{titleId}"
+  },
+  {
+    "apiDescription": "ramls/costperuse.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_titles__titleid__costperuse_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/titles/{titleId}/costperuse"
+  },
+  {
+    "apiDescription": "ramls/uc.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_uc_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/uc"
+  },
+  {
+    "apiDescription": "ramls/uc.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_uc_credentials_get put:eholdings_uc_credentials_put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/uc-credentials"
+  },
+  {
+    "apiDescription": "ramls/uc.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_uc_credentials_clientid_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/uc-credentials/clientId"
+  },
+  {
+    "apiDescription": "ramls/uc.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_uc_credentials_clientsecret_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/uc-credentials/clientSecret"
+  },
+  {
+    "apiDescription": "ramls/kb-credentials.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_user_kb_credential_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/user-kb-credential"
+  },
+  {
+    "apiDescription": "ramls/electronic-access-relationship.raml",
+    "apiType": "raml",
+    "methods": "get:electronic_access_relationships_get post:electronic_access_relationships_post",
+    "name": "mod-inventory-storage",
+    "path": "/electronic-access-relationships"
+  },
+  {
+    "apiDescription": "ramls/electronic-access-relationship.raml",
+    "apiType": "raml",
+    "methods": "delete:electronic_access_relationships__electronicaccessrelationshipid__delete get:electronic_access_relationships__electronicaccessrelationshipid__get put:electronic_access_relationships__electronicaccessrelationshipid__put",
+    "name": "mod-inventory-storage",
+    "path": "/electronic-access-relationships/{electronicAccessRelationshipId}"
   },
   {
     "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
@@ -1393,11 +1883,109 @@
     "path": "/gobi/validate"
   },
   {
+    "apiDescription": "ramls/holdings-note-type.raml",
+    "apiType": "raml",
+    "methods": "get:holdings_note_types_get post:holdings_note_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-note-types"
+  },
+  {
+    "apiDescription": "ramls/holdings-note-type.raml",
+    "apiType": "raml",
+    "methods": "delete:holdings_note_types__id__delete get:holdings_note_types__id__get put:holdings_note_types__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-note-types/{id}"
+  },
+  {
+    "apiDescription": "ramls/holdings-sources.raml",
+    "apiType": "raml",
+    "methods": "get:holdings_sources_get post:holdings_sources_post",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-sources"
+  },
+  {
+    "apiDescription": "ramls/holdings-sources.raml",
+    "apiType": "raml",
+    "methods": "delete:holdings_sources__id__delete get:holdings_sources__id__get put:holdings_sources__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-sources/{id}"
+  },
+  {
+    "apiDescription": "ramls/holdings-sync.raml",
+    "apiType": "raml",
+    "methods": "post:holdings_storage_batch_synchronous_post",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-storage/batch/synchronous"
+  },
+  {
+    "apiDescription": "ramls/holdings-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:holdings_storage_holdings_delete get:holdings_storage_holdings_get post:holdings_storage_holdings_post",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-storage/holdings"
+  },
+  {
+    "apiDescription": "ramls/holdings-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:holdings_storage_holdings__holdingsrecordid__delete get:holdings_storage_holdings__holdingsrecordid__get put:holdings_storage_holdings__holdingsrecordid__put",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-storage/holdings/{holdingsRecordId}"
+  },
+  {
+    "apiDescription": "ramls/holdings-type.raml",
+    "apiType": "raml",
+    "methods": "get:holdings_types_get post:holdings_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-types"
+  },
+  {
+    "apiDescription": "ramls/holdings-type.raml",
+    "apiType": "raml",
+    "methods": "delete:holdings_types__id__delete get:holdings_types__id__get put:holdings_types__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-types/{id}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
     "methods": "get:null",
     "name": "mod-search",
     "path": "/holdings/ids"
+  },
+  {
+    "apiDescription": "ramls/hrid-settings-storage.raml",
+    "apiType": "raml",
+    "methods": "get:hrid_settings_storage_hrid_settings_get put:hrid_settings_storage_hrid_settings_put",
+    "name": "mod-inventory-storage",
+    "path": "/hrid-settings-storage/hrid-settings"
+  },
+  {
+    "apiDescription": "ramls/identifier-type.raml",
+    "apiType": "raml",
+    "methods": "get:identifier_types_get post:identifier_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/identifier-types"
+  },
+  {
+    "apiDescription": "ramls/identifier-type.raml",
+    "apiType": "raml",
+    "methods": "delete:identifier_types__identifiertypeid__delete get:identifier_types__identifiertypeid__get put:identifier_types__identifiertypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/identifier-types/{identifierTypeId}"
+  },
+  {
+    "apiDescription": "ramls/ill-policy.raml",
+    "apiType": "raml",
+    "methods": "get:ill_policies_get post:ill_policies_post",
+    "name": "mod-inventory-storage",
+    "path": "/ill-policies"
+  },
+  {
+    "apiDescription": "ramls/ill-policy.raml",
+    "apiType": "raml",
+    "methods": "delete:ill_policies__id__delete get:ill_policies__id__get put:ill_policies__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/ill-policies/{id}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
@@ -1428,6 +2016,167 @@
     "path": "/index/records"
   },
   {
+    "apiDescription": "ramls/instance-format.raml",
+    "apiType": "raml",
+    "methods": "get:instance_formats_get post:instance_formats_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-formats"
+  },
+  {
+    "apiDescription": "ramls/instance-format.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_formats__instanceformatid__delete get:instance_formats__instanceformatid__get put:instance_formats__instanceformatid__put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-formats/{instanceFormatId}"
+  },
+  {
+    "apiDescription": "ramls/instance-note-type.raml",
+    "apiType": "raml",
+    "methods": "get:instance_note_types_get post:instance_note_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-note-types"
+  },
+  {
+    "apiDescription": "ramls/instance-note-type.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_note_types__id__delete get:instance_note_types__id__get put:instance_note_types__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-note-types/{id}"
+  },
+  {
+    "apiDescription": "ramls/instance-relationship-type.raml",
+    "apiType": "raml",
+    "methods": "get:instance_relationship_types_get post:instance_relationship_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-relationship-types"
+  },
+  {
+    "apiDescription": "ramls/instance-relationship-type.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_relationship_types__relationshiptypeid__delete get:instance_relationship_types__relationshiptypeid__get put:instance_relationship_types__relationshiptypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-relationship-types/{relationshipTypeId}"
+  },
+  {
+    "apiDescription": "ramls/instance-status.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_statuses_delete get:instance_statuses_get post:instance_statuses_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-statuses"
+  },
+  {
+    "apiDescription": "ramls/instance-status.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_statuses__instancestatusid__delete get:instance_statuses__instancestatusid__get put:instance_statuses__instancestatusid__put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-statuses/{instanceStatusId}"
+  },
+  {
+    "apiDescription": "ramls/instance-storage-batch.raml",
+    "apiType": "raml",
+    "methods": "post:instance_storage_batch_instances_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/batch/instances"
+  },
+  {
+    "apiDescription": "ramls/instance-sync.raml",
+    "apiType": "raml",
+    "methods": "post:instance_storage_batch_synchronous_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/batch/synchronous"
+  },
+  {
+    "apiDescription": "ramls/instance-storage.raml",
+    "apiType": "raml",
+    "methods": "get:instance_storage_instance_relationships_get post:instance_storage_instance_relationships_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instance-relationships"
+  },
+  {
+    "apiDescription": "ramls/instance-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_storage_instance_relationships__relationshipid__delete get:instance_storage_instance_relationships__relationshipid__get put:instance_storage_instance_relationships__relationshipid__put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instance-relationships/{relationshipId}"
+  },
+  {
+    "apiDescription": "ramls/instance-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_storage_instances_delete get:instance_storage_instances_get post:instance_storage_instances_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instances"
+  },
+  {
+    "apiDescription": "ramls/instance-iteration.raml",
+    "apiType": "raml",
+    "methods": "post:instance_storage_instances_iteration_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instances/iteration"
+  },
+  {
+    "apiDescription": "ramls/instance-iteration.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_storage_instances_iteration__id__delete get:instance_storage_instances_iteration__id__get",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instances/iteration/{id}"
+  },
+  {
+    "apiDescription": "ramls/instance-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_storage_instances__instanceid__delete get:instance_storage_instances__instanceid__get put:instance_storage_instances__instanceid__put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instances/{instanceId}"
+  },
+  {
+    "apiDescription": "ramls/instance-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_storage_instances__instanceid__source_record_delete",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instances/{instanceId}/source-record"
+  },
+  {
+    "apiDescription": "ramls/instance-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_storage_instances__instanceid__source_record_marc_json_delete get:instance_storage_instances__instanceid__source_record_marc_json_get put:instance_storage_instances__instanceid__source_record_marc_json_put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instances/{instanceId}/source-record/marc-json"
+  },
+  {
+    "apiDescription": "ramls/instance-storage.raml",
+    "apiType": "raml",
+    "methods": "get:instance_storage_instances__instanceid__source_record_mods_get put:instance_storage_instances__instanceid__source_record_mods_put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instances/{instanceId}/source-record/mods"
+  },
+  {
+    "apiDescription": "ramls/instance-reindex.raml",
+    "apiType": "raml",
+    "methods": "post:instance_storage_reindex_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/reindex"
+  },
+  {
+    "apiDescription": "ramls/instance-reindex.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_storage_reindex__id__delete get:instance_storage_reindex__id__get",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/reindex/{id}"
+  },
+  {
+    "apiDescription": "ramls/instance-type.raml",
+    "apiType": "raml",
+    "methods": "get:instance_types_get post:instance_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-types"
+  },
+  {
+    "apiDescription": "ramls/instance-type.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_types__instancetypeid__delete get:instance_types__instancetypeid__get put:instance_types__instancetypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-types/{instanceTypeId}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
     "methods": "get:null",
@@ -1442,11 +2191,130 @@
     "path": "/instances/ids"
   },
   {
+    "apiDescription": "ramls/inventory-hierarchy.raml",
+    "apiType": "raml",
+    "methods": "post:inventory_hierarchy_items_and_holdings_post",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-hierarchy/items-and-holdings"
+  },
+  {
+    "apiDescription": "ramls/inventory-hierarchy.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_hierarchy_updated_instance_ids_get",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-hierarchy/updated-instance-ids"
+  },
+  {
     "apiDescription": "ramls/inventory-reports.raml",
     "apiType": "raml",
     "methods": "get:inventory_reports_items_in_transit_get",
     "name": "mod-circulation",
     "path": "/inventory-reports/items-in-transit"
+  },
+  {
+    "apiDescription": "ramls/bound-with-part.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_storage_bound_with_parts_get post:inventory_storage_bound_with_parts_post",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-storage/bound-with-parts"
+  },
+  {
+    "apiDescription": "ramls/bound-with-part.raml",
+    "apiType": "raml",
+    "methods": "delete:inventory_storage_bound_with_parts__id__delete get:inventory_storage_bound_with_parts__id__get put:inventory_storage_bound_with_parts__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-storage/bound-with-parts/{id}"
+  },
+  {
+    "apiDescription": "ramls/async-migration.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_storage_migrations_get",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-storage/migrations"
+  },
+  {
+    "apiDescription": "ramls/async-migration.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_storage_migrations_jobs_get post:inventory_storage_migrations_jobs_post",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-storage/migrations/jobs"
+  },
+  {
+    "apiDescription": "ramls/async-migration.raml",
+    "apiType": "raml",
+    "methods": "delete:inventory_storage_migrations_jobs__id__delete get:inventory_storage_migrations_jobs__id__get",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-storage/migrations/jobs/{id}"
+  },
+  {
+    "apiDescription": "ramls/inventory-view.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_view_instances_get",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-view/instances"
+  },
+  {
+    "apiDescription": "ramls/item-damaged-statuses.raml",
+    "apiType": "raml",
+    "methods": "get:item_damaged_statuses_get post:item_damaged_statuses_post",
+    "name": "mod-inventory-storage",
+    "path": "/item-damaged-statuses"
+  },
+  {
+    "apiDescription": "ramls/item-damaged-statuses.raml",
+    "apiType": "raml",
+    "methods": "delete:item_damaged_statuses__id__delete get:item_damaged_statuses__id__get put:item_damaged_statuses__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/item-damaged-statuses/{id}"
+  },
+  {
+    "apiDescription": "ramls/item-note-type.raml",
+    "apiType": "raml",
+    "methods": "get:item_note_types_get post:item_note_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/item-note-types"
+  },
+  {
+    "apiDescription": "ramls/item-note-type.raml",
+    "apiType": "raml",
+    "methods": "delete:item_note_types__id__delete get:item_note_types__id__get put:item_note_types__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/item-note-types/{id}"
+  },
+  {
+    "apiDescription": "ramls/item-storage-dereferenced.raml",
+    "apiType": "raml",
+    "methods": "get:item_storage_dereferenced_items_get",
+    "name": "mod-inventory-storage",
+    "path": "/item-storage-dereferenced/items"
+  },
+  {
+    "apiDescription": "ramls/item-storage-dereferenced.raml",
+    "apiType": "raml",
+    "methods": "get:item_storage_dereferenced_items__itemid__get",
+    "name": "mod-inventory-storage",
+    "path": "/item-storage-dereferenced/items/{itemId}"
+  },
+  {
+    "apiDescription": "ramls/item-sync.raml",
+    "apiType": "raml",
+    "methods": "post:item_storage_batch_synchronous_post",
+    "name": "mod-inventory-storage",
+    "path": "/item-storage/batch/synchronous"
+  },
+  {
+    "apiDescription": "ramls/item-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:item_storage_items_delete get:item_storage_items_get post:item_storage_items_post",
+    "name": "mod-inventory-storage",
+    "path": "/item-storage/items"
+  },
+  {
+    "apiDescription": "ramls/item-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:item_storage_items__itemid__delete get:item_storage_items__itemid__get put:item_storage_items__itemid__put",
+    "name": "mod-inventory-storage",
+    "path": "/item-storage/items/{itemId}"
   },
   {
     "apiDescription": "ramls/ldp.raml",
@@ -1486,7 +2354,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
-    "methods": "put:null",
+    "methods": "get:operation/getInstanceLinks put:operation/updateInstanceLinks",
     "name": "mod-entities-links",
     "path": "/links/instances/{instanceId}"
   },
@@ -1496,6 +2364,76 @@
     "methods": "post:loan_anonymization_by_user__userid__post",
     "name": "mod-circulation",
     "path": "/loan-anonymization/by-user/{userId}"
+  },
+  {
+    "apiDescription": "ramls/loan-type.raml",
+    "apiType": "raml",
+    "methods": "delete:loan_types_delete get:loan_types_get post:loan_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/loan-types"
+  },
+  {
+    "apiDescription": "ramls/loan-type.raml",
+    "apiType": "raml",
+    "methods": "delete:loan_types__loantypeid__delete get:loan_types__loantypeid__get put:loan_types__loantypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/loan-types/{loantypeId}"
+  },
+  {
+    "apiDescription": "ramls/locationunit.raml",
+    "apiType": "raml",
+    "methods": "delete:location_units_campuses_delete get:location_units_campuses_get post:location_units_campuses_post",
+    "name": "mod-inventory-storage",
+    "path": "/location-units/campuses"
+  },
+  {
+    "apiDescription": "ramls/locationunit.raml",
+    "apiType": "raml",
+    "methods": "delete:location_units_campuses__id__delete get:location_units_campuses__id__get put:location_units_campuses__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/location-units/campuses/{id}"
+  },
+  {
+    "apiDescription": "ramls/locationunit.raml",
+    "apiType": "raml",
+    "methods": "delete:location_units_institutions_delete get:location_units_institutions_get post:location_units_institutions_post",
+    "name": "mod-inventory-storage",
+    "path": "/location-units/institutions"
+  },
+  {
+    "apiDescription": "ramls/locationunit.raml",
+    "apiType": "raml",
+    "methods": "delete:location_units_institutions__id__delete get:location_units_institutions__id__get put:location_units_institutions__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/location-units/institutions/{id}"
+  },
+  {
+    "apiDescription": "ramls/locationunit.raml",
+    "apiType": "raml",
+    "methods": "delete:location_units_libraries_delete get:location_units_libraries_get post:location_units_libraries_post",
+    "name": "mod-inventory-storage",
+    "path": "/location-units/libraries"
+  },
+  {
+    "apiDescription": "ramls/locationunit.raml",
+    "apiType": "raml",
+    "methods": "delete:location_units_libraries__id__delete get:location_units_libraries__id__get put:location_units_libraries__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/location-units/libraries/{id}"
+  },
+  {
+    "apiDescription": "ramls/location.raml",
+    "apiType": "raml",
+    "methods": "delete:locations_delete get:locations_get post:locations_post",
+    "name": "mod-inventory-storage",
+    "path": "/locations"
+  },
+  {
+    "apiDescription": "ramls/location.raml",
+    "apiType": "raml",
+    "methods": "delete:locations__id__delete get:locations__id__get put:locations__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/locations/{id}"
   },
   {
     "apiDescription": "ramls/lost-item-fee-policy.raml",
@@ -1596,6 +2534,20 @@
     "path": "/mapping-rules/{recordType}/restore"
   },
   {
+    "apiDescription": "ramls/material-type.raml",
+    "apiType": "raml",
+    "methods": "delete:material_types_delete get:material_types_get post:material_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/material-types"
+  },
+  {
+    "apiDescription": "ramls/material-type.raml",
+    "apiType": "raml",
+    "methods": "delete:material_types__materialtypeid__delete get:material_types__materialtypeid__get put:material_types__materialtypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/material-types/{materialtypeId}"
+  },
+  {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
     "methods": "get:metadata_provider_jobexecutions_get",
@@ -1643,6 +2595,55 @@
     "methods": "get:metadata_provider_journalrecords__jobexecutionid__get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/journalRecords/{jobExecutionId}"
+  },
+  {
+    "apiDescription": "ramls/mode-of-issuance.raml",
+    "apiType": "raml",
+    "methods": "delete:modes_of_issuance_delete get:modes_of_issuance_get post:modes_of_issuance_post",
+    "name": "mod-inventory-storage",
+    "path": "/modes-of-issuance"
+  },
+  {
+    "apiDescription": "ramls/mode-of-issuance.raml",
+    "apiType": "raml",
+    "methods": "delete:modes_of_issuance__modeofissuanceid__delete get:modes_of_issuance__modeofissuanceid__get put:modes_of_issuance__modeofissuanceid__put",
+    "name": "mod-inventory-storage",
+    "path": "/modes-of-issuance/{modeOfIssuanceId}"
+  },
+  {
+    "apiDescription": "ramls/nature-of-content-term.raml",
+    "apiType": "raml",
+    "methods": "get:nature_of_content_terms_get post:nature_of_content_terms_post",
+    "name": "mod-inventory-storage",
+    "path": "/nature-of-content-terms"
+  },
+  {
+    "apiDescription": "ramls/nature-of-content-term.raml",
+    "apiType": "raml",
+    "methods": "delete:nature_of_content_terms__id__delete get:nature_of_content_terms__id__get put:nature_of_content_terms__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/nature-of-content-terms/{id}"
+  },
+  {
+    "apiDescription": "ramls/oai-pmh-view.raml",
+    "apiType": "raml",
+    "methods": "post:oai_pmh_view_enrichedinstances_post",
+    "name": "mod-inventory-storage",
+    "path": "/oai-pmh-view/enrichedInstances"
+  },
+  {
+    "apiDescription": "ramls/oai-pmh-view.raml",
+    "apiType": "raml",
+    "methods": "get:oai_pmh_view_instances_get",
+    "name": "mod-inventory-storage",
+    "path": "/oai-pmh-view/instances"
+  },
+  {
+    "apiDescription": "ramls/oai-pmh-view.raml",
+    "apiType": "raml",
+    "methods": "get:oai_pmh_view_updatedinstanceids_get",
+    "name": "mod-inventory-storage",
+    "path": "/oai-pmh-view/updatedInstanceIds"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/order-export.yaml",
@@ -1762,6 +2763,34 @@
     "methods": "delete:perms_users__id__permissions__permissionname__delete",
     "name": "mod-permissions",
     "path": "/perms/users/{id}/permissions/{permissionname}"
+  },
+  {
+    "apiDescription": "ramls/instance-preceding-succeeding-titles.raml",
+    "apiType": "raml",
+    "methods": "get:preceding_succeeding_titles_get post:preceding_succeeding_titles_post",
+    "name": "mod-inventory-storage",
+    "path": "/preceding-succeeding-titles"
+  },
+  {
+    "apiDescription": "ramls/instance-preceding-succeeding-titles.raml",
+    "apiType": "raml",
+    "methods": "put:preceding_succeeding_titles_instances__instanceid__put",
+    "name": "mod-inventory-storage",
+    "path": "/preceding-succeeding-titles/instances/{instanceId}"
+  },
+  {
+    "apiDescription": "ramls/instance-preceding-succeeding-titles.raml",
+    "apiType": "raml",
+    "methods": "delete:preceding_succeeding_titles__precedingsucceedingtitleid__delete get:preceding_succeeding_titles__precedingsucceedingtitleid__get put:preceding_succeeding_titles__precedingsucceedingtitleid__put",
+    "name": "mod-inventory-storage",
+    "path": "/preceding-succeeding-titles/{precedingSucceedingTitleId}"
+  },
+  {
+    "apiDescription": "ramls/record-bulk.raml",
+    "apiType": "raml",
+    "methods": "get:record_bulk_ids_get",
+    "name": "mod-inventory-storage",
+    "path": "/record-bulk/ids"
   },
   {
     "apiDescription": "ramls/refunds.raml",
@@ -1953,81 +2982,151 @@
     "path": "/resources/jobs/{jobId}/ids"
   },
   {
+    "apiDescription": "ramls/service-point.raml",
+    "apiType": "raml",
+    "methods": "delete:service_points_delete get:service_points_get post:service_points_post",
+    "name": "mod-inventory-storage",
+    "path": "/service-points"
+  },
+  {
+    "apiDescription": "ramls/service-points-user.raml",
+    "apiType": "raml",
+    "methods": "delete:service_points_users_delete get:service_points_users_get post:service_points_users_post",
+    "name": "mod-inventory-storage",
+    "path": "/service-points-users"
+  },
+  {
+    "apiDescription": "ramls/service-points-user.raml",
+    "apiType": "raml",
+    "methods": "delete:service_points_users__servicepointsuserid__delete get:service_points_users__servicepointsuserid__get put:service_points_users__servicepointsuserid__put",
+    "name": "mod-inventory-storage",
+    "path": "/service-points-users/{servicePointsUserId}"
+  },
+  {
+    "apiDescription": "ramls/service-point.raml",
+    "apiType": "raml",
+    "methods": "delete:service_points__servicepointid__delete get:service_points__servicepointid__get put:service_points__servicepointid__put",
+    "name": "mod-inventory-storage",
+    "path": "/service-points/{servicepointId}"
+  },
+  {
+    "apiDescription": "ramls/shelf-location.raml",
+    "apiType": "raml",
+    "methods": "delete:shelf_locations_delete get:shelf_locations_get post:shelf_locations_post",
+    "name": "mod-inventory-storage",
+    "path": "/shelf-locations"
+  },
+  {
+    "apiDescription": "ramls/shelf-location.raml",
+    "apiType": "raml",
+    "methods": "delete:shelf_locations__id__delete get:shelf_locations__id__get put:shelf_locations__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/shelf-locations/{id}"
+  },
+  {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "methods": "put:null",
+    "methods": "put:source_storage_batch_parsed_records_put",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/parsed-records"
   },
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:source_storage_batch_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/records"
   },
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:source_storage_batch_verified_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/verified-records"
   },
   {
     "apiDescription": "ramls/source-record-storage-test-records.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:source_storage_populate_test_marc_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/populate-test-marc-records"
   },
   {
     "apiDescription": "ramls/source-record-storage-snapshots.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:source_storage_snapshots_get post:source_storage_snapshots_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/snapshots"
   },
   {
     "apiDescription": "ramls/source-record-storage-snapshots.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:source_storage_snapshots__jobexecutionid__delete get:source_storage_snapshots__jobexecutionid__get put:source_storage_snapshots__jobexecutionid__put",
     "name": "mod-source-record-storage",
     "path": "/source-storage/snapshots/{jobExecutionId}"
   },
   {
     "apiDescription": "ramls/source-record-storage-source-records.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:source_storage_source_records_get post:source_storage_source_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/source-records"
   },
   {
     "apiDescription": "ramls/source-record-storage-source-records.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:source_storage_source_records__id__get",
     "name": "mod-source-record-storage",
     "path": "/source-storage/source-records/{id}"
   },
   {
     "apiDescription": "ramls/source-record-storage-stream.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:source_storage_stream_marc_record_identifiers_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/stream/marc-record-identifiers"
   },
   {
     "apiDescription": "ramls/source-record-storage-stream.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:source_storage_stream_records_get",
     "name": "mod-source-record-storage",
     "path": "/source-storage/stream/records"
   },
   {
     "apiDescription": "ramls/source-record-storage-stream.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:source_storage_stream_source_records_get",
     "name": "mod-source-record-storage",
     "path": "/source-storage/stream/source-records"
+  },
+  {
+    "apiDescription": "ramls/statistical-code-type.raml",
+    "apiType": "raml",
+    "methods": "delete:statistical_code_types_delete get:statistical_code_types_get post:statistical_code_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/statistical-code-types"
+  },
+  {
+    "apiDescription": "ramls/statistical-code-type.raml",
+    "apiType": "raml",
+    "methods": "delete:statistical_code_types__statisticalcodetypeid__delete get:statistical_code_types__statisticalcodetypeid__get put:statistical_code_types__statisticalcodetypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/statistical-code-types/{statisticalCodeTypeId}"
+  },
+  {
+    "apiDescription": "ramls/statistical-code.raml",
+    "apiType": "raml",
+    "methods": "get:statistical_codes_get post:statistical_codes_post",
+    "name": "mod-inventory-storage",
+    "path": "/statistical-codes"
+  },
+  {
+    "apiDescription": "ramls/statistical-code.raml",
+    "apiType": "raml",
+    "methods": "delete:statistical_codes__statisticalcodeid__delete get:statistical_codes__statisticalcodeid__get put:statistical_codes__statisticalcodeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/statistical-codes/{statisticalCodeId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bursar-export.yaml",
