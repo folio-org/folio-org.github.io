@@ -380,7 +380,7 @@
   {
     "apiDescription": "ramls/edge-lti-courses.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:admin_health_get",
     "name": "edge-lti-courses",
     "path": "/admin/health"
   },
@@ -716,168 +716,168 @@
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null post:null",
+    "methods": "delete:coursereserves_copyrightstatuses_delete get:coursereserves_copyrightstatuses_get post:coursereserves_copyrightstatuses_post",
     "name": "mod-courses",
     "path": "/coursereserves/copyrightstatuses"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:coursereserves_copyrightstatuses__status_id__delete get:coursereserves_copyrightstatuses__status_id__get put:coursereserves_copyrightstatuses__status_id__put",
     "name": "mod-courses",
     "path": "/coursereserves/copyrightstatuses/{status_id}"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null post:null",
+    "methods": "delete:coursereserves_courselistings_delete get:coursereserves_courselistings_get post:coursereserves_courselistings_post",
     "name": "mod-courses",
     "path": "/coursereserves/courselistings"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:coursereserves_courselistings__listing_id__delete get:coursereserves_courselistings__listing_id__get put:coursereserves_courselistings__listing_id__put",
     "name": "mod-courses",
     "path": "/coursereserves/courselistings/{listing_id}"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null post:null",
+    "methods": "delete:coursereserves_courselistings__listing_id__courses_delete get:coursereserves_courselistings__listing_id__courses_get post:coursereserves_courselistings__listing_id__courses_post",
     "name": "mod-courses",
     "path": "/coursereserves/courselistings/{listing_id}/courses"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:coursereserves_courselistings__listing_id__courses__course_id__delete get:coursereserves_courselistings__listing_id__courses__course_id__get put:coursereserves_courselistings__listing_id__courses__course_id__put",
     "name": "mod-courses",
     "path": "/coursereserves/courselistings/{listing_id}/courses/{course_id}"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null post:null",
+    "methods": "delete:coursereserves_courselistings__listing_id__instructors_delete get:coursereserves_courselistings__listing_id__instructors_get post:coursereserves_courselistings__listing_id__instructors_post",
     "name": "mod-courses",
     "path": "/coursereserves/courselistings/{listing_id}/instructors"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:coursereserves_courselistings__listing_id__instructors__instructor_id__delete get:coursereserves_courselistings__listing_id__instructors__instructor_id__get put:coursereserves_courselistings__listing_id__instructors__instructor_id__put",
     "name": "mod-courses",
     "path": "/coursereserves/courselistings/{listing_id}/instructors/{instructor_id}"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null post:null",
+    "methods": "delete:coursereserves_courselistings__listing_id__reserves_delete get:coursereserves_courselistings__listing_id__reserves_get post:coursereserves_courselistings__listing_id__reserves_post",
     "name": "mod-courses",
     "path": "/coursereserves/courselistings/{listing_id}/reserves"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:coursereserves_courselistings__listing_id__reserves__reserve_id__delete get:coursereserves_courselistings__listing_id__reserves__reserve_id__get put:coursereserves_courselistings__listing_id__reserves__reserve_id__put",
     "name": "mod-courses",
     "path": "/coursereserves/courselistings/{listing_id}/reserves/{reserve_id}"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null post:null",
+    "methods": "delete:coursereserves_courses_delete get:coursereserves_courses_get post:coursereserves_courses_post",
     "name": "mod-courses",
     "path": "/coursereserves/courses"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:coursereserves_courses__course_id__delete get:coursereserves_courses__course_id__get put:coursereserves_courses__course_id__put",
     "name": "mod-courses",
     "path": "/coursereserves/courses/{course_id}"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null post:null",
+    "methods": "delete:coursereserves_coursetypes_delete get:coursereserves_coursetypes_get post:coursereserves_coursetypes_post",
     "name": "mod-courses",
     "path": "/coursereserves/coursetypes"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:coursereserves_coursetypes__type_id__delete get:coursereserves_coursetypes__type_id__get put:coursereserves_coursetypes__type_id__put",
     "name": "mod-courses",
     "path": "/coursereserves/coursetypes/{type_id}"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null post:null",
+    "methods": "delete:coursereserves_departments_delete get:coursereserves_departments_get post:coursereserves_departments_post",
     "name": "mod-courses",
     "path": "/coursereserves/departments"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:coursereserves_departments__department_id__delete get:coursereserves_departments__department_id__get put:coursereserves_departments__department_id__put",
     "name": "mod-courses",
     "path": "/coursereserves/departments/{department_id}"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null post:null",
+    "methods": "delete:coursereserves_processingstatuses_delete get:coursereserves_processingstatuses_get post:coursereserves_processingstatuses_post",
     "name": "mod-courses",
     "path": "/coursereserves/processingstatuses"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:coursereserves_processingstatuses__status_id__delete get:coursereserves_processingstatuses__status_id__get put:coursereserves_processingstatuses__status_id__put",
     "name": "mod-courses",
     "path": "/coursereserves/processingstatuses/{status_id}"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null post:null",
+    "methods": "delete:coursereserves_reserves_delete get:coursereserves_reserves_get post:coursereserves_reserves_post",
     "name": "mod-courses",
     "path": "/coursereserves/reserves"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:coursereserves_reserves__reserve_id__delete get:coursereserves_reserves__reserve_id__get put:coursereserves_reserves__reserve_id__put",
     "name": "mod-courses",
     "path": "/coursereserves/reserves/{reserve_id}"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null post:null",
+    "methods": "delete:coursereserves_roles_delete get:coursereserves_roles_get post:coursereserves_roles_post",
     "name": "mod-courses",
     "path": "/coursereserves/roles"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:coursereserves_roles__role_id__delete get:coursereserves_roles__role_id__get put:coursereserves_roles__role_id__put",
     "name": "mod-courses",
     "path": "/coursereserves/roles/{role_id}"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null post:null",
+    "methods": "delete:coursereserves_terms_delete get:coursereserves_terms_get post:coursereserves_terms_post",
     "name": "mod-courses",
     "path": "/coursereserves/terms"
   },
   {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:coursereserves_terms__term_id__delete get:coursereserves_terms__term_id__get put:coursereserves_terms__term_id__put",
     "name": "mod-courses",
     "path": "/coursereserves/terms/{term_id}"
   },
@@ -1449,6 +1449,41 @@
     "path": "/inventory-reports/items-in-transit"
   },
   {
+    "apiDescription": "ramls/ldp.raml",
+    "apiType": "raml",
+    "methods": "get:ldp_config_get",
+    "name": "mod-ldp",
+    "path": "/ldp/config"
+  },
+  {
+    "apiDescription": "ramls/ldp.raml",
+    "apiType": "raml",
+    "methods": "get:ldp_config__key__get put:ldp_config__key__put",
+    "name": "mod-ldp",
+    "path": "/ldp/config/{key}"
+  },
+  {
+    "apiDescription": "ramls/ldp.raml",
+    "apiType": "raml",
+    "methods": "get:ldp_db_columns_get",
+    "name": "mod-ldp",
+    "path": "/ldp/db/columns"
+  },
+  {
+    "apiDescription": "ramls/ldp.raml",
+    "apiType": "raml",
+    "methods": "post:ldp_db_query_post",
+    "name": "mod-ldp",
+    "path": "/ldp/db/query"
+  },
+  {
+    "apiDescription": "ramls/ldp.raml",
+    "apiType": "raml",
+    "methods": "get:ldp_db_tables_get",
+    "name": "mod-ldp",
+    "path": "/ldp/db/tables"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
     "methods": "put:null",
@@ -1479,35 +1514,35 @@
   {
     "apiDescription": "ramls/edge-lti-courses.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:lti_courses_.well_known_jwks.json_get",
     "name": "edge-lti-courses",
     "path": "/lti-courses/.well-known/jwks.json"
   },
   {
     "apiDescription": "ramls/edge-lti-courses.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:lti_courses_externalidlaunches__apikeypath__post",
     "name": "edge-lti-courses",
     "path": "/lti-courses/externalIdLaunches/{apiKeyPath}"
   },
   {
     "apiDescription": "ramls/edge-lti-courses.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:lti_courses_launches__apikeypath__post",
     "name": "edge-lti-courses",
     "path": "/lti-courses/launches/{apiKeyPath}"
   },
   {
     "apiDescription": "ramls/edge-lti-courses.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:lti_courses_oidc_login_init__apikeypath__get",
     "name": "edge-lti-courses",
     "path": "/lti-courses/oidc-login-init/{apiKeyPath}"
   },
   {
     "apiDescription": "ramls/edge-lti-courses.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:lti_courses_registraridlaunches__apikeypath__post",
     "name": "edge-lti-courses",
     "path": "/lti-courses/registrarIdLaunches/{apiKeyPath}"
   },
@@ -1745,154 +1780,154 @@
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/getClusters",
     "name": "mod-reservoir",
     "path": "/reservoir/clusters"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/getCluster",
     "name": "mod-reservoir",
     "path": "/reservoir/clusters/{clusterId}"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "get:null post:null",
+    "methods": "get:operation/getConfigMatchKeys post:operation/postConfigMatchKey",
     "name": "mod-reservoir",
     "path": "/reservoir/config/matchkeys"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:operation/deleteConfigMatchKey get:operation/getConfigMatchKey put:operation/putConfigMatchKey",
     "name": "mod-reservoir",
     "path": "/reservoir/config/matchkeys/{id}"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "put:null",
+    "methods": "put:operation/initializeMatchKey",
     "name": "mod-reservoir",
     "path": "/reservoir/config/matchkeys/{id}/initialize"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/statsMatchKey",
     "name": "mod-reservoir",
     "path": "/reservoir/config/matchkeys/{id}/stats"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "get:null post:null",
+    "methods": "get:operation/getCodeModules post:operation/postCodeModule",
     "name": "mod-reservoir",
     "path": "/reservoir/config/modules"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:operation/deleteCodeModule get:operation/getCodeModule put:operation/putCodeModule",
     "name": "mod-reservoir",
     "path": "/reservoir/config/modules/{id}"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "put:null",
+    "methods": "put:operation/reloadCodeModule",
     "name": "mod-reservoir",
     "path": "/reservoir/config/modules/{id}/reload"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:operation/deleteOaiConfig get:operation/getOaiConfig put:operation/putOaiConfig",
     "name": "mod-reservoir",
     "path": "/reservoir/config/oai"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "delete:null get:null",
+    "methods": "delete:operation/deleteSource get:operation/getSource",
     "name": "mod-reservoir",
     "path": "/reservoir/config/sources/{id}"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/postIngestJob",
     "name": "mod-reservoir",
     "path": "/reservoir/ingest-jobs"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:operation/ingestJobFinish get:operation/ingestJobInfo put:operation/ingestJobRecord",
     "name": "mod-reservoir",
     "path": "/reservoir/ingest-jobs/{id}"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/oaiService",
     "name": "mod-reservoir",
     "path": "/reservoir/oai"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "get:null post:null",
+    "methods": "get:operation/getCollectionOaiPmhClient post:operation/postOaiPmhClient",
     "name": "mod-reservoir",
     "path": "/reservoir/pmh-clients"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:operation/deleteOaiPmhClient get:operation/getOaiPmhClient put:operation/putOaiPmhClient",
     "name": "mod-reservoir",
     "path": "/reservoir/pmh-clients/{id}"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/startOaiPmhClient",
     "name": "mod-reservoir",
     "path": "/reservoir/pmh-clients/{id}/start"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/statusOaiPmhClient",
     "name": "mod-reservoir",
     "path": "/reservoir/pmh-clients/{id}/status"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/stopOaiPmhClient",
     "name": "mod-reservoir",
     "path": "/reservoir/pmh-clients/{id}/stop"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:operation/deleteGlobalRecords get:operation/getGlobalRecords put:operation/putGlobalRecords",
     "name": "mod-reservoir",
     "path": "/reservoir/records"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/getGlobalRecord",
     "name": "mod-reservoir",
     "path": "/reservoir/records/{globalId}"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
-    "methods": "get:null post:null",
+    "methods": "get:operation/getSources post:operation/postSource",
     "name": "mod-reservoir",
     "path": "/reservoir/sources"
   },
@@ -2060,91 +2095,91 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/getErrorsPreviewByJobId",
     "name": "mod-data-export-worker",
     "path": "/{jobId}/errors"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/postHoldingsContentUpdates",
     "name": "mod-data-export-worker",
     "path": "/{jobId}/holdings-content-update/upload"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/postItemContentUpdates",
     "name": "mod-data-export-worker",
     "path": "/{jobId}/item-content-update/upload"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/getPreviewHoldingsByJobId",
     "name": "mod-data-export-worker",
     "path": "/{jobId}/preview/holdings"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/getPreviewItemsByJobId",
     "name": "mod-data-export-worker",
     "path": "/{jobId}/preview/items"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/downloadHoldingsPreviewByJobId",
     "name": "mod-data-export-worker",
     "path": "/{jobId}/preview/updated-holdings/download"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/downloadItemsPreviewByJobId",
     "name": "mod-data-export-worker",
     "path": "/{jobId}/preview/updated-items/download"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/downloadUsersPreviewByJobId",
     "name": "mod-data-export-worker",
     "path": "/{jobId}/preview/updated-users/download"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/getPreviewUsersByJobId",
     "name": "mod-data-export-worker",
     "path": "/{jobId}/preview/users"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/rollBackCsvFile",
     "name": "mod-data-export-worker",
     "path": "/{jobId}/roll-back"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/startJob",
     "name": "mod-data-export-worker",
     "path": "/{jobId}/start"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/uploadCsvFile",
     "name": "mod-data-export-worker",
     "path": "/{jobId}/upload"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/postUserContentUpdates",
     "name": "mod-data-export-worker",
     "path": "/{jobId}/user-content-update/upload"
   },
