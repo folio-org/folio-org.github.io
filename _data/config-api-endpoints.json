@@ -240,140 +240,140 @@
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:accounts_get post:accounts_post",
     "name": "mod-feesfines",
     "path": "/accounts"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_cancel_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/cancel"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_check_pay_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/check-pay"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_check_refund_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/check-refund"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_check_transfer_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/check-transfer"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_check_waive_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/check-waive"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_pay_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/pay"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_refund_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/refund"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_transfer_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/transfer"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_waive_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/waive"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:accounts__accountid__delete get:accounts__accountid__get put:accounts__accountid__put",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__cancel_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/cancel"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__check_pay_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/check-pay"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__check_refund_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/check-refund"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__check_transfer_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/check-transfer"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__check_waive_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/check-waive"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__pay_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/pay"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__refund_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/refund"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__transfer_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/transfer"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__waive_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/waive"
   },
@@ -387,7 +387,7 @@
   {
     "apiDescription": "ramls/edge-orders.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:admin_health_get",
     "name": "edge-orders",
     "path": "/admin/health"
   },
@@ -674,14 +674,14 @@
   {
     "apiDescription": "ramls/comments.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:comments_get post:comments_post",
     "name": "mod-feesfines",
     "path": "/comments"
   },
   {
     "apiDescription": "ramls/comments.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:comments__commentid__delete get:comments__commentid__get put:comments__commentid__put",
     "name": "mod-feesfines",
     "path": "/comments/{commentId}"
   },
@@ -884,112 +884,112 @@
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:data_export_clean_up_files_post",
     "name": "mod-data-export",
     "path": "/data-export/clean-up-files"
   },
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:data_export_expire_jobs_post",
     "name": "mod-data-export",
     "path": "/data-export/expire-jobs"
   },
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:data_export_export_post",
     "name": "mod-data-export",
     "path": "/data-export/export"
   },
   {
     "apiDescription": "ramls/dataExport-file-definition.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:data_export_file_definitions_post",
     "name": "mod-data-export",
     "path": "/data-export/file-definitions"
   },
   {
     "apiDescription": "ramls/dataExport-file-definition.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:data_export_file_definitions__filedefinitionid__get",
     "name": "mod-data-export",
     "path": "/data-export/file-definitions/{fileDefinitionId}"
   },
   {
     "apiDescription": "ramls/dataExport-file-definition.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:data_export_file_definitions__filedefinitionid__upload_post",
     "name": "mod-data-export",
     "path": "/data-export/file-definitions/{fileDefinitionId}/upload"
   },
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:data_export_job_executions_get",
     "name": "mod-data-export",
     "path": "/data-export/job-executions"
   },
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "methods": "delete:null",
+    "methods": "delete:data_export_job_executions__id__delete",
     "name": "mod-data-export",
     "path": "/data-export/job-executions/{id}"
   },
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:data_export_job_executions__jobexecutionid__download__exportfileid__get",
     "name": "mod-data-export",
     "path": "/data-export/job-executions/{jobExecutionId}/download/{exportFileId}"
   },
   {
     "apiDescription": "ramls/dataExport-job-profile.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:data_export_job_profiles_get post:data_export_job_profiles_post",
     "name": "mod-data-export",
     "path": "/data-export/job-profiles"
   },
   {
     "apiDescription": "ramls/dataExport-job-profile.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:data_export_job_profiles__id__delete get:data_export_job_profiles__id__get put:data_export_job_profiles__id__put",
     "name": "mod-data-export",
     "path": "/data-export/job-profiles/{id}"
   },
   {
     "apiDescription": "ramls/dataExport-logs.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:data_export_logs_get",
     "name": "mod-data-export",
     "path": "/data-export/logs"
   },
   {
     "apiDescription": "ramls/dataExport-mapping-profiles.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:data_export_mapping_profiles_get post:data_export_mapping_profiles_post",
     "name": "mod-data-export",
     "path": "/data-export/mapping-profiles"
   },
   {
     "apiDescription": "ramls/dataExport-mapping-profiles.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:data_export_mapping_profiles__id__delete get:data_export_mapping_profiles__id__get put:data_export_mapping_profiles__id__put",
     "name": "mod-data-export",
     "path": "/data-export/mapping-profiles/{id}"
   },
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:data_export_quick_export_post",
     "name": "mod-data-export",
     "path": "/data-export/quick-export"
   },
   {
     "apiDescription": "ramls/dataExport-transformation-fields.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:data_export_transformation_fields_get",
     "name": "mod-data-export",
     "path": "/data-export/transformation-fields"
   },
@@ -1073,42 +1073,42 @@
   {
     "apiDescription": "ramls/feefine-reports.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:feefine_reports_cash_drawer_reconciliation_post",
     "name": "mod-feesfines",
     "path": "/feefine-reports/cash-drawer-reconciliation"
   },
   {
     "apiDescription": "ramls/feefine-reports.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:feefine_reports_cash_drawer_reconciliation_sources_post",
     "name": "mod-feesfines",
     "path": "/feefine-reports/cash-drawer-reconciliation/sources"
   },
   {
     "apiDescription": "ramls/feefine-reports.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:feefine_reports_financial_transactions_detail_post",
     "name": "mod-feesfines",
     "path": "/feefine-reports/financial-transactions-detail"
   },
   {
     "apiDescription": "ramls/feefine-reports.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:feefine_reports_refund_post",
     "name": "mod-feesfines",
     "path": "/feefine-reports/refund"
   },
   {
     "apiDescription": "ramls/feefines.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:feefines_get post:feefines_post",
     "name": "mod-feesfines",
     "path": "/feefines"
   },
   {
     "apiDescription": "ramls/feefines.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:feefines__feefineid__delete get:feefines__feefineid__get put:feefines__feefineid__put",
     "name": "mod-feesfines",
     "path": "/feefines/{feefineId}"
   },
@@ -1346,49 +1346,49 @@
   {
     "apiDescription": "ramls/gobi.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:gobi_orders_post",
     "name": "mod-gobi",
     "path": "/gobi/orders"
   },
   {
     "apiDescription": "ramls/gobi-custom-mappings.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:gobi_orders_custom_mappings_get post:gobi_orders_custom_mappings_post",
     "name": "mod-gobi",
     "path": "/gobi/orders/custom-mappings"
   },
   {
     "apiDescription": "ramls/gobi-custom-mappings.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:gobi_orders_custom_mappings__ordertype__delete get:gobi_orders_custom_mappings__ordertype__get put:gobi_orders_custom_mappings__ordertype__put",
     "name": "mod-gobi",
     "path": "/gobi/orders/custom-mappings/{orderType}"
   },
   {
     "apiDescription": "ramls/gobi-mappings.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:gobi_orders_mappings_fields_get",
     "name": "mod-gobi",
     "path": "/gobi/orders/mappings/fields"
   },
   {
     "apiDescription": "ramls/gobi-mappings.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:gobi_orders_mappings_translators_get",
     "name": "mod-gobi",
     "path": "/gobi/orders/mappings/translators"
   },
   {
     "apiDescription": "ramls/gobi-mappings.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:gobi_orders_mappings_types_get",
     "name": "mod-gobi",
     "path": "/gobi/orders/mappings/types"
   },
   {
     "apiDescription": "ramls/gobi.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:gobi_validate_get post:gobi_validate_post",
     "name": "mod-gobi",
     "path": "/gobi/validate"
   },
@@ -1500,14 +1500,14 @@
   {
     "apiDescription": "ramls/lost-item-fee-policy.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:lost_item_fees_policies_get post:lost_item_fees_policies_post",
     "name": "mod-feesfines",
     "path": "/lost-item-fees-policies"
   },
   {
     "apiDescription": "ramls/lost-item-fee-policy.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:lost_item_fees_policies__lostitemfeepolicyid__delete get:lost_item_fees_policies__lostitemfeepolicyid__get put:lost_item_fees_policies__lostitemfeepolicyid__put",
     "name": "mod-feesfines",
     "path": "/lost-item-fees-policies/{lostItemFeePolicyId}"
   },
@@ -1549,98 +1549,98 @@
   {
     "apiDescription": "ramls/manual-block-templates.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:manual_block_templates_get post:manual_block_templates_post",
     "name": "mod-feesfines",
     "path": "/manual-block-templates"
   },
   {
     "apiDescription": "ramls/manual-block-templates.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:manual_block_templates__id__delete get:manual_block_templates__id__get put:manual_block_templates__id__put",
     "name": "mod-feesfines",
     "path": "/manual-block-templates/{id}"
   },
   {
     "apiDescription": "ramls/manualblocks.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:manualblocks_get post:manualblocks_post",
     "name": "mod-feesfines",
     "path": "/manualblocks"
   },
   {
     "apiDescription": "ramls/manualblocks.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:manualblocks__manualblockid__delete get:manualblocks__manualblockid__get put:manualblocks__manualblockid__put",
     "name": "mod-feesfines",
     "path": "/manualblocks/{manualblockId}"
   },
   {
     "apiDescription": "ramls/mapping-metadata-provider.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:mapping_metadata__jobexecutionid__get",
     "name": "mod-source-record-manager",
     "path": "/mapping-metadata/{jobExecutionId}"
   },
   {
     "apiDescription": "ramls/mapping-rules-provider.raml",
     "apiType": "raml",
-    "methods": "get:null put:null",
+    "methods": "get:mapping_rules__recordtype__get put:mapping_rules__recordtype__put",
     "name": "mod-source-record-manager",
     "path": "/mapping-rules/{recordType}"
   },
   {
     "apiDescription": "ramls/mapping-rules-provider.raml",
     "apiType": "raml",
-    "methods": "put:null",
+    "methods": "put:mapping_rules__recordtype__restore_put",
     "name": "mod-source-record-manager",
     "path": "/mapping-rules/{recordType}/restore"
   },
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:metadata_provider_jobexecutions_get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobExecutions"
   },
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:metadata_provider_jobexecutions_jobprofiles_get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobExecutions/jobProfiles"
   },
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:metadata_provider_jobexecutions_users_get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobExecutions/users"
   },
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:metadata_provider_joblogentries__jobexecutionid__get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobLogEntries/{jobExecutionId}"
   },
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:metadata_provider_joblogentries__jobexecutionid__records__recordid__get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobLogEntries/{jobExecutionId}/records/{recordId}"
   },
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:metadata_provider_jobsummary__jobexecutionid__get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobSummary/{jobExecutionId}"
   },
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:metadata_provider_journalrecords__jobexecutionid__get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/journalRecords/{jobExecutionId}"
   },
@@ -1654,63 +1654,63 @@
   {
     "apiDescription": "ramls/edge-orders.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:orders_post",
     "name": "edge-orders",
     "path": "/orders"
   },
   {
     "apiDescription": "ramls/edge-orders.raml",
     "apiType": "raml",
-    "methods": "get:null put:null",
+    "methods": "get:orders_order_lines__id__get put:orders_order_lines__id__put",
     "name": "edge-orders",
     "path": "/orders/order-lines/{id}"
   },
   {
     "apiDescription": "ramls/edge-orders.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:orders_validate_get post:orders_validate_post",
     "name": "edge-orders",
     "path": "/orders/validate"
   },
   {
     "apiDescription": "ramls/overdue-fine-policy.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:overdue_fines_policies_get post:overdue_fines_policies_post",
     "name": "mod-feesfines",
     "path": "/overdue-fines-policies"
   },
   {
     "apiDescription": "ramls/overdue-fine-policy.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:overdue_fines_policies__overduefinepolicyid__delete get:overdue_fines_policies__overduefinepolicyid__get put:overdue_fines_policies__overduefinepolicyid__put",
     "name": "mod-feesfines",
     "path": "/overdue-fines-policies/{overdueFinePolicyId}"
   },
   {
     "apiDescription": "ramls/owners.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:owners_get post:owners_post",
     "name": "mod-feesfines",
     "path": "/owners"
   },
   {
     "apiDescription": "ramls/owners.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:owners__ownerid__delete get:owners__ownerid__get put:owners__ownerid__put",
     "name": "mod-feesfines",
     "path": "/owners/{ownerId}"
   },
   {
     "apiDescription": "ramls/payments.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:payments_get post:payments_post",
     "name": "mod-feesfines",
     "path": "/payments"
   },
   {
     "apiDescription": "ramls/payments.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:payments__paymentid__delete get:payments__paymentid__get put:payments__paymentid__put",
     "name": "mod-feesfines",
     "path": "/payments/{paymentId}"
   },
@@ -1766,14 +1766,14 @@
   {
     "apiDescription": "ramls/refunds.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:refunds_get post:refunds_post",
     "name": "mod-feesfines",
     "path": "/refunds"
   },
   {
     "apiDescription": "ramls/refunds.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:refunds__refundid__delete get:refunds__refundid__get put:refunds__refundid__put",
     "name": "mod-feesfines",
     "path": "/refunds/{refundId}"
   },
@@ -2053,42 +2053,42 @@
   {
     "apiDescription": "ramls/transfer-criteria.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:transfer_criterias_get post:transfer_criterias_post",
     "name": "mod-feesfines",
     "path": "/transfer-criterias"
   },
   {
     "apiDescription": "ramls/transfer-criteria.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:transfer_criterias__transfercriteriaid__delete get:transfer_criterias__transfercriteriaid__get put:transfer_criterias__transfercriteriaid__put",
     "name": "mod-feesfines",
     "path": "/transfer-criterias/{transferCriteriaId}"
   },
   {
     "apiDescription": "ramls/transfers.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:transfers_get post:transfers_post",
     "name": "mod-feesfines",
     "path": "/transfers"
   },
   {
     "apiDescription": "ramls/transfers.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:transfers__transferid__delete get:transfers__transferid__get put:transfers__transferid__put",
     "name": "mod-feesfines",
     "path": "/transfers/{transferId}"
   },
   {
     "apiDescription": "ramls/waiver.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:waives_get post:waives_post",
     "name": "mod-feesfines",
     "path": "/waives"
   },
   {
     "apiDescription": "ramls/waiver.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:waives__waiveid__delete get:waives__waiveid__get put:waives__waiveid__put",
     "name": "mod-feesfines",
     "path": "/waives/{waiveId}"
   },
