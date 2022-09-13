@@ -116,12 +116,12 @@
     {
       "name": "mod-courses",
       "nameRepo": "mod-courses",
-      "releaseDate": "2021-12-17T21:30:33+00:00",
-      "releaseName": "v1.4.3",
-      "releaseSha": "18f4368815c964a899aebdbe1ffb2f5158fd63bc",
-      "releaseTag": "v1.4.3",
+      "releaseDate": "2022-09-07T16:26:20+00:00",
+      "releaseName": "",
+      "releaseSha": "88567922ef67ca238abd558be2c30e3b963336ee",
+      "releaseTag": "v1.4.5",
       "releaseTarget": "master",
-      "version": "1.4.3"
+      "version": "1.4.5"
     },
     {
       "name": "mod-data-export",
