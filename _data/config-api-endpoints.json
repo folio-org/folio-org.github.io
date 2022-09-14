@@ -212,14 +212,28 @@
   {
     "apiDescription": "src/main/resources/swagger.api/tenant.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/postTenant",
     "name": "folio-spring-base",
     "path": "/_/tenant"
   },
   {
+    "apiDescription": "core/src/main/resources/openapi/tenant-2.0.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/postTenant",
+    "name": "folio-vertx-lib",
+    "path": "/_/tenant"
+  },
+  {
+    "apiDescription": "core/src/main/resources/openapi/tenant-2.0.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteTenantJob get:operation/getTenantJob",
+    "name": "folio-vertx-lib",
+    "path": "/_/tenant/{id}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/tenant.yaml",
     "apiType": "oas",
-    "methods": "delete:null get:null",
+    "methods": "delete:operation/deleteTenant get:operation/getTenant",
     "name": "folio-spring-base",
     "path": "/_/tenant/{operationId}"
   },
@@ -240,140 +254,140 @@
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:accounts_get post:accounts_post",
     "name": "mod-feesfines",
     "path": "/accounts"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_cancel_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/cancel"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_check_pay_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/check-pay"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_check_refund_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/check-refund"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_check_transfer_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/check-transfer"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_check_waive_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/check-waive"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_pay_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/pay"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_refund_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/refund"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_transfer_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/transfer"
   },
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts_bulk_waive_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/waive"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:accounts__accountid__delete get:accounts__accountid__get put:accounts__accountid__put",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__cancel_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/cancel"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__check_pay_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/check-pay"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__check_refund_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/check-refund"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__check_transfer_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/check-transfer"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__check_waive_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/check-waive"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__pay_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/pay"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__refund_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/refund"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__transfer_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/transfer"
   },
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:accounts__accountid__waive_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/waive"
   },
@@ -387,44 +401,128 @@
   {
     "apiDescription": "ramls/edge-orders.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:admin_health_get",
     "name": "edge-orders",
     "path": "/admin/health"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "get:null",
-    "name": "mod-search",
-    "path": "/authorities"
+    "apiDescription": "ramls/alternative-title-type.raml",
+    "apiType": "raml",
+    "methods": "get:alternative_title_types_get post:alternative_title_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/alternative-title-types"
+  },
+  {
+    "apiDescription": "ramls/alternative-title-type.raml",
+    "apiType": "raml",
+    "methods": "delete:alternative_title_types__id__delete get:alternative_title_types__id__get put:alternative_title_types__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/alternative-title-types/{id}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/searchAuthorities",
+    "name": "mod-search",
+    "path": "/authorities"
+  },
+  {
+    "apiDescription": "ramls/authority-note-type.raml",
+    "apiType": "raml",
+    "methods": "get:authority_note_types_get post:authority_note_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/authority-note-types"
+  },
+  {
+    "apiDescription": "ramls/authority-note-type.raml",
+    "apiType": "raml",
+    "methods": "delete:authority_note_types__id__delete get:authority_note_types__id__get put:authority_note_types__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/authority-note-types/{id}"
+  },
+  {
+    "apiDescription": "ramls/authority-source-file.raml",
+    "apiType": "raml",
+    "methods": "get:authority_source_files_get post:authority_source_files_post",
+    "name": "mod-inventory-storage",
+    "path": "/authority-source-files"
+  },
+  {
+    "apiDescription": "ramls/authority-source-file.raml",
+    "apiType": "raml",
+    "methods": "delete:authority_source_files__id__delete get:authority_source_files__id__get patch:authority_source_files__id__patch put:authority_source_files__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/authority-source-files/{id}"
+  },
+  {
+    "apiDescription": "ramls/authorities.raml",
+    "apiType": "raml",
+    "methods": "delete:authority_storage_authorities_delete get:authority_storage_authorities_get post:authority_storage_authorities_post",
+    "name": "mod-inventory-storage",
+    "path": "/authority-storage/authorities"
+  },
+  {
+    "apiDescription": "ramls/authorities.raml",
+    "apiType": "raml",
+    "methods": "delete:authority_storage_authorities__authorityid__delete get:authority_storage_authorities__authorityid__get put:authority_storage_authorities__authorityid__put",
+    "name": "mod-inventory-storage",
+    "path": "/authority-storage/authorities/{authorityId}"
+  },
+  {
+    "apiDescription": "ramls/authorities-reindex.raml",
+    "apiType": "raml",
+    "methods": "post:authority_storage_reindex_post",
+    "name": "mod-inventory-storage",
+    "path": "/authority-storage/reindex"
+  },
+  {
+    "apiDescription": "ramls/authorities-reindex.raml",
+    "apiType": "raml",
+    "methods": "delete:authority_storage_reindex__id__delete get:authority_storage_reindex__id__get",
+    "name": "mod-inventory-storage",
+    "path": "/authority-storage/reindex/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/browseAuthorities",
     "name": "mod-search",
     "path": "/browse/authorities"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/browseInstancesByCallNumber",
     "name": "mod-search",
     "path": "/browse/call-numbers/instances"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/browseInstancesByContributor",
     "name": "mod-search",
     "path": "/browse/contributors/instances"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/browseInstancesBySubject",
     "name": "mod-search",
     "path": "/browse/subjects/instances"
+  },
+  {
+    "apiDescription": "ramls/call-number-type.raml",
+    "apiType": "raml",
+    "methods": "get:call_number_types_get post:call_number_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/call-number-types"
+  },
+  {
+    "apiDescription": "ramls/call-number-type.raml",
+    "apiType": "raml",
+    "methods": "delete:call_number_types__id__delete get:call_number_types__id__get put:call_number_types__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/call-number-types/{id}"
   },
   {
     "apiDescription": "ramls/circulation.raml",
@@ -672,46 +770,88 @@
     "path": "/circulation/scheduled-age-to-lost-fee-charging"
   },
   {
+    "apiDescription": "ramls/classification-type.raml",
+    "apiType": "raml",
+    "methods": "get:classification_types_get post:classification_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/classification-types"
+  },
+  {
+    "apiDescription": "ramls/classification-type.raml",
+    "apiType": "raml",
+    "methods": "delete:classification_types__classificationtypeid__delete get:classification_types__classificationtypeid__get put:classification_types__classificationtypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/classification-types/{classificationTypeId}"
+  },
+  {
     "apiDescription": "ramls/comments.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:comments_get post:comments_post",
     "name": "mod-feesfines",
     "path": "/comments"
   },
   {
     "apiDescription": "ramls/comments.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:comments__commentid__delete get:comments__commentid__get put:comments__commentid__put",
     "name": "mod-feesfines",
     "path": "/comments/{commentId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null post:null",
+    "methods": "get:operation/getAllFeatures post:operation/saveFeatureConfiguration",
     "name": "mod-search",
     "path": "/config/features"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "delete:null put:null",
+    "methods": "delete:operation/deleteFeatureConfigurationById put:operation/updateFeatureConfiguration",
     "name": "mod-search",
     "path": "/config/features/{featureId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null post:null",
+    "methods": "get:operation/getAllLanguageConfigs post:operation/createLanguageConfig",
     "name": "mod-search",
     "path": "/config/languages"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "delete:null put:null",
+    "methods": "delete:operation/deleteLanguageConfig put:operation/updateLanguageConfig",
     "name": "mod-search",
     "path": "/config/languages/{code}"
+  },
+  {
+    "apiDescription": "ramls/contributor-name-type.raml",
+    "apiType": "raml",
+    "methods": "get:contributor_name_types_get post:contributor_name_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/contributor-name-types"
+  },
+  {
+    "apiDescription": "ramls/contributor-name-type.raml",
+    "apiType": "raml",
+    "methods": "delete:contributor_name_types__contributornametypeid__delete get:contributor_name_types__contributornametypeid__get put:contributor_name_types__contributornametypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/contributor-name-types/{contributorNameTypeId}"
+  },
+  {
+    "apiDescription": "ramls/contributor-type.raml",
+    "apiType": "raml",
+    "methods": "get:contributor_types_get post:contributor_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/contributor-types"
+  },
+  {
+    "apiDescription": "ramls/contributor-type.raml",
+    "apiType": "raml",
+    "methods": "delete:contributor_types__contributortypeid__delete get:contributor_types__contributortypeid__get put:contributor_types__contributortypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/contributor-types/{contributorTypeId}"
   },
   {
     "apiDescription": "ramls/courses.raml",
@@ -884,114 +1024,478 @@
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:data_export_clean_up_files_post",
     "name": "mod-data-export",
     "path": "/data-export/clean-up-files"
   },
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:data_export_expire_jobs_post",
     "name": "mod-data-export",
     "path": "/data-export/expire-jobs"
   },
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:data_export_export_post",
     "name": "mod-data-export",
     "path": "/data-export/export"
   },
   {
     "apiDescription": "ramls/dataExport-file-definition.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:data_export_file_definitions_post",
     "name": "mod-data-export",
     "path": "/data-export/file-definitions"
   },
   {
     "apiDescription": "ramls/dataExport-file-definition.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:data_export_file_definitions__filedefinitionid__get",
     "name": "mod-data-export",
     "path": "/data-export/file-definitions/{fileDefinitionId}"
   },
   {
     "apiDescription": "ramls/dataExport-file-definition.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:data_export_file_definitions__filedefinitionid__upload_post",
     "name": "mod-data-export",
     "path": "/data-export/file-definitions/{fileDefinitionId}/upload"
   },
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:data_export_job_executions_get",
     "name": "mod-data-export",
     "path": "/data-export/job-executions"
   },
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "methods": "delete:null",
+    "methods": "delete:data_export_job_executions__id__delete",
     "name": "mod-data-export",
     "path": "/data-export/job-executions/{id}"
   },
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:data_export_job_executions__jobexecutionid__download__exportfileid__get",
     "name": "mod-data-export",
     "path": "/data-export/job-executions/{jobExecutionId}/download/{exportFileId}"
   },
   {
     "apiDescription": "ramls/dataExport-job-profile.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:data_export_job_profiles_get post:data_export_job_profiles_post",
     "name": "mod-data-export",
     "path": "/data-export/job-profiles"
   },
   {
     "apiDescription": "ramls/dataExport-job-profile.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:data_export_job_profiles__id__delete get:data_export_job_profiles__id__get put:data_export_job_profiles__id__put",
     "name": "mod-data-export",
     "path": "/data-export/job-profiles/{id}"
   },
   {
     "apiDescription": "ramls/dataExport-logs.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:data_export_logs_get",
     "name": "mod-data-export",
     "path": "/data-export/logs"
   },
   {
     "apiDescription": "ramls/dataExport-mapping-profiles.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:data_export_mapping_profiles_get post:data_export_mapping_profiles_post",
     "name": "mod-data-export",
     "path": "/data-export/mapping-profiles"
   },
   {
     "apiDescription": "ramls/dataExport-mapping-profiles.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:data_export_mapping_profiles__id__delete get:data_export_mapping_profiles__id__get put:data_export_mapping_profiles__id__put",
     "name": "mod-data-export",
     "path": "/data-export/mapping-profiles/{id}"
   },
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:data_export_quick_export_post",
     "name": "mod-data-export",
     "path": "/data-export/quick-export"
   },
   {
     "apiDescription": "ramls/dataExport-transformation-fields.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:data_export_transformation_fields_get",
     "name": "mod-data-export",
     "path": "/data-export/transformation-fields"
+  },
+  {
+    "apiDescription": "ramls/access-types.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_access_types_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/access-types"
+  },
+  {
+    "apiDescription": "ramls/access-types.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_access_types__id__get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/access-types/{id}"
+  },
+  {
+    "apiDescription": "ramls/eholdings.raml",
+    "apiType": "raml",
+    "methods": "delete:eholdings_cache_delete",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/cache"
+  },
+  {
+    "apiDescription": "ramls/currencies.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_currencies_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/currencies"
+  },
+  {
+    "apiDescription": "ramls/custom-labels.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_custom_labels_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/custom-labels"
+  },
+  {
+    "apiDescription": "ramls/kb-credentials.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials_get post:eholdings_kb_credentials_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials"
+  },
+  {
+    "apiDescription": "ramls/kb-credentials.raml",
+    "apiType": "raml",
+    "methods": "delete:eholdings_kb_credentials__id__delete get:eholdings_kb_credentials__id__get patch:eholdings_kb_credentials__id__patch put:eholdings_kb_credentials__id__put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}"
+  },
+  {
+    "apiDescription": "ramls/access-types.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials__id__access_types_get post:eholdings_kb_credentials__id__access_types_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/access-types"
+  },
+  {
+    "apiDescription": "ramls/access-types.raml",
+    "apiType": "raml",
+    "methods": "delete:eholdings_kb_credentials__id__access_types__accesstypeid__delete get:eholdings_kb_credentials__id__access_types__accesstypeid__get put:eholdings_kb_credentials__id__access_types__accesstypeid__put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/access-types/{accessTypeId}"
+  },
+  {
+    "apiDescription": "ramls/custom-labels.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials__id__custom_labels_get put:eholdings_kb_credentials__id__custom_labels_put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/custom-labels"
+  },
+  {
+    "apiDescription": "ramls/kb-credentials.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials__id__key_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/key"
+  },
+  {
+    "apiDescription": "ramls/proxies.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials__id__proxy_types_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/proxy-types"
+  },
+  {
+    "apiDescription": "ramls/proxies.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials__id__root_proxy_get put:eholdings_kb_credentials__id__root_proxy_put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/root-proxy"
+  },
+  {
+    "apiDescription": "ramls/uc.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials__id__uc_get patch:eholdings_kb_credentials__id__uc_patch post:eholdings_kb_credentials__id__uc_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/uc"
+  },
+  {
+    "apiDescription": "ramls/uc.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials__id__uc_key_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/uc/key"
+  },
+  {
+    "apiDescription": "ramls/assigned-users.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_kb_credentials__id__users_get post:eholdings_kb_credentials__id__users_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/users"
+  },
+  {
+    "apiDescription": "ramls/assigned-users.raml",
+    "apiType": "raml",
+    "methods": "delete:eholdings_kb_credentials__id__users__userid__delete",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/kb-credentials/{id}/users/{userId}"
+  },
+  {
+    "apiDescription": "ramls/eholdings.raml",
+    "apiType": "raml",
+    "methods": "post:eholdings_loading_kb_credentials_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/loading/kb-credentials"
+  },
+  {
+    "apiDescription": "ramls/eholdings.raml",
+    "apiType": "raml",
+    "methods": "post:eholdings_loading_kb_credentials__id__post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/loading/kb-credentials/{id}"
+  },
+  {
+    "apiDescription": "ramls/eholdings.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_loading_kb_credentials__id__status_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/loading/kb-credentials/{id}/status"
+  },
+  {
+    "apiDescription": "ramls/packages.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_packages_get post:eholdings_packages_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/packages"
+  },
+  {
+    "apiDescription": "ramls/packages.raml",
+    "apiType": "raml",
+    "methods": "post:eholdings_packages_bulk_fetch_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/packages/bulk/fetch"
+  },
+  {
+    "apiDescription": "ramls/packages.raml",
+    "apiType": "raml",
+    "methods": "delete:eholdings_packages__packageid__delete get:eholdings_packages__packageid__get put:eholdings_packages__packageid__put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/packages/{packageId}"
+  },
+  {
+    "apiDescription": "ramls/costperuse.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_packages__packageid__costperuse_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/packages/{packageId}/costperuse"
+  },
+  {
+    "apiDescription": "ramls/packages.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_packages__packageid__resources_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/packages/{packageId}/resources"
+  },
+  {
+    "apiDescription": "ramls/costperuse.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_packages__packageid__resources_costperuse_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/packages/{packageId}/resources/costperuse"
+  },
+  {
+    "apiDescription": "ramls/export.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_packages__packageid__resources_costperuse_export_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/packages/{packageId}/resources/costperuse/export"
+  },
+  {
+    "apiDescription": "ramls/packages.raml",
+    "apiType": "raml",
+    "methods": "put:eholdings_packages__packageid__tags_put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/packages/{packageId}/tags"
+  },
+  {
+    "apiDescription": "ramls/providers.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_providers_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/providers"
+  },
+  {
+    "apiDescription": "ramls/providers.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_providers__providerid__get put:eholdings_providers__providerid__put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/providers/{providerId}"
+  },
+  {
+    "apiDescription": "ramls/providers.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_providers__providerid__packages_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/providers/{providerId}/packages"
+  },
+  {
+    "apiDescription": "ramls/providers.raml",
+    "apiType": "raml",
+    "methods": "put:eholdings_providers__providerid__tags_put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/providers/{providerId}/tags"
+  },
+  {
+    "apiDescription": "ramls/proxies.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_proxy_types_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/proxy-types"
+  },
+  {
+    "apiDescription": "ramls/resources.raml",
+    "apiType": "raml",
+    "methods": "post:eholdings_resources_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/resources"
+  },
+  {
+    "apiDescription": "ramls/resources.raml",
+    "apiType": "raml",
+    "methods": "post:eholdings_resources_bulk_fetch_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/resources/bulk/fetch"
+  },
+  {
+    "apiDescription": "ramls/resources.raml",
+    "apiType": "raml",
+    "methods": "delete:eholdings_resources__resourceid__delete get:eholdings_resources__resourceid__get put:eholdings_resources__resourceid__put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/resources/{resourceId}"
+  },
+  {
+    "apiDescription": "ramls/costperuse.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_resources__resourceid__costperuse_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/resources/{resourceId}/costperuse"
+  },
+  {
+    "apiDescription": "ramls/resources.raml",
+    "apiType": "raml",
+    "methods": "put:eholdings_resources__resourceid__tags_put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/resources/{resourceId}/tags"
+  },
+  {
+    "apiDescription": "ramls/proxies.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_root_proxy_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/root-proxy"
+  },
+  {
+    "apiDescription": "ramls/eholdings.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_status_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/status"
+  },
+  {
+    "apiDescription": "ramls/tags.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_tags_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/tags"
+  },
+  {
+    "apiDescription": "ramls/tags.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_tags_summary_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/tags/summary"
+  },
+  {
+    "apiDescription": "ramls/titles.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_titles_get post:eholdings_titles_post",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/titles"
+  },
+  {
+    "apiDescription": "ramls/titles.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_titles__titleid__get put:eholdings_titles__titleid__put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/titles/{titleId}"
+  },
+  {
+    "apiDescription": "ramls/costperuse.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_titles__titleid__costperuse_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/titles/{titleId}/costperuse"
+  },
+  {
+    "apiDescription": "ramls/uc.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_uc_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/uc"
+  },
+  {
+    "apiDescription": "ramls/uc.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_uc_credentials_get put:eholdings_uc_credentials_put",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/uc-credentials"
+  },
+  {
+    "apiDescription": "ramls/uc.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_uc_credentials_clientid_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/uc-credentials/clientId"
+  },
+  {
+    "apiDescription": "ramls/uc.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_uc_credentials_clientsecret_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/uc-credentials/clientSecret"
+  },
+  {
+    "apiDescription": "ramls/kb-credentials.raml",
+    "apiType": "raml",
+    "methods": "get:eholdings_user_kb_credential_get",
+    "name": "mod-kb-ebsco-java",
+    "path": "/eholdings/user-kb-credential"
+  },
+  {
+    "apiDescription": "ramls/electronic-access-relationship.raml",
+    "apiType": "raml",
+    "methods": "get:electronic_access_relationships_get post:electronic_access_relationships_post",
+    "name": "mod-inventory-storage",
+    "path": "/electronic-access-relationships"
+  },
+  {
+    "apiDescription": "ramls/electronic-access-relationship.raml",
+    "apiType": "raml",
+    "methods": "delete:electronic_access_relationships__electronicaccessrelationshipid__delete get:electronic_access_relationships__electronicaccessrelationshipid__get put:electronic_access_relationships__electronicaccessrelationshipid__put",
+    "name": "mod-inventory-storage",
+    "path": "/electronic-access-relationships/{electronicAccessRelationshipId}"
   },
   {
     "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
@@ -1073,373 +1577,968 @@
   {
     "apiDescription": "ramls/feefine-reports.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:feefine_reports_cash_drawer_reconciliation_post",
     "name": "mod-feesfines",
     "path": "/feefine-reports/cash-drawer-reconciliation"
   },
   {
     "apiDescription": "ramls/feefine-reports.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:feefine_reports_cash_drawer_reconciliation_sources_post",
     "name": "mod-feesfines",
     "path": "/feefine-reports/cash-drawer-reconciliation/sources"
   },
   {
     "apiDescription": "ramls/feefine-reports.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:feefine_reports_financial_transactions_detail_post",
     "name": "mod-feesfines",
     "path": "/feefine-reports/financial-transactions-detail"
   },
   {
     "apiDescription": "ramls/feefine-reports.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:feefine_reports_refund_post",
     "name": "mod-feesfines",
     "path": "/feefine-reports/refund"
   },
   {
     "apiDescription": "ramls/feefines.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:feefines_get post:feefines_post",
     "name": "mod-feesfines",
     "path": "/feefines"
   },
   {
     "apiDescription": "ramls/feefines.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:feefines__feefineid__delete get:feefines__feefineid__get put:feefines__feefineid__put",
     "name": "mod-feesfines",
     "path": "/feefines/{feefineId}"
   },
   {
     "apiDescription": "ramls/budget_expense_class.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_budget_expense_classes_get post:finance_storage_budget_expense_classes_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/budget-expense-classes"
   },
   {
     "apiDescription": "ramls/budget_expense_class.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_budget_expense_classes__id__delete get:finance_storage_budget_expense_classes__id__get put:finance_storage_budget_expense_classes__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/budget-expense-classes/{id}"
   },
   {
     "apiDescription": "ramls/budget.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_budgets_get post:finance_storage_budgets_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/budgets"
   },
   {
     "apiDescription": "ramls/budget.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_budgets__id__delete get:finance_storage_budgets__id__get put:finance_storage_budgets__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/budgets/{id}"
   },
   {
     "apiDescription": "ramls/expense_class.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_expense_classes_get post:finance_storage_expense_classes_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/expense-classes"
   },
   {
     "apiDescription": "ramls/expense_class.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_expense_classes__id__delete get:finance_storage_expense_classes__id__get put:finance_storage_expense_classes__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/expense-classes/{id}"
   },
   {
     "apiDescription": "ramls/fiscal-year.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_fiscal_years_get post:finance_storage_fiscal_years_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/fiscal-years"
   },
   {
     "apiDescription": "ramls/fiscal-year.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_fiscal_years__id__delete get:finance_storage_fiscal_years__id__get put:finance_storage_fiscal_years__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/fiscal-years/{id}"
   },
   {
     "apiDescription": "ramls/fund-type.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_fund_types_get post:finance_storage_fund_types_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/fund-types"
   },
   {
     "apiDescription": "ramls/fund-type.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_fund_types__id__delete get:finance_storage_fund_types__id__get put:finance_storage_fund_types__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/fund-types/{id}"
   },
   {
     "apiDescription": "ramls/fund.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_funds_get post:finance_storage_funds_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/funds"
   },
   {
     "apiDescription": "ramls/fund.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_funds__id__delete get:finance_storage_funds__id__get put:finance_storage_funds__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/funds/{id}"
   },
   {
     "apiDescription": "ramls/group-budgets.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:finance_storage_group_budgets_get",
     "name": "mod-finance-storage",
     "path": "/finance-storage/group-budgets"
   },
   {
     "apiDescription": "ramls/group_fund_fy.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_group_fund_fiscal_years_get post:finance_storage_group_fund_fiscal_years_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/group-fund-fiscal-years"
   },
   {
     "apiDescription": "ramls/group_fund_fy.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_group_fund_fiscal_years__id__delete get:finance_storage_group_fund_fiscal_years__id__get put:finance_storage_group_fund_fiscal_years__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/group-fund-fiscal-years/{id}"
   },
   {
     "apiDescription": "ramls/group.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_groups_get post:finance_storage_groups_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/groups"
   },
   {
     "apiDescription": "ramls/group.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_groups__id__delete get:finance_storage_groups__id__get put:finance_storage_groups__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/groups/{id}"
   },
   {
     "apiDescription": "ramls/transaction-summary.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:finance_storage_invoice_transaction_summaries_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/invoice-transaction-summaries"
   },
   {
     "apiDescription": "ramls/transaction-summary.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_invoice_transaction_summaries__id__delete get:finance_storage_invoice_transaction_summaries__id__get put:finance_storage_invoice_transaction_summaries__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/invoice-transaction-summaries/{id}"
   },
   {
     "apiDescription": "ramls/ledger_rollover.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_ledger_rollovers_get post:finance_storage_ledger_rollovers_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers"
   },
   {
     "apiDescription": "ramls/ledger_rollover-budgets.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:finance_storage_ledger_rollovers_budgets_get",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers-budgets"
   },
   {
     "apiDescription": "ramls/ledger_rollover-budgets.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:finance_storage_ledger_rollovers_budgets__id__get",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers-budgets/{id}"
   },
   {
     "apiDescription": "ramls/ledger-rollover-errors.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_ledger_rollovers_errors_get post:finance_storage_ledger_rollovers_errors_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers-errors"
   },
   {
     "apiDescription": "ramls/ledger-rollover-errors.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_ledger_rollovers_errors__id__delete get:finance_storage_ledger_rollovers_errors__id__get put:finance_storage_ledger_rollovers_errors__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers-errors/{id}"
   },
   {
     "apiDescription": "ramls/ledger_rollover_progress.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_ledger_rollovers_progress_get post:finance_storage_ledger_rollovers_progress_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers-progress"
   },
   {
     "apiDescription": "ramls/ledger_rollover_progress.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_ledger_rollovers_progress__id__delete get:finance_storage_ledger_rollovers_progress__id__get put:finance_storage_ledger_rollovers_progress__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers-progress/{id}"
   },
   {
     "apiDescription": "ramls/ledger_rollover.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_ledger_rollovers__id__delete get:finance_storage_ledger_rollovers__id__get put:finance_storage_ledger_rollovers__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers/{id}"
   },
   {
     "apiDescription": "ramls/ledger.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_ledgers_get post:finance_storage_ledgers_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledgers"
   },
   {
     "apiDescription": "ramls/ledger.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_ledgers__id__delete get:finance_storage_ledgers__id__get put:finance_storage_ledgers__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledgers/{id}"
   },
   {
     "apiDescription": "ramls/transaction-summary.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:finance_storage_order_transaction_summaries_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/order-transaction-summaries"
   },
   {
     "apiDescription": "ramls/transaction-summary.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_order_transaction_summaries__id__delete get:finance_storage_order_transaction_summaries__id__get put:finance_storage_order_transaction_summaries__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/order-transaction-summaries/{id}"
   },
   {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:finance_storage_transactions_get post:finance_storage_transactions_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/transactions"
   },
   {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:finance_storage_transactions__id__delete get:finance_storage_transactions__id__get put:finance_storage_transactions__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/transactions/{id}"
   },
   {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "post:finance_allocations_post",
+    "name": "mod-finance",
+    "path": "/finance/allocations"
+  },
+  {
+    "apiDescription": "ramls/budgets.raml",
+    "apiType": "raml",
+    "methods": "get:finance_budgets_get post:finance_budgets_post",
+    "name": "mod-finance",
+    "path": "/finance/budgets"
+  },
+  {
+    "apiDescription": "ramls/budgets.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_budgets__id__delete get:finance_budgets__id__get put:finance_budgets__id__put",
+    "name": "mod-finance",
+    "path": "/finance/budgets/{id}"
+  },
+  {
+    "apiDescription": "ramls/budgets.raml",
+    "apiType": "raml",
+    "methods": "get:finance_budgets__id__expense_classes_totals_get",
+    "name": "mod-finance",
+    "path": "/finance/budgets/{id}/expense-classes-totals"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "post:finance_credits_post",
+    "name": "mod-finance",
+    "path": "/finance/credits"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "put:finance_credits__id__put",
+    "name": "mod-finance",
+    "path": "/finance/credits/{id}"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "post:finance_encumbrances_post",
+    "name": "mod-finance",
+    "path": "/finance/encumbrances"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_encumbrances__id__delete put:finance_encumbrances__id__put",
+    "name": "mod-finance",
+    "path": "/finance/encumbrances/{id}"
+  },
+  {
+    "apiDescription": "ramls/exchange-rate.raml",
+    "apiType": "raml",
+    "methods": "get:finance_exchange_rate_get",
+    "name": "mod-finance",
+    "path": "/finance/exchange-rate"
+  },
+  {
+    "apiDescription": "ramls/expense-classes.raml",
+    "apiType": "raml",
+    "methods": "get:finance_expense_classes_get post:finance_expense_classes_post",
+    "name": "mod-finance",
+    "path": "/finance/expense-classes"
+  },
+  {
+    "apiDescription": "ramls/expense-classes.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_expense_classes__id__delete get:finance_expense_classes__id__get put:finance_expense_classes__id__put",
+    "name": "mod-finance",
+    "path": "/finance/expense-classes/{id}"
+  },
+  {
+    "apiDescription": "ramls/fiscal-years.raml",
+    "apiType": "raml",
+    "methods": "get:finance_fiscal_years_get post:finance_fiscal_years_post",
+    "name": "mod-finance",
+    "path": "/finance/fiscal-years"
+  },
+  {
+    "apiDescription": "ramls/fiscal-years.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_fiscal_years__id__delete get:finance_fiscal_years__id__get put:finance_fiscal_years__id__put",
+    "name": "mod-finance",
+    "path": "/finance/fiscal-years/{id}"
+  },
+  {
+    "apiDescription": "ramls/finance-fund-codes-expense-classes.raml",
+    "apiType": "raml",
+    "methods": "get:finance_fund_codes_expense_classes_get",
+    "name": "mod-finance",
+    "path": "/finance/fund-codes-expense-classes"
+  },
+  {
+    "apiDescription": "ramls/fund-types.raml",
+    "apiType": "raml",
+    "methods": "get:finance_fund_types_get post:finance_fund_types_post",
+    "name": "mod-finance",
+    "path": "/finance/fund-types"
+  },
+  {
+    "apiDescription": "ramls/fund-types.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_fund_types__id__delete get:finance_fund_types__id__get put:finance_fund_types__id__put",
+    "name": "mod-finance",
+    "path": "/finance/fund-types/{id}"
+  },
+  {
+    "apiDescription": "ramls/funds.raml",
+    "apiType": "raml",
+    "methods": "get:finance_funds_get post:finance_funds_post",
+    "name": "mod-finance",
+    "path": "/finance/funds"
+  },
+  {
+    "apiDescription": "ramls/funds.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_funds__id__delete get:finance_funds__id__get put:finance_funds__id__put",
+    "name": "mod-finance",
+    "path": "/finance/funds/{id}"
+  },
+  {
+    "apiDescription": "ramls/funds.raml",
+    "apiType": "raml",
+    "methods": "get:finance_funds__id__budget_get",
+    "name": "mod-finance",
+    "path": "/finance/funds/{id}/budget"
+  },
+  {
+    "apiDescription": "ramls/funds.raml",
+    "apiType": "raml",
+    "methods": "get:finance_funds__id__expense_classes_get",
+    "name": "mod-finance",
+    "path": "/finance/funds/{id}/expense-classes"
+  },
+  {
+    "apiDescription": "ramls/group-fiscal-year-summaries.raml",
+    "apiType": "raml",
+    "methods": "get:finance_group_fiscal_year_summaries_get",
+    "name": "mod-finance",
+    "path": "/finance/group-fiscal-year-summaries"
+  },
+  {
+    "apiDescription": "ramls/group-fund-fiscal-year.raml",
+    "apiType": "raml",
+    "methods": "get:finance_group_fund_fiscal_years_get post:finance_group_fund_fiscal_years_post",
+    "name": "mod-finance",
+    "path": "/finance/group-fund-fiscal-years"
+  },
+  {
+    "apiDescription": "ramls/group-fund-fiscal-year.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_group_fund_fiscal_years__id__delete",
+    "name": "mod-finance",
+    "path": "/finance/group-fund-fiscal-years/{id}"
+  },
+  {
+    "apiDescription": "ramls/groups.raml",
+    "apiType": "raml",
+    "methods": "get:finance_groups_get post:finance_groups_post",
+    "name": "mod-finance",
+    "path": "/finance/groups"
+  },
+  {
+    "apiDescription": "ramls/groups.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_groups__id__delete get:finance_groups__id__get put:finance_groups__id__put",
+    "name": "mod-finance",
+    "path": "/finance/groups/{id}"
+  },
+  {
+    "apiDescription": "ramls/groups.raml",
+    "apiType": "raml",
+    "methods": "get:finance_groups__id__expense_classes_totals_get",
+    "name": "mod-finance",
+    "path": "/finance/groups/{id}/expense-classes-totals"
+  },
+  {
+    "apiDescription": "ramls/transaction-summary.raml",
+    "apiType": "raml",
+    "methods": "post:finance_invoice_transaction_summaries_post",
+    "name": "mod-finance",
+    "path": "/finance/invoice-transaction-summaries"
+  },
+  {
+    "apiDescription": "ramls/transaction-summary.raml",
+    "apiType": "raml",
+    "methods": "put:finance_invoice_transaction_summaries__id__put",
+    "name": "mod-finance",
+    "path": "/finance/invoice-transaction-summaries/{id}"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledger_rollovers_get post:finance_ledger_rollovers_post",
+    "name": "mod-finance",
+    "path": "/finance/ledger-rollovers"
+  },
+  {
+    "apiDescription": "ramls/ledger-rollover-errors.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledger_rollovers_errors_get",
+    "name": "mod-finance",
+    "path": "/finance/ledger-rollovers-errors"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover_progress.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledger_rollovers_progress_get post:finance_ledger_rollovers_progress_post",
+    "name": "mod-finance",
+    "path": "/finance/ledger-rollovers-progress"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover_progress.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledger_rollovers_progress__id__get put:finance_ledger_rollovers_progress__id__put",
+    "name": "mod-finance",
+    "path": "/finance/ledger-rollovers-progress/{id}"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledger_rollovers__id__get",
+    "name": "mod-finance",
+    "path": "/finance/ledger-rollovers/{id}"
+  },
+  {
+    "apiDescription": "ramls/ledgers.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledgers_get post:finance_ledgers_post",
+    "name": "mod-finance",
+    "path": "/finance/ledgers"
+  },
+  {
+    "apiDescription": "ramls/ledgers.raml",
+    "apiType": "raml",
+    "methods": "delete:finance_ledgers__id__delete get:finance_ledgers__id__get put:finance_ledgers__id__put",
+    "name": "mod-finance",
+    "path": "/finance/ledgers/{id}"
+  },
+  {
+    "apiDescription": "ramls/ledgers.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledgers__id__current_fiscal_year_get",
+    "name": "mod-finance",
+    "path": "/finance/ledgers/{id}/current-fiscal-year"
+  },
+  {
+    "apiDescription": "ramls/transaction-summary.raml",
+    "apiType": "raml",
+    "methods": "post:finance_order_transaction_summaries_post",
+    "name": "mod-finance",
+    "path": "/finance/order-transaction-summaries"
+  },
+  {
+    "apiDescription": "ramls/transaction-summary.raml",
+    "apiType": "raml",
+    "methods": "put:finance_order_transaction_summaries__id__put",
+    "name": "mod-finance",
+    "path": "/finance/order-transaction-summaries/{id}"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "post:finance_payments_post",
+    "name": "mod-finance",
+    "path": "/finance/payments"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "put:finance_payments__id__put",
+    "name": "mod-finance",
+    "path": "/finance/payments/{id}"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "post:finance_pending_payments_post",
+    "name": "mod-finance",
+    "path": "/finance/pending-payments"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "put:finance_pending_payments__id__put",
+    "name": "mod-finance",
+    "path": "/finance/pending-payments/{id}"
+  },
+  {
+    "apiDescription": "ramls/release-encumbrance.raml",
+    "apiType": "raml",
+    "methods": "post:finance_release_encumbrance__id__post",
+    "name": "mod-finance",
+    "path": "/finance/release-encumbrance/{id}"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "get:finance_transactions_get",
+    "name": "mod-finance",
+    "path": "/finance/transactions"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "get:finance_transactions__id__get",
+    "name": "mod-finance",
+    "path": "/finance/transactions/{id}"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "methods": "post:finance_transfers_post",
+    "name": "mod-finance",
+    "path": "/finance/transfers"
+  },
+  {
     "apiDescription": "ramls/gobi.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:gobi_orders_post",
     "name": "mod-gobi",
     "path": "/gobi/orders"
   },
   {
     "apiDescription": "ramls/gobi-custom-mappings.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:gobi_orders_custom_mappings_get post:gobi_orders_custom_mappings_post",
     "name": "mod-gobi",
     "path": "/gobi/orders/custom-mappings"
   },
   {
     "apiDescription": "ramls/gobi-custom-mappings.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:gobi_orders_custom_mappings__ordertype__delete get:gobi_orders_custom_mappings__ordertype__get put:gobi_orders_custom_mappings__ordertype__put",
     "name": "mod-gobi",
     "path": "/gobi/orders/custom-mappings/{orderType}"
   },
   {
     "apiDescription": "ramls/gobi-mappings.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:gobi_orders_mappings_fields_get",
     "name": "mod-gobi",
     "path": "/gobi/orders/mappings/fields"
   },
   {
     "apiDescription": "ramls/gobi-mappings.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:gobi_orders_mappings_translators_get",
     "name": "mod-gobi",
     "path": "/gobi/orders/mappings/translators"
   },
   {
     "apiDescription": "ramls/gobi-mappings.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:gobi_orders_mappings_types_get",
     "name": "mod-gobi",
     "path": "/gobi/orders/mappings/types"
   },
   {
     "apiDescription": "ramls/gobi.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:gobi_validate_get post:gobi_validate_post",
     "name": "mod-gobi",
     "path": "/gobi/validate"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "get:null",
-    "name": "mod-search",
-    "path": "/holdings/ids"
+    "apiDescription": "ramls/holdings-note-type.raml",
+    "apiType": "raml",
+    "methods": "get:holdings_note_types_get post:holdings_note_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-note-types"
+  },
+  {
+    "apiDescription": "ramls/holdings-note-type.raml",
+    "apiType": "raml",
+    "methods": "delete:holdings_note_types__id__delete get:holdings_note_types__id__get put:holdings_note_types__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-note-types/{id}"
+  },
+  {
+    "apiDescription": "ramls/holdings-sources.raml",
+    "apiType": "raml",
+    "methods": "get:holdings_sources_get post:holdings_sources_post",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-sources"
+  },
+  {
+    "apiDescription": "ramls/holdings-sources.raml",
+    "apiType": "raml",
+    "methods": "delete:holdings_sources__id__delete get:holdings_sources__id__get put:holdings_sources__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-sources/{id}"
+  },
+  {
+    "apiDescription": "ramls/holdings-sync.raml",
+    "apiType": "raml",
+    "methods": "post:holdings_storage_batch_synchronous_post",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-storage/batch/synchronous"
+  },
+  {
+    "apiDescription": "ramls/holdings-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:holdings_storage_holdings_delete get:holdings_storage_holdings_get post:holdings_storage_holdings_post",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-storage/holdings"
+  },
+  {
+    "apiDescription": "ramls/holdings-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:holdings_storage_holdings__holdingsrecordid__delete get:holdings_storage_holdings__holdingsrecordid__get put:holdings_storage_holdings__holdingsrecordid__put",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-storage/holdings/{holdingsRecordId}"
+  },
+  {
+    "apiDescription": "ramls/holdings-type.raml",
+    "apiType": "raml",
+    "methods": "get:holdings_types_get post:holdings_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-types"
+  },
+  {
+    "apiDescription": "ramls/holdings-type.raml",
+    "apiType": "raml",
+    "methods": "delete:holdings_types__id__delete get:holdings_types__id__get put:holdings_types__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-types/{id}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "get:operation/getHoldingIds",
+    "name": "mod-search",
+    "path": "/holdings/ids"
+  },
+  {
+    "apiDescription": "ramls/hrid-settings-storage.raml",
+    "apiType": "raml",
+    "methods": "get:hrid_settings_storage_hrid_settings_get put:hrid_settings_storage_hrid_settings_put",
+    "name": "mod-inventory-storage",
+    "path": "/hrid-settings-storage/hrid-settings"
+  },
+  {
+    "apiDescription": "ramls/identifier-type.raml",
+    "apiType": "raml",
+    "methods": "get:identifier_types_get post:identifier_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/identifier-types"
+  },
+  {
+    "apiDescription": "ramls/identifier-type.raml",
+    "apiType": "raml",
+    "methods": "delete:identifier_types__identifiertypeid__delete get:identifier_types__identifiertypeid__get put:identifier_types__identifiertypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/identifier-types/{identifierTypeId}"
+  },
+  {
+    "apiDescription": "ramls/ill-policy.raml",
+    "apiType": "raml",
+    "methods": "get:ill_policies_get post:ill_policies_post",
+    "name": "mod-inventory-storage",
+    "path": "/ill-policies"
+  },
+  {
+    "apiDescription": "ramls/ill-policy.raml",
+    "apiType": "raml",
+    "methods": "delete:ill_policies__id__delete get:ill_policies__id__get put:ill_policies__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/ill-policies/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/createIndices",
     "name": "mod-search",
     "path": "/index/indices"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/reindexInventoryRecords",
     "name": "mod-search",
     "path": "/index/inventory/reindex"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/updateMappings",
     "name": "mod-search",
     "path": "/index/mappings"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/indexRecords",
     "name": "mod-search",
     "path": "/index/records"
   },
   {
+    "apiDescription": "ramls/instance-format.raml",
+    "apiType": "raml",
+    "methods": "get:instance_formats_get post:instance_formats_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-formats"
+  },
+  {
+    "apiDescription": "ramls/instance-format.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_formats__instanceformatid__delete get:instance_formats__instanceformatid__get put:instance_formats__instanceformatid__put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-formats/{instanceFormatId}"
+  },
+  {
+    "apiDescription": "ramls/instance-note-type.raml",
+    "apiType": "raml",
+    "methods": "get:instance_note_types_get post:instance_note_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-note-types"
+  },
+  {
+    "apiDescription": "ramls/instance-note-type.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_note_types__id__delete get:instance_note_types__id__get put:instance_note_types__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-note-types/{id}"
+  },
+  {
+    "apiDescription": "ramls/instance-relationship-type.raml",
+    "apiType": "raml",
+    "methods": "get:instance_relationship_types_get post:instance_relationship_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-relationship-types"
+  },
+  {
+    "apiDescription": "ramls/instance-relationship-type.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_relationship_types__relationshiptypeid__delete get:instance_relationship_types__relationshiptypeid__get put:instance_relationship_types__relationshiptypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-relationship-types/{relationshipTypeId}"
+  },
+  {
+    "apiDescription": "ramls/instance-status.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_statuses_delete get:instance_statuses_get post:instance_statuses_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-statuses"
+  },
+  {
+    "apiDescription": "ramls/instance-status.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_statuses__instancestatusid__delete get:instance_statuses__instancestatusid__get put:instance_statuses__instancestatusid__put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-statuses/{instanceStatusId}"
+  },
+  {
+    "apiDescription": "ramls/instance-storage-batch.raml",
+    "apiType": "raml",
+    "methods": "post:instance_storage_batch_instances_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/batch/instances"
+  },
+  {
+    "apiDescription": "ramls/instance-sync.raml",
+    "apiType": "raml",
+    "methods": "post:instance_storage_batch_synchronous_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/batch/synchronous"
+  },
+  {
+    "apiDescription": "ramls/instance-storage.raml",
+    "apiType": "raml",
+    "methods": "get:instance_storage_instance_relationships_get post:instance_storage_instance_relationships_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instance-relationships"
+  },
+  {
+    "apiDescription": "ramls/instance-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_storage_instance_relationships__relationshipid__delete get:instance_storage_instance_relationships__relationshipid__get put:instance_storage_instance_relationships__relationshipid__put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instance-relationships/{relationshipId}"
+  },
+  {
+    "apiDescription": "ramls/instance-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_storage_instances_delete get:instance_storage_instances_get post:instance_storage_instances_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instances"
+  },
+  {
+    "apiDescription": "ramls/instance-iteration.raml",
+    "apiType": "raml",
+    "methods": "post:instance_storage_instances_iteration_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instances/iteration"
+  },
+  {
+    "apiDescription": "ramls/instance-iteration.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_storage_instances_iteration__id__delete get:instance_storage_instances_iteration__id__get",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instances/iteration/{id}"
+  },
+  {
+    "apiDescription": "ramls/instance-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_storage_instances__instanceid__delete get:instance_storage_instances__instanceid__get put:instance_storage_instances__instanceid__put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instances/{instanceId}"
+  },
+  {
+    "apiDescription": "ramls/instance-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_storage_instances__instanceid__source_record_delete",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instances/{instanceId}/source-record"
+  },
+  {
+    "apiDescription": "ramls/instance-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_storage_instances__instanceid__source_record_marc_json_delete get:instance_storage_instances__instanceid__source_record_marc_json_get put:instance_storage_instances__instanceid__source_record_marc_json_put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instances/{instanceId}/source-record/marc-json"
+  },
+  {
+    "apiDescription": "ramls/instance-storage.raml",
+    "apiType": "raml",
+    "methods": "get:instance_storage_instances__instanceid__source_record_mods_get put:instance_storage_instances__instanceid__source_record_mods_put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instances/{instanceId}/source-record/mods"
+  },
+  {
+    "apiDescription": "ramls/instance-reindex.raml",
+    "apiType": "raml",
+    "methods": "post:instance_storage_reindex_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/reindex"
+  },
+  {
+    "apiDescription": "ramls/instance-reindex.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_storage_reindex__id__delete get:instance_storage_reindex__id__get",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/reindex/{id}"
+  },
+  {
+    "apiDescription": "ramls/instance-type.raml",
+    "apiType": "raml",
+    "methods": "get:instance_types_get post:instance_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-types"
+  },
+  {
+    "apiDescription": "ramls/instance-type.raml",
+    "apiType": "raml",
+    "methods": "delete:instance_types__instancetypeid__delete get:instance_types__instancetypeid__get put:instance_types__instancetypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-types/{instanceTypeId}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/searchInstances",
     "name": "mod-search",
     "path": "/instances"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/getInstanceIds",
     "name": "mod-search",
     "path": "/instances/ids"
+  },
+  {
+    "apiDescription": "ramls/inventory-hierarchy.raml",
+    "apiType": "raml",
+    "methods": "post:inventory_hierarchy_items_and_holdings_post",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-hierarchy/items-and-holdings"
+  },
+  {
+    "apiDescription": "ramls/inventory-hierarchy.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_hierarchy_updated_instance_ids_get",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-hierarchy/updated-instance-ids"
   },
   {
     "apiDescription": "ramls/inventory-reports.raml",
@@ -1447,6 +2546,118 @@
     "methods": "get:inventory_reports_items_in_transit_get",
     "name": "mod-circulation",
     "path": "/inventory-reports/items-in-transit"
+  },
+  {
+    "apiDescription": "ramls/bound-with-part.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_storage_bound_with_parts_get post:inventory_storage_bound_with_parts_post",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-storage/bound-with-parts"
+  },
+  {
+    "apiDescription": "ramls/bound-with-part.raml",
+    "apiType": "raml",
+    "methods": "delete:inventory_storage_bound_with_parts__id__delete get:inventory_storage_bound_with_parts__id__get put:inventory_storage_bound_with_parts__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-storage/bound-with-parts/{id}"
+  },
+  {
+    "apiDescription": "ramls/async-migration.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_storage_migrations_get",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-storage/migrations"
+  },
+  {
+    "apiDescription": "ramls/async-migration.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_storage_migrations_jobs_get post:inventory_storage_migrations_jobs_post",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-storage/migrations/jobs"
+  },
+  {
+    "apiDescription": "ramls/async-migration.raml",
+    "apiType": "raml",
+    "methods": "delete:inventory_storage_migrations_jobs__id__delete get:inventory_storage_migrations_jobs__id__get",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-storage/migrations/jobs/{id}"
+  },
+  {
+    "apiDescription": "ramls/instance-set.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_view_instance_set_get",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-view/instance-set"
+  },
+  {
+    "apiDescription": "ramls/inventory-view.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_view_instances_get",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-view/instances"
+  },
+  {
+    "apiDescription": "ramls/item-damaged-statuses.raml",
+    "apiType": "raml",
+    "methods": "get:item_damaged_statuses_get post:item_damaged_statuses_post",
+    "name": "mod-inventory-storage",
+    "path": "/item-damaged-statuses"
+  },
+  {
+    "apiDescription": "ramls/item-damaged-statuses.raml",
+    "apiType": "raml",
+    "methods": "delete:item_damaged_statuses__id__delete get:item_damaged_statuses__id__get put:item_damaged_statuses__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/item-damaged-statuses/{id}"
+  },
+  {
+    "apiDescription": "ramls/item-note-type.raml",
+    "apiType": "raml",
+    "methods": "get:item_note_types_get post:item_note_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/item-note-types"
+  },
+  {
+    "apiDescription": "ramls/item-note-type.raml",
+    "apiType": "raml",
+    "methods": "delete:item_note_types__id__delete get:item_note_types__id__get put:item_note_types__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/item-note-types/{id}"
+  },
+  {
+    "apiDescription": "ramls/item-storage-dereferenced.raml",
+    "apiType": "raml",
+    "methods": "get:item_storage_dereferenced_items_get",
+    "name": "mod-inventory-storage",
+    "path": "/item-storage-dereferenced/items"
+  },
+  {
+    "apiDescription": "ramls/item-storage-dereferenced.raml",
+    "apiType": "raml",
+    "methods": "get:item_storage_dereferenced_items__itemid__get",
+    "name": "mod-inventory-storage",
+    "path": "/item-storage-dereferenced/items/{itemId}"
+  },
+  {
+    "apiDescription": "ramls/item-sync.raml",
+    "apiType": "raml",
+    "methods": "post:item_storage_batch_synchronous_post",
+    "name": "mod-inventory-storage",
+    "path": "/item-storage/batch/synchronous"
+  },
+  {
+    "apiDescription": "ramls/item-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:item_storage_items_delete get:item_storage_items_get post:item_storage_items_post",
+    "name": "mod-inventory-storage",
+    "path": "/item-storage/items"
+  },
+  {
+    "apiDescription": "ramls/item-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:item_storage_items__itemid__delete get:item_storage_items__itemid__get put:item_storage_items__itemid__put",
+    "name": "mod-inventory-storage",
+    "path": "/item-storage/items/{itemId}"
   },
   {
     "apiDescription": "ramls/ldp.raml",
@@ -1486,7 +2697,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
-    "methods": "put:null",
+    "methods": "get:operation/getInstanceLinks put:operation/updateInstanceLinks",
     "name": "mod-entities-links",
     "path": "/links/instances/{instanceId}"
   },
@@ -1498,16 +2709,86 @@
     "path": "/loan-anonymization/by-user/{userId}"
   },
   {
+    "apiDescription": "ramls/loan-type.raml",
+    "apiType": "raml",
+    "methods": "delete:loan_types_delete get:loan_types_get post:loan_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/loan-types"
+  },
+  {
+    "apiDescription": "ramls/loan-type.raml",
+    "apiType": "raml",
+    "methods": "delete:loan_types__loantypeid__delete get:loan_types__loantypeid__get put:loan_types__loantypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/loan-types/{loantypeId}"
+  },
+  {
+    "apiDescription": "ramls/locationunit.raml",
+    "apiType": "raml",
+    "methods": "delete:location_units_campuses_delete get:location_units_campuses_get post:location_units_campuses_post",
+    "name": "mod-inventory-storage",
+    "path": "/location-units/campuses"
+  },
+  {
+    "apiDescription": "ramls/locationunit.raml",
+    "apiType": "raml",
+    "methods": "delete:location_units_campuses__id__delete get:location_units_campuses__id__get put:location_units_campuses__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/location-units/campuses/{id}"
+  },
+  {
+    "apiDescription": "ramls/locationunit.raml",
+    "apiType": "raml",
+    "methods": "delete:location_units_institutions_delete get:location_units_institutions_get post:location_units_institutions_post",
+    "name": "mod-inventory-storage",
+    "path": "/location-units/institutions"
+  },
+  {
+    "apiDescription": "ramls/locationunit.raml",
+    "apiType": "raml",
+    "methods": "delete:location_units_institutions__id__delete get:location_units_institutions__id__get put:location_units_institutions__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/location-units/institutions/{id}"
+  },
+  {
+    "apiDescription": "ramls/locationunit.raml",
+    "apiType": "raml",
+    "methods": "delete:location_units_libraries_delete get:location_units_libraries_get post:location_units_libraries_post",
+    "name": "mod-inventory-storage",
+    "path": "/location-units/libraries"
+  },
+  {
+    "apiDescription": "ramls/locationunit.raml",
+    "apiType": "raml",
+    "methods": "delete:location_units_libraries__id__delete get:location_units_libraries__id__get put:location_units_libraries__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/location-units/libraries/{id}"
+  },
+  {
+    "apiDescription": "ramls/location.raml",
+    "apiType": "raml",
+    "methods": "delete:locations_delete get:locations_get post:locations_post",
+    "name": "mod-inventory-storage",
+    "path": "/locations"
+  },
+  {
+    "apiDescription": "ramls/location.raml",
+    "apiType": "raml",
+    "methods": "delete:locations__id__delete get:locations__id__get put:locations__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/locations/{id}"
+  },
+  {
     "apiDescription": "ramls/lost-item-fee-policy.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:lost_item_fees_policies_get post:lost_item_fees_policies_post",
     "name": "mod-feesfines",
     "path": "/lost-item-fees-policies"
   },
   {
     "apiDescription": "ramls/lost-item-fee-policy.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:lost_item_fees_policies__lostitemfeepolicyid__delete get:lost_item_fees_policies__lostitemfeepolicyid__get put:lost_item_fees_policies__lostitemfeepolicyid__put",
     "name": "mod-feesfines",
     "path": "/lost-item-fees-policies/{lostItemFeePolicyId}"
   },
@@ -1549,100 +2830,163 @@
   {
     "apiDescription": "ramls/manual-block-templates.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:manual_block_templates_get post:manual_block_templates_post",
     "name": "mod-feesfines",
     "path": "/manual-block-templates"
   },
   {
     "apiDescription": "ramls/manual-block-templates.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:manual_block_templates__id__delete get:manual_block_templates__id__get put:manual_block_templates__id__put",
     "name": "mod-feesfines",
     "path": "/manual-block-templates/{id}"
   },
   {
     "apiDescription": "ramls/manualblocks.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:manualblocks_get post:manualblocks_post",
     "name": "mod-feesfines",
     "path": "/manualblocks"
   },
   {
     "apiDescription": "ramls/manualblocks.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:manualblocks__manualblockid__delete get:manualblocks__manualblockid__get put:manualblocks__manualblockid__put",
     "name": "mod-feesfines",
     "path": "/manualblocks/{manualblockId}"
   },
   {
     "apiDescription": "ramls/mapping-metadata-provider.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:mapping_metadata__jobexecutionid__get",
     "name": "mod-source-record-manager",
     "path": "/mapping-metadata/{jobExecutionId}"
   },
   {
     "apiDescription": "ramls/mapping-rules-provider.raml",
     "apiType": "raml",
-    "methods": "get:null put:null",
+    "methods": "get:mapping_rules__recordtype__get put:mapping_rules__recordtype__put",
     "name": "mod-source-record-manager",
     "path": "/mapping-rules/{recordType}"
   },
   {
     "apiDescription": "ramls/mapping-rules-provider.raml",
     "apiType": "raml",
-    "methods": "put:null",
+    "methods": "put:mapping_rules__recordtype__restore_put",
     "name": "mod-source-record-manager",
     "path": "/mapping-rules/{recordType}/restore"
   },
   {
+    "apiDescription": "ramls/material-type.raml",
+    "apiType": "raml",
+    "methods": "delete:material_types_delete get:material_types_get post:material_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/material-types"
+  },
+  {
+    "apiDescription": "ramls/material-type.raml",
+    "apiType": "raml",
+    "methods": "delete:material_types__materialtypeid__delete get:material_types__materialtypeid__get put:material_types__materialtypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/material-types/{materialtypeId}"
+  },
+  {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:metadata_provider_jobexecutions_get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobExecutions"
   },
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:metadata_provider_jobexecutions_jobprofiles_get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobExecutions/jobProfiles"
   },
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:metadata_provider_jobexecutions_users_get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobExecutions/users"
   },
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:metadata_provider_joblogentries__jobexecutionid__get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobLogEntries/{jobExecutionId}"
   },
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:metadata_provider_joblogentries__jobexecutionid__records__recordid__get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobLogEntries/{jobExecutionId}/records/{recordId}"
   },
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:metadata_provider_jobsummary__jobexecutionid__get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobSummary/{jobExecutionId}"
   },
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:metadata_provider_journalrecords__jobexecutionid__get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/journalRecords/{jobExecutionId}"
+  },
+  {
+    "apiDescription": "ramls/mode-of-issuance.raml",
+    "apiType": "raml",
+    "methods": "delete:modes_of_issuance_delete get:modes_of_issuance_get post:modes_of_issuance_post",
+    "name": "mod-inventory-storage",
+    "path": "/modes-of-issuance"
+  },
+  {
+    "apiDescription": "ramls/mode-of-issuance.raml",
+    "apiType": "raml",
+    "methods": "delete:modes_of_issuance__modeofissuanceid__delete get:modes_of_issuance__modeofissuanceid__get put:modes_of_issuance__modeofissuanceid__put",
+    "name": "mod-inventory-storage",
+    "path": "/modes-of-issuance/{modeOfIssuanceId}"
+  },
+  {
+    "apiDescription": "ramls/nature-of-content-term.raml",
+    "apiType": "raml",
+    "methods": "get:nature_of_content_terms_get post:nature_of_content_terms_post",
+    "name": "mod-inventory-storage",
+    "path": "/nature-of-content-terms"
+  },
+  {
+    "apiDescription": "ramls/nature-of-content-term.raml",
+    "apiType": "raml",
+    "methods": "delete:nature_of_content_terms__id__delete get:nature_of_content_terms__id__get put:nature_of_content_terms__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/nature-of-content-terms/{id}"
+  },
+  {
+    "apiDescription": "ramls/oai-pmh-view.raml",
+    "apiType": "raml",
+    "methods": "post:oai_pmh_view_enrichedinstances_post",
+    "name": "mod-inventory-storage",
+    "path": "/oai-pmh-view/enrichedInstances"
+  },
+  {
+    "apiDescription": "ramls/oai-pmh-view.raml",
+    "apiType": "raml",
+    "methods": "get:oai_pmh_view_instances_get",
+    "name": "mod-inventory-storage",
+    "path": "/oai-pmh-view/instances"
+  },
+  {
+    "apiDescription": "ramls/oai-pmh-view.raml",
+    "apiType": "raml",
+    "methods": "get:oai_pmh_view_updatedinstanceids_get",
+    "name": "mod-inventory-storage",
+    "path": "/oai-pmh-view/updatedInstanceIds"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/order-export.yaml",
@@ -1654,63 +2998,63 @@
   {
     "apiDescription": "ramls/edge-orders.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:orders_post",
     "name": "edge-orders",
     "path": "/orders"
   },
   {
     "apiDescription": "ramls/edge-orders.raml",
     "apiType": "raml",
-    "methods": "get:null put:null",
+    "methods": "get:orders_order_lines__id__get put:orders_order_lines__id__put",
     "name": "edge-orders",
     "path": "/orders/order-lines/{id}"
   },
   {
     "apiDescription": "ramls/edge-orders.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:orders_validate_get post:orders_validate_post",
     "name": "edge-orders",
     "path": "/orders/validate"
   },
   {
     "apiDescription": "ramls/overdue-fine-policy.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:overdue_fines_policies_get post:overdue_fines_policies_post",
     "name": "mod-feesfines",
     "path": "/overdue-fines-policies"
   },
   {
     "apiDescription": "ramls/overdue-fine-policy.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:overdue_fines_policies__overduefinepolicyid__delete get:overdue_fines_policies__overduefinepolicyid__get put:overdue_fines_policies__overduefinepolicyid__put",
     "name": "mod-feesfines",
     "path": "/overdue-fines-policies/{overdueFinePolicyId}"
   },
   {
     "apiDescription": "ramls/owners.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:owners_get post:owners_post",
     "name": "mod-feesfines",
     "path": "/owners"
   },
   {
     "apiDescription": "ramls/owners.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:owners__ownerid__delete get:owners__ownerid__get put:owners__ownerid__put",
     "name": "mod-feesfines",
     "path": "/owners/{ownerId}"
   },
   {
     "apiDescription": "ramls/payments.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:payments_get post:payments_post",
     "name": "mod-feesfines",
     "path": "/payments"
   },
   {
     "apiDescription": "ramls/payments.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:payments__paymentid__delete get:payments__paymentid__get put:payments__paymentid__put",
     "name": "mod-feesfines",
     "path": "/payments/{paymentId}"
   },
@@ -1764,16 +3108,44 @@
     "path": "/perms/users/{id}/permissions/{permissionname}"
   },
   {
+    "apiDescription": "ramls/instance-preceding-succeeding-titles.raml",
+    "apiType": "raml",
+    "methods": "get:preceding_succeeding_titles_get post:preceding_succeeding_titles_post",
+    "name": "mod-inventory-storage",
+    "path": "/preceding-succeeding-titles"
+  },
+  {
+    "apiDescription": "ramls/instance-preceding-succeeding-titles.raml",
+    "apiType": "raml",
+    "methods": "put:preceding_succeeding_titles_instances__instanceid__put",
+    "name": "mod-inventory-storage",
+    "path": "/preceding-succeeding-titles/instances/{instanceId}"
+  },
+  {
+    "apiDescription": "ramls/instance-preceding-succeeding-titles.raml",
+    "apiType": "raml",
+    "methods": "delete:preceding_succeeding_titles__precedingsucceedingtitleid__delete get:preceding_succeeding_titles__precedingsucceedingtitleid__get put:preceding_succeeding_titles__precedingsucceedingtitleid__put",
+    "name": "mod-inventory-storage",
+    "path": "/preceding-succeeding-titles/{precedingSucceedingTitleId}"
+  },
+  {
+    "apiDescription": "ramls/record-bulk.raml",
+    "apiType": "raml",
+    "methods": "get:record_bulk_ids_get",
+    "name": "mod-inventory-storage",
+    "path": "/record-bulk/ids"
+  },
+  {
     "apiDescription": "ramls/refunds.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:refunds_get post:refunds_post",
     "name": "mod-feesfines",
     "path": "/refunds"
   },
   {
     "apiDescription": "ramls/refunds.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:refunds__refundid__delete get:refunds__refundid__get put:refunds__refundid__put",
     "name": "mod-feesfines",
     "path": "/refunds/{refundId}"
   },
@@ -1934,100 +3306,170 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/submitIdsJob",
     "name": "mod-search",
     "path": "/resources/jobs"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/getIdsJob",
     "name": "mod-search",
     "path": "/resources/jobs/{jobId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/getResourceIds",
     "name": "mod-search",
     "path": "/resources/jobs/{jobId}/ids"
   },
   {
+    "apiDescription": "ramls/service-point.raml",
+    "apiType": "raml",
+    "methods": "delete:service_points_delete get:service_points_get post:service_points_post",
+    "name": "mod-inventory-storage",
+    "path": "/service-points"
+  },
+  {
+    "apiDescription": "ramls/service-points-user.raml",
+    "apiType": "raml",
+    "methods": "delete:service_points_users_delete get:service_points_users_get post:service_points_users_post",
+    "name": "mod-inventory-storage",
+    "path": "/service-points-users"
+  },
+  {
+    "apiDescription": "ramls/service-points-user.raml",
+    "apiType": "raml",
+    "methods": "delete:service_points_users__servicepointsuserid__delete get:service_points_users__servicepointsuserid__get put:service_points_users__servicepointsuserid__put",
+    "name": "mod-inventory-storage",
+    "path": "/service-points-users/{servicePointsUserId}"
+  },
+  {
+    "apiDescription": "ramls/service-point.raml",
+    "apiType": "raml",
+    "methods": "delete:service_points__servicepointid__delete get:service_points__servicepointid__get put:service_points__servicepointid__put",
+    "name": "mod-inventory-storage",
+    "path": "/service-points/{servicepointId}"
+  },
+  {
+    "apiDescription": "ramls/shelf-location.raml",
+    "apiType": "raml",
+    "methods": "delete:shelf_locations_delete get:shelf_locations_get post:shelf_locations_post",
+    "name": "mod-inventory-storage",
+    "path": "/shelf-locations"
+  },
+  {
+    "apiDescription": "ramls/shelf-location.raml",
+    "apiType": "raml",
+    "methods": "delete:shelf_locations__id__delete get:shelf_locations__id__get put:shelf_locations__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/shelf-locations/{id}"
+  },
+  {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "methods": "put:null",
+    "methods": "put:source_storage_batch_parsed_records_put",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/parsed-records"
   },
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:source_storage_batch_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/records"
   },
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:source_storage_batch_verified_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/verified-records"
   },
   {
     "apiDescription": "ramls/source-record-storage-test-records.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:source_storage_populate_test_marc_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/populate-test-marc-records"
   },
   {
     "apiDescription": "ramls/source-record-storage-snapshots.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:source_storage_snapshots_get post:source_storage_snapshots_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/snapshots"
   },
   {
     "apiDescription": "ramls/source-record-storage-snapshots.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:source_storage_snapshots__jobexecutionid__delete get:source_storage_snapshots__jobexecutionid__get put:source_storage_snapshots__jobexecutionid__put",
     "name": "mod-source-record-storage",
     "path": "/source-storage/snapshots/{jobExecutionId}"
   },
   {
     "apiDescription": "ramls/source-record-storage-source-records.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:source_storage_source_records_get post:source_storage_source_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/source-records"
   },
   {
     "apiDescription": "ramls/source-record-storage-source-records.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:source_storage_source_records__id__get",
     "name": "mod-source-record-storage",
     "path": "/source-storage/source-records/{id}"
   },
   {
     "apiDescription": "ramls/source-record-storage-stream.raml",
     "apiType": "raml",
-    "methods": "post:null",
+    "methods": "post:source_storage_stream_marc_record_identifiers_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/stream/marc-record-identifiers"
   },
   {
     "apiDescription": "ramls/source-record-storage-stream.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:source_storage_stream_records_get",
     "name": "mod-source-record-storage",
     "path": "/source-storage/stream/records"
   },
   {
     "apiDescription": "ramls/source-record-storage-stream.raml",
     "apiType": "raml",
-    "methods": "get:null",
+    "methods": "get:source_storage_stream_source_records_get",
     "name": "mod-source-record-storage",
     "path": "/source-storage/stream/source-records"
+  },
+  {
+    "apiDescription": "ramls/statistical-code-type.raml",
+    "apiType": "raml",
+    "methods": "delete:statistical_code_types_delete get:statistical_code_types_get post:statistical_code_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/statistical-code-types"
+  },
+  {
+    "apiDescription": "ramls/statistical-code-type.raml",
+    "apiType": "raml",
+    "methods": "delete:statistical_code_types__statisticalcodetypeid__delete get:statistical_code_types__statisticalcodetypeid__get put:statistical_code_types__statisticalcodetypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/statistical-code-types/{statisticalCodeTypeId}"
+  },
+  {
+    "apiDescription": "ramls/statistical-code.raml",
+    "apiType": "raml",
+    "methods": "get:statistical_codes_get post:statistical_codes_post",
+    "name": "mod-inventory-storage",
+    "path": "/statistical-codes"
+  },
+  {
+    "apiDescription": "ramls/statistical-code.raml",
+    "apiType": "raml",
+    "methods": "delete:statistical_codes__statisticalcodeid__delete get:statistical_codes__statisticalcodeid__get put:statistical_codes__statisticalcodeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/statistical-codes/{statisticalCodeId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bursar-export.yaml",
@@ -2053,42 +3495,42 @@
   {
     "apiDescription": "ramls/transfer-criteria.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:transfer_criterias_get post:transfer_criterias_post",
     "name": "mod-feesfines",
     "path": "/transfer-criterias"
   },
   {
     "apiDescription": "ramls/transfer-criteria.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:transfer_criterias__transfercriteriaid__delete get:transfer_criterias__transfercriteriaid__get put:transfer_criterias__transfercriteriaid__put",
     "name": "mod-feesfines",
     "path": "/transfer-criterias/{transferCriteriaId}"
   },
   {
     "apiDescription": "ramls/transfers.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:transfers_get post:transfers_post",
     "name": "mod-feesfines",
     "path": "/transfers"
   },
   {
     "apiDescription": "ramls/transfers.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:transfers__transferid__delete get:transfers__transferid__get put:transfers__transferid__put",
     "name": "mod-feesfines",
     "path": "/transfers/{transferId}"
   },
   {
     "apiDescription": "ramls/waiver.raml",
     "apiType": "raml",
-    "methods": "get:null post:null",
+    "methods": "get:waives_get post:waives_post",
     "name": "mod-feesfines",
     "path": "/waives"
   },
   {
     "apiDescription": "ramls/waiver.raml",
     "apiType": "raml",
-    "methods": "delete:null get:null put:null",
+    "methods": "delete:waives__waiveid__delete get:waives__waiveid__get put:waives__waiveid__put",
     "name": "mod-feesfines",
     "path": "/waives/{waiveId}"
   },
@@ -2186,7 +3628,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "get:null",
+    "methods": "get:operation/getFacets",
     "name": "mod-search",
     "path": "/{recordType}/facets"
   }
