@@ -570,7 +570,7 @@ orchestrate the whole operation.
 Ignoring all the messy details, this how it works: The client (often
 on a web browser, but can really be anything) calls the `/authn/login`
 service to identify itself. Depending on the tenant, we may have
-different authorization modules serving the `/authn/login` request,
+different authentication modules serving the `/authn/login` request,
 and they may take different parameters (username and password are the
 most likely, but we can have anything from simple IP authentication to
 complex interactions with LDAP, OAuth, or other systems).
@@ -2550,7 +2550,7 @@ than the pull, because all/most modules have already been fetched.
 
 ```
 cat > /tmp/pull.json <<END
-{"urls" : [ "http://folio-registry.aws.indexdata.com:80" ]}
+{"urls" : [ "https://folio-registry.dev.folio.org" ]}
 END
 
 curl -w '\n' -X POST -d@/tmp/pull.json http://localhost:9130/_/proxy/pull/modules
@@ -2910,7 +2910,7 @@ For example, to enable the JSON based logging, one could use:
 
 Okapi uses [AsyncLoggerContextSelector](https://logging.apache.org/log4j/2.x/manual/async.html)
 by default. Use
-`-Dlog4j2.contextSelector=org.apache.logging.log4j.core.osgi.BundleContextSelector`
+`-DLog4jContextSelector=org.apache.logging.log4j.core.selector.BasicContextSelector`
 to switch back to log4j2's default synchronous logger.
 
 ### Environment Variables

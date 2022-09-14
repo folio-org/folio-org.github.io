@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-09-08T00:42:51.913732+00:00"
+    "generatedDateTime": "2022-09-14T00:18:08.555616+00:00"
   },
   "repos": [
     {
@@ -737,7 +737,7 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Backend CRUD storage module to support the Course Reserves functionality</p>"
+      "snippetIntro": "<p>Backend CRUD storage module to support the Course Reserves functionality.</p>"
     },
     {
       "defaultBranch": "master",
@@ -1215,14 +1215,7 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Notes on all types of objects</p>",
-      "workflows": [
-        "api-lint.yml",
-        "test-depend.yml"
-      ],
-      "workflowsFolio": [
-        "api-lint.yml"
-      ]
+      "snippetIntro": "<p>Notes on all types of objects</p>"
     },
     {
       "defaultBranch": "master",

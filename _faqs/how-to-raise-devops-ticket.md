@@ -26,7 +26,7 @@ Set the "Development Team" field to be [FOLIO DevOps](https://wiki.folio.org/dis
 
 Set the "Sprint" field to be "DevOps Requests".
 
-Do not set "Priority" or "Assignee" or "Labels" or a specific "Sprint". Those will be handled and scheduled by the team.
+Do not set "Priority" or "Assignee" or "Labels" or a specific numbered "Sprint". Those will be handled and scheduled by the team.
 
 For tickets related to the [FOLIO Developers](/) website, do follow the above-mentioned instructions and the additional specific [notes](/faqs/how-to-contribute-devdoc/#raising-jira-tickets).
 
@@ -49,7 +49,7 @@ Set the "Issue type" to be "Task".
 
 Set the "Development Team" field to be [Kitfox](https://wiki.folio.org/display/FOLIJET/Kitfox+Team+DevOps+-+Dev+Support).
 
-Do not set "Priority" or "Assignee" or "Labels" or a specific "Sprint". Those will be handled and scheduled by the team.
+Do not set "Priority" or "Assignee" or "Labels" or a specific numbered "Sprint". Those will be handled and scheduled by the team.
 
 <div class="folio-spacer-content"></div>
 

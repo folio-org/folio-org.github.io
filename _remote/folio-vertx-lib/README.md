@@ -31,11 +31,13 @@ such as `resources/openapi`.
 
 In the following example, we will
 use OpenAPI spec
-[myapi-1.0.yaml](example/src/main/resources/openapi/myapi-1.0.yaml).
+[books-1.0.yaml](mod-example/src/main/resources/openapi/books-1.0.yaml).
 The code snippets shown are from:
-[MainVerticle](example/src/main/java/org/folio/tlib/example/MainVerticle.java)
+[MainVerticle](mod-example/src/main/java/org/folio/tlib/example/MainVerticle.java)
+,
+[BookService](mod-example/src/main/java/org/folio/tlib/example/service/BookService.java)
 and
-[MyApi](example/src/main/java/org/folio/tlib/example/MyApi.java).
+[BookStorage](mod-example/src/main/java/org/folio/tlib/example/storage/BookStorage.java).
 
 Unlike
 [RMB](https://github.com/folio-org/raml-module-builder), you define
@@ -165,11 +167,12 @@ tenant init.
 
 ## CQL
 
-For CQL support *all* fields recognized must be explicitly defined. Undefined CQL
-fields are rejected. Example to get titles:
+For CQL support *all* fields recognized must be explicitly defined.
+Undefined CQL fields are rejected.
+Example to get books:
 
 ```
- private Future<Void> getTitles(Vertx vertx, RoutingContext ctx) {
+ private Future<Void> getBooks(Vertx vertx, RoutingContext ctx) {
     RequestParameters params = ctx.get(ValidationHandler.REQUEST_CONTEXT_KEY);
     String tenant = params.headerParameter(XOkapiHeaders.TENANT).getString();
     PgCqlQuery pgCqlQuery = PgCqlQuery.query();
@@ -190,17 +193,17 @@ fields are rejected. Example to get titles:
     }
     return pool.query(sql).execute().onSuccess(rows -> {
       RowIterator<Row> iterator = rows.iterator();
-      JsonArray titles = new JsonArray();
+      JsonArray books = new JsonArray();
       while (iterator.hasNext()) {
         Row row = iterator.next();
-        titles.add(new JsonObject()
+        books.add(new JsonObject()
             .put("id", row.getUUID("id").toString())
             .put("title", row.getString("title"))
         );
       }
       ctx.response().putHeader("Content-Type", "application/json");
       ctx.response().setStatusCode(200);
-      JsonObject result = new JsonObject().put("titles", titles);
+      JsonObject result = new JsonObject().put("books", books);
       ctx.response().end(result.encode());
     }).mapEmpty();
   }
