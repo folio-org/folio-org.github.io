@@ -212,7 +212,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/tenant.yaml",
     "apiType": "oas",
-    "methods": "post:null",
+    "methods": "post:operation/postTenant",
     "name": "folio-spring-base",
     "path": "/_/tenant"
   },
@@ -233,7 +233,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/tenant.yaml",
     "apiType": "oas",
-    "methods": "delete:null get:null",
+    "methods": "delete:operation/deleteTenant get:operation/getTenant",
     "name": "folio-spring-base",
     "path": "/_/tenant/{operationId}"
   },
@@ -2581,6 +2581,20 @@
     "methods": "delete:inventory_storage_migrations_jobs__id__delete get:inventory_storage_migrations_jobs__id__get",
     "name": "mod-inventory-storage",
     "path": "/inventory-storage/migrations/jobs/{id}"
+  },
+  {
+    "apiDescription": "ramls/instance-set.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_view_instance_set_get",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-view/instance-set"
+  },
+  {
+    "apiDescription": "ramls/inventory-view.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_view_instances_get",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-view/instances"
   },
   {
     "apiDescription": "ramls/item-damaged-statuses.raml",
