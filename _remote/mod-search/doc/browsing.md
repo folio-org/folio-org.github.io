@@ -24,13 +24,27 @@ _where the `callNumber` is the name of field for browsing, `F` is the anchor val
 
 [Call Number Browse API](https://s3.amazonaws.com/foliodocs/api/mod-search/s/mod-search.html#operation/browseInstancesByCallNumber)
 
+#### Shelving Order Browsing
+
+In some cases we need to browse items by shelving order directly.\
+If browsing by call-number will browse with little precision to find approximate records that the user wants to see.
+Shelving order browsing using for cases where we know exact record to browse.
+(For example if we have previous record and want to browse in backward direction)
+
+| Direction          | Query                            |
+|:-------------------|:---------------------------------|
+| forward            | `itemEffectiveShelvingOrder > F` |
+| backward           | `itemEffectiveShelvingOrder < F` |
+
+_where the `itemEffectiveShelvingOrder` is the name of field for browsing, `F` is the item shelving order value_
+
 #### Approach
 
-_Numeric representation of `items.effectiveShelvingOrder` is used to narrow down the number of results in response. It
+_Numeric representation of `item.effectiveShelvingOrder` is used to narrow down the number of results in response. It
 increases the response time significantly because by default there is no other way to sort instances in the index by
 effective shelving key. This can be explained by the structure of the instance record. For Elasticsearch it contains all
 fields from the instance and corresponding items\holding as inner arrays. This results in fields
-like `items.effectiveShelvingOrder` to store multiple values. For correct browsing one of the values must be chosen
+like `item.effectiveShelvingOrder` to store multiple values. For correct browsing one of the values must be chosen
 every time depending on the user input. Script-based sorting solves this problem because the right value from the array
 can be chosen by the binary search algorithm from the core `Collections` class. Sorting of items before indexing
 operation reduces the overall complexity of script sorting._
