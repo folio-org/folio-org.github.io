@@ -11,7 +11,7 @@ menuSubIndex: 3
 
 ## Introduction
 
-This API documentation is automatically [generated](#further-information) from each repository's API description files.
+This API documentation is automatically [generated](#gathered-lists) from each repository's API description files.
 
 Use the web browser "Find in page" facility.
 
@@ -33,6 +33,7 @@ See [Further information](#further-information).
 {% endfor %}
 
 Listed endpoints count: {{ site.data.config-api-endpoints.size }}
+-- about 1200 are [expected](#status-of-missing-modules) eventually.
 
 <table>
   <thead>
@@ -75,8 +76,22 @@ Listed endpoints count: {{ site.data.config-api-endpoints.size }}
 
 ## Further information
 
-The list of endpoints is gathered and published during the CI [generation](/reference/api/#generated-during-ci) of each module's API documentation.
+### Gathered lists
+
+The list of endpoints is gathered and published during the CI [generation](/reference/api/#generated-during-ci) of each module's API documentation, when there is a merge to their mainline branch.
 A daily Workflow [assembles](/reference/api/#explain-gather-config) the published lists of endpoints.
+
+### Some missing links
+
+For some OpenAPI-based modules, there might be missing links in the "Methods" column.
+That is because their API description has omitted the "`operationId`" property for that method.
+
+### Further development
+
+Intend to add a column with information about which "interface".
+Intend to enable sorting of table rows via relevant columns.
+
+### Status of missing modules
 
 This facility was first available 2022-09-06. The endpoints for some modules will be missing until they have a new merge to their mainline branch.
 
@@ -84,8 +99,5 @@ This facility was first available 2022-09-06. The endpoints for some modules wil
 {% assign missingCount = moduleCount | minus: presentCount %}
 Present modules count: {{ presentCount }} \
 Missing modules count: {{ missingCount }}
-
-Links in the "Methods" column were added on 2022-09-10. Links will appear after modules have a new merge to their mainline branch.
-For OpenAPI-based modules, if such links are still missing, then that is because the API description has omitted the "`operationId`" property for that method.
 
 <div class="folio-spacer-content"></div>
