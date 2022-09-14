@@ -217,6 +217,20 @@
     "path": "/_/tenant"
   },
   {
+    "apiDescription": "core/src/main/resources/openapi/tenant-2.0.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/postTenant",
+    "name": "folio-vertx-lib",
+    "path": "/_/tenant"
+  },
+  {
+    "apiDescription": "core/src/main/resources/openapi/tenant-2.0.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteTenantJob get:operation/getTenantJob",
+    "name": "folio-vertx-lib",
+    "path": "/_/tenant/{id}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/tenant.yaml",
     "apiType": "oas",
     "methods": "delete:null get:null",
@@ -2567,13 +2581,6 @@
     "methods": "delete:inventory_storage_migrations_jobs__id__delete get:inventory_storage_migrations_jobs__id__get",
     "name": "mod-inventory-storage",
     "path": "/inventory-storage/migrations/jobs/{id}"
-  },
-  {
-    "apiDescription": "ramls/inventory-view.raml",
-    "apiType": "raml",
-    "methods": "get:inventory_view_instances_get",
-    "name": "mod-inventory-storage",
-    "path": "/inventory-view/instances"
   },
   {
     "apiDescription": "ramls/item-damaged-statuses.raml",
