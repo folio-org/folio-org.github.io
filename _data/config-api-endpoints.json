@@ -826,6 +826,20 @@
     "path": "/config/languages/{code}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/export-configs.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getExportConfigs post:operation/postExportConfig",
+    "name": "mod-data-export-spring",
+    "path": "/configs"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/export-configs.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteExportConfigById get:operation/getConfigById put:operation/putExportConfig",
+    "name": "mod-data-export-spring",
+    "path": "/configs/{id}"
+  },
+  {
     "apiDescription": "ramls/contributor-name-type.raml",
     "apiType": "raml",
     "methods": "get:contributor_name_types_get post:contributor_name_types_post",
@@ -2660,6 +2674,20 @@
     "path": "/item-storage/items/{itemId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getJobs post:operation/upsertJob",
+    "name": "mod-data-export-spring",
+    "path": "/jobs"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getJobById",
+    "name": "mod-data-export-spring",
+    "path": "/jobs/{id}"
+  },
+  {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
     "methods": "get:ldp_config_get",
@@ -3519,6 +3547,13 @@
     "methods": "delete:transfers__transferid__delete get:transfers__transferid__get put:transfers__transferid__put",
     "name": "mod-feesfines",
     "path": "/transfers/{transferId}"
+  },
+  {
+    "apiDescription": "ramls/import.raml",
+    "apiType": "raml",
+    "methods": "post:user_import_post",
+    "name": "mod-user-import",
+    "path": "/user-import"
   },
   {
     "apiDescription": "ramls/waiver.raml",
