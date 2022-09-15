@@ -26,6 +26,7 @@ See [Further information](#further-information).
 {% assign urlApiXref = "/reference/api/" %}
 {% assign urlS3Base = "https://s3.amazonaws.com/foliodocs/api/" %}
 {% assign moduleList = "" | split: ',' %}
+{% assign modulesMissingMethod = "" | split: ',' %}
 {% assign moduleCount = 0 %}
 
 {% for repo in site.data.config-apidocs -%}
@@ -61,6 +62,7 @@ Listed endpoints count: {{ site.data.config-api-endpoints.size }}
       {% if method_parts[1] != "null" %}
         <a href="{{ urlS3Base }}{{ item.name }}/{{ directory }}/{{ file_name }}.html#{{ method_parts[1] }}">{{ method_parts[0] }}</a>
       {% else %}
+        {%- assign modulesMissingMethod = modulesMissingMethod | push: item.name %}
         {{ method_parts[0] }}
       {% endif -%}
     {% endfor %}
@@ -85,6 +87,8 @@ A daily Workflow [assembles](/reference/api/#explain-gather-config) the publishe
 
 For some OpenAPI-based modules, there might be missing links in the "Methods" column.
 That is because their API description has omitted the "`operationId`" property for that method.
+
+{{ modulesMissingMethod | uniq | join: ", " }}
 
 ### Further development
 
