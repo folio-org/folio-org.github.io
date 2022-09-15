@@ -81,6 +81,9 @@ table.apilabel .raml {
   width: 50%;
   text-align: left;
 }
+table.sortable th.no-sort {
+  pointer-events: none;
+}
 
 /*
 :target {
