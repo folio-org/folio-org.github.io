@@ -346,12 +346,12 @@
     {
       "name": "mod-ldp",
       "nameRepo": "mod-ldp",
-      "releaseDate": "2022-07-06T15:32:14+00:00",
-      "releaseName": "v1.0.5",
-      "releaseSha": "4d887496340f08dc8e7f04cb105989d295eb918d",
-      "releaseTag": "v1.0.5",
+      "releaseDate": "2022-09-13T16:50:02+00:00",
+      "releaseName": "",
+      "releaseSha": "b54934ef36012aa0c624dda563ce5ab67f577e05",
+      "releaseTag": "v1.0.6",
       "releaseTarget": "master",
-      "version": "1.0.5"
+      "version": "1.0.6"
     },
     {
       "name": "mod-licenses",
