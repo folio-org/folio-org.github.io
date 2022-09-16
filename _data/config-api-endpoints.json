@@ -91,6 +91,13 @@
     "path": "/_/invoke/tenant/{id}"
   },
   {
+    "apiDescription": "ramls/jsonSchemas.raml",
+    "apiType": "raml",
+    "methods": "get:jsonschemas_get",
+    "name": "raml",
+    "path": "/_/jsonSchemas"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "post:proxy_cleanup_modules_post",
@@ -210,6 +217,13 @@
     "path": "/_/proxy/tenants/{tenant_id}/upgrade"
   },
   {
+    "apiDescription": "ramls/ramls.raml",
+    "apiType": "raml",
+    "methods": "get:ramls_get",
+    "name": "raml",
+    "path": "/_/ramls"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/tenant.yaml",
     "apiType": "oas",
     "methods": "post:operation/postTenant",
@@ -224,11 +238,25 @@
     "path": "/_/tenant"
   },
   {
+    "apiDescription": "ramls/tenant.raml",
+    "apiType": "raml",
+    "methods": "post:tenant_post",
+    "name": "raml",
+    "path": "/_/tenant"
+  },
+  {
     "apiDescription": "core/src/main/resources/openapi/tenant-2.0.yaml",
     "apiType": "oas",
     "methods": "delete:operation/deleteTenantJob get:operation/getTenantJob",
     "name": "folio-vertx-lib",
     "path": "/_/tenant/{id}"
+  },
+  {
+    "apiDescription": "ramls/tenant.raml",
+    "apiType": "raml",
+    "methods": "delete:tenant__operation_id__delete get:tenant__operation_id__get",
+    "name": "raml",
+    "path": "/_/tenant/{operation_id}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/tenant.yaml",
@@ -784,6 +812,48 @@
     "path": "/classification-types/{classificationTypeId}"
   },
   {
+    "apiDescription": "ramls/codex/codex.raml",
+    "apiType": "raml",
+    "methods": "get:codex_instances_get",
+    "name": "raml",
+    "path": "/codex-instances"
+  },
+  {
+    "apiDescription": "ramls/codex/codex-instances-sources.raml",
+    "apiType": "raml",
+    "methods": "get:codex_instances_sources_get",
+    "name": "raml",
+    "path": "/codex-instances-sources"
+  },
+  {
+    "apiDescription": "ramls/codex/codex.raml",
+    "apiType": "raml",
+    "methods": "get:codex_instances__id__get",
+    "name": "raml",
+    "path": "/codex-instances/{id}"
+  },
+  {
+    "apiDescription": "ramls/codex/codex-packages.raml",
+    "apiType": "raml",
+    "methods": "get:codex_packages_get",
+    "name": "raml",
+    "path": "/codex-packages"
+  },
+  {
+    "apiDescription": "ramls/codex/codex-packages.raml",
+    "apiType": "raml",
+    "methods": "get:codex_packages_sources_get",
+    "name": "raml",
+    "path": "/codex-packages-sources"
+  },
+  {
+    "apiDescription": "ramls/codex/codex-packages.raml",
+    "apiType": "raml",
+    "methods": "get:codex_packages__id__get",
+    "name": "raml",
+    "path": "/codex-packages/{id}"
+  },
+  {
     "apiDescription": "ramls/comments.raml",
     "apiType": "raml",
     "methods": "get:comments_get post:comments_post",
@@ -824,6 +894,20 @@
     "methods": "delete:operation/deleteLanguageConfig put:operation/updateLanguageConfig",
     "name": "mod-search",
     "path": "/config/languages/{code}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/export-configs.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getExportConfigs post:operation/postExportConfig",
+    "name": "mod-data-export-spring",
+    "path": "/configs"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/export-configs.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteExportConfigById get:operation/getConfigById put:operation/putExportConfig",
+    "name": "mod-data-export-spring",
+    "path": "/configs/{id}"
   },
   {
     "apiDescription": "ramls/contributor-name-type.raml",
@@ -2660,6 +2744,20 @@
     "path": "/item-storage/items/{itemId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getJobs post:operation/upsertJob",
+    "name": "mod-data-export-spring",
+    "path": "/jobs"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getJobById",
+    "name": "mod-data-export-spring",
+    "path": "/jobs/{id}"
+  },
+  {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
     "methods": "get:ldp_config_get",
@@ -3043,6 +3141,41 @@
     "methods": "delete:owners__ownerid__delete get:owners__ownerid__get put:owners__ownerid__put",
     "name": "mod-feesfines",
     "path": "/owners/{ownerId}"
+  },
+  {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "get:patron_account__id__get",
+    "name": "edge-patron",
+    "path": "/patron/account/{id}"
+  },
+  {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "post:patron_account__id__hold__holdid__cancel_post",
+    "name": "edge-patron",
+    "path": "/patron/account/{id}/hold/{holdId}/cancel"
+  },
+  {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "post:patron_account__id__instance__instanceid__hold_post",
+    "name": "edge-patron",
+    "path": "/patron/account/{id}/instance/{instanceId}/hold"
+  },
+  {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "post:patron_account__id__item__itemid__hold_post",
+    "name": "edge-patron",
+    "path": "/patron/account/{id}/item/{itemId}/hold"
+  },
+  {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "post:patron_account__id__item__itemid__renew_post",
+    "name": "edge-patron",
+    "path": "/patron/account/{id}/item/{itemId}/renew"
   },
   {
     "apiDescription": "ramls/payments.raml",
@@ -3519,6 +3652,13 @@
     "methods": "delete:transfers__transferid__delete get:transfers__transferid__get put:transfers__transferid__put",
     "name": "mod-feesfines",
     "path": "/transfers/{transferId}"
+  },
+  {
+    "apiDescription": "ramls/import.raml",
+    "apiType": "raml",
+    "methods": "post:user_import_post",
+    "name": "mod-user-import",
+    "path": "/user-import"
   },
   {
     "apiDescription": "ramls/waiver.raml",
