@@ -434,6 +434,27 @@
     "path": "/actual-cost-record-storage/actual-cost-records/{id}"
   },
   {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "get:admin_cache_hit_rates_get",
+    "name": "raml-module-builder",
+    "path": "/admin/cache_hit_rates"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "get:admin_db_cache_summary_get",
+    "name": "raml-module-builder",
+    "path": "/admin/db_cache_summary"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "post:admin_get_password_post",
+    "name": "raml-module-builder",
+    "path": "/admin/get_password"
+  },
+  {
     "apiDescription": "ramls/edge-lti-courses.raml",
     "apiType": "raml",
     "methods": "get:admin_health_get",
@@ -446,6 +467,132 @@
     "methods": "get:admin_health_get",
     "name": "edge-orders",
     "path": "/admin/health"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "get:admin_health_get",
+    "name": "raml-module-builder",
+    "path": "/admin/health"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "post:admin_importsql_post",
+    "name": "raml-module-builder",
+    "path": "/admin/importSQL"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "get:admin_jstack_get put:admin_jstack_put",
+    "name": "raml-module-builder",
+    "path": "/admin/jstack"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "delete:admin_kill_query_delete",
+    "name": "raml-module-builder",
+    "path": "/admin/kill_query"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "get:admin_list_locking_queries_get",
+    "name": "raml-module-builder",
+    "path": "/admin/list_locking_queries"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "get:admin_loglevel_get put:admin_loglevel_put",
+    "name": "raml-module-builder",
+    "path": "/admin/loglevel"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "get:admin_memory_get",
+    "name": "raml-module-builder",
+    "path": "/admin/memory"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "get:admin_postgres_active_sessions_get",
+    "name": "raml-module-builder",
+    "path": "/admin/postgres_active_sessions"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "put:admin_postgres_create_indexes_put",
+    "name": "raml-module-builder",
+    "path": "/admin/postgres_create_indexes"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "put:admin_postgres_drop_indexes_put",
+    "name": "raml-module-builder",
+    "path": "/admin/postgres_drop_indexes"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "get:admin_postgres_load_get",
+    "name": "raml-module-builder",
+    "path": "/admin/postgres_load"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "post:admin_postgres_maintenance_post",
+    "name": "raml-module-builder",
+    "path": "/admin/postgres_maintenance"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "get:admin_postgres_table_access_stats_get",
+    "name": "raml-module-builder",
+    "path": "/admin/postgres_table_access_stats"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "get:admin_postgres_table_size_get",
+    "name": "raml-module-builder",
+    "path": "/admin/postgres_table_size"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "post:admin_set_aes_key_post",
+    "name": "raml-module-builder",
+    "path": "/admin/set_AES_key"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "get:admin_slow_queries_get",
+    "name": "raml-module-builder",
+    "path": "/admin/slow_queries"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "get:admin_table_index_usage_get",
+    "name": "raml-module-builder",
+    "path": "/admin/table_index_usage"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
+    "apiType": "raml",
+    "methods": "get:admin_total_db_size_get",
+    "name": "raml-module-builder",
+    "path": "/admin/total_db_size"
   },
   {
     "apiDescription": "ramls/alternative-title-type.raml",
@@ -3750,6 +3897,34 @@
     "methods": "get:operation/getResourceIds",
     "name": "mod-search",
     "path": "/resources/jobs/{jobId}/ids"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/sample.raml",
+    "apiType": "raml",
+    "methods": "get:rmbtests_books_get post:rmbtests_books_post put:rmbtests_books_put",
+    "name": "raml-module-builder",
+    "path": "/rmbtests/books"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/sample.raml",
+    "apiType": "raml",
+    "methods": "get:rmbtests_test_get options:rmbtests_test_options post:rmbtests_test_post",
+    "name": "raml-module-builder",
+    "path": "/rmbtests/test"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/sample.raml",
+    "apiType": "raml",
+    "methods": "post:rmbtests_testform_post",
+    "name": "raml-module-builder",
+    "path": "/rmbtests/testForm"
+  },
+  {
+    "apiDescription": "domain-models-api-interfaces/ramls/sample.raml",
+    "apiType": "raml",
+    "methods": "post:rmbtests_teststream_post",
+    "name": "raml-module-builder",
+    "path": "/rmbtests/testStream"
   },
   {
     "apiDescription": "ramls/saml-login.raml",
