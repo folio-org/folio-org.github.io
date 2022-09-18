@@ -82,23 +82,30 @@ table.apilabel .raml {
   text-align: left;
 }
 // 2022-09-18 https://github.com/tofsjonas/sortable/blob/main/sortable.css
-table.sortable th.no-sort {
-  pointer-events: none;
+.sortable th {
+  cursor: pointer;
 }
 .sortable th::after {
   font-size: 1.2em;
-  color: transparent;
+  color: $f-link-color;
   content: ' \025B8';
 }
+.sortable th.no-sort {
+  pointer-events: none;
+  cursor: default;
+}
+.sortable th.no-sort::after {
+  content: none;
+}
 .sortable th.dir-d {
-  color: #000;
+  color: $f-link-color;
 }
 .sortable th.dir-d::after {
   color: inherit;
   content: ' \025BE';
 }
 .sortable th.dir-u {
-  color: #000;
+  color: $f-link-color;
 }
 .sortable th.dir-u::after {
   color: inherit;
