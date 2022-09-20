@@ -22,13 +22,13 @@ The MD adheres to the [ModuleDescriptor.json](https://github.com/folio-org/okapi
 
 For back-end modules, a template is [maintained](/guides/commence-a-module/#back-end-descriptors).
 This is usually at `./descriptors/ModuleDescriptor-template.json` and is transformed by the module's build process into the `target/ModuleDescriptor.json` file.
-See example at [mod-notes](https://github.com/folio-org/mod-notes/blob/master/descriptors/ModuleDescriptor-template.json).
+See example at [mod-courses](https://github.com/folio-org/mod-courses/blob/master/descriptors/ModuleDescriptor-template.json).
 
 To validate changes, utilise a JSON Schema validator such as 'z-schema' or 'ajv'
 (see [detailed notes](#testing-the-modifications) futher below):
 
 ```
-cd mod-notes
+cd mod-courses
 jq '.' descriptors/ModuleDescriptor-template.json
 z-schema --pedanticCheck \
   ../okapi/okapi-core/src/main/raml/ModuleDescriptor.json \
@@ -175,8 +175,7 @@ This environment variable must at least have the setting as shown in the [exampl
 
 <a id="dockerfile"></a>The module's Dockerfile needs to use a base image that has the feature "UseContainerSupport". Use that feature in conjunction with "MaxRAMPercentage".
 
-Note that all Java-based modules should now be [using Java 11](/faqs/how-to-specify-backend-java-ci/).
-Use the [folioci/alpine-jre-openjdk11:latest](https://hub.docker.com/r/folioci/alpine-jre-openjdk11/tags)
+Note that all Java-based modules should now be [using Java 11](/faqs/how-to-specify-backend-java-ci/) or [using Java 17](/faqs/how-to-specify-backend-java-ci/).
 
 Other necessary options can be appended (e.g. -XX:+PrintFlagsFinal).
 
@@ -202,7 +201,7 @@ As explained [above](#docker-env), clearly describe the "env" items.
 ### Example LaunchDescriptors
 
 The following example is for
-[mod-notes](https://github.com/folio-org/mod-notes/blob/master/descriptors/ModuleDescriptor-template.json)
+[mod-courses](https://github.com/folio-org/mod-courses/blob/master/descriptors/ModuleDescriptor-template.json)
 which does use a database.
 
 As explained [above](#env-java_options), this form needs the new folio docker image.
@@ -263,7 +262,7 @@ Use [z-schema](https://github.com/zaggino/z-schema):
 
 ```
 yarn global add z-schema
-cd mod-notes
+cd mod-courses
 z-schema --pedanticCheck \
   ../okapi/okapi-core/src/main/raml/ModuleDescriptor.json \
   descriptors/ModuleDescriptor-template.json
@@ -273,7 +272,7 @@ Or use [ajv](https://github.com/ajv-validator/ajv):
 
 ```
 yarn global add ajv-cli
-cd mod-notes
+cd mod-courses
 ajv validate \
   -s ../okapi/okapi-core/src/main/raml/ModuleDescriptor.json \
   -r "../okapi/okapi-core/src/main/raml/*.json" \
