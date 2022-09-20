@@ -256,12 +256,12 @@
     {
       "name": "mod-finance-storage",
       "nameRepo": "mod-finance-storage",
-      "releaseDate": "2022-07-07T12:16:40+00:00",
-      "releaseName": "v8.1.6",
-      "releaseSha": "acb660270634faaf9028af5c585c575735018070",
-      "releaseTag": "v8.1.6",
+      "releaseDate": "2022-09-19T09:39:38+00:00",
+      "releaseName": "",
+      "releaseSha": "f3b66f8546e7aaaf65fbe62b143c1aa5e34d9cad",
+      "releaseTag": "v8.1.7",
       "releaseTarget": "master",
-      "version": "8.1.6"
+      "version": "8.1.7"
     },
     {
       "name": "mod-gobi",
