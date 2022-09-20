@@ -420,6 +420,34 @@
     "path": "/accounts/{accountId}/waive"
   },
   {
+    "apiDescription": "ramls/acquisitions-units.raml",
+    "apiType": "raml",
+    "methods": "get:acquisitions_units_memberships_get post:acquisitions_units_memberships_post",
+    "name": "mod-orders",
+    "path": "/acquisitions-units/memberships"
+  },
+  {
+    "apiDescription": "ramls/acquisitions-units.raml",
+    "apiType": "raml",
+    "methods": "delete:acquisitions_units_memberships__id__delete get:acquisitions_units_memberships__id__get put:acquisitions_units_memberships__id__put",
+    "name": "mod-orders",
+    "path": "/acquisitions-units/memberships/{id}"
+  },
+  {
+    "apiDescription": "ramls/acquisitions-units.raml",
+    "apiType": "raml",
+    "methods": "get:acquisitions_units_units_get post:acquisitions_units_units_post",
+    "name": "mod-orders",
+    "path": "/acquisitions-units/units"
+  },
+  {
+    "apiDescription": "ramls/acquisitions-units.raml",
+    "apiType": "raml",
+    "methods": "delete:acquisitions_units_units__id__delete get:acquisitions_units_units__id__get put:acquisitions_units_units__id__put",
+    "name": "mod-orders",
+    "path": "/acquisitions-units/units/{id}"
+  },
+  {
     "apiDescription": "ramls/actual-cost-record-storage.raml",
     "apiType": "raml",
     "methods": "get:actual_cost_record_storage_actual_cost_records_get post:actual_cost_record_storage_actual_cost_records_post",
@@ -754,6 +782,97 @@
     "methods": "delete:authority_storage_reindex__id__delete get:authority_storage_reindex__id__get",
     "name": "mod-inventory-storage",
     "path": "/authority-storage/reindex/{id}"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "get:bl_users_get",
+    "name": "mod-users-bl",
+    "path": "/bl-users"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "get:bl_usersself_get",
+    "name": "mod-users-bl",
+    "path": "/bl-users/_self"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "delete:bl_users_by_id__id__delete get:bl_users_by_id__id__get",
+    "name": "mod-users-bl",
+    "path": "/bl-users/by-id/{id}"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "get:bl_users_by_id__id__open_transactions_get",
+    "name": "mod-users-bl",
+    "path": "/bl-users/by-id/{id}/open-transactions"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "get:bl_users_by_username__username__get",
+    "name": "mod-users-bl",
+    "path": "/bl-users/by-username/{username}"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "get:bl_users_by_username__username__open_transactions_get",
+    "name": "mod-users-bl",
+    "path": "/bl-users/by-username/{username}/open-transactions"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "post:bl_users_forgotten_password_post",
+    "name": "mod-users-bl",
+    "path": "/bl-users/forgotten/password"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "post:bl_users_forgotten_username_post",
+    "name": "mod-users-bl",
+    "path": "/bl-users/forgotten/username"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "post:bl_users_login_post",
+    "name": "mod-users-bl",
+    "path": "/bl-users/login"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "post:bl_users_password_reset_link_post",
+    "name": "mod-users-bl",
+    "path": "/bl-users/password-reset/link"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "post:bl_users_password_reset_reset_post",
+    "name": "mod-users-bl",
+    "path": "/bl-users/password-reset/reset"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "post:bl_users_password_reset_validate_post",
+    "name": "mod-users-bl",
+    "path": "/bl-users/password-reset/validate"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "post:bl_users_settings_myprofile_password_post",
+    "name": "mod-users-bl",
+    "path": "/bl-users/settings/myprofile/password"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
@@ -3458,11 +3577,207 @@
     "path": "/orders"
   },
   {
+    "apiDescription": "ramls/acquisition_method.raml",
+    "apiType": "raml",
+    "methods": "get:orders_acquisition_methods_get post:orders_acquisition_methods_post",
+    "name": "mod-orders",
+    "path": "/orders/acquisition-methods"
+  },
+  {
+    "apiDescription": "ramls/acquisition_method.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_acquisition_methods__id__delete get:orders_acquisition_methods__id__get put:orders_acquisition_methods__id__put",
+    "name": "mod-orders",
+    "path": "/orders/acquisition-methods/{id}"
+  },
+  {
+    "apiDescription": "ramls/check-in.raml",
+    "apiType": "raml",
+    "methods": "post:orders_check_in_post",
+    "name": "mod-orders",
+    "path": "/orders/check-in"
+  },
+  {
+    "apiDescription": "ramls/order.raml",
+    "apiType": "raml",
+    "methods": "get:orders_composite_orders_get post:orders_composite_orders_post",
+    "name": "mod-orders",
+    "path": "/orders/composite-orders"
+  },
+  {
+    "apiDescription": "ramls/order.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_composite_orders__id__delete get:orders_composite_orders__id__get put:orders_composite_orders__id__put",
+    "name": "mod-orders",
+    "path": "/orders/composite-orders/{id}"
+  },
+  {
+    "apiDescription": "ramls/order.raml",
+    "apiType": "raml",
+    "methods": "post:orders_composite_orders__id__re_encumber_post",
+    "name": "mod-orders",
+    "path": "/orders/composite-orders/{id}/re-encumber"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "get:orders_configuration_prefixes_get post:orders_configuration_prefixes_post",
+    "name": "mod-orders",
+    "path": "/orders/configuration/prefixes"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_configuration_prefixes__id__delete get:orders_configuration_prefixes__id__get put:orders_configuration_prefixes__id__put",
+    "name": "mod-orders",
+    "path": "/orders/configuration/prefixes/{id}"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "get:orders_configuration_reasons_for_closure_get post:orders_configuration_reasons_for_closure_post",
+    "name": "mod-orders",
+    "path": "/orders/configuration/reasons-for-closure"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_configuration_reasons_for_closure__id__delete get:orders_configuration_reasons_for_closure__id__get put:orders_configuration_reasons_for_closure__id__put",
+    "name": "mod-orders",
+    "path": "/orders/configuration/reasons-for-closure/{id}"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "get:orders_configuration_suffixes_get post:orders_configuration_suffixes_post",
+    "name": "mod-orders",
+    "path": "/orders/configuration/suffixes"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_configuration_suffixes__id__delete get:orders_configuration_suffixes__id__get put:orders_configuration_suffixes__id__put",
+    "name": "mod-orders",
+    "path": "/orders/configuration/suffixes/{id}"
+  },
+  {
+    "apiDescription": "ramls/holding-summary.raml",
+    "apiType": "raml",
+    "methods": "get:orders_holding_summary__id__get",
+    "name": "mod-orders",
+    "path": "/orders/holding-summary/{id}"
+  },
+  {
+    "apiDescription": "ramls/order-lines.raml",
+    "apiType": "raml",
+    "methods": "get:orders_order_lines_get post:orders_order_lines_post",
+    "name": "mod-orders",
+    "path": "/orders/order-lines"
+  },
+  {
+    "apiDescription": "ramls/order-lines.raml",
+    "apiType": "raml",
+    "methods": "put:orders_order_lines_fund_distributions_validate_put",
+    "name": "mod-orders",
+    "path": "/orders/order-lines/fund-distributions/validate"
+  },
+  {
     "apiDescription": "ramls/edge-orders.raml",
     "apiType": "raml",
     "methods": "get:orders_order_lines__id__get put:orders_order_lines__id__put",
     "name": "edge-orders",
     "path": "/orders/order-lines/{id}"
+  },
+  {
+    "apiDescription": "ramls/order-lines.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_order_lines__id__delete get:orders_order_lines__id__get patch:orders_order_lines__id__patch put:orders_order_lines__id__put",
+    "name": "mod-orders",
+    "path": "/orders/order-lines/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/ebsconet.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getEbsconetOrderLine put:operation/putEbsconetOrderLine",
+    "name": "mod-ebsconet",
+    "path": "/orders/order-lines/{poLineNumber}"
+  },
+  {
+    "apiDescription": "ramls/order-templates.raml",
+    "apiType": "raml",
+    "methods": "get:orders_order_templates_get post:orders_order_templates_post",
+    "name": "mod-orders",
+    "path": "/orders/order-templates"
+  },
+  {
+    "apiDescription": "ramls/order-templates.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_order_templates__id__delete get:orders_order_templates__id__get put:orders_order_templates__id__put",
+    "name": "mod-orders",
+    "path": "/orders/order-templates/{id}"
+  },
+  {
+    "apiDescription": "ramls/pieces.raml",
+    "apiType": "raml",
+    "methods": "get:orders_pieces_get post:orders_pieces_post",
+    "name": "mod-orders",
+    "path": "/orders/pieces"
+  },
+  {
+    "apiDescription": "ramls/pieces.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_pieces__id__delete get:orders_pieces__id__get put:orders_pieces__id__put",
+    "name": "mod-orders",
+    "path": "/orders/pieces/{id}"
+  },
+  {
+    "apiDescription": "ramls/po-number.raml",
+    "apiType": "raml",
+    "methods": "get:orders_po_number_get",
+    "name": "mod-orders",
+    "path": "/orders/po-number"
+  },
+  {
+    "apiDescription": "ramls/po-number.raml",
+    "apiType": "raml",
+    "methods": "post:orders_po_number_validate_post",
+    "name": "mod-orders",
+    "path": "/orders/po-number/validate"
+  },
+  {
+    "apiDescription": "ramls/receive.raml",
+    "apiType": "raml",
+    "methods": "post:orders_receive_post",
+    "name": "mod-orders",
+    "path": "/orders/receive"
+  },
+  {
+    "apiDescription": "ramls/receiving-history.raml",
+    "apiType": "raml",
+    "methods": "get:orders_receiving_history_get",
+    "name": "mod-orders",
+    "path": "/orders/receiving-history"
+  },
+  {
+    "apiDescription": "ramls/rollover.raml",
+    "apiType": "raml",
+    "methods": "post:orders_rollover_post",
+    "name": "mod-orders",
+    "path": "/orders/rollover"
+  },
+  {
+    "apiDescription": "ramls/titles.raml",
+    "apiType": "raml",
+    "methods": "get:orders_titles_get post:orders_titles_post",
+    "name": "mod-orders",
+    "path": "/orders/titles"
+  },
+  {
+    "apiDescription": "ramls/titles.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_titles__id__delete get:orders_titles__id__get put:orders_titles__id__put",
+    "name": "mod-orders",
+    "path": "/orders/titles/{id}"
   },
   {
     "apiDescription": "ramls/edge-orders.raml",
@@ -4240,6 +4555,13 @@
     "methods": "post:user_import_post",
     "name": "mod-user-import",
     "path": "/user-import"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/ebsconet.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getValidation",
+    "name": "mod-ebsconet",
+    "path": "/validate"
   },
   {
     "apiDescription": "ramls/waiver.raml",
