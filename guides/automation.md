@@ -70,7 +70,7 @@ If there is an **urgent** need to re-run a build outside of the normal automatio
 then co-ordinate that on the Slack channel #hosted-reference-envs
 (remember that there are other people utilising these systems).
 
-Also, as explained below, before doing this wait for the automated hourly build of the “snapshot” branch of the Stripes Platform and ensure that the expected module versions are included
+<a id="install-json"></a>Also, as explained below, before doing this wait for the automated hourly build of the “snapshot” branch of the Stripes Platform and ensure that the expected module versions are included
 in that build's [install.json](https://github.com/folio-org/platform-complete/blob/snapshot/install.json) file.
 Correlate the "build number" with that shown in the output log of the project's "Publish module descriptor" stage.
 
@@ -84,7 +84,7 @@ The server is built every day, to finish about 02:00 UTC.\
 The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
 
 The "snapshot" branch of the Stripes Platform is rebuilt every hour, to finish about 50 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
-If successful, then this will regenerate the yarn.lock and install files of the Platform, to be utilised by the abovementioned "folio-snapshot" job.
+If successful, then this will regenerate the yarn.lock and install files of the Platform (see [note above](#install-json)), to be utilised by the abovementioned "folio-snapshot" job.
 So if there is an urgent need to [rebuild](#off-schedule-rebuilds) "folio-snapshot" outside of normal automation, so as to include a new snapshot of a module, then this build needs to have run before the "folio-snapshot" build is re-run.
 
 The folio-snapshot builds consist of the master branch of each frontend module at that time, paired with the latest version of backend modules that meet the dependency requirements of the frontend.
@@ -94,7 +94,7 @@ There may still be errors because of API differences that aren't covered by the 
 
 [https://folio-snapshot-2.dev.folio.org/](https://folio-snapshot-2.dev.folio.org/)
 
-This is constructed in the same manner as "folio-snapshot", but approximately 12-hours later.
+This is constructed in the same manner as "folio-snapshot" (see its [explanation](#folio-snapshot)), but approximately 12-hours later.
 
 The server is built every day, to finish about 14:00 UTC.\
 (See Jenkins job: [folio-snapshot-2](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-2/) which starts about 13:21 UTC.)
