@@ -102,7 +102,7 @@ The default exclusions are `["raml-util", "rtypes", "traits", "node_modules"]` a
 
 Set `version1` to `true` if this is known to be RAML-1.0 version.
 Default is `false`, or this property can be omitted to denote that.
-This enables the API docs table to exclude the "view-2" column as explained in the [usage notes](/reference/api/#usage-notes).
+This enables the API docs table to exclude the "view-2" column as explained in the [usage notes](/reference/api/#further-information).
 
 ### schemasDirectory
 
