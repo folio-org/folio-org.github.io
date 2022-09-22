@@ -3542,6 +3542,48 @@
     "path": "/nature-of-content-terms/{id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/notes.yml",
+    "apiType": "oas",
+    "methods": "get:operation/getNoteCollectionByLink",
+    "name": "mod-notes",
+    "path": "/note-links/domain/{domain}/type/{objectType}/id/{objectId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/notes.yml",
+    "apiType": "oas",
+    "methods": "put:operation/updateLinks",
+    "name": "mod-notes",
+    "path": "/note-links/type/{objectType}/id/{objectId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/notes.yml",
+    "apiType": "oas",
+    "methods": "get:operation/getNoteTypeCollection post:operation/createNoteType",
+    "name": "mod-notes",
+    "path": "/note-types"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/notes.yml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteNoteType get:operation/getNoteType put:operation/updateNoteType",
+    "name": "mod-notes",
+    "path": "/note-types/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/notes.yml",
+    "apiType": "oas",
+    "methods": "get:operation/getNoteCollection post:operation/createNote",
+    "name": "mod-notes",
+    "path": "/notes"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/notes.yml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteNote get:operation/getNote put:operation/updateNote",
+    "name": "mod-notes",
+    "path": "/notes/{id}"
+  },
+  {
     "apiDescription": "ramls/oai-pmh-view.raml",
     "apiType": "raml",
     "methods": "post:oai_pmh_view_enrichedinstances_post",
