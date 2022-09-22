@@ -1337,6 +1337,20 @@
     "path": "/contributor-types/{contributorTypeId}"
   },
   {
+    "apiDescription": "ramls/form-configs-storage.raml",
+    "apiType": "raml",
+    "methods": "get:converter_storage_forms_configs_get post:converter_storage_forms_configs_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/converter-storage/forms/configs"
+  },
+  {
+    "apiDescription": "ramls/form-configs-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:converter_storage_forms_configs__formname__delete get:converter_storage_forms_configs__formname__get put:converter_storage_forms_configs__formname__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/converter-storage/forms/configs/{formName}"
+  },
+  {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
     "methods": "delete:coursereserves_copyrightstatuses_delete get:coursereserves_copyrightstatuses_get post:coursereserves_copyrightstatuses_post",
@@ -1615,6 +1629,111 @@
     "methods": "get:data_export_transformation_fields_get",
     "name": "mod-data-export",
     "path": "/data-export/transformation-fields"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_actionprofiles_get post:data_import_profiles_actionprofiles_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/actionProfiles"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:data_import_profiles_actionprofiles__id__delete get:data_import_profiles_actionprofiles__id__get put:data_import_profiles_actionprofiles__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/actionProfiles/{id}"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_entitytypes_get",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/entityTypes"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_jobprofiles_get post:data_import_profiles_jobprofiles_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/jobProfiles"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:data_import_profiles_jobprofiles__id__delete get:data_import_profiles_jobprofiles__id__get put:data_import_profiles_jobprofiles__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/jobProfiles/{id}"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_jobprofilesnapshots__id__get post:data_import_profiles_jobprofilesnapshots__id__post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/jobProfileSnapshots/{id}"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_mappingprofiles_get post:data_import_profiles_mappingprofiles_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/mappingProfiles"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:data_import_profiles_mappingprofiles__id__delete get:data_import_profiles_mappingprofiles__id__get put:data_import_profiles_mappingprofiles__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/mappingProfiles/{id}"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_matchprofiles_get post:data_import_profiles_matchprofiles_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/matchProfiles"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:data_import_profiles_matchprofiles__id__delete get:data_import_profiles_matchprofiles__id__get put:data_import_profiles_matchprofiles__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/matchProfiles/{id}"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_profileassociations_get post:data_import_profiles_profileassociations_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/profileAssociations"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:data_import_profiles_profileassociations__id__delete get:data_import_profiles_profileassociations__id__get put:data_import_profiles_profileassociations__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/profileAssociations/{id}"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_profileassociations__id__details_get",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/profileAssociations/{id}/details"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_profileassociations__id__masters_get",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/profileAssociations/{id}/masters"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_profilesnapshots__profileid__get",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/profileSnapshots/{profileId}"
   },
   {
     "apiDescription": "ramls/access-types.raml",
@@ -2098,6 +2217,20 @@
     "methods": "delete:feefines__feefineid__delete get:feefines__feefineid__get put:feefines__feefineid__put",
     "name": "mod-feesfines",
     "path": "/feefines/{feefineId}"
+  },
+  {
+    "apiDescription": "ramls/field-protection-settings.raml",
+    "apiType": "raml",
+    "methods": "get:field_protection_settings_marc_get post:field_protection_settings_marc_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/field-protection-settings/marc"
+  },
+  {
+    "apiDescription": "ramls/field-protection-settings.raml",
+    "apiType": "raml",
+    "methods": "delete:field_protection_settings_marc__id__delete get:field_protection_settings_marc__id__get put:field_protection_settings_marc__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/field-protection-settings/marc/{id}"
   },
   {
     "apiDescription": "ramls/budget_expense_class.raml",
@@ -3827,6 +3960,153 @@
     "methods": "get:orders_validate_get post:orders_validate_post",
     "name": "edge-orders",
     "path": "/orders/validate"
+  },
+  {
+    "apiDescription": "ramls/address.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_addresses_get post:organizations_storage_addresses_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/addresses"
+  },
+  {
+    "apiDescription": "ramls/address.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_addresses__id__delete get:organizations_storage_addresses__id__get put:organizations_storage_addresses__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/addresses/{id}"
+  },
+  {
+    "apiDescription": "ramls/category.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_categories_get post:organizations_storage_categories_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/categories"
+  },
+  {
+    "apiDescription": "ramls/category.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_categories__id__delete get:organizations_storage_categories__id__get put:organizations_storage_categories__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/categories/{id}"
+  },
+  {
+    "apiDescription": "ramls/contact.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_contacts_get post:organizations_storage_contacts_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/contacts"
+  },
+  {
+    "apiDescription": "ramls/contact.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_contacts__id__delete get:organizations_storage_contacts__id__get put:organizations_storage_contacts__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/contacts/{id}"
+  },
+  {
+    "apiDescription": "ramls/email.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_emails_get post:organizations_storage_emails_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/emails"
+  },
+  {
+    "apiDescription": "ramls/email.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_emails__id__delete get:organizations_storage_emails__id__get put:organizations_storage_emails__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/emails/{id}"
+  },
+  {
+    "apiDescription": "ramls/interface.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_interfaces_get post:organizations_storage_interfaces_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/interfaces"
+  },
+  {
+    "apiDescription": "ramls/interface.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_interfaces__id__delete get:organizations_storage_interfaces__id__get put:organizations_storage_interfaces__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/interfaces/{id}"
+  },
+  {
+    "apiDescription": "ramls/interface.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_interfaces__id__credentials_delete get:organizations_storage_interfaces__id__credentials_get post:organizations_storage_interfaces__id__credentials_post put:organizations_storage_interfaces__id__credentials_put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/interfaces/{id}/credentials"
+  },
+  {
+    "apiDescription": "ramls/organization_type.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_organization_types_get post:organizations_storage_organization_types_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/organization-types"
+  },
+  {
+    "apiDescription": "ramls/organization_type.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_organization_types__id__delete get:organizations_storage_organization_types__id__get put:organizations_storage_organization_types__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/organization-types/{id}"
+  },
+  {
+    "apiDescription": "ramls/organization.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_organizations_get post:organizations_storage_organizations_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/organizations"
+  },
+  {
+    "apiDescription": "ramls/organization.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_organizations__id__delete get:organizations_storage_organizations__id__get put:organizations_storage_organizations__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/organizations/{id}"
+  },
+  {
+    "apiDescription": "ramls/phone_number.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_phone_numbers_get post:organizations_storage_phone_numbers_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/phone-numbers"
+  },
+  {
+    "apiDescription": "ramls/phone_number.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_phone_numbers__id__delete get:organizations_storage_phone_numbers__id__get put:organizations_storage_phone_numbers__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/phone-numbers/{id}"
+  },
+  {
+    "apiDescription": "ramls/url.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_urls_get post:organizations_storage_urls_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/urls"
+  },
+  {
+    "apiDescription": "ramls/url.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_urls__id__delete get:organizations_storage_urls__id__get put:organizations_storage_urls__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/urls/{id}"
+  },
+  {
+    "apiDescription": "ramls/organizations.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_organizations_get post:organizations_organizations_post",
+    "name": "mod-organizations",
+    "path": "/organizations/organizations"
+  },
+  {
+    "apiDescription": "ramls/organizations.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_organizations__id__delete get:organizations_organizations__id__get put:organizations_organizations__id__put",
+    "name": "mod-organizations",
+    "path": "/organizations/organizations/{id}"
   },
   {
     "apiDescription": "ramls/overdue-fine-policy.raml",
