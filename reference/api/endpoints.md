@@ -49,7 +49,7 @@ Listed endpoints count: {{ site.data.config-api-endpoints.size }}
 {% for item in site.data.config-api-endpoints -%}
   {% assign moduleList = moduleList | push: item.name %}
   {% assign methods = item.methods | split: ' ' -%}
-  {% capture file_name %}{{ item.apiDescription | split: "/" | last | replace_first: ".raml", "" | replace_first: ".yaml", ""}}{% endcapture -%}
+  {% capture file_name %}{{ item.apiDescription | split: "/" | last | replace_first: ".raml", "" | replace_first: ".yaml", "" | replace_first: ".yml", "" }}{% endcapture -%}
   {% assign directory = "s" -%}
   {% if item.apiType == "raml" %}
     {% assign directory = "p" %}
