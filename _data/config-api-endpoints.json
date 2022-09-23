@@ -462,6 +462,20 @@
     "path": "/actual-cost-record-storage/actual-cost-records/{id}"
   },
   {
+    "apiDescription": "ramls/addressTypes.raml",
+    "apiType": "raml",
+    "methods": "get:addresstypes_get post:addresstypes_post",
+    "name": "mod-users",
+    "path": "/addresstypes"
+  },
+  {
+    "apiDescription": "ramls/addressTypes.raml",
+    "apiType": "raml",
+    "methods": "delete:addresstypes__addresstypeid__delete get:addresstypes__addresstypeid__get put:addresstypes__addresstypeid__put",
+    "name": "mod-users",
+    "path": "/addresstypes/{addresstypeId}"
+  },
+  {
     "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
     "apiType": "raml",
     "methods": "get:admin_cache_hit_rates_get",
@@ -1736,6 +1750,20 @@
     "path": "/data-import-profiles/profileSnapshots/{profileId}"
   },
   {
+    "apiDescription": "ramls/departments.raml",
+    "apiType": "raml",
+    "methods": "get:departments_get post:departments_post",
+    "name": "mod-users",
+    "path": "/departments"
+  },
+  {
+    "apiDescription": "ramls/departments.raml",
+    "apiType": "raml",
+    "methods": "delete:departments__departmentid__delete get:departments__departmentid__get put:departments__departmentid__put",
+    "name": "mod-users",
+    "path": "/departments/{departmentId}"
+  },
+  {
     "apiDescription": "ramls/access-types.raml",
     "apiType": "raml",
     "methods": "get:eholdings_access_types_get",
@@ -2847,6 +2875,20 @@
     "methods": "get:gobi_validate_get post:gobi_validate_post",
     "name": "mod-gobi",
     "path": "/gobi/validate"
+  },
+  {
+    "apiDescription": "ramls/groups.raml",
+    "apiType": "raml",
+    "methods": "get:groups_get post:groups_post",
+    "name": "mod-users",
+    "path": "/groups"
+  },
+  {
+    "apiDescription": "ramls/groups.raml",
+    "apiType": "raml",
+    "methods": "delete:groups__groupid__delete get:groups__groupid__get put:groups__groupid__put",
+    "name": "mod-users",
+    "path": "/groups/{groupId}"
   },
   {
     "apiDescription": "ramls/holdings-note-type.raml",
@@ -4137,6 +4179,13 @@
     "path": "/owners/{ownerId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/password-validator.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/validatePassword",
+    "name": "mod-password-validator",
+    "path": "/password/validate"
+  },
+  {
     "apiDescription": "ramls/patron-action-session.raml",
     "apiType": "raml",
     "methods": "get:patron_action_session_storage_expired_session_patron_ids_get",
@@ -4170,6 +4219,20 @@
     "methods": "delete:patron_notice_policy_storage_patron_notice_policies__patronnoticepolicyid__delete get:patron_notice_policy_storage_patron_notice_policies__patronnoticepolicyid__get put:patron_notice_policy_storage_patron_notice_policies__patronnoticepolicyid__put",
     "name": "mod-circulation-storage",
     "path": "/patron-notice-policy-storage/patron-notice-policies/{patronNoticePolicyId}"
+  },
+  {
+    "apiDescription": "ramls/patronpin.raml",
+    "apiType": "raml",
+    "methods": "delete:patron_pin_delete post:patron_pin_post",
+    "name": "mod-users",
+    "path": "/patron-pin"
+  },
+  {
+    "apiDescription": "ramls/patronpin.raml",
+    "apiType": "raml",
+    "methods": "post:patron_pin_verify_post",
+    "name": "mod-users",
+    "path": "/patron-pin/verify"
   },
   {
     "apiDescription": "ramls/edge-patron.raml",
@@ -4291,11 +4354,32 @@
     "path": "/preceding-succeeding-titles/{precedingSucceedingTitleId}"
   },
   {
+    "apiDescription": "ramls/proxiesFor.raml",
+    "apiType": "raml",
+    "methods": "get:proxiesfor_get post:proxiesfor_post",
+    "name": "mod-users",
+    "path": "/proxiesfor"
+  },
+  {
+    "apiDescription": "ramls/proxiesFor.raml",
+    "apiType": "raml",
+    "methods": "delete:proxiesfor__id__delete get:proxiesfor__id__get put:proxiesfor__id__put",
+    "name": "mod-users",
+    "path": "/proxiesfor/{id}"
+  },
+  {
     "apiDescription": "ramls/record-bulk.raml",
     "apiType": "raml",
     "methods": "get:record_bulk_ids_get",
     "name": "mod-inventory-storage",
     "path": "/record-bulk/ids"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/token-sign-legacy",
+    "name": "mod-authtoken",
+    "path": "/refreshtoken"
   },
   {
     "apiDescription": "ramls/refunds.raml",
@@ -4562,6 +4646,20 @@
     "methods": "post:rmbtests_teststream_post",
     "name": "raml-module-builder",
     "path": "/rmbtests/testStream"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/validator-registry.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getTenantRules post:operation/postTenantRules put:operation/putTenantRule",
+    "name": "mod-password-validator",
+    "path": "/rules"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/validator-registry.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getTenantRuleById",
+    "name": "mod-password-validator",
+    "path": "/rules/{ruleId}"
   },
   {
     "apiDescription": "ramls/saml-login.raml",
@@ -4844,6 +4942,27 @@
     "path": "/tlr-feature-toggle-job/start"
   },
   {
+    "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/token-legacy",
+    "name": "mod-authtoken",
+    "path": "/token"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/token-refresh",
+    "name": "mod-authtoken",
+    "path": "/token/refresh"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/token-sign",
+    "name": "mod-authtoken",
+    "path": "/token/sign"
+  },
+  {
     "apiDescription": "ramls/transfer-criteria.raml",
     "apiType": "raml",
     "methods": "get:transfer_criterias_get post:transfer_criterias_post",
@@ -4877,6 +4996,27 @@
     "methods": "post:user_import_post",
     "name": "mod-user-import",
     "path": "/user-import"
+  },
+  {
+    "apiDescription": "ramls/users.raml",
+    "apiType": "raml",
+    "methods": "delete:users_delete get:users_get post:users_post",
+    "name": "mod-users",
+    "path": "/users"
+  },
+  {
+    "apiDescription": "ramls/users.raml",
+    "apiType": "raml",
+    "methods": "post:users_expire_timer_post",
+    "name": "mod-users",
+    "path": "/users/expire/timer"
+  },
+  {
+    "apiDescription": "ramls/users.raml",
+    "apiType": "raml",
+    "methods": "delete:users__userid__delete get:users__userid__get put:users__userid__put",
+    "name": "mod-users",
+    "path": "/users/{userId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/ebsconet.yaml",
