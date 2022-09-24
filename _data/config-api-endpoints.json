@@ -2429,6 +2429,20 @@
     "path": "/finance-storage/ledger-rollovers-errors/{id}"
   },
   {
+    "apiDescription": "ramls/ledger_rollover_logs.raml",
+    "apiType": "raml",
+    "methods": "get:finance_storage_ledger_rollovers_logs_get",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/ledger-rollovers-logs"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover_logs.raml",
+    "apiType": "raml",
+    "methods": "get:finance_storage_ledger_rollovers_logs__id__get",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/ledger-rollovers-logs/{id}"
+  },
+  {
     "apiDescription": "ramls/ledger_rollover_progress.raml",
     "apiType": "raml",
     "methods": "get:finance_storage_ledger_rollovers_progress_get post:finance_storage_ledger_rollovers_progress_post",
@@ -2700,6 +2714,20 @@
     "methods": "get:finance_ledger_rollovers_errors_get",
     "name": "mod-finance",
     "path": "/finance/ledger-rollovers-errors"
+  },
+  {
+    "apiDescription": "ramls/ledger-rollover-logs.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledger_rollovers_logs_get",
+    "name": "mod-finance",
+    "path": "/finance/ledger-rollovers-logs"
+  },
+  {
+    "apiDescription": "ramls/ledger-rollover-logs.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledger_rollovers_logs__id__get",
+    "name": "mod-finance",
+    "path": "/finance/ledger-rollovers-logs/{id}"
   },
   {
     "apiDescription": "ramls/ledger_rollover_progress.raml",
@@ -4373,6 +4401,27 @@
     "methods": "get:record_bulk_ids_get",
     "name": "mod-inventory-storage",
     "path": "/record-bulk/ids"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getRecordByExternalId post:null",
+    "name": "mod-quick-marc",
+    "path": "/records"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getRecordCreationStatus",
+    "name": "mod-quick-marc",
+    "path": "/records/status"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/records-editor-async.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteRecordByExternalId put:operation/putRecord",
+    "name": "mod-quick-marc",
+    "path": "/records/{id}"
   },
   {
     "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
