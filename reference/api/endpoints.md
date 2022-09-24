@@ -37,19 +37,19 @@ See [Further information](#further-information).
 Listed endpoints count: {{ site.data.config-api-endpoints.size }}
 -- about 1200 are [expected](#status-of-missing-modules) eventually.
 
-<table class="sortable">
+<table class="sortable asc">
   <thead>
     <tr>
       <th title="Endpoint methods" class="no-sort"> Methods </th>
-      <th title="Endpoint path"> Path </th>
-      <th title="API documentation"> API documentation </th>
+      <th id="ep-path" title="Endpoint path"> Path </th>
+      <th id="api-doc" title="API documentation"> API documentation </th>
     </tr>
   </thead>
   <tbody>
 {% for item in site.data.config-api-endpoints -%}
   {% assign moduleList = moduleList | push: item.name %}
   {% assign methods = item.methods | split: ' ' -%}
-  {% capture file_name %}{{ item.apiDescription | split: "/" | last | replace_first: ".raml", "" | replace_first: ".yaml", ""}}{% endcapture -%}
+  {% capture file_name %}{{ item.apiDescription | split: "/" | last | replace_first: ".raml", "" | replace_first: ".yaml", "" | replace_first: ".yml", "" }}{% endcapture -%}
   {% assign directory = "s" -%}
   {% if item.apiType == "raml" %}
     {% assign directory = "p" %}
@@ -77,6 +77,14 @@ Listed endpoints count: {{ site.data.config-api-endpoints.size }}
   </tbody>
 </table>
 <script src="https://tofsjonas.github.io/sortable/sortable.min.js"></script>
+<script>
+  window.addEventListener('load', function () {
+    const el = document.getElementById('ep-path')
+    if (el) {
+      el.click()
+    }
+  })
+</script>
 
 ## Further information
 

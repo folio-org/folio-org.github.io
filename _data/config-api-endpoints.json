@@ -420,6 +420,34 @@
     "path": "/accounts/{accountId}/waive"
   },
   {
+    "apiDescription": "ramls/acquisitions-units.raml",
+    "apiType": "raml",
+    "methods": "get:acquisitions_units_memberships_get post:acquisitions_units_memberships_post",
+    "name": "mod-orders",
+    "path": "/acquisitions-units/memberships"
+  },
+  {
+    "apiDescription": "ramls/acquisitions-units.raml",
+    "apiType": "raml",
+    "methods": "delete:acquisitions_units_memberships__id__delete get:acquisitions_units_memberships__id__get put:acquisitions_units_memberships__id__put",
+    "name": "mod-orders",
+    "path": "/acquisitions-units/memberships/{id}"
+  },
+  {
+    "apiDescription": "ramls/acquisitions-units.raml",
+    "apiType": "raml",
+    "methods": "get:acquisitions_units_units_get post:acquisitions_units_units_post",
+    "name": "mod-orders",
+    "path": "/acquisitions-units/units"
+  },
+  {
+    "apiDescription": "ramls/acquisitions-units.raml",
+    "apiType": "raml",
+    "methods": "delete:acquisitions_units_units__id__delete get:acquisitions_units_units__id__get put:acquisitions_units_units__id__put",
+    "name": "mod-orders",
+    "path": "/acquisitions-units/units/{id}"
+  },
+  {
     "apiDescription": "ramls/actual-cost-record-storage.raml",
     "apiType": "raml",
     "methods": "get:actual_cost_record_storage_actual_cost_records_get post:actual_cost_record_storage_actual_cost_records_post",
@@ -432,6 +460,20 @@
     "methods": "delete:actual_cost_record_storage_actual_cost_records__id__delete get:actual_cost_record_storage_actual_cost_records__id__get put:actual_cost_record_storage_actual_cost_records__id__put",
     "name": "mod-circulation-storage",
     "path": "/actual-cost-record-storage/actual-cost-records/{id}"
+  },
+  {
+    "apiDescription": "ramls/addressTypes.raml",
+    "apiType": "raml",
+    "methods": "get:addresstypes_get post:addresstypes_post",
+    "name": "mod-users",
+    "path": "/addresstypes"
+  },
+  {
+    "apiDescription": "ramls/addressTypes.raml",
+    "apiType": "raml",
+    "methods": "delete:addresstypes__addresstypeid__delete get:addresstypes__addresstypeid__get put:addresstypes__addresstypeid__put",
+    "name": "mod-users",
+    "path": "/addresstypes/{addresstypeId}"
   },
   {
     "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
@@ -754,6 +796,97 @@
     "methods": "delete:authority_storage_reindex__id__delete get:authority_storage_reindex__id__get",
     "name": "mod-inventory-storage",
     "path": "/authority-storage/reindex/{id}"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "get:bl_users_get",
+    "name": "mod-users-bl",
+    "path": "/bl-users"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "get:bl_usersself_get",
+    "name": "mod-users-bl",
+    "path": "/bl-users/_self"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "delete:bl_users_by_id__id__delete get:bl_users_by_id__id__get",
+    "name": "mod-users-bl",
+    "path": "/bl-users/by-id/{id}"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "get:bl_users_by_id__id__open_transactions_get",
+    "name": "mod-users-bl",
+    "path": "/bl-users/by-id/{id}/open-transactions"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "get:bl_users_by_username__username__get",
+    "name": "mod-users-bl",
+    "path": "/bl-users/by-username/{username}"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "get:bl_users_by_username__username__open_transactions_get",
+    "name": "mod-users-bl",
+    "path": "/bl-users/by-username/{username}/open-transactions"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "post:bl_users_forgotten_password_post",
+    "name": "mod-users-bl",
+    "path": "/bl-users/forgotten/password"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "post:bl_users_forgotten_username_post",
+    "name": "mod-users-bl",
+    "path": "/bl-users/forgotten/username"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "post:bl_users_login_post",
+    "name": "mod-users-bl",
+    "path": "/bl-users/login"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "post:bl_users_password_reset_link_post",
+    "name": "mod-users-bl",
+    "path": "/bl-users/password-reset/link"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "post:bl_users_password_reset_reset_post",
+    "name": "mod-users-bl",
+    "path": "/bl-users/password-reset/reset"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "post:bl_users_password_reset_validate_post",
+    "name": "mod-users-bl",
+    "path": "/bl-users/password-reset/validate"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "methods": "post:bl_users_settings_myprofile_password_post",
+    "name": "mod-users-bl",
+    "path": "/bl-users/settings/myprofile/password"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
@@ -1218,6 +1351,20 @@
     "path": "/contributor-types/{contributorTypeId}"
   },
   {
+    "apiDescription": "ramls/form-configs-storage.raml",
+    "apiType": "raml",
+    "methods": "get:converter_storage_forms_configs_get post:converter_storage_forms_configs_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/converter-storage/forms/configs"
+  },
+  {
+    "apiDescription": "ramls/form-configs-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:converter_storage_forms_configs__formname__delete get:converter_storage_forms_configs__formname__get put:converter_storage_forms_configs__formname__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/converter-storage/forms/configs/{formName}"
+  },
+  {
     "apiDescription": "ramls/courses.raml",
     "apiType": "raml",
     "methods": "delete:coursereserves_copyrightstatuses_delete get:coursereserves_copyrightstatuses_get post:coursereserves_copyrightstatuses_post",
@@ -1496,6 +1643,125 @@
     "methods": "get:data_export_transformation_fields_get",
     "name": "mod-data-export",
     "path": "/data-export/transformation-fields"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_actionprofiles_get post:data_import_profiles_actionprofiles_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/actionProfiles"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:data_import_profiles_actionprofiles__id__delete get:data_import_profiles_actionprofiles__id__get put:data_import_profiles_actionprofiles__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/actionProfiles/{id}"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_entitytypes_get",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/entityTypes"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_jobprofiles_get post:data_import_profiles_jobprofiles_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/jobProfiles"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:data_import_profiles_jobprofiles__id__delete get:data_import_profiles_jobprofiles__id__get put:data_import_profiles_jobprofiles__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/jobProfiles/{id}"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_jobprofilesnapshots__id__get post:data_import_profiles_jobprofilesnapshots__id__post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/jobProfileSnapshots/{id}"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_mappingprofiles_get post:data_import_profiles_mappingprofiles_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/mappingProfiles"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:data_import_profiles_mappingprofiles__id__delete get:data_import_profiles_mappingprofiles__id__get put:data_import_profiles_mappingprofiles__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/mappingProfiles/{id}"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_matchprofiles_get post:data_import_profiles_matchprofiles_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/matchProfiles"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:data_import_profiles_matchprofiles__id__delete get:data_import_profiles_matchprofiles__id__get put:data_import_profiles_matchprofiles__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/matchProfiles/{id}"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_profileassociations_get post:data_import_profiles_profileassociations_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/profileAssociations"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "delete:data_import_profiles_profileassociations__id__delete get:data_import_profiles_profileassociations__id__get put:data_import_profiles_profileassociations__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/profileAssociations/{id}"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_profileassociations__id__details_get",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/profileAssociations/{id}/details"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_profileassociations__id__masters_get",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/profileAssociations/{id}/masters"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_profiles_profilesnapshots__profileid__get",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/profileSnapshots/{profileId}"
+  },
+  {
+    "apiDescription": "ramls/departments.raml",
+    "apiType": "raml",
+    "methods": "get:departments_get post:departments_post",
+    "name": "mod-users",
+    "path": "/departments"
+  },
+  {
+    "apiDescription": "ramls/departments.raml",
+    "apiType": "raml",
+    "methods": "delete:departments__departmentid__delete get:departments__departmentid__get put:departments__departmentid__put",
+    "name": "mod-users",
+    "path": "/departments/{departmentId}"
   },
   {
     "apiDescription": "ramls/access-types.raml",
@@ -1981,6 +2247,20 @@
     "path": "/feefines/{feefineId}"
   },
   {
+    "apiDescription": "ramls/field-protection-settings.raml",
+    "apiType": "raml",
+    "methods": "get:field_protection_settings_marc_get post:field_protection_settings_marc_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/field-protection-settings/marc"
+  },
+  {
+    "apiDescription": "ramls/field-protection-settings.raml",
+    "apiType": "raml",
+    "methods": "delete:field_protection_settings_marc__id__delete get:field_protection_settings_marc__id__get put:field_protection_settings_marc__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/field-protection-settings/marc/{id}"
+  },
+  {
     "apiDescription": "ramls/budget_expense_class.raml",
     "apiType": "raml",
     "methods": "get:finance_storage_budget_expense_classes_get post:finance_storage_budget_expense_classes_post",
@@ -2147,6 +2427,20 @@
     "methods": "delete:finance_storage_ledger_rollovers_errors__id__delete get:finance_storage_ledger_rollovers_errors__id__get put:finance_storage_ledger_rollovers_errors__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/ledger-rollovers-errors/{id}"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover_logs.raml",
+    "apiType": "raml",
+    "methods": "get:finance_storage_ledger_rollovers_logs_get",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/ledger-rollovers-logs"
+  },
+  {
+    "apiDescription": "ramls/ledger_rollover_logs.raml",
+    "apiType": "raml",
+    "methods": "get:finance_storage_ledger_rollovers_logs__id__get",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/ledger-rollovers-logs/{id}"
   },
   {
     "apiDescription": "ramls/ledger_rollover_progress.raml",
@@ -2422,6 +2716,20 @@
     "path": "/finance/ledger-rollovers-errors"
   },
   {
+    "apiDescription": "ramls/ledger-rollover-logs.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledger_rollovers_logs_get",
+    "name": "mod-finance",
+    "path": "/finance/ledger-rollovers-logs"
+  },
+  {
+    "apiDescription": "ramls/ledger-rollover-logs.raml",
+    "apiType": "raml",
+    "methods": "get:finance_ledger_rollovers_logs__id__get",
+    "name": "mod-finance",
+    "path": "/finance/ledger-rollovers-logs/{id}"
+  },
+  {
     "apiDescription": "ramls/ledger_rollover_progress.raml",
     "apiType": "raml",
     "methods": "get:finance_ledger_rollovers_progress_get post:finance_ledger_rollovers_progress_post",
@@ -2595,6 +2903,20 @@
     "methods": "get:gobi_validate_get post:gobi_validate_post",
     "name": "mod-gobi",
     "path": "/gobi/validate"
+  },
+  {
+    "apiDescription": "ramls/groups.raml",
+    "apiType": "raml",
+    "methods": "get:groups_get post:groups_post",
+    "name": "mod-users",
+    "path": "/groups"
+  },
+  {
+    "apiDescription": "ramls/groups.raml",
+    "apiType": "raml",
+    "methods": "delete:groups__groupid__delete get:groups__groupid__get put:groups__groupid__put",
+    "name": "mod-users",
+    "path": "/groups/{groupId}"
   },
   {
     "apiDescription": "ramls/holdings-note-type.raml",
@@ -3423,6 +3745,48 @@
     "path": "/nature-of-content-terms/{id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/notes.yml",
+    "apiType": "oas",
+    "methods": "get:operation/getNoteCollectionByLink",
+    "name": "mod-notes",
+    "path": "/note-links/domain/{domain}/type/{objectType}/id/{objectId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/notes.yml",
+    "apiType": "oas",
+    "methods": "put:operation/updateLinks",
+    "name": "mod-notes",
+    "path": "/note-links/type/{objectType}/id/{objectId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/notes.yml",
+    "apiType": "oas",
+    "methods": "get:operation/getNoteTypeCollection post:operation/createNoteType",
+    "name": "mod-notes",
+    "path": "/note-types"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/notes.yml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteNoteType get:operation/getNoteType put:operation/updateNoteType",
+    "name": "mod-notes",
+    "path": "/note-types/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/notes.yml",
+    "apiType": "oas",
+    "methods": "get:operation/getNoteCollection post:operation/createNote",
+    "name": "mod-notes",
+    "path": "/notes"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/notes.yml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteNote get:operation/getNote put:operation/updateNote",
+    "name": "mod-notes",
+    "path": "/notes/{id}"
+  },
+  {
     "apiDescription": "ramls/oai-pmh-view.raml",
     "apiType": "raml",
     "methods": "post:oai_pmh_view_enrichedinstances_post",
@@ -3458,6 +3822,111 @@
     "path": "/orders"
   },
   {
+    "apiDescription": "ramls/acquisition_method.raml",
+    "apiType": "raml",
+    "methods": "get:orders_acquisition_methods_get post:orders_acquisition_methods_post",
+    "name": "mod-orders",
+    "path": "/orders/acquisition-methods"
+  },
+  {
+    "apiDescription": "ramls/acquisition_method.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_acquisition_methods__id__delete get:orders_acquisition_methods__id__get put:orders_acquisition_methods__id__put",
+    "name": "mod-orders",
+    "path": "/orders/acquisition-methods/{id}"
+  },
+  {
+    "apiDescription": "ramls/check-in.raml",
+    "apiType": "raml",
+    "methods": "post:orders_check_in_post",
+    "name": "mod-orders",
+    "path": "/orders/check-in"
+  },
+  {
+    "apiDescription": "ramls/order.raml",
+    "apiType": "raml",
+    "methods": "get:orders_composite_orders_get post:orders_composite_orders_post",
+    "name": "mod-orders",
+    "path": "/orders/composite-orders"
+  },
+  {
+    "apiDescription": "ramls/order.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_composite_orders__id__delete get:orders_composite_orders__id__get put:orders_composite_orders__id__put",
+    "name": "mod-orders",
+    "path": "/orders/composite-orders/{id}"
+  },
+  {
+    "apiDescription": "ramls/order.raml",
+    "apiType": "raml",
+    "methods": "post:orders_composite_orders__id__re_encumber_post",
+    "name": "mod-orders",
+    "path": "/orders/composite-orders/{id}/re-encumber"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "get:orders_configuration_prefixes_get post:orders_configuration_prefixes_post",
+    "name": "mod-orders",
+    "path": "/orders/configuration/prefixes"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_configuration_prefixes__id__delete get:orders_configuration_prefixes__id__get put:orders_configuration_prefixes__id__put",
+    "name": "mod-orders",
+    "path": "/orders/configuration/prefixes/{id}"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "get:orders_configuration_reasons_for_closure_get post:orders_configuration_reasons_for_closure_post",
+    "name": "mod-orders",
+    "path": "/orders/configuration/reasons-for-closure"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_configuration_reasons_for_closure__id__delete get:orders_configuration_reasons_for_closure__id__get put:orders_configuration_reasons_for_closure__id__put",
+    "name": "mod-orders",
+    "path": "/orders/configuration/reasons-for-closure/{id}"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "get:orders_configuration_suffixes_get post:orders_configuration_suffixes_post",
+    "name": "mod-orders",
+    "path": "/orders/configuration/suffixes"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_configuration_suffixes__id__delete get:orders_configuration_suffixes__id__get put:orders_configuration_suffixes__id__put",
+    "name": "mod-orders",
+    "path": "/orders/configuration/suffixes/{id}"
+  },
+  {
+    "apiDescription": "ramls/holding-summary.raml",
+    "apiType": "raml",
+    "methods": "get:orders_holding_summary__id__get",
+    "name": "mod-orders",
+    "path": "/orders/holding-summary/{id}"
+  },
+  {
+    "apiDescription": "ramls/order-lines.raml",
+    "apiType": "raml",
+    "methods": "get:orders_order_lines_get post:orders_order_lines_post",
+    "name": "mod-orders",
+    "path": "/orders/order-lines"
+  },
+  {
+    "apiDescription": "ramls/order-lines.raml",
+    "apiType": "raml",
+    "methods": "put:orders_order_lines_fund_distributions_validate_put",
+    "name": "mod-orders",
+    "path": "/orders/order-lines/fund-distributions/validate"
+  },
+  {
     "apiDescription": "ramls/edge-orders.raml",
     "apiType": "raml",
     "methods": "get:orders_order_lines__id__get put:orders_order_lines__id__put",
@@ -3465,11 +3934,249 @@
     "path": "/orders/order-lines/{id}"
   },
   {
+    "apiDescription": "ramls/order-lines.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_order_lines__id__delete get:orders_order_lines__id__get patch:orders_order_lines__id__patch put:orders_order_lines__id__put",
+    "name": "mod-orders",
+    "path": "/orders/order-lines/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/ebsconet.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getEbsconetOrderLine put:operation/putEbsconetOrderLine",
+    "name": "mod-ebsconet",
+    "path": "/orders/order-lines/{poLineNumber}"
+  },
+  {
+    "apiDescription": "ramls/order-templates.raml",
+    "apiType": "raml",
+    "methods": "get:orders_order_templates_get post:orders_order_templates_post",
+    "name": "mod-orders",
+    "path": "/orders/order-templates"
+  },
+  {
+    "apiDescription": "ramls/order-templates.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_order_templates__id__delete get:orders_order_templates__id__get put:orders_order_templates__id__put",
+    "name": "mod-orders",
+    "path": "/orders/order-templates/{id}"
+  },
+  {
+    "apiDescription": "ramls/pieces.raml",
+    "apiType": "raml",
+    "methods": "get:orders_pieces_get post:orders_pieces_post",
+    "name": "mod-orders",
+    "path": "/orders/pieces"
+  },
+  {
+    "apiDescription": "ramls/pieces.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_pieces__id__delete get:orders_pieces__id__get put:orders_pieces__id__put",
+    "name": "mod-orders",
+    "path": "/orders/pieces/{id}"
+  },
+  {
+    "apiDescription": "ramls/po-number.raml",
+    "apiType": "raml",
+    "methods": "get:orders_po_number_get",
+    "name": "mod-orders",
+    "path": "/orders/po-number"
+  },
+  {
+    "apiDescription": "ramls/po-number.raml",
+    "apiType": "raml",
+    "methods": "post:orders_po_number_validate_post",
+    "name": "mod-orders",
+    "path": "/orders/po-number/validate"
+  },
+  {
+    "apiDescription": "ramls/receive.raml",
+    "apiType": "raml",
+    "methods": "post:orders_receive_post",
+    "name": "mod-orders",
+    "path": "/orders/receive"
+  },
+  {
+    "apiDescription": "ramls/receiving-history.raml",
+    "apiType": "raml",
+    "methods": "get:orders_receiving_history_get",
+    "name": "mod-orders",
+    "path": "/orders/receiving-history"
+  },
+  {
+    "apiDescription": "ramls/rollover.raml",
+    "apiType": "raml",
+    "methods": "post:orders_rollover_post",
+    "name": "mod-orders",
+    "path": "/orders/rollover"
+  },
+  {
+    "apiDescription": "ramls/titles.raml",
+    "apiType": "raml",
+    "methods": "get:orders_titles_get post:orders_titles_post",
+    "name": "mod-orders",
+    "path": "/orders/titles"
+  },
+  {
+    "apiDescription": "ramls/titles.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_titles__id__delete get:orders_titles__id__get put:orders_titles__id__put",
+    "name": "mod-orders",
+    "path": "/orders/titles/{id}"
+  },
+  {
     "apiDescription": "ramls/edge-orders.raml",
     "apiType": "raml",
     "methods": "get:orders_validate_get post:orders_validate_post",
     "name": "edge-orders",
     "path": "/orders/validate"
+  },
+  {
+    "apiDescription": "ramls/address.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_addresses_get post:organizations_storage_addresses_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/addresses"
+  },
+  {
+    "apiDescription": "ramls/address.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_addresses__id__delete get:organizations_storage_addresses__id__get put:organizations_storage_addresses__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/addresses/{id}"
+  },
+  {
+    "apiDescription": "ramls/category.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_categories_get post:organizations_storage_categories_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/categories"
+  },
+  {
+    "apiDescription": "ramls/category.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_categories__id__delete get:organizations_storage_categories__id__get put:organizations_storage_categories__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/categories/{id}"
+  },
+  {
+    "apiDescription": "ramls/contact.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_contacts_get post:organizations_storage_contacts_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/contacts"
+  },
+  {
+    "apiDescription": "ramls/contact.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_contacts__id__delete get:organizations_storage_contacts__id__get put:organizations_storage_contacts__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/contacts/{id}"
+  },
+  {
+    "apiDescription": "ramls/email.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_emails_get post:organizations_storage_emails_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/emails"
+  },
+  {
+    "apiDescription": "ramls/email.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_emails__id__delete get:organizations_storage_emails__id__get put:organizations_storage_emails__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/emails/{id}"
+  },
+  {
+    "apiDescription": "ramls/interface.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_interfaces_get post:organizations_storage_interfaces_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/interfaces"
+  },
+  {
+    "apiDescription": "ramls/interface.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_interfaces__id__delete get:organizations_storage_interfaces__id__get put:organizations_storage_interfaces__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/interfaces/{id}"
+  },
+  {
+    "apiDescription": "ramls/interface.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_interfaces__id__credentials_delete get:organizations_storage_interfaces__id__credentials_get post:organizations_storage_interfaces__id__credentials_post put:organizations_storage_interfaces__id__credentials_put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/interfaces/{id}/credentials"
+  },
+  {
+    "apiDescription": "ramls/organization_type.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_organization_types_get post:organizations_storage_organization_types_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/organization-types"
+  },
+  {
+    "apiDescription": "ramls/organization_type.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_organization_types__id__delete get:organizations_storage_organization_types__id__get put:organizations_storage_organization_types__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/organization-types/{id}"
+  },
+  {
+    "apiDescription": "ramls/organization.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_organizations_get post:organizations_storage_organizations_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/organizations"
+  },
+  {
+    "apiDescription": "ramls/organization.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_organizations__id__delete get:organizations_storage_organizations__id__get put:organizations_storage_organizations__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/organizations/{id}"
+  },
+  {
+    "apiDescription": "ramls/phone_number.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_phone_numbers_get post:organizations_storage_phone_numbers_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/phone-numbers"
+  },
+  {
+    "apiDescription": "ramls/phone_number.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_phone_numbers__id__delete get:organizations_storage_phone_numbers__id__get put:organizations_storage_phone_numbers__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/phone-numbers/{id}"
+  },
+  {
+    "apiDescription": "ramls/url.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_storage_urls_get post:organizations_storage_urls_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/urls"
+  },
+  {
+    "apiDescription": "ramls/url.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_storage_urls__id__delete get:organizations_storage_urls__id__get put:organizations_storage_urls__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/urls/{id}"
+  },
+  {
+    "apiDescription": "ramls/organizations.raml",
+    "apiType": "raml",
+    "methods": "get:organizations_organizations_get post:organizations_organizations_post",
+    "name": "mod-organizations",
+    "path": "/organizations/organizations"
+  },
+  {
+    "apiDescription": "ramls/organizations.raml",
+    "apiType": "raml",
+    "methods": "delete:organizations_organizations__id__delete get:organizations_organizations__id__get put:organizations_organizations__id__put",
+    "name": "mod-organizations",
+    "path": "/organizations/organizations/{id}"
   },
   {
     "apiDescription": "ramls/overdue-fine-policy.raml",
@@ -3498,6 +4205,13 @@
     "methods": "delete:owners__ownerid__delete get:owners__ownerid__get put:owners__ownerid__put",
     "name": "mod-feesfines",
     "path": "/owners/{ownerId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/password-validator.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/validatePassword",
+    "name": "mod-password-validator",
+    "path": "/password/validate"
   },
   {
     "apiDescription": "ramls/patron-action-session.raml",
@@ -3533,6 +4247,20 @@
     "methods": "delete:patron_notice_policy_storage_patron_notice_policies__patronnoticepolicyid__delete get:patron_notice_policy_storage_patron_notice_policies__patronnoticepolicyid__get put:patron_notice_policy_storage_patron_notice_policies__patronnoticepolicyid__put",
     "name": "mod-circulation-storage",
     "path": "/patron-notice-policy-storage/patron-notice-policies/{patronNoticePolicyId}"
+  },
+  {
+    "apiDescription": "ramls/patronpin.raml",
+    "apiType": "raml",
+    "methods": "delete:patron_pin_delete post:patron_pin_post",
+    "name": "mod-users",
+    "path": "/patron-pin"
+  },
+  {
+    "apiDescription": "ramls/patronpin.raml",
+    "apiType": "raml",
+    "methods": "post:patron_pin_verify_post",
+    "name": "mod-users",
+    "path": "/patron-pin/verify"
   },
   {
     "apiDescription": "ramls/edge-patron.raml",
@@ -3654,11 +4382,53 @@
     "path": "/preceding-succeeding-titles/{precedingSucceedingTitleId}"
   },
   {
+    "apiDescription": "ramls/proxiesFor.raml",
+    "apiType": "raml",
+    "methods": "get:proxiesfor_get post:proxiesfor_post",
+    "name": "mod-users",
+    "path": "/proxiesfor"
+  },
+  {
+    "apiDescription": "ramls/proxiesFor.raml",
+    "apiType": "raml",
+    "methods": "delete:proxiesfor__id__delete get:proxiesfor__id__get put:proxiesfor__id__put",
+    "name": "mod-users",
+    "path": "/proxiesfor/{id}"
+  },
+  {
     "apiDescription": "ramls/record-bulk.raml",
     "apiType": "raml",
     "methods": "get:record_bulk_ids_get",
     "name": "mod-inventory-storage",
     "path": "/record-bulk/ids"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getRecordByExternalId post:null",
+    "name": "mod-quick-marc",
+    "path": "/records"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getRecordCreationStatus",
+    "name": "mod-quick-marc",
+    "path": "/records/status"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/records-editor-async.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteRecordByExternalId put:operation/putRecord",
+    "name": "mod-quick-marc",
+    "path": "/records/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/token-sign-legacy",
+    "name": "mod-authtoken",
+    "path": "/refreshtoken"
   },
   {
     "apiDescription": "ramls/refunds.raml",
@@ -3925,6 +4695,20 @@
     "methods": "post:rmbtests_teststream_post",
     "name": "raml-module-builder",
     "path": "/rmbtests/testStream"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/validator-registry.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getTenantRules post:operation/postTenantRules put:operation/putTenantRule",
+    "name": "mod-password-validator",
+    "path": "/rules"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/validator-registry.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getTenantRuleById",
+    "name": "mod-password-validator",
+    "path": "/rules/{ruleId}"
   },
   {
     "apiDescription": "ramls/saml-login.raml",
@@ -4207,6 +4991,27 @@
     "path": "/tlr-feature-toggle-job/start"
   },
   {
+    "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/token-legacy",
+    "name": "mod-authtoken",
+    "path": "/token"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/token-refresh",
+    "name": "mod-authtoken",
+    "path": "/token/refresh"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/token-sign",
+    "name": "mod-authtoken",
+    "path": "/token/sign"
+  },
+  {
     "apiDescription": "ramls/transfer-criteria.raml",
     "apiType": "raml",
     "methods": "get:transfer_criterias_get post:transfer_criterias_post",
@@ -4240,6 +5045,34 @@
     "methods": "post:user_import_post",
     "name": "mod-user-import",
     "path": "/user-import"
+  },
+  {
+    "apiDescription": "ramls/users.raml",
+    "apiType": "raml",
+    "methods": "delete:users_delete get:users_get post:users_post",
+    "name": "mod-users",
+    "path": "/users"
+  },
+  {
+    "apiDescription": "ramls/users.raml",
+    "apiType": "raml",
+    "methods": "post:users_expire_timer_post",
+    "name": "mod-users",
+    "path": "/users/expire/timer"
+  },
+  {
+    "apiDescription": "ramls/users.raml",
+    "apiType": "raml",
+    "methods": "delete:users__userid__delete get:users__userid__get put:users__userid__put",
+    "name": "mod-users",
+    "path": "/users/{userId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/ebsconet.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getValidation",
+    "name": "mod-ebsconet",
+    "path": "/validate"
   },
   {
     "apiDescription": "ramls/waiver.raml",
