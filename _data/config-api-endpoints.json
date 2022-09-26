@@ -798,6 +798,90 @@
     "path": "/authority-storage/reindex/{id}"
   },
   {
+    "apiDescription": "ramls/eventHandlers.raml",
+    "apiType": "raml",
+    "methods": "post:automated_patron_blocks_handlers_fee_fine_balance_changed_post",
+    "name": "mod-patron-blocks",
+    "path": "/automated-patron-blocks/handlers/fee-fine-balance-changed"
+  },
+  {
+    "apiDescription": "ramls/eventHandlers.raml",
+    "apiType": "raml",
+    "methods": "post:automated_patron_blocks_handlers_item_aged_to_lost_post",
+    "name": "mod-patron-blocks",
+    "path": "/automated-patron-blocks/handlers/item-aged-to-lost"
+  },
+  {
+    "apiDescription": "ramls/eventHandlers.raml",
+    "apiType": "raml",
+    "methods": "post:automated_patron_blocks_handlers_item_checked_in_post",
+    "name": "mod-patron-blocks",
+    "path": "/automated-patron-blocks/handlers/item-checked-in"
+  },
+  {
+    "apiDescription": "ramls/eventHandlers.raml",
+    "apiType": "raml",
+    "methods": "post:automated_patron_blocks_handlers_item_checked_out_post",
+    "name": "mod-patron-blocks",
+    "path": "/automated-patron-blocks/handlers/item-checked-out"
+  },
+  {
+    "apiDescription": "ramls/eventHandlers.raml",
+    "apiType": "raml",
+    "methods": "post:automated_patron_blocks_handlers_item_claimed_returned_post",
+    "name": "mod-patron-blocks",
+    "path": "/automated-patron-blocks/handlers/item-claimed-returned"
+  },
+  {
+    "apiDescription": "ramls/eventHandlers.raml",
+    "apiType": "raml",
+    "methods": "post:automated_patron_blocks_handlers_item_declared_lost_post",
+    "name": "mod-patron-blocks",
+    "path": "/automated-patron-blocks/handlers/item-declared-lost"
+  },
+  {
+    "apiDescription": "ramls/eventHandlers.raml",
+    "apiType": "raml",
+    "methods": "post:automated_patron_blocks_handlers_loan_closed_post",
+    "name": "mod-patron-blocks",
+    "path": "/automated-patron-blocks/handlers/loan-closed"
+  },
+  {
+    "apiDescription": "ramls/eventHandlers.raml",
+    "apiType": "raml",
+    "methods": "post:automated_patron_blocks_handlers_loan_due_date_changed_post",
+    "name": "mod-patron-blocks",
+    "path": "/automated-patron-blocks/handlers/loan-due-date-changed"
+  },
+  {
+    "apiDescription": "ramls/automated-patron-blocks.raml",
+    "apiType": "raml",
+    "methods": "post:automated_patron_blocks_synchronization_job_post",
+    "name": "mod-patron-blocks",
+    "path": "/automated-patron-blocks/synchronization/job"
+  },
+  {
+    "apiDescription": "ramls/automated-patron-blocks.raml",
+    "apiType": "raml",
+    "methods": "get:automated_patron_blocks_synchronization_job__syncjobid__get",
+    "name": "mod-patron-blocks",
+    "path": "/automated-patron-blocks/synchronization/job/{syncJobId}"
+  },
+  {
+    "apiDescription": "ramls/automated-patron-blocks.raml",
+    "apiType": "raml",
+    "methods": "post:automated_patron_blocks_synchronization_start_post",
+    "name": "mod-patron-blocks",
+    "path": "/automated-patron-blocks/synchronization/start"
+  },
+  {
+    "apiDescription": "ramls/automated-patron-blocks.raml",
+    "apiType": "raml",
+    "methods": "get:automated_patron_blocks__userid__get",
+    "name": "mod-patron-blocks",
+    "path": "/automated-patron-blocks/{userId}"
+  },
+  {
     "apiDescription": "ramls/mod-users-bl.raml",
     "apiType": "raml",
     "methods": "get:bl_users_get",
@@ -4235,6 +4319,34 @@
     "path": "/patron-action-session-storage/patron-action-sessions/{patronSessionId}"
   },
   {
+    "apiDescription": "ramls/patron-block-conditions.raml",
+    "apiType": "raml",
+    "methods": "get:patron_block_conditions_get",
+    "name": "mod-patron-blocks",
+    "path": "/patron-block-conditions"
+  },
+  {
+    "apiDescription": "ramls/patron-block-conditions.raml",
+    "apiType": "raml",
+    "methods": "get:patron_block_conditions__patronblockconditionid__get put:patron_block_conditions__patronblockconditionid__put",
+    "name": "mod-patron-blocks",
+    "path": "/patron-block-conditions/{patronBlockConditionId}"
+  },
+  {
+    "apiDescription": "ramls/patron-block-limits.raml",
+    "apiType": "raml",
+    "methods": "get:patron_block_limits_get post:patron_block_limits_post",
+    "name": "mod-patron-blocks",
+    "path": "/patron-block-limits"
+  },
+  {
+    "apiDescription": "ramls/patron-block-limits.raml",
+    "apiType": "raml",
+    "methods": "delete:patron_block_limits__patronblocklimitid__delete get:patron_block_limits__patronblocklimitid__get put:patron_block_limits__patronblocklimitid__put",
+    "name": "mod-patron-blocks",
+    "path": "/patron-block-limits/{patronBlockLimitId}"
+  },
+  {
     "apiDescription": "ramls/patron-notice-policy.raml",
     "apiType": "raml",
     "methods": "get:patron_notice_policy_storage_patron_notice_policies_get post:patron_notice_policy_storage_patron_notice_policies_post",
@@ -4270,10 +4382,24 @@
     "path": "/patron/account/{id}"
   },
   {
+    "apiDescription": "ramls/patron.raml",
+    "apiType": "raml",
+    "methods": "get:patron_account__id__get",
+    "name": "mod-patron",
+    "path": "/patron/account/{id}"
+  },
+  {
     "apiDescription": "ramls/edge-patron.raml",
     "apiType": "raml",
     "methods": "post:patron_account__id__hold__holdid__cancel_post",
     "name": "edge-patron",
+    "path": "/patron/account/{id}/hold/{holdId}/cancel"
+  },
+  {
+    "apiDescription": "ramls/patron.raml",
+    "apiType": "raml",
+    "methods": "post:patron_account__id__hold__holdid__cancel_post",
+    "name": "mod-patron",
     "path": "/patron/account/{id}/hold/{holdId}/cancel"
   },
   {
@@ -4284,6 +4410,13 @@
     "path": "/patron/account/{id}/instance/{instanceId}/hold"
   },
   {
+    "apiDescription": "ramls/patron.raml",
+    "apiType": "raml",
+    "methods": "post:patron_account__id__instance__instanceid__hold_post",
+    "name": "mod-patron",
+    "path": "/patron/account/{id}/instance/{instanceId}/hold"
+  },
+  {
     "apiDescription": "ramls/edge-patron.raml",
     "apiType": "raml",
     "methods": "post:patron_account__id__item__itemid__hold_post",
@@ -4291,10 +4424,24 @@
     "path": "/patron/account/{id}/item/{itemId}/hold"
   },
   {
+    "apiDescription": "ramls/patron.raml",
+    "apiType": "raml",
+    "methods": "post:patron_account__id__item__itemid__hold_post",
+    "name": "mod-patron",
+    "path": "/patron/account/{id}/item/{itemId}/hold"
+  },
+  {
     "apiDescription": "ramls/edge-patron.raml",
     "apiType": "raml",
     "methods": "post:patron_account__id__item__itemid__renew_post",
     "name": "edge-patron",
+    "path": "/patron/account/{id}/item/{itemId}/renew"
+  },
+  {
+    "apiDescription": "ramls/patron.raml",
+    "apiType": "raml",
+    "methods": "post:patron_account__id__item__itemid__renew_post",
+    "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/renew"
   },
   {
@@ -5045,6 +5192,13 @@
     "methods": "post:user_import_post",
     "name": "mod-user-import",
     "path": "/user-import"
+  },
+  {
+    "apiDescription": "ramls/user-summary.raml",
+    "apiType": "raml",
+    "methods": "get:user_summary__userid__get",
+    "name": "mod-patron-blocks",
+    "path": "/user-summary/{userId}"
   },
   {
     "apiDescription": "ramls/users.raml",
