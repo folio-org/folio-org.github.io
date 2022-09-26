@@ -42,6 +42,7 @@ jobs:
         commit_message: Apply automatic changes
         branch: ongoing-release-versions
         file_pattern: _data/*.json
+
     - name: Run if changes have been detected
       if: ${{ steps.auto-commit-action.outputs.changes_detected == 'true' }}
       run: echo "Changes were committed."
