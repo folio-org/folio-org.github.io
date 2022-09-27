@@ -40,7 +40,7 @@ jobs:
       run: brew install jd
 
     - name: Run script
-      run: python $WF_HOME/gather_schema_changes.py -b R1-2022 -l info
+      run: python $WF_HOME/gather_schema_changes.py -b R2-2022 -l info
 
     - name: Add media type
       run: echo -e 'text/plain\tdiff' | sudo tee -a /etc/mime.types
