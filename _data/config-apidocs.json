@@ -691,6 +691,7 @@
         "ramls/group-fiscal-year-summaries.raml",
         "ramls/group-fund-fiscal-year.raml",
         "ramls/groups.raml",
+        "ramls/ledger-rollover-budgets.raml",
         "ramls/ledger-rollover-errors.raml",
         "ramls/ledger-rollover-logs.raml",
         "ramls/ledger_rollover.raml",
