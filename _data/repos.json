@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-09-20T01:49:05.265552+00:00"
+    "generatedDateTime": "2022-09-28T04:38:31.180422+00:00"
   },
   "repos": [
     {
@@ -1215,7 +1215,7 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Notes on all types of objects</p>"
+      "snippetIntro": "<p>Notes on all types of objects.</p>"
     },
     {
       "defaultBranch": "master",
@@ -1426,7 +1426,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Consortial storage of bibliographical records and shareable items",
+      "description": "A service that provides a clustering storage of metadata for Data Integration purposes",
       "docDirName": null,
       "hintOas": true,
       "name": "mod-reservoir",
@@ -1434,7 +1434,7 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>A service that provides a clustering storage of metadata for the purpose of consortial re-sharing. Optimized for fast storage and retrieval performance.</p>"
+      "snippetIntro": "<p>A service that provides a clustering storage of metadata for Data Integration purposes. Optimized for fast storage and retrieval performance.</p>"
     },
     {
       "defaultBranch": "master",
