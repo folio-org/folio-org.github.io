@@ -420,6 +420,34 @@
     "path": "/accounts/{accountId}/waive"
   },
   {
+    "apiDescription": "ramls/acquisitions-unit.raml",
+    "apiType": "raml",
+    "methods": "get:acquisitions_units_storage_memberships_get post:acquisitions_units_storage_memberships_post",
+    "name": "mod-orders-storage",
+    "path": "/acquisitions-units-storage/memberships"
+  },
+  {
+    "apiDescription": "ramls/acquisitions-unit.raml",
+    "apiType": "raml",
+    "methods": "delete:acquisitions_units_storage_memberships__id__delete get:acquisitions_units_storage_memberships__id__get put:acquisitions_units_storage_memberships__id__put",
+    "name": "mod-orders-storage",
+    "path": "/acquisitions-units-storage/memberships/{id}"
+  },
+  {
+    "apiDescription": "ramls/acquisitions-unit.raml",
+    "apiType": "raml",
+    "methods": "get:acquisitions_units_storage_units_get post:acquisitions_units_storage_units_post",
+    "name": "mod-orders-storage",
+    "path": "/acquisitions-units-storage/units"
+  },
+  {
+    "apiDescription": "ramls/acquisitions-unit.raml",
+    "apiType": "raml",
+    "methods": "delete:acquisitions_units_storage_units__id__delete get:acquisitions_units_storage_units__id__get put:acquisitions_units_storage_units__id__put",
+    "name": "mod-orders-storage",
+    "path": "/acquisitions-units-storage/units/{id}"
+  },
+  {
     "apiDescription": "ramls/acquisitions-units.raml",
     "apiType": "raml",
     "methods": "get:acquisitions_units_memberships_get post:acquisitions_units_memberships_post",
@@ -4349,6 +4377,209 @@
   {
     "apiDescription": "ramls/acquisition_method.raml",
     "apiType": "raml",
+    "methods": "get:orders_storage_acquisition_methods_get post:orders_storage_acquisition_methods_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/acquisition-methods"
+  },
+  {
+    "apiDescription": "ramls/acquisition_method.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_storage_acquisition_methods__id__delete get:orders_storage_acquisition_methods__id__get put:orders_storage_acquisition_methods__id__put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/acquisition-methods/{id}"
+  },
+  {
+    "apiDescription": "ramls/alert.raml",
+    "apiType": "raml",
+    "methods": "get:orders_storage_alerts_get post:orders_storage_alerts_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/alerts"
+  },
+  {
+    "apiDescription": "ramls/alert.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_storage_alerts__id__delete get:orders_storage_alerts__id__get put:orders_storage_alerts__id__put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/alerts/{id}"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "get:orders_storage_configuration_prefixes_get post:orders_storage_configuration_prefixes_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/configuration/prefixes"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_storage_configuration_prefixes__id__delete get:orders_storage_configuration_prefixes__id__get put:orders_storage_configuration_prefixes__id__put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/configuration/prefixes/{id}"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "get:orders_storage_configuration_reasons_for_closure_get post:orders_storage_configuration_reasons_for_closure_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/configuration/reasons-for-closure"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_storage_configuration_reasons_for_closure__id__delete get:orders_storage_configuration_reasons_for_closure__id__get put:orders_storage_configuration_reasons_for_closure__id__put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/configuration/reasons-for-closure/{id}"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "get:orders_storage_configuration_suffixes_get post:orders_storage_configuration_suffixes_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/configuration/suffixes"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_storage_configuration_suffixes__id__delete get:orders_storage_configuration_suffixes__id__get put:orders_storage_configuration_suffixes__id__put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/configuration/suffixes/{id}"
+  },
+  {
+    "apiDescription": "ramls/export_history.raml",
+    "apiType": "raml",
+    "methods": "get:orders_storage_export_history_get post:orders_storage_export_history_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/export-history"
+  },
+  {
+    "apiDescription": "ramls/export_history.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_storage_export_history__id__delete get:orders_storage_export_history__id__get put:orders_storage_export_history__id__put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/export-history/{id}"
+  },
+  {
+    "apiDescription": "ramls/order-invoice-relns.raml",
+    "apiType": "raml",
+    "methods": "get:orders_storage_order_invoice_relns_get post:orders_storage_order_invoice_relns_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/order-invoice-relns"
+  },
+  {
+    "apiDescription": "ramls/order-invoice-relns.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_storage_order_invoice_relns__id__delete get:orders_storage_order_invoice_relns__id__get put:orders_storage_order_invoice_relns__id__put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/order-invoice-relns/{id}"
+  },
+  {
+    "apiDescription": "ramls/order-templates.raml",
+    "apiType": "raml",
+    "methods": "get:orders_storage_order_templates_get post:orders_storage_order_templates_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/order-templates"
+  },
+  {
+    "apiDescription": "ramls/order-templates.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_storage_order_templates__id__delete get:orders_storage_order_templates__id__get put:orders_storage_order_templates__id__put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/order-templates/{id}"
+  },
+  {
+    "apiDescription": "ramls/pieces.raml",
+    "apiType": "raml",
+    "methods": "get:orders_storage_pieces_get post:orders_storage_pieces_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/pieces"
+  },
+  {
+    "apiDescription": "ramls/pieces.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_storage_pieces__id__delete get:orders_storage_pieces__id__get put:orders_storage_pieces__id__put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/pieces/{id}"
+  },
+  {
+    "apiDescription": "ramls/po-line-number.raml",
+    "apiType": "raml",
+    "methods": "get:orders_storage_po_line_number_get",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/po-line-number"
+  },
+  {
+    "apiDescription": "ramls/po-line.raml",
+    "apiType": "raml",
+    "methods": "get:orders_storage_po_lines_get post:orders_storage_po_lines_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/po-lines"
+  },
+  {
+    "apiDescription": "ramls/po-line.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_storage_po_lines__id__delete get:orders_storage_po_lines__id__get patch:orders_storage_po_lines__id__patch put:orders_storage_po_lines__id__put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/po-lines/{id}"
+  },
+  {
+    "apiDescription": "ramls/po-number.raml",
+    "apiType": "raml",
+    "methods": "get:orders_storage_po_number_get",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/po-number"
+  },
+  {
+    "apiDescription": "ramls/purchase-order.raml",
+    "apiType": "raml",
+    "methods": "get:orders_storage_purchase_orders_get post:orders_storage_purchase_orders_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/purchase-orders"
+  },
+  {
+    "apiDescription": "ramls/purchase-order.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_storage_purchase_orders__id__delete get:orders_storage_purchase_orders__id__get put:orders_storage_purchase_orders__id__put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/purchase-orders/{id}"
+  },
+  {
+    "apiDescription": "ramls/receiving-history.raml",
+    "apiType": "raml",
+    "methods": "get:orders_storage_receiving_history_get",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/receiving-history"
+  },
+  {
+    "apiDescription": "ramls/reporting-code.raml",
+    "apiType": "raml",
+    "methods": "get:orders_storage_reporting_codes_get post:orders_storage_reporting_codes_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/reporting-codes"
+  },
+  {
+    "apiDescription": "ramls/reporting-code.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_storage_reporting_codes__id__delete get:orders_storage_reporting_codes__id__get put:orders_storage_reporting_codes__id__put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/reporting-codes/{id}"
+  },
+  {
+    "apiDescription": "ramls/titles.raml",
+    "apiType": "raml",
+    "methods": "get:orders_storage_titles_get post:orders_storage_titles_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/titles"
+  },
+  {
+    "apiDescription": "ramls/titles.raml",
+    "apiType": "raml",
+    "methods": "delete:orders_storage_titles__id__delete get:orders_storage_titles__id__get put:orders_storage_titles__id__put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/titles/{id}"
+  },
+  {
+    "apiDescription": "ramls/acquisition_method.raml",
+    "apiType": "raml",
     "methods": "get:orders_acquisition_methods_get post:orders_acquisition_methods_post",
     "name": "mod-orders",
     "path": "/orders/acquisition-methods"
@@ -4989,6 +5220,76 @@
     "methods": "delete:proxiesfor__id__delete get:proxiesfor__id__get put:proxiesfor__id__put",
     "name": "mod-users",
     "path": "/proxiesfor/{id}"
+  },
+  {
+    "apiDescription": "ramls/pubSub.raml",
+    "apiType": "raml",
+    "methods": "get:pubsub_audit_messages__eventid__payload_get",
+    "name": "mod-pubsub",
+    "path": "/pubsub/audit-messages/{eventId}/payload"
+  },
+  {
+    "apiDescription": "ramls/pubSub.raml",
+    "apiType": "raml",
+    "methods": "get:pubsub_event_types_get post:pubsub_event_types_post",
+    "name": "mod-pubsub",
+    "path": "/pubsub/event-types"
+  },
+  {
+    "apiDescription": "ramls/pubSub.raml",
+    "apiType": "raml",
+    "methods": "post:pubsub_event_types_declare_publisher_post",
+    "name": "mod-pubsub",
+    "path": "/pubsub/event-types/declare/publisher"
+  },
+  {
+    "apiDescription": "ramls/pubSub.raml",
+    "apiType": "raml",
+    "methods": "post:pubsub_event_types_declare_subscriber_post",
+    "name": "mod-pubsub",
+    "path": "/pubsub/event-types/declare/subscriber"
+  },
+  {
+    "apiDescription": "ramls/pubSub.raml",
+    "apiType": "raml",
+    "methods": "delete:pubsub_event_types__eventtypename__delete get:pubsub_event_types__eventtypename__get put:pubsub_event_types__eventtypename__put",
+    "name": "mod-pubsub",
+    "path": "/pubsub/event-types/{eventTypeName}"
+  },
+  {
+    "apiDescription": "ramls/pubSub.raml",
+    "apiType": "raml",
+    "methods": "delete:pubsub_event_types__eventtypename__publishers_delete get:pubsub_event_types__eventtypename__publishers_get",
+    "name": "mod-pubsub",
+    "path": "/pubsub/event-types/{eventTypeName}/publishers"
+  },
+  {
+    "apiDescription": "ramls/pubSub.raml",
+    "apiType": "raml",
+    "methods": "delete:pubsub_event_types__eventtypename__subscribers_delete get:pubsub_event_types__eventtypename__subscribers_get",
+    "name": "mod-pubsub",
+    "path": "/pubsub/event-types/{eventTypeName}/subscribers"
+  },
+  {
+    "apiDescription": "ramls/pubSub.raml",
+    "apiType": "raml",
+    "methods": "get:pubsub_history_get",
+    "name": "mod-pubsub",
+    "path": "/pubsub/history"
+  },
+  {
+    "apiDescription": "ramls/pubSub.raml",
+    "apiType": "raml",
+    "methods": "delete:pubsub_messaging_modules_delete",
+    "name": "mod-pubsub",
+    "path": "/pubsub/messaging-modules"
+  },
+  {
+    "apiDescription": "ramls/pubSub.raml",
+    "apiType": "raml",
+    "methods": "post:pubsub_publish_post",
+    "name": "mod-pubsub",
+    "path": "/pubsub/publish"
   },
   {
     "apiDescription": "ramls/record-bulk.raml",
