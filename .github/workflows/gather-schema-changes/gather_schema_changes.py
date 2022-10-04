@@ -32,7 +32,7 @@ import requests
 import sh
 import yaml
 
-SCRIPT_VERSION = "1.4.0"
+SCRIPT_VERSION = "1.4.1"
 
 LOGLEVELS = {
     "debug": logging.DEBUG,
