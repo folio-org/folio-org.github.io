@@ -825,16 +825,20 @@
     "config": {
       "oas": [],
       "raml": [
-        "ramls/inventory.raml",
         "ramls/inventory-batch.raml",
         "ramls/inventory-config.raml",
         "ramls/inventory-event-handlers.raml",
         "ramls/inventory-move.raml",
+        "ramls/inventory.raml",
         "ramls/isbn.raml"
       ],
       "upload": []
     },
-    "metadata": {},
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ]
+    },
     "name": "mod-inventory",
     "org": "folio-org"
   },

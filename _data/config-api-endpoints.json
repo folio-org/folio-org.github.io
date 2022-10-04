@@ -3822,6 +3822,174 @@
     "path": "/inventory-view/instances"
   },
   {
+    "apiDescription": "ramls/inventory-config.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_config_holdings_blocked_fields_get",
+    "name": "mod-inventory",
+    "path": "/inventory/config/holdings/blocked-fields"
+  },
+  {
+    "apiDescription": "ramls/inventory-config.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_config_instances_blocked_fields_get",
+    "name": "mod-inventory",
+    "path": "/inventory/config/instances/blocked-fields"
+  },
+  {
+    "apiDescription": "ramls/inventory-event-handlers.raml",
+    "apiType": "raml",
+    "methods": "post:inventory_handlers_instances_post",
+    "name": "mod-inventory",
+    "path": "/inventory/handlers/instances"
+  },
+  {
+    "apiDescription": "ramls/inventory-move.raml",
+    "apiType": "raml",
+    "methods": "post:inventory_holdings_move_post",
+    "name": "mod-inventory",
+    "path": "/inventory/holdings/move"
+  },
+  {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "methods": "put:inventory_holdings__holdingsid__put",
+    "name": "mod-inventory",
+    "path": "/inventory/holdings/{holdingsId}"
+  },
+  {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "methods": "delete:inventory_instances_delete get:inventory_instances_get post:inventory_instances_post",
+    "name": "mod-inventory",
+    "path": "/inventory/instances"
+  },
+  {
+    "apiDescription": "ramls/inventory-batch.raml",
+    "apiType": "raml",
+    "methods": "post:inventory_instances_batch_post",
+    "name": "mod-inventory",
+    "path": "/inventory/instances/batch"
+  },
+  {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "methods": "delete:inventory_instances__instanceid__delete get:inventory_instances__instanceid__get put:inventory_instances__instanceid__put",
+    "name": "mod-inventory",
+    "path": "/inventory/instances/{instanceId}"
+  },
+  {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "methods": "delete:inventory_items_delete get:inventory_items_get post:inventory_items_post",
+    "name": "mod-inventory",
+    "path": "/inventory/items"
+  },
+  {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_items_by_holdings_id_get post:inventory_items_by_holdings_id_post",
+    "name": "mod-inventory",
+    "path": "/inventory/items-by-holdings-id"
+  },
+  {
+    "apiDescription": "ramls/inventory-move.raml",
+    "apiType": "raml",
+    "methods": "post:inventory_items_move_post",
+    "name": "mod-inventory",
+    "path": "/inventory/items/move"
+  },
+  {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "methods": "delete:inventory_items__itemid__delete get:inventory_items__itemid__get put:inventory_items__itemid__put",
+    "name": "mod-inventory",
+    "path": "/inventory/items/{itemId}"
+  },
+  {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "methods": "post:inventory_items__itemid__mark_in_process_post",
+    "name": "mod-inventory",
+    "path": "/inventory/items/{itemId}/mark-in-process"
+  },
+  {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "methods": "post:inventory_items__itemid__mark_in_process_non_requestable_post",
+    "name": "mod-inventory",
+    "path": "/inventory/items/{itemId}/mark-in-process-non-requestable"
+  },
+  {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "methods": "post:inventory_items__itemid__mark_intellectual_item_post",
+    "name": "mod-inventory",
+    "path": "/inventory/items/{itemId}/mark-intellectual-item"
+  },
+  {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "methods": "post:inventory_items__itemid__mark_long_missing_post",
+    "name": "mod-inventory",
+    "path": "/inventory/items/{itemId}/mark-long-missing"
+  },
+  {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "methods": "post:inventory_items__itemid__mark_missing_post",
+    "name": "mod-inventory",
+    "path": "/inventory/items/{itemId}/mark-missing"
+  },
+  {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "methods": "post:inventory_items__itemid__mark_restricted_post",
+    "name": "mod-inventory",
+    "path": "/inventory/items/{itemId}/mark-restricted"
+  },
+  {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "methods": "post:inventory_items__itemid__mark_unavailable_post",
+    "name": "mod-inventory",
+    "path": "/inventory/items/{itemId}/mark-unavailable"
+  },
+  {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "methods": "post:inventory_items__itemid__mark_unknown_post",
+    "name": "mod-inventory",
+    "path": "/inventory/items/{itemId}/mark-unknown"
+  },
+  {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "methods": "post:inventory_items__itemid__mark_withdrawn_post",
+    "name": "mod-inventory",
+    "path": "/inventory/items/{itemId}/mark-withdrawn"
+  },
+  {
+    "apiDescription": "ramls/isbn.raml",
+    "apiType": "raml",
+    "methods": "get:isbn_convertto10_get",
+    "name": "mod-inventory",
+    "path": "/isbn/convertTo10"
+  },
+  {
+    "apiDescription": "ramls/isbn.raml",
+    "apiType": "raml",
+    "methods": "get:isbn_convertto13_get",
+    "name": "mod-inventory",
+    "path": "/isbn/convertTo13"
+  },
+  {
+    "apiDescription": "ramls/isbn.raml",
+    "apiType": "raml",
+    "methods": "get:isbn_validator_get",
+    "name": "mod-inventory",
+    "path": "/isbn/validator"
+  },
+  {
     "apiDescription": "ramls/item-damaged-statuses.raml",
     "apiType": "raml",
     "methods": "get:item_damaged_statuses_get post:item_damaged_statuses_post",
