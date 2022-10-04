@@ -43,10 +43,27 @@ using [FolioExecutionScopeFilter](src/main/java/org/folio/spring/scope/filter/Fo
 It is used by [EnrichUrlAndHeadersClient](src/main/java/org/folio/spring/client/EnrichUrlAndHeadersClient.java), to provide right tenant id and other headers for outgoing REST requests.
 It is also used in [DataSourceSchemaAdvisorBeanPostProcessor](src/main/java/org/folio/spring/config/DataSourceSchemaAdvisorBeanPostProcessor.java) for selection of the appropriate schema for sql queries.
 
-FolioExecutionContext is immutable. In order to start new execution context `FolioExecutionScopeExecutionContextManager.beginFolioExecutionContext(new DefaultFolioExecutionContext(...))` should be used. The `FolioExecutionScopeExecutionContextManager.endFolioExecutionContext()` should be called when the execution is finished.
+FolioExecutionContext is immutable. In order to start new execution context the construct
+
+```
+  try (var x = new FolioExecutionContextSetter(currentFolioExecutionContext)) {
+    chain.doFilter(request, response);
+  }
+```
+
+should be used (pick any of the available constructors).
+
+Using try-with-resources is best practice. Not using try-with-resources is error-prone, may result in a wrong tenant and should be avoided. If not using try-with-resources ensure to call `folioExecutionContextSetter.close()` when the execution is finished. Example:
+
+```
+  // Not using try-with-resources is discouraged!
+  var x = new FolioExecutionContextSetter(currentFolioExecutionContext);
+  // do some stuff
+  x.close();
+```
 
 ***CAUTION: FolioExecutionContext should not be used in asynchronous code executions (as it is stored in thread local), unless
-the appropriate data is manually set by `beginFolioExecutionContext(...)`***
+the appropriate data is manually set by using `FolioExecutionContextSetter`.***
 
 Example of asynchronous execution:   
 ```
@@ -54,12 +71,9 @@ private final FolioModuleMetadata folioModuleMetadata;
 
 @Async
 void ayncMethod(Map<String, Collection<String>> headers) {
-  var defaultFolioExecutionContext = new DefaultFolioExecutionContext(folioModuleMetadata, httpHeaders);
-  FolioExecutionScopeExecutionContextManager.beginFolioExecutionContext(defaultFolioExecutionContext);
-      
-      _your_code_here_
-      
-  FolioExecutionScopeExecutionContextManager.endFolioExecutionContext();     
+  try (var x = new FolioExecutionContextSetter(folioModuleMetadata, httpHeaders)) {
+    _your_code_here_
+  }
 }
 ```
 
