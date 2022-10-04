@@ -12,7 +12,7 @@ At this stage it happens on an approximate quarterly basis.
 
 Refer to the [Releases](https://wiki.folio.org/display/REL/) area of the Wiki for co-ordination of the next regular release, and for followup bugfix and hotfix release processes.
 The approximate dates and names for upcoming releases are also listed there, along with calendars and milestone deadlines to assist planning.
-Refer to the list of descriptive [flower-inspired names](https://wiki.folio.org/display/REL/Flower+Release+Names) (e.g. Kiwi, Lotus, Morningglory).
+Refer to the list of descriptive [flower-inspired names](https://wiki.folio.org/display/REL/Flower+Release+Names) (e.g. lotus, morning-glory, nolana).
 
 The wiki page [Release process in Jira](https://wiki.folio.org/display/REL/Release+process+in+Jira) explains the use of the special issue tracker process to manage release related activities, and to track interface versions and RMB versions.
 There is also a "Release board" to assess the current state.
