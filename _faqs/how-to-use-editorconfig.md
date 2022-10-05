@@ -11,12 +11,12 @@ Many FOLIO repositories have a `.editorconfig` configuration file at their top l
 
 ## Configure your editor
 
-Refer to [EditorConfig.org](http://editorconfig.org) which explains that some text editors have native support, whereas others need a plugin.
+Refer to [EditorConfig.org](https://editorconfig.org) which explains that some text editors have native support, whereas others need a plugin.
 
 Consult its documentation for each plugin. Note that some do not handle all EditorConfig properties.
 In such cases refer to the documentation for the particular text editor, as it might have its own facilities.
 For example, the Java text editor in Eclipse has its own configuration for `trim_trailing_whitespace`
-(see [notes](http://stackoverflow.com/questions/14178839/is-there-a-way-to-automatically-remove-trailing-spaces-in-eclipse)).
+(see [notes](https://stackoverflow.com/questions/14178839/is-there-a-way-to-automatically-remove-trailing-spaces-in-eclipse)).
 
 ## Manage project .editorconfig file
 
