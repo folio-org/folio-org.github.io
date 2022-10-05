@@ -198,6 +198,6 @@ and in the [Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/#linki
 
 - Distinguish different Slack workspaces using
   Sidebar Themes:
-  "[FOLIO orange](http://slackthemes.net/#/folio_orange)" or
-  "[FOLIO purple](http://slackthemes.net/#/folio_purple)".
+  "[FOLIO orange](https://slackthemes.net/#/folio_orange)" or
+  "[FOLIO purple](https://slackthemes.net/#/folio_purple)".
 

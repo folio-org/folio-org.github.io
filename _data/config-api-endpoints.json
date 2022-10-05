@@ -2695,6 +2695,20 @@
     "path": "/eusage-reports/title-data"
   },
   {
+    "apiDescription": "ramls/event_config.raml",
+    "apiType": "raml",
+    "methods": "get:eventconfig_get post:eventconfig_post",
+    "name": "mod-event-config",
+    "path": "/eventConfig"
+  },
+  {
+    "apiDescription": "ramls/event_config.raml",
+    "apiType": "raml",
+    "methods": "delete:eventconfig__id__delete get:eventconfig__id__get put:eventconfig__id__put",
+    "name": "mod-event-config",
+    "path": "/eventConfig/{id}"
+  },
+  {
     "apiDescription": "ramls/feefine-reports.raml",
     "apiType": "raml",
     "methods": "post:feefine_reports_cash_drawer_reconciliation_post",
@@ -4389,6 +4403,13 @@
     "path": "/material-types/{materialtypeId}"
   },
   {
+    "apiDescription": "ramls/sender.raml",
+    "apiType": "raml",
+    "methods": "post:message_delivery_post",
+    "name": "mod-sender",
+    "path": "/message-delivery"
+  },
+  {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
     "methods": "get:metadata_provider_jobexecutions_get",
@@ -4506,6 +4527,34 @@
     "methods": "delete:operation/deleteNote get:operation/getNote put:operation/updateNote",
     "name": "mod-notes",
     "path": "/notes/{id}"
+  },
+  {
+    "apiDescription": "ramls/notify.raml",
+    "apiType": "raml",
+    "methods": "get:notify_get post:notify_post",
+    "name": "mod-notify",
+    "path": "/notify"
+  },
+  {
+    "apiDescription": "ramls/notify.raml",
+    "apiType": "raml",
+    "methods": "post:notifyusername__username__post",
+    "name": "mod-notify",
+    "path": "/notify/_username/{username}"
+  },
+  {
+    "apiDescription": "ramls/notify.raml",
+    "apiType": "raml",
+    "methods": "delete:notify_userself_delete get:notify_userself_get post:notify_userself_post",
+    "name": "mod-notify",
+    "path": "/notify/user/_self"
+  },
+  {
+    "apiDescription": "ramls/notify.raml",
+    "apiType": "raml",
+    "methods": "delete:notify__id__delete get:notify__id__get put:notify__id__put",
+    "name": "mod-notify",
+    "path": "/notify/{id}"
   },
   {
     "apiDescription": "ramls/oai-pmh-view.raml",
@@ -5192,6 +5241,13 @@
     "methods": "delete:patron_block_limits__patronblocklimitid__delete get:patron_block_limits__patronblocklimitid__get put:patron_block_limits__patronblocklimitid__put",
     "name": "mod-patron-blocks",
     "path": "/patron-block-limits/{patronBlockLimitId}"
+  },
+  {
+    "apiDescription": "ramls/patron-notice.raml",
+    "apiType": "raml",
+    "methods": "post:patron_notice_post",
+    "name": "mod-notify",
+    "path": "/patron-notice"
   },
   {
     "apiDescription": "ramls/patron-notice-policy.raml",
@@ -6032,6 +6088,27 @@
     "methods": "get:null",
     "name": "mod-data-export-worker",
     "path": "/stub"
+  },
+  {
+    "apiDescription": "ramls/template-engine.raml",
+    "apiType": "raml",
+    "methods": "post:template_request_post",
+    "name": "mod-template-engine",
+    "path": "/template-request"
+  },
+  {
+    "apiDescription": "ramls/template-engine.raml",
+    "apiType": "raml",
+    "methods": "get:templates_get post:templates_post",
+    "name": "mod-template-engine",
+    "path": "/templates"
+  },
+  {
+    "apiDescription": "ramls/template-engine.raml",
+    "apiType": "raml",
+    "methods": "delete:templates__templateid__delete get:templates__templateid__get put:templates__templateid__put",
+    "name": "mod-template-engine",
+    "path": "/templates/{templateId}"
   },
   {
     "apiDescription": "ramls/tlr-feature-toggle-job.raml",

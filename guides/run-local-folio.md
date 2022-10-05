@@ -33,7 +33,7 @@ The [Primer for front-end development](/start/primer-develop-frontend/) leads to
 
 Testing a back-end module as a Docker container using a Vagrant VM.
 This might be a useful technique for testing memory management and other settings for a containerized back-end module.
-Also in preparation to [add to reference environments](/guides/install-backend-module/#ensure-local-docker).
+Also in preparation to [add to reference environments](/guides/install-backend-module/#ensure-recent-local-vm).
 
 * Bring up a FOLIO Vagrant VM (e.g. 'folio/snapshot' or 'folio/release') as normal with `vagrant up` and log in with `vagrant ssh`
 
