@@ -12,7 +12,7 @@ menuSubs:
   url: "https://docs.folio.org/docs/getting-started/installation/"
   link: yes
   index: 10
-  anchorId: folio-deployment-single-server
+  anchorId: single-server
 ---
 
 The [Overview and preparation](/tutorials/folio-vm/overview/) notes for the FOLIO VM tutorial will be relevant to various tutorials.

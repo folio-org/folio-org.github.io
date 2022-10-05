@@ -95,7 +95,7 @@ The back-end modules can also provide
 [system interfaces](https://github.com/folio-org/okapi/blob/master/doc/guide.md#system-interfaces).
 These Okapi interface names start with underscore, e.g. the Tenant Interface `_tenant`
 
-[JSON API](http://jsonapi.org/) is de facto standard for defining REST JSON interfaces.
+[JSON API](https://jsonapi.org/) is de facto standard for defining REST JSON interfaces.
 
 ## API endpoints
 
