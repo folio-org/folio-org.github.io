@@ -6,10 +6,10 @@ task :proof do
   sh "bundle exec jekyll build"
   puts "Doing html-proofer ..."
   options = {
-    :allow_hash_href => true,
-    :assume_extension => true,
     :cache => {
-      :timeframe => "6w"
+      :timeframe => {
+        :external => "6w"
+      }
     },
     :typhoeus => {
       :connecttimeout => 20,
@@ -18,7 +18,7 @@ task :proof do
     :hydra => {
       :max_concurrency => 1  # default: 200
     },
-    :url_ignore => [
+    :ignore_urls => [
       /dev\.folio\.org/,
       /localhost:/,
       /folio-org\/jenkins-pipeline-libs/,
