@@ -90,7 +90,7 @@ except in very special cases.
 
 (You only need to do this once for a project. On subsequent releases you can skip this point.)
 
-For Maven-based projects, the [Maven Release Plugin](//maven.apache.org/maven-release/maven-release-plugin)
+For Maven-based projects, the [Maven Release Plugin](https://maven.apache.org/maven-release/maven-release-plugin)
 is required.  To enable the release plugin, add the following to
 the parent POM of the project:
 

@@ -37,7 +37,7 @@ Refer to project [configuration](/faqs/how-to-integrate-coverage-reports/) infor
 
 ### Local use
 
-The [SonarLint](http://www.sonarlint.org) extension for IDEs will detect quality issues at an early stage.
+The [SonarLint](https://www.sonarlint.org) extension for IDEs will detect quality issues at an early stage.
 
 Use "Connected mode" to hook directly into our project rules.
 
