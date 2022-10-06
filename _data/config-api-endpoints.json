@@ -917,6 +917,146 @@
     "path": "/automated-patron-blocks/{userId}"
   },
   {
+    "apiDescription": "ramls/batch-group.raml",
+    "apiType": "raml",
+    "methods": "get:batch_group_storage_batch_groups_get post:batch_group_storage_batch_groups_post",
+    "name": "mod-invoice-storage",
+    "path": "/batch-group-storage/batch-groups"
+  },
+  {
+    "apiDescription": "ramls/batch-group.raml",
+    "apiType": "raml",
+    "methods": "delete:batch_group_storage_batch_groups__id__delete get:batch_group_storage_batch_groups__id__get put:batch_group_storage_batch_groups__id__put",
+    "name": "mod-invoice-storage",
+    "path": "/batch-group-storage/batch-groups/{id}"
+  },
+  {
+    "apiDescription": "ramls/batch-group.raml",
+    "apiType": "raml",
+    "methods": "get:batch_groups_get post:batch_groups_post",
+    "name": "mod-invoice",
+    "path": "/batch-groups"
+  },
+  {
+    "apiDescription": "ramls/batch-group.raml",
+    "apiType": "raml",
+    "methods": "delete:batch_groups__id__delete get:batch_groups__id__get put:batch_groups__id__put",
+    "name": "mod-invoice",
+    "path": "/batch-groups/{id}"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-exports.raml",
+    "apiType": "raml",
+    "methods": "get:batch_voucher_storage_batch_voucher_exports_get post:batch_voucher_storage_batch_voucher_exports_post",
+    "name": "mod-invoice-storage",
+    "path": "/batch-voucher-storage/batch-voucher-exports"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-exports.raml",
+    "apiType": "raml",
+    "methods": "delete:batch_voucher_storage_batch_voucher_exports__id__delete get:batch_voucher_storage_batch_voucher_exports__id__get put:batch_voucher_storage_batch_voucher_exports__id__put",
+    "name": "mod-invoice-storage",
+    "path": "/batch-voucher-storage/batch-voucher-exports/{id}"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher.raml",
+    "apiType": "raml",
+    "methods": "post:batch_voucher_storage_batch_vouchers_post",
+    "name": "mod-invoice-storage",
+    "path": "/batch-voucher-storage/batch-vouchers"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher.raml",
+    "apiType": "raml",
+    "methods": "delete:batch_voucher_storage_batch_vouchers__id__delete get:batch_voucher_storage_batch_vouchers__id__get",
+    "name": "mod-invoice-storage",
+    "path": "/batch-voucher-storage/batch-vouchers/{id}"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-export-configuration.raml",
+    "apiType": "raml",
+    "methods": "get:batch_voucher_storage_export_configurations_get post:batch_voucher_storage_export_configurations_post",
+    "name": "mod-invoice-storage",
+    "path": "/batch-voucher-storage/export-configurations"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-export-configuration.raml",
+    "apiType": "raml",
+    "methods": "delete:batch_voucher_storage_export_configurations__id__delete get:batch_voucher_storage_export_configurations__id__get put:batch_voucher_storage_export_configurations__id__put",
+    "name": "mod-invoice-storage",
+    "path": "/batch-voucher-storage/export-configurations/{id}"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-export-configuration.raml",
+    "apiType": "raml",
+    "methods": "delete:batch_voucher_storage_export_configurations__id__credentials_delete get:batch_voucher_storage_export_configurations__id__credentials_get post:batch_voucher_storage_export_configurations__id__credentials_post put:batch_voucher_storage_export_configurations__id__credentials_put",
+    "name": "mod-invoice-storage",
+    "path": "/batch-voucher-storage/export-configurations/{id}/credentials"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-exports.raml",
+    "apiType": "raml",
+    "methods": "get:batch_voucher_batch_voucher_exports_get post:batch_voucher_batch_voucher_exports_post",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/batch-voucher-exports"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-exports.raml",
+    "apiType": "raml",
+    "methods": "post:batch_voucher_batch_voucher_exports_scheduled_post",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/batch-voucher-exports/scheduled"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-exports.raml",
+    "apiType": "raml",
+    "methods": "delete:batch_voucher_batch_voucher_exports__id__delete get:batch_voucher_batch_voucher_exports__id__get put:batch_voucher_batch_voucher_exports__id__put",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/batch-voucher-exports/{id}"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-exports.raml",
+    "apiType": "raml",
+    "methods": "post:batch_voucher_batch_voucher_exports__id__upload_post",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/batch-voucher-exports/{id}/upload"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher.raml",
+    "apiType": "raml",
+    "methods": "get:batch_voucher_batch_vouchers__id__get",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/batch-vouchers/{id}"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-export-configuration.raml",
+    "apiType": "raml",
+    "methods": "get:batch_voucher_export_configurations_get post:batch_voucher_export_configurations_post",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/export-configurations"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-export-configuration.raml",
+    "apiType": "raml",
+    "methods": "delete:batch_voucher_export_configurations__id__delete get:batch_voucher_export_configurations__id__get put:batch_voucher_export_configurations__id__put",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/export-configurations/{id}"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-export-configuration.raml",
+    "apiType": "raml",
+    "methods": "get:batch_voucher_export_configurations__id__credentials_get post:batch_voucher_export_configurations__id__credentials_post put:batch_voucher_export_configurations__id__credentials_put",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/export-configurations/{id}/credentials"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-export-configuration.raml",
+    "apiType": "raml",
+    "methods": "post:batch_voucher_export_configurations__id__credentials_test_post",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/export-configurations/{id}/credentials/test"
+  },
+  {
     "apiDescription": "ramls/mod-users-bl.raml",
     "apiType": "raml",
     "methods": "get:bl_users_get",
@@ -3983,6 +4123,118 @@
     "path": "/inventory/items/{itemId}/mark-withdrawn"
   },
   {
+    "apiDescription": "ramls/invoice-line-number.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_storage_invoice_line_number_get",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/invoice-line-number"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_storage_invoice_lines_get post:invoice_storage_invoice_lines_post",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/invoice-lines"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "delete:invoice_storage_invoice_lines__id__delete get:invoice_storage_invoice_lines__id__get put:invoice_storage_invoice_lines__id__put",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/invoice-lines/{id}"
+  },
+  {
+    "apiDescription": "ramls/invoice-number.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_storage_invoice_number_get",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/invoice-number"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_storage_invoices_get post:invoice_storage_invoices_post",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/invoices"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "delete:invoice_storage_invoices__id__delete get:invoice_storage_invoices__id__get put:invoice_storage_invoices__id__put",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/invoices/{id}"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_storage_invoices__id__documents_get post:invoice_storage_invoices__id__documents_post",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/invoices/{id}/documents"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "delete:invoice_storage_invoices__id__documents__documentid__delete get:invoice_storage_invoices__id__documents__documentid__get",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/invoices/{id}/documents/{documentId}"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_invoice_lines_get post:invoice_invoice_lines_post",
+    "name": "mod-invoice",
+    "path": "/invoice/invoice-lines"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "put:invoice_invoice_lines_fund_distributions_validate_put",
+    "name": "mod-invoice",
+    "path": "/invoice/invoice-lines/fund-distributions/validate"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "delete:invoice_invoice_lines__id__delete get:invoice_invoice_lines__id__get put:invoice_invoice_lines__id__put",
+    "name": "mod-invoice",
+    "path": "/invoice/invoice-lines/{id}"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_invoice_number_get",
+    "name": "mod-invoice",
+    "path": "/invoice/invoice-number"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_invoices_get post:invoice_invoices_post",
+    "name": "mod-invoice",
+    "path": "/invoice/invoices"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "delete:invoice_invoices__id__delete get:invoice_invoices__id__get put:invoice_invoices__id__put",
+    "name": "mod-invoice",
+    "path": "/invoice/invoices/{id}"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_invoices__id__documents_get post:invoice_invoices__id__documents_post",
+    "name": "mod-invoice",
+    "path": "/invoice/invoices/{id}/documents"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "delete:invoice_invoices__id__documents__documentid__delete get:invoice_invoices__id__documents__documentid__get",
+    "name": "mod-invoice",
+    "path": "/invoice/invoices/{id}/documents/{documentId}"
+  },
+  {
     "apiDescription": "ramls/isbn.raml",
     "apiType": "raml",
     "methods": "get:isbn_convertto10_get",
@@ -6340,6 +6592,97 @@
     "methods": "get:operation/getValidation",
     "name": "mod-ebsconet",
     "path": "/validate"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_storage_voucher_lines_get post:voucher_storage_voucher_lines_post",
+    "name": "mod-invoice-storage",
+    "path": "/voucher-storage/voucher-lines"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "delete:voucher_storage_voucher_lines__id__delete get:voucher_storage_voucher_lines__id__get put:voucher_storage_voucher_lines__id__put",
+    "name": "mod-invoice-storage",
+    "path": "/voucher-storage/voucher-lines/{id}"
+  },
+  {
+    "apiDescription": "ramls/voucher-number.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_storage_voucher_number_get",
+    "name": "mod-invoice-storage",
+    "path": "/voucher-storage/voucher-number"
+  },
+  {
+    "apiDescription": "ramls/voucher-number.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_storage_voucher_number_start_get",
+    "name": "mod-invoice-storage",
+    "path": "/voucher-storage/voucher-number/start"
+  },
+  {
+    "apiDescription": "ramls/voucher-number.raml",
+    "apiType": "raml",
+    "methods": "post:voucher_storage_voucher_number_start__value__post",
+    "name": "mod-invoice-storage",
+    "path": "/voucher-storage/voucher-number/start/{value}"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_storage_vouchers_get post:voucher_storage_vouchers_post",
+    "name": "mod-invoice-storage",
+    "path": "/voucher-storage/vouchers"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "delete:voucher_storage_vouchers__id__delete get:voucher_storage_vouchers__id__get put:voucher_storage_vouchers__id__put",
+    "name": "mod-invoice-storage",
+    "path": "/voucher-storage/vouchers/{id}"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_voucher_lines_get",
+    "name": "mod-invoice",
+    "path": "/voucher/voucher-lines"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_voucher_lines__id__get put:voucher_voucher_lines__id__put",
+    "name": "mod-invoice",
+    "path": "/voucher/voucher-lines/{id}"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_voucher_number_start_get",
+    "name": "mod-invoice",
+    "path": "/voucher/voucher-number/start"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "post:voucher_voucher_number_start__value__post",
+    "name": "mod-invoice",
+    "path": "/voucher/voucher-number/start/{value}"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_vouchers_get",
+    "name": "mod-invoice",
+    "path": "/voucher/vouchers"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_vouchers__id__get put:voucher_vouchers__id__put",
+    "name": "mod-invoice",
+    "path": "/voucher/vouchers/{id}"
   },
   {
     "apiDescription": "ramls/waiver.raml",
