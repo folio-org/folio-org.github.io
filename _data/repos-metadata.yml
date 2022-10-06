@@ -7,7 +7,7 @@
 #
 # name: This is the name of the GitHub repository, e.g. ui-users
 #   urlUserTips: URL of the most relevant FOLIOtips Wiki page.
-#   urlAppSettings: URL of the most relevant FOLIOtips/Settings Wiki page.
+#   urlAppSettings: URL of the relevant doc.f.o Settings page, or Wiki.
 #   furtherDescription: Additional text to supplement repo GitHub About.
 #   urlsOther: Array of other doc URLs.
 #
@@ -16,94 +16,82 @@
 #
 ---
 ui-acquisition-units:
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Acquisition+units
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_acquisition_units/settings_acquisition_units/
 
 ui-agreements:
-  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Agreements
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Agreements
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_agreements/settings_agreements/
   spaceUserDocs: erm/agreements/
 
 ui-calendar:
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Calendar
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_calendar/settings_calendar/
   urlsOther:
     - https://github.com/folio-org/ui-calendar/blob/master/GUIDE.md
 
 ui-checkin:
-  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Check+in
   spaceUserDocs: access/check-in/checkin/
 
 ui-checkout:
-  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Check+out
   spaceUserDocs: access/check-out/checkout/
 
 ui-circulation:
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Circulation
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_circulation/settings_circulation/
   spaceUserDocs: access/
   urlsOther:
     - https://wiki.folio.org/display/FOLIOtips/Example+Circulation+Rules+from+Adopters
 
 ui-circulation-log:
-  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Circulation+log
   spaceUserDocs: access/circulation-log/circ_log/
 
 ui-courses:
-  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Courses
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Courses
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_courses/settings_courses/
   spaceUserDocs: access/courses/courses/
 
 ui-data-export:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Data+Export
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Data+export
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_data_export/settings_data_export/
   spaceUserDocs: metadata/data-export/
 
 ui-data-import:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Data+Import
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Data+import
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_data_import/settings_data_import/
   spaceUserDocs: metadata/data-import/
 
 ui-developer:
   urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Developer
 
 ui-eholdings:
-  urlUserTips: https://wiki.folio.org/display/FOLIOtips/eHoldings
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+eHoldings
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_eholdings/settings_eholdings/
   spaceUserDocs: erm/eholdings/
 
 ui-erm-usage:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/eUsage
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+eUsage
   spaceUserDocs: erm/eusage/
   urlsOther:
     - https://wiki.folio.org/display/ERMSIG/eUsage+documentation
 
 ui-finance:
-  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Finance
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Finance
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_finance/settings_finance/
   spaceUserDocs: acquisitions/finance/
 
 ui-inventory:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Inventory
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Inventory
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_inventory/settings_inventory/
   spaceUserDocs: metadata/inventory/
   urlsOther:
     - https://wiki.folio.org/display/FOLIOtips/Single+Record+Import
 
 ui-invoice:
-  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Invoices
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Invoices
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_invoices/settings_invoices/
   spaceUserDocs: acquisitions/invoices/
 
 ui-ldp:
-  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Reporting+in+FOLIO
   spaceUserDocs: reporting/
 
 ui-licenses:
-  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Licenses
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Licenses
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_licenses/settings_licenses/
   spaceUserDocs: erm/licenses/
 
 ui-local-kb-admin:
-  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Local+KB+Admin
   urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Local+KB+admin
   spaceUserDocs: erm/local-kb-admin/
 
@@ -111,26 +99,25 @@ ui-lti-courses:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Course+Reserves+-+LTI+connectivity
   spaceUserDocs: access/courses/courses/
 
-ui-myprofile:
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+My+profile
+ui-marc-authorities:
+  spaceUserDocs: metadata/inventory/marcauthority/
 
 ui-ncip:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/NCIP
 
 ui-notes:
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Notes
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_notes/settings_notes/
 
 ui-oai-pmh:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/OAI-PMH
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_oaipmh/settings_oaipmh/
 
 ui-orders:
-  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Orders
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Orders
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_orders/settings_orders/
   spaceUserDocs: acquisitions/orders/
 
 ui-organizations:
-  urlUserTips: https://wiki.folio.org/pages/viewpage.action?pageId=14457393
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Organizations
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_organizations/settings_organizations/
   spaceUserDocs: acquisitions/organizations/
 
 ui-quick-marc:
@@ -138,28 +125,23 @@ ui-quick-marc:
   spaceUserDocs: metadata/inventory/quickmarc/
 
 ui-receiving:
-  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Receiving
   spaceUserDocs: acquisitions/receiving/
 
 ui-requests:
-  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Requests
   spaceUserDocs: access/requests/requests/
 
 ui-remote-storage:
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Remote+storage
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_remotestorage/remotestorage/
 
 ui-search:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Codex+search
 
 ui-tags:
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Tags
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_tags/settings_tags/
 
 ui-users:
-  urlUserTips: https://wiki.folio.org/display/FOLIOtips/Users
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Users
+  urlAppSettings: https://docs.folio.org/docs/settings/settings_users/settings_users/
   spaceUserDocs: users/
-  urlsOther:
-    - https://wiki.folio.org/display/FOLIOtips/Users+App+-+Creating+Fees+and+Fines
 
 ui-plugin-eusage-reports:
   urlsOther:
