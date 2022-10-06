@@ -26,7 +26,8 @@ bundle exec jekyll build --trace
 
 #  --log-level :debug
 time bundle exec htmlproofer ./$DEST \
-  --cache '{ "timeframe": { "external": "6w" } }'
+  --cache '{ "timeframe": { "external": "6w" } }' \
+  --allow-missing-href=true \
   --ignore-urls $IGNORE \
   $@
 
