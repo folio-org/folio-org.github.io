@@ -1799,6 +1799,27 @@
     "path": "/configurations"
   },
   {
+    "apiDescription": "ramls/configuration/config.raml",
+    "apiType": "raml",
+    "methods": "get:configurations_audit_get",
+    "name": "mod-configuration",
+    "path": "/configurations/audit"
+  },
+  {
+    "apiDescription": "ramls/configuration/config.raml",
+    "apiType": "raml",
+    "methods": "get:configurations_entries_get post:configurations_entries_post",
+    "name": "mod-configuration",
+    "path": "/configurations/entries"
+  },
+  {
+    "apiDescription": "ramls/configuration/config.raml",
+    "apiType": "raml",
+    "methods": "delete:configurations_entries__entryid__delete get:configurations_entries__entryid__get put:configurations_entries__entryid__put",
+    "name": "mod-configuration",
+    "path": "/configurations/entries/{entryId}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
     "apiType": "oas",
     "methods": "delete:operation/deleteConfigurationById get:operation/getConfigurationById put:operation/putConfiguration",
@@ -1846,6 +1867,27 @@
     "methods": "delete:converter_storage_forms_configs__formname__delete get:converter_storage_forms_configs__formname__get put:converter_storage_forms_configs__formname__put",
     "name": "mod-data-import-converter-storage",
     "path": "/converter-storage/forms/configs/{formName}"
+  },
+  {
+    "apiDescription": "ramls/copycat.raml",
+    "apiType": "raml",
+    "methods": "post:copycat_imports_post",
+    "name": "mod-copycat",
+    "path": "/copycat/imports"
+  },
+  {
+    "apiDescription": "ramls/copycat.raml",
+    "apiType": "raml",
+    "methods": "get:copycat_profiles_get post:copycat_profiles_post",
+    "name": "mod-copycat",
+    "path": "/copycat/profiles"
+  },
+  {
+    "apiDescription": "ramls/copycat.raml",
+    "apiType": "raml",
+    "methods": "delete:copycat_profiles__id__delete get:copycat_profiles__id__get put:copycat_profiles__id__put",
+    "name": "mod-copycat",
+    "path": "/copycat/profiles/{id}"
   },
   {
     "apiDescription": "ramls/courses.raml",
@@ -2357,6 +2399,69 @@
     "methods": "get:data_import_profiles_profilesnapshots__profileid__get",
     "name": "mod-data-import-converter-storage",
     "path": "/data-import-profiles/profileSnapshots/{profileId}"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_datatypes_get",
+    "name": "mod-data-import",
+    "path": "/data-import/dataTypes"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_fileextensions_get post:data_import_fileextensions_post",
+    "name": "mod-data-import",
+    "path": "/data-import/fileExtensions"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "post:data_import_fileextensions_restore_default_post",
+    "name": "mod-data-import",
+    "path": "/data-import/fileExtensions/restore/default"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "delete:data_import_fileextensions__id__delete get:data_import_fileextensions__id__get put:data_import_fileextensions__id__put",
+    "name": "mod-data-import",
+    "path": "/data-import/fileExtensions/{id}"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_uploaddefinitions_get post:data_import_uploaddefinitions_post",
+    "name": "mod-data-import",
+    "path": "/data-import/uploadDefinitions"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "delete:data_import_uploaddefinitions__uploaddefinitionid__delete get:data_import_uploaddefinitions__uploaddefinitionid__get put:data_import_uploaddefinitions__uploaddefinitionid__put",
+    "name": "mod-data-import",
+    "path": "/data-import/uploadDefinitions/{uploadDefinitionId}"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "post:data_import_uploaddefinitions__uploaddefinitionid__files_post",
+    "name": "mod-data-import",
+    "path": "/data-import/uploadDefinitions/{uploadDefinitionId}/files"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "delete:data_import_uploaddefinitions__uploaddefinitionid__files__fileid__delete post:data_import_uploaddefinitions__uploaddefinitionid__files__fileid__post",
+    "name": "mod-data-import",
+    "path": "/data-import/uploadDefinitions/{uploadDefinitionId}/files/{fileId}"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "post:data_import_uploaddefinitions__uploaddefinitionid__processfiles_post",
+    "name": "mod-data-import",
+    "path": "/data-import/uploadDefinitions/{uploadDefinitionId}/processFiles"
   },
   {
     "apiDescription": "ramls/delayedTasks.raml",
