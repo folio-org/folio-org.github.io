@@ -151,11 +151,13 @@ See [usage notes](#usage-notes) below.
     {%- if repo.ramlDirName -%}
       {%- capture urlGhRaml -%}{{ urlGithub }}/{{ repo.org }}/{{ repoName }}/tree/{{ repo.defaultBranch }}/{{ repo.ramlDirName }}{%- endcapture -%}
       <p> GitHub RAMLs directory: <a href="{{ urlGhRaml }}">{{ urlGhRaml }}</a> </p>
-      {%- capture urlApi -%}{{ urlApiBase }}/#{{ repoName }}{%- endcapture -%}
-      {%- capture urlApiLocal -%}{{ urlApiBaseLocal }}/#{{ repoName }}{%- endcapture -%}
-      <p> API documentation: <a href="{{ urlApiLocal }}">{{ urlApi }}</a> </p>
+      {%- if repo.org == "folio-org" -%}
+        {%- capture urlApi -%}{{ urlApiBase }}/#{{ repoName }}{%- endcapture -%}
+        {%- capture urlApiLocal -%}{{ urlApiBaseLocal }}/#{{ repoName }}{%- endcapture -%}
+        <p> API documentation: <a href="{{ urlApiLocal }}">{{ urlApi }}</a> </p>
+      {%- endif -%}
     {%- endif -%}
-    {%- if repo.hintOas -%}
+    {%- if repo.hintOas and repo.org == "folio-org" -%}
       {%- capture urlApi -%}{{ urlApiBase }}/#{{ repoName }}{%- endcapture -%}
       {%- capture urlApiLocal -%}{{ urlApiBaseLocal }}/#{{ repoName }}{%- endcapture -%}
       <p> API documentation: <a href="{{ urlApiLocal }}">{{ urlApi }}</a> </p>
