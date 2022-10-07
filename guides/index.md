@@ -89,7 +89,7 @@ Other orientation guides:
 
 - Some tips to assist developers to configure their
   [local workstation setup](developer-setup).
-- Documentation at GitHub for [getting started](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github), including creating an account, introduction to using GitHub, and increased productivity via [keyboard shortcuts](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/keyboard-shortcuts).
+- Documentation at GitHub for [getting started](https://docs.github.com/en/get-started), including creating an account, introduction to using GitHub, and increased productivity via [keyboard shortcuts](https://docs.github.com/en/get-started/using-github/keyboard-shortcuts).
 - [Built artifacts](/download/artifacts/) -- released and snapshot FOLIO artifacts in various formats.
 Configurations for accessing.
 - [Source code](/source-code/) -- explanation of each repository.
