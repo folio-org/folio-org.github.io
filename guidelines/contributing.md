@@ -24,7 +24,7 @@ which encourage reports of various types of issue and explain how to.
 ## Git and branches
 
 For all FOLIO code repositories, we are trying to follow
-[GitHub Flow](https://guides.github.com/introduction/flow/).
+[GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow).
 
 In short, the master branch is always the head of latest development. Anything
 merged into master should be of such good quality that at any time a snapshot
@@ -39,7 +39,7 @@ Most people have write permission to only the few
 [https://github.com/folio-org](https://github.com/folio-org)
 repositories they regularly work on. For contributions to any other repository you
 will need to "fork" it to your personal GitHub account, see the GitHub notes about
-[working with forks](https://help.github.com/articles/working-with-forks/).
+[working with forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks).
 
 The starting point is the cloned folio-org repository as `origin` on your local
 machine and looks like this:
