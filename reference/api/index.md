@@ -12,7 +12,7 @@ menuSubIndex: 2
 ## Introduction
 
 This API documentation, and the associated list of [endpoints](/reference/api/endpoints/), is automatically generated from each repository's
-API description files, and specify how client modules may
+API description files, and specifies how client modules may
 access the functionality provided by these modules.
 See [further information](#further-information) below.
 
