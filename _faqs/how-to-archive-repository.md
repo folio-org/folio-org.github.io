@@ -19,7 +19,7 @@ Tread very carefully and follow the guide [Rename a module](/guides/rename-modul
 Create a Jira ticket so that people are aware of what happened to the repository.
 
 Certain operations will require Admin access to the repository.
-Please complete all tasks you have sufficient permissions for, then ask at Slack #devops channel.
+Please complete all tasks that you have sufficient permissions for, then ask at Slack #devops channel.
 
 If more complex then [raise a FOLIO DevOps Jira ticket](/faqs/how-to-raise-devops-ticket/#general-folio-devops).
 Explain in the ticket what needs to happen, e.g. provide text for the README notice.
