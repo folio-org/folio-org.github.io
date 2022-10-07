@@ -280,6 +280,27 @@
     "path": "/_/version"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAccessions post:operation/postAccession",
+    "name": "mod-remote-storage",
+    "path": "/accessions"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/setAccessionedByBarcode",
+    "name": "mod-remote-storage",
+    "path": "/accessions/barcode/{barcode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/setAccessionedById",
+    "name": "mod-remote-storage",
+    "path": "/accessions/id/{accessionId}"
+  },
+  {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
     "methods": "get:accounts_get post:accounts_post",
@@ -1771,6 +1792,20 @@
     "path": "/configs/{id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getConfigurations post:operation/postConfiguration",
+    "name": "mod-remote-storage",
+    "path": "/configurations"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteConfigurationById get:operation/getConfigurationById put:operation/putConfiguration",
+    "name": "mod-remote-storage",
+    "path": "/configurations/{configId}"
+  },
+  {
     "apiDescription": "ramls/contributor-name-type.raml",
     "apiType": "raml",
     "methods": "get:contributor_name_types_get post:contributor_name_types_post",
@@ -2847,6 +2882,34 @@
     "methods": "delete:eventconfig__id__delete get:eventconfig__id__get put:eventconfig__id__put",
     "name": "mod-event-config",
     "path": "/eventConfig/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getExtendedRemoteLocationConfigurationMappings post:operation/postExtendedRemoteLocationConfigurationMapping",
+    "name": "mod-remote-storage",
+    "path": "/extended-mappings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getExtendedRemoteLocationConfigurationMappingsLocations",
+    "name": "mod-remote-storage",
+    "path": "/extended-mappings/locations"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getExtendedRemoteLocationConfigurationMappingsById",
+    "name": "mod-remote-storage",
+    "path": "/extended-mappings/{finalLocationId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteOriginalLocationByRemoteStorageConfigurationIdAndOriginalLocationId",
+    "name": "mod-remote-storage",
+    "path": "/extended-mappings/{remoteStorageConfigurationId}/{originalLocationId}"
   },
   {
     "apiDescription": "ramls/feefine-reports.raml",
@@ -4319,6 +4382,13 @@
     "path": "/item-storage/items/{itemId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/markItemAsMissingByBarcode",
+    "name": "mod-remote-storage",
+    "path": "/items/barcode/{barcode}/markAsMissing"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
     "apiType": "oas",
     "methods": "get:operation/getJobs post:operation/upsertJob",
@@ -4641,6 +4711,20 @@
     "path": "/mapping-rules/{recordType}/restore"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getMappings post:operation/postMapping",
+    "name": "mod-remote-storage",
+    "path": "/mappings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteMappingById get:operation/getMappingById",
+    "name": "mod-remote-storage",
+    "path": "/mappings/{folioLocationId}"
+  },
+  {
     "apiDescription": "ramls/material-type.raml",
     "apiType": "raml",
     "methods": "delete:material_types_delete get:material_types_get post:material_types_post",
@@ -4828,6 +4912,76 @@
     "methods": "get:oai_pmh_view_updatedinstanceids_get",
     "name": "mod-inventory-storage",
     "path": "/oai-pmh-view/updatedInstanceIds"
+  },
+  {
+    "apiDescription": "ramls/cleanup-job.raml",
+    "apiType": "raml",
+    "methods": "post:oai_pmh_clean_up_instances_post",
+    "name": "mod-oai-pmh",
+    "path": "/oai-pmh/clean-up-instances"
+  },
+  {
+    "apiDescription": "ramls/folio-set-filtering-conditions.raml",
+    "apiType": "raml",
+    "methods": "get:oai_pmh_filtering_conditions_get",
+    "name": "mod-oai-pmh",
+    "path": "/oai-pmh/filtering-conditions"
+  },
+  {
+    "apiDescription": "ramls/folio-set.raml",
+    "apiType": "raml",
+    "methods": "get:oai_pmh_sets_get post:oai_pmh_sets_post",
+    "name": "mod-oai-pmh",
+    "path": "/oai-pmh/sets"
+  },
+  {
+    "apiDescription": "ramls/folio-set.raml",
+    "apiType": "raml",
+    "methods": "delete:oai_pmh_sets__id__delete get:oai_pmh_sets__id__get put:oai_pmh_sets__id__put",
+    "name": "mod-oai-pmh",
+    "path": "/oai-pmh/sets/{id}"
+  },
+  {
+    "apiDescription": "ramls/oai-pmh.raml",
+    "apiType": "raml",
+    "methods": "get:oai_records_get",
+    "name": "mod-oai-pmh",
+    "path": "/oai/records"
+  },
+  {
+    "apiDescription": "ramls/request-metadata.raml",
+    "apiType": "raml",
+    "methods": "get:oai_request_metadata_get",
+    "name": "mod-oai-pmh",
+    "path": "/oai/request-metadata"
+  },
+  {
+    "apiDescription": "ramls/request-metadata.raml",
+    "apiType": "raml",
+    "methods": "get:oai_request_metadata__requestid__failed_instances_get",
+    "name": "mod-oai-pmh",
+    "path": "/oai/request-metadata/{requestId}/failed-instances"
+  },
+  {
+    "apiDescription": "ramls/request-metadata.raml",
+    "apiType": "raml",
+    "methods": "get:oai_request_metadata__requestid__failed_to_save_instances_get",
+    "name": "mod-oai-pmh",
+    "path": "/oai/request-metadata/{requestId}/failed-to-save-instances"
+  },
+  {
+    "apiDescription": "ramls/request-metadata.raml",
+    "apiType": "raml",
+    "methods": "get:oai_request_metadata__requestid__skipped_instances_get",
+    "name": "mod-oai-pmh",
+    "path": "/oai/request-metadata/{requestId}/skipped-instances"
+  },
+  {
+    "apiDescription": "ramls/request-metadata.raml",
+    "apiType": "raml",
+    "methods": "get:oai_request_metadata__requestid__suppressed_from_discovery_instances_get",
+    "name": "mod-oai-pmh",
+    "path": "/oai/request-metadata/{requestId}/suppressed-from-discovery-instances"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/order-export.yaml",
@@ -5684,6 +5838,13 @@
     "path": "/preceding-succeeding-titles/{precedingSucceedingTitleId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getProviders",
+    "name": "mod-remote-storage",
+    "path": "/providers"
+  },
+  {
     "apiDescription": "ramls/proxiesFor.raml",
     "apiType": "raml",
     "methods": "get:proxiesfor_get post:proxiesfor_post",
@@ -5696,6 +5857,13 @@
     "methods": "delete:proxiesfor__id__delete get:proxiesfor__id__get put:proxiesfor__id__put",
     "name": "mod-users",
     "path": "/proxiesfor/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-remote-storage",
+    "path": "/pub-sub-handlers/log-record-event"
   },
   {
     "apiDescription": "ramls/pubSub.raml",
@@ -6041,6 +6209,48 @@
     "path": "/resources/jobs/{jobId}/ids"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getRetrievals",
+    "name": "mod-remote-storage",
+    "path": "/retrievals"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/setRetrievedByBarcode",
+    "name": "mod-remote-storage",
+    "path": "/retrievals/barcode/{barcode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/setRetrievedById",
+    "name": "mod-remote-storage",
+    "path": "/retrievals/id/{retrievalId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/checkInItemByBarcodeWithRemoteStorageConfigurationId",
+    "name": "mod-remote-storage",
+    "path": "/retrieve/{remoteStorageConfigurationId}/checkInItem"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/checkInItemByHoldIdWithRemoteStorageConfigurationId",
+    "name": "mod-remote-storage",
+    "path": "/retrieve/{remoteStorageConfigurationId}/checkInItemByHoldId"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/returnItemByBarcode",
+    "name": "mod-remote-storage",
+    "path": "/return/{remoteStorageConfigurationId}"
+  },
+  {
     "apiDescription": "domain-models-api-interfaces/ramls/sample.raml",
     "apiType": "raml",
     "methods": "get:rmbtests_books_get post:rmbtests_books_post put:rmbtests_books_put",
@@ -6340,6 +6550,20 @@
     "methods": "get:null",
     "name": "mod-data-export-worker",
     "path": "/stub"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/tags.yml",
+    "apiType": "oas",
+    "methods": "get:operation/getTagCollection post:operation/postTag",
+    "name": "mod-tags",
+    "path": "/tags"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/tags.yml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteTagById get:operation/getTagById put:operation/putTagById",
+    "name": "mod-tags",
+    "path": "/tags/{id}"
   },
   {
     "apiDescription": "ramls/template-engine.raml",
