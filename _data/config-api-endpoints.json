@@ -280,6 +280,27 @@
     "path": "/_/version"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAccessions post:operation/postAccession",
+    "name": "mod-remote-storage",
+    "path": "/accessions"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/setAccessionedByBarcode",
+    "name": "mod-remote-storage",
+    "path": "/accessions/barcode/{barcode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/setAccessionedById",
+    "name": "mod-remote-storage",
+    "path": "/accessions/id/{accessionId}"
+  },
+  {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
     "methods": "get:accounts_get post:accounts_post",
@@ -915,6 +936,146 @@
     "methods": "get:automated_patron_blocks__userid__get",
     "name": "mod-patron-blocks",
     "path": "/automated-patron-blocks/{userId}"
+  },
+  {
+    "apiDescription": "ramls/batch-group.raml",
+    "apiType": "raml",
+    "methods": "get:batch_group_storage_batch_groups_get post:batch_group_storage_batch_groups_post",
+    "name": "mod-invoice-storage",
+    "path": "/batch-group-storage/batch-groups"
+  },
+  {
+    "apiDescription": "ramls/batch-group.raml",
+    "apiType": "raml",
+    "methods": "delete:batch_group_storage_batch_groups__id__delete get:batch_group_storage_batch_groups__id__get put:batch_group_storage_batch_groups__id__put",
+    "name": "mod-invoice-storage",
+    "path": "/batch-group-storage/batch-groups/{id}"
+  },
+  {
+    "apiDescription": "ramls/batch-group.raml",
+    "apiType": "raml",
+    "methods": "get:batch_groups_get post:batch_groups_post",
+    "name": "mod-invoice",
+    "path": "/batch-groups"
+  },
+  {
+    "apiDescription": "ramls/batch-group.raml",
+    "apiType": "raml",
+    "methods": "delete:batch_groups__id__delete get:batch_groups__id__get put:batch_groups__id__put",
+    "name": "mod-invoice",
+    "path": "/batch-groups/{id}"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-exports.raml",
+    "apiType": "raml",
+    "methods": "get:batch_voucher_storage_batch_voucher_exports_get post:batch_voucher_storage_batch_voucher_exports_post",
+    "name": "mod-invoice-storage",
+    "path": "/batch-voucher-storage/batch-voucher-exports"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-exports.raml",
+    "apiType": "raml",
+    "methods": "delete:batch_voucher_storage_batch_voucher_exports__id__delete get:batch_voucher_storage_batch_voucher_exports__id__get put:batch_voucher_storage_batch_voucher_exports__id__put",
+    "name": "mod-invoice-storage",
+    "path": "/batch-voucher-storage/batch-voucher-exports/{id}"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher.raml",
+    "apiType": "raml",
+    "methods": "post:batch_voucher_storage_batch_vouchers_post",
+    "name": "mod-invoice-storage",
+    "path": "/batch-voucher-storage/batch-vouchers"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher.raml",
+    "apiType": "raml",
+    "methods": "delete:batch_voucher_storage_batch_vouchers__id__delete get:batch_voucher_storage_batch_vouchers__id__get",
+    "name": "mod-invoice-storage",
+    "path": "/batch-voucher-storage/batch-vouchers/{id}"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-export-configuration.raml",
+    "apiType": "raml",
+    "methods": "get:batch_voucher_storage_export_configurations_get post:batch_voucher_storage_export_configurations_post",
+    "name": "mod-invoice-storage",
+    "path": "/batch-voucher-storage/export-configurations"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-export-configuration.raml",
+    "apiType": "raml",
+    "methods": "delete:batch_voucher_storage_export_configurations__id__delete get:batch_voucher_storage_export_configurations__id__get put:batch_voucher_storage_export_configurations__id__put",
+    "name": "mod-invoice-storage",
+    "path": "/batch-voucher-storage/export-configurations/{id}"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-export-configuration.raml",
+    "apiType": "raml",
+    "methods": "delete:batch_voucher_storage_export_configurations__id__credentials_delete get:batch_voucher_storage_export_configurations__id__credentials_get post:batch_voucher_storage_export_configurations__id__credentials_post put:batch_voucher_storage_export_configurations__id__credentials_put",
+    "name": "mod-invoice-storage",
+    "path": "/batch-voucher-storage/export-configurations/{id}/credentials"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-exports.raml",
+    "apiType": "raml",
+    "methods": "get:batch_voucher_batch_voucher_exports_get post:batch_voucher_batch_voucher_exports_post",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/batch-voucher-exports"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-exports.raml",
+    "apiType": "raml",
+    "methods": "post:batch_voucher_batch_voucher_exports_scheduled_post",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/batch-voucher-exports/scheduled"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-exports.raml",
+    "apiType": "raml",
+    "methods": "delete:batch_voucher_batch_voucher_exports__id__delete get:batch_voucher_batch_voucher_exports__id__get put:batch_voucher_batch_voucher_exports__id__put",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/batch-voucher-exports/{id}"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-exports.raml",
+    "apiType": "raml",
+    "methods": "post:batch_voucher_batch_voucher_exports__id__upload_post",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/batch-voucher-exports/{id}/upload"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher.raml",
+    "apiType": "raml",
+    "methods": "get:batch_voucher_batch_vouchers__id__get",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/batch-vouchers/{id}"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-export-configuration.raml",
+    "apiType": "raml",
+    "methods": "get:batch_voucher_export_configurations_get post:batch_voucher_export_configurations_post",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/export-configurations"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-export-configuration.raml",
+    "apiType": "raml",
+    "methods": "delete:batch_voucher_export_configurations__id__delete get:batch_voucher_export_configurations__id__get put:batch_voucher_export_configurations__id__put",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/export-configurations/{id}"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-export-configuration.raml",
+    "apiType": "raml",
+    "methods": "get:batch_voucher_export_configurations__id__credentials_get post:batch_voucher_export_configurations__id__credentials_post put:batch_voucher_export_configurations__id__credentials_put",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/export-configurations/{id}/credentials"
+  },
+  {
+    "apiDescription": "ramls/batch-voucher-export-configuration.raml",
+    "apiType": "raml",
+    "methods": "post:batch_voucher_export_configurations__id__credentials_test_post",
+    "name": "mod-invoice",
+    "path": "/batch-voucher/export-configurations/{id}/credentials/test"
   },
   {
     "apiDescription": "ramls/mod-users-bl.raml",
@@ -1631,6 +1792,41 @@
     "path": "/configs/{id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getConfigurations post:operation/postConfiguration",
+    "name": "mod-remote-storage",
+    "path": "/configurations"
+  },
+  {
+    "apiDescription": "ramls/configuration/config.raml",
+    "apiType": "raml",
+    "methods": "get:configurations_audit_get",
+    "name": "mod-configuration",
+    "path": "/configurations/audit"
+  },
+  {
+    "apiDescription": "ramls/configuration/config.raml",
+    "apiType": "raml",
+    "methods": "get:configurations_entries_get post:configurations_entries_post",
+    "name": "mod-configuration",
+    "path": "/configurations/entries"
+  },
+  {
+    "apiDescription": "ramls/configuration/config.raml",
+    "apiType": "raml",
+    "methods": "delete:configurations_entries__entryid__delete get:configurations_entries__entryid__get put:configurations_entries__entryid__put",
+    "name": "mod-configuration",
+    "path": "/configurations/entries/{entryId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteConfigurationById get:operation/getConfigurationById put:operation/putConfiguration",
+    "name": "mod-remote-storage",
+    "path": "/configurations/{configId}"
+  },
+  {
     "apiDescription": "ramls/contributor-name-type.raml",
     "apiType": "raml",
     "methods": "get:contributor_name_types_get post:contributor_name_types_post",
@@ -1671,6 +1867,27 @@
     "methods": "delete:converter_storage_forms_configs__formname__delete get:converter_storage_forms_configs__formname__get put:converter_storage_forms_configs__formname__put",
     "name": "mod-data-import-converter-storage",
     "path": "/converter-storage/forms/configs/{formName}"
+  },
+  {
+    "apiDescription": "ramls/copycat.raml",
+    "apiType": "raml",
+    "methods": "post:copycat_imports_post",
+    "name": "mod-copycat",
+    "path": "/copycat/imports"
+  },
+  {
+    "apiDescription": "ramls/copycat.raml",
+    "apiType": "raml",
+    "methods": "get:copycat_profiles_get post:copycat_profiles_post",
+    "name": "mod-copycat",
+    "path": "/copycat/profiles"
+  },
+  {
+    "apiDescription": "ramls/copycat.raml",
+    "apiType": "raml",
+    "methods": "delete:copycat_profiles__id__delete get:copycat_profiles__id__get put:copycat_profiles__id__put",
+    "name": "mod-copycat",
+    "path": "/copycat/profiles/{id}"
   },
   {
     "apiDescription": "ramls/courses.raml",
@@ -2182,6 +2399,69 @@
     "methods": "get:data_import_profiles_profilesnapshots__profileid__get",
     "name": "mod-data-import-converter-storage",
     "path": "/data-import-profiles/profileSnapshots/{profileId}"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_datatypes_get",
+    "name": "mod-data-import",
+    "path": "/data-import/dataTypes"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_fileextensions_get post:data_import_fileextensions_post",
+    "name": "mod-data-import",
+    "path": "/data-import/fileExtensions"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "post:data_import_fileextensions_restore_default_post",
+    "name": "mod-data-import",
+    "path": "/data-import/fileExtensions/restore/default"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "delete:data_import_fileextensions__id__delete get:data_import_fileextensions__id__get put:data_import_fileextensions__id__put",
+    "name": "mod-data-import",
+    "path": "/data-import/fileExtensions/{id}"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_uploaddefinitions_get post:data_import_uploaddefinitions_post",
+    "name": "mod-data-import",
+    "path": "/data-import/uploadDefinitions"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "delete:data_import_uploaddefinitions__uploaddefinitionid__delete get:data_import_uploaddefinitions__uploaddefinitionid__get put:data_import_uploaddefinitions__uploaddefinitionid__put",
+    "name": "mod-data-import",
+    "path": "/data-import/uploadDefinitions/{uploadDefinitionId}"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "post:data_import_uploaddefinitions__uploaddefinitionid__files_post",
+    "name": "mod-data-import",
+    "path": "/data-import/uploadDefinitions/{uploadDefinitionId}/files"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "delete:data_import_uploaddefinitions__uploaddefinitionid__files__fileid__delete post:data_import_uploaddefinitions__uploaddefinitionid__files__fileid__post",
+    "name": "mod-data-import",
+    "path": "/data-import/uploadDefinitions/{uploadDefinitionId}/files/{fileId}"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "post:data_import_uploaddefinitions__uploaddefinitionid__processfiles_post",
+    "name": "mod-data-import",
+    "path": "/data-import/uploadDefinitions/{uploadDefinitionId}/processFiles"
   },
   {
     "apiDescription": "ramls/delayedTasks.raml",
@@ -2707,6 +2987,34 @@
     "methods": "delete:eventconfig__id__delete get:eventconfig__id__get put:eventconfig__id__put",
     "name": "mod-event-config",
     "path": "/eventConfig/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getExtendedRemoteLocationConfigurationMappings post:operation/postExtendedRemoteLocationConfigurationMapping",
+    "name": "mod-remote-storage",
+    "path": "/extended-mappings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getExtendedRemoteLocationConfigurationMappingsLocations",
+    "name": "mod-remote-storage",
+    "path": "/extended-mappings/locations"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getExtendedRemoteLocationConfigurationMappingsById",
+    "name": "mod-remote-storage",
+    "path": "/extended-mappings/{finalLocationId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteOriginalLocationByRemoteStorageConfigurationIdAndOriginalLocationId",
+    "name": "mod-remote-storage",
+    "path": "/extended-mappings/{remoteStorageConfigurationId}/{originalLocationId}"
   },
   {
     "apiDescription": "ramls/feefine-reports.raml",
@@ -3983,6 +4291,118 @@
     "path": "/inventory/items/{itemId}/mark-withdrawn"
   },
   {
+    "apiDescription": "ramls/invoice-line-number.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_storage_invoice_line_number_get",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/invoice-line-number"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_storage_invoice_lines_get post:invoice_storage_invoice_lines_post",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/invoice-lines"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "delete:invoice_storage_invoice_lines__id__delete get:invoice_storage_invoice_lines__id__get put:invoice_storage_invoice_lines__id__put",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/invoice-lines/{id}"
+  },
+  {
+    "apiDescription": "ramls/invoice-number.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_storage_invoice_number_get",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/invoice-number"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_storage_invoices_get post:invoice_storage_invoices_post",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/invoices"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "delete:invoice_storage_invoices__id__delete get:invoice_storage_invoices__id__get put:invoice_storage_invoices__id__put",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/invoices/{id}"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_storage_invoices__id__documents_get post:invoice_storage_invoices__id__documents_post",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/invoices/{id}/documents"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "delete:invoice_storage_invoices__id__documents__documentid__delete get:invoice_storage_invoices__id__documents__documentid__get",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/invoices/{id}/documents/{documentId}"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_invoice_lines_get post:invoice_invoice_lines_post",
+    "name": "mod-invoice",
+    "path": "/invoice/invoice-lines"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "put:invoice_invoice_lines_fund_distributions_validate_put",
+    "name": "mod-invoice",
+    "path": "/invoice/invoice-lines/fund-distributions/validate"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "delete:invoice_invoice_lines__id__delete get:invoice_invoice_lines__id__get put:invoice_invoice_lines__id__put",
+    "name": "mod-invoice",
+    "path": "/invoice/invoice-lines/{id}"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_invoice_number_get",
+    "name": "mod-invoice",
+    "path": "/invoice/invoice-number"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_invoices_get post:invoice_invoices_post",
+    "name": "mod-invoice",
+    "path": "/invoice/invoices"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "delete:invoice_invoices__id__delete get:invoice_invoices__id__get put:invoice_invoices__id__put",
+    "name": "mod-invoice",
+    "path": "/invoice/invoices/{id}"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "get:invoice_invoices__id__documents_get post:invoice_invoices__id__documents_post",
+    "name": "mod-invoice",
+    "path": "/invoice/invoices/{id}/documents"
+  },
+  {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "methods": "delete:invoice_invoices__id__documents__documentid__delete get:invoice_invoices__id__documents__documentid__get",
+    "name": "mod-invoice",
+    "path": "/invoice/invoices/{id}/documents/{documentId}"
+  },
+  {
     "apiDescription": "ramls/isbn.raml",
     "apiType": "raml",
     "methods": "get:isbn_convertto10_get",
@@ -4065,6 +4485,13 @@
     "methods": "delete:item_storage_items__itemid__delete get:item_storage_items__itemid__get put:item_storage_items__itemid__put",
     "name": "mod-inventory-storage",
     "path": "/item-storage/items/{itemId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/markItemAsMissingByBarcode",
+    "name": "mod-remote-storage",
+    "path": "/items/barcode/{barcode}/markAsMissing"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
@@ -4389,6 +4816,20 @@
     "path": "/mapping-rules/{recordType}/restore"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getMappings post:operation/postMapping",
+    "name": "mod-remote-storage",
+    "path": "/mappings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteMappingById get:operation/getMappingById",
+    "name": "mod-remote-storage",
+    "path": "/mappings/{folioLocationId}"
+  },
+  {
     "apiDescription": "ramls/material-type.raml",
     "apiType": "raml",
     "methods": "delete:material_types_delete get:material_types_get post:material_types_post",
@@ -4576,6 +5017,76 @@
     "methods": "get:oai_pmh_view_updatedinstanceids_get",
     "name": "mod-inventory-storage",
     "path": "/oai-pmh-view/updatedInstanceIds"
+  },
+  {
+    "apiDescription": "ramls/cleanup-job.raml",
+    "apiType": "raml",
+    "methods": "post:oai_pmh_clean_up_instances_post",
+    "name": "mod-oai-pmh",
+    "path": "/oai-pmh/clean-up-instances"
+  },
+  {
+    "apiDescription": "ramls/folio-set-filtering-conditions.raml",
+    "apiType": "raml",
+    "methods": "get:oai_pmh_filtering_conditions_get",
+    "name": "mod-oai-pmh",
+    "path": "/oai-pmh/filtering-conditions"
+  },
+  {
+    "apiDescription": "ramls/folio-set.raml",
+    "apiType": "raml",
+    "methods": "get:oai_pmh_sets_get post:oai_pmh_sets_post",
+    "name": "mod-oai-pmh",
+    "path": "/oai-pmh/sets"
+  },
+  {
+    "apiDescription": "ramls/folio-set.raml",
+    "apiType": "raml",
+    "methods": "delete:oai_pmh_sets__id__delete get:oai_pmh_sets__id__get put:oai_pmh_sets__id__put",
+    "name": "mod-oai-pmh",
+    "path": "/oai-pmh/sets/{id}"
+  },
+  {
+    "apiDescription": "ramls/oai-pmh.raml",
+    "apiType": "raml",
+    "methods": "get:oai_records_get",
+    "name": "mod-oai-pmh",
+    "path": "/oai/records"
+  },
+  {
+    "apiDescription": "ramls/request-metadata.raml",
+    "apiType": "raml",
+    "methods": "get:oai_request_metadata_get",
+    "name": "mod-oai-pmh",
+    "path": "/oai/request-metadata"
+  },
+  {
+    "apiDescription": "ramls/request-metadata.raml",
+    "apiType": "raml",
+    "methods": "get:oai_request_metadata__requestid__failed_instances_get",
+    "name": "mod-oai-pmh",
+    "path": "/oai/request-metadata/{requestId}/failed-instances"
+  },
+  {
+    "apiDescription": "ramls/request-metadata.raml",
+    "apiType": "raml",
+    "methods": "get:oai_request_metadata__requestid__failed_to_save_instances_get",
+    "name": "mod-oai-pmh",
+    "path": "/oai/request-metadata/{requestId}/failed-to-save-instances"
+  },
+  {
+    "apiDescription": "ramls/request-metadata.raml",
+    "apiType": "raml",
+    "methods": "get:oai_request_metadata__requestid__skipped_instances_get",
+    "name": "mod-oai-pmh",
+    "path": "/oai/request-metadata/{requestId}/skipped-instances"
+  },
+  {
+    "apiDescription": "ramls/request-metadata.raml",
+    "apiType": "raml",
+    "methods": "get:oai_request_metadata__requestid__suppressed_from_discovery_instances_get",
+    "name": "mod-oai-pmh",
+    "path": "/oai/request-metadata/{requestId}/suppressed-from-discovery-instances"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/order-export.yaml",
@@ -5432,6 +5943,13 @@
     "path": "/preceding-succeeding-titles/{precedingSucceedingTitleId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getProviders",
+    "name": "mod-remote-storage",
+    "path": "/providers"
+  },
+  {
     "apiDescription": "ramls/proxiesFor.raml",
     "apiType": "raml",
     "methods": "get:proxiesfor_get post:proxiesfor_post",
@@ -5444,6 +5962,13 @@
     "methods": "delete:proxiesfor__id__delete get:proxiesfor__id__get put:proxiesfor__id__put",
     "name": "mod-users",
     "path": "/proxiesfor/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-remote-storage",
+    "path": "/pub-sub-handlers/log-record-event"
   },
   {
     "apiDescription": "ramls/pubSub.raml",
@@ -5789,6 +6314,48 @@
     "path": "/resources/jobs/{jobId}/ids"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getRetrievals",
+    "name": "mod-remote-storage",
+    "path": "/retrievals"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/setRetrievedByBarcode",
+    "name": "mod-remote-storage",
+    "path": "/retrievals/barcode/{barcode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/setRetrievedById",
+    "name": "mod-remote-storage",
+    "path": "/retrievals/id/{retrievalId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/checkInItemByBarcodeWithRemoteStorageConfigurationId",
+    "name": "mod-remote-storage",
+    "path": "/retrieve/{remoteStorageConfigurationId}/checkInItem"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/checkInItemByHoldIdWithRemoteStorageConfigurationId",
+    "name": "mod-remote-storage",
+    "path": "/retrieve/{remoteStorageConfigurationId}/checkInItemByHoldId"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/returnItemByBarcode",
+    "name": "mod-remote-storage",
+    "path": "/return/{remoteStorageConfigurationId}"
+  },
+  {
     "apiDescription": "domain-models-api-interfaces/ramls/sample.raml",
     "apiType": "raml",
     "methods": "get:rmbtests_books_get post:rmbtests_books_post put:rmbtests_books_put",
@@ -6090,6 +6657,20 @@
     "path": "/stub"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/tags.yml",
+    "apiType": "oas",
+    "methods": "get:operation/getTagCollection post:operation/postTag",
+    "name": "mod-tags",
+    "path": "/tags"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/tags.yml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteTagById get:operation/getTagById put:operation/putTagById",
+    "name": "mod-tags",
+    "path": "/tags/{id}"
+  },
+  {
     "apiDescription": "ramls/template-engine.raml",
     "apiType": "raml",
     "methods": "post:template_request_post",
@@ -6340,6 +6921,97 @@
     "methods": "get:operation/getValidation",
     "name": "mod-ebsconet",
     "path": "/validate"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_storage_voucher_lines_get post:voucher_storage_voucher_lines_post",
+    "name": "mod-invoice-storage",
+    "path": "/voucher-storage/voucher-lines"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "delete:voucher_storage_voucher_lines__id__delete get:voucher_storage_voucher_lines__id__get put:voucher_storage_voucher_lines__id__put",
+    "name": "mod-invoice-storage",
+    "path": "/voucher-storage/voucher-lines/{id}"
+  },
+  {
+    "apiDescription": "ramls/voucher-number.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_storage_voucher_number_get",
+    "name": "mod-invoice-storage",
+    "path": "/voucher-storage/voucher-number"
+  },
+  {
+    "apiDescription": "ramls/voucher-number.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_storage_voucher_number_start_get",
+    "name": "mod-invoice-storage",
+    "path": "/voucher-storage/voucher-number/start"
+  },
+  {
+    "apiDescription": "ramls/voucher-number.raml",
+    "apiType": "raml",
+    "methods": "post:voucher_storage_voucher_number_start__value__post",
+    "name": "mod-invoice-storage",
+    "path": "/voucher-storage/voucher-number/start/{value}"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_storage_vouchers_get post:voucher_storage_vouchers_post",
+    "name": "mod-invoice-storage",
+    "path": "/voucher-storage/vouchers"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "delete:voucher_storage_vouchers__id__delete get:voucher_storage_vouchers__id__get put:voucher_storage_vouchers__id__put",
+    "name": "mod-invoice-storage",
+    "path": "/voucher-storage/vouchers/{id}"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_voucher_lines_get",
+    "name": "mod-invoice",
+    "path": "/voucher/voucher-lines"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_voucher_lines__id__get put:voucher_voucher_lines__id__put",
+    "name": "mod-invoice",
+    "path": "/voucher/voucher-lines/{id}"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_voucher_number_start_get",
+    "name": "mod-invoice",
+    "path": "/voucher/voucher-number/start"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "post:voucher_voucher_number_start__value__post",
+    "name": "mod-invoice",
+    "path": "/voucher/voucher-number/start/{value}"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_vouchers_get",
+    "name": "mod-invoice",
+    "path": "/voucher/vouchers"
+  },
+  {
+    "apiDescription": "ramls/voucher.raml",
+    "apiType": "raml",
+    "methods": "get:voucher_vouchers__id__get put:voucher_vouchers__id__put",
+    "name": "mod-invoice",
+    "path": "/voucher/vouchers/{id}"
   },
   {
     "apiDescription": "ramls/waiver.raml",

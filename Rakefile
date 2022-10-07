@@ -6,6 +6,7 @@ task :proof do
   sh "bundle exec jekyll build"
   puts "Doing html-proofer ..."
   options = {
+    :allow_missing_href => true,
     :cache => {
       :timeframe => {
         :external => "6w"
