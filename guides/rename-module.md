@@ -117,6 +117,8 @@ Otherwise doing it in a pull request will report failure messages in the Sonar s
 
 ## Adjust Lokalise configuration
 
+For front-end modules:
+
 Ideally, before Archiving the old repository, perform one more `lokalisepush.py` run to capture any remaining translations under the old name.
 If this had not been done, then follow these steps while [configuring Lokalise](/guidelines/create-new-repo/#configure-lokalise) for the new repository.
 
@@ -147,25 +149,18 @@ Prepare Jira "project". Sometimes best to create new one, and re-key relevant is
 
 ## Adjust website API docs configuration
 
-Configure apidocs if this is an old-configured RAML-related back-end module.
+The [API documentation](/reference/api/) for the new module will be automatically generated on its merge to mainline branch.
+The new documentation will be discovered on the next daily run, as [explained](/reference/api/#explain-gather-config).
 
-(**Note**: Please migrate to the new CI [configuration](/reference/api/#explain-api-doc). Then we do not need this extra stuff.)
-
-The "lint-raml" and "generate-api-docs" CI jobs will operate properly without configuration, but the web site relies on it.
-
-Follow the apidocs [configuration](/faqs/how-to-configure-api-doc-generation/) documentation.
-
-Add a new entry for the new module to the `_data/api.yml` file. Leave the old one as-is.
-
-In the `_data/apigroup.yml` file, move the old one to the "deprecated" section at the bottom.
-
-## Adjust website source list
-
-Update the list of all [modules](/source-code/map/).
+In the [`_data/apigroup.yml`](https://github.com/folio-org/folio-org.github.io/blob/master/_data/apigroup.yml) file, add an entry for the new module.
+Move the old one to the "deprecated" section at the bottom (it can be later removed after a few flower releases).
+These tasks can be done by DevOps people.
 
 ## Remove from reference environments
 
 When other modules in FOLIO CI have updated their use of old interfaces, then the deprecated modules can be removed from hosted/reference environments.
+
+When you have ascertained readiness, then do the reverse of the [procedure](/faqs/how-to-install-new-module/) for a new module.
 
 ## Verify and notify
 
