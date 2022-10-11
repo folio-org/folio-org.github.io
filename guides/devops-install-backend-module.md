@@ -77,7 +77,8 @@ The sequence must have the new module declared after any modules that provide it
 Add testing configuration for the Jenkins jobs ...
 
 Add to the Jenkinsfiles to refer to the folio-infrastructure branch:\
-Set `BRANCH_TO_BUILD` variable to be `refs/heads/FOLIO-2467-refenvs-ncip`
+Set Stage:Checkout `branches` variable to be `refs/heads/FOLIO-2467-refenvs-ncip`
+(i.e. was `*/master`)
 
 ```
 CI/jenkins/Jenkinsfile.folio-snapshot-test-build
@@ -108,6 +109,8 @@ Then in the section "Pipeline : Pipeline script from SCM : Branches to build" re
 ## Run folio-snapshot-test build
 
 If there have been master changes for folio-ansible and folio-infrastructure since branching, then do merge master to branch, and deal with conflicts.
+
+Before proceeding, visit AWS EC2 - the instance is stopped to save a buck, so temporarily start.
 
 Now run the test build. Select the `Build with Parameters` link in the top-left panel.
 
@@ -186,6 +189,7 @@ First be sure to remove all test configuration ...
 
 * At the Jenkins interface for "folio-snapshot-test", revisit its `Configure` page and revert the "Branch specifier" to be `*/master`
 (which also signals to other DevOps that you have finished with the test builds).
+* Visit AWS EC2 - the "folio-snapshot-test" instance needs to be in "stopped" state to save a buck.
 * In the "folio-infrastructure" branch, remove the testing configuration in the Jenkinsfiles
 and the gitmodules file.
 
@@ -217,6 +221,8 @@ Inspect via the front-end.
 ## Followup
 
 Delete old branches.
+
+Visit AWS EC2 - the "folio-snapshot-test" instance needs to be in "stopped" state to save a buck.
 
 Comment and close the Jira ticket.
 
