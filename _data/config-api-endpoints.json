@@ -2184,6 +2184,34 @@
     "path": "/coursereserves/terms/{term_id}"
   },
   {
+    "apiDescription": "ramls/custom-fields.raml",
+    "apiType": "raml",
+    "methods": "get:custom_fields_get post:custom_fields_post put:custom_fields_put",
+    "name": "folio-custom-fields",
+    "path": "/custom-fields"
+  },
+  {
+    "apiDescription": "ramls/custom-fields.raml",
+    "apiType": "raml",
+    "methods": "delete:custom_fields__id__delete get:custom_fields__id__get put:custom_fields__id__put",
+    "name": "folio-custom-fields",
+    "path": "/custom-fields/{id}"
+  },
+  {
+    "apiDescription": "ramls/custom-fields.raml",
+    "apiType": "raml",
+    "methods": "get:custom_fields__id__options__optid__stats_get",
+    "name": "folio-custom-fields",
+    "path": "/custom-fields/{id}/options/{optId}/stats"
+  },
+  {
+    "apiDescription": "ramls/custom-fields.raml",
+    "apiType": "raml",
+    "methods": "get:custom_fields__id__stats_get",
+    "name": "folio-custom-fields",
+    "path": "/custom-fields/{id}/stats"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
     "methods": "put:operation/borrowerRenew",
@@ -4681,6 +4709,20 @@
     "methods": "get:ldp_db_tables_get",
     "name": "mod-ldp",
     "path": "/ldp/db/tables"
+  },
+  {
+    "apiDescription": "ramls/licenses.raml",
+    "apiType": "raml",
+    "methods": "get:licenses_licenses_get post:licenses_licenses_post",
+    "name": "mod-licenses",
+    "path": "/licenses/licenses"
+  },
+  {
+    "apiDescription": "ramls/licenses.raml",
+    "apiType": "raml",
+    "methods": "get:licenses_licenses__licenseid__get put:licenses_licenses__licenseid__put",
+    "name": "mod-licenses",
+    "path": "/licenses/licenses/{licenseId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
