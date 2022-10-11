@@ -167,7 +167,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generatedDate": "2022-06-17T13:13:44.006717+00:00"
+      "generatedDate": "2022-10-11T00:49:16.660346+00:00"
     },
     "name": "folio-custom-fields",
     "org": "folio-org"
@@ -454,7 +454,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generatedDate": "2022-10-06T12:28:14.842691+00:00"
+      "generatedDate": "2022-10-10T17:01:29.964851+00:00"
     },
     "name": "mod-data-export",
     "org": "folio-org"
@@ -472,7 +472,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generatedDate": "2022-10-07T06:07:40.961382+00:00"
+      "generatedDate": "2022-10-10T11:40:25.072859+00:00"
     },
     "name": "mod-data-export-spring",
     "org": "folio-org"
@@ -515,7 +515,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generatedDate": "2022-10-07T10:33:58.031179+00:00"
+      "generatedDate": "2022-10-10T11:47:10.951170+00:00"
     },
     "name": "mod-data-export-worker",
     "org": "folio-org"
@@ -1077,7 +1077,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generatedDate": "2022-06-30T12:54:39.640760+00:00"
+      "generatedDate": "2022-10-11T00:52:19.848556+00:00"
     },
     "name": "mod-licenses",
     "org": "folio-org"
@@ -1288,7 +1288,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generatedDate": "2022-09-23T08:38:36.531204+00:00"
+      "generatedDate": "2022-10-10T18:04:26.782609+00:00"
     },
     "name": "mod-password-validator",
     "org": "folio-org"
@@ -1305,7 +1305,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generatedDate": "2022-10-06T13:57:39.750401+00:00"
+      "generatedDate": "2022-10-10T14:58:31.036061+00:00"
     },
     "name": "mod-patron",
     "org": "folio-org"
