@@ -16,7 +16,7 @@ Tread very carefully and follow the guide [Rename a module](/guides/rename-modul
 
 ## Raise a Jira ticket
 
-Create a Jira ticket for the project of this module, so that everyone can be are aware of what happened to the repository.
+Create a Jira ticket for the project of this module, so that everyone can be aware of what happened to the repository.
 
 Certain operations will require Admin access to the repository.
 Please complete all tasks that you have sufficient permissions for, then ask at Slack #devops channel.
