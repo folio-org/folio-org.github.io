@@ -14,6 +14,12 @@ If a repository is no longer maintained, and a decision has been made to archive
 (**Note**: If the repository is to be **renamed** rather than archived, then there are various ramifications.
 Tread very carefully and follow the guide [Rename a module](/guides/rename-module/) instead.)
 
+## Retain repository name
+
+While following these "archive" instructions, then under no circumstances can the repository be renamed (e.g. to mod-foo-deprecated, or some such).
+
+The existing name must be retained. Its artifacts are utilised in past releases.
+
 ## Raise a Jira ticket
 
 Create a Jira ticket for the project of this module, so that everyone can be aware of what happened to the repository.
