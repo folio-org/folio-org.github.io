@@ -143,8 +143,8 @@ application:
   kafka:
     topics:
       - name: search.instance-contributor
-        numPartitions: ${KAFKA_CONTIBUTORS_TOPIC_PARTITIONS:50}
-        replicationFactor: ${KAFKA_CONTIBUTORS_TOPIC_REPLICATION_FACTOR:}
+        numPartitions: ${KAFKA_CONTRIBUTORS_TOPIC_PARTITIONS:50}
+        replicationFactor: ${KAFKA_CONTRIBUTORS_TOPIC_REPLICATION_FACTOR:}
 ```
 
 ### Full-text fields
