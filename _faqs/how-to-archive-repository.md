@@ -32,6 +32,7 @@ Better still, ensure that the relevant team that will be doing the work, does ha
 
 Ensure that this module is not in a Stripes Platform,
 i.e. search in the [platform-complete install.json](https://github.com/folio-org/platform-complete/blob/snapshot/install.json) generated file.
+Note that front-end module IDs begin with "`folio_`".
 
 Its functionality should have already moved to other modules.
 If still present, then verify that no other module depends upon it
@@ -49,14 +50,23 @@ If the module was part of a previous Flower release, then raise a pull-request f
 The back-end modules will have an entry in the "install-extras.json" file (yes, its name is an artefact of the process).
 The front-end modules will have an entry in the "package.json" and "stripes.config.js" as described via the previous paragraph.
 
-## Remove from reference environments
+## Remove from folio-ansible
 
-If a back-end module was included in the "folio-snapshot" [reference environments](/guides/automation/#reference-environments) and Vagrant boxes, then it will also need to be removed from `folio-ansible/group_vars/snapshot` file.
-Please [raise](/faqs/how-to-raise-devops-ticket/) a Jira ticket for FOLIO DevOps.
+This section explains a potential additional task related to back-end modules.
+This task does not need to be synchronised with other tasks.
+
+The "folio-snapshot" [reference environments](/guides/automation/#reference-environments) (and Vagrant box) are constructed using certain files in the platform-complete snapshot branch.
+So after the module entries are removed, as described in the previous section, then they will be gone from those systems on their subsequent Jenkins build.
+
+The "[folio-ansible/group_vars/snapshot](https://github.com/folio-org/folio-ansible/blob/master/group_vars/snapshot)" file is used to supplement the module configuration.
+
+Do search that file, as the module could be defined in two places.
+
+Please send a pull-request for folio-ansible or [raise](/faqs/how-to-raise-devops-ticket/) a Jira ticket for FOLIO DevOps.
 
 ## Deal with outstanding PRs
 
-Address outstanding pull requests, e.g. Close with a comment.
+Address outstanding pull requests for the GitHub repository, e.g. Close with a comment.
 
 This is also a chance to delete any old merged branches, where developers forgot to [Maintain tidy repositories](/guides/tidy-repository/).
 
