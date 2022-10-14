@@ -39,7 +39,7 @@ If still present, then verify that no other module depends upon it
 (e.g. search the [Registry of ModuleDescriptors](/faqs/how-to-which-module-which-interface-endpoint/#registry-of-moduledescriptors)).
 
 Raise a pull-request for [platform-complete snapshot](https://github.com/folio-org/platform-complete/tree/snapshot) branch.
-Refer to the explanation of how the [platforms are constructed](/guidelines/release-procedures/#add-to-platforms) which describes the various branches and the key files and which ones are generated files.
+Refer to the explanation of how the [platforms are constructed](/guidelines/release-procedures/#add-to-platforms) which describes the various branches and the key files. It also emphasises those that are generated files, which should **not be edited directly**.
 
 The process will essentially be the reverse of when modules were initially [installed](/faqs/how-to-install-new-module/).
 For front-end modules it should be straight-forward.
@@ -47,7 +47,7 @@ For back-end modules it could be more complex. If the module was included by vir
 However some backend modules were added via the "install-extras.json" file (in the platform snapshot branch) either because they were not ever required by a frontend module, or the frontend was not yet ready and the entry was not removed from that file when the frontend finally was ready.
 
 If the module was part of a previous Flower release, then raise a pull-request for [platform-complete master](https://github.com/folio-org/platform-complete/tree/master) branch (which will form the basis for the upcoming release).
-The back-end modules will have an entry in the "install-extras.json" file (yes, its name is an artefact of the process).
+All back-end modules will have an entry in the "install-extras.json" file (yes, its name is an artefact of the process).
 The front-end modules will have an entry in the "package.json" and "stripes.config.js" as described via the previous paragraph.
 
 ## Remove from folio-ansible
