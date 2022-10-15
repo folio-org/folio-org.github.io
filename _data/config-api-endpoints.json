@@ -4249,6 +4249,13 @@
     "path": "/holdings-storage/batch/synchronous"
   },
   {
+    "apiDescription": "ramls/holdings-sync-unsafe.raml",
+    "apiType": "raml",
+    "methods": "post:holdings_storage_batch_synchronous_unsafe_post",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-storage/batch/synchronous-unsafe"
+  },
+  {
     "apiDescription": "ramls/holdings-storage.raml",
     "apiType": "raml",
     "methods": "delete:holdings_storage_holdings_delete get:holdings_storage_holdings_get post:holdings_storage_holdings_post",
@@ -4457,6 +4464,13 @@
     "methods": "post:instance_storage_batch_synchronous_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/batch/synchronous"
+  },
+  {
+    "apiDescription": "ramls/instance-sync-unsafe.raml",
+    "apiType": "raml",
+    "methods": "post:instance_storage_batch_synchronous_unsafe_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/batch/synchronous-unsafe"
   },
   {
     "apiDescription": "ramls/instance-storage.raml",
@@ -4982,6 +4996,13 @@
     "methods": "post:item_storage_batch_synchronous_post",
     "name": "mod-inventory-storage",
     "path": "/item-storage/batch/synchronous"
+  },
+  {
+    "apiDescription": "ramls/item-sync-unsafe.raml",
+    "apiType": "raml",
+    "methods": "post:item_storage_batch_synchronous_unsafe_post",
+    "name": "mod-inventory-storage",
+    "path": "/item-storage/batch/synchronous-unsafe"
   },
   {
     "apiDescription": "ramls/item-storage.raml",
