@@ -32,13 +32,14 @@ Better still, ensure that the relevant team that will be doing the work, does ha
 
 Ensure that this module is not in a Stripes Platform,
 i.e. search in the [platform-complete install.json](https://github.com/folio-org/platform-complete/blob/snapshot/install.json) generated file.
+Note that front-end module IDs begin with "`folio_`".
 
 Its functionality should have already moved to other modules.
 If still present, then verify that no other module depends upon it
 (e.g. search the [Registry of ModuleDescriptors](/faqs/how-to-which-module-which-interface-endpoint/#registry-of-moduledescriptors)).
 
 Raise a pull-request for [platform-complete snapshot](https://github.com/folio-org/platform-complete/tree/snapshot) branch.
-Refer to the explanation of how the [platforms are constructed](/guidelines/release-procedures/#add-to-platforms) which describes the various branches and the key files and which ones are generated files.
+Refer to the explanation of how the [platforms are constructed](/guidelines/release-procedures/#add-to-platforms) which describes the various branches and the key files. It also emphasises those that are generated files, which should **not be edited directly**.
 
 The process will essentially be the reverse of when modules were initially [installed](/faqs/how-to-install-new-module/).
 For front-end modules it should be straight-forward.
@@ -46,17 +47,26 @@ For back-end modules it could be more complex. If the module was included by vir
 However some backend modules were added via the "install-extras.json" file (in the platform snapshot branch) either because they were not ever required by a frontend module, or the frontend was not yet ready and the entry was not removed from that file when the frontend finally was ready.
 
 If the module was part of a previous Flower release, then raise a pull-request for [platform-complete master](https://github.com/folio-org/platform-complete/tree/master) branch (which will form the basis for the upcoming release).
-The back-end modules will have an entry in the "install-extras.json" file (yes, its name is an artefact of the process).
+All back-end modules will have an entry in the "install-extras.json" file (yes, its name is an artefact of the process).
 The front-end modules will have an entry in the "package.json" and "stripes.config.js" as described via the previous paragraph.
 
-## Remove from reference environments
+## Remove from folio-ansible
 
-If a back-end module was included in the "folio-snapshot" [reference environments](/guides/automation/#reference-environments) and Vagrant boxes, then it will also need to be removed from `folio-ansible/group_vars/snapshot` file.
-Please [raise](/faqs/how-to-raise-devops-ticket/) a Jira ticket for FOLIO DevOps.
+This section explains a potential additional task related to back-end modules.
+This task does not need to be synchronised with other tasks.
+
+The "folio-snapshot" [reference environments](/guides/automation/#reference-environments) (and Vagrant box) are constructed using certain files in the platform-complete snapshot branch.
+So after the module entries are removed, as described in the previous section, then they will be gone from those systems on their subsequent Jenkins build.
+
+The "[folio-ansible/group_vars/snapshot](https://github.com/folio-org/folio-ansible/blob/master/group_vars/snapshot)" file is used to supplement the module configuration.
+
+Do search that file, as the module could be defined in two places.
+
+Please send a pull-request for folio-ansible or [raise](/faqs/how-to-raise-devops-ticket/) a Jira ticket for FOLIO DevOps.
 
 ## Deal with outstanding PRs
 
-Address outstanding pull requests, e.g. Close with a comment.
+Address outstanding pull requests for the GitHub repository, e.g. Close with a comment.
 
 This is also a chance to delete any old merged branches, where developers forgot to [Maintain tidy repositories](/guides/tidy-repository/).
 
