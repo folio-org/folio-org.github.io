@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-10-03T23:20:39.970355+00:00"
+    "generatedDateTime": "2022-10-19T05:19:46.240048+00:00"
   },
   "repos": [
     {
@@ -549,7 +549,7 @@
     },
     {
       "defaultBranch": "main",
-      "description": "An open-source analytics platform for libraries",
+      "description": "LDP1 is an open-source analytics platform for FOLIO libraries",
       "docDirName": "doc",
       "name": "ldp",
       "org": "library-data-platform",
@@ -643,48 +643,6 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>FOLIO compatible persistent storage of loans, loan policies, circulation rules, requests, and fixed due date schedules</p>"
-    },
-    {
-      "defaultBranch": "master",
-      "description": null,
-      "docDirName": null,
-      "hasDbSchema": null,
-      "hintRmb": true,
-      "isRmb": null,
-      "name": "mod-codex-ekb",
-      "org": "folio-org",
-      "ramlDirName": "ramls",
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>Codex wrapper for the EBSCO knowledge base.</p>"
-    },
-    {
-      "defaultBranch": "master",
-      "description": "Codex wrapper for local inventory",
-      "docDirName": null,
-      "hasDbSchema": null,
-      "hintRmb": true,
-      "isRmb": null,
-      "name": "mod-codex-inventory",
-      "org": "folio-org",
-      "ramlDirName": "ramls",
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>Codex Wrapper for Inventory</p>"
-    },
-    {
-      "defaultBranch": "master",
-      "description": "Codex Multiplexer backend module",
-      "docDirName": null,
-      "hasDbSchema": null,
-      "hintRmb": true,
-      "isRmb": null,
-      "name": "mod-codex-mux",
-      "org": "folio-org",
-      "ramlDirName": "ramls",
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>Codex Multiplexer backend module</p>"
     },
     {
       "defaultBranch": "master",
@@ -1909,7 +1867,8 @@
       "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>",
       "workflows": [
         "build-npm-release.yml",
-        "build-npm.yml"
+        "build-npm.yml",
+        "build-storybook.yml"
       ],
       "workflowsFolio": [
         "build-npm-release.yml",
