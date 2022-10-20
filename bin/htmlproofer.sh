@@ -15,7 +15,6 @@ IGNORE+=",/github\.com\/pulls\/review-requested/"
 
 # Ignore some known broken ones
 IGNORE+=",/#mod-vendors/"
-IGNORE+=",/api\/mod-codex-mock/"
 
 # Temporarily ignore github. Getting 429 error.
 IGNORE+=",/github\.com\/folio-org/"
