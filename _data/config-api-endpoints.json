@@ -560,6 +560,13 @@
     "path": "/admin/health"
   },
   {
+    "apiDescription": "ramls/edge-rtac.raml",
+    "apiType": "raml",
+    "methods": "get:admin_health_get",
+    "name": "edge-rtac",
+    "path": "/admin/health"
+  },
+  {
     "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
     "apiType": "raml",
     "methods": "get:admin_health_get",
@@ -684,6 +691,27 @@
     "methods": "get:admin_total_db_size_get",
     "name": "raml-module-builder",
     "path": "/admin/total_db_size"
+  },
+  {
+    "apiDescription": "ramls/aggregatorsettings.raml",
+    "apiType": "raml",
+    "methods": "get:aggregator_settings_get post:aggregator_settings_post",
+    "name": "mod-erm-usage",
+    "path": "/aggregator-settings"
+  },
+  {
+    "apiDescription": "ramls/aggregatorsettings.raml",
+    "apiType": "raml",
+    "methods": "delete:aggregator_settings__id__delete get:aggregator_settings__id__get put:aggregator_settings__id__put",
+    "name": "mod-erm-usage",
+    "path": "/aggregator-settings/{id}"
+  },
+  {
+    "apiDescription": "ramls/aggregatorsettings.raml",
+    "apiType": "raml",
+    "methods": "get:aggregator_settings__id__exportcredentials_get",
+    "name": "mod-erm-usage",
+    "path": "/aggregator-settings/{id}/exportcredentials"
   },
   {
     "apiDescription": "ramls/alternative-title-type.raml",
@@ -1722,46 +1750,11 @@
     "path": "/classification-types/{classificationTypeId}"
   },
   {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex.raml",
-    "apiType": "raml",
-    "methods": "get:codex_instances_get",
-    "name": "mod-codex-ekb",
-    "path": "/codex-instances"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex.raml",
-    "apiType": "raml",
-    "methods": "get:codex_instances_get",
-    "name": "mod-codex-inventory",
-    "path": "/codex-instances"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex.raml",
-    "apiType": "raml",
-    "methods": "get:codex_instances_get",
-    "name": "mod-codex-mux",
-    "path": "/codex-instances"
-  },
-  {
     "apiDescription": "ramls/codex/codex.raml",
     "apiType": "raml",
     "methods": "get:codex_instances_get",
     "name": "raml",
     "path": "/codex-instances"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex-instances-sources.raml",
-    "apiType": "raml",
-    "methods": "get:codex_instances_sources_get",
-    "name": "mod-codex-ekb",
-    "path": "/codex-instances-sources"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex-instances-sources.raml",
-    "apiType": "raml",
-    "methods": "get:codex_instances_sources_get",
-    "name": "mod-codex-mux",
-    "path": "/codex-instances-sources"
   },
   {
     "apiDescription": "ramls/codex/codex-instances-sources.raml",
@@ -1771,27 +1764,6 @@
     "path": "/codex-instances-sources"
   },
   {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex.raml",
-    "apiType": "raml",
-    "methods": "get:codex_instances__id__get",
-    "name": "mod-codex-ekb",
-    "path": "/codex-instances/{id}"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex.raml",
-    "apiType": "raml",
-    "methods": "get:codex_instances__id__get",
-    "name": "mod-codex-inventory",
-    "path": "/codex-instances/{id}"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex.raml",
-    "apiType": "raml",
-    "methods": "get:codex_instances__id__get",
-    "name": "mod-codex-mux",
-    "path": "/codex-instances/{id}"
-  },
-  {
     "apiDescription": "ramls/codex/codex.raml",
     "apiType": "raml",
     "methods": "get:codex_instances__id__get",
@@ -1799,20 +1771,6 @@
     "path": "/codex-instances/{id}"
   },
   {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex-packages.raml",
-    "apiType": "raml",
-    "methods": "get:codex_packages_get",
-    "name": "mod-codex-ekb",
-    "path": "/codex-packages"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex-packages.raml",
-    "apiType": "raml",
-    "methods": "get:codex_packages_get",
-    "name": "mod-codex-mux",
-    "path": "/codex-packages"
-  },
-  {
     "apiDescription": "ramls/codex/codex-packages.raml",
     "apiType": "raml",
     "methods": "get:codex_packages_get",
@@ -1820,39 +1778,11 @@
     "path": "/codex-packages"
   },
   {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex-packages.raml",
-    "apiType": "raml",
-    "methods": "get:codex_packages_sources_get",
-    "name": "mod-codex-ekb",
-    "path": "/codex-packages-sources"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex-packages.raml",
-    "apiType": "raml",
-    "methods": "get:codex_packages_sources_get",
-    "name": "mod-codex-mux",
-    "path": "/codex-packages-sources"
-  },
-  {
     "apiDescription": "ramls/codex/codex-packages.raml",
     "apiType": "raml",
     "methods": "get:codex_packages_sources_get",
     "name": "raml",
     "path": "/codex-packages-sources"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex-packages.raml",
-    "apiType": "raml",
-    "methods": "get:codex_packages__id__get",
-    "name": "mod-codex-ekb",
-    "path": "/codex-packages/{id}"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex-packages.raml",
-    "apiType": "raml",
-    "methods": "get:codex_packages__id__get",
-    "name": "mod-codex-mux",
-    "path": "/codex-packages/{id}"
   },
   {
     "apiDescription": "ramls/codex/codex-packages.raml",
@@ -2014,6 +1944,76 @@
     "methods": "delete:copycat_profiles__id__delete get:copycat_profiles__id__get put:copycat_profiles__id__put",
     "name": "mod-copycat",
     "path": "/copycat/profiles/{id}"
+  },
+  {
+    "apiDescription": "ramls/counterreports.raml",
+    "apiType": "raml",
+    "methods": "get:counter_reports_get post:counter_reports_post",
+    "name": "mod-erm-usage",
+    "path": "/counter-reports"
+  },
+  {
+    "apiDescription": "ramls/counterreports.raml",
+    "apiType": "raml",
+    "methods": "get:counter_reports_errors_codes_get",
+    "name": "mod-erm-usage",
+    "path": "/counter-reports/errors/codes"
+  },
+  {
+    "apiDescription": "ramls/counterreports.raml",
+    "apiType": "raml",
+    "methods": "get:counter_reports_export_provider__id__report__name__version__aversion__from__begin__to__end__get",
+    "name": "mod-erm-usage",
+    "path": "/counter-reports/export/provider/{id}/report/{name}/version/{aversion}/from/{begin}/to/{end}"
+  },
+  {
+    "apiDescription": "ramls/counterreports.raml",
+    "apiType": "raml",
+    "methods": "get:counter_reports_export__id__get",
+    "name": "mod-erm-usage",
+    "path": "/counter-reports/export/{id}"
+  },
+  {
+    "apiDescription": "ramls/counterreports.raml",
+    "apiType": "raml",
+    "methods": "post:counter_reports_reports_delete_post",
+    "name": "mod-erm-usage",
+    "path": "/counter-reports/reports/delete"
+  },
+  {
+    "apiDescription": "ramls/counterreports.raml",
+    "apiType": "raml",
+    "methods": "get:counter_reports_reports_types_get",
+    "name": "mod-erm-usage",
+    "path": "/counter-reports/reports/types"
+  },
+  {
+    "apiDescription": "ramls/counterreports.raml",
+    "apiType": "raml",
+    "methods": "get:counter_reports_sorted__udpid__get",
+    "name": "mod-erm-usage",
+    "path": "/counter-reports/sorted/{udpId}"
+  },
+  {
+    "apiDescription": "ramls/counterreports.raml",
+    "apiType": "raml",
+    "methods": "post:counter_reports_upload_provider__id__post",
+    "name": "mod-erm-usage",
+    "path": "/counter-reports/upload/provider/{id}"
+  },
+  {
+    "apiDescription": "ramls/counterreports.raml",
+    "apiType": "raml",
+    "methods": "delete:counter_reports__id__delete get:counter_reports__id__get put:counter_reports__id__put",
+    "name": "mod-erm-usage",
+    "path": "/counter-reports/{id}"
+  },
+  {
+    "apiDescription": "ramls/counterreports.raml",
+    "apiType": "raml",
+    "methods": "get:counter_reports__id__download_get",
+    "name": "mod-erm-usage",
+    "path": "/counter-reports/{id}/download"
   },
   {
     "apiDescription": "ramls/courses.raml",
@@ -2210,6 +2210,20 @@
     "methods": "get:custom_fields__id__stats_get",
     "name": "folio-custom-fields",
     "path": "/custom-fields/{id}/stats"
+  },
+  {
+    "apiDescription": "ramls/customreports.raml",
+    "apiType": "raml",
+    "methods": "get:custom_reports_get post:custom_reports_post",
+    "name": "mod-erm-usage",
+    "path": "/custom-reports"
+  },
+  {
+    "apiDescription": "ramls/customreports.raml",
+    "apiType": "raml",
+    "methods": "delete:custom_reports__id__delete get:custom_reports__id__get put:custom_reports__id__put",
+    "name": "mod-erm-usage",
+    "path": "/custom-reports/{id}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
@@ -3052,6 +3066,20 @@
     "path": "/erm-usage-harvester/start/{id}"
   },
   {
+    "apiDescription": "ramls/files.raml",
+    "apiType": "raml",
+    "methods": "post:erm_usage_files_post",
+    "name": "mod-erm-usage",
+    "path": "/erm-usage/files"
+  },
+  {
+    "apiDescription": "ramls/files.raml",
+    "apiType": "raml",
+    "methods": "delete:erm_usage_files__id__delete get:erm_usage_files__id__get",
+    "name": "mod-erm-usage",
+    "path": "/erm-usage/files/{id}"
+  },
+  {
     "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
     "apiType": "oas",
     "methods": "get:operation/getReportData",
@@ -3822,6 +3850,202 @@
     "path": "/finance/transfers"
   },
   {
+    "apiDescription": "ramls/fincConfigMetadataSources.raml",
+    "apiType": "raml",
+    "methods": "get:finc_config_contacts_get post:finc_config_contacts_post",
+    "name": "mod-finc-config",
+    "path": "/finc-config/contacts"
+  },
+  {
+    "apiDescription": "ramls/fincConfigEZBCredentials.raml",
+    "apiType": "raml",
+    "methods": "get:finc_config_ezb_credentials_get post:finc_config_ezb_credentials_post",
+    "name": "mod-finc-config",
+    "path": "/finc-config/ezb-credentials"
+  },
+  {
+    "apiDescription": "ramls/fincConfigEZBCredentials.raml",
+    "apiType": "raml",
+    "methods": "delete:finc_config_ezb_credentials__isil__delete get:finc_config_ezb_credentials__isil__get put:finc_config_ezb_credentials__isil__put",
+    "name": "mod-finc-config",
+    "path": "/finc-config/ezb-credentials/{isil}"
+  },
+  {
+    "apiDescription": "ramls/fincConfigFiles.raml",
+    "apiType": "raml",
+    "methods": "post:finc_config_files_post",
+    "name": "mod-finc-config",
+    "path": "/finc-config/files"
+  },
+  {
+    "apiDescription": "ramls/fincConfigFiles.raml",
+    "apiType": "raml",
+    "methods": "delete:finc_config_files__id__delete get:finc_config_files__id__get",
+    "name": "mod-finc-config",
+    "path": "/finc-config/files/{id}"
+  },
+  {
+    "apiDescription": "ramls/fincConfigFilters.raml",
+    "apiType": "raml",
+    "methods": "get:finc_config_filters_get post:finc_config_filters_post",
+    "name": "mod-finc-config",
+    "path": "/finc-config/filters"
+  },
+  {
+    "apiDescription": "ramls/fincConfigFilters.raml",
+    "apiType": "raml",
+    "methods": "delete:finc_config_filters__id__delete get:finc_config_filters__id__get put:finc_config_filters__id__put",
+    "name": "mod-finc-config",
+    "path": "/finc-config/filters/{id}"
+  },
+  {
+    "apiDescription": "ramls/fincConfigFilters.raml",
+    "apiType": "raml",
+    "methods": "get:finc_config_filters__id__collections_get put:finc_config_filters__id__collections_put",
+    "name": "mod-finc-config",
+    "path": "/finc-config/filters/{id}/collections"
+  },
+  {
+    "apiDescription": "ramls/isils.raml",
+    "apiType": "raml",
+    "methods": "get:finc_config_isils_get post:finc_config_isils_post",
+    "name": "mod-finc-config",
+    "path": "/finc-config/isils"
+  },
+  {
+    "apiDescription": "ramls/isils.raml",
+    "apiType": "raml",
+    "methods": "delete:finc_config_isils__id__delete get:finc_config_isils__id__get put:finc_config_isils__id__put",
+    "name": "mod-finc-config",
+    "path": "/finc-config/isils/{id}"
+  },
+  {
+    "apiDescription": "ramls/fincConfigMetadataCollections.raml",
+    "apiType": "raml",
+    "methods": "get:finc_config_metadata_collections_get post:finc_config_metadata_collections_post",
+    "name": "mod-finc-config",
+    "path": "/finc-config/metadata-collections"
+  },
+  {
+    "apiDescription": "ramls/fincConfigMetadataCollections.raml",
+    "apiType": "raml",
+    "methods": "delete:finc_config_metadata_collections__id__delete get:finc_config_metadata_collections__id__get put:finc_config_metadata_collections__id__put",
+    "name": "mod-finc-config",
+    "path": "/finc-config/metadata-collections/{id}"
+  },
+  {
+    "apiDescription": "ramls/fincConfigMetadataSources.raml",
+    "apiType": "raml",
+    "methods": "get:finc_config_metadata_sources_get post:finc_config_metadata_sources_post",
+    "name": "mod-finc-config",
+    "path": "/finc-config/metadata-sources"
+  },
+  {
+    "apiDescription": "ramls/fincConfigMetadataSources.raml",
+    "apiType": "raml",
+    "methods": "delete:finc_config_metadata_sources__id__delete get:finc_config_metadata_sources__id__get put:finc_config_metadata_sources__id__put",
+    "name": "mod-finc-config",
+    "path": "/finc-config/metadata-sources/{id}"
+  },
+  {
+    "apiDescription": "ramls/fincConfigMetadataSources.raml",
+    "apiType": "raml",
+    "methods": "get:finc_config_tiny_metadata_sources_get post:finc_config_tiny_metadata_sources_post",
+    "name": "mod-finc-config",
+    "path": "/finc-config/tiny-metadata-sources"
+  },
+  {
+    "apiDescription": "ramls/fincSelectEZBCredentials.raml",
+    "apiType": "raml",
+    "methods": "delete:finc_select_ezb_credentials_delete get:finc_select_ezb_credentials_get put:finc_select_ezb_credentials_put",
+    "name": "mod-finc-config",
+    "path": "/finc-select/ezb-credentials"
+  },
+  {
+    "apiDescription": "ramls/fincSelectFiles.raml",
+    "apiType": "raml",
+    "methods": "post:finc_select_files_post",
+    "name": "mod-finc-config",
+    "path": "/finc-select/files"
+  },
+  {
+    "apiDescription": "ramls/fincSelectFiles.raml",
+    "apiType": "raml",
+    "methods": "delete:finc_select_files__id__delete get:finc_select_files__id__get",
+    "name": "mod-finc-config",
+    "path": "/finc-select/files/{id}"
+  },
+  {
+    "apiDescription": "ramls/fincSelectFilters.raml",
+    "apiType": "raml",
+    "methods": "get:finc_select_filters_get post:finc_select_filters_post",
+    "name": "mod-finc-config",
+    "path": "/finc-select/filters"
+  },
+  {
+    "apiDescription": "ramls/fincSelectFilters.raml",
+    "apiType": "raml",
+    "methods": "delete:finc_select_filters__id__delete get:finc_select_filters__id__get put:finc_select_filters__id__put",
+    "name": "mod-finc-config",
+    "path": "/finc-select/filters/{id}"
+  },
+  {
+    "apiDescription": "ramls/fincSelectFilters.raml",
+    "apiType": "raml",
+    "methods": "get:finc_select_filters__id__collections_get put:finc_select_filters__id__collections_put",
+    "name": "mod-finc-config",
+    "path": "/finc-select/filters/{id}/collections"
+  },
+  {
+    "apiDescription": "ramls/fincSelectMetadataCollections.raml",
+    "apiType": "raml",
+    "methods": "get:finc_select_metadata_collections_get",
+    "name": "mod-finc-config",
+    "path": "/finc-select/metadata-collections"
+  },
+  {
+    "apiDescription": "ramls/fincSelectMetadataCollections.raml",
+    "apiType": "raml",
+    "methods": "get:finc_select_metadata_collections__id__get",
+    "name": "mod-finc-config",
+    "path": "/finc-select/metadata-collections/{id}"
+  },
+  {
+    "apiDescription": "ramls/fincSelectMetadataCollections.raml",
+    "apiType": "raml",
+    "methods": "delete:finc_select_metadata_collections__id__select_delete get:finc_select_metadata_collections__id__select_get put:finc_select_metadata_collections__id__select_put",
+    "name": "mod-finc-config",
+    "path": "/finc-select/metadata-collections/{id}/select"
+  },
+  {
+    "apiDescription": "ramls/fincSelectMetadataSources.raml",
+    "apiType": "raml",
+    "methods": "get:finc_select_metadata_sources_get post:finc_select_metadata_sources_post",
+    "name": "mod-finc-config",
+    "path": "/finc-select/metadata-sources"
+  },
+  {
+    "apiDescription": "ramls/fincSelectMetadataSources.raml",
+    "apiType": "raml",
+    "methods": "delete:finc_select_metadata_sources__id__delete get:finc_select_metadata_sources__id__get put:finc_select_metadata_sources__id__put",
+    "name": "mod-finc-config",
+    "path": "/finc-select/metadata-sources/{id}"
+  },
+  {
+    "apiDescription": "ramls/fincSelectMetadataSources.raml",
+    "apiType": "raml",
+    "methods": "get:finc_select_metadata_sources__id__collections_get",
+    "name": "mod-finc-config",
+    "path": "/finc-select/metadata-sources/{id}/collections"
+  },
+  {
+    "apiDescription": "ramls/fincSelectMetadataSources.raml",
+    "apiType": "raml",
+    "methods": "delete:finc_select_metadata_sources__id__collections_select_all_delete get:finc_select_metadata_sources__id__collections_select_all_get put:finc_select_metadata_sources__id__collections_select_all_put",
+    "name": "mod-finc-config",
+    "path": "/finc-select/metadata-sources/{id}/collections/select-all"
+  },
+  {
     "apiDescription": "ramls/fixed-due-date-schedule.raml",
     "apiType": "raml",
     "methods": "delete:fixed_due_date_schedule_storage_fixed_due_date_schedules_delete get:fixed_due_date_schedule_storage_fixed_due_date_schedules_get post:fixed_due_date_schedule_storage_fixed_due_date_schedules_post",
@@ -3988,6 +4212,48 @@
     "methods": "delete:identifier_types__identifiertypeid__delete get:identifier_types__identifiertypeid__get put:identifier_types__identifiertypeid__put",
     "name": "mod-inventory-storage",
     "path": "/identifier-types/{identifierTypeId}"
+  },
+  {
+    "apiDescription": "ramls/idm-connect.raml",
+    "apiType": "raml",
+    "methods": "get:idm_connect_contract_get post:idm_connect_contract_post",
+    "name": "mod-idm-connect",
+    "path": "/idm-connect/contract"
+  },
+  {
+    "apiDescription": "ramls/idm-connect.raml",
+    "apiType": "raml",
+    "methods": "post:idm_connect_contract_bulk_delete_post",
+    "name": "mod-idm-connect",
+    "path": "/idm-connect/contract/bulk-delete"
+  },
+  {
+    "apiDescription": "ramls/idm-connect.raml",
+    "apiType": "raml",
+    "methods": "delete:idm_connect_contract__id__delete get:idm_connect_contract__id__get put:idm_connect_contract__id__put",
+    "name": "mod-idm-connect",
+    "path": "/idm-connect/contract/{id}"
+  },
+  {
+    "apiDescription": "ramls/idm-connect.raml",
+    "apiType": "raml",
+    "methods": "get:idm_connect_contract__id__transmit_get",
+    "name": "mod-idm-connect",
+    "path": "/idm-connect/contract/{id}/transmit"
+  },
+  {
+    "apiDescription": "ramls/idm-connect.raml",
+    "apiType": "raml",
+    "methods": "get:idm_connect_searchidm_get",
+    "name": "mod-idm-connect",
+    "path": "/idm-connect/searchidm"
+  },
+  {
+    "apiDescription": "ramls/idm-connect.raml",
+    "apiType": "raml",
+    "methods": "delete:idm_connect_ubreadernumber_delete post:idm_connect_ubreadernumber_post",
+    "name": "mod-idm-connect",
+    "path": "/idm-connect/ubreadernumber"
   },
   {
     "apiDescription": "ramls/ill-policy.raml",
@@ -6111,6 +6377,13 @@
     "path": "/preceding-succeeding-titles/{precedingSucceedingTitleId}"
   },
   {
+    "apiDescription": "ramls/edge-rtac.raml",
+    "apiType": "raml",
+    "methods": "get:prod_rtac_foliortac_get",
+    "name": "edge-rtac",
+    "path": "/prod/rtac/folioRTAC"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
     "apiType": "oas",
     "methods": "get:operation/getProviders",
@@ -6550,6 +6823,34 @@
     "methods": "post:rmbtests_teststream_post",
     "name": "raml-module-builder",
     "path": "/rmbtests/testStream"
+  },
+  {
+    "apiDescription": "ramls/edge-rtac.raml",
+    "apiType": "raml",
+    "methods": "get:rtac_get",
+    "name": "edge-rtac",
+    "path": "/rtac"
+  },
+  {
+    "apiDescription": "ramls/rtac-batch.raml",
+    "apiType": "raml",
+    "methods": "post:rtac_batch_post",
+    "name": "mod-rtac",
+    "path": "/rtac-batch"
+  },
+  {
+    "apiDescription": "ramls/rtac.raml",
+    "apiType": "raml",
+    "methods": "get:rtac__id__get",
+    "name": "mod-rtac",
+    "path": "/rtac/{id}"
+  },
+  {
+    "apiDescription": "ramls/edge-rtac.raml",
+    "apiType": "raml",
+    "methods": "get:rtac__instanceid__get",
+    "name": "edge-rtac",
+    "path": "/rtac/{instanceId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/validator-registry.yaml",
@@ -7047,6 +7348,20 @@
     "methods": "post:operation/updateAsrItemCheckIn",
     "name": "edge-dematic",
     "path": "/updateASRItemStatusBeingRetrieved/{remoteStorageConfigurationId}"
+  },
+  {
+    "apiDescription": "ramls/usagedataproviders.raml",
+    "apiType": "raml",
+    "methods": "get:usage_data_providers_get post:usage_data_providers_post",
+    "name": "mod-erm-usage",
+    "path": "/usage-data-providers"
+  },
+  {
+    "apiDescription": "ramls/usagedataproviders.raml",
+    "apiType": "raml",
+    "methods": "delete:usage_data_providers__id__delete get:usage_data_providers__id__get put:usage_data_providers__id__put",
+    "name": "mod-erm-usage",
+    "path": "/usage-data-providers/{id}"
   },
   {
     "apiDescription": "ramls/import.raml",

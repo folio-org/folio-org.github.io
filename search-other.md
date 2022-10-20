@@ -30,7 +30,7 @@ Please ensure that yours is clean.
 * [Search Markdown documents in stripes](https://github.com/search?type=code&amp;q=smart+component+repo%3Afolio-org/stripes+language%3Amarkdown) for term: smart component
 
 Refer to specific
-[GitHub search help](https://help.github.com/categories/searching-for-information-on-github).
+[GitHub search help](https://docs.github.com/en/search-github/getting-started-with-searching-on-github/about-searching-on-github).
 
 ## FOLIO Wiki
 

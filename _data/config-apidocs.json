@@ -30,8 +30,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-08-05T07:42:38.865967+00:00"
+      ]
     },
     "name": "edge-caiasoft",
     "org": "folio-org"
@@ -47,8 +46,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-09-28T10:09:11.152692+00:00"
+      ]
     },
     "name": "edge-dematic",
     "org": "folio-org"
@@ -64,8 +62,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-09-02T04:52:38.147161+00:00"
+      ]
     },
     "name": "edge-inn-reach",
     "org": "folio-org"
@@ -81,8 +78,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-09-12T17:29:36.833236+00:00"
+      ]
     },
     "name": "edge-lti-courses",
     "org": "folio-org"
@@ -98,8 +94,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-08-30T07:12:00.450211+00:00"
+      ]
     },
     "name": "edge-oai-pmh",
     "org": "folio-org"
@@ -115,8 +110,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-09-13T00:54:07.616890+00:00"
+      ]
     },
     "name": "edge-orders",
     "org": "folio-org"
@@ -132,8 +126,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-09-15T13:32:58.608137+00:00"
+      ]
     },
     "name": "edge-patron",
     "org": "folio-org"
@@ -149,8 +142,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-08-26T13:09:06.927364+00:00"
+      ]
     },
     "name": "edge-rtac",
     "org": "folio-org"
@@ -166,8 +158,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-11T00:49:16.660346+00:00"
+      ]
     },
     "name": "folio-custom-fields",
     "org": "folio-org"
@@ -193,8 +184,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-10-04T13:52:21.948408+00:00"
+      ]
     },
     "name": "folio-spring-base",
     "org": "folio-org"
@@ -210,8 +200,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-09-28T18:44:24.224856+00:00"
+      ]
     },
     "name": "folio-vertx-lib",
     "org": "folio-org"
@@ -229,8 +218,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-07T09:57:01.258853+00:00"
+      ]
     },
     "name": "mod-audit",
     "org": "folio-org"
@@ -246,8 +234,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-09-27T16:51:24.570520+00:00"
+      ]
     },
     "name": "mod-authtoken",
     "org": "folio-org"
@@ -263,8 +250,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-06-26T09:56:38.528337+00:00"
+      ]
     },
     "name": "mod-calendar",
     "org": "folio-org"
@@ -292,8 +278,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-06T13:59:19.034072+00:00"
+      ]
     },
     "name": "mod-circulation",
     "org": "folio-org"
@@ -325,65 +310,9 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-05T15:53:06.971431+00:00"
+      ]
     },
     "name": "mod-circulation-storage",
-    "org": "folio-org"
-  },
-  {
-    "config": {
-      "oas": [],
-      "raml": [
-        "ramls/raml-util/ramls/codex/codex-instances-sources.raml",
-        "ramls/raml-util/ramls/codex/codex-packages.raml",
-        "ramls/raml-util/ramls/codex/codex.raml"
-      ],
-      "upload": []
-    },
-    "metadata": {
-      "apiTypes": [
-        "RAML"
-      ],
-      "generatedDate": "2022-10-07T12:15:20.930599+00:00"
-    },
-    "name": "mod-codex-ekb",
-    "org": "folio-org"
-  },
-  {
-    "config": {
-      "oas": [],
-      "raml": [
-        "ramls/raml-util/ramls/codex/codex.raml"
-      ],
-      "upload": []
-    },
-    "metadata": {
-      "apiTypes": [
-        "RAML"
-      ],
-      "generatedDate": "2022-10-07T12:25:01.044516+00:00"
-    },
-    "name": "mod-codex-inventory",
-    "org": "folio-org"
-  },
-  {
-    "config": {
-      "oas": [],
-      "raml": [
-        "ramls/raml-util/ramls/codex/codex-instances-sources.raml",
-        "ramls/raml-util/ramls/codex/codex-packages.raml",
-        "ramls/raml-util/ramls/codex/codex.raml"
-      ],
-      "upload": []
-    },
-    "metadata": {
-      "apiTypes": [
-        "RAML"
-      ],
-      "generatedDate": "2022-10-07T12:20:39.142266+00:00"
-    },
-    "name": "mod-codex-mux",
     "org": "folio-org"
   },
   {
@@ -397,8 +326,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-07T03:40:26.543364+00:00"
+      ]
     },
     "name": "mod-configuration",
     "org": "folio-org"
@@ -414,8 +342,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-07T03:46:09.636357+00:00"
+      ]
     },
     "name": "mod-copycat",
     "org": "folio-org"
@@ -431,8 +358,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-09-14T05:24:36.325060+00:00"
+      ]
     },
     "name": "mod-courses",
     "org": "folio-org"
@@ -453,8 +379,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-10T17:01:29.964851+00:00"
+      ]
     },
     "name": "mod-data-export",
     "org": "folio-org"
@@ -471,8 +396,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-10-10T11:40:25.072859+00:00"
+      ]
     },
     "name": "mod-data-export-spring",
     "org": "folio-org"
@@ -493,8 +417,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-06-07T05:41:33.671385+00:00"
+      ]
     },
     "name": "mod-data-export-spring-migrated",
     "org": "folio-org"
@@ -514,8 +437,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-10-10T11:47:10.951170+00:00"
+      ]
     },
     "name": "mod-data-export-worker",
     "org": "folio-org"
@@ -531,8 +453,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-07T03:51:18.735254+00:00"
+      ]
     },
     "name": "mod-data-import",
     "org": "folio-org"
@@ -550,8 +471,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-06T10:47:15.933883+00:00"
+      ]
     },
     "name": "mod-data-import-converter-storage",
     "org": "folio-org"
@@ -567,8 +487,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-09-19T13:12:59.616031+00:00"
+      ]
     },
     "name": "mod-ebsconet",
     "org": "folio-org"
@@ -585,8 +504,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-04T15:05:14.321609+00:00"
+      ]
     },
     "name": "mod-email",
     "org": "folio-org"
@@ -602,8 +520,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-09-27T10:50:10.332301+00:00"
+      ]
     },
     "name": "mod-entities-links",
     "org": "folio-org"
@@ -623,8 +540,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-07-04T13:12:47.441057+00:00"
+      ]
     },
     "name": "mod-erm-usage",
     "org": "folio-org"
@@ -641,8 +557,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-09-28T08:56:00.833990+00:00"
+      ]
     },
     "name": "mod-erm-usage-harvester",
     "org": "folio-org"
@@ -658,8 +573,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-09-11T08:21:44.731363+00:00"
+      ]
     },
     "name": "mod-eusage-reports",
     "org": "folio-org"
@@ -675,8 +589,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-04T14:18:49.512541+00:00"
+      ]
     },
     "name": "mod-event-config",
     "org": "folio-org"
@@ -707,8 +620,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-05T12:03:10.041607+00:00"
+      ]
     },
     "name": "mod-feesfines",
     "org": "folio-org"
@@ -742,8 +654,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-09-29T17:44:56.642367+00:00"
+      ]
     },
     "name": "mod-finance",
     "org": "folio-org"
@@ -775,8 +686,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-05T10:02:21.472641+00:00"
+      ]
     },
     "name": "mod-finance-storage",
     "org": "folio-org"
@@ -802,8 +712,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-07-04T13:51:34.663986+00:00"
+      ]
     },
     "name": "mod-finc-config",
     "org": "folio-org"
@@ -821,8 +730,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-09-19T10:36:09.094690+00:00"
+      ]
     },
     "name": "mod-gobi",
     "org": "folio-org"
@@ -838,8 +746,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-08-02T07:14:02.133813+00:00"
+      ]
     },
     "name": "mod-idm-connect",
     "org": "folio-org"
@@ -857,8 +764,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-10-04T13:07:05.460112+00:00"
+      ]
     },
     "name": "mod-inn-reach",
     "org": "folio-org"
@@ -879,8 +785,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-04T02:02:56.545808+00:00"
+      ]
     },
     "name": "mod-inventory",
     "org": "folio-org"
@@ -947,8 +852,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-05T01:21:57.049863+00:00"
+      ]
     },
     "name": "mod-inventory-storage",
     "org": "folio-org"
@@ -964,8 +868,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-09-16T06:34:08.134238+00:00"
+      ]
     },
     "name": "mod-inventory-update",
     "org": "folio-org"
@@ -986,8 +889,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-06T07:02:26.245470+00:00"
+      ]
     },
     "name": "mod-invoice",
     "org": "folio-org"
@@ -1011,8 +913,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-06T07:07:33.839663+00:00"
+      ]
     },
     "name": "mod-invoice-storage",
     "org": "folio-org"
@@ -1042,8 +943,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-06T13:48:25.376176+00:00"
+      ]
     },
     "name": "mod-kb-ebsco-java",
     "org": "folio-org"
@@ -1059,8 +959,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-09-13T16:52:07.852759+00:00"
+      ]
     },
     "name": "mod-ldp",
     "org": "folio-org"
@@ -1076,8 +975,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-11T00:52:19.848556+00:00"
+      ]
     },
     "name": "mod-licenses",
     "org": "folio-org"
@@ -1093,8 +991,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-09-16T06:39:05.436946+00:00"
+      ]
     },
     "name": "mod-login",
     "org": "folio-org"
@@ -1110,8 +1007,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-09-16T06:43:32.229816+00:00"
+      ]
     },
     "name": "mod-login-saml",
     "org": "folio-org"
@@ -1127,8 +1023,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-10-06T09:46:24.358563+00:00"
+      ]
     },
     "name": "mod-notes",
     "org": "folio-org"
@@ -1145,8 +1040,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-06T13:37:39.728710+00:00"
+      ]
     },
     "name": "mod-notify",
     "org": "folio-org"
@@ -1166,8 +1060,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-06T14:14:44.845497+00:00"
+      ]
     },
     "name": "mod-oai-pmh",
     "org": "folio-org"
@@ -1196,8 +1089,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-06T14:05:29.044031+00:00"
+      ]
     },
     "name": "mod-orders",
     "org": "folio-org"
@@ -1227,8 +1119,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-05T17:41:55.454904+00:00"
+      ]
     },
     "name": "mod-orders-storage",
     "org": "folio-org"
@@ -1244,8 +1135,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-09-22T06:37:47.784181+00:00"
+      ]
     },
     "name": "mod-organizations",
     "org": "folio-org"
@@ -1269,8 +1159,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-09-22T06:42:00.452241+00:00"
+      ]
     },
     "name": "mod-organizations-storage",
     "org": "folio-org"
@@ -1287,8 +1176,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-10-10T18:04:26.782609+00:00"
+      ]
     },
     "name": "mod-password-validator",
     "org": "folio-org"
@@ -1304,8 +1192,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-10T14:58:31.036061+00:00"
+      ]
     },
     "name": "mod-patron",
     "org": "folio-org"
@@ -1325,8 +1212,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-06T14:24:55.248056+00:00"
+      ]
     },
     "name": "mod-patron-blocks",
     "org": "folio-org"
@@ -1343,8 +1229,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-09-10T08:39:04.345309+00:00"
+      ]
     },
     "name": "mod-permissions",
     "org": "folio-org"
@@ -1360,8 +1245,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-04T15:08:04.435603+00:00"
+      ]
     },
     "name": "mod-pubsub",
     "org": "folio-org"
@@ -1378,8 +1262,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-10-06T10:16:24.225045+00:00"
+      ]
     },
     "name": "mod-quick-marc",
     "org": "folio-org"
@@ -1395,8 +1278,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-10-06T23:20:35.031152+00:00"
+      ]
     },
     "name": "mod-remote-storage",
     "org": "folio-org"
@@ -1412,8 +1294,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-09-23T20:04:13.328001+00:00"
+      ]
     },
     "name": "mod-reservoir",
     "org": "folio-org"
@@ -1430,8 +1311,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-07-13T14:19:29.412942+00:00"
+      ]
     },
     "name": "mod-rtac",
     "org": "folio-org"
@@ -1449,8 +1329,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-10-07T19:25:07.235598+00:00"
+      ]
     },
     "name": "mod-search",
     "org": "folio-org"
@@ -1466,8 +1345,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-06T13:40:25.816783+00:00"
+      ]
     },
     "name": "mod-sender",
     "org": "folio-org"
@@ -1486,8 +1364,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-07T13:39:18.849018+00:00"
+      ]
     },
     "name": "mod-source-record-manager",
     "org": "folio-org"
@@ -1508,8 +1385,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-06T11:13:32.836793+00:00"
+      ]
     },
     "name": "mod-source-record-storage",
     "org": "folio-org"
@@ -1525,8 +1401,7 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ],
-      "generatedDate": "2022-10-06T09:52:34.721266+00:00"
+      ]
     },
     "name": "mod-tags",
     "org": "folio-org"
@@ -1542,8 +1417,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-04T15:05:32.401925+00:00"
+      ]
     },
     "name": "mod-template-engine",
     "org": "folio-org"
@@ -1559,8 +1433,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-09-19T15:24:55.840202+00:00"
+      ]
     },
     "name": "mod-user-import",
     "org": "folio-org"
@@ -1581,8 +1454,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-06T21:51:21.352668+00:00"
+      ]
     },
     "name": "mod-users",
     "org": "folio-org"
@@ -1598,8 +1470,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-06T13:45:00.892309+00:00"
+      ]
     },
     "name": "mod-users-bl",
     "org": "folio-org"
@@ -1615,8 +1486,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-05T14:48:31.123987+00:00"
+      ]
     },
     "name": "okapi",
     "org": "folio-org"
@@ -1637,8 +1507,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-09-15T01:20:30.306785+00:00"
+      ]
     },
     "name": "raml",
     "org": "folio-org"
@@ -1655,8 +1524,7 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ],
-      "generatedDate": "2022-10-01T15:32:42.347566+00:00"
+      ]
     },
     "name": "raml-module-builder",
     "org": "folio-org"

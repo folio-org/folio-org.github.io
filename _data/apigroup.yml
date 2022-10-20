@@ -19,13 +19,6 @@ users:
     - edge-patron
     - mod-patron-blocks
     - mod-feesfines
-codex:
-  title: Codex
-  description: The FOLIO Codex.
-  modules:
-    - mod-codex-mux
-    - mod-codex-inventory
-    - mod-codex-ekb
 inventory:
   title: Inventory and circulation
   description: Inventory instances, items, and circulation.

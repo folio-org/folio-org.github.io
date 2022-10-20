@@ -26,7 +26,7 @@ from time import sleep
 import requests
 import yaml
 
-SCRIPT_VERSION = "1.5.0"
+SCRIPT_VERSION = "1.5.1"
 
 LOGLEVELS = {
     "debug": logging.DEBUG,
@@ -252,12 +252,6 @@ def assemble_config_packet(mod_name, mod_org, json_config, items_upload, old_con
             pass
         else:
             json_packet["endpoints"] = json_config["endpoints"]
-        try:
-            generated_date = json_config["metadata"]["generatedDate"]
-        except KeyError:
-            pass
-        else:
-            json_packet["metadata"]["generatedDate"] = generated_date
         try:
             generator = json_config["metadata"]["generator"]
         except KeyError:
