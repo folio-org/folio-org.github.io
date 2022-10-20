@@ -560,6 +560,13 @@
     "path": "/admin/health"
   },
   {
+    "apiDescription": "ramls/edge-rtac.raml",
+    "apiType": "raml",
+    "methods": "get:admin_health_get",
+    "name": "edge-rtac",
+    "path": "/admin/health"
+  },
+  {
     "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
     "apiType": "raml",
     "methods": "get:admin_health_get",
@@ -1743,46 +1750,11 @@
     "path": "/classification-types/{classificationTypeId}"
   },
   {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex.raml",
-    "apiType": "raml",
-    "methods": "get:codex_instances_get",
-    "name": "mod-codex-ekb",
-    "path": "/codex-instances"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex.raml",
-    "apiType": "raml",
-    "methods": "get:codex_instances_get",
-    "name": "mod-codex-inventory",
-    "path": "/codex-instances"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex.raml",
-    "apiType": "raml",
-    "methods": "get:codex_instances_get",
-    "name": "mod-codex-mux",
-    "path": "/codex-instances"
-  },
-  {
     "apiDescription": "ramls/codex/codex.raml",
     "apiType": "raml",
     "methods": "get:codex_instances_get",
     "name": "raml",
     "path": "/codex-instances"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex-instances-sources.raml",
-    "apiType": "raml",
-    "methods": "get:codex_instances_sources_get",
-    "name": "mod-codex-ekb",
-    "path": "/codex-instances-sources"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex-instances-sources.raml",
-    "apiType": "raml",
-    "methods": "get:codex_instances_sources_get",
-    "name": "mod-codex-mux",
-    "path": "/codex-instances-sources"
   },
   {
     "apiDescription": "ramls/codex/codex-instances-sources.raml",
@@ -1792,27 +1764,6 @@
     "path": "/codex-instances-sources"
   },
   {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex.raml",
-    "apiType": "raml",
-    "methods": "get:codex_instances__id__get",
-    "name": "mod-codex-ekb",
-    "path": "/codex-instances/{id}"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex.raml",
-    "apiType": "raml",
-    "methods": "get:codex_instances__id__get",
-    "name": "mod-codex-inventory",
-    "path": "/codex-instances/{id}"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex.raml",
-    "apiType": "raml",
-    "methods": "get:codex_instances__id__get",
-    "name": "mod-codex-mux",
-    "path": "/codex-instances/{id}"
-  },
-  {
     "apiDescription": "ramls/codex/codex.raml",
     "apiType": "raml",
     "methods": "get:codex_instances__id__get",
@@ -1820,20 +1771,6 @@
     "path": "/codex-instances/{id}"
   },
   {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex-packages.raml",
-    "apiType": "raml",
-    "methods": "get:codex_packages_get",
-    "name": "mod-codex-ekb",
-    "path": "/codex-packages"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex-packages.raml",
-    "apiType": "raml",
-    "methods": "get:codex_packages_get",
-    "name": "mod-codex-mux",
-    "path": "/codex-packages"
-  },
-  {
     "apiDescription": "ramls/codex/codex-packages.raml",
     "apiType": "raml",
     "methods": "get:codex_packages_get",
@@ -1841,39 +1778,11 @@
     "path": "/codex-packages"
   },
   {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex-packages.raml",
-    "apiType": "raml",
-    "methods": "get:codex_packages_sources_get",
-    "name": "mod-codex-ekb",
-    "path": "/codex-packages-sources"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex-packages.raml",
-    "apiType": "raml",
-    "methods": "get:codex_packages_sources_get",
-    "name": "mod-codex-mux",
-    "path": "/codex-packages-sources"
-  },
-  {
     "apiDescription": "ramls/codex/codex-packages.raml",
     "apiType": "raml",
     "methods": "get:codex_packages_sources_get",
     "name": "raml",
     "path": "/codex-packages-sources"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex-packages.raml",
-    "apiType": "raml",
-    "methods": "get:codex_packages__id__get",
-    "name": "mod-codex-ekb",
-    "path": "/codex-packages/{id}"
-  },
-  {
-    "apiDescription": "ramls/raml-util/ramls/codex/codex-packages.raml",
-    "apiType": "raml",
-    "methods": "get:codex_packages__id__get",
-    "name": "mod-codex-mux",
-    "path": "/codex-packages/{id}"
   },
   {
     "apiDescription": "ramls/codex/codex-packages.raml",
@@ -6468,6 +6377,13 @@
     "path": "/preceding-succeeding-titles/{precedingSucceedingTitleId}"
   },
   {
+    "apiDescription": "ramls/edge-rtac.raml",
+    "apiType": "raml",
+    "methods": "get:prod_rtac_foliortac_get",
+    "name": "edge-rtac",
+    "path": "/prod/rtac/folioRTAC"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
     "apiType": "oas",
     "methods": "get:operation/getProviders",
@@ -6909,6 +6825,13 @@
     "path": "/rmbtests/testStream"
   },
   {
+    "apiDescription": "ramls/edge-rtac.raml",
+    "apiType": "raml",
+    "methods": "get:rtac_get",
+    "name": "edge-rtac",
+    "path": "/rtac"
+  },
+  {
     "apiDescription": "ramls/rtac-batch.raml",
     "apiType": "raml",
     "methods": "post:rtac_batch_post",
@@ -6921,6 +6844,13 @@
     "methods": "get:rtac__id__get",
     "name": "mod-rtac",
     "path": "/rtac/{id}"
+  },
+  {
+    "apiDescription": "ramls/edge-rtac.raml",
+    "apiType": "raml",
+    "methods": "get:rtac__instanceid__get",
+    "name": "edge-rtac",
+    "path": "/rtac/{instanceId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/validator-registry.yaml",

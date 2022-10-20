@@ -319,58 +319,6 @@
     "config": {
       "oas": [],
       "raml": [
-        "ramls/raml-util/ramls/codex/codex-instances-sources.raml",
-        "ramls/raml-util/ramls/codex/codex-packages.raml",
-        "ramls/raml-util/ramls/codex/codex.raml"
-      ],
-      "upload": []
-    },
-    "metadata": {
-      "apiTypes": [
-        "RAML"
-      ]
-    },
-    "name": "mod-codex-ekb",
-    "org": "folio-org"
-  },
-  {
-    "config": {
-      "oas": [],
-      "raml": [
-        "ramls/raml-util/ramls/codex/codex.raml"
-      ],
-      "upload": []
-    },
-    "metadata": {
-      "apiTypes": [
-        "RAML"
-      ]
-    },
-    "name": "mod-codex-inventory",
-    "org": "folio-org"
-  },
-  {
-    "config": {
-      "oas": [],
-      "raml": [
-        "ramls/raml-util/ramls/codex/codex-instances-sources.raml",
-        "ramls/raml-util/ramls/codex/codex-packages.raml",
-        "ramls/raml-util/ramls/codex/codex.raml"
-      ],
-      "upload": []
-    },
-    "metadata": {
-      "apiTypes": [
-        "RAML"
-      ]
-    },
-    "name": "mod-codex-mux",
-    "org": "folio-org"
-  },
-  {
-    "config": {
-      "oas": [],
-      "raml": [
         "ramls/configuration/config.raml"
       ],
       "upload": []
