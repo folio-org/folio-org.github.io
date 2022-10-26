@@ -241,15 +241,15 @@
   },
   {
     "config": {
-      "oas": [],
-      "raml": [
-        "ramls/calendar.raml"
+      "oas": [
+        "src/main/resources/api/calendar.yaml"
       ],
+      "raml": [],
       "upload": []
     },
     "metadata": {
       "apiTypes": [
-        "RAML"
+        "OAS"
       ]
     },
     "name": "mod-calendar",

@@ -1253,6 +1253,34 @@
     "path": "/browse/subjects/instances"
   },
   {
+    "apiDescription": "src/main/resources/api/calendar.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteCalendars get:operation/searchCalendars post:operation/createCalendar",
+    "name": "mod-calendar",
+    "path": "/calendar/calendars"
+  },
+  {
+    "apiDescription": "src/main/resources/api/calendar.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteCalendar get:operation/getCalendar put:operation/updateCalendar",
+    "name": "mod-calendar",
+    "path": "/calendar/calendars/{calendarId}"
+  },
+  {
+    "apiDescription": "src/main/resources/api/calendar.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAllOpenings",
+    "name": "mod-calendar",
+    "path": "/calendar/dates/{servicePointId}/all-openings"
+  },
+  {
+    "apiDescription": "src/main/resources/api/calendar.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getSurroundingOpenings",
+    "name": "mod-calendar",
+    "path": "/calendar/dates/{servicePointId}/surrounding-openings"
+  },
+  {
     "apiDescription": "ramls/call-number-type.raml",
     "apiType": "raml",
     "methods": "get:call_number_types_get post:call_number_types_post",
@@ -4569,13 +4597,6 @@
     "methods": "get:inventory_view_instance_set_get",
     "name": "mod-inventory-storage",
     "path": "/inventory-view/instance-set"
-  },
-  {
-    "apiDescription": "ramls/inventory-view.raml",
-    "apiType": "raml",
-    "methods": "get:inventory_view_instances_get",
-    "name": "mod-inventory-storage",
-    "path": "/inventory-view/instances"
   },
   {
     "apiDescription": "ramls/inventory-config.raml",
