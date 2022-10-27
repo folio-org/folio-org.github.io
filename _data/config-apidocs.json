@@ -110,7 +110,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "edge-orders",
     "org": "folio-org"
@@ -278,7 +279,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-circulation",
     "org": "folio-org"
@@ -379,7 +381,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-data-export",
     "org": "folio-org"
@@ -437,7 +440,8 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-data-export-worker",
     "org": "folio-org"
@@ -453,7 +457,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-data-import",
     "org": "folio-org"
@@ -487,7 +492,8 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-ebsconet",
     "org": "folio-org"
@@ -573,7 +579,8 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-eusage-reports",
     "org": "folio-org"
@@ -686,7 +693,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-finance-storage",
     "org": "folio-org"
@@ -730,7 +738,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-gobi",
     "org": "folio-org"
@@ -785,7 +794,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-inventory",
     "org": "folio-org"
@@ -893,7 +903,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-invoice",
     "org": "folio-org"
@@ -1077,6 +1088,7 @@
         "ramls/acquisitions-units.raml",
         "ramls/check-in.raml",
         "ramls/configuration.raml",
+        "ramls/export_history.raml",
         "ramls/holding-summary.raml",
         "ramls/order-lines.raml",
         "ramls/order-templates.raml",
@@ -1093,7 +1105,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-orders",
     "org": "folio-org"
@@ -1369,7 +1382,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-source-record-manager",
     "org": "folio-org"

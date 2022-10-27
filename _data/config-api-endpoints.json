@@ -5880,6 +5880,13 @@
     "path": "/orders/configuration/suffixes/{id}"
   },
   {
+    "apiDescription": "ramls/export_history.raml",
+    "apiType": "raml",
+    "methods": "get:orders_export_history_get",
+    "name": "mod-orders",
+    "path": "/orders/export-history"
+  },
+  {
     "apiDescription": "ramls/holding-summary.raml",
     "apiType": "raml",
     "methods": "get:orders_holding_summary__id__get",
