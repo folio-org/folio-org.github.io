@@ -5224,7 +5224,7 @@
   {
     "apiDescription": "ramls/edge-lti-courses.raml",
     "apiType": "raml",
-    "methods": "get:lti_courses_.well_known_jwks.json_get",
+    "methods": "get:lti_courses__well_known_jwks_json_get",
     "name": "edge-lti-courses",
     "path": "/lti-courses/.well-known/jwks.json"
   },
@@ -5469,14 +5469,14 @@
   {
     "apiDescription": "ramls/notify.raml",
     "apiType": "raml",
-    "methods": "post:notifyusername__username__post",
+    "methods": "post:notify__username__username__post",
     "name": "mod-notify",
     "path": "/notify/_username/{username}"
   },
   {
     "apiDescription": "ramls/notify.raml",
     "apiType": "raml",
-    "methods": "delete:notify_userself_delete get:notify_userself_get post:notify_userself_post",
+    "methods": "delete:notify_user__self_delete get:notify_user__self_get post:notify_user__self_post",
     "name": "mod-notify",
     "path": "/notify/user/_self"
   },
