@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-10-19T05:19:46.240048+00:00"
+    "generatedDateTime": "2022-10-27T23:24:13.469984+00:00"
   },
   "repos": [
     {
@@ -435,6 +435,16 @@
     },
     {
       "defaultBranch": "master",
+      "description": "S3-client for FOLIO modules",
+      "docDirName": null,
+      "name": "folio-s3-client",
+      "org": "folio-org",
+      "repoLanguageHint": "java",
+      "repoType": "other",
+      "snippetIntro": "<p>This is a shared library for FOLIO S3-client.</p>"
+    },
+    {
+      "defaultBranch": "master",
       "description": "Examples of FOLIO modules",
       "docDirName": "doc",
       "name": "folio-sample-modules",
@@ -597,16 +607,15 @@
     {
       "defaultBranch": "master",
       "description": null,
-      "docDirName": null,
-      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
-      "hintRmb": true,
-      "isRmb": true,
+      "docDirName": "docs",
+      "hintOas": true,
+      "isSpringway": true,
       "name": "mod-calendar",
       "org": "folio-org",
-      "ramlDirName": "ramls",
+      "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Module to provide calendar functionalities for FOLIO systems.</p>"
+      "snippetIntro": "<p>This module provides calendar functionalities for FOLIO systems, allowing service points to maintain hours of operation.</p>"
     },
     {
       "defaultBranch": "master",
@@ -1449,6 +1458,20 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>Sending messages through delivery channels</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "FOLIO Backend module for Serials Management",
+      "docDirName": null,
+      "name": "mod-serials-management",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "gradle",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>FOLIO Backend module for Serials Management</p>",
+      "workflows": [
+        "gradle.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -3356,7 +3379,7 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "",
+      "snippetIntro": "<p>The Serials Management UI Module or ui-serials-management, is a Stripes UI module for the management of serials, alongside expected pieces and prediction patterns</p>",
       "workflows": [
         "build-npm-release.yml",
         "build-npm.yml"

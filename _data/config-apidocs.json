@@ -78,7 +78,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "edge-lti-courses",
     "org": "folio-org"
@@ -110,7 +111,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "edge-orders",
     "org": "folio-org"
@@ -200,7 +202,8 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "folio-vertx-lib",
     "org": "folio-org"
@@ -234,23 +237,25 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-authtoken",
     "org": "folio-org"
   },
   {
     "config": {
-      "oas": [],
-      "raml": [
-        "ramls/calendar.raml"
+      "oas": [
+        "src/main/resources/api/calendar.yaml"
       ],
+      "raml": [],
       "upload": []
     },
     "metadata": {
       "apiTypes": [
-        "RAML"
-      ]
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-calendar",
     "org": "folio-org"
@@ -278,7 +283,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-circulation",
     "org": "folio-org"
@@ -326,7 +332,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-configuration",
     "org": "folio-org"
@@ -358,7 +365,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-courses",
     "org": "folio-org"
@@ -379,7 +387,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-data-export",
     "org": "folio-org"
@@ -437,7 +446,8 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-data-export-worker",
     "org": "folio-org"
@@ -453,7 +463,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-data-import",
     "org": "folio-org"
@@ -487,7 +498,8 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-ebsconet",
     "org": "folio-org"
@@ -573,7 +585,8 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-eusage-reports",
     "org": "folio-org"
@@ -686,7 +699,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-finance-storage",
     "org": "folio-org"
@@ -730,7 +744,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-gobi",
     "org": "folio-org"
@@ -785,7 +800,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-inventory",
     "org": "folio-org"
@@ -809,6 +825,7 @@
         "ramls/holdings-note-type.raml",
         "ramls/holdings-sources.raml",
         "ramls/holdings-storage.raml",
+        "ramls/holdings-sync-unsafe.raml",
         "ramls/holdings-sync.raml",
         "ramls/holdings-type.raml",
         "ramls/hrid-settings-storage.raml",
@@ -824,6 +841,7 @@
         "ramls/instance-status.raml",
         "ramls/instance-storage-batch.raml",
         "ramls/instance-storage.raml",
+        "ramls/instance-sync-unsafe.raml",
         "ramls/instance-sync.raml",
         "ramls/instance-type.raml",
         "ramls/inventory-hierarchy.raml",
@@ -832,6 +850,7 @@
         "ramls/item-note-type.raml",
         "ramls/item-storage-dereferenced.raml",
         "ramls/item-storage.raml",
+        "ramls/item-sync-unsafe.raml",
         "ramls/item-sync.raml",
         "ramls/loan-type.raml",
         "ramls/location.raml",
@@ -852,7 +871,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-inventory-storage",
     "org": "folio-org"
@@ -889,7 +909,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-invoice",
     "org": "folio-org"
@@ -1040,7 +1061,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-notify",
     "org": "folio-org"
@@ -1073,6 +1095,7 @@
         "ramls/acquisitions-units.raml",
         "ramls/check-in.raml",
         "ramls/configuration.raml",
+        "ramls/export_history.raml",
         "ramls/holding-summary.raml",
         "ramls/order-lines.raml",
         "ramls/order-templates.raml",
@@ -1089,7 +1112,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-orders",
     "org": "folio-org"
@@ -1262,7 +1286,8 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-quick-marc",
     "org": "folio-org"
@@ -1294,7 +1319,8 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-reservoir",
     "org": "folio-org"
@@ -1364,7 +1390,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-source-record-manager",
     "org": "folio-org"

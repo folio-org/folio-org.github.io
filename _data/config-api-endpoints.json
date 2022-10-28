@@ -1253,6 +1253,34 @@
     "path": "/browse/subjects/instances"
   },
   {
+    "apiDescription": "src/main/resources/api/calendar.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteCalendars get:operation/searchCalendars post:operation/createCalendar",
+    "name": "mod-calendar",
+    "path": "/calendar/calendars"
+  },
+  {
+    "apiDescription": "src/main/resources/api/calendar.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteCalendar get:operation/getCalendar put:operation/updateCalendar",
+    "name": "mod-calendar",
+    "path": "/calendar/calendars/{calendarId}"
+  },
+  {
+    "apiDescription": "src/main/resources/api/calendar.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAllOpenings",
+    "name": "mod-calendar",
+    "path": "/calendar/dates/{servicePointId}/all-openings"
+  },
+  {
+    "apiDescription": "src/main/resources/api/calendar.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getSurroundingOpenings",
+    "name": "mod-calendar",
+    "path": "/calendar/dates/{servicePointId}/surrounding-openings"
+  },
+  {
     "apiDescription": "ramls/call-number-type.raml",
     "apiType": "raml",
     "methods": "get:call_number_types_get post:call_number_types_post",
@@ -4158,6 +4186,13 @@
     "path": "/holdings-storage/batch/synchronous"
   },
   {
+    "apiDescription": "ramls/holdings-sync-unsafe.raml",
+    "apiType": "raml",
+    "methods": "post:holdings_storage_batch_synchronous_unsafe_post",
+    "name": "mod-inventory-storage",
+    "path": "/holdings-storage/batch/synchronous-unsafe"
+  },
+  {
     "apiDescription": "ramls/holdings-storage.raml",
     "apiType": "raml",
     "methods": "delete:holdings_storage_holdings_delete get:holdings_storage_holdings_get post:holdings_storage_holdings_post",
@@ -4366,6 +4401,13 @@
     "methods": "post:instance_storage_batch_synchronous_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/batch/synchronous"
+  },
+  {
+    "apiDescription": "ramls/instance-sync-unsafe.raml",
+    "apiType": "raml",
+    "methods": "post:instance_storage_batch_synchronous_unsafe_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/batch/synchronous-unsafe"
   },
   {
     "apiDescription": "ramls/instance-storage.raml",
@@ -4893,6 +4935,13 @@
     "path": "/item-storage/batch/synchronous"
   },
   {
+    "apiDescription": "ramls/item-sync-unsafe.raml",
+    "apiType": "raml",
+    "methods": "post:item_storage_batch_synchronous_unsafe_post",
+    "name": "mod-inventory-storage",
+    "path": "/item-storage/batch/synchronous-unsafe"
+  },
+  {
     "apiDescription": "ramls/item-storage.raml",
     "apiType": "raml",
     "methods": "delete:item_storage_items_delete get:item_storage_items_get post:item_storage_items_post",
@@ -4905,6 +4954,13 @@
     "methods": "delete:item_storage_items__itemid__delete get:item_storage_items__itemid__get put:item_storage_items__itemid__put",
     "name": "mod-inventory-storage",
     "path": "/item-storage/items/{itemId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-caiasoft.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAccessionItem",
+    "name": "edge-caiasoft",
+    "path": "/ItemBarcodes/{itemBarcode}/accessioned/{remoteStorageConfigurationId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
@@ -5168,7 +5224,7 @@
   {
     "apiDescription": "ramls/edge-lti-courses.raml",
     "apiType": "raml",
-    "methods": "get:lti_courses_.well_known_jwks.json_get",
+    "methods": "get:lti_courses__well_known_jwks_json_get",
     "name": "edge-lti-courses",
     "path": "/lti-courses/.well-known/jwks.json"
   },
@@ -5413,14 +5469,14 @@
   {
     "apiDescription": "ramls/notify.raml",
     "apiType": "raml",
-    "methods": "post:notifyusername__username__post",
+    "methods": "post:notify__username__username__post",
     "name": "mod-notify",
     "path": "/notify/_username/{username}"
   },
   {
     "apiDescription": "ramls/notify.raml",
     "apiType": "raml",
-    "methods": "delete:notify_userself_delete get:notify_userself_get post:notify_userself_post",
+    "methods": "delete:notify_user__self_delete get:notify_user__self_get post:notify_user__self_post",
     "name": "mod-notify",
     "path": "/notify/user/_self"
   },
@@ -5822,6 +5878,13 @@
     "methods": "delete:orders_configuration_suffixes__id__delete get:orders_configuration_suffixes__id__get put:orders_configuration_suffixes__id__put",
     "name": "mod-orders",
     "path": "/orders/configuration/suffixes/{id}"
+  },
+  {
+    "apiDescription": "ramls/export_history.raml",
+    "apiType": "raml",
+    "methods": "get:orders_export_history_get",
+    "name": "mod-orders",
+    "path": "/orders/export-history"
   },
   {
     "apiDescription": "ramls/holding-summary.raml",
@@ -6578,6 +6641,20 @@
     "methods": "delete:request_storage_requests__requestid__delete get:request_storage_requests__requestid__get put:request_storage_requests__requestid__put",
     "name": "mod-circulation-storage",
     "path": "/request-storage/requests/{requestId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-caiasoft.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/returnItemByBarcode",
+    "name": "edge-caiasoft",
+    "path": "/RequestBarcodes/{itemBarcode}/reshelved/{remoteStorageConfigurationId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-caiasoft.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/checkInByHoldId",
+    "name": "edge-caiasoft",
+    "path": "/Requests/{requestId}/route/{remoteStorageConfigurationId}"
   },
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
