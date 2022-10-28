@@ -15,6 +15,7 @@ Rancher is a Kubernetes management tool.
 Useful links:
 
 * FOLIO rancher main URL: [https://rancher.dev.folio.org](https://rancher.dev.folio.org)
+* [Rancher Environments](https://wiki.folio.org/display/FOLIJET/Rancher+Environments) -- Roadmap Tracker overview and links for each team environment; and Rancher Backlog of Jira [tickets](/faqs/how-to-raise-devops-ticket/#rancher-scratch-environments).
 * Project UI URL: `https://<Project name>.ci.folio.org`
 * Basic Okapi URL: `https://<Project name>-okapi.ci.folio.org`
 * PgAdmin4 URL: `https://<Project name>-pgadmin.ci.folio.org` (login as user 'chart@example.local' or 'user@folio.org' password 'SuperSecret')
