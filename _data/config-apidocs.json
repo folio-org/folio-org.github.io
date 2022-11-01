@@ -316,7 +316,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-circulation-storage",
     "org": "folio-org"
@@ -780,7 +781,8 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-inn-reach",
     "org": "folio-org"
@@ -965,7 +967,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-kb-ebsco-java",
     "org": "folio-org"
@@ -1415,7 +1418,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-source-record-storage",
     "org": "folio-org"
