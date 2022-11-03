@@ -535,7 +535,8 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-entities-links",
     "org": "folio-org"
@@ -1088,7 +1089,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-oai-pmh",
     "org": "folio-org"
@@ -1560,7 +1562,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "raml-module-builder",
     "org": "folio-org"
