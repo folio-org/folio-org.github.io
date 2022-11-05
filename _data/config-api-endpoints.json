@@ -4592,13 +4592,6 @@
     "path": "/inventory-upsert-hrid/fetch/{id}"
   },
   {
-    "apiDescription": "ramls/instance-set.raml",
-    "apiType": "raml",
-    "methods": "get:inventory_view_instance_set_get",
-    "name": "mod-inventory-storage",
-    "path": "/inventory-view/instance-set"
-  },
-  {
     "apiDescription": "ramls/inventory-view.raml",
     "apiType": "raml",
     "methods": "get:inventory_view_instances_get",
