@@ -13,7 +13,6 @@ layout: null
     {%- if docId == "banner-area-html" -%}{%- continue -%}{%- endif -%}
     {%- if docId == "feed-xml" -%}{%- continue -%}{%- endif -%}
     {%- if docId == "error-html" -%}{%- continue -%}{%- endif -%}
-    {%- if docId == "about" -%}{%- continue -%}{%- endif -%}
     {%- assign areas = page.url | split:'/' -%}
     {%- assign len = areas.size | minus: 2 -%}
     {%- capture leader -%}
