@@ -6,7 +6,7 @@ gem "jekyll-data"
 gem "jekyll-feed"
 # nokogiri is required by html-proofer.
 # If we get a security alert, but not updated upstream, then declare it here.
-# gem "nokogiri", ">= 1.13.8"
+gem "nokogiri", ">= 1.13.9"
 
 group :jekyll_plugins do
   gem "html-proofer"
