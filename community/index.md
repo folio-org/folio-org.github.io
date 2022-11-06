@@ -99,63 +99,21 @@ Some of the important forums to collaborate, discuss FOLIO, interact with other 
 
 Refer to the Wiki [FOLIO Governance Model](https://wiki.folio.org/display/COMMUNITY/FOLIO+Governance+Model).
 
-## Engineering teams
+## Communities
 
-The FOLIO developer community consists of:
+Since [commencing](/about/) in mid-2016 the FOLIO project continues to grow.
 
-- Index Data, which leads the technical development of the FOLIO
-  software
-- Several software engineering teams
-- Contributing developers from the community
-- Many supporting individuals whose contributions feed into and guide
-  the development process
+Some contact points for the communities:
 
-The following sections list the engineering roles and contacts for the various parts of
-the project.  Team members can be contacted via the collaboration tools
-listed above.
-There is also the [FOLIO Developer Directory](https://wiki.folio.org/display/COMMUNITY/FOLIO+Developer+Directory) listing some developers and their general work areas.
-
-### Engineering core team
-
-The engineering core team sets the strategic direction for technical
-architecture in the FOLIO software:
-
-- Sebastian Hammer (project lead)
-- Nassib Nassar (project lead - technical)
-- Jakub Skoczen (technical project manager)
-- Adam Dickmeiss
-- Vince Bareau
-- Peter Murray (community)
-
-### Subproject core teams
-
-Several components of the FOLIO software are distinct subprojects and
-have a core team of software engineers with commit-level access to the
-source code repositories.  Each subproject generally has a lead
-developer who is responsible for selecting new core team members from
-the community.
-
-- okapi: Adam Dickmeiss (lead), Heikki Levanto, Jakub Skoczen, John
-  Malconian, David Crossley
-- mod-auth, mod-users: Kurt Nordstrom (lead)
-- mod-metadata: Marc Johnson (lead), Ian Ibbotson, Jakub Skoczen
-- mod-circulation, mod-configuration: shale
-- raml-module-builder: shale, Adam Dickmeiss, Julian Ladisch
-- raml: shale, Adam Dickmeiss
-- stripes-core: Niels Erik Nielsen, Jason Skomorowski, Mike Taylor, John Coburn
-- stripes-components: John Coburn (lead)
-- stripes-connect: Jason Skomorowski, Mike Taylor, Niels Erik Nielsen
-- stripes-loader: Jason Skomorowski (lead)
-- stripes-sample-platform: Jason Skomorowski (lead)
-- okapi-stripes: Wolfram Schneider (lead)
-- ui-users: Mike Taylor, Niels Erik Nielsen, Jason Skomorowski, John Coburn, Matt Connolly, Jeremy Huff
-- ui-items: Mike Taylor
-- ui-okapi-console: Mike Taylor, Niels Erik Nielsen
-- cql2pgjson-java: Julian Ladisch (lead)
-- container-perf-tests: Adam Dickmeiss (lead), Jakub Skoczen
-- folio-sample-modules: Heikki Levanto (lead), Niels Erik Nielsen
-- folio-ansible: Wayne Schneider (lead), John Malconian
-- folio-org.github.io: David Crossley (lead)
+* [Collaboration tools](#collaboration-tools).
+* [Team and module responsibility matrix](https://wiki.folio.org/display/REL/Team+vs+module+responsibility+matrix).
+* [List of GitHub Teams](https://github.com/orgs/folio-org/teams).
+* [Development teams wiki space](https://wiki.folio.org/display/FOLIJET/).
+* [Testing Community wiki space](https://wiki.folio.org/display/FTC/Folio+Testing+Community+Home).
+* [Directory of Product Owners](https://wiki.folio.org/display/PO/Directory+of+Product+Owners+by+Area+of+Focus).
+* [SIGs : Special Interest Groups](https://wiki.folio.org/display/PC/Special+Interest+Groups).
+* [Community wiki space](https://wiki.folio.org/display/COMMUNITY/).
+* [Thanks from the FOLIO Project](/about/thanks/).
 
 ## Contributing
 

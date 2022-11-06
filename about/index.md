@@ -4,7 +4,14 @@ title: About FOLIO
 permalink: /about/
 ---
 
-## Presentations
+## Commencement
+
+The [FOLIO](https://folio.org/about/) project was commenced in mid-2016
+by Open Library Environment ([OLE](https://openlibraryenvironment.org/))
+and [EBSCO Information Services](https://www.ebsco.com/)
+and [Index Data](https://www.indexdata.com/folio/).
+
+## Inaugural presentations
 
 Hammer S.  2016.  [Constructive disintegration -- re-imagining the library
 platform as
