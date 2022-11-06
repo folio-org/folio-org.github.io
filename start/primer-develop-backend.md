@@ -29,7 +29,7 @@ The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB
 It also exposes a Vert.x based runtime library.
 - The [mod-rmb-template](https://github.com/folio-org/mod-rmb-template) provides a Maven archetype to commence an RMB-based module.
 
-The [folio-vertx-lib](https://github.com/folio-org/folio-vertx-lib) is a lightweight FOLIO module development library for Vert.x that supports OpenAPI ([OAS](/start/primer-oas/)) rather than RAML specification. It is the recommended library for developers wishing to develop FOLIO modules with Vert.x (as RAML Module Builder is no longer being extended with new functionality and is in maintenance mode only). The library has a self-contained [example](https://github.com/folio-org/folio-vertx-lib/tree/master/example) and [explanation](https://github.com/folio-org/folio-vertx-lib#main-verticle).
+The [folio-vertx-lib](https://github.com/folio-org/folio-vertx-lib) is a lightweight FOLIO module development library for Vert.x that supports OpenAPI ([OAS](/start/primer-oas/)) rather than RAML specification. It is the recommended library for developers wishing to develop FOLIO modules with Vert.x (as RAML Module Builder is no longer being extended with new functionality and is in maintenance mode only). The library has a self-contained [example](https://github.com/folio-org/folio-vertx-lib/tree/master/mod-example) and [explanation](https://github.com/folio-org/folio-vertx-lib#main-verticle).
 
 [Conduct cross-module joins via their APIs](/guides/cross-module-joins/).
 
