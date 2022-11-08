@@ -553,6 +553,13 @@
     "path": "/admin/health"
   },
   {
+    "apiDescription": "ramls/edge-oai-pmh.raml",
+    "apiType": "raml",
+    "methods": "get:admin_health_get",
+    "name": "edge-oai-pmh",
+    "path": "/admin/health"
+  },
+  {
     "apiDescription": "ramls/edge-orders.raml",
     "apiType": "raml",
     "methods": "get:admin_health_get",
@@ -4592,6 +4599,13 @@
     "path": "/inventory-upsert-hrid/fetch/{id}"
   },
   {
+    "apiDescription": "ramls/instance-set.raml",
+    "apiType": "raml",
+    "methods": "get:inventory_view_instance_set_get",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-view/instance-set"
+  },
+  {
     "apiDescription": "ramls/inventory-view.raml",
     "apiType": "raml",
     "methods": "get:inventory_view_instances_get",
@@ -5481,6 +5495,13 @@
     "path": "/notify/{id}"
   },
   {
+    "apiDescription": "ramls/edge-oai-pmh.raml",
+    "apiType": "raml",
+    "methods": "get:oai_get post:oai_post",
+    "name": "edge-oai-pmh",
+    "path": "/oai"
+  },
+  {
     "apiDescription": "ramls/oai-pmh-view.raml",
     "apiType": "raml",
     "methods": "post:oai_pmh_view_enrichedinstances_post",
@@ -5570,6 +5591,13 @@
     "methods": "get:oai_request_metadata__requestid__suppressed_from_discovery_instances_get",
     "name": "mod-oai-pmh",
     "path": "/oai/request-metadata/{requestId}/suppressed-from-discovery-instances"
+  },
+  {
+    "apiDescription": "ramls/edge-oai-pmh.raml",
+    "apiType": "raml",
+    "methods": "get:oai__apikeypath__get post:oai__apikeypath__post",
+    "name": "edge-oai-pmh",
+    "path": "/oai/{apiKeyPath}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/order-export.yaml",
