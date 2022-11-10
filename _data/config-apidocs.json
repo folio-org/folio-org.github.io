@@ -516,14 +516,16 @@
       "oas": [],
       "raml": [
         "ramls/delayedTasks.raml",
-        "ramls/email.raml"
+        "ramls/email.raml",
+        "ramls/smtp-configuration.raml"
       ],
       "upload": []
     },
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-email",
     "org": "folio-org"
@@ -1319,7 +1321,8 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-remote-storage",
     "org": "folio-org"

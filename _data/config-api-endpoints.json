@@ -7084,6 +7084,20 @@
     "path": "/shelf-locations/{id}"
   },
   {
+    "apiDescription": "ramls/smtp-configuration.raml",
+    "apiType": "raml",
+    "methods": "get:smtp_configuration_get post:smtp_configuration_post",
+    "name": "mod-email",
+    "path": "/smtp-configuration"
+  },
+  {
+    "apiDescription": "ramls/smtp-configuration.raml",
+    "apiType": "raml",
+    "methods": "delete:smtp_configuration__smtpconfigurationid__delete get:smtp_configuration__smtpconfigurationid__get put:smtp_configuration__smtpconfigurationid__put",
+    "name": "mod-email",
+    "path": "/smtp-configuration/{smtpConfigurationId}"
+  },
+  {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
     "methods": "put:source_storage_batch_parsed_records_put",
