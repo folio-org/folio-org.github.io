@@ -29,5 +29,5 @@ The FOLIO project is grateful for support from **Docker** under the <a href="htt
 <a href="https://www.algolia.com/for-open-source/"><img src="/images/logo-algolia-nebula-blue-full.png" alt="Algolia logo" width="257" height="64"></a>\
 The FOLIO project is grateful for the support from **Algolia** under the [Algolia for Open Source](https://www.algolia.com/for-open-source/) program.  Algolia powers the [FOLIO Documentation](https://docs.folio.org/) search feature with a results display that makes use of the documentation structure.
 
-<a href="https://www.kubecost.com/"><img src="/images/Kubecost.png" alt="Kubecost logo" width="250" height="171"></a>\
+<a href="https://www.kubecost.com/"><img src="/images/Kubecost.png" alt="Kubecost logo" width="254" height="56"></a>\
 The FOLIO project is grateful for the support from **Kubecost**. The FOLIO DevOps team uses Kubecost Enterprise to gain insight into how the hosted development environments are used, and this allows the project to control its AWS expenses.
