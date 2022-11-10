@@ -20,8 +20,6 @@ Each link in the "Methods" column goes directly to that section of the relevant 
 Sortable via click the column header (default is sorted by Path).
 See [Further information](#further-information).
 
-**NOTE**: [In development](#further-information). The data file has endpoints for only some modules, until each does a new merge to their mainline branch.
-
 ## List of endpoints
 
 {% assign urlApiXref = "/reference/api/" %}
@@ -35,7 +33,6 @@ See [Further information](#further-information).
 {% endfor %}
 
 Listed endpoints count: {{ site.data.config-api-endpoints.size }}
--- about 1200 are [expected](#status-of-missing-modules) eventually.
 
 <table class="sortable asc">
   <thead>
@@ -103,14 +100,5 @@ That is because their API description has omitted the "`operationId`" property f
 ### Further development
 
 Intend to add a column with information about which "interface".
-
-### Status of missing modules
-
-This facility was first available 2022-09-06. The endpoints for some modules will be missing until they have a new merge to their mainline branch.
-
-{% assign presentCount = moduleList | uniq | size %}
-{% assign missingCount = moduleCount | minus: presentCount | minus: 3 %}
-Present modules count: {{ presentCount }} \
-Missing modules count: {{ missingCount }}
 
 <div class="folio-spacer-content"></div>

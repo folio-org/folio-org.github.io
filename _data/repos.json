@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-10-27T23:24:13.469984+00:00"
+    "generatedDateTime": "2022-11-09T07:15:06.521825+00:00"
   },
   "repos": [
     {
@@ -335,6 +335,16 @@
       "repoLanguageHint": "other",
       "repoType": "other",
       "snippetIntro": "<p>FOLIO Helm charts modules repository.</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Helm charts modules repository (using Helm common library)",
+      "docDirName": null,
+      "name": "folio-helm-v2",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
@@ -1972,6 +1982,24 @@
     },
     {
       "defaultBranch": "master",
+      "description": "A repository for shared testing config and components for the ERM suite of applications",
+      "docDirName": "docs",
+      "name": "stripes-erm-testing",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "stripes",
+      "snippetIntro": "",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
+    },
+    {
+      "defaultBranch": "master",
       "description": "A Final Form Wrapper for Stripes",
       "docDirName": null,
       "name": "stripes-final-form",
@@ -2061,6 +2089,24 @@
       "repoLanguageHint": "node",
       "repoType": "stripes",
       "snippetIntro": "<p>stripes-testing is a toolkit for building integration tests against Stripes UI modules and platforms. There are no tests in this repository; instead they exist in the platforms they exercise (e.g. platform-core). Tests that operate only a single app (unit tests) should be written with the <a href='https://github.com/folio-org/stripes/blob/master/doc/bigtest.md'>BigTest</a> toolkit instead.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
+    },
+    {
+      "defaultBranch": "main",
+      "description": "The UI wrapper for Stripes Modules",
+      "docDirName": null,
+      "name": "stripes-ui",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "stripes",
+      "snippetIntro": "<p>Stripes UI is a main wrapper responsible for setting the global layout of the user interface, such as the global navigation menu and top bar. It also renders given stripes module on the appropriate route.</p>",
       "workflows": [
         "build-npm-release.yml",
         "build-npm.yml"
@@ -3344,24 +3390,6 @@
       "org": "openlibraryenvironment",
       "repoType": "ui",
       "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module! Follow the instructions below to run ui-rs and start your development.</p>",
-      "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
-      ],
-      "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
-      ]
-    },
-    {
-      "defaultBranch": "master",
-      "description": null,
-      "docDirName": "doc",
-      "name": "ui-search",
-      "org": "folio-org",
-      "repoLanguageHint": "node",
-      "repoType": "ui",
-      "snippetIntro": "<p>The Search UI Module, or <code>ui-search</code>, is a Stripes UI module used for searching, sorting, filtering and viewing records from <a href='https://www.openlibraryenvironment.org/archives/411'>the FOLIO Codex</a>, an aggregation of bibliographic metadata from multiple sources.</p>",
       "workflows": [
         "build-npm-release.yml",
         "build-npm.yml"
