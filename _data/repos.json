@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-11-09T07:15:06.521825+00:00"
+    "generatedDateTime": "2022-11-11T22:59:47.418585+00:00"
   },
   "repos": [
     {
@@ -613,6 +613,19 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>This module is responsible for filtering all proxy traffic and checking for a valid token. In addition, it is responsible for retrieving the permissions for a given user and making decisions regarding access based on user permissions and defined requirements for a given path. It provides a token creation endpoint that privileged modules (such as Authentication) may make use of.</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-bulk-operations",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>The purpose of this Bulk Operations (Edit/Delete) application is to modify and delete different entities in bulks.</p>"
     },
     {
       "defaultBranch": "master",
