@@ -1232,7 +1232,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-patron",
     "org": "folio-org"
@@ -1356,7 +1357,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-rtac",
     "org": "folio-org"
