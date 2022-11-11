@@ -103,6 +103,7 @@ utilities:
     - mod-entities-links
     - mod-notes
     - mod-tags
+    - mod-bulk-operations
     - mod-calendar
     - mod-search
     - mod-template-engine
