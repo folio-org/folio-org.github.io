@@ -5056,6 +5056,13 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
+    "methods": "get:operation/getInstanceAuthorityLinkingRules",
+    "name": "mod-entities-links",
+    "path": "/linking-rules/instance-authority"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
     "methods": "post:operation/countLinksByAuthorityIds",
     "name": "mod-entities-links",
     "path": "/links/authorities/bulk/count"
@@ -7292,6 +7299,13 @@
     "methods": "post:tlr_feature_toggle_job_start_post",
     "name": "mod-circulation-storage",
     "path": "/tlr-feature-toggle-job/start"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getExample",
+    "name": "mod-bulk-operations",
+    "path": "/to-be-changed"
   },
   {
     "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
