@@ -56,12 +56,12 @@
     {
       "name": "mod-circulation-storage",
       "nameRepo": "mod-circulation-storage",
-      "releaseDate": "2022-06-27T17:14:45+00:00",
-      "releaseName": "v14.1.0",
-      "releaseSha": "5d8e0e3cde5c5f6694bdf6840c66fe57543e7c15",
-      "releaseTag": "v14.1.0",
+      "releaseDate": "2022-11-08T08:55:39+00:00",
+      "releaseName": "",
+      "releaseSha": "7929e1b2c6086de39e56a74ea496a5d796c34905",
+      "releaseTag": "v14.1.1",
       "releaseTarget": "master",
-      "version": "14.1.0"
+      "version": "14.1.1"
     },
     {
       "name": "mod-codex-ekb",
@@ -156,12 +156,12 @@
     {
       "name": "mod-data-import",
       "nameRepo": "mod-data-import",
-      "releaseDate": "2022-07-05T12:11:06+00:00",
-      "releaseName": "2.5.0",
-      "releaseSha": "8a8910067b60d9b85906d89ec1963de7c8ff2c85",
-      "releaseTag": "v2.5.0",
+      "releaseDate": "2022-11-04T10:52:51+00:00",
+      "releaseName": "",
+      "releaseSha": "1ab9a3bf6e99934c4d95f34b693883189175f191",
+      "releaseTag": "v2.5.1",
       "releaseTarget": "master",
-      "version": "2.5.0"
+      "version": "2.5.1"
     },
     {
       "name": "mod-data-import-converter-storage",
