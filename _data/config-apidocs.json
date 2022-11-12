@@ -162,7 +162,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "folio-custom-fields",
     "org": "folio-org"
@@ -244,6 +245,23 @@
       "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-authtoken",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/swagger.api/bulk-operations.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.4.1"
+    },
+    "name": "mod-bulk-operations",
     "org": "folio-org"
   },
   {
@@ -1175,7 +1193,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-organizations",
     "org": "folio-org"
@@ -1216,7 +1235,8 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-password-validator",
     "org": "folio-org"
