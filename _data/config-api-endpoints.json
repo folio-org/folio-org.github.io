@@ -6839,6 +6839,13 @@
     "path": "/reservoir/sources"
   },
   {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/uploadRecords",
+    "name": "mod-reservoir",
+    "path": "/reservoir/upload"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
     "methods": "post:operation/submitIdsJob",

@@ -661,7 +661,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-feesfines",
     "org": "folio-org"
