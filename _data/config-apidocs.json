@@ -642,6 +642,7 @@
       "raml": [
         "ramls/accounts-bulk.raml",
         "ramls/accounts.raml",
+        "ramls/actual-cost-fee-fine.raml",
         "ramls/comments.raml",
         "ramls/feefine-reports.raml",
         "ramls/feefineactions.raml",
