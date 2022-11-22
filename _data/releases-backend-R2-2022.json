@@ -146,12 +146,12 @@
     {
       "name": "mod-data-export-worker",
       "nameRepo": "mod-data-export-worker",
-      "releaseDate": "2022-09-26T12:48:10+00:00",
-      "releaseName": "v1.4.10",
-      "releaseSha": "19d4879d6460cda61cc8029f1357f849ac2ca04a",
-      "releaseTag": "v1.4.10",
+      "releaseDate": "2022-11-18T17:12:24+00:00",
+      "releaseName": "v1.4.11",
+      "releaseSha": "a9d0eac7e8ebe12c36138264ba9bcc11c02a6f87",
+      "releaseTag": "v1.4.11",
       "releaseTarget": "master",
-      "version": "1.4.10"
+      "version": "1.4.11"
     },
     {
       "name": "mod-data-import",
@@ -166,12 +166,12 @@
     {
       "name": "mod-data-import-converter-storage",
       "nameRepo": "mod-data-import-converter-storage",
-      "releaseDate": "2022-10-25T13:06:11+00:00",
-      "releaseName": "v1.14.2",
-      "releaseSha": "675e2815d73955908f61f5b941e6f1fe4fbf2788",
-      "releaseTag": "v1.14.2",
+      "releaseDate": "2022-11-15T17:43:15+00:00",
+      "releaseName": "1.14.3",
+      "releaseSha": "14854a8558bbf647c9355e8745b00f59aad53fee",
+      "releaseTag": "v1.14.3",
       "releaseTarget": "master",
-      "version": "1.14.2"
+      "version": "1.14.3"
     },
     {
       "name": "mod-ebsconet",
@@ -196,12 +196,12 @@
     {
       "name": "mod-erm-usage",
       "nameRepo": "mod-erm-usage",
-      "releaseDate": "2022-07-04T13:02:49+00:00",
+      "releaseDate": "2022-11-21T11:22:40+00:00",
       "releaseName": "",
-      "releaseSha": "e858d90ca1a52d3e1515c06a3eec6730a5ba5e4e",
-      "releaseTag": "v4.4.0",
+      "releaseSha": "29467fffa751fd31ecb24cce2740db524db826d8",
+      "releaseTag": "v4.4.1",
       "releaseTarget": "master",
-      "version": "4.4.0"
+      "version": "4.4.1"
     },
     {
       "name": "mod-erm-usage-harvester",
@@ -236,12 +236,12 @@
     {
       "name": "mod-feesfines",
       "nameRepo": "mod-feesfines",
-      "releaseDate": "2022-09-09T14:39:46+00:00",
-      "releaseName": "v18.0.2",
-      "releaseSha": "e5667039b42a0040ce9ee00db60059421aa482fb",
-      "releaseTag": "v18.0.2",
+      "releaseDate": "2022-11-17T06:56:30+00:00",
+      "releaseName": "",
+      "releaseSha": "ad392a259b509f8bf447a11e38471fb412db50ad",
+      "releaseTag": "v18.0.3",
       "releaseTarget": "master",
-      "version": "18.0.2"
+      "version": "18.0.3"
     },
     {
       "name": "mod-finance",
