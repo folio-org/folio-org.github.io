@@ -580,7 +580,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-erm-usage",
     "org": "folio-org"
@@ -641,6 +642,7 @@
       "raml": [
         "ramls/accounts-bulk.raml",
         "ramls/accounts.raml",
+        "ramls/actual-cost-fee-fine.raml",
         "ramls/comments.raml",
         "ramls/feefine-reports.raml",
         "ramls/feefineactions.raml",
@@ -661,7 +663,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-feesfines",
     "org": "folio-org"

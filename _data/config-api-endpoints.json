@@ -497,6 +497,13 @@
     "path": "/acquisitions-units/units/{id}"
   },
   {
+    "apiDescription": "ramls/actual-cost-fee-fine.raml",
+    "apiType": "raml",
+    "methods": "post:actual_cost_fee_fine_cancel_post",
+    "name": "mod-feesfines",
+    "path": "/actual-cost-fee-fine/cancel"
+  },
+  {
     "apiDescription": "ramls/actual-cost-record-storage.raml",
     "apiType": "raml",
     "methods": "get:actual_cost_record_storage_actual_cost_records_get post:actual_cost_record_storage_actual_cost_records_post",
@@ -6837,6 +6844,13 @@
     "methods": "get:operation/getSources post:operation/postSource",
     "name": "mod-reservoir",
     "path": "/reservoir/sources"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/uploadRecords",
+    "name": "mod-reservoir",
+    "path": "/reservoir/upload"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
