@@ -1157,7 +1157,7 @@
   {
     "apiDescription": "ramls/mod-users-bl.raml",
     "apiType": "raml",
-    "methods": "get:bl_usersself_get",
+    "methods": "get:bl_users__self_get",
     "name": "mod-users-bl",
     "path": "/bl-users/_self"
   },
