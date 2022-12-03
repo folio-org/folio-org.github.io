@@ -463,7 +463,8 @@
         "src/main/resources/swagger.api/bursar-export.yaml",
         "src/main/resources/swagger.api/circulation-log.yaml",
         "src/main/resources/swagger.api/e-holdings.yaml",
-        "src/main/resources/swagger.api/order-export.yaml"
+        "src/main/resources/swagger.api/order-export.yaml",
+        "src/main/resources/swagger.api/refresh-presigned-url.yaml"
       ],
       "raml": [],
       "upload": []

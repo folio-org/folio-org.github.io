@@ -6608,6 +6608,13 @@
     "path": "/records/{id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/refresh-presigned-url.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getRefreshedPresignedUrl",
+    "name": "mod-data-export-worker",
+    "path": "/refresh-presigned-url"
+  },
+  {
     "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
     "apiType": "oas",
     "methods": "post:operation/token-sign-legacy",
