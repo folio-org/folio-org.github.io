@@ -46,12 +46,12 @@
     {
       "name": "mod-circulation",
       "nameRepo": "mod-circulation",
-      "releaseDate": "2022-09-19T21:16:55+00:00",
-      "releaseName": "v23.1.5",
-      "releaseSha": "33241c6cc70cbb96cf761162ed6e661752f9edd3",
-      "releaseTag": "v23.1.5",
+      "releaseDate": "2022-12-01T17:26:52+00:00",
+      "releaseName": "v23.1.6",
+      "releaseSha": "86b9787262d7770e1890c00a4e9debbbb24af782",
+      "releaseTag": "v23.1.6",
       "releaseTarget": "master",
-      "version": "23.1.5"
+      "version": "23.1.6"
     },
     {
       "name": "mod-circulation-storage",
