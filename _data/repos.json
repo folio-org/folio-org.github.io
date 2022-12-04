@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-11-11T22:59:47.418585+00:00"
+    "generatedDateTime": "2022-11-27T00:29:31.942922+00:00"
   },
   "repos": [
     {
@@ -629,7 +629,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": null,
+      "description": "Calendar functionalities to enable service points to maintain hours of operation",
       "docDirName": "docs",
       "hintOas": true,
       "isSpringway": true,
@@ -845,7 +845,7 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>The module provides the role of delivering messages using SMTP server to send email. This module use <code>mod-configuration</code> to get connection parameters.</p>"
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
@@ -3438,7 +3438,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>FOLIO UI Module for service-interaction</p>"
+      "snippetIntro": "<p>FOLIO UI Module for service-interaction</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
