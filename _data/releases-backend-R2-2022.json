@@ -386,12 +386,12 @@
     {
       "name": "mod-ncip",
       "nameRepo": "mod-ncip",
-      "releaseDate": "2022-08-29T21:16:02+00:00",
-      "releaseName": "v1.11.1",
-      "releaseSha": "8f1864b9fc0941724503b64703059b281693d053",
-      "releaseTag": "v1.11.1",
+      "releaseDate": "2022-12-02T21:08:32+00:00",
+      "releaseName": "v1.11.2",
+      "releaseSha": "87a5ed32f14ac047d7ebc02496b38b3b386d03b3",
+      "releaseTag": "v1.11.2",
       "releaseTarget": "master",
-      "version": "1.11.1"
+      "version": "1.11.2"
     },
     {
       "name": "mod-notes",
@@ -546,12 +546,12 @@
     {
       "name": "mod-search",
       "nameRepo": "mod-search",
-      "releaseDate": "2022-11-21T16:28:03+00:00",
-      "releaseName": "v1.7.6",
-      "releaseSha": "5be8a1dc1a7425446cc04695cc155616d292fe08",
-      "releaseTag": "v1.7.6",
+      "releaseDate": "2022-12-05T09:55:43+00:00",
+      "releaseName": "v1.7.7",
+      "releaseSha": "ccb6aa4a549fceb561c73b9fde9e00e858294231",
+      "releaseTag": "v1.7.7",
       "releaseTarget": "master",
-      "version": "1.7.6"
+      "version": "1.7.7"
     },
     {
       "name": "mod-sender",
