@@ -409,18 +409,16 @@ to a running PostgreSQL query. 0 disables this timeout and is the default.
 To take effect an RMB based module must get it via PostgresClient.getConnectionConfig().getInteger("queryTimeout")
 and pass it to the RMB method that starts the connection, transaction or query.
 
-The environment variable `DB_HOST_READER` sets the read database host's URI, if there is a reader instance.
-
-The environment variable `DB_PORT_READER` sets the read database host's port, if there is a reader instance. It is to be used when `DB_HOST_READER` is set.
+The environment variables `DB_HOST_READER` and `DB_PORT_READER` are for the [Read and write database instances setup](#read-and-write-database-instances-setup).
 
 `DB_ALLOW_SUPPRESS_OPTIMISTIC_LOCKING` is a timestamp in the format `2022-12-31T23:59:59Z`. Setting it disables optimistic locking when sending a record that contains `"_version":-1` before that time, after that time `"_version":-1` is rejected. This applies only to tables with `failOnConflictUnlessSuppressed`, see below. The timestamp ensures that disabling this option cannot be forgotten. Suppressing optimistic locking is known to lead to data loss in some cases, don't use in production, you have been warned!
 
 See the [Environment Variables](https://github.com/folio-org/okapi/blob/master/doc/guide.md#environment-variables) section of the Okapi Guide for more information on how to deploy environment variables to RMB modules via Okapi.
 
 ## Read and write database instances setup
-RMB supports separating read and write requests to a database reade and write instance, respectively. By default the write instance is used for reading as well, but optionally a read instance can be used for performance efficiency.
+A PostgreSQL instance (the write instance) can be replicated for horizontal scaling (scale out), each replica is a [read-only hot standby](https://www.postgresql.org/docs/current/hot-standby.html).
 
-To configure the read instance, set its host and port using the `DB_HOST_READER` and `DB_PORT_READER` environment variables. If either of these variables are not set then it will default to use the writer instance.
+RMB supports separating read and write requests. By default the write instance configured with `DB_HOST` and `DB_PORT` environment variables is used for reading as well, but optionally a read instance (or a load balancer for multiple read instances) can be configured by setting its host and port using the `DB_HOST_READER` and `DB_PORT_READER` environment variables. If either of these reader variables are not set then it will default to use the writer instance.
 
 ## Local development server
 
@@ -1757,7 +1755,18 @@ When upgrading a module via the Tenant API, an index is deleted if either `"tOps
 ]
 ```
 
-##### Posting information
+#### Removing a table
+
+RMB removes a table and all related SQL functions on the next module upgrade if the table entry contains `"mode": "DELETE"`:
+
+```json
+  {
+    "tableName": "holdings_record",
+    "mode": "DELETE"
+  }
+```
+
+#### Posting information
 
 Posting a new tenant must include a body. The body should contain a JSON
 conforming to the
@@ -1771,7 +1780,7 @@ To disable a module indicate the existing version module in `module_from` and om
 The body may also hold a `parameters` property to specify per-tenant
 actions/info to be done during tenant creation/update.
 
-##### Encrypting Tenant passwords
+#### Encrypting Tenant passwords
 
 As of now (this may change in the future), securing a tenant's connection to the database via an encrypted password can be accomplished in the following way:
 
