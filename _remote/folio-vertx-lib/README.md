@@ -169,18 +169,25 @@ tenant init.
 
 For CQL support *all* fields recognized must be explicitly defined.
 Undefined CQL fields are rejected.
-Example to get books:
+
+Example definition:
+
+```
+    PgCqlDefinition pgCqlDefinition = PgCqlDefinition.create();
+    pgCqlDefinition.addField("cql.allRecords", new PgCqlFieldAlwaysMatches());
+    pgCqlDefinition.addField("id", new PgCqlFieldUuid());
+    pgCqlDefinition.addField("title", new PgCqlFieldText(true));
+```
+
+This definition can then be used in a handler to get books:
 
 ```
  private Future<Void> getBooks(Vertx vertx, RoutingContext ctx) {
     RequestParameters params = ctx.get(ValidationHandler.REQUEST_CONTEXT_KEY);
     String tenant = params.headerParameter(XOkapiHeaders.TENANT).getString();
-    PgCqlQuery pgCqlQuery = PgCqlQuery.query();
     RequestParameter query = params.queryParameter("query");
-    pgCqlQuery.parse(query == null ? null : query.getString());
-    pgCqlQuery.addField(new PgCqlField("cql.allRecords", PgCqlField.Type.ALWAYS_MATCHES));
-    pgCqlQuery.addField(new PgCqlField("id", PgCqlField.Type.UUID));
-    pgCqlQuery.addField(new PgCqlField("title", PgCqlField.Type.FULLTEXT));
+    PgCqlQuery pgCqlQuery = pgCqlDefinition.parse(query == null ? null : query.getString());
+
     TenantPgPool pool = TenantPgPool.pool(vertx, tenant);
     String sql = "SELECT * FROM " + pool.getSchema() + ".mytable";
     String where = pgCqlQuery.getWhereClause();
@@ -223,7 +230,7 @@ Refer to the Wiki [FOLIO Code of Conduct](https://wiki.folio.org/display/COMMUNI
 ### API documentation
 
 API descriptions:
- 
+
  * [OpenAPI](core/src/main/resources/openapi/)
  * [Schemas](core/src/main/resources/openapi/schemas/)
 
