@@ -499,6 +499,13 @@
   {
     "apiDescription": "ramls/actual-cost-fee-fine.raml",
     "apiType": "raml",
+    "methods": "post:actual_cost_fee_fine_bill_post",
+    "name": "mod-feesfines",
+    "path": "/actual-cost-fee-fine/bill"
+  },
+  {
+    "apiDescription": "ramls/actual-cost-fee-fine.raml",
+    "apiType": "raml",
     "methods": "post:actual_cost_fee_fine_cancel_post",
     "name": "mod-feesfines",
     "path": "/actual-cost-fee-fine/cancel"
