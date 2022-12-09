@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-11-27T00:29:31.942922+00:00"
+    "generatedDateTime": "2022-12-08T08:08:25.777119+00:00"
   },
   "repos": [
     {
@@ -1118,7 +1118,7 @@
       "name": "mod-ldp",
       "org": "folio-org",
       "ramlDirName": "ramls",
-      "repoLanguageHint": "java",
+      "repoLanguageHint": "other",
       "repoType": "backend-mod",
       "snippetIntro": "<p><code>mod-ldp</code> is a FOLIO module that mediates access to the <a href='https://github.com/library-data-platform/ldp'>Library Data Platform</a> (LDP). It removes the need to deal directly with a relational database by providing a simple WSAPI that can be used by UI code such as <a href='https://github.com/library-data-platform/ui-ldp'><code>ui-ldp</code></a>.</p>"
     },
