@@ -546,12 +546,12 @@
     {
       "name": "mod-search",
       "nameRepo": "mod-search",
-      "releaseDate": "2022-12-06T13:38:44+00:00",
-      "releaseName": "v1.7.8",
-      "releaseSha": "fe0d07b32e6136739781ac2b7b448a478e647c4e",
-      "releaseTag": "v1.7.8",
-      "releaseTarget": "master",
-      "version": "1.7.8"
+      "releaseDate": "2022-12-09T16:08:02+00:00",
+      "releaseName": "v1.7.9",
+      "releaseSha": "413b307499a0efd30b7064bf1ceff35b07571461",
+      "releaseTag": "v1.7.9",
+      "releaseTarget": "release/v1.7",
+      "version": "1.7.9"
     },
     {
       "name": "mod-sender",
