@@ -217,6 +217,7 @@
     "config": {
       "oas": [],
       "raml": [
+        "ramls/acquisition-events.raml",
         "ramls/audit-data.raml",
         "ramls/circulation-logs.raml",
         "ramls/mod-audit-handlers.raml"
