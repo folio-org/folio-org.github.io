@@ -5315,6 +5315,13 @@
   {
     "apiDescription": "ramls/mapping-metadata-provider.raml",
     "apiType": "raml",
+    "methods": "get:mapping_metadata_type__recordtype__get",
+    "name": "mod-source-record-manager",
+    "path": "/mapping-metadata/type/{recordType}"
+  },
+  {
+    "apiDescription": "ramls/mapping-metadata-provider.raml",
+    "apiType": "raml",
     "methods": "get:mapping_metadata__jobexecutionid__get",
     "name": "mod-source-record-manager",
     "path": "/mapping-metadata/{jobExecutionId}"
