@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-12-08T08:08:25.777119+00:00"
+    "generatedDateTime": "2022-12-21T00:46:44.958296+00:00"
   },
   "repos": [
     {
@@ -344,7 +344,7 @@
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": ""
+      "snippetIntro": "<p>FOLIO Helm charts modules repository.</p>"
     },
     {
       "defaultBranch": "master",
@@ -678,6 +678,18 @@
     },
     {
       "defaultBranch": "master",
+      "description": "Configuration",
+      "docDirName": null,
+      "hintOas": true,
+      "name": "mod-config",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
       "description": "Configuration module based on the raml-module-builder and a set of raml and json schemas backed by a postgresdb async implementation",
       "docDirName": null,
       "hasDbSchema": "blob/master/mod-configuration-server/src/main/resources/templates/db_scripts/schema.json",
@@ -744,19 +756,6 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>API for Data Export Spring module.</p>"
-    },
-    {
-      "defaultBranch": "master",
-      "description": "Spring migration for mod-data-export project",
-      "docDirName": null,
-      "hintOas": true,
-      "isSpringway": true,
-      "name": "mod-data-export-spring-migrated",
-      "org": "folio-org",
-      "ramlDirName": null,
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
@@ -845,7 +844,7 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "<p><code>mod-email</code> provides an API for delivering email messages.</p>"
     },
     {
       "defaultBranch": "master",
@@ -1067,7 +1066,7 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Mod-inventory-update is an Okapi service that can be put in front of mod-inventory-storage (Inventory Storage) for populating the storage with Instances, holdings and items according to one of multiple different update schemes.</p>"
+      "snippetIntro": "<p>Mod-inventory-update (MIU) is an Okapi service that can be put in front of mod-inventory-storage (Inventory Storage) for populating the storage with Instances, holdings and items according to one of multiple different update schemes.</p>"
     },
     {
       "defaultBranch": "master",
@@ -1118,7 +1117,7 @@
       "name": "mod-ldp",
       "org": "folio-org",
       "ramlDirName": "ramls",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p><code>mod-ldp</code> is a FOLIO module that mediates access to the <a href='https://github.com/library-data-platform/ldp'>Library Data Platform</a> (LDP). It removes the need to deal directly with a relational database by providing a simple WSAPI that can be used by UI code such as <a href='https://github.com/library-data-platform/ui-ldp'><code>ui-ldp</code></a>.</p>"
     },
@@ -1242,9 +1241,9 @@
       "defaultBranch": "master",
       "description": "Orders business logic module",
       "docDirName": null,
-      "hasDbSchema": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
       "hintRmb": true,
-      "isRmb": null,
+      "isRmb": true,
       "name": "mod-orders",
       "org": "folio-org",
       "ramlDirName": "ramls",
