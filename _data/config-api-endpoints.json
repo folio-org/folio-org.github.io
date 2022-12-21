@@ -1855,6 +1855,20 @@
     "path": "/comments/{commentId}"
   },
   {
+    "apiDescription": "src/main/resources/openapi/config.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getConfigurationEntries post:operation/postConfigurationEntry",
+    "name": "mod-config",
+    "path": "/config/entries"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/config.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deletedConfigurationEntry get:operation/getConfigurationEntry put:operation/putConfigurationEntry",
+    "name": "mod-config",
+    "path": "/config/entries/{id}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
     "methods": "get:operation/getAllFeatures post:operation/saveFeatureConfiguration",
