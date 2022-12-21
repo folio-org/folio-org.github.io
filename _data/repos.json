@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-12-21T00:46:44.958296+00:00"
+    "generatedDateTime": "2022-12-21T21:52:24.331107+00:00"
   },
   "repos": [
     {
@@ -675,18 +675,6 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>FOLIO compatible persistent storage of loans, loan policies, circulation rules, requests, and fixed due date schedules</p>"
-    },
-    {
-      "defaultBranch": "master",
-      "description": "Configuration",
-      "docDirName": null,
-      "hintOas": true,
-      "name": "mod-config",
-      "org": "folio-org",
-      "ramlDirName": null,
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
@@ -1505,6 +1493,18 @@
       "repoLanguageHint": "gradle",
       "repoType": "backend-mod",
       "snippetIntro": "<p>Mod-Service-Interaction is a FOLIO Backend Module for cross-app connectivity.</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Settings",
+      "docDirName": null,
+      "hintOas": true,
+      "name": "mod-settings",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
