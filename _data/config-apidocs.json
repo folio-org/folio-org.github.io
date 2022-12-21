@@ -348,6 +348,23 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/openapi/config.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.4.1"
+    },
+    "name": "mod-config",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/configuration/config.raml"
@@ -435,27 +452,6 @@
       "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-data-export-spring",
-    "org": "folio-org"
-  },
-  {
-    "config": {
-      "oas": [
-        "src/main/resources/swagger.api/data-export.yaml",
-        "src/main/resources/swagger.api/error-logs.yaml",
-        "src/main/resources/swagger.api/file-definitions.yaml",
-        "src/main/resources/swagger.api/jobs-profiles.yaml",
-        "src/main/resources/swagger.api/mapping-profiles.yaml",
-        "src/main/resources/swagger.api/transformation-fields.yaml"
-      ],
-      "raml": [],
-      "upload": []
-    },
-    "metadata": {
-      "apiTypes": [
-        "OAS"
-      ]
-    },
-    "name": "mod-data-export-spring-migrated",
     "org": "folio-org"
   },
   {

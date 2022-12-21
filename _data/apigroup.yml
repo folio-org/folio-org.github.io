@@ -115,6 +115,7 @@ infrastructure:
     - okapi
     - raml
     - raml-module-builder
+    - mod-config
     - mod-configuration
     - mod-audit
 other:
