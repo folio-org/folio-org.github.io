@@ -763,6 +763,20 @@
     "path": "/audit-data"
   },
   {
+    "apiDescription": "ramls/acquisition-events.raml",
+    "apiType": "raml",
+    "methods": "get:audit_data_acquisition_order_line__id__get",
+    "name": "mod-audit",
+    "path": "/audit-data/acquisition/order-line/{id}"
+  },
+  {
+    "apiDescription": "ramls/acquisition-events.raml",
+    "apiType": "raml",
+    "methods": "get:audit_data_acquisition_order__id__get",
+    "name": "mod-audit",
+    "path": "/audit-data/acquisition/order/{id}"
+  },
+  {
     "apiDescription": "ramls/circulation-logs.raml",
     "apiType": "raml",
     "methods": "get:audit_data_circulation_logs_get",
@@ -1853,20 +1867,6 @@
     "methods": "delete:comments__commentid__delete get:comments__commentid__get put:comments__commentid__put",
     "name": "mod-feesfines",
     "path": "/comments/{commentId}"
-  },
-  {
-    "apiDescription": "src/main/resources/openapi/config.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getConfigurationEntries post:operation/postConfigurationEntry",
-    "name": "mod-config",
-    "path": "/config/entries"
-  },
-  {
-    "apiDescription": "src/main/resources/openapi/config.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deletedConfigurationEntry get:operation/getConfigurationEntry put:operation/putConfigurationEntry",
-    "name": "mod-config",
-    "path": "/config/entries/{id}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
@@ -6736,6 +6736,13 @@
   {
     "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
     "apiType": "oas",
+    "methods": "post:operation/touchClusters",
+    "name": "mod-reservoir",
+    "path": "/reservoir/clusters/touch"
+  },
+  {
+    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
+    "apiType": "oas",
     "methods": "get:operation/getCluster",
     "name": "mod-reservoir",
     "path": "/reservoir/clusters/{clusterId}"
@@ -7103,6 +7110,20 @@
     "methods": "delete:service_points__servicepointid__delete get:service_points__servicepointid__get put:service_points__servicepointid__put",
     "name": "mod-inventory-storage",
     "path": "/service-points/{servicepointId}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/settings.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getSettings post:operation/postSetting",
+    "name": "mod-settings",
+    "path": "/settings/entries"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/settings.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteSetting get:operation/getSetting put:operation/putSetting",
+    "name": "mod-settings",
+    "path": "/settings/entries/{id}"
   },
   {
     "apiDescription": "ramls/inventory-update.raml",
