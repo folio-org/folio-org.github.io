@@ -115,9 +115,9 @@ infrastructure:
     - okapi
     - raml
     - raml-module-builder
-    - mod-config
-    - mod-configuration
     - mod-audit
+    - mod-configuration
+    - mod-settings
 other:
   title: Other
   description: Not yet grouped.
