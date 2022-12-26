@@ -49,7 +49,7 @@ course-reserves:
     - edge-lti-courses
 finance:
   title: Finance and orders
-  description: Finance, orders, organizations.
+  description: Finance, orders, organizations, acquisitions.
   modules:
     - mod-finance
     - mod-finance-storage
@@ -61,6 +61,7 @@ finance:
     - mod-organizations
     - mod-organizations-storage
     - mod-gobi
+    - acq-models
 notifications:
   title: Notifications
   description: Assembling and sending notifications.
@@ -83,6 +84,8 @@ data-import:
     - mod-source-record-manager
     - mod-source-record-storage
     - mod-user-import
+    - data-import-raml-storage
+    - folio-export-common
 remote-integration:
   title: Remote integration
   description: Integration with remote services.
@@ -98,8 +101,12 @@ remote-integration:
     - edge-rtac
 utilities:
   title: Utilities and tools
-  description: Notes, tags, calendar, etc.
+  description: Gateway, configuration, notes, tags, calendar, RMB, raml-util, etc.
   modules:
+    - okapi
+    - mod-configuration
+    - mod-settings
+    - mod-audit
     - mod-entities-links
     - mod-notes
     - mod-tags
@@ -108,16 +115,12 @@ utilities:
     - mod-search
     - mod-template-engine
     - mod-quick-marc
+    - raml
+    - raml-module-builder
 infrastructure:
   title: Infrastructure
   description: Gateway, raml-util, RMB, monitoring, etc.
   modules:
-    - okapi
-    - raml
-    - raml-module-builder
-    - mod-audit
-    - mod-configuration
-    - mod-settings
 other:
   title: Other
   description: Not yet grouped.
@@ -127,9 +130,6 @@ other:
     - folio-custom-fields
     - folio-spring-base
     - folio-vertx-lib
-    - acq-models
-    - data-import-raml-storage
-    - folio-export-common
 deprecated:
   title: Deprecated
   description: Some old ones that have been renamed recently.
