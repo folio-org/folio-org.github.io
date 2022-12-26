@@ -46,7 +46,8 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "edge-dematic",
     "org": "folio-org"
