@@ -5684,6 +5684,13 @@
     "path": "/orders-storage/alerts/{id}"
   },
   {
+    "apiDescription": "ramls/audit_outbox.raml",
+    "apiType": "raml",
+    "methods": "post:orders_storage_audit_outbox_process_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/audit-outbox/process"
+  },
+  {
     "apiDescription": "ramls/configuration.raml",
     "apiType": "raml",
     "methods": "get:orders_storage_configuration_prefixes_get post:orders_storage_configuration_prefixes_post",
@@ -7124,6 +7131,13 @@
     "methods": "delete:operation/deleteSetting get:operation/getSetting put:operation/putSetting",
     "name": "mod-settings",
     "path": "/settings/entries/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/settings.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/uploadSettings",
+    "name": "mod-settings",
+    "path": "/settings/upload"
   },
   {
     "apiDescription": "ramls/inventory-update.raml",
