@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2022-12-22T20:23:49.784596+00:00"
+    "generatedDateTime": "2023-01-03T01:13:50.756401+00:00"
   },
   "repos": [
     {
@@ -3286,6 +3286,16 @@
         "build-npm-release.yml",
         "build-npm.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "ui-plugin-query-builder",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>query-builder</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='query-builder'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
     },
     {
       "defaultBranch": "master",
