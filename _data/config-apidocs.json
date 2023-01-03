@@ -46,7 +46,8 @@
     "metadata": {
       "apiTypes": [
         "OAS"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.1"
     },
     "name": "edge-dematic",
     "org": "folio-org"
@@ -344,23 +345,6 @@
       "generator": "api_doc.py 1.4.1"
     },
     "name": "mod-circulation-storage",
-    "org": "folio-org"
-  },
-  {
-    "config": {
-      "oas": [
-        "src/main/resources/openapi/config.yaml"
-      ],
-      "raml": [],
-      "upload": []
-    },
-    "metadata": {
-      "apiTypes": [
-        "OAS"
-      ],
-      "generator": "api_doc.py 1.4.1"
-    },
-    "name": "mod-config",
     "org": "folio-org"
   },
   {
@@ -1164,6 +1148,7 @@
         "ramls/acquisition_method.raml",
         "ramls/acquisitions-unit.raml",
         "ramls/alert.raml",
+        "ramls/audit_outbox.raml",
         "ramls/configuration.raml",
         "ramls/export_history.raml",
         "ramls/order-invoice-relns.raml",
@@ -1423,6 +1408,23 @@
       ]
     },
     "name": "mod-sender",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/openapi/settings.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.4.1"
+    },
+    "name": "mod-settings",
     "org": "folio-org"
   },
   {
