@@ -9,7 +9,7 @@ menuTopTitle: Guides
 ## Introduction
 
 This document describes procedures for people assisting with [FOLIO DevOps](/guides/devops-introduction/)
-to add a new back-end module to the folio-ansible configuration,
+to add a new back-end module to the platform-complete and folio-ansible configuration,
 and make it available in the folio-snapshot [reference environments](/guides/automation/#reference-environments),
 and make it available in the Vagrant box VMs for snapshot.
 
@@ -31,52 +31,79 @@ Investigate the module README and LaunchDescriptor in case there are other speci
 
 ## Overview
 
-Make branch in folio-ansible to add to `group_vars` files.
-Make branch in folio-infrastructure to add to a special file, and also to configure Jenkins.
-Configure and test via special Jenkins jobs.
+Add to platform-complete snapshot branch.
+Make branch in folio-ansible to add to a `group_vars` file.
+Make branch in folio-infrastructure to configure Jenkins for a test build.
+Configure and test via a special Jenkins job.
 Remove testing configuration.
 Merge PR to folio-ansible, then to folio-infrastructure.
 Follow the daily backend builds to verify.
+
+## Add to snapshot platform
+
+This is the procedure for adding a backend module to the "snapshot" branch of the Stripes Platform [platform-complete](https://github.com/folio-org/platform-complete/tree/snapshot).
+
+### Platform explanation
+
+The normal process is that a UI module will require interfaces that are provided by back-end modules (declared in the "okapiInterfaces" section of their package.json file).
+With this, the relevant back-end modules are automatically included.
+(See separate procedure to [install a new front-end module](/guides/install-frontend-module/).)
+
+However often the front-end and back-end are not yet ready for each other.
+
+If so, then temporarily add the new back-end module to the `install-extras.json` file of the "snapshot" branch of the relevant platform.
+(Note that "core" modules are added to both platform-core and platform-complete.)
+
+After the back-end development is eventually ready, then a front-end module will require this module.
+When that happens, then the backend module will be automatically included via the normal process, so it can then be removed from this `install-extras.json` file.
+
+However some back-end modules are never required by front-end modules.
+In these cases they are always configured in that file.
+
+### Platform configuration
+
+If approaching the daily [reference environment](/guides/automation/#reference-environments) build times, then the timing of this task can be difficult.
+
+The [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/) Jenkins build happens every hour, starting at about 19 minutes past and taking about 32 minutes.
+This will regenerate the yarn.lock and install files of the Platform, and automatically merge them.
+
+So there will be a short window to prepare the branch and pull-request builds, then merge to "snapshot" branch, then its branch build.
+
+After the next hourly "build-platform-complete-snapshot" run, then verify that the new backend module is now in the [okapi-install.json](https://github.com/folio-org/platform-complete/blob/snapshot/okapi-install.json) file.
+
+If there is trouble, then revert the addition to the Platform, and investigate and report the issues.
 
 ## Branch folio-ansible
 
 Make a branch in [folio-ansible](https://github.com/folio-org/folio-ansible),
 e.g. `FOLIO-2467-refenvs-ncip`
 
-Add the module to the `group_vars/testing` and `group_vars/snapshot` files.
-These files also assist with building the VMs, and currently provide special configuration for some modules.
-
-Always add new modules to `group_vars/testing`.
-
-Only add module entries to `group_vars/snapshot` if they need special configuration to over-ride LaunchDescriptor settings, or to provide other additional settings.
+Add the module to the `group_vars/snapshot` file.
+This file assists with building the VMs.
+It also currently provides special configuration for some modules
+to over-ride LaunchDescriptor settings, or to provide other additional settings.
 
 Follow the format for the entries of other modules.
 
-Note that the "snapshot" files are alphabetically sorted, as Okapi handles those.
+The "snapshot" file is alphabetically sorted, as Okapi handles the dependency resolution.
 
-However, the "testing" files have explicit order.
-The sequence must have the new module declared after the modules that provide its interfaces (see [verification](#verification-and-preparation) step above).
+The module is declared in the main `folio_modules` section.
 
-Also note that for the "snapshot" files, the module is declared in the main section.
-If the module is not to be pulled in by a front-end UI module via a platform, then it needs to be also declared in the "`add_modules`" section.
+If the module is **not** to be pulled in by a front-end UI module via a platform, then it needs to be also declared in the "`add_modules`" section.
 Often that is the case because the development of a UI module is not yet ready to require it.
-(This `group_vars` section could later be tidied, when that is finally happening.)
+(This `add_modules` section could later be tidied, when that is finally happening.)
 
 ## Branch folio-infrastructure
+
+This section explains the preparation for conducting a run of
+the [`folio-snapshot-test`](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-test/) build.
 
 Make a branch in [folio-infrastructure](https://github.com/folio-org-priv/folio-infrastructure),
 e.g. `FOLIO-2467-refenvs-ncip`
 
-Add to `CI/ansible/testing-add-modules.yml` file.
-The purpose of this file is to declare modules (e.g. mod-ldp) that are not added to a VM (see the previous [section](#branch-folio-ansible)) but do need to be added to the folio-testing reference environment.
+Add the configuration for the Jenkins job ...
 
-Add the entry to both sections: Register and Deploy.
-Follow the format for the entries of other modules.
-The sequence must have the new module declared after any modules that provide its interfaces (see [verification](#verification-and-preparation) step above).
-
-Add testing configuration for the Jenkins jobs ...
-
-Add to the Jenkinsfiles to refer to the folio-infrastructure branch:\
+Add to the Jenkinsfile to refer to the folio-infrastructure branch:\
 Set Stage:Checkout `branches` variable to be `refs/heads/FOLIO-2467-refenvs-ncip`
 (i.e. was `*/master`)
 
@@ -84,7 +111,7 @@ Set Stage:Checkout `branches` variable to be `refs/heads/FOLIO-2467-refenvs-ncip
 CI/jenkins/Jenkinsfile.folio-snapshot-test-build
 ```
 
-Refer the git submodule to the folio-ansible branch.
+Next refer the git submodule to the folio-ansible branch.
 Take care, as this is a tab-delimited file.
 
 Edit the `.gitmodules` file:
@@ -140,73 +167,26 @@ and that its docker has not terminated.
 Could also verify via the front-end "Settings : Software versions" page (e.g.
 [folio-snapshot-test.dev.folio.org](https://folio-snapshot-test.dev.folio.org/settings/about)).
 
-## Add to snapshot platform
+## Finalise
 
-This is the separate procedure for adding a backend module to the "snapshot" branch of the Stripes Platform (e.g. to [platform-complete](https://github.com/folio-org/platform-complete/tree/snapshot)).
+Now that there is happiness, prepare and merge the pull-request to folio-ansible.
 
-Before doing this, the successful build of "folio-snapshot-test" (described in the preceding sections) will provide some comfort, but it is not a thorough test.
-Of course, it it fails then there is no point doing this section.
-
-### Platform explanation
-
-The normal process is that a UI module will require interfaces that are provided by back-end modules (declared in the "okapiInterfaces" section of their package.json file).
-With this, the relevant back-end modules are automatically included.
-(See separate procedure to [install a new front-end module](/guides/install-frontend-module/).)
-
-However often the front-end and back-end are not yet ready for each other.
-
-If so, then temporarily add the new back-end module to the `install-extras.json` file of the "snapshot" branch of the relevant platform.
-(Note that "core" modules are added to both platform-core and platform-complete.)
-
-After the back-end development is eventually ready, then a front-end module will require this module.
-When that happens, then the backend module will be automatically included via the normal process, so it can then be removed from this `install-extras.json` file.
-
-However some back-end modules are never required by front-end modules.
-In these cases they are always configured in that file.
-
-### Platform configuration
-
-If approaching the daily [reference environment](/guides/automation/#reference-environments) build times, then the timing of this task can be difficult.
-
-The [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/) Jenkins build happens every hour, starting at about 20 minutes past and taking 30 minutes.
-This will regenerate the yarn.lock and install files of the Platform, and automatically merge them.
-
-So there will be a short window to prepare the branch and pull-request builds, then merge to "snapshot" branch, then its branch build.
-
-After the next "build-platform-complete-snapshot" run, then verify that the new backend module is now in the [okapi-install.json](https://github.com/folio-org/platform-complete/blob/snapshot/okapi-install.json) file.
-
-### Run folio-snapshot-test build
-
-Run and verify the [`folio-snapshot-test`](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-test/) build, as [explained above](#run-folio-snapshot-test-build).
-
-If there is trouble, then revert the addition to the Platform, and investigate and report the issues.
-
-## Do pull requests
-
-Now that there is happiness, prepare and merge the pull-requests to folio-ansible and folio-infrastructure.
-
-First be sure to remove all test configuration ...
+Remove the test configuration ...
 
 * At the Jenkins interface for "folio-snapshot-test", revisit its `Configure` page and revert the "Branch specifier" to be `*/master`
 (which also signals to other DevOps that you have finished with the test builds).
 * Visit AWS EC2 - the "folio-snapshot-test" instance needs to be in "stopped" state to save a buck.
-* In the "folio-infrastructure" branch, remove the testing configuration in the Jenkinsfiles
-and the gitmodules file.
 
-Now make the PRs.
+Now make the PR.
 
 Be aware of the timing of the automated back-end build jobs,
 as explained at the [reference environments](/guides/automation/#reference-environments).
 
 (If you need to manually run these jobs outside the normal automated schedule, then may need to ask #hosted-reference-envs channel, as people depend on these environments.)
 
-First merge to folio-ansible, then to folio-infrastructure.
-
 ## Inspect build results
 
-Following the merges, might want to re-run the folio-snapshot-test build using this now-deployed configuration to ensure no glitches.
-
-Now await the scheduled [automated build](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/).
+Await the scheduled [automated build](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/).
 
 Verify the results of the backend build, as done above.
 
@@ -216,7 +196,7 @@ curl -s -S \
   | jq -r '.[] | select(.id | match("mod-"))[]' | sort
 ```
 
-Inspect via the front-end.
+Or inspect via the front-end.
 
 ## Followup
 
