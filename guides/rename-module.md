@@ -16,7 +16,7 @@ Co-ordinate the steps with team members. At an early stage, tell the wider commu
 
 A general summary follows. The order of steps is loosely proper. Although some will overlap, some may delay others, some may be better done at a different stage.
 
-Some parts can be done by the relevant development teams, while other parts require operations assistance.
+Most parts can be done by the relevant development teams, while other parts might require operations DevOps [assistance](/faqs/how-to-raise-devops-ticket/).
 
 ## Create tickets
 
@@ -30,6 +30,7 @@ Do not remove or rename the old git repository, nor remove its release branches.
 Its artifacts are still required for past releases, and there may be a need to do bugfix releases.
 
 Also it will still be configured, using the old module name, in [folio-ansible](https://github.com/folio-org/folio-ansible) roles for creating various reference environments, and in platform-complete.
+Do not change anything at this stage.
 
 ## Archive old repository
 
@@ -53,6 +54,7 @@ For back-end modules, [create new spaces](/download/artifacts/#docker-images) at
 ## Create repository, do git clone
 
 Create a new, completely empty GitHub repository.
+Follow the module [naming conventions](/guidelines/naming-conventions/#module-names).
 
 Clone the relevant parts (without release tags) of the old one.
 This procedure will also retain the git history.
@@ -89,17 +91,11 @@ For guidance, follow the settings of the old one.
 
 Replace all mention of the old project name.
 
-Update git project configuration (pom.xml or package.json), descriptors, permissions in ModuleDescriptor, translations, source code, project name in RAML files and JSON schemas, readme, other project description, etc.
+Update git project configuration (pom.xml or package.json), descriptors, permissions in ModuleDescriptor, translations, source code, project name in RAML or OpenAPI (OAS) files and JSON schemas, readme, other project description, etc.
 
-For back-end modules: In the ModuleDescriptor, utilise the "[replaces](https://github.com/folio-org/okapi/blob/master/okapi-core/src/main/raml/ModuleDescriptor.json#L17)" feature, e.g.
-
-```
-{
- "id" : "new-module-1.2.0"
- "replaces": [ "old-module" ]
-},
-...
-```
+For back-end modules: In the ModuleDescriptor, utilise the "[replaces](https://github.com/folio-org/okapi/blob/177a60e5de9cf37e7fdd1c0fa9ecf00f72c481e9/okapi-core/src/main/raml/ModuleDescriptor.json#L17)" feature.
+See an [example](https://github.com/folio-org/mod-inventory-storage/pull/765).
+If unsure then ask on Slack #development for assistance.
 
 ## Restore Jenkinsfile
 
@@ -129,9 +125,10 @@ If this had not been done, then follow these steps while [configuring Lokalise](
 
 ## Add to reference environments
 
-After the initial snapshot artifacts have been deployed, add the new module to the snapshot [reference environments](/guides/automation/#reference-environments).
+After the initial snapshot artifacts have been deployed by CI, add the new module to the snapshot [reference environments](/guides/automation/#reference-environments).
+Follow the FAQ to [install](/faqs/how-to-install-new-module/) the new module.
 
-Leave the old one in-place at this stage. It will be [removed](#remove-from-reference-environments) from some environments after other modules in FOLIO CI, that use the old interface name, have upgraded.
+Leave the old one in-place at this stage. It will be [removed](#remove-from-reference-environments) from some environments after all other modules in FOLIO CI, that use the old interface name, have upgraded to require the new one.
 
 ## Adjust Stripes Platforms
 
@@ -150,7 +147,7 @@ Prepare Jira "project". Sometimes best to create new one, and re-key relevant is
 ## Adjust website API docs configuration
 
 The [API documentation](/reference/api/) for the new module will be automatically generated on its merge to mainline branch.
-The new documentation will be discovered on the next daily run, as [explained](/reference/api/#explain-gather-config).
+The new documentation will be automatically discovered on the next daily run, as [explained](/reference/api/#explain-gather-config).
 
 In the [`_data/apigroup.yml`](https://github.com/folio-org/folio-org.github.io/blob/master/_data/apigroup.yml) file, add an entry for the new module.
 Move the old one to the "deprecated" section at the bottom (it can be later removed after a few flower releases).
