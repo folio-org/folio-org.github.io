@@ -472,7 +472,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-data-import",
     "org": "folio-org"
@@ -544,7 +544,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-entities-links",
     "org": "folio-org"
@@ -684,7 +684,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-finance",
     "org": "folio-org"
@@ -819,7 +819,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-inventory",
     "org": "folio-org"
@@ -929,7 +929,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-invoice",
     "org": "folio-org"
@@ -1353,7 +1353,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-reservoir",
     "org": "folio-org"
@@ -1390,7 +1390,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-search",
     "org": "folio-org"
@@ -1423,7 +1423,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-settings",
     "org": "folio-org"
@@ -1443,7 +1443,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-source-record-manager",
     "org": "folio-org"
