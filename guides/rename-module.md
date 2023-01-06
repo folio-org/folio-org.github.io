@@ -89,17 +89,11 @@ For guidance, follow the settings of the old one.
 
 Replace all mention of the old project name.
 
-Update git project configuration (pom.xml or package.json), descriptors, permissions in ModuleDescriptor, translations, source code, project name in RAML files and JSON schemas, readme, other project description, etc.
+Update git project configuration (pom.xml or package.json), descriptors, permissions in ModuleDescriptor, translations, source code, project name in RAML or OpenAPI (OAS) files and JSON schemas, readme, other project description, etc.
 
-For back-end modules: In the ModuleDescriptor, utilise the "[replaces](https://github.com/folio-org/okapi/blob/master/okapi-core/src/main/raml/ModuleDescriptor.json#L17)" feature, e.g.
-
-```
-{
- "id" : "new-module-1.2.0"
- "replaces": [ "old-module" ]
-},
-...
-```
+For back-end modules: In the ModuleDescriptor, utilise the "[replaces](https://github.com/folio-org/okapi/blob/177a60e5de9cf37e7fdd1c0fa9ecf00f72c481e9/okapi-core/src/main/raml/ModuleDescriptor.json#L17)" feature.
+See an [example](https://github.com/folio-org/mod-inventory-storage/pull/765).
+If unsure then ask on Slack #development for assistance.
 
 ## Restore Jenkinsfile
 
