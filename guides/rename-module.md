@@ -16,7 +16,7 @@ Co-ordinate the steps with team members. At an early stage, tell the wider commu
 
 A general summary follows. The order of steps is loosely proper. Although some will overlap, some may delay others, some may be better done at a different stage.
 
-Some parts can be done by the relevant development teams, while other parts require operations assistance.
+Most parts can be done by the relevant development teams, while other parts might require operations DevOps [assistance](/faqs/how-to-raise-devops-ticket/).
 
 ## Create tickets
 
@@ -145,7 +145,7 @@ Prepare Jira "project". Sometimes best to create new one, and re-key relevant is
 ## Adjust website API docs configuration
 
 The [API documentation](/reference/api/) for the new module will be automatically generated on its merge to mainline branch.
-The new documentation will be discovered on the next daily run, as [explained](/reference/api/#explain-gather-config).
+The new documentation will be automatically discovered on the next daily run, as [explained](/reference/api/#explain-gather-config).
 
 In the [`_data/apigroup.yml`](https://github.com/folio-org/folio-org.github.io/blob/master/_data/apigroup.yml) file, add an entry for the new module.
 Move the old one to the "deprecated" section at the bottom (it can be later removed after a few flower releases).
