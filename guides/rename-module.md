@@ -54,6 +54,7 @@ For back-end modules, [create new spaces](/download/artifacts/#docker-images) at
 ## Create repository, do git clone
 
 Create a new, completely empty GitHub repository.
+Follow the module [naming conventions](/guidelines/naming-conventions/#module-names).
 
 Clone the relevant parts (without release tags) of the old one.
 This procedure will also retain the git history.
