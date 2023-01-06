@@ -129,9 +129,10 @@ If this had not been done, then follow these steps while [configuring Lokalise](
 
 ## Add to reference environments
 
-After the initial snapshot artifacts have been deployed, add the new module to the snapshot [reference environments](/guides/automation/#reference-environments).
+After the initial snapshot artifacts have been deployed by CI, add the new module to the snapshot [reference environments](/guides/automation/#reference-environments).
+Follow the FAQ to [install](/faqs/how-to-install-new-module/) the new module.
 
-Leave the old one in-place at this stage. It will be [removed](#remove-from-reference-environments) from some environments after other modules in FOLIO CI, that use the old interface name, have upgraded.
+Leave the old one in-place at this stage. It will be [removed](#remove-from-reference-environments) from some environments after all other modules in FOLIO CI, that use the old interface name, have upgraded to require the new one.
 
 ## Adjust Stripes Platforms
 
