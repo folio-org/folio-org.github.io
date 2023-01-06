@@ -26,7 +26,7 @@ See [Automation/Docker Hub](/guides/automation#docker-hub) for details.
 
 Docker images are the primary distribution model for FOLIO modules.
 
-To run the images you will need the Docker Engine or Docker Desktop runtime.
+To run the images, consider using [Colima](https://github.com/abiosoft/colima).
 Or use them via a FOLIO prebuilt Vagrant [box](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md) VM.
 
 ## Maven artifacts
