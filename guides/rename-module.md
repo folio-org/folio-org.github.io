@@ -30,6 +30,7 @@ Do not remove or rename the old git repository, nor remove its release branches.
 Its artifacts are still required for past releases, and there may be a need to do bugfix releases.
 
 Also it will still be configured, using the old module name, in [folio-ansible](https://github.com/folio-org/folio-ansible) roles for creating various reference environments, and in platform-complete.
+Do not change anything at this stage.
 
 ## Archive old repository
 
