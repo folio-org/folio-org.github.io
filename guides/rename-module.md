@@ -133,8 +133,6 @@ Leave the old one in-place at this stage. It will be [removed](#remove-from-refe
 ## Adjust Stripes Platforms
 
 After initial releases, adjust the configured module name and version in
-[platform-core](https://github.com/folio-org/platform-core)
-and
 [platform-complete](https://github.com/folio-org/platform-complete)
 master and snapshot branches.
 
