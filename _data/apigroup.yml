@@ -76,7 +76,7 @@ data-import:
   description: Importing and loading and exporting various data.
   modules:
     - mod-data-import
-    - mod-data-import-converter-storage
+    - mod-di-converter-storage
     - mod-data-export-spring
     - mod-data-export-spring-migrated
     - mod-data-export-worker
