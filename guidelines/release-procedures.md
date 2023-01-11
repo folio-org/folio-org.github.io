@@ -229,7 +229,7 @@ Maven repository, a docker image released to Docker Hub, a Linux distribution pa
 or some combination of artifacts depending on the project.
 
 After preparing the release as explained above, the next step is done via the [FOLIO Jenkins system](https://jenkins-aws.indexdata.com).
-Jenkins credentials utilize the GitHub authentication for FOLIO core developers, so ensure that you are logged in to GitHub to then enable login to Jenkins.
+Jenkins credentials utilize the GitHub authentication for FOLIO developers, so ensure that you are logged in to GitHub to then enable login to Jenkins.
 
 Select the [GitHub folio-org](https://jenkins-aws.indexdata.com/job/folio-org/) folder, then follow to the relevant job (e.g.
 [mod-circulation](https://jenkins-aws.indexdata.com/job/folio-org/job/mod-circulation/)) and select the "Tags" tab. Select the new release version tag, then the "Build Now" link in the left-hand panel to trigger it.
@@ -269,8 +269,8 @@ All Stripes modules (i.e. `stripes-*` and `ui-*`) follow the
 
 Currently there are two repositories maintained by the FOLIO project that bundle together UI and backend modules into a compatible set of FOLIO modules.
 
-* [platform-core](https://github.com/folio-org/platform-core) - The "core" set of frontend and backend FOLIO modules
 * [platform-complete](https://github.com/folio-org/platform-complete) - The complete set of frontend and backend FOLIO modules
+* [platform-minimal](https://github.com/folio-org/platform-minimal) - A "minimal" set of frontend and backend FOLIO modules
 
 Each of these repositories contain configurations and tools to build a Stripes bundle as well as files that list a set of compatible backend modules.
 
@@ -300,11 +300,11 @@ The snapshot branch, on the other hand, is generally configured to get the lates
 
 ### Continuous integration
 
-This is the CI process for a pull-request to master branch or a release branch of a platform. Consider platform-core for example.
-The CI stages are defined in its [Jenkinsfile](https://github.com/folio-org/platform-core/blob/master/Jenkinsfile).
+This is the CI process for a pull-request to master branch or a release branch of a platform. Consider platform-complete for example.
+The CI stages are defined in its [Jenkinsfile](https://github.com/folio-org/platform-complete/blob/master/Jenkinsfile).
 
 As noted previously, FOLIO modules are pinned to released versions.
-A dependency bot called Renovate is [configured](https://github.com/folio-org/platform-core/blob/master/renovate.json) to discover new, individual FOLIO frontend and backend module releases that are compatible with each branch of the platform.
+A dependency bot called Renovate is [configured](https://github.com/folio-org/platform-complete/blob/master/renovate.json) to discover new, individual FOLIO frontend and backend module releases that are compatible with each branch of the platform.
 Specifically, the bot examines 'package.json' and 'install-extras.json' and compares the versions of modules listed in these files with the latest releases in the FOLIO NPM and Docker repositories.
 For the release branches, Renovate is configured to scan for newer patch releases.
 For the master branch, Renovates compares minor and patch releases.
@@ -313,11 +313,11 @@ In both cases, Renovate will automatically create pull-requests to those platfor
 The 'yarn build-module-descriptors' stripes-cli [command](https://github.com/folio-org/stripes-cli/blob/master/doc/commands.md#mod-descriptor-command) processes those declared modules and generates a temporary directory of ModuleDescriptors.
 Then a CI script processes those MDs to generate the "stripes-install.json" file.
 
-Then additional modules that are declared in [install-extras.json](https://github.com/folio-org/platform-core/blob/master/install-extras.json) (see explanation below) are appended to that generated [stripes-install.json](https://github.com/folio-org/platform-core/blob/master/stripes-install.json) file.
+Then additional modules that are declared in [install-extras.json](https://github.com/folio-org/platform-complete/blob/master/install-extras.json) (see explanation below) are appended to that generated [stripes-install.json](https://github.com/folio-org/platform-complete/blob/master/stripes-install.json) file.
 
-Then the final stripes-install.json is posted to Okapi `/_/proxy/tenants/diku/install?simulate=true&preRelease=false` to resolve all of the related dependencies, and the output is captured into the [install.json](https://github.com/folio-org/platform-core/blob/master/install.json) file.
+Then the final stripes-install.json is posted to Okapi `/_/proxy/tenants/diku/install?simulate=true&preRelease=false` to resolve all of the related dependencies, and the output is captured into the [install.json](https://github.com/folio-org/platform-complete/blob/master/install.json) file.
 
-Then that "install.json" file is processed to extract the "mod-" ones into the [okapi-install.json](https://github.com/folio-org/platform-core/blob/master/okapi-install.json) file.
+Then that "install.json" file is processed to extract the "mod-" ones into the [okapi-install.json](https://github.com/folio-org/platform-complete/blob/master/okapi-install.json) file.
 
 After a successful build, the generated artifacts (yarn.lock, install.json, okapi-install.json, stripes-install.json) are committed with message "[CI SKIP] Updating install files on branch".  Do not manually edit those files -- they are autogenerated by Jenkins.
 
@@ -325,7 +325,7 @@ The link to the built platform "instance" and the link to the "UI Tests" are app
 
 ### Manage master and release branches
 
-This section explains how and when to manage modules in the platforms (e.g. [platform-core](https://github.com/folio-org/platform-core), [platform-complete](https://github.com/folio-org/platform-complete), etc.) after a new version of a module has been released.
+This section explains how and when to manage modules in the platforms (e.g. [platform-complete](https://github.com/folio-org/platform-complete)) after a new version of a module has been released.
 There are cases when Renovate will not update modules automatically, so changes to the platform will need to be done manually.  These cases include the following:
 
 * A new UI module needs to be included in the platform.  Before adding a new module to the platform, ensure that the module has already been added and tested on the snapshot branch and included in the  [snapshot](/faqs/how-to-install-new-module/) reference environments.
