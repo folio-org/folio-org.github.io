@@ -47,10 +47,6 @@ Take note of the Settings for branch protection and teams, which will be applied
 
 Now follow the full procedure [How to archive a GitHub repository](/faqs/how-to-archive-repository/).
 
-## Create spaces at Docker Hub
-
-For back-end modules, [create new spaces](/download/artifacts/#docker-images) at Docker Hub.
-
 ## Create repository, do git clone
 
 Create a new, completely empty GitHub repository.
@@ -93,7 +89,7 @@ Replace all mention of the old project name.
 
 Update git project configuration (pom.xml or package.json), descriptors, permissions in ModuleDescriptor, translations, source code, project name in RAML or OpenAPI (OAS) files and JSON schemas, readme, other project description, etc.
 
-For back-end modules: In the ModuleDescriptor, utilise the "[replaces](https://github.com/folio-org/okapi/blob/177a60e5de9cf37e7fdd1c0fa9ecf00f72c481e9/okapi-core/src/main/raml/ModuleDescriptor.json#L17)" feature.
+<a id="replaces"></a>For back-end modules: In the ModuleDescriptor, utilise the "[replaces](https://github.com/folio-org/okapi/blob/177a60e5de9cf37e7fdd1c0fa9ecf00f72c481e9/okapi-core/src/main/raml/ModuleDescriptor.json#L17)" feature.
 See an [example](https://github.com/folio-org/mod-inventory-storage/pull/765).
 If unsure then ask on Slack #development for assistance.
 
@@ -125,17 +121,20 @@ If this had not been done, then follow these steps while [configuring Lokalise](
 
 ## Add to reference environments
 
+Before proceeding, do double-check that the ModuleDescriptor utilises the "[replaces](#replaces)" facility.
+
 After the initial snapshot artifacts have been deployed by CI, add the new module to the snapshot [reference environments](/guides/automation/#reference-environments).
 Follow the FAQ to [install](/faqs/how-to-install-new-module/) the new module.
 
-Leave the old one in-place at this stage. It will be [removed](#remove-from-reference-environments) from some environments after all other modules in FOLIO CI, that use the old interface name, have upgraded to require the new one.
+If the interface name and version remains the same, then this task is straight-forward renaming in the platform configuration.
+
+If the interface name has changed, then leave the old one in-place at this stage. It will be [removed](#remove-from-reference-environments) from some environments after all other modules in FOLIO CI, that use the old interface name, have upgraded to "require" the new one.
 
 ## Adjust Stripes Platforms
 
-After initial releases, adjust the configured module name and version in
+After the **initial release**, adjust the configured module name and version in
 [platform-complete](https://github.com/folio-org/platform-complete)
-master and snapshot branches.
-
+master branch.
 Follow the [release procedures for platforms](/guidelines/release-procedures/#add-to-platforms).
 
 ## Prepare Jira project
