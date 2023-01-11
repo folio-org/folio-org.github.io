@@ -8,6 +8,10 @@ menuTopTitle: Guides
 
 ## Introduction
 
+<div class="attention">
+Note: This documentation is outdated.
+</div>
+
 Branch preview mode allows developers, product owners, and other interested parties to "preview"
 changes to FOLIO UI components on a live FOLIO system before committing them to the master
 branch.
@@ -18,7 +22,6 @@ branch.
 
 A FOLIO backend system is built daily from the master branch of these "platform"
 GitHub repositories:
-[FOLIO "platform-core" distribution](https://github.com/folio-org/platform-core) and
 [FOLIO "platform-complete" distribution](https://github.com/folio-org/platform-complete).
 
 These systems contain only the latest releases of Okapi and backend FOLIO modules that are
@@ -28,7 +31,7 @@ When a GitHub PR is opened for an existing branch on,  the following "preview" r
 processes occur in addition to existing quality gates (unit tests, SonarQube, etc).
 
 * The base set of backend FOLIO modules used in the PR are derived from releases specified in
-the master branch of platform-core and platform-complete (see 'install.json').  However,
+the master branch of platform-complete (see 'install.json').  However,
 there are cases where, in order to adequately test new functionality in a frontend module,
 replacing a released module with an unreleased version may be necessary to include in the PR.  
 This can be accomplished by specifying the backend module you want to substitute for the
@@ -49,7 +52,7 @@ mod-users-bl and mod-users in place of the default released modules:
       }
     ]
 
-* Code from the UI module's branch is merged into either platform-core or platform-complete.
+* Code from the UI module's branch is merged into platform-complete.
 Essentially replacing the released version of the module.
 
 * A stripes "bundle" or webpack is compiled, and a module descriptor for the module that
@@ -80,7 +83,7 @@ the build is marked as 'FAILED'.
 * The UI module must have an interface that is compatible with the existing set of released
 modules. If a UI module requires a newer version of an interface from a backend
 module, then the backend module must be released first and included in the FOLIO configuration of
-released modules contained on the master branch of platform-core or platform-complete.
+released modules contained on the master branch of platform-complete.
 
 * There can be multiple build iterations for each PR.  A new tenant will be created for each
 iteration. However, only one Stripes bundle is retained - the one produced from the

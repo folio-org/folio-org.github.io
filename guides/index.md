@@ -134,8 +134,6 @@ Some more detail is provided via other introductory documentation:
 - [Manage notifications to keep abreast](manage-notifications/).
 - Conduct [troubleshooting](troubleshooting).
 - [Code analysis and linting facilities](code-analysis) explains ESLint, SonarQube, other lint tools, and preparing for pull requests.
-- [Branch preview on Kubernetes infrastructure](branch-preview-kubernetes/).
-- [Branch preview mode for UI modules](branch-preview/).
 - For Contextual Query Language (CQL) examples, see the [Glossary](/reference/glossary/#cql), the FOLIO [CQL to PostgreSQL JSON converter](https://github.com/folio-org/raml-module-builder#cql-contextual-query-language), the [API docs](/reference/api/), and the debug output for tests in each backend module.
 - Use "[api-lint](/guides/api-lint/)" to assess API descriptions, schema, and examples -- both RAML and OpenAPI (OAS).
 - Use "[api-doc](/guides/api-doc/)" to generate API documentation from API descriptions, schema, and examples -- both RAML and OpenAPI (OAS).
