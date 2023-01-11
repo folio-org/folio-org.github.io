@@ -79,7 +79,7 @@ git push https://github.com/folio-org/mod-new
 
 The [usual](/guidelines/create-new-repo/) Settings, access for relevant teams, branch protection, required status checks, etc.
 
-The actual status checks can only be enabled after the first pull request.
+The actual status checks can only be enabled after the first pull request, and must be done within a few days of creating the PR.
 
 For guidance, follow the settings of the old one.
 
