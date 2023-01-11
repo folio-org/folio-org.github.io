@@ -493,7 +493,7 @@
       ],
       "generator": "api_doc.py 1.4.2"
     },
-    "name": "mod-data-import-converter-storage",
+    "name": "mod-di-converter-storage",
     "org": "folio-org"
   },
   {
