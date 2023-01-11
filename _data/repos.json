@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-01-03T01:13:50.756401+00:00"
+    "generatedDateTime": "2023-01-11T00:12:50.833503+00:00"
   },
   "repos": [
     {
@@ -774,17 +774,6 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Data import converter storage",
-      "docDirName": null,
-      "name": "mod-data-import-converter-storage",
-      "org": "folio-org",
-      "ramlDirName": "ramls",
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>Data Import Converter Storage.</p>"
-    },
-    {
-      "defaultBranch": "master",
       "description": "Glint server module wrapper for FOLIO",
       "docDirName": null,
       "name": "mod-datasets",
@@ -793,6 +782,17 @@
       "repoLanguageHint": "other",
       "repoType": "backend-mod",
       "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Data import converter storage",
+      "docDirName": null,
+      "name": "mod-di-converter-storage",
+      "org": "folio-org",
+      "ramlDirName": "ramls",
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Data Import Converter Storage.</p>"
     },
     {
       "defaultBranch": "main",
