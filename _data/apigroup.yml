@@ -78,7 +78,6 @@ data-import:
     - mod-data-import
     - mod-di-converter-storage
     - mod-data-export-spring
-    - mod-data-export-spring-migrated
     - mod-data-export-worker
     - mod-data-export
     - mod-source-record-manager
