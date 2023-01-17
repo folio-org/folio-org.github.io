@@ -192,7 +192,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "folio-spring-base",
     "org": "folio-org"
@@ -1321,7 +1321,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-quick-marc",
     "org": "folio-org"
@@ -1338,7 +1338,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-remote-storage",
     "org": "folio-org"
