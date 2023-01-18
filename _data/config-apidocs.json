@@ -582,7 +582,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-erm-usage-harvester",
     "org": "folio-org"
