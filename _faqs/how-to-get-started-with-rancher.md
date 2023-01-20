@@ -339,7 +339,7 @@ Q: How can multiple instances of the same module version be deployed and registe
 ### UI Q&A
 
 Q: How to build, deploy, and register a UI bundle which includes a particular branch of a front-end module (e.g. `ui-users/feature-A`)?
-  + Clone the 'platform-core' or 'platform-complete' repository, in 'package.json' file, add/change "@folio/ui-users": "git://github.com/folio-org/ui-users.git#feature-A", Then build and deploy the docker image into the Rancher.
+  + Clone the 'platform-complete' repository, in 'package.json' file, add/change "@folio/ui-users": "git://github.com/folio-org/ui-users.git#feature-A", Then build and deploy the docker image into the Rancher.
 
 Q: How to run more than one bundle (e.g. one with `ui-users/feature-A` and one with `ui-users/feature-B`) for the same tenant?
   + Deploy two or more UI bundle images. Do override Ingress URL for each bundle by utilizing '`answers`'.

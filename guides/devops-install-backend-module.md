@@ -51,8 +51,7 @@ With this, the relevant back-end modules are automatically included.
 
 However often the front-end and back-end are not yet ready for each other.
 
-If so, then temporarily add the new back-end module to the `install-extras.json` file of the "snapshot" branch of the relevant platform.
-(Note that "core" modules are added to both platform-core and platform-complete.)
+If so, then temporarily add the new back-end module to the `install-extras.json` file of the "snapshot" branch of platform-complete.
 
 After the back-end development is eventually ready, then a front-end module will require this module.
 When that happens, then the backend module will be automatically included via the normal process, so it can then be removed from this `install-extras.json` file.
