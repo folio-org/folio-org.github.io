@@ -19,8 +19,7 @@ jobs:
 
     - name: pull-request
       id: open-pr
-      # uses: repo-sync/pull-request@v2
-      uses: m4heshd/pull-request@special-char-fix
+      uses: repo-sync/pull-request@v2
       with:
         destination_branch: "master"
         pr_title: "Auto: Update data for config apidocs"
