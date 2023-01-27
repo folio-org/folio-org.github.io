@@ -229,7 +229,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-audit",
     "org": "folio-org"
@@ -650,7 +650,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-feesfines",
     "org": "folio-org"
@@ -908,7 +908,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-inventory-update",
     "org": "folio-org"
@@ -1248,7 +1248,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-patron",
     "org": "folio-org"
