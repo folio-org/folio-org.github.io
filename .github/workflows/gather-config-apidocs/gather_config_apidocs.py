@@ -26,7 +26,7 @@ from time import sleep
 import requests
 import yaml
 
-SCRIPT_VERSION = "1.5.1"
+SCRIPT_VERSION = "1.6.0"
 
 LOGLEVELS = {
     "debug": logging.DEBUG,
@@ -151,6 +151,10 @@ def store_config(output_json):
                 ep["methods"] = " ".join(methods_fixed)
             ep["name"] = config["name"]
             ep["path"] = endpoint["path"]
+            try:
+                ep["interface"] = endpoint["interface"]
+            except KeyError:
+                pass
             endpoints_list.append(ep)
         del config["endpoints"]
     endpoints_sorted = sorted(endpoints_list, key=lambda x : x["path"].lower())
