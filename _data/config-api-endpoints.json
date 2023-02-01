@@ -5154,6 +5154,13 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
+    "methods": "get:operation/getAuthorityLinksStats",
+    "name": "mod-entities-links",
+    "path": "/links/authority/stats"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
     "methods": "get:operation/getInstanceLinks put:operation/updateInstanceLinks",
     "name": "mod-entities-links",
     "path": "/links/instances/{instanceId}"
