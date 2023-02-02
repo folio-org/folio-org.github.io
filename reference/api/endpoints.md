@@ -34,10 +34,14 @@ See [Further information](#further-information).
 
 Listed endpoints count: {{ site.data.config-api-endpoints.size }}
 
+<button type="button" data-column="#ep-interface">Show/Hide column "Interface"</button>
+  [explain](#interfaces)
+
 <table class="sortable asc">
   <thead>
     <tr>
       <th title="Endpoint methods" class="no-sort"> Methods </th>
+      <th id="ep-interface" title="Endpoint interface" class="hidden-column"> Interface </th>
       <th id="ep-path" title="Endpoint path"> Path </th>
       <th id="api-doc" title="API documentation"> API documentation </th>
     </tr>
@@ -67,6 +71,7 @@ Listed endpoints count: {{ site.data.config-api-endpoints.size }}
   {%- endcapture -%}
   <tr>
     <td> {{ method_links }} </td>
+    <td class="hidden-column"> {{ item.interface }} </td>
     <td> {{ item.path }} </td>
     <td> {{ link }} </td>
   </tr>
