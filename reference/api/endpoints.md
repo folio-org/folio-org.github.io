@@ -34,10 +34,14 @@ See [Further information](#further-information).
 
 Listed endpoints count: {{ site.data.config-api-endpoints.size }}
 
+<button type="button" data-column="#ep-interface">Show/Hide column "Interface"</button>
+  [explain](#interfaces)
+
 <table class="sortable asc">
   <thead>
     <tr>
       <th title="Endpoint methods" class="no-sort"> Methods </th>
+      <th id="ep-interface" title="Endpoint interface" class="hidden-column"> Interface </th>
       <th id="ep-path" title="Endpoint path"> Path </th>
       <th id="api-doc" title="API documentation"> API documentation </th>
     </tr>
@@ -67,6 +71,7 @@ Listed endpoints count: {{ site.data.config-api-endpoints.size }}
   {%- endcapture -%}
   <tr>
     <td> {{ method_links }} </td>
+    <td class="hidden-column"> {{ item.interface }} </td>
     <td> {{ item.path }} </td>
     <td> {{ link }} </td>
   </tr>
@@ -81,6 +86,20 @@ Listed endpoints count: {{ site.data.config-api-endpoints.size }}
       el.click()
     }
   })
+// https://codereview.stackexchange.com/a/83847
+// Flambino 2015-03-11 https://creativecommons.org/licenses/by-sa/3.0/
+// global click handler for any element with a "data-column" attribute
+$("[data-column]").on("click", function () {
+  var button = $(this),                   // the element that was clicked
+      header = $(button.data("column")),  // the cell referenced by the button
+      table = header.closest("table"),    // the table in which the cell resides
+      index = header.index() + 1,         // convert to CSS's 1-based indexing
+      selector = "tbody tr td:nth-child(" + index + ")",  // selector for all body cells in the column
+      column = table.find(selector).add(header); // all cells in the column
+
+  // toggle the "hidden" class on all the column cells
+  column.toggleClass("hidden-column");
+});
 </script>
 
 ## Further information
@@ -97,8 +116,16 @@ That is because their API description has omitted the "`operationId`" property f
 
 {{ modulesMissingMethod | uniq | join: ", " }}
 
-### Further development
+### Interfaces
 
-Intend to add a column with information about which "interface".
+When the API documentation is generated (as explained in the above section [Gathered lists](#gathered-lists)) then the module's set of endpoints is extracted from the API model.
+The set of "pathPattern" is extracted from its ModuleDescriptor.
+If there is a match for the endpoint path, then the "interface" name is recorded.
+The correlation is handled via [folio-tools/api-doc](https://github.com/folio-org/folio-tools/blob/master/api-doc/api_doc.py) (search for "interface").
+
+Show the table column "Interface" and sort by that column.
+For example, see the set of modules that implement the "`_timer`" interface.
+
+Sort by the column "API Documentation" and see the interfaces for a particular module, e.g. mod-permissions.
 
 <div class="folio-spacer-content"></div>
