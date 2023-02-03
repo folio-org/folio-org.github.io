@@ -106,7 +106,7 @@ $("[data-column]").on("click", function () {
 
 ### Gathered lists
 
-The list of endpoints is gathered and published during the CI [generation](/reference/api/#generated-during-ci) of each module's API documentation, when there is a merge to their mainline branch.
+The list of endpoints (also known as "entry-points") is gathered and published during the CI [generation](/reference/api/#generated-during-ci) of each module's API documentation, when there is a merge to their mainline branch.
 A daily Workflow [assembles](/reference/api/#explain-gather-config) the published lists of endpoints.
 
 ### Some missing links
