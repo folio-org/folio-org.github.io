@@ -98,7 +98,7 @@ $("[data-column]").on("click", function () {
       column = table.find(selector).add(header); // all cells in the column
 
   // toggle the "hidden" class on all the column cells
-  column.toggleClass("hidden");
+  column.toggleClass("hidden-column");
 });
 </script>
 
