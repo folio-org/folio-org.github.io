@@ -266,12 +266,12 @@
     {
       "name": "mod-inventory-storage",
       "nameRepo": "mod-inventory-storage",
-      "releaseDate": "2022-12-09T17:16:17+00:00",
-      "releaseName": "v25.0.3",
-      "releaseSha": "1887234368c0ec328ad1f0927c9a5474b715c013",
-      "releaseTag": "v25.0.3",
-      "releaseTarget": "b25.0",
-      "version": "25.0.3"
+      "releaseDate": "2023-01-20T15:57:22+00:00",
+      "releaseName": "",
+      "releaseSha": "483edcfec08cc401753bf20317ef0381ffda78de",
+      "releaseTag": "v25.0.4",
+      "releaseTarget": "master",
+      "version": "25.0.4"
     },
     {
       "name": "mod-inventory-update",
