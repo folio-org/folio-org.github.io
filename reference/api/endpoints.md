@@ -86,6 +86,20 @@ Listed endpoints count: {{ site.data.config-api-endpoints.size }}
       el.click()
     }
   })
+// https://codereview.stackexchange.com/a/83847
+// Flambino 2015-03-11 https://creativecommons.org/licenses/by-sa/3.0/
+// global click handler for any element with a "data-column" attribute
+$("[data-column]").on("click", function () {
+  var button = $(this),                   // the element that was clicked
+      header = $(button.data("column")),  // the cell referenced by the button
+      table = header.closest("table"),    // the table in which the cell resides
+      index = header.index() + 1,         // convert to CSS's 1-based indexing
+      selector = "tbody tr td:nth-child(" + index + ")",  // selector for all body cells in the column 
+      column = table.find(selector).add(header); // all cells in the column
+
+  // toggle the "hidden" class on all the column cells
+  column.toggleClass("hidden");
+});
 </script>
 
 ## Further information
