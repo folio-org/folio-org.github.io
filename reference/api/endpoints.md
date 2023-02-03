@@ -116,8 +116,16 @@ That is because their API description has omitted the "`operationId`" property f
 
 {{ modulesMissingMethod | uniq | join: ", " }}
 
-### Further development
+### Interfaces
 
-Intend to add a column with information about which "interface".
+When the API documentation is generated (as explained in the above section [Gathered lists](#gathered-lists)) then the module's set of endpoints is extracted from the API model.
+The set of "pathPattern" is extracted from its ModuleDescriptor.
+If there is a match for the endpoint path, then the "interface" name is recorded.
+The correlation is handled via [folio-tools/api-doc](https://github.com/folio-org/folio-tools/blob/master/api-doc/api_doc.py) (search for "interface").
+
+Show the table column "Interface" and sort by that column.
+For example, see the set of modules that implement the "`_timer`" interface.
+
+Sort by the column "API Documentation" and see the interfaces for a particular module, e.g. mod-permissions.
 
 <div class="folio-spacer-content"></div>
