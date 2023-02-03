@@ -35,6 +35,8 @@ or
 1. Use [InstitutionalUserHelper](src/main/java/org/folio/edge/core/InstitutionalUserHelper.java) for common/shared tasks like parsing API keys, getting OKAPI tokens, etc.
 1. Extend or use [OkapiClient](src/main/java/org/folio/edge/core/utils/OkapiClient.java) directly for making calls into FOLIO.
 
+   For security reasons be restrictive when setting HTTP headers in requests to Okapi. Do not pass request.headers(), instead use MultiMap.caseInsensitiveMultiMap().add(...) with only required headers.
+
 1. Other bits you may find helpful:
  - A generic [Cache](src/main/java/org/folio/edge/core/cache/Cache.java) class
    (See also: [TokenCache](src/main/java/org/folio/edge/core/cache/TokenCache.java) and
