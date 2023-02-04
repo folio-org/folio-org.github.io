@@ -4,7 +4,7 @@ layout: null
 
 # folio-vertx-lib
 
-Copyright (C) 2021-2022 The Open Library Foundation
+Copyright (C) 2021-2023 The Open Library Foundation
 
 This software is distributed under the terms of the Apache License,
 Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
@@ -176,7 +176,7 @@ Example definition:
     PgCqlDefinition pgCqlDefinition = PgCqlDefinition.create();
     pgCqlDefinition.addField("cql.allRecords", new PgCqlFieldAlwaysMatches());
     pgCqlDefinition.addField("id", new PgCqlFieldUuid());
-    pgCqlDefinition.addField("title", new PgCqlFieldText(true));
+    pgCqlDefinition.addField("title", new PgCqlFieldText().withFullText());
 ```
 
 This definition can then be used in a handler to get books:
@@ -215,6 +215,8 @@ This definition can then be used in a handler to get books:
     }).mapEmpty();
   }
 ```
+
+CQL queries of the form `FIELD=""` have a special meaning; they find all records where the named field is NOT NULL. (This behaviour is the same as in the old RAML Module Builder.) To search for records where the field is present but empty, the double-equal operator can be used: `FIELD==""`.
 
 ## Additional information
 

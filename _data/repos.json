@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-01-11T00:12:50.833503+00:00"
+    "generatedDateTime": "2023-02-03T03:13:31.839358+00:00"
   },
   "repos": [
     {
@@ -431,6 +431,17 @@
       "name": "folio-perf-test",
       "org": "folio-org",
       "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "name": "folio-query-tool-metadata",
+      "org": "folio-org",
+      "repoLanguageHint": "java",
       "repoType": "other",
       "snippetIntro": ""
     },
@@ -890,7 +901,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p><a href='https://github.com/folio-org/mod-eusage-reports'>mod-eusage-reports</a> is a backend module for parsing and storing relationships between COUNTER report lines and KB items, and for storing access statistics (access numbers and cost) for specific periods.</p>"
+      "snippetIntro": "<p><a href='https://github.com/folio-org/mod-eusage-reports'>mod-eusage-reports</a> is a backend module for parsing and storing relationships between COUNTER report lines and KB items, and for storing access statistics (access numbers and cost) for specific periods.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1497,7 +1518,7 @@
     {
       "defaultBranch": "master",
       "description": "Secure global and per-user settings for FOLIO",
-      "docDirName": null,
+      "docDirName": "doc",
       "hintOas": true,
       "name": "mod-settings",
       "org": "folio-org",
