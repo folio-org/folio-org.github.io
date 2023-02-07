@@ -26,6 +26,7 @@ See [Further information](#further-information).
 {% assign urlS3Base = "https://s3.amazonaws.com/foliodocs/api/" %}
 {% assign moduleList = "" | split: ',' %}
 {% assign modulesMissingMethod = "" | split: ',' %}
+{% assign reposNoInterface = "okapi,raml,raml-module-builder,folio-spring-base,folio-vertx-lib" | split: ',' %}
 {% assign moduleCount = 0 %}
 
 {% for repo in site.data.config-apidocs -%}
@@ -69,9 +70,15 @@ Listed endpoints count: {{ site.data.config-api-endpoints.size }}
       {% endif -%}
     {% endfor %}
   {%- endcapture -%}
+  {% assign interface = item.interface | strip %}
+  {% if interface == '' %}
+    {% if reposNoInterface contains item.name or item.name contains 'edge-' %}
+      {% assign interface = "[ not relevant ]" %}
+    {% endif %}
+  {% endif %}
   <tr>
     <td> {{ method_links }} </td>
-    <td class="hidden-column"> {{ item.interface }} </td>
+    <td class="hidden-column"> {{ interface }} </td>
     <td> {{ item.path }} </td>
     <td> {{ link }} </td>
   </tr>
@@ -106,7 +113,7 @@ $("[data-column]").on("click", function () {
 
 ### Gathered lists
 
-The list of endpoints is gathered and published during the CI [generation](/reference/api/#generated-during-ci) of each module's API documentation, when there is a merge to their mainline branch.
+The list of endpoints (also known as "entry-points") is gathered and published during the CI [generation](/reference/api/#generated-during-ci) of each module's API documentation, when there is a merge to their mainline branch.
 A daily Workflow [assembles](/reference/api/#explain-gather-config) the published lists of endpoints.
 
 ### Some missing links
