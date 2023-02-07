@@ -5133,7 +5133,7 @@
   {
     "apiDescription": "ramls/bound-with-part.raml",
     "apiType": "raml",
-    "interface": "bound-with-parts-storage 1.0",
+    "interface": "bound-with-parts-storage 1.1",
     "methods": "get:inventory_storage_bound_with_parts_get post:inventory_storage_bound_with_parts_post",
     "name": "mod-inventory-storage",
     "path": "/inventory-storage/bound-with-parts"
@@ -5141,10 +5141,18 @@
   {
     "apiDescription": "ramls/bound-with-part.raml",
     "apiType": "raml",
-    "interface": "bound-with-parts-storage 1.0",
+    "interface": "bound-with-parts-storage 1.1",
     "methods": "delete:inventory_storage_bound_with_parts__id__delete get:inventory_storage_bound_with_parts__id__get put:inventory_storage_bound_with_parts__id__put",
     "name": "mod-inventory-storage",
     "path": "/inventory-storage/bound-with-parts/{id}"
+  },
+  {
+    "apiDescription": "ramls/bound-with-part.raml",
+    "apiType": "raml",
+    "interface": "bound-with-parts-storage 1.1",
+    "methods": "put:inventory_storage_bound_withs_put",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-storage/bound-withs"
   },
   {
     "apiDescription": "ramls/async-migration.raml",
@@ -8181,6 +8189,13 @@
     "methods": "delete:statistical_codes__statisticalcodeid__delete get:statistical_codes__statisticalcodeid__get put:statistical_codes__statisticalcodeid__put",
     "name": "mod-inventory-storage",
     "path": "/statistical-codes/{statisticalCodeId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/authority-control.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/stub"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bursar-export.yaml",
