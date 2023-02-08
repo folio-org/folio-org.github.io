@@ -247,7 +247,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-authtoken",
     "org": "folio-org"
@@ -1617,7 +1617,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "raml-module-builder",
     "org": "folio-org"
