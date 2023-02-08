@@ -10,9 +10,10 @@ faqOrder: 3
 The on-line [API documentation](/reference/api/) explains the data that modules expect and return on their APIs.
 The associated list of [endpoints](/reference/api/endpoints/) will also assist.
 
+See Wiki [Working with FOLIO APIs](https://wiki.folio.org/display/FOLIOtips/Working+with+FOLIO+APIs).
 Get help in the [FOLIO Slack](/guidelines/which-forum/#slack) #learning-apis channel.
 
-To connect to the APIs there are several software options:
+To connect to the APIs, there are several software options:
 
 ## curl
 
