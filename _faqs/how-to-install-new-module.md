@@ -4,7 +4,7 @@ title: How to install new module to platform and reference environments
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: development-tips
-faqOrder: 7
+faqOrder: 8
 ---
 
 When a new module has been commenced and its artifacts are being deployed by CI, then follow the guides [Install a new front-end module to a platform](/guides/install-frontend-module/) and [Install a new back-end module](/guides/install-backend-module/) to add to snapshot reference environment builds.
