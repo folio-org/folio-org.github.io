@@ -159,6 +159,10 @@ mod-source-record-manager:
   urlsOther:
     - https://github.com/folio-org/mod-source-record-manager/tree/master/mod-source-record-manager-server/src/main/resources/rules
 
+mod-user-import:
+  urlsOther:
+    - https://wiki.folio.org/display/FOLIOtips/Creating+Staff+Users+with+Service+Points%2C+Permissions+and+Passwords+using+API+calls
+
 edge-common:
   urlsOther:
     - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-commonFramework
