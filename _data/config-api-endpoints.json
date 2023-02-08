@@ -5195,22 +5195,6 @@
     "path": "/inventory-upsert-hrid/fetch/{id}"
   },
   {
-    "apiDescription": "ramls/instance-set.raml",
-    "apiType": "raml",
-    "interface": "inventory-view-instance-set 2.0",
-    "methods": "get:inventory_view_instance_set_get",
-    "name": "mod-inventory-storage",
-    "path": "/inventory-view/instance-set"
-  },
-  {
-    "apiDescription": "ramls/inventory-view.raml",
-    "apiType": "raml",
-    "interface": "inventory-view 2.0",
-    "methods": "get:inventory_view_instances_get",
-    "name": "mod-inventory-storage",
-    "path": "/inventory-view/instances"
-  },
-  {
     "apiDescription": "ramls/inventory-config.raml",
     "apiType": "raml",
     "interface": "inventory-config 0.2",
