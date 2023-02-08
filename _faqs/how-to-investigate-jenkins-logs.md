@@ -4,7 +4,7 @@ title: How to investigate Jenkins build logs
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: development-tips
-faqOrder: 12
+faqOrder: 13
 ---
 
 When a Jenkins build job fails (for example when building the reference environments, or build-platform-complete-snapshot) then developers will need to investigate the Jenkins output logfile.

@@ -4,7 +4,7 @@ title: How to get started with Rancher environment
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: development-tips
-faqOrder: 9
+faqOrder: 10
 ---
 
 ## Introduction

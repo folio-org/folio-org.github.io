@@ -46,12 +46,12 @@
     {
       "name": "mod-circulation",
       "nameRepo": "mod-circulation",
-      "releaseDate": "2022-12-13T04:09:33+00:00",
-      "releaseName": "v23.3.2",
-      "releaseSha": "f2a076462a4af5760ba7fb3d4ba70c18fc66c6f8",
-      "releaseTag": "v23.3.2",
+      "releaseDate": "2023-01-27T14:53:31+00:00",
+      "releaseName": "v23.3.3",
+      "releaseSha": "335559ee7294ca0cecac66bd1094153822124680",
+      "releaseTag": "v23.3.3",
       "releaseTarget": "master",
-      "version": "23.3.2"
+      "version": "23.3.3"
     },
     {
       "name": "mod-circulation-storage",
@@ -176,12 +176,12 @@
     {
       "name": "mod-erm-usage-harvester",
       "nameRepo": "mod-erm-usage-harvester",
-      "releaseDate": "2022-10-24T19:37:48+00:00",
+      "releaseDate": "2023-01-27T11:26:58+00:00",
       "releaseName": "",
-      "releaseSha": "e3eb49d6962433de186c5723cf636cd3eb977b80",
-      "releaseTag": "v4.2.0",
+      "releaseSha": "9d7cf463a99644cc6ca0335cd68637711f5952ac",
+      "releaseTag": "v4.2.1",
       "releaseTarget": "master",
-      "version": "4.2.0"
+      "version": "4.2.1"
     },
     {
       "name": "mod-eusage-reports",

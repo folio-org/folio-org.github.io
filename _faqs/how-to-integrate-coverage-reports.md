@@ -4,7 +4,7 @@ title: How to integrate code coverage reports with SonarQube
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: development-tips
-faqOrder: 10
+faqOrder: 11
 ---
 
 ## Introduction

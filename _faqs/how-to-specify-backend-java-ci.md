@@ -4,7 +4,7 @@ title: How to specify which Jenkins build image for CI
 titleLeader: "FAQ |"
 menuTopTitle: Guides
 categories: development-tips
-faqOrder: 11
+faqOrder: 12
 ---
 
 Back-end Java-based modules can specify which build image to use during the Jenkins continuous integration builds.
