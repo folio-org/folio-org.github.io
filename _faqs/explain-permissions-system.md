@@ -17,5 +17,6 @@ and the [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/mast
 * [Permission Set Guidelines](https://wiki.folio.org/display/DD/Permission+Set+Guidelines)
 * [Naming conventions](/guidelines/naming-conventions/)
 * [Introduction to FOLIO Permissions](https://wiki.folio.org/display/FOLIOtips/Introduction+to+FOLIO+Permissions)
-* [Platform Essentials -- Permissions](https://docs.folio.org/docs/platform-essentials/permissions/) (Note: 2022-10-28 seems to be only in morning-glory docs)
+* [Platform Essentials -- Permissions](https://docs.folio.org/docs/platform-essentials/permissions/)
+* [Working with invisible permissions](https://wiki.folio.org/display/FOLIOtips/Working+with+invisible+permissions)
 
