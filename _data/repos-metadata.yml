@@ -56,9 +56,6 @@ ui-data-import:
   urlAppSettings: https://docs.folio.org/docs/settings/settings_data_import/settings_data_import/
   spaceUserDocs: metadata/data-import/
 
-ui-developer:
-  urlAppSettings: https://wiki.folio.org/display/FOLIOtips/Settings+-+Developer
-
 ui-eholdings:
   urlAppSettings: https://docs.folio.org/docs/settings/settings_eholdings/settings_eholdings/
   spaceUserDocs: erm/eholdings/
