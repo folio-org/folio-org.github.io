@@ -1438,6 +1438,14 @@
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
     "interface": "bulk-operations 1.0",
+    "methods": "get:operation/downloadFileByOperationId",
+    "name": "mod-bulk-operations",
+    "path": "/bulk-operations/{operationId}/download"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
+    "apiType": "oas",
+    "interface": "bulk-operations 1.0",
     "methods": "get:operation/getErrorsPreviewByOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/errors"
@@ -1446,25 +1454,9 @@
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
     "interface": "bulk-operations 1.0",
-    "methods": "get:operation/downloadErrorsByOperationId",
-    "name": "mod-bulk-operations",
-    "path": "/bulk-operations/{operationId}/errors/download"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
-    "apiType": "oas",
-    "interface": "bulk-operations 1.0",
     "methods": "get:operation/getPreviewByOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/preview"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
-    "apiType": "oas",
-    "interface": "bulk-operations 1.0",
-    "methods": "get:operation/downloadPreviewByOperationId",
-    "name": "mod-bulk-operations",
-    "path": "/bulk-operations/{operationId}/preview/download"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
