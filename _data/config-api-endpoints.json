@@ -5729,6 +5729,14 @@
     "path": "/links/instances/{instanceId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
+    "interface": "linked-bib-update-statistics 1.0",
+    "methods": "get:operation/getLinkedBibUpdateStats",
+    "name": "mod-entities-links",
+    "path": "/links/stats/instance"
+  },
+  {
     "apiDescription": "ramls/loan-anonymization.raml",
     "apiType": "raml",
     "interface": "loan-anonymization 0.1",
