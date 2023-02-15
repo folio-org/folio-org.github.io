@@ -32,7 +32,7 @@ import requests
 import sh
 import yaml
 
-SCRIPT_VERSION = "1.4.1"
+SCRIPT_VERSION = "1.5.0"
 
 LOGLEVELS = {
     "debug": logging.DEBUG,
@@ -167,7 +167,7 @@ def do_jd(file_1_pn, file_2_pn):
     status = True
     result = ""
     try:
-        result = sh.jd(file_1_pn, file_2_pn, _ok_code=[0,1]).stdout.decode().strip()
+        result = sh.jd(file_1_pn, file_2_pn, _ok_code=[0,1])
     except sh.ErrorReturnCode as err:
         logger.error("Trouble doing jd: %s", err.stderr.decode())
         status = False
