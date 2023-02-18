@@ -7889,6 +7889,7 @@
   {
     "apiDescription": "ramls/saml-login.raml",
     "apiType": "raml",
+    "interface": "login-saml 2.0",
     "methods": "options:saml_callback_options post:saml_callback_post",
     "name": "mod-login-saml",
     "path": "/saml/callback"
@@ -7896,6 +7897,7 @@
   {
     "apiDescription": "ramls/saml-login.raml",
     "apiType": "raml",
+    "interface": "login-saml 2.0",
     "methods": "get:saml_check_get",
     "name": "mod-login-saml",
     "path": "/saml/check"
@@ -7903,6 +7905,7 @@
   {
     "apiDescription": "ramls/saml-login.raml",
     "apiType": "raml",
+    "interface": "login-saml 2.0",
     "methods": "get:saml_configuration_get put:saml_configuration_put",
     "name": "mod-login-saml",
     "path": "/saml/configuration"
@@ -7910,6 +7913,7 @@
   {
     "apiDescription": "ramls/saml-login.raml",
     "apiType": "raml",
+    "interface": "login-saml 2.0",
     "methods": "options:saml_login_options post:saml_login_post",
     "name": "mod-login-saml",
     "path": "/saml/login"
@@ -7917,6 +7921,7 @@
   {
     "apiDescription": "ramls/saml-login.raml",
     "apiType": "raml",
+    "interface": "login-saml 2.0",
     "methods": "get:saml_regenerate_get",
     "name": "mod-login-saml",
     "path": "/saml/regenerate"
@@ -7924,6 +7929,7 @@
   {
     "apiDescription": "ramls/saml-login.raml",
     "apiType": "raml",
+    "interface": "login-saml 2.0",
     "methods": "get:saml_validate_get",
     "name": "mod-login-saml",
     "path": "/saml/validate"
