@@ -25,7 +25,7 @@ It is also possible to utilise a box in conjunction with local development versi
 See the [explanations](https://github.com/folio-org/folio-ansible/blob/master/doc/index.md) for each of the available boxes.
 The main ones of interest at this stage are: folio/snapshot, and folio/release
 
-The guide to [Software Build Pipeline](/guides/automation/#software-build-pipeline) further explains the process, what time of day each is built, and links to the public interfaces.
+The guide to [Software Build Pipeline](/guides/automation/#software-build-pipeline) further explains the process, what time of day each is built, and links to the public [reference environments](/guides/automation/#reference-environments).
 
 The [Primer for front-end development](/start/primer-develop-frontend/) leads to some guides for establishing a front-end developer's environment.
 
@@ -104,6 +104,7 @@ Generate and load user sample data.
 
 For guidance follow some other developers and their local deployment facilities:
 Okapi's [doc/okapi-examples.sh](https://github.com/folio-org/okapi/blob/master/doc/okapi-examples.sh) script and Guide;
+the [mod-settings](https://github.com/folio-org/mod-settings/blob/master/scripts/run-mod-settings.sh) run-mod-settings.sh script;
 the [mod-notes](https://github.com/folio-org/mod-notes) run.sh script;
 the [mod-inventory running](https://github.com/folio-org/mod-inventory#running) scripts;
 the scripts provided in [Tutorials : Using a FOLIO virtual machine](/tutorials/folio-vm/);

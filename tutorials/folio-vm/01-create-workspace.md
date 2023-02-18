@@ -35,8 +35,8 @@ Note: As <a href="/tutorials/folio-vm/overview/#old-vm">explained</a>
 in the Overview, the "release-core" VM is out-of-date.
 </div>
 
-If you decide to use a larger VM instead, then modify the instructions in the [previous section](#create-local-workspace).
-Also modify the generated Vagrantfile to enable more memory (perhaps 24 MiB):
+If you decide to use a larger VM instead (e.g. `folio/snapshot`) then modify the instructions in the [previous section](#create-local-workspace).
+Also modify the generated Vagrantfile to enable more memory (perhaps 24 MiB or maybe more):
 
 ```
 Vagrant.configure("2") do |config|
