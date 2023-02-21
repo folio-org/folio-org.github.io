@@ -746,7 +746,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-finc-config",
     "org": "folio-org"
@@ -781,7 +782,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-idm-connect",
     "org": "folio-org"
