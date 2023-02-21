@@ -215,7 +215,7 @@ Similarly each row of a module's documentation table (e.g. [#mod-circulation-cha
 
 ### Which module/interface/endpoint {#module-interface-endpoint}
 
-* See the gather list of [endpoints](/reference/api/endpoints/).
+* See the gathered list of [endpoints](/reference/api/endpoints/).
 * See assistance for [How to determine which module handles which interface and endpoint](/faqs/how-to-which-module-which-interface-endpoint/).
 
 ### Other notes

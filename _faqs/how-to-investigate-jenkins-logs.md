@@ -28,5 +28,10 @@ cat ~/Downloads/consoleText | egrep "failed:|fatal:" > tmp2
 ```
 
 Now inspect those temporary files.
+
+Sometimes it is possible to strip away the leading text from the error message to leave only the JSON, then pretty-print with jq.
+
+If it is a reference environment build, then can [obtain](/faqs/how-to-obtain-refenv-logs/) specific module logs and okapi logs.
+
 Report the problems to the relevant project issue tracker.
 
