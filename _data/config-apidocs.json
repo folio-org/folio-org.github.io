@@ -281,7 +281,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-calendar",
     "org": "folio-org"
@@ -377,7 +377,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-copycat",
     "org": "folio-org"
@@ -746,7 +746,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-finc-config",
     "org": "folio-org"
@@ -781,7 +782,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-idm-connect",
     "org": "folio-org"
@@ -1021,7 +1023,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-licenses",
     "org": "folio-org"
@@ -1054,7 +1057,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-login-saml",
     "org": "folio-org"
@@ -1215,7 +1219,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-organizations-storage",
     "org": "folio-org"
