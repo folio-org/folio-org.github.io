@@ -166,12 +166,12 @@
     {
       "name": "mod-erm-usage",
       "nameRepo": "mod-erm-usage",
-      "releaseDate": "2022-11-21T12:16:54+00:00",
+      "releaseDate": "2023-02-20T11:09:33+00:00",
       "releaseName": "",
-      "releaseSha": "51863ad3910dda23de939d03c881249249bb5dcd",
-      "releaseTag": "v4.5.1",
+      "releaseSha": "2564ec2eb615150214afab0145827facd7d8395f",
+      "releaseTag": "v4.5.2",
       "releaseTarget": "master",
-      "version": "4.5.1"
+      "version": "4.5.2"
     },
     {
       "name": "mod-erm-usage-harvester",
