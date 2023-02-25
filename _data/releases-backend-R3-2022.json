@@ -46,12 +46,12 @@
     {
       "name": "mod-circulation",
       "nameRepo": "mod-circulation",
-      "releaseDate": "2023-01-27T14:53:31+00:00",
-      "releaseName": "v23.3.3",
-      "releaseSha": "335559ee7294ca0cecac66bd1094153822124680",
-      "releaseTag": "v23.3.3",
+      "releaseDate": "2023-02-22T12:22:37+00:00",
+      "releaseName": "v23.3.4",
+      "releaseSha": "0c6f76b520df2ae1b583e1a623bbd02f32f85995",
+      "releaseTag": "v23.3.4",
       "releaseTarget": "master",
-      "version": "23.3.3"
+      "version": "23.3.4"
     },
     {
       "name": "mod-circulation-storage",
@@ -156,12 +156,12 @@
     {
       "name": "mod-email",
       "nameRepo": "mod-email",
-      "releaseDate": "2022-11-17T19:02:03+00:00",
-      "releaseName": "v1.15.2",
-      "releaseSha": "330386177a2daacb34b35fbd53fcbfb4a768d012",
-      "releaseTag": "v1.15.2",
+      "releaseDate": "2023-02-23T12:33:31+00:00",
+      "releaseName": "v1.15.3 2023-02-23",
+      "releaseSha": "18561dbdee22f0881662fa6e1a6b3bd4170b5089",
+      "releaseTag": "v1.15.3",
       "releaseTarget": "master",
-      "version": "1.15.2"
+      "version": "1.15.3"
     },
     {
       "name": "mod-erm-usage",
