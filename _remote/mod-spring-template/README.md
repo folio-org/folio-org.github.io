@@ -417,7 +417,14 @@ Some are listed below (and see the [full set](https://docs.spring.io/spring-boot
 - `/admin/liquibase` -- The liquibase endpoint provides information about database change sets applied by Liquibase.
 - `/admin/health` -- Returns status code 200 as long as service is up.
 
+## Open EntityManager in View pattern
+Check if the Open EntityManager in View functionality is needed for your module. If it is not needed disable it because it is enabled by default.
 
+See details:
+
+https://docs.spring.io/spring-boot/docs/current/reference/html/data.html#data.sql.jpa-and-spring-data.open-entity-manager-in-view
+
+https://www.baeldung.com/spring-open-session-in-view
 
 ## Notes
 
