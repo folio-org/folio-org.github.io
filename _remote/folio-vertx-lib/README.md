@@ -63,7 +63,7 @@ public class MainVerticle extends AbstractVerticle {
     HttpServerOptions so = new HttpServerOptions()
         .setHandle100ContinueAutomatically(true);
     // combine all routes and start server
-    RouterCreator.mountAll(vertx, routerCreators)
+    RouterCreator.mountAll(vertx, routerCreators, "mod-mymodule")
         .compose(router ->
             vertx.createHttpServer(so)
                 .requestHandler(router)
@@ -240,7 +240,7 @@ Generated [API documentation](https://dev.folio.org/reference/api/#folio-vertx-l
 
 ### Code analysis
 
-[SonarQube analysis](https://sonarcloud.io/project/overview?id=org.folio%3Avertx-lib)
+[SonarQube analysis](https://sonarcloud.io/project/overview?id=org.folio%3Afolio-vertx-lib)
 
 ### Download and configuration
 
