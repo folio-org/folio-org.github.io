@@ -346,11 +346,10 @@ It must have a single priority line and a single fallback-policy line.
 
 ## Loan Rules UX Design Video
 
-The video from May 2017 explains the user experience (UX) design of the loan rules.
+[This video from May 2017](https://vimeo.com/219433830?embedded=true&source=video_title&owner=67116078)
+explains the user experience (UX) design of the loan rules.
 The general principles still apply but note that some aspects have changed since then
 or haven't been implemented yet.
-
-[https://discuss.folio.org/t/loan-rules-ux-iteration-4/834](https://discuss.folio.org/t/loan-rules-ux-iteration-4/834)
 
 * 00:08 What is a loan policy?
 * 00:26 What does a loan policy contain?

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-02-03T03:13:31.839358+00:00"
+    "generatedDateTime": "2023-02-27T01:31:40.973664+00:00"
   },
   "repos": [
     {
@@ -11,7 +11,10 @@
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "raml-shared",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -34,7 +37,10 @@
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "raml-shared",
-      "snippetIntro": "<p>This repository contains json schemas and examples for entities involved in data-import flow. It is utilized as a git submodule ('raml-storage' directory) in each of the following repositories:</p>"
+      "snippetIntro": "<p>This repository contains json schemas and examples for entities involved in data-import flow. It is utilized as a git submodule ('raml-storage' directory) in each of the following repositories:</p>",
+      "workflows": [
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -953,7 +959,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This is the user-facing, business logic module for finances, which is comprised of this module and mod-finance-storage.</p>"
+      "snippetIntro": "<p>This is the user-facing, business logic module for finances, which is comprised of this module and mod-finance-storage.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -967,7 +983,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This RMB-module is responsible for the persistence of finance-related data (i.e. funds, ledgers, transactions, etc.)</p>"
+      "snippetIntro": "<p>This RMB-module is responsible for the persistence of finance-related data (i.e. funds, ledgers, transactions, etc.)</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1260,7 +1286,15 @@
       "repoType": "backend-mod",
       "snippetIntro": "<p>This is the Orders business logic module.</p>",
       "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml",
         "buildMaven.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
       ]
     },
     {
@@ -1275,7 +1309,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This is the Orders storage module.</p>"
+      "snippetIntro": "<p>This is the Orders storage module.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1637,7 +1681,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Module to provide central user management for FOLIO systems.</p>"
+      "snippetIntro": "<p>Module to provide central user management for FOLIO systems.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -3316,7 +3370,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui-plugin",
-      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>query-builder</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='query-builder'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>"
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>query-builder</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='query-builder'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
