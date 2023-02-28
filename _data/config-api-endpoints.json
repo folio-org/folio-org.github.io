@@ -5719,7 +5719,7 @@
   {
     "apiDescription": "ramls/licenses.raml",
     "apiType": "raml",
-    "interface": "licenses ${info.app.minorVersion}",
+    "interface": "licenses",
     "methods": "get:licenses_licenses_get post:licenses_licenses_post",
     "name": "mod-licenses",
     "path": "/licenses/licenses"
@@ -5727,7 +5727,7 @@
   {
     "apiDescription": "ramls/licenses.raml",
     "apiType": "raml",
-    "interface": "licenses ${info.app.minorVersion}",
+    "interface": "licenses",
     "methods": "get:licenses_licenses__licenseid__get put:licenses_licenses__licenseid__put",
     "name": "mod-licenses",
     "path": "/licenses/licenses/{licenseId}"
