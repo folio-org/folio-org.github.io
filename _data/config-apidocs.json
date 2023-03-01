@@ -193,7 +193,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "folio-spring-base",
     "org": "folio-org"
@@ -394,7 +394,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-courses",
     "org": "folio-org"
@@ -416,7 +416,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-data-export",
     "org": "folio-org"
@@ -457,7 +457,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-data-export-worker",
     "org": "folio-org"
@@ -1007,7 +1007,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-ldp",
     "org": "folio-org"
@@ -1293,7 +1293,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-permissions",
     "org": "folio-org"
