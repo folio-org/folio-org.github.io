@@ -36,12 +36,12 @@
     {
       "name": "mod-calendar",
       "nameRepo": "mod-calendar",
-      "releaseDate": "2022-12-01T06:15:02+00:00",
-      "releaseName": "v2.3.0",
-      "releaseSha": "d859dc2cf32326f827a9433e32a84efdfa9564e7",
-      "releaseTag": "v2.3.0",
+      "releaseDate": "2023-02-24T14:20:05+00:00",
+      "releaseName": "v2.3.1",
+      "releaseSha": "e603d3389bc6dcc56ca3e1c9829415ad47c7975d",
+      "releaseTag": "v2.3.1",
       "releaseTarget": "master",
-      "version": "2.3.0"
+      "version": "2.3.1"
     },
     {
       "name": "mod-circulation",
@@ -356,12 +356,12 @@
     {
       "name": "mod-ncip",
       "nameRepo": "mod-ncip",
-      "releaseDate": "2022-12-01T18:20:52+00:00",
-      "releaseName": "v1.12.2",
-      "releaseSha": "74260322a7b55cc236f18caf6427299a882a9a35",
-      "releaseTag": "v1.12.2",
+      "releaseDate": "2023-02-24T15:54:01+00:00",
+      "releaseName": "v1.12.3",
+      "releaseSha": "534b76c331629e10bf7bfb49946fcd48aaba8e2c",
+      "releaseTag": "v1.12.3",
       "releaseTarget": "master",
-      "version": "1.12.2"
+      "version": "1.12.3"
     },
     {
       "name": "mod-notes",
