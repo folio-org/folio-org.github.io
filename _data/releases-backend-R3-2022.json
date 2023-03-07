@@ -86,12 +86,12 @@
     {
       "name": "mod-courses",
       "nameRepo": "mod-courses",
-      "releaseDate": "2022-10-28T13:58:45+00:00",
-      "releaseName": "v1.4.6",
-      "releaseSha": "e25bcff81890b5dd1015fdef0431f385d4e86bf9",
-      "releaseTag": "v1.4.6",
+      "releaseDate": "2023-02-24T21:27:47+00:00",
+      "releaseName": "v1.4.7",
+      "releaseSha": "899f995db31455f6d9638811ce767915ae9231b4",
+      "releaseTag": "v1.4.7",
       "releaseTarget": "master",
-      "version": "1.4.6"
+      "version": "1.4.7"
     },
     {
       "name": "mod-data-export",
@@ -316,12 +316,12 @@
     {
       "name": "mod-ldp",
       "nameRepo": "mod-ldp",
-      "releaseDate": "2022-10-28T19:29:21+00:00",
-      "releaseName": "v1.0.7",
-      "releaseSha": "9d7050c187cecca1244d0cff552f67b6ecefcb45",
-      "releaseTag": "v1.0.7",
+      "releaseDate": "2023-02-24T21:25:35+00:00",
+      "releaseName": "v1.0.8",
+      "releaseSha": "8c692fdae2f70a5a898a6118e43888740554044a",
+      "releaseTag": "v1.0.8",
       "releaseTarget": "master",
-      "version": "1.0.7"
+      "version": "1.0.8"
     },
     {
       "name": "mod-licenses",
@@ -586,12 +586,12 @@
     {
       "name": "mod-user-import",
       "nameRepo": "mod-user-import",
-      "releaseDate": "2022-12-06T20:13:31+00:00",
+      "releaseDate": "2023-02-19T14:30:32+00:00",
       "releaseName": "",
-      "releaseSha": "d7cba9d1bd5cc2585b0cb51c0be1a06380c9832b",
-      "releaseTag": "v3.7.1",
+      "releaseSha": "be888abfbb44015b243bfe9a905d86d9b347248f",
+      "releaseTag": "v3.7.2",
       "releaseTarget": "master",
-      "version": "3.7.1"
+      "version": "3.7.2"
     },
     {
       "name": "mod-users",
