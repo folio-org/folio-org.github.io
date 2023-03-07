@@ -310,7 +310,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-circulation",
     "org": "folio-org"
@@ -474,7 +474,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-data-import",
     "org": "folio-org"
@@ -493,7 +493,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-di-converter-storage",
     "org": "folio-org"
@@ -824,7 +824,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-inventory",
     "org": "folio-org"
@@ -1058,7 +1058,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-login-saml",
     "org": "folio-org"
@@ -1114,7 +1114,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-oai-pmh",
     "org": "folio-org"
@@ -1345,7 +1345,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-remote-storage",
     "org": "folio-org"
@@ -1475,7 +1475,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-source-record-storage",
     "org": "folio-org"
@@ -1581,7 +1581,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "okapi",
     "org": "folio-org"
