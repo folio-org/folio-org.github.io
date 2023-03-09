@@ -36,12 +36,12 @@
     {
       "name": "mod-calendar",
       "nameRepo": "mod-calendar",
-      "releaseDate": "2023-02-24T14:20:05+00:00",
-      "releaseName": "v2.3.1",
-      "releaseSha": "e603d3389bc6dcc56ca3e1c9829415ad47c7975d",
-      "releaseTag": "v2.3.1",
+      "releaseDate": "2023-03-07T04:31:07+00:00",
+      "releaseName": "v2.3.2",
+      "releaseSha": "bd6f98ae2c80223244b588b3d96f426dc07fe115",
+      "releaseTag": "v2.3.2",
       "releaseTarget": "master",
-      "version": "2.3.1"
+      "version": "2.3.2"
     },
     {
       "name": "mod-circulation",
