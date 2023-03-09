@@ -28,6 +28,8 @@ Set the "Sprint" field to be "DevOps Requests".
 
 Do not set "Priority" or "Assignee" or "Labels" or a specific numbered "Sprint". Those will be handled and scheduled by the team.
 
+Please do not clone old tickets, as it just tends to make a mess.
+
 For tickets related to the [FOLIO Developers](/) website, do follow the above-mentioned instructions and the additional specific [notes](/faqs/how-to-contribute-devdoc/#raising-jira-tickets).
 
 ## Rancher scratch environments
