@@ -24,6 +24,7 @@ Some FOLIO modules that use this library:
 * [mod-auth-token](https://github.com/folio-org/mod-authtoken)
 * [mod-eusage-reports](https://github.com/folio-org/mod-eusage-reports)
 * [mod-reservoir](https://github.com/folio-org/mod-reservoir)
+* [mod-settings](https://github.com/folio-org/mod-settings)
 
 ## Further documentation
 

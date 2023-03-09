@@ -31,3 +31,6 @@ The FOLIO project is grateful for the support from **Algolia** under the [Algoli
 
 <a href="https://www.kubecost.com/"><img src="/images/Kubecost.png" alt="Kubecost logo" width="254" height="56"></a>\
 The FOLIO project is grateful for the support from **Kubecost**. The FOLIO DevOps team uses Kubecost Enterprise to gain insight into how the hosted development environments are used, and this allows the project to control its AWS expenses.
+
+<a href="https://www.gurock.com/testrail/"><img src="/images/testrail.jpg" alt="Testrail logo" width="250" height="54"></a>\
+The FOLIO project is grateful for the support from **Gurock** for **TestRail**. The FOLIO project uses TestRail to guide the community's world-wide testing efforts during software development and release. Subject matter experts from the libraries log the results of their testing in TestRail for the community's quality assurance team to track and review.
