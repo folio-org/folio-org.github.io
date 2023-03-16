@@ -32,14 +32,6 @@ Some of the important forums to collaborate, discuss FOLIO, interact with other 
   </thead>
   <tbody>
     <tr>
-      <td> <a href="https://discuss.folio.org">discuss.folio.org</a> </td>
-      <td> The discussion area and mailing lists is via Discuss. </td>
-      <td>
-        <a href="/guidelines/which-forum#discuss">How to</a> |
-        Join at front page
-      </td>
-    </tr>
-    <tr>
       <td> <a href="https://wiki.folio.org">wiki.folio.org</a> </td>
       <td>
         Position papers, roadmaps, meeting agendas and minutes, Special Interest Group
@@ -132,7 +124,7 @@ to FOLIO development, for example:
   tests, etc.
 
 - [Which forum](/guidelines/which-forum/) to use for communication:
-  Issue tracker, Slack chat, Discuss discussion, GitHub pull requests.
+  Issue tracker, Slack chat, GitHub pull requests.
   Some guidelines about when to use each, and some useful tips.
 
 - [Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/).
