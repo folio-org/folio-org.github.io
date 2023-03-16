@@ -116,14 +116,11 @@ utilities:
     - mod-quick-marc
     - raml
     - raml-module-builder
-infrastructure:
-  title: Infrastructure
-  description: Gateway, raml-util, RMB, monitoring, etc.
-  modules:
 other:
   title: Other
   description: Not yet grouped.
   modules:
+    - mod-consortia
     - mod-eusage-reports
     - mod-ldp
     - folio-custom-fields

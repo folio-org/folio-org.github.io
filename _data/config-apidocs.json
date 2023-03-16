@@ -99,7 +99,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "edge-oai-pmh",
     "org": "folio-org"
@@ -363,6 +363,23 @@
       "generator": "api_doc.py 1.4.2"
     },
     "name": "mod-configuration",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/swagger.api/consortia.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.1"
+    },
+    "name": "mod-consortia",
     "org": "folio-org"
   },
   {
@@ -652,7 +669,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-feesfines",
     "org": "folio-org"
@@ -895,7 +912,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-inventory-storage",
     "org": "folio-org"
@@ -1310,7 +1327,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-pubsub",
     "org": "folio-org"
@@ -1621,7 +1638,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "raml-module-builder",
     "org": "folio-org"

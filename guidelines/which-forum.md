@@ -19,8 +19,7 @@ There are no rules, but these guidelines can assist.
 
 As explained in the
 [collaboration tools](/community/#collaboration-tools) section,
-we have four primary forums:
-[Discuss](#discuss) (messaging forum),
+we have three primary forums:
 [Wiki](#wiki) (documents),
 [Issues](#issue-tracker) (bug and task tracking), and
 [GitHub](#github) (source code and pull requests).
@@ -36,7 +35,7 @@ in a primary channel.
 
 We follow a variation of the Apache motto:
 **_If it didn't happen in one of the primary communication channels
-(Discuss, Wiki, Issues, and GitHub), it didn't happen._**
+(Issues, Wiki, and GitHub), it didn't happen._**
 
 ## General notes
 
@@ -44,14 +43,14 @@ We follow a variation of the Apache motto:
   [FOLIO Communication Spaces](https://wiki.folio.org/display/COMMUNITY/FOLIO+Communication+Spaces).
 
 - Decisions need to be recorded in an appropriate place.
-  Sometimes that will be the Issue Tracker, sometimes as Discuss topics,
+  Sometimes that will be the Issue Tracker,
   sometimes it will be as a position paper on the wiki.
 
 - Use well-chosen words for topic titles and introductory sections.
   This will make it easier to later list and search.
 
-- Make links in each topic, e.g. between an issue tracker item and
-  relevant Discuss topics. Our future selves will be thankful when
+- Make [links](/guidelines/issue-tracker/#linking) in each topic, e.g. between an issue tracker item and
+  relevant GitHub events. Our future selves will be thankful when
   we need to explore the reasons for a certain change.
   Note that it is also possible to copy links from the Slack archive.
 
@@ -64,27 +63,6 @@ We follow a variation of the Apache motto:
   For example, if your feedback is about a certain GitHub commit, then
   use its comment-on-commit facility.
   Likewise with pull requests and Jira issue tracker.
-
-## Discuss
-
-[https://discuss.folio.org](https://discuss.folio.org)
-
-- For asking questions and recording discussions.
-
-- Use the relevant categories.
-
-- For topics that need lengthy or open-ended discussion, this is
-  definitely the place.
-
-- If in doubt about which forum to commence a discussion, then using a
-  Discuss topic is the best place.
-
-- You might be subsequently asked to explicitly add an Issue Tracker item.
-  Link in both directions.
-
-- When seeking input from the broadest reach of FOLIO participants.
-
-- To post or comment, sign up for an account via the front page.
 
 ## Wiki
 
@@ -107,8 +85,8 @@ We follow a variation of the Apache motto:
 
 - Also tasks that you know need to be done sometime later.
 
-- If not clear whether to add a new issue, then commence a
-  Discuss topic or ask via Slack, and later summarize into an Issue.
+- If not clear whether to add a new issue, then
+  ask via Slack, and later summarize into an Issue.
 
 - Describe the issue concisely in the Summary and Description fields.
   Use Comments for further detail.
@@ -165,7 +143,7 @@ and in the [Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/#linki
 
 - Summarize topics out to other forums for better visibility.
   Remember that Slack is a secondary channel: significant ideas and
-  decisions must be recorded elsewhere (Discuss, Wiki, Issues or GitHub)
+  decisions must be recorded elsewhere (Issues, Wiki, or GitHub)
   for broader vetting.
 
 - Follow up on missed topics. This can occur when a flurry happens about

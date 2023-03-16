@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-02-27T01:31:40.973664+00:00"
+    "generatedDateTime": "2023-03-15T23:19:19.971506+00:00"
   },
   "repos": [
     {
@@ -533,7 +533,12 @@
       "org": "folio-org",
       "repoLanguageHint": "java",
       "repoType": "raml-shared",
-      "snippetIntro": "<p><a href='https://github.com/folio-org/folio-vertx-lib'>folio-vertx-lib</a> is a library for developing FOLIO modules based on Vert.x. This is a library, not a framework, with utilities such as:</p>"
+      "snippetIntro": "<p><a href='https://github.com/folio-org/folio-vertx-lib'>folio-vertx-lib</a> is a library for developing FOLIO modules based on Vert.x. This is a library, not a framework, with utilities such as:</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -574,6 +579,20 @@
       "repoLanguageHint": "other",
       "repoType": "other",
       "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "main",
+      "description": "The shared jest configuration for stripes applications and extensions",
+      "docDirName": null,
+      "name": "jest-config-stripes",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": "",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "main",
@@ -706,6 +725,19 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>Configuration module based on the raml-module-builder and a set of raml and json schemas backed by a PostgreSQL async implementation</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Consortia business logic module",
+      "docDirName": "docs",
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-consortia",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>API for Consortia module.</p>"
     },
     {
       "defaultBranch": "master",
@@ -901,7 +933,6 @@
       "defaultBranch": "master",
       "description": "Parsing and storing relationships between COUNTER report lines and KB items, and for storing access statistics (access numbers and cost) for specific periods",
       "docDirName": "doc",
-      "hintOas": true,
       "name": "mod-eusage-reports",
       "org": "folio-org",
       "ramlDirName": null,
@@ -1115,7 +1146,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This is the Invoice business logic module.</p>"
+      "snippetIntro": "<p>This is the Invoice business logic module.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1129,7 +1170,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This is the Invoice storage module.</p>"
+      "snippetIntro": "<p>This is the Invoice storage module.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1333,7 +1384,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This is the Organizations business logic module.</p>"
+      "snippetIntro": "<p>This is the Organizations business logic module.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1347,7 +1408,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This is the Organizations storage module.</p>"
+      "snippetIntro": "<p>This is the Organizations storage module.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1685,7 +1756,9 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "build-mvn-release.yml",
+        "build-mvn.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -2445,6 +2518,24 @@
     },
     {
       "defaultBranch": "master",
+      "description": "Consortia settings",
+      "docDirName": null,
+      "name": "ui-consortia-settings",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "<p>The <code>ui-consortia-settings</code> repo is used for the management of consortia settings in FOLIO.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
+    },
+    {
+      "defaultBranch": "master",
       "description": "Course reserves UI for FOLIO",
       "docDirName": "doc",
       "name": "ui-courses",
@@ -2784,7 +2875,7 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module which is the cope of ui-invetoru for the ElasticSearch POC.</p>",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module which is the cope of ui-inventory for the ElasticSearch POC.</p>",
       "workflows": [
         "build-npm-release.yml",
         "build-npm.yml"
