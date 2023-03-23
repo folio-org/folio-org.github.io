@@ -5531,6 +5531,14 @@
     "path": "/invoice/invoices/{id}/documents/{documentId}"
   },
   {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "interface": "invoice 7.2",
+    "methods": "get:invoice_invoices__id__fiscal_years_get",
+    "name": "mod-invoice",
+    "path": "/invoice/invoices/{id}/fiscal-years"
+  },
+  {
     "apiDescription": "ramls/isbn.raml",
     "apiType": "raml",
     "interface": "isbn-utils 2.0",
@@ -8298,6 +8306,13 @@
     "path": "/templates/{templateId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getTenants post:operation/saveTenant",
+    "name": "mod-consortia",
+    "path": "/tenants"
+  },
+  {
     "apiDescription": "ramls/tlr-feature-toggle-job.raml",
     "apiType": "raml",
     "interface": "tlr-feature-toggle-job-storage 0.1",
@@ -8699,13 +8714,6 @@
     "methods": "delete:waives__waiveid__delete get:waives__waiveid__get put:waives__waiveid__put",
     "name": "mod-feesfines",
     "path": "/waives/{waiveId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getTenants post:operation/saveTenant",
-    "name": "mod-consortia",
-    "path": "/{consortiumId}/tenants"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
