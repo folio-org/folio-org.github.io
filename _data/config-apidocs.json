@@ -368,7 +368,9 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/swagger.api/consortia.yaml"
+        "src/main/resources/swagger.api/consortia.yaml",
+        "src/main/resources/swagger.api/tenants.yaml",
+        "src/main/resources/swagger.api/user_tenants.yaml"
       ],
       "raml": [],
       "upload": []

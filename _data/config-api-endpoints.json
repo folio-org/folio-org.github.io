@@ -2178,6 +2178,22 @@
     "path": "/configurations/{configId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.0",
+    "methods": "get:operation/getConsortiumCollection post:operation/saveConsortium",
+    "name": "mod-consortia",
+    "path": "/consortia"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.0",
+    "methods": "get:operation/getConsortium put:operation/updateConsortium",
+    "name": "mod-consortia",
+    "path": "/consortia/{consortiumId}"
+  },
+  {
     "apiDescription": "ramls/contributor-name-type.raml",
     "apiType": "raml",
     "interface": "contributor-name-types 1.2",
@@ -7578,7 +7594,7 @@
   {
     "apiDescription": "ramls/request-storage.raml",
     "apiType": "raml",
-    "interface": "request-storage 5.0",
+    "interface": "request-storage 5.1",
     "methods": "delete:request_storage_requests_delete get:request_storage_requests_get post:request_storage_requests_post",
     "name": "mod-circulation-storage",
     "path": "/request-storage/requests"
@@ -7586,7 +7602,7 @@
   {
     "apiDescription": "ramls/request-storage.raml",
     "apiType": "raml",
-    "interface": "request-storage 5.0",
+    "interface": "request-storage 5.1",
     "methods": "delete:request_storage_requests__requestid__delete get:request_storage_requests__requestid__get put:request_storage_requests__requestid__put",
     "name": "mod-circulation-storage",
     "path": "/request-storage/requests/{requestId}"
@@ -8306,7 +8322,7 @@
     "path": "/templates/{templateId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
+    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
     "apiType": "oas",
     "methods": "get:operation/getTenants post:operation/saveTenant put:operation/updateTenant",
     "name": "mod-consortia",
@@ -8544,14 +8560,14 @@
     "path": "/user-summary/{userId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
+    "apiDescription": "src/main/resources/swagger.api/user_tenants.yaml",
     "apiType": "oas",
     "methods": "get:operation/getUserTenants",
     "name": "mod-consortia",
     "path": "/user-tenants"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
+    "apiDescription": "src/main/resources/swagger.api/user_tenants.yaml",
     "apiType": "oas",
     "methods": "get:operation/getUserTenantByAssociationId",
     "name": "mod-consortia",
