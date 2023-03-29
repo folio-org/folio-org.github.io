@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-03-15T23:19:19.971506+00:00"
+    "generatedDateTime": "2023-03-28T22:33:46.479553+00:00"
   },
   "repos": [
     {
@@ -737,7 +737,7 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>API for Consortia module.</p>"
+      "snippetIntro": "<p>APIs for Consortia module.</p>"
     },
     {
       "defaultBranch": "master",
@@ -1230,7 +1230,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This module is responsible for verifying the user's identity and issuing a valid JWT that can be used for system access. The implementation of this module may vary (username/password, SAML, OAuth, etc.), and it is possible for more than one Authentication module to exist in a running system. The default implementation uses a simple username and password for authentication.</p>"
+      "snippetIntro": "<p>This module is responsible for verifying the user's identity and issuing a valid JWT that can be used for system access. The implementation of this module may vary (username/password, SAML, OAuth, etc.), and it is possible for more than one Authentication module to exist in a running system. The default implementation uses a simple username and password for authentication.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1738,7 +1748,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This module is responsible for importing new or already existing users into FOLIO.</p>"
+      "snippetIntro": "<p>This module is responsible for importing new or already existing users into FOLIO.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1756,9 +1776,7 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml",
-        "build-mvn-release.yml",
-        "build-mvn.yml"
+        "api-schema-lint.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -1778,7 +1796,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Business logic 'join' module to provide simple access to all user-centric data.</p>"
+      "snippetIntro": "<p>Business logic 'join' module to provide simple access to all user-centric data.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1810,7 +1838,17 @@
       "ramlDirName": "okapi-core/src/main/raml",
       "repoLanguageHint": "java",
       "repoType": "backend-infrastructure",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1921,7 +1959,12 @@
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "raml-shared",
-      "snippetIntro": "<p>Repository of RAML traits and resource type files.</p>"
+      "snippetIntro": "<p>Repository of RAML traits and resource type files.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2858,24 +2901,6 @@
       "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for administrating locally created instances, holdings records and items.</p>",
-      "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
-      ],
-      "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
-      ]
-    },
-    {
-      "defaultBranch": "master",
-      "description": null,
-      "docDirName": null,
-      "name": "ui-inventory-es",
-      "org": "folio-org",
-      "repoLanguageHint": "node",
-      "repoType": "ui",
-      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module which is the cope of ui-inventory for the ElasticSearch POC.</p>",
       "workflows": [
         "build-npm-release.yml",
         "build-npm.yml"
