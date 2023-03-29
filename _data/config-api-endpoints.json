@@ -4270,10 +4270,18 @@
   {
     "apiDescription": "ramls/ledger-rollover-errors.raml",
     "apiType": "raml",
-    "interface": "finance.ledger-rollovers-errors 1.0",
-    "methods": "get:finance_ledger_rollovers_errors_get",
+    "interface": "finance.ledger-rollovers-errors 1.1",
+    "methods": "get:finance_ledger_rollovers_errors_get post:finance_ledger_rollovers_errors_post",
     "name": "mod-finance",
     "path": "/finance/ledger-rollovers-errors"
+  },
+  {
+    "apiDescription": "ramls/ledger-rollover-errors.raml",
+    "apiType": "raml",
+    "interface": "finance.ledger-rollovers-errors 1.1",
+    "methods": "delete:finance_ledger_rollovers_errors__id__delete",
+    "name": "mod-finance",
+    "path": "/finance/ledger-rollovers-errors/{id}"
   },
   {
     "apiDescription": "ramls/ledger-rollover-logs.raml",
