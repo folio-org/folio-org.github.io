@@ -78,7 +78,7 @@ Correlate the "build number" with that shown in the output log of the project's 
 
 [https://folio-snapshot.dev.folio.org/](https://folio-snapshot.dev.folio.org/)
 
-The server is built every day, to finish about 02:00 UTC.\
+The server is built every day, to finish about 02:03 UTC.\
 (See Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot/) which starts about 01:24 UTC.).
 
 #### Platform hourly build
@@ -112,8 +112,8 @@ The folio-snapshot-latest is an alias for folio-snapshot-2.
 This is an environment for the latest FOLIO Release R3 2022 Nolana.
 Each rebuild will pick up any hotfix updates that may have been released.
 
-The server is built every Sunday, to finish about 02:00 UTC.\
-(See Jenkins job: [folio-r3-2022-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r3-2022-release/) which starts about 01:28 UTC.).
+The server is built every Sunday, to finish about 02:47 UTC.\
+(See Jenkins job: [folio-r3-2022-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r3-2022-release/) which starts about 02:11 UTC.).
 
 ### folio-morning-glory
 
@@ -122,8 +122,8 @@ The server is built every Sunday, to finish about 02:00 UTC.\
 This is an environment for the previous FOLIO Release R3 2022 Morning Glory.
 Each rebuild will pick up any hotfix updates that may have been released.
 
-The server is built every Sunday, to finish about 04:10 UTC.\
-(See Jenkins job: [folio-r2-2022-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r2-2022-release/) which starts about 03:35 UTC.).
+The server is built every Sunday, to finish about 03:20 UTC.\
+(See Jenkins job: [folio-r2-2022-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r2-2022-release/) which starts about 02:44 UTC.).
 
 ### Other notes
 

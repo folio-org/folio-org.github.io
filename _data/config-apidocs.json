@@ -116,7 +116,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "edge-orders",
     "org": "folio-org"
@@ -166,7 +166,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "folio-custom-fields",
     "org": "folio-org"
@@ -368,7 +368,9 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/swagger.api/consortia.yaml"
+        "src/main/resources/swagger.api/consortia.yaml",
+        "src/main/resources/swagger.api/tenants.yaml",
+        "src/main/resources/swagger.api/user_tenants.yaml"
       ],
       "raml": [],
       "upload": []
@@ -584,7 +586,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-erm-usage",
     "org": "folio-org"
@@ -602,7 +604,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-erm-usage-harvester",
     "org": "folio-org"
@@ -704,7 +706,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-finance",
     "org": "folio-org"
@@ -819,7 +821,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-inn-reach",
     "org": "folio-org"
@@ -951,7 +953,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-invoice",
     "org": "folio-org"
@@ -1058,7 +1060,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-login",
     "org": "folio-org"
@@ -1162,7 +1164,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-orders",
     "org": "folio-org"
@@ -1194,7 +1196,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-orders-storage",
     "org": "folio-org"
@@ -1254,7 +1256,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-password-validator",
     "org": "folio-org"
@@ -1345,7 +1347,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-quick-marc",
     "org": "folio-org"
@@ -1416,7 +1418,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-search",
     "org": "folio-org"
@@ -1450,7 +1452,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-settings",
     "org": "folio-org"
@@ -1542,7 +1544,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-user-import",
     "org": "folio-org"
@@ -1581,7 +1583,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-users-bl",
     "org": "folio-org"
@@ -1598,7 +1600,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "okapi",
     "org": "folio-org"
@@ -1620,7 +1622,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "raml",
     "org": "folio-org"

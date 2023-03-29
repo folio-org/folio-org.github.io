@@ -304,7 +304,7 @@
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "get:accounts_get post:accounts_post",
     "name": "mod-feesfines",
     "path": "/accounts"
@@ -312,7 +312,7 @@
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts_bulk_cancel_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/cancel"
@@ -320,7 +320,7 @@
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts_bulk_check_pay_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/check-pay"
@@ -328,7 +328,7 @@
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts_bulk_check_refund_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/check-refund"
@@ -336,7 +336,7 @@
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts_bulk_check_transfer_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/check-transfer"
@@ -344,7 +344,7 @@
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts_bulk_check_waive_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/check-waive"
@@ -352,7 +352,7 @@
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts_bulk_pay_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/pay"
@@ -360,7 +360,7 @@
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts_bulk_refund_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/refund"
@@ -368,7 +368,7 @@
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts_bulk_transfer_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/transfer"
@@ -376,7 +376,7 @@
   {
     "apiDescription": "ramls/accounts-bulk.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts_bulk_waive_post",
     "name": "mod-feesfines",
     "path": "/accounts-bulk/waive"
@@ -384,7 +384,7 @@
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "delete:accounts__accountid__delete get:accounts__accountid__get put:accounts__accountid__put",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}"
@@ -392,7 +392,7 @@
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts__accountid__cancel_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/cancel"
@@ -400,7 +400,7 @@
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts__accountid__check_pay_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/check-pay"
@@ -408,7 +408,7 @@
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts__accountid__check_refund_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/check-refund"
@@ -416,7 +416,7 @@
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts__accountid__check_transfer_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/check-transfer"
@@ -424,7 +424,7 @@
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts__accountid__check_waive_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/check-waive"
@@ -432,7 +432,7 @@
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts__accountid__pay_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/pay"
@@ -440,7 +440,7 @@
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts__accountid__refund_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/refund"
@@ -448,7 +448,7 @@
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts__accountid__transfer_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/transfer"
@@ -456,7 +456,7 @@
   {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "post:accounts__accountid__waive_post",
     "name": "mod-feesfines",
     "path": "/accounts/{accountId}/waive"
@@ -2084,7 +2084,7 @@
   {
     "apiDescription": "ramls/comments.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "get:comments_get post:comments_post",
     "name": "mod-feesfines",
     "path": "/comments"
@@ -2092,7 +2092,7 @@
   {
     "apiDescription": "ramls/comments.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "delete:comments__commentid__delete get:comments__commentid__get put:comments__commentid__put",
     "name": "mod-feesfines",
     "path": "/comments/{commentId}"
@@ -2176,6 +2176,22 @@
     "methods": "delete:operation/deleteConfigurationById get:operation/getConfigurationById put:operation/putConfiguration",
     "name": "mod-remote-storage",
     "path": "/configurations/{configId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.0",
+    "methods": "get:operation/getConsortiumCollection post:operation/saveConsortium",
+    "name": "mod-consortia",
+    "path": "/consortia"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.0",
+    "methods": "get:operation/getConsortium put:operation/updateConsortium",
+    "name": "mod-consortia",
+    "path": "/consortia/{consortiumId}"
   },
   {
     "apiDescription": "ramls/contributor-name-type.raml",
@@ -3694,7 +3710,7 @@
   {
     "apiDescription": "ramls/feefines.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "get:feefines_get post:feefines_post",
     "name": "mod-feesfines",
     "path": "/feefines"
@@ -3702,7 +3718,7 @@
   {
     "apiDescription": "ramls/feefines.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "delete:feefines__feefineid__delete get:feefines__feefineid__get put:feefines__feefineid__put",
     "name": "mod-feesfines",
     "path": "/feefines/{feefineId}"
@@ -4254,10 +4270,18 @@
   {
     "apiDescription": "ramls/ledger-rollover-errors.raml",
     "apiType": "raml",
-    "interface": "finance.ledger-rollovers-errors 1.0",
-    "methods": "get:finance_ledger_rollovers_errors_get",
+    "interface": "finance.ledger-rollovers-errors 1.1",
+    "methods": "get:finance_ledger_rollovers_errors_get post:finance_ledger_rollovers_errors_post",
     "name": "mod-finance",
     "path": "/finance/ledger-rollovers-errors"
+  },
+  {
+    "apiDescription": "ramls/ledger-rollover-errors.raml",
+    "apiType": "raml",
+    "interface": "finance.ledger-rollovers-errors 1.1",
+    "methods": "delete:finance_ledger_rollovers_errors__id__delete",
+    "name": "mod-finance",
+    "path": "/finance/ledger-rollovers-errors/{id}"
   },
   {
     "apiDescription": "ramls/ledger-rollover-logs.raml",
@@ -5531,6 +5555,14 @@
     "path": "/invoice/invoices/{id}/documents/{documentId}"
   },
   {
+    "apiDescription": "ramls/invoice.raml",
+    "apiType": "raml",
+    "interface": "invoice 7.2",
+    "methods": "get:invoice_invoices__id__fiscal_years_get",
+    "name": "mod-invoice",
+    "path": "/invoice/invoices/{id}/fiscal-years"
+  },
+  {
     "apiDescription": "ramls/isbn.raml",
     "apiType": "raml",
     "interface": "isbn-utils 2.0",
@@ -5939,7 +5971,7 @@
   {
     "apiDescription": "ramls/lost-item-fee-policy.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "get:lost_item_fees_policies_get post:lost_item_fees_policies_post",
     "name": "mod-feesfines",
     "path": "/lost-item-fees-policies"
@@ -5947,7 +5979,7 @@
   {
     "apiDescription": "ramls/lost-item-fee-policy.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "delete:lost_item_fees_policies__lostitemfeepolicyid__delete get:lost_item_fees_policies__lostitemfeepolicyid__get put:lost_item_fees_policies__lostitemfeepolicyid__put",
     "name": "mod-feesfines",
     "path": "/lost-item-fees-policies/{lostItemFeePolicyId}"
@@ -5990,7 +6022,7 @@
   {
     "apiDescription": "ramls/manual-block-templates.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "get:manual_block_templates_get post:manual_block_templates_post",
     "name": "mod-feesfines",
     "path": "/manual-block-templates"
@@ -5998,7 +6030,7 @@
   {
     "apiDescription": "ramls/manual-block-templates.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "delete:manual_block_templates__id__delete get:manual_block_templates__id__get put:manual_block_templates__id__put",
     "name": "mod-feesfines",
     "path": "/manual-block-templates/{id}"
@@ -6006,7 +6038,7 @@
   {
     "apiDescription": "ramls/manualblocks.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "get:manualblocks_get post:manualblocks_post",
     "name": "mod-feesfines",
     "path": "/manualblocks"
@@ -6014,7 +6046,7 @@
   {
     "apiDescription": "ramls/manualblocks.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "delete:manualblocks__manualblockid__delete get:manualblocks__manualblockid__get put:manualblocks__manualblockid__put",
     "name": "mod-feesfines",
     "path": "/manualblocks/{manualblockId}"
@@ -7043,7 +7075,7 @@
   {
     "apiDescription": "ramls/overdue-fine-policy.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "get:overdue_fines_policies_get post:overdue_fines_policies_post",
     "name": "mod-feesfines",
     "path": "/overdue-fines-policies"
@@ -7051,7 +7083,7 @@
   {
     "apiDescription": "ramls/overdue-fine-policy.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "delete:overdue_fines_policies__overduefinepolicyid__delete get:overdue_fines_policies__overduefinepolicyid__get put:overdue_fines_policies__overduefinepolicyid__put",
     "name": "mod-feesfines",
     "path": "/overdue-fines-policies/{overdueFinePolicyId}"
@@ -7059,7 +7091,7 @@
   {
     "apiDescription": "ramls/owners.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "get:owners_get post:owners_post",
     "name": "mod-feesfines",
     "path": "/owners"
@@ -7067,7 +7099,7 @@
   {
     "apiDescription": "ramls/owners.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "delete:owners__ownerid__delete get:owners__ownerid__get put:owners__ownerid__put",
     "name": "mod-feesfines",
     "path": "/owners/{ownerId}"
@@ -7256,7 +7288,7 @@
   {
     "apiDescription": "ramls/payments.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "get:payments_get post:payments_post",
     "name": "mod-feesfines",
     "path": "/payments"
@@ -7264,7 +7296,7 @@
   {
     "apiDescription": "ramls/payments.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "delete:payments__paymentid__delete get:payments__paymentid__get put:payments__paymentid__put",
     "name": "mod-feesfines",
     "path": "/payments/{paymentId}"
@@ -7514,7 +7546,7 @@
   {
     "apiDescription": "ramls/refunds.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "get:refunds_get post:refunds_post",
     "name": "mod-feesfines",
     "path": "/refunds"
@@ -7522,7 +7554,7 @@
   {
     "apiDescription": "ramls/refunds.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "delete:refunds__refundid__delete get:refunds__refundid__get put:refunds__refundid__put",
     "name": "mod-feesfines",
     "path": "/refunds/{refundId}"
@@ -7570,7 +7602,7 @@
   {
     "apiDescription": "ramls/request-storage.raml",
     "apiType": "raml",
-    "interface": "request-storage 5.0",
+    "interface": "request-storage 5.1",
     "methods": "delete:request_storage_requests_delete get:request_storage_requests_get post:request_storage_requests_post",
     "name": "mod-circulation-storage",
     "path": "/request-storage/requests"
@@ -7578,7 +7610,7 @@
   {
     "apiDescription": "ramls/request-storage.raml",
     "apiType": "raml",
-    "interface": "request-storage 5.0",
+    "interface": "request-storage 5.1",
     "methods": "delete:request_storage_requests__requestid__delete get:request_storage_requests__requestid__get put:request_storage_requests__requestid__put",
     "name": "mod-circulation-storage",
     "path": "/request-storage/requests/{requestId}"
@@ -8298,11 +8330,18 @@
     "path": "/templates/{templateId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
+    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
     "apiType": "oas",
-    "methods": "get:operation/getTenants",
+    "methods": "get:operation/getTenants post:operation/saveTenant",
     "name": "mod-consortia",
     "path": "/tenants"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/updateTenant",
+    "name": "mod-consortia",
+    "path": "/tenants/{tenantId}"
   },
   {
     "apiDescription": "ramls/tlr-feature-toggle-job.raml",
@@ -8460,7 +8499,7 @@
   {
     "apiDescription": "ramls/transfer-criteria.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "get:transfer_criterias_get post:transfer_criterias_post",
     "name": "mod-feesfines",
     "path": "/transfer-criterias"
@@ -8468,7 +8507,7 @@
   {
     "apiDescription": "ramls/transfer-criteria.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "delete:transfer_criterias__transfercriteriaid__delete get:transfer_criterias__transfercriteriaid__get put:transfer_criterias__transfercriteriaid__put",
     "name": "mod-feesfines",
     "path": "/transfer-criterias/{transferCriteriaId}"
@@ -8476,7 +8515,7 @@
   {
     "apiDescription": "ramls/transfers.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "get:transfers_get post:transfers_post",
     "name": "mod-feesfines",
     "path": "/transfers"
@@ -8484,7 +8523,7 @@
   {
     "apiDescription": "ramls/transfers.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "delete:transfers__transferid__delete get:transfers__transferid__get put:transfers__transferid__put",
     "name": "mod-feesfines",
     "path": "/transfers/{transferId}"
@@ -8536,14 +8575,14 @@
     "path": "/user-summary/{userId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
+    "apiDescription": "src/main/resources/swagger.api/user_tenants.yaml",
     "apiType": "oas",
     "methods": "get:operation/getUserTenants",
     "name": "mod-consortia",
     "path": "/user-tenants"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
+    "apiDescription": "src/main/resources/swagger.api/user_tenants.yaml",
     "apiType": "oas",
     "methods": "get:operation/getUserTenantByAssociationId",
     "name": "mod-consortia",
@@ -8694,7 +8733,7 @@
   {
     "apiDescription": "ramls/waiver.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "get:waives_get post:waives_post",
     "name": "mod-feesfines",
     "path": "/waives"
@@ -8702,7 +8741,7 @@
   {
     "apiDescription": "ramls/waiver.raml",
     "apiType": "raml",
-    "interface": "feesfines 17.4",
+    "interface": "feesfines 18.0",
     "methods": "delete:waives__waiveid__delete get:waives__waiveid__get put:waives__waiveid__put",
     "name": "mod-feesfines",
     "path": "/waives/{waiveId}"
