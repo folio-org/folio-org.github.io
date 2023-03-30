@@ -5783,14 +5783,6 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "instance-authority-links-statistics 1.0",
-    "methods": "get:operation/getAuthorityLinksStats",
-    "name": "mod-entities-links",
-    "path": "/links/authority/stats"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
-    "apiType": "oas",
     "interface": "instance-authority-links 1.0",
     "methods": "get:operation/getInstanceLinks put:operation/updateInstanceLinks",
     "name": "mod-entities-links",
@@ -5799,7 +5791,15 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "linked-bib-update-statistics 1.0",
+    "interface": "instance-authority-links-statistics 2.0",
+    "methods": "get:operation/getAuthorityLinksStats",
+    "name": "mod-entities-links",
+    "path": "/links/stats/authority"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
+    "interface": "instance-authority-links-statistics 2.0",
     "methods": "get:operation/getLinkedBibUpdateStats",
     "name": "mod-entities-links",
     "path": "/links/stats/instance"
