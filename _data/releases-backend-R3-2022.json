@@ -116,11 +116,11 @@
     {
       "name": "mod-data-export-worker",
       "nameRepo": "mod-data-export-worker",
-      "releaseDate": "2022-12-12T17:43:30+00:00",
-      "releaseName": "v2.0.7",
-      "releaseSha": "6557b4693184881095ee35d8114e3d2c850e4757",
-      "releaseTag": "v2.0.7",
-      "releaseTarget": "master",
+      "releaseDate": null,
+      "releaseName": null,
+      "releaseSha": null,
+      "releaseTag": null,
+      "releaseTarget": null,
       "version": "2.0.7"
     },
     {
