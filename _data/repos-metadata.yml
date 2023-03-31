@@ -38,6 +38,7 @@ ui-circulation:
   spaceUserDocs: access/
   urlsOther:
     - https://wiki.folio.org/display/FOLIOtips/Example+Circulation+Rules+from+Adopters
+    - https://docs.folio.org/docs/access/additional-topics/feesfines/feesfines/
 
 ui-circulation-log:
   spaceUserDocs: access/circulation-log/circ_log/
@@ -69,8 +70,6 @@ ui-erm-usage:
 ui-finance:
   urlAppSettings: https://docs.folio.org/docs/settings/settings_finance/settings_finance/
   spaceUserDocs: acquisitions/finance/
-  urlsOther:
-    - https://docs.folio.org/docs/access/additional-topics/feesfines/feesfines/
 
 ui-inventory:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Inventory
