@@ -125,7 +125,7 @@ def get_versions(branch):
         tag_name = "v" + mod_version
         flag_tag_found = False
         repo_short = github.repository("folio-org", repo_name)
-        tags = repo_short.tags(10)
+        tags = repo_short.tags(20)
         for tag in tags:
             logger.debug("  tag_name=%s sha=%s", tag.name, tag.commit.sha)
             if tag_name in tag.name:
