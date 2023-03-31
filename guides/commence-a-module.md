@@ -244,6 +244,9 @@ Some icons are provided by Stripes itself.
 See the [Icons](https://github.com/folio-org/stripes-core/blob/master/doc/app-metadata.md#icons)
 section of the "Stripes application metadata bundles" document.
 
+The [available icons](https://folio-org.github.io/stripes-components/?path=/story/components-icon--available-icons)
+are shown at the Stripes Components [Storybook](https://folio-org.github.io/stripes-components/).
+
 ### Lib {#front-end-lib}
 
 The optional `lib` directory holds local libraries specific to this app.
