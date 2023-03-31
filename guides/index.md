@@ -148,6 +148,9 @@ Some more detail is provided via other introductory documentation:
 - [FOLIO App Information, Tips, and Tricks](https://wiki.folio.org/display/FOLIOtips/).
   Provides overview information for each app.
   Includes [Settings](https://wiki.folio.org/display/FOLIOtips/Settings) documentation for each individual app.
+  Note that much of that documentation is being moved to the [docs.folio.org](http://docs.folio.org/docs/) site.
+  There are links to specific relevant docs for some modules via the [Source-code map](/source-code/map/).
+- Branding abilities via stripes.config.js are explained [here](https://docs.folio.org/docs/getting-started/installation/customizations/#branding-stripes) and [here](https://github.com/folio-org/stripes/blob/master/doc/branding.md).
 - [Performance optimization](performance-optimization/).
 
 ### Tutorials
