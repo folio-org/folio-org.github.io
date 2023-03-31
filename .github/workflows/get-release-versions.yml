@@ -7,6 +7,7 @@ name: get-release-versions
 on:
   schedule:
     - cron: '35 00 * * *'
+  workflow_dispatch:
 
 jobs:
   job_1:

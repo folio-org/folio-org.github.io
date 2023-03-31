@@ -69,6 +69,8 @@ ui-erm-usage:
 ui-finance:
   urlAppSettings: https://docs.folio.org/docs/settings/settings_finance/settings_finance/
   spaceUserDocs: acquisitions/finance/
+  urlsOther:
+    - https://docs.folio.org/docs/access/additional-topics/feesfines/feesfines/
 
 ui-inventory:
   urlUserTips: https://wiki.folio.org/display/FOLIOtips/Inventory
@@ -147,6 +149,10 @@ ui-plugin-eusage-reports:
 mod-circulation:
   urlsOther:
     - https://github.com/folio-org/mod-circulation/blob/master/doc/circulationrules.md
+
+mod-feesfines:
+  urlsOther:
+    - https://docs.folio.org/docs/access/additional-topics/feesfines/feesfines/
 
 mod-search:
   urlsOther:
