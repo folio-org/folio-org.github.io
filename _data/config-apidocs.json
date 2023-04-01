@@ -1009,7 +1009,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-kb-ebsco-java",
     "org": "folio-org"
