@@ -20,6 +20,8 @@
 // ---------------------------------------------------------------------------------------------------------------------
 // These definitions have been taken from main.scss
 //
+@use "sass:math";
+
 $theme-font-family:				"Helvetica Neue", Helvetica, Arial, sans-serif;
 $theme-font-size:				16px;
 $theme-font-weight:				400;
@@ -643,12 +645,12 @@ $menubar-item-height-widest:						auto;
 // Padding of the menu entries
 // CSS property: padding
 //
-$menubar-item-padding-medium:						$vspacing-unit/1.5 $hspacing-unit/1.5;
-$menubar-item-padding-widest:						$vspacing-unit/1.5 $hspacing-unit/1.5;
-$menubar-subitem-padding-medium:					$vspacing-unit/4 $hspacing-unit;
-$menubar-subitem-padding-widest:					$vspacing-unit/4 $hspacing-unit;
-$menubar-subsubitem-padding-medium:					$vspacing-unit/4 $hspacing-unit;
-$menubar-subsubitem-padding-widest:					$vspacing-unit/4 $hspacing-unit;
+$menubar-item-padding-medium:						math.div($vspacing-unit, 1.5) math.div($hspacing-unit, 1.5);
+$menubar-item-padding-widest:						math.div($vspacing-unit, 1.5) math.div($hspacing-unit, 1.5);
+$menubar-subitem-padding-medium:					$vspacing-unit*0.25 $hspacing-unit;
+$menubar-subitem-padding-widest:					$vspacing-unit*0.25 $hspacing-unit;
+$menubar-subsubitem-padding-medium:					$vspacing-unit*0.25 $hspacing-unit;
+$menubar-subsubitem-padding-widest:					$vspacing-unit*0.25 $hspacing-unit;
 
 // The disclosure symbol definitions for the narrow layout.
 // Written to a <p> with the CSS :after selector.
@@ -691,8 +693,8 @@ $menubar-item-separator-symbol-background-widest:	$menubar-item-background-wides
 // The padding around the item separator
 // CSS property: padding
 //
-$menubar-item-separator-symbol-padding-medium:		$vspacing-unit/4 0px;
-$menubar-item-separator-symbol-padding-widest:		$vspacing-unit/4 0px;
+$menubar-item-separator-symbol-padding-medium:		$vspacing-unit*0.25 0px;
+$menubar-item-separator-symbol-padding-widest:		$vspacing-unit*0.25 0px;
 
 // The margin around the dropdown part of the menubar containing the sub-items.
 // The default shows a left-indent such that the submenu items appear below and to the right the menu title.
@@ -959,8 +961,8 @@ $vmenu-topTitle-background-widest:						none;
 // Use this or the margin to position the top title vertically
 // CSS property: padding
 //
-$vmenu-topTitle-padding-medium:							$vspacing-unit/4 $hspacing-unit/2;
-$vmenu-topTitle-padding-widest:							$vspacing-unit/4 $hspacing-unit/2;
+$vmenu-topTitle-padding-medium:							$vspacing-unit*0.25 $hspacing-unit*0.5;
+$vmenu-topTitle-padding-widest:							$vspacing-unit*0.25 $hspacing-unit*0.5;
 
 // The margin for the title of the vertical menu
 // Use this or the padding to position the top title vertically
@@ -1030,8 +1032,8 @@ $vmenu-subitem-color-hover-widest:						black;
 // Padding for the sub menu item title
 // CSS property: padding
 //
-$vmenu-subitem-title-padding-medium:					$vspacing-unit/4 $hspacing-unit/2;
-$vmenu-subitem-title-padding-widest:					$vspacing-unit/4 $hspacing-unit/2;
+$vmenu-subitem-title-padding-medium:					$vspacing-unit*0.25 $hspacing-unit*0.5;
+$vmenu-subitem-title-padding-widest:					$vspacing-unit*0.25 $hspacing-unit*0.5;
 
 // The border of the sub menu item
 // CSS property: border
@@ -1079,8 +1081,8 @@ $vmenu-subsubitem-disclosure-area-border-right-widest: 	none;
 // Padding for a sub-sub menu item
 // CSS property: padding
 //
-$vmenu-subsubitem-title-padding-medium:					$vspacing-unit/8 $hspacing-unit/4;
-$vmenu-subsubitem-title-padding-widest:					$vspacing-unit/8 $hspacing-unit/4;
+$vmenu-subsubitem-title-padding-medium:					$vspacing-unit*0.125 $hspacing-unit*0.25;
+$vmenu-subsubitem-title-padding-widest:					$vspacing-unit*0.125 $hspacing-unit*0.25;
 
 // The border of a sub-sub menu item
 // CSS property: border
@@ -1148,7 +1150,7 @@ $category-item-background-hover:			$grey-color-light;
 // The padding for the items of the categories widget
 // CSS properties: padding
 //
-$category-item-padding:						$vspacing-unit/8 $hspacing-unit/4 $vspacing-unit/8 $hspacing-unit;
+$category-item-padding:						$vspacing-unit*0.125 $hspacing-unit*0.25 $vspacing-unit*0.125 $hspacing-unit;
 
 
 // *********************************************************************************************************************

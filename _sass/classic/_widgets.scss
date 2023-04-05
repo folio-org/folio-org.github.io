@@ -7,9 +7,9 @@
 
 // The separator between widgets, a thin horizontal line.
 .widget-separator {
-	margin-top: $vspacing-unit / 2;
+	margin-top: $vspacing-unit * 0.5;
 	margin-left: 0;
-	margin-bottom: $vspacing-unit / 2;
+	margin-bottom: $vspacing-unit * 0.5;
 	margin-right: 0;
 	border-bottom: 1px solid $widget-separator-color;
 	@if $widget-separator-display { display: block; } @else { display: none; }
@@ -45,7 +45,7 @@
 // Used by the older-posts widget
 .older-posts {
 	h1 {
-		margin-bottom: $vspacing-unit/2;
+		margin-bottom: $vspacing-unit*0.5;
 	}
 	.year-details {
 		summary {
