@@ -20,8 +20,6 @@
 // ---------------------------------------------------------------------------------------------------------------------
 // These definitions have been taken from main.scss
 //
-@use "sass:math";
-
 $theme-font-family:				"Helvetica Neue", Helvetica, Arial, sans-serif;
 $theme-font-size:				16px;
 $theme-font-weight:				400;
@@ -645,8 +643,8 @@ $menubar-item-height-widest:						auto;
 // Padding of the menu entries
 // CSS property: padding
 //
-$menubar-item-padding-medium:						math.div($vspacing-unit, 1.5) math.div($hspacing-unit, 1.5);
-$menubar-item-padding-widest:						math.div($vspacing-unit, 1.5) math.div($hspacing-unit, 1.5);
+$menubar-item-padding-medium:						calc($vspacing-unit / 1.5) calc($hspacing-unit / 1.5);
+$menubar-item-padding-widest:						calc($vspacing-unit / 1.5) calc($hspacing-unit / 1.5);
 $menubar-subitem-padding-medium:					$vspacing-unit*0.25 $hspacing-unit;
 $menubar-subitem-padding-widest:					$vspacing-unit*0.25 $hspacing-unit;
 $menubar-subsubitem-padding-medium:					$vspacing-unit*0.25 $hspacing-unit;
