@@ -8577,7 +8577,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/user_tenants.yaml",
     "apiType": "oas",
-    "methods": "get:operation/getUserTenants",
+    "methods": "get:operation/getUserTenants post:operation/postUserTenants",
     "name": "mod-consortia",
     "path": "/user-tenants"
   },
