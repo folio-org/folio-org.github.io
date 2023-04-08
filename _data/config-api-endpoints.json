@@ -1770,7 +1770,7 @@
   {
     "apiDescription": "ramls/circulation-event-handlers.raml",
     "apiType": "raml",
-    "interface": "circulation-event-handlers 0.1",
+    "interface": "circulation-event-handlers 0.2",
     "methods": "post:circulation_handlers__loan_related_fee_fine_closed_post",
     "name": "mod-circulation",
     "path": "/circulation/handlers//loan-related-fee-fine-closed"
