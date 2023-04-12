@@ -5159,7 +5159,7 @@
   {
     "apiDescription": "ramls/inventory-hierarchy.raml",
     "apiType": "raml",
-    "interface": "inventory-hierarchy 0.2",
+    "interface": "inventory-hierarchy 0.3",
     "methods": "post:inventory_hierarchy_items_and_holdings_post",
     "name": "mod-inventory-storage",
     "path": "/inventory-hierarchy/items-and-holdings"
@@ -5167,7 +5167,7 @@
   {
     "apiDescription": "ramls/inventory-hierarchy.raml",
     "apiType": "raml",
-    "interface": "inventory-hierarchy 0.2",
+    "interface": "inventory-hierarchy 0.3",
     "methods": "get:inventory_hierarchy_updated_instance_ids_get",
     "name": "mod-inventory-storage",
     "path": "/inventory-hierarchy/updated-instance-ids"
