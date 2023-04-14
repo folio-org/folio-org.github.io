@@ -638,7 +638,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-event-config",
     "org": "folio-org"
@@ -978,7 +978,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-invoice-storage",
     "org": "folio-org"
@@ -1435,7 +1435,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-sender",
     "org": "folio-org"
@@ -1566,7 +1566,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-users",
     "org": "folio-org"
