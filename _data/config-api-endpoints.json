@@ -8607,6 +8607,14 @@
   {
     "apiDescription": "ramls/users.raml",
     "apiType": "raml",
+    "interface": "_timer 1.0",
+    "methods": "post:users_outbox_process_post",
+    "name": "mod-users",
+    "path": "/users/outbox/process"
+  },
+  {
+    "apiDescription": "ramls/users.raml",
+    "apiType": "raml",
     "interface": "users 16.0",
     "methods": "delete:users__userid__delete get:users__userid__get put:users__userid__put",
     "name": "mod-users",
