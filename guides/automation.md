@@ -112,8 +112,8 @@ The folio-snapshot-latest is an alias for folio-snapshot-2.
 This is an environment for the latest FOLIO Release R1 2023 Orchid.
 Each rebuild will pick up any hotfix updates that may have been released.
 
-The server is built every Sunday, to finish about 02:47 UTC.\
-(See Jenkins job: [folio-r1-2023-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r1-2023-release/) which starts about 02:11 UTC.).
+The server is built every Sunday, to finish about 02:05 UTC.\
+(See Jenkins job: [folio-r1-2023-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r1-2023-release/) which starts about 01:30 UTC.).
 
 ### folio-nolana
 
@@ -122,8 +122,8 @@ The server is built every Sunday, to finish about 02:47 UTC.\
 This is an environment for the previous FOLIO Release R3 2022 Nolana
 Each rebuild will pick up any hotfix updates that may have been released.
 
-The server is built every Sunday, to finish about 03:20 UTC.\
-(See Jenkins job: [folio-r3-2022-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r3-2022-release/) which starts about 02:44 UTC.).
+The server is built every Sunday, to finish about 02:45 UTC.\
+(See Jenkins job: [folio-r3-2022-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r3-2022-release/) which starts about 02:11 UTC.).
 
 ### Other notes
 
