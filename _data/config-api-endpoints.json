@@ -8311,6 +8311,7 @@
   {
     "apiDescription": "ramls/template-engine.raml",
     "apiType": "raml",
+    "interface": "template-engine 2.2",
     "methods": "post:template_request_post",
     "name": "mod-template-engine",
     "path": "/template-request"
@@ -8318,6 +8319,7 @@
   {
     "apiDescription": "ramls/template-engine.raml",
     "apiType": "raml",
+    "interface": "template-engine 2.2",
     "methods": "get:templates_get post:templates_post",
     "name": "mod-template-engine",
     "path": "/templates"
@@ -8325,6 +8327,7 @@
   {
     "apiDescription": "ramls/template-engine.raml",
     "apiType": "raml",
+    "interface": "template-engine 2.2",
     "methods": "delete:templates__templateid__delete get:templates__templateid__get put:templates__templateid__put",
     "name": "mod-template-engine",
     "path": "/templates/{templateId}"
