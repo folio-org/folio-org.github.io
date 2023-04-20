@@ -647,7 +647,7 @@
       "name": "mod-z3950",
       "nameRepo": "Net-Z3950-FOLIO",
       "releaseDate": "2023-02-28T11:43:15+00:00",
-      "releaseName": "v3.2.2",
+      "releaseName": "v3.3.2",
       "releaseSha": "745918480124f89dfbcb37af01fd2f5968061903",
       "releaseTag": "v3.3.2",
       "releaseTarget": "master",
