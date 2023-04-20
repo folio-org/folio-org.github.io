@@ -5767,10 +5767,18 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "instance-authority-linking-rules 1.0",
+    "interface": "instance-authority-linking-rules 1.1",
     "methods": "get:operation/getInstanceAuthorityLinkingRules",
     "name": "mod-entities-links",
     "path": "/linking-rules/instance-authority"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
+    "interface": "instance-authority-linking-rules 1.1",
+    "methods": "get:operation/getInstanceAuthorityLinkingRuleById patch:operation/patchInstanceAuthorityLinkingRuleById",
+    "name": "mod-entities-links",
+    "path": "/linking-rules/instance-authority/{ruleId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
