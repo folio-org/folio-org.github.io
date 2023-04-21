@@ -9,7 +9,7 @@ faqOrder: 2
 
 ## GitHub new developer
 
-For new developers (i.e. not yet a [member](https://github.com/orgs/folio-org/people) of "folio-org" organization) we ask that a project manager (see [Team vs module responsibility matrix](https://wiki.folio.org/display/REL/Team+vs+module+responsibility+matrix)) or at least a known existing developer, makes this request.
+For new developers (i.e. not yet a [member](https://github.com/orgs/folio-org/people) of "folio-org" organization) we ask that a project manager (see [Team and module responsibility matrix](https://wiki.folio.org/pages/viewpage.action?pageId=14463134)) or at least a known existing developer, makes this request.
 
 They need to either request on the #devops Slack channel, or [raise a FOLIO DevOps Jira ticket](/faqs/how-to-raise-devops-ticket/#general-folio-devops). Especially do the latter with a group of new people.
 
