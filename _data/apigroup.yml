@@ -124,7 +124,7 @@ other:
     - mod-eusage-reports
     - mod-ldp
     - folio-custom-fields
-    - folio-spring-base
+    - folio-spring-support
     - folio-vertx-lib
 deprecated:
   title: Deprecated
