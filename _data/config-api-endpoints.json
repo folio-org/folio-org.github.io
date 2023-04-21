@@ -5253,14 +5253,6 @@
     "path": "/inventory-view/instance-set"
   },
   {
-    "apiDescription": "ramls/inventory-view.raml",
-    "apiType": "raml",
-    "interface": "inventory-view 2.0",
-    "methods": "get:inventory_view_instances_get",
-    "name": "mod-inventory-storage",
-    "path": "/inventory-view/instances"
-  },
-  {
     "apiDescription": "ramls/inventory-config.raml",
     "apiType": "raml",
     "interface": "inventory-config 0.2",
@@ -5767,10 +5759,18 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "instance-authority-linking-rules 1.0",
+    "interface": "instance-authority-linking-rules 1.1",
     "methods": "get:operation/getInstanceAuthorityLinkingRules",
     "name": "mod-entities-links",
     "path": "/linking-rules/instance-authority"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
+    "interface": "instance-authority-linking-rules 1.1",
+    "methods": "get:operation/getInstanceAuthorityLinkingRuleById patch:operation/patchInstanceAuthorityLinkingRuleById",
+    "name": "mod-entities-links",
+    "path": "/linking-rules/instance-authority/{ruleId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
