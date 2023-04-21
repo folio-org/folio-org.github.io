@@ -643,8 +643,8 @@ $menubar-item-height-widest:						auto;
 // Padding of the menu entries
 // CSS property: padding
 //
-$menubar-item-padding-medium:						calc($vspacing-unit / 1.5) calc($hspacing-unit / 1.5);
-$menubar-item-padding-widest:						calc($vspacing-unit / 1.5) calc($hspacing-unit / 1.5);
+$menubar-item-padding-medium:						$vspacing-unit*0.6667 $hspacing-unit*0.6667;
+$menubar-item-padding-widest:						$vspacing-unit*0.6667 $hspacing-unit*0.6667;
 $menubar-subitem-padding-medium:					$vspacing-unit*0.25 $hspacing-unit;
 $menubar-subitem-padding-widest:					$vspacing-unit*0.25 $hspacing-unit;
 $menubar-subsubitem-padding-medium:					$vspacing-unit*0.25 $hspacing-unit;
