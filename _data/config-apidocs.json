@@ -195,7 +195,7 @@
       ],
       "generator": "api_doc.py 1.5.1"
     },
-    "name": "folio-spring-base",
+    "name": "folio-spring-support",
     "org": "folio-org"
   },
   {
