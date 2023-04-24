@@ -47,7 +47,7 @@ Use this for a concise note about the purpose.
 
 See examples:
 [raml-module-builder](/source-code/map/#raml-module-builder)
-and [ui-search](/source-code/map/#ui-search).
+and [ui-courses](/source-code/map/#ui-courses).
 
 ## The README introduction
 
