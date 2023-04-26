@@ -184,7 +184,7 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/swagger.api/tenant.yaml"
+        "folio-spring-base/src/main/resources/swagger.api/tenant.yaml"
       ],
       "raml": [],
       "upload": []

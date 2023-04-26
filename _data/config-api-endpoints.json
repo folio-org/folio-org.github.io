@@ -224,7 +224,7 @@
     "path": "/_/ramls"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/tenant.yaml",
+    "apiDescription": "folio-spring-base/src/main/resources/swagger.api/tenant.yaml",
     "apiType": "oas",
     "methods": "post:operation/postTenant",
     "name": "folio-spring-support",
@@ -259,7 +259,7 @@
     "path": "/_/tenant/{operation_id}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/tenant.yaml",
+    "apiDescription": "folio-spring-base/src/main/resources/swagger.api/tenant.yaml",
     "apiType": "oas",
     "methods": "delete:operation/deleteTenant get:operation/getTenant",
     "name": "folio-spring-support",
