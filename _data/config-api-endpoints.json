@@ -5709,6 +5709,13 @@
     "path": "/jobs/{id}/resend"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/kafka_message_schemas.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-consortia",
+    "path": "/kafka-stub-endpoint"
+  },
+  {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
     "interface": "ldp-query 1.1",
@@ -7312,7 +7319,7 @@
   {
     "apiDescription": "ramls/permissions.raml",
     "apiType": "raml",
-    "interface": "permissions 5.5",
+    "interface": "permissions 5.6",
     "methods": "get:perms_permissions_get post:perms_permissions_post",
     "name": "mod-permissions",
     "path": "/perms/permissions"
@@ -7320,7 +7327,7 @@
   {
     "apiDescription": "ramls/permissions.raml",
     "apiType": "raml",
-    "interface": "permissions 5.5",
+    "interface": "permissions 5.6",
     "methods": "delete:perms_permissions__id__delete get:perms_permissions__id__get put:perms_permissions__id__put",
     "name": "mod-permissions",
     "path": "/perms/permissions/{id}"
@@ -7328,7 +7335,7 @@
   {
     "apiDescription": "ramls/permissions.raml",
     "apiType": "raml",
-    "interface": "permissions 5.5",
+    "interface": "permissions 5.6",
     "methods": "post:perms_purge_deprecated_post",
     "name": "mod-permissions",
     "path": "/perms/purge-deprecated"
@@ -7336,7 +7343,7 @@
   {
     "apiDescription": "ramls/permissions.raml",
     "apiType": "raml",
-    "interface": "permissions 5.5",
+    "interface": "permissions 5.6",
     "methods": "get:perms_users_get post:perms_users_post",
     "name": "mod-permissions",
     "path": "/perms/users"
@@ -7344,7 +7351,7 @@
   {
     "apiDescription": "ramls/permissions.raml",
     "apiType": "raml",
-    "interface": "permissions 5.5",
+    "interface": "permissions 5.6",
     "methods": "delete:perms_users__id__delete get:perms_users__id__get put:perms_users__id__put",
     "name": "mod-permissions",
     "path": "/perms/users/{id}"
@@ -7352,7 +7359,7 @@
   {
     "apiDescription": "ramls/permissions.raml",
     "apiType": "raml",
-    "interface": "permissions 5.5",
+    "interface": "permissions 5.6",
     "methods": "get:perms_users__id__permissions_get post:perms_users__id__permissions_post",
     "name": "mod-permissions",
     "path": "/perms/users/{id}/permissions"
@@ -7360,7 +7367,7 @@
   {
     "apiDescription": "ramls/permissions.raml",
     "apiType": "raml",
-    "interface": "permissions 5.5",
+    "interface": "permissions 5.6",
     "methods": "delete:perms_users__id__permissions__permissionname__delete",
     "name": "mod-permissions",
     "path": "/perms/users/{id}/permissions/{permissionname}"
