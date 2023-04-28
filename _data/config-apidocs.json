@@ -184,7 +184,7 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/swagger.api/tenant.yaml"
+        "folio-spring-base/src/main/resources/swagger.api/tenant.yaml"
       ],
       "raml": [],
       "upload": []
@@ -369,6 +369,7 @@
     "config": {
       "oas": [
         "src/main/resources/swagger.api/consortia.yaml",
+        "src/main/resources/swagger.api/kafka_message_schemas.yaml",
         "src/main/resources/swagger.api/tenants.yaml",
         "src/main/resources/swagger.api/user_tenants.yaml"
       ],
@@ -1077,7 +1078,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-login-saml",
     "org": "folio-org"
@@ -1112,7 +1113,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-notify",
     "org": "folio-org"
@@ -1294,7 +1295,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-patron-blocks",
     "org": "folio-org"
@@ -1312,7 +1313,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-permissions",
     "org": "folio-org"
