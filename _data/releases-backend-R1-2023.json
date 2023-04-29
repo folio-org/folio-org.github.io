@@ -486,12 +486,12 @@
     {
       "name": "mod-permissions",
       "nameRepo": "mod-permissions",
-      "releaseDate": "2023-03-03T11:21:31+00:00",
+      "releaseDate": "2023-04-26T13:36:27+00:00",
       "releaseName": "",
-      "releaseSha": "6057b235689cf122bf73c4a00f1e2b41164c462c",
-      "releaseTag": "v6.3.1",
+      "releaseSha": "ae2323f7ab1fa77ea285b4d65a84f2350894c6bb",
+      "releaseTag": "v6.3.2",
       "releaseTarget": "master",
-      "version": "6.3.1"
+      "version": "6.3.2"
     },
     {
       "name": "mod-pubsub",
