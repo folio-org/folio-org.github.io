@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-04-20T23:34:24.264033+00:00"
+    "generatedDateTime": "2023-05-01T00:36:36.265352+00:00"
   },
   "repos": [
     {
@@ -506,7 +506,7 @@
       "org": "folio-org",
       "repoLanguageHint": "java",
       "repoType": "raml-shared",
-      "snippetIntro": "<p>This is a library (jar) that contains the basic functionality and main dependencies required for development of FOLIO modules using Spring framework (also known as 'Spring Way').</p>"
+      "snippetIntro": "<p>This is a library that contains the basic functionality and main dependencies required for development of FOLIO modules using Spring framework (also known as 'Spring Way').</p>"
     },
     {
       "defaultBranch": "master",
@@ -1258,7 +1258,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This module provides SAML2 SSO functionality for FOLIO.</p>"
+      "snippetIntro": "<p>This module provides SAML2 SSO functionality for FOLIO.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1307,7 +1317,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Notifications to the users</p>"
+      "snippetIntro": "<p>Notifications to the users</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1473,7 +1493,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>FOLIO module for automated patron blocks</p>"
+      "snippetIntro": "<p>FOLIO module for automated patron blocks</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1487,7 +1517,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This module stores permissions and associations between permissions and users. It also maintains a hierarchy of permissions and sub-permissions, allowing for permissions to act as roles, rather than simple bits. It is used primarily by the Authtoken module, though it is possible that some Authentication implementations may have reason to make calls to the Permissions module as well.</p>"
+      "snippetIntro": "<p>This module stores permissions and associations between permissions and users. It also maintains a hierarchy of permissions and sub-permissions, allowing for permissions to act as roles, rather than simple bits. It is used primarily by the Authtoken module, though it is possible that some Authentication implementations may have reason to make calls to the Permissions module as well.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2280,6 +2320,24 @@
       "repoLanguageHint": "node",
       "repoType": "stripes",
       "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Shared React Context used in Federation setup",
+      "docDirName": null,
+      "name": "stripes-shared-context",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "stripes",
+      "snippetIntro": "<p>List of React global contexts used in Webpack federation.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -3817,7 +3875,8 @@
       "snippetIntro": "<p>The Users UI Module, or <code>ui-users</code>, is a Stripes UI module used for searching, sorting, filtering, viewing, editing and creating users. (A 'Stripes UI module' is an NPM module that adheres to certain conventions that allow it to function within the <a href='https://github.com/folio-org/stripes-core/blob/master/README.md'>Stripes UI framework</a> that is part of FOLIO.)</p>",
       "workflows": [
         "build-npm-release.yml",
-        "build-npm.yml"
+        "build-npm.yml",
+        "publish-jest-results.yml"
       ],
       "workflowsFolio": [
         "build-npm-release.yml",
