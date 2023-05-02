@@ -5151,7 +5151,7 @@
   {
     "apiDescription": "ramls/inventory-update.raml",
     "apiType": "raml",
-    "interface": "inventory-batch-upsert-hrid 2.0",
+    "interface": "inventory-batch-upsert-hrid 2.1",
     "methods": "put:inventory_batch_upsert_hrid_put",
     "name": "mod-inventory-update",
     "path": "/inventory-batch-upsert-hrid"
@@ -5231,7 +5231,7 @@
   {
     "apiDescription": "ramls/inventory-update.raml",
     "apiType": "raml",
-    "interface": "inventory-upsert-hrid 2.0",
+    "interface": "inventory-upsert-hrid 2.1",
     "methods": "delete:inventory_upsert_hrid_delete put:inventory_upsert_hrid_put",
     "name": "mod-inventory-update",
     "path": "/inventory-upsert-hrid"
@@ -5239,7 +5239,7 @@
   {
     "apiDescription": "ramls/inventory-update.raml",
     "apiType": "raml",
-    "interface": "inventory-upsert-hrid 2.0",
+    "interface": "inventory-upsert-hrid 2.1",
     "methods": "get:inventory_upsert_hrid_fetch__id__get",
     "name": "mod-inventory-update",
     "path": "/inventory-upsert-hrid/fetch/{id}"
