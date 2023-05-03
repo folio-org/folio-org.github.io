@@ -31,3 +31,4 @@ invite you to provide feedback and explore ideas with us.  Join the
 
 The FOLIO Project is [grateful](about/thanks) for the support of contributors,
 other open source projects, and commercial providers.
+
