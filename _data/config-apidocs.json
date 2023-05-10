@@ -149,7 +149,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "edge-rtac",
     "org": "folio-org"
