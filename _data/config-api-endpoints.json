@@ -1826,7 +1826,7 @@
   {
     "apiDescription": "ramls/pick-slips.raml",
     "apiType": "raml",
-    "interface": "pick-slips 0.3",
+    "interface": "pick-slips 0.4",
     "methods": "get:circulation_pick_slips__servicepointid__get",
     "name": "mod-circulation",
     "path": "/circulation/pick-slips/{servicePointId}"
