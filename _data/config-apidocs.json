@@ -116,7 +116,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "edge-orders",
     "org": "folio-org"
@@ -371,6 +371,7 @@
       "oas": [
         "src/main/resources/swagger.api/consortia.yaml",
         "src/main/resources/swagger.api/kafka_message_schemas.yaml",
+        "src/main/resources/swagger.api/self.yaml",
         "src/main/resources/swagger.api/tenants.yaml",
         "src/main/resources/swagger.api/user_tenants.yaml"
       ],
@@ -1474,7 +1475,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-source-record-manager",
     "org": "folio-org"
@@ -1496,7 +1497,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-source-record-storage",
     "org": "folio-org"
