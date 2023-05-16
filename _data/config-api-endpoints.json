@@ -281,6 +281,13 @@
     "path": "/_/version"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/self.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getUserTenantsForCurrentUser",
+    "name": "mod-consortia",
+    "path": "/_self"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
     "apiType": "oas",
     "methods": "get:operation/getAccessions post:operation/postAccession",
