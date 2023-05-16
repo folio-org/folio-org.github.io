@@ -31,7 +31,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "edge-caiasoft",
     "org": "folio-org"
@@ -48,7 +48,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "edge-dematic",
     "org": "folio-org"
@@ -99,7 +99,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "edge-oai-pmh",
     "org": "folio-org"
@@ -116,7 +116,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "edge-orders",
     "org": "folio-org"
@@ -133,7 +133,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "edge-patron",
     "org": "folio-org"
@@ -149,7 +149,8 @@
     "metadata": {
       "apiTypes": [
         "RAML"
-      ]
+      ],
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "edge-rtac",
     "org": "folio-org"
@@ -230,7 +231,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.1"
     },
     "name": "mod-audit",
     "org": "folio-org"
@@ -370,6 +371,7 @@
       "oas": [
         "src/main/resources/swagger.api/consortia.yaml",
         "src/main/resources/swagger.api/kafka_message_schemas.yaml",
+        "src/main/resources/swagger.api/self.yaml",
         "src/main/resources/swagger.api/tenants.yaml",
         "src/main/resources/swagger.api/user_tenants.yaml"
       ],
@@ -1010,7 +1012,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-kb-ebsco-java",
     "org": "folio-org"
@@ -1134,7 +1136,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-oai-pmh",
     "org": "folio-org"
@@ -1274,7 +1276,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-patron",
     "org": "folio-org"
@@ -1436,7 +1438,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-sender",
     "org": "folio-org"
@@ -1473,7 +1475,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-source-record-manager",
     "org": "folio-org"
@@ -1495,7 +1497,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-source-record-storage",
     "org": "folio-org"
@@ -1560,6 +1562,7 @@
         "ramls/groups.raml",
         "ramls/patronpin.raml",
         "ramls/proxiesFor.raml",
+        "ramls/userTenants.raml",
         "ramls/users.raml"
       ],
       "upload": []
