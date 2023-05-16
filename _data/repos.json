@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-04-20T23:34:24.264033+00:00"
+    "generatedDateTime": "2023-05-15T23:40:33.921643+00:00"
   },
   "repos": [
     {
@@ -176,7 +176,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": "<p>Edge API for Metadata Harvesting (<a href='http://www.openarchives.org/OAI/openarchivesprotocol.html'>OAI-PMH Version 2.0</a>)</p>"
+      "snippetIntro": "<p>Edge API for Metadata Harvesting (<a href='http://www.openarchives.org/OAI/openarchivesprotocol.html'>OAI-PMH Version 2.0</a>)</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -187,7 +197,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between 3rd party purchasing systems/vendors and FOLIO.  More specifically, the initial implementation was built with EBSCO's GOBI (Global Online Bibliographic Interface) service in mind.</p>"
+      "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between 3rd party purchasing systems/vendors and FOLIO.  More specifically, the initial implementation was built with EBSCO's GOBI (Global Online Bibliographic Interface) service in mind.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -198,7 +218,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": "<p>Edge API to interface with FOLIO for 3rd party discovery services to allow patrons to perform self-service actions (place holds, renewals, etc)</p>"
+      "snippetIntro": "<p>Edge API to interface with FOLIO for 3rd party discovery services to allow patrons to perform self-service actions (place holds, renewals, etc)</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -506,7 +536,7 @@
       "org": "folio-org",
       "repoLanguageHint": "java",
       "repoType": "raml-shared",
-      "snippetIntro": "<p>This is a library (jar) that contains the basic functionality and main dependencies required for development of FOLIO modules using Spring framework (also known as 'Spring Way').</p>"
+      "snippetIntro": "<p>This is a library that contains the basic functionality and main dependencies required for development of FOLIO modules using Spring framework (also known as 'Spring Way').</p>"
     },
     {
       "defaultBranch": "master",
@@ -1198,7 +1228,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Broker communication with the EBSCO knowledge base (Java)</p>"
+      "snippetIntro": "<p>Broker communication with the EBSCO knowledge base (Java)</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1258,7 +1298,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This module provides SAML2 SSO functionality for FOLIO.</p>"
+      "snippetIntro": "<p>This module provides SAML2 SSO functionality for FOLIO.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1307,7 +1357,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Notifications to the users</p>"
+      "snippetIntro": "<p>Notifications to the users</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1335,7 +1395,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Backend Module implementing the Open Archives Initiative Protocol for Metadata Harvesting (<a href='http://www.openarchives.org/OAI/openarchivesprotocol.html'>OAI-PMH Version 2.0</a>), but providing more RESTful API than described in the specification.  At the core places the /oai/records endpoint which accepts verb name as main parameter which defines what type of request is and which handler should ve invoked for processing the request.</p>"
+      "snippetIntro": "<p>Backend Module implementing the Open Archives Initiative Protocol for Metadata Harvesting (<a href='http://www.openarchives.org/OAI/openarchivesprotocol.html'>OAI-PMH Version 2.0</a>), but providing more RESTful API than described in the specification.  At the core places the /oai/records endpoint which accepts verb name as main parameter which defines what type of request is and which handler should ve invoked for processing the request.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1459,7 +1529,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Microservice to allow 3rd party discovery services to perform FOLIO patron actions via the discovery service's UI.</p>"
+      "snippetIntro": "<p>Microservice to allow 3rd party discovery services to perform FOLIO patron actions via the discovery service's UI.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1473,7 +1553,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>FOLIO module for automated patron blocks</p>"
+      "snippetIntro": "<p>FOLIO module for automated patron blocks</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1487,7 +1577,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This module stores permissions and associations between permissions and users. It also maintains a hierarchy of permissions and sub-permissions, allowing for permissions to act as roles, rather than simple bits. It is used primarily by the Authtoken module, though it is possible that some Authentication implementations may have reason to make calls to the Permissions module as well.</p>"
+      "snippetIntro": "<p>This module stores permissions and associations between permissions and users. It also maintains a hierarchy of permissions and sub-permissions, allowing for permissions to act as roles, rather than simple bits. It is used primarily by the Authtoken module, though it is possible that some Authentication implementations may have reason to make calls to the Permissions module as well.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1627,7 +1727,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Sending messages through delivery channels</p>"
+      "snippetIntro": "<p>Sending messages through delivery channels</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1675,7 +1785,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>FOLIO source record manager module.</p>"
+      "snippetIntro": "<p>FOLIO source record manager module.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1686,7 +1806,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>FOLIO compatible source record storage module.</p>"
+      "snippetIntro": "<p>FOLIO compatible source record storage module.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "main",
@@ -2280,6 +2410,24 @@
       "repoLanguageHint": "node",
       "repoType": "stripes",
       "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Shared React Context used in Federation setup",
+      "docDirName": null,
+      "name": "stripes-shared-context",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "stripes",
+      "snippetIntro": "<p>List of React global contexts used in Webpack federation.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -3817,7 +3965,8 @@
       "snippetIntro": "<p>The Users UI Module, or <code>ui-users</code>, is a Stripes UI module used for searching, sorting, filtering, viewing, editing and creating users. (A 'Stripes UI module' is an NPM module that adheres to certain conventions that allow it to function within the <a href='https://github.com/folio-org/stripes-core/blob/master/README.md'>Stripes UI framework</a> that is part of FOLIO.)</p>",
       "workflows": [
         "build-npm-release.yml",
-        "build-npm.yml"
+        "build-npm.yml",
+        "publish-jest-results.yml"
       ],
       "workflowsFolio": [
         "build-npm-release.yml",
