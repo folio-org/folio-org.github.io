@@ -231,7 +231,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-audit",
     "org": "folio-org"
@@ -370,6 +370,7 @@
     "config": {
       "oas": [
         "src/main/resources/swagger.api/consortia.yaml",
+        "src/main/resources/swagger.api/consortia_configuration.yaml",
         "src/main/resources/swagger.api/kafka_message_schemas.yaml",
         "src/main/resources/swagger.api/self.yaml",
         "src/main/resources/swagger.api/tenants.yaml",
@@ -496,7 +497,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-data-import",
     "org": "folio-org"
@@ -515,7 +516,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-di-converter-storage",
     "org": "folio-org"
