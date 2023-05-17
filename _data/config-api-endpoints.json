@@ -2193,6 +2193,14 @@
     "path": "/consortia"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/consortia_configuration.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.0",
+    "methods": "get:operation/getConfiguration post:operation/saveConfiguration",
+    "name": "mod-consortia",
+    "path": "/consortia-configuration"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
     "apiType": "oas",
     "interface": "consortia 1.0",
@@ -8153,7 +8161,7 @@
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "interface": "source-storage-batch 1.1",
+    "interface": "source-storage-batch 1.2",
     "methods": "put:source_storage_batch_parsed_records_put",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/parsed-records"
@@ -8161,7 +8169,15 @@
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "interface": "source-storage-batch 1.1",
+    "interface": "source-storage-batch 1.2",
+    "methods": "post:source_storage_batch_parsed_records_fetch_post",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/batch/parsed-records/fetch"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-batch.raml",
+    "apiType": "raml",
+    "interface": "source-storage-batch 1.2",
     "methods": "post:source_storage_batch_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/records"
@@ -8169,7 +8185,7 @@
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "interface": "source-storage-batch 1.1",
+    "interface": "source-storage-batch 1.2",
     "methods": "post:source_storage_batch_verified_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/verified-records"
