@@ -20,7 +20,7 @@ In its left-hand panel, select "View as plain text". Then save the page to local
 Now use 'grep' or some such to detect certain patterns:
 
 ```shell
-cat ~/Downloads/consoleText | egrep "Connection refused:|Incompatible version|Missing dependency:|Invalid URL path requested|no such image:|Timed out after waiting" > tmp1
+cat ~/Downloads/consoleText | egrep "Connection refused:|Connection failure:|Incompatible version|Missing dependency:|Invalid URL path requested|no such image:|Timed out after waiting" > tmp1
 ```
 
 ```shell
