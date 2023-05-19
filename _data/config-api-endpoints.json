@@ -1005,7 +1005,7 @@
     "apiDescription": "ramls/authorities-reindex.raml",
     "apiType": "raml",
     "interface": "authority-reindex 0.1",
-    "methods": "post:authority_storage_reindex_post",
+    "methods": "get:authority_storage_reindex_get post:authority_storage_reindex_post",
     "name": "mod-inventory-storage",
     "path": "/authority-storage/reindex"
   },
@@ -5121,7 +5121,7 @@
     "apiDescription": "ramls/instance-reindex.raml",
     "apiType": "raml",
     "interface": "instance-reindex 0.1",
-    "methods": "post:instance_storage_reindex_post",
+    "methods": "get:instance_storage_reindex_get post:instance_storage_reindex_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/reindex"
   },
@@ -7632,7 +7632,7 @@
   {
     "apiDescription": "ramls/request-storage.raml",
     "apiType": "raml",
-    "interface": "request-storage 5.1",
+    "interface": "request-storage 6.0",
     "methods": "delete:request_storage_requests_delete get:request_storage_requests_get post:request_storage_requests_post",
     "name": "mod-circulation-storage",
     "path": "/request-storage/requests"
@@ -7640,7 +7640,7 @@
   {
     "apiDescription": "ramls/request-storage.raml",
     "apiType": "raml",
-    "interface": "request-storage 5.1",
+    "interface": "request-storage 6.0",
     "methods": "delete:request_storage_requests__requestid__delete get:request_storage_requests__requestid__get put:request_storage_requests__requestid__put",
     "name": "mod-circulation-storage",
     "path": "/request-storage/requests/{requestId}"
