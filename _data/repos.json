@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-05-15T23:40:33.921643+00:00"
+    "generatedDateTime": "2023-05-22T00:29:33.836323+00:00"
   },
   "repos": [
     {
@@ -13,6 +13,9 @@
       "repoType": "raml-shared",
       "snippetIntro": "",
       "workflows": [
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
         "api-schema-lint.yml"
       ]
     },
@@ -39,6 +42,9 @@
       "repoType": "raml-shared",
       "snippetIntro": "<p>This repository contains json schemas and examples for entities involved in data-import flow. It is utilized as a git submodule ('raml-storage' directory) in each of the following repositories:</p>",
       "workflows": [
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
         "api-schema-lint.yml"
       ]
     },
@@ -146,6 +152,7 @@
       "snippetIntro": "<p>A Spring based shared library/framework for edge APIs to INN-REACH system.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": null,
       "docDirName": "docs",
@@ -154,7 +161,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": "<p>The purpose of this edge module is to connect LMS such as Sakai and Blackboard (LTI Platforms) to Folio via the <a href='https://www.imsglobal.org/lti-advantage-overview'>LTI Advantage</a> protocol for the purposes of sharing the course reserves stored in Folio.</p>"
+      "snippetIntro": "<p>The purpose of this edge module is to connect LMS such as Sakai and Blackboard (LTI Platforms) to Folio via the <a href='https://www.imsglobal.org/lti-advantage-overview'>LTI Advantage</a> protocol for the purposes of sharing the course reserves stored in Folio.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -168,6 +185,7 @@
       "snippetIntro": "<p>Edge API for mod-ncip</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Edge API for Metadata Harvesting",
       "docDirName": null,
@@ -189,6 +207,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -210,6 +229,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -231,6 +251,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": " Edge API for RTAC (RealTime Availability Check)",
       "docDirName": null,
@@ -239,7 +260,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": "<p>Edge API to interface with FOLIO for 3rd party discovery services to determine holdings availability.</p>"
+      "snippetIntro": "<p>Edge API to interface with FOLIO for 3rd party discovery services to determine holdings availability.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -559,6 +590,7 @@
       "snippetIntro": ""
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Lightweight FOLIO module development library for Vert.x that supports OpenAPI",
       "docDirName": null,
@@ -569,6 +601,11 @@
       "repoType": "raml-shared",
       "snippetIntro": "<p><a href='https://github.com/folio-org/folio-vertx-lib'>folio-vertx-lib</a> is a library for developing FOLIO modules based on Vert.x. This is a library, not a framework, with utilities such as:</p>",
       "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
         "api-doc.yml",
         "api-lint.yml",
         "api-schema-lint.yml"
@@ -662,6 +699,7 @@
       "snippetIntro": "<p>Mod-Agreements is a FOLIO module to manage agreements which control an institutions access to resources. Normally, this will be  subscribed access to packages of electronic resources, although the aim is to make the affordances offered by mod-agreements as general as possible.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Module for managing audit data",
       "docDirName": null,
@@ -670,7 +708,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>The mod-audit module provides API to access and modify audit data.</p>"
+      "snippetIntro": "<p>The mod-audit module provides API to access and modify audit data.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -774,6 +822,7 @@
       "snippetIntro": "<p>APIs for Consortia module.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Backend module for importing records from remote systems for copy cataloging",
       "docDirName": "doc",
@@ -785,9 +834,20 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p><a href='https://github.com/folio-org/mod-copycat'>mod-copycat</a> is a FOLIO  module that assists in Copy cataloging. It can import records from remote systems using Z39.50 or a straight MARC record can be provided.</p>"
+      "snippetIntro": "<p><a href='https://github.com/folio-org/mod-copycat'>mod-copycat</a> is a FOLIO  module that assists in Copy cataloging. It can import records from remote systems using Z39.50 or a straight MARC record can be provided.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Backend CRUD storage module to support the Course Reserves functionality",
       "docDirName": null,
@@ -799,9 +859,20 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Backend CRUD storage module to support the Course Reserves functionality.</p>"
+      "snippetIntro": "<p>Backend CRUD storage module to support the Course Reserves functionality.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Exporting inventory records",
       "docDirName": null,
@@ -813,7 +884,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>FOLIO data export module.</p>"
+      "snippetIntro": "<p>FOLIO data export module.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -842,6 +923,7 @@
       "snippetIntro": "<p>API for Data Export Worker module.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -853,7 +935,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>mod-data-import is responsible for uploading files (see <a href='https://github.com/folio-org/mod-data-import/blob/master/FileUploadApi.md'>documentation for file uploading</a>), initial handling and sending records for further processing (see <a href='https://github.com/folio-org/mod-data-import/blob/master/FileProcessingApi.md'>documentation for file processing</a>).</p>"
+      "snippetIntro": "<p>mod-data-import is responsible for uploading files (see <a href='https://github.com/folio-org/mod-data-import/blob/master/FileUploadApi.md'>documentation for file uploading</a>), initial handling and sending records for further processing (see <a href='https://github.com/folio-org/mod-data-import/blob/master/FileProcessingApi.md'>documentation for file processing</a>).</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -867,6 +959,7 @@
       "snippetIntro": ""
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Data import converter storage",
       "docDirName": null,
@@ -875,7 +968,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Data Import Converter Storage.</p>"
+      "snippetIntro": "<p>Data Import Converter Storage.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "main",
@@ -904,6 +1007,7 @@
       "snippetIntro": "<p>Backend module for integration with Ebsconet external systems</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Provides functionality for sending notifications",
       "docDirName": null,
@@ -915,7 +1019,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p><code>mod-email</code> provides an API for delivering email messages.</p>"
+      "snippetIntro": "<p><code>mod-email</code> provides an API for delivering email messages.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -964,9 +1078,11 @@
       "snippetIntro": "<p>Module for harvesting counter reports.</p>"
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Parsing and storing relationships between COUNTER report lines and KB items, and for storing access statistics (access numbers and cost) for specific periods",
       "docDirName": "doc",
+      "hintOas": true,
       "name": "mod-eusage-reports",
       "org": "folio-org",
       "ramlDirName": null,
@@ -1013,6 +1129,7 @@
       "snippetIntro": "<p>Module to provide central feesfines management for FOLIO systems.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Finance business logic",
       "docDirName": null,
@@ -1037,6 +1154,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "CRUD module to manage finance-data (i.e. ledgers, funds, budgets, etc.)",
       "docDirName": null,
@@ -1075,6 +1193,7 @@
       "snippetIntro": "<p>Backend module for both ui-finc-config and ui-finc-select.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -1086,7 +1205,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>GOBI\u00ae (Global Online Bibliographic Information) is the leading web-based acquisitions tool for finding, ordering and managing e-books and print books for libraries. This module allows GOBI initiated orders to be fulfilled by FOLIO.</p>"
+      "snippetIntro": "<p>GOBI\u00ae (Global Online Bibliographic Information) is the leading web-based acquisitions tool for finding, ordering and managing e-books and print books for libraries. This module allows GOBI initiated orders to be fulfilled by FOLIO.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1169,6 +1298,7 @@
       "snippetIntro": "<p>Mod-inventory-update (MIU) is an Okapi service that can be put in front of mod-inventory-storage (Inventory Storage) for populating the storage with Instances, holdings and items according to one of multiple different update schemes.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Invoice business logic",
       "docDirName": null,
@@ -1193,6 +1323,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Persistent storage of invoice data",
       "docDirName": null,
@@ -1217,6 +1348,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Broker communication with the EBSCO knowledge base (Java)",
       "docDirName": null,
@@ -1263,6 +1395,7 @@
       "snippetIntro": "<p>FOLIO service module - licenses.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Module to handle username/password login",
       "docDirName": null,
@@ -1287,6 +1420,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "FOLIO SAML login module",
       "docDirName": null,
@@ -1346,6 +1480,7 @@
       "snippetIntro": "<p>Notes on all types of objects.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Notifications to the users",
       "docDirName": null,
@@ -1384,6 +1519,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Backend Module implementing the OAI-PMH metadata harvesting protocol",
       "docDirName": null,
@@ -1408,6 +1544,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Orders business logic module",
       "docDirName": null,
@@ -1433,6 +1570,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Storage (CRUD) module for Orders",
       "docDirName": null,
@@ -1457,6 +1595,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Organizations business logic module",
       "docDirName": null,
@@ -1481,6 +1620,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Persistent storage of organizations data",
       "docDirName": null,
@@ -1518,6 +1658,7 @@
       "snippetIntro": "<p>The module provides a default rule set for a tenant and functionality to manage them via REST API and also allows to use a validation flow for a user password.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -1542,6 +1683,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "FOLIO module for automated patron blocks",
       "docDirName": null,
@@ -1566,6 +1708,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Module to handle permissions and permissions/user associations",
       "docDirName": null,
@@ -1590,6 +1733,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Publisher-subscriber module to provide event-driven approach",
       "docDirName": null,
@@ -1686,6 +1830,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -1697,7 +1842,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Microservice to allow 3rd party discovery services to determine the availability of FOLIO inventory.</p>"
+      "snippetIntro": "<p>Microservice to allow 3rd party discovery services to determine the availability of FOLIO inventory.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1716,6 +1871,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Sending messages through delivery channels",
       "docDirName": null,
@@ -1777,6 +1933,7 @@
       "snippetIntro": "<p>mod-settings is a key-value store that provides a more secure configuration system than the old mod-configuration.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -1798,6 +1955,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Persistent source record storage",
       "docDirName": null,
@@ -1856,6 +2014,7 @@
       "snippetIntro": "<p>Central list of tags that can be assigned to various objects. Tags are simple strings like 'urgent', or 'important'. These are kept as an array of string values in the various objects that use them. This module provides a centralized repository of allowed values, which can be used for populating pull-down lists etc. The coupling is intentionally rather weak, it will be up to the UI to enforce the use of authorized tags, or not, as each library will want, and/or insert new tags into this module when the user uses a new one.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Stores templates and generates files by using them",
       "docDirName": null,
@@ -1891,6 +2050,7 @@
       "snippetIntro": "<p>Each FOLIO installation has lists of controlled vocabulary terms (for instance, \u201cFormats\u201d and \u201cResource types\u201d in Inventory, \u201cPatron Groups\u201d and \u201cRefund Reasons\u201d in Users \u2014 see <a href='https://issues.folio.org/browse/FOLIO-2802'>FOLIO-2802</a> for a more complete list).  In installations that use more than one language, these terms do not display translated values when the locale of the session is changed.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Import new or already existing users",
       "docDirName": null,
@@ -1915,6 +2075,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Domain Model to Manage Users",
       "docDirName": null,
@@ -1939,6 +2100,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Business logic \"join\" module to provide simple access to all user-centric data",
       "docDirName": null,
@@ -1984,6 +2146,7 @@
       "snippetIntro": "<p><a href='https://github.com/folio-org/Net-Z3950-FOLIO/blob/master/bin/z2folio'><code>z2folio</code></a> is a Z39.50 server for FOLIO bibliographic and holdings data, supporting record retrieval in USMARC, OPAC, XML and JSON formats. The functionality is all provided by <a href='https://github.com/folio-org/Net-Z3950-FOLIO/blob/master/lib/Net/Z3950/FOLIO.pm'>the <code>Net::Z3950::FOLIO</code> library</a>, which is also part of this distribution. It is written in Perl, and follows standard Perl-module conventions.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Okapi  core and modules",
       "docDirName": "doc",
@@ -2106,6 +2269,7 @@
       "snippetIntro": ""
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "raml1.0",
       "description": "Repository of RAML files, including JSON schemas, traits and resource types centralized for re-usability",
       "docDirName": null,
@@ -2118,9 +2282,15 @@
         "api-doc.yml",
         "api-lint.yml",
         "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Framework allowing easy module creation based on RAML files",
       "docDirName": "doc",

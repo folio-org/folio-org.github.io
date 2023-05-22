@@ -82,7 +82,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "edge-lti-courses",
     "org": "folio-org"
@@ -150,7 +150,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "edge-rtac",
     "org": "folio-org"
@@ -231,7 +231,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-audit",
     "org": "folio-org"
@@ -370,6 +370,7 @@
     "config": {
       "oas": [
         "src/main/resources/swagger.api/consortia.yaml",
+        "src/main/resources/swagger.api/consortia_configuration.yaml",
         "src/main/resources/swagger.api/kafka_message_schemas.yaml",
         "src/main/resources/swagger.api/self.yaml",
         "src/main/resources/swagger.api/tenants.yaml",
@@ -399,7 +400,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-copycat",
     "org": "folio-org"
@@ -416,7 +417,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-courses",
     "org": "folio-org"
@@ -438,7 +439,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-data-export",
     "org": "folio-org"
@@ -496,7 +497,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-data-import",
     "org": "folio-org"
@@ -515,7 +516,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-di-converter-storage",
     "org": "folio-org"
@@ -551,7 +552,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-email",
     "org": "folio-org"
@@ -788,7 +789,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-gobi",
     "org": "folio-org"

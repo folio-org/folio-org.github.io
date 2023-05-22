@@ -1005,7 +1005,7 @@
     "apiDescription": "ramls/authorities-reindex.raml",
     "apiType": "raml",
     "interface": "authority-reindex 0.1",
-    "methods": "post:authority_storage_reindex_post",
+    "methods": "get:authority_storage_reindex_get post:authority_storage_reindex_post",
     "name": "mod-inventory-storage",
     "path": "/authority-storage/reindex"
   },
@@ -2191,6 +2191,14 @@
     "methods": "get:operation/getConsortiumCollection post:operation/saveConsortium",
     "name": "mod-consortia",
     "path": "/consortia"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/consortia_configuration.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.0",
+    "methods": "get:operation/getConfiguration post:operation/saveConfiguration",
+    "name": "mod-consortia",
+    "path": "/consortia-configuration"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
@@ -5113,7 +5121,7 @@
     "apiDescription": "ramls/instance-reindex.raml",
     "apiType": "raml",
     "interface": "instance-reindex 0.1",
-    "methods": "post:instance_storage_reindex_post",
+    "methods": "get:instance_storage_reindex_get post:instance_storage_reindex_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/reindex"
   },
@@ -7624,7 +7632,7 @@
   {
     "apiDescription": "ramls/request-storage.raml",
     "apiType": "raml",
-    "interface": "request-storage 5.1",
+    "interface": "request-storage 6.0",
     "methods": "delete:request_storage_requests_delete get:request_storage_requests_get post:request_storage_requests_post",
     "name": "mod-circulation-storage",
     "path": "/request-storage/requests"
@@ -7632,7 +7640,7 @@
   {
     "apiDescription": "ramls/request-storage.raml",
     "apiType": "raml",
-    "interface": "request-storage 5.1",
+    "interface": "request-storage 6.0",
     "methods": "delete:request_storage_requests__requestid__delete get:request_storage_requests__requestid__get put:request_storage_requests__requestid__put",
     "name": "mod-circulation-storage",
     "path": "/request-storage/requests/{requestId}"
@@ -8153,7 +8161,7 @@
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "interface": "source-storage-batch 1.1",
+    "interface": "source-storage-batch 1.2",
     "methods": "put:source_storage_batch_parsed_records_put",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/parsed-records"
@@ -8161,7 +8169,15 @@
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "interface": "source-storage-batch 1.1",
+    "interface": "source-storage-batch 1.2",
+    "methods": "post:source_storage_batch_parsed_records_fetch_post",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/batch/parsed-records/fetch"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-batch.raml",
+    "apiType": "raml",
+    "interface": "source-storage-batch 1.2",
     "methods": "post:source_storage_batch_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/records"
@@ -8169,7 +8185,7 @@
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "interface": "source-storage-batch 1.1",
+    "interface": "source-storage-batch 1.2",
     "methods": "post:source_storage_batch_verified_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/verified-records"
