@@ -3519,6 +3519,14 @@
     "path": "/erm-usage-harvester/jobs"
   },
   {
+    "apiDescription": "ramls/harvester.raml",
+    "apiType": "raml",
+    "interface": "erm-usage-harvester 1.4",
+    "methods": "post:erm_usage_harvester_jobs_purgefinished_post",
+    "name": "mod-erm-usage-harvester",
+    "path": "/erm-usage-harvester/jobs/purgefinished"
+  },
+  {
     "apiDescription": "ramls/periodic.raml",
     "apiType": "raml",
     "interface": "erm-usage-harvester 1.4",
@@ -8626,7 +8634,7 @@
     "apiDescription": "ramls/userTenants.raml",
     "apiType": "raml",
     "interface": "user-tenants 1.0",
-    "methods": "get:user_tenants_get",
+    "methods": "get:user_tenants_get post:user_tenants_post",
     "name": "mod-users",
     "path": "/user-tenants"
   },
