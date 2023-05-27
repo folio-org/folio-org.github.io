@@ -265,7 +265,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-bulk-operations",
     "org": "folio-org"
@@ -361,7 +361,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-configuration",
     "org": "folio-org"
@@ -383,7 +383,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-consortia",
     "org": "folio-org"
@@ -569,7 +569,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-entities-links",
     "org": "folio-org"
@@ -1422,7 +1422,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-search",
     "org": "folio-org"

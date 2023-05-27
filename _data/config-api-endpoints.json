@@ -1380,7 +1380,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.1",
+    "interface": "browse 1.2",
     "methods": "get:operation/browseAuthorities",
     "name": "mod-search",
     "path": "/browse/authorities"
@@ -1388,7 +1388,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.1",
+    "interface": "browse 1.2",
     "methods": "get:operation/browseInstancesByCallNumber",
     "name": "mod-search",
     "path": "/browse/call-numbers/instances"
@@ -1396,7 +1396,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.1",
+    "interface": "browse 1.2",
     "methods": "get:operation/browseInstancesByContributor",
     "name": "mod-search",
     "path": "/browse/contributors/instances"
@@ -1404,7 +1404,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.1",
+    "interface": "browse 1.2",
     "methods": "get:operation/browseInstancesBySubject",
     "name": "mod-search",
     "path": "/browse/subjects/instances"
