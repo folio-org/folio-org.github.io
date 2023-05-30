@@ -311,7 +311,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-circulation",
     "org": "folio-org"
@@ -457,7 +457,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-data-export-spring",
     "org": "folio-org"
@@ -1351,7 +1351,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-quick-marc",
     "org": "folio-org"
