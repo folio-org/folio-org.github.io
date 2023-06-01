@@ -1380,7 +1380,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.1",
+    "interface": "browse 1.2",
     "methods": "get:operation/browseAuthorities",
     "name": "mod-search",
     "path": "/browse/authorities"
@@ -1388,7 +1388,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.1",
+    "interface": "browse 1.2",
     "methods": "get:operation/browseInstancesByCallNumber",
     "name": "mod-search",
     "path": "/browse/call-numbers/instances"
@@ -1396,7 +1396,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.1",
+    "interface": "browse 1.2",
     "methods": "get:operation/browseInstancesByContributor",
     "name": "mod-search",
     "path": "/browse/contributors/instances"
@@ -1404,7 +1404,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.1",
+    "interface": "browse 1.2",
     "methods": "get:operation/browseInstancesBySubject",
     "name": "mod-search",
     "path": "/browse/subjects/instances"
@@ -3517,6 +3517,14 @@
     "methods": "get:erm_usage_harvester_jobs_get",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/jobs"
+  },
+  {
+    "apiDescription": "ramls/harvester.raml",
+    "apiType": "raml",
+    "interface": "erm-usage-harvester 1.4",
+    "methods": "post:erm_usage_harvester_jobs_purgefinished_post",
+    "name": "mod-erm-usage-harvester",
+    "path": "/erm-usage-harvester/jobs/purgefinished"
   },
   {
     "apiDescription": "ramls/periodic.raml",
@@ -5801,6 +5809,14 @@
     "methods": "get:operation/getInstanceAuthorityLinkingRuleById patch:operation/patchInstanceAuthorityLinkingRuleById",
     "name": "mod-entities-links",
     "path": "/linking-rules/instance-authority/{ruleId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
+    "interface": "instance-authority-links-suggestions 1.0",
+    "methods": "post:operation/suggestLinksForMarcRecord",
+    "name": "mod-entities-links",
+    "path": "/links-suggestions/marc"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
@@ -8626,7 +8642,7 @@
     "apiDescription": "ramls/userTenants.raml",
     "apiType": "raml",
     "interface": "user-tenants 1.0",
-    "methods": "get:user_tenants_get",
+    "methods": "get:user_tenants_get post:user_tenants_post",
     "name": "mod-users",
     "path": "/user-tenants"
   },
