@@ -9,7 +9,7 @@ menuTopTitle: Tutorials
 
 This lesson shows some ways to interact with this FOLIO VM.
 
-(**Note**: As explained in [Lesson 1](/tutorials/folio-vm/01-create-workspace/), if the VM is recently launched then **wait a while** because Okapi will still be starting modules.)
+(**Note**: As explained in [Lesson 1](/tutorials/folio-vm/01-create-workspace/), if the VM is recently launched then **wait a while**, about 5-30 minutes, because Okapi will still be starting modules.)
 
 ## Interact via web browser
 
