@@ -13,7 +13,7 @@ This lesson will establish the local workspace, explain how to launch the box, h
 
 Make a fresh directory, change into it and create the Vagrantfile.
 
-For the stable and current FOLIO flower release use this:
+For the stable and current [FOLIO flower release](/guides/regular-releases/) use this:
 
 ```
 mkdir folio-release
