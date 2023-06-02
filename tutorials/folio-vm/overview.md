@@ -20,6 +20,7 @@ Determine the version of VirtualBox to [match](https://www.vagrantup.com/docs/vi
 To use curl to interact with Okapi from outside the VM, of course curl is needed on the host system.
 Note that Vagrant has a packaged curl, so that can be used from within the VM.
 Easier-to-use interactive and command-line tools are available (see FAQ [How to use APIs](/faqs/how-to-use-apis/)).
+Some tools (such as HTTPie) enable copy-and-paste of the actual 'curl' command.
 
 ## Background
 
@@ -30,18 +31,9 @@ These are [available](https://github.com/folio-org/folio-ansible/blob/master/doc
 (Note that that link is only for explaining the various boxes.
 The first Lesson of this Tutorial will establish one for local use.)
 
-<a id="old-vm"></a>This tutorial will only focus on the old `folio/release-core` VM.
-If your host machine has sufficient resources available (e.g. memory) then it would be possible to use the `folio/snapshot` VM instead, which has the full set of FOLIO apps.
-
 <div class="attention">
-Note: Due to the discontinuation of snapshot-core
-(<a href="https://issues.folio.org/browse/FOLIO-3292">FOLIO-3292</a>)
-and the platform-minimal has not yet happened
-(<a href="https://issues.folio.org/browse/FOLIO-1730">FOLIO-1730</a>
-and <a href="https://issues.folio.org/browse/FOLIO-3253">FOLIO-3253</a>),
-this tutorial still refers to an old "release-core".
-That is for the Juniper R2-2021 release -- subsequent "<a href="https://dev.folio.org/guides/regular-releases/">flower releases</a>" do not have a "release-core" VM,
-nor do they yet have a "release" VM (<a href="https://issues.folio.org/browse/FOLIO-3686">FOLIO-3686</a>).
+Note: Using the "folio/release" VM will require your host machine to have sufficient resources available (e.g. memory).
+To instead use the "folio/snapshot" VM, which has the full set of FOLIO apps, will require even more resources.
 </div>
 
 ## Troubleshooting and known issues

@@ -11,16 +11,39 @@ This lesson will establish the local workspace, explain how to launch the box, h
 
 ## Create local workspace
 
-Make a fresh directory and change into it:
+Make a fresh directory, change into it and create the Vagrantfile.
+
+For the stable and current [FOLIO flower release](/guides/regular-releases/) use this:
 
 ```
-mkdir vm-release-core && cd vm-release-core
+mkdir folio-release
+cd folio-release
+cat > Vagrantfile << 'EOF'
+Vagrant.configure("2") do |config|
+  config.vm.box = "folio/release"
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = 24576
+    vb.cpus = 2
+  end
+end
+EOF
 ```
 
-Initialise the Vagrantfile:
+As a developer you may use the daily snapshot instead. It contains
+the head of development but may break sometimes:
 
 ```
-vagrant init --minimal folio/release-core
+mkdir folio-snapshot
+cd folio-snapshot
+cat > Vagrantfile << 'EOF'
+Vagrant.configure("2") do |config|
+  config.vm.box = "folio/snapshot"
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = 24576
+    vb.cpus = 2
+  end
+end
+EOF
 ```
 
 That setup was a once-off task.
@@ -30,23 +53,7 @@ will be shared on the guest at the /vagrant mount point.
 
 ## Configure Vagrantfile
 
-<div class="attention">
-Note: As <a href="/tutorials/folio-vm/overview/#old-vm">explained</a>
-in the Overview, the "release-core" VM is out-of-date.
-</div>
-
-If you decide to use a larger VM instead (e.g. `folio/snapshot`) then modify the instructions in the [previous section](#create-local-workspace).
-Also modify the generated Vagrantfile to enable more memory (perhaps 24 MiB or maybe more):
-
-```
-Vagrant.configure("2") do |config|
-  config.vm.box = "folio/snapshot"
-  config.vm.provider "virtualbox" do |vb|
-    vb.memory = 24576
-    vb.cpus = 2
-  end
-end
-```
+Modify the Vagrantfile as needed, for example increasing allowed memory and cpus.
 
 ## Launch the guest
 
@@ -60,7 +67,8 @@ The output will show the VM starting.
 (If this is the first launch then the box will be downloaded, which will take some time.)
 When the command prompt is returned, then the system will be ready to inspect.
 
-**However wait a while** before attempting to interact, because Okapi will still be starting modules.
+**However wait a while** before attempting to interact, because Okapi will still be starting modules,
+this may take about 5-30 minutes.
 
 Some ports of the guest will be forwarded to the host, so that the FOLIO system can be reached from the outside.
 Okapi will be listening on localhost port 9130, and the Stripes development server will be on localhost port 3000.
@@ -73,8 +81,13 @@ In a terminal window on the host, connect to the VirtualBox guest:
 vagrant ssh
 ```
 
-Follow the [Okapi logfile](/tutorials/folio-vm/02-system-overview/#okapi-log)
-to determine when the system is ready for interaction.
+Follow the Okapi logfile to determine when the system is ready for interaction:
+
+```
+docker logs okapi -n 100 -f
+```
+
+The "`Try connect to service`" messages indicate that Okapi is still starting modules.
 
 When Okapi pauses occasionally and shows bursts of "Timer" tasks, then it should be ready for interaction.
 
@@ -86,7 +99,7 @@ The default administrative user is `diku_admin/admin`
 Inspect the Settings page to find the version of Okapi, and the installed modules:\
 `http://localhost:3000/settings/about`
 
-**Note**: If errors are presented, then you probably did not wait long enough.
+**Note**: If errors are presented, then you probably did not wait long enough, it takes about 5-30 minutes.
 Do logout, wait, and then log in again.
 
 ## Halt and rest
