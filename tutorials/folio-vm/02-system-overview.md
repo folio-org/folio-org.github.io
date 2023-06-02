@@ -25,16 +25,16 @@ vagrant ssh
 
 ### Okapi log
 
-Get the container name of the Okapi module:
+Ask Docker to show the last 100 lines of the Okapi container log:
 
 ```
-docker ps | grep okapi
+docker logs okapi -n 100
 ```
 
-View this module's logs:
+To follow the log:
 
 ```
-docker logs --follow <container_id>
+docker logs okapi -n 100 -f
 ```
 
 ### Stripes log
@@ -42,13 +42,13 @@ docker logs --follow <container_id>
 Stripes is deployed as a Docker container with a dedicated name. So do:
 
 ```
-docker logs stripes_stripes_1
+docker logs stripes_stripes_1 -n 100
 ```
 
 Or to follow the logfile:
 
 ```
-docker logs stripes_stripes_1 --follow
+docker logs stripes_stripes_1 -n 100 -f
 ```
 
 ### Backend module logs
@@ -61,10 +61,10 @@ Get the container name of the module to be inspected, e.g.
 docker ps | grep inventory
 ```
 
-View this module's logs:
+Watch this module's logs:
 
 ```
-docker logs <container_id>
+docker logs <container_id> -n 100 -f
 ```
 
 ---
