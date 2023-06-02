@@ -194,7 +194,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "folio-spring-support",
     "org": "folio-org"
@@ -248,7 +248,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-authtoken",
     "org": "folio-org"
