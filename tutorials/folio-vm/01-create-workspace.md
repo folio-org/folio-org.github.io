@@ -87,7 +87,7 @@ Follow the Okapi logfile to determine when the system is ready for interaction:
 docker logs okapi -n 100 -f
 ```
 
-`Try connect to service` messages indicate that Okapi still starts modules.
+The "`Try connect to service`" messages indicate that Okapi is still starting modules.
 
 When Okapi pauses occasionally and shows bursts of "Timer" tasks, then it should be ready for interaction.
 
