@@ -151,6 +151,10 @@ For other relevant CQL examples see the FOLIO items above, and the [API docs](/r
 
 The basic functions of persistent storage: Create, Read, Update, Delete ([CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)).
 
+#### CSP
+
+[Critical Service Patch](https://wiki.folio.org/display/REL/Critical+Service+Patch+Process) (CSP).
+
 #### DevOps
 
 Combining software development and information technology operations:
@@ -388,6 +392,10 @@ Representational State Transfer architectural style, and RESTful web services, e
 #### RMB
 
 The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework, is a special FOLIO module that abstracts much functionality and enables the developer to focus on implementing business functions.
+
+#### RMS
+
+Release Management Stakeholders (RMS). Refer to the [Critical Service Patch Process](#csp) (CSP).
 
 ### Terms S-Z
 
