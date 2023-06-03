@@ -281,6 +281,13 @@
     "path": "/_/version"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/self.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getUserTenantsForCurrentUser",
+    "name": "mod-consortia",
+    "path": "/_self"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
     "apiType": "oas",
     "methods": "get:operation/getAccessions post:operation/postAccession",
@@ -854,7 +861,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.1",
+    "interface": "login 7.2",
     "methods": "delete:authn_credentials_delete post:authn_credentials_post",
     "name": "mod-login",
     "path": "/authn/credentials"
@@ -862,7 +869,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.1",
+    "interface": "login 7.2",
     "methods": "get:authn_credentials_existence_get",
     "name": "mod-login",
     "path": "/authn/credentials-existence"
@@ -870,7 +877,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.1",
+    "interface": "login 7.2",
     "methods": "get:authn_log_events_get post:authn_log_events_post",
     "name": "mod-login",
     "path": "/authn/log/events"
@@ -878,7 +885,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.1",
+    "interface": "login 7.2",
     "methods": "delete:authn_log_events__id__delete",
     "name": "mod-login",
     "path": "/authn/log/events/{id}"
@@ -886,7 +893,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.1",
+    "interface": "login 7.2",
     "methods": "post:authn_login_post",
     "name": "mod-login",
     "path": "/authn/login"
@@ -894,7 +901,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.1",
+    "interface": "login 7.2",
     "methods": "get:authn_loginattempts__id__get",
     "name": "mod-login",
     "path": "/authn/loginAttempts/{id}"
@@ -902,7 +909,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.1",
+    "interface": "login 7.2",
     "methods": "post:authn_password_reset_action_post",
     "name": "mod-login",
     "path": "/authn/password-reset-action"
@@ -910,7 +917,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.1",
+    "interface": "login 7.2",
     "methods": "get:authn_password_reset_action__actionid__get",
     "name": "mod-login",
     "path": "/authn/password-reset-action/{actionId}"
@@ -918,7 +925,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.1",
+    "interface": "login 7.2",
     "methods": "post:authn_password_repeatable_post",
     "name": "mod-login",
     "path": "/authn/password/repeatable"
@@ -926,7 +933,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.1",
+    "interface": "login 7.2",
     "methods": "post:authn_reset_password_post",
     "name": "mod-login",
     "path": "/authn/reset-password"
@@ -934,7 +941,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.1",
+    "interface": "login 7.2",
     "methods": "post:authn_update_post",
     "name": "mod-login",
     "path": "/authn/update"
@@ -998,7 +1005,7 @@
     "apiDescription": "ramls/authorities-reindex.raml",
     "apiType": "raml",
     "interface": "authority-reindex 0.1",
-    "methods": "post:authority_storage_reindex_post",
+    "methods": "get:authority_storage_reindex_get post:authority_storage_reindex_post",
     "name": "mod-inventory-storage",
     "path": "/authority-storage/reindex"
   },
@@ -1373,7 +1380,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.0",
+    "interface": "browse 1.2",
     "methods": "get:operation/browseAuthorities",
     "name": "mod-search",
     "path": "/browse/authorities"
@@ -1381,7 +1388,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.0",
+    "interface": "browse 1.2",
     "methods": "get:operation/browseInstancesByCallNumber",
     "name": "mod-search",
     "path": "/browse/call-numbers/instances"
@@ -1389,7 +1396,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.0",
+    "interface": "browse 1.2",
     "methods": "get:operation/browseInstancesByContributor",
     "name": "mod-search",
     "path": "/browse/contributors/instances"
@@ -1397,7 +1404,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.0",
+    "interface": "browse 1.2",
     "methods": "get:operation/browseInstancesBySubject",
     "name": "mod-search",
     "path": "/browse/subjects/instances"
@@ -1746,7 +1753,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 13.1",
+    "interface": "circulation 14.1",
     "methods": "post:circulation_check_in_by_barcode_post",
     "name": "mod-circulation",
     "path": "/circulation/check-in-by-barcode"
@@ -1754,7 +1761,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 13.1",
+    "interface": "circulation 14.1",
     "methods": "post:circulation_check_out_by_barcode_post",
     "name": "mod-circulation",
     "path": "/circulation/check-out-by-barcode"
@@ -1778,7 +1785,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 13.1",
+    "interface": "circulation 14.1",
     "methods": "delete:circulation_loans_delete get:circulation_loans_get post:circulation_loans_post",
     "name": "mod-circulation",
     "path": "/circulation/loans"
@@ -1818,7 +1825,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 13.1",
+    "interface": "circulation 14.1",
     "methods": "delete:circulation_loans__loanid__delete get:circulation_loans__loanid__get put:circulation_loans__loanid__put",
     "name": "mod-circulation",
     "path": "/circulation/loans/{loanId}"
@@ -1826,7 +1833,7 @@
   {
     "apiDescription": "ramls/pick-slips.raml",
     "apiType": "raml",
-    "interface": "pick-slips 0.3",
+    "interface": "pick-slips 0.4",
     "methods": "get:circulation_pick_slips__servicepointid__get",
     "name": "mod-circulation",
     "path": "/circulation/pick-slips/{servicePointId}"
@@ -1834,7 +1841,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 13.1",
+    "interface": "circulation 14.1",
     "methods": "post:circulation_renew_by_barcode_post",
     "name": "mod-circulation",
     "path": "/circulation/renew-by-barcode"
@@ -1842,7 +1849,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 13.1",
+    "interface": "circulation 14.1",
     "methods": "post:circulation_renew_by_id_post",
     "name": "mod-circulation",
     "path": "/circulation/renew-by-id"
@@ -1850,7 +1857,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 13.1",
+    "interface": "circulation 14.1",
     "methods": "delete:circulation_requests_delete get:circulation_requests_get post:circulation_requests_post",
     "name": "mod-circulation",
     "path": "/circulation/requests"
@@ -1858,7 +1865,7 @@
   {
     "apiDescription": "ramls/requests-reports.raml",
     "apiType": "raml",
-    "interface": "circulation 13.1",
+    "interface": "circulation 14.1",
     "methods": "get:circulation_requests_reports_hold_shelf_clearance__servicepointid__get",
     "name": "mod-circulation",
     "path": "/circulation/requests-reports/hold-shelf-clearance/{servicePointId}"
@@ -1866,7 +1873,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 13.1",
+    "interface": "circulation 14.1",
     "methods": "post:circulation_requests_instances_post",
     "name": "mod-circulation",
     "path": "/circulation/requests/instances"
@@ -1874,7 +1881,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 13.1",
+    "interface": "circulation 14.1",
     "methods": "get:circulation_requests_queue_instance__instanceid__get",
     "name": "mod-circulation",
     "path": "/circulation/requests/queue/instance/{instanceId}"
@@ -1882,7 +1889,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 13.1",
+    "interface": "circulation 14.1",
     "methods": "post:circulation_requests_queue_instance__instanceid__reorder_post",
     "name": "mod-circulation",
     "path": "/circulation/requests/queue/instance/{instanceId}/reorder"
@@ -1890,7 +1897,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 13.1",
+    "interface": "circulation 14.1",
     "methods": "get:circulation_requests_queue_item__itemid__get",
     "name": "mod-circulation",
     "path": "/circulation/requests/queue/item/{itemId}"
@@ -1898,7 +1905,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 13.1",
+    "interface": "circulation 14.1",
     "methods": "post:circulation_requests_queue_item__itemid__reorder_post",
     "name": "mod-circulation",
     "path": "/circulation/requests/queue/item/{itemId}/reorder"
@@ -1906,7 +1913,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 13.1",
+    "interface": "circulation 14.1",
     "methods": "delete:circulation_requests__requestid__delete get:circulation_requests__requestid__get put:circulation_requests__requestid__put",
     "name": "mod-circulation",
     "path": "/circulation/requests/{requestId}"
@@ -1914,7 +1921,7 @@
   {
     "apiDescription": "ramls/request-move.raml",
     "apiType": "raml",
-    "interface": "circulation 13.1",
+    "interface": "circulation 14.1",
     "methods": "post:circulation_requests__requestid__move_post",
     "name": "mod-circulation",
     "path": "/circulation/requests/{requestId}/move"
@@ -2186,6 +2193,14 @@
     "path": "/consortia"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/consortia_configuration.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.0",
+    "methods": "get:operation/getConfiguration post:operation/saveConfiguration",
+    "name": "mod-consortia",
+    "path": "/consortia-configuration"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
     "apiType": "oas",
     "interface": "consortia 1.0",
@@ -2228,7 +2243,7 @@
   {
     "apiDescription": "ramls/form-configs-storage.raml",
     "apiType": "raml",
-    "interface": "converter-storage-forms-configs 1.0",
+    "interface": "converter-storage-forms-configs 1.1",
     "methods": "get:converter_storage_forms_configs_get post:converter_storage_forms_configs_post",
     "name": "mod-di-converter-storage",
     "path": "/converter-storage/forms/configs"
@@ -2236,7 +2251,7 @@
   {
     "apiDescription": "ramls/form-configs-storage.raml",
     "apiType": "raml",
-    "interface": "converter-storage-forms-configs 1.0",
+    "interface": "converter-storage-forms-configs 1.1",
     "methods": "delete:converter_storage_forms_configs__formname__delete get:converter_storage_forms_configs__formname__get put:converter_storage_forms_configs__formname__put",
     "name": "mod-di-converter-storage",
     "path": "/converter-storage/forms/configs/{formName}"
@@ -2842,7 +2857,7 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
-    "interface": "data-import-converter-storage 1.3",
+    "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_actionprofiles_get post:data_import_profiles_actionprofiles_post",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/actionProfiles"
@@ -2850,7 +2865,7 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
-    "interface": "data-import-converter-storage 1.3",
+    "interface": "data-import-converter-storage 1.4",
     "methods": "delete:data_import_profiles_actionprofiles__id__delete get:data_import_profiles_actionprofiles__id__get put:data_import_profiles_actionprofiles__id__put",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/actionProfiles/{id}"
@@ -2858,7 +2873,7 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
-    "interface": "data-import-converter-storage 1.3",
+    "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_entitytypes_get",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/entityTypes"
@@ -2866,7 +2881,7 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
-    "interface": "data-import-converter-storage 1.3",
+    "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_jobprofiles_get post:data_import_profiles_jobprofiles_post",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/jobProfiles"
@@ -2874,7 +2889,7 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
-    "interface": "data-import-converter-storage 1.3",
+    "interface": "data-import-converter-storage 1.4",
     "methods": "delete:data_import_profiles_jobprofiles__id__delete get:data_import_profiles_jobprofiles__id__get put:data_import_profiles_jobprofiles__id__put",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/jobProfiles/{id}"
@@ -2882,7 +2897,7 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
-    "interface": "data-import-converter-storage 1.3",
+    "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_jobprofilesnapshots__id__get post:data_import_profiles_jobprofilesnapshots__id__post",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/jobProfileSnapshots/{id}"
@@ -2890,7 +2905,7 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
-    "interface": "data-import-converter-storage 1.3",
+    "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_mappingprofiles_get post:data_import_profiles_mappingprofiles_post",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/mappingProfiles"
@@ -2898,7 +2913,7 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
-    "interface": "data-import-converter-storage 1.3",
+    "interface": "data-import-converter-storage 1.4",
     "methods": "delete:data_import_profiles_mappingprofiles__id__delete get:data_import_profiles_mappingprofiles__id__get put:data_import_profiles_mappingprofiles__id__put",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/mappingProfiles/{id}"
@@ -2906,7 +2921,7 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
-    "interface": "data-import-converter-storage 1.3",
+    "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_matchprofiles_get post:data_import_profiles_matchprofiles_post",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/matchProfiles"
@@ -2914,7 +2929,7 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
-    "interface": "data-import-converter-storage 1.3",
+    "interface": "data-import-converter-storage 1.4",
     "methods": "delete:data_import_profiles_matchprofiles__id__delete get:data_import_profiles_matchprofiles__id__get put:data_import_profiles_matchprofiles__id__put",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/matchProfiles/{id}"
@@ -2922,7 +2937,7 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
-    "interface": "data-import-converter-storage 1.3",
+    "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_profileassociations_get post:data_import_profiles_profileassociations_post",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/profileAssociations"
@@ -2930,7 +2945,7 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
-    "interface": "data-import-converter-storage 1.3",
+    "interface": "data-import-converter-storage 1.4",
     "methods": "delete:data_import_profiles_profileassociations__id__delete get:data_import_profiles_profileassociations__id__get put:data_import_profiles_profileassociations__id__put",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/profileAssociations/{id}"
@@ -2938,7 +2953,7 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
-    "interface": "data-import-converter-storage 1.3",
+    "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_profileassociations__id__details_get",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/profileAssociations/{id}/details"
@@ -2946,7 +2961,7 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
-    "interface": "data-import-converter-storage 1.3",
+    "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_profileassociations__id__masters_get",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/profileAssociations/{id}/masters"
@@ -2954,7 +2969,7 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
-    "interface": "data-import-converter-storage 1.3",
+    "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_profilesnapshots__profileid__get",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/profileSnapshots/{profileId}"
@@ -3066,7 +3081,7 @@
   {
     "apiDescription": "ramls/access-types.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_access_types_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/access-types"
@@ -3074,7 +3089,7 @@
   {
     "apiDescription": "ramls/access-types.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_access_types__id__get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/access-types/{id}"
@@ -3082,7 +3097,7 @@
   {
     "apiDescription": "ramls/eholdings.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "delete:eholdings_cache_delete",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/cache"
@@ -3090,7 +3105,7 @@
   {
     "apiDescription": "ramls/currencies.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_currencies_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/currencies"
@@ -3098,7 +3113,7 @@
   {
     "apiDescription": "ramls/custom-labels.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_custom_labels_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/custom-labels"
@@ -3106,7 +3121,7 @@
   {
     "apiDescription": "ramls/kb-credentials.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_kb_credentials_get post:eholdings_kb_credentials_post",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/kb-credentials"
@@ -3114,7 +3129,7 @@
   {
     "apiDescription": "ramls/kb-credentials.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "delete:eholdings_kb_credentials__id__delete get:eholdings_kb_credentials__id__get patch:eholdings_kb_credentials__id__patch put:eholdings_kb_credentials__id__put",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/kb-credentials/{id}"
@@ -3122,7 +3137,7 @@
   {
     "apiDescription": "ramls/access-types.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_kb_credentials__id__access_types_get post:eholdings_kb_credentials__id__access_types_post",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/kb-credentials/{id}/access-types"
@@ -3130,7 +3145,7 @@
   {
     "apiDescription": "ramls/access-types.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "delete:eholdings_kb_credentials__id__access_types__accesstypeid__delete get:eholdings_kb_credentials__id__access_types__accesstypeid__get put:eholdings_kb_credentials__id__access_types__accesstypeid__put",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/kb-credentials/{id}/access-types/{accessTypeId}"
@@ -3138,7 +3153,7 @@
   {
     "apiDescription": "ramls/custom-labels.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_kb_credentials__id__custom_labels_get put:eholdings_kb_credentials__id__custom_labels_put",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/kb-credentials/{id}/custom-labels"
@@ -3146,7 +3161,7 @@
   {
     "apiDescription": "ramls/kb-credentials.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_kb_credentials__id__key_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/kb-credentials/{id}/key"
@@ -3154,7 +3169,7 @@
   {
     "apiDescription": "ramls/proxies.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_kb_credentials__id__proxy_types_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/kb-credentials/{id}/proxy-types"
@@ -3162,7 +3177,7 @@
   {
     "apiDescription": "ramls/proxies.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_kb_credentials__id__root_proxy_get put:eholdings_kb_credentials__id__root_proxy_put",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/kb-credentials/{id}/root-proxy"
@@ -3170,7 +3185,7 @@
   {
     "apiDescription": "ramls/uc.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_kb_credentials__id__uc_get patch:eholdings_kb_credentials__id__uc_patch post:eholdings_kb_credentials__id__uc_post",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/kb-credentials/{id}/uc"
@@ -3178,7 +3193,7 @@
   {
     "apiDescription": "ramls/uc.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_kb_credentials__id__uc_key_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/kb-credentials/{id}/uc/key"
@@ -3186,7 +3201,7 @@
   {
     "apiDescription": "ramls/assigned-users.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_kb_credentials__id__users_get post:eholdings_kb_credentials__id__users_post",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/kb-credentials/{id}/users"
@@ -3194,7 +3209,7 @@
   {
     "apiDescription": "ramls/assigned-users.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "delete:eholdings_kb_credentials__id__users__userid__delete",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/kb-credentials/{id}/users/{userId}"
@@ -3210,7 +3225,7 @@
   {
     "apiDescription": "ramls/eholdings.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "post:eholdings_loading_kb_credentials__id__post",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/loading/kb-credentials/{id}"
@@ -3218,7 +3233,7 @@
   {
     "apiDescription": "ramls/eholdings.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_loading_kb_credentials__id__status_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/loading/kb-credentials/{id}/status"
@@ -3226,7 +3241,7 @@
   {
     "apiDescription": "ramls/packages.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_packages_get post:eholdings_packages_post",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/packages"
@@ -3234,7 +3249,7 @@
   {
     "apiDescription": "ramls/packages.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "post:eholdings_packages_bulk_fetch_post",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/packages/bulk/fetch"
@@ -3242,7 +3257,7 @@
   {
     "apiDescription": "ramls/packages.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "delete:eholdings_packages__packageid__delete get:eholdings_packages__packageid__get put:eholdings_packages__packageid__put",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/packages/{packageId}"
@@ -3250,7 +3265,7 @@
   {
     "apiDescription": "ramls/costperuse.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_packages__packageid__costperuse_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/packages/{packageId}/costperuse"
@@ -3258,7 +3273,7 @@
   {
     "apiDescription": "ramls/packages.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_packages__packageid__resources_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/packages/{packageId}/resources"
@@ -3266,7 +3281,7 @@
   {
     "apiDescription": "ramls/costperuse.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_packages__packageid__resources_costperuse_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/packages/{packageId}/resources/costperuse"
@@ -3274,7 +3289,7 @@
   {
     "apiDescription": "ramls/export.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_packages__packageid__resources_costperuse_export_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/packages/{packageId}/resources/costperuse/export"
@@ -3282,7 +3297,7 @@
   {
     "apiDescription": "ramls/packages.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "put:eholdings_packages__packageid__tags_put",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/packages/{packageId}/tags"
@@ -3290,7 +3305,7 @@
   {
     "apiDescription": "ramls/providers.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_providers_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/providers"
@@ -3298,7 +3313,7 @@
   {
     "apiDescription": "ramls/providers.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_providers__providerid__get put:eholdings_providers__providerid__put",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/providers/{providerId}"
@@ -3306,7 +3321,7 @@
   {
     "apiDescription": "ramls/providers.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_providers__providerid__packages_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/providers/{providerId}/packages"
@@ -3314,7 +3329,7 @@
   {
     "apiDescription": "ramls/providers.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "put:eholdings_providers__providerid__tags_put",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/providers/{providerId}/tags"
@@ -3322,7 +3337,7 @@
   {
     "apiDescription": "ramls/proxies.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_proxy_types_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/proxy-types"
@@ -3330,7 +3345,7 @@
   {
     "apiDescription": "ramls/resources.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "post:eholdings_resources_post",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/resources"
@@ -3338,7 +3353,7 @@
   {
     "apiDescription": "ramls/resources.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "post:eholdings_resources_bulk_fetch_post",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/resources/bulk/fetch"
@@ -3346,7 +3361,7 @@
   {
     "apiDescription": "ramls/resources.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "delete:eholdings_resources__resourceid__delete get:eholdings_resources__resourceid__get put:eholdings_resources__resourceid__put",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/resources/{resourceId}"
@@ -3354,7 +3369,7 @@
   {
     "apiDescription": "ramls/costperuse.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_resources__resourceid__costperuse_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/resources/{resourceId}/costperuse"
@@ -3362,7 +3377,7 @@
   {
     "apiDescription": "ramls/resources.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "put:eholdings_resources__resourceid__tags_put",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/resources/{resourceId}/tags"
@@ -3370,7 +3385,7 @@
   {
     "apiDescription": "ramls/proxies.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_root_proxy_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/root-proxy"
@@ -3378,7 +3393,7 @@
   {
     "apiDescription": "ramls/eholdings.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_status_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/status"
@@ -3386,7 +3401,7 @@
   {
     "apiDescription": "ramls/tags.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_tags_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/tags"
@@ -3394,7 +3409,7 @@
   {
     "apiDescription": "ramls/tags.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_tags_summary_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/tags/summary"
@@ -3402,7 +3417,7 @@
   {
     "apiDescription": "ramls/titles.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_titles_get post:eholdings_titles_post",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/titles"
@@ -3410,7 +3425,7 @@
   {
     "apiDescription": "ramls/titles.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_titles__titleid__get put:eholdings_titles__titleid__put",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/titles/{titleId}"
@@ -3418,7 +3433,7 @@
   {
     "apiDescription": "ramls/costperuse.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_titles__titleid__costperuse_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/titles/{titleId}/costperuse"
@@ -3426,7 +3441,7 @@
   {
     "apiDescription": "ramls/uc.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_uc_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/uc"
@@ -3434,7 +3449,7 @@
   {
     "apiDescription": "ramls/uc.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_uc_credentials_get put:eholdings_uc_credentials_put",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/uc-credentials"
@@ -3442,7 +3457,7 @@
   {
     "apiDescription": "ramls/uc.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_uc_credentials_clientid_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/uc-credentials/clientId"
@@ -3450,7 +3465,7 @@
   {
     "apiDescription": "ramls/uc.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_uc_credentials_clientsecret_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/uc-credentials/clientSecret"
@@ -3458,7 +3473,7 @@
   {
     "apiDescription": "ramls/kb-credentials.raml",
     "apiType": "raml",
-    "interface": "eholdings 3.2",
+    "interface": "eholdings 3.3",
     "methods": "get:eholdings_user_kb_credential_get",
     "name": "mod-kb-ebsco-java",
     "path": "/eholdings/user-kb-credential"
@@ -3502,6 +3517,14 @@
     "methods": "get:erm_usage_harvester_jobs_get",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/jobs"
+  },
+  {
+    "apiDescription": "ramls/harvester.raml",
+    "apiType": "raml",
+    "interface": "erm-usage-harvester 1.4",
+    "methods": "post:erm_usage_harvester_jobs_purgefinished_post",
+    "name": "mod-erm-usage-harvester",
+    "path": "/erm-usage-harvester/jobs/purgefinished"
   },
   {
     "apiDescription": "ramls/periodic.raml",
@@ -3726,7 +3749,7 @@
   {
     "apiDescription": "ramls/field-protection-settings.raml",
     "apiType": "raml",
-    "interface": "field-protection-settings 1.0",
+    "interface": "field-protection-settings 1.1",
     "methods": "get:field_protection_settings_marc_get post:field_protection_settings_marc_post",
     "name": "mod-di-converter-storage",
     "path": "/field-protection-settings/marc"
@@ -3734,7 +3757,7 @@
   {
     "apiDescription": "ramls/field-protection-settings.raml",
     "apiType": "raml",
-    "interface": "field-protection-settings 1.0",
+    "interface": "field-protection-settings 1.1",
     "methods": "delete:field_protection_settings_marc__id__delete get:field_protection_settings_marc__id__get put:field_protection_settings_marc__id__put",
     "name": "mod-di-converter-storage",
     "path": "/field-protection-settings/marc/{id}"
@@ -4943,6 +4966,13 @@
     "path": "/index/records"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/updateIndexDynamicSettings",
+    "name": "mod-search",
+    "path": "/index/settings"
+  },
+  {
     "apiDescription": "ramls/instance-format.raml",
     "apiType": "raml",
     "interface": "instance-formats 2.0",
@@ -5106,7 +5136,7 @@
     "apiDescription": "ramls/instance-reindex.raml",
     "apiType": "raml",
     "interface": "instance-reindex 0.1",
-    "methods": "post:instance_storage_reindex_post",
+    "methods": "get:instance_storage_reindex_get post:instance_storage_reindex_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/reindex"
   },
@@ -5786,6 +5816,14 @@
     "methods": "get:operation/getInstanceAuthorityLinkingRuleById patch:operation/patchInstanceAuthorityLinkingRuleById",
     "name": "mod-entities-links",
     "path": "/linking-rules/instance-authority/{ruleId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
+    "interface": "instance-authority-links-suggestions 1.0",
+    "methods": "post:operation/suggestLinksForMarcRecord",
+    "name": "mod-entities-links",
+    "path": "/links-suggestions/marc"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
@@ -7137,7 +7175,7 @@
   {
     "apiDescription": "ramls/patron-action-session.raml",
     "apiType": "raml",
-    "interface": "patron-action-session-storage 0.2",
+    "interface": "patron-action-session-storage 0.3",
     "methods": "get:patron_action_session_storage_expired_session_patron_ids_get",
     "name": "mod-circulation-storage",
     "path": "/patron-action-session-storage/expired-session-patron-ids"
@@ -7145,7 +7183,7 @@
   {
     "apiDescription": "ramls/patron-action-session.raml",
     "apiType": "raml",
-    "interface": "patron-action-session-storage 0.2",
+    "interface": "patron-action-session-storage 0.3",
     "methods": "get:patron_action_session_storage_patron_action_sessions_get post:patron_action_session_storage_patron_action_sessions_post",
     "name": "mod-circulation-storage",
     "path": "/patron-action-session-storage/patron-action-sessions"
@@ -7153,7 +7191,7 @@
   {
     "apiDescription": "ramls/patron-action-session.raml",
     "apiType": "raml",
-    "interface": "patron-action-session-storage 0.2",
+    "interface": "patron-action-session-storage 0.3",
     "methods": "delete:patron_action_session_storage_patron_action_sessions__patronsessionid__delete get:patron_action_session_storage_patron_action_sessions__patronsessionid__get put:patron_action_session_storage_patron_action_sessions__patronsessionid__put",
     "name": "mod-circulation-storage",
     "path": "/patron-action-session-storage/patron-action-sessions/{patronSessionId}"
@@ -7617,7 +7655,7 @@
   {
     "apiDescription": "ramls/request-storage.raml",
     "apiType": "raml",
-    "interface": "request-storage 5.1",
+    "interface": "request-storage 6.0",
     "methods": "delete:request_storage_requests_delete get:request_storage_requests_get post:request_storage_requests_post",
     "name": "mod-circulation-storage",
     "path": "/request-storage/requests"
@@ -7625,7 +7663,7 @@
   {
     "apiDescription": "ramls/request-storage.raml",
     "apiType": "raml",
-    "interface": "request-storage 5.1",
+    "interface": "request-storage 6.0",
     "methods": "delete:request_storage_requests__requestid__delete get:request_storage_requests__requestid__get put:request_storage_requests__requestid__put",
     "name": "mod-circulation-storage",
     "path": "/request-storage/requests/{requestId}"
@@ -8018,7 +8056,7 @@
   {
     "apiDescription": "ramls/scheduled-notice-storage.raml",
     "apiType": "raml",
-    "interface": "scheduled-notice-storage 0.4",
+    "interface": "scheduled-notice-storage 0.5",
     "methods": "delete:scheduled_notice_storage_scheduled_notices_delete get:scheduled_notice_storage_scheduled_notices_get post:scheduled_notice_storage_scheduled_notices_post",
     "name": "mod-circulation-storage",
     "path": "/scheduled-notice-storage/scheduled-notices"
@@ -8026,7 +8064,7 @@
   {
     "apiDescription": "ramls/scheduled-notice-storage.raml",
     "apiType": "raml",
-    "interface": "scheduled-notice-storage 0.4",
+    "interface": "scheduled-notice-storage 0.5",
     "methods": "delete:scheduled_notice_storage_scheduled_notices__scheduled_noticeid__delete get:scheduled_notice_storage_scheduled_notices__scheduled_noticeid__get put:scheduled_notice_storage_scheduled_notices__scheduled_noticeid__put",
     "name": "mod-circulation-storage",
     "path": "/scheduled-notice-storage/scheduled-notices/{scheduled-noticeId}"
@@ -8146,7 +8184,7 @@
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "interface": "source-storage-batch 1.1",
+    "interface": "source-storage-batch 1.2",
     "methods": "put:source_storage_batch_parsed_records_put",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/parsed-records"
@@ -8154,7 +8192,15 @@
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "interface": "source-storage-batch 1.1",
+    "interface": "source-storage-batch 1.2",
+    "methods": "post:source_storage_batch_parsed_records_fetch_post",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/batch/parsed-records/fetch"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-batch.raml",
+    "apiType": "raml",
+    "interface": "source-storage-batch 1.2",
     "methods": "post:source_storage_batch_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/records"
@@ -8162,7 +8208,7 @@
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "interface": "source-storage-batch 1.1",
+    "interface": "source-storage-batch 1.2",
     "methods": "post:source_storage_batch_verified_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/verified-records"
@@ -8603,7 +8649,7 @@
     "apiDescription": "ramls/userTenants.raml",
     "apiType": "raml",
     "interface": "user-tenants 1.0",
-    "methods": "get:user_tenants_get",
+    "methods": "get:user_tenants_get post:user_tenants_post",
     "name": "mod-users",
     "path": "/user-tenants"
   },
