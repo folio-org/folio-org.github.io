@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-05-22T00:29:33.836323+00:00"
+    "generatedDateTime": "2023-06-01T23:29:55.894138+00:00"
   },
   "repos": [
     {
@@ -29,6 +29,7 @@
       "repoType": "other",
       "snippetIntro": "<p>Core infrastructure for event processing for the DataImport.</p>",
       "workflows": [
+        "api-schema-lint.yml",
         "build-dependants.yml"
       ]
     },
@@ -676,7 +677,7 @@
     },
     {
       "defaultBranch": "main",
-      "description": "LDP1 is an open-source analytics platform for FOLIO libraries",
+      "description": "Provides an analytics capability for FOLIO libraries",
       "docDirName": "doc",
       "name": "ldp",
       "org": "library-data-platform",
@@ -746,6 +747,7 @@
       "snippetIntro": "<p>The purpose of this Bulk Operations (Edit/Delete) application is to modify and delete different entities in bulks.</p>"
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Calendar functionalities to enable service points to maintain hours of operation",
       "docDirName": "docs",
@@ -756,7 +758,15 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This module provides calendar functionalities for FOLIO systems, allowing service points to maintain hours of operation.</p>"
+      "snippetIntro": "<p>This module provides calendar functionalities for FOLIO systems, allowing service points to maintain hours of operation.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -770,6 +780,7 @@
       "snippetIntro": ""
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "FOLIO mod-circulation",
       "docDirName": "doc",
@@ -778,9 +789,20 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>FOLIO compatible circulation capabilities, including loan items from the inventory.</p>"
+      "snippetIntro": "<p>FOLIO compatible circulation capabilities, including loan items from the inventory.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "FOLIO mod-circulation-storage",
       "docDirName": null,
@@ -792,9 +814,20 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>FOLIO compatible persistent storage of loans, loan policies, circulation rules, requests, and fixed due date schedules</p>"
+      "snippetIntro": "<p>FOLIO compatible persistent storage of loans, loan policies, circulation rules, requests, and fixed due date schedules</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Configuration module based on the raml-module-builder and a set of raml and json schemas backed by a postgresdb async implementation",
       "docDirName": null,
@@ -806,7 +839,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Configuration module based on the raml-module-builder and a set of raml and json schemas backed by a PostgreSQL async implementation</p>"
+      "snippetIntro": "<p>Configuration module based on the raml-module-builder and a set of raml and json schemas backed by a PostgreSQL async implementation</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1045,6 +1088,7 @@
       "snippetIntro": "<p>This module provides a storing and processing functionality for links between entities.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Store ERM usage statistics and access data to these statistics. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
@@ -1053,7 +1097,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1067,6 +1121,7 @@
       "snippetIntro": "<p>Models, Clients and Utilities for COUNTER/SUSHI standard</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Harvest ERM usage statistics. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
@@ -1075,7 +1130,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Module for harvesting counter reports.</p>"
+      "snippetIntro": "<p>Module for harvesting counter reports.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "OAS",
@@ -1101,6 +1166,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Provides functionality for the notification events",
       "docDirName": null,
@@ -1112,9 +1178,20 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>The module provides information describing the notification events. The event configuration describes the event name, delivery channels, and contain references to templates for each delivery channel.</p>"
+      "snippetIntro": "<p>The module provides information describing the notification events. The event configuration describes the event name, delivery channels, and contain references to templates for each delivery channel.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Provide central management for fees and fines",
       "docDirName": null,
@@ -1126,7 +1203,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Module to provide central feesfines management for FOLIO systems.</p>"
+      "snippetIntro": "<p>Module to provide central feesfines management for FOLIO systems.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -1179,6 +1266,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Knowledge base for amsl's finc-config module. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
@@ -1190,7 +1278,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Backend module for both ui-finc-config and ui-finc-select.</p>"
+      "snippetIntro": "<p>Backend module for both ui-finc-config and ui-finc-select.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -1229,6 +1327,7 @@
       "snippetIntro": "<p><code>mod-graphql</code> is a <a href='https://github.com/folio-org/okapi/blob/master/doc/guide.md#architecture'>FOLIO module</a>, written in Node.js, that provides a <a href='https://graphql.org/'>GraphQL</a> service by HTTP POST to <code>/graphql/</code>. It can be interrogated using any GraphQL client library, such as <a href='https://github.com/apollographql/apollo-client/'>Apollo</a>, and the graph it provides is auto-generated from the API description files (<a href='https://raml.org/'>RAML</a> and <a href='https://json-schema.org/'>JSON Schema</a>) of the modules that it's providing the GraphQL API for.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Manage walk-in contracts. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
@@ -1240,7 +1339,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>The module manages walk-in contracts. It is tailored to the specific requirements at Leipzig University Library. You may not find this module useful in different environments.</p>"
+      "snippetIntro": "<p>The module manages walk-in contracts. It is tailored to the specific requirements at Leipzig University Library. You may not find this module useful in different environments.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1256,6 +1365,7 @@
       "snippetIntro": "<p>The module provides an access to INN-Reach.</p>"
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": null,
       "docDirName": "doc",
@@ -1266,10 +1376,19 @@
       "repoType": "backend-mod",
       "snippetIntro": "<p>FOLIO compatible inventory module.</p>",
       "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml",
         "macos.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -1283,10 +1402,19 @@
       "repoType": "backend-mod",
       "snippetIntro": "<p>FOLIO compatible inventory storage module.</p>",
       "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml",
         "mac.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Provides different update schemes for populating a FOLIO Inventory Storage",
       "docDirName": null,
@@ -1295,7 +1423,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Mod-inventory-update (MIU) is an Okapi service that can be put in front of mod-inventory-storage (Inventory Storage) for populating the storage with Instances, holdings and items according to one of multiple different update schemes.</p>"
+      "snippetIntro": "<p>Mod-inventory-update (MIU) is an Okapi service that can be put in front of mod-inventory-storage (Inventory Storage) for populating the storage with Instances, holdings and items according to one of multiple different update schemes.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -1373,6 +1511,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "LDP query builder server-side module for FOLIO/ReShare",
       "docDirName": "doc",
@@ -1381,9 +1520,20 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p><code>mod-ldp</code> is a FOLIO module that mediates access to the <a href='https://github.com/library-data-platform/ldp'>Library Data Platform</a> (LDP). It removes the need to deal directly with a relational database by providing a simple WSAPI that can be used by UI code such as <a href='https://github.com/library-data-platform/ui-ldp'><code>ui-ldp</code></a>.</p>"
+      "snippetIntro": "<p><code>mod-ldp</code> is a FOLIO module that mediates access to the <a href='https://github.com/library-data-platform/ldp'>Library Data Platform</a> (LDP). It removes the need to deal directly with a relational database by providing a simple WSAPI that can be used by UI code such as <a href='https://github.com/library-data-platform/ui-ldp'><code>ui-ldp</code></a>.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "FOLIO service module - licenses",
       "docDirName": "docs",
@@ -1392,7 +1542,17 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "gradle",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>FOLIO service module - licenses.</p>"
+      "snippetIntro": "<p>FOLIO service module - licenses.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -1795,6 +1955,7 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "A service that provides a clustering storage of metadata for Data Integration purposes",
       "docDirName": null,
@@ -1804,7 +1965,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>A service that provides a clustering storage of metadata for Data Integration purposes. Optimized for fast storage and retrieval performance.</p>"
+      "snippetIntro": "<p>A service that provides a clustering storage of metadata for Data Integration purposes. Optimized for fast storage and retrieval performance.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1921,6 +2092,7 @@
       "snippetIntro": "<p>Mod-Service-Interaction is a FOLIO Backend Module for cross-app connectivity.</p>"
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Secure global and per-user settings for FOLIO",
       "docDirName": "doc",
@@ -1930,7 +2102,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>mod-settings is a key-value store that provides a more secure configuration system than the old mod-configuration.</p>"
+      "snippetIntro": "<p>mod-settings is a key-value store that provides a more secure configuration system than the old mod-configuration.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -2562,6 +2744,24 @@
       "repoLanguageHint": "node",
       "repoType": "stripes",
       "snippetIntro": "",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
+    },
+    {
+      "defaultBranch": "main",
+      "description": "Administer locally created instances, holdings records, items",
+      "docDirName": null,
+      "name": "stripes-inventory-components",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "stripes",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for administrating locally created instances, holdings records and items.</p>",
       "workflows": [
         "build-npm-release.yml",
         "build-npm.yml"
