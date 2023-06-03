@@ -4968,7 +4968,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "methods": "put:operation/updateIndexSettings",
+    "methods": "put:operation/updateIndexDynamicSettings",
     "name": "mod-search",
     "path": "/index/settings"
   },
