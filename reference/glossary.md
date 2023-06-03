@@ -111,6 +111,10 @@ designed to play well in the cloud.
 Bibliographic Framework Initiative
 ([BIBFRAME](https://en.wikipedia.org/wiki/BIBFRAME)).
 
+#### CC
+
+The [FOLIO Community Council](https://wiki.folio.org/display/CC/)
+
 #### CQL
 
 Contextual Query Language
