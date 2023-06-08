@@ -224,5 +224,7 @@ Similarly each row of a module's documentation table (e.g. [#mod-circulation-cha
 The generated documents are for this module's current raml-util, but the link to the source RAML file is to the head of the default branch of the shared
 "[raml](#raml)" repository.
 
+* A field with property `"folio:isVirtual": "true"` doesn't exist at the API and cannot be searched with that API.  An external tool like `mod-graphql` may merge in that field, see [linked field schema extension](https://github.com/folio-org/mod-graphql/tree/master/src/autogen#option-1-json-schema-extensions).
+
 <div class="folio-spacer-content"></div>
 
