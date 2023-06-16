@@ -291,6 +291,7 @@
     "config": {
       "oas": [],
       "raml": [
+        "ramls/add-info.raml",
         "ramls/age-to-lost-background-processes.raml",
         "ramls/change-due-date.raml",
         "ramls/circulation-event-handlers.raml",
