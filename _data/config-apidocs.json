@@ -1487,6 +1487,7 @@
       "oas": [],
       "raml": [
         "ramls/source-record-storage-batch.raml",
+        "ramls/source-record-storage-migrations-jobs.raml",
         "ramls/source-record-storage-records.raml",
         "ramls/source-record-storage-snapshots.raml",
         "ramls/source-record-storage-source-records.raml",

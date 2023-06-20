@@ -8269,6 +8269,22 @@
     "path": "/source-storage/batch/verified-records"
   },
   {
+    "apiDescription": "ramls/source-record-storage-migrations-jobs.raml",
+    "apiType": "raml",
+    "interface": "source-storage-async-migrations 1.0",
+    "methods": "post:source_storage_migrations_jobs_post",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/migrations/jobs"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-migrations-jobs.raml",
+    "apiType": "raml",
+    "interface": "source-storage-async-migrations 1.0",
+    "methods": "get:source_storage_migrations_jobs__id__get",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/migrations/jobs/{id}"
+  },
+  {
     "apiDescription": "ramls/source-record-storage-test-records.raml",
     "apiType": "raml",
     "interface": "source-storage-test-records 2.0",
