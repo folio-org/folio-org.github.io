@@ -104,6 +104,7 @@ Some contact points for the communities:
 * [Testing Community wiki space](https://wiki.folio.org/display/FTC/Folio+Testing+Community+Home).
 * [Directory of Product Owners](https://wiki.folio.org/display/PO/Directory+of+Product+Owners+by+Area+of+Focus).
 * [SIGs : Special Interest Groups](https://wiki.folio.org/display/PC/Special+Interest+Groups).
+* [FOLIO Community Council](/reference/glossary/#cc) is the first point of contact for FOLIO Member Organizations.
 * [Community wiki space](https://wiki.folio.org/display/COMMUNITY/).
 * [Thanks from the FOLIO Project](/about/thanks/).
 
