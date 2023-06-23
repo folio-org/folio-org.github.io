@@ -1517,7 +1517,7 @@
   {
     "apiDescription": "ramls/cancellation-reason.raml",
     "apiType": "raml",
-    "interface": "cancellation-reason-storage 1.1",
+    "interface": "cancellation-reason-storage 1.2",
     "methods": "delete:cancellation_reason_storage_cancellation_reasons_delete get:cancellation_reason_storage_cancellation_reasons_get post:cancellation_reason_storage_cancellation_reasons_post",
     "name": "mod-circulation-storage",
     "path": "/cancellation-reason-storage/cancellation-reasons"
@@ -1525,7 +1525,7 @@
   {
     "apiDescription": "ramls/cancellation-reason.raml",
     "apiType": "raml",
-    "interface": "cancellation-reason-storage 1.1",
+    "interface": "cancellation-reason-storage 1.2",
     "methods": "delete:cancellation_reason_storage_cancellation_reasons__cancellationreasonid__delete get:cancellation_reason_storage_cancellation_reasons__cancellationreasonid__get put:cancellation_reason_storage_cancellation_reasons__cancellationreasonid__put",
     "name": "mod-circulation-storage",
     "path": "/cancellation-reason-storage/cancellation-reasons/{cancellationReasonId}"
