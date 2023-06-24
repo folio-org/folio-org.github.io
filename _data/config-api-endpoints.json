@@ -1517,7 +1517,7 @@
   {
     "apiDescription": "ramls/cancellation-reason.raml",
     "apiType": "raml",
-    "interface": "cancellation-reason-storage 1.1",
+    "interface": "cancellation-reason-storage 1.2",
     "methods": "delete:cancellation_reason_storage_cancellation_reasons_delete get:cancellation_reason_storage_cancellation_reasons_get post:cancellation_reason_storage_cancellation_reasons_post",
     "name": "mod-circulation-storage",
     "path": "/cancellation-reason-storage/cancellation-reasons"
@@ -1525,7 +1525,7 @@
   {
     "apiDescription": "ramls/cancellation-reason.raml",
     "apiType": "raml",
-    "interface": "cancellation-reason-storage 1.1",
+    "interface": "cancellation-reason-storage 1.2",
     "methods": "delete:cancellation_reason_storage_cancellation_reasons__cancellationreasonid__delete get:cancellation_reason_storage_cancellation_reasons__cancellationreasonid__get put:cancellation_reason_storage_cancellation_reasons__cancellationreasonid__put",
     "name": "mod-circulation-storage",
     "path": "/cancellation-reason-storage/cancellation-reasons/{cancellationReasonId}"
@@ -3454,7 +3454,7 @@
   {
     "apiDescription": "ramls/electronic-access-relationship.raml",
     "apiType": "raml",
-    "interface": "electronic-access-relationships 1.0",
+    "interface": "electronic-access-relationships 1.1",
     "methods": "get:electronic_access_relationships_get post:electronic_access_relationships_post",
     "name": "mod-inventory-storage",
     "path": "/electronic-access-relationships"
@@ -3462,7 +3462,7 @@
   {
     "apiDescription": "ramls/electronic-access-relationship.raml",
     "apiType": "raml",
-    "interface": "electronic-access-relationships 1.0",
+    "interface": "electronic-access-relationships 1.1",
     "methods": "delete:electronic_access_relationships__electronicaccessrelationshipid__delete get:electronic_access_relationships__electronicaccessrelationshipid__get put:electronic_access_relationships__electronicaccessrelationshipid__put",
     "name": "mod-inventory-storage",
     "path": "/electronic-access-relationships/{electronicAccessRelationshipId}"
@@ -5856,7 +5856,7 @@
   {
     "apiDescription": "ramls/loan-type.raml",
     "apiType": "raml",
-    "interface": "loan-types 2.2",
+    "interface": "loan-types 2.3",
     "methods": "delete:loan_types_delete get:loan_types_get post:loan_types_post",
     "name": "mod-inventory-storage",
     "path": "/loan-types"
@@ -5864,7 +5864,7 @@
   {
     "apiDescription": "ramls/loan-type.raml",
     "apiType": "raml",
-    "interface": "loan-types 2.2",
+    "interface": "loan-types 2.3",
     "methods": "delete:loan_types__loantypeid__delete get:loan_types__loantypeid__get put:loan_types__loantypeid__put",
     "name": "mod-inventory-storage",
     "path": "/loan-types/{loantypeId}"
