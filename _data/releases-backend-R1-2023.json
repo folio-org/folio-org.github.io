@@ -36,12 +36,12 @@
     {
       "name": "mod-bulk-operations",
       "nameRepo": "mod-bulk-operations",
-      "releaseDate": "2023-03-30T08:15:12+00:00",
-      "releaseName": "v1.0.5",
-      "releaseSha": "d43a6f86d76dbe18f1d1ef8c2fd1a659ef47ac60",
-      "releaseTag": "v1.0.5",
+      "releaseDate": "2023-06-22T07:11:37+00:00",
+      "releaseName": "v1.0.6",
+      "releaseSha": "522ddf316fa4226a0c3ca2b906ada89432751e33",
+      "releaseTag": "v1.0.6",
       "releaseTarget": "master",
-      "version": "1.0.5"
+      "version": "1.0.6"
     },
     {
       "name": "mod-calendar",
@@ -146,12 +146,12 @@
     {
       "name": "mod-di-converter-storage",
       "nameRepo": "mod-di-converter-storage",
-      "releaseDate": "2023-03-13T18:36:17+00:00",
-      "releaseName": "2.0.2",
-      "releaseSha": "239bec471280d84ddfa071030790cda825850c02",
-      "releaseTag": "v2.0.2",
+      "releaseDate": "2023-06-19T15:22:12+00:00",
+      "releaseName": "2.0.3",
+      "releaseSha": "c4f52c1440ae043fddc44bc7bd3143327d0b9e74",
+      "releaseTag": "v2.0.3",
       "releaseTarget": "master",
-      "version": "2.0.2"
+      "version": "2.0.3"
     },
     {
       "name": "mod-ebsconet",
