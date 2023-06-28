@@ -587,7 +587,7 @@
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
       "releaseDate": "2023-03-31T10:20:15+00:00",
-      "releaseName": "v5.6.5",
+      "releaseName": "5.6.5",
       "releaseSha": "2452740b4171d898def8346d16118d1bdb3b4b98",
       "releaseTag": "v5.6.5",
       "releaseTarget": "master",
