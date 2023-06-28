@@ -947,13 +947,6 @@
     "path": "/authn/update"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/searchAuthorities",
-    "name": "mod-search",
-    "path": "/authorities"
-  },
-  {
     "apiDescription": "ramls/authority-note-type.raml",
     "apiType": "raml",
     "interface": "authority-note-types 1.0",
@@ -1524,7 +1517,7 @@
   {
     "apiDescription": "ramls/cancellation-reason.raml",
     "apiType": "raml",
-    "interface": "cancellation-reason-storage 1.1",
+    "interface": "cancellation-reason-storage 1.2",
     "methods": "delete:cancellation_reason_storage_cancellation_reasons_delete get:cancellation_reason_storage_cancellation_reasons_get post:cancellation_reason_storage_cancellation_reasons_post",
     "name": "mod-circulation-storage",
     "path": "/cancellation-reason-storage/cancellation-reasons"
@@ -1532,7 +1525,7 @@
   {
     "apiDescription": "ramls/cancellation-reason.raml",
     "apiType": "raml",
-    "interface": "cancellation-reason-storage 1.1",
+    "interface": "cancellation-reason-storage 1.2",
     "methods": "delete:cancellation_reason_storage_cancellation_reasons__cancellationreasonid__delete get:cancellation_reason_storage_cancellation_reasons__cancellationreasonid__get put:cancellation_reason_storage_cancellation_reasons__cancellationreasonid__put",
     "name": "mod-circulation-storage",
     "path": "/cancellation-reason-storage/cancellation-reasons/{cancellationReasonId}"
@@ -1789,6 +1782,14 @@
     "methods": "delete:circulation_loans_delete get:circulation_loans_get post:circulation_loans_post",
     "name": "mod-circulation",
     "path": "/circulation/loans"
+  },
+  {
+    "apiDescription": "ramls/add-info.raml",
+    "apiType": "raml",
+    "interface": "add-info 0.1",
+    "methods": "post:circulation_loans__id__add_info_post",
+    "name": "mod-circulation",
+    "path": "/circulation/loans/{id}/add-info"
   },
   {
     "apiDescription": "ramls/change-due-date.raml",
@@ -2103,34 +2104,6 @@
     "methods": "delete:comments__commentid__delete get:comments__commentid__get put:comments__commentid__put",
     "name": "mod-feesfines",
     "path": "/comments/{commentId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getAllFeatures post:operation/saveFeatureConfiguration",
-    "name": "mod-search",
-    "path": "/config/features"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteFeatureConfigurationById put:operation/updateFeatureConfiguration",
-    "name": "mod-search",
-    "path": "/config/features/{featureId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getAllLanguageConfigs post:operation/createLanguageConfig",
-    "name": "mod-search",
-    "path": "/config/languages"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteLanguageConfig put:operation/updateLanguageConfig",
-    "name": "mod-search",
-    "path": "/config/languages/{code}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/export-configs.yaml",
@@ -3481,7 +3454,7 @@
   {
     "apiDescription": "ramls/electronic-access-relationship.raml",
     "apiType": "raml",
-    "interface": "electronic-access-relationships 1.0",
+    "interface": "electronic-access-relationships 1.1",
     "methods": "get:electronic_access_relationships_get post:electronic_access_relationships_post",
     "name": "mod-inventory-storage",
     "path": "/electronic-access-relationships"
@@ -3489,7 +3462,7 @@
   {
     "apiDescription": "ramls/electronic-access-relationship.raml",
     "apiType": "raml",
-    "interface": "electronic-access-relationships 1.0",
+    "interface": "electronic-access-relationships 1.1",
     "methods": "delete:electronic_access_relationships__electronicaccessrelationshipid__delete get:electronic_access_relationships__electronicaccessrelationshipid__get put:electronic_access_relationships__electronicaccessrelationshipid__put",
     "name": "mod-inventory-storage",
     "path": "/electronic-access-relationships/{electronicAccessRelationshipId}"
@@ -3521,10 +3494,26 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
+    "interface": "_timer 1.0",
+    "methods": "post:erm_usage_harvester_jobs_cleanup_post",
+    "name": "mod-erm-usage-harvester",
+    "path": "/erm-usage-harvester/jobs/cleanup"
+  },
+  {
+    "apiDescription": "ramls/harvester.raml",
+    "apiType": "raml",
     "interface": "erm-usage-harvester 1.4",
     "methods": "post:erm_usage_harvester_jobs_purgefinished_post",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/jobs/purgefinished"
+  },
+  {
+    "apiDescription": "ramls/harvester.raml",
+    "apiType": "raml",
+    "interface": "erm-usage-harvester 1.4",
+    "methods": "post:erm_usage_harvester_jobs_purgestale_post",
+    "name": "mod-erm-usage-harvester",
+    "path": "/erm-usage-harvester/jobs/purgestale"
   },
   {
     "apiDescription": "ramls/periodic.raml",
@@ -4843,16 +4832,9 @@
     "path": "/holdings-types/{id}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getHoldingIds",
-    "name": "mod-search",
-    "path": "/holdings/ids"
-  },
-  {
     "apiDescription": "ramls/hrid-settings-storage.raml",
     "apiType": "raml",
-    "interface": "hrid-settings-storage 1.2",
+    "interface": "hrid-settings-storage 1.3",
     "methods": "get:hrid_settings_storage_hrid_settings_get put:hrid_settings_storage_hrid_settings_put",
     "name": "mod-inventory-storage",
     "path": "/hrid-settings-storage/hrid-settings"
@@ -4936,41 +4918,6 @@
     "methods": "delete:ill_policies__id__delete get:ill_policies__id__get put:ill_policies__id__put",
     "name": "mod-inventory-storage",
     "path": "/ill-policies/{id}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/createIndices",
-    "name": "mod-search",
-    "path": "/index/indices"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/reindexInventoryRecords",
-    "name": "mod-search",
-    "path": "/index/inventory/reindex"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/updateMappings",
-    "name": "mod-search",
-    "path": "/index/mappings"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/indexRecords",
-    "name": "mod-search",
-    "path": "/index/records"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/updateIndexDynamicSettings",
-    "name": "mod-search",
-    "path": "/index/settings"
   },
   {
     "apiDescription": "ramls/instance-format.raml",
@@ -5163,20 +5110,6 @@
     "methods": "delete:instance_types__instancetypeid__delete get:instance_types__instancetypeid__get put:instance_types__instancetypeid__put",
     "name": "mod-inventory-storage",
     "path": "/instance-types/{instanceTypeId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/searchInstances",
-    "name": "mod-search",
-    "path": "/instances"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getInstanceIds",
-    "name": "mod-search",
-    "path": "/instances/ids"
   },
   {
     "apiDescription": "ramls/inventory-update.raml",
@@ -5858,6 +5791,13 @@
     "path": "/links/stats/instance"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-quick-marc",
+    "path": "/links/suggestion"
+  },
+  {
     "apiDescription": "ramls/loan-anonymization.raml",
     "apiType": "raml",
     "interface": "loan-anonymization 0.1",
@@ -5916,7 +5856,7 @@
   {
     "apiDescription": "ramls/loan-type.raml",
     "apiType": "raml",
-    "interface": "loan-types 2.2",
+    "interface": "loan-types 2.3",
     "methods": "delete:loan_types_delete get:loan_types_get post:loan_types_post",
     "name": "mod-inventory-storage",
     "path": "/loan-types"
@@ -5924,7 +5864,7 @@
   {
     "apiDescription": "ramls/loan-type.raml",
     "apiType": "raml",
-    "interface": "loan-types 2.2",
+    "interface": "loan-types 2.3",
     "methods": "delete:loan_types__loantypeid__delete get:loan_types__loantypeid__get put:loan_types__loantypeid__put",
     "name": "mod-inventory-storage",
     "path": "/loan-types/{loantypeId}"
@@ -6370,6 +6310,14 @@
     "methods": "get:oai_pmh_view_updatedinstanceids_get",
     "name": "mod-inventory-storage",
     "path": "/oai-pmh-view/updatedInstanceIds"
+  },
+  {
+    "apiDescription": "ramls/cleanup-error-logs.raml",
+    "apiType": "raml",
+    "interface": "_timer 1.0",
+    "methods": "post:oai_pmh_clean_up_error_logs_post",
+    "name": "mod-oai-pmh",
+    "path": "/oai-pmh/clean-up-error-logs"
   },
   {
     "apiDescription": "ramls/cleanup-job.raml",
@@ -7871,27 +7819,6 @@
     "path": "/reservoir/upload"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/submitIdsJob",
-    "name": "mod-search",
-    "path": "/resources/jobs"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getIdsJob",
-    "name": "mod-search",
-    "path": "/resources/jobs/{jobId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getResourceIds",
-    "name": "mod-search",
-    "path": "/resources/jobs/{jobId}/ids"
-  },
-  {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
     "apiType": "oas",
     "methods": "get:operation/getRetrievals",
@@ -8070,6 +7997,142 @@
     "path": "/scheduled-notice-storage/scheduled-notices/{scheduled-noticeId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "search 1.1",
+    "methods": "get:operation/searchAuthorities",
+    "name": "mod-search",
+    "path": "/search/authorities"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "search-config 0.2",
+    "methods": "get:operation/getAllFeatures post:operation/saveFeatureConfiguration",
+    "name": "mod-search",
+    "path": "/search/config/features"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "search-config 0.2",
+    "methods": "delete:operation/deleteFeatureConfigurationById put:operation/updateFeatureConfiguration",
+    "name": "mod-search",
+    "path": "/search/config/features/{featureId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "search-config 0.2",
+    "methods": "get:operation/getAllLanguageConfigs post:operation/createLanguageConfig",
+    "name": "mod-search",
+    "path": "/search/config/languages"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "search-config 0.2",
+    "methods": "delete:operation/deleteLanguageConfig put:operation/updateLanguageConfig",
+    "name": "mod-search",
+    "path": "/search/config/languages/{code}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "search 1.1",
+    "methods": "get:operation/getHoldingIds",
+    "name": "mod-search",
+    "path": "/search/holdings/ids"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "indices 0.6",
+    "methods": "post:operation/createIndices",
+    "name": "mod-search",
+    "path": "/search/index/indices"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "indices 0.6",
+    "methods": "post:operation/reindexInventoryRecords",
+    "name": "mod-search",
+    "path": "/search/index/inventory/reindex"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "indices 0.6",
+    "methods": "post:operation/updateMappings",
+    "name": "mod-search",
+    "path": "/search/index/mappings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "indices 0.6",
+    "methods": "post:operation/indexRecords",
+    "name": "mod-search",
+    "path": "/search/index/records"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "indices 0.6",
+    "methods": "put:operation/updateIndexDynamicSettings",
+    "name": "mod-search",
+    "path": "/search/index/settings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "search 1.1",
+    "methods": "get:operation/searchInstances",
+    "name": "mod-search",
+    "path": "/search/instances"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "search 1.1",
+    "methods": "get:operation/getInstanceIds",
+    "name": "mod-search",
+    "path": "/search/instances/ids"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "resource-ids-streaming 0.3",
+    "methods": "post:operation/submitIdsJob",
+    "name": "mod-search",
+    "path": "/search/resources/jobs"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "resource-ids-streaming 0.3",
+    "methods": "get:operation/getIdsJob",
+    "name": "mod-search",
+    "path": "/search/resources/jobs/{jobId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "resource-ids-streaming 0.3",
+    "methods": "get:operation/getResourceIds",
+    "name": "mod-search",
+    "path": "/search/resources/jobs/{jobId}/ids"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "search 1.1",
+    "methods": "get:operation/getFacets",
+    "name": "mod-search",
+    "path": "/search/{recordType}/facets"
+  },
+  {
     "apiDescription": "ramls/service-point.raml",
     "apiType": "raml",
     "interface": "service-points 3.3",
@@ -8150,6 +8213,20 @@
     "path": "/shared-inventory-upsert-matchkey/fetch/{id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/sharing_instance.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/start",
+    "name": "mod-consortia",
+    "path": "/sharing/instances"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_instance.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getSharingInstanceById",
+    "name": "mod-consortia",
+    "path": "/sharing/instances/{actionId}"
+  },
+  {
     "apiDescription": "ramls/shelf-location.raml",
     "apiType": "raml",
     "interface": "shelf-locations 1.1",
@@ -8212,6 +8289,22 @@
     "methods": "post:source_storage_batch_verified_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/verified-records"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-migrations-jobs.raml",
+    "apiType": "raml",
+    "interface": "source-storage-async-migrations 1.0",
+    "methods": "post:source_storage_migrations_jobs_post",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/migrations/jobs"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-migrations-jobs.raml",
+    "apiType": "raml",
+    "interface": "source-storage-async-migrations 1.0",
+    "methods": "get:source_storage_migrations_jobs__id__get",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/migrations/jobs/{id}"
   },
   {
     "apiDescription": "ramls/source-record-storage-test-records.raml",
@@ -8406,6 +8499,20 @@
     "methods": "delete:operation/deleteTenantById put:operation/updateTenant",
     "name": "mod-consortia",
     "path": "/tenants/{tenantId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/createPrimaryAffiliations",
+    "name": "mod-consortia",
+    "path": "/tenants/{tenantId}/create-primary-affiliations"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/syncPrimaryAffiliations",
+    "name": "mod-consortia",
+    "path": "/tenants/{tenantId}/sync-primary-affiliations"
   },
   {
     "apiDescription": "ramls/tlr-feature-toggle-job.raml",
@@ -8916,12 +9023,5 @@
     "methods": "post:operation/postUserContentUpdates",
     "name": "mod-data-export-worker",
     "path": "/{jobId}/user-content-update/upload"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getFacets",
-    "name": "mod-search",
-    "path": "/{recordType}/facets"
   }
 ]

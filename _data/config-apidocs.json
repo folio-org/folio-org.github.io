@@ -31,7 +31,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "edge-caiasoft",
     "org": "folio-org"
@@ -48,7 +48,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "edge-dematic",
     "org": "folio-org"
@@ -65,7 +65,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "edge-inn-reach",
     "org": "folio-org"
@@ -167,7 +167,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "folio-custom-fields",
     "org": "folio-org"
@@ -291,6 +291,7 @@
     "config": {
       "oas": [],
       "raml": [
+        "ramls/add-info.raml",
         "ramls/age-to-lost-background-processes.raml",
         "ramls/change-due-date.raml",
         "ramls/circulation-event-handlers.raml",
@@ -373,6 +374,7 @@
         "src/main/resources/swagger.api/consortia_configuration.yaml",
         "src/main/resources/swagger.api/kafka_message_schemas.yaml",
         "src/main/resources/swagger.api/self.yaml",
+        "src/main/resources/swagger.api/sharing_instance.yaml",
         "src/main/resources/swagger.api/tenants.yaml",
         "src/main/resources/swagger.api/user_tenants.yaml"
       ],
@@ -533,7 +535,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-ebsconet",
     "org": "folio-org"
@@ -825,7 +827,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-inn-reach",
     "org": "folio-org"
@@ -1098,7 +1100,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-notes",
     "org": "folio-org"
@@ -1125,6 +1127,7 @@
     "config": {
       "oas": [],
       "raml": [
+        "ramls/cleanup-error-logs.raml",
         "ramls/cleanup-job.raml",
         "ramls/folio-set-filtering-conditions.raml",
         "ramls/folio-set.raml",
@@ -1260,7 +1263,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-password-validator",
     "org": "folio-org"
@@ -1368,7 +1371,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-remote-storage",
     "org": "folio-org"
@@ -1486,6 +1489,7 @@
       "oas": [],
       "raml": [
         "ramls/source-record-storage-batch.raml",
+        "ramls/source-record-storage-migrations-jobs.raml",
         "ramls/source-record-storage-records.raml",
         "ramls/source-record-storage-snapshots.raml",
         "ramls/source-record-storage-source-records.raml",
@@ -1515,7 +1519,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.1"
+      "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-tags",
     "org": "folio-org"

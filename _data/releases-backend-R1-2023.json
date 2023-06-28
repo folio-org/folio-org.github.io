@@ -146,12 +146,12 @@
     {
       "name": "mod-di-converter-storage",
       "nameRepo": "mod-di-converter-storage",
-      "releaseDate": "2023-03-13T18:36:17+00:00",
-      "releaseName": "2.0.2",
-      "releaseSha": "239bec471280d84ddfa071030790cda825850c02",
-      "releaseTag": "v2.0.2",
+      "releaseDate": "2023-06-19T15:22:12+00:00",
+      "releaseName": "2.0.3",
+      "releaseSha": "c4f52c1440ae043fddc44bc7bd3143327d0b9e74",
+      "releaseTag": "v2.0.3",
       "releaseTarget": "master",
-      "version": "2.0.2"
+      "version": "2.0.3"
     },
     {
       "name": "mod-ebsconet",
@@ -246,12 +246,12 @@
     {
       "name": "mod-finance-storage",
       "nameRepo": "mod-finance-storage",
-      "releaseDate": "2023-03-21T15:31:15+00:00",
-      "releaseName": "v8.4.1",
-      "releaseSha": "b6d977793c2b612f2d77da3ae7569d5d6af53015",
-      "releaseTag": "v8.4.1",
+      "releaseDate": "2023-06-15T10:57:49+00:00",
+      "releaseName": "v8.4.2",
+      "releaseSha": "f970d9702a5c4f2c435c0b026c319fb6c94974f9",
+      "releaseTag": "v8.4.2",
       "releaseTarget": "master",
-      "version": "8.4.1"
+      "version": "8.4.2"
     },
     {
       "name": "mod-gobi",
@@ -587,7 +587,7 @@
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
       "releaseDate": "2023-03-31T10:20:15+00:00",
-      "releaseName": "v5.6.5",
+      "releaseName": "5.6.5",
       "releaseSha": "2452740b4171d898def8346d16118d1bdb3b4b98",
       "releaseTag": "v5.6.5",
       "releaseTarget": "master",
