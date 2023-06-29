@@ -36,12 +36,12 @@
     {
       "name": "mod-bulk-operations",
       "nameRepo": "mod-bulk-operations",
-      "releaseDate": "2023-06-22T07:11:37+00:00",
-      "releaseName": "v1.0.6",
-      "releaseSha": "522ddf316fa4226a0c3ca2b906ada89432751e33",
-      "releaseTag": "v1.0.6",
+      "releaseDate": "2023-03-30T08:15:12+00:00",
+      "releaseName": "v1.0.5",
+      "releaseSha": "d43a6f86d76dbe18f1d1ef8c2fd1a659ef47ac60",
+      "releaseTag": "v1.0.5",
       "releaseTarget": "master",
-      "version": "1.0.6"
+      "version": "1.0.5"
     },
     {
       "name": "mod-calendar",
@@ -587,7 +587,7 @@
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
       "releaseDate": "2023-03-31T10:20:15+00:00",
-      "releaseName": "v5.6.5",
+      "releaseName": "5.6.5",
       "releaseSha": "2452740b4171d898def8346d16118d1bdb3b4b98",
       "releaseTag": "v5.6.5",
       "releaseTarget": "master",
