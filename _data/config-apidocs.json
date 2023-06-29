@@ -518,6 +518,25 @@
       "apiTypes": [
         "RAML"
       ],
+      "generator": "api_doc.py 1.4.2"
+    },
+    "name": "mod-data-import-converter-storage",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [],
+      "raml": [
+        "ramls/data-import-converter-storage.raml",
+        "ramls/field-protection-settings.raml",
+        "ramls/form-configs-storage.raml"
+      ],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "RAML"
+      ],
       "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-di-converter-storage",

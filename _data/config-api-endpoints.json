@@ -2216,10 +2216,26 @@
   {
     "apiDescription": "ramls/form-configs-storage.raml",
     "apiType": "raml",
+    "interface": "converter-storage-forms-configs 1.0",
+    "methods": "get:converter_storage_forms_configs_get post:converter_storage_forms_configs_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/converter-storage/forms/configs"
+  },
+  {
+    "apiDescription": "ramls/form-configs-storage.raml",
+    "apiType": "raml",
     "interface": "converter-storage-forms-configs 1.1",
     "methods": "get:converter_storage_forms_configs_get post:converter_storage_forms_configs_post",
     "name": "mod-di-converter-storage",
     "path": "/converter-storage/forms/configs"
+  },
+  {
+    "apiDescription": "ramls/form-configs-storage.raml",
+    "apiType": "raml",
+    "interface": "converter-storage-forms-configs 1.0",
+    "methods": "delete:converter_storage_forms_configs__formname__delete get:converter_storage_forms_configs__formname__get put:converter_storage_forms_configs__formname__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/converter-storage/forms/configs/{formName}"
   },
   {
     "apiDescription": "ramls/form-configs-storage.raml",
@@ -2830,10 +2846,26 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
+    "interface": "data-import-converter-storage 1.3",
+    "methods": "get:data_import_profiles_actionprofiles_get post:data_import_profiles_actionprofiles_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/actionProfiles"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
     "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_actionprofiles_get post:data_import_profiles_actionprofiles_post",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/actionProfiles"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "interface": "data-import-converter-storage 1.3",
+    "methods": "delete:data_import_profiles_actionprofiles__id__delete get:data_import_profiles_actionprofiles__id__get put:data_import_profiles_actionprofiles__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/actionProfiles/{id}"
   },
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
@@ -2846,10 +2878,26 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
+    "interface": "data-import-converter-storage 1.3",
+    "methods": "get:data_import_profiles_entitytypes_get",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/entityTypes"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
     "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_entitytypes_get",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/entityTypes"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "interface": "data-import-converter-storage 1.3",
+    "methods": "get:data_import_profiles_jobprofiles_get post:data_import_profiles_jobprofiles_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/jobProfiles"
   },
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
@@ -2862,10 +2910,26 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
+    "interface": "data-import-converter-storage 1.3",
+    "methods": "delete:data_import_profiles_jobprofiles__id__delete get:data_import_profiles_jobprofiles__id__get put:data_import_profiles_jobprofiles__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/jobProfiles/{id}"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
     "interface": "data-import-converter-storage 1.4",
     "methods": "delete:data_import_profiles_jobprofiles__id__delete get:data_import_profiles_jobprofiles__id__get put:data_import_profiles_jobprofiles__id__put",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/jobProfiles/{id}"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "interface": "data-import-converter-storage 1.3",
+    "methods": "get:data_import_profiles_jobprofilesnapshots__id__get post:data_import_profiles_jobprofilesnapshots__id__post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/jobProfileSnapshots/{id}"
   },
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
@@ -2878,10 +2942,26 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
+    "interface": "data-import-converter-storage 1.3",
+    "methods": "get:data_import_profiles_mappingprofiles_get post:data_import_profiles_mappingprofiles_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/mappingProfiles"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
     "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_mappingprofiles_get post:data_import_profiles_mappingprofiles_post",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/mappingProfiles"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "interface": "data-import-converter-storage 1.3",
+    "methods": "delete:data_import_profiles_mappingprofiles__id__delete get:data_import_profiles_mappingprofiles__id__get put:data_import_profiles_mappingprofiles__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/mappingProfiles/{id}"
   },
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
@@ -2894,10 +2974,26 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
+    "interface": "data-import-converter-storage 1.3",
+    "methods": "get:data_import_profiles_matchprofiles_get post:data_import_profiles_matchprofiles_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/matchProfiles"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
     "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_matchprofiles_get post:data_import_profiles_matchprofiles_post",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/matchProfiles"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "interface": "data-import-converter-storage 1.3",
+    "methods": "delete:data_import_profiles_matchprofiles__id__delete get:data_import_profiles_matchprofiles__id__get put:data_import_profiles_matchprofiles__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/matchProfiles/{id}"
   },
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
@@ -2910,10 +3006,26 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
+    "interface": "data-import-converter-storage 1.3",
+    "methods": "get:data_import_profiles_profileassociations_get post:data_import_profiles_profileassociations_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/profileAssociations"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
     "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_profileassociations_get post:data_import_profiles_profileassociations_post",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/profileAssociations"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "interface": "data-import-converter-storage 1.3",
+    "methods": "delete:data_import_profiles_profileassociations__id__delete get:data_import_profiles_profileassociations__id__get put:data_import_profiles_profileassociations__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/profileAssociations/{id}"
   },
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
@@ -2926,6 +3038,14 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
+    "interface": "data-import-converter-storage 1.3",
+    "methods": "get:data_import_profiles_profileassociations__id__details_get",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/profileAssociations/{id}/details"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
     "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_profileassociations__id__details_get",
     "name": "mod-di-converter-storage",
@@ -2934,10 +3054,26 @@
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
+    "interface": "data-import-converter-storage 1.3",
+    "methods": "get:data_import_profiles_profileassociations__id__masters_get",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/profileAssociations/{id}/masters"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
     "interface": "data-import-converter-storage 1.4",
     "methods": "get:data_import_profiles_profileassociations__id__masters_get",
     "name": "mod-di-converter-storage",
     "path": "/data-import-profiles/profileAssociations/{id}/masters"
+  },
+  {
+    "apiDescription": "ramls/data-import-converter-storage.raml",
+    "apiType": "raml",
+    "interface": "data-import-converter-storage 1.3",
+    "methods": "get:data_import_profiles_profilesnapshots__profileid__get",
+    "name": "mod-data-import-converter-storage",
+    "path": "/data-import-profiles/profileSnapshots/{profileId}"
   },
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
@@ -3738,10 +3874,26 @@
   {
     "apiDescription": "ramls/field-protection-settings.raml",
     "apiType": "raml",
+    "interface": "field-protection-settings 1.0",
+    "methods": "get:field_protection_settings_marc_get post:field_protection_settings_marc_post",
+    "name": "mod-data-import-converter-storage",
+    "path": "/field-protection-settings/marc"
+  },
+  {
+    "apiDescription": "ramls/field-protection-settings.raml",
+    "apiType": "raml",
     "interface": "field-protection-settings 1.1",
     "methods": "get:field_protection_settings_marc_get post:field_protection_settings_marc_post",
     "name": "mod-di-converter-storage",
     "path": "/field-protection-settings/marc"
+  },
+  {
+    "apiDescription": "ramls/field-protection-settings.raml",
+    "apiType": "raml",
+    "interface": "field-protection-settings 1.0",
+    "methods": "delete:field_protection_settings_marc__id__delete get:field_protection_settings_marc__id__get put:field_protection_settings_marc__id__put",
+    "name": "mod-data-import-converter-storage",
+    "path": "/field-protection-settings/marc/{id}"
   },
   {
     "apiDescription": "ramls/field-protection-settings.raml",
