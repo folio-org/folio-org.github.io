@@ -1077,17 +1077,6 @@
     },
     {
       "defaultBranch": "master",
-      "description": "** DEPRECATED: Renamed to mod-di-converter-storage **",
-      "docDirName": null,
-      "name": "mod-data-import-converter-storage",
-      "org": "folio-org",
-      "ramlDirName": "ramls",
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>Data Import Converter Storage.</p>"
-    },
-    {
-      "defaultBranch": "master",
       "description": "Glint server module wrapper for FOLIO",
       "docDirName": null,
       "name": "mod-datasets",
