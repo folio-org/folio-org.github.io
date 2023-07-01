@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-06-01T23:29:55.894138+00:00"
+    "generatedDateTime": "2023-06-28T01:16:59.345203+00:00"
   },
   "repos": [
     {
@@ -81,6 +81,7 @@
       "snippetIntro": "<p>The purpose of this edge API utils is the combine classes/utilities/constants shared by both modules: edge-common and edge-common-spring.</p>"
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Bridge the gap between CaiaSoft remote storage provider and FOLIO",
       "docDirName": null,
@@ -90,7 +91,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between CaiaSoft remote storage provider and FOLIO.</p>"
+      "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between CaiaSoft remote storage provider and FOLIO.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -127,6 +138,7 @@
       "snippetIntro": "<p><a href='https://github.com/folio-org/edge-connexion'>edge-connexion</a> is a FOLIO module for importing records to a FOLIO instance via <a href='https://www.oclc.org/en/connexion.html'>OCLC Connexion</a></p>"
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Bridge the gap between Dematic remote storage provider and FOLIO",
       "docDirName": null,
@@ -137,9 +149,20 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between Dematic remote storage provider and FOLIO.</p>"
+      "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between Dematic remote storage provider and FOLIO.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "A Spring based shared library/framework for edge APIs to INN-REACH system.",
       "docDirName": null,
@@ -150,7 +173,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": "<p>A Spring based shared library/framework for edge APIs to INN-REACH system.</p>"
+      "snippetIntro": "<p>A Spring based shared library/framework for edge APIs to INN-REACH system.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -312,16 +345,13 @@
     },
     {
       "defaultBranch": "main",
-      "description": "FOLIO reporting/analytics",
+      "description": "Community query repository for FOLIO analytics based on Metadb/LDP",
       "docDirName": null,
       "name": "folio-analytics",
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": "<p>This repository contains reports and other analytics developed for FOLIO and designed to run on the <a href='https://github.com/library-data-platform/ldp'>Library Data Platform</a>.  At present most of the content here consists of SQL reports developed by the FOLIO reporting community and based on the requirements of <a href='https://www.folio.org/community/support/'>FOLIO partner libraries</a>.  In addition to report development, FOLIO has a <a href='https://wiki.folio.org/display/RPT/'>Reporting Special Interest Group</a> that discusses reporting requirements and other related topics.</p>",
-      "workflows": [
-        "ci.yml"
-      ]
+      "snippetIntro": "<p>This repository contains reports and other analytics developed for FOLIO and designed to run on the <a href='https://github.com/library-data-platform/ldp'>Library Data Platform</a>.  At present most of the content here consists of SQL reports developed by the FOLIO reporting community and based on the requirements of <a href='https://www.folio.org/community/support/'>FOLIO partner libraries</a>.  In addition to report development, FOLIO has a <a href='https://wiki.folio.org/display/RPT/'>Reporting Special Interest Group</a> that discusses reporting requirements and other related topics.</p>"
     },
     {
       "defaultBranch": "master",
@@ -722,6 +752,7 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Module for filtering requests based on JWT tokens",
       "docDirName": null,
@@ -731,9 +762,20 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This module is responsible for filtering all proxy traffic and checking for a valid token. In addition, it is responsible for retrieving the permissions for a given user and making decisions regarding access based on user permissions and defined requirements for a given path. It provides a token creation endpoint that privileged modules (such as Authentication) may make use of.</p>"
+      "snippetIntro": "<p>This module is responsible for filtering all proxy traffic and checking for a valid token. In addition, it is responsible for retrieving the permissions for a given user and making decisions regarding access based on user permissions and defined requirements for a given path. It provides a token creation endpoint that privileged modules (such as Authentication) may make use of.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -744,7 +786,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>The purpose of this Bulk Operations (Edit/Delete) application is to modify and delete different entities in bulks.</p>"
+      "snippetIntro": "<p>The purpose of this Bulk Operations (Edit/Delete) application is to modify and delete different entities in bulks.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "OAS",
@@ -852,6 +904,7 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Consortia business logic module",
       "docDirName": "docs",
@@ -862,7 +915,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>APIs for Consortia module.</p>"
+      "snippetIntro": "<p>APIs for Consortia module.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -940,6 +1003,7 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -950,9 +1014,20 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>API for Data Export Spring module.</p>"
+      "snippetIntro": "<p>API for Data Export Spring module.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -963,7 +1038,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>API for Data Export Worker module.</p>"
+      "snippetIntro": "<p>API for Data Export Worker module.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -1037,6 +1122,7 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -1047,7 +1133,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Backend module for integration with Ebsconet external systems</p>"
+      "snippetIntro": "<p>Backend module for integration with Ebsconet external systems</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -1075,6 +1171,7 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
       "docDirName": "doc",
@@ -1085,7 +1182,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This module provides a storing and processing functionality for links between entities.</p>"
+      "snippetIntro": "<p>This module provides a storing and processing functionality for links between entities.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -1352,6 +1459,7 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Implements INN-Reach service client",
       "docDirName": null,
@@ -1362,7 +1470,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>The module provides an access to INN-Reach.</p>"
+      "snippetIntro": "<p>The module provides an access to INN-Reach.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -1627,6 +1745,7 @@
       "snippetIntro": "<p>NISO Circulation Interchange Protocol (NCIP)  support in FOLIO</p>"
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Notes on all types of objects",
       "docDirName": "docs",
@@ -1637,7 +1756,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Notes on all types of objects.</p>"
+      "snippetIntro": "<p>Notes on all types of objects.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -1805,6 +1934,7 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Performs password validation and stores validation rules for specified tenant",
       "docDirName": "doc",
@@ -1815,7 +1945,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>The module provides a default rule set for a tenant and functionality to manage them via REST API and also allows to use a validation flow for a user password.</p>"
+      "snippetIntro": "<p>The module provides a default rule set for a tenant and functionality to manage them via REST API and also allows to use a validation flow for a user password.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -1915,6 +2055,7 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Backend for quickMARC editor",
       "docDirName": "doc",
@@ -1925,9 +2066,20 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Spring-based module that provides API for quickMARC - in-app editor for MARC records in SRS.</p>"
+      "snippetIntro": "<p>Spring-based module that provides API for quickMARC - in-app editor for MARC records in SRS.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Backend module for remote storage.",
       "docDirName": null,
@@ -1938,7 +2090,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Backend module for remote storages</p>"
+      "snippetIntro": "<p>Backend module for remote storages</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -2026,6 +2188,7 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
       "docDirName": "doc",
@@ -2038,7 +2201,15 @@
       "repoType": "backend-mod",
       "snippetIntro": "<p>This module provides a search functionality for instance and authorities via REST API. It uses <a href='https://www.loc.gov/standards/sru/cql/'>The Contextual Query Language</a> as a formal language to query records using filters, boolean conditions, etc.</p>",
       "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml",
         "elasticsearch.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
       ]
     },
     {
@@ -2183,6 +2354,7 @@
       "snippetIntro": "<p>This is the blueprint module that should be used as a template for FOLIO Spring-based backend modules. It provides the initial configuration and common data schemas used by the FOLIO platform.</p>"
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Central list of tags that can be assigned to various objects",
       "docDirName": "doc",
@@ -2193,7 +2365,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Central list of tags that can be assigned to various objects. Tags are simple strings like 'urgent', or 'important'. These are kept as an array of string values in the various objects that use them. This module provides a centralized repository of allowed values, which can be used for populating pull-down lists etc. The coupling is intentionally rather weak, it will be up to the UI to enforce the use of authorized tags, or not, as each library will want, and/or insert new tags into this module when the user uses a new one.</p>"
+      "snippetIntro": "<p>Central list of tags that can be assigned to various objects. Tags are simple strings like 'urgent', or 'important'. These are kept as an array of string values in the various objects that use them. This module provides a centralized repository of allowed values, which can be used for populating pull-down lists etc. The coupling is intentionally rather weak, it will be up to the UI to enforce the use of authorized tags, or not, as each library will want, and/or insert new tags into this module when the user uses a new one.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
