@@ -366,12 +366,12 @@
     {
       "name": "mod-login-saml",
       "nameRepo": "mod-login-saml",
-      "releaseDate": "2023-04-01T14:54:39+00:00",
+      "releaseDate": "2023-06-01T14:26:22+00:00",
       "releaseName": "",
-      "releaseSha": "6ebe6742c33cb8e98bc7fa726b865d1eddf0c20e",
-      "releaseTag": "v2.6.1",
+      "releaseSha": "007c47208830896beb278a2cc2d96a309c65cf1d",
+      "releaseTag": "v2.6.2",
       "releaseTarget": "master",
-      "version": "2.6.1"
+      "version": "2.6.2"
     },
     {
       "name": "mod-ncip",
