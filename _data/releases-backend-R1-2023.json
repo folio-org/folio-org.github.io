@@ -36,12 +36,12 @@
     {
       "name": "mod-bulk-operations",
       "nameRepo": "mod-bulk-operations",
-      "releaseDate": "2023-03-30T08:15:12+00:00",
-      "releaseName": "v1.0.5",
-      "releaseSha": "d43a6f86d76dbe18f1d1ef8c2fd1a659ef47ac60",
-      "releaseTag": "v1.0.5",
+      "releaseDate": "2023-06-22T07:11:37+00:00",
+      "releaseName": "v1.0.6",
+      "releaseSha": "522ddf316fa4226a0c3ca2b906ada89432751e33",
+      "releaseTag": "v1.0.6",
       "releaseTarget": "master",
-      "version": "1.0.5"
+      "version": "1.0.6"
     },
     {
       "name": "mod-calendar",
@@ -146,12 +146,12 @@
     {
       "name": "mod-di-converter-storage",
       "nameRepo": "mod-di-converter-storage",
-      "releaseDate": "2023-06-19T15:22:12+00:00",
-      "releaseName": "2.0.3",
-      "releaseSha": "c4f52c1440ae043fddc44bc7bd3143327d0b9e74",
-      "releaseTag": "v2.0.3",
+      "releaseDate": "2023-06-27T13:44:51+00:00",
+      "releaseName": "2.0.4",
+      "releaseSha": "e3ff0463cb049350f7b6bc469a7364c0c9c4b455",
+      "releaseTag": "v2.0.4",
       "releaseTarget": "master",
-      "version": "2.0.3"
+      "version": "2.0.4"
     },
     {
       "name": "mod-ebsconet",
@@ -196,12 +196,12 @@
     {
       "name": "mod-erm-usage-harvester",
       "nameRepo": "mod-erm-usage-harvester",
-      "releaseDate": "2023-02-20T11:10:07+00:00",
+      "releaseDate": "2023-06-29T07:53:40+00:00",
       "releaseName": "",
-      "releaseSha": "5d60415ca9b7aa4a3cf430e5c04a7c485bf2c9e2",
-      "releaseTag": "v4.3.0",
+      "releaseSha": "80fd5f7a36597afc803650aba237f80e92ee1726",
+      "releaseTag": "v4.3.1",
       "releaseTarget": "master",
-      "version": "4.3.0"
+      "version": "4.3.1"
     },
     {
       "name": "mod-eusage-reports",
@@ -276,12 +276,12 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2023-03-30T19:22:19+00:00",
-      "releaseName": "v20.0.4",
-      "releaseSha": "cde08d4cbe220cd32c4fefb4d636654cecea6f6c",
-      "releaseTag": "v20.0.4",
+      "releaseDate": "2023-06-29T16:21:37+00:00",
+      "releaseName": "v20.0.5",
+      "releaseSha": "0ed1a7074e1c4a97ff29321d9d580f7e7cf37365",
+      "releaseTag": "v20.0.5",
       "releaseTarget": "master",
-      "version": "20.0.4"
+      "version": "20.0.5"
     },
     {
       "name": "mod-inventory-storage",
@@ -366,12 +366,12 @@
     {
       "name": "mod-login-saml",
       "nameRepo": "mod-login-saml",
-      "releaseDate": "2023-04-01T14:54:39+00:00",
+      "releaseDate": "2023-06-01T14:26:22+00:00",
       "releaseName": "",
-      "releaseSha": "6ebe6742c33cb8e98bc7fa726b865d1eddf0c20e",
-      "releaseTag": "v2.6.1",
+      "releaseSha": "007c47208830896beb278a2cc2d96a309c65cf1d",
+      "releaseTag": "v2.6.2",
       "releaseTarget": "master",
-      "version": "2.6.1"
+      "version": "2.6.2"
     },
     {
       "name": "mod-ncip",
@@ -416,12 +416,12 @@
     {
       "name": "mod-orders",
       "nameRepo": "mod-orders",
-      "releaseDate": "2023-03-30T19:58:11+00:00",
-      "releaseName": "v12.6.6",
-      "releaseSha": "e6120382783e51992c674315f16798985d87787e",
-      "releaseTag": "v12.6.6",
+      "releaseDate": "2023-06-27T15:25:53+00:00",
+      "releaseName": "v12.6.7",
+      "releaseSha": "974794a562af24a13cbd9a81b861000b85c43f43",
+      "releaseTag": "v12.6.7",
       "releaseTarget": "master",
-      "version": "12.6.6"
+      "version": "12.6.7"
     },
     {
       "name": "mod-orders-storage",
@@ -576,22 +576,22 @@
     {
       "name": "mod-source-record-manager",
       "nameRepo": "mod-source-record-manager",
-      "releaseDate": "2023-03-29T12:17:24+00:00",
-      "releaseName": "3.6.2",
-      "releaseSha": "3f9cdd137ef9a167911f2a1d1b3f0180244bd489",
-      "releaseTag": "v3.6.2",
+      "releaseDate": "2023-06-27T10:55:24+00:00",
+      "releaseName": "3.6.3",
+      "releaseSha": "dbb7f6e0be890d6c8c380eb47fccebcf14eba62b",
+      "releaseTag": "v3.6.3",
       "releaseTarget": "master",
-      "version": "3.6.2"
+      "version": "3.6.3"
     },
     {
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
-      "releaseDate": "2023-03-31T10:20:15+00:00",
-      "releaseName": "5.6.5",
-      "releaseSha": "2452740b4171d898def8346d16118d1bdb3b4b98",
-      "releaseTag": "v5.6.5",
+      "releaseDate": "2023-06-27T16:58:23+00:00",
+      "releaseName": "5.6.6",
+      "releaseSha": "3323b447f1919220a60a7269fced7788db3c58a1",
+      "releaseTag": "v5.6.6",
       "releaseTarget": "master",
-      "version": "5.6.5"
+      "version": "5.6.6"
     },
     {
       "name": "mod-tags",
