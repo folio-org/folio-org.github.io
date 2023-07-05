@@ -8215,7 +8215,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/sharing_instance.yaml",
     "apiType": "oas",
-    "methods": "post:operation/start",
+    "methods": "get:operation/getSharingInstances post:operation/start",
     "name": "mod-consortia",
     "path": "/sharing/instances"
   },
