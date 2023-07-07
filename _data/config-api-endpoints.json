@@ -7420,6 +7420,13 @@
     "path": "/pub-sub-handlers/log-record-event"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/publications.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/publishRequests",
+    "name": "mod-consortia",
+    "path": "/publications"
+  },
+  {
     "apiDescription": "ramls/pubSub.raml",
     "apiType": "raml",
     "interface": "pubsub-audit 0.1",

@@ -373,6 +373,7 @@
         "src/main/resources/swagger.api/consortia.yaml",
         "src/main/resources/swagger.api/consortia_configuration.yaml",
         "src/main/resources/swagger.api/kafka_message_schemas.yaml",
+        "src/main/resources/swagger.api/publications.yaml",
         "src/main/resources/swagger.api/self.yaml",
         "src/main/resources/swagger.api/sharing_instance.yaml",
         "src/main/resources/swagger.api/tenants.yaml",
