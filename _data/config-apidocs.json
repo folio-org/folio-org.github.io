@@ -325,6 +325,7 @@
         "ramls/anonymize-storage-loans.raml",
         "ramls/cancellation-reason.raml",
         "ramls/check-in-storage.raml",
+        "ramls/checkout-lock-storage.raml",
         "ramls/circulation-rules-storage.raml",
         "ramls/fixed-due-date-schedule.raml",
         "ramls/loan-policy-storage.raml",

@@ -1744,6 +1744,22 @@
     "path": "/check-in-storage/check-ins/{checkInId}"
   },
   {
+    "apiDescription": "ramls/checkout-lock-storage.raml",
+    "apiType": "raml",
+    "interface": "checkout-lock-storage 0.1",
+    "methods": "get:check_out_lock_storage_get post:check_out_lock_storage_post",
+    "name": "mod-circulation-storage",
+    "path": "/check-out-lock-storage"
+  },
+  {
+    "apiDescription": "ramls/checkout-lock-storage.raml",
+    "apiType": "raml",
+    "interface": "checkout-lock-storage 0.1",
+    "methods": "delete:check_out_lock_storage__lockid__delete get:check_out_lock_storage__lockid__get",
+    "name": "mod-circulation-storage",
+    "path": "/check-out-lock-storage/{lockId}"
+  },
+  {
     "apiDescription": "ramls/circulation-rules-storage.raml",
     "apiType": "raml",
     "interface": "circulation-rules-storage 1.0",
@@ -5761,7 +5777,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "instance-authority-links-suggestions 1.0",
+    "interface": "instance-authority-links-suggestions 1.1",
     "methods": "post:operation/suggestLinksForMarcRecord",
     "name": "mod-entities-links",
     "path": "/links-suggestions/marc"
@@ -7440,6 +7456,13 @@
     "methods": "get:operation/getPublicationDetails",
     "name": "mod-consortia",
     "path": "/publications/{publicationId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/publications.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getPublicationResults",
+    "name": "mod-consortia",
+    "path": "/publications/{publicationId}/results"
   },
   {
     "apiDescription": "ramls/pubSub.raml",
