@@ -306,12 +306,12 @@
     {
       "name": "mod-invoice",
       "nameRepo": "mod-invoice",
-      "releaseDate": "2023-06-01T09:08:52+00:00",
-      "releaseName": "v5.6.3",
-      "releaseSha": "fd3a26c52b5ffdbef94da91a5b430d8ff453766d",
-      "releaseTag": "v5.6.3",
+      "releaseDate": "2023-07-17T10:03:16+00:00",
+      "releaseName": "v5.6.4",
+      "releaseSha": "260d313f4a02a4a640017016153045fbac79bfee",
+      "releaseTag": "v5.6.4",
       "releaseTarget": "master",
-      "version": "5.6.3"
+      "version": "5.6.4"
     },
     {
       "name": "mod-invoice-storage",
@@ -586,12 +586,12 @@
     {
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
-      "releaseDate": "2023-06-27T16:58:23+00:00",
-      "releaseName": "5.6.6",
-      "releaseSha": "3323b447f1919220a60a7269fced7788db3c58a1",
-      "releaseTag": "v5.6.6",
+      "releaseDate": "2023-07-14T15:49:11+00:00",
+      "releaseName": "5.6.7",
+      "releaseSha": "cde5aedc651c5998875ba3a02304f211dbf70358",
+      "releaseTag": "v5.6.7",
       "releaseTarget": "master",
-      "version": "5.6.6"
+      "version": "5.6.7"
     },
     {
       "name": "mod-tags",
