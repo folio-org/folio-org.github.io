@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-06-28T01:16:59.345203+00:00"
+    "generatedDateTime": "2023-07-07T23:50:26.552458+00:00"
   },
   "repos": [
     {
@@ -385,6 +385,7 @@
       "snippetIntro": ""
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Store and maintain custom fields",
       "docDirName": null,
@@ -392,7 +393,17 @@
       "org": "folio-org",
       "repoLanguageHint": "java",
       "repoType": "raml-shared",
-      "snippetIntro": "<p>The FOLIO module to store and maintain custom fields. The folio-custom-fields is designed to be a library that any module can add and use to store custom fields definitions as well as their values.</p>"
+      "snippetIntro": "<p>The FOLIO module to store and maintain custom fields. The folio-custom-fields is designed to be a library that any module can add and use to store custom fields definitions as well as their values.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -412,7 +423,13 @@
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "raml-shared",
-      "snippetIntro": "<p>This is the central repository for the models for <a href='https://github.com/folio-org/mod-data-export-spring'>mod-data-export-spring</a>  and <a href='https://github.com/folio-org/mod-data-export-worker'>mod-data-export-worker</a> modules.</p>"
+      "snippetIntro": "<p>This is the central repository for the models for <a href='https://github.com/folio-org/mod-data-export-spring'>mod-data-export-spring</a>  and <a href='https://github.com/folio-org/mod-data-export-worker'>mod-data-export-worker</a> modules.</p>",
+      "workflows": [
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -590,6 +607,7 @@
       "snippetIntro": "<p>Library with general purpose classes to help with FOLIO backend service development and testing</p>"
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "This is a library (jar) that contains the basic functionality and main dependencies required for development FOLIO modules using Spring framework.",
       "docDirName": "doc",
@@ -598,7 +616,17 @@
       "org": "folio-org",
       "repoLanguageHint": "java",
       "repoType": "raml-shared",
-      "snippetIntro": "<p>This is a library that contains the basic functionality and main dependencies required for development of FOLIO modules using Spring framework (also known as 'Spring Way').</p>"
+      "snippetIntro": "<p>This is a library that contains the basic functionality and main dependencies required for development of FOLIO modules using Spring framework (also known as 'Spring Way').</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1074,17 +1102,6 @@
         "api-lint.yml",
         "api-schema-lint.yml"
       ]
-    },
-    {
-      "defaultBranch": "master",
-      "description": "** DEPRECATED: Renamed to mod-di-converter-storage **",
-      "docDirName": null,
-      "name": "mod-data-import-converter-storage",
-      "org": "folio-org",
-      "ramlDirName": "ramls",
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p>Data Import Converter Storage.</p>"
     },
     {
       "defaultBranch": "master",
