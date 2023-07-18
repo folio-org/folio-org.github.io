@@ -85,7 +85,7 @@ Listed endpoints count: {{ site.data.config-api-endpoints.size }}
 {% endfor %}
   </tbody>
 </table>
-<script src="https://cdn.jsdelivr.net/npm/sortable-tablesort@2.1.3/sortable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sortable-tablesort@2.2.0/sortable.min.js"></script>
 <script>
   window.addEventListener('load', function () {
     const el = document.getElementById('ep-path')
