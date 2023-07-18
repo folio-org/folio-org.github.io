@@ -1413,6 +1413,14 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
+    "interface": "_timer 1.0",
+    "methods": "post:operation/cleanUpLogFiles",
+    "name": "mod-bulk-operations",
+    "path": "/bulk-operations/clean-up-log-files"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
+    "apiType": "oas",
     "interface": "bulk-operations 1.0",
     "methods": "post:operation/uploadCsvFile",
     "name": "mod-bulk-operations",
@@ -1734,6 +1742,22 @@
     "methods": "get:check_in_storage_check_ins__checkinid__get",
     "name": "mod-circulation-storage",
     "path": "/check-in-storage/check-ins/{checkInId}"
+  },
+  {
+    "apiDescription": "ramls/checkout-lock-storage.raml",
+    "apiType": "raml",
+    "interface": "checkout-lock-storage 0.1",
+    "methods": "get:check_out_lock_storage_get post:check_out_lock_storage_post",
+    "name": "mod-circulation-storage",
+    "path": "/check-out-lock-storage"
+  },
+  {
+    "apiDescription": "ramls/checkout-lock-storage.raml",
+    "apiType": "raml",
+    "interface": "checkout-lock-storage 0.1",
+    "methods": "delete:check_out_lock_storage__lockid__delete get:check_out_lock_storage__lockid__get",
+    "name": "mod-circulation-storage",
+    "path": "/check-out-lock-storage/{lockId}"
   },
   {
     "apiDescription": "ramls/circulation-rules-storage.raml",
@@ -5753,7 +5777,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "instance-authority-links-suggestions 1.0",
+    "interface": "instance-authority-links-suggestions 1.1",
     "methods": "post:operation/suggestLinksForMarcRecord",
     "name": "mod-entities-links",
     "path": "/links-suggestions/marc"
@@ -7425,6 +7449,20 @@
     "methods": "post:operation/publishRequests",
     "name": "mod-consortia",
     "path": "/publications"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/publications.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getPublicationDetails",
+    "name": "mod-consortia",
+    "path": "/publications/{publicationId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/publications.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getPublicationResults",
+    "name": "mod-consortia",
+    "path": "/publications/{publicationId}/results"
   },
   {
     "apiDescription": "ramls/pubSub.raml",
