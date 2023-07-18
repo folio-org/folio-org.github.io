@@ -27,6 +27,7 @@ task :proof do
       /folio-snapshot-okapi\.dev/,
       /folio-snapshot-test.*\/settings/,
       /#mod-vendors/,
+      /twitter\.com/,
       /github\.com\/search/,
       /github\.com\/pulls\/review-requested/,
       # ignore github. 429 rate-limit error. FOLIO-2597
