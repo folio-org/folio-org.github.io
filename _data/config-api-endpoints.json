@@ -5777,7 +5777,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "instance-authority-links-suggestions 1.1",
+    "interface": "instance-authority-links-suggestions 1.2",
     "methods": "post:operation/suggestLinksForMarcRecord",
     "name": "mod-entities-links",
     "path": "/links-suggestions/marc"
