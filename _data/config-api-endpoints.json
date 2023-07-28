@@ -5144,6 +5144,20 @@
     "path": "/instance-types/{instanceTypeId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/sharing_instances.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getSharingInstances post:operation/startSharingInstance",
+    "name": "mod-consortia",
+    "path": "/instances"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_instances.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getSharingInstanceById",
+    "name": "mod-consortia",
+    "path": "/instances/{actionId}"
+  },
+  {
     "apiDescription": "ramls/inventory-update.raml",
     "apiType": "raml",
     "interface": "inventory-batch-upsert-hrid 2.1",
@@ -8218,6 +8232,13 @@
     "path": "/service-points/{servicepointId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/sharing_settings.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/startSharingSetting",
+    "name": "mod-consortia",
+    "path": "/settings"
+  },
+  {
     "apiDescription": "src/main/resources/openapi/settings.yaml",
     "apiType": "oas",
     "interface": "settings 1.0",
@@ -8264,20 +8285,6 @@
     "methods": "get:shared_inventory_upsert_matchkey_fetch__id__get",
     "name": "mod-inventory-update",
     "path": "/shared-inventory-upsert-matchkey/fetch/{id}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/sharing_instance.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getSharingInstances post:operation/start",
-    "name": "mod-consortia",
-    "path": "/sharing/instances"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/sharing_instance.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getSharingInstanceById",
-    "name": "mod-consortia",
-    "path": "/sharing/instances/{actionId}"
   },
   {
     "apiDescription": "ramls/shelf-location.raml",
