@@ -861,7 +861,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.2",
+    "interface": "login 7.3",
     "methods": "delete:authn_credentials_delete post:authn_credentials_post",
     "name": "mod-login",
     "path": "/authn/credentials"
@@ -869,7 +869,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.2",
+    "interface": "login 7.3",
     "methods": "get:authn_credentials_existence_get",
     "name": "mod-login",
     "path": "/authn/credentials-existence"
@@ -877,7 +877,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.2",
+    "interface": "login 7.3",
     "methods": "get:authn_log_events_get post:authn_log_events_post",
     "name": "mod-login",
     "path": "/authn/log/events"
@@ -885,7 +885,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.2",
+    "interface": "login 7.3",
     "methods": "delete:authn_log_events__id__delete",
     "name": "mod-login",
     "path": "/authn/log/events/{id}"
@@ -893,7 +893,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.2",
+    "interface": "login 7.3",
     "methods": "post:authn_login_post",
     "name": "mod-login",
     "path": "/authn/login"
@@ -901,7 +901,15 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.2",
+    "interface": "login 7.3",
+    "methods": "post:authn_login_with_expiry_post",
+    "name": "mod-login",
+    "path": "/authn/login-with-expiry"
+  },
+  {
+    "apiDescription": "ramls/login.raml",
+    "apiType": "raml",
+    "interface": "login 7.3",
     "methods": "get:authn_loginattempts__id__get",
     "name": "mod-login",
     "path": "/authn/loginAttempts/{id}"
@@ -909,7 +917,23 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.2",
+    "interface": "login 7.3",
+    "methods": "post:authn_logout_post",
+    "name": "mod-login",
+    "path": "/authn/logout"
+  },
+  {
+    "apiDescription": "ramls/login.raml",
+    "apiType": "raml",
+    "interface": "login 7.3",
+    "methods": "post:authn_logout_all_post",
+    "name": "mod-login",
+    "path": "/authn/logout-all"
+  },
+  {
+    "apiDescription": "ramls/login.raml",
+    "apiType": "raml",
+    "interface": "login 7.3",
     "methods": "post:authn_password_reset_action_post",
     "name": "mod-login",
     "path": "/authn/password-reset-action"
@@ -917,7 +941,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.2",
+    "interface": "login 7.3",
     "methods": "get:authn_password_reset_action__actionid__get",
     "name": "mod-login",
     "path": "/authn/password-reset-action/{actionId}"
@@ -925,7 +949,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.2",
+    "interface": "login 7.3",
     "methods": "post:authn_password_repeatable_post",
     "name": "mod-login",
     "path": "/authn/password/repeatable"
@@ -933,7 +957,15 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.2",
+    "interface": "login 7.3",
+    "methods": "post:authn_refresh_post",
+    "name": "mod-login",
+    "path": "/authn/refresh"
+  },
+  {
+    "apiDescription": "ramls/login.raml",
+    "apiType": "raml",
+    "interface": "login 7.3",
     "methods": "post:authn_reset_password_post",
     "name": "mod-login",
     "path": "/authn/reset-password"
@@ -941,7 +973,7 @@
   {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
-    "interface": "login 7.2",
+    "interface": "login 7.3",
     "methods": "post:authn_update_post",
     "name": "mod-login",
     "path": "/authn/update"
@@ -1337,6 +1369,14 @@
     "methods": "post:bl_users_login_post",
     "name": "mod-users-bl",
     "path": "/bl-users/login"
+  },
+  {
+    "apiDescription": "ramls/mod-users-bl.raml",
+    "apiType": "raml",
+    "interface": "users-bl 6.1",
+    "methods": "post:bl_users_login_with_expiry_post",
+    "name": "mod-users-bl",
+    "path": "/bl-users/login-with-expiry"
   },
   {
     "apiDescription": "ramls/mod-users-bl.raml",
@@ -8605,6 +8645,22 @@
     "methods": "post:operation/token-legacy",
     "name": "mod-authtoken",
     "path": "/token"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
+    "apiType": "oas",
+    "interface": "authtoken2 1.0",
+    "methods": "post:operation/token-invalidate",
+    "name": "mod-authtoken",
+    "path": "/token/invalidate"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
+    "apiType": "oas",
+    "interface": "authtoken2 1.0",
+    "methods": "post:operation/token-invalidate-all",
+    "name": "mod-authtoken",
+    "path": "/token/invalidate-all"
   },
   {
     "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
