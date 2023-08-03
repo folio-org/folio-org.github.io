@@ -57,7 +57,7 @@ This procedure will also retain the git history.
 
 ```
 mkdir temp; cd temp
-git clone --recursive --single-branch --no-tags \
+git clone --recurse-submodules --single-branch --no-tags \
   https://github.com/folio-org/mod-old
 ```
 
