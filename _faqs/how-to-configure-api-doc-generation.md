@@ -21,10 +21,10 @@ This configuration is utilised by both this `publishAPI` and the `runLintRamlCop
 
 **NOTE**: This configuration is gradually being phased out, as projects start to use `doApiLint` and `doApiDoc` (see [Jenkinsfile](/guides/jenkinsfile/#back-end-modules)).
 
-Please ensure that the module's RAMLs can be processed without error.
+Please ensure that the module's RAML or OAS API descriptions can be processed without error.
 The guide [Assess API descriptions, schema, and examples](/guides/api-lint/) will assist.
 The quality of the generated documentation depends on its input.
-Some RAML issues can cause the CI system to fail.
+Some issues can cause the CI system to fail.
 It is available to run locally by cloning [folio-tools](https://github.com/folio-org/folio-tools).
 
 ## Add or update configuration

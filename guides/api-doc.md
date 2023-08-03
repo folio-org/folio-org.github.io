@@ -11,12 +11,12 @@ menuTopTitle: Guides
 For server-side projects that utilise RAML or OpenAPI (OAS), use the tool `api-doc` to generate API documentation from its API description files and schema and examples.
 
 The tool is available for use during FOLIO Continuous Integration builds, and also for local use prior to commit.
-
-This tool replaces the deprecated "generate-api-docs" (publishAPI) facility.
+Currently [RAML 1.0](/start/primer-raml/) and [OAS 3.0](/start/primer-oas/) are handled.
 
 ## Usage
 
-For use during FOLIO CI builds, refer to the Jenkinsfile [configuration](#jenkinsfile) below.
+For use during FOLIO CI builds, refer to the GitHub Workflows [configuration](#github-workflows) section below.
+Note that the project should also use "[api-lint](/guides/api-lint/)" which utilises the same configuration for the [properties](#properties) apiTypes, apiDirectories, etc.)
 
 For local use, clone the "[folio-tools](https://github.com/folio-org/folio-tools)" repository parallel to clones of back-end project repositories, and use its [api-doc](https://github.com/folio-org/folio-tools/tree/master/api-doc) facility.
 Refer to that document for local installation instructions.
@@ -32,7 +32,7 @@ The Python script will search the configured directories to find relevant API de
   One or more of: `RAML OAS`
 * `-d,--directories` -- The list of directories to be searched.
   Required. Space-separated list.
-* `-e,--excludes` -- List of additional sub-directories and files to be excluded.
+* `-e,--excludes` -- List of additional sub-directories and/or files to be excluded (so that the tool will only discover top-level root API description files).
   Optional. Space-separated list.
   By default it excludes certain well-known directories (such as `raml-util`).
   Use the option `--loglevel debug` to report what is being excluded.
@@ -71,50 +71,37 @@ python3 ../folio-tools/api-doc/api_doc.py \
   -d ramls src/main/resources/oas
 ```
 
+### GitHub Workflows
+
+All relevant back-end repositories are now configured to use GitHub Workflows for the API-related tasks.
+See the `.github/workflows` directory and the "Actions" UI tab.
+
+The configuration [properties](#properties) are further described as comments in each workflow file.
+
+Note the workflows only operate when there is a file change commit in their API descriptions directory.
+
+For a [new](/guidelines/create-new-repo/) project repository, follow the implementations for a similar repository.
+(All were done via [FOLIO-3678](https://issues.folio.org/browse/FOLIO-3678)).
+Some example PRs:
+
+* [mod-courses](https://github.com/folio-org/mod-courses/pull/157)
+  -- RAML.
+* [mod-settings](https://github.com/folio-org/mod-settings/pull/30)
+  -- OAS.
+* [mod-notes](https://github.com/folio-org/mod-notes/pull/240)
+  -- OAS.
+* [mod-calendar](https://github.com/folio-org/mod-calendar/pull/164)
+  -- OAS. This one also needs to "exclude" some sub-directories.
+
+Occasionally verify that your workflow files are up-to-date (e.g. for the versions of dependent "actions").
+Compare with the default files at [folio-org/.github/workflow-templates](https://github.com/folio-org/.github/tree/master/workflow-templates).
+
 ### Jenkinsfile
 
-To use "api-doc" with FOLIO Continuous Integration, add the following configuration to the project's [Jenkinsfile](/guides/jenkinsfile/).
+<div class="attention">
+NOTE: Using api-doc via Jenkins is <a href="https://issues.folio.org/browse/FOLIO-3678">deprecated</a>.
+All relevant back-end repositories are now using GitHub Workflows.
+</div>
 
-Note that the project should also use "[api-lint](/guides/api-lint/)" which utilises the same configuration for the [properties](#properties) apiTypes, apiDirectories, etc.)
-Also see [upgrade notes](/guides/api-lint/#jenkinsfile-for-raml) there.
-
-#### Jenkinsfile for RAML
-
-```
-buildMvn {
-...
-  doApiDoc = true
-  doApiLint = true
-  apiTypes = 'RAML' // Required. Space-separated list: RAML OAS
-  apiDirectories = 'ramls' // Required. Space-separated list
-  apiExcludes = 'types.raml' // Optional. Space-separated list
-```
-
-**Note:** This tool replaces the deprecated "generate-api-docs" (publishAPI) facility.
-Do not use both.
-
-Examples:
-
-* [mod-courses](https://github.com/folio-org/mod-courses/blob/master/Jenkinsfile)
-  -- RAML
-  * Its [uprade PR](https://github.com/folio-org/mod-courses/pull/122). See each commit which explained each step.
-
-#### Jenkinsfile for OAS
-
-```
-buildMvn {
-...
-  doApiDoc = true
-  doApiLint = true
-  apiTypes = 'OAS' // Required. Space-separated list: RAML OAS
-  apiDirectories = 'src/main/resources/openapi' // Required. Space-separated list
-  apiExcludes = 'headers' // Optional. Space-separated list
-```
-
-Examples:
-
-* [mod-eusage-reports](https://github.com/folio-org/mod-eusage-reports/blob/master/Jenkinsfile)
-  -- OAS
-* [mod-search](https://github.com/folio-org/mod-search/blob/master/Jenkinsfile)
-  -- OAS
+<div class="folio-spacer-content"></div>
 
