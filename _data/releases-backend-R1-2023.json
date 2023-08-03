@@ -146,12 +146,12 @@
     {
       "name": "mod-di-converter-storage",
       "nameRepo": "mod-di-converter-storage",
-      "releaseDate": "2023-06-27T13:44:51+00:00",
-      "releaseName": "2.0.4",
-      "releaseSha": "e3ff0463cb049350f7b6bc469a7364c0c9c4b455",
-      "releaseTag": "v2.0.4",
+      "releaseDate": "2023-07-31T13:49:41+00:00",
+      "releaseName": "2.0.5",
+      "releaseSha": "60694cca4be163f747a645b9ec4506285813825e",
+      "releaseTag": "v2.0.5",
       "releaseTarget": "master",
-      "version": "2.0.4"
+      "version": "2.0.5"
     },
     {
       "name": "mod-ebsconet",
@@ -276,12 +276,12 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2023-06-29T16:21:37+00:00",
-      "releaseName": "v20.0.5",
-      "releaseSha": "0ed1a7074e1c4a97ff29321d9d580f7e7cf37365",
-      "releaseTag": "v20.0.5",
+      "releaseDate": "2023-07-31T12:41:55+00:00",
+      "releaseName": "v20.0.6",
+      "releaseSha": "8289df9d229d055acd9035fd9c296979a6e487a6",
+      "releaseTag": "v20.0.6",
       "releaseTarget": "master",
-      "version": "20.0.5"
+      "version": "20.0.6"
     },
     {
       "name": "mod-inventory-storage",
@@ -576,12 +576,12 @@
     {
       "name": "mod-source-record-manager",
       "nameRepo": "mod-source-record-manager",
-      "releaseDate": "2023-06-27T10:55:24+00:00",
-      "releaseName": "3.6.3",
-      "releaseSha": "dbb7f6e0be890d6c8c380eb47fccebcf14eba62b",
-      "releaseTag": "v3.6.3",
+      "releaseDate": "2023-07-31T13:59:17+00:00",
+      "releaseName": "3.6.4",
+      "releaseSha": "0e9b99341d1d235865d0843ec07276249152e04b",
+      "releaseTag": "v3.6.4",
       "releaseTarget": "master",
-      "version": "3.6.3"
+      "version": "3.6.4"
     },
     {
       "name": "mod-source-record-storage",
