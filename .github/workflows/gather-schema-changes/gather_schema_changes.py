@@ -189,7 +189,7 @@ def show_api_diff(repo_name, mod_name, version, release_sha, api_directory, bran
         release_dir = os.path.join(temp_dir_1, repo_name)
         release_api_dir = os.path.join(release_dir, api_directory)
         try:
-            sh.git.clone("--recursive", url_git, _cwd=temp_dir_1)
+            sh.git.clone("--recurse-submodules", url_git, _cwd=temp_dir_1)
         except sh.ErrorReturnCode as err:
             msg = "Trouble doing git clone"
             logger.critical("%s: %s: %s", repo_name, msg, err.stderr.decode())

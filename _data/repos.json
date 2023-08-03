@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-07-07T23:50:26.552458+00:00"
+    "generatedDateTime": "2023-08-02T01:04:00.184311+00:00"
   },
   "repos": [
     {
@@ -60,7 +60,7 @@
       "snippetIntro": "<p>Utilities for DataImport modules.</p>"
     },
     {
-      "defaultBranch": "main",
+      "defaultBranch": "poppy",
       "description": "FOLIO Documentation",
       "docDirName": null,
       "name": "docs",
@@ -223,6 +223,9 @@
       "defaultBranch": "master",
       "description": "Edge API for Metadata Harvesting",
       "docDirName": null,
+      "hasDbSchema": null,
+      "hintRmb": true,
+      "isRmb": null,
       "name": "edge-oai-pmh",
       "org": "folio-org",
       "ramlDirName": "ramls",
@@ -561,7 +564,12 @@
       "org": "folio-org",
       "repoLanguageHint": "java",
       "repoType": "other",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "main",
@@ -2601,16 +2609,6 @@
       "workflows": [
         "spring-cve-2022-22965.yml"
       ]
-    },
-    {
-      "defaultBranch": "master",
-      "description": "Core set of Stripes modules for FOLIO",
-      "docDirName": null,
-      "name": "platform-core",
-      "org": "folio-org",
-      "repoLanguageHint": "other",
-      "repoType": "platform",
-      "snippetIntro": "<p>This is the 'core' Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes-core</code> and of any Stripes modules you wish to make available as part of the 'core' platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>"
     },
     {
       "defaultBranch": "master",
