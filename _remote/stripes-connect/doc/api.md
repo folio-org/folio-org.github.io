@@ -718,8 +718,3 @@ This is in the separate document
 ### Appendix D: walk-through of state-object changes during a CRUD cycle
 
 XXX To be written
-
-These images may be useful:
-* https://files.slack.com/files-pri/T047C3PCD-F2L37S7C2/pasted_image_at_2016_10_06_11_13_am.png
-* https://files.slack.com/files-pri/T047C3PCD-F2L2RAH5E/pasted_image_at_2016_10_06_11_15_am.png
-* https://files.slack.com/files-pri/T047C3PCD-F2L2WSHA4/pasted_image_at_2016_10_06_11_31_am.png

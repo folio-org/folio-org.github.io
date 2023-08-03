@@ -96,6 +96,9 @@ Do this early so that CI can assist.
 The Jenkinsfile needs to be committed directly to master branch.
 If it is done via a pull-request then that will fail, as the initial base Sonar scan for master branch has not yet run.
 
+**Note:** The api-lint and api-schema-lint and api-doc are now done via GitHub Workflows, not via Jenkinsfile.
+See similar backend repos, e.g. via [FOLIO-3678](https://issues.folio.org/browse/FOLIO-3678).
+
 ### Frontend specific
 
 For front-end modules: package.json, .eslintrc, GitHub Workflows, etc.

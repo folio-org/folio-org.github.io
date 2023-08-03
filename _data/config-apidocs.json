@@ -1428,7 +1428,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5.3"
     },
     "name": "mod-search",
     "org": "folio-org"

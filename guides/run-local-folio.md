@@ -40,7 +40,7 @@ Also in preparation to [add to reference environments](/guides/install-backend-m
 * Clone the module repository and build the backend module:
 
 ```
-git clone --recursive https://github.com/folio-org/mod-marccat
+git clone --recurse-submodules https://github.com/folio-org/mod-marccat
 cd mod-marccat
 mvn clean install
 ```
