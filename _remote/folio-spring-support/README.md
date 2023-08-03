@@ -2,9 +2,9 @@
 layout: null
 ---
 
-# folio-spring-base
+# folio-spring-support
 
-Copyright (C) 2020-2022 The Open Library Foundation
+Copyright (C) 2020-2023 The Open Library Foundation
 
 This software is distributed under the terms of the Apache License,
 Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
@@ -13,6 +13,8 @@ Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
+- [Code structure](#code-structure)
+- [Execution Context](#execution-context)
 - [Properties](#properties)
 - [CQL support](#cql-support)
 - [Logging](#logging)
@@ -26,22 +28,32 @@ Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
     - [Upon Creation](#upon-creation)
     - [Upon Deletion](#upon-deletion)
   - [Sample](#sample)
+- [Additional information](#additional-information)
+  - [Issue tracker](#issue-tracker)
 
 ## Introduction
 
-This is a library (jar) that contains the basic functionality and main dependencies required for development of FOLIO modules using Spring framework (also known as "Spring Way").
+This is a library that contains the basic functionality and main dependencies required for development of FOLIO modules using Spring framework (also known as "Spring Way").
 
 Please find a step-by-step guide on how to create a new FOLIO Spring based module at https://github.com/folio-org/mod-spring-template
 
-An example of the module based on folio-spring-base could be found at https://github.com/folio-org/folio-sample-modules/tree/master/mod-spring-petstore
+An example of the module based on folio-spring-support could be found at https://github.com/folio-org/folio-sample-modules/tree/master/mod-spring-petstore
+
+## Code structure
+
+The library comprises several submodules that are built as separate artifacts (jar files) and can be integrated into a project as distinct dependencies. This facilitates more precise dependency management depending on the requirements of each project.
+
+The library includes the following submodules:
+* **folio-spring-cql** - facilitates CQL querying (refer to the [CQL support](#cql-support) section below)
+* **folio-spring-base** - provides fundamental functionality for developing FOLIO modules using the Spring framework.  
 
 ## Execution Context
 
-[FolioExecutionContext](src/main/java/org/folio/spring/FolioExecutionContext.java) is used to store
+[FolioExecutionContext](folio-spring-base/src/main/java/org/folio/spring/FolioExecutionContext.java) is used to store
 essential request headers <i>(in thread local)</i>. Folio Spring Base populates this data
-using [FolioExecutionScopeFilter](src/main/java/org/folio/spring/scope/filter/FolioExecutionScopeFilter.java).
-It is used by [EnrichUrlAndHeadersClient](src/main/java/org/folio/spring/client/EnrichUrlAndHeadersClient.java), to provide right tenant id and other headers for outgoing REST requests.
-It is also used in [DataSourceSchemaAdvisorBeanPostProcessor](src/main/java/org/folio/spring/config/DataSourceSchemaAdvisorBeanPostProcessor.java) for selection of the appropriate schema for sql queries.
+using [FolioExecutionScopeFilter](folio-spring-base/src/main/java/org/folio/spring/scope/filter/FolioExecutionScopeFilter.java).
+It is used by [EnrichUrlAndHeadersClient](folio-spring-base/src/main/java/org/folio/spring/client/EnrichUrlAndHeadersClient.java), to provide right tenant id and other headers for outgoing REST requests.
+It is also used in [DataSourceSchemaAdvisorBeanPostProcessor](folio-spring-base/src/main/java/org/folio/spring/config/DataSourceSchemaAdvisorBeanPostProcessor.java) for selection of the appropriate schema for sql queries.
 
 FolioExecutionContext is immutable. In order to start new execution context the construct
 
@@ -76,17 +88,52 @@ void ayncMethod(Map<String, Collection<String>> headers) {
   }
 }
 ```
+FOLIO scope implementation supports nested FolioExecutionContexts it means that the following code works correctly for
+```
+// Autowired
+private final FolioModuleMetadata folioModuleMetadata;
+
+// Autowired
+protected final FolioExecutionContext context;
+
+void someMethod(Map<String, Collection<String>> headers) {
+  Map<String, Collection<String>> headers1 = getHeaderForTenant("Tenant1");
+  try (var x = new FolioExecutionContextSetter(folioModuleMetadata, headers1)) {
+    String tenant1 = context.getTenantId();
+    businessMethod(tenant1);
+
+    Map<String, Collection<String>> headers2 = getHeaderForTenant("Tenant2");
+    try (var x = new FolioExecutionContextSetter(folioModuleMetadata, headers2)) {
+      String tenant2 = context.getTenantId();
+      businessMethod(tenant2);
+    }
+    
+    String tenant1_1 = context.getTenantId();
+    assert tenant1.equals(tenant1_1);
+  }
+}
+
+...
+
+void businessMethod(String tenantId) {
+  _do_some_useful_stuff_
+  String tenantId = context.getTenantId();
+
+  assert tenant.equals(tenantId);
+}
+```
+
 
 ## Properties
 
-| Property                                              | Description                                                                                                                                                                                         | Default       | Example                      |
-| ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ---------------------------- |
-| `header.validation.x-okapi-tenant.exclude.base-paths` | Specifies base paths to exclude form `x-okapi-tenant` header validation. See [TenantOkapiHeaderValidationFilter.java](src/main/java/org/folio/spring/filter/TenantOkapiHeaderValidationFilter.java) | `/admin`      | `/admin,/swagger-ui`         |
-| `folio.jpa.repository.base-packages`                  | Specifies base packages to scan for repositories                                                                                                                                                    | `org.folio.*` | `org.folio.qm.dao`           |
-| `folio.logging.request.enabled`                       | Turn on logging for incoming requests                                                                                                                                                               | `true`        | `true or false`              |
-| `folio.logging.request.level`                         | Specifies logging level for incoming requests                                                                                                                                                       | `basic`       | `none, basic, headers, full` |
-| `folio.logging.feign.enabled`                         | Turn on logging for outgoing requests in feign clients                                                                                                                                              | `true`        | `true or false`              |
-| `folio.logging.feign.level`                           | Specifies logging level for outgoing requests                                                                                                                                                       | `basic`       | `none, basic, headers, full` |
+| Property                                              | Description                                                                                                                                                                                                           | Default       | Example                      |
+| ----------------------------------------------------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- | ---------------------------- |
+| `header.validation.x-okapi-tenant.exclude.base-paths` | Specifies base paths to exclude form `x-okapi-tenant` header validation. See [TenantOkapiHeaderValidationFilter.java](folio-spring-base/src/main/java/org/folio/spring/filter/TenantOkapiHeaderValidationFilter.java) | `/admin`      | `/admin,/swagger-ui`         |
+| `folio.jpa.repository.base-packages`                  | Specifies base packages to scan for repositories                                                                                                                                                                      | `org.folio.*` | `org.folio.qm.dao`           |
+| `folio.logging.request.enabled`                       | Turn on logging for incoming requests                                                                                                                                                                                 | `true`        | `true or false`              |
+| `folio.logging.request.level`                         | Specifies logging level for incoming requests                                                                                                                                                                         | `basic`       | `none, basic, headers, full` |
+| `folio.logging.feign.enabled`                         | Turn on logging for outgoing requests in feign clients                                                                                                                                                                | `true`        | `true or false`              |
+| `folio.logging.feign.level`                           | Specifies logging level for outgoing requests                                                                                                                                                                         | `basic`       | `none, basic, headers, full` |
 
 ## CQL support
 
@@ -107,7 +154,7 @@ Two methods are available for CQL-queries:
 ```java
 public interface JpaCqlRepository<T, ID> extends JpaRepository<T, ID> {
 
-  Page<T> findByCQL(String cql, OffsetRequest offset);
+  Page<T> findByCql(String cql, OffsetRequest offset);
 
   long count(String cql);
 }
@@ -261,7 +308,7 @@ import org.folio.spring.service.TenantService;
 import org.folio.tenant.domain.dto.TenantAttributes;
 import org.folio.yourmodule.SuperCoolDataRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Primary
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -287,3 +334,11 @@ public class CustomTenantService extends TenantService {
   }
 }
 ```
+
+## Additional information
+
+### Issue tracker
+
+See project [FOLSPRINGB](https://issues.folio.org/browse/FOLSPRINGB)
+at the [FOLIO issue tracker](https://dev.folio.org/guidelines/issue-tracker).
+
