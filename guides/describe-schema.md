@@ -71,15 +71,13 @@ Other constraints:  None
 
 The schema property "description" can only be a single long text string, and can not use markup. So just concatenate the relevant information.
 
-The relevant API Description files that utilise the schema can provide valid examples. RAML files can also provide additional [RAML documentation node](https://github.com/raml-org/raml-spec/blob/master/versions/raml-10/raml-10.md#user-documentation) entries, which can utilise Markdown either in-line or via included files (e.g. [mod-courses](/reference/api/#mod-courses)). In this way other constraints be described, also with links to supporting resources.
+The relevant API Description files that utilise the schema can provide valid examples. RAML files can also provide additional [RAML documentation node](https://github.com/raml-org/raml-spec/blob/master/versions/raml-10/raml-10.md#user-documentation) entries, which can utilise Markdown either in-line or via included files (e.g. [mod-courses](/reference/api/#mod-courses)). In this way other constraints can be described, also with links to supporting resources.
 
 To contribute updates, either send a pull-request with the changes or add to a Jira issue tracker.
 
-The continuous-integration facility assesses the JSON Schema files of all RAML-using and OpenAPI-using back-end modules to determine any missing descriptions.
+The continuous-integration facility GitHub Workflow "api-schema-lint" assesses the JSON Schema files of all RAML-using and OpenAPI-using back-end modules to determine any missing descriptions.
 
-At GitHub, detected issues are listed on the front page of each pull-request.
-For any branch or pull-request build, follow the "details" link via the coloured checkmark (or orange dot while building) through to Jenkins.
-Then see "Artifacts" at the top-right for the processing report.
-Or follow across to Jenkins "classic" view, and find the report in the left-hand panel.
+At GitHub, detected issues are listed at the "Actions" tab.
+For any branch or pull-request build, follow the "details" link via the coloured checkmark (or orange dot while building).
 
 The analysis can also be run locally with the [api-schema-lint](https://github.com/folio-org/folio-tools/tree/master/api-schema-lint) tool.

@@ -11,9 +11,7 @@ menuTopTitle: Guides
 For server-side projects that utilise RAML or OpenAPI (OAS), use the tool `api-lint` to assess the API description files and schema and examples.
 
 The tool is available for use during FOLIO Continuous Integration builds, and also for local use prior to commit.
-Currently RAML 1.0 and OAS 3.0 are handled.
-
-For [RAML-using](/start/primer-raml/) projects, this new "api-lint" tool is preferred. The previous tool "[lint-raml](/guides/raml-cop/)" (runLintRamlCop) is still available, but is deprecated. Its behind-the-scenes technology is outdated.
+Currently [RAML 1.0](/start/primer-raml/) and [OAS 3.0](/start/primer-oas/) are handled.
 
 ## Procedure
 
@@ -26,7 +24,8 @@ Refer to [Interpretation of messages](#interpretation-of-messages) below.
 
 ## Usage
 
-For use during FOLIO CI builds, refer to the Jenkinsfile [configuration](#jenkinsfile) below.
+For use during FOLIO CI builds, refer to the GitHub Workflows [configuration](#github-workflows) section below.
+Note that the project should also use "[api-doc](/guides/api-doc/)" which utilises the same configuration for the [properties](#properties) apiTypes, apiDirectories, etc.)
 
 For local use, clone the "[folio-tools](https://github.com/folio-org/folio-tools)" repository parallel to clones of back-end project repositories, and use its [api-lint](https://github.com/folio-org/folio-tools/tree/master/api-lint) facilities.
 Refer to that document for local installation instructions.
@@ -42,7 +41,7 @@ The Python script will search the configured directories to find relevant API de
   One or more of: `RAML OAS`
 * `-d,--directories` -- The list of directories to be searched.
   Required. Space-separated list.
-* `-e,--excludes` -- List of additional sub-directories and files to be excluded.
+* `-e,--excludes` -- List of additional sub-directories and/or files to be excluded (so that the tool will only discover top-level root API description files).
   Optional. Space-separated list.
   By default it excludes certain well-known directories (such as `raml-util`).
   Use the option `--loglevel debug` to report what is being excluded.
@@ -89,64 +88,42 @@ The node script can also be used stand-alone to process a single file.
 
 See usage notes with: `node amf.js --help`
 
+### GitHub Workflows
+
+All relevant back-end repositories are now configured to use GitHub Workflows for the API-related tasks.
+See the `.github/workflows` directory and the "Actions" UI tab.
+
+The configuration [properties](#properties) are further described as comments in each workflow file.
+
+Note the workflows only operate when there is a file change commit in their API descriptions directory.
+
+For a [new](/guidelines/create-new-repo/) project repository, follow the implementations for a similar repository.
+(All were done via [FOLIO-3678](https://issues.folio.org/browse/FOLIO-3678)).
+Some example PRs:
+
+* [mod-courses](https://github.com/folio-org/mod-courses/pull/157)
+  -- RAML.
+* [mod-settings](https://github.com/folio-org/mod-settings/pull/30)
+  -- OAS.
+* [mod-notes](https://github.com/folio-org/mod-notes/pull/240)
+  -- OAS.
+* [mod-calendar](https://github.com/folio-org/mod-calendar/pull/164)
+  -- OAS. This one also needs to "exclude" some sub-directories.
+
+Occasionally verify that your workflow files are up-to-date (e.g. for the versions of dependent "actions").
+Compare with the default files at [folio-org/.github/workflow-templates](https://github.com/folio-org/.github/tree/master/workflow-templates).
+
 ### Jenkinsfile
 
-To use "api-lint" with FOLIO Continuous Integration, add the following configuration to the project's [Jenkinsfile](/guides/jenkinsfile/).
-
-Note that the project should also use "[api-doc](/guides/api-doc/)" which utilises the same configuration for the [properties](#properties) apiTypes, apiDirectories, etc.)
-
-#### Jenkinsfile for RAML
-
-These properties correlate with the described script [options](#python).
-
-```
-buildMvn {
-...
-  doApiLint = true
-  apiTypes = 'RAML' // Required. Space-separated list: RAML OAS
-  apiDirectories = 'ramls' // Required. Space-separated list
-  apiExcludes = 'types.raml' // Optional. Space-separated list
-  apiWanings = false // Optional. true|false
-```
-
-**Note:** This tool replaces the deprecated "lint-raml" (runLintRamlCop) facility.
-Do not use both.
-
-**Note:** For RAML-using projects that are upgrading from the old CI facility, be aware that this new api-lint tool is more thorough. Refer to the ticket linked in the "[Interpretation of messages](#interpretation-of-messages)" section below.
-
-Examples:
-
-* [mod-courses](https://github.com/folio-org/mod-courses/blob/master/Jenkinsfile)
-  -- RAML
-  * Its [uprade PR](https://github.com/folio-org/mod-courses/pull/122). See each commit which explained each step.
-
-#### Jenkinsfile for OAS
-
-These properties correlate with the described script [options](#python).
-
-```
-buildMvn {
-...
-  doApiLint = true
-  apiTypes = 'OAS' // Required. Space-separated list: RAML OAS
-  apiDirectories = 'src/main/resources/openapi' // Required. Space-separated list
-  apiExcludes = 'headers' // Optional. Space-separated list
-  apiWanings = false // Optional. true|false
-```
-
-Examples:
-
-* [mod-eusage-reports](https://github.com/folio-org/mod-eusage-reports/blob/master/Jenkinsfile)
-  -- OAS
-* [mod-search](https://github.com/folio-org/mod-search/blob/master/Jenkinsfile)
-  -- OAS
+<div class="attention">
+NOTE: Using api-lint via Jenkins is <a href="https://issues.folio.org/browse/FOLIO-3678">deprecated</a>.
+All relevant back-end repositories are now using GitHub Workflows.
+</div>
 
 ## Reports
 
-At GitHub, detected issues are listed on the front page of each pull-request.
-For any branch or pull-request build, follow the "details" link via the coloured checkmark (or orange dot while building) through to Jenkins.
-Then see "Artifacts" at the top-right for the processing report.
-Or follow across to Jenkins "classic" view, and find the report in the left-hand panel.
+At GitHub, detected issues are listed at the "Actions" tab.
+For any branch or pull-request build, follow the "details" link via the coloured checkmark (or orange dot while building).
 
 ## Ensure valid JSON Schema
 
@@ -169,8 +146,4 @@ The detail includes the location of the relevant file and the line number of the
 
 Note that if there are only warnings but no violations, then nothing is presented.
 Use the `--warnings` option described above.
-
-Note that this `api-lint` tool is more thorough than our previous CI tool (based on raml-cop and its underlying raml-1-parser).
-So projects might find new violations being reported.
-(See some migration issues at [FOLIO-3017](https://issues.folio.org/browse/FOLIO-3017).)
 
