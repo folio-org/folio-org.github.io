@@ -6,8 +6,9 @@ menuInclude: no
 menuTopTitle: Guides
 ---
 
-**Note**: This tool is deprecated, but still available.
-Use [api-lint](/guides/api-lint/) instead.
+<div class="attention">
+NOTE: This tool is deprecated. Use <a href="/guides/api-lint/">api-lint</a> instead.
+</div>
 
 For RAML-using server-side projects, use [raml-cop](https://github.com/thebinarypenguin/raml-cop) to assess the RAML and schema and examples.
 

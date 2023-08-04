@@ -192,11 +192,11 @@ Some modules use RAML (so `view-1` and `view-2`), others use OpenAPI OAS (so `vi
 
 ### Encourage use api-lint {#explain-api-lint}
 
-Modules should now be using the new CI job "[api-lint](/guides/api-lint)" ("`doApiLint`"). The old "`runLintRamlCop`" facility is now deprecated.
+Modules should now be using the GitHub Workflow "[api-lint](/guides/api-lint/)".
 
 ### Encourage use api-doc {#explain-api-doc}
 
-Modules should now be using the new CI job "[api-doc](/guides/api-doc)" ("`doApiDoc`"). The old "`publishAPI`" facility is now deprecated.
+Modules should now be using the GitHub Workflow "[api-doc](/guides/api-doc/)".
 
 ### Explain API data
 
