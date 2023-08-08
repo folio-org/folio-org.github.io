@@ -8303,6 +8303,13 @@
     "path": "/settings/upload"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/sharing_settings.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteSharingSetting",
+    "name": "mod-consortia",
+    "path": "/settings/{settingId}"
+  },
+  {
     "apiDescription": "ramls/inventory-update.raml",
     "apiType": "raml",
     "interface": "shared-inventory-batch-upsert-matchkey 2.0",
