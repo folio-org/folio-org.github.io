@@ -551,7 +551,7 @@
   {
     "apiDescription": "ramls/actual-cost-record-storage.raml",
     "apiType": "raml",
-    "interface": "actual-cost-record-storage 0.7",
+    "interface": "actual-cost-record-storage 0.8",
     "methods": "get:actual_cost_record_storage_actual_cost_records_get post:actual_cost_record_storage_actual_cost_records_post",
     "name": "mod-circulation-storage",
     "path": "/actual-cost-record-storage/actual-cost-records"
@@ -559,7 +559,7 @@
   {
     "apiDescription": "ramls/actual-cost-record-storage.raml",
     "apiType": "raml",
-    "interface": "actual-cost-record-storage 0.7",
+    "interface": "actual-cost-record-storage 0.8",
     "methods": "delete:actual_cost_record_storage_actual_cost_records__id__delete get:actual_cost_record_storage_actual_cost_records__id__get put:actual_cost_record_storage_actual_cost_records__id__put",
     "name": "mod-circulation-storage",
     "path": "/actual-cost-record-storage/actual-cost-records/{id}"
