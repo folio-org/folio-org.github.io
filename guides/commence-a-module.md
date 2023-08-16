@@ -96,8 +96,7 @@ Back-end repositories will provide API descriptions. These will either be RAML o
 
 The reference [API documentation](/reference/api/) is generated from these files. Provide a clear "description" field for each endpoint.
 
-Set the Jenkinsfile [configuration](/guides/jenkinsfile/) `doApiLint` parameter
-and `doApiDoc` parameter, to enable these during continuous integration.
+Utilise the GitHub Workflows for [api-lint](/guides/api-lint/) and [api-doc](/guides/api-doc/) and [api-schema-lint](/guides/describe-schema/).
 
 #### RAMLs {#back-end-ramls}
 
@@ -106,7 +105,7 @@ Normally there will also be the [git submodule](https://git-scm.com/docs/git-sub
 
 Some modules only have a `ramls/raml-util` and not other files, because their files are all located in that shared space.
 
-Configure the CI jobs `doApiLint` and `doApiDoc` as explained above.
+Configure the GitHub Workflows as explained above.
 
 See the [Primer for RAML and JSON Schema](/start/primer-raml/).
 
@@ -114,7 +113,7 @@ See the [Primer for RAML and JSON Schema](/start/primer-raml/).
 
 The relevant `openapi` directory (e.g. "`src/main/resources/openapi`" or "`src/main/resources/swagger.api`" etc.) holds the API description OAS and Schema and examples files specific to this module.
 
-Configure the CI jobs `doApiLint` and `doApiDoc` as explained above.
+Configure the GitHub Workflows as explained above.
 
 See the [Primer for OpenAPI (OAS) and JSON Schema](/start/primer-oas/).
 
