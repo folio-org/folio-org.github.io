@@ -8603,7 +8603,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
     "apiType": "oas",
-    "methods": "delete:operation/deleteTenantById put:operation/updateTenant",
+    "methods": "delete:operation/deleteTenantById get:operation/getTenantDetailsById put:operation/updateTenant",
     "name": "mod-consortia",
     "path": "/tenants/{tenantId}"
   },
