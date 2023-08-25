@@ -1510,6 +1510,14 @@
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
     "interface": "bulk-operations 1.0",
+    "methods": "delete:operation/deleteFileByNameAndOperationId",
+    "name": "mod-bulk-operations",
+    "path": "/bulk-operations/{operationId}/files/{fileName}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
+    "apiType": "oas",
+    "interface": "bulk-operations 1.0",
     "methods": "get:operation/getPreviewByOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/preview"
