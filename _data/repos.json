@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-08-02T01:04:00.184311+00:00"
+    "generatedDateTime": "2023-08-28T00:04:44.183230+00:00"
   },
   "repos": [
     {
@@ -138,6 +138,40 @@
       "snippetIntro": "<p><a href='https://github.com/folio-org/edge-connexion'>edge-connexion</a> is a FOLIO module for importing records to a FOLIO instance via <a href='https://www.oclc.org/en/connexion.html'>OCLC Connexion</a></p>"
     },
     {
+      "defaultBranch": "master",
+      "description": "Edge API is to bridge the gap between 3rd party discovery services and FOLIO mod-courses module.",
+      "docDirName": null,
+      "name": "edge-courses",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>Provides an ability to retrieve course-reserve information from FOLIO</p>"
+    },
+    {
+      "apiTypes": "OAS",
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "name": "edge-dcb",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between DCB provider and FOLIO.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
+    },
+    {
       "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Bridge the gap between Dematic remote storage provider and FOLIO",
@@ -160,6 +194,18 @@
         "api-lint.yml",
         "api-schema-lint.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "isSpringway": true,
+      "name": "edge-fqm",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-edge",
+      "snippetIntro": ""
     },
     {
       "apiTypes": "OAS",
@@ -756,6 +802,16 @@
     },
     {
       "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "lib-fqm-query-processor",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
       "description": "A FOLIO Module for handling the server side work needed for the ERM system",
       "docDirName": "doc",
       "name": "mod-agreements",
@@ -878,6 +934,30 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>FOLIO compatible circulation capabilities, including loan items from the inventory.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
+    },
+    {
+      "apiTypes": "OAS",
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-circulation-item",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>This is the blueprint module that should be used as a template for FOLIO Spring-based backend modules. It provides the initial configuration and common data schemas used by the FOLIO platform.</p>",
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
@@ -1121,6 +1201,18 @@
       "repoLanguageHint": "other",
       "repoType": "backend-mod",
       "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "isSpringway": true,
+      "name": "mod-dcb",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>APIs for managing dcb transactions in folio.</p>"
     },
     {
       "apiTypes": "RAML",
@@ -1434,6 +1526,18 @@
       ]
     },
     {
+      "defaultBranch": "master",
+      "description": "FOLIO Query Machine back-end module",
+      "docDirName": null,
+      "isSpringway": true,
+      "name": "mod-fqm-manager",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": ""
+    },
+    {
       "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": null,
@@ -1707,6 +1811,18 @@
         "api-lint.yml",
         "api-schema-lint.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Lists back-end module",
+      "docDirName": null,
+      "isSpringway": true,
+      "name": "mod-lists",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": ""
     },
     {
       "apiTypes": "RAML",
@@ -2195,6 +2311,7 @@
       "repoType": "backend-mod",
       "snippetIntro": "",
       "workflows": [
+        "deploy.yml",
         "gradle.yml"
       ]
     },
@@ -3733,6 +3850,24 @@
       "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>The Licenses UI Module, or <code>ui-licenses</code>, is a Stripes UI module used for management of licenses</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "ui-lists",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "<p>The Lists UI Module, or <code>ui-lists</code>, is a Stripes UI Module used to create and manage Lists which are queries across multiple modules (for example: find all items marked as missing or declared lost, or find all open loans assigned to inactive users).</p>",
       "workflows": [
         "build-npm-release.yml",
         "build-npm.yml"
