@@ -24,6 +24,7 @@ inventory:
   description: Inventory instances, items, and circulation.
   modules:
     - mod-circulation
+    - mod-circulation-item
     - mod-circulation-storage
     - mod-copycat
     - mod-inventory
@@ -47,6 +48,7 @@ course-reserves:
   modules:
     - mod-courses
     - edge-lti-courses
+    - edge-courses
 finance:
   title: Finance and orders
   description: Finance, orders, organizations, acquisitions.
@@ -121,7 +123,12 @@ other:
   description: Not yet grouped.
   modules:
     - mod-consortia
+    - mod-dcb
+    - edge-dcb
     - mod-eusage-reports
+    - mod-fqm-manager
+    - edge-fqm
+    - mod-lists
     - mod-ldp
     - folio-custom-fields
     - folio-spring-support

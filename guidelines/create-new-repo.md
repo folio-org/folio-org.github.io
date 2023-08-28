@@ -21,13 +21,14 @@ Most setup can be done by your development team, following this document.
 
 If assistance is needed then [raise a FOLIO DevOps Jira ticket](/faqs/how-to-raise-devops-ticket/#general-folio-devops)
 so that the correct permissions are set on the repo, and an appropriate Jira project can be created (if applicable).
-There is one example at [FOLIO-2892](https://issues.folio.org/browse/FOLIO-2892).
 
 ## Configuration at GitHub
 
-If the "New" button is not available to you at [github.com/folio-org](https://github.com/folio-org) then [contact](/community/#collaboration-tools) FOLIO DevOps.
+If the "New" button is not available to you at [github.com/folio-org](https://github.com/folio-org) then seek FOLIO DevOps [assistance](/faqs/how-to-raise-devops-ticket/).
 
-Otherwise follow the GitHub prompts to create a new repository, and if needed to then import an existing repository.
+The repository must be "public" and not the default "private".
+
+Otherwise follow the GitHub prompts to create a new repository, and if needed to then import an existing code base.
 
 The following first few items can only be done by the initial creator of the repository or its owners, and should happen early. Use its "Settings" area.
 (If the "Settings" tab is not available to you, then see the "support" advice above.)
@@ -106,9 +107,8 @@ Get the initial basic source files and other configuration files added first.
 
 New front-end repositories will use GitHub Actions Workflows (see our [document](/guidelines/github-actions-frontend/)).
 
-**Note:**
-The Workflows need to be committed directly to master branch.
-If it is done via a pull-request then that will fail, as the initial base Sonar scan for master branch has not yet run.
+When the code and configuration is in place, then this new repository needs to be manually added to Sonarcloud.
+Seek FOLIO DevOps [assistance](/faqs/how-to-raise-devops-ticket/).
 
 ## Module documentation
 
