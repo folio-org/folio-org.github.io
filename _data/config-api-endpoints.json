@@ -3564,6 +3564,14 @@
     "path": "/email"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mod-fqm-manager.yaml",
+    "apiType": "oas",
+    "interface": "entity_types 1.0",
+    "methods": "get:operation/getEntityTypeSummary",
+    "name": "mod-fqm-manager",
+    "path": "/entity-types"
+  },
+  {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
     "interface": "erm-usage-harvester 1.4",
@@ -7621,6 +7629,14 @@
     "methods": "post:pubsub_publish_post",
     "name": "mod-pubsub",
     "path": "/pubsub/publish"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-fqm-manager.yaml",
+    "apiType": "oas",
+    "interface": "_timer 1.0",
+    "methods": "post:operation/deleteOldQueries",
+    "name": "mod-fqm-manager",
+    "path": "/query/purge"
   },
   {
     "apiDescription": "ramls/record-bulk.raml",

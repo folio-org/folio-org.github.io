@@ -782,6 +782,23 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/swagger.api/mod-fqm-manager.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.2"
+    },
+    "name": "mod-fqm-manager",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/gobi-custom-mappings.raml",
