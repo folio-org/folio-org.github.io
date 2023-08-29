@@ -94,7 +94,7 @@ The DevOps team will configure the module and conduct various configuration test
 
 ## Verify deployment
 
-After merge, await the scheduled build of the folio-snapshot and folio-testing [reference environments](/guides/automation/#reference-environments).
+After merge, await the scheduled build of the folio-snapshot [reference environments](/guides/automation/#reference-environments).
 
 Visit the [Software versions](https://folio-snapshot.dev.folio.org/settings/about) page of each to verify that the new module is present.
 
