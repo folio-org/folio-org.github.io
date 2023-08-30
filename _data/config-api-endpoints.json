@@ -5908,6 +5908,78 @@
     "path": "/links/suggestion"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/list.yaml",
+    "apiType": "oas",
+    "interface": "lists 1.0",
+    "methods": "get:operation/getAllLists post:operation/createList",
+    "name": "mod-lists",
+    "path": "/lists"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/list.yaml",
+    "apiType": "oas",
+    "interface": "lists 1.0",
+    "methods": "get:operation/getListConfiguration",
+    "name": "mod-lists",
+    "path": "/lists/configuration"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/list.yaml",
+    "apiType": "oas",
+    "interface": "lists 1.0",
+    "methods": "delete:operation/deleteList get:operation/getListById put:operation/updateList",
+    "name": "mod-lists",
+    "path": "/lists/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/list.yaml",
+    "apiType": "oas",
+    "interface": "lists 1.0",
+    "methods": "get:operation/getListContents",
+    "name": "mod-lists",
+    "path": "/lists/{id}/contents"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/list.yaml",
+    "apiType": "oas",
+    "interface": "lists 1.0",
+    "methods": "post:operation/exportList",
+    "name": "mod-lists",
+    "path": "/lists/{id}/exports"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/list.yaml",
+    "apiType": "oas",
+    "interface": "lists 1.0",
+    "methods": "get:operation/getExportDetails",
+    "name": "mod-lists",
+    "path": "/lists/{id}/exports/{exportId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/list.yaml",
+    "apiType": "oas",
+    "interface": "lists 1.0",
+    "methods": "post:operation/cancelExport",
+    "name": "mod-lists",
+    "path": "/lists/{id}/exports/{exportId}/cancel"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/list.yaml",
+    "apiType": "oas",
+    "interface": "lists 1.0",
+    "methods": "get:operation/downloadList",
+    "name": "mod-lists",
+    "path": "/lists/{id}/exports/{exportId}/download"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/list.yaml",
+    "apiType": "oas",
+    "interface": "lists 1.0",
+    "methods": "delete:operation/cancelRefresh post:operation/performRefresh",
+    "name": "mod-lists",
+    "path": "/lists/{id}/refresh"
+  },
+  {
     "apiDescription": "ramls/loan-anonymization.raml",
     "apiType": "raml",
     "interface": "loan-anonymization 0.1",
