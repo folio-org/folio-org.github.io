@@ -792,7 +792,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5.3"
     },
     "name": "mod-fqm-manager",
     "org": "folio-org"
@@ -1072,6 +1072,23 @@
       "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-licenses",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/swagger.api/list.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.3"
+    },
+    "name": "mod-lists",
     "org": "folio-org"
   },
   {
