@@ -56,6 +56,23 @@
   {
     "config": {
       "oas": [
+        "src/main/resources/swagger.api/edge-fqm.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.3"
+    },
+    "name": "edge-fqm",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
         "src/main/resources/swagger.api/edge-inn-reach.yaml"
       ],
       "raml": [],
@@ -1356,7 +1373,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5.3"
     },
     "name": "mod-permissions",
     "org": "folio-org"
