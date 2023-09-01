@@ -2614,6 +2614,41 @@
     "path": "/coursereserves/terms/{term_id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/edge-courses.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getReservesByInstanceId",
+    "name": "edge-courses",
+    "path": "/courses/courselistings/{instanceId}/reserves"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-courses.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getCoursesByQuery",
+    "name": "edge-courses",
+    "path": "/courses/courses"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-courses.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getDepartments",
+    "name": "edge-courses",
+    "path": "/courses/departments"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-courses.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getInstructors",
+    "name": "edge-courses",
+    "path": "/courses/instructors"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-courses.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getReservesByQuery",
+    "name": "edge-courses",
+    "path": "/courses/reserves"
+  },
+  {
     "apiDescription": "ramls/custom-fields.raml",
     "apiType": "raml",
     "interface": "custom-fields 2.1",
@@ -8802,6 +8837,13 @@
     "methods": "get:operation/getAllTransactions",
     "name": "mod-inn-reach",
     "path": "/transactions"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-dcb.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getDcbTransactionStatus",
+    "name": "edge-dcb",
+    "path": "/Transactions/{dcbTransactionId}/status"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
