@@ -370,6 +370,23 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/swagger.api/circulation-item.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.3"
+    },
+    "name": "mod-circulation-item",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/actual-cost-record-storage.raml",
@@ -556,6 +573,23 @@
       "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-data-import",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/swagger.api/dcb_transaction.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.3"
+    },
+    "name": "mod-dcb",
     "org": "folio-org"
   },
   {
