@@ -6815,15 +6815,23 @@
   {
     "apiDescription": "ramls/po-line.raml",
     "apiType": "raml",
-    "interface": "orders-storage.po-lines 12.1",
+    "interface": "orders-storage.po-lines 12.2",
     "methods": "get:orders_storage_po_lines_get post:orders_storage_po_lines_post",
     "name": "mod-orders-storage",
     "path": "/orders-storage/po-lines"
   },
   {
+    "apiDescription": "ramls/po-line-batch.raml",
+    "apiType": "raml",
+    "interface": "orders-storage.po-lines 12.2",
+    "methods": "put:orders_storage_po_lines_batch_put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/po-lines-batch"
+  },
+  {
     "apiDescription": "ramls/po-line.raml",
     "apiType": "raml",
-    "interface": "orders-storage.po-lines 12.1",
+    "interface": "orders-storage.po-lines 12.2",
     "methods": "delete:orders_storage_po_lines__id__delete get:orders_storage_po_lines__id__get patch:orders_storage_po_lines__id__patch put:orders_storage_po_lines__id__put",
     "name": "mod-orders-storage",
     "path": "/orders-storage/po-lines/{id}"
