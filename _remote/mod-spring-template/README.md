@@ -35,7 +35,9 @@ This is the blueprint module that should be used as a template for FOLIO Spring-
 It provides the initial configuration and common data schemas used by the FOLIO platform.
 
 ## How-to guide
-This guide shows how to create a new folio backend module using the mod-spring-template engine
+This guide shows how to create a new FOLIO backend module using the mod-spring-template engine.
+
+Also follow the required [guidelines](https://dev.folio.org/guidelines/create-new-repo/) to create a new repository.
 
 1. Clone the mod-spring-template repository from the github https://github.com/folio-org/mod-spring-template
 2. Rename the folder containing the project following FOLIO naming conventions and delete the git related folder .git
@@ -161,6 +163,7 @@ public interface StoreClient {
 16. The skeleton for your new module is ready for further business functionality development.
 17. Generated API controllers and DTOs will ****be stored in the **target/generated-sources/src/main/java** folder. The content of that folder will be automatically included in the list of source folders.
 18. Note that the default implementation for TenantAPI is already provided by the folio-spring-base library. If you need to customize it or provide your own implementation please reach https://github.com/folio-org/folio-spring-base#custom-_tenant-logic for details.
+19. Add and configure GitHub Workflows for [api-lint](https://dev.folio.org/guides/api-lint/) and [api-schema-lint](https://dev.folio.org/guides/describe-schema/) and [api-doc](https://dev.folio.org/guides/api-doc/).
 
 # Instrumentation
 ## Spring Boot Actuator and Metrics
