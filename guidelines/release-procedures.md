@@ -292,7 +292,7 @@ Each platform repository has three kinds of protected, long-term branches:
 
 * 'master' branch - This branch represents the most up-to-date set of compatible, released FOLIO modules.
 * 'snapshot' branch - This branch represents the most up-to-date set of compatible, unreleased ("snapshots") FOLIO modules.
-* release branch (e.g. 'q2-2020') - These branches represent a set of compatible, released FOLIO modules that have passed user-acceptance testing. This is typically the most stable branch of the FOLIO platform.
+* release branch (e.g. 'r1-2023') - These branches represent a set of compatible, released FOLIO modules that have passed user-acceptance testing. This is typically the most stable branch of the FOLIO platform.
 
 Each of these branches is managed in similar, although not entirely identical ways.
 The master and release branches contain sets of FOLIO modules that are pinned to specific released versions.

@@ -40,9 +40,9 @@ $
 
 ## Generate a module descriptor
 
-This can be done using a script provided with stripes-core (and which is used in back-end deployment):
+This can be done using a script provided with [Stripes CLI](https://github.com/folio-org/stripes-cli) (and which is used in back-end deployment):
 ```
-$ node ../stripes-core/util/package2md.js package.json > MD.json
+$ stripes mod descriptor --full > MD.json
 ```
 You can look at the generated module descriptor in your editor if you like. It's in the same format as any other [Okapi module descriptor](https://github.com/folio-org/okapi/blob/master/doc/guide.md#example-4-complete-moduledescriptor).
 

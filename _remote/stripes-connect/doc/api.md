@@ -218,6 +218,10 @@ configuration ensures that the correct tenant-ID is sent with each
 request, and that the `root` is defaulted to a globally-configured
 address pointing to an Okapi instance.)
 
+Okapi resources support extra configuration options:
+
+* `tenant`: A string that specifies tenant value or source of tenant value (props, query etc). This config is optional, if not specified default okapi tenant value is used.
+
 
 ### Example manifest
 
