@@ -86,7 +86,7 @@ The server is built every day, to finish about 02:03 UTC.\
 The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
 
 The "snapshot" branch of the Stripes Platform is rebuilt every hour, starting about 19 minutes past the hour and finishing about 50 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
-If successful, then this will regenerate the yarn.lock and install files of the Platform (see [note above](#install-json)), to be utilised by the abovementioned "folio-snapshot" job.
+If successful, then this will [regenerate](/guidelines/release-procedures/#add-to-platforms) the yarn.lock and install files of the Platform (see [note above](#install-json)), to be utilised by the abovementioned "folio-snapshot" job.
 So if there is an urgent need to [rebuild](#off-schedule-rebuilds) "folio-snapshot" outside of normal automation, so as to include a new snapshot of a module, then this build needs to have run before the "folio-snapshot" build is re-run.
 
 #### Included module versions
