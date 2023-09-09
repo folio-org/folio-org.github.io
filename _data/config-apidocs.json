@@ -659,7 +659,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5.3"
     },
     "name": "mod-entities-links",
     "org": "folio-org"
@@ -965,10 +965,6 @@
       "raml": [
         "ramls/alternative-title-type.raml",
         "ramls/async-migration.raml",
-        "ramls/authorities-reindex.raml",
-        "ramls/authorities.raml",
-        "ramls/authority-note-type.raml",
-        "ramls/authority-source-file.raml",
         "ramls/bound-with-part.raml",
         "ramls/call-number-type.raml",
         "ramls/classification-type.raml",
@@ -1467,6 +1463,7 @@
   {
     "config": {
       "oas": [
+        "src/main/resources/swagger.api/marc-specifications.yaml",
         "src/main/resources/swagger.api/records-editor-async.yaml",
         "src/main/resources/swagger.api/records-editor.yaml"
       ],
@@ -1477,7 +1474,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5.3"
     },
     "name": "mod-quick-marc",
     "org": "folio-org"

@@ -979,67 +979,67 @@
     "path": "/authn/update"
   },
   {
-    "apiDescription": "ramls/authority-note-type.raml",
-    "apiType": "raml",
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
     "interface": "authority-note-types 1.0",
-    "methods": "get:authority_note_types_get post:authority_note_types_post",
-    "name": "mod-inventory-storage",
+    "methods": "get:operation/retrieveAuthorityNoteTypes post:operation/createAuthorityNoteType",
+    "name": "mod-entities-links",
     "path": "/authority-note-types"
   },
   {
-    "apiDescription": "ramls/authority-note-type.raml",
-    "apiType": "raml",
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
     "interface": "authority-note-types 1.0",
-    "methods": "delete:authority_note_types__id__delete get:authority_note_types__id__get put:authority_note_types__id__put",
-    "name": "mod-inventory-storage",
+    "methods": "delete:operation/deleteAuthorityNoteType get:operation/getAuthorityNoteType put:operation/updateAuthorityNoteType",
+    "name": "mod-entities-links",
     "path": "/authority-note-types/{id}"
   },
   {
-    "apiDescription": "ramls/authority-source-file.raml",
-    "apiType": "raml",
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
     "interface": "authority-source-files 1.0",
-    "methods": "get:authority_source_files_get post:authority_source_files_post",
-    "name": "mod-inventory-storage",
+    "methods": "get:operation/retrieveAuthoritySourceFiles post:operation/createAuthoritySourceFile",
+    "name": "mod-entities-links",
     "path": "/authority-source-files"
   },
   {
-    "apiDescription": "ramls/authority-source-file.raml",
-    "apiType": "raml",
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
     "interface": "authority-source-files 1.0",
-    "methods": "delete:authority_source_files__id__delete get:authority_source_files__id__get patch:authority_source_files__id__patch put:authority_source_files__id__put",
-    "name": "mod-inventory-storage",
+    "methods": "delete:operation/deleteAuthoritySourceFile get:operation/getAuthoritySourceFile patch:operation/patchAuthoritySourceFile put:operation/updateAuthoritySourceFile",
+    "name": "mod-entities-links",
     "path": "/authority-source-files/{id}"
   },
   {
-    "apiDescription": "ramls/authorities.raml",
-    "apiType": "raml",
-    "interface": "authority-storage 1.1",
-    "methods": "delete:authority_storage_authorities_delete get:authority_storage_authorities_get post:authority_storage_authorities_post",
-    "name": "mod-inventory-storage",
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
+    "interface": "authority-storage 2.0",
+    "methods": "get:operation/retrieveAuthorities post:operation/createAuthority",
+    "name": "mod-entities-links",
     "path": "/authority-storage/authorities"
   },
   {
-    "apiDescription": "ramls/authorities.raml",
-    "apiType": "raml",
-    "interface": "authority-storage 1.1",
-    "methods": "delete:authority_storage_authorities__authorityid__delete get:authority_storage_authorities__authorityid__get put:authority_storage_authorities__authorityid__put",
-    "name": "mod-inventory-storage",
-    "path": "/authority-storage/authorities/{authorityId}"
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
+    "interface": "authority-storage 2.0",
+    "methods": "delete:operation/deleteAuthority get:operation/getAuthority put:operation/updateAuthority",
+    "name": "mod-entities-links",
+    "path": "/authority-storage/authorities/{id}"
   },
   {
-    "apiDescription": "ramls/authorities-reindex.raml",
-    "apiType": "raml",
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
     "interface": "authority-reindex 0.1",
-    "methods": "get:authority_storage_reindex_get post:authority_storage_reindex_post",
-    "name": "mod-inventory-storage",
+    "methods": "get:operation/getReindexJobs post:operation/submitReindexJob",
+    "name": "mod-entities-links",
     "path": "/authority-storage/reindex"
   },
   {
-    "apiDescription": "ramls/authorities-reindex.raml",
-    "apiType": "raml",
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
     "interface": "authority-reindex 0.1",
-    "methods": "delete:authority_storage_reindex__id__delete get:authority_storage_reindex__id__get",
-    "name": "mod-inventory-storage",
+    "methods": "delete:operation/deleteReindexJob get:operation/getReindexJob",
+    "name": "mod-entities-links",
     "path": "/authority-storage/reindex/{id}"
   },
   {
@@ -1481,6 +1481,14 @@
     "methods": "get:operation/getBulkOperationById",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
+    "apiType": "oas",
+    "interface": "bulk-operations 1.0",
+    "methods": "post:operation/cancelOperationById",
+    "name": "mod-bulk-operations",
+    "path": "/bulk-operations/{operationId}/cancel"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
@@ -9338,5 +9346,12 @@
     "methods": "post:operation/postUserContentUpdates",
     "name": "mod-data-export-worker",
     "path": "/{jobId}/user-content-update/upload"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/marc-specifications.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getMarcSpecification",
+    "name": "mod-quick-marc",
+    "path": "/{recordType}/{fieldTag}"
   }
 ]
