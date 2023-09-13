@@ -8276,7 +8276,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.1",
+    "interface": "search 1.2",
     "methods": "get:operation/searchAuthorities",
     "name": "mod-search",
     "path": "/search/authorities"
@@ -8316,7 +8316,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.1",
+    "interface": "search 1.2",
     "methods": "get:operation/getHoldingIds",
     "name": "mod-search",
     "path": "/search/holdings/ids"
@@ -8364,7 +8364,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.1",
+    "interface": "search 1.2",
     "methods": "get:operation/searchInstances",
     "name": "mod-search",
     "path": "/search/instances"
@@ -8372,7 +8372,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.1",
+    "interface": "search 1.2",
     "methods": "get:operation/getInstanceIds",
     "name": "mod-search",
     "path": "/search/instances/ids"
@@ -8404,7 +8404,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.1",
+    "interface": "search 1.2",
     "methods": "get:operation/getFacets",
     "name": "mod-search",
     "path": "/search/{recordType}/facets"
