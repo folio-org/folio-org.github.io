@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-08-28T00:04:44.183230+00:00"
+    "generatedDateTime": "2023-09-13T23:04:32.687735+00:00"
   },
   "repos": [
     {
@@ -138,15 +138,27 @@
       "snippetIntro": "<p><a href='https://github.com/folio-org/edge-connexion'>edge-connexion</a> is a FOLIO module for importing records to a FOLIO instance via <a href='https://www.oclc.org/en/connexion.html'>OCLC Connexion</a></p>"
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Edge API is to bridge the gap between 3rd party discovery services and FOLIO mod-courses module.",
       "docDirName": null,
+      "hintOas": true,
       "name": "edge-courses",
       "org": "folio-org",
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": "<p>Provides an ability to retrieve course-reserve information from FOLIO</p>"
+      "snippetIntro": "<p>Provides an ability to retrieve course-reserve information from FOLIO</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "OAS",
@@ -196,16 +208,28 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
+      "hintOas": true,
       "isSpringway": true,
       "name": "edge-fqm",
       "org": "folio-org",
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": ""
+      "snippetIntro": "<p>Provides an ability to retrieve query and entity type information from FOLIO</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "OAS",
@@ -806,7 +830,7 @@
       "docDirName": null,
       "name": "lib-fqm-query-processor",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "other",
       "snippetIntro": ""
     },
@@ -1203,16 +1227,28 @@
       "snippetIntro": ""
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
+      "hintOas": true,
       "isSpringway": true,
       "name": "mod-dcb",
       "org": "folio-org",
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>APIs for managing dcb transactions in folio.</p>"
+      "snippetIntro": "<p>APIs for managing dcb transactions in folio.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -1526,16 +1562,28 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "FOLIO Query Machine back-end module",
       "docDirName": null,
+      "hintOas": true,
       "isSpringway": true,
       "name": "mod-fqm-manager",
       "org": "folio-org",
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -1813,16 +1861,28 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Lists back-end module",
       "docDirName": null,
+      "hintOas": true,
       "isSpringway": true,
       "name": "mod-lists",
       "org": "folio-org",
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -2839,7 +2899,7 @@
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": "<ul>\n<li>Folio RFCs are stored as MarkDown documents as part of the GitHub RFC Repo.</li>\n</ul>"
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "main",
