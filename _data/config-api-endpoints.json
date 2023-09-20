@@ -1970,7 +1970,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "allowed-service-points 0.1",
+    "interface": "allowed-service-points 1.0",
     "methods": "get:circulation_requests_allowed_service_points_get",
     "name": "mod-circulation",
     "path": "/circulation/requests/allowed-service-points"
@@ -2857,7 +2857,7 @@
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "interface": "data-export 5.0",
+    "interface": "data-export 5.1",
     "methods": "post:data_export_export_post",
     "name": "mod-data-export",
     "path": "/data-export/export"
@@ -2865,7 +2865,7 @@
   {
     "apiDescription": "ramls/dataExport-file-definition.raml",
     "apiType": "raml",
-    "interface": "data-export 5.0",
+    "interface": "data-export 5.1",
     "methods": "post:data_export_file_definitions_post",
     "name": "mod-data-export",
     "path": "/data-export/file-definitions"
@@ -2873,7 +2873,7 @@
   {
     "apiDescription": "ramls/dataExport-file-definition.raml",
     "apiType": "raml",
-    "interface": "data-export 5.0",
+    "interface": "data-export 5.1",
     "methods": "get:data_export_file_definitions__filedefinitionid__get",
     "name": "mod-data-export",
     "path": "/data-export/file-definitions/{fileDefinitionId}"
@@ -2881,7 +2881,7 @@
   {
     "apiDescription": "ramls/dataExport-file-definition.raml",
     "apiType": "raml",
-    "interface": "data-export 5.0",
+    "interface": "data-export 5.1",
     "methods": "post:data_export_file_definitions__filedefinitionid__upload_post",
     "name": "mod-data-export",
     "path": "/data-export/file-definitions/{fileDefinitionId}/upload"
@@ -2889,7 +2889,7 @@
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "interface": "data-export 5.0",
+    "interface": "data-export 5.1",
     "methods": "get:data_export_job_executions_get",
     "name": "mod-data-export",
     "path": "/data-export/job-executions"
@@ -2897,7 +2897,7 @@
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "interface": "data-export 5.0",
+    "interface": "data-export 5.1",
     "methods": "delete:data_export_job_executions__id__delete",
     "name": "mod-data-export",
     "path": "/data-export/job-executions/{id}"
@@ -2905,7 +2905,7 @@
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "interface": "data-export 5.0",
+    "interface": "data-export 5.1",
     "methods": "get:data_export_job_executions__jobexecutionid__download__exportfileid__get",
     "name": "mod-data-export",
     "path": "/data-export/job-executions/{jobExecutionId}/download/{exportFileId}"
@@ -2913,7 +2913,7 @@
   {
     "apiDescription": "ramls/dataExport-job-profile.raml",
     "apiType": "raml",
-    "interface": "data-export 5.0",
+    "interface": "data-export 5.1",
     "methods": "get:data_export_job_profiles_get post:data_export_job_profiles_post",
     "name": "mod-data-export",
     "path": "/data-export/job-profiles"
@@ -2921,7 +2921,7 @@
   {
     "apiDescription": "ramls/dataExport-job-profile.raml",
     "apiType": "raml",
-    "interface": "data-export 5.0",
+    "interface": "data-export 5.1",
     "methods": "delete:data_export_job_profiles__id__delete get:data_export_job_profiles__id__get put:data_export_job_profiles__id__put",
     "name": "mod-data-export",
     "path": "/data-export/job-profiles/{id}"
@@ -2929,7 +2929,7 @@
   {
     "apiDescription": "ramls/dataExport-logs.raml",
     "apiType": "raml",
-    "interface": "data-export 5.0",
+    "interface": "data-export 5.1",
     "methods": "get:data_export_logs_get",
     "name": "mod-data-export",
     "path": "/data-export/logs"
@@ -2937,7 +2937,7 @@
   {
     "apiDescription": "ramls/dataExport-mapping-profiles.raml",
     "apiType": "raml",
-    "interface": "data-export 5.0",
+    "interface": "data-export 5.1",
     "methods": "get:data_export_mapping_profiles_get post:data_export_mapping_profiles_post",
     "name": "mod-data-export",
     "path": "/data-export/mapping-profiles"
@@ -2945,7 +2945,7 @@
   {
     "apiDescription": "ramls/dataExport-mapping-profiles.raml",
     "apiType": "raml",
-    "interface": "data-export 5.0",
+    "interface": "data-export 5.1",
     "methods": "delete:data_export_mapping_profiles__id__delete get:data_export_mapping_profiles__id__get put:data_export_mapping_profiles__id__put",
     "name": "mod-data-export",
     "path": "/data-export/mapping-profiles/{id}"
@@ -2953,7 +2953,7 @@
   {
     "apiDescription": "ramls/dataExport.raml",
     "apiType": "raml",
-    "interface": "data-export 5.0",
+    "interface": "data-export 5.1",
     "methods": "post:data_export_quick_export_post",
     "name": "mod-data-export",
     "path": "/data-export/quick-export"
@@ -2961,7 +2961,7 @@
   {
     "apiDescription": "ramls/dataExport-transformation-fields.raml",
     "apiType": "raml",
-    "interface": "data-export 5.0",
+    "interface": "data-export 5.1",
     "methods": "get:data_export_transformation_fields_get",
     "name": "mod-data-export",
     "path": "/data-export/transformation-fields"
