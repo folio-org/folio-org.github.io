@@ -376,12 +376,12 @@
     {
       "name": "mod-ncip",
       "nameRepo": "mod-ncip",
-      "releaseDate": "2023-04-05T19:19:02+00:00",
-      "releaseName": "v1.13.1",
-      "releaseSha": "f1232aefdc6e241db326fec8be30f659bee52dc6",
-      "releaseTag": "v1.13.1",
+      "releaseDate": "2023-09-20T20:40:51+00:00",
+      "releaseName": "v1.13.3",
+      "releaseSha": "b2dd462b17721db79be876235c91a35e3d5fef4c",
+      "releaseTag": "v1.13.3",
       "releaseTarget": "master",
-      "version": "1.13.1"
+      "version": "1.13.3"
     },
     {
       "name": "mod-notes",
@@ -586,12 +586,12 @@
     {
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
-      "releaseDate": "2023-08-14T14:26:21+00:00",
-      "releaseName": "5.6.10",
-      "releaseSha": "d023abfdaeab7f51ea1ebbafb0dfd5fc58cef7ac",
-      "releaseTag": "v5.6.10",
+      "releaseDate": "2023-08-30T10:41:22+00:00",
+      "releaseName": "5.6.11",
+      "releaseSha": "e4280ddbcd4799625dee29d01f8003731ef6f0d8",
+      "releaseTag": "v5.6.11",
       "releaseTarget": "master",
-      "version": "5.6.10"
+      "version": "5.6.11"
     },
     {
       "name": "mod-tags",
@@ -646,12 +646,12 @@
     {
       "name": "mod-z3950",
       "nameRepo": "Net-Z3950-FOLIO",
-      "releaseDate": "2023-02-28T11:43:15+00:00",
-      "releaseName": "v3.3.2",
-      "releaseSha": "745918480124f89dfbcb37af01fd2f5968061903",
-      "releaseTag": "v3.3.2",
+      "releaseDate": "2023-09-19T17:30:23+00:00",
+      "releaseName": "v3.3.5",
+      "releaseSha": "015fce524ac0899f7ec99bbb87f05cc68f141767",
+      "releaseTag": "v3.3.5",
       "releaseTarget": "master",
-      "version": "3.3.2"
+      "version": "3.3.5"
     }
   ]
 }
