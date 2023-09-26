@@ -286,12 +286,12 @@
     {
       "name": "mod-inventory-storage",
       "nameRepo": "mod-inventory-storage",
-      "releaseDate": "2023-02-14T13:42:20+00:00",
-      "releaseName": "v26.0.0",
-      "releaseSha": "d9b83c8d2c08de0b9f082c0a66496bfbdf4945f8",
-      "releaseTag": "v26.0.0",
+      "releaseDate": "2023-09-23T14:36:08+00:00",
+      "releaseName": "v26.0.1",
+      "releaseSha": "685632fd827b5622e43be3497431d523baf74866",
+      "releaseTag": "v26.0.1",
       "releaseTarget": "master",
-      "version": "26.0.0"
+      "version": "26.0.1"
     },
     {
       "name": "mod-inventory-update",
@@ -586,12 +586,12 @@
     {
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
-      "releaseDate": "2023-08-30T10:41:22+00:00",
-      "releaseName": "5.6.11",
-      "releaseSha": "e4280ddbcd4799625dee29d01f8003731ef6f0d8",
-      "releaseTag": "v5.6.11",
+      "releaseDate": "2023-09-22T16:59:58+00:00",
+      "releaseName": "5.6.12",
+      "releaseSha": "494d334eb0a12abc5f77fd927ccc774fb198b0da",
+      "releaseTag": "v5.6.12",
       "releaseTarget": "master",
-      "version": "5.6.11"
+      "version": "5.6.12"
     },
     {
       "name": "mod-tags",
