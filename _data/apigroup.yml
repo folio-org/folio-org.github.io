@@ -131,6 +131,7 @@ other:
     - mod-lists
     - mod-ldp
     - folio-custom-fields
+    - folio-query-tool-metadata
     - folio-spring-support
     - folio-vertx-lib
 deprecated:
