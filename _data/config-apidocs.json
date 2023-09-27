@@ -236,6 +236,23 @@
   {
     "config": {
       "oas": [
+        "src/main/resources/swagger.api/queryTool.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.3"
+    },
+    "name": "folio-query-tool-metadata",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
         "folio-spring-base/src/main/resources/swagger.api/tenant.yaml"
       ],
       "raml": [],
