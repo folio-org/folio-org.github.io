@@ -98,8 +98,8 @@ consists of the following parts:
 | Char value | Num value |
 |:----------:|:---------:|
 |            |     0     |
-|     #      |     1     |
-|     $      |     2     |
+|     !      |     1     |
+|     #      |     2     |
 |     +      |     3     |
 |     ,      |     4     |
 |     -      |     5     |

@@ -633,7 +633,7 @@
       "name": "folio-query-tool-metadata",
       "org": "folio-org",
       "repoLanguageHint": "java",
-      "repoType": "other",
+      "repoType": "raml-shared",
       "snippetIntro": "",
       "workflows": [
         "api-doc.yml",
