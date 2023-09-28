@@ -8938,7 +8938,7 @@
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
     "interface": "mod-dcb 1.0",
-    "methods": "get:operation/getTransactionStatus put:operation/updateTransactionStatus",
+    "methods": "get:operation/getTransactionStatusById put:operation/updateTransactionStatus",
     "name": "mod-dcb",
     "path": "/transactions/{dcbTransactionId}/status"
   },
