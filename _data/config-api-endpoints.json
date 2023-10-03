@@ -8310,7 +8310,7 @@
   {
     "apiDescription": "ramls/scheduled-notice-storage.raml",
     "apiType": "raml",
-    "interface": "scheduled-notice-storage 0.5",
+    "interface": "scheduled-notice-storage 0.6",
     "methods": "delete:scheduled_notice_storage_scheduled_notices_delete get:scheduled_notice_storage_scheduled_notices_get post:scheduled_notice_storage_scheduled_notices_post",
     "name": "mod-circulation-storage",
     "path": "/scheduled-notice-storage/scheduled-notices"
@@ -8318,7 +8318,7 @@
   {
     "apiDescription": "ramls/scheduled-notice-storage.raml",
     "apiType": "raml",
-    "interface": "scheduled-notice-storage 0.5",
+    "interface": "scheduled-notice-storage 0.6",
     "methods": "delete:scheduled_notice_storage_scheduled_notices__scheduled_noticeid__delete get:scheduled_notice_storage_scheduled_notices__scheduled_noticeid__get put:scheduled_notice_storage_scheduled_notices__scheduled_noticeid__put",
     "name": "mod-circulation-storage",
     "path": "/scheduled-notice-storage/scheduled-notices/{scheduled-noticeId}"
