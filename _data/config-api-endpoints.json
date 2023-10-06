@@ -7515,6 +7515,13 @@
     "path": "/patron/account/{id}/hold/{holdId}/cancel"
   },
   {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "get:patron_account__id__instance__instanceid__allowed_service_points_get",
+    "name": "edge-patron",
+    "path": "/patron/account/{id}/instance/{instanceId}/allowed-service-points"
+  },
+  {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
     "methods": "get:patron_account__id__instance__instanceid__allowed_service_points_get",
