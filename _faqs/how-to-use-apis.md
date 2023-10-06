@@ -2,7 +2,7 @@
 layout: page
 title: How to use APIs
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: reference
 faqOrder: 3
 ---

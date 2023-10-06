@@ -2,7 +2,7 @@
 layout: page
 title: How to contribute to developer documentation
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: devdoc
 faqOrder: 3
 ---

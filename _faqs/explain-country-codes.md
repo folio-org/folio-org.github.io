@@ -2,7 +2,7 @@
 layout: page
 title: Explain country codes
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: development-tips
 faqOrder: 7
 ---

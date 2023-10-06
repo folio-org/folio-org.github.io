@@ -2,7 +2,7 @@
 layout: page
 title: How to create a new document
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: devdoc
 faqOrder: 4
 ---

@@ -4,7 +4,7 @@ title: Guidelines overview
 permalink: /guidelines/
 menuInclude: yes
 menuTopTitle: Guidelines
-menuTopIndex: 8
+menuTopIndex: 9
 menuSubTitle: Guidelines overview
 menuSubIndex: 1
 ---

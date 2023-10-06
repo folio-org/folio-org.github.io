@@ -2,7 +2,7 @@
 layout: page
 title: Where is developer documentation located
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: development-tips devdoc
 faqOrder: 1
 ---

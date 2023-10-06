@@ -2,7 +2,7 @@
 layout: page
 title: How to configure the generation of API documentation
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: reference
 faqOrder: 2
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: Explain the FOLIO permissions system
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: development-tips
 faqOrder: 2
 ---

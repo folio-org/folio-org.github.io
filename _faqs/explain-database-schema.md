@@ -2,7 +2,7 @@
 layout: page
 title: Explain DB schema and performance issues
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: development-tips
 faqOrder: 4
 ---

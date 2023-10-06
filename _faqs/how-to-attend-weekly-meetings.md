@@ -2,7 +2,7 @@
 layout: page
 title: How to attend weekly team meetings
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: management
 faqOrder: 6
 ---

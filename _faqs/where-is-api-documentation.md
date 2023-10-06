@@ -2,7 +2,7 @@
 layout: page
 title: Where is API reference documentation
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: reference
 faqOrder: 1
 ---

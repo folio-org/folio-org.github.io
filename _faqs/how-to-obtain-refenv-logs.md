@@ -2,7 +2,7 @@
 layout: page
 title: How to obtain reference environment module logs
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: development-tips
 faqOrder: 14
 ---

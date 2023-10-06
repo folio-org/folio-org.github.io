@@ -2,7 +2,7 @@
 layout: page
 title: How to determine which module handles which interface and endpoint
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: development-tips
 faqOrder: 9
 ---

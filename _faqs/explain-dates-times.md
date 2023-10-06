@@ -2,7 +2,7 @@
 layout: page
 title: Explain international date and time handling
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: development-tips
 faqOrder: 6
 ---

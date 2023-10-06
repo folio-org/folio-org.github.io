@@ -2,7 +2,7 @@
 layout: page
 title: How to create a new Tutorial set of documents
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: devdoc
 faqOrder: 5
 ---

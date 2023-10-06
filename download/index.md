@@ -5,7 +5,7 @@ permalink: /download/
 menuInclude: yes
 menuLink: yes
 menuTopTitle: Download
-menuTopIndex: 6
+menuTopIndex: 7
 ---
 
 At this stage of the project, the main item is the [Built artifacts](/download/artifacts/) showing how to configure for your development.

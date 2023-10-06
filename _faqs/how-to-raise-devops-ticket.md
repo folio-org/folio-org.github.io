@@ -2,7 +2,7 @@
 layout: page
 title: How to raise a DevOps Jira ticket
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: management
 faqOrder: 3
 ---
