@@ -2,7 +2,7 @@
 layout: page
 title: How to install new module to platform and reference environments
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: development-tips
 faqOrder: 8
 ---

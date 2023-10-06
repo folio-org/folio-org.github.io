@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-09-13T23:04:32.687735+00:00"
+    "generatedDateTime": "2023-10-06T00:15:10.048026+00:00"
   },
   "repos": [
     {
@@ -626,6 +626,7 @@
       "snippetIntro": ""
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -634,8 +635,13 @@
       "org": "folio-org",
       "repoLanguageHint": "java",
       "repoType": "raml-shared",
-      "snippetIntro": "",
+      "snippetIntro": "<p>folio-query-tool-metadata is responsible for defining the API for the mod-fqm-manager and edge-fqm modules, including the object models that are part of that API.</p>",
       "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
         "api-doc.yml",
         "api-lint.yml",
         "api-schema-lint.yml"
@@ -1573,7 +1579,7 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "",
+      "snippetIntro": "<p>FQM (FOLIO query machine) is the engine that takes in queries, processes queries, and provides answers. FQM consolidates data from different modules within FOLIO in real time, allowing users to conduct cross-application searches efficiently.</p>",
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
@@ -1819,7 +1825,7 @@
     {
       "apiTypes": "RAML",
       "defaultBranch": "master",
-      "description": "LDP query builder server-side module for FOLIO/ReShare",
+      "description": "Reporting Back End module",
       "docDirName": "doc",
       "name": "mod-ldp",
       "org": "folio-org",
@@ -1872,7 +1878,7 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "",
+      "snippetIntro": "<p>mod-lists is responsible for persisting the metadata and the contents (IDs) of lists.</p>",
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
@@ -2814,7 +2820,10 @@
       "name": "platform-rs",
       "org": "openlibraryenvironment",
       "repoType": "platform",
-      "snippetIntro": "<p>This is the Resource Sharing Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes</code> and of any Stripes modules you wish to make available as part of the Resource Sharing platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>"
+      "snippetIntro": "<p>This is the Resource Sharing Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes</code> and of any Stripes modules you wish to make available as part of the Resource Sharing platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>",
+      "workflows": [
+        "deploy.yml"
+      ]
     },
     {
       "defaultBranch": "main",
@@ -3885,7 +3894,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "LDP query builder UI for FOLIO/ReShare",
+      "description": "Reporting Front End module",
       "docDirName": "doc",
       "name": "ui-ldp",
       "org": "folio-org",

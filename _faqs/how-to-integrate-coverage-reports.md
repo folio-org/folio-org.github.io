@@ -2,7 +2,7 @@
 layout: page
 title: How to integrate code coverage reports with SonarQube
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: development-tips
 faqOrder: 11
 ---

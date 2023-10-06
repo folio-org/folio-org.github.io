@@ -2,7 +2,7 @@
 layout: page
 title: How to specify which Jenkins build image for CI
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: development-tips
 faqOrder: 12
 ---

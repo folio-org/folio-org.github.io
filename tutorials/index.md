@@ -4,7 +4,7 @@ title: Developer and System Administrator Tutorials
 permalink: /tutorials/
 menuInclude: yes
 menuTopTitle: Tutorials
-menuTopIndex: 7
+menuTopIndex: 8
 ---
 
 * [Using a FOLIO virtual machine](folio-vm) -- Explains how to utilise a FOLIO virtual machine (VM).

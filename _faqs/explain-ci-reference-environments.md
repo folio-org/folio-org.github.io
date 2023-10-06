@@ -2,7 +2,7 @@
 layout: page
 title: Explain continuous integration for reference environments
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: testing
 faqOrder: 2
 ---

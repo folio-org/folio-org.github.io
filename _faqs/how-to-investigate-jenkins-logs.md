@@ -2,7 +2,7 @@
 layout: page
 title: How to investigate Jenkins build logs
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: development-tips
 faqOrder: 13
 ---

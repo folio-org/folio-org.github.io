@@ -2,7 +2,7 @@
 layout: page
 title: How to get started with FOLIO development
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: start
 faqOrder: 1
 ---

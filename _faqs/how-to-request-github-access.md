@@ -2,7 +2,7 @@
 layout: page
 title: How to request GitHub user or team access
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: management
 faqOrder: 2
 ---

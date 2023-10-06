@@ -2,7 +2,7 @@
 layout: page
 title: How to use EditorConfig for consistent whitespace handling and coding-style
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: setup
 faqOrder: 2
 ---

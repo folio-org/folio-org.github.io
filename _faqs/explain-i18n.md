@@ -2,7 +2,7 @@
 layout: page
 title: Explain internationalization and localization
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: development-tips
 faqOrder: 5
 ---

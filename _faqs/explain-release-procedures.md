@@ -2,7 +2,7 @@
 layout: page
 title: Explain the release procedures
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: management
 faqOrder: 1
 ---

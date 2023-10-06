@@ -2,7 +2,7 @@
 layout: page
 title: Explain CQL string matching
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: development-tips
 faqOrder: 3
 ---

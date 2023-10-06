@@ -2,7 +2,7 @@
 layout: page
 title: How to archive a GitHub repository
 titleLeader: "FAQ |"
-menuTopTitle: Guides
+menuTopTitle: FAQs
 categories: management
 faqOrder: 4
 ---

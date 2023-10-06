@@ -2,7 +2,12 @@
 layout: page
 title: Frequently asked questions
 permalink: /faqs/
-menuTopTitle: Guides
+menuInclude: yes
+menuLink: yes
+menuTopTitle: FAQs
+menuTopIndex: 6
+menuSubTitle: FAQs overview
+menuSubIndex: 1
 ---
 
 {% for type in site.data.faqs %}
