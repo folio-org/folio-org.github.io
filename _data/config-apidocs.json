@@ -630,6 +630,23 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/swagger.api/ebsconet.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.2"
+    },
+    "name": "mod-ebsconet",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/delayedTasks.raml",
