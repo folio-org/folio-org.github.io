@@ -7074,6 +7074,13 @@
     "path": "/orders/order-lines/{id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/ebsconet.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getEbsconetOrderLine put:operation/putEbsconetOrderLine",
+    "name": "mod-ebsconet",
+    "path": "/orders/order-lines/{poLineNumber}"
+  },
+  {
     "apiDescription": "ramls/order-templates.raml",
     "apiType": "raml",
     "interface": "order-templates 1.0",
@@ -9185,6 +9192,13 @@
     "methods": "post:operation/getToken",
     "name": "edge-inn-reach",
     "path": "/v2/oauth2/token"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/ebsconet.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getValidation",
+    "name": "mod-ebsconet",
+    "path": "/validate"
   },
   {
     "apiDescription": "ramls/voucher.raml",
