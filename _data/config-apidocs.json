@@ -316,7 +316,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5.3"
     },
     "name": "mod-authtoken",
     "org": "folio-org"
@@ -626,23 +626,6 @@
       "generator": "api_doc.py 1.5.3"
     },
     "name": "mod-di-converter-storage",
-    "org": "folio-org"
-  },
-  {
-    "config": {
-      "oas": [
-        "src/main/resources/swagger.api/ebsconet.yaml"
-      ],
-      "raml": [],
-      "upload": []
-    },
-    "metadata": {
-      "apiTypes": [
-        "OAS"
-      ],
-      "generator": "api_doc.py 1.5.2"
-    },
-    "name": "mod-ebsconet",
     "org": "folio-org"
   },
   {
@@ -1201,7 +1184,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5.3"
     },
     "name": "mod-login",
     "org": "folio-org"
