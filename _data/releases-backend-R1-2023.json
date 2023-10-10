@@ -76,12 +76,12 @@
     {
       "name": "mod-configuration",
       "nameRepo": "mod-configuration",
-      "releaseDate": "2023-02-14T13:22:37+00:00",
+      "releaseDate": "2023-10-06T17:28:07+00:00",
       "releaseName": "",
-      "releaseSha": "78e664b3de3af7017bcf39d790f25393edca772a",
-      "releaseTag": "v5.9.1",
+      "releaseSha": "b149a2a021b24a78d9941f49513ea60e908e34ed",
+      "releaseTag": "v5.9.2",
       "releaseTarget": "master",
-      "version": "5.9.1"
+      "version": "5.9.2"
     },
     {
       "name": "mod-copycat",
@@ -136,12 +136,12 @@
     {
       "name": "mod-data-import",
       "nameRepo": "mod-data-import",
-      "releaseDate": "2023-03-13T19:11:42+00:00",
-      "releaseName": "2.7.1",
-      "releaseSha": "1cd5973c975ea5d65f4730727b85fb665e69f9d9",
-      "releaseTag": "v2.7.1",
+      "releaseDate": "2023-10-06T19:55:27+00:00",
+      "releaseName": "2.7.2",
+      "releaseSha": "b5999b47df254b38a3510398c8d217f220e1e9a0",
+      "releaseTag": "v2.7.2",
       "releaseTarget": "master",
-      "version": "2.7.1"
+      "version": "2.7.2"
     },
     {
       "name": "mod-di-converter-storage",
@@ -576,12 +576,12 @@
     {
       "name": "mod-source-record-manager",
       "nameRepo": "mod-source-record-manager",
-      "releaseDate": "2023-07-31T13:59:17+00:00",
-      "releaseName": "3.6.4",
-      "releaseSha": "0e9b99341d1d235865d0843ec07276249152e04b",
-      "releaseTag": "v3.6.4",
+      "releaseDate": "2023-10-06T19:56:14+00:00",
+      "releaseName": "3.6.5",
+      "releaseSha": "278160c98e2e741597df99199dc7094ef94dd547",
+      "releaseTag": "v3.6.5",
       "releaseTarget": "master",
-      "version": "3.6.4"
+      "version": "3.6.5"
     },
     {
       "name": "mod-source-record-storage",
