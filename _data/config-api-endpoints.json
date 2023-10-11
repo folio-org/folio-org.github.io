@@ -3089,7 +3089,7 @@
   {
     "apiDescription": "ramls/dataImport.raml",
     "apiType": "raml",
-    "interface": "data-import 3.0",
+    "interface": "data-import 3.1",
     "methods": "get:data_import_datatypes_get",
     "name": "mod-data-import",
     "path": "/data-import/dataTypes"
@@ -3097,7 +3097,7 @@
   {
     "apiDescription": "ramls/dataImport.raml",
     "apiType": "raml",
-    "interface": "data-import 3.0",
+    "interface": "data-import 3.1",
     "methods": "get:data_import_fileextensions_get post:data_import_fileextensions_post",
     "name": "mod-data-import",
     "path": "/data-import/fileExtensions"
@@ -3105,7 +3105,7 @@
   {
     "apiDescription": "ramls/dataImport.raml",
     "apiType": "raml",
-    "interface": "data-import 3.0",
+    "interface": "data-import 3.1",
     "methods": "post:data_import_fileextensions_restore_default_post",
     "name": "mod-data-import",
     "path": "/data-import/fileExtensions/restore/default"
@@ -3113,7 +3113,7 @@
   {
     "apiDescription": "ramls/dataImport.raml",
     "apiType": "raml",
-    "interface": "data-import 3.0",
+    "interface": "data-import 3.1",
     "methods": "delete:data_import_fileextensions__id__delete get:data_import_fileextensions__id__get put:data_import_fileextensions__id__put",
     "name": "mod-data-import",
     "path": "/data-import/fileExtensions/{id}"
@@ -3121,7 +3121,30 @@
   {
     "apiDescription": "ramls/dataImport.raml",
     "apiType": "raml",
-    "interface": "data-import 3.0",
+    "interface": "data-import 3.1",
+    "methods": "delete:data_import_jobexecutions__jobexecutionid__cancel_delete",
+    "name": "mod-data-import",
+    "path": "/data-import/jobExecutions/{jobExecutionId}/cancel"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "methods": "get:data_import_jobexecutions__jobexecutionid__downloadurl_get",
+    "name": "mod-data-import",
+    "path": "/data-import/jobExecutions/{jobExecutionId}/downloadUrl"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "interface": "data-import 3.1",
+    "methods": "get:data_import_splitstatus_get",
+    "name": "mod-data-import",
+    "path": "/data-import/splitStatus"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "interface": "data-import 3.1",
     "methods": "get:data_import_uploaddefinitions_get post:data_import_uploaddefinitions_post",
     "name": "mod-data-import",
     "path": "/data-import/uploadDefinitions"
@@ -3129,7 +3152,7 @@
   {
     "apiDescription": "ramls/dataImport.raml",
     "apiType": "raml",
-    "interface": "data-import 3.0",
+    "interface": "data-import 3.1",
     "methods": "delete:data_import_uploaddefinitions__uploaddefinitionid__delete get:data_import_uploaddefinitions__uploaddefinitionid__get put:data_import_uploaddefinitions__uploaddefinitionid__put",
     "name": "mod-data-import",
     "path": "/data-import/uploadDefinitions/{uploadDefinitionId}"
@@ -3137,7 +3160,7 @@
   {
     "apiDescription": "ramls/dataImport.raml",
     "apiType": "raml",
-    "interface": "data-import 3.0",
+    "interface": "data-import 3.1",
     "methods": "post:data_import_uploaddefinitions__uploaddefinitionid__files_post",
     "name": "mod-data-import",
     "path": "/data-import/uploadDefinitions/{uploadDefinitionId}/files"
@@ -3145,7 +3168,7 @@
   {
     "apiDescription": "ramls/dataImport.raml",
     "apiType": "raml",
-    "interface": "data-import 3.0",
+    "interface": "data-import 3.1",
     "methods": "delete:data_import_uploaddefinitions__uploaddefinitionid__files__fileid__delete post:data_import_uploaddefinitions__uploaddefinitionid__files__fileid__post",
     "name": "mod-data-import",
     "path": "/data-import/uploadDefinitions/{uploadDefinitionId}/files/{fileId}"
@@ -3153,10 +3176,34 @@
   {
     "apiDescription": "ramls/dataImport.raml",
     "apiType": "raml",
-    "interface": "data-import 3.0",
+    "interface": "data-import 3.1",
+    "methods": "post:data_import_uploaddefinitions__uploaddefinitionid__files__fileid__assemblestoragefile_post",
+    "name": "mod-data-import",
+    "path": "/data-import/uploadDefinitions/{uploadDefinitionId}/files/{fileId}/assembleStorageFile"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "interface": "data-import 3.1",
     "methods": "post:data_import_uploaddefinitions__uploaddefinitionid__processfiles_post",
     "name": "mod-data-import",
     "path": "/data-import/uploadDefinitions/{uploadDefinitionId}/processFiles"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "interface": "data-import 3.1",
+    "methods": "get:data_import_uploadurl_get",
+    "name": "mod-data-import",
+    "path": "/data-import/uploadUrl"
+  },
+  {
+    "apiDescription": "ramls/dataImport.raml",
+    "apiType": "raml",
+    "interface": "data-import 3.1",
+    "methods": "get:data_import_uploadurl_subsequent_get",
+    "name": "mod-data-import",
+    "path": "/data-import/uploadUrl/subsequent"
   },
   {
     "apiDescription": "ramls/delayedTasks.raml",
