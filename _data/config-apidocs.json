@@ -1077,7 +1077,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5.3"
     },
     "name": "mod-invoice",
     "org": "folio-org"
@@ -1102,7 +1102,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5.3"
     },
     "name": "mod-invoice-storage",
     "org": "folio-org"
@@ -1218,7 +1218,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5.3"
     },
     "name": "mod-login-saml",
     "org": "folio-org"
@@ -1306,7 +1306,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5.3"
     },
     "name": "mod-orders",
     "org": "folio-org"
@@ -1366,6 +1366,7 @@
       "oas": [],
       "raml": [
         "ramls/address.raml",
+        "ramls/banking_accoun_type.raml",
         "ramls/category.raml",
         "ramls/contact.raml",
         "ramls/email.raml",
