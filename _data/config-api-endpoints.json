@@ -7239,6 +7239,22 @@
     "path": "/organizations-storage/addresses/{id}"
   },
   {
+    "apiDescription": "ramls/banking_accoun_type.raml",
+    "apiType": "raml",
+    "interface": "organizations-storage.banking-account-types 1.0",
+    "methods": "get:organizations_storage_banking_account_types_get post:organizations_storage_banking_account_types_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/banking-account-types"
+  },
+  {
+    "apiDescription": "ramls/banking_accoun_type.raml",
+    "apiType": "raml",
+    "interface": "organizations-storage.banking-account-types 1.0",
+    "methods": "delete:organizations_storage_banking_account_types__id__delete get:organizations_storage_banking_account_types__id__get put:organizations_storage_banking_account_types__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/banking-account-types/{id}"
+  },
+  {
     "apiDescription": "ramls/category.raml",
     "apiType": "raml",
     "interface": "organizations-storage.categories 1.1",
@@ -8323,7 +8339,7 @@
   {
     "apiDescription": "ramls/saml-login.raml",
     "apiType": "raml",
-    "interface": "login-saml 2.0",
+    "interface": "login-saml 2.1",
     "methods": "options:saml_callback_options post:saml_callback_post",
     "name": "mod-login-saml",
     "path": "/saml/callback"
@@ -8331,7 +8347,15 @@
   {
     "apiDescription": "ramls/saml-login.raml",
     "apiType": "raml",
-    "interface": "login-saml 2.0",
+    "interface": "login-saml 2.1",
+    "methods": "options:saml_callback_with_expiry_options post:saml_callback_with_expiry_post",
+    "name": "mod-login-saml",
+    "path": "/saml/callback-with-expiry"
+  },
+  {
+    "apiDescription": "ramls/saml-login.raml",
+    "apiType": "raml",
+    "interface": "login-saml 2.1",
     "methods": "get:saml_check_get",
     "name": "mod-login-saml",
     "path": "/saml/check"
@@ -8339,7 +8363,7 @@
   {
     "apiDescription": "ramls/saml-login.raml",
     "apiType": "raml",
-    "interface": "login-saml 2.0",
+    "interface": "login-saml 2.1",
     "methods": "get:saml_configuration_get put:saml_configuration_put",
     "name": "mod-login-saml",
     "path": "/saml/configuration"
@@ -8347,7 +8371,7 @@
   {
     "apiDescription": "ramls/saml-login.raml",
     "apiType": "raml",
-    "interface": "login-saml 2.0",
+    "interface": "login-saml 2.1",
     "methods": "options:saml_login_options post:saml_login_post",
     "name": "mod-login-saml",
     "path": "/saml/login"
@@ -8355,7 +8379,7 @@
   {
     "apiDescription": "ramls/saml-login.raml",
     "apiType": "raml",
-    "interface": "login-saml 2.0",
+    "interface": "login-saml 2.1",
     "methods": "get:saml_regenerate_get",
     "name": "mod-login-saml",
     "path": "/saml/regenerate"
@@ -8363,7 +8387,7 @@
   {
     "apiDescription": "ramls/saml-login.raml",
     "apiType": "raml",
-    "interface": "login-saml 2.0",
+    "interface": "login-saml 2.1",
     "methods": "get:saml_validate_get",
     "name": "mod-login-saml",
     "path": "/saml/validate"
