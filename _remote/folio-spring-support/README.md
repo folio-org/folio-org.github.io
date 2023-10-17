@@ -44,8 +44,9 @@ An example of the module based on folio-spring-support could be found at https:/
 The library comprises several submodules that are built as separate artifacts (jar files) and can be integrated into a project as distinct dependencies. This facilitates more precise dependency management depending on the requirements of each project.
 
 The library includes the following submodules:
+* **folio-spring-base** - provides fundamental functionality for developing FOLIO modules using the Spring framework.
 * **folio-spring-cql** - facilitates CQL querying (refer to the [CQL support](#cql-support) section below)
-* **folio-spring-base** - provides fundamental functionality for developing FOLIO modules using the Spring framework.  
+* **folio-spring-system-user** - provides [functionality](folio-spring-system-user/README.md) for system-user creation and utilization 
 
 ## Execution Context
 
