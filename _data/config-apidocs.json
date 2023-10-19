@@ -1374,6 +1374,7 @@
         "ramls/organization.raml",
         "ramls/organization_type.raml",
         "ramls/phone_number.raml",
+        "ramls/setting.raml",
         "ramls/url.raml"
       ],
       "upload": []
