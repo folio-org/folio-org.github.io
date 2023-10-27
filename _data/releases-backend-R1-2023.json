@@ -96,12 +96,12 @@
     {
       "name": "mod-courses",
       "nameRepo": "mod-courses",
-      "releaseDate": "2023-02-24T21:27:47+00:00",
-      "releaseName": "v1.4.7",
-      "releaseSha": "899f995db31455f6d9638811ce767915ae9231b4",
-      "releaseTag": "v1.4.7",
+      "releaseDate": "2023-10-13T20:46:15+00:00",
+      "releaseName": "1.4.8",
+      "releaseSha": "1b35d5c88de37a0201a6b54b5359aa76268880b2",
+      "releaseTag": "v1.4.8",
       "releaseTarget": "master",
-      "version": "1.4.7"
+      "version": "1.4.8"
     },
     {
       "name": "mod-data-export",
@@ -566,12 +566,12 @@
     {
       "name": "mod-settings",
       "nameRepo": "mod-settings",
-      "releaseDate": "2023-02-16T16:44:30+00:00",
-      "releaseName": "",
-      "releaseSha": "7134c1e6e33f33d8d6ea732dabd58048baf1bfdd",
-      "releaseTag": "v1.0.0",
+      "releaseDate": "2023-10-13T21:35:15+00:00",
+      "releaseName": "1.0.1",
+      "releaseSha": "f8fb8a47166980db0999bd80aa44f8aa2d7979d8",
+      "releaseTag": "v1.0.1",
       "releaseTarget": "master",
-      "version": "1.0.0"
+      "version": "1.0.1"
     },
     {
       "name": "mod-source-record-manager",
