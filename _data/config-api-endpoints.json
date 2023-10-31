@@ -7383,6 +7383,22 @@
     "path": "/organizations-storage/phone-numbers/{id}"
   },
   {
+    "apiDescription": "ramls/privileged_contact.raml",
+    "apiType": "raml",
+    "interface": "organizations-storage.privileged-contacts 1.0",
+    "methods": "get:organizations_storage_privileged_contacts_get post:organizations_storage_privileged_contacts_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/privileged-contacts"
+  },
+  {
+    "apiDescription": "ramls/privileged_contact.raml",
+    "apiType": "raml",
+    "interface": "organizations-storage.privileged-contacts 1.0",
+    "methods": "delete:organizations_storage_privileged_contacts__id__delete get:organizations_storage_privileged_contacts__id__get put:organizations_storage_privileged_contacts__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/privileged-contacts/{id}"
+  },
+  {
     "apiDescription": "ramls/setting.raml",
     "apiType": "raml",
     "interface": "organizations-storage.settings 1.0",
