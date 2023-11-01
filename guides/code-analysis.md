@@ -43,8 +43,44 @@ Use "Connected mode" to hook directly into our project rules.
 
 ### Rule customization
 
-See an [example](https://github.com/folio-org/okapi/pull/367/commits/1710e99d574152cc67990d83d400951e8f11e309)
-of using SuppressWarnings.
+Sonar may report false positives.  These should be suppressed in the source code.
+The code review should include whether the suppression is correct.
+
+In Java code use `@SuppressWarnings` at the variable or method level.  Avoid it at the class level
+because variables and methods might be added in future that should receive warnings.
+
+[Variable level example](https://github.com/folio-org/raml-module-builder/blob/v35.0.0/domain-models-maven-plugin/src/main/java/org/folio/rest/tools/ClientGenerator.java#L59-L60):
+
+```
+  @SuppressWarnings("squid:S1075")  // suppress "URIs should not be hardcoded"
+  public static final String  PATH_TO_GENERATE_TO    = "/target/generated-sources/raml-jaxrs/";
+```
+
+[Method level example](https://github.com/folio-org/raml-module-builder/blob/v35.0.0/cql2pgjson/src/main/java/org/folio/cql2pgjson/util/Cql2SqlUtil.java#L36-L37):
+
+```
+  @SuppressWarnings("squid:S3776")  // suppress "Cognitive Complexity of methods should not be too high"
+  public static String cql2like(String s) {
+```
+
+[Multiple suppressions example](https://github.com/folio-org/raml-module-builder/blob/v35.0.0/cql2pgjson-cli/src/main/java/org/z3950/zing/cql/cql2pgjsoncli/CQL2PGCLIMain.java#L29-L33):
+
+```
+  @SuppressWarnings({
+    "squid:S1148",  // suppress "Use a logger to log this exception." because it's a CLI
+    "squid:S106",   // suppress "Replace this use of System.out or System.err by a logger." because it's a CLI
+  })
+  public static void main( String[] args ) {
+```
+
+When Sonar reports an issue click on the rule to show the rule ID like squid:S1075.
+
+Always add a comment with the human readable rule description as the rule ID is not self-explanatory.
+
+In addition a justification for the suppression might be useful when mentioned in the comment.
+
+Don't use `// NOSONAR` and don't use `@SuppressWarnings("all")`, they suppress all current and future rules.
+Sonar continuously adds new rules, including security rules, that should trigger warnings.
 
 Regarding "Quality Profile" see issue [FOLIO-864](https://issues.folio.org/browse/FOLIO-864)
 
