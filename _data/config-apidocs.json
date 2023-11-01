@@ -370,9 +370,9 @@
         "ramls/end-patron-action-session.raml",
         "ramls/inventory-reports.raml",
         "ramls/loan-anonymization.raml",
-        "ramls/pick-slips.raml",
         "ramls/request-move.raml",
-        "ramls/requests-reports.raml"
+        "ramls/requests-reports.raml",
+        "ramls/staff-slips.raml"
       ],
       "upload": []
     },
@@ -1348,6 +1348,7 @@
     "config": {
       "oas": [],
       "raml": [
+        "ramls/banking_information.raml",
         "ramls/organizations.raml"
       ],
       "upload": []
@@ -1367,6 +1368,7 @@
       "raml": [
         "ramls/address.raml",
         "ramls/banking_accoun_type.raml",
+        "ramls/banking_information.raml",
         "ramls/category.raml",
         "ramls/contact.raml",
         "ramls/email.raml",
