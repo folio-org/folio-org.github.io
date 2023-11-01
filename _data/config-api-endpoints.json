@@ -1936,7 +1936,7 @@
     "path": "/circulation/loans/{loanId}"
   },
   {
-    "apiDescription": "ramls/pick-slips.raml",
+    "apiDescription": "ramls/staff-slips.raml",
     "apiType": "raml",
     "interface": "pick-slips 0.4",
     "methods": "get:circulation_pick_slips__servicepointid__get",
@@ -2142,6 +2142,14 @@
     "methods": "post:circulation_scheduled_age_to_lost_fee_charging_post",
     "name": "mod-circulation",
     "path": "/circulation/scheduled-age-to-lost-fee-charging"
+  },
+  {
+    "apiDescription": "ramls/staff-slips.raml",
+    "apiType": "raml",
+    "interface": "search-slips 0.1",
+    "methods": "get:circulation_search_slips__servicepointid__get",
+    "name": "mod-circulation",
+    "path": "/circulation/search-slips/{servicePointId}"
   },
   {
     "apiDescription": "ramls/classification-type.raml",
@@ -7263,6 +7271,22 @@
     "path": "/organizations-storage/banking-account-types/{id}"
   },
   {
+    "apiDescription": "ramls/banking_information.raml",
+    "apiType": "raml",
+    "interface": "organizations-storage.banking-information 1.0",
+    "methods": "get:organizations_storage_banking_information_get post:organizations_storage_banking_information_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/banking-information"
+  },
+  {
+    "apiDescription": "ramls/banking_information.raml",
+    "apiType": "raml",
+    "interface": "organizations-storage.banking-information 1.0",
+    "methods": "delete:organizations_storage_banking_information__id__delete get:organizations_storage_banking_information__id__get put:organizations_storage_banking_information__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/banking-information/{id}"
+  },
+  {
     "apiDescription": "ramls/category.raml",
     "apiType": "raml",
     "interface": "organizations-storage.categories 1.1",
@@ -7429,6 +7453,22 @@
     "methods": "delete:organizations_storage_urls__id__delete get:organizations_storage_urls__id__get put:organizations_storage_urls__id__put",
     "name": "mod-organizations-storage",
     "path": "/organizations-storage/urls/{id}"
+  },
+  {
+    "apiDescription": "ramls/banking_information.raml",
+    "apiType": "raml",
+    "interface": "banking-information 1.0",
+    "methods": "get:organizations_banking_information_get post:organizations_banking_information_post",
+    "name": "mod-organizations",
+    "path": "/organizations/banking-information"
+  },
+  {
+    "apiDescription": "ramls/banking_information.raml",
+    "apiType": "raml",
+    "interface": "banking-information 1.0",
+    "methods": "delete:organizations_banking_information__id__delete get:organizations_banking_information__id__get put:organizations_banking_information__id__put",
+    "name": "mod-organizations",
+    "path": "/organizations/banking-information/{id}"
   },
   {
     "apiDescription": "ramls/organizations.raml",
