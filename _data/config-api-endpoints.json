@@ -1829,7 +1829,7 @@
     "interface": "circulation-item 1.1",
     "methods": "get:operation/getCirculationItemByBarcode",
     "name": "mod-circulation-item",
-    "path": "/circulation-item/barcode/{barcode}"
+    "path": "/circulation-item"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/circulation-item.yaml",
@@ -5894,6 +5894,13 @@
     "methods": "get:operation/getJobs post:operation/upsertJob",
     "name": "mod-data-export-spring",
     "path": "/jobs"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/sendJob",
+    "name": "mod-data-export-spring",
+    "path": "/jobs/send"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
