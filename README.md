@@ -11,7 +11,7 @@ The 'bundle install' step will install the relevant local
 
 For Ruby, using [rbenv](https://github.com/rbenv/rbenv) and its 'ruby-build'
 plugin ensures a smooth process. In this directory, set the ruby version
-with: `rbenv local 2.7.5`
+with: `rbenv local 2.7.8`
 
 Then do:
 
