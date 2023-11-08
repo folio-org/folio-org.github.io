@@ -86,4 +86,3 @@ Refer to FAQs regarding [Developer documentation](https://dev.folio.org/faqs/#de
 
 The FOLIO [Slack](https://dev.folio.org/guidelines/which-forum/#slack) channel #dev-website
 
-
