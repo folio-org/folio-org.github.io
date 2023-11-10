@@ -9,9 +9,7 @@ menuSubIndex: 2
 ---
 
 Events are listed at the FOLIO Trello [board](https://trello.com/b/A27ucwg8/events),
-at the [FOLIO News](https://www.folio.org/about/news-events/),
-and the [FOLIO Blog](https://www.folio.org/blog/).
-The latter includes the weekly project updates.
+at the [FOLIO News](https://www.folio.org/about/news/).
 
 Many FOLIO recordings and presentations are available at the Open Library Foundation video YouTube
 [channel](https://www.youtube.com/channel/UC4Vs5mb1qgOXPZgso1LESUw/videos?sort=dd&view=0&flow=grid)

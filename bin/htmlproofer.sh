@@ -12,7 +12,8 @@ IGNORE+=",/folio-snapshot-okapi\.dev/"
 IGNORE+=",/folio-snapshot-test.*\/settings/"
 IGNORE+=",/github\.com\/search/"
 IGNORE+=",/github\.com\/pulls\/review-requested/"
-IGNORE+=",/twitter\.com\/"
+IGNORE+=",/twitter\.com\//"
+IGNORE+=",/folio\.org\/customization-hosting/"
 
 # Ignore some known broken ones
 IGNORE+=",/#mod-vendors/"

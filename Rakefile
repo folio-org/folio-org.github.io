@@ -32,6 +32,8 @@ task :proof do
       /github\.com\/pulls\/review-requested/,
       # ignore github. 429 rate-limit error. FOLIO-2597
       /github\.com\/folio-org/,
+      # old versions of projectwide-navbar
+      /folio\.org\/customization-hosting/,
     ]
   }
   HTMLProofer.check_directory("./_site", options).run
