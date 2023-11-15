@@ -302,7 +302,7 @@ ground up to operate in a multitenant environment.
 #### MVP
 
 Market-Viable Platform (MVP).
-Refer to the [FOLIO Implementation Group](https://wiki.folio.org/display/COHORT2019/FOLIO+Implementation+Group).
+Refer to the [FOLIO Implementers SIG](https://wiki.folio.org/display/COHORT2019/FOLIO+Implementers+SIG).
 
 ### Terms N-R
 
