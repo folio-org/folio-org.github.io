@@ -828,6 +828,22 @@
     "path": "/audit-data/acquisition/order/{id}"
   },
   {
+    "apiDescription": "ramls/acquisition-events.raml",
+    "apiType": "raml",
+    "interface": "acquisition-piece-events 1.0",
+    "methods": "get:audit_data_acquisition_piece__id__get",
+    "name": "mod-audit",
+    "path": "/audit-data/acquisition/piece/{id}"
+  },
+  {
+    "apiDescription": "ramls/acquisition-events.raml",
+    "apiType": "raml",
+    "interface": "acquisition-piece-events 1.0",
+    "methods": "get:audit_data_acquisition_piece__id__status_change_history_get",
+    "name": "mod-audit",
+    "path": "/audit-data/acquisition/piece/{id}/status-change-history"
+  },
+  {
     "apiDescription": "ramls/circulation-logs.raml",
     "apiType": "raml",
     "interface": "circulation-logs 1.2",
