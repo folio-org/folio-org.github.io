@@ -6817,6 +6817,14 @@
     "path": "/orders-storage/audit-outbox/process"
   },
   {
+    "apiDescription": "ramls/claiming.raml",
+    "apiType": "raml",
+    "interface": "_timer 1.0",
+    "methods": "post:orders_storage_claiming_process_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/claiming/process"
+  },
+  {
     "apiDescription": "ramls/configuration.raml",
     "apiType": "raml",
     "interface": "orders-storage.configuration.prefixes 1.0",
