@@ -1319,6 +1319,7 @@
         "ramls/acquisitions-unit.raml",
         "ramls/alert.raml",
         "ramls/audit_outbox.raml",
+        "ramls/claiming.raml",
         "ramls/configuration.raml",
         "ramls/export_history.raml",
         "ramls/order-invoice-relns.raml",
