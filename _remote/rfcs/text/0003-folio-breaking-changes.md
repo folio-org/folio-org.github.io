@@ -3,9 +3,19 @@ layout: null
 ---
 
 - Start Date: 2022-10-21
-- RFC PR: https://github.com/folio-org/rfcs/pull/5
-- FOLIO Issue: N/a
-
+- Contributors:
+  - [Jeremy Huff](huff@library.tamu.edu)
+  - [Marc Johnson](marc.johnson@k-int.com)
+  - [Jakub Skoczen](jakub@indexdata.dk)
+  - [Maccabee Levine](msl321@lehigh.edu)
+  - [Zak_Burke](zburke@ebsco.com)
+  - [Ankita Sen](a.sen@ub.uni-mainz.de)
+- RFC PRs: 
+  - PRELIMINARY REVIEW: https://github.com/folio-org/rfcs/pull/5
+  - DRAFT REVIEW: https://github.com/folio-org/rfcs/pull/5
+  - PUBLIC REVIEW: https://github.com/folio-org/rfcs/pull/10
+  - FINAL REVIEW: https://github.com/folio-org/rfcs/pull/10
+- Outcome: ACCEPTED
 
 # Folio Breaking Changes
 

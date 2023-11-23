@@ -4,8 +4,10 @@ layout: null
 
 
 - Start Date: 2019-06-20
-- RFC PR: 
-- FOLIO Issue: 
+- Contributors:
+  - [Taras Spashchenko](taras_spashchenko@epam.com)
+- RFC PR: https://github.com/folio-org/rfcs/pull/2
+- Outcome: ACCEPTED
 
 # PubSub support in FOLIO (module implementation)
 

@@ -4,8 +4,15 @@ layout: null
 
 
 - Start Date: 2022-08-12
-- RFC PR: (leave this empty)
-- FOLIO Issue: (leave this empty)
+- Contributors:
+  - [Olamide Kolawole](okolawole@ebsco.com)
+  - [Julian Ladisch](julian.ladisch@gbv.de)
+- RFC PRs: 
+  - Preliminary Review: https://github.com/folio-org/rfcs/pull/4
+  - Draft Review: https://github.com/folio-org/rfcs/pull/6
+  - Public Review: https://github.com/folio-org/rfcs/pull/8
+  - Final Review: https://github.com/folio-org/rfcs/pull/8
+- Outcome: ACCEPTED
 
 # Tenant Collection Kafka Topics
 
