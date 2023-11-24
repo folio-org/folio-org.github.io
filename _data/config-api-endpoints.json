@@ -6377,6 +6377,14 @@
     "path": "/lti-courses/registrarIdLaunches/{apiKeyPath}"
   },
   {
+    "apiDescription": "src/main/resources/openapi/batchPrint.yaml",
+    "apiType": "oas",
+    "interface": "mail 1.0",
+    "methods": "post:operation/saveMail",
+    "name": "mod-batch-print",
+    "path": "/mail"
+  },
+  {
     "apiDescription": "ramls/manual-block-templates.raml",
     "apiType": "raml",
     "interface": "feesfines 19.0",
@@ -7855,6 +7863,30 @@
     "methods": "delete:preceding_succeeding_titles__precedingsucceedingtitleid__delete get:preceding_succeeding_titles__precedingsucceedingtitleid__get put:preceding_succeeding_titles__precedingsucceedingtitleid__put",
     "name": "mod-inventory-storage",
     "path": "/preceding-succeeding-titles/{precedingSucceedingTitleId}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/batchPrint.yaml",
+    "apiType": "oas",
+    "interface": "_timer 1.0",
+    "methods": "post:operation/createBatch",
+    "name": "mod-batch-print",
+    "path": "/print/batch-creation"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/batchPrint.yaml",
+    "apiType": "oas",
+    "interface": "mail 1.0",
+    "methods": "get:operation/getPrintEntries post:operation/postPrintEntry",
+    "name": "mod-batch-print",
+    "path": "/print/entries"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/batchPrint.yaml",
+    "apiType": "oas",
+    "interface": "mail 1.0",
+    "methods": "delete:operation/deletePrintEntry get:operation/getPrintEntry put:operation/updatePrintEntry",
+    "name": "mod-batch-print",
+    "path": "/print/entries/{id}"
   },
   {
     "apiDescription": "ramls/edge-rtac.raml",
