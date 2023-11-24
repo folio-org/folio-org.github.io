@@ -324,6 +324,23 @@
   {
     "config": {
       "oas": [
+        "src/main/resources/openapi/batchPrint.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.3"
+    },
+    "name": "mod-batch-print",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
         "src/main/resources/swagger.api/bulk-operations.yaml"
       ],
       "raml": [],
