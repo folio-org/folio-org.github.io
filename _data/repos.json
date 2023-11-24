@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-10-06T00:15:10.048026+00:00"
+    "generatedDateTime": "2023-11-23T21:01:35.445698+00:00"
   },
   "repos": [
     {
@@ -885,6 +885,29 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>This module is responsible for filtering all proxy traffic and checking for a valid token. In addition, it is responsible for retrieving the permissions for a given user and making decisions regarding access based on user permissions and defined requirements for a given path. It provides a token creation endpoint that privileged modules (such as Authentication) may make use of.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
+    },
+    {
+      "apiTypes": "OAS",
+      "defaultBranch": "master",
+      "description": "Batch printing service",
+      "docDirName": null,
+      "hintOas": true,
+      "name": "mod-batch-print",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>mod-batch-print is a service to provide option to print notices in daily batch approach.</p>",
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
@@ -3167,6 +3190,24 @@
     },
     {
       "defaultBranch": "master",
+      "description": "Stripes components that are specific to use cases that arise in Marc-related modules",
+      "docDirName": null,
+      "name": "stripes-marc-components",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "stripes",
+      "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
+    },
+    {
+      "defaultBranch": "master",
       "description": "Configuration for a sample platform and to run a local Stripes UI development server",
       "docDirName": null,
       "name": "stripes-sample-platform",
@@ -4592,15 +4633,7 @@
       "name": "ui-rs",
       "org": "openlibraryenvironment",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module! Follow the instructions below to run ui-rs and start your development.</p>",
-      "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
-      ],
-      "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
-      ]
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module! Follow the instructions below to run ui-rs and start your development.</p>"
     },
     {
       "defaultBranch": "master",
