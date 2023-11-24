@@ -111,6 +111,7 @@ utilities:
     - mod-entities-links
     - mod-notes
     - mod-tags
+    - mod-batch-print
     - mod-bulk-operations
     - mod-calendar
     - mod-search
