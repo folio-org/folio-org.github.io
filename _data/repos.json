@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-11-23T21:01:35.445698+00:00"
+    "generatedDateTime": "2023-11-30T00:17:22.702443+00:00"
   },
   "repos": [
     {
@@ -1952,6 +1952,30 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>This module provides SAML2 SSO functionality for FOLIO.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
+    },
+    {
+      "apiTypes": "OAS",
+      "defaultBranch": "master",
+      "description": "Module designed for high-performance migration of MARC records.",
+      "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-marc-migrations",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "",
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
