@@ -1243,6 +1243,23 @@
   {
     "config": {
       "oas": [
+        "src/main/resources/swagger.api/marc-migrations.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.3"
+    },
+    "name": "mod-marc-migrations",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
         "src/main/resources/swagger.api/notes.yml"
       ],
       "raml": [],
