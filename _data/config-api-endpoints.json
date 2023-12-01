@@ -5063,22 +5063,6 @@
     "path": "/holdings-storage/batch/synchronous-unsafe"
   },
   {
-    "apiDescription": "ramls/holdings-storage.raml",
-    "apiType": "raml",
-    "interface": "holdings-storage 6.0",
-    "methods": "delete:holdings_storage_holdings_delete get:holdings_storage_holdings_get post:holdings_storage_holdings_post",
-    "name": "mod-inventory-storage",
-    "path": "/holdings-storage/holdings"
-  },
-  {
-    "apiDescription": "ramls/holdings-storage.raml",
-    "apiType": "raml",
-    "interface": "holdings-storage 6.0",
-    "methods": "delete:holdings_storage_holdings__holdingsrecordid__delete get:holdings_storage_holdings__holdingsrecordid__get put:holdings_storage_holdings__holdingsrecordid__put",
-    "name": "mod-inventory-storage",
-    "path": "/holdings-storage/holdings/{holdingsRecordId}"
-  },
-  {
     "apiDescription": "ramls/holdings-type.raml",
     "apiType": "raml",
     "interface": "holdings-types 1.0",
@@ -5889,22 +5873,6 @@
     "methods": "post:item_storage_batch_synchronous_unsafe_post",
     "name": "mod-inventory-storage",
     "path": "/item-storage/batch/synchronous-unsafe"
-  },
-  {
-    "apiDescription": "ramls/item-storage.raml",
-    "apiType": "raml",
-    "interface": "item-storage 10.0",
-    "methods": "delete:item_storage_items_delete get:item_storage_items_get post:item_storage_items_post",
-    "name": "mod-inventory-storage",
-    "path": "/item-storage/items"
-  },
-  {
-    "apiDescription": "ramls/item-storage.raml",
-    "apiType": "raml",
-    "interface": "item-storage 10.0",
-    "methods": "delete:item_storage_items__itemid__delete get:item_storage_items__itemid__get put:item_storage_items__itemid__put",
-    "name": "mod-inventory-storage",
-    "path": "/item-storage/items/{itemId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/edge-caiasoft.yaml",
