@@ -2328,7 +2328,7 @@
   {
     "apiDescription": "ramls/contributor-name-type.raml",
     "apiType": "raml",
-    "interface": "contributor-name-types 1.2",
+    "interface": "contributor-name-types 1.3",
     "methods": "get:contributor_name_types_get post:contributor_name_types_post",
     "name": "mod-inventory-storage",
     "path": "/contributor-name-types"
@@ -2336,7 +2336,7 @@
   {
     "apiDescription": "ramls/contributor-name-type.raml",
     "apiType": "raml",
-    "interface": "contributor-name-types 1.2",
+    "interface": "contributor-name-types 1.3",
     "methods": "delete:contributor_name_types__contributornametypeid__delete get:contributor_name_types__contributornametypeid__get put:contributor_name_types__contributornametypeid__put",
     "name": "mod-inventory-storage",
     "path": "/contributor-name-types/{contributorNameTypeId}"
