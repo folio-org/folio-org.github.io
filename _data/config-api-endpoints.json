@@ -2707,7 +2707,7 @@
   {
     "apiDescription": "ramls/custom-fields.raml",
     "apiType": "raml",
-    "interface": "custom-fields 2.1",
+    "interface": "custom-fields 3.0",
     "methods": "get:custom_fields_get post:custom_fields_post put:custom_fields_put",
     "name": "folio-custom-fields",
     "path": "/custom-fields"
@@ -2715,7 +2715,7 @@
   {
     "apiDescription": "ramls/custom-fields.raml",
     "apiType": "raml",
-    "interface": "custom-fields 2.1",
+    "interface": "custom-fields 3.0",
     "methods": "delete:custom_fields__id__delete get:custom_fields__id__get put:custom_fields__id__put",
     "name": "folio-custom-fields",
     "path": "/custom-fields/{id}"
@@ -2723,7 +2723,7 @@
   {
     "apiDescription": "ramls/custom-fields.raml",
     "apiType": "raml",
-    "interface": "custom-fields 2.1",
+    "interface": "custom-fields 3.0",
     "methods": "get:custom_fields__id__options__optid__stats_get",
     "name": "folio-custom-fields",
     "path": "/custom-fields/{id}/options/{optId}/stats"
@@ -2731,7 +2731,7 @@
   {
     "apiDescription": "ramls/custom-fields.raml",
     "apiType": "raml",
-    "interface": "custom-fields 2.1",
+    "interface": "custom-fields 3.0",
     "methods": "get:custom_fields__id__stats_get",
     "name": "folio-custom-fields",
     "path": "/custom-fields/{id}/stats"
