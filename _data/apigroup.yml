@@ -9,12 +9,15 @@ login:
     - mod-authtoken
     - mod-password-validator
     - mod-permissions
+    - mod-login-keycloak
 users:
   title: Users
   description: Information about users.
   modules:
     - mod-users-bl
     - mod-users
+    - mod-roles-keycloak
+    - mod-users-keycloak
     - mod-patron
     - edge-patron
     - mod-patron-blocks
@@ -136,6 +139,9 @@ other:
     - folio-query-tool-metadata
     - folio-spring-support
     - folio-vertx-lib
+    - mgr-applications
+    - mgr-tenants
+    - mgr-tenant-entitlements
 deprecated:
   title: Deprecated
   description: Some old ones that have been renamed recently.
