@@ -286,6 +286,40 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/swagger.api/am.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.3"
+    },
+    "name": "mgr-applications",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/swagger.api/mgr-tenants.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.3"
+    },
+    "name": "mgr-tenants",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/acquisition-events.raml",
@@ -1221,6 +1255,23 @@
       "generator": "api_doc.py 1.5.3"
     },
     "name": "mod-login",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/swagger.api/mod-login-keycloak.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.3"
+    },
+    "name": "mod-login-keycloak",
     "org": "folio-org"
   },
   {
