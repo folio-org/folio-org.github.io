@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-11-30T00:17:22.702443+00:00"
+    "generatedDateTime": "2023-12-13T12:47:20.044419+00:00"
   },
   "repos": [
     {
@@ -18,6 +18,36 @@
       "workflowsFolio": [
         "api-schema-lint.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "application-builder",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "application-descriptors",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "applications-poc-tools",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": "<p>Library with general purpose classes to help with FOLIO backend development and testing</p>"
     },
     {
       "defaultBranch": "master",
@@ -506,6 +536,16 @@
     },
     {
       "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "folio-flow-engine",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": "<p>This is a simple flow engine that can be used to execute a series of tasks in a specific order. The tasks are executed in a separate thread. The tasks are executed in the order they are added to the flow. The flow can be executed multiple times. The flow can be executed in parallel or in sequence.</p>"
+    },
+    {
+      "defaultBranch": "master",
       "description": "Serves up GraphiQL for use with FOLIO",
       "docDirName": null,
       "name": "folio-graphiql",
@@ -576,6 +616,16 @@
       "repoLanguageHint": "java",
       "repoType": "other",
       "snippetIntro": "<p>ISBN number converter utilities.</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "folio-java-checkstyle",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": "<p>This repository contains the checkstyle configuration for the FOLIO Java projects.</p>"
     },
     {
       "defaultBranch": "master",
@@ -839,6 +889,42 @@
       "repoLanguageHint": "java",
       "repoType": "other",
       "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "name": "mgr-applications",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p><code>mgr-applications</code> provides following functionality:</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "name": "mgr-tenant-entitlements",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p><code>mgr-tenant-entitlements</code> provides following functionality:</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "name": "mgr-tenants",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>For now, <code>mgr-tenants</code> proxies requests to OKAPI's tenant API When any operation will happen on tenant, it will take place on realm in keycloak, also it will send a request to keycloak to retrieve a token and persist in cache for 60s for doing all the stuff related to realm</p>"
     },
     {
       "defaultBranch": "master",
@@ -1311,7 +1397,9 @@
       "repoType": "backend-mod",
       "snippetIntro": "<p>Mod-Directory is a service intiailly proposed for use in resource sharing environments but offering services to any library scenario that involves documenting and using service interactions between peers.  It's purpose is to provide a bounded context for the storage, retrieval and update of directory service information which underpins inter-library services. This directory contains, but is not restricted to</p>",
       "workflows": [
-        "gradle.yml"
+        "deploy.yml",
+        "gradle.yml",
+        "release.yml"
       ]
     },
     {
@@ -1939,6 +2027,19 @@
       ]
     },
     {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-login-keycloak",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>mod-login-keycloak provides following functionality:</p>"
+    },
+    {
       "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "FOLIO SAML login module",
@@ -2416,6 +2517,19 @@
     },
     {
       "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-roles-keycloak",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>For now, <code>mod-roles-keycloak</code> proxies requests to Keycloak. Service helps manage roles and policies: creating, updating, deleting and searching. The service can be used to associate roles with the user.<code>mod-roles-keycloak</code> stores metadata about who and when created a record.</p>"
+    },
+    {
+      "defaultBranch": "master",
       "description": "Module providing Resource Sharing services to an OKAPI environment",
       "docDirName": "doc",
       "name": "mod-rs",
@@ -2425,7 +2539,8 @@
       "snippetIntro": "",
       "workflows": [
         "deploy.yml",
-        "gradle.yml"
+        "gradle.yml",
+        "release.yml"
       ]
     },
     {
@@ -2753,6 +2868,19 @@
         "api-lint.yml",
         "api-schema-lint.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-users-keycloak",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Business logic 'join' module to provide simple access to all user-centric data.</p>"
     },
     {
       "defaultBranch": "master",
@@ -3471,6 +3599,42 @@
       "repoLanguageHint": "node",
       "repoType": "ui",
       "snippetIntro": "<p>Stripes UI module- Audit app  visually conveys the idea of examining past activity, organized by different points of view: user; resource; circulation etc</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": "FOLIO app for Authorization Policies",
+      "docDirName": null,
+      "name": "ui-authorization-policies",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "<p>The Authorization Policies UI Module or ui-authorization-policies, is a Stripes UI module for the authorization roles requests and related resources</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": "FOLIO app for Authorization Roles",
+      "docDirName": null,
+      "name": "ui-authorization-roles",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "",
       "workflows": [
         "build-npm-release.yml",
         "build-npm.yml"
@@ -4545,6 +4709,24 @@
     },
     {
       "defaultBranch": "master",
+      "description": "Application-finder for Stripes",
+      "docDirName": null,
+      "name": "ui-plugin-select-application",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui-plugin",
+      "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>select-application</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='select-application'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
+    },
+    {
+      "defaultBranch": "master",
       "description": "Stripes UI for quickMARC editor",
       "docDirName": null,
       "name": "ui-quick-marc",
@@ -4657,7 +4839,15 @@
       "name": "ui-rs",
       "org": "openlibraryenvironment",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module! Follow the instructions below to run ui-rs and start your development.</p>"
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module! Follow the instructions below to run ui-rs and start your development.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -4783,7 +4973,7 @@
       "name": "ui-update",
       "org": "openlibraryenvironment",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-scan and start your development.</p>",
+      "snippetIntro": "",
       "workflows": [
         "build-npm-release.yml",
         "build-npm.yml"
