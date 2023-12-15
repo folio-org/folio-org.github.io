@@ -6282,6 +6282,14 @@
     "path": "/lists/{id}/refresh"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/list.yaml",
+    "apiType": "oas",
+    "interface": "lists 1.0",
+    "methods": "get:operation/getListVersions",
+    "name": "mod-lists",
+    "path": "/lists/{id}/versions"
+  },
+  {
     "apiDescription": "ramls/loan-anonymization.raml",
     "apiType": "raml",
     "interface": "loan-anonymization 0.1",
