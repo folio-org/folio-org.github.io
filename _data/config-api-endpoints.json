@@ -9357,7 +9357,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "mod-dcb 1.0",
+    "interface": "transactions 1.0",
     "methods": "post:operation/createCirculationRequest",
     "name": "mod-dcb",
     "path": "/transactions/{dcbTransactionId}"
@@ -9372,7 +9372,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "mod-dcb 1.0",
+    "interface": "transactions 1.0",
     "methods": "get:operation/getTransactionStatusById put:operation/updateTransactionStatus",
     "name": "mod-dcb",
     "path": "/transactions/{dcbTransactionId}/status"
