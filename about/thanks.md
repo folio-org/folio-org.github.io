@@ -34,3 +34,4 @@ The FOLIO project is grateful for the support from **Kubecost**. The FOLIO DevOp
 
 <a href="https://www.gurock.com/testrail/"><img src="/images/testrail.jpg" alt="Testrail logo" width="250" height="54"></a>\
 The FOLIO project is grateful for the support from **Gurock** for **TestRail**. The FOLIO project uses TestRail to guide the community's world-wide testing efforts during software development and release. Subject matter experts from the libraries log the results of their testing in TestRail for the community's quality assurance team to track and review.
+
