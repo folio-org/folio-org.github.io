@@ -10,7 +10,7 @@ env:
 phases:
   install:
     runtime-versions:
-      ruby: 2.7
+      ruby: 3.1
     commands:
       - gem install bundler
       - bundle config set --local path 'vendor/bundle'
