@@ -6290,6 +6290,14 @@
     "path": "/lists/{id}/versions"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/list.yaml",
+    "apiType": "oas",
+    "interface": "lists 1.0",
+    "methods": "get:operation/getListVersion",
+    "name": "mod-lists",
+    "path": "/lists/{id}/versions/{versionNumber}"
+  },
+  {
     "apiDescription": "ramls/loan-anonymization.raml",
     "apiType": "raml",
     "interface": "loan-anonymization 0.1",
@@ -7115,7 +7123,7 @@
   {
     "apiDescription": "ramls/po-line.raml",
     "apiType": "raml",
-    "interface": "orders-storage.po-lines 12.2",
+    "interface": "orders-storage.po-lines 12.3",
     "methods": "get:orders_storage_po_lines_get post:orders_storage_po_lines_post",
     "name": "mod-orders-storage",
     "path": "/orders-storage/po-lines"
@@ -7123,7 +7131,7 @@
   {
     "apiDescription": "ramls/po-line-batch.raml",
     "apiType": "raml",
-    "interface": "orders-storage.po-lines 12.2",
+    "interface": "orders-storage.po-lines 12.3",
     "methods": "put:orders_storage_po_lines_batch_put",
     "name": "mod-orders-storage",
     "path": "/orders-storage/po-lines-batch"
@@ -7131,7 +7139,7 @@
   {
     "apiDescription": "ramls/po-line.raml",
     "apiType": "raml",
-    "interface": "orders-storage.po-lines 12.2",
+    "interface": "orders-storage.po-lines 12.3",
     "methods": "delete:orders_storage_po_lines__id__delete get:orders_storage_po_lines__id__get patch:orders_storage_po_lines__id__patch put:orders_storage_po_lines__id__put",
     "name": "mod-orders-storage",
     "path": "/orders-storage/po-lines/{id}"
@@ -7147,7 +7155,7 @@
   {
     "apiDescription": "ramls/purchase-order.raml",
     "apiType": "raml",
-    "interface": "orders-storage.purchase-orders 8.0",
+    "interface": "orders-storage.purchase-orders 8.1",
     "methods": "get:orders_storage_purchase_orders_get post:orders_storage_purchase_orders_post",
     "name": "mod-orders-storage",
     "path": "/orders-storage/purchase-orders"
@@ -7155,7 +7163,7 @@
   {
     "apiDescription": "ramls/purchase-order.raml",
     "apiType": "raml",
-    "interface": "orders-storage.purchase-orders 8.0",
+    "interface": "orders-storage.purchase-orders 8.1",
     "methods": "delete:orders_storage_purchase_orders__id__delete get:orders_storage_purchase_orders__id__get put:orders_storage_purchase_orders__id__put",
     "name": "mod-orders-storage",
     "path": "/orders-storage/purchase-orders/{id}"
@@ -7227,7 +7235,7 @@
   {
     "apiDescription": "ramls/order.raml",
     "apiType": "raml",
-    "interface": "orders 12.0",
+    "interface": "orders 12.1",
     "methods": "get:orders_composite_orders_get post:orders_composite_orders_post",
     "name": "mod-orders",
     "path": "/orders/composite-orders"
@@ -7235,7 +7243,7 @@
   {
     "apiDescription": "ramls/order.raml",
     "apiType": "raml",
-    "interface": "orders 12.0",
+    "interface": "orders 12.1",
     "methods": "delete:orders_composite_orders__id__delete get:orders_composite_orders__id__get put:orders_composite_orders__id__put",
     "name": "mod-orders",
     "path": "/orders/composite-orders/{id}"
@@ -7243,7 +7251,7 @@
   {
     "apiDescription": "ramls/order.raml",
     "apiType": "raml",
-    "interface": "orders 12.0",
+    "interface": "orders 12.1",
     "methods": "post:orders_composite_orders__id__re_encumber_post",
     "name": "mod-orders",
     "path": "/orders/composite-orders/{id}/re-encumber"
@@ -7315,7 +7323,7 @@
   {
     "apiDescription": "ramls/order-lines.raml",
     "apiType": "raml",
-    "interface": "order-lines 3.2",
+    "interface": "order-lines 3.3",
     "methods": "get:orders_order_lines_get post:orders_order_lines_post",
     "name": "mod-orders",
     "path": "/orders/order-lines"
@@ -7323,7 +7331,7 @@
   {
     "apiDescription": "ramls/order-lines.raml",
     "apiType": "raml",
-    "interface": "order-lines 3.2",
+    "interface": "order-lines 3.3",
     "methods": "put:orders_order_lines_fund_distributions_validate_put",
     "name": "mod-orders",
     "path": "/orders/order-lines/fund-distributions/validate"
@@ -7338,7 +7346,7 @@
   {
     "apiDescription": "ramls/order-lines.raml",
     "apiType": "raml",
-    "interface": "order-lines 3.2",
+    "interface": "order-lines 3.3",
     "methods": "delete:orders_order_lines__id__delete get:orders_order_lines__id__get patch:orders_order_lines__id__patch put:orders_order_lines__id__put",
     "name": "mod-orders",
     "path": "/orders/order-lines/{id}"
