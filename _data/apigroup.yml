@@ -37,6 +37,7 @@ inventory:
     - mod-marc-migrations
     - mod-oai-pmh
     - edge-oai-pmh
+    - mod-requests-mediated
     - mod-reservoir
 erm:
   title: Resource management
