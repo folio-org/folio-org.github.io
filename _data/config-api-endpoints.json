@@ -9572,7 +9572,7 @@
     "apiDescription": "ramls/userTenants.raml",
     "apiType": "raml",
     "interface": "user-tenants 1.0",
-    "methods": "get:user_tenants_get post:user_tenants_post",
+    "methods": "delete:user_tenants_delete get:user_tenants_get post:user_tenants_post",
     "name": "mod-users",
     "path": "/user-tenants"
   },
