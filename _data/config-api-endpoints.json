@@ -8347,6 +8347,14 @@
     "path": "/RequestBarcodes/{itemBarcode}/reshelved/{remoteStorageConfigurationId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
+    "apiType": "oas",
+    "interface": "requests-mediated 1.0",
+    "methods": "get:operation/get",
+    "name": "mod-requests-mediated",
+    "path": "/requests-mediated/secure-requests/{requestId}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/edge-caiasoft.yaml",
     "apiType": "oas",
     "methods": "post:operation/checkInByHoldId",
