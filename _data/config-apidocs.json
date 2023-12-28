@@ -1607,6 +1607,23 @@
   {
     "config": {
       "oas": [
+        "src/main/resources/swagger.api/requests-mediated.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.3"
+    },
+    "name": "mod-requests-mediated",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
         "server/src/main/resources/openapi/reservoir.yaml"
       ],
       "raml": [],
