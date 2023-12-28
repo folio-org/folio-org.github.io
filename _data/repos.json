@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-12-13T12:47:20.044419+00:00"
+    "generatedDateTime": "2023-12-18T22:23:04.715652+00:00"
   },
   "repos": [
     {
@@ -37,7 +37,7 @@
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": ""
+      "snippetIntro": "<p>Folio application descriptors</p>"
     },
     {
       "defaultBranch": "master",
@@ -639,6 +639,26 @@
     },
     {
       "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "folio-keycloak",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": "<p>A docker image for keycloak installation</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "folio-kong",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": "<p>A docker image for kong.</p>"
+    },
+    {
+      "defaultBranch": "master",
       "description": "Liquibase utilities",
       "docDirName": null,
       "name": "folio-liquibase-util",
@@ -891,6 +911,7 @@
       "snippetIntro": ""
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -900,7 +921,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "other",
       "repoType": "backend-mod",
-      "snippetIntro": "<p><code>mgr-applications</code> provides following functionality:</p>"
+      "snippetIntro": "<p><code>mgr-applications</code> provides following functionality:</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -915,6 +946,7 @@
       "snippetIntro": "<p><code>mgr-tenant-entitlements</code> provides following functionality:</p>"
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -924,7 +956,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "other",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>For now, <code>mgr-tenants</code> proxies requests to OKAPI's tenant API When any operation will happen on tenant, it will take place on realm in keycloak, also it will send a request to keycloak to retrieve a token and persist in cache for 60s for doing all the stuff related to realm</p>"
+      "snippetIntro": "<p>For now, <code>mgr-tenants</code> proxies requests to OKAPI's tenant API When any operation will happen on tenant, it will take place on realm in keycloak, also it will send a request to keycloak to retrieve a token and persist in cache for 60s for doing all the stuff related to realm</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -1096,7 +1138,7 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This is the blueprint module that should be used as a template for FOLIO Spring-based backend modules. It provides the initial configuration and common data schemas used by the FOLIO platform.</p>",
+      "snippetIntro": "<p>FOLIO compatible persistent storage module for storing DCB item information.</p>",
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
@@ -2027,6 +2069,7 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -2037,7 +2080,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "other",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>mod-login-keycloak provides following functionality:</p>"
+      "snippetIntro": "<p>mod-login-keycloak provides following functionality:</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -2483,6 +2536,17 @@
       ]
     },
     {
+      "defaultBranch": "master",
+      "description": "Mediated requests back-end module",
+      "docDirName": null,
+      "name": "mod-requests-mediated",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>FOLIO compatible mediated requests functionality, including secure requests.</p>"
+    },
+    {
       "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "A service that provides a clustering storage of metadata for Data Integration purposes",
@@ -2782,6 +2846,17 @@
         "api-lint.yml",
         "api-schema-lint.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Title-level requests back-end module",
+      "docDirName": null,
+      "name": "mod-tlr",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
@@ -4834,6 +4909,16 @@
     },
     {
       "defaultBranch": "master",
+      "description": "Mediated requests front-end module",
+      "docDirName": null,
+      "name": "ui-requests-mediated",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for managing mediated requests, including secure requests.</p>"
+    },
+    {
+      "defaultBranch": "master",
       "description": "STRIPES app providing front end for resource sharing ",
       "docDirName": null,
       "name": "ui-rs",
@@ -5001,6 +5086,16 @@
         "build-npm-release.yml",
         "build-npm.yml"
       ]
+    },
+    {
+      "defaultBranch": "main",
+      "description": "The UI Module for Mod Workflow",
+      "docDirName": null,
+      "name": "ui-workflow",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
