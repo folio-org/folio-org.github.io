@@ -1,6 +1,6 @@
 {
   "license": "Apache-2.0",
   "dependencies": {
-    "json-schema-ref-parser": "^9.0.0"
+    "@apidevtools/json-schema-ref-parser": "^9.0.12"
   }
 }
