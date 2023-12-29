@@ -129,6 +129,7 @@ other:
   description: Not yet grouped.
   modules:
     - mod-consortia
+    - mod-consortia-keycloak
     - mod-dcb
     - edge-dcb
     - mod-eusage-reports
@@ -136,6 +137,7 @@ other:
     - edge-fqm
     - mod-lists
     - mod-ldp
+    - mod-scheduler
     - folio-custom-fields
     - folio-query-tool-metadata
     - folio-spring-support
