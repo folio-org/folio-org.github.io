@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2023-12-18T22:23:04.715652+00:00"
+    "generatedDateTime": "2023-12-28T01:50:25.797629+00:00"
   },
   "repos": [
     {
@@ -669,6 +669,16 @@
     },
     {
       "defaultBranch": "master",
+      "description": null,
+      "docDirName": "doc",
+      "name": "folio-module-sidecar",
+      "org": "folio-org",
+      "repoLanguageHint": "java",
+      "repoType": "other",
+      "snippetIntro": "<p><code>folio-module-sidecar</code> provides following functionality:</p>"
+    },
+    {
+      "defaultBranch": "master",
       "description": "Website for FOLIO open source development dev.folio.org",
       "docDirName": null,
       "name": "folio-org.github.io",
@@ -1223,6 +1233,19 @@
         "api-lint.yml",
         "api-schema-lint.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": "docs",
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-consortia-keycloak",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>APIs for Consortia module.</p>"
     },
     {
       "apiTypes": "RAML",
@@ -2536,15 +2559,28 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Mediated requests back-end module",
       "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
       "name": "mod-requests-mediated",
       "org": "folio-org",
       "ramlDirName": null,
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>FOLIO compatible mediated requests functionality, including secure requests.</p>"
+      "snippetIntro": "<p>FOLIO compatible mediated requests functionality, including secure requests.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "OAS",
@@ -2631,6 +2667,19 @@
         "api-lint.yml",
         "api-schema-lint.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-scheduler",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p><code>mod-scheduler</code> provides following functionality:</p>"
     },
     {
       "apiTypes": "OAS",
@@ -5095,7 +5144,15 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": ""
+      "snippetIntro": "<p>This UI Workflow Module, <code>ui-workflow</code>, is a Stripes UI Module providing a way to build workflows for use in automating processes.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
     },
     {
       "defaultBranch": "master",
