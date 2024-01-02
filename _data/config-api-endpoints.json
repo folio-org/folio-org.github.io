@@ -8809,6 +8809,22 @@
     "path": "/scheduled-notice-storage/scheduled-notices/{scheduled-noticeId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mod-scheduler.yaml",
+    "apiType": "oas",
+    "interface": "scheduler 1.0",
+    "methods": "get:operation/getSchedulerTimers post:operation/createSchedulerTimers",
+    "name": "mod-scheduler",
+    "path": "/scheduler/timers"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-scheduler.yaml",
+    "apiType": "oas",
+    "interface": "scheduler 1.0",
+    "methods": "delete:operation/deleteSchedulerTimerById get:operation/getSchedulerTimerById put:operation/updateSchedulerTimerById",
+    "name": "mod-scheduler",
+    "path": "/scheduler/timers/{id}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
     "interface": "search 1.2",

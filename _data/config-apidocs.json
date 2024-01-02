@@ -1684,6 +1684,23 @@
   {
     "config": {
       "oas": [
+        "src/main/resources/swagger.api/mod-scheduler.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.4"
+    },
+    "name": "mod-scheduler",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
         "src/main/resources/swagger.api/mod-search.yaml"
       ],
       "raml": [],
