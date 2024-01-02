@@ -531,6 +531,31 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/swagger.api/consortia.yaml",
+        "src/main/resources/swagger.api/consortia_configuration.yaml",
+        "src/main/resources/swagger.api/kafka_message_schemas.yaml",
+        "src/main/resources/swagger.api/publications.yaml",
+        "src/main/resources/swagger.api/self.yaml",
+        "src/main/resources/swagger.api/sharing_instances.yaml",
+        "src/main/resources/swagger.api/sharing_settings.yaml",
+        "src/main/resources/swagger.api/tenants.yaml",
+        "src/main/resources/swagger.api/user_tenants.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.4"
+    },
+    "name": "mod-consortia-keycloak",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/copycat.raml"
