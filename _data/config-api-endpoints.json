@@ -288,6 +288,13 @@
     "path": "/_self"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/self.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getUserTenantsForCurrentUser",
+    "name": "mod-consortia-keycloak",
+    "path": "/_self"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
     "apiType": "oas",
     "methods": "get:operation/getAccessions post:operation/postAccession",
@@ -2462,6 +2469,14 @@
     "path": "/consortia"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.0",
+    "methods": "get:operation/getConsortiumCollection post:operation/saveConsortium",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/consortia_configuration.yaml",
     "apiType": "oas",
     "interface": "consortia 1.0",
@@ -2470,11 +2485,27 @@
     "path": "/consortia-configuration"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/consortia_configuration.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.0",
+    "methods": "get:operation/getConfiguration post:operation/saveConfiguration",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia-configuration"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
     "apiType": "oas",
     "interface": "consortia 1.0",
     "methods": "get:operation/getConsortium put:operation/updateConsortium",
     "name": "mod-consortia",
+    "path": "/consortia/{consortiumId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.0",
+    "methods": "get:operation/getConsortium put:operation/updateConsortium",
+    "name": "mod-consortia-keycloak",
     "path": "/consortia/{consortiumId}"
   },
   {
@@ -5520,8 +5551,22 @@
   {
     "apiDescription": "src/main/resources/swagger.api/sharing_instances.yaml",
     "apiType": "oas",
+    "methods": "get:operation/getSharingInstances post:operation/startSharingInstance",
+    "name": "mod-consortia-keycloak",
+    "path": "/instances"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_instances.yaml",
+    "apiType": "oas",
     "methods": "get:operation/getSharingInstanceById",
     "name": "mod-consortia",
+    "path": "/instances/{actionId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_instances.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getSharingInstanceById",
+    "name": "mod-consortia-keycloak",
     "path": "/instances/{actionId}"
   },
   {
@@ -6080,6 +6125,13 @@
     "apiType": "oas",
     "methods": "get:null",
     "name": "mod-consortia",
+    "path": "/kafka-stub-endpoint"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/kafka_message_schemas.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-consortia-keycloak",
     "path": "/kafka-stub-endpoint"
   },
   {
@@ -8095,6 +8147,13 @@
   {
     "apiDescription": "src/main/resources/swagger.api/publications.yaml",
     "apiType": "oas",
+    "methods": "post:operation/publishRequests",
+    "name": "mod-consortia-keycloak",
+    "path": "/publications"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/publications.yaml",
+    "apiType": "oas",
     "methods": "delete:operation/deletePublicationById get:operation/getPublicationDetails",
     "name": "mod-consortia",
     "path": "/publications/{publicationId}"
@@ -8102,8 +8161,22 @@
   {
     "apiDescription": "src/main/resources/swagger.api/publications.yaml",
     "apiType": "oas",
+    "methods": "delete:operation/deletePublicationById get:operation/getPublicationDetails",
+    "name": "mod-consortia-keycloak",
+    "path": "/publications/{publicationId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/publications.yaml",
+    "apiType": "oas",
     "methods": "get:operation/getPublicationResults",
     "name": "mod-consortia",
+    "path": "/publications/{publicationId}/results"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/publications.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getPublicationResults",
+    "name": "mod-consortia-keycloak",
     "path": "/publications/{publicationId}/results"
   },
   {
@@ -8911,6 +8984,13 @@
     "path": "/settings"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/sharing_settings.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/startSharingSetting",
+    "name": "mod-consortia-keycloak",
+    "path": "/settings"
+  },
+  {
     "apiDescription": "src/main/resources/openapi/settings.yaml",
     "apiType": "oas",
     "interface": "settings 1.0",
@@ -8939,6 +9019,13 @@
     "apiType": "oas",
     "methods": "delete:operation/deleteSharingSetting",
     "name": "mod-consortia",
+    "path": "/settings/{settingId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_settings.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteSharingSetting",
+    "name": "mod-consortia-keycloak",
     "path": "/settings/{settingId}"
   },
   {
@@ -9248,6 +9335,13 @@
     "path": "/tenants"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getTenants post:operation/saveTenant",
+    "name": "mod-consortia-keycloak",
+    "path": "/tenants"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mgr-tenants.yaml",
     "apiType": "oas",
     "interface": "tenants 1.0",
@@ -9265,6 +9359,13 @@
   {
     "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
     "apiType": "oas",
+    "methods": "delete:operation/deleteTenantById get:operation/getTenantDetailsById put:operation/updateTenant",
+    "name": "mod-consortia-keycloak",
+    "path": "/tenants/{tenantId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
+    "apiType": "oas",
     "methods": "post:operation/createPrimaryAffiliations",
     "name": "mod-consortia",
     "path": "/tenants/{tenantId}/create-primary-affiliations"
@@ -9272,8 +9373,22 @@
   {
     "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
     "apiType": "oas",
+    "methods": "post:operation/createPrimaryAffiliations",
+    "name": "mod-consortia-keycloak",
+    "path": "/tenants/{tenantId}/create-primary-affiliations"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
+    "apiType": "oas",
     "methods": "post:operation/syncPrimaryAffiliations",
     "name": "mod-consortia",
+    "path": "/tenants/{tenantId}/sync-primary-affiliations"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/syncPrimaryAffiliations",
+    "name": "mod-consortia-keycloak",
     "path": "/tenants/{tenantId}/sync-primary-affiliations"
   },
   {
@@ -9577,6 +9692,13 @@
     "path": "/user-tenants"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/user_tenants.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteUserTenant get:operation/getUserTenants post:operation/postUserTenants",
+    "name": "mod-consortia-keycloak",
+    "path": "/user-tenants"
+  },
+  {
     "apiDescription": "ramls/userTenants.raml",
     "apiType": "raml",
     "interface": "user-tenants 1.0",
@@ -9589,6 +9711,13 @@
     "apiType": "oas",
     "methods": "get:operation/getUserTenantByAssociationId",
     "name": "mod-consortia",
+    "path": "/user-tenants/{associationId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/user_tenants.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getUserTenantByAssociationId",
+    "name": "mod-consortia-keycloak",
     "path": "/user-tenants/{associationId}"
   },
   {
