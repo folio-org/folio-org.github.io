@@ -9424,6 +9424,14 @@
     "path": "/tenants/{tenantId}/tenant-attributes/{id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/title-level-requests.yaml",
+    "apiType": "oas",
+    "interface": "title-level-requests 1.0",
+    "methods": "get:operation/get",
+    "name": "mod-tlr",
+    "path": "/title-level-requests/{requestId}"
+  },
+  {
     "apiDescription": "ramls/tlr-feature-toggle-job.raml",
     "apiType": "raml",
     "interface": "tlr-feature-toggle-job-storage 0.1",
