@@ -1830,6 +1830,23 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/swagger.api/title-level-requests.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.4"
+    },
+    "name": "mod-tlr",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/import.raml"
