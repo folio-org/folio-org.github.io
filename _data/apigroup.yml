@@ -39,6 +39,7 @@ inventory:
     - edge-oai-pmh
     - mod-requests-mediated
     - mod-reservoir
+    - mod-tlr
 erm:
   title: Resource management
   description: ERM, licenses, usage statistics.
