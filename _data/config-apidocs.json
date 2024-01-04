@@ -989,7 +989,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5.4"
     },
     "name": "mod-gobi",
     "org": "folio-org"
@@ -1153,7 +1153,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5.4"
     },
     "name": "mod-invoice",
     "org": "folio-org"
@@ -1178,7 +1178,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5.4"
     },
     "name": "mod-invoice-storage",
     "org": "folio-org"
@@ -1416,7 +1416,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5.4"
     },
     "name": "mod-orders",
     "org": "folio-org"
@@ -1450,7 +1450,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5.4"
     },
     "name": "mod-orders-storage",
     "org": "folio-org"
