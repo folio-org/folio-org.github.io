@@ -68,6 +68,8 @@ Allow sufficient time to establish these.
 
 ## Ensure recent local VM
 
+(Alternatively ensure that the module operates properly in a [Rancher scratch environment](/faqs/how-to-get-started-with-rancher/).)
+
 Ensure that the module will operate with a **recent** local Vagrant VM.
 <!-- Await platform-minimal FOLIO-3253
 If the new module does not yet depend on others, then `folio/release-core` VM would be easiest.
@@ -79,7 +81,7 @@ That procedure will verify that the most recent published module is ready to be 
 
 ## Request add new module
 
-Before proceeding, verify that the module is ready to be added, including the above-mentioned steps.
+Before proceeding, verify that the module is ready to be added, including the above-mentioned steps and the guidelines at [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/).
 
 Prepare the Jira ticket to guide the process, and request that the new backend module be enabled for the snapshot reference environments.
 
