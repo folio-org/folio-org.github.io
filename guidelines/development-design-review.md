@@ -94,7 +94,7 @@ This group consists of Technical Leads, selected senior developers and architect
 
 The [Technical Council](/reference/glossary/#tc) is responsible for providing technical oversight across the whole of FOLIO.
 
-They are responsible for FOLIO Architectural Blueprint and the RFC process.
+They are responsible for FOLIO Architectural Blueprint and the [RFC](/reference/glossary/#rfc) process.
 
 ## Development process
 
