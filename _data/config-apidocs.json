@@ -646,7 +646,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5.4"
     },
     "name": "mod-data-export-worker",
     "org": "folio-org"
@@ -1880,7 +1880,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5.4"
     },
     "name": "mod-users",
     "org": "folio-org"
@@ -1900,6 +1900,23 @@
       "generator": "api_doc.py 1.5.3"
     },
     "name": "mod-users-bl",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/swagger.api/users-keycloak.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5.4"
+    },
+    "name": "mod-users-keycloak",
     "org": "folio-org"
   },
   {
