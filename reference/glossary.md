@@ -178,6 +178,10 @@ Definition of Ready (DoR).
 Criteria to decide when a feature is well-described and is deemed ready to be scheduled to undertake the work.
 Refer to the [management](/guidelines/#development-management) notes for each FOLIO Development Team.
 
+#### DR
+
+[Decision Records](https://wiki.folio.org/display/TC/Decision+Records) (DR) -- The collection of ADRs (Architectural Decision Records) is referred to as ADL (Architecture Decision Log).
+
 #### DRY
 
 Don't repeat yourself
@@ -389,6 +393,12 @@ These are linked and their automation is explained at [Software build pipeline](
 
 Representational State Transfer architectural style, and RESTful web services, enable interaction between systems using a well-known set of stateless operations and responses.
 
+#### RFC
+
+Request For Comments (RFCs).
+Refer to the current set of [FOLIO RFCs](https://github.com/folio-org/rfcs)
+and the [RFC Process](https://wiki.folio.org/display/TC/RFC+Process).
+
 #### RMB
 
 The [RAML Module Builder](https://github.com/folio-org/raml-module-builder) (RMB) framework, is a special FOLIO module that abstracts much functionality and enables the developer to focus on implementing business functions.
@@ -458,6 +468,8 @@ System operators, systems administrators of multi-user computer systems:
 
 The [FOLIO Technical Council](https://wiki.folio.org/display/TC/)
 and its [Charter](https://wiki.folio.org/display/TC/Tech+Council+Charter).
+
+The Wiki [Tree browser](https://wiki.folio.org/collector/pages.action?key=TC) helps to navigate the TC section of the Wiki.
 
 #### TDO
 
