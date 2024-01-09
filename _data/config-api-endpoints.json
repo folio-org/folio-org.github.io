@@ -6667,6 +6667,14 @@
     "path": "/marc-migrations"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/marc-migrations.yaml",
+    "apiType": "oas",
+    "interface": "marc-migrations 1.0",
+    "methods": "get:operation/getMarcMigrationById",
+    "name": "mod-marc-migrations",
+    "path": "/marc-migrations/{operationId}"
+  },
+  {
     "apiDescription": "ramls/material-type.raml",
     "apiType": "raml",
     "interface": "material-types 2.2",
@@ -9762,6 +9770,86 @@
     "path": "/users"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "users-keycloak 1.0",
+    "methods": "get:operation/getUserBySelfReference",
+    "name": "mod-users-keycloak",
+    "path": "/users-keycloak/_self"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "users-keycloak 1.0",
+    "methods": "post:operation/resetForgottenPassword",
+    "name": "mod-users-keycloak",
+    "path": "/users-keycloak/forgotten/password"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "users-keycloak 1.0",
+    "methods": "post:operation/recoverForgottenUsername",
+    "name": "mod-users-keycloak",
+    "path": "/users-keycloak/forgotten/username"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "users-keycloak 1.0",
+    "methods": "get:operation/getMigrations post:operation/migrateUsers",
+    "name": "mod-users-keycloak",
+    "path": "/users-keycloak/migrations"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "users-keycloak 1.0",
+    "methods": "delete:operation/deleteMigration get:operation/getMigration",
+    "name": "mod-users-keycloak",
+    "path": "/users-keycloak/migrations/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "users-keycloak 1.0",
+    "methods": "post:operation/generatePasswordResetLink",
+    "name": "mod-users-keycloak",
+    "path": "/users-keycloak/password-reset/link"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "users-keycloak 1.0",
+    "methods": "post:operation/passwordReset",
+    "name": "mod-users-keycloak",
+    "path": "/users-keycloak/password-reset/reset"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "users-keycloak 1.0",
+    "methods": "post:operation/validatePasswordResetLink",
+    "name": "mod-users-keycloak",
+    "path": "/users-keycloak/password-reset/validate"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "users-keycloak 1.0",
+    "methods": "delete:operation/deleteUsers get:operation/getUsers post:operation/createUser",
+    "name": "mod-users-keycloak",
+    "path": "/users-keycloak/users"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "users-keycloak 1.0",
+    "methods": "delete:operation/deleteUser get:operation/getUser put:operation/updateUser",
+    "name": "mod-users-keycloak",
+    "path": "/users-keycloak/users/{id}"
+  },
+  {
     "apiDescription": "ramls/users.raml",
     "apiType": "raml",
     "interface": "_timer 1.0",
@@ -9776,6 +9864,22 @@
     "methods": "post:users_outbox_process_post",
     "name": "mod-users",
     "path": "/users/outbox/process"
+  },
+  {
+    "apiDescription": "ramls/users.raml",
+    "apiType": "raml",
+    "interface": "users 16.0",
+    "methods": "post:users_profile_picture_post",
+    "name": "mod-users",
+    "path": "/users/profile-picture"
+  },
+  {
+    "apiDescription": "ramls/users.raml",
+    "apiType": "raml",
+    "interface": "users 16.0",
+    "methods": "get:users_profile_picture__profileid__get",
+    "name": "mod-users",
+    "path": "/users/profile-picture/{profileId}"
   },
   {
     "apiDescription": "ramls/users.raml",
