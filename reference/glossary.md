@@ -178,6 +178,10 @@ Definition of Ready (DoR).
 Criteria to decide when a feature is well-described and is deemed ready to be scheduled to undertake the work.
 Refer to the [management](/guidelines/#development-management) notes for each FOLIO Development Team.
 
+#### DR
+
+[Decision Records](https://wiki.folio.org/display/TC/Decision+Records) (DR) -- The collection of ADRs (Architectural Decision Records) is referred to as ADL (Architecture Decision Log).
+
 #### DRY
 
 Don't repeat yourself
