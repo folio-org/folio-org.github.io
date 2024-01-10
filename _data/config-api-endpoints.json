@@ -4894,6 +4894,14 @@
     "path": "/finance/transfers"
   },
   {
+    "apiDescription": "ramls/unrelease-encumbrance.raml",
+    "apiType": "raml",
+    "interface": "finance.transactions 5.0",
+    "methods": "post:finance_unrelease_encumbrance__id__post",
+    "name": "mod-finance",
+    "path": "/finance/unrelease-encumbrance/{id}"
+  },
+  {
     "apiDescription": "ramls/fincConfigMetadataSources.raml",
     "apiType": "raml",
     "interface": "finc-config/contacts 1.0",
@@ -5750,6 +5758,14 @@
     "methods": "delete:inventory_instances__instanceid__delete get:inventory_instances__instanceid__get put:inventory_instances__instanceid__put",
     "name": "mod-inventory",
     "path": "/inventory/instances/{instanceId}"
+  },
+  {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "interface": "inventory 13.0",
+    "methods": "delete:inventory_instances__instanceid__mark_deleted_delete",
+    "name": "mod-inventory",
+    "path": "/inventory/instances/{instanceId}/mark-deleted"
   },
   {
     "apiDescription": "ramls/inventory.raml",

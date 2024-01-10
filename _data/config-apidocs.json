@@ -245,7 +245,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5.4"
     },
     "name": "folio-query-tool-metadata",
     "org": "folio-org"
@@ -885,7 +885,8 @@
         "ramls/ledgers.raml",
         "ramls/release-encumbrance.raml",
         "ramls/transaction-summary.raml",
-        "ramls/transaction.raml"
+        "ramls/transaction.raml",
+        "ramls/unrelease-encumbrance.raml"
       ],
       "upload": []
     },
@@ -1047,7 +1048,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5.4"
     },
     "name": "mod-inventory",
     "org": "folio-org"
@@ -1789,7 +1790,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5.4"
     },
     "name": "mod-source-record-storage",
     "org": "folio-org"
@@ -1953,7 +1954,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5.4"
     },
     "name": "raml",
     "org": "folio-org"
