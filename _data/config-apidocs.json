@@ -752,7 +752,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5.4"
     },
     "name": "mod-entities-links",
     "org": "folio-org"
@@ -1608,7 +1608,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5.4"
     },
     "name": "mod-quick-marc",
     "org": "folio-org"

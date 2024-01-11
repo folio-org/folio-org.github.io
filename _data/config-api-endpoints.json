@@ -1180,7 +1180,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "authority-source-files 2.0",
+    "interface": "authority-source-files 2.1",
     "methods": "get:operation/retrieveAuthoritySourceFiles post:operation/createAuthoritySourceFile",
     "name": "mod-entities-links",
     "path": "/authority-source-files"
@@ -1188,10 +1188,18 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "authority-source-files 2.0",
+    "interface": "authority-source-files 2.1",
     "methods": "delete:operation/deleteAuthoritySourceFile get:operation/getAuthoritySourceFile patch:operation/patchAuthoritySourceFile",
     "name": "mod-entities-links",
     "path": "/authority-source-files/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
+    "interface": "authority-source-files 2.1",
+    "methods": "post:operation/newAuthoritySourceFileNextHrid",
+    "name": "mod-entities-links",
+    "path": "/authority-source-files/{id}/hrid"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
@@ -8346,7 +8354,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
     "apiType": "oas",
-    "methods": "get:operation/getRecordByExternalId post:null",
+    "methods": "get:operation/getRecordByExternalId post:operation/createNewRecord",
     "name": "mod-quick-marc",
     "path": "/records"
   },
