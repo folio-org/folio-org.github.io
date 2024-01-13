@@ -646,7 +646,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.4"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-data-export-worker",
     "org": "folio-org"
