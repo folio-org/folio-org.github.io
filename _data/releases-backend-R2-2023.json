@@ -36,11 +36,11 @@
     {
       "name": "mod-bulk-operations",
       "nameRepo": "mod-bulk-operations",
-      "releaseDate": null,
-      "releaseName": null,
-      "releaseSha": null,
-      "releaseTag": null,
-      "releaseTarget": null,
+      "releaseDate": "2024-01-15T13:01:46+00:00",
+      "releaseName": "v1.1.9",
+      "releaseSha": "0d68436abf1af5c2e0bb4e4eede357cfac9fd55c",
+      "releaseTag": "v1.1.9",
+      "releaseTarget": "master",
       "version": "1.1.9"
     },
     {
