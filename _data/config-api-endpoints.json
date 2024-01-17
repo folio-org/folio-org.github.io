@@ -6599,7 +6599,7 @@
   {
     "apiDescription": "src/main/resources/openapi/batchPrint.yaml",
     "apiType": "oas",
-    "interface": "mail 1.0",
+    "interface": "batch-print 1.0",
     "methods": "post:operation/saveMail",
     "name": "mod-batch-print",
     "path": "/mail"
@@ -8135,15 +8135,15 @@
   {
     "apiDescription": "src/main/resources/openapi/batchPrint.yaml",
     "apiType": "oas",
-    "interface": "mail 1.0",
-    "methods": "get:operation/getPrintEntries post:operation/postPrintEntry",
+    "interface": "batch-print 1.0",
+    "methods": "delete:operation/deletePrintEntries get:operation/getPrintEntries post:operation/postPrintEntry",
     "name": "mod-batch-print",
     "path": "/print/entries"
   },
   {
     "apiDescription": "src/main/resources/openapi/batchPrint.yaml",
     "apiType": "oas",
-    "interface": "mail 1.0",
+    "interface": "batch-print 1.0",
     "methods": "delete:operation/deletePrintEntry get:operation/getPrintEntry put:operation/updatePrintEntry",
     "name": "mod-batch-print",
     "path": "/print/entries/{id}"
