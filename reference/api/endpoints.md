@@ -85,7 +85,10 @@ Listed endpoints count: {{ site.data.config-api-endpoints.size }}
 {% endfor %}
   </tbody>
 </table>
+<link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@3.1.0/sortable-base.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@3.1.0/sortable.min.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/sortable-tablesort@3.1.0/sortable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sortable-tablesort@3.1.0/sortable.a11y.min.js"></script>
 <script>
   window.addEventListener('load', function () {
     const el = document.getElementById('ep-path')
@@ -123,6 +126,13 @@ That is because their API description has omitted the "`operationId`" property f
 
 {{ modulesMissingMethod | uniq | join: ", " }}
 
+### Sortable
+
+The table is sortable (except by the "Methods" column).
+Select a column header to sort the table rows in one direction, and select again for the opposite direction.
+
+Thanks to the [sortable](https://github.com/tofsjonas/sortable), which also assists with some basic accessibility a11y features by adding "aria-label" attributes and the ability to tab across the table headers (then using keyboard Enter key to select the sorting direction).
+
 ### Interfaces
 
 When the API documentation is generated (as explained in the above section [Gathered lists](#gathered-lists)) then the module's set of endpoints is extracted from the API model.
@@ -133,6 +143,6 @@ The correlation is handled via [folio-tools/api-doc](https://github.com/folio-or
 Show the table column "Interface" and sort by that column.
 For example, see the set of modules that implement the "`_timer`" interface.
 
-Sort by the column "API Documentation" and see the interfaces for a particular module, e.g. mod-permissions.
+Sort by the column "API Documentation" and see the interfaces for a particular module, e.g. mod-permissions. Use the web browser “Find in page” facility.
 
 <div class="folio-spacer-content"></div>

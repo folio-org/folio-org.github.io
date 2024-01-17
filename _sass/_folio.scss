@@ -81,35 +81,7 @@ table.apilabel .raml {
   width: 50%;
   text-align: left;
 }
-// 2022-09-18 https://github.com/tofsjonas/sortable/blob/main/sortable.css
-.sortable th {
-  cursor: pointer;
-}
-.sortable th::after {
-  color: $f-link-color;
-  content: ' \025B8';
-}
-.sortable th.no-sort {
-  pointer-events: none;
-  cursor: default;
-}
-.sortable th.no-sort::after {
-  content: none;
-}
-.sortable th.dir-d {
-  color: $f-link-color;
-}
-.sortable th.dir-d::after {
-  color: inherit;
-  content: ' \025BE';
-}
-.sortable th.dir-u {
-  color: $f-link-color;
-}
-.sortable th.dir-u::after {
-  color: inherit;
-  content: ' \025B4';
-}
+// for the reference/api/endpoints sortable
 .hidden-column { display: none }
 
 /*
