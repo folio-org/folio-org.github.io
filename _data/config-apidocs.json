@@ -48,7 +48,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5"
     },
     "name": "edge-courses",
     "org": "folio-org"
@@ -752,7 +752,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.4"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-entities-links",
     "org": "folio-org"
@@ -1832,7 +1832,7 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/swagger.api/title-level-requests.yaml"
+        "src/main/resources/swagger.api/ecs-tlr.yaml"
       ],
       "raml": [],
       "upload": []
@@ -1841,7 +1841,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.4"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-tlr",
     "org": "folio-org"
@@ -1881,7 +1881,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.4"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-users",
     "org": "folio-org"

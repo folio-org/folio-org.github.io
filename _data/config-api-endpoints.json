@@ -9465,14 +9465,6 @@
     "path": "/tenants/{tenantId}/tenant-attributes/{id}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/title-level-requests.yaml",
-    "apiType": "oas",
-    "interface": "title-level-requests 1.0",
-    "methods": "get:operation/get",
-    "name": "mod-tlr",
-    "path": "/title-level-requests/{requestId}"
-  },
-  {
     "apiDescription": "ramls/tlr-feature-toggle-job.raml",
     "apiType": "raml",
     "interface": "tlr-feature-toggle-job-storage 0.1",
@@ -9495,6 +9487,22 @@
     "methods": "post:tlr_feature_toggle_job_start_post",
     "name": "mod-circulation-storage",
     "path": "/tlr-feature-toggle-job/start"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/ecs-tlr.yaml",
+    "apiType": "oas",
+    "interface": "ecs-tlr 1.0",
+    "methods": "post:operation/postEcsTlr",
+    "name": "mod-tlr",
+    "path": "/tlr/ecs-tlr"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/ecs-tlr.yaml",
+    "apiType": "oas",
+    "interface": "ecs-tlr 1.0",
+    "methods": "get:operation/getEcsTlrById",
+    "name": "mod-tlr",
+    "path": "/tlr/ecs-tlr/{requestId}"
   },
   {
     "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
@@ -9901,7 +9909,7 @@
     "apiDescription": "ramls/users.raml",
     "apiType": "raml",
     "interface": "users 16.0",
-    "methods": "get:users_profile_picture__profileid__get",
+    "methods": "get:users_profile_picture__profileid__get put:users_profile_picture__profileid__put",
     "name": "mod-users",
     "path": "/users/profile-picture/{profileId}"
   },
