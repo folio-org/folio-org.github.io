@@ -1180,7 +1180,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "authority-source-files 2.1",
+    "interface": "authority-source-files 2.2",
     "methods": "get:operation/retrieveAuthoritySourceFiles post:operation/createAuthoritySourceFile",
     "name": "mod-entities-links",
     "path": "/authority-source-files"
@@ -1188,7 +1188,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "authority-source-files 2.1",
+    "interface": "authority-source-files 2.2",
     "methods": "delete:operation/deleteAuthoritySourceFile get:operation/getAuthoritySourceFile patch:operation/patchAuthoritySourceFile",
     "name": "mod-entities-links",
     "path": "/authority-source-files/{id}"
@@ -1196,7 +1196,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "authority-source-files 2.1",
+    "interface": "authority-source-files 2.2",
     "methods": "post:operation/newAuthoritySourceFileNextHrid",
     "name": "mod-entities-links",
     "path": "/authority-source-files/{id}/hrid"
@@ -4472,7 +4472,7 @@
   {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "interface": "finance-storage.transactions 4.0",
+    "interface": "finance-storage.transactions 4.1",
     "methods": "get:finance_storage_transactions_get post:finance_storage_transactions_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/transactions"
@@ -4480,7 +4480,15 @@
   {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "interface": "finance-storage.transactions 4.0",
+    "interface": "finance-storage.transactions 4.1",
+    "methods": "post:finance_storage_transactions_batch_all_or_nothing_post",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/transactions/batch-all-or-nothing"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "interface": "finance-storage.transactions 4.1",
     "methods": "delete:finance_storage_transactions__id__delete get:finance_storage_transactions__id__get put:finance_storage_transactions__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/transactions/{id}"
@@ -6721,6 +6729,14 @@
     "methods": "post:message_delivery_post",
     "name": "mod-sender",
     "path": "/message-delivery"
+  },
+  {
+    "apiDescription": "ramls/metadata-provider.raml",
+    "apiType": "raml",
+    "interface": "metadata-provider-job-execution-logs 1.0",
+    "methods": "get:metadata_provider_incomingrecords__recordid__get",
+    "name": "mod-source-record-manager",
+    "path": "/metadata-provider/incomingRecords/{recordId}"
   },
   {
     "apiDescription": "ramls/metadata-provider.raml",
