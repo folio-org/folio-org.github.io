@@ -7428,6 +7428,14 @@
     "path": "/orders/configuration/suffixes/{id}"
   },
   {
+    "apiDescription": "ramls/expect.raml",
+    "apiType": "raml",
+    "interface": "receiving 1.2",
+    "methods": "post:orders_expect_post",
+    "name": "mod-orders",
+    "path": "/orders/expect"
+  },
+  {
     "apiDescription": "ramls/export_history.raml",
     "apiType": "raml",
     "interface": "orders.export-history 1.0",
