@@ -4502,13 +4502,6 @@
     "path": "/finance/allocations"
   },
   {
-    "apiDescription": "ramls/transaction.raml",
-    "apiType": "raml",
-    "methods": "post:finance_batch_all_or_nothing_post",
-    "name": "mod-finance",
-    "path": "/finance/batch-all-or-nothing"
-  },
-  {
     "apiDescription": "ramls/budgets.raml",
     "apiType": "raml",
     "interface": "finance.budgets 2.0",
@@ -4899,6 +4892,14 @@
     "methods": "get:finance_transactions_get",
     "name": "mod-finance",
     "path": "/finance/transactions"
+  },
+  {
+    "apiDescription": "ramls/transaction.raml",
+    "apiType": "raml",
+    "interface": "finance.transactions 5.1",
+    "methods": "post:finance_transactions_batch_all_or_nothing_post",
+    "name": "mod-finance",
+    "path": "/finance/transactions/batch-all-or-nothing"
   },
   {
     "apiDescription": "ramls/transaction.raml",
