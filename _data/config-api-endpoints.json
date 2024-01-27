@@ -4534,6 +4534,13 @@
     "path": "/finance/budgets/{id}/recalculate"
   },
   {
+    "apiDescription": "ramls/calculate-exchange.raml",
+    "apiType": "raml",
+    "methods": "get:finance_calculate_exchange_get",
+    "name": "mod-finance",
+    "path": "/finance/calculate_exchange"
+  },
+  {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
     "interface": "finance.transactions 5.1",
