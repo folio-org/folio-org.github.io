@@ -4534,11 +4534,11 @@
     "path": "/finance/budgets/{id}/recalculate"
   },
   {
-    "apiDescription": "ramls/calculate-exchange.raml",
+    "apiDescription": "ramls/exchange.raml",
     "apiType": "raml",
     "methods": "get:finance_calculate_exchange_get",
     "name": "mod-finance",
-    "path": "/finance/calculate_exchange"
+    "path": "/finance/calculate-exchange"
   },
   {
     "apiDescription": "ramls/transaction.raml",
@@ -4573,7 +4573,7 @@
     "path": "/finance/encumbrances/{id}"
   },
   {
-    "apiDescription": "ramls/exchange-rate.raml",
+    "apiDescription": "ramls/exchange.raml",
     "apiType": "raml",
     "interface": "finance.exchange-rate 1.0",
     "methods": "get:finance_exchange_rate_get",

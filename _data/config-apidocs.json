@@ -868,8 +868,7 @@
       "oas": [],
       "raml": [
         "ramls/budgets.raml",
-        "ramls/calculate-exchange.raml",
-        "ramls/exchange-rate.raml",
+        "ramls/exchange.raml",
         "ramls/expense-classes.raml",
         "ramls/finance-fund-codes-expense-classes.raml",
         "ramls/fiscal-years.raml",
