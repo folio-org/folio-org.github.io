@@ -7230,7 +7230,7 @@
   {
     "apiDescription": "ramls/pieces.raml",
     "apiType": "raml",
-    "interface": "orders-storage.pieces 4.0",
+    "interface": "orders-storage.pieces 5.0",
     "methods": "get:orders_storage_pieces_get post:orders_storage_pieces_post",
     "name": "mod-orders-storage",
     "path": "/orders-storage/pieces"
@@ -7238,7 +7238,7 @@
   {
     "apiDescription": "ramls/pieces.raml",
     "apiType": "raml",
-    "interface": "orders-storage.pieces 4.0",
+    "interface": "orders-storage.pieces 5.0",
     "methods": "delete:orders_storage_pieces__id__delete get:orders_storage_pieces__id__get put:orders_storage_pieces__id__put",
     "name": "mod-orders-storage",
     "path": "/orders-storage/pieces/{id}"
@@ -7302,7 +7302,7 @@
   {
     "apiDescription": "ramls/receiving-history.raml",
     "apiType": "raml",
-    "interface": "orders-storage.receiving-history 3.2",
+    "interface": "orders-storage.receiving-history 4.0",
     "methods": "get:orders_storage_receiving_history_get",
     "name": "mod-orders-storage",
     "path": "/orders-storage/receiving-history"
@@ -7358,7 +7358,7 @@
   {
     "apiDescription": "ramls/check-in.raml",
     "apiType": "raml",
-    "interface": "receiving 1.2",
+    "interface": "receiving 2.0",
     "methods": "post:orders_check_in_post",
     "name": "mod-orders",
     "path": "/orders/check-in"
@@ -7438,7 +7438,7 @@
   {
     "apiDescription": "ramls/expect.raml",
     "apiType": "raml",
-    "interface": "receiving 1.2",
+    "interface": "receiving 2.0",
     "methods": "post:orders_expect_post",
     "name": "mod-orders",
     "path": "/orders/expect"
@@ -7516,7 +7516,7 @@
   {
     "apiDescription": "ramls/pieces.raml",
     "apiType": "raml",
-    "interface": "pieces 2.1",
+    "interface": "pieces 3.0",
     "methods": "get:orders_pieces_get post:orders_pieces_post",
     "name": "mod-orders",
     "path": "/orders/pieces"
@@ -7524,7 +7524,7 @@
   {
     "apiDescription": "ramls/pieces.raml",
     "apiType": "raml",
-    "interface": "pieces 2.1",
+    "interface": "pieces 3.0",
     "methods": "delete:orders_pieces__id__delete get:orders_pieces__id__get put:orders_pieces__id__put",
     "name": "mod-orders",
     "path": "/orders/pieces/{id}"
@@ -7548,7 +7548,7 @@
   {
     "apiDescription": "ramls/receive.raml",
     "apiType": "raml",
-    "interface": "receiving 1.2",
+    "interface": "receiving 2.0",
     "methods": "post:orders_receive_post",
     "name": "mod-orders",
     "path": "/orders/receive"
@@ -7556,7 +7556,7 @@
   {
     "apiDescription": "ramls/receiving-history.raml",
     "apiType": "raml",
-    "interface": "receiving 1.2",
+    "interface": "receiving 2.0",
     "methods": "get:orders_receiving_history_get",
     "name": "mod-orders",
     "path": "/orders/receiving-history"
@@ -9539,7 +9539,7 @@
     "apiDescription": "src/main/resources/swagger.api/ecs-tlr.yaml",
     "apiType": "oas",
     "interface": "ecs-tlr 1.0",
-    "methods": "get:operation/getEcsTlrById",
+    "methods": "delete:operation/deleteEcsTlrById get:operation/getEcsTlrById put:operation/putEcsTlrById",
     "name": "mod-tlr",
     "path": "/tlr/ecs-tlr/{requestId}"
   },
