@@ -1661,6 +1661,14 @@
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
     "interface": "bulk-operations 1.2",
+    "methods": "post:operation/triggerBulkEditByQuery",
+    "name": "mod-bulk-operations",
+    "path": "/bulk-operations/query"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
+    "apiType": "oas",
+    "interface": "bulk-operations 1.2",
     "methods": "post:operation/uploadCsvFile",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/upload"
