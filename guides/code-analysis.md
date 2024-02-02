@@ -75,9 +75,11 @@ because variables and methods might be added in future that should receive warni
 
 When Sonar reports an issue click on the rule to show the rule ID like squid:S1075.
 
-Always add a comment with the human readable rule description as the rule ID is not self-explanatory.
+Always add:
 
-In addition a justification for the suppression might be useful when mentioned in the comment.
+1. A comment with the human readable rule description as the rule ID is not self-explanatory.
+
+1. A justification for the suppression.
 
 Don't use `// NOSONAR` and don't use `@SuppressWarnings("all")`, they suppress all current and future rules.
 Sonar continuously adds new rules, including security rules, that should trigger warnings.
