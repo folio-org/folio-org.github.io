@@ -4544,6 +4544,7 @@
   {
     "apiDescription": "ramls/exchange.raml",
     "apiType": "raml",
+    "interface": "finance.exchange-rate 1.0",
     "methods": "get:finance_calculate_exchange_get",
     "name": "mod-finance",
     "path": "/finance/calculate-exchange"
