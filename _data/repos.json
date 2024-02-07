@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-01-16T00:46:54.685189+00:00"
+    "generatedDateTime": "2024-02-06T04:28:59.530509+00:00"
   },
   "repos": [
     {
@@ -929,7 +929,7 @@
       "org": "folio-org",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-mod",
+      "repoType": "backend-mgr",
       "snippetIntro": "<p><code>mgr-applications</code> provides following functionality:</p>",
       "workflows": [
         "api-doc.yml",
@@ -951,7 +951,7 @@
       "org": "folio-org",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-mod",
+      "repoType": "backend-mgr",
       "snippetIntro": "<p><code>mgr-tenant-entitlements</code> provides following functionality:</p>"
     },
     {
@@ -964,7 +964,7 @@
       "org": "folio-org",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-mod",
+      "repoType": "backend-mgr",
       "snippetIntro": "<p>For now, <code>mgr-tenants</code> proxies requests to OKAPI's tenant API When any operation will happen on tenant, it will take place on realm in keycloak, also it will send a request to keycloak to retrieve a token and persist in cache for 60s for doing all the stuff related to realm</p>",
       "workflows": [
         "api-doc.yml",
@@ -1938,9 +1938,9 @@
       "defaultBranch": "master",
       "description": "Invoice business logic",
       "docDirName": null,
-      "hasDbSchema": null,
+      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
       "hintRmb": true,
-      "isRmb": null,
+      "isRmb": true,
       "name": "mod-invoice",
       "org": "folio-org",
       "ramlDirName": "ramls",
@@ -2929,7 +2929,7 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>FOLIO compatible title-level requests functionality.</p>",
+      "snippetIntro": "<p>FOLIO compatible title level requests functionality.</p>",
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
@@ -4337,7 +4337,8 @@
       "snippetIntro": "<p>The Lists UI Module, or <code>ui-lists</code>, is a Stripes UI Module used to create and manage Lists which are queries across multiple modules (for example: find all items marked as missing or declared lost, or find all open loans assigned to inactive users).</p>",
       "workflows": [
         "build-npm-release.yml",
-        "build-npm.yml"
+        "build-npm.yml",
+        "test.yml"
       ],
       "workflowsFolio": [
         "build-npm-release.yml",
@@ -5009,7 +5010,7 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-requests-mediated and start your development.</p>",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for making requests on items.</p>",
       "workflows": [
         "build-npm-release.yml",
         "build-npm.yml"

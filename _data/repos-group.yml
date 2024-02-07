@@ -14,6 +14,9 @@ stripes:
 platform:
   title: Stripes platform repos
   stem: platform-
+backend-mgr:
+  title: Backend mgr repos
+  stem: mgr-
 backend-mod:
   title: Backend mod repos
   stem: mod-
