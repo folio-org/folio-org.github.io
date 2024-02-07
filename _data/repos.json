@@ -929,7 +929,7 @@
       "org": "folio-org",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-mod",
+      "repoType": "backend-mgr",
       "snippetIntro": "<p><code>mgr-applications</code> provides following functionality:</p>",
       "workflows": [
         "api-doc.yml",
@@ -951,7 +951,7 @@
       "org": "folio-org",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-mod",
+      "repoType": "backend-mgr",
       "snippetIntro": "<p><code>mgr-tenant-entitlements</code> provides following functionality:</p>"
     },
     {
@@ -964,7 +964,7 @@
       "org": "folio-org",
       "ramlDirName": null,
       "repoLanguageHint": "java",
-      "repoType": "backend-mod",
+      "repoType": "backend-mgr",
       "snippetIntro": "<p>For now, <code>mgr-tenants</code> proxies requests to OKAPI's tenant API When any operation will happen on tenant, it will take place on realm in keycloak, also it will send a request to keycloak to retrieve a token and persist in cache for 60s for doing all the stuff related to realm</p>",
       "workflows": [
         "api-doc.yml",
