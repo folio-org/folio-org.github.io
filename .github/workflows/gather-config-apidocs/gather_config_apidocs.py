@@ -198,7 +198,7 @@ def report_summary(json_apidocs, json_old_config):
 def list_api_modules(json_repos):
     """Produce a list of API-related modules."""
     list_modules = set()
-    repo_types = ["backend-mod", "backend-edge", "backend-infrastructure", "raml-shared"]
+    repo_types = ["backend-mod", "backend-mgr", "backend-edge", "backend-infrastructure", "raml-shared"]
     for mod in sorted(json_repos["repos"], key=itemgetter('name')):
         if mod["repoType"] in repo_types:
             list_modules.add(mod["name"])
