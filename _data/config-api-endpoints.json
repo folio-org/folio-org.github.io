@@ -1204,7 +1204,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "authority-storage 2.0",
+    "interface": "authority-storage 2.1",
     "methods": "get:operation/retrieveAuthorities post:operation/createAuthority",
     "name": "mod-entities-links",
     "path": "/authority-storage/authorities"
@@ -1212,7 +1212,15 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "authority-storage 2.0",
+    "interface": "authority-storage 2.1",
+    "methods": "post:operation/createAuthorityBulk",
+    "name": "mod-entities-links",
+    "path": "/authority-storage/authorities/bulk"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiType": "oas",
+    "interface": "authority-storage 2.1",
     "methods": "delete:operation/deleteAuthority get:operation/getAuthority put:operation/updateAuthority",
     "name": "mod-entities-links",
     "path": "/authority-storage/authorities/{id}"
