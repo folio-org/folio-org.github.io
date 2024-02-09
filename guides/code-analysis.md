@@ -49,17 +49,20 @@ The code review should include whether the suppression is correct.
 In Java code use `@SuppressWarnings` at the variable or method level.  Avoid it at the class level
 because variables and methods might be added in future that should receive warnings.
 
-[Variable level example](https://github.com/folio-org/raml-module-builder/blob/v35.0.0/domain-models-maven-plugin/src/main/java/org/folio/rest/tools/ClientGenerator.java#L59-L60):
+[Variable level example](https://github.com/folio-org/raml-module-builder/blob/658f0e2e7eaf0b78b3fc51a144e71193ae00e63c/domain-models-maven-plugin/src/main/java/org/folio/rest/tools/ClientGenerator.java#L59-L61):
 
 ```
-  @SuppressWarnings("squid:S1075")  // suppress "URIs should not be hardcoded"
+  @SuppressWarnings("squid:S1075")  // suppress "URIs should not be hardcoded" because a parameterized path
+                                    // is not needed for testing
   public static final String  PATH_TO_GENERATE_TO    = "/target/generated-sources/raml-jaxrs/";
 ```
 
-[Method level example](https://github.com/folio-org/raml-module-builder/blob/v35.0.0/cql2pgjson/src/main/java/org/folio/cql2pgjson/util/Cql2SqlUtil.java#L36-L37):
+[Method level example](https://github.com/folio-org/raml-module-builder/blob/658f0e2e7eaf0b78b3fc51a144e71193ae00e63c/cql2pgjson/src/main/java/org/folio/cql2pgjson/util/Cql2SqlUtil.java#L36-L39):
 
 ```
-  @SuppressWarnings("squid:S3776")  // suppress "Cognitive Complexity of methods should not be too high"
+  @SuppressWarnings("squid:S3776")  // Suppress "Cognitive Complexity of methods should not be too high"
+  // because the cognitive complexity metric threshold is a rule of thumb, here it's a false positive:
+  // Splitting this method decreases readability.
   public static String cql2like(String s) {
 ```
 
@@ -75,9 +78,11 @@ because variables and methods might be added in future that should receive warni
 
 When Sonar reports an issue click on the rule to show the rule ID like squid:S1075.
 
-Always add a comment with the human readable rule description as the rule ID is not self-explanatory.
+Always add:
 
-In addition a justification for the suppression might be useful when mentioned in the comment.
+1. A comment with the human readable rule description as the rule ID is not self-explanatory.
+
+1. A justification for the suppression.
 
 Don't use `// NOSONAR` and don't use `@SuppressWarnings("all")`, they suppress all current and future rules.
 Sonar continuously adds new rules, including security rules, that should trigger warnings.
