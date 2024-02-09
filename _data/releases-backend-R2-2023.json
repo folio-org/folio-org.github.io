@@ -576,12 +576,12 @@
     {
       "name": "mod-service-interaction",
       "nameRepo": "mod-service-interaction",
-      "releaseDate": "2023-11-23T11:30:22+00:00",
-      "releaseName": "Version 3.0.2",
-      "releaseSha": "cc6e37cba06fdb14e59f2fdefe81c39ecef941a2",
-      "releaseTag": "v3.0.2",
+      "releaseDate": "2024-02-07T10:10:26+00:00",
+      "releaseName": "Version 3.0.3",
+      "releaseSha": "ddf3a626e07d616b5dcc541ef7050cc07ba2d23f",
+      "releaseTag": "v3.0.3",
       "releaseTarget": "release_3.0.x",
-      "version": "3.0.2"
+      "version": "3.0.3"
     },
     {
       "name": "mod-settings",
