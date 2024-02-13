@@ -9980,6 +9980,14 @@
   {
     "apiDescription": "ramls/users.raml",
     "apiType": "raml",
+    "interface": "_timer 1.0",
+    "methods": "post:users_profile_picture_cleanup_post",
+    "name": "mod-users",
+    "path": "/users/profile-picture/cleanup"
+  },
+  {
+    "apiDescription": "ramls/users.raml",
+    "apiType": "raml",
     "interface": "users 16.0",
     "methods": "delete:users_profile_picture__profileid__delete get:users_profile_picture__profileid__get put:users_profile_picture__profileid__put",
     "name": "mod-users",
