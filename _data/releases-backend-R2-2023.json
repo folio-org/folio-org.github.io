@@ -146,12 +146,12 @@
     {
       "name": "mod-di-converter-storage",
       "nameRepo": "mod-di-converter-storage",
-      "releaseDate": "2023-12-20T16:13:33+00:00",
-      "releaseName": "2.1.5",
-      "releaseSha": "8474bbe4459c3af8ac4719ae0840f82399c7ac46",
-      "releaseTag": "v2.1.5",
+      "releaseDate": "2024-02-09T11:28:31+00:00",
+      "releaseName": "2.1.6",
+      "releaseSha": "1ad193608ba3f03af9e905e7a27d4da3a22fca1d",
+      "releaseTag": "v2.1.6",
       "releaseTarget": "master",
-      "version": "2.1.5"
+      "version": "2.1.6"
     },
     {
       "name": "mod-ebsconet",
@@ -286,12 +286,12 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2024-01-18T09:18:42+00:00",
-      "releaseName": "20.1.7",
-      "releaseSha": "7a01f958b84ddb505448cac2cb953d29443b0a14",
-      "releaseTag": "v20.1.7",
+      "releaseDate": "2024-02-09T13:10:33+00:00",
+      "releaseName": "20.1.8",
+      "releaseSha": "fa338d64eedec4229ffefed5458726ed1cc3bba5",
+      "releaseTag": "v20.1.8",
       "releaseTarget": "master",
-      "version": "20.1.7"
+      "version": "20.1.8"
     },
     {
       "name": "mod-inventory-storage",
@@ -596,22 +596,22 @@
     {
       "name": "mod-source-record-manager",
       "nameRepo": "mod-source-record-manager",
-      "releaseDate": "2024-01-19T15:50:17+00:00",
-      "releaseName": "3.7.8",
-      "releaseSha": "ccb69150eb9823595f7f79b6bf7e0ffc0174556f",
-      "releaseTag": "v3.7.8",
+      "releaseDate": "2024-02-09T12:33:09+00:00",
+      "releaseName": "3.7.9",
+      "releaseSha": "61a1949f8651f517961575eb45b4fb61ae49d3ab",
+      "releaseTag": "v3.7.9",
       "releaseTarget": "master",
-      "version": "3.7.8"
+      "version": "3.7.9"
     },
     {
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
-      "releaseDate": "2023-12-05T08:48:02+00:00",
-      "releaseName": "5.7.5",
-      "releaseSha": "b9b182736fd71c7e12d09d4dc844c1e485e5666f",
-      "releaseTag": "v5.7.5",
+      "releaseDate": "2024-02-09T13:44:38+00:00",
+      "releaseName": "5.7.6",
+      "releaseSha": "fd313ab3dc0ad1e23ef33a3d63ea95fe5f927a92",
+      "releaseTag": "v5.7.6",
       "releaseTarget": "master",
-      "version": "5.7.5"
+      "version": "5.7.6"
     },
     {
       "name": "mod-tags",
