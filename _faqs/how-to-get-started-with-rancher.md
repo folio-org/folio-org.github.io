@@ -24,9 +24,11 @@ Useful links:
 Before commencing become familiar with this FAQ.
 Some teams also provide [further general instructions](/guides/run-local-folio/#scratch-environments-rancher-docker).
 
-For general assistance use the [Slack channel](/guidelines/which-forum/#slack) `#scratch-environments` and help via your team-specific channel.
+For general assistance use the [Slack channel](/guidelines/which-forum/#slack) `#rancher-support` and help via your team-specific channel.
 
-To raise Jira tickets related to scratch environments, refer to the [FAQ](/faqs/how-to-raise-devops-ticket/#rancher-scratch-environments).
+To raise Jira tickets related to Rancher scratch environments, refer to the [FAQ](/faqs/how-to-raise-devops-ticket/#rancher-scratch-environments).
+
+See the Wiki [How to work with Rancher environments](https://folio-org.atlassian.net/wiki/spaces/FOLIJET/pages/1396559/How+to+work+with+Rancher+environments).
 
 The [Kitfox](https://wiki.folio.org/display/FOLIJET/Kitfox+Team+DevOps+-+Dev+Support) DevOps team wiki page has further resources regarding Rancher scratch environments.
 
