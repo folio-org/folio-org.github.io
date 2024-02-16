@@ -304,6 +304,23 @@
   {
     "config": {
       "oas": [
+        "src/main/resources/swagger.api/mgr-tenant-entitlements.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5"
+    },
+    "name": "mgr-tenant-entitlements",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
         "src/main/resources/swagger.api/mgr-tenants.yaml"
       ],
       "raml": [],
@@ -1663,6 +1680,23 @@
       "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-reservoir",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/swagger.api/mod-roles-keycloak.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5"
+    },
+    "name": "mod-roles-keycloak",
     "org": "folio-org"
   },
   {
