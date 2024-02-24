@@ -1660,6 +1660,22 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
+    "interface": "browse-config 1.0",
+    "methods": "get:operation/getBrowseConfigs",
+    "name": "mod-search",
+    "path": "/browse/config/{browseType}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "browse-config 1.0",
+    "methods": "put:operation/putBrowseConfig",
+    "name": "mod-search",
+    "path": "/browse/config/{browseType}/{browseConfigId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
     "interface": "browse 1.2",
     "methods": "get:operation/browseInstancesByContributor",
     "name": "mod-search",
@@ -5772,7 +5788,7 @@
   {
     "apiDescription": "ramls/inventory-hierarchy.raml",
     "apiType": "raml",
-    "interface": "inventory-hierarchy 0.4",
+    "interface": "inventory-hierarchy 0.5",
     "methods": "post:inventory_hierarchy_items_and_holdings_post",
     "name": "mod-inventory-storage",
     "path": "/inventory-hierarchy/items-and-holdings"
@@ -5780,7 +5796,7 @@
   {
     "apiDescription": "ramls/inventory-hierarchy.raml",
     "apiType": "raml",
-    "interface": "inventory-hierarchy 0.4",
+    "interface": "inventory-hierarchy 0.5",
     "methods": "get:inventory_hierarchy_updated_instance_ids_get",
     "name": "mod-inventory-storage",
     "path": "/inventory-hierarchy/updated-instance-ids"
