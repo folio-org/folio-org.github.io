@@ -48,6 +48,7 @@ erm:
     - mod-erm-usage-harvester
     - mod-licenses
     - mod-finc-config
+    - edge-erm
 course-reserves:
   title: Course reserves
   description: Education courses and the items that have been reserved to them.
