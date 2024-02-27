@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-02-06T04:28:59.530509+00:00"
+    "generatedDateTime": "2024-02-26T22:27:30.483810+00:00"
   },
   "repos": [
     {
@@ -236,6 +236,18 @@
         "api-lint.yml",
         "api-schema-lint.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "name": "edge-erm",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>Provides an ability to retrieve license term information</p>"
     },
     {
       "apiTypes": "OAS",
@@ -943,6 +955,7 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -952,7 +965,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mgr",
-      "snippetIntro": "<p><code>mgr-tenant-entitlements</code> provides following functionality:</p>"
+      "snippetIntro": "<p><code>mgr-tenant-entitlements</code> provides following functionality:</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "OAS",
@@ -2626,6 +2649,7 @@
       "snippetIntro": "<p>This is a Maven archetype used to generate an RMB-based server-side module. Install this locally if you wish to build such a module.</p>"
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -2636,7 +2660,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>For now, <code>mod-roles-keycloak</code> proxies requests to Keycloak. Service helps manage roles and policies: creating, updating, deleting and searching. The service can be used to associate roles with the user.<code>mod-roles-keycloak</code> stores metadata about who and when created a record.</p>"
+      "snippetIntro": "<p>For now, <code>mod-roles-keycloak</code> proxies requests to Keycloak. Service helps manage roles and policies: creating, updating, deleting and searching. The service can be used to associate roles with the user.<code>mod-roles-keycloak</code> stores metadata about who and when created a record.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "defaultBranch": "master",
