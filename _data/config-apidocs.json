@@ -90,6 +90,23 @@
   {
     "config": {
       "oas": [
+        "src/main/resources/swagger.api/edge-erm.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5"
+    },
+    "name": "edge-erm",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
         "src/main/resources/swagger.api/edge-fqm.yaml"
       ],
       "raml": [],
