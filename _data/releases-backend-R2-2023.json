@@ -36,12 +36,12 @@
     {
       "name": "mod-bulk-operations",
       "nameRepo": "mod-bulk-operations",
-      "releaseDate": "2024-01-15T13:01:46+00:00",
-      "releaseName": "v1.1.9",
-      "releaseSha": "0d68436abf1af5c2e0bb4e4eede357cfac9fd55c",
-      "releaseTag": "v1.1.9",
+      "releaseDate": "2024-02-21T13:12:48+00:00",
+      "releaseName": "v1.1.10",
+      "releaseSha": "0114a85fcb656d6fbff8a968a9ecf71295939915",
+      "releaseTag": "v1.1.10",
       "releaseTarget": "master",
-      "version": "1.1.9"
+      "version": "1.1.10"
     },
     {
       "name": "mod-calendar",
@@ -56,12 +56,12 @@
     {
       "name": "mod-circulation",
       "nameRepo": "mod-circulation",
-      "releaseDate": "2023-12-06T14:15:00+00:00",
-      "releaseName": "24.0.11 2023-12-06",
-      "releaseSha": "49863c41f8e1311aabb69272be2504f472080aff",
-      "releaseTag": "v24.0.11",
+      "releaseDate": "2024-02-22T16:51:55+00:00",
+      "releaseName": "v24.1.1",
+      "releaseSha": "b207b3f9ba2dd2e2b707e63830fac54c340023f4",
+      "releaseTag": "v24.1.1",
       "releaseTarget": "master",
-      "version": "24.0.11"
+      "version": "24.1.1"
     },
     {
       "name": "mod-circulation-storage",
@@ -116,12 +116,12 @@
     {
       "name": "mod-data-export-spring",
       "nameRepo": "mod-data-export-spring",
-      "releaseDate": "2023-11-08T12:29:17+00:00",
-      "releaseName": "v3.0.2",
-      "releaseSha": "3bc1ef742f440873ea9b33e52320b671301627ce",
-      "releaseTag": "v3.0.2",
+      "releaseDate": "2024-02-28T06:50:07+00:00",
+      "releaseName": "v3.0.3",
+      "releaseSha": "5607020a44c340f3340d2f9b0509dc2dc0828471",
+      "releaseTag": "v3.0.3",
       "releaseTarget": "master",
-      "version": "3.0.2"
+      "version": "3.0.3"
     },
     {
       "name": "mod-data-export-worker",
@@ -276,12 +276,12 @@
     {
       "name": "mod-graphql",
       "nameRepo": "mod-graphql",
-      "releaseDate": "2023-10-11T23:50:06+00:00",
-      "releaseName": "v1.12.0",
-      "releaseSha": "92918b6b782324ec43119aa409c2261462b6fd9e",
-      "releaseTag": "v1.12.0",
+      "releaseDate": "2024-02-27T18:53:35+00:00",
+      "releaseName": "v1.12.1",
+      "releaseSha": "ad52c04b291b43f91ad5bbe9d010631c2d9d0d3d",
+      "releaseTag": "v1.12.1",
       "releaseTarget": "master",
-      "version": "1.12.0"
+      "version": "1.12.1"
     },
     {
       "name": "mod-inventory",
