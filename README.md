@@ -80,6 +80,8 @@ The master branch is automatically deployed as [dev.folio.org](https://dev.folio
 
 Other branches are re-built upon push of changes. Follow the GitHub link from the branch's continuous-integration details to view the generated branch site.
 
+**NOTE:** Since May 2023 the AWS Codebuild system has denied building of new branches via the GitHub UI. A new branch can still be created, and used locally, and used for the pull-request. But the ability to view an AWS build of the branch via GitHub is now gone.
+
 ## Additional information
 
 Refer to FAQs regarding [Developer documentation](https://dev.folio.org/faqs/#developer-documentation) and [Raising Jira tickets](https://dev.folio.org/faqs/how-to-contribute-devdoc/#raising-jira-tickets).
