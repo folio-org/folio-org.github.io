@@ -32,7 +32,7 @@ The set of FAQs are located in the `_faqs` directory, as [explained](/faqs/how-t
 
 ## Creating new docs
 
-Follow the FAQs for new [/faqs/#developer-documentation](/faqs/#developer-documentation).
+Follow the FAQs section for new [Developer documentation](/faqs/#developer-documentation).
 
 ## Raising Jira tickets
 
