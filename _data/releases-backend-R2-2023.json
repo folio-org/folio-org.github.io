@@ -236,12 +236,12 @@
     {
       "name": "mod-finance",
       "nameRepo": "mod-finance",
-      "releaseDate": "2023-10-11T13:14:11+00:00",
-      "releaseName": "v4.8.0",
-      "releaseSha": "ae2f1e92b1673337d5da3e7e1e5754b64c04b6b0",
-      "releaseTag": "v4.8.0",
+      "releaseDate": "2024-02-29T13:46:47+00:00",
+      "releaseName": "v4.8.1",
+      "releaseSha": "0f004ee5bcb8878d5cdcba1e78cf4bcce36eba0f",
+      "releaseTag": "v4.8.1",
       "releaseTarget": "master",
-      "version": "4.8.0"
+      "version": "4.8.1"
     },
     {
       "name": "mod-finance-storage",
@@ -286,12 +286,12 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2024-02-09T13:10:33+00:00",
-      "releaseName": "20.1.8",
-      "releaseSha": "fa338d64eedec4229ffefed5458726ed1cc3bba5",
-      "releaseTag": "v20.1.8",
+      "releaseDate": "2024-03-01T12:05:45+00:00",
+      "releaseName": "v20.1.9",
+      "releaseSha": "37168e0e29b799057f28d0bdd71f82919636e57c",
+      "releaseTag": "v20.1.9",
       "releaseTarget": "master",
-      "version": "20.1.8"
+      "version": "20.1.9"
     },
     {
       "name": "mod-inventory-storage",
