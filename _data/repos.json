@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-02-26T22:27:30.483810+00:00"
+    "generatedDateTime": "2024-03-05T00:57:19.933074+00:00"
   },
   "repos": [
     {
@@ -238,6 +238,7 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -247,7 +248,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": "<p>Provides an ability to retrieve license term information</p>"
+      "snippetIntro": "<p>Provides an ability to retrieve license term information</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "OAS",
@@ -2552,6 +2563,19 @@
         "api-lint.yml",
         "api-schema-lint.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-reading-room",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>APIs for managing reading room and its related access.</p>"
     },
     {
       "apiTypes": "OAS",
