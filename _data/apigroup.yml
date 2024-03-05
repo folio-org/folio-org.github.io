@@ -139,6 +139,7 @@ other:
     - edge-fqm
     - mod-lists
     - mod-ldp
+    - mod-reading-room
     - mod-scheduler
     - folio-custom-fields
     - folio-query-tool-metadata
