@@ -218,7 +218,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5"
     },
     "name": "edge-rtac",
     "org": "folio-org"
@@ -367,7 +367,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-audit",
     "org": "folio-org"
@@ -558,7 +558,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-consortia",
     "org": "folio-org"
