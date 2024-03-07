@@ -62,6 +62,7 @@ finance:
   modules:
     - mod-finance
     - mod-finance-storage
+    - mod-gobi
     - mod-invoice
     - mod-invoice-storage
     - mod-orders
@@ -69,7 +70,7 @@ finance:
     - edge-orders
     - mod-organizations
     - mod-organizations-storage
-    - mod-gobi
+    - mod-serials-management
     - acq-models
 notifications:
   title: Notifications
