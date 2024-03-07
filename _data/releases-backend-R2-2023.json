@@ -146,12 +146,12 @@
     {
       "name": "mod-di-converter-storage",
       "nameRepo": "mod-di-converter-storage",
-      "releaseDate": "2024-02-09T11:28:31+00:00",
-      "releaseName": "2.1.6",
-      "releaseSha": "1ad193608ba3f03af9e905e7a27d4da3a22fca1d",
-      "releaseTag": "v2.1.6",
+      "releaseDate": "2024-03-01T17:17:43+00:00",
+      "releaseName": "v2.1.8",
+      "releaseSha": "b80c335df10d3fd59cc2ff693f34fa238a7de166",
+      "releaseTag": "v2.1.8",
       "releaseTarget": "master",
-      "version": "2.1.6"
+      "version": "2.1.8"
     },
     {
       "name": "mod-ebsconet",
@@ -246,12 +246,12 @@
     {
       "name": "mod-finance-storage",
       "nameRepo": "mod-finance-storage",
-      "releaseDate": "2023-10-10T15:31:22+00:00",
-      "releaseName": "v8.5.0",
-      "releaseSha": "cdaca27fa6be1288a328e2b64a34826c46191d82",
-      "releaseTag": "v8.5.0",
+      "releaseDate": "2024-03-04T13:18:50+00:00",
+      "releaseName": "v8.5.1",
+      "releaseSha": "e1ba07a266fb8563db78e394891db19a0e0adc64",
+      "releaseTag": "v8.5.1",
       "releaseTarget": "master",
-      "version": "8.5.0"
+      "version": "8.5.1"
     },
     {
       "name": "mod-fqm-manager",
