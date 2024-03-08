@@ -465,7 +465,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-circulation",
     "org": "folio-org"
@@ -516,7 +516,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-circulation-storage",
     "org": "folio-org"
