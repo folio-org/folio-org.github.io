@@ -1790,6 +1790,23 @@
   {
     "config": {
       "oas": [
+        "openapi/serials-management.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5"
+    },
+    "name": "mod-serials-management",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
         "src/main/resources/openapi/settings.yaml"
       ],
       "raml": [],
