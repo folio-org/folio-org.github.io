@@ -9351,6 +9351,94 @@
     "path": "/search/{recordType}/facets"
   },
   {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "get:operation/getPredictedPieceSets",
+    "name": "mod-serials-management",
+    "path": "/serials-management/predictedPieces"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "post:operation/createPieces",
+    "name": "mod-serials-management",
+    "path": "/serials-management/predictedPieces/create"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "post:operation/previewPieces",
+    "name": "mod-serials-management",
+    "path": "/serials-management/predictedPieces/generate"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "get:operation/getPredictedPieceSet",
+    "name": "mod-serials-management",
+    "path": "/serials-management/predictedPieces/{uuid}"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "get:operation/getRefData post:operation/createRefData",
+    "name": "mod-serials-management",
+    "path": "/serials-management/refdata"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "get:operation/getReferenceDataPropertybyDomainandField",
+    "name": "mod-serials-management",
+    "path": "/serials-management/refdata/{domain}/{property}"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "delete:operation/deleteRefDataCategory get:operation/getRefDataCategory put:operation/putRefDataCategory",
+    "name": "mod-serials-management",
+    "path": "/serials-management/refdata/{uuid}"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "get:operation/getRulesets post:operation/postRuleset",
+    "name": "mod-serials-management",
+    "path": "/serials-management/rulesets"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "delete:operation/deleteRuleset get:operation/getRuleset",
+    "name": "mod-serials-management",
+    "path": "/serials-management/rulesets/{uuid}"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "get:operation/getSerials post:operation/postSerial",
+    "name": "mod-serials-management",
+    "path": "/serials-management/serials"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "delete:operation/deleteSerial get:operation/getSerial put:operation/putSerial",
+    "name": "mod-serials-management",
+    "path": "/serials-management/serials/{uuid}"
+  },
+  {
     "apiDescription": "ramls/service-point.raml",
     "apiType": "raml",
     "interface": "service-points 3.3",
