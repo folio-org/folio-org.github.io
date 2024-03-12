@@ -98,7 +98,7 @@ Since [commencing](/about/) in mid-2016 the FOLIO project continues to grow.
 Some contact points for the communities:
 
 * [Collaboration tools](#collaboration-tools).
-* [Team and module responsibility matrix](https://wiki.folio.org/pages/viewpage.action?pageId=14463134).
+* [Team and module responsibility matrix](https://folio-org.atlassian.net/wiki/x/plAV).
 * [List of GitHub Teams](https://github.com/orgs/folio-org/teams).
 * [Development teams wiki space](https://wiki.folio.org/display/FOLIJET/).
 * [Testing Community wiki space](https://wiki.folio.org/display/FTC/Folio+Testing+Community+Home).

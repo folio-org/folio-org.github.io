@@ -181,7 +181,7 @@ The `CHANGELOG.md` lists the main changes for each release. Follow how the other
 This is a typical directory layout, excluding the general boilerplate files and the usual JavaScript and CSS files:
 
 ```
-├── Jenkinsfile
+├── .github/workflows/
 ├── data/
 │   ├── various
 ├── doc/
@@ -204,11 +204,6 @@ This is a typical directory layout, excluding the general boilerplate files and 
     └── ui-users/
         ├── en.json
 ```
-
-### Jenkinsfile {#front-end-jenkinsfile}
-
-The `Jenkinsfile` declares specific build steps for the continuous integration [process](/guides/automation/#jenkins).
-See [explanation](/guides/jenkinsfile).
 
 ### package.json {#front-end-packagejson}
 

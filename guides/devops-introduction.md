@@ -110,7 +110,7 @@ The "Add" button is way to the right-hand side.
 
 Developers can create their own Jira [accounts](/community/#collaboration-tools).
 
-Occasionally a project manager (see [team matrix](https://wiki.folio.org/pages/viewpage.action?pageId=14463134)) will request special access to maintain the "Fix Version/s" settings.
+Occasionally a project manager (see [team matrix](https://folio-org.atlassian.net/wiki/x/plAV)) will request special access to maintain the "Fix Version/s" settings.
 
 Visit the Jira admin "User management" and filter to find the relevant user.
 Add the Group "external-core-collaborators".
