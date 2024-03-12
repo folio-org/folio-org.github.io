@@ -16,7 +16,7 @@ The library primarily supports two types
 of development environments at this time -- Java-based Maven projects and Nodejs-based projects.
 
 The files and main parameters are explained below for
-[back-end](#back-end-modules) and [front-end](#front-end-modules) modules.
+[back-end](#back-end-modules).
 
 Each parameter can be omitted to accept the default.
 
@@ -81,52 +81,7 @@ multi-call binary that contains `wget` with reduced number of options.
 
 ## Front-end modules
 
-A typical Stripes or UI module Jenkinsfile configuration might look like the following.
-See an example at
-[ui-orders/Jenkinsfile](https://github.com/folio-org/ui-orders/blob/master/Jenkinsfile).
-
-(**Note**: Front-end modules are gradually being migrated to use GitHub Actions Workflows. So for those, Jenkinsfile is not relevant.)
-
-```
-buildNPM {
-  buildNode = 'jenkins-agent-java11'
-  publishModDescriptor = true
-  runLint = true
-  runTest = true
-  runTestOptions = '--karma.singleRun --karma.browsers=ChromeDocker'
-  runRegression = 'partial'
-}
-```
-
-* `buildNode` -- The Jenkins node to run the CI build.
-The default is `'jenkins-agent-java11'` if not specified (this utlises Node.js v14).
-The other available option is `'jenkins-agent-java17'` (this utlises Node.js LTS v16).
-Of course the CI does not use Java for front-end modules, but that is the naming convention for the build nodes.
-* `publishModDescriptor` -- If a FOLIO Module Descriptor is defined in its [package.json](/guides/commence-a-module/#front-end-packagejson)
-then the ModuleDescriptor.json will be generated and published to the FOLIO Module Descriptor registry.
-(Default: false)
-
-* `runLint` -- Execute 'yarn lint' as part of the build.  Ensure a 'lint' run script is
-defined in package.json before enabling this option.
-(Default: false)
-
-* `runTest` -- Execute 'yarn test' as part of the build.  Ensure a 'test' run script is
-defined in package.json.  'test' is typically used for unit tests.
-(Default: false)
-
-* `runTestOptions` -- Provide 'yarn test' with additional options.
-The example shows options for karma-based testing.
-
-* `sonarScanDirs` -- List of directories (comma-separated string) that the Sonarqube scanner should scan.
-(Default: './src')
-
-* `runRegression` -- Execute the UI regression test suite from 'ui-testing' against a real
-FOLIO backend. Option 'full' will execute the full test suite. Option 'partial' will execute only tests
-specific to the UI module. Option 'none' will disable regression testing.
-(Default: 'none')
-
-* `stripesPlatform` -- Specify which Stripes platform.
-(Default: 'none', so build in "app" context.)
+**Note**: Front-end modules are being migrated to use GitHub Actions Workflows. So for those, Jenkinsfile is not relevant.
 
 ## Further information
 

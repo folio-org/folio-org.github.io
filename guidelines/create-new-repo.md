@@ -43,6 +43,7 @@ Add a concise "About" description to the GitHub repository. Consider that this w
 (If the "Edit" button is not available to you, then see the "support" advice above.)
 
 Note: The configuration of "branch protection" and its "required checks" can only be done after there has been an initial pull-request (and must be done within one week of its opening).
+Also, for [front-end](#add-specific-configuration-files) repositories, the GitHub Actions Workflows need to be operational.
 
 ## Add initial files
 
@@ -105,7 +106,8 @@ For front-end modules: package.json, .eslintrc, GitHub Workflows, etc.
 
 Get the initial basic source files and other configuration files added first.
 
-New front-end repositories will use GitHub Actions Workflows (see our [document](/guidelines/github-actions-frontend/)).
+New front-end repositories will use GitHub Actions Workflows (see our [document](/guidelines/github-actions-frontend/)
+or follow an existing similar repository).
 
 When the code and configuration is in place, then this new repository needs to be manually added to Sonarcloud.
 Seek FOLIO DevOps [assistance](/faqs/how-to-raise-devops-ticket/).
