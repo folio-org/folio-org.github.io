@@ -9378,7 +9378,7 @@
     "apiDescription": "openapi/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
-    "methods": "get:operation/getPredictedPieceSet",
+    "methods": "get:operation/getPredictedPieceSet put:operation/putPredictedPieceSet",
     "name": "mod-serials-management",
     "path": "/serials-management/predictedPieces/{uuid}"
   },
@@ -9421,6 +9421,30 @@
     "methods": "delete:operation/deleteRuleset get:operation/getRuleset",
     "name": "mod-serials-management",
     "path": "/serials-management/rulesets/{uuid}"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "post:operation/activateRuleset",
+    "name": "mod-serials-management",
+    "path": "/serials-management/rulesets/{uuid}/active"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "post:operation/depricateRuleset",
+    "name": "mod-serials-management",
+    "path": "/serials-management/rulesets/{uuid}/deprecated"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "post:operation/draftRuleset",
+    "name": "mod-serials-management",
+    "path": "/serials-management/rulesets/{uuid}/draft"
   },
   {
     "apiDescription": "openapi/serials-management.yaml",
