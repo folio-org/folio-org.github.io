@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-03-05T00:57:19.933074+00:00"
+    "generatedDateTime": "2024-03-09T06:46:03.530037+00:00"
   },
   "repos": [
     {
@@ -2811,17 +2811,27 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "FOLIO Backend module for Serials Management",
       "docDirName": null,
+      "hintOas": true,
       "name": "mod-serials-management",
       "org": "folio-org",
       "ramlDirName": null,
       "repoLanguageHint": "gradle",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>FOLIO Backend module for Serials Management</p>",
+      "snippetIntro": "<p>mod-serials-management is a FOLIO module to support serials management functionality. Specifically this includes managing serial records which support a status and description, can be linked to a purchase order line and title from mod-orders and can have a publication pattern defined.</p>",
       "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml",
         "gradle.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
       ]
     },
     {
