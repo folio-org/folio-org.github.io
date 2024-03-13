@@ -1651,6 +1651,24 @@
   {
     "config": {
       "oas": [
+        "src/main/resources/swagger.api/patron_permission.yaml",
+        "src/main/resources/swagger.api/reading_room.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5"
+    },
+    "name": "mod-reading-room",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
         "src/main/resources/swagger.api/remote-storage.yaml"
       ],
       "raml": [],
