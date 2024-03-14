@@ -1884,24 +1884,16 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
     "apiType": "oas",
-    "interface": "capability-sets 1.0",
-    "methods": "get:operation/findCapabilitySets post:operation/createCapabilitySet",
+    "interface": "capability-sets 2.0",
+    "methods": "get:operation/findCapabilitySets",
     "name": "mod-roles-keycloak",
     "path": "/capability-sets"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
     "apiType": "oas",
-    "interface": "capability-sets 1.0",
-    "methods": "post:operation/createCapabilitySets",
-    "name": "mod-roles-keycloak",
-    "path": "/capability-sets/batch"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
-    "apiType": "oas",
-    "interface": "capability-sets 1.0",
-    "methods": "delete:operation/deleteCapabilitySet get:operation/getCapabilitySetById put:operation/updateCapabilitySet",
+    "interface": "capability-sets 2.0",
+    "methods": "get:operation/getCapabilitySetById",
     "name": "mod-roles-keycloak",
     "path": "/capability-sets/{id}"
   },
@@ -9285,6 +9277,14 @@
     "methods": "delete:operation/deleteLanguageConfig put:operation/updateLanguageConfig",
     "name": "mod-search",
     "path": "/search/config/languages/{code}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "consortium-search 1.0",
+    "methods": "get:operation/getConsortiumHoldings",
+    "name": "mod-search",
+    "path": "/search/consortium/holdings"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
