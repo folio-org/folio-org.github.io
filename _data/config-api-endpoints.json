@@ -9289,6 +9289,14 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
+    "interface": "consortium-search 1.0",
+    "methods": "get:operation/getConsortiumItems",
+    "name": "mod-search",
+    "path": "/search/consortium/items"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiType": "oas",
     "interface": "search 1.2",
     "methods": "get:operation/getHoldingIds",
     "name": "mod-search",
