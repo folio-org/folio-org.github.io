@@ -14,6 +14,9 @@ stripes:
 platform:
   title: Stripes platform repos
   stem: platform-
+app:
+  title: Application descriptors
+  stem: app-
 backend-mgr:
   title: Backend mgr repos
   stem: mgr-
