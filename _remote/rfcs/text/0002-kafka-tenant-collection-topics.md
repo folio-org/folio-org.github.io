@@ -2,8 +2,6 @@
 layout: null
 ---
 
-
-- Start Date: 2022-08-12
 - Contributors:
   - [Olamide Kolawole](okolawole@ebsco.com)
   - [Julian Ladisch](julian.ladisch@gbv.de)

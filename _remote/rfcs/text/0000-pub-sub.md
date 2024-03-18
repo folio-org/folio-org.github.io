@@ -2,11 +2,13 @@
 layout: null
 ---
 
-
-- Start Date: 2019-06-20
 - Contributors:
   - [Taras Spashchenko](taras_spashchenko@epam.com)
-- RFC PR: https://github.com/folio-org/rfcs/pull/2
+- RFC PRs: 
+  - PRELIMINARY REVIEW: [2](https://github.com/folio-org/rfcs/pull/2)
+  - DRAFT REVIEW: [2](https://github.com/folio-org/rfcs/pull/2)
+  - PUBLIC REVIEW: [2](https://github.com/folio-org/rfcs/pull/2)
+  - FINAL REVIEW: [2](https://github.com/folio-org/rfcs/pull/2)
 - Outcome: ACCEPTED
 
 # PubSub support in FOLIO (module implementation)
