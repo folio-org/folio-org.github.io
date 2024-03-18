@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-03-09T06:46:03.530037+00:00"
+    "generatedDateTime": "2024-03-17T23:56:00.073826+00:00"
   },
   "repos": [
     {
@@ -18,6 +18,46 @@
       "workflowsFolio": [
         "api-schema-lint.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "app-edge-complete",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "app-edge-locate",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "app-platform-complete",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Application descriptor repository for a minimal FOLIO platform installation",
+      "docDirName": null,
+      "name": "app-platform-minimal",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
@@ -196,6 +236,7 @@
       "description": null,
       "docDirName": null,
       "hintOas": true,
+      "isSpringway": true,
       "name": "edge-dcb",
       "org": "folio-org",
       "ramlDirName": null,
@@ -496,6 +537,16 @@
       "name": "folio-api-tests",
       "org": "folio-org",
       "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": "A Maven plugin to generate application descriptor from a template",
+      "docDirName": null,
+      "name": "folio-application-generator",
+      "org": "folio-org",
+      "repoLanguageHint": "java",
       "repoType": "other",
       "snippetIntro": ""
     },
@@ -1342,16 +1393,15 @@
       ]
     },
     {
-      "apiTypes": "RAML",
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Exporting inventory records",
       "docDirName": null,
-      "hasDbSchema": "blob/master/src/main/resources/templates/db_scripts/schema.json",
-      "hintRmb": true,
-      "isRmb": true,
+      "hintOas": true,
+      "isSpringway": true,
       "name": "mod-data-export",
       "org": "folio-org",
-      "ramlDirName": "ramls",
+      "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>FOLIO data export module.</p>",
@@ -2565,6 +2615,7 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -2575,7 +2626,17 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>APIs for managing reading room and its related access.</p>"
+      "snippetIntro": "<p>APIs for managing reading room and its related access.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "OAS",
@@ -4975,6 +5036,25 @@
       "workflows": [
         "build-npm-release.yml",
         "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Stripes UI module - Reading room access",
+      "docDirName": null,
+      "name": "ui-reading-room",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-reading-room and start your development.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml",
+        "publish-jest-results.yml"
       ],
       "workflowsFolio": [
         "build-npm-release.yml",
