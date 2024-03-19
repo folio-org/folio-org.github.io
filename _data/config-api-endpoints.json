@@ -9116,7 +9116,7 @@
   {
     "apiDescription": "ramls/rtac-batch.raml",
     "apiType": "raml",
-    "interface": "rtac-batch 1.0",
+    "interface": "rtac-batch 1.1",
     "methods": "post:rtac_batch_post",
     "name": "mod-rtac",
     "path": "/rtac-batch"
