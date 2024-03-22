@@ -624,22 +624,17 @@
   },
   {
     "config": {
-      "oas": [],
-      "raml": [
-        "ramls/dataExport-file-definition.raml",
-        "ramls/dataExport-job-profile.raml",
-        "ramls/dataExport-logs.raml",
-        "ramls/dataExport-mapping-profiles.raml",
-        "ramls/dataExport-transformation-fields.raml",
-        "ramls/dataExport.raml"
+      "oas": [
+        "src/main/resources/swagger.api/data-export.yaml"
       ],
+      "raml": [],
       "upload": []
     },
     "metadata": {
       "apiTypes": [
-        "RAML"
+        "OAS"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-data-export",
     "org": "folio-org"
