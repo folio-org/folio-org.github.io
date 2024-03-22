@@ -2471,6 +2471,13 @@
     "path": "/classification-types/{classificationTypeId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/postCleanUpFiles",
+    "name": "mod-data-export",
+    "path": "/clean-up-files"
+  },
+  {
     "apiDescription": "ramls/codex/codex.raml",
     "apiType": "raml",
     "methods": "get:codex_instances_get",
@@ -2541,6 +2548,13 @@
     "methods": "delete:operation/deleteExportConfigById get:operation/getConfigById put:operation/putExportConfig",
     "name": "mod-data-export-spring",
     "path": "/configs/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/postDataExportConfiguration",
+    "name": "mod-data-export",
+    "path": "/configuration"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
@@ -3180,134 +3194,6 @@
     "methods": "post:operation/getBibRecord",
     "name": "mod-inn-reach",
     "path": "/d2ir/getbibrecord/{bibId}/{centralCode}"
-  },
-  {
-    "apiDescription": "ramls/dataExport.raml",
-    "apiType": "raml",
-    "interface": "_timer 1.0",
-    "methods": "post:data_export_clean_up_files_post",
-    "name": "mod-data-export",
-    "path": "/data-export/clean-up-files"
-  },
-  {
-    "apiDescription": "ramls/dataExport.raml",
-    "apiType": "raml",
-    "interface": "_timer 1.0",
-    "methods": "post:data_export_expire_jobs_post",
-    "name": "mod-data-export",
-    "path": "/data-export/expire-jobs"
-  },
-  {
-    "apiDescription": "ramls/dataExport.raml",
-    "apiType": "raml",
-    "interface": "data-export 5.1",
-    "methods": "post:data_export_export_post",
-    "name": "mod-data-export",
-    "path": "/data-export/export"
-  },
-  {
-    "apiDescription": "ramls/dataExport-file-definition.raml",
-    "apiType": "raml",
-    "interface": "data-export 5.1",
-    "methods": "post:data_export_file_definitions_post",
-    "name": "mod-data-export",
-    "path": "/data-export/file-definitions"
-  },
-  {
-    "apiDescription": "ramls/dataExport-file-definition.raml",
-    "apiType": "raml",
-    "interface": "data-export 5.1",
-    "methods": "get:data_export_file_definitions__filedefinitionid__get",
-    "name": "mod-data-export",
-    "path": "/data-export/file-definitions/{fileDefinitionId}"
-  },
-  {
-    "apiDescription": "ramls/dataExport-file-definition.raml",
-    "apiType": "raml",
-    "interface": "data-export 5.1",
-    "methods": "post:data_export_file_definitions__filedefinitionid__upload_post",
-    "name": "mod-data-export",
-    "path": "/data-export/file-definitions/{fileDefinitionId}/upload"
-  },
-  {
-    "apiDescription": "ramls/dataExport.raml",
-    "apiType": "raml",
-    "interface": "data-export 5.1",
-    "methods": "get:data_export_job_executions_get",
-    "name": "mod-data-export",
-    "path": "/data-export/job-executions"
-  },
-  {
-    "apiDescription": "ramls/dataExport.raml",
-    "apiType": "raml",
-    "interface": "data-export 5.1",
-    "methods": "delete:data_export_job_executions__id__delete",
-    "name": "mod-data-export",
-    "path": "/data-export/job-executions/{id}"
-  },
-  {
-    "apiDescription": "ramls/dataExport.raml",
-    "apiType": "raml",
-    "interface": "data-export 5.1",
-    "methods": "get:data_export_job_executions__jobexecutionid__download__exportfileid__get",
-    "name": "mod-data-export",
-    "path": "/data-export/job-executions/{jobExecutionId}/download/{exportFileId}"
-  },
-  {
-    "apiDescription": "ramls/dataExport-job-profile.raml",
-    "apiType": "raml",
-    "interface": "data-export 5.1",
-    "methods": "get:data_export_job_profiles_get post:data_export_job_profiles_post",
-    "name": "mod-data-export",
-    "path": "/data-export/job-profiles"
-  },
-  {
-    "apiDescription": "ramls/dataExport-job-profile.raml",
-    "apiType": "raml",
-    "interface": "data-export 5.1",
-    "methods": "delete:data_export_job_profiles__id__delete get:data_export_job_profiles__id__get put:data_export_job_profiles__id__put",
-    "name": "mod-data-export",
-    "path": "/data-export/job-profiles/{id}"
-  },
-  {
-    "apiDescription": "ramls/dataExport-logs.raml",
-    "apiType": "raml",
-    "interface": "data-export 5.1",
-    "methods": "get:data_export_logs_get",
-    "name": "mod-data-export",
-    "path": "/data-export/logs"
-  },
-  {
-    "apiDescription": "ramls/dataExport-mapping-profiles.raml",
-    "apiType": "raml",
-    "interface": "data-export 5.1",
-    "methods": "get:data_export_mapping_profiles_get post:data_export_mapping_profiles_post",
-    "name": "mod-data-export",
-    "path": "/data-export/mapping-profiles"
-  },
-  {
-    "apiDescription": "ramls/dataExport-mapping-profiles.raml",
-    "apiType": "raml",
-    "interface": "data-export 5.1",
-    "methods": "delete:data_export_mapping_profiles__id__delete get:data_export_mapping_profiles__id__get put:data_export_mapping_profiles__id__put",
-    "name": "mod-data-export",
-    "path": "/data-export/mapping-profiles/{id}"
-  },
-  {
-    "apiDescription": "ramls/dataExport.raml",
-    "apiType": "raml",
-    "interface": "data-export 5.1",
-    "methods": "post:data_export_quick_export_post",
-    "name": "mod-data-export",
-    "path": "/data-export/quick-export"
-  },
-  {
-    "apiDescription": "ramls/dataExport-transformation-fields.raml",
-    "apiType": "raml",
-    "interface": "data-export 5.1",
-    "methods": "get:data_export_transformation_fields_get",
-    "name": "mod-data-export",
-    "path": "/data-export/transformation-fields"
   },
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
@@ -4288,6 +4174,27 @@
     "path": "/eventConfig/{id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/postExpireJobExecution",
+    "name": "mod-data-export",
+    "path": "/expire-jobs"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/postDataExport",
+    "name": "mod-data-export",
+    "path": "/export"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/postExportAll",
+    "name": "mod-data-export",
+    "path": "/export-all"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
     "apiType": "oas",
     "methods": "get:operation/getExtendedRemoteLocationConfigurationMappings post:operation/postExtendedRemoteLocationConfigurationMapping",
@@ -4378,6 +4285,27 @@
     "methods": "delete:field_protection_settings_marc__id__delete get:field_protection_settings_marc__id__get put:field_protection_settings_marc__id__put",
     "name": "mod-di-converter-storage",
     "path": "/field-protection-settings/marc/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/postFileDefinition",
+    "name": "mod-data-export",
+    "path": "/file-definitions"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getFileDefinitionById",
+    "name": "mod-data-export",
+    "path": "/file-definitions/{fileDefinitionId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/uploadFile",
+    "name": "mod-data-export",
+    "path": "/file-definitions/{fileDefinitionId}/upload"
   },
   {
     "apiDescription": "ramls/budget_expense_class.raml",
@@ -6316,6 +6244,41 @@
     "path": "/items/barcode/{barcode}/markAsMissing"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getJobExecutionsByQuery",
+    "name": "mod-data-export",
+    "path": "/job-executions"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteJobExecutionById",
+    "name": "mod-data-export",
+    "path": "/job-executions/{jobExecutionId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getLinkToDownloadFiles",
+    "name": "mod-data-export",
+    "path": "/job-executions/{jobExecutionId}/download/{exportFileId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getJobProfiles post:operation/postJobProfile",
+    "name": "mod-data-export",
+    "path": "/job-profiles"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteJobProfileById get:operation/getJobProfileById put:operation/putJobProfile",
+    "name": "mod-data-export",
+    "path": "/job-profiles/{jobProfileId}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
     "apiType": "oas",
     "methods": "get:operation/getJobs post:operation/upsertJob",
@@ -6738,6 +6701,13 @@
     "path": "/locations/{locationId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getErrorLogsByQuery",
+    "name": "mod-data-export",
+    "path": "/logs"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/edge-dematic.yaml",
     "apiType": "oas",
     "methods": "get:operation/getAsrRequests",
@@ -6857,6 +6827,20 @@
     "methods": "get:mapping_metadata__jobexecutionid__get",
     "name": "mod-source-record-manager",
     "path": "/mapping-metadata/{jobExecutionId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getMappingProfiles post:operation/postMappingProfile",
+    "name": "mod-data-export",
+    "path": "/mapping-profiles"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteMappingProfileById get:operation/getMappingProfileById put:operation/putMappingProfile",
+    "name": "mod-data-export",
+    "path": "/mapping-profiles/{mappingProfileId}"
   },
   {
     "apiDescription": "ramls/mapping-rules-provider.raml",
@@ -8606,6 +8590,13 @@
     "path": "/query/{queryId}/sortedIds"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/postDataExportQuickExport",
+    "name": "mod-data-export",
+    "path": "/quick-export"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/reading_room.yaml",
     "apiType": "oas",
     "interface": "reading-room 1.0",
@@ -8689,6 +8680,13 @@
     "methods": "delete:refunds__refundid__delete get:refunds__refundid__get put:refunds__refundid__put",
     "name": "mod-feesfines",
     "path": "/refunds/{refundId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getRelatedUsers",
+    "name": "mod-data-export",
+    "path": "/related-users"
   },
   {
     "apiDescription": "ramls/request-policy-storage.raml",
@@ -10204,6 +10202,13 @@
     "methods": "delete:transfers__transferid__delete get:transfers__transferid__get put:transfers__transferid__put",
     "name": "mod-feesfines",
     "path": "/transfers/{transferId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getTransformationFields",
+    "name": "mod-data-export",
+    "path": "/transformation-fields"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/edge-dematic.yaml",
