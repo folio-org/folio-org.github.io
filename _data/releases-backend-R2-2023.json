@@ -436,12 +436,12 @@
     {
       "name": "mod-orders",
       "nameRepo": "mod-orders",
-      "releaseDate": "2023-10-18T13:11:02+00:00",
-      "releaseName": "v12.7.1",
-      "releaseSha": "06d038eb4f675ecf790d443e4aa513c34d55656b",
-      "releaseTag": "v12.7.1",
+      "releaseDate": "2024-03-15T15:39:31+00:00",
+      "releaseName": "v12.7.2",
+      "releaseSha": "30e1042d53ef1f80fe0aa8ab2593ee21fdffd1de",
+      "releaseTag": "v12.7.2",
       "releaseTarget": "master",
-      "version": "12.7.1"
+      "version": "12.7.2"
     },
     {
       "name": "mod-orders-storage",
@@ -556,12 +556,12 @@
     {
       "name": "mod-search",
       "nameRepo": "mod-search",
-      "releaseDate": "2023-12-08T14:59:31+00:00",
-      "releaseName": "v3.0.5",
-      "releaseSha": "449e371e7d007c74bd01ff765519c2d4f895e7aa",
-      "releaseTag": "v3.0.5",
+      "releaseDate": "2024-03-18T12:46:11+00:00",
+      "releaseName": "v3.0.6",
+      "releaseSha": "f81f9868d7d410cf220ca0df6b358778f6d731cc",
+      "releaseTag": "v3.0.6",
       "releaseTarget": "master",
-      "version": "3.0.5"
+      "version": "3.0.6"
     },
     {
       "name": "mod-sender",
