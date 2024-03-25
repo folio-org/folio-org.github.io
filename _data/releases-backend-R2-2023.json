@@ -176,12 +176,12 @@
     {
       "name": "mod-entities-links",
       "nameRepo": "mod-entities-links",
-      "releaseDate": "2023-11-30T10:59:31+00:00",
-      "releaseName": "v2.0.4",
-      "releaseSha": "581d531795d34d8c6d070e12a725d89010c7167a",
-      "releaseTag": "v2.0.4",
+      "releaseDate": "2024-03-12T18:55:40+00:00",
+      "releaseName": "v2.0.5",
+      "releaseSha": "5f9688cd7618452c5769f79fb50b68200f68f534",
+      "releaseTag": "v2.0.5",
       "releaseTarget": "master",
-      "version": "2.0.4"
+      "version": "2.0.5"
     },
     {
       "name": "mod-erm-usage",
