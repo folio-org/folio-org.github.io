@@ -116,22 +116,22 @@
     {
       "name": "mod-data-export-spring",
       "nameRepo": "mod-data-export-spring",
-      "releaseDate": "2024-02-28T06:50:07+00:00",
-      "releaseName": "v3.0.3",
-      "releaseSha": "5607020a44c340f3340d2f9b0509dc2dc0828471",
-      "releaseTag": "v3.0.3",
+      "releaseDate": "2024-03-25T12:44:28+00:00",
+      "releaseName": "v3.0.4",
+      "releaseSha": "92240c2777f40bbcbcca2f6ce16a76d2c9f9498f",
+      "releaseTag": "v3.0.4",
       "releaseTarget": "master",
-      "version": "3.0.3"
+      "version": "3.0.4"
     },
     {
       "name": "mod-data-export-worker",
       "nameRepo": "mod-data-export-worker",
-      "releaseDate": "2023-11-08T09:55:10+00:00",
-      "releaseName": "v3.1.2",
-      "releaseSha": "93dd2e986fcb945586064a0d9e17714d5d2f95e4",
-      "releaseTag": "v3.1.2",
+      "releaseDate": "2024-03-25T12:40:45+00:00",
+      "releaseName": "v3.1.3",
+      "releaseSha": "3dd027e71f49c0bcb2c44f060ce28ef17805130b",
+      "releaseTag": "v3.1.3",
       "releaseTarget": "master",
-      "version": "3.1.2"
+      "version": "3.1.3"
     },
     {
       "name": "mod-data-import",
