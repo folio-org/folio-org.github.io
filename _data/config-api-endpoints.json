@@ -9997,6 +9997,14 @@
     "path": "/tlr/ecs-tlr/{requestId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/tlr-settings.yaml",
+    "apiType": "oas",
+    "interface": "tlr-settings 1.0",
+    "methods": "get:operation/getTlrSettings put:operation/putTlrSettings",
+    "name": "mod-tlr",
+    "path": "/tlr/settings"
+  },
+  {
     "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
     "apiType": "oas",
     "interface": "authtoken 2.0",
