@@ -802,7 +802,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-erm-usage",
     "org": "folio-org"
@@ -1473,6 +1473,7 @@
         "ramls/purchase-order.raml",
         "ramls/receiving-history.raml",
         "ramls/reporting-code.raml",
+        "ramls/routing-list.raml",
         "ramls/titles.raml"
       ],
       "upload": []

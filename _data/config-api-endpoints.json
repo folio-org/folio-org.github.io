@@ -2717,7 +2717,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.1",
+    "interface": "counter-reports 3.2",
     "methods": "get:counter_reports_get post:counter_reports_post",
     "name": "mod-erm-usage",
     "path": "/counter-reports"
@@ -2725,7 +2725,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.1",
+    "interface": "counter-reports 3.2",
     "methods": "get:counter_reports_errors_codes_get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/errors/codes"
@@ -2733,7 +2733,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.1",
+    "interface": "counter-reports 3.2",
     "methods": "get:counter_reports_export_provider__id__report__name__version__aversion__from__begin__to__end__get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/export/provider/{id}/report/{name}/version/{aversion}/from/{begin}/to/{end}"
@@ -2741,7 +2741,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.1",
+    "interface": "counter-reports 3.2",
     "methods": "get:counter_reports_export__id__get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/export/{id}"
@@ -2749,7 +2749,15 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.1",
+    "interface": "counter-reports 3.2",
+    "methods": "post:counter_reports_multipartupload_provider__id__post",
+    "name": "mod-erm-usage",
+    "path": "/counter-reports/multipartupload/provider/{id}"
+  },
+  {
+    "apiDescription": "ramls/counterreports.raml",
+    "apiType": "raml",
+    "interface": "counter-reports 3.2",
     "methods": "post:counter_reports_reports_delete_post",
     "name": "mod-erm-usage",
     "path": "/counter-reports/reports/delete"
@@ -2757,7 +2765,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.1",
+    "interface": "counter-reports 3.2",
     "methods": "get:counter_reports_reports_types_get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/reports/types"
@@ -2765,7 +2773,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.1",
+    "interface": "counter-reports 3.2",
     "methods": "get:counter_reports_sorted__udpid__get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/sorted/{udpId}"
@@ -2773,7 +2781,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.1",
+    "interface": "counter-reports 3.2",
     "methods": "post:counter_reports_upload_provider__id__post",
     "name": "mod-erm-usage",
     "path": "/counter-reports/upload/provider/{id}"
@@ -2781,7 +2789,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.1",
+    "interface": "counter-reports 3.2",
     "methods": "delete:counter_reports__id__delete get:counter_reports__id__get put:counter_reports__id__put",
     "name": "mod-erm-usage",
     "path": "/counter-reports/{id}"
@@ -2789,7 +2797,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.1",
+    "interface": "counter-reports 3.2",
     "methods": "get:counter_reports__id__download_get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/{id}/download"
@@ -6678,22 +6686,6 @@
     "path": "/locations"
   },
   {
-    "apiDescription": "ramls/location.raml",
-    "apiType": "raml",
-    "interface": "locations 3.0",
-    "methods": "delete:locations_delete get:locations_get post:locations_post",
-    "name": "mod-inventory-storage",
-    "path": "/locations"
-  },
-  {
-    "apiDescription": "ramls/location.raml",
-    "apiType": "raml",
-    "interface": "locations 3.0",
-    "methods": "delete:locations__id__delete get:locations__id__get put:locations__id__put",
-    "name": "mod-inventory-storage",
-    "path": "/locations/{id}"
-  },
-  {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
     "methods": "delete:operation/deleteLocation get:operation/getLocationById put:operation/updateLocation",
@@ -7489,6 +7481,22 @@
     "methods": "delete:orders_storage_reporting_codes__id__delete get:orders_storage_reporting_codes__id__get put:orders_storage_reporting_codes__id__put",
     "name": "mod-orders-storage",
     "path": "/orders-storage/reporting-codes/{id}"
+  },
+  {
+    "apiDescription": "ramls/routing-list.raml",
+    "apiType": "raml",
+    "interface": "orders-storage.routing-lists 1.0",
+    "methods": "get:orders_storage_routing_lists_get post:orders_storage_routing_lists_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/routing-lists"
+  },
+  {
+    "apiDescription": "ramls/routing-list.raml",
+    "apiType": "raml",
+    "interface": "orders-storage.routing-lists 1.0",
+    "methods": "delete:orders_storage_routing_lists__id__delete get:orders_storage_routing_lists__id__get put:orders_storage_routing_lists__id__put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/routing-lists/{id}"
   },
   {
     "apiDescription": "ramls/titles.raml",
