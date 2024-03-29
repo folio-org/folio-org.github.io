@@ -764,7 +764,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-email",
     "org": "folio-org"
