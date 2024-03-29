@@ -8143,14 +8143,6 @@
     "path": "/patron-notice-policy-storage/patron-notice-policies/{patronNoticePolicyId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/patron_permission.yaml",
-    "apiType": "oas",
-    "interface": "patron-permission 1.0",
-    "methods": "get:operation/getPatronPermissionsByUserId post:operation/createPatronPermissionsByUserId put:operation/updatePatronPermissionsByUserId",
-    "name": "mod-reading-room",
-    "path": "/patron-permission/users/{userId}"
-  },
-  {
     "apiDescription": "ramls/patronpin.raml",
     "apiType": "raml",
     "interface": "patron-pin 1.0",
@@ -8613,12 +8605,12 @@
     "path": "/reading-room"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/reading_room.yaml",
+    "apiDescription": "src/main/resources/swagger.api/patron_permission.yaml",
     "apiType": "oas",
     "interface": "reading-room 1.0",
-    "methods": "post:operation/createAccessLog",
+    "methods": "get:operation/getPatronPermissionsByUserId post:operation/createPatronPermissionsByUserId put:operation/updatePatronPermissionsByUserId",
     "name": "mod-reading-room",
-    "path": "/reading-room/access-log"
+    "path": "/reading-room-patron-permission/{patronId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/reading_room.yaml",
@@ -8627,6 +8619,14 @@
     "methods": "delete:operation/deleteReadingRoomById put:operation/updateReadingRoomById",
     "name": "mod-reading-room",
     "path": "/reading-room/{readingRoomId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/reading_room.yaml",
+    "apiType": "oas",
+    "interface": "reading-room 1.0",
+    "methods": "post:operation/createAccessLog",
+    "name": "mod-reading-room",
+    "path": "/reading-room/{readingRoomId}/access-log"
   },
   {
     "apiDescription": "ramls/record-bulk.raml",
