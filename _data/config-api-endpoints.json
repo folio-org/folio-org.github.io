@@ -3965,7 +3965,7 @@
     "apiDescription": "src/main/resources/swagger.api/mod-fqm-manager.yaml",
     "apiType": "oas",
     "interface": "_timer 1.0",
-    "methods": "post:operation/refreshMaterializedViews",
+    "methods": "post:operation/refreshData",
     "name": "mod-fqm-manager",
     "path": "/entity-types/materialized-views/refresh"
   },
@@ -7497,6 +7497,22 @@
     "methods": "delete:orders_storage_routing_lists__id__delete get:orders_storage_routing_lists__id__get put:orders_storage_routing_lists__id__put",
     "name": "mod-orders-storage",
     "path": "/orders-storage/routing-lists/{id}"
+  },
+  {
+    "apiDescription": "ramls/settings.raml",
+    "apiType": "raml",
+    "interface": "orders-storage.settings 1.0",
+    "methods": "get:orders_storage_settings_get post:orders_storage_settings_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/settings"
+  },
+  {
+    "apiDescription": "ramls/settings.raml",
+    "apiType": "raml",
+    "interface": "orders-storage.settings 1.0",
+    "methods": "delete:orders_storage_settings__id__delete get:orders_storage_settings__id__get put:orders_storage_settings__id__put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/settings/{id}"
   },
   {
     "apiDescription": "ramls/titles.raml",
