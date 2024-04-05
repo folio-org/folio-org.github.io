@@ -7761,6 +7761,21 @@
     "path": "/orders/rollover"
   },
   {
+    "apiDescription": "ramls/routing-lists.raml",
+    "apiType": "raml",
+    "methods": "get:orders_routing_lists_get post:orders_routing_lists_post",
+    "name": "mod-orders",
+    "path": "/orders/routing-lists"
+  },
+  {
+    "apiDescription": "ramls/routing-lists.raml",
+    "apiType": "raml",
+    "interface": "orders.routing-list 1.0",
+    "methods": "get:orders_routing_lists__id__template_get",
+    "name": "mod-orders",
+    "path": "/orders/routing-lists/{id}/template"
+  },
+  {
     "apiDescription": "ramls/titles.raml",
     "apiType": "raml",
     "interface": "titles 1.2",
