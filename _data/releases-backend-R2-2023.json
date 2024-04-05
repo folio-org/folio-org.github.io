@@ -556,12 +556,12 @@
     {
       "name": "mod-search",
       "nameRepo": "mod-search",
-      "releaseDate": "2024-03-18T12:46:11+00:00",
-      "releaseName": "v3.0.6",
-      "releaseSha": "f81f9868d7d410cf220ca0df6b358778f6d731cc",
-      "releaseTag": "v3.0.6",
+      "releaseDate": "2024-04-04T10:29:20+00:00",
+      "releaseName": "v3.0.8",
+      "releaseSha": "6f2fbc460408c8fb9ea0d49c408785a32edefa4a",
+      "releaseTag": "v3.0.8",
       "releaseTarget": "master",
-      "version": "3.0.6"
+      "version": "3.0.8"
     },
     {
       "name": "mod-sender",
