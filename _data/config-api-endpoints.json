@@ -2281,7 +2281,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "allowed-service-points 1.0",
+    "interface": "allowed-service-points 1.1",
     "methods": "get:circulation_requests_allowed_service_points_get",
     "name": "mod-circulation",
     "path": "/circulation/requests/allowed-service-points"
@@ -7759,6 +7759,21 @@
     "methods": "post:orders_rollover_post",
     "name": "mod-orders",
     "path": "/orders/rollover"
+  },
+  {
+    "apiDescription": "ramls/routing-lists.raml",
+    "apiType": "raml",
+    "methods": "get:orders_routing_lists_get post:orders_routing_lists_post",
+    "name": "mod-orders",
+    "path": "/orders/routing-lists"
+  },
+  {
+    "apiDescription": "ramls/routing-lists.raml",
+    "apiType": "raml",
+    "interface": "orders.routing-list 1.0",
+    "methods": "get:orders_routing_lists__id__template_get",
+    "name": "mod-orders",
+    "path": "/orders/routing-lists/{id}/template"
   },
   {
     "apiDescription": "ramls/titles.raml",
