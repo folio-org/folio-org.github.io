@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-03-17T23:56:00.073826+00:00"
+    "generatedDateTime": "2024-04-05T00:22:36.804398+00:00"
   },
   "repos": [
     {
@@ -88,6 +88,16 @@
       "repoLanguageHint": "java",
       "repoType": "other",
       "snippetIntro": "<p>Library with general purpose classes to help with FOLIO backend development and testing</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": "POC for notification of breaking changes",
+      "docDirName": null,
+      "name": "breaking-changes-notification-poc",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
@@ -584,7 +594,7 @@
     {
       "defaultBranch": "master",
       "description": "Dependency Injection support for FOLIO backend modules",
-      "docDirName": null,
+      "docDirName": "doc",
       "name": "folio-di-support",
       "org": "folio-org",
       "repoLanguageHint": "java",
@@ -1359,7 +1369,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "build.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
