@@ -18,6 +18,8 @@ See also the guidelines to [Create a new FOLIO module and do initial setup](/gui
 
 Be familiar with the [Getting started](/start/) fundamental documentation and primers.
 
+Consider the [Officially Supported Technologies](https://wiki.folio.org/display/TC/Officially+Supported+Technologies) for upcoming releases (also known as Approved Technologies).
+
 The essential directories and files are explained below for [back-end](#back-end-modules) and [front-end](#front-end-modules) modules.
 Of course any module might need extras.
 

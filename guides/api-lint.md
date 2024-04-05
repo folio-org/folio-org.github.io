@@ -43,7 +43,7 @@ The Python script will search the configured directories to find relevant API de
   Required. Space-separated list.
 * `-e,--excludes` -- List of additional sub-directories and/or files to be excluded (so that the tool will only discover top-level root API description files).
   Optional. Space-separated list.
-  By default it excludes certain well-known directories (such as `raml-util`).
+  By default it excludes certain well-known directories (such as `raml-util schema schemas examples headers parameters`).
   Use the option `--loglevel debug` to report what is being excluded.
 * `-w,--warnings` -- Cause "warnings" to fail the workflow, in the absence of "violations".
   Optional. By default, if there are no "violations", then the workflow is successful and so any "warnings" would not be displayed.
@@ -117,7 +117,7 @@ Compare with the default files at [folio-org/.github/workflow-templates](https:/
 
 <div class="attention">
 NOTE: Using api-lint via Jenkins is <a href="https://issues.folio.org/browse/FOLIO-3678">deprecated</a>.
-All relevant back-end repositories are now using GitHub Workflows.
+All relevant back-end repositories are now using GitHub Workflows for API-related operations.
 </div>
 
 ## Reports
