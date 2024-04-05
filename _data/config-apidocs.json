@@ -1439,6 +1439,7 @@
         "ramls/receive.raml",
         "ramls/receiving-history.raml",
         "ramls/rollover.raml",
+        "ramls/routing-lists.raml",
         "ramls/titles.raml"
       ],
       "upload": []
