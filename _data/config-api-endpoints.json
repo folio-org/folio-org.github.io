@@ -9351,7 +9351,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "indices 0.6",
+    "interface": "indices 0.7",
     "methods": "post:operation/createIndices",
     "name": "mod-search",
     "path": "/search/index/indices"
@@ -9359,7 +9359,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "indices 0.6",
+    "interface": "indices 0.7",
     "methods": "post:operation/reindexInventoryRecords",
     "name": "mod-search",
     "path": "/search/index/inventory/reindex"
@@ -9367,7 +9367,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "indices 0.6",
+    "interface": "indices 0.7",
     "methods": "post:operation/updateMappings",
     "name": "mod-search",
     "path": "/search/index/mappings"
@@ -9375,7 +9375,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "indices 0.6",
+    "interface": "indices 0.7",
     "methods": "post:operation/indexRecords",
     "name": "mod-search",
     "path": "/search/index/records"
@@ -9383,7 +9383,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "indices 0.6",
+    "interface": "indices 0.7",
     "methods": "put:operation/updateIndexDynamicSettings",
     "name": "mod-search",
     "path": "/search/index/settings"
