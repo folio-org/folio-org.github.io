@@ -7209,6 +7209,14 @@
     "apiDescription": "ramls/request-metadata.raml",
     "apiType": "raml",
     "interface": "oai-pmh 3.3",
+    "methods": "get:oai_request_metadata__requestid__logs_get",
+    "name": "mod-oai-pmh",
+    "path": "/oai/request-metadata/{requestId}/logs"
+  },
+  {
+    "apiDescription": "ramls/request-metadata.raml",
+    "apiType": "raml",
+    "interface": "oai-pmh 3.3",
     "methods": "get:oai_request_metadata__requestid__skipped_instances_get",
     "name": "mod-oai-pmh",
     "path": "/oai/request-metadata/{requestId}/skipped-instances"
