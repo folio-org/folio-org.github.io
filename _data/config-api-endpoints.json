@@ -4398,7 +4398,7 @@
   {
     "apiDescription": "ramls/fund.raml",
     "apiType": "raml",
-    "interface": "finance-storage.funds 4.0",
+    "interface": "finance-storage.funds 5.0",
     "methods": "get:finance_storage_funds_get post:finance_storage_funds_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/funds"
@@ -4406,7 +4406,7 @@
   {
     "apiDescription": "ramls/fund.raml",
     "apiType": "raml",
-    "interface": "finance-storage.funds 4.0",
+    "interface": "finance-storage.funds 5.0",
     "methods": "delete:finance_storage_funds__id__delete get:finance_storage_funds__id__get put:finance_storage_funds__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/funds/{id}"
@@ -4750,7 +4750,7 @@
   {
     "apiDescription": "ramls/funds.raml",
     "apiType": "raml",
-    "interface": "finance.funds 2.0",
+    "interface": "finance.funds 3.0",
     "methods": "get:finance_funds_get post:finance_funds_post",
     "name": "mod-finance",
     "path": "/finance/funds"
@@ -4758,7 +4758,7 @@
   {
     "apiDescription": "ramls/funds.raml",
     "apiType": "raml",
-    "interface": "finance.funds 2.0",
+    "interface": "finance.funds 3.0",
     "methods": "delete:finance_funds__id__delete get:finance_funds__id__get put:finance_funds__id__put",
     "name": "mod-finance",
     "path": "/finance/funds/{id}"
@@ -4766,7 +4766,7 @@
   {
     "apiDescription": "ramls/funds.raml",
     "apiType": "raml",
-    "interface": "finance.funds 2.0",
+    "interface": "finance.funds 3.0",
     "methods": "get:finance_funds__id__budget_get",
     "name": "mod-finance",
     "path": "/finance/funds/{id}/budget"
@@ -4774,7 +4774,7 @@
   {
     "apiDescription": "ramls/funds.raml",
     "apiType": "raml",
-    "interface": "finance.funds 2.0",
+    "interface": "finance.funds 3.0",
     "methods": "get:finance_funds__id__expense_classes_get",
     "name": "mod-finance",
     "path": "/finance/funds/{id}/expense-classes"
@@ -10443,6 +10443,14 @@
     "methods": "delete:operation/deleteUser get:operation/getUser put:operation/updateUser",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/users/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "users-keycloak 1.0",
+    "methods": "get:operation/findPermissions",
+    "name": "mod-users-keycloak",
+    "path": "/users-keycloak/users/{id}/permissions"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
