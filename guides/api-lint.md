@@ -48,6 +48,8 @@ The Python script will search the configured directories to find relevant API de
 * `-w,--warnings` -- Cause "warnings" to fail the workflow, in the absence of "violations".
   Optional. By default, if there are no "violations", then the workflow is successful and so any "warnings" would not be displayed.
 
+Don't quote a space-separated list. Correct: `-e examples headers`. Wrong: `-e "examples headers"`. Wrong: `"-e examples headers"`.
+
 See help for the full list:
 
 ```
@@ -70,7 +72,7 @@ cd $GH_FOLIO/mod-eusage-reports
 python3 ../folio-tools/api-lint/api_lint.py \
   -t OAS \
   -d src/main/resources/openapi \
-  -e headers
+  -e examples headers
 ```
 
 Example for both RAML and OpenAPI (OAS), i.e. when preparing for transition:
