@@ -39,6 +39,8 @@ If you need to use the Spring project that is not still used in FOLIO please dis
 
 The database that is used in FOLIO for general persistence tasks is PostgreSQL. If you need to use different storage for your functionality, please discuss it with the community first.
 
+For Minio/S3 use [https://github.com/folio-org/folio-s3-client](https://github.com/folio-org/folio-s3-client).
+
 Here are the links to some production backend modules based on the folio-spring-base. You can check various details of implementations there.
 
 - [https://github.com/folio-org/mod-tags](https://github.com/folio-org/mod-tags)
