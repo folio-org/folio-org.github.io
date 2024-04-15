@@ -134,6 +134,11 @@ In the RAML files, the "type" is declared as a symbolic name for use elsewhere i
 
 ### Database schema {#back-end-database-schema}
 
+For Spring-based modules see
+[TenantService](https://github.com/folio-org/folio-spring-support/blob/master/folio-spring-base/src/main/java/org/folio/spring/service/TenantService.java)
+and the
+[liquibase classes](https://github.com/folio-org/folio-spring-support/tree/master/folio-spring-base/src/main/java/org/folio/spring/liquibase).
+
 For RMB-based modules the DB schema defines this module's tables, indexes, joins, etc.
 It is located at `src/main/resources/templates/db_scripts/schema.json`
 
