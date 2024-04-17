@@ -18,6 +18,8 @@ See also the guidelines to [Create a new FOLIO module and do initial setup](/gui
 
 Be familiar with the [Getting started](/start/) fundamental documentation and primers.
 
+Consider the [Officially Supported Technologies](https://wiki.folio.org/display/TC/Officially+Supported+Technologies) for upcoming releases (also known as Approved Technologies).
+
 The essential directories and files are explained below for [back-end](#back-end-modules) and [front-end](#front-end-modules) modules.
 Of course any module might need extras.
 
@@ -131,6 +133,11 @@ In the RAML files, the "type" is declared as a symbolic name for use elsewhere i
 (its declared value is the path to the schema, relative to that RAML file).
 
 ### Database schema {#back-end-database-schema}
+
+For Spring-based modules see
+[TenantService](https://github.com/folio-org/folio-spring-support/blob/master/folio-spring-base/src/main/java/org/folio/spring/service/TenantService.java)
+and the
+[liquibase classes](https://github.com/folio-org/folio-spring-support/tree/master/folio-spring-base/src/main/java/org/folio/spring/liquibase).
 
 For RMB-based modules the DB schema defines this module's tables, indexes, joins, etc.
 It is located at `src/main/resources/templates/db_scripts/schema.json`

@@ -2281,7 +2281,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "allowed-service-points 1.1",
+    "interface": "allowed-service-points 1.0",
     "methods": "get:circulation_requests_allowed_service_points_get",
     "name": "mod-circulation",
     "path": "/circulation/requests/allowed-service-points"
@@ -4398,7 +4398,7 @@
   {
     "apiDescription": "ramls/fund.raml",
     "apiType": "raml",
-    "interface": "finance-storage.funds 4.0",
+    "interface": "finance-storage.funds 5.0",
     "methods": "get:finance_storage_funds_get post:finance_storage_funds_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/funds"
@@ -4406,7 +4406,7 @@
   {
     "apiDescription": "ramls/fund.raml",
     "apiType": "raml",
-    "interface": "finance-storage.funds 4.0",
+    "interface": "finance-storage.funds 5.0",
     "methods": "delete:finance_storage_funds__id__delete get:finance_storage_funds__id__get put:finance_storage_funds__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/funds/{id}"
@@ -4606,7 +4606,7 @@
   {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "interface": "finance.transactions 5.1",
+    "interface": "finance.transactions 6.0",
     "methods": "post:finance_allocations_post",
     "name": "mod-finance",
     "path": "/finance/allocations"
@@ -4650,38 +4650,6 @@
     "methods": "get:finance_calculate_exchange_get",
     "name": "mod-finance",
     "path": "/finance/calculate-exchange"
-  },
-  {
-    "apiDescription": "ramls/transaction.raml",
-    "apiType": "raml",
-    "interface": "finance.transactions 5.1",
-    "methods": "post:finance_credits_post",
-    "name": "mod-finance",
-    "path": "/finance/credits"
-  },
-  {
-    "apiDescription": "ramls/transaction.raml",
-    "apiType": "raml",
-    "interface": "finance.transactions 5.1",
-    "methods": "put:finance_credits__id__put",
-    "name": "mod-finance",
-    "path": "/finance/credits/{id}"
-  },
-  {
-    "apiDescription": "ramls/transaction.raml",
-    "apiType": "raml",
-    "interface": "finance.transactions 5.1",
-    "methods": "post:finance_encumbrances_post",
-    "name": "mod-finance",
-    "path": "/finance/encumbrances"
-  },
-  {
-    "apiDescription": "ramls/transaction.raml",
-    "apiType": "raml",
-    "interface": "finance.transactions 5.1",
-    "methods": "delete:finance_encumbrances__id__delete put:finance_encumbrances__id__put",
-    "name": "mod-finance",
-    "path": "/finance/encumbrances/{id}"
   },
   {
     "apiDescription": "ramls/exchange.raml",
@@ -4750,7 +4718,7 @@
   {
     "apiDescription": "ramls/funds.raml",
     "apiType": "raml",
-    "interface": "finance.funds 2.0",
+    "interface": "finance.funds 3.0",
     "methods": "get:finance_funds_get post:finance_funds_post",
     "name": "mod-finance",
     "path": "/finance/funds"
@@ -4758,7 +4726,7 @@
   {
     "apiDescription": "ramls/funds.raml",
     "apiType": "raml",
-    "interface": "finance.funds 2.0",
+    "interface": "finance.funds 3.0",
     "methods": "delete:finance_funds__id__delete get:finance_funds__id__get put:finance_funds__id__put",
     "name": "mod-finance",
     "path": "/finance/funds/{id}"
@@ -4766,7 +4734,7 @@
   {
     "apiDescription": "ramls/funds.raml",
     "apiType": "raml",
-    "interface": "finance.funds 2.0",
+    "interface": "finance.funds 3.0",
     "methods": "get:finance_funds__id__budget_get",
     "name": "mod-finance",
     "path": "/finance/funds/{id}/budget"
@@ -4774,7 +4742,7 @@
   {
     "apiDescription": "ramls/funds.raml",
     "apiType": "raml",
-    "interface": "finance.funds 2.0",
+    "interface": "finance.funds 3.0",
     "methods": "get:finance_funds__id__expense_classes_get",
     "name": "mod-finance",
     "path": "/finance/funds/{id}/expense-classes"
@@ -4826,22 +4794,6 @@
     "methods": "get:finance_groups__id__expense_classes_totals_get",
     "name": "mod-finance",
     "path": "/finance/groups/{id}/expense-classes-totals"
-  },
-  {
-    "apiDescription": "ramls/transaction-summary.raml",
-    "apiType": "raml",
-    "interface": "finance.invoice-transaction-summaries 2.1",
-    "methods": "post:finance_invoice_transaction_summaries_post",
-    "name": "mod-finance",
-    "path": "/finance/invoice-transaction-summaries"
-  },
-  {
-    "apiDescription": "ramls/transaction-summary.raml",
-    "apiType": "raml",
-    "interface": "finance.invoice-transaction-summaries 2.1",
-    "methods": "put:finance_invoice_transaction_summaries__id__put",
-    "name": "mod-finance",
-    "path": "/finance/invoice-transaction-summaries/{id}"
   },
   {
     "apiDescription": "ramls/ledger_rollover.raml",
@@ -4948,57 +4900,9 @@
     "path": "/finance/ledgers/{id}/current-fiscal-year"
   },
   {
-    "apiDescription": "ramls/transaction-summary.raml",
-    "apiType": "raml",
-    "interface": "finance.order-transaction-summaries 1.2",
-    "methods": "post:finance_order_transaction_summaries_post",
-    "name": "mod-finance",
-    "path": "/finance/order-transaction-summaries"
-  },
-  {
-    "apiDescription": "ramls/transaction-summary.raml",
-    "apiType": "raml",
-    "interface": "finance.order-transaction-summaries 1.2",
-    "methods": "put:finance_order_transaction_summaries__id__put",
-    "name": "mod-finance",
-    "path": "/finance/order-transaction-summaries/{id}"
-  },
-  {
-    "apiDescription": "ramls/transaction.raml",
-    "apiType": "raml",
-    "interface": "finance.transactions 5.1",
-    "methods": "post:finance_payments_post",
-    "name": "mod-finance",
-    "path": "/finance/payments"
-  },
-  {
-    "apiDescription": "ramls/transaction.raml",
-    "apiType": "raml",
-    "interface": "finance.transactions 5.1",
-    "methods": "put:finance_payments__id__put",
-    "name": "mod-finance",
-    "path": "/finance/payments/{id}"
-  },
-  {
-    "apiDescription": "ramls/transaction.raml",
-    "apiType": "raml",
-    "interface": "finance.transactions 5.1",
-    "methods": "post:finance_pending_payments_post",
-    "name": "mod-finance",
-    "path": "/finance/pending-payments"
-  },
-  {
-    "apiDescription": "ramls/transaction.raml",
-    "apiType": "raml",
-    "interface": "finance.transactions 5.1",
-    "methods": "put:finance_pending_payments__id__put",
-    "name": "mod-finance",
-    "path": "/finance/pending-payments/{id}"
-  },
-  {
     "apiDescription": "ramls/release-encumbrance.raml",
     "apiType": "raml",
-    "interface": "finance.transactions 5.1",
+    "interface": "finance.transactions 6.0",
     "methods": "post:finance_release_encumbrance__id__post",
     "name": "mod-finance",
     "path": "/finance/release-encumbrance/{id}"
@@ -5006,7 +4910,7 @@
   {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "interface": "finance.transactions 5.1",
+    "interface": "finance.transactions 6.0",
     "methods": "get:finance_transactions_get",
     "name": "mod-finance",
     "path": "/finance/transactions"
@@ -5014,7 +4918,7 @@
   {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "interface": "finance.transactions 5.1",
+    "interface": "finance.transactions 6.0",
     "methods": "post:finance_transactions_batch_all_or_nothing_post",
     "name": "mod-finance",
     "path": "/finance/transactions/batch-all-or-nothing"
@@ -5022,7 +4926,7 @@
   {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "interface": "finance.transactions 5.1",
+    "interface": "finance.transactions 6.0",
     "methods": "get:finance_transactions__id__get",
     "name": "mod-finance",
     "path": "/finance/transactions/{id}"
@@ -5030,7 +4934,7 @@
   {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "interface": "finance.transactions 5.1",
+    "interface": "finance.transactions 6.0",
     "methods": "post:finance_transfers_post",
     "name": "mod-finance",
     "path": "/finance/transfers"
@@ -5038,7 +4942,7 @@
   {
     "apiDescription": "ramls/unrelease-encumbrance.raml",
     "apiType": "raml",
-    "interface": "finance.transactions 5.1",
+    "interface": "finance.transactions 6.0",
     "methods": "post:finance_unrelease_encumbrance__id__post",
     "name": "mod-finance",
     "path": "/finance/unrelease-encumbrance/{id}"
@@ -7209,6 +7113,14 @@
     "apiDescription": "ramls/request-metadata.raml",
     "apiType": "raml",
     "interface": "oai-pmh 3.3",
+    "methods": "get:oai_request_metadata__requestid__logs_get",
+    "name": "mod-oai-pmh",
+    "path": "/oai/request-metadata/{requestId}/logs"
+  },
+  {
+    "apiDescription": "ramls/request-metadata.raml",
+    "apiType": "raml",
+    "interface": "oai-pmh 3.3",
     "methods": "get:oai_request_metadata__requestid__skipped_instances_get",
     "name": "mod-oai-pmh",
     "path": "/oai/request-metadata/{requestId}/skipped-instances"
@@ -7763,9 +7675,18 @@
   {
     "apiDescription": "ramls/routing-lists.raml",
     "apiType": "raml",
+    "interface": "orders.routing-list 1.0",
     "methods": "get:orders_routing_lists_get post:orders_routing_lists_post",
     "name": "mod-orders",
     "path": "/orders/routing-lists"
+  },
+  {
+    "apiDescription": "ramls/routing-lists.raml",
+    "apiType": "raml",
+    "interface": "orders.routing-list 1.0",
+    "methods": "delete:orders_routing_lists__id__delete get:orders_routing_lists__id__get put:orders_routing_lists__id__put",
+    "name": "mod-orders",
+    "path": "/orders/routing-lists/{id}"
   },
   {
     "apiDescription": "ramls/routing-lists.raml",
@@ -8638,8 +8559,8 @@
   {
     "apiDescription": "src/main/resources/swagger.api/patron_permission.yaml",
     "apiType": "oas",
-    "interface": "reading-room 1.0",
-    "methods": "get:operation/getPatronPermissionsByUserId post:operation/createPatronPermissionsByUserId put:operation/updatePatronPermissionsByUserId",
+    "interface": "reading-room-patron-permission 1.0",
+    "methods": "get:operation/getPatronPermissionsByUserId put:operation/UpdatePatronReadingRoomPermission",
     "name": "mod-reading-room",
     "path": "/reading-room-patron-permission/{patronId}"
   },
@@ -9278,7 +9199,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.2",
+    "interface": "search 1.3",
     "methods": "get:operation/searchAuthorities",
     "name": "mod-search",
     "path": "/search/authorities"
@@ -9334,7 +9255,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.2",
+    "interface": "search 1.3",
     "methods": "get:operation/getHoldingIds",
     "name": "mod-search",
     "path": "/search/holdings/ids"
@@ -9342,7 +9263,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "indices 0.6",
+    "interface": "indices 0.7",
     "methods": "post:operation/createIndices",
     "name": "mod-search",
     "path": "/search/index/indices"
@@ -9350,7 +9271,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "indices 0.6",
+    "interface": "indices 0.7",
     "methods": "post:operation/reindexInventoryRecords",
     "name": "mod-search",
     "path": "/search/index/inventory/reindex"
@@ -9358,7 +9279,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "indices 0.6",
+    "interface": "indices 0.7",
     "methods": "post:operation/updateMappings",
     "name": "mod-search",
     "path": "/search/index/mappings"
@@ -9366,7 +9287,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "indices 0.6",
+    "interface": "indices 0.7",
     "methods": "post:operation/indexRecords",
     "name": "mod-search",
     "path": "/search/index/records"
@@ -9374,7 +9295,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "indices 0.6",
+    "interface": "indices 0.7",
     "methods": "put:operation/updateIndexDynamicSettings",
     "name": "mod-search",
     "path": "/search/index/settings"
@@ -9382,7 +9303,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.2",
+    "interface": "search 1.3",
     "methods": "get:operation/searchInstances",
     "name": "mod-search",
     "path": "/search/instances"
@@ -9390,7 +9311,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.2",
+    "interface": "search 1.3",
     "methods": "get:operation/getInstanceIds",
     "name": "mod-search",
     "path": "/search/instances/ids"
@@ -9422,7 +9343,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.2",
+    "interface": "search 1.3",
     "methods": "get:operation/getFacets",
     "name": "mod-search",
     "path": "/search/{recordType}/facets"
@@ -10426,6 +10347,14 @@
     "methods": "delete:operation/deleteUser get:operation/getUser put:operation/updateUser",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/users/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "users-keycloak 1.0",
+    "methods": "get:operation/findPermissions",
+    "name": "mod-users-keycloak",
+    "path": "/users-keycloak/users/{id}/permissions"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",

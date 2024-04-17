@@ -34,8 +34,10 @@ The Python script will search the configured directories to find relevant API de
   Required. Space-separated list.
 * `-e,--excludes` -- List of additional sub-directories and/or files to be excluded (so that the tool will only discover top-level root API description files).
   Optional. Space-separated list.
-  By default it excludes certain well-known directories (such as `raml-util`).
+  By default it excludes certain well-known directories (such as `raml-util examples headers parameters`).
   Use the option `--loglevel debug` to report what is being excluded.
+
+Don't quote a space-separated list. Correct: `-e examples headers`. Wrong: `-e "examples headers"`. Wrong: `"-e examples headers"`.
 
 See help for the full list (including the default output directory):
 
@@ -59,7 +61,7 @@ cd $GH_FOLIO/mod-eusage-reports
 python3 ../folio-tools/api-doc/api_doc.py \
   -t OAS \
   -d src/main/resources/openapi \
-  -e headers
+  -e examples headers
 ```
 
 Example for both RAML and OpenAPI (OAS), i.e. when preparing for transition:
@@ -100,7 +102,7 @@ Compare with the default files at [folio-org/.github/workflow-templates](https:/
 
 <div class="attention">
 NOTE: Using api-doc via Jenkins is <a href="https://issues.folio.org/browse/FOLIO-3678">deprecated</a>.
-All relevant back-end repositories are now using GitHub Workflows.
+All relevant back-end repositories are now using GitHub Workflows for API-related operations.
 </div>
 
 <div class="folio-spacer-content"></div>

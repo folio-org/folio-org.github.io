@@ -313,7 +313,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mgr-applications",
     "org": "folio-org"
@@ -913,7 +913,6 @@
         "ramls/ledger_rollover_progress.raml",
         "ramls/ledgers.raml",
         "ramls/release-encumbrance.raml",
-        "ramls/transaction-summary.raml",
         "ramls/transaction.raml",
         "ramls/unrelease-encumbrance.raml"
       ],
