@@ -913,7 +913,6 @@
         "ramls/ledger_rollover_progress.raml",
         "ramls/ledgers.raml",
         "ramls/release-encumbrance.raml",
-        "ramls/transaction-summary.raml",
         "ramls/transaction.raml",
         "ramls/unrelease-encumbrance.raml"
       ],
