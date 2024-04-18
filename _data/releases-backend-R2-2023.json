@@ -96,12 +96,12 @@
     {
       "name": "mod-courses",
       "nameRepo": "mod-courses",
-      "releaseDate": "2023-10-13T20:46:15+00:00",
-      "releaseName": "1.4.8",
-      "releaseSha": "1b35d5c88de37a0201a6b54b5359aa76268880b2",
-      "releaseTag": "v1.4.8",
+      "releaseDate": "2024-03-22T14:27:59+00:00",
+      "releaseName": "v1.4.10",
+      "releaseSha": "2dcc17476ac5673d5708842a972918334d325fd7",
+      "releaseTag": "v1.4.10",
       "releaseTarget": "master",
-      "version": "1.4.8"
+      "version": "1.4.10"
     },
     {
       "name": "mod-data-export",
@@ -176,12 +176,12 @@
     {
       "name": "mod-entities-links",
       "nameRepo": "mod-entities-links",
-      "releaseDate": "2024-03-12T18:55:40+00:00",
-      "releaseName": "v2.0.5",
-      "releaseSha": "5f9688cd7618452c5769f79fb50b68200f68f534",
-      "releaseTag": "v2.0.5",
+      "releaseDate": "2024-04-11T16:31:06+00:00",
+      "releaseName": "",
+      "releaseSha": "7e3e26bfc8155755b8dfeb0ac6b798c084b304dd",
+      "releaseTag": "v2.0.6",
       "releaseTarget": "master",
-      "version": "2.0.5"
+      "version": "2.0.6"
     },
     {
       "name": "mod-erm-usage",
@@ -296,12 +296,12 @@
     {
       "name": "mod-inventory-storage",
       "nameRepo": "mod-inventory-storage",
-      "releaseDate": "2024-03-18T15:03:31+00:00",
-      "releaseName": "v27.0.5",
-      "releaseSha": "3a0818c8c7771dd80dbf4ad402b09575582cd5b3",
-      "releaseTag": "v27.0.5",
+      "releaseDate": "2024-04-12T07:13:19+00:00",
+      "releaseName": "v27.0.6",
+      "releaseSha": "252a50c991369ab597ece17be74ea5bc16f3faf5",
+      "releaseTag": "v27.0.6",
       "releaseTarget": "master",
-      "version": "27.0.5"
+      "version": "27.0.6"
     },
     {
       "name": "mod-inventory-update",
@@ -346,12 +346,12 @@
     {
       "name": "mod-ldp",
       "nameRepo": "mod-ldp",
-      "releaseDate": "2023-10-14T05:09:27+00:00",
-      "releaseName": "1.1.2",
-      "releaseSha": "73097725ce082685779614f97e5faa92ddfbc981",
-      "releaseTag": "v1.1.2",
+      "releaseDate": "2024-03-22T20:58:43+00:00",
+      "releaseName": "v1.1.3",
+      "releaseSha": "f10875b4aa2914bf56e49d3b463e24c0621cf53a",
+      "releaseTag": "v1.1.3",
       "releaseTarget": "master",
-      "version": "1.1.2"
+      "version": "1.1.3"
     },
     {
       "name": "mod-licenses",
@@ -396,12 +396,12 @@
     {
       "name": "mod-ncip",
       "nameRepo": "mod-ncip",
-      "releaseDate": "2023-10-25T13:21:00+00:00",
-      "releaseName": "v1.14.4",
-      "releaseSha": "a41e53994f400abe391cfc410b449906b53630bf",
-      "releaseTag": "v1.14.4",
+      "releaseDate": "2024-04-04T20:38:17+00:00",
+      "releaseName": "v1.14.5",
+      "releaseSha": "061640e505c0a22d9b8576e89aa5b86a17adf74b",
+      "releaseTag": "v1.14.5",
       "releaseTarget": "master",
-      "version": "1.14.4"
+      "version": "1.14.5"
     },
     {
       "name": "mod-notes",
@@ -526,12 +526,12 @@
     {
       "name": "mod-quick-marc",
       "nameRepo": "mod-quick-marc",
-      "releaseDate": "2023-12-08T12:01:17+00:00",
-      "releaseName": "v5.0.1",
-      "releaseSha": "11213acf8b561005ff83f5c5796b6176c1610f05",
-      "releaseTag": "v5.0.1",
+      "releaseDate": "2024-04-10T19:10:34+00:00",
+      "releaseName": "v5.0.2",
+      "releaseSha": "f238ca8453d072d6dcc401545c2f06372bc14e97",
+      "releaseTag": "v5.0.2",
       "releaseTarget": "master",
-      "version": "5.0.1"
+      "version": "5.0.2"
     },
     {
       "name": "mod-remote-storage",
@@ -556,12 +556,12 @@
     {
       "name": "mod-search",
       "nameRepo": "mod-search",
-      "releaseDate": "2024-04-04T10:29:20+00:00",
-      "releaseName": "v3.0.8",
-      "releaseSha": "6f2fbc460408c8fb9ea0d49c408785a32edefa4a",
-      "releaseTag": "v3.0.8",
+      "releaseDate": "2024-04-10T18:38:01+00:00",
+      "releaseName": "v3.0.9",
+      "releaseSha": "ce6154cbf6185b71c126fdf12ad0707e8a7be77f",
+      "releaseTag": "v3.0.9",
       "releaseTarget": "master",
-      "version": "3.0.8"
+      "version": "3.0.9"
     },
     {
       "name": "mod-sender",
@@ -586,12 +586,12 @@
     {
       "name": "mod-settings",
       "nameRepo": "mod-settings",
-      "releaseDate": "2023-12-06T15:25:59+00:00",
-      "releaseName": "v1.0.2",
-      "releaseSha": "a34d427da8eae7204ed8a5da28c539ea006c253d",
-      "releaseTag": "v1.0.2",
+      "releaseDate": "2024-03-21T19:38:15+00:00",
+      "releaseName": "v1.0.3",
+      "releaseSha": "27d5941bc76a49431be60ab34b4e97a0cceb491b",
+      "releaseTag": "v1.0.3",
       "releaseTarget": "master",
-      "version": "1.0.2"
+      "version": "1.0.3"
     },
     {
       "name": "mod-source-record-manager",
