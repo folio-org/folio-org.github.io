@@ -772,7 +772,7 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/swagger.api/mod-entities-links.yaml"
+        "target/api/openapi/openapi.yaml"
       ],
       "raml": [],
       "upload": []

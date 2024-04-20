@@ -1194,7 +1194,7 @@
     "path": "/authn/update"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-note-types 1.0",
     "methods": "get:operation/retrieveAuthorityNoteTypes post:operation/createAuthorityNoteType",
@@ -1202,7 +1202,7 @@
     "path": "/authority-note-types"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-note-types 1.0",
     "methods": "delete:operation/deleteAuthorityNoteType get:operation/getAuthorityNoteType put:operation/updateAuthorityNoteType",
@@ -1210,7 +1210,7 @@
     "path": "/authority-note-types/{id}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-source-files 2.2",
     "methods": "get:operation/retrieveAuthoritySourceFiles post:operation/createAuthoritySourceFile",
@@ -1218,7 +1218,7 @@
     "path": "/authority-source-files"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-source-files 2.2",
     "methods": "delete:operation/deleteAuthoritySourceFile get:operation/getAuthoritySourceFile patch:operation/patchAuthoritySourceFile",
@@ -1226,7 +1226,7 @@
     "path": "/authority-source-files/{id}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-source-files 2.2",
     "methods": "post:operation/newAuthoritySourceFileNextHrid",
@@ -1234,7 +1234,7 @@
     "path": "/authority-source-files/{id}/hrid"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-storage 2.1",
     "methods": "get:operation/retrieveAuthorities post:operation/createAuthority",
@@ -1242,7 +1242,7 @@
     "path": "/authority-storage/authorities"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-storage 2.1",
     "methods": "post:operation/createAuthorityBulk",
@@ -1250,7 +1250,7 @@
     "path": "/authority-storage/authorities/bulk"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-storage 2.1",
     "methods": "delete:operation/deleteAuthority get:operation/getAuthority put:operation/updateAuthority",
@@ -1258,7 +1258,7 @@
     "path": "/authority-storage/authorities/{id}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-reindex 0.1",
     "methods": "get:operation/getReindexJobs post:operation/submitReindexJob",
@@ -1266,7 +1266,7 @@
     "path": "/authority-storage/reindex"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-reindex 0.1",
     "methods": "delete:operation/deleteReindexJob get:operation/getReindexJob",
@@ -6256,7 +6256,7 @@
     "path": "/licenses/licenses/{licenseId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "instance-authority-linking-rules 1.1",
     "methods": "get:operation/getInstanceAuthorityLinkingRules",
@@ -6264,7 +6264,7 @@
     "path": "/linking-rules/instance-authority"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "instance-authority-linking-rules 1.1",
     "methods": "get:operation/getInstanceAuthorityLinkingRuleById patch:operation/patchInstanceAuthorityLinkingRuleById",
@@ -6272,7 +6272,7 @@
     "path": "/linking-rules/instance-authority/{ruleId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "instance-authority-links-suggestions 1.2",
     "methods": "post:operation/suggestLinksForMarcRecord",
@@ -6280,7 +6280,7 @@
     "path": "/links-suggestions/marc"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "instance-authority-links 2.1",
     "methods": "post:operation/countLinksByAuthorityIds",
@@ -6288,7 +6288,7 @@
     "path": "/links/authorities/bulk/count"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "instance-authority-links 2.1",
     "methods": "get:operation/getInstanceLinks put:operation/updateInstanceLinks",
@@ -6296,7 +6296,7 @@
     "path": "/links/instances/{instanceId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "instance-authority-links-statistics 2.0",
     "methods": "get:operation/getAuthorityLinksStats",
@@ -6304,7 +6304,7 @@
     "path": "/links/stats/authority"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "instance-authority-links-statistics 2.0",
     "methods": "get:operation/getLinkedBibUpdateStats",
