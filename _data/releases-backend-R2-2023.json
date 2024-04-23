@@ -66,12 +66,12 @@
     {
       "name": "mod-circulation-storage",
       "nameRepo": "mod-circulation-storage",
-      "releaseDate": "2023-12-08T16:39:01+00:00",
-      "releaseName": "v17.1.7",
-      "releaseSha": "b74b2a740c32a20607128928390a4c3bc69d6086",
-      "releaseTag": "v17.1.7",
+      "releaseDate": "2024-04-18T11:34:30+00:00",
+      "releaseName": "v17.1.8",
+      "releaseSha": "2adaf85c401caf6f453f8feb46d830302890a67a",
+      "releaseTag": "v17.1.8",
       "releaseTarget": "master",
-      "version": "17.1.7"
+      "version": "17.1.8"
     },
     {
       "name": "mod-configuration",
@@ -286,12 +286,12 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2024-03-27T09:46:38+00:00",
-      "releaseName": "20.1.10",
-      "releaseSha": "0141b9b599dc42454cf456d956730d61cd83d77b",
-      "releaseTag": "v20.1.10",
+      "releaseDate": "2024-04-19T11:41:12+00:00",
+      "releaseName": "20.1.11",
+      "releaseSha": "5f0cca071a84c3fa6e6e168dd6bfd62e46f9b944",
+      "releaseTag": "v20.1.11",
       "releaseTarget": "master",
-      "version": "20.1.10"
+      "version": "20.1.11"
     },
     {
       "name": "mod-inventory-storage",
@@ -436,12 +436,12 @@
     {
       "name": "mod-orders",
       "nameRepo": "mod-orders",
-      "releaseDate": "2024-03-15T15:39:31+00:00",
-      "releaseName": "v12.7.2",
-      "releaseSha": "30e1042d53ef1f80fe0aa8ab2593ee21fdffd1de",
-      "releaseTag": "v12.7.2",
+      "releaseDate": "2024-04-22T14:49:02+00:00",
+      "releaseName": "v12.7.3",
+      "releaseSha": "339628c86e6011364c8f9a55db40b2accbc06ca3",
+      "releaseTag": "v12.7.3",
       "releaseTarget": "master",
-      "version": "12.7.2"
+      "version": "12.7.3"
     },
     {
       "name": "mod-orders-storage",
