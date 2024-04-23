@@ -772,7 +772,7 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/swagger.api/mod-entities-links.yaml"
+        "target/api/openapi/openapi.yaml"
       ],
       "raml": [],
       "upload": []
@@ -946,7 +946,6 @@
         "ramls/ledger_rollover.raml",
         "ramls/ledger_rollover_logs.raml",
         "ramls/ledger_rollover_progress.raml",
-        "ramls/transaction-summary.raml",
         "ramls/transaction.raml"
       ],
       "upload": []
@@ -1769,7 +1768,7 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/swagger.api/mod-search.yaml"
+        "target/api/openapi/openapi.yaml"
       ],
       "raml": [],
       "upload": [

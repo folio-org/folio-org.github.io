@@ -830,7 +830,7 @@
     "apiDescription": "src/main/resources/swagger.api/mgr-tenant-entitlements.yaml",
     "apiType": "oas",
     "interface": "entitlement-flows 1.0",
-    "methods": "get:operation/findEntitlementStages",
+    "methods": "get:operation/getApplicationFlowStages",
     "name": "mgr-tenant-entitlements",
     "path": "/application-flows/{applicationFlowId}/stages"
   },
@@ -838,7 +838,7 @@
     "apiDescription": "src/main/resources/swagger.api/mgr-tenant-entitlements.yaml",
     "apiType": "oas",
     "interface": "entitlement-flows 1.0",
-    "methods": "get:operation/getEntitlementStageByName",
+    "methods": "get:operation/getApplicationFlowStageByName",
     "name": "mgr-tenant-entitlements",
     "path": "/application-flows/{applicationFlowId}/stages/{stageName}"
   },
@@ -1194,7 +1194,7 @@
     "path": "/authn/update"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-note-types 1.0",
     "methods": "get:operation/retrieveAuthorityNoteTypes post:operation/createAuthorityNoteType",
@@ -1202,7 +1202,7 @@
     "path": "/authority-note-types"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-note-types 1.0",
     "methods": "delete:operation/deleteAuthorityNoteType get:operation/getAuthorityNoteType put:operation/updateAuthorityNoteType",
@@ -1210,7 +1210,7 @@
     "path": "/authority-note-types/{id}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-source-files 2.2",
     "methods": "get:operation/retrieveAuthoritySourceFiles post:operation/createAuthoritySourceFile",
@@ -1218,7 +1218,7 @@
     "path": "/authority-source-files"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-source-files 2.2",
     "methods": "delete:operation/deleteAuthoritySourceFile get:operation/getAuthoritySourceFile patch:operation/patchAuthoritySourceFile",
@@ -1226,7 +1226,7 @@
     "path": "/authority-source-files/{id}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-source-files 2.2",
     "methods": "post:operation/newAuthoritySourceFileNextHrid",
@@ -1234,7 +1234,7 @@
     "path": "/authority-source-files/{id}/hrid"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-storage 2.1",
     "methods": "get:operation/retrieveAuthorities post:operation/createAuthority",
@@ -1242,7 +1242,7 @@
     "path": "/authority-storage/authorities"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-storage 2.1",
     "methods": "post:operation/createAuthorityBulk",
@@ -1250,7 +1250,7 @@
     "path": "/authority-storage/authorities/bulk"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-storage 2.1",
     "methods": "delete:operation/deleteAuthority get:operation/getAuthority put:operation/updateAuthority",
@@ -1258,7 +1258,7 @@
     "path": "/authority-storage/authorities/{id}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-reindex 0.1",
     "methods": "get:operation/getReindexJobs post:operation/submitReindexJob",
@@ -1266,7 +1266,7 @@
     "path": "/authority-storage/reindex"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "authority-reindex 0.1",
     "methods": "delete:operation/deleteReindexJob get:operation/getReindexJob",
@@ -1642,7 +1642,7 @@
     "path": "/bl-users/settings/myprofile/password"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "browse 1.3",
     "methods": "get:operation/browseAuthorities",
@@ -1650,7 +1650,7 @@
     "path": "/browse/authorities"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "browse 1.3",
     "methods": "get:operation/browseInstancesByCallNumber",
@@ -1658,7 +1658,7 @@
     "path": "/browse/call-numbers/instances"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "browse 1.3",
     "methods": "get:operation/browseInstancesByClassificationNumber",
@@ -1666,7 +1666,7 @@
     "path": "/browse/classification-numbers/{browseOptionId}/instances"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "browse-config 1.0",
     "methods": "get:operation/getBrowseConfigs",
@@ -1674,7 +1674,7 @@
     "path": "/browse/config/{browseType}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "browse-config 1.0",
     "methods": "put:operation/putBrowseConfig",
@@ -1682,7 +1682,7 @@
     "path": "/browse/config/{browseType}/{browseOptionId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "browse 1.3",
     "methods": "get:operation/browseInstancesByContributor",
@@ -1690,7 +1690,7 @@
     "path": "/browse/contributors/instances"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "browse 1.3",
     "methods": "get:operation/browseInstancesBySubject",
@@ -3902,7 +3902,15 @@
     "apiDescription": "src/main/resources/swagger.api/mgr-tenant-entitlements.yaml",
     "apiType": "oas",
     "interface": "entitlement-flows 1.0",
-    "methods": "get:operation/getEntitlementFlowById",
+    "methods": "get:operation/findFlows",
+    "name": "mgr-tenant-entitlements",
+    "path": "/entitlement-flows"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mgr-tenant-entitlements.yaml",
+    "apiType": "oas",
+    "interface": "entitlement-flows 1.0",
+    "methods": "get:operation/getFlowById",
     "name": "mgr-tenant-entitlements",
     "path": "/entitlement-flows/{flowId}"
   },
@@ -3910,7 +3918,7 @@
     "apiDescription": "src/main/resources/swagger.api/mgr-tenant-entitlements.yaml",
     "apiType": "oas",
     "interface": "entitlements 1.0",
-    "methods": "delete:operation/delete get:operation/findByQuery post:operation/create",
+    "methods": "delete:operation/delete get:operation/findByQuery post:operation/create put:operation/upgrade",
     "name": "mgr-tenant-entitlements",
     "path": "/entitlements"
   },
@@ -4452,22 +4460,6 @@
     "path": "/finance-storage/groups/{id}"
   },
   {
-    "apiDescription": "ramls/transaction-summary.raml",
-    "apiType": "raml",
-    "interface": "finance-storage.invoice-transaction-summaries 2.1",
-    "methods": "post:finance_storage_invoice_transaction_summaries_post",
-    "name": "mod-finance-storage",
-    "path": "/finance-storage/invoice-transaction-summaries"
-  },
-  {
-    "apiDescription": "ramls/transaction-summary.raml",
-    "apiType": "raml",
-    "interface": "finance-storage.invoice-transaction-summaries 2.1",
-    "methods": "delete:finance_storage_invoice_transaction_summaries__id__delete get:finance_storage_invoice_transaction_summaries__id__get put:finance_storage_invoice_transaction_summaries__id__put",
-    "name": "mod-finance-storage",
-    "path": "/finance-storage/invoice-transaction-summaries/{id}"
-  },
-  {
     "apiDescription": "ramls/ledger_rollover.raml",
     "apiType": "raml",
     "interface": "finance-storage.ledger-rollovers 2.0",
@@ -4564,33 +4556,17 @@
     "path": "/finance-storage/ledgers/{id}"
   },
   {
-    "apiDescription": "ramls/transaction-summary.raml",
-    "apiType": "raml",
-    "interface": "finance-storage.order-transaction-summaries 1.1",
-    "methods": "post:finance_storage_order_transaction_summaries_post",
-    "name": "mod-finance-storage",
-    "path": "/finance-storage/order-transaction-summaries"
-  },
-  {
-    "apiDescription": "ramls/transaction-summary.raml",
-    "apiType": "raml",
-    "interface": "finance-storage.order-transaction-summaries 1.1",
-    "methods": "delete:finance_storage_order_transaction_summaries__id__delete get:finance_storage_order_transaction_summaries__id__get put:finance_storage_order_transaction_summaries__id__put",
-    "name": "mod-finance-storage",
-    "path": "/finance-storage/order-transaction-summaries/{id}"
-  },
-  {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "interface": "finance-storage.transactions 4.1",
-    "methods": "get:finance_storage_transactions_get post:finance_storage_transactions_post",
+    "interface": "finance-storage.transactions 5.0",
+    "methods": "get:finance_storage_transactions_get",
     "name": "mod-finance-storage",
     "path": "/finance-storage/transactions"
   },
   {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "interface": "finance-storage.transactions 4.1",
+    "interface": "finance-storage.transactions 5.0",
     "methods": "post:finance_storage_transactions_batch_all_or_nothing_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/transactions/batch-all-or-nothing"
@@ -4598,8 +4574,8 @@
   {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "interface": "finance-storage.transactions 4.1",
-    "methods": "delete:finance_storage_transactions__id__delete get:finance_storage_transactions__id__get put:finance_storage_transactions__id__put",
+    "interface": "finance-storage.transactions 5.0",
+    "methods": "get:finance_storage_transactions__id__get",
     "name": "mod-finance-storage",
     "path": "/finance-storage/transactions/{id}"
   },
@@ -6304,7 +6280,7 @@
     "path": "/licenses/licenses/{licenseId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "instance-authority-linking-rules 1.1",
     "methods": "get:operation/getInstanceAuthorityLinkingRules",
@@ -6312,7 +6288,7 @@
     "path": "/linking-rules/instance-authority"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "instance-authority-linking-rules 1.1",
     "methods": "get:operation/getInstanceAuthorityLinkingRuleById patch:operation/patchInstanceAuthorityLinkingRuleById",
@@ -6320,7 +6296,7 @@
     "path": "/linking-rules/instance-authority/{ruleId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "instance-authority-links-suggestions 1.2",
     "methods": "post:operation/suggestLinksForMarcRecord",
@@ -6328,7 +6304,7 @@
     "path": "/links-suggestions/marc"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "instance-authority-links 2.1",
     "methods": "post:operation/countLinksByAuthorityIds",
@@ -6336,7 +6312,7 @@
     "path": "/links/authorities/bulk/count"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "instance-authority-links 2.1",
     "methods": "get:operation/getInstanceLinks put:operation/updateInstanceLinks",
@@ -6344,7 +6320,7 @@
     "path": "/links/instances/{instanceId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "instance-authority-links-statistics 2.0",
     "methods": "get:operation/getAuthorityLinksStats",
@@ -6352,7 +6328,7 @@
     "path": "/links/stats/authority"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-entities-links.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "instance-authority-links-statistics 2.0",
     "methods": "get:operation/getLinkedBibUpdateStats",
@@ -9197,7 +9173,7 @@
     "path": "/scheduler/timers/{id}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "search 1.3",
     "methods": "get:operation/searchAuthorities",
@@ -9205,7 +9181,7 @@
     "path": "/search/authorities"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "search-config 0.2",
     "methods": "get:operation/getAllFeatures post:operation/saveFeatureConfiguration",
@@ -9213,7 +9189,7 @@
     "path": "/search/config/features"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "search-config 0.2",
     "methods": "delete:operation/deleteFeatureConfigurationById put:operation/updateFeatureConfiguration",
@@ -9221,7 +9197,7 @@
     "path": "/search/config/features/{featureId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "search-config 0.2",
     "methods": "get:operation/getAllLanguageConfigs post:operation/createLanguageConfig",
@@ -9229,7 +9205,7 @@
     "path": "/search/config/languages"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "search-config 0.2",
     "methods": "delete:operation/deleteLanguageConfig put:operation/updateLanguageConfig",
@@ -9237,7 +9213,7 @@
     "path": "/search/config/languages/{code}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "consortium-search 1.0",
     "methods": "get:operation/getConsortiumHoldings",
@@ -9245,7 +9221,7 @@
     "path": "/search/consortium/holdings"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "consortium-search 1.0",
     "methods": "get:operation/getConsortiumItems",
@@ -9253,7 +9229,7 @@
     "path": "/search/consortium/items"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "search 1.3",
     "methods": "get:operation/getHoldingIds",
@@ -9261,7 +9237,7 @@
     "path": "/search/holdings/ids"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "indices 0.7",
     "methods": "post:operation/createIndices",
@@ -9269,7 +9245,7 @@
     "path": "/search/index/indices"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "indices 0.7",
     "methods": "post:operation/reindexInventoryRecords",
@@ -9277,7 +9253,7 @@
     "path": "/search/index/inventory/reindex"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "indices 0.7",
     "methods": "post:operation/updateMappings",
@@ -9285,7 +9261,7 @@
     "path": "/search/index/mappings"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "indices 0.7",
     "methods": "post:operation/indexRecords",
@@ -9293,7 +9269,7 @@
     "path": "/search/index/records"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "indices 0.7",
     "methods": "put:operation/updateIndexDynamicSettings",
@@ -9301,7 +9277,7 @@
     "path": "/search/index/settings"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "search 1.3",
     "methods": "get:operation/searchInstances",
@@ -9309,7 +9285,7 @@
     "path": "/search/instances"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "search 1.3",
     "methods": "get:operation/getInstanceIds",
@@ -9317,7 +9293,7 @@
     "path": "/search/instances/ids"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "resource-ids-streaming 0.3",
     "methods": "post:operation/submitIdsJob",
@@ -9325,7 +9301,7 @@
     "path": "/search/resources/jobs"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "resource-ids-streaming 0.3",
     "methods": "get:operation/getIdsJob",
@@ -9333,7 +9309,7 @@
     "path": "/search/resources/jobs/{jobId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "resource-ids-streaming 0.3",
     "methods": "get:operation/getResourceIds",
@@ -9341,7 +9317,7 @@
     "path": "/search/resources/jobs/{jobId}/ids"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-search.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "search 1.3",
     "methods": "get:operation/getFacets",
