@@ -1642,6 +1642,62 @@
     "path": "/bl-users/settings/myprofile/password"
   },
   {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "browse 1.3",
+    "methods": "get:operation/browseAuthorities",
+    "name": "mod-search",
+    "path": "/browse/authorities"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "browse 1.3",
+    "methods": "get:operation/browseInstancesByCallNumber",
+    "name": "mod-search",
+    "path": "/browse/call-numbers/instances"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "browse 1.3",
+    "methods": "get:operation/browseInstancesByClassificationNumber",
+    "name": "mod-search",
+    "path": "/browse/classification-numbers/{browseOptionId}/instances"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "browse-config 1.0",
+    "methods": "get:operation/getBrowseConfigs",
+    "name": "mod-search",
+    "path": "/browse/config/{browseType}"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "browse-config 1.0",
+    "methods": "put:operation/putBrowseConfig",
+    "name": "mod-search",
+    "path": "/browse/config/{browseType}/{browseOptionId}"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "browse 1.3",
+    "methods": "get:operation/browseInstancesByContributor",
+    "name": "mod-search",
+    "path": "/browse/contributors/instances"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "browse 1.3",
+    "methods": "get:operation/browseInstancesBySubject",
+    "name": "mod-search",
+    "path": "/browse/subjects/instances"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
     "interface": "bulk-operations 1.2",
@@ -4404,22 +4460,6 @@
     "path": "/finance-storage/groups/{id}"
   },
   {
-    "apiDescription": "ramls/transaction-summary.raml",
-    "apiType": "raml",
-    "interface": "finance-storage.invoice-transaction-summaries 2.1",
-    "methods": "post:finance_storage_invoice_transaction_summaries_post",
-    "name": "mod-finance-storage",
-    "path": "/finance-storage/invoice-transaction-summaries"
-  },
-  {
-    "apiDescription": "ramls/transaction-summary.raml",
-    "apiType": "raml",
-    "interface": "finance-storage.invoice-transaction-summaries 2.1",
-    "methods": "delete:finance_storage_invoice_transaction_summaries__id__delete get:finance_storage_invoice_transaction_summaries__id__get put:finance_storage_invoice_transaction_summaries__id__put",
-    "name": "mod-finance-storage",
-    "path": "/finance-storage/invoice-transaction-summaries/{id}"
-  },
-  {
     "apiDescription": "ramls/ledger_rollover.raml",
     "apiType": "raml",
     "interface": "finance-storage.ledger-rollovers 2.0",
@@ -4516,33 +4556,17 @@
     "path": "/finance-storage/ledgers/{id}"
   },
   {
-    "apiDescription": "ramls/transaction-summary.raml",
-    "apiType": "raml",
-    "interface": "finance-storage.order-transaction-summaries 1.1",
-    "methods": "post:finance_storage_order_transaction_summaries_post",
-    "name": "mod-finance-storage",
-    "path": "/finance-storage/order-transaction-summaries"
-  },
-  {
-    "apiDescription": "ramls/transaction-summary.raml",
-    "apiType": "raml",
-    "interface": "finance-storage.order-transaction-summaries 1.1",
-    "methods": "delete:finance_storage_order_transaction_summaries__id__delete get:finance_storage_order_transaction_summaries__id__get put:finance_storage_order_transaction_summaries__id__put",
-    "name": "mod-finance-storage",
-    "path": "/finance-storage/order-transaction-summaries/{id}"
-  },
-  {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "interface": "finance-storage.transactions 4.1",
-    "methods": "get:finance_storage_transactions_get post:finance_storage_transactions_post",
+    "interface": "finance-storage.transactions 5.0",
+    "methods": "get:finance_storage_transactions_get",
     "name": "mod-finance-storage",
     "path": "/finance-storage/transactions"
   },
   {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "interface": "finance-storage.transactions 4.1",
+    "interface": "finance-storage.transactions 5.0",
     "methods": "post:finance_storage_transactions_batch_all_or_nothing_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/transactions/batch-all-or-nothing"
@@ -4550,8 +4574,8 @@
   {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
-    "interface": "finance-storage.transactions 4.1",
-    "methods": "delete:finance_storage_transactions__id__delete get:finance_storage_transactions__id__get put:finance_storage_transactions__id__put",
+    "interface": "finance-storage.transactions 5.0",
+    "methods": "get:finance_storage_transactions__id__get",
     "name": "mod-finance-storage",
     "path": "/finance-storage/transactions/{id}"
   },
@@ -9147,6 +9171,158 @@
     "methods": "delete:operation/deleteSchedulerTimerById get:operation/getSchedulerTimerById put:operation/updateSchedulerTimerById",
     "name": "mod-scheduler",
     "path": "/scheduler/timers/{id}"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "search 1.3",
+    "methods": "get:operation/searchAuthorities",
+    "name": "mod-search",
+    "path": "/search/authorities"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "search-config 0.2",
+    "methods": "get:operation/getAllFeatures post:operation/saveFeatureConfiguration",
+    "name": "mod-search",
+    "path": "/search/config/features"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "search-config 0.2",
+    "methods": "delete:operation/deleteFeatureConfigurationById put:operation/updateFeatureConfiguration",
+    "name": "mod-search",
+    "path": "/search/config/features/{featureId}"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "search-config 0.2",
+    "methods": "get:operation/getAllLanguageConfigs post:operation/createLanguageConfig",
+    "name": "mod-search",
+    "path": "/search/config/languages"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "search-config 0.2",
+    "methods": "delete:operation/deleteLanguageConfig put:operation/updateLanguageConfig",
+    "name": "mod-search",
+    "path": "/search/config/languages/{code}"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "consortium-search 1.0",
+    "methods": "get:operation/getConsortiumHoldings",
+    "name": "mod-search",
+    "path": "/search/consortium/holdings"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "consortium-search 1.0",
+    "methods": "get:operation/getConsortiumItems",
+    "name": "mod-search",
+    "path": "/search/consortium/items"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "search 1.3",
+    "methods": "get:operation/getHoldingIds",
+    "name": "mod-search",
+    "path": "/search/holdings/ids"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "indices 0.7",
+    "methods": "post:operation/createIndices",
+    "name": "mod-search",
+    "path": "/search/index/indices"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "indices 0.7",
+    "methods": "post:operation/reindexInventoryRecords",
+    "name": "mod-search",
+    "path": "/search/index/inventory/reindex"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "indices 0.7",
+    "methods": "post:operation/updateMappings",
+    "name": "mod-search",
+    "path": "/search/index/mappings"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "indices 0.7",
+    "methods": "post:operation/indexRecords",
+    "name": "mod-search",
+    "path": "/search/index/records"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "indices 0.7",
+    "methods": "put:operation/updateIndexDynamicSettings",
+    "name": "mod-search",
+    "path": "/search/index/settings"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "search 1.3",
+    "methods": "get:operation/searchInstances",
+    "name": "mod-search",
+    "path": "/search/instances"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "search 1.3",
+    "methods": "get:operation/getInstanceIds",
+    "name": "mod-search",
+    "path": "/search/instances/ids"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "resource-ids-streaming 0.3",
+    "methods": "post:operation/submitIdsJob",
+    "name": "mod-search",
+    "path": "/search/resources/jobs"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "resource-ids-streaming 0.3",
+    "methods": "get:operation/getIdsJob",
+    "name": "mod-search",
+    "path": "/search/resources/jobs/{jobId}"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "resource-ids-streaming 0.3",
+    "methods": "get:operation/getResourceIds",
+    "name": "mod-search",
+    "path": "/search/resources/jobs/{jobId}/ids"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "search 1.3",
+    "methods": "get:operation/getFacets",
+    "name": "mod-search",
+    "path": "/search/{recordType}/facets"
   },
   {
     "apiDescription": "openapi/serials-management.yaml",
