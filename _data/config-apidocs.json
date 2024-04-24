@@ -1665,6 +1665,23 @@
   {
     "config": {
       "oas": [
+        "target/api/openapi/openapi.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5"
+    },
+    "name": "mod-record-specifications",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
         "src/main/resources/swagger.api/remote-storage.yaml"
       ],
       "raml": [],
