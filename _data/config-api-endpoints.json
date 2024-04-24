@@ -9215,7 +9215,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.0",
+    "interface": "consortium-search 1.1",
     "methods": "get:operation/getConsortiumHoldings",
     "name": "mod-search",
     "path": "/search/consortium/holdings"
@@ -9223,10 +9223,18 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.0",
+    "interface": "consortium-search 1.1",
     "methods": "get:operation/getConsortiumItems",
     "name": "mod-search",
     "path": "/search/consortium/items"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "consortium-search 1.1",
+    "methods": "get:operation/getConsortiumLocations",
+    "name": "mod-search",
+    "path": "/search/consortium/locations"
   },
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
