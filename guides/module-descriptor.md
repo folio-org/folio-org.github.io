@@ -252,7 +252,7 @@ Other LaunchDescriptor examples:
 
 ## Testing the modifications
 
-Use [jq](https://stedolan.github.io/jq/):
+Use [jq](https://github.com/jqlang/jq):
 
 ```
 jq '.' descriptors/ModuleDescriptor-template.json
