@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-04-05T00:22:36.804398+00:00"
+    "generatedDateTime": "2024-04-23T23:55:39.713613+00:00"
   },
   "repos": [
     {
@@ -2652,6 +2652,31 @@
     {
       "apiTypes": "OAS",
       "defaultBranch": "master",
+      "description": "Module manages record specifications and validates records against them",
+      "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-record-specifications",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Module for managing and validating records against predefined specifications.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml",
+        "spectral-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
+    },
+    {
+      "apiTypes": "OAS",
+      "defaultBranch": "master",
       "description": "Backend module for remote storage.",
       "docDirName": null,
       "hintOas": true,
@@ -2849,7 +2874,8 @@
         "api-doc.yml",
         "api-lint.yml",
         "api-schema-lint.yml",
-        "elasticsearch.yml"
+        "elasticsearch.yml",
+        "spectral-lint.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -4476,13 +4502,7 @@
       "repoType": "ui",
       "snippetIntro": "<p>The Lists UI Module, or <code>ui-lists</code>, is a Stripes UI Module used to create and manage Lists which are queries across multiple modules (for example: find all items marked as missing or declared lost, or find all open loans assigned to inactive users).</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml",
-        "test.yml"
-      ],
-      "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {

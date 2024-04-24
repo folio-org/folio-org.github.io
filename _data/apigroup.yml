@@ -141,6 +141,7 @@ other:
     - mod-lists
     - mod-ldp
     - mod-reading-room
+    - mod-record-specifications
     - mod-scheduler
     - folio-custom-fields
     - folio-query-tool-metadata

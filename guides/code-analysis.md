@@ -110,7 +110,7 @@ The tools can be used in FOLIO CI, and locally prior to commit.
 
 These tools are not directly included in continuous integration, but are certainly also useful as local tools.
 
-For JSON files, [jq](https://github.com/stedolan/jq) is useful for general validation, pretty-printing and linting, and for many JSON processing and viewing tasks.
+For JSON files, [jq](https://github.com/jqlang/jq) is useful for general validation, pretty-printing and linting, and for many JSON processing and viewing tasks.
 
 JSON Schema validator such as [z-schema](https://github.com/zaggino/z-schema).
 See example use for local maintenance of [ModuleDescriptors](/guides/module-descriptor).
