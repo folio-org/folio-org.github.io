@@ -7651,7 +7651,7 @@
   {
     "apiDescription": "ramls/routing-lists.raml",
     "apiType": "raml",
-    "interface": "orders.routing-list 1.0",
+    "interface": "orders.routing-lists 1.0",
     "methods": "get:orders_routing_lists_get post:orders_routing_lists_post",
     "name": "mod-orders",
     "path": "/orders/routing-lists"
@@ -7659,7 +7659,7 @@
   {
     "apiDescription": "ramls/routing-lists.raml",
     "apiType": "raml",
-    "interface": "orders.routing-list 1.0",
+    "interface": "orders.routing-lists 1.0",
     "methods": "delete:orders_routing_lists__id__delete get:orders_routing_lists__id__get put:orders_routing_lists__id__put",
     "name": "mod-orders",
     "path": "/orders/routing-lists/{id}"
@@ -7667,7 +7667,7 @@
   {
     "apiDescription": "ramls/routing-lists.raml",
     "apiType": "raml",
-    "interface": "orders.routing-list 1.0",
+    "interface": "orders.routing-lists 1.0",
     "methods": "get:orders_routing_lists__id__template_get",
     "name": "mod-orders",
     "path": "/orders/routing-lists/{id}/template"
