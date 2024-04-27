@@ -146,12 +146,12 @@
     {
       "name": "mod-di-converter-storage",
       "nameRepo": "mod-di-converter-storage",
-      "releaseDate": "2024-03-01T17:17:43+00:00",
-      "releaseName": "v2.1.8",
-      "releaseSha": "b80c335df10d3fd59cc2ff693f34fa238a7de166",
-      "releaseTag": "v2.1.8",
+      "releaseDate": "2024-04-24T10:41:21+00:00",
+      "releaseName": "2.1.9",
+      "releaseSha": "b2c7c3be3afa3c02c5f5323b35972eef2d472806",
+      "releaseTag": "v2.1.9",
       "releaseTarget": "master",
-      "version": "2.1.8"
+      "version": "2.1.9"
     },
     {
       "name": "mod-ebsconet",
