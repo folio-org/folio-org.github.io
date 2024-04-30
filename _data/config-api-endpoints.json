@@ -10003,6 +10003,14 @@
     "path": "/transactions"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
+    "apiType": "oas",
+    "interface": "transactions 1.0",
+    "methods": "get:operation/getTransactionStatusList",
+    "name": "mod-dcb",
+    "path": "/transactions/status"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/edge-dcb.yaml",
     "apiType": "oas",
     "methods": "post:operation/createDCBTransaction",
