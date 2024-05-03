@@ -6,12 +6,12 @@
     {
       "name": "mod-agreements",
       "nameRepo": "mod-agreements",
-      "releaseDate": "2023-11-23T11:30:12+00:00",
-      "releaseName": "Version 6.0.2",
-      "releaseSha": "25643ad9316fa97b5fb5ea8d0cef631d5ac81953",
-      "releaseTag": "v6.0.2",
-      "releaseTarget": "release/6.0.x",
-      "version": "6.0.2"
+      "releaseDate": "2024-05-01T10:33:12+00:00",
+      "releaseName": "Version 6.1.2",
+      "releaseSha": "c27d759b014c62d0757479369e05f5975de7c73e",
+      "releaseTag": "v6.1.2",
+      "releaseTarget": "release/6.1.x",
+      "version": "6.1.2"
     },
     {
       "name": "mod-audit",
