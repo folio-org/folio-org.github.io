@@ -4211,6 +4211,13 @@
     "path": "/export-all"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/postExportDeletedMarcIds",
+    "name": "mod-data-export",
+    "path": "/export-deleted"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
     "apiType": "oas",
     "methods": "get:operation/getExtendedRemoteLocationConfigurationMappings post:operation/postExtendedRemoteLocationConfigurationMapping",
@@ -6756,7 +6763,7 @@
     "apiDescription": "src/main/resources/swagger.api/marc-migrations.yaml",
     "apiType": "oas",
     "interface": "marc-migrations 1.0",
-    "methods": "get:operation/getMarcMigrationById",
+    "methods": "get:operation/getMarcMigrationById put:operation/saveMarcMigration",
     "name": "mod-marc-migrations",
     "path": "/marc-migrations/{operationId}"
   },
@@ -9697,6 +9704,14 @@
     "path": "/source-storage/stream/source-records"
   },
   {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "specification-storage 1.0",
+    "methods": "get:operation/getSpecifications",
+    "name": "mod-record-specifications",
+    "path": "/specification-storage/specifications"
+  },
+  {
     "apiDescription": "ramls/staff-slips.raml",
     "apiType": "raml",
     "interface": "staff-slips-storage 1.0",
@@ -9770,13 +9785,6 @@
     "apiType": "oas",
     "methods": "get:null",
     "name": "mod-data-export-worker",
-    "path": "/stub"
-  },
-  {
-    "apiDescription": "target/api/openapi/openapi.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/stub",
-    "name": "mod-record-specifications",
     "path": "/stub"
   },
   {
@@ -10001,6 +10009,14 @@
     "methods": "get:operation/getAllTransactions",
     "name": "mod-inn-reach",
     "path": "/transactions"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
+    "apiType": "oas",
+    "interface": "transactions 1.0",
+    "methods": "get:operation/getTransactionStatusList",
+    "name": "mod-dcb",
+    "path": "/transactions/status"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/edge-dcb.yaml",
