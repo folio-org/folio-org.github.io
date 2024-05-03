@@ -24,7 +24,7 @@ The foundation described in
 
 Watch the [Stripes overview](/community/events/#stripes-coburn-2018-08) presentation.
 
-Then follow [Creating a new development setup for Stripes](https://github.com/folio-org/stripes/blob/master/doc/new-development-setup.md) and the [Stripes: quick start](https://github.com/folio-org/stripes/blob/master/doc/quick-start.md) and the guide to [Running a local FOLIO system](/guides/run-local-folio/) for guidance to establish your local FOLIO work environment.
+Then follow Wiki [Developing UI Modules with Stripes](https://folio-org.atlassian.net/wiki/x/DQBpCQ) and [Creating a new development setup for Stripes](https://github.com/folio-org/stripes/blob/master/doc/new-development-setup.md) and the [Stripes: quick start](https://github.com/folio-org/stripes/blob/master/doc/quick-start.md) and the guide to [Running a local FOLIO system](/guides/run-local-folio/) for guidance to establish your local FOLIO work environment.
 
 Then move on to creating a real module with the help of [stripes-cli](https://github.com/folio-org/stripes-cli)
 and in particular the [App development](https://github.com/folio-org/stripes-cli/blob/master/doc/user-guide.md#app-development) section.
