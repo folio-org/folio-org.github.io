@@ -6,12 +6,12 @@
     {
       "name": "mod-agreements",
       "nameRepo": "mod-agreements",
-      "releaseDate": "2024-05-01T10:33:12+00:00",
-      "releaseName": "Version 6.1.2",
-      "releaseSha": "c27d759b014c62d0757479369e05f5975de7c73e",
-      "releaseTag": "v6.1.2",
-      "releaseTarget": "release/6.1.x",
-      "version": "6.1.2"
+      "releaseDate": "2024-05-03T14:57:04+00:00",
+      "releaseName": "Version 6.0.3",
+      "releaseSha": "b9b3ff06b71747de1b7c3471d8fa160e3311e280",
+      "releaseTag": "v6.0.3",
+      "releaseTarget": "release/6.0.x",
+      "version": "6.0.3"
     },
     {
       "name": "mod-audit",
@@ -356,12 +356,12 @@
     {
       "name": "mod-licenses",
       "nameRepo": "mod-licenses",
-      "releaseDate": "2023-11-23T11:30:19+00:00",
-      "releaseName": "Version 5.0.2",
-      "releaseSha": "c25cc311ec6c504f6793970518ce343d17531112",
-      "releaseTag": "v5.0.2",
+      "releaseDate": "2024-05-03T14:57:07+00:00",
+      "releaseName": "Version 5.0.3",
+      "releaseSha": "e1017bc1e5835c0216f84ed9ae64ae76e5fc65bf",
+      "releaseTag": "v5.0.3",
       "releaseTarget": "release/5.0.x",
-      "version": "5.0.2"
+      "version": "5.0.3"
     },
     {
       "name": "mod-lists",
@@ -576,12 +576,12 @@
     {
       "name": "mod-service-interaction",
       "nameRepo": "mod-service-interaction",
-      "releaseDate": "2024-02-07T10:10:26+00:00",
-      "releaseName": "Version 3.0.3",
-      "releaseSha": "ddf3a626e07d616b5dcc541ef7050cc07ba2d23f",
-      "releaseTag": "v3.0.3",
+      "releaseDate": "2024-05-03T14:57:10+00:00",
+      "releaseName": "Version 3.0.4",
+      "releaseSha": "ed6185e20261cbf6728b42153534d04233b76599",
+      "releaseTag": "v3.0.4",
       "releaseTarget": "release_3.0.x",
-      "version": "3.0.3"
+      "version": "3.0.4"
     },
     {
       "name": "mod-settings",
