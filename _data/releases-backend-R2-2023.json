@@ -286,12 +286,12 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2024-04-19T11:41:12+00:00",
-      "releaseName": "20.1.11",
-      "releaseSha": "5f0cca071a84c3fa6e6e168dd6bfd62e46f9b944",
-      "releaseTag": "v20.1.11",
+      "releaseDate": "2024-05-07T12:09:34+00:00",
+      "releaseName": "20.1.12",
+      "releaseSha": "d512040d15c209f3a5b296cbab84c70ab2229e66",
+      "releaseTag": "v20.1.12",
       "releaseTarget": "master",
-      "version": "20.1.11"
+      "version": "20.1.12"
     },
     {
       "name": "mod-inventory-storage",
