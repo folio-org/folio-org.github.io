@@ -1424,6 +1424,7 @@
       "raml": [
         "ramls/acquisition_method.raml",
         "ramls/acquisitions-units.raml",
+        "ramls/bind-pieces.raml",
         "ramls/check-in.raml",
         "ramls/configuration.raml",
         "ramls/expect.raml",
