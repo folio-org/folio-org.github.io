@@ -7442,6 +7442,13 @@
     "path": "/orders/acquisition-methods/{id}"
   },
   {
+    "apiDescription": "ramls/bind-pieces.raml",
+    "apiType": "raml",
+    "methods": "post:orders_bind_post",
+    "name": "mod-orders",
+    "path": "/orders/bind"
+  },
+  {
     "apiDescription": "ramls/check-in.raml",
     "apiType": "raml",
     "interface": "receiving 2.0",
