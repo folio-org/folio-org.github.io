@@ -7444,9 +7444,10 @@
   {
     "apiDescription": "ramls/bind-pieces.raml",
     "apiType": "raml",
-    "methods": "post:orders_bind_post",
+    "interface": "orders.bind-pieces 1.0",
+    "methods": "post:orders_bind_pieces_post",
     "name": "mod-orders",
-    "path": "/orders/bind"
+    "path": "/orders/bind-pieces"
   },
   {
     "apiDescription": "ramls/check-in.raml",
