@@ -606,12 +606,12 @@
     {
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
-      "releaseDate": "2024-02-09T13:44:38+00:00",
-      "releaseName": "5.7.6",
-      "releaseSha": "fd313ab3dc0ad1e23ef33a3d63ea95fe5f927a92",
-      "releaseTag": "v5.7.6",
+      "releaseDate": "2024-05-09T15:46:48+00:00",
+      "releaseName": "5.7.7",
+      "releaseSha": "a5a206d36746da3bd4eca934f6ce780f2e416c98",
+      "releaseTag": "v5.7.7",
       "releaseTarget": "master",
-      "version": "5.7.6"
+      "version": "5.7.7"
     },
     {
       "name": "mod-tags",
