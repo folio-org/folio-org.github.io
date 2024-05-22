@@ -9,7 +9,7 @@ faqOrder: 12
 
 Back-end Java-based modules can specify which build image to use during the Jenkins continuous integration builds.
 
-For front-end modules that still use Jenkins build rather than GitHub Workflows, the buildNode provides the relevant Nodejs version.
+For the few front-end modules that still use Jenkins build rather than GitHub Workflows, the buildNode provides the relevant Nodejs version.
 
 ## Using Java 17
 
@@ -20,10 +20,11 @@ For projects that use Java 17:
 * In [Jenkinsfile](/guides/jenkinsfile/), declare the mandatory module heath check endpoint via the Docker command `healthChkCmd` to use 'wget'. (There is no 'curl' available on the base image.) 
 * In Dockerfile, use:\
   `FROM folioci/alpine-jre-openjdk17:latest`
+* See other notes (e.g. POM file, and dependencies, and wget example) at Wiki [JDK 17 and Java 17](https://folio-org.atlassian.net/wiki/x/Th9N).
 
 ## Using Java 11
 
-For projects that use Java 11:
+For some projects that use Java 11 (there should now not be any):
 
 * In [Jenkinsfile](/guides/jenkinsfile/), declare this in the "buildMvn" section:\
   `buildNode = 'jenkins-agent-java11'`
