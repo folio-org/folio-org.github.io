@@ -48,8 +48,7 @@ Similarly okapi can be accessed via `folio-snapshot-core-okapi` (and see notes i
 -->
 
 The folio-snapshot and folio-snapshot-2 are constructed identically every 24 hours, with a 12-hour offset.
-
-There are two [flower release](/guides/regular-releases/) environments (the current and the previous) which are rebuilt weekly on a Sunday.
+There are also two [flower release](/guides/regular-releases/) environments (the current and the previous) which are rebuilt weekly on a Sunday.
 
 The environments are completely torn-down and rebuilt again.
 
@@ -74,20 +73,24 @@ then co-ordinate that on the Slack channel #hosted-reference-envs
 in that build's automatically generated [install.json](https://github.com/folio-org/platform-complete/blob/snapshot/install.json) file.
 Correlate the "build number" with that shown in the output log of the project's "Publish module descriptor" stage.
 
+### Troubleshooting
+
+Failures with the main builds are automatically sent to the `#hosted-reference-envs` Slack channel.
+
+Follow its links to the Jenkins job output.
+Refer to the FAQs
+[How to obtain reference environment module logs](/faqs/how-to-obtain-refenv-logs/)
+and
+[How to investigate Jenkins build logs](/faqs/how-to-investigate-jenkins-logs/)
+
+As noted in the [Platform hourly build](#platform-hourly-build) section below, it is vitally important that developers ensure success of the subsequent hourly build following any major changes that they merge to mainline (especially on a Friday afternoon). Continued failures of this hourly job will cause the “folio-snapshot” builds to use out-of-date install files.
+
 ### folio-snapshot
 
 [https://folio-snapshot.dev.folio.org/](https://folio-snapshot.dev.folio.org/)
 
 The server is built every day, to finish about 02:03 UTC.\
 (See Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot/) which starts about 01:24 UTC.).
-
-#### Platform hourly build
-
-The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
-
-The "snapshot" branch of the Stripes Platform is rebuilt every hour, starting about 19 minutes past the hour and finishing about 50 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
-If successful, then this will [regenerate](/guidelines/release-procedures/#add-to-platforms) the yarn.lock and install files of the Platform (see [note above](#install-json)), to be utilised by the abovementioned "folio-snapshot" job.
-So if there is an urgent need to [rebuild](#off-schedule-rebuilds) "folio-snapshot" outside of normal automation, so as to include a new snapshot of a module, then this build needs to have run before the "folio-snapshot" build is re-run.
 
 #### Included module versions
 
@@ -104,6 +107,17 @@ The server is built every day, to finish about 14:00 UTC.\
 (See Jenkins job: [folio-snapshot-2](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-2/) which starts about 13:21 UTC.)
 
 The folio-snapshot-latest is an alias for folio-snapshot-2.
+
+### Platform hourly build
+
+The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
+
+The "snapshot" branch of the Stripes Platform is rebuilt every hour, starting about 19 minutes past the hour and finishing about 50 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
+If successful, then this will [regenerate](/guidelines/release-procedures/#add-to-platforms) the yarn.lock and install files of the Platform (see [note above](#install-json)), to be utilised by the abovementioned "folio-snapshot" job.
+So if there is an urgent need to [rebuild](#off-schedule-rebuilds) "folio-snapshot" outside of normal automation, so as to include a new snapshot of a module, then this build needs to have run before the "folio-snapshot" build is re-run.
+
+It is vitally important that developers ensure success of the subsequent hourly build following any major changes that they merge to mainline (especially on a Friday afternoon). As noted in the previous paragraph, failures of this hourly job will cause the "folio-snapshot" builds to use out-of-date install files.
+Refer to the [Troubleshooting](#troubleshooting) assistance section above.
 
 ### folio-orchid
 

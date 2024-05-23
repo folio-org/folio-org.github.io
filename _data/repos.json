@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-04-23T23:55:39.713613+00:00"
+    "generatedDateTime": "2024-05-22T06:26:22.691494+00:00"
   },
   "repos": [
     {
@@ -299,7 +299,7 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": "<p>Provides an ability to retrieve license term information</p>",
+      "snippetIntro": "<p>Provides an ability to retrieve license term information from FOLIO to external systems. The data flow is <code>edge-erm &lt;-&gt; FOLIO &lt;-&gt; mod-agreements</code>.</p>",
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
@@ -2653,7 +2653,7 @@
       "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Module manages record specifications and validates records against them",
-      "docDirName": null,
+      "docDirName": "docs",
       "hintOas": true,
       "isSpringway": true,
       "name": "mod-record-specifications",
@@ -2661,11 +2661,12 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Module for managing and validating records against predefined specifications.</p>",
+      "snippetIntro": "<p>mod-record-specifications is a module for managing and validating records against predefined specifications.</p>",
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
         "api-schema-lint.yml",
+        "build-dependants.yml",
         "spectral-lint.yml"
       ],
       "workflowsFolio": [
@@ -4503,6 +4504,9 @@
       "snippetIntro": "<p>The Lists UI Module, or <code>ui-lists</code>, is a Stripes UI Module used to create and manage Lists which are queries across multiple modules (for example: find all items marked as missing or declared lost, or find all open loans assigned to inactive users).</p>",
       "workflows": [
         "ui.yml"
+      ],
+      "workflowsFolio": [
+        "ui.yml"
       ]
     },
     {
@@ -4677,12 +4681,10 @@
       "repoType": "ui-plugin",
       "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>bursar-export</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='bursar-export'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
