@@ -48,7 +48,6 @@ Similarly okapi can be accessed via `folio-snapshot-core-okapi` (and see notes i
 -->
 
 The folio-snapshot and folio-snapshot-2 are constructed identically every 24 hours, with a 12-hour offset.
-
 There are two [flower release](/guides/regular-releases/) environments (the current and the previous) which are rebuilt weekly on a Sunday.
 
 The environments are completely torn-down and rebuilt again.
@@ -81,14 +80,6 @@ Correlate the "build number" with that shown in the output log of the project's 
 The server is built every day, to finish about 02:03 UTC.\
 (See Jenkins job: [folio-snapshot](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot/) which starts about 01:24 UTC.).
 
-#### Platform hourly build
-
-The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
-
-The "snapshot" branch of the Stripes Platform is rebuilt every hour, starting about 19 minutes past the hour and finishing about 50 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
-If successful, then this will [regenerate](/guidelines/release-procedures/#add-to-platforms) the yarn.lock and install files of the Platform (see [note above](#install-json)), to be utilised by the abovementioned "folio-snapshot" job.
-So if there is an urgent need to [rebuild](#off-schedule-rebuilds) "folio-snapshot" outside of normal automation, so as to include a new snapshot of a module, then this build needs to have run before the "folio-snapshot" build is re-run.
-
 #### Included module versions
 
 The folio-snapshot builds consist of the master branch of each frontend module at that time, paired with the latest version of backend modules that meet the dependency requirements of the frontend (as determined by the preceding [hourly platform build](#platform-hourly-build)).
@@ -104,6 +95,16 @@ The server is built every day, to finish about 14:00 UTC.\
 (See Jenkins job: [folio-snapshot-2](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-snapshot-2/) which starts about 13:21 UTC.)
 
 The folio-snapshot-latest is an alias for folio-snapshot-2.
+
+### Platform hourly build
+
+The set of frontend modules are those listed in the "snapshot" branch of the Stripes Platform.
+
+The "snapshot" branch of the Stripes Platform is rebuilt every hour, starting about 19 minutes past the hour and finishing about 50 minutes past (see Jenkins job: [build-platform-complete-snapshot](https://jenkins-aws.indexdata.com/job/Automation/job/build-platform-complete-snapshot/)).
+If successful, then this will [regenerate](/guidelines/release-procedures/#add-to-platforms) the yarn.lock and install files of the Platform (see [note above](#install-json)), to be utilised by the abovementioned "folio-snapshot" job.
+So if there is an urgent need to [rebuild](#off-schedule-rebuilds) "folio-snapshot" outside of normal automation, so as to include a new snapshot of a module, then this build needs to have run before the "folio-snapshot" build is re-run.
+
+It is vitally important that developers ensure success of the subsequent hourly build following any major changes that they merge to mainline (especially on a Friday afternoon). As noted in the previous paragraph, failures of this hourly job will cause the "folio-snapshot" builds to use out-of-date install files.
 
 ### folio-orchid
 
