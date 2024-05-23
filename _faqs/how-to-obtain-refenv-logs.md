@@ -22,3 +22,5 @@ For example notify yourself, or another person, or notify your team channel.
 
 All members of folio-org are configured to run this job. The service creates a tar file containing the specified logs and uploads to an S3 bucket. A URL to retrieve the logs is returned via a Slack notification.
 
+For failed [Platform hourly build](/guides/automation/#platform-hourly-build) jobs, the Okapi log is linked from the left-hand panel of its Jenkins job summary page.
+
