@@ -85,10 +85,10 @@ Listed endpoints count: {{ site.data.config-api-endpoints.size }}
 {% endfor %}
   </tbody>
 </table>
-<link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@3.1.0/sortable-base.min.css" rel="stylesheet" />
-<link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@3.1.0/sortable.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/npm/sortable-tablesort@3.1.0/sortable.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sortable-tablesort@3.1.0/sortable.a11y.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@3.2.3/sortable-base.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@3.2.3/sortable.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/sortable-tablesort@3.2.3/sortable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sortable-tablesort@3.2.3/sortable.a11y.min.js"></script>
 <script>
   window.addEventListener('load', function () {
     const el = document.getElementById('ep-path')
