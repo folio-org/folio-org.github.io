@@ -9231,9 +9231,41 @@
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "consortium-search 1.1",
+    "methods": "post:operation/fetchConsortiumBatchHoldings",
+    "name": "mod-search",
+    "path": "/search/consortium/batch/holdings"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "consortium-search 1.1",
+    "methods": "post:operation/fetchConsortiumBatchItems",
+    "name": "mod-search",
+    "path": "/search/consortium/batch/items"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "consortium-search 1.1",
+    "methods": "get:operation/getConsortiumHolding",
+    "name": "mod-search",
+    "path": "/search/consortium/holding/{id}"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "consortium-search 1.1",
     "methods": "get:operation/getConsortiumHoldings",
     "name": "mod-search",
     "path": "/search/consortium/holdings"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "consortium-search 1.1",
+    "methods": "get:operation/getConsortiumItem",
+    "name": "mod-search",
+    "path": "/search/consortium/item/{id}"
   },
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
