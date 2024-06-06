@@ -1066,6 +1066,7 @@
         "ramls/inventory-config.raml",
         "ramls/inventory-event-handlers.raml",
         "ramls/inventory-move.raml",
+        "ramls/inventory-update-ownership.raml",
         "ramls/inventory.raml",
         "ramls/isbn.raml"
       ],

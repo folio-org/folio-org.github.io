@@ -5485,7 +5485,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.0",
+    "interface": "instance-storage 10.1",
     "methods": "get:instance_storage_instance_relationships_get post:instance_storage_instance_relationships_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instance-relationships"
@@ -5493,7 +5493,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.0",
+    "interface": "instance-storage 10.1",
     "methods": "delete:instance_storage_instance_relationships__relationshipid__delete get:instance_storage_instance_relationships__relationshipid__get put:instance_storage_instance_relationships__relationshipid__put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instance-relationships/{relationshipId}"
@@ -5501,7 +5501,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.0",
+    "interface": "instance-storage 10.1",
     "methods": "delete:instance_storage_instances_delete get:instance_storage_instances_get post:instance_storage_instances_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances"
@@ -5525,7 +5525,15 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.0",
+    "interface": "instance-storage 10.1",
+    "methods": "post:instance_storage_instances_retrieve_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instances/retrieve"
+  },
+  {
+    "apiDescription": "ramls/instance-storage.raml",
+    "apiType": "raml",
+    "interface": "instance-storage 10.1",
     "methods": "delete:instance_storage_instances__instanceid__delete get:instance_storage_instances__instanceid__get put:instance_storage_instances__instanceid__put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}"
@@ -5533,7 +5541,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.0",
+    "interface": "instance-storage 10.1",
     "methods": "delete:instance_storage_instances__instanceid__source_record_delete",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/source-record"
@@ -5541,7 +5549,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.0",
+    "interface": "instance-storage 10.1",
     "methods": "delete:instance_storage_instances__instanceid__source_record_marc_json_delete get:instance_storage_instances__instanceid__source_record_marc_json_get put:instance_storage_instances__instanceid__source_record_marc_json_put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/source-record/marc-json"
@@ -5549,7 +5557,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.0",
+    "interface": "instance-storage 10.1",
     "methods": "get:instance_storage_instances__instanceid__source_record_mods_get put:instance_storage_instances__instanceid__source_record_mods_put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/source-record/mods"
@@ -5758,6 +5766,14 @@
     "path": "/inventory/holdings/move"
   },
   {
+    "apiDescription": "ramls/inventory-update-ownership.raml",
+    "apiType": "raml",
+    "interface": "inventory-update-ownership 1.0",
+    "methods": "post:inventory_holdings_update_ownership_post",
+    "name": "mod-inventory",
+    "path": "/inventory/holdings/update-ownership"
+  },
+  {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
     "methods": "put:inventory_holdings__holdingsid__put",
@@ -5819,6 +5835,14 @@
     "methods": "post:inventory_items_move_post",
     "name": "mod-inventory",
     "path": "/inventory/items/move"
+  },
+  {
+    "apiDescription": "ramls/inventory-update-ownership.raml",
+    "apiType": "raml",
+    "interface": "inventory-update-ownership 1.0",
+    "methods": "post:inventory_items_update_ownership_post",
+    "name": "mod-inventory",
+    "path": "/inventory/items/update-ownership"
   },
   {
     "apiDescription": "ramls/inventory.raml",
@@ -9194,6 +9218,14 @@
     "methods": "get:operation/searchAuthorities",
     "name": "mod-search",
     "path": "/search/authorities"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "search 1.3",
+    "methods": "get:operation/searchBibframe",
+    "name": "mod-search",
+    "path": "/search/bibframe"
   },
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
