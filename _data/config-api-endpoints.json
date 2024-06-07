@@ -6496,7 +6496,7 @@
   {
     "apiDescription": "ramls/loan-storage.raml",
     "apiType": "raml",
-    "interface": "loan-storage 7.1",
+    "interface": "loan-storage 7.3",
     "methods": "get:loan_storage_loan_history_get",
     "name": "mod-circulation-storage",
     "path": "/loan-storage/loan-history"
@@ -6504,7 +6504,7 @@
   {
     "apiDescription": "ramls/loan-storage.raml",
     "apiType": "raml",
-    "interface": "loan-storage 7.1",
+    "interface": "loan-storage 7.3",
     "methods": "delete:loan_storage_loans_delete get:loan_storage_loans_get post:loan_storage_loans_post",
     "name": "mod-circulation-storage",
     "path": "/loan-storage/loans"
@@ -6512,7 +6512,7 @@
   {
     "apiDescription": "ramls/loan-storage.raml",
     "apiType": "raml",
-    "interface": "loan-storage 7.1",
+    "interface": "loan-storage 7.3",
     "methods": "post:loan_storage_loans_anonymize__userid__post",
     "name": "mod-circulation-storage",
     "path": "/loan-storage/loans/anonymize/{userId}"
@@ -6520,7 +6520,7 @@
   {
     "apiDescription": "ramls/loan-storage.raml",
     "apiType": "raml",
-    "interface": "loan-storage 7.1",
+    "interface": "loan-storage 7.3",
     "methods": "delete:loan_storage_loans__loanid__delete get:loan_storage_loans__loanid__get put:loan_storage_loans__loanid__put",
     "name": "mod-circulation-storage",
     "path": "/loan-storage/loans/{loanId}"
@@ -8126,6 +8126,14 @@
     "path": "/patron-pin/verify"
   },
   {
+    "apiDescription": "ramls/patron.raml",
+    "apiType": "raml",
+    "interface": "patron 5.2",
+    "methods": "post:patron_account_post",
+    "name": "mod-patron",
+    "path": "/patron/account"
+  },
+  {
     "apiDescription": "ramls/edge-patron.raml",
     "apiType": "raml",
     "methods": "get:patron_account__id__get",
@@ -8135,6 +8143,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
+    "interface": "patron 5.2",
     "methods": "get:patron_account__id__get",
     "name": "mod-patron",
     "path": "/patron/account/{id}"
@@ -8149,6 +8158,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
+    "interface": "patron 5.2",
     "methods": "post:patron_account__id__hold__holdid__cancel_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/hold/{holdId}/cancel"
@@ -8163,6 +8173,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
+    "interface": "patron 5.2",
     "methods": "get:patron_account__id__instance__instanceid__allowed_service_points_get",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/allowed-service-points"
@@ -8177,6 +8188,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
+    "interface": "patron 5.2",
     "methods": "post:patron_account__id__instance__instanceid__hold_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/hold"
@@ -8191,6 +8203,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
+    "interface": "patron 5.2",
     "methods": "post:patron_account__id__item__itemid__hold_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/hold"
@@ -8205,6 +8218,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
+    "interface": "patron 5.2",
     "methods": "post:patron_account__id__item__itemid__renew_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/renew"
