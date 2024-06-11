@@ -8126,12 +8126,34 @@
     "path": "/patron-pin/verify"
   },
   {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "post:patron_account_post",
+    "name": "edge-patron",
+    "path": "/patron/account"
+  },
+  {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
     "interface": "patron 5.2",
     "methods": "post:patron_account_post",
     "name": "mod-patron",
     "path": "/patron/account"
+  },
+  {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "get:patron_account_by_email__emailid__get",
+    "name": "edge-patron",
+    "path": "/patron/account/by-email/{emailId}"
+  },
+  {
+    "apiDescription": "ramls/patron.raml",
+    "apiType": "raml",
+    "interface": "patron 5.2",
+    "methods": "get:patron_account_by_email__emailid__get",
+    "name": "mod-patron",
+    "path": "/patron/account/by-email/{emailId}"
   },
   {
     "apiDescription": "ramls/edge-patron.raml",
