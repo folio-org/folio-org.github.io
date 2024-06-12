@@ -9815,6 +9815,14 @@
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
+    "methods": "delete:operation/deleteField put:operation/updateField",
+    "name": "mod-record-specifications",
+    "path": "/specification-storage/fields/{id}"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "specification-storage 1.0",
     "methods": "get:operation/getSpecifications",
     "name": "mod-record-specifications",
     "path": "/specification-storage/specifications"
@@ -9823,9 +9831,17 @@
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
+    "methods": "get:operation/getSpecificationFields post:operation/createSpecificationLocalField",
+    "name": "mod-record-specifications",
+    "path": "/specification-storage/specifications/{specificationId}/fields"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "specification-storage 1.0",
     "methods": "get:operation/getSpecificationRules",
     "name": "mod-record-specifications",
-    "path": "/specification-storage/specifications/{id}/rules"
+    "path": "/specification-storage/specifications/{specificationId}/rules"
   },
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
@@ -9833,7 +9849,7 @@
     "interface": "specification-storage 1.0",
     "methods": "patch:operation/toggleSpecificationRule",
     "name": "mod-record-specifications",
-    "path": "/specification-storage/specifications/{id}/rules/{ruleId}"
+    "path": "/specification-storage/specifications/{specificationId}/rules/{id}"
   },
   {
     "apiDescription": "ramls/staff-slips.raml",
