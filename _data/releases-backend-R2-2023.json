@@ -436,12 +436,12 @@
     {
       "name": "mod-orders",
       "nameRepo": "mod-orders",
-      "releaseDate": "2024-04-22T14:49:02+00:00",
-      "releaseName": "v12.7.3",
-      "releaseSha": "339628c86e6011364c8f9a55db40b2accbc06ca3",
-      "releaseTag": "v12.7.3",
+      "releaseDate": "2024-06-07T11:44:16+00:00",
+      "releaseName": "v12.7.4",
+      "releaseSha": "643a288083092106c33b65d34049550d0f9e5f26",
+      "releaseTag": "v12.7.4",
       "releaseTarget": "master",
-      "version": "12.7.3"
+      "version": "12.7.4"
     },
     {
       "name": "mod-orders-storage",
