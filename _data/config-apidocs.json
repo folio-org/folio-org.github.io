@@ -201,7 +201,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5"
     },
     "name": "edge-patron",
     "org": "folio-org"
@@ -1066,6 +1066,7 @@
         "ramls/inventory-config.raml",
         "ramls/inventory-event-handlers.raml",
         "ramls/inventory-move.raml",
+        "ramls/inventory-update-ownership.raml",
         "ramls/inventory.raml",
         "ramls/isbn.raml"
       ],
@@ -1565,7 +1566,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-patron",
     "org": "folio-org"
