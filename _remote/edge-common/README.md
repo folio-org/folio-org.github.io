@@ -169,34 +169,31 @@ Configuration information is specified in two forms:
 | `request_timeout_ms`      | `30000`             | Request Timeout                                                           |
 | `api_key_sources`         | `PARAM,HEADER,PATH` | Defines the sources (order of precendence) of the API key.                |
 
-### System Properties for TLS configuration for Http server
+### Env variables for TLS configuration for Http server
+
 To configure Transport Layer Security (TLS) for the HTTP server in an edge module, the following configuration parameters should be used.
-Parameters marked as Required are required only in case when ssl_enabled is set to true.
+Parameters marked as Required are required only in case when TLS for the server should be enabled.
 
-| Property                          | Default           | Description                                                                                 |
-|-----------------------------------|-------------------|---------------------------------------------------------------------------------------------|
-| `http-server.ssl_enabled`         | `false`           | Set whether SSL/TLS is enabled for Vertx Http Server                                        |
-| `http-server.keystore_type`       | `NA`              | (Required). Set the type of the keystore. Common types include `JKS`, `PKCS12`, and `BCFKS` |
-| `http-server.keystore_provider`   | `NA`              | Set the provider name of the key store                                                      |
-| `http-server.keystore_path`       | `NA`              | (Required). Set the location of the keystore file in the local file system                  |
-| `http-server.keystore_password`   | `NA`              | (Required). Set the password for the keystore                                               |
-| `http-server.key_alias`           | `NA`              | Set the alias of the key within the keystore.                                               |
-| `http-server.key_alias_password`  | `NA`              | Optional param that points to a password of `key_alias` if it protected                     |
+| Property                                            | Default          | Description                                                                                 |
+|-----------------------------------------------------|------------------|---------------------------------------------------------------------------------------------|
+| `SPRING_SSL_BUNDLE_JKS_WEBSERVER_KEYSTORE_TYPE`     | `NA`             | (Required). Set the type of the keystore. Common types include `JKS`, `PKCS12`, and `BCFKS` |
+| `SPRING_SSL_BUNDLE_JKS_WEBSERVER_KEYSTORE_LOCATION` | `NA`             | (Required). Set the location of the keystore file in the local file system                  |
+| `SPRING_SSL_BUNDLE_JKS_WEBSERVER_KEYSTORE_PASSWORD` | `NA`             | (Required). Set the password for the keystore                                               |
+| `SPRING_SSL_BUNDLE_JKS_WEBSERVER_KEY_ALIAS`         | `NA`             | Set the alias of the key within the keystore.                                               |
+| `SPRING_SSL_BUNDLE_JKS_WEBSERVER_KEY_PASSWORD`      | `NA`             | Optional param that points to a password of `KEY_ALIAS` if it protected                     |
 
-### System Properties for TLS configuration for Web Client
+### Env variables for TLS configuration for Web Client
+
 To configure Transport Layer Security (TLS) for Web clients in the edge module, you can use the following configuration parameters.
-Truststore parameters for configuring Web clients are optional even when ssl_enabled = true.
-If truststore parameters need to be populated, truststore_type, truststore_path and truststore_password are required.
+Truststore parameters for configuring Web clients are optional even when `FOLIO_CLIENT_TLS_ENABLED = true`.
+If truststore parameters need to be populated, `FOLIO_CLIENT_TLS_TRUSTSTORETYPE`, `FOLIO_CLIENT_TLS_TRUSTSTOREPATH` and `FOLIO_CLIENT_TLS_TRUSTSTOREPASSWORD` are required.
 
-| Property                          | Default           | Description                                                                      |
-|-----------------------------------|-------------------|----------------------------------------------------------------------------------|
-| `web-client.ssl_enabled`          | `false`           | Set whether SSL/TLS is enabled for Vertx Http Server                             |
-| `web-client.truststore_type`      | `NA`              | Set the type of the keystore. Common types include `JKS`, `PKCS12`, and `BCFKS`  |
-| `web-client.truststore_provider`  | `NA`              | Set the provider name of the key store                                           |
-| `web-client.truststore_path`      | `NA`              | Set the location of the keystore file in the local file system                   |
-| `web-client.truststore_password`  | `NA`              | Set the password for the keystore                                                |
-| `web-client.key_alias`            | `NA`              | Set the alias of the key within the keystore.                                    |
-| `web-client.key_alias_password`   | `NA`              | Optional param that points to a password of `key_alias` if it protected          |
+| Property                                | Default           | Description                                                                      |
+|-----------------------------------------|-------------------|----------------------------------------------------------------------------------|
+| `FOLIO_CLIENT_TLS_ENABLED`              | `false`           | Set whether SSL/TLS is enabled for Vertx Http Server                             |
+| `FOLIO_CLIENT_TLS_TRUSTSTORETYPE`       | `NA`              | Set the type of the keystore. Common types include `JKS`, `PKCS12`, and `BCFKS`  |
+| `FOLIO_CLIENT_TLS_TRUSTSTOREPATH`       | `NA`              | Set the location of the keystore file in the local file system                   |
+| `FOLIO_CLIENT_TLS_TRUSTSTOREPASSWORD`   | `NA`              | Set the password for the keystore                                                |
 
 
 ## Additional information
