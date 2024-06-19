@@ -5277,7 +5277,7 @@
   {
     "apiDescription": "ramls/holdings-sync.raml",
     "apiType": "raml",
-    "interface": "holdings-storage-batch-sync 1.1",
+    "interface": "holdings-storage-batch-sync 2.0",
     "methods": "post:holdings_storage_batch_synchronous_post",
     "name": "mod-inventory-storage",
     "path": "/holdings-storage/batch/synchronous"
@@ -5285,7 +5285,7 @@
   {
     "apiDescription": "ramls/holdings-sync-unsafe.raml",
     "apiType": "raml",
-    "interface": "holdings-storage-batch-sync-unsafe 1.0",
+    "interface": "holdings-storage-batch-sync-unsafe 2.0",
     "methods": "post:holdings_storage_batch_synchronous_unsafe_post",
     "name": "mod-inventory-storage",
     "path": "/holdings-storage/batch/synchronous-unsafe"
