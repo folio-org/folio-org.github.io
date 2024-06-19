@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-05-22T06:26:22.691494+00:00"
+    "generatedDateTime": "2024-06-18T05:30:36.498100+00:00"
   },
   "repos": [
     {
@@ -140,7 +140,7 @@
       "snippetIntro": "<p>Utilities for DataImport modules.</p>"
     },
     {
-      "defaultBranch": "poppy",
+      "defaultBranch": "quesnelia",
       "description": "FOLIO Documentation",
       "docDirName": null,
       "name": "docs",
@@ -427,7 +427,7 @@
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between 3rd party purchasing systems/vendors and FOLIO.  More specifically, the initial implementation was built with EBSCO's GOBI (Global Online Bibliographic Interface) service in mind.</p>",
+      "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between 3rd party purchasing systems/vendors and FOLIO. More specifically, the initial implementation was built with EBSCO's GOBI (Global Online Bibliographic Interface) service in mind.</p>",
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
@@ -658,7 +658,7 @@
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": "<p>FOLIO Helm charts modules repository.</p>"
+      "snippetIntro": "<p>This repository contains Helm charts for different modules of the FOLIO (The Future of Libraries is Open) project. The FOLIO project aims to reimagine library software through a unique collaboration of libraries, developers, and vendors. It looks beyond the current model of an Integrated Library System to a new paradigm, where apps are built on an open platform, providing libraries with the ability to innovate and deliver extended services.</p>"
     },
     {
       "defaultBranch": "master",
@@ -1081,7 +1081,12 @@
       "ramlDirName": null,
       "repoLanguageHint": "gradle",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Mod-Agreements is a FOLIO module to manage agreements which control an institutions access to resources. Normally, this will be  subscribed access to packages of electronic resources, although the aim is to make the affordances offered by mod-agreements as general as possible.</p>"
+      "snippetIntro": "<p>Mod-Agreements is a FOLIO module to manage agreements which control an institutions access to resources. Normally, this will be  subscribed access to packages of electronic resources, although the aim is to make the affordances offered by mod-agreements as general as possible.</p>",
+      "workflows": [
+        "int-tests.yml",
+        "run-int-tests.yml",
+        "stuck-license-cla.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -3221,13 +3226,13 @@
     {
       "defaultBranch": "master",
       "description": null,
-      "docDirName": null,
+      "docDirName": "docs",
       "name": "mod-workflow",
       "org": "folio-org",
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>Introduction ...  ## Additional information</p>"
+      "snippetIntro": "<p>This module provides a <strong>Workflow</strong> backend <strong>FOLIO</strong> module intended to help facilite and interact with one or more <strong>Workflow Engines</strong>. A <strong>Workflow Engine</strong> is able to react to events generated in FOLIO and may also trigger events based on some schedule.</p>"
     },
     {
       "defaultBranch": "master",
@@ -3560,12 +3565,10 @@
       "repoType": "stripes",
       "snippetIntro": "<p>Stripes is a toolkit for building single-page web applications that FOLIO UI modules can run in. UI modules are made up of <a href='https://facebook.github.io/react/'>React</a> components, some of which will be connected to back-end services provided by <a href='https://github.com/folio-org/okapi'>Okapi</a>. Each module has a 'type' which indicates how it functions within the application. At the moment, the only 'type' is 'app' which provides a top-level component to render into a large content area.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -3597,7 +3600,8 @@
       "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>",
       "workflows": [
         "build-npm-release.yml",
-        "build-npm.yml"
+        "build-npm.yml",
+        "stuck-license-cla.yml"
       ],
       "workflowsFolio": [
         "build-npm-release.yml",
@@ -3905,7 +3909,8 @@
       "snippetIntro": "<p>The Agreements UI Module, or <code>ui-agreements</code>, is a Stripes UI module used for management of various E-resource tasks including handling agreements and viewing available E-resources.</p>",
       "workflows": [
         "build-npm-release.yml",
-        "build-npm.yml"
+        "build-npm.yml",
+        "stuck-license-cla.yml"
       ],
       "workflowsFolio": [
         "build-npm-release.yml",
@@ -4610,7 +4615,8 @@
       "snippetIntro": "<p>The Open Access UI Module or ui-oa, is a Stripes UI module for the management of OA publication requests and related resources</p>",
       "workflows": [
         "build-npm-release.yml",
-        "build-npm.yml"
+        "build-npm.yml",
+        "stuck-license-cla.yml"
       ],
       "workflowsFolio": [
         "build-npm-release.yml",
@@ -5229,7 +5235,8 @@
       "snippetIntro": "<p>The Serials Management UI Module or ui-serials-management, is a Stripes UI module for the management of serials, alongside expected pieces and prediction patterns</p>",
       "workflows": [
         "build-npm-release.yml",
-        "build-npm.yml"
+        "build-npm.yml",
+        "stuck-license-cla.yml"
       ],
       "workflowsFolio": [
         "build-npm-release.yml",
