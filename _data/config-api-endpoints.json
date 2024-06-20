@@ -2151,6 +2151,22 @@
     "path": "/circulation-rules-storage"
   },
   {
+    "apiDescription": "ramls/circulation-settings-storage.raml",
+    "apiType": "raml",
+    "interface": "circulation-settings-storage 1.0",
+    "methods": "get:circulation_settings_storage_circulation_settings_get post:circulation_settings_storage_circulation_settings_post",
+    "name": "mod-circulation-storage",
+    "path": "/circulation-settings-storage/circulation-settings"
+  },
+  {
+    "apiDescription": "ramls/circulation-settings-storage.raml",
+    "apiType": "raml",
+    "interface": "circulation-settings-storage 1.0",
+    "methods": "delete:circulation_settings_storage_circulation_settings__circulationsettingsid__delete get:circulation_settings_storage_circulation_settings__circulationsettingsid__get put:circulation_settings_storage_circulation_settings__circulationsettingsid__put",
+    "name": "mod-circulation-storage",
+    "path": "/circulation-settings-storage/circulation-settings/{circulationSettingsId}"
+  },
+  {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
     "interface": "circulation 14.2",

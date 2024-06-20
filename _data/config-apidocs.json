@@ -497,6 +497,7 @@
         "ramls/check-in-storage.raml",
         "ramls/checkout-lock-storage.raml",
         "ramls/circulation-rules-storage.raml",
+        "ramls/circulation-settings-storage.raml",
         "ramls/fixed-due-date-schedule.raml",
         "ramls/loan-policy-storage.raml",
         "ramls/loan-storage.raml",
