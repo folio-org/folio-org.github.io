@@ -449,6 +449,7 @@
         "ramls/change-due-date.raml",
         "ramls/circulation-event-handlers.raml",
         "ramls/circulation-rules.raml",
+        "ramls/circulation-settings.raml",
         "ramls/circulation.raml",
         "ramls/claim-item-returned.raml",
         "ramls/declare-item-lost.raml",

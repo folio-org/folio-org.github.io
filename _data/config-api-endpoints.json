@@ -1789,6 +1789,14 @@
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
     "interface": "bulk-operations 1.2",
+    "methods": "post:operation/postMarcContentUpdates",
+    "name": "mod-bulk-operations",
+    "path": "/bulk-operations/{operationId}/marc-content-update"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
+    "apiType": "oas",
+    "interface": "bulk-operations 1.2",
     "methods": "get:operation/getPreviewByOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/preview"
@@ -2469,6 +2477,22 @@
     "methods": "get:circulation_search_slips__servicepointid__get",
     "name": "mod-circulation",
     "path": "/circulation/search-slips/{servicePointId}"
+  },
+  {
+    "apiDescription": "ramls/circulation-settings.raml",
+    "apiType": "raml",
+    "interface": "circulation-settings 1.0",
+    "methods": "get:circulation_settings_get post:circulation_settings_post",
+    "name": "mod-circulation",
+    "path": "/circulation/settings"
+  },
+  {
+    "apiDescription": "ramls/circulation-settings.raml",
+    "apiType": "raml",
+    "interface": "circulation-settings 1.0",
+    "methods": "delete:circulation_settings__circulationsettingid__delete get:circulation_settings__circulationsettingid__get put:circulation_settings__circulationsettingid__put",
+    "name": "mod-circulation",
+    "path": "/circulation/settings/{circulationSettingId}"
   },
   {
     "apiDescription": "ramls/classification-type.raml",
@@ -8151,7 +8175,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 5.2",
+    "interface": "patron 6.0",
     "methods": "post:patron_account_post",
     "name": "mod-patron",
     "path": "/patron/account"
@@ -8166,8 +8190,8 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 5.2",
-    "methods": "get:patron_account_by_email__emailid__get",
+    "interface": "patron 6.0",
+    "methods": "get:patron_account_by_email__emailid__get put:patron_account_by_email__emailid__put",
     "name": "mod-patron",
     "path": "/patron/account/by-email/{emailId}"
   },
@@ -8181,7 +8205,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 5.2",
+    "interface": "patron 6.0",
     "methods": "get:patron_account__id__get",
     "name": "mod-patron",
     "path": "/patron/account/{id}"
@@ -8196,7 +8220,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 5.2",
+    "interface": "patron 6.0",
     "methods": "post:patron_account__id__hold__holdid__cancel_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/hold/{holdId}/cancel"
@@ -8211,7 +8235,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 5.2",
+    "interface": "patron 6.0",
     "methods": "get:patron_account__id__instance__instanceid__allowed_service_points_get",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/allowed-service-points"
@@ -8226,7 +8250,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 5.2",
+    "interface": "patron 6.0",
     "methods": "post:patron_account__id__instance__instanceid__hold_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/hold"
@@ -8241,7 +8265,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 5.2",
+    "interface": "patron 6.0",
     "methods": "post:patron_account__id__item__itemid__hold_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/hold"
@@ -8256,7 +8280,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 5.2",
+    "interface": "patron 6.0",
     "methods": "post:patron_account__id__item__itemid__renew_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/renew"
@@ -9866,6 +9890,14 @@
     "methods": "patch:operation/toggleSpecificationRule",
     "name": "mod-record-specifications",
     "path": "/specification-storage/specifications/{specificationId}/rules/{id}"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "specification-storage 1.0",
+    "methods": "post:operation/syncSpecification",
+    "name": "mod-record-specifications",
+    "path": "/specification-storage/specifications/{specificationId}/sync"
   },
   {
     "apiDescription": "ramls/staff-slips.raml",
