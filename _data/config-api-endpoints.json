@@ -8183,7 +8183,7 @@
   {
     "apiDescription": "ramls/edge-patron.raml",
     "apiType": "raml",
-    "methods": "get:patron_account_by_email__emailid__get",
+    "methods": "get:patron_account_by_email__emailid__get put:patron_account_by_email__emailid__put",
     "name": "edge-patron",
     "path": "/patron/account/by-email/{emailId}"
   },
@@ -8194,6 +8194,13 @@
     "methods": "get:patron_account_by_email__emailid__get put:patron_account_by_email__emailid__put",
     "name": "mod-patron",
     "path": "/patron/account/by-email/{emailId}"
+  },
+  {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "get:patron_account_external_patrons_get",
+    "name": "edge-patron",
+    "path": "/patron/account/external-patrons"
   },
   {
     "apiDescription": "ramls/edge-patron.raml",
