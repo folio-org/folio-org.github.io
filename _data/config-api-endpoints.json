@@ -9410,6 +9410,14 @@
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "consortium-search 1.1",
+    "methods": "get:operation/getConsortiumLibraries",
+    "name": "mod-search",
+    "path": "/search/consortium/libraries"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "consortium-search 1.1",
     "methods": "get:operation/getConsortiumLocations",
     "name": "mod-search",
     "path": "/search/consortium/locations"
