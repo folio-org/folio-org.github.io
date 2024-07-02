@@ -45,7 +45,7 @@ and FOLIO Product Council ([PC](/reference/glossary/#pc)).
 has their "Definition of Ready ([DoR](/reference/glossary/#dor))"
 and "Definition of Done ([DoD](/reference/glossary/#dod))"
 to manage the development process.
-- [Team and module responsibility matrix](https://folio-org.atlassian.net/wiki/x/plAV).
+- [Team and module responsibility matrix](https://folio-org.atlassian.net/wiki/x/kIBP).
 - [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/).
 
 ## Other statements and policies
