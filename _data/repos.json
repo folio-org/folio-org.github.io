@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-06-18T05:30:36.498100+00:00"
+    "generatedDateTime": "2024-07-02T01:07:37.886603+00:00"
   },
   "repos": [
     {
@@ -521,6 +521,16 @@
       ]
     },
     {
+      "defaultBranch": "master",
+      "description": "Repository to manage deployment code to run Eureka platform",
+      "docDirName": null,
+      "name": "eureka-setup",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": "<ul>\n<li>Repository for Eureka-based environments</li>\n</ul>"
+    },
+    {
       "defaultBranch": "main",
       "description": "Community query repository for FOLIO analytics based on Metadb/LDP",
       "docDirName": null,
@@ -887,7 +897,7 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Various tools and support glue for FOLIO CI",
+      "description": "Various tools, and support glue for FOLIO CI",
       "docDirName": null,
       "name": "folio-tools",
       "org": "folio-org",
@@ -2811,6 +2821,7 @@
       "workflows": [
         "deploy.yml",
         "gradle.yml",
+        "iso18626.yml",
         "release.yml"
       ]
     },
@@ -3492,6 +3503,24 @@
     },
     {
       "defaultBranch": "master",
+      "description": "Components to be used by modules and applications that handle Authorization (ui-authorization-roles, ui-authorization-capabilities, etc.) duties. Other modules and applications may not find them as useful.",
+      "docDirName": null,
+      "name": "stripes-authorization-components",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "stripes",
+      "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>",
+      "workflows": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ],
+      "workflowsFolio": [
+        "build-npm-release.yml",
+        "build-npm.yml"
+      ]
+    },
+    {
+      "defaultBranch": "master",
       "description": "Command line interface for creating, building, and testing Stripes UI modules.",
       "docDirName": "doc",
       "name": "stripes-cli",
@@ -3908,13 +3937,11 @@
       "repoType": "ui",
       "snippetIntro": "<p>The Agreements UI Module, or <code>ui-agreements</code>, is a Stripes UI module used for management of various E-resource tasks including handling agreements and viewing available E-resources.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml",
-        "stuck-license-cla.yml"
+        "stuck-license-cla.yml",
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -4948,7 +4975,8 @@
       "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-license</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-license'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
       "workflows": [
         "build-npm-release.yml",
-        "build-npm.yml"
+        "build-npm.yml",
+        "stuck-license-cla.yml"
       ],
       "workflowsFolio": [
         "build-npm-release.yml",
