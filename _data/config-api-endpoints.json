@@ -7680,6 +7680,14 @@
     "path": "/orders/pieces"
   },
   {
+    "apiDescription": "ramls/pieces-requests.raml",
+    "apiType": "raml",
+    "interface": "pieces 3.0",
+    "methods": "get:orders_pieces_requests_get",
+    "name": "mod-orders",
+    "path": "/orders/pieces-requests"
+  },
+  {
     "apiDescription": "ramls/pieces.raml",
     "apiType": "raml",
     "interface": "pieces 3.0",
@@ -9886,9 +9894,25 @@
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
+    "methods": "get:operation/getFieldIndicators post:operation/createFieldLocalIndicator",
+    "name": "mod-record-specifications",
+    "path": "/specification-storage/fields/{fieldId}/indicators"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "specification-storage 1.0",
     "methods": "delete:operation/deleteField put:operation/updateField",
     "name": "mod-record-specifications",
     "path": "/specification-storage/fields/{id}"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "specification-storage 1.0",
+    "methods": "get:operation/getIndicatorCodes post:operation/createIndicatorLocalCode",
+    "name": "mod-record-specifications",
+    "path": "/specification-storage/indicators/{indicatorId}/indicator-codes"
   },
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
