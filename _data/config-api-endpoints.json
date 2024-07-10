@@ -9386,6 +9386,14 @@
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "consortium-search 1.2",
+    "methods": "get:operation/getConsortiumInstitutions",
+    "name": "mod-search",
+    "path": "/search/consortium/institutions"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "consortium-search 1.2",
     "methods": "get:operation/getConsortiumItem",
     "name": "mod-search",
     "path": "/search/consortium/item/{id}"
