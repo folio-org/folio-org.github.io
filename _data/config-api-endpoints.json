@@ -7514,6 +7514,14 @@
     "path": "/orders/bind-pieces"
   },
   {
+    "apiDescription": "ramls/bind-pieces.raml",
+    "apiType": "raml",
+    "interface": "orders.bind-pieces 1.0",
+    "methods": "delete:orders_bind_pieces__id__delete",
+    "name": "mod-orders",
+    "path": "/orders/bind-pieces/{id}"
+  },
+  {
     "apiDescription": "ramls/check-in.raml",
     "apiType": "raml",
     "interface": "receiving 2.0",
