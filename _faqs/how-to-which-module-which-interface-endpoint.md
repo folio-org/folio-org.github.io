@@ -26,28 +26,44 @@ Registry queries such as the following will assist investigation ...
 
 ### Interfaces provided by module
 
-Confirm that a certain [back-end module](/source-code/map/#backend-mod) implements a certain interface which handles a set of endpoints.
+Confirm that a certain [back-end module](/source-code/map/#backend-mod) implements a certain interface which handles a set of [endpoints](/reference/api/endpoints/).
 Obtain its ModuleDescriptor from the registry and extract the "provides" section.
 For example:
 
 ```
 curl -s -S -w'\n' \
   'https://folio-registry.dev.folio.org/_/proxy/modules?filter=mod-inventory-storage&latest=1&full=true' \
-  | jq '.[].provides'
+  | jq -r '.[].provides'
+
+curl -s -S -w'\n' \
+  'https://folio-registry.dev.folio.org/_/proxy/modules?filter=mod-inventory-storage&latest=1&full=true' \
+  | jq -r '.[].provides[] | [.id, .version] | @tsv'
+```
+
+### Requires an interface
+
+Discover which modules are using a specific interface:
+
+```
+curl -s -S -w'\n' \
+  'https://folio-registry.dev.folio.org/_/proxy/modules?latest=1&require=inventory-record-bulk' \
+  | jq -r '.[].id'
 ```
 
 ### Requires an old interface
 
 ```
 curl -s -S -w'\n' \
-  'https://folio-registry.dev.folio.org/_/proxy/modules?latest=1&require=instance-bulk%3D0.1'
+  'https://folio-registry.dev.folio.org/_/proxy/modules?latest=1&require=instance-bulk%3D0.1' \
+  | jq -r '.[].id'
 ```
 
 ### Provides a newer interface
 
 ```
 curl -s -S -w'\n' \
-  'https://folio-registry.dev.folio.org/_/proxy/modules?latest=1&provide=inventory-record-bulk'
+  'https://folio-registry.dev.folio.org/_/proxy/modules?latest=1&provide=inventory-record-bulk' \
+  | jq -r '.[].id'
 ```
 
 ## UI Developer Settings
