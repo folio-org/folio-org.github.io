@@ -504,6 +504,7 @@
         "ramls/loan-storage.raml",
         "ramls/patron-action-session.raml",
         "ramls/patron-notice-policy.raml",
+        "ramls/print-events-storage.raml",
         "ramls/request-policy-storage.raml",
         "ramls/request-preference-storage.raml",
         "ramls/request-storage-batch.raml",
