@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-07-02T01:07:37.886603+00:00"
+    "generatedDateTime": "2024-07-15T23:48:55.230975+00:00"
   },
   "repos": [
     {
@@ -3799,7 +3799,7 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "stripes",
-      "snippetIntro": "<p>stripes-testing is a toolkit for building integration tests against Stripes UI modules and platforms. There are no tests in this repository; instead they exist in the platforms they exercise (e.g. platform-core). Tests that operate only a single app (unit tests) should be written with the <a href='https://github.com/folio-org/stripes/blob/master/doc/bigtest.md'>BigTest</a> toolkit instead.</p>",
+      "snippetIntro": "<p>stripes-testing is a toolkit for building integration tests against Stripes UI modules and platforms. This repository contains:</p>",
       "workflows": [
         "build-npm-release.yml",
         "build-npm.yml"
