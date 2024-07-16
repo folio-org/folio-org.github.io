@@ -8437,6 +8437,14 @@
     "path": "/preceding-succeeding-titles/{precedingSucceedingTitleId}"
   },
   {
+    "apiDescription": "ramls/print-events-storage.raml",
+    "apiType": "raml",
+    "interface": "print-events-storage 1.0",
+    "methods": "post:print_events_storage_print_events_entry_post",
+    "name": "mod-circulation-storage",
+    "path": "/print-events-storage/print-events-entry"
+  },
+  {
     "apiDescription": "src/main/resources/openapi/batchPrint.yaml",
     "apiType": "oas",
     "interface": "_timer 1.0",
@@ -9929,6 +9937,22 @@
     "methods": "delete:operation/deleteField put:operation/updateField",
     "name": "mod-record-specifications",
     "path": "/specification-storage/fields/{id}"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "specification-storage 1.0",
+    "methods": "delete:operation/deleteIndicatorCode put:operation/updateIndicatorCode",
+    "name": "mod-record-specifications",
+    "path": "/specification-storage/indicator-codes/{indicatorCodeId}"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "specification-storage 1.0",
+    "methods": "put:operation/updateIndicator",
+    "name": "mod-record-specifications",
+    "path": "/specification-storage/indicators/{indicatorId}"
   },
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
