@@ -4004,7 +4004,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-fqm-manager.yaml",
     "apiType": "oas",
-    "interface": "entity-types 1.0",
+    "interface": "entity-types 2.0",
     "methods": "get:operation/getEntityTypeSummary",
     "name": "mod-fqm-manager",
     "path": "/entity-types"
@@ -5209,6 +5209,13 @@
     "methods": "delete:fixed_due_date_schedule_storage_fixed_due_date_schedules__fixedduedatescheduleid__delete get:fixed_due_date_schedule_storage_fixed_due_date_schedules__fixedduedatescheduleid__get put:fixed_due_date_schedule_storage_fixed_due_date_schedules__fixedduedatescheduleid__put",
     "name": "mod-circulation-storage",
     "path": "/fixed-due-date-schedule-storage/fixed-due-date-schedules/{fixedDueDateScheduleId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-fqm-manager.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getFqmVersion",
+    "name": "mod-fqm-manager",
+    "path": "/fqm/version"
   },
   {
     "apiDescription": "ramls/gobi.raml",
