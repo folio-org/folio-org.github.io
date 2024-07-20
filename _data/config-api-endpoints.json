@@ -10787,6 +10787,13 @@
     "path": "/validate"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
+    "apiType": "oas",
+    "methods": "post:null",
+    "name": "mod-quick-marc",
+    "path": "/validate"
+  },
+  {
     "apiDescription": "ramls/voucher.raml",
     "apiType": "raml",
     "interface": "voucher-storage.voucher-lines 2.1",
