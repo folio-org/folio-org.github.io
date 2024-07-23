@@ -8452,6 +8452,14 @@
     "path": "/print-events-storage/print-events-entry"
   },
   {
+    "apiDescription": "ramls/print-events-storage.raml",
+    "apiType": "raml",
+    "interface": "print-events-storage 1.0",
+    "methods": "post:print_events_storage_print_events_status_post",
+    "name": "mod-circulation-storage",
+    "path": "/print-events-storage/print-events-status"
+  },
+  {
     "apiDescription": "src/main/resources/openapi/batchPrint.yaml",
     "apiType": "oas",
     "interface": "_timer 1.0",
@@ -8843,10 +8851,18 @@
   {
     "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
     "apiType": "oas",
-    "interface": "requests-mediated 1.0",
-    "methods": "get:operation/get",
+    "interface": "requests-mediated 2.0",
+    "methods": "get:operation/getMediatedRequestCollection post:operation/postMediatedRequest",
     "name": "mod-requests-mediated",
-    "path": "/requests-mediated/secure-requests/{requestId}"
+    "path": "/requests-mediated/mediated-requests"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
+    "apiType": "oas",
+    "interface": "requests-mediated 2.0",
+    "methods": "delete:operation/deleteMediatedRequestById get:operation/getMediatedRequestById put:operation/putMediatedRequestById",
+    "name": "mod-requests-mediated",
+    "path": "/requests-mediated/mediated-requests/{mediatedRequestId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/edge-caiasoft.yaml",
