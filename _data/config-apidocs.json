@@ -1105,6 +1105,7 @@
         "ramls/hrid-settings-storage.raml",
         "ramls/identifier-type.raml",
         "ramls/ill-policy.raml",
+        "ramls/instance-date-type.raml",
         "ramls/instance-format.raml",
         "ramls/instance-iteration.raml",
         "ramls/instance-note-type.raml",
@@ -1326,7 +1327,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.4"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-login-keycloak",
     "org": "folio-org"
