@@ -5442,6 +5442,22 @@
     "path": "/ill-policies/{id}"
   },
   {
+    "apiDescription": "ramls/instance-date-type.raml",
+    "apiType": "raml",
+    "interface": "instance-date-types 1.0",
+    "methods": "get:instance_date_types_get",
+    "name": "mod-inventory-storage",
+    "path": "/instance-date-types"
+  },
+  {
+    "apiDescription": "ramls/instance-date-type.raml",
+    "apiType": "raml",
+    "interface": "instance-date-types 1.0",
+    "methods": "patch:instance_date_types__id__patch",
+    "name": "mod-inventory-storage",
+    "path": "/instance-date-types/{id}"
+  },
+  {
     "apiDescription": "ramls/instance-format.raml",
     "apiType": "raml",
     "interface": "instance-formats 2.0",
@@ -8763,6 +8779,14 @@
     "path": "/refreshtoken"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mod-login-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "authtoken 2.0",
+    "methods": "post:operation/token-sign-legacy",
+    "name": "mod-login-keycloak",
+    "path": "/refreshtoken"
+  },
+  {
     "apiDescription": "ramls/refunds.raml",
     "apiType": "raml",
     "interface": "feesfines 19.0",
@@ -10286,11 +10310,27 @@
     "path": "/token"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mod-login-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "authtoken 2.0",
+    "methods": "post:operation/token-legacy",
+    "name": "mod-login-keycloak",
+    "path": "/token"
+  },
+  {
     "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
     "apiType": "oas",
     "interface": "authtoken2 1.0",
     "methods": "post:operation/token-invalidate",
     "name": "mod-authtoken",
+    "path": "/token/invalidate"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-login-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "authtoken2 1.0",
+    "methods": "post:operation/token-invalidate",
+    "name": "mod-login-keycloak",
     "path": "/token/invalidate"
   },
   {
@@ -10302,6 +10342,14 @@
     "path": "/token/invalidate-all"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mod-login-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "authtoken2 1.0",
+    "methods": "post:operation/token-invalidate-all",
+    "name": "mod-login-keycloak",
+    "path": "/token/invalidate-all"
+  },
+  {
     "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
     "apiType": "oas",
     "interface": "authtoken2 1.0",
@@ -10310,11 +10358,27 @@
     "path": "/token/refresh"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mod-login-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "authtoken2 1.0",
+    "methods": "post:operation/token-refresh",
+    "name": "mod-login-keycloak",
+    "path": "/token/refresh"
+  },
+  {
     "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
     "apiType": "oas",
     "interface": "authtoken2 1.0",
     "methods": "post:operation/token-sign",
     "name": "mod-authtoken",
+    "path": "/token/sign"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-login-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "authtoken2 1.0",
+    "methods": "post:operation/token-sign",
+    "name": "mod-login-keycloak",
     "path": "/token/sign"
   },
   {
