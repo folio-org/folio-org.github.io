@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-07-15T23:48:55.230975+00:00"
+    "generatedDateTime": "2024-07-28T22:49:25.351455+00:00"
   },
   "repos": [
     {
@@ -18,6 +18,26 @@
       "workflowsFolio": [
         "api-schema-lint.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "app-consortia",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "app",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "app-dcb",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "app",
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
@@ -43,6 +63,16 @@
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
+      "name": "app-erm-usage",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "app",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
       "name": "app-platform-complete",
       "org": "folio-org",
       "repoLanguageHint": "other",
@@ -54,6 +84,16 @@
       "description": "Application descriptor repository for a minimal FOLIO platform installation",
       "docDirName": null,
       "name": "app-platform-minimal",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "app",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "name": "app-z39.50",
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "app",
@@ -3557,13 +3597,11 @@
       "repoType": "stripes",
       "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml",
-        "build-storybook.yml"
+        "build-storybook.yml",
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
