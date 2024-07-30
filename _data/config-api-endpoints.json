@@ -2177,7 +2177,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.2",
+    "interface": "circulation 14.3",
     "methods": "post:circulation_check_in_by_barcode_post",
     "name": "mod-circulation",
     "path": "/circulation/check-in-by-barcode"
@@ -2185,7 +2185,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.2",
+    "interface": "circulation 14.3",
     "methods": "post:circulation_check_out_by_barcode_post",
     "name": "mod-circulation",
     "path": "/circulation/check-out-by-barcode"
@@ -2209,7 +2209,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.2",
+    "interface": "circulation 14.3",
     "methods": "delete:circulation_loans_delete get:circulation_loans_get post:circulation_loans_post",
     "name": "mod-circulation",
     "path": "/circulation/loans"
@@ -2257,7 +2257,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.2",
+    "interface": "circulation 14.3",
     "methods": "delete:circulation_loans__loanid__delete get:circulation_loans__loanid__get put:circulation_loans__loanid__put",
     "name": "mod-circulation",
     "path": "/circulation/loans/{loanId}"
@@ -2273,7 +2273,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.2",
+    "interface": "circulation 14.3",
     "methods": "post:circulation_renew_by_barcode_post",
     "name": "mod-circulation",
     "path": "/circulation/renew-by-barcode"
@@ -2281,7 +2281,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.2",
+    "interface": "circulation 14.3",
     "methods": "post:circulation_renew_by_id_post",
     "name": "mod-circulation",
     "path": "/circulation/renew-by-id"
@@ -2289,7 +2289,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.2",
+    "interface": "circulation 14.3",
     "methods": "delete:circulation_requests_delete get:circulation_requests_get post:circulation_requests_post",
     "name": "mod-circulation",
     "path": "/circulation/requests"
@@ -2297,7 +2297,7 @@
   {
     "apiDescription": "ramls/requests-reports.raml",
     "apiType": "raml",
-    "interface": "circulation 14.2",
+    "interface": "circulation 14.3",
     "methods": "get:circulation_requests_reports_hold_shelf_clearance__servicepointid__get",
     "name": "mod-circulation",
     "path": "/circulation/requests-reports/hold-shelf-clearance/{servicePointId}"
@@ -2313,7 +2313,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.2",
+    "interface": "circulation 14.3",
     "methods": "post:circulation_requests_instances_post",
     "name": "mod-circulation",
     "path": "/circulation/requests/instances"
@@ -2321,7 +2321,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.2",
+    "interface": "circulation 14.3",
     "methods": "get:circulation_requests_queue_instance__instanceid__get",
     "name": "mod-circulation",
     "path": "/circulation/requests/queue/instance/{instanceId}"
@@ -2329,7 +2329,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.2",
+    "interface": "circulation 14.3",
     "methods": "post:circulation_requests_queue_instance__instanceid__reorder_post",
     "name": "mod-circulation",
     "path": "/circulation/requests/queue/instance/{instanceId}/reorder"
@@ -2337,7 +2337,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.2",
+    "interface": "circulation 14.3",
     "methods": "get:circulation_requests_queue_item__itemid__get",
     "name": "mod-circulation",
     "path": "/circulation/requests/queue/item/{itemId}"
@@ -2345,7 +2345,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.2",
+    "interface": "circulation 14.3",
     "methods": "post:circulation_requests_queue_item__itemid__reorder_post",
     "name": "mod-circulation",
     "path": "/circulation/requests/queue/item/{itemId}/reorder"
@@ -2353,7 +2353,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.2",
+    "interface": "circulation 14.3",
     "methods": "delete:circulation_requests__requestid__delete get:circulation_requests__requestid__get put:circulation_requests__requestid__put",
     "name": "mod-circulation",
     "path": "/circulation/requests/{requestId}"
@@ -2361,7 +2361,7 @@
   {
     "apiDescription": "ramls/request-move.raml",
     "apiType": "raml",
-    "interface": "circulation 14.2",
+    "interface": "circulation 14.3",
     "methods": "post:circulation_requests__requestid__move_post",
     "name": "mod-circulation",
     "path": "/circulation/requests/{requestId}/move"
@@ -10021,6 +10021,14 @@
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
+    "methods": "get:operation/getSpecification",
+    "name": "mod-record-specifications",
+    "path": "/specification-storage/specifications/{specificationId}"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "specification-storage 1.0",
     "methods": "get:operation/getSpecificationFields post:operation/createSpecificationLocalField",
     "name": "mod-record-specifications",
     "path": "/specification-storage/specifications/{specificationId}/fields"
@@ -10048,6 +10056,14 @@
     "methods": "post:operation/syncSpecification",
     "name": "mod-record-specifications",
     "path": "/specification-storage/specifications/{specificationId}/sync"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "specification-storage 1.0",
+    "methods": "delete:operation/deleteSubfield put:operation/updateSubfield",
+    "name": "mod-record-specifications",
+    "path": "/specification-storage/subfields/{subfieldId}"
   },
   {
     "apiDescription": "ramls/staff-slips.raml",
