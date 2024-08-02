@@ -1139,7 +1139,8 @@
         "ramls/service-points-user.raml",
         "ramls/shelf-location.raml",
         "ramls/statistical-code-type.raml",
-        "ramls/statistical-code.raml"
+        "ramls/statistical-code.raml",
+        "ramls/subject-type.raml"
       ],
       "upload": []
     },

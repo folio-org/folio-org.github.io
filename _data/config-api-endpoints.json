@@ -4253,6 +4253,13 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
+    "methods": "post:operation/postExportDeletedAuthority",
+    "name": "mod-data-export",
+    "path": "/export-authority-deleted"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
     "methods": "post:operation/postExportDeletedMarcIds",
     "name": "mod-data-export",
     "path": "/export-deleted"
@@ -10140,6 +10147,22 @@
     "methods": "get:null",
     "name": "mod-data-export-worker",
     "path": "/stub"
+  },
+  {
+    "apiDescription": "ramls/subject-type.raml",
+    "apiType": "raml",
+    "interface": "subject-types 1.0",
+    "methods": "get:subject_types_get post:subject_types_post",
+    "name": "mod-inventory-storage",
+    "path": "/subject-types"
+  },
+  {
+    "apiDescription": "ramls/subject-type.raml",
+    "apiType": "raml",
+    "interface": "subject-types 1.0",
+    "methods": "delete:subject_types__subjecttypeid__delete get:subject_types__subjecttypeid__get put:subject_types__subjecttypeid__put",
+    "name": "mod-inventory-storage",
+    "path": "/subject-types/{subjectTypeId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/tags.yml",
