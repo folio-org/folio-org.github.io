@@ -5220,6 +5220,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-fqm-manager.yaml",
     "apiType": "oas",
+    "interface": "fqm-query 2.0",
     "methods": "get:operation/getFqmVersion",
     "name": "mod-fqm-manager",
     "path": "/fqm/version"
