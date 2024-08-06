@@ -1120,6 +1120,7 @@
         "ramls/instance-sync.raml",
         "ramls/instance-type.raml",
         "ramls/inventory-hierarchy.raml",
+        "ramls/inventory-reindex-records.raml",
         "ramls/inventory-view.raml",
         "ramls/item-damaged-statuses.raml",
         "ramls/item-note-type.raml",

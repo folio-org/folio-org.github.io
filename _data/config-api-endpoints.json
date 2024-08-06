@@ -574,7 +574,7 @@
   {
     "apiDescription": "ramls/addressTypes.raml",
     "apiType": "raml",
-    "interface": "users 16.2",
+    "interface": "users 16.3",
     "methods": "get:addresstypes_get post:addresstypes_post",
     "name": "mod-users",
     "path": "/addresstypes"
@@ -582,7 +582,7 @@
   {
     "apiDescription": "ramls/addressTypes.raml",
     "apiType": "raml",
-    "interface": "users 16.2",
+    "interface": "users 16.3",
     "methods": "delete:addresstypes__addresstypeid__delete get:addresstypes__addresstypeid__get put:addresstypes__addresstypeid__put",
     "name": "mod-users",
     "path": "/addresstypes/{addresstypeId}"
@@ -2177,7 +2177,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.3",
+    "interface": "circulation 14.4",
     "methods": "post:circulation_check_in_by_barcode_post",
     "name": "mod-circulation",
     "path": "/circulation/check-in-by-barcode"
@@ -2185,7 +2185,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.3",
+    "interface": "circulation 14.4",
     "methods": "post:circulation_check_out_by_barcode_post",
     "name": "mod-circulation",
     "path": "/circulation/check-out-by-barcode"
@@ -2209,7 +2209,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.3",
+    "interface": "circulation 14.4",
     "methods": "delete:circulation_loans_delete get:circulation_loans_get post:circulation_loans_post",
     "name": "mod-circulation",
     "path": "/circulation/loans"
@@ -2257,7 +2257,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.3",
+    "interface": "circulation 14.4",
     "methods": "delete:circulation_loans__loanid__delete get:circulation_loans__loanid__get put:circulation_loans__loanid__put",
     "name": "mod-circulation",
     "path": "/circulation/loans/{loanId}"
@@ -2273,7 +2273,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.3",
+    "interface": "circulation 14.4",
     "methods": "post:circulation_renew_by_barcode_post",
     "name": "mod-circulation",
     "path": "/circulation/renew-by-barcode"
@@ -2281,7 +2281,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.3",
+    "interface": "circulation 14.4",
     "methods": "post:circulation_renew_by_id_post",
     "name": "mod-circulation",
     "path": "/circulation/renew-by-id"
@@ -2289,7 +2289,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.3",
+    "interface": "circulation 14.4",
     "methods": "delete:circulation_requests_delete get:circulation_requests_get post:circulation_requests_post",
     "name": "mod-circulation",
     "path": "/circulation/requests"
@@ -2297,7 +2297,7 @@
   {
     "apiDescription": "ramls/requests-reports.raml",
     "apiType": "raml",
-    "interface": "circulation 14.3",
+    "interface": "circulation 14.4",
     "methods": "get:circulation_requests_reports_hold_shelf_clearance__servicepointid__get",
     "name": "mod-circulation",
     "path": "/circulation/requests-reports/hold-shelf-clearance/{servicePointId}"
@@ -2313,7 +2313,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.3",
+    "interface": "circulation 14.4",
     "methods": "post:circulation_requests_instances_post",
     "name": "mod-circulation",
     "path": "/circulation/requests/instances"
@@ -2321,7 +2321,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.3",
+    "interface": "circulation 14.4",
     "methods": "get:circulation_requests_queue_instance__instanceid__get",
     "name": "mod-circulation",
     "path": "/circulation/requests/queue/instance/{instanceId}"
@@ -2329,7 +2329,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.3",
+    "interface": "circulation 14.4",
     "methods": "post:circulation_requests_queue_instance__instanceid__reorder_post",
     "name": "mod-circulation",
     "path": "/circulation/requests/queue/instance/{instanceId}/reorder"
@@ -2337,7 +2337,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.3",
+    "interface": "circulation 14.4",
     "methods": "get:circulation_requests_queue_item__itemid__get",
     "name": "mod-circulation",
     "path": "/circulation/requests/queue/item/{itemId}"
@@ -2345,7 +2345,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.3",
+    "interface": "circulation 14.4",
     "methods": "post:circulation_requests_queue_item__itemid__reorder_post",
     "name": "mod-circulation",
     "path": "/circulation/requests/queue/item/{itemId}/reorder"
@@ -2353,7 +2353,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "circulation 14.3",
+    "interface": "circulation 14.4",
     "methods": "delete:circulation_requests__requestid__delete get:circulation_requests__requestid__get put:circulation_requests__requestid__put",
     "name": "mod-circulation",
     "path": "/circulation/requests/{requestId}"
@@ -2361,7 +2361,7 @@
   {
     "apiDescription": "ramls/request-move.raml",
     "apiType": "raml",
-    "interface": "circulation 14.3",
+    "interface": "circulation 14.4",
     "methods": "post:circulation_requests__requestid__move_post",
     "name": "mod-circulation",
     "path": "/circulation/requests/{requestId}/move"
@@ -3501,7 +3501,7 @@
   {
     "apiDescription": "ramls/departments.raml",
     "apiType": "raml",
-    "interface": "users 16.2",
+    "interface": "users 16.3",
     "methods": "get:departments_get post:departments_post",
     "name": "mod-users",
     "path": "/departments"
@@ -3509,7 +3509,7 @@
   {
     "apiDescription": "ramls/departments.raml",
     "apiType": "raml",
-    "interface": "users 16.2",
+    "interface": "users 16.3",
     "methods": "delete:departments__departmentid__delete get:departments__departmentid__get put:departments__departmentid__put",
     "name": "mod-users",
     "path": "/departments/{departmentId}"
@@ -5284,7 +5284,7 @@
   {
     "apiDescription": "ramls/groups.raml",
     "apiType": "raml",
-    "interface": "users 16.2",
+    "interface": "users 16.3",
     "methods": "get:groups_get post:groups_post",
     "name": "mod-users",
     "path": "/groups"
@@ -5292,7 +5292,7 @@
   {
     "apiDescription": "ramls/groups.raml",
     "apiType": "raml",
-    "interface": "users 16.2",
+    "interface": "users 16.3",
     "methods": "delete:groups__groupid__delete get:groups__groupid__get put:groups__groupid__put",
     "name": "mod-users",
     "path": "/groups/{groupId}"
@@ -5716,6 +5716,14 @@
     "methods": "get:inventory_hierarchy_updated_instance_ids_get",
     "name": "mod-inventory-storage",
     "path": "/inventory-hierarchy/updated-instance-ids"
+  },
+  {
+    "apiDescription": "ramls/inventory-reindex-records.raml",
+    "apiType": "raml",
+    "interface": "inventory-reindex-records 1.0",
+    "methods": "post:inventory_reindex_records_publish_post",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-reindex-records/publish"
   },
   {
     "apiDescription": "ramls/inventory-reports.raml",
@@ -8524,7 +8532,7 @@
   {
     "apiDescription": "ramls/proxiesFor.raml",
     "apiType": "raml",
-    "interface": "users 16.2",
+    "interface": "users 16.3",
     "methods": "get:proxiesfor_get post:proxiesfor_post",
     "name": "mod-users",
     "path": "/proxiesfor"
@@ -8532,7 +8540,7 @@
   {
     "apiDescription": "ramls/proxiesFor.raml",
     "apiType": "raml",
-    "interface": "users 16.2",
+    "interface": "users 16.3",
     "methods": "delete:proxiesfor__id__delete get:proxiesfor__id__get put:proxiesfor__id__put",
     "name": "mod-users",
     "path": "/proxiesfor/{id}"
@@ -10695,7 +10703,7 @@
   {
     "apiDescription": "ramls/users.raml",
     "apiType": "raml",
-    "interface": "users 16.2",
+    "interface": "users 16.3",
     "methods": "delete:users_delete get:users_get post:users_post",
     "name": "mod-users",
     "path": "/users"
@@ -10815,7 +10823,7 @@
   {
     "apiDescription": "ramls/users.raml",
     "apiType": "raml",
-    "interface": "users 16.2",
+    "interface": "users 16.3",
     "methods": "get:users_configurations_entry_get",
     "name": "mod-users",
     "path": "/users/configurations/entry"
@@ -10823,7 +10831,7 @@
   {
     "apiDescription": "ramls/users.raml",
     "apiType": "raml",
-    "interface": "users 16.2",
+    "interface": "users 16.3",
     "methods": "put:users_configurations_entry__configid__put",
     "name": "mod-users",
     "path": "/users/configurations/entry/{configId}"
@@ -10847,7 +10855,7 @@
   {
     "apiDescription": "ramls/users.raml",
     "apiType": "raml",
-    "interface": "users 16.2",
+    "interface": "users 16.3",
     "methods": "post:users_profile_picture_post",
     "name": "mod-users",
     "path": "/users/profile-picture"
@@ -10863,7 +10871,7 @@
   {
     "apiDescription": "ramls/users.raml",
     "apiType": "raml",
-    "interface": "users 16.2",
+    "interface": "users 16.3",
     "methods": "delete:users_profile_picture__profileid__delete get:users_profile_picture__profileid__get put:users_profile_picture__profileid__put",
     "name": "mod-users",
     "path": "/users/profile-picture/{profileId}"
@@ -10887,7 +10895,7 @@
   {
     "apiDescription": "ramls/users.raml",
     "apiType": "raml",
-    "interface": "users 16.2",
+    "interface": "users 16.3",
     "methods": "delete:users__userid__delete get:users__userid__get put:users__userid__put",
     "name": "mod-users",
     "path": "/users/{userId}"
