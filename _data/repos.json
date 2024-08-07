@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-08-06T06:04:03.314310+00:00"
+    "generatedDateTime": "2024-08-07T08:29:26.401260+00:00"
   },
   "repos": [
     {
@@ -2779,6 +2779,7 @@
       ]
     },
     {
+      "apiTypes": "RAML",
       "defaultBranch": "main",
       "description": "Plug-compatible reimplementation of mod-ldp",
       "docDirName": "doc",
@@ -2789,8 +2790,16 @@
       "repoType": "backend-mod",
       "snippetIntro": "<p><code>mod-reporting</code> is a FOLIO module that mediates access to reporting databases -- instances of either MetaDB or LDP Classic. It removes the need to deal directly with a relational database by providing a simple WSAPI that can be used by UI code such as <a href='https://github.com/folio-org/ui-ldp'>ui-ldp</a>.</p>",
       "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml",
         "docker.yml",
         "go.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
       ]
     },
     {
