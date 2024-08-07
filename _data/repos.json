@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-07-28T22:49:25.351455+00:00"
+    "generatedDateTime": "2024-08-06T06:04:03.314310+00:00"
   },
   "repos": [
     {
@@ -559,6 +559,16 @@
         "build-npm-release.yml",
         "build-npm.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Provides docker-based minimal eureka platform",
+      "docDirName": null,
+      "name": "eureka-platform-bootstrap",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
@@ -2769,6 +2779,21 @@
       ]
     },
     {
+      "defaultBranch": "main",
+      "description": "Plug-compatible reimplementation of mod-ldp",
+      "docDirName": "doc",
+      "name": "mod-reporting",
+      "org": "folio-org",
+      "ramlDirName": "ramls",
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p><code>mod-reporting</code> is a FOLIO module that mediates access to reporting databases -- instances of either MetaDB or LDP Classic. It removes the need to deal directly with a relational database by providing a simple WSAPI that can be used by UI code such as <a href='https://github.com/folio-org/ui-ldp'>ui-ldp</a>.</p>",
+      "workflows": [
+        "docker.yml",
+        "go.yml"
+      ]
+    },
+    {
       "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Mediated requests back-end module",
@@ -3686,7 +3711,9 @@
       "snippetIntro": "",
       "workflows": [
         "build-npm-release.yml",
-        "build-npm.yml"
+        "build-npm.yml",
+        "run-e2e-tests.yml",
+        "stuck-license-cla.yml"
       ],
       "workflowsFolio": [
         "build-npm-release.yml",
@@ -4204,12 +4231,11 @@
       "repoType": "ui",
       "snippetIntro": "",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "stuck-license-cla.yml",
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
