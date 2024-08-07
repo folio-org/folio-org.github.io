@@ -8428,6 +8428,13 @@
     "path": "/perms/users/{id}/permissions/{permissionname}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/sharing_policies.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/startSharingPolicy",
+    "name": "mod-consortia-keycloak",
+    "path": "/policies"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
     "apiType": "oas",
     "interface": "policies 1.1",
@@ -8450,6 +8457,13 @@
     "methods": "delete:operation/deletePolicy get:operation/getPolicy put:operation/updatePolicy",
     "name": "mod-roles-keycloak",
     "path": "/policies/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_policies.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteSharingPolicy",
+    "name": "mod-consortia-keycloak",
+    "path": "/policies/{policyId}"
   },
   {
     "apiDescription": "ramls/instance-preceding-succeeding-titles.raml",

@@ -575,6 +575,7 @@
         "src/main/resources/swagger.api/publications.yaml",
         "src/main/resources/swagger.api/self.yaml",
         "src/main/resources/swagger.api/sharing_instances.yaml",
+        "src/main/resources/swagger.api/sharing_policies.yaml",
         "src/main/resources/swagger.api/sharing_settings.yaml",
         "src/main/resources/swagger.api/tenants.yaml",
         "src/main/resources/swagger.api/user_tenants.yaml"
