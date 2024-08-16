@@ -8843,7 +8843,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/refresh-presigned-url.yaml",
     "apiType": "oas",
-    "interface": "bulk-edit 3.0",
+    "interface": "bulk-edit 4.0",
     "methods": "get:operation/getRefreshedPresignedUrl",
     "name": "mod-data-export-worker",
     "path": "/refresh-presigned-url"
@@ -9232,6 +9232,13 @@
     "path": "/rmbtests/testStream"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/sharing_roles.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/startSharingRole",
+    "name": "mod-consortia-keycloak",
+    "path": "/roles"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
     "apiType": "oas",
     "interface": "roles 1.1",
@@ -9310,6 +9317,13 @@
     "methods": "delete:operation/deleteRoleCapabilitySets get:operation/getCapabilitySetsByRoleId put:operation/updateRoleCapabilitySets",
     "name": "mod-roles-keycloak",
     "path": "/roles/{id}/capability-sets"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_roles.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteSharingRole",
+    "name": "mod-consortia-keycloak",
+    "path": "/roles/{roleId}"
   },
   {
     "apiDescription": "ramls/edge-rtac.raml",
@@ -11118,6 +11132,20 @@
     "methods": "delete:waives__waiveid__delete get:waives__waiveid__get put:waives__waiveid__put",
     "name": "mod-feesfines",
     "path": "/waives/{waiveId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/startJob",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/start"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/uploadCsvFile",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/upload"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/marc-specifications.yaml",
