@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-08-07T08:29:26.401260+00:00"
+    "generatedDateTime": "2024-08-16T01:01:37.848012+00:00"
   },
   "repos": [
     {
@@ -74,6 +74,16 @@
       "description": null,
       "docDirName": null,
       "name": "app-platform-complete",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "app",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Application with all FOLIO modules included",
+      "docDirName": null,
+      "name": "app-platform-full",
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "app",
@@ -812,6 +822,16 @@
     },
     {
       "defaultBranch": "master",
+      "description": "A Maven plugin to validate module descriptors in FOLIO modules.",
+      "docDirName": null,
+      "name": "folio-module-descriptor-validator",
+      "org": "folio-org",
+      "repoLanguageHint": "java",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
       "description": null,
       "docDirName": "doc",
       "name": "folio-module-sidecar",
@@ -1284,6 +1304,30 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>FOLIO compatible circulation capabilities, including loan items from the inventory.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
+    },
+    {
+      "apiTypes": "OAS",
+      "defaultBranch": "master",
+      "description": "Circulation backend-for-frontend module",
+      "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-circulation-bff",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Module that provides a facade layer (backed-for-frontend) for FOLIO circulation  applications.</p>",
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
@@ -2433,6 +2477,30 @@
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": "<p>Backend Module implementing the Open Archives Initiative Protocol for Metadata Harvesting (<a href='http://www.openarchives.org/OAI/openarchivesprotocol.html'>OAI-PMH Version 2.0</a>), but providing more RESTful API than described in the specification.  At the core places the /oai/records endpoint which accepts verb name as main parameter which defines what type of request is and which handler should ve invoked for processing the request.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
+    },
+    {
+      "apiTypes": "OAS",
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-okapi-facade",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>Okapi facade partially implements okapi\u2019s interface(s) via interactions w/ manager components.</p>",
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
