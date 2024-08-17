@@ -1,10 +1,24 @@
 [
   {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAllDeployedModuleInstances post:operation/deployModuleInstance",
+    "name": "mod-okapi-facade",
+    "path": "/_/deployment/modules"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "get:deployment_modules_get post:deployment_modules_post",
     "name": "okapi",
     "path": "/_/deployment/modules"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteDeployedModuleInstance get:operation/getDeployedModuleInstance",
+    "name": "mod-okapi-facade",
+    "path": "/_/deployment/modules/{instance_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
@@ -14,11 +28,25 @@
     "path": "/_/deployment/modules/{instance_id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAllDiscoveryHealth",
+    "name": "mod-okapi-facade",
+    "path": "/_/discovery/health"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "get:discovery_health_get",
     "name": "okapi",
     "path": "/_/discovery/health"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getDiscoveryHealthByService",
+    "name": "mod-okapi-facade",
+    "path": "/_/discovery/health/{service_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
@@ -28,11 +56,25 @@
     "path": "/_/discovery/health/{service_id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getDiscoveryHealthByInstance",
+    "name": "mod-okapi-facade",
+    "path": "/_/discovery/health/{service_id}/{instance_id}"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "get:discovery_health__service_id___instance_id__get",
     "name": "okapi",
     "path": "/_/discovery/health/{service_id}/{instance_id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteAllDiscoveries get:operation/getAllDiscoveries post:operation/createDiscovery",
+    "name": "mod-okapi-facade",
+    "path": "/_/discovery/modules"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
@@ -42,11 +84,25 @@
     "path": "/_/discovery/modules"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteDiscoveriesByService get:operation/getDiscoveriesByService",
+    "name": "mod-okapi-facade",
+    "path": "/_/discovery/modules/{service_id}"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "delete:discovery_modules__service_id__delete get:discovery_modules__service_id__get",
     "name": "okapi",
     "path": "/_/discovery/modules/{service_id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteDiscoveryByInstance get:operation/getDiscoveryByInstance",
+    "name": "mod-okapi-facade",
+    "path": "/_/discovery/modules/{service_id}/{instance_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
@@ -56,11 +112,25 @@
     "path": "/_/discovery/modules/{service_id}/{instance_id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAllDiscoveryNodes",
+    "name": "mod-okapi-facade",
+    "path": "/_/discovery/nodes"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "get:discovery_nodes_get",
     "name": "okapi",
     "path": "/_/discovery/nodes"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getDiscoveryNode put:operation/updateDiscoveryNode",
+    "name": "mod-okapi-facade",
+    "path": "/_/discovery/nodes/{node_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
@@ -70,6 +140,13 @@
     "path": "/_/discovery/nodes/{node_id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAllEnvironmentEntries post:operation/createEnvironmentEntry",
+    "name": "mod-okapi-facade",
+    "path": "/_/env"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "get:env_get post:env_post",
@@ -77,11 +154,25 @@
     "path": "/_/env"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteEnvironmentEntry get:operation/getEnvironmentEntry",
+    "name": "mod-okapi-facade",
+    "path": "/_/env/{id}"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "delete:env__id__delete get:env__id__get",
     "name": "okapi",
     "path": "/_/env/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/invoke",
+    "name": "mod-okapi-facade",
+    "path": "/_/invoke/tenant/{id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
@@ -98,11 +189,25 @@
     "path": "/_/jsonSchemas"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/cleanupModules",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/cleanup/modules"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "post:proxy_cleanup_modules_post",
     "name": "okapi",
     "path": "/_/proxy/cleanup/modules"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getHealthStatus",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/health"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
@@ -112,11 +217,25 @@
     "path": "/_/proxy/health"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/announceModules",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/import/modules"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "post:proxy_import_modules_post",
     "name": "okapi",
     "path": "/_/proxy/import/modules"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAllModules post:operation/announceModule",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/modules"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
@@ -126,11 +245,25 @@
     "path": "/_/proxy/modules"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteModule get:operation/getModule",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/modules/{module_id}"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "delete:proxy_modules__module_id__delete get:proxy_modules__module_id__get",
     "name": "okapi",
     "path": "/_/proxy/modules/{module_id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/pullDescriptors",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/pull/modules"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
@@ -140,11 +273,25 @@
     "path": "/_/proxy/pull/modules"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAllTenants post:operation/createTenant",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/tenants"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "get:proxy_tenants_get post:proxy_tenants_post",
     "name": "okapi",
     "path": "/_/proxy/tenants"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteTenant get:operation/getTenant put:operation/updateTenant",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/tenants/{tenant_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
@@ -154,11 +301,25 @@
     "path": "/_/proxy/tenants/{tenant_id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteInstallJobs get:operation/getAllInstallJobs post:operation/createInstallJob",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/tenants/{tenant_id}/install"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "delete:proxy_tenants__tenant_id__install_delete get:proxy_tenants__tenant_id__install_get post:proxy_tenants__tenant_id__install_post",
     "name": "okapi",
     "path": "/_/proxy/tenants/{tenant_id}/install"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteInstallJob get:operation/getInstallJob",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/tenants/{tenant_id}/install/{install_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
@@ -168,11 +329,25 @@
     "path": "/_/proxy/tenants/{tenant_id}/install/{install_id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAllInterfaces",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/tenants/{tenant_id}/interfaces"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "get:proxy_tenants__tenant_id__interfaces_get",
     "name": "okapi",
     "path": "/_/proxy/tenants/{tenant_id}/interfaces"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getInterface",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/tenants/{tenant_id}/interfaces/{interface_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
@@ -182,11 +357,25 @@
     "path": "/_/proxy/tenants/{tenant_id}/interfaces/{interface_id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/disableTenantModules get:operation/getAllTenantModules post:operation/enableTenantModule",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/tenants/{tenant_id}/modules"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "delete:proxy_tenants__tenant_id__modules_delete get:proxy_tenants__tenant_id__modules_get post:proxy_tenants__tenant_id__modules_post",
     "name": "okapi",
     "path": "/_/proxy/tenants/{tenant_id}/modules"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/disableTenantModule get:operation/getTenantModule post:operation/upgradeTenantModule",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/tenants/{tenant_id}/modules/{module_id}"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
@@ -196,6 +385,13 @@
     "path": "/_/proxy/tenants/{tenant_id}/modules/{module_id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAllTimers patch:operation/updateTimers",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/tenants/{tenant_id}/timers"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "get:proxy_tenants__tenant_id__timers_get patch:proxy_tenants__tenant_id__timers_patch",
@@ -203,11 +399,25 @@
     "path": "/_/proxy/tenants/{tenant_id}/timers"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getTimer patch:operation/updateTimer",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/tenants/{tenant_id}/timers/{timer_id}"
+  },
+  {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
     "apiType": "raml",
     "methods": "get:proxy_tenants__tenant_id__timers__timer_id__get patch:proxy_tenants__tenant_id__timers__timer_id__patch",
     "name": "okapi",
     "path": "/_/proxy/tenants/{tenant_id}/timers/{timer_id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/createUpgradeJob",
+    "name": "mod-okapi-facade",
+    "path": "/_/proxy/tenants/{tenant_id}/upgrade"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
@@ -272,6 +482,13 @@
     "methods": "post:tenantpermissions_post",
     "name": "mod-permissions",
     "path": "/_/tenantpermissions"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getVersion",
+    "name": "mod-okapi-facade",
+    "path": "/_/version"
   },
   {
     "apiDescription": "okapi-core/src/main/raml/okapi.raml",
@@ -11132,6 +11349,13 @@
     "methods": "delete:waives__waiveid__delete get:waives__waiveid__get put:waives__waiveid__put",
     "name": "mod-feesfines",
     "path": "/waives/{waiveId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getErrorsPreviewByJobId",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/errors"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
