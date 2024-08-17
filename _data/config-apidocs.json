@@ -1430,6 +1430,23 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/swagger.api/okapi-facade.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5"
+    },
+    "name": "mod-okapi-facade",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/acquisition_method.raml",
