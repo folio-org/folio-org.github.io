@@ -118,6 +118,7 @@ utilities:
     - mod-audit
     - mod-entities-links
     - mod-notes
+    - mod-okapi-facade
     - mod-tags
     - mod-batch-print
     - mod-bulk-operations
