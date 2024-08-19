@@ -474,6 +474,23 @@
   {
     "config": {
       "oas": [
+        "src/main/resources/swagger.api/circulation-bff-requests.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5"
+    },
+    "name": "mod-circulation-bff",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
         "src/main/resources/swagger.api/circulation-item.yaml"
       ],
       "raml": [],
