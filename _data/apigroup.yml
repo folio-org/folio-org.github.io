@@ -132,6 +132,7 @@ other:
   title: Other
   description: Not yet grouped.
   modules:
+    - mod-circulation-bff
     - mod-consortia
     - mod-consortia-keycloak
     - mod-dcb
