@@ -26,6 +26,7 @@ Note that this is not an exhaustive list.
 * For Spring Way modules, the default port is 8080. FOLIO does not care which port. However if the module is going to use a different port, then be sure to also declare that `server.port` in its `application.yaml` file.
 * For Spring Way modules, the replacement tokens in Descriptors use delimiters "@" rather than the normal "$".
 * Ensure that the ModuleDescriptor is generated from its template and that tokens are replaced. For Maven-based modules, the POM will have configuration to "filter-descriptor-inputs" and "rename-descriptor-outputs".
+* If the module uses the `_tenant` interface, then ensure that it is implemented and responding properly.
 * Other ...
 
 ## Verify MD and required interfaces
@@ -44,7 +45,6 @@ curl -s -S -w'\n' \
 That shows that it requires various interfaces, including "`users 15.1`" and "`configuration 2.0`".
 
 Now ensure that each needed interface version is [available](/faqs/how-to-which-module-which-interface-endpoint/).
-One method is to visit the [https://folio-snapshot.dev.folio.org/settings/about](https://folio-snapshot.dev.folio.org/settings/about) page.
 
 ## Ensure LaunchDescriptor
 
