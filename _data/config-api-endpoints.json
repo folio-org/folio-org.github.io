@@ -9489,10 +9489,18 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
     "apiType": "oas",
-    "interface": "migrate 1.0",
-    "methods": "post:operation/migratePolicies",
+    "interface": "roles-permission-migration 1.0",
+    "methods": "get:operation/findMigrations post:operation/migratePermissions",
     "name": "mod-roles-keycloak",
-    "path": "/roles-keycloak/migrate"
+    "path": "/roles-keycloak/migrations"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "roles-permission-migration 1.0",
+    "methods": "delete:operation/deleteMigration get:operation/getMigration",
+    "name": "mod-roles-keycloak",
+    "path": "/roles-keycloak/migrations/{id}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
