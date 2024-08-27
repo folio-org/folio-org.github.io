@@ -9032,6 +9032,14 @@
     "apiDescription": "src/main/resources/swagger.api/reading_room.yaml",
     "apiType": "oas",
     "interface": "reading-room 1.0",
+    "methods": "get:operation/getAccessLogsByCqlQuery",
+    "name": "mod-reading-room",
+    "path": "/reading-room/access-log"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/reading_room.yaml",
+    "apiType": "oas",
+    "interface": "reading-room 1.0",
     "methods": "delete:operation/deleteReadingRoomById put:operation/updateReadingRoomById",
     "name": "mod-reading-room",
     "path": "/reading-room/{readingRoomId}"
