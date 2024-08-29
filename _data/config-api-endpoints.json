@@ -6237,6 +6237,14 @@
     "path": "/inventory/items/{itemId}/mark-withdrawn"
   },
   {
+    "apiDescription": "ramls/inventory.raml",
+    "apiType": "raml",
+    "interface": "inventory 13.1",
+    "methods": "post:inventory_tenant_items_post",
+    "name": "mod-inventory",
+    "path": "/inventory/tenant-items"
+  },
+  {
     "apiDescription": "ramls/invoice-line-number.raml",
     "apiType": "raml",
     "interface": "invoice-storage.invoice-line-number 1.0",
