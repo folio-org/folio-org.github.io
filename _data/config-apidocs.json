@@ -474,7 +474,12 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/swagger.api/circulation-bff-requests.yaml"
+        "src/main/resources/swagger.api/circulation-bff.yaml",
+        "src/main/resources/swagger.api/paths/allowedServicePoints/allowedServicePoints.yaml",
+        "src/main/resources/swagger.api/paths/searchInstances/searchInstances.yaml",
+        "src/main/resources/swagger.api/responses/badRequestResponse.yaml",
+        "src/main/resources/swagger.api/responses/internalServerErrorResponse.yaml",
+        "src/main/resources/swagger.api/responses/unprocessableEntityResponse.yaml"
       ],
       "raml": [],
       "upload": []
@@ -1134,6 +1139,7 @@
         "ramls/instance-set.raml",
         "ramls/instance-status.raml",
         "ramls/instance-storage-batch.raml",
+        "ramls/instance-storage-bulk.raml",
         "ramls/instance-storage.raml",
         "ramls/instance-sync-unsafe.raml",
         "ramls/instance-sync.raml",
