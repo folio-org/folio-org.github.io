@@ -175,7 +175,7 @@ This environment variable must at least have the setting as shown in the [exampl
 
 <a id="dockerfile"></a>The module's Dockerfile needs to use a base image that has the feature "UseContainerSupport". Use that feature in conjunction with "MaxRAMPercentage".
 
-Note that all Java-based modules should now be [using Java 11](/faqs/how-to-specify-backend-java-ci/) or [using Java 17](/faqs/how-to-specify-backend-java-ci/).
+Note that all Java-based modules should now be [using Java 17](/faqs/how-to-specify-backend-java-ci/).
 
 Other necessary options can be appended (e.g. -XX:+PrintFlagsFinal).
 
