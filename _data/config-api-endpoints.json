@@ -2,6 +2,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "get:operation/getAllDeployedModuleInstances post:operation/deployModuleInstance",
     "name": "mod-okapi-facade",
     "path": "/_/deployment/modules"
@@ -16,6 +17,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "delete:operation/deleteDeployedModuleInstance get:operation/getDeployedModuleInstance",
     "name": "mod-okapi-facade",
     "path": "/_/deployment/modules/{instance_id}"
@@ -30,6 +32,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "get:operation/getAllDiscoveryHealth",
     "name": "mod-okapi-facade",
     "path": "/_/discovery/health"
@@ -44,6 +47,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "get:operation/getDiscoveryHealthByService",
     "name": "mod-okapi-facade",
     "path": "/_/discovery/health/{service_id}"
@@ -58,6 +62,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "get:operation/getDiscoveryHealthByInstance",
     "name": "mod-okapi-facade",
     "path": "/_/discovery/health/{service_id}/{instance_id}"
@@ -72,6 +77,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "delete:operation/deleteAllDiscoveries get:operation/getAllDiscoveries post:operation/createDiscovery",
     "name": "mod-okapi-facade",
     "path": "/_/discovery/modules"
@@ -86,6 +92,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "delete:operation/deleteDiscoveriesByService get:operation/getDiscoveriesByService",
     "name": "mod-okapi-facade",
     "path": "/_/discovery/modules/{service_id}"
@@ -100,6 +107,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "delete:operation/deleteDiscoveryByInstance get:operation/getDiscoveryByInstance",
     "name": "mod-okapi-facade",
     "path": "/_/discovery/modules/{service_id}/{instance_id}"
@@ -114,6 +122,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "get:operation/getAllDiscoveryNodes",
     "name": "mod-okapi-facade",
     "path": "/_/discovery/nodes"
@@ -128,6 +137,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "get:operation/getDiscoveryNode put:operation/updateDiscoveryNode",
     "name": "mod-okapi-facade",
     "path": "/_/discovery/nodes/{node_id}"
@@ -142,6 +152,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "get:operation/getAllEnvironmentEntries post:operation/createEnvironmentEntry",
     "name": "mod-okapi-facade",
     "path": "/_/env"
@@ -156,6 +167,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "delete:operation/deleteEnvironmentEntry get:operation/getEnvironmentEntry",
     "name": "mod-okapi-facade",
     "path": "/_/env/{id}"
@@ -191,6 +203,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "post:operation/cleanupModules",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/cleanup/modules"
@@ -205,6 +218,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "get:operation/getHealthStatus",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/health"
@@ -219,6 +233,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "post:operation/announceModules",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/import/modules"
@@ -233,6 +248,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "get:operation/getAllModules post:operation/announceModule",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/modules"
@@ -247,6 +263,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "delete:operation/deleteModule get:operation/getModule",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/modules/{module_id}"
@@ -261,6 +278,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "post:operation/pullDescriptors",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/pull/modules"
@@ -275,6 +293,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "get:operation/getAllTenants post:operation/createTenant",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/tenants"
@@ -289,6 +308,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "delete:operation/deleteTenant get:operation/getTenant put:operation/updateTenant",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/tenants/{tenant_id}"
@@ -303,6 +323,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "delete:operation/deleteInstallJobs get:operation/getAllInstallJobs post:operation/createInstallJob",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/tenants/{tenant_id}/install"
@@ -317,6 +338,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "delete:operation/deleteInstallJob get:operation/getInstallJob",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/tenants/{tenant_id}/install/{install_id}"
@@ -331,6 +353,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "get:operation/getAllInterfaces",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/tenants/{tenant_id}/interfaces"
@@ -345,6 +368,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "get:operation/getInterface",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/tenants/{tenant_id}/interfaces/{interface_id}"
@@ -359,6 +383,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "delete:operation/disableTenantModules get:operation/getAllTenantModules post:operation/enableTenantModule",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/tenants/{tenant_id}/modules"
@@ -373,6 +398,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "delete:operation/disableTenantModule get:operation/getTenantModule post:operation/upgradeTenantModule",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/tenants/{tenant_id}/modules/{module_id}"
@@ -387,6 +413,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "get:operation/getAllTimers patch:operation/updateTimers",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/tenants/{tenant_id}/timers"
@@ -401,6 +428,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "get:operation/getTimer patch:operation/updateTimer",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/tenants/{tenant_id}/timers/{timer_id}"
@@ -415,6 +443,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "post:operation/createUpgradeJob",
     "name": "mod-okapi-facade",
     "path": "/_/proxy/tenants/{tenant_id}/upgrade"
@@ -486,6 +515,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/okapi-facade.yaml",
     "apiType": "oas",
+    "interface": "okapi 1.9",
     "methods": "get:operation/getVersion",
     "name": "mod-okapi-facade",
     "path": "/_/version"
@@ -5797,7 +5827,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.2",
+    "interface": "instance-storage 10.3",
     "methods": "get:instance_storage_instance_relationships_get post:instance_storage_instance_relationships_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instance-relationships"
@@ -5805,7 +5835,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.2",
+    "interface": "instance-storage 10.3",
     "methods": "delete:instance_storage_instance_relationships__relationshipid__delete get:instance_storage_instance_relationships__relationshipid__get put:instance_storage_instance_relationships__relationshipid__put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instance-relationships/{relationshipId}"
@@ -5813,7 +5843,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.2",
+    "interface": "instance-storage 10.3",
     "methods": "delete:instance_storage_instances_delete get:instance_storage_instances_get post:instance_storage_instances_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances"
@@ -5845,7 +5875,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.2",
+    "interface": "instance-storage 10.3",
     "methods": "post:instance_storage_instances_retrieve_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/retrieve"
@@ -5853,7 +5883,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.2",
+    "interface": "instance-storage 10.3",
     "methods": "delete:instance_storage_instances__instanceid__delete get:instance_storage_instances__instanceid__get put:instance_storage_instances__instanceid__put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}"
@@ -5861,7 +5891,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.2",
+    "interface": "instance-storage 10.3",
     "methods": "delete:instance_storage_instances__instanceid__source_record_delete",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/source-record"
@@ -5869,7 +5899,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.2",
+    "interface": "instance-storage 10.3",
     "methods": "delete:instance_storage_instances__instanceid__source_record_marc_json_delete get:instance_storage_instances__instanceid__source_record_marc_json_get put:instance_storage_instances__instanceid__source_record_marc_json_put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/source-record/marc-json"
@@ -5877,7 +5907,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.2",
+    "interface": "instance-storage 10.3",
     "methods": "get:instance_storage_instances__instanceid__source_record_mods_get put:instance_storage_instances__instanceid__source_record_mods_put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/source-record/mods"
