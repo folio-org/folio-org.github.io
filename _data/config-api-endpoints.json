@@ -7570,6 +7570,13 @@
     "path": "/oai/{apiKeyPath}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/order-export.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/order-stub"
+  },
+  {
     "apiDescription": "ramls/edge-orders.raml",
     "apiType": "raml",
     "methods": "post:orders_post",
@@ -9137,6 +9144,14 @@
     "path": "/records/{id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/refresh-presigned-url.yaml",
+    "apiType": "oas",
+    "interface": "bulk-edit 4.0",
+    "methods": "get:operation/getRefreshedPresignedUrl",
+    "name": "mod-data-export-worker",
+    "path": "/refresh-presigned-url"
+  },
+  {
     "apiDescription": "src/main/resources/openapi/token-1.0.yaml",
     "apiType": "oas",
     "interface": "authtoken 2.0",
@@ -10554,6 +10569,34 @@
     "path": "/statistical-codes/{statisticalCodeId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/authority-control.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/stub"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bursar-export.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/stub"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation-log.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/stub"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/e-holdings.yaml",
+    "apiType": "oas",
+    "methods": "get:null",
+    "name": "mod-data-export-worker",
+    "path": "/stub"
+  },
+  {
     "apiDescription": "ramls/subject-source.raml",
     "apiType": "raml",
     "interface": "subject-sources 1.0",
@@ -11452,6 +11495,27 @@
     "methods": "delete:waives__waiveid__delete get:waives__waiveid__get put:waives__waiveid__put",
     "name": "mod-feesfines",
     "path": "/waives/{waiveId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getErrorsPreviewByJobId",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/errors"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/startJob",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/start"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/uploadCsvFile",
+    "name": "mod-data-export-worker",
+    "path": "/{jobId}/upload"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/marc-specifications.yaml",
