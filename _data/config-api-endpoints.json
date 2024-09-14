@@ -4377,7 +4377,7 @@
   {
     "apiDescription": "ramls/files.raml",
     "apiType": "raml",
-    "interface": "erm-usage/files 1.0",
+    "interface": "erm-usage-files 1.0",
     "methods": "post:erm_usage_files_post",
     "name": "mod-erm-usage",
     "path": "/erm-usage/files"
@@ -4385,7 +4385,7 @@
   {
     "apiDescription": "ramls/files.raml",
     "apiType": "raml",
-    "interface": "erm-usage/files 1.0",
+    "interface": "erm-usage-files 1.0",
     "methods": "delete:erm_usage_files__id__delete get:erm_usage_files__id__get",
     "name": "mod-erm-usage",
     "path": "/erm-usage/files/{id}"
@@ -11098,7 +11098,7 @@
   {
     "apiDescription": "ramls/usagedataproviders.raml",
     "apiType": "raml",
-    "interface": "usage-data-providers 2.8",
+    "interface": "usage-data-providers 3.0",
     "methods": "get:usage_data_providers_get post:usage_data_providers_post",
     "name": "mod-erm-usage",
     "path": "/usage-data-providers"
@@ -11106,7 +11106,7 @@
   {
     "apiDescription": "ramls/usagedataproviders.raml",
     "apiType": "raml",
-    "interface": "usage-data-providers 2.8",
+    "interface": "usage-data-providers 3.0",
     "methods": "delete:usage_data_providers__id__delete get:usage_data_providers__id__get put:usage_data_providers__id__put",
     "name": "mod-erm-usage",
     "path": "/usage-data-providers/{id}"
