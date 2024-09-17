@@ -8072,7 +8072,7 @@
   {
     "apiDescription": "ramls/pieces.raml",
     "apiType": "raml",
-    "interface": "pieces 3.0",
+    "interface": "pieces 3.1",
     "methods": "get:orders_pieces_get post:orders_pieces_post",
     "name": "mod-orders",
     "path": "/orders/pieces"
@@ -8080,7 +8080,7 @@
   {
     "apiDescription": "ramls/pieces-requests.raml",
     "apiType": "raml",
-    "interface": "pieces 3.0",
+    "interface": "pieces 3.1",
     "methods": "get:orders_pieces_requests_get",
     "name": "mod-orders",
     "path": "/orders/pieces-requests"
@@ -8088,7 +8088,7 @@
   {
     "apiDescription": "ramls/pieces.raml",
     "apiType": "raml",
-    "interface": "pieces 3.0",
+    "interface": "pieces 3.1",
     "methods": "delete:orders_pieces__id__delete get:orders_pieces__id__get put:orders_pieces__id__put",
     "name": "mod-orders",
     "path": "/orders/pieces/{id}"
@@ -9284,6 +9284,14 @@
     "methods": "delete:operation/deleteMediatedRequestById get:operation/getMediatedRequestById put:operation/putMediatedRequestById",
     "name": "mod-requests-mediated",
     "path": "/requests-mediated/mediated-requests/{mediatedRequestId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
+    "apiType": "oas",
+    "interface": "requests-mediated 2.0",
+    "methods": "post:operation/confirmMediatedRequest",
+    "name": "mod-requests-mediated",
+    "path": "/requests-mediated/mediated-requests/{mediatedRequestId}/confirm"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
