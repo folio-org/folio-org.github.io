@@ -1717,7 +1717,7 @@
   {
     "config": {
       "oas": [
-        "target/api/openapi/openapi.yaml"
+        "api/mod-record-specifications.yaml"
       ],
       "raml": [],
       "upload": []
