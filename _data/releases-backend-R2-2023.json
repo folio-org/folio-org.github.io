@@ -66,12 +66,12 @@
     {
       "name": "mod-circulation-storage",
       "nameRepo": "mod-circulation-storage",
-      "releaseDate": "2024-04-18T11:34:30+00:00",
-      "releaseName": "v17.1.8",
-      "releaseSha": "2adaf85c401caf6f453f8feb46d830302890a67a",
-      "releaseTag": "v17.1.8",
+      "releaseDate": "2024-08-23T11:19:30+00:00",
+      "releaseName": "v17.1.9",
+      "releaseSha": "ae743cdf96dd558a7f47bef0dd7dc144612426af",
+      "releaseTag": "v17.1.9",
       "releaseTarget": "master",
-      "version": "17.1.8"
+      "version": "17.1.9"
     },
     {
       "name": "mod-configuration",
