@@ -636,12 +636,12 @@
     {
       "name": "mod-user-import",
       "nameRepo": "mod-user-import",
-      "releaseDate": "2023-10-13T15:01:43+00:00",
+      "releaseDate": "2024-09-13T12:42:59+00:00",
       "releaseName": "",
-      "releaseSha": "b6f7634bc793ef12670720804f7386dcdc796671",
-      "releaseTag": "v3.8.0",
+      "releaseSha": "478972175f02b3a185d1b7680bf8703779676c24",
+      "releaseTag": "v3.8.1",
       "releaseTarget": "master",
-      "version": "3.8.0"
+      "version": "3.8.1"
     },
     {
       "name": "mod-users",
