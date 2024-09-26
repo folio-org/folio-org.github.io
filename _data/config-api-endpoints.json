@@ -9248,7 +9248,7 @@
   {
     "apiDescription": "ramls/request-storage.raml",
     "apiType": "raml",
-    "interface": "request-storage 6.0",
+    "interface": "request-storage 6.1",
     "methods": "delete:request_storage_requests_delete get:request_storage_requests_get post:request_storage_requests_post",
     "name": "mod-circulation-storage",
     "path": "/request-storage/requests"
@@ -9256,7 +9256,7 @@
   {
     "apiDescription": "ramls/request-storage.raml",
     "apiType": "raml",
-    "interface": "request-storage 6.0",
+    "interface": "request-storage 6.1",
     "methods": "delete:request_storage_requests__requestid__delete get:request_storage_requests__requestid__get put:request_storage_requests__requestid__put",
     "name": "mod-circulation-storage",
     "path": "/request-storage/requests/{requestId}"
