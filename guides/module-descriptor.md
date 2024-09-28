@@ -152,6 +152,8 @@ two-thirds of the memory allocation will be reserved for heap space.
 
 Okapi will map the "%p" value to the relevant port for this container.
 
+Ensure that port numbers are matching -- the same in ModuleDescriptor, and in Dockerfile, and in program code and configuration.
+
 ### env {#docker-env}
 
 The default environment for deployment.
