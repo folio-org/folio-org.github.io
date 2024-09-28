@@ -3028,7 +3028,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.2",
+    "interface": "counter-reports 3.3",
     "methods": "get:counter_reports_get post:counter_reports_post",
     "name": "mod-erm-usage",
     "path": "/counter-reports"
@@ -3036,7 +3036,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.2",
+    "interface": "counter-reports 3.3",
     "methods": "get:counter_reports_errors_codes_get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/errors/codes"
@@ -3044,7 +3044,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.2",
+    "interface": "counter-reports 3.3",
     "methods": "get:counter_reports_export_provider__id__report__name__version__aversion__from__begin__to__end__get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/export/provider/{id}/report/{name}/version/{aversion}/from/{begin}/to/{end}"
@@ -3052,7 +3052,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.2",
+    "interface": "counter-reports 3.3",
     "methods": "get:counter_reports_export__id__get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/export/{id}"
@@ -3060,7 +3060,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.2",
+    "interface": "counter-reports 3.3",
     "methods": "post:counter_reports_multipartupload_provider__id__post",
     "name": "mod-erm-usage",
     "path": "/counter-reports/multipartupload/provider/{id}"
@@ -3068,7 +3068,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.2",
+    "interface": "counter-reports 3.3",
     "methods": "post:counter_reports_reports_delete_post",
     "name": "mod-erm-usage",
     "path": "/counter-reports/reports/delete"
@@ -3076,7 +3076,15 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.2",
+    "interface": "counter-reports 3.3",
+    "methods": "get:counter_reports_reports_releases_get",
+    "name": "mod-erm-usage",
+    "path": "/counter-reports/reports/releases"
+  },
+  {
+    "apiDescription": "ramls/counterreports.raml",
+    "apiType": "raml",
+    "interface": "counter-reports 3.3",
     "methods": "get:counter_reports_reports_types_get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/reports/types"
@@ -3084,7 +3092,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.2",
+    "interface": "counter-reports 3.3",
     "methods": "get:counter_reports_sorted__udpid__get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/sorted/{udpId}"
@@ -3092,7 +3100,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.2",
+    "interface": "counter-reports 3.3",
     "methods": "post:counter_reports_upload_provider__id__post",
     "name": "mod-erm-usage",
     "path": "/counter-reports/upload/provider/{id}"
@@ -3100,7 +3108,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.2",
+    "interface": "counter-reports 3.3",
     "methods": "delete:counter_reports__id__delete get:counter_reports__id__get put:counter_reports__id__put",
     "name": "mod-erm-usage",
     "path": "/counter-reports/{id}"
@@ -3108,7 +3116,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 3.2",
+    "interface": "counter-reports 3.3",
     "methods": "get:counter_reports__id__download_get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/{id}/download"
@@ -10440,7 +10448,7 @@
     "path": "/source-storage/stream/source-records"
   },
   {
-    "apiDescription": "api/mod-record-specifications.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getFieldIndicators post:operation/createFieldLocalIndicator",
@@ -10448,7 +10456,7 @@
     "path": "/specification-storage/fields/{fieldId}/indicators"
   },
   {
-    "apiDescription": "api/mod-record-specifications.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getFieldSubfields post:operation/createFieldLocalSubfield",
@@ -10456,7 +10464,7 @@
     "path": "/specification-storage/fields/{fieldId}/subfields"
   },
   {
-    "apiDescription": "api/mod-record-specifications.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "delete:operation/deleteField put:operation/updateField",
@@ -10464,7 +10472,7 @@
     "path": "/specification-storage/fields/{id}"
   },
   {
-    "apiDescription": "api/mod-record-specifications.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "delete:operation/deleteIndicatorCode put:operation/updateIndicatorCode",
@@ -10472,7 +10480,7 @@
     "path": "/specification-storage/indicator-codes/{indicatorCodeId}"
   },
   {
-    "apiDescription": "api/mod-record-specifications.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "put:operation/updateIndicator",
@@ -10480,7 +10488,7 @@
     "path": "/specification-storage/indicators/{indicatorId}"
   },
   {
-    "apiDescription": "api/mod-record-specifications.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getIndicatorCodes post:operation/createIndicatorLocalCode",
@@ -10488,7 +10496,7 @@
     "path": "/specification-storage/indicators/{indicatorId}/indicator-codes"
   },
   {
-    "apiDescription": "api/mod-record-specifications.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getSpecifications",
@@ -10496,7 +10504,7 @@
     "path": "/specification-storage/specifications"
   },
   {
-    "apiDescription": "api/mod-record-specifications.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getSpecification",
@@ -10504,7 +10512,7 @@
     "path": "/specification-storage/specifications/{specificationId}"
   },
   {
-    "apiDescription": "api/mod-record-specifications.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getSpecificationFields post:operation/createSpecificationLocalField",
@@ -10512,7 +10520,7 @@
     "path": "/specification-storage/specifications/{specificationId}/fields"
   },
   {
-    "apiDescription": "api/mod-record-specifications.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getSpecificationRules",
@@ -10520,7 +10528,7 @@
     "path": "/specification-storage/specifications/{specificationId}/rules"
   },
   {
-    "apiDescription": "api/mod-record-specifications.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "patch:operation/toggleSpecificationRule",
@@ -10528,7 +10536,7 @@
     "path": "/specification-storage/specifications/{specificationId}/rules/{id}"
   },
   {
-    "apiDescription": "api/mod-record-specifications.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "post:operation/syncSpecification",
@@ -10536,7 +10544,7 @@
     "path": "/specification-storage/specifications/{specificationId}/sync"
   },
   {
-    "apiDescription": "api/mod-record-specifications.yaml",
+    "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "delete:operation/deleteSubfield put:operation/updateSubfield",
