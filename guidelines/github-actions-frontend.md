@@ -8,6 +8,10 @@ menuTopTitle: Guidelines
 
 ## Introduction
 
+<div class="attention">
+Note: These instructions are outdated. Refer to <a href="https://github.com/folio-org/.github/blob/master/README-UI.md">Centralized UI Workflows</a> instead.
+</div>
+
 These instructions assist developers with configuring GitHub Actions based CI workflows to replace the currently used Jenkins pipeline.
 
 (Note: Either follow this document or wait for the deployment tool that FOLIO DevOps is preparing.)
