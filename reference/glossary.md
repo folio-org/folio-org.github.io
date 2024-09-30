@@ -51,6 +51,10 @@ For further information about SIGs and how to participate, refer to [Special Int
 
 Some abbreviations are provided below. Note that there are other SIGs besides these.
 
+### A11Y {#sig-a11y}
+
+Accessibility
+
 ### CO {#sig-co}
 
 Community Outreach
@@ -86,6 +90,13 @@ User Management
 ## FOLIO Technologies and Concepts
 
 ### Terms A-F
+
+#### a11y
+
+Accessibility. Refer to
+the FOLIO [A11Y SIG](https://folio-org.atlassian.net/wiki/spaces/A11Y/overview)
+and [Accessibility in Stripes](https://folio-org.github.io/stripes-components/?path=/docs/guides-accessibility-accessibility-overview--docs)
+and [The A11Y Project](https://www.a11yproject.com/).
 
 #### API
 
