@@ -55,7 +55,7 @@ The main Slack channels:
 Refer to the overview of the [Build, test, and deployment infrastructure](/guides/automation/) and notes about Jenkins, Docker, Nexus, etc.
 .
 
-See [explanation](https://issues.folio.org/browse/FOLIO-3171?focusedCommentId=107712&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-107712) of precedence of environment variables and handling via Okapi (DeploymentDescriptor, system-level, LaunchDescriptor) and support for that in folio-ansible roles.
+See [explanation](https://folio-org.atlassian.net/browse/FOLIO-3171?focusedCommentId=197577) of precedence of environment variables and handling via Okapi (DeploymentDescriptor, system-level, LaunchDescriptor) and support for that in folio-ansible roles.
 
 ## Reference environments
 

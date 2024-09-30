@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-09-05T07:42:10.833705+00:00"
+    "generatedDateTime": "2024-09-28T01:24:47.323376+00:00"
   },
   "repos": [
     {
@@ -410,6 +410,18 @@
       ]
     },
     {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "name": "edge-inventory",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>Provides an ability to retrieve inventory information from FOLIO</p>"
+    },
+    {
       "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": null,
@@ -555,6 +567,18 @@
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
       "snippetIntro": "<p>The purpose of this edge API is to bridge the gap between self service circulation and patron services stations and FOLIO by allowing these systems to issue requests and receive responses in Standard Interchange Protocol v2 (SIP2). These requests will be serviced by FOLIO APIs and the responses will be based on FOLIO results for all supported (TBD) SIP2 commands.</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hintOas": true,
+      "name": "edge-users",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-edge",
+      "snippetIntro": "<p>Provides an ability to retrieve and create users information from FOLIO</p>"
     },
     {
       "defaultBranch": "master",
@@ -885,6 +909,16 @@
       "snippetIntro": ""
     },
     {
+      "defaultBranch": "master",
+      "description": "This repository contains a single file that maps folio permissions to capabilities.",
+      "docDirName": null,
+      "name": "folio-permissions-mappings",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
       "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
@@ -1181,7 +1215,8 @@
       "workflows": [
         "int-tests.yml",
         "run-int-tests.yml",
-        "stuck-license-cla.yml"
+        "stuck-license-cla.yml",
+        "validate-module.yml"
       ]
     },
     {
@@ -2877,14 +2912,13 @@
         "api-doc.yml",
         "api-lint.yml",
         "api-schema-lint.yml",
-        "do-go.yml",
-        "docker.yml",
-        "go.yml"
+        "do-go.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "do-go.yml"
       ]
     },
     {
@@ -3502,7 +3536,7 @@
     {
       "defaultBranch": "master",
       "description": "Stripes platform for Resource Sharing App",
-      "docDirName": null,
+      "docDirName": "doc",
       "name": "platform-rs",
       "org": "openlibraryenvironment",
       "repoType": "platform",
@@ -3616,12 +3650,10 @@
       "repoType": "stripes",
       "snippetIntro": "<p>Stripes is a toolkit for building single-page web applications that FOLIO UI modules can run in.  In addition to being the home of Stripes <a href='https://github.com/folio-org/stripes/blob/master/doc/stripes-framework.md'>framework</a>, this repository serves as a hub for shared Stripes documentation.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -3688,12 +3720,10 @@
       "repoType": "stripes",
       "snippetIntro": "<p>Stripes CLI is a command line interface to facilitate the creation, development, building, and testing of Stripes UI modules.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -3733,12 +3763,10 @@
       "repoType": "stripes",
       "snippetIntro": "<p>Stripes Connect provides essentially one service: the ability to upgrade a regular React component into a Connected Component. This is done by importing the <code>connect()</code> method from <code>stripes-connect</code>, defining a data manifest, and exporting not the React component itself but the result of wrapping it in a call to <code>connect()</code>:</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -3785,13 +3813,11 @@
       "repoType": "stripes",
       "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml",
-        "stuck-license-cla.yml"
+        "stuck-license-cla.yml",
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -3824,12 +3850,10 @@
       "repoType": "stripes",
       "snippetIntro": "",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -3842,12 +3866,10 @@
       "repoType": "stripes",
       "snippetIntro": "",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -3924,12 +3946,10 @@
       "repoType": "stripes",
       "snippetIntro": "<p>A suite of smart components. Each communicates with an Okapi web-service in order to provide the facilities that it renders.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -3942,12 +3962,10 @@
       "repoType": "stripes",
       "snippetIntro": "<p>This is a NPM module to aid with embedding the Quill editor in <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> applications for building templates with token substitution.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -3978,12 +3996,10 @@
       "repoType": "stripes",
       "snippetIntro": "<p>This is a set of TypeScript typings for the <a href='https://github.com/folio-org/stripes/'>Stripes</a> UI framework.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -4014,12 +4030,10 @@
       "repoType": "stripes",
       "snippetIntro": "<p>A library of utility functions to support Stripes modules.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -4050,12 +4064,10 @@
       "repoType": "stripes",
       "snippetIntro": "<p>Stripes Webpack contains webpack config files used for building and serving Folio bundles via <a href='https://github.com/folio-org/stripes-cli'>stripes-cli</a>.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -4388,12 +4400,10 @@
       "repoType": "ui",
       "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for managing developer settings. This will not be included in production deployments.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -4441,12 +4451,11 @@
       "repoType": "ui",
       "snippetIntro": "<p>The ERM comparisons module, or <code>ui-erm-comparisons</code>, is a Stripes UI module used for comparison of 'Agreement' and/or 'Package' objects defined by the <code>ui-agreements</code> (Agreements) module.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "stuck-license-cla.yml",
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -4459,12 +4468,10 @@
       "repoType": "ui",
       "snippetIntro": "<p>The ERM-Usage UI Module, or <code>ui-erm-usage</code>, is a Stripes UI module for managing usage statistics. It allows to enter credentials for accessing usage data providers. These credentials are used by the backend module <a href='https://github.com/folio-org/mod-erm-usage'>mod-erm-usage</a> to harvest usage statistics periodically.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -4513,12 +4520,10 @@
       "repoType": "ui",
       "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for administrating metadata sources and collections for the finc user community.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -4531,12 +4536,10 @@
       "repoType": "ui",
       "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for the selection of metadata sources and collections for the finc user community.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -4585,12 +4588,10 @@
       "repoType": "ui",
       "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-idm-connect and start your development.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -4675,12 +4676,11 @@
       "repoType": "ui",
       "snippetIntro": "<p>The Licenses UI Module, or <code>ui-licenses</code>, is a Stripes UI module used for management of licenses</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "stuck-license-cla.yml",
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -4709,12 +4709,11 @@
       "repoType": "ui",
       "snippetIntro": "<p>The Local KB admin UI Module, or <code>ui-local-kb-admin</code>, is a Stripes UI module used for management of the local KB used for ERM tasks handled by the <code>ui-agreements</code> (Agreements) module.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "stuck-license-cla.yml",
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -4799,13 +4798,11 @@
       "repoType": "ui",
       "snippetIntro": "<p>The Open Access UI Module or ui-oa, is a Stripes UI module for the management of OA publication requests and related resources</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml",
-        "stuck-license-cla.yml"
+        "stuck-license-cla.yml",
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -4906,12 +4903,10 @@
       "repoType": "ui-plugin",
       "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>eusage-reports</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='eusage-reports'&gt;</code> element. See <a href='https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -4934,12 +4929,11 @@
       "repoType": "ui-plugin",
       "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-agreement</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-agreement'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "stuck-license-cla.yml",
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -4988,12 +4982,11 @@
       "repoType": "ui-plugin",
       "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-eresource</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-eresource'&gt;</code> element. See <a href='https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "stuck-license-cla.yml",
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -5006,12 +4999,10 @@
       "repoType": "ui-plugin",
       "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-erm-usage-data-provider</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-erm-usage-data-provider'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -5024,12 +5015,10 @@
       "repoType": "ui-plugin",
       "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-plugin-find-finc-metadata-collection and start your development.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -5042,12 +5031,10 @@
       "repoType": "ui-plugin",
       "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-plugin-find-finc-metadata-source and start your development.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -5132,13 +5119,11 @@
       "repoType": "ui-plugin",
       "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-license</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-license'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml",
-        "stuck-license-cla.yml"
+        "stuck-license-cla.yml",
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -5223,12 +5208,10 @@
       "repoType": "ui-plugin",
       "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>query-builder</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='query-builder'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -5332,12 +5315,11 @@
       "repoType": "ui",
       "snippetIntro": "",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "stuck-license-cla.yml",
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -5420,13 +5402,11 @@
       "repoType": "ui",
       "snippetIntro": "<p>The Serials Management UI Module or ui-serials-management, is a Stripes UI module for the management of serials, alongside expected pieces and prediction patterns</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml",
-        "stuck-license-cla.yml"
+        "stuck-license-cla.yml",
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
@@ -5439,12 +5419,10 @@
       "repoType": "ui",
       "snippetIntro": "<p>FOLIO UI Module for service-interaction</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ]
     },
     {
