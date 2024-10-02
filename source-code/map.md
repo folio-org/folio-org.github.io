@@ -86,6 +86,9 @@ See [usage notes](#usage-notes) below.
       {%- assign sectionChar = headingIds[subSectionNum] | slice:-1,1 | upcase -%}
       {%- assign repoNameAlpha = repoName | remove_first:groupStem -%}
       {%- assign repoNameChar = repoNameAlpha | slice:0 | upcase -%}
+      {%- if repoName == "stripes" -%}
+        {%- assign repoNameChar = "A" -%}
+      {%- endif -%}
       {%- assign charNum = 0 -%}
       {%- for char in alpha -%}
         {%- if char == sectionChar -%}
