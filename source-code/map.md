@@ -37,6 +37,7 @@ See [usage notes](#usage-notes) below.
   {%- assign remainder = countSection | modulo:numPerSection -%}
 <!--
   <p> Debug ToC:
+   numPerSection:{{ numPerSection }} |
    numSubSections:{{ numSubSections }} |
    remainder:{{ remainder }}
   </p>
@@ -47,9 +48,15 @@ See [usage notes](#usage-notes) below.
   {%- if numSubSections == 1 -%}
     {%- assign numSubSections = 0 -%}
   {%- endif -%}
+<!--
+  <p> Debug ToC: After handling remainder:
+   numSubSections:{{ numSubSections }}
+  </p>
+-->
   {%- comment -%} Build the arrays for subsection headings {%- endcomment -%}
   {%- assign headingsString = "" -%}
   {%- assign headingIdsString = "" -%}
+  {%- assign numAlphasPerSubSection = 0 -%}
   {%- if numSubSections > 0 -%}
     {%- assign numAlphasPerSubSection = 26 | divided_by:numSubSections -%}
     {%- assign alphaNum = 0 -%}
@@ -65,6 +72,15 @@ See [usage notes](#usage-notes) below.
       {%- assign headingId = groupStem | append:alphaBegin | append:"-" | append:alphaEnd | downcase | append:"," -%}
       {%- assign headingIdsString = headingIdsString | append: headingId -%}
       {%- assign alphaNum = alphaNum | plus:1 -%}
+<!--
+  <p> Debug ToC:
+   numAlphasPerSubSection:{{ numAlphasPerSubSection }} |
+   SubSection:{{ i }} |
+   alphaNum:{{ alphaNum }} |
+   alphaBegin:{{ alphaBegin }} |
+   alphaEnd:{{ alphaEnd }}
+  </p>
+-->
     {%- endfor -%}
     {%- assign headings = headingsString | split:"," -%}
     {%- assign headingIds = headingIdsString | split:"," -%}
@@ -72,12 +88,6 @@ See [usage notes](#usage-notes) below.
     {%- assign subSectionNum = 0 -%}
     <h3 id="{{ headingIds[subSectionNum] }}"> {{ headings[subSectionNum] }} </h3>
   {%- endif -%}
-<!--
-  <p> Debug ToC:
-   numSubSections:{{ numSubSections }} |
-   numAlphasPerSubSection:{{ numAlphasPerSubSection }}
-  </p>
--->
   {%- for repo in repos -%}
     {%- assign repoName = repo.name -%}
     {%- assign metadata = site.data.repos-metadata[repoName] -%}
