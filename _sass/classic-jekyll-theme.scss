@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // *********************************************************************************************************************
 //
 // This file replaces the main.sccs file form the Jekyll theme minima.
@@ -39,9 +41,9 @@ $text-color:					#111;
 $background-color:				#fdfdfd; // Applied to the top element, override by background settings below
 //
 $grey-color:					#828282;
-$grey-color-light:				lighten($grey-color, 40%);
-$grey-color-light-light:		lighten($grey-color-light, 40%);
-$grey-color-dark:				darken($grey-color, 25%);
+$grey-color-light:				color.adjust($grey-color, $lightness: 40%, $space: hsl);
+$grey-color-light-light:		color.adjust($grey-color-light, $lightness: 40%, $space: hsl);
+$grey-color-dark:				color.adjust($grey-color, $lightness: -25%, $space: hsl);
 
 // Since Liquid is not available, it is necessary to redefine the baseurl from the _config.yml file here
 //
@@ -346,7 +348,7 @@ $banner-title-color-widest:						$f-color-white;
 //
 $banner-subtitle-color-narrow:					$theme-color;
 $banner-subtitle-color-medium:					$theme-color;
-$banner-subtitle-color-widest:					lighten(black, 50%);
+$banner-subtitle-color-widest:					color.adjust(black, $lightness: 50%, $space: hsl);
 
 
 // *********************************************************************************************************************
@@ -831,8 +833,8 @@ $tertiary-column-background-widest:		none;
 // Color for the separator between the columns
 // CSS property: border-right (but only the color part)
 //
-$column-separator-color-medium:			lighten($grey-color, 30%);
-$column-separator-color-widest:			lighten($grey-color, 30%);
+$column-separator-color-medium:			color.adjust($grey-color, $lightness: 30%, $space: hsl);
+$column-separator-color-widest:			color.adjust($grey-color, $lightness: 30%, $space: hsl);
 
 // Enable/disable display of the column separator
 //
