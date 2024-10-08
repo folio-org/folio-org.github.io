@@ -65,7 +65,7 @@
 		@include medium-layout { background: $banner-background-medium; }
 		@include widest-layout { background: $banner-background-widest; }
 		
-		z-index: 1;
+		& { z-index: 1; }
 	}
 
 	.icon-container {
@@ -200,7 +200,7 @@
 			}
 
 			// Positioning of title and subtitle
-			display: flex;
+			& { display: flex; }
 			@include narrow-layout {
 				flex-direction: $banner-title-subtitle-flex-direction-narrow;
 				justify-content: $banner-title-subtitle-justify-content-narrow;
@@ -377,7 +377,7 @@
 		}
 
 		// Position the label (tap area)
-		display: flex;
+		& { display: flex; }
 		@include narrow-layout {
 			justify-content: $banner-menu-symbol-justify-content-narrow;
 			align-items: $banner-menu-symbol-align-items-narrow;
@@ -428,7 +428,7 @@
 			@include widest-layout { border: $banner-menu-symbol-tap-area-border-widest; }
 
 			// The label is used as checkbox-label, it should show a pointer when the mouse is above it.
-			cursor: pointer;
+			& { cursor: pointer; }
 				
 			p {
 				// Fine tune the position of the menu symbol in the tap area
@@ -547,6 +547,6 @@
 	@include medium-layout { height: $anchor-top-fixed-offset-medium; }
 	@include widest-layout { margin-top: -$anchor-top-fixed-offset-widest; }
 	@include widest-layout { height: $anchor-top-fixed-offset-widest; }
-	visibility: hidden;
-	pointer-events: none;
+	& { visibility: hidden; }
+	& { pointer-events: none; }
 }
