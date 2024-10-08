@@ -799,7 +799,7 @@
   {
     "config": {
       "oas": [
-        "target/api/openapi/openapi.yaml"
+        "src/main/resources/swagger.api/mod-entities-links.yaml"
       ],
       "raml": [],
       "upload": []
@@ -1854,7 +1854,7 @@
   {
     "config": {
       "oas": [
-        "target/api/openapi/openapi.yaml"
+        "src/main/resources/swagger.api/mod-search.yaml"
       ],
       "raml": [],
       "upload": [
