@@ -363,8 +363,8 @@ $banner-subtitle-color-widest:					color.adjust(black, $lightness: 50%, $space: 
 // Note: This does NOT control visibility of the menubar!
 //
 $banner-menu-symbol-enabled-narrow:				true;
-$banner-menu-symbol-enabled-medium:				false;
-$banner-menu-symbol-enabled-widest:				false;
+$banner-menu-symbol-enabled-medium:				true;
+$banner-menu-symbol-enabled-widest:				true;
 
 // The z-order of the menu symbol. Use this to position the menu symbol relative to the title-area and the icon.
 // CSS property: z-index
