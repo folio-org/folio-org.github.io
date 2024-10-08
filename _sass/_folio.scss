@@ -1,3 +1,5 @@
+@use "sass:color";
+
 div.highlight {
   border: 1px solid $f-color-light-grey;
 }
@@ -96,7 +98,7 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($f-link-color, 15%);
+    color: color.adjust($f-link-color, $lightness: -15%, $space: hsl);
   }
 
   &:hover {

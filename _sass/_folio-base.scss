@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $base-font-family: "myriad-pro-n3", "myriad-pro", sans-serif;
 $base-font-weight: 400;
 
@@ -5,7 +7,7 @@ $f-color-orange: #da6a2d;
 $f-color-purple: #38307f;
 $f-color-dark-grey: #515251;
 $f-color-light-grey: #737272;
-$f-color-lighter-grey: lighten($f-color-light-grey, 50%);
+$f-color-lighter-grey: color.adjust($f-color-light-grey, $lightness: 50%, $space: hsl);
 $f-color-attention: #ff0000;
 $f-link-color: #2a7ae2; // from minima
 
