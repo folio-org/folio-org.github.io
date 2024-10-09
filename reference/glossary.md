@@ -214,6 +214,13 @@ Amazon Elastic Kubernetes Service ([Amazon EKS](https://aws.amazon.com/eks/)).
 
 Electronic resource management ([ERM](https://en.wikipedia.org/wiki/Electronic_resource_management)).
 
+#### FOLIO
+
+FOLIO -- The Future of Libraries is Open.
+
+The term "FOLIO" is an acronym, and must always be noted as an upper-case word.
+Refer to the "FOLIO Brand Identity Guidelines" document at [FOLIO Graphics and Branding Resources](https://folio-org.atlassian.net/wiki/x/UAQg).
+
 #### FRBR
 
 Functional Requirements for Bibliographic Records
