@@ -7,6 +7,11 @@ categories: management
 faqOrder: 2
 ---
 
+## Introduction
+
+Most people have write permission to only the few FOLIO repositories that they regularly work on via their GitHub [Teams](#manage-members-for-teams).
+For contributions to any other repository they will need to "fork" it to their personal GitHub account (refer to [contribution guidelines](/guidelines/contributing/#fork-github-repository)).
+
 ## GitHub new developer
 
 For new developers (i.e. not yet a [member](https://github.com/orgs/folio-org/people) of "folio-org" organization) we ask that a project manager (see [Team and module responsibility matrix](https://folio-org.atlassian.net/wiki/x/kIBP)) or at least a known existing developer, makes this request.
@@ -20,7 +25,7 @@ Provide a link to their GitHub profile page, which is also a double-check that y
 
 Specify which GitHub [Teams](https://github.com/orgs/folio-org/teams) to be allocated.
 
-The new developer will need to follow the email and accept the invitation.
+The new developer will need to follow the received email and accept the invitation.
 
 ## GitHub team access
 
@@ -31,8 +36,8 @@ Please clearly specify which team and which repository. It is more efficient for
 
 ## Manage members for teams
 
-The GitHub [Teams](https://github.com/orgs/folio-org/teams) each have a member who has the "Maintainer" role for that team.
-They can add or remove existing members.
+The GitHub [Teams](https://github.com/orgs/folio-org/teams) each have a member who has the "Maintainer" role for that team (view the relevant [Team](https://github.com/orgs/folio-org/teams) or the [Matrix](https://folio-org.atlassian.net/wiki/x/kIBP)).
+The team Maintainers can add or remove existing members.
 Of course, if the person is not yet a member of folio-org then follow the [new developer](#github-new-developer) instructions above.
 
 If a team member leaves the FOLIO organization and will not further participate, then please contact DevOps as explained above, to remove their access.
