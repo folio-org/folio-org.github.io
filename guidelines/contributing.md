@@ -37,7 +37,8 @@ All work is done in feature branches, and merged to master via pull requests.
 
 Most people have write permission to only the few
 [https://github.com/folio-org](https://github.com/folio-org)
-repositories they regularly work on. For contributions to any other repository you
+repositories that they regularly work on via their GitHub [Teams](/faqs/how-to-request-github-access/#manage-members-for-teams).
+For contributions to any other repository you
 will need to "fork" it to your personal GitHub account, see the GitHub notes about
 [working with forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks).
 

@@ -259,3 +259,10 @@ xyzabc
 This has the SQL equivalent:\
 `to_tsvector('simple', table.jsonb->>'field') @@ to_tsquery('simple', 'abc:*')`
 
+## Notes about wildcard
+
+The wildcard `*` is available for the operators `=` and `==` and `<>` and `adj` and `all` and `any`.
+
+However `*` is not available as a wildcard for `>` or `>=` or `<` or `<=` because in those contexts the `*` is a plain text character.
+
+Refer to additional notes in the previous sections regarding "wildcard" for truncations.

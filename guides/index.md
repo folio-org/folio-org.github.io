@@ -82,6 +82,7 @@ Refer to the [Guidelines](/guidelines/#background-orientation) section.
 
 Other orientation guides:
 
+- [FOLIO Developer Manual](/faqs/where-is-developer-documentation-located/#folio-developer-manual).
 - [Navigation of commits and CI via GitHub and Jenkins](navigate-commits/).
 - [Search dev.folio.org](/search) and [other search and report facilities](/search-other).
 
