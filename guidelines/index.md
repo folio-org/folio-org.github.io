@@ -22,6 +22,7 @@ The whole community and the project will benefit by being more consistent, effic
   GitHub Flow, feature branches, pull requests, version numbers, coding style,
   tests, etc.
 - [FOLIO Project Contributor License Agreement](/guidelines/cla-process).
+- [FOLIO Developer Manual](/faqs/where-is-developer-documentation-located/#folio-developer-manual).
 - A [FOLIO glossary](/reference/glossary) of some terms and technologies used in FOLIO.
 - [Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/).
 - [Search dev.folio.org](/search) and [other search and report facilities](/search-other).
