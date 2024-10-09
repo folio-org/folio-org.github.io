@@ -316,12 +316,12 @@
     {
       "name": "mod-invoice",
       "nameRepo": "mod-invoice",
-      "releaseDate": "2023-11-03T10:49:01+00:00",
-      "releaseName": "v5.7.2",
-      "releaseSha": "9694bbccab3a90574c3c5c185143bd7acbf432f9",
-      "releaseTag": "v5.7.2",
+      "releaseDate": "2024-10-08T10:37:53+00:00",
+      "releaseName": "",
+      "releaseSha": "01206c2a43142445e76ab2b0f732f90ac6228da2",
+      "releaseTag": "v5.7.3",
       "releaseTarget": "master",
-      "version": "5.7.2"
+      "version": "5.7.3"
     },
     {
       "name": "mod-invoice-storage",
