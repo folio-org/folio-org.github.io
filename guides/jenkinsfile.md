@@ -46,8 +46,9 @@ buildMvn {
 ```
 
 * `buildNode` -- The Jenkins node to run the CI build.
-The default is `'jenkins-agent-java11'` if not specified.
-The other available option is `'jenkins-agent-java17'`.
+The default is `'jenkins-agent-java17'` if not specified.
+The other available option is `'jenkins-agent-java21'`.
+See FAQ [How to specify which Jenkins build image for CI](/faqs/how-to-specify-backend-java-ci/).
 * `publishModDescriptor` -- Maven-based modules will generate the ModuleDescriptor.json file as
 [explained](/guides/commence-a-module/#back-end-descriptors).
 It will be published to the FOLIO Module Descriptor registry.
