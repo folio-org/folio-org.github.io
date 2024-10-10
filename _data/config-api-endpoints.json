@@ -5842,7 +5842,7 @@
   {
     "apiDescription": "ramls/instance-storage-batch.raml",
     "apiType": "raml",
-    "interface": "instance-storage-batch 2.0",
+    "interface": "instance-storage-batch 3.0",
     "methods": "post:instance_storage_batch_instances_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/batch/instances"
@@ -5850,7 +5850,7 @@
   {
     "apiDescription": "ramls/instance-sync.raml",
     "apiType": "raml",
-    "interface": "instance-storage-batch-sync 2.0",
+    "interface": "instance-storage-batch-sync 3.0",
     "methods": "post:instance_storage_batch_synchronous_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/batch/synchronous"
@@ -5858,7 +5858,7 @@
   {
     "apiDescription": "ramls/instance-sync-unsafe.raml",
     "apiType": "raml",
-    "interface": "instance-storage-batch-sync-unsafe 2.0",
+    "interface": "instance-storage-batch-sync-unsafe 3.0",
     "methods": "post:instance_storage_batch_synchronous_unsafe_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/batch/synchronous-unsafe"
@@ -5866,7 +5866,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.3",
+    "interface": "instance-storage 11.0",
     "methods": "get:instance_storage_instance_relationships_get post:instance_storage_instance_relationships_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instance-relationships"
@@ -5874,7 +5874,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.3",
+    "interface": "instance-storage 11.0",
     "methods": "delete:instance_storage_instance_relationships__relationshipid__delete get:instance_storage_instance_relationships__relationshipid__get put:instance_storage_instance_relationships__relationshipid__put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instance-relationships/{relationshipId}"
@@ -5882,7 +5882,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.3",
+    "interface": "instance-storage 11.0",
     "methods": "delete:instance_storage_instances_delete get:instance_storage_instances_get post:instance_storage_instances_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances"
@@ -5898,7 +5898,7 @@
   {
     "apiDescription": "ramls/instance-iteration.raml",
     "apiType": "raml",
-    "interface": "instance-iteration 0.1",
+    "interface": "instance-iteration 1.0",
     "methods": "post:instance_storage_instances_iteration_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/iteration"
@@ -5906,7 +5906,7 @@
   {
     "apiDescription": "ramls/instance-iteration.raml",
     "apiType": "raml",
-    "interface": "instance-iteration 0.1",
+    "interface": "instance-iteration 1.0",
     "methods": "delete:instance_storage_instances_iteration__id__delete get:instance_storage_instances_iteration__id__get",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/iteration/{id}"
@@ -5914,7 +5914,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.3",
+    "interface": "instance-storage 11.0",
     "methods": "post:instance_storage_instances_retrieve_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/retrieve"
@@ -5922,7 +5922,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.3",
+    "interface": "instance-storage 11.0",
     "methods": "delete:instance_storage_instances__instanceid__delete get:instance_storage_instances__instanceid__get put:instance_storage_instances__instanceid__put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}"
@@ -5930,7 +5930,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.3",
+    "interface": "instance-storage 11.0",
     "methods": "delete:instance_storage_instances__instanceid__source_record_delete",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/source-record"
@@ -5938,7 +5938,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.3",
+    "interface": "instance-storage 11.0",
     "methods": "delete:instance_storage_instances__instanceid__source_record_marc_json_delete get:instance_storage_instances__instanceid__source_record_marc_json_get put:instance_storage_instances__instanceid__source_record_marc_json_put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/source-record/marc-json"
@@ -5946,7 +5946,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 10.3",
+    "interface": "instance-storage 11.0",
     "methods": "get:instance_storage_instances__instanceid__source_record_mods_get put:instance_storage_instances__instanceid__source_record_mods_put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/source-record/mods"
@@ -6118,7 +6118,7 @@
   {
     "apiDescription": "ramls/instance-set.raml",
     "apiType": "raml",
-    "interface": "inventory-view-instance-set 2.0",
+    "interface": "inventory-view-instance-set 3.0",
     "methods": "get:inventory_view_instance_set_get",
     "name": "mod-inventory-storage",
     "path": "/inventory-view/instance-set"
@@ -6126,7 +6126,7 @@
   {
     "apiDescription": "ramls/inventory-view.raml",
     "apiType": "raml",
-    "interface": "inventory-view 2.0",
+    "interface": "inventory-view 3.0",
     "methods": "get:inventory_view_instances_get",
     "name": "mod-inventory-storage",
     "path": "/inventory-view/instances"
@@ -6180,7 +6180,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 13.2",
+    "interface": "inventory 14.0",
     "methods": "delete:inventory_instances_delete get:inventory_instances_get post:inventory_instances_post",
     "name": "mod-inventory",
     "path": "/inventory/instances"
@@ -6188,7 +6188,7 @@
   {
     "apiDescription": "ramls/inventory-batch.raml",
     "apiType": "raml",
-    "interface": "inventory-batch 2.0",
+    "interface": "inventory-batch 3.0",
     "methods": "post:inventory_instances_batch_post",
     "name": "mod-inventory",
     "path": "/inventory/instances/batch"
@@ -6196,7 +6196,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 13.2",
+    "interface": "inventory 14.0",
     "methods": "delete:inventory_instances__instanceid__delete get:inventory_instances__instanceid__get put:inventory_instances__instanceid__put",
     "name": "mod-inventory",
     "path": "/inventory/instances/{instanceId}"
@@ -6204,7 +6204,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 13.2",
+    "interface": "inventory 14.0",
     "methods": "delete:inventory_instances__instanceid__mark_deleted_delete",
     "name": "mod-inventory",
     "path": "/inventory/instances/{instanceId}/mark-deleted"
@@ -6212,7 +6212,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 13.2",
+    "interface": "inventory 14.0",
     "methods": "delete:inventory_items_delete get:inventory_items_get post:inventory_items_post",
     "name": "mod-inventory",
     "path": "/inventory/items"
@@ -6220,7 +6220,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 13.2",
+    "interface": "inventory 14.0",
     "methods": "get:inventory_items_by_holdings_id_get post:inventory_items_by_holdings_id_post",
     "name": "mod-inventory",
     "path": "/inventory/items-by-holdings-id"
@@ -6244,7 +6244,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 13.2",
+    "interface": "inventory 14.0",
     "methods": "delete:inventory_items__itemid__delete get:inventory_items__itemid__get put:inventory_items__itemid__put",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}"
@@ -6252,7 +6252,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 13.2",
+    "interface": "inventory 14.0",
     "methods": "post:inventory_items__itemid__mark_in_process_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-in-process"
@@ -6260,7 +6260,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 13.2",
+    "interface": "inventory 14.0",
     "methods": "post:inventory_items__itemid__mark_in_process_non_requestable_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-in-process-non-requestable"
@@ -6268,7 +6268,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 13.2",
+    "interface": "inventory 14.0",
     "methods": "post:inventory_items__itemid__mark_intellectual_item_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-intellectual-item"
@@ -6276,7 +6276,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 13.2",
+    "interface": "inventory 14.0",
     "methods": "post:inventory_items__itemid__mark_long_missing_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-long-missing"
@@ -6284,7 +6284,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 13.2",
+    "interface": "inventory 14.0",
     "methods": "post:inventory_items__itemid__mark_missing_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-missing"
@@ -6292,7 +6292,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 13.2",
+    "interface": "inventory 14.0",
     "methods": "post:inventory_items__itemid__mark_restricted_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-restricted"
@@ -6300,7 +6300,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 13.2",
+    "interface": "inventory 14.0",
     "methods": "post:inventory_items__itemid__mark_unavailable_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-unavailable"
@@ -6308,7 +6308,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 13.2",
+    "interface": "inventory 14.0",
     "methods": "post:inventory_items__itemid__mark_unknown_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-unknown"
@@ -6316,7 +6316,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 13.2",
+    "interface": "inventory 14.0",
     "methods": "post:inventory_items__itemid__mark_withdrawn_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-withdrawn"
@@ -6324,7 +6324,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 13.2",
+    "interface": "inventory 14.0",
     "methods": "post:inventory_tenant_items_post",
     "name": "mod-inventory",
     "path": "/inventory/tenant-items"
@@ -8755,7 +8755,7 @@
   {
     "apiDescription": "ramls/permissions.raml",
     "apiType": "raml",
-    "interface": "permissions 5.6",
+    "interface": "permissions 5.7",
     "methods": "get:perms_permissions_get post:perms_permissions_post",
     "name": "mod-permissions",
     "path": "/perms/permissions"
@@ -8763,7 +8763,7 @@
   {
     "apiDescription": "ramls/permissions.raml",
     "apiType": "raml",
-    "interface": "permissions 5.6",
+    "interface": "permissions 5.7",
     "methods": "delete:perms_permissions__id__delete get:perms_permissions__id__get put:perms_permissions__id__put",
     "name": "mod-permissions",
     "path": "/perms/permissions/{id}"
@@ -8771,7 +8771,7 @@
   {
     "apiDescription": "ramls/permissions.raml",
     "apiType": "raml",
-    "interface": "permissions 5.6",
+    "interface": "permissions 5.7",
     "methods": "post:perms_purge_deprecated_post",
     "name": "mod-permissions",
     "path": "/perms/purge-deprecated"
@@ -8779,7 +8779,7 @@
   {
     "apiDescription": "ramls/permissions.raml",
     "apiType": "raml",
-    "interface": "permissions 5.6",
+    "interface": "permissions 5.7",
     "methods": "get:perms_users_get post:perms_users_post",
     "name": "mod-permissions",
     "path": "/perms/users"
@@ -8787,7 +8787,7 @@
   {
     "apiDescription": "ramls/permissions.raml",
     "apiType": "raml",
-    "interface": "permissions 5.6",
+    "interface": "permissions 5.7",
     "methods": "delete:perms_users__id__delete get:perms_users__id__get put:perms_users__id__put",
     "name": "mod-permissions",
     "path": "/perms/users/{id}"
@@ -8795,7 +8795,7 @@
   {
     "apiDescription": "ramls/permissions.raml",
     "apiType": "raml",
-    "interface": "permissions 5.6",
+    "interface": "permissions 5.7",
     "methods": "get:perms_users__id__permissions_get post:perms_users__id__permissions_post",
     "name": "mod-permissions",
     "path": "/perms/users/{id}/permissions"
@@ -8803,7 +8803,7 @@
   {
     "apiDescription": "ramls/permissions.raml",
     "apiType": "raml",
-    "interface": "permissions 5.6",
+    "interface": "permissions 5.7",
     "methods": "delete:perms_users__id__permissions__permissionname__delete",
     "name": "mod-permissions",
     "path": "/perms/users/{id}/permissions/{permissionname}"
@@ -9322,6 +9322,14 @@
     "methods": "post:operation/confirmMediatedRequest",
     "name": "mod-requests-mediated",
     "path": "/requests-mediated/mediated-requests/{mediatedRequestId}/confirm"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
+    "apiType": "oas",
+    "interface": "requests-mediated 2.0",
+    "methods": "post:operation/declineMediatedRequest",
+    "name": "mod-requests-mediated",
+    "path": "/requests-mediated/mediated-requests/{mediatedRequestId}/decline"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
