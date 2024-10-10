@@ -40,6 +40,10 @@ for those writing UI modules for Stripes.
 The testing framework is explained. Guidelines for module developers.
 - [Permissions in Stripes and FOLIO](https://github.com/folio-org/stripes-core/blob/master/doc/permissions.md).
 
+## FOLIO Developer Manual
+
+Refer to the [FAQ](/faqs/where-is-developer-documentation-located/#folio-developer-manual).
+
 ## Primer documentation
 
 * [Back-end](primer-develop-backend/) (server-side) modules.

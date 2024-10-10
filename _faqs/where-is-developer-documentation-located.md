@@ -27,6 +27,12 @@ So search there for in-progress documentation and suggestions.
 
 Each module's developers can [increase visibility of module documentation](/guides/visibility-module-docs/).
 
+## FOLIO Developer Manual
+
+The [FOLIO Developer Manual](https://folio-org.atlassian.net/wiki/spaces/DEVMANUAL/overview) is a community effort.
+
+Refer to the [Developer Documentation Group](https://folio-org.atlassian.net/wiki/spaces/DDG/overview) wiki space.
+
 ## dev.folio.org
 
 This dev.folio.org site has various general documentation focussed on developers and FOLIO development, and introduces and links to other relevant documentation and resources.
