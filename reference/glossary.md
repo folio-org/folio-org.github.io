@@ -43,7 +43,7 @@ is a summary of terms used in that context, e.g. component, package, module, app
 
 ### Okapi-Stripes Platform, LSP Base, LSP Extended
 
-The "Okapi-Stripes Platform" and the "FOLIO LSP Base" and the "FOLIO LSP Extended Apps" are [defined](https://wiki.folio.org/x/kozc).
+The "Okapi-Stripes Platform" and the "FOLIO LSP Base" and the "FOLIO LSP Extended Apps" are [defined](https://folio-org.atlassian.net/wiki/x/CxJN).
 
 ## FOLIO Special Interest Groups (SIGs) {#sigs}
 
