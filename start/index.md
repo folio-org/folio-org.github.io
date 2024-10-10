@@ -22,7 +22,7 @@ Bearing in mind that [FOLIO uses any programming language](/guides/any-programmi
 
 ## Fundamental documentation
 
-- [Definition of the Okapi-Stripes Platform, FOLIO LSP Base and FOLIO LSP Extended Apps](https://wiki.folio.org/x/kozc)
+- [Definition of the Okapi-Stripes Platform, FOLIO LSP Base and FOLIO LSP Extended Apps](https://folio-org.atlassian.net/wiki/x/CxJN)
 - [Okapi Guide and Reference](https://github.com/folio-org/okapi/blob/master/doc/guide.md).
 - [Modularity in FOLIO: Principles, Techniques and Tools](https://doi.org/10.23974/ijol.2021.vol6.2.208).
 - [FOLIO-Sample-Modules guide](https://github.com/folio-org/folio-sample-modules/blob/master/README.md).
