@@ -379,31 +379,8 @@ KafkaTemplate.send(< topicName >, < key > , < data > );
 
 11. For testing the module container tests can be used , which require docker in the system .
 12. Install docker from [here](https://docs.docker.com/desktop/install/windows-install/)
-13. To write container test use testcontainers dependency
-````
-    <dependency>
-      <groupId>org.testcontainers</groupId>
-      <artifactId>kafka</artifactId>
-      <version>${testcontainers.version}</version>
-      <scope>test</scope>
-    </dependency>
-````
-14. To run basic container test use the following template :
-
-````
-@SpringBootTest(classes = {...})
-@Testcontainers
-public class KafkaIntegrationTests {
-
-  @Container
-  private static KafkaContainer kafka = new KafkaContainer(DockerImageName.parse("confluentinc/cp-kafka:5.5.3"));
-
-  // write tests
-
-}
-````
-
-15. For more about Kafka and Spring boot refer [here](https://spring.io/projects/spring-kafka)
+13. To write container test use folio-spring-support's [folio-spring-testing library](https://github.com/folio-org/folio-spring-support/tree/master/folio-spring-testing).
+14. For more about Kafka and Spring boot refer [here](https://spring.io/projects/spring-kafka)
 
 ## Logging
 See the logging configuration and usage from [here](https://github.com/folio-org/folio-spring-base#logging)
