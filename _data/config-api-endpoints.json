@@ -1947,7 +1947,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.3",
+    "interface": "bulk-operations 1.4",
     "methods": "get:operation/getBulkOperationCollection",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations"
@@ -1963,7 +1963,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.3",
+    "interface": "bulk-operations 1.4",
     "methods": "get:operation/getListUsers",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/list-users"
@@ -1971,7 +1971,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.3",
+    "interface": "bulk-operations 1.4",
     "methods": "get:operation/getUsersPermissions",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/permissions-self-check"
@@ -1979,7 +1979,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.3",
+    "interface": "bulk-operations 1.4",
     "methods": "post:operation/triggerBulkEditByQuery",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/query"
@@ -1987,7 +1987,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.3",
+    "interface": "bulk-operations 1.4",
     "methods": "post:operation/uploadCsvFile",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/upload"
@@ -1995,7 +1995,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.3",
+    "interface": "bulk-operations 1.4",
     "methods": "get:operation/getListUsedTenants",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/used-tenants/{operationId}"
@@ -2003,7 +2003,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.3",
+    "interface": "bulk-operations 1.4",
     "methods": "get:operation/getBulkOperationById",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}"
@@ -2011,7 +2011,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.3",
+    "interface": "bulk-operations 1.4",
     "methods": "post:operation/cancelOperationById",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/cancel"
@@ -2019,7 +2019,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.3",
+    "interface": "bulk-operations 1.4",
     "methods": "post:operation/postContentUpdates",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/content-update"
@@ -2027,7 +2027,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.3",
+    "interface": "bulk-operations 1.4",
     "methods": "get:operation/downloadFileByOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/download"
@@ -2035,7 +2035,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.3",
+    "interface": "bulk-operations 1.4",
     "methods": "get:operation/getErrorsPreviewByOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/errors"
@@ -2043,7 +2043,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.3",
+    "interface": "bulk-operations 1.4",
     "methods": "delete:operation/deleteFileByNameAndOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/files/{fileName}"
@@ -2051,7 +2051,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.3",
+    "interface": "bulk-operations 1.4",
     "methods": "post:operation/postMarcContentUpdates",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/marc-content-update"
@@ -2059,7 +2059,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.3",
+    "interface": "bulk-operations 1.4",
     "methods": "get:operation/getPreviewByOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/preview"
@@ -2067,7 +2067,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.3",
+    "interface": "bulk-operations 1.4",
     "methods": "post:operation/startBulkOperation",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/start"
@@ -2396,6 +2396,14 @@
     "methods": "delete:check_out_lock_storage__lockid__delete get:check_out_lock_storage__lockid__get",
     "name": "mod-circulation-storage",
     "path": "/check-out-lock-storage/{lockId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
+    "apiType": "oas",
+    "interface": "circulation-bff-requests 1.0",
+    "methods": "post:operation/saveAndConfirmMediatedRequest",
+    "name": "mod-circulation-bff",
+    "path": "/circulation-bff/mediated-requests/confirm"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
@@ -8499,6 +8507,13 @@
     "path": "/password/validate"
   },
   {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "post:patron_post",
+    "name": "edge-patron",
+    "path": "/patron"
+  },
+  {
     "apiDescription": "ramls/patron-action-session.raml",
     "apiType": "raml",
     "interface": "patron-action-session-storage 0.3",
@@ -8593,6 +8608,13 @@
     "methods": "post:patron_pin_verify_post",
     "name": "mod-users",
     "path": "/patron-pin/verify"
+  },
+  {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "get:patron_registration_status__emailid__get",
+    "name": "edge-patron",
+    "path": "/patron-registration-status/{emailId}"
   },
   {
     "apiDescription": "ramls/edge-patron.raml",
@@ -10078,9 +10100,9 @@
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "search 1.3",
-    "methods": "get:operation/searchLinkedDataAuthorities",
+    "methods": "get:operation/searchLinkedDataHubs",
     "name": "mod-search",
-    "path": "/search/linked-data/authorities"
+    "path": "/search/linked-data/hubs"
   },
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
