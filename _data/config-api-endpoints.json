@@ -9923,7 +9923,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.0",
     "methods": "post:operation/fetchConsortiumBatchHoldings",
     "name": "mod-search",
     "path": "/search/consortium/batch/holdings"
@@ -9931,7 +9931,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.0",
     "methods": "post:operation/fetchConsortiumBatchItems",
     "name": "mod-search",
     "path": "/search/consortium/batch/items"
@@ -9939,7 +9939,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.0",
     "methods": "get:operation/getConsortiumCampuses",
     "name": "mod-search",
     "path": "/search/consortium/campuses"
@@ -9947,7 +9947,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.0",
     "methods": "get:operation/getConsortiumHolding",
     "name": "mod-search",
     "path": "/search/consortium/holding/{id}"
@@ -9955,7 +9955,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.0",
     "methods": "get:operation/getConsortiumHoldings",
     "name": "mod-search",
     "path": "/search/consortium/holdings"
@@ -9963,7 +9963,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.0",
     "methods": "get:operation/getConsortiumInstitutions",
     "name": "mod-search",
     "path": "/search/consortium/institutions"
@@ -9971,7 +9971,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.0",
     "methods": "get:operation/getConsortiumItem",
     "name": "mod-search",
     "path": "/search/consortium/item/{id}"
@@ -9979,7 +9979,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.0",
     "methods": "get:operation/getConsortiumItems",
     "name": "mod-search",
     "path": "/search/consortium/items"
@@ -9987,7 +9987,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.0",
     "methods": "get:operation/getConsortiumLibraries",
     "name": "mod-search",
     "path": "/search/consortium/libraries"
@@ -9995,7 +9995,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.0",
     "methods": "get:operation/getConsortiumLocations",
     "name": "mod-search",
     "path": "/search/consortium/locations"
@@ -10635,6 +10635,14 @@
     "methods": "get:staging_users_get post:staging_users_post",
     "name": "mod-users",
     "path": "/staging-users"
+  },
+  {
+    "apiDescription": "ramls/staging_users.raml",
+    "apiType": "raml",
+    "interface": "staging-users 1.0",
+    "methods": "put:staging_users__id__mergeorcreateuser_put",
+    "name": "mod-users",
+    "path": "/staging-users/{id}/mergeOrCreateUser"
   },
   {
     "apiDescription": "ramls/statistical-code-type.raml",
