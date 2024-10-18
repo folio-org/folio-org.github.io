@@ -5592,6 +5592,14 @@
     "path": "/gobi/validate"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "graph 1.0",
+    "methods": "get:operation/getResourceGraphById",
+    "name": "mod-linked-data",
+    "path": "/graph/resource/{id}"
+  },
+  {
     "apiDescription": "ramls/groups.raml",
     "apiType": "raml",
     "interface": "users 16.3",
@@ -8940,6 +8948,14 @@
     "path": "/prod/rtac/folioRTAC"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "profile 1.0",
+    "methods": "get:operation/getProfile",
+    "name": "mod-linked-data",
+    "path": "/profile"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
     "apiType": "oas",
     "methods": "get:operation/getProviders",
@@ -9242,6 +9258,14 @@
     "methods": "delete:refunds__refundid__delete get:refunds__refundid__get put:refunds__refundid__put",
     "name": "mod-feesfines",
     "path": "/refunds/{refundId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "reindex 1.0",
+    "methods": "put:operation/reindex",
+    "name": "mod-linked-data",
+    "path": "/reindex"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
@@ -9555,6 +9579,46 @@
     "methods": "post:operation/uploadRecords",
     "name": "mod-reservoir",
     "path": "/reservoir/upload"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "resource 1.0",
+    "methods": "post:operation/createResource",
+    "name": "mod-linked-data",
+    "path": "/resource"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "resource 1.0",
+    "methods": "get:operation/isSupportedByInventoryId",
+    "name": "mod-linked-data",
+    "path": "/resource/check/{inventoryId}/supported"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "resource 1.0",
+    "methods": "get:operation/getResourceIdByResourceInventoryId",
+    "name": "mod-linked-data",
+    "path": "/resource/metadata/{inventoryId}/id"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "resource 1.0",
+    "methods": "delete:operation/deleteResource get:operation/getResourceById put:operation/updateResource",
+    "name": "mod-linked-data",
+    "path": "/resource/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "resource 1.0",
+    "methods": "get:operation/getResourceMarcViewById",
+    "name": "mod-linked-data",
+    "path": "/resource/{id}/marc"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
