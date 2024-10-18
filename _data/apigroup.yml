@@ -34,6 +34,7 @@ inventory:
     - mod-inventory-storage
     - mod-inventory-update
     - mod-kb-ebsco-java
+    - mod-linked-data
     - mod-marc-migrations
     - mod-oai-pmh
     - edge-oai-pmh
