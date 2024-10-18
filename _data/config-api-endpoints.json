@@ -8604,13 +8604,6 @@
   {
     "apiDescription": "ramls/edge-patron.raml",
     "apiType": "raml",
-    "methods": "get:patron_registration_status__emailid__get",
-    "name": "edge-patron",
-    "path": "/patron-registration-status/{emailId}"
-  },
-  {
-    "apiDescription": "ramls/edge-patron.raml",
-    "apiType": "raml",
     "methods": "post:patron_account_post",
     "name": "edge-patron",
     "path": "/patron/account"
@@ -8634,7 +8627,7 @@
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
     "interface": "patron 6.0",
-    "methods": "get:patron_account_by_email__emailid__get put:patron_account_by_email__emailid__put",
+    "methods": "put:patron_account_by_email__emailid__put",
     "name": "mod-patron",
     "path": "/patron/account/by-email/{emailId}"
   },
@@ -8734,6 +8727,21 @@
     "methods": "post:patron_account__id__item__itemid__renew_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/renew"
+  },
+  {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "get:patron_registration_status__emailid__get",
+    "name": "edge-patron",
+    "path": "/patron/registration-status/{emailId}"
+  },
+  {
+    "apiDescription": "ramls/patron.raml",
+    "apiType": "raml",
+    "interface": "patron 6.0",
+    "methods": "get:patron_registration_status__emailid__get",
+    "name": "mod-patron",
+    "path": "/patron/registration-status/{emailId}"
   },
   {
     "apiDescription": "ramls/payments.raml",
