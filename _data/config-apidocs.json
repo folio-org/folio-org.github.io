@@ -1314,6 +1314,26 @@
   {
     "config": {
       "oas": [
+        "src/main/resources/swagger.api/folio-modules.yaml",
+        "src/main/resources/swagger.api/mod-linked-data.yaml"
+      ],
+      "raml": [],
+      "upload": [
+        "mod-linked-data.html"
+      ]
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5"
+    },
+    "name": "mod-linked-data",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
         "src/main/resources/swagger.api/list.yaml"
       ],
       "raml": [],
@@ -1374,7 +1394,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-login-saml",
     "org": "folio-org"

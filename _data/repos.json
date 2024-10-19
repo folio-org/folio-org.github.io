@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-10-15T00:10:30.228545+00:00"
+    "generatedDateTime": "2024-10-17T23:11:13.741049+00:00"
   },
   "repos": [
     {
@@ -1221,6 +1221,42 @@
       "snippetIntro": ""
     },
     {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "lib-linked-data-dictionary",
+      "org": "folio-org",
+      "repoLanguageHint": "java",
+      "repoType": "other",
+      "snippetIntro": "<p>This Java library stores <a href='https://bibfra.me/'>bibframe lite vocabulary</a> as Java enums - the <a href='https://github.com/folio-org/lib-linked-data-dictionary/blob/master/src/main/java/org/folio/ld/dictionary/ResourceTypeDictionary.java'>types</a>, <a href='https://github.com/folio-org/lib-linked-data-dictionary/blob/master/src/main/java/org/folio/ld/dictionary/PropertyDictionary.java'>properties</a> and <a href='https://github.com/folio-org/lib-linked-data-dictionary/blob/master/src/main/java/org/folio/ld/dictionary/PredicateDictionary.java'>predicates</a> used in the Linked Data Graph.</p>",
+      "workflows": [
+        "pr-build.yml"
+      ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "lib-linked-data-fingerprint",
+      "org": "folio-org",
+      "repoLanguageHint": "java",
+      "repoType": "other",
+      "snippetIntro": "<p>Fingerprint hash the unique identifier for a resource in Linked Data Graph.</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "lib-linked-data-marc4ld",
+      "org": "folio-org",
+      "repoLanguageHint": "java",
+      "repoType": "other",
+      "snippetIntro": "<p>lib-linked-data-marc4ld is a Java Spring library for converting MARC Bibliographic records to Linked Data Graph and vice-versa.</p>"
+    },
+    {
       "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": null,
@@ -1686,7 +1722,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -2439,6 +2476,20 @@
       ]
     },
     {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hasTranslations": false,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-linked-data",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>mod-linked-data manages the data graph of the library's catalog, providing REST APIs for CRUD operations on the data graph.</p>"
+    },
+    {
       "apiTypes": "OAS",
       "defaultBranch": "master",
       "description": "Lists back-end module",
@@ -2674,7 +2725,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -4171,7 +4223,7 @@
         "ui.yml"
       ],
       "workflowsFolio": [
-        "ui.yml@v1.1"
+        "ui.yml@v1.5"
       ]
     },
     {
@@ -4914,6 +4966,23 @@
     },
     {
       "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "ui-ld-folio-wrapper",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-linked-data and start your development.</p>",
+      "workflows": [
+        "ui.yml"
+      ],
+      "workflowsFolio": [
+        "ui.yml@v1"
+      ]
+    },
+    {
+      "defaultBranch": "master",
       "description": "Reporting Front End module",
       "docDirName": "doc",
       "hasTranslations": true,
@@ -4945,6 +5014,23 @@
         "stuck-license-cla.yml",
         "ui.yml",
         "validate.yml"
+      ],
+      "workflowsFolio": [
+        "ui.yml@v1"
+      ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "ui-linked-data",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "",
+      "workflows": [
+        "ui.yml"
       ],
       "workflowsFolio": [
         "ui.yml@v1"
@@ -5547,12 +5633,10 @@
       "repoType": "ui",
       "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>quick-marc</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='quick-marc'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml@v1"
       ]
     },
     {

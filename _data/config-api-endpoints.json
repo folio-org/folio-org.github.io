@@ -5592,6 +5592,14 @@
     "path": "/gobi/validate"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "graph 1.0",
+    "methods": "get:operation/getResourceGraphById",
+    "name": "mod-linked-data",
+    "path": "/graph/resource/{id}"
+  },
+  {
     "apiDescription": "ramls/groups.raml",
     "apiType": "raml",
     "interface": "users 16.3",
@@ -8604,13 +8612,6 @@
   {
     "apiDescription": "ramls/edge-patron.raml",
     "apiType": "raml",
-    "methods": "get:patron_registration_status__emailid__get",
-    "name": "edge-patron",
-    "path": "/patron-registration-status/{emailId}"
-  },
-  {
-    "apiDescription": "ramls/edge-patron.raml",
-    "apiType": "raml",
     "methods": "post:patron_account_post",
     "name": "edge-patron",
     "path": "/patron/account"
@@ -8634,7 +8635,7 @@
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
     "interface": "patron 6.0",
-    "methods": "get:patron_account_by_email__emailid__get put:patron_account_by_email__emailid__put",
+    "methods": "put:patron_account_by_email__emailid__put",
     "name": "mod-patron",
     "path": "/patron/account/by-email/{emailId}"
   },
@@ -8734,6 +8735,21 @@
     "methods": "post:patron_account__id__item__itemid__renew_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/renew"
+  },
+  {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "get:patron_registration_status_get",
+    "name": "edge-patron",
+    "path": "/patron/registration-status"
+  },
+  {
+    "apiDescription": "ramls/patron.raml",
+    "apiType": "raml",
+    "interface": "patron 6.0",
+    "methods": "get:patron_registration_status__emailid__get",
+    "name": "mod-patron",
+    "path": "/patron/registration-status/{emailId}"
   },
   {
     "apiDescription": "ramls/payments.raml",
@@ -8930,6 +8946,14 @@
     "methods": "get:prod_rtac_foliortac_get",
     "name": "edge-rtac",
     "path": "/prod/rtac/folioRTAC"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "profile 1.0",
+    "methods": "get:operation/getProfile",
+    "name": "mod-linked-data",
+    "path": "/profile"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
@@ -9234,6 +9258,14 @@
     "methods": "delete:refunds__refundid__delete get:refunds__refundid__get put:refunds__refundid__put",
     "name": "mod-feesfines",
     "path": "/refunds/{refundId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "reindex 1.0",
+    "methods": "put:operation/reindex",
+    "name": "mod-linked-data",
+    "path": "/reindex"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
@@ -9547,6 +9579,46 @@
     "methods": "post:operation/uploadRecords",
     "name": "mod-reservoir",
     "path": "/reservoir/upload"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "resource 1.0",
+    "methods": "post:operation/createResource",
+    "name": "mod-linked-data",
+    "path": "/resource"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "resource 1.0",
+    "methods": "get:operation/isSupportedByInventoryId",
+    "name": "mod-linked-data",
+    "path": "/resource/check/{inventoryId}/supported"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "resource 1.0",
+    "methods": "get:operation/getResourceIdByResourceInventoryId",
+    "name": "mod-linked-data",
+    "path": "/resource/metadata/{inventoryId}/id"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "resource 1.0",
+    "methods": "delete:operation/deleteResource get:operation/getResourceById put:operation/updateResource",
+    "name": "mod-linked-data",
+    "path": "/resource/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "resource 1.0",
+    "methods": "get:operation/getResourceMarcViewById",
+    "name": "mod-linked-data",
+    "path": "/resource/{id}/marc"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
@@ -9923,7 +9995,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.1",
     "methods": "post:operation/fetchConsortiumBatchHoldings",
     "name": "mod-search",
     "path": "/search/consortium/batch/holdings"
@@ -9931,7 +10003,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.1",
     "methods": "post:operation/fetchConsortiumBatchItems",
     "name": "mod-search",
     "path": "/search/consortium/batch/items"
@@ -9939,7 +10011,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumCampuses",
     "name": "mod-search",
     "path": "/search/consortium/campuses"
@@ -9947,7 +10019,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumHolding",
     "name": "mod-search",
     "path": "/search/consortium/holding/{id}"
@@ -9955,7 +10027,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumHoldings",
     "name": "mod-search",
     "path": "/search/consortium/holdings"
@@ -9963,7 +10035,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumInstitutions",
     "name": "mod-search",
     "path": "/search/consortium/institutions"
@@ -9971,7 +10043,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumItem",
     "name": "mod-search",
     "path": "/search/consortium/item/{id}"
@@ -9979,7 +10051,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumItems",
     "name": "mod-search",
     "path": "/search/consortium/items"
@@ -9987,7 +10059,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumLibraries",
     "name": "mod-search",
     "path": "/search/consortium/libraries"
@@ -9995,7 +10067,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 1.2",
+    "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumLocations",
     "name": "mod-search",
     "path": "/search/consortium/locations"
@@ -10635,6 +10707,14 @@
     "methods": "get:staging_users_get post:staging_users_post",
     "name": "mod-users",
     "path": "/staging-users"
+  },
+  {
+    "apiDescription": "ramls/staging_users.raml",
+    "apiType": "raml",
+    "interface": "staging-users 1.0",
+    "methods": "put:staging_users__id__mergeorcreateuser_put",
+    "name": "mod-users",
+    "path": "/staging-users/{id}/mergeOrCreateUser"
   },
   {
     "apiDescription": "ramls/statistical-code-type.raml",
