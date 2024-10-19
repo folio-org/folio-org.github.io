@@ -8739,9 +8739,9 @@
   {
     "apiDescription": "ramls/edge-patron.raml",
     "apiType": "raml",
-    "methods": "get:patron_registration_status__emailid__get",
+    "methods": "get:patron_registration_status_get",
     "name": "edge-patron",
-    "path": "/patron/registration-status/{emailId}"
+    "path": "/patron/registration-status"
   },
   {
     "apiDescription": "ramls/patron.raml",
@@ -9995,7 +9995,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 2.0",
+    "interface": "consortium-search 2.1",
     "methods": "post:operation/fetchConsortiumBatchHoldings",
     "name": "mod-search",
     "path": "/search/consortium/batch/holdings"
@@ -10003,7 +10003,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 2.0",
+    "interface": "consortium-search 2.1",
     "methods": "post:operation/fetchConsortiumBatchItems",
     "name": "mod-search",
     "path": "/search/consortium/batch/items"
@@ -10011,7 +10011,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 2.0",
+    "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumCampuses",
     "name": "mod-search",
     "path": "/search/consortium/campuses"
@@ -10019,7 +10019,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 2.0",
+    "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumHolding",
     "name": "mod-search",
     "path": "/search/consortium/holding/{id}"
@@ -10027,7 +10027,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 2.0",
+    "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumHoldings",
     "name": "mod-search",
     "path": "/search/consortium/holdings"
@@ -10035,7 +10035,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 2.0",
+    "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumInstitutions",
     "name": "mod-search",
     "path": "/search/consortium/institutions"
@@ -10043,7 +10043,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 2.0",
+    "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumItem",
     "name": "mod-search",
     "path": "/search/consortium/item/{id}"
@@ -10051,7 +10051,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 2.0",
+    "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumItems",
     "name": "mod-search",
     "path": "/search/consortium/items"
@@ -10059,7 +10059,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 2.0",
+    "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumLibraries",
     "name": "mod-search",
     "path": "/search/consortium/libraries"
@@ -10067,7 +10067,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "consortium-search 2.0",
+    "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumLocations",
     "name": "mod-search",
     "path": "/search/consortium/locations"
