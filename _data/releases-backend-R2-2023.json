@@ -6,11 +6,11 @@
     {
       "name": "mod-agreements",
       "nameRepo": "mod-agreements",
-      "releaseDate": "2024-05-03T14:57:04+00:00",
-      "releaseName": "Version 6.0.3",
-      "releaseSha": "b9b3ff06b71747de1b7c3471d8fa160e3311e280",
-      "releaseTag": "v6.0.3",
-      "releaseTarget": "release/6.0.x",
+      "releaseDate": null,
+      "releaseName": null,
+      "releaseSha": null,
+      "releaseTag": null,
+      "releaseTarget": null,
       "version": "6.0.3"
     },
     {
