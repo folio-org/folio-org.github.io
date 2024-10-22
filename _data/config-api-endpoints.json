@@ -6062,7 +6062,7 @@
   {
     "apiDescription": "ramls/bound-with-part.raml",
     "apiType": "raml",
-    "interface": "bound-with-parts-storage 1.1",
+    "interface": "bound-with-parts-storage 2.0",
     "methods": "get:inventory_storage_bound_with_parts_get post:inventory_storage_bound_with_parts_post",
     "name": "mod-inventory-storage",
     "path": "/inventory-storage/bound-with-parts"
@@ -6070,7 +6070,7 @@
   {
     "apiDescription": "ramls/bound-with-part.raml",
     "apiType": "raml",
-    "interface": "bound-with-parts-storage 1.1",
+    "interface": "bound-with-parts-storage 2.0",
     "methods": "delete:inventory_storage_bound_with_parts__id__delete get:inventory_storage_bound_with_parts__id__get put:inventory_storage_bound_with_parts__id__put",
     "name": "mod-inventory-storage",
     "path": "/inventory-storage/bound-with-parts/{id}"
@@ -6078,7 +6078,7 @@
   {
     "apiDescription": "ramls/bound-with-part.raml",
     "apiType": "raml",
-    "interface": "bound-with-parts-storage 1.1",
+    "interface": "bound-with-parts-storage 2.0",
     "methods": "put:inventory_storage_bound_withs_put",
     "name": "mod-inventory-storage",
     "path": "/inventory-storage/bound-withs"
@@ -6086,7 +6086,7 @@
   {
     "apiDescription": "ramls/async-migration.raml",
     "apiType": "raml",
-    "interface": "async-migration 0.1",
+    "interface": "async-migration 1.0",
     "methods": "get:inventory_storage_migrations_get",
     "name": "mod-inventory-storage",
     "path": "/inventory-storage/migrations"
@@ -6094,7 +6094,7 @@
   {
     "apiDescription": "ramls/async-migration.raml",
     "apiType": "raml",
-    "interface": "async-migration 0.1",
+    "interface": "async-migration 1.0",
     "methods": "get:inventory_storage_migrations_jobs_get post:inventory_storage_migrations_jobs_post",
     "name": "mod-inventory-storage",
     "path": "/inventory-storage/migrations/jobs"
@@ -6102,7 +6102,7 @@
   {
     "apiDescription": "ramls/async-migration.raml",
     "apiType": "raml",
-    "interface": "async-migration 0.1",
+    "interface": "async-migration 1.0",
     "methods": "delete:inventory_storage_migrations_jobs__id__delete get:inventory_storage_migrations_jobs__id__get",
     "name": "mod-inventory-storage",
     "path": "/inventory-storage/migrations/jobs/{id}"
@@ -8514,6 +8514,14 @@
     "path": "/patron"
   },
   {
+    "apiDescription": "ramls/patron.raml",
+    "apiType": "raml",
+    "interface": "patron 6.1",
+    "methods": "post:patron_post",
+    "name": "mod-patron",
+    "path": "/patron"
+  },
+  {
     "apiDescription": "ramls/patron-action-session.raml",
     "apiType": "raml",
     "interface": "patron-action-session-storage 0.3",
@@ -8617,26 +8625,10 @@
     "path": "/patron/account"
   },
   {
-    "apiDescription": "ramls/patron.raml",
-    "apiType": "raml",
-    "interface": "patron 6.0",
-    "methods": "get:patron_account_get post:patron_account_post",
-    "name": "mod-patron",
-    "path": "/patron/account"
-  },
-  {
     "apiDescription": "ramls/edge-patron.raml",
     "apiType": "raml",
     "methods": "get:patron_account_by_email__emailid__get put:patron_account_by_email__emailid__put",
     "name": "edge-patron",
-    "path": "/patron/account/by-email/{emailId}"
-  },
-  {
-    "apiDescription": "ramls/patron.raml",
-    "apiType": "raml",
-    "interface": "patron 6.0",
-    "methods": "put:patron_account_by_email__emailid__put",
-    "name": "mod-patron",
     "path": "/patron/account/by-email/{emailId}"
   },
   {
@@ -8656,7 +8648,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.0",
+    "interface": "patron 6.1",
     "methods": "get:patron_account__id__get",
     "name": "mod-patron",
     "path": "/patron/account/{id}"
@@ -8671,7 +8663,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.0",
+    "interface": "patron 6.1",
     "methods": "post:patron_account__id__hold__holdid__cancel_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/hold/{holdId}/cancel"
@@ -8686,7 +8678,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.0",
+    "interface": "patron 6.1",
     "methods": "get:patron_account__id__instance__instanceid__allowed_service_points_get",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/allowed-service-points"
@@ -8701,7 +8693,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.0",
+    "interface": "patron 6.1",
     "methods": "post:patron_account__id__instance__instanceid__hold_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/hold"
@@ -8716,7 +8708,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.0",
+    "interface": "patron 6.1",
     "methods": "post:patron_account__id__item__itemid__hold_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/hold"
@@ -8731,7 +8723,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.0",
+    "interface": "patron 6.1",
     "methods": "post:patron_account__id__item__itemid__renew_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/renew"
@@ -8746,7 +8738,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.0",
+    "interface": "patron 6.1",
     "methods": "get:patron_registration_status__emailid__get",
     "name": "mod-patron",
     "path": "/patron/registration-status/{emailId}"
@@ -10083,7 +10075,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "indices 0.8",
+    "interface": "indices 1.0",
     "methods": "post:operation/createIndices",
     "name": "mod-search",
     "path": "/search/index/indices"
@@ -10091,7 +10083,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "indices 0.8",
+    "interface": "indices 1.0",
     "methods": "post:operation/reindexInstanceRecords",
     "name": "mod-search",
     "path": "/search/index/instance-records/reindex/full"
@@ -10099,7 +10091,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "indices 0.8",
+    "interface": "indices 1.0",
     "methods": "get:operation/getReindexStatus",
     "name": "mod-search",
     "path": "/search/index/instance-records/reindex/status"
@@ -10107,7 +10099,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "indices 0.8",
+    "interface": "indices 1.0",
     "methods": "post:operation/reindexUploadInstanceRecords",
     "name": "mod-search",
     "path": "/search/index/instance-records/reindex/upload"
@@ -10115,7 +10107,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "indices 0.8",
+    "interface": "indices 1.0",
     "methods": "post:operation/reindexInventoryRecords",
     "name": "mod-search",
     "path": "/search/index/inventory/reindex"
@@ -10123,7 +10115,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "indices 0.8",
+    "interface": "indices 1.0",
     "methods": "post:operation/updateMappings",
     "name": "mod-search",
     "path": "/search/index/mappings"
@@ -10131,7 +10123,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "indices 0.8",
+    "interface": "indices 1.0",
     "methods": "post:operation/indexRecords",
     "name": "mod-search",
     "path": "/search/index/records"
@@ -10139,7 +10131,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "indices 0.8",
+    "interface": "indices 1.0",
     "methods": "put:operation/updateIndexDynamicSettings",
     "name": "mod-search",
     "path": "/search/index/settings"
