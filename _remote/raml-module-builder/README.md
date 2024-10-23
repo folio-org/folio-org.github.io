@@ -405,7 +405,7 @@ PostgresClient.select and PostgresClient.join. Not for methods such
 as PostgresClient.getById or PostgresClient.streamGet.
 
 The environment variable `DB_QUERYTIMEOUT` sets the number of milliseconds after which RMB sends a
-<a href=https://www.postgresql.org/docs/14/protocol-flow.html#id-1.10.5.7.10">cancel request</a>
+<a href="https://www.postgresql.org/docs/14/protocol-flow.html#id-1.10.5.7.10">cancel request</a>
 to a running PostgreSQL query. 0 disables this timeout and is the default.
 To take effect an RMB based module must get it via PostgresClient.getConnectionConfig().getInteger("queryTimeout")
 and pass it to the RMB method that starts the connection, transaction or query.
@@ -883,7 +883,7 @@ This means that all the fields in the JSON schema (representing the JSON object)
 
 ### Minimum PostgreSQL server version
 
-The minimum PostgreSQL server version for RMB 34.0 is 12.0.0. RMB fails a POST /_/tenant call if the actual version is lower. You may set a higher or lower requirement using [server_version_num format](https://www.postgresql.org/docs/current/runtime-config-preset.html#GUC-SERVER-VERSION-NUM):
+The minimum PostgreSQL server version for RMB 35.3 is 16.0.0. RMB fails a POST /_/tenant call if the actual version is lower. You may set a higher or lower requirement using [server_version_num format](https://www.postgresql.org/docs/current/runtime-config-preset.html#GUC-SERVER-VERSION-NUM):
 
 ```
 public class TenantRefAPI extends TenantAPI {
@@ -892,8 +892,8 @@ public class TenantRefAPI extends TenantAPI {
   public void postTenant(TenantAttributes tenantAttributes, Map<String, String> headers,
                          Handler<AsyncResult<Response>> handler, Context context)  {
     // https://www.postgresql.org/docs/current/runtime-config-preset.html#GUC-SERVER-VERSION-NUM
-    context.putLocal("postgres_min_version_num", "100000");
-    context.putLocal("postgres_min_version", "10.0");  // human readable, for error message only
+    context.putLocal("postgres_min_version_num", "150000");
+    context.putLocal("postgres_min_version", "15.0");  // human readable, for error message only
     super.postTenant(tenantAttributes, headers, handler, context);
   }
 }
