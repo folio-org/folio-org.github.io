@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-10-17T23:11:13.741049+00:00"
+    "generatedDateTime": "2024-10-21T23:50:13.748351+00:00"
   },
   "repos": [
     {
@@ -1056,7 +1056,10 @@
       "org": "folio-org",
       "repoLanguageHint": "java",
       "repoType": "other",
-      "snippetIntro": "<p>Library with general purpose classes to help with FOLIO backend service development and testing</p>"
+      "snippetIntro": "<p>Library with general purpose classes to help with FOLIO backend service development and testing</p>",
+      "workflows": [
+        "postgres.yml"
+      ]
     },
     {
       "apiTypes": "OAS",
@@ -3124,7 +3127,8 @@
         "api-doc.yml",
         "api-lint.yml",
         "api-schema-lint.yml",
-        "do-go.yml"
+        "do-go.yml",
+        "go-lint.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -3519,7 +3523,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -4736,12 +4741,10 @@
       "repoType": "ui",
       "snippetIntro": "<p>The <code>ui-eholdings</code> module adds the ability to manage electronic holdings in FOLIO. The first supported knowledge base is from EBSCO.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml@v1"
       ]
     },
     {
@@ -5102,12 +5105,10 @@
       "repoType": "ui",
       "snippetIntro": "<p>This is a UI module for administrating authority records.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml@v1"
       ]
     },
     {
@@ -5140,12 +5141,10 @@
       "repoType": "ui",
       "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module for dealing with the notes.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml@v1"
       ]
     },
     {
