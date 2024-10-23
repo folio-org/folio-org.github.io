@@ -9600,6 +9600,14 @@
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
     "interface": "resource 1.0",
+    "methods": "get:operation/getResourcePreviewByInventoryId",
+    "name": "mod-linked-data",
+    "path": "/resource/preview/{inventoryId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "resource 1.0",
     "methods": "delete:operation/deleteResource get:operation/getResourceById put:operation/updateResource",
     "name": "mod-linked-data",
     "path": "/resource/{id}"
