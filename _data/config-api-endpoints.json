@@ -1012,7 +1012,7 @@
   {
     "apiDescription": "ramls/aggregatorsettings.raml",
     "apiType": "raml",
-    "interface": "aggregator-settings 1.2",
+    "interface": "aggregator-settings 2.0",
     "methods": "get:aggregator_settings_get post:aggregator_settings_post",
     "name": "mod-erm-usage",
     "path": "/aggregator-settings"
@@ -1020,7 +1020,7 @@
   {
     "apiDescription": "ramls/aggregatorsettings.raml",
     "apiType": "raml",
-    "interface": "aggregator-settings 1.2",
+    "interface": "aggregator-settings 2.0",
     "methods": "delete:aggregator_settings__id__delete get:aggregator_settings__id__get put:aggregator_settings__id__put",
     "name": "mod-erm-usage",
     "path": "/aggregator-settings/{id}"
@@ -1028,7 +1028,7 @@
   {
     "apiDescription": "ramls/aggregatorsettings.raml",
     "apiType": "raml",
-    "interface": "aggregator-settings 1.2",
+    "interface": "aggregator-settings 2.0",
     "methods": "get:aggregator_settings__id__exportcredentials_get",
     "name": "mod-erm-usage",
     "path": "/aggregator-settings/{id}/exportcredentials"
@@ -3391,7 +3391,7 @@
   {
     "apiDescription": "ramls/customreports.raml",
     "apiType": "raml",
-    "interface": "custom-reports 1.1",
+    "interface": "custom-reports 2.0",
     "methods": "get:custom_reports_get post:custom_reports_post",
     "name": "mod-erm-usage",
     "path": "/custom-reports"
@@ -3399,7 +3399,7 @@
   {
     "apiDescription": "ramls/customreports.raml",
     "apiType": "raml",
-    "interface": "custom-reports 1.1",
+    "interface": "custom-reports 2.0",
     "methods": "delete:custom_reports__id__delete get:custom_reports__id__get put:custom_reports__id__put",
     "name": "mod-erm-usage",
     "path": "/custom-reports/{id}"
@@ -4336,7 +4336,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 1.4",
+    "interface": "erm-usage-harvester 2.0",
     "methods": "get:erm_usage_harvester_impl_get",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/impl"
@@ -4344,7 +4344,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 1.4",
+    "interface": "erm-usage-harvester 2.0",
     "methods": "get:erm_usage_harvester_jobs_get",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/jobs"
@@ -4360,7 +4360,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 1.4",
+    "interface": "erm-usage-harvester 2.0",
     "methods": "post:erm_usage_harvester_jobs_purgefinished_post",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/jobs/purgefinished"
@@ -4368,7 +4368,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 1.4",
+    "interface": "erm-usage-harvester 2.0",
     "methods": "post:erm_usage_harvester_jobs_purgestale_post",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/jobs/purgestale"
@@ -4376,7 +4376,7 @@
   {
     "apiDescription": "ramls/periodic.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 1.4",
+    "interface": "erm-usage-harvester 2.0",
     "methods": "delete:erm_usage_harvester_periodic_delete get:erm_usage_harvester_periodic_get post:erm_usage_harvester_periodic_post",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/periodic"
@@ -4384,7 +4384,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 1.4",
+    "interface": "erm-usage-harvester 2.0",
     "methods": "get:erm_usage_harvester_start_get",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/start"
@@ -4392,7 +4392,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 1.4",
+    "interface": "erm-usage-harvester 2.0",
     "methods": "get:erm_usage_harvester_start__id__get",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/start/{id}"
@@ -8699,6 +8699,14 @@
     "path": "/patron/account/{id}/instance/{instanceId}/hold"
   },
   {
+    "apiDescription": "ramls/patron.raml",
+    "apiType": "raml",
+    "interface": "patron 6.1",
+    "methods": "get:patron_account__id__item__itemid__allowed_service_points_get",
+    "name": "mod-patron",
+    "path": "/patron/account/{id}/item/{itemId}/allowed-service-points"
+  },
+  {
     "apiDescription": "ramls/edge-patron.raml",
     "apiType": "raml",
     "methods": "post:patron_account__id__item__itemid__hold_post",
@@ -8758,6 +8766,13 @@
     "methods": "delete:payments__paymentid__delete get:payments__paymentid__get put:payments__paymentid__put",
     "name": "mod-feesfines",
     "path": "/payments/{paymentId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getUsersPermissions",
+    "name": "mod-data-export",
+    "path": "/permissions-self-check"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
