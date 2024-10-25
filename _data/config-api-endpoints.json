@@ -5282,15 +5282,15 @@
   {
     "apiDescription": "ramls/fincConfigMetadataSources.raml",
     "apiType": "raml",
-    "interface": "finc-config/contacts 1.0",
-    "methods": "get:finc_config_contacts_get post:finc_config_contacts_post",
+    "interface": "finc-config-contacts 1.0",
+    "methods": "get:finc_config_contacts_get",
     "name": "mod-finc-config",
     "path": "/finc-config/contacts"
   },
   {
     "apiDescription": "ramls/fincConfigEZBCredentials.raml",
     "apiType": "raml",
-    "interface": "finc-config/ezb-credentials 1.0",
+    "interface": "finc-config-ezb-credentials 1.0",
     "methods": "get:finc_config_ezb_credentials_get post:finc_config_ezb_credentials_post",
     "name": "mod-finc-config",
     "path": "/finc-config/ezb-credentials"
@@ -5298,7 +5298,7 @@
   {
     "apiDescription": "ramls/fincConfigEZBCredentials.raml",
     "apiType": "raml",
-    "interface": "finc-config/ezb-credentials 1.0",
+    "interface": "finc-config-ezb-credentials 1.0",
     "methods": "delete:finc_config_ezb_credentials__isil__delete get:finc_config_ezb_credentials__isil__get put:finc_config_ezb_credentials__isil__put",
     "name": "mod-finc-config",
     "path": "/finc-config/ezb-credentials/{isil}"
@@ -5306,7 +5306,7 @@
   {
     "apiDescription": "ramls/fincConfigFiles.raml",
     "apiType": "raml",
-    "interface": "finc-config/files 1.0",
+    "interface": "finc-config-files 1.0",
     "methods": "post:finc_config_files_post",
     "name": "mod-finc-config",
     "path": "/finc-config/files"
@@ -5314,7 +5314,7 @@
   {
     "apiDescription": "ramls/fincConfigFiles.raml",
     "apiType": "raml",
-    "interface": "finc-config/files 1.0",
+    "interface": "finc-config-files 1.0",
     "methods": "delete:finc_config_files__id__delete get:finc_config_files__id__get",
     "name": "mod-finc-config",
     "path": "/finc-config/files/{id}"
@@ -5322,7 +5322,7 @@
   {
     "apiDescription": "ramls/fincConfigFilters.raml",
     "apiType": "raml",
-    "interface": "finc-config/filters 1.0",
+    "interface": "finc-config-filters 1.0",
     "methods": "get:finc_config_filters_get post:finc_config_filters_post",
     "name": "mod-finc-config",
     "path": "/finc-config/filters"
@@ -5330,7 +5330,7 @@
   {
     "apiDescription": "ramls/fincConfigFilters.raml",
     "apiType": "raml",
-    "interface": "finc-config/filters 1.0",
+    "interface": "finc-config-filters 1.0",
     "methods": "delete:finc_config_filters__id__delete get:finc_config_filters__id__get put:finc_config_filters__id__put",
     "name": "mod-finc-config",
     "path": "/finc-config/filters/{id}"
@@ -5338,7 +5338,7 @@
   {
     "apiDescription": "ramls/fincConfigFilters.raml",
     "apiType": "raml",
-    "interface": "finc-config/filters 1.0",
+    "interface": "finc-config-filters 1.0",
     "methods": "get:finc_config_filters__id__collections_get put:finc_config_filters__id__collections_put",
     "name": "mod-finc-config",
     "path": "/finc-config/filters/{id}/collections"
@@ -5346,7 +5346,7 @@
   {
     "apiDescription": "ramls/isils.raml",
     "apiType": "raml",
-    "interface": "finc-config/isils 1.0",
+    "interface": "finc-config-isils 1.0",
     "methods": "get:finc_config_isils_get post:finc_config_isils_post",
     "name": "mod-finc-config",
     "path": "/finc-config/isils"
@@ -5354,7 +5354,7 @@
   {
     "apiDescription": "ramls/isils.raml",
     "apiType": "raml",
-    "interface": "finc-config/isils 1.0",
+    "interface": "finc-config-isils 1.0",
     "methods": "delete:finc_config_isils__id__delete get:finc_config_isils__id__get put:finc_config_isils__id__put",
     "name": "mod-finc-config",
     "path": "/finc-config/isils/{id}"
@@ -5362,7 +5362,7 @@
   {
     "apiDescription": "ramls/fincConfigMetadataCollections.raml",
     "apiType": "raml",
-    "interface": "finc-config/metadata-collections 2.0",
+    "interface": "finc-config-metadata-collections 1.0",
     "methods": "get:finc_config_metadata_collections_get post:finc_config_metadata_collections_post",
     "name": "mod-finc-config",
     "path": "/finc-config/metadata-collections"
@@ -5370,7 +5370,7 @@
   {
     "apiDescription": "ramls/fincConfigMetadataCollections.raml",
     "apiType": "raml",
-    "interface": "finc-config/metadata-collections 2.0",
+    "interface": "finc-config-metadata-collections 1.0",
     "methods": "delete:finc_config_metadata_collections__id__delete get:finc_config_metadata_collections__id__get put:finc_config_metadata_collections__id__put",
     "name": "mod-finc-config",
     "path": "/finc-config/metadata-collections/{id}"
@@ -5378,7 +5378,7 @@
   {
     "apiDescription": "ramls/fincConfigMetadataSources.raml",
     "apiType": "raml",
-    "interface": "finc-config/metadata-sources 3.0",
+    "interface": "finc-config-metadata-sources 1.0",
     "methods": "get:finc_config_metadata_sources_get post:finc_config_metadata_sources_post",
     "name": "mod-finc-config",
     "path": "/finc-config/metadata-sources"
@@ -5386,7 +5386,7 @@
   {
     "apiDescription": "ramls/fincConfigMetadataSources.raml",
     "apiType": "raml",
-    "interface": "finc-config/metadata-sources 3.0",
+    "interface": "finc-config-metadata-sources 1.0",
     "methods": "delete:finc_config_metadata_sources__id__delete get:finc_config_metadata_sources__id__get put:finc_config_metadata_sources__id__put",
     "name": "mod-finc-config",
     "path": "/finc-config/metadata-sources/{id}"
@@ -5394,15 +5394,15 @@
   {
     "apiDescription": "ramls/fincConfigMetadataSources.raml",
     "apiType": "raml",
-    "interface": "finc-config/metadata-sources 3.0",
-    "methods": "get:finc_config_tiny_metadata_sources_get post:finc_config_tiny_metadata_sources_post",
+    "interface": "finc-config-metadata-sources 1.0",
+    "methods": "get:finc_config_tiny_metadata_sources_get",
     "name": "mod-finc-config",
     "path": "/finc-config/tiny-metadata-sources"
   },
   {
     "apiDescription": "ramls/fincSelectEZBCredentials.raml",
     "apiType": "raml",
-    "interface": "finc-select/ezb-credentials 1.0",
+    "interface": "finc-select-ezb-credentials 1.0",
     "methods": "delete:finc_select_ezb_credentials_delete get:finc_select_ezb_credentials_get put:finc_select_ezb_credentials_put",
     "name": "mod-finc-config",
     "path": "/finc-select/ezb-credentials"
@@ -5410,7 +5410,7 @@
   {
     "apiDescription": "ramls/fincSelectFiles.raml",
     "apiType": "raml",
-    "interface": "finc-select/files 1.0",
+    "interface": "finc-select-files 1.0",
     "methods": "post:finc_select_files_post",
     "name": "mod-finc-config",
     "path": "/finc-select/files"
@@ -5418,7 +5418,7 @@
   {
     "apiDescription": "ramls/fincSelectFiles.raml",
     "apiType": "raml",
-    "interface": "finc-select/files 1.0",
+    "interface": "finc-select-files 1.0",
     "methods": "delete:finc_select_files__id__delete get:finc_select_files__id__get",
     "name": "mod-finc-config",
     "path": "/finc-select/files/{id}"
@@ -5426,7 +5426,7 @@
   {
     "apiDescription": "ramls/fincSelectFilters.raml",
     "apiType": "raml",
-    "interface": "finc-select/filters 1.2",
+    "interface": "finc-select-filters 1.0",
     "methods": "get:finc_select_filters_get post:finc_select_filters_post",
     "name": "mod-finc-config",
     "path": "/finc-select/filters"
@@ -5434,7 +5434,7 @@
   {
     "apiDescription": "ramls/fincSelectFilters.raml",
     "apiType": "raml",
-    "interface": "finc-select/filters 1.2",
+    "interface": "finc-select-filters 1.0",
     "methods": "delete:finc_select_filters__id__delete get:finc_select_filters__id__get put:finc_select_filters__id__put",
     "name": "mod-finc-config",
     "path": "/finc-select/filters/{id}"
@@ -5442,7 +5442,7 @@
   {
     "apiDescription": "ramls/fincSelectFilters.raml",
     "apiType": "raml",
-    "interface": "finc-select/filters 1.2",
+    "interface": "finc-select-filters 1.0",
     "methods": "get:finc_select_filters__id__collections_get put:finc_select_filters__id__collections_put",
     "name": "mod-finc-config",
     "path": "/finc-select/filters/{id}/collections"
@@ -5450,7 +5450,7 @@
   {
     "apiDescription": "ramls/fincSelectMetadataCollections.raml",
     "apiType": "raml",
-    "interface": "finc-select/metadata-collections 2.0",
+    "interface": "finc-select-metadata-collections 1.0",
     "methods": "get:finc_select_metadata_collections_get",
     "name": "mod-finc-config",
     "path": "/finc-select/metadata-collections"
@@ -5458,7 +5458,7 @@
   {
     "apiDescription": "ramls/fincSelectMetadataCollections.raml",
     "apiType": "raml",
-    "interface": "finc-select/metadata-collections 2.0",
+    "interface": "finc-select-metadata-collections 1.0",
     "methods": "get:finc_select_metadata_collections__id__get",
     "name": "mod-finc-config",
     "path": "/finc-select/metadata-collections/{id}"
@@ -5466,40 +5466,32 @@
   {
     "apiDescription": "ramls/fincSelectMetadataCollections.raml",
     "apiType": "raml",
-    "interface": "finc-select/metadata-collections 2.0",
-    "methods": "delete:finc_select_metadata_collections__id__select_delete get:finc_select_metadata_collections__id__select_get put:finc_select_metadata_collections__id__select_put",
+    "interface": "finc-select-metadata-collections 1.0",
+    "methods": "put:finc_select_metadata_collections__id__select_put",
     "name": "mod-finc-config",
     "path": "/finc-select/metadata-collections/{id}/select"
   },
   {
     "apiDescription": "ramls/fincSelectMetadataSources.raml",
     "apiType": "raml",
-    "interface": "finc-select/metadata-sources 3.0",
-    "methods": "get:finc_select_metadata_sources_get post:finc_select_metadata_sources_post",
+    "interface": "finc-select-metadata-sources 1.0",
+    "methods": "get:finc_select_metadata_sources_get",
     "name": "mod-finc-config",
     "path": "/finc-select/metadata-sources"
   },
   {
     "apiDescription": "ramls/fincSelectMetadataSources.raml",
     "apiType": "raml",
-    "interface": "finc-select/metadata-sources 3.0",
-    "methods": "delete:finc_select_metadata_sources__id__delete get:finc_select_metadata_sources__id__get put:finc_select_metadata_sources__id__put",
+    "interface": "finc-select-metadata-sources 1.0",
+    "methods": "get:finc_select_metadata_sources__id__get",
     "name": "mod-finc-config",
     "path": "/finc-select/metadata-sources/{id}"
   },
   {
     "apiDescription": "ramls/fincSelectMetadataSources.raml",
     "apiType": "raml",
-    "interface": "finc-select/metadata-sources 3.0",
-    "methods": "get:finc_select_metadata_sources__id__collections_get",
-    "name": "mod-finc-config",
-    "path": "/finc-select/metadata-sources/{id}/collections"
-  },
-  {
-    "apiDescription": "ramls/fincSelectMetadataSources.raml",
-    "apiType": "raml",
-    "interface": "finc-select/metadata-sources 3.0",
-    "methods": "delete:finc_select_metadata_sources__id__collections_select_all_delete get:finc_select_metadata_sources__id__collections_select_all_get put:finc_select_metadata_sources__id__collections_select_all_put",
+    "interface": "finc-select-metadata-sources 1.0",
+    "methods": "put:finc_select_metadata_sources__id__collections_select_all_put",
     "name": "mod-finc-config",
     "path": "/finc-select/metadata-sources/{id}/collections/select-all"
   },
@@ -8697,6 +8689,13 @@
     "methods": "post:patron_account__id__instance__instanceid__hold_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/hold"
+  },
+  {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "get:patron_account__id__item__itemid__allowed_service_points_get",
+    "name": "edge-patron",
+    "path": "/patron/account/{id}/item/{itemId}/allowed-service-points"
   },
   {
     "apiDescription": "ramls/patron.raml",
