@@ -116,7 +116,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5"
     },
     "name": "edge-fqm",
     "org": "folio-org"
@@ -1010,7 +1010,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-finc-config",
     "org": "folio-org"
@@ -1694,7 +1694,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-pubsub",
     "org": "folio-org"
