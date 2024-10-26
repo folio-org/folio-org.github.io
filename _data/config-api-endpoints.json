@@ -1947,7 +1947,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.4",
+    "interface": "bulk-operations 1.5",
     "methods": "get:operation/getBulkOperationCollection",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations"
@@ -1963,7 +1963,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.4",
+    "interface": "bulk-operations 1.5",
     "methods": "get:operation/getListUsers",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/list-users"
@@ -1971,7 +1971,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.4",
+    "interface": "bulk-operations 1.5",
     "methods": "get:operation/getUsersPermissions",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/permissions-self-check"
@@ -1979,7 +1979,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.4",
+    "interface": "bulk-operations 1.5",
     "methods": "post:operation/triggerBulkEditByQuery",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/query"
@@ -1987,7 +1987,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.4",
+    "interface": "bulk-operations 1.5",
     "methods": "post:operation/uploadCsvFile",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/upload"
@@ -1995,7 +1995,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.4",
+    "interface": "bulk-operations 1.5",
     "methods": "get:operation/getListUsedTenants",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/used-tenants/{operationId}"
@@ -2003,7 +2003,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.4",
+    "interface": "bulk-operations 1.5",
     "methods": "get:operation/getBulkOperationById",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}"
@@ -2011,7 +2011,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.4",
+    "interface": "bulk-operations 1.5",
     "methods": "post:operation/cancelOperationById",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/cancel"
@@ -2019,7 +2019,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.4",
+    "interface": "bulk-operations 1.5",
     "methods": "post:operation/postContentUpdates",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/content-update"
@@ -2027,7 +2027,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.4",
+    "interface": "bulk-operations 1.5",
     "methods": "get:operation/downloadFileByOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/download"
@@ -2035,7 +2035,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.4",
+    "interface": "bulk-operations 1.5",
     "methods": "get:operation/getErrorsPreviewByOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/errors"
@@ -2043,7 +2043,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.4",
+    "interface": "bulk-operations 1.5",
     "methods": "delete:operation/deleteFileByNameAndOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/files/{fileName}"
@@ -2051,7 +2051,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.4",
+    "interface": "bulk-operations 1.5",
     "methods": "post:operation/postMarcContentUpdates",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/marc-content-update"
@@ -2059,7 +2059,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.4",
+    "interface": "bulk-operations 1.5",
     "methods": "get:operation/getPreviewByOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/preview"
@@ -2067,7 +2067,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.4",
+    "interface": "bulk-operations 1.5",
     "methods": "post:operation/startBulkOperation",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/start"
@@ -10449,22 +10449,6 @@
     "methods": "get:shared_inventory_upsert_matchkey_fetch__id__get",
     "name": "mod-inventory-update",
     "path": "/shared-inventory-upsert-matchkey/fetch/{id}"
-  },
-  {
-    "apiDescription": "ramls/shelf-location.raml",
-    "apiType": "raml",
-    "interface": "shelf-locations 1.1",
-    "methods": "delete:shelf_locations_delete get:shelf_locations_get post:shelf_locations_post",
-    "name": "mod-inventory-storage",
-    "path": "/shelf-locations"
-  },
-  {
-    "apiDescription": "ramls/shelf-location.raml",
-    "apiType": "raml",
-    "interface": "shelf-locations 1.1",
-    "methods": "delete:shelf_locations__id__delete get:shelf_locations__id__get put:shelf_locations__id__put",
-    "name": "mod-inventory-storage",
-    "path": "/shelf-locations/{id}"
   },
   {
     "apiDescription": "ramls/smtp-configuration.raml",
