@@ -1165,7 +1165,6 @@
         "ramls/record-bulk.raml",
         "ramls/service-point.raml",
         "ramls/service-points-user.raml",
-        "ramls/shelf-location.raml",
         "ramls/statistical-code-type.raml",
         "ramls/statistical-code.raml",
         "ramls/subject-source.raml",
@@ -2091,7 +2090,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.3"
+      "generator": "api_doc.py 1.5"
     },
     "name": "mod-users-bl",
     "org": "folio-org"
