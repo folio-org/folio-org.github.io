@@ -9221,7 +9221,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/records-editor-async.yaml",
     "apiType": "oas",
-    "methods": "delete:operation/deleteRecordByExternalId put:operation/putRecord",
+    "methods": "put:operation/putRecord",
     "name": "mod-quick-marc",
     "path": "/records/{id}"
   },
