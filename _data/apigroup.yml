@@ -35,6 +35,7 @@ inventory:
     - mod-inventory-update
     - mod-kb-ebsco-java
     - mod-linked-data
+    - mod-graph-rebuilder
     - mod-marc-migrations
     - mod-oai-pmh
     - edge-oai-pmh
@@ -91,6 +92,7 @@ data-import:
     - mod-data-export-spring
     - mod-data-export-worker
     - mod-data-export
+    - mod-hub-data-import
     - mod-source-record-manager
     - mod-source-record-storage
     - mod-user-import

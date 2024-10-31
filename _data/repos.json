@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-10-21T23:50:13.748351+00:00"
+    "generatedDateTime": "2024-10-30T02:46:13.275164+00:00"
   },
   "repos": [
     {
@@ -70,6 +70,17 @@
       "docDirName": null,
       "hasTranslations": false,
       "name": "app-erm-usage",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "app",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": "Application Descriptor Repository for Linked Data application.",
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "app-linked-data",
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "app",
@@ -725,7 +736,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -1350,6 +1362,18 @@
       ]
     },
     {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "mod-atom-feed-reader",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "other",
+      "repoType": "backend-mod",
+      "snippetIntro": ""
+    },
+    {
       "apiTypes": "RAML",
       "defaultBranch": "master",
       "description": "Module for managing audit data",
@@ -1364,7 +1388,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -1571,7 +1596,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -1802,7 +1828,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -1839,7 +1866,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -1862,7 +1890,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -1977,7 +2006,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -2012,7 +2042,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -2062,7 +2093,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -2088,7 +2120,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -2166,7 +2199,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -2227,6 +2261,20 @@
     },
     {
       "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hasTranslations": false,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-graph-rebuilder",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>mod-graph-rebuilder works with mod-linked-date. Further description to be added.</p>"
+    },
+    {
+      "defaultBranch": "master",
       "description": "FOLIO module for executing GraphQL queries",
       "docDirName": "doc",
       "hasTranslations": false,
@@ -2236,6 +2284,20 @@
       "repoLanguageHint": "node",
       "repoType": "backend-mod",
       "snippetIntro": "<p><code>mod-graphql</code> is a <a href='https://github.com/folio-org/okapi/blob/master/doc/guide.md#architecture'>FOLIO module</a>, written in Node.js, that provides a <a href='https://graphql.org/'>GraphQL</a> service by HTTP POST to <code>/graphql/</code>. It can be interrogated using any GraphQL client library, such as <a href='https://github.com/apollographql/apollo-client/'>Apollo</a>, and the graph it provides is auto-generated from the API description files (<a href='https://raml.org/'>RAML</a> and <a href='https://json-schema.org/'>JSON Schema</a>) of the modules that it's providing the GraphQL API for.</p>"
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hasTranslations": false,
+      "hintOas": true,
+      "isSpringway": true,
+      "name": "mod-hub-data-import",
+      "org": "folio-org",
+      "ramlDirName": null,
+      "repoLanguageHint": "java",
+      "repoType": "backend-mod",
+      "snippetIntro": "<p>mod-hub-data-import works with Hub Data Import. Further description to be added.</p>"
     },
     {
       "apiTypes": "RAML",
@@ -2280,7 +2342,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -2686,7 +2749,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -2936,7 +3000,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -2986,7 +3051,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -3036,7 +3102,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -3127,14 +3194,15 @@
         "api-doc.yml",
         "api-lint.yml",
         "api-schema-lint.yml",
-        "do-go.yml",
-        "go-lint.yml"
+        "go-lint.yml",
+        "go.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
         "api-lint.yml",
         "api-schema-lint.yml",
-        "do-go.yml"
+        "go-lint.yml",
+        "go.yml"
       ]
     },
     {
@@ -3423,7 +3491,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -3446,7 +3515,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -3497,7 +3567,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -3778,14 +3849,14 @@
     },
     {
       "defaultBranch": "master",
-      "description": "Minimal set of back-end and front-end modules for FOLIO",
+      "description": null,
       "docDirName": null,
       "hasTranslations": false,
-      "name": "platform-minimal",
+      "name": "platform-lsp",
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "platform",
-      "snippetIntro": "<p>This is the 'minimal' Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the versions of <code>@folio/stripes</code>, <code>@folio/stripes</code>, the shared dependencies they rely on, and a utility for generating module descriptors for each Stripes module.</p>"
+      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
@@ -4053,7 +4124,7 @@
         "ui.yml"
       ],
       "workflowsFolio": [
-        "ui.yml@v1.1"
+        "ui.yml@v1.5"
       ]
     },
     {
@@ -4588,6 +4659,17 @@
         "build-npm-release.yml",
         "build-npm.yml"
       ]
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "ui-claims",
+      "org": "folio-org",
+      "repoLanguageHint": "node",
+      "repoType": "ui",
+      "snippetIntro": "<p>Follow the instructions below to run <code>ui-claims</code> and start your development.</p>"
     },
     {
       "defaultBranch": "master",
