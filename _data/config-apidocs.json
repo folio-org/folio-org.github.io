@@ -1053,6 +1053,40 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/swagger.api/mod-graph-rebuilder.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5"
+    },
+    "name": "mod-graph-rebuilder",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/swagger.api/mod-hub-data-import.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.5"
+    },
+    "name": "mod-hub-data-import",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/idm-connect.raml"
