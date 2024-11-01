@@ -14,12 +14,17 @@ The contents of the Contributor License Agreement (CLA) are stored in a Gist on 
 
 {% gist a72174fc6b18f3a66f2f9d3db1c8f127 %}
 
-The FOLIO Project uses GitHub pull request (PR) status checks to register a contributor's acknowledgement of the license agreement.
+The FOLIO Project uses GitHub pull request (PR) required status checks to register a contributor's acknowledgement of the license agreement.
 Before a pull request can be merged, all contributors to the pull request must acknowledge their agreement with the terms.
 This acknowledgement is through each contributor signing into https://cla-assistant.io/ using their GitHub account.
 The screen captures below describe the process.
 The acknowledgement of the FOLIO CLA covers all pull requests to the [FOLIO Project GitHub Organization](https://github.com/folio-org).
 A new acknowledgement will be required if the text of the CLA changes.
+
+## Enable the CLA required status check
+
+Every project repository at folio-org GitHub organization needs to ensure that the required status check "license/cla" is enabled for pull-requests.
+Refer to the required tasks of [Create a new FOLIO module and do initial setup](/guidelines/create-new-repo/#branch-protection-and-required-checks).
 
 ## Acknowledging the FOLIO Contributor License Agreement
 
