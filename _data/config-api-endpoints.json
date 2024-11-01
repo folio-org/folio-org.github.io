@@ -9128,6 +9128,13 @@
     "path": "/query/contents"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/queryTool.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/getContentsPrivileged",
+    "name": "folio-query-tool-metadata",
+    "path": "/query/contents/privileged"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mod-fqm-manager.yaml",
     "apiType": "oas",
     "interface": "_timer 1.0",
