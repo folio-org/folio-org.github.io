@@ -14,7 +14,7 @@ The main "FOLIO DevOps" team attends to the general development operations and i
 For general assistance, use the [Slack channel](/guidelines/which-forum/#slack) `#devops`.
 
 For anything beyond simple assistance, please create a Jira ticket.
-The DevOps teams are small and busy, so requests will need to be queued.
+The DevOps teams are small and busy, so requests will need to be queued (do not expect immediate attention).
 
 (The FAQ [How to request GitHub user or team access](/faqs/how-to-request-github-access/) has separate explanations for those tasks.)
 
@@ -30,7 +30,9 @@ Set the "Sprint" field to be "DevOps Requests".
 
 Do not set "Priority" or "Assignee" or "Labels" or a specific numbered "Sprint". Those will be handled and scheduled by the team.
 
-Please do not clone old tickets. It just tends to make a mess by applying old settings, and re-sending irrelevant old notifications.
+<div class="attention">
+Note: Please do not clone old tickets. It just tends to make a mess by applying old settings, and re-sending irrelevant old notifications.
+</div>
 
 For tickets related to the [FOLIO Developers](/) website, do follow the above-mentioned instructions and the additional specific [notes](/faqs/how-to-contribute-devdoc/#raising-jira-tickets).
 
