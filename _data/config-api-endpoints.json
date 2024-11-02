@@ -9613,6 +9613,14 @@
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
     "interface": "resource 1.0",
+    "methods": "post:operation/importMarcRecord",
+    "name": "mod-linked-data",
+    "path": "/resource/import/{inventoryId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "resource 1.0",
     "methods": "get:operation/getResourceIdByResourceInventoryId",
     "name": "mod-linked-data",
     "path": "/resource/metadata/{inventoryId}/id"
@@ -10964,6 +10972,14 @@
     "methods": "post:tlr_feature_toggle_job_start_post",
     "name": "mod-circulation-storage",
     "path": "/tlr-feature-toggle-job/start"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/allowed-service-points.yaml",
+    "apiType": "oas",
+    "interface": "ecs-tlr-allowed-service-points 1.0",
+    "methods": "get:operation/getAllowedServicePoints",
+    "name": "mod-tlr",
+    "path": "/tlr/allowed-service-points"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/ecs-tlr.yaml",

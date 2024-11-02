@@ -2056,6 +2056,7 @@
   {
     "config": {
       "oas": [
+        "src/main/resources/swagger.api/allowed-service-points.yaml",
         "src/main/resources/swagger.api/ecs-tlr.yaml",
         "src/main/resources/swagger.api/tlr-settings.yaml"
       ],
