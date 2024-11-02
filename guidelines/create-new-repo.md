@@ -33,17 +33,45 @@ Otherwise follow the GitHub prompts to create a new repository, and if needed to
 The following first few items can only be done by the initial creator of the repository or its owners, and should happen early. Use its "Settings" area.
 (If the "Settings" tab is not available to you, then see the "support" advice above.)
 
-Disable the Issues and Wiki via Settings. We use the FOLIO resources instead.
+<div class="attention">
+Note: The person who created the repository will automatically have "Admin" permissions.
+So it is their responsibility follow-up to ensure that these tasks are done.
+</div>
+
+### Disable Issues and Wiki
+
+Disable the Issues and Wiki via Settings. We use the FOLIO [Collaboration tools](/community/#collaboration-tools) and resources instead.
+
 Do this as soon as possible, so that issues are created in the relevant project's FOLIO issue tracker.
 
+Add a link from the project README to its issue tracker (see instructions below).
+
+### Access for relevant Teams
+
 Ensure that access is configured for the relevant FOLIO GitHub [Teams](https://github.com/orgs/folio-org/teams).
+
 Note that front-end module repositories also need the "bots" Team (with Write access) to enable the "[translations](/guides/commence-a-module/#front-end-translations)" facility.
 
-Add a concise "About" description to the GitHub repository. Consider that this will also be utilised elsewhere. This description is near the top-right of your GitHub front page.
-(If the "Edit" button is not available to you, then see the "support" advice above.)
+### Concise About description
 
-Note: The configuration of "branch protection" and its "required checks" can only be done after there has been an initial pull-request (and must be done within one week of its opening).
-Also, for [front-end](#add-specific-configuration-files) repositories, the GitHub Actions Workflows need to be operational.
+Add a concise "About" description to the GitHub repository. Consider that this will also be utilised elsewhere. This description is near the top-right of your GitHub front page.
+(If its "Edit" button is not available to you, then see the "support" advice above.)
+
+This would be a shortened version of the "Introduction" section of the project README.
+
+For backend module repositories, note that Docker Hub imposes a [content length limit](https://github.com/peter-evans/dockerhub-description#content-limits) of 100 bytes.
+
+### Branch protection and required checks
+
+Note: The configuration of "branch protection" and its "required checks" can only be done after there has been an initial pull-request (and must be done within one week of its opening, as GitHub will expire the opportunity).
+
+Use the "Settings > Branches > Add classic branch protection rule" to enable for the mainline branch.
+
+Ensure that the branch protection required status checks include the "license/cla" for the required [FOLIO Project Contributor License Agreement](/guidelines/cla-process/).
+
+For [front-end](#add-specific-configuration-files) repositories, when the GitHub Actions Workflows are operational then required checks can be configured here. Follow similar repositories.
+
+For [back-end](#add-specific-configuration-files) repositories, when the Jenkinsfile is operational then required checks can be configured here. Follow similar repositories.
 
 ## Add initial files
 
@@ -106,8 +134,9 @@ For front-end modules: package.json, .eslintrc, GitHub Workflows, etc.
 
 Get the initial basic source files and other configuration files added first.
 
-New front-end repositories will use GitHub Actions Workflows (see our [document](/guidelines/github-actions-frontend/)
-or follow an existing similar repository).
+New front-end repositories will use GitHub Actions Workflows.
+Refer to the document [Centralized UI Workflows](https://github.com/folio-org/.github/blob/master/README-UI.md)
+and follow an existing similar repository.
 
 When the code and configuration is in place, then this new repository needs to be manually added to Sonarcloud.
 Seek FOLIO DevOps [assistance](/faqs/how-to-raise-devops-ticket/).

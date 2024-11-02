@@ -12,6 +12,8 @@ When the initial development of a new front-end (client-side) module is [establi
 [platform-complete](https://github.com/folio-org/platform-complete/tree/snapshot).
 
 The procedure explained below will install the new frontend module to the platform, and make it available in the folio-snapshot [reference environments](/guides/automation/#reference-environments).
+This should be straight-forward if the below-mentioned steps have been followed.
+However if assistance is needed then [Raise a FOLIO DevOps Jira ticket](/faqs/how-to-raise-devops-ticket/#general-folio-devops).
 
 There is a separate procedure to [install a new back-end module](/guides/install-backend-module/).
 
@@ -64,15 +66,16 @@ If not, then investigate further and consult the relevant [back-end module](/gui
 
 Prepare the Jira ticket to guide the process.
 
-Prepare a new git branch of the platform, based on its "snapshot" branch.
+Prepare a new git branch of platform-complete, based on its "snapshot" branch.
 
-Add the definition of the new module to both `package.json` and `stripes.config.js` files.
+Add the definition of the new module to the `package.json` and `stripes.config.js` and `eureka-tpl/stripes.config.js` files.
+Follow the existing format.
 
-Push the new branch and ensure that it builds. Send pull request against "snapshot" branch.
+Push the new branch and ensure that it builds. Send a pull request against "[platform-complete snapshot](https://github.com/folio-org/platform-complete/tree/snapshot)" branch.
 
 ## Verify deployment
 
-After merge, await the scheduled build of the folio-snapshot [reference environments](/guides/automation/#reference-environments).
+After merge, follow the subsequent [Platform hourly build](/guides/automation/#platform-hourly-build) and the scheduled daily build of the folio-snapshot [reference environments](/guides/automation/#reference-environments).
 
 Visit the [Software versions](https://folio-snapshot.dev.folio.org/settings/about) page of each to verify that the new module is present.
 

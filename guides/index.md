@@ -193,6 +193,7 @@ For example regarding operation, enhancement, and configuration of Jenkins conti
 - [Which forum](/guidelines/which-forum/) to use for communication.
 - [Special Interest Groups](https://wiki.folio.org/display/PC/Special+Interest+Groups) (SIGs).
 - [Guidelines for Contributing Code](/guidelines/contributing/).
+- [Contributor License Agreement (CLA)](/guidelines/contributing/#contributor-license-agreement).
 
 ### Other topics
 
