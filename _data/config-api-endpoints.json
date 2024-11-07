@@ -1132,6 +1132,14 @@
   {
     "apiDescription": "ramls/acquisition-events.raml",
     "apiType": "raml",
+    "interface": "acquisition-invoice-line-events 1.0",
+    "methods": "get:audit_data_acquisition_invoice_line__id__get",
+    "name": "mod-audit",
+    "path": "/audit-data/acquisition/invoice-line/{id}"
+  },
+  {
+    "apiDescription": "ramls/acquisition-events.raml",
+    "apiType": "raml",
     "interface": "acquisition-invoice-events 1.0",
     "methods": "get:audit_data_acquisition_invoice__id__get",
     "name": "mod-audit",
@@ -4774,6 +4782,22 @@
     "methods": "delete:finance_storage_fund_types__id__delete get:finance_storage_fund_types__id__get put:finance_storage_fund_types__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/fund-types/{id}"
+  },
+  {
+    "apiDescription": "ramls/fund_update_log.raml",
+    "apiType": "raml",
+    "interface": "finance-storage.fund-update-logs 1.0",
+    "methods": "get:finance_storage_fund_update_logs_get post:finance_storage_fund_update_logs_post",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/fund-update-logs"
+  },
+  {
+    "apiDescription": "ramls/fund_update_log.raml",
+    "apiType": "raml",
+    "interface": "finance-storage.fund-update-logs 1.0",
+    "methods": "delete:finance_storage_fund_update_logs__id__delete get:finance_storage_fund_update_logs__id__get put:finance_storage_fund_update_logs__id__put",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/fund-update-logs/{id}"
   },
   {
     "apiDescription": "ramls/fund.raml",
