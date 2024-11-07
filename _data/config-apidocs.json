@@ -966,6 +966,7 @@
         "ramls/fiscal-year.raml",
         "ramls/fund-type.raml",
         "ramls/fund.raml",
+        "ramls/fund_update_log.raml",
         "ramls/group-budgets.raml",
         "ramls/group.raml",
         "ramls/group_fund_fy.raml",
