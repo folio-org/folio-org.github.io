@@ -2608,7 +2608,7 @@
   {
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
-    "interface": "allowed-service-points 1.0",
+    "interface": "allowed-service-points 1.1",
     "methods": "get:circulation_requests_allowed_service_points_get",
     "name": "mod-circulation",
     "path": "/circulation/requests/allowed-service-points"
