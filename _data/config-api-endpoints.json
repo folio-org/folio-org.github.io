@@ -2416,7 +2416,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-requests 1.0",
+    "interface": "circulation-bff-requests 1.1",
     "methods": "post:operation/saveAndConfirmMediatedRequest",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/mediated-requests/confirm"
@@ -2424,7 +2424,15 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-requests 1.0",
+    "interface": "circulation-bff-requests 1.1",
+    "methods": "post:operation/createRequest",
+    "name": "mod-circulation-bff",
+    "path": "/circulation-bff/requests"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
+    "apiType": "oas",
+    "interface": "circulation-bff-requests 1.1",
     "methods": "get:null",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/requests/allowed-service-points"
@@ -2432,7 +2440,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-requests 1.0",
+    "interface": "circulation-bff-requests 1.1",
     "methods": "get:null",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/requests/search-instances"
