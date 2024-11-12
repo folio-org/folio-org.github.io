@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-10-30T02:46:13.275164+00:00"
+    "generatedDateTime": "2024-11-11T06:29:00.993053+00:00"
   },
   "repos": [
     {
@@ -88,6 +88,17 @@
     },
     {
       "defaultBranch": "master",
+      "description": "Application descriptor repository for app-marc-migrations.",
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "app-marc-migrations",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "app",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
       "description": null,
       "docDirName": null,
       "hasTranslations": false,
@@ -114,6 +125,17 @@
       "docDirName": null,
       "hasTranslations": false,
       "name": "app-platform-minimal",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "app",
+      "snippetIntro": ""
+    },
+    {
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "app-reading-room",
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "app",
@@ -1244,7 +1266,7 @@
       "org": "folio-org",
       "repoLanguageHint": "java",
       "repoType": "other",
-      "snippetIntro": "<p>This Java library stores <a href='https://bibfra.me/'>bibframe lite vocabulary</a> as Java enums - the <a href='https://github.com/folio-org/lib-linked-data-dictionary/blob/master/src/main/java/org/folio/ld/dictionary/ResourceTypeDictionary.java'>types</a>, <a href='https://github.com/folio-org/lib-linked-data-dictionary/blob/master/src/main/java/org/folio/ld/dictionary/PropertyDictionary.java'>properties</a> and <a href='https://github.com/folio-org/lib-linked-data-dictionary/blob/master/src/main/java/org/folio/ld/dictionary/PredicateDictionary.java'>predicates</a> used in the Linked Data Graph.</p>",
+      "snippetIntro": "<p>This Java library stores: 1) The Linked Data vocabulary as Java enums: <a href='https://github.com/folio-org/lib-linked-data-dictionary/blob/master/src/main/java/org/folio/ld/dictionary/ResourceTypeDictionary.java'>types</a>, <a href='https://github.com/folio-org/lib-linked-data-dictionary/blob/master/src/main/java/org/folio/ld/dictionary/PropertyDictionary.java'>properties</a> and <a href='https://github.com/folio-org/lib-linked-data-dictionary/blob/master/src/main/java/org/folio/ld/dictionary/PredicateDictionary.java'>predicates</a>. 2) The Linked Data <a href='https://github.com/folio-org/lib-linked-data-dictionary/blob/master/src/main/java/org/folio/ld/dictionary/model/Resource.java'>resource model</a> with <a href='https://github.com/folio-org/lib-linked-data-dictionary/blob/master/src/main/java/org/folio/ld/dictionary/util/HashUtils.java'>hashing function</a> (used for a Linked Data resource ID generation).</p>",
       "workflows": [
         "pr-build.yml"
       ]
@@ -1366,10 +1388,12 @@
       "description": null,
       "docDirName": null,
       "hasTranslations": false,
+      "hintOas": true,
+      "isSpringway": true,
       "name": "mod-atom-feed-reader",
       "org": "folio-org",
       "ramlDirName": null,
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "backend-mod",
       "snippetIntro": ""
     },
@@ -1413,7 +1437,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -1570,7 +1595,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -1958,7 +1984,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -2067,7 +2094,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -2317,7 +2345,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -2598,7 +2627,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -2649,7 +2679,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -3449,6 +3480,7 @@
       "repoType": "backend-mod",
       "snippetIntro": "<p>Mod-Service-Interaction is a FOLIO Backend Module for cross-app connectivity.</p>",
       "workflows": [
+        "run-int-tests.yml",
         "validate-module.yml"
       ]
     },
@@ -3468,7 +3500,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -3523,18 +3556,6 @@
         "api-lint.yml",
         "api-schema-lint.yml"
       ]
-    },
-    {
-      "defaultBranch": "main",
-      "description": "Okapi Spring module example",
-      "docDirName": null,
-      "hasTranslations": false,
-      "name": "mod-spring-sample",
-      "org": "folio-org",
-      "ramlDirName": null,
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": ""
     },
     {
       "defaultBranch": "master",
@@ -3658,7 +3679,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -3684,7 +3706,8 @@
       "workflows": [
         "api-doc.yml",
         "api-lint.yml",
-        "api-schema-lint.yml"
+        "api-schema-lint.yml",
+        "postgres.yml"
       ],
       "workflowsFolio": [
         "api-doc.yml",
@@ -3868,7 +3891,8 @@
       "repoType": "platform",
       "snippetIntro": "<p>This is the Resource Sharing Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes</code> and of any Stripes modules you wish to make available as part of the Resource Sharing platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>",
       "workflows": [
-        "deploy.yml"
+        "deploy.yml",
+        "foaf.yaml"
       ]
     },
     {
@@ -4039,12 +4063,10 @@
       "repoType": "stripes",
       "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml@v1"
       ]
     },
     {
@@ -4247,12 +4269,10 @@
       "repoType": "stripes",
       "snippetIntro": "<p>This is a library of React components and utility functions for use with <a href='https://github.com/folio-org/stripes-core/'>the Stripes UI toolkit</a>, part of <a href='https://www.folio.org/'>the FOLIO project</a>.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml@v1"
       ]
     },
     {
@@ -4521,12 +4541,10 @@
       "repoType": "ui",
       "snippetIntro": "<p>The Authorization Policies UI Module or ui-authorization-policies, is a Stripes UI module for the authorization roles requests and related resources</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml@v1"
       ]
     },
     {
@@ -4540,12 +4558,10 @@
       "repoType": "ui",
       "snippetIntro": "",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml@v1"
       ]
     },
     {
@@ -4664,12 +4680,18 @@
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
-      "hasTranslations": false,
+      "hasTranslations": true,
       "name": "ui-claims",
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>Follow the instructions below to run <code>ui-claims</code> and start your development.</p>"
+      "snippetIntro": "<p>Follow the instructions below to run <code>ui-claims</code> and start your development.</p>",
+      "workflows": [
+        "ui.yml"
+      ],
+      "workflowsFolio": [
+        "ui.yml@v1"
+      ]
     },
     {
       "defaultBranch": "master",
@@ -4967,12 +4989,12 @@
       "repoType": "ui-handler",
       "snippetIntro": "<p>Frontend registry for Stripes</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "stuck-license-cla.yml",
+        "ui.yml",
+        "validate.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml@v1"
       ]
     },
     {
@@ -5053,7 +5075,7 @@
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
-      "hasTranslations": false,
+      "hasTranslations": true,
       "name": "ui-ld-folio-wrapper",
       "org": "folio-org",
       "repoLanguageHint": "node",
@@ -5108,7 +5130,7 @@
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
-      "hasTranslations": false,
+      "hasTranslations": true,
       "name": "ui-linked-data",
       "org": "folio-org",
       "repoLanguageHint": "node",
@@ -5399,12 +5421,10 @@
       "repoType": "ui-plugin",
       "snippetIntro": "<p>This package furnishes a single Stripes plugin of type <code>find-authority</code>, which can be included in Stripes modules by means of a <code>&lt;Pluggable type='find-authority'&gt;</code> element. See <a href='https://github.com/folio-org/stripes-core/blob/master/doc/dev-guide.md#plugins'>the <em>Plugins</em> section</a> of the Module Developer's Guide.</p>",
       "workflows": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml"
       ],
       "workflowsFolio": [
-        "build-npm-release.yml",
-        "build-npm.yml"
+        "ui.yml@v1"
       ]
     },
     {
