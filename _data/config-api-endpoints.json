@@ -2416,6 +2416,14 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
     "apiType": "oas",
+    "interface": "circulation-bff-users 1.0",
+    "methods": "get:operation/getExternalUsers",
+    "name": "mod-circulation-bff",
+    "path": "/circulation-bff/external-users/{externalUserId}/tenant/{tenantId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
+    "apiType": "oas",
     "interface": "circulation-bff-requests 1.1",
     "methods": "post:operation/saveAndConfirmMediatedRequest",
     "name": "mod-circulation-bff",
@@ -6376,6 +6384,14 @@
     "methods": "post:inventory_tenant_items_post",
     "name": "mod-inventory",
     "path": "/inventory/tenant-items"
+  },
+  {
+    "apiDescription": "ramls/audit-outbox.raml",
+    "apiType": "raml",
+    "interface": "_timer 1.0",
+    "methods": "post:invoice_storage_audit_outbox_process_post",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/audit-outbox/process"
   },
   {
     "apiDescription": "ramls/invoice-line-number.raml",
@@ -11347,7 +11363,7 @@
   {
     "apiDescription": "ramls/usagedataproviders.raml",
     "apiType": "raml",
-    "interface": "usage-data-providers 3.1",
+    "interface": "usage-data-providers 3.0",
     "methods": "get:usage_data_providers_get post:usage_data_providers_post",
     "name": "mod-erm-usage",
     "path": "/usage-data-providers"
@@ -11355,7 +11371,7 @@
   {
     "apiDescription": "ramls/usagedataproviders.raml",
     "apiType": "raml",
-    "interface": "usage-data-providers 3.1",
+    "interface": "usage-data-providers 3.0",
     "methods": "delete:usage_data_providers__id__delete get:usage_data_providers__id__get put:usage_data_providers__id__put",
     "name": "mod-erm-usage",
     "path": "/usage-data-providers/{id}"
