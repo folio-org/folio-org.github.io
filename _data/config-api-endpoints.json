@@ -5104,6 +5104,22 @@
     "path": "/finance/fund-types/{id}"
   },
   {
+    "apiDescription": "ramls/fund-update-log.raml",
+    "apiType": "raml",
+    "interface": "finance.fund-update-logs 1.0",
+    "methods": "get:finance_fund_update_logs_get post:finance_fund_update_logs_post",
+    "name": "mod-finance",
+    "path": "/finance/fund-update-logs"
+  },
+  {
+    "apiDescription": "ramls/fund-update-log.raml",
+    "apiType": "raml",
+    "interface": "finance.fund-update-logs 1.0",
+    "methods": "delete:finance_fund_update_logs__id__delete get:finance_fund_update_logs__id__get put:finance_fund_update_logs__id__put",
+    "name": "mod-finance",
+    "path": "/finance/fund-update-logs/{id}"
+  },
+  {
     "apiDescription": "ramls/funds.raml",
     "apiType": "raml",
     "interface": "finance.funds 3.0",
@@ -10424,7 +10440,7 @@
   {
     "apiDescription": "ramls/service-point.raml",
     "apiType": "raml",
-    "interface": "service-points 3.3",
+    "interface": "service-points 3.4",
     "methods": "delete:service_points_delete get:service_points_get post:service_points_post",
     "name": "mod-inventory-storage",
     "path": "/service-points"
@@ -10448,7 +10464,7 @@
   {
     "apiDescription": "ramls/service-point.raml",
     "apiType": "raml",
-    "interface": "service-points 3.3",
+    "interface": "service-points 3.4",
     "methods": "delete:service_points__servicepointid__delete get:service_points__servicepointid__get put:service_points__servicepointid__put",
     "name": "mod-inventory-storage",
     "path": "/service-points/{servicepointId}"
