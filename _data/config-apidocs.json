@@ -934,6 +934,7 @@
         "ramls/finance-fund-codes-expense-classes.raml",
         "ramls/fiscal-years.raml",
         "ramls/fund-types.raml",
+        "ramls/fund-update-log.raml",
         "ramls/funds.raml",
         "ramls/group-fiscal-year-summaries.raml",
         "ramls/group-fund-fiscal-year.raml",
