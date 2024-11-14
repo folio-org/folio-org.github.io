@@ -1164,6 +1164,14 @@
   {
     "apiDescription": "ramls/acquisition-events.raml",
     "apiType": "raml",
+    "interface": "acquisition-organization-events 1.0",
+    "methods": "get:audit_data_acquisition_organization__id__get",
+    "name": "mod-audit",
+    "path": "/audit-data/acquisition/organization/{id}"
+  },
+  {
+    "apiDescription": "ramls/acquisition-events.raml",
+    "apiType": "raml",
     "interface": "acquisition-piece-events 1.0",
     "methods": "get:audit_data_acquisition_piece__id__get",
     "name": "mod-audit",
