@@ -967,6 +967,7 @@
         "ramls/budget.raml",
         "ramls/budget_expense_class.raml",
         "ramls/expense_class.raml",
+        "ramls/finance-data.raml",
         "ramls/fiscal-year.raml",
         "ramls/fund-type.raml",
         "ramls/fund.raml",
