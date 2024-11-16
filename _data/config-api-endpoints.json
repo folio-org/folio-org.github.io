@@ -2390,6 +2390,70 @@
     "path": "/central-servers/{centralServerId}/visible-patron-field-configuration"
   },
   {
+    "apiDescription": "ramls/change-manager.raml",
+    "apiType": "raml",
+    "interface": "source-manager-job-executions 3.4",
+    "methods": "delete:change_manager_jobexecutions_delete post:change_manager_jobexecutions_post",
+    "name": "mod-source-record-manager",
+    "path": "/change-manager/jobExecutions"
+  },
+  {
+    "apiDescription": "ramls/change-manager.raml",
+    "apiType": "raml",
+    "interface": "source-manager-job-executions 3.4",
+    "methods": "delete:change_manager_jobexecutions__id__delete get:change_manager_jobexecutions__id__get put:change_manager_jobexecutions__id__put",
+    "name": "mod-source-record-manager",
+    "path": "/change-manager/jobExecutions/{id}"
+  },
+  {
+    "apiDescription": "ramls/change-manager.raml",
+    "apiType": "raml",
+    "interface": "source-manager-job-executions 3.4",
+    "methods": "get:change_manager_jobexecutions__id__children_get",
+    "name": "mod-source-record-manager",
+    "path": "/change-manager/jobExecutions/{id}/children"
+  },
+  {
+    "apiDescription": "ramls/change-manager.raml",
+    "apiType": "raml",
+    "interface": "source-manager-job-executions 3.4",
+    "methods": "put:change_manager_jobexecutions__id__jobprofile_put",
+    "name": "mod-source-record-manager",
+    "path": "/change-manager/jobExecutions/{id}/jobProfile"
+  },
+  {
+    "apiDescription": "ramls/change-manager.raml",
+    "apiType": "raml",
+    "interface": "source-manager-records 2.1",
+    "methods": "delete:change_manager_jobexecutions__id__records_delete post:change_manager_jobexecutions__id__records_post",
+    "name": "mod-source-record-manager",
+    "path": "/change-manager/jobExecutions/{id}/records"
+  },
+  {
+    "apiDescription": "ramls/change-manager.raml",
+    "apiType": "raml",
+    "interface": "source-manager-job-executions 3.4",
+    "methods": "put:change_manager_jobexecutions__id__status_put",
+    "name": "mod-source-record-manager",
+    "path": "/change-manager/jobExecutions/{id}/status"
+  },
+  {
+    "apiDescription": "ramls/change-manager.raml",
+    "apiType": "raml",
+    "interface": "source-manager-parsed-records 3.0",
+    "methods": "get:change_manager_parsedrecords_get",
+    "name": "mod-source-record-manager",
+    "path": "/change-manager/parsedRecords"
+  },
+  {
+    "apiDescription": "ramls/change-manager.raml",
+    "apiType": "raml",
+    "interface": "source-manager-parsed-records 3.0",
+    "methods": "put:change_manager_parsedrecords__id__put",
+    "name": "mod-source-record-manager",
+    "path": "/change-manager/parsedRecords/{id}"
+  },
+  {
     "apiDescription": "ramls/check-in-storage.raml",
     "apiType": "raml",
     "interface": "check-in-storage 0.2",
@@ -4774,6 +4838,14 @@
     "methods": "delete:finance_storage_expense_classes__id__delete get:finance_storage_expense_classes__id__get put:finance_storage_expense_classes__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/expense-classes/{id}"
+  },
+  {
+    "apiDescription": "ramls/finance-data.raml",
+    "apiType": "raml",
+    "interface": "finance-storage.finance-data 1.0",
+    "methods": "get:finance_storage_finance_data_get",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/finance-data"
   },
   {
     "apiDescription": "ramls/fiscal-year.raml",
@@ -7259,7 +7331,7 @@
   {
     "apiDescription": "ramls/mapping-metadata-provider.raml",
     "apiType": "raml",
-    "interface": "mapping-metadata-provider 1.0",
+    "interface": "mapping-metadata-provider 1.1",
     "methods": "get:mapping_metadata_type__recordtype__get",
     "name": "mod-source-record-manager",
     "path": "/mapping-metadata/type/{recordType}"
@@ -7267,7 +7339,7 @@
   {
     "apiDescription": "ramls/mapping-metadata-provider.raml",
     "apiType": "raml",
-    "interface": "mapping-metadata-provider 1.0",
+    "interface": "mapping-metadata-provider 1.1",
     "methods": "get:mapping_metadata__jobexecutionid__get",
     "name": "mod-source-record-manager",
     "path": "/mapping-metadata/{jobExecutionId}"
@@ -7359,7 +7431,7 @@
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "interface": "metadata-provider-job-execution-logs 1.0",
+    "interface": "metadata-provider-job-execution-logs 1.1",
     "methods": "get:metadata_provider_incomingrecords__recordid__get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/incomingRecords/{recordId}"
@@ -7367,7 +7439,7 @@
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "interface": "source-manager-job-executions 3.3",
+    "interface": "source-manager-job-executions 3.4",
     "methods": "get:metadata_provider_jobexecutions_get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobExecutions"
@@ -7375,7 +7447,7 @@
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "interface": "source-manager-job-executions 3.3",
+    "interface": "source-manager-job-executions 3.4",
     "methods": "get:metadata_provider_jobexecutions_jobprofiles_get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobExecutions/jobProfiles"
@@ -7383,7 +7455,7 @@
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "interface": "metadata-provider-job-execution-logs 1.0",
+    "interface": "metadata-provider-job-execution-logs 1.1",
     "methods": "get:metadata_provider_jobexecutions_users_get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobExecutions/users"
@@ -7391,7 +7463,7 @@
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "interface": "metadata-provider-job-execution-logs 1.0",
+    "interface": "metadata-provider-job-execution-logs 1.1",
     "methods": "get:metadata_provider_joblogentries__jobexecutionid__get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobLogEntries/{jobExecutionId}"
@@ -7399,7 +7471,7 @@
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "interface": "metadata-provider-job-execution-logs 1.0",
+    "interface": "metadata-provider-job-execution-logs 1.1",
     "methods": "get:metadata_provider_joblogentries__jobexecutionid__records__recordid__get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobLogEntries/{jobExecutionId}/records/{recordId}"
@@ -7407,7 +7479,7 @@
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "interface": "metadata-provider-job-execution-logs 1.0",
+    "interface": "metadata-provider-job-execution-logs 1.1",
     "methods": "get:metadata_provider_jobsummary__jobexecutionid__get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/jobSummary/{jobExecutionId}"
@@ -7415,7 +7487,7 @@
   {
     "apiDescription": "ramls/metadata-provider.raml",
     "apiType": "raml",
-    "interface": "source-manager-job-executions 3.3",
+    "interface": "source-manager-job-executions 3.4",
     "methods": "get:metadata_provider_journalrecords__jobexecutionid__get",
     "name": "mod-source-record-manager",
     "path": "/metadata-provider/journalRecords/{jobExecutionId}"
