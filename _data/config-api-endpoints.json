@@ -11142,6 +11142,14 @@
     "path": "/tlr/allowed-service-points"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/ecs-request-external.yaml",
+    "apiType": "oas",
+    "interface": "ecs-request-external 1.0",
+    "methods": "post:operation/postEcsRequestExternal",
+    "name": "mod-tlr",
+    "path": "/tlr/create-ecs-request-external"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/ecs-tlr.yaml",
     "apiType": "oas",
     "interface": "ecs-tlr 1.0",
