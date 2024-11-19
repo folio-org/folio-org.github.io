@@ -1624,11 +1624,13 @@
       "oas": [],
       "raml": [
         "ramls/address.raml",
+        "ramls/audit-outbox.raml",
         "ramls/banking_accoun_type.raml",
         "ramls/banking_information.raml",
         "ramls/category.raml",
         "ramls/contact.raml",
         "ramls/email.raml",
+        "ramls/integration_details.raml",
         "ramls/interface.raml",
         "ramls/organization.raml",
         "ramls/organization_type.raml",
