@@ -8380,6 +8380,14 @@
     "path": "/organizations-storage/addresses/{id}"
   },
   {
+    "apiDescription": "ramls/audit-outbox.raml",
+    "apiType": "raml",
+    "interface": "_timer 1.0",
+    "methods": "post:organizations_storage_audit_outbox_process_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/audit-outbox/process"
+  },
+  {
     "apiDescription": "ramls/banking_accoun_type.raml",
     "apiType": "raml",
     "interface": "organizations-storage.banking-account-types 1.0",
@@ -8458,6 +8466,22 @@
     "methods": "delete:organizations_storage_emails__id__delete get:organizations_storage_emails__id__get put:organizations_storage_emails__id__put",
     "name": "mod-organizations-storage",
     "path": "/organizations-storage/emails/{id}"
+  },
+  {
+    "apiDescription": "ramls/integration_details.raml",
+    "apiType": "raml",
+    "interface": "organizations-storage.integration_details 1.0",
+    "methods": "get:organizations_storage_integration_details_get post:organizations_storage_integration_details_post",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/integration-details"
+  },
+  {
+    "apiDescription": "ramls/integration_details.raml",
+    "apiType": "raml",
+    "interface": "organizations-storage.integration_details 1.0",
+    "methods": "delete:organizations_storage_integration_details__id__delete get:organizations_storage_integration_details__id__get put:organizations_storage_integration_details__id__put",
+    "name": "mod-organizations-storage",
+    "path": "/organizations-storage/integration-details/{id}"
   },
   {
     "apiDescription": "ramls/interface.raml",
