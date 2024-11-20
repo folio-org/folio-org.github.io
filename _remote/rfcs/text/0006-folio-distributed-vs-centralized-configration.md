@@ -9,8 +9,8 @@ layout: null
   - PRELIMINARY REVIEW: https://github.com/folio-org/rfcs/pull/23
   - DRAFT REVIEW: https://github.com/folio-org/rfcs/pull/28
   - PUBLIC REVIEW: https://github.com/folio-org/rfcs/pull/28
-  - FINAL REVIEW: TBD
-- Outcome: (Leave this blank.  Will eventually be either ACCEPTED or REJECTED)
+  - FINAL REVIEW: https://folio-org.atlassian.net/wiki/spaces/TC/pages/309657609/DR-000039+Distributed+vs.+centralized+configuration
+- Outcome: ACCEPTED
 
 
 # Folio distributed vs. centralized configuration
