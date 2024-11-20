@@ -6924,6 +6924,14 @@
     "path": "/licenses/licenses/{licenseId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "resource 1.0",
+    "methods": "post:operation/authority-assignment-check",
+    "name": "mod-linked-data",
+    "path": "/linked-data/authority-assignment-check"
+  },
+  {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
     "interface": "instance-authority-linking-rules 1.1",
@@ -8466,22 +8474,6 @@
     "methods": "delete:organizations_storage_emails__id__delete get:organizations_storage_emails__id__get put:organizations_storage_emails__id__put",
     "name": "mod-organizations-storage",
     "path": "/organizations-storage/emails/{id}"
-  },
-  {
-    "apiDescription": "ramls/integration_details.raml",
-    "apiType": "raml",
-    "interface": "organizations-storage.integration_details 1.0",
-    "methods": "get:organizations_storage_integration_details_get post:organizations_storage_integration_details_post",
-    "name": "mod-organizations-storage",
-    "path": "/organizations-storage/integration-details"
-  },
-  {
-    "apiDescription": "ramls/integration_details.raml",
-    "apiType": "raml",
-    "interface": "organizations-storage.integration_details 1.0",
-    "methods": "delete:organizations_storage_integration_details__id__delete get:organizations_storage_integration_details__id__get put:organizations_storage_integration_details__id__put",
-    "name": "mod-organizations-storage",
-    "path": "/organizations-storage/integration-details/{id}"
   },
   {
     "apiDescription": "ramls/interface.raml",
