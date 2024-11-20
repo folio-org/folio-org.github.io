@@ -25,8 +25,9 @@ Run a documentation link verifier occasionally, e.g. [markdown-link-check](https
 The repository probably has [coding style](/guidelines/contributing/#coding-style) configuration files (`.editorconfig` `.eslintrc`) to partially assist. However some developers might not have text-editors configured, so code style may need to be tidied.
 Usually do such changes in a totally separate pull request.
 
-At GitHub keep the "branches" area tidy and prune the unnecessary branches. Of course some may need to remain, but many branches can be deleted after their pull requests have been merged.\
-**Note**: Removing old branches is extremely important. It affects FOLIO infrastructure and other tools.
+At GitHub keep the "branches" area tidy and prune the unnecessary branches. Of course some will need to remain (e.g. release branches) but many branches can be deleted after their pull requests have been merged.
+See the lists of repositories with many branches at [FOLIO-3346](https://folio-org.atlassian.net/browse/FOLIO-3346)\
+**Note**: Removing old stale branches is extremely important. It affects FOLIO infrastructure and other tools.
 
 Follow-up with [outstanding pull requests](/search-other/#github).
 
