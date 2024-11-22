@@ -11216,7 +11216,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/staff-slips.yaml",
     "apiType": "oas",
-    "interface": "staff-slips 1.0",
+    "interface": "tlr-staff-slips 1.0",
     "methods": "get:operation/getPickSlips",
     "name": "mod-tlr",
     "path": "/tlr/staff-slips/pick-slips/{servicePointId}"
