@@ -32,7 +32,7 @@ The Python script will search the configured directories to find relevant API de
   One or more of: `RAML OAS`
 * `-d,--directories` -- The list of directories to be searched.
   Required. Space-separated list.
-* `-e,--excludes` -- List of additional sub-directories and/or files to be excluded (so that the tool will only discover top-level root API description files).
+* `-e,--excludes` -- List of additional sub-directories and/or files (just filenames, not paths) to be excluded (so that the tool will only discover top-level root API description files).
   Optional. Space-separated list.
   By default it excludes certain well-known directories (such as `raml-util examples headers parameters`).
   Use the option `--loglevel debug` to report what is being excluded.
