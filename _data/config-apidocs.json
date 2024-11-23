@@ -1345,7 +1345,6 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/swagger.api/folio-modules.yaml",
         "src/main/resources/swagger.api/mod-linked-data.yaml"
       ],
       "raml": [],
