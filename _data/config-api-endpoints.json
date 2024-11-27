@@ -10684,7 +10684,7 @@
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "interface": "source-storage-batch 1.2",
+    "interface": "source-storage-batch 1.3",
     "methods": "put:source_storage_batch_parsed_records_put",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/parsed-records"
@@ -10692,7 +10692,7 @@
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "interface": "source-storage-batch 1.2",
+    "interface": "source-storage-batch 1.3",
     "methods": "post:source_storage_batch_parsed_records_fetch_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/parsed-records/fetch"
@@ -10700,7 +10700,7 @@
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "interface": "source-storage-batch 1.2",
+    "interface": "source-storage-batch 1.3",
     "methods": "post:source_storage_batch_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/records"
@@ -10708,7 +10708,7 @@
   {
     "apiDescription": "ramls/source-record-storage-batch.raml",
     "apiType": "raml",
-    "interface": "source-storage-batch 1.2",
+    "interface": "source-storage-batch 1.3",
     "methods": "post:source_storage_batch_verified_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/batch/verified-records"
@@ -10716,7 +10716,7 @@
   {
     "apiDescription": "ramls/source-record-storage-migrations-jobs.raml",
     "apiType": "raml",
-    "interface": "source-storage-async-migrations 1.0",
+    "interface": "source-storage-async-migrations 1.1",
     "methods": "post:source_storage_migrations_jobs_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/migrations/jobs"
@@ -10724,7 +10724,7 @@
   {
     "apiDescription": "ramls/source-record-storage-migrations-jobs.raml",
     "apiType": "raml",
-    "interface": "source-storage-async-migrations 1.0",
+    "interface": "source-storage-async-migrations 1.1",
     "methods": "get:source_storage_migrations_jobs__id__get",
     "name": "mod-source-record-storage",
     "path": "/source-storage/migrations/jobs/{id}"
@@ -10732,15 +10732,63 @@
   {
     "apiDescription": "ramls/source-record-storage-test-records.raml",
     "apiType": "raml",
-    "interface": "source-storage-test-records 2.0",
+    "interface": "source-storage-test-records 2.1",
     "methods": "post:source_storage_populate_test_marc_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/populate-test-marc-records"
   },
   {
+    "apiDescription": "ramls/source-record-storage-records.raml",
+    "apiType": "raml",
+    "interface": "source-storage-records 3.3",
+    "methods": "get:source_storage_records_get post:source_storage_records_post",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/records"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-records.raml",
+    "apiType": "raml",
+    "interface": "source-storage-records 3.3",
+    "methods": "post:source_storage_records_matching_post",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/records/matching"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-records.raml",
+    "apiType": "raml",
+    "interface": "source-storage-records 3.3",
+    "methods": "delete:source_storage_records__id__delete get:source_storage_records__id__get put:source_storage_records__id__put",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/records/{id}"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-records.raml",
+    "apiType": "raml",
+    "interface": "source-storage-records 3.3",
+    "methods": "get:source_storage_records__id__formatted_get",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/records/{id}/formatted"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-records.raml",
+    "apiType": "raml",
+    "interface": "source-storage-records 3.3",
+    "methods": "put:source_storage_records__id__generation_put",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/records/{id}/generation"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-records.raml",
+    "apiType": "raml",
+    "interface": "source-storage-records 3.3",
+    "methods": "put:source_storage_records__id__suppress_from_discovery_put",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/records/{id}/suppress-from-discovery"
+  },
+  {
     "apiDescription": "ramls/source-record-storage-snapshots.raml",
     "apiType": "raml",
-    "interface": "source-storage-snapshots 2.0",
+    "interface": "source-storage-snapshots 2.1",
     "methods": "get:source_storage_snapshots_get post:source_storage_snapshots_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/snapshots"
@@ -10748,7 +10796,7 @@
   {
     "apiDescription": "ramls/source-record-storage-snapshots.raml",
     "apiType": "raml",
-    "interface": "source-storage-snapshots 2.0",
+    "interface": "source-storage-snapshots 2.1",
     "methods": "delete:source_storage_snapshots__jobexecutionid__delete get:source_storage_snapshots__jobexecutionid__get put:source_storage_snapshots__jobexecutionid__put",
     "name": "mod-source-record-storage",
     "path": "/source-storage/snapshots/{jobExecutionId}"
@@ -10756,7 +10804,7 @@
   {
     "apiDescription": "ramls/source-record-storage-source-records.raml",
     "apiType": "raml",
-    "interface": "source-storage-source-records 3.1",
+    "interface": "source-storage-source-records 3.2",
     "methods": "get:source_storage_source_records_get post:source_storage_source_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/source-records"
@@ -10764,7 +10812,7 @@
   {
     "apiDescription": "ramls/source-record-storage-source-records.raml",
     "apiType": "raml",
-    "interface": "source-storage-source-records 3.1",
+    "interface": "source-storage-source-records 3.2",
     "methods": "get:source_storage_source_records__id__get",
     "name": "mod-source-record-storage",
     "path": "/source-storage/source-records/{id}"
@@ -10772,7 +10820,7 @@
   {
     "apiDescription": "ramls/source-record-storage-stream.raml",
     "apiType": "raml",
-    "interface": "source-storage-stream 1.1",
+    "interface": "source-storage-stream 1.2",
     "methods": "post:source_storage_stream_marc_record_identifiers_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/stream/marc-record-identifiers"
@@ -10780,7 +10828,7 @@
   {
     "apiDescription": "ramls/source-record-storage-stream.raml",
     "apiType": "raml",
-    "interface": "source-storage-stream 1.1",
+    "interface": "source-storage-stream 1.2",
     "methods": "get:source_storage_stream_records_get",
     "name": "mod-source-record-storage",
     "path": "/source-storage/stream/records"
@@ -10788,7 +10836,7 @@
   {
     "apiDescription": "ramls/source-record-storage-stream.raml",
     "apiType": "raml",
-    "interface": "source-storage-stream 1.1",
+    "interface": "source-storage-stream 1.2",
     "methods": "get:source_storage_stream_source_records_get",
     "name": "mod-source-record-storage",
     "path": "/source-storage/stream/source-records"
