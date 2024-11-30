@@ -4859,7 +4859,7 @@
     "apiDescription": "ramls/finance-data.raml",
     "apiType": "raml",
     "interface": "finance-storage.finance-data 1.0",
-    "methods": "get:finance_storage_finance_data_get",
+    "methods": "get:finance_storage_finance_data_get put:finance_storage_finance_data_put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/finance-data"
   },
@@ -8363,6 +8363,14 @@
     "methods": "get:orders_pieces_get post:orders_pieces_post",
     "name": "mod-orders",
     "path": "/orders/pieces"
+  },
+  {
+    "apiDescription": "ramls/pieces-batch.raml",
+    "apiType": "raml",
+    "interface": "pieces 3.1",
+    "methods": "put:orders_pieces_batch_status_put",
+    "name": "mod-orders",
+    "path": "/orders/pieces-batch/status"
   },
   {
     "apiDescription": "ramls/pieces-requests.raml",
