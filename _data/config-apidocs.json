@@ -1535,6 +1535,7 @@
         "ramls/order-lines.raml",
         "ramls/order-templates.raml",
         "ramls/order.raml",
+        "ramls/pieces-batch.raml",
         "ramls/pieces-requests.raml",
         "ramls/pieces.raml",
         "ramls/po-number.raml",
