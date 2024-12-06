@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedDateTime": "2024-11-21T06:23:39.441993+00:00"
+    "generatedDateTime": "2024-12-05T06:51:24.731243+00:00"
   },
   "repos": [
     {
-      "countBranches": 100,
-      "countOpenPullRequests": 0,
+      "countBranches": 103,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Central repository for the acquisition models",
       "docDirName": null,
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "countBranches": 6,
+      "countBranches": 8,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
@@ -36,7 +36,20 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 4,
+      "countBranches": 1,
+      "countOpenPullRequests": 0,
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "app-consortia-manager",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "app",
+      "snippetIntro": ""
+    },
+    {
+      "countBranches": 5,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
@@ -49,7 +62,7 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 3,
+      "countBranches": 4,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
@@ -75,7 +88,7 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 4,
+      "countBranches": 5,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
@@ -88,7 +101,7 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 2,
+      "countBranches": 3,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Application Descriptor Repository for Linked Data application.",
@@ -114,7 +127,7 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 6,
+      "countBranches": 25,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
@@ -127,8 +140,8 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 11,
-      "countOpenPullRequests": 1,
+      "countBranches": 10,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Application with all FOLIO modules included",
       "docDirName": null,
@@ -140,7 +153,7 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 6,
+      "countBranches": 13,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Application descriptor repository for a minimal FOLIO platform installation",
@@ -153,13 +166,39 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 2,
+      "countBranches": 3,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
       "hasTranslations": false,
       "name": "app-reading-room",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "app",
+      "snippetIntro": ""
+    },
+    {
+      "countBranches": 2,
+      "countOpenPullRequests": 0,
+      "defaultBranch": "master",
+      "description": "FOLIO ECS requests application for the Eureka platform",
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "app-requests-ecs",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "app",
+      "snippetIntro": ""
+    },
+    {
+      "countBranches": 1,
+      "countOpenPullRequests": 0,
+      "defaultBranch": "master",
+      "description": "FOLIO Mediated requests application for the Eureka platform",
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "app-requests-mediated",
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "app",
@@ -232,8 +271,8 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 29,
-      "countOpenPullRequests": 1,
+      "countBranches": 30,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "The library to handle events from data-import",
       "docDirName": null,
@@ -250,7 +289,7 @@
       ]
     },
     {
-      "countBranches": 69,
+      "countBranches": 70,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Repository for data-import json schemas centralized for reusability",
@@ -283,8 +322,8 @@
       "snippetIntro": "<p>Utilities for DataImport modules.</p>"
     },
     {
-      "countBranches": 19,
-      "countOpenPullRequests": 6,
+      "countBranches": 17,
+      "countOpenPullRequests": 7,
       "defaultBranch": "ramsons",
       "description": "FOLIO Documentation",
       "docDirName": null,
@@ -385,8 +424,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 18,
-      "countOpenPullRequests": 0,
+      "countBranches": 19,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Edge API is to bridge the gap between 3rd party discovery services and FOLIO mod-courses module.",
       "docDirName": null,
@@ -550,8 +589,8 @@
       ]
     },
     {
-      "countBranches": 6,
-      "countOpenPullRequests": 0,
+      "countBranches": 7,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -730,7 +769,7 @@
       "snippetIntro": "<p>Microservice provides wide-search capabilities of marc records  in the mod-source-record-storage(SRS) for 3rd party discovery services</p>"
     },
     {
-      "countBranches": 67,
+      "countBranches": 71,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "3M Standard Interchange Protocol (SIP) support in FOLIO",
@@ -778,8 +817,8 @@
       ]
     },
     {
-      "countBranches": 1,
-      "countOpenPullRequests": 0,
+      "countBranches": 2,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Provides docker-based minimal eureka platform",
       "docDirName": null,
@@ -791,8 +830,8 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 4,
-      "countOpenPullRequests": 1,
+      "countBranches": 6,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Repository to manage deployment code to run Eureka platform",
       "docDirName": null,
@@ -897,6 +936,19 @@
       ]
     },
     {
+      "countBranches": 8,
+      "countOpenPullRequests": 0,
+      "defaultBranch": "main",
+      "description": "Folio Data Anonymization is a service that anonymizes or masks patron data in library records to ensure privacy protection.",
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "folio-data-anonymization",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": ""
+    },
+    {
       "countBranches": 5,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
@@ -911,7 +963,7 @@
       "snippetIntro": "<p>Dependency Injection support for FOLIO backend modules</p>"
     },
     {
-      "countBranches": 2,
+      "countBranches": 5,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "The common resources library for mod-data-export-spring and mod-data-export-worker",
@@ -974,7 +1026,7 @@
     },
     {
       "countBranches": 33,
-      "countOpenPullRequests": 1,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Helm charts modules repository (using Helm common library)",
       "docDirName": null,
@@ -1013,8 +1065,8 @@
       "snippetIntro": "<p>A collection of runbooks for FOLIO installation.</p>"
     },
     {
-      "countBranches": 335,
-      "countOpenPullRequests": 6,
+      "countBranches": 330,
+      "countOpenPullRequests": 7,
       "defaultBranch": "master",
       "description": "The set of integration tests, based on karate framework",
       "docDirName": null,
@@ -1027,7 +1079,7 @@
     },
     {
       "countBranches": 6,
-      "countOpenPullRequests": 1,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "ISBN number converter utilities",
       "docDirName": null,
@@ -1068,8 +1120,8 @@
       "snippetIntro": "<p>Utilities for data import modules interaction with Kafka</p>"
     },
     {
-      "countBranches": 20,
-      "countOpenPullRequests": 0,
+      "countBranches": 22,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -1084,8 +1136,8 @@
       ]
     },
     {
-      "countBranches": 3,
-      "countOpenPullRequests": 1,
+      "countBranches": 5,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Folio plugins for Keycloak",
       "docDirName": null,
@@ -1142,7 +1194,7 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 5,
+      "countBranches": 2,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
@@ -1191,8 +1243,8 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 1,
-      "countOpenPullRequests": 1,
+      "countBranches": 2,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "This repository contains a single file that maps folio permissions to capabilities.",
       "docDirName": null,
@@ -1242,7 +1294,7 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 22,
+      "countBranches": 20,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "S3-client for FOLIO modules",
@@ -1273,8 +1325,8 @@
       ]
     },
     {
-      "countBranches": 7,
-      "countOpenPullRequests": 1,
+      "countBranches": 8,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Library with general purpose classes to help with FOLIO backend service development",
       "docDirName": null,
@@ -1291,8 +1343,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 24,
-      "countOpenPullRequests": 2,
+      "countBranches": 25,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "This is a library (jar) that contains the basic functionality and main dependencies required for development FOLIO modules using Spring framework.",
       "docDirName": "doc",
@@ -1480,8 +1532,8 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 3,
-      "countOpenPullRequests": 0,
+      "countBranches": 5,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -1497,8 +1549,8 @@
       ]
     },
     {
-      "countBranches": 5,
-      "countOpenPullRequests": 1,
+      "countBranches": 6,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -1580,8 +1632,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 1,
-      "countOpenPullRequests": 0,
+      "countBranches": 2,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -1699,8 +1751,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 5,
-      "countOpenPullRequests": 0,
+      "countBranches": 6,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Batch printing service",
       "docDirName": null,
@@ -1726,8 +1778,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 12,
-      "countOpenPullRequests": 0,
+      "countBranches": 23,
+      "countOpenPullRequests": 4,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -1795,8 +1847,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 163,
-      "countOpenPullRequests": 14,
+      "countBranches": 167,
+      "countOpenPullRequests": 15,
       "defaultBranch": "master",
       "description": "FOLIO mod-circulation",
       "docDirName": "doc",
@@ -1821,8 +1873,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 9,
-      "countOpenPullRequests": 1,
+      "countBranches": 11,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Circulation backend-for-frontend module",
       "docDirName": null,
@@ -1937,7 +1989,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 25,
+      "countBranches": 26,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Consortia business logic module",
@@ -1965,8 +2017,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 6,
-      "countOpenPullRequests": 0,
+      "countBranches": 8,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": "docs",
@@ -2081,8 +2133,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 14,
-      "countOpenPullRequests": 1,
+      "countBranches": 16,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -2109,7 +2161,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 13,
+      "countBranches": 17,
       "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
@@ -2181,8 +2233,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 63,
-      "countOpenPullRequests": 1,
+      "countBranches": 67,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -2237,7 +2289,7 @@
     },
     {
       "countBranches": 29,
-      "countOpenPullRequests": 1,
+      "countOpenPullRequests": 0,
       "defaultBranch": "main",
       "description": "Okapi module providing directory and locator services",
       "docDirName": "doc",
@@ -2313,7 +2365,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 11,
+      "countBranches": 12,
       "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": null,
@@ -2469,7 +2521,7 @@
     {
       "apiTypes": "RAML",
       "countBranches": 44,
-      "countOpenPullRequests": 4,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Provide central management for fees and fines",
       "docDirName": null,
@@ -2498,7 +2550,7 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 91,
+      "countBranches": 92,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Finance business logic",
@@ -2527,8 +2579,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 108,
-      "countOpenPullRequests": 1,
+      "countBranches": 107,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "CRUD module to manage finance-data (i.e. ledgers, funds, budgets, etc.)",
       "docDirName": null,
@@ -2587,7 +2639,7 @@
     {
       "apiTypes": "OAS",
       "countBranches": 142,
-      "countOpenPullRequests": 4,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "FOLIO Query Machine back-end module",
       "docDirName": null,
@@ -2659,7 +2711,7 @@
       "snippetIntro": "<p>mod-graph-rebuilder works with mod-linked-date. Further description to be added.</p>"
     },
     {
-      "countBranches": 11,
+      "countBranches": 12,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "FOLIO module for executing GraphQL queries",
@@ -2721,7 +2773,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 141,
+      "countBranches": 142,
       "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Implements INN-Reach service client",
@@ -2751,7 +2803,7 @@
     {
       "apiTypes": "RAML",
       "countBranches": 53,
-      "countOpenPullRequests": 1,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
       "docDirName": "doc",
@@ -2777,8 +2829,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 18,
-      "countOpenPullRequests": 3,
+      "countBranches": 19,
+      "countOpenPullRequests": 5,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -2945,7 +2997,7 @@
       ]
     },
     {
-      "countBranches": 8,
+      "countBranches": 9,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "FOLIO service module - licenses",
@@ -2962,8 +3014,9 @@
       ]
     },
     {
-      "countBranches": 20,
-      "countOpenPullRequests": 3,
+      "apiTypes": "OAS",
+      "countBranches": 27,
+      "countOpenPullRequests": 5,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -2976,12 +3029,22 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>mod-linked-data manages the data graph of the library's catalog, providing REST APIs for CRUD operations on the data graph.</p>"
+      "snippetIntro": "<p>mod-linked-data manages the data graph of the library's catalog, providing REST APIs for CRUD operations on the data graph.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml",
+        "api-schema-lint.yml"
+      ]
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 53,
-      "countOpenPullRequests": 0,
+      "countBranches": 57,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Lists back-end module",
       "docDirName": null,
@@ -3096,8 +3159,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 5,
-      "countOpenPullRequests": 1,
+      "countBranches": 6,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Module designed for high-performance migration of MARC records.",
       "docDirName": "doc",
@@ -3210,7 +3273,7 @@
       ]
     },
     {
-      "countBranches": 19,
+      "countBranches": 7,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Bounded Context Deailing with Open Access Publishing",
@@ -3229,8 +3292,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 16,
-      "countOpenPullRequests": 4,
+      "countBranches": 15,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Backend Module implementing the OAI-PMH metadata harvesting protocol",
       "docDirName": null,
@@ -3287,8 +3350,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 251,
-      "countOpenPullRequests": 3,
+      "countBranches": 258,
+      "countOpenPullRequests": 4,
       "defaultBranch": "master",
       "description": "Orders business logic module",
       "docDirName": null,
@@ -3317,7 +3380,7 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 112,
+      "countBranches": 113,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Storage (CRUD) module for Orders",
@@ -3346,7 +3409,7 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 25,
+      "countBranches": 26,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Organizations business logic module",
@@ -3432,8 +3495,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 34,
-      "countOpenPullRequests": 2,
+      "countBranches": 35,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -3462,7 +3525,7 @@
     {
       "apiTypes": "RAML",
       "countBranches": 38,
-      "countOpenPullRequests": 1,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "FOLIO module for automated patron blocks",
       "docDirName": null,
@@ -3491,8 +3554,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 17,
-      "countOpenPullRequests": 0,
+      "countBranches": 18,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Module to handle permissions and permissions/user associations",
       "docDirName": null,
@@ -3521,8 +3584,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 36,
-      "countOpenPullRequests": 4,
+      "countBranches": 35,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Publisher-subscriber module to provide event-driven approach",
       "docDirName": null,
@@ -3605,7 +3668,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 3,
+      "countBranches": 4,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Module manages record specifications and validates records against them",
@@ -3636,7 +3699,7 @@
     {
       "apiTypes": "OAS",
       "countBranches": 90,
-      "countOpenPullRequests": 1,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Backend module for remote storage.",
       "docDirName": null,
@@ -3710,7 +3773,7 @@
     {
       "apiTypes": "OAS",
       "countBranches": 10,
-      "countOpenPullRequests": 2,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Mediated requests back-end module",
       "docDirName": null,
@@ -3737,7 +3800,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 15,
+      "countBranches": 16,
       "countOpenPullRequests": 4,
       "defaultBranch": "master",
       "description": "A service that provides a clustering storage of metadata for Data Integration purposes",
@@ -3777,8 +3840,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 4,
-      "countOpenPullRequests": 0,
+      "countBranches": 5,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -3805,7 +3868,7 @@
     },
     {
       "countBranches": 53,
-      "countOpenPullRequests": 7,
+      "countOpenPullRequests": 6,
       "defaultBranch": "master",
       "description": "Module providing Resource Sharing services to an OKAPI environment",
       "docDirName": "doc",
@@ -3881,7 +3944,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 14,
+      "countBranches": 15,
       "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
@@ -3941,7 +4004,7 @@
     {
       "apiTypes": "OAS",
       "countBranches": 4,
-      "countOpenPullRequests": 1,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "FOLIO Backend module for Serials Management",
       "docDirName": null,
@@ -4041,8 +4104,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 28,
-      "countOpenPullRequests": 3,
+      "countBranches": 30,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Persistent source record storage",
       "docDirName": null,
@@ -4067,8 +4130,8 @@
       ]
     },
     {
-      "countBranches": 10,
-      "countOpenPullRequests": 1,
+      "countBranches": 9,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "The blueprint module that could be used as a template for folio spring based backend modules.",
       "docDirName": null,
@@ -4144,8 +4207,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 20,
-      "countOpenPullRequests": 4,
+      "countBranches": 21,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Title-level requests back-end module",
       "docDirName": null,
@@ -4216,7 +4279,7 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 76,
+      "countBranches": 80,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Domain Model to Manage Users",
@@ -4246,7 +4309,7 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 44,
+      "countBranches": 46,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Business logic \"join\" module to provide simple access to all user-centric data",
@@ -4317,8 +4380,8 @@
       "snippetIntro": "<p>This module provides a <strong>Workflow</strong> backend <strong>FOLIO</strong> module intended to help facilite and interact with one or more <strong>Workflow Engines</strong>. A <strong>Workflow Engine</strong> is able to react to events generated in FOLIO and may also trigger events based on some schedule.</p>"
     },
     {
-      "countBranches": 12,
-      "countOpenPullRequests": 0,
+      "countBranches": 13,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "A Z39.50 server for FOLIO bibliographic data",
       "docDirName": "doc",
@@ -4331,8 +4394,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 53,
-      "countOpenPullRequests": 1,
+      "countBranches": 55,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Okapi  core and modules",
       "docDirName": "doc",
@@ -4356,8 +4419,8 @@
       ]
     },
     {
-      "countBranches": 36,
-      "countOpenPullRequests": 15,
+      "countBranches": 37,
+      "countOpenPullRequests": 14,
       "defaultBranch": "master",
       "description": "Repository that houses tools and performance testing scripts",
       "docDirName": null,
@@ -4382,8 +4445,8 @@
       "snippetIntro": "<p>The purpose of this repository is to provide a personal data disclosure form template and related tools/scripts.  Each module will specialize and store this form in the top level of their git repository.  The form is a mechanism to disclose the types of personal data stored by each module.  This information enables those hosting FOLIO to better manage and comply with various privacy laws and restrictions, e.g. GDPR, etc.</p>"
     },
     {
-      "countBranches": 156,
-      "countOpenPullRequests": 2,
+      "countBranches": 183,
+      "countOpenPullRequests": 5,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -4395,8 +4458,8 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 138,
-      "countOpenPullRequests": 14,
+      "countBranches": 139,
+      "countOpenPullRequests": 12,
       "defaultBranch": "master",
       "description": "Complete set of Stripes modules for FOLIO",
       "docDirName": "doc",
@@ -4571,7 +4634,7 @@
       "snippetIntro": "<p>Spring module core libraries for Spring development with FOLIO.</p>"
     },
     {
-      "countBranches": 26,
+      "countBranches": 28,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "UI framework for building front-end FOLIO modules",
@@ -4611,8 +4674,8 @@
       ]
     },
     {
-      "countBranches": 28,
-      "countOpenPullRequests": 1,
+      "countBranches": 27,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Stripes components that are specific to use cases that arise in Authority-related modules",
       "docDirName": null,
@@ -4722,8 +4785,8 @@
       ]
     },
     {
-      "countBranches": 36,
-      "countOpenPullRequests": 9,
+      "countBranches": 39,
+      "countOpenPullRequests": 12,
       "defaultBranch": "master",
       "description": "The core of Stripes, an opinionated and modular platform for React components consuming REST data and the UI framework for the FOLIO project",
       "docDirName": "doc",
@@ -4741,8 +4804,8 @@
       ]
     },
     {
-      "countBranches": 32,
-      "countOpenPullRequests": 0,
+      "countBranches": 33,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Stripes components that are specific to use cases that arise in ui-data-import and ui-data-export modules",
       "docDirName": null,
@@ -4841,8 +4904,8 @@
       ]
     },
     {
-      "countBranches": 9,
-      "countOpenPullRequests": 1,
+      "countBranches": 8,
+      "countOpenPullRequests": 0,
       "defaultBranch": "main",
       "description": "Administer locally created instances, holdings records, items",
       "docDirName": null,
@@ -4915,8 +4978,8 @@
       ]
     },
     {
-      "countBranches": 55,
-      "countOpenPullRequests": 12,
+      "countBranches": 52,
+      "countOpenPullRequests": 9,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -4934,7 +4997,7 @@
       ]
     },
     {
-      "countBranches": 8,
+      "countBranches": 9,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
@@ -4953,8 +5016,8 @@
       ]
     },
     {
-      "countBranches": 94,
-      "countOpenPullRequests": 14,
+      "countBranches": 103,
+      "countOpenPullRequests": 17,
       "defaultBranch": "master",
       "description": null,
       "docDirName": "doc",
@@ -5054,8 +5117,8 @@
       ]
     },
     {
-      "countBranches": 33,
-      "countOpenPullRequests": 4,
+      "countBranches": 34,
+      "countOpenPullRequests": 5,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -5073,7 +5136,7 @@
       ]
     },
     {
-      "countBranches": 20,
+      "countBranches": 19,
       "countOpenPullRequests": 14,
       "defaultBranch": "master",
       "description": "FOLIO Technical Council Documents",
@@ -5186,7 +5249,7 @@
     },
     {
       "countBranches": 10,
-      "countOpenPullRequests": 1,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "FOLIO app for Authorization Roles",
       "docDirName": null,
@@ -5204,8 +5267,8 @@
       ]
     },
     {
-      "countBranches": 77,
-      "countOpenPullRequests": 0,
+      "countBranches": 78,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -5286,7 +5349,7 @@
       ]
     },
     {
-      "countBranches": 46,
+      "countBranches": 48,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
@@ -5328,8 +5391,8 @@
       ]
     },
     {
-      "countBranches": 2,
-      "countOpenPullRequests": 1,
+      "countBranches": 1,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -5347,7 +5410,7 @@
       ]
     },
     {
-      "countBranches": 14,
+      "countBranches": 15,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Consortia settings",
@@ -5431,7 +5494,7 @@
       ]
     },
     {
-      "countBranches": 140,
+      "countBranches": 141,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "UI module: managing batch loader feature",
@@ -5484,7 +5547,7 @@
       ]
     },
     {
-      "countBranches": 31,
+      "countBranches": 36,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "UI component for directory app in an OKAPI environment",
@@ -5544,8 +5607,8 @@
       ]
     },
     {
-      "countBranches": 3,
-      "countOpenPullRequests": 1,
+      "countBranches": 2,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Stripes UI for managing ERM usage statistics. Funded by European Regional Development Fund (EFRE).",
       "docDirName": "docs",
@@ -5584,7 +5647,7 @@
       ]
     },
     {
-      "countBranches": 15,
+      "countBranches": 16,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
@@ -5704,7 +5767,7 @@
       ]
     },
     {
-      "countBranches": 94,
+      "countBranches": 95,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
@@ -5725,7 +5788,7 @@
       ]
     },
     {
-      "countBranches": 162,
+      "countBranches": 163,
       "countOpenPullRequests": 24,
       "defaultBranch": "master",
       "description": "UI module for administrating instances",
@@ -5747,7 +5810,7 @@
     },
     {
       "countBranches": 20,
-      "countOpenPullRequests": 1,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -5767,8 +5830,8 @@
       ]
     },
     {
-      "countBranches": 16,
-      "countOpenPullRequests": 0,
+      "countBranches": 20,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -5777,7 +5840,7 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "<p>Congratulations on creating a new Stripes UI app module!  Follow the instructions below to run ui-linked-data and start your development.</p>",
+      "snippetIntro": "<p>This is a <a href='https://github.com/folio-org/stripes-core/'>Stripes</a> UI module designed for performing operations on a library's Linked Data resources.</p>",
       "workflows": [
         "ui.yml"
       ],
@@ -5786,7 +5849,7 @@
       ]
     },
     {
-      "countBranches": 14,
+      "countBranches": 15,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Reporting Front End module",
@@ -5807,8 +5870,8 @@
       ]
     },
     {
-      "countBranches": 12,
-      "countOpenPullRequests": 0,
+      "countBranches": 13,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "FOLIO front end module for licenses",
       "docDirName": null,
@@ -5828,8 +5891,8 @@
       ]
     },
     {
-      "countBranches": 10,
-      "countOpenPullRequests": 3,
+      "countBranches": 11,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -5838,7 +5901,7 @@
       "org": "folio-org",
       "repoLanguageHint": "node",
       "repoType": "ui",
-      "snippetIntro": "",
+      "snippetIntro": "<p>UI application designed for performing operations on a library's linked data graph. This application can run standalone outside of the FOLIO platform. The <a href='https://github.com/folio-org/ui-ld-folio-wrapper'>ui-ld-folio-wrapper</a> module integrates this application for use within FOLIO.</p>",
       "workflows": [
         "ui.yml"
       ],
@@ -5847,7 +5910,7 @@
       ]
     },
     {
-      "countBranches": 81,
+      "countBranches": 82,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
@@ -5887,8 +5950,8 @@
       ]
     },
     {
-      "countBranches": 3,
-      "countOpenPullRequests": 1,
+      "countBranches": 2,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "FOLIO UI module to configure settings for the Course Reserves LTI Tool",
       "docDirName": null,
@@ -5908,8 +5971,8 @@
       ]
     },
     {
-      "countBranches": 57,
-      "countOpenPullRequests": 8,
+      "countBranches": 58,
+      "countOpenPullRequests": 9,
       "defaultBranch": "master",
       "description": "MARC Authorities module",
       "docDirName": null,
@@ -5948,8 +6011,8 @@
       ]
     },
     {
-      "countBranches": 33,
-      "countOpenPullRequests": 1,
+      "countBranches": 34,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "FOLIO Notes Helper App ",
       "docDirName": null,
@@ -5967,8 +6030,8 @@
       ]
     },
     {
-      "countBranches": 5,
-      "countOpenPullRequests": 0,
+      "countBranches": 6,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "UX module for Open Access Management",
       "docDirName": null,
@@ -6009,8 +6072,8 @@
       ]
     },
     {
-      "countBranches": 29,
-      "countOpenPullRequests": 1,
+      "countBranches": 31,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -6451,7 +6514,7 @@
       ]
     },
     {
-      "countBranches": 28,
+      "countBranches": 27,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
@@ -6492,7 +6555,7 @@
     },
     {
       "countBranches": 79,
-      "countOpenPullRequests": 2,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Stripes UI for quickMARC editor",
       "docDirName": null,
@@ -6532,8 +6595,8 @@
       ]
     },
     {
-      "countBranches": 15,
-      "countOpenPullRequests": 2,
+      "countBranches": 14,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -6594,7 +6657,7 @@
       ]
     },
     {
-      "countBranches": 10,
+      "countBranches": 11,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Request resources for ILL",
@@ -6614,8 +6677,8 @@
       ]
     },
     {
-      "countBranches": 70,
-      "countOpenPullRequests": 2,
+      "countBranches": 71,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Stripes UI module for making requests on items",
       "docDirName": null,
@@ -6635,7 +6698,7 @@
       ]
     },
     {
-      "countBranches": 4,
+      "countBranches": 5,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Mediated requests front-end module",
@@ -6656,7 +6719,7 @@
       ]
     },
     {
-      "countBranches": 65,
+      "countBranches": 68,
       "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "STRIPES app providing front end for resource sharing ",
@@ -6676,8 +6739,8 @@
       ]
     },
     {
-      "countBranches": 9,
-      "countOpenPullRequests": 2,
+      "countBranches": 11,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "UX Module for Serials Management",
       "docDirName": null,
@@ -6697,7 +6760,7 @@
       ]
     },
     {
-      "countBranches": 5,
+      "countBranches": 6,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
@@ -6738,7 +6801,7 @@
       ]
     },
     {
-      "countBranches": 10,
+      "countBranches": 11,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "ReShare app to supply resources for ILL",
@@ -6833,8 +6896,8 @@
       ]
     },
     {
-      "countBranches": 72,
-      "countOpenPullRequests": 15,
+      "countBranches": 73,
+      "countOpenPullRequests": 14,
       "defaultBranch": "master",
       "description": "Stripes UI module: administrating users",
       "docDirName": null,
