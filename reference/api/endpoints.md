@@ -123,6 +123,7 @@ A daily Workflow [assembles](/reference/api/#explain-gather-config) the publishe
 
 For some OpenAPI-based modules, there might be missing links in the "Methods" column.
 That is because their API description has omitted the "`operationId`" property for that method.
+Provide that project a pull-request to fix it.
 
 {{ modulesMissingMethod | uniq | join: ", " }}
 
