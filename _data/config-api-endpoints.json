@@ -1996,14 +1996,6 @@
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
     "interface": "bulk-operations 1.5",
-    "methods": "get:operation/getUsersPermissions",
-    "name": "mod-bulk-operations",
-    "path": "/bulk-operations/permissions-self-check"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
-    "apiType": "oas",
-    "interface": "bulk-operations 1.5",
     "methods": "post:operation/triggerBulkEditByQuery",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/query"
@@ -8678,16 +8670,16 @@
   {
     "apiDescription": "ramls/setting.raml",
     "apiType": "raml",
-    "interface": "organizations-storage.settings 1.0",
-    "methods": "get:organizations_storage_settings_get",
+    "interface": "organizations-storage.settings 1.1",
+    "methods": "get:organizations_storage_settings_get post:organizations_storage_settings_post",
     "name": "mod-organizations-storage",
     "path": "/organizations-storage/settings"
   },
   {
     "apiDescription": "ramls/setting.raml",
     "apiType": "raml",
-    "interface": "organizations-storage.settings 1.0",
-    "methods": "get:organizations_storage_settings__id__get put:organizations_storage_settings__id__put",
+    "interface": "organizations-storage.settings 1.1",
+    "methods": "delete:organizations_storage_settings__id__delete get:organizations_storage_settings__id__get put:organizations_storage_settings__id__put",
     "name": "mod-organizations-storage",
     "path": "/organizations-storage/settings/{id}"
   },
@@ -8796,7 +8788,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.1",
+    "interface": "patron 6.2",
     "methods": "post:patron_post",
     "name": "mod-patron",
     "path": "/patron"
@@ -8900,7 +8892,7 @@
   {
     "apiDescription": "ramls/edge-patron.raml",
     "apiType": "raml",
-    "methods": "post:patron_account_post",
+    "methods": "get:patron_account_get post:patron_account_post",
     "name": "edge-patron",
     "path": "/patron/account"
   },
@@ -8921,6 +8913,41 @@
   {
     "apiDescription": "ramls/edge-patron.raml",
     "apiType": "raml",
+    "methods": "post:patron_account_hold__holdid__cancel_post",
+    "name": "edge-patron",
+    "path": "/patron/account/hold/{holdId}/cancel"
+  },
+  {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "get:patron_account_instance__instanceid__allowed_service_points_get",
+    "name": "edge-patron",
+    "path": "/patron/account/instance/{instanceId}/allowed-service-points"
+  },
+  {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "post:patron_account_instance__instanceid__hold_post",
+    "name": "edge-patron",
+    "path": "/patron/account/instance/{instanceId}/hold"
+  },
+  {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "get:patron_account_item__itemid__allowed_service_points_get",
+    "name": "edge-patron",
+    "path": "/patron/account/item/{itemId}/allowed-service-points"
+  },
+  {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
+    "methods": "post:patron_account_item__itemid__hold_post",
+    "name": "edge-patron",
+    "path": "/patron/account/item/{itemId}/hold"
+  },
+  {
+    "apiDescription": "ramls/edge-patron.raml",
+    "apiType": "raml",
     "methods": "get:patron_account__id__get",
     "name": "edge-patron",
     "path": "/patron/account/{id}"
@@ -8928,7 +8955,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.1",
+    "interface": "patron 6.2",
     "methods": "get:patron_account__id__get",
     "name": "mod-patron",
     "path": "/patron/account/{id}"
@@ -8943,7 +8970,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.1",
+    "interface": "patron 6.2",
     "methods": "post:patron_account__id__hold__holdid__cancel_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/hold/{holdId}/cancel"
@@ -8958,7 +8985,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.1",
+    "interface": "patron 6.2",
     "methods": "get:patron_account__id__instance__instanceid__allowed_service_points_get",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/allowed-service-points"
@@ -8973,7 +9000,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.1",
+    "interface": "patron 6.2",
     "methods": "post:patron_account__id__instance__instanceid__hold_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/hold"
@@ -8988,7 +9015,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.1",
+    "interface": "patron 6.2",
     "methods": "get:patron_account__id__item__itemid__allowed_service_points_get",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/allowed-service-points"
@@ -9003,7 +9030,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.1",
+    "interface": "patron 6.2",
     "methods": "post:patron_account__id__item__itemid__hold_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/hold"
@@ -9018,7 +9045,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.1",
+    "interface": "patron 6.2",
     "methods": "post:patron_account__id__item__itemid__renew_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/renew"
@@ -9033,7 +9060,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.1",
+    "interface": "patron 6.2",
     "methods": "get:patron_registration_status__emailid__get",
     "name": "mod-patron",
     "path": "/patron/registration-status/{emailId}"
@@ -9053,20 +9080,6 @@
     "methods": "delete:payments__paymentid__delete get:payments__paymentid__get put:payments__paymentid__put",
     "name": "mod-feesfines",
     "path": "/payments/{paymentId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getUsersPermissions",
-    "name": "mod-data-export",
-    "path": "/permissions-self-check"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getUsersPermissions",
-    "name": "mod-data-export-worker",
-    "path": "/permissions-self-check"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
@@ -9138,6 +9151,14 @@
     "methods": "get:operation/getPickSlips",
     "name": "mod-tlr",
     "path": "/pick-slips/{servicePointId}"
+  },
+  {
+    "apiDescription": "ramls/claim.raml",
+    "apiType": "raml",
+    "interface": "pieces.send-claims 1.0",
+    "methods": "post:pieces_claim_post",
+    "name": "mod-orders",
+    "path": "/pieces/claim"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/sharing_policies.yaml",
