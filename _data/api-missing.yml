@@ -1,4 +1,6 @@
 # List of repos that have API descriptions, but not yet configured api-doc.
 # FOLIO-3231
 ---
+mod-camunda:
 mod-translations:
+mod-workflow:
