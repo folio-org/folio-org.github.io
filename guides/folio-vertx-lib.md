@@ -8,7 +8,7 @@ menuTopTitle: Guides
 
 ## Introduction
 
-The [FOLIO Vert.x library](https://github.com/folio-org/folio-vertx-lib) is a lightweight FOLIO module development library for Vert.x that supports OpenAPI ([OAS](/start/primer-oas/)). It is the recommended library for development of FOLIO modules with [Vert.x OpenAPI](https://vertx.io/docs/vertx-web-openapi/java/).
+The [FOLIO Vert.x library](https://github.com/folio-org/folio-vertx-lib) is a lightweight FOLIO module development library for Vert.x that supports OpenAPI ([OAS](/start/primer-oas/)). It is the recommended library for development of FOLIO modules with [Vert.x OpenAPI](https://vertx.io/docs/vertx-openapi/java/).
 
 The library provides utilities such as:
 
