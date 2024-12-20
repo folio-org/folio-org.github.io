@@ -167,31 +167,31 @@ mod-user-import:
 
 edge-common:
   urlsOther:
-    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-commonFramework
+    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#edge-common-Framework
 
 edge-oai-pmh:
   urlsOther:
-    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-oai-pmh
+    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#edge-oai-pmh
 
 edge-orders:
   urlsOther:
-    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-orders
+    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#edge-orders
 
 edge-patron:
   urlsOther:
-    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-patron
+    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#edge-patron
 
 edge-rtac:
   urlsOther:
-    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-rtac
+    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#edge-rtac
 
 edge-sip2:
   urlsOther:
-    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-sip2
+    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#edge-sip2
 
 edge-ncip:
   urlsOther:
-    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#EdgeAPIs-edge-ncip
+    - https://wiki.folio.org/display/FOLIOtips/Edge+APIs#edge-ncip
 
 stripes-smart-components:
   urlsOther:
