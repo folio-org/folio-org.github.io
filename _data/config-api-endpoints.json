@@ -8031,6 +8031,14 @@
     "path": "/orders-storage/pieces"
   },
   {
+    "apiDescription": "ramls/pieces-batch.raml",
+    "apiType": "raml",
+    "interface": "orders-storage.pieces 5.0",
+    "methods": "put:orders_storage_pieces_batch_put",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/pieces-batch"
+  },
+  {
     "apiDescription": "ramls/pieces.raml",
     "apiType": "raml",
     "interface": "orders-storage.pieces 5.0",
