@@ -1570,6 +1570,7 @@
         "ramls/export_history.raml",
         "ramls/order-invoice-relns.raml",
         "ramls/order-templates.raml",
+        "ramls/pieces-batch.raml",
         "ramls/pieces.raml",
         "ramls/po-line-batch.raml",
         "ramls/po-line-number.raml",
