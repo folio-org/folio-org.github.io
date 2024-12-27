@@ -8782,6 +8782,14 @@
     "apiDescription": "src/main/resources/swagger.api/password-validator.yaml",
     "apiType": "oas",
     "interface": "password-validator 1.0",
+    "methods": "post:operation/checkPassword",
+    "name": "mod-password-validator",
+    "path": "/password/check"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/password-validator.yaml",
+    "apiType": "oas",
+    "interface": "password-validator 1.0",
     "methods": "post:operation/validatePassword",
     "name": "mod-password-validator",
     "path": "/password/validate"
@@ -9069,9 +9077,9 @@
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
     "interface": "patron 6.3",
-    "methods": "get:patron_registration_status__emailid__get",
+    "methods": "get:patron_registration_status__identifier__get",
     "name": "mod-patron",
-    "path": "/patron/registration-status/{emailId}"
+    "path": "/patron/registration-status/{identifier}"
   },
   {
     "apiDescription": "ramls/edge-patron.raml",
