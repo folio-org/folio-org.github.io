@@ -22,7 +22,7 @@
 // ---------------------------------------------------------------------------------------------------------------------
 // These definitions have been taken from main.scss
 //
-$theme-font-family:				"Helvetica Neue", Helvetica, Arial, sans-serif;
+$theme-font-family:				"Helvetica Neue", helvetica, arial, sans-serif;
 $theme-font-size:				16px;
 $theme-font-weight:				400;
 $small-1-font-size:				$theme-font-size * 0.875;
@@ -729,8 +729,8 @@ $menubar-sub-dropdown-border-widest:				$menubar-dropdown-border-widest;
 // The shadow around the dropdown or sub-dropdown part boxes.
 // CSS property: box-shadow
 //
-$menubar-dropdown-box-shadow-medium:				0em 0.25em 0.25em 0em rgba(0,0,0,0.2);
-$menubar-dropdown-box-shadow-widest:				0em 0.25em 0.25em 0em rgba(0,0,0,0.2);
+$menubar-dropdown-box-shadow-medium:				0em 0.25em 0.25em 0em rgb(0 0 0 / 20%);
+$menubar-dropdown-box-shadow-widest:				0em 0.25em 0.25em 0em rgb(0 0 0 / 20%);
 $menubar-sub-dropdown-box-shadow-medium:			$menubar-dropdown-box-shadow-medium;
 $menubar-sub-dropdown-box-shadow-widest:			$menubar-dropdown-box-shadow-widest;
 
@@ -768,9 +768,9 @@ $menubar-subsubitem-separator-line-color-narrow:	$menubar-background-narrow;
 // The icon (image)
 // CSS property: content
 //
-//$menubar-icon-url-medium:				url("#{$baseurl}/images/test-30x30.png");
+// $menubar-icon-url-medium:				url("#{$baseurl}/images/test-30x30.png");
 $menubar-icon-url-medium:				none;
-//$menubar-icon-url-widest:				url("#{$baseurl}/images/test-30x30.png");
+// $menubar-icon-url-widest:				url("#{$baseurl}/images/test-30x30.png");
 $menubar-icon-url-widest:				none;
 
 // Height of the icon
@@ -980,8 +980,8 @@ $vmenu-border-widest:									1px solid $grey-color-light;
 // The shadow for the vertical menu
 // CSS property: box-shadow
 //
-$vmenu-box-shadow-medium:								0em 0.25em 0.25em 0em rgba(0,0,0,0.2);
-$vmenu-box-shadow-widest:								0em 0.25em 0.25em 0em rgba(0,0,0,0.2);
+$vmenu-box-shadow-medium:								0em 0.25em 0.25em 0em rgb(0 0 0 / 20%);
+$vmenu-box-shadow-widest:								0em 0.25em 0.25em 0em rgb(0 0 0 / 20%);
 
 // The background for the vertical menu
 // CSS property: background
