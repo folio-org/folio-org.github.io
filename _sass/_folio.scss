@@ -20,14 +20,12 @@ html {
 .highlight {
   overflow-x: unset;
 }
-pre {
-  white-space: pre-wrap;
-}
 
 pre {
   padding-left: 2px;
   padding-right: 2px;
   background-color: $f-color-lighter-grey;
+  white-space: pre-wrap;
 }
 code {
   padding-left: 1px;
@@ -160,7 +158,7 @@ a.is-active-link::before {
 h1, h2, h3, h4 {
   outline: none;
 }
-@media screen and (min-width: 0px) and (max-width: $narrow-max-width) {
+@media screen and (max-width: $narrow-max-width) {
   #js-toc-wrapper {
     position: fixed;
     right: -12em;
@@ -186,7 +184,7 @@ h1, h2, h3, h4 {
 
 /* for Tutorials */
 .vagrant-note {
-  background-image: url(/images/vagrant-icon.png);
+  background-image: url("/images/vagrant-icon.png");
   background-position: 10px 10px;
   background-repeat: no-repeat;
   border: 4px solid #2991CC;
@@ -194,7 +192,7 @@ h1, h2, h3, h4 {
   padding: 10px 15px 5px 100px;
 }
 .vagrant-on-windows-note {
-  background-image: url(/images/vagrant-on-windows-icon.png);
+  background-image: url("/images/vagrant-on-windows-icon.png");
   background-position: 10px 10px;
   background-repeat: no-repeat;
   border: 4px solid #0078D8;
