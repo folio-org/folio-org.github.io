@@ -1,0 +1,22 @@
+/*! Override and add to the settings of _normalize.scss in this file */
+
+html {
+	font-family: $theme-font-family;
+	font-weight: $theme-font-weight;
+	line-height: $theme-line-height;
+	font-size: $theme-font-size;
+	color: $text-color;
+	background-color: $background-color;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: $theme-font-family;
+	font-weight: $theme-font-weight;
+	line-height: $theme-line-height;
+	font-size: $theme-font-size;
+	color: $theme-color;
+}
