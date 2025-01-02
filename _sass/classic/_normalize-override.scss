@@ -1,0 +1,24 @@
+@use "../classic-jekyll-theme";
+
+/*! Override and add to the settings of _normalize.scss in this file */
+
+html {
+	font-family: classic-jekyll-theme.$theme-font-family;
+	font-weight: classic-jekyll-theme.$theme-font-weight;
+	line-height: classic-jekyll-theme.$theme-line-height;
+	font-size: classic-jekyll-theme.$theme-font-size;
+	color: classic-jekyll-theme.$text-color;
+	background-color: classic-jekyll-theme.$background-color;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: classic-jekyll-theme.$theme-font-family;
+	font-weight: classic-jekyll-theme.$theme-font-weight;
+	line-height: classic-jekyll-theme.$theme-line-height;
+	font-size: classic-jekyll-theme.$theme-font-size;
+	color: classic-jekyll-theme.$theme-color;
+}

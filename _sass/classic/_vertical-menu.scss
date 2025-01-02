@@ -1,3 +1,6 @@
+@use "../classic-jekyll-theme";
+@use "theme-internal";
+
 // For the vertical menu that can be used on top of the secondary column (wide & mediaum layout) or the
 // primary column (narrow layout).
 //
@@ -6,51 +9,51 @@
 .vmenu-container {
 
 	// Enable disable
-	@include medium-layout { @if $vmenu-enable-medium { display: flex; } @else { display: none; } }
-	@include widest-layout { @if $vmenu-enable-widest { display: flex; } @else { display: none; } }
+	@include theme-internal.medium-layout { @if classic-jekyll-theme.$vmenu-enable-medium { display: flex; } @else { display: none; } }
+	@include theme-internal.widest-layout { @if classic-jekyll-theme.$vmenu-enable-widest { display: flex; } @else { display: none; } }
 	
 	// Ordering vertical
 	& { flex-direction: column; }
 	
 	// Border of the entire vmenu
-	@include medium-layout { border: $vmenu-border-medium; }
-	@include widest-layout { border: $vmenu-border-widest; }
+	@include theme-internal.medium-layout { border: classic-jekyll-theme.$vmenu-border-medium; }
+	@include theme-internal.widest-layout { border: classic-jekyll-theme.$vmenu-border-widest; }
 
 	// Backgound for the entire vmenu
-	@include medium-layout { background: $vmenu-background-medium; }
-	@include widest-layout { background: $vmenu-background-widest; }
+	@include theme-internal.medium-layout { background: classic-jekyll-theme.$vmenu-background-medium; }
+	@include theme-internal.widest-layout { background: classic-jekyll-theme.$vmenu-background-widest; }
 
 	// Box appearance for the entire vmenu
-	@include medium-layout { box-shadow: $vmenu-box-shadow-medium; }
-	@include widest-layout { box-shadow: $vmenu-box-shadow-widest; }
+	@include theme-internal.medium-layout { box-shadow: classic-jekyll-theme.$vmenu-box-shadow-medium; }
+	@include theme-internal.widest-layout { box-shadow: classic-jekyll-theme.$vmenu-box-shadow-widest; }
 }
 
 .vmenu-container .topTitle {
 
-	@include medium-layout { @if $vmenu-topTitle-enable-medium { display: flex; } @else { display: none; } }
-	@include widest-layout { @if $vmenu-topTitle-enable-widest { display: flex; } @else { display: none; } }
+	@include theme-internal.medium-layout { @if classic-jekyll-theme.$vmenu-topTitle-enable-medium { display: flex; } @else { display: none; } }
+	@include theme-internal.widest-layout { @if classic-jekyll-theme.$vmenu-topTitle-enable-widest { display: flex; } @else { display: none; } }
 
-	@include medium-layout { justify-content: $vmenu-topTitle-justify-content-medium; }
-	@include widest-layout { justify-content: $vmenu-topTitle-justify-content-widest; }
+	@include theme-internal.medium-layout { justify-content: classic-jekyll-theme.$vmenu-topTitle-justify-content-medium; }
+	@include theme-internal.widest-layout { justify-content: classic-jekyll-theme.$vmenu-topTitle-justify-content-widest; }
 	
-	@include medium-layout { font: $vmenu-topTitle-font-medium; }
-	@include widest-layout { font: $vmenu-topTitle-font-widest; }
+	@include theme-internal.medium-layout { font: classic-jekyll-theme.$vmenu-topTitle-font-medium; }
+	@include theme-internal.widest-layout { font: classic-jekyll-theme.$vmenu-topTitle-font-widest; }
 
-	@include medium-layout { color: $vmenu-topTitle-color-medium; }
-	@include widest-layout { color: $vmenu-topTitle-color-widest; }
+	@include theme-internal.medium-layout { color: classic-jekyll-theme.$vmenu-topTitle-color-medium; }
+	@include theme-internal.widest-layout { color: classic-jekyll-theme.$vmenu-topTitle-color-widest; }
 	
-	@include medium-layout { background: $vmenu-topTitle-background-medium; }
-	@include widest-layout { background: $vmenu-topTitle-background-widest; }
+	@include theme-internal.medium-layout { background: classic-jekyll-theme.$vmenu-topTitle-background-medium; }
+	@include theme-internal.widest-layout { background: classic-jekyll-theme.$vmenu-topTitle-background-widest; }
 
 	& { padding: 0; }
 	& { margin: 0; }
 	& { width: 100%; }
 	
-	@include medium-layout { h1 { padding: $vmenu-topTitle-padding-medium; } }
-	@include widest-layout { h1 { padding: $vmenu-topTitle-padding-widest; } }
+	@include theme-internal.medium-layout { h1 { padding: classic-jekyll-theme.$vmenu-topTitle-padding-medium; } }
+	@include theme-internal.widest-layout { h1 { padding: classic-jekyll-theme.$vmenu-topTitle-padding-widest; } }
 
-	@include medium-layout { h1 { margin: $vmenu-topTitle-margin-medium; } }
-	@include widest-layout { h1 { margin: $vmenu-topTitle-margin-widest; } }
+	@include theme-internal.medium-layout { h1 { margin: classic-jekyll-theme.$vmenu-topTitle-margin-medium; } }
+	@include theme-internal.widest-layout { h1 { margin: classic-jekyll-theme.$vmenu-topTitle-margin-widest; } }
 }
 
 .vmenu-container .vmenu {
@@ -90,7 +93,7 @@
 			.sub,
 			.sub-hasLink,
 			.sub-isActivePage  {
-				label .symbol:after { content: $vmenu-subitem-disclosure-symbol-open; }
+				label .symbol:after { content: classic-jekyll-theme.$vmenu-subitem-disclosure-symbol-open; }
 			}
 			
 			// Show the subsub's
@@ -105,7 +108,7 @@
 			.sub,
 			.sub-hasLink,
 			.sub-isActivePage  {
-				label .symbol:after { content: $vmenu-subitem-disclosure-symbol-closed; }
+				label .symbol:after { content: classic-jekyll-theme.$vmenu-subitem-disclosure-symbol-closed; }
 			}
 			
 			// Show the subsub's
@@ -115,20 +118,20 @@
 		}
 
 		.sub-isActivePage {
-			 @include medium-layout { background: $vmenu-subitem-title-background-selected-medium; }
-			 @include widest-layout { background: $vmenu-subitem-title-background-selected-widest; }
+			 @include theme-internal.medium-layout { background: classic-jekyll-theme.$vmenu-subitem-title-background-selected-medium; }
+			 @include theme-internal.widest-layout { background: classic-jekyll-theme.$vmenu-subitem-title-background-selected-widest; }
 		}
 		
 		.sub,
 		.sub-hasLink {
 			// Background of the entire subitem
-			@include medium-layout { background: $vmenu-subitem-background-medium; }
-			@include widest-layout { background: $vmenu-subitem-background-widest; }
+			@include theme-internal.medium-layout { background: classic-jekyll-theme.$vmenu-subitem-background-medium; }
+			@include theme-internal.widest-layout { background: classic-jekyll-theme.$vmenu-subitem-background-widest; }
 		}
 		
 		.sub-hasLink:hover {
-			@include medium-layout { background: $vmenu-subitem-title-background-hover-medium; }
-			@include widest-layout { background: $vmenu-subitem-title-background-hover-widest; }
+			@include theme-internal.medium-layout { background: classic-jekyll-theme.$vmenu-subitem-title-background-hover-medium; }
+			@include theme-internal.widest-layout { background: classic-jekyll-theme.$vmenu-subitem-title-background-hover-widest; }
 		}
 		
 		.sub,
@@ -146,62 +149,62 @@
 				align-items: center;
 								
 				// Display the proper disclosure symbol
-				.symbol:after { content: $vmenu-subitem-disclosure-symbol-closed; }
+				.symbol:after { content: classic-jekyll-theme.$vmenu-subitem-disclosure-symbol-closed; }
 			}
 
 			// Border of the entire subitem
-			@include medium-layout { border: $vmenu-subitem-border-medium; }
-			@include widest-layout { border: $vmenu-subitem-border-widest; }
+			@include theme-internal.medium-layout { border: classic-jekyll-theme.$vmenu-subitem-border-medium; }
+			@include theme-internal.widest-layout { border: classic-jekyll-theme.$vmenu-subitem-border-widest; }
 				
 				
 			.disclosure {
 				// Create a small separator between symbol and title
-				@include medium-layout { border-right: $vmenu-subitem-disclosure-area-border-right-medium; }
-				@include widest-layout { border-right: $vmenu-subitem-disclosure-area-border-right-widest; }
+				@include theme-internal.medium-layout { border-right: classic-jekyll-theme.$vmenu-subitem-disclosure-area-border-right-medium; }
+				@include theme-internal.widest-layout { border-right: classic-jekyll-theme.$vmenu-subitem-disclosure-area-border-right-widest; }
 					
 				// Create an indent that can be filled with a disclosure symbol
-				@include medium-layout { width: $vmenu-subitem-disclosure-area-width-medium; }
-				@include widest-layout { width: $vmenu-subitem-disclosure-area-width-widest; }
+				@include theme-internal.medium-layout { width: classic-jekyll-theme.$vmenu-subitem-disclosure-area-width-medium; }
+				@include theme-internal.widest-layout { width: classic-jekyll-theme.$vmenu-subitem-disclosure-area-width-widest; }
 			}
 				
 			.title {
 
 				// The show-hover class is used to show hovering for non-link subitems
 				a:hover, .show-hover:hover {
-					@include medium-layout { color: $vmenu-subitem-color-hover-medium; }
-					@include widest-layout { color: $vmenu-subitem-color-hover-widest; }
+					@include theme-internal.medium-layout { color: classic-jekyll-theme.$vmenu-subitem-color-hover-medium; }
+					@include theme-internal.widest-layout { color: classic-jekyll-theme.$vmenu-subitem-color-hover-widest; }
 				}
 
 				p {
 					// Allow for some padding to position and change the size of this element
-					@include medium-layout { padding: $vmenu-subitem-title-padding-medium; }
-					@include widest-layout { padding: $vmenu-subitem-title-padding-widest; }				
+					@include theme-internal.medium-layout { padding: classic-jekyll-theme.$vmenu-subitem-title-padding-medium; }
+					@include theme-internal.widest-layout { padding: classic-jekyll-theme.$vmenu-subitem-title-padding-widest; }				
 
 					// Font for the sub menu title
-					@include medium-layout { font: $vmenu-subitem-font-medium; }
-					@include widest-layout { font: $vmenu-subitem-font-widest; }
+					@include theme-internal.medium-layout { font: classic-jekyll-theme.$vmenu-subitem-font-medium; }
+					@include theme-internal.widest-layout { font: classic-jekyll-theme.$vmenu-subitem-font-widest; }
 
 					// Color for the sub menu title
-					@include medium-layout { color: $vmenu-subitem-color-medium; }
-					@include widest-layout { color: $vmenu-subitem-color-widest; }
+					@include theme-internal.medium-layout { color: classic-jekyll-theme.$vmenu-subitem-color-medium; }
+					@include theme-internal.widest-layout { color: classic-jekyll-theme.$vmenu-subitem-color-widest; }
 				}
 			}
 		}
 			
 		.subsub-isActivePage {
-			@include medium-layout { background: $vmenu-subsubitem-background-selected-medium; }
-			@include widest-layout { background: $vmenu-subsubitem-background-selected-widest; }
+			@include theme-internal.medium-layout { background: classic-jekyll-theme.$vmenu-subsubitem-background-selected-medium; }
+			@include theme-internal.widest-layout { background: classic-jekyll-theme.$vmenu-subsubitem-background-selected-widest; }
 		}
 
 		.subsub,
 		.subsub-hasLink {
-			@include medium-layout { background: $vmenu-subsubitem-background-medium; }
-			@include widest-layout { background: $vmenu-subsubitem-background-widest; }
+			@include theme-internal.medium-layout { background: classic-jekyll-theme.$vmenu-subsubitem-background-medium; }
+			@include theme-internal.widest-layout { background: classic-jekyll-theme.$vmenu-subsubitem-background-widest; }
 		}
 			
 		.subsub-hasLink:hover {
-			@include medium-layout { background: $vmenu-subsubitem-background-hover-medium; }
-			@include widest-layout { background: $vmenu-subsubitem-background-hover-widest; }
+			@include theme-internal.medium-layout { background: classic-jekyll-theme.$vmenu-subsubitem-background-hover-medium; }
+			@include theme-internal.widest-layout { background: classic-jekyll-theme.$vmenu-subsubitem-background-hover-widest; }
 		}
 
 		.subsub,
@@ -212,39 +215,39 @@
 			display: none;
 							
 			// Set border and background
-			@include medium-layout { border: $vmenu-subsubitem-border-medium; }
-			@include widest-layout { border: $vmenu-subsubitem-border-widest; }
+			@include theme-internal.medium-layout { border: classic-jekyll-theme.$vmenu-subsubitem-border-medium; }
+			@include theme-internal.widest-layout { border: classic-jekyll-theme.$vmenu-subsubitem-border-widest; }
 				
 			.disclosure {
 
 				// Create a small separator between symbol and title
-				@include medium-layout { border-right: $vmenu-subsubitem-disclosure-area-border-right-medium; }
-				@include widest-layout { border-right: $vmenu-subsubitem-disclosure-area-border-right-widest; }
+				@include theme-internal.medium-layout { border-right: classic-jekyll-theme.$vmenu-subsubitem-disclosure-area-border-right-medium; }
+				@include theme-internal.widest-layout { border-right: classic-jekyll-theme.$vmenu-subsubitem-disclosure-area-border-right-widest; }
 					
 				// Create an indent that can be filled with a disclosure symbol
-				@include medium-layout { width: $vmenu-subsubitem-disclosure-area-width-medium; }
-				@include widest-layout { width: $vmenu-subsubitem-disclosure-area-width-widest; }
+				@include theme-internal.medium-layout { width: classic-jekyll-theme.$vmenu-subsubitem-disclosure-area-width-medium; }
+				@include theme-internal.widest-layout { width: classic-jekyll-theme.$vmenu-subsubitem-disclosure-area-width-widest; }
 			}
 				
 			.title {
 				
 				a:hover {						
-					@include medium-layout { color: $vmenu-subsubitem-color-hover-medium; }
-					@include widest-layout { color: $vmenu-subsubitem-color-hover-widest; }
+					@include theme-internal.medium-layout { color: classic-jekyll-theme.$vmenu-subsubitem-color-hover-medium; }
+					@include theme-internal.widest-layout { color: classic-jekyll-theme.$vmenu-subsubitem-color-hover-widest; }
 				}
 
 				p {
 					// Allow for some padding to position and change the size of this element
-					@include medium-layout { padding: $vmenu-subsubitem-title-padding-medium; }
-					@include widest-layout { padding: $vmenu-subsubitem-title-padding-widest; }				
+					@include theme-internal.medium-layout { padding: classic-jekyll-theme.$vmenu-subsubitem-title-padding-medium; }
+					@include theme-internal.widest-layout { padding: classic-jekyll-theme.$vmenu-subsubitem-title-padding-widest; }				
 
 					// Font for the sub menu title
-					@include medium-layout { font: $vmenu-subsubitem-font-medium; }
-					@include widest-layout { font: $vmenu-subsubitem-font-widest; }
+					@include theme-internal.medium-layout { font: classic-jekyll-theme.$vmenu-subsubitem-font-medium; }
+					@include theme-internal.widest-layout { font: classic-jekyll-theme.$vmenu-subsubitem-font-widest; }
 
 					// Color for the sub menu title
-					@include medium-layout { color: $vmenu-subsubitem-color-medium; }
-					@include widest-layout { color: $vmenu-subsubitem-color-widest; }
+					@include theme-internal.medium-layout { color: classic-jekyll-theme.$vmenu-subsubitem-color-medium; }
+					@include theme-internal.widest-layout { color: classic-jekyll-theme.$vmenu-subsubitem-color-widest; }
 				}
 			}
 		}			

@@ -1,0 +1,533 @@
+@use "../classic-jekyll-theme";
+@use "theme-internal";
+
+.menubar {
+	
+	// Positioning & size
+	@include theme-internal.narrow-layout { height: auto; }
+	@include theme-internal.medium-layout { height: classic-jekyll-theme.$menubar-height-medium; }
+	@include theme-internal.widest-layout { height: classic-jekyll-theme.$menubar-height-widest; }
+
+	// Never display input elements
+	input { display: none; }
+	
+	@include theme-internal.narrow-layout {
+
+		// Only displayed when the menu symbol is checked
+		display: none;
+
+		// Display the menu items vertically.
+		flex-direction: column;
+			
+		// Appearances
+		background: classic-jekyll-theme.$menubar-background-narrow;
+			
+		// Make sure the separator is empty
+		.item-separator:after { content: none; }
+		
+		// Show it as a line across the whle screen
+		.item-separator {
+			width: 100%;
+			height: classic-jekyll-theme.$menubar-item-separator-line-width-narrow;
+			background-color: classic-jekyll-theme.$menubar-item-separator-line-color-narrow;
+		}
+			
+		.item,
+		.item-narrow-only {
+			
+			// Layout
+			display: flex;
+			flex-direction: column;
+			
+			// Format the link (area)
+			a {
+				// Make the link area as big as possible
+				width: 100%;
+				height: 100%;
+				
+				// Remove link underlining
+				text-decoration: none;
+			}
+			
+			// Implement selection changes
+			input:checked ~ {
+
+				// Show submenu when selected
+				.dropdown, .dropdown-narrow { display: flex; }
+
+				// When the submenu is open, show the appropriate symbol
+				.title .symbol .code:after { content: classic-jekyll-theme.$menubar-item-title-symbol-code-open-narrow; }
+			}
+
+			.title {
+				
+				// Layout
+				display: flex; // Default = row layout
+				
+				// Set the height
+				height: classic-jekyll-theme.$menubar-item-height-narrow;
+				
+				// Use the item color for all elements
+				background: classic-jekyll-theme.$menubar-item-background-narrow;
+				&:hover { background: classic-jekyll-theme.$menubar-item-background-hover-narrow; }
+
+				// Create the hover effect
+				&:hover { background: classic-jekyll-theme.$menubar-item-background-hover-narrow; }
+
+				.symbol {
+
+					// Layout: Center the disclosure symbol
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					
+					// The width of the tap area with the disclosure symbol in it
+					width: classic-jekyll-theme.$menubar-item-disclosure-symbol-width-narrow;
+					
+					// Load the disclosure symbol for the closed state
+					.code:after { content: classic-jekyll-theme.$menubar-item-title-symbol-code-closed-narrow; }
+				
+					// Show a clickable symbol over the disclosure symbol
+					.code { cursor: pointer; }
+				}
+					
+				.text {
+
+					// Layout: Center vertically and justify-left
+					display: flex;
+					justify-content: start;
+					align-items: center;
+					
+					 // Takes up remainder of .title width
+					.text { width: 100%; }
+
+					// Use the item color for all elements
+					p { color: classic-jekyll-theme.$menubar-item-color-narrow; }
+					
+					// Hover effect
+					&:hover { p { color: classic-jekyll-theme.$menubar-item-color-hover-narrow; } }
+				}
+			}
+
+			.dropdown,
+			.dropdown-narrow {
+				
+				// Disable submenu by default
+				display: none;
+				
+				// Subitems are stacked vertically
+				flex-direction: column;
+				
+				.subitem-separator {
+					display: block;
+					width: 100%;
+					height: classic-jekyll-theme.$menubar-subitem-separator-line-width-narrow;
+					background-color: classic-jekyll-theme.$menubar-subitem-separator-line-color-narrow;
+				}
+					
+				.subitem {
+				
+					// If the checkbox is checked
+					input:checked ~ {
+
+						// Show submenu
+						.sub-dropdown, .sub-dropdown-narrow { display: flex; }
+
+						// When the submenu is open, show the appropriate symbol
+						.title .symbol .code:after { content: classic-jekyll-theme.$menubar-subitem-title-symbol-code-open-narrow; }
+					}
+
+					.title {
+						
+						// Layout (row oriented)
+						display: flex;
+					
+						// Appearance
+						background: classic-jekyll-theme.$menubar-subitem-background-narrow;
+						&:hover { background: classic-jekyll-theme.$menubar-subitem-background-hover-narrow; }
+						
+						// Height
+						height: classic-jekyll-theme.$menubar-subitem-height-narrow;
+						
+						// The disclosure symbol
+						.symbol { width: classic-jekyll-theme.$menubar-item-disclosure-symbol-width-narrow; }
+						
+						.text a {
+							display: flex;
+							justify-content: start;
+							align-items: center;
+						}
+						
+						p { padding-left: classic-jekyll-theme.$menubar-subitem-indent-narrow; }
+					}
+					
+					.sub-dropdown,
+					.sub-dropdown-narrow {
+						
+						// Disable by default
+						display: none;
+						
+						// Subitems are stacked vertically
+						flex-direction: column;
+					
+						.subsubitem-separator {
+							display: block;
+							width: 100%;
+							height: classic-jekyll-theme.$menubar-subsubitem-separator-line-width-narrow;
+							background-color: classic-jekyll-theme.$menubar-subsubitem-separator-line-color-narrow;
+						}
+						
+						.subsubitem .title {
+						
+							// Layout (row oriented)
+							display: flex;
+					
+							// Appearance
+							background: classic-jekyll-theme.$menubar-subsubitem-background-narrow;
+							&:hover { background: classic-jekyll-theme.$menubar-subsubitem-background-hover-narrow; }
+							
+							// Height
+							height: classic-jekyll-theme.$menubar-subsubitem-height-narrow;
+	
+							.text a {
+								display: flex;
+								justify-content: start;
+								align-items: center;
+							}
+						
+							p { padding-left: classic-jekyll-theme.$menubar-subsubitem-indent-narrow; }
+						}
+					}
+				}
+			}
+		}
+		
+		.isActiveSelection {
+			background: classic-jekyll-theme.$menubar-item-background-selected-narrow;
+			.title .text p { color: classic-jekyll-theme.$menubar-item-color-selected-narrow }
+		}
+	}
+			
+	@include theme-internal.medium-and-widest-layout {
+
+		// Check if it must be displayed
+		@include theme-internal.medium-layout { @if classic-jekyll-theme.$menubar-enabled-medium { display: flex; } @else { display: none; } }
+		@include theme-internal.widest-layout { @if classic-jekyll-theme.$menubar-enabled-widest { display: flex; } @else { display: none; } }
+
+		// Appearances
+		@include theme-internal.medium-layout {
+			background: classic-jekyll-theme.$menubar-background-medium;
+			border: classic-jekyll-theme.$menubar-border-medium;
+			box-shadow: classic-jekyll-theme.$menubar-box-shadow-medium;
+		}
+		@include theme-internal.widest-layout {
+			background: classic-jekyll-theme.$menubar-background-widest;
+			border: classic-jekyll-theme.$menubar-border-widest;
+			box-shadow: classic-jekyll-theme.$menubar-box-shadow-widest;
+		}
+
+		// Positioning of items and item-separators.
+		flex-direction: row;
+		@include theme-internal.medium-layout {
+			justify-content: classic-jekyll-theme.$menubar-justify-content-medium;
+			align-items: classic-jekyll-theme.$menubar-align-items-medium;
+		}
+		@include theme-internal.widest-layout {
+			justify-content: classic-jekyll-theme.$menubar-justify-content-widest;
+			align-items: classic-jekyll-theme.$menubar-align-items-widest;
+		}
+
+		.menubar-icon {
+				
+			@include theme-internal.medium-layout {
+				width: classic-jekyll-theme.$menubar-icon-width-medium;
+				height: classic-jekyll-theme.$menubar-icon-height-medium;
+				padding: classic-jekyll-theme.$menubar-icon-padding-medium;
+			}
+			@include theme-internal.widest-layout {
+				width: classic-jekyll-theme.$menubar-icon-width-widest;
+				height: classic-jekyll-theme.$menubar-icon-height-widest;
+				padding: classic-jekyll-theme.$menubar-icon-padding-widest;
+			}
+		}
+
+		// Content (icon image)
+		// Note: Firefox needs the 'after' attribute to display the icon. Other browsers seem fine without it.
+		// Issue no 19.
+		.menubar-icon:after {
+			@include theme-internal.medium-layout { content: classic-jekyll-theme.$menubar-icon-url-medium; }
+			@include theme-internal.widest-layout { content: classic-jekyll-theme.$menubar-icon-url-widest; }
+		}
+
+		.item-separator {
+	
+			@include theme-internal.medium-layout {
+
+				// Appearance
+				color: classic-jekyll-theme.$menubar-item-separator-symbol-color-medium;
+				background: classic-jekyll-theme.$menubar-item-separator-symbol-background-medium;
+			
+				// Set padding
+				padding: classic-jekyll-theme.$menubar-item-separator-symbol-padding-medium;
+	
+				// Set the separator symbol
+				p:after { content: classic-jekyll-theme.$menubar-item-separator-symbol-medium; }
+
+				// The font for the separator
+				p { font: classic-jekyll-theme.$menubar-item-separator-symbol-font-medium; }
+			}
+					
+			@include theme-internal.widest-layout {
+				
+				// Appearance
+				color: classic-jekyll-theme.$menubar-item-separator-symbol-color-widest;
+				background: classic-jekyll-theme.$menubar-item-separator-symbol-background-widest;
+
+				// Set padding
+				padding: classic-jekyll-theme.$menubar-item-separator-symbol-padding-widest;
+	
+				// Set the separator symbol
+				p:after { content: classic-jekyll-theme.$menubar-item-separator-symbol-widest; }
+
+				// The font for the separator
+				p { font: classic-jekyll-theme.$menubar-item-separator-symbol-font-widest; }
+			}
+		}
+			
+		// Make all p's as small as possible
+		p { margin: 0; padding: 0; }
+
+		
+		.item-narrow-only { display: none; }
+		
+		.item {
+			
+			// Vertical layout
+			display: flex;
+			flex-direction: column;		
+			
+			// Make this the baseline reverence for the dropdown box
+			position: relative;
+			
+			// Appearances
+			p {
+				// Prevent wrapping of the (sub) menu items
+				white-space: nowrap;
+
+				// Font color
+				@include theme-internal.medium-layout { color: classic-jekyll-theme.$menubar-item-color-medium; }
+				@include theme-internal.widest-layout { color: classic-jekyll-theme.$menubar-item-color-widest; }
+			
+				// Font
+				@include theme-internal.medium-layout { font: classic-jekyll-theme.$menubar-item-font-medium; }
+				@include theme-internal.widest-layout { font: classic-jekyll-theme.$menubar-item-font-widest; }
+			}
+			
+			// Set background
+			@include theme-internal.medium-layout { background: classic-jekyll-theme.$menubar-item-background-medium; }
+			@include theme-internal.widest-layout { background: classic-jekyll-theme.$menubar-item-background-widest; }
+
+			// Hover effect
+			&:hover {
+
+				// Display the submenu if the user hovers the mouse over it
+				.dropdown { display: block; }
+			
+				p {
+					// Change font color
+					@include theme-internal.medium-layout { color: classic-jekyll-theme.$menubar-item-color-hover-medium; }
+					@include theme-internal.widest-layout { color: classic-jekyll-theme.$menubar-item-color-hover-widest; }
+				}
+				
+				// Change item background
+				@include theme-internal.medium-layout { background: classic-jekyll-theme.$menubar-item-background-hover-medium; }
+				@include theme-internal.widest-layout { background: classic-jekyll-theme.$menubar-item-background-hover-widest; }
+			}
+			
+			a {
+				// Make the entire hightlight block clickable
+				display: block;
+				
+				// Remove the link underlining
+				text-decoration: none;
+			}
+
+			// Sizing of the items
+			a, .paddingAsLink {
+				@include theme-internal.medium-layout { padding: classic-jekyll-theme.$menubar-item-padding-medium; }
+				@include theme-internal.widest-layout { padding: classic-jekyll-theme.$menubar-item-padding-widest; }
+			}
+			
+			.title {		
+				@include theme-internal.medium-layout { height: classic-jekyll-theme.$menubar-item-height-medium; }
+				@include theme-internal.widest-layout { height: classic-jekyll-theme.$menubar-item-height-widest; }
+			}
+			
+			.dropdown,
+			.dropdown-narrow {
+				
+				// Visibility depends on hovering over the item
+				display: none;
+
+				// Don't show the separators
+				.subitem-separator { display: none; }
+					
+				// Position the dropdown box below the item.
+				position: absolute;
+				top: 100%;
+
+				// Make it at least as wide as the parent						
+				min-width: 100%;
+						
+				// Appearances
+				@include theme-internal.medium-layout { margin: classic-jekyll-theme.$menubar-dropdown-margin-medium; }
+				@include theme-internal.widest-layout { margin: classic-jekyll-theme.$menubar-dropdown-margin-widest; }
+
+				@include theme-internal.medium-layout { padding: classic-jekyll-theme.$menubar-dropdown-padding-medium; }
+				@include theme-internal.widest-layout { padding: classic-jekyll-theme.$menubar-dropdown-padding-widest; }
+
+				@include theme-internal.medium-layout { background: classic-jekyll-theme.$menubar-dropdown-background-medium; }
+				@include theme-internal.widest-layout { background: classic-jekyll-theme.$menubar-dropdown-background-widest; }
+
+				@include theme-internal.medium-layout { border: classic-jekyll-theme.$menubar-dropdown-border-medium; }
+				@include theme-internal.widest-layout { border: classic-jekyll-theme.$menubar-dropdown-border-widest; }
+
+				@include theme-internal.medium-layout { box-shadow: classic-jekyll-theme.$menubar-dropdown-box-shadow-medium; }
+				@include theme-internal.widest-layout { box-shadow: classic-jekyll-theme.$menubar-dropdown-box-shadow-widest; }
+
+				.subitem {
+					
+					// To anchor the sub-dropdown
+					position: relative;
+					
+					// Appearances
+					p {
+						@include theme-internal.medium-layout { font: classic-jekyll-theme.$menubar-subitem-font-medium; }
+						@include theme-internal.widest-layout { font: classic-jekyll-theme.$menubar-subitem-font-widest; }
+
+						@include theme-internal.medium-layout { color: classic-jekyll-theme.$menubar-subitem-color-medium; }
+						@include theme-internal.widest-layout { color: classic-jekyll-theme.$menubar-subitem-color-widest; }
+					}
+					
+					@include theme-internal.medium-layout { background: classic-jekyll-theme.$menubar-subitem-background-medium; }
+					@include theme-internal.widest-layout { background: classic-jekyll-theme.$menubar-subitem-background-widest; }
+
+					// Hover effect
+					&:hover {
+
+						// Show the sub-dropdown only on hover
+						.sub-dropdown { display: flex; }
+
+						p {
+							@include theme-internal.medium-layout { color: classic-jekyll-theme.$menubar-subitem-color-hover-medium; }
+							@include theme-internal.widest-layout { color: classic-jekyll-theme.$menubar-subitem-color-hover-widest; }
+						}
+						
+						@include theme-internal.medium-layout { background: classic-jekyll-theme.$menubar-subitem-background-hover-medium; }
+						@include theme-internal.widest-layout { background: classic-jekyll-theme.$menubar-subitem-background-hover-widest; }
+					}
+											
+					// Sizing of the subitems
+					a, .paddingAsLink {
+						@include theme-internal.medium-layout { padding: classic-jekyll-theme.$menubar-subitem-padding-medium; }
+						@include theme-internal.widest-layout { padding: classic-jekyll-theme.$menubar-subitem-padding-widest; }
+					}
+					
+					.sub-dropdown {
+					
+						// Do not display (until hover over the subitem)
+						display: none;
+						
+						// Position it relative to the subitem
+						position: absolute;
+						
+						// Position it adjacent to the subitem
+						top: 0;
+						left: 100%;
+						
+						// Make it at least as wide as the parent						
+						min-width: 100%;
+						
+						// Stack the sub-sub item vertically
+						flex-direction: column;
+						
+						// Formatting the appearance
+						@include theme-internal.medium-layout { background: classic-jekyll-theme.$menubar-sub-dropdown-background-medium; }
+						@include theme-internal.widest-layout { background: classic-jekyll-theme.$menubar-sub-dropdown-background-widest; }
+						
+						@include theme-internal.medium-layout { border: classic-jekyll-theme.$menubar-sub-dropdown-border-medium; }
+						@include theme-internal.widest-layout { border: classic-jekyll-theme.$menubar-sub-dropdown-border-widest; }
+						
+						@include theme-internal.medium-layout { box-shadow: classic-jekyll-theme.$menubar-sub-dropdown-box-shadow-medium; }
+						@include theme-internal.widest-layout { box-shadow: classic-jekyll-theme.$menubar-sub-dropdown-box-shadow-widest; }
+						
+						.subsubitem {
+						
+							// Appearance
+							p {
+								@include theme-internal.medium-layout { font: classic-jekyll-theme.$menubar-subsubitem-font-medium; }
+								@include theme-internal.widest-layout { font: classic-jekyll-theme.$menubar-subsubitem-font-widest; }
+
+								@include theme-internal.medium-layout { color: classic-jekyll-theme.$menubar-subsubitem-color-medium; }
+								@include theme-internal.widest-layout { color: classic-jekyll-theme.$menubar-subsubitem-color-widest; }
+							}
+							
+							@include theme-internal.medium-layout { background: classic-jekyll-theme.$menubar-subsubitem-background-medium; }
+							@include theme-internal.widest-layout { background: classic-jekyll-theme.$menubar-subsubitem-background-widest; }
+
+							// Hover effect
+							&:hover {
+								p {
+									@include theme-internal.medium-layout { color: classic-jekyll-theme.$menubar-subsubitem-color-hover-medium; }
+									@include theme-internal.widest-layout { color: classic-jekyll-theme.$menubar-subsubitem-color-hover-widest; }
+								}
+								
+								@include theme-internal.medium-layout { background: classic-jekyll-theme.$menubar-subsubitem-background-hover-medium; }
+								@include theme-internal.widest-layout { background: classic-jekyll-theme.$menubar-subsubitem-background-hover-widest; }
+							}
+							
+							// Sizing of the subitems
+							a, .paddingAsLink {
+								@include theme-internal.medium-layout { padding: classic-jekyll-theme.$menubar-subsubitem-padding-medium; }
+								@include theme-internal.widest-layout { padding: classic-jekyll-theme.$menubar-subsubitem-padding-widest; }
+							}
+						}
+
+						// Show selection for pages that match a menu entry
+						// Note that this setting overrides the setting in .subsubitem and hence be placed after it.
+						.isActiveSelection {
+							@include theme-internal.medium-layout { background: classic-jekyll-theme.$menubar-subsubitem-background-selected-medium; }
+							@include theme-internal.widest-layout { background: classic-jekyll-theme.$menubar-subsubitem-background-selected-widest; }
+							p {
+								@include theme-internal.medium-layout { color: classic-jekyll-theme.$menubar-subsubitem-color-selected-medium; }
+								@include theme-internal.widest-layout { color: classic-jekyll-theme.$menubar-subsubitem-color-selected-widest; }
+							}
+						}
+					}
+				}
+
+				// Show selection for pages that match a menu entry
+				// Note that this setting overrides the setting in .subitem and hence be placed after it.
+				.isActiveSelection {
+					@include theme-internal.medium-layout { background: classic-jekyll-theme.$menubar-subitem-background-selected-medium; }
+					@include theme-internal.widest-layout { background: classic-jekyll-theme.$menubar-subitem-background-selected-widest; }
+					p {
+						@include theme-internal.medium-layout { color: classic-jekyll-theme.$menubar-subitem-color-selected-medium; }
+						@include theme-internal.widest-layout { color: classic-jekyll-theme.$menubar-subitem-color-selected-widest; }
+					}
+				}
+			}
+		}	
+		
+		// Show selection for pages that match a menu entry
+		// Note that this setting overrides the setting in .item and hence be placed after it.
+		.isActiveSelection {
+			@include theme-internal.medium-layout { background: classic-jekyll-theme.$menubar-item-background-selected-medium; }
+			@include theme-internal.widest-layout { background: classic-jekyll-theme.$menubar-item-background-selected-widest; }
+			p {
+				@include theme-internal.medium-layout { color: classic-jekyll-theme.$menubar-item-color-selected-medium; }
+				@include theme-internal.widest-layout { color: classic-jekyll-theme.$menubar-item-color-selected-widest; }
+			}
+		}
+	}
+}

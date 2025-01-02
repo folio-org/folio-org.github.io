@@ -1,9 +1,11 @@
+@use "../classic-jekyll-theme";
+
 /**
  * Syntax highlighting styles
  */
 .highlight {
   background: #fff;
-  margin-bottom: $vspacing-unit * 0.5; // Replaces :  @extend %vertical-rhythm;
+  margin-bottom: classic-jekyll-theme.$vspacing-unit * 0.5; // Replaces :  @extend %vertical-rhythm;
 
   .highlighter-rouge & {
     background: #eef;

@@ -1,0 +1,42 @@
+@use "../classic-jekyll-theme";
+@use "theme-internal";
+
+// Footer related SCCS
+
+// 2025-01-02 FOLIO-4153: replicated "theme-insets" from _theme-library.scss
+%theme-insets {
+	padding-top: classic-jekyll-theme.$vspacing-unit;
+	padding-right: classic-jekyll-theme.$hspacing-unit;
+	padding-bottom: classic-jekyll-theme.$vspacing-unit;
+	padding-left: classic-jekyll-theme.$hspacing-unit;
+}
+
+// This is the element between the column panel and the footer.
+.footer-separator {
+	@if classic-jekyll-theme.$footer-separator-display { display: block; } @else { display: none; }
+	width: 100%;
+	margin: 0;
+	@include theme-internal.narrow-layout { border-bottom: 1px solid classic-jekyll-theme.$footer-separator-color-narrow; }
+	@include theme-internal.medium-layout { border-bottom: 1px solid classic-jekyll-theme.$footer-separator-color-medium; }
+	@include theme-internal.widest-layout { border-bottom: 1px solid classic-jekyll-theme.$footer-separator-color-widest; }
+}
+
+.footer-panel {
+	@extend %theme-insets;	
+	text-align: center;	
+	@include theme-internal.narrow-layout {
+		font: classic-jekyll-theme.$footer-font-narrow;
+		color: classic-jekyll-theme.$footer-color-narrow;
+		background: classic-jekyll-theme.$footer-background-narrow;
+	}
+	@include theme-internal.medium-layout {
+		font: classic-jekyll-theme.$footer-font-medium;
+		color: classic-jekyll-theme.$footer-color-medium;
+		background: classic-jekyll-theme.$footer-background-medium;
+	}
+	@include theme-internal.widest-layout {
+		font: classic-jekyll-theme.$footer-font-widest;
+		color: classic-jekyll-theme.$footer-color-widest;
+		background: classic-jekyll-theme.$footer-background-widest;
+	}
+}

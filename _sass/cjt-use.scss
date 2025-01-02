@@ -1,0 +1,16 @@
+// Note that later imports will override the settings in earlier imports
+@use "classic/normalize";            // Standard browser adjustments
+@use "classic/normalize-override";   // Theme related overrides on the standard adjustments
+@use "classic/syntax-highlighting";
+@use "classic/theme-internal";       // Necessary for correct operation of the theme, do not change!
+@use "classic/theme-library";        // General class definitions used in several other scss files
+@use "classic/body";
+@use "classic/banner-area";
+@use "classic/menubar";
+@use "classic/columns";
+@use "classic/footer";
+@use "classic/vertical-menu";
+@use "classic/post";
+@use "classic/page";
+@use "classic/custom";               // To be used in markdown, add your own here
+@use "classic/widgets";              // For the widgets, add your own settings for your own widgets her

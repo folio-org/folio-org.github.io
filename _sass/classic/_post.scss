@@ -1,0 +1,12 @@
+@use "../classic-jekyll-theme";
+
+// SCCS for the post design.
+
+.post-meta {
+	color: classic-jekyll-theme.$grey-color;
+	font-size: classic-jekyll-theme.$small-1-font-size;
+}
+
+.post-title {
+	text-align: center;
+}

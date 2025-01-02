@@ -1,13 +1,17 @@
+@use "classic-jekyll-theme";
+@use "classic/theme-internal";
+@use "folio-base";
+
 @use "sass:color";
 
 div.highlight {
-  border: 1px solid $f-color-light-grey;
+  border: 1px solid folio-base.$f-color-light-grey;
 }
 .highlighter-rouge .highlight {
-  background-color: $f-color-lighter-grey;
+  background-color: folio-base.$f-color-lighter-grey;
 }
 code.highlighter-rouge {
-  background-color: $f-color-lighter-grey;
+  background-color: folio-base.$f-color-lighter-grey;
 }
 // Handle left-right jump when no scrollbar on short pages.
 html {
@@ -24,17 +28,17 @@ html {
 pre {
   padding-left: 2px;
   padding-right: 2px;
-  background-color: $f-color-lighter-grey;
+  background-color: folio-base.$f-color-lighter-grey;
   white-space: pre-wrap;
 }
 code {
   padding-left: 1px;
   padding-right: 1px;
-  background-color: $f-color-lighter-grey;
+  background-color: folio-base.$f-color-lighter-grey;
 }
 
 .attention {
-  border-color: $f-color-attention;
+  border-color: folio-base.$f-color-attention;
   border-style: solid;
   border-width: 1px 1px 1px 3px;
   padding-left: 2px;
@@ -42,7 +46,7 @@ code {
 }
 
 .note-small-2 {
-  font-size: $small-2-font-size;
+  font-size: classic-jekyll-theme.$small-2-font-size;
   width: 40%;
 }
 
@@ -50,13 +54,13 @@ table {
   border-collapse: collapse;
 }
 table, th, td {
-  border: 1px solid $f-color-light-grey;
+  border: 1px solid folio-base.$f-color-light-grey;
 }
 th, td {
   padding: 3px;
 }
 th {
-  background-color: $f-color-lighter-grey;
+  background-color: folio-base.$f-color-lighter-grey;
 }
 table.api {
   table-layout: fixed;
@@ -92,15 +96,15 @@ table.apilabel .raml {
 
 // Set our link and visited colors
 a {
-  color: $f-link-color;
+  color: folio-base.$f-link-color;
   text-decoration: none;
 
   &:visited {
-    color: color.adjust($f-link-color, $lightness: -15%, $space: hsl);
+    color: color.adjust(folio-base.$f-link-color, $lightness: -15%, $space: hsl);
   }
 
   &:hover {
-    color: $text-color;
+    color: classic-jekyll-theme.$text-color;
     text-decoration: underline;
   }
 }
@@ -123,9 +127,9 @@ form input {
   display: none;
 }
 nav.folio {
-  background-color: $f-color-orange;
+  background-color: folio-base.$f-color-orange;
   div.item {
-    background-color: $f-color-orange;
+    background-color: folio-base.$f-color-orange;
   }
   div.dropdown {
     z-index: 9;
@@ -137,12 +141,12 @@ nav.folio {
 // The Home menu item
 .menubar:not(.folio) {
   div:nth-of-type(2) > div > div > a > p {
-    color: $f-color-orange;
+    color: folio-base.$f-color-orange;
   }
 }
 /* tocbot */
 #js-toc-wrapper {
-  background-color: $f-color-lighter-grey;
+  background-color: folio-base.$f-color-lighter-grey;
   margin-top: 1em;
 }
 li.toc-list-item {
@@ -150,15 +154,15 @@ li.toc-list-item {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: $small-1-font-size;
+  font-size: classic-jekyll-theme.$small-1-font-size;
 }
 a.is-active-link::before {
-  background-color: $f-color-orange;
+  background-color: folio-base.$f-color-orange;
 }
 h1, h2, h3, h4 {
   outline: none;
 }
-@media screen and (max-width: $narrow-max-width) {
+@media screen and (max-width: theme-internal.$narrow-max-width) {
   #js-toc-wrapper {
     position: fixed;
     right: -12em;
