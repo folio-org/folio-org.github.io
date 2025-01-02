@@ -1,3 +1,6 @@
+@use "../classic-jekyll-theme";
+@use "theme-internal";
+
 // Settings for the body panel in the layout "defaults.html"
 //
 .body-panel {
@@ -9,7 +12,7 @@
 	justify-content: flex-start;
 	
 	// Setting a background on the entire site
-	@include widest-layout { background: $background-widest; }
-	@include medium-layout { background: $background-medium; }
-	@include narrow-layout { background: $background-narrow; }
+	@include theme-internal.widest-layout { background: classic-jekyll-theme.$background-widest; }
+	@include theme-internal.medium-layout { background: classic-jekyll-theme.$background-medium; }
+	@include theme-internal.narrow-layout { background: classic-jekyll-theme.$background-narrow; }
 }

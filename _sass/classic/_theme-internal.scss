@@ -1,3 +1,5 @@
+@use "../classic-jekyll-theme";
+
 // *********************************************************************************************************************
 // Internals
 // ---------------------------------------------------------------------------------------------------------------------
@@ -6,9 +8,9 @@
 
 // Caculate the width ranges where the layout changes take place
 //
-$widest-min-width:				$primary-column-min-width + $secondary-column-width + $tertiary-column-width;
+$widest-min-width:				classic-jekyll-theme.$primary-column-min-width + classic-jekyll-theme.$secondary-column-width + classic-jekyll-theme.$tertiary-column-width;
 $medium-max-width:				$widest-min-width - 1;
-$medium-min-width:				$primary-column-min-width + $secondary-column-width;
+$medium-min-width:				classic-jekyll-theme.$primary-column-min-width + classic-jekyll-theme.$secondary-column-width;
 $narrow-max-width:				$medium-min-width - 1;
 
 

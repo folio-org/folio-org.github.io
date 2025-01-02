@@ -1,3 +1,6 @@
+@use "../classic-jekyll-theme";
+@use "theme-internal";
+
 #banner-menu-symbol {
 
 	// Don't display the checkbox
@@ -5,42 +8,42 @@
 			
 	// When selected, display the menu bar and bottom separator
 	&:checked ~ {
-		@include narrow-layout {
+		@include theme-internal.narrow-layout {
 			.banner-area .menubar {
-				@if $menubar-enabled-narrow { display: flex; } @else { display: none; }
+				@if classic-jekyll-theme.$menubar-enabled-narrow { display: flex; } @else { display: none; }
 			}
 			.banner-area .menubar-bottom-separator,
 			.banner-area .add-to-banner-area-height {
-				@if $menubar-bottom-separator-enabled-narrow { display: block; } @else { display: none; }
+				@if classic-jekyll-theme.$menubar-bottom-separator-enabled-narrow { display: block; } @else { display: none; }
 			}
 		}
-		@include medium-layout {
-			@if $banner-menu-symbol-enabled-medium {
+		@include theme-internal.medium-layout {
+			@if classic-jekyll-theme.$banner-menu-symbol-enabled-medium {
 				.banner-area .menubar { display: none; }
 				.banner-area .menubar-bottom-separator,
 				.banner-area .add-to-banner-area-height { display: none }
 			} @else {
 				.banner-area .menubar {
-					@if $menubar-enabled-medium { display: flex; } @else { display: none; }
+					@if classic-jekyll-theme.$menubar-enabled-medium { display: flex; } @else { display: none; }
 				}
 				.banner-area .menubar-bottom-separator,
 				.banner-area .add-to-banner-area-height {
-					@if $menubar-bottom-separator-enabled-medium { display: block; } @else { display: none; }
+					@if classic-jekyll-theme.$menubar-bottom-separator-enabled-medium { display: block; } @else { display: none; }
 				}
 			}
 		}
-		@include widest-layout {
-			@if $banner-menu-symbol-enabled-widest {
+		@include theme-internal.widest-layout {
+			@if classic-jekyll-theme.$banner-menu-symbol-enabled-widest {
 				.banner-area .menubar { display: none; }
 				.banner-area .menubar-bottom-separator,
 				.banner-area .add-to-banner-area-height { display: none }
 			} @else {
 				.banner-area .menubar  {
-					@if $menubar-enabled-widest { display: flex; } @else { display: none; }
+					@if classic-jekyll-theme.$menubar-enabled-widest { display: flex; } @else { display: none; }
 				}
 				.banner-area .menubar-bottom-separator,
 				.banner-area .add-to-banner-area-height {
-					@if $menubar-bottom-separator-enabled-widest { display: block; } @else { display: none; }
+					@if classic-jekyll-theme.$menubar-bottom-separator-enabled-widest { display: block; } @else { display: none; }
 				}
 			}
 		}
@@ -56,14 +59,14 @@
 	
 		// Sizing: The container occupies the entire width and height as specified
 		width: 100%;
-		@include narrow-layout { @if $banner-enabled-narrow { height: $banner-height-narrow; } }
-		@include medium-layout { @if $banner-enabled-medium { height: $banner-height-medium; } }
-		@include widest-layout { @if $banner-enabled-widest { height: $banner-height-widest; } }
+		@include theme-internal.narrow-layout { @if classic-jekyll-theme.$banner-enabled-narrow { height: classic-jekyll-theme.$banner-height-narrow; } }
+		@include theme-internal.medium-layout { @if classic-jekyll-theme.$banner-enabled-medium { height: classic-jekyll-theme.$banner-height-medium; } }
+		@include theme-internal.widest-layout { @if classic-jekyll-theme.$banner-enabled-widest { height: classic-jekyll-theme.$banner-height-widest; } }
 
 		// background
-		@include narrow-layout { background: $banner-background-narrow; }
-		@include medium-layout { background: $banner-background-medium; }
-		@include widest-layout { background: $banner-background-widest; }
+		@include theme-internal.narrow-layout { background: classic-jekyll-theme.$banner-background-narrow; }
+		@include theme-internal.medium-layout { background: classic-jekyll-theme.$banner-background-medium; }
+		@include theme-internal.widest-layout { background: classic-jekyll-theme.$banner-background-widest; }
 		
 		& { z-index: 1; }
 	}
@@ -72,159 +75,159 @@
 		
 		// Sizing: This is an overlay container over the entire banner
 		@extend .overlay;
-		@include narrow-layout { height: $banner-height-narrow; }
-		@include medium-layout { height: $banner-height-medium; }
-		@include widest-layout { height: $banner-height-widest; }
+		@include theme-internal.narrow-layout { height: classic-jekyll-theme.$banner-height-narrow; }
+		@include theme-internal.medium-layout { height: classic-jekyll-theme.$banner-height-medium; }
+		@include theme-internal.widest-layout { height: classic-jekyll-theme.$banner-height-widest; }
 
 		// Display or not
-		@include narrow-layout {
-			@if ($banner-enabled-narrow and $banner-icon-enabled-narrow) { display: flex; }
+		@include theme-internal.narrow-layout {
+			@if (classic-jekyll-theme.$banner-enabled-narrow and classic-jekyll-theme.$banner-icon-enabled-narrow) { display: flex; }
 			@else { display: none; }
 		}
-		@include medium-layout {
-			@if ($banner-enabled-medium and $banner-icon-enabled-medium) { display: flex; }
+		@include theme-internal.medium-layout {
+			@if (classic-jekyll-theme.$banner-enabled-medium and classic-jekyll-theme.$banner-icon-enabled-medium) { display: flex; }
 			@else { display: none; }
 		}
-		@include widest-layout {
-			@if ($banner-enabled-widest and $banner-icon-enabled-widest) { display: flex; }
+		@include theme-internal.widest-layout {
+			@if (classic-jekyll-theme.$banner-enabled-widest and classic-jekyll-theme.$banner-icon-enabled-widest) { display: flex; }
 			@else { display: none; }
 		}
 
 		// Position the icon
-		@include narrow-layout {
-			justify-content: $banner-icon-justify-content-narrow;
-			align-items: $banner-icon-align-items-narrow;
+		@include theme-internal.narrow-layout {
+			justify-content: classic-jekyll-theme.$banner-icon-justify-content-narrow;
+			align-items: classic-jekyll-theme.$banner-icon-align-items-narrow;
 		}
-		@include medium-layout {
-			justify-content: $banner-icon-justify-content-medium;
-			align-items: $banner-icon-align-items-medium;
+		@include theme-internal.medium-layout {
+			justify-content: classic-jekyll-theme.$banner-icon-justify-content-medium;
+			align-items: classic-jekyll-theme.$banner-icon-align-items-medium;
 		}
-		@include widest-layout {
-			justify-content: $banner-icon-justify-content-widest;
-			align-items: $banner-icon-align-items-widest;
+		@include theme-internal.widest-layout {
+			justify-content: classic-jekyll-theme.$banner-icon-justify-content-widest;
+			align-items: classic-jekyll-theme.$banner-icon-align-items-widest;
 		}
 		
 		// Ordering
-		@include narrow-layout { z-index: $banner-icon-z-index-narrow; }
-		@include medium-layout { z-index: $banner-icon-z-index-medium; }
-		@include widest-layout { z-index: $banner-icon-z-index-widest; }
+		@include theme-internal.narrow-layout { z-index: classic-jekyll-theme.$banner-icon-z-index-narrow; }
+		@include theme-internal.medium-layout { z-index: classic-jekyll-theme.$banner-icon-z-index-medium; }
+		@include theme-internal.widest-layout { z-index: classic-jekyll-theme.$banner-icon-z-index-widest; }
 
 			
 		.banner-icon {				
 
 			// Position tweaks
-			@include narrow-layout { padding: $banner-icon-padding-narrow; }
-			@include medium-layout { padding: $banner-icon-padding-medium; }
-			@include widest-layout { padding: $banner-icon-padding-widest; }
+			@include theme-internal.narrow-layout { padding: classic-jekyll-theme.$banner-icon-padding-narrow; }
+			@include theme-internal.medium-layout { padding: classic-jekyll-theme.$banner-icon-padding-medium; }
+			@include theme-internal.widest-layout { padding: classic-jekyll-theme.$banner-icon-padding-widest; }
 
 			// Sizing
-			@include narrow-layout { width: $banner-icon-width-narrow; }
-			@include medium-layout { width: $banner-icon-width-medium; }
-			@include widest-layout { width: $banner-icon-width-widest; }
+			@include theme-internal.narrow-layout { width: classic-jekyll-theme.$banner-icon-width-narrow; }
+			@include theme-internal.medium-layout { width: classic-jekyll-theme.$banner-icon-width-medium; }
+			@include theme-internal.widest-layout { width: classic-jekyll-theme.$banner-icon-width-widest; }
 
-			@include narrow-layout { height: $banner-icon-height-narrow; }
-			@include medium-layout { height: $banner-icon-height-medium; }
-			@include widest-layout { height: $banner-icon-height-widest; }
+			@include theme-internal.narrow-layout { height: classic-jekyll-theme.$banner-icon-height-narrow; }
+			@include theme-internal.medium-layout { height: classic-jekyll-theme.$banner-icon-height-medium; }
+			@include theme-internal.widest-layout { height: classic-jekyll-theme.$banner-icon-height-widest; }
 							
 			// Background
-			@include narrow-layout { background: $banner-icon-background-narrow; }
-			@include medium-layout { background: $banner-icon-background-medium; }
-			@include widest-layout { background: $banner-icon-background-widest; }			
+			@include theme-internal.narrow-layout { background: classic-jekyll-theme.$banner-icon-background-narrow; }
+			@include theme-internal.medium-layout { background: classic-jekyll-theme.$banner-icon-background-medium; }
+			@include theme-internal.widest-layout { background: classic-jekyll-theme.$banner-icon-background-widest; }			
 		}
 		
 		// Content (icon image)
 		// Note: Firefox needs the 'after' attribute to display the icon. Other browsers seem fine without it.
 		// Issue no 19.
 		.banner-icon::after {
-			@include narrow-layout { content: $banner-icon-url-narrow; }
-			@include medium-layout { content: $banner-icon-url-medium; }
-			@include widest-layout { content: $banner-icon-url-widest; }
+			@include theme-internal.narrow-layout { content: classic-jekyll-theme.$banner-icon-url-narrow; }
+			@include theme-internal.medium-layout { content: classic-jekyll-theme.$banner-icon-url-medium; }
+			@include theme-internal.widest-layout { content: classic-jekyll-theme.$banner-icon-url-widest; }
 		}
 	}
 		
 	.title-area-container {
 		
 		// Sizing: This is an overlay container over the entire banner
-		@extend .overlay;
-		@include narrow-layout { height: $banner-height-narrow; }
-		@include medium-layout { height: $banner-height-medium; }
-		@include widest-layout { height: $banner-height-widest; }
+		@extend .overlay !optional;
+		@include theme-internal.narrow-layout { height: classic-jekyll-theme.$banner-height-narrow; }
+		@include theme-internal.medium-layout { height: classic-jekyll-theme.$banner-height-medium; }
+		@include theme-internal.widest-layout { height: classic-jekyll-theme.$banner-height-widest; }
 		
 		// Display or not
-		@include narrow-layout {
-			@if ($banner-enabled-narrow and ($banner-title-enabled-narrow or $banner-subtitle-enabled-narrow)) { display: flex; }
+		@include theme-internal.narrow-layout {
+			@if (classic-jekyll-theme.$banner-enabled-narrow and (classic-jekyll-theme.$banner-title-enabled-narrow or classic-jekyll-theme.$banner-subtitle-enabled-narrow)) { display: flex; }
 			@else { display: none; }
 		}
-		@include medium-layout {
-			@if ($banner-enabled-medium and ($banner-title-enabled-medium or $banner-subtitle-enabled-medium)) { display: flex; }
+		@include theme-internal.medium-layout {
+			@if (classic-jekyll-theme.$banner-enabled-medium and (classic-jekyll-theme.$banner-title-enabled-medium or classic-jekyll-theme.$banner-subtitle-enabled-medium)) { display: flex; }
 			@else { display: none; }
 		}
-		@include widest-layout {
-			@if ($banner-enabled-widest and ($banner-title-enabled-widest or $banner-subtitle-enabled-widest)) { display: flex; }
+		@include theme-internal.widest-layout {
+			@if (classic-jekyll-theme.$banner-enabled-widest and (classic-jekyll-theme.$banner-title-enabled-widest or classic-jekyll-theme.$banner-subtitle-enabled-widest)) { display: flex; }
 			@else { display: none; }
 		}
 
 		// Ordering
-		@include narrow-layout { z-index: $banner-title-area-z-index-narrow; }
-		@include medium-layout { z-index: $banner-title-area-z-index-medium; }
-		@include widest-layout { z-index: $banner-title-area-z-index-widest; }
+		@include theme-internal.narrow-layout { z-index: classic-jekyll-theme.$banner-title-area-z-index-narrow; }
+		@include theme-internal.medium-layout { z-index: classic-jekyll-theme.$banner-title-area-z-index-medium; }
+		@include theme-internal.widest-layout { z-index: classic-jekyll-theme.$banner-title-area-z-index-widest; }
 
 		// Position the title area
-		@include narrow-layout {			
-			justify-content: $banner-title-area-justify-content-narrow;
-			align-items: $banner-title-area-align-items-narrow;
+		@include theme-internal.narrow-layout {			
+			justify-content: classic-jekyll-theme.$banner-title-area-justify-content-narrow;
+			align-items: classic-jekyll-theme.$banner-title-area-align-items-narrow;
 		}		
-		@include medium-layout {
-			justify-content: $banner-title-area-justify-content-medium;
-			align-items: $banner-title-area-align-items-medium;
+		@include theme-internal.medium-layout {
+			justify-content: classic-jekyll-theme.$banner-title-area-justify-content-medium;
+			align-items: classic-jekyll-theme.$banner-title-area-align-items-medium;
 		}
-		@include widest-layout {
-			justify-content: $banner-title-area-justify-content-widest;
-			align-items: $banner-title-area-align-items-widest;
+		@include theme-internal.widest-layout {
+			justify-content: classic-jekyll-theme.$banner-title-area-justify-content-widest;
+			align-items: classic-jekyll-theme.$banner-title-area-align-items-widest;
 		}
 		
 		.title-area {
 			
 			// Sizing
-			@include narrow-layout {
-				width: $banner-title-area-width-narrow;
-				height: $banner-title-area-height-narrow;
+			@include theme-internal.narrow-layout {
+				width: classic-jekyll-theme.$banner-title-area-width-narrow;
+				height: classic-jekyll-theme.$banner-title-area-height-narrow;
 			}
-			@include medium-layout {
-				width: $banner-title-area-width-medium;
-				height: $banner-title-area-height-medium;
+			@include theme-internal.medium-layout {
+				width: classic-jekyll-theme.$banner-title-area-width-medium;
+				height: classic-jekyll-theme.$banner-title-area-height-medium;
 			}
-			@include widest-layout {
-				width: $banner-title-area-width-widest;
-				height: $banner-title-area-height-widest;
+			@include theme-internal.widest-layout {
+				width: classic-jekyll-theme.$banner-title-area-width-widest;
+				height: classic-jekyll-theme.$banner-title-area-height-widest;
 			}
 
 			// Positioning of title and subtitle
 			& { display: flex; }
-			@include narrow-layout {
-				flex-direction: $banner-title-subtitle-flex-direction-narrow;
-				justify-content: $banner-title-subtitle-justify-content-narrow;
-				align-items: $banner-title-subtitle-align-items-narrow;
+			@include theme-internal.narrow-layout {
+				flex-direction: classic-jekyll-theme.$banner-title-subtitle-flex-direction-narrow;
+				justify-content: classic-jekyll-theme.$banner-title-subtitle-justify-content-narrow;
+				align-items: classic-jekyll-theme.$banner-title-subtitle-align-items-narrow;
 			}
-			@include medium-layout {
-				flex-direction: $banner-title-subtitle-flex-direction-medium;
-				justify-content: $banner-title-subtitle-justify-content-medium;
-				align-items: $banner-title-subtitle-align-items-medium;
+			@include theme-internal.medium-layout {
+				flex-direction: classic-jekyll-theme.$banner-title-subtitle-flex-direction-medium;
+				justify-content: classic-jekyll-theme.$banner-title-subtitle-justify-content-medium;
+				align-items: classic-jekyll-theme.$banner-title-subtitle-align-items-medium;
 			}
-			@include widest-layout {
-				flex-direction: $banner-title-subtitle-flex-direction-widest;
-				justify-content: $banner-title-subtitle-justify-content-widest;
-				align-items: $banner-title-subtitle-align-items-widest;
+			@include theme-internal.widest-layout {
+				flex-direction: classic-jekyll-theme.$banner-title-subtitle-flex-direction-widest;
+				justify-content: classic-jekyll-theme.$banner-title-subtitle-justify-content-widest;
+				align-items: classic-jekyll-theme.$banner-title-subtitle-align-items-widest;
 			}
 
 			// background
-			@include narrow-layout { background: $banner-title-area-background-narrow; }
-			@include medium-layout { background: $banner-title-area-background-medium; }
-			@include widest-layout { background: $banner-title-area-background-widest; }
+			@include theme-internal.narrow-layout { background: classic-jekyll-theme.$banner-title-area-background-narrow; }
+			@include theme-internal.medium-layout { background: classic-jekyll-theme.$banner-title-area-background-medium; }
+			@include theme-internal.widest-layout { background: classic-jekyll-theme.$banner-title-area-background-widest; }
 
 			// Title appearance
-			@include narrow-layout {
-				@if ($banner-title-enabled-narrow) {
+			@include theme-internal.narrow-layout {
+				@if (classic-jekyll-theme.$banner-title-enabled-narrow) {
 	
 					.title p {
 			
@@ -232,11 +235,11 @@
 						margin: 0;
 					
 						// Position fine tuning uses padding
-						padding: $banner-title-padding-narrow;
+						padding: classic-jekyll-theme.$banner-title-padding-narrow;
 					
 						// Appearance of the title
-						font: $banner-title-font-narrow;
-						color: $banner-title-color-narrow;
+						font: classic-jekyll-theme.$banner-title-font-narrow;
+						color: classic-jekyll-theme.$banner-title-color-narrow;
 					}
 					
 				} @else {
@@ -244,8 +247,8 @@
 					.title { display: none; }
 				}
 			}
-			@include medium-layout {
-				@if ($banner-title-enabled-medium) {
+			@include theme-internal.medium-layout {
+				@if (classic-jekyll-theme.$banner-title-enabled-medium) {
 	
 					.title p {
 			
@@ -253,11 +256,11 @@
 						margin: 0;
 					
 						// Position fine tuning uses padding
-						padding: $banner-title-padding-medium;
+						padding: classic-jekyll-theme.$banner-title-padding-medium;
 					
 						// Appearance of the title
-						font: $banner-title-font-medium;
-						color: $banner-title-color-medium;
+						font: classic-jekyll-theme.$banner-title-font-medium;
+						color: classic-jekyll-theme.$banner-title-color-medium;
 					}
 					
 				} @else {
@@ -265,8 +268,8 @@
 					.title { display: none; }
 				}
 			}
-			@include widest-layout {
-				@if ($banner-title-enabled-widest) {
+			@include theme-internal.widest-layout {
+				@if (classic-jekyll-theme.$banner-title-enabled-widest) {
 	
 					.title p {
 			
@@ -274,11 +277,11 @@
 						margin: 0;
 					
 						// Position fine tuning uses padding
-						padding: $banner-title-padding-widest;
+						padding: classic-jekyll-theme.$banner-title-padding-widest;
 					
 						// Appearance of the title
-						font: $banner-title-font-widest;
-						color: $banner-title-color-widest;
+						font: classic-jekyll-theme.$banner-title-font-widest;
+						color: classic-jekyll-theme.$banner-title-color-widest;
 					}
 					
 				} @else {
@@ -288,8 +291,8 @@
 			}
 			
 			// Subtitle appearance
-			@include narrow-layout {
-				@if ($banner-subtitle-enabled-narrow) {
+			@include theme-internal.narrow-layout {
+				@if (classic-jekyll-theme.$banner-subtitle-enabled-narrow) {
 
 					.subtitle p {
 			
@@ -297,11 +300,11 @@
 						margin: 0;
 					
 						// Position fine tuning uses padding
-						padding: $banner-subtitle-padding-narrow;
+						padding: classic-jekyll-theme.$banner-subtitle-padding-narrow;
 					
 						// Appearance of the title
-						font: $banner-subtitle-font-narrow;
-						color: $banner-subtitle-color-narrow;
+						font: classic-jekyll-theme.$banner-subtitle-font-narrow;
+						color: classic-jekyll-theme.$banner-subtitle-color-narrow;
 					}
 				
 				} @else {
@@ -309,8 +312,8 @@
 					.subtitle { display: none; }
 				}
 			}
-			@include medium-layout {
-				@if ($banner-subtitle-enabled-medium) {
+			@include theme-internal.medium-layout {
+				@if (classic-jekyll-theme.$banner-subtitle-enabled-medium) {
 
 					.subtitle p {
 			
@@ -318,11 +321,11 @@
 						margin: 0;
 					
 						// Position fine tuning uses padding
-						padding: $banner-subtitle-padding-medium;
+						padding: classic-jekyll-theme.$banner-subtitle-padding-medium;
 					
 						// Appearance of the title
-						font: $banner-subtitle-font-medium;
-						color: $banner-subtitle-color-medium;
+						font: classic-jekyll-theme.$banner-subtitle-font-medium;
+						color: classic-jekyll-theme.$banner-subtitle-color-medium;
 					}
 				
 				} @else {
@@ -330,8 +333,8 @@
 					.subtitle { display: none; }
 				}
 			}
-			@include widest-layout {
-				@if ($banner-subtitle-enabled-widest) {
+			@include theme-internal.widest-layout {
+				@if (classic-jekyll-theme.$banner-subtitle-enabled-widest) {
 
 					.subtitle p {
 			
@@ -339,11 +342,11 @@
 						margin: 0;
 					
 						// Position fine tuning uses padding
-						padding: $banner-subtitle-padding-widest;
+						padding: classic-jekyll-theme.$banner-subtitle-padding-widest;
 					
 						// Appearance of the title
-						font: $banner-subtitle-font-widest;
-						color: $banner-subtitle-color-widest;
+						font: classic-jekyll-theme.$banner-subtitle-font-widest;
+						color: classic-jekyll-theme.$banner-subtitle-color-widest;
 					}
 				
 				} @else {
@@ -357,44 +360,44 @@
 	.label-container {
 			
 		// The container occupies the entire banner area
-		@extend .overlay;
-		@include narrow-layout { height: $banner-height-narrow; }
-		@include medium-layout { height: $banner-height-medium; }
-		@include widest-layout { height: $banner-height-widest; }
+		@extend .overlay !optional;
+		@include theme-internal.narrow-layout { height: classic-jekyll-theme.$banner-height-narrow; }
+		@include theme-internal.medium-layout { height: classic-jekyll-theme.$banner-height-medium; }
+		@include theme-internal.widest-layout { height: classic-jekyll-theme.$banner-height-widest; }
 
 		// Display or not
-		@include narrow-layout {
-			@if ($banner-enabled-narrow and $banner-menu-symbol-enabled-narrow) { display: flex; }
+		@include theme-internal.narrow-layout {
+			@if (classic-jekyll-theme.$banner-enabled-narrow and classic-jekyll-theme.$banner-menu-symbol-enabled-narrow) { display: flex; }
 			@else { display: none; }
 		}
-		@include medium-layout {
-			@if ($banner-enabled-medium and $banner-menu-symbol-enabled-medium) { display: flex; }
+		@include theme-internal.medium-layout {
+			@if (classic-jekyll-theme.$banner-enabled-medium and classic-jekyll-theme.$banner-menu-symbol-enabled-medium) { display: flex; }
 			@else { display: none; }
 		}
-		@include widest-layout {
-			@if ($banner-enabled-widest and $banner-menu-symbol-enabled-widest) { display: flex; }
+		@include theme-internal.widest-layout {
+			@if (classic-jekyll-theme.$banner-enabled-widest and classic-jekyll-theme.$banner-menu-symbol-enabled-widest) { display: flex; }
 			@else { display: none; }
 		}
 
 		// Position the label (tap area)
 		& { display: flex; }
-		@include narrow-layout {
-			justify-content: $banner-menu-symbol-justify-content-narrow;
-			align-items: $banner-menu-symbol-align-items-narrow;
+		@include theme-internal.narrow-layout {
+			justify-content: classic-jekyll-theme.$banner-menu-symbol-justify-content-narrow;
+			align-items: classic-jekyll-theme.$banner-menu-symbol-align-items-narrow;
 		}
-		@include medium-layout {
-			justify-content: $banner-menu-symbol-justify-content-medium;
-			align-items: $banner-menu-symbol-align-items-medium;
+		@include theme-internal.medium-layout {
+			justify-content: classic-jekyll-theme.$banner-menu-symbol-justify-content-medium;
+			align-items: classic-jekyll-theme.$banner-menu-symbol-align-items-medium;
 		}
-		@include widest-layout {
-			justify-content: $banner-menu-symbol-justify-content-widest;
-			align-items: $banner-menu-symbol-align-items-widest;
+		@include theme-internal.widest-layout {
+			justify-content: classic-jekyll-theme.$banner-menu-symbol-justify-content-widest;
+			align-items: classic-jekyll-theme.$banner-menu-symbol-align-items-widest;
 		}
 
 		// Ordering
-		@include narrow-layout { z-index: $banner-menu-symbol-z-index-narrow; }
-		@include medium-layout { z-index: $banner-menu-symbol-z-index-medium; }
-		@include widest-layout { z-index: $banner-menu-symbol-z-index-widest; }
+		@include theme-internal.narrow-layout { z-index: classic-jekyll-theme.$banner-menu-symbol-z-index-narrow; }
+		@include theme-internal.medium-layout { z-index: classic-jekyll-theme.$banner-menu-symbol-z-index-medium; }
+		@include theme-internal.widest-layout { z-index: classic-jekyll-theme.$banner-menu-symbol-z-index-widest; }
 
 		label {
 
@@ -404,47 +407,47 @@
 			align-items: center;
 
 			// Insert the menu symbol		
-			@include narrow-layout { p:after { content: $banner-menu-symbol-code-narrow; } }
-			@include medium-layout { p:after { content: $banner-menu-symbol-code-medium; } }
-			@include widest-layout { p:after { content: $banner-menu-symbol-code-widest; } }
+			@include theme-internal.narrow-layout { p:after { content: classic-jekyll-theme.$banner-menu-symbol-code-narrow; } }
+			@include theme-internal.medium-layout { p:after { content: classic-jekyll-theme.$banner-menu-symbol-code-medium; } }
+			@include theme-internal.widest-layout { p:after { content: classic-jekyll-theme.$banner-menu-symbol-code-widest; } }
 
 			// Size the tap area 
-			@include narrow-layout { width: $banner-menu-symbol-tap-area-width-narrow; }
-			@include medium-layout { width: $banner-menu-symbol-tap-area-width-medium; }
-			@include widest-layout { width: $banner-menu-symbol-tap-area-width-widest; }
+			@include theme-internal.narrow-layout { width: classic-jekyll-theme.$banner-menu-symbol-tap-area-width-narrow; }
+			@include theme-internal.medium-layout { width: classic-jekyll-theme.$banner-menu-symbol-tap-area-width-medium; }
+			@include theme-internal.widest-layout { width: classic-jekyll-theme.$banner-menu-symbol-tap-area-width-widest; }
 			
-			@include narrow-layout { height: $banner-menu-symbol-tap-area-height-narrow; }
-			@include medium-layout { height: $banner-menu-symbol-tap-area-height-medium; }
-			@include widest-layout { height: $banner-menu-symbol-tap-area-height-widest; }
+			@include theme-internal.narrow-layout { height: classic-jekyll-theme.$banner-menu-symbol-tap-area-height-narrow; }
+			@include theme-internal.medium-layout { height: classic-jekyll-theme.$banner-menu-symbol-tap-area-height-medium; }
+			@include theme-internal.widest-layout { height: classic-jekyll-theme.$banner-menu-symbol-tap-area-height-widest; }
 					
 			// The background
-			@include narrow-layout { background: $banner-menu-symbol-tap-area-background-narrow; }
-			@include medium-layout { background: $banner-menu-symbol-tap-area-background-medium; }
-			@include widest-layout { background: $banner-menu-symbol-tap-area-background-widest; }
+			@include theme-internal.narrow-layout { background: classic-jekyll-theme.$banner-menu-symbol-tap-area-background-narrow; }
+			@include theme-internal.medium-layout { background: classic-jekyll-theme.$banner-menu-symbol-tap-area-background-medium; }
+			@include theme-internal.widest-layout { background: classic-jekyll-theme.$banner-menu-symbol-tap-area-background-widest; }
 					
 			// The border
-			@include narrow-layout { border: $banner-menu-symbol-tap-area-border-narrow; }
-			@include medium-layout { border: $banner-menu-symbol-tap-area-border-medium; }
-			@include widest-layout { border: $banner-menu-symbol-tap-area-border-widest; }
+			@include theme-internal.narrow-layout { border: classic-jekyll-theme.$banner-menu-symbol-tap-area-border-narrow; }
+			@include theme-internal.medium-layout { border: classic-jekyll-theme.$banner-menu-symbol-tap-area-border-medium; }
+			@include theme-internal.widest-layout { border: classic-jekyll-theme.$banner-menu-symbol-tap-area-border-widest; }
 
 			// The label is used as checkbox-label, it should show a pointer when the mouse is above it.
 			& { cursor: pointer; }
 				
 			p {
 				// Fine tune the position of the menu symbol in the tap area
-				@include narrow-layout { padding: $banner-menu-symbol-padding-narrow; }
-				@include medium-layout { padding: $banner-menu-symbol-padding-medium; }
-				@include widest-layout { padding: $banner-menu-symbol-padding-widest; }
+				@include theme-internal.narrow-layout { padding: classic-jekyll-theme.$banner-menu-symbol-padding-narrow; }
+				@include theme-internal.medium-layout { padding: classic-jekyll-theme.$banner-menu-symbol-padding-medium; }
+				@include theme-internal.widest-layout { padding: classic-jekyll-theme.$banner-menu-symbol-padding-widest; }
 				
 				// The font
-				@include narrow-layout { font: $banner-menu-symbol-font-narrow; }
-				@include medium-layout { font: $banner-menu-symbol-font-medium; }
-				@include widest-layout { font: $banner-menu-symbol-font-widest; }
+				@include theme-internal.narrow-layout { font: classic-jekyll-theme.$banner-menu-symbol-font-narrow; }
+				@include theme-internal.medium-layout { font: classic-jekyll-theme.$banner-menu-symbol-font-medium; }
+				@include theme-internal.widest-layout { font: classic-jekyll-theme.$banner-menu-symbol-font-widest; }
 						
 				// The color
-				@include narrow-layout { color: $banner-menu-symbol-color-narrow; }
-				@include medium-layout { color: $banner-menu-symbol-color-medium; }
-				@include widest-layout { color: $banner-menu-symbol-color-widest; }
+				@include theme-internal.narrow-layout { color: classic-jekyll-theme.$banner-menu-symbol-color-narrow; }
+				@include theme-internal.medium-layout { color: classic-jekyll-theme.$banner-menu-symbol-color-medium; }
+				@include theme-internal.widest-layout { color: classic-jekyll-theme.$banner-menu-symbol-color-widest; }
 			}
 		}
 	}		
@@ -455,24 +458,24 @@
 		width: 100%;
 		
 		// Sizing
-		@include narrow-layout { height: $menubar-top-separator-height-narrow; }
-		@include medium-layout { height: $menubar-top-separator-height-medium; }
-		@include widest-layout { height: $menubar-top-separator-height-widest; }
+		@include theme-internal.narrow-layout { height: classic-jekyll-theme.$menubar-top-separator-height-narrow; }
+		@include theme-internal.medium-layout { height: classic-jekyll-theme.$menubar-top-separator-height-medium; }
+		@include theme-internal.widest-layout { height: classic-jekyll-theme.$menubar-top-separator-height-widest; }
 
 		// Appearance
-		@include narrow-layout { background: $menubar-top-separator-background-narrow; }
-		@include medium-layout { background: $menubar-top-separator-background-medium; }
-		@include widest-layout { background: $menubar-top-separator-background-widest; }
+		@include theme-internal.narrow-layout { background: classic-jekyll-theme.$menubar-top-separator-background-narrow; }
+		@include theme-internal.medium-layout { background: classic-jekyll-theme.$menubar-top-separator-background-medium; }
+		@include theme-internal.widest-layout { background: classic-jekyll-theme.$menubar-top-separator-background-widest; }
 
 		// Enable or disable display
-		@include narrow-layout {
-			@if $menubar-top-separator-enabled-narrow { display: block; } @else { display: none; }
+		@include theme-internal.narrow-layout {
+			@if classic-jekyll-theme.$menubar-top-separator-enabled-narrow { display: block; } @else { display: none; }
 		}
-		@include medium-layout {
-			@if $menubar-top-separator-enabled-medium { display: block; } @else { display: none; }
+		@include theme-internal.medium-layout {
+			@if classic-jekyll-theme.$menubar-top-separator-enabled-medium { display: block; } @else { display: none; }
 		}
-		@include widest-layout {
-			@if $menubar-top-separator-enabled-widest { display: block; } @else { display: none; }
+		@include theme-internal.widest-layout {
+			@if classic-jekyll-theme.$menubar-top-separator-enabled-widest { display: block; } @else { display: none; }
 		}
 	}
 		
@@ -482,32 +485,32 @@
 		width: 100%;
 
 		// Sizing
-		@include narrow-layout { height: $menubar-bottom-separator-height-narrow; }
-		@include medium-layout { height: $menubar-bottom-separator-height-medium; }
-		@include widest-layout { height: $menubar-bottom-separator-height-widest; }
+		@include theme-internal.narrow-layout { height: classic-jekyll-theme.$menubar-bottom-separator-height-narrow; }
+		@include theme-internal.medium-layout { height: classic-jekyll-theme.$menubar-bottom-separator-height-medium; }
+		@include theme-internal.widest-layout { height: classic-jekyll-theme.$menubar-bottom-separator-height-widest; }
 
 		// Appearance
-		@include narrow-layout { background: $menubar-bottom-separator-background-narrow; }
-		@include medium-layout { background: $menubar-bottom-separator-background-medium; }
-		@include widest-layout { background: $menubar-bottom-separator-background-widest; }
+		@include theme-internal.narrow-layout { background: classic-jekyll-theme.$menubar-bottom-separator-background-narrow; }
+		@include theme-internal.medium-layout { background: classic-jekyll-theme.$menubar-bottom-separator-background-medium; }
+		@include theme-internal.widest-layout { background: classic-jekyll-theme.$menubar-bottom-separator-background-widest; }
 
 		// Enable or disable display
-		@include narrow-layout {
-			@if $menubar-bottom-separator-enabled-narrow { display: none; } @else { display: none; }
+		@include theme-internal.narrow-layout {
+			@if classic-jekyll-theme.$menubar-bottom-separator-enabled-narrow { display: none; } @else { display: none; }
 		}
-		@include medium-layout {
-			@if $menubar-bottom-separator-enabled-medium { display: block; } @else { display: none; }
+		@include theme-internal.medium-layout {
+			@if classic-jekyll-theme.$menubar-bottom-separator-enabled-medium { display: block; } @else { display: none; }
 		}
-		@include widest-layout {
-			@if $menubar-bottom-separator-enabled-widest { display: block; } @else { display: none; }
+		@include theme-internal.widest-layout {
+			@if classic-jekyll-theme.$menubar-bottom-separator-enabled-widest { display: block; } @else { display: none; }
 		}
 	}
 	
 	.add-to-banner-area-height {
 		width: 100%;
-		@include narrow-layout { height: $add-to-banner-area-height-narrow; }
-		@include medium-layout { height: $add-to-banner-area-height-medium; }
-		@include widest-layout { height: $add-to-banner-area-height-widest; }
+		@include theme-internal.narrow-layout { height: classic-jekyll-theme.$add-to-banner-area-height-narrow; }
+		@include theme-internal.medium-layout { height: classic-jekyll-theme.$add-to-banner-area-height-medium; }
+		@include theme-internal.widest-layout { height: classic-jekyll-theme.$add-to-banner-area-height-widest; }
 	}
 }
 
@@ -541,12 +544,12 @@
 .anchor::before {
 	display: block;
 	content: " ";
-	@include narrow-layout { margin-top: -$anchor-top-fixed-offset-narrow; }
-	@include narrow-layout { height: $anchor-top-fixed-offset-narrow; }
-	@include medium-layout { margin-top: -$anchor-top-fixed-offset-medium; }
-	@include medium-layout { height: $anchor-top-fixed-offset-medium; }
-	@include widest-layout { margin-top: -$anchor-top-fixed-offset-widest; }
-	@include widest-layout { height: $anchor-top-fixed-offset-widest; }
+	@include theme-internal.narrow-layout { margin-top: -(classic-jekyll-theme.$anchor-top-fixed-offset-narrow); }
+	@include theme-internal.narrow-layout { height: classic-jekyll-theme.$anchor-top-fixed-offset-narrow; }
+	@include theme-internal.medium-layout { margin-top: -(classic-jekyll-theme.$anchor-top-fixed-offset-medium); }
+	@include theme-internal.medium-layout { height: classic-jekyll-theme.$anchor-top-fixed-offset-medium; }
+	@include theme-internal.widest-layout { margin-top: -(classic-jekyll-theme.$anchor-top-fixed-offset-widest); }
+	@include theme-internal.widest-layout { height: classic-jekyll-theme.$anchor-top-fixed-offset-widest; }
 	& { visibility: hidden; }
 	& { pointer-events: none; }
 }

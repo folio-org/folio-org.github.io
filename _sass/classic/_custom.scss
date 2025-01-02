@@ -1,3 +1,5 @@
+@use "../classic-jekyll-theme";
+
 // This file contains class definitions for support of page and post layout.
 //
 // ===============================================================
@@ -22,22 +24,22 @@
 // A floating text box on the right hand side.
 .text-boxed-float-right {
 	float: right;
-	font-size: $small-1-font-size;
+	font-size: classic-jekyll-theme.$small-1-font-size;
 	font-style: italic;
 	border: 1px solid lightgray;
-	margin: $vspacing-unit*0.5 0 $vspacing-unit*0.5 $hspacing-unit;
-	padding: 0 $hspacing-unit*0.5;
+	margin: classic-jekyll-theme.$vspacing-unit*0.5 0 classic-jekyll-theme.$vspacing-unit*0.5 classic-jekyll-theme.$hspacing-unit;
+	padding: 0 classic-jekyll-theme.$hspacing-unit*0.5;
 	width: 25%
 }
 
 // A floating text box on the left hand side
 .text-boxed-float-left {
 	float: left;
-	font-size: $small-1-font-size;
+	font-size: classic-jekyll-theme.$small-1-font-size;
 	font-style: italic;
 	border: 1px solid lightgray;
-	margin: $vspacing-unit*0.5 $hspacing-unit $vspacing-unit*0.5 0;
-	padding: 0 $hspacing-unit*0.5;
+	margin: classic-jekyll-theme.$vspacing-unit*0.5 classic-jekyll-theme.$hspacing-unit classic-jekyll-theme.$vspacing-unit*0.5 0;
+	padding: 0 classic-jekyll-theme.$hspacing-unit*0.5;
 	width: 25%
 }
 
@@ -62,7 +64,7 @@
 	display: block;
 	max-width: 40%;
 	float: center;
-	margin: $vspacing-unit $hspacing-unit
+	margin: classic-jekyll-theme.$vspacing-unit classic-jekyll-theme.$hspacing-unit
 }
 
 // An image float right (with text flowing on the left side)
@@ -70,7 +72,7 @@
 	display: block;
 	max-width: 50%;
 	float: right;
-	margin: $vspacing-unit 0 $vspacing-unit $hspacing-unit
+	margin: classic-jekyll-theme.$vspacing-unit 0 classic-jekyll-theme.$vspacing-unit classic-jekyll-theme.$hspacing-unit
 }
 
 // An image float left (with text flowing on the right side)
@@ -78,7 +80,7 @@
 	display: block;
 	max-width: 50%;
 	float: left;
-	margin: $vspacing-unit $hspacing-unit $vspacing-unit 0
+	margin: classic-jekyll-theme.$vspacing-unit classic-jekyll-theme.$hspacing-unit classic-jekyll-theme.$vspacing-unit 0
 }
 
 
@@ -100,7 +102,7 @@
 .cblock {
 	display: block;
 	width: 200px;
-	margin: $vspacing-unit $hspacing-unit;
+	margin: classic-jekyll-theme.$vspacing-unit classic-jekyll-theme.$hspacing-unit;
 }
 
 .cblock-name {
@@ -117,12 +119,12 @@
 
 .cblock-description {
 	text-align: center;
-	font-size: $small-1-font-size;
+	font-size: classic-jekyll-theme.$small-1-font-size;
 }
 
 .cblock-store {
 	text-align: center;
-	font-size: $small-1-font-size;
+	font-size: classic-jekyll-theme.$small-1-font-size;
 }
 
 // ===============================================================

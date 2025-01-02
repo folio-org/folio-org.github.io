@@ -1,13 +1,14 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+@charset "utf-8";
 
 // Set our variables
-@import "folio-base";
+@use "folio-base";
 
 // Import the theme.
 // It will provide its variables and rules.
-@import "classic-jekyll-theme";
+@use "cjt-use";
 
 // Provide our rules.
-@import "folio";
+@use "folio";

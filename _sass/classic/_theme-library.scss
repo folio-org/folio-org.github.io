@@ -1,13 +1,16 @@
+@use "../classic-jekyll-theme";
+@use "theme-internal";
+
 // *********************************************************************************************************************
 // Insets
 // ---------------------------------------------------------------------------------------------------------------------
 // Defines the insets used in the columns and the footer-panel. I.e the empty spaces between text and separators.
 //
 .theme-insets {
-	padding-top: $vspacing-unit;
-	padding-right: $hspacing-unit;
-	padding-bottom: $vspacing-unit;
-	padding-left: $hspacing-unit;
+	padding-top: classic-jekyll-theme.$vspacing-unit;
+	padding-right: classic-jekyll-theme.$hspacing-unit;
+	padding-bottom: classic-jekyll-theme.$vspacing-unit;
+	padding-left: classic-jekyll-theme.$hspacing-unit;
 }
 
 
@@ -35,24 +38,24 @@
 // Can be used in custom html code to enable/disable elements.
 //
 .display-flex-narrow {
-	@include narrow-layout { display: flex; }
-	@include medium-layout { display: none; }
-	@include widest-layout { display: none; }
+	@include theme-internal.narrow-layout { display: flex; }
+	@include theme-internal.medium-layout { display: none; }
+	@include theme-internal.widest-layout { display: none; }
 }
 .display-flex-medium {
-	@include narrow-layout { display: none; }
-	@include medium-layout { display: flex; }
-	@include widest-layout { display: none; }
+	@include theme-internal.narrow-layout { display: none; }
+	@include theme-internal.medium-layout { display: flex; }
+	@include theme-internal.widest-layout { display: none; }
 }
 .display-flex-widest {
-	@include narrow-layout { display: none; }
-	@include medium-layout { display: none; }
-	@include widest-layout { display: flex; }
+	@include theme-internal.narrow-layout { display: none; }
+	@include theme-internal.medium-layout { display: none; }
+	@include theme-internal.widest-layout { display: flex; }
 }
 .display-flex-medium-and-wide {
-	@include narrow-layout { display: none; }
-	@include medium-layout { display: flex; }
-	@include widest-layout { display: flex; }
+	@include theme-internal.narrow-layout { display: none; }
+	@include theme-internal.medium-layout { display: flex; }
+	@include theme-internal.widest-layout { display: flex; }
 }
 
 
@@ -64,22 +67,22 @@
 // Can be used in custom html code to enable/disable elements.
 //
 .display-block-narrow {
-	@include narrow-layout { display: block; }
-	@include medium-layout { display: none; }
-	@include widest-layout { display: none; }
+	@include theme-internal.narrow-layout { display: block; }
+	@include theme-internal.medium-layout { display: none; }
+	@include theme-internal.widest-layout { display: none; }
 }
 .display-block-medium {
-	@include narrow-layout { display: none; }
-	@include medium-layout { display: block; }
-	@include widest-layout { display: none; }
+	@include theme-internal.narrow-layout { display: none; }
+	@include theme-internal.medium-layout { display: block; }
+	@include theme-internal.widest-layout { display: none; }
 }
 .display-block-widest {
-	@include narrow-layout { display: none; }
-	@include medium-layout { display: none; }
-	@include widest-layout { display: block; }
+	@include theme-internal.narrow-layout { display: none; }
+	@include theme-internal.medium-layout { display: none; }
+	@include theme-internal.widest-layout { display: block; }
 }
 .display-block-medium-and-wide {
-	@include narrow-layout { display: none; }
-	@include medium-layout { display: block; }
-	@include widest-layout { display: block; }
+	@include theme-internal.narrow-layout { display: none; }
+	@include theme-internal.medium-layout { display: block; }
+	@include theme-internal.widest-layout { display: block; }
 }

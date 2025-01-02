@@ -1,3 +1,6 @@
+@use "../classic-jekyll-theme";
+@use "theme-internal";
+
 // *********************************************************************************************************************
 // Column panel settings
 // ---------------------------------------------------------------------------------------------------------------------
@@ -9,31 +12,31 @@
 	@extend .theme-insets;	
 
 	// Set the background
-	@include narrow-layout { background: $secondary-column-background-narrow; }
-	@include medium-layout { background: $secondary-column-background-medium; }
-	@include widest-layout { background: $secondary-column-background-widest; }
+	@include theme-internal.narrow-layout { background: classic-jekyll-theme.$secondary-column-background-narrow; }
+	@include theme-internal.medium-layout { background: classic-jekyll-theme.$secondary-column-background-medium; }
+	@include theme-internal.widest-layout { background: classic-jekyll-theme.$secondary-column-background-widest; }
 }
 
 main {
 
 	// Use the theme insets to keep the content of the column away from the edges.
-	@extend .theme-insets;
+	@extend .theme-insets;	
 
 	// Set the background
-	@include narrow-layout { background: $primary-column-background-narrow; }
-	@include medium-layout { background: $primary-column-background-medium; }
-	@include widest-layout { background: $primary-column-background-widest; }
+	@include theme-internal.narrow-layout { background: classic-jekyll-theme.$primary-column-background-narrow; }
+	@include theme-internal.medium-layout { background: classic-jekyll-theme.$primary-column-background-medium; }
+	@include theme-internal.widest-layout { background: classic-jekyll-theme.$primary-column-background-widest; }
 }
 
 .tertiary-column {
 	
 	// Use the theme insets to keep the content of the column away from the edges.
-	@extend .theme-insets;
+	@extend .theme-insets;	
 
 	// Set the background
-	@include narrow-layout { background: $tertiary-column-background-narrow; }
-	@include medium-layout { background: $tertiary-column-background-medium; }
-	@include widest-layout { background: $tertiary-column-background-widest; }
+	@include theme-internal.narrow-layout { background: classic-jekyll-theme.$tertiary-column-background-narrow; }
+	@include theme-internal.medium-layout { background: classic-jekyll-theme.$tertiary-column-background-medium; }
+	@include theme-internal.widest-layout { background: classic-jekyll-theme.$tertiary-column-background-widest; }
 }
 
 // The layout for the column panel is the main driver for the RWD aspects of this theme.
@@ -43,10 +46,10 @@ main {
 	// Layout
 	display: flex;
 	
-	@include narrow-layout {
+	@include theme-internal.narrow-layout {
 	
 		// Background for the entire panel
-		background: $column-panel-background-narrow;
+		background: classic-jekyll-theme.$column-panel-background-narrow;
 	
 		// This layout is column based, i.e. the content is displayed over one another.
 		flex-direction: column;
@@ -64,16 +67,16 @@ main {
 		.secondary-column .vmenu-container { display: none; }
 	}
 	
-	@include medium-layout {
+	@include theme-internal.medium-layout {
 	
 		// Background for the entire panel
-		background: $column-panel-background-medium;
+		background: classic-jekyll-theme.$column-panel-background-medium;
 		
 		// This layout is row based
 		flex-direction: row;
 		
 		// The secondary column uses a fixed witdh and hosts both the secondary and tertiary column content
-		.secondary-column { width: $secondary-column-width; }
+		.secondary-column { width: classic-jekyll-theme.$secondary-column-width; }
 
 		// The primary column can grow
 		.primary-column { flex: 1 1 auto; width: 1px; } // A width must be specified
@@ -85,17 +88,17 @@ main {
 		.primary-column .vmenu-container { display: none; }
 	}
 	
-	@include widest-layout {
+	@include theme-internal.widest-layout {
 	
 		// Background for the entire panel
-		background: $column-panel-background-widest;
+		background: classic-jekyll-theme.$column-panel-background-widest;
 	
 		// This layout is row based
 		flex-direction: row;
 		
 		// The secondary and tertiary columns uses a fixed witdh 
-		.secondary-column { width: $secondary-column-width; }
-		.tertiary-column { width: $tertiary-column-width; }
+		.secondary-column { width: classic-jekyll-theme.$secondary-column-width; }
+		.tertiary-column { width: classic-jekyll-theme.$tertiary-column-width; }
 							
 		// The primary column can grow
 		.primary-column { flex: 1 1 auto; width: 1px; } // A width must be specified
@@ -111,12 +114,12 @@ main {
 
 // The column separator
 .secondary-separator, .tertiary-separator {
-	margin-top: $column-separator-top-spacing;
+	margin-top: classic-jekyll-theme.$column-separator-top-spacing;
 	margin-left: 0;
-	margin-bottom: $column-separator-bottom-spacing;
+	margin-bottom: classic-jekyll-theme.$column-separator-bottom-spacing;
 	margin-right: 0;
-	@include medium-layout { border-right: 1px solid $column-separator-color-medium; }
-	@include widest-layout { border-right: 1px solid $column-separator-color-widest; }
-	@if $column-separator-display { & { display: block; } } @else { display: none; }
+	@include theme-internal.medium-layout { border-right: 1px solid classic-jekyll-theme.$column-separator-color-medium; }
+	@include theme-internal.widest-layout { border-right: 1px solid classic-jekyll-theme.$column-separator-color-widest; }
+	@if classic-jekyll-theme.$column-separator-display { & { display: block; } } @else { display: none; }
 }
 
