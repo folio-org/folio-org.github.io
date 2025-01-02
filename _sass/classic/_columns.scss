@@ -6,10 +6,18 @@
 // ---------------------------------------------------------------------------------------------------------------------
 //
 
+// 2025-01-02 FOLIO-4153: replicated "theme-insets" from _theme-library.scss
+%theme-insets {
+	padding-top: classic-jekyll-theme.$vspacing-unit;
+	padding-right: classic-jekyll-theme.$hspacing-unit;
+	padding-bottom: classic-jekyll-theme.$vspacing-unit;
+	padding-left: classic-jekyll-theme.$hspacing-unit;
+}
+
 .secondary-column {
 	
 	// Use the theme insets to keep the content of the column away from the edges.
-	@extend .theme-insets;	
+	@extend %theme-insets;	
 
 	// Set the background
 	@include theme-internal.narrow-layout { background: classic-jekyll-theme.$secondary-column-background-narrow; }
@@ -20,7 +28,7 @@
 main {
 
 	// Use the theme insets to keep the content of the column away from the edges.
-	@extend .theme-insets;	
+	@extend %theme-insets;	
 
 	// Set the background
 	@include theme-internal.narrow-layout { background: classic-jekyll-theme.$primary-column-background-narrow; }
@@ -31,7 +39,7 @@ main {
 .tertiary-column {
 	
 	// Use the theme insets to keep the content of the column away from the edges.
-	@extend .theme-insets;	
+	@extend %theme-insets;	
 
 	// Set the background
 	@include theme-internal.narrow-layout { background: classic-jekyll-theme.$tertiary-column-background-narrow; }

@@ -3,6 +3,14 @@
 
 // Footer related SCCS
 
+// 2025-01-02 FOLIO-4153: replicated "theme-insets" from _theme-library.scss
+%theme-insets {
+	padding-top: classic-jekyll-theme.$vspacing-unit;
+	padding-right: classic-jekyll-theme.$hspacing-unit;
+	padding-bottom: classic-jekyll-theme.$vspacing-unit;
+	padding-left: classic-jekyll-theme.$hspacing-unit;
+}
+
 // This is the element between the column panel and the footer.
 .footer-separator {
 	@if classic-jekyll-theme.$footer-separator-display { display: block; } @else { display: none; }
@@ -14,7 +22,7 @@
 }
 
 .footer-panel {
-	@extend .theme-insets;	
+	@extend %theme-insets;	
 	text-align: center;	
 	@include theme-internal.narrow-layout {
 		font: classic-jekyll-theme.$footer-font-narrow;

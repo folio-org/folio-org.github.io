@@ -1,6 +1,15 @@
 @use "../classic-jekyll-theme";
 @use "theme-internal";
 
+// 2025-01-02 FOLIO-4153: replicated "overlay" from _theme-library.scss
+%overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
 #banner-menu-symbol {
 
 	// Don't display the checkbox
@@ -74,7 +83,7 @@
 	.icon-container {
 		
 		// Sizing: This is an overlay container over the entire banner
-		@extend .overlay;
+		@extend %overlay;
 		@include theme-internal.narrow-layout { height: classic-jekyll-theme.$banner-height-narrow; }
 		@include theme-internal.medium-layout { height: classic-jekyll-theme.$banner-height-medium; }
 		@include theme-internal.widest-layout { height: classic-jekyll-theme.$banner-height-widest; }
@@ -148,7 +157,7 @@
 	.title-area-container {
 		
 		// Sizing: This is an overlay container over the entire banner
-		@extend .overlay !optional;
+		@extend %overlay;
 		@include theme-internal.narrow-layout { height: classic-jekyll-theme.$banner-height-narrow; }
 		@include theme-internal.medium-layout { height: classic-jekyll-theme.$banner-height-medium; }
 		@include theme-internal.widest-layout { height: classic-jekyll-theme.$banner-height-widest; }
@@ -360,7 +369,7 @@
 	.label-container {
 			
 		// The container occupies the entire banner area
-		@extend .overlay !optional;
+		@extend %overlay;
 		@include theme-internal.narrow-layout { height: classic-jekyll-theme.$banner-height-narrow; }
 		@include theme-internal.medium-layout { height: classic-jekyll-theme.$banner-height-medium; }
 		@include theme-internal.widest-layout { height: classic-jekyll-theme.$banner-height-widest; }
