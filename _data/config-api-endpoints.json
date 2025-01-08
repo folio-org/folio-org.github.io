@@ -10394,7 +10394,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "indices 1.0",
+    "interface": "indices 1.1",
     "methods": "post:operation/createIndices",
     "name": "mod-search",
     "path": "/search/index/indices"
@@ -10402,7 +10402,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "indices 1.0",
+    "interface": "indices 1.1",
     "methods": "post:operation/reindexInstanceRecords",
     "name": "mod-search",
     "path": "/search/index/instance-records/reindex/full"
@@ -10410,7 +10410,15 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "indices 1.0",
+    "interface": "indices 1.1",
+    "methods": "post:operation/reindexFailedMergeRanges",
+    "name": "mod-search",
+    "path": "/search/index/instance-records/reindex/merge/failed"
+  },
+  {
+    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiType": "oas",
+    "interface": "indices 1.1",
     "methods": "get:operation/getReindexStatus",
     "name": "mod-search",
     "path": "/search/index/instance-records/reindex/status"
@@ -10418,7 +10426,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "indices 1.0",
+    "interface": "indices 1.1",
     "methods": "post:operation/reindexUploadInstanceRecords",
     "name": "mod-search",
     "path": "/search/index/instance-records/reindex/upload"
@@ -10426,7 +10434,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "indices 1.0",
+    "interface": "indices 1.1",
     "methods": "post:operation/reindexInventoryRecords",
     "name": "mod-search",
     "path": "/search/index/inventory/reindex"
@@ -10434,7 +10442,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "indices 1.0",
+    "interface": "indices 1.1",
     "methods": "post:operation/updateMappings",
     "name": "mod-search",
     "path": "/search/index/mappings"
@@ -10442,7 +10450,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "indices 1.0",
+    "interface": "indices 1.1",
     "methods": "post:operation/indexRecords",
     "name": "mod-search",
     "path": "/search/index/records"
@@ -10450,7 +10458,7 @@
   {
     "apiDescription": "target/api/openapi/openapi.yaml",
     "apiType": "oas",
-    "interface": "indices 1.0",
+    "interface": "indices 1.1",
     "methods": "put:operation/updateIndexDynamicSettings",
     "name": "mod-search",
     "path": "/search/index/settings"
