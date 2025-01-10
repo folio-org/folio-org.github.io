@@ -5064,6 +5064,14 @@
     "path": "/finance-storage/ledgers/{id}"
   },
   {
+    "apiDescription": "ramls/transaction_totals.raml",
+    "apiType": "raml",
+    "interface": "finance-storage.transaction-totals 1.0",
+    "methods": "get:finance_storage_transaction_totals_get",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/transaction-totals"
+  },
+  {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
     "interface": "finance-storage.transactions 5.0",
@@ -10539,6 +10547,14 @@
     "apiDescription": "openapi/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
+    "methods": "get:operation/getLocales",
+    "name": "mod-serials-management",
+    "path": "/serials-management/locales"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
     "methods": "get:operation/getPredictedPieceSets",
     "name": "mod-serials-management",
     "path": "/serials-management/predictedPieces"
@@ -10630,6 +10646,22 @@
     "methods": "post:operation/draftRuleset",
     "name": "mod-serials-management",
     "path": "/serials-management/rulesets/{uuid}/draft"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "post:operation/replaceAndDeleteRuleset",
+    "name": "mod-serials-management",
+    "path": "/serials-management/rulesets/{uuid}/replaceAndDelete"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "post:operation/replaceAndDeprecateRuleset",
+    "name": "mod-serials-management",
+    "path": "/serials-management/rulesets/{uuid}/replaceAndDeprecate"
   },
   {
     "apiDescription": "openapi/serials-management.yaml",
@@ -11464,7 +11496,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/edge-dcb.yaml",
     "apiType": "oas",
-    "methods": "post:operation/createDCBTransaction",
+    "methods": "post:operation/createDCBTransaction put:operation/updateTransactionDetails",
     "name": "edge-dcb",
     "path": "/transactions/{dcbTransactionId}"
   },
