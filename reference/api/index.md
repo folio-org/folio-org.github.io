@@ -173,8 +173,15 @@ So the documentation does not relate to feature development branches.
 
 ### Versioned API Docs
 
-To find documentation for each software version, amend the URL of each generated document view to add the version number (major.minor).\
-For example [mod-circulation](#mod-circulation), do `mod-circulation/23.1/...`
+To find documentation for each module version, amend the URL of each generated document view to add the version number (major.minor).
+
+For example mod-circulation 23.5.\*:
+* https://s3.amazonaws.com/foliodocs/api/mod-circulation/23.5/r/circulation.html
+* https://s3.amazonaws.com/foliodocs/api/mod-circulation/23.5/p/circulation.html
+
+For example mod-search 3.2.\*:
+* https://s3.amazonaws.com/foliodocs/api/mod-search/3.2/u/mod-search.html
+* https://s3.amazonaws.com/foliodocs/api/mod-search/3.2/s/mod-search.html
 
 ### Explain "views" {#explain-views}
 
