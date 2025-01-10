@@ -436,11 +436,11 @@
     {
       "name": "mod-orders",
       "nameRepo": "mod-orders",
-      "releaseDate": "2024-06-07T11:44:16+00:00",
-      "releaseName": "v12.7.4",
-      "releaseSha": "643a288083092106c33b65d34049550d0f9e5f26",
-      "releaseTag": "v12.7.4",
-      "releaseTarget": "master",
+      "releaseDate": null,
+      "releaseName": null,
+      "releaseSha": null,
+      "releaseTag": null,
+      "releaseTarget": null,
       "version": "12.7.4"
     },
     {
