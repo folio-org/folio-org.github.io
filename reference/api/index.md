@@ -173,15 +173,17 @@ So the documentation does not relate to feature development branches.
 
 ### Versioned API Docs
 
-To find documentation for each module version, amend the URL of each generated document view to add the version number (major.minor).
+To find documentation for each module release version, amend the URL of each generated document view to add the version number (major.minor).
 
 For example mod-circulation 23.5.\*:
-* https://s3.amazonaws.com/foliodocs/api/mod-circulation/23.5/r/circulation.html
-* https://s3.amazonaws.com/foliodocs/api/mod-circulation/23.5/p/circulation.html
+* [https://s3.amazonaws.com/foliodocs/api/mod-circulation/23.5/r/circulation.html](https://s3.amazonaws.com/foliodocs/api/mod-circulation/23.5/r/circulation.html)
+* [https://s3.amazonaws.com/foliodocs/api/mod-circulation/23.5/p/circulation.html](https://s3.amazonaws.com/foliodocs/api/mod-circulation/23.5/p/circulation.html)
+* List of endpoints: [https://s3.amazonaws.com/foliodocs/api/mod-circulation/23.5/config-doc.json](https://s3.amazonaws.com/foliodocs/api/mod-circulation/23.5/config-doc.json)
 
 For example mod-search 3.2.\*:
-* https://s3.amazonaws.com/foliodocs/api/mod-search/3.2/u/mod-search.html
-* https://s3.amazonaws.com/foliodocs/api/mod-search/3.2/s/mod-search.html
+* [https://s3.amazonaws.com/foliodocs/api/mod-search/3.2/u/mod-search.html](https://s3.amazonaws.com/foliodocs/api/mod-search/3.2/u/mod-search.html)
+* [https://s3.amazonaws.com/foliodocs/api/mod-search/3.2/s/mod-search.html](https://s3.amazonaws.com/foliodocs/api/mod-search/3.2/s/mod-search.html)
+* List of endpoints: [https://s3.amazonaws.com/foliodocs/api/mod-search/3.2/config-doc.json](https://s3.amazonaws.com/foliodocs/api/mod-search/3.2/config-doc.json)
 
 ### Explain "views" {#explain-views}
 
