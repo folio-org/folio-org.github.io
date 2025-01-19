@@ -1,0 +1,22 @@
+---
+layout: null
+---
+[
+  {%- assign sortedEndpoints = site.data.config-api-endpoints | sort:"path" -%}
+  {%- assign counter = 0 -%}
+  {%- for endpoint in sortedEndpoints -%}
+    {%- assign counter = counter | plus: 1 -%}
+    {%- assign docId = endpoint.path | append: "-" | append: counter | slugify -%}
+    {
+      "id": "{{ docId }}",
+      "moduleName": "{{ endpoint.name }}",
+      "path": "{{ endpoint.path }}",
+      "interface": "{{ endpoint.interface }}",
+      "methods": "{{ endpoint.methods }}",
+      "apiDescription": "{{ endpoint.apiDescription }}",
+      "apiType": "{{ endpoint.apiType | upcase }}"
+    }
+    {%- unless forloop.last -%},{%- endunless -%}
+  {%- endfor -%}
+]
+
