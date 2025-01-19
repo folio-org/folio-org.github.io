@@ -7,7 +7,7 @@ menuInclude: yes
 menuLink: yes
 menuTopTitle: Search
 menuTopIndex: 100
-menuSubTitle: "Search other"
+menuSubTitle: "Search other places"
 menuSubIndex: 2
 menuSubs:
 -

@@ -7,15 +7,13 @@
   <p>Using <a href="https://github.com/bvaughn/js-search">js-search</a>.</p>
   <p>See its <a href="https://github.com/bvaughn/js-search">assistance notes</a>.</p>
   <p>
-    Using its "PrefixIndexStrategy".
-    So term "cat" is indexed as "c", "ca", and "cat".
+    Using its "AllSubstringsIndexStrategy".
+    So "c", "ca", "cat", "a", "at", and "t" will all match the term "cat".
   </p>
   <p>
-    This search is constrained to dev.folio.org only.
-  </p>
-  <p>
-    A specific set of important <a href="/faqs/where-is-developer-documentation-located/">other</a> documents are also indexed.
-    The search results will show these prepended with "Remote &gt;&gt;".
+    This search is constrained to the
+    <a href="https://github.com/folio-org/folio-org.github.io/tree/master/_data/config-api-endpoints.json">list</a>
+    of API documentation endpoints.
   </p>
 </div>
 <!-- end of include tertiary-column.html -->

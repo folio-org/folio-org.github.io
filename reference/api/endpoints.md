@@ -13,7 +13,7 @@ menuSubIndex: 3
 
 This API documentation is automatically [generated](#gathered-lists) from each repository's API description files.
 
-Use the web browser "Find in page" facility.
+Use the web browser "Find in page" facility to locate items in this table. Also [search endpoints](/search-endpoints/).
 
 Each link in the "API documentation" column goes directly to the relevant entry in the tables of the [API documentation](/reference/api/).
 Each link in the "Methods" column goes directly to that section of the relevant API documentation.
