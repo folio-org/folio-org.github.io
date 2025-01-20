@@ -6,3 +6,5 @@ _site
 .bundle
 tmp/
 vendor
+node_modules
+package-lock.json
