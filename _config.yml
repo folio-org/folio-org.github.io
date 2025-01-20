@@ -26,7 +26,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
 
-exclude: [bin, CONTRIBUTING.md, README.md, tmp, work]
+exclude: [bin, CONTRIBUTING.md, README.md, tmp, work, assets/js/node_modules, assets/js/package-lock.json]
 
 collections:
   faqs:

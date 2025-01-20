@@ -17,8 +17,14 @@ tertiary-column-content: column-2-search.html
   </form>
 </div>
 
+<div id="hits"></div>
+
 <ul id="searchResults"></ul>
 
 <script src="https://cdn.jsdelivr.net/npm/js-search@2.0.1/dist/umd/js-search.min.js"></script>
 <script src="/assets/js/search-dev.js"></script>
+
+## Other information
+
+See [Search other places](/search-other/) for other search and report facilities such as for GitHub, FOLIO Wiki, etc.
 

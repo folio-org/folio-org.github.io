@@ -13,7 +13,7 @@ menuSubIndex: 3
 
 This API documentation is automatically [generated](#gathered-lists) from each repository's API description files.
 
-Use the web browser "Find in page" facility.
+Use the web browser "Find in page" facility to locate items in this table. Also [search endpoints](/search-endpoints/).
 
 Each link in the "API documentation" column goes directly to the relevant entry in the tables of the [API documentation](/reference/api/).
 Each link in the "Methods" column goes directly to that section of the relevant API documentation.
@@ -119,7 +119,7 @@ $("[data-column]").on("click", function () {
 The list of endpoints (also known as "entry-points") is gathered and published during the CI [generation](/reference/api/#generated-during-ci) of each module's API documentation, when there is a merge to their mainline branch.
 A daily Workflow [assembles](/reference/api/#explain-gather-config) the published lists of endpoints.
 
-### Some missing links
+### Some missing method links
 
 For some OpenAPI-based modules, there might be missing links in the "Methods" column.
 That is because their API description has omitted the "`operationId`" property for that method.
