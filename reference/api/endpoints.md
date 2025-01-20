@@ -119,7 +119,7 @@ $("[data-column]").on("click", function () {
 The list of endpoints (also known as "entry-points") is gathered and published during the CI [generation](/reference/api/#generated-during-ci) of each module's API documentation, when there is a merge to their mainline branch.
 A daily Workflow [assembles](/reference/api/#explain-gather-config) the published lists of endpoints.
 
-### Some missing links
+### Some missing method links
 
 For some OpenAPI-based modules, there might be missing links in the "Methods" column.
 That is because their API description has omitted the "`operationId`" property for that method.

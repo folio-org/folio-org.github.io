@@ -52,12 +52,16 @@ $( (searchEndpoints) => {
         let methodsList = "";
         methods.forEach( ( method ) => {
           const opParts = method.split( ":" );
+          let nullNote = "";
+          if  ( opParts[ 1 ] === "null" ) {
+            nullNote = " (missing operationId)"
+          }
           let urlS3 = `${ urlS3Repo }/`;
           if ( result.apiType === "RAML" ) {
             urlS3 += "p/";
           }
           urlS3 += `${ basenameDoc }.html#${ opParts[ 1 ] }`;
-          methodsList += `<li><a href="${ urlS3 }">${ opParts[ 0 ] }</a></li>`;
+          methodsList += `<li><a href="${ urlS3 }">${ opParts[ 0 ] }</a> ${nullNote}</li>`;
         } );
         const appendString = `
           <li> ${ result.path }
