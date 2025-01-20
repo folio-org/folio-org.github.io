@@ -17,6 +17,8 @@ tertiary-column-content: column-2-search.html
   </form>
 </div>
 
+<div id="hits"></div>
+
 <ul id="searchResults"></ul>
 
 <script src="https://cdn.jsdelivr.net/npm/js-search@2.0.1/dist/umd/js-search.min.js"></script>

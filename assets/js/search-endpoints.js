@@ -76,6 +76,7 @@ $( (searchEndpoints) => {
         searchResults.append( appendString );
       } );
     } else {
+      hits.html( `Hits: 0` );
       searchResults.html( "<li>No results found.</li>" );
     }
   }
