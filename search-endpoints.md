@@ -35,7 +35,7 @@ These will be marked in the search results with "(missing operationId)".
 
 Some of these are unimplemented "stub" endpoints (do a search for "stub" to find them).
 
-Others are actual endpoints, but their API description has omitted the "operationId" property for that method.
+Others are actual endpoints, but their API description has omitted the "operationId" property for that method (do a search for "null" to find them).
 
 ### Interfaces
 
