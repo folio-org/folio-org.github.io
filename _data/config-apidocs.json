@@ -483,7 +483,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-circulation-bff",
     "org": "folio-org"
@@ -909,7 +909,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-feesfines",
     "org": "folio-org"
@@ -1137,7 +1137,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-inventory",
     "org": "folio-org"
@@ -1208,7 +1208,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-inventory-storage",
     "org": "folio-org"
