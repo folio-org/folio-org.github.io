@@ -40,7 +40,10 @@ $( (searchEndpoints) => {
     if ( results.length ) {
       searchResults.empty();
       hits.html( `Hits: ${ results.length }` );
-      results.forEach( ( result ) => {
+      const resultsSorted = results.sort(function(a, b) {
+        return a.path.localeCompare(b.path);
+      });
+      resultsSorted.forEach( ( result ) => {
         if ( debug ) { console.log( `Result: ${ result.path }` ); }
         const urlRepo = `${ urlRepoBase }${ result.moduleName }`;
         const urlS3Repo = `${ urlS3Base }${ result.moduleName }`;
