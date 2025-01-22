@@ -1913,7 +1913,7 @@
     "path": "/bl-users/settings/myprofile/password"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "browse 1.4",
     "methods": "get:operation/browseAuthorities",
@@ -1921,7 +1921,7 @@
     "path": "/browse/authorities"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "browse 1.4",
     "methods": "get:operation/browseInstancesByCallNumber",
@@ -1929,7 +1929,7 @@
     "path": "/browse/call-numbers/instances"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "browse 1.4",
     "methods": "get:operation/browseInstancesByClassificationNumber",
@@ -1937,7 +1937,7 @@
     "path": "/browse/classification-numbers/{browseOptionId}/instances"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "browse-config 1.0",
     "methods": "get:operation/getBrowseConfigs",
@@ -1945,7 +1945,7 @@
     "path": "/browse/config/{browseType}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "browse-config 1.0",
     "methods": "put:operation/putBrowseConfig",
@@ -1953,7 +1953,7 @@
     "path": "/browse/config/{browseType}/{browseOptionId}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "browse 1.4",
     "methods": "get:operation/browseInstancesByContributor",
@@ -1961,7 +1961,7 @@
     "path": "/browse/contributors/instances"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "browse 1.4",
     "methods": "get:operation/browseInstancesBySubject",
@@ -10352,7 +10352,7 @@
     "path": "/search-slips/{servicePointId}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "search 1.3",
     "methods": "get:operation/searchAuthorities",
@@ -10360,7 +10360,7 @@
     "path": "/search/authorities"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "search-config 0.2",
     "methods": "get:operation/getAllFeatures post:operation/saveFeatureConfiguration",
@@ -10368,7 +10368,7 @@
     "path": "/search/config/features"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "search-config 0.2",
     "methods": "delete:operation/deleteFeatureConfigurationById put:operation/updateFeatureConfiguration",
@@ -10376,7 +10376,7 @@
     "path": "/search/config/features/{featureId}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "search-config 0.2",
     "methods": "get:operation/getAllLanguageConfigs post:operation/createLanguageConfig",
@@ -10384,7 +10384,7 @@
     "path": "/search/config/languages"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "search-config 0.2",
     "methods": "delete:operation/deleteLanguageConfig put:operation/updateLanguageConfig",
@@ -10392,7 +10392,7 @@
     "path": "/search/config/languages/{code}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "consortium-search 2.1",
     "methods": "post:operation/fetchConsortiumBatchHoldings",
@@ -10400,7 +10400,7 @@
     "path": "/search/consortium/batch/holdings"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "consortium-search 2.1",
     "methods": "post:operation/fetchConsortiumBatchItems",
@@ -10408,7 +10408,7 @@
     "path": "/search/consortium/batch/items"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumCampuses",
@@ -10416,7 +10416,7 @@
     "path": "/search/consortium/campuses"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumHolding",
@@ -10424,7 +10424,7 @@
     "path": "/search/consortium/holding/{id}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumHoldings",
@@ -10432,7 +10432,7 @@
     "path": "/search/consortium/holdings"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumInstitutions",
@@ -10440,7 +10440,7 @@
     "path": "/search/consortium/institutions"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumItem",
@@ -10448,7 +10448,7 @@
     "path": "/search/consortium/item/{id}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumItems",
@@ -10456,7 +10456,7 @@
     "path": "/search/consortium/items"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumLibraries",
@@ -10464,7 +10464,7 @@
     "path": "/search/consortium/libraries"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "consortium-search 2.1",
     "methods": "get:operation/getConsortiumLocations",
@@ -10472,7 +10472,7 @@
     "path": "/search/consortium/locations"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "search 1.3",
     "methods": "get:operation/getHoldingIds",
@@ -10480,7 +10480,7 @@
     "path": "/search/holdings/ids"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "indices 1.1",
     "methods": "post:operation/createIndices",
@@ -10488,7 +10488,7 @@
     "path": "/search/index/indices"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "indices 1.1",
     "methods": "post:operation/reindexInstanceRecords",
@@ -10496,7 +10496,7 @@
     "path": "/search/index/instance-records/reindex/full"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "indices 1.1",
     "methods": "post:operation/reindexFailedMergeRanges",
@@ -10504,7 +10504,7 @@
     "path": "/search/index/instance-records/reindex/merge/failed"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "indices 1.1",
     "methods": "get:operation/getReindexStatus",
@@ -10512,7 +10512,7 @@
     "path": "/search/index/instance-records/reindex/status"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "indices 1.1",
     "methods": "post:operation/reindexUploadInstanceRecords",
@@ -10520,7 +10520,7 @@
     "path": "/search/index/instance-records/reindex/upload"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "indices 1.1",
     "methods": "post:operation/reindexInventoryRecords",
@@ -10528,7 +10528,7 @@
     "path": "/search/index/inventory/reindex"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "indices 1.1",
     "methods": "post:operation/updateMappings",
@@ -10536,7 +10536,7 @@
     "path": "/search/index/mappings"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "indices 1.1",
     "methods": "post:operation/indexRecords",
@@ -10544,7 +10544,7 @@
     "path": "/search/index/records"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "indices 1.1",
     "methods": "put:operation/updateIndexDynamicSettings",
@@ -10552,7 +10552,7 @@
     "path": "/search/index/settings"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "search 1.3",
     "methods": "get:operation/searchInstances",
@@ -10560,7 +10560,7 @@
     "path": "/search/instances"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "search 1.3",
     "methods": "get:operation/getInstanceIds",
@@ -10568,7 +10568,7 @@
     "path": "/search/instances/ids"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "search 1.3",
     "methods": "get:operation/searchLinkedDataHubs",
@@ -10576,7 +10576,7 @@
     "path": "/search/linked-data/hubs"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "search 1.3",
     "methods": "get:operation/searchLinkedDataInstances",
@@ -10584,7 +10584,7 @@
     "path": "/search/linked-data/instances"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "search 1.3",
     "methods": "get:operation/searchLinkedDataWorks",
@@ -10592,7 +10592,7 @@
     "path": "/search/linked-data/works"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "resource-ids-streaming 0.3",
     "methods": "post:operation/submitIdsJob",
@@ -10600,7 +10600,7 @@
     "path": "/search/resources/jobs"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "resource-ids-streaming 0.3",
     "methods": "get:operation/getIdsJob",
@@ -10608,7 +10608,7 @@
     "path": "/search/resources/jobs/{jobId}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "resource-ids-streaming 0.3",
     "methods": "get:operation/getResourceIds",
@@ -10616,7 +10616,7 @@
     "path": "/search/resources/jobs/{jobId}/ids"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
     "interface": "search 1.3",
     "methods": "get:operation/getFacets",
