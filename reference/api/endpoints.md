@@ -142,11 +142,17 @@ Thanks to the [sortable](https://github.com/tofsjonas/sortable), which also assi
 When the API documentation is generated (as explained in the above section [Gathered lists](#gathered-lists)) then the module's set of endpoints is extracted from the API model.
 The set of "pathPattern" is extracted from its ModuleDescriptor.
 If there is a match for the endpoint path, then the "interface" name is recorded.
+If a match could not be determined, then these are marked with "[not found in ModuleDescriptor]".
+
 The correlation is handled via [folio-tools/api-doc](https://github.com/folio-org/folio-tools/blob/master/api-doc/api_doc.py) (search for "interface").
+
+For some repositories (see this page [source-code](https://raw.githubusercontent.com/folio-org/folio-org.github.io/refs/heads/master/reference/api/endpoints.md) "reposNoInterface" for the list) the "interface" is not relevant as these modules do not have a ModuleDescriptor. These are marked with "[not relevant]".
 
 Show the table column "Interface" and sort by that column.
 For example, see the set of modules that implement the "`_timer`" interface.
 
 Sort by the column "API Documentation" and see the interfaces for a particular module, e.g. mod-permissions. Use the web browser “Find in page” facility.
+
+See the explanation at [Search API endpoints](/search-endpoints/#some-missing-method-links) for a technique to find the missing ones.
 
 <div class="folio-spacer-content"></div>
