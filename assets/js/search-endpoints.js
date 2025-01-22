@@ -6,6 +6,7 @@ $( (searchEndpoints) => {
   } )
     .done( ( searchData ) => {
       if ( debug ) { console.log( "Loaded JSON data." ); }
+      const indexCount = $( "#indexCount" );
       idx = new JsSearch.Search( "id" );
       idx.indexStrategy = new JsSearch.AllSubstringsIndexStrategy();
       idx.addIndex( "id" );
@@ -21,8 +22,7 @@ $( (searchEndpoints) => {
       if ( debug ) { console.timeEnd( "Build index" ); }
       const idxCount = searchData.length;
       if ( debug ) { console.log( `Ready: idx: ${ idxCount } items` ); }
-      JsSearch.StopWordsMap.issue = false;
-      JsSearch.StopWordsMap.environment = false;
+      indexCount.html( `Number of items in search index: ${ idxCount }` );
     } )
     .fail( () => {
       console.log( "Error with getting search data." );
@@ -57,7 +57,7 @@ $( (searchEndpoints) => {
           const opParts = method.split( ":" );
           let nullNote = "";
           if  ( opParts[ 1 ] === "null" ) {
-            nullNote = " (missing operationId)"
+            nullNote = " [missing operationId]"
           }
           let urlS3 = `${ urlS3Repo }/`;
           if ( result.apiType === "RAML" ) {

@@ -10,6 +10,10 @@ tertiary-column: present
 tertiary-column-content: column-2-search.html
 ---
 
+## Search input
+
+<div id="indexCount"></div>
+
 <div class="form">
   <form action="get" id="searchDev">
     <input type="text" size="25" id="searchInput" autofocus>
