@@ -26,7 +26,7 @@ See [Further information](#further-information).
 {% assign urlS3Base = "https://s3.amazonaws.com/foliodocs/api/" %}
 {% assign moduleList = "" | split: ',' %}
 {% assign modulesMissingMethod = "" | split: ',' %}
-{% assign reposNoInterface = "okapi,raml,raml-module-builder,folio-spring-base,folio-vertx-lib" | split: ',' %}
+{% assign reposNoInterface = "okapi,raml,raml-module-builder,folio-spring-support,folio-vertx-lib" | split: ',' %}
 {% assign moduleCount = 0 %}
 
 {% for repo in site.data.config-apidocs -%}
@@ -72,8 +72,10 @@ Listed endpoints count: {{ site.data.config-api-endpoints.size }}
   {%- endcapture -%}
   {% assign interface = item.interface | strip %}
   {% if interface == '' %}
-    {% if reposNoInterface contains item.name or item.name contains 'edge-' %}
-      {% assign interface = "[ not relevant ]" %}
+    {% if reposNoInterface contains item.name %}
+      {% assign interface = "[not relevant]" %}
+    {% else %}
+      {% assign interface = "[not found in ModuleDescriptor]" %}
     {% endif %}
   {% endif %}
   <tr>
