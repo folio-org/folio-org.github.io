@@ -8263,6 +8263,22 @@
     "path": "/orders-storage/titles/{id}"
   },
   {
+    "apiDescription": "ramls/wrapper-pieces.raml",
+    "apiType": "raml",
+    "interface": "orders-storage.wrapper-pieces 1.0",
+    "methods": "get:orders_storage_wrapper_pieces_get",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/wrapper-pieces"
+  },
+  {
+    "apiDescription": "ramls/wrapper-pieces.raml",
+    "apiType": "raml",
+    "interface": "orders-storage.wrapper-pieces 1.0",
+    "methods": "get:orders_storage_wrapper_pieces__id__get",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/wrapper-pieces/{id}"
+  },
+  {
     "apiDescription": "ramls/acquisition_method.raml",
     "apiType": "raml",
     "interface": "acquisition-methods 1.0",
@@ -8570,6 +8586,22 @@
     "methods": "get:orders_validate_get post:orders_validate_post",
     "name": "edge-orders",
     "path": "/orders/validate"
+  },
+  {
+    "apiDescription": "ramls/wrapper-pieces.raml",
+    "apiType": "raml",
+    "interface": "wrapper-pieces 1.0",
+    "methods": "get:orders_wrapper_pieces_get",
+    "name": "mod-orders",
+    "path": "/orders/wrapper-pieces"
+  },
+  {
+    "apiDescription": "ramls/wrapper-pieces.raml",
+    "apiType": "raml",
+    "interface": "wrapper-pieces 1.0",
+    "methods": "get:orders_wrapper_pieces__id__get",
+    "name": "mod-orders",
+    "path": "/orders/wrapper-pieces/{id}"
   },
   {
     "apiDescription": "ramls/address.raml",
@@ -10630,6 +10662,22 @@
     "methods": "get:operation/getLocales",
     "name": "mod-serials-management",
     "path": "/serials-management/locales"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "get:operation/getModelRulesets post:operation/postModelRuleset",
+    "name": "mod-serials-management",
+    "path": "/serials-management/modelRulesets"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
+    "methods": "delete:operation/deleteModelRuleset get:operation/getModelRuleset put:operation/putModelRuleset",
+    "name": "mod-serials-management",
+    "path": "/serials-management/modelRulesets/{uuid}"
   },
   {
     "apiDescription": "openapi/serials-management.yaml",
