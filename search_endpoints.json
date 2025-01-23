@@ -3,8 +3,8 @@ layout: null
 ---
 [
   {%- assign sortedEndpoints = site.data.config-api-endpoints | sort:"path" -%}
+  {%- assign reposNoInterface = site.data.repos-no-interface -%}
   {%- assign counter = 0 -%}
-  {%- assign reposNoInterface = "okapi,raml,raml-module-builder,folio-spring-support,folio-vertx-lib" | split: ',' -%}
   {%- for endpoint in sortedEndpoints -%}
     {%- assign counter = counter | plus: 1 -%}
     {%- assign docId = endpoint.path | append: "-" | append: counter | slugify -%}
