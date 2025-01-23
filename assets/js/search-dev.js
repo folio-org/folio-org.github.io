@@ -6,6 +6,7 @@ $( (searchDev) => {
   } )
     .done( ( searchData ) => {
       if ( debug ) { console.log( "Loaded JSON data." ); }
+      const indexCount = $( "#indexCount" );
       idx = new JsSearch.Search( "id" );
       idx.indexStrategy = new JsSearch.PrefixIndexStrategy();
       idx.addIndex( "title" );
@@ -17,8 +18,7 @@ $( (searchDev) => {
       if ( debug ) { console.timeEnd( "Build index" ); }
       const idxCount = searchData.length;
       if ( debug ) { console.log( `Ready: idx: ${ idxCount } items` ); }
-      JsSearch.StopWordsMap.issue = false;
-      JsSearch.StopWordsMap.environment = false;
+      indexCount.html( `Number of items in search index: ${ idxCount }` );
     } )
     .fail( () => {
       console.log( "Error with getting search data." );
