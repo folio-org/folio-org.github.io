@@ -72,7 +72,7 @@ Listed endpoints count: {{ site.data.config-api-endpoints.size }}
   {%- endcapture -%}
   {% assign interface = item.interface | strip %}
   {% if interface == '' %}
-    {% if reposNoInterface contains item.name %}
+    {% if reposNoInterface contains item.name or item.name contains 'edge-' %}
       {% assign interface = "[not relevant]" %}
     {% else %}
       {% assign interface = "[not found in ModuleDescriptor]" %}
@@ -146,7 +146,7 @@ If a match could not be determined, then these are marked with "[not found in Mo
 
 The correlation is handled via [folio-tools/api-doc](https://github.com/folio-org/folio-tools/blob/master/api-doc/api_doc.py) (search for "interface").
 
-For some repositories (see this page [source-code](https://raw.githubusercontent.com/folio-org/folio-org.github.io/refs/heads/master/reference/api/endpoints.md) "reposNoInterface" for the list) the "interface" is not relevant as these modules do not have a ModuleDescriptor. These are marked with "[not relevant]".
+For some repositories (see this page [source-code](https://raw.githubusercontent.com/folio-org/folio-org.github.io/refs/heads/master/reference/api/endpoints.md) "reposNoInterface" for the list) the "interface" is not relevant as these modules do not have a ModuleDescriptor. Also "edge" modules do not provide interfaces. These are marked with "[not relevant]".
 
 Show the table column "Interface" and sort by that column.
 For example, see the set of modules that implement the "`_timer`" interface.
