@@ -1,0 +1,9 @@
+# List of back-end repositories that do have API descriptions, but their module does not provide interfaces.
+# Used by search_endpoints.json and reference/api/endpoints.md to signify "interface: [not relevant".
+---
+folio-query-tool-metadata:
+folio-spring-support:
+folio-vertx-lib:
+okapi:
+raml:
+raml-module-builder:
