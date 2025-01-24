@@ -26,7 +26,7 @@ See [Further information](#further-information).
 {% assign urlS3Base = "https://s3.amazonaws.com/foliodocs/api/" %}
 {% assign moduleList = "" | split: ',' %}
 {% assign modulesMissingMethod = "" | split: ',' %}
-{% assign reposNoInterface = "okapi,raml,raml-module-builder,folio-spring-base,folio-vertx-lib" | split: ',' %}
+{% assign reposNoInterface = site.data.repos-no-interface %}
 {% assign moduleCount = 0 %}
 
 {% for repo in site.data.config-apidocs -%}
@@ -73,7 +73,9 @@ Listed endpoints count: {{ site.data.config-api-endpoints.size }}
   {% assign interface = item.interface | strip %}
   {% if interface == '' %}
     {% if reposNoInterface contains item.name or item.name contains 'edge-' %}
-      {% assign interface = "[ not relevant ]" %}
+      {% assign interface = "[not relevant]" %}
+    {% else %}
+      {% assign interface = "[not found in ModuleDescriptor]" %}
     {% endif %}
   {% endif %}
   <tr>
@@ -124,6 +126,7 @@ A daily Workflow [assembles](/reference/api/#explain-gather-config) the publishe
 For some OpenAPI-based modules, there might be missing links in the "Methods" column.
 That is because their API description has omitted the "`operationId`" property for that method.
 Provide that project a pull-request to fix it.
+See the explanation at [Search API endpoints](/search-endpoints/#some-missing-method-links) for a technique to find these missing ones.
 
 {{ modulesMissingMethod | uniq | join: ", " }}
 
@@ -139,11 +142,17 @@ Thanks to the [sortable](https://github.com/tofsjonas/sortable), which also assi
 When the API documentation is generated (as explained in the above section [Gathered lists](#gathered-lists)) then the module's set of endpoints is extracted from the API model.
 The set of "pathPattern" is extracted from its ModuleDescriptor.
 If there is a match for the endpoint path, then the "interface" name is recorded.
+If a match could not be determined, then these are marked with "[not found in ModuleDescriptor]".
+
 The correlation is handled via [folio-tools/api-doc](https://github.com/folio-org/folio-tools/blob/master/api-doc/api_doc.py) (search for "interface").
+
+For some repositories (see the [list](https://raw.githubusercontent.com/folio-org/folio-org.github.io/refs/heads/master/_data/repos-no-interface.yml)) the "interface" is not relevant as these modules do not have a ModuleDescriptor. Also "edge" modules do not provide interfaces. These are marked with "[not relevant]".
 
 Show the table column "Interface" and sort by that column.
 For example, see the set of modules that implement the "`_timer`" interface.
 
 Sort by the column "API Documentation" and see the interfaces for a particular module, e.g. mod-permissions. Use the web browser “Find in page” facility.
+
+See the explanation at [Search API endpoints](/search-endpoints/#some-missing-method-links) for a technique to find the missing ones.
 
 <div class="folio-spacer-content"></div>

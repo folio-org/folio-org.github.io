@@ -262,7 +262,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "folio-query-tool-metadata",
     "org": "folio-org"
@@ -1025,7 +1025,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-fqm-manager",
     "org": "folio-org"
@@ -1357,7 +1357,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-linked-data",
     "org": "folio-org"
@@ -1545,7 +1545,8 @@
         "ramls/receiving-history.raml",
         "ramls/rollover.raml",
         "ramls/routing-lists.raml",
-        "ramls/titles.raml"
+        "ramls/titles.raml",
+        "ramls/wrapper-pieces.raml"
       ],
       "upload": []
     },
@@ -1553,7 +1554,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-orders",
     "org": "folio-org"
@@ -1582,7 +1583,8 @@
         "ramls/reporting-code.raml",
         "ramls/routing-list.raml",
         "ramls/settings.raml",
-        "ramls/titles.raml"
+        "ramls/titles.raml",
+        "ramls/wrapper-pieces.raml"
       ],
       "upload": []
     },
@@ -1590,7 +1592,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-orders-storage",
     "org": "folio-org"
@@ -1922,7 +1924,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-search",
     "org": "folio-org"
@@ -1956,7 +1958,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-serials-management",
     "org": "folio-org"
@@ -1973,7 +1975,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-settings",
     "org": "folio-org"

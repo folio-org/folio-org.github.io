@@ -3,15 +3,24 @@ layout: null
 ---
 [
   {%- assign sortedEndpoints = site.data.config-api-endpoints | sort:"path" -%}
+  {%- assign reposNoInterface = site.data.repos-no-interface -%}
   {%- assign counter = 0 -%}
   {%- for endpoint in sortedEndpoints -%}
     {%- assign counter = counter | plus: 1 -%}
     {%- assign docId = endpoint.path | append: "-" | append: counter | slugify -%}
+    {%- assign interface = endpoint.interface | strip -%}
+    {%- if interface == '' -%}
+      {%- if reposNoInterface contains endpoint.name or endpoint.name contains 'edge-'-%}
+        {%- assign interface = "[not relevant]" -%}
+      {%- else -%}
+        {%- assign interface = "[not found in ModuleDescriptor]" -%}
+      {%- endif -%}
+    {%- endif -%}
     {
       "id": "{{ docId }}",
       "moduleName": "{{ endpoint.name }}",
       "path": "{{ endpoint.path }}",
-      "interface": "{{ endpoint.interface }}",
+      "interface": "{{ interface }}",
       "methods": "{{ endpoint.methods }}",
       "apiDescription": "{{ endpoint.apiDescription }}",
       "apiType": "{{ endpoint.apiType | upcase }}"
