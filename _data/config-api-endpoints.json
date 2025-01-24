@@ -5722,7 +5722,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-fqm-manager.yaml",
     "apiType": "oas",
-    "interface": "fqm-query 2.0",
+    "interface": "fqm-query 2.1",
     "methods": "post:operation/fqmMigrate",
     "name": "mod-fqm-manager",
     "path": "/fqm/migrate"
@@ -5730,7 +5730,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-fqm-manager.yaml",
     "apiType": "oas",
-    "interface": "fqm-query 2.0",
+    "interface": "fqm-query 2.1",
     "methods": "get:operation/getFqmVersion",
     "name": "mod-fqm-manager",
     "path": "/fqm/version"
@@ -10856,7 +10856,7 @@
   {
     "apiDescription": "src/main/resources/openapi/settings.yaml",
     "apiType": "oas",
-    "interface": "settings 1.0",
+    "interface": "settings 1.1",
     "methods": "get:operation/getSettings post:operation/postSetting",
     "name": "mod-settings",
     "path": "/settings/entries"
@@ -10864,7 +10864,7 @@
   {
     "apiDescription": "src/main/resources/openapi/settings.yaml",
     "apiType": "oas",
-    "interface": "settings 1.0",
+    "interface": "settings 1.1",
     "methods": "delete:operation/deleteSetting get:operation/getSetting put:operation/putSetting",
     "name": "mod-settings",
     "path": "/settings/entries/{id}"
@@ -10872,7 +10872,7 @@
   {
     "apiDescription": "src/main/resources/openapi/settings.yaml",
     "apiType": "oas",
-    "interface": "settings 1.0",
+    "interface": "settings 1.1",
     "methods": "put:operation/uploadSettings",
     "name": "mod-settings",
     "path": "/settings/upload"
