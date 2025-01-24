@@ -262,7 +262,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "folio-query-tool-metadata",
     "org": "folio-org"
@@ -1025,7 +1025,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-fqm-manager",
     "org": "folio-org"
@@ -1357,7 +1357,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-linked-data",
     "org": "folio-org"
@@ -1975,7 +1975,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-settings",
     "org": "folio-org"
