@@ -6910,7 +6910,7 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
-    "interface": "ldp-query 1.2",
+    "interface": "ldp-query 1.4",
     "methods": "get:ldp_config_get",
     "name": "mod-reporting",
     "path": "/ldp/config"
@@ -6926,7 +6926,7 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
-    "interface": "ldp-query 1.2",
+    "interface": "ldp-query 1.4",
     "methods": "get:ldp_config__key__get put:ldp_config__key__put",
     "name": "mod-reporting",
     "path": "/ldp/config/{key}"
@@ -6942,7 +6942,7 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
-    "interface": "ldp-query 1.2",
+    "interface": "ldp-query 1.4",
     "methods": "get:ldp_db_columns_get",
     "name": "mod-reporting",
     "path": "/ldp/db/columns"
@@ -6950,6 +6950,13 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
+    "methods": "get:ldp_db_processes_get",
+    "name": "mod-reporting",
+    "path": "/ldp/db/processes"
+  },
+  {
+    "apiDescription": "ramls/ldp.raml",
+    "apiType": "raml",
     "interface": "ldp-query 1.2",
     "methods": "post:ldp_db_query_post",
     "name": "mod-ldp",
@@ -6958,7 +6965,7 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
-    "interface": "ldp-query 1.2",
+    "interface": "ldp-query 1.4",
     "methods": "post:ldp_db_query_post",
     "name": "mod-reporting",
     "path": "/ldp/db/query"
@@ -6974,7 +6981,7 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
-    "interface": "ldp-query 1.2",
+    "interface": "ldp-query 1.4",
     "methods": "post:ldp_db_reports_post",
     "name": "mod-reporting",
     "path": "/ldp/db/reports"
@@ -6990,10 +6997,24 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
-    "interface": "ldp-query 1.2",
+    "interface": "ldp-query 1.4",
     "methods": "get:ldp_db_tables_get",
     "name": "mod-reporting",
     "path": "/ldp/db/tables"
+  },
+  {
+    "apiDescription": "ramls/ldp.raml",
+    "apiType": "raml",
+    "methods": "get:ldp_db_updates_get",
+    "name": "mod-reporting",
+    "path": "/ldp/db/updates"
+  },
+  {
+    "apiDescription": "ramls/ldp.raml",
+    "apiType": "raml",
+    "methods": "get:ldp_db_version_get",
+    "name": "mod-reporting",
+    "path": "/ldp/db/version"
   },
   {
     "apiDescription": "ramls/licenses.raml",
