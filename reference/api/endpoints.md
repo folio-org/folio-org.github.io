@@ -74,6 +74,8 @@ Listed endpoints count: {{ site.data.config-api-endpoints.size }}
   {% if interface == '' %}
     {% if reposNoInterface contains item.name or item.name contains 'edge-' %}
       {% assign interface = "[not relevant]" %}
+    {%- elsif item.name == 'okapi' -%}
+      {%- assign interface = 'okapi' -%}
     {% else %}
       {% assign interface = "[not found in ModuleDescriptor]" %}
     {% endif %}
