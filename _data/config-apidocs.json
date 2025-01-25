@@ -418,7 +418,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-bulk-operations",
     "org": "folio-org"
@@ -1819,7 +1819,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-reporting",
     "org": "folio-org"
