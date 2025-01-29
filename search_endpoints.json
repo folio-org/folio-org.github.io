@@ -12,6 +12,8 @@ layout: null
     {%- if interface == '' -%}
       {%- if reposNoInterface contains endpoint.name or endpoint.name contains 'edge-'-%}
         {%- assign interface = "[not relevant]" -%}
+      {%- elsif endpoint.name == 'okapi' -%}
+        {%- assign interface = 'okapi' -%}
       {%- else -%}
         {%- assign interface = "[not found in ModuleDescriptor]" -%}
       {%- endif -%}

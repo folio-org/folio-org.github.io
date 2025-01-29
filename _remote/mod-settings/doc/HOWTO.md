@@ -45,13 +45,13 @@ One a scope has been defined, it is laborious and error-prone to change its name
 
 ### 2. Define relevant permissions for the scopes
 
-A scope's only manifestation in a module descriptor is in the permissions that allow user to access keys in that scope. Typically two permissions are defined: 
+A scope's only manifestation in a module descriptor is in the permissions that allow user to access keys in that scope. Typically two permissions are defined:
 
 `mod-settings.global.read.SCOPE` allows a user to read settings in the named scope, and `mod-settings.global.write.SCOPE` allows a user to write settings in the named scope. For example, `mod-settings.global.read.mod-inventory.prefs` allows a user to read settings from the scope `mod-inventory.prefs`. The settings module itself enforces this requirement.
 
 Note that, although these permissions are in the `mod-settings` namespace, they are defined by the client module (e.g. in the present example `mod-inventory`). This is a unique situation in FOLIO, required by the need for `mod-settings` to determine the name of the permission to check when all it knows is the scope and the operation (read or write).
 
-(There are two more pairs of permissions that can be defined for a scope: read and write for "user", meaning a user-specific value of a setting; and for "self", meaning the current user's own user-specific value. These permissions are named `mod-settings.user.read.SCOPE`/`mod-settings.user.read.SCOPE` and `mod-settings.self.read.SCOPE`/`mod-settings.self.read.SCOPE`. These have not yet been used in real code, but are available when needed.)
+(There are two more pairs of permissions that can be defined for a scope: read and write for "users", meaning a user-specific value of a setting for _any_ user; and for "owner", meaning the _current_ user's own user-specific value. These permissions are named `mod-settings.users.read.SCOPE`/`mod-settings.users.write.SCOPE` and `mod-settings.owner.read.SCOPE`/`mod-settings.owner.write.SCOPE`. These have not yet been used in real code, but are available when needed.)
 
 
 ### 3. Assign necessary permissions to users
