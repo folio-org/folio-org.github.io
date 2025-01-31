@@ -8143,7 +8143,7 @@
     "apiDescription": "ramls/pieces-batch.raml",
     "apiType": "raml",
     "interface": "orders-storage.pieces 5.0",
-    "methods": "put:orders_storage_pieces_batch_put",
+    "methods": "post:orders_storage_pieces_batch_post put:orders_storage_pieces_batch_put",
     "name": "mod-orders-storage",
     "path": "/orders-storage/pieces-batch"
   },
@@ -11113,7 +11113,7 @@
     "path": "/source-storage/stream/source-records"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getFieldIndicators post:operation/createFieldLocalIndicator",
@@ -11121,7 +11121,7 @@
     "path": "/specification-storage/fields/{fieldId}/indicators"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getFieldSubfields post:operation/createFieldLocalSubfield",
@@ -11129,7 +11129,7 @@
     "path": "/specification-storage/fields/{fieldId}/subfields"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "delete:operation/deleteField put:operation/updateField",
@@ -11137,7 +11137,7 @@
     "path": "/specification-storage/fields/{id}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "delete:operation/deleteIndicatorCode put:operation/updateIndicatorCode",
@@ -11145,7 +11145,7 @@
     "path": "/specification-storage/indicator-codes/{indicatorCodeId}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "put:operation/updateIndicator",
@@ -11153,7 +11153,7 @@
     "path": "/specification-storage/indicators/{indicatorId}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getIndicatorCodes post:operation/createIndicatorLocalCode",
@@ -11161,7 +11161,7 @@
     "path": "/specification-storage/indicators/{indicatorId}/indicator-codes"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getSpecifications",
@@ -11169,7 +11169,7 @@
     "path": "/specification-storage/specifications"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getSpecification",
@@ -11177,7 +11177,7 @@
     "path": "/specification-storage/specifications/{specificationId}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getSpecificationFields post:operation/createSpecificationLocalField",
@@ -11185,7 +11185,7 @@
     "path": "/specification-storage/specifications/{specificationId}/fields"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getSpecificationRules",
@@ -11193,7 +11193,7 @@
     "path": "/specification-storage/specifications/{specificationId}/rules"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "patch:operation/toggleSpecificationRule",
@@ -11201,7 +11201,7 @@
     "path": "/specification-storage/specifications/{specificationId}/rules/{id}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "post:operation/syncSpecification",
@@ -11209,7 +11209,7 @@
     "path": "/specification-storage/specifications/{specificationId}/sync"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "delete:operation/deleteSubfield put:operation/updateSubfield",
