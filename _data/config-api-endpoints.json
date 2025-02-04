@@ -1202,6 +1202,30 @@
     "path": "/audit-data/{id}"
   },
   {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "interface": "audit-config 1.0",
+    "methods": "get:audit_config_groups_get",
+    "name": "mod-audit",
+    "path": "/audit/config/groups"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "interface": "audit-config 1.0",
+    "methods": "get:audit_config_groups__groupid__settings_get",
+    "name": "mod-audit",
+    "path": "/audit/config/groups/{groupId}/settings"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "interface": "audit-config 1.0",
+    "methods": "put:audit_config_groups__groupid__settings__settingid__put",
+    "name": "mod-audit",
+    "path": "/audit/config/groups/{groupId}/settings/{settingId}"
+  },
+  {
     "apiDescription": "ramls/mod-audit-handlers.raml",
     "apiType": "raml",
     "interface": "audit-data-event-handlers 1.1",
@@ -1465,7 +1489,7 @@
     "path": "/authn/update"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "authority-note-types 1.0",
     "methods": "get:operation/retrieveAuthorityNoteTypes post:operation/createAuthorityNoteType",
@@ -1473,7 +1497,7 @@
     "path": "/authority-note-types"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "authority-note-types 1.0",
     "methods": "delete:operation/deleteAuthorityNoteType get:operation/getAuthorityNoteType put:operation/updateAuthorityNoteType",
@@ -1481,7 +1505,7 @@
     "path": "/authority-note-types/{id}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "authority-source-files 2.2",
     "methods": "get:operation/retrieveAuthoritySourceFiles post:operation/createAuthoritySourceFile",
@@ -1489,7 +1513,7 @@
     "path": "/authority-source-files"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "authority-source-files 2.2",
     "methods": "delete:operation/deleteAuthoritySourceFile get:operation/getAuthoritySourceFile patch:operation/patchAuthoritySourceFile",
@@ -1497,7 +1521,7 @@
     "path": "/authority-source-files/{id}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "authority-source-files 2.2",
     "methods": "post:operation/newAuthoritySourceFileNextHrid",
@@ -1505,7 +1529,7 @@
     "path": "/authority-source-files/{id}/hrid"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "authority-storage 2.2",
     "methods": "get:operation/retrieveAuthorities post:operation/createAuthority",
@@ -1513,7 +1537,7 @@
     "path": "/authority-storage/authorities"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "authority-storage 2.2",
     "methods": "post:operation/createAuthorityBulk",
@@ -1521,7 +1545,7 @@
     "path": "/authority-storage/authorities/bulk"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "authority-storage 2.2",
     "methods": "delete:operation/deleteAuthority get:operation/getAuthority put:operation/updateAuthority",
@@ -1529,7 +1553,7 @@
     "path": "/authority-storage/authorities/{id}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "authority-reindex 0.1",
     "methods": "get:operation/getReindexJobs post:operation/submitReindexJob",
@@ -1537,7 +1561,7 @@
     "path": "/authority-storage/reindex"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "authority-reindex 0.1",
     "methods": "delete:operation/deleteReindexJob get:operation/getReindexJob",
@@ -1971,7 +1995,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.5",
+    "interface": "bulk-operations 1.6",
     "methods": "get:operation/getBulkOperationCollection",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations"
@@ -1987,7 +2011,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.5",
+    "interface": "bulk-operations 1.6",
     "methods": "get:operation/getListUsers",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/list-users"
@@ -1995,7 +2019,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.5",
+    "interface": "bulk-operations 1.6",
     "methods": "post:operation/triggerBulkEditByQuery",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/query"
@@ -2003,7 +2027,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.5",
+    "interface": "bulk-operations 1.6",
     "methods": "post:operation/uploadCsvFile",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/upload"
@@ -2011,7 +2035,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.5",
+    "interface": "bulk-operations 1.6",
     "methods": "get:operation/getListUsedTenants",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/used-tenants/{operationId}"
@@ -2019,7 +2043,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.5",
+    "interface": "bulk-operations 1.6",
     "methods": "get:operation/getBulkOperationById",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}"
@@ -2027,7 +2051,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.5",
+    "interface": "bulk-operations 1.6",
     "methods": "post:operation/cancelOperationById",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/cancel"
@@ -2035,7 +2059,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.5",
+    "interface": "bulk-operations 1.6",
     "methods": "post:operation/postContentUpdates",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/content-update"
@@ -2043,7 +2067,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.5",
+    "interface": "bulk-operations 1.6",
     "methods": "get:operation/downloadFileByOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/download"
@@ -2051,7 +2075,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.5",
+    "interface": "bulk-operations 1.6",
     "methods": "get:operation/getErrorsPreviewByOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/errors"
@@ -2059,7 +2083,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.5",
+    "interface": "bulk-operations 1.6",
     "methods": "delete:operation/deleteFileByNameAndOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/files/{fileName}"
@@ -2067,7 +2091,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.5",
+    "interface": "bulk-operations 1.6",
     "methods": "post:operation/postMarcContentUpdates",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/marc-content-update"
@@ -2075,7 +2099,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.5",
+    "interface": "bulk-operations 1.6",
     "methods": "get:operation/getPreviewByOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/preview"
@@ -2083,7 +2107,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.5",
+    "interface": "bulk-operations 1.6",
     "methods": "post:operation/startBulkOperation",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/start"
@@ -6910,7 +6934,7 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
-    "interface": "ldp-query 1.2",
+    "interface": "ldp-query 1.4",
     "methods": "get:ldp_config_get",
     "name": "mod-reporting",
     "path": "/ldp/config"
@@ -6926,7 +6950,7 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
-    "interface": "ldp-query 1.2",
+    "interface": "ldp-query 1.4",
     "methods": "get:ldp_config__key__get put:ldp_config__key__put",
     "name": "mod-reporting",
     "path": "/ldp/config/{key}"
@@ -6942,7 +6966,7 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
-    "interface": "ldp-query 1.2",
+    "interface": "ldp-query 1.4",
     "methods": "get:ldp_db_columns_get",
     "name": "mod-reporting",
     "path": "/ldp/db/columns"
@@ -6950,6 +6974,13 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
+    "methods": "get:ldp_db_processes_get",
+    "name": "mod-reporting",
+    "path": "/ldp/db/processes"
+  },
+  {
+    "apiDescription": "ramls/ldp.raml",
+    "apiType": "raml",
     "interface": "ldp-query 1.2",
     "methods": "post:ldp_db_query_post",
     "name": "mod-ldp",
@@ -6958,7 +6989,7 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
-    "interface": "ldp-query 1.2",
+    "interface": "ldp-query 1.4",
     "methods": "post:ldp_db_query_post",
     "name": "mod-reporting",
     "path": "/ldp/db/query"
@@ -6974,7 +7005,7 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
-    "interface": "ldp-query 1.2",
+    "interface": "ldp-query 1.4",
     "methods": "post:ldp_db_reports_post",
     "name": "mod-reporting",
     "path": "/ldp/db/reports"
@@ -6990,10 +7021,24 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
-    "interface": "ldp-query 1.2",
+    "interface": "ldp-query 1.4",
     "methods": "get:ldp_db_tables_get",
     "name": "mod-reporting",
     "path": "/ldp/db/tables"
+  },
+  {
+    "apiDescription": "ramls/ldp.raml",
+    "apiType": "raml",
+    "methods": "get:ldp_db_updates_get",
+    "name": "mod-reporting",
+    "path": "/ldp/db/updates"
+  },
+  {
+    "apiDescription": "ramls/ldp.raml",
+    "apiType": "raml",
+    "methods": "get:ldp_db_version_get",
+    "name": "mod-reporting",
+    "path": "/ldp/db/version"
   },
   {
     "apiDescription": "ramls/licenses.raml",
@@ -7100,7 +7145,7 @@
     "path": "/linked-data/resource/{id}/marc"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "instance-authority-linking-rules 1.1",
     "methods": "get:operation/getInstanceAuthorityLinkingRules",
@@ -7108,7 +7153,7 @@
     "path": "/linking-rules/instance-authority"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "instance-authority-linking-rules 1.1",
     "methods": "get:operation/getInstanceAuthorityLinkingRuleById patch:operation/patchInstanceAuthorityLinkingRuleById",
@@ -7116,7 +7161,7 @@
     "path": "/linking-rules/instance-authority/{ruleId}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "instance-authority-links-suggestions 1.2",
     "methods": "post:operation/suggestLinksForMarcRecord",
@@ -7124,7 +7169,7 @@
     "path": "/links-suggestions/marc"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "instance-authority-links 2.1",
     "methods": "post:operation/countLinksByAuthorityIds",
@@ -7132,7 +7177,7 @@
     "path": "/links/authorities/bulk/count"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "instance-authority-links 2.1",
     "methods": "get:operation/getInstanceLinks put:operation/updateInstanceLinks",
@@ -7140,7 +7185,7 @@
     "path": "/links/instances/{instanceId}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "instance-authority-links-statistics 2.0",
     "methods": "get:operation/getAuthorityLinksStats",
@@ -7148,7 +7193,7 @@
     "path": "/links/stats/authority"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "instance-authority-links-statistics 2.0",
     "methods": "get:operation/getLinkedBibUpdateStats",
@@ -8122,7 +8167,7 @@
     "apiDescription": "ramls/pieces-batch.raml",
     "apiType": "raml",
     "interface": "orders-storage.pieces 5.0",
-    "methods": "put:orders_storage_pieces_batch_put",
+    "methods": "post:orders_storage_pieces_batch_post put:orders_storage_pieces_batch_put",
     "name": "mod-orders-storage",
     "path": "/orders-storage/pieces-batch"
   },
@@ -11092,7 +11137,7 @@
     "path": "/source-storage/stream/source-records"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getFieldIndicators post:operation/createFieldLocalIndicator",
@@ -11100,7 +11145,7 @@
     "path": "/specification-storage/fields/{fieldId}/indicators"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getFieldSubfields post:operation/createFieldLocalSubfield",
@@ -11108,7 +11153,7 @@
     "path": "/specification-storage/fields/{fieldId}/subfields"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "delete:operation/deleteField put:operation/updateField",
@@ -11116,7 +11161,7 @@
     "path": "/specification-storage/fields/{id}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "delete:operation/deleteIndicatorCode put:operation/updateIndicatorCode",
@@ -11124,7 +11169,7 @@
     "path": "/specification-storage/indicator-codes/{indicatorCodeId}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "put:operation/updateIndicator",
@@ -11132,7 +11177,7 @@
     "path": "/specification-storage/indicators/{indicatorId}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getIndicatorCodes post:operation/createIndicatorLocalCode",
@@ -11140,7 +11185,7 @@
     "path": "/specification-storage/indicators/{indicatorId}/indicator-codes"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getSpecifications",
@@ -11148,7 +11193,7 @@
     "path": "/specification-storage/specifications"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getSpecification",
@@ -11156,7 +11201,7 @@
     "path": "/specification-storage/specifications/{specificationId}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getSpecificationFields post:operation/createSpecificationLocalField",
@@ -11164,7 +11209,7 @@
     "path": "/specification-storage/specifications/{specificationId}/fields"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "get:operation/getSpecificationRules",
@@ -11172,7 +11217,7 @@
     "path": "/specification-storage/specifications/{specificationId}/rules"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "patch:operation/toggleSpecificationRule",
@@ -11180,7 +11225,7 @@
     "path": "/specification-storage/specifications/{specificationId}/rules/{id}"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "post:operation/syncSpecification",
@@ -11188,7 +11233,7 @@
     "path": "/specification-storage/specifications/{specificationId}/sync"
   },
   {
-    "apiDescription": "target/api/openapi/openapi.yaml",
+    "apiDescription": "target/api/openapi/mod-record-specifications.yaml",
     "apiType": "oas",
     "interface": "specification-storage 1.0",
     "methods": "delete:operation/deleteSubfield put:operation/updateSubfield",

@@ -359,6 +359,7 @@
         "ramls/acquisition-events.raml",
         "ramls/audit-data.raml",
         "ramls/circulation-logs.raml",
+        "ramls/configuration.raml",
         "ramls/mod-audit-handlers.raml"
       ],
       "upload": []
@@ -367,7 +368,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-audit",
     "org": "folio-org"
@@ -418,7 +419,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-bulk-operations",
     "org": "folio-org"
@@ -803,7 +804,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-entities-links",
     "org": "folio-org"
@@ -946,7 +947,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-finance",
     "org": "folio-org"
@@ -981,7 +982,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-finance-storage",
     "org": "folio-org"
@@ -1785,7 +1786,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-record-specifications",
     "org": "folio-org"
@@ -1819,7 +1820,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-reporting",
     "org": "folio-org"
