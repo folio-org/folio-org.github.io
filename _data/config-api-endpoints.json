@@ -1202,6 +1202,30 @@
     "path": "/audit-data/{id}"
   },
   {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "interface": "audit-config 1.0",
+    "methods": "get:audit_config_groups_get",
+    "name": "mod-audit",
+    "path": "/audit/config/groups"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "interface": "audit-config 1.0",
+    "methods": "get:audit_config_groups__groupid__settings_get",
+    "name": "mod-audit",
+    "path": "/audit/config/groups/{groupId}/settings"
+  },
+  {
+    "apiDescription": "ramls/configuration.raml",
+    "apiType": "raml",
+    "interface": "audit-config 1.0",
+    "methods": "put:audit_config_groups__groupid__settings__settingid__put",
+    "name": "mod-audit",
+    "path": "/audit/config/groups/{groupId}/settings/{settingId}"
+  },
+  {
     "apiDescription": "ramls/mod-audit-handlers.raml",
     "apiType": "raml",
     "interface": "audit-data-event-handlers 1.1",

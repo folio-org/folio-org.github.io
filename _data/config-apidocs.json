@@ -359,6 +359,7 @@
         "ramls/acquisition-events.raml",
         "ramls/audit-data.raml",
         "ramls/circulation-logs.raml",
+        "ramls/configuration.raml",
         "ramls/mod-audit-handlers.raml"
       ],
       "upload": []
@@ -367,7 +368,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-audit",
     "org": "folio-org"
