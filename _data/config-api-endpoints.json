@@ -1194,6 +1194,14 @@
     "path": "/audit-data/circulation/logs"
   },
   {
+    "apiDescription": "ramls/inventory-audit.raml",
+    "apiType": "raml",
+    "interface": "audit-inventory 1.0",
+    "methods": "get:audit_data_inventory_instance__entityid__get",
+    "name": "mod-audit",
+    "path": "/audit-data/inventory/instance/{entityId}"
+  },
+  {
     "apiDescription": "ramls/audit-data.raml",
     "apiType": "raml",
     "interface": "audit 1.1",
