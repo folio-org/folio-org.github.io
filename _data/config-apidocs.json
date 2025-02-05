@@ -360,6 +360,7 @@
         "ramls/audit-data.raml",
         "ramls/circulation-logs.raml",
         "ramls/configuration.raml",
+        "ramls/inventory-audit.raml",
         "ramls/mod-audit-handlers.raml"
       ],
       "upload": []
