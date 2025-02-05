@@ -41,8 +41,8 @@ jobs:
 
     - name: Run if changes have been detected
       if: ${{ steps.auto-commit-action.outputs.changes_detected == 'true' }}
-      run: echo "Changes were committed."
+      run: echo "Changes to _data/interfaces.jsonl were committed." | tee -a $GITHUB_STEP_SUMMARY
 
     - name: Run if no changes have been detected
       if: ${{ steps.auto-commit-action.outputs.changes_detected == 'false' }}
-      run: echo "There were no changes."
+      run: echo "There were no changes to _data/interfaces.jsonl" | tee -a $GITHUB_STEP_SUMMARY
