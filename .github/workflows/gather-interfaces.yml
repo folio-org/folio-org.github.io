@@ -1,0 +1,48 @@
+name: gather-interfaces
+
+# Obtain latest ModuleDescriptors from the Registry.
+# Gather interface declarations: provided, required, optional.
+# Generate JSONL output.
+# If changes then commit to branch master.
+
+on:
+  schedule:
+    - cron: '20 * * * *'
+  workflow_dispatch:
+
+jobs:
+  gather-interfaces:
+    name: Gather and commit
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.PAT_PUSH }}
+
+    - name: Setup python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+        architecture: 'x64'
+
+    - name: Run script
+      run: |
+        python .github/workflows/gather-interfaces/gather_interfaces.py \
+          --output-file _data/interfaces.jsonl --loglevel info
+
+    - name: Commit changes, if any
+      id: auto-commit-action
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: Apply automatic changes
+        branch: master
+        file_pattern: _data/interfaces.jsonl
+
+    - name: Run if changes have been detected
+      if: ${{ steps.auto-commit-action.outputs.changes_detected == 'true' }}
+      run: echo "Changes were committed."
+
+    - name: Run if no changes have been detected
+      if: ${{ steps.auto-commit-action.outputs.changes_detected == 'false' }}
+      run: echo "There were no changes."
