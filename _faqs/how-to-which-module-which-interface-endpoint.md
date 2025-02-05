@@ -14,6 +14,8 @@ Techniques for gathering and navigating the relevant information are under devel
 
 There is the set of [API documentation](/reference/api/), and the associated list of [endpoints](/reference/api/endpoints/), which is automatically generated from each separate back-end module's API description files and JSON Schemas.
 
+Also utilise the [Search API endpoints](/search-endpoints/) facility.
+
 ## Registry of ModuleDescriptors
 
 Use the FOLIO Registry to search for modules that provide or require certain interfaces.
