@@ -33,7 +33,7 @@
 {"id": "folio_circulation-log-5.0.109000000515", "optional": ["data-export-spring 1.0 2.0"], "provides": [], "requires": ["circulation-logs 1.2", "service-points 3.3"]}
 {"id": "folio_claims-1.0.109900000000131", "optional": [], "provides": [], "requires": ["acquisitions-units 1.1", "configuration 2.0", "contributor-types 2.0", "holdings-storage 8.0", "location-units 2.0", "locations 3.0", "material-types 2.2", "order-lines 3.0", "orders 12.0", "orders-storage.settings 1.0", "organizations.organizations 1.0", "pieces 3.1", "pieces.send-claims 1.0", "search 1.0", "titles 1.2", "users 16.0"]}
 {"id": "folio_consortia-settings-2.0.2090000001354", "optional": [], "provides": [], "requires": ["consortia 1.0", "data-export 5.0", "orders-storage.settings 1.0", "permissions 5.6", "source-manager-job-executions 3.2"]}
-{"id": "folio_courses-6.1.109000000531", "optional": [], "provides": [], "requires": ["copyright-status-storage 0.1", "course-reserves-storage 0.2", "course-type-storage 0.1", "department-storage 0.1", "item-storage 7.1 8.0 9.0 10.0", "loan-types 2.2", "locations 3.0", "processing-status-storage 0.1", "role-storage 0.1", "term-storage 0.1"]}
+{"id": "folio_courses-6.1.109000000541", "optional": [], "provides": [], "requires": ["copyright-status-storage 0.1", "course-reserves-storage 0.2", "course-type-storage 0.1", "department-storage 0.1", "item-storage 7.1 8.0 9.0 10.0", "loan-types 2.2", "locations 3.0", "processing-status-storage 0.1", "role-storage 0.1", "term-storage 0.1"]}
 {"id": "folio_dashboard-6.2.109900000000118", "optional": [], "provides": [], "requires": ["servint 4.0"]}
 {"id": "folio_data-export-6.2.1090000001112", "optional": [], "provides": [], "requires": ["data-export 5.0"]}
 {"id": "folio_data-import-8.0.4090000002962", "optional": [], "provides": [], "requires": ["data-import 3.2", "data-import-converter-storage 1.5", "source-manager-job-executions 3.4"]}
@@ -57,7 +57,7 @@
 {"id": "folio_items-1.11.100023", "optional": [], "provides": [], "requires": ["inventory 5.0", "loan-types 2.0", "material-types 2.0"]}
 {"id": "folio_jest-config-stripes-2.1.10990000000011", "optional": [], "provides": [], "requires": []}
 {"id": "folio_ld-folio-wrapper-1.2.109900000000160", "optional": [], "provides": [], "requires": ["linked-data 1.0", "search 1.3"]}
-{"id": "folio_ldp-2.4.109000000687", "optional": [], "provides": [], "requires": ["ldp-query 1.2", "settings 1.0"]}
+{"id": "folio_ldp-2.4.1099000000003", "optional": [], "provides": [], "requires": ["ldp-query 1.2", "settings 1.0"]}
 {"id": "folio_licenses-11.2.109900000000100", "optional": ["organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["licenses 6.0"]}
 {"id": "folio_linked-data-1.0.109900000000481", "optional": [], "provides": [], "requires": []}
 {"id": "folio_lists-3.1.609900000000740", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0"]}
