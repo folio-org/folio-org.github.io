@@ -120,7 +120,7 @@
 {"id": "folio_stripes-inventory-components-2.0.109000000574", "optional": [], "provides": [], "requires": ["instance-date-types 1.0", "settings 1.0"]}
 {"id": "folio_stripes-marc-components-1.1.10990000000038", "optional": [], "provides": [], "requires": ["instance-authority-linking-rules 1.1"]}
 {"id": "folio_stripes-registry-1.0.100011", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-smart-components-10.0.109900000000278", "optional": ["configuration 2.0", "remote-storage-mappings 1.0 2.0", "settings 1.0", "users 16.1"], "provides": [], "requires": ["notes 2.0 3.0 4.0", "password-validator 1.0", "tags 1.0"]}
+{"id": "folio_stripes-smart-components-10.0.109900000000285", "optional": ["configuration 2.0", "remote-storage-mappings 1.0 2.0", "settings 1.0", "users 16.1"], "provides": [], "requires": ["notes 2.0 3.0 4.0", "password-validator 1.0", "tags 1.0"]}
 {"id": "folio_stripes-template-editor-3.4.10990000000019", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-testing-4.2.1000107", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-ui-3.0.10990000000014", "optional": [], "provides": [], "requires": []}
