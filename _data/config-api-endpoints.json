@@ -8533,6 +8533,14 @@
     "apiDescription": "ramls/pieces-batch.raml",
     "apiType": "raml",
     "interface": "pieces 3.1",
+    "methods": "post:orders_pieces_batch_post",
+    "name": "mod-orders",
+    "path": "/orders/pieces-batch"
+  },
+  {
+    "apiDescription": "ramls/pieces-batch.raml",
+    "apiType": "raml",
+    "interface": "pieces 3.1",
     "methods": "put:orders_pieces_batch_status_put",
     "name": "mod-orders",
     "path": "/orders/pieces-batch/status"
