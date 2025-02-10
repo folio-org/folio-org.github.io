@@ -2116,7 +2116,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-users",
     "org": "folio-org"
