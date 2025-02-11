@@ -330,7 +330,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mgr-tenant-entitlements",
     "org": "folio-org"
@@ -1872,7 +1872,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.6"
     },
     "name": "mod-roles-keycloak",
     "org": "folio-org"
