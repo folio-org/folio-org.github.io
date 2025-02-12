@@ -1197,6 +1197,14 @@
     "apiDescription": "ramls/inventory-audit.raml",
     "apiType": "raml",
     "interface": "audit-inventory 1.0",
+    "methods": "get:audit_data_inventory_holdings__entityid__get",
+    "name": "mod-audit",
+    "path": "/audit-data/inventory/holdings/{entityId}"
+  },
+  {
+    "apiDescription": "ramls/inventory-audit.raml",
+    "apiType": "raml",
+    "interface": "audit-inventory 1.0",
     "methods": "get:audit_data_inventory_instance__entityid__get",
     "name": "mod-audit",
     "path": "/audit-data/inventory/instance/{entityId}"
@@ -1947,7 +1955,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.4",
+    "interface": "browse 1.5",
     "methods": "get:operation/browseAuthorities",
     "name": "mod-search",
     "path": "/browse/authorities"
@@ -1955,15 +1963,23 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.4",
-    "methods": "get:operation/browseInstancesByCallNumber",
+    "interface": "browse 1.5",
+    "methods": "get:operation/browseInstancesByCallNumberLegacy",
     "name": "mod-search",
     "path": "/browse/call-numbers/instances"
   },
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.4",
+    "interface": "browse 1.5",
+    "methods": "get:operation/browseInstancesByCallNumber",
+    "name": "mod-search",
+    "path": "/browse/call-numbers/{browseOptionId}/instances"
+  },
+  {
+    "apiDescription": "target/api/openapi/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "browse 1.5",
     "methods": "get:operation/browseInstancesByClassificationNumber",
     "name": "mod-search",
     "path": "/browse/classification-numbers/{browseOptionId}/instances"
@@ -1987,7 +2003,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.4",
+    "interface": "browse 1.5",
     "methods": "get:operation/browseInstancesByContributor",
     "name": "mod-search",
     "path": "/browse/contributors/instances"
@@ -1995,7 +2011,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.4",
+    "interface": "browse 1.5",
     "methods": "get:operation/browseInstancesBySubject",
     "name": "mod-search",
     "path": "/browse/subjects/instances"
@@ -3092,7 +3108,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
     "apiType": "oas",
-    "interface": "consortia 1.0",
+    "interface": "consortia 1.1",
     "methods": "get:operation/getConsortiumCollection post:operation/saveConsortium",
     "name": "mod-consortia-keycloak",
     "path": "/consortia"
@@ -3108,8 +3124,8 @@
   {
     "apiDescription": "src/main/resources/swagger.api/consortia_configuration.yaml",
     "apiType": "oas",
-    "interface": "consortia 1.0",
-    "methods": "get:operation/getConfiguration post:operation/saveConfiguration",
+    "interface": "consortia 1.1",
+    "methods": "delete:operation/deleteConfiguration get:operation/getConfiguration post:operation/saveConfiguration",
     "name": "mod-consortia-keycloak",
     "path": "/consortia-configuration"
   },
@@ -3124,7 +3140,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
     "apiType": "oas",
-    "interface": "consortia 1.0",
+    "interface": "consortia 1.1",
     "methods": "get:operation/getConsortium put:operation/updateConsortium",
     "name": "mod-consortia-keycloak",
     "path": "/consortia/{consortiumId}"
@@ -4428,7 +4444,7 @@
     "apiDescription": "src/main/resources/swagger.api/mgr-tenant-entitlements.yaml",
     "apiType": "oas",
     "interface": "entitlements 1.0",
-    "methods": "delete:operation/delete get:operation/findByQuery post:operation/create put:operation/upgrade",
+    "methods": "delete:operation/delete get:operation/findByQueryOrTenantName post:operation/create put:operation/upgrade",
     "name": "mgr-tenant-entitlements",
     "path": "/entitlements"
   },
@@ -4447,14 +4463,6 @@
     "methods": "post:operation/validate",
     "name": "mgr-tenant-entitlements",
     "path": "/entitlements/validate"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mgr-tenant-entitlements.yaml",
-    "apiType": "oas",
-    "interface": "entitlements 1.0",
-    "methods": "get:operation/findEntitlementsByTenantId",
-    "name": "mgr-tenant-entitlements",
-    "path": "/entitlements/{tenantId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mgr-tenant-entitlements.yaml",
