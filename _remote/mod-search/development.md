@@ -2,6 +2,118 @@
 layout: null
 ---
 
+## Local Development Setup Using Docker Compose for mod-search Module
+
+This guide will walk you through setting up your local development environment for the `mod-search` module using Docker Compose. 
+It includes setting up various services like API mock servers, OpenSearch, Kafka, PostgreSQL, and their respective UIs to aid during development.
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed:
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+Make sure your [.env file](docker/.env) includes the necessary variables: `DB_USERNAME`, `DB_PASSWORD`, `DB_DATABASE`, `PGADMIN_PORT`, `PGADMIN_DEFAULT_EMAIL`, and `PGADMIN_DEFAULT_PASSWORD`.
+
+### Setup Environment
+
+1. **Start Services**
+
+   Navigate to the docker folder in the project and execute:
+   ```shell
+   docker compose -f docker/docker-compose.yml up -d
+   ```
+
+2. **Start the mod-search Application**
+   
+   First of all the application should be packaged:
+   ```shell
+      mvn clean package
+   ```
+
+   To run the `mod-search` application, you have two options:
+    - **Build and Run the Docker Image:**
+      ```shell
+      docker build -t dev.folio/mod-search .
+      docker run -p 8081:8081 -e "DB_HOST=postgres" -e "KAFKA_HOST=kafka" -e "ELASTICSEARCH_URL=http://elasticsearch:9200" dev.folio/mod-search
+      ```
+    - **Run the Application Directly:** You can also run the application directly if your development environment is set up with the necessary Java runtime. Execute the following command from the root of your project:
+      ```shell
+      java -jar target/mod-search-fat.jar
+      ```
+
+3. **Initialize Environment**
+
+   After starting the services and the mod-search application, invoke the following CURL command to post a tenant which will help in bringing up Kafka listeners and get indices created:
+   ```shell
+   curl --location --request POST 'http://localhost:8081/_/tenant' \
+   --header 'Content-Type: application/json' \
+   --header 'x-okapi-tenant: test_tenant' \
+   --header 'x-okapi-url: http://localhost:9130' \
+   --data-raw '{
+     "module_to": "mod-search"
+   }'
+   ```
+   You can check which tenants are enabled by wiremock in the file located at `src/test/resources/mappings/user-tenants.json`.
+
+4. **Consortium Support for Local Environment Testing**
+
+   Consortium feature is defined automatically by calling the `/user-tenants` endpoint as outlined in the following CURL requests:
+    - **To enable the consortium feature:**
+      ```shell
+      curl --location --request POST 'http://localhost:8081/_/tenant' \
+      --header 'Content-Type: application/json' \
+      --header 'x-okapi-tenant: consortium' \
+      --header 'x-okapi-url: http://localhost:9130' \
+      --data-raw '{
+        "module_to": "mod-search",
+        "parameters": [
+          {
+            "key": "centralTenantId",
+            "value": "consortium"
+          }
+        ]
+      }'
+      ```
+
+    - **Enable member tenant:**
+      ```shell
+      curl --location --request POST 'http://localhost:8081/_/tenant' \
+      --header 'Content-Type: application/json' \
+      --header 'x-okapi-tenant: member_tenant' \
+      --header 'x-okapi-url: http://localhost:9130' \
+      --data-raw '{
+        "module_to": "mod-search",
+        "parameters": [
+          {
+            "key": "centralTenantId",
+            "value": "consortium"
+          }
+        ]
+      }'
+      ```
+      
+### Access Services
+
+- **API Mock Server**: http://localhost:9130
+- **OpenSearch Dashboard**: http://localhost:5601
+- **Kafka UI**: http://localhost:8080
+- **PgAdmin**: http://localhost:5050
+
+### Monitoring and Logs
+
+To monitor the logs for any of the services:
+```
+docker-compose logs [service_name]
+```
+
+### Stopping Services
+
+To stop and remove all containers associated with the compose file:
+```shell
+docker compose -f docker/docker-compose.yml down
+```
+
 ## Overview
 
 `mod-search` is based on metadata-driven approach. It means that resource description is specified using JSON file and
@@ -48,7 +160,7 @@ the [full-text queries](https://www.elastic.co/guide/en/elasticsearch/reference/
 |:--------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | searchTypes         | List of search types that are supported for the current field. Allowed values: `facet`, `filter`, `sort`                                                                                                                                                                                                                                                                                                                                                   |
 | searchAliases       | List of aliases that can be used as a field name in the CQL search query. It can be used to combine several fields together during the search. For example, a query `keyword all title` combines for instance record following fields - `title`, `alternativeTitles.alternativeTitle`,  `indexTitle`, `identifiers.value`, `contributors.name`<br/>Other way of using it - is to rename field keeping the backward compatibility without required reindex. |
-| index               | Reference to the Elasticsearch mappings that are specified in [index-field-types](../src/main/resources/elasticsearch/index-field-types.json)                                                                                                                                                                                                                                                                                                              |
+| index               | Reference to the Elasticsearch mappings that are specified in [index-field-types](src/main/resources/elasticsearch/index-field-types.json)                                                                                                                                                                                                                                                                                                                 |
 | showInResponse      | Marks field to be returned during the search operation. `mod-search` adds to the Elasticsearch query all marked field paths. See also: [Source filtering](https://www.elastic.co/guide/en/elasticsearch/reference/master/search-fields.html#source-filtering)                                                                                                                                                                                              |
 | searchTermProcessor | Search term processor, which pre-processes incoming value from CQL query for the search request.                                                                                                                                                                                                                                                                                                                                                           |
 | mappings            | Elasticsearch fields mappings. It can contain new field mapping or can enrich referenced mappings, that comes from `index-field-types`                                                                                                                                                                                                                                                                                                                     |
@@ -256,76 +368,3 @@ assertThatThrownBy(() -> service.doExceptionalOperation())
 
 The module uses [Testcontainers](https://www.testcontainers.org/) to run Elasticsearch, Apache Kafka and PostgreSQL
 in embedded mode. It is required to have Docker installed and available on the host where the tests are executed.
-
-### Local environment testing
-Navigate to the docker folder in the project and run `docker-compose up`.
-This will build local mod-search image and bring it up along with all necessary infrastructure:
- - elasticsearch along with dashboards (kibana analogue from opensearch)
- - kafka along with zookeeper
- - postgres
- - wiremock server for mocking external api calls (for example authorization)
-
-Then, you should invoke
-```shell
-curl --location --request POST 'http://localhost:8081/_/tenant' \
---header 'Content-Type: application/json' \
---header 'x-okapi-tenant: test_tenant' \
---header 'x-okapi-url: http://api-mock:8080' \
---data-raw '{
-  "module_to": "mod-search-$version$",
-  "purge": "false"
-}
-```
-to post some tenant in order to bring up kafka listeners and get indices created.
-You can check which tenants enabled by wiremock in the `src/test/resources/mappings/user-tenants.json`
-
-To rebuild mod-search image you should:
- - bring down existing containers by running `docker-compose down`
- - run `docker-compose build mod-search` to build new mod-search image
- - run `docker-compose up` to bring up infrastructure
-
-Hosts/ports of containers to access functionality:
- - `http://localhost:5601/` - dashboards UI for elastic monitoring, data modification through dev console
- - `localhost` - host, `5010` - port for remote JVM debug
- - `http://localhost:8081` - for calling mod-search REST api. Note that header `x-okapi-url: http://api-mock:8080` should be added to request for apis that take okapi url from headers
- - `localhost:29092` - for kafka interaction. If you are sending messages to kafka from java application with `spring-kafka` then this host shoulb be added to `spring.kafka.bootstrap-servers` property of `application.yml`
-
-### Consortium support for Local environment testing
-Consortium feature is defined automatically at runtime by calling /user-tenants endpoint.
-Consortium feature on module enable is defined by 'centralTenantId' tenant parameter.
-
-Invoke the following
-```shell
-curl --location --request POST 'http://localhost:8081/_/tenant' \
---header 'Content-Type: application/json' \
---header 'x-okapi-tenant: consortium' \
---header 'x-okapi-url: http://api-mock:8080' \
---data-raw '{
-  "module_to": "mod-search-$version$",
-  "parameters": [
-    {
-      "key": "centralTenantId",
-      "value": "consortium"
-    }
-  ]
-}
-```
-
-Then execute the following to enable `member tenant`
-```shell
-curl --location --request POST 'http://localhost:8081/_/tenant' \
---header 'Content-Type: application/json' \
---header 'x-okapi-tenant: member_tenant' \
---header 'x-okapi-url: http://api-mock:8080' \
---data-raw '{
-  "module_to": "mod-search-$version$",
-  "parameters": [
-    {
-      "key": "centralTenantId",
-      "value": "consortium"
-    }
-  ]
-}
-```
-Consider that `tenantParameters` like `loadReference` and `loadSample` won't work because `loadReferenceData`
-method is not implemented in the `SearchTenantService` yet.
