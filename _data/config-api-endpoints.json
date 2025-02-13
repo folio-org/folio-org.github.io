@@ -542,27 +542,6 @@
     "path": "/_self"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getAccessions post:operation/postAccession",
-    "name": "mod-remote-storage",
-    "path": "/accessions"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/setAccessionedByBarcode",
-    "name": "mod-remote-storage",
-    "path": "/accessions/barcode/{barcode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/setAccessionedById",
-    "name": "mod-remote-storage",
-    "path": "/accessions/id/{accessionId}"
-  },
-  {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
     "interface": "feesfines 19.1",
@@ -3068,13 +3047,6 @@
     "path": "/configuration"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getConfigurations post:operation/postConfiguration",
-    "name": "mod-remote-storage",
-    "path": "/configurations"
-  },
-  {
     "apiDescription": "ramls/configuration/config.raml",
     "apiType": "raml",
     "interface": "configuration 2.0",
@@ -3097,13 +3069,6 @@
     "methods": "delete:configurations_entries__entryid__delete get:configurations_entries__entryid__get put:configurations_entries__entryid__put",
     "name": "mod-configuration",
     "path": "/configurations/entries/{entryId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteConfigurationById get:operation/getConfigurationById put:operation/putConfiguration",
-    "name": "mod-remote-storage",
-    "path": "/configurations/{configId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/consortia.yaml",
@@ -4749,34 +4714,6 @@
     "methods": "post:operation/postExportDeletedMarcIds",
     "name": "mod-data-export",
     "path": "/export-deleted"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getExtendedRemoteLocationConfigurationMappings post:operation/postExtendedRemoteLocationConfigurationMapping",
-    "name": "mod-remote-storage",
-    "path": "/extended-mappings"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getExtendedRemoteLocationConfigurationMappingsLocations",
-    "name": "mod-remote-storage",
-    "path": "/extended-mappings/locations"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getExtendedRemoteLocationConfigurationMappingsById",
-    "name": "mod-remote-storage",
-    "path": "/extended-mappings/{finalLocationId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteOriginalLocationByRemoteStorageConfigurationIdAndOriginalLocationId",
-    "name": "mod-remote-storage",
-    "path": "/extended-mappings/{remoteStorageConfigurationId}/{originalLocationId}"
   },
   {
     "apiDescription": "ramls/feefine-reports.raml",
@@ -6857,13 +6794,6 @@
     "path": "/ItemBarcodes/{itemBarcode}/accessioned/{remoteStorageConfigurationId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/markItemAsMissingByBarcode",
-    "name": "mod-remote-storage",
-    "path": "/items/barcode/{barcode}/markAsMissing"
-  },
-  {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
     "methods": "get:operation/getJobExecutionsByQuery",
@@ -7634,20 +7564,6 @@
     "methods": "put:mapping_rules__recordtype__restore_put",
     "name": "mod-source-record-manager",
     "path": "/mapping-rules/{recordType}/restore"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getMappings post:operation/postMapping",
-    "name": "mod-remote-storage",
-    "path": "/mappings"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteMappingById get:operation/getMappingById",
-    "name": "mod-remote-storage",
-    "path": "/mappings/{folioLocationId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/marc-migrations.yaml",
@@ -8976,22 +8892,6 @@
     "path": "/paging-slips/{servicePointId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/password-validator.yaml",
-    "apiType": "oas",
-    "interface": "password-validator 1.0",
-    "methods": "post:operation/checkPassword",
-    "name": "mod-password-validator",
-    "path": "/password/check"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/password-validator.yaml",
-    "apiType": "oas",
-    "interface": "password-validator 1.0",
-    "methods": "post:operation/validatePassword",
-    "name": "mod-password-validator",
-    "path": "/password/validate"
-  },
-  {
     "apiDescription": "ramls/edge-patron.raml",
     "apiType": "raml",
     "methods": "post:patron_post",
@@ -9498,13 +9398,6 @@
     "path": "/prod/rtac/folioRTAC"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getProviders",
-    "name": "mod-remote-storage",
-    "path": "/providers"
-  },
-  {
     "apiDescription": "ramls/proxiesFor.raml",
     "apiType": "raml",
     "interface": "users 16.4",
@@ -9519,13 +9412,6 @@
     "methods": "delete:proxiesfor__id__delete get:proxiesfor__id__get put:proxiesfor__id__put",
     "name": "mod-users",
     "path": "/proxiesfor/{id}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "post:null",
-    "name": "mod-remote-storage",
-    "path": "/pub-sub-handlers/log-record-event"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/publications.yaml",
@@ -9814,6 +9700,166 @@
     "methods": "get:operation/getRelatedUsers",
     "name": "mod-data-export",
     "path": "/related-users"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-accessions 1.1",
+    "methods": "get:operation/getAccessions post:operation/postAccession",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/accessions"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-accessions 1.1",
+    "methods": "put:operation/setAccessionedByBarcode",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/accessions/barcode/{barcode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-accessions 1.1",
+    "methods": "put:operation/setAccessionedById",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/accessions/id/{accessionId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-configurations 1.1",
+    "methods": "get:operation/getConfigurations post:operation/postConfiguration",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/configurations"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-configurations 1.1",
+    "methods": "delete:operation/deleteConfigurationById get:operation/getConfigurationById put:operation/putConfiguration",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/configurations/{configId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-extended-mappings 1.0",
+    "methods": "get:operation/getExtendedRemoteLocationConfigurationMappings post:operation/postExtendedRemoteLocationConfigurationMapping",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/extended-mappings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-extended-mappings 1.0",
+    "methods": "get:operation/getExtendedRemoteLocationConfigurationMappingsLocations",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/extended-mappings/locations"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-extended-mappings 1.0",
+    "methods": "get:operation/getExtendedRemoteLocationConfigurationMappingsById",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/extended-mappings/{finalLocationId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-extended-mappings 1.0",
+    "methods": "delete:operation/deleteOriginalLocationByRemoteStorageConfigurationIdAndOriginalLocationId",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/extended-mappings/{remoteStorageConfigurationId}/{originalLocationId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-items 1.0",
+    "methods": "post:operation/markItemAsMissingByBarcode",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/items/barcode/{barcode}/markAsMissing"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-mappings 1.0",
+    "methods": "get:operation/getMappings post:operation/postMapping",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/mappings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-mappings 1.0",
+    "methods": "delete:operation/deleteMappingById get:operation/getMappingById",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/mappings/{folioLocationId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-providers 1.0",
+    "methods": "get:operation/getProviders",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/providers"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-event-handlers 1.1",
+    "methods": "post:null",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/pub-sub-handlers/log-record-event"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-retrievals 1.1",
+    "methods": "get:operation/getRetrievals",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/retrievals"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-retrievals 1.1",
+    "methods": "put:operation/setRetrievedByBarcode",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/retrievals/barcode/{barcode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-retrievals 1.1",
+    "methods": "put:operation/setRetrievedById",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/retrievals/id/{retrievalId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-check-in 1.2",
+    "methods": "post:operation/checkInItemByBarcodeWithRemoteStorageConfigurationId",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/retrieve/{remoteStorageConfigurationId}/checkInItem"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-check-in 1.2",
+    "methods": "post:operation/checkInItemByHoldIdWithRemoteStorageConfigurationId",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/retrieve/{remoteStorageConfigurationId}/checkInItemByHoldId"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
+    "apiType": "oas",
+    "interface": "remote-storage-check-in 1.2",
+    "methods": "post:operation/returnItemByBarcode",
+    "name": "mod-remote-storage",
+    "path": "/remote-storage/return/{remoteStorageConfigurationId}"
   },
   {
     "apiDescription": "ramls/request-policy-storage.raml",
@@ -10122,48 +10168,6 @@
     "path": "/reservoir/upload"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getRetrievals",
-    "name": "mod-remote-storage",
-    "path": "/retrievals"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/setRetrievedByBarcode",
-    "name": "mod-remote-storage",
-    "path": "/retrievals/barcode/{barcode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/setRetrievedById",
-    "name": "mod-remote-storage",
-    "path": "/retrievals/id/{retrievalId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/checkInItemByBarcodeWithRemoteStorageConfigurationId",
-    "name": "mod-remote-storage",
-    "path": "/retrieve/{remoteStorageConfigurationId}/checkInItem"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/checkInItemByHoldIdWithRemoteStorageConfigurationId",
-    "name": "mod-remote-storage",
-    "path": "/retrieve/{remoteStorageConfigurationId}/checkInItemByHoldId"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/returnItemByBarcode",
-    "name": "mod-remote-storage",
-    "path": "/return/{remoteStorageConfigurationId}"
-  },
-  {
     "apiDescription": "domain-models-api-interfaces/ramls/sample.raml",
     "apiType": "raml",
     "methods": "get:rmbtests_books_get post:rmbtests_books_post put:rmbtests_books_put",
@@ -10350,20 +10354,6 @@
     "methods": "get:rtac__instanceid__get",
     "name": "edge-rtac",
     "path": "/rtac/{instanceId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/validator-registry.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getTenantRules post:operation/postTenantRules put:operation/putTenantRule",
-    "name": "mod-password-validator",
-    "path": "/rules"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/validator-registry.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getTenantRuleById",
-    "name": "mod-password-validator",
-    "path": "/rules/{ruleId}"
   },
   {
     "apiDescription": "ramls/saml-login.raml",
@@ -11443,6 +11433,36 @@
     "methods": "delete:templates__templateid__delete get:templates__templateid__get put:templates__templateid__put",
     "name": "mod-template-engine",
     "path": "/templates/{templateId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/password-validator.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/checkPassword",
+    "name": "mod-password-validator",
+    "path": "/tenant/password/check"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/password-validator.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/validatePassword",
+    "name": "mod-password-validator",
+    "path": "/tenant/password/validate"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/validator-registry.yaml",
+    "apiType": "oas",
+    "interface": "password-validator 1.0",
+    "methods": "get:operation/getTenantRules post:operation/postTenantRules put:operation/putTenantRule",
+    "name": "mod-password-validator",
+    "path": "/tenant/rules"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/validator-registry.yaml",
+    "apiType": "oas",
+    "interface": "password-validator 1.0",
+    "methods": "get:operation/getTenantRuleById",
+    "name": "mod-password-validator",
+    "path": "/tenant/rules/{ruleId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mgr-tenants.yaml",
