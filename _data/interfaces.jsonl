@@ -41,7 +41,7 @@
 {"id": "folio_eholdings-10.0.109900000000119", "optional": [], "provides": [], "requires": ["eholdings 4.0", "erm 1.0 2.0 3.0 4.0 5.0 6.0 7.0", "tags 1.0"]}
 {"id": "folio_erm-1.0.100022", "optional": [], "provides": [], "requires": []}
 {"id": "folio_erm-comparisons-7.2.10990000000057", "optional": [], "provides": [], "requires": ["erm 7.0"]}
-{"id": "folio_erm-usage-11.0.109900000000272", "optional": [], "provides": [], "requires": ["aggregator-settings 2.0", "configuration 2.0", "counter-reports 4.0", "custom-reports 1.0 2.0", "erm-usage-files 1.0", "erm-usage-harvester 2.0", "tags 1.0", "usage-data-providers 3.1"]}
+{"id": "folio_erm-usage-11.0.109900000000275", "optional": [], "provides": [], "requires": ["aggregator-settings 2.0", "configuration 2.0", "counter-reports 4.0", "custom-reports 1.0 2.0", "erm-usage-files 1.0", "erm-usage-harvester 2.0", "tags 1.0", "usage-data-providers 3.1"]}
 {"id": "folio_export-manager-3.2.109000000661", "optional": [], "provides": [], "requires": ["configuration 2.0", "data-export-spring 1.0 2.0", "organizations.organizations 1.0", "tags 1.0", "users 15.0 16.0"]}
 {"id": "folio_finance-8.0.1090000001071", "optional": ["consortia 1.0"], "provides": [], "requires": ["acquisitions-units 1.1", "configuration 2.0", "finance.budgets 1.3 2.0", "finance.expense-classes 2.0 3.0", "finance.finance-data 1.0", "finance.fiscal-years 1.0 2.0", "finance.fund-types 1.0 2.0", "finance.funds 3.0", "finance.group-fiscal-year-summaries 1.0", "finance.group-fund-fiscal-years 1.0 2.0", "finance.groups 1.0 2.0", "finance.ledger-rollovers 1.0 2.0", "finance.ledger-rollovers-errors 1.0", "finance.ledger-rollovers-logs 1.0", "finance.ledger-rollovers-progress 1.0", "finance.ledgers 1.5 2.0", "finance.transactions 6.0", "invoice 7.0", "location-units 2.0", "locations 3.0", "order-lines 2.0 3.0", "orders 12.1", "tags 1.0", "users 15.0 16.0"]}
 {"id": "folio_finc-config-7.0.109900000000110", "optional": [], "provides": [], "requires": ["finc-config-isils 1.0", "finc-config-metadata-collections 1.0", "finc-config-metadata-sources 1.0", "organizations-storage.contacts 2.0", "organizations-storage.organizations 3.0", "users 15.0 16.0"]}
@@ -80,7 +80,7 @@
 {"id": "folio_plugin-find-authority-4.1.10990000000028", "optional": [], "provides": [], "requires": []}
 {"id": "folio_plugin-find-contact-5.2.109000000211", "optional": [], "provides": [], "requires": ["organizations-storage.categories 1.1", "organizations-storage.contacts 2.0"]}
 {"id": "folio_plugin-find-eresource-7.2.10990000000045", "optional": [], "provides": [], "requires": ["erm 7.0"]}
-{"id": "folio_plugin-find-erm-usage-data-provider-7.0.10990000000086", "optional": [], "provides": [], "requires": ["aggregator-settings 1.0 2.0", "erm-usage-harvester 1.1 2.0", "usage-data-providers 2.0 3.0"]}
+{"id": "folio_plugin-find-erm-usage-data-provider-7.0.10990000000089", "optional": [], "provides": [], "requires": ["aggregator-settings 1.0 2.0", "erm-usage-harvester 1.1 2.0", "usage-data-providers 2.0 3.0"]}
 {"id": "folio_plugin-find-finc-metadata-collection-7.0.10990000000062", "optional": [], "provides": [], "requires": ["finc-config-metadata-collections 1.0"]}
 {"id": "folio_plugin-find-finc-metadata-source-7.0.10990000000038", "optional": [], "provides": [], "requires": ["finc-config-metadata-sources 1.0"]}
 {"id": "folio_plugin-find-fund-3.2.109000000231", "optional": [], "provides": [], "requires": []}
@@ -112,7 +112,7 @@
 {"id": "folio_stripes-authorization-components-1.1.109900000000110", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-components-12.2.109900000000337", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-connect-9.2.1090000005", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-core-11.0.109900000000609", "optional": ["consortia 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "users-bl 5.0 6.0"]}
+{"id": "folio_stripes-core-11.0.109900000000625", "optional": ["consortia 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "users-bl 5.0 6.0"]}
 {"id": "folio_stripes-data-transfer-components-6.2.109000000610", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-erm-components-9.2.10990000000077", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-final-form-8.1.1090000009", "optional": [], "provides": [], "requires": []}
