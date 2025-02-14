@@ -676,7 +676,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-data-export-spring",
     "org": "folio-org"
@@ -1139,7 +1139,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.6"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-inventory",
     "org": "folio-org"

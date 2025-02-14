@@ -3026,20 +3026,6 @@
     "path": "/comments/{commentId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/export-configs.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getExportConfigs post:operation/postExportConfig",
-    "name": "mod-data-export-spring",
-    "path": "/configs"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/export-configs.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteExportConfigById get:operation/getConfigById put:operation/putExportConfig",
-    "name": "mod-data-export-spring",
-    "path": "/configs/{id}"
-  },
-  {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
     "methods": "post:operation/postDataExportConfiguration",
@@ -3678,6 +3664,62 @@
     "methods": "post:operation/getBibRecord",
     "name": "mod-inn-reach",
     "path": "/d2ir/getbibrecord/{bibId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/export-configs.yaml",
+    "apiType": "oas",
+    "interface": "data-export-spring 2.0",
+    "methods": "get:operation/getExportConfigs post:operation/postExportConfig",
+    "name": "mod-data-export-spring",
+    "path": "/data-export-spring/configs"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/export-configs.yaml",
+    "apiType": "oas",
+    "interface": "data-export-spring 2.0",
+    "methods": "delete:operation/deleteExportConfigById get:operation/getConfigById put:operation/putExportConfig",
+    "name": "mod-data-export-spring",
+    "path": "/data-export-spring/configs/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
+    "apiType": "oas",
+    "interface": "data-export-spring 2.0",
+    "methods": "get:operation/getJobs post:operation/upsertJob",
+    "name": "mod-data-export-spring",
+    "path": "/data-export-spring/jobs"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
+    "apiType": "oas",
+    "interface": "data-export-spring 2.0",
+    "methods": "post:operation/sendJob",
+    "name": "mod-data-export-spring",
+    "path": "/data-export-spring/jobs/send"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
+    "apiType": "oas",
+    "interface": "data-export-spring 2.0",
+    "methods": "get:operation/getJobById",
+    "name": "mod-data-export-spring",
+    "path": "/data-export-spring/jobs/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
+    "apiType": "oas",
+    "interface": "data-export-spring 2.0",
+    "methods": "get:operation/downloadExportedFileByJobId",
+    "name": "mod-data-export-spring",
+    "path": "/data-export-spring/jobs/{id}/download"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
+    "apiType": "oas",
+    "interface": "data-export-spring 2.0",
+    "methods": "post:operation/resendExportedFile",
+    "name": "mod-data-export-spring",
+    "path": "/data-export-spring/jobs/{id}/resend"
   },
   {
     "apiDescription": "ramls/data-import-converter-storage.raml",
@@ -6389,7 +6431,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.0",
+    "interface": "inventory 14.1",
     "methods": "delete:inventory_instances_delete get:inventory_instances_get post:inventory_instances_post",
     "name": "mod-inventory",
     "path": "/inventory/instances"
@@ -6405,7 +6447,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.0",
+    "interface": "inventory 14.1",
     "methods": "delete:inventory_instances__instanceid__delete get:inventory_instances__instanceid__get put:inventory_instances__instanceid__put",
     "name": "mod-inventory",
     "path": "/inventory/instances/{instanceId}"
@@ -6413,7 +6455,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.0",
+    "interface": "inventory 14.1",
     "methods": "delete:inventory_instances__instanceid__mark_deleted_delete",
     "name": "mod-inventory",
     "path": "/inventory/instances/{instanceId}/mark-deleted"
@@ -6421,7 +6463,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.0",
+    "interface": "inventory 14.1",
     "methods": "delete:inventory_items_delete get:inventory_items_get post:inventory_items_post",
     "name": "mod-inventory",
     "path": "/inventory/items"
@@ -6429,7 +6471,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.0",
+    "interface": "inventory 14.1",
     "methods": "get:inventory_items_by_holdings_id_get post:inventory_items_by_holdings_id_post",
     "name": "mod-inventory",
     "path": "/inventory/items-by-holdings-id"
@@ -6453,7 +6495,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.0",
+    "interface": "inventory 14.1",
     "methods": "delete:inventory_items__itemid__delete get:inventory_items__itemid__get put:inventory_items__itemid__put",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}"
@@ -6461,7 +6503,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.0",
+    "interface": "inventory 14.1",
     "methods": "post:inventory_items__itemid__mark_in_process_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-in-process"
@@ -6469,7 +6511,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.0",
+    "interface": "inventory 14.1",
     "methods": "post:inventory_items__itemid__mark_in_process_non_requestable_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-in-process-non-requestable"
@@ -6477,7 +6519,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.0",
+    "interface": "inventory 14.1",
     "methods": "post:inventory_items__itemid__mark_intellectual_item_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-intellectual-item"
@@ -6485,7 +6527,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.0",
+    "interface": "inventory 14.1",
     "methods": "post:inventory_items__itemid__mark_long_missing_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-long-missing"
@@ -6493,7 +6535,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.0",
+    "interface": "inventory 14.1",
     "methods": "post:inventory_items__itemid__mark_missing_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-missing"
@@ -6501,7 +6543,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.0",
+    "interface": "inventory 14.1",
     "methods": "post:inventory_items__itemid__mark_restricted_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-restricted"
@@ -6509,7 +6551,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.0",
+    "interface": "inventory 14.1",
     "methods": "post:inventory_items__itemid__mark_unavailable_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-unavailable"
@@ -6517,7 +6559,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.0",
+    "interface": "inventory 14.1",
     "methods": "post:inventory_items__itemid__mark_unknown_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-unknown"
@@ -6525,7 +6567,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.0",
+    "interface": "inventory 14.1",
     "methods": "post:inventory_items__itemid__mark_withdrawn_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-withdrawn"
@@ -6533,7 +6575,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.0",
+    "interface": "inventory 14.1",
     "methods": "post:inventory_tenant_items_post",
     "name": "mod-inventory",
     "path": "/inventory/tenant-items"
@@ -6827,41 +6869,6 @@
     "methods": "delete:operation/deleteJobProfileById get:operation/getJobProfileById put:operation/putJobProfile",
     "name": "mod-data-export",
     "path": "/job-profiles/{jobProfileId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getJobs post:operation/upsertJob",
-    "name": "mod-data-export-spring",
-    "path": "/jobs"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/sendJob",
-    "name": "mod-data-export-spring",
-    "path": "/jobs/send"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getJobById",
-    "name": "mod-data-export-spring",
-    "path": "/jobs/{id}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/downloadExportedFileByJobId",
-    "name": "mod-data-export-spring",
-    "path": "/jobs/{id}/download"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/resendExportedFile",
-    "name": "mod-data-export-spring",
-    "path": "/jobs/{id}/resend"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/kafka_message_schemas.yaml",
