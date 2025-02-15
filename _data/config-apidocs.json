@@ -65,7 +65,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.7"
     },
     "name": "edge-dcb",
     "org": "folio-org"
@@ -313,7 +313,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mgr-applications",
     "org": "folio-org"
@@ -733,7 +733,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.6"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-dcb",
     "org": "folio-org"
