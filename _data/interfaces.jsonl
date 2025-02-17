@@ -36,7 +36,7 @@
 {"id": "folio_courses-6.1.1099000000009", "optional": [], "provides": [], "requires": ["copyright-status-storage 0.1", "course-reserves-storage 0.2", "course-type-storage 0.1", "department-storage 0.1", "item-storage 7.1 8.0 9.0 10.0", "loan-types 2.2", "locations 3.0", "processing-status-storage 0.1", "role-storage 0.1", "term-storage 0.1"]}
 {"id": "folio_dashboard-7.0.109900000000126", "optional": [], "provides": [], "requires": ["servint 4.0"]}
 {"id": "folio_data-export-6.2.1099000000003", "optional": [], "provides": [], "requires": ["data-export 5.0"]}
-{"id": "folio_data-import-8.0.5090000002973", "optional": [], "provides": [], "requires": ["data-import 3.2", "data-import-converter-storage 1.5", "source-manager-job-executions 3.4"]}
+{"id": "folio_data-import-8.0.5090000002991", "optional": [], "provides": [], "requires": ["data-import 3.2", "data-import-converter-storage 1.5", "source-manager-job-executions 3.4"]}
 {"id": "folio_developer-10.0.109900000000120", "optional": ["app-manager 1.0", "capabilities 1.0", "capability-sets 1.0"], "provides": [], "requires": ["okapi 1.9"]}
 {"id": "folio_eholdings-11.0.109900000000124", "optional": [], "provides": [], "requires": ["eholdings 4.0", "erm 1.0 2.0 3.0 4.0 5.0 6.0 7.0", "tags 1.0"]}
 {"id": "folio_erm-1.0.100022", "optional": [], "provides": [], "requires": []}
@@ -57,7 +57,7 @@
 {"id": "folio_items-1.11.100023", "optional": [], "provides": [], "requires": ["inventory 5.0", "loan-types 2.0", "material-types 2.0"]}
 {"id": "folio_jest-config-stripes-2.1.10990000000011", "optional": [], "provides": [], "requires": []}
 {"id": "folio_ld-folio-wrapper-1.2.109900000000160", "optional": [], "provides": [], "requires": ["linked-data 1.0", "search 1.3"]}
-{"id": "folio_ldp-2.5.10990000000015", "optional": [], "provides": [], "requires": ["ldp-query 1.2", "settings 1.0"]}
+{"id": "folio_ldp-3.0.10990000000024", "optional": [], "provides": [], "requires": ["ldp-query 1.2", "settings 1.0"]}
 {"id": "folio_licenses-12.0.109900000000115", "optional": ["organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["licenses 6.0"]}
 {"id": "folio_linked-data-1.0.109900000000503", "optional": [], "provides": [], "requires": []}
 {"id": "folio_lists-3.1.609900000000740", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0"]}
@@ -240,7 +240,7 @@
 {"id": "mod-source-record-storage-5.10.0-SNAPSHOT.658", "optional": ["data-import-converter-storage 1.2", "instance-authority-linking-rules 1.0", "instance-authority-links 2.0", "mapping-metadata-provider 1.0"], "provides": ["_tenant 2.0", "source-storage-async-migrations 1.1", "source-storage-batch 1.3", "source-storage-records 3.3", "source-storage-snapshots 2.1", "source-storage-source-records 3.2", "source-storage-stream 1.2", "source-storage-test-records 2.1"], "requires": []}
 {"id": "mod-spring-template-1.0.0-SNAPSHOT.22", "optional": [], "provides": ["_tenant 1.2", "spring-template 1.0"], "requires": []}
 {"id": "mod-tags-2.3.1-SNAPSHOT.111", "optional": [], "provides": ["_tenant 2.0", "tags 1.0"], "requires": []}
-{"id": "mod-template-engine-1.21.1-SNAPSHOT.99", "optional": [], "provides": ["_tenant 2.0", "template-engine 2.2"], "requires": ["configuration 2.0", "patron-notice-policy-storage 0.13"]}
+{"id": "mod-template-engine-1.21.1-SNAPSHOT.100", "optional": [], "provides": ["_tenant 2.0", "template-engine 2.2"], "requires": ["configuration 2.0", "patron-notice-policy-storage 0.13"]}
 {"id": "mod-tlr-1.1.0-SNAPSHOT.56", "optional": ["consortia 1.1"], "provides": ["_tenant 2.0", "_timer 1.0", "ecs-request-external 1.0", "ecs-tlr 1.0", "ecs-tlr-allowed-service-points 1.0", "tlr-settings 1.0", "tlr-staff-slips 1.0"], "requires": ["allowed-service-points 1.0", "circulation 14.4", "circulation-item 1.0", "consortium-search 2.1", "ecs-request-transactions 1.0", "holdings-storage 8.0", "instance-storage 11.0", "item-storage 10.1", "loan-types 2.3", "location-units 2.0", "locations 3.1", "login 7.3", "material-types 2.2", "permissions 5.7", "request-storage 6.1", "search 1.3", "service-points 3.4", "transactions 1.0", "user-tenants 1.0", "users 16.3"]}
 {"id": "mod-user-import-3.10.0-SNAPSHOT.103", "optional": [], "provides": ["user-import 2.2"], "requires": ["permissions 5.0", "request-preference-storage 2.0", "service-points 3.2", "users 15.2 16.0"]}
 {"id": "mod-users-19.4.6-SNAPSHOT.340", "optional": [], "provides": ["_tenant 2.0", "_timer 1.0", "custom-fields 3.0", "patron-pin 1.0", "staging-users 1.1", "user-tenants 1.0", "users 16.4"], "requires": []}
