@@ -112,7 +112,7 @@
 {"id": "folio_stripes-authorization-components-1.1.109900000000129", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-components-12.2.109900000000337", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-connect-9.2.1090000005", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-core-11.0.109900000000656", "optional": ["consortia 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "users-bl 5.0 6.0"]}
+{"id": "folio_stripes-core-11.0.109900000000661", "optional": ["consortia 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "users-bl 5.0 6.0"]}
 {"id": "folio_stripes-data-transfer-components-6.2.109000000610", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-erm-components-9.2.10990000000077", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-final-form-8.1.1090000009", "optional": [], "provides": [], "requires": []}
