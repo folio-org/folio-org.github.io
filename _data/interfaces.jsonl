@@ -108,7 +108,7 @@
 {"id": "folio_service-interaction-4.0.109900000000163", "optional": [], "provides": [], "requires": ["servint 4.0"]}
 {"id": "folio_servicepoints-8.0.1099000000008", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-acq-components-6.0.4099000000006", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-authority-components-6.0.10990000000051", "optional": [], "provides": [], "requires": ["authority-source-files 2.0", "browse 1.0", "search 1.0", "source-storage-records 3.0"]}
+{"id": "folio_stripes-authority-components-6.0.10990000000054", "optional": [], "provides": [], "requires": ["authority-source-files 2.0", "browse 1.0", "search 1.0", "source-storage-records 3.0"]}
 {"id": "folio_stripes-authorization-components-1.1.109900000000129", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-components-12.2.109900000000337", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-connect-9.2.1090000005", "optional": [], "provides": [], "requires": []}
