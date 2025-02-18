@@ -826,7 +826,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-erm-usage",
     "org": "folio-org"
@@ -948,7 +948,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.6"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-finance",
     "org": "folio-org"
@@ -983,7 +983,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.6"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-finance-storage",
     "org": "folio-org"
@@ -2167,7 +2167,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.7"
     },
     "name": "okapi",
     "org": "folio-org"

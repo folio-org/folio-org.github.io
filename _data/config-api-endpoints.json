@@ -3179,7 +3179,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.0",
+    "interface": "counter-reports 4.1",
     "methods": "get:counter_reports_get post:counter_reports_post",
     "name": "mod-erm-usage",
     "path": "/counter-reports"
@@ -3187,7 +3187,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.0",
+    "interface": "counter-reports 4.1",
     "methods": "get:counter_reports_errors_codes_get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/errors/codes"
@@ -3195,7 +3195,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.0",
+    "interface": "counter-reports 4.1",
     "methods": "get:counter_reports_export_provider__id__report__name__version__aversion__from__begin__to__end__get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/export/provider/{id}/report/{name}/version/{aversion}/from/{begin}/to/{end}"
@@ -3203,7 +3203,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.0",
+    "interface": "counter-reports 4.1",
     "methods": "get:counter_reports_export__id__get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/export/{id}"
@@ -3211,7 +3211,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.0",
+    "interface": "counter-reports 4.1",
     "methods": "post:counter_reports_multipartupload_provider__id__post",
     "name": "mod-erm-usage",
     "path": "/counter-reports/multipartupload/provider/{id}"
@@ -3219,7 +3219,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.0",
+    "interface": "counter-reports 4.1",
     "methods": "post:counter_reports_reports_delete_post",
     "name": "mod-erm-usage",
     "path": "/counter-reports/reports/delete"
@@ -3227,7 +3227,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.0",
+    "interface": "counter-reports 4.1",
     "methods": "get:counter_reports_reports_releases_get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/reports/releases"
@@ -3235,7 +3235,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.0",
+    "interface": "counter-reports 4.1",
     "methods": "get:counter_reports_reports_types_get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/reports/types"
@@ -3243,7 +3243,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.0",
+    "interface": "counter-reports 4.1",
     "methods": "get:counter_reports_sorted__udpid__get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/sorted/{udpId}"
@@ -3251,7 +3251,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.0",
+    "interface": "counter-reports 4.1",
     "methods": "delete:counter_reports__id__delete get:counter_reports__id__get put:counter_reports__id__put",
     "name": "mod-erm-usage",
     "path": "/counter-reports/{id}"
@@ -3259,7 +3259,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.0",
+    "interface": "counter-reports 4.1",
     "methods": "get:counter_reports__id__download_get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/{id}/download"
@@ -11909,7 +11909,7 @@
   {
     "apiDescription": "ramls/usagedataproviders.raml",
     "apiType": "raml",
-    "interface": "usage-data-providers 3.0",
+    "interface": "usage-data-providers 3.1",
     "methods": "get:usage_data_providers_get post:usage_data_providers_post",
     "name": "mod-erm-usage",
     "path": "/usage-data-providers"
@@ -11917,7 +11917,7 @@
   {
     "apiDescription": "ramls/usagedataproviders.raml",
     "apiType": "raml",
-    "interface": "usage-data-providers 3.0",
+    "interface": "usage-data-providers 3.1",
     "methods": "delete:usage_data_providers__id__delete get:usage_data_providers__id__get put:usage_data_providers__id__put",
     "name": "mod-erm-usage",
     "path": "/usage-data-providers/{id}"
