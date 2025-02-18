@@ -65,7 +65,7 @@
 {"id": "folio_lti-courses-1.1.100035", "optional": [], "provides": [], "requires": ["configuration 2.0 3.0 4.0 5.0"]}
 {"id": "folio_marc-authorities-7.0.109900000000281", "optional": [], "provides": [], "requires": ["audit-config 1.0", "browse 1.0", "marc-records-editor 6.0", "search 1.0", "source-storage-records 3.3"]}
 {"id": "folio_marccat-3.0.1000438", "optional": [], "provides": [], "requires": ["marccat 2.0"]}
-{"id": "folio_myprofile-10.0.1099000000007", "optional": [], "provides": [], "requires": []}
+{"id": "folio_myprofile-10.0.10990000000025", "optional": [], "provides": [], "requires": []}
 {"id": "folio_notes-11.0.10990000000051", "optional": [], "provides": [], "requires": ["notes 4.0"]}
 {"id": "folio_oa-3.0.109900000000118", "optional": ["erm 5.0 6.0 7.0", "finance.exchange-rate 1.0", "invoice 7.0", "organizations 1.0"], "provides": [], "requires": ["oa 1.0 2.0"]}
 {"id": "folio_oai-pmh-5.2.1099000000003", "optional": [], "provides": [], "requires": ["configuration 2.0", "oai-pmh 3.0"]}
@@ -112,7 +112,7 @@
 {"id": "folio_stripes-authorization-components-1.1.109900000000129", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-components-12.2.109900000000337", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-connect-9.2.1090000005", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-core-11.0.109900000000661", "optional": ["consortia 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "users-bl 5.0 6.0"]}
+{"id": "folio_stripes-core-11.0.109900000000666", "optional": ["consortia 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "settings 1.0", "users-bl 5.0 6.0"]}
 {"id": "folio_stripes-data-transfer-components-6.2.1099000000005", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-erm-components-9.2.10990000000077", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-final-form-8.1.1090000009", "optional": [], "provides": [], "requires": []}
