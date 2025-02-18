@@ -535,13 +535,6 @@
     "path": "/_self"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/self.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getUserTenantsForCurrentUser",
-    "name": "mod-consortia-keycloak",
-    "path": "/_self"
-  },
-  {
     "apiDescription": "ramls/accounts.raml",
     "apiType": "raml",
     "interface": "feesfines 19.1",
@@ -1235,13 +1228,6 @@
     "methods": "post:audit_handlers_log_record_post",
     "name": "mod-audit",
     "path": "/audit/handlers/log-record"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/authenticateLocalServerKeySecret",
-    "name": "mod-inn-reach",
-    "path": "/authentication"
   },
   {
     "apiDescription": "ramls/login.raml",
@@ -2228,195 +2214,6 @@
     "path": "/capability-sets/{id}/capabilities"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getCentralServers post:operation/postCentralServer",
-    "name": "mod-inn-reach",
-    "path": "/central-servers"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getCentralServerAgencies",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/agencies"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getCentralServerItemTypes",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/item-types"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getAllMARCTransformationOptionsSettings",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/marc-transformation-options"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getAllPagingSlipTemplates",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/paging-slip-template"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getCentralServerPatronTypes",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/patron-types"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteCentralServer get:operation/getCentralServerById put:operation/updateCentralServer",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getAgencyMappingsByServerId put:operation/putAgencyMappings",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/agency-mappings"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getCentralPatronTypeMappings put:operation/updateCentralPatronTypeMappings",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/central-patron-type-mappings"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteCriteria get:operation/getCriteriaByServerId post:operation/postContributionCriteria put:operation/updateCriteria",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/contribution-criteria"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/contribution.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/startInitialContribution",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/contributions"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/contribution.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/cancelCurrentContributionByServerId get:operation/getCurrentContributionByServerId",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/contributions/current"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/contribution.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getContributionHistoryByServerId",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/contributions/history"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getCentralServerRecallUser post:operation/saveInnReachRecallUser put:operation/updateCentralServerRecallUser",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/inn-reach-recall-user"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getItemContributionOptionsConfigurationById post:operation/createItemContributionOptionsConfiguration put:operation/updateItemContributionOptionsConfiguration",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/item-contribution-options"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getItemTypeMappingsByServerId put:operation/updateItemTypeMappings",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/item-type-mappings"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getLibraryMappingsByServerId put:operation/putLibraryMappings",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/libraries/location-mappings/"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getLocationMappingsForAllLibrariesByServerId",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/libraries/locations/location-mappings/"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getLocationMappingsByServerId put:operation/putLocationMappings",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/libraries/{libraryId}/locations/location-mappings/"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/transformMARCRecord",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/marc-record-transformation/{inventoryInstanceId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteMARCTransformationOptionsSettings get:operation/getMARCTransformationOptionsSettingsById post:operation/createMARCTransformationOptionsSettings put:operation/updateMARCTransformationOptionsSettings",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/marc-transformation-options"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getMaterialTypeMappingsByServerId post:operation/postMaterialTypeMapping put:operation/updateMaterialTypeMappings",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/material-type-mappings"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteMaterialTypeMapping get:operation/getMaterialTypeMappingById put:operation/updateMaterialTypeMapping",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/material-type-mappings/{id}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getPagingSlipTemplate put:operation/updatePagingSlipTemplate",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/paging-slip-template"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getPatronTypeMappingsByServerId put:operation/updatePatronTypeMappings",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/patron-type-mappings"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getUserCustomFieldMapping post:operation/createUserCustomFieldMapping put:operation/updateUserCustomFieldMapping",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/user-custom-field-mappings"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getConfigurationByCentralServerId post:operation/createConfiguration put:operation/updateConfiguration",
-    "name": "mod-inn-reach",
-    "path": "/central-servers/{centralServerId}/visible-patron-field-configuration"
-  },
-  {
     "apiDescription": "ramls/change-manager.raml",
     "apiType": "raml",
     "interface": "source-manager-job-executions 3.4",
@@ -3105,6 +2902,182 @@
     "path": "/consortia/{consortiumId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/self.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "get:operation/getUserTenantsForCurrentUser",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/_self"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/publications.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "post:operation/publishRequests",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/publications"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/publications.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "delete:operation/deletePublicationById get:operation/getPublicationDetails",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/publications/{publicationId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/publications.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "get:operation/getPublicationResults",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/publications/{publicationId}/results"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_instances.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "get:operation/getSharingInstances post:operation/startSharingInstance",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/sharing/instances"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_instances.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "get:operation/getSharingInstanceById",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/sharing/instances/{actionId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_policies.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "post:operation/startSharingPolicy",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/sharing/policies"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_policies.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "delete:operation/deleteSharingPolicy",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/sharing/policies/{policyId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_roles.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "post:operation/startSharingRole",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/sharing/roles"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_roles.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "post:operation/startSharingRoleCapabilities",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/sharing/roles/capabilities"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_roles.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "post:operation/startSharingRoleCapabilitySets",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/sharing/roles/capability-sets"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_roles.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "delete:operation/deleteSharingRole",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/sharing/roles/{roleId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_roles.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "delete:operation/deleteSharingRoleCapabilities",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/sharing/roles/{roleId}/capabilities"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_roles.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "delete:operation/deleteSharingRoleCapabilitySets",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/sharing/roles/{roleId}/capability-sets"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_settings.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "post:operation/startSharingSetting",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/sharing/settings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/sharing_settings.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "delete:operation/deleteSharingSetting",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/sharing/settings/{settingId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "get:operation/getTenants post:operation/saveTenant",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/tenants"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "delete:operation/deleteTenantById get:operation/getTenantDetailsById put:operation/updateTenant",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/tenants/{tenantId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "post:operation/createPrimaryAffiliations",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/tenants/{tenantId}/create-primary-affiliations"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "post:operation/syncPrimaryAffiliations",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/tenants/{tenantId}/sync-primary-affiliations"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/user_tenants.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "delete:operation/deleteUserTenant get:operation/getUserTenants post:operation/postUserTenants",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/user-tenants"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/user_tenants.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "get:operation/getUserTenantByAssociationId",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/user-tenants/{associationId}"
+  },
+  {
     "apiDescription": "ramls/contributor-name-type.raml",
     "apiType": "raml",
     "interface": "contributor-name-types 1.3",
@@ -3538,132 +3511,6 @@
     "methods": "delete:custom_reports__id__delete get:custom_reports__id__get put:custom_reports__id__put",
     "name": "mod-erm-usage",
     "path": "/custom-reports/{id}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/borrowerRenew",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/borrowerrenew/{trackingId}/{centralCode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/cancelItemHold",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/cancelitemhold/{trackingId}/{centralCode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/cancelPatronHold",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/cancelrequest/{trackingId}/{centralCode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/claimsReturned",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/claimsreturned/{trackingId}/{centralCode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/finalCheckIn",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/finalcheckin/{trackingId}/{centralCode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/itemInTransit",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/intransit/{trackingId}/{centralCode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/createInnReachTransactionItemHold",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/itemhold/{trackingId}/{centralCode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/itemReceived",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/itemreceived/{trackingId}/{centralCode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/itemShipped",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/itemshipped/{trackingId}/{centralCode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/createLocalHold",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/localhold/{trackingId}/{centralCode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/ownerRenew",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/ownerrenew/{trackingId}/{centralCode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/patronHold",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/patronhold/{trackingId}/{centralCode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/recall",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/recall/{trackingId}/{centralCode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/receiveUnshipped",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/receiveunshipped/{trackingId}/{centralCode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/returnUncirculated",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/returnuncirculated/{trackingId}/{centralCode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/transferRequest",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/transferrequest/{trackingId}/{centralCode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/verifyPatron",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/circ/verifypatron"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/getBibRecord",
-    "name": "mod-inn-reach",
-    "path": "/d2ir/getbibrecord/{bibId}/{centralCode}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/export-configs.yaml",
@@ -6032,6 +5879,502 @@
     "path": "/ill-policies/{id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "post:operation/authenticateLocalServerKeySecret",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/authentication"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getCentralServers post:operation/postCentralServer",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getCentralServerAgencies",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/agencies"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getCentralServerItemTypes",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/item-types"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getAllMARCTransformationOptionsSettings",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/marc-transformation-options"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getAllPagingSlipTemplates",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/paging-slip-template"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getCentralServerPatronTypes",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/patron-types"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "delete:operation/deleteCentralServer get:operation/getCentralServerById put:operation/updateCentralServer",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getAgencyMappingsByServerId put:operation/putAgencyMappings",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/agency-mappings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getCentralPatronTypeMappings put:operation/updateCentralPatronTypeMappings",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/central-patron-type-mappings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "delete:operation/deleteCriteria get:operation/getCriteriaByServerId post:operation/postContributionCriteria put:operation/updateCriteria",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/contribution-criteria"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/contribution.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "post:operation/startInitialContribution",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/contributions"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/contribution.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "delete:operation/cancelCurrentContributionByServerId get:operation/getCurrentContributionByServerId",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/contributions/current"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/contribution.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getContributionHistoryByServerId",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/contributions/history"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getCentralServerRecallUser post:operation/saveInnReachRecallUser put:operation/updateCentralServerRecallUser",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/inn-reach-recall-user"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getItemContributionOptionsConfigurationById post:operation/createItemContributionOptionsConfiguration put:operation/updateItemContributionOptionsConfiguration",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/item-contribution-options"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getItemTypeMappingsByServerId put:operation/updateItemTypeMappings",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/item-type-mappings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getLibraryMappingsByServerId put:operation/putLibraryMappings",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/libraries/location-mappings/"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getLocationMappingsForAllLibrariesByServerId",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/libraries/locations/location-mappings/"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getLocationMappingsByServerId put:operation/putLocationMappings",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/libraries/{libraryId}/locations/location-mappings/"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/transformMARCRecord",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/marc-record-transformation/{inventoryInstanceId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "delete:operation/deleteMARCTransformationOptionsSettings get:operation/getMARCTransformationOptionsSettingsById post:operation/createMARCTransformationOptionsSettings put:operation/updateMARCTransformationOptionsSettings",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/marc-transformation-options"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getMaterialTypeMappingsByServerId post:operation/postMaterialTypeMapping put:operation/updateMaterialTypeMappings",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/material-type-mappings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "delete:operation/deleteMaterialTypeMapping get:operation/getMaterialTypeMappingById put:operation/updateMaterialTypeMapping",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/material-type-mappings/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getPagingSlipTemplate put:operation/updatePagingSlipTemplate",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/paging-slip-template"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getPatronTypeMappingsByServerId put:operation/updatePatronTypeMappings",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/patron-type-mappings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getUserCustomFieldMapping post:operation/createUserCustomFieldMapping put:operation/updateUserCustomFieldMapping",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/user-custom-field-mappings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getConfigurationByCentralServerId post:operation/createConfiguration put:operation/updateConfiguration",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/central-servers/{centralServerId}/visible-patron-field-configuration"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/borrowerRenew",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/borrowerrenew/{trackingId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/cancelItemHold",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/cancelitemhold/{trackingId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/cancelPatronHold",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/cancelrequest/{trackingId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/claimsReturned",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/claimsreturned/{trackingId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/finalCheckIn",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/finalcheckin/{trackingId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/itemInTransit",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/intransit/{trackingId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/createInnReachTransactionItemHold",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/itemhold/{trackingId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/itemReceived",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/itemreceived/{trackingId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/itemShipped",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/itemshipped/{trackingId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/createLocalHold",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/localhold/{trackingId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/ownerRenew",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/ownerrenew/{trackingId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/patronHold",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/patronhold/{trackingId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/recall",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/recall/{trackingId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/receiveUnshipped",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/receiveunshipped/{trackingId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/returnUncirculated",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/returnuncirculated/{trackingId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/transferRequest",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/transferrequest/{trackingId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "post:operation/verifyPatron",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/circ/verifypatron"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "post:operation/getBibRecord",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/d2ir/getbibrecord/{bibId}/{centralCode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getLocations post:operation/postInnReachLocation",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/locations"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "delete:operation/deleteLocation get:operation/getLocationById put:operation/updateLocation",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/locations/{locationId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getPagingSlips",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/paging-slips/{servicePointId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getAllTransactions",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/transactions"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "get:operation/getInnReachTransaction put:operation/updateInnReachTransaction",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/transactions/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "post:operation/cancelItemHoldTransaction",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/transactions/{id}/itemhold/cancel"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "post:operation/finalCheckInItemHold",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/transactions/{id}/itemhold/finalcheckin/{servicePointId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "post:operation/recallItemHoldTransaction",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/transactions/{id}/itemhold/recall"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "post:operation/transferItemHold",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/transactions/{id}/itemhold/transfer-item/{itemId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "post:operation/cancelLocalHoldTransaction",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/transactions/{id}/localhold/cancel"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "post:operation/checkOutLocalHoldItem",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/transactions/{id}/localhold/check-out-item/{servicePointId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "post:operation/transferLocalHold",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/transactions/{id}/localhold/transfer-item/{itemId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "post:operation/cancelPatronHoldTransaction",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/transactions/{id}/patronhold/cancel"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "post:operation/checkOutPatronHoldItem",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/transactions/{id}/patronhold/check-out-item/{servicePointId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "post:operation/returnPatronHoldItem",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/transactions/{id}/patronhold/return-item/{servicePointId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "post:operation/checkInPatronHoldItem",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/transactions/{id}/receive-item/{servicePointId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "post:operation/checkInPatronHoldUnshippedItem",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/transactions/{id}/receive-unshipped-item/{servicePointId}/{itemBarcode}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
+    "apiType": "oas",
+    "interface": "inn-reach 1.0",
+    "methods": "put:operation/checkOutItemHoldItem",
+    "name": "mod-inn-reach",
+    "path": "/inn-reach/transactions/{itemBarcode}/check-out-item/{servicePointId}"
+  },
+  {
     "apiDescription": "ramls/instance-date-type.raml",
     "apiType": "raml",
     "interface": "instance-date-types 1.0",
@@ -6265,22 +6608,8 @@
   {
     "apiDescription": "src/main/resources/swagger.api/sharing_instances.yaml",
     "apiType": "oas",
-    "methods": "get:operation/getSharingInstances post:operation/startSharingInstance",
-    "name": "mod-consortia-keycloak",
-    "path": "/instances"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/sharing_instances.yaml",
-    "apiType": "oas",
     "methods": "get:operation/getSharingInstanceById",
     "name": "mod-consortia",
-    "path": "/instances/{actionId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/sharing_instances.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getSharingInstanceById",
-    "name": "mod-consortia-keycloak",
     "path": "/instances/{actionId}"
   },
   {
@@ -7183,13 +7512,6 @@
     "path": "/links/stats/instance"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
-    "apiType": "oas",
-    "methods": "post:null",
-    "name": "mod-quick-marc",
-    "path": "/links/suggestion"
-  },
-  {
     "apiDescription": "src/main/resources/swagger.api/list.yaml",
     "apiType": "oas",
     "interface": "lists 1.0",
@@ -7406,13 +7728,6 @@
     "path": "/location-units/libraries/{id}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getLocations post:operation/postInnReachLocation",
-    "name": "mod-inn-reach",
-    "path": "/locations"
-  },
-  {
     "apiDescription": "ramls/location.raml",
     "apiType": "raml",
     "interface": "locations 3.1",
@@ -7427,13 +7742,6 @@
     "methods": "delete:locations__id__delete get:locations__id__get put:locations__id__put",
     "name": "mod-inventory-storage",
     "path": "/locations/{id}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/settings.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteLocation get:operation/getLocationById put:operation/updateLocation",
-    "name": "mod-inn-reach",
-    "path": "/locations/{locationId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
@@ -7608,6 +7916,14 @@
     "methods": "get:operation/getMarcMigrationById put:operation/saveMarcMigration",
     "name": "mod-marc-migrations",
     "path": "/marc-migrations/{operationId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/marc-specifications.yaml",
+    "apiType": "oas",
+    "interface": "marc-specifications 1.2",
+    "methods": "get:operation/getMarcSpecification",
+    "name": "mod-quick-marc",
+    "path": "/marc-specifications/{recordType}/{fieldTag}"
   },
   {
     "apiDescription": "ramls/material-type.raml",
@@ -8913,13 +9229,6 @@
     "path": "/owners/{ownerId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getPagingSlips",
-    "name": "mod-inn-reach",
-    "path": "/paging-slips/{servicePointId}"
-  },
-  {
     "apiDescription": "ramls/edge-patron.raml",
     "apiType": "raml",
     "methods": "post:patron_post",
@@ -9317,13 +9626,6 @@
     "path": "/pieces/claim"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/sharing_policies.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/startSharingPolicy",
-    "name": "mod-consortia-keycloak",
-    "path": "/policies"
-  },
-  {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
     "apiType": "oas",
     "interface": "policies 1.1",
@@ -9346,13 +9648,6 @@
     "methods": "delete:operation/deletePolicy get:operation/getPolicy put:operation/updatePolicy",
     "name": "mod-roles-keycloak",
     "path": "/policies/{id}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/sharing_policies.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteSharingPolicy",
-    "name": "mod-consortia-keycloak",
-    "path": "/policies/{policyId}"
   },
   {
     "apiDescription": "ramls/instance-preceding-succeeding-titles.raml",
@@ -9451,13 +9746,6 @@
   {
     "apiDescription": "src/main/resources/swagger.api/publications.yaml",
     "apiType": "oas",
-    "methods": "post:operation/publishRequests",
-    "name": "mod-consortia-keycloak",
-    "path": "/publications"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/publications.yaml",
-    "apiType": "oas",
     "methods": "delete:operation/deletePublicationById get:operation/getPublicationDetails",
     "name": "mod-consortia",
     "path": "/publications/{publicationId}"
@@ -9465,22 +9753,8 @@
   {
     "apiDescription": "src/main/resources/swagger.api/publications.yaml",
     "apiType": "oas",
-    "methods": "delete:operation/deletePublicationById get:operation/getPublicationDetails",
-    "name": "mod-consortia-keycloak",
-    "path": "/publications/{publicationId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/publications.yaml",
-    "apiType": "oas",
     "methods": "get:operation/getPublicationResults",
     "name": "mod-consortia",
-    "path": "/publications/{publicationId}/results"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/publications.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getPublicationResults",
-    "name": "mod-consortia-keycloak",
     "path": "/publications/{publicationId}/results"
   },
   {
@@ -9664,23 +9938,42 @@
   {
     "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
     "apiType": "oas",
-    "methods": "get:operation/getRecordByExternalId post:operation/createNewRecord",
+    "interface": "marc-records-editor 6.0",
+    "methods": "post:null",
     "name": "mod-quick-marc",
-    "path": "/records"
+    "path": "/records-editor/links/suggestion"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
     "apiType": "oas",
+    "interface": "marc-records-editor 6.0",
+    "methods": "get:operation/getRecordByExternalId post:operation/createNewRecord",
+    "name": "mod-quick-marc",
+    "path": "/records-editor/records"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
+    "apiType": "oas",
+    "interface": "marc-records-editor 6.0",
     "methods": "get:operation/getRecordCreationStatus",
     "name": "mod-quick-marc",
-    "path": "/records/status"
+    "path": "/records-editor/records/status"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/records-editor-async.yaml",
     "apiType": "oas",
+    "interface": "marc-records-editor 6.0",
     "methods": "put:operation/putRecord",
     "name": "mod-quick-marc",
-    "path": "/records/{id}"
+    "path": "/records-editor/records/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
+    "apiType": "oas",
+    "interface": "marc-records-editor 6.0",
+    "methods": "post:null",
+    "name": "mod-quick-marc",
+    "path": "/records-editor/validate"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/refresh-presigned-url.yaml",
@@ -10224,13 +10517,6 @@
     "path": "/rmbtests/testStream"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/sharing_roles.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/startSharingRole",
-    "name": "mod-consortia-keycloak",
-    "path": "/roles"
-  },
-  {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
     "apiType": "oas",
     "interface": "roles 1.1",
@@ -10263,26 +10549,12 @@
     "path": "/roles/batch"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/sharing_roles.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/startSharingRoleCapabilities",
-    "name": "mod-consortia-keycloak",
-    "path": "/roles/capabilities"
-  },
-  {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
     "apiType": "oas",
     "interface": "role-capabilities 1.0",
     "methods": "get:operation/getRoleCapabilities post:operation/createRoleCapabilities",
     "name": "mod-roles-keycloak",
     "path": "/roles/capabilities"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/sharing_roles.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/startSharingRoleCapabilitySets",
-    "name": "mod-consortia-keycloak",
-    "path": "/roles/capability-sets"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
@@ -10331,27 +10603,6 @@
     "methods": "delete:operation/deleteRoleCapabilitySets get:operation/getCapabilitySetsByRoleId put:operation/updateRoleCapabilitySets",
     "name": "mod-roles-keycloak",
     "path": "/roles/{id}/capability-sets"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/sharing_roles.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteSharingRole",
-    "name": "mod-consortia-keycloak",
-    "path": "/roles/{roleId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/sharing_roles.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteSharingRoleCapabilities",
-    "name": "mod-consortia-keycloak",
-    "path": "/roles/{roleId}/capabilities"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/sharing_roles.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteSharingRoleCapabilitySets",
-    "name": "mod-consortia-keycloak",
-    "path": "/roles/{roleId}/capability-sets"
   },
   {
     "apiDescription": "ramls/edge-rtac.raml",
@@ -10942,13 +11193,6 @@
     "path": "/settings"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/sharing_settings.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/startSharingSetting",
-    "name": "mod-consortia-keycloak",
-    "path": "/settings"
-  },
-  {
     "apiDescription": "src/main/resources/openapi/settings.yaml",
     "apiType": "oas",
     "interface": "settings 1.1",
@@ -10977,13 +11221,6 @@
     "apiType": "oas",
     "methods": "delete:operation/deleteSharingSetting",
     "name": "mod-consortia",
-    "path": "/settings/{settingId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/sharing_settings.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteSharingSetting",
-    "name": "mod-consortia-keycloak",
     "path": "/settings/{settingId}"
   },
   {
@@ -11508,13 +11745,6 @@
     "path": "/tenants"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getTenants post:operation/saveTenant",
-    "name": "mod-consortia-keycloak",
-    "path": "/tenants"
-  },
-  {
     "apiDescription": "src/main/resources/swagger.api/mgr-tenants.yaml",
     "apiType": "oas",
     "interface": "tenants 1.0",
@@ -11532,13 +11762,6 @@
   {
     "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
     "apiType": "oas",
-    "methods": "delete:operation/deleteTenantById get:operation/getTenantDetailsById put:operation/updateTenant",
-    "name": "mod-consortia-keycloak",
-    "path": "/tenants/{tenantId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
-    "apiType": "oas",
     "methods": "post:operation/createPrimaryAffiliations",
     "name": "mod-consortia",
     "path": "/tenants/{tenantId}/create-primary-affiliations"
@@ -11546,22 +11769,8 @@
   {
     "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
     "apiType": "oas",
-    "methods": "post:operation/createPrimaryAffiliations",
-    "name": "mod-consortia-keycloak",
-    "path": "/tenants/{tenantId}/create-primary-affiliations"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
-    "apiType": "oas",
     "methods": "post:operation/syncPrimaryAffiliations",
     "name": "mod-consortia",
-    "path": "/tenants/{tenantId}/sync-primary-affiliations"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/syncPrimaryAffiliations",
-    "name": "mod-consortia-keycloak",
     "path": "/tenants/{tenantId}/sync-primary-affiliations"
   },
   {
@@ -11725,13 +11934,6 @@
     "path": "/token/sign"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getAllTransactions",
-    "name": "mod-inn-reach",
-    "path": "/transactions"
-  },
-  {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
     "interface": "transactions 1.1",
@@ -11754,104 +11956,6 @@
     "methods": "get:operation/getTransactionStatusById put:operation/updateTransactionStatus",
     "name": "mod-dcb",
     "path": "/transactions/{dcbTransactionId}/status"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getInnReachTransaction put:operation/updateInnReachTransaction",
-    "name": "mod-inn-reach",
-    "path": "/transactions/{id}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/cancelItemHoldTransaction",
-    "name": "mod-inn-reach",
-    "path": "/transactions/{id}/itemhold/cancel"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/finalCheckInItemHold",
-    "name": "mod-inn-reach",
-    "path": "/transactions/{id}/itemhold/finalcheckin/{servicePointId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/recallItemHoldTransaction",
-    "name": "mod-inn-reach",
-    "path": "/transactions/{id}/itemhold/recall"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/transferItemHold",
-    "name": "mod-inn-reach",
-    "path": "/transactions/{id}/itemhold/transfer-item/{itemId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/cancelLocalHoldTransaction",
-    "name": "mod-inn-reach",
-    "path": "/transactions/{id}/localhold/cancel"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/checkOutLocalHoldItem",
-    "name": "mod-inn-reach",
-    "path": "/transactions/{id}/localhold/check-out-item/{servicePointId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/transferLocalHold",
-    "name": "mod-inn-reach",
-    "path": "/transactions/{id}/localhold/transfer-item/{itemId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/cancelPatronHoldTransaction",
-    "name": "mod-inn-reach",
-    "path": "/transactions/{id}/patronhold/cancel"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/checkOutPatronHoldItem",
-    "name": "mod-inn-reach",
-    "path": "/transactions/{id}/patronhold/check-out-item/{servicePointId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/returnPatronHoldItem",
-    "name": "mod-inn-reach",
-    "path": "/transactions/{id}/patronhold/return-item/{servicePointId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/checkInPatronHoldItem",
-    "name": "mod-inn-reach",
-    "path": "/transactions/{id}/receive-item/{servicePointId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/checkInPatronHoldUnshippedItem",
-    "name": "mod-inn-reach",
-    "path": "/transactions/{id}/receive-unshipped-item/{servicePointId}/{itemBarcode}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
-    "apiType": "oas",
-    "methods": "put:operation/checkOutItemHoldItem",
-    "name": "mod-inn-reach",
-    "path": "/transactions/{itemBarcode}/check-out-item/{servicePointId}"
   },
   {
     "apiDescription": "ramls/transfer-criteria.raml",
@@ -11946,13 +12050,6 @@
     "path": "/user-tenants"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/user_tenants.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteUserTenant get:operation/getUserTenants post:operation/postUserTenants",
-    "name": "mod-consortia-keycloak",
-    "path": "/user-tenants"
-  },
-  {
     "apiDescription": "ramls/userTenants.raml",
     "apiType": "raml",
     "interface": "user-tenants 1.0",
@@ -11965,13 +12062,6 @@
     "apiType": "oas",
     "methods": "get:operation/getUserTenantByAssociationId",
     "name": "mod-consortia",
-    "path": "/user-tenants/{associationId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/user_tenants.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getUserTenantByAssociationId",
-    "name": "mod-consortia-keycloak",
     "path": "/user-tenants/{associationId}"
   },
   {
@@ -12189,13 +12279,6 @@
     "path": "/validate"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
-    "apiType": "oas",
-    "methods": "post:null",
-    "name": "mod-quick-marc",
-    "path": "/validate"
-  },
-  {
     "apiDescription": "ramls/voucher.raml",
     "apiType": "raml",
     "interface": "voucher-storage.voucher-lines 2.1",
@@ -12335,12 +12418,5 @@
     "methods": "post:operation/uploadCsvFile",
     "name": "mod-data-export-worker",
     "path": "/{jobId}/upload"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/marc-specifications.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getMarcSpecification",
-    "name": "mod-quick-marc",
-    "path": "/{recordType}/{fieldTag}"
   }
 ]
