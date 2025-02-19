@@ -286,12 +286,12 @@
     {
       "name": "mod-fqm-manager",
       "nameRepo": "mod-fqm-manager",
-      "releaseDate": "2025-01-29T17:34:05+00:00",
-      "releaseName": "v3.0.11",
-      "releaseSha": "ffcb572b926d0d28a40c805ea12bf483072c876d",
-      "releaseTag": "v3.0.11",
+      "releaseDate": "2025-02-17T16:08:00+00:00",
+      "releaseName": "v3.0.12",
+      "releaseSha": "2f97a8a75b46770ae2a52b464c090fabaccbc977",
+      "releaseTag": "v3.0.12",
       "releaseTarget": "master",
-      "version": "3.0.11"
+      "version": "3.0.12"
     },
     {
       "name": "mod-gobi",
@@ -316,12 +316,12 @@
     {
       "name": "mod-inventory",
       "nameRepo": "mod-inventory",
-      "releaseDate": "2025-01-23T20:20:15+00:00",
-      "releaseName": "21.0.9",
-      "releaseSha": "88ab8fdf36b6b7f7fc092f1bb3f5063a8b1fec0e",
-      "releaseTag": "v21.0.9",
+      "releaseDate": "2025-02-17T15:02:20+00:00",
+      "releaseName": "21.0.10",
+      "releaseSha": "1076879dc78cd99a0dc2fcbb1c3bcba1608c9a6e",
+      "releaseTag": "v21.0.10",
       "releaseTarget": "master",
-      "version": "21.0.9"
+      "version": "21.0.10"
     },
     {
       "name": "mod-inventory-storage",
@@ -666,12 +666,12 @@
     {
       "name": "mod-source-record-storage",
       "nameRepo": "mod-source-record-storage",
-      "releaseDate": "2025-02-03T13:45:19+00:00",
-      "releaseName": "5.9.8",
-      "releaseSha": "98853ad333103fba80c6703747398aa236ec0b04",
-      "releaseTag": "v5.9.8",
+      "releaseDate": "2025-02-17T18:02:40+00:00",
+      "releaseName": "5.9.9",
+      "releaseSha": "ff62302137bca19b8a4dcd68728846d89d1c422c",
+      "releaseTag": "v5.9.9",
       "releaseTarget": "master",
-      "version": "5.9.8"
+      "version": "5.9.9"
     },
     {
       "name": "mod-tags",
