@@ -48,7 +48,7 @@ Then utilise a JSON Schema validator such as 'z-schema' or 'ajv'
 ```
 cd ui-users
 jq '.' package.json
-stripes mod descriptor --full --output /tmp
+stripes mod descriptor --full --strict --output /tmp
 z-schema --pedanticCheck \
   ../okapi/okapi-core/src/main/raml/ModuleDescriptor.json \
   /tmp/users.json
