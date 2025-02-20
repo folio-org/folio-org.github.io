@@ -386,12 +386,12 @@
     {
       "name": "mod-lists",
       "nameRepo": "mod-lists",
-      "releaseDate": "2025-01-23T18:02:26+00:00",
-      "releaseName": "v3.0.8",
-      "releaseSha": "dc2a50a3b492149c18eaadf33c95598a90fafa31",
-      "releaseTag": "v3.0.8",
+      "releaseDate": "2025-02-18T15:11:06+00:00",
+      "releaseName": "v3.0.9",
+      "releaseSha": "7280be1dc38638b50c98b17c1f5ce33070ec0895",
+      "releaseTag": "v3.0.9",
       "releaseTarget": "master",
-      "version": "3.0.8"
+      "version": "3.0.9"
     },
     {
       "name": "mod-login",
