@@ -658,7 +658,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-data-export",
     "org": "folio-org"
@@ -699,7 +699,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-data-export-worker",
     "org": "folio-org"
@@ -769,7 +769,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-ebsconet",
     "org": "folio-org"
