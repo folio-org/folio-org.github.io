@@ -506,12 +506,12 @@
     {
       "name": "mod-patron",
       "nameRepo": "mod-patron",
-      "releaseDate": "2025-02-11T13:44:52+00:00",
-      "releaseName": "v6.2.8",
-      "releaseSha": "4ffe7aae0fdce4ac7c996c7fba718b4538f6c732",
-      "releaseTag": "v6.2.8",
+      "releaseDate": "2025-02-21T17:50:36+00:00",
+      "releaseName": "v6.2.9",
+      "releaseSha": "7413dd80993f5b1d2073c6eaeb26e9ab4a9f163c",
+      "releaseTag": "v6.2.9",
       "releaseTarget": "master",
-      "version": "6.2.8"
+      "version": "6.2.9"
     },
     {
       "name": "mod-patron-blocks",
