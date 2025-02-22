@@ -361,6 +361,7 @@
         "ramls/circulation-logs.raml",
         "ramls/configuration.raml",
         "ramls/inventory-audit.raml",
+        "ramls/marc-audit.raml",
         "ramls/mod-audit-handlers.raml"
       ],
       "upload": []
@@ -1926,7 +1927,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.6"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-search",
     "org": "folio-org"
