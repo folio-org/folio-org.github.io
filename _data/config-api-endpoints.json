@@ -1183,6 +1183,22 @@
     "path": "/audit-data/inventory/item/{entityId}"
   },
   {
+    "apiDescription": "ramls/marc-audit.raml",
+    "apiType": "raml",
+    "interface": "audit-marc 1.0",
+    "methods": "get:audit_data_marc_authority__entityid__get",
+    "name": "mod-audit",
+    "path": "/audit-data/marc/authority/{entityId}"
+  },
+  {
+    "apiDescription": "ramls/marc-audit.raml",
+    "apiType": "raml",
+    "interface": "audit-marc 1.0",
+    "methods": "get:audit_data_marc_bib__entityid__get",
+    "name": "mod-audit",
+    "path": "/audit-data/marc/bib/{entityId}"
+  },
+  {
     "apiDescription": "ramls/audit-data.raml",
     "apiType": "raml",
     "interface": "audit 1.1",
@@ -1983,6 +1999,28 @@
     "path": "/browse/subjects/instances"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "interface": "bulk-edit 4.1",
+    "methods": "get:operation/getErrorsPreviewByJobId",
+    "name": "mod-data-export-worker",
+    "path": "/bulk-edit/{jobId}/errors"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/startJob",
+    "name": "mod-data-export-worker",
+    "path": "/bulk-edit/{jobId}/start"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/uploadCsvFile",
+    "name": "mod-data-export-worker",
+    "path": "/bulk-edit/{jobId}/upload"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
     "interface": "bulk-operations 1.6",
@@ -2305,7 +2343,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-ecs-request-external 1.1",
+    "interface": "circulation-bff-ecs-request-external 2.0",
     "methods": "post:operation/postEcsRequestExternal",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/create-ecs-request-external"
@@ -2321,7 +2359,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-loans 1.0",
+    "interface": "circulation-bff-loans 1.1",
     "methods": "post:operation/checkInByBarcode",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/loans/check-in-by-barcode"
@@ -2751,13 +2789,6 @@
     "path": "/classification-types/{classificationTypeId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/postCleanUpFiles",
-    "name": "mod-data-export",
-    "path": "/clean-up-files"
-  },
-  {
     "apiDescription": "ramls/codex/codex.raml",
     "apiType": "raml",
     "methods": "get:codex_instances_get",
@@ -2814,13 +2845,6 @@
     "methods": "delete:comments__commentid__delete get:comments__commentid__get put:comments__commentid__put",
     "name": "mod-feesfines",
     "path": "/comments/{commentId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/postDataExportConfiguration",
-    "name": "mod-data-export",
-    "path": "/configuration"
   },
   {
     "apiDescription": "ramls/configuration/config.raml",
@@ -3133,6 +3157,14 @@
     "methods": "post:operation/createPrimaryAffiliations",
     "name": "mod-consortia-keycloak",
     "path": "/consortia/{consortiumId}/tenants/{tenantId}/create-primary-affiliations"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
+    "apiType": "oas",
+    "interface": "consortia 1.1",
+    "methods": "delete:operation/deleteIdentityProvider post:operation/createIdentityProvider",
+    "name": "mod-consortia-keycloak",
+    "path": "/consortia/{consortiumId}/tenants/{tenantId}/identity-provider"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
@@ -3674,6 +3706,182 @@
     "path": "/data-export-spring/jobs/{id}/resend"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "_timer 1.0",
+    "methods": "post:operation/postCleanUpFiles",
+    "name": "mod-data-export",
+    "path": "/data-export/clean-up-files"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "post:operation/postDataExportConfiguration",
+    "name": "mod-data-export",
+    "path": "/data-export/configuration"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "get:operation/downloadRecordById",
+    "name": "mod-data-export",
+    "path": "/data-export/download-record/{recordId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "_timer 1.0",
+    "methods": "post:operation/postExpireJobExecution",
+    "name": "mod-data-export",
+    "path": "/data-export/expire-jobs"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "post:operation/postDataExport",
+    "name": "mod-data-export",
+    "path": "/data-export/export"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "post:operation/postExportAll",
+    "name": "mod-data-export",
+    "path": "/data-export/export-all"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "post:operation/postExportDeletedAuthority",
+    "name": "mod-data-export",
+    "path": "/data-export/export-authority-deleted"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "post:operation/postExportDeletedMarcIds",
+    "name": "mod-data-export",
+    "path": "/data-export/export-deleted"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "post:operation/postFileDefinition",
+    "name": "mod-data-export",
+    "path": "/data-export/file-definitions"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "get:operation/getFileDefinitionById",
+    "name": "mod-data-export",
+    "path": "/data-export/file-definitions/{fileDefinitionId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "post:operation/uploadFile",
+    "name": "mod-data-export",
+    "path": "/data-export/file-definitions/{fileDefinitionId}/upload"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "get:operation/getJobExecutionsByQuery",
+    "name": "mod-data-export",
+    "path": "/data-export/job-executions"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "delete:operation/deleteJobExecutionById",
+    "name": "mod-data-export",
+    "path": "/data-export/job-executions/{jobExecutionId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "get:operation/getLinkToDownloadFiles",
+    "name": "mod-data-export",
+    "path": "/data-export/job-executions/{jobExecutionId}/download/{exportFileId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "get:operation/getJobProfiles post:operation/postJobProfile",
+    "name": "mod-data-export",
+    "path": "/data-export/job-profiles"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "delete:operation/deleteJobProfileById get:operation/getJobProfileById put:operation/putJobProfile",
+    "name": "mod-data-export",
+    "path": "/data-export/job-profiles/{jobProfileId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "get:operation/getErrorLogsByQuery",
+    "name": "mod-data-export",
+    "path": "/data-export/logs"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "get:operation/getMappingProfiles post:operation/postMappingProfile",
+    "name": "mod-data-export",
+    "path": "/data-export/mapping-profiles"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "delete:operation/deleteMappingProfileById get:operation/getMappingProfileById put:operation/putMappingProfile",
+    "name": "mod-data-export",
+    "path": "/data-export/mapping-profiles/{mappingProfileId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "post:operation/postDataExportQuickExport",
+    "name": "mod-data-export",
+    "path": "/data-export/quick-export"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "get:operation/getRelatedUsers",
+    "name": "mod-data-export",
+    "path": "/data-export/related-users"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiType": "oas",
+    "interface": "data-export 5.3",
+    "methods": "get:operation/getTransformationFields",
+    "name": "mod-data-export",
+    "path": "/data-export/transformation-fields"
+  },
+  {
     "apiDescription": "ramls/data-import-converter-storage.raml",
     "apiType": "raml",
     "interface": "data-import-converter-storage 1.4",
@@ -3981,11 +4189,19 @@
     "path": "/departments/{departmentId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
+    "apiDescription": "src/main/resources/swagger.api/ebsconet.yaml",
     "apiType": "oas",
-    "methods": "get:operation/downloadRecordById",
-    "name": "mod-data-export",
-    "path": "/download-record/{recordId}"
+    "methods": "get:operation/getEbsconetOrderLine put:operation/putEbsconetOrderLine",
+    "name": "mod-ebsconet",
+    "path": "/ebsconet/orders/order-lines/{poLineNumber}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/ebsconet.yaml",
+    "apiType": "oas",
+    "interface": "ebsconet 2.0",
+    "methods": "get:operation/getValidation",
+    "name": "mod-ebsconet",
+    "path": "/ebsconet/validate"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
@@ -4703,41 +4919,6 @@
     "path": "/eventConfig/{id}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/postExpireJobExecution",
-    "name": "mod-data-export",
-    "path": "/expire-jobs"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/postDataExport",
-    "name": "mod-data-export",
-    "path": "/export"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/postExportAll",
-    "name": "mod-data-export",
-    "path": "/export-all"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/postExportDeletedAuthority",
-    "name": "mod-data-export",
-    "path": "/export-authority-deleted"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/postExportDeletedMarcIds",
-    "name": "mod-data-export",
-    "path": "/export-deleted"
-  },
-  {
     "apiDescription": "ramls/feefine-reports.raml",
     "apiType": "raml",
     "interface": "feefine-reports 2.3",
@@ -4816,27 +4997,6 @@
     "methods": "delete:field_protection_settings_marc__id__delete get:field_protection_settings_marc__id__get put:field_protection_settings_marc__id__put",
     "name": "mod-di-converter-storage",
     "path": "/field-protection-settings/marc/{id}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/postFileDefinition",
-    "name": "mod-data-export",
-    "path": "/file-definitions"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getFileDefinitionById",
-    "name": "mod-data-export",
-    "path": "/file-definitions/{fileDefinitionId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/uploadFile",
-    "name": "mod-data-export",
-    "path": "/file-definitions/{fileDefinitionId}/upload"
   },
   {
     "apiDescription": "ramls/budget_expense_class.raml",
@@ -7284,41 +7444,6 @@
     "path": "/ItemBarcodes/{itemBarcode}/accessioned/{remoteStorageConfigurationId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getJobExecutionsByQuery",
-    "name": "mod-data-export",
-    "path": "/job-executions"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteJobExecutionById",
-    "name": "mod-data-export",
-    "path": "/job-executions/{jobExecutionId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getLinkToDownloadFiles",
-    "name": "mod-data-export",
-    "path": "/job-executions/{jobExecutionId}/download/{exportFileId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getJobProfiles post:operation/postJobProfile",
-    "name": "mod-data-export",
-    "path": "/job-profiles"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteJobProfileById get:operation/getJobProfileById put:operation/putJobProfile",
-    "name": "mod-data-export",
-    "path": "/job-profiles/{jobProfileId}"
-  },
-  {
     "apiDescription": "src/main/resources/swagger.api/kafka_message_schemas.yaml",
     "apiType": "oas",
     "methods": "get:null",
@@ -7842,13 +7967,6 @@
     "path": "/locations/{id}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getErrorLogsByQuery",
-    "name": "mod-data-export",
-    "path": "/logs"
-  },
-  {
     "apiDescription": "src/main/resources/swagger.api/edge-dematic.yaml",
     "apiType": "oas",
     "methods": "get:operation/getAsrRequests",
@@ -7968,20 +8086,6 @@
     "methods": "get:mapping_metadata__jobexecutionid__get",
     "name": "mod-source-record-manager",
     "path": "/mapping-metadata/{jobExecutionId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getMappingProfiles post:operation/postMappingProfile",
-    "name": "mod-data-export",
-    "path": "/mapping-profiles"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteMappingProfileById get:operation/getMappingProfileById put:operation/putMappingProfile",
-    "name": "mod-data-export",
-    "path": "/mapping-profiles/{mappingProfileId}"
   },
   {
     "apiDescription": "ramls/mapping-rules-provider.raml",
@@ -8871,13 +8975,6 @@
     "methods": "delete:orders_order_lines__id__delete get:orders_order_lines__id__get patch:orders_order_lines__id__patch put:orders_order_lines__id__put",
     "name": "mod-orders",
     "path": "/orders/order-lines/{id}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/ebsconet.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getEbsconetOrderLine put:operation/putEbsconetOrderLine",
-    "name": "mod-ebsconet",
-    "path": "/orders/order-lines/{poLineNumber}"
   },
   {
     "apiDescription": "ramls/order-templates.raml",
@@ -9951,13 +10048,6 @@
     "path": "/query/{queryId}/sortedIds"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/postDataExportQuickExport",
-    "name": "mod-data-export",
-    "path": "/quick-export"
-  },
-  {
     "apiDescription": "src/main/resources/swagger.api/reading_room.yaml",
     "apiType": "oas",
     "interface": "reading-room 1.0",
@@ -10084,13 +10174,6 @@
     "methods": "delete:refunds__refundid__delete get:refunds__refundid__get put:refunds__refundid__put",
     "name": "mod-feesfines",
     "path": "/refunds/{refundId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getRelatedUsers",
-    "name": "mod-data-export",
-    "path": "/related-users"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
@@ -12035,13 +12118,6 @@
     "path": "/transfers/{transferId}"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getTransformationFields",
-    "name": "mod-data-export",
-    "path": "/transformation-fields"
-  },
-  {
     "apiDescription": "src/main/resources/swagger.api/edge-dematic.yaml",
     "apiType": "oas",
     "methods": "post:operation/updateAsrItemReturn",
@@ -12303,13 +12379,6 @@
     "path": "/v2/oauth2/token"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/ebsconet.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getValidation",
-    "name": "mod-ebsconet",
-    "path": "/validate"
-  },
-  {
     "apiDescription": "ramls/voucher.raml",
     "apiType": "raml",
     "interface": "voucher-storage.voucher-lines 2.1",
@@ -12428,26 +12497,5 @@
     "methods": "delete:waives__waiveid__delete get:waives__waiveid__get put:waives__waiveid__put",
     "name": "mod-feesfines",
     "path": "/waives/{waiveId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getErrorsPreviewByJobId",
-    "name": "mod-data-export-worker",
-    "path": "/{jobId}/errors"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/startJob",
-    "name": "mod-data-export-worker",
-    "path": "/{jobId}/start"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/bulk-edit.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/uploadCsvFile",
-    "name": "mod-data-export-worker",
-    "path": "/{jobId}/upload"
   }
 ]
