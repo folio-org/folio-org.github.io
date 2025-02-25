@@ -15,7 +15,7 @@
 {"id": "edge-resolver-1.0.0-SNAPSHOT.10", "optional": [], "provides": [], "requires": ["users-bl 3.0"]}
 {"id": "edge-rtac-2.9.0-SNAPSHOT.105", "optional": [], "provides": [], "requires": ["login 5.0 6.0 7.0", "rtac-batch 1.1"]}
 {"id": "edge-search-srs-1.0.0-SNAPSHOT.7", "optional": [], "provides": [], "requires": ["login 5.0 6.0 7.0"]}
-{"id": "edge-sip2-3.3.2", "optional": [], "provides": [], "requires": ["circulation 14.4", "configuration 2.0", "feesfines 19.0", "login 7.3", "search 1.3", "users 16.3"]}
+{"id": "edge-sip2-3.3.3-SNAPSHOT.175", "optional": [], "provides": [], "requires": ["circulation 14.4", "configuration 2.0", "feesfines 19.0", "login 7.3", "search 1.3", "users 16.3"]}
 {"id": "edge-users-2.1.0-SNAPSHOT.6", "optional": [], "provides": [], "requires": ["users 15.5 16.0"]}
 {"id": "folio-org_ld-folio-wrapper-1.2.1099000000003", "optional": [], "provides": [], "requires": []}
 {"id": "folio-org_linked-data-1.0.10990000000029", "optional": [], "provides": [], "requires": []}
