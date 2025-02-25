@@ -112,7 +112,7 @@
 {"id": "folio_stripes-authorization-components-1.1.109900000000136", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-components-12.2.109900000000337", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-connect-9.2.1090000005", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-core-11.0.109900000000697", "optional": ["consortia 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "settings 1.0", "users-bl 5.0 6.0"]}
+{"id": "folio_stripes-core-11.1.109900000000708", "optional": ["consortia 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "settings 1.0", "users-bl 5.0 6.0"]}
 {"id": "folio_stripes-data-transfer-components-6.2.1099000000009", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-erm-components-9.2.10990000000077", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-final-form-8.1.1090000009", "optional": [], "provides": [], "requires": []}
@@ -120,7 +120,7 @@
 {"id": "folio_stripes-inventory-components-2.0.109000000584", "optional": [], "provides": [], "requires": ["instance-date-types 1.0", "settings 1.0"]}
 {"id": "folio_stripes-marc-components-2.0.10990000000052", "optional": [], "provides": [], "requires": ["instance-authority-linking-rules 1.1"]}
 {"id": "folio_stripes-registry-1.0.100011", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-smart-components-10.0.109900000000295", "optional": ["configuration 2.0", "remote-storage-mappings 1.0 2.0", "settings 1.0", "users 16.1"], "provides": [], "requires": ["notes 2.0 3.0 4.0", "password-validator 1.0", "tags 1.0"]}
+{"id": "folio_stripes-smart-components-10.1.109900000000303", "optional": ["configuration 2.0", "remote-storage-mappings 1.0 2.0", "settings 1.0", "users 16.1"], "provides": [], "requires": ["notes 2.0 3.0 4.0", "password-validator 1.0", "tags 1.0"]}
 {"id": "folio_stripes-template-editor-3.4.10990000000019", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-testing-4.2.1000107", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-ui-3.0.10990000000017", "optional": [], "provides": [], "requires": []}
@@ -196,7 +196,7 @@
 {"id": "mod-ldp-1.1.4-SNAPSHOT.50", "optional": [], "provides": ["ldp-query 1.2"], "requires": []}
 {"id": "mod-licenses-6.2.0-SNAPSHOT.272", "optional": ["erm 7.0", "organizations.organizations 1.0"], "provides": ["_tenant 1.2", "_timer 1.0", "dashboard 1.0", "licenses 6.2"], "requires": ["okapi 1.9"]}
 {"id": "mod-linked-data-1.0.1-SNAPSHOT.133", "optional": [], "provides": ["_tenant 2.0", "linked-data 1.0"], "requires": ["search 1.3", "settings 1.1", "source-storage-records 3.2 3.3", "specification-storage 1.0"]}
-{"id": "mod-lists-3.1.0-SNAPSHOT.164", "optional": [], "provides": ["_tenant 2.0", "lists 1.0"], "requires": ["configuration 2.0", "entity-types 2.0", "fqm-query 2.1", "login 7.0", "permissions 5.3", "users 16.0"]}
+{"id": "mod-lists-3.1.0-SNAPSHOT.165", "optional": [], "provides": ["_tenant 2.0", "lists 1.0"], "requires": ["configuration 2.0", "entity-types 2.0", "fqm-query 2.1", "login 7.0", "permissions 5.3", "users 16.0"]}
 {"id": "mod-login-7.13.0-SNAPSHOT.162", "optional": ["authtoken 2.1", "authtoken2 1.1", "configuration 2.0"], "provides": ["_tenant 2.0", "login 7.3"], "requires": ["user-tenants 1.0", "users 15.4 16.0"]}
 {"id": "mod-login-keycloak-2.1.0-SNAPSHOT.110", "optional": ["configuration 2.0"], "provides": ["_tenant 2.0", "authtoken 2.1", "authtoken2 1.1", "login 7.3"], "requires": ["users 16.1", "users-keycloak 1.0"]}
 {"id": "mod-login-saml-2.10.0-SNAPSHOT.165", "optional": [], "provides": ["_tenant 2.0", "login-saml 2.1"], "requires": ["authtoken 2.1", "authtoken2 1.1", "configuration 2.0", "users 14.0 15.0 16.0"]}
