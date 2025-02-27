@@ -38,7 +38,7 @@
 {"id": "folio_data-export-6.2.1099000000007", "optional": [], "provides": [], "requires": ["data-export 5.0"]}
 {"id": "folio_data-import-8.0.5090000002995", "optional": [], "provides": [], "requires": ["data-import 3.2", "data-import-converter-storage 1.5", "source-manager-job-executions 3.4"]}
 {"id": "folio_developer-10.0.109900000000124", "optional": ["app-manager 1.0", "capabilities 1.0", "capability-sets 1.0"], "provides": [], "requires": ["okapi 1.9"]}
-{"id": "folio_eholdings-11.0.109900000000128", "optional": [], "provides": [], "requires": ["eholdings 4.0", "erm 1.0 2.0 3.0 4.0 5.0 6.0 7.0", "tags 1.0"]}
+{"id": "folio_eholdings-11.0.109900000000133", "optional": [], "provides": [], "requires": ["eholdings 4.0", "erm 1.0 2.0 3.0 4.0 5.0 6.0 7.0", "tags 1.0"]}
 {"id": "folio_erm-1.0.100022", "optional": [], "provides": [], "requires": []}
 {"id": "folio_erm-comparisons-8.0.10990000000072", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_erm-usage-11.0.109900000000283", "optional": [], "provides": [], "requires": ["aggregator-settings 2.0", "configuration 2.0", "counter-reports 4.0", "custom-reports 1.0 2.0", "erm-usage-files 1.0", "erm-usage-harvester 2.0", "tags 1.0", "usage-data-providers 3.1"]}
@@ -60,7 +60,7 @@
 {"id": "folio_ldp-3.0.10990000000037", "optional": [], "provides": [], "requires": ["ldp-query 1.2", "settings 1.0"]}
 {"id": "folio_licenses-12.0.109900000000122", "optional": ["organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["licenses 6.0"]}
 {"id": "folio_linked-data-1.0.109900000000587", "optional": [], "provides": [], "requires": []}
-{"id": "folio_lists-3.1.609900000000744", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0"]}
+{"id": "folio_lists-3.1.609900000000749", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0"]}
 {"id": "folio_local-kb-admin-9.0.10990000000077", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_lti-courses-1.1.100035", "optional": [], "provides": [], "requires": ["configuration 2.0 3.0 4.0 5.0"]}
 {"id": "folio_marc-authorities-7.0.109900000000330", "optional": [], "provides": [], "requires": ["audit-config 1.0", "browse 1.0", "marc-records-editor 6.0", "search 1.0", "source-storage-records 3.3"]}
@@ -89,7 +89,7 @@
 {"id": "folio_plugin-find-interface-6.0.10990000000010", "optional": [], "provides": [], "requires": ["organizations-storage.interfaces 2.1"]}
 {"id": "folio_plugin-find-license-12.0.10990000000066", "optional": [], "provides": [], "requires": ["licenses 6.0"]}
 {"id": "folio_plugin-find-organization-6.0.10990000000012", "optional": [], "provides": [], "requires": ["configuration 2.0", "organizations.organizations 1.0", "tags 1.0"]}
-{"id": "folio_plugin-find-package-title-7.0.10990000000010", "optional": [], "provides": [], "requires": []}
+{"id": "folio_plugin-find-package-title-7.0.10990000000013", "optional": [], "provides": [], "requires": []}
 {"id": "folio_plugin-find-po-line-6.0.10990000000012", "optional": [], "provides": [], "requires": ["acquisition-methods 1.0", "acquisitions-units 1.1", "configuration.prefixes 1.1", "configuration.reasons-for-closure 1.0", "configuration.suffixes 1.1", "contributor-name-types 1.2", "finance.expense-classes 2.0 3.0", "finance.funds 1.4 2.0 3.0", "identifier-types 1.2", "inventory 10.0 11.0 12.0 13.0 14.0", "location-units 2.0", "locations 3.0", "material-types 2.2", "order-lines 2.0 3.0", "organizations.organizations 1.0", "tags 1.0"]}
 {"id": "folio_plugin-find-user-8.0.10990000000014", "optional": [], "provides": [], "requires": []}
 {"id": "folio_plugin-find-vendor-1.3.200031", "optional": [], "provides": [], "requires": []}
@@ -113,12 +113,12 @@
 {"id": "folio_stripes-components-12.2.109900000000337", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-connect-9.2.1090000005", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-core-11.1.109900000000719", "optional": ["consortia 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "settings 1.0", "users-bl 5.0 6.0"]}
-{"id": "folio_stripes-data-transfer-components-6.2.1099000000009", "optional": [], "provides": [], "requires": []}
+{"id": "folio_stripes-data-transfer-components-7.0.10990000000014", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-erm-components-9.2.10990000000077", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-final-form-8.1.1090000009", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-form-9.1.1090000004", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-inventory-components-2.0.109000000597", "optional": [], "provides": [], "requires": ["instance-date-types 1.0", "settings 1.0"]}
-{"id": "folio_stripes-marc-components-2.0.10990000000052", "optional": [], "provides": [], "requires": ["instance-authority-linking-rules 1.1"]}
+{"id": "folio_stripes-marc-components-2.0.10990000000055", "optional": [], "provides": [], "requires": ["instance-authority-linking-rules 1.1"]}
 {"id": "folio_stripes-registry-1.0.100011", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-smart-components-10.1.109900000000303", "optional": ["configuration 2.0", "remote-storage-mappings 1.0 2.0", "settings 1.0", "users 16.1"], "provides": [], "requires": ["notes 2.0 3.0 4.0", "password-validator 1.0", "tags 1.0"]}
 {"id": "folio_stripes-template-editor-3.4.10990000000019", "optional": [], "provides": [], "requires": []}
@@ -237,7 +237,7 @@
 {"id": "mod-settings-1.2.0-SNAPSHOT.52", "optional": [], "provides": ["_tenant 2.0", "settings 1.1"], "requires": []}
 {"id": "mod-shared-index-0.0.1-SNAPSHOT.28", "optional": [], "provides": ["_tenant 2.0", "shared-index-clusters 1.0", "shared-index-config-matchkeys 1.0", "shared-index-oai 1.0", "shared-index-records 1.0"], "requires": []}
 {"id": "mod-source-record-manager-3.10.0-SNAPSHOT.1007", "optional": ["authority-note-types 1.0", "authority-source-files 2.2", "instance-authority-linking-rules 1.0"], "provides": ["_jsonSchemas 1.0", "_tenant 2.0", "mapping-metadata-provider 1.1", "mapping-rules-provider 2.0", "metadata-provider-job-execution-logs 1.1", "source-manager-job-executions 3.4", "source-manager-parsed-records 3.0", "source-manager-records 2.1"], "requires": ["alternative-title-types 1.0", "call-number-types 1.0", "classification-types 1.2", "configuration 2.0", "contributor-name-types 1.2", "contributor-types 2.0", "data-import-converter-storage 1.5", "electronic-access-relationships 1.0", "field-protection-settings 1.2", "holdings-note-types 1.0", "holdings-types 1.0", "identifier-types 1.2", "ill-policies 1.0", "instance-date-types 1.0", "instance-formats 2.0", "instance-note-types 1.0", "instance-preceding-succeeding-titles 0.2", "instance-relationship-types 1.0", "instance-statuses 1.0", "instance-types 2.0", "item-damaged-statuses 1.0", "item-note-types 1.0", "loan-types 2.2", "locations 3.0", "material-types 2.2", "modes-of-issuance 1.1", "nature-of-content-terms 1.0", "source-storage-batch 1.3", "source-storage-records 3.3", "source-storage-snapshots 2.1", "source-storage-source-records 3.2", "statistical-code-types 1.0", "statistical-codes 1.0", "subject-sources 1.0", "subject-types 1.0", "users 15.0 16.0"]}
-{"id": "mod-source-record-storage-5.10.0-SNAPSHOT.658", "optional": ["data-import-converter-storage 1.2", "instance-authority-linking-rules 1.0", "instance-authority-links 2.0", "mapping-metadata-provider 1.0"], "provides": ["_tenant 2.0", "source-storage-async-migrations 1.1", "source-storage-batch 1.3", "source-storage-records 3.3", "source-storage-snapshots 2.1", "source-storage-source-records 3.2", "source-storage-stream 1.2", "source-storage-test-records 2.1"], "requires": []}
+{"id": "mod-source-record-storage-5.10.0-SNAPSHOT.664", "optional": ["data-import-converter-storage 1.2", "instance-authority-linking-rules 1.0", "instance-authority-links 2.0", "mapping-metadata-provider 1.0"], "provides": ["_tenant 2.0", "source-storage-async-migrations 1.1", "source-storage-batch 1.3", "source-storage-records 3.3", "source-storage-snapshots 2.1", "source-storage-source-records 3.2", "source-storage-stream 1.2", "source-storage-test-records 2.1"], "requires": []}
 {"id": "mod-spring-template-1.0.0-SNAPSHOT.22", "optional": [], "provides": ["_tenant 1.2", "spring-template 1.0"], "requires": []}
 {"id": "mod-tags-2.3.1-SNAPSHOT.111", "optional": [], "provides": ["_tenant 2.0", "tags 1.0"], "requires": []}
 {"id": "mod-template-engine-1.21.1-SNAPSHOT.100", "optional": [], "provides": ["_tenant 2.0", "template-engine 2.2"], "requires": ["configuration 2.0", "patron-notice-policy-storage 0.13"]}
