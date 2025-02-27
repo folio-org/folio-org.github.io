@@ -357,6 +357,7 @@
       "oas": [],
       "raml": [
         "ramls/acquisition-events.raml",
+        "ramls/audit-cleanup.raml",
         "ramls/audit-data.raml",
         "ramls/circulation-logs.raml",
         "ramls/configuration.raml",
@@ -806,7 +807,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.6"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-entities-links",
     "org": "folio-org"

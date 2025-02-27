@@ -1159,6 +1159,14 @@
     "path": "/audit-data/circulation/logs"
   },
   {
+    "apiDescription": "ramls/audit-cleanup.raml",
+    "apiType": "raml",
+    "interface": "_timer 1.0",
+    "methods": "post:audit_data_cleanup_timer_post",
+    "name": "mod-audit",
+    "path": "/audit-data/cleanup/timer"
+  },
+  {
     "apiDescription": "ramls/inventory-audit.raml",
     "apiType": "raml",
     "interface": "audit-inventory 1.0",
