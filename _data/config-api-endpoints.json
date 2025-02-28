@@ -8250,7 +8250,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/am.yaml",
     "apiType": "oas",
-    "interface": "module-bootstraps 1.0",
+    "interface": "module-bootstraps 1.1",
     "methods": "get:operation/getModuleBootstrap",
     "name": "mgr-applications",
     "path": "/modules/{id}"
@@ -11462,7 +11462,7 @@
   {
     "apiDescription": "ramls/source-record-storage-records.raml",
     "apiType": "raml",
-    "interface": "source-storage-records 3.3",
+    "interface": "source-storage-records 3.4",
     "methods": "get:source_storage_records_get post:source_storage_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/records"
@@ -11470,7 +11470,7 @@
   {
     "apiDescription": "ramls/source-record-storage-records.raml",
     "apiType": "raml",
-    "interface": "source-storage-records 3.3",
+    "interface": "source-storage-records 3.4",
     "methods": "post:source_storage_records_matching_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/records/matching"
@@ -11478,7 +11478,7 @@
   {
     "apiDescription": "ramls/source-record-storage-records.raml",
     "apiType": "raml",
-    "interface": "source-storage-records 3.3",
+    "interface": "source-storage-records 3.4",
     "methods": "delete:source_storage_records__id__delete get:source_storage_records__id__get put:source_storage_records__id__put",
     "name": "mod-source-record-storage",
     "path": "/source-storage/records/{id}"
@@ -11486,7 +11486,7 @@
   {
     "apiDescription": "ramls/source-record-storage-records.raml",
     "apiType": "raml",
-    "interface": "source-storage-records 3.3",
+    "interface": "source-storage-records 3.4",
     "methods": "get:source_storage_records__id__formatted_get",
     "name": "mod-source-record-storage",
     "path": "/source-storage/records/{id}/formatted"
@@ -11494,7 +11494,7 @@
   {
     "apiDescription": "ramls/source-record-storage-records.raml",
     "apiType": "raml",
-    "interface": "source-storage-records 3.3",
+    "interface": "source-storage-records 3.4",
     "methods": "put:source_storage_records__id__generation_put",
     "name": "mod-source-record-storage",
     "path": "/source-storage/records/{id}/generation"
@@ -11502,10 +11502,18 @@
   {
     "apiDescription": "ramls/source-record-storage-records.raml",
     "apiType": "raml",
-    "interface": "source-storage-records 3.3",
+    "interface": "source-storage-records 3.4",
     "methods": "put:source_storage_records__id__suppress_from_discovery_put",
     "name": "mod-source-record-storage",
     "path": "/source-storage/records/{id}/suppress-from-discovery"
+  },
+  {
+    "apiDescription": "ramls/source-record-storage-records.raml",
+    "apiType": "raml",
+    "interface": "source-storage-records 3.4",
+    "methods": "post:source_storage_records__id__un_delete_post",
+    "name": "mod-source-record-storage",
+    "path": "/source-storage/records/{id}/un-delete"
   },
   {
     "apiDescription": "ramls/source-record-storage-snapshots.raml",
