@@ -84,7 +84,7 @@
 {"id": "folio_plugin-find-finc-metadata-collection-8.0.10990000000084", "optional": [], "provides": [], "requires": ["finc-config-metadata-collections 1.0"]}
 {"id": "folio_plugin-find-finc-metadata-source-8.0.10990000000062", "optional": [], "provides": [], "requires": ["finc-config-metadata-sources 1.0"]}
 {"id": "folio_plugin-find-fund-4.0.10990000000010", "optional": [], "provides": [], "requires": []}
-{"id": "folio_plugin-find-import-profile-8.0.109000000357", "optional": [], "provides": [], "requires": ["data-import 3.2", "data-import-converter-storage 1.5", "source-manager-job-executions 3.4"]}
+{"id": "folio_plugin-find-import-profile-8.0.1099000000003", "optional": [], "provides": [], "requires": ["data-import 3.2", "data-import-converter-storage 1.5", "source-manager-job-executions 3.4"]}
 {"id": "folio_plugin-find-instance-9.0.10990000000015", "optional": [], "provides": [], "requires": ["contributor-types 2.0", "instance-types 2.0", "locations 3.0", "search 0.5 1.0"]}
 {"id": "folio_plugin-find-interface-6.0.10990000000010", "optional": [], "provides": [], "requires": ["organizations-storage.interfaces 2.1"]}
 {"id": "folio_plugin-find-license-12.0.10990000000066", "optional": [], "provides": [], "requires": ["licenses 6.0"]}
