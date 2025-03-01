@@ -79,7 +79,7 @@ We follow a variation of the Apache motto:
 
 ## Issue tracker
 
-[https://issues.folio.org](https://issues.folio.org)
+[https://folio-org.atlassian.net/jira](https://folio-org.atlassian.net/jira)
 
 - Specific bugs, problems, feature requests, obscure messages or behaviour.
 

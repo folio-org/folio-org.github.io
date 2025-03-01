@@ -6,13 +6,13 @@ menuInclude: no
 menuTopTitle: Guidelines
 ---
 
-[https://issues.folio.org](https://issues.folio.org)
+[https://folio-org.atlassian.net/jira](https://folio-org.atlassian.net/jira)
 
 The following guidelines assist with knowing what to report, and how to create and manage issues.
 
 ## Sign up for an account
 
-To create issue tickets or add comments, sign up for an account via the [front page](https://issues.folio.org).
+To create issue tickets or add comments, sign up for an account via the [front page](https://folio-org.atlassian.net/jira).
 (This is also used to manage accounts for wiki.folio.org, so same account for both.)
 
 ## Report various issues

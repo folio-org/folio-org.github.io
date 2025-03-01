@@ -41,7 +41,7 @@ Log in to Jenkins and run your jobs at [Jenkins](https://jenkins-aws.indexdata.c
 
 [GitHub](https://github.com/folio-org): Merge temporary release branch `tmp-release-X.Y.0` to master.
 
-[Jira](https://issues.folio.org): Mark as released. Add next versions.
+[Jira](https://folio-org.atlassian.net/jira): Mark as released. Add next versions.
 
 [Slack](https://folio-project.slack.com/): Announce on `#releases`
 
@@ -67,7 +67,7 @@ Make a bug fix on the release for the `X.Y`-series:
 
 Log in to Jenkins and run your jobs at [Jenkins](https://jenkins-aws.indexdata.com/job/folio-org/).
 
-[Jira](https://issues.folio.org): Mark as released. Add next versions.
+[Jira](https://folio-org.atlassian.net/jira): Mark as released. Add next versions.
 
 [Slack](https://folio-project.slack.com/): Announce on `#releases`
 
