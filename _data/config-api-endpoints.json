@@ -2215,7 +2215,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
     "apiType": "oas",
-    "interface": "capabilities 1.0",
+    "interface": "capabilities 1.1",
     "methods": "get:operation/findCapabilities",
     "name": "mod-roles-keycloak",
     "path": "/capabilities"
@@ -2223,7 +2223,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
     "apiType": "oas",
-    "interface": "capabilities 1.0",
+    "interface": "capabilities 1.1",
     "methods": "get:operation/getCapabilityById",
     "name": "mod-roles-keycloak",
     "path": "/capabilities/{id}"
@@ -2247,7 +2247,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
     "apiType": "oas",
-    "interface": "capabilities 1.0",
+    "interface": "capabilities 1.1",
     "methods": "get:operation/findCapabilitiesByCapabilitySetId",
     "name": "mod-roles-keycloak",
     "path": "/capability-sets/{id}/capabilities"
@@ -5165,6 +5165,14 @@
     "methods": "delete:finance_storage_groups__id__delete get:finance_storage_groups__id__get put:finance_storage_groups__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/groups/{id}"
+  },
+  {
+    "apiDescription": "ramls/job_number.raml",
+    "apiType": "raml",
+    "interface": "finance-storage.job-number 1.0",
+    "methods": "get:finance_storage_job_number_get",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/job-number"
   },
   {
     "apiDescription": "ramls/ledger_rollover.raml",
@@ -10712,7 +10720,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
     "apiType": "oas",
-    "interface": "role-capabilities 1.0",
+    "interface": "role-capabilities 1.1",
     "methods": "get:operation/getRoleCapabilities post:operation/createRoleCapabilities",
     "name": "mod-roles-keycloak",
     "path": "/roles/capabilities"
@@ -10752,7 +10760,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
     "apiType": "oas",
-    "interface": "role-capabilities 1.0",
+    "interface": "role-capabilities 1.1",
     "methods": "delete:operation/deleteRoleCapabilities get:operation/findCapabilitiesByRoleId put:operation/updateRoleCapabilities",
     "name": "mod-roles-keycloak",
     "path": "/roles/{id}/capabilities"
@@ -12294,7 +12302,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
     "apiType": "oas",
-    "interface": "user-capabilities 1.0",
+    "interface": "user-capabilities 1.1",
     "methods": "get:operation/getUserCapabilities post:operation/createUserCapabilities",
     "name": "mod-roles-keycloak",
     "path": "/users/capabilities"
@@ -12366,7 +12374,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
     "apiType": "oas",
-    "interface": "user-capabilities 1.0",
+    "interface": "user-capabilities 1.1",
     "methods": "delete:operation/deleteUserCapabilities get:operation/findCapabilitiesByUserId put:operation/updateUserCapabilities",
     "name": "mod-roles-keycloak",
     "path": "/users/{id}/capabilities"

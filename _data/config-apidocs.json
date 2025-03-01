@@ -970,6 +970,7 @@
         "ramls/group-budgets.raml",
         "ramls/group.raml",
         "ramls/group_fund_fy.raml",
+        "ramls/job_number.raml",
         "ramls/ledger-rollover-errors.raml",
         "ramls/ledger.raml",
         "ramls/ledger_rollover-budgets.raml",
@@ -1874,7 +1875,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.6"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-roles-keycloak",
     "org": "folio-org"
