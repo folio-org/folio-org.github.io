@@ -72,15 +72,13 @@ Note that verification of GitHub links is disabled.
 ## Work area - management of dev site
 
 See [notes](work/README.md) about the operation and management.
-(Despite the name of this repository, it is not built using the GitHub tools.)
 
 ## Deployment
 
 The master branch is automatically deployed as [dev.folio.org](https://dev.folio.org/)
 
-Other branches are re-built upon push of changes. Follow the GitHub link from the branch's continuous-integration details to view the generated branch site.
-
-**NOTE:** Since May 2023 the AWS Codebuild system has denied building of new branches via the GitHub UI. A new branch can still be created, and used locally, and used for the pull-request. But the ability to view an AWS build of the branch via GitHub is now gone.
+If needed then other branches can be built by running the GitHub Jekyll Workflow against the new branch.
+This will build but not deploy.
 
 ## Additional information
 
