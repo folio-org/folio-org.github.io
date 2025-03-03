@@ -17,7 +17,7 @@ See the [Contributor License Agreement](#contributor-license-agreement) section 
 
 ## Issue tracker
 
-The FOLIO Issue Tracker is at [issues.folio.org](https://issues.folio.org/)
+The FOLIO Issue Tracker is at [https://folio-org.atlassian.net/jira](https://folio-org.atlassian.net/jira)
 and see the usage [guidelines](/guidelines/issue-tracker/)
 which encourage reports of various types of issue and explain how to.
 
@@ -97,12 +97,11 @@ For example when there is a need to rename a file, be sure to use 'git mv ...' t
 ### Feature branches
 
 Feature branches should be branched off from the master. The naming of those
-is not strict, but if you start a branch to fix issue okapi-xxx filed in
-[issues.folio.org](https://issues.folio.org/) then you might well call the
-branch _okapi-xxx_ (or if you want to be more descriptive, something
-like _okapi-xxx-contribution-guidelines_):
+is not strict, but if you start a branch to fix Jira ticket OKAPI-99999
+ then name the branch to include that ticket number plus something descriptive
+such as OKAPI-99999-contrib-guidelines):
 
-    git checkout -b okapi-xxx
+    git checkout -b OKAPI-99999-contrib-guidelines
 
 You can commit stuff as you go, but try not to push obviously broken stuff into
 GitHub, not even in your development branch -- that will be visible for the
@@ -112,10 +111,10 @@ code, for example for collaborating, of course you need to push it. Naturally
 you will write decent commit messages explaining what you have done.
 
 The first time you want to push your branch to GitHub, you may encounter an
-error "_The current branch okapi-xxx has no upstream branch_". Git tells you
+error "_The current branch OKAPI-99999-contrib-guidelines has no upstream branch_". Git tells you
 what to do, namely:
 
-    git push --set-upstream origin okapi-xxx
+    git push --set-upstream origin OKAPI-99999-contrib-guidelines
 
 Once you have done that once, a simple `git push` will be sufficient
 thereafter.
@@ -202,15 +201,17 @@ necessary, and select "_Confirm Merge_". GitHub should tell you that the
 it now, it has served its purpose. But if you think there is more work that
 should be done in this branch, of course you don't delete it.
 
-This merging of the pull request's branch okapi-xxx can also be done on the
+This merging of the pull request's branch OKAPI-99999-contrib-guidelines can also be done on the
 command line, if you prefer.
 
     git checkout master
-    git merge okapi-xxx
+    git merge OKAPI-99999-contrib-guidelines
 
 When done, you probably want to delete the local branch from your own machine
 
-    git branch -d okapi-xxx
+    git branch -d OKAPI-99999-contrib-guidelines
+
+Also tidy up to delete the remote branch.
 
 ## Contributor License Agreement
 

@@ -51,7 +51,7 @@ Some of the important forums to collaborate, discuss FOLIO, interact with other 
       </td>
     </tr>
     <tr>
-      <td> <a href="https://issues.folio.org">issues.folio.org</a> </td>
+      <td> <a href="https://folio-org.atlassian.net/jira">https://folio-org.atlassian.net/jira</a> </td>
       <td> The issue tracking and bug tracking system.
       </td>
       <td>
