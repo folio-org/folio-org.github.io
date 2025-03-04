@@ -357,6 +357,7 @@
       "oas": [],
       "raml": [
         "ramls/acquisition-events.raml",
+        "ramls/audit-cleanup.raml",
         "ramls/audit-data.raml",
         "ramls/circulation-logs.raml",
         "ramls/configuration.raml",
@@ -806,7 +807,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.6"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-entities-links",
     "org": "folio-org"
@@ -969,6 +970,7 @@
         "ramls/group-budgets.raml",
         "ramls/group.raml",
         "ramls/group_fund_fy.raml",
+        "ramls/job_number.raml",
         "ramls/ledger-rollover-errors.raml",
         "ramls/ledger.raml",
         "ramls/ledger_rollover-budgets.raml",
@@ -1873,7 +1875,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.6"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-roles-keycloak",
     "org": "folio-org"
@@ -2021,7 +2023,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-source-record-storage",
     "org": "folio-org"
