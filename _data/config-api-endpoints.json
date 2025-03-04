@@ -1945,7 +1945,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.5",
+    "interface": "browse 2.0",
     "methods": "get:operation/browseAuthorities",
     "name": "mod-search",
     "path": "/browse/authorities"
@@ -1953,15 +1953,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.5",
-    "methods": "get:operation/browseInstancesByCallNumberLegacy",
-    "name": "mod-search",
-    "path": "/browse/call-numbers/instances"
-  },
-  {
-    "apiDescription": "target/api/openapi/mod-search.yaml",
-    "apiType": "oas",
-    "interface": "browse 1.5",
+    "interface": "browse 2.0",
     "methods": "get:operation/browseInstancesByCallNumber",
     "name": "mod-search",
     "path": "/browse/call-numbers/{browseOptionId}/instances"
@@ -1969,7 +1961,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.5",
+    "interface": "browse 2.0",
     "methods": "get:operation/browseInstancesByClassificationNumber",
     "name": "mod-search",
     "path": "/browse/classification-numbers/{browseOptionId}/instances"
@@ -1993,7 +1985,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.5",
+    "interface": "browse 2.0",
     "methods": "get:operation/browseInstancesByContributor",
     "name": "mod-search",
     "path": "/browse/contributors/instances"
@@ -2001,7 +1993,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 1.5",
+    "interface": "browse 2.0",
     "methods": "get:operation/browseInstancesBySubject",
     "name": "mod-search",
     "path": "/browse/subjects/instances"
@@ -2367,10 +2359,18 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-loans 1.1",
+    "interface": "circulation-bff-loans 1.2",
     "methods": "post:operation/checkInByBarcode",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/loans/check-in-by-barcode"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
+    "apiType": "oas",
+    "interface": "circulation-bff-loans 1.2",
+    "methods": "post:operation/checkOutByBarcode",
+    "name": "mod-circulation-bff",
+    "path": "/circulation-bff/loans/check-out-by-barcode"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
@@ -12234,6 +12234,14 @@
     "methods": "post:operation/recoverForgottenUsername",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/forgotten/username"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
+    "apiType": "oas",
+    "interface": "users-keycloak 1.0",
+    "methods": "delete:operation/unlinkUserIdpMigration post:operation/linkUserIdpMigration",
+    "name": "mod-users-keycloak",
+    "path": "/users-keycloak/idp-migrations"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
