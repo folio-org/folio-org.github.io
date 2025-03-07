@@ -23,6 +23,8 @@ and the [Build, test, and deployment infrastructure](/guides/automation/).
 
 The procedure is outlined here for "Okapi" and is similar for other back-end Maven-based modules.
 
+Please follow all steps in a timely manner, i.e. do not follow some steps one day and the rest the next day, as that will lead to broken systems.
+
 ### Quick summary major/feature release {#summary-mvn}
 
 (However follow this complete document for its important information.)
@@ -39,7 +41,8 @@ In this example we are releasing `X.Y.0` of a module.
 ```
 Log in to Jenkins and run your jobs at [Jenkins](https://jenkins-aws.indexdata.com/job/folio-org/).
 
-[GitHub](https://github.com/folio-org): Merge temporary release branch `tmp-release-X.Y.0` to master.
+[GitHub](https://github.com/folio-org): Merge temporary release branch `tmp-release-X.Y.0` to mainline,
+after [Verify increment POM version mainline](#verify-increment-pom-version-mainline).
 
 [Jira](https://folio-org.atlassian.net/jira): Mark as released. Add next versions.
 
@@ -200,7 +203,8 @@ Your release tag must be prefixed with 'v' (the default) and you can
 always change the next SNAPSHOT version later if necessary.
 
 For the question about the next post-release "new development version", rather than accepting the default which suggests increment of "patch" version, instead specify the next "minor" version.
-For example `2.18.0-SNAPSHOT` rather than `2.17.1-SNAPSHOT`
+For example `2.18.0-SNAPSHOT` rather than `2.17.1-SNAPSHOT` version.
+Refer to additional explanation in the [next](#ensure-increment-pom-version-mainline) section.
 
 Assuming there are no build errors, then you are ready to push your changes to
 GitHub and delete the release.properties and pom.xml.releaseBackup files.
@@ -209,6 +213,12 @@ GitHub and delete the release.properties and pom.xml.releaseBackup files.
 git push && git push --tags
 mvn release:clean
 ```
+
+### Ensure increment POM version mainline
+
+Regarding the previous step, it is vitally important for continuous integration that the POM version on mainline branch is incremented to the next minor version.
+Essentially that version must be greater than any released version.
+Otherwise CI will use outdated snapshot versions and lead to undesired consequences (which can also be failed builds and hence disruption for the whole FOLIO project).
 
 ### Optional: Update any scripts and descriptors for next development release
 
@@ -234,7 +244,14 @@ Jenkins credentials utilize the GitHub authentication for FOLIO developers, so e
 Select the [GitHub folio-org](https://jenkins-aws.indexdata.com/job/folio-org/) folder, then follow to the relevant job (e.g.
 [mod-circulation](https://jenkins-aws.indexdata.com/job/folio-org/job/mod-circulation/)) and select the "Tags" tab. Select the new release version tag, then the "Build Now" link in the left-hand panel to trigger it.
 
+### Verify increment POM version mainline
+
+Before doing the merge in the next step, be absolutely sure that the POM version will be appropriately incremented as described in the [earlier](#ensure-increment-pom-version-mainline) steps.
+
 ### Merge the temporary release branch into master
+
+Before proceeding, verify the [previous](#verify-increment-pom-version-mainline) step.
+
 Go to GitHub and make a pull request for the release branch you just pushed.
 Wait for all the tests to pass and merge the pull request.
 
@@ -292,7 +309,7 @@ Each platform repository has three kinds of protected, long-term branches:
 
 * 'master' branch - This branch represents the most up-to-date set of compatible, released FOLIO modules.
 * 'snapshot' branch - This branch represents the most up-to-date set of compatible, unreleased ("snapshots") FOLIO modules.
-* release branch (e.g. 'r1-2023') - These branches represent a set of compatible, released FOLIO modules that have passed user-acceptance testing. This is typically the most stable branch of the FOLIO platform.
+* release branch (e.g. 'R2-2024') - These branches represent a set of compatible, released FOLIO modules that have passed user-acceptance testing. This is typically the most stable branch of the FOLIO platform.
 
 Each of these branches is managed in similar, although not entirely identical ways.
 The master and release branches contain sets of FOLIO modules that are pinned to specific released versions.
