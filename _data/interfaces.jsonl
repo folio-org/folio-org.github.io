@@ -13,7 +13,7 @@
 {"id": "edge-orders-3.2.0-SNAPSHOT.80", "optional": [], "provides": [], "requires": ["ebsconet 2.0", "gobi 1.12", "login 5.0 6.0 7.0 7.3"]}
 {"id": "edge-patron-5.3.0-SNAPSHOT.138", "optional": [], "provides": [], "requires": ["circulation 9.5 10.0 11.0 12.0 13.0 14.0", "login 5.0 6.0 7.0", "patron 6.3"]}
 {"id": "edge-resolver-1.0.0-SNAPSHOT.10", "optional": [], "provides": [], "requires": ["users-bl 3.0"]}
-{"id": "edge-rtac-2.9.0-SNAPSHOT.105", "optional": [], "provides": [], "requires": ["login 5.0 6.0 7.0", "rtac-batch 1.1"]}
+{"id": "edge-rtac-2.9.0-SNAPSHOT.106", "optional": [], "provides": [], "requires": ["login 5.0 6.0 7.0", "rtac-batch 1.1"]}
 {"id": "edge-search-srs-1.0.0-SNAPSHOT.7", "optional": [], "provides": [], "requires": ["login 5.0 6.0 7.0"]}
 {"id": "edge-sip2-3.3.3-SNAPSHOT.176", "optional": [], "provides": [], "requires": ["circulation 14.4", "configuration 2.0", "feesfines 19.0", "login 7.3", "search 1.3", "users 16.3"]}
 {"id": "edge-users-2.1.0-SNAPSHOT.7", "optional": [], "provides": [], "requires": ["users 15.5 16.0"]}
