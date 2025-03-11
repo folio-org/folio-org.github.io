@@ -6751,14 +6751,6 @@
     "path": "/instance-statuses/{instanceStatusId}"
   },
   {
-    "apiDescription": "ramls/instance-storage-batch.raml",
-    "apiType": "raml",
-    "interface": "instance-storage-batch 3.0",
-    "methods": "post:instance_storage_batch_instances_post",
-    "name": "mod-inventory-storage",
-    "path": "/instance-storage/batch/instances"
-  },
-  {
     "apiDescription": "ramls/instance-sync.raml",
     "apiType": "raml",
     "interface": "instance-storage-batch-sync 3.0",
@@ -6905,7 +6897,7 @@
   {
     "apiDescription": "ramls/inventory-hierarchy.raml",
     "apiType": "raml",
-    "interface": "inventory-hierarchy 0.5",
+    "interface": "inventory-hierarchy 0.6",
     "methods": "post:inventory_hierarchy_items_and_holdings_post",
     "name": "mod-inventory-storage",
     "path": "/inventory-hierarchy/items-and-holdings"
@@ -6913,7 +6905,7 @@
   {
     "apiDescription": "ramls/inventory-hierarchy.raml",
     "apiType": "raml",
-    "interface": "inventory-hierarchy 0.5",
+    "interface": "inventory-hierarchy 0.6",
     "methods": "get:inventory_hierarchy_updated_instance_ids_get",
     "name": "mod-inventory-storage",
     "path": "/inventory-hierarchy/updated-instance-ids"

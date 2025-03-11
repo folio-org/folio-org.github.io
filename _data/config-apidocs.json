@@ -1177,7 +1177,6 @@
         "ramls/instance-relationship-type.raml",
         "ramls/instance-set.raml",
         "ramls/instance-status.raml",
-        "ramls/instance-storage-batch.raml",
         "ramls/instance-storage-bulk.raml",
         "ramls/instance-storage.raml",
         "ramls/instance-sync-unsafe.raml",
@@ -1213,7 +1212,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.6"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-inventory-storage",
     "org": "folio-org"
@@ -2120,7 +2119,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.6"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-users",
     "org": "folio-org"
