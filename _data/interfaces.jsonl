@@ -59,7 +59,7 @@
 {"id": "folio_ld-folio-wrapper-1.2.109900000000189", "optional": [], "provides": [], "requires": ["linked-data 1.0", "search 1.3"]}
 {"id": "folio_ldp-3.0.10990000000042", "optional": [], "provides": [], "requires": ["ldp-query 1.2", "settings 1.0"]}
 {"id": "folio_licenses-12.0.109900000000126", "optional": ["organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["licenses 6.0"]}
-{"id": "folio_linked-data-1.0.109900000000623", "optional": [], "provides": [], "requires": []}
+{"id": "folio_linked-data-1.0.109900000000626", "optional": [], "provides": [], "requires": []}
 {"id": "folio_lists-4.0.109900000000761", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0"]}
 {"id": "folio_local-kb-admin-9.0.10990000000077", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_lti-courses-1.1.100035", "optional": [], "provides": [], "requires": ["configuration 2.0 3.0 4.0 5.0"]}
