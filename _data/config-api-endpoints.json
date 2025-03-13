@@ -11183,7 +11183,7 @@
     "apiDescription": "openapi/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
-    "methods": "delete:operation/deleteModelRuleset get:operation/getModelRuleset put:operation/putModelRuleset",
+    "methods": "delete:operation/deleteModelRuleset get:operation/getModelRuleset",
     "name": "mod-serials-management",
     "path": "/serials-management/modelRulesets/{uuid}"
   },
