@@ -1,9 +1,9 @@
 {"id": "edge-caiasoft-2.5.0-SNAPSHOT.54", "optional": [], "provides": [], "requires": ["login 7.3", "remote-storage-accessions 1.1", "remote-storage-check-in 1.2", "remote-storage-configurations 1.1", "remote-storage-retrievals 1.1"]}
 {"id": "edge-connexion-1.4.0-SNAPSHOT.37", "optional": [], "provides": ["connexion 1.0"], "requires": ["copycat-imports 1.0", "copycat-profiles 1.0", "login 7.0"]}
-{"id": "edge-courses-1.6.0-SNAPSHOT.26", "optional": [], "provides": [], "requires": ["course-reserves-storage 0.3", "login 7.1"]}
+{"id": "edge-courses-1.6.0", "optional": [], "provides": [], "requires": ["course-reserves-storage 0.3", "login 7.1"]}
 {"id": "edge-dcb-1.4.0-SNAPSHOT.36", "optional": [], "provides": [], "requires": ["login 7.3", "transactions 1.1"]}
 {"id": "edge-dematic-3.0.0-SNAPSHOT.68", "optional": [], "provides": [], "requires": ["login 7.0", "remote-storage-accessions 1.1", "remote-storage-check-in 1.2", "remote-storage-configurations 1.1", "remote-storage-items 1.0", "remote-storage-retrievals 1.1"]}
-{"id": "edge-erm-1.4.0-SNAPSHOT.14", "optional": [], "provides": [], "requires": ["erm 6.1 7.1", "login 7.1"]}
+{"id": "edge-erm-1.4.0", "optional": [], "provides": [], "requires": ["erm 6.1 7.1", "login 7.1"]}
 {"id": "edge-fqm-4.1.0-SNAPSHOT.46", "optional": [], "provides": [], "requires": ["entity-types 2.1", "fqm-query 2.1", "login 7.0"]}
 {"id": "edge-inn-reach-3.5.0-SNAPSHOT.66", "optional": [], "provides": [], "requires": ["login 7.3", "permissions 5.8", "users 16.4"]}
 {"id": "edge-inventory-2.2.0-SNAPSHOT.11", "optional": [], "provides": [], "requires": ["consortium-search 2.1", "holdings-storage 5.1 6.0 8.0", "identifier-types 1.2", "instance-formats 2.0", "instance-note-types 1.0", "instance-types 2.0", "inventory 13.0 14.0", "login 7.0 7.1", "material-types 2.2", "modes-of-issuance 1.1", "nature-of-content-terms 1.0", "search 1.2", "service-points 3.2 3.3", "source-storage-records 3.1", "user-tenants 1.0"]}
@@ -36,9 +36,9 @@
 {"id": "folio_courses-7.0.10990000000040", "optional": [], "provides": [], "requires": ["copyright-status-storage 0.1", "course-reserves-storage 0.2", "course-type-storage 0.1", "department-storage 0.1", "item-storage 7.1 8.0 9.0 10.0", "loan-types 2.2", "locations 3.0", "processing-status-storage 0.1", "role-storage 0.1", "term-storage 0.1"]}
 {"id": "folio_dashboard-7.1.109900000000143", "optional": [], "provides": [], "requires": ["servint 4.0"]}
 {"id": "folio_data-export-7.0.10990000000029", "optional": [], "provides": [], "requires": ["data-export 5.0"]}
-{"id": "folio_data-import-9.0.10990000000033", "optional": [], "provides": [], "requires": ["data-import 3.2", "data-import-converter-storage 1.5", "source-manager-job-executions 3.4"]}
+{"id": "folio_data-import-9.0.10990000000038", "optional": [], "provides": [], "requires": ["data-import 3.2", "data-import-converter-storage 1.5", "source-manager-job-executions 3.4"]}
 {"id": "folio_developer-10.0.109900000000143", "optional": ["app-manager 1.0", "capabilities 1.0", "capability-sets 1.0"], "provides": [], "requires": ["okapi 1.9"]}
-{"id": "folio_eholdings-11.0.109900000000145", "optional": [], "provides": [], "requires": ["eholdings 4.0", "erm 1.0 2.0 3.0 4.0 5.0 6.0 7.0", "tags 1.0"]}
+{"id": "folio_eholdings-11.1.109900000000153", "optional": [], "provides": [], "requires": ["eholdings 4.0", "erm 1.0 2.0 3.0 4.0 5.0 6.0 7.0", "tags 1.0"]}
 {"id": "folio_erm-1.0.100022", "optional": [], "provides": [], "requires": []}
 {"id": "folio_erm-comparisons-8.1.10990000000082", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_erm-usage-11.0.109900000000299", "optional": [], "provides": [], "requires": ["aggregator-settings 2.0", "configuration 2.0", "counter-reports 4.0", "custom-reports 1.0 2.0", "erm-usage-files 1.0", "erm-usage-harvester 2.0", "tags 1.0", "usage-data-providers 3.1"]}
