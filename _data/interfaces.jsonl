@@ -38,7 +38,7 @@
 {"id": "folio_data-export-7.0.10990000000033", "optional": [], "provides": [], "requires": ["data-export 5.0"]}
 {"id": "folio_data-import-9.0.10990000000042", "optional": [], "provides": [], "requires": ["data-import 3.2", "data-import-converter-storage 1.5", "source-manager-job-executions 3.4"]}
 {"id": "folio_developer-10.0.109900000000159", "optional": ["app-manager 1.0", "capabilities 1.0", "capability-sets 1.0"], "provides": [], "requires": ["okapi 1.9"]}
-{"id": "folio_eholdings-11.1.109900000000164", "optional": [], "provides": [], "requires": ["eholdings 4.0", "erm 1.0 2.0 3.0 4.0 5.0 6.0 7.0", "tags 1.0"]}
+{"id": "folio_eholdings-11.1.109900000000167", "optional": [], "provides": [], "requires": ["eholdings 4.0", "erm 1.0 2.0 3.0 4.0 5.0 6.0 7.0", "tags 1.0"]}
 {"id": "folio_erm-1.0.100022", "optional": [], "provides": [], "requires": []}
 {"id": "folio_erm-comparisons-8.1.10990000000086", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_erm-usage-11.0.109900000000304", "optional": [], "provides": [], "requires": ["aggregator-settings 2.0", "configuration 2.0", "counter-reports 4.0", "custom-reports 1.0 2.0", "erm-usage-files 1.0", "erm-usage-harvester 2.0", "tags 1.0", "usage-data-providers 3.1"]}
