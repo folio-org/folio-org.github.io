@@ -37,7 +37,7 @@
 {"id": "folio_dashboard-7.1.109900000000147", "optional": [], "provides": [], "requires": ["servint 4.0"]}
 {"id": "folio_data-export-7.0.10990000000033", "optional": [], "provides": [], "requires": ["data-export 5.0"]}
 {"id": "folio_data-import-9.0.10990000000042", "optional": [], "provides": [], "requires": ["data-import 3.2", "data-import-converter-storage 1.5", "source-manager-job-executions 3.4"]}
-{"id": "folio_developer-10.0.109900000000159", "optional": ["app-manager 1.0", "capabilities 1.0", "capability-sets 1.0"], "provides": [], "requires": ["okapi 1.9"]}
+{"id": "folio_developer-10.0.109900000000164", "optional": ["app-manager 1.0", "capabilities 1.0", "capability-sets 1.0"], "provides": [], "requires": ["okapi 1.9"]}
 {"id": "folio_eholdings-11.1.109900000000167", "optional": [], "provides": [], "requires": ["eholdings 4.0", "erm 1.0 2.0 3.0 4.0 5.0 6.0 7.0", "tags 1.0"]}
 {"id": "folio_erm-1.0.100022", "optional": [], "provides": [], "requires": []}
 {"id": "folio_erm-comparisons-8.1.10990000000086", "optional": [], "provides": [], "requires": ["erm 7.0"]}
@@ -117,7 +117,7 @@
 {"id": "folio_stripes-erm-components-9.2.10990000000077", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-final-form-8.1.1090000009", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-form-9.1.1090000004", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-inventory-components-2.0.109000000624", "optional": [], "provides": [], "requires": ["instance-date-types 1.0", "settings 1.0"]}
+{"id": "folio_stripes-inventory-components-2.0.109000000629", "optional": [], "provides": [], "requires": ["instance-date-types 1.0", "settings 1.0"]}
 {"id": "folio_stripes-marc-components-2.0.109900000000117", "optional": [], "provides": [], "requires": ["audit-marc 1.0", "instance-authority-linking-rules 1.1"]}
 {"id": "folio_stripes-registry-1.0.100011", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-smart-components-10.1.109900000000317", "optional": ["configuration 2.0", "remote-storage-mappings 1.0 2.0", "settings 1.0", "users 16.1"], "provides": [], "requires": ["notes 2.0 3.0 4.0", "password-validator 1.0", "tags 1.0"]}
