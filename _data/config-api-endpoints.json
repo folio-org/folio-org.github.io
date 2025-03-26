@@ -5761,7 +5761,7 @@
   {
     "apiDescription": "ramls/fincConfigMetadataCollections.raml",
     "apiType": "raml",
-    "interface": "finc-config-metadata-collections 1.0",
+    "interface": "finc-config-metadata-collections 1.1",
     "methods": "get:finc_config_metadata_collections_get post:finc_config_metadata_collections_post",
     "name": "mod-finc-config",
     "path": "/finc-config/metadata-collections"
@@ -5769,7 +5769,7 @@
   {
     "apiDescription": "ramls/fincConfigMetadataCollections.raml",
     "apiType": "raml",
-    "interface": "finc-config-metadata-collections 1.0",
+    "interface": "finc-config-metadata-collections 1.1",
     "methods": "delete:finc_config_metadata_collections__id__delete get:finc_config_metadata_collections__id__get put:finc_config_metadata_collections__id__put",
     "name": "mod-finc-config",
     "path": "/finc-config/metadata-collections/{id}"
