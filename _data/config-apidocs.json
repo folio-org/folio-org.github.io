@@ -1013,7 +1013,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mod-finc-config",
     "org": "folio-org"
