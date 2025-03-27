@@ -54,6 +54,8 @@ The environments are completely torn-down and rebuilt again.
 
 If an error message (in the 5** series) is shown for the entry point of these sites, then that probably means that it is in the process of being rebuilt (see its "Jenkins job" link).
 
+(There is also the Wiki page [Reference environments](https://folio-org.atlassian.net/wiki/spaces/FOLIJET/pages/513704182/Reference+environments) which lists some other environments related to ECS and Eureka.)
+
 ### Developer scratch environments
 
 Team-specific testing and development does not happen on these reference environments.
