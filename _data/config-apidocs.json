@@ -330,7 +330,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.6"
+      "generator": "api_doc.py 1.7"
     },
     "name": "mgr-tenant-entitlements",
     "org": "folio-org"
@@ -961,6 +961,7 @@
       "raml": [
         "ramls/budget.raml",
         "ramls/budget_expense_class.raml",
+        "ramls/exchange_rate_source.raml",
         "ramls/expense_class.raml",
         "ramls/finance-data.raml",
         "ramls/fiscal-year.raml",
@@ -1576,6 +1577,7 @@
         "ramls/export_history.raml",
         "ramls/order-invoice-relns.raml",
         "ramls/order-templates.raml",
+        "ramls/order-templaty_category.raml",
         "ramls/pieces-batch.raml",
         "ramls/pieces.raml",
         "ramls/po-line-batch.raml",
