@@ -92,7 +92,6 @@ data-import:
     - mod-data-export-spring
     - mod-data-export-worker
     - mod-data-export
-    - mod-hub-data-import
     - mod-source-record-manager
     - mod-source-record-storage
     - mod-user-import
