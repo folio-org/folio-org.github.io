@@ -1074,23 +1074,6 @@
   },
   {
     "config": {
-      "oas": [
-        "src/main/resources/swagger.api/mod-hub-data-import.yaml"
-      ],
-      "raml": [],
-      "upload": []
-    },
-    "metadata": {
-      "apiTypes": [
-        "OAS"
-      ],
-      "generator": "api_doc.py 1.5"
-    },
-    "name": "mod-hub-data-import",
-    "org": "folio-org"
-  },
-  {
-    "config": {
       "oas": [],
       "raml": [
         "ramls/idm-connect.raml"
@@ -1146,6 +1129,23 @@
       "generator": "api_doc.py 1.7"
     },
     "name": "mod-inventory",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/openapi/inventory-import-1.0.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.7"
+    },
+    "name": "mod-inventory-import",
     "org": "folio-org"
   },
   {

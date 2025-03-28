@@ -6935,6 +6935,126 @@
     "path": "/inventory-hierarchy/updated-instance-ids"
   },
   {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/getImportConfigs post:operation/postImportConfig",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/import-configs"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/launchImportVerticle",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/import-configs/xml-bulk/{id}/enable"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "post:operation/importXmlRecords",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/import-configs/xml-bulk/{id}/import"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "delete:operation/deleteImportConfig get:operation/getImportConfig put:operation/putImportConfig",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/import-configs/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/getImportJobs post:operation/postImportJob",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/import-jobs"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "delete:operation/deleteImportJob get:operation/getImportJob",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/import-jobs/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/getImportJobLogLines post:operation/postImportJobLogLines",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/import-jobs/{id}/log"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "_timer 1.0",
+    "methods": "post:operation/purgeAgedLogs",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/purge-aged-logs"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/getSteps post:operation/postStep",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/steps"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "delete:operation/deleteStep get:operation/getStep put:operation/putStep",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/steps/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/getScript put:operation/putScript",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/steps/{id}/script"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/getTransformations post:operation/postTransformation",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/transformations"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "delete:operation/deleteTransformation get:operation/getTransformation put:operation/putTransformation",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/transformations/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "delete:operation/deleteTsas get:operation/getTsas post:operation/postTsa",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/tsas"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "delete:operation/deleteTsa get:operation/getTsa put:operation/putTsa",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/tsas/{id}"
+  },
+  {
     "apiDescription": "ramls/inventory-reindex-records.raml",
     "apiType": "raml",
     "interface": "inventory-reindex-records 1.0",
