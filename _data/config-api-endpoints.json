@@ -5769,7 +5769,7 @@
   {
     "apiDescription": "ramls/isils.raml",
     "apiType": "raml",
-    "interface": "finc-config-isils 1.0",
+    "interface": "finc-config-isils 2.0",
     "methods": "get:finc_config_isils_get post:finc_config_isils_post",
     "name": "mod-finc-config",
     "path": "/finc-config/isils"
@@ -5777,7 +5777,7 @@
   {
     "apiDescription": "ramls/isils.raml",
     "apiType": "raml",
-    "interface": "finc-config-isils 1.0",
+    "interface": "finc-config-isils 2.0",
     "methods": "delete:finc_config_isils__id__delete get:finc_config_isils__id__get put:finc_config_isils__id__put",
     "name": "mod-finc-config",
     "path": "/finc-config/isils/{id}"
