@@ -6946,9 +6946,17 @@
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
     "interface": "inventory-import 1.0",
-    "methods": "get:operation/launchImportVerticle",
+    "methods": "get:operation/startImportVerticle",
     "name": "mod-inventory-import",
-    "path": "/inventory-import/import-configs/xml-bulk/{id}/enable"
+    "path": "/inventory-import/import-configs/xml-bulk/{id}/activate"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/stopImportVerticle",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/import-configs/xml-bulk/{id}/deactivate"
   },
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
