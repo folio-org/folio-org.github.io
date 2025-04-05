@@ -9336,22 +9336,6 @@
     "path": "/orders/wrapper-pieces/{id}"
   },
   {
-    "apiDescription": "ramls/address.raml",
-    "apiType": "raml",
-    "interface": "organizations-storage.addresses 1.1",
-    "methods": "get:organizations_storage_addresses_get post:organizations_storage_addresses_post",
-    "name": "mod-organizations-storage",
-    "path": "/organizations-storage/addresses"
-  },
-  {
-    "apiDescription": "ramls/address.raml",
-    "apiType": "raml",
-    "interface": "organizations-storage.addresses 1.1",
-    "methods": "delete:organizations_storage_addresses__id__delete get:organizations_storage_addresses__id__get put:organizations_storage_addresses__id__put",
-    "name": "mod-organizations-storage",
-    "path": "/organizations-storage/addresses/{id}"
-  },
-  {
     "apiDescription": "ramls/audit-outbox.raml",
     "apiType": "raml",
     "interface": "_timer 1.0",
@@ -9424,22 +9408,6 @@
     "path": "/organizations-storage/contacts/{id}"
   },
   {
-    "apiDescription": "ramls/email.raml",
-    "apiType": "raml",
-    "interface": "organizations-storage.emails 1.1",
-    "methods": "get:organizations_storage_emails_get post:organizations_storage_emails_post",
-    "name": "mod-organizations-storage",
-    "path": "/organizations-storage/emails"
-  },
-  {
-    "apiDescription": "ramls/email.raml",
-    "apiType": "raml",
-    "interface": "organizations-storage.emails 1.1",
-    "methods": "delete:organizations_storage_emails__id__delete get:organizations_storage_emails__id__get put:organizations_storage_emails__id__put",
-    "name": "mod-organizations-storage",
-    "path": "/organizations-storage/emails/{id}"
-  },
-  {
     "apiDescription": "ramls/interface.raml",
     "apiType": "raml",
     "interface": "organizations-storage.interfaces 2.1",
@@ -9496,22 +9464,6 @@
     "path": "/organizations-storage/organizations/{id}"
   },
   {
-    "apiDescription": "ramls/phone_number.raml",
-    "apiType": "raml",
-    "interface": "organizations-storage.phone-numbers 2.0",
-    "methods": "get:organizations_storage_phone_numbers_get post:organizations_storage_phone_numbers_post",
-    "name": "mod-organizations-storage",
-    "path": "/organizations-storage/phone-numbers"
-  },
-  {
-    "apiDescription": "ramls/phone_number.raml",
-    "apiType": "raml",
-    "interface": "organizations-storage.phone-numbers 2.0",
-    "methods": "delete:organizations_storage_phone_numbers__id__delete get:organizations_storage_phone_numbers__id__get put:organizations_storage_phone_numbers__id__put",
-    "name": "mod-organizations-storage",
-    "path": "/organizations-storage/phone-numbers/{id}"
-  },
-  {
     "apiDescription": "ramls/privileged_contact.raml",
     "apiType": "raml",
     "interface": "organizations-storage.privileged-contacts 1.0",
@@ -9542,22 +9494,6 @@
     "methods": "delete:organizations_storage_settings__id__delete get:organizations_storage_settings__id__get put:organizations_storage_settings__id__put",
     "name": "mod-organizations-storage",
     "path": "/organizations-storage/settings/{id}"
-  },
-  {
-    "apiDescription": "ramls/url.raml",
-    "apiType": "raml",
-    "interface": "organizations-storage.urls 1.1",
-    "methods": "get:organizations_storage_urls_get post:organizations_storage_urls_post",
-    "name": "mod-organizations-storage",
-    "path": "/organizations-storage/urls"
-  },
-  {
-    "apiDescription": "ramls/url.raml",
-    "apiType": "raml",
-    "interface": "organizations-storage.urls 1.1",
-    "methods": "delete:organizations_storage_urls__id__delete get:organizations_storage_urls__id__get put:organizations_storage_urls__id__put",
-    "name": "mod-organizations-storage",
-    "path": "/organizations-storage/urls/{id}"
   },
   {
     "apiDescription": "ramls/banking_information.raml",
