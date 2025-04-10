@@ -12302,7 +12302,7 @@
   {
     "apiDescription": "ramls/usagedataproviders.raml",
     "apiType": "raml",
-    "interface": "usage-data-providers 3.1",
+    "interface": "usage-data-providers 3.2",
     "methods": "get:usage_data_providers_get post:usage_data_providers_post",
     "name": "mod-erm-usage",
     "path": "/usage-data-providers"
@@ -12310,7 +12310,7 @@
   {
     "apiDescription": "ramls/usagedataproviders.raml",
     "apiType": "raml",
-    "interface": "usage-data-providers 3.1",
+    "interface": "usage-data-providers 3.2",
     "methods": "delete:usage_data_providers__id__delete get:usage_data_providers__id__get put:usage_data_providers__id__put",
     "name": "mod-erm-usage",
     "path": "/usage-data-providers/{id}"
