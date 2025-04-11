@@ -6938,6 +6938,14 @@
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
     "interface": "inventory-import 1.0",
+    "methods": "delete:operation/deleteRecordFailure",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/failed-records/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
     "methods": "get:operation/getImportConfigs post:operation/postImportConfig",
     "name": "mod-inventory-import",
     "path": "/inventory-import/import-configs"
@@ -6989,6 +6997,14 @@
     "methods": "delete:operation/deleteImportJob get:operation/getImportJob",
     "name": "mod-inventory-import",
     "path": "/inventory-import/import-jobs/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/getFailedRecordsForJob post:operation/postFailedRecordsForJob",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/import-jobs/{id}/failed-records"
   },
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
