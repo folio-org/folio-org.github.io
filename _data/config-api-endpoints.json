@@ -11838,7 +11838,7 @@
   {
     "apiDescription": "ramls/staff-slips.raml",
     "apiType": "raml",
-    "interface": "staff-slips-storage 1.0",
+    "interface": "staff-slips-storage 1.1",
     "methods": "delete:staff_slips_storage_staff_slips_delete get:staff_slips_storage_staff_slips_get post:staff_slips_storage_staff_slips_post",
     "name": "mod-circulation-storage",
     "path": "/staff-slips-storage/staff-slips"
@@ -11846,7 +11846,7 @@
   {
     "apiDescription": "ramls/staff-slips.raml",
     "apiType": "raml",
-    "interface": "staff-slips-storage 1.0",
+    "interface": "staff-slips-storage 1.1",
     "methods": "delete:staff_slips_storage_staff_slips__staffslipid__delete get:staff_slips_storage_staff_slips__staffslipid__get put:staff_slips_storage_staff_slips__staffslipid__put",
     "name": "mod-circulation-storage",
     "path": "/staff-slips-storage/staff-slips/{staffSlipId}"
