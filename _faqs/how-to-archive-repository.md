@@ -16,7 +16,7 @@ Tread very carefully and follow the guide [Rename a module](/guides/rename-modul
 
 Archiving means that the repository becomes read-only (see further [implications](#archive-as-read-only) described below).
 
-You will still be able to fork the repository and unarchive it at any time.
+The repository is still able to be [forked](/guidelines/contributing/#fork-github-repository) and unarchived at any time.
 
 To exclude archived repositories from a GitHub search use [`NOT is:archived` qualifier](https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax#is-qualifier).
 
