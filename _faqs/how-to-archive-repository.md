@@ -14,6 +14,12 @@ If a repository is no longer maintained, and a decision has been made to archive
 (**Note**: If the repository is to be **renamed** rather than archived, then there are various ramifications.
 Tread very carefully and follow the guide [Rename a module](/guides/rename-module/) instead.)
 
+Archiving means that the repository becomes read-only (see further [implications](#archive-as-read-only) described below).
+
+The repository is still able to be [forked](/guidelines/contributing/#fork-github-repository) and unarchived at any time.
+
+To exclude archived repositories from a GitHub search use [`NOT is:archived` qualifier](https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax#is-qualifier).
+
 ## Retain repository name
 
 While following these "archive" instructions, then under no circumstances can the repository be renamed (e.g. to mod-foo-deprecated, or some such).
