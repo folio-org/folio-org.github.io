@@ -14,7 +14,7 @@ If a repository is no longer maintained, and a decision has been made to archive
 (**Note**: If the repository is to be **renamed** rather than archived, then there are various ramifications.
 Tread very carefully and follow the guide [Rename a module](/guides/rename-module/) instead.)
 
-Archiving means that the repository becomes read-only.
+Archiving means that the repository becomes read-only (see further [implications](#archive-as-read-only) described below).
 
 You will still be able to fork the repository and unarchive it at any time.
 
