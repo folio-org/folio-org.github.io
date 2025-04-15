@@ -1103,7 +1103,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-inn-reach",
     "org": "folio-org"
@@ -1450,6 +1450,23 @@
       "generator": "api_doc.py 1.5"
     },
     "name": "mod-marc-migrations",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/swagger.api/mosaic.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.8"
+    },
+    "name": "mod-mosaic",
     "org": "folio-org"
   },
   {
