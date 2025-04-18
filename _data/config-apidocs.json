@@ -487,7 +487,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-circulation-bff",
     "org": "folio-org"
@@ -735,7 +735,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-dcb",
     "org": "folio-org"
@@ -1855,7 +1855,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-requests-mediated",
     "org": "folio-org"
@@ -2093,7 +2093,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-tlr",
     "org": "folio-org"
@@ -2151,7 +2151,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-users-bl",
     "org": "folio-org"
