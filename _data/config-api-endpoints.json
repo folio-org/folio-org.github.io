@@ -2383,7 +2383,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-requests 1.1",
+    "interface": "circulation-bff-requests 1.2",
     "methods": "post:operation/saveAndConfirmMediatedRequest",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/mediated-requests/confirm"
@@ -2399,7 +2399,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-requests 1.1",
+    "interface": "circulation-bff-requests 1.2",
     "methods": "post:operation/createRequest",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/requests"
@@ -2407,7 +2407,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-requests 1.1",
+    "interface": "circulation-bff-requests 1.2",
     "methods": "get:null",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/requests/allowed-service-points"
@@ -2415,7 +2415,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation-bff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-requests 1.1",
+    "interface": "circulation-bff-requests 1.2",
     "methods": "get:null",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/requests/search-instances"
@@ -4231,7 +4231,7 @@
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
     "interface": "ecs-request-transactions 1.0",
-    "methods": "post:operation/createEcsRequestTransactions",
+    "methods": "patch:operation/updateEcsRequestTransaction post:operation/createEcsRequestTransactions",
     "name": "mod-dcb",
     "path": "/ecs-request-transactions/{ecsRequestTransactionId}"
   },
@@ -8454,6 +8454,22 @@
     "methods": "delete:operation/deleteModuleDiscovery get:operation/getModuleDiscovery post:operation/createModuleDiscovery put:operation/updateModuleDiscovery",
     "name": "mgr-applications",
     "path": "/modules/{id}/discovery"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mosaic.yaml",
+    "apiType": "oas",
+    "interface": "mosaic 1.0",
+    "methods": "delete:operation/deleteConfiguration get:operation/getConfiguration post:operation/saveConfiguration put:operation/updateConfiguration",
+    "name": "mod-mosaic",
+    "path": "/mosaic/configuration"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mosaic.yaml",
+    "apiType": "oas",
+    "interface": "mosaic 1.0",
+    "methods": "post:operation/createMosaicOrder",
+    "name": "mod-mosaic",
+    "path": "/mosaic/orders"
   },
   {
     "apiDescription": "ramls/nature-of-content-term.raml",
