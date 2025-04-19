@@ -107,6 +107,7 @@ remote-integration:
     - mod-idm-connect
     - mod-inn-reach
     - edge-inn-reach
+    - mod-mosaic
     - mod-remote-storage
     - mod-rtac
     - edge-rtac
