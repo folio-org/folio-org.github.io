@@ -771,7 +771,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-ebsconet",
     "org": "folio-org"
@@ -1050,7 +1050,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-gobi",
     "org": "folio-org"
@@ -1576,7 +1576,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-orders",
     "org": "folio-org"
@@ -1587,7 +1587,6 @@
       "raml": [
         "ramls/acquisition_method.raml",
         "ramls/acquisitions-unit.raml",
-        "ramls/alert.raml",
         "ramls/audit_outbox.raml",
         "ramls/claiming.raml",
         "ramls/configuration.raml",
@@ -1603,7 +1602,6 @@
         "ramls/po-number.raml",
         "ramls/purchase-order.raml",
         "ramls/receiving-history.raml",
-        "ramls/reporting-code.raml",
         "ramls/routing-list.raml",
         "ramls/settings.raml",
         "ramls/titles.raml",
@@ -1615,7 +1613,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-orders-storage",
     "org": "folio-org"
