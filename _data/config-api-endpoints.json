@@ -8442,7 +8442,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/am.yaml",
     "apiType": "oas",
-    "interface": "module-bootstraps 1.1",
+    "interface": "module-bootstraps 1.2",
     "methods": "get:operation/getModuleBootstrap",
     "name": "mgr-applications",
     "path": "/modules/{id}"
