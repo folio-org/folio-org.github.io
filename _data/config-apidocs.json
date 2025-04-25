@@ -1447,7 +1447,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-marc-migrations",
     "org": "folio-org"

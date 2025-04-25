@@ -7793,7 +7793,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "interface": "linked-data 1.0",
+    "interface": "linked-data 1.1",
     "methods": "post:operation/authority-assignment-check",
     "name": "mod-linked-data",
     "path": "/linked-data/authority-assignment-check"
@@ -7801,7 +7801,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "interface": "linked-data 1.0",
+    "interface": "linked-data 1.1",
     "methods": "post:operation/importMarcRecord",
     "name": "mod-linked-data",
     "path": "/linked-data/inventory-instance/{inventoryId}/import"
@@ -7809,7 +7809,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "interface": "linked-data 1.0",
+    "interface": "linked-data 1.1",
     "methods": "get:operation/isSupportedByInventoryId",
     "name": "mod-linked-data",
     "path": "/linked-data/inventory-instance/{inventoryId}/import-supported"
@@ -7817,7 +7817,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "interface": "linked-data 1.0",
+    "interface": "linked-data 1.1",
     "methods": "get:operation/getResourcePreviewByInventoryId",
     "name": "mod-linked-data",
     "path": "/linked-data/inventory-instance/{inventoryId}/preview"
@@ -7825,7 +7825,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "interface": "linked-data 1.0",
+    "interface": "linked-data 1.1",
     "methods": "get:operation/getProfile",
     "name": "mod-linked-data",
     "path": "/linked-data/profile"
@@ -7833,7 +7833,15 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "interface": "linked-data 1.0",
+    "interface": "linked-data 1.1",
+    "methods": "get:operation/getProfileById",
+    "name": "mod-linked-data",
+    "path": "/linked-data/profile/{profileId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "linked-data 1.1",
     "methods": "put:operation/reindex",
     "name": "mod-linked-data",
     "path": "/linked-data/reindex"
@@ -7841,7 +7849,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "interface": "linked-data 1.0",
+    "interface": "linked-data 1.1",
     "methods": "post:operation/createResource",
     "name": "mod-linked-data",
     "path": "/linked-data/resource"
@@ -7849,7 +7857,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "interface": "linked-data 1.0",
+    "interface": "linked-data 1.1",
     "methods": "get:operation/getResourceIdByResourceInventoryId",
     "name": "mod-linked-data",
     "path": "/linked-data/resource/metadata/{inventoryId}/id"
@@ -7857,7 +7865,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "interface": "linked-data 1.0",
+    "interface": "linked-data 1.1",
     "methods": "delete:operation/deleteResource get:operation/getResourceById put:operation/updateResource",
     "name": "mod-linked-data",
     "path": "/linked-data/resource/{id}"
@@ -7865,7 +7873,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "interface": "linked-data 1.0",
+    "interface": "linked-data 1.1",
     "methods": "get:operation/getResourceGraphById",
     "name": "mod-linked-data",
     "path": "/linked-data/resource/{id}/graph"
@@ -7873,7 +7881,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "interface": "linked-data 1.0",
+    "interface": "linked-data 1.1",
     "methods": "get:operation/getResourceMarcViewById",
     "name": "mod-linked-data",
     "path": "/linked-data/resource/{id}/marc"
@@ -8307,7 +8315,7 @@
     "apiDescription": "src/main/resources/swagger.api/marc-migrations.yaml",
     "apiType": "oas",
     "interface": "marc-migrations 1.0",
-    "methods": "post:operation/createMarcMigrations",
+    "methods": "get:operation/getMarcMigrations post:operation/createMarcMigrations",
     "name": "mod-marc-migrations",
     "path": "/marc-migrations"
   },
