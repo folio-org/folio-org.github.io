@@ -201,7 +201,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.8"
     },
     "name": "edge-patron",
     "org": "folio-org"
@@ -470,7 +470,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-circulation",
     "org": "folio-org"
@@ -1692,7 +1692,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-patron",
     "org": "folio-org"
