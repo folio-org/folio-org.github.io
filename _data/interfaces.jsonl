@@ -110,7 +110,7 @@
 {"id": "folio_servicepoints-8.0.10990000000029", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-acq-components-7.0.309900000000166", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-authority-components-6.1.10990000000097", "optional": [], "provides": [], "requires": ["authority-source-files 2.0", "browse 1.0 2.0", "search 1.0 1.3", "source-storage-records 3.0"]}
-{"id": "folio_stripes-authorization-components-2.0.109900000000237", "optional": [], "provides": [], "requires": []}
+{"id": "folio_stripes-authorization-components-2.0.109900000000240", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-components-12.2.109900000000337", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-connect-9.2.1090000005", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-core-11.1.109900000000877", "optional": ["consortia 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "settings 1.0", "users-bl 5.0 6.0"]}
@@ -121,7 +121,7 @@
 {"id": "folio_stripes-inventory-components-2.1.109000000679", "optional": [], "provides": [], "requires": ["instance-date-types 1.0", "settings 1.0"]}
 {"id": "folio_stripes-marc-components-2.0.109900000000144", "optional": [], "provides": [], "requires": ["audit-marc 1.0", "instance-authority-linking-rules 1.1"]}
 {"id": "folio_stripes-registry-1.0.100011", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-smart-components-10.1.109900000000384", "optional": ["configuration 2.0", "remote-storage-mappings 1.0 2.0", "settings 1.0", "users 16.1"], "provides": [], "requires": ["notes 2.0 3.0 4.0", "password-validator 1.0", "tags 1.0"]}
+{"id": "folio_stripes-smart-components-10.1.109900000000408", "optional": ["configuration 2.0", "remote-storage-mappings 1.0 2.0", "settings 1.0", "users 16.1"], "provides": [], "requires": ["notes 2.0 3.0 4.0", "password-validator 1.0", "tags 1.0"]}
 {"id": "folio_stripes-template-editor-3.4.10990000000019", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-testing-4.2.1000107", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-ui-3.0.10990000000017", "optional": [], "provides": [], "requires": []}
