@@ -8480,6 +8480,14 @@
     "path": "/mosaic/orders"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mosaic.yaml",
+    "apiType": "oas",
+    "interface": "mosaic 1.0",
+    "methods": "post:operation/getValidation",
+    "name": "mod-mosaic",
+    "path": "/mosaic/validate"
+  },
+  {
     "apiDescription": "ramls/nature-of-content-term.raml",
     "apiType": "raml",
     "interface": "nature-of-content-terms 1.0",
