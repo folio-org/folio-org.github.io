@@ -8483,7 +8483,7 @@
     "apiDescription": "src/main/resources/swagger.api/mosaic.yaml",
     "apiType": "oas",
     "interface": "mosaic 1.0",
-    "methods": "post:operation/getValidation",
+    "methods": "get:operation/getValidation",
     "name": "mod-mosaic",
     "path": "/mosaic/validate"
   },
@@ -10569,7 +10569,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
     "apiType": "oas",
-    "interface": "requests-mediated-actions 1.1",
+    "interface": "requests-mediated-actions 1.2",
     "methods": "post:operation/confirmItemArrival",
     "name": "mod-requests-mediated",
     "path": "/requests-mediated/confirm-item-arrival"
@@ -10609,7 +10609,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
     "apiType": "oas",
-    "interface": "requests-mediated-actions 1.1",
+    "interface": "requests-mediated-actions 1.2",
     "methods": "post:operation/sendItemInTransit",
     "name": "mod-requests-mediated",
     "path": "/requests-mediated/send-item-in-transit"
