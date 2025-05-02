@@ -89,6 +89,10 @@ Sonar continuously adds new rules, including security rules, that should trigger
 
 Regarding "Quality Profile" see issue [FOLIO-864](https://issues.folio.org/browse/FOLIO-864)
 
+## Go linting
+
+See [Centralised GitHub Workflows for Go linting](https://github.com/folio-org/.github/blob/master/README-go-lint.md).
+
 ## ESLint for client-side projects
 
 The [Code quality](https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#code-quality)
