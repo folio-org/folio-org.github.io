@@ -262,7 +262,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "folio-query-tool-metadata",
     "org": "folio-org"
