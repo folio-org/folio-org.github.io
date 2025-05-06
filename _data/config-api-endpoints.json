@@ -4723,6 +4723,20 @@
     "path": "/entity-types"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/queryTool.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/createCustomEntityType",
+    "name": "folio-query-tool-metadata",
+    "path": "/entity-types/custom"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/queryTool.yaml",
+    "apiType": "oas",
+    "methods": "delete:operation/deleteCustomEntityType get:operation/getCustomEntityType put:operation/updateCustomEntityType",
+    "name": "folio-query-tool-metadata",
+    "path": "/entity-types/custom/{entityTypeId}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mod-fqm-manager.yaml",
     "apiType": "oas",
     "interface": "_timer 1.0",
