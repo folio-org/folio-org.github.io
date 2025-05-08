@@ -7816,6 +7816,14 @@
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
     "interface": "linked-data 1.1",
+    "methods": "post:operation/import-file",
+    "name": "mod-linked-data",
+    "path": "/linked-data/import/file"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "linked-data 1.1",
     "methods": "post:operation/importMarcRecord",
     "name": "mod-linked-data",
     "path": "/linked-data/inventory-instance/{inventoryId}/import"
