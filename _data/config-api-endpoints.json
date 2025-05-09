@@ -1057,7 +1057,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/am.yaml",
     "apiType": "oas",
-    "interface": "applications 1.1",
+    "interface": "applications 1.2",
     "methods": "get:operation/getApplicationsByQuery post:operation/registerApplication",
     "name": "mgr-applications",
     "path": "/applications"
@@ -1065,7 +1065,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/am.yaml",
     "apiType": "oas",
-    "interface": "applications 1.1",
+    "interface": "applications 1.2",
     "methods": "post:operation/validateApplicationDescriptor",
     "name": "mgr-applications",
     "path": "/applications/validate"
@@ -1073,7 +1073,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/am.yaml",
     "apiType": "oas",
-    "interface": "applications 1.1",
+    "interface": "applications 1.2",
     "methods": "post:operation/validateModulesInterfaceIntegrity",
     "name": "mgr-applications",
     "path": "/applications/validate-interfaces"
@@ -1081,7 +1081,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/am.yaml",
     "apiType": "oas",
-    "interface": "applications 1.1",
+    "interface": "applications 1.2",
     "methods": "delete:operation/deregisterApplicationById get:operation/getApplicationById",
     "name": "mgr-applications",
     "path": "/applications/{id}"
