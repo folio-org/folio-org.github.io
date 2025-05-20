@@ -13,7 +13,7 @@ menuSubIndex: 2
 List of FOLIO modules hosted at GitHub, with links to some related documentation.
 Also refer to the [Source-code overview](/source-code/).
 
-{% assign versionUserDocs = "ramsons" %}
+{% assign versionUserDocs = "sunflower" %}
 {% assign urlGithub = "https://github.com" %}
 {% assign urlApiBase = "https://dev.folio.org/reference/api" %}
 {% assign urlApiBaseLocal = "/reference/api" %}
