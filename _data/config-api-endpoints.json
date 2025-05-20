@@ -8336,7 +8336,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/marc-migrations.yaml",
     "apiType": "oas",
-    "interface": "marc-migrations 1.0",
+    "interface": "marc-migrations 1.1",
     "methods": "get:operation/getMarcMigrations post:operation/createMarcMigrations",
     "name": "mod-marc-migrations",
     "path": "/marc-migrations"
@@ -8344,10 +8344,34 @@
   {
     "apiDescription": "src/main/resources/swagger.api/marc-migrations.yaml",
     "apiType": "oas",
-    "interface": "marc-migrations 1.0",
+    "interface": "marc-migrations 1.1",
     "methods": "get:operation/getMarcMigrationById put:operation/saveMarcMigration",
     "name": "mod-marc-migrations",
     "path": "/marc-migrations/{operationId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/marc-migrations.yaml",
+    "apiType": "oas",
+    "interface": "marc-migrations 1.1",
+    "methods": "post:operation/createErrorReport",
+    "name": "mod-marc-migrations",
+    "path": "/marc-migrations/{operationId}/error-report"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/marc-migrations.yaml",
+    "apiType": "oas",
+    "interface": "marc-migrations 1.1",
+    "methods": "get:operation/getMigrationErrors",
+    "name": "mod-marc-migrations",
+    "path": "/marc-migrations/{operationId}/error-report/errors"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/marc-migrations.yaml",
+    "apiType": "oas",
+    "interface": "marc-migrations 1.1",
+    "methods": "get:operation/getErrorReportStatus",
+    "name": "mod-marc-migrations",
+    "path": "/marc-migrations/{operationId}/error-report/status"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/marc-specifications.yaml",
