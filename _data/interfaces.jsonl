@@ -59,7 +59,7 @@
 {"id": "folio_ld-folio-wrapper-2.0.109900000000270", "optional": [], "provides": [], "requires": ["authority-source-files 2.2", "browse 2.0", "linked-data 1.0", "search 1.3", "source-storage-records 3.4"]}
 {"id": "folio_ldp-3.0.209900000000114", "optional": [], "provides": [], "requires": ["ldp-query 1.2", "settings 1.0"]}
 {"id": "folio_licenses-12.1.109900000000163", "optional": ["organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["licenses 6.0"]}
-{"id": "folio_linked-data-2.0.109900000000911", "optional": [], "provides": [], "requires": []}
+{"id": "folio_linked-data-2.0.109900000000912", "optional": [], "provides": [], "requires": []}
 {"id": "folio_lists-4.0.309900000000838", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0"]}
 {"id": "folio_local-kb-admin-9.1.109900000000104", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_lti-courses-1.1.100035", "optional": [], "provides": [], "requires": ["configuration 2.0 3.0 4.0 5.0"]}
@@ -121,7 +121,7 @@
 {"id": "folio_stripes-inventory-components-2.1.109000000697", "optional": [], "provides": [], "requires": ["instance-date-types 1.0", "settings 1.0"]}
 {"id": "folio_stripes-marc-components-2.0.109900000000149", "optional": [], "provides": [], "requires": ["audit-marc 1.0", "instance-authority-linking-rules 1.1"]}
 {"id": "folio_stripes-registry-1.0.100011", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-smart-components-10.1.109900000000434", "optional": ["configuration 2.0", "remote-storage-mappings 1.0 2.0", "settings 1.0", "users 16.1"], "provides": [], "requires": ["notes 2.0 3.0 4.0", "password-validator 1.0", "tags 1.0"]}
+{"id": "folio_stripes-smart-components-10.1.109900000000446", "optional": ["configuration 2.0", "remote-storage-mappings 1.0 2.0", "settings 1.0", "users 16.1"], "provides": [], "requires": ["notes 2.0 3.0 4.0", "password-validator 1.0", "tags 1.0"]}
 {"id": "folio_stripes-template-editor-3.4.10990000000019", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-testing-4.2.1000107", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-ui-3.0.10990000000017", "optional": [], "provides": [], "requires": []}
