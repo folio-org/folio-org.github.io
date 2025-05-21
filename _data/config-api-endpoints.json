@@ -10623,6 +10623,14 @@
   {
     "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
     "apiType": "oas",
+    "interface": "requests-mediated-loans 1.0",
+    "methods": "post:operation/checkOutByBarcode",
+    "name": "mod-requests-mediated",
+    "path": "/requests-mediated/loans/check-out-by-barcode"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
+    "apiType": "oas",
     "interface": "requests-mediated 2.0",
     "methods": "get:operation/getMediatedRequestCollection post:operation/postMediatedRequest",
     "name": "mod-requests-mediated",
