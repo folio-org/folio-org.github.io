@@ -11100,7 +11100,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.3",
+    "interface": "search 1.4",
     "methods": "get:operation/searchAuthorities",
     "name": "mod-search",
     "path": "/search/authorities"
@@ -11220,7 +11220,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.3",
+    "interface": "search 1.4",
     "methods": "get:operation/getHoldingIds",
     "name": "mod-search",
     "path": "/search/holdings/ids"
@@ -11300,7 +11300,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.3",
+    "interface": "search 1.4",
     "methods": "get:operation/searchInstances",
     "name": "mod-search",
     "path": "/search/instances"
@@ -11308,7 +11308,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.3",
+    "interface": "search 1.4",
     "methods": "get:operation/getInstanceIds",
     "name": "mod-search",
     "path": "/search/instances/ids"
@@ -11316,7 +11316,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.3",
+    "interface": "search 1.4",
     "methods": "get:operation/searchLinkedDataHubs",
     "name": "mod-search",
     "path": "/search/linked-data/hubs"
@@ -11324,7 +11324,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.3",
+    "interface": "search 1.4",
     "methods": "get:operation/searchLinkedDataInstances",
     "name": "mod-search",
     "path": "/search/linked-data/instances"
@@ -11332,7 +11332,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.3",
+    "interface": "search 1.4",
     "methods": "get:operation/searchLinkedDataWorks",
     "name": "mod-search",
     "path": "/search/linked-data/works"
@@ -11364,7 +11364,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.3",
+    "interface": "search 1.4",
     "methods": "get:operation/getFacets",
     "name": "mod-search",
     "path": "/search/{recordType}/facets"
