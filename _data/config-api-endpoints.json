@@ -12388,7 +12388,7 @@
   {
     "apiDescription": "ramls/import.raml",
     "apiType": "raml",
-    "interface": "user-import 2.1",
+    "interface": "user-import 2.2",
     "methods": "post:user_import_post",
     "name": "mod-user-import",
     "path": "/user-import"
