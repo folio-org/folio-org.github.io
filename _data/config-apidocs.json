@@ -913,7 +913,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-feesfines",
     "org": "folio-org"
