@@ -36,7 +36,7 @@
 {"id": "folio_courses-7.0.30990000000097", "optional": [], "provides": [], "requires": ["copyright-status-storage 0.1", "course-reserves-storage 0.2", "course-type-storage 0.1", "department-storage 0.1", "item-storage 7.1 8.0 9.0 10.0", "loan-types 2.2", "locations 3.0", "processing-status-storage 0.1", "role-storage 0.1", "term-storage 0.1"]}
 {"id": "folio_dashboard-7.1.109900000000165", "optional": [], "provides": [], "requires": ["servint 4.0"]}
 {"id": "folio_data-export-7.0.10990000000057", "optional": [], "provides": [], "requires": ["data-export 5.0"]}
-{"id": "folio_data-import-9.0.10990000000070", "optional": [], "provides": [], "requires": ["data-import 3.2", "data-import-converter-storage 1.5", "source-manager-job-executions 3.4"]}
+{"id": "folio_data-import-9.0.10990000000077", "optional": [], "provides": [], "requires": ["data-import 3.2", "data-import-converter-storage 1.5", "source-manager-job-executions 3.4"]}
 {"id": "folio_developer-11.0.109900000000204", "optional": ["app-manager 1.0", "capabilities 1.0", "capability-sets 1.0"], "provides": [], "requires": ["okapi 1.9", "settings 1.0"]}
 {"id": "folio_eholdings-11.1.109900000000229", "optional": [], "provides": [], "requires": ["eholdings 4.0", "erm 1.0 2.0 3.0 4.0 5.0 6.0 7.0", "tags 1.0"]}
 {"id": "folio_erm-1.0.100022", "optional": [], "provides": [], "requires": []}
