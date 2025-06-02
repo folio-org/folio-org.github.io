@@ -1,7 +1,7 @@
 {"id": "edge-caiasoft-2.5.0-SNAPSHOT.54", "optional": [], "provides": [], "requires": ["login 7.3", "remote-storage-accessions 1.1", "remote-storage-check-in 1.2", "remote-storage-configurations 1.1", "remote-storage-retrievals 1.1"]}
 {"id": "edge-connexion-1.4.2-SNAPSHOT.40", "optional": [], "provides": ["connexion 1.0"], "requires": ["copycat-imports 1.0", "copycat-profiles 1.0", "login 7.0"]}
 {"id": "edge-courses-1.7.0-SNAPSHOT.27", "optional": [], "provides": [], "requires": ["course-reserves-storage 0.3", "login 7.1"]}
-{"id": "edge-dcb-1.4.0-SNAPSHOT.36", "optional": [], "provides": [], "requires": ["login 7.3", "transactions 1.1"]}
+{"id": "edge-dcb-1.4.0-SNAPSHOT.37", "optional": [], "provides": [], "requires": ["login 7.3", "transactions 1.1"]}
 {"id": "edge-dematic-3.0.0-SNAPSHOT.68", "optional": [], "provides": [], "requires": ["login 7.0", "remote-storage-accessions 1.1", "remote-storage-check-in 1.2", "remote-storage-configurations 1.1", "remote-storage-items 1.0", "remote-storage-retrievals 1.1"]}
 {"id": "edge-erm-1.5.0-SNAPSHOT.16", "optional": [], "provides": [], "requires": ["erm 6.1 7.1", "login 7.1"]}
 {"id": "edge-fqm-4.1.0-SNAPSHOT.48", "optional": [], "provides": [], "requires": ["entity-types 2.1", "fqm-query 2.1", "login 7.0"]}
@@ -167,7 +167,7 @@
 {"id": "mod-data-import-3.4.0-SNAPSHOT.333", "optional": [], "provides": ["_tenant 2.0", "data-import 3.2"], "requires": ["source-manager-job-executions 3.4", "users 15.0 16.0"]}
 {"id": "mod-data-import-converter-storage-1.16.0-SNAPSHOT.229", "optional": [], "provides": ["_tenant 2.0", "converter-storage-forms-configs 1.0", "data-import-converter-storage 1.3", "field-protection-settings 1.0"], "requires": []}
 {"id": "mod-data-import-storage-0.0.1-SNAPSHOT.2", "optional": [], "provides": ["_tenant 1.0", "mod-data-import-storage 1.0"], "requires": []}
-{"id": "mod-dcb-2.0.0-SNAPSHOT.122", "optional": [], "provides": ["_tenant 2.0", "ecs-request-transactions 1.0", "transactions 1.1"], "requires": ["calendar 5.0", "cancellation-reason-storage 1.2", "circulation 14.6", "circulation-item 1.0", "holdings-sources 1.0", "holdings-storage 8.0", "instance-types 2.0", "inventory 14.1", "item-storage 10.1", "loan-policy-storage 2.3", "loan-types 2.3", "location-units 2.0", "locations 3.1", "login 7.3", "material-types 2.2", "permissions 5.8", "request-storage 6.2", "service-points 3.4", "users 16.4"]}
+{"id": "mod-dcb-2.0.0-SNAPSHOT.123", "optional": [], "provides": ["_tenant 2.0", "ecs-request-transactions 1.0", "transactions 1.1"], "requires": ["calendar 5.0", "cancellation-reason-storage 1.2", "circulation 14.6", "circulation-item 1.0", "holdings-sources 1.0", "holdings-storage 8.0", "instance-types 2.0", "inventory 14.1", "item-storage 10.1", "loan-policy-storage 2.3", "loan-types 2.3", "location-units 2.0", "locations 3.1", "login 7.3", "material-types 2.2", "permissions 5.8", "request-storage 6.2", "service-points 3.4", "users 16.4"]}
 {"id": "mod-di-converter-storage-2.5.0-SNAPSHOT.74", "optional": [], "provides": ["_tenant 2.0", "converter-storage-forms-configs 1.2", "data-import-converter-storage 1.5", "field-protection-settings 1.2"], "requires": ["users 16.3"]}
 {"id": "mod-ebsconet-2.5.0-SNAPSHOT.89", "optional": [], "provides": ["ebsconet 2.0"], "requires": ["finance.expense-classes 3.0", "finance.funds 3.0", "notes 4.0", "order-lines 4.0", "orders 13.0", "organizations.organizations 1.1"]}
 {"id": "mod-email-1.20.0-SNAPSHOT.93", "optional": [], "provides": ["_tenant 2.0", "_timer 1.0", "delayedTasks 2.0", "email 1.1", "smtpConfiguration 0.1"], "requires": ["configuration 2.0"]}
@@ -196,7 +196,7 @@
 {"id": "mod-kb-ebsco-java-6.1.0-SNAPSHOT.468", "optional": [], "provides": ["_jsonSchemas 1.0", "_ramls 1.0", "_tenant 2.0", "_timer 1.0", "eholdings 4.0"], "requires": ["users 15.0 16.0"]}
 {"id": "mod-ldp-1.1.4-SNAPSHOT.50", "optional": [], "provides": ["ldp-query 1.2"], "requires": []}
 {"id": "mod-licenses-6.3.0-SNAPSHOT.285", "optional": ["erm 7.0", "organizations.organizations 1.0"], "provides": ["_tenant 1.2", "_timer 1.0", "dashboard 1.0", "licenses 6.3"], "requires": []}
-{"id": "mod-linked-data-2.0.0-SNAPSHOT.203", "optional": [], "provides": ["_tenant 2.0", "linked-data 1.1"], "requires": ["search 1.3", "settings 1.1", "source-storage-records 3.2 3.3", "specification-storage 1.0"]}
+{"id": "mod-linked-data-2.0.0-SNAPSHOT.205", "optional": [], "provides": ["_tenant 2.0", "linked-data 1.1"], "requires": ["search 1.3", "settings 1.1", "source-storage-records 3.2 3.3", "specification-storage 1.0"]}
 {"id": "mod-lists-3.2.0-SNAPSHOT.190", "optional": [], "provides": ["_tenant 2.0", "lists 1.0"], "requires": ["configuration 2.0", "entity-types 2.0", "fqm-query 2.1", "login 7.0", "permissions 5.3", "users 16.0"]}
 {"id": "mod-login-7.14.0-SNAPSHOT.165", "optional": ["authtoken 2.1", "authtoken2 1.1", "configuration 2.0"], "provides": ["_tenant 2.0", "login 7.3"], "requires": ["user-tenants 1.0", "users 15.4 16.0"]}
 {"id": "mod-login-keycloak-3.1.0-SNAPSHOT.120", "optional": ["configuration 2.0"], "provides": ["_tenant 2.0", "authtoken 2.1", "authtoken2 1.1", "login 7.3"], "requires": ["users 16.1", "users-keycloak 1.0"]}
