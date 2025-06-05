@@ -950,7 +950,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-finance",
     "org": "folio-org"
@@ -987,7 +987,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-finance-storage",
     "org": "folio-org"
@@ -1278,7 +1278,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-invoice-storage",
     "org": "folio-org"
@@ -1631,7 +1631,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-organizations",
     "org": "folio-org"
@@ -1657,7 +1657,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-organizations-storage",
     "org": "folio-org"
