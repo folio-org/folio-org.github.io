@@ -7261,7 +7261,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "delete:inventory_instances_delete get:inventory_instances_get post:inventory_instances_post",
     "name": "mod-inventory",
     "path": "/inventory/instances"
@@ -7277,7 +7277,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "delete:inventory_instances__instanceid__delete get:inventory_instances__instanceid__get put:inventory_instances__instanceid__put",
     "name": "mod-inventory",
     "path": "/inventory/instances/{instanceId}"
@@ -7285,7 +7285,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "delete:inventory_instances__instanceid__mark_deleted_delete",
     "name": "mod-inventory",
     "path": "/inventory/instances/{instanceId}/mark-deleted"
@@ -7293,7 +7293,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "delete:inventory_items_delete get:inventory_items_get post:inventory_items_post",
     "name": "mod-inventory",
     "path": "/inventory/items"
@@ -7301,7 +7301,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "get:inventory_items_by_holdings_id_get post:inventory_items_by_holdings_id_post",
     "name": "mod-inventory",
     "path": "/inventory/items-by-holdings-id"
@@ -7317,7 +7317,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "post:inventory_items_retrieve_post",
     "name": "mod-inventory",
     "path": "/inventory/items/retrieve"
@@ -7333,7 +7333,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "delete:inventory_items__itemid__delete get:inventory_items__itemid__get put:inventory_items__itemid__put",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}"
@@ -7341,7 +7341,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "post:inventory_items__itemid__mark_in_process_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-in-process"
@@ -7349,7 +7349,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "post:inventory_items__itemid__mark_in_process_non_requestable_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-in-process-non-requestable"
@@ -7357,7 +7357,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "post:inventory_items__itemid__mark_intellectual_item_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-intellectual-item"
@@ -7365,7 +7365,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "post:inventory_items__itemid__mark_long_missing_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-long-missing"
@@ -7373,7 +7373,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "post:inventory_items__itemid__mark_missing_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-missing"
@@ -7381,7 +7381,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "post:inventory_items__itemid__mark_restricted_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-restricted"
@@ -7389,7 +7389,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "post:inventory_items__itemid__mark_unavailable_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-unavailable"
@@ -7397,7 +7397,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "post:inventory_items__itemid__mark_unknown_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-unknown"
@@ -7405,7 +7405,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "post:inventory_items__itemid__mark_withdrawn_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-withdrawn"
@@ -7413,7 +7413,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.2",
+    "interface": "inventory 14.3",
     "methods": "post:inventory_tenant_items_post",
     "name": "mod-inventory",
     "path": "/inventory/tenant-items"
@@ -10706,194 +10706,6 @@
     "methods": "post:operation/checkInByHoldId",
     "name": "edge-caiasoft",
     "path": "/Requests/{requestId}/route/{remoteStorageConfigurationId}"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-clusters 1.0",
-    "methods": "get:operation/getClusters",
-    "name": "mod-reservoir",
-    "path": "/reservoir/clusters"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-clusters 1.0",
-    "methods": "post:operation/touchClusters",
-    "name": "mod-reservoir",
-    "path": "/reservoir/clusters/touch"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-clusters 1.0",
-    "methods": "get:operation/getCluster",
-    "name": "mod-reservoir",
-    "path": "/reservoir/clusters/{clusterId}"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-config-matchkeys 1.0",
-    "methods": "get:operation/getConfigMatchKeys post:operation/postConfigMatchKey",
-    "name": "mod-reservoir",
-    "path": "/reservoir/config/matchkeys"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-config-matchkeys 1.0",
-    "methods": "delete:operation/deleteConfigMatchKey get:operation/getConfigMatchKey put:operation/putConfigMatchKey",
-    "name": "mod-reservoir",
-    "path": "/reservoir/config/matchkeys/{id}"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-config-matchkeys 1.0",
-    "methods": "put:operation/initializeMatchKey",
-    "name": "mod-reservoir",
-    "path": "/reservoir/config/matchkeys/{id}/initialize"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-config-matchkeys 1.0",
-    "methods": "get:operation/statsMatchKey",
-    "name": "mod-reservoir",
-    "path": "/reservoir/config/matchkeys/{id}/stats"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-config-modules 1.0",
-    "methods": "get:operation/getCodeModules post:operation/postCodeModule",
-    "name": "mod-reservoir",
-    "path": "/reservoir/config/modules"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-config-modules 1.0",
-    "methods": "delete:operation/deleteCodeModule get:operation/getCodeModule put:operation/putCodeModule",
-    "name": "mod-reservoir",
-    "path": "/reservoir/config/modules/{id}"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-config-modules 1.0",
-    "methods": "put:operation/reloadCodeModule",
-    "name": "mod-reservoir",
-    "path": "/reservoir/config/modules/{id}/reload"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-config-oai 1.0",
-    "methods": "delete:operation/deleteOaiConfig get:operation/getOaiConfig put:operation/putOaiConfig",
-    "name": "mod-reservoir",
-    "path": "/reservoir/config/oai"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/deleteSource get:operation/getSource",
-    "name": "mod-reservoir",
-    "path": "/reservoir/config/sources/{id}"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/postIngestJob",
-    "name": "mod-reservoir",
-    "path": "/reservoir/ingest-jobs"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "methods": "delete:operation/ingestJobFinish get:operation/ingestJobInfo put:operation/ingestJobRecord",
-    "name": "mod-reservoir",
-    "path": "/reservoir/ingest-jobs/{id}"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-oai 1.0",
-    "methods": "get:operation/oaiService",
-    "name": "mod-reservoir",
-    "path": "/reservoir/oai"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-oai-pmh-client 1.0",
-    "methods": "get:operation/getCollectionOaiPmhClient post:operation/postOaiPmhClient",
-    "name": "mod-reservoir",
-    "path": "/reservoir/pmh-clients"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-oai-pmh-client 1.0",
-    "methods": "delete:operation/deleteOaiPmhClient get:operation/getOaiPmhClient put:operation/putOaiPmhClient",
-    "name": "mod-reservoir",
-    "path": "/reservoir/pmh-clients/{id}"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-oai-pmh-client 1.0",
-    "methods": "post:operation/startOaiPmhClient",
-    "name": "mod-reservoir",
-    "path": "/reservoir/pmh-clients/{id}/start"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-oai-pmh-client 1.0",
-    "methods": "get:operation/statusOaiPmhClient",
-    "name": "mod-reservoir",
-    "path": "/reservoir/pmh-clients/{id}/status"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-oai-pmh-client 1.0",
-    "methods": "post:operation/stopOaiPmhClient",
-    "name": "mod-reservoir",
-    "path": "/reservoir/pmh-clients/{id}/stop"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-records 1.0",
-    "methods": "delete:operation/deleteGlobalRecords get:operation/getGlobalRecords put:operation/putGlobalRecords",
-    "name": "mod-reservoir",
-    "path": "/reservoir/records"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-records 1.0",
-    "methods": "get:operation/getGlobalRecord",
-    "name": "mod-reservoir",
-    "path": "/reservoir/records/{globalId}"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/getSources post:operation/postSource",
-    "name": "mod-reservoir",
-    "path": "/reservoir/sources"
-  },
-  {
-    "apiDescription": "server/src/main/resources/openapi/reservoir.yaml",
-    "apiType": "oas",
-    "interface": "reservoir-upload 1.0",
-    "methods": "post:operation/uploadRecords",
-    "name": "mod-reservoir",
-    "path": "/reservoir/upload"
   },
   {
     "apiDescription": "domain-models-api-interfaces/ramls/sample.raml",
