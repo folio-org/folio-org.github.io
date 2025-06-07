@@ -478,7 +478,7 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/swagger.api/circulation-bff.yaml"
+        "src/main/resources/swagger.api/circulationBff.yaml"
       ],
       "raml": [],
       "upload": []
