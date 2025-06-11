@@ -10,7 +10,7 @@
 {"id": "edge-lti-courses-1.3.8-SNAPSHOT.37", "optional": [], "provides": [], "requires": ["configuration 2.0", "course-reserves-storage 0.3"]}
 {"id": "edge-ncip-1.11.0-SNAPSHOT.37", "optional": [], "provides": [], "requires": ["login 5.0 6.0 7.0", "ncip 1.0"]}
 {"id": "edge-oai-pmh-2.12.0-SNAPSHOT.121", "optional": [], "provides": [], "requires": ["login 5.0 6.0 7.0", "oai-pmh 3.0"]}
-{"id": "edge-orders-3.3.0-SNAPSHOT.89", "optional": ["acquisition-methods 1.0", "acquisitions-units 1.1", "configuration 2.0", "contributor-name-types 1.3", "custom-fields 3.0", "ebsconet 2.0", "finance.budgets 2.0", "finance.expense-classes 3.0", "finance.funds 3.0", "gobi 1.12", "identifier-types 1.2", "locations 3.1", "login 5.0 6.0 7.0 7.3", "material-types 2.2", "mosaic 1.0", "order-templates 1.0", "organizations.organizations 1.2", "users 16.4"], "provides": [], "requires": []}
+{"id": "edge-orders-3.3.0-SNAPSHOT.90", "optional": ["acquisition-methods 1.0", "acquisitions-units 1.1", "configuration 2.0", "contributor-name-types 1.3", "custom-fields 3.0", "ebsconet 2.0", "finance.budgets 2.0", "finance.expense-classes 3.0", "finance.funds 3.0", "gobi 1.12", "identifier-types 1.2", "locations 3.1", "login 5.0 6.0 7.0 7.3", "material-types 2.2", "mosaic 1.0", "order-templates 1.0", "organizations.organizations 1.2", "users 16.4"], "provides": [], "requires": []}
 {"id": "edge-patron-5.4.0-SNAPSHOT.144", "optional": [], "provides": [], "requires": ["circulation 9.5 10.0 11.0 12.0 13.0 14.0", "login 5.0 6.0 7.0", "patron 6.4"]}
 {"id": "edge-resolver-1.0.0-SNAPSHOT.10", "optional": [], "provides": [], "requires": ["users-bl 3.0"]}
 {"id": "edge-rtac-2.10.0-SNAPSHOT.108", "optional": [], "provides": [], "requires": ["login 7.0", "rtac-batch 1.1"]}
@@ -63,7 +63,7 @@
 {"id": "folio_lists-4.0.309900000000850", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0"]}
 {"id": "folio_local-kb-admin-9.1.109900000000109", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_lti-courses-1.1.100035", "optional": [], "provides": [], "requires": ["configuration 2.0 3.0 4.0 5.0"]}
-{"id": "folio_marc-authorities-7.1.109900000000895", "optional": [], "provides": [], "requires": ["audit-config 1.0", "audit-marc 1.0", "browse 1.0 2.0", "marc-records-editor 6.0", "search 1.0 1.3", "source-storage-records 3.3"]}
+{"id": "folio_marc-authorities-8.0.109900000000914", "optional": [], "provides": [], "requires": ["audit-config 1.0", "audit-marc 1.0", "browse 1.0 2.0", "marc-records-editor 6.0", "resource-ids-streaming 0.3", "search 1.0 1.3", "source-storage-records 3.3"]}
 {"id": "folio_marccat-3.0.1000438", "optional": [], "provides": [], "requires": ["marccat 2.0"]}
 {"id": "folio_mosaic-settings-1.0.10990000000046", "optional": [], "provides": [], "requires": ["mosaic 1.0", "order-templates 1.0"]}
 {"id": "folio_myprofile-11.0.109900000000101", "optional": [], "provides": [], "requires": ["settings 1.0"]}
