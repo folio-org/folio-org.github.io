@@ -7888,6 +7888,14 @@
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
     "interface": "linked-data-profile 1.0",
+    "methods": "get:operation/getPreferredProfileByResourceType post:operation/setPreferredProfile",
+    "name": "mod-linked-data",
+    "path": "/linked-data/profile/preferred"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "linked-data-profile 1.0",
     "methods": "get:operation/getProfileById",
     "name": "mod-linked-data",
     "path": "/linked-data/profile/{profileId}"
