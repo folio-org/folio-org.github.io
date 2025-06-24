@@ -4772,6 +4772,13 @@
   {
     "apiDescription": "src/main/resources/swagger.api/queryTool.yaml",
     "apiType": "oas",
+    "methods": "post:operation/getAvailableJoins",
+    "name": "folio-query-tool-metadata",
+    "path": "/entity-types/custom/available-joins"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/queryTool.yaml",
+    "apiType": "oas",
     "methods": "delete:operation/deleteCustomEntityType get:operation/getCustomEntityType put:operation/updateCustomEntityType",
     "name": "folio-query-tool-metadata",
     "path": "/entity-types/custom/{entityTypeId}"
