@@ -8445,6 +8445,14 @@
     "path": "/marc-migrations/{operationId}/retry"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/marc-migrations.yaml",
+    "apiType": "oas",
+    "interface": "marc-migrations 1.1",
+    "methods": "post:operation/retrySaveMarcMigrations",
+    "name": "mod-marc-migrations",
+    "path": "/marc-migrations/{operationId}/save/retry"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/marc-specifications.yaml",
     "apiType": "oas",
     "interface": "marc-specifications 1.2",
@@ -11407,7 +11415,7 @@
   {
     "apiDescription": "ramls/service-point.raml",
     "apiType": "raml",
-    "interface": "service-points 3.4",
+    "interface": "service-points 3.5",
     "methods": "delete:service_points_delete get:service_points_get post:service_points_post",
     "name": "mod-inventory-storage",
     "path": "/service-points"
@@ -11431,7 +11439,7 @@
   {
     "apiDescription": "ramls/service-point.raml",
     "apiType": "raml",
-    "interface": "service-points 3.4",
+    "interface": "service-points 3.5",
     "methods": "delete:service_points__servicepointid__delete get:service_points__servicepointid__get put:service_points__servicepointid__put",
     "name": "mod-inventory-storage",
     "path": "/service-points/{servicepointId}"
