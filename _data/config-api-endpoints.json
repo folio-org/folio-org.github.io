@@ -7972,6 +7972,14 @@
     "path": "/linked-data/resource/{id}/marc"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "linked-data 2.0",
+    "methods": "get:operation/exportInstanceToRdf",
+    "name": "mod-linked-data",
+    "path": "/linked-data/resource/{id}/rdf"
+  },
+  {
     "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "instance-authority-linking-rules 1.1",
