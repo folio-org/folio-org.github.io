@@ -7895,14 +7895,6 @@
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
     "interface": "linked-data-profile 1.0",
-    "methods": "get:operation/getProfile",
-    "name": "mod-linked-data",
-    "path": "/linked-data/profile"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
-    "apiType": "oas",
-    "interface": "linked-data-profile 1.0",
     "methods": "get:operation/getProfileMetadataByResourceType",
     "name": "mod-linked-data",
     "path": "/linked-data/profile/metadata"
@@ -7918,7 +7910,6 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "interface": "linked-data-profile 1.0",
     "methods": "get:operation/getProfileById",
     "name": "mod-linked-data",
     "path": "/linked-data/profile/{profileId}"
@@ -8897,7 +8888,7 @@
   {
     "apiDescription": "ramls/configuration.raml",
     "apiType": "raml",
-    "interface": "orders-storage.configuration.prefixes 1.0",
+    "interface": "orders-storage.configuration.prefixes 1.1",
     "methods": "get:orders_storage_configuration_prefixes_get post:orders_storage_configuration_prefixes_post",
     "name": "mod-orders-storage",
     "path": "/orders-storage/configuration/prefixes"
@@ -8905,7 +8896,7 @@
   {
     "apiDescription": "ramls/configuration.raml",
     "apiType": "raml",
-    "interface": "orders-storage.configuration.prefixes 1.0",
+    "interface": "orders-storage.configuration.prefixes 1.1",
     "methods": "delete:orders_storage_configuration_prefixes__id__delete get:orders_storage_configuration_prefixes__id__get put:orders_storage_configuration_prefixes__id__put",
     "name": "mod-orders-storage",
     "path": "/orders-storage/configuration/prefixes/{id}"
@@ -8929,7 +8920,7 @@
   {
     "apiDescription": "ramls/configuration.raml",
     "apiType": "raml",
-    "interface": "orders-storage.configuration.suffixes 1.0",
+    "interface": "orders-storage.configuration.suffixes 1.1",
     "methods": "get:orders_storage_configuration_suffixes_get post:orders_storage_configuration_suffixes_post",
     "name": "mod-orders-storage",
     "path": "/orders-storage/configuration/suffixes"
@@ -8937,7 +8928,7 @@
   {
     "apiDescription": "ramls/configuration.raml",
     "apiType": "raml",
-    "interface": "orders-storage.configuration.suffixes 1.0",
+    "interface": "orders-storage.configuration.suffixes 1.1",
     "methods": "delete:orders_storage_configuration_suffixes__id__delete get:orders_storage_configuration_suffixes__id__get put:orders_storage_configuration_suffixes__id__put",
     "name": "mod-orders-storage",
     "path": "/orders-storage/configuration/suffixes/{id}"
@@ -9225,7 +9216,7 @@
   {
     "apiDescription": "ramls/configuration.raml",
     "apiType": "raml",
-    "interface": "configuration.prefixes 1.1",
+    "interface": "configuration.prefixes 1.2",
     "methods": "get:orders_configuration_prefixes_get post:orders_configuration_prefixes_post",
     "name": "mod-orders",
     "path": "/orders/configuration/prefixes"
@@ -9233,7 +9224,7 @@
   {
     "apiDescription": "ramls/configuration.raml",
     "apiType": "raml",
-    "interface": "configuration.prefixes 1.1",
+    "interface": "configuration.prefixes 1.2",
     "methods": "delete:orders_configuration_prefixes__id__delete get:orders_configuration_prefixes__id__get put:orders_configuration_prefixes__id__put",
     "name": "mod-orders",
     "path": "/orders/configuration/prefixes/{id}"
@@ -9257,7 +9248,7 @@
   {
     "apiDescription": "ramls/configuration.raml",
     "apiType": "raml",
-    "interface": "configuration.suffixes 1.1",
+    "interface": "configuration.suffixes 1.2",
     "methods": "get:orders_configuration_suffixes_get post:orders_configuration_suffixes_post",
     "name": "mod-orders",
     "path": "/orders/configuration/suffixes"
@@ -9265,7 +9256,7 @@
   {
     "apiDescription": "ramls/configuration.raml",
     "apiType": "raml",
-    "interface": "configuration.suffixes 1.1",
+    "interface": "configuration.suffixes 1.2",
     "methods": "delete:orders_configuration_suffixes__id__delete get:orders_configuration_suffixes__id__get put:orders_configuration_suffixes__id__put",
     "name": "mod-orders",
     "path": "/orders/configuration/suffixes/{id}"
