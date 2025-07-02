@@ -235,7 +235,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.8"
     },
     "name": "folio-custom-fields",
     "org": "folio-org"

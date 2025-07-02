@@ -3668,7 +3668,7 @@
   {
     "apiDescription": "ramls/custom-fields.raml",
     "apiType": "raml",
-    "interface": "custom-fields 3.0",
+    "interface": "custom-fields 3.1",
     "methods": "get:custom_fields_get post:custom_fields_post put:custom_fields_put",
     "name": "folio-custom-fields",
     "path": "/custom-fields"
@@ -3676,7 +3676,7 @@
   {
     "apiDescription": "ramls/custom-fields.raml",
     "apiType": "raml",
-    "interface": "custom-fields 3.0",
+    "interface": "custom-fields 3.1",
     "methods": "delete:custom_fields__id__delete get:custom_fields__id__get put:custom_fields__id__put",
     "name": "folio-custom-fields",
     "path": "/custom-fields/{id}"
@@ -3684,7 +3684,7 @@
   {
     "apiDescription": "ramls/custom-fields.raml",
     "apiType": "raml",
-    "interface": "custom-fields 3.0",
+    "interface": "custom-fields 3.1",
     "methods": "get:custom_fields__id__options__optid__stats_get",
     "name": "folio-custom-fields",
     "path": "/custom-fields/{id}/options/{optId}/stats"
@@ -3692,7 +3692,7 @@
   {
     "apiDescription": "ramls/custom-fields.raml",
     "apiType": "raml",
-    "interface": "custom-fields 3.0",
+    "interface": "custom-fields 3.1",
     "methods": "get:custom_fields__id__stats_get",
     "name": "folio-custom-fields",
     "path": "/custom-fields/{id}/stats"
@@ -6838,7 +6838,7 @@
   {
     "apiDescription": "ramls/instance-sync.raml",
     "apiType": "raml",
-    "interface": "instance-storage-batch-sync 3.0",
+    "interface": "instance-storage-batch-sync 3.1",
     "methods": "post:instance_storage_batch_synchronous_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/batch/synchronous"
@@ -6846,7 +6846,7 @@
   {
     "apiDescription": "ramls/instance-sync-unsafe.raml",
     "apiType": "raml",
-    "interface": "instance-storage-batch-sync-unsafe 3.0",
+    "interface": "instance-storage-batch-sync-unsafe 3.1",
     "methods": "post:instance_storage_batch_synchronous_unsafe_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/batch/synchronous-unsafe"
@@ -6878,7 +6878,7 @@
   {
     "apiDescription": "ramls/instance-storage-bulk.raml",
     "apiType": "raml",
-    "interface": "instance-storage-bulk 1.0",
+    "interface": "instance-storage-bulk 1.1",
     "methods": "post:instance_storage_instances_bulk_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/bulk"
@@ -7222,7 +7222,7 @@
   {
     "apiDescription": "ramls/instance-set.raml",
     "apiType": "raml",
-    "interface": "inventory-view-instance-set 3.0",
+    "interface": "inventory-view-instance-set 3.1",
     "methods": "get:inventory_view_instance_set_get",
     "name": "mod-inventory-storage",
     "path": "/inventory-view/instance-set"
@@ -7230,7 +7230,7 @@
   {
     "apiDescription": "ramls/inventory-view.raml",
     "apiType": "raml",
-    "interface": "inventory-view 3.0",
+    "interface": "inventory-view 3.1",
     "methods": "get:inventory_view_instances_get",
     "name": "mod-inventory-storage",
     "path": "/inventory-view/instances"
@@ -10366,7 +10366,7 @@
   {
     "apiDescription": "ramls/record-bulk.raml",
     "apiType": "raml",
-    "interface": "inventory-record-bulk 1.0",
+    "interface": "inventory-record-bulk 1.1",
     "methods": "get:record_bulk_ids_get",
     "name": "mod-inventory-storage",
     "path": "/record-bulk/ids"
