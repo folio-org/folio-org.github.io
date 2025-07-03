@@ -4687,9 +4687,9 @@
     "apiDescription": "ramls/electronic-access-relationship.raml",
     "apiType": "raml",
     "interface": "electronic-access-relationships 1.1",
-    "methods": "delete:electronic_access_relationships__electronicaccessrelationshipid__delete get:electronic_access_relationships__electronicaccessrelationshipid__get put:electronic_access_relationships__electronicaccessrelationshipid__put",
+    "methods": "delete:electronic_access_relationships__id__delete get:electronic_access_relationships__id__get put:electronic_access_relationships__id__put",
     "name": "mod-inventory-storage",
-    "path": "/electronic-access-relationships/{electronicAccessRelationshipId}"
+    "path": "/electronic-access-relationships/{id}"
   },
   {
     "apiDescription": "ramls/email.raml",
@@ -6783,9 +6783,9 @@
     "apiDescription": "ramls/instance-format.raml",
     "apiType": "raml",
     "interface": "instance-formats 2.0",
-    "methods": "delete:instance_formats__instanceformatid__delete get:instance_formats__instanceformatid__get put:instance_formats__instanceformatid__put",
+    "methods": "delete:instance_formats__id__delete get:instance_formats__id__get put:instance_formats__id__put",
     "name": "mod-inventory-storage",
-    "path": "/instance-formats/{instanceFormatId}"
+    "path": "/instance-formats/{id}"
   },
   {
     "apiDescription": "ramls/instance-note-type.raml",
@@ -9288,7 +9288,7 @@
   {
     "apiDescription": "ramls/order-lines.raml",
     "apiType": "raml",
-    "interface": "order-lines 4.0",
+    "interface": "order-lines 4.1",
     "methods": "get:orders_order_lines_get post:orders_order_lines_post",
     "name": "mod-orders",
     "path": "/orders/order-lines"
@@ -9296,7 +9296,7 @@
   {
     "apiDescription": "ramls/order-lines.raml",
     "apiType": "raml",
-    "interface": "order-lines 4.0",
+    "interface": "order-lines 4.1",
     "methods": "put:orders_order_lines_fund_distributions_validate_put",
     "name": "mod-orders",
     "path": "/orders/order-lines/fund-distributions/validate"
@@ -9311,7 +9311,7 @@
   {
     "apiDescription": "ramls/order-lines.raml",
     "apiType": "raml",
-    "interface": "order-lines 4.0",
+    "interface": "order-lines 4.1",
     "methods": "delete:orders_order_lines__id__delete get:orders_order_lines__id__get patch:orders_order_lines__id__patch put:orders_order_lines__id__put",
     "name": "mod-orders",
     "path": "/orders/order-lines/{id}"
