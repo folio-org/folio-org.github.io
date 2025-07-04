@@ -29,6 +29,6 @@ Bournemouth, UK, April 11, 2016.
 
 Chad K, Hammer S, and Kemner-Heeke K.  2016.  [The library as platform: exiting
 the old library system and transitioning to a
-new](https://elag2016.org/index.php/program/presentations/the-library-as-platform-exiting-the-old-library-system-and-transitioning-to-a-new/).
+new](https://web.archive.org/web/20160707192752/http://elag2016.org/index.php/program/presentations/the-library-as-platform-exiting-the-old-library-system-and-transitioning-to-a-new/).
 Presentation at ELAG 2016, Copenhagen, Denmark, June 7, 2016.
 

@@ -138,7 +138,7 @@ into one, and editing the commit messages.
 ([git bisect manual](https://git-scm.com/docs/git-bisect)).
 When bisecting, the commits within a feature branch of a pull request should be
 skipped because it is unknown whether they build successfully.  Ori from Smartly published
-"[Git Bisect Debugging with Feature Branches](https://blog.smart.ly/2015/02/03/git-bisect-debugging-with-feature-branches/)"
+"[Git Bisect Debugging with Feature Branches](https://web.archive.org/web/20150524010156/https://blog.smart.ly/2015/02/03/git-bisect-debugging-with-feature-branches/)"
 with this code snippet that skips those feature branch commits:
 
     git bisect start master 75369f4a4c026772242368d870872562a3b693cb
