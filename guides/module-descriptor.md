@@ -183,7 +183,7 @@ Other necessary options can be appended (e.g. -XX:+PrintFlagsFinal).
 
 See one [explanation](https://stackoverflow.com/questions/53451103/java-using-much-more-memory-than-heap-size-or-size-correctly-docker-memory-limi/53624438#53624438) of Java memory footprint, monitoring, and profiling.
 
-Also [note](https://medium.com/adorsys/usecontainersupport-to-the-rescue-e77d6cfea712) that
+Also [note](https://web.archive.org/web/20201020100349/https://medium.com/adorsys/usecontainersupport-to-the-rescue-e77d6cfea712) that
 "setting -Xmx and -Xms disables the automatic heap sizing".
 
 ### env DB environment
