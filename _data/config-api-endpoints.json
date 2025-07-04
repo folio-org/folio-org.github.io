@@ -12184,7 +12184,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "transactions 1.1",
+    "interface": "transactions 1.2",
     "methods": "get:operation/getTransactionStatusList",
     "name": "mod-dcb",
     "path": "/transactions/status"
@@ -12192,7 +12192,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "transactions 1.1",
+    "interface": "transactions 1.2",
     "methods": "post:operation/createCirculationRequest put:operation/updateTransactionDetails",
     "name": "mod-dcb",
     "path": "/transactions/{dcbTransactionId}"
@@ -12200,7 +12200,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "transactions 1.1",
+    "interface": "transactions 1.2",
     "methods": "put:operation/renewItemLoanByTransactionId",
     "name": "mod-dcb",
     "path": "/transactions/{dcbTransactionId}/renew"
@@ -12208,7 +12208,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "transactions 1.1",
+    "interface": "transactions 1.2",
     "methods": "get:operation/getTransactionStatusById put:operation/updateTransactionStatus",
     "name": "mod-dcb",
     "path": "/transactions/{dcbTransactionId}/status"
