@@ -6134,7 +6134,7 @@
   {
     "apiDescription": "ramls/holdings-storage.raml",
     "apiType": "raml",
-    "interface": "holdings-storage 8.0",
+    "interface": "holdings-storage 8.1",
     "methods": "delete:holdings_storage_holdings_delete get:holdings_storage_holdings_get post:holdings_storage_holdings_post",
     "name": "mod-inventory-storage",
     "path": "/holdings-storage/holdings"
@@ -6142,7 +6142,7 @@
   {
     "apiDescription": "ramls/holdings-storage.raml",
     "apiType": "raml",
-    "interface": "holdings-storage 8.0",
+    "interface": "holdings-storage 8.1",
     "methods": "post:holdings_storage_holdings_retrieve_post",
     "name": "mod-inventory-storage",
     "path": "/holdings-storage/holdings/retrieve"
@@ -6150,7 +6150,7 @@
   {
     "apiDescription": "ramls/holdings-storage.raml",
     "apiType": "raml",
-    "interface": "holdings-storage 8.0",
+    "interface": "holdings-storage 8.1",
     "methods": "delete:holdings_storage_holdings__holdingsrecordid__delete get:holdings_storage_holdings__holdingsrecordid__get put:holdings_storage_holdings__holdingsrecordid__put",
     "name": "mod-inventory-storage",
     "path": "/holdings-storage/holdings/{holdingsRecordId}"
@@ -7644,7 +7644,7 @@
   {
     "apiDescription": "ramls/item-storage-dereferenced.raml",
     "apiType": "raml",
-    "interface": "item-storage-dereferenced 1.0",
+    "interface": "item-storage-dereferenced 1.1",
     "methods": "get:item_storage_dereferenced_items_get",
     "name": "mod-inventory-storage",
     "path": "/item-storage-dereferenced/items"
@@ -7652,7 +7652,7 @@
   {
     "apiDescription": "ramls/item-storage-dereferenced.raml",
     "apiType": "raml",
-    "interface": "item-storage-dereferenced 1.0",
+    "interface": "item-storage-dereferenced 1.1",
     "methods": "get:item_storage_dereferenced_items__itemid__get",
     "name": "mod-inventory-storage",
     "path": "/item-storage-dereferenced/items/{itemId}"
@@ -7676,7 +7676,7 @@
   {
     "apiDescription": "ramls/item-storage.raml",
     "apiType": "raml",
-    "interface": "item-storage 10.2",
+    "interface": "item-storage 10.3",
     "methods": "delete:item_storage_items_delete get:item_storage_items_get post:item_storage_items_post",
     "name": "mod-inventory-storage",
     "path": "/item-storage/items"
@@ -7684,7 +7684,7 @@
   {
     "apiDescription": "ramls/item-storage.raml",
     "apiType": "raml",
-    "interface": "item-storage 10.2",
+    "interface": "item-storage 10.3",
     "methods": "post:item_storage_items_retrieve_post",
     "name": "mod-inventory-storage",
     "path": "/item-storage/items/retrieve"
@@ -7692,7 +7692,7 @@
   {
     "apiDescription": "ramls/item-storage.raml",
     "apiType": "raml",
-    "interface": "item-storage 10.2",
+    "interface": "item-storage 10.3",
     "methods": "delete:item_storage_items__itemid__delete get:item_storage_items__itemid__get put:item_storage_items__itemid__put",
     "name": "mod-inventory-storage",
     "path": "/item-storage/items/{itemId}"
