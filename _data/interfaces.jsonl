@@ -67,7 +67,7 @@
 {"id": "folio_marccat-3.0.1000438", "optional": [], "provides": [], "requires": ["marccat 2.0"]}
 {"id": "folio_mosaic-settings-1.0.10990000000046", "optional": [], "provides": [], "requires": ["mosaic 1.0", "order-templates 1.0"]}
 {"id": "folio_myprofile-11.0.109900000000101", "optional": [], "provides": [], "requires": ["settings 1.0"]}
-{"id": "folio_notes-11.0.10990000000094", "optional": [], "provides": [], "requires": ["notes 4.0"]}
+{"id": "folio_notes-12.0.109900000000103", "optional": [], "provides": [], "requires": ["notes 4.0"]}
 {"id": "folio_oa-3.1.109900000000168", "optional": ["erm 5.0 6.0 7.0", "finance.exchange-rate 1.0", "invoice 7.0", "organizations 1.0"], "provides": [], "requires": ["oa 1.0 2.0"]}
 {"id": "folio_oai-pmh-6.0.10990000000048", "optional": [], "provides": [], "requires": ["configuration 2.0", "oai-pmh 3.0"]}
 {"id": "folio_orders-9.0.109900000000369", "optional": ["consortia 1.0", "consortium-search 2.0", "erm 4.0 5.0 6.0 7.0"], "provides": [], "requires": ["acquisition-methods 1.0", "acquisition-order-events 1.0", "acquisition-order-line-events 1.0", "acquisitions-units 1.1", "configuration 2.0", "configuration.prefixes 1.0", "configuration.reasons-for-closure 1.0", "configuration.suffixes 1.0", "contributor-name-types 1.2", "contributor-types 2.0", "finance.budgets 1.3 2.0", "finance.exchange-rate 1.0", "finance.expense-classes 2.0 3.0", "finance.funds 3.0", "finance.transactions 6.0", "holdings-storage 4.4 5.0 6.0 7.0 8.0", "identifier-types 1.2", "instance-formats 2.0", "instance-relationship-types 1.0", "instance-statuses 1.0", "instance-types 2.0", "inventory 10.10 11.0 12.0 13.0 14.0", "invoice 7.0", "loan-types 2.2", "location-units 2.0", "locations 3.0", "material-types 2.2", "modes-of-issuance 1.0", "nature-of-content-terms 1.0", "order-lines 4.0", "order-templates 1.0", "orders 13.0", "orders-storage.order-template-categories 1.0", "orders-storage.settings 1.0", "orders.export-history 1.0", "organizations-storage.organization-types 1.0", "organizations.organizations 1.0", "pieces 2.0 3.0", "po-number 1.0", "receiving 1.0 2.0", "search 0.6 1.0", "tags 1.0", "template-engine 2.0", "titles 1.2", "users 15.0 16.0"]}
@@ -121,7 +121,7 @@
 {"id": "folio_stripes-inventory-components-2.1.109000000722", "optional": [], "provides": [], "requires": ["instance-date-types 1.0", "settings 1.0"]}
 {"id": "folio_stripes-marc-components-2.0.109900000000157", "optional": [], "provides": [], "requires": ["audit-marc 1.0", "instance-authority-linking-rules 1.1"]}
 {"id": "folio_stripes-registry-1.0.100011", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-smart-components-10.1.109900000000473", "optional": ["configuration 2.0", "remote-storage-mappings 1.0 2.0", "settings 1.0", "users 16.1"], "provides": [], "requires": ["notes 2.0 3.0 4.0", "password-validator 1.0", "tags 1.0"]}
+{"id": "folio_stripes-smart-components-10.1.109900000000505", "optional": ["configuration 2.0", "remote-storage-mappings 1.0 2.0", "settings 1.0", "users 16.1"], "provides": [], "requires": ["notes 2.0 3.0 4.0", "password-validator 1.0", "tags 1.0"]}
 {"id": "folio_stripes-template-editor-3.4.10990000000019", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-testing-4.2.1000107", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-ui-3.0.10990000000017", "optional": [], "provides": [], "requires": []}
