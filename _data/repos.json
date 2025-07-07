@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2025-07-03T02:30:05.601263+00:00"
+    "generatedDateTime": "2025-07-07T23:46:20.203199+00:00"
   },
   "repos": [
     {
@@ -2202,19 +2202,29 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "countBranches": 2,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
       "hasTranslations": false,
+      "hintOas": true,
       "isMaven": true,
       "name": "mod-camunda",
       "org": "folio-org",
       "ramlDirName": "ramls",
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml"
+      ]
     },
     {
       "apiTypes": "RAML",
@@ -4750,19 +4760,29 @@
       ]
     },
     {
+      "apiTypes": "OAS",
       "countBranches": 2,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
       "docDirName": "docs",
       "hasTranslations": false,
+      "hintOas": true,
       "isMaven": true,
       "name": "mod-workflow",
       "org": "folio-org",
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-mod",
-      "snippetIntro": "<p>This module provides a <strong>Workflow</strong> backend <strong>FOLIO</strong> module intended to help facilite and interact with one or more <strong>Workflow Engines</strong>. A <strong>Workflow Engine</strong> is able to react to events generated in FOLIO and may also trigger events based on some schedule.</p>"
+      "snippetIntro": "<p>This module provides a <strong>Workflow</strong> backend <strong>FOLIO</strong> module intended to help facilite and interact with one or more <strong>Workflow Engines</strong>. A <strong>Workflow Engine</strong> is able to react to events generated in FOLIO and may also trigger events based on some schedule.</p>",
+      "workflows": [
+        "api-doc.yml",
+        "api-lint.yml"
+      ],
+      "workflowsFolio": [
+        "api-doc.yml",
+        "api-lint.yml"
+      ]
     },
     {
       "countBranches": 6,

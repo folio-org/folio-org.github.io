@@ -136,6 +136,7 @@ other:
   title: Other
   description: Not yet grouped.
   modules:
+    - mod-camunda
     - mod-circulation-bff
     - mod-consortia
     - mod-consortia-keycloak
@@ -150,6 +151,7 @@ other:
     - mod-reading-room
     - mod-record-specifications
     - mod-scheduler
+    - mod-workflow
     - folio-custom-fields
     - folio-query-tool-metadata
     - folio-spring-support
