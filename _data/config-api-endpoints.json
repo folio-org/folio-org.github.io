@@ -194,6 +194,22 @@
     "path": "/_/invoke/tenant/{id}"
   },
   {
+    "apiDescription": "src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "_jsonSchemas 1.0",
+    "methods": "get:operation/getSchemas",
+    "name": "mod-camunda",
+    "path": "/_/jsonSchemas"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "_jsonSchemas 1.0",
+    "methods": "get:operation/getSchemas",
+    "name": "mod-workflow",
+    "path": "/_/jsonSchemas"
+  },
+  {
     "apiDescription": "ramls/jsonSchemas.raml",
     "apiType": "raml",
     "methods": "get:jsonschemas_get",
@@ -456,6 +472,22 @@
     "path": "/_/proxy/tenants/{tenant_id}/upgrade"
   },
   {
+    "apiDescription": "src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "_ramls 1.0",
+    "methods": "get:operation/getRamls",
+    "name": "mod-camunda",
+    "path": "/_/ramls"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "_ramls 1.0",
+    "methods": "get:operation/getRamls",
+    "name": "mod-workflow",
+    "path": "/_/ramls"
+  },
+  {
     "apiDescription": "ramls/ramls.raml",
     "apiType": "raml",
     "methods": "get:ramls_get",
@@ -474,6 +506,22 @@
     "apiType": "oas",
     "methods": "post:operation/postTenant",
     "name": "folio-vertx-lib",
+    "path": "/_/tenant"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "_tenant 1.0",
+    "methods": "delete:operation/delete post:operation/create",
+    "name": "mod-camunda",
+    "path": "/_/tenant"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "_tenant 1.0",
+    "methods": "delete:operation/delete post:operation/postTenant_1",
+    "name": "mod-workflow",
     "path": "/_/tenant"
   },
   {
@@ -502,6 +550,14 @@
     "apiType": "oas",
     "methods": "delete:operation/deleteTenant get:operation/getTenant",
     "name": "folio-spring-support",
+    "path": "/_/tenant/{operationId}"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "_tenant 1.0",
+    "methods": "delete:operation/deleteTenant get:operation/getTenant",
+    "name": "mod-workflow",
     "path": "/_/tenant/{operationId}"
   },
   {
@@ -752,6 +808,14 @@
     "path": "/acquisitions-units/units/{id}"
   },
   {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-actions 1.0",
+    "methods": "get:operation/getActions",
+    "name": "mod-workflow",
+    "path": "/actions"
+  },
+  {
     "apiDescription": "ramls/actual-cost-fee-fine.raml",
     "apiType": "raml",
     "interface": "actual-cost-fee-fine 0.3",
@@ -798,6 +862,20 @@
     "methods": "delete:addresstypes__addresstypeid__delete get:addresstypes__addresstypeid__get put:addresstypes__addresstypeid__put",
     "name": "mod-users",
     "path": "/addresstypes/{addresstypeId}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/links",
+    "name": "mod-camunda",
+    "path": "/admin"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/links",
+    "name": "mod-workflow",
+    "path": "/admin"
   },
   {
     "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
@@ -849,6 +927,20 @@
     "path": "/admin/health"
   },
   {
+    "apiDescription": "src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/health",
+    "name": "mod-camunda",
+    "path": "/admin/health"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/health",
+    "name": "mod-workflow",
+    "path": "/admin/health"
+  },
+  {
     "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
     "apiType": "raml",
     "methods": "get:admin_health_get",
@@ -856,11 +948,39 @@
     "path": "/admin/health"
   },
   {
+    "apiDescription": "src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/health-path",
+    "name": "mod-camunda",
+    "path": "/admin/health/**"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/health-path",
+    "name": "mod-workflow",
+    "path": "/admin/health/**"
+  },
+  {
     "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
     "apiType": "raml",
     "methods": "post:admin_importsql_post",
     "name": "raml-module-builder",
     "path": "/admin/importSQL"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/info",
+    "name": "mod-camunda",
+    "path": "/admin/info"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/info",
+    "name": "mod-workflow",
+    "path": "/admin/info"
   },
   {
     "apiDescription": "domain-models-api-interfaces/ramls/admin.raml",
@@ -1961,7 +2081,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 2.0",
+    "interface": "browse 2.1",
     "methods": "get:operation/browseAuthorities",
     "name": "mod-search",
     "path": "/browse/authorities"
@@ -1969,7 +2089,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 2.0",
+    "interface": "browse 2.1",
     "methods": "get:operation/browseInstancesByCallNumber",
     "name": "mod-search",
     "path": "/browse/call-numbers/{browseOptionId}/instances"
@@ -1977,7 +2097,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 2.0",
+    "interface": "browse 2.1",
     "methods": "get:operation/browseInstancesByClassificationNumber",
     "name": "mod-search",
     "path": "/browse/classification-numbers/{browseOptionId}/instances"
@@ -2001,7 +2121,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 2.0",
+    "interface": "browse 2.1",
     "methods": "get:operation/browseInstancesByContributor",
     "name": "mod-search",
     "path": "/browse/contributors/instances"
@@ -2009,7 +2129,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 2.0",
+    "interface": "browse 2.1",
     "methods": "get:operation/browseInstancesBySubject",
     "name": "mod-search",
     "path": "/browse/subjects/instances"
@@ -5002,6 +5122,14 @@
     "methods": "delete:eventconfig__id__delete get:eventconfig__id__get put:eventconfig__id__put",
     "name": "mod-event-config",
     "path": "/eventConfig/{id}"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-events 1.0",
+    "methods": "post:operation/postHandleEventsWithFile_1",
+    "name": "mod-workflow",
+    "path": "/events/**"
   },
   {
     "apiDescription": "ramls/feefine-reports.raml",
@@ -8628,6 +8756,22 @@
     "path": "/nature-of-content-terms/{id}"
   },
   {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-nodes 1.0",
+    "methods": "get:operation/getCollectionResource-node-get_1 post:operation/postCollectionResource-node-post",
+    "name": "mod-workflow",
+    "path": "/nodes"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-nodes 1.0",
+    "methods": "delete:operation/deleteItemResource-node-delete get:operation/getItemResource-node-get patch:operation/patchItemResource-node-patch put:operation/putItemResource-node-put",
+    "name": "mod-workflow",
+    "path": "/nodes/{id}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/notes.yml",
     "apiType": "oas",
     "methods": "get:operation/getNoteCollectionByLink",
@@ -10183,6 +10327,34 @@
     "methods": "get:prod_rtac_foliortac_get",
     "name": "edge-rtac",
     "path": "/prod/rtac/folioRTAC"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/listAllFormsOfMetadata_1",
+    "name": "mod-workflow",
+    "path": "/profile"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/descriptor_1_1_1",
+    "name": "mod-workflow",
+    "path": "/profile/nodes"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/descriptor_1_1_2",
+    "name": "mod-workflow",
+    "path": "/profile/triggers"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/descriptor_1_1_3",
+    "name": "mod-workflow",
+    "path": "/profile/workflows"
   },
   {
     "apiDescription": "ramls/proxiesFor.raml",
@@ -12246,6 +12418,30 @@
     "path": "/transfers/{transferId}"
   },
   {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-triggers 1.0",
+    "methods": "get:operation/getCollectionResource-trigger-get_1 post:operation/postCollectionResource-trigger-post",
+    "name": "mod-workflow",
+    "path": "/triggers"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-triggers 1.0",
+    "methods": "get:operation/executeSearch-trigger-get",
+    "name": "mod-workflow",
+    "path": "/triggers/search/findViewAllBy"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-triggers 1.0",
+    "methods": "delete:operation/deleteItemResource-trigger-delete get:operation/getItemResource-trigger-get patch:operation/patchItemResource-trigger-patch put:operation/putItemResource-trigger-put",
+    "name": "mod-workflow",
+    "path": "/triggers/{id}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/edge-dematic.yaml",
     "apiType": "oas",
     "methods": "post:operation/updateAsrItemReturn",
@@ -12633,5 +12829,117 @@
     "methods": "delete:waives__waiveid__delete get:waives__waiveid__get put:waives__waiveid__put",
     "name": "mod-feesfines",
     "path": "/waives/{waiveId}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "camunda-workflow-engine 1.0",
+    "methods": "post:operation/activateWorkflow",
+    "name": "mod-camunda",
+    "path": "/workflow-engine/workflows/activate"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "camunda-workflow-engine 1.0",
+    "methods": "post:operation/deactivateWorkflow",
+    "name": "mod-camunda",
+    "path": "/workflow-engine/workflows/deactivate"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-workflows 1.0",
+    "methods": "get:operation/getCollectionResource-workflow-get_1 post:operation/postCollectionResource-workflow-post",
+    "name": "mod-workflow",
+    "path": "/workflows"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-workflows 1.0",
+    "methods": "post:operation/importWorkflow",
+    "name": "mod-workflow",
+    "path": "/workflows/import"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-workflows 1.0",
+    "methods": "get:operation/searchWorkflows",
+    "name": "mod-workflow",
+    "path": "/workflows/search"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-workflows 1.0",
+    "methods": "get:operation/executeSearch-workflow-get",
+    "name": "mod-workflow",
+    "path": "/workflows/search/getViewById"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-workflows 1.0",
+    "methods": "get:operation/getItemResource-workflow-get_1 patch:operation/patchItemResource-workflow-patch put:operation/putItemResource-workflow-put",
+    "name": "mod-workflow",
+    "path": "/workflows/{id}"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-workflows 1.0",
+    "methods": "put:operation/activateWorkflow",
+    "name": "mod-workflow",
+    "path": "/workflows/{id}/activate"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-workflows 1.0",
+    "methods": "put:operation/deactivateWorkflow",
+    "name": "mod-workflow",
+    "path": "/workflows/{id}/deactivate"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-workflows 1.0",
+    "methods": "delete:operation/deleteWorkflow",
+    "name": "mod-workflow",
+    "path": "/workflows/{id}/delete"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-workflows 1.0",
+    "methods": "get:operation/workflowHistory",
+    "name": "mod-workflow",
+    "path": "/workflows/{id}/history"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-workflows 1.0",
+    "methods": "get:operation/followPropertyReference-workflow-get_1 patch:operation/createPropertyReference-workflow-patch put:operation/createPropertyReference-workflow-put",
+    "name": "mod-workflow",
+    "path": "/workflows/{id}/nodes"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-workflows 1.0",
+    "methods": "get:operation/followPropertyReference-workflow-get",
+    "name": "mod-workflow",
+    "path": "/workflows/{id}/nodes/{propertyId}"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-workflows 1.0",
+    "methods": "post:operation/startWorkflow",
+    "name": "mod-workflow",
+    "path": "/workflows/{id}/start"
   }
 ]
