@@ -446,6 +446,23 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/openapi.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.8"
+    },
+    "name": "mod-camunda",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/add-info.raml",
@@ -2152,6 +2169,23 @@
       "generator": "api_doc.py 1.8"
     },
     "name": "mod-users-keycloak",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "service/src/main/resources/openapi.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.8"
+    },
+    "name": "mod-workflow",
     "org": "folio-org"
   },
   {
