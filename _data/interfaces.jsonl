@@ -25,7 +25,7 @@
 {"id": "folio_authorization-policies-2.0.10990000000095", "optional": [], "provides": [], "requires": ["policies 1.1"]}
 {"id": "folio_authorization-roles-2.1.109900000000207", "optional": [], "provides": [], "requires": ["capabilities 1.0", "capability-sets 1.0 2.0", "role-capabilities 1.0", "role-capability-sets 1.1", "roles 1.1", "roles-user 1.0"]}
 {"id": "folio_bulck-edit-1.0.10005", "optional": [], "provides": [], "requires": []}
-{"id": "folio_bulk-edit-5.0.109900000000328", "optional": [], "provides": [], "requires": ["bulk-operations 1.0", "entity-types 2.0", "users 15.4 16.0"]}
+{"id": "folio_bulk-edit-5.0.109900000000421", "optional": [], "provides": [], "requires": ["bulk-operations 1.0", "entity-types 2.0", "users 15.4 16.0"]}
 {"id": "folio_calendar-12.0.109900000000159", "optional": [], "provides": [], "requires": ["calendar 5.0", "service-points 3.0", "users 16.0"]}
 {"id": "folio_checkin-12.0.109900000000125", "optional": ["circulation-bff-loans 1.0"], "provides": [], "requires": ["circulation 9.0 10.0 11.0 12.0 13.0 14.0", "configuration 2.0", "feesfines 17.0 18.0 19.0", "inventory 10.0 11.0 12.0 13.0 14.0", "loan-policy-storage 1.0 2.0", "users 15.0 16.0"]}
 {"id": "folio_checkout-12.0.109900000000123", "optional": ["circulation-bff-loans 1.2"], "provides": [], "requires": ["add-info 0.1", "automated-patron-blocks 0.1", "circulation 9.0 10.0 11.0 12.0 13.0 14.0", "configuration 2.0", "inventory 10.0 11.0 12.0 13.0 14.0", "loan-policy-storage 1.0 2.0", "notes 4.0", "users 16.4"]}
