@@ -2081,7 +2081,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 2.1",
+    "interface": "browse-authorities 1.0",
     "methods": "get:operation/browseAuthorities",
     "name": "mod-search",
     "path": "/browse/authorities"
@@ -2089,7 +2089,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 2.1",
+    "interface": "browse-inventory 1.0",
     "methods": "get:operation/browseInstancesByCallNumber",
     "name": "mod-search",
     "path": "/browse/call-numbers/{browseOptionId}/instances"
@@ -2097,7 +2097,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 2.1",
+    "interface": "browse-inventory 1.0",
     "methods": "get:operation/browseInstancesByClassificationNumber",
     "name": "mod-search",
     "path": "/browse/classification-numbers/{browseOptionId}/instances"
@@ -2121,7 +2121,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 2.1",
+    "interface": "browse-inventory 1.0",
     "methods": "get:operation/browseInstancesByContributor",
     "name": "mod-search",
     "path": "/browse/contributors/instances"
@@ -2129,7 +2129,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "browse 2.1",
+    "interface": "browse-inventory 1.0",
     "methods": "get:operation/browseInstancesBySubject",
     "name": "mod-search",
     "path": "/browse/subjects/instances"
@@ -11162,7 +11162,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.4",
+    "interface": "search-authorities 1.0",
     "methods": "get:operation/searchAuthorities",
     "name": "mod-search",
     "path": "/search/authorities"
@@ -11282,14 +11282,6 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.4",
-    "methods": "get:operation/getHoldingIds",
-    "name": "mod-search",
-    "path": "/search/holdings/ids"
-  },
-  {
-    "apiDescription": "target/api/openapi/mod-search.yaml",
-    "apiType": "oas",
     "interface": "indices 1.1",
     "methods": "post:operation/createIndices",
     "name": "mod-search",
@@ -11362,7 +11354,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.4",
+    "interface": "search-inventory 1.0",
     "methods": "get:operation/searchInstances",
     "name": "mod-search",
     "path": "/search/instances"
@@ -11370,15 +11362,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.4",
-    "methods": "get:operation/getInstanceIds",
-    "name": "mod-search",
-    "path": "/search/instances/ids"
-  },
-  {
-    "apiDescription": "target/api/openapi/mod-search.yaml",
-    "apiType": "oas",
-    "interface": "search 1.4",
+    "interface": "search-linked-data 1.0",
     "methods": "get:operation/searchLinkedDataHubs",
     "name": "mod-search",
     "path": "/search/linked-data/hubs"
@@ -11386,7 +11370,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.4",
+    "interface": "search-linked-data 1.0",
     "methods": "get:operation/searchLinkedDataInstances",
     "name": "mod-search",
     "path": "/search/linked-data/instances"
@@ -11394,7 +11378,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.4",
+    "interface": "search-linked-data 1.0",
     "methods": "get:operation/searchLinkedDataWorks",
     "name": "mod-search",
     "path": "/search/linked-data/works"
@@ -11402,7 +11386,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "resource-ids-streaming 0.3",
+    "interface": "resource-ids-streaming 1.0",
     "methods": "post:operation/submitIdsJob",
     "name": "mod-search",
     "path": "/search/resources/jobs"
@@ -11410,7 +11394,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "resource-ids-streaming 0.3",
+    "interface": "resource-ids-streaming 1.0",
     "methods": "get:operation/getIdsJob",
     "name": "mod-search",
     "path": "/search/resources/jobs/{jobId}"
@@ -11418,7 +11402,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "resource-ids-streaming 0.3",
+    "interface": "resource-ids-streaming 1.0",
     "methods": "get:operation/getResourceIds",
     "name": "mod-search",
     "path": "/search/resources/jobs/{jobId}/ids"
@@ -11426,7 +11410,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search 1.4",
+    "interface": "search-facets 1.0",
     "methods": "get:operation/getFacets",
     "name": "mod-search",
     "path": "/search/{recordType}/facets"
