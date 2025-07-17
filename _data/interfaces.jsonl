@@ -108,7 +108,7 @@
 {"id": "folio_serials-management-2.1.109900000000804", "optional": ["acquisitions-units 1.1", "holdings-storage 6.0 7.0 8.0", "identifier-types 1.2", "locations 3.0", "material-types 2.2", "order-lines 3.0 4.0", "orders 12.1 13.0", "organizations 2.0", "pieces 3.0", "titles 1.2"], "provides": [], "requires": ["serials-management 1.0 2.0"]}
 {"id": "folio_service-interaction-4.1.109900000000231", "optional": [], "provides": [], "requires": ["servint 4.0"]}
 {"id": "folio_servicepoints-8.0.10990000000029", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-acq-components-7.0.409900000000232", "optional": [], "provides": [], "requires": []}
+{"id": "folio_stripes-acq-components-7.1.109900000000237", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-authority-components-6.1.109900000000134", "optional": [], "provides": [], "requires": ["authority-source-files 2.0", "browse-authorities 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.0"]}
 {"id": "folio_stripes-authorization-components-2.0.109900000000270", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-components-12.2.109900000000337", "optional": [], "provides": [], "requires": []}
