@@ -7096,7 +7096,7 @@
   {
     "apiDescription": "ramls/inventory-hierarchy.raml",
     "apiType": "raml",
-    "interface": "inventory-hierarchy 0.6",
+    "interface": "inventory-hierarchy 0.7",
     "methods": "post:inventory_hierarchy_items_and_holdings_post",
     "name": "mod-inventory-storage",
     "path": "/inventory-hierarchy/items-and-holdings"
@@ -7104,7 +7104,7 @@
   {
     "apiDescription": "ramls/inventory-hierarchy.raml",
     "apiType": "raml",
-    "interface": "inventory-hierarchy 0.6",
+    "interface": "inventory-hierarchy 0.7",
     "methods": "get:inventory_hierarchy_updated_instance_ids_get",
     "name": "mod-inventory-storage",
     "path": "/inventory-hierarchy/updated-instance-ids"
@@ -8359,7 +8359,7 @@
   {
     "apiDescription": "ramls/location.raml",
     "apiType": "raml",
-    "interface": "locations 3.1",
+    "interface": "locations 3.2",
     "methods": "delete:locations_delete get:locations_get post:locations_post",
     "name": "mod-inventory-storage",
     "path": "/locations"
@@ -8367,7 +8367,7 @@
   {
     "apiDescription": "ramls/location.raml",
     "apiType": "raml",
-    "interface": "locations 3.1",
+    "interface": "locations 3.2",
     "methods": "delete:locations__id__delete get:locations__id__get put:locations__id__put",
     "name": "mod-inventory-storage",
     "path": "/locations/{id}"
