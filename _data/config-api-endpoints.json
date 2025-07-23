@@ -3836,6 +3836,22 @@
     "path": "/data-export-spring/configs/{id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/job-deletion-intervals.yaml",
+    "apiType": "oas",
+    "interface": "data-export-spring 2.0",
+    "methods": "get:operation/getAllJobDeletionIntervals post:operation/createJobDeletionInterval",
+    "name": "mod-data-export-spring",
+    "path": "/data-export-spring/job-deletion-intervals"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/job-deletion-intervals.yaml",
+    "apiType": "oas",
+    "interface": "data-export-spring 2.0",
+    "methods": "delete:operation/deleteJobDeletionInterval get:operation/getJobDeletionIntervalByExportType put:operation/updateJobDeletionInterval",
+    "name": "mod-data-export-spring",
+    "path": "/data-export-spring/job-deletion-intervals/{exportType}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
     "apiType": "oas",
     "interface": "data-export-spring 2.0",
