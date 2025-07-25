@@ -7104,7 +7104,7 @@
   {
     "apiDescription": "ramls/inventory-update.raml",
     "apiType": "raml",
-    "interface": "inventory-batch-upsert-hrid 2.1",
+    "interface": "inventory-batch-upsert-hrid 3.0",
     "methods": "put:inventory_batch_upsert_hrid_put",
     "name": "mod-inventory-update",
     "path": "/inventory-batch-upsert-hrid"
@@ -7336,7 +7336,7 @@
   {
     "apiDescription": "ramls/inventory-update.raml",
     "apiType": "raml",
-    "interface": "inventory-upsert-hrid 2.1",
+    "interface": "inventory-upsert-hrid 3.0",
     "methods": "delete:inventory_upsert_hrid_delete put:inventory_upsert_hrid_put",
     "name": "mod-inventory-update",
     "path": "/inventory-upsert-hrid"
@@ -7344,7 +7344,7 @@
   {
     "apiDescription": "ramls/inventory-update.raml",
     "apiType": "raml",
-    "interface": "inventory-upsert-hrid 2.1",
+    "interface": "inventory-upsert-hrid 3.0",
     "methods": "get:inventory_upsert_hrid_fetch__id__get",
     "name": "mod-inventory-update",
     "path": "/inventory-upsert-hrid/fetch/{id}"
@@ -7790,7 +7790,7 @@
   {
     "apiDescription": "ramls/item-sync.raml",
     "apiType": "raml",
-    "interface": "item-storage-batch-sync 1.0",
+    "interface": "item-storage-batch-sync 2.0",
     "methods": "post:item_storage_batch_synchronous_post",
     "name": "mod-inventory-storage",
     "path": "/item-storage/batch/synchronous"
@@ -7798,7 +7798,7 @@
   {
     "apiDescription": "ramls/item-sync-unsafe.raml",
     "apiType": "raml",
-    "interface": "item-storage-batch-sync-unsafe 1.0",
+    "interface": "item-storage-batch-sync-unsafe 2.0",
     "methods": "post:item_storage_batch_synchronous_unsafe_post",
     "name": "mod-inventory-storage",
     "path": "/item-storage/batch/synchronous-unsafe"
@@ -7806,7 +7806,7 @@
   {
     "apiDescription": "ramls/item-storage.raml",
     "apiType": "raml",
-    "interface": "item-storage 10.3",
+    "interface": "item-storage 11.0",
     "methods": "delete:item_storage_items_delete get:item_storage_items_get post:item_storage_items_post",
     "name": "mod-inventory-storage",
     "path": "/item-storage/items"
@@ -7814,7 +7814,7 @@
   {
     "apiDescription": "ramls/item-storage.raml",
     "apiType": "raml",
-    "interface": "item-storage 10.3",
+    "interface": "item-storage 11.0",
     "methods": "post:item_storage_items_retrieve_post",
     "name": "mod-inventory-storage",
     "path": "/item-storage/items/retrieve"
@@ -7822,7 +7822,7 @@
   {
     "apiDescription": "ramls/item-storage.raml",
     "apiType": "raml",
-    "interface": "item-storage 10.3",
+    "interface": "item-storage 11.0",
     "methods": "delete:item_storage_items__itemid__delete get:item_storage_items__itemid__get put:item_storage_items__itemid__put",
     "name": "mod-inventory-storage",
     "path": "/item-storage/items/{itemId}"
@@ -8033,7 +8033,7 @@
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
     "interface": "linked-data-profile 1.0",
-    "methods": "get:operation/getPreferredProfileByResourceType post:operation/setPreferredProfile",
+    "methods": "delete:operation/deletePreferredProfile get:operation/getPreferredProfileByResourceType post:operation/setPreferredProfile",
     "name": "mod-linked-data",
     "path": "/linked-data/profile/preferred"
   },
@@ -11636,7 +11636,7 @@
   {
     "apiDescription": "ramls/inventory-update.raml",
     "apiType": "raml",
-    "interface": "shared-inventory-batch-upsert-matchkey 2.0",
+    "interface": "shared-inventory-batch-upsert-matchkey 3.0",
     "methods": "put:shared_inventory_batch_upsert_matchkey_put",
     "name": "mod-inventory-update",
     "path": "/shared-inventory-batch-upsert-matchkey"
@@ -11644,7 +11644,7 @@
   {
     "apiDescription": "ramls/inventory-update.raml",
     "apiType": "raml",
-    "interface": "shared-inventory-upsert-matchkey 2.0",
+    "interface": "shared-inventory-upsert-matchkey 3.0",
     "methods": "delete:shared_inventory_upsert_matchkey_delete put:shared_inventory_upsert_matchkey_put",
     "name": "mod-inventory-update",
     "path": "/shared-inventory-upsert-matchkey"
@@ -11652,7 +11652,7 @@
   {
     "apiDescription": "ramls/inventory-update.raml",
     "apiType": "raml",
-    "interface": "shared-inventory-upsert-matchkey 2.0",
+    "interface": "shared-inventory-upsert-matchkey 3.0",
     "methods": "get:shared_inventory_upsert_matchkey_fetch__id__get",
     "name": "mod-inventory-update",
     "path": "/shared-inventory-upsert-matchkey/fetch/{id}"
