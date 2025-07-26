@@ -7112,7 +7112,7 @@
   {
     "apiDescription": "ramls/inventory-hierarchy.raml",
     "apiType": "raml",
-    "interface": "inventory-hierarchy 0.7",
+    "interface": "inventory-hierarchy 0.8",
     "methods": "post:inventory_hierarchy_items_and_holdings_post",
     "name": "mod-inventory-storage",
     "path": "/inventory-hierarchy/items-and-holdings"
@@ -7120,7 +7120,7 @@
   {
     "apiDescription": "ramls/inventory-hierarchy.raml",
     "apiType": "raml",
-    "interface": "inventory-hierarchy 0.7",
+    "interface": "inventory-hierarchy 0.8",
     "methods": "get:inventory_hierarchy_updated_instance_ids_get",
     "name": "mod-inventory-storage",
     "path": "/inventory-hierarchy/updated-instance-ids"
@@ -7352,7 +7352,7 @@
   {
     "apiDescription": "ramls/instance-set.raml",
     "apiType": "raml",
-    "interface": "inventory-view-instance-set 3.1",
+    "interface": "inventory-view-instance-set 3.2",
     "methods": "get:inventory_view_instance_set_get",
     "name": "mod-inventory-storage",
     "path": "/inventory-view/instance-set"
@@ -7360,7 +7360,7 @@
   {
     "apiDescription": "ramls/inventory-view.raml",
     "apiType": "raml",
-    "interface": "inventory-view 3.1",
+    "interface": "inventory-view 3.2",
     "methods": "get:inventory_view_instances_get",
     "name": "mod-inventory-storage",
     "path": "/inventory-view/instances"
@@ -7391,7 +7391,7 @@
   {
     "apiDescription": "ramls/inventory-move.raml",
     "apiType": "raml",
-    "interface": "inventory-move 0.2",
+    "interface": "inventory-move 0.3",
     "methods": "post:inventory_holdings_move_post",
     "name": "mod-inventory",
     "path": "/inventory/holdings/move"
@@ -7399,7 +7399,7 @@
   {
     "apiDescription": "ramls/inventory-update-ownership.raml",
     "apiType": "raml",
-    "interface": "inventory-update-ownership 1.0",
+    "interface": "inventory-update-ownership 1.1",
     "methods": "post:inventory_holdings_update_ownership_post",
     "name": "mod-inventory",
     "path": "/inventory/holdings/update-ownership"
@@ -7414,7 +7414,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "delete:inventory_instances_delete get:inventory_instances_get post:inventory_instances_post",
     "name": "mod-inventory",
     "path": "/inventory/instances"
@@ -7430,7 +7430,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "delete:inventory_instances__instanceid__delete get:inventory_instances__instanceid__get put:inventory_instances__instanceid__put",
     "name": "mod-inventory",
     "path": "/inventory/instances/{instanceId}"
@@ -7438,7 +7438,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "delete:inventory_instances__instanceid__mark_deleted_delete",
     "name": "mod-inventory",
     "path": "/inventory/instances/{instanceId}/mark-deleted"
@@ -7446,7 +7446,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "delete:inventory_items_delete get:inventory_items_get post:inventory_items_post",
     "name": "mod-inventory",
     "path": "/inventory/items"
@@ -7454,7 +7454,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "get:inventory_items_by_holdings_id_get post:inventory_items_by_holdings_id_post",
     "name": "mod-inventory",
     "path": "/inventory/items-by-holdings-id"
@@ -7462,7 +7462,7 @@
   {
     "apiDescription": "ramls/inventory-move.raml",
     "apiType": "raml",
-    "interface": "inventory-move 0.2",
+    "interface": "inventory-move 0.3",
     "methods": "post:inventory_items_move_post",
     "name": "mod-inventory",
     "path": "/inventory/items/move"
@@ -7470,7 +7470,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "post:inventory_items_retrieve_post",
     "name": "mod-inventory",
     "path": "/inventory/items/retrieve"
@@ -7478,7 +7478,7 @@
   {
     "apiDescription": "ramls/inventory-update-ownership.raml",
     "apiType": "raml",
-    "interface": "inventory-update-ownership 1.0",
+    "interface": "inventory-update-ownership 1.1",
     "methods": "post:inventory_items_update_ownership_post",
     "name": "mod-inventory",
     "path": "/inventory/items/update-ownership"
@@ -7486,7 +7486,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "delete:inventory_items__itemid__delete get:inventory_items__itemid__get put:inventory_items__itemid__put",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}"
@@ -7494,7 +7494,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "post:inventory_items__itemid__mark_in_process_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-in-process"
@@ -7502,7 +7502,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "post:inventory_items__itemid__mark_in_process_non_requestable_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-in-process-non-requestable"
@@ -7510,7 +7510,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "post:inventory_items__itemid__mark_intellectual_item_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-intellectual-item"
@@ -7518,7 +7518,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "post:inventory_items__itemid__mark_long_missing_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-long-missing"
@@ -7526,7 +7526,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "post:inventory_items__itemid__mark_missing_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-missing"
@@ -7534,7 +7534,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "post:inventory_items__itemid__mark_restricted_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-restricted"
@@ -7542,7 +7542,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "post:inventory_items__itemid__mark_unavailable_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-unavailable"
@@ -7550,7 +7550,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "post:inventory_items__itemid__mark_unknown_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-unknown"
@@ -7558,7 +7558,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "post:inventory_items__itemid__mark_withdrawn_post",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}/mark-withdrawn"
@@ -7566,7 +7566,7 @@
   {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
-    "interface": "inventory 14.3",
+    "interface": "inventory 14.4",
     "methods": "post:inventory_tenant_items_post",
     "name": "mod-inventory",
     "path": "/inventory/tenant-items"
@@ -7774,7 +7774,7 @@
   {
     "apiDescription": "ramls/item-storage-dereferenced.raml",
     "apiType": "raml",
-    "interface": "item-storage-dereferenced 1.1",
+    "interface": "item-storage-dereferenced 1.2",
     "methods": "get:item_storage_dereferenced_items_get",
     "name": "mod-inventory-storage",
     "path": "/item-storage-dereferenced/items"
@@ -7782,7 +7782,7 @@
   {
     "apiDescription": "ramls/item-storage-dereferenced.raml",
     "apiType": "raml",
-    "interface": "item-storage-dereferenced 1.1",
+    "interface": "item-storage-dereferenced 1.2",
     "methods": "get:item_storage_dereferenced_items__itemid__get",
     "name": "mod-inventory-storage",
     "path": "/item-storage-dereferenced/items/{itemId}"
@@ -11061,7 +11061,7 @@
   {
     "apiDescription": "ramls/rtac-batch.raml",
     "apiType": "raml",
-    "interface": "rtac-batch 1.1",
+    "interface": "rtac-batch 1.2",
     "methods": "post:rtac_batch_post",
     "name": "mod-rtac",
     "path": "/rtac-batch"
