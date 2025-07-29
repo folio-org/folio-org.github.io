@@ -35,6 +35,9 @@ jobs:
         ALL_REPOS_READ_ONLY: ${{ secrets.ALL_REPOS_READ_ONLY }}
       run: python .github/workflows/get-release-versions/get_release_versions.py -b R2-2024 -l info
 
+    - name: Do git pull
+      run: git pull
+
     - name: Commit changes, if any
       id: auto-commit-action
       uses: stefanzweifel/git-auto-commit-action@v6

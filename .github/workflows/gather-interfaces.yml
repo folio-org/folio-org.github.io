@@ -30,6 +30,9 @@ jobs:
         python .github/workflows/gather-interfaces/gather_interfaces.py \
           --output-file _data/interfaces.jsonl --loglevel info
 
+    - name: Do git pull
+      run: git pull
+
     - name: Commit changes, if any
       id: auto-commit-action
       uses: stefanzweifel/git-auto-commit-action@v6
