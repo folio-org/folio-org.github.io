@@ -9855,7 +9855,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.4",
+    "interface": "patron 6.5",
     "methods": "post:patron_post",
     "name": "mod-patron",
     "path": "/patron"
@@ -10022,7 +10022,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.4",
+    "interface": "patron 6.5",
     "methods": "get:patron_account__id__get",
     "name": "mod-patron",
     "path": "/patron/account/{id}"
@@ -10037,7 +10037,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.4",
+    "interface": "patron 6.5",
     "methods": "post:patron_account__id__hold__holdid__cancel_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/hold/{holdId}/cancel"
@@ -10052,7 +10052,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.4",
+    "interface": "patron 6.5",
     "methods": "get:patron_account__id__instance__instanceid__allowed_service_points_get",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/allowed-service-points"
@@ -10067,7 +10067,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.4",
+    "interface": "patron 6.5",
     "methods": "post:patron_account__id__instance__instanceid__hold_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/hold"
@@ -10082,7 +10082,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.4",
+    "interface": "patron 6.5",
     "methods": "get:patron_account__id__item__itemid__allowed_service_points_get",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/allowed-service-points"
@@ -10097,7 +10097,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.4",
+    "interface": "patron 6.5",
     "methods": "post:patron_account__id__item__itemid__hold_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/hold"
@@ -10112,7 +10112,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.4",
+    "interface": "patron 6.5",
     "methods": "post:patron_account__id__item__itemid__renew_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/renew"
@@ -10127,7 +10127,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.4",
+    "interface": "patron 6.5",
     "methods": "get:patron_registration_status__identifier__get",
     "name": "mod-patron",
     "path": "/patron/registration-status/{identifier}"
@@ -10142,7 +10142,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.4",
+    "interface": "patron 6.5",
     "methods": "put:patron__externalsystemid__put",
     "name": "mod-patron",
     "path": "/patron/{externalSystemId}"
@@ -11964,7 +11964,7 @@
   {
     "apiDescription": "ramls/staging_users.raml",
     "apiType": "raml",
-    "interface": "staging-users 1.1",
+    "interface": "staging-users 1.2",
     "methods": "get:staging_users_get post:staging_users_post",
     "name": "mod-users",
     "path": "/staging-users"
@@ -11972,7 +11972,7 @@
   {
     "apiDescription": "ramls/staging_users.raml",
     "apiType": "raml",
-    "interface": "staging-users 1.1",
+    "interface": "staging-users 1.2",
     "methods": "put:staging_users__externalsystemid__put",
     "name": "mod-users",
     "path": "/staging-users/{externalSystemId}"
@@ -11980,7 +11980,7 @@
   {
     "apiDescription": "ramls/staging_users.raml",
     "apiType": "raml",
-    "interface": "staging-users 1.1",
+    "interface": "staging-users 1.2",
     "methods": "put:staging_users__id__mergeorcreateuser_put",
     "name": "mod-users",
     "path": "/staging-users/{id}/mergeOrCreateUser"
@@ -12238,7 +12238,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/ecs-loans.yaml",
     "apiType": "oas",
-    "interface": "ecs-loans 1.1",
+    "interface": "ecs-loans 1.2",
     "methods": "post:operation/checkOutByBarcode",
     "name": "mod-tlr",
     "path": "/tlr/loans/check-out-by-barcode"
@@ -12246,7 +12246,15 @@
   {
     "apiDescription": "src/main/resources/swagger.api/ecs-loans.yaml",
     "apiType": "oas",
-    "interface": "ecs-loans 1.1",
+    "interface": "ecs-loans 1.2",
+    "methods": "post:operation/claimItemReturned",
+    "name": "mod-tlr",
+    "path": "/tlr/loans/claim-item-returned"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/ecs-loans.yaml",
+    "apiType": "oas",
+    "interface": "ecs-loans 1.2",
     "methods": "post:operation/declareItemLost",
     "name": "mod-tlr",
     "path": "/tlr/loans/declare-item-lost"
