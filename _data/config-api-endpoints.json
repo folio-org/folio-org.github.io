@@ -2489,7 +2489,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-loans 1.4",
+    "interface": "circulation-bff-loans 1.5",
     "methods": "get:operation/findCirculationLoansByQuery",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/loans"
@@ -2497,7 +2497,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-loans 1.4",
+    "interface": "circulation-bff-loans 1.5",
     "methods": "post:operation/checkInByBarcode",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/loans/check-in-by-barcode"
@@ -2505,7 +2505,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-loans 1.4",
+    "interface": "circulation-bff-loans 1.5",
     "methods": "post:operation/checkOutByBarcode",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/loans/check-out-by-barcode"
@@ -2513,7 +2513,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-loans 1.4",
+    "interface": "circulation-bff-loans 1.5",
     "methods": "get:operation/getCirculationLoanById",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/loans/{loanId}"
@@ -2521,7 +2521,15 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-loans 1.4",
+    "interface": "circulation-bff-loans 1.5",
+    "methods": "post:operation/claimItemReturned",
+    "name": "mod-circulation-bff",
+    "path": "/circulation-bff/loans/{loanId}/claim-item-returned"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
+    "apiType": "oas",
+    "interface": "circulation-bff-loans 1.5",
     "methods": "post:operation/declareItemLost",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/loans/{loanId}/declare-item-lost"
