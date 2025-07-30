@@ -32,7 +32,7 @@ Settings in the mod-settings module belong to a scope, which is named by a short
 
 There is no conept of defining a machine-readable object that is a scope -- for example, in a module descriptor. Instead, a scope exists when there are settings within that scope and permissions that provide access to them.
 
-In order to avoid multiple modules defining scopes with the same names, it is conventional for scope names to begin with the name of the module that is defining them. For example, the `mod-inventory` module might define a scope called mod-inventory` which contains all the settings used by the Inventory app.
+In order to avoid multiple modules defining scopes with the same names, it is conventional for scope names to begin with the name of the module that is defining them. For example, the `mod-inventory` module might define a scope called `mod-inventory` which contains all the settings used by the Inventory app.
 
 When all of a module's settings are within the same scope, it follows that a user who has permissions to access to any one setting has permission to access them all. It is almost always better for a module to define several scopes, using the module name as the first of multiple `.`-separated facets. For example, the `mod-inventory` module might define scopes `mod-inventory.admin` and `mod-inventory.prefs`, For adminstrative settings and preferences respectively, and assign permissions to allow only a few inventory users access to the administrative settings, but allow a broader group access to the pereferences.
 

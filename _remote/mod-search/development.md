@@ -349,8 +349,17 @@ if `sortDescription` contains `sortTYpe` as `collection` the following rules wil
 * if `sortOrder` is `desc` the the `mode` will be equal to `max`. It means that for sorting by a field containing a list of values - the highest value will be picked for sorting.
 
 ## Testings
+Directories:
+- `src/test/java/org/folio/support` - contains support classes for testing purposes.
+- `src/test/java/org/folio/search` - contains unit tests and integration tests related to specific classes.
+- `src/test/java/org/folio/api` - contains API integration tests.
+- `src/test/java/org/folio/indexing` - contains indexing integration tests.
 
 ### Unit testing
+To run unit tests, execute the following command:
+```shell
+mvn clean test
+```
 
 The project uses mostly only one framework for assertions - [AssertJ](https://joel-costigliola.github.io/assertj/)
 A few examples:
@@ -365,6 +374,10 @@ assertThatThrownBy(() -> service.doExceptionalOperation())
 ```
 
 ### Integration testing
+To run integration tests, execute the following command:
+```shell
+mvn clean verify
+```
 
-The module uses [Testcontainers](https://www.testcontainers.org/) to run Elasticsearch, Apache Kafka and PostgreSQL
-in embedded mode. It is required to have Docker installed and available on the host where the tests are executed.
+The module uses [Testcontainers](https://www.testcontainers.org/) to run Elasticsearch, Apache Kafka and PostgreSQL in embedded mode. 
+It is required to have Docker installed and available on the host where the tests are executed.
