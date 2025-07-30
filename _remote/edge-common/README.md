@@ -4,7 +4,7 @@ layout: null
 
 # edge-common
 
-Copyright (C) 2018-2024 The Open Library Foundation
+Copyright (C) 2018-2025 The Open Library Foundation
 
 This software is distributed under the terms of the Apache License,
 Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
@@ -75,6 +75,18 @@ The final API Key looks something like: `eyJzIjoiblo1NkYzTGVBYSIsInQiOiJkaWt1Iiw
 
 The purpose of the salt is to prevent API Key from being guessed, which would be easy if the tenant ID was known, especially if the Institutional Username was the same as the tenant ID.
 
+#### Unix Shell
+
+Create a new API Key:
+
+`printf '{"s":"%s","t":"%s","u":"%s"}' "$( cat /dev/random | tr -cd 'a-zA-Z0-9' | head -c17 )" "tenant" "user" | base64`
+
+Replace `tenant` and `user` with the actual value or with a variable like `$TENANT` and `$USER`.
+
+Decode an API Key:
+
+`echo "eyJzIjoiSEQxbmVsZFpqeWRLNFNDdzEiLCJ0IjoidGVuYW50IiwidSI6InVzZXIifQ==" | base64 -d`
+
 #### API Key Utilities
 
 A utility class has been provided to help with API key generate, parsing, etc.  The utility can be use programatically, or via a command line interface.  Example CLI usage:
@@ -86,7 +98,7 @@ $ java -jar target/edge-common-api-key-utils.jar
 Usage: ApiKeyUtils [options]
  -g                   : generate an API Key (default: false)
  -p VAL               : parse an API Key
- -s (--salt-len) N    : the number of salt characters (default: 10)
+ -s (--salt-len) N    : the number of salt characters (default: 17)
  -t (--tenant-id) VAL : the tenant's ID
  -u (--username) VAL  : the tenant's institutional user's username
 
@@ -133,11 +145,13 @@ Only intended for _development purposes_.  Credentials are defined in plain text
 
 #### AwsParamStore ####
 
-Retrieves credentials from Amazon Web Services Systems Manager (AWS SSM), more specifically the Parameter Store, where they're stored encrypted using a KMS key.  See `src.main/resources/aws_ss.properties`
+Retrieves credentials from Amazon Web Services Systems Manager (AWS SSM), more specifically the Parameter Store, where they're stored encrypted using a KMS key.
 
 **Key:** `<salt>_<tenantId>_<username>`
 
 e.g. Key=`ab73kbw90e_diku_diku`
+
+You can set the HTTP endpoint to use for retrieving AWS credentials: Use the system property `ecsCredentialsEndpoint` (for example `http://example.com`). The path is taken from the `ecsCredentialsPath` system property, or from the `AWS_CONTAINER_CREDENTIALS_RELATIVE_URI` environment variable (standard on ECS containers). You also need to set the system properties `region` to the AWS region and `useIAM` to `false`.
 
 #### VaultStore ####
 

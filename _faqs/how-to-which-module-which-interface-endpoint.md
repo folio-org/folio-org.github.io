@@ -16,6 +16,14 @@ There is the set of [API documentation](/reference/api/), and the associated lis
 
 Also utilise the [Search API endpoints](/search-endpoints/) facility.
 
+## API dependencies
+
+[FOLIO API dependencies](https://dev.folio.org/folio-api-dependencies/). Tool for exploring module dependencies in FOLIO.
+
+Tools and resources for managing and visualizing dependencies in the FOLIO API ecosystem. It includes a web-based interface for exploring module dependencies, API usage counts, and detailed API usage views.
+
+See its [source-code](/source-code/map/#folio-api-dependencies).
+
 ## Registry of ModuleDescriptors
 
 Use the FOLIO Registry to search for modules that provide or require certain interfaces.

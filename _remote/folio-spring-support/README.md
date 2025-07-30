@@ -162,6 +162,8 @@ public interface JpaCqlRepository<T, ID> extends JpaRepository<T, ID> {
 }
 ```
 
+By default a CQL search a `String` field ignores case (= is case insensitive) and ignores accents; this is for consistency with <a href="https://github.com/folio-org/raml-module-builder?tab=readme-ov-file#the-post-tenant-api">RMB based modules</a>. Use the annotations `@RespectCase` and/or `@RespectAccents` in the entity class to change the default.
+
 ## Logging
 
 ### Default logging format
