@@ -8017,7 +8017,7 @@
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
     "interface": "linked-data 2.0",
-    "methods": "get:operation/isSupportedByInventoryId",
+    "methods": "get:operation/checkMarcBibImportableToGraph",
     "name": "mod-linked-data",
     "path": "/linked-data/inventory-instance/{inventoryId}/import-supported"
   },
@@ -8271,7 +8271,7 @@
   {
     "apiDescription": "ramls/loan-policy-storage.raml",
     "apiType": "raml",
-    "interface": "loan-policy-storage 2.3",
+    "interface": "loan-policy-storage 2.4",
     "methods": "delete:loan_policy_storage_loan_policies_delete get:loan_policy_storage_loan_policies_get post:loan_policy_storage_loan_policies_post",
     "name": "mod-circulation-storage",
     "path": "/loan-policy-storage/loan-policies"
@@ -8279,7 +8279,7 @@
   {
     "apiDescription": "ramls/loan-policy-storage.raml",
     "apiType": "raml",
-    "interface": "loan-policy-storage 2.3",
+    "interface": "loan-policy-storage 2.4",
     "methods": "delete:loan_policy_storage_loan_policies__loanpolicyid__delete get:loan_policy_storage_loan_policies__loanpolicyid__get put:loan_policy_storage_loan_policies__loanpolicyid__put",
     "name": "mod-circulation-storage",
     "path": "/loan-policy-storage/loan-policies/{loanPolicyId}"
@@ -8287,7 +8287,7 @@
   {
     "apiDescription": "ramls/loan-storage.raml",
     "apiType": "raml",
-    "interface": "loan-storage 7.3",
+    "interface": "loan-storage 7.4",
     "methods": "get:loan_storage_loan_history_get",
     "name": "mod-circulation-storage",
     "path": "/loan-storage/loan-history"
@@ -8295,7 +8295,7 @@
   {
     "apiDescription": "ramls/loan-storage.raml",
     "apiType": "raml",
-    "interface": "loan-storage 7.3",
+    "interface": "loan-storage 7.4",
     "methods": "delete:loan_storage_loans_delete get:loan_storage_loans_get post:loan_storage_loans_post",
     "name": "mod-circulation-storage",
     "path": "/loan-storage/loans"
@@ -8303,7 +8303,7 @@
   {
     "apiDescription": "ramls/loan-storage.raml",
     "apiType": "raml",
-    "interface": "loan-storage 7.3",
+    "interface": "loan-storage 7.4",
     "methods": "post:loan_storage_loans_anonymize__userid__post",
     "name": "mod-circulation-storage",
     "path": "/loan-storage/loans/anonymize/{userId}"
@@ -8311,7 +8311,7 @@
   {
     "apiDescription": "ramls/loan-storage.raml",
     "apiType": "raml",
-    "interface": "loan-storage 7.3",
+    "interface": "loan-storage 7.4",
     "methods": "delete:loan_storage_loans__loanid__delete get:loan_storage_loans__loanid__get put:loan_storage_loans__loanid__put",
     "name": "mod-circulation-storage",
     "path": "/loan-storage/loans/{loanId}"
