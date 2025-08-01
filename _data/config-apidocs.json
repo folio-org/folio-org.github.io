@@ -475,6 +475,7 @@
         "ramls/claim-item-returned.raml",
         "ramls/declare-item-lost.raml",
         "ramls/end-patron-action-session.raml",
+        "ramls/for-use-at-location-shelf.raml",
         "ramls/inventory-reports.raml",
         "ramls/loan-anonymization.raml",
         "ramls/request-move.raml",
