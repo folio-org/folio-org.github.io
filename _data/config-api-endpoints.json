@@ -5598,6 +5598,14 @@
     "path": "/finance/calculate-exchange"
   },
   {
+    "apiDescription": "ramls/exchange-batch.raml",
+    "apiType": "raml",
+    "interface": "finance.exchange-rate 1.0",
+    "methods": "post:finance_calculate_exchange_batch_post",
+    "name": "mod-finance",
+    "path": "/finance/calculate-exchange-batch"
+  },
+  {
     "apiDescription": "ramls/exchange.raml",
     "apiType": "raml",
     "interface": "finance.exchange-rate 1.0",
@@ -7169,17 +7177,9 @@
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
     "interface": "inventory-import 1.0",
-    "methods": "get:operation/startImportVerticle",
+    "methods": "get:operation/startFileListener",
     "name": "mod-inventory-import",
     "path": "/inventory-import/import-configs/xml-bulk/{id}/activate"
-  },
-  {
-    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
-    "apiType": "oas",
-    "interface": "inventory-import 1.0",
-    "methods": "get:operation/stopImportVerticle",
-    "name": "mod-inventory-import",
-    "path": "/inventory-import/import-configs/xml-bulk/{id}/deactivate"
   },
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
@@ -7188,6 +7188,22 @@
     "methods": "post:operation/importXmlRecords",
     "name": "mod-inventory-import",
     "path": "/inventory-import/import-configs/xml-bulk/{id}/import"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/pauseImport",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/import-configs/xml-bulk/{id}/pause"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/resumeImport",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/import-configs/xml-bulk/{id}/resume"
   },
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",

@@ -941,6 +941,7 @@
       "oas": [],
       "raml": [
         "ramls/budgets.raml",
+        "ramls/exchange-batch.raml",
         "ramls/exchange.raml",
         "ramls/expense-classes.raml",
         "ramls/finance-data.raml",
