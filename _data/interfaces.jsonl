@@ -118,7 +118,7 @@
 {"id": "folio_stripes-erm-components-9.2.10990000000077", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-final-form-8.1.1090000009", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-form-9.1.1090000004", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-inventory-components-2.1.109000000735", "optional": [], "provides": [], "requires": ["instance-date-types 1.0", "settings 1.0"]}
+{"id": "folio_stripes-inventory-components-2.1.109000000738", "optional": [], "provides": [], "requires": ["instance-date-types 1.0", "settings 1.0"]}
 {"id": "folio_stripes-marc-components-2.0.109900000000167", "optional": [], "provides": [], "requires": ["audit-marc 1.0", "instance-authority-linking-rules 1.1"]}
 {"id": "folio_stripes-registry-1.0.100011", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-smart-components-10.1.109900000000570", "optional": ["configuration 2.0", "remote-storage-mappings 1.0 2.0", "settings 1.0", "users 16.1"], "provides": [], "requires": ["notes 2.0 3.0 4.0", "password-validator 1.0", "tags 1.0"]}
