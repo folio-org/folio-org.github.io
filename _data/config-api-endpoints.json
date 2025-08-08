@@ -8367,7 +8367,7 @@
   {
     "apiDescription": "ramls/locationunit.raml",
     "apiType": "raml",
-    "interface": "location-units 2.0",
+    "interface": "location-units 2.1",
     "methods": "delete:location_units_campuses_delete get:location_units_campuses_get post:location_units_campuses_post",
     "name": "mod-inventory-storage",
     "path": "/location-units/campuses"
@@ -8375,7 +8375,7 @@
   {
     "apiDescription": "ramls/locationunit.raml",
     "apiType": "raml",
-    "interface": "location-units 2.0",
+    "interface": "location-units 2.1",
     "methods": "delete:location_units_campuses__id__delete get:location_units_campuses__id__get put:location_units_campuses__id__put",
     "name": "mod-inventory-storage",
     "path": "/location-units/campuses/{id}"
@@ -8383,7 +8383,7 @@
   {
     "apiDescription": "ramls/locationunit.raml",
     "apiType": "raml",
-    "interface": "location-units 2.0",
+    "interface": "location-units 2.1",
     "methods": "delete:location_units_institutions_delete get:location_units_institutions_get post:location_units_institutions_post",
     "name": "mod-inventory-storage",
     "path": "/location-units/institutions"
@@ -8391,7 +8391,7 @@
   {
     "apiDescription": "ramls/locationunit.raml",
     "apiType": "raml",
-    "interface": "location-units 2.0",
+    "interface": "location-units 2.1",
     "methods": "delete:location_units_institutions__id__delete get:location_units_institutions__id__get put:location_units_institutions__id__put",
     "name": "mod-inventory-storage",
     "path": "/location-units/institutions/{id}"
@@ -8399,7 +8399,7 @@
   {
     "apiDescription": "ramls/locationunit.raml",
     "apiType": "raml",
-    "interface": "location-units 2.0",
+    "interface": "location-units 2.1",
     "methods": "delete:location_units_libraries_delete get:location_units_libraries_get post:location_units_libraries_post",
     "name": "mod-inventory-storage",
     "path": "/location-units/libraries"
@@ -8407,7 +8407,7 @@
   {
     "apiDescription": "ramls/locationunit.raml",
     "apiType": "raml",
-    "interface": "location-units 2.0",
+    "interface": "location-units 2.1",
     "methods": "delete:location_units_libraries__id__delete get:location_units_libraries__id__get put:location_units_libraries__id__put",
     "name": "mod-inventory-storage",
     "path": "/location-units/libraries/{id}"
