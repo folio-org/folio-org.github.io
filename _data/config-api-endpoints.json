@@ -10915,7 +10915,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
     "apiType": "oas",
-    "interface": "requests-mediated-loans 1.1",
+    "interface": "requests-mediated-loans 1.2",
     "methods": "post:operation/checkOutByBarcode",
     "name": "mod-requests-mediated",
     "path": "/requests-mediated/loans/check-out-by-barcode"
@@ -10923,7 +10923,15 @@
   {
     "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
     "apiType": "oas",
-    "interface": "requests-mediated-loans 1.1",
+    "interface": "requests-mediated-loans 1.2",
+    "methods": "post:operation/claimItemReturned",
+    "name": "mod-requests-mediated",
+    "path": "/requests-mediated/loans/{loanId}/claim-item-returned"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
+    "apiType": "oas",
+    "interface": "requests-mediated-loans 1.2",
     "methods": "post:operation/declareItemLost",
     "name": "mod-requests-mediated",
     "path": "/requests-mediated/loans/{loanId}/declare-item-lost"
