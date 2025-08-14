@@ -146,7 +146,6 @@ other:
     - mod-fqm-manager
     - edge-fqm
     - mod-lists
-    - mod-ldp
     - mod-reporting
     - mod-reading-room
     - mod-record-specifications

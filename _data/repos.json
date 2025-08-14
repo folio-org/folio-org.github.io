@@ -3490,32 +3490,6 @@
       ]
     },
     {
-      "apiTypes": "RAML",
-      "countBranches": 7,
-      "countOpenPullRequests": 0,
-      "defaultBranch": "master",
-      "description": "Reporting Back End module",
-      "docDirName": "doc",
-      "hasTranslations": false,
-      "isMaven": true,
-      "name": "mod-ldp",
-      "org": "folio-org",
-      "ramlDirName": "ramls",
-      "repoLanguageHint": "java",
-      "repoType": "backend-mod",
-      "snippetIntro": "<p><code>mod-ldp</code> is a FOLIO module that mediates access to the <a href='https://github.com/library-data-platform/ldp'>Library Data Platform</a> (LDP). It removes the need to deal directly with a relational database by providing a simple WSAPI that can be used by UI code such as <a href='https://github.com/library-data-platform/ui-ldp'><code>ui-ldp</code></a>.</p>",
-      "workflows": [
-        "api-doc.yml",
-        "api-lint.yml",
-        "api-schema-lint.yml"
-      ],
-      "workflowsFolio": [
-        "api-doc.yml",
-        "api-lint.yml",
-        "api-schema-lint.yml"
-      ]
-    },
-    {
       "countBranches": 14,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
