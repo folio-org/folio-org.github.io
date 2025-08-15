@@ -7891,14 +7891,6 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
-    "interface": "ldp-query 1.2",
-    "methods": "get:ldp_config_get",
-    "name": "mod-ldp",
-    "path": "/ldp/config"
-  },
-  {
-    "apiDescription": "ramls/ldp.raml",
-    "apiType": "raml",
     "interface": "ldp-query 1.4",
     "methods": "get:ldp_config_get",
     "name": "mod-reporting",
@@ -7907,26 +7899,10 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
-    "interface": "ldp-query 1.2",
-    "methods": "get:ldp_config__key__get put:ldp_config__key__put",
-    "name": "mod-ldp",
-    "path": "/ldp/config/{key}"
-  },
-  {
-    "apiDescription": "ramls/ldp.raml",
-    "apiType": "raml",
     "interface": "ldp-query 1.4",
     "methods": "get:ldp_config__key__get put:ldp_config__key__put",
     "name": "mod-reporting",
     "path": "/ldp/config/{key}"
-  },
-  {
-    "apiDescription": "ramls/ldp.raml",
-    "apiType": "raml",
-    "interface": "ldp-query 1.2",
-    "methods": "get:ldp_db_columns_get",
-    "name": "mod-ldp",
-    "path": "/ldp/db/columns"
   },
   {
     "apiDescription": "ramls/ldp.raml",
@@ -7946,14 +7922,6 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
-    "interface": "ldp-query 1.2",
-    "methods": "post:ldp_db_query_post",
-    "name": "mod-ldp",
-    "path": "/ldp/db/query"
-  },
-  {
-    "apiDescription": "ramls/ldp.raml",
-    "apiType": "raml",
     "interface": "ldp-query 1.4",
     "methods": "post:ldp_db_query_post",
     "name": "mod-reporting",
@@ -7962,26 +7930,10 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
-    "interface": "ldp-query 1.2",
-    "methods": "post:ldp_db_reports_post",
-    "name": "mod-ldp",
-    "path": "/ldp/db/reports"
-  },
-  {
-    "apiDescription": "ramls/ldp.raml",
-    "apiType": "raml",
     "interface": "ldp-query 1.4",
     "methods": "post:ldp_db_reports_post",
     "name": "mod-reporting",
     "path": "/ldp/db/reports"
-  },
-  {
-    "apiDescription": "ramls/ldp.raml",
-    "apiType": "raml",
-    "interface": "ldp-query 1.2",
-    "methods": "get:ldp_db_tables_get",
-    "name": "mod-ldp",
-    "path": "/ldp/db/tables"
   },
   {
     "apiDescription": "ramls/ldp.raml",
