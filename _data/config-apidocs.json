@@ -1337,23 +1337,6 @@
     "config": {
       "oas": [],
       "raml": [
-        "ramls/ldp.raml"
-      ],
-      "upload": []
-    },
-    "metadata": {
-      "apiTypes": [
-        "RAML"
-      ],
-      "generator": "api_doc.py 1.5.3"
-    },
-    "name": "mod-ldp",
-    "org": "folio-org"
-  },
-  {
-    "config": {
-      "oas": [],
-      "raml": [
         "ramls/licenses.raml"
       ],
       "upload": []
