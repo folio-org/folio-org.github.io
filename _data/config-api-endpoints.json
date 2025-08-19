@@ -7684,6 +7684,22 @@
     "path": "/invoice-storage/invoices/{id}/documents/{documentId}"
   },
   {
+    "apiDescription": "ramls/settings.raml",
+    "apiType": "raml",
+    "interface": "invoice-storage.settings 1.0",
+    "methods": "get:invoice_storage_settings_get post:invoice_storage_settings_post",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/settings"
+  },
+  {
+    "apiDescription": "ramls/settings.raml",
+    "apiType": "raml",
+    "interface": "invoice-storage.settings 1.0",
+    "methods": "delete:invoice_storage_settings__id__delete get:invoice_storage_settings__id__get put:invoice_storage_settings__id__put",
+    "name": "mod-invoice-storage",
+    "path": "/invoice-storage/settings/{id}"
+  },
+  {
     "apiDescription": "ramls/invoice.raml",
     "apiType": "raml",
     "interface": "invoice 7.2",

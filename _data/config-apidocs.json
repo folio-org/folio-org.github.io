@@ -1288,6 +1288,7 @@
         "ramls/invoice-line-number.raml",
         "ramls/invoice-number.raml",
         "ramls/invoice.raml",
+        "ramls/settings.raml",
         "ramls/voucher-number.raml",
         "ramls/voucher.raml"
       ],
