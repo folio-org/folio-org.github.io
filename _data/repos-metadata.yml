@@ -84,6 +84,9 @@ ui-invoice:
 
 ui-ldp:
   spaceUserDocs: reporting/
+  urlsOther:
+    - https://github.com/folio-org/ui-ldp/blob/master/doc/reports.md
+    - https://github.com/indexdata/metadb-reports
 
 ui-licenses:
   urlAppSettings: https://docs.folio.org/docs/settings/settings_licenses/settings_licenses/
