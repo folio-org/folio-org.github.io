@@ -2137,7 +2137,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.6",
+    "interface": "bulk-operations 1.7",
     "methods": "get:operation/getBulkOperationCollection",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations"
@@ -2153,7 +2153,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.6",
+    "interface": "bulk-operations 1.7",
     "methods": "get:operation/getListUsers",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/list-users"
@@ -2161,7 +2161,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.6",
+    "interface": "bulk-operations 1.7",
     "methods": "get:operation/getProfiles post:operation/createProfile",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/profiles"
@@ -2169,7 +2169,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.6",
+    "interface": "bulk-operations 1.7",
     "methods": "delete:operation/deleteProfile put:operation/updateProfile",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/profiles/{id}"
@@ -2177,7 +2177,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.6",
+    "interface": "bulk-operations 1.7",
     "methods": "post:operation/triggerBulkEditByQuery",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/query"
@@ -2185,7 +2185,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.6",
+    "interface": "bulk-operations 1.7",
     "methods": "post:operation/uploadCsvFile",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/upload"
@@ -2193,7 +2193,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.6",
+    "interface": "bulk-operations 1.7",
     "methods": "get:operation/getListUsedTenants",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/used-tenants/{operationId}"
@@ -2201,7 +2201,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.6",
+    "interface": "bulk-operations 1.7",
     "methods": "get:operation/getBulkOperationById",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}"
@@ -2209,7 +2209,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.6",
+    "interface": "bulk-operations 1.7",
     "methods": "post:operation/cancelOperationById",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/cancel"
@@ -2217,7 +2217,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.6",
+    "interface": "bulk-operations 1.7",
     "methods": "post:operation/postContentUpdates",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/content-update"
@@ -2225,7 +2225,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.6",
+    "interface": "bulk-operations 1.7",
     "methods": "get:operation/downloadFileByOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/download"
@@ -2233,7 +2233,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.6",
+    "interface": "bulk-operations 1.7",
     "methods": "get:operation/getErrorsPreviewByOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/errors"
@@ -2241,7 +2241,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.6",
+    "interface": "bulk-operations 1.7",
     "methods": "delete:operation/deleteFileByNameAndOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/files/{fileName}"
@@ -2249,7 +2249,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.6",
+    "interface": "bulk-operations 1.7",
     "methods": "post:operation/postMarcContentUpdates",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/marc-content-update"
@@ -2257,7 +2257,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.6",
+    "interface": "bulk-operations 1.7",
     "methods": "get:operation/getPreviewByOperationId",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/preview"
@@ -2265,7 +2265,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/bulk-operations.yaml",
     "apiType": "oas",
-    "interface": "bulk-operations 1.6",
+    "interface": "bulk-operations 1.7",
     "methods": "post:operation/startBulkOperation",
     "name": "mod-bulk-operations",
     "path": "/bulk-operations/{operationId}/start"
@@ -2489,7 +2489,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-loans 1.5",
+    "interface": "circulation-bff-loans 1.6",
     "methods": "get:operation/findCirculationLoansByQuery",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/loans"
@@ -2497,7 +2497,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-loans 1.5",
+    "interface": "circulation-bff-loans 1.6",
     "methods": "post:operation/checkInByBarcode",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/loans/check-in-by-barcode"
@@ -2505,7 +2505,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-loans 1.5",
+    "interface": "circulation-bff-loans 1.6",
     "methods": "post:operation/checkOutByBarcode",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/loans/check-out-by-barcode"
@@ -2513,7 +2513,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-loans 1.5",
+    "interface": "circulation-bff-loans 1.6",
     "methods": "get:operation/getCirculationLoanById",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/loans/{loanId}"
@@ -2521,7 +2521,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-loans 1.5",
+    "interface": "circulation-bff-loans 1.6",
     "methods": "post:operation/claimItemReturned",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/loans/{loanId}/claim-item-returned"
@@ -2529,7 +2529,15 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
     "apiType": "oas",
-    "interface": "circulation-bff-loans 1.5",
+    "interface": "circulation-bff-loans 1.6",
+    "methods": "post:operation/declareClaimedReturnedItemAsMissing",
+    "name": "mod-circulation-bff",
+    "path": "/circulation-bff/loans/{loanId}/declare-claimed-returned-item-as-missing"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
+    "apiType": "oas",
+    "interface": "circulation-bff-loans 1.6",
     "methods": "post:operation/declareItemLost",
     "name": "mod-circulation-bff",
     "path": "/circulation-bff/loans/{loanId}/declare-item-lost"
