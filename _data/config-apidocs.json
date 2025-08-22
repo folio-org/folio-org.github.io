@@ -296,7 +296,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.4.2"
+      "generator": "api_doc.py 1.8"
     },
     "name": "folio-vertx-lib",
     "org": "folio-org"
