@@ -185,6 +185,13 @@ For example mod-search 3.2.\*:
 * [https://s3.amazonaws.com/foliodocs/api/mod-search/3.2/s/mod-search.html](https://s3.amazonaws.com/foliodocs/api/mod-search/3.2/s/mod-search.html)
 * List of endpoints: [https://s3.amazonaws.com/foliodocs/api/mod-search/3.2/config-doc.json](https://s3.amazonaws.com/foliodocs/api/mod-search/3.2/config-doc.json)
 
+### Version numbers
+
+The generated API documentation has a "version number" at the top in brackets. This originates from each module's API description file "version" property.
+
+This property is mostly used inconsistently by module developers.
+Instead refer to each module's ModuleDescriptor.
+
 ### Explain "views" {#explain-views}
 
 For each module, the "views" of its documentation are generated from the same source API description file, but using different presentation software.
