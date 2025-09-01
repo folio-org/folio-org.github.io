@@ -94,7 +94,7 @@
 {"id": "folio_plugin-find-po-line-6.0.10990000000093", "optional": [], "provides": [], "requires": ["acquisition-methods 1.0", "acquisitions-units 1.1", "configuration.prefixes 1.2", "configuration.reasons-for-closure 1.0", "configuration.suffixes 1.2", "contributor-name-types 1.2", "finance.expense-classes 2.0 3.0", "finance.funds 1.4 2.0 3.0", "identifier-types 1.2", "inventory 10.0 11.0 12.0 13.0 14.0", "location-units 2.0", "locations 3.0", "material-types 2.2", "order-lines 2.0 3.0 4.0", "organizations.organizations 1.0", "tags 1.0"]}
 {"id": "folio_plugin-find-user-8.0.10990000000086", "optional": [], "provides": [], "requires": []}
 {"id": "folio_plugin-find-vendor-1.3.200031", "optional": [], "provides": [], "requires": []}
-{"id": "folio_plugin-query-builder-3.0.109900000000857", "optional": [], "provides": [], "requires": ["configuration 2.0", "fqm-query 2.0", "settings 1.0"]}
+{"id": "folio_plugin-query-builder-3.0.109900000000860", "optional": [], "provides": [], "requires": ["configuration 2.0", "fqm-query 2.0", "settings 1.0"]}
 {"id": "folio_plugin-resource-registry-1.0.10009", "optional": [], "provides": [], "requires": []}
 {"id": "folio_plugin-select-application-2.0.109900000000112", "optional": [], "provides": [], "requires": []}
 {"id": "folio_quick-marc-10.1.109900000000372", "optional": [], "provides": [], "requires": ["authority-source-files 2.0", "instance-authority-links 2.1", "inventory 14.0", "marc-records-editor 6.0", "marc-specifications 1.0", "search-authorities 1.0"]}
