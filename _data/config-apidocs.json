@@ -1373,6 +1373,25 @@
   {
     "config": {
       "oas": [
+        "src/main/resources/swagger.api/mod-linked-data-import.yaml"
+      ],
+      "raml": [],
+      "upload": [
+        "mod-linked-data-import.html"
+      ]
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.8"
+    },
+    "name": "mod-linked-data-import",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
         "src/main/resources/swagger.api/list.yaml"
       ],
       "raml": [],
@@ -1382,7 +1401,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-lists",
     "org": "folio-org"
