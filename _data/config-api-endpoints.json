@@ -8191,7 +8191,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/list.yaml",
     "apiType": "oas",
-    "interface": "lists 1.0",
+    "interface": "lists 2.0",
     "methods": "get:operation/getAllLists post:operation/createList",
     "name": "mod-lists",
     "path": "/lists"
@@ -8199,7 +8199,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/list.yaml",
     "apiType": "oas",
-    "interface": "lists 1.0",
+    "interface": "lists 2.0",
     "methods": "get:operation/getListConfiguration",
     "name": "mod-lists",
     "path": "/lists/configuration"
@@ -8207,7 +8207,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/list.yaml",
     "apiType": "oas",
-    "interface": "lists 1.0",
+    "interface": "lists 2.0",
     "methods": "delete:operation/deleteList get:operation/getListById put:operation/updateList",
     "name": "mod-lists",
     "path": "/lists/{id}"
@@ -8215,7 +8215,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/list.yaml",
     "apiType": "oas",
-    "interface": "lists 1.0",
+    "interface": "lists 2.0",
     "methods": "get:operation/getListContents",
     "name": "mod-lists",
     "path": "/lists/{id}/contents"
@@ -8223,7 +8223,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/list.yaml",
     "apiType": "oas",
-    "interface": "lists 1.0",
+    "interface": "lists 2.0",
     "methods": "post:operation/exportList",
     "name": "mod-lists",
     "path": "/lists/{id}/exports"
@@ -8231,7 +8231,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/list.yaml",
     "apiType": "oas",
-    "interface": "lists 1.0",
+    "interface": "lists 2.0",
     "methods": "get:operation/getExportDetails",
     "name": "mod-lists",
     "path": "/lists/{id}/exports/{exportId}"
@@ -8239,7 +8239,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/list.yaml",
     "apiType": "oas",
-    "interface": "lists 1.0",
+    "interface": "lists 2.0",
     "methods": "post:operation/cancelExport",
     "name": "mod-lists",
     "path": "/lists/{id}/exports/{exportId}/cancel"
@@ -8247,7 +8247,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/list.yaml",
     "apiType": "oas",
-    "interface": "lists 1.0",
+    "interface": "lists 2.0",
     "methods": "get:operation/downloadList",
     "name": "mod-lists",
     "path": "/lists/{id}/exports/{exportId}/download"
@@ -8255,7 +8255,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/list.yaml",
     "apiType": "oas",
-    "interface": "lists 1.0",
+    "interface": "lists 2.0",
     "methods": "delete:operation/cancelRefresh post:operation/performRefresh",
     "name": "mod-lists",
     "path": "/lists/{id}/refresh"
@@ -8263,7 +8263,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/list.yaml",
     "apiType": "oas",
-    "interface": "lists 1.0",
+    "interface": "lists 2.0",
     "methods": "get:operation/getListVersions",
     "name": "mod-lists",
     "path": "/lists/{id}/versions"
@@ -8271,7 +8271,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/list.yaml",
     "apiType": "oas",
-    "interface": "lists 1.0",
+    "interface": "lists 2.0",
     "methods": "get:operation/getListVersion",
     "name": "mod-lists",
     "path": "/lists/{id}/versions/{versionNumber}"
@@ -9382,6 +9382,14 @@
     "methods": "delete:orders_composite_orders__id__delete get:orders_composite_orders__id__get put:orders_composite_orders__id__put",
     "name": "mod-orders",
     "path": "/orders/composite-orders/{id}"
+  },
+  {
+    "apiDescription": "ramls/order.raml",
+    "apiType": "raml",
+    "interface": "orders 13.0",
+    "methods": "get:orders_composite_orders__id__fiscal_years_get",
+    "name": "mod-orders",
+    "path": "/orders/composite-orders/{id}/fiscal-years"
   },
   {
     "apiDescription": "ramls/order.raml",
