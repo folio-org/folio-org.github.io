@@ -121,6 +121,17 @@ So if there is an urgent need to [rebuild](#off-schedule-rebuilds) "folio-snapsh
 It is vitally important that developers ensure success of the subsequent hourly build following any major changes that they merge to mainline (especially on a Friday afternoon). As noted in the previous paragraph, failures of this hourly job will cause the "folio-snapshot" builds to use out-of-date install files.
 Refer to the [Troubleshooting](#troubleshooting) assistance section above.
 
+### folio-ramsons
+
+[https://folio-ramsons.dev.folio.org/](https://folio-ramsons.dev.folio.org/)
+
+This is an environment for the previous FOLIO Release R2 2024 Ramsons.
+Each rebuild will pick up any hotfix updates that may have been released.
+
+The server is deliberately not being automatically re-built each week,
+while a PC Working Group is gathering better sample data for the reference environments.\
+(See Jenkins job: [folio-r2-2024-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r2-2024-release/).)
+
 ### folio-quesnelia
 
 [https://folio-quesnelia.dev.folio.org/](https://folio-quesnelia.dev.folio.org/)
@@ -131,16 +142,6 @@ Each rebuild will pick up any hotfix updates that may have been released.
 The server is deliberately not being automatically re-built each week,
 while a PC Working Group is gathering better sample data for the reference environments.\
 (See Jenkins job: [folio-r1-2024-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r1-2024-release/).)
-
-### folio-orchid
-
-[https://folio-orchid.dev.folio.org/](https://folio-orchid.dev.folio.org/)
-
-This is an environment for the latest FOLIO Release R1 2023 Orchid.
-Each rebuild will pick up any hotfix updates that may have been released.
-
-The server is built every Sunday, to finish about 02:05 UTC.\
-(See Jenkins job: [folio-r1-2023-release](https://jenkins-aws.indexdata.com/job/FOLIO_Reference_Builds/job/folio-r1-2023-release/) which starts about 01:30 UTC.)
 
 ### Other notes
 
