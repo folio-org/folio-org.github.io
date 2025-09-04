@@ -1280,6 +1280,7 @@
     "config": {
       "oas": [],
       "raml": [
+        "ramls/adjustment_preset.raml",
         "ramls/audit-outbox.raml",
         "ramls/batch-group.raml",
         "ramls/batch-voucher-export-configuration.raml",
