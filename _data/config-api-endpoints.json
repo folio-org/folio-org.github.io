@@ -2489,6 +2489,14 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
     "apiType": "oas",
+    "interface": "circulation-bff-inventory 1.0",
+    "methods": "get:null",
+    "name": "mod-circulation-bff",
+    "path": "/circulation-bff/inventory/items"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
+    "apiType": "oas",
     "interface": "circulation-bff-loans 1.6",
     "methods": "get:operation/findCirculationLoansByQuery",
     "name": "mod-circulation-bff",
