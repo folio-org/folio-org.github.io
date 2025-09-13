@@ -2425,15 +2425,7 @@
   {
     "apiDescription": "ramls/change-manager.raml",
     "apiType": "raml",
-    "interface": "source-manager-parsed-records 3.0",
-    "methods": "get:change_manager_parsedrecords_get",
-    "name": "mod-source-record-manager",
-    "path": "/change-manager/parsedRecords"
-  },
-  {
-    "apiDescription": "ramls/change-manager.raml",
-    "apiType": "raml",
-    "interface": "source-manager-parsed-records 3.0",
+    "interface": "source-manager-parsed-records 4.0",
     "methods": "put:change_manager_parsedrecords__id__put",
     "name": "mod-source-record-manager",
     "path": "/change-manager/parsedRecords/{id}"
@@ -11884,7 +11876,7 @@
   {
     "apiDescription": "ramls/source-record-storage-source-records.raml",
     "apiType": "raml",
-    "interface": "source-storage-source-records 3.2",
+    "interface": "source-storage-source-records 3.3",
     "methods": "get:source_storage_source_records_get post:source_storage_source_records_post",
     "name": "mod-source-record-storage",
     "path": "/source-storage/source-records"
@@ -11892,7 +11884,7 @@
   {
     "apiDescription": "ramls/source-record-storage-source-records.raml",
     "apiType": "raml",
-    "interface": "source-storage-source-records 3.2",
+    "interface": "source-storage-source-records 3.3",
     "methods": "get:source_storage_source_records__id__get",
     "name": "mod-source-record-storage",
     "path": "/source-storage/source-records/{id}"

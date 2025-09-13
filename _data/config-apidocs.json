@@ -1790,7 +1790,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-quick-marc",
     "org": "folio-org"
@@ -2041,7 +2041,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.8"
     },
     "name": "mod-source-record-storage",
     "org": "folio-org"
