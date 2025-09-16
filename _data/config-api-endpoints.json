@@ -5894,6 +5894,14 @@
     "path": "/finance/ledgers/{id}/current-fiscal-year"
   },
   {
+    "apiDescription": "ramls/ledgers.raml",
+    "apiType": "raml",
+    "interface": "finance.ledgers 2.0",
+    "methods": "get:finance_ledgers__id__planned_fiscal_year_get",
+    "name": "mod-finance",
+    "path": "/finance/ledgers/{id}/planned-fiscal-year"
+  },
+  {
     "apiDescription": "ramls/release-encumbrance.raml",
     "apiType": "raml",
     "interface": "finance.transactions 6.0",
