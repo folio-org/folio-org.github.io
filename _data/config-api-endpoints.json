@@ -10939,6 +10939,30 @@
   {
     "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
     "apiType": "oas",
+    "interface": "requests-mediated-batch 1.0",
+    "methods": "get:operation/getMediatedBatchRequestCollection post:operation/postBatchMediatedRequests",
+    "name": "mod-requests-mediated",
+    "path": "/requests-mediated/batch-mediated-requests"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
+    "apiType": "oas",
+    "interface": "requests-mediated-batch 1.0",
+    "methods": "get:operation/getMediatedBatchRequestById",
+    "name": "mod-requests-mediated",
+    "path": "/requests-mediated/batch-mediated-requests/{mediatedBatchRequestId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
+    "apiType": "oas",
+    "interface": "requests-mediated-batch 1.0",
+    "methods": "get:operation/getMediatedBatchRequestDetailsByBatchId",
+    "name": "mod-requests-mediated",
+    "path": "/requests-mediated/batch-mediated-requests/{mediatedBatchRequestId}/details"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/requests-mediated.yaml",
+    "apiType": "oas",
     "interface": "requests-mediated-actions 1.2",
     "methods": "post:operation/confirmItemArrival",
     "name": "mod-requests-mediated",
