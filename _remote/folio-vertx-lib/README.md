@@ -22,9 +22,15 @@ library, not a framework, with utilities such as:
 
 ## Main Verticle
 
-The [Vert.x OpenAPI](https://vertx.io/docs/vertx-web-openapi/java/) unlike
+The [Vert.x OpenAPI](https://vertx.io/docs/vertx-openapi/java/) unlike
 many OpenAPI implementations does not generate any code for you. Everything
 happens at run-time. Only requests are validated, not responses.
+
+The OpenAPI implementaion of Vert.x 5 does not allow external references - even
+if they are local files [ref](https://vertx.io/docs/vertx-openapi/java/#_openapicontract).
+If the OpenAPI spec in use has local file references the YAML must be preprocessed with the
+openapi-deref-plugin. See the [openapi-deref-plugin](#plugin-openapi-deref-plugin) section
+for details about handling external references in OpenAPI specifications.
 
 Place your OpenAPI specification and auxiliary files somewhere in `resources`,
 such as `resources/openapi`.
@@ -93,24 +99,25 @@ For an OpenAPI based implementation it could look as follows:
 public MyApi implements RouterCreator, TenantInitHooks {
   @Override
   public Future<Router> createRouter(Vertx vertx) {
-    return RouterBuilder.create(vertx, "openapi/myapi-1.0.yaml")
-        .map(routerBuilder -> {
-          handlers(vertx, routerBuilder);
-          return routerBuilder.createRouter();
-        });
+    return OpenAPIContract.from(vertx, "openapi/myapi-1.0.yaml")
+      .map(contract -> {
+        RouterBuilder routerBuilder = RouterBuilder.create(vertx, contract);
+        handlers(vertx, routerBuilder);
+        return routerBuilder.createRouter();
+      });
   }
 
   private void handlers(Vertx vertx, RouterBuilder routerBuilder) {
     routerBuilder
-        .operation("postTitles") // operationId in spec
-        .handler(ctx -> {
+        .getRoute("postTitles") // operationId in spec
+        .addHandler(ctx -> {
           // doesn't do anything at the moment!
           ctx.response().setStatusCode(204);
           ctx.response().end();
         });
     routerBuilder
-        .operation("getTitles")
-        .handler(ctx -> getTitles(vertx, ctx)
+        .getRoute("getTitles")
+        .addHandler(ctx -> getTitles(vertx, ctx)
             .onFailure(cause -> {
               ctx.response().setStatusCode(500);
               ctx.response().end(cause.getMessage());
@@ -132,16 +139,79 @@ The Tenant2Api implementation deals with purge (removes schema with cascade).
 Your implementation should only consider upgrade/downgrade. On purge,
 `preInit` is called, but `postInit` is not.
 
+## Plugin openapi-deref-plugin
+
+The purpose of the openapi-deref-plugin is to de-reference `$ref` references in the OpenAPI
+specification. The result is one YAML file with all resources embedded. If there are
+only references to components inside the OpenAPI YAML file from the beginning, it is not
+necessary to use this plugin.
+
+If the OpenAPI specification is located in `resources/openapi` (recommended), then
+the minimal way to use the plugin is to use:
+
+```
+  <plugin>
+    <groupId>org.folio</groupId>
+    <artifactId>openapi-deref-plugin</artifactId>
+    <version>4.0.0</version>
+    <executions>
+      <execution>
+        <id>dereference-books</id>
+        <goals>
+          <goal>dereference</goal>
+        </goals>
+        <phase>generate-resources</phase>
+      </execution>
+    </executions>
+  </plugin>
+```
+
+The configuration has the following properties:
+
+  * `input` : glob-path for input files to search. Default value is `${basedir}/src/main/resources/openapi/*.yaml`
+  * `output` : output directory. Default value is `${project.build.directory}/classes/openapi`.
+
+As an example if there are OpenAPI specs in test resources, the `extensions` list could be extended with:
+
+```
+  <execution>
+    <id>dereference-echo</id>
+    <goals>
+      <goal>dereference</goal>
+    </goals>
+    <phase>generate-resources</phase>
+    <configuration>
+      <input>${project.basedir}/src/test/resources/openapi/*.yaml</input>
+      <output>${project.build.directory}/test-classes/openapi</output>
+    </configuration>
+  </execution>
+```
+
 ## PostgreSQL
 
-The PostgreSQL support is minimal. There's just enough to perform tenant
-separation and most
-[`DB_` environment variables that are also recognized by RMB](https://github.com/folio-org/raml-module-builder#environment-variables)
-such as `DB_HOST`, `DB_PORT`, `DB_USERNAME`, `DB_PASSWORD`, `DB_DATABASE`,
-`DB_MAXPOOLSIZE`, `DB_RECONNECTATTEMPTS`, `DB_RECONNECTINTERVAL`, `DB_SERVER_PEM`.
+The PostgreSQL support is minimal.
+There's just enough to perform tenant and module separation.
+
+The following environment variables are supported:
+
+- `DB_HOST`
+- `DB_PORT`
+- `DB_USERNAME`
+- `DB_PASSWORD`
+- `DB_DATABASE`
+- `DB_MAXPOOLSIZE`
+- `DB_MAX_LIFETIME`
+- `DB_RECONNECTATTEMPTS`
+- `DB_RECONNECTINTERVAL`
+- `DB_SERVER_PEM`
+
+These are also recognized by by RMB. Refer to the
+[Environment Variables](https://github.com/folio-org/raml-module-builder#environment-variables)
+section of RMB.
 
 The class [TenantPgPool](core/src/main/java/org/folio/tlib/postgres/TenantPgPool.java) is
-a small extension to the PgPool interface. The key method is `TenantPgPool.pool`
+a small extension to the [Pool](https://vertx.io/docs/apidocs/io/vertx/sqlclient/Pool.html)
+interface. The key method is `TenantPgPool.pool`
 for constructing a pool for the current tenant. From that point, rest is plain
 Vert.x pg client. However, the schema should be used when referring to tables, etc.
 Use the `getSchema` method for that.
@@ -184,10 +254,9 @@ This definition can then be used in a handler to get books:
 
 ```
  private Future<Void> getBooks(Vertx vertx, RoutingContext ctx) {
-    RequestParameters params = ctx.get(ValidationHandler.REQUEST_CONTEXT_KEY);
-    String tenant = params.headerParameter(XOkapiHeaders.TENANT).getString();
-    RequestParameter query = params.queryParameter("query");
-    PgCqlQuery pgCqlQuery = pgCqlDefinition.parse(query == null ? null : query.getString());
+    String tenant = TenantUtil.tenant(ctx);
+    List<String> query = ctx.queryParam("query");
+    PgCqlQuery pgCqlQuery = pgCqlDefinition.parse(query.isEmpty() ? null : query.get(0));
 
     TenantPgPool pool = TenantPgPool.pool(vertx, tenant);
     String sql = "SELECT * FROM " + pool.getSchema() + ".mytable";
