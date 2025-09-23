@@ -6,7 +6,7 @@ name: gather-schema-changes
 
 on:
   schedule:
-    - cron: '20 03 * * 1,4'
+    - cron: '25 03 * * 1,4'
   workflow_dispatch:
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
       WF_HOME: ".github/workflows/gather-schema-changes"
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: Setup Go
       uses: actions/setup-go@v5
