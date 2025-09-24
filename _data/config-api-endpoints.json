@@ -8038,6 +8038,14 @@
     "path": "/licenses/licenses/{licenseId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data-import.yaml",
+    "apiType": "oas",
+    "interface": "linked-data-import 1.0",
+    "methods": "post:operation/startImport",
+    "name": "mod-linked-data-import",
+    "path": "/linked-data-import/start"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
     "interface": "linked-data 2.0",
