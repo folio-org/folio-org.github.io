@@ -4919,7 +4919,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-fqm-manager.yaml",
     "apiType": "oas",
-    "interface": "entity-types 2.0",
+    "interface": "entity-types 2.1",
     "methods": "get:operation/getEntityTypeSummary",
     "name": "mod-fqm-manager",
     "path": "/entity-types"
