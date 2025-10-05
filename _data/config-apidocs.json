@@ -1152,9 +1152,7 @@
   },
   {
     "config": {
-      "oas": [
-        "src/main/resources/openapi/inventory-import-1.0.yaml"
-      ],
+      "oas": [],
       "raml": [],
       "upload": []
     },
