@@ -48,7 +48,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.8"
     },
     "name": "edge-courses",
     "org": "folio-org"
@@ -533,6 +533,7 @@
       "raml": [
         "ramls/actual-cost-record-storage.raml",
         "ramls/anonymize-storage-loans.raml",
+        "ramls/anonymize-storage-request.raml",
         "ramls/cancellation-reason.raml",
         "ramls/check-in-storage.raml",
         "ramls/checkout-lock-storage.raml",
