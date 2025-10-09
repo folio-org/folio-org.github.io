@@ -1143,6 +1143,13 @@
     "path": "/anonymize-storage-loans"
   },
   {
+    "apiDescription": "ramls/anonymize-storage-request.raml",
+    "apiType": "raml",
+    "methods": "post:anonymize_storage_requests_post",
+    "name": "mod-circulation-storage",
+    "path": "/anonymize-storage-requests"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mgr-tenant-entitlements.yaml",
     "apiType": "oas",
     "interface": "entitlement-flows 1.0",
@@ -3773,35 +3780,35 @@
     "apiType": "oas",
     "methods": "get:operation/getReservesByInstanceId",
     "name": "edge-courses",
-    "path": "/courses/courselistings/{instanceId}/reserves"
+    "path": "/courses/courses/courselistings/{instanceId}/reserves"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/edge-courses.yaml",
     "apiType": "oas",
     "methods": "get:operation/getCoursesByQuery",
     "name": "edge-courses",
-    "path": "/courses/courses"
+    "path": "/courses/courses/courses"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/edge-courses.yaml",
     "apiType": "oas",
     "methods": "get:operation/getDepartments",
     "name": "edge-courses",
-    "path": "/courses/departments"
+    "path": "/courses/courses/departments"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/edge-courses.yaml",
     "apiType": "oas",
     "methods": "get:operation/getInstructors",
     "name": "edge-courses",
-    "path": "/courses/instructors"
+    "path": "/courses/courses/instructors"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/edge-courses.yaml",
     "apiType": "oas",
     "methods": "get:operation/getReservesByQuery",
     "name": "edge-courses",
-    "path": "/courses/reserves"
+    "path": "/courses/courses/reserves"
   },
   {
     "apiDescription": "ramls/custom-fields.raml",
