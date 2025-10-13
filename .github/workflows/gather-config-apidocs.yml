@@ -34,12 +34,8 @@ jobs:
     - name: Run script
       run: python .github/workflows/gather-config-apidocs/gather_config_apidocs.py -l info
 
-    - name: Do git sync branch
-      run: |
-        git pull
-        git checkout ongoing-config-apidocs
-        git pull
-        git merge master
+    - name: Do git pull
+      run: git pull
 
     - name: Commit changes, if any
       id: auto-commit-action
