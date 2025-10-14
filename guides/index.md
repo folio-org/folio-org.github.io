@@ -154,6 +154,7 @@ Some more detail is provided via other introductory documentation:
   There are links to specific relevant docs for some modules via the [Source-code map](/source-code/map/).
 - Branding abilities via stripes.config.js are explained [here](https://docs.folio.org/docs/getting-started/installation/customizations/#branding-stripes) and [here](https://github.com/folio-org/stripes/blob/master/doc/branding.md).
 - [Performance optimization](performance-optimization/).
+- [Eureka Developer Guide](https://folio-org.atlassian.net/wiki/x/hYB2Kg).
 
 ### Tutorials
 
