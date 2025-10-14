@@ -1153,7 +1153,9 @@
   },
   {
     "config": {
-      "oas": [],
+      "oas": [
+        "src/main/resources/openapi/inventory-import-1.0.yaml"
+      ],
       "raml": [],
       "upload": []
     },
@@ -1161,7 +1163,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-inventory-import",
     "org": "folio-org"
