@@ -140,6 +140,23 @@
   },
   {
     "config": {
+      "oas": [
+        "src/main/resources/swagger.api/edge-inventory.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.9"
+    },
+    "name": "edge-inventory",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/edge-lti-courses.raml"
@@ -221,6 +238,23 @@
       "generator": "api_doc.py 1.8"
     },
     "name": "edge-rtac",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/swagger.api/edge-users.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.9"
+    },
+    "name": "edge-users",
     "org": "folio-org"
   },
   {
@@ -1600,7 +1634,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-orders",
     "org": "folio-org"
@@ -1637,7 +1671,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-orders-storage",
     "org": "folio-org"
