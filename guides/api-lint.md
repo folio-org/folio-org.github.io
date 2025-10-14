@@ -98,10 +98,13 @@ See the `.github/workflows` directory and the "Actions" UI tab.
 The configuration [properties](#properties) are further described as comments in each workflow file.
 
 Note the workflows only operate when there is a file change commit in their API descriptions directory.
+Be sure to add to the "on: paths" sections of the workflow file.
+
+NOTE: When preparing the pull-request, make a follow-up commit to one of the API description files. This is because the Actions runs are only triggered when those files are changed.
 
 For a [new](/guidelines/create-new-repo/) project repository, follow the implementations for a similar repository.
 (All were done via [FOLIO-3678](https://issues.folio.org/browse/FOLIO-3678)).
-Some example PRs:
+Some example PRs (but if copied, then do ensure that Workflow actions are updated - see note below):
 
 * [mod-courses](https://github.com/folio-org/mod-courses/pull/157)
   -- RAML.
