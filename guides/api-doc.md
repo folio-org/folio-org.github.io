@@ -81,6 +81,13 @@ See the `.github/workflows` directory and the "Actions" UI tab.
 The configuration [properties](#properties) are further described as comments in each workflow file.
 
 Note the workflows only operate when there is a file change commit in their API descriptions directory.
+Be sure to add to the "on: paths" sections of the workflow file.
+
+NOTE: For back-end modules, also add the path to ModuleDescriptor, because the [api-doc](https://github.com/folio-org/folio-tools/tree/master/api-doc) facility interprets the MD to match the [endpoints to interfaces](/reference/api/endpoints/#interfaces).
+Therefore the Workflow run will be triggered when the MD is modified.
+(The edge-modules do not provide interfaces in their MD, so no need.)
+
+NOTE: When preparing the pull-request, make a follow-up commit to one of the API description files. This is because the Actions runs are only triggered when those files are changed.
 
 For a [new](/guidelines/create-new-repo/) project repository, follow the implementations for a similar repository.
 (All were done via [FOLIO-3678](https://issues.folio.org/browse/FOLIO-3678)).
