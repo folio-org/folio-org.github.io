@@ -87,7 +87,7 @@ NOTE: For back-end modules, also add the path to ModuleDescriptor, because the [
 Therefore the Workflow run will be triggered when the MD is modified.
 (The edge-modules do not provide interfaces in their MD, so no need.)
 
-NOTE: When preparing the pull-request, make a follow-up commit to one of the API description files. This is because the Actions runs are only triggered when those files are changed.
+NOTE: When preparing the pull-request for initial setup, make a follow-up commit to one of the API description files. This is because the Actions runs are only triggered when those files are changed.
 
 For a [new](/guidelines/create-new-repo/) project repository, follow the implementations for a similar repository.
 (All were done via [FOLIO-3678](https://issues.folio.org/browse/FOLIO-3678)).
