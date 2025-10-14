@@ -104,7 +104,7 @@ NOTE: When preparing the pull-request, make a follow-up commit to one of the API
 
 For a [new](/guidelines/create-new-repo/) project repository, follow the implementations for a similar repository.
 (All were done via [FOLIO-3678](https://issues.folio.org/browse/FOLIO-3678)).
-Some example PRs:
+Some example PRs (but if copied, then do ensure that Workflow actions are updated - see note below):
 
 * [mod-courses](https://github.com/folio-org/mod-courses/pull/157)
   -- RAML.
