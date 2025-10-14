@@ -3,4 +3,7 @@
 ---
 edge-inventory:
 edge-users:
+mod-graph-rebuilder:
+mod-linked-data-import:
+mod-rtac-cache:
 mod-translations:
