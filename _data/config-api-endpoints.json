@@ -7523,6 +7523,216 @@
     "path": "/inventory/instances/{instanceId}/mark-deleted"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAlternativeTitleTypes",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/alternative-title-types"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAuthoritiesByQuery",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/authorities"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAuthoritySourceRecords",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/authorities/source-records/{authorityId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getAuthority",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/authorities/{authorityId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getClassificationTypes",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/classification-types"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getContributorNameTypes",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/contributor-name-types"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getContributorTypes",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/contributor-types"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/downloadAuthorityById",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/download-authority/{authorityId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/downloadInstanceById",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/download-instance/{instanceId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getHoldings",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/holdings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getIdentifierTypes",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/identifier-types"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getInstanceFormats",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/instance-formats"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getInstanceNoteTypes",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/instance-note-types"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getInstanceTypes",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/instance-types"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getInstancesByQuery",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/instances"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getInstance",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/instances/{instanceId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getInventoryViewInstances",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/inventory-view/instances"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getItems",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/items"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getCampusById",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/location-units/campuses/{campusId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getInstitutionById",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/location-units/institutions/{institutionId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getLibraryById",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/location-units/libraries/{libraryId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getLocations",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/locations"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getLocationById",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/locations/{locationId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getMaterialTypeById",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/material-types/{materialTypeId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getModesOfIssuance",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/modes-of-issuance"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getNatureOfContentTerms",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/nature-of-content-terms"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getServicePoints",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/service-points"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getSourceRecords",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/source-records/{instanceId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getSubjectSources",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/subject-sources"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-inventory.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getSubjectTypes",
+    "name": "edge-inventory",
+    "path": "/inventory/inventory/subject-types"
+  },
+  {
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
     "interface": "inventory 14.3",
@@ -12831,6 +13041,34 @@
     "methods": "delete:users_profile_picture__profileid__delete get:users_profile_picture__profileid__get put:users_profile_picture__profileid__put",
     "name": "mod-users",
     "path": "/users/profile-picture/{profileId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-users.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/setPin",
+    "name": "edge-users",
+    "path": "/users/users/patron-pin"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-users.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/verifyPin",
+    "name": "edge-users",
+    "path": "/users/users/patron-pin/verify"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-users.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/userExists",
+    "name": "edge-users",
+    "path": "/users/users/user-exists"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-users.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getUsers post:operation/createUser",
+    "name": "edge-users",
+    "path": "/users/users/users"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
