@@ -11,7 +11,7 @@ menuTopTitle: Guides
 For server-side projects that utilise RAML or OpenAPI (OAS), use the tool `api-lint` to assess the API description files and schema and examples.
 
 The tool is available for use during FOLIO Continuous Integration builds, and also for local use prior to commit.
-Currently [RAML 1.0](/start/primer-raml/) and [OAS 3.0](/start/primer-oas/) are handled.
+Currently [RAML 1.0](/start/primer-raml/) and [OAS 3.0 or OAS 3.1](/start/primer-oas/) are handled.
 
 ## Procedure
 
