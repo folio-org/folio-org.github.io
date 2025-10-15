@@ -20,6 +20,7 @@ users:
     - mod-users-keycloak
     - mod-patron
     - edge-patron
+    - edge-users
     - mod-patron-blocks
     - mod-feesfines
 inventory:
@@ -40,6 +41,7 @@ inventory:
     - mod-graph-rebuilder
     - mod-marc-migrations
     - mod-oai-pmh
+    - edge-inventory
     - edge-oai-pmh
     - mod-requests-mediated
     - mod-reservoir
