@@ -7264,6 +7264,14 @@
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
     "interface": "inventory-import 1.0",
+    "methods": "get:operation/getImportJobLogLines post:operation/postImportJobLogLines",
+    "name": "mod-inventory-import",
+    "path": "/inventory-import/import-jobs/log"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
     "methods": "delete:operation/deleteImportJob get:operation/getImportJob",
     "name": "mod-inventory-import",
     "path": "/inventory-import/import-jobs/{id}"
@@ -7275,14 +7283,6 @@
     "methods": "get:operation/getFailedRecordsForJob post:operation/postFailedRecordsForJob",
     "name": "mod-inventory-import",
     "path": "/inventory-import/import-jobs/{id}/failed-records"
-  },
-  {
-    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
-    "apiType": "oas",
-    "interface": "inventory-import 1.0",
-    "methods": "get:operation/getImportJobLogLines post:operation/postImportJobLogLines",
-    "name": "mod-inventory-import",
-    "path": "/inventory-import/import-jobs/{id}/log"
   },
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
