@@ -65,7 +65,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "edge-dcb",
     "org": "folio-org"
@@ -713,7 +713,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-data-export",
     "org": "folio-org"
@@ -788,7 +788,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-dcb",
     "org": "folio-org"
@@ -1750,7 +1750,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-patron",
     "org": "folio-org"
@@ -1911,7 +1911,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-requests-mediated",
     "org": "folio-org"
