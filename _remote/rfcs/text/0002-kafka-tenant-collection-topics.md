@@ -30,7 +30,7 @@ On the client side, buffers are created for each partition in memory. So a produ
 
 ## Out of Scope
 - Enabling tenant separation within a module. Tenant separation meaning "How do we prevent a tenant's data from being processed in place of another?", "How can we prevent a module (specific to a tenant) from seeing data from other tenants?"
-- Moving forward with the [Temporary Kafka Security Solution](https://wiki.folio.org/x/YYVFAw). More details are included in the *Related Concerns* section of this document.
+- Moving forward with the [Temporary Kafka Security Solution](https://folio-org.atlassian.net/wiki/x/8B8b). More details are included in the *Related Concerns* section of this document.
 - Countering module multi-versioning i.e. more than one version of a module is installed in FOLIO with tenants being able to target specific versions of a module. **Module multi-versioning is supported by OKAPI & mod-pubsub but not for modules that interact directly via Kafka. This is an existing deficiency prior to the changes documented by this RFC.** More details are included in the *Related Concerns* section of this document.
 
 ## Detailed Explanation/Design
