@@ -10,7 +10,8 @@ menuSubIndex: 5
 
 As explained in the [Primer for back-end development](/start/primer-develop-backend/) there are various supporting libraries which can be utilised to ease development with OpenAPI.
 
-FOLIO currently uses OpenAPI ([OAS](/reference/glossary/#oas)) version 3.0
+FOLIO currently uses OpenAPI ([OAS](/reference/glossary/#oas)) version 3
+(refer to the [Officially Supported Technologies](https://wiki.folio.org/display/TC/Officially+Supported+Technologies).
 
 Use "[api-lint](/guides/api-lint/)" to assess API descriptions, schema, and examples.
 A script is provided, to find files and run it.
