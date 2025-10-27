@@ -3498,7 +3498,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.1",
+    "interface": "counter-reports 5.0",
     "methods": "get:counter_reports_get post:counter_reports_post",
     "name": "mod-erm-usage",
     "path": "/counter-reports"
@@ -3506,7 +3506,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.1",
+    "interface": "counter-reports 5.0",
     "methods": "get:counter_reports_errors_codes_get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/errors/codes"
@@ -3514,7 +3514,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.1",
+    "interface": "counter-reports 5.0",
     "methods": "get:counter_reports_export_provider__id__report__name__version__aversion__from__begin__to__end__get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/export/provider/{id}/report/{name}/version/{aversion}/from/{begin}/to/{end}"
@@ -3522,7 +3522,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.1",
+    "interface": "counter-reports 5.0",
     "methods": "get:counter_reports_export__id__get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/export/{id}"
@@ -3530,7 +3530,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.1",
+    "interface": "counter-reports 5.0",
     "methods": "post:counter_reports_multipartupload_provider__id__post",
     "name": "mod-erm-usage",
     "path": "/counter-reports/multipartupload/provider/{id}"
@@ -3538,7 +3538,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.1",
+    "interface": "counter-reports 5.0",
     "methods": "post:counter_reports_reports_delete_post",
     "name": "mod-erm-usage",
     "path": "/counter-reports/reports/delete"
@@ -3546,7 +3546,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.1",
+    "interface": "counter-reports 5.0",
     "methods": "get:counter_reports_reports_releases_get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/reports/releases"
@@ -3554,7 +3554,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.1",
+    "interface": "counter-reports 5.0",
     "methods": "get:counter_reports_reports_types_get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/reports/types"
@@ -3562,7 +3562,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.1",
+    "interface": "counter-reports 5.0",
     "methods": "get:counter_reports_sorted__udpid__get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/sorted/{udpId}"
@@ -3570,7 +3570,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.1",
+    "interface": "counter-reports 5.0",
     "methods": "delete:counter_reports__id__delete get:counter_reports__id__get put:counter_reports__id__put",
     "name": "mod-erm-usage",
     "path": "/counter-reports/{id}"
@@ -3578,7 +3578,7 @@
   {
     "apiDescription": "ramls/counterreports.raml",
     "apiType": "raml",
-    "interface": "counter-reports 4.1",
+    "interface": "counter-reports 5.0",
     "methods": "get:counter_reports__id__download_get",
     "name": "mod-erm-usage",
     "path": "/counter-reports/{id}/download"
@@ -4973,6 +4973,13 @@
     "methods": "get:operation/getColumnValues",
     "name": "folio-query-tool-metadata",
     "path": "/entity-types/{entityTypeId}/columns/{columnName}/values"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/queryTool.yaml",
+    "apiType": "oas",
+    "methods": "patch:operation/updateEntityTypeUsedBy",
+    "name": "folio-query-tool-metadata",
+    "path": "/entity-types/{entityTypeId}/used-by"
   },
   {
     "apiDescription": "ramls/harvester.raml",
