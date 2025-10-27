@@ -296,7 +296,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "folio-query-tool-metadata",
     "org": "folio-org"
@@ -881,7 +881,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-erm-usage",
     "org": "folio-org"
@@ -966,7 +966,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-feesfines",
     "org": "folio-org"
@@ -1946,7 +1946,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-rtac",
     "org": "folio-org"
