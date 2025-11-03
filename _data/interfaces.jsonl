@@ -57,7 +57,7 @@
 {"id": "folio_items-1.11.100023", "optional": [], "provides": [], "requires": ["inventory 5.0", "loan-types 2.0", "material-types 2.0"]}
 {"id": "folio_jest-config-stripes-2.1.10990000000011", "optional": [], "provides": [], "requires": []}
 {"id": "folio_ld-folio-wrapper-2.0.109900000000328", "optional": [], "provides": [], "requires": ["authority-source-files 2.2", "browse-authorities 1.0", "linked-data 2.0", "linked-data-profile 1.0", "search-authorities 1.0", "search-facets 1.0", "search-linked-data 1.0", "source-storage-records 3.4"]}
-{"id": "folio_ldp-3.1.2099000000000201", "optional": [], "provides": [], "requires": ["ldp-query 1.2", "settings 1.0"]}
+{"id": "folio_ldp-3.1.2099000000000204", "optional": [], "provides": [], "requires": ["ldp-query 1.2", "settings 1.0"]}
 {"id": "folio_licenses-12.1.1099000000000204", "optional": ["organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["licenses 6.0"]}
 {"id": "folio_linked-data-2.0.1099000000001588", "optional": [], "provides": [], "requires": []}
 {"id": "folio_lists-4.0.3099000000000927", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0 2.0"]}
