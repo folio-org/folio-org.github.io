@@ -3941,7 +3941,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "post:operation/postDataExportConfiguration",
     "name": "mod-data-export",
     "path": "/data-export/configuration"
@@ -3949,7 +3949,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "get:operation/downloadRecordById",
     "name": "mod-data-export",
     "path": "/data-export/download-record/{recordId}"
@@ -3965,7 +3965,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "post:operation/postDataExport",
     "name": "mod-data-export",
     "path": "/data-export/export"
@@ -3973,7 +3973,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "post:operation/postExportAll",
     "name": "mod-data-export",
     "path": "/data-export/export-all"
@@ -3981,7 +3981,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "post:operation/postExportDeletedAuthority",
     "name": "mod-data-export",
     "path": "/data-export/export-authority-deleted"
@@ -3989,7 +3989,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "post:operation/postExportDeletedMarcIds",
     "name": "mod-data-export",
     "path": "/data-export/export-deleted"
@@ -3997,7 +3997,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "post:operation/postFileDefinition",
     "name": "mod-data-export",
     "path": "/data-export/file-definitions"
@@ -4005,7 +4005,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "get:operation/getFileDefinitionById",
     "name": "mod-data-export",
     "path": "/data-export/file-definitions/{fileDefinitionId}"
@@ -4013,7 +4013,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "post:operation/uploadFile",
     "name": "mod-data-export",
     "path": "/data-export/file-definitions/{fileDefinitionId}/upload"
@@ -4021,7 +4021,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "get:operation/getJobExecutionsByQuery",
     "name": "mod-data-export",
     "path": "/data-export/job-executions"
@@ -4029,7 +4029,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "delete:operation/deleteJobExecutionById",
     "name": "mod-data-export",
     "path": "/data-export/job-executions/{jobExecutionId}"
@@ -4037,7 +4037,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "get:operation/getLinkToDownloadFiles",
     "name": "mod-data-export",
     "path": "/data-export/job-executions/{jobExecutionId}/download/{exportFileId}"
@@ -4045,7 +4045,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "get:operation/getJobProfiles post:operation/postJobProfile",
     "name": "mod-data-export",
     "path": "/data-export/job-profiles"
@@ -4053,7 +4053,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "delete:operation/deleteJobProfileById get:operation/getJobProfileById put:operation/putJobProfile",
     "name": "mod-data-export",
     "path": "/data-export/job-profiles/{jobProfileId}"
@@ -4061,7 +4061,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "get:operation/getErrorLogsByQuery",
     "name": "mod-data-export",
     "path": "/data-export/logs"
@@ -4069,7 +4069,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "get:operation/getMappingProfiles post:operation/postMappingProfile",
     "name": "mod-data-export",
     "path": "/data-export/mapping-profiles"
@@ -4077,7 +4077,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "delete:operation/deleteMappingProfileById get:operation/getMappingProfileById put:operation/putMappingProfile",
     "name": "mod-data-export",
     "path": "/data-export/mapping-profiles/{mappingProfileId}"
@@ -4085,7 +4085,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "post:operation/postDataExportQuickExport",
     "name": "mod-data-export",
     "path": "/data-export/quick-export"
@@ -4093,7 +4093,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "get:operation/getRelatedUsers",
     "name": "mod-data-export",
     "path": "/data-export/related-users"
@@ -4101,7 +4101,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/data-export.yaml",
     "apiType": "oas",
-    "interface": "data-export 5.3",
+    "interface": "data-export 5.4",
     "methods": "get:operation/getTransformationFields",
     "name": "mod-data-export",
     "path": "/data-export/transformation-fields"
@@ -4378,6 +4378,13 @@
   {
     "apiDescription": "src/main/resources/swagger.api/edge-dcb.yaml",
     "apiType": "oas",
+    "methods": "put:operation/blockItemRenewalByTransactionId",
+    "name": "edge-dcb",
+    "path": "/dcbService/transactions/{dcbTransactionId}/block-renewal"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-dcb.yaml",
+    "apiType": "oas",
     "methods": "put:operation/renewItemLoanByTransactionId",
     "name": "edge-dcb",
     "path": "/dcbService/transactions/{dcbTransactionId}/renew"
@@ -4388,6 +4395,13 @@
     "methods": "get:operation/getDCBTransactionStatusById put:operation/updateDCBTransactionStatus",
     "name": "edge-dcb",
     "path": "/dcbService/transactions/{dcbTransactionId}/status"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-dcb.yaml",
+    "apiType": "oas",
+    "methods": "put:operation/unblockItemRenewalByTransactionId",
+    "name": "edge-dcb",
+    "path": "/dcbService/transactions/{dcbTransactionId}/unblock-renewal"
   },
   {
     "apiDescription": "ramls/delayedTasks.raml",
@@ -12784,7 +12798,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "transactions 1.3",
+    "interface": "transactions 1.5",
     "methods": "get:operation/getTransactionStatusList",
     "name": "mod-dcb",
     "path": "/transactions/status"
@@ -12792,7 +12806,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "transactions 1.3",
+    "interface": "transactions 1.5",
     "methods": "post:operation/createCirculationRequest put:operation/updateTransactionDetails",
     "name": "mod-dcb",
     "path": "/transactions/{dcbTransactionId}"
@@ -12800,7 +12814,15 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "transactions 1.3",
+    "interface": "transactions 1.5",
+    "methods": "put:operation/blockItemRenewalByTransactionId",
+    "name": "mod-dcb",
+    "path": "/transactions/{dcbTransactionId}/block-renewal"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
+    "apiType": "oas",
+    "interface": "transactions 1.5",
     "methods": "put:operation/renewItemLoanByTransactionId",
     "name": "mod-dcb",
     "path": "/transactions/{dcbTransactionId}/renew"
@@ -12808,10 +12830,18 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "transactions 1.3",
+    "interface": "transactions 1.5",
     "methods": "get:operation/getTransactionStatusById put:operation/updateTransactionStatus",
     "name": "mod-dcb",
     "path": "/transactions/{dcbTransactionId}/status"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
+    "apiType": "oas",
+    "interface": "transactions 1.5",
+    "methods": "put:operation/unblockItemRenewalByTransactionId",
+    "name": "mod-dcb",
+    "path": "/transactions/{dcbTransactionId}/unblock-renewal"
   },
   {
     "apiDescription": "ramls/transfer-criteria.raml",
