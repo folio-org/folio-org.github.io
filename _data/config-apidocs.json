@@ -593,7 +593,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-circulation-storage",
     "org": "folio-org"
@@ -1004,7 +1004,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-finance",
     "org": "folio-org"
@@ -1579,7 +1579,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-oai-pmh",
     "org": "folio-org"
