@@ -539,7 +539,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-circulation-bff",
     "org": "folio-org"
@@ -1041,7 +1041,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-finance-storage",
     "org": "folio-org"
@@ -1568,6 +1568,7 @@
       "raml": [
         "ramls/cleanup-error-logs.raml",
         "ramls/cleanup-job.raml",
+        "ramls/configuration-settings.raml",
         "ramls/folio-set-filtering-conditions.raml",
         "ramls/folio-set.raml",
         "ramls/oai-pmh.raml",

@@ -2472,6 +2472,30 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
     "apiType": "oas",
+    "interface": "circulation-bff-requests-batch 1.0",
+    "methods": "get:operation/getBatchRequestCollection post:operation/createBatchRequest",
+    "name": "mod-circulation-bff",
+    "path": "/circulation-bff/batch-requests"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
+    "apiType": "oas",
+    "interface": "circulation-bff-requests-batch 1.0",
+    "methods": "get:operation/getBatchRequestById",
+    "name": "mod-circulation-bff",
+    "path": "/circulation-bff/batch-requests/{batchId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
+    "apiType": "oas",
+    "interface": "circulation-bff-requests-batch 1.0",
+    "methods": "get:operation/getMultiItemBatchRequestDetailsByBatchId",
+    "name": "mod-circulation-bff",
+    "path": "/circulation-bff/batch-requests/{batchId}/details"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/circulationBff.yaml",
+    "apiType": "oas",
     "interface": "circulation-bff-ecs-request-external 1.1",
     "methods": "post:operation/postEcsRequestExternal",
     "name": "mod-circulation-bff",
@@ -5432,6 +5456,14 @@
     "methods": "get:finance_storage_group_fund_fiscal_years_get post:finance_storage_group_fund_fiscal_years_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/group-fund-fiscal-years"
+  },
+  {
+    "apiDescription": "ramls/group_fund_fy.raml",
+    "apiType": "raml",
+    "interface": "finance-storage.groups 2.0",
+    "methods": "post:finance_storage_group_fund_fiscal_years_batch_post",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/group-fund-fiscal-years/batch"
   },
   {
     "apiDescription": "ramls/group_fund_fy.raml",
@@ -9215,6 +9247,22 @@
     "methods": "post:oai_pmh_clean_up_instances_post",
     "name": "mod-oai-pmh",
     "path": "/oai-pmh/clean-up-instances"
+  },
+  {
+    "apiDescription": "ramls/configuration-settings.raml",
+    "apiType": "raml",
+    "interface": "oai-pmh 3.4",
+    "methods": "get:oai_pmh_configuration_settings_get post:oai_pmh_configuration_settings_post",
+    "name": "mod-oai-pmh",
+    "path": "/oai-pmh/configuration-settings"
+  },
+  {
+    "apiDescription": "ramls/configuration-settings.raml",
+    "apiType": "raml",
+    "interface": "oai-pmh 3.4",
+    "methods": "delete:oai_pmh_configuration_settings__id__delete get:oai_pmh_configuration_settings__id__get put:oai_pmh_configuration_settings__id__put",
+    "name": "mod-oai-pmh",
+    "path": "/oai-pmh/configuration-settings/{id}"
   },
   {
     "apiDescription": "ramls/folio-set-filtering-conditions.raml",
