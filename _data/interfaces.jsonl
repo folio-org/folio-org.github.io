@@ -20,7 +20,7 @@
 {"id": "folio-org_ld-folio-wrapper-1.2.1099000000003", "optional": [], "provides": [], "requires": []}
 {"id": "folio-org_linked-data-1.0.10990000000029", "optional": [], "provides": [], "requires": []}
 {"id": "folio_acquisition-units-6.0.10990000000054", "optional": [], "provides": [], "requires": ["acquisitions-units 1.1", "users 15.1 16.0"]}
-{"id": "folio_agreements-12.1.1099000000001588", "optional": ["licenses 6.0", "order-lines 2.0 3.0 4.0", "organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["erm 7.0"]}
+{"id": "folio_agreements-12.1.1099000000001599", "optional": ["licenses 6.0", "order-lines 2.0 3.0 4.0", "organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_audit-1.0.10000024", "optional": [], "provides": [], "requires": []}
 {"id": "folio_authorization-policies-2.0.109900000000102", "optional": [], "provides": [], "requires": ["policies 1.1"]}
 {"id": "folio_authorization-roles-2.1.109900000000214", "optional": [], "provides": [], "requires": ["capabilities 1.0", "capability-sets 1.0 2.0", "role-capabilities 1.0", "role-capability-sets 1.1", "roles 1.1", "roles-user 1.0"]}
@@ -61,7 +61,7 @@
 {"id": "folio_licenses-12.1.1099000000000204", "optional": ["organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["licenses 6.0"]}
 {"id": "folio_linked-data-2.0.1099000000001615", "optional": [], "provides": [], "requires": []}
 {"id": "folio_lists-4.0.3099000000000927", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0 2.0"]}
-{"id": "folio_local-kb-admin-9.1.1099000000000148", "optional": [], "provides": [], "requires": ["erm 7.0"]}
+{"id": "folio_local-kb-admin-9.1.1099000000000153", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_lti-courses-1.1.100035", "optional": [], "provides": [], "requires": ["configuration 2.0 3.0 4.0 5.0"]}
 {"id": "folio_marc-authorities-8.0.1099000000001092", "optional": [], "provides": [], "requires": ["audit-config 1.0", "audit-marc 1.0", "browse-authorities 1.0", "marc-records-editor 6.0", "resource-ids-streaming 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.3"]}
 {"id": "folio_marccat-3.0.1000438", "optional": [], "provides": [], "requires": ["marccat 2.0"]}
