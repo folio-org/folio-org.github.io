@@ -4925,7 +4925,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mgr-tenant-entitlements.yaml",
     "apiType": "oas",
-    "interface": "entitlements 1.0",
+    "interface": "entitlements 1.1",
     "methods": "delete:operation/delete get:operation/findByQueryOrTenantName post:operation/create put:operation/upgrade",
     "name": "mgr-tenant-entitlements",
     "path": "/entitlements"
@@ -4933,7 +4933,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mgr-tenant-entitlements.yaml",
     "apiType": "oas",
-    "interface": "entitlements 1.0",
+    "interface": "entitlements 1.1",
     "methods": "get:operation/getModuleEntitlements",
     "name": "mgr-tenant-entitlements",
     "path": "/entitlements/modules/{moduleId}"
@@ -4941,7 +4941,15 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mgr-tenant-entitlements.yaml",
     "apiType": "oas",
-    "interface": "entitlements 1.0",
+    "interface": "entitlements 1.1",
+    "methods": "put:operation/applyState",
+    "name": "mgr-tenant-entitlements",
+    "path": "/entitlements/state"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mgr-tenant-entitlements.yaml",
+    "apiType": "oas",
+    "interface": "entitlements 1.1",
     "methods": "post:operation/validate",
     "name": "mgr-tenant-entitlements",
     "path": "/entitlements/validate"
@@ -4949,7 +4957,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mgr-tenant-entitlements.yaml",
     "apiType": "oas",
-    "interface": "entitlements 1.0",
+    "interface": "entitlements 1.1",
     "methods": "get:operation/findEntitledApplicationsByTenantName",
     "name": "mgr-tenant-entitlements",
     "path": "/entitlements/{tenantName}/applications"
@@ -5333,6 +5341,14 @@
     "apiDescription": "ramls/budget.raml",
     "apiType": "raml",
     "interface": "finance-storage.budgets 3.0",
+    "methods": "post:finance_storage_budgets_batch_post",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/budgets/batch"
+  },
+  {
+    "apiDescription": "ramls/budget.raml",
+    "apiType": "raml",
+    "interface": "finance-storage.budgets 3.0",
     "methods": "delete:finance_storage_budgets__id__delete get:finance_storage_budgets__id__get put:finance_storage_budgets__id__put",
     "name": "mod-finance-storage",
     "path": "/finance-storage/budgets/{id}"
@@ -5432,6 +5448,14 @@
     "methods": "get:finance_storage_funds_get post:finance_storage_funds_post",
     "name": "mod-finance-storage",
     "path": "/finance-storage/funds"
+  },
+  {
+    "apiDescription": "ramls/fund.raml",
+    "apiType": "raml",
+    "interface": "finance-storage.funds 5.0",
+    "methods": "post:finance_storage_funds_batch_post",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/funds/batch"
   },
   {
     "apiDescription": "ramls/fund.raml",
