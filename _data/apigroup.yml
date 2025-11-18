@@ -32,7 +32,6 @@ inventory:
     - mod-circulation-storage
     - mod-copycat
     - mod-inventory
-    - mod-inventory-import
     - mod-inventory-storage
     - mod-inventory-update
     - mod-kb-ebsco-java
