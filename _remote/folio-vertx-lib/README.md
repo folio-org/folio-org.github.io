@@ -203,6 +203,7 @@ The following environment variables are supported:
 - `DB_MAX_LIFETIME`
 - `DB_RECONNECTATTEMPTS`
 - `DB_RECONNECTINTERVAL`
+- `DB_CONNECTIONRELEASEDELAY`
 - `DB_SERVER_PEM`
 
 These are also recognized by by RMB. Refer to the
