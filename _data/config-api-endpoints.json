@@ -5002,6 +5002,14 @@
     "apiDescription": "src/main/resources/swagger.api/mod-fqm-manager.yaml",
     "apiType": "oas",
     "interface": "_timer 1.0",
+    "methods": "post:operation/installEntityTypes",
+    "name": "mod-fqm-manager",
+    "path": "/entity-types/install"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-fqm-manager.yaml",
+    "apiType": "oas",
+    "interface": "_timer 1.0",
     "methods": "post:operation/refreshData",
     "name": "mod-fqm-manager",
     "path": "/entity-types/materialized-views/refresh"
