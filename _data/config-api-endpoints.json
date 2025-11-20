@@ -5634,6 +5634,14 @@
     "path": "/finance-storage/transaction-totals"
   },
   {
+    "apiDescription": "ramls/transaction_totals.raml",
+    "apiType": "raml",
+    "interface": "finance-storage.transaction-totals 1.0",
+    "methods": "post:finance_storage_transaction_totals_batch_post",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/transaction-totals/batch"
+  },
+  {
     "apiDescription": "ramls/transaction.raml",
     "apiType": "raml",
     "interface": "finance-storage.transactions 5.0",
