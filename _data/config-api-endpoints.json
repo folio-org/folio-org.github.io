@@ -8549,7 +8549,7 @@
   {
     "apiDescription": "ramls/loan-type.raml",
     "apiType": "raml",
-    "interface": "loan-types 2.3",
+    "interface": "loan-types 2.4",
     "methods": "delete:loan_types_delete get:loan_types_get post:loan_types_post",
     "name": "mod-inventory-storage",
     "path": "/loan-types"
@@ -8557,7 +8557,7 @@
   {
     "apiDescription": "ramls/loan-type.raml",
     "apiType": "raml",
-    "interface": "loan-types 2.3",
+    "interface": "loan-types 2.4",
     "methods": "delete:loan_types__loantypeid__delete get:loan_types__loantypeid__get put:loan_types__loantypeid__put",
     "name": "mod-inventory-storage",
     "path": "/loan-types/{loantypeId}"
