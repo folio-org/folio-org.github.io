@@ -4907,6 +4907,22 @@
     "path": "/email"
   },
   {
+    "apiDescription": "ramls/settings.raml",
+    "apiType": "raml",
+    "interface": "email.settings 1.0",
+    "methods": "get:email_settings_get post:email_settings_post",
+    "name": "mod-email",
+    "path": "/email/settings"
+  },
+  {
+    "apiDescription": "ramls/settings.raml",
+    "apiType": "raml",
+    "interface": "email.settings 1.0",
+    "methods": "delete:email_settings__id__delete get:email_settings__id__get put:email_settings__id__put",
+    "name": "mod-email",
+    "path": "/email/settings/{id}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/mgr-tenant-entitlements.yaml",
     "apiType": "oas",
     "interface": "entitlement-flows 1.0",
@@ -11128,6 +11144,14 @@
     "methods": "post:operation/returnItemByBarcode",
     "name": "mod-remote-storage",
     "path": "/remote-storage/return/{remoteStorageConfigurationId}"
+  },
+  {
+    "apiDescription": "ramls/request-anonymization.raml",
+    "apiType": "raml",
+    "interface": "request-anonymization 0.1",
+    "methods": "post:request_anonymization__requestid__post",
+    "name": "mod-circulation",
+    "path": "/request-anonymization/{requestId}"
   },
   {
     "apiDescription": "ramls/request-policy-storage.raml",

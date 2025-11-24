@@ -512,6 +512,7 @@
         "ramls/for-use-at-location-shelf.raml",
         "ramls/inventory-reports.raml",
         "ramls/loan-anonymization.raml",
+        "ramls/request-anonymization.raml",
         "ramls/request-move.raml",
         "ramls/requests-reports.raml",
         "ramls/staff-slips.raml"
@@ -522,7 +523,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-circulation",
     "org": "folio-org"
@@ -835,6 +836,7 @@
       "raml": [
         "ramls/delayedTasks.raml",
         "ramls/email.raml",
+        "ramls/settings.raml",
         "ramls/smtp-configuration.raml"
       ],
       "upload": []
@@ -843,7 +845,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-email",
     "org": "folio-org"
