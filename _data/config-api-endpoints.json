@@ -520,7 +520,7 @@
     "apiDescription": "service/src/main/resources/openapi.yaml",
     "apiType": "oas",
     "interface": "_tenant 1.0",
-    "methods": "delete:operation/delete post:operation/postTenant_1",
+    "methods": "delete:operation/delete post:operation/postTenant",
     "name": "mod-workflow",
     "path": "/_/tenant"
   },
@@ -952,13 +952,6 @@
     "apiType": "oas",
     "methods": "get:operation/health-path",
     "name": "mod-camunda",
-    "path": "/admin/health/**"
-  },
-  {
-    "apiDescription": "service/src/main/resources/openapi.yaml",
-    "apiType": "oas",
-    "methods": "get:operation/health-path",
-    "name": "mod-workflow",
     "path": "/admin/health/**"
   },
   {
@@ -5253,7 +5246,7 @@
     "apiDescription": "service/src/main/resources/openapi.yaml",
     "apiType": "oas",
     "interface": "workflow-events 1.0",
-    "methods": "post:operation/postHandleEventsWithFile_1",
+    "methods": "post:operation/postHandleEventsWithFile",
     "name": "mod-workflow",
     "path": "/events/**"
   },
@@ -9015,7 +9008,7 @@
     "apiDescription": "service/src/main/resources/openapi.yaml",
     "apiType": "oas",
     "interface": "workflow-nodes 1.0",
-    "methods": "get:operation/getCollectionResource-node-get_1 post:operation/postCollectionResource-node-post",
+    "methods": "get:operation/getCollectionResource-node-get post:operation/postCollectionResource-node-post",
     "name": "mod-workflow",
     "path": "/nodes"
   },
@@ -10677,28 +10670,28 @@
   {
     "apiDescription": "service/src/main/resources/openapi.yaml",
     "apiType": "oas",
-    "methods": "get:operation/listAllFormsOfMetadata_1",
+    "methods": "get:operation/listAllFormsOfMetadata",
     "name": "mod-workflow",
     "path": "/profile"
   },
   {
     "apiDescription": "service/src/main/resources/openapi.yaml",
     "apiType": "oas",
-    "methods": "get:operation/descriptor_1_1_1",
+    "methods": "get:operation/descriptor",
     "name": "mod-workflow",
     "path": "/profile/nodes"
   },
   {
     "apiDescription": "service/src/main/resources/openapi.yaml",
     "apiType": "oas",
-    "methods": "get:operation/descriptor_1_1_2",
+    "methods": "get:operation/descriptor_1",
     "name": "mod-workflow",
     "path": "/profile/triggers"
   },
   {
     "apiDescription": "service/src/main/resources/openapi.yaml",
     "apiType": "oas",
-    "methods": "get:operation/descriptor_1_1_3",
+    "methods": "get:operation/descriptor_2",
     "name": "mod-workflow",
     "path": "/profile/workflows"
   },
@@ -12847,7 +12840,7 @@
     "apiDescription": "service/src/main/resources/openapi.yaml",
     "apiType": "oas",
     "interface": "workflow-triggers 1.0",
-    "methods": "get:operation/getCollectionResource-trigger-get_1 post:operation/postCollectionResource-trigger-post",
+    "methods": "get:operation/getCollectionResource-trigger-get post:operation/postCollectionResource-trigger-post",
     "name": "mod-workflow",
     "path": "/triggers"
   },
@@ -13304,7 +13297,7 @@
     "apiDescription": "service/src/main/resources/openapi.yaml",
     "apiType": "oas",
     "interface": "workflow-workflows 1.0",
-    "methods": "get:operation/getCollectionResource-workflow-get_1 post:operation/postCollectionResource-workflow-post",
+    "methods": "get:operation/getCollectionResource-workflow-get post:operation/postCollectionResource-workflow-post",
     "name": "mod-workflow",
     "path": "/workflows"
   },
@@ -13330,13 +13323,21 @@
     "interface": "workflow-workflows 1.0",
     "methods": "get:operation/executeSearch-workflow-get",
     "name": "mod-workflow",
+    "path": "/workflows/search/existsByIdAndVersionTag"
+  },
+  {
+    "apiDescription": "service/src/main/resources/openapi.yaml",
+    "apiType": "oas",
+    "interface": "workflow-workflows 1.0",
+    "methods": "get:operation/executeSearch-workflow-get_1",
+    "name": "mod-workflow",
     "path": "/workflows/search/getViewById"
   },
   {
     "apiDescription": "service/src/main/resources/openapi.yaml",
     "apiType": "oas",
     "interface": "workflow-workflows 1.0",
-    "methods": "get:operation/getItemResource-workflow-get_1 patch:operation/patchItemResource-workflow-patch put:operation/putItemResource-workflow-put",
+    "methods": "get:operation/getItemResource-workflow-get patch:operation/patchItemResource-workflow-patch put:operation/putItemResource-workflow-put",
     "name": "mod-workflow",
     "path": "/workflows/{id}"
   },
@@ -13376,7 +13377,7 @@
     "apiDescription": "service/src/main/resources/openapi.yaml",
     "apiType": "oas",
     "interface": "workflow-workflows 1.0",
-    "methods": "get:operation/followPropertyReference-workflow-get_1 patch:operation/createPropertyReference-workflow-patch put:operation/createPropertyReference-workflow-put",
+    "methods": "get:operation/followPropertyReference-workflow-get patch:operation/createPropertyReference-workflow-patch put:operation/createPropertyReference-workflow-put",
     "name": "mod-workflow",
     "path": "/workflows/{id}/nodes"
   },
@@ -13384,7 +13385,7 @@
     "apiDescription": "service/src/main/resources/openapi.yaml",
     "apiType": "oas",
     "interface": "workflow-workflows 1.0",
-    "methods": "get:operation/followPropertyReference-workflow-get",
+    "methods": "get:operation/followPropertyReference-workflow-get_1",
     "name": "mod-workflow",
     "path": "/workflows/{id}/nodes/{propertyId}"
   },
