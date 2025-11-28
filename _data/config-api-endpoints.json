@@ -8340,14 +8340,6 @@
     "path": "/linked-data/resource/{id}/rdf"
   },
   {
-    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
-    "apiType": "oas",
-    "interface": "linked-data 2.0",
-    "methods": "post:operation/searchResources",
-    "name": "mod-linked-data",
-    "path": "/linked-data/resources/search"
-  },
-  {
     "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "instance-authority-linking-rules 1.1",
