@@ -32,8 +32,13 @@ These are [available](https://github.com/folio-org/folio-ansible/blob/master/doc
 The first Lesson of this Tutorial will establish one for local use.)
 
 <div class="attention">
+<p>
 Note: Using the "folio/release" VM will require your host machine to have sufficient resources available (e.g. memory).
 To instead use the "folio/snapshot" VM, which has the full set of FOLIO apps, will require even more resources.
+</p>
+<p>
+Note: The built Vagrant boxes arre outdated. Refer to the "FOLIO Vagrant retirement plan" at ticket <a href="https://folio-org.atlassian.net/browse/FOLIO-4144">FOLIO-4144</a>.
+</p>
 </div>
 
 ## Troubleshooting and known issues
