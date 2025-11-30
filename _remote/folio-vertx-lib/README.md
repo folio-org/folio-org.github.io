@@ -51,9 +51,9 @@ MainVerticle yourself - no fancy initializers - you decide.
 
 Example:
 ```
-public class MainVerticle extends AbstractVerticle {
+public class MainVerticle extends VerticleBase {
   @Override
-  public void start(Promise<Void> promise) {
+  public Future<?> start() {
     TenantPgPool.setModule("mod-mymodule"); // PostgreSQL - schema separation
 
     final int port = Integer.parseInt( // listening port
@@ -69,13 +69,10 @@ public class MainVerticle extends AbstractVerticle {
     HttpServerOptions so = new HttpServerOptions()
         .setHandle100ContinueAutomatically(true);
     // combine all routes and start server
-    RouterCreator.mountAll(vertx, routerCreators, "mod-mymodule")
-        .compose(router ->
-            vertx.createHttpServer(so)
-                .requestHandler(router)
-                .listen(port).mapEmpty())
-        .<Void>mapEmpty()
-        .onComplete(promise);
+    return RouterCreator.mountAll(vertx, routerCreators, "mod-mymodule")
+        .compose(router -> vertx.createHttpServer(so)
+            .requestHandler(router)
+            .listen(port));
   }
 }
 ```

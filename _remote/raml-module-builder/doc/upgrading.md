@@ -35,6 +35,8 @@ See the [NEWS](../NEWS.md) summary of changes for each version.
 
 36.0.\* is the Trillium version.
 
+See also the [FOLIO Vert.x 5 migration notes](https://folio-org.atlassian.net/wiki/spaces/FOLIJET/pages/1003847853/Migration+to+Vertx+5).
+
 All command line options must be passed as system properties using `-D` before the `-jar` argument. `MODULE_SPECIFIC_ARGS` no longer exists.
 Modules should prefer environment variables.
 
@@ -43,6 +45,16 @@ In the log4j pattern (used in log4j2.properties and log4j2-json.properties) upca
 * `FolioLoggingContext:tenantid` -> `FolioLoggingContext:tenantId`
 * `FolioLoggingContext:userid` -> `FolioLoggingContext:userId`
 * `FolioLoggingContext:moduleid` -> `FolioLoggingContext:moduleId`
+
+In pom.xml file add `ServicesResourceTransformer` to the `maven-shade-plugin` configuration.
+```xml
+    <configuration>
+      <transformers>
+        ...
+        <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+      </transformers>
+    </configuration>
+```
 
 ## Version 35.3
 
