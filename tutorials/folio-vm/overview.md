@@ -37,7 +37,7 @@ Note: Using the "folio/release" VM will require your host machine to have suffic
 To instead use the "folio/snapshot" VM, which has the full set of FOLIO apps, will require even more resources.
 </p>
 <p>
-Note: The built Vagrant boxes arre outdated. Refer to the "FOLIO Vagrant retirement plan" at ticket <a href="https://folio-org.atlassian.net/browse/FOLIO-4144">FOLIO-4144</a>.
+Note: The built Vagrant boxes are outdated. Refer to the "FOLIO Vagrant retirement plan" at ticket <a href="https://folio-org.atlassian.net/browse/FOLIO-4144">FOLIO-4144</a>.
 </p>
 </div>
 
