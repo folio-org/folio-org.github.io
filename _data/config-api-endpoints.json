@@ -4470,7 +4470,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "ecs-request-transactions 1.1",
+    "interface": "ecs-request-transactions 1.2",
     "methods": "patch:operation/updateEcsRequestTransaction post:operation/createEcsRequestTransactions",
     "name": "mod-dcb",
     "path": "/ecs-request-transactions/{ecsRequestTransactionId}"
@@ -8366,15 +8366,7 @@
   {
     "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "instance-authority-links 2.1",
-    "methods": "post:operation/countLinksByAuthorityIds",
-    "name": "mod-entities-links",
-    "path": "/links/authorities/bulk/count"
-  },
-  {
-    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
-    "apiType": "oas",
-    "interface": "instance-authority-links 2.1",
+    "interface": "instance-authority-links 2.2",
     "methods": "get:operation/getInstanceLinks put:operation/updateInstanceLinks",
     "name": "mod-entities-links",
     "path": "/links/instances/{instanceId}"
@@ -12767,7 +12759,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "transactions 1.5",
+    "interface": "transactions 1.6",
     "methods": "get:operation/getTransactionStatusList",
     "name": "mod-dcb",
     "path": "/transactions/status"
@@ -12775,7 +12767,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "transactions 1.5",
+    "interface": "transactions 1.6",
     "methods": "post:operation/createCirculationRequest put:operation/updateTransactionDetails",
     "name": "mod-dcb",
     "path": "/transactions/{dcbTransactionId}"
@@ -12783,7 +12775,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "transactions 1.5",
+    "interface": "transactions 1.6",
     "methods": "put:operation/blockItemRenewalByTransactionId",
     "name": "mod-dcb",
     "path": "/transactions/{dcbTransactionId}/block-renewal"
@@ -12791,7 +12783,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "transactions 1.5",
+    "interface": "transactions 1.6",
     "methods": "put:operation/renewItemLoanByTransactionId",
     "name": "mod-dcb",
     "path": "/transactions/{dcbTransactionId}/renew"
@@ -12799,7 +12791,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "transactions 1.5",
+    "interface": "transactions 1.6",
     "methods": "get:operation/getTransactionStatusById put:operation/updateTransactionStatus",
     "name": "mod-dcb",
     "path": "/transactions/{dcbTransactionId}/status"
@@ -12807,7 +12799,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "transactions 1.5",
+    "interface": "transactions 1.6",
     "methods": "put:operation/unblockItemRenewalByTransactionId",
     "name": "mod-dcb",
     "path": "/transactions/{dcbTransactionId}/unblock-renewal"

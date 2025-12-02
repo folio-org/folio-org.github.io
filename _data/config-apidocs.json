@@ -862,7 +862,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-entities-links",
     "org": "folio-org"
@@ -2118,7 +2118,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-tlr",
     "org": "folio-org"
