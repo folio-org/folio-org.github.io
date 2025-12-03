@@ -6093,7 +6093,7 @@
   {
     "apiDescription": "ramls/fincConfigFiles.raml",
     "apiType": "raml",
-    "interface": "finc-config-files 1.0",
+    "interface": "finc-config-files 1.1",
     "methods": "post:finc_config_files_post",
     "name": "mod-finc-config",
     "path": "/finc-config/files"
@@ -6101,7 +6101,7 @@
   {
     "apiDescription": "ramls/fincConfigFiles.raml",
     "apiType": "raml",
-    "interface": "finc-config-files 1.0",
+    "interface": "finc-config-files 1.1",
     "methods": "delete:finc_config_files__id__delete get:finc_config_files__id__get",
     "name": "mod-finc-config",
     "path": "/finc-config/files/{id}"
@@ -6197,7 +6197,7 @@
   {
     "apiDescription": "ramls/fincSelectFiles.raml",
     "apiType": "raml",
-    "interface": "finc-select-files 1.0",
+    "interface": "finc-select-files 1.1",
     "methods": "post:finc_select_files_post",
     "name": "mod-finc-config",
     "path": "/finc-select/files"
@@ -6205,7 +6205,7 @@
   {
     "apiDescription": "ramls/fincSelectFiles.raml",
     "apiType": "raml",
-    "interface": "finc-select-files 1.0",
+    "interface": "finc-select-files 1.1",
     "methods": "delete:finc_select_files__id__delete get:finc_select_files__id__get",
     "name": "mod-finc-config",
     "path": "/finc-select/files/{id}"
