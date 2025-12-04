@@ -4373,10 +4373,17 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
-    "interface": "dcb_refresh_shadow_locations 1.0",
+    "interface": "dcb_refresh_shadow_locations 2.0",
     "methods": "post:operation/refreshShadowLocation",
     "name": "mod-dcb",
     "path": "/dcb/shadow-locations/refresh"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/edge-dcb.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/refreshShadowLocation",
+    "name": "edge-dcb",
+    "path": "/dcbService/dcb/shadow-locations/refresh"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/edge-dcb.yaml",
