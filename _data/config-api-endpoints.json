@@ -11382,6 +11382,14 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
     "apiType": "oas",
+    "interface": "roles-permission-migration 1.0",
+    "methods": "get:operation/getMigrationErrors",
+    "name": "mod-roles-keycloak",
+    "path": "/roles-keycloak/migrations/{id}/errors"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-roles-keycloak.yaml",
+    "apiType": "oas",
     "interface": "roles 1.1",
     "methods": "post:operation/createRoles",
     "name": "mod-roles-keycloak",
