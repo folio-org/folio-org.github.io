@@ -225,17 +225,17 @@
   },
   {
     "config": {
-      "oas": [],
-      "raml": [
-        "ramls/edge-rtac.raml"
+      "oas": [
+        "src/main/resources/swagger.api/edge-rtac.yaml"
       ],
+      "raml": [],
       "upload": []
     },
     "metadata": {
       "apiTypes": [
-        "RAML"
+        "OAS"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "edge-rtac",
     "org": "folio-org"
