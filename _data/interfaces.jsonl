@@ -19,7 +19,7 @@
 {"id": "edge-users-2.2.0-SNAPSHOT.10", "optional": [], "provides": [], "requires": ["users 16.0 16.4"]}
 {"id": "folio-org_ld-folio-wrapper-1.2.1099000000003", "optional": [], "provides": [], "requires": []}
 {"id": "folio-org_linked-data-1.0.10990000000029", "optional": [], "provides": [], "requires": []}
-{"id": "folio_acquisition-units-6.1.1099000000000071", "optional": [], "provides": [], "requires": ["acquisitions-units 1.1", "users 15.1 16.0"]}
+{"id": "folio_acquisition-units-6.1.1099000000000082", "optional": [], "provides": [], "requires": ["acquisitions-units 1.1", "users 15.1 16.0"]}
 {"id": "folio_agreements-12.1.1099000000001693", "optional": ["licenses 6.0", "order-lines 2.0 3.0 4.0", "organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_audit-1.0.10000024", "optional": [], "provides": [], "requires": []}
 {"id": "folio_authorization-policies-2.0.1099000000000111", "optional": [], "provides": [], "requires": ["policies 1.1"]}
