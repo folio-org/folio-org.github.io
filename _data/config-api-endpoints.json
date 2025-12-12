@@ -8216,6 +8216,22 @@
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data-import.yaml",
     "apiType": "oas",
     "interface": "linked-data-import 1.0",
+    "methods": "get:operation/getJobInfo",
+    "name": "mod-linked-data-import",
+    "path": "/linked-data-import/jobs/{jobId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data-import.yaml",
+    "apiType": "oas",
+    "interface": "linked-data-import 1.0",
+    "methods": "get:operation/getFailedLines",
+    "name": "mod-linked-data-import",
+    "path": "/linked-data-import/jobs/{jobId}/failed-lines"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data-import.yaml",
+    "apiType": "oas",
+    "interface": "linked-data-import 1.0",
     "methods": "post:operation/startImport",
     "name": "mod-linked-data-import",
     "path": "/linked-data-import/start"
