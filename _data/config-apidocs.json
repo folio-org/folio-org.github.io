@@ -1728,7 +1728,8 @@
     "config": {
       "oas": [],
       "raml": [
-        "ramls/patron.raml"
+        "ramls/patron.raml",
+        "ramls/settings.raml"
       ],
       "upload": []
     },

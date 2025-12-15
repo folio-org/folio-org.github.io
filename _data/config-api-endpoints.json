@@ -10134,7 +10134,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.5",
+    "interface": "patron 6.6",
     "methods": "post:patron_post",
     "name": "mod-patron",
     "path": "/patron"
@@ -10322,7 +10322,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.5",
+    "interface": "patron 6.6",
     "methods": "get:patron_account__id__get",
     "name": "mod-patron",
     "path": "/patron/account/{id}"
@@ -10337,7 +10337,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.5",
+    "interface": "patron 6.6",
     "methods": "post:patron_account__id__hold__holdid__cancel_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/hold/{holdId}/cancel"
@@ -10352,8 +10352,8 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.5",
-    "methods": "get:patron_account__id__instance__instanceid__allowed_service_points_get post:patron_account__id__instance__instanceid__allowed_service_points_post",
+    "interface": "patron 6.6",
+    "methods": "get:patron_account__id__instance__instanceid__allowed_service_points_get",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/allowed-service-points"
   },
@@ -10362,6 +10362,14 @@
     "apiType": "raml",
     "methods": "post:patron_account__id__instance__instanceid__allowed_service_points_multi_item_post",
     "name": "edge-patron",
+    "path": "/patron/account/{id}/instance/{instanceId}/allowed-service-points-multi-item"
+  },
+  {
+    "apiDescription": "ramls/patron.raml",
+    "apiType": "raml",
+    "interface": "patron 6.6",
+    "methods": "post:patron_account__id__instance__instanceid__allowed_service_points_multi_item_post",
+    "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/allowed-service-points-multi-item"
   },
   {
@@ -10374,7 +10382,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.5",
+    "interface": "patron 6.6",
     "methods": "post:patron_account__id__instance__instanceid__batch_request_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/batch-request"
@@ -10389,7 +10397,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.5",
+    "interface": "patron 6.6",
     "methods": "get:patron_account__id__instance__instanceid__batch_request__batchrequestid__status_get",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/batch-request/{batchRequestId}/status"
@@ -10404,7 +10412,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.5",
+    "interface": "patron 6.6",
     "methods": "post:patron_account__id__instance__instanceid__hold_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/hold"
@@ -10419,7 +10427,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.5",
+    "interface": "patron 6.6",
     "methods": "get:patron_account__id__item__itemid__allowed_service_points_get",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/allowed-service-points"
@@ -10434,7 +10442,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.5",
+    "interface": "patron 6.6",
     "methods": "post:patron_account__id__item__itemid__hold_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/hold"
@@ -10449,7 +10457,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.5",
+    "interface": "patron 6.6",
     "methods": "post:patron_account__id__item__itemid__renew_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/renew"
@@ -10464,10 +10472,26 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.5",
+    "interface": "patron 6.6",
     "methods": "get:patron_registration_status__identifier__get",
     "name": "mod-patron",
     "path": "/patron/registration-status/{identifier}"
+  },
+  {
+    "apiDescription": "ramls/settings.raml",
+    "apiType": "raml",
+    "interface": "patron.settings 1.0",
+    "methods": "get:patron_settings_get post:patron_settings_post",
+    "name": "mod-patron",
+    "path": "/patron/settings"
+  },
+  {
+    "apiDescription": "ramls/settings.raml",
+    "apiType": "raml",
+    "interface": "patron.settings 1.0",
+    "methods": "delete:patron_settings__id__delete get:patron_settings__id__get put:patron_settings__id__put",
+    "name": "mod-patron",
+    "path": "/patron/settings/{id}"
   },
   {
     "apiDescription": "ramls/edge-patron.raml",
@@ -10479,7 +10503,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.5",
+    "interface": "patron 6.6",
     "methods": "put:patron__externalsystemid__put",
     "name": "mod-patron",
     "path": "/patron/{externalSystemId}"
