@@ -8572,6 +8572,14 @@
     "path": "/loan-types/{loantypeId}"
   },
   {
+    "apiDescription": "src/main/resources/openapi/settings.yaml",
+    "apiType": "oas",
+    "interface": "locale 1.0",
+    "methods": "get:operation/getLocale put:operation/setLocale",
+    "name": "mod-settings",
+    "path": "/locale"
+  },
+  {
     "apiDescription": "ramls/locationunit.raml",
     "apiType": "raml",
     "interface": "location-units 2.1",
@@ -12059,7 +12067,7 @@
   {
     "apiDescription": "src/main/resources/openapi/settings.yaml",
     "apiType": "oas",
-    "interface": "settings 1.1",
+    "interface": "settings 1.2",
     "methods": "get:operation/getSettings post:operation/postSetting",
     "name": "mod-settings",
     "path": "/settings/entries"
@@ -12067,7 +12075,7 @@
   {
     "apiDescription": "src/main/resources/openapi/settings.yaml",
     "apiType": "oas",
-    "interface": "settings 1.1",
+    "interface": "settings 1.2",
     "methods": "delete:operation/deleteSetting get:operation/getSetting put:operation/putSetting",
     "name": "mod-settings",
     "path": "/settings/entries/{id}"
@@ -12075,7 +12083,7 @@
   {
     "apiDescription": "src/main/resources/openapi/settings.yaml",
     "apiType": "oas",
-    "interface": "settings 1.1",
+    "interface": "settings 1.2",
     "methods": "put:operation/uploadSettings",
     "name": "mod-settings",
     "path": "/settings/upload"
