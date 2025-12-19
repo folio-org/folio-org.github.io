@@ -1259,17 +1259,18 @@
   },
   {
     "config": {
-      "oas": [],
-      "raml": [
-        "ramls/inventory-update.raml"
+      "oas": [
+        "src/main/resources/openapi/inventory-import-1.0.yaml",
+        "src/main/resources/openapi/inventory-update-5.0.yaml"
       ],
+      "raml": [],
       "upload": []
     },
     "metadata": {
       "apiTypes": [
-        "RAML"
+        "OAS"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-inventory-update",
     "org": "folio-org"
