@@ -7283,10 +7283,10 @@
     "path": "/instance-types/{instanceTypeId}"
   },
   {
-    "apiDescription": "ramls/inventory-update.raml",
-    "apiType": "raml",
+    "apiDescription": "src/main/resources/openapi/inventory-update-5.0.yaml",
+    "apiType": "oas",
     "interface": "inventory-batch-upsert-hrid 3.0",
-    "methods": "put:inventory_batch_upsert_hrid_put",
+    "methods": "put:operation/batchUpsertByHrid",
     "name": "mod-inventory-update",
     "path": "/inventory-batch-upsert-hrid"
   },
@@ -7305,6 +7305,190 @@
     "methods": "get:inventory_hierarchy_updated_instance_ids_get",
     "name": "mod-inventory-storage",
     "path": "/inventory-hierarchy/updated-instance-ids"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/getChannels post:operation/postChannel",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/channels"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "delete:operation/deleteChannel get:operation/getChannel put:operation/putChannel",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/channels/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "post:operation/cancelJob",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/channels/{id}/cancel-job"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "post:operation/commission",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/channels/{id}/commission"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "post:operation/decommission",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/channels/{id}/decommission"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "post:operation/initFileSystemQueue",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/channels/{id}/init-queue"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "post:operation/pauseJob",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/channels/{id}/pause-job"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "post:operation/resumeJob",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/channels/{id}/resume-job"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "post:operation/uploadXmlRecords",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/channels/{id}/upload"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/getFailedRecords post:operation/postFailedRecords",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/failed-records"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "delete:operation/deleteRecordFailure",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/failed-records/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/getImportJobs post:operation/postImportJob",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/import-jobs"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "delete:operation/deleteImportJob get:operation/getImportJob",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/import-jobs/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/getImportJobLogLines post:operation/postImportJobLogLines",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/job-logs"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "_timer 1.0",
+    "methods": "post:operation/purgeAgedLogs",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/purge-aged-logs"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "post:operation/recoverInterruptedChannels",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/recover-interrupted-channels"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/getSteps post:operation/postStep",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/steps"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "delete:operation/deleteStep get:operation/getStep put:operation/putStep",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/steps/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/getScript put:operation/putScript",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/steps/{id}/script"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "get:operation/getTransformations post:operation/postTransformation",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/transformations"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "delete:operation/deleteTransformation get:operation/getTransformation put:operation/putTransformation",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/transformations/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "delete:operation/deleteTsas get:operation/getTsas post:operation/postTsa",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/tsas"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "delete:operation/deleteTsa get:operation/getTsa put:operation/putTsa",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/tsas/{id}"
   },
   {
     "apiDescription": "ramls/inventory-reindex-records.raml",
@@ -7371,18 +7555,18 @@
     "path": "/inventory-storage/migrations/jobs/{id}"
   },
   {
-    "apiDescription": "ramls/inventory-update.raml",
-    "apiType": "raml",
+    "apiDescription": "src/main/resources/openapi/inventory-update-5.0.yaml",
+    "apiType": "oas",
     "interface": "inventory-upsert-hrid 3.0",
-    "methods": "delete:inventory_upsert_hrid_delete put:inventory_upsert_hrid_put",
+    "methods": "delete:operation/deleteInstanceByHrid put:operation/singleRecordUpsertByHrid",
     "name": "mod-inventory-update",
     "path": "/inventory-upsert-hrid"
   },
   {
-    "apiDescription": "ramls/inventory-update.raml",
-    "apiType": "raml",
+    "apiDescription": "src/main/resources/openapi/inventory-update-5.0.yaml",
+    "apiType": "oas",
     "interface": "inventory-upsert-hrid 3.0",
-    "methods": "get:inventory_upsert_hrid_fetch__id__get",
+    "methods": "get:operation/getInventoryRecordSet",
     "name": "mod-inventory-update",
     "path": "/inventory-upsert-hrid/fetch/{id}"
   },
@@ -8291,6 +8475,13 @@
     "methods": "delete:operation/deletePreferredProfile get:operation/getPreferredProfileByResourceType post:operation/setPreferredProfile",
     "name": "mod-linked-data",
     "path": "/linked-data/profile/preferred"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getProfileSettings post:operation/setProfileSettings",
+    "name": "mod-linked-data",
+    "path": "/linked-data/profile/settings/{profileId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
@@ -12089,26 +12280,26 @@
     "path": "/settings/upload"
   },
   {
-    "apiDescription": "ramls/inventory-update.raml",
-    "apiType": "raml",
+    "apiDescription": "src/main/resources/openapi/inventory-update-5.0.yaml",
+    "apiType": "oas",
     "interface": "shared-inventory-batch-upsert-matchkey 3.0",
-    "methods": "put:shared_inventory_batch_upsert_matchkey_put",
+    "methods": "put:operation/batchUpsertByMatchkey",
     "name": "mod-inventory-update",
     "path": "/shared-inventory-batch-upsert-matchkey"
   },
   {
-    "apiDescription": "ramls/inventory-update.raml",
-    "apiType": "raml",
+    "apiDescription": "src/main/resources/openapi/inventory-update-5.0.yaml",
+    "apiType": "oas",
     "interface": "shared-inventory-upsert-matchkey 3.0",
-    "methods": "delete:shared_inventory_upsert_matchkey_delete put:shared_inventory_upsert_matchkey_put",
+    "methods": "delete:operation/sharedIndexDeletion put:operation/upsertByMatchkey",
     "name": "mod-inventory-update",
     "path": "/shared-inventory-upsert-matchkey"
   },
   {
-    "apiDescription": "ramls/inventory-update.raml",
-    "apiType": "raml",
+    "apiDescription": "src/main/resources/openapi/inventory-update-5.0.yaml",
+    "apiType": "oas",
     "interface": "shared-inventory-upsert-matchkey 3.0",
-    "methods": "get:shared_inventory_upsert_matchkey_fetch__id__get",
+    "methods": "get:operation/getSharedInstance",
     "name": "mod-inventory-update",
     "path": "/shared-inventory-upsert-matchkey/fetch/{id}"
   },
