@@ -7358,6 +7358,22 @@
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
     "interface": "inventory-import 1.0",
+    "methods": "post:operation/listen",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/channels/{id}/listen"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
+    "methods": "post:operation/noListen",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/channels/{id}/no-listen"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
     "methods": "post:operation/pauseJob",
     "name": "mod-inventory-update",
     "path": "/inventory-import/channels/{id}/pause-job"
