@@ -7390,6 +7390,14 @@
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
     "interface": "inventory-import 1.0",
+    "methods": "post:operation/echoTransformation",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/channels/{id}/try-transformation"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.0",
     "methods": "post:operation/uploadXmlRecords",
     "name": "mod-inventory-update",
     "path": "/inventory-import/channels/{id}/upload"
