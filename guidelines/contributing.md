@@ -8,7 +8,7 @@ menuTopTitle: Guidelines
 
 ## License
 
-Copyright (C) 2015-2025 The Open Library Foundation
+Copyright (C) 2015-2026 The Open Library Foundation
 
 All software is distributed under the terms of the Apache License, Version 2.0.
 
