@@ -1182,7 +1182,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-inventory",
     "org": "folio-org"
@@ -2151,6 +2151,7 @@
         "ramls/groups.raml",
         "ramls/patronpin.raml",
         "ramls/proxiesFor.raml",
+        "ramls/settings.raml",
         "ramls/staging_users.raml",
         "ramls/userTenants.raml",
         "ramls/users.raml"
@@ -2161,7 +2162,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-users",
     "org": "folio-org"

@@ -8426,7 +8426,15 @@
     "interface": "linked-data-import 1.0",
     "methods": "get:operation/getJobInfo",
     "name": "mod-linked-data-import",
-    "path": "/linked-data-import/jobs/{jobId}"
+    "path": "/linked-data-import/jobs/{jobExecutionId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data-import.yaml",
+    "apiType": "oas",
+    "interface": "linked-data-import 1.0",
+    "methods": "put:operation/cancelJob",
+    "name": "mod-linked-data-import",
+    "path": "/linked-data-import/jobs/{jobExecutionId}/cancel"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data-import.yaml",
@@ -8434,7 +8442,7 @@
     "interface": "linked-data-import 1.0",
     "methods": "get:operation/getFailedLines",
     "name": "mod-linked-data-import",
-    "path": "/linked-data-import/jobs/{jobId}/failed-lines"
+    "path": "/linked-data-import/jobs/{jobExecutionId}/failed-lines"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data-import.yaml",
@@ -13382,6 +13390,22 @@
     "methods": "delete:users_profile_picture__profileid__delete get:users_profile_picture__profileid__get put:users_profile_picture__profileid__put",
     "name": "mod-users",
     "path": "/users/profile-picture/{profileId}"
+  },
+  {
+    "apiDescription": "ramls/settings.raml",
+    "apiType": "raml",
+    "interface": "users.settings 1.0",
+    "methods": "get:users_settings_entries_get post:users_settings_entries_post",
+    "name": "mod-users",
+    "path": "/users/settings/entries"
+  },
+  {
+    "apiDescription": "ramls/settings.raml",
+    "apiType": "raml",
+    "interface": "users.settings 1.0",
+    "methods": "delete:users_settings_entries__id__delete get:users_settings_entries__id__get put:users_settings_entries__id__put",
+    "name": "mod-users",
+    "path": "/users/settings/entries/{id}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/edge-users.yaml",
