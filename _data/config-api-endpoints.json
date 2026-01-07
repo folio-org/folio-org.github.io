@@ -9934,6 +9934,14 @@
     "path": "/orders/export-history"
   },
   {
+    "apiDescription": "ramls/holding-detail.raml",
+    "apiType": "raml",
+    "interface": "orders.holding-detail 1.0",
+    "methods": "post:orders_holding_detail_post",
+    "name": "mod-orders",
+    "path": "/orders/holding-detail"
+  },
+  {
     "apiDescription": "ramls/holding-summary.raml",
     "apiType": "raml",
     "interface": "orders.holding-summary 1.0",
