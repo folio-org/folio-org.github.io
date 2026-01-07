@@ -1600,6 +1600,7 @@
         "ramls/configuration.raml",
         "ramls/expect.raml",
         "ramls/export_history.raml",
+        "ramls/holding-detail.raml",
         "ramls/holding-summary.raml",
         "ramls/order-lines.raml",
         "ramls/order-templates.raml",
