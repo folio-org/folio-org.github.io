@@ -2152,7 +2152,6 @@
         "ramls/groups.raml",
         "ramls/patronpin.raml",
         "ramls/proxiesFor.raml",
-        "ramls/settings.raml",
         "ramls/staging_users.raml",
         "ramls/userTenants.raml",
         "ramls/users.raml"
