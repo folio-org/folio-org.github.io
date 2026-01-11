@@ -94,6 +94,7 @@ Add the required LICENSE (taken from [apache.org](https://www.apache.org/license
 Ensure that the required copyright and license statement is near the top of the README.
 Use the initial year of creation for the date.
 (In subsequent years it will become a [date range](https://folio-org.atlassian.net/browse/FOLIO-1021).)
+Don't alter the LICENSE file, don't fill the copyright boilerplate in the LICENSE file appendix.
 
 Ensure that any package.json and pom.xml etc. type of configuration file has the appropriate required "licence" elements.
 
