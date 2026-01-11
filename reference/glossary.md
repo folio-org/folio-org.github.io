@@ -541,7 +541,12 @@ A generic term for Web Services Application Programming Interface (see [API](#ap
 
 #### ZooKeeper
 
-[Apache ZooKeeper](https://zookeeper.apache.org/) is a service for highly reliable distributed coordination.
+[Apache ZooKeeper](https://zookeeper.apache.org/) is a service for highly reliable distributed coordination.  It has been used for Kafka coordination.
+
+Kafka's KRaft mode replaces ZooKeeper, Kafka 4 doesn't support ZooKeeper.  Therefore ZooKeeper has been
+[deprecated since Sunflower (R1-2025)](https://folio-org.atlassian.net/wiki/spaces/REL/pages/399081725/Sunflower+R1+2025+Required+manual+migrations)
+and will be
+[removed in Umbrellaleaf (2027)](https://folio-org.atlassian.net/wiki/spaces/TC/pages/966852629/Umbrellaleaf).
 
 #### Z39.50
 
