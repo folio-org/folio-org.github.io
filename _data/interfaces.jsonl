@@ -105,7 +105,7 @@
 {"id": "folio_requests-13.0.1099000000000392", "optional": ["circulation-bff-loans 1.0"], "provides": [], "requires": ["automated-patron-blocks 0.1", "cancellation-reason-storage 1.1", "circulation 14.2", "inventory 10.0 11.0 12.0 13.0 14.0", "loan-policy-storage 2.3", "pick-slips 0.1", "request-storage 6.0", "search-slips 0.1"]}
 {"id": "folio_requests-mediated-4.0.1099000000000185", "optional": [], "provides": [], "requires": ["circulation 14.4", "circulation-bff-requests 1.0", "request-preference-storage 2.0", "requests-mediated 2.0", "requests-mediated-actions 1.0", "users 16.3"]}
 {"id": "folio_search-5.1.100000121", "optional": [], "provides": [], "requires": ["codex 3.0"]}
-{"id": "folio_serials-management-2.1.1099000000000939", "optional": ["acquisitions-units 1.1", "holdings-storage 6.0 7.0 8.0", "identifier-types 1.2", "locations 3.0", "material-types 2.2", "order-lines 3.0 4.0", "orders 12.1 13.0", "organizations 2.0", "pieces 3.0", "titles 1.2"], "provides": [], "requires": ["serials-management 1.0 2.0"]}
+{"id": "folio_serials-management-2.1.1099000000000947", "optional": ["acquisitions-units 1.1", "holdings-storage 6.0 7.0 8.0", "identifier-types 1.2", "locations 3.0", "material-types 2.2", "order-lines 3.0 4.0", "orders 12.1 13.0", "organizations 2.0", "pieces 3.0", "titles 1.2"], "provides": [], "requires": ["serials-management 1.0 2.0"]}
 {"id": "folio_service-interaction-4.1.1099000000000277", "optional": [], "provides": [], "requires": ["servint 4.0"]}
 {"id": "folio_servicepoints-8.0.1099000000000062", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-acq-components-7.1.1099000000000442", "optional": [], "provides": [], "requires": []}
@@ -114,7 +114,7 @@
 {"id": "folio_stripes-components-12.2.109900000000337", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-connect-9.2.1090000005", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-core-11.1.1099000000001371", "optional": ["consortia 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "settings 1.0", "users-bl 5.0 6.0"]}
-{"id": "folio_stripes-data-transfer-components-7.0.10990000000074", "optional": [], "provides": [], "requires": []}
+{"id": "folio_stripes-data-transfer-components-7.0.1099000000000103", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-erm-components-9.2.10990000000077", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-final-form-8.1.1090000009", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-form-9.1.1090000004", "optional": [], "provides": [], "requires": []}
