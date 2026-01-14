@@ -89,11 +89,12 @@ The Stripes/UI/backend modules might be slightly different (e.g. CHANGELOG.md = 
 
 Add the required [PERSONAL_DATA_DISCLOSURE.md](https://github.com/folio-org/personal-data-disclosure) form.
 
-Add the required LICENSE and CONTRIBUTING.md and README.md files.
+Add the required LICENSE (taken from [apache.org](https://www.apache.org/licenses/LICENSE-2.0.txt)) and CONTRIBUTING.md and README.md files.
 
 Ensure that the required copyright and license statement is near the top of the README.
 Use the initial year of creation for the date.
 (In subsequent years it will become a [date range](https://folio-org.atlassian.net/browse/FOLIO-1021).)
+Don't alter the LICENSE file, don't fill the copyright boilerplate in the LICENSE file appendix.
 
 Ensure that any package.json and pom.xml etc. type of configuration file has the appropriate required "licence" elements.
 
