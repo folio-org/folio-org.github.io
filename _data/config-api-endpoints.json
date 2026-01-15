@@ -13400,6 +13400,22 @@
     "path": "/users/profile-picture/{profileId}"
   },
   {
+    "apiDescription": "ramls/settings.raml",
+    "apiType": "raml",
+    "interface": "users.settings 1.0",
+    "methods": "get:users_settings_entries_get post:users_settings_entries_post",
+    "name": "mod-users",
+    "path": "/users/settings/entries"
+  },
+  {
+    "apiDescription": "ramls/settings.raml",
+    "apiType": "raml",
+    "interface": "users.settings 1.0",
+    "methods": "delete:users_settings_entries__id__delete get:users_settings_entries__id__get put:users_settings_entries__id__put",
+    "name": "mod-users",
+    "path": "/users/settings/entries/{id}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/edge-users.yaml",
     "apiType": "oas",
     "methods": "post:operation/setPin",
