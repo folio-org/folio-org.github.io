@@ -63,7 +63,7 @@
 {"id": "folio_lists-4.0.3099000000000968", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0 2.0"]}
 {"id": "folio_local-kb-admin-9.1.1099000000000176", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_lti-courses-1.1.100035", "optional": [], "provides": [], "requires": ["configuration 2.0 3.0 4.0 5.0"]}
-{"id": "folio_marc-authorities-8.0.1099000000001205", "optional": ["audit-config 1.0", "audit-marc 1.0"], "provides": [], "requires": ["browse-authorities 1.0", "marc-records-editor 6.0", "resource-ids-streaming 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.3"]}
+{"id": "folio_marc-authorities-8.0.1099000000001252", "optional": ["audit-config 1.0", "audit-marc 1.0"], "provides": [], "requires": ["browse-authorities 1.0", "marc-records-editor 6.0", "resource-ids-streaming 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.3"]}
 {"id": "folio_marccat-3.0.1000438", "optional": [], "provides": [], "requires": ["marccat 2.0"]}
 {"id": "folio_mosaic-settings-1.0.1099000000000106", "optional": [], "provides": [], "requires": ["mosaic 1.0", "order-templates 1.0"]}
 {"id": "folio_myprofile-11.0.1099000000000151", "optional": [], "provides": [], "requires": ["settings 1.0"]}
@@ -109,7 +109,7 @@
 {"id": "folio_service-interaction-4.1.1099000000000290", "optional": [], "provides": [], "requires": ["servint 4.0"]}
 {"id": "folio_servicepoints-9.0.1099000000000065", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-acq-components-7.1.1099000000000442", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-authority-components-6.1.1099000000000183", "optional": [], "provides": [], "requires": ["authority-source-files 2.0", "browse-authorities 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.0"]}
+{"id": "folio_stripes-authority-components-6.1.1099000000000188", "optional": [], "provides": [], "requires": ["authority-source-files 2.0", "browse-authorities 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.0"]}
 {"id": "folio_stripes-authorization-components-2.0.1099000000000414", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-components-12.2.109900000000337", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-connect-9.2.1090000005", "optional": [], "provides": [], "requires": []}
