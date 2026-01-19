@@ -7,42 +7,75 @@ layout: null
 This guide will walk you through setting up your local development environment for the `mod-search` module using Docker Compose. 
 It includes setting up various services like API mock servers, OpenSearch, Kafka, PostgreSQL, and their respective UIs to aid during development.
 
+> **Note**: For comprehensive documentation about the Docker Compose setup, including multiple development workflows and troubleshooting, see [docker/README.md](docker/README.md).
+
 ### Prerequisites
 
 Before you begin, ensure you have the following installed:
-- [Docker](https://docs.docker.com/get-docker/)
+- [Docker](https://docs.docker.com/get-docker/) (with Docker Compose V2+)
 - [Docker Compose](https://docs.docker.com/compose/install/)
+- Java 21 or later
+- Maven 3.8+
 
-Make sure your [.env file](docker/.env) includes the necessary variables: `DB_USERNAME`, `DB_PASSWORD`, `DB_DATABASE`, `PGADMIN_PORT`, `PGADMIN_DEFAULT_EMAIL`, and `PGADMIN_DEFAULT_PASSWORD`.
+The [.env file](docker/.env) includes the necessary variables and can be customized as needed.
 
-### Setup Environment
+### Quick Start - Development Workflows
+
+The project now uses a **two-file Docker Compose setup** for better flexibility:
+- `infra-docker-compose.yml` - Infrastructure services only (recommended for development)
+- `app-docker-compose.yml` - Full stack including module instances
+
+#### Option 1: Infrastructure Only + Local Module (Recommended)
 
 1. **Start Services**
 
-   Navigate to the docker folder in the project and execute:
    ```shell
-   docker compose -f docker/docker-compose.yml up -d
+   docker compose -f docker/infra-docker-compose.yml up -d
    ```
 
 2. **Start the mod-search Application**
    
-   First of all the application should be packaged:
+   Run locally with Maven:
    ```shell
-      mvn clean package
+   mvn clean spring-boot:run
    ```
 
-   To run the `mod-search` application, you have two options:
-    - **Build and Run the Docker Image:**
-      ```shell
-      docker build -t dev.folio/mod-search .
-      docker run -p 8081:8081 -e "DB_HOST=postgres" -e "KAFKA_HOST=kafka" -e "ELASTICSEARCH_URL=http://elasticsearch:9200" dev.folio/mod-search
-      ```
-    - **Run the Application Directly:** You can also run the application directly if your development environment is set up with the necessary Java runtime. Execute the following command from the root of your project:
-      ```shell
-      java -jar target/mod-search-fat.jar
-      ```
+   Or build and run the JAR:
+   ```shell
+   mvn clean package -DskipTests
+   KAFKA_HOST=localhost KAFKA_PORT=29092 \
+   DB_HOST=localhost DB_PORT=5432 DB_DATABASE=okapi_modules DB_USERNAME=folio_admin DB_PASSWORD=folio_admin \
+   ELASTICSEARCH_URL=http://localhost:9200 \
+   java -jar target/mod-search-fat.jar
+   ```
 
-3. **Initialize Environment**
+#### Option 2: Spring Boot Docker Compose Integration
+
+Spring Boot 3.x can automatically manage Docker infrastructure:
+
+```shell
+mvn spring-boot:run -Dspring-boot.run.profiles=dev
+```
+
+Spring Boot will automatically start, wait for, and configure the infrastructure services.
+
+#### Option 3: Full Stack with Docker (Multiple Instances)
+
+To run the `mod-search` application in Docker with scalable instances:
+
+```shell
+# Build and start all services (infrastructure + module)
+mvn clean package -DskipTests
+docker compose -f docker/app-docker-compose.yml up -d
+
+# View logs
+docker compose -f docker/app-docker-compose.yml logs -f mod-search
+
+# Scale to 3 instances
+docker compose -f docker/app-docker-compose.yml up -d --scale mod-search=3
+```
+
+### Initialize Environment
 
    After starting the services and the mod-search application, invoke the following CURL command to post a tenant which will help in bringing up Kafka listeners and get indices created:
    ```shell
