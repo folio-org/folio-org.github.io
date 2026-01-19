@@ -4,7 +4,7 @@ layout: null
 
 # mod-settings
 
-Copyright (C) 2022-2025 The Open Library Foundation
+Copyright (C) 2022-2026 The Open Library Foundation
 
 This software is distributed under the terms of the Apache License,
 Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
@@ -188,7 +188,7 @@ If it's not defined you can specify it by passing
 
 ### Issue tracker
 
-See project [MODSET](https://issues.folio.org/browse/MODSET)
+See project [MODSET](https://folio-org.atlassian.net/browse/MODSET)
 at the [FOLIO issue tracker](https://dev.folio.org/guidelines/issue-tracker).
 
 ### Code of Conduct
