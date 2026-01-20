@@ -5040,6 +5040,13 @@
   {
     "apiDescription": "src/main/resources/swagger.api/queryTool.yaml",
     "apiType": "oas",
+    "methods": "get:operation/getFieldValues",
+    "name": "folio-query-tool-metadata",
+    "path": "/entity-types/{entityTypeId}/field-values"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/queryTool.yaml",
+    "apiType": "oas",
     "methods": "patch:operation/updateEntityTypeUsedBy",
     "name": "folio-query-tool-metadata",
     "path": "/entity-types/{entityTypeId}/used-by"
