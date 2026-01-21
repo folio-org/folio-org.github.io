@@ -160,19 +160,19 @@ and in the [Guidelines for FOLIO issue tracker](/guidelines/issue-tracker/#linki
 - There are now many channels. Browse the list via the Slack application, to review and join any appropriate ones.
   Some are not public, so you will need to be invited.
   Some relevant channels for developers are:
-  - `#support` -- Any topic needing assistance.
-  - `#general` -- Community-wide general stuff. Use other channels for development topics.
-  - `#development` -- The main development area.
-  - `#releases` -- Discussion of quarterly release preparation, and announcement of regular module releases.
+  - `#folio-support` -- Any topic needing assistance.
+  - `#folio-general` -- Community-wide general FOLIO stuff. Use other channels for development topics.
+  - `#folio-development` -- The main development area.
+  - `#folio-releases` -- Discussion of quarterly release preparation, and announcement of regular module releases.
   - `#pull-requests` -- A place to request reviews on pull requests.
-  - `#hosted-reference-envs` -- Issues with the [reference environments](/guides/automation/#software-build-pipeline) automated builds.
+  - `#folio-hosted-reference-envs` -- Issues with the [reference environments](/guides/automation/#software-build-pipeline) automated builds.
   - `#raml-module-builder` -- Specific discussion for RMB development.
-  - `#stripes` -- Specific discussion for front-end development.
-  - `#devops` -- Assistance with FOLIO infrastructure, requests to add new GitHub Team members, etc.
-  - `rancher-support` (was previously known as `#scratch-environments`) -- Assistance with the team-specific [Rancher developer scratch environments](/faqs/how-to-get-started-with-rancher/).
+  - `#folio-stripes` -- Specific discussion for front-end development.
+  - `#folio-devops` -- Assistance with FOLIO infrastructure, requests to add new GitHub Team members, etc.
+  - `#folio-rancher-support` (was previously known as `#scratch-environments`) -- Assistance with the team-specific [Rancher developer scratch environments](/faqs/how-to-get-started-with-rancher/).
   - `#folio-ci` -- Notifications from the Jenkins CI. See usage [notes](/guides/navigate-commits/). Mute this channel and visit when needed.
 
-- Use `@mentions` with care. This is especially important on broad channels such as `#general`, as using `@channel` there will send notifications to many hundreds of people.
+- Use `@mentions` with care. This is especially important on broad channels such as `#folio-general`, as using `@channel` there will send notifications to many thousands of people.
 
 - Distinguish different Slack workspaces using
   Sidebar Themes:

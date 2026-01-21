@@ -91,7 +91,7 @@ Update git project configuration (pom.xml or package.json), descriptors, permiss
 
 <a id="replaces"></a>For back-end modules: In the ModuleDescriptor, utilise the "[replaces](https://github.com/folio-org/okapi/blob/177a60e5de9cf37e7fdd1c0fa9ecf00f72c481e9/okapi-core/src/main/raml/ModuleDescriptor.json#L17)" feature.
 See an [example](https://github.com/folio-org/mod-inventory-storage/pull/765).
-If unsure then ask on Slack #development for assistance.
+If unsure then ask on Slack #folio-development for assistance.
 
 ## Restore Jenkinsfile
 

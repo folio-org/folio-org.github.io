@@ -18,7 +18,7 @@ The wiki page [Release process in Jira](https://wiki.folio.org/display/REL/Relea
 There is also a "Release board" to assess the current state.
 
 The preparation for each release has a dedicated [Slack channel](/guidelines/which-forum/#slack)
-(`#releases`). There are various planning documents and spreadsheets pinned there.
+(`#folio-releases`). There are various planning documents and spreadsheets pinned there.
 Notification of each individual module release is sent to this channel, as well as other important announcements and co-ordination.
 
 The cut-off dates for module releases that are to be included, are also listed in those spreadsheets.

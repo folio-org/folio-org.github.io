@@ -16,7 +16,7 @@ For contributions to any other repository they will need to "fork" it to their p
 
 For new developers (i.e. not yet a [member](https://github.com/orgs/folio-org/people) of "folio-org" organization) we ask that a project manager (see [Team and module responsibility matrix](https://folio-org.atlassian.net/wiki/x/kIBP)) or at least a known existing developer, makes this request.
 
-They need to either request on the #devops Slack channel, or [raise a FOLIO DevOps Jira ticket](/faqs/how-to-raise-devops-ticket/#general-folio-devops). Especially do the latter with a group of new people.
+They need to either request on the #folio-devops Slack channel, or [raise a FOLIO DevOps Jira ticket](/faqs/how-to-raise-devops-ticket/#general-folio-devops). Especially do the latter with a group of new people.
 
 Please do not clone old tickets. It just tends to make a mess by applying old settings, and re-sending irrelevant old notifications.
 

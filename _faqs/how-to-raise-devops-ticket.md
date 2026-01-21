@@ -11,7 +11,7 @@ faqOrder: 3
 
 The main "FOLIO DevOps" team attends to the general development operations and infrastructure.
 
-For general assistance, use the [Slack channel](/guidelines/which-forum/#slack) `#devops`.
+For general assistance, use the [Slack channel](/guidelines/which-forum/#slack) `#folio-devops`.
 
 For anything beyond simple assistance, please create a Jira ticket.
 The DevOps teams are small and busy, so requests will need to be queued (do not expect immediate attention).
@@ -42,7 +42,7 @@ The "Kitfox" team attends to the Rancher developer scratch environments.
 
 Be familiar with the FAQ [How to get started with Rancher environment](/faqs/how-to-get-started-with-rancher/).
 
-For general assistance, use the [Slack channel](/guidelines/which-forum/#slack) `#rancher-support` and your team-specific channel.
+For general assistance, use the [Slack channel](/guidelines/which-forum/#slack) `#folio-rancher-support` and your team-specific channel.
 
 For anything beyond simple assistance, please create a Jira ticket.
 The DevOps teams are small and busy, so requests will need to be queued.
