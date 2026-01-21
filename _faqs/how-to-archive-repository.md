@@ -31,7 +31,7 @@ The existing name must be retained. Its artifacts are utilised in past releases.
 Create a Jira ticket for the project of this module, so that everyone can be aware of what happened to the repository.
 
 Certain operations will require Admin access to the repository.
-Please complete all tasks that you have sufficient permissions for, then ask at Slack #devops channel.
+Please complete all tasks that you have sufficient permissions for, then ask at Slack #folio-devops channel.
 Better still, ensure that the relevant team that will be doing the work, does have Admin access.
 
 ## Ensure not in a Platform

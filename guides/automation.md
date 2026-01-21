@@ -68,7 +68,7 @@ DevOps will not accept requests for manual rebuilds of either environment unless
 If a team needs to confirm an updated module, then await the next scheduled 12-hourly run.
 
 If there is an **urgent** need to re-run a build outside of the normal automation schedule (explained below),
-then co-ordinate that on the Slack channel #hosted-reference-envs
+then co-ordinate that on the Slack channel #folio-hosted-reference-envs
 (remember that there are other people utilising these systems).
 
 <a id="install-json"></a>Also, as [explained](#platform-hourly-build) below, before doing this wait for the automated hourly build of the “snapshot” branch of the Stripes Platform and ensure that the expected module versions are included
@@ -77,7 +77,7 @@ Correlate the "build number" with that shown in the output log of the project's 
 
 ### Troubleshooting
 
-Failures with the main builds are automatically sent to the `#hosted-reference-envs` Slack channel.
+Failures with the main builds are automatically sent to the `#folio-hosted-reference-envs` Slack channel.
 
 Follow its links to the Jenkins job output.
 Refer to the FAQs

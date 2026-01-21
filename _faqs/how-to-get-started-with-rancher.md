@@ -24,10 +24,10 @@ Useful links:
 Before commencing become familiar with this FAQ.
 Some teams also provide [further general instructions](/guides/run-local-folio/#scratch-environments-rancher-docker).
 
-For general assistance use the [Slack channel](/guidelines/which-forum/#slack) `#rancher-support` and help via your team-specific channel.
+For general assistance use the [Slack channel](/guidelines/which-forum/#slack) `#folio-rancher-support` and help via your team-specific channel.
 
 To raise Jira tickets related to Rancher scratch environments, refer to the [FAQ](/faqs/how-to-raise-devops-ticket/#rancher-scratch-environments).
-This is needed when contacting the `#rancher-support` Slack channel.
+This is needed when contacting the `#folio-rancher-support` Slack channel.
 
 See the Wiki [How to work with Rancher environments](https://folio-org.atlassian.net/wiki/spaces/FOLIJET/pages/1396559/How+to+work+with+Rancher+environments).
 

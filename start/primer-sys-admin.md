@@ -22,4 +22,4 @@ The [folio-install](https://github.com/folio-org/folio-install) repository provi
 The [Systems Operations and Management SIG](https://wiki.folio.org/display/SYSOPS/Systems+Operations+and+Management+SIG+Home) (SysOps special interest group)
 has various notes about deployment environments, orchestration, hosting environments, data migration, and notes about test installations by SIG members.
 
-The [Slack](/guidelines/which-forum/#slack) `#sys-ops` and `#devops` channels.
+The [Slack](/guidelines/which-forum/#slack) `#folio-sys-ops` and `#folio-devops` channels.

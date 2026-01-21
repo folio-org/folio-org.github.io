@@ -64,7 +64,7 @@ This enables automated [linking](/guidelines/issue-tracker/#linking) from Jira.
 
 * Clearly mark the pull request as "`Do not merge`" (i.e. in PR title and description, by Label, or both) until all related PRs are ready.
 * Identify modules dependent upon the changed interface:
-  * Using the relevant "Release planning spreadsheet". These are pinned in the [Slack](/guidelines/which-forum/#slack) `#releases` channel.
+  * Using the relevant "Release planning spreadsheet". These are pinned in the [Slack](/guidelines/which-forum/#slack) `#folio-releases` channel.
   * Using python script for checking against an existing environment, e.g. [interface-dependents](https://github.com/folio-org/folio-tools/tree/master/interface-dependents).
 * Are there Jira issues in the relevant project for each dependent module?
   * Do they contain the appropriate level of detail? Which endpoints/schemas changed, etc.

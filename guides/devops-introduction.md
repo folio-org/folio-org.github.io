@@ -44,11 +44,11 @@ Introduction to the Community and [Collaboration tools](/community/#collaboratio
 
 The main Slack channels:
 
-* **#devops-internal** -- For our group.
-* **#devops** -- For the wider community to ask for DevOps assistance.
-* **#hosted-reference-envs** -- For requests and trouble with the regularly-built reference environments.
-* **#support** and **#development** -- We encourage developers to seek community support here, leaving the #devops channel for specific DevOps issues.
-* **#releases** -- For release announcements.
+* **#folio-devops-internal** -- For our group.
+* **#folio-devops** -- For the wider community to ask for DevOps assistance.
+* **#folio-hosted-reference-envs** -- For requests and trouble with the regularly-built reference environments.
+* **#folio-support** and **#development** -- We encourage developers to seek community support here, leaving the #devops channel for specific DevOps issues.
+* **#folio-releases** -- For release announcements.
 
 ## Infrastructure
 
@@ -67,7 +67,7 @@ We monitor those "Reference environment" builds, triage problems, and try to dir
 
 We try to [limit](/guides/automation/#off-schedule-rebuilds) out-of-band requests to manually rebuild these.
 Many other people utilise these systems, so try to limit disruption.
-See Slack #hosted-reference-envs channel.
+See Slack #folio-hosted-reference-envs channel.
 People need to ask there and allow time for others to be aware.
 
 To determine the cause of failed builds, search the [Jenkins output logfile](/faqs/how-to-investigate-jenkins-logs/).

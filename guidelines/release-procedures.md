@@ -46,7 +46,7 @@ after [Verify increment POM version mainline](#verify-increment-pom-version-main
 
 [Jira](https://folio-org.atlassian.net/jira): Mark as released. Add next versions.
 
-[Slack](https://folio-project.slack.com/): Announce on `#releases`
+[Slack](https://folio-project.slack.com/): Announce on `#folio-releases`
 
 Create a long-lived branch for that major/feature version:
 ```
@@ -72,7 +72,7 @@ Log in to Jenkins and run your jobs at [Jenkins](https://jenkins-aws.indexdata.c
 
 [Jira](https://folio-org.atlassian.net/jira): Mark as released. Add next versions.
 
-[Slack](https://folio-project.slack.com/): Announce on `#releases`
+[Slack](https://folio-project.slack.com/): Announce on `#folio-releases`
 
 ### Bug fix releases
 
@@ -273,7 +273,7 @@ If this was a bugfix release, and the platforms need to be updated while waiting
 
 ### Announce
 
-Send a note to #releases channel on Slack.
+Send a note to #folio-releases channel on Slack.
 
 ## Stripes-based modules
 
