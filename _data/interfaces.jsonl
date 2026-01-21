@@ -13,7 +13,7 @@
 {"id": "edge-orders-3.3.0-SNAPSHOT.105", "optional": ["acquisition-methods 1.0", "acquisitions-units 1.1", "configuration 2.0", "contributor-name-types 1.3", "custom-fields 3.0", "ebsconet 2.0", "finance.budgets 2.0", "finance.expense-classes 3.0", "finance.funds 3.0", "gobi 1.12", "identifier-types 1.2", "locations 3.1", "login 5.0 6.0 7.0 7.3", "material-types 2.2", "mosaic 1.0", "order-templates 1.0", "organizations.organizations 1.2", "users 16.4"], "provides": [], "requires": []}
 {"id": "edge-patron-5.4.0-SNAPSHOT.149", "optional": [], "provides": [], "requires": ["circulation 9.5 10.0 11.0 12.0 13.0 14.0", "login 5.0 6.0 7.0", "patron 6.6"]}
 {"id": "edge-resolver-1.0.0-SNAPSHOT.10", "optional": [], "provides": [], "requires": ["users-bl 3.0"]}
-{"id": "edge-rtac-3.1.0-SNAPSHOT.119", "optional": [], "provides": [], "requires": ["login 7.3", "rtac-batch 1.1"]}
+{"id": "edge-rtac-3.1.0-SNAPSHOT.120", "optional": [], "provides": [], "requires": ["login 7.3", "rtac-batch 1.1"]}
 {"id": "edge-search-srs-1.0.0-SNAPSHOT.7", "optional": [], "provides": [], "requires": ["login 5.0 6.0 7.0"]}
 {"id": "edge-sip2-3.5.0-SNAPSHOT.206", "optional": [], "provides": [], "requires": ["circulation 14.6", "configuration 2.0", "feesfines 19.1", "login 7.3", "search-inventory 1.0", "users 16.4"]}
 {"id": "edge-users-2.2.0-SNAPSHOT.10", "optional": [], "provides": [], "requires": ["users 16.0 16.4"]}
