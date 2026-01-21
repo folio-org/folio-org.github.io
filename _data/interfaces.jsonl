@@ -106,7 +106,7 @@
 {"id": "folio_requests-mediated-4.0.1099000000000185", "optional": [], "provides": [], "requires": ["circulation 14.4", "circulation-bff-requests 1.0", "request-preference-storage 2.0", "requests-mediated 2.0", "requests-mediated-actions 1.0", "users 16.3"]}
 {"id": "folio_search-5.1.100000121", "optional": [], "provides": [], "requires": ["codex 3.0"]}
 {"id": "folio_serials-management-2.1.1099000000000983", "optional": ["acquisitions-units 1.1", "holdings-storage 6.0 7.0 8.0", "identifier-types 1.2", "locations 3.0", "material-types 2.2", "order-lines 3.0 4.0", "orders 12.1 13.0", "organizations 2.0", "pieces 3.0", "titles 1.2"], "provides": [], "requires": ["serials-management 1.0 2.0"]}
-{"id": "folio_service-interaction-4.1.1099000000000296", "optional": [], "provides": [], "requires": ["servint 4.0"]}
+{"id": "folio_service-interaction-4.1.1099000000000299", "optional": [], "provides": [], "requires": ["servint 4.0"]}
 {"id": "folio_servicepoints-9.0.1099000000000065", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-acq-components-7.1.1099000000000442", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-authority-components-6.1.1099000000000192", "optional": [], "provides": [], "requires": ["authority-source-files 2.0", "browse-authorities 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.0"]}
@@ -198,7 +198,7 @@
 {"id": "mod-ldp-1.1.4-SNAPSHOT.51", "optional": [], "provides": ["ldp-query 1.2"], "requires": []}
 {"id": "mod-licenses-6.3.0-SNAPSHOT.295", "optional": ["erm 7.0", "organizations.organizations 1.0"], "provides": ["_tenant 1.2", "_timer 1.0", "dashboard 1.0", "licenses 6.3"], "requires": []}
 {"id": "mod-linked-data-2.0.0-SNAPSHOT.424", "optional": [], "provides": ["_tenant 2.0", "linked-data 2.0", "linked-data-profile 1.0"], "requires": ["authority-source-files 2.2", "search-authorities 1.0", "search-inventory 1.0", "settings 1.1", "source-storage-records 3.2 3.3", "specification-storage 1.0"]}
-{"id": "mod-linked-data-import-1.0.0-SNAPSHOT.59", "optional": [], "provides": ["_tenant 2.0", "linked-data-import 1.0"], "requires": ["linked-data 2.0"]}
+{"id": "mod-linked-data-import-1.0.0-SNAPSHOT.60", "optional": [], "provides": ["_tenant 2.0", "linked-data-import 1.0"], "requires": ["linked-data 2.0"]}
 {"id": "mod-lists-3.2.0-SNAPSHOT.2033", "optional": [], "provides": ["_tenant 2.0", "lists 2.0"], "requires": ["entity-types 2.0", "fqm-query 2.1", "login 7.0", "permissions 5.3", "users 16.0"]}
 {"id": "mod-login-7.14.0-SNAPSHOT.170", "optional": ["authtoken 2.1", "authtoken2 1.1", "configuration 2.0"], "provides": ["_tenant 2.0", "login 7.3"], "requires": ["user-tenants 1.0", "users 15.4 16.0"]}
 {"id": "mod-login-keycloak-3.1.0-SNAPSHOT.157", "optional": ["configuration 2.0"], "provides": ["_tenant 2.0", "authtoken 2.1", "authtoken2 1.1", "login 7.3"], "requires": ["users 16.1", "users-keycloak 1.0"]}
