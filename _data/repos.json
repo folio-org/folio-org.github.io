@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedDateTime": "2026-01-21T04:13:47.157360+00:00"
+    "generatedDateTime": "2026-01-22T01:40:59.280910+00:00"
   },
   "repos": [
     {
@@ -29,9 +29,10 @@
       "description": "Tools for performing various acquisition-related operations",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "acquisitions-tools",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "other",
       "snippetIntro": ""
     },
@@ -42,9 +43,10 @@
       "description": "Application Descriptor Repository for the FOLIO Acquisitions application",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-acquisitions",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -59,9 +61,10 @@
       "description": "Application Descriptor Repository for the FOLIO Agreements application",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-agreements",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -76,9 +79,10 @@
       "description": "Application descriptor repository for app-authority-records.",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-authority-records",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -93,9 +97,10 @@
       "description": "Application Descriptor Repository for the FOLIO Bulk edit application",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-bulk-edit",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -123,9 +128,10 @@
       "description": null,
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-consortia",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -140,9 +146,10 @@
       "description": null,
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-consortia-manager",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -157,9 +164,10 @@
       "description": null,
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-dashboard",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -168,15 +176,16 @@
       ]
     },
     {
-      "countBranches": 4,
-      "countOpenPullRequests": 0,
+      "countBranches": 5,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Application Descriptor Repository for mod-data-export",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-data-export",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -204,9 +213,10 @@
       "description": null,
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-dcb",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -221,9 +231,10 @@
       "description": "Application Descriptor Repository for the FOLIO Ebsconet integration",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-ebsconet",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -238,9 +249,10 @@
       "description": null,
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-edge-complete",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -255,9 +267,10 @@
       "description": null,
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-edge-locate",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -272,9 +285,10 @@
       "description": "Application descriptor repository for app-eholdings.",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-eholdings",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -289,9 +303,10 @@
       "description": null,
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-erm-usage",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -306,9 +321,10 @@
       "description": "Application descriptor repository for the FOLIO finc application",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-finc",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -323,9 +339,10 @@
       "description": "Application descriptor for FQM",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-fqm",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -340,9 +357,10 @@
       "description": "Application Descriptor Repository for the FOLIO Gobi integration",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-gobi",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -357,9 +375,10 @@
       "description": null,
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-inn-reach",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -374,9 +393,10 @@
       "description": "Application Descriptor Repository for the FOLIO Licenses application",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-licenses",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -385,15 +405,16 @@
       ]
     },
     {
-      "countBranches": 14,
-      "countOpenPullRequests": 2,
+      "countBranches": 15,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Application Descriptor Repository for Linked Data application.",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-linked-data",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -408,9 +429,10 @@
       "description": "Application descriptor for Lists",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-lists",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -419,15 +441,16 @@
       ]
     },
     {
-      "countBranches": 13,
-      "countOpenPullRequests": 1,
+      "countBranches": 14,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Application descriptor repository for app-marc-migrations.",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-marc-migrations",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -442,9 +465,10 @@
       "description": "Application descriptor repository for app-marc-storage.",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-marc-storage",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -459,9 +483,10 @@
       "description": "Application Descriptor Repository for the FOLIO Mosaic integration",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-mosaic",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -476,9 +501,10 @@
       "description": "Notification application",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-notification",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -493,9 +519,10 @@
       "description": "Application Descriptor Repository for the FOLIO OA application",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-oa",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -510,9 +537,10 @@
       "description": "Application Descriptor Repository for the FOLIO OAI-PMH application",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-oai-pmh",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -521,15 +549,16 @@
       ]
     },
     {
-      "countBranches": 108,
-      "countOpenPullRequests": 2,
+      "countBranches": 109,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-platform-complete",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -544,9 +573,10 @@
       "description": "Application with all FOLIO modules included",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-platform-full",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -560,9 +590,10 @@
       "description": "Application descriptor repository for a minimal FOLIO platform installation",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-platform-minimal",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -577,9 +608,10 @@
       "description": "Application descriptor repository for a quickMARC application.",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-quick-marc",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -594,9 +626,10 @@
       "description": null,
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-reading-room",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -611,9 +644,10 @@
       "description": " Eureka app for the FOLIO reporting facility",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-reporting",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -628,9 +662,10 @@
       "description": "FOLIO ECS requests application for the Eureka platform",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-requests-ecs",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -645,9 +680,10 @@
       "description": "FOLIO Mediated requests application for the Eureka platform",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-requests-mediated",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -662,9 +698,10 @@
       "description": "FOLIO Mediated requests application for the Eureka platform (UI part)",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-requests-mediated-ui",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -679,9 +716,10 @@
       "description": "Application Descriptor Repository for the FOLIO RTAC application.",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-rtac",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -696,9 +734,10 @@
       "description": "Application Descriptor Repository for the FOLIO RTAC Cache application.",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-rtac-cache",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -713,9 +752,10 @@
       "description": "Application descriptor repository for app-search.",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-search",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -730,9 +770,10 @@
       "description": "Application Descriptor Repository for the FOLIO Serials Management application.",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-serials-management",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -747,9 +788,10 @@
       "description": "Application Descriptor Repository for the FOLIO Service interaction application",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-service-interaction",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
@@ -764,9 +806,10 @@
       "description": "Eureka app for the FOLIO Z39.50 server",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "app-z3950",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "app",
       "snippetIntro": ""
     },
@@ -829,6 +872,9 @@
       "workflows": [
         "api-schema-lint.yml",
         "build-dependants.yml"
+      ],
+      "workflowsFolio": [
+        "api-schema-lint.yml"
       ]
     },
     {
@@ -857,6 +903,7 @@
       "description": "Library with common utilities for data-import modules",
       "docDirName": null,
       "hasTranslations": false,
+      "hintRmb": true,
       "isMaven": true,
       "name": "data-import-utils",
       "org": "folio-org",
@@ -1077,8 +1124,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 18,
-      "countOpenPullRequests": 6,
+      "countBranches": 17,
+      "countOpenPullRequests": 5,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -1285,7 +1332,7 @@
     {
       "apiTypes": "OAS",
       "countBranches": 12,
-      "countOpenPullRequests": 1,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": " Edge API for RTAC (RealTime Availability Check)",
       "docDirName": null,
@@ -1310,8 +1357,8 @@
       ]
     },
     {
-      "countBranches": 23,
-      "countOpenPullRequests": 0,
+      "countBranches": 24,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "3M Standard Interchange Protocol (SIP) support in FOLIO",
       "docDirName": null,
@@ -1521,6 +1568,7 @@
       "description": "Store and maintain custom fields",
       "docDirName": null,
       "hasTranslations": false,
+      "hintRmb": true,
       "isMaven": true,
       "name": "folio-custom-fields",
       "org": "folio-org",
@@ -1674,15 +1722,16 @@
       "snippetIntro": "<p>A collection of runbooks for FOLIO installation.</p>"
     },
     {
-      "countBranches": 139,
+      "countBranches": 142,
       "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "The set of integration tests, based on karate framework",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "folio-integration-tests",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "other",
       "snippetIntro": "<p>This project is the set of integration tests based on <a href='https://github.com/karatelabs/karate'>karate framework</a></p>"
     },
@@ -1729,8 +1778,8 @@
       "snippetIntro": "<p>Utilities for data import modules interaction with Kafka</p>"
     },
     {
-      "countBranches": 18,
-      "countOpenPullRequests": 1,
+      "countBranches": 19,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
       "docDirName": "docs",
@@ -1744,6 +1793,9 @@
         "do-docker.yml",
         "keycloak-upgrade-gate.yml",
         "keycloak-upgrade-instructions.yml"
+      ],
+      "workflowsFolio": [
+        "do-docker.yml@v1"
       ]
     },
     {
@@ -1775,6 +1827,9 @@
       "workflows": [
         "do-docker.yml",
         "test.yml"
+      ],
+      "workflowsFolio": [
+        "do-docker.yml@v1"
       ]
     },
     {
@@ -1784,6 +1839,7 @@
       "description": "Liquibase utilities",
       "docDirName": null,
       "hasTranslations": false,
+      "hintRmb": true,
       "isMaven": true,
       "name": "folio-liquibase-util",
       "org": "folio-org",
@@ -1806,11 +1862,11 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 16,
+      "countBranches": 15,
       "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": null,
-      "docDirName": "doc",
+      "docDirName": "docs",
       "hasTranslations": false,
       "isMaven": true,
       "name": "folio-module-sidecar",
@@ -1826,14 +1882,15 @@
       "description": "Provides a gatling tests for performing evaluation of sidecar",
       "docDirName": null,
       "hasTranslations": false,
+      "isMaven": true,
       "name": "folio-module-sidecar-performance-tests",
       "org": "folio-org",
-      "repoLanguageHint": "other",
+      "repoLanguageHint": "java",
       "repoType": "other",
       "snippetIntro": ""
     },
     {
-      "countBranches": 4,
+      "countBranches": 5,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Website for FOLIO open source development dev.folio.org",
@@ -1968,12 +2025,13 @@
       "snippetIntro": "<p><code>folio-secure-store-proxy</code> is a Quarkus-based service designed to act as a secure proxy for accessing secrets stored in various backend systems like AWS Systems Manager Parameter Store (SSM) or HashiCorp Vault. It is intended for use within the FOLIO platform to centralize and secure access to sensitive configuration data. This project uses <a href='https://quarkus.io/'>Quarkus</a>.</p>"
     },
     {
-      "countBranches": 4,
-      "countOpenPullRequests": 1,
+      "countBranches": 5,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Library with general purpose classes to help with FOLIO backend service development",
       "docDirName": null,
       "hasTranslations": false,
+      "hintRmb": true,
       "isMaven": true,
       "name": "folio-service-tools",
       "org": "folio-org",
@@ -1994,6 +2052,7 @@
       "hasTranslations": false,
       "hintOas": true,
       "isMaven": true,
+      "isSpringway": true,
       "name": "folio-spring-support",
       "notFoundModuleDescriptor": true,
       "org": "folio-org",
@@ -2169,9 +2228,6 @@
       "snippetIntro": "",
       "workflows": [
         "ui.yml"
-      ],
-      "workflowsFolio": [
-        "ui.yml@v1"
       ]
     },
     {
@@ -2258,6 +2314,9 @@
       "snippetIntro": "",
       "workflows": [
         "maven.yaml"
+      ],
+      "workflowsFolio": [
+        "maven.yaml@v1"
       ]
     },
     {
@@ -2296,8 +2355,8 @@
       ]
     },
     {
-      "countBranches": 9,
-      "countOpenPullRequests": 3,
+      "countBranches": 11,
+      "countOpenPullRequests": 4,
       "defaultBranch": "master",
       "description": "A library for converting MARC records to Linked Data Graphs and vice versa.",
       "docDirName": null,
@@ -2529,8 +2588,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 31,
-      "countOpenPullRequests": 5,
+      "countBranches": 32,
+      "countOpenPullRequests": 7,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -2609,7 +2668,7 @@
     {
       "apiTypes": "RAML",
       "countBranches": 44,
-      "countOpenPullRequests": 8,
+      "countOpenPullRequests": 7,
       "defaultBranch": "master",
       "description": "FOLIO mod-circulation",
       "docDirName": "doc",
@@ -2951,7 +3010,7 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 14,
+      "countBranches": 11,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
@@ -3128,7 +3187,7 @@
     {
       "apiTypes": "OAS",
       "countBranches": 25,
-      "countOpenPullRequests": 2,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": null,
       "docDirName": "doc",
@@ -3370,8 +3429,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 1,
-      "countOpenPullRequests": 0,
+      "countBranches": 2,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Knowledge base for amsl's finc-config module. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
@@ -3400,8 +3459,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 54,
-      "countOpenPullRequests": 6,
+      "countBranches": 55,
+      "countOpenPullRequests": 8,
       "defaultBranch": "master",
       "description": "FOLIO Query Machine back-end module",
       "docDirName": "docs",
@@ -3458,8 +3517,8 @@
       ]
     },
     {
-      "countBranches": 8,
-      "countOpenPullRequests": 0,
+      "countBranches": 9,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "FOLIO module for executing GraphQL queries",
       "docDirName": "doc",
@@ -3473,8 +3532,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 1,
-      "countOpenPullRequests": 0,
+      "countBranches": 2,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Manage walk-in contracts. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
@@ -3588,8 +3647,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 16,
-      "countOpenPullRequests": 2,
+      "countBranches": 17,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Provides different update schemes for populating a FOLIO Inventory Storage",
       "docDirName": "doc",
@@ -3614,7 +3673,7 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 41,
+      "countBranches": 42,
       "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Invoice business logic",
@@ -3720,8 +3779,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 11,
-      "countOpenPullRequests": 3,
+      "countBranches": 12,
+      "countOpenPullRequests": 4,
       "defaultBranch": "master",
       "description": "Manage data graph of FOLIO library's catalog",
       "docDirName": null,
@@ -4116,7 +4175,7 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 112,
+      "countBranches": 113,
       "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Orders business logic module",
@@ -4647,7 +4706,7 @@
     },
     {
       "countBranches": 22,
-      "countOpenPullRequests": 1,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -5230,8 +5289,8 @@
       "snippetIntro": "<p>The Jenkins Pipelines Shared Library for FOLIO is designed to facilitate and streamline the management of Jenkins pipelines. It provides reusable functions and scripts, aimed at automating CI/CD workflows for the FOLIO platform. This repository includes resources for Jenkins pipeline configurations, Jenkins plugin management, and integration with other components of the FOLIO ecosystem.</p>"
     },
     {
-      "countBranches": 163,
-      "countOpenPullRequests": 24,
+      "countBranches": 165,
+      "countOpenPullRequests": 25,
       "defaultBranch": "master",
       "description": "Complete set of Stripes modules for FOLIO",
       "docDirName": "doc",
@@ -5351,8 +5410,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 15,
-      "countOpenPullRequests": 3,
+      "countBranches": 17,
+      "countOpenPullRequests": 5,
       "defaultBranch": "master",
       "description": "Framework allowing easy module creation based on RAML files",
       "docDirName": "doc",
@@ -5531,8 +5590,8 @@
       ]
     },
     {
-      "countBranches": 25,
-      "countOpenPullRequests": 6,
+      "countBranches": 26,
+      "countOpenPullRequests": 7,
       "defaultBranch": "main",
       "description": "Command line interface for creating, building, and testing Stripes UI modules.",
       "docDirName": "doc",
@@ -5563,7 +5622,7 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 60,
+      "countBranches": 61,
       "countOpenPullRequests": 14,
       "defaultBranch": "main",
       "description": "A component library for Stripes",
@@ -5719,7 +5778,7 @@
       ]
     },
     {
-      "countBranches": 5,
+      "countBranches": 6,
       "countOpenPullRequests": 2,
       "defaultBranch": "main",
       "description": "Orchestrate UI modules in a module-federation setup",
@@ -5979,7 +6038,7 @@
     },
     {
       "countBranches": 10,
-      "countOpenPullRequests": 2,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "FOLIO Technical Council Documents",
       "docDirName": null,
@@ -6089,7 +6148,7 @@
     },
     {
       "countBranches": 94,
-      "countOpenPullRequests": 1,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -6280,8 +6339,8 @@
       ]
     },
     {
-      "countBranches": 38,
-      "countOpenPullRequests": 1,
+      "countBranches": 39,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "UI module: data export managing",
       "docDirName": null,
@@ -6435,8 +6494,8 @@
       ]
     },
     {
-      "countBranches": 15,
-      "countOpenPullRequests": 0,
+      "countBranches": 16,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -6454,8 +6513,8 @@
       ]
     },
     {
-      "countBranches": 3,
-      "countOpenPullRequests": 0,
+      "countBranches": 4,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "UI finc-config module. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
@@ -6570,8 +6629,8 @@
       ]
     },
     {
-      "countBranches": 175,
-      "countOpenPullRequests": 24,
+      "countBranches": 174,
+      "countOpenPullRequests": 23,
       "defaultBranch": "master",
       "description": "UI module for administrating instances",
       "docDirName": null,
@@ -6667,7 +6726,7 @@
       ]
     },
     {
-      "countBranches": 81,
+      "countBranches": 82,
       "countOpenPullRequests": 7,
       "defaultBranch": "master",
       "description": null,
@@ -6686,8 +6745,8 @@
       ]
     },
     {
-      "countBranches": 86,
-      "countOpenPullRequests": 2,
+      "countBranches": 85,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -6726,8 +6785,8 @@
       ]
     },
     {
-      "countBranches": 63,
-      "countOpenPullRequests": 10,
+      "countBranches": 64,
+      "countOpenPullRequests": 11,
       "defaultBranch": "master",
       "description": "MARC Authorities module",
       "docDirName": null,
@@ -7049,8 +7108,8 @@
       ]
     },
     {
-      "countBranches": 4,
-      "countOpenPullRequests": 2,
+      "countBranches": 5,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Finder plugin for finc metadata collections. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
@@ -7068,8 +7127,8 @@
       ]
     },
     {
-      "countBranches": 4,
-      "countOpenPullRequests": 2,
+      "countBranches": 5,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Finder plugin for finc metadata sources. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
@@ -7473,8 +7532,8 @@
       ]
     },
     {
-      "countBranches": 8,
-      "countOpenPullRequests": 2,
+      "countBranches": 7,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "UX Module for Serials Management",
       "docDirName": null,
@@ -7494,8 +7553,8 @@
       ]
     },
     {
-      "countBranches": 7,
-      "countOpenPullRequests": 1,
+      "countBranches": 6,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
