@@ -853,10 +853,13 @@
   {
     "config": {
       "oas": [
-        "src/main/resources/swagger.api/mod-entities-links.yaml"
+        "src/main/resources/swagger.api/mod-entities-links.yaml",
+        "target/api/openapi/tenant-settings.yaml"
       ],
       "raml": [],
-      "upload": []
+      "upload": [
+        "mod-entities-links.html"
+      ]
     },
     "metadata": {
       "apiTypes": [
