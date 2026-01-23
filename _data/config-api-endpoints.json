@@ -1624,6 +1624,30 @@
     "path": "/authn/update"
   },
   {
+    "apiDescription": "target/api/openapi/tenant-settings.yaml",
+    "apiType": "oas",
+    "interface": "authorities-config 1.0",
+    "methods": "get:operation/getConfigGroups",
+    "name": "mod-entities-links",
+    "path": "/authorities/config/groups"
+  },
+  {
+    "apiDescription": "target/api/openapi/tenant-settings.yaml",
+    "apiType": "oas",
+    "interface": "authorities-config 1.0",
+    "methods": "get:operation/getGroupSettings",
+    "name": "mod-entities-links",
+    "path": "/authorities/config/groups/{groupId}/settings"
+  },
+  {
+    "apiDescription": "target/api/openapi/tenant-settings.yaml",
+    "apiType": "oas",
+    "interface": "authorities-config 1.0",
+    "methods": "patch:operation/updateGroupSetting",
+    "name": "mod-entities-links",
+    "path": "/authorities/config/groups/{groupId}/settings/{key}"
+  },
+  {
     "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
     "interface": "authority-note-types 1.0",
