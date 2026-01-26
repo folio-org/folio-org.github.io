@@ -52,6 +52,8 @@ The [version number](/guidelines/contributing/#version-numbers) of a module uses
 
 These are explained at [Permissions in Stripes and FOLIO](https://github.com/folio-org/stripes-core/blob/master/doc/permissions.md) (with some further links via this [FAQ](/faqs/explain-permissions-system/)).
 
+FOLIO has a [Permissions naming convention](https://folio-org.atlassian.net/wiki/spaces/FOLIJET/pages/156368925/Permissions+naming+convention).
+
 Permissions are defined in each module's ModuleDescriptor.
 
 The naming scheme is a faceted dot-separated string, with the delimited terms as hyphen-separated words.
