@@ -110,7 +110,7 @@
 {"id": "folio_servicepoints-9.0.1099000000000065", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-acq-components-7.1.1099000000000454", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-authority-components-6.1.1099000000000192", "optional": [], "provides": [], "requires": ["authority-source-files 2.0", "browse-authorities 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.0"]}
-{"id": "folio_stripes-authorization-components-2.0.1099000000000414", "optional": [], "provides": [], "requires": []}
+{"id": "folio_stripes-authorization-components-2.0.1099000000000424", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-components-12.2.109900000000337", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-connect-9.2.1090000005", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-core-11.1.1099000000001391", "optional": ["consortia 1.0", "locale 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "settings 1.0", "users-bl 5.0 6.0"]}
