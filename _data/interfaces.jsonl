@@ -201,7 +201,7 @@
 {"id": "mod-linked-data-import-1.0.0-SNAPSHOT.65", "optional": [], "provides": ["_tenant 2.0", "linked-data-import 1.0"], "requires": ["linked-data 2.0"]}
 {"id": "mod-lists-3.2.0-SNAPSHOT.2033", "optional": [], "provides": ["_tenant 2.0", "lists 2.0"], "requires": ["entity-types 2.0", "fqm-query 2.1", "login 7.0", "permissions 5.3", "users 16.0"]}
 {"id": "mod-login-7.14.0-SNAPSHOT.170", "optional": ["authtoken 2.1", "authtoken2 1.1", "configuration 2.0"], "provides": ["_tenant 2.0", "login 7.3"], "requires": ["user-tenants 1.0", "users 15.4 16.0"]}
-{"id": "mod-login-keycloak-3.1.0-SNAPSHOT.159", "optional": ["configuration 2.0"], "provides": ["_tenant 2.0", "authtoken 2.1", "authtoken2 1.1", "login 7.3"], "requires": ["users 16.1", "users-keycloak 1.0"]}
+{"id": "mod-login-keycloak-3.1.0-SNAPSHOT.160", "optional": ["configuration 2.0"], "provides": ["_tenant 2.0", "authtoken 2.1", "authtoken2 1.1", "login 7.3"], "requires": ["users 16.1", "users-keycloak 1.0"]}
 {"id": "mod-login-saml-2.11.0-SNAPSHOT.175", "optional": [], "provides": ["_tenant 2.0", "login-saml 2.1"], "requires": ["authtoken 2.1", "authtoken2 1.1", "configuration 2.0", "users 14.0 15.0 16.0"]}
 {"id": "mod-marc-migrations-2.1.0-SNAPSHOT.2005", "optional": [], "provides": ["_tenant 2.0", "_timer 1.0", "marc-migrations 1.1"], "requires": ["authority-storage 2.0", "instance-storage 11.0", "instance-storage-bulk 1.0", "login 7.3", "mapping-metadata-provider 1.1", "permissions 5.6", "source-storage-records 3.3", "users 16.0"]}
 {"id": "mod-marccat-2.3.0-SNAPSHOT.405", "optional": [], "provides": ["_tenant 1.2", "marccat 2.4"], "requires": ["configuration 2.0"]}
