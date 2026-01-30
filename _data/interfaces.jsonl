@@ -15,7 +15,7 @@
 {"id": "edge-resolver-1.0.0-SNAPSHOT.10", "optional": [], "provides": [], "requires": ["users-bl 3.0"]}
 {"id": "edge-rtac-3.1.0-SNAPSHOT.120", "optional": [], "provides": [], "requires": ["login 7.3", "rtac-batch 1.1"]}
 {"id": "edge-search-srs-1.0.0-SNAPSHOT.7", "optional": [], "provides": [], "requires": ["login 5.0 6.0 7.0"]}
-{"id": "edge-sip2-3.5.0-SNAPSHOT.208", "optional": [], "provides": [], "requires": ["circulation 14.6", "configuration 2.0", "feesfines 19.1", "locale 1.0", "login 7.3", "search-inventory 1.0", "settings 1.2", "users 16.4"]}
+{"id": "edge-sip2-3.5.0-SNAPSHOT.209", "optional": [], "provides": [], "requires": ["circulation 14.6", "configuration 2.0", "feesfines 19.1", "locale 1.0", "login 7.3", "search-inventory 1.0", "settings 1.2", "users 16.4"]}
 {"id": "edge-users-2.2.0-SNAPSHOT.10", "optional": [], "provides": [], "requires": ["users 16.0 16.4"]}
 {"id": "folio-org_ld-folio-wrapper-1.2.1099000000003", "optional": [], "provides": [], "requires": []}
 {"id": "folio-org_linked-data-1.0.10990000000029", "optional": [], "provides": [], "requires": []}
@@ -59,7 +59,7 @@
 {"id": "folio_ld-folio-wrapper-2.0.1099000000000370", "optional": [], "provides": [], "requires": ["authority-source-files 2.2", "browse-authorities 1.0", "linked-data 2.0", "linked-data-profile 1.0", "search-authorities 1.0", "search-facets 1.0", "search-linked-data 1.0", "source-storage-records 3.4"]}
 {"id": "folio_ldp-3.2.1099000000000283", "optional": [], "provides": [], "requires": ["ldp-query 1.2", "settings 1.0"]}
 {"id": "folio_licenses-12.1.1099000000000236", "optional": ["organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["licenses 6.0"]}
-{"id": "folio_linked-data-2.0.1099000000001887", "optional": [], "provides": [], "requires": []}
+{"id": "folio_linked-data-2.0.1099000000001898", "optional": [], "provides": [], "requires": []}
 {"id": "folio_lists-4.0.3099000000000983", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0 2.0"]}
 {"id": "folio_local-kb-admin-9.1.1099000000000176", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_lti-courses-1.1.100035", "optional": [], "provides": [], "requires": ["configuration 2.0 3.0 4.0 5.0"]}
@@ -206,7 +206,7 @@
 {"id": "mod-marc-migrations-2.1.0-SNAPSHOT.2005", "optional": [], "provides": ["_tenant 2.0", "_timer 1.0", "marc-migrations 1.1"], "requires": ["authority-storage 2.0", "instance-storage 11.0", "instance-storage-bulk 1.0", "login 7.3", "mapping-metadata-provider 1.1", "permissions 5.6", "source-storage-records 3.3", "users 16.0"]}
 {"id": "mod-marccat-2.3.0-SNAPSHOT.405", "optional": [], "provides": ["_tenant 1.2", "marccat 2.4"], "requires": ["configuration 2.0"]}
 {"id": "mod-meta-storage-0.0.1-SNAPSHOT.74", "optional": [], "provides": ["_tenant 2.0", "meta-storage-clusters 1.0", "meta-storage-config-matchkeys 1.0", "meta-storage-config-modules 1.0", "meta-storage-config-oai 1.0", "meta-storage-oai 1.0", "meta-storage-oai-pmh-client 1.0", "meta-storage-records 1.0"], "requires": []}
-{"id": "mod-mosaic-1.1.0-SNAPSHOT.38", "optional": [], "provides": ["_tenant 2.0", "mosaic 1.0"], "requires": ["order-templates 1.0", "orders 13.0", "organizations.organizations 1.2"]}
+{"id": "mod-mosaic-1.1.0-SNAPSHOT.39", "optional": [], "provides": ["_tenant 2.0", "mosaic 1.0"], "requires": ["order-templates 1.0", "orders 13.0", "organizations.organizations 1.2"]}
 {"id": "mod-ncip-1.16.2-SNAPSHOT.113", "optional": [], "provides": ["ncip 1.0"], "requires": ["circulation 14.0", "configuration 2.0", "holdings-storage 6.0 7.0 8.0", "identifier-types 1.2", "instance-types 2.0", "inventory 10.2 11.0 12.0 13.0 14.0", "loan-types 2.2", "locations 3.0", "material-types 2.2", "service-points 3.2"]}
 {"id": "mod-notes-7.1.0-SNAPSHOT.2008", "optional": [], "provides": ["_tenant 2.0", "notes 4.0"], "requires": ["users 15.1 16.0"]}
 {"id": "mod-notify-3.5.0-SNAPSHOT.140", "optional": [], "provides": ["_jsonSchemas 1.0", "_ramls 1.0", "_tenant 2.0", "notify 2.2", "patron-notice 1.1"], "requires": ["message-delivery 1.1", "mod-event 1.0", "template-engine 2.2", "users 16.4"]}
