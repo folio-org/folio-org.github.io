@@ -12835,6 +12835,22 @@
     "path": "/templates/{templateId}"
   },
   {
+    "apiDescription": "src/main/resources/openapi/settings.yaml",
+    "apiType": "oas",
+    "interface": "tenant-addresses 1.0",
+    "methods": "get:operation/getTenantAddresses post:operation/createTenantAddress",
+    "name": "mod-settings",
+    "path": "/tenant-addresses"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/settings.yaml",
+    "apiType": "oas",
+    "interface": "tenant-addresses 1.0",
+    "methods": "delete:operation/deleteTenantAddress get:operation/getTenantAddress put:operation/updateTenantAddress",
+    "name": "mod-settings",
+    "path": "/tenant-addresses/{id}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/password-validator.yaml",
     "apiType": "oas",
     "methods": "post:operation/checkPassword",
