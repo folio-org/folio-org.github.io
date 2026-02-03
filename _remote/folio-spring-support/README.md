@@ -19,8 +19,7 @@ Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 - [CQL support](#cql-support)
 - [Logging](#logging)
   - [Default logging format](#default-logging-format)
-  - [Logging for incoming and outgoing requests](#logging-for-incoming-and-outgoing-requests)
-    - [Log examples:](#log-examples)
+  - [Request and Response Logging](#request-and-response-logging)
 - [Custom `/_/tenant` Logic](#custom-_tenant-logic)
   - [`TenantService` Event Methods](#tenantservice-event-methods)
   - [`TenantService` Methods and Fields](#tenantservice-methods-and-fields)
@@ -176,58 +175,38 @@ Library uses [log4j2](https://logging.apache.org/log4j/2.x/) for logging. There 
 To choose the JSON structured logging by using setting: `-Dlog4j.configurationFile=log4j2-json.properties`
 A module that wants to generate log4J2 logs in a different format can create a `log4j2.properties` file in the /resources directory.
 
-### Logging for incoming and outgoing requests
+### Request and Response Logging
 
-By default, logging for incoming and outgoing request enabled. Module could disable it by setting:
+For comprehensive information about HTTP request and response logging, including:
+- Request Logging (incoming requests to your application)
+- Exchange Logging (outgoing HTTP client requests)
+- Logging levels (NONE, BASIC, HEADERS, FULL)
+- Configuration examples
+- Performance and security considerations
 
-- `folio.logging.request.enabled = false`
-- `folio.logging.feign.enabled = false`
+See the [Request Logging Guide](doc/REQUEST_LOGGING.md).
 
-Also, it is possible to specify logging level:
-`none` - no logs
-`basic` - log request method and URI, response status and spent time
-`headers` - log all that `basic` and request headers
-`full` - log all that `headers` and request and response bodies
+**Quick Configuration:**
 
-**_Note:_** _In case you have async requests in your module (DeferredResult, CompletableFuture, etc.) then you should disable default logging for requests._
+```yaml
+folio:
+  logging:
+    request:
+      enabled: true
+      level: BASIC    # NONE, BASIC, HEADERS, FULL
+    exchange:
+      enabled: true
+      level: BASIC    # NONE, BASIC, HEADERS, FULL
 
-#### Log examples:
-
-- basic:
-
-```text
-18:41:18 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter ---> PUT /records-editor/records/c9db5d7a-e1d4-11e8-9f32-f2801f1b9fd1 null
-18:41:19 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter <--- 202 in 753ms
+logging:
+  level:
+    org.folio.spring.filter.IncomingRequestLoggingFilter: DEBUG
+    org.folio.spring.client.ExchangeLoggingInterceptor: DEBUG
 ```
 
-- headers:
+**Note:** In case you have async requests in your module (DeferredResult, CompletableFuture, etc.) then you should disable default logging for requests.
 
-```text
-18:44:23 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter ---> PUT /records-editor/records/c9db5d7a-e1d4-11e8-9f32-f2801f1b9fd1 null
-18:44:23 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter x-okapi-url: http://localhost:50017
-18:44:23 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter x-okapi-tenant: <tenantId>
-18:44:23 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter x-okapi-request-id: <requestId>
-18:44:23 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter x-okapi-user-id: <userId>
-18:44:23 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter content-type: application/json; charset=UTF-8
-18:44:23 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter ---> END HTTP
-18:44:24 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter <--- 202 in 786ms
-```
-
-- full:
-
-```text
-18:46:17 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter ---> PUT /records-editor/records/c9db5d7a-e1d4-11e8-9f32-f2801f1b9fd1 null
-18:46:17 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter x-okapi-url: http://localhost:53146
-18:46:17 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter x-okapi-tenant: <tenantId>
-18:46:17 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter x-okapi-request-id: <requestId>
-18:46:17 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter x-okapi-user-id: <userId>
-18:46:17 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter content-type: application/json; charset=UTF-8
-18:46:17 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter Body: {"parsedRecordId":"c9db5d7a-e1d4-11e8-9f32-f2801f1b9fd1","parsedRecordDtoId":"c56b70ce-4ef6-47ef-8bc3-c470bafa0b8c","suppressDiscovery":false}
-18:46:17 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter ---> END HTTP
-18:46:18 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter <--- 202 in 714ms
-18:46:18 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter Body:
-18:46:18 [<requestId>] [<tenantId>] [<userId>] [<moduleId>] INFO  LoggingRequestFilter <--- END HTTP
-```
+---
 
 ## Custom `/_/tenant` Logic
 
