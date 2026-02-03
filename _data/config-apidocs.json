@@ -450,7 +450,9 @@
         "src/main/resources/swagger.api/bulk-operations.yaml"
       ],
       "raml": [],
-      "upload": []
+      "upload": [
+        "mod-bulk-operations.html"
+      ]
     },
     "metadata": {
       "apiTypes": [
