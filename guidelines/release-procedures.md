@@ -9,6 +9,7 @@ menuTopTitle: Guidelines
 This document summarises the release procedures for FOLIO projects.
 
 * [Maven-based modules](#maven-based-modules)
+  * The procedures in this document are for repositories that still use Jenkins. For repositories using the new Maven GitHub Workflows, see the note in the next section.
 * [Stripes and UI modules](https://github.com/folio-org/stripes/blob/master/doc/release-procedure.md)
 * [Add to platforms](#add-to-platforms)
 * [Regular releases](#regular-releases)
@@ -24,6 +25,10 @@ and the [Build, test, and deployment infrastructure](/guides/automation/).
 The procedure is outlined here for "Okapi" and is similar for other back-end Maven-based modules.
 
 Please follow all steps in a timely manner, i.e. do not follow some steps one day and the rest the next day, as that will lead to broken systems.
+
+<div class="attention">
+Note: The following instructions are for repositories that still use Jenkins. For repositories using the new Maven GitHub Workflows, refer to <a href="https://github.com/folio-org/.github/blob/master/README-maven.md#release-procedures">Centralized Maven Workflows</a> instead.
+</div>
 
 ### Quick summary major/feature release {#summary-mvn}
 
