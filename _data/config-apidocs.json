@@ -1899,7 +1899,9 @@
         "src/main/resources/swagger.api/mod-roles-keycloak.yaml"
       ],
       "raml": [],
-      "upload": []
+      "upload": [
+        "mod-roles-keycloak.html"
+      ]
     },
     "metadata": {
       "apiTypes": [
