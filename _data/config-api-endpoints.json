@@ -8495,7 +8495,7 @@
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
     "interface": "linked-data 2.0",
-    "methods": "get:operation/getHubPreviewByUri",
+    "methods": "get:operation/getHubPreviewByUri post:operation/saveHubByUri",
     "name": "mod-linked-data",
     "path": "/linked-data/hub"
   },
