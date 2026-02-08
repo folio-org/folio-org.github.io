@@ -11881,7 +11881,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-scheduler.yaml",
     "apiType": "oas",
-    "interface": "scheduler 1.0",
+    "interface": "scheduler 1.1",
     "methods": "get:operation/getSchedulerTimers post:operation/createSchedulerTimers",
     "name": "mod-scheduler",
     "path": "/scheduler/timers"
@@ -11889,7 +11889,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-scheduler.yaml",
     "apiType": "oas",
-    "interface": "scheduler 1.0",
+    "interface": "scheduler 1.1",
     "methods": "delete:operation/deleteSchedulerTimerById get:operation/getSchedulerTimerById put:operation/updateSchedulerTimerById",
     "name": "mod-scheduler",
     "path": "/scheduler/timers/{id}"
