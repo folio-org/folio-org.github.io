@@ -359,6 +359,9 @@ is an independent not-for-profit organization to ensure the availability, access
 See [Newsroom](https://openlibraryfoundation.org/newsroom/).
 OLF has joined the FOLIO community to help with the development of FOLIO.
 
+#### OST
+The [Officially Supported Technologies](https://wiki.folio.org/display/TC/Officially+Supported+Technologies) (OST) for each upcoming release (also known as Approved Technologies).
+
 #### PC
 
 The [FOLIO Product Council](https://wiki.folio.org/display/PC/)

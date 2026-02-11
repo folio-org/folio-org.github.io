@@ -40,7 +40,7 @@ See other orientation [guides](/guides/#background-orientation).
 ## Development management
 
 - [Release procedures](/guidelines/release-procedures/).
-- [Officially Supported Technologies](https://wiki.folio.org/display/TC/Officially+Supported+Technologies) for each upcoming release (also known as Approved Technologies).
+- [Officially Supported Technologies](https://wiki.folio.org/display/TC/Officially+Supported+Technologies) (OST) for each upcoming release (also known as Approved Technologies).
 - FOLIO Technical Council ([TC](/reference/glossary/#tc))
 and FOLIO Product Council ([PC](/reference/glossary/#pc)).
 - Each FOLIO Development [Team](https://wiki.folio.org/display/FOLIJET/Folio+Development+Teams+Home)
