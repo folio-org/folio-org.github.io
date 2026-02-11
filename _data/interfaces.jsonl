@@ -5,7 +5,7 @@
 {"id": "edge-dematic-3.0.0-SNAPSHOT.68", "optional": [], "provides": [], "requires": ["login 7.0", "remote-storage-accessions 1.1", "remote-storage-check-in 1.2", "remote-storage-configurations 1.1", "remote-storage-items 1.0", "remote-storage-retrievals 1.1"]}
 {"id": "edge-erm-1.5.0-SNAPSHOT.16", "optional": [], "provides": [], "requires": ["erm 6.1 7.1", "login 7.1"]}
 {"id": "edge-fqm-4.1.0-SNAPSHOT.2038", "optional": [], "provides": [], "requires": ["entity-types 2.1", "fqm-query 2.1", "login 7.0"]}
-{"id": "edge-inn-reach-3.6.0-SNAPSHOT.67", "optional": [], "provides": [], "requires": ["login 7.3", "permissions 5.8", "users 16.4"]}
+{"id": "edge-inn-reach-3.6.0-SNAPSHOT.2010", "optional": [], "provides": [], "requires": ["login 7.3", "permissions 5.8", "users 16.4"]}
 {"id": "edge-inventory-2.3.0-SNAPSHOT.22", "optional": [], "provides": [], "requires": ["consortium-search 2.1", "holdings-storage 8.1", "identifier-types 1.2", "instance-formats 2.0", "instance-note-types 1.0", "instance-types 2.0", "inventory 14.3", "login 7.3", "material-types 2.2", "modes-of-issuance 1.1", "nature-of-content-terms 1.0", "search-facets 1.0", "service-points 3.5", "source-storage-records 3.4", "user-tenants 1.0"]}
 {"id": "edge-lti-courses-1.3.8-SNAPSHOT.39", "optional": [], "provides": [], "requires": ["configuration 2.0", "course-reserves-storage 0.3"]}
 {"id": "edge-ncip-1.11.0-SNAPSHOT.38", "optional": [], "provides": [], "requires": ["login 5.0 6.0 7.0", "ncip 1.0"]}
