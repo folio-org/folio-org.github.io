@@ -40,6 +40,9 @@ layout: null
     {%- assign remoteTitle = page.path | remove: '_remote/' -%}
     {%- assign remoteRepo = remoteTitle | split: "/" | first -%}
     {%- assign remotePath = remoteTitle | split: "/" | slice: 1, 5 | join: '/' -%}
+    {%- if remoteRepo == "github" -%}
+      {%- assign remoteRepo = ".github" -%}
+    {%- endif -%}
     {
       "id": "{{ remoteId }}",
       "title": "Remote &gt;&gt; {{ remoteTitle }}",
