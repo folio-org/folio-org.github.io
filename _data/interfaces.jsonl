@@ -123,7 +123,7 @@
 {"id": "folio_stripes-inventory-components-2.1.1090000000840", "optional": [], "provides": [], "requires": ["instance-date-types 1.0", "settings 1.0"]}
 {"id": "folio_stripes-marc-components-2.0.1099000000000193", "optional": ["audit-marc 1.0", "instance-authority-linking-rules 1.1"], "provides": [], "requires": []}
 {"id": "folio_stripes-registry-1.0.100011", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-smart-components-10.1.1099000000000696", "optional": ["configuration 2.0", "remote-storage-mappings 1.0 2.0", "settings 1.0", "users 16.1"], "provides": [], "requires": ["notes 2.0 3.0 4.0", "password-validator 1.0", "tags 1.0"]}
+{"id": "folio_stripes-smart-components-10.1.1099000000000699", "optional": ["configuration 2.0", "remote-storage-mappings 1.0 2.0", "settings 1.0", "users 16.1"], "provides": [], "requires": ["notes 2.0 3.0 4.0", "password-validator 1.0", "tags 1.0"]}
 {"id": "folio_stripes-template-editor-3.4.10990000000019", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-testing-4.2.1000107", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-ui-3.0.10990000000025", "optional": [], "provides": [], "requires": []}
