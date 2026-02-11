@@ -359,6 +359,9 @@ is an independent not-for-profit organization to ensure the availability, access
 See [Newsroom](https://openlibraryfoundation.org/newsroom/).
 OLF has joined the FOLIO community to help with the development of FOLIO.
 
+#### OST
+The [Officially Supported Technologies](https://wiki.folio.org/display/TC/Officially+Supported+Technologies) (OST) for each upcoming release (also known as Approved Technologies).
+
 #### PC
 
 The [FOLIO Product Council](https://wiki.folio.org/display/PC/)
@@ -414,8 +417,10 @@ Representational State Transfer architectural style, and RESTful web services, e
 #### RFC
 
 Request For Comments (RFCs).
-Refer to the current set of [FOLIO RFCs](https://github.com/folio-org/rfcs)
+Refer to the current [FOLIO RFC log](https://folio-org.atlassian.net/wiki/x/BADbF)
 and the [RFC Process](https://wiki.folio.org/display/TC/RFC+Process).
+
+(Refer to the previous set of [FOLIO RFCs](https://github.com/folio-org/rfcs) at folio-org GitHub.)
 
 #### RMB
 
