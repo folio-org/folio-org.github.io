@@ -1,7 +1,7 @@
 {"id": "edge-caiasoft-2.5.0-SNAPSHOT.57", "optional": [], "provides": [], "requires": ["login 7.3", "remote-storage-accessions 1.1", "remote-storage-check-in 1.2", "remote-storage-configurations 1.1", "remote-storage-retrievals 1.1"]}
 {"id": "edge-connexion-1.4.2-SNAPSHOT.41", "optional": [], "provides": ["connexion 1.0"], "requires": ["copycat-imports 1.0", "copycat-profiles 1.0", "login 7.0"]}
 {"id": "edge-courses-1.7.0-SNAPSHOT.28", "optional": [], "provides": [], "requires": ["course-reserves-storage 0.3", "login 7.1"]}
-{"id": "edge-dcb-1.4.0-SNAPSHOT.50", "optional": [], "provides": [], "requires": ["dcb_refresh_shadow_locations 2.0", "login 7.3", "transactions 1.6"]}
+{"id": "edge-dcb-1.4.0-SNAPSHOT.2005", "optional": [], "provides": [], "requires": ["dcb_refresh_shadow_locations 2.0", "login 7.3", "transactions 1.6"]}
 {"id": "edge-dematic-3.0.0-SNAPSHOT.68", "optional": [], "provides": [], "requires": ["login 7.0", "remote-storage-accessions 1.1", "remote-storage-check-in 1.2", "remote-storage-configurations 1.1", "remote-storage-items 1.0", "remote-storage-retrievals 1.1"]}
 {"id": "edge-erm-1.5.0-SNAPSHOT.16", "optional": [], "provides": [], "requires": ["erm 6.1 7.1", "login 7.1"]}
 {"id": "edge-fqm-4.1.0-SNAPSHOT.2038", "optional": [], "provides": [], "requires": ["entity-types 2.1", "fqm-query 2.1", "login 7.0"]}
