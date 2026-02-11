@@ -710,7 +710,9 @@
         "src/main/resources/swagger.api/data-export.yaml"
       ],
       "raml": [],
-      "upload": []
+      "upload": [
+        "mod-data-export.html"
+      ]
     },
     "metadata": {
       "apiTypes": [
