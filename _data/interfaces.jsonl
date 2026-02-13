@@ -60,7 +60,7 @@
 {"id": "folio_ld-folio-wrapper-2.0.1099000000000392", "optional": [], "provides": [], "requires": ["authority-source-files 2.2", "browse-authorities 1.0", "linked-data 2.0", "linked-data-profile 1.0", "search-authorities 1.0", "search-facets 1.0", "search-linked-data 1.0", "source-storage-records 3.4"]}
 {"id": "folio_ldp-3.2.1099000000000295", "optional": [], "provides": [], "requires": ["ldp-query 1.2", "settings 1.0"]}
 {"id": "folio_licenses-12.1.1099000000000273", "optional": ["organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["licenses 6.0"]}
-{"id": "folio_linked-data-2.0.1099000000001999", "optional": [], "provides": [], "requires": []}
+{"id": "folio_linked-data-2.0.1099000000002015", "optional": [], "provides": [], "requires": []}
 {"id": "folio_lists-4.0.3099000000000997", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0 2.0"]}
 {"id": "folio_local-kb-admin-9.1.1099000000000188", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_lti-courses-1.1.100035", "optional": [], "provides": [], "requires": ["configuration 2.0 3.0 4.0 5.0"]}
@@ -114,7 +114,7 @@
 {"id": "folio_stripes-authorization-components-2.0.1099000000000436", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-components-12.2.109900000000337", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-connect-9.2.1090000005", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-core-11.1.1099000000001467", "optional": ["consortia 1.0", "locale 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "settings 1.0", "users-bl 5.0 6.0"]}
+{"id": "folio_stripes-core-11.1.1099000000001484", "optional": ["consortia 1.0", "locale 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "settings 1.0", "users-bl 5.0 6.0"]}
 {"id": "folio_stripes-data-transfer-components-7.0.1099000000000120", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-erm-components-9.2.10990000000077", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-final-form-8.1.1090000009", "optional": [], "provides": [], "requires": []}
