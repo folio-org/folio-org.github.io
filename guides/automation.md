@@ -80,10 +80,13 @@ Correlate the "build number" with that shown in the output log of the project's 
 Failures with the main builds are automatically sent to the `#folio-hosted-reference-envs` Slack channel.
 
 Follow its links to the Jenkins job output.
+
 Refer to the FAQs
 [How to obtain reference environment module logs](/faqs/how-to-obtain-refenv-logs/)
 and
-[How to investigate Jenkins build logs](/faqs/how-to-investigate-jenkins-logs/)
+[How to investigate Jenkins build logs](/faqs/how-to-investigate-jenkins-logs/).
+
+For failed [Platform hourly build](#platform-hourly-build) jobs, the Okapi log is linked from the left-hand panel of its Jenkins job summary page.
 
 As noted in the [Platform hourly build](#platform-hourly-build) section below, it is vitally important that developers ensure success of the subsequent hourly build following any major changes that they merge to mainline (especially on a Friday afternoon). Continued failures of this hourly job will cause the “folio-snapshot” builds to use out-of-date install files.
 
