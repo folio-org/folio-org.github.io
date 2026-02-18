@@ -6349,6 +6349,14 @@
     "apiDescription": "src/main/resources/swagger.api/mod-fqm-manager.yaml",
     "apiType": "oas",
     "interface": "fqm-query 2.1",
+    "methods": "get:operation/getQueryStatusSummaries",
+    "name": "mod-fqm-manager",
+    "path": "/fqm/status"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-fqm-manager.yaml",
+    "apiType": "oas",
+    "interface": "fqm-query 2.1",
     "methods": "get:operation/getFqmVersion",
     "name": "mod-fqm-manager",
     "path": "/fqm/version"
@@ -8471,17 +8479,17 @@
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data-import.yaml",
     "apiType": "oas",
     "interface": "linked-data-import 1.0",
-    "methods": "put:operation/cancelJob",
+    "methods": "get:operation/getFailedLines",
     "name": "mod-linked-data-import",
-    "path": "/linked-data-import/jobs/{jobExecutionId}/cancel"
+    "path": "/linked-data-import/jobs/{jobExecutionId}/failed-lines"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data-import.yaml",
     "apiType": "oas",
     "interface": "linked-data-import 1.0",
-    "methods": "get:operation/getFailedLines",
+    "methods": "put:operation/stopJob",
     "name": "mod-linked-data-import",
-    "path": "/linked-data-import/jobs/{jobExecutionId}/failed-lines"
+    "path": "/linked-data-import/jobs/{jobExecutionId}/stop"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data-import.yaml",
