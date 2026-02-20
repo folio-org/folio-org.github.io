@@ -9573,6 +9573,30 @@
     "path": "/orders-storage/audit-outbox/process"
   },
   {
+    "apiDescription": "ramls/batch-tracking.raml",
+    "apiType": "raml",
+    "interface": "orders-storage.batch-tracking 1.0",
+    "methods": "post:orders_storage_batch_tracking_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/batch-tracking"
+  },
+  {
+    "apiDescription": "ramls/batch-tracking.raml",
+    "apiType": "raml",
+    "interface": "_timer 1.0",
+    "methods": "post:orders_storage_batch_tracking_cleanup_post",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/batch-tracking/cleanup"
+  },
+  {
+    "apiDescription": "ramls/batch-tracking.raml",
+    "apiType": "raml",
+    "interface": "orders-storage.batch-tracking 1.0",
+    "methods": "delete:orders_storage_batch_tracking__id__delete",
+    "name": "mod-orders-storage",
+    "path": "/orders-storage/batch-tracking/{id}"
+  },
+  {
     "apiDescription": "ramls/claiming.raml",
     "apiType": "raml",
     "interface": "_timer 1.0",
