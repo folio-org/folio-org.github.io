@@ -1624,6 +1624,7 @@
         "ramls/acquisition_method.raml",
         "ramls/acquisitions-unit.raml",
         "ramls/audit_outbox.raml",
+        "ramls/batch-tracking.raml",
         "ramls/claiming.raml",
         "ramls/configuration.raml",
         "ramls/export_history.raml",
