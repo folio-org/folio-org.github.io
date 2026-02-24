@@ -4406,6 +4406,22 @@
   {
     "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
     "apiType": "oas",
+    "interface": "dcb.settings 1.0",
+    "methods": "get:operation/findDcbSettings post:operation/createDcbSetting",
+    "name": "mod-dcb",
+    "path": "/dcb/settings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
+    "apiType": "oas",
+    "interface": "dcb.settings 1.0",
+    "methods": "delete:operation/deleteDcbSettingById get:operation/getDcbSettingById put:operation/updateDcbSettingById",
+    "name": "mod-dcb",
+    "path": "/dcb/settings/{id}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/dcb_transaction.yaml",
+    "apiType": "oas",
     "interface": "dcb_refresh_shadow_locations 2.0",
     "methods": "post:operation/refreshShadowLocation",
     "name": "mod-dcb",
@@ -8004,7 +8020,7 @@
     "apiDescription": "ramls/inventory.raml",
     "apiType": "raml",
     "interface": "inventory 14.4",
-    "methods": "delete:inventory_items__itemid__delete get:inventory_items__itemid__get put:inventory_items__itemid__put",
+    "methods": "delete:inventory_items__itemid__delete get:inventory_items__itemid__get patch:inventory_items__itemid__patch put:inventory_items__itemid__put",
     "name": "mod-inventory",
     "path": "/inventory/items/{itemId}"
   },
@@ -8513,6 +8529,14 @@
     "methods": "post:operation/startImport",
     "name": "mod-linked-data-import",
     "path": "/linked-data-import/start"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "linked-data-admin 1.0",
+    "methods": "delete:operation/clearCaches",
+    "name": "mod-linked-data",
+    "path": "/linked-data/admin/caches"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
@@ -9280,6 +9304,14 @@
     "methods": "post:operation/createMosaicOrder",
     "name": "mod-mosaic",
     "path": "/mosaic/orders"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mosaic.yaml",
+    "apiType": "oas",
+    "interface": "mosaic 1.0",
+    "methods": "post:operation/generateDefaultTemplate",
+    "name": "mod-mosaic",
+    "path": "/mosaic/template"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mosaic.yaml",
