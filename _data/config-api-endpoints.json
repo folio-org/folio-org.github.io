@@ -1178,6 +1178,14 @@
   {
     "apiDescription": "src/main/resources/swagger.api/am.yaml",
     "apiType": "oas",
+    "interface": "discoveries 2.1",
+    "methods": "get:operation/searchApplicationsDiscovery",
+    "name": "mgr-applications",
+    "path": "/applications/discovery"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/am.yaml",
+    "apiType": "oas",
     "interface": "applications 1.3",
     "methods": "post:operation/validateApplicationDescriptor",
     "name": "mgr-applications",
@@ -1210,7 +1218,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/am.yaml",
     "apiType": "oas",
-    "interface": "discoveries 2.0",
+    "interface": "discoveries 2.1",
     "methods": "get:operation/getDiscovery",
     "name": "mgr-applications",
     "path": "/applications/{id}/discovery"
@@ -9236,7 +9244,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/am.yaml",
     "apiType": "oas",
-    "interface": "discoveries 2.0",
+    "interface": "discoveries 2.1",
     "methods": "get:operation/searchModuleDiscovery post:operation/createModuleDiscoveries",
     "name": "mgr-applications",
     "path": "/modules/discovery"
@@ -9252,7 +9260,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/am.yaml",
     "apiType": "oas",
-    "interface": "discoveries 2.0",
+    "interface": "discoveries 2.1",
     "methods": "delete:operation/deleteModuleDiscovery get:operation/getModuleDiscovery post:operation/createModuleDiscovery put:operation/updateModuleDiscovery",
     "name": "mgr-applications",
     "path": "/modules/{id}/discovery"
