@@ -67,7 +67,7 @@
 {"id": "folio_marc-authorities-8.0.1099000000001346", "optional": ["audit-config 1.0", "audit-marc 1.0"], "provides": [], "requires": ["browse-authorities 1.0", "marc-records-editor 6.0", "resource-ids-streaming 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.3"]}
 {"id": "folio_marccat-3.0.1000438", "optional": [], "provides": [], "requires": ["marccat 2.0"]}
 {"id": "folio_mosaic-settings-1.0.1099000000000124", "optional": [], "provides": [], "requires": ["mosaic 1.0", "order-templates 1.0"]}
-{"id": "folio_myprofile-11.0.1099000000000175", "optional": [], "provides": [], "requires": ["settings 1.0"]}
+{"id": "folio_myprofile-11.0.1099000000000178", "optional": [], "provides": [], "requires": ["settings 1.0"]}
 {"id": "folio_notes-12.0.1099000000000165", "optional": [], "provides": [], "requires": ["notes 4.0"]}
 {"id": "folio_oa-3.1.1099000000000252", "optional": ["erm 5.0 6.0 7.0", "finance.exchange-rate 1.0", "invoice 7.0", "organizations 1.0"], "provides": [], "requires": ["oa 1.0 2.0"]}
 {"id": "folio_oai-pmh-7.0.1099000000000156", "optional": [], "provides": [], "requires": ["oai-pmh 3.5"]}
