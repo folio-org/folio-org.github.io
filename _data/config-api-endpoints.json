@@ -8502,6 +8502,14 @@
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data-import.yaml",
     "apiType": "oas",
     "interface": "linked-data-import 1.0",
+    "methods": "post:operation/uploadFile",
+    "name": "mod-linked-data-import",
+    "path": "/linked-data-import/files"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data-import.yaml",
+    "apiType": "oas",
+    "interface": "linked-data-import 1.0",
     "methods": "get:operation/getJobInfo",
     "name": "mod-linked-data-import",
     "path": "/linked-data-import/jobs/{jobExecutionId}"
@@ -8715,7 +8723,7 @@
   {
     "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "instance-authority-links-statistics 2.1",
+    "interface": "instance-authority-links-statistics 3.0",
     "methods": "get:operation/getAuthorityLinksStats",
     "name": "mod-entities-links",
     "path": "/links/stats/authority"
@@ -8723,7 +8731,7 @@
   {
     "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
-    "interface": "instance-authority-links-statistics 2.1",
+    "interface": "instance-authority-links-statistics 3.0",
     "methods": "get:operation/getLinkedBibUpdateStats",
     "name": "mod-entities-links",
     "path": "/links/stats/instance"
