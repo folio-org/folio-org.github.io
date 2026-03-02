@@ -8627,7 +8627,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "interface": "linked-data 2.0",
+    "interface": "linked-data-reindex 1.0",
     "methods": "post:operation/fullReindex",
     "name": "mod-linked-data",
     "path": "/linked-data/reindex/full"
@@ -8635,10 +8635,18 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "interface": "linked-data 2.0",
+    "interface": "linked-data-reindex 1.0",
     "methods": "post:operation/incrementalReindex",
     "name": "mod-linked-data",
     "path": "/linked-data/reindex/incremental"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "linked-data-reindex 1.0",
+    "methods": "get:operation/getReindexJobStatus",
+    "name": "mod-linked-data",
+    "path": "/linked-data/reindex/status"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
