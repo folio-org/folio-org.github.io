@@ -83,8 +83,8 @@
 {"id": "folio_plugin-find-contact-6.1.1099000000000085", "optional": [], "provides": [], "requires": ["organizations-storage.categories 1.1", "organizations-storage.contacts 2.0"]}
 {"id": "folio_plugin-find-eresource-8.1.1099000000000143", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_plugin-find-erm-usage-data-provider-7.0.1099000000000168", "optional": [], "provides": [], "requires": ["aggregator-settings 1.0 2.0", "erm-usage-harvester 1.1 2.0", "usage-data-providers 2.0 3.0"]}
-{"id": "folio_plugin-find-finc-metadata-collection-8.0.1099000000000174", "optional": [], "provides": [], "requires": ["finc-config-metadata-collections 1.0"]}
-{"id": "folio_plugin-find-finc-metadata-source-8.0.1099000000000139", "optional": [], "provides": [], "requires": ["finc-config-metadata-sources 1.0"]}
+{"id": "folio_plugin-find-finc-metadata-collection-8.0.1099000000000178", "optional": [], "provides": [], "requires": ["finc-config-metadata-collections 1.0"]}
+{"id": "folio_plugin-find-finc-metadata-source-8.0.1099000000000143", "optional": [], "provides": [], "requires": ["finc-config-metadata-sources 1.0"]}
 {"id": "folio_plugin-find-fund-4.1.1099000000000067", "optional": [], "provides": [], "requires": []}
 {"id": "folio_plugin-find-import-profile-9.0.1099000000000085", "optional": [], "provides": [], "requires": ["data-import 3.2", "data-import-converter-storage 1.5", "source-manager-job-executions 3.4"]}
 {"id": "folio_plugin-find-instance-9.1.1099000000000175", "optional": [], "provides": [], "requires": ["contributor-types 2.0", "instance-types 2.0", "locations 3.0", "search-facets 1.0", "search-inventory 1.0"]}
