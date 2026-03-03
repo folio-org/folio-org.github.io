@@ -7588,7 +7588,15 @@
   {
     "apiDescription": "ramls/inventory-reindex-records.raml",
     "apiType": "raml",
-    "interface": "inventory-reindex-records 1.0",
+    "interface": "inventory-reindex-records 1.1",
+    "methods": "post:inventory_reindex_records_export_post",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-reindex-records/export"
+  },
+  {
+    "apiDescription": "ramls/inventory-reindex-records.raml",
+    "apiType": "raml",
+    "interface": "inventory-reindex-records 1.1",
     "methods": "post:inventory_reindex_records_publish_post",
     "name": "mod-inventory-storage",
     "path": "/inventory-reindex-records/publish"
