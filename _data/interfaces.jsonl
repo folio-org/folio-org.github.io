@@ -38,7 +38,7 @@
 {"id": "folio_data-export-7.0.1099000000000270", "optional": [], "provides": [], "requires": ["data-export 5.0"]}
 {"id": "folio_data-import-10.0.1099000000000273", "optional": ["acquisition-methods 1.0", "acquisitions-units 1.1", "batch-group 1.1", "call-number-types 1.0", "configuration 2.0", "configuration.prefixes 1.2", "configuration.suffixes 1.2", "contributor-name-types 1.3", "electronic-access-relationships 1.1", "finance.expense-classes 3.0", "finance.funds 3.0", "holdings-note-types 1.0", "holdings-types 1.0", "identifier-types 1.2", "ill-policies 1.0", "instance-relationship-types 1.0", "instance-statuses 1.0", "item-damaged-statuses 1.0", "item-note-types 1.0", "loan-types 2.3", "locations 3.2", "material-types 2.2", "nature-of-content-terms 1.0", "orders-storage.settings 1.0", "organizations-storage.organization-types 1.0", "organizations.organizations 1.2", "statistical-code-types 1.0", "statistical-codes 1.0"], "provides": [], "requires": ["data-import 3.2", "data-import-converter-storage 1.5", "settings 1.0", "source-manager-job-executions 3.4", "tenant-addresses 1.0"]}
 {"id": "folio_developer-11.0.1099000000000353", "optional": ["app-manager 1.0", "capabilities 1.0", "capability-sets 1.0"], "provides": [], "requires": ["okapi 1.9", "settings 1.0"]}
-{"id": "folio_eholdings-11.1.1099000000000314", "optional": ["erm 1.0 2.0 3.0 4.0 5.0 6.0 7.0"], "provides": [], "requires": ["eholdings 4.0", "tags 1.0"]}
+{"id": "folio_eholdings-11.1.1099000000000317", "optional": ["erm 1.0 2.0 3.0 4.0 5.0 6.0 7.0"], "provides": [], "requires": ["eholdings 4.0", "tags 1.0"]}
 {"id": "folio_erm-1.0.100022", "optional": [], "provides": [], "requires": []}
 {"id": "folio_erm-comparisons-8.1.1099000000000200", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_erm-usage-12.0.1099000000000856", "optional": [], "provides": [], "requires": ["aggregator-settings 2.0", "counter-reports 5.0", "custom-reports 1.0 2.0", "erm-usage-files 1.0", "erm-usage-harvester 2.0", "settings 1.2", "tags 1.0", "usage-data-providers 3.1"]}
@@ -64,7 +64,7 @@
 {"id": "folio_lists-4.0.3099000000001005", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0 2.0"]}
 {"id": "folio_local-kb-admin-9.1.1099000000000205", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_lti-courses-1.1.100035", "optional": [], "provides": [], "requires": ["configuration 2.0 3.0 4.0 5.0"]}
-{"id": "folio_marc-authorities-8.0.1099000000001346", "optional": ["audit-config 1.0", "audit-marc 1.0"], "provides": [], "requires": ["browse-authorities 1.0", "marc-records-editor 6.0", "resource-ids-streaming 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.3"]}
+{"id": "folio_marc-authorities-8.0.1099000000001371", "optional": ["audit-config 1.0", "audit-marc 1.0"], "provides": [], "requires": ["browse-authorities 1.0", "marc-records-editor 6.0", "resource-ids-streaming 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.3"]}
 {"id": "folio_marccat-3.0.1000438", "optional": [], "provides": [], "requires": ["marccat 2.0"]}
 {"id": "folio_mosaic-settings-1.0.1099000000000129", "optional": [], "provides": [], "requires": ["mosaic 1.0", "order-templates 1.0"]}
 {"id": "folio_myprofile-11.0.1099000000000178", "optional": [], "provides": [], "requires": ["settings 1.0"]}
