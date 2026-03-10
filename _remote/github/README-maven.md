@@ -41,7 +41,7 @@ It will ease management to have the same filename at every repository.
 
 Follow [Install the caller Workflow](#install-the-caller-workflow) section below to install the initial workflow.
 
-After the first Actions run, do not rename this caller workflow, as that will reset the GitHub run number and so wreck the order of the ModuleDescriptor identifiers.
+After the first Actions run, do not rename the filename of this caller workflow, as that will reset the GitHub run number and so wreck the sequential order of the ModuleDescriptor identifiers.
 
 
 ```yaml
