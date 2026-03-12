@@ -5110,7 +5110,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 2.0",
+    "interface": "erm-usage-harvester 2.1",
     "methods": "get:erm_usage_harvester_impl_get",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/impl"
@@ -5118,7 +5118,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 2.0",
+    "interface": "erm-usage-harvester 2.1",
     "methods": "get:erm_usage_harvester_jobs_get",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/jobs"
@@ -5134,7 +5134,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 2.0",
+    "interface": "erm-usage-harvester 2.1",
     "methods": "post:erm_usage_harvester_jobs_purgefinished_post",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/jobs/purgefinished"
@@ -5142,7 +5142,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 2.0",
+    "interface": "erm-usage-harvester 2.1",
     "methods": "post:erm_usage_harvester_jobs_purgestale_post",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/jobs/purgestale"
@@ -5150,7 +5150,7 @@
   {
     "apiDescription": "ramls/periodic.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 2.0",
+    "interface": "erm-usage-harvester 2.1",
     "methods": "delete:erm_usage_harvester_periodic_delete get:erm_usage_harvester_periodic_get post:erm_usage_harvester_periodic_post",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/periodic"
@@ -5158,7 +5158,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 2.0",
+    "interface": "erm-usage-harvester 2.1",
     "methods": "get:erm_usage_harvester_start_get",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/start"
@@ -5166,7 +5166,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 2.0",
+    "interface": "erm-usage-harvester 2.1",
     "methods": "get:erm_usage_harvester_start__id__get",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/start/{id}"
