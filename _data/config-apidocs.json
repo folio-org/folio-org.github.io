@@ -1567,7 +1567,9 @@
         "src/main/resources/swagger.api/okapi-facade.yaml"
       ],
       "raml": [],
-      "upload": []
+      "upload": [
+        "mod-okapi-facade.html"
+      ]
     },
     "metadata": {
       "apiTypes": [
@@ -2184,7 +2186,9 @@
         "src/main/resources/swagger.api/users-keycloak.yaml"
       ],
       "raml": [],
-      "upload": []
+      "upload": [
+        "mod-users-keycloak.html"
+      ]
     },
     "metadata": {
       "apiTypes": [
