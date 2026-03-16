@@ -8395,7 +8395,7 @@
     "apiDescription": "ramls/item-storage.raml",
     "apiType": "raml",
     "interface": "item-storage 11.2",
-    "methods": "delete:item_storage_items__itemid__delete get:item_storage_items__itemid__get patch:item_storage_items__itemid__patch put:item_storage_items__itemid__put",
+    "methods": "delete:item_storage_items__itemid__delete get:item_storage_items__itemid__get put:item_storage_items__itemid__put",
     "name": "mod-inventory-storage",
     "path": "/item-storage/items/{itemId}"
   },
