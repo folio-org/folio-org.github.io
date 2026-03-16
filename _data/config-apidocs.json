@@ -1441,7 +1441,9 @@
         "src/main/resources/swagger.api/mod-login-keycloak.yaml"
       ],
       "raml": [],
-      "upload": []
+      "upload": [
+        "mod-login-keycloak.html"
+      ]
     },
     "metadata": {
       "apiTypes": [
@@ -1941,7 +1943,9 @@
         "src/main/resources/swagger.api/mod-scheduler.yaml"
       ],
       "raml": [],
-      "upload": []
+      "upload": [
+        "mod-scheduler.html"
+      ]
     },
     "metadata": {
       "apiTypes": [
