@@ -397,7 +397,8 @@
         "ramls/configuration.raml",
         "ramls/inventory-audit.raml",
         "ramls/marc-audit.raml",
-        "ramls/mod-audit-handlers.raml"
+        "ramls/mod-audit-handlers.raml",
+        "ramls/user-audit.raml"
       ],
       "upload": []
     },
@@ -1310,7 +1311,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-invoice-storage",
     "org": "folio-org"
@@ -1672,7 +1673,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-organizations",
     "org": "folio-org"
@@ -1698,7 +1699,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-organizations-storage",
     "org": "folio-org"
