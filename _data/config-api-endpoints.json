@@ -1344,6 +1344,14 @@
     "path": "/audit-data/marc/bib/{entityId}"
   },
   {
+    "apiDescription": "ramls/user-audit.raml",
+    "apiType": "raml",
+    "interface": "audit-user 1.0",
+    "methods": "get:audit_data_user__userid__get",
+    "name": "mod-audit",
+    "path": "/audit-data/user/{userId}"
+  },
+  {
     "apiDescription": "ramls/audit-data.raml",
     "apiType": "raml",
     "interface": "audit 1.1",
