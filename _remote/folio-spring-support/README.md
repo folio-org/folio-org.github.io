@@ -258,6 +258,16 @@ These fields will also be provided:
 - `FolioSpringLiquibase folioSpringLiquibase`, for interacting with Liquibase directly (this
   extends `SpringLiquibase` and may be `null` if Liquibase is not enabled!)
 
+Additional Liquibase helper bean available from the library:
+
+- `LiquibaseMigrationLockService` can be injected by modules that need to delay work while database
+  migration is in progress.
+- `boolean isMigrationRunning()` returns `true` when processing should be retried because Liquibase
+  is still running or the Liquibase lock table is not ready yet, and returns `false` when the
+  database is ready for normal processing.
+- `LiquibaseMigrationException` is thrown when migration state cannot be determined because of an
+  unexpected infrastructure or Liquibase access problem, including missing tenant context.
+
 ### Event Order
 
 The [events](#tenantservice-event-methods) will be called in the following order:
@@ -328,4 +338,3 @@ Translations may be performed in backend modules using the `folio-spring-i18n` l
 
 See project [FOLSPRINGB](https://issues.folio.org/browse/FOLSPRINGB)
 at the [FOLIO issue tracker](https://dev.folio.org/guidelines/issue-tracker).
-
