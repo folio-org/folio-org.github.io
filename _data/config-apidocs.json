@@ -1756,7 +1756,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-patron-blocks",
     "org": "folio-org"
@@ -1936,6 +1936,23 @@
       "generator": "api_doc.py 1.9"
     },
     "name": "mod-rtac",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "src/main/resources/swagger.api/mod-rtac-cache.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.9"
+    },
+    "name": "mod-rtac-cache",
     "org": "folio-org"
   },
   {
