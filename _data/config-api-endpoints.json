@@ -11912,11 +11912,67 @@
     "path": "/rtac-cache/batch"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/mod-rtac-cache.yaml",
+    "apiType": "oas",
+    "interface": "rtac-cache 1.0",
+    "methods": "post:operation/postRtacCacheBatchHoldings",
+    "name": "mod-rtac-cache",
+    "path": "/rtac-cache/batch"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-rtac-cache.yaml",
+    "apiType": "oas",
+    "interface": "rtac-cache 1.0",
+    "methods": "post:operation/postRtacCacheInvalidate",
+    "name": "mod-rtac-cache",
+    "path": "/rtac-cache/invalidate"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-rtac-cache.yaml",
+    "apiType": "oas",
+    "interface": "rtac-cache 1.0",
+    "methods": "post:operation/postRtacCacheInvalidateAll",
+    "name": "mod-rtac-cache",
+    "path": "/rtac-cache/invalidate-all"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-rtac-cache.yaml",
+    "apiType": "oas",
+    "interface": "rtac-cache 1.0",
+    "methods": "get:operation/getRtacCachePreWarmingJobs post:operation/postRtacCachePreWarmingJob",
+    "name": "mod-rtac-cache",
+    "path": "/rtac-cache/prewarm"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-rtac-cache.yaml",
+    "apiType": "oas",
+    "interface": "rtac-cache 1.0",
+    "methods": "get:operation/getRtacCachePreWarmingJob",
+    "name": "mod-rtac-cache",
+    "path": "/rtac-cache/prewarm/{id}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/edge-rtac.yaml",
     "apiType": "oas",
     "methods": "get:operation/searchRtacCacheHoldings",
     "name": "edge-rtac",
     "path": "/rtac-cache/search/{instanceId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-rtac-cache.yaml",
+    "apiType": "oas",
+    "interface": "rtac-cache 1.0",
+    "methods": "get:operation/searchRtacCacheHoldings",
+    "name": "mod-rtac-cache",
+    "path": "/rtac-cache/search/{instanceId}"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-rtac-cache.yaml",
+    "apiType": "oas",
+    "interface": "rtac-cache 1.0",
+    "methods": "get:operation/getRtacCacheHoldingsById",
+    "name": "mod-rtac-cache",
+    "path": "/rtac-cache/{id}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/edge-rtac.yaml",
