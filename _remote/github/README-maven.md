@@ -242,7 +242,7 @@ If there is a need to quickly revert to Jenkins-based build, then [delete](https
    - Set the new development version by:
      - Incrementing the **minor** version for regular releases (`X.Y+1.0`) or
      - Incrementing the **patch version** for bugfix releases (`X.Y.Z+1`);
-5. Push the test branch to GitHub and create a pull request against the mainline branch;
+5. Push the temporary branch to GitHub and create a pull request against the mainline branch;
 6. Once the PR passes, merge the pull request (do _not_ use a squash commit — merge the full release branch history) and push the tag (`git push --tags`);
 7. Wait for the tag's GitHub Actions build to run (you can find it in the list under the `Actions` tab — look for the middle column specifying the tag's name);
 8. Announce it to the world:
@@ -304,4 +304,4 @@ Occasionally the job to "Publish ModuleDescriptor" gets a timeout at the registr
 
 In this case the Docker image would be published but not the associated ModuleDescriptor.
 
-Do "dispatch" the workflow again to publish a new Docker image and ModuleDescriptor.
+Either re-run that failed job, or "dispatch" the complete workflow again to publish a new Docker image and ModuleDescriptor.
