@@ -224,7 +224,7 @@ For modules that are now using the "api-doc" CI facility, there is an automated 
 Note that the PR must be merged on that day.
 
 For repositories that have now added their initial API docs, there is another task that needs to happen after the above-mentioned PR is merged.
-The module needs an entry in the [`_data/apigroup.yml`](https://github.com/folio-org/folio-org.github.io/blob/master/_data/apigroup.yml) file.
+The module needs an entry in the [`_data/apigroup.yml`](https://github.com/folio-org/folio-org.github.io/blob/master/_data/apigroup.yml) file and remove it from the [`_data/api-missing.yml`](https://github.com/folio-org/folio-org.github.io/blob/master/_data/api-missing.yml) file.
 
 So there will be a daily delay for new (or deleted) entries to be listed in their table.
 Updates to the actual generated API documents for each module do [happen](#generated-during-ci) automatically, being deployed during their “merge to main branch” phase.
