@@ -223,6 +223,9 @@ When api-doc generates the API documentation for a module, it also maintains a d
 For modules that are now using the "api-doc" CI facility, there is an automated daily workflow "[gather-config-apidocs](https://github.com/folio-org/folio-org.github.io/actions/workflows/gather-config-apidocs.yml)" which collects the "API data" configuration changes and issues a pull-request.
 Note that the PR must be merged on that day.
 
+For repositories that have now added their initial API docs, there is another task that needs to happen after the above-mentioned PR is merged.
+The module needs an entry in the [`_data/apigroup.yml`](https://github.com/folio-org/folio-org.github.io/blob/master/_data/apigroup.yml) file.
+
 So there will be a daily delay for new (or deleted) entries to be listed in their table.
 Updates to the actual generated API documents for each module do [happen](#generated-during-ci) automatically, being deployed during their “merge to main branch” phase.
 
