@@ -8572,6 +8572,22 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
+    "interface": "linked-data-batch-job 1.0",
+    "methods": "get:operation/getBatchJobStatus",
+    "name": "mod-linked-data",
+    "path": "/linked-data/batch/status"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "_timer 1.0",
+    "methods": "post:operation/graphCleaning",
+    "name": "mod-linked-data",
+    "path": "/linked-data/graphCleaning"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
     "interface": "linked-data 2.0",
     "methods": "get:operation/getHubPreviewByUri post:operation/saveHubByUri",
     "name": "mod-linked-data",
@@ -8584,6 +8600,14 @@
     "methods": "post:operation/import-file",
     "name": "mod-linked-data",
     "path": "/linked-data/import/file"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "linked-data 2.0",
+    "methods": "post:operation/import-url",
+    "name": "mod-linked-data",
+    "path": "/linked-data/import/url"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
@@ -8642,7 +8666,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "interface": "linked-data-reindex 1.0",
+    "interface": "linked-data-batch-job 1.0",
     "methods": "post:operation/fullReindex",
     "name": "mod-linked-data",
     "path": "/linked-data/reindex/full"
@@ -8650,18 +8674,10 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "interface": "linked-data-reindex 1.0",
+    "interface": "linked-data-batch-job 1.0",
     "methods": "post:operation/incrementalReindex",
     "name": "mod-linked-data",
     "path": "/linked-data/reindex/incremental"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
-    "apiType": "oas",
-    "interface": "linked-data-reindex 1.0",
-    "methods": "get:operation/getReindexJobStatus",
-    "name": "mod-linked-data",
-    "path": "/linked-data/reindex/status"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
