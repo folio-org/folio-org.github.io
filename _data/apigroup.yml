@@ -1,4 +1,4 @@
-# List of groups used to categorise apidocs. See api.yml for further information.
+# List of groups used to categorise apidocs.
 ---
 login:
   title: Login
@@ -112,6 +112,7 @@ remote-integration:
     - mod-mosaic
     - mod-remote-storage
     - mod-rtac
+    - mod-rtac-cache
     - edge-rtac
 utilities:
   title: Utilities and tools
