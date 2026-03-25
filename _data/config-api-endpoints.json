@@ -1666,6 +1666,14 @@
   {
     "apiDescription": "target/api/openapi/mod-entities-links.yaml",
     "apiType": "oas",
+    "interface": "authority-identifier-types 1.0",
+    "methods": "get:operation/retrieveAuthorityIdentifierTypes",
+    "name": "mod-entities-links",
+    "path": "/authority-identifier-types"
+  },
+  {
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
+    "apiType": "oas",
     "interface": "authority-note-types 1.0",
     "methods": "get:operation/retrieveAuthorityNoteTypes post:operation/createAuthorityNoteType",
     "name": "mod-entities-links",
@@ -2462,14 +2470,6 @@
     "methods": "put:change_manager_jobexecutions__id__status_put",
     "name": "mod-source-record-manager",
     "path": "/change-manager/jobExecutions/{id}/status"
-  },
-  {
-    "apiDescription": "ramls/change-manager.raml",
-    "apiType": "raml",
-    "interface": "source-manager-parsed-records 4.0",
-    "methods": "put:change_manager_parsedrecords__id__put",
-    "name": "mod-source-record-manager",
-    "path": "/change-manager/parsedRecords/{id}"
   },
   {
     "apiDescription": "ramls/check-in-storage.raml",
@@ -11330,15 +11330,15 @@
   {
     "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
     "apiType": "oas",
-    "interface": "marc-records-editor 6.0",
-    "methods": "post:null",
+    "interface": "marc-records-editor 7.0",
+    "methods": "post:operation/suggestLinks",
     "name": "mod-quick-marc",
     "path": "/records-editor/links/suggestion"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
     "apiType": "oas",
-    "interface": "marc-records-editor 6.0",
+    "interface": "marc-records-editor 7.0",
     "methods": "get:operation/getRecordByExternalId post:operation/createNewRecord",
     "name": "mod-quick-marc",
     "path": "/records-editor/records"
@@ -11346,24 +11346,16 @@
   {
     "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
     "apiType": "oas",
-    "interface": "marc-records-editor 6.0",
-    "methods": "get:operation/getRecordCreationStatus",
-    "name": "mod-quick-marc",
-    "path": "/records-editor/records/status"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/records-editor-async.yaml",
-    "apiType": "oas",
-    "interface": "marc-records-editor 6.0",
-    "methods": "put:operation/putRecord",
+    "interface": "marc-records-editor 7.0",
+    "methods": "put:operation/updateRecord",
     "name": "mod-quick-marc",
     "path": "/records-editor/records/{id}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/records-editor.yaml",
     "apiType": "oas",
-    "interface": "marc-records-editor 6.0",
-    "methods": "post:null",
+    "interface": "marc-records-editor 7.0",
+    "methods": "post:operation/validateRecord",
     "name": "mod-quick-marc",
     "path": "/records-editor/validate"
   },
