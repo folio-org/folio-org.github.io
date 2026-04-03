@@ -9433,7 +9433,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/notes.yml",
     "apiType": "oas",
-    "interface": "notes 3.0",
+    "interface": "notes 4.0",
     "methods": "get:operation/getNoteTypeCollection post:operation/createNoteType",
     "name": "mod-notes",
     "path": "/note-types"
@@ -9441,7 +9441,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/notes.yml",
     "apiType": "oas",
-    "interface": "notes 3.0",
+    "interface": "notes 4.0",
     "methods": "delete:operation/deleteNoteType get:operation/getNoteType put:operation/updateNoteType",
     "name": "mod-notes",
     "path": "/note-types/{id}"
@@ -9449,7 +9449,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/notes.yml",
     "apiType": "oas",
-    "interface": "notes 3.0",
+    "interface": "notes 4.0",
     "methods": "get:operation/getNoteCollection post:operation/createNote",
     "name": "mod-notes",
     "path": "/notes"
@@ -9457,7 +9457,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/notes.yml",
     "apiType": "oas",
-    "interface": "notes 3.0",
+    "interface": "notes 4.0",
     "methods": "delete:operation/deleteNote get:operation/getNote put:operation/updateNote",
     "name": "mod-notes",
     "path": "/notes/{id}"
