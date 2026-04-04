@@ -1518,7 +1518,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-notes",
     "org": "folio-org"
