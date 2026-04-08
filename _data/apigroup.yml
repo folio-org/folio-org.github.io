@@ -58,7 +58,6 @@ course-reserves:
   description: Education courses and the items that have been reserved to them.
   modules:
     - mod-courses
-    - edge-lti-courses
     - edge-courses
 finance:
   title: Finance and orders
