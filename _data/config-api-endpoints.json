@@ -899,13 +899,6 @@
     "path": "/admin/get_password"
   },
   {
-    "apiDescription": "ramls/edge-lti-courses.raml",
-    "apiType": "raml",
-    "methods": "get:admin_health_get",
-    "name": "edge-lti-courses",
-    "path": "/admin/health"
-  },
-  {
     "apiDescription": "ramls/edge-oai-pmh.raml",
     "apiType": "raml",
     "methods": "get:admin_health_get",
@@ -1662,6 +1655,14 @@
     "methods": "patch:operation/updateGroupSetting",
     "name": "mod-entities-links",
     "path": "/authorities/config/groups/{groupId}/settings/{key}"
+  },
+  {
+    "apiDescription": "target/api/openapi/mod-entities-links.yaml",
+    "apiType": "oas",
+    "interface": "authority-heading-types 1.0",
+    "methods": "get:operation/retrieveAuthorityHeadingTypes",
+    "name": "mod-entities-links",
+    "path": "/authority-heading-types"
   },
   {
     "apiDescription": "target/api/openapi/mod-entities-links.yaml",
@@ -9052,41 +9053,6 @@
     "methods": "delete:lost_item_fees_policies__lostitemfeepolicyid__delete get:lost_item_fees_policies__lostitemfeepolicyid__get put:lost_item_fees_policies__lostitemfeepolicyid__put",
     "name": "mod-feesfines",
     "path": "/lost-item-fees-policies/{lostItemFeePolicyId}"
-  },
-  {
-    "apiDescription": "ramls/edge-lti-courses.raml",
-    "apiType": "raml",
-    "methods": "get:lti_courses__well_known_jwks_json_get",
-    "name": "edge-lti-courses",
-    "path": "/lti-courses/.well-known/jwks.json"
-  },
-  {
-    "apiDescription": "ramls/edge-lti-courses.raml",
-    "apiType": "raml",
-    "methods": "post:lti_courses_externalidlaunches__apikeypath__post",
-    "name": "edge-lti-courses",
-    "path": "/lti-courses/externalIdLaunches/{apiKeyPath}"
-  },
-  {
-    "apiDescription": "ramls/edge-lti-courses.raml",
-    "apiType": "raml",
-    "methods": "post:lti_courses_launches__apikeypath__post",
-    "name": "edge-lti-courses",
-    "path": "/lti-courses/launches/{apiKeyPath}"
-  },
-  {
-    "apiDescription": "ramls/edge-lti-courses.raml",
-    "apiType": "raml",
-    "methods": "get:lti_courses_oidc_login_init__apikeypath__get",
-    "name": "edge-lti-courses",
-    "path": "/lti-courses/oidc-login-init/{apiKeyPath}"
-  },
-  {
-    "apiDescription": "ramls/edge-lti-courses.raml",
-    "apiType": "raml",
-    "methods": "post:lti_courses_registraridlaunches__apikeypath__post",
-    "name": "edge-lti-courses",
-    "path": "/lti-courses/registrarIdLaunches/{apiKeyPath}"
   },
   {
     "apiDescription": "src/main/resources/openapi/batchPrint.yaml",

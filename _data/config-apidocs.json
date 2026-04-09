@@ -159,23 +159,6 @@
     "config": {
       "oas": [],
       "raml": [
-        "ramls/edge-lti-courses.raml"
-      ],
-      "upload": []
-    },
-    "metadata": {
-      "apiTypes": [
-        "RAML"
-      ],
-      "generator": "api_doc.py 1.5.2"
-    },
-    "name": "edge-lti-courses",
-    "org": "folio-org"
-  },
-  {
-    "config": {
-      "oas": [],
-      "raml": [
         "ramls/edge-oai-pmh.raml"
       ],
       "upload": []
