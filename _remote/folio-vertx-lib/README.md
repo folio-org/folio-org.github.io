@@ -4,7 +4,7 @@ layout: null
 
 # folio-vertx-lib
 
-Copyright (C) 2021-2025 The Open Library Foundation
+Copyright (C) 2021-2026 The Open Library Foundation
 
 This software is distributed under the terms of the Apache License,
 Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
@@ -142,7 +142,7 @@ the minimal way to use the plugin is to use:
   <plugin>
     <groupId>org.folio</groupId>
     <artifactId>openapi-deref-plugin</artifactId>
-    <version>4.0.0</version>
+    <version>4.1.1</version>
     <executions>
       <execution>
         <id>dereference-books</id>

@@ -11,25 +11,29 @@ Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
-- [Introduction](#introduction)
-- [Code structure](#code-structure)
-- [Execution Context](#execution-context)
-- [Properties](#properties)
-- [CQL support](#cql-support)
-- [Logging](#logging)
-  - [Default logging format](#default-logging-format)
-  - [Request and Response Logging](#request-and-response-logging)
-- [Custom `/_/tenant` Logic](#custom-_tenant-logic)
-  - [`TenantService` Event Methods](#tenantservice-event-methods)
-  - [`TenantService` Methods and Fields](#tenantservice-methods-and-fields)
-  - [Event Order](#event-order)
-    - [Upon Creation](#upon-creation)
-    - [Upon Deletion](#upon-deletion)
-  - [Sample](#sample)
-- [Internationalization](#internationalization)
-- [Additional information](#additional-information)
-  - [Issue tracker](#issue-tracker)
+<!-- TOC -->
+* [folio-spring-support](#folio-spring-support)
+  * [Table of Contents](#table-of-contents)
+  * [Introduction](#introduction)
+  * [Code structure](#code-structure)
+  * [Execution Context](#execution-context)
+  * [Properties](#properties)
+  * [Database Connection Pool Settings](#database-connection-pool-settings)
+  * [CQL support](#cql-support)
+  * [Logging](#logging)
+    * [Default logging format](#default-logging-format)
+    * [Request and Response Logging](#request-and-response-logging)
+  * [Custom `/_/tenant` Logic](#custom-_tenant-logic)
+    * [`TenantService` Event Methods](#tenantservice-event-methods)
+    * [`TenantService` Methods and Fields](#tenantservice-methods-and-fields)
+    * [Event Order](#event-order)
+      * [Upon Creation](#upon-creation)
+      * [Upon Deletion](#upon-deletion)
+    * [Sample](#sample)
+  * [Internationalization](#internationalization)
+  * [Additional information](#additional-information)
+    * [Issue tracker](#issue-tracker)
+<!-- TOC -->
 
 ## Introduction
 
@@ -135,6 +139,11 @@ void businessMethod(String tenantId) {
 | `folio.logging.request.level`                         | Specifies logging level for incoming requests                                                                                                                                                                         | `basic`       | `none, basic, headers, full` |
 | `folio.logging.feign.enabled`                         | Turn on logging for outgoing requests in feign clients                                                                                                                                                                | `true`        | `true or false`              |
 | `folio.logging.feign.level`                           | Specifies logging level for outgoing requests                                                                                                                                                                         | `basic`       | `none, basic, headers, full` |
+
+## Database Connection Pool Settings
+
+See [Database Connection Pool Settings](doc/DB_CONNECTION_POOL_SETTINGS.md) for the `DB_*`
+environment variables and configuration order.
 
 ## CQL support
 
