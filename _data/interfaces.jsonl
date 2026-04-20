@@ -23,7 +23,7 @@
 {"id": "folio_agreements-12.2.1099000000001971", "optional": ["licenses 6.0", "order-lines 2.0 3.0 4.0", "organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_audit-1.0.10000024", "optional": [], "provides": [], "requires": []}
 {"id": "folio_authorization-policies-2.0.1099000000000136", "optional": [], "provides": [], "requires": ["policies 1.1"]}
-{"id": "folio_authorization-roles-2.1.1099000000000251", "optional": [], "provides": [], "requires": ["capabilities 1.0", "capability-sets 1.0 2.0", "role-capabilities 1.0", "role-capability-sets 1.1", "roles 1.1", "roles-user 1.0"]}
+{"id": "folio_authorization-roles-2.1.1099000000000262", "optional": [], "provides": [], "requires": ["capabilities 1.0", "capability-sets 1.0 2.0", "role-capabilities 1.0", "role-capability-sets 1.1", "roles 1.1", "roles-user 1.0"]}
 {"id": "folio_bulck-edit-1.0.10005", "optional": [], "provides": [], "requires": []}
 {"id": "folio_bulk-edit-5.1.1099000000001118", "optional": [], "provides": [], "requires": ["bulk-operations 1.0", "entity-types 2.0", "users 15.4 16.0"]}
 {"id": "folio_calendar-13.0.1099000000000242", "optional": [], "provides": [], "requires": ["calendar 5.0", "service-points 3.0", "users 16.0"]}
@@ -111,7 +111,7 @@
 {"id": "folio_servicepoints-9.0.1099000000000092", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-acq-components-7.1.1099000000000556", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-authority-components-7.0.0", "optional": [], "provides": [], "requires": ["authority-source-files 2.0", "browse-authorities 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.0"]}
-{"id": "folio_stripes-authorization-components-2.1.0", "optional": [], "provides": [], "requires": []}
+{"id": "folio_stripes-authorization-components-2.1.1099000000000491", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-components-12.2.109900000000337", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-connect-9.2.1090000005", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-core-11.1.1099000000001652", "optional": ["consortia 1.0", "locale 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "settings 1.0", "users-bl 5.0 6.0"]}
