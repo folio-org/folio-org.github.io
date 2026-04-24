@@ -2004,7 +2004,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.7"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-serials-management",
     "org": "folio-org"

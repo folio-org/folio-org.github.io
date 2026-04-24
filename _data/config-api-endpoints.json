@@ -12350,6 +12350,14 @@
     "apiDescription": "openapi/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
+    "methods": "post:operation/replaceAndDeleteModelRuleset",
+    "name": "mod-serials-management",
+    "path": "/serials-management/modelRulesets/{uuid}/replaceAndDelete"
+  },
+  {
+    "apiDescription": "openapi/serials-management.yaml",
+    "apiType": "oas",
+    "interface": "serials-management",
     "methods": "get:operation/getPredictedPieceSets",
     "name": "mod-serials-management",
     "path": "/serials-management/predictedPieces"
