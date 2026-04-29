@@ -34,6 +34,8 @@ We call settings without userId 'global'. Global settings must be unique
 for scope and key. Non-global settings must be unique for scope, key
 and userId.
 
+## Permissions for settings
+
 Settings are protected by permissions.
 
 In order to write to a global setting, the client must have permission
@@ -57,6 +59,18 @@ using POST, PUT and DELETE.
 
 We expect that most users will have read-write permission on their own
 settings, and read-only permission on global entries.
+
+### Important note on Eureka
+
+The Eureka platform enforces [a set of rules on what permission names are acceptable](https://folio-org.atlassian.net/wiki/spaces/FOLIJET/pages/156368925/Permissions+naming+convention) and simply discards any that it does not like, which can give rise to subtle action-at-a-distance bugs such as [UIINIMP-27](https://folio-org.atlassian.net/browse/UIINIMP-27). [Section 5 of the conventions](https://folio-org.atlassian.net/wiki/spaces/FOLIJET/pages/156368925/Permissions+naming+convention) says that each permission name must end with an "action verb", which for back-end permissions are `get`, `post`, `put`, `patch`, `delete` or `execute`. (The acceptable action verbs are different for UI modules).
+
+The practical outcome is that scope-based settings permissions such as `mod-settings.global.read.mod-inventory-update` will work fine under Okapi, **but silently fail to exist under Eureka**. For this reason, such permissions should be named with a redundant action verb at the end, e.g. `mod-settings.global.read.mod-inventory-update.get` or `mod-settings.global.write.mod-inventory-update.post`.
+
+It seems that `.manage` is the conventional action verb to use for scope-based settings permissions, as seen in examples such as `mod-settings.global.read.ui-erm-usage.manage` and `mod-settings.global.read.ui-tags.tags.manage`. (That is not documented as acceptable for back-end modules, but by observation it must be, and it's probably best to follow prior art.)
+
+Note: if renaming an existing scope-based settings permission for Eureka compatibility, don't forget to [use `replaces` to keep compatibility with the old permission name](https://github.com/folio-org/okapi/blob/master/doc/guide.md#permissions-and-the-_tenantpermissions-interface).
+
+## API
 
 The API is CRUD-like, but with some important changes for some.
 
