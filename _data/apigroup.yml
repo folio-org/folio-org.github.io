@@ -36,6 +36,7 @@ inventory:
     - mod-inventory-update
     - mod-kb-ebsco-java
     - mod-linked-data
+    - mod-locations
     - mod-linked-data-import
     - mod-marc-migrations
     - mod-oai-pmh
