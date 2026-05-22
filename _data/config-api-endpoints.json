@@ -8976,6 +8976,70 @@
     "path": "/locale"
   },
   {
+    "apiDescription": "target/api/openapi/mod-locations.yaml",
+    "apiType": "oas",
+    "interface": "location-storage 1.0",
+    "methods": "delete:operation/deleteLocationCampuses get:operation/getLocationCampuses post:operation/createLocationCampus",
+    "name": "mod-locations",
+    "path": "/location-storage/campuses"
+  },
+  {
+    "apiDescription": "target/api/openapi/mod-locations.yaml",
+    "apiType": "oas",
+    "interface": "location-storage 1.0",
+    "methods": "delete:operation/deleteLocationCampusById get:operation/getLocationCampusById put:operation/updateLocationCampusById",
+    "name": "mod-locations",
+    "path": "/location-storage/campuses/{id}"
+  },
+  {
+    "apiDescription": "target/api/openapi/mod-locations.yaml",
+    "apiType": "oas",
+    "interface": "location-storage 1.0",
+    "methods": "delete:operation/deleteLocationInstitutions get:operation/getLocationInstitutions post:operation/createLocationInstitution",
+    "name": "mod-locations",
+    "path": "/location-storage/institutions"
+  },
+  {
+    "apiDescription": "target/api/openapi/mod-locations.yaml",
+    "apiType": "oas",
+    "interface": "location-storage 1.0",
+    "methods": "delete:operation/deleteLocationInstitutionById get:operation/getLocationInstitutionById put:operation/updateLocationInstitutionById",
+    "name": "mod-locations",
+    "path": "/location-storage/institutions/{id}"
+  },
+  {
+    "apiDescription": "target/api/openapi/mod-locations.yaml",
+    "apiType": "oas",
+    "interface": "location-storage 1.0",
+    "methods": "delete:operation/deleteLocationLibraries get:operation/getLocationLibraries post:operation/createLocationLibrary",
+    "name": "mod-locations",
+    "path": "/location-storage/libraries"
+  },
+  {
+    "apiDescription": "target/api/openapi/mod-locations.yaml",
+    "apiType": "oas",
+    "interface": "location-storage 1.0",
+    "methods": "delete:operation/deleteLocationLibraryById get:operation/getLocationLibraryById put:operation/updateLocationLibraryById",
+    "name": "mod-locations",
+    "path": "/location-storage/libraries/{id}"
+  },
+  {
+    "apiDescription": "target/api/openapi/mod-locations.yaml",
+    "apiType": "oas",
+    "interface": "location-storage 1.0",
+    "methods": "delete:operation/deleteLocations get:operation/getLocations post:operation/createLocation",
+    "name": "mod-locations",
+    "path": "/location-storage/locations"
+  },
+  {
+    "apiDescription": "target/api/openapi/mod-locations.yaml",
+    "apiType": "oas",
+    "interface": "location-storage 1.0",
+    "methods": "delete:operation/deleteLocationById get:operation/getLocationById put:operation/updateLocationById",
+    "name": "mod-locations",
+    "path": "/location-storage/locations/{id}"
+  },
+  {
     "apiDescription": "ramls/locationunit.raml",
     "apiType": "raml",
     "interface": "location-units 2.1",
@@ -12488,6 +12552,38 @@
     "methods": "delete:operation/deleteSerial get:operation/getSerial put:operation/putSerial",
     "name": "mod-serials-management",
     "path": "/serials-management/serials/{uuid}"
+  },
+  {
+    "apiDescription": "target/api/openapi/mod-locations.yaml",
+    "apiType": "oas",
+    "interface": "service-point-storage 1.0",
+    "methods": "delete:operation/deleteServicePoints get:operation/getServicePoints post:operation/createServicePoint",
+    "name": "mod-locations",
+    "path": "/service-point-storage/service-points"
+  },
+  {
+    "apiDescription": "target/api/openapi/mod-locations.yaml",
+    "apiType": "oas",
+    "interface": "service-point-storage 1.0",
+    "methods": "delete:operation/deleteServicePointsUsers get:operation/getServicePointsUsers post:operation/createServicePointsUser",
+    "name": "mod-locations",
+    "path": "/service-point-storage/service-points-users"
+  },
+  {
+    "apiDescription": "target/api/openapi/mod-locations.yaml",
+    "apiType": "oas",
+    "interface": "service-point-storage 1.0",
+    "methods": "delete:operation/deleteServicePointsUserById get:operation/getServicePointsUserById put:operation/updateServicePointsUserById",
+    "name": "mod-locations",
+    "path": "/service-point-storage/service-points-users/{id}"
+  },
+  {
+    "apiDescription": "target/api/openapi/mod-locations.yaml",
+    "apiType": "oas",
+    "interface": "service-point-storage 1.0",
+    "methods": "delete:operation/deleteServicePointById get:operation/getServicePointById put:operation/updateServicePointById",
+    "name": "mod-locations",
+    "path": "/service-point-storage/service-points/{id}"
   },
   {
     "apiDescription": "ramls/service-point.raml",
