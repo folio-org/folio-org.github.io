@@ -1404,6 +1404,23 @@
   },
   {
     "config": {
+      "oas": [
+        "api/mod-locations.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.9"
+    },
+    "name": "mod-locations",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/login.raml"
