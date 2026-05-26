@@ -69,9 +69,9 @@ Use the "Settings > Branches > Add classic branch protection rule" to enable for
 
 Ensure that the branch protection required status checks include the "license/cla" for the required [FOLIO Project Contributor License Agreement](/guidelines/cla-process/).
 
-For [front-end](#add-specific-configuration-files) repositories, when the GitHub Actions Workflows are operational then required checks can be configured here. Follow similar repositories.
+For [front-end](#add-specific-configuration-files) repositories, when the GitHub Actions Workflows are ready then required checks can be configured here. Follow similar repositories.
 
-For [back-end](#add-specific-configuration-files) repositories, when the Jenkinsfile is operational then required checks can be configured here. Follow similar repositories.
+For [back-end](#add-specific-configuration-files) repositories, when the GitHub Actions Workflows are ready then required checks can be configured here.
 
 ## Add initial files
 
@@ -94,7 +94,7 @@ Add the required LICENSE (taken from [apache.org](https://www.apache.org/license
 Ensure that the required copyright and license statement is near the top of the README.
 Use the initial year of creation for the date.
 (In subsequent years it will become a [date range](https://folio-org.atlassian.net/browse/FOLIO-1021).)
-Don't alter the LICENSE file, don't fill the copyright boilerplate in the LICENSE file appendix.
+Do not alter the LICENSE file, do not fill the copyright boilerplate in the LICENSE file appendix.
 
 Ensure that any package.json and pom.xml etc. type of configuration file has the appropriate required "licence" elements.
 
@@ -117,15 +117,17 @@ The [Commence a module - structure and configuration](/guides/commence-a-module/
 
 ### Backend specific
 
-For back-end modules: descriptors/ModuleDescriptor-template.json, Dockerfile, POM, Jenkinsfile, etc.
+For back-end modules: descriptors/ModuleDescriptor-template.json, Dockerfile, POM, etc.
 
 Get the initial basic source files and other configuration files added first.
 
-Then add the Jenkinsfile to initiate the CI processing.
+All back-end repositories will use GitHub Actions Workflows.
+Refer to the relevant document at [Shared GitHub Workflows for FOLIO](https://github.com/folio-org/.github).
 Do this early so that CI can assist.
+
 **Note:**
-The Jenkinsfile needs to be committed directly to master branch.
-If it is done via a pull-request then that will fail, as the initial base Sonar scan for master branch has not yet run.
+This new repository needs to be manually added to Sonarcloud and to Docker Hub.
+Seek FOLIO DevOps [assistance](/faqs/how-to-raise-devops-ticket/).
 
 **Note:** The [api-lint](/guides/api-lint/) and [api-schema-lint](/guides/describe-schema/) and [api-doc](/guides/api-doc/) are now done via GitHub Workflows, not via Jenkinsfile.
 
