@@ -133,7 +133,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.9"
     },
     "name": "edge-inn-reach",
     "org": "folio-org"
@@ -1827,7 +1827,7 @@
       "apiTypes": [
         "OAS"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-reading-room",
     "org": "folio-org"
