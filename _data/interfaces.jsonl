@@ -81,7 +81,7 @@
 {"id": "folio_plugin-find-agreement-12.2.1099000000000163", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_plugin-find-authority-6.0.1099000000000147", "optional": [], "provides": [], "requires": []}
 {"id": "folio_plugin-find-contact-6.1.1099000000000092", "optional": [], "provides": [], "requires": ["organizations-storage.categories 1.1", "organizations-storage.contacts 2.0"]}
-{"id": "folio_plugin-find-eresource-8.2.1099000000000161", "optional": [], "provides": [], "requires": ["erm 7.0"]}
+{"id": "folio_plugin-find-eresource-8.2.1099000000000164", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_plugin-find-erm-usage-data-provider-7.1.1099000000000175", "optional": [], "provides": [], "requires": ["aggregator-settings 1.0 2.0", "erm-usage-harvester 1.1 2.0", "usage-data-providers 2.0 3.0"]}
 {"id": "folio_plugin-find-finc-metadata-collection-8.1.1099000000000237", "optional": [], "provides": [], "requires": ["finc-config-metadata-collections 1.0"]}
 {"id": "folio_plugin-find-finc-metadata-source-8.1.1099000000000186", "optional": [], "provides": [], "requires": ["finc-config-metadata-sources 1.0"]}
