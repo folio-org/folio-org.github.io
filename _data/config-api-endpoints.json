@@ -7162,6 +7162,13 @@
     "path": "/inn-reach/transactions/{itemBarcode}/check-out-item/{servicePointId}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/edge-inn-reach.yaml",
+    "apiType": "oas",
+    "methods": "post:operation/getToken",
+    "name": "edge-inn-reach",
+    "path": "/innreach/v2/oauth2/token"
+  },
+  {
     "apiDescription": "ramls/instance-date-type.raml",
     "apiType": "raml",
     "interface": "instance-date-types 1.0",
@@ -13804,13 +13811,6 @@
     "methods": "delete:users__userid__delete get:users__userid__get put:users__userid__put",
     "name": "mod-users",
     "path": "/users/{userId}"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/edge-inn-reach.yaml",
-    "apiType": "oas",
-    "methods": "post:operation/getToken",
-    "name": "edge-inn-reach",
-    "path": "/v2/oauth2/token"
   },
   {
     "apiDescription": "ramls/voucher.raml",
