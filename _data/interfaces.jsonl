@@ -20,7 +20,7 @@
 {"id": "folio-org_ld-folio-wrapper-1.2.1099000000003", "optional": [], "provides": [], "requires": []}
 {"id": "folio-org_linked-data-1.0.10990000000029", "optional": [], "provides": [], "requires": []}
 {"id": "folio_acquisition-units-7.0.1099000000000135", "optional": [], "provides": [], "requires": ["acquisitions-units 1.1", "users 15.1 16.0"]}
-{"id": "folio_agreements-12.2.1099000000002007", "optional": ["licenses 6.0", "order-lines 2.0 3.0 4.0", "organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["erm 7.0"]}
+{"id": "folio_agreements-12.2.1099000000002012", "optional": ["licenses 6.0", "order-lines 2.0 3.0 4.0", "organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_audit-1.0.10000024", "optional": [], "provides": [], "requires": []}
 {"id": "folio_authorization-policies-3.0.0", "optional": [], "provides": [], "requires": ["policies 1.1"]}
 {"id": "folio_authorization-roles-3.0.1099000000000270", "optional": [], "provides": [], "requires": ["capabilities 1.0", "capability-sets 1.0 2.0", "role-capabilities 1.0", "role-capability-sets 1.1", "roles 1.1", "roles-user 1.0"]}
@@ -34,13 +34,13 @@
 {"id": "folio_claims-2.0.2099000000000314", "optional": [], "provides": [], "requires": ["acquisitions-units 1.1", "configuration 2.0", "contributor-types 2.0", "holdings-storage 8.0", "location-units 2.0", "locations 3.0", "material-types 2.2", "order-lines 4.0", "orders 13.0", "orders-storage.settings 1.0", "organizations.organizations 1.0", "pieces 3.1", "pieces.send-claims 1.0", "search-inventory 1.0", "titles 1.2", "users 16.0"]}
 {"id": "folio_consortia-settings-3.1.1099000000000231", "optional": ["alternative-title-types 1.0", "call-number-types 1.0", "cancellation-reason-storage 1.1", "capabilities 1.1", "capability-sets 2.0", "classification-types 1.2", "contributor-types 2.0", "data-export 5.0", "electronic-access-relationships 1.1", "holdings-note-types 1.0", "holdings-sources 1.0", "holdings-types 1.0", "identifier-types 1.2", "instance-formats 2.0", "instance-note-types 1.0", "instance-statuses 1.0", "instance-types 2.0", "item-note-types 1.0", "loan-types 2.3", "material-types 2.2", "modes-of-issuance 1.1", "nature-of-content-terms 1.0", "orders-storage.settings 1.0", "policies 1.1", "role-capabilities 1.1", "role-capability-sets 1.1", "roles 1.1", "roles-user 1.0", "source-manager-job-executions 3.2", "statistical-code-types 1.0", "statistical-codes 1.0", "subject-sources 1.0", "subject-types 1.0", "users 16.4"], "provides": [], "requires": ["consortia 1.0", "permissions 5.6"]}
 {"id": "folio_courses-7.1.1099000000000227", "optional": [], "provides": [], "requires": ["copyright-status-storage 0.1", "course-reserves-storage 0.2", "course-type-storage 0.1", "department-storage 0.1", "item-storage 7.1 8.0 9.0 10.0 11.0", "loan-types 2.2", "locations 3.0", "processing-status-storage 0.1", "role-storage 0.1", "term-storage 0.1"]}
-{"id": "folio_dashboard-7.2.1099000000000269", "optional": [], "provides": [], "requires": ["servint 4.0"]}
+{"id": "folio_dashboard-7.2.1099000000000274", "optional": [], "provides": [], "requires": ["servint 4.0"]}
 {"id": "folio_data-export-7.1.1099000000000324", "optional": [], "provides": [], "requires": ["data-export 5.0"]}
 {"id": "folio_data-import-10.0.1099000000000322", "optional": ["acquisition-methods 1.0", "acquisitions-units 1.1", "batch-group 1.1", "call-number-types 1.0", "configuration 2.0", "configuration.prefixes 1.2", "configuration.suffixes 1.2", "contributor-name-types 1.3", "electronic-access-relationships 1.1", "finance.expense-classes 3.0", "finance.funds 3.0", "holdings-note-types 1.0", "holdings-types 1.0", "identifier-types 1.2", "ill-policies 1.0", "instance-relationship-types 1.0", "instance-statuses 1.0", "item-damaged-statuses 1.0", "item-note-types 1.0", "loan-types 2.3", "locations 3.2", "material-types 2.2", "nature-of-content-terms 1.0", "orders-storage.settings 1.0", "organizations-storage.organization-types 1.0", "organizations.organizations 1.2", "statistical-code-types 1.0", "statistical-codes 1.0"], "provides": [], "requires": ["data-import 3.2", "data-import-converter-storage 1.5", "settings 1.0", "source-manager-job-executions 3.4", "tenant-addresses 1.0"]}
 {"id": "folio_developer-11.0.1099000000000384", "optional": ["app-manager 1.0", "capabilities 1.0", "capability-sets 1.0"], "provides": [], "requires": ["okapi 1.9", "settings 1.0"]}
 {"id": "folio_eholdings-11.2.1099000000000356", "optional": ["erm 1.0 2.0 3.0 4.0 5.0 6.0 7.0"], "provides": [], "requires": ["eholdings 4.0", "tags 1.0"]}
 {"id": "folio_erm-1.0.100022", "optional": [], "provides": [], "requires": []}
-{"id": "folio_erm-comparisons-8.2.1099000000000224", "optional": [], "provides": [], "requires": ["erm 7.0"]}
+{"id": "folio_erm-comparisons-8.2.1099000000000227", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_erm-usage-12.0.1099000000000907", "optional": [], "provides": [], "requires": ["aggregator-settings 2.0", "counter-reports 5.0", "custom-reports 1.0 2.0", "erm-usage-files 1.0", "erm-usage-harvester 2.1", "settings 1.2", "tags 1.0", "usage-data-providers 3.1"]}
 {"id": "folio_export-manager-5.0.1099000000000191", "optional": ["organizations.organizations 1.0"], "provides": [], "requires": ["configuration 2.0", "data-export-spring 2.0", "tags 1.0", "users 15.0 16.0"]}
 {"id": "folio_finance-9.0.1099000000000660", "optional": ["consortia 1.0"], "provides": [], "requires": ["acquisitions-units 1.1", "configuration 2.0", "finance-storage.exchange-rate-source 1.0", "finance.budgets 1.3 2.0", "finance.expense-classes 2.0 3.0", "finance.finance-data 1.0", "finance.fiscal-years 1.0 2.0", "finance.fund-types 1.0 2.0", "finance.fund-update-logs 1.0", "finance.funds 3.0", "finance.group-fiscal-year-summaries 1.0", "finance.group-fund-fiscal-years 2.0", "finance.groups 1.0 2.0", "finance.ledger-rollovers 1.0 2.0", "finance.ledger-rollovers-errors 1.0", "finance.ledger-rollovers-logs 1.0", "finance.ledger-rollovers-progress 1.0", "finance.ledgers 1.5 2.0", "finance.transactions 6.0", "invoice 7.0", "location-units 2.0", "locations 3.0", "order-lines 4.0", "orders 13.0", "tags 1.0", "tenant-addresses 1.0", "users 15.0 16.0"]}
@@ -59,10 +59,10 @@
 {"id": "folio_jest-config-stripes-2.1.10990000000011", "optional": [], "provides": [], "requires": []}
 {"id": "folio_ld-folio-wrapper-2.0.4099000000000486", "optional": [], "provides": [], "requires": ["authority-source-files 2.2", "browse-authorities 1.0", "linked-data 2.0", "linked-data-profile 1.0", "search-authorities 1.0", "search-facets 1.0", "search-linked-data 1.0", "source-storage-records 3.4"]}
 {"id": "folio_ldp-3.3.1099000000000342", "optional": [], "provides": [], "requires": ["ldp-query 1.2", "settings 1.0"]}
-{"id": "folio_licenses-12.2.1099000000000365", "optional": ["organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["licenses 6.0"]}
+{"id": "folio_licenses-12.2.1099000000000368", "optional": ["organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["licenses 6.0"]}
 {"id": "folio_linked-data-2.0.3099000000002472", "optional": [], "provides": [], "requires": []}
 {"id": "folio_lists-5.0.2099000000001059", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0 2.0"]}
-{"id": "folio_local-kb-admin-9.2.1099000000000236", "optional": [], "provides": [], "requires": ["erm 7.0"]}
+{"id": "folio_local-kb-admin-9.2.1099000000000239", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_lti-courses-1.1.100035", "optional": [], "provides": [], "requires": ["configuration 2.0 3.0 4.0 5.0"]}
 {"id": "folio_marc-authorities-8.0.1099000000001508", "optional": ["audit-config 1.0", "audit-marc 1.0"], "provides": [], "requires": ["browse-authorities 1.0", "resource-ids-streaming 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.3"]}
 {"id": "folio_marccat-3.0.1000438", "optional": [], "provides": [], "requires": ["marccat 2.0"]}
@@ -106,7 +106,7 @@
 {"id": "folio_requests-13.1.1099000000000493", "optional": ["circulation-bff-loans 1.0"], "provides": [], "requires": ["automated-patron-blocks 0.1", "cancellation-reason-storage 1.1", "circulation 14.2", "circulation-settings 1.0", "inventory 10.0 11.0 12.0 13.0 14.0", "loan-policy-storage 2.3", "pick-slips 0.1", "request-storage 6.0", "search-slips 0.1"]}
 {"id": "folio_requests-mediated-4.1.1099000000000251", "optional": [], "provides": [], "requires": ["circulation 14.4", "circulation-bff-requests 1.0", "circulation-settings 1.0", "request-preference-storage 2.0", "requests-mediated 2.0", "requests-mediated-actions 1.0", "users 16.3"]}
 {"id": "folio_search-5.1.100000121", "optional": [], "provides": [], "requires": ["codex 3.0"]}
-{"id": "folio_serials-management-2.2.1099000000001141", "optional": ["acquisitions-units 1.1", "holdings-storage 6.0 7.0 8.0", "identifier-types 1.2", "locations 3.0", "material-types 2.2", "order-lines 3.0 4.0", "orders 12.1 13.0", "organizations 2.0", "pieces 3.0", "titles 1.2"], "provides": [], "requires": ["serials-management 1.0 2.0"]}
+{"id": "folio_serials-management-2.2.1099000000001150", "optional": ["acquisitions-units 1.1", "holdings-storage 6.0 7.0 8.0", "identifier-types 1.2", "locations 3.0", "material-types 2.2", "order-lines 3.0 4.0", "orders 12.1 13.0", "organizations 2.0", "pieces 3.0", "titles 1.2"], "provides": [], "requires": ["serials-management 1.0 2.0"]}
 {"id": "folio_service-interaction-4.2.1099000000000360", "optional": [], "provides": [], "requires": ["servint 4.0"]}
 {"id": "folio_servicepoints-9.0.1099000000000099", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-acq-components-7.1.1099000000000561", "optional": [], "provides": [], "requires": []}
@@ -114,7 +114,7 @@
 {"id": "folio_stripes-authorization-components-2.2.1099000000000517", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-components-12.2.109900000000337", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-connect-9.2.1090000005", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-core-11.1.1099000000001806", "optional": ["consortia 1.0", "locale 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "settings 1.0", "users-bl 5.0 6.0"]}
+{"id": "folio_stripes-core-11.1.1099000000001819", "optional": ["consortia 1.0", "locale 1.0", "login-saml 2.0", "roles 1.1", "users-keycloak 1.0"], "provides": [], "requires": ["authtoken 1.0 2.0", "configuration 2.0", "settings 1.0", "users-bl 5.0 6.0"]}
 {"id": "folio_stripes-data-transfer-components-7.1.1099000000000156", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-erm-components-9.2.10990000000077", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-final-form-8.1.1090000009", "optional": [], "provides": [], "requires": []}
