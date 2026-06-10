@@ -11,6 +11,7 @@ layout: null
     * [Configuration: java-version](#configuration-java-version)
     * [Configuration: publish-module-descriptor](#configuration-publish-module-descriptor)
     * [Configuration: allow-snapshots-release](#configuration-allow-snapshots-release)
+    * [Configuration: apt-packages](#configuration-apt-packages)
     * [Configuration: do-sonar-scan](#configuration-do-sonar-scan)
     * [Configuration: do-docker](#configuration-do-docker)
     * [Configuration: docker-health-command](#configuration-docker-health-command)
@@ -80,6 +81,8 @@ For example:
 
 ### Configuration: java-version
 
+Allowed values: 17 or 21 or 25
+
 Optional. Default = '21'
 
 ```yaml
@@ -109,6 +112,27 @@ Optional. Default = false
 ```yaml
     with:
       allow-snapshots-release: true
+```
+
+### Configuration: apt-packages
+
+Some Maven-based repositories need extra dependencies, e.g. mod-copycat.
+
+There is a restricted list of packages that can be installed via apt-get. \
+The current list: 'libyaz5'
+
+Note that the GitHub runner already provides various other software.
+Visit the "Set up job > Runner Image" section of a recent run to see the "Included Software" list.
+
+If there is another dependency needed, then follow the FAQ [How to raise a DevOps Jira ticket](https://dev.folio.org/faqs/how-to-raise-devops-ticket/).
+
+This configuration variable is a comma-separated list.
+
+Optional. Default = '' (i.e. none)
+
+```yaml
+    with:
+      apt-packages: 'libyaz5'
 ```
 
 ### Configuration: do-sonar-scan
