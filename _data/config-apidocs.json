@@ -1372,7 +1372,9 @@
         "src/main/resources/swagger.api/mod-linked-data-import.yaml"
       ],
       "raml": [],
-      "upload": []
+      "upload": [
+        "mod-linked-data-import.html"
+      ]
     },
     "metadata": {
       "apiTypes": [
