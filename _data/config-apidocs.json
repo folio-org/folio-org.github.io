@@ -371,6 +371,23 @@
   },
   {
     "config": {
+      "oas": [
+        "built-spec/agreements.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.9"
+    },
+    "name": "mod-agreements",
+    "org": "folio-org"
+  },
+  {
+    "config": {
       "oas": [],
       "raml": [
         "ramls/acquisition-events.raml",
@@ -2013,7 +2030,7 @@
   {
     "config": {
       "oas": [
-        "openapi/serials-management.yaml"
+        "built-spec/serials-management.yaml"
       ],
       "raml": [],
       "upload": []

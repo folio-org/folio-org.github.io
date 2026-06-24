@@ -5212,6 +5212,14 @@
     "path": "/erm-usage/files/{id}"
   },
   {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "_timer 1.0",
+    "methods": "get:operation/triggerHousekeeping",
+    "name": "mod-agreements",
+    "path": "/erm/admin/triggerHousekeeping"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/edge-erm.yaml",
     "apiType": "oas",
     "methods": "post:operation/batchLicenseTerms",
@@ -5224,6 +5232,244 @@
     "methods": "get:operation/getLicenseTerms",
     "name": "edge-erm",
     "path": "/erm/erm/license-terms/{id}"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/uploadFile",
+    "name": "mod-agreements",
+    "path": "/erm/files"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getFileDescription",
+    "name": "mod-agreements",
+    "path": "/erm/files/{fileUUID}"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/downloadFile",
+    "name": "mod-agreements",
+    "path": "/erm/files/{fileUUID}/raw"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getJobsbyType",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/type/{jobType}"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/createJob",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/{jobType}"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/downloadJobfile",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/{jobUUID}/downloadFileObject"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getJoblog",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/{jobUUID}/{logType}"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getPackageContentAll",
+    "name": "mod-agreements",
+    "path": "/erm/packages/{packageUUID}/content/all"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getPackageContentCurrent",
+    "name": "mod-agreements",
+    "path": "/erm/packages/{packageUUID}/content/current"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getPackageContentDropped",
+    "name": "mod-agreements",
+    "path": "/erm/packages/{packageUUID}/content/dropped"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getPackageContentFuture",
+    "name": "mod-agreements",
+    "path": "/erm/packages/{packageUUID}/content/future"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getRefdatabyCategory",
+    "name": "mod-agreements",
+    "path": "/erm/refdata/{domain}/{property}"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getElectronicResources",
+    "name": "mod-agreements",
+    "path": "/erm/resource/electronic"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getEntitlementOptions",
+    "name": "mod-agreements",
+    "path": "/erm/resource/{resourceUUID}/entitlementOptions"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getEntitlements",
+    "name": "mod-agreements",
+    "path": "/erm/resource/{resourceUUID}/entitlements"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getRelatedEntitlements",
+    "name": "mod-agreements",
+    "path": "/erm/resource/{resourceUUID}/entitlements/related"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/cloneAgreement",
+    "name": "mod-agreements",
+    "path": "/erm/sas/{agreementUUID}/clone"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/exportAgreement",
+    "name": "mod-agreements",
+    "path": "/erm/sas/{agreementUUID}/export"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/exportAgreementCurrentResources",
+    "name": "mod-agreements",
+    "path": "/erm/sas/{agreementUUID}/export/current"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getAgreementAllResources",
+    "name": "mod-agreements",
+    "path": "/erm/sas/{agreementUUID}/resources/all"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getAgreementCurrentResources",
+    "name": "mod-agreements",
+    "path": "/erm/sas/{agreementUUID}/resources/current"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getAgreementDroppedResources",
+    "name": "mod-agreements",
+    "path": "/erm/sas/{agreementUUID}/resources/dropped"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/exportAgreementResourcesJSONAll",
+    "name": "mod-agreements",
+    "path": "/erm/sas/{agreementUUID}/resources/export"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/exportAgreementResourcesJSONCurrent",
+    "name": "mod-agreements",
+    "path": "/erm/sas/{agreementUUID}/resources/export/current"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/exportAgreementResourcesFormattedCurrent",
+    "name": "mod-agreements",
+    "path": "/erm/sas/{agreementUUID}/resources/export/current/{downloadFormat}"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/exportAgreementResourcesFormattedAll",
+    "name": "mod-agreements",
+    "path": "/erm/sas/{agreementUUID}/resources/export/{downloadFormat}"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getAgreementFutureResources",
+    "name": "mod-agreements",
+    "path": "/erm/sas/{agreementUUID}/resources/future"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/validateAgreementName",
+    "name": "mod-agreements",
+    "path": "/erm/validate/subscriptionAgreement/name"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getEntities post:operation/createEntity",
+    "name": "mod-agreements",
+    "path": "/erm/{entityType}"
+  },
+  {
+    "apiDescription": "built-spec/agreements.yaml",
+    "apiType": "oas",
+    "methods": "delete:null get:operation/getEntity put:operation/updateEntity",
+    "name": "mod-agreements",
+    "path": "/erm/{entityType}/{entityUUID}"
   },
   {
     "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
@@ -12401,7 +12647,7 @@
     "path": "/search/{recordType}/facets"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "get:operation/getLocales",
@@ -12409,7 +12655,7 @@
     "path": "/serials-management/locales"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "get:operation/getModelRulesets post:operation/postModelRuleset",
@@ -12417,7 +12663,7 @@
     "path": "/serials-management/modelRulesets"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "delete:operation/deleteModelRuleset get:operation/getModelRuleset",
@@ -12425,7 +12671,7 @@
     "path": "/serials-management/modelRulesets/{uuid}"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "post:operation/replaceAndDeleteModelRuleset",
@@ -12433,7 +12679,7 @@
     "path": "/serials-management/modelRulesets/{uuid}/replaceAndDelete"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "get:operation/getPredictedPieceSets",
@@ -12441,7 +12687,7 @@
     "path": "/serials-management/predictedPieces"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "post:operation/createPieces",
@@ -12449,7 +12695,7 @@
     "path": "/serials-management/predictedPieces/create"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "post:operation/previewPieces",
@@ -12457,7 +12703,7 @@
     "path": "/serials-management/predictedPieces/generate"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "get:operation/getPredictedPieceSet put:operation/putPredictedPieceSet",
@@ -12465,7 +12711,7 @@
     "path": "/serials-management/predictedPieces/{uuid}"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "get:operation/getRefData post:operation/createRefData",
@@ -12473,7 +12719,7 @@
     "path": "/serials-management/refdata"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "get:operation/getReferenceDataPropertybyDomainandField",
@@ -12481,7 +12727,7 @@
     "path": "/serials-management/refdata/{domain}/{property}"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "delete:operation/deleteRefDataCategory get:operation/getRefDataCategory put:operation/putRefDataCategory",
@@ -12489,7 +12735,7 @@
     "path": "/serials-management/refdata/{uuid}"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "get:operation/getRulesets post:operation/postRuleset",
@@ -12497,7 +12743,7 @@
     "path": "/serials-management/rulesets"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "delete:operation/deleteRuleset get:operation/getRuleset",
@@ -12505,7 +12751,7 @@
     "path": "/serials-management/rulesets/{uuid}"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "post:operation/activateRuleset",
@@ -12513,7 +12759,7 @@
     "path": "/serials-management/rulesets/{uuid}/active"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "post:operation/depricateRuleset",
@@ -12521,7 +12767,7 @@
     "path": "/serials-management/rulesets/{uuid}/deprecated"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "post:operation/draftRuleset",
@@ -12529,7 +12775,7 @@
     "path": "/serials-management/rulesets/{uuid}/draft"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "post:operation/replaceAndDeleteRuleset",
@@ -12537,7 +12783,7 @@
     "path": "/serials-management/rulesets/{uuid}/replaceAndDelete"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "post:operation/replaceAndDeprecateRuleset",
@@ -12545,7 +12791,7 @@
     "path": "/serials-management/rulesets/{uuid}/replaceAndDeprecate"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "get:operation/getSerials post:operation/postSerial",
@@ -12553,7 +12799,7 @@
     "path": "/serials-management/serials"
   },
   {
-    "apiDescription": "openapi/serials-management.yaml",
+    "apiDescription": "built-spec/serials-management.yaml",
     "apiType": "oas",
     "interface": "serials-management",
     "methods": "delete:operation/deleteSerial get:operation/getSerial put:operation/putSerial",
