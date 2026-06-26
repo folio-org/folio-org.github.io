@@ -2794,12 +2794,13 @@
       ]
     },
     {
-      "countBranches": 34,
-      "countOpenPullRequests": 2,
+      "countBranches": 35,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "A FOLIO Module for handling the server side work needed for the ERM system",
       "docDirName": "docs",
       "hasTranslations": false,
+      "hintOas": true,
       "name": "mod-agreements",
       "org": "folio-org",
       "ramlDirName": null,
@@ -5347,6 +5348,7 @@
       "description": "FOLIO Backend module for Serials Management",
       "docDirName": "docs",
       "hasTranslations": false,
+      "hintOas": true,
       "name": "mod-serials-management",
       "org": "folio-org",
       "ramlDirName": null,
