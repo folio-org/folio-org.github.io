@@ -6904,6 +6904,13 @@
     "path": "/ill-policies/{id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/edge-ill.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/ill",
+    "name": "edge-ill",
+    "path": "/illService/tenants/{tenantId}"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
     "interface": "inn-reach 1.2",
