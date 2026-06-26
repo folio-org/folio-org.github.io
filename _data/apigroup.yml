@@ -41,6 +41,7 @@ inventory:
     - mod-marc-migrations
     - mod-oai-pmh
     - edge-inventory
+    - edge-ill
     - edge-oai-pmh
     - mod-requests-mediated
     - mod-reservoir
