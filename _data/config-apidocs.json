@@ -1360,24 +1360,24 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-kb-ebsco-java",
     "org": "folio-org"
   },
   {
     "config": {
-      "oas": [],
-      "raml": [
-        "ramls/licenses.raml"
+      "oas": [
+        "built-spec/licenses.yaml"
       ],
+      "raml": [],
       "upload": []
     },
     "metadata": {
       "apiTypes": [
-        "RAML"
+        "OAS"
       ],
-      "generator": "api_doc.py 1.5.2"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-licenses",
     "org": "folio-org"
