@@ -389,7 +389,7 @@
   {
     "config": {
       "oas": [
-        "built-spec/agreements.yaml"
+        "docs/API/yamls/agreements.yaml"
       ],
       "raml": [],
       "upload": []
@@ -1368,7 +1368,7 @@
   {
     "config": {
       "oas": [
-        "built-spec/licenses.yaml"
+        "docs/API/yamls/licenses.yaml"
       ],
       "raml": [],
       "upload": []
@@ -2047,7 +2047,7 @@
   {
     "config": {
       "oas": [
-        "built-spec/serials-management.yaml"
+        "docs/API/yamls/serials-management.yaml"
       ],
       "raml": [],
       "upload": []
