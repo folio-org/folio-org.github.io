@@ -5214,10 +5214,34 @@
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
-    "interface": "_timer 1.0",
-    "methods": "get:operation/triggerHousekeeping",
+    "interface": "erm",
+    "methods": "get:operation/getEntitlementlogEntries",
     "name": "mod-agreements",
-    "path": "/erm/admin/triggerHousekeeping"
+    "path": "/erm/entitlementLogEntry"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getEntitlementLogEntry",
+    "name": "mod-agreements",
+    "path": "/erm/entitlementLogEntry/{entitlementLogEntryId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getEntitlements post:operation/postEntitlement",
+    "name": "mod-agreements",
+    "path": "/erm/entitlements"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "delete:operation/deleteEntitlement get:operation/getEntitlement put:operation/putEntitlement",
+    "name": "mod-agreements",
+    "path": "/erm/entitlements/{entitlementId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/edge-erm.yaml",
@@ -5237,129 +5261,177 @@
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "post:operation/uploadFile",
+    "methods": "get:operation/getPackages",
     "name": "mod-agreements",
-    "path": "/erm/files"
+    "path": "/erm/packages"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/getFileDescription",
+    "methods": "post:operation/postPackagecontrolSync",
     "name": "mod-agreements",
-    "path": "/erm/files/{fileUUID}"
+    "path": "/erm/packages/controlSync"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/downloadFile",
+    "methods": "post:operation/postPackageimport",
     "name": "mod-agreements",
-    "path": "/erm/files/{fileUUID}/raw"
+    "path": "/erm/packages/import"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/getJobsbyType",
+    "methods": "get:operation/getPackagesMetadata",
     "name": "mod-agreements",
-    "path": "/erm/jobs/type/{jobType}"
+    "path": "/erm/packages/metadata"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "post:operation/createJob",
+    "methods": "get:operation/getPackageMetadata",
     "name": "mod-agreements",
-    "path": "/erm/jobs/{jobType}"
+    "path": "/erm/packages/metadata/{metadataId}"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/downloadJobfile",
+    "methods": "get:operation/getPackageSources",
     "name": "mod-agreements",
-    "path": "/erm/jobs/{jobUUID}/downloadFileObject"
+    "path": "/erm/packages/sources"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/getJoblog",
+    "methods": "post:operation/postPackagesTsvParse",
     "name": "mod-agreements",
-    "path": "/erm/jobs/{jobUUID}/{logType}"
+    "path": "/erm/packages/tsvParse"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/getPackageContentAll",
+    "methods": "get:operation/getPackage put:operation/putPackage",
     "name": "mod-agreements",
-    "path": "/erm/packages/{packageUUID}/content/all"
+    "path": "/erm/packages/{packageId}"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/getPackageContentCurrent",
+    "methods": "get:operation/getPackageContent",
     "name": "mod-agreements",
-    "path": "/erm/packages/{packageUUID}/content/current"
+    "path": "/erm/packages/{packageId}/content"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/getPackageContentDropped",
+    "methods": "get:operation/getPackageContentSubset",
     "name": "mod-agreements",
-    "path": "/erm/packages/{packageUUID}/content/dropped"
+    "path": "/erm/packages/{packageId}/content/{packageSubset}"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/getPackageContentFuture",
+    "methods": "get:operation/getPackageIngressMetadata",
     "name": "mod-agreements",
-    "path": "/erm/packages/{packageUUID}/content/future"
+    "path": "/erm/packages/{packageId}/metadata"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/getRefdatabyCategory",
+    "methods": "get:operation/getPcis",
     "name": "mod-agreements",
-    "path": "/erm/refdata/{domain}/{property}"
+    "path": "/erm/pci"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/getElectronicResources",
+    "methods": "get:operation/getPci put:operation/putPci",
     "name": "mod-agreements",
-    "path": "/erm/resource/electronic"
+    "path": "/erm/pci/{pciId}"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/getEntitlementOptions",
+    "methods": "get:operation/getPlatforms",
     "name": "mod-agreements",
-    "path": "/erm/resource/{resourceUUID}/entitlementOptions"
+    "path": "/erm/platforms"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/getEntitlements",
+    "methods": "get:operation/getPlatform put:operation/putPlatform",
     "name": "mod-agreements",
-    "path": "/erm/resource/{resourceUUID}/entitlements"
+    "path": "/erm/platforms/{platformId}"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/getRelatedEntitlements",
+    "methods": "get:operation/getPtis",
     "name": "mod-agreements",
-    "path": "/erm/resource/{resourceUUID}/entitlements/related"
+    "path": "/erm/pti"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getPti put:operation/putPti",
+    "name": "mod-agreements",
+    "path": "/erm/pti/{ptiId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getAgreements post:operation/postSA",
+    "name": "mod-agreements",
+    "path": "/erm/sas"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getLinkedLicenses",
+    "name": "mod-agreements",
+    "path": "/erm/sas/linkedLicenses"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/publicLookup",
+    "name": "mod-agreements",
+    "path": "/erm/sas/publicLookup"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getUsageDataProviders",
+    "name": "mod-agreements",
+    "path": "/erm/sas/usageDataProviders"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "delete:operation/deleteAgreement get:operation/getAgreement put:operation/putAgreement",
+    "name": "mod-agreements",
+    "path": "/erm/sas/{agreementId}"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
@@ -5367,109 +5439,151 @@
     "interface": "erm",
     "methods": "post:operation/cloneAgreement",
     "name": "mod-agreements",
-    "path": "/erm/sas/{agreementUUID}/clone"
+    "path": "/erm/sas/{agreementId}/clone"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/exportAgreement",
+    "methods": "get:operation/exportAgreementCurrent",
     "name": "mod-agreements",
-    "path": "/erm/sas/{agreementUUID}/export"
+    "path": "/erm/sas/{agreementId}/export/current"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/exportAgreementCurrentResources",
+    "methods": "get:operation/getAgreementLinkedLicenses",
     "name": "mod-agreements",
-    "path": "/erm/sas/{agreementUUID}/export/current"
+    "path": "/erm/sas/{agreementId}/linkedLicenses"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/getAgreementAllResources",
+    "methods": "get:operation/getAgreementResourcesDefault",
     "name": "mod-agreements",
-    "path": "/erm/sas/{agreementUUID}/resources/all"
+    "path": "/erm/sas/{agreementId}/resources"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/getAgreementCurrentResources",
+    "methods": "get:operation/getAgreementResourcesAll",
     "name": "mod-agreements",
-    "path": "/erm/sas/{agreementUUID}/resources/current"
+    "path": "/erm/sas/{agreementId}/resources/all"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/getAgreementDroppedResources",
+    "methods": "get:operation/getAgreementResourcesCurrent",
     "name": "mod-agreements",
-    "path": "/erm/sas/{agreementUUID}/resources/dropped"
+    "path": "/erm/sas/{agreementId}/resources/current"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/exportAgreementResourcesJSONAll",
+    "methods": "get:operation/getAgreementResourcesDropped",
     "name": "mod-agreements",
-    "path": "/erm/sas/{agreementUUID}/resources/export"
+    "path": "/erm/sas/{agreementId}/resources/dropped"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/exportAgreementResourcesJSONCurrent",
+    "methods": "get:operation/exportAgreementResourcesSubsetFormat",
     "name": "mod-agreements",
-    "path": "/erm/sas/{agreementUUID}/resources/export/current"
+    "path": "/erm/sas/{agreementId}/resources/export/{subset}/{format}"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/exportAgreementResourcesFormattedCurrent",
+    "methods": "get:operation/getAgreementResourcesFuture",
     "name": "mod-agreements",
-    "path": "/erm/sas/{agreementUUID}/resources/export/current/{downloadFormat}"
+    "path": "/erm/sas/{agreementId}/resources/future"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/exportAgreementResourcesFormattedAll",
+    "methods": "get:operation/getAgreementResourcesStaticDefault",
     "name": "mod-agreements",
-    "path": "/erm/sas/{agreementUUID}/resources/export/{downloadFormat}"
+    "path": "/erm/sas/{agreementId}/resources/static"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "get:operation/getAgreementFutureResources",
+    "methods": "get:operation/getAgreementResourcesStaticAll",
     "name": "mod-agreements",
-    "path": "/erm/sas/{agreementUUID}/resources/future"
+    "path": "/erm/sas/{agreementId}/resources/static/all"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
-    "methods": "post:operation/validateAgreementName",
+    "methods": "get:operation/getAgreementResourcesStaticCurrent",
     "name": "mod-agreements",
-    "path": "/erm/validate/subscriptionAgreement/name"
+    "path": "/erm/sas/{agreementId}/resources/static/current"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
-    "methods": "get:operation/getEntities post:operation/createEntity",
+    "interface": "erm",
+    "methods": "get:operation/getAgreementResourcesStaticDropped",
     "name": "mod-agreements",
-    "path": "/erm/{entityType}"
+    "path": "/erm/sas/{agreementId}/resources/static/dropped"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
-    "methods": "delete:null get:operation/getEntity put:operation/updateEntity",
+    "interface": "erm",
+    "methods": "get:operation/getAgreementResourcesStaticFuture",
     "name": "mod-agreements",
-    "path": "/erm/{entityType}/{entityUUID}"
+    "path": "/erm/sas/{agreementId}/resources/static/future"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getAgreementUsageDataProviders",
+    "name": "mod-agreements",
+    "path": "/erm/sas/{agreementId}/usageDataProviders"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getTitles",
+    "name": "mod-agreements",
+    "path": "/erm/titles"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getElectronicTitles",
+    "name": "mod-agreements",
+    "path": "/erm/titles/electronic"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getEntitledTitles",
+    "name": "mod-agreements",
+    "path": "/erm/titles/entitled"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getTitle put:operation/putTitle",
+    "name": "mod-agreements",
+    "path": "/erm/titles/{titleId}"
   },
   {
     "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
@@ -9814,6 +9928,22 @@
     "methods": "delete:notify__id__delete get:notify__id__get put:notify__id__put",
     "name": "mod-notify",
     "path": "/notify/{id}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "get:operation/getPublicationRequests post:operation/postPublicationRequest",
+    "name": "mod-oa",
+    "path": "/oa/publicationRequest"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "delete:operation/deletePublicationRequest get:operation/getPublicationRequest put:operation/putPublicationRequest",
+    "name": "mod-oa",
+    "path": "/oa/publicationRequest/{publicationRequestId}"
   },
   {
     "apiDescription": "ramls/edge-oai-pmh.raml",

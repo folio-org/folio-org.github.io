@@ -269,7 +269,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.8"
+      "generator": "api_doc.py 1.9"
     },
     "name": "folio-custom-fields",
     "org": "folio-org"
@@ -1574,6 +1574,23 @@
       "generator": "api_doc.py 1.5.2"
     },
     "name": "mod-notify",
+    "org": "folio-org"
+  },
+  {
+    "config": {
+      "oas": [
+        "docs/API/yamls/oa.yaml"
+      ],
+      "raml": [],
+      "upload": []
+    },
+    "metadata": {
+      "apiTypes": [
+        "OAS"
+      ],
+      "generator": "api_doc.py 1.9"
+    },
+    "name": "mod-oa",
     "org": "folio-org"
   },
   {
