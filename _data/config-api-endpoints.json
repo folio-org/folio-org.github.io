@@ -9058,16 +9058,25 @@
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "methods": "get:operation/getProfileSettings post:operation/setProfileSettings",
+    "methods": "get:operation/getProfileById",
     "name": "mod-linked-data",
-    "path": "/linked-data/profile/settings/{profileId}"
+    "path": "/linked-data/profile/{profileId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
-    "methods": "get:operation/getProfileById",
+    "interface": "linked-data-profile 1.0",
+    "methods": "get:operation/getAllProfileSettings post:operation/createProfileSettings",
     "name": "mod-linked-data",
-    "path": "/linked-data/profile/{profileId}"
+    "path": "/linked-data/profile/{profileId}/settings"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "linked-data-profile 1.0",
+    "methods": "delete:operation/deleteProfileSettings get:operation/getProfileSettings put:operation/setProfileSettings",
+    "name": "mod-linked-data",
+    "path": "/linked-data/profile/{profileId}/settings/{profileSettingsId}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
@@ -9933,6 +9942,70 @@
     "apiDescription": "docs/API/yamls/oa.yaml",
     "apiType": "oas",
     "interface": "oa",
+    "methods": "get:operation/getCharges post:operation/postCharge",
+    "name": "mod-oa",
+    "path": "/oa/charges"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "delete:operation/deleteCharge get:operation/getCharge put:operation/putCharge",
+    "name": "mod-oa",
+    "path": "/oa/charges/{id}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "get:operation/getChecklistItemDefinitions post:operation/postChecklistItemDefinition",
+    "name": "mod-oa",
+    "path": "/oa/checklistItems"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "delete:operation/deleteChecklistItemDefinition get:operation/getChecklistItemDefinition put:operation/putChecklistItemDefinition",
+    "name": "mod-oa",
+    "path": "/oa/checklistItems/{id}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "get:operation/getCorrespondences post:operation/postCorrespondence",
+    "name": "mod-oa",
+    "path": "/oa/correspondence"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "delete:operation/deleteCorrespondence get:operation/getCorrespondence put:operation/putCorrespondence",
+    "name": "mod-oa",
+    "path": "/oa/correspondence/{id}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "get:operation/getParties post:operation/postParty",
+    "name": "mod-oa",
+    "path": "/oa/party"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "delete:operation/deleteParty get:operation/getParty put:operation/putParty",
+    "name": "mod-oa",
+    "path": "/oa/party/{id}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
     "methods": "get:operation/getPublicationRequests post:operation/postPublicationRequest",
     "name": "mod-oa",
     "path": "/oa/publicationRequest"
@@ -9944,6 +10017,107 @@
     "methods": "delete:operation/deletePublicationRequest get:operation/getPublicationRequest put:operation/putPublicationRequest",
     "name": "mod-oa",
     "path": "/oa/publicationRequest/{publicationRequestId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "get:operation/getRefdataCategories post:operation/postRefdataCategory",
+    "name": "mod-oa",
+    "path": "/oa/refdata"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "get:operation/getRefdataValuesForProperty",
+    "name": "mod-oa",
+    "path": "/oa/refdata/{domain}/{property}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "delete:operation/deleteRefdataCategory get:operation/getRefdataCategory put:operation/putRefdataCategory",
+    "name": "mod-oa",
+    "path": "/oa/refdata/{id}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getOpenApcBpcReport",
+    "name": "mod-oa",
+    "path": "/oa/reports/openApcBpcReport"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getOpenApcChargesReport",
+    "name": "mod-oa",
+    "path": "/oa/reports/openApcChargesReport"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "methods": "get:operation/getOpenApcTransformativeAgreementReport",
+    "name": "mod-oa",
+    "path": "/oa/reports/openApcTransformativeAgreementReport"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "get:operation/getAppSettings post:operation/postAppSetting",
+    "name": "mod-oa",
+    "path": "/oa/settings/appSettings"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "delete:operation/deleteAppSetting get:operation/getAppSetting put:operation/putAppSetting",
+    "name": "mod-oa",
+    "path": "/oa/settings/appSettings/{id}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "get:operation/getTitleInstances post:operation/postTitleInstance",
+    "name": "mod-oa",
+    "path": "/oa/titleInstances"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "delete:operation/deleteTitleInstance get:operation/getTitleInstance put:operation/putTitleInstance",
+    "name": "mod-oa",
+    "path": "/oa/titleInstances/{id}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "get:operation/getWorks",
+    "name": "mod-oa",
+    "path": "/oa/works"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "post:operation/postWorkCitation",
+    "name": "mod-oa",
+    "path": "/oa/works/citation"
+  },
+  {
+    "apiDescription": "docs/API/yamls/oa.yaml",
+    "apiType": "oas",
+    "interface": "oa",
+    "methods": "get:operation/getWork put:operation/putWork",
+    "name": "mod-oa",
+    "path": "/oa/works/{id}"
   },
   {
     "apiDescription": "ramls/edge-oai-pmh.raml",
