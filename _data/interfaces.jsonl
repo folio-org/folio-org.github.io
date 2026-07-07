@@ -4,7 +4,7 @@
 {"id": "edge-dcb-2.1.0-SNAPSHOT.2063", "optional": [], "provides": [], "requires": ["dcb_refresh_shadow_locations 2.0", "login 7.3", "transactions 1.6"]}
 {"id": "edge-dematic-3.1.0-SNAPSHOT.2080", "optional": [], "provides": [], "requires": ["login 7.3", "remote-storage-accessions 1.1", "remote-storage-check-in 1.2", "remote-storage-configurations 1.1", "remote-storage-items 1.0", "remote-storage-retrievals 1.1"]}
 {"id": "edge-erm-1.6.0-SNAPSHOT.2032", "optional": [], "provides": [], "requires": ["erm 7.3", "login 7.3"]}
-{"id": "edge-fqm-4.2.0-SNAPSHOT.2114", "optional": [], "provides": [], "requires": ["entity-types 2.1", "fqm-query 2.1", "login 7.0"]}
+{"id": "edge-fqm-4.2.0-SNAPSHOT.2119", "optional": [], "provides": [], "requires": ["entity-types 2.1", "fqm-query 2.1", "login 7.0"]}
 {"id": "edge-inn-reach-4.1.0-SNAPSHOT.2126", "optional": [], "provides": [], "requires": ["login 7.3", "permissions 5.8", "users 16.4"]}
 {"id": "edge-inventory-2.4.0-SNAPSHOT.2046", "optional": [], "provides": [], "requires": ["consortium-search 2.1", "holdings-note-types 1.0", "holdings-storage 8.2", "identifier-types 1.2", "instance-formats 2.0", "instance-note-types 1.0", "instance-types 2.0", "inventory 14.4", "login 7.3", "material-types 2.2", "modes-of-issuance 1.1", "nature-of-content-terms 1.0", "search-facets 1.0", "service-points 3.5", "source-storage-records 3.4", "user-tenants 1.0"]}
 {"id": "edge-lti-courses-1.3.8-SNAPSHOT.40", "optional": [], "provides": [], "requires": ["configuration 2.0", "course-reserves-storage 0.3"]}
@@ -110,7 +110,7 @@
 {"id": "folio_service-interaction-4.2.1099000000000378", "optional": [], "provides": [], "requires": ["servint 4.0"]}
 {"id": "folio_servicepoints-9.0.1099000000000099", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-acq-components-7.2.1099000000000579", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-authority-components-7.1.1099000000000259", "optional": [], "provides": [], "requires": ["authority-source-files 2.0", "browse-authorities 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.0"]}
+{"id": "folio_stripes-authority-components-7.1.1099000000000264", "optional": [], "provides": [], "requires": ["authority-source-files 2.0", "browse-authorities 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.0"]}
 {"id": "folio_stripes-authorization-components-2.2.1099000000000536", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-components-12.2.109900000000337", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-connect-9.2.1090000005", "optional": [], "provides": [], "requires": []}
@@ -132,7 +132,7 @@
 {"id": "folio_tags-10.0.1099000000000115", "optional": [], "provides": [], "requires": ["tags 1.0"]}
 {"id": "folio_tenant-settings-11.0.1099000000000309", "optional": ["locale 1.0", "location-units 2.0", "locations 3.0", "login-saml 2.0", "reading-room 1.0", "remote-storage-configurations 1.0", "remote-storage-mappings 1.0 2.0", "service-points 3.5"], "provides": [], "requires": ["configuration 2.0", "settings 1.0", "tenant-addresses 1.0", "users 15.0 16.0"]}
 {"id": "folio_ui-claims-1.0.1099000000007", "optional": [], "provides": [], "requires": []}
-{"id": "folio_users-13.1.1099000000001444", "optional": ["actual-cost-record-storage 0.4", "add-info 0.1", "audit-config 1.0", "audit-user 1.0", "automated-patron-blocks 0.1", "batch-print 1.0", "circulation 9.0 10.0 11.0 12.0 13.0 14.0", "circulation-bff-loans 1.6", "consortia 1.0", "feesfines 19.1", "loan-policy-storage 1.0 2.0", "loan-storage 4.0 5.0 6.0 7.0", "notes 4.0", "reading-room-patron-permission 1.0", "request-storage 2.5 3.0 4.0 5.0 6.0", "roles 1.0", "users-keycloak 1.0"], "provides": [], "requires": ["login 7.3", "permissions 5.7", "settings 1.1", "staging-users 1.0", "tags 1.0", "users 16.4", "users-bl 6.1", "users.settings 2.0"]}
+{"id": "folio_users-13.1.1099000000001447", "optional": ["actual-cost-record-storage 0.4", "add-info 0.1", "audit-config 1.0", "audit-user 1.0", "automated-patron-blocks 0.1", "batch-print 1.0", "circulation 9.0 10.0 11.0 12.0 13.0 14.0", "circulation-bff-loans 1.6", "consortia 1.0", "feesfines 19.1", "loan-policy-storage 1.0 2.0", "loan-storage 4.0 5.0 6.0 7.0", "notes 4.0", "reading-room-patron-permission 1.0", "request-storage 2.5 3.0 4.0 5.0 6.0", "roles 1.0", "users-keycloak 1.0"], "provides": [], "requires": ["login 7.3", "permissions 5.7", "settings 1.1", "staging-users 1.0", "tags 1.0", "users 16.4", "users-bl 6.1", "users.settings 2.0"]}
 {"id": "folio_vendors-1.5.1000142", "optional": [], "provides": [], "requires": ["vendor-storage.addresses 1.0", "vendor-storage.categories 1.0", "vendor-storage.emails 1.0", "vendor-storage.phone-numbers 1.0", "vendor-storage.url 1.0", "vendor-storage.vendors 1.0"]}
 {"id": "inventory-storage-5.1.0", "optional": [], "provides": ["_tenant 1.0", "instance-storage 2.0", "item-storage 3.1", "loan-types 2.0", "material-types 2.0"], "requires": []}
 {"id": "mod-aes-0.0.5-SNAPSHOT.22", "optional": [], "provides": [], "requires": ["configuration 2.0"]}
