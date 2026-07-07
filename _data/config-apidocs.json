@@ -1250,6 +1250,7 @@
         "ramls/record-bulk.raml",
         "ramls/service-point.raml",
         "ramls/service-points-user.raml",
+        "ramls/settings.raml",
         "ramls/statistical-code-type.raml",
         "ramls/statistical-code.raml",
         "ramls/subject-source.raml",
