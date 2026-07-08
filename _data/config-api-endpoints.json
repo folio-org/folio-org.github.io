@@ -8000,6 +8000,14 @@
     "path": "/inventory-reports/items-in-transit"
   },
   {
+    "apiDescription": "ramls/settings.raml",
+    "apiType": "raml",
+    "interface": "inventory-settings 1.0",
+    "methods": "get:inventory_settings__key__get patch:inventory_settings__key__patch",
+    "name": "mod-inventory-storage",
+    "path": "/inventory-settings/{key}"
+  },
+  {
     "apiDescription": "ramls/bound-with-part.raml",
     "apiType": "raml",
     "interface": "bound-with-parts-storage 2.0",
