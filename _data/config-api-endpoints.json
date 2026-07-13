@@ -12936,7 +12936,15 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search-linked-data 1.0",
+    "interface": "search-linked-data 1.1",
+    "methods": "get:operation/searchLinkedDataAuthorities",
+    "name": "mod-search",
+    "path": "/search/linked-data/authorities"
+  },
+  {
+    "apiDescription": "target/api/openapi/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "search-linked-data 1.1",
     "methods": "get:operation/searchLinkedDataHubs",
     "name": "mod-search",
     "path": "/search/linked-data/hubs"
@@ -12944,15 +12952,7 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search-linked-data 1.0",
-    "methods": "get:operation/searchLinkedDataInstances",
-    "name": "mod-search",
-    "path": "/search/linked-data/instances"
-  },
-  {
-    "apiDescription": "target/api/openapi/mod-search.yaml",
-    "apiType": "oas",
-    "interface": "search-linked-data 1.0",
+    "interface": "search-linked-data 1.1",
     "methods": "get:operation/searchLinkedDataWorks",
     "name": "mod-search",
     "path": "/search/linked-data/works"
