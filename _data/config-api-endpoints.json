@@ -9074,6 +9074,14 @@
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
     "apiType": "oas",
     "interface": "linked-data-profile 1.0",
+    "methods": "delete:operation/deletePreferredProfileSettings get:operation/getPreferredProfileSettings post:operation/setPreferredProfileSettings",
+    "name": "mod-linked-data",
+    "path": "/linked-data/profile/{profileId}/preferred"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/mod-linked-data.yaml",
+    "apiType": "oas",
+    "interface": "linked-data-profile 1.0",
     "methods": "get:operation/getAllProfileSettings post:operation/createProfileSettings",
     "name": "mod-linked-data",
     "path": "/linked-data/profile/{profileId}/settings"
