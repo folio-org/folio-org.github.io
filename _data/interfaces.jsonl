@@ -2,7 +2,7 @@
 {"id": "edge-connexion-1.5.1-SNAPSHOT.2020", "optional": [], "provides": ["connexion 1.0"], "requires": ["copycat-imports 1.0", "copycat-profiles 1.0", "login 7.0"]}
 {"id": "edge-courses-1.8.0-SNAPSHOT.2037", "optional": [], "provides": [], "requires": ["course-reserves-storage 0.3", "login 7.3"]}
 {"id": "edge-dcb-2.1.0-SNAPSHOT.2063", "optional": [], "provides": [], "requires": ["dcb_refresh_shadow_locations 2.0", "login 7.3", "transactions 1.6"]}
-{"id": "edge-dematic-3.1.0-SNAPSHOT.2080", "optional": [], "provides": [], "requires": ["login 7.3", "remote-storage-accessions 1.1", "remote-storage-check-in 1.2", "remote-storage-configurations 1.1", "remote-storage-items 1.0", "remote-storage-retrievals 1.1"]}
+{"id": "edge-dematic-3.1.0-SNAPSHOT.2096", "optional": [], "provides": [], "requires": ["login 7.3", "remote-storage-accessions 1.1", "remote-storage-check-in 1.2", "remote-storage-configurations 1.1", "remote-storage-items 1.0", "remote-storage-retrievals 1.1"]}
 {"id": "edge-erm-1.6.0-SNAPSHOT.2032", "optional": [], "provides": [], "requires": ["erm 7.3", "login 7.3"]}
 {"id": "edge-fqm-4.2.0-SNAPSHOT.2122", "optional": [], "provides": [], "requires": ["entity-types 2.1", "fqm-query 2.1", "login 7.0"]}
 {"id": "edge-inn-reach-4.1.0-SNAPSHOT.2126", "optional": [], "provides": [], "requires": ["login 7.3", "permissions 5.8", "users 16.4"]}
@@ -109,7 +109,7 @@
 {"id": "folio_serials-management-2.2.1099000000001176", "optional": ["acquisitions-units 1.1", "holdings-storage 6.0 7.0 8.0", "identifier-types 1.2", "locations 3.0", "material-types 2.2", "order-lines 3.0 4.0", "orders 12.1 13.0", "organizations 2.0", "pieces 3.0", "titles 1.2"], "provides": [], "requires": ["serials-management 1.0 2.0"]}
 {"id": "folio_service-interaction-4.2.1099000000000378", "optional": [], "provides": [], "requires": ["servint 4.0"]}
 {"id": "folio_servicepoints-9.0.1099000000000099", "optional": [], "provides": [], "requires": []}
-{"id": "folio_stripes-acq-components-7.2.1099000000000587", "optional": [], "provides": [], "requires": []}
+{"id": "folio_stripes-acq-components-7.2.1099000000000597", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-authority-components-7.1.1099000000000267", "optional": [], "provides": [], "requires": ["authority-source-files 2.0", "browse-authorities 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.0"]}
 {"id": "folio_stripes-authorization-components-2.2.1099000000000536", "optional": [], "provides": [], "requires": []}
 {"id": "folio_stripes-components-12.2.109900000000337", "optional": [], "provides": [], "requires": []}
