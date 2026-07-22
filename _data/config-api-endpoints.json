@@ -3933,6 +3933,22 @@
     "path": "/custom-reports/{id}"
   },
   {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "dashboard 1.0",
+    "methods": "get:operation/getDashboardDefinitions",
+    "name": "mod-agreements",
+    "path": "/dashboard/definitions"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "dashboard 1.0",
+    "methods": "get:operation/getDashboardDefinitions",
+    "name": "mod-licenses",
+    "path": "/dashboard/definitions"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/export-configs.yaml",
     "apiType": "oas",
     "interface": "data-export-spring 2.0",
@@ -5215,6 +5231,110 @@
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
+    "methods": "get:operation/getAdminLoadPackage",
+    "name": "mod-agreements",
+    "path": "/erm/admin/loadPackage"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getAdminTriggerActivationUpdate",
+    "name": "mod-agreements",
+    "path": "/erm/admin/triggerActivationUpdate"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getAdminTriggerCacheUpdate",
+    "name": "mod-agreements",
+    "path": "/erm/admin/triggerCacheUpdate"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getAdminTriggerDocMigration",
+    "name": "mod-agreements",
+    "path": "/erm/admin/triggerDocMigration"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "_timer 1.0",
+    "methods": "get:operation/getAdminTriggerEntitlementEholdings",
+    "name": "mod-agreements",
+    "path": "/erm/admin/triggerEntitlementEholdings"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getAdminTriggerEntitlementLogUpdate",
+    "name": "mod-agreements",
+    "path": "/erm/admin/triggerEntitlementLogUpdate"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "_timer 1.0",
+    "methods": "get:operation/getAdminTriggerHousekeeping",
+    "name": "mod-agreements",
+    "path": "/erm/admin/triggerHousekeeping"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getAdminTriggerSync",
+    "name": "mod-agreements",
+    "path": "/erm/admin/triggerSync"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getContacts",
+    "name": "mod-agreements",
+    "path": "/erm/contacts"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getContact",
+    "name": "mod-agreements",
+    "path": "/erm/contacts/{contactId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getCustomPropertyDefinitions post:operation/postCustomPropertyDefinition",
+    "name": "mod-agreements",
+    "path": "/erm/custprops"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getCustomPropertyDefinitionContexts",
+    "name": "mod-agreements",
+    "path": "/erm/custprops/contexts"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "delete:operation/deleteCustomPropertyDefinition get:operation/getCustomPropertyDefinition put:operation/putCustomPropertyDefinition",
+    "name": "mod-agreements",
+    "path": "/erm/custprops/{custpropId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
     "methods": "get:operation/getEntitlementlogEntries",
     "name": "mod-agreements",
     "path": "/erm/entitlementLogEntry"
@@ -5256,6 +5376,214 @@
     "methods": "get:operation/getLicenseTerms",
     "name": "edge-erm",
     "path": "/erm/erm/license-terms/{id}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getFiles post:operation/postFiles",
+    "name": "mod-agreements",
+    "path": "/erm/files"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "delete:operation/deleteFile get:operation/getFile",
+    "name": "mod-agreements",
+    "path": "/erm/files/{fileId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getFileRaw",
+    "name": "mod-agreements",
+    "path": "/erm/files/{fileId}/raw"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getIdentifiers",
+    "name": "mod-agreements",
+    "path": "/erm/identifiers"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getIdentifierNamespaces",
+    "name": "mod-agreements",
+    "path": "/erm/identifiers/namespaces"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getIdentifier",
+    "name": "mod-agreements",
+    "path": "/erm/identifiers/{identifierId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getJobs",
+    "name": "mod-agreements",
+    "path": "/erm/jobs"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/postComparisonJob",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/comparison"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/postCoverageRegenerationJob",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/coverageRegeneration"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/postKbartImportJob",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/kbartImport"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/postPackageImportJob",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/packageImport"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/postPackageIngestJob",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/packageIngest"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/postSupplementaryDocumentsCleaningJob",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/supplementaryDocumentsCleaning"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getJobsByType",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/type/{jobType}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "delete:operation/deleteJob get:operation/getJob",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/{jobId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getJobFileObject",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/{jobId}/downloadFileObject"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getJobErrorLog",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/{jobId}/errorLog"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getJobErrorLogStream",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/{jobId}/errorLogStream"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getJobFullLog",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/{jobId}/fullLog"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getJobFullLogStream",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/{jobId}/fullLogStream"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getJobInfoLog",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/{jobId}/infoLog"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getJobInfoLogStream",
+    "name": "mod-agreements",
+    "path": "/erm/jobs/{jobId}/infoLogStream"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getKbs post:operation/postKb",
+    "name": "mod-agreements",
+    "path": "/erm/kbs"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "delete:operation/deleteKb get:operation/getKb put:operation/putKb",
+    "name": "mod-agreements",
+    "path": "/erm/kbs/{kbId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getOrgs",
+    "name": "mod-agreements",
+    "path": "/erm/org"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getOrg",
+    "name": "mod-agreements",
+    "path": "/erm/org/{orgId}"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
@@ -5304,14 +5632,6 @@
     "methods": "get:operation/getPackageSources",
     "name": "mod-agreements",
     "path": "/erm/packages/sources"
-  },
-  {
-    "apiDescription": "docs/API/yamls/agreements.yaml",
-    "apiType": "oas",
-    "interface": "erm",
-    "methods": "post:operation/postPackagesTsvParse",
-    "name": "mod-agreements",
-    "path": "/erm/packages/tsvParse"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
@@ -5392,6 +5712,150 @@
     "methods": "get:operation/getPti put:operation/putPti",
     "name": "mod-agreements",
     "path": "/erm/pti/{ptiId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getRefdataCategories post:operation/postRefdataCategory",
+    "name": "mod-agreements",
+    "path": "/erm/refdata"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getRefdataValuesForProperty",
+    "name": "mod-agreements",
+    "path": "/erm/refdata/{domain}/{property}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "delete:operation/deleteRefdataCategory get:operation/getRefdataCategory put:operation/putRefdataCategory",
+    "name": "mod-agreements",
+    "path": "/erm/refdata/{refdataId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getResources",
+    "name": "mod-agreements",
+    "path": "/erm/resource"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/deletePcis",
+    "name": "mod-agreements",
+    "path": "/erm/resource/delete/pci"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/deletePackages",
+    "name": "mod-agreements",
+    "path": "/erm/resource/delete/pkg"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/deletePtis",
+    "name": "mod-agreements",
+    "path": "/erm/resource/delete/pti"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/deleteTis",
+    "name": "mod-agreements",
+    "path": "/erm/resource/delete/ti"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getElectronicResources",
+    "name": "mod-agreements",
+    "path": "/erm/resource/electronic"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/markPcisForDelete",
+    "name": "mod-agreements",
+    "path": "/erm/resource/markForDelete/pci"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/markPackageResourcesForDelete",
+    "name": "mod-agreements",
+    "path": "/erm/resource/markForDelete/pkg"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/markPtisForDelete",
+    "name": "mod-agreements",
+    "path": "/erm/resource/markForDelete/pti"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/markTisForDelete",
+    "name": "mod-agreements",
+    "path": "/erm/resource/markForDelete/ti"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getResource",
+    "name": "mod-agreements",
+    "path": "/erm/resource/{ermResourceId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getResourceEntitlementOptions",
+    "name": "mod-agreements",
+    "path": "/erm/resource/{ermResourceId}/entitlementOptions"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getResourceEntitlements",
+    "name": "mod-agreements",
+    "path": "/erm/resource/{ermResourceId}/entitlements"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getResourceRelatedEntitlements",
+    "name": "mod-agreements",
+    "path": "/erm/resource/{ermResourceId}/entitlements/related"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getResourceStaticEntitlementOptions",
+    "name": "mod-agreements",
+    "path": "/erm/resource/{ermResourceId}/static/entitlementOptions"
   },
   {
     "apiDescription": "docs/API/yamls/agreements.yaml",
@@ -5557,6 +6021,70 @@
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
+    "methods": "get:operation/getAppSettings post:operation/postAppSetting",
+    "name": "mod-agreements",
+    "path": "/erm/settings/appSettings"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "delete:operation/deleteAppSetting get:operation/getAppSetting put:operation/putAppSetting",
+    "name": "mod-agreements",
+    "path": "/erm/settings/appSettings/{settingId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getKbCountStatistics",
+    "name": "mod-agreements",
+    "path": "/erm/statistics/kbCount"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getSasCountStatistics",
+    "name": "mod-agreements",
+    "path": "/erm/statistics/sasCount"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getStringTemplates post:operation/postStringTemplate",
+    "name": "mod-agreements",
+    "path": "/erm/sts"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/refreshTemplatedUrls",
+    "name": "mod-agreements",
+    "path": "/erm/sts/template"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/getStringTemplatesForPlatform",
+    "name": "mod-agreements",
+    "path": "/erm/sts/template/{platformId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "delete:operation/deleteStringTemplate get:operation/getStringTemplate put:operation/putStringTemplate",
+    "name": "mod-agreements",
+    "path": "/erm/sts/{stringTemplateId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
     "methods": "get:operation/getTitles",
     "name": "mod-agreements",
     "path": "/erm/titles"
@@ -5584,6 +6112,38 @@
     "methods": "get:operation/getTitle put:operation/putTitle",
     "name": "mod-agreements",
     "path": "/erm/titles/{titleId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/postValidateRemoteKB",
+    "name": "mod-agreements",
+    "path": "/erm/validate/remoteKB"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/postValidateRemoteKBProperty",
+    "name": "mod-agreements",
+    "path": "/erm/validate/remoteKB/{prop}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/postValidateSubscriptionAgreement",
+    "name": "mod-agreements",
+    "path": "/erm/validate/subscriptionAgreement"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "post:operation/postValidateSubscriptionAgreementProperty",
+    "name": "mod-agreements",
+    "path": "/erm/validate/subscriptionAgreement/{prop}"
   },
   {
     "apiDescription": "src/main/resources/openapi/eusage-reports-1.0.yaml",
@@ -5696,6 +6256,38 @@
     "methods": "post:operation/postHandleEventsWithFile",
     "name": "mod-workflow",
     "path": "/events/**"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/exportAll",
+    "name": "mod-agreements",
+    "path": "/export"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/exportCurrent",
+    "name": "mod-agreements",
+    "path": "/export/current"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/exportCurrentFormat",
+    "name": "mod-agreements",
+    "path": "/export/current/{format}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
+    "methods": "get:operation/exportAllFormat",
+    "name": "mod-agreements",
+    "path": "/export/{format}"
   },
   {
     "apiDescription": "ramls/feefine-reports.raml",
@@ -8899,9 +9491,105 @@
     "apiDescription": "docs/API/yamls/licenses.yaml",
     "apiType": "oas",
     "interface": "licenses",
+    "methods": "get:operation/getAccessControls",
+    "name": "mod-licenses",
+    "path": "/licenses/accessControl"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getAccessControlApplyPolicies",
+    "name": "mod-licenses",
+    "path": "/licenses/accessControl/applyPolicies"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getAccessControlClaimPolicies",
+    "name": "mod-licenses",
+    "path": "/licenses/accessControl/claimPolicies"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getAccessControlCreatePolicies",
+    "name": "mod-licenses",
+    "path": "/licenses/accessControl/createPolicies"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getAccessControlDeletePolicies",
+    "name": "mod-licenses",
+    "path": "/licenses/accessControl/deletePolicies"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getAccessControlEnabledEngines",
+    "name": "mod-licenses",
+    "path": "/licenses/accessControl/enabledEngines"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getAccessControlReadPolicies",
+    "name": "mod-licenses",
+    "path": "/licenses/accessControl/readPolicies"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getAccessControlUpdatePolicies",
+    "name": "mod-licenses",
+    "path": "/licenses/accessControl/updatePolicies"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getAccessControl",
+    "name": "mod-licenses",
+    "path": "/licenses/accessControl/{accessControlId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getAdminTriggerDocMigration",
+    "name": "mod-licenses",
+    "path": "/licenses/admin/triggerDocMigration"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "_timer 1.0",
+    "methods": "get:operation/getAdminTriggerHousekeeping",
+    "name": "mod-licenses",
+    "path": "/licenses/admin/triggerHousekeeping"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
     "methods": "get:operation/getAmendments post:operation/postAmendment",
     "name": "mod-licenses",
     "path": "/licenses/amendments"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getAmendmentCanCreate",
+    "name": "mod-licenses",
+    "path": "/licenses/amendments/canCreate"
   },
   {
     "apiDescription": "docs/API/yamls/licenses.yaml",
@@ -8915,6 +9603,126 @@
     "apiDescription": "docs/API/yamls/licenses.yaml",
     "apiType": "oas",
     "interface": "licenses",
+    "methods": "get:operation/getAmendmentCanApplyPolicies",
+    "name": "mod-licenses",
+    "path": "/licenses/amendments/{amendmentId}/canApplyPolicies"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getAmendmentCanDelete",
+    "name": "mod-licenses",
+    "path": "/licenses/amendments/{amendmentId}/canDelete"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getAmendmentCanRead",
+    "name": "mod-licenses",
+    "path": "/licenses/amendments/{amendmentId}/canRead"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getAmendmentCanUpdate",
+    "name": "mod-licenses",
+    "path": "/licenses/amendments/{amendmentId}/canUpdate"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "post:operation/postAmendmentClaim",
+    "name": "mod-licenses",
+    "path": "/licenses/amendments/{amendmentId}/claim"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "post:operation/postAmendmentClone",
+    "name": "mod-licenses",
+    "path": "/licenses/amendments/{amendmentId}/clone"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getAmendmentPolicies",
+    "name": "mod-licenses",
+    "path": "/licenses/amendments/{amendmentId}/policies"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getContacts",
+    "name": "mod-licenses",
+    "path": "/licenses/contacts"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getContact",
+    "name": "mod-licenses",
+    "path": "/licenses/contacts/{contactId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getCustomPropertyDefinitions post:operation/postCustomPropertyDefinition",
+    "name": "mod-licenses",
+    "path": "/licenses/custprops"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getCustomPropertyDefinitionContexts",
+    "name": "mod-licenses",
+    "path": "/licenses/custprops/contexts"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "delete:operation/deleteCustomPropertyDefinition get:operation/getCustomPropertyDefinition put:operation/putCustomPropertyDefinition",
+    "name": "mod-licenses",
+    "path": "/licenses/custprops/{custPropId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getFiles post:operation/postFile",
+    "name": "mod-licenses",
+    "path": "/licenses/files"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "delete:operation/deleteFile get:operation/getFile",
+    "name": "mod-licenses",
+    "path": "/licenses/files/{fileId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getFileRaw",
+    "name": "mod-licenses",
+    "path": "/licenses/files/{fileId}/raw"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
     "methods": "get:operation/getLicenses post:operation/postLicense",
     "name": "mod-licenses",
     "path": "/licenses/licenses"
@@ -8923,9 +9731,145 @@
     "apiDescription": "docs/API/yamls/licenses.yaml",
     "apiType": "oas",
     "interface": "licenses",
+    "methods": "get:operation/getLicenseCanCreate",
+    "name": "mod-licenses",
+    "path": "/licenses/licenses/canCreate"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "post:operation/postLicensesCompareTerms",
+    "name": "mod-licenses",
+    "path": "/licenses/licenses/compareTerms"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
     "methods": "delete:operation/deleteLicense get:operation/getLicense put:operation/putLicense",
     "name": "mod-licenses",
     "path": "/licenses/licenses/{licenseId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getLicenseCanApplyPolicies",
+    "name": "mod-licenses",
+    "path": "/licenses/licenses/{licenseId}/canApplyPolicies"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getLicenseCanDelete",
+    "name": "mod-licenses",
+    "path": "/licenses/licenses/{licenseId}/canDelete"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getLicenseCanRead",
+    "name": "mod-licenses",
+    "path": "/licenses/licenses/{licenseId}/canRead"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getLicenseCanUpdate",
+    "name": "mod-licenses",
+    "path": "/licenses/licenses/{licenseId}/canUpdate"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "post:operation/postLicenseClaim",
+    "name": "mod-licenses",
+    "path": "/licenses/licenses/{licenseId}/claim"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "post:operation/postLicenseClone",
+    "name": "mod-licenses",
+    "path": "/licenses/licenses/{licenseId}/clone"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getLicenseLinkedAgreements",
+    "name": "mod-licenses",
+    "path": "/licenses/licenses/{licenseId}/linkedAgreements"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getLicensePolicies",
+    "name": "mod-licenses",
+    "path": "/licenses/licenses/{licenseId}/policies"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getOrgs",
+    "name": "mod-licenses",
+    "path": "/licenses/org"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getOrg",
+    "name": "mod-licenses",
+    "path": "/licenses/org/{orgId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getRefdataCategories post:operation/postRefdataCategory",
+    "name": "mod-licenses",
+    "path": "/licenses/refdata"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getRefdataValuesForProperty",
+    "name": "mod-licenses",
+    "path": "/licenses/refdata/{domain}/{property}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "delete:operation/deleteRefdataCategory get:operation/getRefdataCategory put:operation/putRefdataCategory",
+    "name": "mod-licenses",
+    "path": "/licenses/refdata/{refdataCategoryId}"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "get:operation/getAppSettings post:operation/postAppSetting",
+    "name": "mod-licenses",
+    "path": "/licenses/settings/appSettings"
+  },
+  {
+    "apiDescription": "docs/API/yamls/licenses.yaml",
+    "apiType": "oas",
+    "interface": "licenses",
+    "methods": "delete:operation/deleteAppSetting get:operation/getAppSetting put:operation/putAppSetting",
+    "name": "mod-licenses",
+    "path": "/licenses/settings/appSettings/{id}"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/mod-linked-data-import.yaml",
