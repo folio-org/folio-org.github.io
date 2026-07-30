@@ -7689,7 +7689,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/authenticateLocalServerKeySecret",
     "name": "mod-inn-reach",
     "path": "/inn-reach/authentication"
@@ -7697,7 +7697,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getCentralServers post:operation/postCentralServer",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers"
@@ -7705,7 +7705,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getCentralServerAgencies",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/agencies"
@@ -7713,7 +7713,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getCentralServerItemTypes",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/item-types"
@@ -7721,7 +7721,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getAllMARCTransformationOptionsSettings",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/marc-transformation-options"
@@ -7729,7 +7729,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getAllPagingSlipTemplates",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/paging-slip-template"
@@ -7737,7 +7737,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getCentralServerPatronTypes",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/patron-types"
@@ -7745,7 +7745,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "delete:operation/deleteCentralServer get:operation/getCentralServerById put:operation/updateCentralServer",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}"
@@ -7753,7 +7753,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getAgencyMappingsByServerId put:operation/putAgencyMappings",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/agency-mappings"
@@ -7761,7 +7761,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getCentralPatronTypeMappings put:operation/updateCentralPatronTypeMappings",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/central-patron-type-mappings"
@@ -7769,7 +7769,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "delete:operation/deleteCriteria get:operation/getCriteriaByServerId post:operation/postContributionCriteria put:operation/updateCriteria",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/contribution-criteria"
@@ -7777,7 +7777,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/contribution.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/startInitialContribution",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/contributions"
@@ -7785,7 +7785,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/contribution.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "delete:operation/cancelCurrentContributionByServerId get:operation/getCurrentContributionByServerId",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/contributions/current"
@@ -7793,7 +7793,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/contribution.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getContributionHistoryByServerId",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/contributions/history"
@@ -7801,7 +7801,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getCentralServerRecallUser post:operation/saveInnReachRecallUser put:operation/updateCentralServerRecallUser",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/inn-reach-recall-user"
@@ -7809,7 +7809,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getItemContributionOptionsConfigurationById post:operation/createItemContributionOptionsConfiguration put:operation/updateItemContributionOptionsConfiguration",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/item-contribution-options"
@@ -7817,7 +7817,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getItemTypeMappingsByServerId put:operation/updateItemTypeMappings",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/item-type-mappings"
@@ -7825,7 +7825,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getLibraryMappingsByServerId put:operation/putLibraryMappings",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/libraries/location-mappings/"
@@ -7833,7 +7833,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getLocationMappingsForAllLibrariesByServerId",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/libraries/locations/location-mappings/"
@@ -7841,7 +7841,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getLocationMappingsByServerId put:operation/putLocationMappings",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/libraries/{libraryId}/locations/location-mappings/"
@@ -7849,7 +7849,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/transformMARCRecord",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/marc-record-transformation/{inventoryInstanceId}"
@@ -7857,7 +7857,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "delete:operation/deleteMARCTransformationOptionsSettings get:operation/getMARCTransformationOptionsSettingsById post:operation/createMARCTransformationOptionsSettings put:operation/updateMARCTransformationOptionsSettings",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/marc-transformation-options"
@@ -7865,7 +7865,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getMaterialTypeMappingsByServerId post:operation/postMaterialTypeMapping put:operation/updateMaterialTypeMappings",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/material-type-mappings"
@@ -7873,7 +7873,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "delete:operation/deleteMaterialTypeMapping get:operation/getMaterialTypeMappingById put:operation/updateMaterialTypeMapping",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/material-type-mappings/{id}"
@@ -7881,7 +7881,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getPagingSlipTemplate put:operation/updatePagingSlipTemplate",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/paging-slip-template"
@@ -7889,7 +7889,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getPatronTypeMappingsByServerId put:operation/updatePatronTypeMappings",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/patron-type-mappings"
@@ -7897,7 +7897,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getUserCustomFieldMapping post:operation/createUserCustomFieldMapping put:operation/updateUserCustomFieldMapping",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/user-custom-field-mappings"
@@ -7905,7 +7905,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getConfigurationByCentralServerId post:operation/createConfiguration put:operation/updateConfiguration",
     "name": "mod-inn-reach",
     "path": "/inn-reach/central-servers/{centralServerId}/visible-patron-field-configuration"
@@ -8025,7 +8025,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/verifyPatron",
     "name": "mod-inn-reach",
     "path": "/inn-reach/d2ir/circ/verifypatron"
@@ -8033,7 +8033,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/getBibRecord",
     "name": "mod-inn-reach",
     "path": "/inn-reach/d2ir/getbibrecord/{bibId}/{centralCode}"
@@ -8041,7 +8041,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getLocations post:operation/postInnReachLocation",
     "name": "mod-inn-reach",
     "path": "/inn-reach/locations"
@@ -8049,7 +8049,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/settings.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "delete:operation/deleteLocation get:operation/getLocationById put:operation/updateLocation",
     "name": "mod-inn-reach",
     "path": "/inn-reach/locations/{locationId}"
@@ -8057,7 +8057,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getPagingSlips",
     "name": "mod-inn-reach",
     "path": "/inn-reach/paging-slips/{servicePointId}"
@@ -8065,7 +8065,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getAllTransactions",
     "name": "mod-inn-reach",
     "path": "/inn-reach/transactions"
@@ -8073,7 +8073,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "get:operation/getInnReachTransaction put:operation/updateInnReachTransaction",
     "name": "mod-inn-reach",
     "path": "/inn-reach/transactions/{id}"
@@ -8081,7 +8081,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/cancelItemHoldTransaction",
     "name": "mod-inn-reach",
     "path": "/inn-reach/transactions/{id}/itemhold/cancel"
@@ -8089,7 +8089,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/finalCheckInItemHold",
     "name": "mod-inn-reach",
     "path": "/inn-reach/transactions/{id}/itemhold/finalcheckin/{servicePointId}"
@@ -8097,7 +8097,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/recallItemHoldTransaction",
     "name": "mod-inn-reach",
     "path": "/inn-reach/transactions/{id}/itemhold/recall"
@@ -8105,7 +8105,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/transferItemHold",
     "name": "mod-inn-reach",
     "path": "/inn-reach/transactions/{id}/itemhold/transfer-item/{itemId}"
@@ -8113,7 +8113,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/cancelLocalHoldTransaction",
     "name": "mod-inn-reach",
     "path": "/inn-reach/transactions/{id}/localhold/cancel"
@@ -8121,7 +8121,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/checkOutLocalHoldItem",
     "name": "mod-inn-reach",
     "path": "/inn-reach/transactions/{id}/localhold/check-out-item/{servicePointId}"
@@ -8129,7 +8129,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/transferLocalHold",
     "name": "mod-inn-reach",
     "path": "/inn-reach/transactions/{id}/localhold/transfer-item/{itemId}"
@@ -8137,7 +8137,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/cancelPatronHoldTransaction",
     "name": "mod-inn-reach",
     "path": "/inn-reach/transactions/{id}/patronhold/cancel"
@@ -8145,7 +8145,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/checkOutPatronHoldItem",
     "name": "mod-inn-reach",
     "path": "/inn-reach/transactions/{id}/patronhold/check-out-item/{servicePointId}"
@@ -8153,7 +8153,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/removePatronHoldTransaction",
     "name": "mod-inn-reach",
     "path": "/inn-reach/transactions/{id}/patronhold/remove"
@@ -8161,7 +8161,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/returnPatronHoldItem",
     "name": "mod-inn-reach",
     "path": "/inn-reach/transactions/{id}/patronhold/return-item/{servicePointId}"
@@ -8169,7 +8169,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/checkInPatronHoldItem",
     "name": "mod-inn-reach",
     "path": "/inn-reach/transactions/{id}/receive-item/{servicePointId}"
@@ -8177,7 +8177,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "post:operation/checkInPatronHoldUnshippedItem",
     "name": "mod-inn-reach",
     "path": "/inn-reach/transactions/{id}/receive-unshipped-item/{servicePointId}/{itemBarcode}"
@@ -8185,7 +8185,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/circulation.yaml",
     "apiType": "oas",
-    "interface": "inn-reach 1.2",
+    "interface": "inn-reach 1.3",
     "methods": "put:operation/checkOutItemHoldItem",
     "name": "mod-inn-reach",
     "path": "/inn-reach/transactions/{itemBarcode}/check-out-item/{servicePointId}"
@@ -8296,7 +8296,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.3",
+    "interface": "instance-storage 11.4",
     "methods": "get:instance_storage_instance_relationships_get post:instance_storage_instance_relationships_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instance-relationships"
@@ -8304,7 +8304,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.3",
+    "interface": "instance-storage 11.4",
     "methods": "delete:instance_storage_instance_relationships__relationshipid__delete get:instance_storage_instance_relationships__relationshipid__get put:instance_storage_instance_relationships__relationshipid__put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instance-relationships/{relationshipId}"
@@ -8312,7 +8312,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.3",
+    "interface": "instance-storage 11.4",
     "methods": "delete:instance_storage_instances_delete get:instance_storage_instances_get post:instance_storage_instances_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances"
@@ -8344,7 +8344,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.3",
+    "interface": "instance-storage 11.4",
     "methods": "post:instance_storage_instances_retrieve_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/retrieve"
@@ -8352,7 +8352,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.3",
+    "interface": "instance-storage 11.4",
     "methods": "delete:instance_storage_instances__instanceid__delete get:instance_storage_instances__instanceid__get patch:instance_storage_instances__instanceid__patch put:instance_storage_instances__instanceid__put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}"
@@ -8360,7 +8360,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.3",
+    "interface": "instance-storage 11.4",
     "methods": "delete:instance_storage_instances__instanceid__source_record_delete",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/source-record"
@@ -8368,7 +8368,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.3",
+    "interface": "instance-storage 11.4",
     "methods": "delete:instance_storage_instances__instanceid__source_record_marc_json_delete get:instance_storage_instances__instanceid__source_record_marc_json_get put:instance_storage_instances__instanceid__source_record_marc_json_put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/source-record/marc-json"
@@ -8376,10 +8376,18 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.3",
+    "interface": "instance-storage 11.4",
     "methods": "get:instance_storage_instances__instanceid__source_record_mods_get put:instance_storage_instances__instanceid__source_record_mods_put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/source-record/mods"
+  },
+  {
+    "apiDescription": "ramls/instance-storage.raml",
+    "apiType": "raml",
+    "interface": "instance-storage 11.4",
+    "methods": "get:instance_storage_instances__instanceid__summary_get",
+    "name": "mod-inventory-storage",
+    "path": "/instance-storage/instances/{instanceId}/summary"
   },
   {
     "apiDescription": "ramls/instance-reindex.raml",
