@@ -23,7 +23,7 @@ Mike Taylor, Index Data
 
 ## Introduction
 
-The preferred toolset for creating unit tests for Striper UI
+The preferred toolset for creating unit tests for Stripes UI
 modules such as `ui-plugin-eusage-reports` is currently
 [the Jest framework](https://jestjs.io/)
 with React interaction provided by
@@ -33,7 +33,7 @@ and mocks for back-end interaction provided by Jest itself (rather than
 as suggested in
 [the RTL Example page](https://testing-library.com/docs/react-testing-library/example-intro).)
 
-There is quite a ciomplex of different modules and condfigurations required to make this work. Rather than cargo-culting this process by blindly copying a setup from another module that seems to work, it seemed better to make some effort to understand what is required. This document tries to summarise the key points and give an overview.
+There is quite a complex of different modules and configurations required to make this work. Rather than cargo-culting this process by blindly copying a setup from another module that seems to work, it seemed better to make some effort to understand what is required. This document tries to summarise the key points and give an overview.
 
 **WARNING.** Everything in this document has been inferred from what seems to work, what breaks when certain things are absent, and relevant excepts from online doccumentation. It was not written by an expert but by a novice (since the experts don't seem to have written such a document). For this reason **everything in the document should be taken with a pinch of salt**.
 
@@ -66,7 +66,7 @@ Babel is used to support the modern JavaScript dialect ES6. This is achieved by 
 
 Jest can report test coverage just be providing the `--coverage` command-line option, but it needs to be told:
 * which files to collect coverage information from, in the `collectCoverageFrom` element
-* how to emit the results of coverage analysis, in the `coverageReporters`. The value `['lcov', 'text']` says to store in the lcov format used by FOLIO's CI system and also emit a summary of the results as text.
+* how to emit the results of coverage analysis, in the `coverageReporters` element. The value `['lcov', 'text']` says to store in the lcov format used by FOLIO's CI system and also emit a summary of the results as text.
 * where to store the coverage analysis results, in the `coverageDirectory` element.
 
 
@@ -83,7 +83,7 @@ We use `setupFilesAfterEnv` to run another file, [`test/jest/jest.setup.js`](../
 
 We use `setupFiles` to run [`test/jest/setupTests.js`](../test/jest/setupTests.js), which in turn installs all the specific mocks provided in the oddly named [`test/jest/__mock__`](../test/jest/__mock__) directory, as well as the misleadingly named `regenerator-runtime` module, which implements `async` for Babel. `setupFiles` also pulls in `jest-canvas-mock`, which mocks the canvas element.
 
-We also use `moduleNameMapper`, for reasons I do not properly understand, to mock CSS and SVG files using thw `identity-obj-proxy` module.
+We also use `moduleNameMapper`, for reasons I do not properly understand, to mock CSS and SVG files using the `identity-obj-proxy` module.
 
 * Dependencies: `regenerator-runtime`, `jest-canvas-mock`, `identity-obj-proxy`
 
@@ -122,7 +122,7 @@ Once you have your tests running, you want them to run automatically in CI. Assu
 	runTest = 'yes'
 	runTestOptions = '--coverage'
 
-The CI configuration knows to find the coverasge analysis results in `artifacts/coverage-jest`, which is where the Jest configuration says to leave them, so coverage artifacts should just appear in Jenkins.
+The CI configuration knows to find the coverage analysis results in `artifacts/coverage-jest`, which is where the Jest configuration says to leave them, so coverage artifacts should just appear in Jenkins.
 
 **NOTE.** The FOLIO project is in the process of moving CI from Jenkins to GitHub Actions. Someone who knows how that works can write the relevant section.
 
