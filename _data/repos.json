@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generatedDateTime": "2026-06-25T00:50:04.788968+00:00"
+    "generatedDateTime": "2026-07-30T01:25:12.364839+00:00"
   },
   "repos": [
     {
-      "countBranches": 65,
+      "countBranches": 70,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Central repository for the acquisition models",
@@ -50,6 +50,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -69,6 +70,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -88,6 +90,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -107,6 +110,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -139,6 +143,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -158,6 +163,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -177,6 +183,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -196,6 +203,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -215,6 +223,7 @@
       "repoType": "app",
       "snippetIntro": "<p>Application Descriptor Repository for the FOLIO Data Import application</p>",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -234,6 +243,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -253,13 +263,14 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
       ]
     },
     {
-      "countBranches": 25,
+      "countBranches": 27,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
@@ -272,6 +283,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -291,6 +303,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -310,6 +323,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -329,6 +343,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -348,6 +363,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -367,6 +383,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -386,6 +403,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -405,14 +423,15 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
       ]
     },
     {
-      "countBranches": 5,
-      "countOpenPullRequests": 1,
+      "countBranches": 4,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Application descriptor repository for app-inventory",
       "docDirName": null,
@@ -424,6 +443,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -443,6 +463,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -462,6 +483,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -481,6 +503,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -500,6 +523,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -519,6 +543,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -538,6 +563,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -557,6 +583,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -576,6 +603,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -595,13 +623,14 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
       ]
     },
     {
-      "countBranches": 110,
+      "countBranches": 109,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
@@ -614,6 +643,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -650,6 +680,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -669,6 +700,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -688,6 +720,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -707,6 +740,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -726,6 +760,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -745,6 +780,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -764,6 +800,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -783,6 +820,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -802,6 +840,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -821,6 +860,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -840,6 +880,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -859,6 +900,7 @@
       "repoType": "app",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
@@ -897,8 +939,8 @@
       "snippetIntro": "<p>Folio application descriptors</p>"
     },
     {
-      "countBranches": 7,
-      "countOpenPullRequests": 0,
+      "countBranches": 9,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": "docs",
@@ -931,7 +973,7 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 11,
+      "countBranches": 7,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "The library to handle events from data-import",
@@ -995,7 +1037,7 @@
     },
     {
       "countBranches": 19,
-      "countOpenPullRequests": 3,
+      "countOpenPullRequests": 0,
       "defaultBranch": "trillium",
       "description": "FOLIO Documentation",
       "docDirName": null,
@@ -1019,12 +1061,18 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": "<p>The purpose of this edge API utils is the combine classes/utilities/constants shared by both modules: edge-common and edge-common-spring.</p>"
+      "snippetIntro": "<p>The purpose of this edge API utils is the combine classes/utilities/constants shared by both modules: edge-common and edge-common-spring.</p>",
+      "workflows": [
+        "maven.yml"
+      ],
+      "workflowsFolio": [
+        "maven.yml@v1"
+      ]
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 7,
-      "countOpenPullRequests": 0,
+      "countBranches": 8,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Bridge the gap between CaiaSoft remote storage provider and FOLIO",
       "docDirName": null,
@@ -1085,7 +1133,13 @@
       "ramlDirName": null,
       "repoLanguageHint": "java",
       "repoType": "backend-edge",
-      "snippetIntro": "<p>This is a shared library/framework for edge APIs for spring way modules. This module is a port of <a href='https://github.com/folio-org/edge-common'>edge-common</a>, and main goal is feature parity with that framework.  From a hosting/SysOps perspective, edge modules developed with this framework should be indistinguishable from those developed using edge-common.</p>"
+      "snippetIntro": "<p>This is a shared library/framework for edge APIs for spring way modules. This module is a port of <a href='https://github.com/folio-org/edge-common'>edge-common</a>, and main goal is feature parity with that framework.  From a hosting/SysOps perspective, edge modules developed with this framework should be indistinguishable from those developed using edge-common.</p>",
+      "workflows": [
+        "maven.yml"
+      ],
+      "workflowsFolio": [
+        "maven.yml@v1"
+      ]
     },
     {
       "countBranches": 18,
@@ -1110,7 +1164,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 16,
+      "countBranches": 17,
       "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Edge API is to bridge the gap between 3rd party discovery services and FOLIO mod-courses module.",
@@ -1140,8 +1194,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 9,
-      "countOpenPullRequests": 0,
+      "countBranches": 11,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -1170,8 +1224,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 50,
-      "countOpenPullRequests": 0,
+      "countBranches": 52,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Bridge the gap between Dematic remote storage provider and FOLIO",
       "docDirName": null,
@@ -1200,7 +1254,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 19,
+      "countBranches": 21,
       "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": null,
@@ -1230,7 +1284,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 19,
+      "countBranches": 20,
       "countOpenPullRequests": 4,
       "defaultBranch": "master",
       "description": null,
@@ -1290,8 +1344,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 14,
-      "countOpenPullRequests": 0,
+      "countBranches": 15,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "A Spring based shared library/framework for edge APIs to INN-REACH system.",
       "docDirName": null,
@@ -1320,8 +1374,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 32,
-      "countOpenPullRequests": 3,
+      "countBranches": 36,
+      "countOpenPullRequests": 4,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -1350,8 +1404,8 @@
       ]
     },
     {
-      "countBranches": 19,
-      "countOpenPullRequests": 3,
+      "countBranches": 24,
+      "countOpenPullRequests": 4,
       "defaultBranch": "master",
       "description": "Edge API for mod-ncip",
       "docDirName": null,
@@ -1372,8 +1426,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 12,
-      "countOpenPullRequests": 0,
+      "countBranches": 13,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Edge API for Metadata Harvesting",
       "docDirName": null,
@@ -1403,8 +1457,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 40,
-      "countOpenPullRequests": 1,
+      "countBranches": 41,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -1459,7 +1513,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 19,
+      "countBranches": 23,
       "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": " Edge API for RTAC (RealTime Availability Check)",
@@ -1510,7 +1564,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 15,
+      "countBranches": 17,
       "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": null,
@@ -1586,7 +1640,7 @@
     },
     {
       "countBranches": 5,
-      "countOpenPullRequests": 2,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Repository for Eureka-based environments",
       "docDirName": null,
@@ -1600,6 +1654,22 @@
         "build-and-push-ui.yml",
         "build-and-release-cli.yml",
         "build-and-run-cli.yml"
+      ]
+    },
+    {
+      "countBranches": 1,
+      "countOpenPullRequests": 0,
+      "defaultBranch": "main",
+      "description": "Folio AI powered agent(s)",
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "folio-ai-agents",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": "",
+      "workflows": [
+        "ai-code-review.yml"
       ]
     },
     {
@@ -1660,6 +1730,26 @@
       "snippetIntro": ""
     },
     {
+      "countBranches": 1,
+      "countOpenPullRequests": 0,
+      "defaultBranch": "master",
+      "description": null,
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "folio-apisix",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": "<p><code>folio-apisix</code> is a FOLIO-customized <a href='https://apisix.apache.org/'>Apache APISIX</a> API gateway image. It builds on the <a href='https://docs.docker.com/dhi/'>Docker Hardened Image</a> build of APISIX (<code>dhi.io/apisix</code>) and adds:</p>",
+      "workflows": [
+        "do-docker.yml",
+        "test.yml"
+      ],
+      "workflowsFolio": [
+        "do-docker.yml@v1"
+      ]
+    },
+    {
       "countBranches": 2,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
@@ -1673,13 +1763,14 @@
       "repoType": "other",
       "snippetIntro": "",
       "workflows": [
+        "feature-build.yml",
         "release-application-version.yml",
         "release-preparation.yml",
         "update-scheduler.yml"
       ]
     },
     {
-      "countBranches": 10,
+      "countBranches": 11,
       "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "A Maven plugin to generate application descriptor from a template",
@@ -1729,8 +1820,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 9,
-      "countOpenPullRequests": 0,
+      "countBranches": 13,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Store and maintain custom fields",
       "docDirName": null,
@@ -1757,8 +1848,8 @@
       ]
     },
     {
-      "countBranches": 7,
-      "countOpenPullRequests": 1,
+      "countBranches": 6,
+      "countOpenPullRequests": 0,
       "defaultBranch": "main",
       "description": "The FOLIO Data Anonymization too anonymizes or masks patron data in library records to ensure privacy protection.",
       "docDirName": "docs",
@@ -1773,7 +1864,7 @@
         "maven.yml"
       ],
       "workflowsFolio": [
-        "maven.yml@e4284b09dd90107636f754f5eca860cfc79f0655"
+        "maven.yml@8b59acede585b74b1b717fa59a6539c5852d4278"
       ]
     },
     {
@@ -1814,7 +1905,7 @@
       ]
     },
     {
-      "countBranches": 3,
+      "countBranches": 5,
       "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
@@ -1827,8 +1918,8 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 11,
-      "countOpenPullRequests": 0,
+      "countBranches": 13,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "The common resources library for mod-data-export-spring and mod-data-export-worker",
       "docDirName": null,
@@ -1879,8 +1970,8 @@
       "snippetIntro": "<p>FOLIO Helm charts modules repository.</p>"
     },
     {
-      "countBranches": 11,
-      "countOpenPullRequests": 5,
+      "countBranches": 2,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Helm charts modules repository (using Helm common library)",
       "docDirName": null,
@@ -1925,8 +2016,8 @@
       "snippetIntro": "<p>A collection of runbooks for FOLIO installation.</p>"
     },
     {
-      "countBranches": 187,
-      "countOpenPullRequests": 6,
+      "countBranches": 190,
+      "countOpenPullRequests": 5,
       "defaultBranch": "master",
       "description": "The set of integration tests, based on karate framework",
       "docDirName": null,
@@ -1939,8 +2030,8 @@
       "snippetIntro": "<p>This project is the set of integration tests based on <a href='https://github.com/karatelabs/karate'>karate framework</a></p>"
     },
     {
-      "countBranches": 3,
-      "countOpenPullRequests": 1,
+      "countBranches": 2,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "ISBN number converter utilities",
       "docDirName": null,
@@ -1993,7 +2084,7 @@
       ]
     },
     {
-      "countBranches": 36,
+      "countBranches": 39,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
@@ -2034,7 +2125,7 @@
       ]
     },
     {
-      "countBranches": 5,
+      "countBranches": 6,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
@@ -2095,8 +2186,8 @@
       ]
     },
     {
-      "countBranches": 13,
-      "countOpenPullRequests": 1,
+      "countBranches": 14,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
       "docDirName": "docs",
@@ -2219,8 +2310,8 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 9,
-      "countOpenPullRequests": 2,
+      "countBranches": 10,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "S3-client for FOLIO modules",
       "docDirName": null,
@@ -2315,8 +2406,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 16,
-      "countOpenPullRequests": 0,
+      "countBranches": 17,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "This is a library (jar) that contains the basic functionality and main dependencies required for development FOLIO modules using Spring framework.",
       "docDirName": "doc",
@@ -2357,8 +2448,8 @@
       "snippetIntro": "<p><a href='https://github.com/folio-org/folio-test-env/blob/master/TESTING.md'>Basic instructions</a> and bootstrap files for setting up a test instance of FOLIO.</p>"
     },
     {
-      "countBranches": 9,
-      "countOpenPullRequests": 2,
+      "countBranches": 8,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Various tools, and support glue for FOLIO CI",
       "docDirName": null,
@@ -2400,7 +2491,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 9,
+      "countBranches": 8,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Lightweight FOLIO module development library for Vert.x that supports OpenAPI",
@@ -2450,8 +2541,8 @@
       ]
     },
     {
-      "countBranches": 9,
-      "countOpenPullRequests": 2,
+      "countBranches": 10,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Shared library for generating MARC records on-the-fly",
       "docDirName": null,
@@ -2496,8 +2587,8 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 11,
-      "countOpenPullRequests": 0,
+      "countBranches": 5,
+      "countOpenPullRequests": 1,
       "defaultBranch": "main",
       "description": "The shared jest configuration for stripes applications and extensions",
       "docDirName": null,
@@ -2519,17 +2610,20 @@
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "This repository serves as the centralized configuration management system for the FOLIO platform's operational environments and deployment configurations. It contains environment-specific settings, tenant configurations, team structures, and deployment parameters used across the FOLIO ecosystem.",
-      "docDirName": null,
+      "docDirName": "docs",
       "hasTranslations": false,
       "name": "kitfox-config",
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": ""
+      "snippetIntro": "",
+      "workflows": [
+        "validate-config.yml"
+      ]
     },
     {
-      "countBranches": 4,
-      "countOpenPullRequests": 2,
+      "countBranches": 3,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "The kitfox-github repository serves as the centralized configuration hub for reusable GitHub Actions workflows, pipeline templates, and organization-wide GitHub automation standards across the Kitfox ecosystem. ",
       "docDirName": null,
@@ -2670,8 +2764,8 @@
       ]
     },
     {
-      "countBranches": 4,
-      "countOpenPullRequests": 1,
+      "countBranches": 2,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "A library for converting RDF (BIBFRAME) records to Linked Data Graphs and vice versa.",
       "docDirName": null,
@@ -2705,8 +2799,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 10,
-      "countOpenPullRequests": 2,
+      "countBranches": 11,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": null,
       "docDirName": "docs",
@@ -2735,8 +2829,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 10,
-      "countOpenPullRequests": 0,
+      "countBranches": 11,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -2765,8 +2859,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 7,
-      "countOpenPullRequests": 1,
+      "countBranches": 9,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -2794,8 +2888,8 @@
       ]
     },
     {
-      "countBranches": 35,
-      "countOpenPullRequests": 3,
+      "countBranches": 31,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "A FOLIO Module for handling the server side work needed for the ERM system",
       "docDirName": "docs",
@@ -2818,23 +2912,9 @@
       ]
     },
     {
-      "countBranches": 1,
-      "countOpenPullRequests": 0,
-      "defaultBranch": "master",
-      "description": "AI powered BE module",
-      "docDirName": null,
-      "hasTranslations": false,
-      "name": "mod-ai",
-      "org": "folio-org",
-      "ramlDirName": null,
-      "repoLanguageHint": "other",
-      "repoType": "backend-mod",
-      "snippetIntro": ""
-    },
-    {
       "apiTypes": "RAML",
-      "countBranches": 19,
-      "countOpenPullRequests": 2,
+      "countBranches": 21,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Module for managing audit data",
       "docDirName": null,
@@ -2921,8 +3001,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 33,
-      "countOpenPullRequests": 2,
+      "countBranches": 34,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -2951,8 +3031,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 37,
-      "countOpenPullRequests": 2,
+      "countBranches": 38,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Calendar functionalities to enable service points to maintain hours of operation",
       "docDirName": "docs",
@@ -2980,7 +3060,7 @@
     {
       "apiTypes": "OAS",
       "countBranches": 3,
-      "countOpenPullRequests": 1,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -3006,8 +3086,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 59,
-      "countOpenPullRequests": 5,
+      "countBranches": 63,
+      "countOpenPullRequests": 7,
       "defaultBranch": "master",
       "description": "FOLIO mod-circulation",
       "docDirName": "doc",
@@ -3034,7 +3114,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 25,
+      "countBranches": 26,
       "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Circulation backend-for-frontend module",
@@ -3064,8 +3144,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 6,
-      "countOpenPullRequests": 0,
+      "countBranches": 7,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -3095,8 +3175,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 37,
-      "countOpenPullRequests": 0,
+      "countBranches": 41,
+      "countOpenPullRequests": 4,
       "defaultBranch": "master",
       "description": "FOLIO mod-circulation-storage",
       "docDirName": null,
@@ -3127,8 +3207,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 6,
-      "countOpenPullRequests": 0,
+      "countBranches": 7,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Configuration module based on the raml-module-builder and a set of raml and json schemas backed by a postgresdb async implementation",
       "docDirName": null,
@@ -3186,7 +3266,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 21,
+      "countBranches": 22,
       "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": null,
@@ -3281,8 +3361,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 22,
-      "countOpenPullRequests": 4,
+      "countBranches": 23,
+      "countOpenPullRequests": 5,
       "defaultBranch": "master",
       "description": "Exporting inventory records",
       "docDirName": null,
@@ -3312,8 +3392,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 30,
-      "countOpenPullRequests": 2,
+      "countBranches": 32,
+      "countOpenPullRequests": 4,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -3342,8 +3422,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 36,
-      "countOpenPullRequests": 7,
+      "countBranches": 39,
+      "countOpenPullRequests": 9,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -3372,8 +3452,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 13,
-      "countOpenPullRequests": 0,
+      "countBranches": 14,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -3418,8 +3498,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 13,
-      "countOpenPullRequests": 0,
+      "countBranches": 16,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -3449,8 +3529,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 10,
-      "countOpenPullRequests": 1,
+      "countBranches": 12,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Data import converter storage",
       "docDirName": null,
@@ -3527,8 +3607,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 11,
-      "countOpenPullRequests": 0,
+      "countBranches": 12,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Provides functionality for sending notifications",
       "docDirName": null,
@@ -3559,8 +3639,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 10,
-      "countOpenPullRequests": 1,
+      "countBranches": 9,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
       "docDirName": "docs",
@@ -3698,8 +3778,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 18,
-      "countOpenPullRequests": 0,
+      "countBranches": 20,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Provides functionality for the notification events",
       "docDirName": null,
@@ -3762,8 +3842,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 49,
-      "countOpenPullRequests": 1,
+      "countBranches": 50,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Finance business logic",
       "docDirName": null,
@@ -3793,8 +3873,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 67,
-      "countOpenPullRequests": 0,
+      "countBranches": 71,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "CRUD module to manage finance-data (i.e. ledgers, funds, budgets, etc.)",
       "docDirName": null,
@@ -3856,7 +3936,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 73,
+      "countBranches": 78,
       "countOpenPullRequests": 9,
       "defaultBranch": "master",
       "description": "FOLIO Query Machine back-end module",
@@ -3886,8 +3966,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 37,
-      "countOpenPullRequests": 1,
+      "countBranches": 38,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -3916,8 +3996,8 @@
       ]
     },
     {
-      "countBranches": 8,
-      "countOpenPullRequests": 0,
+      "countBranches": 12,
+      "countOpenPullRequests": 4,
       "defaultBranch": "master",
       "description": "FOLIO module for executing GraphQL queries",
       "docDirName": "doc",
@@ -3963,8 +4043,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 28,
-      "countOpenPullRequests": 0,
+      "countBranches": 30,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Implements INN-Reach service client",
       "docDirName": null,
@@ -3994,8 +4074,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 29,
-      "countOpenPullRequests": 3,
+      "countBranches": 5,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
       "docDirName": "doc",
@@ -4024,8 +4104,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 18,
-      "countOpenPullRequests": 5,
+      "countBranches": 15,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
       "docDirName": "docs",
@@ -4054,7 +4134,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 44,
+      "countBranches": 46,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Provides different update schemes for populating a FOLIO Inventory Storage",
@@ -4144,8 +4224,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 7,
-      "countOpenPullRequests": 1,
+      "countBranches": 6,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Broker communication with the EBSCO knowledge base (Java)",
       "docDirName": null,
@@ -4174,12 +4254,13 @@
       ]
     },
     {
-      "countBranches": 29,
-      "countOpenPullRequests": 0,
+      "countBranches": 27,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "FOLIO service module - licenses",
       "docDirName": "docs",
       "hasTranslations": false,
+      "hintOas": true,
       "name": "mod-licenses",
       "org": "folio-org",
       "ramlDirName": "ramls",
@@ -4187,6 +4268,7 @@
       "repoType": "backend-mod",
       "snippetIntro": "<p>FOLIO service module - licenses.</p>",
       "workflows": [
+        "api-pipeline.yml",
         "run-int-tests.yml",
         "sbom.yml",
         "stuck-license-cla.yml",
@@ -4195,8 +4277,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 10,
-      "countOpenPullRequests": 2,
+      "countBranches": 8,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Manage data graph of FOLIO library's catalog",
       "docDirName": null,
@@ -4228,8 +4310,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 11,
-      "countOpenPullRequests": 1,
+      "countBranches": 10,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Module to import Bibframe RDF into FOLIO's data graph.",
       "docDirName": "docs",
@@ -4258,7 +4340,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 39,
+      "countBranches": 42,
       "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Lists back-end module",
@@ -4288,8 +4370,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 2,
-      "countOpenPullRequests": 1,
+      "countBranches": 1,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "FOLIO module for managing locations and service points",
       "docDirName": "docs",
@@ -4351,8 +4433,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 8,
-      "countOpenPullRequests": 0,
+      "countBranches": 9,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -4413,8 +4495,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 5,
-      "countOpenPullRequests": 1,
+      "countBranches": 4,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Module designed for high-performance migration of MARC records.",
       "docDirName": "doc",
@@ -4488,8 +4570,8 @@
       ]
     },
     {
-      "countBranches": 27,
-      "countOpenPullRequests": 7,
+      "countBranches": 28,
+      "countOpenPullRequests": 8,
       "defaultBranch": "master",
       "description": "NISO Circulation Interchange Protocol (NCIP)  support in FOLIO",
       "docDirName": "docs",
@@ -4540,8 +4622,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 14,
-      "countOpenPullRequests": 0,
+      "countBranches": 16,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Notifications to the users",
       "docDirName": null,
@@ -4571,12 +4653,13 @@
       ]
     },
     {
-      "countBranches": 17,
+      "countBranches": 13,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Bounded Context Deailing with Open Access Publishing",
-      "docDirName": null,
+      "docDirName": "docs",
       "hasTranslations": false,
+      "hintOas": true,
       "name": "mod-oa",
       "org": "folio-org",
       "ramlDirName": null,
@@ -4584,15 +4667,17 @@
       "repoType": "backend-mod",
       "snippetIntro": "<p>Bounded Context Deailing with Open Access Publishing</p>",
       "workflows": [
+        "api-pipeline.yml",
         "run-int-tests.yml",
         "sbom.yml",
+        "stuck-license-cla.yml",
         "validate-module.yml"
       ]
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 44,
-      "countOpenPullRequests": 1,
+      "countBranches": 45,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Backend Module implementing the OAI-PMH metadata harvesting protocol",
       "docDirName": null,
@@ -4653,8 +4738,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 67,
-      "countOpenPullRequests": 4,
+      "countBranches": 70,
+      "countOpenPullRequests": 7,
       "defaultBranch": "master",
       "description": "Orders business logic module",
       "docDirName": null,
@@ -4685,8 +4770,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 73,
-      "countOpenPullRequests": 3,
+      "countBranches": 74,
+      "countOpenPullRequests": 4,
       "defaultBranch": "master",
       "description": "Storage (CRUD) module for Orders",
       "docDirName": null,
@@ -4747,8 +4832,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 31,
-      "countOpenPullRequests": 1,
+      "countBranches": 32,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Persistent storage of organizations data",
       "docDirName": null,
@@ -4778,8 +4863,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 15,
-      "countOpenPullRequests": 1,
+      "countBranches": 16,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Performs password validation and stores validation rules for specified tenant",
       "docDirName": "doc",
@@ -4965,8 +5050,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 8,
-      "countOpenPullRequests": 0,
+      "countBranches": 10,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -4997,8 +5082,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 7,
-      "countOpenPullRequests": 1,
+      "countBranches": 4,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Module manages record specifications and validates records against them",
       "docDirName": "docs",
@@ -5029,8 +5114,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 18,
-      "countOpenPullRequests": 0,
+      "countBranches": 19,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Backend module for remote storage.",
       "docDirName": null,
@@ -5218,8 +5303,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 51,
-      "countOpenPullRequests": 5,
+      "countBranches": 52,
+      "countOpenPullRequests": 6,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -5250,11 +5335,11 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 6,
-      "countOpenPullRequests": 0,
+      "countBranches": 7,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
-      "docDirName": null,
+      "docDirName": "docs",
       "hasTranslations": false,
       "hintOas": true,
       "isMaven": true,
@@ -5280,7 +5365,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 11,
+      "countBranches": 12,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
@@ -5342,7 +5427,7 @@
       ]
     },
     {
-      "countBranches": 24,
+      "countBranches": 18,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "FOLIO Backend module for Serials Management",
@@ -5364,7 +5449,7 @@
       ]
     },
     {
-      "countBranches": 15,
+      "countBranches": 16,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "FOLIO Backend Module for cross-app connectivity",
@@ -5415,8 +5500,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 31,
-      "countOpenPullRequests": 3,
+      "countBranches": 9,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -5445,8 +5530,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 17,
-      "countOpenPullRequests": 0,
+      "countBranches": 7,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Persistent source record storage",
       "docDirName": null,
@@ -5561,8 +5646,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 21,
-      "countOpenPullRequests": 3,
+      "countBranches": 22,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Title-level requests back-end module",
       "docDirName": null,
@@ -5637,8 +5722,8 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 17,
-      "countOpenPullRequests": 0,
+      "countBranches": 19,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Domain Model to Manage Users",
       "docDirName": null,
@@ -5701,7 +5786,7 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 7,
+      "countBranches": 9,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Module for orchestrating operations across mod-users and Keycloak",
@@ -5731,8 +5816,8 @@
     },
     {
       "apiTypes": "OAS",
-      "countBranches": 3,
-      "countOpenPullRequests": 1,
+      "countBranches": 4,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
       "docDirName": "docs",
@@ -5771,7 +5856,7 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 8,
+      "countBranches": 9,
       "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Okapi core and modules",
@@ -5801,8 +5886,8 @@
       ]
     },
     {
-      "countBranches": 55,
-      "countOpenPullRequests": 17,
+      "countBranches": 56,
+      "countOpenPullRequests": 18,
       "defaultBranch": "master",
       "description": "Repository that houses tools and performance testing scripts",
       "docDirName": null,
@@ -5827,8 +5912,8 @@
       "snippetIntro": "<p>The purpose of this repository is to provide a personal data disclosure form template and related tools/scripts.  Each module will specialize and store this form in the top level of their git repository.  The form is a mechanism to disclose the types of personal data stored by each module.  This information enables those hosting FOLIO to better manage and comply with various privacy laws and restrictions, e.g. GDPR, etc.</p>"
     },
     {
-      "countBranches": 110,
-      "countOpenPullRequests": 1,
+      "countBranches": 11,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Folio Rancher Automation Framework",
       "docDirName": null,
@@ -5837,11 +5922,14 @@
       "org": "folio-org",
       "repoLanguageHint": "other",
       "repoType": "other",
-      "snippetIntro": "<p>The Jenkins Pipelines Shared Library for FOLIO is designed to facilitate and streamline the management of Jenkins pipelines. It provides reusable functions and scripts, aimed at automating CI/CD workflows for the FOLIO platform. This repository includes resources for Jenkins pipeline configurations, Jenkins plugin management, and integration with other components of the FOLIO ecosystem.</p>"
+      "snippetIntro": "<p>The Jenkins Pipelines Shared Library for FOLIO is designed to facilitate and streamline the management of Jenkins pipelines. It provides reusable functions and scripts, aimed at automating CI/CD workflows for the FOLIO platform. This repository includes resources for Jenkins pipeline configurations, Jenkins plugin management, and integration with other components of the FOLIO ecosystem.</p>",
+      "workflows": [
+        "ai-code-repo.yml"
+      ]
     },
     {
-      "countBranches": 178,
-      "countOpenPullRequests": 28,
+      "countBranches": 175,
+      "countOpenPullRequests": 23,
       "defaultBranch": "master",
       "description": "Complete set of Stripes modules for FOLIO",
       "docDirName": "doc",
@@ -5857,7 +5945,7 @@
       ]
     },
     {
-      "countBranches": 5,
+      "countBranches": 6,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "FOLIO Stripes platform for ERM modules",
@@ -5870,8 +5958,8 @@
       "snippetIntro": "<p>This is the ERM Stripes 'platform'. It consists simply of an NPM <a href='https://docs.npmjs.com/files/package.json'><code>package.json</code></a> that specifies the version of <code>@folio/stripes-core</code> and of any Stripes modules you wish to make available as part of the ERM platform to generate client bundles along with a utility for generating module descriptors for each Stripes module.</p>"
     },
     {
-      "countBranches": 59,
-      "countOpenPullRequests": 12,
+      "countBranches": 57,
+      "countOpenPullRequests": 4,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -5963,7 +6051,7 @@
     },
     {
       "apiTypes": "RAML",
-      "countBranches": 16,
+      "countBranches": 15,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Framework allowing easy module creation based on RAML files",
@@ -6020,7 +6108,7 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 4,
+      "countBranches": 3,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Central repository for executing schema change actions",
@@ -6077,7 +6165,7 @@
     },
     {
       "countBranches": 18,
-      "countOpenPullRequests": 1,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Stripes components that are specific to use cases that arise in Acquisitions-related modules",
       "docDirName": null,
@@ -6095,8 +6183,8 @@
       ]
     },
     {
-      "countBranches": 31,
-      "countOpenPullRequests": 0,
+      "countBranches": 32,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Stripes components that are specific to use cases that arise in Authority-related modules",
       "docDirName": null,
@@ -6114,7 +6202,7 @@
       ]
     },
     {
-      "countBranches": 15,
+      "countBranches": 16,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Components to be used by modules and applications that handle Authorization (ui-authorization-roles, ui-authorization-capabilities, etc.) duties. Other modules and applications may not find them as useful.",
@@ -6133,8 +6221,8 @@
       ]
     },
     {
-      "countBranches": 6,
-      "countOpenPullRequests": 2,
+      "countBranches": 5,
+      "countOpenPullRequests": 1,
       "defaultBranch": "main",
       "description": "Command line interface for building Stripes UI modules.",
       "docDirName": "doc",
@@ -6152,7 +6240,7 @@
       ]
     },
     {
-      "countBranches": 26,
+      "countBranches": 27,
       "countOpenPullRequests": 6,
       "defaultBranch": "main",
       "description": "Command line interface for creating, building, and testing Stripes UI modules.",
@@ -6184,8 +6272,8 @@
       "snippetIntro": ""
     },
     {
-      "countBranches": 72,
-      "countOpenPullRequests": 20,
+      "countBranches": 74,
+      "countOpenPullRequests": 22,
       "defaultBranch": "main",
       "description": "A component library for Stripes",
       "docDirName": null,
@@ -6204,7 +6292,7 @@
       ]
     },
     {
-      "countBranches": 19,
+      "countBranches": 15,
       "countOpenPullRequests": 1,
       "defaultBranch": "main",
       "description": "Declarative REST data access for React components, part of the FOLIO project",
@@ -6223,8 +6311,8 @@
       ]
     },
     {
-      "countBranches": 55,
-      "countOpenPullRequests": 5,
+      "countBranches": 43,
+      "countOpenPullRequests": 4,
       "defaultBranch": "main",
       "description": "The core of Stripes, an opinionated and modular platform for React components consuming REST data and the UI framework for the FOLIO project",
       "docDirName": "doc",
@@ -6360,8 +6448,8 @@
       ]
     },
     {
-      "countBranches": 14,
-      "countOpenPullRequests": 0,
+      "countBranches": 15,
+      "countOpenPullRequests": 1,
       "defaultBranch": "main",
       "description": "Administer locally created instances, holdings records, items",
       "docDirName": null,
@@ -6398,8 +6486,8 @@
       ]
     },
     {
-      "countBranches": 9,
-      "countOpenPullRequests": 0,
+      "countBranches": 10,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Stripes components that are specific to use cases that arise in Marc-related modules",
       "docDirName": null,
@@ -6449,7 +6537,7 @@
       ]
     },
     {
-      "countBranches": 60,
+      "countBranches": 57,
       "countOpenPullRequests": 8,
       "defaultBranch": "main",
       "description": null,
@@ -6468,8 +6556,8 @@
       ]
     },
     {
-      "countBranches": 24,
-      "countOpenPullRequests": 15,
+      "countBranches": 27,
+      "countOpenPullRequests": 17,
       "defaultBranch": "main",
       "description": null,
       "docDirName": null,
@@ -6487,8 +6575,8 @@
       ]
     },
     {
-      "countBranches": 86,
-      "countOpenPullRequests": 33,
+      "countBranches": 90,
+      "countOpenPullRequests": 36,
       "defaultBranch": "master",
       "description": null,
       "docDirName": "doc",
@@ -6506,8 +6594,8 @@
       ]
     },
     {
-      "countBranches": 27,
-      "countOpenPullRequests": 1,
+      "countBranches": 26,
+      "countOpenPullRequests": 0,
       "defaultBranch": "main",
       "description": "A set of TypeScript typings for the Stripes UI framework",
       "docDirName": null,
@@ -6583,7 +6671,7 @@
     },
     {
       "countBranches": 3,
-      "countOpenPullRequests": 2,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "FOLIO Module Evaluator",
       "docDirName": "docs",
@@ -6599,8 +6687,8 @@
       ]
     },
     {
-      "countBranches": 10,
-      "countOpenPullRequests": 2,
+      "countBranches": 15,
+      "countOpenPullRequests": 6,
       "defaultBranch": "master",
       "description": "FOLIO Technical Council Documents",
       "docDirName": null,
@@ -6610,6 +6698,25 @@
       "repoLanguageHint": "other",
       "repoType": "other",
       "snippetIntro": ""
+    },
+    {
+      "countBranches": 2,
+      "countOpenPullRequests": 1,
+      "defaultBranch": "master",
+      "description": "Testcontainers :: Garage - S3-compatible distributed object storage service",
+      "docDirName": null,
+      "hasTranslations": false,
+      "name": "testcontainers-garage",
+      "org": "folio-org",
+      "repoLanguageHint": "other",
+      "repoType": "other",
+      "snippetIntro": "",
+      "workflows": [
+        "maven.yml"
+      ],
+      "workflowsFolio": [
+        "maven.yml@v1"
+      ]
     },
     {
       "countBranches": 3,
@@ -6709,8 +6816,8 @@
       ]
     },
     {
-      "countBranches": 97,
-      "countOpenPullRequests": 2,
+      "countBranches": 96,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -6748,7 +6855,7 @@
     },
     {
       "countBranches": 22,
-      "countOpenPullRequests": 0,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Stripes UI for checking in items with simulated scans",
       "docDirName": null,
@@ -6785,8 +6892,8 @@
       ]
     },
     {
-      "countBranches": 27,
-      "countOpenPullRequests": 2,
+      "countBranches": 26,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -6823,8 +6930,8 @@
       ]
     },
     {
-      "countBranches": 7,
-      "countOpenPullRequests": 1,
+      "countBranches": 6,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -6842,7 +6949,7 @@
       ]
     },
     {
-      "countBranches": 18,
+      "countBranches": 19,
       "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Consortia settings",
@@ -6881,7 +6988,7 @@
     },
     {
       "countBranches": 15,
-      "countOpenPullRequests": 1,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "A stripes app to display/customise FOLIO widgets",
       "docDirName": null,
@@ -6920,8 +7027,8 @@
       ]
     },
     {
-      "countBranches": 145,
-      "countOpenPullRequests": 0,
+      "countBranches": 147,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "UI module: managing batch loader feature",
       "docDirName": null,
@@ -6978,7 +7085,7 @@
       ]
     },
     {
-      "countBranches": 112,
+      "countBranches": 113,
       "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "FOLIO eholdings App",
@@ -7018,8 +7125,8 @@
       ]
     },
     {
-      "countBranches": 11,
-      "countOpenPullRequests": 4,
+      "countBranches": 10,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Stripes UI for managing ERM usage statistics. Funded by European Regional Development Fund (EFRE).",
       "docDirName": "docs",
@@ -7056,8 +7163,8 @@
       ]
     },
     {
-      "countBranches": 16,
-      "countOpenPullRequests": 0,
+      "countBranches": 20,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -7094,8 +7201,8 @@
       ]
     },
     {
-      "countBranches": 17,
-      "countOpenPullRequests": 11,
+      "countBranches": 21,
+      "countOpenPullRequests": 15,
       "defaultBranch": "master",
       "description": "finc-select UI module. Funded by European Regional Development Fund (EFRE).",
       "docDirName": null,
@@ -7191,8 +7298,8 @@
       ]
     },
     {
-      "countBranches": 176,
-      "countOpenPullRequests": 22,
+      "countBranches": 181,
+      "countOpenPullRequests": 26,
       "defaultBranch": "master",
       "description": "UI module for administrating instances",
       "docDirName": null,
@@ -7249,7 +7356,7 @@
     },
     {
       "countBranches": 46,
-      "countOpenPullRequests": 3,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -7307,8 +7414,8 @@
       ]
     },
     {
-      "countBranches": 100,
-      "countOpenPullRequests": 7,
+      "countBranches": 101,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -7326,8 +7433,8 @@
       ]
     },
     {
-      "countBranches": 84,
-      "countOpenPullRequests": 0,
+      "countBranches": 86,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -7366,7 +7473,7 @@
       ]
     },
     {
-      "countBranches": 66,
+      "countBranches": 67,
       "countOpenPullRequests": 11,
       "defaultBranch": "master",
       "description": "MARC Authorities module",
@@ -7423,8 +7530,8 @@
       ]
     },
     {
-      "countBranches": 36,
-      "countOpenPullRequests": 1,
+      "countBranches": 37,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "FOLIO Notes Helper App ",
       "docDirName": null,
@@ -7442,8 +7549,8 @@
       ]
     },
     {
-      "countBranches": 11,
-      "countOpenPullRequests": 1,
+      "countBranches": 12,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "UX module for Open Access Management",
       "docDirName": null,
@@ -7482,7 +7589,7 @@
       ]
     },
     {
-      "countBranches": 26,
+      "countBranches": 27,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
@@ -7539,8 +7646,8 @@
       ]
     },
     {
-      "countBranches": 25,
-      "countOpenPullRequests": 0,
+      "countBranches": 26,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -7559,7 +7666,7 @@
     },
     {
       "countBranches": 13,
-      "countOpenPullRequests": 1,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Stripes plugin module for displaying graphs of eUsage",
       "docDirName": "doc",
@@ -7611,8 +7718,8 @@
       ]
     },
     {
-      "countBranches": 25,
-      "countOpenPullRequests": 0,
+      "countBranches": 26,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Stripes plugin to find Authority records",
       "docDirName": null,
@@ -7746,8 +7853,8 @@
       ]
     },
     {
-      "countBranches": 31,
-      "countOpenPullRequests": 0,
+      "countBranches": 32,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "UI Plugin that implements UI Data Import profiles search and pick",
       "docDirName": null,
@@ -7765,8 +7872,8 @@
       ]
     },
     {
-      "countBranches": 36,
-      "countOpenPullRequests": 1,
+      "countBranches": 37,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Instance-finder plugin for Stripes",
       "docDirName": null,
@@ -7843,8 +7950,8 @@
       ]
     },
     {
-      "countBranches": 17,
-      "countOpenPullRequests": 0,
+      "countBranches": 18,
+      "countOpenPullRequests": 1,
       "defaultBranch": "master",
       "description": "Stripes plugin to find packages and titles",
       "docDirName": null,
@@ -7862,8 +7969,8 @@
       ]
     },
     {
-      "countBranches": 11,
-      "countOpenPullRequests": 1,
+      "countBranches": 10,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": "Stripes UI plugin: Display, filter and select PO lines",
       "docDirName": null,
@@ -7938,8 +8045,8 @@
       ]
     },
     {
-      "countBranches": 85,
-      "countOpenPullRequests": 1,
+      "countBranches": 86,
+      "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Stripes UI for quickMARC editor",
       "docDirName": null,
@@ -7977,8 +8084,8 @@
       ]
     },
     {
-      "countBranches": 24,
-      "countOpenPullRequests": 4,
+      "countBranches": 20,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -8055,7 +8162,7 @@
       ]
     },
     {
-      "countBranches": 21,
+      "countBranches": 22,
       "countOpenPullRequests": 2,
       "defaultBranch": "master",
       "description": "Stripes UI module for making requests on items",
@@ -8134,8 +8241,8 @@
       ]
     },
     {
-      "countBranches": 9,
-      "countOpenPullRequests": 1,
+      "countBranches": 8,
+      "countOpenPullRequests": 0,
       "defaultBranch": "master",
       "description": null,
       "docDirName": null,
@@ -8264,8 +8371,8 @@
       ]
     },
     {
-      "countBranches": 119,
-      "countOpenPullRequests": 19,
+      "countBranches": 114,
+      "countOpenPullRequests": 14,
       "defaultBranch": "master",
       "description": "Stripes UI module: administrating users",
       "docDirName": null,
@@ -8284,8 +8391,8 @@
       ]
     },
     {
-      "countBranches": 7,
-      "countOpenPullRequests": 0,
+      "countBranches": 9,
+      "countOpenPullRequests": 1,
       "defaultBranch": "main",
       "description": "The UI Module for Mod Workflow",
       "docDirName": null,
@@ -8303,8 +8410,8 @@
       ]
     },
     {
-      "countBranches": 7,
-      "countOpenPullRequests": 2,
+      "countBranches": 8,
+      "countOpenPullRequests": 3,
       "defaultBranch": "master",
       "description": "Yakbak proxy for reading/writing tapes of network interactions",
       "docDirName": null,
