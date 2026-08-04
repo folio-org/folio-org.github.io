@@ -8448,7 +8448,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "get:operation/getChannels post:operation/postChannel",
     "name": "mod-inventory-update",
     "path": "/inventory-import/channels"
@@ -8456,7 +8456,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "delete:operation/deleteChannel get:operation/getChannel put:operation/putChannel",
     "name": "mod-inventory-update",
     "path": "/inventory-import/channels/{id}"
@@ -8464,7 +8464,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "post:operation/commission",
     "name": "mod-inventory-update",
     "path": "/inventory-import/channels/{id}/commission"
@@ -8472,7 +8472,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "post:operation/decommission",
     "name": "mod-inventory-update",
     "path": "/inventory-import/channels/{id}/decommission"
@@ -8480,7 +8480,15 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
+    "methods": "post:operation/harvestXmlRecords",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/channels/{id}/harvest"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.1",
     "methods": "post:operation/initFileSystemQueue",
     "name": "mod-inventory-update",
     "path": "/inventory-import/channels/{id}/init-queue"
@@ -8488,7 +8496,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "post:operation/listen",
     "name": "mod-inventory-update",
     "path": "/inventory-import/channels/{id}/listen"
@@ -8496,7 +8504,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "post:operation/noListen",
     "name": "mod-inventory-update",
     "path": "/inventory-import/channels/{id}/no-listen"
@@ -8504,7 +8512,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "post:operation/pauseJob",
     "name": "mod-inventory-update",
     "path": "/inventory-import/channels/{id}/pause-job"
@@ -8512,7 +8520,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "post:operation/resumeJob",
     "name": "mod-inventory-update",
     "path": "/inventory-import/channels/{id}/resume-job"
@@ -8520,7 +8528,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "post:operation/echoTransformation",
     "name": "mod-inventory-update",
     "path": "/inventory-import/channels/{id}/try-transformation"
@@ -8528,7 +8536,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "post:operation/uploadXmlRecords",
     "name": "mod-inventory-update",
     "path": "/inventory-import/channels/{id}/upload"
@@ -8536,7 +8544,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "get:operation/getFailedRecords post:operation/postFailedRecords",
     "name": "mod-inventory-update",
     "path": "/inventory-import/failed-records"
@@ -8544,7 +8552,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "delete:operation/deleteRecordFailure get:operation/getFailedRecord",
     "name": "mod-inventory-update",
     "path": "/inventory-import/failed-records/{id}"
@@ -8552,7 +8560,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "get:operation/getImportJobs post:operation/postImportJob",
     "name": "mod-inventory-update",
     "path": "/inventory-import/import-jobs"
@@ -8560,7 +8568,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "delete:operation/deleteImportJob get:operation/getImportJob",
     "name": "mod-inventory-update",
     "path": "/inventory-import/import-jobs/{id}"
@@ -8568,7 +8576,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "get:operation/getImportJobLogLines post:operation/postImportJobLogLines",
     "name": "mod-inventory-update",
     "path": "/inventory-import/job-logs"
@@ -8584,7 +8592,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "post:operation/recoverInterruptedChannels",
     "name": "mod-inventory-update",
     "path": "/inventory-import/recover-interrupted-channels"
@@ -8592,7 +8600,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "get:operation/getSteps post:operation/postStep",
     "name": "mod-inventory-update",
     "path": "/inventory-import/steps"
@@ -8600,7 +8608,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "delete:operation/deleteStep get:operation/getStep put:operation/putStep",
     "name": "mod-inventory-update",
     "path": "/inventory-import/steps/{id}"
@@ -8608,7 +8616,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "get:operation/getScript put:operation/putScript",
     "name": "mod-inventory-update",
     "path": "/inventory-import/steps/{id}/script"
@@ -8616,7 +8624,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "get:operation/getTransformations post:operation/postTransformation",
     "name": "mod-inventory-update",
     "path": "/inventory-import/transformations"
@@ -8624,7 +8632,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "delete:operation/deleteTransformation get:operation/getTransformation put:operation/putTransformation",
     "name": "mod-inventory-update",
     "path": "/inventory-import/transformations/{id}"
@@ -8632,7 +8640,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "get:operation/getTsas post:operation/postTsa",
     "name": "mod-inventory-update",
     "path": "/inventory-import/tsas"
@@ -8640,7 +8648,7 @@
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
     "apiType": "oas",
-    "interface": "inventory-import 1.0",
+    "interface": "inventory-import 1.1",
     "methods": "delete:operation/deleteTsa get:operation/getTsa put:operation/putTsa",
     "name": "mod-inventory-update",
     "path": "/inventory-import/tsas/{id}"
