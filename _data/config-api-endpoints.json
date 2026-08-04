@@ -4990,7 +4990,7 @@
   {
     "apiDescription": "ramls/email.raml",
     "apiType": "raml",
-    "interface": "email 1.1",
+    "interface": "email 1.2",
     "methods": "get:email_get post:email_post",
     "name": "mod-email",
     "path": "/email"
