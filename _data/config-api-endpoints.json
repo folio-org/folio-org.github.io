@@ -10740,7 +10740,7 @@
   {
     "apiDescription": "ramls/sender.raml",
     "apiType": "raml",
-    "interface": "message-delivery 1.0",
+    "interface": "message-delivery 1.1",
     "methods": "post:message_delivery_post",
     "name": "mod-sender",
     "path": "/message-delivery"
