@@ -58,7 +58,7 @@
 {"id": "folio_items-1.11.100023", "optional": [], "provides": [], "requires": ["inventory 5.0", "loan-types 2.0", "material-types 2.0"]}
 {"id": "folio_jest-config-stripes-2.1.10990000000011", "optional": [], "provides": [], "requires": []}
 {"id": "folio_ld-folio-wrapper-2.0.5099000000000509", "optional": [], "provides": [], "requires": ["authority-source-files 2.2", "browse-authorities 1.0", "linked-data 2.0", "linked-data-profile 1.0", "search-authorities 1.0", "search-facets 1.0", "search-linked-data 1.0", "source-storage-records 3.4"]}
-{"id": "folio_ldp-3.3.1099000000000342", "optional": [], "provides": [], "requires": ["ldp-query 1.2", "settings 1.0"]}
+{"id": "folio_ldp-3.3.1099000000000352", "optional": [], "provides": [], "requires": ["ldp-query 1.2", "settings 1.0"]}
 {"id": "folio_licenses-12.2.1099000000000397", "optional": ["organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["licenses 6.0"]}
 {"id": "folio_linked-data-2.0.4099000000002678", "optional": [], "provides": [], "requires": []}
 {"id": "folio_lists-5.0.2099000000001094", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0 2.0"]}
@@ -95,7 +95,7 @@
 {"id": "folio_plugin-find-po-line-7.0.1099000000000181", "optional": [], "provides": [], "requires": ["acquisition-methods 1.1", "acquisitions-units 1.1", "configuration.prefixes 1.2", "configuration.reasons-for-closure 1.0", "configuration.suffixes 1.2", "contributor-name-types 1.2", "finance.expense-classes 2.0 3.0", "finance.funds 1.4 2.0 3.0", "identifier-types 1.2", "inventory 10.0 11.0 12.0 13.0 14.0", "location-units 2.0", "locations 3.0", "material-types 2.2", "order-lines 2.0 3.0 4.0", "organizations.organizations 1.0", "tags 1.0"]}
 {"id": "folio_plugin-find-user-8.1.1099000000000170", "optional": [], "provides": [], "requires": []}
 {"id": "folio_plugin-find-vendor-1.3.200031", "optional": [], "provides": [], "requires": []}
-{"id": "folio_plugin-query-builder-3.0.2099000000001538", "optional": [], "provides": [], "requires": ["fqm-query 2.0", "locale 1.0", "settings 1.0"]}
+{"id": "folio_plugin-query-builder-3.0.2099000000001551", "optional": [], "provides": [], "requires": ["fqm-query 2.0", "locale 1.0", "settings 1.0"]}
 {"id": "folio_plugin-resource-registry-1.0.10009", "optional": [], "provides": [], "requires": []}
 {"id": "folio_plugin-select-application-3.0.1099000000000174", "optional": [], "provides": [], "requires": []}
 {"id": "folio_quick-marc-11.1.1099000000000601", "optional": ["authority-source-files 2.0", "instance-authority-linking-rules 1.1", "instance-authority-links 2.1", "search-authorities 1.0"], "provides": [], "requires": ["marc-records-editor 6.0 7.0", "marc-specifications 1.0"]}
