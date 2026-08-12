@@ -1079,6 +1079,7 @@
       "oas": [],
       "raml": [
         "ramls/fincConfigEZBCredentials.raml",
+        "ramls/fincConfigEzbHarvest.raml",
         "ramls/fincConfigFiles.raml",
         "ramls/fincConfigFilters.raml",
         "ramls/fincConfigMetadataCollections.raml",
