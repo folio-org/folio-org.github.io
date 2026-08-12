@@ -7130,6 +7130,14 @@
     "path": "/finc-config/ezb-credentials/{isil}"
   },
   {
+    "apiDescription": "ramls/fincConfigEzbHarvest.raml",
+    "apiType": "raml",
+    "interface": "_timer 1.0",
+    "methods": "post:finc_config_ezb_harvest_post",
+    "name": "mod-finc-config",
+    "path": "/finc-config/ezb-harvest"
+  },
+  {
     "apiDescription": "ramls/fincConfigFiles.raml",
     "apiType": "raml",
     "interface": "finc-config-files 1.1",
