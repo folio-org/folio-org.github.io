@@ -1151,7 +1151,7 @@
       "apiTypes": [
         "RAML"
       ],
-      "generator": "api_doc.py 1.5"
+      "generator": "api_doc.py 1.9"
     },
     "name": "mod-idm-connect",
     "org": "folio-org"
