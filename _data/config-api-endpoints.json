@@ -6450,6 +6450,14 @@
     "path": "/finance-storage/finance-data"
   },
   {
+    "apiDescription": "ramls/fiscal-year-hierarchy.raml",
+    "apiType": "raml",
+    "interface": "finance-storage.fiscal-year-hierarchy 1.0",
+    "methods": "get:finance_storage_fiscal_year_hierarchy_get",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/fiscal-year-hierarchy"
+  },
+  {
     "apiDescription": "ramls/fiscal-year.raml",
     "apiType": "raml",
     "interface": "finance-storage.fiscal-years 3.0",

@@ -1046,6 +1046,7 @@
         "ramls/exchange_rate_source.raml",
         "ramls/expense_class.raml",
         "ramls/finance-data.raml",
+        "ramls/fiscal-year-hierarchy.raml",
         "ramls/fiscal-year.raml",
         "ramls/fund-type.raml",
         "ramls/fund.raml",
