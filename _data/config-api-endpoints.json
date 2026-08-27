@@ -12328,7 +12328,7 @@
   {
     "apiDescription": "ramls/patron-notice.raml",
     "apiType": "raml",
-    "interface": "patron-notice 1.1",
+    "interface": "patron-notice 1.2",
     "methods": "post:patron_notice_post",
     "name": "mod-notify",
     "path": "/patron-notice"
