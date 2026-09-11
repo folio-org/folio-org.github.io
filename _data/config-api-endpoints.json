@@ -6682,6 +6682,22 @@
     "path": "/finance-storage/ledgers/{id}"
   },
   {
+    "apiDescription": "ramls/settings.raml",
+    "apiType": "raml",
+    "interface": "finance-storage.settings 1.0",
+    "methods": "get:finance_storage_settings_get post:finance_storage_settings_post",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/settings"
+  },
+  {
+    "apiDescription": "ramls/settings.raml",
+    "apiType": "raml",
+    "interface": "finance-storage.settings 1.0",
+    "methods": "delete:finance_storage_settings__id__delete get:finance_storage_settings__id__get put:finance_storage_settings__id__put",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/settings/{id}"
+  },
+  {
     "apiDescription": "ramls/transaction_totals.raml",
     "apiType": "raml",
     "interface": "finance-storage.transaction-totals 1.0",

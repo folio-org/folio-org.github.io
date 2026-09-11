@@ -1061,6 +1061,7 @@
         "ramls/ledger_rollover.raml",
         "ramls/ledger_rollover_logs.raml",
         "ramls/ledger_rollover_progress.raml",
+        "ramls/settings.raml",
         "ramls/transaction.raml",
         "ramls/transaction_totals.raml"
       ],
