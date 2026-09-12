@@ -17,7 +17,11 @@ configuration system than the old mod-configuration.
 See [Fixing the security problem in mod-configuration](https://github.com/MikeTaylor/folio-docs/blob/main/doc/fixing-mod-configuration.md)
 for more information.
 
-It is currently implemented with PostgresQL as storage.
+It is a [folio-vertx-lib](https://github.com/folio-org/folio-vertx-lib)
+based module implemented with PostgreSQL as storage.
+[TenantInitHooks](https://github.com/folio-org/folio-vertx-lib#your-api) migrate
+a tenant's data when upgrading the tenant to a new mod-settings version.
+Example: https://github.com/folio-org/mod-settings/blob/v1.3.1/src/main/java/org/folio/settings/server/storage/LocaleStorage.java#L99
 
 A setting consists of these required properties
 
