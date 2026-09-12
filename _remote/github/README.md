@@ -28,6 +28,7 @@ Refer to the various types of centralized workflows, including their setup and c
 * [README-docker.md](README-docker.md) -- for repositories that only have a Dockerfile.
 * [README-go.md](README-go.md) and [README-go-lint.md](README-go-lint.md) -- for Go-based back-end repositories.
 * [README-maven.md](README-maven.md) -- for Maven-based back-end repositories.
+* [README-gradle.md](README-gradle.md) -- for Gradle-based back-end repositories.
 
 ## Development
 
@@ -37,11 +38,15 @@ Install [actionlint](https://github.com/rhysd/actionlint#quick-start).
 
 While developing Workflows run actionlint prior to each commit. It is very helpful for identifying syntax and mis-configuration problems, which are otherwise difficult to diagnose.
 
-It includes "shellcheck". The following typical invocation skips some well-known shellcheck basic issues:
+```
+actionlint *.yml
+```
 
-```
-SHELLCHECK_OPTS='--exclude=SC2086,SC2046' actionlint *.yml
-```
+It includes "shellcheck".
+
+If there is a false positive disable it at the line level. Avoid diabling it at the file or run level because we want linting for future file changes.
+
+For details see [ShellCheck Ignore](https://github.com/koalaman/shellcheck/wiki/ignore).
 
 There is an automated workflow that will run `actionlint` on pull-requests.
 
