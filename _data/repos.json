@@ -1957,19 +1957,6 @@
       ]
     },
     {
-      "countBranches": 18,
-      "countOpenPullRequests": 2,
-      "defaultBranch": "master",
-      "description": "Helm charts modules repository",
-      "docDirName": null,
-      "hasTranslations": false,
-      "name": "folio-helm",
-      "org": "folio-org",
-      "repoLanguageHint": "other",
-      "repoType": "other",
-      "snippetIntro": "<p>FOLIO Helm charts modules repository.</p>"
-    },
-    {
       "countBranches": 2,
       "countOpenPullRequests": 1,
       "defaultBranch": "master",
