@@ -8230,6 +8230,22 @@
     "path": "/innreach/v2/oauth2/token"
   },
   {
+    "apiDescription": "ramls/instance-custom-link.raml",
+    "apiType": "raml",
+    "interface": "instance-custom-links 1.0",
+    "methods": "get:instance_custom_links_get post:instance_custom_links_post",
+    "name": "mod-inventory-storage",
+    "path": "/instance-custom-links"
+  },
+  {
+    "apiDescription": "ramls/instance-custom-link.raml",
+    "apiType": "raml",
+    "interface": "instance-custom-links 1.0",
+    "methods": "delete:instance_custom_links__id__delete get:instance_custom_links__id__get put:instance_custom_links__id__put",
+    "name": "mod-inventory-storage",
+    "path": "/instance-custom-links/{id}"
+  },
+  {
     "apiDescription": "ramls/instance-date-type.raml",
     "apiType": "raml",
     "interface": "instance-date-types 1.0",
