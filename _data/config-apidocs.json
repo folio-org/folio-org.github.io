@@ -1220,6 +1220,7 @@
         "ramls/hrid-settings-storage.raml",
         "ramls/identifier-type.raml",
         "ramls/ill-policy.raml",
+        "ramls/instance-custom-link.raml",
         "ramls/instance-date-type.raml",
         "ramls/instance-format.raml",
         "ramls/instance-iteration.raml",
