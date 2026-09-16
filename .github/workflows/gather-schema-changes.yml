@@ -33,12 +33,12 @@ jobs:
       run: |
         python -V
         python -m pip install --upgrade pip
-        pip install -r $WF_HOME/requirements.txt
+        pip install -r "$WF_HOME/requirements.txt"
 
     - name: Install yarn dependencies
       run: |
-        yarn --cwd $WF_HOME install
-        yarn --cwd $WF_HOME list --pattern @apidevtools
+        yarn --cwd "$WF_HOME" install
+        yarn --cwd "$WF_HOME" list --pattern @apidevtools
 
     - name: Install Go dependencies
       run: |
@@ -46,8 +46,9 @@ jobs:
 
     - name: Run script
       run: |
-        export PATH=$PATH:$(go env GOPATH)/bin
-        python $WF_HOME/gather_schema_changes.py -b R2-2024 -l info
+        gopath="$(go env GOPATH)"
+        export PATH="$PATH:$gopath/bin"
+        python "$WF_HOME/gather_schema_changes.py" -b R2-2024 -l info
 
     - name: Add media type
       run: echo -e 'text/plain\tdiff' | sudo tee -a /etc/mime.types
