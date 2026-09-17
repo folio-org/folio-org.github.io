@@ -1250,7 +1250,6 @@
         "ramls/material-type.raml",
         "ramls/mode-of-issuance.raml",
         "ramls/nature-of-content-term.raml",
-        "ramls/oai-pmh-view.raml",
         "ramls/record-bulk.raml",
         "ramls/service-point.raml",
         "ramls/service-points-user.raml",

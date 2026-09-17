@@ -11236,30 +11236,6 @@
     "path": "/oai"
   },
   {
-    "apiDescription": "ramls/oai-pmh-view.raml",
-    "apiType": "raml",
-    "interface": "oaipmhview 1.1",
-    "methods": "post:oai_pmh_view_enrichedinstances_post",
-    "name": "mod-inventory-storage",
-    "path": "/oai-pmh-view/enrichedInstances"
-  },
-  {
-    "apiDescription": "ramls/oai-pmh-view.raml",
-    "apiType": "raml",
-    "interface": "oaipmhview 1.1",
-    "methods": "get:oai_pmh_view_instances_get",
-    "name": "mod-inventory-storage",
-    "path": "/oai-pmh-view/instances"
-  },
-  {
-    "apiDescription": "ramls/oai-pmh-view.raml",
-    "apiType": "raml",
-    "interface": "oaipmhview 1.1",
-    "methods": "get:oai_pmh_view_updatedinstanceids_get",
-    "name": "mod-inventory-storage",
-    "path": "/oai-pmh-view/updatedInstanceIds"
-  },
-  {
     "apiDescription": "ramls/cleanup-error-logs.raml",
     "apiType": "raml",
     "interface": "_timer 1.0",
