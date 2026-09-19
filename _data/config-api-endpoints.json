@@ -15334,7 +15334,7 @@
     "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
     "apiType": "oas",
     "interface": "users-keycloak 1.1",
-    "methods": "delete:operation/deleteUsers get:operation/getUsers post:operation/createUser",
+    "methods": "post:operation/createUser",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/users"
   },
