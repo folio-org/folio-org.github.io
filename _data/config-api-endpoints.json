@@ -11371,7 +11371,7 @@
   {
     "apiDescription": "ramls/acquisition_method.raml",
     "apiType": "raml",
-    "interface": "orders-storage.acquisition-methods 1.0",
+    "interface": "orders-storage.acquisition-methods 1.1",
     "methods": "get:orders_storage_acquisition_methods_get post:orders_storage_acquisition_methods_post",
     "name": "mod-orders-storage",
     "path": "/orders-storage/acquisition-methods"
@@ -11379,7 +11379,7 @@
   {
     "apiDescription": "ramls/acquisition_method.raml",
     "apiType": "raml",
-    "interface": "orders-storage.acquisition-methods 1.0",
+    "interface": "orders-storage.acquisition-methods 1.1",
     "methods": "delete:orders_storage_acquisition_methods__id__delete get:orders_storage_acquisition_methods__id__get put:orders_storage_acquisition_methods__id__put",
     "name": "mod-orders-storage",
     "path": "/orders-storage/acquisition-methods/{id}"
@@ -11475,7 +11475,7 @@
   {
     "apiDescription": "ramls/export_history.raml",
     "apiType": "raml",
-    "interface": "orders-storage.export-history 1.0",
+    "interface": "orders-storage.export-history 1.1",
     "methods": "get:orders_storage_export_history_get post:orders_storage_export_history_post",
     "name": "mod-orders-storage",
     "path": "/orders-storage/export-history"
@@ -11483,7 +11483,7 @@
   {
     "apiDescription": "ramls/export_history.raml",
     "apiType": "raml",
-    "interface": "orders-storage.export-history 1.0",
+    "interface": "orders-storage.export-history 1.1",
     "methods": "delete:orders_storage_export_history__id__delete get:orders_storage_export_history__id__get put:orders_storage_export_history__id__put",
     "name": "mod-orders-storage",
     "path": "/orders-storage/export-history/{id}"
@@ -11571,7 +11571,7 @@
   {
     "apiDescription": "ramls/po-line.raml",
     "apiType": "raml",
-    "interface": "orders-storage.po-lines 13.0",
+    "interface": "orders-storage.po-lines 13.1",
     "methods": "get:orders_storage_po_lines_get post:orders_storage_po_lines_post",
     "name": "mod-orders-storage",
     "path": "/orders-storage/po-lines"
@@ -11579,7 +11579,7 @@
   {
     "apiDescription": "ramls/po-line-batch.raml",
     "apiType": "raml",
-    "interface": "orders-storage.po-lines 13.0",
+    "interface": "orders-storage.po-lines 13.1",
     "methods": "put:orders_storage_po_lines_batch_put",
     "name": "mod-orders-storage",
     "path": "/orders-storage/po-lines-batch"
@@ -11587,7 +11587,7 @@
   {
     "apiDescription": "ramls/po-line.raml",
     "apiType": "raml",
-    "interface": "orders-storage.po-lines 13.0",
+    "interface": "orders-storage.po-lines 13.1",
     "methods": "delete:orders_storage_po_lines__id__delete get:orders_storage_po_lines__id__get patch:orders_storage_po_lines__id__patch put:orders_storage_po_lines__id__put",
     "name": "mod-orders-storage",
     "path": "/orders-storage/po-lines/{id}"
