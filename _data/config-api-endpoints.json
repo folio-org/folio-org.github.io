@@ -8344,7 +8344,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.4",
+    "interface": "instance-storage 11.5",
     "methods": "get:instance_storage_instance_relationships_get post:instance_storage_instance_relationships_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instance-relationships"
@@ -8352,7 +8352,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.4",
+    "interface": "instance-storage 11.5",
     "methods": "delete:instance_storage_instance_relationships__relationshipid__delete get:instance_storage_instance_relationships__relationshipid__get put:instance_storage_instance_relationships__relationshipid__put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instance-relationships/{relationshipId}"
@@ -8360,7 +8360,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.4",
+    "interface": "instance-storage 11.5",
     "methods": "delete:instance_storage_instances_delete get:instance_storage_instances_get post:instance_storage_instances_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances"
@@ -8392,7 +8392,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.4",
+    "interface": "instance-storage 11.5",
     "methods": "post:instance_storage_instances_retrieve_post",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/retrieve"
@@ -8400,7 +8400,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.4",
+    "interface": "instance-storage 11.5",
     "methods": "delete:instance_storage_instances__instanceid__delete get:instance_storage_instances__instanceid__get patch:instance_storage_instances__instanceid__patch put:instance_storage_instances__instanceid__put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}"
@@ -8408,7 +8408,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.4",
+    "interface": "instance-storage 11.5",
     "methods": "delete:instance_storage_instances__instanceid__source_record_delete",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/source-record"
@@ -8416,7 +8416,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.4",
+    "interface": "instance-storage 11.5",
     "methods": "delete:instance_storage_instances__instanceid__source_record_marc_json_delete get:instance_storage_instances__instanceid__source_record_marc_json_get put:instance_storage_instances__instanceid__source_record_marc_json_put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/source-record/marc-json"
@@ -8424,7 +8424,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.4",
+    "interface": "instance-storage 11.5",
     "methods": "get:instance_storage_instances__instanceid__source_record_mods_get put:instance_storage_instances__instanceid__source_record_mods_put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/source-record/mods"
@@ -8432,7 +8432,7 @@
   {
     "apiDescription": "ramls/instance-storage.raml",
     "apiType": "raml",
-    "interface": "instance-storage 11.4",
+    "interface": "instance-storage 11.5",
     "methods": "get:instance_storage_instances__instanceid__summary_get",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/summary"
