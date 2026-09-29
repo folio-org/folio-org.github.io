@@ -1041,6 +1041,7 @@
     "config": {
       "oas": [],
       "raml": [
+        "ramls/audit-outbox.raml",
         "ramls/budget.raml",
         "ramls/budget_expense_class.raml",
         "ramls/exchange_rate_source.raml",
