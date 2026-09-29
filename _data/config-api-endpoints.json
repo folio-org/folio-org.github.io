@@ -6370,6 +6370,14 @@
     "path": "/field-protection-settings/marc/{id}"
   },
   {
+    "apiDescription": "ramls/audit-outbox.raml",
+    "apiType": "raml",
+    "interface": "_timer 1.0",
+    "methods": "post:finance_storage_audit_outbox_process_post",
+    "name": "mod-finance-storage",
+    "path": "/finance-storage/audit-outbox/process"
+  },
+  {
     "apiDescription": "ramls/budget_expense_class.raml",
     "apiType": "raml",
     "interface": "finance-storage.budget-expense-classes 2.0",
