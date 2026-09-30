@@ -10327,6 +10327,14 @@
     "apiDescription": "src/main/resources/swagger.api/list.yaml",
     "apiType": "oas",
     "interface": "lists 2.0",
+    "methods": "get:operation/getRelatedUsers",
+    "name": "mod-lists",
+    "path": "/lists/related-users"
+  },
+  {
+    "apiDescription": "src/main/resources/swagger.api/list.yaml",
+    "apiType": "oas",
+    "interface": "lists 2.0",
     "methods": "delete:operation/deleteList get:operation/getListById put:operation/updateList",
     "name": "mod-lists",
     "path": "/lists/{id}"
@@ -15197,7 +15205,7 @@
   {
     "apiDescription": "ramls/usagedataproviders.raml",
     "apiType": "raml",
-    "interface": "usage-data-providers 3.2",
+    "interface": "usage-data-providers 3.3",
     "methods": "get:usage_data_providers_get post:usage_data_providers_post",
     "name": "mod-erm-usage",
     "path": "/usage-data-providers"
@@ -15205,7 +15213,15 @@
   {
     "apiDescription": "ramls/usagedataproviders.raml",
     "apiType": "raml",
-    "interface": "usage-data-providers 3.2",
+    "interface": "usage-data-providers 3.3",
+    "methods": "get:usage_data_providers_sushi_config_service_types_get",
+    "name": "mod-erm-usage",
+    "path": "/usage-data-providers/sushi-config/service-types"
+  },
+  {
+    "apiDescription": "ramls/usagedataproviders.raml",
+    "apiType": "raml",
+    "interface": "usage-data-providers 3.3",
     "methods": "delete:usage_data_providers__id__delete get:usage_data_providers__id__get put:usage_data_providers__id__put",
     "name": "mod-erm-usage",
     "path": "/usage-data-providers/{id}"
