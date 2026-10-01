@@ -1385,14 +1385,6 @@
     "path": "/audit/config/groups/{groupId}/settings/{settingId}"
   },
   {
-    "apiDescription": "ramls/mod-audit-handlers.raml",
-    "apiType": "raml",
-    "interface": "audit-data-event-handlers 1.1",
-    "methods": "post:audit_handlers_log_record_post",
-    "name": "mod-audit",
-    "path": "/audit/handlers/log-record"
-  },
-  {
     "apiDescription": "ramls/login.raml",
     "apiType": "raml",
     "interface": "login 7.3",
@@ -1761,73 +1753,9 @@
     "path": "/authority-storage/reindex/{id}"
   },
   {
-    "apiDescription": "ramls/eventHandlers.raml",
-    "apiType": "raml",
-    "interface": "patron-blocks-event-handlers 1.1",
-    "methods": "post:automated_patron_blocks_handlers_fee_fine_balance_changed_post",
-    "name": "mod-patron-blocks",
-    "path": "/automated-patron-blocks/handlers/fee-fine-balance-changed"
-  },
-  {
-    "apiDescription": "ramls/eventHandlers.raml",
-    "apiType": "raml",
-    "interface": "patron-blocks-event-handlers 1.1",
-    "methods": "post:automated_patron_blocks_handlers_item_aged_to_lost_post",
-    "name": "mod-patron-blocks",
-    "path": "/automated-patron-blocks/handlers/item-aged-to-lost"
-  },
-  {
-    "apiDescription": "ramls/eventHandlers.raml",
-    "apiType": "raml",
-    "interface": "patron-blocks-event-handlers 1.1",
-    "methods": "post:automated_patron_blocks_handlers_item_checked_in_post",
-    "name": "mod-patron-blocks",
-    "path": "/automated-patron-blocks/handlers/item-checked-in"
-  },
-  {
-    "apiDescription": "ramls/eventHandlers.raml",
-    "apiType": "raml",
-    "interface": "patron-blocks-event-handlers 1.1",
-    "methods": "post:automated_patron_blocks_handlers_item_checked_out_post",
-    "name": "mod-patron-blocks",
-    "path": "/automated-patron-blocks/handlers/item-checked-out"
-  },
-  {
-    "apiDescription": "ramls/eventHandlers.raml",
-    "apiType": "raml",
-    "interface": "patron-blocks-event-handlers 1.1",
-    "methods": "post:automated_patron_blocks_handlers_item_claimed_returned_post",
-    "name": "mod-patron-blocks",
-    "path": "/automated-patron-blocks/handlers/item-claimed-returned"
-  },
-  {
-    "apiDescription": "ramls/eventHandlers.raml",
-    "apiType": "raml",
-    "interface": "patron-blocks-event-handlers 1.1",
-    "methods": "post:automated_patron_blocks_handlers_item_declared_lost_post",
-    "name": "mod-patron-blocks",
-    "path": "/automated-patron-blocks/handlers/item-declared-lost"
-  },
-  {
-    "apiDescription": "ramls/eventHandlers.raml",
-    "apiType": "raml",
-    "interface": "patron-blocks-event-handlers 1.1",
-    "methods": "post:automated_patron_blocks_handlers_loan_closed_post",
-    "name": "mod-patron-blocks",
-    "path": "/automated-patron-blocks/handlers/loan-closed"
-  },
-  {
-    "apiDescription": "ramls/eventHandlers.raml",
-    "apiType": "raml",
-    "interface": "patron-blocks-event-handlers 1.1",
-    "methods": "post:automated_patron_blocks_handlers_loan_due_date_changed_post",
-    "name": "mod-patron-blocks",
-    "path": "/automated-patron-blocks/handlers/loan-due-date-changed"
-  },
-  {
     "apiDescription": "ramls/automated-patron-blocks.raml",
     "apiType": "raml",
-    "interface": "patron-blocks-event-handlers 1.1",
+    "interface": "patron-blocks-synchronization 1.0",
     "methods": "post:automated_patron_blocks_synchronization_job_post",
     "name": "mod-patron-blocks",
     "path": "/automated-patron-blocks/synchronization/job"
@@ -1835,7 +1763,7 @@
   {
     "apiDescription": "ramls/automated-patron-blocks.raml",
     "apiType": "raml",
-    "interface": "patron-blocks-event-handlers 1.1",
+    "interface": "patron-blocks-synchronization 1.0",
     "methods": "get:automated_patron_blocks_synchronization_job__syncjobid__get",
     "name": "mod-patron-blocks",
     "path": "/automated-patron-blocks/synchronization/job/{syncJobId}"
@@ -2734,14 +2662,6 @@
     "methods": "post:circulation_end_patron_action_session_post",
     "name": "mod-circulation",
     "path": "/circulation/end-patron-action-session"
-  },
-  {
-    "apiDescription": "ramls/circulation-event-handlers.raml",
-    "apiType": "raml",
-    "interface": "circulation-event-handlers 0.2",
-    "methods": "post:circulation_handlers_loan_related_fee_fine_closed_post",
-    "name": "mod-circulation",
-    "path": "/circulation/handlers/loan-related-fee-fine-closed"
   },
   {
     "apiDescription": "ramls/for-use-at-location-shelf.raml",
@@ -13244,14 +13164,6 @@
     "methods": "get:operation/getProviders",
     "name": "mod-remote-storage",
     "path": "/remote-storage/providers"
-  },
-  {
-    "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",
-    "apiType": "oas",
-    "interface": "remote-storage-event-handlers 1.1",
-    "methods": "post:null",
-    "name": "mod-remote-storage",
-    "path": "/remote-storage/pub-sub-handlers/log-record-event"
   },
   {
     "apiDescription": "src/main/resources/swagger.api/remote-storage.yaml",

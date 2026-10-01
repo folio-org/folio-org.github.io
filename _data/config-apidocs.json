@@ -414,7 +414,6 @@
         "ramls/configuration.raml",
         "ramls/inventory-audit.raml",
         "ramls/marc-audit.raml",
-        "ramls/mod-audit-handlers.raml",
         "ramls/user-audit.raml"
       ],
       "upload": []
@@ -522,7 +521,6 @@
         "ramls/add-info.raml",
         "ramls/age-to-lost-background-processes.raml",
         "ramls/change-due-date.raml",
-        "ramls/circulation-event-handlers.raml",
         "ramls/circulation-rules.raml",
         "ramls/circulation-settings.raml",
         "ramls/circulation.raml",
@@ -1802,7 +1800,6 @@
       "oas": [],
       "raml": [
         "ramls/automated-patron-blocks.raml",
-        "ramls/eventHandlers.raml",
         "ramls/patron-block-conditions.raml",
         "ramls/patron-block-limits.raml",
         "ramls/user-summary.raml"
