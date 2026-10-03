@@ -5159,6 +5159,14 @@
     "apiDescription": "docs/API/yamls/agreements.yaml",
     "apiType": "oas",
     "interface": "erm",
+    "methods": "post:operation/postAdminPullPackage",
+    "name": "mod-agreements",
+    "path": "/erm/admin/pullPackage"
+  },
+  {
+    "apiDescription": "docs/API/yamls/agreements.yaml",
+    "apiType": "oas",
+    "interface": "erm",
     "methods": "get:operation/getAdminTriggerActivationUpdate",
     "name": "mod-agreements",
     "path": "/erm/admin/triggerActivationUpdate"
@@ -8348,14 +8356,6 @@
     "methods": "delete:instance_storage_instances__instanceid__source_record_marc_json_delete get:instance_storage_instances__instanceid__source_record_marc_json_get put:instance_storage_instances__instanceid__source_record_marc_json_put",
     "name": "mod-inventory-storage",
     "path": "/instance-storage/instances/{instanceId}/source-record/marc-json"
-  },
-  {
-    "apiDescription": "ramls/instance-storage.raml",
-    "apiType": "raml",
-    "interface": "instance-storage 11.5",
-    "methods": "get:instance_storage_instances__instanceid__source_record_mods_get put:instance_storage_instances__instanceid__source_record_mods_put",
-    "name": "mod-inventory-storage",
-    "path": "/instance-storage/instances/{instanceId}/source-record/mods"
   },
   {
     "apiDescription": "ramls/instance-storage.raml",
