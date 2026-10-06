@@ -3357,7 +3357,7 @@
     "apiDescription": "src/main/resources/swagger.api/tenants.yaml",
     "apiType": "oas",
     "interface": "consortia 1.1",
-    "methods": "post:operation/setupCustomLogin",
+    "methods": "delete:operation/deleteCustomLogin post:operation/setupCustomLogin",
     "name": "mod-consortia-keycloak",
     "path": "/consortia/{consortiumId}/tenants/{tenantId}/custom-login"
   },
