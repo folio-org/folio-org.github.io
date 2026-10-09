@@ -40,7 +40,7 @@
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 7.7.1 
+  <metadata> Produced by OmniGraffle 7.7.1
     <dc:date>2018-03-16 19:22:43 +0000</dc:date>
   </metadata>
   <g id="Canvas_1" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
@@ -51,8 +51,8 @@
         <path d="M 419 277 L 529 277 C 538.9411 277 547 285.05887 547 295 L 547 295 C 547 304.94113 538.9411 313 529 313 L 419 313 C 409.0589 313 401 304.94113 401 295 L 401 295 C 401 285.05887 409.0589 277 419 277 Z" fill="white"/>
         <path d="M 419 277 L 529 277 C 538.9411 277 547 285.05887 547 295 L 547 295 C 547 304.94113 538.9411 313 529 313 L 419 313 C 409.0589 313 401 304.94113 401 295 L 401 295 C 401 285.05887 409.0589 277 419 277 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(406 281)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="26.6709" y="11">folio-snapshot</tspan>
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="32.1" y="25">.dev.folio.org</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="2" y="11">etesting-snapshot-diku</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="32.1" y="25">.ci.folio.org</tspan>
         </text>
       </g>
       <g id="Graphic_12">
@@ -68,7 +68,7 @@
         <path d="M 466 238 L 486.25 256 L 547 256 L 547 220 L 486.25 220 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(468 222)" fill="black">
           <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="13.20459" y="13">Backend</tspan>
-          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="17.190918" y="29">(Okapi)</tspan>
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="17.190918" y="29">(Eureka)</tspan>
         </text>
       </g>
       <g id="Graphic_8">

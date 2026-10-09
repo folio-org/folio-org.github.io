@@ -49,7 +49,7 @@ Refer to the explanation of how the [platforms are constructed](/guidelines/rele
 
 The process will essentially be the reverse of when modules were initially [installed](/faqs/how-to-install-new-module/).
 For front-end modules it should be straight-forward.
-For back-end modules it could be more complex. If the module was included by virtue of being required by a front-end module, then it would be automatically removed when that module no longer requires it (on the next [hourly platform build](/guides/automation/#install-json)).
+For back-end modules it could be more complex. If the module was included by virtue of being required by a front-end module, then it would be automatically removed when that module no longer requires it.
 However some backend modules were added via the "install-extras.json" file (in the platform snapshot branch) either because they were not ever required by a frontend module, or the frontend was not yet ready and the entry was not removed from that file when the frontend finally was ready.
 
 If the module was part of a previous Flower release, then raise a pull-request for [platform-complete master](https://github.com/folio-org/platform-complete/tree/master) branch (which will form the basis for the upcoming release).
