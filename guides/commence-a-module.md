@@ -73,7 +73,7 @@ The `Dockerfile`. See [explanation](/guides/module-descriptor/#dockerfile).
 
 ### Jenkinsfile {#back-end-jenkinsfile}
 
-The `Jenkinsfile` declares specific build steps for the continuous integration [process](/guides/automation/#jenkins).
+The `Jenkinsfile` declares specific build steps for the continuous integration [process](/guides/automation/).
 See [explanation](/guides/jenkinsfile/).
 
 ### Descriptors {#back-end-descriptors}
