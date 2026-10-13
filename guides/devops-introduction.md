@@ -70,11 +70,6 @@ Many other people utilise these systems, so try to limit disruption.
 See Slack #folio-hosted-reference-envs channel.
 People need to ask there and allow time for others to be aware.
 
-To determine the cause of failed builds, search the [Jenkins output logfile](/faqs/how-to-investigate-jenkins-logs/).
-Remember that the cause might be in the earlier [Platform hourly build](/guides/automation/#platform-hourly-build) of "Pipeline build-platform-complete-snapshot" etc.
-
-Encourage developers to utilise the [facility](/faqs/how-to-obtain-refenv-logs/) to obtain reference environment module logs, rather than asking us to do it for them.
-
 ## Developer scratch environments
 
 Refer to the Kitfox DevOps Team overview of [How to get started with Rancher environment](/faqs/how-to-get-started-with-rancher/) and Helm.
@@ -142,4 +137,3 @@ Select "Choose a project" option "Library Apps (LIBAPP)". Then "Next" to add the
 
 After project creation, visit the new project. Select "Project settings" at the bottom of the sidebar.
 Then select "Details" and add its GitHub URL.
-
