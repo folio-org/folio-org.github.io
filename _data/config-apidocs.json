@@ -895,7 +895,6 @@
     "config": {
       "oas": [],
       "raml": [
-        "ramls/aggregatorsettings.raml",
         "ramls/counterreports.raml",
         "ramls/customreports.raml",
         "ramls/files.raml",

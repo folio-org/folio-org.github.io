@@ -1074,30 +1074,6 @@
     "path": "/admin/total_db_size"
   },
   {
-    "apiDescription": "ramls/aggregatorsettings.raml",
-    "apiType": "raml",
-    "interface": "aggregator-settings 2.0",
-    "methods": "get:aggregator_settings_get post:aggregator_settings_post",
-    "name": "mod-erm-usage",
-    "path": "/aggregator-settings"
-  },
-  {
-    "apiDescription": "ramls/aggregatorsettings.raml",
-    "apiType": "raml",
-    "interface": "aggregator-settings 2.0",
-    "methods": "delete:aggregator_settings__id__delete get:aggregator_settings__id__get put:aggregator_settings__id__put",
-    "name": "mod-erm-usage",
-    "path": "/aggregator-settings/{id}"
-  },
-  {
-    "apiDescription": "ramls/aggregatorsettings.raml",
-    "apiType": "raml",
-    "interface": "aggregator-settings 2.0",
-    "methods": "get:aggregator_settings__id__exportcredentials_get",
-    "name": "mod-erm-usage",
-    "path": "/aggregator-settings/{id}/exportcredentials"
-  },
-  {
     "apiDescription": "ramls/alternative-title-type.raml",
     "apiType": "raml",
     "interface": "alternative-title-types 1.0",
@@ -5070,7 +5046,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 2.1",
+    "interface": "erm-usage-harvester 3.0",
     "methods": "get:erm_usage_harvester_impl_get",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/impl"
@@ -5078,7 +5054,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 2.1",
+    "interface": "erm-usage-harvester 3.0",
     "methods": "get:erm_usage_harvester_jobs_get",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/jobs"
@@ -5094,7 +5070,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 2.1",
+    "interface": "erm-usage-harvester 3.0",
     "methods": "post:erm_usage_harvester_jobs_purgefinished_post",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/jobs/purgefinished"
@@ -5102,7 +5078,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 2.1",
+    "interface": "erm-usage-harvester 3.0",
     "methods": "post:erm_usage_harvester_jobs_purgestale_post",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/jobs/purgestale"
@@ -5110,7 +5086,7 @@
   {
     "apiDescription": "ramls/periodic.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 2.1",
+    "interface": "erm-usage-harvester 3.0",
     "methods": "delete:erm_usage_harvester_periodic_delete get:erm_usage_harvester_periodic_get post:erm_usage_harvester_periodic_post",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/periodic"
@@ -5118,7 +5094,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 2.1",
+    "interface": "erm-usage-harvester 3.0",
     "methods": "get:erm_usage_harvester_start_get",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/start"
@@ -5126,7 +5102,7 @@
   {
     "apiDescription": "ramls/harvester.raml",
     "apiType": "raml",
-    "interface": "erm-usage-harvester 2.1",
+    "interface": "erm-usage-harvester 3.0",
     "methods": "get:erm_usage_harvester_start__id__get",
     "name": "mod-erm-usage-harvester",
     "path": "/erm-usage-harvester/start/{id}"
@@ -11635,7 +11611,7 @@
   {
     "apiDescription": "ramls/acquisition_method.raml",
     "apiType": "raml",
-    "interface": "acquisition-methods 1.0",
+    "interface": "acquisition-methods 1.1",
     "methods": "get:orders_acquisition_methods_get post:orders_acquisition_methods_post",
     "name": "mod-orders",
     "path": "/orders/acquisition-methods"
@@ -11643,7 +11619,7 @@
   {
     "apiDescription": "ramls/acquisition_method.raml",
     "apiType": "raml",
-    "interface": "acquisition-methods 1.0",
+    "interface": "acquisition-methods 1.1",
     "methods": "delete:orders_acquisition_methods__id__delete get:orders_acquisition_methods__id__get put:orders_acquisition_methods__id__put",
     "name": "mod-orders",
     "path": "/orders/acquisition-methods/{id}"
@@ -11675,7 +11651,7 @@
   {
     "apiDescription": "ramls/order.raml",
     "apiType": "raml",
-    "interface": "orders 13.0",
+    "interface": "orders 13.1",
     "methods": "get:orders_composite_orders_get post:orders_composite_orders_post",
     "name": "mod-orders",
     "path": "/orders/composite-orders"
@@ -11683,7 +11659,7 @@
   {
     "apiDescription": "ramls/order.raml",
     "apiType": "raml",
-    "interface": "orders 13.0",
+    "interface": "orders 13.1",
     "methods": "delete:orders_composite_orders__id__delete get:orders_composite_orders__id__get put:orders_composite_orders__id__put",
     "name": "mod-orders",
     "path": "/orders/composite-orders/{id}"
@@ -11691,7 +11667,7 @@
   {
     "apiDescription": "ramls/order.raml",
     "apiType": "raml",
-    "interface": "orders 13.0",
+    "interface": "orders 13.1",
     "methods": "get:orders_composite_orders__id__fiscal_years_get",
     "name": "mod-orders",
     "path": "/orders/composite-orders/{id}/fiscal-years"
@@ -11699,7 +11675,7 @@
   {
     "apiDescription": "ramls/order.raml",
     "apiType": "raml",
-    "interface": "orders 13.0",
+    "interface": "orders 13.1",
     "methods": "post:orders_composite_orders__id__re_encumber_post",
     "name": "mod-orders",
     "path": "/orders/composite-orders/{id}/re-encumber"
@@ -11763,7 +11739,7 @@
   {
     "apiDescription": "ramls/export_history.raml",
     "apiType": "raml",
-    "interface": "orders.export-history 1.0",
+    "interface": "orders.export-history 1.1",
     "methods": "get:orders_export_history_get",
     "name": "mod-orders",
     "path": "/orders/export-history"
@@ -15117,7 +15093,7 @@
   {
     "apiDescription": "ramls/usagedataproviders.raml",
     "apiType": "raml",
-    "interface": "usage-data-providers 3.3",
+    "interface": "usage-data-providers 4.0",
     "methods": "get:usage_data_providers_get post:usage_data_providers_post",
     "name": "mod-erm-usage",
     "path": "/usage-data-providers"
@@ -15125,7 +15101,7 @@
   {
     "apiDescription": "ramls/usagedataproviders.raml",
     "apiType": "raml",
-    "interface": "usage-data-providers 3.3",
+    "interface": "usage-data-providers 4.0",
     "methods": "get:usage_data_providers_sushi_config_service_types_get",
     "name": "mod-erm-usage",
     "path": "/usage-data-providers/sushi-config/service-types"
@@ -15133,7 +15109,7 @@
   {
     "apiDescription": "ramls/usagedataproviders.raml",
     "apiType": "raml",
-    "interface": "usage-data-providers 3.3",
+    "interface": "usage-data-providers 4.0",
     "methods": "delete:usage_data_providers__id__delete get:usage_data_providers__id__get put:usage_data_providers__id__put",
     "name": "mod-erm-usage",
     "path": "/usage-data-providers/{id}"
