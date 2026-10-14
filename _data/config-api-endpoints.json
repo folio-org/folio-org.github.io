@@ -850,7 +850,7 @@
   {
     "apiDescription": "ramls/addressTypes.raml",
     "apiType": "raml",
-    "interface": "users 16.5",
+    "interface": "users 16.6",
     "methods": "get:addresstypes_get post:addresstypes_post",
     "name": "mod-users",
     "path": "/addresstypes"
@@ -858,7 +858,7 @@
   {
     "apiDescription": "ramls/addressTypes.raml",
     "apiType": "raml",
-    "interface": "users 16.5",
+    "interface": "users 16.6",
     "methods": "delete:addresstypes__addresstypeid__delete get:addresstypes__addresstypeid__get put:addresstypes__addresstypeid__put",
     "name": "mod-users",
     "path": "/addresstypes/{addresstypeId}"
@@ -4431,7 +4431,7 @@
   {
     "apiDescription": "ramls/departments.raml",
     "apiType": "raml",
-    "interface": "users 16.5",
+    "interface": "users 16.6",
     "methods": "get:departments_get post:departments_post",
     "name": "mod-users",
     "path": "/departments"
@@ -4439,7 +4439,7 @@
   {
     "apiDescription": "ramls/departments.raml",
     "apiType": "raml",
-    "interface": "users 16.5",
+    "interface": "users 16.6",
     "methods": "delete:departments__departmentid__delete get:departments__departmentid__get put:departments__departmentid__put",
     "name": "mod-users",
     "path": "/departments/{departmentId}"
@@ -7364,7 +7364,7 @@
   {
     "apiDescription": "ramls/groups.raml",
     "apiType": "raml",
-    "interface": "users 16.5",
+    "interface": "users 16.6",
     "methods": "get:groups_get post:groups_post",
     "name": "mod-users",
     "path": "/groups"
@@ -7372,7 +7372,7 @@
   {
     "apiDescription": "ramls/groups.raml",
     "apiType": "raml",
-    "interface": "users 16.5",
+    "interface": "users 16.6",
     "methods": "delete:groups__groupid__delete get:groups__groupid__get put:groups__groupid__put",
     "name": "mod-users",
     "path": "/groups/{groupId}"
@@ -12765,7 +12765,7 @@
   {
     "apiDescription": "ramls/proxiesFor.raml",
     "apiType": "raml",
-    "interface": "users 16.5",
+    "interface": "users 16.6",
     "methods": "get:proxiesfor_get post:proxiesfor_post",
     "name": "mod-users",
     "path": "/proxiesfor"
@@ -12773,7 +12773,7 @@
   {
     "apiDescription": "ramls/proxiesFor.raml",
     "apiType": "raml",
-    "interface": "users 16.5",
+    "interface": "users 16.6",
     "methods": "delete:proxiesfor__id__delete get:proxiesfor__id__get put:proxiesfor__id__put",
     "name": "mod-users",
     "path": "/proxiesfor/{id}"
@@ -15157,7 +15157,7 @@
   {
     "apiDescription": "ramls/users.raml",
     "apiType": "raml",
-    "interface": "users 16.5",
+    "interface": "users 16.6",
     "methods": "delete:users_delete get:users_get post:users_post",
     "name": "mod-users",
     "path": "/users"
@@ -15293,7 +15293,7 @@
   {
     "apiDescription": "ramls/users.raml",
     "apiType": "raml",
-    "interface": "users 16.5",
+    "interface": "users 16.6",
     "methods": "get:users_configurations_entry_get",
     "name": "mod-users",
     "path": "/users/configurations/entry"
@@ -15301,7 +15301,7 @@
   {
     "apiDescription": "ramls/users.raml",
     "apiType": "raml",
-    "interface": "users 16.5",
+    "interface": "users 16.6",
     "methods": "put:users_configurations_entry__configid__put",
     "name": "mod-users",
     "path": "/users/configurations/entry/{configId}"
@@ -15325,7 +15325,7 @@
   {
     "apiDescription": "ramls/users.raml",
     "apiType": "raml",
-    "interface": "users 16.5",
+    "interface": "users 16.6",
     "methods": "post:users_profile_picture_post",
     "name": "mod-users",
     "path": "/users/profile-picture"
@@ -15341,7 +15341,7 @@
   {
     "apiDescription": "ramls/users.raml",
     "apiType": "raml",
-    "interface": "users 16.5",
+    "interface": "users 16.6",
     "methods": "delete:users_profile_picture__profileid__delete get:users_profile_picture__profileid__get put:users_profile_picture__profileid__put",
     "name": "mod-users",
     "path": "/users/profile-picture/{profileId}"
@@ -15393,7 +15393,7 @@
   {
     "apiDescription": "ramls/users.raml",
     "apiType": "raml",
-    "interface": "users 16.5",
+    "interface": "users 16.6",
     "methods": "delete:users__userid__delete get:users__userid__get put:users__userid__put",
     "name": "mod-users",
     "path": "/users/{userId}"
