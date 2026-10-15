@@ -2387,7 +2387,7 @@
   {
     "apiDescription": "ramls/check-in-storage.raml",
     "apiType": "raml",
-    "interface": "check-in-storage 0.2",
+    "interface": "check-in-storage 0.3",
     "methods": "get:check_in_storage_check_ins_get post:check_in_storage_check_ins_post",
     "name": "mod-circulation-storage",
     "path": "/check-in-storage/check-ins"
@@ -2395,7 +2395,7 @@
   {
     "apiDescription": "ramls/check-in-storage.raml",
     "apiType": "raml",
-    "interface": "check-in-storage 0.2",
+    "interface": "check-in-storage 0.3",
     "methods": "get:check_in_storage_check_ins__checkinid__get",
     "name": "mod-circulation-storage",
     "path": "/check-in-storage/check-ins/{checkInId}"
@@ -3847,7 +3847,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/export-configs.yaml",
     "apiType": "oas",
-    "interface": "data-export-spring 2.0",
+    "interface": "data-export-spring 2.1",
     "methods": "get:operation/getExportConfigs post:operation/postExportConfig",
     "name": "mod-data-export-spring",
     "path": "/data-export-spring/configs"
@@ -3855,15 +3855,23 @@
   {
     "apiDescription": "src/main/resources/swagger.api/export-configs.yaml",
     "apiType": "oas",
-    "interface": "data-export-spring 2.0",
+    "interface": "data-export-spring 2.1",
     "methods": "delete:operation/deleteExportConfigById get:operation/getConfigById put:operation/putExportConfig",
     "name": "mod-data-export-spring",
     "path": "/data-export-spring/configs/{id}"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/export-configs.yaml",
+    "apiType": "oas",
+    "interface": "data-export-spring 2.1",
+    "methods": "post:operation/executeExportConfig",
+    "name": "mod-data-export-spring",
+    "path": "/data-export-spring/configs/{id}/execute"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/job-deletion-intervals.yaml",
     "apiType": "oas",
-    "interface": "data-export-spring 2.0",
+    "interface": "data-export-spring 2.1",
     "methods": "get:operation/getAllJobDeletionIntervals post:operation/createJobDeletionInterval",
     "name": "mod-data-export-spring",
     "path": "/data-export-spring/job-deletion-intervals"
@@ -3871,7 +3879,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/job-deletion-intervals.yaml",
     "apiType": "oas",
-    "interface": "data-export-spring 2.0",
+    "interface": "data-export-spring 2.1",
     "methods": "delete:operation/deleteJobDeletionInterval get:operation/getJobDeletionIntervalByExportType put:operation/updateJobDeletionInterval",
     "name": "mod-data-export-spring",
     "path": "/data-export-spring/job-deletion-intervals/{exportType}"
@@ -3879,7 +3887,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
     "apiType": "oas",
-    "interface": "data-export-spring 2.0",
+    "interface": "data-export-spring 2.1",
     "methods": "get:operation/getJobs post:operation/upsertJob",
     "name": "mod-data-export-spring",
     "path": "/data-export-spring/jobs"
@@ -3887,7 +3895,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
     "apiType": "oas",
-    "interface": "data-export-spring 2.0",
+    "interface": "data-export-spring 2.1",
     "methods": "post:operation/sendJob",
     "name": "mod-data-export-spring",
     "path": "/data-export-spring/jobs/send"
@@ -3895,7 +3903,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
     "apiType": "oas",
-    "interface": "data-export-spring 2.0",
+    "interface": "data-export-spring 2.1",
     "methods": "get:operation/getJobById",
     "name": "mod-data-export-spring",
     "path": "/data-export-spring/jobs/{id}"
@@ -3903,7 +3911,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
     "apiType": "oas",
-    "interface": "data-export-spring 2.0",
+    "interface": "data-export-spring 2.1",
     "methods": "get:operation/downloadExportedFileByJobId",
     "name": "mod-data-export-spring",
     "path": "/data-export-spring/jobs/{id}/download"
@@ -3911,7 +3919,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/jobs.yaml",
     "apiType": "oas",
-    "interface": "data-export-spring 2.0",
+    "interface": "data-export-spring 2.1",
     "methods": "post:operation/resendExportedFile",
     "name": "mod-data-export-spring",
     "path": "/data-export-spring/jobs/{id}/resend"
