@@ -13909,10 +13909,18 @@
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
     "apiType": "oas",
-    "interface": "search-inventory 1.0",
+    "interface": "search-inventory 1.1",
     "methods": "get:operation/searchInstances",
     "name": "mod-search",
     "path": "/search/instances"
+  },
+  {
+    "apiDescription": "target/api/openapi/mod-search.yaml",
+    "apiType": "oas",
+    "interface": "search-inventory 1.1",
+    "methods": "get:operation/searchItems",
+    "name": "mod-search",
+    "path": "/search/inventory/items"
   },
   {
     "apiDescription": "target/api/openapi/mod-search.yaml",
