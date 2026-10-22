@@ -1731,6 +1731,14 @@
   {
     "apiDescription": "ramls/automated-patron-blocks.raml",
     "apiType": "raml",
+    "interface": "automated-patron-blocks 0.2",
+    "methods": "post:automated_patron_blocks_batch_post",
+    "name": "mod-patron-blocks",
+    "path": "/automated-patron-blocks/batch"
+  },
+  {
+    "apiDescription": "ramls/automated-patron-blocks.raml",
+    "apiType": "raml",
     "interface": "patron-blocks-synchronization 1.0",
     "methods": "post:automated_patron_blocks_synchronization_job_post",
     "name": "mod-patron-blocks",
@@ -1755,7 +1763,7 @@
   {
     "apiDescription": "ramls/automated-patron-blocks.raml",
     "apiType": "raml",
-    "interface": "automated-patron-blocks 0.1",
+    "interface": "automated-patron-blocks 0.2",
     "methods": "get:automated_patron_blocks__userid__get",
     "name": "mod-patron-blocks",
     "path": "/automated-patron-blocks/{userId}"
@@ -10326,7 +10334,7 @@
   {
     "apiDescription": "ramls/loan-policy-storage.raml",
     "apiType": "raml",
-    "interface": "loan-policy-storage 2.4",
+    "interface": "loan-policy-storage 2.5",
     "methods": "delete:loan_policy_storage_loan_policies_delete get:loan_policy_storage_loan_policies_get post:loan_policy_storage_loan_policies_post",
     "name": "mod-circulation-storage",
     "path": "/loan-policy-storage/loan-policies"
@@ -10334,7 +10342,7 @@
   {
     "apiDescription": "ramls/loan-policy-storage.raml",
     "apiType": "raml",
-    "interface": "loan-policy-storage 2.4",
+    "interface": "loan-policy-storage 2.5",
     "methods": "delete:loan_policy_storage_loan_policies__loanpolicyid__delete get:loan_policy_storage_loan_policies__loanpolicyid__get put:loan_policy_storage_loan_policies__loanpolicyid__put",
     "name": "mod-circulation-storage",
     "path": "/loan-policy-storage/loan-policies/{loanPolicyId}"
@@ -12192,7 +12200,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.6",
+    "interface": "patron 6.7",
     "methods": "post:patron_post",
     "name": "mod-patron",
     "path": "/patron"
@@ -12380,7 +12388,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.6",
+    "interface": "patron 6.7",
     "methods": "get:patron_account__id__get",
     "name": "mod-patron",
     "path": "/patron/account/{id}"
@@ -12395,7 +12403,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.6",
+    "interface": "patron 6.7",
     "methods": "post:patron_account__id__hold__holdid__cancel_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/hold/{holdId}/cancel"
@@ -12410,7 +12418,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.6",
+    "interface": "patron 6.7",
     "methods": "get:patron_account__id__instance__instanceid__allowed_service_points_get",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/allowed-service-points"
@@ -12425,7 +12433,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.6",
+    "interface": "patron 6.7",
     "methods": "post:patron_account__id__instance__instanceid__allowed_service_points_multi_item_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/allowed-service-points-multi-item"
@@ -12440,7 +12448,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.6",
+    "interface": "patron 6.7",
     "methods": "post:patron_account__id__instance__instanceid__batch_request_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/batch-request"
@@ -12455,7 +12463,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.6",
+    "interface": "patron 6.7",
     "methods": "get:patron_account__id__instance__instanceid__batch_request__batchrequestid__status_get",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/batch-request/{batchRequestId}/status"
@@ -12470,7 +12478,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.6",
+    "interface": "patron 6.7",
     "methods": "post:patron_account__id__instance__instanceid__hold_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/instance/{instanceId}/hold"
@@ -12485,7 +12493,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.6",
+    "interface": "patron 6.7",
     "methods": "get:patron_account__id__item__itemid__allowed_service_points_get",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/allowed-service-points"
@@ -12500,7 +12508,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.6",
+    "interface": "patron 6.7",
     "methods": "post:patron_account__id__item__itemid__hold_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/hold"
@@ -12515,7 +12523,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.6",
+    "interface": "patron 6.7",
     "methods": "post:patron_account__id__item__itemid__renew_post",
     "name": "mod-patron",
     "path": "/patron/account/{id}/item/{itemId}/renew"
@@ -12530,7 +12538,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.6",
+    "interface": "patron 6.7",
     "methods": "get:patron_registration_status__identifier__get",
     "name": "mod-patron",
     "path": "/patron/registration-status/{identifier}"
@@ -12561,7 +12569,7 @@
   {
     "apiDescription": "ramls/patron.raml",
     "apiType": "raml",
-    "interface": "patron 6.6",
+    "interface": "patron 6.7",
     "methods": "put:patron__externalsystemid__put",
     "name": "mod-patron",
     "path": "/patron/{externalSystemId}"
