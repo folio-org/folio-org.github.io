@@ -600,6 +600,7 @@
         "ramls/print-events-storage.raml",
         "ramls/request-policy-storage.raml",
         "ramls/request-preference-storage.raml",
+        "ramls/request-queue-lock-storage.raml",
         "ramls/request-storage-batch.raml",
         "ramls/request-storage.raml",
         "ramls/scheduled-notice-storage.raml",
