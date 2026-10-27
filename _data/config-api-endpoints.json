@@ -10350,7 +10350,15 @@
   {
     "apiDescription": "ramls/loan-storage.raml",
     "apiType": "raml",
-    "interface": "loan-storage 7.4",
+    "interface": "loan-storage 7.5",
+    "methods": "get:loan_storage_anonymization_candidates_get",
+    "name": "mod-circulation-storage",
+    "path": "/loan-storage/anonymization-candidates"
+  },
+  {
+    "apiDescription": "ramls/loan-storage.raml",
+    "apiType": "raml",
+    "interface": "loan-storage 7.5",
     "methods": "get:loan_storage_loan_history_get",
     "name": "mod-circulation-storage",
     "path": "/loan-storage/loan-history"
@@ -10358,7 +10366,7 @@
   {
     "apiDescription": "ramls/loan-storage.raml",
     "apiType": "raml",
-    "interface": "loan-storage 7.4",
+    "interface": "loan-storage 7.5",
     "methods": "delete:loan_storage_loans_delete get:loan_storage_loans_get post:loan_storage_loans_post",
     "name": "mod-circulation-storage",
     "path": "/loan-storage/loans"
@@ -10366,7 +10374,7 @@
   {
     "apiDescription": "ramls/loan-storage.raml",
     "apiType": "raml",
-    "interface": "loan-storage 7.4",
+    "interface": "loan-storage 7.5",
     "methods": "post:loan_storage_loans_anonymize__userid__post",
     "name": "mod-circulation-storage",
     "path": "/loan-storage/loans/anonymize/{userId}"
@@ -10374,7 +10382,7 @@
   {
     "apiDescription": "ramls/loan-storage.raml",
     "apiType": "raml",
-    "interface": "loan-storage 7.4",
+    "interface": "loan-storage 7.5",
     "methods": "delete:loan_storage_loans__loanid__delete get:loan_storage_loans__loanid__get put:loan_storage_loans__loanid__put",
     "name": "mod-circulation-storage",
     "path": "/loan-storage/loans/{loanId}"
