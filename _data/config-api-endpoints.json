@@ -15213,7 +15213,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
     "apiType": "oas",
-    "interface": "users-keycloak 1.1",
+    "interface": "users-keycloak 1.2",
     "methods": "get:operation/getUserBySelfReference",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/_self"
@@ -15221,7 +15221,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
     "apiType": "oas",
-    "interface": "users-keycloak 1.1",
+    "interface": "users-keycloak 1.2",
     "methods": "get:operation/checkIfExistsAuthUserById post:operation/createAuthUser",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/auth-users/{userId}"
@@ -15229,7 +15229,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
     "apiType": "oas",
-    "interface": "users-keycloak 1.1",
+    "interface": "users-keycloak 1.2",
     "methods": "post:operation/resetForgottenPassword",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/forgotten/password"
@@ -15237,7 +15237,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
     "apiType": "oas",
-    "interface": "users-keycloak 1.1",
+    "interface": "users-keycloak 1.2",
     "methods": "post:operation/recoverForgottenUsername",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/forgotten/username"
@@ -15245,7 +15245,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
     "apiType": "oas",
-    "interface": "users-keycloak 1.1",
+    "interface": "users-keycloak 1.2",
     "methods": "delete:operation/unlinkUserIdpMigration post:operation/linkUserIdpMigration",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/idp-migrations"
@@ -15253,7 +15253,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
     "apiType": "oas",
-    "interface": "users-keycloak 1.1",
+    "interface": "users-keycloak 1.2",
     "methods": "get:operation/getMigrations post:operation/migrateUsers",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/migrations"
@@ -15261,7 +15261,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
     "apiType": "oas",
-    "interface": "users-keycloak 1.1",
+    "interface": "users-keycloak 1.2",
     "methods": "delete:operation/deleteMigration get:operation/getMigration",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/migrations/{id}"
@@ -15269,7 +15269,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
     "apiType": "oas",
-    "interface": "users-keycloak 1.1",
+    "interface": "users-keycloak 1.2",
     "methods": "post:operation/generatePasswordResetLink",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/password-reset/link"
@@ -15277,7 +15277,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
     "apiType": "oas",
-    "interface": "users-keycloak 1.1",
+    "interface": "users-keycloak 1.2",
     "methods": "post:operation/passwordReset",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/password-reset/reset"
@@ -15285,7 +15285,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
     "apiType": "oas",
-    "interface": "users-keycloak 1.1",
+    "interface": "users-keycloak 1.2",
     "methods": "post:operation/validatePasswordResetLink",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/password-reset/validate"
@@ -15293,7 +15293,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
     "apiType": "oas",
-    "interface": "users-keycloak 1.1",
+    "interface": "users-keycloak 1.2",
     "methods": "post:operation/createUser",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/users"
@@ -15301,7 +15301,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
     "apiType": "oas",
-    "interface": "users-keycloak 1.1",
+    "interface": "users-keycloak 1.2",
     "methods": "delete:operation/deleteUser get:operation/getUser put:operation/updateUser",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/users/{id}"
@@ -15309,7 +15309,7 @@
   {
     "apiDescription": "src/main/resources/swagger.api/users-keycloak.yaml",
     "apiType": "oas",
-    "interface": "users-keycloak 1.1",
+    "interface": "users-keycloak 1.2",
     "methods": "get:operation/findPermissions",
     "name": "mod-users-keycloak",
     "path": "/users-keycloak/users/{id}/permissions"
