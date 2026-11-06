@@ -2635,6 +2635,22 @@
     "apiDescription": "ramls/circulation.raml",
     "apiType": "raml",
     "interface": "circulation 14.9",
+    "methods": "get:circulation_check_ins_get post:circulation_check_ins_post",
+    "name": "mod-circulation",
+    "path": "/circulation/check-ins"
+  },
+  {
+    "apiDescription": "ramls/circulation.raml",
+    "apiType": "raml",
+    "interface": "circulation 14.9",
+    "methods": "delete:circulation_check_ins__id__delete get:circulation_check_ins__id__get put:circulation_check_ins__id__put",
+    "name": "mod-circulation",
+    "path": "/circulation/check-ins/{id}"
+  },
+  {
+    "apiDescription": "ramls/circulation.raml",
+    "apiType": "raml",
+    "interface": "circulation 14.9",
     "methods": "post:circulation_check_out_by_barcode_post",
     "name": "mod-circulation",
     "path": "/circulation/check-out-by-barcode"
@@ -15181,7 +15197,7 @@
   {
     "apiDescription": "ramls/import.raml",
     "apiType": "raml",
-    "interface": "user-import 2.2",
+    "interface": "user-import 2.3",
     "methods": "post:user_import_post",
     "name": "mod-user-import",
     "path": "/user-import"
