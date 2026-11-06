@@ -1319,6 +1319,7 @@
         "ramls/batch-voucher-export-configuration.raml",
         "ramls/batch-voucher-exports.raml",
         "ramls/batch-voucher.raml",
+        "ramls/calendar-notifications.raml",
         "ramls/invoice-line-number.raml",
         "ramls/invoice-number.raml",
         "ramls/invoice.raml",
