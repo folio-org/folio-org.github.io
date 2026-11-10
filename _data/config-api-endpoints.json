@@ -3893,6 +3893,14 @@
     "path": "/data-export-spring/configs/{id}/execute"
   },
   {
+    "apiDescription": "src/main/resources/swagger.api/export-configs.yaml",
+    "apiType": "oas",
+    "interface": "data-export-spring 2.1",
+    "methods": "get:operation/getEffectiveConfigs",
+    "name": "mod-data-export-spring",
+    "path": "/data-export-spring/effective-configs"
+  },
+  {
     "apiDescription": "src/main/resources/swagger.api/job-deletion-intervals.yaml",
     "apiType": "oas",
     "interface": "data-export-spring 2.1",
@@ -10354,6 +10362,14 @@
     "methods": "get:operation/findLoadableRoles put:operation/upsertLoadableRole",
     "name": "mod-roles-keycloak",
     "path": "/loadable-roles"
+  },
+  {
+    "apiDescription": "ramls/loan-anonymization-preference-storage.raml",
+    "apiType": "raml",
+    "interface": "loan-anonymization-preference-storage 1.0",
+    "methods": "put:loan_anonymization_preference_storage_loan_anonymization_preferences_put",
+    "name": "mod-circulation-storage",
+    "path": "/loan-anonymization-preference-storage/loan-anonymization-preferences"
   },
   {
     "apiDescription": "ramls/loan-anonymization.raml",

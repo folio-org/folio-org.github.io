@@ -593,6 +593,7 @@
         "ramls/circulation-rules-storage.raml",
         "ramls/circulation-settings-storage.raml",
         "ramls/fixed-due-date-schedule.raml",
+        "ramls/loan-anonymization-preference-storage.raml",
         "ramls/loan-policy-storage.raml",
         "ramls/loan-storage.raml",
         "ramls/patron-action-session.raml",
