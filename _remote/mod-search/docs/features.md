@@ -19,6 +19,7 @@ This module provides the following features:
 | [Field Mapping Engine](features/field-mapping-engine.md)           | Core infrastructure for resource field definitions, Elasticsearch mappings, and field processor pipeline. |
 | [Indexing and Messaging](features/indexing-and-messaging.md)       | Real-time index updates via Kafka event consumers and manual record indexing REST API.                    |
 | [Instance Search](features/instance-search.md)                     | CQL-based search over bibliographic instance records with facets and async ID streaming.                  |
+| [Item Search](features/item-search.md)                             | CQL-based search over item records with facets via the item index.                                        |
 | [Linked Data Search](features/linked-data-search.md)               | CQL-based search over Linked Data works, instances, and hubs.                                             |
 | [Reindex](features/reindex.md)                                     | Full and partial reindex orchestration for inventory instance records with status tracking.               |
 | [Subject Browse](features/subject-browse.md)                      | Bidirectional alphabetical browse of subject headings linked to instances.                                |
