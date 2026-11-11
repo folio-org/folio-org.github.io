@@ -181,23 +181,54 @@ As an example if there are OpenAPI specs in test resources, the `extensions` lis
 The PostgreSQL support is minimal.
 There's just enough to perform tenant and module separation.
 
-The following environment variables are supported:
+The following environment variables configure PostgreSQL connections and pools:
 
-- `DB_HOST`
-- `DB_PORT`
-- `DB_USERNAME`
-- `DB_PASSWORD`
-- `DB_DATABASE`
-- `DB_MAXPOOLSIZE`
-- `DB_MAX_LIFETIME`
-- `DB_RECONNECTATTEMPTS`
-- `DB_RECONNECTINTERVAL`
-- `DB_CONNECTIONRELEASEDELAY`
-- `DB_SERVER_PEM`
+| Variable | Description | Default |
+| --- | --- | --- |
+| `DB_HOST` | PostgreSQL server hostname. Supports `{tenant}` substitution. | `localhost` |
+| `DB_PORT` | PostgreSQL server port. | `5432` |
+| `DB_USERNAME` | Database login username. Supports `{tenant}` substitution. | `user` |
+| `DB_PASSWORD` | Database login password. | `pass` |
+| `DB_DATABASE` | Database name. Supports `{tenant}` substitution. | `db` |
+| `DB_MAXPOOLSIZE` | Maximum number of connections in each underlying pool. See pool sharing below. | `4` |
+| `DB_MAX_LIFETIME` | Maximum lifetime of a pooled connection, in milliseconds. | `1800000` (30 minutes) |
+| `DB_RECONNECTATTEMPTS` | Number of retries when establishing a connection fails. | `0` (no retries) |
+| `DB_RECONNECTINTERVAL` | Delay between connection retries, in milliseconds. | `1000` (1 second) |
+| `DB_CONNECTIONRELEASEDELAY` | Idle timeout for pooled connections, in milliseconds. | `60000` (1 minute) |
+| `DB_SERVER_PEM` | Trusted server certificate in PEM format, supplied as certificate contents, not a file path. Enables `VERIFY_FULL` certificate and hostname verification and restricts connections to TLS 1.3. | Unset; SSL is disabled by default. |
 
-These are also recognized by by RMB. Refer to the
-[Environment Variables](https://github.com/folio-org/raml-module-builder#environment-variables)
-section of RMB.
+Connection defaults above are the Vert.x defaults used by this library. Applications can
+replace the default connection options using `TenantPgPool.setDefaultConnectOptions()`.
+The environment variables override the corresponding connection options when set.
+The library reads these variables when `TenantPgPoolImpl` is initialized.
+For variables supporting `{tenant}`, that placeholder is replaced with the tenant name
+passed to `TenantPgPool.pool()`. For example, `DB_DATABASE=folio_{tenant}` selects
+`folio_diku` for tenant `diku`.
+
+### Pool sharing and `DB_MAXPOOLSIZE`
+
+**By default, tenants share a connection pool within a running module instance.**
+`DB_MAXPOOLSIZE` limits that shared pool; it is not a separate allowance for each tenant.
+Tenant schemas alone do not create separate pools.
+
+Pools are reused when the host, port, username, password, database, and pool key match.
+`TenantPgPool.pool(vertx, tenant)` uses an empty pool key. Applications can request
+separate pools with distinct keys using `TenantPgPool.pool(vertx, tenant, poolKey)`.
+Tenant-specific host, username, or database values produced by `{tenant}` substitution
+also create separate pools when those connection settings differ.
+Each separate pool has its own `DB_MAXPOOLSIZE` limit.
+
+For example, with `DB_MAXPOOLSIZE=10`, 100 tenants using the same connection settings
+and pool key share a pool of at most 10 connections in one module instance. If each
+tenant instead selects a different database using `DB_DATABASE=folio_{tenant}`, each
+tenant's pool can have up to 10 connections. Separate module instances have independent
+pools, so this setting does not impose a deployment-wide connection limit.
+
+Some variable names are also used by
+[RMB](https://github.com/folio-org/raml-module-builder#environment-variables).
+The descriptions and defaults above describe folio-vertx-lib's implementation.
+
+### Using the tenant pool
 
 The class [TenantPgPool](core/src/main/java/org/folio/tlib/postgres/TenantPgPool.java) is
 a small extension to the [Pool](https://vertx.io/docs/apidocs/io/vertx/sqlclient/Pool.html)

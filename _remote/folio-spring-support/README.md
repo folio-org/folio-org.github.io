@@ -16,6 +16,7 @@ Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
   * [Table of Contents](#table-of-contents)
   * [Introduction](#introduction)
   * [Code structure](#code-structure)
+  * [Parent pom](#parent-pom)
   * [Execution Context](#execution-context)
   * [Properties](#properties)
   * [Kafka Tenant Filtering](#kafka-tenant-filtering)
@@ -24,6 +25,7 @@ Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
   * [Logging](#logging)
     * [Default logging format](#default-logging-format)
     * [Request and Response Logging](#request-and-response-logging)
+    * [HTTP Service Clients connection pool](#http-service-clients-connection-pool)
   * [Custom `/_/tenant` Logic](#custom-_tenant-logic)
     * [`TenantService` Event Methods](#tenantservice-event-methods)
     * [`TenantService` Methods and Fields](#tenantservice-methods-and-fields)
@@ -53,6 +55,33 @@ The library includes the following submodules:
 * **folio-spring-cql** - facilitates CQL querying (refer to the [CQL support](#cql-support) section below)
 * **folio-spring-kafka** - provides common Kafka support for Spring modules, including tenant-aware message filtering.
 * ~~**folio-spring-system-user**~~ - (deprecated) provides [functionality](folio-spring-system-user/README.md) for system-user creation and utilization 
+
+## Parent pom
+
+`org.folio:folio-spring-parent` is a parent pom for FOLIO Spring modules. It extends `spring-boot-starter-parent` and adds:
+* the dependency versions that the library pins on top of Spring Boot, for example `liquibase.version`. A property set in the library's own pom is not inherited by modules that depend on it, so a module only gets these pins through this parent;
+* version management of all `folio-spring-*` artifacts, so they are declared without `<version>`.
+
+To use it, replace `spring-boot-starter-parent` with it:
+```xml
+  <parent>
+    <groupId>org.folio</groupId>
+    <artifactId>folio-spring-parent</artifactId>
+    <version>10.1.0</version>
+    <relativePath /> <!-- lookup parent from repository -->
+  </parent>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.folio</groupId>
+      <artifactId>folio-spring-base</artifactId>
+    </dependency>
+  </dependencies>
+```
+
+Using it is optional. A module that keeps `spring-boot-starter-parent` still works, but Spring Boot's dependency management applies, so for example `liquibase-core` resolves to the version Boot manages, not the one the library is built with. Such a module can set the property itself, for example `<liquibase.version>4.33.0</liquibase.version>`.
+
+The `folio-spring-parent` version is the library version. When releasing, update `folio-spring-support.version` in `folio-spring-parent/pom.xml` to the new version; it must be a literal, because `${project.version}` would resolve to the version of the consuming module. The build fails (maven-enforcer `requireProperty`) if it differs from the project version, so a forgotten bump is caught by `release:prepare`'s `clean verify`; the plugin does not update it for you.
 
 ## Execution Context
 
@@ -152,14 +181,25 @@ message to be processed only when the tenant is entitled to the module.
 
 When enabled, the filter:
 
-1. Reads the `x-okapi-tenant` value from Kafka record headers. The filter does not deserialize the message body.
-2. Checks if the tenant is entitled to the module.
+1. Reads the tenant from Kafka record headers - `x-okapi-tenant`, falling back to `folio.tenantId` if that's
+   absent. The filter does not deserialize the message body.
+2. Checks if the tenant is entitled to the module, using the in-process entitlement cache described below.
 3. If the tenant is entitled, pass the message to the module listener.
 4. Applies `tenant-disabled-strategy` when the tenant is not entitled to the current module.
 5. Applies `all-tenants-disabled-strategy` when no tenants are entitled to the current module.
 
-To use it, add `folio-spring-kafka` as a dependency and reference the shared filter from the
-listener:
+### How the entitlement cache stays up to date
+
+Per-message filtering never makes a network call. The entitled-tenants set is cached in-process and kept current
+three ways: 
+1. A synchronous fetch from the sidecar (`GET /entitlements/modules/{moduleId}`) on first use, whose result is cached.
+2. Direct updates from `ENTITLE`/`UPGRADE`/`REVOKE` events on the `entitlement` Kafka topic. Each module
+   instance uses its own unique consumer group id, so every instance observes every event.
+3. A periodic full re-fetch  that corrects any drift from a missed or duplicate event.
+
+### Using the filter in a module
+
+To use the filter in a module, add `folio-spring-kafka` as a dependency and reference it from the listener:
 
 ```java
 @KafkaListener(
@@ -177,20 +217,30 @@ folio:
       enabled: true
 ```
 
-| Property                                                    | Description                                                                                                   | Default | Example |
-| ----------------------------------------------------------- |---------------------------------------------------------------------------------------------------------------| ------- | ------- |
-| `folio.kafka.tenant-filter.enabled`                         | Enables the shared `tenantAwareMessageFilter` bean. Can be set as `FOLIO_KAFKA_TENANT_FILTER_ENABLED`.        | `false` | `true`  |
-| `folio.kafka.tenant-filter.ignore-empty-batch`              | Signals Kafka listener containers to skip listener invocation when all records in a batch are filtered out.   | `true`  | `true`  |
-| `folio.kafka.tenant-filter.tenant-disabled-strategy`        | Strategy used when the message tenant is not entitled to the current module.                                  | `SKIP`  | `SKIP`  |
-| `folio.kafka.tenant-filter.all-tenants-disabled-strategy`   | Strategy used when no tenants are entitled to the current module.                                             | `FAIL`  | `SKIP`  |
+Or
+```
+FOLIO_KAFKA_TENANT_FILTER_ENABLED=true
+```
+
+| Property                                                         | Environment variable                                             | Description                                                                                                 | Default | Example   |
+|------------------------------------------------------------------|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|---------|-----------|
+| `folio.kafka.tenant-filter.enabled`                              | `FOLIO_KAFKA_TENANT_FILTER_ENABLED`                              | Enables the shared `tenantAwareMessageFilter` bean.                                                         | `false` | `true`    |
+| `folio.kafka.tenant-filter.ignore-empty-batch`                   | `FOLIO_KAFKA_TENANT_FILTER_IGNORE_EMPTY_BATCH`                   | Signals Kafka listener containers to skip listener invocation when all records in a batch are filtered out. | `true`  | `true`    |
+| `folio.kafka.tenant-filter.tenant-disabled-strategy`             | `FOLIO_KAFKA_TENANT_FILTER_TENANT_DISABLED_STRATEGY`             | Strategy used when the message tenant is not entitled to the current module.                                | `SKIP`  | `SKIP`    |
+| `folio.kafka.tenant-filter.all-tenants-disabled-strategy`        | `FOLIO_KAFKA_TENANT_FILTER_ALL_TENANTS_DISABLED_STRATEGY`        | Strategy used when no tenants are entitled to the current module.                                           | `FAIL`  | `SKIP`    |
+| `folio.kafka.tenant-filter.entitlement-refresh-interval-seconds` | `FOLIO_KAFKA_TENANT_FILTER_ENTITLEMENT_REFRESH_INTERVAL_SECONDS` | How often, in seconds, the entitlement cache is fully re-fetched from the sidecar.                          | `900`   | `300`     |
+
+The environment variable names above are also used by `folio-kafka-wrapper`, the equivalent library for
+non-Spring (Vert.x/RMB) modules, for the settings they have in common (all except `ignore-empty-batch`,
+which has no RMB equivalent) - so both libraries can be configured with the exact same variables.
 
 The following strategy values are supported:
 
-| Value    | Behavior                                                                                                                              |
-| -------- |---------------------------------------------------------------------------------------------------------------------------------------|
-| `ACCEPT` | Accept the Kafka record and pass it to the module listener for normal processing.                                                     |
-| `SKIP`   | Filter out the Kafka record without invoking the listener. The offset will move forward as part of normal consumer commit processing. |
-| `FAIL`   | Throw an exception to fail listener processing. The offset is not committed for that record or batch, so the message can be retried.  |
+| Value    | Behavior                                                                                                                                                                                                                                                       |
+| -------- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `ACCEPT` | Accept the Kafka record and pass it to the module listener for normal processing.                                                                                                                                                                              |
+| `SKIP`   | Filter out the Kafka record without invoking the listener. The offset will move forward as part of normal consumer commit processing.                                                                                                                          |
+| `FAIL`   | Throw an exception to fail listener processing. The container's configured error handler (retries, if any, then a recoverer) runs first; the offset still commits once it finishes, the same as any other listener failure - it is not held back indefinitely. |
 
 When Kafka tenant filtering is enabled, the `FolioModuleMetadata` bean must provide the
 module name and version. The default metadata bean from `folio-spring-base` uses `spring.application.name`
@@ -287,6 +337,22 @@ logging:
 **Note:** In case you have async requests in your module (DeferredResult, CompletableFuture, etc.) then you should disable default logging for requests.
 
 ---
+
+### HTTP Service Clients connection pool
+
+HTTP Service Clients (`@HttpExchange`) share one pooled Apache HttpClient. Pool size and timeouts are configurable
+through `folio.exchange.http-client.*` properties or `FOLIO_EXCHANGE_HTTP_CLIENT_*` environment variables. See the [HTTP Client Configuration Guide](doc/HTTP_CLIENT_CONFIGURATION.md).
+
+**Quick Configuration:**
+
+```yaml
+folio:
+  exchange:
+    http-client:
+      max-connections-per-route: 50   # FOLIO_EXCHANGE_HTTP_CLIENT_MAX_CONNECTIONS_PER_ROUTE
+      max-connections-total: 100      # FOLIO_EXCHANGE_HTTP_CLIENT_MAX_CONNECTIONS_TOTAL
+      connect-timeout: 10s            # FOLIO_EXCHANGE_HTTP_CLIENT_CONNECT_TIMEOUT
+```
 
 ## Custom `/_/tenant` Logic
 
