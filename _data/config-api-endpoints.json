@@ -6794,6 +6794,14 @@
     "path": "/finance/finance-data"
   },
   {
+    "apiDescription": "ramls/fiscal-year-hierarchy.raml",
+    "apiType": "raml",
+    "interface": "finance.fiscal-year-hierarchy 1.0",
+    "methods": "get:finance_fiscal_year_hierarchy_get",
+    "name": "mod-finance",
+    "path": "/finance/fiscal-year-hierarchy"
+  },
+  {
     "apiDescription": "ramls/fiscal-years.raml",
     "apiType": "raml",
     "interface": "finance.fiscal-years 2.0",
@@ -8588,6 +8596,14 @@
     "methods": "get:operation/getImportJobLogLines post:operation/postImportJobLogLines",
     "name": "mod-inventory-update",
     "path": "/inventory-import/job-logs"
+  },
+  {
+    "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
+    "apiType": "oas",
+    "interface": "inventory-import 1.1",
+    "methods": "get:operation/getMetrics",
+    "name": "mod-inventory-update",
+    "path": "/inventory-import/metrics"
   },
   {
     "apiDescription": "src/main/resources/openapi/inventory-import-1.0.yaml",
