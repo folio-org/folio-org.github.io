@@ -1008,6 +1008,7 @@
         "ramls/expense-classes.raml",
         "ramls/finance-data.raml",
         "ramls/finance-fund-codes-expense-classes.raml",
+        "ramls/fiscal-year-hierarchy.raml",
         "ramls/fiscal-years.raml",
         "ramls/fund-types.raml",
         "ramls/fund-update-log.raml",
