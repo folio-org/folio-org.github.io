@@ -2241,6 +2241,22 @@
     "path": "/bulk-operations/{operationId}/start"
   },
   {
+    "apiDescription": "ramls/bulk-renewal-job-storage.raml",
+    "apiType": "raml",
+    "interface": "bulk-renewal-job-storage 1.0",
+    "methods": "get:bulk_renewal_job_storage_bulk_renewal_jobs_get post:bulk_renewal_job_storage_bulk_renewal_jobs_post",
+    "name": "mod-circulation-storage",
+    "path": "/bulk-renewal-job-storage/bulk-renewal-jobs"
+  },
+  {
+    "apiDescription": "ramls/bulk-renewal-job-storage.raml",
+    "apiType": "raml",
+    "interface": "bulk-renewal-job-storage 1.0",
+    "methods": "delete:bulk_renewal_job_storage_bulk_renewal_jobs__bulkrenewaljobid__delete get:bulk_renewal_job_storage_bulk_renewal_jobs__bulkrenewaljobid__get put:bulk_renewal_job_storage_bulk_renewal_jobs__bulkrenewaljobid__put",
+    "name": "mod-circulation-storage",
+    "path": "/bulk-renewal-job-storage/bulk-renewal-jobs/{bulkRenewalJobId}"
+  },
+  {
     "apiDescription": "src/main/resources/api/calendar.yaml",
     "apiType": "oas",
     "interface": "calendar 5.0",
