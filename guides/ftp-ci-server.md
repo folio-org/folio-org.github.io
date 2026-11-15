@@ -15,6 +15,7 @@ There is a File Transfer Protocol (FTP) server available for use with applicatio
 * Username: `folio` Password: `Ffx29%pu`
 
 The data store is short-lived and there is automatic [cleanup](#cleanup) after a certain age.
+Access to this system is IP-restricted.  Please contact the FOLIO DevOps team to whitelist an IP. 
 
 Both [sftp](#sftp) clients and plain [ftp](#ftp) clients can be utilised.
 
