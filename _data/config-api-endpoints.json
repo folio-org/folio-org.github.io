@@ -9578,6 +9578,7 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
+    "interface": "ldp-query 1.4",
     "methods": "get:ldp_db_processes_get",
     "name": "mod-reporting",
     "path": "/ldp/db/processes"
@@ -9609,6 +9610,7 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
+    "interface": "ldp-query 1.4",
     "methods": "get:ldp_db_updates_get",
     "name": "mod-reporting",
     "path": "/ldp/db/updates"
@@ -9616,6 +9618,7 @@
   {
     "apiDescription": "ramls/ldp.raml",
     "apiType": "raml",
+    "interface": "ldp-query 1.4",
     "methods": "get:ldp_db_version_get",
     "name": "mod-reporting",
     "path": "/ldp/db/version"
