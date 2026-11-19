@@ -41,7 +41,7 @@
 {"id": "folio_eholdings-11.2.1099000000000887", "optional": ["erm 1.0 2.0 3.0 4.0 5.0 6.0 7.0"], "provides": [], "requires": ["eholdings 4.0 5.0", "tags 1.0"]}
 {"id": "folio_erm-1.0.100022", "optional": [], "provides": [], "requires": []}
 {"id": "folio_erm-comparisons-8.2.1099000000000234", "optional": [], "provides": [], "requires": ["erm 7.0"]}
-{"id": "folio_erm-usage-13.0.1099000000001214", "optional": [], "provides": [], "requires": ["counter-reports 5.1", "custom-reports 1.0 2.0", "erm-usage-files 1.0", "erm-usage-harvester 3.0", "settings 1.2", "tags 1.0", "usage-data-providers 4.0"]}
+{"id": "folio_erm-usage-13.0.1099000000001236", "optional": [], "provides": [], "requires": ["counter-reports 5.1", "custom-reports 1.0 2.0", "erm-usage-files 1.0", "erm-usage-harvester 3.0", "settings 1.2", "tags 1.0", "usage-data-providers 4.0"]}
 {"id": "folio_export-manager-5.1.1099000000000199", "optional": ["organizations.organizations 1.0"], "provides": [], "requires": ["configuration 2.0", "data-export-spring 2.0", "tags 1.0", "users 15.0 16.0"]}
 {"id": "folio_finance-9.1.1099000000000745", "optional": ["consortia 1.0"], "provides": [], "requires": ["acquisitions-units 1.1", "configuration 2.0", "finance-storage.exchange-rate-source 1.0", "finance-storage.settings 1.0", "finance.budgets 1.3 2.0", "finance.expense-classes 2.0 3.0", "finance.finance-data 1.0", "finance.fiscal-years 1.0 2.0", "finance.fund-types 1.0 2.0", "finance.fund-update-logs 1.0", "finance.funds 3.0", "finance.group-fiscal-year-summaries 1.0", "finance.group-fund-fiscal-years 2.0", "finance.groups 1.0 2.0", "finance.ledger-rollovers 1.0 2.0", "finance.ledger-rollovers-errors 1.0", "finance.ledger-rollovers-logs 1.0", "finance.ledger-rollovers-progress 1.0", "finance.ledgers 1.5 2.0", "finance.transactions 6.0", "invoice 7.0", "location-units 2.0", "locations 3.0", "order-lines 4.0", "orders 13.0", "tags 1.0", "tenant-addresses 1.0", "users 15.0 16.0"]}
 {"id": "folio_finc-config-8.1.1099000000000624", "optional": [], "provides": [], "requires": ["finc-config-isils 1.0 2.0", "finc-config-metadata-collections 1.0", "finc-config-metadata-sources 1.0", "organizations-storage.contacts 2.0", "organizations-storage.organizations 3.0", "users 15.0 16.0"]}
@@ -61,7 +61,7 @@
 {"id": "folio_ldp-3.3.1099000000000360", "optional": ["users 15.1 16.0"], "provides": [], "requires": ["ldp-query 1.2", "settings 1.0"]}
 {"id": "folio_licenses-12.2.1099000000000401", "optional": ["organizations-storage.interfaces 2.0", "users 13.0 14.0 15.0 16.0"], "provides": [], "requires": ["licenses 6.0"]}
 {"id": "folio_linked-data-2.0.4099000000002745", "optional": [], "provides": [], "requires": []}
-{"id": "folio_lists-5.0.2099000000001163", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0 2.0"]}
+{"id": "folio_lists-5.0.2099000000001173", "optional": [], "provides": [], "requires": ["entity-types 2.0", "fqm-query 2.0", "lists 1.0 2.0"]}
 {"id": "folio_local-kb-admin-9.2.1099000000000253", "optional": [], "provides": [], "requires": ["erm 7.0"]}
 {"id": "folio_lti-courses-1.1.100035", "optional": [], "provides": [], "requires": ["configuration 2.0 3.0 4.0 5.0"]}
 {"id": "folio_marc-authorities-8.1.1099000000001747", "optional": ["audit-config 1.0", "audit-marc 1.0"], "provides": [], "requires": ["browse-authorities 1.0", "resource-ids-streaming 1.0", "search-authorities 1.0", "search-facets 1.0", "source-storage-records 3.3"]}
@@ -95,7 +95,7 @@
 {"id": "folio_plugin-find-po-line-7.0.1099000000000184", "optional": [], "provides": [], "requires": ["acquisition-methods 1.1", "acquisitions-units 1.1", "configuration.prefixes 1.2", "configuration.reasons-for-closure 1.0", "configuration.suffixes 1.2", "contributor-name-types 1.2", "finance.expense-classes 2.0 3.0", "finance.funds 1.4 2.0 3.0", "identifier-types 1.2", "inventory 10.0 11.0 12.0 13.0 14.0", "location-units 2.0", "locations 3.0", "material-types 2.2", "order-lines 2.0 3.0 4.0", "organizations.organizations 1.0", "tags 1.0"]}
 {"id": "folio_plugin-find-user-8.2.1099000000000180", "optional": [], "provides": [], "requires": []}
 {"id": "folio_plugin-find-vendor-1.3.200031", "optional": [], "provides": [], "requires": []}
-{"id": "folio_plugin-query-builder-3.0.2099000000001724", "optional": [], "provides": [], "requires": ["fqm-query 2.0", "locale 1.0", "settings 1.0"]}
+{"id": "folio_plugin-query-builder-3.0.2099000000001734", "optional": [], "provides": [], "requires": ["fqm-query 2.0", "locale 1.0", "settings 1.0"]}
 {"id": "folio_plugin-resource-registry-1.0.10009", "optional": [], "provides": [], "requires": []}
 {"id": "folio_plugin-select-application-3.1.1099000000000187", "optional": [], "provides": [], "requires": []}
 {"id": "folio_quick-marc-11.1.1099000000000638", "optional": ["authority-source-files 2.0", "instance-authority-linking-rules 1.1", "instance-authority-links 2.1", "search-authorities 1.0"], "provides": [], "requires": ["marc-records-editor 6.0 7.0", "marc-specifications 1.0"]}
